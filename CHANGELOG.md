@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1800 유튜브 업로드용 설명 추가** `d5d0e16`
+  - draft_description.txt: 제목, 설명, 타임스탬프, 고정 댓글
+  - .gitignore에 draft_description.txt 예외 추가
 - **PM_1800 "퇴근길" 시리즈 9트랙 완성** `446051b`
   - Track 05 "쪽잠": 버스 안 쪽잠, 78 BPM, G minor, Female vocal (W:35/I:70)
   - Track 06 "전화": 퇴근길 전화 통화, 88 BPM, Db Major, Male vocal (W:35/I:70)
