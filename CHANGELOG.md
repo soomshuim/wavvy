@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1800 "퇴근길" 시리즈 9트랙 완성** `446051b`
+  - Track 05 "쪽잠": 버스 안 쪽잠, 78 BPM, G minor, Female vocal (W:35/I:70)
+  - Track 06 "전화": 퇴근길 전화 통화, 88 BPM, Db Major, Male vocal (W:35/I:70)
+  - Track 07 "골목": 혼자 걷는 골목길, 67 BPM, Db Major, Male vocal (기존 싱글)
+  - Track 08 "숨": 문 앞에서 숨 고르기, 70 BPM, Ab Major, Female vocal (W:40/I:60)
+  - Track 09 "이름": 문 열림 이름 불려짐, 72 BPM, Ab Major, Male vocal (기존 싱글)
+  - concept.md SSOT 통합: 개별 txt 파일 삭제, 전체 가사/스타일 concept.md에 기록
+  - 10트랙 → 9트랙 확정 (Track 09 "이름"으로 Closing)
 - **PM_1800 "퇴근길" 시리즈** `2805367` `0c6b49e` `216aee5` `6a1a4ba` `217fe40`
   - Track 01 "Exit": Uptown Funk 벤치마킹, 115 BPM, Eb Major, Korean Funk-Pop
   - Track 02 "약속": 자니 벤치마킹, 100 BPM, Db Major, Neo-soul R&B

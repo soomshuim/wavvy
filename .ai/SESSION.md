@@ -2,9 +2,44 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-01-29 (PM_1800 Track 04 차창밖)
+> Last updated: 2026-01-29 (PM_1800 9트랙 완성)
 
 ## 완료된 작업
+
+### 2026-01-29 - PM_1800 9트랙 시리즈 완성 `446051b`
+
+- [x] **Track 08 "숨" 신규 제작**
+  - 70 BPM, Ab Major, Female vocal
+  - Rhodes-led, warm synth pad
+  - Breakdown: 음악 멈추고 숨소리 "후..."
+  - W:40 / I:60 Suno 파라미터
+
+- [x] **Track 07 "골목" concept.md 추가** (기존 싱글)
+  - 67 BPM, Db Major, Male vocal
+  - Verse-heavy, Speech-like phrasing
+
+- [x] **Track 09 "이름" concept.md 추가** (기존 싱글)
+  - 72 BPM, Ab Major, Male vocal
+  - Final Chorus chest belt climax
+
+- [x] **시리즈 확정: 10트랙 → 9트랙**
+  - Track 09 "이름"으로 Closing
+  - concept.md SSOT 통합 (개별 txt 파일 삭제)
+
+### 2026-01-29 - PM_1800 Track 05-06 완성
+
+- [x] **Track 05 "쪽잠" 완성**
+  - 78 BPM, G minor, Female vocal
+  - Verse-driven 구조, Dreamy/Hazy texture
+  - Track 04 "차창밖"과 같은 화자 (버스 안 연속 장면)
+  - W:30 / I:65 Suno 파라미터
+
+- [x] **Track 06 "전화" 완성**
+  - 88 BPM, Db Major, Male vocal
+  - 대화체 가사, 따뜻한 톤
+  - Track 10 "귀환" 복선 (전화 통화 → 집 도착)
+  - 독백/싱잉랩 방지: 추임새 제거 + EXCLUDE 강화
+  - W:30 / I:65 Suno 파라미터
 
 ### 2026-01-29 - PM_1800 Track 04 차창밖 `217fe40` `4401d5a`
 
