@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 "4시의 사람들" 시리즈 Track 01-02 완성** `7ba789e`
+  - 시리즈 컨셉: 다양한 퍼소나들의 4시 (All Rock 장르)
+  - 시그니처 훅: "제발, 제발, 제발요" (전 트랙 공통)
+  - Track 01 "가도 되나요": Soft Pop-Rock, 160 BPM, Male (DAY6 HAPPY 레퍼런스)
+  - Track 02 "눈치": J-Rock/Idol Rock, 160 BPM, Female (QWER 고민중독 레퍼런스)
+  - 전체 10트랙 플레이리스트 구조 확정 (직장인/학생/주부/취준생/프리랜서/배달기사/퇴직자 등)
 - **PM_1800 유튜브 업로드용 설명 추가** `d5d0e16`
   - draft_description.txt: 제목, 설명, 타임스탬프, 고정 댓글
   - .gitignore에 draft_description.txt 예외 추가
