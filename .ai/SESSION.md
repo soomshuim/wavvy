@@ -2,9 +2,114 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-01-29 (PM_1800 9트랙 완성)
+> Last updated: 2026-01-31 (PM_1600 Track 02 "눈치" 확정 + 전체 플리 구조 확정)
 
 ## 완료된 작업
+
+### 2026-01-31 - PM_1600 Track 02 "눈치" 확정 + 전체 플리 구조 확정
+
+- [x] **PM_1600 시리즈 컨셉 확정**
+  - 테마: "4시의 사람들" — 다양한 퍼소나들의 4시
+  - 장르: **All Rock** (서브장르로 다양성)
+  - 10트랙 구조 확정
+
+- [x] **전체 플레이리스트 구조 (10트랙)**
+  | # | 퍼소나 | 제목 | Rock 서브장르 |
+  |---|--------|------|---------------|
+  | 01 | 직장인 | 가도 되나요 | Soft Pop-Rock |
+  | 02 | 직장인 짝사랑 | 눈치 | J-Rock / Idol Rock |
+  | 03 | 고등학생 | 7교시 | Punk Rock |
+  | 04 | 대학생 | 공강 | Indie Rock |
+  | 05 | 주부 | 하원 시간 | Acoustic Rock |
+  | 06 | 취준생 | 불합격 | Emo Rock |
+  | 07 | 프리랜서 | 카페 창가 | Alt-Rock |
+  | 08 | 배달기사 | 다음 배달 | Garage Rock |
+  | 09 | 퇴직자 | 공원 벤치 | Folk Rock |
+  | 10 | 모두 | 4시의 노을 | Power Ballad |
+
+- [x] **Track 02 "눈치" 완성**
+  - 제목: 눈치
+  - BPM: 178
+  - Key: G Major → Ab Major (마지막 후렴 반음 전조)
+  - 장르: J-Rock, Idol Rock, Pop-Rock with chiptune
+  - 보컬: Japanese idol female vocal, bright and clear, Solo only
+  - 레퍼런스: QWER - 고민중독
+  - 훅: "눈치만 보다가" / "내 맘을 알아줘요"
+  - Suno Parameters: W:30 / I:70
+
+- [x] **시리즈 시그니처 훅 확정**
+  - "제발, 제발, 제발요" — PM_1600 전체 트랙 공통 훅
+  - Track 01: "그러니까 제발, 제발, 제발요 / 가도 된다고 말해줘요"
+  - Track 02: "그러니까 제발, 제발, 제발요 / 내 맘을 알아줘요"
+
+- [x] **가사 원곡 유사성 수정**
+  - Before: "천 번쯤 상상하고 또 천 번 고민해" (원곡 시그니처 라인)
+  - After: "몇 번을 다가가다 또 몇 번 돌아섰어" (차별화)
+
+- [x] **QWER 고민중독 리서치**
+  - seed02_gomin_research.md 작성
+  - BPM 178, G→Ab 전조, 8-bit chiptune 요소
+  - 확장 코드 진행 분석 (악보 기반)
+
+- [x] **파일 생성**
+  - track02_style.txt (785자)
+  - track02_lyrics.txt
+  - concept.md 업데이트 (전체 플리 + Track 02)
+
+### 2026-01-31 - PM_1600 Track 01 "가도 되나요" 확정
+
+- [x] **Track 01 "가도 되나요" 완성**
+  - 제목: 가도 되나요
+  - BPM: 160 half-time feel (체감 80)
+  - Key: Eb Major
+  - 장르: Korean Alternative Rock, Soft Pop-Rock
+  - 보컬: K-pop idol boy band male vocal, bright and refreshing
+  - 훅: "집에 가도 되나요" / "가도 된다고 말해줘요"
+  - Suno Parameters: W:30 / I:70
+
+- [x] **스타일 반복 테스트 및 조정**
+  - DAY6 HAPPY 레퍼런스 기반 시작
+  - Palm mute + Brushing 기타 인트로 확정
+  - 합창/챈팅 제거 → Solo vocal only
+  - 하드락 느낌 제거 → Soft Pop-Rock
+  - 청량한 아이돌 보컬로 최종 조정
+
+- [x] **가사 완성**
+  - 오후 4시 퇴근 대기 컨셉 (야근 아님)
+  - 이미지: 형광등, 식은 커피, 시계, 회의, 메일, 모니터
+  - SNS 쉬는 사람들 vs 일하는 나 대비
+  - Pre-Chorus → Chorus 긴장감 빌드업
+
+- [x] **concept.md 통합**
+  - SERIES/PM_1600/concept.md 생성
+  - track01_style.txt, track01_lyrics.txt 삭제
+
+### 2026-01-30 - PM_1600 "막판뒤집기" 시리즈 시작
+
+- [x] **PM_1600 폴더 구조 생성**
+  - `SERIES/PM_1600/` 디렉토리
+  - `input/tracks/` 하위 폴더
+  - concept.md 초안
+
+- [x] **레퍼런스 분석: DAY6 HAPPY**
+  - BPM: 160 (80 half-time feel)
+  - Key: A Major
+  - 핵심 DNA: "울면서 달리기" - 밝은 제목 + 어두운 가사 역설
+  - 의문형 훅: "May I be happy?" (선언 X, 질문 O)
+  - 에너지 보류 상태 (뛰고 싶지만 못 뜀)
+  - seed01_happy_research.txt 저장
+
+- [x] **Track 01 시드곡 설계 (v2 - 재설계)**
+  - 제목: "끝" (밝은/해방적 단어 → 역설 구조 가능)
+  - 훅: "끝나도 되나요" (HAPPY DNA 복제)
+  - 80 BPM half-time feel, A Major
+  - Male vocal, Boy band style, DAY6 influence
+  - W:35 / I:70 Suno 파라미터
+  - track01_lyrics.txt, track01_style.txt 저장
+
+- [x] **재발 방지 규칙 추가**
+  - lessons-learned.md: "레퍼런스 DNA 미반영" 패턴 추가
+  - 시드곡 디자인 시 DNA 체크리스트 강제
 
 ### 2026-01-29 - PM_1800 유튜브 업로드 준비 `d5d0e16`
 
@@ -295,6 +400,13 @@
   - **수미상관 완성**: 멍(01) ↔ 깸(10)
   - 작업 디렉토리: `SERIES/PM_1400/`
   - Suno 생성 대기
+- **PM_1600 "4시의 사람들"**: Track 01-02 확정, 전체 구조 확정
+  - 테마: 다양한 퍼소나들의 4시 (All Rock)
+  - 시그니처 훅: "제발, 제발, 제발요"
+  - Track 01 "가도 되나요": Soft Pop-Rock, 160 BPM, Male
+  - Track 02 "눈치": J-Rock/Idol Rock, 178 BPM, Female
+  - 작업 디렉토리: `SERIES/PM_1600/`
+  - 다음: Suno 생성 테스트
 - **문서 버전**:
   - LYRICS.md v1.8
   - STYLE.md v2.6.2 (SSOT 슬롯 체계 통일)
@@ -303,10 +415,11 @@
 
 ## 진행 중
 
-- **바라봐줘요 스타일 테스트 트랙 제작**
-  - Seed Research 완료
-  - 시드 트랙 "골목" 가사 완료
-  - 다음: Style Prompt 작성 → Suno 생성 테스트
+- **PM_1600 Track 02 "눈치"**
+  - concept.md, track02_style.txt, track02_lyrics.txt 완성
+  - 다음: Suno 생성 테스트 → 보컬 스타일 조정
+- **PM_1600 Track 01 "가도 되나요"**
+  - 다음: Suno 생성 테스트
 - Shorts 제작 준비 (shorts.mp4 입력 대기)
 
 ## 2026-01-23 세션 완료
