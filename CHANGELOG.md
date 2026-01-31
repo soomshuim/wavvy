@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 07 "신호" 완성** `079a6c4`
+  - 퍼소나: 배달기사 (오후 4시 반, 신호등 대기)
+  - 장르: Korean Indie Pop, Bright Driving Pop
+  - BPM: 126, Key: G Major
+  - 보컬: Male, warm and relaxed, chest voice
+  - 컨셉: 밝고 경쾌한 사운드 + 배달 일상의 고단함
+  - 훅: "달리고 싶어 / 멈추기가 싫어" + "제발, 제발, 제발요"
+  - 트랙 순서 변경: 07↔08 (배달기사↔프리랜서)
 - **PM_1600 Track 06 "침묵" 완성** `37839cd`
   - 퍼소나: 취준생 (오후 4시, 탈락 통보 후 카페)
   - 제목 변경: 탈락 → 불합격 → 침묵
