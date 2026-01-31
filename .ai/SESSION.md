@@ -2,17 +2,29 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-01-31 (PM_1600 Track 04 "공강" 최종 완성 `8adfbc4`)
+> Last updated: 2026-01-31 (PM_1600 Track 04 스타일 수정 `9ab3ea6`)
 
 ## 완료된 작업
 
-### 2026-01-31 - PM_1600 Track 04 "공강" 최종 완성
+### 2026-01-31 - PM_1600 Track 04 스타일 수정 + claude-center 설정
 
-- [x] **Track 04 "공강" 완성** `8adfbc4`
-  - 퍼소나: 대학생
+- [x] **claude-center symlink 설정** `1bdcd09`
+  - ~/.claude/ symlink 설정 (commands, agents, hooks, plugins)
+  - macOS 대소문자 충돌 해결 (WDS.md vs wds.md)
+  - lessons_learned.md 추가 (재발 방지 가이드)
+
+- [x] **Track 04 "공강" 스타일 수정** `9ab3ea6`
+  - 시드곡: 잔나비 "주저하는 연인들을 위해"
+  - 보컬: 10cm 스타일 시도 → 발랄한 인디락으로 최종 수정
   - 장르: Korean Indie Rock, Bright Pop Rock, 148 BPM, Bb Major
   - 특징: Jangly guitar, bouncy staccato picking, playful delivery
+  - 가사: 일기체 스타일, 공강 즐기기 컨셉
   - 훅: "그냥 여기 있고 싶어" / "공강 좀 늘려주세요"
+
+### 2026-01-31 - PM_1600 Track 04 "공강" 초안 완성
+
+- [x] **Track 04 "공강" 초안** `8adfbc4`
+  - 퍼소나: 대학생
   - concept.md에 Track 03, 04 정보 추가
 
 - [x] **Track 05 "다음 배달" 시도 → 폐기**
