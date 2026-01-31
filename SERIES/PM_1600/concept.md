@@ -26,7 +26,7 @@ Last updated: 2026-01-31 (Track 05 완성)
 | 03 | 고등학생 | 7교시 | Punk Rock | 답답함, 반항, 자유 |
 | 04 | 대학생 | 공강 | Indie Rock | 여유, 공허, 방황 |
 | 05 | 주부 | 기다림 | Acoustic Band Rock | 고요, 자유, 기다림 |
-| 06 | 취준생 | 불합격 | Emo Rock | 좌절, 불안, 희망 |
+| 06 | 취준생 | 침묵 | Korean Alternative Rock, Boy Band Soft Pop-Rock | 좌절, 불안, 희망 |
 | 07 | 프리랜서 | 카페 창가 | Alt-Rock | 고독, 자유, 불안정 |
 | 08 | 배달기사 | 다음 배달 | Garage Rock | 피로, 질주, 생존 |
 | 09 | 퇴직자 | 공원 벤치 | Folk Rock | 회상, 평화, 쓸쓸함 |
@@ -278,7 +278,7 @@ Exclude Style: Heavy, dark, male vocals, rap, slow sections, autotune, group cha
 오늘은 꼭 말할 거야 진짜로
 
 [Chorus]
-[Chest voice, More emotional, Single vocal]
+[Soft, Heartfelt, Single vocal]
 눈치만 보다가
 하루가 또 가요
 용기가 없어서
@@ -687,11 +687,11 @@ no vintage warmth, no lo-fi, no roomy reverb
 [Verse 1]
 창문 너머 햇살이 비스듬히 들어와
 커피 한 잔 천천히 식어가는 오후
-조용한 거실 소파에 혼자 앉아
-이 고요함이 참 오랜만이야
+조용한 거실 소파에 앉아
+이 고요함 참 오랜만이야
 
 [Pre-Chorus]
-시계 바늘은 느리게 가고
+시계 바늘은 느리게 가
 나만의 시간 조금만 더
 
 [Chorus]
@@ -702,18 +702,18 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-조금 조금 조금요
+조금 조금 조금만요
 
 
 [Verse 2]
 냉장고에 남겨 둔 사소한 것들
 현관에 나란히 놓인 작은 흔적
-혼자인 것도 좋지만 자꾸 눈이 가
-저 시계를 한 번 더 보게 돼
+혼자인 것도 나쁘지 않지만
+어쩐지 시계를 한 번 더 봐
 
 [Pre-Chorus]
 곧 익숙한 소리 들리겠지
-기다림도 나쁘지 않아
+기다림도 나쁘진 않아
 
 [Chorus]
 이 순간 그대로
@@ -723,13 +723,12 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-[Melodic, Whisper]조금 조금 조금요
+[Melodic, Whisper]조금 조금 조금만요
 
 
 [Bridge]
 [gentle, restrained]
-빈 공간이 이렇게 넓었나
-마음은 이미 준비 중이야
+
 
 [Final Chorus]
 이 순간 그대로
@@ -739,7 +738,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-조금 조금 조금요
+조금 조금 조금만요
 지금은 여기
 
 [Outro]
@@ -748,7 +747,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 ### Hook
 
 - 메인 훅: "이 순간 그대로 / 잠깐만 여기"
-- 서브 훅: "조금 조금 조금요"
+- 서브 훅: "조금 조금 조금만요"
 
 ### 이미지 키워드
 
@@ -768,3 +767,155 @@ no vintage warmth, no lo-fi, no roomy reverb
 - 어쿠스틱 밴드 록: Tight downstroke로 정돈된 느낌
 - 보컬: 아이돌 밴드 톤, 맑고 밝음, 웅얼거림 없음
 - 감정: 고요한 자유 ↔ 기다림의 양면
+
+---
+
+## Track 06: 침묵
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 침묵 |
+| 퍼소나 | 취준생 |
+| BPM | 160 (half-time feel) |
+| Key | Eb Major |
+| 장르 | Korean Alternative Rock, Boy Band style Soft Pop-Rock |
+| 레퍼런스 | DAY6 - 한 페이지가 될 수 있게 |
+
+### Style Prompt
+
+```
+Korean Alternative Rock, Boy Band style Soft Pop-Rock, 160 BPM half-time feel, Eb Major
+
+Verse: AM7 - G#m7 two-chord loop
+Chorus: E - Am - AmM7 - Am6 chromatic descend
+Bridge: Am7 - D9sus4 - GM7 key shift
+
+Clean electric guitar, light palm mute, soft brushing
+Melodic pop-rock chords, polished arrangement
+Keyboard layers, synth pad support
+Soft bass, light drums
+
+K-pop idol boy band male vocal, bright and refreshing
+Youthful tone, clean and polished, light vibrato
+Clear articulation, sweet high notes
+
+Pre-chorus builds tension with rising melody
+Chorus: Clean high notes, powerful but light
+No falsetto, strong chest register on high sections
+
+Solo vocal only, no backing vocals, no harmonies, no choir
+
+Bright instrumental vs sad anxious lyrics (contrast)
+Warm polished mix, vocal upfront, clean production
+
+Exclude style: rock vocal, Raspy, Grit, Growling, Heavy, Dark tone
+```
+
+### Lyrics
+
+```
+[Intro]
+[Bass guitar, melodic, soft, 4 bars]
+
+[Verse 1]
+[Male, Soft, Quiet]
+네 시 창가에 빛이 기울어
+익숙한 침묵이 또 찾아와
+손끝이 차갑게 멈춰버려
+문이 닫히는 소리가 들려
+
+[Verse 2]
+[Male, Gentle, Reflective]
+식어버린 커피를 바라봐
+창밖엔 사람들이 지나가
+몇 번째 계절인지 모르겠어
+그래도 여기 앉아 있어
+
+[Pre-Chorus]
+[Soft, Breathy]
+괜찮은 척 웃어보지만
+삼킨 말들이 목에 걸려
+
+[Chorus]
+[Soft, Tender, Single vocal]
+닫힌 문 앞에 서 있어도
+아직 돌아설 수 없어
+발끝이 떨려도 여기 있을게
+밤이 깊어져도
+제발요
+꺼지지 않게 해줘요
+그러니까 제발, 제발, 제발요
+이 밤을 지날 수 있게
+
+[Verse 3]
+[Male, Soft, Subdued]
+다들 어딘가로 흘러가고
+나만 여기 멈춰 서 있어
+벨이 울릴 때마다
+심장이 가라앉아
+
+[Pre-Chorus]
+[Tender, Vulnerable]
+놓아버리고 싶다가도
+여기서 멈추면 사라질 것 같아
+
+[Chorus]
+[Soft, Quiet, Single vocal]
+닫힌 문 앞에 서 있어도
+여긴 아직 내 자린걸
+흔들려도 버티고 있을게
+계절이 바뀌어도
+제발요
+흐려지지 않게 해줘요
+그러니까 제발, 제발, 제발요
+길을 잃지 않게
+
+[Bridge]
+[Whisper-like, Intimate]
+손 놓고 싶은 밤도 있어
+내가 흐려지는 것 같아
+그래도 멈출 수 없어
+
+[Final Chorus]
+[Soft, Peaceful, Single vocal]
+닫힌 문이 전부가 아니야
+어딘가 창은 열려 있어
+조금씩 천천히 가볼게
+언젠간 꼭
+제발요
+새벽이 오게 해줘요
+그러니까 제발, 제발, 제발요
+다시 숨 쉴 수 있게
+
+[Outro]
+[Fading, Tender]
+다시 걸을게
+한 걸음 더
+```
+
+### Hook
+
+- 메인 훅: "닫힌 문 앞에 서 있어도 / 아직 돌아설 수 없어"
+- 서브 훅: "제발, 제발, 제발요 / 꺼지지 않게 해줘요"
+
+### 이미지 키워드
+
+- 창가, 기울어지는 빛, 침묵
+- 식어버린 커피, 지나가는 사람들
+- 닫힌 문, 열린 창
+- 꺼지지 않는 불씨, 밤을 지나는 새벽
+- 흐려지지 않는 길, 다시 숨 쉬기
+
+---
+
+## Production Notes
+
+### Track 06 (침묵)
+- DAY6 한 페이지가 될 수 있게 DNA: 코드 진행 차용
+- 160 BPM half-time feel, Eb Major
+- Clean electric guitar + Keyboard layers + Synth pad
+- 보컬: K-pop 아이돌 보이밴드 스타일, 밝고 청량, sweet high notes
+- 컨셉: **Bright instrumental vs sad anxious lyrics (대비)**
+- 가사: 은유적 표현 (꺼지지 않는 불씨, 밤과 새벽, 흐려지지 않는 길)
