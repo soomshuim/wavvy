@@ -2,7 +2,7 @@
 
 > 오후 4시, 다양한 삶의 교차점을 담은 시리즈
 
-Last updated: 2026-01-31 (Track 04 완성)
+Last updated: 2026-01-31 (Track 05 완성)
 
 ---
 
@@ -25,7 +25,7 @@ Last updated: 2026-01-31 (Track 04 완성)
 | 02 | 직장인 (짝사랑) | 눈치 | J-Rock / Idol Rock | 두근거림, 설렘, 망설임 |
 | 03 | 고등학생 | 7교시 | Punk Rock | 답답함, 반항, 자유 |
 | 04 | 대학생 | 공강 | Indie Rock | 여유, 공허, 방황 |
-| 05 | 주부 | 하원 시간 | Acoustic Rock | 기다림, 일상, 따뜻함 |
+| 05 | 주부 | 기다림 | Acoustic Band Rock | 고요, 자유, 기다림 |
 | 06 | 취준생 | 불합격 | Emo Rock | 좌절, 불안, 희망 |
 | 07 | 프리랜서 | 카페 창가 | Alt-Rock | 고독, 자유, 불안정 |
 | 08 | 배달기사 | 다음 배달 | Garage Rock | 피로, 질주, 생존 |
@@ -627,3 +627,144 @@ EQ balanced sound, clean mix
 - 보컬: 부드럽고 달콤한 톤, 장난기 있는 전달
 - 대학생 나른함/귀찮음 표현
 - Final Chorus: 마지못한 수락 ("진짜 가야 해")
+
+---
+
+## Track 05: 기다림
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 기다림 |
+| 퍼소나 | 주부 |
+| BPM | 95-102 |
+| Key | Major |
+| 장르 | Acoustic Band Rock, Modern Korean Pop-Rock |
+| 레퍼런스 | 10cm - 스토커 (DNA) |
+
+### Style Prompt
+
+```
+Articulation. Acoustic band rock, modern Korean pop-rock
+
+Tempo: 95–102 BPM, steady 4/4 (no swing)
+Key: major or relative major feel
+
+Instruments:
+acoustic guitar as main rhythm (tight downstroke, not folk strumming)
+electric guitar clean arpeggio accents (very minimal)
+dry picked bass, clear groove
+tight drums with light kick + snare, crisp hi-hat (no brushes-only)
+subtle piano or pad for warmth (very minimal)
+
+Arrangement:
+Verse: acoustic + bass + light drums, restrained
+Pre-chorus: add hi-hat lift, slight build
+Chorus: full band enters (still clean), stronger kick, wider guitars
+Bridge: short drop (bass + acoustic), quick rebuild
+No guitar solo
+
+Vocals:
+youthful idol band vocal tone
+clean, bright, clear diction
+forward placement, minimal vibrato
+no breathiness, no grit
+single lead vocal only, no harmonies, no backing vocals
+
+Production:
+modern clean mix, tight low-end
+dry vocal, subtle slap delay
+no vintage warmth, no lo-fi, no roomy reverb
+```
+
+### Lyrics
+
+```
+[Intro]
+(soft hum)
+
+[Verse 1]
+창문 너머 햇살이 비스듬히 들어와
+커피 한 잔 천천히 식어가는 오후
+조용한 거실 소파에 혼자 앉아
+이 고요함이 참 오랜만이야
+
+[Pre-Chorus]
+시계 바늘은 느리게 가고
+나만의 시간 조금만 더
+
+[Chorus]
+이 순간 그대로
+잠깐만 여기
+아무 일 없던 것처럼
+숨을 고르고 싶어
+
+조금만 천천히
+지금은 여기
+제발 제발 제발요
+
+
+[Verse 2]
+냉장고에 남겨 둔 사소한 것들
+현관에 나란히 놓인 작은 흔적
+혼자인 것도 좋지만 자꾸 눈이 가
+저 시계를 한 번 더 보게 돼
+
+[Pre-Chorus]
+곧 익숙한 소리 들리겠지
+기다림도 나쁘지 않아
+
+[Chorus]
+이 순간 그대로
+잠깐만 여기
+다시 움직일 걸 알아
+그래도 지금은
+
+조금만 천천히
+지금은 여기
+[Melodic, Whisper]제발 제발 제발요
+
+
+[Bridge]
+[gentle, restrained]
+빈 공간이 이렇게 넓었나
+마음은 이미 준비 중이야
+
+[Final Chorus]
+이 순간 그대로
+여기까지
+다시 시작할 걸 알지만
+지금은 괜찮아
+
+조금만 천천히
+지금은 여기
+제발 제발 제발요
+지금은 여기
+
+[Outro]
+```
+
+### Hook
+
+- 메인 훅: "이 순간 그대로 / 잠깐만 여기"
+- 서브 훅: "제발 제발 제발요"
+
+### 이미지 키워드
+
+- 창문, 햇살, 비스듬히
+- 식어가는 커피, 소파, 고요함
+- 시계 바늘, 나만의 시간
+- 냉장고, 현관, 작은 흔적
+- 빈 공간, 기다림
+
+---
+
+## Production Notes
+
+### Track 05 (기다림)
+- 10cm 스토커 DNA: 어쿠스틱 기타 + 부드러운 톤
+- 95-102 BPM: 시리즈 중간 브리더 역할, 너무 느리지 않게
+- 어쿠스틱 밴드 록: Tight downstroke로 정돈된 느낌
+- 보컬: 아이돌 밴드 톤, 맑고 밝음, 웅얼거림 없음
+- 감정: 고요한 자유 ↔ 기다림의 양면
