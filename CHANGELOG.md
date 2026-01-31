@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 06 "침묵" 완성** `37839cd`
+  - 퍼소나: 취준생 (오후 4시, 탈락 통보 후 카페)
+  - 제목 변경: 탈락 → 불합격 → 침묵
+  - 장르: Korean Alternative Rock, Boy Band style Soft Pop-Rock
+  - BPM: 160 half-time feel, Key: Eb Major
+  - 보컬: K-pop idol boy band, bright and refreshing, sweet high notes
+  - **컨셉: Bright instrumental vs sad anxious lyrics (대비)**
+  - 훅: "닫힌 문 앞에 서 있어도" / "제발, 제발, 제발요"
+  - 가사: 은유적 표현 (꺼지지 않게, 흐려지지 않게, 새벽이 오게)
+  - txt 파일 전체 삭제 (concept.md SSOT 통합)
 - **PM_1600 Track 05 "기다림" 완성** `43524a8`
   - 퍼소나: 주부 (오후 4시, 하원 전 고요한 시간)
   - 장르: Acoustic Band Rock, 95-102 BPM
