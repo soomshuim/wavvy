@@ -702,7 +702,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-제발 제발 제발요
+조금 조금 조금요
 
 
 [Verse 2]
@@ -723,7 +723,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-[Melodic, Whisper]제발 제발 제발요
+[Melodic, Whisper]조금 조금 조금요
 
 
 [Bridge]
@@ -739,7 +739,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 
 조금만 천천히
 지금은 여기
-제발 제발 제발요
+조금 조금 조금요
 지금은 여기
 
 [Outro]
@@ -748,7 +748,7 @@ no vintage warmth, no lo-fi, no roomy reverb
 ### Hook
 
 - 메인 훅: "이 순간 그대로 / 잠깐만 여기"
-- 서브 훅: "제발 제발 제발요"
+- 서브 훅: "조금 조금 조금요"
 
 ### 이미지 키워드
 
