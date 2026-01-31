@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 04 "공강" 최종 완성** `8adfbc4`
+  - 퍼소나: 대학생
+  - 장르: Korean Indie Rock, Bright Pop Rock, 148 BPM, Bb Major
+  - 특징: Jangly guitar, bouncy staccato picking, playful delivery
+  - 훅: "그냥 여기 있고 싶어" / "공강 좀 늘려주세요"
 - **PM_1600 Track 03 "7교시" 완성** `862ea43`
   - 퍼소나: 고등학생
   - 장르: Korean Alternative Rock, 84 BPM, Eb Major
