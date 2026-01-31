@@ -2,7 +2,7 @@
 
 > 오후 4시, 다양한 삶의 교차점을 담은 시리즈
 
-Last updated: 2026-01-31
+Last updated: 2026-01-31 (Track 04 완성)
 
 ---
 
@@ -340,3 +340,290 @@ Exclude Style: Heavy, dark, male vocals, rap, slow sections, autotune, group cha
 - 보컬: 일본 아이돌 스타일, 맑고 청량한 톤
 - 마지막 후렴 반음 전조로 드라마틱 클라이막스
 - Solo vocal only (원곡과 다르게 챈트 없음)
+
+---
+
+## Track 03: 7교시
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 7교시 |
+| 퍼소나 | 고등학생 |
+| BPM | 84 |
+| Key | Eb Major |
+| 장르 | Korean Alternative Rock |
+
+### Style Prompt
+
+```
+Articulation, Korean Alternative Rock, 84 BPM, Eb Major, Verse: Eb-Bbm7-Fm7-Ab loop
+Pre-Chorus: Tension build with driving drums
+Chorus: Power chords, explosive energy
+
+Prominent bass guitar, driving bass lines, aggressive drums
+Minimal electric guitar, bass-driven arrangement
+Youthful energy, Korean idol band sound
+
+K-pop idol band male vocal, bright and Clean tone, chest voice dominant
+Belting on chorus, clear and cutting through
+Korean pronunciation, precise articulation
+
+Pre-chorus tension build, Chorus explosive release
+Bridge: stripped down then full band explosion
+
+Solo vocal only, no backing vocals, no chants, no choir
+
+Polished production, vocal upfront and prominent
+Lead vocal cuts through instruments, clear separation
+
+Exclude Style: Punk, Grawling, Hard rock, Raspy, gritty, growling, soft, mellow, ballad, slow, female vocals, harmonies, backing vocals
+```
+
+### Lyrics
+
+```
+[Intro]
+[Driving bass riff, 4 bars]
+
+[Verse 1]
+[Male, Bored, Restless]
+눈이 감겨
+졸려 죽겠어
+분필 소리
+귀를 때려
+
+[Verse 2]
+[Male, Frustrated]
+교복은 답답해
+넥타이는 목을 졸라
+운동장이 부르는데
+여기 갇혀 있잖아
+
+[Pre-Chorus]
+[Building tension, Drums kick in]
+똑딱똑딱 시계야 좀 빨리 돌아가
+제발 이 시간 좀 끝내줘
+
+[Chorus]
+[Chest voice, Bright and powerful, Single vocal]
+7교시 언제 끝나
+미치겠어 진짜
+창문 너머 하늘이
+나를 부르잖아
+제발요
+종소리만 울리면 바로 튀어나갈 거야
+그러니까 제발, 제발, 제발요
+나 좀 보내줘
+
+[verse3]
+공책 위에
+낙서만 가득
+선생님은
+다른 세상 사람
+
+[Pre-Chorus]
+[More aggressive build]
+똑딱똑딱 시계야 좀 빨리 돌아가
+1분이 왜 이렇게 길어
+
+[Chorus]
+[Chest voice, More energy, Single vocal]
+7교시 언제 끝나
+미치겠어 진짜
+책상 밑에 다리가
+벌써 뛰고 있어
+제발요
+저 문만 열리면 난 안 돌아볼 거야
+그러니까 제발, 제발, 제발요
+끝났다고 해줘
+
+[Bridge]
+[Strip down — bass + voice]
+그냥 집에 가고 싶어
+아무것도 하기 싫어
+
+[Build — full band explosion]
+
+[Final Chorus]
+[Full band, Explosive, Triumphant, Single vocal]
+7교시 드디어 끝나
+뛰쳐나갈 거야
+교문 너머 세상이
+날 기다리잖아
+제발요
+제발요
+종소리가 울렸어 난 갈 거야
+그러니까 제발, 제발, 제발요
+내일 또 오겠지만
+
+[Outro]
+[Bass groove, Relieved fade]
+아 끝났다...
+```
+
+### Hook
+
+- 메인 훅: "7교시 언제 끝나"
+- 서브 훅: "나 좀 보내줘"
+
+### 이미지 키워드
+
+- 눈 감김, 분필 소리, 졸음
+- 교복, 넥타이, 갇힘
+- 시계, 똑딱, 1분
+- 종소리, 교문, 뛰쳐나감
+
+---
+
+## Track 04: 공강
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 공강 |
+| 퍼소나 | 대학생 |
+| BPM | 148 |
+| Key | Bb Major |
+| 장르 | Korean Indie Rock, Bright Pop Rock |
+
+### Style Prompt
+
+```
+Articulation, Korean Indie Rock, Bright Pop Rock, 148 BPM, Bb Major
+
+Verse: Bb-Dm7/A-Ebmaj7/G-Ebm/Gb, bouncy jangly guitar
+Pre-Chorus: Building energy, playful rhythm
+Chorus: Open chords, uplifting melody
+
+Bright clean electric guitar, bouncy staccato picking
+Jangly guitar riffs, playful melodic hooks
+Punchy drums, tight groove, walking bass line
+Light keyboard accents, fresh and youthful
+
+Male vocal, soft and sweet, bright tone
+Chest voice dominant, playful delivery
+Mid to high register, melodic and catchy
+Korean pronunciation, clear articulation
+
+Verse: light and carefree
+Chorus: bouncy, sing-along melody
+Bridge: stripped down, then builds back
+
+Solo vocal only, no backing vocals, no harmonies
+
+Polished production, vocal upfront and prominent
+Moderate reverb, room ambience
+EQ balanced sound, clean mix
+```
+
+### Lyrics
+
+```
+[Intro]
+[Dreamy arpeggiated guitar, 4 bars]
+
+[Verse 1]
+[Male, Soft, Calm]
+오늘 세 시부터 다섯 시까지 공강이야
+근데 벌써 네 시 반이네
+어디 갔지 한 시간
+
+[Verse 2]
+[Male, Understated, Observing]
+잔디밭 끝에 그늘 자리 찾았어
+돗자리 없어서 가방 깔고 앉았는데
+엉덩이가 좀 축축해
+근데 일어나기 귀찮아
+
+[Pre-Chorus]
+[Building gently]
+폰 배터리 12퍼센트
+충전기 강의실에 두고 왔어
+아 그냥 꺼지면 어떡하지
+근데 뭐 어때
+
+[Chorus]
+[Chest voice, Gentle, Single vocal]
+그냥 여기 있고 싶어
+수업 들어가기 싫어
+교수님 출첵 안 하셨으면
+제발요
+한 번만 눈 감아주세요
+그러니까 제발, 제발, 제발요
+오늘 하루만요
+
+[Verse 3]
+[Male, Observing]
+옆에 커플이 도시락 먹고 있어
+나는 점심도 안 먹었네
+배고프긴 한데
+움직이긴 싫어
+
+[Pre-Chorus]
+[Soft, accepting]
+알람 울리면 가야 하는 거 알아
+근데 아직 5분 남았잖아
+5분이면 되게 긴 거야
+
+[Chorus]
+[Chest voice, Pleading, Single vocal]
+여기 바람이 좋아
+햇살도 적당해
+이런 날 왜 강의를 듣냐고
+제발요
+비 오면 휴강인데 맑은 날도 좀
+그러니까 제발, 제발, 제발요
+쉬게 해주세요
+
+[Bridge]
+[Strip down — guitar + voice]
+내일은 공강 없어
+그래서 오늘이 더 아까워
+
+[Build — full band enters gently]
+
+[Final Chorus]
+[Full band, Reluctant acceptance]
+알람이 울렸어
+진짜 가야 해
+가방 털고 일어나
+발걸음이 무거워
+제발요
+다음 주 시간표 바꿀 수 있나요
+그러니까 제발, 제발, 제발요
+공강 좀 늘려주세요
+
+[Outro]
+[Guitar fades, dragging feet]
+```
+
+### Hook
+
+- 메인 훅: "그냥 여기 있고 싶어"
+- 서브 훅: "공강 좀 늘려주세요"
+
+### 이미지 키워드
+
+- 잔디밭, 그늘, 가방
+- 폰 배터리 12%, 충전기
+- 커플 도시락, 배고픔
+- 알람, 5분, 발걸음
+
+---
+
+## Production Notes
+
+### Track 03 (7교시)
+- Bass-driven arrangement: 일렉 기타보다 베이스 중심
+- 보컬: K-pop 아이돌 밴드 스타일, 청량하고 밝은 톤
+- Pre-Chorus → Chorus 긴장감 빌드업 후 폭발
+- Final Chorus: 해방감 ("드디어 끝나")
+
+### Track 04 (공강)
+- Jangly guitar: 깔끔하고 통통 튀는 기타
+- 보컬: 부드럽고 달콤한 톤, 장난기 있는 전달
+- 대학생 나른함/귀찮음 표현
+- Final Chorus: 마지못한 수락 ("진짜 가야 해")
