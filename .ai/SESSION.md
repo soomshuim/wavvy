@@ -2,9 +2,20 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-01-31 (PM_1600 Track 04 스타일 수정 `9ab3ea6`)
+> Last updated: 2026-01-31 (PM_1600 Track 05 "기다림" 완성 `43524a8`)
 
 ## 완료된 작업
+
+### 2026-01-31 - PM_1600 Track 05 "기다림" 완성
+
+- [x] **Track 05 "기다림" 완성** `43524a8`
+  - 퍼소나: 주부 (오후 4시, 하원 전 고요한 시간)
+  - 장르: Acoustic Band Rock, 95-102 BPM
+  - 레퍼런스: 10cm 스토커 DNA + 밴드 어레인지
+  - 특징: Tight downstroke acoustic, modern clean mix
+  - 훅: "이 순간 그대로 / 잠깐만 여기" + "조금 조금 조금요"
+  - 감정: 고요한 자유 ↔ 기다림의 양면
+  - 시리즈 훅 변형: "제발" → "조금" (엄마 캐릭터에 맞는 부드러운 톤)
 
 ### 2026-01-31 - PM_1600 Track 04 스타일 수정 + claude-center 설정
 
@@ -46,7 +57,7 @@
   | 02 | 직장인 짝사랑 | 눈치 | J-Rock / Idol Rock |
   | 03 | 고등학생 | 7교시 | Punk Rock |
   | 04 | 대학생 | 공강 | Indie Rock |
-  | 05 | 주부 | 하원 시간 | Acoustic Rock |
+  | 05 | 주부 | 기다림 | Acoustic Band Rock |
   | 06 | 취준생 | 불합격 | Emo Rock |
   | 07 | 프리랜서 | 카페 창가 | Alt-Rock |
   | 08 | 배달기사 | 다음 배달 | Garage Rock |

@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 05 "기다림" 완성** `43524a8`
+  - 퍼소나: 주부 (오후 4시, 하원 전 고요한 시간)
+  - 장르: Acoustic Band Rock, 95-102 BPM
+  - 레퍼런스: 10cm 스토커 DNA + 밴드 어레인지
+  - 훅: "이 순간 그대로 / 잠깐만 여기" + "조금 조금 조금요"
+  - 감정: 고요한 자유 ↔ 기다림의 양면
+  - 시리즈 훅 변형: "제발 제발 제발요" → "조금 조금 조금요" (부드러운 톤)
 - **PM_1600 Track 04 "공강" 최종 완성** `8adfbc4`
   - 퍼소나: 대학생
   - 장르: Korean Indie Rock, Bright Pop Rock, 148 BPM, Bb Major
