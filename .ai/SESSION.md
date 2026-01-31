@@ -73,8 +73,8 @@
   | 04 | 대학생 | 공강 | Indie Rock |
   | 05 | 주부 | 기다림 | Acoustic Band Rock |
   | 06 | 취준생 | 침묵 | Boy Band Soft Pop-Rock |
-  | 07 | 프리랜서 | 카페 창가 | Alt-Rock |
-  | 08 | 배달기사 | 다음 배달 | Garage Rock |
+  | 07 | 배달기사 | 신호 | Garage Rock |
+  | 08 | 프리랜서 | 카페 창가 | Alt-Rock |
   | 09 | 퇴직자 | 공원 벤치 | Folk Rock |
   | 10 | 모두 | 4시의 노을 | Power Ballad |
 
@@ -451,7 +451,7 @@
   - **수미상관 완성**: 멍(01) ↔ 깸(10)
   - 작업 디렉토리: `SERIES/PM_1400/`
   - Suno 생성 대기
-- **PM_1600 "4시의 사람들"**: Track 01-06 완성, 전체 구조 확정
+- **PM_1600 "4시의 사람들"**: Track 01-07 완성, 전체 구조 확정
   - 테마: 다양한 퍼소나들의 4시 (All Rock)
   - 시그니처 훅: "제발, 제발, 제발요"
   - Track 01 "가도 되나요": Soft Pop-Rock, 160 BPM, Male
@@ -460,8 +460,9 @@
   - Track 04 "공강": Indie Rock
   - Track 05 "기다림": Acoustic Band Rock
   - **Track 06 "침묵"**: Boy Band Soft Pop-Rock, 160 BPM, Male (Bright vs Sad 대비)
+  - **Track 07 "신호"**: Garage Rock (배달기사)
   - 작업 디렉토리: `SERIES/PM_1600/`
-  - 다음: Track 07-10 시드곡 설계
+  - 다음: Track 08-10 시드곡 설계
 - **문서 버전**:
   - LYRICS.md v1.8
   - STYLE.md v2.6.2 (SSOT 슬롯 체계 통일)
@@ -470,9 +471,8 @@
 
 ## 진행 중
 
-- **PM_1600 Track 07-10 시드곡 설계**
-  - Track 07 "카페 창가" (프리랜서): Alt-Rock
-  - Track 08 "다음 배달" (배달기사): Garage Rock
+- **PM_1600 Track 08-10 시드곡 설계**
+  - Track 08 "카페 창가" (프리랜서): Alt-Rock
   - Track 09 "공원 벤치" (퇴직자): Folk Rock
   - Track 10 "4시의 노을" (모두): Power Ballad
 - Shorts 제작 준비 (shorts.mp4 입력 대기)

@@ -27,8 +27,8 @@ Last updated: 2026-01-31 (Track 05 완성)
 | 04 | 대학생 | 공강 | Indie Rock | 여유, 공허, 방황 |
 | 05 | 주부 | 기다림 | Acoustic Band Rock | 고요, 자유, 기다림 |
 | 06 | 취준생 | 침묵 | Korean Alternative Rock, Boy Band Soft Pop-Rock | 좌절, 불안, 희망 |
-| 07 | 프리랜서 | 카페 창가 | Alt-Rock | 고독, 자유, 불안정 |
-| 08 | 배달기사 | 다음 배달 | Garage Rock | 피로, 질주, 생존 |
+| 07 | 배달기사 | 신호 | Garage Rock | 피로, 질주, 생존 |
+| 08 | 프리랜서 | 카페 창가 | Alt-Rock | 고독, 자유, 불안정 |
 | 09 | 퇴직자 | 공원 벤치 | Folk Rock | 회상, 평화, 쓸쓸함 |
 | 10 | 모두 | 4시의 노을 | Power Ballad | 위로, 연대, 희망 |
 
@@ -910,6 +910,142 @@ Exclude style: rock vocal, Raspy, Grit, Growling, Heavy, Dark tone
 
 ---
 
+## Track 07: 신호
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 신호 |
+| 퍼소나 | 배달기사 |
+| BPM | 126 |
+| Key | G Major |
+| 장르 | Korean Indie Pop, Bright Driving Pop |
+| 레퍼런스 | - |
+
+### Style Prompt
+
+```
+Articulation, Korean Indie Pop, Bright Driving Pop, 126 BPM, G Major
+
+Verse: CM7 - GM9 - CM7 - Dm7 - Esus4 - E
+Pre-Chorus: CM7 - B7sus4 - B7 - Em7 - Dm7 - F/G - CM7 - Cm6 - C/D
+Chorus: CM7 - Bm7 - Dm7 - F/G - CM7 - C#m7-5 - F#7-9 - Bm7 - E(#9) - Am7 - G/B - C - D
+
+Clean electric guitar, jangly picking, rhythmic strumming
+Rhodes keyboard, warm and breezy tone
+Tight punchy drums, driving groove, solid bass line
+Fresh and summery arrangement
+
+Male vocal, warm and relaxed tone
+Chest voice dominant, mid register, comfortable range
+Soft and easy, laid-back delivery
+Korean pronunciation, clear articulation
+
+Verse: light and carefree
+Chorus: driving energy, sing-along melody
+Bridge: stripped down, then builds back
+
+Solo vocal only, no backing vocals, no harmonies
+
+Polished production, vocal upfront and prominent
+Moderate reverb, room ambience
+EQ balanced sound, clean mix
+```
+
+### Lyrics
+
+```
+[Intro]
+[Bright jangly guitar, Rhodes, driving groove, 4 bars]
+
+[Verse 1]
+[Male, Relaxed, Mid register]
+네 시 반이 넘어 거리에 나서면
+핸들 위로 불어오는 바람이 좋아
+헬멧 속에 땀이 차도 상관없어
+달려가 골목 사이 빠져나가며 다음 목적지로
+
+[Verse 2]
+[Male, Building gently]
+저 앞에 신호등이 노랗게 변해
+지금이야 밟아 빨리 가자
+
+[Chorus]
+[Chest voice, Warm, Mid range, Single vocal]
+달리고 싶어
+멈추기가 싫어
+저 앞에 빨간불이 날 막아서
+이렇게 급한데 왜 안 바뀌어
+제발요
+초록불로 바뀌면 바로 출발할게요
+그러니까 제발, 제발, 제발요
+빨리 좀 바뀌어줘
+
+[Verse 3]
+[Male, Playful, Mid register]
+치킨 냄새 분식집 냄새 스쳐가
+배달 가는 나만 배고파지는 거야
+이렇게 오늘도 점심 못 먹었네
+달려가 그래도 달리다 보면 금방 잊어버려
+
+[Verse 4]
+[Male, Frustrated]
+또 빨간불 잡혔어 벌써 세 번째
+손님 전화 온다 조금만요
+
+[Chorus]
+[Chest voice, More urgent, Single vocal]
+달리고 싶어
+여기 서 있기 싫어
+별점 깎이기 전에 도착해야 해
+손님이 화나기 전에 가야 해
+제발요
+삼십 초만 기다리면 도착할게요
+그러니까 제발, 제발, 제발요
+별점만은 지켜줘
+
+[Bridge]
+[Strip down — guitar + voice]
+사실 이 순간도 나쁘진 않아
+잠깐 숨 쉬는 거니까
+그래도 빨리 가야지
+
+[Build — full band enters]
+
+[Final Chorus]
+[Full band, Liberating, Single vocal]
+달리고 싶어
+마지막 한 건이야
+이것만 끝나면 오늘 집에 가
+퇴근길에 치킨 하나 사야지
+제발요
+이번 신호만 초록불로 바뀌어줘
+그러니까 제발, 제발, 제발요
+나 좀 보내줘
+
+[Outro]
+[Band fades, Relieved]
+초록불 떴다 간다
+내일도 또 달릴 거야
+그래도 달리면 기분이 좋아
+```
+
+### Hook
+
+- 메인 훅: "달리고 싶어 / 멈추기가 싫어"
+- 서브 훅: "제발, 제발, 제발요 / 빨리 좀 바뀌어줘"
+
+### 이미지 키워드
+
+- 핸들, 바람, 헬멧, 땀
+- 신호등, 빨간불, 초록불
+- 치킨 냄새, 분식집 냄새, 배고픔
+- 별점, 손님 전화, 삼십 초
+- 퇴근길, 마지막 한 건
+
+---
+
 ## Production Notes
 
 ### Track 06 (침묵)
@@ -919,3 +1055,11 @@ Exclude style: rock vocal, Raspy, Grit, Growling, Heavy, Dark tone
 - 보컬: K-pop 아이돌 보이밴드 스타일, 밝고 청량, sweet high notes
 - 컨셉: **Bright instrumental vs sad anxious lyrics (대비)**
 - 가사: 은유적 표현 (꺼지지 않는 불씨, 밤과 새벽, 흐려지지 않는 길)
+
+### Track 07 (신호)
+- 126 BPM, G Major, Korean Indie Pop
+- Jangly guitar + Rhodes keyboard, Bright driving groove
+- 보컬: Male, warm and relaxed, chest voice dominant
+- 컨셉: 배달기사의 신호등 대기 - 밝고 경쾌한 사운드
+- 가사: 직설적이고 유머러스 (빨간불, 별점, 치킨 냄새)
+- 특징: 일상의 고단함을 밝게 풀어낸 곡
