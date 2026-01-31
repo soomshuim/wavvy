@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 03 "7교시" 완성** `862ea43`
+  - 퍼소나: 고등학생
+  - 장르: Korean Alternative Rock, 84 BPM, Eb Major
+  - 레퍼런스: DAY6 - 예뻤어
+  - 특징: 베이스 중심 편곡, 슬픈 Verse + 폭발적 Chorus
 - **PM_1600 "4시의 사람들" 시리즈 Track 01-02 완성** `7ba789e`
   - 시리즈 컨셉: 다양한 퍼소나들의 4시 (All Rock 장르)
   - 시그니처 훅: "제발, 제발, 제발요" (전 트랙 공통)
