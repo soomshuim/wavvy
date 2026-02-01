@@ -2,7 +2,7 @@
 
 > 오후 4시, 다양한 삶의 교차점을 담은 시리즈
 
-Last updated: 2026-02-01 (Track 08 컨펌 완성)
+Last updated: 2026-02-01 (Track 09 4시의 노을 완성 - 시리즈 피날레)
 
 ---
 
@@ -17,7 +17,7 @@ Last updated: 2026-02-01 (Track 08 컨펌 완성)
 
 ---
 
-## Playlist Structure (10 Tracks)
+## Playlist Structure (9 Tracks)
 
 | # | 퍼소나 | 제목 (가제) | Rock 서브장르 | 감정 키워드 |
 |---|--------|-------------|---------------|-------------|
@@ -29,8 +29,7 @@ Last updated: 2026-02-01 (Track 08 컨펌 완성)
 | 06 | 취준생 | 침묵 | Korean Alternative Rock, Boy Band Soft Pop-Rock | 좌절, 불안, 희망 |
 | 07 | 배달기사 | 신호 | Garage Rock | 피로, 질주, 생존 |
 | 08 | 프리랜서 | 컨펌 | Bright Bouncy Pop | 고독, 자유, 불안정 |
-| 09 | 퇴직자 | 공원 벤치 | Folk Rock | 회상, 평화, 쓸쓸함 |
-| 10 | 모두 | 4시의 노을 | Power Ballad | 위로, 연대, 희망 |
+| 09 | 모두 | 4시의 노을 | Korean Indie Rock, Bright Pop Rock | 위로, 연대, 희망 |
 
 ---
 
@@ -1199,3 +1198,220 @@ Exclude: Heavy, aggressive, slow, ballad, dark, falsetto, airy, whisper, harmoni
 - 컨셉: 프리랜서의 컨펌 대기 - 통통 튀는 사운드
 - 가사: 자조적 유머 (읽씹, 통장 잔고, 이력서)
 - 특징: 프리랜서 고유의 불안을 밝게 풀어낸 곡
+
+---
+
+## Track 09: 4시의 노을
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 4시의 노을 |
+| 퍼소나 | 모두 (시리즈 피날레) |
+| BPM | 75 |
+| Key | C Major |
+| 장르 | Korean Indie Rock, Bright Pop Rock |
+| 레퍼런스 | 다비치 - 타임캡슐 (DNA) |
+
+### Seed Research Report: 다비치 "타임캡슐"
+
+> **Sources: 11개 (악보 + 10개 웹 소스)**
+
+**기본 정보:**
+- 발매일: 2025-10-16
+- 작사/작곡/편곡: 초록병본부 (이무진)
+- 런닝타임: 4분 12초
+- 장르: 미디엄 템포 발라드
+
+**음악적 DNA:**
+
+| 요소 | 값 | 비고 |
+|------|-----|------|
+| Key | C Major | 원래 B/Bb키 고려 → C키로 결정 |
+| BPM | 70-78 | 미디엄 템포 |
+| 감정 설계 | 계단형 고조 | 폭발 없이 서서히 차오름 |
+| 코드 특징 | 확장 코드 | add9, sus4 다용 |
+
+**코드 진행 (악보 분석):**
+```
+Verse: Cadd9 → D7 → Fadd9 → Gsus4 → G
+Verse2: Cadd9 → D9/F# → Fadd9 → C → G/B
+Pre-Chorus: Am7 → Dsus4 → D → Dm7 → Gsus4 → G
+Bridge: Am7 → Em7 → Fadd9 → Em7 → Cm/Eb
+Ending: Am7 → E7 → Am7 → D7 → Dm → Cadd9/E → Fm6 → Gsus4 → Cadd9
+```
+
+**DNA 핵심:**
+1. **확장 코드 (add9, sus4)**: 따뜻하고 열린 느낌
+2. **슬래시 코드 (G/B, D9/F#)**: 베이스 라인 부드러운 이동
+3. **마이너 차용 (Fm, Cm/Eb)**: 감정의 깊이 추가
+4. **계단형 고조**: 터뜨리지 않고 서서히 차오르는 감정
+
+**적용 방향:**
+- 원곡: 발라드 → **Korean Indie Rock + Bright Pop Rock**으로 편곡
+- BPM: 원곡 유지 (75 BPM)
+- Key: C Major 유지
+- 코드: add9/sus4 확장 코드 DNA 차용
+- 슬래시 코드로 베이스 무브먼트 유지
+- 계단형 고조 → 밴드 편곡으로 따뜻한 상승감
+
+**Sources:**
+1. [나무위키 - 타임캡슐(다비치)](https://namu.wiki/w/%ED%83%80%EC%9E%84%EC%BA%A1%EC%8A%90(%EB%8B%A4%EB%B9%84%EC%B9%98))
+2. [더팩트 - 이무진, 초록병본부를 아시나요](https://news.tf.co.kr/read/entertain/2255578.htm)
+3. [Daum - 다비치·이무진 음악으로 완성한 관계성](https://v.daum.net/v/20251103054114061)
+4. [BNT뉴스 - 다비치 타임캡슐 라이브 공개](https://www.bntnews.co.kr/article/view/bnt202510170076)
+5. [경향스포츠 - 싱어게인 인연 5년 만에 재회](https://sports.khan.co.kr/article/202510162007003)
+6. [벅스 - 타임캡슐 음원](https://music.bugs.co.kr/track/6361665)
+7. [아시아경제 - 야외녹음실 라이브](https://www.asiae.co.kr/article/2025101709191723249)
+8. [Tenasia - Chart Performance](https://www.tenasia.com/amp/2025102386364)
+9. [Kpopmap - Time Capsule Success](https://www.kpopmap.com/davichis-time-capsule-soars-on-charts-with-lee-mujin/)
+10. [나무위키 - 신호등(이무진)](https://namu.wiki/w/%EC%8B%A0%ED%98%B8%EB%93%B1(%EC%9D%B4%EB%AC%B4%EC%A7%84)) - 작곡 스타일 분석
+11. 악보: musicscore.co.kr (Reference/song/타임캡슐_다비치.pdf)
+
+### Style Prompt
+
+```
+Articulation, Korean Indie Rock, Bright Pop Rock, 75 BPM, C Major
+
+Verse: Cadd9 - D7 - Fadd9 - Gsus4, gentle arpeggios
+Pre-Chorus: Am7 - Dsus4 - Dm7, gradual build
+Chorus: Open chords, warm uplifting melody
+
+Clean electric guitar, jangly picking, warm tone
+Acoustic guitar, supportive
+Soft bass, melodic line
+Light drums, brushes to sticks
+Piano pad, add9 voicings
+
+Male vocal, warm sincere tone
+Chest voice dominant, mid register
+Gentle delivery, clear articulation
+
+Verse: soft reflective
+Chorus: warm embracing, not explosive
+Bridge: intimate strip-down, gentle rebuild
+
+Solo vocal only, no backing vocals, no harmonies
+
+Polished production, vocal upfront
+Moderate reverb, room ambience
+EQ balanced, clean warm mix
+
+Exclude: Heavy, aggressive, explosive, falsetto, airy, whisper, harmonized, EDM
+```
+
+### Lyrics
+
+```
+[Intro]
+[Gentle arpeggiated guitar, 4 bars]
+
+[Verse 1]
+[Male, Soft, Reflective]
+노을이 번지는 창가에 서서
+하루가 저물어 가는 걸 봐
+바쁘게 지나온 시간들이
+이 빛 속에 천천히 내려앉아
+
+[Verse 2]
+[Male, Gentle, Building]
+누군가는 퇴근길 위에서
+누군가는 책상 앞에서
+같은 하늘 아래 서 있어
+우리 모두 여기 있어
+
+[Pre-Chorus]
+[Soft build, drums enter]
+힘들었던 오늘도
+버텨낸 하루도
+
+[Chorus]
+[Chest voice, Warm, Single vocal]
+괜찮아 괜찮아
+모두 괜찮아요
+지금 이 순간만큼은
+숨을 쉬어도 돼요
+제발요
+오늘 하루 수고했어요
+그러니까 괜찮아 괜찮아 괜찮아요
+내일은 또 내일의 해가 뜨니까
+
+[Verse 3]
+[Male, Observing]
+골목길에 켜지는 불빛들
+저마다의 이야기 안고서
+무거웠던 발걸음도
+이제 집으로 향해
+
+[Pre-Chorus]
+[Gentle build]
+잘하고 있어
+충분히 잘하고 있어
+
+[Chorus]
+[Chest voice, Embracing, Single vocal]
+괜찮아 괜찮아
+모두 괜찮아요
+완벽하지 않아도
+그대로 좋아요
+제발요
+자신을 너무 몰아세우지 말아요
+그러니까 괜찮아 괜찮아 괜찮아요
+우리 모두 충분히 잘하고 있으니까
+
+[Bridge]
+[Strip down — guitar + voice, intimate]
+제발 제발 제발요
+그 말들 대신에
+
+[Build — full band enters gently]
+
+[Final Chorus]
+[Full band, Warm resolution, Single vocal]
+괜찮아 괜찮아
+모두 괜찮아요
+4시의 노을 아래
+우리 여기 있어요
+제발요
+내일도 또 만나요
+그러니까 괜찮아 괜찮아 괜찮아요
+오늘도 수고했어요
+
+[Outro]
+[Band fades, Peaceful]
+괜찮아요...
+모두 괜찮아요...
+```
+
+### Hook
+
+- 메인 훅: "괜찮아 괜찮아 모두 괜찮아요"
+- 서브 훅: "오늘 하루 수고했어요"
+- 시리즈 연결: "제발 제발 제발요" → "괜찮아 괜찮아 괜찮아요" (응답)
+
+### 이미지 키워드
+
+- 노을, 창가, 하루의 끝
+- 퇴근길, 책상 앞, 같은 하늘
+- 골목길 불빛, 저마다의 이야기
+- 집으로 향하는 발걸음
+
+### 시리즈 피날레 의도
+
+- Track 01-08: "제발 제발 제발요" (각자의 간절함)
+- Track 09: "괜찮아 괜찮아 괜찮아요" (위로의 응답)
+- 4시의 노을이 모든 퍼소나를 하나로 감싸는 마무리
+
+---
+
+## Production Notes
+
+### Track 09 (4시의 노을)
+- 75 BPM, C Major, Korean Indie Rock + Bright Pop Rock
+- 다비치 타임캡슐 DNA: add9/sus4 확장 코드, 계단형 고조
+- Jangly clean guitar + Acoustic layer, Warm tone
+- 보컬: Male, warm and sincere, chest voice dominant
+- 컨셉: 시리즈 피날레 - 모든 퍼소나에게 보내는 위로
+- 가사: "제발"의 응답으로 "괜찮아"
+- 특징: 폭발하지 않고 따뜻하게 감싸는 곡
