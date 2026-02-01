@@ -2,7 +2,7 @@
 
 > 오후 4시, 다양한 삶의 교차점을 담은 시리즈
 
-Last updated: 2026-01-31 (Track 05 완성)
+Last updated: 2026-02-01 (Track 08 컨펌 완성)
 
 ---
 
@@ -28,7 +28,7 @@ Last updated: 2026-01-31 (Track 05 완성)
 | 05 | 주부 | 기다림 | Acoustic Band Rock | 고요, 자유, 기다림 |
 | 06 | 취준생 | 침묵 | Korean Alternative Rock, Boy Band Soft Pop-Rock | 좌절, 불안, 희망 |
 | 07 | 배달기사 | 신호 | Garage Rock | 피로, 질주, 생존 |
-| 08 | 프리랜서 | 카페 창가 | Alt-Rock | 고독, 자유, 불안정 |
+| 08 | 프리랜서 | 컨펌 | Bright Bouncy Pop | 고독, 자유, 불안정 |
 | 09 | 퇴직자 | 공원 벤치 | Folk Rock | 회상, 평화, 쓸쓸함 |
 | 10 | 모두 | 4시의 노을 | Power Ballad | 위로, 연대, 희망 |
 
@@ -1063,3 +1063,139 @@ EQ balanced sound, clean mix
 - 컨셉: 배달기사의 신호등 대기 - 밝고 경쾌한 사운드
 - 가사: 직설적이고 유머러스 (빨간불, 별점, 치킨 냄새)
 - 특징: 일상의 고단함을 밝게 풀어낸 곡
+
+---
+
+## Track 08: 컨펌
+
+### Basic Info
+
+| 항목 | 값 |
+|------|-----|
+| 제목 | 컨펌 |
+| 퍼소나 | 프리랜서 |
+| BPM | 130 |
+| Key | A Major |
+| 장르 | Korean Indie Pop, Bright Bouncy Pop |
+
+### Style Prompt
+
+```
+Articulation, Korean Indie Pop, Bright Bouncy Pop, 130 BPM, A Major, clean production, Verse: A - F#m7 - D - E, bouncy staccato rhythm
+Pre-Chorus: Building with syncopation
+Chorus: Open chords, catchy hook, handclap feel
+
+Jangly electric guitar, tight staccato picking
+Punchy bass, walking groove
+Crisp drums, snappy snare, shaker or tambourine
+Bright keyboard stabs, playful accents
+
+Male vocal, light and playful tone
+Chest voice, mid register, easygoing delivery
+Slightly cheeky, conversational feel
+Korean pronunciation, clear articulation
+
+Verse: light and bouncy
+Chorus: catchy sing-along, infectious energy
+Bridge: brief drop, quick bounce back
+
+Solo vocal only, no backing vocals, no harmonies
+
+Polished production, vocal upfront
+Moderate reverb, clean bright mix
+
+Exclude: Heavy, aggressive, slow, ballad, dark, falsetto, airy, whisper, harmonized, rock vocal, grit
+```
+
+### Lyrics
+
+```
+[Intro]
+[Bouncy guitar riff, 4 bars]
+
+[Verse 1]
+읽음 떴는데 답이 없어
+세 시간째 점만 봐
+입력 중 떴다 사라져
+뭐야 진짜
+
+[Pre-Chorus]
+통장 잔고 세 자리
+다음 달이 무서워
+
+[Chorus]
+컨펌 좀요
+한 마디만요
+최종이라며요
+왜 또 고쳐요
+
+제발 이번엔
+끝이라 해줘요
+제발 제발 제발요
+
+
+[Verse 2]
+검토 중이래 그게 끝
+일주일째 조용해
+다른 일 잡기도 애매해
+언제 오나
+
+[Pre-Chorus]
+괜히 나왔나
+월급이 그리워
+
+[Chorus]
+컨펌 좀요
+아무 말이나요
+안 돼도 돼요
+뭐라도 해줘요
+
+제발 이번엔
+읽씹은 말아요
+[Melodic]제발 제발 제발요
+
+
+[Bridge]
+[Lighter, half-time feel]
+자유가 좋다 했는데
+통장은 싫은가 봐
+
+[Final Chorus]
+[Full energy, Bright]
+컨펌 좀요
+오늘만 기다릴게요
+내일은 몰라요
+제가 먼저 끊을지도
+
+제발 이번엔
+이력서 안 쓰게요
+제발 제발 제발요
+기다릴게요
+
+[Outro]
+[Bouncy guitar fades]
+```
+
+### Hook
+
+- 메인 훅: "컨펌 좀요 / 한 마디만요"
+- 서브 훅: "제발 제발 제발요"
+
+### 이미지 키워드
+
+- 읽음, 점 세 개, 입력 중
+- 통장 잔고 세 자리, 다음 달
+- 검토 중, 일주일, 읽씹
+- 월급, 퇴사, 이력서
+
+---
+
+## Production Notes
+
+### Track 08 (컨펌)
+- 130 BPM, A Major, Korean Indie Pop
+- Jangly guitar, Bouncy staccato, Bright keyboard stabs
+- 보컬: Male, light and playful, conversational
+- 컨셉: 프리랜서의 컨펌 대기 - 통통 튀는 사운드
+- 가사: 자조적 유머 (읽씹, 통장 잔고, 이력서)
+- 특징: 프리랜서 고유의 불안을 밝게 풀어낸 곡
