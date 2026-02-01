@@ -2,7 +2,7 @@
 
 > 오후 4시, 다양한 삶의 교차점을 담은 시리즈
 
-Last updated: 2026-02-01 (Track 09 4시의 노을 완성 - 시리즈 피날레)
+Last updated: 2026-02-01 (Track 09 4시 완성 - 시리즈 피날레)
 
 ---
 
@@ -29,7 +29,7 @@ Last updated: 2026-02-01 (Track 09 4시의 노을 완성 - 시리즈 피날레)
 | 06 | 취준생 | 침묵 | Korean Alternative Rock, Boy Band Soft Pop-Rock | 좌절, 불안, 희망 |
 | 07 | 배달기사 | 신호 | Garage Rock | 피로, 질주, 생존 |
 | 08 | 프리랜서 | 컨펌 | Bright Bouncy Pop | 고독, 자유, 불안정 |
-| 09 | 모두 | 4시의 노을 | Korean Indie Rock, Bright Pop Rock | 위로, 연대, 희망 |
+| 09 | 모두 | 4시 | Korean Indie Rock, Bright Pop Rock | 위로, 연대, 희망 |
 
 ---
 
@@ -1201,13 +1201,13 @@ Exclude: Heavy, aggressive, slow, ballad, dark, falsetto, airy, whisper, harmoni
 
 ---
 
-## Track 09: 4시의 노을
+## Track 09: 4시
 
 ### Basic Info
 
 | 항목 | 값 |
 |------|-----|
-| 제목 | 4시의 노을 |
+| 제목 | 4시 |
 | 퍼소나 | 모두 (시리즈 피날레) |
 | BPM | 75 |
 | Key | C Major |
@@ -1371,7 +1371,7 @@ Exclude: Heavy, aggressive, explosive, falsetto, airy, whisper, harmonized, EDM
 [Full band, Warm resolution, Single vocal]
 괜찮아 괜찮아
 모두 괜찮아요
-4시의 노을 아래
+4시의 하늘 아래
 우리 여기 있어요
 제발요
 내일도 또 만나요
@@ -1392,7 +1392,7 @@ Exclude: Heavy, aggressive, explosive, falsetto, airy, whisper, harmonized, EDM
 
 ### 이미지 키워드
 
-- 노을, 창가, 하루의 끝
+- 4시, 창가, 하루의 끝
 - 퇴근길, 책상 앞, 같은 하늘
 - 골목길 불빛, 저마다의 이야기
 - 집으로 향하는 발걸음
@@ -1401,13 +1401,13 @@ Exclude: Heavy, aggressive, explosive, falsetto, airy, whisper, harmonized, EDM
 
 - Track 01-08: "제발 제발 제발요" (각자의 간절함)
 - Track 09: "괜찮아 괜찮아 괜찮아요" (위로의 응답)
-- 4시의 노을이 모든 퍼소나를 하나로 감싸는 마무리
+- 4시가 모든 퍼소나를 하나로 감싸는 마무리
 
 ---
 
 ## Production Notes
 
-### Track 09 (4시의 노을)
+### Track 09 (4시)
 - 75 BPM, C Major, Korean Indie Rock + Bright Pop Rock
 - 다비치 타임캡슐 DNA: add9/sus4 확장 코드, 계단형 고조
 - Jangly clean guitar + Acoustic layer, Warm tone
