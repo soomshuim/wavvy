@@ -7,7 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- **PM_1600 Track 09 "서랍" 완성 - 시리즈 피날레** `68f22e9`
+- **PM_1600 시리즈 패키징 및 업로드 준비 완료** `2a64214`
+  - 9트랙 x 2회 반복 = 58.6분
+  - description 최종 버전 (알고리즘 최적화 + 참여 유도)
+  - 비공개 업로드 완료
+- **PM_1600 Track 09 "서랍" 완성 - 시리즈 피날레** `87a853b`
   - 퍼소나: 모두 (시리즈 마무리)
   - 장르: Korean Pop Ballad, Pop-Rock
   - BPM: 108, Key: C Major
