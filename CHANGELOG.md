@@ -7,6 +7,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 09 "서랍" 완성 - 시리즈 피날레** `68f22e9`
+  - 퍼소나: 모두 (시리즈 마무리)
+  - 장르: Korean Pop Ballad, Pop-Rock
+  - BPM: 108, Key: C Major
+  - 보컬: Female, powerful chest voice, wide range
+  - 시드곡: 다비치 타임캡슐 DNA 참조
+  - 컨셉: 과거의 나에게 건네는 위로, 시간여행 감성
+  - 훅: "시간이 조금만 천천히 가면 / 지금의 나를 한 번 더 안아 줄 텐데"
+  - PM_1600 시리즈 9트랙 완성
 - **PM_1600 Track 08 "컨펌" 완성** `ad80964`
   - 퍼소나: 프리랜서 (클라이언트 컨펌 대기)
   - 장르: Korean Indie Pop, Bright Bouncy Pop
