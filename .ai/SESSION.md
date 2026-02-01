@@ -2,11 +2,20 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-01 (PM_1600 Track 07 "신호" 완성 `079a6c4`)
+> Last updated: 2026-02-01 (PM_1600 Track 08 "컨펌" 완성 `ad80964`)
 
 ## 완료된 작업
 
-### 2026-02-01 - PM_1600 Track 06 "침묵" + Track 07 "신호" 완성
+### 2026-02-01 - PM_1600 Track 06-08 완성
+
+- [x] **Track 08 "컨펌" 완성** `ad80964`
+  - 퍼소나: 프리랜서 (클라이언트 컨펌 대기)
+  - 장르: Korean Indie Pop, Bright Bouncy Pop
+  - BPM: 130, Key: A Major
+  - 보컬: Male, light and playful, conversational
+  - 컨셉: 통통 튀는 사운드 + 프리랜서 불안/자조
+  - 훅: "컨펌 좀요 / 한 마디만요" + "제발 제발 제발요"
+  - 엔딩: "이력서 안 쓰게요" (자조적 유머)
 
 - [x] **Track 07 "신호" 완성** `079a6c4`
   - 퍼소나: 배달기사 (오후 4시 반, 신호등 대기)
@@ -460,7 +469,7 @@
   - **수미상관 완성**: 멍(01) ↔ 깸(10)
   - 작업 디렉토리: `SERIES/PM_1400/`
   - Suno 생성 대기
-- **PM_1600 "4시의 사람들"**: Track 01-07 완성, 전체 구조 확정
+- **PM_1600 "4시의 사람들"**: Track 01-08 완성, 전체 구조 확정
   - 테마: 다양한 퍼소나들의 4시 (All Rock)
   - 시그니처 훅: "제발, 제발, 제발요"
   - Track 01 "가도 되나요": Soft Pop-Rock, 160 BPM, Male
@@ -468,10 +477,11 @@
   - Track 03 "7교시": Punk Rock
   - Track 04 "공강": Indie Rock
   - Track 05 "기다림": Acoustic Band Rock
-  - **Track 06 "침묵"**: Boy Band Soft Pop-Rock, 160 BPM, Male (Bright vs Sad 대비)
-  - **Track 07 "신호"**: Garage Rock (배달기사)
+  - Track 06 "침묵": Boy Band Soft Pop-Rock, 160 BPM, Male
+  - Track 07 "신호": Korean Indie Pop, 126 BPM, Male (배달기사)
+  - **Track 08 "컨펌"**: Bright Bouncy Pop, 130 BPM, Male (프리랜서)
   - 작업 디렉토리: `SERIES/PM_1600/`
-  - 다음: Track 08-10 시드곡 설계
+  - 다음: Track 09-10 시드곡 설계
 - **문서 버전**:
   - LYRICS.md v1.8
   - STYLE.md v2.6.2 (SSOT 슬롯 체계 통일)
@@ -480,8 +490,7 @@
 
 ## 진행 중
 
-- **PM_1600 Track 08-10 시드곡 설계**
-  - Track 08 "카페 창가" (프리랜서): Alt-Rock
+- **PM_1600 Track 09-10 시드곡 설계**
   - Track 09 "공원 벤치" (퇴직자): Folk Rock
   - Track 10 "4시의 노을" (모두): Power Ballad
 - Shorts 제작 준비 (shorts.mp4 입력 대기)

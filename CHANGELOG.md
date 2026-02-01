@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_1600 Track 08 "컨펌" 완성** `ad80964`
+  - 퍼소나: 프리랜서 (클라이언트 컨펌 대기)
+  - 장르: Korean Indie Pop, Bright Bouncy Pop
+  - BPM: 130, Key: A Major
+  - 보컬: Male, light and playful, conversational
+  - 컨셉: 통통 튀는 사운드 + 프리랜서 불안/자조
+  - 훅: "컨펌 좀요 / 한 마디만요" + "제발 제발 제발요"
+  - 엔딩: "이력서 안 쓰게요" (자조적 유머)
 - **PM_1600 Track 07 "신호" 완성** `079a6c4`
   - 퍼소나: 배달기사 (오후 4시 반, 신호등 대기)
   - 장르: Korean Indie Pop, Bright Driving Pop
