@@ -425,7 +425,7 @@ Step 4. 확인 후 실행: python vibem.py shorts [TRACK_PATH] --start [MM:SS] -
 
 1. 어떤 시리즈인가요?
    - AM_0400
-   - PM_1400
+   - PM_0200
    - (기타 시리즈...)
 
 2. 몇 번 트랙인가요?
@@ -600,7 +600,9 @@ SERIES/[시리즈명]/concept.md
 
 **예시:**
 - `SERIES/AM_0400/concept.md` ← AM 04:00 시리즈 SSOT
-- `SERIES/PM_1400/concept.md` ← PM 02:00 시리즈 SSOT
+- `SERIES/PM_0200/concept.md` ← PM 02:00 시리즈 SSOT
+- `SERIES/PM_0400/concept.md` ← PM 04:00 시리즈 SSOT
+- `SERIES/PM_0600/concept.md` ← PM 06:00 시리즈 SSOT
 
 **금지:**
 - ❌ 루트에 `concept_vol.*.md` 생성 금지
@@ -641,9 +643,16 @@ vibe-m/
 │   │       ├── tracks/     # MP3 파일
 │   │       ├── loop.mp4
 │   │       └── thumb.jpg
-│   └── PM_1400/            # 오후 2시 시리즈
-│       ├── concept.md
-│       └── input/
+│   ├── PM_0200/            # 오후 2시 시리즈
+│   │   ├── concept.md
+│   │   └── input/
+│   ├── PM_0400/            # 오후 4시 시리즈
+│   │   ├── concept.md
+│   │   └── input/
+│   ├── PM_0600/            # 오후 6시 시리즈
+│   │   ├── concept.md
+│   │   └── input/
+│   └── Single/             # 싱글 트랙
 │
 ├── vibem.py                # CLI 메인 코드
 ├── requirements.txt        # Python 의존성
