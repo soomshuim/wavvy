@@ -2,9 +2,20 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-01 (PM_0400 패키징 및 업로드 준비 완료 `2a64214`)
+> Last updated: 2026-02-07
 
 ## 완료된 작업
+
+### 2026-02-07 - PM_0400 공강 숏츠 제작
+
+- [x] **PM_0400 Track 04 "공강" Shorts 제작**
+  - 구간: 0:52 ~ 1:40, 48초
+  - 배경영상: `input/loop_shorts_4.mp4` (심볼릭 링크 → `shorts.mp4`)
+  - 출력: `SERIES/PM_0400/output/shorts/short_공강.mp4`
+- [x] **공강 숏츠 YouTube 메타데이터 작성**
+  - `SERIES/PM_0400/공강_shorts_youtube.md`
+  - 제목: "공강시간 48초 남음 | 공강 – soomshuim"
+  - Hook Title: "공강시간 48초 남음"
 
 ### 2026-02-05 - PM_0400 서랍 숏츠 + 골목 숏츠 메타데이터
 
