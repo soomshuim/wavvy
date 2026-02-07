@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_0900 "밤산책" 시리즈 시드곡 10곡 완성**
+  - 테마: 밤산책의 경로를 따라가는 공간 중심 플레이리스트
+  - 장르: 시티팝 베이스 (클래식 시티팝 + 시티팝풍 R&B 발라드 + 네오소울)
+  - 레퍼런스: 죠지, 김현철, 유키카, 아소토유니온
+  - 10곡: 문→담→불빛→벤치→물결→건넘→막차→창가→시야→집
+  - 수미상관: Track 01 "문"(출발) ↔ Track 10 "집"(귀가), 둘 다 Db Major
+  - Track 01 "문" 가사 v2: 문(門)=Moon 중의적 훅, 확장 구조
+  - 파일: concept.md + 10트랙 lyrics/style/exclude txt (31개)
 - **PM_0400 Track 09 "서랍" YouTube Shorts 제작 완료**
   - 구간: 0:50 ~ 1:50 (60초)
   - 출력: 1080x1920 (9:16), 62.4초, H.264+AAC
