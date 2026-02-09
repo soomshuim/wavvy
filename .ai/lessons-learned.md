@@ -2,7 +2,7 @@
 
 > 버그 패턴 및 해결책 기록
 >
-> Last updated: 2026-02-01
+> Last updated: 2026-02-09
 
 ---
 
@@ -323,7 +323,7 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 - [ ] Exclude에 `Airy, Falsetto, Whisper, Harmonized` 포함?
 - [ ] 모호한 형용사 제거? (`warm reflective`, `rich vibrato` 등)
 - [ ] husky/airy 별도 요청 없으면 Raw Vocal Baseline 적용?
-- [ ] **Articulation 포함?** (`Precise articulation, clear consonants`)
+- [ ] **Articulation 포함?** (`articulation`)
 - [ ] **Reverb 포함?** (`Moderate reverb, room ambience` 등)
 - [ ] **Sound Engineering 포함?** (`EQ balanced sound, clean mix`)
 
@@ -624,3 +624,41 @@ B2 Thesis: "사라지는 윤곽뿐" ← 변경 + Track 02 제목 "윤곽" 사용
 - [ ] 출처 없는 정보 없음 확인?
 - [ ] Sources 섹션에 URL 기재?
 - [ ] "이 정보의 출처가 있는가?" 자문?
+
+---
+
+## 🔧 Suno 곡 수정 패턴
+
+### Cover 기능으로 발음 수정
+
+> 출처: museA Suno 자료집 (2026-02)
+
+**상황**: 생성된 곡에서 가사 발음만 잘못된 경우
+
+**해결 방법**:
+```
+1. Suno에서 해당 곡 선택
+2. "Cover" 기능 클릭
+3. 잘못 발음한 가사만 수정
+4. 파라미터 설정:
+   - Audio: 100% (원곡 멜로디/편곡 유지)
+   - Style: 100% (원곡 스타일 유지)
+5. 생성
+```
+
+**핵심 포인트**:
+| 파라미터 | 값 | 효과 |
+|---------|-----|------|
+| Audio 100% | 원곡 멜로디, 편곡, BPM 완전 유지 |
+| Style 100% | 원곡 보컬 스타일, 장르 완전 유지 |
+| Lyrics 수정 | 발음 틀린 부분만 수정 |
+
+**사용 사례**:
+- 특정 단어 발음 오류
+- 가사 한 줄만 수정 필요
+- 멜로디/편곡은 완벽한데 가사만 문제
+
+**주의사항**:
+- Audio/Style 100%가 아니면 곡이 변형될 수 있음
+- 전체 가사 재작성이 필요하면 새로 생성이 나음
+- Cover 기능은 "미세 조정"용으로만 사용

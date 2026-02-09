@@ -2,9 +2,42 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-08
+> Last updated: 2026-02-09
 
 ## 완료된 작업
+
+### 2026-02-09 - museA Suno 가이드 통합 + 소괄호 메타태그 규칙 정립
+
+- [x] **museA Suno 자료집 보존 및 통합**
+  - `Reference/museA_suno_guide.md` 생성 (전체 자료집 보존)
+  - 조합 공식, 구조 공식 5종, 메타태그 규칙, 프롬프트 모음 포함
+  - VIBE-M 적용 포인트 섹션 추가
+
+- [x] **CLAUDE.md v2.9.0 워크플로우 업데이트**
+  - 가사/Style Prompt 생성 시 Step 0.5 museA 참조 단계 추가
+  - Auto Reference Rules에 museA 가이드 추가
+
+- [x] **LYRICS.md v2.1.0 소괄호 규칙 상세화**
+  - 위치: 모든 구조 태그 다음 줄에 단독 배치
+  - 포함: 보컬, 코드 진행, 악기/악기 진행
+  - 금지: Exclude 항목, 가사 중간 삽입
+  - 맥락 구분: 같은 맥락 = 공백, 다른 맥락 = `,` 또는 `+`
+  - 예시 추가: `(warm major9 and 13 chords with emotional release)`
+
+- [x] **ROLES.md v1.8 Required References 추가**
+  - Seed Designer / Variation Designer에 museA 참조 필수화
+  - 소괄호 규칙 요약 포함
+
+- [x] **STYLE.md v2.6.4 Tag Bank 확장**
+  - 12.7 장르 키워드 (2026 트렌드): Phonk, Jersey Club, Amapiano 등
+  - 12.8 보컬 스타일 확장: theatrical, persona-driven 등
+  - 12.9 구조 & 길이 제어 프롬프트
+
+- [x] **lessons-learned.md Cover 기능 추가**
+  - 발음 수정: audio 100% + style 100%
+
+- [x] **S18 Articulation 간소화**
+  - `Precise articulation, clear consonants` → `articulation`
 
 ### 2026-02-08 - PM_0900 "밤산책" 시리즈 시드곡 10곡 완성
 

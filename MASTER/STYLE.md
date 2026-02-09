@@ -1,6 +1,6 @@
 # VIBE-M STYLE.md
-Version: 2.6.3 (Char Limit 800 Unified + SSOT Alignment)
-Last Updated: 2026-01-26
+Version: 2.6.4 (Tag Bank 2026 트렌드 추가)
+Last Updated: 2026-02-09
 Purpose: Raw Vocal 기본값 + 진성 강제 + 커뮤니티 베스트 프랙티스 통합
 
 ---
@@ -105,7 +105,7 @@ Chest voice, Belting, Raspy, Grit
 
 **프로덕션 필수 (v2.6.2 NEW):**
 ```
-Precise articulation, clear consonants
+articulation
 Moderate reverb, room ambience
 EQ balanced sound, clean mix
 ```
@@ -501,7 +501,7 @@ Step 3: 글자수 체크 (Style만 800자 이하) → 넘으면 압축 루프
 | S9-S11 | Structure | Musicality Matrix + Harmony Guard + Chorus Layer Block |
 | S12-S14 | Exclude | 필수 항목 + 제한 + 모호 형용사 제거 |
 | S15-S17 | Constraints | 글자수 + Supportive + Density |
-| **S18** | **Articulation** | **Precise articulation, clear consonants** |
+| **S18** | **Articulation** | **articulation** |
 | **S19** | **Reverb** | **Moderate reverb, room ambience** |
 | **S20** | **Sound Engineering** | **EQ balanced sound, clean mix** |
 
@@ -769,3 +769,70 @@ lo-fi vinyl crackle, stereo wideners, sidechain pump (EDM 시에만)
 **Era/Influence:**
 ```
 90s R&B nostalgia, 80s synth aesthetic, retro production
+```
+
+### 12.7 장르 키워드 (2026 트렌드) — v2.6.4 NEW
+
+> 출처: museA Suno 자료집 (2026-02 업데이트)
+
+**숏폼 & 인터넷 네이티브:**
+```
+Hyperpop, Phonk, Drift Phonk, Glitchcore, Sped Up, Sigilkore
+```
+
+**댄스 & 리듬 트렌드:**
+```
+Jersey Club, Baltimore Club, 2-Step, Breakcore, UK Garage
+```
+
+**글로벌 & 힙합:**
+```
+Amapiano, Rage, Pluggnb, Jersey Drill, Latin Pop, Urbano
+```
+
+**분위기 & 미학:**
+```
+Bedroom Pop, Weirdcore, Dreamcore, Vaporwave
+```
+
+**사용 팁:**
+- Drift Phonk: 자동차/드리프트 영상 배경음, 카우벨 강조
+- Jersey Club: K-pop 아이돌곡에 많이 차용, 특유의 킥 패턴
+- Amapiano: 로그 드럼 베이스 + 재즈 건반, 현재 글로벌 핫 장르
+
+### 12.8 보컬 스타일 확장 — v2.6.4 NEW
+
+**캐릭터/연극적 보컬:**
+```
+theatrical, persona-driven, animated, character voice
+```
+
+**특수 스타일:**
+```
+operatic, childlike, robotic, spoken word
+```
+
+### 12.9 구조 & 길이 제어 프롬프트 — v2.6.4 NEW
+
+> 곡 구조와 길이를 조절하는 영어 프롬프트
+
+**Intro/Outro 길이:**
+```
+Make the intro longer and more lyrical
+Write a longer and more impactful outro
+Let the outro fade slowly and emotionally
+Strip the arrangement down in the outro
+```
+
+**구조 변형:**
+```
+Add a short instrumental break
+Reduce density in the middle section
+Build intensity gradually toward the end
+```
+
+**공간감 제어 (추가):**
+```
+Create a small jazz club atmosphere
+Make the space feel intimate rather than wide
+Let the sound feel close and personal

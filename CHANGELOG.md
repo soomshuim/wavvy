@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **museA Suno 가이드 통합 및 소괄호 메타태그 규칙 정립**
+  - `Reference/museA_suno_guide.md` 생성 (Suno 실전 가이드 보존)
+  - CLAUDE.md v2.9.0: 워크플로우에 museA 참조 단계 추가 (Step 0.5)
+  - LYRICS.md v2.1.0: 소괄호 `()` 규칙 상세화 (위치/포함/금지/맥락 구분)
+  - ROLES.md v1.8: Seed/Variation Designer에 Required References 추가
+  - STYLE.md v2.6.4: Tag Bank 2026 트렌드 장르 + 구조/길이 제어 프롬프트 추가
+  - lessons-learned.md: Cover 기능 활용법 추가
+  - S18 Articulation 간소화: `Precise articulation, clear consonants` → `articulation`
+
+### Added
 - **PM_0900 "밤산책" 시리즈 시드곡 10곡 완성**
   - 테마: 밤산책의 경로를 따라가는 공간 중심 플레이리스트
   - 장르: 시티팝 베이스 (클래식 시티팝 + 시티팝풍 R&B 발라드 + 네오소울)

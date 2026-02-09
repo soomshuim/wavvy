@@ -1,5 +1,5 @@
 # VIBE-M Role System (SSOT)
-# Version: 1.7 (2026-01-25) — S1-S12 Validation + SSOT Alignment
+# Version: 1.8 (2026-02-09) — museA Guide + 소괄호 메타태그 참조 추가
 # Purpose: Separate thinking to prevent duplication, drift, and algorithmic risk.
 # Scope: Defines WHY and WHAT each AI role is responsible for.
 
@@ -169,6 +169,22 @@ Seed Researcher output is **input-only material** for Seed Designer.
 Design a **Seed DNA** that can safely produce 8–15 tracks
 without sounding templated or triggering algorithmic duplication.
 
+### Required References (v1.8 NEW)
+
+> **가사 + Style Prompt 생성 시 필수 참조**
+
+| 참조 문서 | 읽을 범위 | 용도 |
+|----------|----------|------|
+| `Reference/museA_suno_guide.md` | §2 조합 공식, §3 구조 공식, §4 메타태그, §6 프롬프트 | Style/가사 디자인 |
+| `MASTER/LYRICS.md` | §2.3.2 소괄호 규칙 | 가사 내 `()` 메타태그 배치 |
+| `MASTER/STYLE.md` | §12 Tag Bank | 키워드 선택 |
+
+**소괄호 `()` 메타태그 규칙 요약:**
+- 위치: 모든 구조 태그 다음 줄에 단독 배치
+- 포함: 보컬, 코드 진행, 악기/악기 진행
+- 금지: Exclude 항목, 가사 중간 삽입
+- 같은 맥락 = 공백, 다른 맥락 = `,` 또는 `+`
+
 ### Responsibilities
 - Define immutable musical constants
 - Define allowed variation ranges
@@ -206,6 +222,23 @@ Answer explicitly:
 ### Mission
 Produce **algorithm-safe, listener-coherent variations**
 within the Seed DNA.
+
+### Required References (v1.8 NEW)
+
+> **가사 + Style Prompt 생성 시 필수 참조**
+
+| 참조 문서 | 읽을 범위 | 용도 |
+|----------|----------|------|
+| `Reference/museA_suno_guide.md` | §2 조합 공식, §4 메타태그, §6 프롬프트 | Style/가사 Variation |
+| `MASTER/LYRICS.md` | §2.3.2 소괄호 규칙 | 가사 내 `()` 메타태그 배치 |
+| `MASTER/STYLE.md` | §12 Tag Bank | 키워드 선택 |
+
+**소괄호 `()` 메타태그 규칙 요약:**
+```
+[Chorus]
+(warm major9 and 13 chords with emotional release)
+가사 내용...
+```
 
 ### Responsibilities
 - Select variation slots (min 2) — see STYLE.md §4 Slot System

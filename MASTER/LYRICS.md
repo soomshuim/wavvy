@@ -1,6 +1,6 @@
 # VIBE-M LYRICS.md
-Version: 2.0.0 (Metatag Behavior SSOT)
-Last Updated: 2026-01-27
+Version: 2.1.0 (소괄호 규칙 상세화)
+Last Updated: 2026-02-09
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
 ---
@@ -519,29 +519,47 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 가사 내용...
 ```
 
-#### 2.3.2 소괄호 `(BB)` — 조건부 인식 (30~100%)
+#### 2.3.2 소괄호 `(BB)` — 조건부 인식 (30~100%) — v2.9 UPDATE
 
 | 상황 | Suno 인식률 | 예시 |
 |------|------------|------|
 | **코러스/애드립 가사** | 100% 낭독 | `(oh yeah)`, `(la la la)` |
-| **보컬 톤/창법 지시** | ~30% 인식 | `(husky voice)`, `(shouting)` |
+| **보컬/악기/진행 지시** | ~30% 인식 | `(Male Vocal soft whisper)`, `(Piano arpeggios gentle)` |
 
-**톤 지시 배치 규칙:**
-- 톤 지시 명령어는 **구조 태그 바로 아래, 단독 행**에 배치해야 Suno가 명령어로 인식
-- 가사와 같은 행에 쓰면 가사로 읽힐 확률 높음
+**배치 규칙 (필수):**
+
+| 규칙 | 설명 |
+|------|------|
+| **위치** | 모든 구조 태그 (`[Intro]`, `[Verse]`, `[Chorus]` 등) 다음 줄에 **단독 배치** |
+| **포함 가능** | 보컬, 코드 진행, 악기, 악기 진행 |
+| **포함 불가** | Exclude 항목 (Exclude는 Style Prompt에만) |
+| **같은 맥락** | 공백으로 연결 (쉼표/+ 없이) |
+| **다른 맥락** | 쉼표 `,` 또는 `+`로 구분 |
 
 **올바른 배치:**
 ```
+[Intro]
+(Instrumental, Male Vocal speaking)
+
 [Verse1]
-[Male Vocal]
-(shouting)
+(Male Vocal soft whisper + Piano arpeggios gentle)
+가사 내용...
+
+[Chorus]
+(warm major9 and 13 chords with emotional release)
 가사 내용...
 ```
 
 **잘못된 배치:**
 ```
 [Verse1]
-(shouting) 가사 내용...  ← 가사로 읽힐 수 있음
+가사 내용 (soft whisper)  ← 가사 중간 = 가사로 읽힘
+```
+
+**맥락 구분 예시:**
+```
+(Male Vocal soft whisper + Piano arpeggios gentle, Strings swell)
+ └── 같은 맥락: 공백 ──┘   └── 다른 맥락: + 또는 , ──┘
 ```
 
 #### 2.3.3 금지: 감정/분위기 태그 in Lyrics

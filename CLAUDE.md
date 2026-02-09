@@ -2,7 +2,7 @@
 
 > YouTube Music Playlist Generator CLI
 >
-> Last updated: 2026-01-27 | v2.8.0 (Metatag Behavior Rules)
+> Last updated: 2026-02-09 | v2.9.0 (museA Guide Integration)
 
 ## ⚠️ SSOT 경고
 
@@ -35,6 +35,7 @@
 | 버그 패턴 | `.ai/lessons-learned.md` |
 | 현재 상태 | `.ai/SESSION.md` |
 | 인기 사례 분석 PDF | `Reference/유튜브 감성 플레이리스트 인기 사례 분석.pdf` |
+| **Suno 실전 가이드 (필수)** | `Reference/museA_suno_guide.md` |
 
 ## Hard Constraints (절대 제약)
 
@@ -53,14 +54,15 @@
 | **24H Universe 트랙 생성** | `MASTER/24H_UNIVERSE.md` | 전체 (필수) |
 | **플레이리스트 컨셉 논의/시작** | `MASTER/PLAYLIST_GUIDE.md` | 전체 (필수) |
 | **플레이리스트 타이틀 생성** | `MASTER/PLAYLIST_GUIDE.md` | Section 0 (SSOT) |
-| 가사 작성/수정 | `MASTER/LYRICS.md` | 전체 |
-| Style Prompt 작성 | `MASTER/STYLE.md` | 전체 |
+| **가사 작성/수정** | `MASTER/LYRICS.md` + `Reference/museA_suno_guide.md` | 전체 + §3-4 |
+| **Style Prompt 작성** | `MASTER/STYLE.md` + `Reference/museA_suno_guide.md` | 전체 + §2,6 |
 | 플레이리스트 프로파일 | `MASTER/STYLE.md` | Section 3 |
 | QC/Fail Fast 기준 | `MASTER/MANAGER.md` | Section 1, 3 |
 | 역할 분리/AI 작업 | `MASTER/ROLES.md` | 전체 |
 | FFmpeg 필터 작업 | `.ai/lessons-learned.md` | "필터 그래프 버그" 섹션 |
 | 정규화 작업 | `.ai/lessons-learned.md` | "ffmpeg-normalize 버그" 섹션 |
 | 새 커맨드 추가 | `MASTER/VIBE-M_Master_Plan.md` | CLI 커맨드 명세 |
+| **곡 발음 수정** | `Reference/museA_suno_guide.md` | §7 Cover 기능 |
 
 ## Workflow Checklists
 
@@ -72,6 +74,9 @@
 **가사 생성 요청 시:**
 ```
 Step 0. LYRICS.md + 이전 트랙 키워드 확인
+Step 0.5. museA 가이드 참조 (v2.9 NEW):
+         - §3 구조 공식 (Pop Standard/K-POP Standard 등) 선택
+         - §4 메타태그 규칙 ([AA] 절대 안 읽음, (BB) 조건부)
 Step 1. Generate 가사 초안
 Step 2. Run self-QC against checklist (10개 항목)
 Step 3. Korean Positioning 검증 (K1-K3)
@@ -87,6 +92,10 @@ Step 5. If all pass → output with QC 테이블
 **Style Prompt 생성 요청 시:**
 ```
 Step 0. STYLE.md Required Slots 확인
+Step 0.5. museA 가이드 참조 (v2.9 NEW):
+         - §2 조합 공식: "핵심을 앞에" (Genre/BPM 첫 3-5단어)
+         - §6 공간감/다이내믹 프롬프트 1-2개 선택
+         - §1 Tag Bank에서 장르/악기/보컬 키워드 선택
 Step 1. Generate Style Prompt (압축 버전)
 Step 2. Run self-QC against checklist (20개 슬롯)
 Step 3. 글자수 검증 (wc -c 실행, < 800자 확인)
@@ -193,7 +202,7 @@ Section D: 키워드 축 요약 (이전 트랙과 비교)
 | **S15** | **글자수 제한** | **< 800자 권장 (실제 1000자)** | 출력 전 `wc -c`로 검증, 800~1000 허용 |
 | **S16** | **Lead Instrument Supportive** | **`[악기]-led, supportive` 형태** | 악기 과도한 존재감 방지 |
 | **S17** | **Chorus Expansion Density** | **`arrangement density only` 명시** | 스테레오/볼륨 해석 방지 |
-| **S18** | **Articulation (필수)** | **`Precise articulation, clear consonants`** | 발음 명확성 확보, 웅얼거림 방지 |
+| **S18** | **Articulation (필수)** | **`articulation`** | 발음 명확성 확보, 웅얼거림 방지 |
 | **S19** | **Reverb (필수)** | **`Moderate reverb, room ambience`** | 공간감 제어 |
 | **S20** | **Sound Engineering (필수)** | **`EQ balanced sound, clean mix`** | 믹스 품질 확보 |
 
