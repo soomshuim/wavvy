@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **PM_0900 Track 01 "문(Moon)" 최종 가사/스타일 반영**
+  - 가사: V1 2-3행 수정 (편한 신발/손잡이), Pre-Chorus 전면 교체
+  - 스타일: Articulation 선두 배치, 콤마 구분 단일 블록 포맷
+  - concept.md: 키워드 축 열쇠→손잡이, 훅/상태 업데이트
+
 ### Added
 - **museA Suno 가이드 통합 및 소괄호 메타태그 규칙 정립**
   - `Reference/museA_suno_guide.md` 생성 (Suno 실전 가이드 보존)

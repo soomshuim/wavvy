@@ -167,8 +167,9 @@ Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals
 - **Vocal**: Male (Baritone)
 - **Lead Instrument**: Felt Piano, Rhodes
 - **감정**: 출발, 설렘, 첫 발걸음
-- **키워드 축**: 현관/문/신발/열쇠/밤공기
-- **상태**: 대기
+- **키워드 축**: 현관/문/신발/손잡이/밤공기
+- **훅**: "문을 열면 moon"
+- **상태**: Suno 생성 대기 (가사/스타일 확정)
 
 ### Track 02: 담 (골목)
 - **장르**: 네오소울 + 시티팝
