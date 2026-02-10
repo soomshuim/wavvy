@@ -56,9 +56,9 @@
 |---|------|------|---------|-----|-----|-------|-------------|
 | 01 | 현관 | **문** | 발라드 | 75 | Db Major | Male | 출발, 설렘, 첫 발걸음 |
 | 02 | 거리 | **밤 산책** | 시티팝 | 90 | Eb Major | Male | 도시, 불빛, 고요한 걸음 |
-| 03 | 편의점 | **불빛** | 시티팝 | 108 | F Major | Female | 일상, 형광등, 야식 |
-| 04 | 공원 | **벤치** | 발라드 | 72 | Ab Major | Male | 사색, 나무, 가로등 |
-| 05 | 강변 | **물결** | 시티팝 | 115 | A Major | Male | 해방, 바람, 반짝임 |
+| 03 | 거리 | **밤 거리** | 시티팝 발라드 | 90 | Eb Major | Mixed (F+M) | 도시, 불빛, 관조, 걸음 |
+| 04 | 골목 | **가로등** | 시티팝 발라드 | 66 | Db Major | Female | 그리움, 기억, 가로등, 골목 |
+| 05 | 강변 | **수면** | 시티팝 | 88 | Db Major | Male | 도시 강변, 물결, 관조, 쿨함 |
 | 06 | 다리 | **건넘** | 네오소울 | 92 | Eb Major | Female | 전환, 중간, 불빛 |
 | 07 | 정류장 | **막차** | 발라드 | 68 | Db Major | Female | 기다림, 멈춤, 적막 |
 | 08 | 카페 | **창가** | 네오소울 | 85 | Db Major | Male | 온기, 휴식, 커피향 |
@@ -169,7 +169,81 @@ Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals
 - **감정**: 출발, 설렘, 첫 발걸음
 - **키워드 축**: 현관/문/신발/손잡이/밤공기
 - **훅**: "문을 열면 moon"
-- **상태**: Suno 생성 대기 (가사/스타일 확정)
+- **Suno Parameters**: W:35 / I:65
+- **상태**: 완료
+
+**Lyrics:**
+```
+[intro]
+[instrumental]
+
+[verse1]
+현관 앞에 멈춰 서
+편한 신발을 신고
+손잡이 돌려 문을 열면
+밤이 나를 불러와
+
+신발 끈을 묶으며
+오늘 밤을 그려봐
+달빛 따라 걸으면
+어디든 갈 수 있어
+
+[pre-chorus]
+문틈 사이로 빛이 새어들어
+moon 아래 빛이 스며들어
+
+[chorus]
+문을 열면 moon
+밤이 날 반겨줘
+달빛 아래 걸어
+
+[verse2]
+가로등 사이로 걸어
+그림자가 춤을 춰
+바람이 볼을 스치면
+마음이 가벼워져
+
+주머니에 손을 넣고
+천천히 걸어가
+발자국 소리만 울려
+고요한 이 밤거리
+
+[pre-chorus]
+문틈 사이로 빛이 새어들어
+moon 아래 빛이 스며들어
+
+[chorus]
+문을 열면 moon
+밤이 날 반겨줘
+달빛 아래 걸어
+
+[bridge]
+어디로 갈지 정해진 건 없어
+그냥 걷고 싶은 밤이야
+발걸음이 이끄는 대로
+moon이 비춰주는 대로
+
+[final chorus]
+문을 열면 moon
+밤이 날 반겨줘
+달빛 아래 걸어
+
+[outro]
+문을 열면 moon
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean City Pop R&B Ballad, 75 BPM, Db Major
+
+Felt Piano-led, supportive, Rhodes electric piano, soft brush kit with rim clicks, warm synth pad, Male Baritone vocal, Raw, Solid, Direct, Dry, Unprocessed, Chest voice dominant, No falsetto, Precise articulation, clear consonants, Verse: Felt piano carries melody, minimal accompaniment, intimate and dreamy, Pre-Chorus: builds tension, synth pad swells, anticipation rising, Chorus: short punchy hook, drums fill out, bass melodic, 1 held note on "moon", Bridge: stripped to piano and voice, builds to final chorus, Outro: "문을 열면 moon" hook repeats, gradual fade with reverb bloom, 80s-90s Japanese City Pop influence, Extended jazz chords, Dreamy nocturnal mood, Moderate reverb, room ambience, EQ balanced sound, clean mix, Lead vocal remains single and dominant throughout, Chorus expansion by arrangement density only
+```
+
+**Exclude:**
+```
+Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals, Energetic, Dance, Fast, Synth-heavy
+```
 
 ### Track 02: 밤 산책 (거리)
 - **장르**: Korean City Pop
@@ -180,34 +254,328 @@ Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals
 - **키워드 축**: 상점/유리창/신호등/편의점/가로수/보도블록/네온
 - **훅**: "거리를 걷는 중"
 - **Suno Parameters**: W:50 / I:50
+- **상태**: 완료
+
+**Lyrics:**
+```
+[intro]
+(Analog synth pad, muted electric piano, soft city ambience)
+
+[instrumental]
+
+[verse1]
+(Male vocal, Chest voice dominant, No harmony, Direct)
+불 켜진 상점 앞을 지나
+유리창에 불빛이 겹쳐
+버스는 느리게 멀어지고
+신호등만 남아 있어
+
+[pre-chorus]
+(Synth pad swells lightly, bass groove subtle)
+닫힌 문 앞에
+광고판 소리
+밤은 그냥 흘러
+
+[chorus]
+(Chest voice, No harmony, synth pad wider)
+거리를 걷는 중
+아무 일도 없이
+불빛은 많고
+말은 없어
+
+[verse2]
+(Chest voice, dynamics lift, guitar arpeggio added)
+편의점 불은 환하고
+사람은 하나둘 줄어
+가로수 그림자 길게
+보도블록 위에 놓여
+
+[pre-chorus]
+(Synth pad swells lightly, bass groove subtle)
+켜진 창 하나
+꺼진 창 하나
+층마다 다른 밤
+
+[chorus]
+(Chest voice, No harmony, synth pad wider)
+거리를 걷는 중
+발소리만 남아
+음악은 낮게
+계속돼
+
+[bridge]
+(Direct vocal, Dry, synth pad only)
+네온이 잠깐 흔들리고
+택시는 모퉁이를 돌아
+
+[final chorus]
+(Chest voice, arrangement density rises, bass melodic)
+거리를 걷는 중
+시간은 느리고
+밤은 길게
+늘어져
+
+[outro]
+(Clean guitar arpeggio fades, synth pad last note)
+[instrumental fade]
+```
+
+**Style:**
+```
+Male vocal, Korean City Pop, 88–92 BPM, Eb Major, Warm, Clear, solid, full-bodied male vocal, chest voice dominant, clear articulation, smooth legato, no huskiness, no falsetto, calm and composed delivery, Sung Si-kyung–like vocal presence, Retro city pop with subtle retro influence, clean analog synth pad base (not lo-fi), muted electric piano accents, clean electric guitar arpeggios with chorus, rounded melodic bass groove, soft drum machine with tight kick and restrained hi-hat, Verse: minimal arrangement, vocal-forward, restrained groove, Verse2: slight dynamic lift, bass and guitar more present, Chorus: arrangement widens subtly, no vocal stacking, no shout, Bridge: synth pad and vocal only, intimate and controlled, Outro: guitar arpeggio fade, night-walk mood, Flat modern mix, clear midrange vocal focus, Light room reverb only, no tape saturation, Emotion carried by tone and space, not vocal force
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, thin voice, whisper singing, overly nostalgic, 80s disco feel, city pop kitsch, slap bass, saxophone lead, chorus harmony stack, emotional overacting
+```
+
+### Track 03: 밤 거리 (거리)
+- **장르**: Modern City Pop Ballad
+- **BPM**: 90 | **Key**: Eb Major
+- **Vocal**: Mixed — 가사 메타: Female (Mezzo), 스타일: Male (Baritone-leaning Tenor). 혼성 결과 채택
+- **Lead Instrument**: Piano, Analog Synth Pad, Clean Electric Guitar
+- **감정**: 도시, 불빛, 관조, 걸음
+- **키워드 축**: 창/신호등/유리창/불빛/거리/그림자/하늘
+- **훅**: "불빛은 계속 이어지고 / 밤은 말없이 흘러가"
+- **Suno Parameters**: W:50 / I:50
+- **상태**: 완료 (혼성 보컬 채택)
+
+**Lyrics:**
+```
+[Verse 1]
+(Female vocal, Mezzo, Chest voice, intimate, piano-led)
+불이 켜진 창을 따라
+천천히 걷다 보면
+이 밤은 아무 말 없이
+나를 지나가죠
+차가운 바람 사이로
+익숙한 노래 하나
+괜히 발걸음이 느려져요
+
+[Verse 2]
+(Chest voice, soft strings enter, dynamics lift)
+신호등 앞에 멈춰 선
+짧은 순간에
+유리창에 비친 얼굴이
+조금 낯설죠
+누군가 웃고 떠드는 소리
+멀어졌다 가까워져
+도시는 숨을 쉬어요
+
+[Chorus]
+(Full arrangement, Gb to Gbm emotional shift, release)
+불빛은 계속 이어지고
+밤은 말없이 흘러가
+지나친 장면들 사이로
+괜히 마음이 잠시 멈춰
+이 거리 어딘가에
+지금의 내가 남아
+
+[Verse 3]
+(Chest voice, piano returns, minimal)
+혼자라는 말보다
+조용하단 말이
+이 밤엔 더 어울리는 것 같아
+발끝에 닿는 그림자
+길게 늘어질수록
+괜히 하늘을 한 번 봐요
+
+[Chorus]
+(Arrangement builds)
+불빛은 계속 이어지고
+밤은 말없이 흘러가
+지나친 장면들 사이로
+괜히 마음이 잠시 멈춰
+이 거리 어딘가에
+지금의 내가 남아
+
+[Interlude]
+(Electric guitar solo, emotional, Gb to Gbm color)
+[instrumental]
+
+[Chorus]
+(Emotional Peak)
+불빛은 계속 이어지고
+밤은 말없이 흘러가
+지나친 장면들 사이로
+괜히 마음이 잠시 멈춰
+이 거리 어딘가에
+지금의 내가 남아
+
+[Outro]
+```
+
+**Style:**
+```
+Modern City Pop Ballad, 90 BPM, Eb Major, Male vocal, warm baritone-leaning tenor, chest voice dominant, solid full-bodied, clear tone, no falsetto, no breathy, minimal vibrato, controlled sustain, Korean ballad sensibility with subtle city pop color, retro mood through harmony and tone, calm forward steady delivery, emotion through phrasing not dramatization, single lead vocal only, Piano-led harmony with restrained analog synth pads, clean electric guitar arpeggios with light chorus, understated funky bass groove, light drum machine with soft open hi-hat, Verse: spacious piano and pad with gentle groove, Verse2: slight dynamic lift with fuller guitar and bass, Chorus: pad widens and arrangement density increases with band entry, one held note max per chorus, Bridge: piano and vocal only intimate, Outro: guitar arpeggios and pad fade, Nocturnal urban mood, observational and flowing, modern mix with retro color, warm low-mids controlled highs, moderate room reverb, ‑rock, ‑strong, ‑EDM, ‑falsetto
+```
+
+**Exclude:**
+```
+rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony stack
+```
+
+### Track 04: 가로등 (골목)
+- **장르**: Korean City Pop Ballad
+- **BPM**: 66 | **Key**: Db Major
+- **Vocal**: Female (Mezzo-soprano)
+- **Lead Instrument**: Piano, Analog Pad (Juno-style), Clean Electric Guitar (JC-style)
+- **감정**: 그리움, 기억, 가로등, 골목
+- **키워드 축**: 가로등/골목/편의점/아이스크림/불빛/웃음
+- **훅**: "그렇게 다시 웃어줄래요" / "Baby, I keep walking back to you"
+- **레퍼런스**: 죠지 바라봐줘요 (66 BPM, Db Major, IV→iv 코드 시그니처)
+- **Suno Parameters**: W:50 / I:50
+- **상태**: 완료
+
+**Lyrics:**
+```
+[Verse 1]
+이 길을 걸으면 떠오르는
+기억이 있죠
+그때 우리는 여기 어딘가
+웃고만 있죠
+가로등 불빛 아래 걸으면서
+가로등만 우리를 보고 있었는데
+그냥 지나갔네요
+
+[Verse 2]
+같이 걸으면 환했던 골목
+기억나는데
+편의점 앞에 잠깐 멈췄던
+그 밤이었죠
+아이스크림 하나 나눠 먹으며
+불빛은 아직 남아 있는 것 같아
+자꾸 떠올라요
+
+[Chorus]
+Baby, I keep walking back to you
+불빛 아래 그대 웃었어
+그때의 길들이 전부 이어져오면
+아직 거기 있는 것처럼
+그렇게 다시 웃어줄래요
+
+[Verse 3]
+혼자서 이 길을 걷다
+멈춰 서게 되죠
+가로등 불빛이 닿는 곳에
+아무 말 없이 서 있었죠
+그때로 다시 다시 갈 수 있다면
+그 웃음 하나 다시 볼 수만
+있을 텐데
+
+[Chorus]
+Oh, I keep walking back to you
+불빛 아래 그대 웃었어
+그때의 길들이 전부 이어져오면
+아직 거기 있는 것처럼
+그렇게 다시 웃어줄래요
+
+[Interlude]
+[instrumental]
+
+[Chorus]
+Baby, I keep walking back to you
+불빛 아래 그대 웃었어
+그때의 길들이 전부 이어져오면
+아직 거기 있는 것처럼
+그렇게 다시 웃어줄래요
+
+[Outro]
+```
+
+**Style:**
+```
+Korean City Pop Ballad, female vocal mezzo-soprano, clear Korean diction, chest voice, warm tone, restrained vibrato, emotional but controlled delivery, Key Db major, 66 BPM, intimate late-night solitude mood, Piano-led arrangement with minimal soft strings used sparingly, subtle analog pad (Juno-style, low-pass, slow attack) supporting the chorus, clean electric guitar with light chorus (JC-style) and sparse rhythmic comping, restrained electric guitar solo interlude, IV to iv (Gb to Gbm) emotional chord shift as harmonic signature, diatonic 7th and dominant 7th harmony, verses built on suspended and slash chords with unresolved tension, chorus opens into warm major harmony with gentle emotional release, smooth harmonic movement, no abrupt modulation, no key change, Natural live-band dynamics, gradual build without explosion, cinematic yet minimal, No choir, no stacked harmonies, no EDM elements, no over-orchestration, Slight tape saturation, short 80s-style plate reverb tail, warm bu
+```
+
+**Exclude:**
+```
+rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony stack
+```
+
+### Track 05: 수면 (강변)
+- **장르**: Korean City Pop
+- **BPM**: 88 | **Key**: Db Major
+- **Vocal**: Male (Warm Tenor, Chest voice)
+- **Lead Instrument**: Juno-106 Analog Synth Pad, DX7 FM EP, Clean Guitar (chorus effect)
+- **감정**: 도시 강변, 관조, 쿨한 고요
+- **키워드 축**: 교각/강변/자갈/옷깃/택시/아파트/수면/파문
+- **훅**: "Oh, lights on the water" / "물결 위에 번져가"
+- **레퍼런스**: 아소토유니온 Think About' Chu (86 BPM, Db Major, 원-루프 4마디, 재즈 확장 화성)
+- **Suno Parameters**: W:35 / I:65
 - **상태**: Suno 생성 대기 (가사/스타일 확정)
 
-### Track 03: 불빛 (편의점)
-- **장르**: 클래식 시티팝
-- **BPM**: 108 | **Key**: F Major
-- **Vocal**: Female (Mezzo)
-- **Lead Instrument**: Synth, Funky Guitar
-- **감정**: 일상, 형광등, 야식
-- **키워드 축**: 편의점/형광등/삼각김밥/유리문/야식
-- **상태**: 대기
+**Lyrics:**
+```
+[Intro]
+(Juno-106 analog synth pad, funky finger bass, 16-bit hi-hat groove)
 
-### Track 04: 벤치 (공원)
-- **장르**: 시티팝풍 R&B 발라드
-- **BPM**: 72 | **Key**: Ab Major
-- **Vocal**: Male (Tenor)
-- **Lead Instrument**: Nylon Guitar, Soft Keys
-- **감정**: 사색, 나무, 가로등
-- **키워드 축**: 벤치/나무/낙엽/가로등/바람
-- **상태**: 대기
+[instrumental]
 
-### Track 05: 물결 (강변)
-- **장르**: 클래식 시티팝
-- **BPM**: 115 | **Key**: A Major
-- **Vocal**: Male (Tenor)
-- **Lead Instrument**: Funky Guitar, Brass stabs
-- **감정**: 해방, 바람, 반짝임
-- **키워드 축**: 강/물결/바람/다리/불빛
-- **상태**: 대기
+[Verse 1]
+(Male vocal, Chest voice, warm groovy delivery)
+교각 아래 내려서면
+강변 위로 바람이 춤을 춰
+물 위에 도시가 일렁이고
+밤이 수면 위에 떠
+그냥 서서 바라봐
+
+[Verse 2]
+(Chest voice, dynamics lift, DX7 EP enters)
+발밑에 자갈이 울리면
+옷깃에 바람이 스며
+어딘가 음악이 흘러나오고
+택시가 모퉁이를 돌아
+그 소리 멀어져 가
+
+[Chorus]
+(Full groove, brass stabs, arrangement density rises)
+Oh, lights on the water
+물결 위에 번져가
+이 밤은 천천히 흘러
+그냥 여기 있을래
+
+[Verse 3]
+(Chest voice, bass groove only, minimal)
+강 건너 아파트 불빛
+하나둘 꺼져가
+수면 위로 도시가 잠들면
+파문만 남아 있어
+
+[Chorus]
+(Arrangement builds)
+Oh, lights on the water
+물결 위에 번져가
+이 밤은 천천히 흘러
+그냥 여기 있을래
+
+[Interlude]
+(DX7 EP solo over same loop, brass accent)
+[instrumental]
+
+[Final Chorus]
+(Full arrangement density peak)
+Oh, lights on the water
+물결 위에 번져가
+이 밤은 천천히 흘러
+그냥 여기 있을래
+
+[Outro]
+Oh, lights on the water
+(Woo)
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean City Pop, 88 BPM, Db Major, Male vocal warm tenor, Raw Solid Direct, Chest voice dominant, No falsetto, groovy cool delivery, upper register on chorus, Juno-106 analog synth pad supportive, DX7 FM electric piano, sparkling clean guitar with chorus effect, mellow round finger bass, brush kit 16-bit hi-hat groove, soft brass on chorus, One-loop 4-bar jazz harmony add9 M7 sus4 m7 IV-iv shift, Verse: pad and bass vocal-forward, Verse2: DX7 guitar lift, Chorus: density rises brass locks, Verse3: bass and pad minimal, Outro: pad fade, No harmony no backing vocals no doubles, Lead vocal single and dominant, Chorus expansion by arrangement density only, Lush plate reverb spacious floating, tape warmth, EQ balanced mellow sparkling sheen
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar, over-orchestration
+```
 
 ### Track 06: 건넘 (다리)
 - **장르**: 네오소울 + 시티팝

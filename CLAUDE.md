@@ -2,7 +2,7 @@
 
 > YouTube Music Playlist Generator CLI
 >
-> Last updated: 2026-02-09 | v2.9.0 (museA Guide Integration)
+> Last updated: 2026-02-10 | v2.10.0 (City Pop Rubric Integration)
 
 ## ⚠️ SSOT 경고
 
@@ -36,6 +36,7 @@
 | 현재 상태 | `.ai/SESSION.md` |
 | 인기 사례 분석 PDF | `Reference/유튜브 감성 플레이리스트 인기 사례 분석.pdf` |
 | **Suno 실전 가이드 (필수)** | `Reference/museA_suno_guide.md` |
+| **시티팝 장르 루브릭** | `MASTER/CITYPOP_RUBRIC.md` |
 
 ## Hard Constraints (절대 제약)
 
@@ -63,6 +64,7 @@
 | 정규화 작업 | `.ai/lessons-learned.md` | "ffmpeg-normalize 버그" 섹션 |
 | 새 커맨드 추가 | `MASTER/VIBE-M_Master_Plan.md` | CLI 커맨드 명세 |
 | **곡 발음 수정** | `Reference/museA_suno_guide.md` | §7 Cover 기능 |
+| **City Pop 트랙 QA** | `MASTER/CITYPOP_RUBRIC.md` | 전체 (필수) |
 
 ## Workflow Checklists
 
@@ -84,7 +86,11 @@ Step 4. 메타태그 검증 (v2.8 NEW):
         - [AA] 대괄호: 구조/보컬 메타만 (감정/분위기 태그 금지)
         - (BB) 소괄호 톤지시: 반드시 단독 행에 배치
         - 감정/분위기 태그 발견 시 → Style로 이동
-Step 5. If all pass → output with QC 테이블
+Step 5. 장르 게이트 (v2.10 NEW):
+        IF genre = City Pop → CITYPOP_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
+Step 6. If all pass → output with QC 테이블
         If any fail → 재작성 후 Step 2 반복
         (통과할 때까지 유저에게 제안하지 않음)
 ```
@@ -99,12 +105,16 @@ Step 0.5. museA 가이드 참조 (v2.9 NEW):
 Step 1. Generate Style Prompt (압축 버전)
 Step 2. Run self-QC against checklist (20개 슬롯)
 Step 3. 글자수 검증 (wc -c 실행, < 800자 확인)
-Step 4. If all pass → QC 테이블 + 글자수와 함께 output
+Step 4. 장르 게이트 (v2.10 NEW):
+        IF genre = City Pop → CITYPOP_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
+Step 5. If all pass → QC 테이블 + 글자수와 함께 output
         If any fail → 수정 후 Step 2 반복
         (검증 통과 전 유저에게 제안 금지)
-Step 5. .txt 파일 저장 + pbcopy ← v2.5 NEW
+Step 6. .txt 파일 저장 + pbcopy ← v2.5 NEW
         (채팅 UI 공백 문제 우회)
-Step 6. Style Prompt + Exclude 반드시 세트로 출력 ← v2.6 NEW
+Step 7. Style Prompt + Exclude 반드시 세트로 출력 ← v2.6 NEW
         (Exclude 누락 방지)
 ```
 
@@ -643,6 +653,7 @@ vibe-m/
 │   ├── MANAGER.md          # 운영 마스터 플랜 (Phase 0~6)
 │   ├── ROLES.md            # 역할 분리 시스템
 │   ├── QUICK_REF.md        # 사람용 운영 매뉴얼
+│   ├── CITYPOP_RUBRIC.md   # 시티팝 장르 루브릭 (≥80점 PASS)
 │   └── VIBE-M_Master_Plan.md # CLI 스펙
 │
 ├── SERIES/                 # 시리즈별 프로젝트 (concept.md SSOT 위치)

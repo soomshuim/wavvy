@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **MASTER/CITYPOP_RUBRIC.md v1.0 — 시티팝 장르 루브릭**
+  - 6개 팩터 100점 만점 (도시 서사/감정 절제/텐션 화성/리듬&베이스/사운드 팔레트/장르 정체성)
+  - PASS ≥80, FAIL <80, CRITICAL FAIL: 개별 팩터 ≤5
+  - BPM별 베이스 가이드, 7개 빈티지 사운드 요소, Dry vs Spacious 경고
+- **PM_0900 Track 05 "수면" 시드 디자인**
+  - 시드곡: Asoto Union "Think About Chu" DNA (Db Major, 88 BPM, one-loop 4-bar)
+  - 시티팝 루브릭 84/100 PASS
+  - Style: Juno-106/DX7/brass/plate reverb/tape warmth, 759자
+  - seed05_think_about_chu_research.md 작성
+
+### Changed
+- **CLAUDE.md v2.10.0 — City Pop Rubric 워크플로우 통합**
+  - 가사/Style Prompt 워크플로우에 장르 게이트 삽입
+  - Auto Reference Rules, Quick Reference, Project Structure 업데이트
+- **PM_0900 concept.md — Track 01-05 통합 완료**
+  - Track 01-04 가사/스타일/exclude concept.md 반영, 상태 "완료"
+  - Track 05 "수면" 시드 디자인 반영
+  - Track 01-04 개별 txt 파일 삭제 (SSOT 정리)
+
 ### Changed
 - **PM_0900 Track 02 "밤 산책" + Track 03 가사/스타일 전면 재작업**
   - Track 02: 담(골목)→밤 산책(거리), Female→Male, 네오소울→Korean City Pop

@@ -6,6 +6,42 @@
 
 ## 완료된 작업
 
+### 2026-02-10 - PM_0900 Track 05 "수면" 시드 디자인 + City Pop Rubric 시스템
+
+- [x] **Track 05 "수면" 시드 디자인 완성**
+  - 시드곡: Asoto Union "Think About Chu" (Db Major, ~86 BPM, one-loop 4-bar)
+  - seed05_think_about_chu_research.md 작성 (코드 악보 분석)
+  - DNA: Db Major, 88 BPM, one-loop, add9/M7/sus4/m7, IV→iv shift, 한/영 혼용
+  - 시티팝 루브릭 평가: 48점 → 84점 (재디자인 통과)
+  - 제목: 물결 → **수면** (PM_0200 Track 06 "물결"과 충돌 방지)
+  - 가사: 교각/택시/아파트/강변도로 도시 오브젝트, 관조적 톤
+  - Style: 759자, Juno-106/DX7/brass/plate reverb/tape warmth
+  - Exclude: falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar, over-orchestration
+  - W:35 / I:70 권장
+
+- [x] **Style Prompt 피드백 반영**
+  - 88 BPM + Slap Bass → mellow round finger bass (펑크 발라드 위험 제거)
+  - Dry 제거 → Lush plate reverb spacious floating (시티팝 공간감 확보)
+  - sparkling, mellow sparkling sheen 키워드 추가
+
+- [x] **MASTER/CITYPOP_RUBRIC.md 생성 (v1.0)**
+  - 6개 팩터 100점 만점 (도시 서사/감정 절제/텐션 화성/리듬&베이스/사운드 팔레트/장르 정체성)
+  - PASS ≥ 80점, FAIL < 80점, CRITICAL FAIL: 개별 팩터 ≤ 5점
+  - BPM별 베이스 가이드, 7개 빈티지 사운드 요소, Dry vs Spacious 경고
+  - QA 워크플로우 6단계
+
+- [x] **CLAUDE.md v2.10.0 워크플로우 통합**
+  - Quick Reference에 CITYPOP_RUBRIC.md 추가
+  - Auto Reference Rules에 City Pop 트랙 QA 추가
+  - 가사 워크플로우 Step 5 장르 게이트 삽입
+  - Style Prompt 워크플로우 Step 4 장르 게이트 삽입
+  - Project Structure에 CITYPOP_RUBRIC.md 추가
+
+- [x] **Track 01-04 concept.md 통합 + txt 삭제**
+  - Track 01-04 가사/스타일/exclude → concept.md 반영
+  - Track 01-04 상태: 완료
+  - Track 03-04 txt 파일 삭제 (01-02는 사용자가 이미 삭제)
+
 ### 2026-02-10 - PM_0900 Track 02-03 재작업
 
 - [x] **Track 02 "밤 산책" 전면 재작업**
@@ -621,18 +657,31 @@
   - **Track 08 "컨펌"**: Bright Bouncy Pop, 130 BPM, Male (프리랜서)
   - 작업 디렉토리: `SERIES/PM_0400/`
   - 다음: Track 09-10 시드곡 설계
+- **PM_0900 "밤산책"**: Track 01-05 완료, Track 06-10 대기
+  - Track 01 "문": 발라드, 75 BPM, Db, Male — 완료
+  - Track 02 "밤 산책": City Pop, 88-92 BPM, Eb, Male — 완료
+  - Track 03 "밤 거리": City Pop Ballad, 90 BPM, Gb, Male(혼성) — 완료
+  - Track 04 "가로등": City Pop, 66 BPM, Db, Male — 완료
+  - Track 05 "수면": City Pop, 88 BPM, Db, Male — 완료 (W:35/I:70)
+  - Track 06-10: 대기
 - **문서 버전**:
   - LYRICS.md v1.8
   - STYLE.md v2.6.2 (SSOT 슬롯 체계 통일)
-  - CLAUDE.md v2.6.2 (SSOT 슬롯 체계 통일)
+  - CLAUDE.md v2.10.0 (City Pop Rubric Integration)
   - ROLES.md v1.7 (S1-S12 Validation + SSOT Alignment)
+  - CITYPOP_RUBRIC.md v1.0 (NEW)
 
 ## 진행 중
 
-- **PM_0400 Track 09-10 시드곡 설계**
+- **PM_0900 Track 06-10 시드곡 설계**
+  - Track 06 "건넘" (다리): 네오소울, Female
+  - Track 07 "막차" (정류장): 발라드, Female
+  - Track 08 "창가" (카페): 네오소울, Male
+  - Track 09 "시야" (옥상): 시티팝, Male
+  - Track 10 "집" (귀가): 발라드, Female
+- **PM_0400 Track 09-10 시드곡 설계** (보류)
   - Track 09 "공원 벤치" (퇴직자): Folk Rock
   - Track 10 "4시의 노을" (모두): Power Ballad
-- Shorts 제작 준비 (shorts.mp4 입력 대기)
 
 ## 2026-01-23 세션 완료
 
