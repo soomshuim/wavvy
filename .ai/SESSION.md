@@ -6,6 +6,32 @@
 
 ## 완료된 작업
 
+### 2026-02-10 - PM_0900 Track 02-03 재작업
+
+- [x] **Track 02 "밤 산책" 전면 재작업**
+  - 제목: 담 → 밤 산책, 장소: 골목 → 거리
+  - Vocal: Female → Male (성시경 계열)
+  - 장르: 네오소울 → Korean City Pop, 88-92 BPM, Eb Major
+  - 가사/스타일/exclude 사용자 직접 작성
+  - Suno Parameters: W:50 / I:50
+  - concept.md 반영 (보컬 배분 M6:F4)
+
+- [x] **Track 03 가사/스타일 전면 재작업**
+  - 레퍼런스: 죠지 바라봐줘요 (66 BPM, Db Major, IV→iv 코드 시그니처)
+  - 가사: 편의점 테마 → 거리 산책 + 그녀 기억 테마
+  - 훅: "그렇게 다시 웃어줄래요" (바라봐줘요 음율 매칭)
+  - 영어 훅: "Baby, I keep walking back to you"
+  - 구조: V1→V2→C→V3→C→Guitar Solo Interlude→C(peak)→Outro
+  - 장르 전환: 순수 발라드 → City Pop Ballad (90 BPM, Gb Major)
+  - 스타일: 신스 패드 리드 + 펑키 베이스 그루브 드라이브 (피아노 accent only)
+  - exclude: rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony stack
+
+- [x] **LYRICS.md v2.2.0 업데이트**
+  - [] = 구조 태그 전용 (보컬 메타 사용 금지)
+  - () = 보컬+악기+코드 단일행 (2행 연속 금지)
+  - QC Fail F4: 보컬 메타에 [] 사용
+  - QC Fail F5: () 2행 연속
+
 ### 2026-02-09 - PM_0900 Track 01 "문(Moon)" 최종 반영
 
 - [x] **Track 01 "문" 최종 가사 반영**

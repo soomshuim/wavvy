@@ -1,5 +1,5 @@
 # VIBE-M LYRICS.md
-Version: 2.1.0 (소괄호 규칙 상세화)
+Version: 2.2.0 (괄호 통합: [] 구조 전용, () 보컬+악기+코드 1행 통합)
 Last Updated: 2026-02-09
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
@@ -393,15 +393,37 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 > **VIBE-M은 태그 최소화가 원칙. 허용 태그 외 사용 금지.**
 
-#### ⚠️ SSOT: 보컬 메타태그 필수 규칙 — v1.9.1 NEW
+#### ⚠️ SSOT: 괄호 사용 규칙 — v2.2 UPDATE
 
-> **구조 태그만 있고 보컬 제어 메타태그 없으면 QC FAIL**
+> **`[]` 대괄호는 구조 태그 전용. 보컬/악기/코드 지시는 모두 `()` 소괄호.**
 
 | 규칙 | 설명 |
 |------|------|
-| 최소 요건 | 구조 태그 + 보컬 메타태그 **세트**로 작성 |
-| 필수 메타태그 | `[Chest voice]`, `[No harmony]`, `[Direct vocal]` 중 최소 1개 |
-| FAIL 조건 | 구조 태그(`[verse]`, `[chorus]`)만 있고 보컬 메타태그 없음 |
+| **`[]` 대괄호** | 구조 태그 전용 (`[verse1]`, `[chorus]`, `[bridge]` 등) |
+| **`()` 소괄호** | 보컬 + 악기 + 코드 진행 지시 (한 줄에 통합) |
+| **1행 원칙** | 구조 태그 뒤 `()` 는 **반드시 1행만** (2행 연속 금지) |
+| 최소 요건 | 구조 태그 + `()` 보컬 메타 **세트**로 작성 |
+| 필수 메타 | `Chest voice`, `No harmony`, `Direct vocal` 중 최소 1개를 `()` 안에 포함 |
+| FAIL 조건 | 구조 태그만 있고 `()` 보컬 메타 없음 / `[]`에 보컬 메타 사용 |
+
+**올바른 예시:**
+```
+[verse1]
+(Female Contralto warm, Chest voice, No harmony, Direct vocal, neo-soul groove)
+가사 내용...
+
+[chorus]
+(Chest voice, No harmony, warm major7 chords with gentle lift)
+가사 내용...
+```
+
+**잘못된 예시:**
+```
+[verse1]
+[Chest voice, No harmony]        ← ❌ 보컬 메타에 [] 사용 금지
+(warm neo-soul groove)            ← ❌ () 2행 연속 금지
+가사 내용...
+```
 
 **이 규칙은 LYRICS.md가 SSOT입니다. CLAUDE.md, ROLES.md는 이 규칙을 참조합니다.**
 
@@ -470,33 +492,33 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 - `[Mood: dreamy, melancholic]` - 분위기 지정
 - `[Atmosphere: spacious, ambient]` - 공간감 지정
 
-**보컬 제어 메타태그 (v1.4):**
+**보컬 제어 키워드 (v2.2 UPDATE):**
 
-> 구조 태그와 함께 사용하여 보컬 스타일 제어
+> `()` 소괄호 안에 악기/코드 지시와 함께 한 줄로 작성
 
-| 태그 | 효과 | 사용 예시 |
-|------|------|----------|
-| `[No harmony]` | 화음/코러스 제거 | `[verse1]` 바로 뒤에 |
-| `[No backing vocals]` | 백보컬 제거 | 노래 시작 부분 |
-| `[Direct vocal]` | 단단한 보컬 강조 | |
-| `[Dry voice]` | 건조한 보컬 | |
-| `[Chest voice]` | 진성 강조 | |
-| `[No falsetto]` | 가성 제거 | |
-| `[Powerful belt]` | 강한 벨팅 | Chorus에 |
-| `[Soft belt]` | 부드러운 벨팅 | Chorus에 |
+| 키워드 | 효과 |
+|--------|------|
+| `No harmony` | 화음/코러스 제거 |
+| `No backing vocals` | 백보컬 제거 |
+| `Direct vocal` | 단단한 보컬 강조 |
+| `Dry voice` | 건조한 보컬 |
+| `Chest voice` | 진성 강조 |
+| `No falsetto` | 가성 제거 |
+| `Powerful belt` | 강한 벨팅 |
+| `Soft belt` | 부드러운 벨팅 |
 
 **사용 예시:**
 ```
 [verse1]
-[Direct voice, No harmony]
+(Direct vocal, No harmony, Chest voice, Piano arpeggios gentle)
 가사 내용...
 
 [chorus]
-[Powerful belt, Chest voice]
+(Powerful belt, Chest voice, No harmony, warm major7 chords)
 가사 내용...
 ```
 
-**주의:** 메타태그는 구조 태그 바로 뒤 별도 행에 배치. 가사와 같은 행에 쓰지 않음.
+**주의:** 보컬 키워드는 `()` 소괄호 안에서 악기/코드와 함께 **1행으로 통합**. `[]` 사용 금지.
 
 ---
 
@@ -504,18 +526,18 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 > **"대괄호와 소괄호는 Suno에서 완전히 다르게 동작한다."**
 
-#### 2.3.1 대괄호 `[AA]` — 구조 태그 (절대 낭독 안 함)
+#### 2.3.1 대괄호 `[AA]` — 구조 태그 전용 (절대 낭독 안 함)
 
 | 규칙 | 설명 |
 |------|------|
 | **동작** | 대괄호 안 텍스트는 **절대 가사로 읽지 않음** |
-| **용도** | 곡의 구조 변화 지시 (`[verse]`, `[chorus]`, `[bridge]` 등) |
-| **보컬 메타** | `[Chest voice]`, `[No harmony]` 등 보컬 제어용으로도 사용 |
+| **용도** | 곡의 구조 변화 지시 **전용** (`[verse]`, `[chorus]`, `[bridge]` 등) |
+| **보컬/악기 지시** | **`[]` 사용 금지** → `()` 소괄호로 통합 (§2.2 참조) |
 
 **올바른 사용:**
 ```
 [verse1]
-[Male Vocal]
+(Male Vocal warm, Chest voice, No harmony, Piano arpeggios)
 가사 내용...
 ```
 
@@ -581,6 +603,8 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 | F1 | 감정/분위기 태그가 Lyrics에 있음 | **FAIL → Style로 이동** |
 | F2 | 소괄호 톤 지시가 가사와 같은 행에 있음 | **FAIL → 단독 행으로 분리** |
 | F3 | 대괄호에 악기/편곡 지시 있음 | **FAIL → Style로 이동** |
+| F4 | 보컬 메타에 `[]` 대괄호 사용 | **FAIL → `()` 소괄호로 변경** |
+| F5 | 구조 태그 뒤 `()` 가 2행 연속 | **FAIL → 1행으로 통합** |
 
 ---
 

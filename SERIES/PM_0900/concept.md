@@ -55,7 +55,7 @@
 | # | 장소 | 제목 | 장르 축 | BPM | Key | Vocal | 감정 키워드 |
 |---|------|------|---------|-----|-----|-------|-------------|
 | 01 | 현관 | **문** | 발라드 | 75 | Db Major | Male | 출발, 설렘, 첫 발걸음 |
-| 02 | 골목 | **담** | 네오소울 | 88 | Eb Major | Female | 익숙함, 고요, 그림자 |
+| 02 | 거리 | **밤 산책** | 시티팝 | 90 | Eb Major | Male | 도시, 불빛, 고요한 걸음 |
 | 03 | 편의점 | **불빛** | 시티팝 | 108 | F Major | Female | 일상, 형광등, 야식 |
 | 04 | 공원 | **벤치** | 발라드 | 72 | Ab Major | Male | 사색, 나무, 가로등 |
 | 05 | 강변 | **물결** | 시티팝 | 115 | A Major | Male | 해방, 바람, 반짝임 |
@@ -71,8 +71,8 @@
 
 | 성별 | 트랙 | 비율 |
 |------|------|------|
-| **Male** | 01, 04, 05, 08, 09 | 5곡 (50%) |
-| **Female** | 02, 03, 06, 07, 10 | 5곡 (50%) |
+| **Male** | 01, 02, 04, 05, 08, 09 | 6곡 (60%) |
+| **Female** | 03, 06, 07, 10 | 4곡 (40%) |
 
 ---
 
@@ -171,14 +171,16 @@ Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals
 - **훅**: "문을 열면 moon"
 - **상태**: Suno 생성 대기 (가사/스타일 확정)
 
-### Track 02: 담 (골목)
-- **장르**: 네오소울 + 시티팝
-- **BPM**: 88 | **Key**: Eb Major
-- **Vocal**: Female (Alto)
-- **Lead Instrument**: Electric Piano, Muted Guitar
-- **감정**: 익숙함, 고요, 그림자
-- **키워드 축**: 골목/담/가로등/그림자/발자국
-- **상태**: 대기
+### Track 02: 밤 산책 (거리)
+- **장르**: Korean City Pop
+- **BPM**: 88-92 | **Key**: Eb Major
+- **Vocal**: Male (성시경 계열, Warm, Clear, Full-bodied)
+- **Lead Instrument**: Analog Synth Pad, Muted Electric Piano, Clean Guitar Arpeggios
+- **감정**: 도시의 고요, 불빛, 무심한 걸음
+- **키워드 축**: 상점/유리창/신호등/편의점/가로수/보도블록/네온
+- **훅**: "거리를 걷는 중"
+- **Suno Parameters**: W:50 / I:50
+- **상태**: Suno 생성 대기 (가사/스타일 확정)
 
 ### Track 03: 불빛 (편의점)
 - **장르**: 클래식 시티팝

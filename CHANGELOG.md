@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **PM_0900 Track 02 "밤 산책" + Track 03 가사/스타일 전면 재작업**
+  - Track 02: 담(골목)→밤 산책(거리), Female→Male, 네오소울→Korean City Pop
+  - Track 03: 시티팝(108)→City Pop Ballad(90), 바라봐줘요 레퍼런스 기반
+  - Track 03 가사: 거리 산책 + 그녀 기억 테마, 훅 "그렇게 다시 웃어줄래요"
+  - Track 03 스타일: 신스 패드 리드 + 펑키 베이스 그루브 드라이브, Gb Major
+  - LYRICS.md v2.2.0: [] 구조태그 전용, () 보컬+악기 단일행, QC F4/F5 추가
+  - concept.md: Track 02 정보 업데이트 (보컬 배분 M6:F4)
+
 - **PM_0900 Track 01 "문(Moon)" 최종 가사/스타일 반영**
   - 가사: V1 2-3행 수정 (편한 신발/손잡이), Pre-Chorus 전면 교체
   - 스타일: Articulation 선두 배치, 콤마 구분 단일 블록 포맷
