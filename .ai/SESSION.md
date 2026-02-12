@@ -2,9 +2,36 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-09
+> Last updated: 2026-02-11
 
 ## 완료된 작업
+
+### 2026-02-11 - PM_0900 Track 06-07 베리에이션 + Cross-Series Overlap Guard
+
+- [x] **Track 05 제목 변경: 수면 → 한강**
+  - concept.md 반영 (트랙 리스트 + 상세)
+  - txt 파일 3종 삭제 (lyrics/style/exclude)
+
+- [x] **Track 06 "잠실대교" 베리에이션 디자인**
+  - 컨셉: 택시 귀가, 알딸딘한 취기, 잠실대교 야경
+  - 장르: Korean Neo-Soul City Pop, 92 BPM, Eb Major, Female Alto
+  - 피드백 반영: 택시 내부 → 외부 풍경, "위로 올라" → "위를 지나"
+  - V1L1 "뒷좌석에 몸을 맡겨", V2L2 "택시 창을 살짝 열어" 택시 마커
+  - 훅: "건너가는 중이야 / 도시가 다 흔들려"
+  - City Pop Rubric: 초안 65/100 FAIL → 재디자인 82/100 PASS
+  - Style 779자, S1-S12 전항목 PASS
+
+- [x] **Track 07 "막차" 베리에이션 디자인**
+  - 장르: Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto
+  - 훅: "막차는 지나갔어 / 도시가 멈춰 있어"
+  - City Pop Rubric: 81/100 PASS
+  - **문제 발견**: PM_0600 T03 "정류장"과 컨셉 겹침 (장소+감정+상황)
+  - **장소 재설계 필요** (정류장 → 미정)
+
+- [x] **CLAUDE.md v2.11.0 Cross-Series Overlap Guard**
+  - 워크플로우 Step 0: SERIES/ 전체 concept.md 스캔
+  - 체크리스트 1.12: Cross-Series Independence
+  - 판정: 장소+감정+상황 3축 중 2개 이상 겹침 = FAIL
 
 ### 2026-02-10 - PM_0900 Track 05 "수면" 시드 디자인 + City Pop Rubric 시스템
 
@@ -657,25 +684,26 @@
   - **Track 08 "컨펌"**: Bright Bouncy Pop, 130 BPM, Male (프리랜서)
   - 작업 디렉토리: `SERIES/PM_0400/`
   - 다음: Track 09-10 시드곡 설계
-- **PM_0900 "밤산책"**: Track 01-05 완료, Track 06-10 대기
+- **PM_0900 "밤산책"**: Track 01-06 완료, Track 07 장소 재설계 필요
   - Track 01 "문": 발라드, 75 BPM, Db, Male — 완료
   - Track 02 "밤 산책": City Pop, 88-92 BPM, Eb, Male — 완료
   - Track 03 "밤 거리": City Pop Ballad, 90 BPM, Gb, Male(혼성) — 완료
   - Track 04 "가로등": City Pop, 66 BPM, Db, Male — 완료
-  - Track 05 "수면": City Pop, 88 BPM, Db, Male — 완료 (W:35/I:70)
-  - Track 06-10: 대기
+  - Track 05 "한강": City Pop, 88 BPM, Db, Male — Suno 생성 대기 (W:35/I:70)
+  - Track 06 "잠실대교": Neo-Soul City Pop, 92 BPM, Eb, Female — Suno 생성 대기 (W:35/I:65)
+  - Track 07 "막차": City Pop Ballad, 68 BPM, Db, Female — **장소 재설계 필요** (PM_0600 겹침)
+  - Track 08-10: 대기
 - **문서 버전**:
   - LYRICS.md v1.8
   - STYLE.md v2.6.2 (SSOT 슬롯 체계 통일)
-  - CLAUDE.md v2.10.0 (City Pop Rubric Integration)
+  - CLAUDE.md v2.11.0 (Cross-Series Overlap Guard)
   - ROLES.md v1.7 (S1-S12 Validation + SSOT Alignment)
   - CITYPOP_RUBRIC.md v1.0 (NEW)
 
 ## 진행 중
 
-- **PM_0900 Track 06-10 시드곡 설계**
-  - Track 06 "건넘" (다리): 네오소울, Female
-  - Track 07 "막차" (정류장): 발라드, Female
+- **PM_0900 Track 07 장소 재설계 + Track 08-10 시드곡 설계**
+  - Track 07 "막차" → 장소 변경 필요 (PM_0600 정류장 겹침)
   - Track 08 "창가" (카페): 네오소울, Male
   - Track 09 "시야" (옥상): 시티팝, Male
   - Track 10 "집" (귀가): 발라드, Female

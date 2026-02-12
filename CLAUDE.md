@@ -2,7 +2,7 @@
 
 > YouTube Music Playlist Generator CLI
 >
-> Last updated: 2026-02-10 | v2.10.0 (City Pop Rubric Integration)
+> Last updated: 2026-02-11 | v2.11.0 (Cross-Series Overlap Guard)
 
 ## ⚠️ SSOT 경고
 
@@ -76,6 +76,10 @@
 **가사 생성 요청 시:**
 ```
 Step 0. LYRICS.md + 이전 트랙 키워드 확인
+        + 크로스시리즈 컨셉 겹침 검증 (v2.11 NEW):
+          SERIES/ 내 모든 concept.md 트랙리스트 스캔
+          장소(location) + 감정(emotion) + 상황(situation) 3축 비교
+          → 3축 중 2개 이상 겹침 = FAIL → 장소/컨셉 변경 후 재설계 (유저 제안 금지)
 Step 0.5. museA 가이드 참조 (v2.9 NEW):
          - §3 구조 공식 (Pop Standard/K-POP Standard 등) 선택
          - §4 메타태그 규칙 ([AA] 절대 안 읽음, (BB) 조건부)
@@ -170,6 +174,7 @@ Falsetto, Airy, Whisper, ...
 | 1.9 | Physical Object Anchor | **각 섹션에 물성 오브젝트 1개 이상** (추상어 과밀 금지) |
 | **1.10** | **Image Density** | **V1=공간, V2=감각 분리 (핵심 이미지 2개 이상 겹침 금지)** |
 | **1.11** | **Chorus Tone** | **직접 호소/명령형 최대 1개, 나머지 관조 톤** |
+| **1.12** | **Cross-Series Independence** | **다른 시리즈 concept.md와 장소+감정+상황 3축 중 2개 이상 겹침 없음** |
 | 2.1 | Pure Input | 설명형 괄호 금지, Performance Cues `(soft)` 등은 허용 |
 | **2.3** | **메타태그 동작** | **`[AA]`=구조(낭독X), `(BB)`=조건부(톤지시 단독행), 감정태그→Style** |
 | **2.2** | **메타태그 필수** | **LYRICS.md §2.2 SSOT 참조** (구조 태그 + 보컬 메타태그 세트 필수) |
@@ -184,6 +189,7 @@ Section A: 가사 (전문)
 Section B: QC Validation (각 항목 ✓/✗)
 Section C: Korean Positioning (K1-K3 ✓/✗) ← v1.7 NEW
 Section D: 키워드 축 요약 (이전 트랙과 비교)
+Section E: Cross-Series 겹침 검증 (v2.11 NEW) ← SERIES/ 전체 concept.md 대조
 ```
 
 ---
@@ -353,6 +359,7 @@ Step 3. 결과 QC 후 파라미터 조정 필요 시 기록
 □ Description 해시태그는 구분선(---) 아래에만
 □ Pinned comment 이모지 ≤ 1개
 □ SSOT version 명시됨
+□ Cross-Series 겹침 없음 (SERIES/ 전체 concept.md 장소+감정+상황 3축 대조) ← v2.11 NEW
 ```
 
 **FAIL 시:** 해당 항목 수정 후 재검증

@@ -58,9 +58,9 @@
 | 02 | 거리 | **밤 산책** | 시티팝 | 90 | Eb Major | Male | 도시, 불빛, 고요한 걸음 |
 | 03 | 거리 | **밤 거리** | 시티팝 발라드 | 90 | Eb Major | Mixed (F+M) | 도시, 불빛, 관조, 걸음 |
 | 04 | 골목 | **가로등** | 시티팝 발라드 | 66 | Db Major | Female | 그리움, 기억, 가로등, 골목 |
-| 05 | 강변 | **수면** | 시티팝 | 88 | Db Major | Male | 도시 강변, 물결, 관조, 쿨함 |
-| 06 | 다리 | **건넘** | 네오소울 | 92 | Eb Major | Female | 전환, 중간, 불빛 |
-| 07 | 정류장 | **막차** | 발라드 | 68 | Db Major | Female | 기다림, 멈춤, 적막 |
+| 05 | 강변 | **한강** | 시티팝 | 88 | Db Major | Male | 도시 강변, 물결, 관조, 쿨함 |
+| 06 | 잠실대교 | **잠실대교** | 네오소울 | 92 | Eb Major | Female | 택시, 취기, 야경, 롯데타워 |
+| 07 | 정류장 | **막차** | 시티팝 발라드 | 68 | Db Major | Female | 기다림, 멈춤, 적막 |
 | 08 | 카페 | **창가** | 네오소울 | 85 | Db Major | Male | 온기, 휴식, 커피향 |
 | 09 | 옥상 | **시야** | 시티팝 | 112 | G Major | Male | 광활, 별, 도시 |
 | 10 | 귀가 | **집** | 발라드 | 70 | Db Major | Female | 마무리, 안도, 문 닫힘 |
@@ -494,7 +494,7 @@ Korean City Pop Ballad, female vocal mezzo-soprano, clear Korean diction, chest 
 rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony stack
 ```
 
-### Track 05: 수면 (강변)
+### Track 05: 한강 (강변)
 - **장르**: Korean City Pop
 - **BPM**: 88 | **Key**: Db Major
 - **Vocal**: Male (Warm Tenor, Chest voice)
@@ -577,23 +577,159 @@ Articulation, Korean City Pop, 88 BPM, Db Major, Male vocal warm tenor, Raw Soli
 falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar, over-orchestration
 ```
 
-### Track 06: 건넘 (다리)
-- **장르**: 네오소울 + 시티팝
+### Track 06: 잠실대교 (잠실대교)
+- **장르**: Korean Neo-Soul City Pop
 - **BPM**: 92 | **Key**: Eb Major
-- **Vocal**: Female (Alto)
-- **Lead Instrument**: Rhodes, Walking Bass
-- **감정**: 전환, 중간, 불빛
-- **키워드 축**: 다리/난간/중간/불빛/발걸음
-- **상태**: 대기
+- **Vocal**: Female (Alto, groovy relaxed)
+- **Lead Instrument**: Rhodes electric piano, Juno analog synth pad, Funky finger bass, Soft brass
+- **감정**: 택시 귀가, 알딸딸한 취기, 야경 감상
+- **키워드 축**: 잠실대교/롯데타워/강바람/이마/창문/술
+- **훅**: "건너가는 중이야 / 도시가 다 흔들려"
+- **레퍼런스**: Track 01-05 베리에이션 (Rhodes/Walking bass 신규 도입)
+- **Suno Parameters**: W:35 / I:65
+- **상태**: Suno 생성 대기 (가사/스타일 확정)
+
+**Lyrics:**
+```
+[Intro]
+(Rhodes warm chords, Juno pad, funky bass groove, brush kit 16beat)
+
+[instrumental]
+
+[Verse 1]
+(Female Alto, Chest voice, No harmony, Direct vocal, Rhodes groove)
+뒷좌석에 몸을 맡겨
+잠실대교 위를 지나
+롯데타워가 기울어
+취한 눈에 더 예뻐져
+
+[Chorus]
+(Full groove, Rhodes wider, brass stabs, arrangement density rises)
+건너가는 중이야
+도시가 다 흔들려
+잠실대교 한가운데
+강바람만 불어와
+
+[Verse 2]
+(Chest voice, dynamics lift, bass fuller, brass enters)
+이마 위에 열이 퍼져
+택시 창을 살짝 열어
+강바람이 볼을 스쳐
+온몸으로 술이 돌아
+
+[Chorus]
+(Arrangement builds)
+건너가는 중이야
+도시가 다 흔들려
+잠실대교 한가운데
+강바람만 불어와
+
+[Bridge]
+(Direct vocal, Rhodes only, minimal)
+타워가 점점 가까워
+눈 감아도 반짝여
+다리가 끝나지 않아
+
+[Final Chorus]
+(Full arrangement density peak, brass stabs)
+건너가는 중이야
+도시가 다 흔들려
+잠실대교 한가운데
+강바람만 불어와
+
+[Outro]
+건너가는 중이야
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean Neo-Soul City Pop, 92 BPM, Eb Major, Female Alto vocal, Raw Solid Direct, Chest voice dominant, No falsetto, groovy relaxed, Rhodes electric piano-led supportive, Juno analog synth pad soft, soft brass stabs chorus only, funky finger bass subtle slap, brush kit 16beat hihat layback, jazz Maj7 m7 9th sus chords IV-iv color shift, hazy nocturnal groove, lush plate reverb spacious, tape warmth, Verse: Rhodes bass vocal-forward intimate, Verse2: dynamics lift brass enters, Chorus: arrangement density rises brass stabs groove locks, Bridge: Rhodes vocal only minimal, Outro: Rhodes restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single and dominant, Chorus expansion by arrangement density only, EQ balanced sound clean mix
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar
+```
 
 ### Track 07: 막차 (정류장)
-- **장르**: 시티팝풍 R&B 발라드
+- **장르**: Korean City Pop Ballad
 - **BPM**: 68 | **Key**: Db Major
-- **Vocal**: Female (Contralto)
-- **Lead Instrument**: Felt Piano, Soft Strings
+- **Vocal**: Female (Contralto, restrained intimate)
+- **Lead Instrument**: Felt Piano, Juno analog synth pad, Clean Guitar (chorus), Soft Strings
 - **감정**: 기다림, 멈춤, 적막
-- **키워드 축**: 정류장/막차/벤치/시간표/헤드폰
-- **상태**: 대기
+- **키워드 축**: 정류장/막차/시간표/벤치/헤드폰/가림막/간판/배차
+- **훅**: "막차는 지나갔어 / 도시가 멈춰 있어"
+- **레퍼런스**: Track 01-06 베리에이션 (Felt Piano 재활용 + Clean Guitar/Strings 신규)
+- **Suno Parameters**: W:35 / I:65
+- **상태**: Suno 생성 대기 (가사/스타일 확정)
+
+**Lyrics:**
+```
+[Intro]
+(Felt Piano gentle chords, Juno pad, brush kit rim)
+
+[instrumental]
+
+[Verse 1]
+(Female Contralto, Chest voice, No harmony, Direct vocal, Felt Piano)
+정류장에 혼자 앉아
+시간표를 올려다 봐
+마지막 줄 지나갔어
+간판 하나 꺼져 있어
+
+[Chorus]
+(Arrangement gently rises, strings enter, clean guitar sparse)
+막차는 지나갔어
+도시가 멈춰 있어
+시간표만 남아 있어
+바람만 지나가
+
+[Verse 2]
+(Chest voice, dynamics lift, bass enters)
+헤드폰에 바람이 새
+주머니 속 손이 식어
+벤치 끝이 차가워져
+몸이 점점 웅크려져
+
+[Chorus]
+(Arrangement builds)
+막차는 지나갔어
+도시가 멈춰 있어
+시간표만 남아 있어
+바람만 지나가
+
+[Interlude]
+(Clean guitar solo, Juno pad)
+[instrumental]
+
+[Bridge]
+(Direct vocal, Felt Piano only, bare)
+배차 안내 꺼져 있어
+가림막만 서 있어
+밤만 깊어져
+
+[Final Chorus]
+(Full arrangement density peak)
+막차는 지나갔어
+도시가 멈춰 있어
+시간표만 남아 있어
+바람만 지나가
+
+[Outro]
+막차는 지나갔어
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto vocal, Raw Solid Direct, Chest voice dominant, No falsetto, restrained intimate, Felt Piano-led supportive, Juno analog synth pad soft slow, clean guitar chorus effect sparse, soft strings chorus only, mellow round finger bass gentle, brush kit rim clicks layback, jazz Maj7 m7 9th sus chords IV-iv color shift, still nocturnal solitude, lush plate reverb spacious, tape warmth, Verse: Felt Piano vocal-forward sparse, Verse2: dynamics lift strings enter, Chorus: density rises gently strings guitar, Bridge: Piano vocal only bare, Outro: Piano restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single and dominant, Chorus expansion by arrangement density only, EQ balanced sound clean mix
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar
+```
 
 ### Track 08: 창가 (카페)
 - **장르**: 네오소울 + 시티팝

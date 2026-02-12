@@ -7,6 +7,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_0900 Track 06 "잠실대교" 베리에이션 디자인**
+  - 장르: Korean Neo-Soul City Pop, 92 BPM, Eb Major, Female Alto
+  - 컨셉: 택시 귀가, 알딸딸한 취기, 잠실대교 야경 감상
+  - City Pop Rubric 82/100 PASS (초안 65점 FAIL → 재디자인)
+  - Style: Rhodes + Juno pad + brass stabs + funky finger bass + plate reverb, 779자
+- **PM_0900 Track 07 "막차" 베리에이션 디자인 (장소 재설계 필요)**
+  - 장르: Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto
+  - City Pop Rubric 81/100 PASS
+  - Cross-Series 겹침 발견: PM_0600 T03 "정류장"과 장소+감정+상황 겹침 → 장소 변경 필요
+
+### Changed
+- **CLAUDE.md v2.11.0 — Cross-Series Overlap Guard**
+  - 가사 워크플로우 Step 0에 크로스시리즈 겹침 검증 추가
+  - 체크리스트 1.12 Cross-Series Independence 항목 추가
+  - 검증 출력 포맷 Section E 추가
+  - Concept QC 체크리스트에 겹침 검증 항목 추가
+- **PM_0900 concept.md 업데이트**
+  - Track 05 제목: 수면 → 한강
+  - Track 06 "잠실대교" 전체 디자인 반영 (가사/스타일/exclude)
+  - Track 07 "막차" 전체 디자인 반영 (장소 재설계 대기)
+
+### Removed
+- PM_0900 Track 05 개별 txt 파일 3종 (제목 변경으로 삭제)
+
+### Added
 - **MASTER/CITYPOP_RUBRIC.md v1.0 — 시티팝 장르 루브릭**
   - 6개 팩터 100점 만점 (도시 서사/감정 절제/텐션 화성/리듬&베이스/사운드 팔레트/장르 정체성)
   - PASS ≥80, FAIL <80, CRITICAL FAIL: 개별 팩터 ≤5
