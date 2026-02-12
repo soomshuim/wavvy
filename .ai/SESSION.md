@@ -6,6 +6,18 @@
 
 ## 완료된 작업
 
+### 2026-02-12 - PM_0900 Track 07 장소 재설계
+
+- [x] **Track 07 "막차" → "공원" 장소 재설계**
+  - 장소: 정류장 → 밤의 도시 공원 (빌딩 사이 산책로)
+  - 컨셉: 강아지 산책, 커플, 러너 — 각자의 밤을 관조
+  - 훅: "공원은 깨어 있어 / 모두 걷고 있어"
+  - City Pop Rubric: 84/100 PASS
+  - Style 767자, S0-S20 전항목 PASS
+  - Cross-Series 겹침: PM_0200 공원과 1/3 겹침 (장소만, PASS)
+  - concept.md 반영 (감정 아크 + 트랙 리스트 + 상세 + YouTube desc)
+  - txt 파일 3종 갱신 (lyrics/style/exclude)
+
 ### 2026-02-11 - PM_0900 Track 06-07 베리에이션 + Cross-Series Overlap Guard
 
 - [x] **Track 05 제목 변경: 수면 → 한강**
@@ -691,7 +703,7 @@
   - Track 04 "가로등": City Pop, 66 BPM, Db, Male — 완료
   - Track 05 "한강": City Pop, 88 BPM, Db, Male — Suno 생성 대기 (W:35/I:70)
   - Track 06 "잠실대교": Neo-Soul City Pop, 92 BPM, Eb, Female — Suno 생성 대기 (W:35/I:65)
-  - Track 07 "막차": City Pop Ballad, 68 BPM, Db, Female — **장소 재설계 필요** (PM_0600 겹침)
+  - Track 07 "공원": City Pop Ballad, 68 BPM, Db, Female — Suno 생성 대기 (W:35/I:65)
   - Track 08-10: 대기
 - **문서 버전**:
   - LYRICS.md v1.8
@@ -702,8 +714,7 @@
 
 ## 진행 중
 
-- **PM_0900 Track 07 장소 재설계 + Track 08-10 시드곡 설계**
-  - Track 07 "막차" → 장소 변경 필요 (PM_0600 정류장 겹침)
+- **PM_0900 Track 08-10 시드곡 설계**
   - Track 08 "창가" (카페): 네오소울, Male
   - Track 09 "시야" (옥상): 시티팝, Male
   - Track 10 "집" (귀가): 발라드, Female

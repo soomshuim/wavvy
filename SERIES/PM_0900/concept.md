@@ -16,7 +16,7 @@
 ### 감정 아크
 ```
 현관(설렘) → 골목(익숙함) → 편의점(활기) → 공원(사색) → 강변(해방)
-    → 다리(전환) → 정류장(기다림) → 카페(온기) → 옥상(시야) → 귀가(안도)
+    → 다리(전환) → 공원(관조) → 카페(온기) → 옥상(시야) → 귀가(안도)
 ```
 
 ### BPM 아크
@@ -60,7 +60,7 @@
 | 04 | 골목 | **가로등** | 시티팝 발라드 | 66 | Db Major | Female | 그리움, 기억, 가로등, 골목 |
 | 05 | 강변 | **한강** | 시티팝 | 88 | Db Major | Male | 도시 강변, 물결, 관조, 쿨함 |
 | 06 | 잠실대교 | **잠실대교** | 네오소울 | 92 | Eb Major | Female | 택시, 취기, 야경, 롯데타워 |
-| 07 | 정류장 | **막차** | 시티팝 발라드 | 68 | Db Major | Female | 기다림, 멈춤, 적막 |
+| 07 | 공원 | **공원** | 시티팝 발라드 | 68 | Db Major | Female | 관조, 따뜻한 시선, 각자의 밤 |
 | 08 | 카페 | **창가** | 네오소울 | 85 | Db Major | Male | 온기, 휴식, 커피향 |
 | 09 | 옥상 | **시야** | 시티팝 | 112 | G Major | Male | 광활, 별, 도시 |
 | 10 | 귀가 | **집** | 발라드 | 70 | Db Major | Female | 마무리, 안도, 문 닫힘 |
@@ -148,7 +148,7 @@ Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Doubled vocals
 골목을 지나 편의점 불빛 아래 잠시 멈추고,
 공원 벤치에 앉아 생각에 잠깁니다.
 강변 바람을 맞으며 걷다가,
-다리를 건너 정류장에서 막차를 기다립니다.
+다리를 건너 공원을 걸으며 각자의 밤을 바라봅니다.
 따뜻한 카페에서 잠시 쉬고,
 옥상에 올라 도시의 불빛을 내려다봅니다.
 그리고 다시, 집으로.
@@ -652,15 +652,15 @@ Articulation, Korean Neo-Soul City Pop, 92 BPM, Eb Major, Female Alto vocal, Raw
 falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar
 ```
 
-### Track 07: 막차 (정류장)
+### Track 07: 공원 (공원)
 - **장르**: Korean City Pop Ballad
 - **BPM**: 68 | **Key**: Db Major
-- **Vocal**: Female (Contralto, restrained intimate)
-- **Lead Instrument**: Felt Piano, Juno analog synth pad, Clean Guitar (chorus), Soft Strings
-- **감정**: 기다림, 멈춤, 적막
-- **키워드 축**: 정류장/막차/시간표/벤치/헤드폰/가림막/간판/배차
-- **훅**: "막차는 지나갔어 / 도시가 멈춰 있어"
-- **레퍼런스**: Track 01-06 베리에이션 (Felt Piano 재활용 + Clean Guitar/Strings 신규)
+- **Vocal**: Female (Contralto, restrained observant)
+- **Lead Instrument**: Felt Piano, DX7 FM EP, Juno analog synth pad, Clean Guitar (chorus), Soft Strings, Soft Brass
+- **감정**: 관조, 따뜻한 시선, 각자의 밤
+- **키워드 축**: 빌딩/산책로/리드줄/강아지/팔짱/운동화/분수대/건물
+- **훅**: "공원은 깨어 있어 / 모두 걷고 있어"
+- **레퍼런스**: Track 01-06 베리에이션 (Felt Piano 재활용 + DX7/Brass/Strings 신규)
 - **Suno Parameters**: W:35 / I:65
 - **상태**: Suno 생성 대기 (가사/스타일 확정)
 
@@ -673,31 +673,31 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 
 [Verse 1]
 (Female Contralto, Chest voice, No harmony, Direct vocal, Felt Piano)
-정류장에 혼자 앉아
-시간표를 올려다 봐
-마지막 줄 지나갔어
-간판 하나 꺼져 있어
+빌딩 사이 산책로로
+풀 냄새가 스며들어
+리드줄 잡은 손이 가
+강아지가 앞서 뛰어
 
 [Chorus]
 (Arrangement gently rises, strings enter, clean guitar sparse)
-막차는 지나갔어
-도시가 멈춰 있어
-시간표만 남아 있어
-바람만 지나가
+공원은 깨어 있어
+모두 걷고 있어
+각자의 밤을 안고
+천천히 지나가
 
 [Verse 2]
 (Chest voice, dynamics lift, bass enters)
-헤드폰에 바람이 새
-주머니 속 손이 식어
-벤치 끝이 차가워져
-몸이 점점 웅크려져
+팔짱 끼고 둘이 지나
+낮은 말이 흘러가고
+발끝이 살짝 멈춰져
+운동화 소리 멀어져
 
 [Chorus]
 (Arrangement builds)
-막차는 지나갔어
-도시가 멈춰 있어
-시간표만 남아 있어
-바람만 지나가
+공원은 깨어 있어
+모두 걷고 있어
+각자의 밤을 안고
+천천히 지나가
 
 [Interlude]
 (Clean guitar solo, Juno pad)
@@ -705,25 +705,25 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 
 [Bridge]
 (Direct vocal, Felt Piano only, bare)
-배차 안내 꺼져 있어
-가림막만 서 있어
-밤만 깊어져
+분수대 너머 건물이
+하나둘 불을 끄고
+그것도 하나의 밤이야
 
 [Final Chorus]
-(Full arrangement density peak)
-막차는 지나갔어
-도시가 멈춰 있어
-시간표만 남아 있어
-바람만 지나가
+(Full arrangement density peak, soft brass color)
+공원은 깨어 있어
+모두 걷고 있어
+각자의 밤을 안고
+천천히 지나가
 
 [Outro]
-막차는 지나갔어
+공원은 깨어 있어
 [instrumental fade]
 ```
 
 **Style:**
 ```
-Articulation, Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto vocal, Raw Solid Direct, Chest voice dominant, No falsetto, restrained intimate, Felt Piano-led supportive, Juno analog synth pad soft slow, clean guitar chorus effect sparse, soft strings chorus only, mellow round finger bass gentle, brush kit rim clicks layback, jazz Maj7 m7 9th sus chords IV-iv color shift, still nocturnal solitude, lush plate reverb spacious, tape warmth, Verse: Felt Piano vocal-forward sparse, Verse2: dynamics lift strings enter, Chorus: density rises gently strings guitar, Bridge: Piano vocal only bare, Outro: Piano restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single and dominant, Chorus expansion by arrangement density only, EQ balanced sound clean mix
+Articulation, Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto vocal, Raw Solid Direct, Chest voice dominant, No falsetto, restrained observant, Felt Piano-led supportive, DX7 FM EP accent, Juno analog synth pad soft, clean guitar chorus sparse, strings chorus only, soft brass final chorus, mellow finger bass gentle, brush kit rim clicks layback, jazz Maj7 m7 9th sus IV-iv shift, nocturnal park, lush plate reverb spacious, tape warmth, Verse: Piano vocal-forward sparse, Verse2: dynamics lift DX7 enters, Chorus: density rises strings guitar brass, Bridge: Piano vocal bare, Outro: Piano restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single dominant, Chorus expansion by arrangement density only, EQ balanced clean mix
 ```
 
 **Exclude:**

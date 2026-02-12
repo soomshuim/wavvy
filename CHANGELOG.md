@@ -12,10 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - 컨셉: 택시 귀가, 알딸딸한 취기, 잠실대교 야경 감상
   - City Pop Rubric 82/100 PASS (초안 65점 FAIL → 재디자인)
   - Style: Rhodes + Juno pad + brass stabs + funky finger bass + plate reverb, 779자
-- **PM_0900 Track 07 "막차" 베리에이션 디자인 (장소 재설계 필요)**
+- **PM_0900 Track 07 "공원" 베리에이션 디자인 (정류장→공원 장소 재설계)**
   - 장르: Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto
-  - City Pop Rubric 81/100 PASS
-  - Cross-Series 겹침 발견: PM_0600 T03 "정류장"과 장소+감정+상황 겹침 → 장소 변경 필요
+  - 컨셉: 밤의 도시 공원, 강아지/커플/러너 관조
+  - City Pop Rubric 84/100 PASS
+  - Cross-Series 겹침: PM_0200 공원과 1/3 (장소만, PASS)
 
 ### Changed
 - **CLAUDE.md v2.11.0 — Cross-Series Overlap Guard**
