@@ -653,82 +653,102 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 ```
 
 ### Track 07: 공원 (공원)
-- **장르**: Korean City Pop Ballad
-- **BPM**: 68 | **Key**: Db Major
-- **Vocal**: Female (Contralto, restrained observant)
-- **Lead Instrument**: Felt Piano, DX7 FM EP, Juno analog synth pad, Clean Guitar (chorus), Soft Strings, Soft Brass
+- **장르**: Korean City Pop
+- **BPM**: 80 | **Key**: Db Major
+- **Vocal**: Male (Warm, little nasal, restrained)
+- **Lead Instrument**: Juno-106 synth-led, DX7 FM EP prominent, Felt Piano accent, Clean Guitar (chorus), Soft Strings, Soft Brass
 - **감정**: 관조, 따뜻한 시선, 각자의 밤
-- **키워드 축**: 빌딩/산책로/리드줄/강아지/팔짱/운동화/분수대/건물
-- **훅**: "공원은 깨어 있어 / 모두 걷고 있어"
-- **레퍼런스**: Track 01-06 베리에이션 (Felt Piano 재활용 + DX7/Brass/Strings 신규)
+- **키워드 축**: 벤치/전화기/낙엽/바람/계단/조깅/그네/강아지/나무
+- **훅**: "불빛 아래 누군가 / 발소리 이어져 / 멈추는 사람 없어 / 모두가 움직여"
+- **구조**: K-POP Standard 변형 (V1→PC→C→Interlude→V2→PC→C→Bridge→Final C)
+- **베이스**: Funky finger bass groove (80 BPM 그루브)
 - **Suno Parameters**: W:35 / I:65
-- **상태**: Suno 생성 대기 (가사/스타일 확정)
+- **상태**: v3 확정 (BPM 80, 신디 중심, City Pop Rubric 재설계)
 
 **Lyrics:**
 ```
 [Intro]
-(Felt Piano gentle chords, Juno pad, brush kit rim)
+(Juno-106 synth gentle chords, DX7 accent, brush kit soft)
 
 [instrumental]
 
 [Verse 1]
-(Female Contralto, Chest voice, No harmony, Direct vocal, Felt Piano)
-빌딩 사이 산책로로
-풀 냄새가 스며들어
-리드줄 잡은 손이 가
-강아지가 앞서 뛰어
+(Male Warm vocal, Chest voice, No harmony, Direct vocal, Juno synth lead)
+빌딩 사이 공원 벤치
+누군가 앉아 말하고
+전화기 불빛 흔들려
+발소리가 지나가고
+낙엽 하나 굴러가
+바람 속으로 날아가
+
+[Pre-Chorus]
+(Dynamics lift, DX7 enters, bass gentle)
+공원은 잠들지 않아
+밤에도 숨을 쉬어
+불빛 아래 흔들려
 
 [Chorus]
-(Arrangement gently rises, strings enter, clean guitar sparse)
-공원은 깨어 있어
-모두 걷고 있어
-각자의 밤을 안고
-천천히 지나가
-
-[Verse 2]
-(Chest voice, dynamics lift, bass enters)
-팔짱 끼고 둘이 지나
-낮은 말이 흘러가고
-발끝이 살짝 멈춰져
-운동화 소리 멀어져
-
-[Chorus]
-(Arrangement builds)
-공원은 깨어 있어
-모두 걷고 있어
-각자의 밤을 안고
-천천히 지나가
+(Arrangement rises, strings enter, clean guitar sparse)
+불빛 아래 누군가
+발소리 이어져
+멈추는 사람 없어
+모두가 움직여
 
 [Interlude]
-(Clean guitar solo, Juno pad)
+(Clean guitar solo emotional, Juno pad wide)
 [instrumental]
 
+[Verse 2]
+(Chest voice, dynamics lift, bass fuller)
+계단 위에 쉬는 벤치
+조깅하는 이 달리고
+그네 하나가 흔들려
+숨소리가 지나가고
+강아지 하나 뛰어가
+나무 사이로 날아가
+
+[Pre-Chorus]
+(Dynamics lift, arrangement builds)
+공원은 잠들지 않아
+밤에도 숨을 쉬어
+발자국 이어져
+
+[Chorus]
+(Arrangement fuller)
+불빛 아래 누군가
+발소리 이어져
+멈추는 사람 없어
+모두가 움직여
+
 [Bridge]
-(Direct vocal, Felt Piano only, bare)
-분수대 너머 건물이
-하나둘 불을 끄고
-그것도 하나의 밤이야
+(Direct vocal, Juno synth only, intimate)
+계단 위로 올라가는 소리
+가로수 그림자 길어져
+
+멈추지 않는 밤이야
+각자의 밤을 안고 걷는 중
 
 [Final Chorus]
-(Full arrangement density peak, soft brass color)
-공원은 깨어 있어
-모두 걷고 있어
-각자의 밤을 안고
-천천히 지나가
+(Full arrangement peak, soft brass color, strings wide)
+불빛 아래 누군가
+발소리 이어져
+멈추는 사람 없어
+모두가 움직여
 
 [Outro]
-공원은 깨어 있어
+(Juno synth restates motif softly, pad fade)
+불빛 아래 누군가
 [instrumental fade]
 ```
 
 **Style:**
 ```
-Articulation, Korean City Pop Ballad, 68 BPM, Db Major, Female Contralto vocal, Raw Solid Direct, Chest voice dominant, No falsetto, restrained observant, Felt Piano-led supportive, DX7 FM EP accent, Juno analog synth pad soft, clean guitar chorus sparse, strings chorus only, soft brass final chorus, mellow finger bass gentle, brush kit rim clicks layback, jazz Maj7 m7 9th sus IV-iv shift, nocturnal park, lush plate reverb spacious, tape warmth, Verse: Piano vocal-forward sparse, Verse2: dynamics lift DX7 enters, Chorus: density rises strings guitar brass, Bridge: Piano vocal bare, Outro: Piano restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single dominant, Chorus expansion by arrangement density only, EQ balanced clean mix
+Articulation, Korean City Pop, 80 BPM, Db Major, Male Warm vocal, Clear Solid Direct, little nasal, Chest voice dominant, No falsetto, restrained, Juno-106 synth-led supportive, DX7 FM EP prominent, Felt Piano accent, clean guitar chorus sparse, strings chorus only, soft brass final, funky finger bass groove, 16-beat brush kit, jazz Maj7 m7 9th sus IV-iv shift, lush plate reverb spacious, tape warmth, sparkling mellow, V1: Juno vocal-forward DX7 accent, PC: Dynamics lift bass builds, C: Density rises DX7 strings guitar, Interlude: Guitar solo mid-song, V2: Juno DX7 fuller bass stronger, PC: Builds bass synth forward, C: Fuller DX7 strings guitar, Bridge: Juno vocal bare then DX7 strings swell, Final C: Full peak brass DX7 strings wide, Outro: Juno restates fade, No harmony no backing no doubles, Lead vocal single dominant, Chorus expansion by arrangement density only, EQ balanced clean mix
 ```
 
 **Exclude:**
 ```
-falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock guitar
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, backing vocals, choir, doubled vocals, EDM, rock guitar, auto-tune
 ```
 
 ### Track 08: 창가 (카페)

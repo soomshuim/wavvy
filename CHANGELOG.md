@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_0900 하이브리드 전략 - Track 07 재설계 + Track 08-10 초안**
+  - Track 07 "공원": City Pop Ballad → 80 BPM 신디 중심, City Pop Rubric 88/100 PASS
+  - Track 08 "창가": City Pop + Lo-fi 크로스오버 초안 (74점 FAIL, 도시 서사 약함)
+  - Track 09 "시야": City Pop + Funk 크로스오버 초안 (91점 PASS)
+  - Track 10 "집": City Pop + Ambient 크로스오버 초안 (66점 FAIL, 수미상관 조정 필요)
+  - Workflow Rules 추가: txt 먼저 → 컨펌 → concept.md (CLAUDE.md, MANAGER.md)
+  - 구버전 txt 파일 18개 정리
 - **PM_0900 Track 06 "잠실대교" 베리에이션 디자인**
   - 장르: Korean Neo-Soul City Pop, 92 BPM, Eb Major, Female Alto
   - 컨셉: 택시 귀가, 알딸딸한 취기, 잠실대교 야경 감상

@@ -718,3 +718,34 @@ vibe-m/
 1. `.ai/SESSION.md` 업데이트
 2. `/compact` 제안
 3. 다음 작업 명시
+
+## Workflow Rules
+
+### 가사/스타일/Exclude 수정 워크플로우 (필수)
+
+> **SSOT 원칙: txt 파일이 작업용 진실 공급원, concept.md는 최종 확정본**
+
+**절차:**
+
+1. **txt 파일 먼저 수정**
+   - `SERIES/[시리즈]/track*_lyrics_v*.txt`
+   - `SERIES/[시리즈]/track*_style_v*.txt`
+   - `SERIES/[시리즈]/track*_exclude_v*.txt`
+
+2. **사용자 컨펌 PASS 받음**
+   - QC 검증 완료
+   - 사용자가 "좋아" / "PASS" 확인
+
+3. **그 다음 concept.md에 반영**
+   - `SERIES/[시리즈]/concept.md` 업데이트
+   - txt 파일 내용 동기화
+
+**이유:**
+- txt = 작업 중인 SSOT (수정/검증 단계)
+- concept.md = 최종 확정본 (컨펌 완료 후)
+- 수정 중인 내용과 확정된 내용 분리로 혼란 방지
+
+**금지:**
+- ❌ concept.md 먼저 수정하고 txt는 나중에
+- ❌ 컨펌 전에 concept.md 업데이트
+- ❌ txt와 concept.md 동시 수정

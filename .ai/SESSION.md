@@ -6,6 +6,30 @@
 
 ## 완료된 작업
 
+### 2026-02-12 - PM_0900 하이브리드 전략 - Track 07 재설계 + Track 08-10 초안
+
+- [x] **Track 07 "공원" v3 확정**
+  - BPM 68 → 80 (City Pop Rubric 통과 전략)
+  - 악기: Piano-led → Juno-106 신디 중심
+  - City Pop Rubric: 88/100 PASS (79점 FAIL → 재설계)
+  - Funky finger bass groove 추가 (80 BPM 적합)
+  - Musicality Matrix 강화 (V2 Lift + Chorus Expansion)
+
+- [x] **Track 08-10 하이브리드 전략 초안 작성**
+  - Track 08 "창가": City Pop + Lo-fi 크로스오버 (74점 FAIL - 도시 서사 약함)
+  - Track 09 "시야": City Pop + Funk 크로스오버 (91점 PASS)
+  - Track 10 "집": City Pop + Ambient 크로스오버 (66점 FAIL - 수미상관 조정 필요)
+  - 각 트랙 가사/Style/Exclude txt 파일 생성 (v1)
+
+- [x] **Workflow Rules 문서화**
+  - CLAUDE.md Workflow Rules 섹션 추가 (txt 먼저 → 컨펌 → concept.md)
+  - MANAGER.md에 CLAUDE.md 참조 추가
+  - MEMORY.md를 CLAUDE.md 참조로 변경 (SSOT 원칙)
+
+- [x] **구버전 txt 파일 정리**
+  - Track 06-10 구버전 txt 18개 삭제
+  - 최종 버전만 유지 (Track 07 v2, Track 08-10 v1)
+
 ### 2026-02-12 - PM_0900 Track 07 장소 재설계
 
 - [x] **Track 07 "막차" → "공원" 장소 재설계**

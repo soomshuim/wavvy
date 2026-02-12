@@ -50,11 +50,13 @@ MANAGER.md는 최상위 통제 문서다.
 - MANAGER.md
   - STYLE.md (사운드, 프롬프트, 뮤지컬리티)
   - LYRICS.md (가사 공학, 구조 규칙)
+  - **CLAUDE.md** (작업 워크플로우, txt → concept.md 절차)
   - series/*/*.md (개별 프로젝트 문서)
 
 우선순위 규칙:
 - STYLE.md와 LYRICS.md가 충돌할 경우 → MANAGER.md 판단 우선
 - 문서에 명시되지 않은 판단 → 보수적으로 Fail
+- **작업 절차는 CLAUDE.md § Workflow Rules 참조** (txt 먼저 → 컨펌 → concept.md)
 
 ---
 
