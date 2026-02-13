@@ -7,6 +7,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_0900 "밤산책" 시리즈 전곡 완료 (10/10 tracks)**
+  - Track 04 "가로등": City Pop Ballad, 72 BPM, Female Mezzo, PASS
+  - Track 08 "창가": Neo-Soul City Pop, 85 BPM, Male Baritone, PASS
+  - Track 09 "시야": City Pop Funk, 105 BPM, Male Tenor, PASS (시리즈 피크)
+  - Track 10 "방": City Pop R&B Ballad, 65 BPM, Female Alto, PASS
+  - 수미상관 구조 완성: "문을 열면 moon" ↔ "No more moon, back in my room"
+- **MASTER 문서 성공 패턴 반영 (PM_0900 회고)**
+  - ROLES.md v1.9: Controlled Variation Pattern + Clean Slate Protocol
+  - STYLE.md v2.7: Genre Mix Pattern 강화 (Spine + Color ≤ 2)
+  - CLAUDE.md v2.12: Step 6.5 패턴 고착 검사
+  - MANAGER.md v1.4: Phase 1.5 CV Enforcement
+  - PLAYLIST_GUIDE.md v1.3: 수미상관 구조 (Bookend Pattern)
+
+### Removed
+- PM_0900 Track 04, 07, 08, 09, 10 txt 파일 18개 (concept.md SSOT로 정리)
+
+### Added
 - **PM_0900 하이브리드 전략 - Track 07 재설계 + Track 08-10 초안**
   - Track 07 "공원": City Pop Ballad → 80 BPM 신디 중심, City Pop Rubric 88/100 PASS
   - Track 08 "창가": City Pop + Lo-fi 크로스오버 초안 (74점 FAIL, 도시 서사 약함)

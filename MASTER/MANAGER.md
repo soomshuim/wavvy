@@ -1,6 +1,6 @@
 # VIBE-M MANAGER.md
-Version: 1.3 (Pure Input SSOT Alignment)
-Last Updated: 2026-01-26
+Version: 1.4 (Controlled Variation Enforcement)
+Last Updated: 2026-02-13
 Role: Executive Manager / Quality Gatekeeper
 Applies To: All VIBE-M projects, series, and tracks
 
@@ -70,6 +70,23 @@ Manager는 다음 항목을 검토한다.
 - Style Prompt가 8~10 토큰 압축 규칙을 지키는지
 - Exclude Style이 3그룹 이내인지
 - Musicality Matrix 적용 여부
+
+### Phase 1.5 Controlled Variation Enforcement — v1.4 NEW
+
+> **Controlled Variation Pattern 준수 여부 검증**
+> SSOT: ROLES.md § Controlled Variation Pattern
+
+**필수 체크리스트:**
+
+- [ ] Core/Variable/Gate 정의됨
+- [ ] Genre Mix Pattern 준수 (Spine + Color ≤ 2)
+- [ ] Gate 기준 명시됨 (예: CITYPOP_RUBRIC ≥80점)
+- [ ] Clean Slate 발동 조건 명시됨
+
+**FAIL 조건:**
+
+- 위 체크리스트 중 하나라도 미정의 시 → Phase 2 진입 불가
+- 장르 3개 이상 스택 감지 시 → 즉시 FAIL
 
 ### Phase 2. Track QC (3-Point Fail Fast + 코러스 검사)
 

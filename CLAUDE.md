@@ -2,7 +2,7 @@
 
 > YouTube Music Playlist Generator CLI
 >
-> Last updated: 2026-02-11 | v2.11.0 (Cross-Series Overlap Guard)
+> Last updated: 2026-02-13 | v2.12.0 (패턴 고착 검사 + Clean Slate Protocol)
 
 ## ⚠️ SSOT 경고
 
@@ -97,6 +97,11 @@ Step 5. 장르 게이트 (v2.10 NEW):
 Step 6. If all pass → output with QC 테이블
         If any fail → 재작성 후 Step 2 반복
         (통과할 때까지 유저에게 제안하지 않음)
+Step 6.5. 패턴 고착 검사 (v2.12 NEW):
+         - 이전 트랙들과 톤앤매너/서술 방식 비교
+         - "~하고 / ~해" 같은 패턴 반복 감지 시 → FAIL
+         - 3회 수정 후에도 유사 시 → Clean Slate Protocol 발동
+           (ROLES.md § Clean Slate Protocol 참조)
 ```
 
 **Style Prompt 생성 요청 시:**

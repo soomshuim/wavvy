@@ -1,5 +1,5 @@
 # VIBE-M Role System (SSOT)
-# Version: 1.8 (2026-02-09) — museA Guide + 소괄호 메타태그 참조 추가
+# Version: 1.9 (2026-02-13) — Controlled Variation Pattern + Clean Slate Protocol
 # Purpose: Separate thinking to prevent duplication, drift, and algorithmic risk.
 # Scope: Defines WHY and WHAT each AI role is responsible for.
 
@@ -279,3 +279,49 @@ SAFE / BORDERLINE / FAIL
 | ROLES.md (this file) | Cognitive separation & responsibility |
 
 This file is the constitutional layer.
+
+---
+
+## Controlled Variation Pattern — v1.9 NEW
+
+> **핵심: 고정 요소 + 변동 요소 + 명확한 Gate**
+
+### 구조
+
+| 구분 | 역할 | 예시 |
+|------|------|------|
+| **Core (고정)** | 절대 변경 불가 | 장르 spine, BPM 범위, 보컬 톤 |
+| **Variable (변동)** | 트랙별 변주 가능 | 가사 톤, 악기 배치, 서브 장르 |
+| **Gate (기준)** | PASS/FAIL 판정 | 점수 ≥80, 개별 팩터 >5 |
+
+### 적용 규칙
+
+1. **시리즈 시작 전** Core/Variable/Gate 정의
+2. **트랙 작업 중** Variable만 변경
+3. **Gate 미달 시** 즉시 FAIL 선언 → 재설계 (유저 제안 금지)
+
+---
+
+## Clean Slate Protocol — v1.9 NEW
+
+> **같은 문제 3회 실패 시, 이전 버전 완전 망각 후 리셋**
+
+### 발동 조건
+
+- 동일 이슈로 3회 연속 FAIL
+- 수정해도 "다른 트랙과 유사" 피드백 반복
+
+### 실행 절차
+
+```
+Step 1. 이전 버전(v1, v2) 레퍼런스 완전 삭제
+Step 2. "이전 가사는 모두 잊고" 명시적 지시
+Step 3. 톤앤매너/서술 방식 완전 변경 (독백체, 혼잣말체 등)
+Step 4. 새 버전 생성 후 Gate 검증
+```
+
+### 핵심 원칙
+
+- "수정"이 아닌 "리셋"
+- 점진적 개선 대신 방향 전환
+- 패턴 고착 방지

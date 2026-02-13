@@ -4,7 +4,7 @@
 > **테마**: 밤산책의 경로를 따라가는 공간 중심 플레이리스트
 > **장르**: 시티팝 베이스 (클래식 시티팝 + 시티팝풍 R&B 발라드 + 네오소울)
 >
-> Last updated: 2026-02-07
+> Last updated: 2026-02-14
 
 ---
 
@@ -21,9 +21,9 @@
 
 ### BPM 아크
 ```
-75 → 88 → 108 → 72 → 115 → 92 → 68 → 85 → 112 → 70
-     ↑              ↑                          ↑
-   상승           피크                        피크2
+75 → 90 → 90 → 72 → 88 → 92 → 68 → 85 → 105 → 65
+                                          ↑
+                                        피크
 ```
 
 ---
@@ -57,13 +57,13 @@
 | 01 | 현관 | **문** | 발라드 | 75 | Db Major | Male | 출발, 설렘, 첫 발걸음 |
 | 02 | 거리 | **밤 산책** | 시티팝 | 90 | Eb Major | Male | 도시, 불빛, 고요한 걸음 |
 | 03 | 거리 | **밤 거리** | 시티팝 발라드 | 90 | Eb Major | Mixed (F+M) | 도시, 불빛, 관조, 걸음 |
-| 04 | 골목 | **가로등** | 시티팝 발라드 | 66 | Db Major | Female | 그리움, 기억, 가로등, 골목 |
+| 04 | 골목 | **가로등** | 시티팝 발라드 | 72 | Db Major | Female | 그리움, 기억, 가로등, 골목 |
 | 05 | 강변 | **한강** | 시티팝 | 88 | Db Major | Male | 도시 강변, 물결, 관조, 쿨함 |
 | 06 | 잠실대교 | **잠실대교** | 네오소울 | 92 | Eb Major | Female | 택시, 취기, 야경, 롯데타워 |
-| 07 | 공원 | **공원** | 시티팝 발라드 | 68 | Db Major | Female | 관조, 따뜻한 시선, 각자의 밤 |
+| 07 | 공원 | **공원** | 시티팝 발라드 | 68 | Db Major | Male | 관조, 따뜻한 시선, 각자의 밤 |
 | 08 | 카페 | **창가** | 네오소울 | 85 | Db Major | Male | 온기, 휴식, 커피향 |
-| 09 | 옥상 | **시야** | 시티팝 | 112 | G Major | Male | 광활, 별, 도시 |
-| 10 | 귀가 | **집** | 발라드 | 70 | Db Major | Female | 마무리, 안도, 문 닫힘 |
+| 09 | 옥상 | **시야** | 시티팝 Funk | 105 | A Major | Male | 광활, 압도, 서울 전체 |
+| 10 | 귀가 | **방** | 발라드 | 65 | Db Major | Female | 마무리, 안도, 문 닫힘 |
 
 ---
 
@@ -71,8 +71,9 @@
 
 | 성별 | 트랙 | 비율 |
 |------|------|------|
-| **Male** | 01, 02, 04, 05, 08, 09 | 6곡 (60%) |
-| **Female** | 03, 06, 07, 10 | 4곡 (40%) |
+| **Male** | 01, 02, 05, 07, 08, 09 | 6곡 (60%) |
+| **Female** | 04, 06, 10 | 3곡 (30%) |
+| **Mixed** | 03 | 1곡 (10%) |
 
 ---
 
@@ -418,7 +419,7 @@ rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony 
 
 ### Track 04: 가로등 (골목)
 - **장르**: Korean City Pop Ballad
-- **BPM**: 66 | **Key**: Db Major
+- **BPM**: 72 | **Key**: Db Major
 - **Vocal**: Female (Mezzo-soprano)
 - **Lead Instrument**: Piano, Analog Pad (Juno-style), Clean Electric Guitar (JC-style)
 - **감정**: 그리움, 기억, 가로등, 골목
@@ -431,6 +432,7 @@ rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony 
 **Lyrics:**
 ```
 [Verse 1]
+(vocals enter immediately, Female Mezzo, Chest voice, No harmony, warm tone)
 이 길을 걸으면 떠오르는
 기억이 있죠
 그때 우리는 여기 어딘가
@@ -460,9 +462,9 @@ Baby, I keep walking back to you
 멈춰 서게 되죠
 가로등 불빛이 닿는 곳에
 아무 말 없이 서 있었죠
-그때로 다시 다시 갈 수 있다면
-그 웃음 하나 다시 볼 수만
-있을 텐데
+그때로 다시 돌아 갈 수 있다면
+그 웃음 하나 다시 볼 수 있다면
+좋을 텐데
 
 [Chorus]
 Oh, I keep walking back to you
@@ -486,7 +488,7 @@ Baby, I keep walking back to you
 
 **Style:**
 ```
-Korean City Pop Ballad, female vocal mezzo-soprano, clear Korean diction, chest voice, warm tone, restrained vibrato, emotional but controlled delivery, Key Db major, 66 BPM, intimate late-night solitude mood, Piano-led arrangement with minimal soft strings used sparingly, subtle analog pad (Juno-style, low-pass, slow attack) supporting the chorus, clean electric guitar with light chorus (JC-style) and sparse rhythmic comping, restrained electric guitar solo interlude, IV to iv (Gb to Gbm) emotional chord shift as harmonic signature, diatonic 7th and dominant 7th harmony, verses built on suspended and slash chords with unresolved tension, chorus opens into warm major harmony with gentle emotional release, smooth harmonic movement, no abrupt modulation, no key change, Natural live-band dynamics, gradual build without explosion, cinematic yet minimal, No choir, no stacked harmonies, no EDM elements, no over-orchestration, Slight tape saturation, short 80s-style plate reverb tail, warm bu
+Articulation. Korean City Pop Ballad, vocals enter immediately no intro, female vocal mezzo-soprano, chest voice, warm tone, restrained vibrato, emotional but controlled, Key Db major, 72 BPM, IV to iv (Gb to Gbm) chord shift, diatonic 7th dominant 7th harmony, suspended slash chords, chorus warm major harmony gentle release, smooth harmonic movement, no key change, Natural live-band dynamics, gradual build, cinematic minimal, No choir no stacked harmonies no EDM, Juno-106 pad soft, soft brass stabs chorus, mellow round finger bass gentle, clean guitar chorus effect JC-style sparse comping, restrained guitar solo interlude, Piano-led soft strings sparse, Slight tape saturation, 80s plate reverb, warm but clear mix.
 ```
 
 **Exclude:**
@@ -504,7 +506,7 @@ rock, strong, EDM, falsetto, airy vocal, breathy tone, whisper singing, harmony 
 - **훅**: "Oh, lights on the water" / "물결 위에 번져가"
 - **레퍼런스**: 아소토유니온 Think About' Chu (86 BPM, Db Major, 원-루프 4마디, 재즈 확장 화성)
 - **Suno Parameters**: W:35 / I:65
-- **상태**: Suno 생성 대기 (가사/스타일 확정)
+- **상태**: 완료
 
 **Lyrics:**
 ```
@@ -587,7 +589,7 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 - **훅**: "건너가는 중이야 / 도시가 다 흔들려"
 - **레퍼런스**: Track 01-05 베리에이션 (Rhodes/Walking bass 신규 도입)
 - **Suno Parameters**: W:35 / I:65
-- **상태**: Suno 생성 대기 (가사/스타일 확정)
+- **상태**: 완료
 
 **Lyrics:**
 ```
@@ -653,17 +655,17 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 ```
 
 ### Track 07: 공원 (공원)
-- **장르**: Korean City Pop
-- **BPM**: 80 | **Key**: Db Major
-- **Vocal**: Male (Warm, little nasal, restrained)
-- **Lead Instrument**: Juno-106 synth-led, DX7 FM EP prominent, Felt Piano accent, Clean Guitar (chorus), Soft Strings, Soft Brass
+- **장르**: Korean City Pop Ballad
+- **BPM**: 68 | **Key**: Db Major
+- **Vocal**: Male (Warm, little nasal, restrained observant)
+- **Lead Instrument**: Felt Piano-led, DX7 FM EP accent, Juno analog synth pad, Clean Guitar (chorus), Soft Strings, Soft Brass
 - **감정**: 관조, 따뜻한 시선, 각자의 밤
-- **키워드 축**: 벤치/전화기/낙엽/바람/계단/조깅/그네/강아지/나무
-- **훅**: "불빛 아래 누군가 / 발소리 이어져 / 멈추는 사람 없어 / 모두가 움직여"
+- **키워드 축**: 벤치/전화기/낙엽/바람/계단/강아지/소녀/가로수
+- **훅**: "불빛 아래 누군가 / 발소리 이어져 / 멈추는 사람 없어 / 모두가 조금씩"
 - **구조**: K-POP Standard 변형 (V1→PC→C→Interlude→V2→PC→C→Bridge→Final C)
-- **베이스**: Funky finger bass groove (80 BPM 그루브)
+- **베이스**: mellow finger bass gentle (68 BPM)
 - **Suno Parameters**: W:35 / I:65
-- **상태**: v3 확정 (BPM 80, 신디 중심, City Pop Rubric 재설계)
+- **상태**: 확정
 
 **Lyrics:**
 ```
@@ -683,16 +685,15 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 
 [Pre-Chorus]
 (Dynamics lift, DX7 enters, bass gentle)
-공원은 잠들지 않아
-밤에도 숨을 쉬어
-불빛 아래 흔들려
+공원에 밤이 찾아왔지만
+어둠은 아직 멀리 있나봐
 
 [Chorus]
 (Arrangement rises, strings enter, clean guitar sparse)
 불빛 아래 누군가
 발소리 이어져
 멈추는 사람 없어
-모두가 움직여
+모두가 조금씩
 
 [Interlude]
 (Clean guitar solo emotional, Juno pad wide)
@@ -700,50 +701,49 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, EDM, rock gu
 
 [Verse 2]
 (Chest voice, dynamics lift, bass fuller)
-계단 위에 쉬는 벤치
-조깅하는 이 달리고
+계단 위에 앉은 이
+운동하는 이 달리고
 그네 하나가 흔들려
 숨소리가 지나가고
 강아지 하나 뛰어가
-나무 사이로 날아가
+소녀도 강아지 쫓아가
 
 [Pre-Chorus]
 (Dynamics lift, arrangement builds)
-공원은 잠들지 않아
-밤에도 숨을 쉬어
-발자국 이어져
+공원에 밤이 찾아왔지만
+어둠은 아직 멀리 있나봐
 
 [Chorus]
 (Arrangement fuller)
-불빛 아래 누군가
+불빛 아래 모두가
 발소리 이어져
 멈추는 사람 없어
-모두가 움직여
+모두가 천천히
 
 [Bridge]
 (Direct vocal, Juno synth only, intimate)
 계단 위로 올라가는 소리
 가로수 그림자 길어져
 
-멈추지 않는 밤이야
-각자의 밤을 안고 걷는 중
+조용한 밤이야
+각자의 밤을 안고 천천히
 
 [Final Chorus]
 (Full arrangement peak, soft brass color, strings wide)
 불빛 아래 누군가
 발소리 이어져
 멈추는 사람 없어
-모두가 움직여
+모두가 조금씩
 
 [Outro]
 (Juno synth restates motif softly, pad fade)
-불빛 아래 누군가
+불빛 아래 모두가
 [instrumental fade]
 ```
 
 **Style:**
 ```
-Articulation, Korean City Pop, 80 BPM, Db Major, Male Warm vocal, Clear Solid Direct, little nasal, Chest voice dominant, No falsetto, restrained, Juno-106 synth-led supportive, DX7 FM EP prominent, Felt Piano accent, clean guitar chorus sparse, strings chorus only, soft brass final, funky finger bass groove, 16-beat brush kit, jazz Maj7 m7 9th sus IV-iv shift, lush plate reverb spacious, tape warmth, sparkling mellow, V1: Juno vocal-forward DX7 accent, PC: Dynamics lift bass builds, C: Density rises DX7 strings guitar, Interlude: Guitar solo mid-song, V2: Juno DX7 fuller bass stronger, PC: Builds bass synth forward, C: Fuller DX7 strings guitar, Bridge: Juno vocal bare then DX7 strings swell, Final C: Full peak brass DX7 strings wide, Outro: Juno restates fade, No harmony no backing no doubles, Lead vocal single dominant, Chorus expansion by arrangement density only, EQ balanced clean mix
+Articulation, Korean City Pop Ballad, 68 BPM, Db Major, Male Warm vocal, ClearSolid Direct, little nasal and Chest voice dominant, No falsetto, restrained observant, Felt Piano-led supportive, DX7 FM EP accent, Juno analog synth pad soft, clean guitar chorus sparse, strings chorus only, soft brass final chorus, mellow finger bass gentle, brush kit rim clicks layback, jazz Maj7 m7 9th sus IV-iv shift, nocturnal park, lush plate reverb spacious, tape warmth, Verse: Piano vocal-forward sparse, Verse2: dynamics lift DX7 enters, Chorus: density rises strings guitar brass, Bridge: Piano vocal bare, Outro: Piano restates motif softly fade, No harmony no backing vocals no doubles, Lead vocal single dominant, Chorus expansion by arrangement density only, EQ balanced clean and med-fi mix
 ```
 
 **Exclude:**
@@ -752,48 +752,303 @@ falsetto, airy vocal, breathy tone, whisper singing, harmony stack, backing voca
 ```
 
 ### Track 08: 창가 (카페)
-- **장르**: 네오소울 + 시티팝
+- **장르**: Korean Neo-Soul City Pop
 - **BPM**: 85 | **Key**: Db Major
-- **Vocal**: Male (Baritone)
-- **Lead Instrument**: Rhodes, Warm Synth Pad
-- **감정**: 온기, 휴식, 커피향
-- **키워드 축**: 카페/창가/커피/김/유리
-- **상태**: 대기
+- **Vocal**: Male (Baritone, warm intimate)
+- **Lead Instrument**: Rhodes-led, Juno-106 pad, Soft Brass, Clean Guitar
+- **감정**: 온기, 휴식, 도시 속 멈춤
+- **키워드 축**: 에스프레소/창/입김/네온/테이블/간판
+- **훅**: "커피가 식어가 / 시간이 녹아내려 / 잠깐이면 돼 / 이 자리 이대로"
+- **Suno Parameters**: W:35 / I:65
+- **상태**: 확정
+
+**Lyrics:**
+```
+[Intro]
+(Rhodes warm chords, Juno pad, brush kit soft)
+
+[instrumental]
+
+[Verse 1]
+(Male Baritone, Chest voice, No harmony, Direct, intimate monologue)
+에스프레소 한 잔이
+식기 전에 해야 할 말들
+전부 잊어버렸어
+
+창에 입김을 불면
+거리가 뿌옇게 번지고
+그게 좋더라
+
+[Pre-Chorus]
+(Dynamics lift, bass groove enters)
+여기선 아무도 나를 모르니까
+그냥 앉아 있어도 돼
+
+[Chorus]
+(Arrangement rises, Rhodes wider, brass soft)
+커피가 식어가
+시간이 녹아내려
+잠깐이면 돼
+이 자리 이대로
+
+[Interlude]
+(Rhodes solo, city hum layer)
+[instrumental]
+
+[Verse 2]
+(Chest voice, dynamics fuller, tape warmth)
+옆 테이블 대화 소리
+의미 없이 흘러가
+메뉴판 한 장 넘기다
+멍하니 창만 봐
+
+네온 간판 하나가
+깜빡이다 꺼지고
+누군가의 하루가
+저렇게 끝나겠지
+
+[Pre-Chorus]
+(Arrangement builds)
+여기선 아무것도 안 해도 되니까
+그냥 앉아 있을래
+
+[Chorus]
+(Fuller, brass + bass locked)
+커피가 식어가
+시간이 녹아내려
+잠깐이면 돼
+이 자리 이대로
+
+[Bridge]
+(Rhodes only, bare vocal)
+밖은 아직 바쁘게 돌아가는데
+나만 멈춰 있어
+괜찮아 이 정도면
+
+[Final Chorus]
+(Full peak, strings accent)
+커피가 식어가
+시간이 녹아내려
+잠깐이면 돼
+이 자리 이대로
+
+[Outro]
+(Rhodes motif, fade)
+잠깐이면 돼
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean Neo-Soul City Pop, 85 BPM, Db Major, Male baritone, Raw Solid Direct, Chest voice dominant, No falsetto, warm intimate, Rhodes-led supportive, Juno-106 pad soft, soft brass stabs chorus, clean guitar chorus sparse, mellow funky finger bass, 16-beat brush kit, M7 9th sus IV-iv harmony, nocturnal urban cafe mood, V1: Rhodes vocal-forward city hum, PC: bass groove pad swells, C: Rhodes wider brass locks, V2: bass fuller tape warmth, Bridge: Rhodes vocal bare, Final C: brass strings wide, Outro: Rhodes fade, No harmony no backing no doubles, Lead vocal single dominant, Chorus by density only, Lush plate reverb spacious, tape warmth sparkling mellow, EQ balanced clean mix
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, backing vocals, choir, doubled vocals, EDM, heavy drums, rock guitar, aggressive, auto-tune
+```
 
 ### Track 09: 시야 (옥상)
-- **장르**: 클래식 시티팝
-- **BPM**: 112 | **Key**: G Major
-- **Vocal**: Male (Tenor)
-- **Lead Instrument**: Synth Lead, Funky Guitar
-- **감정**: 광활, 별, 도시
-- **키워드 축**: 옥상/별/도시/불빛/바람
-- **상태**: 대기
+- **장르**: Korean City Pop Funk
+- **BPM**: 105 | **Key**: A Major
+- **Vocal**: Male (Tenor, Raw Solid Direct)
+- **Lead Instrument**: Clean guitar-led, Brass stabs, Juno-106 accent, Funky slap bass
+- **감정**: 광활, 압도, 도시 전체를 내려다보는 시야
+- **키워드 축**: 옥상/난간/남산타워/한강/63빌딩/롯데타워/광화문/강남/네온/서울
+- **훅**: "서울의 밤 / 온 도시가 춤춰 / 옥상 위에 서면 / 전부 내 거 같아"
+- **Suno Parameters**: W:35 / I:65
+- **상태**: 확정
 
-### Track 10: 집 (귀가)
-- **장르**: 시티팝풍 R&B 발라드
-- **BPM**: 70 | **Key**: Db Major
-- **Vocal**: Female (Alto)
-- **Lead Instrument**: Felt Piano, Soft Pad
-- **감정**: 마무리, 안도, 문 닫힘
-- **키워드 축**: 집/문/열쇠/이불/베개
-- **상태**: 대기
+**Lyrics:**
+```
+[Intro]
+(Clean guitar funky riff, brass stabs, tight kick enters)
+
+[instrumental]
+
+[Verse 1]
+(Male Tenor, Chest voice, No harmony, Direct vocal, Guitar lead)
+옥상에 올라 난간에 서면
+남산타워 빨갛게 빛나
+한강 위로 불빛 흘러가
+63빌딩 저 멀리 반짝여
+롯데타워 하늘을 찔러
+서울이 전부 눈 아래야
+
+[Pre-Chorus]
+(Dynamics lift, brass enters, bass groove locks)
+광화문에서 강남까지
+불빛이 쭉 이어져
+
+[Chorus]
+(Full groove, brass stabs, guitar + bass locked)
+서울의 밤
+온 도시가 춤춰
+옥상 위에 서면
+전부 내 거 같아
+
+[Interlude]
+(Brass section solo, funky guitar rhythm, tight groove)
+[instrumental]
+
+[Verse 2]
+(Chest voice, dynamics lift, brass accents stronger)
+명동 네온 깜빡이고
+홍대 어딘가 음악 새어나와
+청계천 불빛 줄지어 흐르고
+동대문 불 안 꺼지고
+바람 한 줄기 볼 스쳐
+서울 냄새가 나
+
+[Pre-Chorus]
+(Dynamics lift, arrangement builds, brass forward)
+이태원에서 잠실까지
+도시가 숨을 쉬어
+
+[Chorus]
+(Arrangement fuller, brass + guitar + bass peak)
+서울의 밤
+온 도시가 춤춰
+옥상 위에 서면
+전부 내 거 같아
+
+[Bridge]
+(Direct vocal, guitar only, minimal then brass swells)
+빌딩 숲 너머로 달이 뜨고
+서울은 잠들 줄 몰라
+
+이 도시는 멈추지 않아
+
+[Final Chorus]
+(Full arrangement density peak, brass section wide)
+서울의 밤
+온 도시가 춤춰
+옥상 위에 서면
+전부 내 거 같아
+
+[Outro]
+(Guitar restates funky riff, brass fade)
+서울의 밤
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean City Pop Funk, 105 BPM, A Major, Male tenor, Raw Solid Direct, Chest voice dominant, No falsetto, energetic groovy, upper register chorus, Clean guitar-led supportive chorus effect, brass stabs chorus, Juno-106 accent, funky slap bass subtle, 16-beat tight syncopated groove, Maj7 m7 9th harmony, upbeat nocturnal energy, V1: Guitar vocal-forward, PC: brass enters bass locks, C: Full groove brass guitar bass density rises, Interlude: Brass solo funky guitar, V2: brass stronger bass slap forward, Bridge: Guitar vocal bare brass swells, Final C: Full peak brass wide, Outro: Guitar funky riff fade, No harmony no backing no doubles, Lead vocal single dominant, Chorus by density only, Lush plate reverb spacious, tape warmth, EQ balanced sparkling
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, backing vocals, choir, doubled vocals, EDM, heavy rock, aggressive distortion, auto-tune
+```
+
+### Track 10: 방 (귀가)
+- **장르**: Korean City Pop R&B Ballad
+- **BPM**: 65 (slow ballad) | **Key**: Db Major
+- **Vocal**: Female (Alto, Raw Solid Direct)
+- **Lead Instrument**: DX7 synth melody lead, Felt Piano supportive, Juno-106 analog synth
+- **감정**: 마무리, 안도, 문 닫힘, 하루의 종결
+- **키워드 축**: 현관문/디지털도어락/소파/냉장고/맥주/TV/리모컨/옥상/강변
+- **훅**: "No more moon, back in my room" / "오늘은 여기까지"
+- **Suno Parameters**: W:35 / I:65
+- **상태**: 확정
+
+**Lyrics:**
+```
+[Intro]
+(Felt piano gentle, soft pad, minimal)
+
+[instrumental]
+
+[Verse 1]
+(Female Alto, Chest voice, No harmony, Direct vocal, Piano-led)
+번호를 누르면 열려
+현관문 앞에 서
+불빛이 반겨주고
+집 냄새가 번져와
+
+신발을 벗어 두고
+가방을 던져놔
+소파가 나를 기다려
+몸을 맡겨버려
+
+[Chorus]
+(Pad wider, bass gentle, arrangement rises)
+No more moon, back in my room
+밤이 날 감싸줘
+TV를 틀어두면
+오늘은 여기까지
+
+[Verse 2]
+(Chest voice, dynamics lift, warmth)
+냉장고 문을 열어
+맥주 하나 꺼내
+캔을 따는 소리가
+오늘의 마침표
+
+리모컨을 잡아
+채널은 아무 데나
+화면이 깜빡이고
+생각이 멀어져
+
+[Chorus]
+(Arrangement fuller)
+No more moon, back in my room
+밤이 날 감싸줘
+TV를 틀어두면
+오늘은 여기까지
+
+[Bridge]
+(Direct vocal, piano only, intimate)
+옥상에서 본 불빛
+강변에 비친 달
+다 잊어도 되는 시간
+
+집이 날 기다렸어
+
+[Final Chorus]
+(Full arrangement, soft strings)
+No more moon, back in my room
+밤이 날 감싸줘
+TV를 틀어두면
+오늘은 여기까지
+
+[Outro]
+(Piano motif fade)
+No more moon, back in my room
+[instrumental fade]
+```
+
+**Style:**
+```
+Articulation, Korean City Pop R&B Ballad, slow ballad tempo 65 BPM, unhurried relaxed, Db Major, Female alto, Raw Solid Direct, Chest voice dominant, No falsetto, intimate restrained, DX7 synth melody lead, Felt Piano supportive, Juno-106 analog synth, warm pad, soft brass chorus, soft strings final, mellow finger bass gentle, minimal brush kit, M7 9th sus IV-iv harmony, nocturnal homecoming mood, V1: Synth melody vocal-forward, PC: pad swells bass gentle, C: DX7 wider brass enters, V2: bass fuller strings soft, Bridge: Piano vocal bare Juno swells, Final C: brass strings wide, Outro: Synth motif fade, No harmony no backing no doubles, Lead vocal single dominant, Chorus by density only, Lush plate reverb spacious, tape warmth vintage analog, 80s Japanese City Pop influence, EQ balanced clean mix
+```
+
+**Exclude:**
+```
+falsetto, airy vocal, breathy tone, whisper singing, harmony stack, backing vocals, choir, doubled vocals, EDM, heavy drums, rock guitar, aggressive, auto-tune, fast, upbeat, energetic
+```
 
 ---
 
 ## 수미상관 구조
 
-| 요소 | Track 01 (문) | Track 10 (집) |
+| 요소 | Track 01 (문) | Track 10 (방) |
 |------|---------------|---------------|
 | **장소** | 현관 (나감) | 현관 (들어옴) |
 | **Key** | Db Major | Db Major |
-| **BPM** | 75 | 70 |
+| **BPM** | 75 | 65 |
 | **감정** | 설렘, 출발 | 안도, 마무리 |
-| **키워드** | 문 열림, 밤공기 | 문 닫힘, 이불 |
+| **훅** | "문을 열면 moon" | "No more moon, back in my room" |
+| **키워드** | 문 열림, 밤공기 | 문 닫힘, TV, 맥주 |
 
-→ 같은 Key(Db Major), 유사한 BPM, 대칭되는 감정으로 수미상관 완성
+→ 같은 Key(Db Major), 유사한 BPM, 대칭되는 감정 + **moon/room 라임**으로 수미상관 완성
 
 ---
 
 ## Changelog
 
+- 2026-02-14: 전곡 완료, 보컬 배분 테이블 수정, Track 05/06 상태 완료로 변경
+- 2026-02-14: Track 10 "방" 확정 (가사/스타일/Exclude), 수미상관 훅 추가
+- 2026-02-13: Track 04, 08, 09 확정
 - 2026-02-07: concept.md 초안 작성

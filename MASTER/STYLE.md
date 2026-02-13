@@ -1,6 +1,6 @@
 # VIBE-M STYLE.md
-Version: 2.6.4 (Tag Bank 2026 트렌드 추가)
-Last Updated: 2026-02-09
+Version: 2.7 (Genre Mix Pattern 강화)
+Last Updated: 2026-02-13
 Purpose: Raw Vocal 기본값 + 진성 강제 + 커뮤니티 베스트 프랙티스 통합
 
 ---
@@ -627,9 +627,35 @@ DEBUG B: Exclude에 "choir" 1개만 추가
 
 ---
 
-## 11) Co-occurrence Hints (장르 조합) — v2.5 NEW
+## 11) Co-occurrence Hints (장르 조합) — v2.7 UPDATE
 
-> 함께 쓰면 잘 작동하는 장르 조합
+> 함께 쓰면 잘 작동하는 장르 조합 + **Genre Mix Pattern**
+
+### 11.0 Genre Mix Pattern (필수) — v2.7 NEW
+
+> **Spine 1개 + Color 1개, 최대 2개 장르**
+
+**구조:**
+- **Spine (척추)**: 코어 장르, 정체성 결정
+- **Color (색깔)**: 서브 장르, 변주 제공
+
+**규칙:**
+1. Spine은 시리즈 전체 고정
+2. Color는 트랙별 변경 가능
+3. **3개 이상 장르 스택 절대 금지**
+
+**예시:**
+| 시리즈 | Spine | Color 옵션 |
+|--------|-------|-----------|
+| PM_0900 밤산책 | City Pop | Neo-Soul, Funk, R&B Ballad |
+| AM_0400 새벽 | Lo-fi R&B | Jazz, Ambient |
+
+**적용:**
+```
+✅ Korean City Pop + Neo-Soul (2개)
+✅ Korean City Pop + Funk (2개)
+❌ City Pop + Neo-Soul + Funk + Jazz (4개 → 혼란)
+```
 
 ### 11.1 VIBE-M 권장 조합
 
