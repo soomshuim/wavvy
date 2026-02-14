@@ -4,7 +4,7 @@
 >
 > 모든 규칙의 정의와 우선순위를 한 페이지로 정리합니다.
 >
-> Last updated: 2026-01-26 | v1.0
+> Last updated: 2026-02-14 | v1.1
 
 ---
 
@@ -82,12 +82,12 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 
 | 문서 | 역할 | 현재 버전 |
 |------|------|----------|
-| `MANAGER.md` | 운영/QC 최상위 통제 | v1.3 |
-| `STYLE.md` | Style Prompt 규격 | v2.6.3 |
-| `LYRICS.md` | 가사 입력 규격 | v1.9.1 |
-| `ROLES.md` | 역할 분리/검증표 | v1.7 |
+| `MANAGER.md` | 운영/QC 최상위 통제 | v1.4 |
+| `STYLE.md` | Style Prompt 규격 | v2.7 |
+| `LYRICS.md` | 가사 입력 규격 | v2.2.0 |
+| `ROLES.md` | 역할 분리/검증표 | v1.9 |
 | `24H_UNIVERSE.md` | 세계관 Bible | v1.0 |
-| `PLAYLIST_GUIDE.md` | 플레이리스트 컨셉 | v1.2 |
+| `PLAYLIST_GUIDE.md` | 플레이리스트 컨셉 | v1.3 |
 | `QUICK_REF.md` | 사람용 매뉴얼 | - |
 | `VIBE-M_Master_Plan.md` | CLI 스펙 | - |
 

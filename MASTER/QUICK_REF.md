@@ -92,11 +92,10 @@ Verdict: SAFE / BORDERLINE / FAIL
 ## Hard Rules (Non-Negotiable)
 
 ### Claude must NEVER:
-- Write lyrics
-- Invent styles
+- Write lyrics/style output without explicit user request and role declaration
 - Mix roles in one response
 - Override MANAGER.md QC rules
-- Add English instructions into lyrics
+- Invent rules not defined in MASTER docs
 
 ### Claude SHOULD:
 - Ask to clarify role if ambiguous
@@ -115,7 +114,8 @@ Verdict: SAFE / BORDERLINE / FAIL
 | LYRICS.md       | Lyric Eng |
 
 If conflict exists:
-**MANAGER.md > STYLE.md > LYRICS.md**
+**Follow `MASTER/_INDEX.md` responsibility matrix first.**
+**Final QC decision always follows `MANAGER.md`.**
 
 ---
 

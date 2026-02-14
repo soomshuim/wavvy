@@ -1,5 +1,5 @@
 # Project Vibe-M: System Specification
-# Version: 2.1 (Repeat Loop)
+# Version: 2.2 (Spec Alignment)
 # Target: Python CLI Tool (`vibem`)
 
 ---
@@ -26,18 +26,18 @@ root/
 │   └── STYLE.md                 # 사운드/스타일 가이드
 │
 ├── SERIES/                      # 시리즈별 프로젝트
-│   └── [Series_Name]/
-│       └── [YYYY-MM-DD]/
-│           ├── concept.md       # (선택) 컨셉 문서
-│           ├── input/
-│           │   ├── tracks/      # MP3 파일들 (파일명 규칙 필수 준수)
-│           │   ├── loop.mp4     # 배경 루프 영상
-│           │   └── thumb.jpg    # 썸네일 이미지
-│           ├── work/            # (자동생성) 임시 작업 폴더
-│           └── output/          # (자동생성) 최종 결과물 폴더
+│   └── [Series_Name]/           # 예: PM_0900, AM_0400
+│       ├── concept.md           # (선택) 컨셉 문서
+│       ├── input/
+│       │   ├── tracks/          # MP3/WAV 파일들 (파일명 규칙 필수 준수)
+│       │   ├── loop.mp4         # 배경 루프 영상
+│       │   ├── shorts.mp4       # (선택) shorts용 베이스 루프
+│       │   └── thumb.jpg        # 썸네일 이미지
+│       ├── work/                # (자동생성) 임시 작업 폴더
+│       └── output/              # (자동생성) 최종 결과물 폴더
 │
 ├── vibem.py                     # CLI 실행 스크립트 (Click 사용)
-├── vibem.md                     # CLI 스펙 (이 파일)
+├── MASTER/VIBE-M_Master_Plan.md # CLI 스펙 (이 파일)
 ├── requirements.txt             # 의존성 목록
 ├── CLAUDE.md                    # Claude Code 작업 지침
 └── .ai/                         # AI 전용 메모리
@@ -50,7 +50,7 @@ root/
 ## 3. 파일명 규칙 (Naming Convention)
 파싱의 정확도를 위해 **Double Underscore (`__`)**를 구분자로 사용합니다.
 
-*   **형식:** `NN__Title__Mood__Genre__BPM.mp3`
+*   **형식:** `NN__Title__Mood__Genre__BPM.(mp3|wav)`
 *   **예시:** `01__새벽의달리기__Energetic__K-Rock__170.mp3`
 
 ---
@@ -60,7 +60,7 @@ root/
 ### A. `validate`
 **목적:** 작업 시작 전 파일 및 오디오 건전성 체크 (Health Check).
 
-1.  **File Check:** `input/tracks` 폴더에 MP3가 1개 이상 존재하는지, `loop.mp4`, `thumb.jpg`가 있는지 확인.
+1.  **File Check:** `input/tracks` 폴더에 MP3/WAV가 1개 이상 존재하는지, `loop.mp4`, `thumb.jpg`가 있는지 확인.
 2.  **Naming Check:** 파일명이 위 정규식 규칙(`__`)을 따르는지 검사. (위반 시 정확한 파일명 리포트)
 3.  **Audio Integrity:** `ffprobe`를 사용하여 다음을 확인.
     *   Duration > 0
