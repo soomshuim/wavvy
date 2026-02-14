@@ -7,6 +7,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **PM_0900 "밤산책" 시리즈 패키징 완료**
+  - 최종 영상: 64분 (10트랙 x 2회 반복)
+  - 왕복 루프 기법 적용 (forward + reverse = seamless 16초)
+  - 썸네일: 신카이 스타일 일러스트 (Freepik AI + Veo 3.1)
+  - 디스크립션: "서울의 밤을 걷는 뉴트로 시티팝" 브랜딩
+  - PM_0400 포맷 정렬 (🎧 Tracklist 헤더, #PM0900 해시태그)
+
+### Changed
+- **vibem.py: WAV 파일 지원 추가**
+  - TRACK_PATTERN regex: `.mp3` → `.(?:mp3|wav)`
+  - audio_files glob: MP3 + WAV 동시 검색
+  - 에러 메시지 업데이트: "No MP3 files" → "No audio files (MP3/WAV)"
+
+### Added
 - **PM_0900 "밤산책" 시리즈 전곡 완료 (10/10 tracks)**
   - Track 04 "가로등": City Pop Ballad, 72 BPM, Female Mezzo, PASS
   - Track 08 "창가": Neo-Soul City Pop, 85 BPM, Male Baritone, PASS

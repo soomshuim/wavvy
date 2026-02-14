@@ -32,7 +32,7 @@ import pandas as pd
 # =============================================================================
 
 TRACK_PATTERN = re.compile(
-    r'^(?P<order>\d{2})__(?P<title>[^_]+)__(?P<mood>[^_]+)__(?P<genre>[^_]+)__(?P<bpm>\d+)\.mp3$'
+    r'^(?P<order>\d{2})__(?P<title>[^_]+)__(?P<mood>[^_]+)__(?P<genre>[^_]+)__(?P<bpm>\d+)\.(?:mp3|wav)$'
 )
 
 DEFAULT_CROSSFADE_SEC = 0.8
@@ -450,40 +450,42 @@ def validate_project(paths: ProjectPaths) -> ValidationResult:
         result.add_error(f"Tracks directory does not exist: {paths.tracks_dir}")
         return result
 
-    # Find MP3 files
-    mp3_files = sorted(paths.tracks_dir.glob('*.mp3'))
-    if not mp3_files:
-        result.add_error(f"No MP3 files found in: {paths.tracks_dir}")
+    # Find audio files (MP3 or WAV)
+    audio_files = sorted(
+        list(paths.tracks_dir.glob('*.mp3')) + list(paths.tracks_dir.glob('*.wav'))
+    )
+    if not audio_files:
+        result.add_error(f"No audio files (MP3/WAV) found in: {paths.tracks_dir}")
         return result
 
-    log_info(f"Found {len(mp3_files)} MP3 file(s)")
+    log_info(f"Found {len(audio_files)} audio file(s)")
 
     # Validate filename format and parse tracks
     tracks = []
     sample_rates = set()
 
-    for mp3_path in mp3_files:
-        track = TrackInfo.from_filename(mp3_path)
+    for audio_path in audio_files:
+        track = TrackInfo.from_filename(audio_path)
         if track is None:
             result.add_error(
-                f"Invalid filename format: {mp3_path.name}\n"
-                f"  Expected: NN__Title__Mood__Genre__BPM.mp3"
+                f"Invalid filename format: {audio_path.name}\n"
+                f"  Expected: NN__Title__Mood__Genre__BPM.mp3 (or .wav)"
             )
             continue
 
         # Check audio integrity
-        audio_info = get_audio_info(mp3_path)
+        audio_info = get_audio_info(audio_path)
         if 'error' in audio_info:
-            result.add_error(f"Audio integrity check failed for {mp3_path.name}: {audio_info['error']}")
+            result.add_error(f"Audio integrity check failed for {audio_path.name}: {audio_info['error']}")
             continue
 
         if audio_info['duration'] <= 0:
-            result.add_error(f"Invalid duration (<=0) for {mp3_path.name}")
+            result.add_error(f"Invalid duration (<=0) for {audio_path.name}")
             continue
 
         track.duration = audio_info['duration']
         track.sample_rate = audio_info['sample_rate']
-        track.sha256 = compute_sha256(mp3_path)
+        track.sha256 = compute_sha256(audio_path)
 
         sample_rates.add(track.sample_rate)
         tracks.append(track)

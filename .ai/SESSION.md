@@ -6,6 +6,20 @@
 
 ## 완료된 작업
 
+### 2026-02-14 - PM_0900 패키징 완료 + WAV 지원
+
+- [x] **PM_0900 시리즈 패키징 완료**
+  - 최종 영상: 64분 (10트랙 x 2회 반복)
+  - 왕복 루프 기법: forward + reverse = seamless 16초 loop
+  - 썸네일: 신카이 스타일 일러스트 (Freepik AI 생성)
+  - Veo 3.1 루프 영상: 남산타워 + 시티 야경 + 숨쉬는 캐릭터
+  - 디스크립션: "서울의 밤을 걷는 뉴트로 시티팝" 브랜딩
+  - PM_0400 포맷 정렬 (🎧 Tracklist, #PM0900 #밤9시)
+
+- [x] **vibem.py WAV 지원**
+  - TRACK_PATTERN: `.mp3` → `.(?:mp3|wav)`
+  - audio_files glob: MP3 + WAV 동시 검색
+
 ### 2026-02-14 - PM_0900 "밤산책" 전곡 완료 + MASTER 패턴 문서화
 
 - [x] **PM_0900 전곡 완료 (10/10 tracks PASS)**
