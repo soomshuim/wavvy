@@ -1,10 +1,8 @@
 # MASTER/_INDEX.md — SSOT Router
 
-> **이 파일은 VIBE-M 프로젝트의 "문서 라우터"입니다.**
->
-> 모든 규칙의 정의와 우선순위를 한 페이지로 정리합니다.
->
-> Last updated: 2026-02-14 | v1.1
+Version: 1.2
+Last Updated: 2026-02-16
+Purpose: 모든 규칙의 정의와 우선순위를 한 페이지로 정리하는 SSOT 라우터
 
 ---
 
@@ -32,12 +30,14 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 | **가사 구조/태그** | `LYRICS.md` | §2.2 | 참조만 |
 | **보컬 메타태그 필수** | `LYRICS.md` | §2.2 | 참조만 |
 | **Style Prompt 슬롯** | `STYLE.md` | §7-8 | 참조만 |
-| **글자수 제한 (800자)** | `STYLE.md` | §0.1 | 참조만 |
+| **글자수 제한 (900자, 공백 포함 문자)** | `STYLE.md` | §0.1 | 참조만 |
 | **Exclude 규칙** | `STYLE.md` | §6 | 참조만 |
 | **역할 분리** | `ROLES.md` | 전체 | 참조만 |
 | **S1-S12 압축 검증** | `ROLES.md` | 검증표 | STYLE.md S0-S20의 요약 |
 | **Time Station** | `24H_UNIVERSE.md` | §2-4 | 참조만 |
 | **타이틀 생성** | `PLAYLIST_GUIDE.md` | §0 | 참조만 |
+| **작업 절차/운영 게이트** | `MANAGER.md` | §2-3 | `CLAUDE.md`는 요약/매뉴얼 |
+| **txt→컨펌→concept 반영 절차** | `MANAGER.md` | §3 Phase 0.5 | `CLAUDE.md`는 요약/참조 |
 
 ---
 
@@ -47,7 +47,7 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 
 | 파라미터 | 값 | SSOT 위치 |
 |----------|-----|----------|
-| `PROMPT_CHAR_LIMIT` | 800 | STYLE.md §0.1 |
+| `PROMPT_CHAR_LIMIT` | 900 (공백 포함 문자) | STYLE.md §0.1 |
 | `LYRICS_ALLOWED_TAGS` | v1.9.1 | LYRICS.md §2.2 |
 | `VOCAL_META_TAG_REQUIRED` | true | LYRICS.md §2.2 |
 | `EXCLUDE_MAX_TOKENS` | 8 | STYLE.md §6 |
@@ -82,8 +82,8 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 
 | 문서 | 역할 | 현재 버전 |
 |------|------|----------|
-| `MANAGER.md` | 운영/QC 최상위 통제 | v1.4 |
-| `STYLE.md` | Style Prompt 규격 | v2.7 |
+| `MANAGER.md` | 운영/QC 최상위 통제 | v1.5 |
+| `STYLE.md` | Style Prompt 규격 | v2.8 |
 | `LYRICS.md` | 가사 입력 규격 | v2.2.0 |
 | `ROLES.md` | 역할 분리/검증표 | v1.9 |
 | `24H_UNIVERSE.md` | 세계관 Bible | v1.0 |

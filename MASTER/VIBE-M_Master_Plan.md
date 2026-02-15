@@ -1,6 +1,8 @@
 # Project Vibe-M: System Specification
-# Version: 2.2 (Spec Alignment)
-# Target: Python CLI Tool (`vibem`)
+Version: 2.2
+Last Updated: 2026-02-16
+Purpose: vibem CLI 시스템 명세
+Target: Python CLI Tool (`vibem`)
 
 ---
 

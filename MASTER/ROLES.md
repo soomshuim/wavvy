@@ -1,7 +1,8 @@
 # VIBE-M Role System (SSOT)
-# Version: 1.9 (2026-02-13) — Controlled Variation Pattern + Clean Slate Protocol
-# Purpose: Separate thinking to prevent duplication, drift, and algorithmic risk.
-# Scope: Defines WHY and WHAT each AI role is responsible for.
+Version: 1.9
+Last Updated: 2026-02-16
+Purpose: Separate thinking to prevent duplication, drift, and algorithmic risk
+Scope: Defines WHY and WHAT each AI role is responsible for
 
 ---
 
@@ -52,14 +53,14 @@ Vocal line may intensify dynamically (belt, higher register), but no additional 
 
 ---
 
-## S1-S12 Validation Enforcement — v2.6.2 UPDATE
+## S1-S12 Validation Enforcement
 
 > **보컬 타입 누락 등 필수 슬롯 누락 방지를 구조로 강제**
 >
 > **SSOT 관계:**
-> - **전체 슬롯 정의 (S0-S20)**: `CLAUDE.md` "Style Prompt 필수 슬롯 체크리스트"
+> - **전체 슬롯 정의 (S0-S20)**: `MASTER/STYLE.md` §7-8
 > - **출력 검증 테이블 (S1-S12)**: 이 문서 (ROLES.md) - 핵심 슬롯만 추출
-> - S1-S12는 CLAUDE.md S0-S20의 핵심 항목을 검증 출력용으로 압축한 것
+> - S1-S12는 STYLE.md S0-S20의 핵심 항목을 검증 출력용으로 압축한 것
 
 **원칙:**
 - 문서에 한 줄 추가로는 해결 안 됨
@@ -91,7 +92,7 @@ Vocal line may intensify dynamically (belt, higher register), but no additional 
 
 **Validation Result: [12/12 PASS] 또는 [X/12 FAIL - 재생성 필요]**
 
-> 참고: 전체 S0-S20 슬롯 체크는 CLAUDE.md 참조
+> 참고: 전체 S0-S20 슬롯 체크는 STYLE.md 참조
 ```
 
 **강제 규칙:**
@@ -102,7 +103,7 @@ Vocal line may intensify dynamically (belt, higher register), but no additional 
 
 ---
 
-## 가사 메타태그 필수 규칙 — v1.7 NEW
+## 가사 메타태그 필수 규칙
 
 > **구조 태그만 있고 보컬 제어 메타태그 없으면 QC FAIL**
 
@@ -282,7 +283,7 @@ This file is the constitutional layer.
 
 ---
 
-## Controlled Variation Pattern — v1.9 NEW
+## Controlled Variation Pattern
 
 > **핵심: 고정 요소 + 변동 요소 + 명확한 Gate**
 
@@ -302,7 +303,7 @@ This file is the constitutional layer.
 
 ---
 
-## Clean Slate Protocol — v1.9 NEW
+## Clean Slate Protocol
 
 > **같은 문제 3회 실패 시, 이전 버전 완전 망각 후 리셋**
 

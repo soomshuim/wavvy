@@ -1,11 +1,11 @@
 # VIBE-M LYRICS.md
-Version: 2.2.0 (괄호 통합: [] 구조 전용, () 보컬+악기+코드 1행 통합)
-Last Updated: 2026-02-09
+Version: 2.2.0
+Last Updated: 2026-02-16
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
 ---
 
-## 🇰🇷 0. Korean Lyric Positioning (한국어 가사 포지셔닝) — v1.7 NEW
+## 🇰🇷 0. Korean Lyric Positioning (한국어 가사 포지셔닝)
 
 > **"이 프로젝트의 핵심 차별점은 한국어 가사 플레이리스트라는 점이다."**
 
@@ -281,7 +281,7 @@ Bridge는 반드시 아래 구조를 따른다.
 
 ---
 
-### 1.10 Image Density Management (이미지 과밀 방지) — v1.8 NEW
+### 1.10 Image Density Management (이미지 과밀 방지)
 
 > **"이미지가 너무 풍부하면 서로 발목을 잡는다."**
 
@@ -315,7 +315,7 @@ V2 = 감각 (Sensation) — 신체 반응, 시간 흐름, 내면 체감
 
 ---
 
-### 1.11 Chorus Tone Rule (후렴 관조 톤) — v1.8 NEW
+### 1.11 Chorus Tone Rule (후렴 관조 톤)
 
 > **"플레이리스트는 반복 청취된다. 직접 호소는 피로해진다."**
 
@@ -348,9 +348,9 @@ Chorus에서 직접적인 명령/호소 표현은 1회 청취에는 강렬하지
 
 ## 🧼 2. Pure Lyric Input Rule (입력 무결성)
 
-### 2.0 VIBE-M이 가이드와 다르게 가는 이유 — v1.6 NEW
+### 2.0 VIBE-M이 가이드와 다르게 가는 이유
 
-> **"가이드에서 권장하는 괄호/메타 지시는 Suno에서 가사로 낭독될 확률이 높아 VIBE-M에서는 금지한다 (순수 가창 데이터 보존 목적)."**
+> **"설명형 메타 지시는 Suno에서 가사로 낭독될 확률이 높아 금지하되, 구조 직후 1행 `()` 메타는 허용한다."**
 
 **배경:**
 - 일부 Suno 가이드는 가사 입력란에 `(female)`, `(Scene: ...)` 같은 메타 정보를 넣으라고 권장
@@ -360,14 +360,14 @@ Chorus에서 직접적인 명령/호소 표현은 1회 청취에는 강렬하지
 **VIBE-M 원칙:**
 | 항목 | 가이드 권장 | VIBE-M 방식 | 이유 |
 |------|-----------|-------------|------|
-| 보컬 성별 | `(female)` 가사에 삽입 | Style Prompt에 명시 | 낭독 방지 |
-| 씬 설명 | `(Scene: rainy night)` | Style Prompt에 명시 | 낭독 방지 |
-| 감정 지시 | `(Emotion: sad)` | Style Prompt에 명시 | 낭독 방지 |
-| Performance Cue | `(whispered)` | **허용** (1단어만) | 동작 확인됨 |
+| 보컬/악기/코드 메타 | `(female)`, `(piano arpeggio)` 등 | 구조 태그 다음 줄 `()` 1행으로 허용 | 제어 정보 전달 |
+| 씬 설명 | `(Scene: rainy night)` | 금지, Style Prompt로 이동 | 낭독 방지 |
+| 감정 설명 | `(Emotion: sad)` | 금지, Style Prompt로 이동 | 낭독 방지 |
+| Performance Cue | `(whispered)` | 허용 (짧은 지시) | 동작 확인됨 |
 
 **결론:**
-- 가사 입력란 = **순수 가창 텍스트 + 구조 태그 + Performance Cues**
-- 모든 스타일/연출 지시 = **Style Prompt로 이동**
+- 가사 입력란 = **순수 가창 텍스트 + 구조 태그 + 구조 직후 1행 `()` 메타**
+- 설명형 씬/감정 지시 = **Style Prompt로 이동**
 
 ---
 
@@ -379,11 +379,11 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 - **설명형 괄호 지시어**: `(Scene: ...)`, `(Emotion: ...)`, `(Mood: ...)`
   - 이유: Suno가 가사로 읽어버림 (Case 04)
 - Scene 설명
-- 악기/편곡 지시
 - 감정 메타 코멘트
-- **(female)**, **(male)** 같은 보컬 성별 지시 — Style Prompt로 이동
+- 구조 태그와 분리된 임의 위치의 `()` 지시
 
-이 모든 것은 STYLE.md로 이동한다.
+설명형 지시와 분위기/연출 코멘트는 STYLE.md로 이동한다.
+구조 직후 1행 `()` 메타는 §2.2 규칙에 따라 Lyrics에 유지한다.
 
 > **참고**: 짧은 보컬 연출 지시어 `(whispered)`, `(belted)` 등은 2.3 Performance Cues 참조
 
@@ -393,7 +393,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 > **VIBE-M은 태그 최소화가 원칙. 허용 태그 외 사용 금지.**
 
-#### ⚠️ SSOT: 괄호 사용 규칙 — v2.2 UPDATE
+#### ⚠️ SSOT: 괄호 사용 규칙
 
 > **`[]` 대괄호는 구조 태그 전용. 보컬/악기/코드 지시는 모두 `()` 소괄호.**
 
@@ -442,18 +442,17 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 | `[Vibraphone solo]` | 악기 솔로 지시 | Style Prompt |
 
 **원칙:**
-- Lyrics = **보컬이 할 일만** (발성, 화음, 스타일)
-- Style Prompt = **악기/편곡이 할 일** (진입, 밀도, 다이내믹)
+- Lyrics = **구조 + 가사 + 구조 직후 1행 `()` 메타** (보컬/악기/코드)
+- Style Prompt = **설명형 연출/분위기/편곡 전략** (진입, 밀도, 다이내믹)
 
 ---
 
-**🔴 필수 (REQUIRED) — 모든 트랙에 사용:**
+**🔴 필수 (REQUIRED) — 기본 구조에서 사용:**
 ```
 [intro], [outro]
 [verse], [verse1], [verse2]
 [bridge], [bridge1], [bridge2]
 [chorus]
-[instrumental]
 ```
 
 **🟡 조건부 허용 (OPTIONAL) — 필요할 때만:**
@@ -462,6 +461,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 |------|----------|----------|
 | `[pre-chorus]` | Hook 진입 타이밍 제어 필요 시 | K-POP 스타일 빌드업 |
 | `[hook]` | 코러스와 별개 훅 강조 필요 시 | 힙합/댄스 장르 |
+| `[instrumental]` | 인스트루멘탈 구간이 필요할 때 | 길이 확장/호흡 구간 |
 | `[breakdown]` | 긴 인스트루멘탈 필요 시 | EDM/일렉트로닉 |
 | `[end]` | 명확한 종료 필요 시 | Outro가 길어질 때 |
 | `[big finish]` | 마지막 코러스 화려하게 | 발라드 클라이맥스 |
@@ -522,7 +522,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 ---
 
-### 2.3 메타태그 동작 원리 (Suno 인식 규칙) — v2.0 NEW
+### 2.3 메타태그 동작 원리 (Suno 인식 규칙)
 
 > **"대괄호와 소괄호는 Suno에서 완전히 다르게 동작한다."**
 
@@ -541,7 +541,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 가사 내용...
 ```
 
-#### 2.3.2 소괄호 `(BB)` — 조건부 인식 (30~100%) — v2.9 UPDATE
+#### 2.3.2 소괄호 `(BB)` — 조건부 인식 (30~100%)
 
 | 상황 | Suno 인식률 | 예시 |
 |------|------------|------|
@@ -608,7 +608,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 ---
 
-### 2.4 Performance Cues (인라인 연출) — v1.5 NEW
+### 2.4 Performance Cues (인라인 연출)
 
 > 구조 태그 바로 뒤, 가사 전에 배치하여 보컬 연출 지시
 
@@ -642,7 +642,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 ---
 
-### 2.4 가사 길이 가이드라인 — v1.5 NEW
+### 2.4 가사 길이 가이드라인
 
 > 짧고 일관된 가사가 Suno 결과의 안정성을 높인다
 
@@ -739,7 +739,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 [outro]
 ```
 
-### 4.2 구조 공식 옵션 — v1.5 NEW
+### 4.2 구조 공식 옵션
 
 > 장르/컨셉에 따라 다른 구조 선택 가능
 
@@ -775,35 +775,35 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 [instrumental]
 
 [verse1]
-[Chest voice, No harmony]
+(Chest voice, No harmony, Direct vocal, soft piano arpeggio)
 손끝이 차가워
 김이 서린 유리
 뿌옇게 가려진
 어제의 얼굴들
 
 [bridge1]
-[Direct vocal, Dry voice]
+(Direct vocal, Dry voice, warm major7 progression)
 마른 천을 쥐고서
 지우려는 손끝이
 도리어 번져가는
 얼룩진 마음의 흔적
 
 [chorus]
-[Soft belt, Chest voice, No harmony]
+(Soft belt, Chest voice, No harmony, chord lift)
 잊혀지는 것들은
 소리도 없이 투명해
 흐려진 궤적 끝에
 잡히지 않는 너
 
 [verse2]
-[Chest voice, No harmony]
+(Chest voice, No harmony, Direct vocal, soft piano arpeggio)
 눈끝이 따가워
 나의 작은 숨이
 여전히 남겨진
 추억의 흔적들
 
 [bridge2]
-[Direct vocal, Dry voice]
+(Direct vocal, Dry voice, warm major7 progression)
 젖은 숨을 삼키고
 다시 문지른 손끝
 더 선명해져버린

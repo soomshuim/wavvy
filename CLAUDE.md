@@ -1,8 +1,8 @@
 # Claude Code Instructions - vibe-m
 
-> YouTube Music Playlist Generator CLI
->
-> Last updated: 2026-02-13 | v2.12.0 (패턴 고착 검사 + Clean Slate Protocol)
+Version: 2.13.0
+Last Updated: 2026-02-16
+Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 
 ## ⚠️ SSOT 경고
 
@@ -46,7 +46,7 @@
 2. **Pure FFmpeg** - `ffmpeg-python` 또는 `subprocess`만 사용
 3. **Sequential Acrossfade** - 단순 concat 금지
 4. **Fail Fast** - 입력 검증 실패 시 즉시 종료
-5. **Pure Input Principle** - Suno 가사란에 가사 + 구조 태그 + Performance Cues만 (설명형 지시어 금지)
+5. **Pure Input Principle** - Suno 가사란에 가사 + 구조 태그 + 구조 직후 1행 `()` 메타만 (설명형 지시어 금지)
 
 ## Auto Reference Rules
 
@@ -113,7 +113,7 @@ Step 0.5. museA 가이드 참조 (v2.9 NEW):
          - §1 Tag Bank에서 장르/악기/보컬 키워드 선택
 Step 1. Generate Style Prompt (압축 버전)
 Step 2. Run self-QC against checklist (20개 슬롯)
-Step 3. 글자수 검증 (wc -c 실행, < 800자 확인)
+Step 3. 글자수 검증 (공백 포함 문자 수 기준, <= 900자 확인)
 Step 4. 장르 게이트 (v2.10 NEW):
         IF genre = City Pop → CITYPOP_RUBRIC.md 실행
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
@@ -180,7 +180,7 @@ Falsetto, Airy, Whisper, ...
 | **1.10** | **Image Density** | **V1=공간, V2=감각 분리 (핵심 이미지 2개 이상 겹침 금지)** |
 | **1.11** | **Chorus Tone** | **직접 호소/명령형 최대 1개, 나머지 관조 톤** |
 | **1.12** | **Cross-Series Independence** | **다른 시리즈 concept.md와 장소+감정+상황 3축 중 2개 이상 겹침 없음** |
-| 2.1 | Pure Input | 설명형 괄호 금지, Performance Cues `(soft)` 등은 허용 |
+| 2.1 | Pure Input | 설명형 괄호 금지, 구조 직후 1행 `()` 메타 허용 (Performance Cue 포함) |
 | **2.3** | **메타태그 동작** | **`[AA]`=구조(낭독X), `(BB)`=조건부(톤지시 단독행), 감정태그→Style** |
 | **2.2** | **메타태그 필수** | **LYRICS.md §2.2 SSOT 참조** (구조 태그 + 보컬 메타태그 세트 필수) |
 | 2.4 | Length Guide | **전체 100-120 단어, 섹션당 4-6행** |
@@ -220,7 +220,7 @@ Section E: Cross-Series 겹침 검증 (v2.11 NEW) ← SERIES/ 전체 concept.md 
 | S12 | Exclude 필수 항목 | **Airy, Falsetto, Whisper, Harmonized** | 얇은 보컬 유발 단어 차단 |
 | S13 | Exclude 제한 | **최대 3그룹, 8키워드** (기본 1줄 권장) | 과도한 Exclude = 부작용 |
 | S14 | **모호 형용사 제거** | warm reflective, rich vibrato 등 제거 | 가성 유발 방지 |
-| **S15** | **글자수 제한** | **< 800자 권장 (실제 1000자)** | 출력 전 `wc -c`로 검증, 800~1000 허용 |
+| **S15** | **글자수 제한** | **<= 900자 (공백 포함 문자)** | 출력 전 문자수 검증 |
 | **S16** | **Lead Instrument Supportive** | **`[악기]-led, supportive` 형태** | 악기 과도한 존재감 방지 |
 | **S17** | **Chorus Expansion Density** | **`arrangement density only` 명시** | 스테레오/볼륨 해석 방지 |
 | **S18** | **Articulation (필수)** | **`articulation`** | 발음 명확성 확보, 웅얼거림 방지 |
@@ -232,7 +232,7 @@ Section E: Cross-Series 겹침 검증 (v2.11 NEW) ← SERIES/ 전체 concept.md 
 Step 0. powerful/husky/airy 별도 요청 있는지 확인
 Step 1. 없으면 Raw Vocal Baseline 적용
 Step 2. Run self-QC against checklist (20개 슬롯) ← v2.6.2 UPDATE
-Step 3. 글자수 검증 (wc -c < 800) ← v2.2 NEW
+Step 3. 글자수 검증 (공백 포함 문자 수 <= 900) ← v2.2 NEW
 Step 4. If all pass → QC 테이블과 함께 output
         If any fail → STOP + 수정 후 Step 2 반복
         (검증 통과 전 유저에게 제안 금지)
@@ -266,8 +266,8 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune
 
 **글자수 제한:**
 ```
-- Suno Style Prompt 제한: < 800자
-- 출력 전 반드시 wc -c로 검증
+- Suno Style Prompt 제한: <= 900자 (공백 포함 문자 기준)
+- 출력 전 반드시 문자수로 검증
 - 검증 없이 유저에게 제안 금지
 ```
 
@@ -302,7 +302,7 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune
 ```
 | 항목 | 상태 |
 |------|------|
-| 글자수 | [N]자 ✓/✗ (< 800) |
+| 글자수 | [N]자 ✓/✗ (<= 900, 공백 포함 문자) |
 | S0-S20 | ✓/✗ |
 
 → 모든 항목 ✓ 시에만 유저에게 제안
@@ -319,7 +319,7 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune
 
 워크플로우:
 Step 1. 텍스트 완성 → .txt 파일로 Write
-Step 2. wc -c로 글자수 검증
+Step 2. 공백 포함 문자 수로 글자수 검증
 Step 3. cat [파일] | pbcopy 로 클립보드 복사
 Step 4. 유저에게 "Cmd+V로 붙여넣기" 안내
 ```
@@ -359,7 +359,7 @@ Step 3. 결과 QC 후 파라미터 조정 필요 시 기록
 ```
 □ Lyrics에 편곡 지시 없음 (Kick in, Groove locks in 등 → Style Prompt)
 □ Style Prompt에 보컬/편곡 지시 집중
-□ Style Prompt < 800자
+□ Style Prompt <= 900자 (공백 포함 문자)
 □ Title에 이모지/해시태그 없음
 □ Description 해시태그는 구분선(---) 아래에만
 □ Pinned comment 이모지 ≤ 1개
@@ -620,20 +620,20 @@ brew install ffmpeg-full
 
 ---
 
-### Concept 파일 SSOT 규칙 (v2.4 NEW)
+### Concept 파일 위치 규칙 (요약)
 
 > **concept.md는 반드시 SERIES 폴더 내에만 존재**
 
-**SSOT 위치:**
+**기준 위치 (MASTER 정책 요약):**
 ```
 SERIES/[시리즈명]/concept.md
 ```
 
 **예시:**
-- `SERIES/AM_0400/concept.md` ← AM 04:00 시리즈 SSOT
-- `SERIES/PM_0200/concept.md` ← PM 02:00 시리즈 SSOT
-- `SERIES/PM_0400/concept.md` ← PM 04:00 시리즈 SSOT
-- `SERIES/PM_0600/concept.md` ← PM 06:00 시리즈 SSOT
+- `SERIES/AM_0400/concept.md` ← AM 04:00 시리즈 기준 파일
+- `SERIES/PM_0200/concept.md` ← PM 02:00 시리즈 기준 파일
+- `SERIES/PM_0400/concept.md` ← PM 04:00 시리즈 기준 파일
+- `SERIES/PM_0600/concept.md` ← PM 06:00 시리즈 기준 파일
 
 **금지:**
 - ❌ 루트에 `concept_vol.*.md` 생성 금지
@@ -668,9 +668,9 @@ vibe-m/
 │   ├── CITYPOP_RUBRIC.md   # 시티팝 장르 루브릭 (≥80점 PASS)
 │   └── VIBE-M_Master_Plan.md # CLI 스펙
 │
-├── SERIES/                 # 시리즈별 프로젝트 (concept.md SSOT 위치)
+├── SERIES/                 # 시리즈별 프로젝트 (concept.md 기준 위치)
 │   ├── AM_0400/            # 새벽 4시 시리즈
-│   │   ├── concept.md      # 컨셉 문서 (SSOT)
+│   │   ├── concept.md      # 컨셉 문서 (기준본)
 │   │   └── input/
 │   │       ├── tracks/     # MP3 파일
 │   │       ├── loop.mp4
@@ -726,9 +726,10 @@ vibe-m/
 
 ## Workflow Rules
 
-### 가사/스타일/Exclude 수정 워크플로우 (필수)
+### 가사/스타일/Exclude 수정 워크플로우 (요약)
 
-> **SSOT 원칙: txt 파일이 작업용 진실 공급원, concept.md는 최종 확정본**
+> **SSOT: `MASTER/MANAGER.md` Phase 0.5**  
+> 아래는 실행 요약이다.
 
 **절차:**
 
@@ -746,7 +747,7 @@ vibe-m/
    - txt 파일 내용 동기화
 
 **이유:**
-- txt = 작업 중인 SSOT (수정/검증 단계)
+- txt = 작업 중 기준본 (수정/검증 단계)
 - concept.md = 최종 확정본 (컨펌 완료 후)
 - 수정 중인 내용과 확정된 내용 분리로 혼란 방지
 

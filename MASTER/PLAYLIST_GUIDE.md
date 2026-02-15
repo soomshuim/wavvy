@@ -1,6 +1,6 @@
 # VIBE-M PLAYLIST_GUIDE.md
-Version: 1.3 (수미상관 구조 추가)
-Last Updated: 2026-02-13
+Version: 1.3
+Last Updated: 2026-02-16
 Purpose: 플레이리스트 컨셉 설계 시 참고하는 인기 사례 분석 가이드
 Source: Reference/유튜브 감성 플레이리스트 인기 사례 분석.pdf
 
@@ -383,7 +383,7 @@ Use ONLY when Context Mode is missing or ambiguous.
 
 ---
 
-## 8. Korean Lyric Positioning (3-Layer 전략) — v1.1 NEW
+## 8. Korean Lyric Positioning (3-Layer 전략)
 
 > **"우리말 가사"는 차별점이지만, 과시하지 않고 자연스럽게 반복 노출한다.**
 
@@ -451,7 +451,7 @@ soomshuim은
 
 ---
 
-## 9. 수미상관 구조 (Bookend Pattern) — v1.3 NEW
+## 9. 수미상관 구조 (Bookend Pattern)
 
 > **시리즈 첫/끝 트랙이 서로 미러링되는 구조**
 

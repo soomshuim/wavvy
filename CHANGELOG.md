@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **SSOT 정책 및 문서 메타 포맷 정합성 정리**
+  - `MASTER` 기준으로 SSOT 책임/우선순위/워크플로우 문구 충돌 해소
+  - Style Prompt 길이 기준을 `900자 (공백 포함 문자)`로 통일
+  - `CLAUDE.md`를 비-SSOT 실행 매뉴얼로 정렬하고 `MANAGER.md` 참조로 통일
+  - 문서 헤더 메타(`Version`, `Last Updated`, `Purpose`) 포맷 통일 및 날짜 동기화
+
 ### Added
 - **PM_0900 "밤산책" 시리즈 패키징 완료**
   - 최종 영상: 64분 (10트랙 x 2회 반복)

@@ -1,7 +1,8 @@
 # VIBE-M Quick Reference (for Human)
-# Version: 1.0 (2026-01-18)
-# Purpose: One-page operational guide for AI-assisted music production
-# Scope: Role usage, order, and guardrails only
+Version: 1.1
+Last Updated: 2026-02-16
+Purpose: One-page operational guide for AI-assisted music production
+Scope: Role usage, order, and guardrails only
 
 ---
 
@@ -151,8 +152,8 @@ Required slots: BPM, Lead Instrument
 - Variation = **Engineer**
 - Manager = **Judge**
 
-Claude is not the Judge.
-Claude builds what the system allows.
+By default, Claude builds what the system allows.
+When Manager role is explicitly invoked, judgment follows `MASTER/MANAGER.md`.
 
 ---
 

@@ -1,12 +1,11 @@
 # City Pop Genre Rubric
 
-> 시티팝 장르 적합성 평가 루브릭
->
-> v1.0 | 2026-02-10
->
-> **적용 대상**: 장르가 City Pop인 트랙의 Seed Design / Variation Design QA
->
-> **PASS 기준**: 80점 이상 | **FAIL**: 80점 미만 → 재디자인 필수
+Version: 1.0
+Last Updated: 2026-02-16
+Purpose: 시티팝 장르 적합성 평가 루브릭
+Scope: 장르가 City Pop인 트랙의 Seed Design / Variation Design QA
+Pass Criteria: 80점 이상
+Fail Criteria: 80점 미만 (재디자인 필수)
 
 ---
 

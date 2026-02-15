@@ -1,6 +1,6 @@
 # VIBE-M MANAGER.md
-Version: 1.4 (Controlled Variation Enforcement)
-Last Updated: 2026-02-13
+Version: 1.5
+Last Updated: 2026-02-16
 Role: Executive Manager / Quality Gatekeeper
 Applies To: All VIBE-M projects, series, and tracks
 
@@ -29,7 +29,7 @@ Manager는 판단하고, 차단하고, 통과시키는 존재다.
 
 3. Pure Input Principle
    - 가사 입력 규격은 **LYRICS.md §2**를 따른다 (SSOT)
-   - 요약: 순수 가창 텍스트 + 구조 태그 + Performance Cues만 허용
+   - 요약: 순수 가창 텍스트 + 구조 태그 + 구조 직후 1행 `()` 메타만 허용
    - 금지: 설명형 괄호 `(Scene:...)`, 영어 지시문, 씬/감정 설명
    - 모든 연출·스타일 지시는 Style Prompt로 이동
 
@@ -50,17 +50,30 @@ MANAGER.md는 최상위 통제 문서다.
 - MANAGER.md
   - STYLE.md (사운드, 프롬프트, 뮤지컬리티)
   - LYRICS.md (가사 공학, 구조 규칙)
-  - **CLAUDE.md** (작업 워크플로우, txt → concept.md 절차)
+  - **CLAUDE.md** (실행 매뉴얼/요약, SSOT 아님)
   - series/*/*.md (개별 프로젝트 문서)
 
 우선순위 규칙:
 - STYLE.md와 LYRICS.md가 충돌할 경우 → MANAGER.md 판단 우선
 - 문서에 명시되지 않은 판단 → 보수적으로 Fail
-- **작업 절차는 CLAUDE.md § Workflow Rules 참조** (txt 먼저 → 컨펌 → concept.md)
+- **작업 절차 SSOT는 MANAGER.md 본문과 MASTER 문서군이며, CLAUDE.md는 요약/실행 참고용**
 
 ---
 
 ## 🗓️ 3. End-to-End Workflow Control
+
+### Phase 0.5 Track Source-of-Truth Workflow
+
+> 트랙 산출물 반영 절차의 SSOT
+
+1. `track*_lyrics_v*.txt` / `track*_style_v*.txt` / `track*_exclude_v*.txt` 먼저 수정
+2. 사용자 컨펌(PASS) 이후에만 `SERIES/[시리즈]/concept.md` 반영
+3. `txt`(작업중)와 `concept.md`(확정본)를 동시 수정하지 않음
+
+금지:
+- `concept.md` 선반영 후 txt 동기화
+- 컨펌 전 `concept.md` 업데이트
+- txt와 concept 동시 수정
 
 ### Phase 1. Seed & Prompt Review
 
@@ -71,7 +84,7 @@ Manager는 다음 항목을 검토한다.
 - Exclude Style이 3그룹 이내인지
 - Musicality Matrix 적용 여부
 
-### Phase 1.5 Controlled Variation Enforcement — v1.4 NEW
+### Phase 1.5 Controlled Variation Enforcement
 
 > **Controlled Variation Pattern 준수 여부 검증**
 > SSOT: ROLES.md § Controlled Variation Pattern
@@ -106,7 +119,7 @@ Manager는 다음 항목을 검토한다.
 
 > 프롬프트로 100% 안 막히면 QC에서 하드 컷
 
-### Phase 2.5 A/B Testing Protocol — v1.2 NEW
+### Phase 2.5 A/B Testing Protocol
 
 > **문제 재발 시 체계적 디버깅으로 원인 특정**
 > 상세 규칙: STYLE.md §10 참조
