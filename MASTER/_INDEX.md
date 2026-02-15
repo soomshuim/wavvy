@@ -1,6 +1,6 @@
 # MASTER/_INDEX.md — SSOT Router
 
-Version: 1.2
+Version: 1.4
 Last Updated: 2026-02-16
 Purpose: 모든 규칙의 정의와 우선순위를 한 페이지로 정리하는 SSOT 라우터
 
@@ -90,6 +90,8 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 | `PLAYLIST_GUIDE.md` | 플레이리스트 컨셉 | v1.3 |
 | `QUICK_REF.md` | 사람용 매뉴얼 | - |
 | `VIBE-M_Master_Plan.md` | CLI 스펙 | - |
+| `docs/planning/PRD_GPT_LOOP_SIDECAR.md` | GPT 사이드카 제품 요구사항 (비-SSOT) | v0.1 |
+| `docs/planning/IMPLEMENTATION_SPEC_GPT_LOOP_SIDECAR.md` | GPT 사이드카 구현 명세 (비-SSOT) | v0.1 |
 
 ---
 

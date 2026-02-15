@@ -6,6 +6,112 @@
 
 ## 완료된 작업
 
+### 2026-02-16 - GPT Loop M3.5 안정화
+
+- [x] **Soft validation 파싱 내구성 강화**
+  - `tools/llm_loop/rules_soft.py`
+  - fenced block/JSON fragment 파싱 + fallback 기본값(`NEEDS_REWRITE`) 처리
+
+- [x] **Hard rule 체크 확장**
+  - `tools/llm_loop/rules_hard.py`
+  - 추가 항목:
+    - `[chorus]` 반복 여부
+    - 한글 포함 여부
+    - vocal baseline marker(raw/direct/solid) 존재
+    - exclude mandatory harmony guard 포함
+
+- [x] **회귀 검증**
+  - `python3 -m py_compile tools/llm_loop.py tools/llm_loop/*.py`
+  - dry-run 정상
+  - API 키 미설정 시 exit code `2` 정상
+
+### 2026-02-16 - GPT Loop Sidecar M2/M3 1차 구현
+
+- [x] **하드룰 엔진 + 템플릿 렌더러 추가**
+  - `tools/llm_loop/rules_hard.py`
+  - `tools/llm_loop/renderer.py`
+  - 주요 체크: style 길이, 구조태그, pure-input 위반, vocal persona, exclude 개수
+
+- [x] **LLM 호출 및 소프트검증 경로 추가**
+  - `tools/llm_loop/llm_client.py` (OpenAI Chat Completions)
+  - `tools/llm_loop/rules_soft.py`
+  - `tools/llm_loop/cross_series.py` (lite/off/embed 스텁 컨텍스트)
+
+- [x] **run 루프 확장**
+  - `generate -> hard-validate -> revise -> soft-validate`
+  - hard fail 시 revise 반복 (`max-iterations` 한도)
+  - QC 리포트에 hard/soft/revision/verdict 반영
+  - API 키 미설정 시 exit code `2`
+
+- [x] **실행 검증**
+  - `python3 -m py_compile tools/llm_loop.py tools/llm_loop/*.py`
+  - dry-run 정상
+  - non-dry-run (OPENAI_API_KEY 없음) 의도된 실패 동작 확인
+
+### 2026-02-16 - GPT Loop Sidecar M1 구현
+
+- [x] **CLI 엔트리 및 실행 골격 구현**
+  - 생성: `tools/llm_loop.py`
+  - 명령: `run`
+  - 옵션: `--series --track --provider --model --max-iterations --cross-series --dry-run --temperature --seed --output-dir --verbose`
+
+- [x] **핵심 모듈 스켈레톤 구현**
+  - `tools/llm_loop/config.py` (입력 검증)
+  - `tools/llm_loop/loader.py` (시리즈 컨텍스트 로드)
+  - `tools/llm_loop/versioning.py` (버전 증가/덮어쓰기 방지)
+  - `tools/llm_loop/reporter.py` (run summary + QC 리포트)
+
+- [x] **M1 검증**
+  - dry-run 성공:
+    - `python3 tools/llm_loop.py run --series PM_0900 --track 7 --provider openai --dry-run`
+  - write-path 성공(임시 output-dir):
+    - `_llm` 4종 파일 생성 + QC 리포트 출력 확인
+
+### 2026-02-16 - GPT Loop 템플릿 퍼소나/역할 근간 반영
+
+- [x] **llm_loop 프롬프트 5종 고도화**
+  - 파일:
+    - `MASTER/prompts/llm_loop/generate_lyrics.md`
+    - `MASTER/prompts/llm_loop/generate_style.md`
+    - `MASTER/prompts/llm_loop/generate_exclude.md`
+    - `MASTER/prompts/llm_loop/validate_soft.md`
+    - `MASTER/prompts/llm_loop/revise.md`
+  - 반영:
+    - 작사가 + 작곡가 + 프로젝트 매니저 퍼소나 스택
+    - Seed/Variation/Manager 역할을 템플릿 근간으로 명시
+    - Hard requirements / Anti-pattern / Recommendation 출력 강화
+
+### 2026-02-16 - GPT Loop Sidecar 구현 명세서 작성
+
+- [x] **구현 명세 문서 추가**
+  - 생성: `docs/planning/IMPLEMENTATION_SPEC_GPT_LOOP_SIDECAR.md`
+  - 포함: 파일 구조, 모듈 책임, CLI 인자, 환경변수, 입출력 스키마, exit code
+  - 구현 마일스톤(M1~M5) 및 DoD 정의
+
+- [x] **프롬프트 템플릿 위치 고정 + 골격 파일 생성**
+  - 경로: `MASTER/prompts/llm_loop/`
+  - 파일:
+    - `generate_lyrics.md`
+    - `generate_style.md`
+    - `generate_exclude.md`
+    - `validate_soft.md`
+    - `revise.md`
+
+- [x] **문서 라우터 업데이트**
+  - `MASTER/_INDEX.md` v1.3
+  - 비-SSOT 참고 문서에 Sidecar PRD/Implementation Spec 등록
+
+### 2026-02-16 - GPT Loop Sidecar PRD 작성 (플래닝)
+
+- [x] **LLM 검증/개선 루프 PRD 초안 문서화**
+  - 문서 생성: `docs/planning/PRD_GPT_LOOP_SIDECAR.md`
+  - 목표: 기존 워크플로우 불변 상태에서 GPT API 옵션형 루프 추가
+  - 통합점: `track*_lyrics/style/exclude` 산출물을 기존 1단계 입력물로 생성
+  - 불변 조건: `concept.md` 자동 반영 금지, 사람 PASS 이후 반영 유지
+  - 버전 정책: `_llm` suffix + 항상 다음 버전 생성(덮어쓰기 금지)
+  - 규칙 전략: Hard(기계검증) / Soft(모델 보조 + 사람 최종판단) 분리
+  - 파일럿 계획: PM_0900 2트랙 기준 KPI(반복횟수/수정량/비용) 측정
+
 ### 2026-02-16 - SSOT 정책 정합성 점검 + 문서 운영 규칙 통일
 
 - [x] **SSOT 책임/우선순위 충돌 정리**

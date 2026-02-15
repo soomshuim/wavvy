@@ -51,3 +51,12 @@ Scope: Document alignment for SSOT consistency and spec/code sync
 - No `AGENT.md`/`AGENTS.md` exists inside `vibe-m`.
 - `AGENTS.md` exists in another project: `Project/WDS/AGENTS.md`.
 - No direct instruction-file conflict detected for `vibe-m`.
+
+---
+HANDOFF: Codex -> Claude
+Date: 2026-02-16 03:55:00
+Project: /Users/zen/Project/vibe-m
+Agent: Codex
+Summary: GPT Loop Sidecar 설계(PRD/구현명세)부터 M1~M3.5 구현(템플릿 퍼소나 강화, hard/soft 검증, revise 루프, OpenAI 호출, 버전/리포트 체계)까지 반영 완료. 기본 모델은 gpt-5.2로 설정.
+Next-TODO: OPENAI_API_KEY 설정 환경에서 실제 시리즈 트랙 1~2개 파일럿 실행 후 hard rule 임계값 튜닝.
+Commits: pending

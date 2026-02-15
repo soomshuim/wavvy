@@ -6,12 +6,79 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **GPT Loop Sidecar PRD 초안 작성 (기존 구조 불변)**
+  - 문서: `docs/planning/PRD_GPT_LOOP_SIDECAR.md`
+  - 범위: 가사/Style/Exclude 생성의 `generate -> validate -> revise` 옵션형 루프
+  - 원칙: SSOT 문서/기존 승인 절차(`txt -> PASS -> concept`) 유지
+  - 정책: `_llm` suffix + 자동 버전 증가(덮어쓰기 금지)
+  - 리포트: 하드룰/소프트룰 분리 QC 문서 산출
+- **GPT Loop Sidecar 구현 명세서 + 템플릿 위치 고정**
+  - 문서: `docs/planning/IMPLEMENTATION_SPEC_GPT_LOOP_SIDECAR.md`
+  - 범위: 파일별 책임, CLI 인자 계약, 환경변수, exit code, 리포팅 포맷
+  - 프롬프트 경로: `MASTER/prompts/llm_loop/`
+  - 템플릿 5종 추가:
+    - `generate_lyrics.md`
+    - `generate_style.md`
+    - `generate_exclude.md`
+    - `validate_soft.md`
+    - `revise.md`
+- **GPT Loop Sidecar M1 구현 (CLI 골격 + 버전 정책 + dry-run)**
+  - 엔트리: `tools/llm_loop.py`
+  - 모듈: `tools/llm_loop/config.py`, `tools/llm_loop/loader.py`, `tools/llm_loop/versioning.py`, `tools/llm_loop/reporter.py`
+  - 기능:
+    - `python tools/llm_loop.py run ...` 명령 골격
+    - `_llm` 출력 파일 버전 자동 증가
+    - 덮어쓰기 방지
+    - `--dry-run` 실행 경로 및 요약 출력
+  - 참고: 생성/검증 실제 LLM 루프는 M3에서 연결 예정
+- **GPT Loop Sidecar M2/M3 1차 연결**
+  - 모듈 추가:
+    - `tools/llm_loop/rules_hard.py`
+    - `tools/llm_loop/renderer.py`
+    - `tools/llm_loop/llm_client.py`
+    - `tools/llm_loop/rules_soft.py`
+    - `tools/llm_loop/cross_series.py`
+  - `tools/llm_loop.py` 확장:
+    - 템플릿 변수 주입 (`MASTER/prompts/llm_loop/*.md`)
+    - OpenAI 호출 기반 `generate -> hard-validate -> revise -> soft-validate` 루프
+    - hard fail 시 최소수정 revise 재시도 (`max-iterations` 한도)
+    - 최종 verdict 기준 종료 코드 반영 (`READY_FOR_REVIEW`/`NEEDS_REWRITE`)
+  - 검증:
+    - `python3 -m py_compile tools/llm_loop.py tools/llm_loop/*.py`
+    - dry-run 성공
+    - API 키 미설정 시 exit code `2` 확인
+
 ### Changed
+- **GPT Loop 템플릿 고도화 (Persona + 기존 역할 프롬프트 근간 반영)**
+  - 대상: `MASTER/prompts/llm_loop/*.md` 5종
+  - 반영:
+    - 작사가 퍼소나 (가사/후크/언어 선명도)
+    - 작곡가 퍼소나 (에너지 아크/보컬 설계)
+    - 프로젝트 매니저 퍼소나 (게이트/최소수정/판정)
+  - 근간:
+    - Seed/Variation/Manager 역할 규칙 (`ROLES.md`, `MANAGER.md`)
+    - 가사/스타일 SSOT (`LYRICS.md`, `STYLE.md`)
+  - 개선: anti-pattern, hard requirement, recommendation 포맷 강화
+- **GPT Loop M3.5 안정화**
+  - `rules_soft.py` JSON 파싱 내구성 강화
+    - fenced code block/중간 JSON 추출/fallback 처리
+    - 비정상 응답 시 `NEEDS_REWRITE` 안전 기본값 적용
+  - `rules_hard.py` 체크 확장
+    - chorus 반복 섹션 확인
+    - 한글 포함 여부 확인
+    - vocal baseline marker(raw/direct/solid) 확인
+    - exclude mandatory harmony guard 포함 여부 확인
 - **SSOT 정책 및 문서 메타 포맷 정합성 정리**
   - `MASTER` 기준으로 SSOT 책임/우선순위/워크플로우 문구 충돌 해소
   - Style Prompt 길이 기준을 `900자 (공백 포함 문자)`로 통일
   - `CLAUDE.md`를 비-SSOT 실행 매뉴얼로 정렬하고 `MANAGER.md` 참조로 통일
   - 문서 헤더 메타(`Version`, `Last Updated`, `Purpose`) 포맷 통일 및 날짜 동기화
+- **MASTER/_INDEX.md v1.3 갱신**
+  - 비-SSOT 문서 참조에 GPT Sidecar PRD/구현 명세 추가
+- **PRD/명세 문서 경로 분리 (MASTER → docs/planning)**
+  - SSOT 운영 경계 유지 목적
+  - `_INDEX`, `SESSION`, `CHANGELOG` 참조 경로 동기화
 
 ### Added
 - **PM_0900 "밤산책" 시리즈 패키징 완료**
