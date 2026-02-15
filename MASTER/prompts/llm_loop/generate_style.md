@@ -1,5 +1,5 @@
 # Template: generate_style
-Version: 1.1
+Version: 1.2
 Purpose: Style prompt proposal aligned with Seed DNA and slot rules
 
 ## Base Prompt DNA (Existing Project Roles)
@@ -31,8 +31,18 @@ Purpose: Style prompt proposal aligned with Seed DNA and slot rules
 2. Do not modify Seed core constants.
 3. Explicit Vocal Persona required (gender + tone + delivery).
 4. Keep controlled variation (minimum 2 variable slots, no seed rewrite).
-5. Prioritize Harmony Guard and role clarity over exclude overgrowth.
-6. Output style prompt text only.
+5. Insert mandatory safety lines exactly as written below (verbatim):
+`Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.`
+`Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.`
+`No EDM vocal processing (no vocoder, no vocal chops, minimal autotune).`
+6. Insert Energy Permission block exactly as written below (verbatim):
+`Energy Permission:`
+`Chorus vocal may be delivered with stronger intensity or light belt.`
+`Higher register emphasis is encouraged.`
+`Natural vocal strain allowed.`
+`Energy increase must come from vocal delivery, not harmony layers.`
+7. Prioritize Harmony Guard and role clarity over exclude overgrowth.
+8. Output style prompt text only.
 
 ## Anti-Patterns (Reject and Regenerate)
 - Missing Vocal Persona.

@@ -50,6 +50,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     - API 키 미설정 시 exit code `2` 확인
 
 ### Changed
+- **GPT Loop 프롬프트 M1.1 하드게이트 정합성 강화 (SSOT 강제)**
+  - 대상:
+    - `MASTER/prompts/llm_loop/generate_lyrics.md`
+    - `MASTER/prompts/llm_loop/generate_style.md`
+    - `MASTER/prompts/llm_loop/validate_soft.md`
+  - 반영:
+    - 가사 템플릿: 구조 태그 직후 `()` 메타 1행 필수, K1-K3(2개 이상 No 시 재작성) 하드게이트화
+    - 스타일 템플릿: Harmony Guard 2줄 + EDM 금지 1줄 + Energy Permission 블록 verbatim 강제
+    - 검증 템플릿: S1-S12 테이블 누락/미통과 시 `NEEDS_REWRITE`, K1-K3 하드 판정 필드 추가
 - **GPT Loop 템플릿 고도화 (Persona + 기존 역할 프롬프트 근간 반영)**
   - 대상: `MASTER/prompts/llm_loop/*.md` 5종
   - 반영:

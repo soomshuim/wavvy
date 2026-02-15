@@ -6,6 +6,20 @@
 
 ## 완료된 작업
 
+### 2026-02-16 - GPT Loop 프롬프트 M1.1 하드게이트 강화
+
+- [x] **SSOT 하드 규칙을 템플릿에 직접 강제**
+  - `MASTER/prompts/llm_loop/generate_lyrics.md`
+    - 구조 태그 직후 `()` 메타 라인 필수
+    - K1-K3를 인식 수준에서 하드게이트로 승격 (2개 이상 No 시 재작성)
+  - `MASTER/prompts/llm_loop/generate_style.md`
+    - Harmony Guard 2줄 + EDM 금지 1줄 verbatim 강제
+    - Energy Permission 블록 verbatim 강제
+  - `MASTER/prompts/llm_loop/validate_soft.md`
+    - 입력에 `s1_s12_validation_table` 추가
+    - S1-S12 누락/12-12 미통과 시 `NEEDS_REWRITE`
+    - K1-K3 하드게이트 및 `hard_gates` 출력 필드 추가
+
 ### 2026-02-16 - GPT Loop M3.5 안정화
 
 - [x] **Soft validation 파싱 내구성 강화**
