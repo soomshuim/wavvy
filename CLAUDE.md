@@ -374,10 +374,18 @@ Step 3. 결과 QC 후 파라미터 조정 필요 시 기록
 □ Style Prompt <= 900자 (공백 포함 문자)
 □ Title에 이모지/해시태그 없음
 □ Description 해시태그는 구분선(---) 아래에만
+□ Description 저작권 표기 포함 (해시태그 뒤, "All tracks ~" 앞) ← v2.13.3 NEW
 □ Pinned comment 이모지 ≤ 1개
 □ SSOT version 명시됨
 □ Cross-Series 겹침 없음 (SERIES/ 전체 concept.md 장소+감정+상황 3축 대조) ← v2.11 NEW
 ```
+
+**Description 저작권 표기 (필수):**
+```
+🎵 Music: soomshuim
+Copyright Ⓒ soomshuim. All rights reserved.
+```
+→ 해시태그 뒤, "All tracks feature Korean lyrics." 앞에 배치
 
 **FAIL 시:** 해당 항목 수정 후 재검증
 
