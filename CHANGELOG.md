@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **AM_0600 패키징 사전 정리 및 영상 합성 준비**
+  - `SERIES/AM_0600/input/` 구조 정리(`track/`, `loop.mp4`, `loop4.mp4`, 썸네일 소스)
+  - 트랙 파일명 표준화: `NN__Title__Mood__Genre__BPM.wav` (01~10)
+  - `SERIES/AM_0600/work/norm_tracks/` 생성 및 `norm_01..10` 정규화 산출
+  - 1~10 트랙 2회 반복 플레이리스트 영상 생성(`output/final.mp4`, `final_youtube.mp4`)
+  - 중간 산출물 정리: concat 목록/중간 WAV를 `work/`로 이동
+
 - **AM_0600 Track 06-10 최종 정리 + 시각 컨셉 준비**
   - `SERIES/AM_0600/concept.md`를 Track 01-10 통합본으로 확정
   - Track 06 `Moving`, Track 07 `Wake Up`, Track 08 `Kitchen Light`, Track 09 `Unfold`, Track 10 `Settle Down` 상태/제목/본문 반영
