@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **AM_0600 Track 06-10 최종 정리 + 시각 컨셉 준비**
+  - `SERIES/AM_0600/concept.md`를 Track 01-10 통합본으로 확정
+  - Track 06 `Moving`, Track 07 `Wake Up`, Track 08 `Kitchen Light`, Track 09 `Unfold`, Track 10 `Settle Down` 상태/제목/본문 반영
+  - Track 10 보컬 페르소나를 `male`로 통일(lyrics meta + style + exclude 정합)
+  - Track 1~9 txt 작업본 정리 후 Track 10 txt(`lyrics/style/exclude`)만 유지
+  - Fast Lo-fi 루브릭 v1.2에 웹 리서치 근거 섹션 추가 및 레퍼런스 링크 정리
+  - YouTube 루프 제작 전 단계로 Freepik용 6AM 일러스트 컨셉/프롬프트 확정
+
 ### Added
 - **GPT Loop Sidecar PRD 초안 작성 (기존 구조 불변)**
   - 문서: `docs/planning/PRD_GPT_LOOP_SIDECAR.md`

@@ -1,6 +1,6 @@
 # Fast Lo-fi Genre Rubric
 
-Version: 1.1
+Version: 1.2
 Last Updated: 2026-02-16
 Purpose: Fast Lo-fi 장르 적합성 평가 루브릭
 Scope: 장르가 Fast Lo-fi인 트랙의 Seed Design / Variation Design QA
@@ -17,6 +17,27 @@ Fail Criteria: 80점 미만 (재디자인 필수)
 
 ---
 
+## Evidence Basis (v1.2 추가)
+
+이 루브릭은 내부 Track 01 캘리브레이션만이 아니라 아래 외부 근거를 함께 사용한다.
+
+1. Lo-fi 기본 성향:
+   - lo-fi hip hop은 일반적으로 60-90 BPM의 느린 템포, 재즈 성향 코드, 질감 중심 미니멀 편성으로 설명됨.
+2. Fast 축 근거:
+   - house 계열의 대표 템포는 대체로 115-130 BPM.
+3. 운동 몰입 근거:
+   - 운동 음악 연구/가이드에서 중간-빠른 템포(예: 120-140 BPM, 또는 120-130/150-160 비교)가 동기/몰입/퍼포먼스에 유의미한 영향을 보인다는 보고가 다수 존재.
+
+따라서 AM_0600의 Fast Lo-fi는
+`lo-fi texture(질감)` + `house-range drive(115-130)` + `workout-useful tempo zone(120-140 참조)`를 결합한 프로젝트 하이브리드로 정의한다.
+
+운영 범위 110-130은 다음 이유로 유지한다:
+- 하한 110: 워밍업/안정 구간 확보
+- 중심 122-128: 추진력과 lo-fi 질감의 균형점
+- 상한 130: 과도한 EDM화 방지
+
+---
+
 ## 트랙1 캘리브레이션 기준 (PASS Baseline)
 
 > 기준 트랙: `SERIES/AM_0600/track01_*` (Concrete Morning, PASS)
@@ -29,7 +50,7 @@ Fail Criteria: 80점 미만 (재디자인 필수)
 - 목표 길이 명시 (`target runtime over 3 minutes`)
 - Exclude 8개 이내 + 하모니/팔세토 금지군 포함
 
-이 기준을 v1.1의 1차 PASS 레퍼런스로 사용한다.
+이 기준은 외부 근거 위에서 동작하는 프로젝트 내부 1차 PASS 레퍼런스로 사용한다.
 
 ---
 
@@ -212,3 +233,23 @@ Verdict: PASS / FAIL
 
 - 2026-02-16: v1.0 초안 작성
 - 2026-02-16: v1.1 트랙1 PASS 캘리브레이션 반영 (Hard Gates + 샘플 채점 + QC 템플릿)
+- 2026-02-16: v1.2 웹 리서치 근거 반영 (lo-fi/house/workout tempo evidence basis 추가)
+
+---
+
+## References (Web Research, v1.2)
+
+- Native Instruments Blog, "Making lo-fi hip hop beats: the essential guide for beginners" (lo-fi 템포/질감 설명)
+  - https://blog.native-instruments.com/lo-fi-hip-hop/
+- Native Instruments Blog, "Understanding genre through instruments" (lo-fi 정의/질감)
+  - https://blog.native-instruments.com/understanding-genre/
+- Wikipedia, "Lofi hip-hop" (특성/다운템포 성향 개요)
+  - https://en.wikipedia.org/wiki/Lofi_hip-hop
+- Wikipedia, "House music" (대표 템포 115-130 및 4/4 드럼 특성)
+  - https://en.wikipedia.org/wiki/House_music
+- ACSM, "Music Tempo Guidelines for Exercise" (운동 템포 가이드 출처)
+  - https://acsm.org/bmp-music-tempo-guidelines-exercise/
+- Current Issues in Sport Science (2019), "Effects of synchronous, auditory stimuli on running performance and heart rate" (동기화/퍼포먼스 향상)
+  - https://doi.org/10.15203/CISS_2019.005
+- Journal of Science and Medicine in Sport (2012), "Effects of synchronous music on treadmill running among elite triathletes" (음악 동기화와 시간-소진 개선)
+  - https://doi.org/10.1016/j.jsams.2011.06.003
