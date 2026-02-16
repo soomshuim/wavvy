@@ -1,5 +1,5 @@
 # VIBE-M LYRICS.md
-Version: 2.2.1
+Version: 2.3.0
 Last Updated: 2026-02-16
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
@@ -29,7 +29,10 @@ Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 **금지:**
 - ❌ 설명적 문장
 - ❌ 감정 직접 표출 (사랑해, 슬퍼, 외로워 등)
-- ❌ 영어, 외래어, 메타 표현
+- ❌ 메타 표현 (곡 자체를 설명하는 가사)
+
+**허용:**
+- ✅ 영어, 외래어 (훅/post-chorus 등에서 자연스럽게 사용 가능)
 
 **지향:**
 - ✅ 사물·공간·현상 중심 묘사
