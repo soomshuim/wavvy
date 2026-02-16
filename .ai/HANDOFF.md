@@ -1,6 +1,16 @@
 # HANDOFF Log
 
 ---
+HANDOFF: Claude -> Next
+Date: 2026-02-16 22:00:00
+Project: /Users/zen/Project/vibe-m
+Agent: Claude
+Summary: 전 시리즈 draft_description.txt에 저작권 표기 추가 + 고정 댓글 포맷 표준화 (첫 2줄 고정 + 커스텀 영역)
+Next-TODO: 없음
+Commits: c343da1, c5c4608
+---
+
+---
 HANDOFF: Claude -> Codex
 Date: 2026-02-16 21:24:00
 Project: /Users/zen/Project/vibe-m
