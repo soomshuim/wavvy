@@ -8,6 +8,7 @@
 
 | 작업 | 날짜 |
 |------|------|
+| docs: AM_0600 review fixes + MASTER rule updates (LYRICS 영어허용, BPM 150, description 재작성) | 2026-02-16 |
 | docs: AM_0600 Fast Lo-fi 시리즈 1차 기준 정렬 + rubrics 폴더 구조 이관 | 2026-02-16 |
 | docs: AM_0600 Track 06-10 확정 + concept.md 01-10 통합 + Track10 male 정합 | 2026-02-16 |
 | docs: AM_0600 트랙 리네임/정규화 산출 + 2회 반복 영상 렌더 정리 | 2026-02-16 |
