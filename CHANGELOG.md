@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **AM_0600 업로드 메타/썸네일 에셋 미세 조정**
+  - `SERIES/AM_0600/output/draft_description.txt` 생성 및 조회수 고려 문구(검색 키워드/CTA/해시태그) 보정
+  - `SERIES/AM_0600/input/thumb.jpg`, `SERIES/AM_0600/input/thumb.psd` 최신본 반영
+  - `SERIES/AM_0600/input/logo_soomshuim.png` 추가 및 `Reference/logo/playlist.png` 레퍼런스 반영
+  - `SERIES/PM_0900/input/thumb.jpg`, `SERIES/PM_0900/input/thumb.psd` 최신본 동기화
+
 - **AM_0600 패키징 사전 정리 및 영상 합성 준비**
   - `SERIES/AM_0600/input/` 구조 정리(`track/`, `loop.mp4`, `loop4.mp4`, 썸네일 소스)
   - 트랙 파일명 표준화: `NN__Title__Mood__Genre__BPM.wav` (01~10)

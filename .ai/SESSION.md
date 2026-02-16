@@ -11,6 +11,7 @@
 | docs: AM_0600 Fast Lo-fi 시리즈 1차 기준 정렬 + rubrics 폴더 구조 이관 | 2026-02-16 |
 | docs: AM_0600 Track 06-10 확정 + concept.md 01-10 통합 + Track10 male 정합 | 2026-02-16 |
 | docs: AM_0600 트랙 리네임/정규화 산출 + 2회 반복 영상 렌더 정리 | 2026-02-16 |
+| docs: AM_0600 draft_description SEO 미세조정 + 썸네일/로고 에셋 동기화 | 2026-02-16 |
 
 ## 완료된 작업
 
