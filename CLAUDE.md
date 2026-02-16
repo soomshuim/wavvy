@@ -1,6 +1,6 @@
 # Claude Code Instructions - vibe-m
 
-Version: 2.13.0
+Version: 2.13.3
 Last Updated: 2026-02-16
 Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 
@@ -36,7 +36,8 @@ Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 | 현재 상태 | `.ai/SESSION.md` |
 | 인기 사례 분석 PDF | `Reference/유튜브 감성 플레이리스트 인기 사례 분석.pdf` |
 | **Suno 실전 가이드 (필수)** | `Reference/museA_suno_guide.md` |
-| **시티팝 장르 루브릭** | `MASTER/CITYPOP_RUBRIC.md` |
+| **시티팝 장르 루브릭** | `MASTER/rubrics/CITYPOP_RUBRIC.md` |
+| **Fast Lo-fi 장르 루브릭** | `MASTER/rubrics/FAST_LOFI_RUBRIC.md` |
 
 ## Hard Constraints (절대 제약)
 
@@ -64,7 +65,8 @@ Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 | 정규화 작업 | `.ai/lessons-learned.md` | "ffmpeg-normalize 버그" 섹션 |
 | 새 커맨드 추가 | `MASTER/VIBE-M_Master_Plan.md` | CLI 커맨드 명세 |
 | **곡 발음 수정** | `Reference/museA_suno_guide.md` | §7 Cover 기능 |
-| **City Pop 트랙 QA** | `MASTER/CITYPOP_RUBRIC.md` | 전체 (필수) |
+| **City Pop 트랙 QA** | `MASTER/rubrics/CITYPOP_RUBRIC.md` | 전체 (필수) |
+| **Fast Lo-fi 트랙 QA** | `MASTER/rubrics/FAST_LOFI_RUBRIC.md` | 전체 (필수) |
 
 ## Workflow Checklists
 
@@ -91,9 +93,14 @@ Step 4. 메타태그 검증 (v2.8 NEW):
         - (BB) 소괄호 톤지시: 반드시 단독 행에 배치
         - 감정/분위기 태그 발견 시 → Style로 이동
 Step 5. 장르 게이트 (v2.10 NEW):
-        IF genre = City Pop → CITYPOP_RUBRIC.md 실행
+        IF genre = City Pop → rubrics/CITYPOP_RUBRIC.md 실행
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
         → 미달 시 재디자인 (유저 제안 금지)
+        IF genre = Fast Lo-fi → rubrics/FAST_LOFI_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
+        IF genre includes Hip-hop/Rap → LYRICS.md §1.12 H1-H5 실행
+        → H1-H5 중 2개 이상 FAIL 시 재디자인 (유저 제안 금지)
 Step 6. If all pass → output with QC 테이블
         If any fail → 재작성 후 Step 2 반복
         (통과할 때까지 유저에게 제안하지 않음)
@@ -115,7 +122,10 @@ Step 1. Generate Style Prompt (압축 버전)
 Step 2. Run self-QC against checklist (20개 슬롯)
 Step 3. 글자수 검증 (공백 포함 문자 수 기준, <= 900자 확인)
 Step 4. 장르 게이트 (v2.10 NEW):
-        IF genre = City Pop → CITYPOP_RUBRIC.md 실행
+        IF genre = City Pop → rubrics/CITYPOP_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
+        IF genre = Fast Lo-fi → rubrics/FAST_LOFI_RUBRIC.md 실행
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
         → 미달 시 재디자인 (유저 제안 금지)
 Step 5. If all pass → QC 테이블 + 글자수와 함께 output
@@ -180,6 +190,7 @@ Falsetto, Airy, Whisper, ...
 | **1.10** | **Image Density** | **V1=공간, V2=감각 분리 (핵심 이미지 2개 이상 겹침 금지)** |
 | **1.11** | **Chorus Tone** | **직접 호소/명령형 최대 1개, 나머지 관조 톤** |
 | **1.12** | **Cross-Series Independence** | **다른 시리즈 concept.md와 장소+감정+상황 3축 중 2개 이상 겹침 없음** |
+| **H1-H5** | **Hip-hop Flow/Rhyme Gate** | **Hip-hop/Rap일 때만 적용: flow 길이/강세/라임/훅 분리 QC** |
 | 2.1 | Pure Input | 설명형 괄호 금지, 구조 직후 1행 `()` 메타 허용 (Performance Cue 포함) |
 | **2.3** | **메타태그 동작** | **`[AA]`=구조(낭독X), `(BB)`=조건부(톤지시 단독행), 감정태그→Style** |
 | **2.2** | **메타태그 필수** | **LYRICS.md §2.2 SSOT 참조** (구조 태그 + 보컬 메타태그 세트 필수) |
@@ -195,6 +206,7 @@ Section B: QC Validation (각 항목 ✓/✗)
 Section C: Korean Positioning (K1-K3 ✓/✗) ← v1.7 NEW
 Section D: 키워드 축 요약 (이전 트랙과 비교)
 Section E: Cross-Series 겹침 검증 (v2.11 NEW) ← SERIES/ 전체 concept.md 대조
+Section F: Hip-hop Flow/Rhyme (H1-H5 ✓/✗, Hip-hop/Rap일 때만) ← v2.13.1 NEW
 ```
 
 ---
@@ -413,6 +425,7 @@ Step 3. 결과 QC 후 파라미터 조정 필요 시 기록
 
 ### 새 시리즈 프로젝트 생성 시
 - [ ] 디렉토리 구조: `SERIES/[Series_Name]/[YYYY-MM-DD]/`
+- [ ] `SERIES/[Series_Name]/concept.md` 먼저 생성 (시리즈 기준본)
 - [ ] 필수 파일: `input/tracks/*.mp3`, `input/loop.mp4`, `input/thumb.jpg`
 - [ ] 파일명 형식: `NN__Title__Mood__Genre__BPM.mp3`
 
@@ -665,7 +678,9 @@ vibe-m/
 │   ├── MANAGER.md          # 운영 마스터 플랜 (Phase 0~6)
 │   ├── ROLES.md            # 역할 분리 시스템
 │   ├── QUICK_REF.md        # 사람용 운영 매뉴얼
-│   ├── CITYPOP_RUBRIC.md   # 시티팝 장르 루브릭 (≥80점 PASS)
+│   ├── rubrics/
+│   │   ├── CITYPOP_RUBRIC.md   # 시티팝 장르 루브릭 (≥80점 PASS)
+│   │   └── FAST_LOFI_RUBRIC.md # Fast Lo-fi 장르 루브릭 (≥80점 PASS)
 │   └── VIBE-M_Master_Plan.md # CLI 스펙
 │
 ├── SERIES/                 # 시리즈별 프로젝트 (concept.md 기준 위치)
@@ -734,9 +749,10 @@ vibe-m/
 **절차:**
 
 1. **txt 파일 먼저 수정**
-   - `SERIES/[시리즈]/track*_lyrics_v*.txt`
-   - `SERIES/[시리즈]/track*_style_v*.txt`
-   - `SERIES/[시리즈]/track*_exclude_v*.txt`
+   - `SERIES/[시리즈]/trackNN_lyrics.txt`
+   - `SERIES/[시리즈]/trackNN_style.txt`
+   - `SERIES/[시리즈]/trackNN_exclude.txt`
+   - 이전 버전 파일은 남기지 않고 최종본 1세트만 유지
 
 2. **사용자 컨펌 PASS 받음**
    - QC 검증 완료

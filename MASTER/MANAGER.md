@@ -62,11 +62,21 @@ MANAGER.md는 최상위 통제 문서다.
 
 ## 🗓️ 3. End-to-End Workflow Control
 
+### Phase 0.4 New Series Bootstrap
+
+> 신규 시리즈 시작 절차의 SSOT
+
+1. `SERIES/[시리즈]/concept.md`를 먼저 생성해 시리즈 기준본을 고정
+2. 시리즈 운영 기준(BPM 범위/장르 게이트/트랙 상태)을 concept에 먼저 기록
+3. 트랙 산출물(`trackNN_*.txt`) 작업은 그 다음 진행
+
+---
+
 ### Phase 0.5 Track Source-of-Truth Workflow
 
 > 트랙 산출물 반영 절차의 SSOT
 
-1. `track*_lyrics_v*.txt` / `track*_style_v*.txt` / `track*_exclude_v*.txt` 먼저 수정
+1. `trackNN_lyrics.txt` / `trackNN_style.txt` / `trackNN_exclude.txt` 먼저 수정 (버전 넘버링 사용 안 함)
 2. 사용자 컨펌(PASS) 이후에만 `SERIES/[시리즈]/concept.md` 반영
 3. `txt`(작업중)와 `concept.md`(확정본)를 동시 수정하지 않음
 

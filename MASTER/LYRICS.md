@@ -1,5 +1,5 @@
 # VIBE-M LYRICS.md
-Version: 2.2.0
+Version: 2.2.1
 Last Updated: 2026-02-16
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
@@ -343,6 +343,35 @@ Chorus에서 직접적인 명령/호소 표현은 1회 청취에는 강렬하지
 **적용 규칙:**
 - Chorus 4행 중 직접 호소/명령형은 **최대 1개**
 - 나머지는 관조/묘사 톤 유지
+
+---
+
+### 1.12 Hip-hop Flow/Rhyme Gate (조건부 장르 게이트)
+
+> **장르가 Hip-hop/Rap 계열일 때만 적용한다.**
+> Lo-fi, Ballad, City Pop 등 비랩 트랙에는 강제하지 않는다.
+
+**핵심 원칙:**
+- 랩 느낌을 쓸 때는 문장 길이/강세/운율이 박자 위에서 자연스럽게 굴러야 한다.
+- 라임은 "있어 보이는 단어 반복"이 아니라, 귀에 들리는 끝소리 패턴으로 설계한다.
+
+**H1-H5 체크리스트 (Hip-hop/Rap 전용):**
+| # | 항목 | PASS 조건 |
+|---|------|----------|
+| H1 | Flow Length Consistency | 4행 기준 각 행 길이 편차가 과도하지 않음 (읽을 때 한 호흡에 수렴) |
+| H2 | Stress Landing | 각 행의 강세 단어가 킥/스네어 포인트와 충돌하지 않음 |
+| H3 | End Rhyme Scheme | 섹션 내 최소 2행 이상 끝소리 라임 형성 (AAAB, AABB, ABAB 등) |
+| H4 | Internal Rhyme/Alliteration | 섹션당 최소 1회 내부 라임 또는 두운 사용 |
+| H5 | Hook Distinction | Hook/Chorus는 벌스보다 단순하고 즉시 기억 가능해야 함 |
+
+**FAIL 조건:**
+- H1-H5 중 2개 이상 FAIL
+- 끝단어 단순 반복만 있고 실제 운율 변화가 없는 경우
+- 랩인데 문장 길이 편차가 커서 박자 낭독이 자주 무너지는 경우
+
+**운영 규칙:**
+- Hip-hop/Rap 트랙 산출물에는 QC에 `H1-H5` 결과를 별도 표기로 남긴다.
+- PASS 전에는 "힙합 느낌"으로 확정 제안하지 않는다.
 
 ---
 

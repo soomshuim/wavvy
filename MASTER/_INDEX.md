@@ -1,6 +1,6 @@
 # MASTER/_INDEX.md — SSOT Router
 
-Version: 1.4
+Version: 1.7
 Last Updated: 2026-02-16
 Purpose: 모든 규칙의 정의와 우선순위를 한 페이지로 정리하는 SSOT 라우터
 
@@ -38,6 +38,8 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 | **타이틀 생성** | `PLAYLIST_GUIDE.md` | §0 | 참조만 |
 | **작업 절차/운영 게이트** | `MANAGER.md` | §2-3 | `CLAUDE.md`는 요약/매뉴얼 |
 | **txt→컨펌→concept 반영 절차** | `MANAGER.md` | §3 Phase 0.5 | `CLAUDE.md`는 요약/참조 |
+| **City Pop 장르 게이트** | `rubrics/CITYPOP_RUBRIC.md` | 전체 | 장르가 City Pop일 때만 적용 |
+| **Fast Lo-fi 장르 게이트** | `rubrics/FAST_LOFI_RUBRIC.md` | 전체 | 장르가 Fast Lo-fi일 때만 적용 |
 
 ---
 
@@ -84,8 +86,10 @@ CLAUDE.md = 사용 매뉴얼 (SSOT 아님, 요약만)
 |------|------|----------|
 | `MANAGER.md` | 운영/QC 최상위 통제 | v1.5 |
 | `STYLE.md` | Style Prompt 규격 | v2.8 |
-| `LYRICS.md` | 가사 입력 규격 | v2.2.0 |
+| `LYRICS.md` | 가사 입력 규격 | v2.2.1 |
 | `ROLES.md` | 역할 분리/검증표 | v1.9 |
+| `rubrics/CITYPOP_RUBRIC.md` | City Pop 장르 게이트 | v1.0 |
+| `rubrics/FAST_LOFI_RUBRIC.md` | Fast Lo-fi 장르 게이트 | v1.1 |
 | `24H_UNIVERSE.md` | 세계관 Bible | v1.0 |
 | `PLAYLIST_GUIDE.md` | 플레이리스트 컨셉 | v1.3 |
 | `QUICK_REF.md` | 사람용 매뉴얼 | - |

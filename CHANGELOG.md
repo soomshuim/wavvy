@@ -50,6 +50,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     - API 키 미설정 시 exit code `2` 확인
 
 ### Changed
+- **AM_0600 Fast Lo-fi 시리즈 1차 운영 기준 정렬 + 루브릭 구조 확장**
+  - 신규 시리즈 기준본 생성: `SERIES/AM_0600/concept.md` (concept 선행 생성 규칙 반영)
+  - Track 01 산출물 정렬:
+    - `track01_lyrics.txt` 구조 확장 (verse 3개 + intro/pre-chorus/interlude/bridge/instrumental/outro)
+    - `track01_style.txt` 선두 `Articulation` 고정 + 3분 이상 전개 지시 반영
+    - `track01_exclude.txt` 최종본 유지
+  - 문서 규칙 보강:
+    - `MASTER/LYRICS.md` v2.2.1: Hip-hop 조건부 H1-H5 게이트 추가
+    - `MASTER/MANAGER.md`: 신규 시리즈 부트스트랩(Phase 0.4), 무버전 txt 정책 반영
+  - 루브릭 체계 개편:
+    - `MASTER/rubrics/` 폴더 신설
+    - `CITYPOP_RUBRIC.md`, `FAST_LOFI_RUBRIC.md` 경로 이관
+    - `FAST_LOFI_RUBRIC.md` v1.1: Track 01 PASS 캘리브레이션(87/100), Hard Gates, QC 템플릿 추가
+  - 라우터/매뉴얼 경로 동기화:
+    - `MASTER/_INDEX.md` v1.7
+    - `CLAUDE.md` v2.13.3
 - **GPT Loop 프롬프트 M1.1 하드게이트 정합성 강화 (SSOT 강제)**
   - 대상:
     - `MASTER/prompts/llm_loop/generate_lyrics.md`
