@@ -1,6 +1,6 @@
 # 24H UNIVERSE — Master Project Bible
-Version: 1.0
-Last Updated: 2026-02-16
+Version: 1.1
+Last Updated: 2026-02-21
 Purpose: Production-ready framework for time-based emotional music stations
 
 ---
@@ -63,7 +63,7 @@ DNA (불변) + Slots (가변) = Station Identity
 
 ---
 
-### 2.2 Time Station Table (10 Stations)
+### 2.2 Time Station Table (11 Stations)
 
 | Station | Time | Emotional Tone | BPM | Key Bucket | Slot A (Lead) | Slot B (Rhythm) | Chorus Expansion | Vocal Persona | Exclude Strategy |
 |---------|------|----------------|-----|------------|---------------|-----------------|------------------|---------------|------------------|
@@ -71,6 +71,7 @@ DNA (불변) + Slots (가변) = Station Identity
 | **여명** | 04:00 | 고독, 여백, 숨 | 70-76 | Bucket 1 (Warm Minor) | Felt Piano, Nylon Guitar | Soft brush, Minimal perc | +String pad, +Wide stereo | Male (Baritone) | Cheerful, Dance, Synth-heavy |
 | **기상** | 07:00 | 시작, 담담, 준비 | 78-84 | Bucket 3 (Soft Major) | Acoustic Guitar, Piano | Light kit, Shaker | +Full drums, +Bass fill | Female (Alto) | Heavy, Dark, Aggressive |
 | **출근길** | 08:30 | 이동, 흐름, 몰입 | 82-88 | Bucket 5 (Neutral) | Electric Piano, Muted Guitar | Drum machine, Hi-hat loop | +Synth bass, +Ride cymbal | Male (Tenor) | Slow, Ballad, Orchestral |
+| **업무시간** | 10:00 | 지속, 루틴, 차분 | 78-95 | Bucket 5 (Neutral) | Rhodes, Jazz Guitar | Crisp jazzy drums, Swing | +Warm saturation, +Upright bass | Alternating (F/M) | Dusty, Muffled, Prominent vocals |
 | **오후햇살** | 14:00 | 나른, 따뜻, 멍 | 72-78 | Bucket 3 (Soft Major) | Vibraphone, Soft Synth | Laid-back groove, Brush | +Pad layer, +Warm bass | Female (Mezzo) | Cold, Dark, Intense |
 | **퇴근길** | 18:30 | 해방, 전환, 안도 | 80-86 | Bucket 4 (Bittersweet) | Jazz Guitar, Rhodes | Swing feel, Rim shot | +Walking bass, +Horn stab | Male (Baritone) | Sad, Heavy, Minimal |
 | **저녁노을** | 19:30 | 그리움, 회상, 아련 | 68-74 | Bucket 1 (Warm Minor) | Acoustic Piano, Cello | Soft kit, Timpani roll | +String swell, +Reverb bloom | Female (Soprano) | Upbeat, Bright, Electronic |
@@ -445,11 +446,11 @@ Group 3 (Station):  Cold, Dark, Intense, Heavy
 │   • Chorus = arrangement expansion only             │
 │   • Exclude base: Airy/Falsetto/Harmonized/Backing  │
 ├─────────────────────────────────────────────────────┤
-│ 10 Stations:                                        │
+│ 11 Stations:                                        │
 │   02:00 새벽잠    04:00 여명      07:00 기상       │
-│   08:30 출근길    14:00 오후햇살  18:30 퇴근길     │
-│   19:30 저녁노을  21:00 밤산책    23:30 불면       │
-│   04:30 새벽끝                                      │
+│   08:30 출근길    10:00 업무시간  14:00 오후햇살   │
+│   18:30 퇴근길    19:30 저녁노을  21:00 밤산책     │
+│   23:30 불면      04:30 새벽끝                      │
 ├─────────────────────────────────────────────────────┤
 │ Key Buckets:                                        │
 │   1. Warm Minor (F-/Eb-)   2. Cool Minor (A-/B-)   │

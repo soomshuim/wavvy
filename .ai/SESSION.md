@@ -2,12 +2,59 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-16
+> Last updated: 2026-02-18
+
+## 진행 중: 채널 브랜딩 리뉴얼
+
+### 결정 사항
+
+**1. 기존 콘텐츠 처리**
+- 기존 롱폼/숏폼 → 비공개 전환 → 새 영상 업로드 후 삭제
+- 2.5K 성공작 포함 전체 리셋 (초기 단계라 브랜드 일관성 우선)
+- YouTube 중복 판정 우려 없음 (음원 같아도 영상 다르면 OK)
+
+**2. 시간 표기**
+- 24시간제 채택: `04:00`, `06:00`, `14:00`, `16:00`, `18:00`, `21:00`
+- AM/PM 표기 폐기
+
+**3. 썸네일 디자인**
+- 요소: `Playlist,` (Pacifico) + 시간 (산세리프) — 2요소만
+- 로고 없음 (영상 인트로에서 노출)
+- 하단 영문 문구 → 썸네일에서 제거, 인트로로 이동
+- 레이아웃: 상단 배치 선호 (시안 2번 스타일)
+
+**4. 롱폼 영상**
+- 인트로: 브랜딩 로고 애니메이션 3-5초 (Canva Pro로 제작 중)
+- 본편: 우상단 로고 워터마크만
+- 가사 자막 없음
+
+**5. 숏폼**
+- 텍스트 0 (Lo-fi girl 스타일)
+- 제목/설명란으로만 정보 전달
+
+**6. 브랜딩 문구 (인트로용)**
+```
+From the stillness of dawn to the ease of evening —
+may you find a song here that belongs to this moment you're living in.
+```
+
+### TODO
+- [ ] Canva Pro에서 로고 핸드라이팅 애니메이션 완성 (투명 배경)
+- [ ] 시안 2번 스타일로 썸네일 6개 제작 (시리즈별)
+- [ ] vibem.py에 인트로 자동 삽입 기능 추가
+- [ ] 새 영상 업로드 → 기존 비공개 → 2주 후 삭제
+
+### 참고 자료
+- 썸네일 시안: `~/Desktop/thumb.jpg`, `~/Desktop/thumb2.jpg`
+- 로고 PNG: 있음 (Soomshuim)
+
+---
 
 ## 완료된 작업 테이블 (record)
 
 | 작업 | 날짜 |
 |------|------|
+| feature: AM_1000 Chillhop 시리즈 + CHILLHOP_RUBRIC + RUBRICS_CREATION_PROCESS 신설 | 2026-02-21 |
 | docs: 고정 댓글 포맷 표준화 + 저작권 표기 추가 | 2026-02-16 |
 | docs: AM_0600 review fixes + MASTER rule updates (LYRICS 영어허용, BPM 150, description 재작성) | 2026-02-16 |
 | docs: AM_0600 Fast Lo-fi 시리즈 1차 기준 정렬 + rubrics 폴더 구조 이관 | 2026-02-16 |

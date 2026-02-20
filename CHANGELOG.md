@@ -6,7 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **AM_1000 "업무시간" Chillhop 시리즈 신설**
+  - Track 01 "오전" 완료 (Korean Chillhop, buried vocals, 85 BPM, D minor)
+  - concept.md + track01_lyrics/style/exclude.txt 생성
+  - Intro = instrumental only 규칙 적용
+
+- **CHILLHOP_RUBRIC.md v1.2 신설**
+  - Evidence Basis (웹 리서치 3개 소스) 포함
+  - 6-Factor 100점 체계 + Phase 0 Hard Gates 7개
+  - Lo-fi vs Chillhop 차이 명시 (dusty→crisp, 60-90→78-105 BPM)
+  - Track 01 실험 결과 반영 (Intro instrumental, buried vocal 강화)
+
+- **RUBRICS_CREATION_PROCESS.md v1.1 신설**
+  - Research-First 루브릭 생성 워크플로우 문서화
+  - Phase 1-4: 리서치 → 팀협의 → 루브릭설계 → SSOT통합
+  - Calibration Track 필수화 (Team 리뷰 반영)
+
 ### Changed
+- **MANAGER.md v1.6 Phase 0.3 삽입**
+  - New Genre Research 단계 추가 (기존 rubrics 없을 때 필수)
+  - RUBRICS_CREATION_PROCESS.md를 SSOT로 지정
+
+- **_INDEX.md v1.8 SSOT 매트릭스 확장**
+  - Chillhop 장르 게이트 항목 추가
+  - 새 장르 루브릭 생성 항목 추가
+
+- **CLAUDE.md v2.14.0 Auto Reference Rules 확장**
+  - Chillhop 트랙 QA → CHILLHOP_RUBRIC.md
+  - 새 장르 루브릭 생성 → RUBRICS_CREATION_PROCESS.md
+
+- **24H_UNIVERSE.md 10:00 Station 추가**
+  - 업무시간 (Korean Chillhop, buried vocals)
+
 - **AM_0600 업로드 메타/썸네일 에셋 미세 조정**
   - `SERIES/AM_0600/output/draft_description.txt` 생성 및 조회수 고려 문구(검색 키워드/CTA/해시태그) 보정
   - `SERIES/AM_0600/input/thumb.jpg`, `SERIES/AM_0600/input/thumb.psd` 최신본 반영

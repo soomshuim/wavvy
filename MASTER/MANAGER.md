@@ -1,6 +1,6 @@
 # VIBE-M MANAGER.md
-Version: 1.5
-Last Updated: 2026-02-16
+Version: 1.6
+Last Updated: 2026-02-21
 Role: Executive Manager / Quality Gatekeeper
 Applies To: All VIBE-M projects, series, and tracks
 
@@ -61,6 +61,22 @@ MANAGER.md는 최상위 통제 문서다.
 ---
 
 ## 🗓️ 3. End-to-End Workflow Control
+
+### Phase 0.3 New Genre Research (새 장르 시)
+
+> **트리거**: 기존 `rubrics/` 폴더에 해당 장르 루브릭 없을 때
+> **SSOT**: `RUBRICS_CREATION_PROCESS.md`
+
+**절차:**
+1. 웹 리서치 (최소 3개 소스)
+2. 유사 장르와 비교표 작성
+3. Lenny's Team 협의 (선택)
+4. Evidence Basis + 6-Factor 루브릭 작성
+5. SSOT 통합 (rubrics/, _INDEX.md, CLAUDE.md)
+
+**건너뛰기 조건:** 기존 루브릭 존재 시 → 바로 Phase 0.4로
+
+---
 
 ### Phase 0.4 New Series Bootstrap
 

@@ -1,7 +1,7 @@
 # Claude Code Instructions - vibe-m
 
-Version: 2.13.3
-Last Updated: 2026-02-16
+Version: 2.14.0
+Last Updated: 2026-02-21
 Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 
 ## ⚠️ SSOT 경고
@@ -38,6 +38,7 @@ Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 | **Suno 실전 가이드 (필수)** | `Reference/museA_suno_guide.md` |
 | **시티팝 장르 루브릭** | `MASTER/rubrics/CITYPOP_RUBRIC.md` |
 | **Fast Lo-fi 장르 루브릭** | `MASTER/rubrics/FAST_LOFI_RUBRIC.md` |
+| **Chillhop 장르 루브릭** | `MASTER/rubrics/CHILLHOP_RUBRIC.md` |
 
 ## Hard Constraints (절대 제약)
 
@@ -67,6 +68,8 @@ Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 | **곡 발음 수정** | `Reference/museA_suno_guide.md` | §7 Cover 기능 |
 | **City Pop 트랙 QA** | `MASTER/rubrics/CITYPOP_RUBRIC.md` | 전체 (필수) |
 | **Fast Lo-fi 트랙 QA** | `MASTER/rubrics/FAST_LOFI_RUBRIC.md` | 전체 (필수) |
+| **Chillhop 트랙 QA** | `MASTER/rubrics/CHILLHOP_RUBRIC.md` | 전체 (필수) |
+| **새 장르 루브릭 생성** | `MASTER/RUBRICS_CREATION_PROCESS.md` | 전체 (필수) |
 
 ## Workflow Checklists
 
@@ -99,6 +102,9 @@ Step 5. 장르 게이트 (v2.10 NEW):
         IF genre = Fast Lo-fi → rubrics/FAST_LOFI_RUBRIC.md 실행
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
         → 미달 시 재디자인 (유저 제안 금지)
+        IF genre = Chillhop → rubrics/CHILLHOP_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
         IF genre includes Hip-hop/Rap → LYRICS.md §1.12 H1-H5 실행
         → H1-H5 중 2개 이상 FAIL 시 재디자인 (유저 제안 금지)
 Step 6. If all pass → output with QC 테이블
@@ -126,6 +132,9 @@ Step 4. 장르 게이트 (v2.10 NEW):
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
         → 미달 시 재디자인 (유저 제안 금지)
         IF genre = Fast Lo-fi → rubrics/FAST_LOFI_RUBRIC.md 실행
+        → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
+        → 미달 시 재디자인 (유저 제안 금지)
+        IF genre = Chillhop → rubrics/CHILLHOP_RUBRIC.md 실행
         → 총점 ≥ 80 AND 개별 팩터 > 5 → PASS
         → 미달 시 재디자인 (유저 제안 금지)
 Step 5. If all pass → QC 테이블 + 글자수와 함께 output
