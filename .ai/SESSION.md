@@ -2,9 +2,29 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-18
+> Last updated: 2026-02-25
 
-## 진행 중: 채널 브랜딩 리뉴얼
+## 진행 중: AM_1000 "업무시간" 시리즈
+
+### 최근 완료 (2026-02-25)
+- Track 02 "책상" 가사/스타일/exclude 완료 (PASS)
+- 10-track 플랜 확정 (BPM arc 설계)
+- MASTER/STYLE.md §0.7 Filler Sounds Ban 추가
+- PM_0900 Shorts 소스 영상 준비
+
+### 현재 상태
+- Track 01 "오전": 완료
+- Track 02 "책상": 완료
+- Track 03-10: 미정
+
+### 다음 할 일
+- [ ] Track 03-10 가사/스타일 기획
+- [ ] AM_1000 썸네일 디자인 (10:00 시간 표기)
+- [ ] input/loop.mp4, thumb.jpg 준비
+
+---
+
+## 이전: 채널 브랜딩 리뉴얼
 
 ### 결정 사항
 
