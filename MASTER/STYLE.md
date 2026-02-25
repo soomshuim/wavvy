@@ -70,6 +70,37 @@ pop, beat, bass, catchy, upbeat
 - 장르 라벨은 첫 1-2단어로 방향 설정 후
 - 나머지는 악기/프로덕션/보컬 묘사로 채우기
 
+### 0.7 Filler Sounds Ban (추임새 금지)
+
+> **Hip-hop 계열 장르를 제외한 모든 장르에서 추임새 금지**
+
+**금지 대상:**
+```
+eh, uh, hm, ah, oh, yeah, woah, ooh (as filler/ad-lib)
+```
+
+**적용 장르 (금지):**
+- Ballad, R&B Ballad, City Pop, Neo-Soul, Chillhop, Lo-fi, Jazz
+- 기타 Hip-hop 요소가 없는 장르
+
+**예외 장르 (허용):**
+- Hip-hop, Trap, Boom Bap, K-hip-hop
+- 장르명에 "hip-hop" 또는 "rap"이 포함된 경우
+
+**Style Prompt 적용:**
+```
+No filler sounds. No "eh" "uh" "hm" ad-libs. Clean vocal lines only.
+```
+
+**Exclude 적용:**
+```
+Filler sounds, Ad-libs, Vocal ad-libs
+```
+
+**Scat/Humming 예외:**
+- Outro에서 의도적 scat은 허용 가능 (Style에 명시 시)
+- 예: `Outro: scat allowed here only`
+
 ---
 
 ## 1) Core Sound DNA (Project Constant)

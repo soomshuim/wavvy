@@ -2,9 +2,9 @@
 
 > **Korean Chillhop with Buried Vocals**
 >
-> Version: 0.3
-> Last Updated: 2026-02-21
-> Status: Track 01 완료
+> Version: 0.4
+> Last Updated: 2026-02-25
+> Status: Track 01-02 완료
 
 ---
 
@@ -115,13 +115,25 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper
 
 ## Track List
 
-| # | Title | Vocal | BPM | Key | Status |
-|---|-------|-------|-----|-----|--------|
-| 01 | 오전 | Female (Contralto) | 85 | D minor | 완료 |
-| 02 | TBD | Male (Baritone) | - | - | 미정 |
-| 03 | TBD | Female (Alto) | - | - | 미정 |
-| 04 | TBD | Male (Baritone) | - | - | 미정 |
-| 05 | TBD | Female (Alto) | - | - | 미정 |
+| # | Title | Vocal | BPM | Key | Lead Instruments | Status |
+|---|-------|-------|-----|-----|------------------|--------|
+| 01 | 오전 | Female (Contralto) | 85 | D minor | Rhodes, Jazz Guitar | 완료 |
+| 02 | 책상 | Male (Baritone) | 87 | E minor | Wurlitzer, Rhodes | 완료 |
+| 03 | 루틴 | Female (Alto) | 90 | D minor | Jazz Guitar, Rhodes | 미정 |
+| 04 | 흐름 | Male (Baritone) | 90 | E minor | Rhodes, Wurlitzer | 미정 |
+| 05 | 집중 | Female (Alto) | 78 | D minor | Wurlitzer, Jazz Guitar | 미정 |
+| 06 | 타자 | Male (Baritone) | 88 | E minor | Rhodes, Jazz Guitar | 미정 |
+| 07 | 잠깐 | Female (Alto) | 85 | D minor | Jazz Guitar, Wurlitzer | 미정 |
+| 08 | 다시 | Male (Baritone) | 82 | E minor | Rhodes, Wurlitzer | 미정 |
+| 09 | 정리 | Female (Alto) | 85 | D minor | Wurlitzer, Rhodes | 미정 |
+| 10 | 점심전 | Male (Baritone) | 78 | E minor | Jazz Guitar, Rhodes | 미정 |
+
+### BPM 아크
+```
+85 → 87 → 90 → 90 → 78 → 88 → 85 → 82 → 85 → 78
+                     ↑                         ↑
+              Breathing Point              Release
+```
 
 ---
 
@@ -230,10 +242,100 @@ All tracks feature Korean lyrics.
 
 ---
 
+## Track 02: 책상
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming, no ad-libs)
+(Wurlitzer pad, Rhodes accents, crisp jazzy drums fade in)
+
+[verse1]
+(buried vocal, low mix, no filler sounds)
+의자를 당겨 앉아
+모니터 불빛 켜져
+마우스 위에 손을 올려
+하루가 시작돼
+
+커피 향이 번지고
+창문 너머 햇살이
+책상 위를 비춰와
+오늘도 여기서
+
+[chorus]
+(blending into instruments, no ad-libs)
+여기 내 자리야
+매일 앉는 곳
+손끝이 기억해
+이 책상 위를
+
+[interlude]
+(Wurlitzer solo, upright bass groove, 8 bars)
+
+[instrumental]
+(Rhodes pad, drums groove, 8 bars)
+
+[verse2]
+(buried vocal, low mix, no filler sounds)
+키보드 소리 울려
+화면이 밝아지고
+펜을 하나 집어서
+오늘 할 일 적어
+
+포스트잇 한 장 붙여
+달력을 한 번 보고
+시간은 천천히
+앞으로 흘러가
+
+[chorus]
+
+[bridge]
+(minimal, no ad-libs, no humming)
+창밖은 여전하고
+시간은 흘러가
+그래도 여기 있어
+이 자리 위에
+
+[chorus]
+
+[outro]
+(Wurlitzer restates motif, scat vocal allowed here only, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 87 BPM, E minor
+
+Wurlitzer-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, fresh groove. High-fidelity, polished. Morning energy.
+
+Baritone male vocal buried deep in mix, underneath instruments. Heavy ambient reverb, far back. Vocal as texture, not lead.
+
+CRITICAL: No filler sounds, no "eh" "uh" "hm" ad-libs. No humming no scat except outro. Clean lines only.
+
+Intro: Instrumental only, no vocals. Wurlitzer drums only.
+Verse: Wurlitzer melody, vocal behind instruments. No fillers.
+Interlude: Wurlitzer solo 8 bars, bass groove.
+Instrumental: Rhodes pad drums 8 bars.
+Chorus: density increases, bass melodic. Vocal low. No embellishments.
+Bridge: Wurlitzer bass only, vocal minimal.
+Outro: Wurlitzer motif, scat allowed here only, fade.
+
+Single vocal throughout. No harmony no backing no doubles.
+Target runtime over 3 minutes 30 seconds.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Clear articulation, Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune, Filler sounds, Ad-libs, Humming, Scat, Vocal runs, Melisma, Drowsy, Sleepy, Lazy
+```
+
+---
+
 ## TODO
 
 - [x] Track 01 가사/스타일 완료
-- [ ] Track 02-05 가사/스타일 기획
+- [x] Track 02 가사/스타일 완료
+- [ ] Track 03-10 가사/스타일 기획
 - [ ] 썸네일 디자인 (10:00 시간 표기)
 - [ ] Description 완성
 - [ ] input/loop.mp4 준비
