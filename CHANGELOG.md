@@ -7,16 +7,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- **AM_1000 "업무시간" Chillhop 시리즈 신설**
-  - Track 01 "오전" 완료 (Korean Chillhop, buried vocals, 85 BPM, D minor)
-  - concept.md + track01_lyrics/style/exclude.txt 생성
-  - Intro = instrumental only 규칙 적용
+- **AM_1000 미니멀 보컬 Chillhop 방향 전환 + Track 01-04 완료**
+  - 방향: 한국어 미니멀 보컬 Chillhop, 루프 기반 구조
+  - 보컬 A/B/C 타입 시스템: A(4-8줄 한 섹션) / B(1-2줄 만트라) / C(인스트루멘탈+텍스처)
+  - 10곡 → 15곡 확장 (Suno 출력 길이 대응)
+  - concept.md v1.0 전면 재작성 (A×4/B×5/C×6 분배)
+  - Track 01 "오전" (B, Contralto female, 85 BPM, Dm)
+  - Track 02 "책상" (A, Baritone male, 87 BPM, Em)
+  - Track 03 "루틴" (C, girl laughter sample, 90 BPM, D major)
+  - Track 04 "흐름" (B, Baritone male, 90 BPM, Em, vinyl warmth)
+  - 소예_반복20.wav (딸 웃음 20회 반복 WAV, Suno 업로드용)
 
-- **CHILLHOP_RUBRIC.md v1.2 신설**
-  - Evidence Basis (웹 리서치 3개 소스) 포함
-  - 6-Factor 100점 체계 + Phase 0 Hard Gates 7개
+- **CHILLHOP_RUBRIC.md v1.3**
+  - v1.2 신설 (6-Factor 100점, Phase 0 Hard Gates 7개)
+  - v1.3 A/B/C 보컬 타입별 채점 기준 추가
   - Lo-fi vs Chillhop 차이 명시 (dusty→crisp, 60-90→78-105 BPM)
-  - Track 01 실험 결과 반영 (Intro instrumental, buried vocal 강화)
 
 - **RUBRICS_CREATION_PROCESS.md v1.1 신설**
   - Research-First 루브릭 생성 워크플로우 문서화

@@ -1,10 +1,10 @@
 # AM_1000 — 업무시간
 
-> **Korean Chillhop with Buried Vocals**
+> **Korean Chillhop — Minimal Vocals, Loop-based**
 >
-> Version: 0.4
-> Last Updated: 2026-02-25
-> Status: Track 01-02 완료
+> Version: 1.0
+> Last Updated: 2026-02-26
+> Status: 방향 전환 — 전 트랙 리워크
 
 ---
 
@@ -15,7 +15,7 @@
 | **시간** | 10:00 |
 | **Station명** | 업무시간 |
 | **감정톤** | 지속, 루틴, 차분 |
-| **장르** | Korean Chillhop (buried vocals) |
+| **장르** | Korean Chillhop (minimal vocals, loop-based) |
 | **용도** | 오전 업무/작업 중 배경음악 (집중 방해 X) |
 
 ---
@@ -23,10 +23,12 @@
 ## Direction
 
 ```
-"한국어 가사 Chillhop, 보컬이 묻혀서 배경처럼 깔리는 업무용 음악"
+"한국어 미니멀 보컬 Chillhop. 루프 기반, 보컬은 텍스처."
 ```
 
-- 가사가 있지만 악기 속에 묻혀서 텍스처처럼 작용
+- 인스트루멘탈 중심의 클래식 Chillhop 구조
+- 보컬은 3가지 타입으로 최소화 (A/B/C)
+- 루프 기반 전개: 레이어 추가/제거로 섹션 변화
 - 듣는다기보다 깔아두는 음악
 - Jazzy하고 세련된 분위기
 
@@ -55,25 +57,34 @@
 
 ---
 
-## Vocal Strategy (배경화 처리)
+## Vocal Strategy (A/B/C 타입)
+
+### 보컬 타입 시스템
+
+| 타입 | 설명 | 배분 |
+|------|------|------|
+| **A** | 한 섹션만 보컬 (4-8줄), 나머지 인스트루멘탈 | 4 트랙 |
+| **B** | 1-2줄 반복 (만트라/루프) | 5 트랙 |
+| **C** | 거의 인스트루멘탈 + 허밍/스캣 텍스처 | 6 트랙 |
+
+### 공통 규칙
 
 | 항목 | 값 |
 |------|-----|
-| **Persona 교대** | 홀수 트랙: Female (Alto) / 짝수 트랙: Male (Baritone) |
-| **Processing** | Low in mix, buried, ambient reverb, soft |
-| **가사 스타일** | 반복적, 단순, 명상적 (인지 부하 최소화) |
-| **Articulation** | Soft, relaxed (명확한 발음 X → 배경화) |
+| **Persona** | Female (Alto/Contralto) / Male (Baritone) 교대 |
+| **Processing (A/B)** | Buried, low in mix, ambient reverb, soft |
+| **Processing (C)** | 허밍/스캣도 악기처럼 처리, 텍스처 레벨 |
+| **Articulation** | Clear Korean articulation (발음은 명확, 배치만 buried) |
 
-### Vocal Mix 특수 지시
+### Vocal Mix 지시 (A/B 타입)
 
 ```
-Vocals sit low in the mix, almost buried.
-Soft, relaxed delivery. No clear articulation.
-Ambient reverb, blending into instrumental texture.
-Listener should feel vocals as texture, not foreground.
+Vocals buried deep in mix, underneath instruments.
+Heavy ambient reverb, far back in soundstage.
+Vocal as background texture, not lead.
 ```
 
-### Intro 제약 (시리즈 공통)
+### Intro 제약 (전 타입 공통)
 
 > **[Intro] 섹션에서 금지:**
 > - ❌ Humming
@@ -86,6 +97,32 @@ Listener should feel vocals as texture, not foreground.
 > ```
 >
 > **이유:** 업무 시작 시 집중 방해 요소 제거. Intro는 악기만으로 분위기 세팅.
+
+---
+
+## Structure Approach (루프 기반)
+
+> 클래식 Chillhop은 Verse/Chorus 팝 구조가 아닌 **루프 기반 + 레이어 전개**가 표준.
+
+### Type A (한 섹션 보컬)
+```
+[intro] → [loop A] → [vocal section] → [loop B] → [loop A'] → [outro]
+```
+
+### Type B (만트라)
+```
+[intro] → [loop A + mantra] → [loop B] → [loop A + mantra] → [outro]
+```
+
+### Type C (인스트루멘탈)
+```
+[intro] → [loop A] → [loop B] → [loop A'] → [bridge] → [outro]
+```
+
+**공통:**
+- 섹션 전환은 레이어 추가/제거로 자연스럽게 (드라마틱 전환 금지)
+- [interlude], [instrumental] 태그로 인스트루멘탈 구간 확보
+- 목표 런타임: 3분 이상
 
 ---
 
@@ -113,101 +150,45 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper
 
 ---
 
-## Track List
+## Track List (15곡)
 
-| # | Title | Vocal | BPM | Key | Lead Instruments | Status |
-|---|-------|-------|-----|-----|------------------|--------|
-| 01 | 오전 | Female (Contralto) | 85 | D minor | Rhodes, Jazz Guitar | 완료 |
-| 02 | 책상 | Male (Baritone) | 87 | E minor | Wurlitzer, Rhodes | 완료 |
-| 03 | 루틴 | Female (Alto) | 90 | D minor | Jazz Guitar, Rhodes | 미정 |
-| 04 | 흐름 | Male (Baritone) | 90 | E minor | Rhodes, Wurlitzer | 미정 |
-| 05 | 집중 | Female (Alto) | 78 | D minor | Wurlitzer, Jazz Guitar | 미정 |
-| 06 | 타자 | Male (Baritone) | 88 | E minor | Rhodes, Jazz Guitar | 미정 |
-| 07 | 잠깐 | Female (Alto) | 85 | D minor | Jazz Guitar, Wurlitzer | 미정 |
-| 08 | 다시 | Male (Baritone) | 82 | E minor | Rhodes, Wurlitzer | 미정 |
-| 09 | 정리 | Female (Alto) | 85 | D minor | Wurlitzer, Rhodes | 미정 |
-| 10 | 점심전 | Male (Baritone) | 78 | E minor | Jazz Guitar, Rhodes | 미정 |
+| # | Title | Type | Vocal | BPM | Key | Lead Instruments | Status |
+|---|-------|------|-------|-----|-----|-----------------|--------|
+| 01 | 오전 | B | Female (Contralto) | 85 | Dm | Rhodes, Jazz Guitar | 완료 |
+| 02 | 책상 | A | Male (Baritone) | 87 | Em | Wurlitzer, Rhodes | 완료 |
+| 03 | 루틴 | C | — (웃음소리 샘플) | 90 | D major | Jazz Guitar, Rhodes | 완료 |
+| 04 | 흐름 | B | Male (Baritone) | 90 | Em | Rhodes, Wurlitzer | 완료 |
+| 05 | 집중 | C | — | 78 | Dm | Wurlitzer, Jazz Guitar | 미정 |
+| 06 | 알림 | C | — | 83 | Em | Rhodes, Jazz Guitar | 미정 |
+| 07 | 타자 | A | Female (Alto) | 88 | Dm | Rhodes, Jazz Guitar | 미정 |
+| 08 | 잉크 | B | Male (Baritone) | 85 | Em | Jazz Guitar, Wurlitzer | 미정 |
+| 09 | 잠깐 | B | Female (Alto) | 85 | Dm | Jazz Guitar, Wurlitzer | 미정 |
+| 10 | 환기 | C | — | 80 | Em | Rhodes, Wurlitzer | 미정 |
+| 11 | 회의 | B | Male (Baritone) | 87 | Dm | Wurlitzer, Rhodes | 미정 |
+| 12 | 다시 | C | — (스캣) | 82 | Em | Rhodes, Wurlitzer | 미정 |
+| 13 | 정리 | A | Male (Baritone) | 85 | Dm | Wurlitzer, Rhodes | 미정 |
+| 14 | 벽시계 | A | Female (Alto) | 80 | Em | Jazz Guitar, Rhodes | 미정 |
+| 15 | 점심전 | C | — | 78 | Dm | Jazz Guitar, Rhodes | 미정 |
+
+### Type 배분
+```
+A (한 섹션 보컬): Track 02, 07, 13, 14
+B (만트라/루프):  Track 01, 04, 08, 09, 11
+C (인스트루멘탈): Track 03, 05, 06, 10, 12, 15
+```
 
 ### BPM 아크
 ```
-85 → 87 → 90 → 90 → 78 → 88 → 85 → 82 → 85 → 78
-                     ↑                         ↑
-              Breathing Point              Release
+85 → 87 → 90 → 90 → 78 → 83 → 88 → 85 → 85 → 80 → 87 → 82 → 85 → 80 → 78
+                      ↑              ↑                    ↑              ↑
+                 Breathing       Recovery            2nd Wave        Wind Down
 ```
 
----
-
-## Track 01: 오전
-
-### Lyrics
+### 서사 아크 (오전 업무 동선)
 ```
-[intro]
-(instrumental only, no vocals)
-(Rhodes pad, soft jazzy drums fade in)
-
-[verse1]
-(buried vocal, low mix)
-창문 너머 햇살이 비춰와
-커피잔 위로 김이 흩어져
-키보드 위 손끝이 멈춰도
-시간은 계속 흘러
-
-[chorus]
-(soft, blending into instruments)
-오전은 늘 이렇게
-조용히 지나가
-여기 앉아 있으면
-그것만으로 돼
-
-[interlude]
-(Rhodes solo, upright bass groove)
-
-[verse2]
-(buried vocal, low mix)
-모니터 빛이 얼굴에 닿아
-마시던 커피 천천히 식어
-의자에 기대 숨을 내쉬어도
-하루는 계속 흘러
-
-[chorus]
-
-[bridge]
-(minimal, almost whisper)
-할 일은 쌓여 있고
-손은 멈춰 있어
-그래도 괜찮아
-여기 있으니까
-
-[chorus]
-
-[outro]
-(Rhodes restates motif softly, upright bass, fade out)
-```
-
-### Style Prompt
-```
-Korean Chillhop, 85 BPM, D minor
-
-Rhodes-led, supportive. Jazz guitar accents. Upright bass, warm and defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation.
-
-Contralto female vocal. Soft, distant, recessed. Vocals buried deep in mix, underneath instruments. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
-
-Intro: Pure instrumental, absolutely no vocals, no humming, no vocalizations. Rhodes and drums only.
-Verse: Rhodes carries melody, minimal accompaniment, soft vocal sits behind instruments.
-Verse2: slight dynamic lift, natural breath, vocal remains buried.
-Chorus: arrangement density increases, upright bass melodic, drums fill out. Vocal stays low in mix.
-Bridge: stripped to Rhodes and bass, vocal almost whisper.
-Outro: Rhodes restates motif softly, gentle fade.
-
-Lead vocal remains single throughout. No harmony, no backing vocals, no doubles.
-Chorus expansion by arrangement density only.
-
-Target runtime over 3 minutes.
-```
-
-### Exclude
-```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Clear articulation, Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune
+오전(시작) → 책상(자리) → 루틴(일상) → 흐름(몰입) → 집중(깊이)
+→ 알림(중단) → 타자(리듬) → 잉크(필기) → 잠깐(쉼) → 환기(전환)
+→ 회의(이동) → 다시(복귀) → 정리(마무리) → 벽시계(응시) → 점심전(끝)
 ```
 
 ---
@@ -224,12 +205,10 @@ Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Clear articulation
 [작성 예정]
 
 ---
-#lofi #업무용음악 #집중 #playlist #soomshuim
+#chillhop #업무용음악 #집중 #playlist #soomshuim
 
 🎵 Music: soomshuim
 Copyright Ⓒ soomshuim. All rights reserved.
-
-All tracks feature Korean lyrics.
 ```
 
 ### Pinned Comment
@@ -242,91 +221,243 @@ All tracks feature Korean lyrics.
 
 ---
 
-## Track 02: 책상
+## Track 01: 오전
+
+### Suno Parameters
+- Style Influence: 70
+- Weirdness: 30
 
 ### Lyrics
 ```
 [intro]
-(instrumental only, no vocals, no humming, no ad-libs)
-(Wurlitzer pad, Rhodes accents, crisp jazzy drums fade in)
-
-[verse1]
-(buried vocal, low mix, no filler sounds)
-의자를 당겨 앉아
-모니터 불빛 켜져
-마우스 위에 손을 올려
-하루가 시작돼
-
-커피 향이 번지고
-창문 너머 햇살이
-책상 위를 비춰와
-오늘도 여기서
-
-[chorus]
-(blending into instruments, no ad-libs)
-여기 내 자리야
-매일 앉는 곳
-손끝이 기억해
-이 책상 위를
-
-[interlude]
-(Wurlitzer solo, upright bass groove, 8 bars)
+(instrumental only, no vocals, no humming)
 
 [instrumental]
-(Rhodes pad, drums groove, 8 bars)
+(Rhodes melody, jazz guitar, upright bass, swing groove)
 
-[verse2]
-(buried vocal, low mix, no filler sounds)
-키보드 소리 울려
-화면이 밝아지고
-펜을 하나 집어서
-오늘 할 일 적어
+[verse]
+(Contralto female buried deep, ambient reverb, no filler sounds)
+물끄러미 앉아
+볼펜이 굴러가
 
-포스트잇 한 장 붙여
-달력을 한 번 보고
-시간은 천천히
-앞으로 흘러가
+[instrumental]
+(jazz guitar lead, Rhodes chords, upright bass groove)
 
-[chorus]
+[interlude]
+(Rhodes pad, soft drums, breathing space)
 
-[bridge]
-(minimal, no ad-libs, no humming)
-창밖은 여전하고
-시간은 흘러가
-그래도 여기 있어
-이 자리 위에
-
-[chorus]
+[verse]
+(buried vocal, ambient reverb)
+물끄러미 앉아
+볼펜이 굴러가
 
 [outro]
-(Wurlitzer restates motif, scat vocal allowed here only, gentle fade)
+(Rhodes restates motif, instruments fade gently)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 85 BPM, D minor
+
+Rhodes-led, jazz guitar accents. Upright bass warm defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation. Daylight mood.
+
+Contralto female vocal buried deep in mix, underneath instruments. Clear Korean articulation. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
+
+No filler sounds, no ad-libs. Clean vocal lines only.
+
+Intro: Instrumental only, no vocals, no humming.
+Instrumental sections: Rhodes melody, jazz guitar, full groove.
+Verse: brief buried vocal, one mantra phrase, then instruments continue.
+Outro: Rhodes restates motif, gentle fade.
+
+Single vocal throughout. No harmony no backing no doubles.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
+```
+
+## Track 02: 책상
+
+### Suno Parameters
+- Style Influence: 70
+- Weirdness: 30
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming)
+
+[instrumental]
+(Wurlitzer melody, Rhodes accents, upright bass, crisp jazzy drums)
+
+[instrumental]
+(jazz guitar enters, full arrangement, swing groove)
+
+[verse]
+(Baritone male buried deep, clear Korean articulation, ambient reverb, no filler sounds)
+서랍이 안 닫혀
+끼인 게 뭔지 몰라
+꺼내지도 않고
+그냥 밀어 넣어
+
+[instrumental]
+(Wurlitzer lead, Rhodes pad, upright bass groove)
+
+[interlude]
+(jazz guitar solo, soft drums, breathing space)
+
+[instrumental]
+(full arrangement, Wurlitzer and Rhodes together)
+
+[outro]
+(Wurlitzer restates motif, instruments thin, gentle fade)
 ```
 
 ### Style Prompt
 ```
 Korean Chillhop, 87 BPM, E minor
 
-Wurlitzer-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, fresh groove. High-fidelity, polished. Morning energy.
+Wurlitzer-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, fresh groove. High-fidelity, polished. Daylight mood.
 
-Baritone male vocal buried deep in mix, underneath instruments. Heavy ambient reverb, far back. Vocal as texture, not lead.
+Baritone male vocal buried deep in mix, underneath instruments. Clear Korean articulation. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
 
-CRITICAL: No filler sounds, no "eh" "uh" "hm" ad-libs. No humming no scat except outro. Clean lines only.
+No filler sounds, no ad-libs. Clean vocal lines only.
 
-Intro: Instrumental only, no vocals. Wurlitzer drums only.
-Verse: Wurlitzer melody, vocal behind instruments. No fillers.
-Interlude: Wurlitzer solo 8 bars, bass groove.
-Instrumental: Rhodes pad drums 8 bars.
-Chorus: density increases, bass melodic. Vocal low. No embellishments.
-Bridge: Wurlitzer bass only, vocal minimal.
-Outro: Wurlitzer motif, scat allowed here only, fade.
+Intro: Instrumental only, no vocals, no humming.
+Instrumental sections: Wurlitzer melody, jazz guitar, full groove.
+Verse: brief buried vocal, four lines only, then instruments continue.
+Outro: Wurlitzer restates motif, gentle fade.
 
 Single vocal throughout. No harmony no backing no doubles.
-Target runtime over 3 minutes 30 seconds.
+Target runtime over 3 minutes.
 ```
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Clear articulation, Airy, Falsetto, Harmonized, Backing vocals, Whisper, Auto-tune, Filler sounds, Ad-libs, Humming, Scat, Vocal runs, Melisma, Drowsy, Sleepy, Lazy
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
+```
+
+---
+
+## Track 03: 루틴
+
+### Suno Parameters
+- Style Influence: 75
+- Weirdness: 25
+- **Sample Upload**: 소예_반복20.wav (딸 웃음소리, 5초 × 20회, 홀수만 재생)
+
+### Lyrics
+```
+[intro]
+(girl laughter sample, then instruments fade in)
+
+[instrumental]
+(girl laughter sample brief, Jazz guitar melody, Rhodes pad, upright bass, swing groove)
+
+[interlude]
+(girl laughter sample, Rhodes chords, soft drums)
+
+[instrumental]
+(girl laughter sample brief, full arrangement, jazz guitar lead, warm groove)
+
+[interlude]
+(girl laughter sample, jazz guitar solo, breathing space)
+
+[instrumental]
+(girl laughter sample brief, Rhodes and jazz guitar together, upright bass groove)
+
+[outro]
+(girl laughter sample, Rhodes motif, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 90 BPM, D major
+
+Jazz guitar-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, playful groove. High-fidelity but warm, subtle saturation. Daylight mood, gentle smile. Warm major7 chords.
+
+Purely instrumental with girl laughter sample as texture. Laughter sits in background, reverb-processed, blending into arrangement. Warm and familial tone.
+
+No filler sounds, no ad-libs. No vocals, no humming.
+
+Intro: Laughter sample into instruments.
+Instrumental sections: jazz guitar melody, full groove, warm.
+Interludes: laughter sample brief, breathing space.
+Outro: laughter sample, Rhodes fade.
+
+No vocal melody. No singing. Laughter as texture only.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
+```
+
+## Track 04: 흐름
+
+### Suno Parameters
+- Style Influence: 70
+- Weirdness: 30
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming)
+
+[instrumental]
+(Rhodes melody, Wurlitzer accents, upright bass, swing groove)
+
+[instrumental]
+(full arrangement, Rhodes lead, crisp jazzy drums)
+
+[verse]
+(Baritone male buried deep, clear Korean articulation, ambient reverb, no filler sounds)
+모니터 픽셀 물결의 파동
+점점 빠져가
+헤엄쳐
+
+[instrumental]
+(Wurlitzer lead, Rhodes pad, upright bass groove)
+
+[interlude]
+(Rhodes chords, soft drums, breathing space)
+
+[verse]
+(buried vocal, ambient reverb)
+모니터 픽셀 물결의 파동
+점점 빠져가
+헤엄쳐
+
+[outro]
+(Rhodes and Wurlitzer motif, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 90 BPM, E minor
+
+Rhodes-led, Wurlitzer accents. Upright bass warm defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm. Subtle vinyl warmth, light analog texture. NOT dusty or muffled. Daylight mood.
+
+Baritone male vocal buried deep in mix, underneath instruments. Clear Korean articulation. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
+
+No filler sounds, no ad-libs. Clean vocal lines only.
+
+Intro: Instrumental only, no vocals, no humming.
+Instrumental sections: Rhodes melody, Wurlitzer, full groove.
+Verse: brief buried vocal, mantra phrase, then instruments continue.
+Outro: Rhodes and Wurlitzer motif, gentle fade.
+
+Single vocal throughout. No harmony no backing no doubles.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
 ```
 
 ---
@@ -335,7 +466,10 @@ Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Clear articulation
 
 - [x] Track 01 가사/스타일 완료
 - [x] Track 02 가사/스타일 완료
-- [ ] Track 03-10 가사/스타일 기획
+- [x] Track 03 스타일 완료 (딸 웃음소리 샘플 + D major)
+- [x] Track 04 가사/스타일 완료 (바이닐 텍스처)
+- [ ] Track 05-15 가사/스타일 리디자인 (A/B/C 타입)
+- [x] CHILLHOP_RUBRIC.md 보컬 타입 대응 업데이트
 - [ ] 썸네일 디자인 (10:00 시간 표기)
 - [ ] Description 완성
 - [ ] input/loop.mp4 준비

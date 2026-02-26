@@ -1,7 +1,7 @@
 # Chillhop Genre Rubric
 
-Version: 1.2
-Last Updated: 2026-02-21
+Version: 1.3
+Last Updated: 2026-02-26
 Purpose: Chillhop 장르 적합성 평가 루브릭
 Scope: 장르가 Chillhop인 트랙의 Seed Design / Variation Design QA
 Pass Criteria: 80점 이상
@@ -60,7 +60,7 @@ Fail Criteria: 80점 미만 (재디자인 필수)
 
 1. **BPM이 78-105 범위에 명시**
 2. **Jazzy 요소 2개 이상 포함** (Rhodes, Wurlitzer, jazz guitar, saxophone, upright bass, swing feel, jazzy chords 중)
-3. Vocal buried/low mix 지시 포함 (Style Prompt에 명시)
+3. A/B 타입: Vocal buried/low mix 지시 포함 / C 타입: "Instrumental" 또는 허밍/스캣 텍스처 처리 명시
 4. Exclude가 1-8개이고 하모니 가드 항목 2개 이상 포함
 5. 목표 길이 3분 이상을 구조 또는 스타일에서 명시
 6. **"dusty" 또는 "muffled" 키워드 미포함** (Lo-fi와 구분)
@@ -123,7 +123,11 @@ Fail Criteria: 80점 미만 (재디자인 필수)
 
 ---
 
-### 4. Vocal Integration (보컬 통합) — 20점
+### 4. Vocal/Texture Integration (보컬·텍스처 통합) — 20점
+
+> 보컬 타입(A/B/C)에 따라 평가 기준이 다르다.
+
+**Type A/B (보컬 있음):**
 
 | 점수 | 기준 |
 |------|------|
@@ -133,13 +137,22 @@ Fail Criteria: 80점 미만 (재디자인 필수)
 | 5-9 | 보컬이 전면에 나와서 배경음악 부적합 |
 | 0-4 | 보컬 처리 실패 |
 
+**Type C (인스트루멘탈):**
+
+| 점수 | 기준 |
+|------|------|
+| 18-20 | 인스트루멘탈 레이어가 풍성, 허밍/스캣 텍스처가 악기처럼 자연스럽게 녹아듦 |
+| 14-17 | 구성 양호하나 텍스처 요소가 다소 부족하거나 튀어나옴 |
+| 10-13 | 인스트루멘탈 구성이 단조롭거나 텍스처 처리 미흡 |
+| 5-9 | 허밍/스캣이 보컬처럼 전면에 나옴 |
+| 0-4 | 텍스처 설계 부재 |
+
 **핵심 원칙**:
-- **Buried vocal**: deep in mix, underneath instruments, far back in soundstage
-- Heavy ambient reverb, distant, recessed (not intimate/forward)
-- 가사가 "들리지만 귀에 안 꽂히는" 상태
+- **A/B**: Buried vocal — deep in mix, underneath instruments, far back in soundstage
+- **C**: 허밍/스캣은 악기 레이어처럼 처리 (있는 경우), pure instrumental도 OK
 - 배경음악으로 틀어놔도 업무 집중 가능
 
-**Style Prompt 권장 표현**:
+**Style Prompt 권장 표현 (A/B):**
 ```
 Vocals buried deep in mix, underneath instruments.
 Heavy ambient reverb, far back in soundstage.
@@ -160,7 +173,10 @@ Vocal as background texture, not lead.
 **핵심 원칙**:
 - 최소 길이: **3분 이상**
 - 급격한 변화 금지 (업무 집중 방해)
-- 권장 섹션: intro / verse / chorus / interlude / bridge / outro
+- 루프 기반 구조 권장 (레이어 추가/제거로 전개)
+- Type A: [intro] → [loop A] → [vocal section] → [loop B] → [loop A'] → [outro]
+- Type B: [intro] → [loop A + mantra] → [loop B] → [loop A + mantra] → [outro]
+- Type C: [intro] → [loop A] → [loop B] → [loop A'] → [bridge] → [outro]
 
 ---
 
@@ -188,7 +204,7 @@ Vocal as background texture, not lead.
 □ 재즈 요소 2개 이상 (Rhodes/Sax/Jazz Guitar/Upright Bass/Swing)
 □ Swing feel, laid-back groove 유지
 □ High-fidelity but warm (dusty/muffled 아님)
-□ 보컬이 묻혀서 텍스처처럼 작용
+□ 보컬/텍스처 타입별 적합 (A: buried 한 섹션, B: mantra, C: inst+텍스처)
 □ 3분 이상, 부드러운 섹션 전환
 □ "Chillhop"이라고 즉시 설명 가능 (Lo-fi 아님)
 ```
@@ -226,7 +242,7 @@ Chillhop Rubric Score
 | Jazz Elements |  |  |
 | Groove & Feel |  |  |
 | Warmth & Polish |  |  |
-| Vocal Integration |  |  |
+| Vocal/Texture Integration |  |  |
 | Structural Flow |  |  |
 | Genre Boundary Guard |  |  |
 | Total |  |  |
@@ -238,6 +254,11 @@ Verdict: PASS / FAIL
 
 ## Changelog
 
+- 2026-02-26: v1.3 Vocal Type A/B/C 대응
+  - Hard Gate #3: 타입별 조건 분기
+  - "Vocal Integration" → **"Vocal/Texture Integration"** 리네이밍
+  - Type C (인스트루멘탈) 전용 채점 기준 추가
+  - Structural Flow: 루프 기반 구조 반영
 - 2026-02-21: v1.0 초안 작성 (AM_1000 업무시간 시리즈용)
 - 2026-02-21: v1.2 Track 01 실험 결과 반영
   - Hard Gate 추가: **[Intro] = Instrumental only** (no vocals, no humming, no scat)
