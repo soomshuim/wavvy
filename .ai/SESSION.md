@@ -14,24 +14,35 @@
 - CHILLHOP_RUBRIC v1.3 업데이트 (A/B/C 타입별 채점)
 - concept.md v1.0 전면 재작성
 
-### 최근 완료 (2026-02-26)
-- Track 01 "오전" (B타입, 만트라) — 물끄러미 앉아 / 볼펜이 굴러가
-- Track 02 "책상" (A타입) — 서랍이 안 닫혀 / 끼인 게 뭔지 몰라...
-- Track 03 "루틴" (C타입) — 딸 웃음소리 샘플 활용, D major
-- Track 04 "흐름" (B타입, 만트라) — 모니터 픽셀 물결의 파동 / 점점 빠져가 / 헤엄쳐
-- 소예_반복20.wav 생성 (딸 웃음 20회 반복 WAV, Suno 업로드용)
-- Articulation 명시 규칙 추가 (style prompt에 "Clear Korean articulation" 필수)
+### 최근 완료 (2026-02-28)
+- Track 02 "거울" 리메이크 (A→B타입, 서랍→까만거울)
+- Track 05 "집중" (C, instrumental, 78 BPM, Dm)
+- Track 06 "알림" (B, Alto, bell chime 컨셉)
+- Track 07 "잉크" (B, Baritone, 85 BPM, E major) — 번진 자국 위 / 마르지 않아
+- Track 08 "타이핑" (B, Alto, 88 BPM, Dm) — 빽빽한 창문 마디 마디 / 쉼 없이 Knock knock / 어깨는 down down
+- Track 09 "숨(Breathe)" (C, instrumental, D major)
+- Track 10 "환기(Refresh)" (C, instrumental, E major)
+- 타이틀 정정: 루틴→사진, 흐름→모니터, 타자→타이핑
+- Major 키 확장 (minor 11 / major 4)
+- T07↔T08 스왑 (Alto 연속 해소)
+- txt 파일 전체 삭제 → concept.md SSOT 통합
 
-### 현재 상태: 4/15 완료
+### 현재 상태: 10/15 완료
 - Track 01 "오전": PASS (B, Contralto female, 85 BPM, Dm)
-- Track 02 "책상": PASS (A, Baritone male, 87 BPM, Em)
-- Track 03 "루틴": PASS (C, girl laughter sample, 90 BPM, D major)
-- Track 04 "흐름": PASS (B, Baritone male, 90 BPM, Em, vinyl warmth)
-- Track 05-15: 미작업
+- Track 02 "거울": PASS (B, Baritone male, 87 BPM, Em)
+- Track 03 "사진": PASS (C, girl laughter sample, 90 BPM, D major)
+- Track 04 "모니터": PASS (B, Baritone male, 90 BPM, Em)
+- Track 05 "집중": PASS (C, instrumental, 78 BPM, Dm)
+- Track 06 "알림": PASS (B, Alto female, 83 BPM, Em)
+- Track 07 "잉크": PASS (B, Baritone male, 85 BPM, E major)
+- Track 08 "타이핑": PASS (B, Alto female, 88 BPM, Dm)
+- Track 09 "숨": PASS (C, instrumental, 85 BPM, D major)
+- Track 10 "환기": PASS (C, instrumental, 80 BPM, E major)
+- Track 11-15: 미작업
 
 ### 다음 할 일
-- [ ] Track 05 "집중" (C타입, pure instrumental, 78 BPM, Dm)
-- [ ] Track 06-15 순차 작업
+- [ ] Track 11 "회의" (B타입, Baritone, 87 BPM, Dm)
+- [ ] Track 12-15 순차 작업
 - [ ] AM_1000 썸네일 디자인 (10:00 시간 표기)
 - [ ] input/loop.mp4, thumb.jpg 준비
 

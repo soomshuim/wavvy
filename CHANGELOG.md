@@ -7,6 +7,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **AM_1000 Track 05-10 완료 (10/15)**
+  - Track 02 "거울" 리메이크 (A→B타입, 서랍→까만거울 컨셉)
+  - Track 05 "집중" (C타입, pure instrumental, 78 BPM, Dm)
+  - Track 06 "알림" (C→B타입 전환, bell chime/glockenspiel 알림 컨셉)
+  - Track 07 "잉크" (B타입, Male Baritone, 85 BPM, E major)
+  - Track 08 "타이핑" (A→B타입 전환, Female Alto, 88 BPM, Dm)
+  - Track 09 "숨(Breathe)" (B→C타입 전환, pure instrumental, D major)
+  - Track 10 "환기(Refresh)" (C타입, pure instrumental, E major)
+  - 타이틀 정정: 루틴→사진, 흐름→모니터, 타자→타이핑
+  - Major 키 확장: T07 E major, T09 D major, T10 E major (minor 11 / major 4)
+  - T07↔T08 순서 스왑 (Alto→Alto 연속 보컬 해소)
+  - 타입 배분: A(2) B(7) C(6)
+  - Track 01-10 txt 파일 삭제 (concept.md SSOT 통합)
+
 - **AM_1000 미니멀 보컬 Chillhop 방향 전환 + Track 01-04 완료**
   - 방향: 한국어 미니멀 보컬 Chillhop, 루프 기반 구조
   - 보컬 A/B/C 타입 시스템: A(4-8줄 한 섹션) / B(1-2줄 만트라) / C(인스트루멘탈+텍스처)
