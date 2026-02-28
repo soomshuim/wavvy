@@ -49,6 +49,7 @@ Purpose: YouTube Music Playlist Generator CLI 실행 매뉴얼 (비-SSOT 요약)
 2. **Sequential Acrossfade** - 단순 concat 금지
 3. **Fail Fast** - 입력 검증 실패 시 즉시 종료
 4. **Pure Input Principle** - Suno 가사란에 가사 + 구조 태그 + 구조 직후 1행 `()` 메타만 (설명형 지시어 금지)
+5. **크로스페이드 구분 필수** - 오디오 vs 비디오 반드시 구분. "크로스페이드" 요청 시 어느 쪽인지 확인
 
 ## Auto Reference Rules
 
@@ -105,6 +106,39 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 - Hook Title (선언문, 가사 그대로 사용 금지) + Bottom Lyric (하단 가사) 2-Layer 구조
 - 타이포: Shadow 필수, Stroke 금지, 하단 30% 침범 금지 (YouTube UI 영역)
 - CLI: `python3 vibem.py shorts <track> --start MM:SS --duration SEC [--title "..."] [--srt file.srt]`
+
+### 영상 패키징 워크플로우
+> **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
+
+**1. 크로스페이드 종류 구분:**
+
+| 종류 | 도구 | 설명 |
+|------|------|------|
+| **오디오 크로스페이드** | `vibem.py pack --fade` | 트랙 간 오디오 전환 (acrossfade) |
+| **비디오 크로스페이드** | FFmpeg `xfade` 필터 | 루프 영상 자연스러운 반복 |
+
+**2. vibem.py pack 한계:**
+- 오디오 크로스페이드만 적용
+- 비디오는 `-stream_loop -1`로 단순 반복 (끊김 발생)
+
+**3. 비디오 크로스페이드 필요 시:**
+```bash
+# Step 1: loop.mp4를 xfade로 N번 반복 (테스트 먼저)
+ffmpeg -i loop.mp4 -i loop.mp4 -i loop.mp4 \
+  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=7.5[v1];[v1][2:v]xfade=transition=fade:duration=0.5:offset=15[v2]" \
+  -map "[v2]" -c:v libx264 -an loop_xfade.mp4
+
+# Step 2: 오디오와 합치기
+ffmpeg -i loop_xfade_long.mp4 -i audio.m4a -c:v copy -c:a copy -shortest final.mp4
+```
+
+**4. 워크플로우:**
+1. 사용자가 테스트용 비디오 크로스페이드 영상 제작
+2. Claude가 **명시적으로 PASS 여부 확인** ("이 크로스페이드 PASS인가요?")
+3. PASS 시 해당 옵션(duration 등)으로 유튜브용 영상 자동 제작 (오디오 + 비디오 크로스페이드)
+4. 압축 (2GB 미만 등)
+
+**⚠️ PASS 확인 없이 본 작업 진행 금지**
 
 ## Project-Specific Gotchas
 
