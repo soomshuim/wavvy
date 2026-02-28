@@ -7,6 +7,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **AM_1000 완료 (15/15) + 영상 패키징 + Description 커스텀**
+  - Track 11 "회의" (B타입, Male Baritone, 87 BPM, D major, 의성어 만트라)
+  - Track 12 "다시" (C타입, finger snap texture, 82 BPM, E major)
+  - Track 13 "Tab" (A타입, Male Baritone, 85 BPM, Dm, 3줄 한 번)
+  - Track 14 "Tick Tock" (C타입, clock rhythm, 80 BPM, Em)
+  - Track 15 "Hunger" (C타입, sparse arrangement, 78 BPM, E major)
+  - 영상 패키징: final.mp4 (76.9분, 15트랙×2회, 0.5초 crossfade)
+  - 압축 버전: final_compressed.mp4 (3.9GB→1.5GB, Canva 업로드용)
+  - draft_description.txt 커스텀 (PLAYLIST_GUIDE 규칙 준수)
+  - 해시태그 정리 (정체성/유입/맥락/브랜드 그룹화)
+  - 고정 댓글 훅: "지금 열어둔 탭, 몇 개예요?"
+  - txt 파일 정리 (concept.md SSOT 통합)
+
 - **AM_1000 Track 05-10 완료 (10/15)**
   - Track 02 "거울" 리메이크 (A→B타입, 서랍→까만거울 컨셉)
   - Track 05 "집중" (C타입, pure instrumental, 78 BPM, Dm)

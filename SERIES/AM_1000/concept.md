@@ -136,6 +136,8 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper
 
 **원칙:** 업무 방해 요소 차단 + 보컬 전면 배치 차단
 
+**Style Prompt 권장:** `Minimal scat/humming if any, keep subtle and buried.`
+
 ---
 
 ## Cross-Series 겹침 검증
@@ -164,11 +166,11 @@ Airy, Falsetto, Harmonized, Backing vocals, Whisper
 | 08 | 타이핑 | B | Female (Alto) | 88 | Dm | Rhodes, Jazz Guitar | 완료 |
 | 09 | 숨 | C | — | 85 | D major | Jazz Guitar, Wurlitzer | 완료 |
 | 10 | 환기 | C | — | 80 | E major | Rhodes, Wurlitzer | 완료 |
-| 11 | 회의 | B | Male (Baritone) | 87 | Dm | Wurlitzer, Rhodes | 미정 |
-| 12 | 다시 | C | — (스캣) | 82 | E major | Rhodes, Wurlitzer | 미정 |
-| 13 | 정리 | A | Male (Baritone) | 85 | Dm | Wurlitzer, Rhodes | 미정 |
-| 14 | 벽시계 | A | Female (Alto) | 80 | Em | Jazz Guitar, Rhodes | 미정 |
-| 15 | 점심전 | C | — | 78 | Dm | Jazz Guitar, Rhodes | 미정 |
+| 11 | 회의 | B | Male (Baritone) | 87 | D major | Wurlitzer, Rhodes | 완료 |
+| 12 | 다시 | C | — (finger snap) | 82 | E major | Rhodes, Wurlitzer | 완료 |
+| 13 | Tab | A | Male (Baritone) | 85 | Dm | Wurlitzer, Rhodes | 완료 |
+| 14 | Tick Tock | C | — (clock rhythm) | 80 | Em | Jazz Guitar, Rhodes | 완료 |
+| 15 | Hunger | C | — (sparse) | 78 | E major | Jazz Guitar, Rhodes | 완료 |
 
 ### Type 배분
 ```
@@ -188,7 +190,7 @@ C (인스트루멘탈): Track 03, 05, 09, 10, 12, 15
 ```
 오전(시작) → 거울(자리) → 사진(일상) → 모니터(몰입) → 집중(깊이)
 → 알림(중단) → 잉크(필기) → 타이핑(리듬) → 숨(쉼) → 환기(전환)
-→ 회의(이동) → 다시(복귀) → 정리(마무리) → 벽시계(응시) → 점심전(끝)
+→ 회의(이동) → 다시(복귀) → Tab(정리) → Tick Tock(응시) → Hunger(끝)
 ```
 
 ---
@@ -276,8 +278,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ## Track 02: 거울
 
@@ -337,8 +338,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ---
 
@@ -457,8 +457,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ---
 
@@ -576,8 +575,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ---
 
@@ -642,8 +640,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ---
 
@@ -707,8 +704,7 @@ Target runtime over 3 minutes.
 
 ### Exclude
 ```
-Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
-```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
 
 ---
 
@@ -824,6 +820,293 @@ Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
 
 ---
 
+## Track 11: 회의
+
+### Suno Parameters
+- Style Influence: 65
+- Weirdness: 35
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming)
+
+[instrumental]
+(Wurlitzer melody, Rhodes chords, upright bass, crisp jazzy drums)
+
+[instrumental]
+(Rhodes takes lead, Wurlitzer accents, fuller arrangement, swing groove)
+
+[verse]
+(Baritone male buried deep, clear Korean articulation, ambient reverb, no filler sounds)
+핑퐁 핑퐁
+삐걱 삐걱
+핑퐁 핑퐁
+삐걱 삐걱
+
+[instrumental]
+(Wurlitzer lead, Rhodes pad, upright bass groove)
+
+[interlude]
+(Wurlitzer solo, soft drums, breathing space)
+
+[verse]
+(buried vocal, ambient reverb)
+핑퐁 핑퐁
+삐걱 삐걱
+핑퐁 핑퐁
+삐걱 삐걱
+
+[instrumental]
+(Wurlitzer and Rhodes together, full arrangement, warm groove)
+
+[outro]
+(Wurlitzer restates motif, instruments thin, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 87 BPM, D major
+
+Wurlitzer-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation. Daylight mood, meeting room rhythm.
+
+Baritone male vocal buried deep in mix, underneath instruments. Clear Korean articulation. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
+
+No filler sounds, no ad-libs. Clean vocal lines only.
+
+Intro: Instrumental only, no vocals, no humming.
+Instrumental sections: Wurlitzer melody, Rhodes accents, full groove.
+Verse: brief buried vocal mantra, four lines, repeats.
+Outro: Wurlitzer restates motif, gentle fade.
+
+Single vocal throughout. No harmony no backing no doubles.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized```
+
+---
+
+## Track 12: 다시
+
+### Suno Parameters
+- Style Influence: 65
+- Weirdness: 35
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming, no scat)
+
+[instrumental]
+(Rhodes melody, Wurlitzer chords, upright bass, crisp jazzy drums, subtle finger snaps)
+
+[instrumental]
+(Wurlitzer takes lead, Rhodes pad, fuller arrangement, swing groove, finger snaps accent)
+
+[interlude]
+(Rhodes chords, soft drums, finger snaps, breathing space)
+
+[instrumental]
+(Rhodes and Wurlitzer together, full arrangement, warm groove, finger snaps continue)
+
+[instrumental]
+(Wurlitzer solo, Rhodes accents, upright bass groove, subtle finger snaps)
+
+[outro]
+(Rhodes restates motif, finger snaps fade, instruments thin, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 82 BPM, E major
+
+Rhodes-led, Wurlitzer accents. Upright bass warm defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation. Daylight mood, return to focus.
+
+Purely instrumental with finger snaps as rhythmic texture. Finger snaps subtle, woven into groove, not dominant. Snaps as gentle focus cue.
+
+No vocals, no humming, no scat. No filler sounds.
+
+Intro: Instrumental only.
+Instrumental sections: Rhodes melody, Wurlitzer weaving, finger snaps accent on offbeats.
+Interlude: breathing space, minimal.
+Outro: Rhodes restates motif, gentle fade.
+
+No vocal melody. No singing. Pure instruments with finger snap texture.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
+```
+
+---
+
+## Track 13: Tab
+
+### Suno Parameters
+- Style Influence: 65
+- Weirdness: 35
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming)
+
+[instrumental]
+(Wurlitzer melody, Rhodes chords, upright bass, crisp jazzy drums)
+
+[instrumental]
+(Rhodes takes lead, Wurlitzer accents, fuller arrangement, swing groove)
+
+[verse]
+(Baritone male buried deep, clear Korean articulation, ambient reverb, no filler sounds)
+열어둔 창들
+하나씩 닫아
+클릭 클릭
+
+[instrumental]
+(Wurlitzer lead, Rhodes pad, upright bass groove)
+
+[interlude]
+(Wurlitzer solo, soft drums, breathing space)
+
+[instrumental]
+(Rhodes and Wurlitzer together, full arrangement, warm groove)
+
+[outro]
+(Wurlitzer restates motif, instruments thin, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 85 BPM, D minor
+
+Wurlitzer-led, Rhodes accents. Upright bass warm defined. Crisp jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation. Daylight mood, quiet focus.
+
+Baritone male vocal buried deep in mix, underneath instruments. Clear Korean articulation. Heavy ambient reverb, far back in soundstage. Vocal as background texture, not lead.
+
+No filler sounds, no ad-libs. Clean vocal lines only. Minimal scat/humming if any, keep subtle and buried.
+
+Intro: Instrumental only, no vocals, no humming.
+Instrumental sections: Wurlitzer melody, Rhodes accents, full groove.
+Verse: brief buried vocal, three lines only, appears once.
+Outro: Wurlitzer restates motif, gentle fade.
+
+Single vocal throughout. No harmony no backing no doubles.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Prominent vocals, Forward vocals, Airy, Falsetto, Harmonized
+```
+
+---
+
+## Track 14: Tick Tock
+
+### Suno Parameters
+- Style Influence: 65
+- Weirdness: 35
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming, no scat, clock rhythm establishes)
+
+[instrumental]
+(Jazz guitar melody, Rhodes chords, upright bass, soft jazzy drums, tick-tock pulse)
+
+[instrumental]
+(Rhodes takes lead, jazz guitar accents, fuller arrangement, swing groove, tick-tock continues)
+
+[interlude]
+(Jazz guitar solo, soft drums, clock rhythm subtle, breathing space)
+
+[instrumental]
+(Rhodes and jazz guitar together, full arrangement, warm groove, tick-tock pulse)
+
+[instrumental]
+(Jazz guitar solo, Rhodes accents, upright bass groove, tick-tock steady)
+
+[outro]
+(Rhodes restates motif, instruments thin, clock fades last, gentle fade)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 80 BPM, E minor
+
+Jazz guitar-led, Rhodes accents, Upright bass warm defined, Crisp jazzy drums, swing feel, laid-back groove, High-fidelity but warm, subtle saturation, Daylight mood, time standing still, Clock-like rhythm throughout: wood block or rim click on every beat, steady tick-tock pulse woven into groove, Metronomic feel but organic, Purely instrumental, No vocals, no humming, no scat, No filler sounds, Intro: Instrumental only, clock rhythm establishes, Instrumental sections: Jazz guitar melody, Rhodes weaving, clock pulse continues, Interlude: Jazz guitar solo, clock rhythm subtle, Outro: Rhodes restates motif, clock fades last, No vocal melody, No singing, Pure instruments only, Target runtime over 3 minutes
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
+```
+
+---
+
+## Track 15: Hunger
+
+### Suno Parameters
+- Style Influence: 65
+- Weirdness: 35
+
+### Lyrics
+```
+[intro]
+(instrumental only, no vocals, no humming, no scat, sparse and empty)
+
+[instrumental]
+(Jazz guitar melody sparse, Rhodes single notes, upright bass minimal, soft drums, lots of silence between notes)
+
+[instrumental]
+(Rhodes takes lead, jazz guitar accents, still sparse, breathing room)
+
+[interlude]
+(Jazz guitar solo, minimal drums, empty space, hunger in the gaps)
+
+[instrumental]
+(Rhodes and jazz guitar together, slightly fuller but still restrained)
+
+[instrumental]
+(Jazz guitar solo, Rhodes accents, upright bass groove, space between phrases)
+
+[outro]
+(Rhodes single notes, instruments thin to almost nothing, fade into silence)
+```
+
+### Style Prompt
+```
+Korean Chillhop, 78 BPM, E major
+
+Jazz guitar-led, Rhodes accents. Upright bass warm defined. Soft jazzy drums, swing feel, laid-back groove. High-fidelity but warm, subtle saturation. Daylight mood, empty stomach feeling.
+
+Sparse arrangement throughout. Lots of silence between notes. Empty space as texture. Notes floating in air. Minimalist, restrained, hungry. Less is more.
+
+Purely instrumental. No vocals, no humming, no scat. No filler sounds.
+
+Intro: Sparse, almost nothing.
+Instrumental sections: Jazz guitar melody with gaps, Rhodes single notes, space between phrases.
+Interlude: Minimal, breathing room.
+Outro: Fade to near silence.
+
+No vocal melody. No singing. Pure instruments only.
+Target runtime over 3 minutes.
+```
+
+### Exclude
+```
+Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
+```
+
+---
+
 ## TODO
 
 - [x] Track 01 가사/스타일 완료
@@ -836,7 +1119,11 @@ Dusty, Muffled, Lo-fi hiss, Vocals, Singing, Airy, Falsetto, Harmonized
 - [x] Track 08 타이핑 가사/스타일 완료 (A→B타입 전환, 3줄 mantra)
 - [x] Track 09 숨(Breathe) 스타일 완료 (B→C타입 전환, pure instrumental, D major)
 - [x] Track 10 환기(Refresh) 스타일 완료 (C타입, pure instrumental, E major)
-- [ ] Track 11-15 가사/스타일 리디자인 (A/B/C 타입)
+- [x] Track 11 회의 가사/스타일 완료 (B타입, 의성어 만트라)
+- [x] Track 12 다시 스타일 완료 (C타입, finger snap texture)
+- [x] Track 13 Tab 가사/스타일 완료 (A타입, 3줄 한 번)
+- [x] Track 14 Tick Tock 스타일 완료 (C타입, clock rhythm)
+- [x] Track 15 Hunger 스타일 완료 (C타입, sparse arrangement, E major)
 - [x] CHILLHOP_RUBRIC.md 보컬 타입 대응 업데이트
 - [ ] 썸네일 디자인 (10:00 시간 표기)
 - [ ] Description 완성
