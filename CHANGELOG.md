@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **SSOT 문서 150줄 다이어트 + 폴더 구조 재편**
+  - 모든 AI 규칙 문서 150줄 이하로 압축
+  - 폴더 구조 재편: style/, lyrics/, roles/, rubrics/, youtube/, cli/
+  - wavvy.md 신설 (프로젝트 정체성/브랜드)
+  - CLAUDE.md 정리 (AI 실행 엔진 설정)
+  - 삭제: _INDEX.md, 24H_UNIVERSE.md, PLAYLIST_GUIDE.md, QUICK_REF.md
+  - 삭제: llm_loop 관련 파일, docs/planning/ 폴더
+  - 루브릭 압축 + evidence/ 폴더로 근거 분리
+
 ### Added
 - **AM_1000 완료 (15/15) + 영상 패키징 + Description 커스텀**
   - Track 11 "회의" (B타입, Male Baritone, 87 BPM, D major, 의성어 만트라)

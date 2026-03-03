@@ -4,7 +4,80 @@
 > **테마**: 잠에서 몸을 깨우는 저역 중심 Fast Lo-fi 루틴
 > **장르**: Fast Lo-fi (drum+bass drive, instrumental-first)
 >
-> Last updated: 2026-02-16
+> Last updated: 2026-03-03
+
+---
+
+## YouTube Draft (v2.1)
+
+### 제목
+```
+Playlist | 06:00 | 잠든 몸을 깨우는 새벽 🌅 | FAST LO-FI · LOFI POP | 러닝 · 모닝루틴 | Wavvy
+```
+
+### 설명
+```
+🌅 06:00, 잠에서 몸이 먼저 깨어나는 시간.
+저역 위로 하루를 시작해요. - Wavvy
+
+아직 머리는 멍한데, 발은 이미 움직이고 있어요.
+Wavvy는 우리말 가사로, 그 시간들의 감정을 기록합니다.
+
+──────────────
+
+Track List
+
+🏃 00:00 - Concrete Morning
+🛤️ 03:55 - Static Lane
+📡 07:21 - Signal
+🔵 10:22 - Blue Curb
+🏋️ 13:21 - Iron
+💨 16:51 - Moving
+☀️ 20:18 - Wake Up
+🍳 23:14 - Kitchen Light
+📂 26:31 - Unfold
+🧘 30:26 - Settle Down
+─────
+🏃 34:03 - Concrete Morning
+🛤️ 37:58 - Static Lane
+📡 41:24 - Signal
+🔵 44:24 - Blue Curb
+🏋️ 47:24 - Iron
+💨 50:54 - Moving
+☀️ 54:21 - Wake Up
+🍳 57:16 - Kitchen Light
+📂 60:34 - Unfold
+🧘 64:28 - Settle Down
+
+──────────────
+
+Music for your space, 24 hours a day.
+All tracks feature Korean lyrics.
+
+🎵 Music: wavvy
+Copyright Ⓒ wavvy. All rights reserved.
+
+──────────────
+
+#fastlofi #lofi #lofipop
+#아침운동 #모닝루틴 #러닝음악 #홈트음악 #헬스장음악
+#playlist #플리 #음악추천 #노동요
+#wavvy #웨이비
+```
+
+### 태그 (업로드 시)
+```
+fast lofi, lofi, lofi pop, 아침운동, 모닝루틴, 러닝음악, 홈트음악, 헬스장음악, playlist, 플리, 음악추천, 노동요, wavvy, 웨이비, 한국어가사
+```
+
+### 고정 댓글
+```
+이 채널의 노래들은 모두 우리말 가사로 만들어졌어요.
+익숙한 말들이 더 천천히, 더 깊게 닿기를 바랍니다.
+
+아침 6시, 오늘도 몸을 깨우러 나온 당신 💪
+여러분의 아침 루틴은 어떤 모습인가요?
+```
 
 ---
 

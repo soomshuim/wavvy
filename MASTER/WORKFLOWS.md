@@ -1,0 +1,133 @@
+# Wavvy Workflows
+
+> **모든 작업 워크플로우 통합 문서**
+>
+> Version: 1.0
+> Last Updated: 2026-03-03
+
+---
+
+## 1. 가사 생성 워크플로우
+
+> **SSOT: `MASTER/LYRICS.md` (체크리스트) + `MASTER/MANAGER.md` Phase 0.5 (수정 절차)**
+
+1. `LYRICS.md` + 이전 트랙 키워드 확인 + 크로스시리즈 겹침 검증 (3축 중 2개 이상 겹침 = FAIL)
+2. `Reference/museA_suno_guide.md` §3-4 참조 (구조 공식, 메타태그 규칙)
+3. 초안 생성 -> self-QC (LYRICS.md 전항목) -> Korean Positioning (K1-K3) -> 메타태그 검증 -> 장르 게이트 (루브릭) -> 패턴 고착 검사
+4. 전부 PASS시 QC 테이블과 함께 출력 (통과 전 유저 제안 금지)
+5. .txt 파일 저장 + pbcopy -> 유저 컨펌 후 concept.md 반영
+
+---
+
+## 2. Style Prompt 생성 워크플로우
+
+> **SSOT: `MASTER/STYLE.md` (S0-S20 슬롯) + `MASTER/ROLES.md` (S1-S12 Validation)**
+
+1. `STYLE.md` Required Slots + `Reference/museA_suno_guide.md` §1,2,6 참조
+2. 초안 생성 -> self-QC (S0-S20) -> 글자수 검증 (<= 900자, 공백 포함) -> 장르 게이트
+3. 전부 PASS시 QC 테이블 + 글자수와 함께 출력 (Style + Exclude 반드시 세트 출력)
+4. .txt 파일 저장 + pbcopy -> 유저 컨펌 후 concept.md 반영
+
+---
+
+## 3. 가사/스타일 수정 절차
+
+> **SSOT: `MASTER/MANAGER.md` Phase 0.5**
+
+txt 먼저 수정 -> 유저 컨펌 -> concept.md 반영 (역순 금지, 동시 수정 금지)
+
+---
+
+## 4. Concept 파일 최종 QC
+
+> **SSOT: `MASTER/MANAGER.md`**
+
+concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Description 포맷, Cross-Series 겹침, 저작권 표기, SSOT version
+
+---
+
+## 5. Shorts 생성
+
+> **SSOT: `MASTER/Wavvy_Master_Plan.md` (CLI 스펙)**
+
+- 반드시 시리즈/트랙/구간 확인 후 생성. 시작/종료 시간 임의 수정 절대 금지
+- Hook Title (선언문, 가사 그대로 사용 금지) + Bottom Lyric (하단 가사) 2-Layer 구조
+- 타이포: Shadow 필수, Stroke 금지, 하단 30% 침범 금지 (YouTube UI 영역)
+- CLI: `python3 vibem.py shorts <track> --start MM:SS --duration SEC [--title "..."] [--srt file.srt]`
+
+---
+
+## 6. 영상 패키징 워크플로우
+
+> **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
+
+### 6.1 크로스페이드 종류 구분
+
+| 종류 | 도구 | 설명 |
+|------|------|------|
+| **오디오 크로스페이드** | `vibem.py pack --fade` | 트랙 간 오디오 전환 (acrossfade) |
+| **비디오 크로스페이드** | FFmpeg `xfade` 필터 | 루프 영상 자연스러운 반복 |
+
+### 6.2 vibem.py pack 한계
+
+- 오디오 크로스페이드만 적용
+- 비디오는 `-stream_loop -1`로 단순 반복 (끊김 발생)
+
+### 6.3 비디오 크로스페이드 필요 시
+
+```bash
+# Step 1: loop.mp4를 xfade로 N번 반복 (테스트 먼저)
+ffmpeg -i loop.mp4 -i loop.mp4 -i loop.mp4 \
+  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=7.5[v1];[v1][2:v]xfade=transition=fade:duration=0.5:offset=15[v2]" \
+  -map "[v2]" -c:v libx264 -an loop_xfade.mp4
+
+# Step 2: 오디오와 합치기
+ffmpeg -i loop_xfade_long.mp4 -i audio.m4a -c:v copy -c:a copy -shortest final.mp4
+```
+
+### 6.4 실행 절차
+
+1. 사용자가 테스트용 비디오 크로스페이드 영상 제작
+2. Claude가 **명시적으로 PASS 여부 확인** ("이 크로스페이드 PASS인가요?")
+3. PASS 시 해당 옵션(duration 등)으로 유튜브용 영상 자동 제작 (오디오 + 비디오 크로스페이드)
+4. 압축 (2GB 미만 등)
+
+**⚠️ PASS 확인 없이 본 작업 진행 금지**
+
+---
+
+## 7. YouTube 메타데이터 생성 워크플로우
+
+> **SSOT: `MASTER/youtube/TITLE_RULES.md`, `MASTER/youtube/DESCRIPTION.md`, `MASTER/youtube/GENRE_TAGS.md`**
+
+### 7.1 Phase 1: 시리즈 초기 생성 (Draft)
+
+**시점:** 시리즈 폴더 + concept.md 최초 생성 시
+
+**작성 내용:**
+- 제목 (템플릿 기반, 장르/용도 초안)
+- 설명 (인트로 + Track List placeholder + 아웃트로)
+- 해시태그/태그 초안
+- 고정 댓글 초안
+
+**Track List:** `(트랙 완성 후 추가)` placeholder
+
+**버전 태그:** `## YouTube Draft (v1 — 트랙 미완성)`
+
+### 7.2 Phase 2: 시리즈 완성 (Final)
+
+**시점:** 모든 트랙 PASS + 패키징 완료 시
+
+**업데이트:**
+1. Track List에 실제 타임스탬프 + 곡명 + 이모지
+2. 버전 태그 변경: `(v1 — 트랙 미완성)` → `(v2.1)`
+3. 해시태그/태그 최종 검토
+4. 장르 태그 매핑 테이블 참조 (`youtube/DESCRIPTION.md`)
+
+### 7.3 장르 혼동 방지 체크
+
+1. **concept.md 헤더**에서 장르 확인
+2. `youtube/DESCRIPTION.md` 시리즈별 장르 태그 매핑 참조
+3. 제목/태그에 정확한 장르 반영
+
+**⚠️ 장르 태그 매핑 확인 없이 메타데이터 작성 금지**

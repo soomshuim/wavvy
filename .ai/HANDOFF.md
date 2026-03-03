@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-03 20:55:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: SSOT 문서 150줄 다이어트 + 폴더 구조 재편 (style/, lyrics/, roles/, rubrics/, youtube/, cli/) + wavvy.md 신설 + llm_loop 삭제
+Next-TODO: 없음
+Commits: 427d978
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-01 01:25:00
 Project: ~/Project/vibe-m
 Agent: Claude

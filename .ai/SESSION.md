@@ -2,7 +2,22 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-02-28
+> Last updated: 2026-03-03
+
+## 최근 작업 (2026-03-03)
+
+| 작업 | 날짜 |
+|------|------|
+| refactor: SSOT 문서 150줄 다이어트 + 폴더 구조 재편 | 2026-03-03 |
+
+### 상세
+- 모든 AI 규칙 문서 150줄 이하로 압축
+- 폴더 구조 재편: style/, lyrics/, roles/, rubrics/, youtube/, cli/
+- wavvy.md 신설 (프로젝트 정체성/브랜드)
+- CLAUDE.md 정리 (AI 실행 엔진 설정)
+- 삭제: _INDEX.md, 24H_UNIVERSE.md, PLAYLIST_GUIDE.md, QUICK_REF.md, llm_loop
+
+---
 
 ## 완료: AM_1000 "업무시간" 시리즈
 
