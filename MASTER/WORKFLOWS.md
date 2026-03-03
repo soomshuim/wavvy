@@ -98,21 +98,29 @@ ffmpeg -i loop_xfade_long.mp4 -i audio.m4a -c:v copy -c:a copy -shortest final.m
 
 ## 7. YouTube 메타데이터 생성 워크플로우
 
-> **SSOT: `MASTER/youtube/TITLE_RULES.md`, `MASTER/youtube/DESCRIPTION.md`, `MASTER/youtube/GENRE_TAGS.md`**
+> **SSOT: `MASTER/youtube/YOUTUBE.md`**
 
 ### 7.1 Phase 1: 시리즈 초기 생성 (Draft)
 
 **시점:** 시리즈 폴더 + concept.md 최초 생성 시
 
-**작성 내용:**
-- 제목 (템플릿 기반, 장르/용도 초안)
-- 설명 (인트로 + Track List placeholder + 아웃트로)
-- 해시태그/태그 초안
+**필수 요청 (유저에게):**
+1. Context Mode (Settling/Transition/Energizing/Focusing)
+2. 감정 훅 키워드 또는 방향
+3. 고정 댓글 훅 아이디어
+
+**작성 내용 (Track List 외 전부 초안):**
+- 제목 (템플릿 기반, 장르/용도)
+- 설명 인트로 (2줄 훅 + 확장 훅)
+- 해시태그/태그 (시리즈 장르 매핑 참조)
 - 고정 댓글 초안
+- 아웃트로 (고정 템플릿)
 
 **Track List:** `(트랙 완성 후 추가)` placeholder
 
 **버전 태그:** `## YouTube Draft (v1 — 트랙 미완성)`
+
+**⚠️ 유저 요청 없이 임의 생성 금지 — 필수 요청 항목 먼저 확인**
 
 ### 7.2 Phase 2: 시리즈 완성 (Final)
 
@@ -122,12 +130,12 @@ ffmpeg -i loop_xfade_long.mp4 -i audio.m4a -c:v copy -c:a copy -shortest final.m
 1. Track List에 실제 타임스탬프 + 곡명 + 이모지
 2. 버전 태그 변경: `(v1 — 트랙 미완성)` → `(v2.1)`
 3. 해시태그/태그 최종 검토
-4. 장르 태그 매핑 테이블 참조 (`youtube/DESCRIPTION.md`)
+4. 장르 태그 매핑 테이블 참조 (`youtube/YOUTUBE.md`)
 
 ### 7.3 장르 혼동 방지 체크
 
 1. **concept.md 헤더**에서 장르 확인
-2. `youtube/DESCRIPTION.md` 시리즈별 장르 태그 매핑 참조
+2. `youtube/YOUTUBE.md` 시리즈별 장르 태그 매핑 참조
 3. 제목/태그에 정확한 장르 반영
 
 **⚠️ 장르 태그 매핑 확인 없이 메타데이터 작성 금지**

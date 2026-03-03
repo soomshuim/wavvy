@@ -4,7 +4,7 @@ Version: 3.1
 Last Updated: 2026-03-03
 Purpose: Style Prompt 핵심 규칙 (SSOT)
 
-> **예시/Tag Bank**: `style-examples/TAG_BANK.md` 참조
+> **Tag Bank**: `style/TAG_BANK.md` 참조
 
 ---
 

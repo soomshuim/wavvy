@@ -26,9 +26,8 @@ Purpose: AI 실행 설정 (How)
 | Style Prompt | `MASTER/style/STYLE.md` |
 | QC/운영 | `MASTER/MANAGER.md` |
 | 역할 분리 | `MASTER/roles/ROLES.md` |
-| YouTube 제목 | `MASTER/youtube/TITLE_RULES.md` |
-| YouTube 설명 | `MASTER/youtube/DESCRIPTION.md` |
-| 장르 태그 | `MASTER/youtube/GENRE_TAGS.md` |
+| YouTube 메타 | `MASTER/youtube/YOUTUBE.md` |
+| 장르 룩업 | `MASTER/reference/GENRES.md` |
 | 장르 루브릭 | `MASTER/rubrics/[GENRE]_RUBRIC.md` |
 | CLI 스펙 | `MASTER/cli/SPEC.md` |
 | 워크플로우 | `MASTER/WORKFLOWS.md` |

@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **YouTube 메타데이터 문서 통합 + 장르 마스터 분리**
+  - youtube/ 3개 파일 → YOUTUBE.md 통합 (124줄)
+  - reference/GENRES.md 신설 (장르 마스터 룩업)
+  - TAG_BANK.md 압축 (장르 섹션 → GENRES.md 이동)
+  - WORKFLOWS.md §7 Phase 1 유저 요청 항목 추가
+  - 참조 링크 수정 (STYLE.md, LYRICS.md)
+
 - **SSOT 문서 150줄 다이어트 + 폴더 구조 재편**
   - 모든 AI 규칙 문서 150줄 이하로 압축
   - 폴더 구조 재편: style/, lyrics/, roles/, rubrics/, youtube/, cli/

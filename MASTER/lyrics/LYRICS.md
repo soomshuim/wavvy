@@ -4,7 +4,7 @@ Version: 3.2
 Last Updated: 2026-03-03
 Purpose: 가사 규칙 SSOT
 
-> **예시**: `lyrics-examples/` 참조
+> **예시**: `lyrics/REFERENCE_SAMPLE.md`, `lyrics/FAILURE_CASES.md` 참조
 
 ---
 
