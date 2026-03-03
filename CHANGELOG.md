@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **10-00 YouTube 메타데이터 v2 재생성 + 타임스탬프 형식 규칙**
+  - concept.md YouTube Draft v2 Final 재생성 (Wavvy 브랜드)
+  - 중복 섹션 정리 (Tracklist, 해시태그, 저작권 → 설명에 통합)
+  - YOUTUBE.md 60분 이상 타임스탬프 HH:MM:SS 형식 규칙 추가
+
 - **YouTube 메타데이터 문서 통합 + 장르 마스터 분리**
   - youtube/ 3개 파일 → YOUTUBE.md 통합 (124줄)
   - reference/GENRES.md 신설 (장르 마스터 룩업)

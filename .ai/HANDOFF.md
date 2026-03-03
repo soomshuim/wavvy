@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-04 00:45:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: YouTube 문서 통합 (3개→1개) + 장르 마스터 분리 (reference/GENRES.md) + TAG_BANK 압축 + 참조 링크 수정
+Next-TODO: 없음
+Commits: 067bef4
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-03 20:55:00
 Project: ~/Project/wavvy
 Agent: Claude

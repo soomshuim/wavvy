@@ -110,6 +110,7 @@ Copyright Ⓒ wavvy. All rights reserved.
 ```
 
 > 첫 타임스탬프 `00:00` 필수 (YouTube 챕터 활성화)
+> 60분 이상: `HH:MM:SS` 형식 필수 (예: `01:03:45`)
 > 구분선: 14개 대시 (`─`)
 
 ---
