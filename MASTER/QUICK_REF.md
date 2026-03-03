@@ -1,4 +1,4 @@
-# VIBE-M Quick Reference (for Human)
+# Wavvy Quick Reference (for Human)
 Version: 1.1
 Last Updated: 2026-02-16
 Purpose: One-page operational guide for AI-assisted music production
@@ -8,7 +8,7 @@ Scope: Role usage, order, and guardrails only
 
 ## What This Is
 
-This document explains **HOW to use Claude** inside the VIBE-M system.
+This document explains **HOW to use Claude** inside the Wavvy system.
 
 - Claude = **Execution & Production Brain**
 - GPT = **Style / Lyrics Consultant**

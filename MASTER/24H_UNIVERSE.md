@@ -410,7 +410,7 @@ Group 3 (Station):  Cold, Dark, Intense, Heavy
 
 ---
 
-## 6. Integration with VIBE-M SSOT
+## 6. Integration with Wavvy SSOT
 
 이 문서는 다음 SSOT 문서들과 연동된다:
 

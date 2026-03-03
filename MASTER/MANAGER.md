@@ -1,14 +1,14 @@
-# VIBE-M MANAGER.md
+# Wavvy MANAGER.md
 Version: 1.6
 Last Updated: 2026-02-21
 Role: Executive Manager / Quality Gatekeeper
-Applies To: All VIBE-M projects, series, and tracks
+Applies To: All Wavvy projects, series, and tracks
 
 ---
 
 ## 🎯 0. Manager Mission Statement
 
-VIBE-M Manager의 임무는 다음 한 문장으로 정의된다.
+Wavvy Manager의 임무는 다음 한 문장으로 정의된다.
 
 "자동화된 예술의 품질을 보증하고, 알고리즘·수익화·브랜딩 리스크를 사전에 제거한다."
 

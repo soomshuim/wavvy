@@ -188,7 +188,7 @@ Minor, Lo-fi hiphop, 60bpm, Melancholic piano keys with vinyl crackle sound, Whi
 | `[AA]` | **절대 가사로 읽지 않음** | 구조 태그용 |
 | `(BB)` | **조건부** | 코러스/애드립 가사 = 100% 읽음, 톤/악기 지시 = ~30% 인식 |
 
-### 소괄호 `()` 사용 규칙 — VIBE-M 검증 (2026-02)
+### 소괄호 `()` 사용 규칙 — Wavvy 검증 (2026-02)
 
 | 규칙 | 설명 |
 |------|------|
@@ -420,7 +420,7 @@ Focus on clarity rather than loudness
 
 ---
 
-## VIBE-M 적용 포인트
+## Wavvy 적용 포인트
 
 ### Style Prompt 작성 시
 

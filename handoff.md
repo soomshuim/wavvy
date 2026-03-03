@@ -15,7 +15,7 @@ Scope: Document alignment for SSOT consistency and spec/code sync
 - `MASTER/_INDEX.md`
 - `MASTER/STYLE.md`
 - `MASTER/QUICK_REF.md`
-- `MASTER/VIBE-M_Master_Plan.md`
+- `MASTER/Wavvy_Master_Plan.md`
 
 ## What Changed
 1. `MASTER/_INDEX.md`
@@ -40,22 +40,22 @@ Scope: Document alignment for SSOT consistency and spec/code sync
   - follow `MASTER/_INDEX.md` responsibility matrix first
   - final QC decision follows `MANAGER.md`
 
-4. `MASTER/VIBE-M_Master_Plan.md`
+4. `MASTER/Wavvy_Master_Plan.md`
 - Bumped spec version to `2.2 (Spec Alignment)`.
 - Updated directory example to match current real usage (series folder without required date layer).
 - Updated track format from MP3-only to `mp3|wav` to match `vibem.py`.
 - Updated validate section accordingly (MP3/WAV).
-- Fixed obsolete `vibem.md` reference to `MASTER/VIBE-M_Master_Plan.md`.
+- Fixed obsolete `vibem.md` reference to `MASTER/Wavvy_Master_Plan.md`.
 
 ## Notes
-- No `AGENT.md`/`AGENTS.md` exists inside `vibe-m`.
+- No `AGENT.md`/`AGENTS.md` exists inside `wavvy`.
 - `AGENTS.md` exists in another project: `Project/WDS/AGENTS.md`.
-- No direct instruction-file conflict detected for `vibe-m`.
+- No direct instruction-file conflict detected for `wavvy`.
 
 ---
 HANDOFF: Codex -> Claude
 Date: 2026-02-16 03:55:00
-Project: /Users/zen/Project/vibe-m
+Project: ~/Project/wavvy
 Agent: Codex
 Summary: GPT Loop Sidecar 설계(PRD/구현명세)부터 M1~M3.5 구현(템플릿 퍼소나 강화, hard/soft 검증, revise 루프, OpenAI 호출, 버전/리포트 체계)까지 반영 완료. 기본 모델은 gpt-5.2로 설정.
 Next-TODO: OPENAI_API_KEY 설정 환경에서 실제 시리즈 트랙 1~2개 파일럿 실행 후 hard rule 임계값 튜닝.

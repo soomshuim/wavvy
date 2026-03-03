@@ -1,4 +1,4 @@
-# VIBE-M LYRICS.md
+# Wavvy LYRICS.md
 Version: 2.3.0
 Last Updated: 2026-02-16
 Purpose: Enforce lyrical consistency, musicality, and AI-safe input
@@ -77,7 +77,7 @@ Purpose: Enforce lyrical consistency, musicality, and AI-safe input
 
 ## 🎯 0.6 LYRICS.md의 존재 이유
 
-VIBE-M에서 가사는 "감정 표현"이 아니라 **음악을 안정적으로 생성하기 위한 설계 데이터**다.
+Wavvy에서 가사는 "감정 표현"이 아니라 **음악을 안정적으로 생성하기 위한 설계 데이터**다.
 
 이 문서의 목표는 다음 3가지를 동시에 만족시키는 것이다.
 
@@ -380,17 +380,17 @@ Chorus에서 직접적인 명령/호소 표현은 1회 청취에는 강렬하지
 
 ## 🧼 2. Pure Lyric Input Rule (입력 무결성)
 
-### 2.0 VIBE-M이 가이드와 다르게 가는 이유
+### 2.0 Wavvy가 가이드와 다르게 가는 이유
 
 > **"설명형 메타 지시는 Suno에서 가사로 낭독될 확률이 높아 금지하되, 구조 직후 1행 `()` 메타는 허용한다."**
 
 **배경:**
 - 일부 Suno 가이드는 가사 입력란에 `(female)`, `(Scene: ...)` 같은 메타 정보를 넣으라고 권장
 - 그러나 실제 테스트 결과, Suno가 이를 **가사로 읽어버리는 경우가 빈번**
-- VIBE-M은 이 문제를 Case 04로 기록하고, 순수 가창 데이터만 입력하는 방식을 채택
+- Wavvy는 이 문제를 Case 04로 기록하고, 순수 가창 데이터만 입력하는 방식을 채택
 
-**VIBE-M 원칙:**
-| 항목 | 가이드 권장 | VIBE-M 방식 | 이유 |
+**Wavvy 원칙:**
+| 항목 | 가이드 권장 | Wavvy 방식 | 이유 |
 |------|-----------|-------------|------|
 | 보컬/악기/코드 메타 | `(female)`, `(piano arpeggio)` 등 | 구조 태그 다음 줄 `()` 1행으로 허용 | 제어 정보 전달 |
 | 씬 설명 | `(Scene: rainy night)` | 금지, Style Prompt로 이동 | 낭독 방지 |
@@ -423,7 +423,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 ### 2.2 허용되는 태그 — v1.9 태그 사전 고정
 
-> **VIBE-M은 태그 최소화가 원칙. 허용 태그 외 사용 금지.**
+> **Wavvy는 태그 최소화가 원칙. 허용 태그 외 사용 금지.**
 
 #### ⚠️ SSOT: 괄호 사용 규칙
 
@@ -755,9 +755,9 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 ## 🧩 4. Canonical Structure (표준 구조)
 
-### 4.1 VIBE-M 기본 구조
+### 4.1 Wavvy 기본 구조
 
-모든 VIBE-M 트랙은 아래 구조를 기본으로 한다.
+모든 Wavvy 트랙은 아래 구조를 기본으로 한다.
 
 ```
 [intro]
@@ -777,7 +777,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 
 | 구조 | 공식 | 용도 | 대표 예시 |
 |------|------|------|----------|
-| **VIBE-M Default** | V-B-C-V-B-C-C | 감성 R&B, 브릿지 강조 | 기본 |
+| **Wavvy Default** | V-B-C-V-B-C-C | 감성 R&B, 브릿지 강조 | 기본 |
 | **Pop Standard** | V-C-V-C-B-C | 가장 대중적, 안정감 | 아이유 밤편지 |
 | **K-POP Standard** | V-P-C-V-P-C-B-C | Pre-Chorus로 고조 | 블랙핑크 |
 | **Storyteller** | V-V-C-V-C | 스토리텔링 중심 | 빌리진 |
@@ -790,7 +790,7 @@ Suno 가사 입력란에 다음을 **절대 넣지 않는다**.
 - P = `[pre-chorus]`
 
 **선택 기준:**
-- 감성/R&B → VIBE-M Default 또는 Pop Standard
+- 감성/R&B → Wavvy Default 또는 Pop Standard
 - K-POP/댄스 → K-POP Standard
 - 힙합 → Short & Sweet
 - 포크/발라드 → Storyteller

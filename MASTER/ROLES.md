@@ -1,4 +1,4 @@
-# VIBE-M Role System (SSOT)
+# Wavvy Role System (SSOT)
 Version: 1.9
 Last Updated: 2026-02-16
 Purpose: Separate thinking to prevent duplication, drift, and algorithmic risk
@@ -8,7 +8,7 @@ Scope: Defines WHY and WHAT each AI role is responsible for
 
 ## Core Principle
 
-VIBE-M separates cognition into explicit roles to avoid:
+Wavvy separates cognition into explicit roles to avoid:
 - Prompt overfitting
 - Algorithmic duplication risk
 - Creative drift

@@ -1,7 +1,7 @@
 # Implementation Spec - GPT Loop Sidecar
 Version: 0.1 (Draft)
 Last Updated: 2026-02-16
-Owner: vibe-m
+Owner: Wavvy
 Status: Draft (PRD Approved)
 
 ---
@@ -26,7 +26,7 @@ Status: Draft (PRD Approved)
 ## 2) File Layout (Planned)
 
 ```text
-vibe-m/
+wavvy/
 ├─ tools/
 │  └─ llm_loop.py
 ├─ tools/llm_loop/

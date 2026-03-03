@@ -1,4 +1,4 @@
-# VIBE-M STYLE.md
+# Wavvy STYLE.md
 Version: 2.8
 Last Updated: 2026-02-16
 Purpose: Raw Vocal 기본값 + 진성 강제 + 커뮤니티 베스트 프랙티스 통합
@@ -678,8 +678,8 @@ DEBUG B: Exclude에 "choir" 1개만 추가
 **예시:**
 | 시리즈 | Spine | Color 옵션 |
 |--------|-------|-----------|
-| PM_0900 밤산책 | City Pop | Neo-Soul, Funk, R&B Ballad |
-| AM_0400 새벽 | Lo-fi R&B | Jazz, Ambient |
+| 21-00 밤산책 | City Pop | Neo-Soul, Funk, R&B Ballad |
+| 04-00 새벽 | Lo-fi R&B | Jazz, Ambient |
 
 **적용:**
 ```
@@ -688,7 +688,7 @@ DEBUG B: Exclude에 "choir" 1개만 추가
 ❌ City Pop + Neo-Soul + Funk + Jazz (4개 → 혼란)
 ```
 
-### 11.1 VIBE-M 권장 조합
+### 11.1 Wavvy 권장 조합
 
 | 기본 장르 | 조합 권장 | 조합 회피 |
 |----------|----------|----------|

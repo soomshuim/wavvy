@@ -1,4 +1,4 @@
-# Lessons Learned - vibe-m
+# Lessons Learned - Wavvy
 
 > 버그 패턴 및 해결책 기록
 >

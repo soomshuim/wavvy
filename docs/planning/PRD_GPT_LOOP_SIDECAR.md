@@ -1,14 +1,14 @@
-# PRD - GPT Loop Sidecar for VIBE-M
+# PRD - GPT Loop Sidecar for Wavvy
 Version: 0.1 (Draft)
 Last Updated: 2026-02-16
-Owner: vibe-m
+Owner: Wavvy
 Status: Draft (Planning Approved)
 
 ---
 
 ## 1) Problem
 
-VIBE-M의 기존 워크플로우는 문서 규약과 사람 검토 품질이 높지만, 가사/Style/Exclude 초안 작성과 반복 검증에 수동 비용이 크다.  
+Wavvy의 기존 워크플로우는 문서 규약과 사람 검토 품질이 높지만, 가사/Style/Exclude 초안 작성과 반복 검증에 수동 비용이 크다.  
 기존 SSOT와 승인 절차는 유지한 채, 초안 생성과 검증/개선 루프만 옵션형으로 자동화할 필요가 있다.
 
 ---

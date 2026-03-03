@@ -1,4 +1,4 @@
-# VIBE-M PLAYLIST_GUIDE.md
+# Wavvy PLAYLIST_GUIDE.md
 Version: 1.3
 Last Updated: 2026-02-16
 Purpose: 플레이리스트 컨셉 설계 시 참고하는 인기 사례 분석 가이드
@@ -6,23 +6,23 @@ Source: Reference/유튜브 감성 플레이리스트 인기 사례 분석.pdf
 
 ---
 
-## 0. Playlist Title Generation Rules (SSOT v1.5) — soomshuim
+## 0. Playlist Title Generation Rules (SSOT v1.6) — Wavvy
 
-> **이 섹션이 soomshuim 채널의 공식 타이틀 규칙이다. Section 1은 참고 패턴일 뿐.**
+> **이 섹션이 Wavvy 채널의 공식 타이틀 규칙이다. Section 1은 참고 패턴일 뿐.**
 
 ### Fixed Title Structure (DO NOT CHANGE ORDER)
 ```
-[Playlist] [AM/PM HH:MM] soomshuim | {TIME_STATE_PHRASE}, {MODIFIER_PHRASE} {GENRE}
+[Playlist] [HH:MM] Wavvy | {TIME_STATE_PHRASE}, {MODIFIER_PHRASE} {GENRE}
 ```
 
 ---
 
 ### Fixed Tokens (Must be used exactly)
 - `[Playlist]` must be included at the beginning.
-- Channel name must be exactly: `soomshuim`
+- Channel name must be exactly: `Wavvy`
+- Handle: `@wavvy24`
 - Time must be formatted as:
-  - `[AM HH:MM]` or `[PM HH:MM]`
-  - 12-hour clock only (01–12)
+  - `[HH:MM]` (24-hour clock, 00–23)
 - Separator must be a vertical bar: `|`
 
 ---
@@ -112,11 +112,11 @@ Use ONLY when Context Mode is missing or ambiguous.
 
 | Time | Default |
 |------|---------|
-| AM 12:00 – AM 05:00 | Minimal / calm |
-| AM 06:00 – AM 08:00 | Light / transitional |
-| AM 09:00 – PM 05:00 | Functional |
-| PM 06:00 – PM 09:00 | Energetic |
-| PM 10:00 – PM 11:59 | Settling |
+| 00:00 – 05:00 | Minimal / calm |
+| 06:00 – 08:00 | Light / transitional |
+| 09:00 – 17:00 | Functional |
+| 18:00 – 21:00 | Energetic |
+| 22:00 – 23:59 | Settling |
 
 ---
 
@@ -166,17 +166,17 @@ Use ONLY when Context Mode is missing or ambiguous.
 
 **Settling Mode:**
 ```
-[Playlist] [AM 04:00] soomshuim | 하루가 멈춘 시간, 새벽 Slow R&B 보컬
+[Playlist] [04:00] Wavvy | 하루가 멈춘 시간, 새벽 Slow R&B 보컬
 ```
 
 **Energizing Mode:**
 ```
-[Playlist] [AM 08:00] soomshuim | 하루를 밀어 올리는 시간, 경쾌하게 흐르는 미디엄 템포 Rock
+[Playlist] [08:00] Wavvy | 하루를 밀어 올리는 시간, 경쾌하게 흐르는 미디엄 템포 Rock
 ```
 
 **Transition Mode:**
 ```
-[Playlist] [PM 06:00] soomshuim | 다시 움직이기 전의 시간, 부드럽게 이어지는 Indie Rock
+[Playlist] [18:00] Wavvy | 다시 움직이기 전의 시간, 부드럽게 이어지는 Indie Rock
 ```
 
 ---
@@ -184,7 +184,7 @@ Use ONLY when Context Mode is missing or ambiguous.
 ## 1. 제목 전략 (Title Strategy) — 참고 패턴
 
 > ⚠️ **아래는 일반적인 유튜브 제목 패턴 참고용이다.**
-> **soomshuim 채널의 공식 타이틀 규칙은 Section 0을 따른다.**
+> **Wavvy 채널의 공식 타이틀 규칙은 Section 0을 따른다.**
 
 ### 1.1 TPO 패턴 (시간/장소/상황)
 > 음악이 필요한 순간을 정확히 포착
@@ -367,7 +367,7 @@ Use ONLY when Context Mode is missing or ambiguous.
 
 ---
 
-## 7. VIBE-M 적용 체크리스트
+## 7. Wavvy 적용 체크리스트
 
 플레이리스트 컨셉 설계 시 확인:
 
@@ -415,7 +415,7 @@ Use ONLY when Context Mode is missing or ambiguous.
 ```
 [감성 오프닝 문장]
 
-soomshuim은 우리말 가사로, 그 시간들의 감정을 기록합니다.
+Wavvy는 우리말 가사로, 그 시간들의 감정을 기록합니다.
 [감각 이미지 묘사]
 
 당신의 하루에 작은 쉼이 되길 바랍니다.
@@ -431,7 +431,7 @@ soomshuim은 우리말 가사로, 그 시간들의 감정을 기록합니다.
 
 **채널 About (Layer 3):**
 ```
-soomshuim은
+Wavvy는
 우리말 가사로 하루의 시간들을 기록하는 음악 채널입니다.
 말보다 먼저 닿는 소리를 모읍니다.
 ```
@@ -457,7 +457,7 @@ soomshuim은
 
 ### 구조
 
-| 위치 | 역할 | 예시 (PM_0900) |
+| 위치 | 역할 | 예시 (21-00) |
 |------|------|----------------|
 | Track 01 | 시작 - 문 열림 | "문을 열면 moon" |
 | Track 10 | 종결 - 문 닫힘 | "문을 닫으면 room" |
@@ -477,8 +477,8 @@ soomshuim은
 
 | 시리즈 | Track 01 Hook | Track 10 Hook |
 |--------|---------------|---------------|
-| PM_0900 밤산책 | "문을 열면 moon" | "문을 닫으면 room" |
-| AM_0400 새벽 | (TBD) | (TBD) |
+| 21-00 밤산책 | "문을 열면 moon" | "문을 닫으면 room" |
+| 04-00 새벽 | (TBD) | (TBD) |
 
 ---
 

@@ -7,7 +7,7 @@
 | 항목 | 값 |
 |------|-----|
 | Title | 골목 |
-| Artist | Soomshuim |
+| Artist | Wavvy |
 | Series | PM 07:00 (퇴근길의 위로) |
 | Genre | Korean Slow R&B Ballad |
 | BPM | 67 |
@@ -73,12 +73,12 @@ Lyrics
 Credits
 
 Title: 골목
-Music & Lyrics: Soomshuim
-Produced by: Soomshuim (w.Suno Studio)
+Music & Lyrics: Wavvy
+Produced by: Wavvy (w.Suno Studio)
 
 
 #골목 #퇴근길의위로 #PM0700 #퇴근길
-#위로송 #밤감성 #soomshuim #음악 #감성알앤비
+#위로송 #밤감성 #wavvy #음악 #감성알앤비
 ```
 
 ### 챕터 (타임스탬프)
@@ -99,14 +99,14 @@ Produced by: Soomshuim (w.Suno Studio)
 
 ### 해시태그
 ```
-#골목 #퇴근길의위로 #PM0700 #퇴근길 #위로송 #밤감성 #soomshuim #음악 #감성알앤비
+#골목 #퇴근길의위로 #PM0700 #퇴근길 #위로송 #밤감성 #wavvy #음악 #감성알앤비
 ```
 
 ## Shorts
 
 ### 제목
 ```
-퇴근길의 위로 | 골목 - soomshuim
+퇴근길의 위로 | 골목 - wavvy
 ```
 
 ### 설명글
@@ -123,7 +123,7 @@ Produced by: Soomshuim (w.Suno Studio)
 
 
 #골목 #퇴근길의위로 #PM0600 #퇴근길
-#위로송 #밤감성 #soomshuim #음악 #감성알앤비
+#위로송 #밤감성 #wavvy #음악 #감성알앤비
 ```
 
 ### 고정댓글
