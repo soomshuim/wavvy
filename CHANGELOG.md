@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **전 시리즈 YouTube 메타데이터 v2 재생성**
+  - 04-00, 14-00, 16-00, 18-00, 21-00 시리즈 v2 Final 재생성
+  - 06-00 타임스탬프 형식 수정 (60분+ → HH:MM:SS)
+  - 브랜드 통일 (soomshuim → Wavvy)
+  - 제목 포맷 통일 (Playlist | HH:MM | 감정훅 + 이모지 | 장르 | 용도 | Wavvy)
+
 - **10-00 YouTube 메타데이터 v2 재생성 + 타임스탬프 형식 규칙**
   - concept.md YouTube Draft v2 Final 재생성 (Wavvy 브랜드)
   - 중복 섹션 정리 (Tracklist, 해시태그, 저작권 → 설명에 통합)
