@@ -10,7 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **11-00 Track 01 "경계 (Threshold)" 가사/스타일 txt**
   - B타입 만트라, 82 BPM, Am
   - LOFI_RUBRIC Hard Gates PASS, 6-Factor 93점
-  - Suno 생성 대기 상태
+
+### Fixed
+- **Track 01 구조/스타일 수정**
+  - Hook 4회→2회 (가사 반복 축소)
+  - [interlude] 추가로 3분+ 구조 확장
+  - 보컬 믹스 다운: "Vocal as texture, not lead"
+  - Exclude: forward vocals, prominent vocals 추가
 
 ### Changed
 - **WORKFLOWS.md v1.2 — Pre-condition + 루브릭 테스트 셀프 루프**

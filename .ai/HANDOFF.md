@@ -2,12 +2,22 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-06 01:00:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: Track 01 구조/스타일 수정 — Hook 축소(4→2), [interlude] 추가, 보컬 믹스 다운
+Next-TODO: Suno 재생성 → 3분+ 및 보컬 믹스 확인
+Commits: TBD
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-06 00:30:00
 Project: ~/Project/wavvy
 Agent: Claude
 Summary: 11-00 Track 01 "경계 (Threshold)" 가사/스타일 txt 추가 (LOFI_RUBRIC 93점 PASS)
 Next-TODO: Suno 생성 → PASS 확인 → concept.md 반영
-Commits: TBD
+Commits: 9efa63c
 ---
 
 ---
