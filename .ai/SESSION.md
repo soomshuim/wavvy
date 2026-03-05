@@ -8,6 +8,7 @@
 
 | 작업 | 날짜 |
 |------|------|
+| feat: 11-00 Track 01 "경계" 가사/스타일 txt 추가 | 2026-03-05 |
 | docs: WORKFLOWS.md v1.2 - Pre-condition + 루브릭 테스트 셀프 루프 | 2026-03-05 |
 | feat: 11-00 Flow 시리즈 신설 + LOFI_RUBRIC v1.0 | 2026-03-05 |
 | docs: 전 시리즈 YouTube 메타데이터 v2 재생성 (Wavvy 브랜드 통일) | 2026-03-04 |

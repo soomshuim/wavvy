@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **11-00 Track 01 "경계 (Threshold)" 가사/스타일 txt**
+  - B타입 만트라, 82 BPM, Am
+  - LOFI_RUBRIC Hard Gates PASS, 6-Factor 93점
+  - Suno 생성 대기 상태
+
 ### Changed
 - **WORKFLOWS.md v1.2 — Pre-condition + 루브릭 테스트 셀프 루프**
   - §1 가사, §2 스타일 워크플로우에 Pre-condition 추가 (LYRICS.md, STYLE.md, RUBRIC 필수 참조)

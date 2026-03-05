@@ -2,12 +2,22 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-06 00:30:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 Track 01 "경계 (Threshold)" 가사/스타일 txt 추가 (LOFI_RUBRIC 93점 PASS)
+Next-TODO: Suno 생성 → PASS 확인 → concept.md 반영
+Commits: TBD
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-06 00:15:00
 Project: ~/Project/wavvy
 Agent: Claude
 Summary: WORKFLOWS.md v1.2 — Pre-condition (LYRICS.md/STYLE.md/RUBRIC 필수 참조) + 루브릭 테스트 셀프 루프 (Hard Gates → 6-Factor → PASS까지 반복)
 Next-TODO: Track 01 "경계 (Threshold)" 파일 저장 후 Suno 생성
-Commits: 40701a6
+Commits: 90fdddd
 ---
 
 ---
