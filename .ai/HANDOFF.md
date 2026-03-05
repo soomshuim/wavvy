@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-05 23:30:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 Flow 시리즈 신설 (Classic Lo-fi, 15트랙, C타입 67%) + LOFI_RUBRIC v1.0 + lofi-genre-research.md
+Next-TODO: Track 01 "경계 (Threshold)" 가사/스타일 작성
+Commits: 1da3aa0
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-04 01:08:00
 Project: ~/Project/wavvy
 Agent: Claude

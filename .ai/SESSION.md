@@ -2,23 +2,24 @@
 
 > 현재 세션 상태 기록
 >
-> Last updated: 2026-03-04
+> Last updated: 2026-03-05
 
-## 최근 작업 (2026-03-04)
+## 최근 작업 (2026-03-05)
 
 | 작업 | 날짜 |
 |------|------|
+| feat: 11-00 Flow 시리즈 신설 + LOFI_RUBRIC v1.0 | 2026-03-05 |
 | docs: 전 시리즈 YouTube 메타데이터 v2 재생성 (Wavvy 브랜드 통일) | 2026-03-04 |
 | docs: 10-00 YouTube 메타데이터 v2 재생성 + 타임스탬프 형식 규칙 | 2026-03-04 |
 | refactor: YouTube 문서 통합 + 장르 마스터 분리 | 2026-03-04 |
 | refactor: SSOT 문서 150줄 다이어트 + 폴더 구조 재편 | 2026-03-03 |
 
 ### 상세
-- 모든 AI 규칙 문서 150줄 이하로 압축
-- 폴더 구조 재편: style/, lyrics/, roles/, rubrics/, youtube/, cli/
-- wavvy.md 신설 (프로젝트 정체성/브랜드)
-- CLAUDE.md 정리 (AI 실행 엔진 설정)
-- 삭제: _INDEX.md, 24H_UNIVERSE.md, PLAYLIST_GUIDE.md, QUICK_REF.md, llm_loop
+- **11-00 Flow 시리즈 신설**: Classic Lo-fi Hip-hop (Jinsang 스타일)
+- 15트랙 플랜 완료 (C타입 67%, BPM 70-90)
+- LOFI_RUBRIC.md v1.0 작성 (Chillhop과 차별화)
+- lofi-genre-research.md 웹 리서치 기반 작성
+- Lenny Team 회의 2회 (컨셉 + Flow 재정의)
 
 ---
 
