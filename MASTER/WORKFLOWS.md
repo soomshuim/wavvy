@@ -2,31 +2,51 @@
 
 > **모든 작업 워크플로우 통합 문서**
 >
-> Version: 1.0
-> Last Updated: 2026-03-03
+> Version: 1.2
+> Last Updated: 2026-03-05
 
 ---
 
 ## 1. 가사 생성 워크플로우
 
-> **SSOT: `MASTER/LYRICS.md` (체크리스트) + `MASTER/MANAGER.md` Phase 0.5 (수정 절차)**
+> **SSOT: `MASTER/lyrics/LYRICS.md` (체크리스트) + `MASTER/MANAGER.md` Phase 0.5 (수정 절차)**
 
+### ⚠️ Pre-condition (필수)
+1. **Read `MASTER/lyrics/LYRICS.md`** — 허용 태그, 괄호 규칙, 길이 제한 확인
+2. **Read `MASTER/rubrics/[GENRE]_RUBRIC.md`** — 장르별 가사 규칙 확인
+3. 참조 없이 가사 작성 시 → **FAIL (재작성)**
+
+### 절차
 1. `LYRICS.md` + 이전 트랙 키워드 확인 + 크로스시리즈 겹침 검증 (3축 중 2개 이상 겹침 = FAIL)
 2. `Reference/museA_suno_guide.md` §3-4 참조 (구조 공식, 메타태그 규칙)
-3. 초안 생성 -> self-QC (LYRICS.md 전항목) -> Korean Positioning (K1-K3) -> 메타태그 검증 -> 장르 게이트 (루브릭) -> 패턴 고착 검사
-4. 전부 PASS시 QC 테이블과 함께 출력 (통과 전 유저 제안 금지)
-5. .txt 파일 저장 + pbcopy -> 유저 컨펌 후 concept.md 반영
+3. 초안 생성 → self-QC (LYRICS.md 전항목) → Korean Positioning (K1-K3) → 메타태그 검증 → 패턴 고착 검사
+4. **루브릭 테스트 (셀프 루프)**
+   - Hard Gates 체크 → **1개라도 FAIL 시 즉시 수정 후 재체크**
+   - Hard Gates PASS 후 6-Factor 채점 → **80점 미만 시 수정 후 재채점**
+   - 유저에게 제안 전 PASS 필수
+5. 전부 PASS시 QC 테이블과 함께 출력 (통과 전 유저 제안 금지)
+6. .txt 파일 저장 + pbcopy → 유저 컨펌 후 concept.md 반영
 
 ---
 
 ## 2. Style Prompt 생성 워크플로우
 
-> **SSOT: `MASTER/STYLE.md` (S0-S20 슬롯) + `MASTER/ROLES.md` (S1-S12 Validation)**
+> **SSOT: `MASTER/style/STYLE.md` (S0-S10 슬롯) + `MASTER/roles/ROLES.md` (Validation)**
 
+### ⚠️ Pre-condition (필수)
+1. **Read `MASTER/style/STYLE.md`** — 슬롯 체크리스트, 900자 제한, Harmony Guard 확인
+2. **Read `MASTER/rubrics/[GENRE]_RUBRIC.md`** — 장르별 프로덕션 규칙 확인
+3. 참조 없이 스타일 작성 시 → **FAIL (재작성)**
+
+### 절차
 1. `STYLE.md` Required Slots + `Reference/museA_suno_guide.md` §1,2,6 참조
-2. 초안 생성 -> self-QC (S0-S20) -> 글자수 검증 (<= 900자, 공백 포함) -> 장르 게이트
-3. 전부 PASS시 QC 테이블 + 글자수와 함께 출력 (Style + Exclude 반드시 세트 출력)
-4. .txt 파일 저장 + pbcopy -> 유저 컨펌 후 concept.md 반영
+2. 초안 생성 → self-QC (S0-S10) → 글자수 검증 (≤900자, 공백 포함)
+3. **루브릭 테스트 (셀프 루프)**
+   - Hard Gates 체크 → **1개라도 FAIL 시 즉시 수정 후 재체크**
+   - Hard Gates PASS 후 6-Factor 채점 → **80점 미만 시 수정 후 재채점**
+   - 유저에게 제안 전 PASS 필수
+4. 전부 PASS시 QC 테이블 + 글자수와 함께 출력 (Style + Exclude 반드시 세트 출력)
+5. .txt 파일 저장 + pbcopy → 유저 컨펌 후 concept.md 반영
 
 ---
 

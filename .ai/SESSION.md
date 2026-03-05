@@ -8,6 +8,7 @@
 
 | 작업 | 날짜 |
 |------|------|
+| docs: WORKFLOWS.md v1.2 - Pre-condition + 루브릭 테스트 셀프 루프 | 2026-03-05 |
 | feat: 11-00 Flow 시리즈 신설 + LOFI_RUBRIC v1.0 | 2026-03-05 |
 | docs: 전 시리즈 YouTube 메타데이터 v2 재생성 (Wavvy 브랜드 통일) | 2026-03-04 |
 | docs: 10-00 YouTube 메타데이터 v2 재생성 + 타임스탬프 형식 규칙 | 2026-03-04 |

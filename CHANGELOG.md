@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **WORKFLOWS.md v1.2 — Pre-condition + 루브릭 테스트 셀프 루프**
+  - §1 가사, §2 스타일 워크플로우에 Pre-condition 추가 (LYRICS.md, STYLE.md, RUBRIC 필수 참조)
+  - 루브릭 테스트 셀프 루프 추가: Hard Gates → 6-Factor → PASS까지 반복
+  - 참조 없이 작성 시 FAIL 재작성 규칙 명시
+
 - **전 시리즈 YouTube 메타데이터 v2 재생성**
   - 04-00, 14-00, 16-00, 18-00, 21-00 시리즈 v2 Final 재생성
   - 06-00 타임스탬프 형식 수정 (60분+ → HH:MM:SS)
