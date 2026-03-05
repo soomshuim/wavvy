@@ -104,7 +104,7 @@ Evidence: `Reference/lofi-genre-research.md`
 3. **"dusty"** 또는 **"muffled"** 키워드 포함
 4. A/B: Vocal buried + distant / C: Instrumental + texture 명시
 5. Exclude 1-8개 + 하모니 가드 2개+
-6. 목표 길이 **2분30초+** 명시
+6. 목표 길이 **3분+** 명시
 7. **"crisp", "clean", "bright", "present"** 키워드 미포함
 8. [Intro] = **Instrumental only**
 9. Humanized drums 명시
@@ -170,7 +170,7 @@ Evidence: `Reference/lofi-genre-research.md`
 
 ### 5. Structural Flow — 15점
 
-| 14-15 | 루프 기반, 부드러운 전환, 2분30초+ |
+| 14-15 | 루프 기반, 부드러운 전환, 3분+ |
 | 11-13 | 전환 다소 급격 / 길이 살짝 미달 |
 | ≤10 | 반복감 높음 / 구조 불분명 |
 
@@ -203,7 +203,7 @@ Evidence: `Reference/lofi-genre-research.md`
 □ Jazz 요소 2개+ (샘플 punished 처리)
 □ Humanized drums (±10-20ms)
 □ 보컬 buried / 인스트 텍스처 처리
-□ 2분30초+, 루프 기반 구조
+□ 3분+, 루프 기반 구조
 □ "Classic Lo-fi"라고 즉시 설명 가능
 ```
 
