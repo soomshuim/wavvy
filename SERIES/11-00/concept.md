@@ -231,22 +231,22 @@ Grain:      8-12% opacity
 
 ### 트랙 리스트
 
-| # | 제목 | 타입 | BPM | 컨셉 | 아크 | 상태 |
-|---|------|------|-----|------|------|------|
-| 01 | 경계 (Threshold) | B | 82 | 현실과 몰입 사이, 빠져들기 직전 | 진입 | 기획 |
-| 02 | 멀어져 (Fade) | C | 80 | 주변 소음이 점점 작아짐 | 진입 | 기획 |
-| 03 | 리듬 (Rhythm) | C | 78 | 작업 페이스가 잡힘 | 진입 | 기획 |
-| 04 | 자동화 (Autopilot) | C | 76 | 의식 없이 몸이 움직임 | 몰입 | 기획 |
-| 05 | 초점 (Focus) | C | 75 | 시선이 한 점으로 좁혀짐 | 몰입 | 기획 |
-| 06 | 잊음 (Forget) | C | 74 | 숨 쉬는 것도 잊음 | 몰입 | 기획 |
+| # | 제목 | 타입 | BPM | 컨셉 | 아크 | 상태 | 변주 |
+|---|------|------|-----|------|------|------|------|
+| 01 | 경계 (Threshold) | B | 82 | 현실과 몰입 사이, 빠져들기 직전 | 진입 | PASS |
+| 02 | 멀어져 (Fade) | C | 80 | 주변 소음이 점점 작아짐 | 진입 | PASS |
+| 03 | 리듬 (Rhythm) | C | 78 | 작업 페이스가 잡힘 | 진입 | PASS |
+| 04 | 에이전트 (Agent) | C | 76 | 의식 없이 몸이 움직임 | 몰입 | PASS |
+| 05 | 초점 (Focus) | C | 75 | 시선이 한 점으로 좁혀짐 | 몰입 | PASS |
+| 06 | 망각 (Forget) | C | 74 | 숨 쉬는 것도 잊음 | 몰입 | 기획 |
 | 07 | 흐름 (Flow) | C | 73 | 생각이 물처럼, 막힘없이 | 몰입 | 기획 |
-| 08 | 하나 (One) | C | 72 | 나와 작업이 하나 | 몰입 | 기획 |
+| 08 | 하나 (One) | C | 72 | 나와 작업이 하나 | 몰입 | 기획 | **Kalimba-Keys** |
 | 09 | 정지 (Still) | C | 70 | 시간이 멈춤 | 정점 | 기획 |
-| 10 | 터널 (Tunnel) | B | 72 | 터널 비전, 오직 앞만 | 정점 | 기획 |
+| 10 | 터널 (Tunnel) | B | 72 | 터널 비전, 오직 앞만 | 정점 | 기획 | **Kalimba-Keys** |
 | 11 | 어딘가 (Somewhere) | C | 74 | 여기가 어디지, 시간 왜곡 | 정점 | 기획 |
 | 12 | 신호 (Signal) | B | 78 | 현실에서 오는 신호 | 복귀 | 기획 |
 | 13 | 꼬르륵 (Growl) | C | 82 | 배에서 소리, 몸이 먼저 깨어남 | 복귀 | 기획 |
-| 14 | 고개 (Look Up) | B | 85 | 고개 들어 시계 봄, "엇" | 복귀 | 기획 |
+| 14 | 고개 (Look Up) | B | 85 | 고개 들어 시계 봄, "엇" | 복귀 | 기획 | **Neo-Jazzhop** |
 | 15 | 벌써 (Already) | A | 88 | 벌써 점심이네, 현실 복귀 | 복귀 | 기획 |
 
 ### 타입 배분
@@ -268,9 +268,279 @@ Grain:      8-12% opacity
 
 ---
 
+## Style Variations (변주 가이드)
+
+> Classic Lo-fi 80% + 변주 20% (3곡)
+
+### Kalimba-Keys Melancholia (Track 08, 10)
+```
+lo-fi bedroom pop, kalimba melody, detuned music box, warm Rhodes, melancholic keys, organic textures, tape hiss, intimate mood, soft drums, dreamy, 70-80 BPM
+```
+- 독특한 악기: kalimba, celesta, music box, prepared piano
+- 분위기: 신비롭고 친밀한, 몽환적
+
+### Neo-Jazzhop (Track 14)
+```
+neo-soul jazzhop, lo-fi jazz fusion, warm Rhodes piano, brushed drums, mellow saxophone, vinyl warmth, soulful keys, tape saturation, laid-back groove, 80-90 BPM
+```
+- 라이브 재즈 느낌 + Lo-fi 텍스처
+- 악기: 색소폰, 브러시 드럼, 업라이트 베이스
+- 분위기: "깨어남", 현실 복귀 신호
+
+---
+
 ## References
 
 - `Reference/lofi-genre-research.md` — Lo-fi 장르 리서치
 - `MASTER/rubrics/CHILLHOP_RUBRIC.md` — 참고 (별도 LOFI_RUBRIC 필요)
 - Jinsang, Kudasaibeats, idealism — Modern Lo-fi
 - Lofi Girl — YouTube Lo-fi 대표 채널
+
+---
+
+## Track Details
+
+### Track 01: 경계 (Threshold)
+
+**Status:** PASS
+**Type:** B (만트라)
+**BPM:** 82
+**Key:** Am
+**Length:** 3min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 82 BPM, Am, Jinsang-style dusty production, 3min+
+
+Extended intro 16 bars, Extended instrumental sections, Long outro fade 16 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Rhodes or muffled piano, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant, buried in mix, Male soft vocal, Buried in mix, distant room feel, Low-pass filtered, Calm hypnotic mantra delivery, Raw, Direct, Chest voice, Korean articulation, Moderate reverb, room ambience, EQ balanced, warm mix, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, Vocal line may intensify dynamically, but no additional vocal layers, No filler sounds
+```
+
+**Exclude:**
+```
+Crisp, Bright, Present, Modern, Hi-fi, Clean, EDM drops, Heavy bass drops, Build-ups, Aggressive drums, Trap hi-hats, Fast tempo, Energetic, Upbeat, 4-on-the-floor, Club, Dance, Choir, Stacked harmonies, Autotune heavy, Filler sounds (ah, oh, yeah, uh), Excessive ad-libs
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 16 bars)
+
+[instrumental]
+
+[hook]
+(Buried vocal, distant room, low-pass filter, No harmony)
+경계에 서 있어
+빠져들기 직전
+
+[interlude]
+
+[instrumental]
+
+[interlude]
+
+[hook]
+(Distant, fading, No harmony)
+경계에 서 있어
+
+[outro]
+(Instrumental fade out, muffled, extended 16 bars)
+```
+
+### Track 02: 멀어져 (Fade)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 80
+**Key:** Dm
+**Length:** 3min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 80 BPM, Dm, Jinsang-style dusty production, dreamy, hypnotic, 3min+
+
+Extended intro 16 bars, Extended instrumental sections, Instrumental focus with texture vocals, Long outro fade 16 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Ambient pad, soft synth textures, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, Breathing sounds as texture, No lead vocal, No lyrics, Ambient vocal layer, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 16 bars)
+
+[instrumental]
+(Ambient pad swell, muffled drums enter)
+
+[interlude]
+(Soft humming texture, buried in reverb, no words)
+
+[instrumental]
+(Full arrangement, dusty, distant)
+
+[interlude]
+(Breathing texture, ambient pad swell)
+
+[instrumental]
+
+[outro]
+(Fade out, muffled, extended 16 bars)
+```
+
+### Track 03: 리듬 (Rhythm)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 78
+**Key:** Em
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 78 BPM, Em, Jinsang-style dusty production, warm, meditative, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Nylon guitar fingerpicking, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, nylon guitar enters slowly)
+
+[instrumental]
+(Full arrangement, fingerpicking pattern, muffled drums)
+
+[interlude]
+(Soft humming texture, buried in reverb, no words)
+
+[instrumental]
+(Groove locked in, repetitive hypnotic pattern)
+
+[interlude]
+(Guitar solo, distant and muffled)
+
+[instrumental]
+(Full arrangement continues)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 04: 에이전트 (Agent)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 76
+**Key:** Dm
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 76 BPM, Dm, Jinsang-style dusty production, hypnotic, trance-like, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Felt piano muffled chords, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Repetitive hypnotic loop, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, felt piano enters slowly)
+
+[instrumental]
+(Drums enter, repetitive piano loop)
+
+[interlude]
+(Piano solo, distant)
+
+[instrumental]
+(Full arrangement, muffled drums)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Hypnotic loop continues)
+
+[interlude]
+(Bass solo, deep muffled)
+
+[instrumental]
+(Full arrangement, trance-like repetition)
+
+[interlude]
+(Piano and bass only, minimal)
+
+[instrumental]
+(All instruments return)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 05: 초점 (Focus)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 75
+**Key:** Bm
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 75 BPM, Bm, Jinsang-style dusty production, focused, minimal, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Wurlitzer electric piano, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Minimal arrangement, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, wurlitzer enters slowly)
+
+[instrumental]
+(Drums enter, minimal wurlitzer chords)
+
+[interlude]
+(Wurlitzer solo, distant)
+
+[instrumental]
+(Full arrangement, muffled drums)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Minimal loop continues)
+
+[interlude]
+(Bass and hi-hat only)
+
+[instrumental]
+(Full arrangement returns)
+
+[interlude]
+(Wurlitzer solo, fading)
+
+[instrumental]
+(All instruments, locked groove)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```

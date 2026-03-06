@@ -7,6 +7,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **11-00 Track 02-06 가사/스타일 txt 완료**
+  - Track 02 "멀어져": Ambient pad, dreamy, 80 BPM
+  - Track 03 "리듬": Nylon guitar, warm, 78 BPM
+  - Track 04 "에이전트": Felt piano, hypnotic, 76 BPM
+  - Track 05 "초점": Wurlitzer, focused, 75 BPM
+  - Track 06 "망각": Rhodes, hazy, 74 BPM
+- **11-00 Style Variations 가이드 추가**
+  - Track 08, 10: Kalimba-Keys Melancholia
+  - Track 14: Neo-Jazzhop
+  - Classic Lo-fi 80% + 변주 20% 배분
+
+### Changed
+- **WORKFLOWS.md v1.3 — txt 파일 우선 규칙 강화**
+  - §0 절대 규칙 신설: txt 먼저 생성 → PASS → concept.md 반영
+  - §2 Style Prompt 워크플로우 제거 (STYLE.md 참조로 대체)
+  - txt 경로 통일: `SERIES/[시리즈]/tracks/{N}_{제목}.txt`
+
 - **11-00 Track 01 "경계 (Threshold)" 가사/스타일 txt**
   - B타입 만트라, 82 BPM, Am
   - LOFI_RUBRIC Hard Gates PASS, 6-Factor 93점

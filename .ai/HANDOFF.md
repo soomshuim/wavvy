@@ -7,7 +7,7 @@ Project: ~/Project/wavvy
 Agent: Claude
 Summary: Track 01 구조/스타일 수정 — Hook 축소(4→2), [interlude] 추가, 보컬 믹스 다운
 Next-TODO: Suno 재생성 → 3분+ 및 보컬 믹스 확인
-Commits: TBD
+Commits: 96b3be8
 ---
 
 ---
