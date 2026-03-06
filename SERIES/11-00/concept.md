@@ -238,10 +238,10 @@ Grain:      8-12% opacity
 | 03 | 리듬 (Rhythm) | C | 78 | 작업 페이스가 잡힘 | 진입 | PASS |
 | 04 | 에이전트 (Agent) | C | 76 | 의식 없이 몸이 움직임 | 몰입 | PASS |
 | 05 | 초점 (Focus) | C | 75 | 시선이 한 점으로 좁혀짐 | 몰입 | PASS |
-| 06 | 망각 (Forget) | C | 74 | 숨 쉬는 것도 잊음 | 몰입 | 기획 |
-| 07 | 흐름 (Flow) | C | 73 | 생각이 물처럼, 막힘없이 | 몰입 | 기획 |
-| 08 | 하나 (One) | C | 72 | 나와 작업이 하나 | 몰입 | 기획 | **Kalimba-Keys** |
-| 09 | 정지 (Still) | C | 70 | 시간이 멈춤 | 정점 | 기획 |
+| 06 | 망각 (Forget) | C | 74 | 숨 쉬는 것도 잊음 | 몰입 | PASS |
+| 07 | 몰입 (Flow) | C | 73 | 생각이 물처럼, 막힘없이 | 몰입 | PASS |
+| 08 | 하나 (One) | C | 72 | 나와 작업이 하나 | 몰입 | PASS | **Kalimba-Keys** |
+| 09 | 정지 (Freeze) | C | 70 | 시간이 멈춤 | 정점 | PASS |
 | 10 | 터널 (Tunnel) | B | 72 | 터널 비전, 오직 앞만 | 정점 | 기획 | **Kalimba-Keys** |
 | 11 | 어딘가 (Somewhere) | C | 74 | 여기가 어디지, 시간 왜곡 | 정점 | 기획 |
 | 12 | 신호 (Signal) | B | 78 | 현실에서 오는 신호 | 복귀 | 기획 |
@@ -540,6 +540,231 @@ Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler s
 
 [instrumental]
 (All instruments, locked groove)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 06: 망각 (Forget)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 74
+**Key:** Fm
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 74 BPM, Fm, Jinsang-style dusty production, hazy, floating, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Rhodes electric piano, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, Rhodes enters slowly)
+
+[instrumental]
+(Drums enter, Rhodes chords floating)
+
+[interlude]
+(Rhodes solo, distant and hazy)
+
+[instrumental]
+(Full arrangement, muffled drums)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Hypnotic loop continues)
+
+[interlude]
+(Bass and hi-hat only, breathing space)
+
+[instrumental]
+(Full arrangement returns)
+
+[interlude]
+(Rhodes melody, fading)
+
+[instrumental]
+(All instruments, locked groove)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 07: 몰입 (Flow)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 73
+**Key:** Gm
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 73 BPM, Gm, Jinsang-style dusty production, flowing, liquid, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Rhodes electric piano, Smooth legato phrases, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Seamless transitions, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, Rhodes enters like water rising)
+
+[instrumental]
+(Drums enter, Rhodes legato chords flowing)
+
+[interlude]
+(Rhodes solo, smooth unbroken phrases)
+
+[instrumental]
+(Full arrangement, muffled drums, seamless)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Flowing loop continues, no breaks)
+
+[interlude]
+(Bass and Rhodes only, liquid movement)
+
+[instrumental]
+(Full arrangement returns, uninterrupted)
+
+[interlude]
+(Rhodes melody, distant and smooth)
+
+[instrumental]
+(All instruments, continuous flow)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 08: 하나 (One)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 72
+**Key:** Ebm
+**Length:** 4min+
+**Variation:** Kalimba-Keys Melancholia
+
+**Style:**
+```
+Lo-fi bedroom pop, 72 BPM, Ebm, Kalimba-Keys Melancholia, dreamy, intimate, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Kalimba melody lead, Detuned music box textures, Warm Rhodes chords, Organic textures, Tape hiss throughout, Vinyl crackle layer, Low-pass filter 8-10kHz rolloff, Intimate mood, Soft muffled drums, Boom-bap pattern, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Deep muffled bass, All instruments distant buried in mix, Melancholic keys, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, tape hiss fade in, extended 24 bars, kalimba enters gently)
+
+[instrumental]
+(Drums enter, kalimba melody, music box texture)
+
+[interlude]
+(Kalimba solo, intimate and close)
+
+[instrumental]
+(Full arrangement, Rhodes joins, muffled drums)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Kalimba and Rhodes interplay, hypnotic)
+
+[interlude]
+(Music box texture only, distant)
+
+[instrumental]
+(Full arrangement returns, unified feel)
+
+[interlude]
+(Kalimba melody, fading)
+
+[instrumental]
+(All instruments, one groove)
+
+[outro]
+(Fade out, kalimba last, extended 24 bars)
+```
+
+### Track 09: 정지 (Freeze)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 70
+**Key:** Cm
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 70 BPM, Cm, Jinsang-style dusty production, suspended, frozen, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Minimal hi-hat, Humanized timing ±15ms grid offset, No 4-on-the-floor, Felt piano sparse chords, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Suspended feel, Long sustained notes, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, felt piano enters slowly, suspended)
+
+[instrumental]
+(Drums enter minimal, felt piano long chords)
+
+[interlude]
+(Piano sustained note, silence between)
+
+[instrumental]
+(Full arrangement, frozen pace)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Hypnotic stillness continues)
+
+[interlude]
+(Bass drone only, time stopped)
+
+[instrumental]
+(Full arrangement returns, suspended)
+
+[interlude]
+(Piano chord, long decay)
+
+[instrumental]
+(All instruments, motionless groove)
 
 [outro]
 (Fade out, muffled, extended 24 bars)
