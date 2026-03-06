@@ -235,7 +235,7 @@ Grain:      8-12% opacity
 |---|------|------|-----|------|------|------|------|
 | 01 | 경계 (Threshold) | B | 82 | 현실과 몰입 사이, 빠져들기 직전 | 진입 | PASS |
 | 02 | 멀어져 (Fade) | C | 80 | 주변 소음이 점점 작아짐 | 진입 | PASS |
-| 03 | 리듬 (Rhythm) | C | 78 | 작업 페이스가 잡힘 | 진입 | PASS |
+| 03 | 리듬 (Rhythm) | C | 78 | 작업 페이스가 잡힘 | 진입 | PASS | **Kalimba-Keys** |
 | 04 | 에이전트 (Agent) | C | 76 | 의식 없이 몸이 움직임 | 몰입 | PASS |
 | 05 | 초점 (Focus) | C | 75 | 시선이 한 점으로 좁혀짐 | 몰입 | PASS |
 | 06 | 망각 (Forget) | C | 74 | 숨 쉬는 것도 잊음 | 몰입 | PASS |
@@ -394,14 +394,15 @@ Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler s
 **Status:** PASS
 **Type:** C (인스트 + 텍스처)
 **BPM:** 78
-**Key:** Em
+**Key:** E Major
 **Length:** 4min+
+**Variation:** Kalimba-Keys Melancholia
 
 **Style:**
 ```
-Classic Lo-fi Hip-hop, 78 BPM, Em, Jinsang-style dusty production, warm, meditative, 4min+
+Lo-fi bedroom pop, 78 BPM, E Major, Kalimba-Keys Melancholia, warm, meditative, 4min+
 
-Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Nylon guitar fingerpicking, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Kalimba melody lead, Detuned music box textures, Warm Rhodes chords, Organic textures, Tape hiss throughout, Vinyl crackle layer, Low-pass filter 8-10kHz rolloff, Intimate mood, Soft muffled drums, Boom-bap pattern, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
 ```
 
 **Exclude:**
@@ -412,10 +413,10 @@ Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler s
 **Lyrics:**
 ```
 [intro]
-(Instrumental only, vinyl crackle fade in, extended 24 bars, nylon guitar enters slowly)
+(Instrumental only, tape hiss fade in, extended 24 bars, kalimba enters slowly)
 
 [instrumental]
-(Full arrangement, fingerpicking pattern, muffled drums)
+(Full arrangement, kalimba melody, music box texture, muffled drums)
 
 [interlude]
 (Soft humming texture, buried in reverb, no words)
@@ -424,13 +425,13 @@ Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler s
 (Groove locked in, repetitive hypnotic pattern)
 
 [interlude]
-(Guitar solo, distant and muffled)
+(Kalimba solo, distant and intimate)
 
 [instrumental]
-(Full arrangement continues)
+(Full arrangement continues, Rhodes joins)
 
 [outro]
-(Fade out, muffled, extended 24 bars)
+(Fade out, kalimba last, extended 24 bars)
 ```
 
 ### Track 04: 에이전트 (Agent)
