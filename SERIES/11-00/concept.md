@@ -69,7 +69,7 @@ All tracks feature Korean lyrics.
 Copyright Ⓒ Wavvy. All rights reserved.
 ──────────────
 #lofi #classiclofi #jazzhop #로파이 #클래식로파이
-#딥워크 #몰입 #집중음악 #작업용bgm
+#딥워크 #몰입 #집중음악 #작업용bgm #노동요
 #playlist #플리 #한국어가사 #koreanlyrics
 #wavvy #웨이비
 ```
