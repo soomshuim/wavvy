@@ -103,52 +103,44 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 > **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
 > **⚠️ 플레이리스트 2회 반복 필수** (`--repeat 2`)
 
-### 5.0 필수 규칙
+### 5.1 CLI 기반 워크플로우 (v2.0)
 
 ```bash
-# 반드시 --fade 0.5 --repeat 2 사용
-python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2
+# Step 1: 비디오 크로스페이드 테스트 (30초)
+python3 vibem.py vfade SERIES/[시리즈] --test
+
+# Step 2: 테스트 영상 확인 (끊김 없으면 PASS)
+open SERIES/[시리즈]/input/loop_xfade_test.mp4
+
+# Step 3: 비디오 크로스페이드 본 생성
+python3 vibem.py vfade SERIES/[시리즈]
+
+# Step 4: 패키징 (--use-xfade 필수!)
+python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade
 ```
+
+### 5.2 필수 옵션
 
 | 옵션 | 기본값 | 설명 |
 |------|--------|------|
-| `--fade` | **0.5** | 크로스페이드 (초) |
+| `--fade` | **0.5** | 오디오 크로스페이드 (초) |
 | `--repeat` | **2** | 플레이리스트 반복 횟수 |
+| `--use-xfade` | - | 비디오 크로스페이드 사용 (**권장**) |
 
-- 위 값은 **모든 시리즈 공통 규칙** (변경 금지)
+### 5.3 Pre-flight 체크
 
-### 6.1 크로스페이드 종류 구분
+`pack` 실행 시 자동 확인:
+- `loop_xfade.mp4` 없으면 경고 + 확인 요청
+- `--force` 사용 시 확인 생략 (비권장)
 
-| 종류 | 도구 | 설명 |
-|------|------|------|
-| **오디오 크로스페이드** | `vibem.py pack --fade` | 트랙 간 오디오 전환 (acrossfade) |
-| **비디오 크로스페이드** | FFmpeg `xfade` 필터 | 루프 영상 자연스러운 반복 |
+### 5.4 크로스페이드 구분
 
-### 6.2 vibem.py pack 한계
+| 종류 | 명령어 | 설명 |
+|------|--------|------|
+| **오디오** | `pack --fade 0.5` | 트랙 간 오디오 전환 |
+| **비디오** | `vfade` → `pack --use-xfade` | 루프 영상 끊김 없는 반복 |
 
-- 오디오 크로스페이드만 적용
-- 비디오는 `-stream_loop -1`로 단순 반복 (끊김 발생)
-
-### 6.3 비디오 크로스페이드 필요 시
-
-```bash
-# Step 1: loop.mp4를 xfade로 N번 반복 (테스트 먼저)
-ffmpeg -i loop.mp4 -i loop.mp4 -i loop.mp4 \
-  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=7.5[v1];[v1][2:v]xfade=transition=fade:duration=0.5:offset=15[v2]" \
-  -map "[v2]" -c:v libx264 -an loop_xfade.mp4
-
-# Step 2: 오디오와 합치기
-ffmpeg -i loop_xfade_long.mp4 -i audio.m4a -c:v copy -c:a copy -shortest final.mp4
-```
-
-### 6.4 실행 절차
-
-1. 사용자가 테스트용 비디오 크로스페이드 영상 제작
-2. Claude가 **명시적으로 PASS 여부 확인** ("이 크로스페이드 PASS인가요?")
-3. PASS 시 해당 옵션(duration 등)으로 유튜브용 영상 자동 제작 (오디오 + 비디오 크로스페이드)
-4. 압축 (2GB 미만 등)
-
-**⚠️ PASS 확인 없이 본 작업 진행 금지**
+**⚠️ `pack` 단독 실행 = 오디오만 크로스페이드 (비디오 끊김 발생)**
 
 ---
 

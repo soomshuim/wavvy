@@ -6,24 +6,22 @@
 
 ## 진행 중 (재개 시 확인)
 
-- **영상 렌더링 실행됨** — `vibem.py pack --fade 0.5 --repeat 2`
-  - 완료 확인: `ls -lh SERIES/11-00/output/final.mp4`
-  - 예상 길이: ~80분 (15곡 x 2회)
+- **11-00 영상 완료** — `final.mp4` 2.5GB, 81.6분 (비디오 xfade 적용)
 - **썸네일** — 사용자 작업 중 (thumb.psd)
 
 ## 다음 할 일
 
-- [ ] 영상 렌더링 완료 확인 → output/final.mp4
 - [ ] YouTube 메타데이터 Track List + 타임스탬프
 - [ ] 썸네일 완성 → 업로드
 
-## 필수 규칙 (WORKFLOWS.md §5.0 추가됨)
+## 필수 규칙 (v2.0 — vfade 추가됨)
 
 ```bash
-python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2
+# 비디오 크로스페이드 워크플로우
+python3 vibem.py vfade SERIES/[시리즈] --test   # Step 1
+python3 vibem.py vfade SERIES/[시리즈]          # Step 2
+python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # Step 3
 ```
-- `--fade 0.5` (크로스페이드 0.5초)
-- `--repeat 2` (플레이리스트 2회 반복)
 
 ---
 
@@ -31,6 +29,7 @@ python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2
 
 | 작업 | 날짜 |
 |------|------|
+| feature: vibem.py vfade 명령어 + pack Pre-flight 체크 | 2026-03-07 |
 | refactor: 11-00 tracks 폴더 구조 통일 + wav 네이밍 | 2026-03-07 |
 | feat: 11-00 input 폴더 + 썸네일/루프영상 (크로스페이드 PASS) | 2026-03-07 |
 | docs: 11-00 썸네일 + 루프영상 프롬프트 확정 | 2026-03-07 |

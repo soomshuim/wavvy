@@ -15,6 +15,8 @@ Purpose: AI 실행 설정 (How)
 3. **Fail Fast** — 입력 검증 실패 시 즉시 종료
 4. **Pure Input** — Suno 가사란에 가사 + 구조태그 + `()` 메타만
 5. **크로스페이드 구분** — 오디오 vs 비디오 반드시 구분
+6. **Video Crossfade 필수** — `vfade --test` → PASS → `vfade` → `pack --use-xfade`
+7. **Pre-flight 체크** — `pack` 실행 시 loop_xfade.mp4 없으면 확인 요청
 
 ---
 
@@ -66,7 +68,9 @@ Purpose: AI 실행 설정 (How)
 ```bash
 python3 vibem.py validate <path>
 python3 vibem.py preview <path>
-python3 vibem.py pack <path>
+python3 vibem.py vfade <path> --test      # 비디오 xfade 테스트
+python3 vibem.py vfade <path>              # 비디오 xfade 본 생성
+python3 vibem.py pack <path> --use-xfade   # 패키징 (권장)
 python3 vibem.py shorts <track>
 python3 vibem.py clean <path>
 ```

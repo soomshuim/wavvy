@@ -6,7 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **vibem.py vfade 명령어** — 비디오 크로스페이드 자동화
+  - `--test`: 30초 테스트 영상 생성
+  - `--fade 0.5`: xfade 전환 시간
+  - 출력: input/loop_xfade.mp4
+- **pack Pre-flight 체크** — loop_xfade.mp4 없으면 경고
+  - `--use-xfade`: loop_xfade.mp4 사용 (권장)
+  - `--force`: 확인 없이 진행
+
 ### Changed
+- **CLAUDE.md Hard Constraints #6, #7 추가**
+  - Video Crossfade 필수
+  - Pre-flight 체크
+- **WORKFLOWS.md §5 영상 패키징 CLI 워크플로우로 단순화**
+- **cli/SPEC.md vfade 명령어 문서화**
 - **WORKFLOWS.md §5.0 필수 규칙 추가**
   - `--fade 0.5` (크로스페이드 0.5초)
   - `--repeat 2` (플레이리스트 2회 반복)

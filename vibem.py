@@ -392,6 +392,8 @@ class ProjectPaths:
 
         # Input files
         self.loop_video = self.input_dir / 'loop.mp4'
+        self.loop_xfade = self.input_dir / 'loop_xfade.mp4'
+        self.loop_xfade_test = self.input_dir / 'loop_xfade_test.mp4'
         self.thumbnail = self.input_dir / 'thumb.jpg'
 
         # Work files
@@ -748,6 +750,106 @@ def render_video(
         return True
     except subprocess.CalledProcessError as e:
         log_error(f"Video render failed: {e.stderr}")
+        return False
+
+
+def create_video_crossfade(
+    loop_path: Path,
+    output_path: Path,
+    target_duration: float,
+    fade_duration: float = 0.5
+) -> bool:
+    """
+    Create crossfaded loop video using FFmpeg xfade filter.
+
+    This function creates a seamless looping video by applying xfade
+    transitions between repeated copies of the source video.
+
+    Args:
+        loop_path: Path to source loop video
+        output_path: Path for output video
+        target_duration: Target duration in seconds
+        fade_duration: Crossfade duration in seconds (default: 0.5)
+
+    Returns:
+        True if successful, False otherwise
+    """
+    import math
+
+    # Get loop video duration
+    info = get_video_info(loop_path)
+    loop_duration = info.get('duration', 0)
+
+    if loop_duration <= 0:
+        log_error("Cannot determine loop video duration")
+        return False
+
+    if loop_duration <= fade_duration:
+        log_error(f"Loop duration ({loop_duration}s) must be greater than fade ({fade_duration}s)")
+        return False
+
+    # Calculate number of repeats needed
+    effective_duration = loop_duration - fade_duration
+    num_repeats = math.ceil(target_duration / effective_duration) + 1
+
+    # Limit to prevent excessive memory usage
+    if num_repeats > 100:
+        log_warning(f"Large repeat count ({num_repeats}), capping at 100")
+        num_repeats = 100
+
+    log_info(f"Loop: {loop_duration:.1f}s, Target: {target_duration:.1f}s, Repeats: {num_repeats}")
+
+    # Build FFmpeg command with xfade filter chain
+    inputs = []
+    for _ in range(num_repeats):
+        inputs.extend(['-i', str(loop_path)])
+
+    # Build xfade filter chain
+    filter_parts = []
+
+    # First xfade: [0:v][1:v] -> [v1]
+    offset = loop_duration - fade_duration
+    filter_parts.append(
+        f"[0:v][1:v]xfade=transition=fade:duration={fade_duration}:offset={offset:.2f}[v1]"
+    )
+
+    # Subsequent xfades: [vN-1][N:v] -> [vN]
+    for i in range(2, num_repeats):
+        prev_label = f"v{i-1}"
+        curr_label = f"v{i}"
+        curr_offset = offset + (i - 1) * effective_duration
+        filter_parts.append(
+            f"[{prev_label}][{i}:v]xfade=transition=fade:duration={fade_duration}:offset={curr_offset:.2f}[{curr_label}]"
+        )
+
+    final_label = f"v{num_repeats - 1}"
+    filter_complex = ";".join(filter_parts)
+
+    cmd = [
+        'ffmpeg', '-y',
+        *inputs,
+        '-filter_complex', filter_complex,
+        '-map', f'[{final_label}]',
+        '-c:v', VIDEO_CODEC,
+        '-preset', 'fast',
+        '-crf', str(VIDEO_CRF),
+        '-pix_fmt', 'yuv420p',
+        '-an',
+        str(output_path)
+    ]
+
+    try:
+        log_info("Creating video crossfade (this may take a while)...")
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        log_success(f"Video crossfade created: {output_path}")
+        return True
+    except subprocess.CalledProcessError as e:
+        log_error(f"Video crossfade failed: {e.stderr[-500:] if e.stderr else 'Unknown error'}")
         return False
 
 
@@ -1491,11 +1593,14 @@ def preview(path: Path, sec: int, fade: float):
 @click.option('--fade', default=DEFAULT_CROSSFADE_SEC, help='Crossfade duration in seconds')
 @click.option('--skip-normalize', is_flag=True, help='Skip normalization step')
 @click.option('--repeat', default=2, help='Number of times to repeat the playlist (default: 2)')
-def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, repeat: int):
+@click.option('--use-xfade', is_flag=True, help='Use loop_xfade.mp4 for video (recommended)')
+@click.option('--force', is_flag=True, help='Skip video crossfade confirmation')
+def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, repeat: int, use_xfade: bool, force: bool):
     """
     Create final deliverables for YouTube.
 
     Full production workflow:
+    0. Pre-flight check (video crossfade)
     1. Validate project structure
     2. Normalize each track (ffmpeg-normalize)
     3. Merge with sequential crossfade (repeated N times, default 2x)
@@ -1503,14 +1608,40 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     5. Generate artifacts (provenance, description, upload CSV, report)
 
     Output: output/final.mp4 + artifacts
+
+    RECOMMENDED: Use --use-xfade for seamless video loops.
+    First run 'vfade --test' to verify, then 'vfade' to create loop_xfade.mp4.
     """
     click.echo(click.style("\n=== VIBEM PACK ===\n", fg='cyan', bold=True))
 
     paths = ProjectPaths(path)
-    params = {'lufs': lufs, 'tp': tp, 'fade': fade, 'repeat': repeat}
+    params = {'lufs': lufs, 'tp': tp, 'fade': fade, 'repeat': repeat, 'use_xfade': use_xfade}
+
+    # Step 0: Pre-flight check for video crossfade
+    log_info("Step 0/6: Pre-flight check...")
+
+    if use_xfade:
+        if not paths.loop_xfade.exists():
+            log_error(f"--use-xfade specified but {paths.loop_xfade.name} not found!")
+            log_warning("Run 'python3 vibem.py vfade <path>' first to create it.")
+            sys.exit(1)
+        log_success(f"Using crossfaded video: {paths.loop_xfade.name}")
+    else:
+        if paths.loop_xfade.exists():
+            log_info(f"Found {paths.loop_xfade.name} - consider using --use-xfade")
+        else:
+            log_warning("No loop_xfade.mp4 found - video will have visible cuts at loop boundaries!")
+            log_warning("To fix: python3 vibem.py vfade <path> --test  # then verify")
+            log_warning("        python3 vibem.py vfade <path>         # create full version")
+            log_warning("        python3 vibem.py pack <path> --use-xfade")
+
+            if not force:
+                if not click.confirm("Continue with loop.mp4 (visible cuts)?", default=False):
+                    click.echo("Aborted. Run 'vfade' first to create seamless loop video.")
+                    sys.exit(0)
 
     # Step 1: Validate
-    log_info("Step 1/5: Validation...")
+    log_info("Step 1/6: Validation...")
     result = validate_project(paths)
 
     if not result.is_valid:
@@ -1532,7 +1663,7 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     paths.ensure_work_dirs()
 
     # Step 2: Normalize
-    log_info(f"Step 2/5: Normalizing tracks (Target: {lufs} LUFS, TP: {tp} dBTP)...")
+    log_info(f"Step 2/6: Normalizing tracks (Target: {lufs} LUFS, TP: {tp} dBTP)...")
 
     normalized_tracks = []
 
@@ -1565,7 +1696,7 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
         log_success("Normalization complete")
 
     # Step 3: Merge with crossfade (with repeat)
-    log_info(f"Step 3/5: Merging tracks with {fade}s crossfade (x{repeat} repeat)...")
+    log_info(f"Step 3/6: Merging tracks with {fade}s crossfade (x{repeat} repeat)...")
 
     # Create repeated track list for merging
     tracks_to_merge = normalized_tracks * repeat
@@ -1588,11 +1719,15 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     log_success("Merge complete")
 
     # Step 4: Render video
-    log_info("Step 4/5: Rendering final video...")
+    log_info("Step 4/6: Rendering final video...")
+
+    # Select video source based on --use-xfade flag
+    video_source = paths.loop_xfade if use_xfade else paths.loop_video
+    log_info(f"  Video source: {video_source.name}")
 
     if not render_video(
         paths.merged_wav,
-        paths.loop_video,
+        video_source,
         paths.thumbnail,
         paths.final_mp4,
         use_shortest=True
@@ -1603,7 +1738,7 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     log_success("Video render complete")
 
     # Step 5: Generate artifacts
-    log_info("Step 5/5: Generating artifacts...")
+    log_info("Step 5/6: Generating artifacts...")
 
     # Get final duration
     final_info = get_audio_info(paths.merged_wav)
@@ -1635,6 +1770,97 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     click.echo(f"Total tracks:   {len(result.tracks)} (x{repeat} = {len(result.tracks) * repeat} plays)")
     click.echo(f"Final duration: {final_duration:.1f}s ({final_duration/60:.1f} min)")
     click.echo(f"Repeat:         {repeat}x")
+
+
+@cli.command()
+@click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
+@click.option('--fade', default=0.5, help='Crossfade duration in seconds (default: 0.5)')
+@click.option('--duration', default=0, help='Target duration in seconds (default: auto from audio)')
+@click.option('--test', is_flag=True, help='Generate 30-second test video only')
+def vfade(path: Path, fade: float, duration: float, test: bool):
+    """
+    Create crossfaded loop video for seamless playback.
+
+    This command applies FFmpeg xfade transitions to loop.mp4 to eliminate
+    visible cuts when the video repeats.
+
+    Workflow:
+    1. Run with --test to generate a 30-second test video
+    2. Verify the transitions are smooth
+    3. Run without --test to generate the full video
+
+    Output: input/loop_xfade.mp4 (or loop_xfade_test.mp4 for test mode)
+    """
+    click.echo(click.style("\n=== VIBEM VFADE ===\n", fg='cyan', bold=True))
+
+    paths = ProjectPaths(path)
+
+    # Check loop.mp4 exists
+    if not paths.loop_video.exists():
+        log_error(f"Missing loop video: {paths.loop_video}")
+        sys.exit(1)
+
+    # Get loop video info
+    loop_info = get_video_info(paths.loop_video)
+    loop_duration = loop_info.get('duration', 0)
+
+    if loop_duration <= 0:
+        log_error("Cannot determine loop video duration")
+        sys.exit(1)
+
+    log_info(f"Source: {paths.loop_video.name} ({loop_duration:.1f}s)")
+
+    # Determine target duration
+    if test:
+        target_duration = 30.0
+        output_path = paths.loop_xfade_test
+        log_info("Test mode: generating 30-second preview")
+    else:
+        if duration > 0:
+            target_duration = duration
+        else:
+            # Auto-detect from merged audio if exists
+            if paths.merged_wav.exists():
+                audio_info = get_audio_info(paths.merged_wav)
+                target_duration = audio_info.get('duration', 90.0)
+                log_info(f"Auto-detected duration from merged.wav: {target_duration:.1f}s")
+            else:
+                # Default to 90 seconds for initial creation
+                target_duration = 90.0
+                log_warning("No merged.wav found, using default 90s duration")
+
+        output_path = paths.loop_xfade
+
+    log_info(f"Target duration: {target_duration:.1f}s")
+    log_info(f"Crossfade: {fade}s")
+
+    # Create video crossfade
+    if not create_video_crossfade(paths.loop_video, output_path, target_duration, fade):
+        log_error("Failed to create video crossfade")
+        sys.exit(1)
+
+    # Get output info
+    output_info = get_video_info(output_path)
+    output_duration = output_info.get('duration', 0)
+
+    click.echo("")
+    click.echo(click.style("=" * 50, fg='green'))
+    click.echo(click.style("VFADE COMPLETE", fg='green', bold=True))
+    click.echo(click.style("=" * 50, fg='green'))
+    click.echo("")
+    click.echo(f"Output:   {output_path}")
+    click.echo(f"Duration: {output_duration:.1f}s ({output_duration/60:.1f} min)")
+    click.echo(f"Fade:     {fade}s")
+
+    if test:
+        click.echo("")
+        click.echo(click.style("Next steps:", fg='yellow'))
+        click.echo(f"  1. Open and verify: open {output_path}")
+        click.echo(f"  2. If smooth, run: python3 vibem.py vfade {path}")
+    else:
+        click.echo("")
+        click.echo(click.style("Next steps:", fg='yellow'))
+        click.echo(f"  Run: python3 vibem.py pack {path} --use-xfade")
 
 
 @cli.command()
