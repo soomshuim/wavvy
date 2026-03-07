@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-07 23:35:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: wavvy.md 11-00 추가, 영상 구성 규칙 업데이트 (인트로 없음 + 좌상단 로고), WORKFLOWS.md 레거시 참조 수정
+Next-TODO: 11-00 final.mp4 압축 → 업로드
+Commits: a1a480f
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-07 21:52:00
 Project: ~/Project/wavvy
 Agent: Claude
