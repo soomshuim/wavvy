@@ -1,6 +1,16 @@
 # HANDOFF Log
 
 ---
+HANDOFF: 혼합 -> User
+Date: 2026-03-07 15:10:00
+Project: ~/Project/wavvy
+Agent: 혼합
+Summary: 11-00 tracks 폴더 구조 통일 (input/tracks/) + wav 파일 네이밍 룰 적용 + WORKFLOWS.md 경로 업데이트
+Next-TODO: 유튜브용 본 영상 제작
+Commits: ad0a853
+---
+
+---
 HANDOFF: Claude -> User
 Date: 2026-03-07 14:09:13
 Project: ~/Project/wavvy
