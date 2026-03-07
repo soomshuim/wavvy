@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **11-00 Track 11-15 가사/스타일 txt + concept.md 반영**
+  - Track 11 "어딘가": Rhodes, disoriented, F#m, 74 BPM
+  - Track 12 "신호": Felt piano, awakening, D Major, 78 BPM
+  - Track 13 "꼬르륵": Nylon guitar, organic, A Major, 82 BPM
+  - Track 14 "고개": Neo-Jazzhop, sax, G Major, 85 BPM
+  - Track 15 "벌써": Felt piano, present, C Major, 88 BPM
+  - 11-00 시리즈 15/15 트랙 기획 완료
 - **11-00 Track 02-06 가사/스타일 txt 완료**
   - Track 02 "멀어져": Ambient pad, dreamy, 80 BPM
   - Track 03 "리듬": Nylon guitar, warm, 78 BPM

@@ -242,12 +242,12 @@ Grain:      8-12% opacity
 | 07 | 몰입 (Flow) | C | 73 | 생각이 물처럼, 막힘없이 | 몰입 | PASS |
 | 08 | 하나 (One) | C | 72 | 나와 작업이 하나 | 몰입 | PASS | **Kalimba-Keys** |
 | 09 | 정지 (Freeze) | C | 70 | 시간이 멈춤 | 정점 | PASS |
-| 10 | 터널 (Tunnel) | B | 72 | 터널 비전, 오직 앞만 | 정점 | 기획 | **Kalimba-Keys** |
-| 11 | 어딘가 (Somewhere) | C | 74 | 여기가 어디지, 시간 왜곡 | 정점 | 기획 |
-| 12 | 신호 (Signal) | B | 78 | 현실에서 오는 신호 | 복귀 | 기획 |
-| 13 | 꼬르륵 (Growl) | C | 82 | 배에서 소리, 몸이 먼저 깨어남 | 복귀 | 기획 |
-| 14 | 고개 (Look Up) | B | 85 | 고개 들어 시계 봄, "엇" | 복귀 | 기획 | **Neo-Jazzhop** |
-| 15 | 벌써 (Already) | A | 88 | 벌써 점심이네, 현실 복귀 | 복귀 | 기획 |
+| 10 | 터널 (Tunnel) | B | 72 | 터널 비전, 오직 앞만 | 정점 | PASS | **Kalimba-Keys** |
+| 11 | 어딘가 (Somewhere) | C | 74 | 여기가 어디지, 시간 왜곡 | 정점 | PASS |
+| 12 | 신호 (Signal) | B | 78 | 현실에서 오는 신호 | 복귀 | PASS |
+| 13 | 꼬르륵 (Growl) | C | 82 | 배에서 소리, 몸이 먼저 깨어남 | 복귀 | PASS |
+| 14 | 고개 (Look Up) | B | 85 | 고개 들어 시계 봄, "엇" | 복귀 | PASS | **Neo-Jazzhop** |
+| 15 | 벌써 (Already) | A | 88 | 벌써 점심이네, 현실 복귀 | 복귀 | PASS |
 
 ### 타입 배분
 
@@ -769,4 +769,350 @@ Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler s
 
 [outro]
 (Fade out, muffled, extended 24 bars)
+```
+
+### Track 10: 터널 (Tunnel)
+
+**Status:** PASS
+**Type:** B (만트라)
+**BPM:** 72
+**Key:** Abm
+**Length:** 4min+
+**Variation:** Kalimba-Keys Melancholia
+
+**Style:**
+```
+Lo-fi bedroom pop, 72 BPM, Abm, Kalimba-Keys Melancholia, tunnel vision, hypnotic, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Kalimba melody lead, Detuned music box textures, Warm Rhodes chords, Organic textures, Tape hiss throughout, Vinyl crackle layer, Low-pass filter 8-10kHz rolloff, Intimate mood, Soft muffled drums, Boom-bap pattern, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Deep muffled bass, All instruments distant buried in mix, Male soft vocal, Buried in mix, distant room feel, Low-pass filtered, Calm hypnotic mantra delivery, Raw, Direct, Chest voice, Korean articulation, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Filler sounds, Autotune heavy
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, tape hiss fade in, extended 24 bars, kalimba enters gently)
+
+[instrumental]
+(Drums enter, kalimba melody, music box texture)
+
+[hook]
+(Buried vocal, distant room, low-pass filter, No harmony)
+오직 앞만
+터널 속으로
+
+[interlude]
+(Kalimba solo, hypnotic)
+
+[instrumental]
+(Full arrangement, Rhodes joins, muffled drums)
+
+[hook]
+(Same mantra, distant)
+오직 앞만
+터널 속으로
+
+[interlude]
+(Music box texture only)
+
+[instrumental]
+(Full arrangement, tunnel feel)
+
+[hook]
+(Fading, buried)
+오직 앞만
+
+[outro]
+(Fade out, kalimba last, extended 24 bars)
+```
+
+### Track 11: 어딘가 (Somewhere)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 74
+**Key:** F#m
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 74 BPM, F#m, Jinsang-style dusty production, disoriented, floating, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Rhodes electric piano, Detuned chords for disoriented feel, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, Rhodes enters detuned, disoriented)
+
+[instrumental]
+(Drums enter, Rhodes floating chords)
+
+[interlude]
+(Rhodes solo, pitch wobble, lost in space)
+
+[instrumental]
+(Full arrangement, muffled drums, time distortion)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Loop continues, where am I)
+
+[interlude]
+(Bass drone only, suspended)
+
+[instrumental]
+(Full arrangement returns, still floating)
+
+[interlude]
+(Rhodes detuned, fading)
+
+[instrumental]
+(All instruments, disoriented groove)
+
+[outro]
+(Fade out, muffled, extended 24 bars)
+```
+
+### Track 12: 신호 (Signal)
+
+**Status:** PASS
+**Type:** B (만트라)
+**BPM:** 78
+**Key:** D Major
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 78 BPM, D Major, Jinsang-style dusty production, awakening, gentle pull, 4min+
+
+Extended intro 24 bars, Extended instrumental sections throughout, Long outro fade 24 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Felt piano warm chords, Jazz voicings 7th 9th chords, Deep muffled bass, All instruments distant buried in mix, Female soft vocal, Buried in mix, distant room feel, Low-pass filtered, Calm hypnotic mantra delivery, Raw, Direct, Chest voice, Korean articulation, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Filler sounds, Autotune heavy
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 24 bars, felt piano enters warmly)
+
+[instrumental]
+(Drums enter, piano warm chords)
+
+[hook]
+(Buried vocal, distant room, low-pass filter, No harmony)
+신호가 와
+멀리서
+
+[interlude]
+(Piano solo, gentle)
+
+[instrumental]
+(Full arrangement, muffled drums)
+
+[hook]
+(Same mantra, slightly clearer)
+신호가 와
+멀리서
+
+[interlude]
+(Bass and hi-hat only)
+
+[instrumental]
+(Full arrangement, awakening feel)
+
+[hook]
+(Fading, buried)
+신호가 와
+
+[outro]
+(Fade out, piano last, extended 24 bars)
+```
+
+### Track 13: 꼬르륵 (Growl)
+
+**Status:** PASS
+**Type:** C (인스트 + 텍스처)
+**BPM:** 82
+**Key:** A Major
+**Length:** 4min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 82 BPM, A Major, Jinsang-style dusty production, body awakening, organic, 4min+
+
+Extended intro 20 bars, Extended instrumental sections throughout, Long outro fade 20 bars, Vinyl crackle layer throughout, Low-pass filter 8-10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb heavy for distant feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Nylon guitar warm picking, Jazz voicings 7th 9th chords, Deep muffled bass with subtle growl, All instruments distant buried in mix, Texture vocals only, Soft humming buried deep in reverb, No lead vocal, No lyrics, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, Bright, EDM drops, Choir, Stacked harmonies, Lead vocals, Filler sounds
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 20 bars, nylon guitar enters warmly)
+
+[instrumental]
+(Drums enter, guitar warm picking)
+
+[interlude]
+(Guitar solo, organic feel)
+
+[instrumental]
+(Full arrangement, muffled drums, bass growl subtle)
+
+[interlude]
+(Soft humming texture, buried in reverb)
+
+[instrumental]
+(Loop continues, body waking up)
+
+[interlude]
+(Bass only, deep growl texture)
+
+[instrumental]
+(Full arrangement returns, more present)
+
+[interlude]
+(Guitar picking, fading)
+
+[instrumental]
+(All instruments, awakening groove)
+
+[outro]
+(Fade out, guitar last, extended 20 bars)
+```
+
+### Track 14: 고개 (Look Up)
+
+**Status:** PASS
+**Type:** B (만트라)
+**BPM:** 85
+**Key:** G Major
+**Length:** 4min+
+**Variation:** Neo-Jazzhop
+
+**Style:**
+```
+Neo-soul jazzhop, 85 BPM, G Major, lo-fi jazz fusion, warm Rhodes piano, brushed drums, mellow saxophone, vinyl warmth, soulful keys, tape saturation, laid-back groove, 4min+
+
+Extended intro 16 bars, Extended instrumental sections throughout, Long outro fade 16 bars, Vinyl crackle layer throughout, Low-pass filter 10kHz rolloff, Tape saturation, Live jazz feel, Brushed snare and soft kick, Humanized timing ±15ms grid offset, No 4-on-the-floor, Warm Rhodes piano chords, Mellow saxophone melody, Upright bass walking lines, Jazz voicings 7th 9th 13th chords, All instruments warm but muffled, Male soft vocal, Buried in mix, distant room feel, Calm mantra delivery, Raw, Direct, Chest voice, Korean articulation, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, EDM drops, Choir, Stacked harmonies, Filler sounds, Autotune heavy, Aggressive drums
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl warmth fade in, extended 16 bars, Rhodes and saxophone enter)
+
+[instrumental]
+(Brushed drums enter, Rhodes chords, sax melody)
+
+[hook]
+(Buried vocal, warm room, No harmony)
+고개를 들어
+엇
+
+[interlude]
+(Saxophone solo, mellow)
+
+[instrumental]
+(Full arrangement, walking bass, jazzy)
+
+[hook]
+(Same mantra, slightly present)
+고개를 들어
+엇
+
+[interlude]
+(Rhodes solo, warm)
+
+[instrumental]
+(Full arrangement, live jazz feel)
+
+[hook]
+(Fading)
+고개를 들어
+
+[outro]
+(Fade out, saxophone last, extended 16 bars)
+```
+
+### Track 15: 벌써 (Already)
+
+**Status:** PASS
+**Type:** A (4-8줄 한 섹션)
+**BPM:** 88
+**Key:** C Major
+**Length:** 3min+
+
+**Style:**
+```
+Classic Lo-fi Hip-hop, 88 BPM, C Major, Jinsang-style dusty production, awakened, present, 3min+
+
+Extended intro 16 bars, Extended instrumental sections, Long outro fade 16 bars, Vinyl crackle layer throughout, Low-pass filter 10kHz rolloff, Tape saturation, Subtle pitch wobble, Reverb for warm feel, Boom-bap drums, muffled kick and snare, Hi-hat 8th notes with swing, Humanized timing ±15ms grid offset, No 4-on-the-floor, Felt piano bright chords, Jazz voicings 7th 9th chords, Deep muffled bass, Instruments slightly more present than previous tracks, Male soft vocal, Buried in mix but slightly forward, Low-pass filtered, Calm reflective delivery, Raw, Direct, Chest voice, Korean articulation, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, No filler sounds
+```
+
+**Exclude:**
+```
+Hi-fi, Crisp, EDM drops, Choir, Stacked harmonies, Filler sounds, Autotune heavy
+```
+
+**Lyrics:**
+```
+[intro]
+(Instrumental only, vinyl crackle fade in, extended 16 bars, felt piano enters bright)
+
+[instrumental]
+(Drums enter, piano warm chords)
+
+[verse]
+(Buried vocal, warm room, No harmony)
+고개를 드니
+시계가 보여
+벌써 점심
+어디 있었지
+
+[interlude]
+(Piano solo, reflective)
+
+[instrumental]
+(Full arrangement, muffled drums)
+
+[verse]
+(Same section, slightly clearer)
+고개를 드니
+시계가 보여
+벌써 점심
+어디 있었지
+
+[interlude]
+(Bass and piano only)
+
+[instrumental]
+(Full arrangement, present feel)
+
+[outro]
+(Fade out, piano last, extended 16 bars)
 ```
