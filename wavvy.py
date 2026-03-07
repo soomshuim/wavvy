@@ -406,7 +406,6 @@ class ProjectPaths:
         self.preview_mp4 = self.output_dir / 'preview.mp4'
         self.final_mp4 = self.output_dir / 'final.mp4'
         self.provenance_md = self.output_dir / 'provenance.md'
-        self.draft_description = self.output_dir / 'draft_description.txt'
         self.upload_csv = self.output_dir / 'upload.csv'
         self.report_json = self.output_dir / 'report.json'
 
@@ -1071,7 +1070,7 @@ def generate_upload_csv(
     row = {
         'video_path': str(paths.final_mp4),
         'title': title,
-        'description': str(paths.draft_description),
+        'description': '',  # See concept.md "YouTube Draft" section for description
         'tags': ','.join(sorted(tags)),
         'thumbnail_path': str(paths.thumbnail),
         'visibility': 'private'  # Default to private for safety

@@ -74,7 +74,7 @@ brand/
 - 2. Normalize: -14 LUFS, -1.0 dBTP → `work/norm_tracks/`
 - 3. Merge: Sequential Acrossfade + repeat
 - 4. Render: `libx264`/`aac`, `-shortest`, → `output/final.mp4`
-- 5. Artifacts: `provenance.md`, `draft_description.txt`, `upload.csv`, `report.json`
+- 5. Artifacts: `provenance.md`, `upload.csv`, `report.json`
 
 ### E. `shorts`
 - **옵션:** `--start MM:SS --duration SEC [--title] [--lyric] [--srt]`
