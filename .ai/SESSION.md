@@ -33,6 +33,7 @@ python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # St
 
 | 작업 | 날짜 |
 |------|------|
+| refactor: draft_description 생성 코드 제거 (concept.md SSOT) | 2026-03-07 |
 | feat: vfade 자동크롭/로고 + pack 인터랙티브 + seamless loop 워크플로우 | 2026-03-07 |
 | feat: 11-00 final.mp4 완료 (2.8GB, 81분, seamless loop PASS) | 2026-03-07 |
 | feat: vfade 자동 크롭 + 로고 오버레이 (50%, no shadow) | 2026-03-07 |

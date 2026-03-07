@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-07 21:10:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: draft_description 생성 코드 제거 (약 400줄). YouTube 메타데이터는 concept.md를 SSOT로 사용.
+Next-TODO: final.mp4 압축 → YouTube 업로드
+Commits: 1469bb7
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-07 20:55:00
 Project: ~/Project/wavvy
 Agent: Claude

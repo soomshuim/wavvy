@@ -28,6 +28,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 - **CLAUDE.md 복잡한 작업 규칙 추가** — 10개+ 파일, 10분+ 미디어, 새 FFmpeg 필터 시 사용자 확인 필수
+
+### Removed
+- **draft_description.txt 생성 코드 제거** — YouTube 메타데이터는 concept.md를 SSOT로 사용
 - **CLAUDE.md Hard Constraints #6, #7 추가**
   - Video Crossfade 필수
   - Pre-flight 체크
