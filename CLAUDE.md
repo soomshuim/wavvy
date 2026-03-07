@@ -18,6 +18,7 @@ Purpose: AI 실행 설정 (How)
 6. **Video Crossfade 필수** — `vfade --test` → PASS → `vfade` → `pack`
 7. **Pre-flight 체크** — `pack` 실행 시 loop_xfade.mp4 없으면 확인 요청
 8. **복잡한 작업 확인 필수** — 아래 "복잡한 작업 규칙" 참조
+9. **사용자 확인 필수** — 코드 수정/실행 전 반드시 확인. 테스트 없이 본 실행 금지. 임의 진행 금지.
 
 ---
 
