@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **vibem.py → wavvy.py 리네임** — CLI 파일명 프로젝트명 일치, 9개 파일 67곳 참조 업데이트
+- **SESSION.md 슬림화** — 1,443줄 → 23줄 (98% 감소), 진행 중/다음 할 일/핸드오프 메모만 유지
+- **wavvy.md §7 채널 브랜딩 추가** — SESSION.md에서 이동
+- **11-00 YouTube Draft v2 완성** — 30트랙 타임스탬프, 이모지 🎯, 설명 문단 구분
+
+### Removed
+- **draft_description 잔존 코드 정리** — ProjectPaths, upload.csv 참조 제거
+- **중복 handoff.md 삭제** — .ai/HANDOFF.md가 SSOT
+
 ### Added
 - **wavvy.py vfade 자동 크롭 + 로고** — pillarbox 감지/제거 + 로고 오버레이 (50%)
   - `--crop/--no-crop`: 자동 pillarbox 크롭 (기본: 활성화)
