@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- **vibem.py vfade 자동 크롭 + 로고** — pillarbox 감지/제거 + 로고 오버레이 (50%)
+- **wavvy.py vfade 자동 크롭 + 로고** — pillarbox 감지/제거 + 로고 오버레이 (50%)
   - `--crop/--no-crop`: 자동 pillarbox 크롭 (기본: 활성화)
   - `--logo/--no-logo`: 로고 오버레이 (기본: 활성화)
 - **pack 인터랙티브 모드** — 4가지 설정 확인 후 진행
@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Seamless loop 워크플로우** — 끝-시작 xfade로 무한 반복 끊김 없음
   - WORKFLOWS.md §5.2 추가
   - lessons-learned.md 해결책 기록
-- **vibem.py vfade 명령어** — 비디오 크로스페이드 자동화
+- **wavvy.py vfade 명령어** — 비디오 크로스페이드 자동화
   - `--test`: 30초 테스트 영상 생성
   - `--fade 0.5`: xfade 전환 시간
   - 출력: input/loop_xfade.mp4
@@ -311,7 +311,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - PM_0400 포맷 정렬 (🎧 Tracklist 헤더, #PM0900 해시태그)
 
 ### Changed
-- **vibem.py: WAV 파일 지원 추가**
+- **wavvy.py: WAV 파일 지원 추가**
   - TRACK_PATTERN regex: `.mp3` → `.(?:mp3|wav)`
   - audio_files glob: MP3 + WAV 동시 검색
   - 에러 메시지 업데이트: "No MP3 files" → "No audio files (MP3/WAV)"
@@ -624,11 +624,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **LYRICS.md v1.8: 가사 품질 규칙 추가**
   - 1.10 Image Density Management (V1=공간, V2=감각 분리)
   - 1.11 Chorus Tone Rule (관조 톤, 직접 호소 최소화)
-- **vibem.py: 타이틀 자동 생성 (SSOT v1.5)**
+- **wavvy.py: 타이틀 자동 생성 (SSOT v1.5)**
   - draft_description.txt 상단에 제목 초안 자동 생성
   - concept.md에서 Title Meta 파싱 (Context Mode, Time, GENRE 등)
   - 메타 없으면 트랙 정보에서 자동 추론
-- **vibem.py: shorts 커맨드 v2.0.0**
+- **wavvy.py: shorts 커맨드 v2.0.0**
   - 입력 변경: `loop.mp4` → `shorts.mp4` (8~10초)
   - 짧은 영상을 음악 길이만큼 자동 루프
   - 출력: `output/shorts/short_[TrackName].mp4` (유지)
@@ -637,14 +637,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Context Mode 필수 입력 (Settling/Transition/Energizing/Focusing)
   - TIME_STATE_PHRASE Type A/B 교대 규칙
   - GENRE 확장: R&B, Rock, Pop, Jazz 등
-- **vibem.py: pack --repeat 옵션**
+- **wavvy.py: pack --repeat 옵션**
   - 플레이리스트 N회 반복 재생 (기본값 2회)
   - description에 회차 구분 없이 단일 타임스탬프 표시
-- **vibem.py: draft_description.txt 자동 생성**
+- **wavvy.py: draft_description.txt 자동 생성**
   - 시리즈/컨셉 기반 커스텀 인트로 문단
   - 📌 고정 댓글 섹션 (시간대별 인삿말)
   - Source/Derived 분리 원칙 (concept.md = SSOT)
-- **/vibem 커맨드**: 프로젝트 재개용 컨텍스트 로더
+- **/wavvy 커맨드**: 프로젝트 재개용 컨텍스트 로더
 
 ### Changed
 - **시리즈 디렉토리 변경**: `SERIES/잠들지_못한_새벽/` → `SERIES/AM_0400/`
@@ -658,7 +658,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **VIBE-M_Master_Plan.md: Shorts 커맨드 스펙 추가**
 - **커맨드 체계 변경**: .claude/commands/ → 글로벌 커맨드로 통합
   - coach, record 삭제 → 글로벌 스킬로 이전
-  - /vibem 신규 추가
+  - /wavvy 신규 추가
 
 - **LYRICS.md v1.7: Korean Lyric Positioning**
   - 한국어 가사 플레이리스트 차별점 공식화
@@ -681,7 +681,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Layer 2: 고정 댓글 (팬 메시지)
   - Layer 3: 채널 About (명확하게)
   - 템플릿 + DO/DON'T 규칙
-- **vibem.py: description.txt 우리말 가사 문구 자동 추가**
+- **wavvy.py: description.txt 우리말 가사 문구 자동 추가**
   - "이 플레이리스트의 노래들은 모두 우리말 가사로 만들어졌습니다."
   - "*All tracks feature Korean lyrics.*"
 
@@ -750,6 +750,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 02_designer.txt: Safety Lines 작성 규칙 제로 베이스라인으로 업데이트
 
 ### Fixed
-- vibem.py preview: 각 트랙이 미리보기에 포함되도록 수정
+- wavvy.py preview: 각 트랙이 미리보기에 포함되도록 수정
   - 이전: 전체 병합 후 앞 N초 (Track 01만 포함)
   - 이후: 각 트랙 앞 N/트랙수 초씩 잘라서 병합

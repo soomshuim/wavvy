@@ -22,9 +22,9 @@
 
 ```bash
 # 비디오 크로스페이드 워크플로우
-python3 vibem.py vfade SERIES/[시리즈] --test   # Step 1
-python3 vibem.py vfade SERIES/[시리즈]          # Step 2
-python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # Step 3
+python3 wavvy.py vfade SERIES/[시리즈] --test   # Step 1
+python3 wavvy.py vfade SERIES/[시리즈]          # Step 2
+python3 wavvy.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # Step 3
 ```
 
 ---
@@ -43,7 +43,7 @@ python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # St
 | test: 로고 오버레이 + shadow 테스트 (영상에 시간표시 제외 결정) | 2026-03-07 |
 | fix: loop.mp4 상하단 16px 크롭 (pillar box 제거) | 2026-03-07 |
 | feat: final.mp4 압축 2.5GB → 1.3GB | 2026-03-07 |
-| feature: vibem.py vfade 명령어 + pack Pre-flight 체크 | 2026-03-07 |
+| feature: wavvy.py vfade 명령어 + pack Pre-flight 체크 | 2026-03-07 |
 | refactor: 11-00 tracks 폴더 구조 통일 + wav 네이밍 | 2026-03-07 |
 | feat: 11-00 input 폴더 + 썸네일/루프영상 (크로스페이드 PASS) | 2026-03-07 |
 | docs: 11-00 썸네일 + 루프영상 프롬프트 확정 | 2026-03-07 |
@@ -354,7 +354,7 @@ may you find a song here that belongs to this moment you're living in.
   - 디스크립션: "서울의 밤을 걷는 뉴트로 시티팝" 브랜딩
   - PM_0400 포맷 정렬 (🎧 Tracklist, #PM0900 #밤9시)
 
-- [x] **vibem.py WAV 지원**
+- [x] **wavvy.py WAV 지원**
   - TRACK_PATTERN: `.mp3` → `.(?:mp3|wav)`
   - audio_files glob: MP3 + WAV 동시 검색
 
@@ -1022,7 +1022,7 @@ may you find a song here that belongs to this moment you're living in.
 ### 2026-01-18 (오전)
 
 - [x] 프로젝트 초기 설정
-  - `vibem.py` CLI 구현 (Click 기반)
+  - `wavvy.py` CLI 구현 (Click 기반)
   - `requirements.txt` 생성
   - FFmpeg 8.0.1 설치
 
@@ -1120,10 +1120,10 @@ may you find a song here that belongs to this moment you're living in.
 
 ## 2026-01-23 세션 완료
 
-- [x] **vibem.py: 타이틀 자동 생성**
+- [x] **wavvy.py: 타이틀 자동 생성**
   - draft_description.txt 상단에 SSOT v1.5 기반 제목 초안
   - concept.md Title Meta 파싱 + 자동 추론 fallback
-- [x] **vibem.py: shorts 커맨드 v2.0.0**
+- [x] **wavvy.py: shorts 커맨드 v2.0.0**
   - loop.mp4 → shorts.mp4 변경 (8~10초 루프)
 - [x] **문서 업데이트**
   - CLAUDE.md v2.0.0: Shorts 워크플로우
@@ -1162,7 +1162,7 @@ may you find a song here that belongs to this moment you're living in.
 
 ### 2026-01-18 (밤)
 
-- [x] vibem.py preview 버그 수정
+- [x] wavvy.py preview 버그 수정
   - 이전: 전체 병합 후 앞 N초 자르기 (Track 01만 포함)
   - 이후: 각 트랙 앞 N/트랙수 초씩 잘라서 병합 (모든 트랙 포함)
   - 60초 preview = 3트랙 × 20.5초
@@ -1361,7 +1361,7 @@ may you find a song here that belongs to this moment you're living in.
   - Station QC Checklist
 - [x] **3-Layer Korean Positioning 전략** (`9add92d`)
   - PLAYLIST_GUIDE.md v1.1: 재생목록/고정댓글/채널About 전략
-  - vibem.py: description.txt 우리말 가사 문구 자동 추가
+  - wavvy.py: description.txt 우리말 가사 문구 자동 추가
 - [x] **vol1 YouTube 정보 기록** (`2636a03`)
   - concept.md에 제목/설명란 전문 기록
 
@@ -1394,9 +1394,9 @@ may you find a song here that belongs to this moment you're living in.
   - 타이틀 고정 구조 정의
   - Context Mode 필수 입력
   - GENRE 확장 (R&B, Rock, Pop, Jazz)
-- [x] **vibem.py: pack --repeat 옵션 추가** (`bd048d6`)
+- [x] **wavvy.py: pack --repeat 옵션 추가** (`bd048d6`)
   - 플레이리스트 N회 반복 (기본 2회)
-- [x] **vibem.py: draft_description.txt 자동 생성** (`fbd2f64`)
+- [x] **wavvy.py: draft_description.txt 자동 생성** (`fbd2f64`)
   - 커스텀 인트로 + 고정댓글 섹션
   - Source/Derived 분리 (concept.md = SSOT)
 - [x] **CLAUDE.md v2.0.0**: 타이틀 규칙 참조 추가
@@ -1435,7 +1435,7 @@ may you find a song here that belongs to this moment you're living in.
 | `MASTER/QUICK_REF.md` | 사람용 운영 매뉴얼 |
 | `MASTER/prompts/` | 역할별 프롬프트 템플릿 |
 | `MASTER/VIBE-M_Master_Plan.md` | CLI 스펙 |
-| `vibem.py` | 메인 CLI 코드 |
+| `wavvy.py` | 메인 CLI 코드 |
 | `CLAUDE.md` | Claude 작업 지침 |
 | `.claude/commands/coach.md` | /coach 커맨드 |
 | `.ai/lessons-learned.md` | 버그 패턴 |

@@ -94,7 +94,7 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 - 반드시 시리즈/트랙/구간 확인 후 생성. 시작/종료 시간 임의 수정 절대 금지
 - Hook Title (선언문, 가사 그대로 사용 금지) + Bottom Lyric (하단 가사) 2-Layer 구조
 - 타이포: Shadow 필수, Stroke 금지, 하단 30% 침범 금지 (YouTube UI 영역)
-- CLI: `python3 vibem.py shorts <track> --start MM:SS --duration SEC [--title "..."] [--srt file.srt]`
+- CLI: `python3 wavvy.py shorts <track> --start MM:SS --duration SEC [--title "..."] [--srt file.srt]`
 
 ---
 
@@ -107,16 +107,16 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 
 ```bash
 # Step 1: 비디오 크로스페이드 테스트 (30초)
-python3 vibem.py vfade SERIES/[시리즈] --test
+python3 wavvy.py vfade SERIES/[시리즈] --test
 
 # Step 2: 테스트 영상 확인 (끊김 없으면 PASS)
 open SERIES/[시리즈]/input/loop_xfade_test.mp4
 
 # Step 3: 비디오 크로스페이드 본 생성 (자동 크롭 + 로고 포함)
-python3 vibem.py vfade SERIES/[시리즈]
+python3 wavvy.py vfade SERIES/[시리즈]
 
 # Step 4: 패키징 (인터랙티브 모드 — 4가지 설정 확인)
-python3 vibem.py pack SERIES/[시리즈]
+python3 wavvy.py pack SERIES/[시리즈]
 ```
 
 ### 5.2 Seamless Loop (긴 영상용 — 수동)

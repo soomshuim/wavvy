@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-vibem - YouTube Music Playlist Generation CLI
+wavvy - YouTube Music Playlist Generation CLI
 
 A robust CLI tool for automating YouTube music playlist generation
 using pure FFmpeg for all media operations.
 
-Author: vibem
+Author: wavvy
 License: MIT
 """
 
@@ -1160,10 +1160,10 @@ def parse_time_string(time_str: str) -> float:
 # =============================================================================
 
 @click.group()
-@click.version_option(version='1.0.0', prog_name='vibem')
+@click.version_option(version='1.0.0', prog_name='wavvy')
 def cli():
     """
-    vibem - YouTube Music Playlist Generation CLI
+    wavvy - YouTube Music Playlist Generation CLI
 
     Automate the creation of YouTube music playlist videos with
     professional audio processing and crossfade transitions.
@@ -1764,11 +1764,11 @@ def vfade(path: Path, fade: float, duration: float, test: bool, crop: bool, logo
         click.echo("")
         click.echo(click.style("Next steps:", fg='yellow'))
         click.echo(f"  1. Open and verify: open {output_path}")
-        click.echo(f"  2. If smooth, run: python3 vibem.py vfade {path}")
+        click.echo(f"  2. If smooth, run: python3 wavvy.py vfade {path}")
     else:
         click.echo("")
         click.echo(click.style("Next steps:", fg='yellow'))
-        click.echo(f"  Run: python3 vibem.py pack {path} --use-xfade")
+        click.echo(f"  Run: python3 wavvy.py pack {path} --use-xfade")
 
 
 @cli.command()
@@ -1804,7 +1804,7 @@ def init(path: Path):
     click.echo(f"     Format: NN__Title__Mood__Genre__BPM.mp3")
     click.echo(f"  2. Add loop.mp4 to: {paths.input_dir}")
     click.echo(f"  3. Add thumb.jpg to: {paths.input_dir}")
-    click.echo(f"  4. Run: vibem validate {path}")
+    click.echo(f"  4. Run: wavvy validate {path}")
 
 
 @cli.command()
@@ -1878,17 +1878,17 @@ def shorts(
     \b
     Examples:
         # Basic (no text)
-        python vibem.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30
+        python wavvy.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30
 
         # With title + static lyric
-        python vibem.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30 \\
+        python wavvy.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30 \\
             --title "잠들지 못한 새벽" --lyric "여명처럼 스며들어"
 
         # With title + dynamic lyrics (SRT)
-        python vibem.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30 \\
+        python wavvy.py shorts tracks/02__윤곽__...mp3 --start 00:45 --duration 30 \\
             --title "잠들지 못한 새벽" --srt lyrics.srt
     """
-    click.echo(click.style("\n=== VIBEM SHORTS ===\n", fg='cyan', bold=True))
+    click.echo(click.style("\n=== WAVVY SHORTS ===\n", fg='cyan', bold=True))
 
     # Resolve paths
     # Track path structure: .../input/tracks/NN__Title__...mp3

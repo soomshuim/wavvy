@@ -2,7 +2,7 @@
 
 Version: 4.0
 Last Updated: 2026-03-07
-Purpose: vibem CLI 시스템 명세
+Purpose: wavvy CLI 시스템 명세
 
 ---
 
@@ -87,27 +87,27 @@ brand/
 
 ```bash
 # 검증
-python3 vibem.py validate SERIES/[시리즈]
+python3 wavvy.py validate SERIES/[시리즈]
 
 # 미리보기
-python3 vibem.py preview SERIES/[시리즈] --sec 30
+python3 wavvy.py preview SERIES/[시리즈] --sec 30
 
 # 비디오 크로스페이드 (긴 영상용 — vfade 별도 실행)
-python3 vibem.py vfade SERIES/[시리즈] --test   # Step 1: 테스트
+python3 wavvy.py vfade SERIES/[시리즈] --test   # Step 1: 테스트
 open SERIES/[시리즈]/input/loop_xfade_test.mp4  # Step 2: 확인
-python3 vibem.py vfade SERIES/[시리즈]          # Step 3: 본 생성
+python3 wavvy.py vfade SERIES/[시리즈]          # Step 3: 본 생성
 
 # 패키징 (인터랙티브 플랜 모드)
-python3 vibem.py pack SERIES/[시리즈]
+python3 wavvy.py pack SERIES/[시리즈]
 
 # 패키징 (기본값으로 빠르게)
-python3 vibem.py pack SERIES/[시리즈] -y
+python3 wavvy.py pack SERIES/[시리즈] -y
 
 # 정리
-python3 vibem.py clean SERIES/[시리즈]
+python3 wavvy.py clean SERIES/[시리즈]
 
 # 숏츠
-python3 vibem.py shorts [track.mp3] --start 00:45 --duration 30
+python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 ```
 
 ---

@@ -88,13 +88,13 @@ Purpose: AI 실행 설정 (How)
 ## Quick CLI
 
 ```bash
-python3 vibem.py validate <path>
-python3 vibem.py preview <path>
-python3 vibem.py vfade <path> --test      # 비디오 xfade 테스트
-python3 vibem.py vfade <path>              # 비디오 xfade 본 생성
-python3 vibem.py pack <path> --use-xfade   # 패키징 (권장)
-python3 vibem.py shorts <track>
-python3 vibem.py clean <path>
+python3 wavvy.py validate <path>
+python3 wavvy.py preview <path>
+python3 wavvy.py vfade <path> --test      # 비디오 xfade 테스트
+python3 wavvy.py vfade <path>              # 비디오 xfade 본 생성
+python3 wavvy.py pack <path> --use-xfade   # 패키징 (권장)
+python3 wavvy.py shorts <track>
+python3 wavvy.py clean <path>
 ```
 
 > **CLI 상세**: `MASTER/cli/SPEC.md`

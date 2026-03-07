@@ -43,9 +43,9 @@ Scope: Document alignment for SSOT consistency and spec/code sync
 4. `MASTER/Wavvy_Master_Plan.md`
 - Bumped spec version to `2.2 (Spec Alignment)`.
 - Updated directory example to match current real usage (series folder without required date layer).
-- Updated track format from MP3-only to `mp3|wav` to match `vibem.py`.
+- Updated track format from MP3-only to `mp3|wav` to match `wavvy.py`.
 - Updated validate section accordingly (MP3/WAV).
-- Fixed obsolete `vibem.md` reference to `MASTER/Wavvy_Master_Plan.md`.
+- Fixed obsolete `wavvy.md` reference to `MASTER/Wavvy_Master_Plan.md`.
 
 ## Notes
 - No `AGENT.md`/`AGENTS.md` exists inside `wavvy`.
