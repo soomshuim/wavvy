@@ -12,7 +12,7 @@
 > **⚠️ 가사/스타일/exclude 작업 시 반드시 준수**
 
 ### 절차
-1. **txt 파일 먼저 생성** → `SERIES/[시리즈]/tracks/{N}_{제목}.txt`
+1. **txt 파일 먼저 생성** → `SERIES/[시리즈]/input/tracks/{N}_{제목}.txt`
 2. 유저에게 제시 → **PASS 컨펌 받기**
 3. PASS 후에만 concept.md 반영
 

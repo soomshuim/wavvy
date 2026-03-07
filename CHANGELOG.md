@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **11-00 tracks 폴더 구조 통일**
+  - tracks/ → input/tracks/ 이동 (다른 시리즈와 동일 구조)
+  - wav 파일 네이밍 룰 적용: `{N}__{한글}__{영문}__{장르}__{BPM}.wav`
+  - WORKFLOWS.md 경로 업데이트
+
 ### Added
 - **11-00 input 폴더 + 썸네일/루프영상**
   - thumb.png: 고양이+헤드폰+모니터 응시
