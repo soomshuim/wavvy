@@ -2,6 +2,30 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-07 13:57:29
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 썸네일 이미지 프롬프트 확정 + 8초 루프 영상 프롬프트 작성
+Next-TODO: 루프 영상 크로스페이드 테스트 → PASS 확인 → 유튜브용 영상 제작
+Context: |
+  - 썸네일: 고양이+헤드폰+모니터 응시, 따뜻한 갈색/오렌지 톤
+  - 루프 영상: 커피 김 + 꼬리 살랑살랑 + 숨쉬기 모션
+  - 크로스페이드로 루프 끊김 해결 예정
+Commits: 2ccb80c
+---
+
+---
+HANDOFF: Claude -> User
+Date: 2026-03-07 12:34:23
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 Track 11-15 가사/스타일 txt + concept.md 반영 (15/15 기획 완료)
+Next-TODO: Suno 음원 생성 → QC → 패키징
+Commits: 2ccb80c
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-07 16:00:00
 Project: ~/Project/wavvy
 Agent: Claude

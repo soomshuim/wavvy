@@ -8,6 +8,7 @@
 
 | 작업 | 날짜 |
 |------|------|
+| docs: 11-00 썸네일 + 루프영상 프롬프트 확정 | 2026-03-07 |
 | feat: 11-00 Track 11-15 txt + concept.md 반영 (15/15 완료) | 2026-03-07 |
 | refactor: Track 03 리듬 → Kalimba-Keys + E Major | 2026-03-07 |
 | feat: 11-00 Track 06-10 txt + concept.md 반영 | 2026-03-07 |
