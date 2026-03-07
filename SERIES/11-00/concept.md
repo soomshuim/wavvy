@@ -12,7 +12,7 @@
 
 ### 제목
 ```
-Playlist | 11:00 | 정신 차리면 점심시간 🎯 | CLASSIC LO-FI · JAZZHOP | 딥워크 · 몰입 | Wavvy
+Playlist | 11:00 | 정신 차리면 점심시간 🎯 시간순삭 플리 | LO-FI · JAZZHOP | 노동요 · 몰입 · 집중 | Wavvy
 ```
 
 ### 설명
