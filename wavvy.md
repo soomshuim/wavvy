@@ -1,7 +1,7 @@
 # Wavvy — Project Identity
 
 Version: 1.0
-Last Updated: 2026-03-03
+Last Updated: 2026-03-07
 Purpose: 프로젝트 전략/브랜드 정의 (What & Why)
 
 ---
@@ -79,6 +79,7 @@ Purpose: 프로젝트 전략/브랜드 정의 (What & Why)
 | 04-00 | 04:00 | Slow R&B |
 | 06-00 | 06:00 | Fast Lo-fi |
 | 10-00 | 10:00 | Chillhop |
+| 11-00 | 11:00 | Classic Lo-fi |
 | 14-00 | 14:00 | Soft R&B |
 | 16-00 | 16:00 | 감성 락 |
 | 18-00 | 18:00 | Neo-Soul |
@@ -103,10 +104,10 @@ Purpose: 프로젝트 전략/브랜드 정의 (What & Why)
 ```
 
 ### 영상 구성
-- **롱폼**: 인트로 3-5초 + 우상단 로고 워터마크
+- **롱폼**: 좌상단 로고 워터마크 (인트로 없음)
 - **숏폼**: 텍스트 0 (Lo-fi girl 스타일)
 
-### 브랜딩 문구 (인트로용)
+### 브랜딩 문구 (썸네일용)
 ```
 From the stillness of dawn to the ease of evening —
 may you find a song here that belongs to this moment you're living in.

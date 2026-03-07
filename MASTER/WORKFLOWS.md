@@ -89,7 +89,7 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 
 ## 4. Shorts 생성
 
-> **SSOT: `MASTER/Wavvy_Master_Plan.md` (CLI 스펙)**
+> **SSOT: `MASTER/cli/SPEC.md`**
 
 - 반드시 시리즈/트랙/구간 확인 후 생성. 시작/종료 시간 임의 수정 절대 금지
 - Hook Title (선언문, 가사 그대로 사용 금지) + Bottom Lyric (하단 가사) 2-Layer 구조

@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **wavvy.md 최신화** — 11-00 시리즈 추가, 영상 구성 규칙 업데이트 (인트로 없음 + 좌상단 로고), 브랜딩 문구 용도 변경 (썸네일용)
+- **WORKFLOWS.md §4 레거시 참조 수정** — Wavvy_Master_Plan.md → cli/SPEC.md
 - **vibem.py → wavvy.py 리네임** — CLI 파일명 프로젝트명 일치, 9개 파일 67곳 참조 업데이트
 - **SESSION.md 슬림화** — 1,443줄 → 23줄 (98% 감소), 진행 중/다음 할 일/핸드오프 메모만 유지
 - **wavvy.md §7 채널 브랜딩 추가** — SESSION.md에서 이동
