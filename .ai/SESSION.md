@@ -6,13 +6,17 @@
 
 ## 진행 중 (재개 시 확인)
 
-- **11-00 영상 완료** — `final.mp4` 2.5GB, 81.6분 (비디오 xfade 적용)
-- **썸네일** — 사용자 작업 중 (thumb.psd)
+- **11-00 final.mp4 완료** — 2.8GB, 81분, 끊김 없는 루프 테스트 PASS
+- **vfade 기능 완성** — 자동 크롭 + 로고 오버레이 (50%, no shadow) + seamless loop
+- **pack 인터랙티브 모드** — 4가지 설정 확인 후 진행
+- **복잡한 작업 규칙** — CLAUDE.md에 추가됨 (회고 반영)
 
 ## 다음 할 일
 
+- [ ] final.mp4 압축 (2.8GB → 2GB 미만)
 - [ ] YouTube 메타데이터 Track List + 타임스탬프
-- [ ] 썸네일 완성 → 업로드
+- [ ] 업로드
+- [ ] 미커밋 변경 record + commit
 
 ## 필수 규칙 (v2.0 — vfade 추가됨)
 
@@ -29,6 +33,15 @@ python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade  # St
 
 | 작업 | 날짜 |
 |------|------|
+| feat: vfade 자동크롭/로고 + pack 인터랙티브 + seamless loop 워크플로우 | 2026-03-07 |
+| feat: 11-00 final.mp4 완료 (2.8GB, 81분, seamless loop PASS) | 2026-03-07 |
+| feat: vfade 자동 크롭 + 로고 오버레이 (50%, no shadow) | 2026-03-07 |
+| feat: pack 인터랙티브 모드 (4가지 설정 확인) | 2026-03-07 |
+| feat: loop_seamless.mp4 생성 (끝-시작 xfade 연결) | 2026-03-07 |
+| docs: CLAUDE.md 복잡한 작업 규칙 추가 (회고 반영) | 2026-03-07 |
+| test: 로고 오버레이 + shadow 테스트 (영상에 시간표시 제외 결정) | 2026-03-07 |
+| fix: loop.mp4 상하단 16px 크롭 (pillar box 제거) | 2026-03-07 |
+| feat: final.mp4 압축 2.5GB → 1.3GB | 2026-03-07 |
 | feature: vibem.py vfade 명령어 + pack Pre-flight 체크 | 2026-03-07 |
 | refactor: 11-00 tracks 폴더 구조 통일 + wav 네이밍 | 2026-03-07 |
 | feat: 11-00 input 폴더 + 썸네일/루프영상 (크로스페이드 PASS) | 2026-03-07 |

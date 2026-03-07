@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **vibem.py vfade 자동 크롭 + 로고** — pillarbox 감지/제거 + 로고 오버레이 (50%)
+  - `--crop/--no-crop`: 자동 pillarbox 크롭 (기본: 활성화)
+  - `--logo/--no-logo`: 로고 오버레이 (기본: 활성화)
+- **pack 인터랙티브 모드** — 4가지 설정 확인 후 진행
+  - Video crossfade 사용 여부
+  - Track repeat 횟수
+  - Pillarbox 자동 크롭
+  - Logo 오버레이
+- **Seamless loop 워크플로우** — 끝-시작 xfade로 무한 반복 끊김 없음
+  - WORKFLOWS.md §5.2 추가
+  - lessons-learned.md 해결책 기록
 - **vibem.py vfade 명령어** — 비디오 크로스페이드 자동화
   - `--test`: 30초 테스트 영상 생성
   - `--fade 0.5`: xfade 전환 시간
@@ -16,6 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `--force`: 확인 없이 진행
 
 ### Changed
+- **CLAUDE.md 복잡한 작업 규칙 추가** — 10개+ 파일, 10분+ 미디어, 새 FFmpeg 필터 시 사용자 확인 필수
 - **CLAUDE.md Hard Constraints #6, #7 추가**
   - Video Crossfade 필수
   - Pre-flight 체크

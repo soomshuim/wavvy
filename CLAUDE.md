@@ -14,9 +14,31 @@ Purpose: AI 실행 설정 (How)
 2. **Sequential Acrossfade** — 단순 concat 금지
 3. **Fail Fast** — 입력 검증 실패 시 즉시 종료
 4. **Pure Input** — Suno 가사란에 가사 + 구조태그 + `()` 메타만
-5. **크로스페이드 구분** — 오디오 vs 비디오 반드시 구분
-6. **Video Crossfade 필수** — `vfade --test` → PASS → `vfade` → `pack --use-xfade`
+5. **크로스페이드 구분** — acrossfade(오디오) vs xfade(비디오)
+6. **Video Crossfade 필수** — `vfade --test` → PASS → `vfade` → `pack`
 7. **Pre-flight 체크** — `pack` 실행 시 loop_xfade.mp4 없으면 확인 요청
+8. **복잡한 작업 확인 필수** — 아래 "복잡한 작업 규칙" 참조
+
+---
+
+## 복잡한 작업 규칙 (2026-03-07 회고 반영)
+
+**복잡한 작업 정의:**
+- 10개 이상 파일 처리
+- 10분 이상 미디어
+- 새로운 FFmpeg 필터 사용
+- 이전에 실패한 유형
+
+**복잡한 작업 시:**
+1. "복잡한 작업입니다. 접근 방식 확인드릴게요." 선언
+2. 사용자 승인 후 진행
+3. Start Simple: 최소 단위 성공 → 확장
+
+**미디어 체크리스트:**
+- [ ] xfade(비디오) vs acrossfade(오디오) 구분
+- [ ] 예상 output duration 계산
+- [ ] filter_complex 100개 제한 인지
+- [ ] 테스트: 작은 파일로 먼저 검증
 
 ---
 

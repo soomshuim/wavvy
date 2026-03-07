@@ -396,6 +396,9 @@ class ProjectPaths:
         self.loop_xfade_test = self.input_dir / 'loop_xfade_test.mp4'
         self.thumbnail = self.input_dir / 'thumb.jpg'
 
+        # Global brand assets
+        self.logo = self.base.parent.parent / 'brand' / 'logo_wavvy.png'
+
         # Work files
         self.merged_wav = self.work_dir / 'merged.wav'
 
@@ -850,6 +853,136 @@ def create_video_crossfade(
         return True
     except subprocess.CalledProcessError as e:
         log_error(f"Video crossfade failed: {e.stderr[-500:] if e.stderr else 'Unknown error'}")
+        return False
+
+
+def detect_pillarbox(video_path: Path) -> Optional[dict]:
+    """
+    Detect black bars (pillarbox/letterbox) in video using FFmpeg cropdetect.
+
+    Returns:
+        dict with 'crop' filter string if black bars detected, None otherwise
+        Example: {'w': 1920, 'h': 1048, 'x': 0, 'y': 16, 'filter': 'crop=1920:1048:0:16'}
+    """
+    cmd = [
+        'ffmpeg', '-i', str(video_path),
+        '-vf', 'cropdetect=24:16:0',
+        '-frames:v', '30',
+        '-f', 'null', '-'
+    ]
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        stderr = result.stderr
+
+        # Parse cropdetect output: crop=W:H:X:Y
+        import re
+        matches = re.findall(r'crop=(\d+):(\d+):(\d+):(\d+)', stderr)
+
+        if not matches:
+            return None
+
+        # Use the last detected crop values (most stable)
+        w, h, x, y = map(int, matches[-1])
+
+        # Get original dimensions
+        info = get_video_info(video_path)
+        orig_w = info.get('width', 1920)
+        orig_h = info.get('height', 1080)
+
+        # Only return if significant cropping detected (>10px)
+        if (orig_h - h) > 10 or (orig_w - w) > 10:
+            return {
+                'w': w, 'h': h, 'x': x, 'y': y,
+                'filter': f'crop={w}:{h}:{x}:{y},scale={orig_w}:{orig_h}'
+            }
+
+        return None
+
+    except subprocess.CalledProcessError:
+        return None
+
+
+def preprocess_loop_video(
+    input_path: Path,
+    output_path: Path,
+    crop_filter: Optional[str] = None,
+    logo_path: Optional[Path] = None,
+    logo_position: tuple[int, int] = (96, 68),
+    logo_scale: float = 0.5
+) -> bool:
+    """
+    Preprocess loop video with optional crop and logo overlay.
+
+    Args:
+        input_path: Source video path
+        output_path: Output video path
+        crop_filter: FFmpeg crop filter string (e.g., 'crop=1920:1048:0:16,scale=1920:1080')
+        logo_path: Path to logo PNG file
+        logo_position: (x, y) position for logo overlay
+        logo_scale: Logo scale factor (default: 0.5 = 50%)
+
+    Returns:
+        True if successful, False otherwise
+    """
+    filters = []
+
+    # Add crop filter if specified
+    if crop_filter:
+        filters.append(crop_filter)
+        log_info(f"Applying crop: {crop_filter}")
+
+    # Build command
+    if logo_path and logo_path.exists():
+        # With logo overlay (scale logo first)
+        x, y = logo_position
+        logo_filter = f"[1:v]scale=iw*{logo_scale}:ih*{logo_scale}[logo]"
+
+        if filters:
+            video_filter = ','.join(filters)
+            filter_complex = f"[0:v]{video_filter}[cropped];{logo_filter};[cropped][logo]overlay={x}:{y}"
+        else:
+            filter_complex = f"{logo_filter};[0:v][logo]overlay={x}:{y}"
+
+        cmd = [
+            'ffmpeg', '-y',
+            '-i', str(input_path),
+            '-i', str(logo_path),
+            '-filter_complex', filter_complex,
+            '-c:v', VIDEO_CODEC,
+            '-preset', 'fast',
+            '-crf', str(VIDEO_CRF),
+            '-pix_fmt', 'yuv420p',
+            '-an',
+            str(output_path)
+        ]
+        log_info(f"Applying logo overlay at ({x}, {y})")
+    elif filters:
+        # Crop only, no logo
+        video_filter = ','.join(filters)
+        cmd = [
+            'ffmpeg', '-y',
+            '-i', str(input_path),
+            '-vf', video_filter,
+            '-c:v', VIDEO_CODEC,
+            '-preset', 'fast',
+            '-crf', str(VIDEO_CRF),
+            '-pix_fmt', 'yuv420p',
+            '-an',
+            str(output_path)
+        ]
+    else:
+        # No preprocessing needed
+        log_info("No preprocessing required")
+        return True
+
+    try:
+        log_info("Preprocessing video...")
+        subprocess.run(cmd, capture_output=True, text=True, check=True)
+        log_success(f"Preprocessed video: {output_path.name}")
+        return True
+    except subprocess.CalledProcessError as e:
+        log_error(f"Preprocessing failed: {e.stderr[-500:] if e.stderr else 'Unknown error'}")
         return False
 
 
@@ -1586,59 +1719,167 @@ def preview(path: Path, sec: int, fade: float):
         click.echo(f"Duration: {audio_duration:.1f}s ({num_tracks} tracks × ~{sec_per_track:.1f}s each)")
 
 
+def interactive_pack_plan(paths: ProjectPaths) -> Optional[dict]:
+    """
+    Interactive plan mode for pack command.
+    Returns config dict or None if cancelled.
+    """
+    click.echo(click.style("\n=== PACK PLAN MODE ===\n", fg='cyan', bold=True))
+
+    # Detect current state
+    has_pillarbox = detect_pillarbox(paths.loop_video) is not None if paths.loop_video.exists() else False
+    has_logo = paths.logo.exists()
+    has_xfade = paths.loop_xfade.exists()
+
+    # Default config
+    config = {
+        'video_xfade': has_xfade,
+        'repeat': 2,
+        'crop_pillarbox': has_pillarbox,
+        'logo_overlay': has_logo,
+    }
+
+    click.echo(click.style("Configure final.mp4 settings:\n", fg='yellow'))
+
+    # 1. Video crossfade
+    click.echo(f"  1. Video crossfade (seamless loop)")
+    if has_xfade:
+        click.echo(click.style(f"     Found: {paths.loop_xfade.name}", fg='green'))
+        config['video_xfade'] = click.confirm("     Use crossfaded video?", default=True)
+    else:
+        click.echo(click.style("     Not found. Run 'vfade' first for seamless loops.", fg='yellow'))
+        click.echo("     (For 80+ min videos, vfade takes 10+ minutes)")
+        config['video_xfade'] = False
+
+    # 2. Track repeat
+    click.echo(f"\n  2. Track repeat")
+    config['repeat'] = click.prompt("     Repeat all tracks N times", default=2, type=int)
+
+    # 3. Pillarbox crop
+    if has_pillarbox:
+        click.echo(f"\n  3. Pillarbox detected (black bars)")
+        config['crop_pillarbox'] = click.confirm("     Auto-crop to 1920x1080?", default=True)
+    else:
+        click.echo(f"\n  3. Pillarbox: Not detected")
+        config['crop_pillarbox'] = False
+
+    # 4. Logo overlay
+    if has_logo:
+        click.echo(f"\n  4. Logo: {paths.logo.name}")
+        config['logo_overlay'] = click.confirm("     Overlay logo (top-left, 50% size)?", default=True)
+    else:
+        click.echo(f"\n  4. Logo: Not found ({paths.logo})")
+        config['logo_overlay'] = False
+
+    # Summary
+    click.echo(click.style("\n--- PLAN SUMMARY ---", fg='cyan'))
+    click.echo(f"  Video crossfade: {'Yes (loop_xfade.mp4)' if config['video_xfade'] else 'No (standard loop)'}")
+    click.echo(f"  Track repeat:    {config['repeat']}x")
+    click.echo(f"  Crop pillarbox:  {'Yes' if config['crop_pillarbox'] else 'No'}")
+    click.echo(f"  Logo overlay:    {'Yes' if config['logo_overlay'] else 'No'}")
+    click.echo("")
+
+    if click.confirm("Proceed with this plan?", default=True):
+        return config
+    else:
+        click.echo("Cancelled.")
+        return None
+
+
 @cli.command()
 @click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
 @click.option('--lufs', default=DEFAULT_LUFS, help='Target loudness in LUFS')
 @click.option('--tp', default=DEFAULT_TRUE_PEAK, help='True peak in dBTP')
-@click.option('--fade', default=DEFAULT_CROSSFADE_SEC, help='Crossfade duration in seconds')
+@click.option('--fade', default=DEFAULT_CROSSFADE_SEC, help='Audio crossfade duration in seconds')
 @click.option('--skip-normalize', is_flag=True, help='Skip normalization step')
-@click.option('--repeat', default=2, help='Number of times to repeat the playlist (default: 2)')
-@click.option('--use-xfade', is_flag=True, help='Use loop_xfade.mp4 for video (recommended)')
-@click.option('--force', is_flag=True, help='Skip video crossfade confirmation')
-def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, repeat: int, use_xfade: bool, force: bool):
+@click.option('--repeat', default=0, help='Number of times to repeat (0 = ask interactively)')
+@click.option('--yes', '-y', is_flag=True, help='Skip interactive confirmation (use defaults)')
+def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, repeat: int, yes: bool):
     """
     Create final deliverables for YouTube.
 
-    Full production workflow:
-    0. Pre-flight check (video crossfade)
-    1. Validate project structure
-    2. Normalize each track (ffmpeg-normalize)
-    3. Merge with sequential crossfade (repeated N times, default 2x)
-    4. Render final video
-    5. Generate artifacts (provenance, description, upload CSV, report)
+    Interactive plan mode asks for confirmation on:
+    - Video crossfade (0.5s seamless loop)
+    - Track repeat count (default: 2x)
+    - Pillarbox auto-crop (1920x1080)
+    - Logo overlay (top-left)
+
+    Use -y to skip confirmation and use defaults.
 
     Output: output/final.mp4 + artifacts
-
-    RECOMMENDED: Use --use-xfade for seamless video loops.
-    First run 'vfade --test' to verify, then 'vfade' to create loop_xfade.mp4.
     """
     click.echo(click.style("\n=== VIBEM PACK ===\n", fg='cyan', bold=True))
 
     paths = ProjectPaths(path)
+
+    # Interactive plan mode (unless -y flag)
+    if not yes:
+        config = interactive_pack_plan(paths)
+        if config is None:
+            sys.exit(0)
+    else:
+        # Default config for -y mode
+        has_pillarbox = detect_pillarbox(paths.loop_video) is not None if paths.loop_video.exists() else False
+        config = {
+            'video_xfade': paths.loop_xfade.exists(),
+            'repeat': repeat if repeat > 0 else 2,
+            'crop_pillarbox': has_pillarbox,
+            'logo_overlay': paths.logo.exists(),
+        }
+
+    # Override repeat if specified via CLI
+    if repeat > 0:
+        config['repeat'] = repeat
+
+    # Update params
+    repeat = config['repeat']
+    use_xfade = config['video_xfade']
     params = {'lufs': lufs, 'tp': tp, 'fade': fade, 'repeat': repeat, 'use_xfade': use_xfade}
 
-    # Step 0: Pre-flight check for video crossfade
-    log_info("Step 0/6: Pre-flight check...")
+    # Step 0: Pre-flight - prepare video (crop + logo)
+    log_info("Step 0/6: Video preparation...")
 
-    if use_xfade:
-        if not paths.loop_xfade.exists():
-            log_error(f"--use-xfade specified but {paths.loop_xfade.name} not found!")
-            log_warning("Run 'python3 vibem.py vfade <path>' first to create it.")
-            sys.exit(1)
+    # Determine video source
+    processed_video_path = paths.input_dir / 'loop_processed.mp4'
+    needs_preprocessing = False
+
+    # Priority: loop_xfade.mp4 > preprocessed > loop.mp4
+    if use_xfade and paths.loop_xfade.exists():
+        # Use existing crossfaded video (already has crop+logo from vfade)
+        video_source_for_render = paths.loop_xfade
         log_success(f"Using crossfaded video: {paths.loop_xfade.name}")
-    else:
-        if paths.loop_xfade.exists():
-            log_info(f"Found {paths.loop_xfade.name} - consider using --use-xfade")
-        else:
-            log_warning("No loop_xfade.mp4 found - video will have visible cuts at loop boundaries!")
-            log_warning("To fix: python3 vibem.py vfade <path> --test  # then verify")
-            log_warning("        python3 vibem.py vfade <path>         # create full version")
-            log_warning("        python3 vibem.py pack <path> --use-xfade")
+    elif config['crop_pillarbox'] or config['logo_overlay']:
+        # Need preprocessing (crop and/or logo)
+        needs_preprocessing = True
+        crop_filter = None
+        if config['crop_pillarbox']:
+            pillarbox = detect_pillarbox(paths.loop_video)
+            if pillarbox:
+                crop_filter = pillarbox['filter']
+                log_info(f"Will crop: {pillarbox['h']}px height")
 
-            if not force:
-                if not click.confirm("Continue with loop.mp4 (visible cuts)?", default=False):
-                    click.echo("Aborted. Run 'vfade' first to create seamless loop video.")
-                    sys.exit(0)
+        logo_path = paths.logo if config['logo_overlay'] else None
+
+        if not preprocess_loop_video(
+            paths.loop_video,
+            processed_video_path,
+            crop_filter=crop_filter,
+            logo_path=logo_path,
+            logo_position=(96, 68),
+            logo_scale=0.5
+        ):
+            log_error("Video preprocessing failed")
+            sys.exit(1)
+
+        video_source_for_render = processed_video_path
+        log_success(f"Preprocessed video: {processed_video_path.name}")
+    else:
+        video_source_for_render = paths.loop_video
+        log_info("Using original loop video")
+
+    # Store for later use in render step
+    params['video_source'] = video_source_for_render
+    params['cleanup_processed'] = needs_preprocessing
 
     # Step 1: Validate
     log_info("Step 1/6: Validation...")
@@ -1721,8 +1962,8 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     # Step 4: Render video
     log_info("Step 4/6: Rendering final video...")
 
-    # Select video source based on --use-xfade flag
-    video_source = paths.loop_xfade if use_xfade else paths.loop_video
+    # Use preprocessed video if available
+    video_source = params.get('video_source', paths.loop_video)
     log_info(f"  Video source: {video_source.name}")
 
     if not render_video(
@@ -1771,18 +2012,31 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     click.echo(f"Final duration: {final_duration:.1f}s ({final_duration/60:.1f} min)")
     click.echo(f"Repeat:         {repeat}x")
 
+    # Cleanup preprocessed video
+    if params.get('cleanup_processed'):
+        processed_path = paths.input_dir / 'loop_processed.mp4'
+        if processed_path.exists():
+            processed_path.unlink()
+            log_info("Cleaned up preprocessed video")
+
 
 @cli.command()
 @click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
 @click.option('--fade', default=0.5, help='Crossfade duration in seconds (default: 0.5)')
 @click.option('--duration', default=0, help='Target duration in seconds (default: auto from audio)')
 @click.option('--test', is_flag=True, help='Generate 30-second test video only')
-def vfade(path: Path, fade: float, duration: float, test: bool):
+@click.option('--crop/--no-crop', default=True, help='Auto-detect and remove black bars (default: enabled)')
+@click.option('--logo/--no-logo', default=True, help='Overlay Wavvy logo (default: enabled)')
+def vfade(path: Path, fade: float, duration: float, test: bool, crop: bool, logo: bool):
     """
     Create crossfaded loop video for seamless playback.
 
     This command applies FFmpeg xfade transitions to loop.mp4 to eliminate
     visible cuts when the video repeats.
+
+    Features:
+    - Auto-crop: Detects and removes black bars (pillarbox/letterbox)
+    - Logo overlay: Adds Wavvy logo at top-left corner
 
     Workflow:
     1. Run with --test to generate a 30-second test video
@@ -1810,6 +2064,48 @@ def vfade(path: Path, fade: float, duration: float, test: bool):
 
     log_info(f"Source: {paths.loop_video.name} ({loop_duration:.1f}s)")
 
+    # Preprocessing: crop + logo
+    source_video = paths.loop_video
+    preprocessed_path = paths.input_dir / 'loop_preprocessed.mp4'
+    needs_preprocessing = False
+    crop_filter = None
+    logo_path = None
+
+    # Check for black bars
+    if crop:
+        pillarbox = detect_pillarbox(paths.loop_video)
+        if pillarbox:
+            crop_filter = pillarbox['filter']
+            log_info(f"Detected black bars: cropping {pillarbox['h']}px height")
+            needs_preprocessing = True
+        else:
+            log_info("No black bars detected")
+
+    # Check for logo
+    if logo:
+        if paths.logo.exists():
+            logo_path = paths.logo
+            needs_preprocessing = True
+        else:
+            log_warning(f"Logo not found: {paths.logo}")
+
+    # Preprocess if needed
+    if needs_preprocessing:
+        if not preprocess_loop_video(
+            paths.loop_video,
+            preprocessed_path,
+            crop_filter=crop_filter,
+            logo_path=logo_path,
+            logo_position=(96, 68)
+        ):
+            log_error("Preprocessing failed")
+            sys.exit(1)
+        source_video = preprocessed_path
+
+        # Update loop duration after preprocessing
+        loop_info = get_video_info(source_video)
+        loop_duration = loop_info.get('duration', 0)
+
     # Determine target duration
     if test:
         target_duration = 30.0
@@ -1835,9 +2131,14 @@ def vfade(path: Path, fade: float, duration: float, test: bool):
     log_info(f"Crossfade: {fade}s")
 
     # Create video crossfade
-    if not create_video_crossfade(paths.loop_video, output_path, target_duration, fade):
+    if not create_video_crossfade(source_video, output_path, target_duration, fade):
         log_error("Failed to create video crossfade")
         sys.exit(1)
+
+    # Clean up preprocessed file
+    if needs_preprocessing and preprocessed_path.exists():
+        preprocessed_path.unlink()
+        log_info("Cleaned up preprocessed file")
 
     # Get output info
     output_info = get_video_info(output_path)

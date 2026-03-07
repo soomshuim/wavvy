@@ -2,7 +2,7 @@
 
 > 버그 패턴 및 해결책 기록
 >
-> Last updated: 2026-02-09
+> Last updated: 2026-03-07
 
 ---
 
@@ -694,3 +694,62 @@ B2 Thesis: "사라지는 윤곽뿐" ← 변경 + Track 02 제목 "윤곽" 사용
 2. Claude가 "이 크로스페이드 PASS인가요?" 명시적 확인
 3. PASS 시 해당 옵션으로 유튜브용 영상 자동 제작
 4. PASS 확인 없이 본 작업 진행 금지
+
+---
+
+## Seamless Loop 생성 (2026-03-07)
+
+### 문제
+- 81분 영상 제작 시 FFmpeg filter_complex로 600+ 입력 처리 시도
+- FFmpeg 메모리 한계로 SIGKILL (exit 137) 반복
+- cap=200으로도 "Could not open encoder before EOF" 실패
+- `vfade`로 생성한 `loop_xfade.mp4`도 끝-시작 경계에 미세한 끊김
+
+### 원인
+- FFmpeg filter_complex는 약 100개 입력이 실질적 한계
+- 단순히 반복 횟수를 늘리는 접근은 확장 불가
+- `-stream_loop -1`은 원본의 끝-시작 경계를 그대로 반복
+
+### 해결책: Seamless Loop + stream_loop
+
+**핵심 아이디어** (사용자 제안):
+> "12.5분짜리를 다시 크로스페이드하면 끊김 없는거 아냐?"
+
+```bash
+# Step 1: 끝 1초 + 시작 1초 xfade 브릿지 생성
+ffmpeg -sseof -1 -i loop_xfade.mp4 -ss 0 -t 1 -i loop_xfade.mp4 \
+  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=0.5[v]" \
+  -map "[v]" -an xfade_bridge.mp4
+
+# Step 2: 메인(0.5s~끝-0.5s) + 브릿지 결합 → 완전한 seamless loop
+ffmpeg -i loop_xfade.mp4 -i xfade_bridge.mp4 -filter_complex \
+  "[0:v]trim=0.5:749.5,setpts=PTS-STARTPTS[main];\
+   [1:v]setpts=PTS-STARTPTS[bridge];\
+   [main][bridge]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -an loop_seamless.mp4
+
+# Step 3: pack에서 -stream_loop -1로 무한 반복 (끊김 없음)
+```
+
+### 핵심 인사이트
+
+| 접근 | 결과 |
+|------|------|
+| filter_complex로 600+ 입력 | ❌ 메모리 초과, SIGKILL |
+| cap=200으로 제한 | ❌ 여전히 실패 |
+| cap=100 + 반복 | ⚠️ 가능하나 비효율 |
+| **seamless loop + stream_loop** | ✅ 최적 해결책 |
+
+### 재발 방지
+
+1. **FFmpeg filter_complex 100개 제한** 항상 인지
+2. **긴 영상 = seamless loop 먼저** (filter_complex 대량 처리 X)
+3. **Start Simple**: 작은 테스트 → 성공 확인 → 확장
+4. **사용자 아이디어 경청**: 해결책은 사용자가 제안
+
+### 체크리스트 (긴 영상 제작 시)
+
+- [ ] 예상 duration 계산 (10분+ = 복잡한 작업)
+- [ ] filter_complex 입력 개수 100개 이하인지 확인
+- [ ] 100개 초과 시 seamless loop 방식 선택
+- [ ] 테스트 먼저 → PASS 확인 → 본 실행

@@ -2,8 +2,8 @@
 
 > **모든 작업 워크플로우 통합 문서**
 >
-> Version: 1.3
-> Last Updated: 2026-03-06
+> Version: 1.4
+> Last Updated: 2026-03-07
 
 ---
 
@@ -103,7 +103,7 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 > **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
 > **⚠️ 플레이리스트 2회 반복 필수** (`--repeat 2`)
 
-### 5.1 CLI 기반 워크플로우 (v2.0)
+### 5.1 CLI 기반 워크플로우 (v3.0)
 
 ```bash
 # Step 1: 비디오 크로스페이드 테스트 (30초)
@@ -112,14 +112,40 @@ python3 vibem.py vfade SERIES/[시리즈] --test
 # Step 2: 테스트 영상 확인 (끊김 없으면 PASS)
 open SERIES/[시리즈]/input/loop_xfade_test.mp4
 
-# Step 3: 비디오 크로스페이드 본 생성
+# Step 3: 비디오 크로스페이드 본 생성 (자동 크롭 + 로고 포함)
 python3 vibem.py vfade SERIES/[시리즈]
 
-# Step 4: 패키징 (--use-xfade 필수!)
-python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade
+# Step 4: 패키징 (인터랙티브 모드 — 4가지 설정 확인)
+python3 vibem.py pack SERIES/[시리즈]
 ```
 
-### 5.2 필수 옵션
+### 5.2 Seamless Loop (긴 영상용 — 수동)
+
+> **⚠️ 81분+ 영상 등 FFmpeg filter_complex 100개 제한 초과 시 필요**
+
+`vfade`로 생성된 `loop_xfade.mp4`는 끝-시작 경계에 미세한 끊김이 있을 수 있음.
+**무한 반복 시 완전한 seamless loop**가 필요하면 아래 추가 작업:
+
+```bash
+# Step A: 끝 1초 + 시작 1초 xfade 브릿지 생성
+ffmpeg -sseof -1 -i input/loop_xfade.mp4 -ss 0 -t 1 -i input/loop_xfade.mp4 \
+  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=0.5[v]" \
+  -map "[v]" -an work/xfade_bridge.mp4
+
+# Step B: 메인(0.5s~끝-0.5s) + 브릿지 결합
+ffmpeg -i input/loop_xfade.mp4 -i work/xfade_bridge.mp4 -filter_complex \
+  "[0:v]trim=0.5:end-0.5,setpts=PTS-STARTPTS[main];\
+   [1:v]setpts=PTS-STARTPTS[bridge];\
+   [main][bridge]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -an input/loop_seamless.mp4
+
+# Step C: pack에서 loop_seamless.mp4 사용
+# pack 인터랙티브 모드에서 loop_seamless.mp4 선택
+```
+
+**원리**: 끝과 시작을 xfade로 연결 → `-stream_loop -1` 무한 반복 시 끊김 없음
+
+### 5.3 필수 옵션
 
 | 옵션 | 기본값 | 설명 |
 |------|--------|------|
@@ -127,13 +153,13 @@ python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2 --use-xfade
 | `--repeat` | **2** | 플레이리스트 반복 횟수 |
 | `--use-xfade` | - | 비디오 크로스페이드 사용 (**권장**) |
 
-### 5.3 Pre-flight 체크
+### 5.4 Pre-flight 체크
 
 `pack` 실행 시 자동 확인:
 - `loop_xfade.mp4` 없으면 경고 + 확인 요청
 - `--force` 사용 시 확인 생략 (비권장)
 
-### 5.4 크로스페이드 구분
+### 5.5 크로스페이드 구분
 
 | 종류 | 명령어 | 설명 |
 |------|--------|------|
