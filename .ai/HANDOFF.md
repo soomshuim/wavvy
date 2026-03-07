@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-07 14:09:13
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 input 폴더 + 썸네일/루프영상 추가, 크로스페이드 0.5초 PASS
+Next-TODO: 유튜브용 본 영상 제작 (오디오 + 비디오 합치기)
+Commits: db3ea20
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-07 13:57:29
 Project: ~/Project/wavvy
 Agent: Claude

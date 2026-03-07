@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **11-00 input 폴더 + 썸네일/루프영상**
+  - thumb.png: 고양이+헤드폰+모니터 응시
+  - loop.mp4: 8초 원본 루프
+  - 크로스페이드 0.5초 x3 테스트 PASS
 - **11-00 Track 11-15 가사/스타일 txt + concept.md 반영**
   - Track 11 "어딘가": Rhodes, disoriented, F#m, 74 BPM
   - Track 12 "신호": Felt piano, awakening, D Major, 78 BPM
