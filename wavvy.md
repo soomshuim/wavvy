@@ -83,3 +83,31 @@ Purpose: 프로젝트 전략/브랜드 정의 (What & Why)
 | 16-00 | 16:00 | 감성 락 |
 | 18-00 | 18:00 | Neo-Soul |
 | 21-00 | 21:00 | City Pop |
+
+---
+
+## 7. Channel Branding
+
+| 항목 | 값 |
+|------|-----|
+| **채널명** | Wavvy |
+| **핸들** | @wavvy24 |
+| **로고** | Wavvy (24 제외) |
+| **썸네일** | Wavvy {HH:MM} 포맷 |
+| **시간 표기** | 24시간제 (00:00 ~ 23:00) |
+
+### 타이틀 포맷
+```
+[Playlist] [HH:MM] Wavvy | {문구}, {장르}
+예: [Playlist] [04:00] Wavvy | 하루가 멈춘 시간, 새벽 Slow R&B 보컬
+```
+
+### 영상 구성
+- **롱폼**: 인트로 3-5초 + 우상단 로고 워터마크
+- **숏폼**: 텍스트 0 (Lo-fi girl 스타일)
+
+### 브랜딩 문구 (인트로용)
+```
+From the stillness of dawn to the ease of evening —
+may you find a song here that belongs to this moment you're living in.
+```
