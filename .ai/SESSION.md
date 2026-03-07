@@ -4,15 +4,26 @@
 >
 > Last updated: 2026-03-07
 
+## 진행 중 (재개 시 확인)
+
+- **영상 렌더링 실행됨** — `vibem.py pack --fade 0.5 --repeat 2`
+  - 완료 확인: `ls -lh SERIES/11-00/output/final.mp4`
+  - 예상 길이: ~80분 (15곡 x 2회)
+- **썸네일** — 사용자 작업 중 (thumb.psd)
+
 ## 다음 할 일
 
-- [ ] **11-00 유튜브용 본 영상 제작**
-  - 오디오 크로스페이드 (vibem.py pack --fade)
-  - 비디오 크로스페이드 (loop.mp4 → xfade → 전체 길이)
-  - 오디오 + 비디오 합치기 → final.mp4
-  - 압축 (2GB 미만)
-- [ ] YouTube 메타데이터 Track List 업데이트 (타임스탬프)
-- [ ] 썸네일 최종 디자인 → 업로드
+- [ ] 영상 렌더링 완료 확인 → output/final.mp4
+- [ ] YouTube 메타데이터 Track List + 타임스탬프
+- [ ] 썸네일 완성 → 업로드
+
+## 필수 규칙 (WORKFLOWS.md §5.0 추가됨)
+
+```bash
+python3 vibem.py pack SERIES/[시리즈] --fade 0.5 --repeat 2
+```
+- `--fade 0.5` (크로스페이드 0.5초)
+- `--repeat 2` (플레이리스트 2회 반복)
 
 ---
 

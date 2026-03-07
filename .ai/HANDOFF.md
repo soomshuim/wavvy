@@ -1,6 +1,16 @@
 # HANDOFF Log
 
 ---
+HANDOFF: Claude -> Next
+Date: 2026-03-07 15:40:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 11-00 영상 렌더링 실행 중 (--fade 0.5 --repeat 2). WORKFLOWS.md 필수 규칙 추가.
+Next-TODO: 영상 렌더링 완료 확인 (output/final.mp4) → 썸네일 완성 → 업로드
+Commits: 836afe8
+---
+
+---
 HANDOFF: 혼합 -> User
 Date: 2026-03-07 15:10:00
 Project: ~/Project/wavvy

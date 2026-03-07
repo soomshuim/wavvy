@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **WORKFLOWS.md §5.0 필수 규칙 추가**
+  - `--fade 0.5` (크로스페이드 0.5초)
+  - `--repeat 2` (플레이리스트 2회 반복)
 - **11-00 tracks 폴더 구조 통일**
   - tracks/ → input/tracks/ 이동 (다른 시리즈와 동일 구조)
   - wav 파일 네이밍 룰 적용: `{N}__{한글}__{영문}__{장르}__{BPM}.wav`
