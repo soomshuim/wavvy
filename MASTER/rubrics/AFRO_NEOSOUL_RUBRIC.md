@@ -11,7 +11,7 @@ Purpose: K-Afro Neo-Soul 장르 품질 게이트
 | # | Gate | 기준 |
 |---|------|------|
 | H1 | BPM | 100-115 범위 |
-| H2 | Lead | Rhodes 또는 Neo-Soul keys 포함 |
+| H2 | Lead | Kalimba/Marimba melody 또는 Rhodes/Neo-Soul keys 포함 |
 | H3 | Rhythm | African percussion 포함 |
 | H4 | Vocal | 한국어 가사 + R&B 톤 |
 | H5 | Energy | Groovy but not aggressive |
@@ -48,7 +48,7 @@ Purpose: K-Afro Neo-Soul 장르 품질 게이트
 | # | 항목 | 체크 |
 |---|------|------|
 | S1 | BPM 100-115 | ☐ |
-| S2 | Rhodes 또는 Neo-Soul keys | ☐ |
+| S2 | Kalimba/Marimba + Rhodes (또는 Neo-Soul keys) | ☐ |
 | S3 | African percussion / shaker | ☐ |
 | S4 | Log drum texture (subtle) | ☐ |
 | S5 | Maj7/m7 chord progression | ☐ |

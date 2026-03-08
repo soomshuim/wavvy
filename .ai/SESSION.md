@@ -4,7 +4,7 @@
 
 ## 진행 중
 
-- **12-00 K-Afro Neo-Soul 시리즈** — 초기 설정 완료, Seed Track 01 기획 대기
+- **12-00 K-Afro Neo-Soul 시리즈** — Track 01 "메뉴" Suno PASS, DNA 문서 업데이트 완료
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 - **06-00 YouTube 설명 보완 완료** — EXTENDED_HOOK 확장 (2026-03-08)
 

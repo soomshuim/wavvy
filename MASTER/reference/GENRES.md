@@ -39,7 +39,7 @@ R&B
 | Chillhop | Hi-fi (깔끔) | 80-110 | 재즈 바이브, 밝은 톤 |
 | Slow R&B | Mid-fi | 60-75 | 감성적, 보컬 중심 |
 | Neo-Soul | Warm | 75-95 | Jazz/Funk 영향 |
-| K-Afro Neo-Soul | Warm + Afro | 100-115 | Rhodes + African percussion |
+| K-Afro Neo-Soul | Warm + Afro | 100-115 | Kalimba melody + Rhodes comping + African percussion |
 | City Pop | Retro | 100-120 | 80s 일본 팝 |
 
 ---

@@ -12,7 +12,7 @@ Last Updated: 2026-03-08
 | 장르 | K-Afro Neo-Soul |
 | BPM | 105-110 |
 | Key | Major 60% / Minor 40% (Eb, F, Ab / Ebm, Fm) |
-| Lead | Rhodes + subtle log drum texture |
+| Lead | Kalimba melody + Rhodes chord comping |
 | Chord | Maj7/m7 믹스 |
 | Rhythm | African percussion + shaker swing |
 | Vocal | 한국어, Warm, R&B, Conversational |
@@ -39,7 +39,8 @@ Last Updated: 2026-03-08
 
 ```
 Korean Afro Neo-Soul, {BPM} BPM, {Key},
-Rhodes-led groove, subtle log drum texture,
+Kalimba melody lead, Rhodes chord comping,
+subtle log drum texture,
 {Chord} warm chord progression,
 African percussion, shaker swing,
 {Gender} vocal: warm, conversational, R&B, chest voice,
@@ -61,7 +62,7 @@ dark, melancholic, slow tempo
 
 | # | 제목 | BPM | Key | 보컬 | 상태 |
 |---|------|-----|-----|------|------|
-| 01 | TBD | 105 | Eb | M | 기획중 |
+| 01 | 메뉴 | 105 | Eb | M | Suno PASS |
 | 02 | TBD | 107 | F | F | 기획중 |
 | 03 | TBD | 108 | Ab | M | 기획중 |
 | 04 | TBD | 105 | Ebm | F | 기획중 |
