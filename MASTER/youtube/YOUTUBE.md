@@ -78,6 +78,7 @@ Playlist | 10:00 | 오늘도 조용히 시작하는 중 ☕ | CHILLHOP · JAZZHO
 | 06-00 | Fast Lo-fi | fast lofi, lofi, 패스트로파이, 노동요 | #fastlofi #로파이 #노동요 |
 | 10-00 | Chillhop | chillhop, lofi, jazzhop, 칠홉, 노동요 | #chillhop #칠홉 #노동요 |
 | 11-00 | Classic Lo-fi | classic lofi, lofi hip hop, jazzhop, 클래식로파이, 딥워크 | #classiclofi #로파이 #딥워크 #몰입 |
+| 12-00 | K-Afro Neo-Soul | afro neo soul, k-afro, 아프로네오소울, 점심플리 | #afroneosoul #kafro #점심플리 |
 | 14-00 | Soft R&B | soft rnb, r&b, 소프트알앤비, 카페음악 | #softrnb #알앤비 #카페음악 |
 | 16-00 | 감성 락 | korean rock, indie rock, 감성락 | #koreanrock #감성락 #드라이브 |
 | 18-00 | Neo-Soul | neo soul, 네오소울, 퇴근길 | #neosoul #네오소울 #퇴근길 |

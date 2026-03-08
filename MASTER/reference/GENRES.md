@@ -39,6 +39,7 @@ R&B
 | Chillhop | Hi-fi (깔끔) | 80-110 | 재즈 바이브, 밝은 톤 |
 | Slow R&B | Mid-fi | 60-75 | 감성적, 보컬 중심 |
 | Neo-Soul | Warm | 75-95 | Jazz/Funk 영향 |
+| K-Afro Neo-Soul | Warm + Afro | 100-115 | Rhodes + African percussion |
 | City Pop | Retro | 100-120 | 80s 일본 팝 |
 
 ---
@@ -52,6 +53,7 @@ R&B
 | Slow R&B | slow rnb, slow jam | 슬로우알앤비 |
 | Soft R&B | soft rnb | 소프트알앤비 |
 | Neo-Soul | neo soul | 네오소울 |
+| K-Afro Neo-Soul | afro neo soul, k-afro | 아프로네오소울 |
 | Soul | soul | 소울 |
 | Funk | funk | 펑크 |
 
