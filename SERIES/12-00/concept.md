@@ -12,7 +12,7 @@ Last Updated: 2026-03-08
 | 장르 | K-Afro Neo-Soul |
 | BPM | 105-110 |
 | Key | Major 60% / Minor 40% (Eb, F, Ab / Ebm, Fm) |
-| Lead | Kalimba melody + Rhodes chord comping |
+| Lead | Style A: Kalimba + Rhodes / Style B: Rhodes + talking drum |
 | Chord | Maj7/m7 믹스 |
 | Rhythm | African percussion + shaker swing |
 | Vocal | 한국어, Warm, R&B, Conversational |
@@ -35,20 +35,32 @@ Last Updated: 2026-03-08
 
 ---
 
-## Style Template
+## Style Templates
 
+### Style A — Kalimba Lead (Afro 강조)
 ```
 Korean Afro Neo-Soul, {BPM} BPM, {Key},
 Kalimba melody lead, Rhodes chord comping,
-subtle log drum texture,
-{Chord} warm chord progression,
-African percussion, shaker swing,
+subtle log drum texture, {Chord} progression,
+African percussion, shaker swing, congas,
 {Gender} vocal: warm, conversational, R&B, chest voice,
 groovy, uplifting, midday energy,
-articulation, moderate reverb, EQ balanced
+articulation, moderate reverb, EQ balanced sound, clean mix
 ```
 
-### Exclude
+### Style B — Rhodes Lead (Neo-Soul 강조)
+```
+Korean Afro Neo-Soul, {BPM} BPM, {Key},
+Rhodes electric piano lead, talking drum accents,
+subtle log drum texture, {Chord} progression,
+African groove percussion, syncopated Afro rhythm,
+warm bass groove, light guitar stabs,
+{Gender} vocal: raw, solid, direct, soulful, chest voice,
+groovy, uplifting, midday energy,
+articulation, moderate reverb, EQ balanced sound, clean mix
+```
+
+### Exclude (공통)
 ```
 EDM drops, heavy 808, synth bass,
 falsetto, whisper, airy vocal,
@@ -60,18 +72,18 @@ dark, melancholic, slow tempo
 
 ## Tracklist (Planning)
 
-| # | 제목 | BPM | Key | 보컬 | 상태 |
-|---|------|-----|-----|------|------|
-| 01 | 메뉴 | 105 | Eb | M | Suno PASS |
-| 02 | TBD | 107 | F | F | 기획중 |
-| 03 | TBD | 108 | Ab | M | 기획중 |
-| 04 | TBD | 105 | Ebm | F | 기획중 |
-| 05 | TBD | 110 | Fm | M | 기획중 |
-| 06 | TBD | 106 | Eb | F | 기획중 |
-| 07 | TBD | 108 | F | M | 기획중 |
-| 08 | TBD | 105 | Ab | F | 기획중 |
-| 09 | TBD | 107 | Ebm | M | 기획중 |
-| 10 | TBD | 110 | Eb | F | 기획중 |
+| # | 제목 | Style | BPM | Key | 보컬 | 상태 |
+|---|------|-------|-----|-----|------|------|
+| 01 | 메뉴 | A | 105 | Eb | M | Suno PASS |
+| 02 | 사냥 | B | 105 | F | M | Suno PASS |
+| 03 | TBD | A | 108 | Ab | M | 기획중 |
+| 04 | TBD | B | 105 | Ebm | F | 기획중 |
+| 05 | TBD | A | 110 | Fm | M | 기획중 |
+| 06 | TBD | B | 106 | Eb | F | 기획중 |
+| 07 | TBD | A | 108 | F | M | 기획중 |
+| 08 | TBD | B | 105 | Ab | F | 기획중 |
+| 09 | TBD | A | 107 | Ebm | M | 기획중 |
+| 10 | TBD | B | 110 | Eb | F | 기획중 |
 
 ---
 
