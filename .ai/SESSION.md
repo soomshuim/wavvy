@@ -4,9 +4,8 @@
 
 ## 진행 중
 
-- **11-00 시리즈 완료** — final.mp4 (2.8GB, 81분, seamless loop PASS)
-- **YouTube 메타 완료** — 30트랙 타임스탬프, 이모지 🎯
-- **문서 최신화 완료** — wavvy.md 11-00 추가, 영상 구성 규칙 업데이트
+- **MASTER 문서 v3.2** — Writing Formula + 워크플로우 분리 (2026-03-08)
+- **06-00 YouTube 설명 보완 중** — EXTENDED_HOOK 확장
 
 ## 다음 할 일
 

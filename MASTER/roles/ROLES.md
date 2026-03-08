@@ -79,7 +79,7 @@ Vocal line may intensify dynamically, but no additional layers.
 - Style Prompt 8-10 토큰
 - Musicality Matrix + Exclude ≤3 그룹
 
-**필수 참조:** museA_suno_guide.md, LYRICS.md, STYLE.md
+**필수 참조:** STYLE.md, LYRICS.md
 
 **Sanity Check:**
 1. "10 variations 후에도 identity 유지되나?"

@@ -112,31 +112,45 @@ python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 
 ---
 
-## 6. 인터랙티브 플랜 모드 예시
+## 6. 영상 패키징 워크플로우
 
+> **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
+> **⚠️ 플레이리스트 2회 반복 필수** (`--repeat 2`)
+
+### 6.1 기본 워크플로우
+
+`vfade --test` → 확인 → `vfade` → `pack` (§5 사용 예시 참조)
+
+### 6.2 Seamless Loop (81분+ 영상용 — 수동)
+
+> **⚠️ FFmpeg filter_complex 100개 제한 초과 시 필요**
+
+`vfade`로 생성된 `loop_xfade.mp4`는 끝-시작 경계에 미세한 끊김이 있을 수 있음.
+**무한 반복 시 완전한 seamless loop**가 필요하면 아래 추가 작업:
+
+```bash
+# Step A: 끝 1초 + 시작 1초 xfade 브릿지 생성
+ffmpeg -sseof -1 -i input/loop_xfade.mp4 -ss 0 -t 1 -i input/loop_xfade.mp4 \
+  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=0.5[v]" \
+  -map "[v]" -an work/xfade_bridge.mp4
+
+# Step B: 메인(0.5s~끝-0.5s) + 브릿지 결합
+ffmpeg -i input/loop_xfade.mp4 -i work/xfade_bridge.mp4 -filter_complex \
+  "[0:v]trim=0.5:end-0.5,setpts=PTS-STARTPTS[main];\
+   [1:v]setpts=PTS-STARTPTS[bridge];\
+   [main][bridge]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -an input/loop_seamless.mp4
+
+# Step C: pack에서 loop_seamless.mp4 사용
 ```
-=== PACK PLAN MODE ===
 
-Configure final.mp4 settings:
+**원리**: 끝과 시작을 xfade로 연결 → `-stream_loop -1` 무한 반복 시 끊김 없음
 
-  1. Video crossfade (seamless loop)
-     Found: loop_xfade.mp4
-     Use crossfaded video? [Y/n]:
+### 6.3 크로스페이드 구분
 
-  2. Track repeat
-     Repeat all tracks N times [2]:
+| 종류 | 명령어 | 설명 |
+|------|--------|------|
+| **오디오** | `pack --fade 0.5` | 트랙 간 오디오 전환 |
+| **비디오** | `vfade` → `pack` | 루프 영상 끊김 없는 반복 |
 
-  3. Pillarbox detected (black bars)
-     Auto-crop to 1920x1080? [Y/n]:
-
-  4. Logo: logo_wavvy.png
-     Overlay logo (top-left, 50% size)? [Y/n]:
-
---- PLAN SUMMARY ---
-  Video crossfade: Yes (loop_xfade.mp4)
-  Track repeat:    2x
-  Crop pillarbox:  Yes
-  Logo overlay:    Yes
-
-Proceed with this plan? [Y/n]:
-```
+**⚠️ `pack` 단독 실행 = 오디오만 크로스페이드 (비디오 끊김 발생)**

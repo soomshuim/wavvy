@@ -46,6 +46,26 @@ Purpose: Style Prompt 핵심 규칙 (SSOT)
 
 ---
 
+## 1.5 Writing Formula (7요소)
+
+> **키워드 뱅크:** Genre/Tempo → `reference/GENRES.md` | 나머지 → `style/TAG_BANK.md`
+
+| # | 요소 | 형식 | 예시 |
+|---|------|------|------|
+| 1 | **Genre** | `[큰 장르] + [세부 장르]` (최대 2개, 첫 3-5단어) | `Korean Lo-fi R&B`, `Chillhop Jazz-hop` |
+| 2 | **Mood** | `[감정 1-2개] + [시간대]` (선택) | `melancholic, nostalgic, late-night` |
+| 3 | **Key/Mode** | `[Key] + [Major/Minor] + [코드 진행]` (선택) | `Eb Major, warm major7 chords` |
+| 4 | **Tempo** | `[BPM 숫자]` — Belt 규칙 §4.1 참조 | `78 BPM` |
+| 5 | **Parts** | `[Lead 1] + [Rhythm 2-3] + [Bass 1] + [Vocal]` | `Rhodes-led groove, soft shaker, warm bass` |
+| 6 | **Texture** | `[질감] + [공간감] + [프로덕션]` | `dusty texture, intimate room, subtle reverb` |
+| 7 | **Structure Cues** | `[섹션]: [연출 지시]` (가사 태그 보조) | `Chorus: emotional peak, 1 held note` |
+
+**Parts — Vocal 형식:** `[Gender] vocal: [Tone], [Delivery], [Register], [Production]`
+- 예: `Female vocal: Raw, Direct, Chest voice, Dry, articulation`
+- 가사 있으면 `articulation` 필수
+
+---
+
 ## 2. Harmony Guard (필수)
 
 **초압축 2줄:**

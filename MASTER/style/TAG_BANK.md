@@ -1,10 +1,11 @@
-# Style Tag Bank (Reference)
+# Style Tag Bank
 
-Version: 1.1
-Last Updated: 2026-03-03
-Purpose: Style Prompt 키워드 참고 자료
+Version: 1.2
+Last Updated: 2026-03-08
+Purpose: Style Prompt **키워드 목록** (작성법은 `STYLE.md §1.5` 참조)
 
-> SSOT: `STYLE.md` | 장르 참조: `reference/GENRES.md`
+> 담당: Mood, Parts, Texture, Structure Cues, Key/Mode
+> Genre/Tempo → `reference/GENRES.md`
 
 ---
 
@@ -26,13 +27,33 @@ Raw, Solid, Direct, Intimate, Clear, Dry, Unprocessed
 
 ---
 
-## 2. 분위기/감정 키워드
+## 2. 분위기/감정 키워드 (Mood)
 
 ```
 melancholic, dreamy, mysterious, hopeful, nostalgic, peaceful,
 dramatic, reflective, tender, whimsical, serene, intimate,
-bittersweet, contemplative, ethereal
+bittersweet, contemplative, ethereal, chill, mellow, warm, cozy
 ```
+
+**시간대:** `late-night, early morning, sunset, rainy`
+
+---
+
+## 2.5 Key/Mode 키워드
+
+**코드 진행:**
+```
+major7 chords, minor9 chords, jazz progressions,
+ii-V-I, I-V-vi-IV, suspended chords (sus2, sus4),
+extended harmonies (9th, 13th), warm chords
+```
+
+**Modal:**
+```
+Dorian, Phrygian, Mixolydian, Lydian
+```
+
+**예시:** `Eb Major, warm major7 chords` / `F Minor, jazzy ii-V-I`
 
 ---
 
@@ -69,6 +90,7 @@ dynamic range, controlled crescendo
 Let the mix breathe; keep clear separation between instruments.
 Intimate small-room space; soft natural room reverb.
 Make the space feel close and personal, not wide.
+Create a small jazz club atmosphere.
 ```
 
 **밀도 제어:**
@@ -76,6 +98,8 @@ Make the space feel close and personal, not wide.
 Keep the arrangement spacious; avoid cluttered arrangements.
 Leave space between instruments; reduce density in the middle section.
 Build intensity gradually toward the end.
+Make each instrument feel distinct.
+Focus on clarity rather than loudness.
 ```
 
 ---
@@ -91,9 +115,11 @@ Build intensity gradually toward the end.
 
 **Intro/Outro:**
 ```
+Make the intro longer
 Make the intro longer and more lyrical
 Write a longer and more impactful outro
 Let the outro fade slowly and emotionally
+Strip the arrangement down in the outro
 ```
 
 **구조 변형:**
@@ -103,27 +129,3 @@ Reduce density in the middle section
 Build intensity gradually toward the end
 ```
 
----
-
-## 8. Quick Reference 예시
-
-### Harmony Guard
-```
-Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
-Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
-```
-
-### Musicality Matrix
-```
-Verse2: same melodic contour, last 2 lines MUST rise in emotional intensity.
-Chorus: hook-first, repeat identical; chorus first line hits peak with belt + 1 held note.
-Chorus2: bigger by arrangement (bass/drums energy, wider stereo).
-Bridge: build every bar, no energy drop into chorus.
-Outro: instrumental fade.
-```
-
-### V2 → Chorus Lift
-```
-Verse2 last 2 lines: emotional intensity MUST rise (higher register, chest-dominant).
-Chorus first line: 1 held note (longer sustain) + belt/higher register.
-```

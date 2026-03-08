@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **MASTER 문서 v3.2 — Writing Formula + 워크플로우 분리**
+  - STYLE.md §1.5 Writing Formula 신설 (7요소 작성법)
+  - TAG_BANK.md §2.5 Key/Mode 키워드 추가
+  - LYRICS.md §2.5 Song Structure Patterns 추가
+  - WORKFLOWS.md 정리 (215줄 → 113줄, FFmpeg/YouTube 분리)
+  - CLI SPEC.md §6 영상 패키징 워크플로우 추가
+  - YOUTUBE.md §9 메타데이터 워크플로우 추가
+  - Reference 직접 참조 제거 (CLAUDE.md, ROLES.md)
 - **wavvy.md 최신화** — 11-00 시리즈 추가, 영상 구성 규칙 업데이트 (인트로 없음 + 좌상단 로고), 브랜딩 문구 용도 변경 (썸네일용)
 - **WORKFLOWS.md §4 레거시 참조 수정** — Wavvy_Master_Plan.md → cli/SPEC.md
 - **vibem.py → wavvy.py 리네임** — CLI 파일명 프로젝트명 일치, 9개 파일 67곳 참조 업데이트

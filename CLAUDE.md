@@ -57,7 +57,6 @@ Purpose: AI 실행 설정 (How)
 | CLI 스펙 | `MASTER/cli/SPEC.md` |
 | 워크플로우 | `MASTER/WORKFLOWS.md` |
 | FFmpeg 버그 | `.ai/lessons-learned.md` |
-| Suno 가이드 | `Reference/museA_suno_guide.md` |
 
 ---
 

@@ -60,7 +60,7 @@ Length: 3min+
 
 ### 절차
 1. `LYRICS.md` + 이전 트랙 키워드 확인 + 크로스시리즈 겹침 검증 (3축 중 2개 이상 겹침 = FAIL)
-2. `Reference/museA_suno_guide.md` §3-4 참조 (구조 공식, 메타태그 규칙)
+2. `LYRICS.md` §메타태그 규칙 참조
 3. 초안 생성 → self-QC (LYRICS.md 전항목) → Korean Positioning (K1-K3) → 메타태그 검증 → 패턴 고착 검사
 4. **루브릭 테스트 (셀프 루프)**
    - Hard Gates 체크 → **1개라도 FAIL 시 즉시 수정 후 재체크**
@@ -98,118 +98,16 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 
 ---
 
-## 5. 영상 패키징 워크플로우
+## 5. 영상 패키징
 
-> **⚠️ 크로스페이드 = 오디오 + 비디오 둘 다 필요**
-> **⚠️ 플레이리스트 2회 반복 필수** (`--repeat 2`)
+> **SSOT: `MASTER/cli/SPEC.md` §7**
 
-### 5.1 CLI 기반 워크플로우 (v3.0)
-
-```bash
-# Step 1: 비디오 크로스페이드 테스트 (30초)
-python3 wavvy.py vfade SERIES/[시리즈] --test
-
-# Step 2: 테스트 영상 확인 (끊김 없으면 PASS)
-open SERIES/[시리즈]/input/loop_xfade_test.mp4
-
-# Step 3: 비디오 크로스페이드 본 생성 (자동 크롭 + 로고 포함)
-python3 wavvy.py vfade SERIES/[시리즈]
-
-# Step 4: 패키징 (인터랙티브 모드 — 4가지 설정 확인)
-python3 wavvy.py pack SERIES/[시리즈]
-```
-
-### 5.2 Seamless Loop (긴 영상용 — 수동)
-
-> **⚠️ 81분+ 영상 등 FFmpeg filter_complex 100개 제한 초과 시 필요**
-
-`vfade`로 생성된 `loop_xfade.mp4`는 끝-시작 경계에 미세한 끊김이 있을 수 있음.
-**무한 반복 시 완전한 seamless loop**가 필요하면 아래 추가 작업:
-
-```bash
-# Step A: 끝 1초 + 시작 1초 xfade 브릿지 생성
-ffmpeg -sseof -1 -i input/loop_xfade.mp4 -ss 0 -t 1 -i input/loop_xfade.mp4 \
-  -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.5:offset=0.5[v]" \
-  -map "[v]" -an work/xfade_bridge.mp4
-
-# Step B: 메인(0.5s~끝-0.5s) + 브릿지 결합
-ffmpeg -i input/loop_xfade.mp4 -i work/xfade_bridge.mp4 -filter_complex \
-  "[0:v]trim=0.5:end-0.5,setpts=PTS-STARTPTS[main];\
-   [1:v]setpts=PTS-STARTPTS[bridge];\
-   [main][bridge]concat=n=2:v=1:a=0[v]" \
-  -map "[v]" -an input/loop_seamless.mp4
-
-# Step C: pack에서 loop_seamless.mp4 사용
-# pack 인터랙티브 모드에서 loop_seamless.mp4 선택
-```
-
-**원리**: 끝과 시작을 xfade로 연결 → `-stream_loop -1` 무한 반복 시 끊김 없음
-
-### 5.3 필수 옵션
-
-| 옵션 | 기본값 | 설명 |
-|------|--------|------|
-| `--fade` | **0.5** | 오디오 크로스페이드 (초) |
-| `--repeat` | **2** | 플레이리스트 반복 횟수 |
-| `--use-xfade` | - | 비디오 크로스페이드 사용 (**권장**) |
-
-### 5.4 Pre-flight 체크
-
-`pack` 실행 시 자동 확인:
-- `loop_xfade.mp4` 없으면 경고 + 확인 요청
-- `--force` 사용 시 확인 생략 (비권장)
-
-### 5.5 크로스페이드 구분
-
-| 종류 | 명령어 | 설명 |
-|------|--------|------|
-| **오디오** | `pack --fade 0.5` | 트랙 간 오디오 전환 |
-| **비디오** | `vfade` → `pack --use-xfade` | 루프 영상 끊김 없는 반복 |
-
-**⚠️ `pack` 단독 실행 = 오디오만 크로스페이드 (비디오 끊김 발생)**
+vfade(테스트) → vfade(본생성) → pack 순서. 상세 명령어와 옵션은 CLI SPEC.md 참조.
 
 ---
 
-## 6. YouTube 메타데이터 생성 워크플로우
+## 6. YouTube 메타데이터
 
-> **SSOT: `MASTER/youtube/YOUTUBE.md`**
+> **SSOT: `MASTER/youtube/YOUTUBE.md` §9**
 
-### 7.1 Phase 1: 시리즈 초기 생성 (Draft)
-
-**시점:** 시리즈 폴더 + concept.md 최초 생성 시
-
-**필수 요청 (유저에게):**
-1. Context Mode (Settling/Transition/Energizing/Focusing)
-2. 감정 훅 키워드 또는 방향
-3. 고정 댓글 훅 아이디어
-
-**작성 내용 (Track List 외 전부 초안):**
-- 제목 (템플릿 기반, 장르/용도)
-- 설명 인트로 (2줄 훅 + 확장 훅)
-- 해시태그/태그 (시리즈 장르 매핑 참조)
-- 고정 댓글 초안
-- 아웃트로 (고정 템플릿)
-
-**Track List:** `(트랙 완성 후 추가)` placeholder
-
-**버전 태그:** `## YouTube Draft (v1 — 트랙 미완성)`
-
-**⚠️ 유저 요청 없이 임의 생성 금지 — 필수 요청 항목 먼저 확인**
-
-### 7.2 Phase 2: 시리즈 완성 (Final)
-
-**시점:** 모든 트랙 PASS + 패키징 완료 시
-
-**업데이트:**
-1. Track List에 실제 타임스탬프 + 곡명 + 이모지
-2. 버전 태그 변경: `(v1 — 트랙 미완성)` → `(v2.1)`
-3. 해시태그/태그 최종 검토
-4. 장르 태그 매핑 테이블 참조 (`youtube/YOUTUBE.md`)
-
-### 7.3 장르 혼동 방지 체크
-
-1. **concept.md 헤더**에서 장르 확인
-2. `youtube/YOUTUBE.md` 시리즈별 장르 태그 매핑 참조
-3. 제목/태그에 정확한 장르 반영
-
-**⚠️ 장르 태그 매핑 확인 없이 메타데이터 작성 금지**
+Phase 1(Draft) → Phase 2(Final) 순서. 상세 절차는 YOUTUBE.md 참조.
