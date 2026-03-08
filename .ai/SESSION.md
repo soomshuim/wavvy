@@ -4,8 +4,8 @@
 
 ## 진행 중
 
-- **MASTER 문서 v3.2** — Writing Formula + 워크플로우 분리 (2026-03-08)
-- **06-00 YouTube 설명 보완 중** — EXTENDED_HOOK 확장
+- **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
+- **06-00 YouTube 설명 보완 완료** — EXTENDED_HOOK 확장 (2026-03-08)
 
 ## 다음 할 일
 

@@ -293,3 +293,13 @@ Summary: AM_1000 완료 (15/15) + 영상 패키징 (final.mp4, compressed) + Des
 Next-TODO: 썸네일 디자인 + YouTube 업로드
 Commits: ab454fa
 ---
+
+---
+HANDOFF: Claude -> User
+Date: 2026-03-08 22:55:00
+Project: /Users/zen/Project/wavvy
+Agent: Claude
+Summary: MASTER 문서 v3.2 (Writing Formula + 워크플로우 분리) + 06-00 YouTube 설명 보완
+Next-TODO: 썸네일/미디어 파일 커밋 (SERIES/* thumb/loop 변경)
+Commits: ff7b770, 819708e
+---
