@@ -303,3 +303,13 @@ Summary: MASTER 문서 v3.2 (Writing Formula + 워크플로우 분리) + 06-00 Y
 Next-TODO: 썸네일/미디어 파일 커밋 (SERIES/* thumb/loop 변경)
 Commits: ff7b770, 819708e
 ---
+
+---
+HANDOFF: Claude -> User
+Date: 2026-03-08 23:30:00
+Project: /Users/zen/Project/wavvy
+Agent: Claude
+Summary: 12-00 K-Afro Neo-Soul 시리즈 설정 + Track 01 "메뉴" 초안 (Kalimba + Rhodes 조합, Suno 테스트 PASS)
+Next-TODO: Track 01 Suno 생성 결과 확인 후 concept.md 반영, 문서 DNA 업데이트
+Commits: e8ac350, d7a97e7
+---
