@@ -11,6 +11,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 - **중복 레퍼런스 정리** — `museA Suno 자료집.pdf` (MD 변환본 유지), `lofi-genre-research.md` (LOFI_RUBRIC에 흡수), `Reference/song/` 빈 폴더, `rubrics/evidence/` 폴더
+- **레거시 정리** — `.pycache/` 삭제 (vibem 잔존), `04-00/input/template.psd` 제거 (미사용)
+
+### Fixed
+- **파일명 오타** — `shorts_orignal.mov` → `shorts_original.mov`
+- **.gitignore** — VIBE-M 주석 → Wavvy, `.pycache/` 패턴 추가
 
 ### Changed
 - **MASTER 문서 v3.2 — Writing Formula + 워크플로우 분리**
