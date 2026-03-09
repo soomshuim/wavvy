@@ -3,7 +3,40 @@
 Version: 1.4
 Last Updated: 2026-03-03
 Pass: ≥80점 | Critical Fail: 개별 ≤5점
-Evidence: `rubrics/evidence/FAST_LOFI_EVIDENCE.md`
+---
+
+## Evidence Basis
+
+1. **Lo-fi 기본 성향**: 60-90 BPM, 재즈 코드, 질감 중심 미니멀
+2. **House 계열 템포**: 115-130 BPM
+3. **운동 몰입 연구**: 120-140 BPM이 퍼포먼스에 유의미한 영향
+
+**Fast Lo-fi 정의**: `lo-fi texture` + `house-range drive(115-130)` + `workout tempo(120-140)`
+
+**운영 범위 110-150**:
+- 하한 110: 워밍업 구간
+- 중심 122-128: 추진력 + lo-fi 균형점
+- 상한 150: 피크 트랙 (EDM화 방지는 장르 경계 팩터에서 관리)
+
+### 트랙1 캘리브레이션 (87/100 PASS)
+
+> 기준: `SERIES/AM_0600/track01_*` (Concrete Morning)
+
+| Factor | Score |
+|--------|------:|
+| Tempo & Drive | 18/20 |
+| Drum Impact | 17/20 |
+| Low-end Clarity | 17/20 |
+| Lo-fi Texture Balance | 13/15 |
+| Structural Runtime Control | 14/15 |
+| Genre Boundary Guard | 8/10 |
+
+### References
+- [Native Instruments - Lo-fi hip hop guide](https://blog.native-instruments.com/lo-fi-hip-hop/)
+- [Wikipedia - House music](https://en.wikipedia.org/wiki/House_music)
+- [ACSM - Music Tempo Guidelines](https://acsm.org/bmp-music-tempo-guidelines-exercise/)
+- [CISS 2019 - Synchronous auditory stimuli](https://doi.org/10.15203/CISS_2019.005)
+- [JSAMS 2012 - Synchronous music effects](https://doi.org/10.1016/j.jsams.2011.06.003)
 
 ---
 

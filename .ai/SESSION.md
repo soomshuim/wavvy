@@ -7,6 +7,7 @@
 - **12-00 K-Afro Neo-Soul 시리즈** — Track 01-03 완료, Style A/B 분리 (2026-03-09)
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 - **06-00 YouTube 설명 보완 완료** — EXTENDED_HOOK 확장 (2026-03-08)
+- **refactor: 중복 문서 정리** — evidence→루브릭 합침, 레거시 PDF/리서치 삭제 (2026-03-09)
 
 ## 다음 할 일
 

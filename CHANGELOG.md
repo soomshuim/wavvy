@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **루브릭 SSOT 통합** — evidence 파일을 각 루브릭 본문으로 합침 (CHILLHOP, FAST_LOFI), evidence/ 폴더 제거
+
+### Removed
+- **중복 레퍼런스 정리** — `museA Suno 자료집.pdf` (MD 변환본 유지), `lofi-genre-research.md` (LOFI_RUBRIC에 흡수), `Reference/song/` 빈 폴더, `rubrics/evidence/` 폴더
+
+### Changed
 - **MASTER 문서 v3.2 — Writing Formula + 워크플로우 분리**
   - STYLE.md §1.5 Writing Formula 신설 (7요소 작성법)
   - TAG_BANK.md §2.5 Key/Mode 키워드 추가
