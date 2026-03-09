@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-09 10:25:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 중복 문서 정리 — evidence 2개를 루브릭 본문으로 합침, museA PDF/lofi-research/song 폴더 삭제
+Next-TODO: 나머지 PDF 3개(Suno Style Guide, Suno 작동 원리, song section tags) 수동 확인 후 정리 판단
+Commits: 2c45251
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-07 23:35:00
 Project: ~/Project/wavvy
 Agent: Claude
