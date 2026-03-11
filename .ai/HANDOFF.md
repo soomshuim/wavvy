@@ -2,12 +2,22 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-12 00:42:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: 12-00 concept.md 초기화 (리서치만 보존). Track 01 "들썩" draft 3회 시도 후 삭제 — 시티팝 문법/범용 이미지 탈피 필요. Lenny Director QC 85점 PASS했으나 사용자 판단으로 전면 리셋.
+Next-TODO: concept.md 재설계 (리서치 기반, 이전 실패 패턴 회피). Track 01 재작성.
+Commits: 미커밋 (concept.md 초기화)
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-11 21:36:00
 Project: ~/Project/wavvy
 Agent: Claude
 Summary: 12-00 K-Afro Neo-Soul → Korean Afrobeats 전면 리부트. 딥리서치 기반 concept.md 재작성 + Director QA 3R + Team QA 2R (만장일치 95+). AFROBEATS_RUBRIC.md 생성. GENRES.md/YOUTUBE.md 장르 갱신. 이전 가사 3파일 삭제.
 Next-TODO: 미커밋 변경 커밋 (AFRO_NEOSOUL_RUBRIC.md 삭제 + Reference/ 중복 삭제 포함). Track 01 가사 작성 시작.
-Commits: 미커밋
+Commits: 64dfdc8
 ---
 
 ---
