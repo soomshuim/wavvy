@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **12-00 가사 DNA + RUBRIC 강화 + concept.md 재설계** — Afrobeats 가사 딥리서치(24개 소스) 기반 LYRICS_DNA.md 신규 생성, RUBRIC v1.1 (L15-L19 Afrobeats 특화 게이트), concept.md v3.0 (Style A/B/C 템플릿 + 15트랙 맵)
 - **루브릭 SSOT 통합** — evidence 파일을 각 루브릭 본문으로 합침 (CHILLHOP, FAST_LOFI), evidence/ 폴더 제거
 
 ### Removed

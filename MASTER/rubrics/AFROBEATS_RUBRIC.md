@@ -1,7 +1,7 @@
 # Korean Afrobeats Rubric
 
-Version: 1.0
-Last Updated: 2026-03-11
+Version: 1.1
+Last Updated: 2026-03-13
 Purpose: Korean Afrobeats 장르 게이트 (12-00 시리즈)
 
 > Based on: `SERIES/12-00/reference/00-synthesis.md` + concept.md
@@ -54,7 +54,7 @@ Purpose: Korean Afrobeats 장르 게이트 (12-00 시리즈)
 | F1 | Afro Groove | 15 | 3-2 clave 기반 리듬감, 싱코페이션, 폴리리듬 레이어링 | Calm Down, Essence |
 | F2 | Percussion | 10 | 5단계 레이어링 (Kick+Snare → Hi-hat → Shaker → Conga → Cowbell) 완성도 | 리서치 §1.3 |
 | F3 | Melody/Hook | 15 | 1-2마디 반복, 2도·3도 계단식, 링 프레이즈, 챈트감 | 리서치 §4 |
-| F4 | 한국어 가사 | 15 | 스냅샷 훅, 사물/동작 중심, 감정 직접 표출 금지, Metric Mirroring | LYRICS.md |
+| F4 | 한국어 가사 | 15 | 스냅샷 훅, 사물/동작 중심, 감정 직접 표출 금지, Metric Mirroring, **의태어 퍼커션(L16), 콜앤리스폰스(L15), 2클러스터 교차(L18), Anti-Pattern 위반=감점(L19)** | LYRICS.md + LYRICS_DNA |
 | F5 | Bass & Low-end | 10 | 808 싱코페이션, 킥과 locked-in, 과하지 않은 움직임 | 리서치 §2.3 |
 | F6 | 에너지 아크 | 10 | V→V2→C 상승, Chorus belt/higher register, Bridge 에너지 유지 | STYLE.md §3-4 |
 | F7 | 프로덕션 | 15 | 악기 공간 분리(EQ), 보컬 포워드, 리버브 절제, Filler 없음, Harmony Guard | STYLE.md §1-2 |
@@ -113,6 +113,11 @@ Purpose: Korean Afrobeats 장르 게이트 (12-00 시리즈)
 | L12 | 금지 소재 위반 없음 (사랑/밤/슬픔/감정 직접) | ☐ |
 | L13 | 단어 뱅크 활용, 트랙 간 핵심 은유 겹침 없음 | ☐ |
 | L14 | Song Structure V-C-V-C-B-C 또는 C-V-C-V-C | ☐ |
+| L15 | 콜앤리스폰스 구조 존재 (리드 1줄 + 응답) | ☐ |
+| L16 | 의태어/의성어 Verse당 1개+ (퍼커시브 기능) | ☐ |
+| L17 | Post-chorus 챈트 가능 구간 존재 | ☐ |
+| L18 | 신체/음식/동작 이미지 Verse당 2클러스터+ 교차 | ☐ |
+| L19 | Anti-Pattern 체크 (시티팝 문법 0건) — LYRICS_DNA §6 참조 | ☐ |
 
 ---
 
