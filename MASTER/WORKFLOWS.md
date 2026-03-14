@@ -2,8 +2,8 @@
 
 > **모든 작업 워크플로우 통합 문서**
 >
-> Version: 1.4
-> Last Updated: 2026-03-07
+> Version: 2.0
+> Last Updated: 2026-03-14
 
 ---
 
@@ -31,7 +31,7 @@
 
 ### 파일 포맷
 ```
-Track {N}: {제목} ({영문})
+Track: {제목} ({영문})
 Type: {A/B/C}
 BPM: {숫자}
 Key: {키}
@@ -44,34 +44,25 @@ Length: 3min+
 {제외 키워드}
 
 === LYRICS ===
-{구조태그 + 가사}
+{작사 프롬프트 또는 비움 — LYRICS.md §1 참조}
 ```
 
 ---
 
-## 1. 가사 생성 워크플로우
+## 1. 트랙 프롬프트 생성 워크플로우
 
-> **SSOT: `MASTER/lyrics/LYRICS.md` (체크리스트) + `MASTER/MANAGER.md` Phase 0.5 (수정 절차)**
-
-### ⚠️ Pre-condition (필수)
-1. **Read `MASTER/lyrics/LYRICS.md`** — 허용 태그, 괄호 규칙, 길이 제한 확인
-2. **Read `MASTER/rubrics/[GENRE]_RUBRIC.md`** — 장르별 가사 규칙 확인
-3. 참조 없이 가사 작성 시 → **FAIL (재작성)**
+> **SSOT: `MASTER/lyrics/LYRICS.md` §1 (Lyric Prompt Guide)**
 
 ### 절차
-1. `LYRICS.md` + 이전 트랙 키워드 확인 + 크로스시리즈 겹침 검증 (3축 중 2개 이상 겹침 = FAIL)
-2. `LYRICS.md` §메타태그 규칙 참조
-3. 초안 생성 → self-QC (LYRICS.md 전항목) → Korean Positioning (K1-K3) → 메타태그 검증 → 패턴 고착 검사
-4. **루브릭 테스트 (셀프 루프)**
-   - Hard Gates 체크 → **1개라도 FAIL 시 즉시 수정 후 재체크**
-   - Hard Gates PASS 후 6-Factor 채점 → **80점 미만 시 수정 후 재채점**
-   - 유저에게 제안 전 PASS 필수
-5. 전부 PASS시 QC 테이블과 함께 출력 (통과 전 유저 제안 금지)
-6. .txt 파일 저장 + pbcopy → 유저 컨펌 후 concept.md 반영
+1. `concept.md` + `LYRICS_DNA.md`(있으면) 참조 — 시리즈 톤/방향 확인
+2. Style + Exclude + Lyric Prompt(또는 비움) 작성 → txt 저장
+3. 사용자 컨펌 → Suno 제출
+
+> Lyric Prompt 3가지 모드: Empty(비움), Prompt(mood/theme 힌트), Structure(구조 태그만). 상세는 LYRICS.md §1 참조.
 
 ---
 
-## 2. 가사/스타일 수정 절차
+## 2. 스타일/프롬프트 수정 절차
 
 > **SSOT: `MASTER/MANAGER.md` Phase 0.5**
 

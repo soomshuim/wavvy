@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-14 18:00:00
+Project: ~/Project/wavvy
+Agent: 혼합 (사용자 Suno 테스트 + Claude 문서 리팩토링)
+Summary: 워크플로우 리팩토링 — 풀 가사 작성에서 Suno 자체 작사 + 작사 프롬프트 방식으로 전환. LYRICS.md v4.0, WORKFLOWS.md v2.0, RUBRIC 가사→보컬 전환, Track 01-04 제목 변경(한낮/먼지/볕/무음) + 가사 제거. REFERENCE_SAMPLE/FAILURE_CASES 삭제.
+Next-TODO: Track 01-04 작사 프롬프트 채우기 (선택), Track 05-15 디자인, Suno 테스트
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-14 14:33:00
 Project: ~/Project/wavvy
 Agent: Claude

@@ -10,7 +10,7 @@ Role: Quality Gatekeeper (최상위 통제)
 
 1. **Quality > Quantity** - 시드 기반 변주만, 무작위 양산 금지
 2. **Safety First** - -14 LUFS / -1.0 dBTP 절대 준수
-3. **Pure Input** - LYRICS.md §2 준수 (가사 + 구조 태그 + `()` 메타만)
+3. **Pure Input** - LYRICS.md §2 준수 (작사 프롬프트 또는 구조 태그. 풀 가사 직접 작성 불필요)
 4. **Document-Driven** - 추측 금지, .md 기준으로 판단
 5. **Ruthless Critique** - 애매하면 Fail
 

@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **워크플로우 리팩토링 — Suno 자체 작사 전환** — LYRICS.md v4.0 (§1 Lyric Prompt Guide), WORKFLOWS.md v2.0 (3단계), RUBRIC 가사→보컬 체크리스트 전환, LYRICS_DNA.md 역할 재정의, REFERENCE_SAMPLE/FAILURE_CASES 삭제. Track 01-04 제목 변경 + 가사 제거.
 - **12-00 가사 DNA + RUBRIC 강화 + concept.md 재설계** — Afrobeats 가사 딥리서치(24개 소스) 기반 LYRICS_DNA.md 신규 생성, RUBRIC v1.1 (L15-L19 Afrobeats 특화 게이트), concept.md v3.0 (Style A/B/C 템플릿 + 15트랙 맵)
 - **루브릭 SSOT 통합** — evidence 파일을 각 루브릭 본문으로 합침 (CHILLHOP, FAST_LOFI), evidence/ 폴더 제거
 

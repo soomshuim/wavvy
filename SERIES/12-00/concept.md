@@ -11,9 +11,9 @@ Last Updated: 2026-03-14
 - **시간대**: 정오(12:00) — 점심시간이라는 배경 설정
 - **테마**: 제한 없음 — 사랑, 그리움, 후회, 이별, 여유, 축제 모든 감정 허용
 - **톤**: 트랙별 자유. 점심시간 배경 연결 권장 (필수 아님)
-- **가사**: 미니멀, 영어 코드스위칭(Chorus/Pre-chorus), 장면화
+- **가사**: Suno 자체 작사 (작사 프롬프트 또는 비움). Style에 보컬 지시 유지
 - **보컬**: Female, Chest voice
-- **금지**: 시티팝 표현 문법 → `LYRICS_DNA.md` §6
+- **금지**: 시티팝 표현 문법 → `LYRICS_DNA.md` §6 (프롬프트 작성 시 참고)
 - **15트랙 / 60분+**
 
 ---
@@ -121,37 +121,31 @@ kalimba
 
 [verse 1]
 (Chest voice, Direct)
-{가사 4행, 미니멀}
 
 [pre-chorus]
 (building energy)
-{가사 2행, 영어 코드스위칭}
 
 [chorus]
 (belt)
-{훅 3-4행, Ring Phrase, 영어 삽입}
 
 [post-chorus]
 (chant, call-and-response ad-lib)
-{챈트 반복}
 
 [verse 2]
 (Chest voice, Direct)
-{가사 4행, V1과 Metric Mirroring, 마지막 2행 에스컬레이션}
 
 [chorus]
-{1차와 100% 동일}
 
 [bridge]
 (higher register, stronger dynamics)
-{Thesis 1행 + Scene 1-2행}
 
 [chorus]
-{1차와 100% 동일, +extra dynamics}
 
 [outro]
-(instrumental fade, 챈트 루프)
+(instrumental fade)
 ```
+
+> 가사는 Suno 자체 생성. 필요 시 LYRICS.md §1 Lyric Prompt Guide 참조하여 mood/theme 힌트 추가.
 
 ### 대안 구조 (C-V-C-V-C)
 
@@ -188,5 +182,5 @@ kalimba
 - `reference/00-synthesis.md` — 종합 (GPT + Agent + Lenny Team)
 - `reference/01-gpt-deep-research.md` — 화성·멜로디·구성
 - `reference/02-agent-deep-research.md` — 리듬·악기·가사·트렌드·Suno
-- `LYRICS_DNA.md` — 가사 DNA (리서치 증류본)
+- `LYRICS_DNA.md` — 작사 프롬프트 DNA (리서치 증류본)
 - `report/2026-03-13_afrobeats-lyrics-deep-research.md` — 가사 딥리서치 원본

@@ -13,7 +13,7 @@ Purpose: AI 실행 설정 (How)
 1. **NO Pydub** — Pure FFmpeg만
 2. **Sequential Acrossfade** — 단순 concat 금지
 3. **Fail Fast** — 입력 검증 실패 시 즉시 종료
-4. **Pure Input** — Suno 가사란에 가사 + 구조태그 + `()` 메타만
+4. **Pure Input** — Suno 가사란에 작사 프롬프트 또는 구조태그 + `()` 메타만 (풀 가사 직접 작성 불필요)
 5. **크로스페이드 구분** — acrossfade(오디오) vs xfade(비디오)
 6. **Video Crossfade 필수** — `vfade --test` → PASS → `vfade` → `pack`
 7. **Pre-flight 체크** — `pack` 실행 시 loop_xfade.mp4 없으면 확인 요청
@@ -47,7 +47,7 @@ Purpose: AI 실행 설정 (How)
 
 | 요청 | 참조 |
 |------|------|
-| 가사 작성 | `MASTER/lyrics/LYRICS.md` |
+| 작사 프롬프트 | `MASTER/lyrics/LYRICS.md` |
 | Style Prompt | `MASTER/style/STYLE.md` |
 | QC/운영 | `MASTER/MANAGER.md` |
 | 역할 분리 | `MASTER/roles/ROLES.md` |
@@ -66,13 +66,12 @@ Purpose: AI 실행 설정 (How)
 
 | 워크플로우 | 섹션 |
 |-----------|------|
-| 가사 생성 | §1 |
-| Style Prompt | §2 |
-| 가사/스타일 수정 | §3 |
-| Concept QC | §4 |
-| Shorts 생성 | §5 |
-| 영상 패키징 | §6 |
-| YouTube 메타 | §7 |
+| 트랙 프롬프트 생성 | §1 |
+| 스타일/프롬프트 수정 | §2 |
+| Concept QC | §3 |
+| Shorts 생성 | §4 |
+| 영상 패키징 | §5 |
+| YouTube 메타 | §6 |
 
 ---
 

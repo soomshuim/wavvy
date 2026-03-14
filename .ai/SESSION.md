@@ -4,23 +4,21 @@
 
 ## 진행 중
 
-- **12-00 Korean Afrobeats 시리즈** — Track 01-04 완료 + Style D/E 확정 (2026-03-14)
-  - ✅ 가사 방향 전환: 감정 자유, 점심시간=배경
-  - ✅ Style C 제거 → **D(Afropiano) + E(Afro-Drill)만** (E 70% / D 30%)
-  - ✅ 보컬: Female 70% / Male 30%
-  - ✅ LYRICS_DNA v2.0 + AFROBEATS_RUBRIC v2.0 + concept.md v4.0
-  - ✅ Track 01 "온도" (E, Female) — 사용자 작사
-  - ✅ Track 02 "그 자리" (E, Female) — 이별 후 빈 자리
-  - ✅ Track 03 "눈이 마주쳐" (D, Male) — 점심 식당 설렘
-  - ✅ Track 04 "안 읽음" (D, Female) — 만트라 리디자인 대기
-  - kalimba Exclude 추가
+- **12-00 Korean Afrobeats 시리즈** — Suno 자체 작사 방식 전환 완료 (2026-03-14)
+  - ✅ 워크플로우 리팩토링: 풀 가사 작성 → 작사 프롬프트 / 비움
+  - ✅ LYRICS.md v4.0 (§1 Lyric Prompt Guide 신규)
+  - ✅ WORKFLOWS.md v2.0 (6단계 → 3단계)
+  - ✅ RUBRIC 가사→보컬 체크리스트 전환 (L1-19 → V1-5)
+  - ✅ Track 01-04 제목 변경 + 가사 제거
+    - 01 한낮 (Haze), 02 먼지 (Dust), 03 볕 (Sunlit), 04 무음 (Mute)
+  - ✅ REFERENCE_SAMPLE.md, FAILURE_CASES.md 삭제
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 
 ## 다음 할 일
 
-- [ ] Track 04 "안 읽음" 가사 만트라 리디자인
-- [ ] Track 05-15 가사 디자인
-- [ ] concept.md Track Map 업데이트 (Style C 제거, E 11 : D 4, Female 11 : Male 4)
+- [ ] Track 01-04 작사 프롬프트 채우기 (선택)
+- [ ] Track 05-15 Style + Lyric Prompt 디자인
+- [ ] concept.md Track Map 업데이트 (제목 반영)
 - [ ] Suno 테스트 (Track 01-04)
 - [ ] Wavvy 로고 핸드라이팅 애니메이션 (Canva Pro)
 - [ ] 썸네일 템플릿 제작 (Wavvy {HH:MM})
