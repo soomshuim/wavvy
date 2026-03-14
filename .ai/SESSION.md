@@ -12,6 +12,7 @@
   - ✅ Track 01-04 제목 변경 + 가사 제거
     - 01 한낮 (Haze), 02 먼지 (Dust), 03 볕 (Sunlit), 04 무음 (Mute)
   - ✅ REFERENCE_SAMPLE.md, FAILURE_CASES.md 삭제
+  - ✅ 잔존물 정리: lessons-learned dead 섹션 삭제 + SESSION stale 메모 제거
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 
 ## 다음 할 일
@@ -25,7 +26,4 @@
 
 ## 핸드오프 메모
 
-- `AFRO_NEOSOUL_RUBRIC.md` 삭제 대상 (이전 장르)
-- `Reference/afrobeats-deep-research.md` 삭제 대상 (중복)
-- 11-00 output 폴더 untracked
 - 채널 브랜딩: `wavvy.md` §7 참조

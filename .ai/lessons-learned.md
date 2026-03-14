@@ -267,13 +267,13 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 
 ---
 
-## 가사 작성 버그 패턴
+## Suno 입력 버그 패턴
 
 ### 괄호 주석 혼입
 
 **날짜**: 2026-01-18
 
-**상황**: Track 04 가사 초안 작성 시 설명용 괄호 포함
+**상황**: Suno 가사란에 설명용 괄호가 포함된 채로 입력
 
 **증상**:
 ```
@@ -284,21 +284,20 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 ```
 
 **원인**:
-- 가사와 설명 주석을 같은 코드블록에 작성
+- 가사/프롬프트와 설명 주석을 같은 코드블록에 작성
 - LYRICS.md 2.1 "괄호 속 지시어 금지" 규칙 위반
 
 **리스크**:
-- 사용자가 복사해서 Suno에 붙여넣으면 괄호 텍스트를 가사로 인식
-- 보컬이 "(4행, 각 5-6음절)"을 읽어버림
+- Suno가 괄호 텍스트를 가사로 인식하여 보컬이 읽어버림
 
 **해결**:
 ```markdown
-# 잘못된 방식 (가사 블록 내 주석)
+# 잘못된 방식 (입력 블록 내 주석)
 [verse1]
 가로등이 번져가 (스냅샷)
 
-# 올바른 방식 (가사와 분석 분리)
-## 가사
+# 올바른 방식 (입력과 분석 분리)
+## Suno 입력
 [verse1]
 가로등이 번져가
 
@@ -307,10 +306,9 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 ```
 
 **재발 방지**:
-- 가사 코드블록은 **순수 가사만** 포함
+- Suno 입력란 콘텐츠는 **순수 가사/프롬프트만** 포함
 - 분석/설명은 별도 섹션으로 분리
-- 가사 제시 후 체크리스트 테이블로 검증 결과 제시
-- **의도한 효과(스냅샷 훅, V2 에스컬레이션 등)는 Style Prompt에서 지시**
+- 의도한 효과는 Style Prompt에서 지시
 
 ---
 
@@ -327,7 +325,7 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 - [ ] **Reverb 포함?** (`Moderate reverb, room ambience` 등)
 - [ ] **Sound Engineering 포함?** (`EQ balanced sound, clean mix`)
 
-### 가사 메타태그 적용 시
+### 보컬 메타태그 적용 시
 - [ ] Verse에 `[Direct vocal, No harmony]` 있음?
 - [ ] Chorus에 `[Powerful belt, No backing vocals]` 있음?
 - [ ] Bridge에 `[Chest voice]` 있음?
@@ -345,14 +343,10 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 - [ ] 실제 디렉토리 구조 확인
 - [ ] 문서와 실제 구조 동기화
 
-### 가사 작성 시
-- [ ] 가사 코드블록에 괄호/주석 없음 확인
+### Suno 입력 작성 시
+- [ ] 입력 블록에 괄호/주석 없음 확인
 - [ ] 분석/설명은 별도 섹션으로 분리
 - [ ] 복사해서 Suno에 바로 붙여넣기 가능한 상태인지 확인
-- [ ] **V1-V2 행 수 동일 확인** (Case 11)
-- [ ] **Chorus 3~4행 이내 확인** (Case 12)
-- [ ] **Bridge Thesis B1=B2 동일 확인** (Case 13)
-- [ ] **다른 트랙 제목 키워드 사용 금지** (Case 13)
 - [ ] **보컬 제어 메타태그 포함 확인** (구조 태그만 있고 메타태그 없으면 FAIL)
 
 ### 시드곡 디자인 시 (레퍼런스 기반)
@@ -363,74 +357,6 @@ norm_path = paths.norm_tracks_dir / f"norm_{track.path.stem}.wav"  # .wav
 - [ ] **BPM 및 체감 속도 일치?** (풀타임 vs 하프타임)
 - [ ] **보컬 성별/구성 정확?** (보이밴드/걸그룹/혼성/솔로)
 - [ ] **DNA 불일치 시 재설계?** (분석만 하고 적용 망각 방지)
-
----
-
-## 가사 구조 버그 패턴 (Track 06 교정)
-
-### "다른 컨셉" 시도 시 구조 붕괴
-
-**날짜**: 2026-01-19
-
-**상황**: Track 06 가사 작성 시 "이전 곡들과 다른 느낌"을 주려고 시도
-
-**증상**:
-- V1: 4행 (22음절)
-- V2: 6행 (36음절)
-- Chorus: 6행 (표준 3~4행 초과)
-
-**원인**:
-- "다른 컨셉 = 다른 구조"로 잘못 해석
-- LYRICS.md 1.1 Metric Mirroring 규칙 망각
-
-**리스크**:
-- Suno가 V2를 V1 멜로디에 억지로 얹으려다 멜로디 붕괴
-- Chorus가 너무 길어 리스너 피로감
-
-**해결**:
-```
-❌ "다른 느낌" = 행 수 변경
-✅ "다른 느낌" = 단어 선택, 감각 변경 (구조는 동일 유지)
-```
-
-**재발 방지 체크리스트**:
-1. V1 작성 후, V2 작성 전에 V1 구조 메모
-2. V2 작성 시 V1 구조 그대로 복사 후 단어만 변경
-3. Chorus는 무조건 3~4행으로 제한
-4. "다른 느낌"이 필요하면 → 단어/이미지 축 변경, 구조 변경 X
-
----
-
-### Bridge Thesis 변경 + 키워드 충돌
-
-**날짜**: 2026-01-19
-
-**상황**: Track 06 Bridge2 Thesis를 B1과 다르게 작성
-
-**증상**:
-```
-B1 Thesis: "적막이 더 깊어져"
-B2 Thesis: "사라지는 윤곽뿐" ← 변경 + Track 02 제목 "윤곽" 사용
-```
-
-**원인**:
-- Bridge Anchor Rule (1.4) "Thesis는 B1=B2 동일" 규칙 망각
-- Vocabulary Independence (1.5) 규칙 망각
-
-**해결**:
-```
-❌ B1 Thesis ≠ B2 Thesis
-✅ B1 Thesis = B2 Thesis (항상 동일)
-
-❌ 다른 트랙 제목 키워드 사용
-✅ 현재 트랙의 컨셉 키워드만 사용
-```
-
-**재발 방지 체크리스트**:
-1. Bridge 작성 전 Thesis 문장 먼저 확정
-2. B1, B2 모두 동일한 Thesis 사용
-3. Thesis 작성 시 기존 트랙 제목 목록 확인
-4. 기존 제목과 겹치는 키워드 절대 금지
 
 ---
 
