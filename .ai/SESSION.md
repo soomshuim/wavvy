@@ -13,6 +13,8 @@
     - 01 한낮 (Haze), 02 먼지 (Dust), 03 볕 (Sunlit), 04 무음 (Mute)
   - ✅ REFERENCE_SAMPLE.md, FAILURE_CASES.md 삭제
   - ✅ 잔존물 정리: lessons-learned dead 섹션 삭제 + SESSION stale 메모 제거
+  - ✅ Track 03 "볕 (Sunlit)" 작사 프롬프트 작성 (198자, 풀 구조+DNA)
+  - ✅ LYRICS.md §1.2 소괄호 금지 규칙 반영
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 
 ## 다음 할 일

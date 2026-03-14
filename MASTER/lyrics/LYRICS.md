@@ -29,20 +29,20 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 | 모드 | 설명 | 예시 |
 |------|------|------|
 | **Empty** | 완전 비움 — Suno 자유 생성 | (LYRICS 섹션 비움) |
-| **Prompt** | 1-3줄 mood/theme 힌트 | `(Korean lyrics about midday warmth, hazy drowsy rhythm)` |
+| **Prompt** | 1-3줄 mood/theme 힌트 | `Korean lyrics about midday warmth, hazy drowsy rhythm` |
 | **Structure** | 구조 태그만 — 섹션 구분 유도 | `[verse][chorus][bridge][outro]` |
 
 ### 1.2 Prompt 작성법
 
-- 영문 소괄호로 작성: `(Korean lyrics about ...)`
+- **괄호 없이** 영문으로 직접 작성 (소괄호 사용 금지 — Suno가 보컬로 읽음)
 - 핵심 감정/장면 키워드 2-3개
 - 시리즈 `LYRICS_DNA.md` 있으면 참조 (톤, 이미지 소재 풀)
 - 길이: 1-3줄 (짧을수록 Suno 자유도 높음)
 
 **예시:**
 ```
-(Korean lyrics about midday heat, hazy afternoon, drowsy rhythm)
-(짧은 반복 훅, 의태어 중심, 몽환적 분위기)
+Korean lyrics about midday heat, hazy afternoon, drowsy rhythm
+Minimal Korean lyrics, repetitive hook chant, English hook in chorus
 ```
 
 ### 1.3 Do / Don't
@@ -52,7 +52,7 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 | 분위기/장면 키워드 | 풀 가사 직접 작성 |
 | 영문 방향 지시 | 한국어 가사 행 나열 |
 | 짧고 추상적 | 구체적 운율/음절 지정 |
-| `(Korean lyrics about ...)` | `(Scene: ...)`, `(Emotion: ...)` — Suno가 이를 가사로 읽어버림 |
+| 괄호 없이 직접 작성 | `(...)` 소괄호로 감싸기 — Suno가 보컬로 읽음 |
 
 ---
 

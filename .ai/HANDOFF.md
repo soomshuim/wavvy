@@ -2,6 +2,16 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-14 18:28:00
+Project: ~/Project/wavvy
+Agent: 혼합 (사용자 Suno 테스트 피드백 + Claude 프롬프트/문서 작성)
+Summary: Track 03 "볕 (Sunlit)" 작사 프롬프트 작성 (198자, 풀 구조+DNA). LYRICS.md §1.2 소괄호 금지 규칙 반영. 작사 프롬프트 작성 방식 피드백 메모리 저장.
+Next-TODO: 다른 로컬에서 이어서 작업. Track 01-02, 04 작사 프롬프트 + Suno 테스트.
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-14 19:30:00
 Project: ~/Project/wavvy
 Agent: Claude
