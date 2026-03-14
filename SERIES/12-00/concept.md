@@ -1,17 +1,19 @@
 # 12:00 Korean Afrobeats
 
-Version: 3.0
-Last Updated: 2026-03-13
+Version: 4.0
+Last Updated: 2026-03-14
 
 ---
 
 ## Series DNA
 
 - **정체성**: 한국어 가사 × Afrobeats 리듬/구조
-- **시간대**: 정오(12:00) — 에너지 최고조, 해방, 움직임
-- **소재 축**: 신체 × 음식 × 해방 (3축 교차) → `LYRICS_DNA.md` §5
-- **톤**: 축제적, 현재 시제, 참여자 시점
-- **금지**: 시티팝 문법 → `LYRICS_DNA.md` §6
+- **시간대**: 정오(12:00) — 점심시간이라는 배경 설정
+- **테마**: 제한 없음 — 사랑, 그리움, 후회, 이별, 여유, 축제 모든 감정 허용
+- **톤**: 트랙별 자유. 점심시간 배경 연결 권장 (필수 아님)
+- **가사**: 미니멀, 영어 코드스위칭(Chorus/Pre-chorus), 장면화
+- **보컬**: Female, Chest voice
+- **금지**: 시티팝 표현 문법 → `LYRICS_DNA.md` §6
 - **15트랙 / 60분+**
 
 ---
@@ -21,40 +23,6 @@ Last Updated: 2026-03-13
 > 각 템플릿 900자 이하. `STYLE.md` Writing Formula 7요소 + Afrobeats 특화.
 > Harmony Guard + Energy Permission 필수 포함.
 
-### Style A — Guitar Lead (Highlife)
-
-```
-Korean Afrobeats, Afropop, {BPM} BPM, {Key},
-Highlife fingerpicking guitar riff, Rhodes chord comping,
-syncopated African percussion, djembe, shaker, congas, cowbell,
-808 bass groove locked with kick, punchy low-end,
-{Gender} vocal: Raw, Direct, Chest voice, Dry, articulation,
-call-and-response chorus, 1-2 bar repeating hook,
-uplifting danceable energy, wide stereo, punchy but warm,
-moderate reverb, room ambience, EQ balanced sound, clean mix.
-Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
-Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
-Chorus vocal may be delivered with stronger intensity or light belt.
-Higher register emphasis is encouraged. Natural vocal strain allowed.
-```
-
-### Style B — Saxophone Lead
-
-```
-Korean Afrobeats, Afro-fusion, {BPM} BPM, {Key},
-saxophone melody lead, warm synth pad, Rhodes stabs,
-syncopated African percussion, shaker, congas, hi-hat 16ths,
-808 bass groove locked with kick, deep low-end,
-{Gender} vocal: Raw, Smooth, Chest voice, Dry, articulation,
-call-and-response chorus, 1-2 bar repeating hook,
-smooth conversational tone, wide stereo, warm and spacious,
-moderate reverb, room ambience, EQ balanced sound, clean mix.
-Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
-Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
-Chorus vocal may be delivered with stronger intensity or light belt.
-Higher register emphasis is encouraged. Natural vocal strain allowed.
-```
-
 ### Style C — Minimal Afro
 
 ```
@@ -62,9 +30,43 @@ Korean Afrobeats, minimal production, {BPM} BPM, {Key},
 sparse arrangement, vocal-forward mix,
 soft shaker, light congas, subtle cowbell, minimal hi-hat,
 808 bass groove locked with kick, restrained low-end,
-{Gender} vocal: Raw, Intimate, Chest voice, Dry, articulation,
+Female vocal: Raw, Intimate, Chest voice, Dry, articulation,
 call-and-response chorus, 1-2 bar repeating hook,
 intentional and restrained, wide stereo, open space,
+moderate reverb, room ambience, EQ balanced sound, clean mix.
+Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
+Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
+Chorus vocal may be delivered with stronger intensity or light belt.
+Higher register emphasis is encouraged. Natural vocal strain allowed.
+```
+
+### Style D — Afropiano
+
+```
+Korean Afrobeats, Afropiano, {BPM} BPM, {Key},
+log drum groove, warm jazzy piano chords, rolling percussion,
+trap hi-hats, shaker rhythm, rimshot snare,
+808 bass groove locked with kick, deep low-end,
+Female vocal: Raw, chant-style, Chest voice, Dry, articulation,
+call-and-response chorus, repetitive hook chant,
+moody spacious mix, wide stereo, deep groove,
+moderate reverb, room ambience, EQ balanced sound, clean mix.
+Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
+Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
+Chorus vocal may be delivered with stronger intensity or light belt.
+Higher register emphasis is encouraged. Natural vocal strain allowed.
+```
+
+### Style E — Afro-Drill
+
+```
+Korean Afrobeats, Afro-Drill, {BPM} BPM, {Key},
+808 slide bass, snappy rimshot snare, trap hi-hat rolls,
+syncopated African percussion, dark moody melody,
+deep bass, shaker, minimal cowbell,
+Female vocal: Raw, rhythmic chanting, Chest voice, Dry,
+percussive articulation, repetitive hook,
+aggressive cadence, wide stereo, dark spacious mix,
 moderate reverb, room ambience, EQ balanced sound, clean mix.
 Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
 Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
@@ -76,42 +78,42 @@ Higher register emphasis is encouraged. Natural vocal strain allowed.
 
 ```
 autotune heavy, vocoder, EDM drops, big room,
-choir, stacked harmonies, backing vocal layers, doubled vocals
+choir, stacked harmonies, backing vocal layers, doubled vocals,
+kalimba
 ```
 
 ---
 
 ## Track Map (15트랙)
 
-| # | 제목 | Style | BPM | Key | 이미지 키워드 | 클러스터 |
-|---|------|-------|-----|-----|-------------|---------|
-| 01 | (TBD) | A | 105 | C Major | | 신체+해방 |
-| 02 | (TBD) | B | 108 | D Major | | 음식+리듬 |
-| 03 | (TBD) | C | 100 | Eb Major | | 해방+신체 |
-| 04 | (TBD) | A | 110 | F Minor | | 신체+음식 |
-| 05 | (TBD) | B | 104 | Ab Major | | 리듬+해방 |
-| 06 | (TBD) | C | 107 | Bb Minor | | 음식+신체 |
-| 07 | (TBD) | A | 102 | Db Major | | 해방+리듬 |
-| 08 | (TBD) | B | 112 | E Minor | | 신체+리듬 |
-| 09 | (TBD) | C | 106 | F# Major | | 음식+해방 |
-| 10 | (TBD) | A | 108 | A Minor | | 리듬+신체 |
-| 11 | (TBD) | B | 100 | B Major | | 해방+음식 |
-| 12 | (TBD) | C | 105 | D Minor | | 신체+해방 |
-| 13 | (TBD) | A | 110 | Eb Minor | | 음식+리듬 |
-| 14 | (TBD) | B | 104 | G Major | | 리듬+해방 |
-| 15 | (TBD) | C | 107 | A Major | | 해방+신체 |
+| # | 제목 | Style | BPM | Key | 분위기 |
+|---|------|-------|-----|-----|--------|
+| 01 | (TBD) | E | 105 | C Major | |
+| 02 | (TBD) | C | 108 | D Major | |
+| 03 | (TBD) | E | 100 | Eb Major | |
+| 04 | (TBD) | D | 110 | F Minor | |
+| 05 | (TBD) | E | 104 | Ab Major | |
+| 06 | (TBD) | C | 107 | Bb Minor | |
+| 07 | (TBD) | E | 102 | Db Major | |
+| 08 | (TBD) | D | 112 | E Minor | |
+| 09 | (TBD) | E | 106 | F# Major | |
+| 10 | (TBD) | C | 108 | A Minor | |
+| 11 | (TBD) | E | 100 | B Major | |
+| 12 | (TBD) | D | 105 | D Minor | |
+| 13 | (TBD) | E | 110 | Eb Minor | |
+| 14 | (TBD) | C | 104 | G Major | |
+| 15 | (TBD) | E | 107 | A Major | |
 
 ### 배분 규칙
 - **BPM**: 100-112 (Hard Gate H1)
 - **Key**: Major 8 : Minor 7 (≈50:50), 인접 트랙 같은 Key 금지
-- **Style**: A 5 : B 5 : C 5
-- **클러스터**: 4 클러스터 균등 배분, 인접 트랙 같은 조합 금지
+- **Style**: E 8 : C 4 : D 3 (E 53%)
 
 ---
 
 ## Song Structure
 
-### 기본 구조 (V-C-V-C-B-C + Post-chorus)
+### 기본 구조 (V-P-C-V-C-B-C + Post-chorus)
 
 ```
 [intro]
@@ -119,30 +121,30 @@ choir, stacked harmonies, backing vocal layers, doubled vocals
 
 [verse 1]
 (Chest voice, Direct)
-{가사 4-6행, 콜앤리스폰스}
+{가사 4행, 미니멀}
 
 [pre-chorus]
 (building energy)
-{가사 2-4행}
+{가사 2행, 영어 코드스위칭}
 
 [chorus]
-(Chest voice, belt, 1 held note)
-{훅 3-4행, Ring Phrase, 스냅샷}
+(belt)
+{훅 3-4행, Ring Phrase, 영어 삽입}
 
 [post-chorus]
 (chant, call-and-response ad-lib)
-{의태어 챈트 반복}
+{챈트 반복}
 
 [verse 2]
 (Chest voice, Direct)
-{가사 4-6행, V1과 Metric Mirroring, 마지막 2행 에스컬레이션}
+{가사 4행, V1과 Metric Mirroring, 마지막 2행 에스컬레이션}
 
 [chorus]
 {1차와 100% 동일}
 
 [bridge]
 (higher register, stronger dynamics)
-{Thesis 1행 + Scene 2-3행}
+{Thesis 1행 + Scene 1-2행}
 
 [chorus]
 {1차와 100% 동일, +extra dynamics}
@@ -159,13 +161,11 @@ choir, stacked harmonies, backing vocal layers, doubled vocals
 
 ## Vocal Persona
 
-| Style | 추천 보컬 |
-|-------|----------|
-| A (Guitar) | Male: Raw, Energetic, Chest voice |
-| B (Sax) | Male: Smooth, Conversational, Chest voice |
-| C (Minimal) | Female: Intimate, Direct, Chest voice |
-
-(추천일 뿐, 트랙별 조정 가능)
+| Style | 보컬 |
+|-------|------|
+| C (Minimal) | Female: Raw, Intimate, Chest voice |
+| D (Afropiano) | Female: Raw, Chant-style, Chest voice |
+| E (Afro-Drill) | Female: Raw, Rhythmic chanting, Chest voice |
 
 ---
 

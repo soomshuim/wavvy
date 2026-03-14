@@ -1,22 +1,25 @@
 # Session State — Wavvy
 
-> Last updated: 2026-03-13
+> Last updated: 2026-03-14
 
 ## 진행 중
 
-- **12-00 Korean Afrobeats 시리즈** — Step 1-3 완료 (2026-03-13)
-  - ✅ Afrobeats 가사 딥리서치 완료 (24개 소스, 93% 신뢰도) → `report/2026-03-13_afrobeats-lyrics-deep-research.md`
-  - ✅ LYRICS_DNA.md 생성 (리서치 400p → 1p 증류) → `SERIES/12-00/LYRICS_DNA.md`
-  - ✅ AFROBEATS_RUBRIC v1.1 (L15-L19 Afrobeats 특화 가사 게이트 추가)
-  - ✅ concept.md v3.0 재설계 (Style A/B/C 템플릿 + 15트랙 맵 + 구조)
+- **12-00 Korean Afrobeats 시리즈** — 가사 방향 전환 + 문서 v2.0 (2026-03-14)
+  - ✅ 가사 방향 전환: 축제적 고정 → 감정 자유 (사랑/그리움/후회/이별/여유 모든 테마 허용)
+  - ✅ Style A(Highlife)/B(Sax) 제거 → C(Minimal)/D(Afropiano)/E(Afro-Drill)만 사용
+  - ✅ LYRICS_DNA v2.0 (톤 개방, 영어 코드스위칭, 소재풀→참고용, Anti-Pattern→표현문법만)
+  - ✅ AFROBEATS_RUBRIC v2.0 (Style D/E 게이트 추가, L12 감정장면화, L16 코드스위칭)
+  - ✅ concept.md v4.0 (Series DNA 테마 개방, Style D/E 템플릿, 보컬 전원 Female)
+  - ✅ "같이 걸어" 테스트 가사 3개 (test_style_c/d/e.txt), kalimba Exclude 추가
   - **교훈**: 리서치를 "실행 가능한 도구"로 증류해야 함 (리서치 직접 참조 X)
 - **MASTER 문서 v3.2 완료** — Writing Formula + 워크플로우 분리 (2026-03-08)
 
 ## 다음 할 일
 
-- [ ] Track 01 가사 재작성 (LYRICS_DNA + 강화된 RUBRIC으로 셀프 QC)
-- [ ] Style A/B/C Suno 실전 테스트
-- [ ] 15트랙 제목/이미지 키워드 확정 (concept.md Track Map 완성)
+- [ ] "같이 걸어" 테스트 가사 Suno 테스트 (C/D/E 3개)
+- [ ] 테스트 결과 반영 후 가사 수정 (V2 Escalation, Anti-Pattern 수정)
+- [ ] Track Map 15트랙 분위기/제목 확정
+- [ ] Major:Minor 비율 조정 (현재 9:6 → 사용자 판단 대기)
 - [ ] Wavvy 로고 핸드라이팅 애니메이션 (Canva Pro)
 - [ ] 썸네일 템플릿 제작 (Wavvy {HH:MM})
 
