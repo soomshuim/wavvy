@@ -2,12 +2,22 @@
 
 ---
 HANDOFF: Claude -> User
+Date: 2026-03-14 14:33:00
+Project: ~/Project/wavvy
+Agent: Claude
+Summary: Track 01-04 가사 완료 (온도/그자리/눈이마주쳐/안읽음). Style C 제거 → D+E만 (E70/D30). 보컬 Female70/Male30. 테스트 파일 삭제.
+Next-TODO: Track 04 만트라 리디자인, Track 05-15 디자인, concept.md Track Map 업데이트, Suno 테스트
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Claude -> User
 Date: 2026-03-14 12:58:00
 Project: ~/Project/wavvy
 Agent: Claude
 Summary: 12-00 가사 방향 전환(감정 자유) + Style A/B 제거→C/D/E + LYRICS_DNA v2.0 + RUBRIC v2.0 + concept.md v4.0 + "같이 걸어" 테스트 가사 3개 + kalimba Exclude
 Next-TODO: Suno 테스트(C/D/E), Major:Minor 비율 조정, 테스트 결과 반영 후 가사 수정
-Commits: (이번 커밋)
+Commits: 0628de6
 ---
 
 ---
