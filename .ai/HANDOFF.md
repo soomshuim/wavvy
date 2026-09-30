@@ -1040,3 +1040,15 @@ Next-TODO: 없음
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+
+---
+HANDOFF: Codex -> User
+Date: 2026-09-30 20:30:47 +0900
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: Wavvy 전체 작사 스킬·규칙·검토 하네스를 지정한 13곡 선례에 맞춰 개정. 저장된 Wavvy 가사와 젠이 채팅으로 제공한 「낮꿈」 원문을 구분했고, 기각된 “내 이름 불러도 / 살짝 뒤로 미뤄 둬”를 승인 사례로 쓰지 않음. 검토 순서는 문장 표현→앞뒤 연결→감정 흐름. `lyrics-review`는 실제 본문 해시·정확 인용·이유·Verdict가 묶인 기록을 검사하며, package-only PASS는 가사 검토가 아님. 자동 의미·가창·작성 주체 보증 없음. 새 가을 R&B 시리즈, 기존 series/audio/state/AGENTS/CLAUDE는 이번 변경 범위 밖.
+Verification: unittest 20 PASS(`/tmp/wavvy-lyric-unittest.log`), py_compile PASS(`/tmp/wavvy-lyric-pycompile.log`), skill quick_validate PASS(`/tmp/wavvy-lyric-quickvalidate.log`), git diff --check PASS(`/tmp/wavvy-lyric-diffcheck.log`), package smoke PASS PACKAGE_ONLY NOT_REVIEWED(`/tmp/wavvy-lyric-package-smoke.json`). Controller reported isolated Astra xhigh CLEAN(Critical/High 0, principle observations 0), reran tests and CLI artifact/no-artifact checks, and checked three skill behavior samples(A/C fit, B awkward expression rejected).
+Next-TODO: 없음 — 이번 요청 범위의 구현·검토·기록 완료.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---

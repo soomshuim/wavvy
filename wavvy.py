@@ -2136,7 +2136,9 @@ def state_cmd(path: Path, check: bool, write_file: bool, phase: Optional[str], i
     help='Stage gate to evaluate',
 )
 @click.option('--json', 'json_output', is_flag=True, help='Print machine-readable JSON')
-def gate_cmd(path: Path, stage: str, json_output: bool):
+@click.option('--artifact', type=click.Path(exists=True, dir_okay=False, path_type=Path), default=None, help='Lyric review artifact for the lyrics-review stage')
+@click.option('--mode', type=click.Choice(['full-lyric-draft', 'suno-prompt-only', 'review-only']), default=None, help='Expected lyric artifact mode')
+def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path], mode: Optional[str]):
     """Run a deterministic stage gate for a series."""
     repo_root = _resolve_repo_root(path)
     paths = ProjectPaths(path)
@@ -2155,7 +2157,7 @@ def gate_cmd(path: Path, stage: str, json_output: bool):
         "warnings": validation_result.warnings,
         "detail": f"{len(validation_result.tracks)} tracks",
     }
-    payload = run_gate(path, repo_root, stage, validation_payload)
+    payload = run_gate(path, repo_root, stage, validation_payload, artifact, mode)
     _emit_payload(payload, json_output)
     if payload.get("result") != "PASS":
         sys.exit(1)

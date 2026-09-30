@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Changed
+- **Wavvy 작사 자연스러움 규칙·검토 근거 정렬** (2026-09-30) — 지정한 13곡의 가사 선례와 젠의 「낮꿈」 표현 기각을 반영해 문장 자체→앞뒤 연결→감정 흐름 순서로 `wavvy.md`/`LYRICS.md`/작사 스킬·스펙·선례를 개정. 직접 감정·설명·비유·시간어와 사물 개수에 대한 일괄 품질 규칙을 걷고, `lyrics-review`에 실제 가사 본문 해시·정확 인용·이유의 검토 기록을 연결. `review-only` Findings/Verdict, Suno Empty/Prompt/Structure, package-only `NOT_REVIEWED`, artifact 필수 CLI를 정합화하고 회귀테스트 20개 PASS. 자동 검사는 기록 형식·대상 일치·상태를 확인하며 문학적 의미·가창·작성 주체를 보증하지 않는다.
 - **20-00 policy audit final concept sync** (2026-06-03) — `-director` read-only audit에서 확인된 20-00 최종 분포 충돌을 정리. `SERIES/20-00/concept.md`의 v0.4 과거 분포 문장을 현재 v0.5/v0.8 기준(A 3 / B 5 / C 5 / D 3 / E 2 / F 2, Hard 65%)으로 보정 표기하고, `MASTER/rubrics/HARD_HIPHOP_RUBRIC.md`를 v1.5로 갱신. `MASTER/scripts/check_series_gate.sh`는 pre-final txt source draft용 legacy validator로 명시하고 S1/S2/S3/S5를 current concept 기준으로 최소 동기화. 삭제/아카이브는 수행하지 않음.
 - **20-00 series gate S2 safety correction** (2026-06-03) — reviewer 지적을 반영해 legacy `check_series_gate.sh`의 S2 BPM/체감 단계 정합을 ADVISORY로 출력하도록 보정. S2 판정 기준 SSOT는 `MASTER/rubrics/HARD_HIPHOP_RUBRIC.md` section `S2 Advisory Disposition`.
 

@@ -1,122 +1,45 @@
-# Wavvy Lyric Patterns
+# Wavvy 가사 선례와 응용 판단
 
-Generated: 2026-05-22 KST
-Source baseline: `.ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/research/lyrics-skill-baseline.md`
+Updated: 2026-09-30 KST
 
-This reference records copyright-safe lyric pattern guidance. It does not store copied, translated, or closely paraphrased external lyric lines.
+이 문서는 좋은 가사가 **왜 자연스럽게 들리는지**를 살피는 참고 자료다. 특정 명사·동사·형용사, 사물 수, 문장 길이, 서사 구조를 재현하는 공식이 아니다. 한 곡의 일부가 유용하다고 해서 그 곡의 모든 행을 승인 사례로 삼지 않는다. 아래 인용은 프로젝트 안의 가사를 식별하고 판단을 설명하는 데 필요한 짧은 부분으로 제한한다.
 
-## Source Map
+규칙의 소유자는 `MASTER/SSOT.md`, `MASTER/lyrics/LYRICS.md`, `wavvy.md`, 대상 `SERIES/[series]/concept.md`다. 이 문서는 그 규칙이나 스킬의 출력 계약·검토 양식을 다시 정의하지 않는다. 영어가 섞인 기존 곡은 언어 정책을 완화하는 근거가 아니다. 기존 외부 조사에서 얻은 추상적 작사 관찰은 `.ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/research/lyrics-skill-baseline.md`에 남아 있으며, 외부 가사를 복제·번역·가깝게 바꿔 쓰지 않는다. Copied/translated external lyric lines are not stored.
 
-Local authorities:
+## 먼저 판단할 것: 한 문장 자체의 뜻
 
-- `MASTER/SSOT.md`: conflict order and per-series override policy.
-- `MASTER/lyrics/LYRICS.md`: Suno lyric input modes, prompt-only rules, tag rules.
-- `MASTER/MANAGER.md`: document-driven conservative quality fallback.
-- `wavvy.md`: Korean lyric channel, single lead vocal, chest-dominant identity, no harmonies.
-- `SERIES/[series]/concept.md`: series-specific BPM, mood, genre, vocal, and explicit overrides.
+1. **문장 표현:** 목적어와 동사가 자연스럽게 맞물리는가? 누가 무엇을 왜 하는지 화자의 실제 상황에서 이해되는가? 소리나 운율을 맞추느라 일상에서 하지 않을 말을 만들지는 않았는가?
+2. **앞뒤 연결:** 문장 자체가 성립한 다음, 앞 행의 감각·생각·대화에서 다음 행으로 넘어갈 이유가 있는가? 생략된 부분은 듣는 사람이 무리 없이 채울 수 있는가?
+3. **감정 흐름:** 그 연결이 화자의 감정이나 주의가 움직이는 방식과 맞는가? 변화가 없어도 머무름이나 되풀이에 기능이 있는가?
 
-Research artifacts:
+주변 맥락은 자연스러운 문장을 더 깊게 이해하게 해 줄 수 있지만, 성립하지 않는 표현을 구제하지는 못한다. 사용자가 기각한 「낮꿈」의 **“내 이름 불러도 / 살짝 뒤로 미뤄 둬”**가 그 사례다. 누가 부르는 이름을 무엇처럼 뒤로 미룬다는 건지 문장 자체에서 납득되지 않는다. 몽상 중이라는 주변 장면을 길게 해설하여 이 결합을 승인하지 않는다. 같은 곡의 감각과 주의가 흘러가는 방식은 별도로 배울 수 있다.
 
-- `.ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/research/lyrics-skill-baseline.md`
-- `.ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/research/source-index.md`
-- `.ai/pipeline/runs/20260521-233704_17-pop-rnb-lyrics-research/research/2026-pop-rnb-lyric-patterns.md`
-- `.ai/pipeline/runs/20260521-233704_17-pop-rnb-lyrics-research/implementation/17-00-track-01-rewrite.md`
+평범한 말, 직접 감정 표현, 설명, 비유는 그 자체로 결함이 아니다. 각각 말할 이유와 뜻의 연결을 본다. 시적인 표현도 문장 안의 의미 관계가 납득되면 쓸 수 있다. 반대로 사물이 구체적이거나 표현이 새롭다는 이유만으로 통과시키지 않는다. 모든 행에 사건을 넣거나, 모든 곡에 성장·해결·후렴 변화를 요구하지 않는다.
 
-External trend sources are access-dated in the source index. They are used only for abstract market and songwriting patterns such as chart hybridity, speakable phrasing, hook portability, and retro-soul familiarity.
+## 실제 선례에서 꺼낼 수 있는 원리
 
-## Universal Pattern Dimensions
+| 선례 | 자연스럽게 작동하는 부분 | 가져오지 말아야 할 공식·주의점 |
+|---|---|---|
+| `SERIES/16-00/concept.md` Track 04 「공강」 | “엉덩이가 좀 축축해 / 근데 일어나기 귀찮아”처럼 감각이 지금의 행동과 붙는다. “5분이면 되게 긴 거야”에는 더 쉬고 싶은 화자의 자기변명이 들린다. | 시간표·캠퍼스 사물을 다른 노래에 할당하지 않는다. 마지막에 반드시 일어나거나 체념해야 하는 것도 아니다. |
+| `SERIES/16-00/concept.md` Track 09 「서랍」 | 접어 둔 메모를 다시 읽는 행동이 과거의 자신에게 말을 건네는 계기가 된다. 이 곡의 자기 수용은 앞의 망설임에서 나온다. | 모든 회상곡을 과거→성장→해결 구조로 만들지 않는다. |
+| `SERIES/18-00/concept.md` Track 02 「약속」 | 친구들에게 연락하다 “다들 바빠 나만 한가해”라고 하는 소소한 자기 인정이 화자의 상황을 드러낸다. | 연락처·알림 같은 단어가 본질은 아니다. 후렴 반복도 다른 곡에 그대로 강제하지 않는다. |
+| `SERIES/18-00/concept.md` Track 03 「정류장」 | 알림에 고개를 들었다가 “저건 내 차 아냐”라고 알아차리는 순서는 기다리는 사람의 반응에 가깝다. | 이 곡에도 운율 때문에 억지스러운 행이 있다. 특히 후렴 전체를 자연스러운 문장 선례로 승인하지 않는다. |
+| `SERIES/18-00/concept.md` Track 06 「전화」 | “여보세요 나야 / 지금 막 내렸어”, “뭐 해먹었어 / 맛있겠다 배고파”, “오늘 무슨 일 있었어 / 나중에 얘기해줘”에는 상대의 대답이 적히지 않아도 통화가 들린다. “목소리 듣고 싶었어 / 오늘 좀 힘들었거든”은 연락한 이유를 보여 준다. | 생략된 대답은 실제 대화에서 복원될 때만 자연스럽다. 모든 곡을 대화체로 만들 필요는 없다. |
+| `SERIES/18-00/concept.md` Track 07 「골목」 | “잠깐 들를까 하다가 그냥 지나쳐요”는 편의점 앞의 작은 선택만으로 걷는 마음을 보여 준다. | 작은 선택이 매 행 필요하지 않다. 걷기·골목·편의점을 보편 어휘로 삼지 않는다. |
+| `SERIES/18-00/concept.md` Track 09 「이름」 | 먼저 위로받은 기억이 나중에 상대에게 다가가고 싶은 마음으로 이어진다. “고마워” 같은 직접적인 말도 관계 속에서 목적이 있다. | 보답이나 고백을 모든 관계 노래의 결말로 요구하지 않는다. 개별 비유는 별도로 뜻을 검사한다. |
+| `SERIES/04-00/concept.md` Track 01 「마음밖」 | 그리움과 아픔을 직접 말한다. 직접 감정 표현을 기계적으로 금지할 이유가 없음을 보여 준다. | 관습적인 이미지나 추상적인 행까지 이 곡 전체를 모범 문장으로 취급하지 않는다. |
+| `SERIES/13-00/concept.md` Track 16 「봄비같은 너」 | 봄비를 관계의 감각으로 이어 보는 비유의 시도다. 시적인 말도 구체적인 의미 관계를 만들 수 있다. | “봄비” 같은 계절 명사나 특정 비유를 재사용하지 않는다. 비유 안의 각 문장이 정말 성립하는지는 따로 본다. |
+| `SERIES/13-00/concept.md` Track 12 「약속」(현재 Track 03 매핑) | “비가 와도 함께 설게”처럼 상대와 함께하겠다는 말이 지금의 관계와 연결된다. 직접적인 약속도 쓸 수 있다. | 영어 삽입이나 곡의 다른 모든 행이 승인된 것은 아니다. 현재 번호 매핑은 `.ai/SESSION.md`의 기록을 따른다. |
+| `SERIES/22-00/concept.md` Track 10 「작은 손」(트랙맵·오디오명 「작은빛」) | “내 손가락을 / 꼭 쥔 채 잠이 들었지”, “혹시 깰까 봐 / 숨소리도 낮춰 보며”는 상대의 상태가 화자의 행동을 바꾸는 순간이다. | 아기와 보호자로 읽을 수 있지만 실인물 관계로 확정하지 않는다. 사용자가 제공한 근거는 Verse 1부터 Final Chorus까지와 기악 Outro이며, 저장된 concept의 추가 노래 Outro 4행은 최신 사용자 제공 가사로 취급하지 않는다. |
+| `SERIES/22-00/concept.md` Track 19 「자장가」 | “잘 자”와 느린 되풀이가 상대를 달래는 목적에 맞는다. 사건이 적어도 반복 자체가 기능할 수 있다. | 영어 후렴은 다른 곡의 언어 정책을 바꾸지 않는다. 모든 느린 곡에 반복을 요구하지 않는다. |
+| 사용자 제공 「낮꿈」(Track 07, `SERIES/12-00/input/tracks/07_낮꿈 (Daydream).txt`에는 가사 없음) | 차가워진 수프·구부러진 스푼·졸린 눈에서 햇빛과 먼지로, 멈춘 볼펜에서 김 빠진 콜라와 멀리 들리는 친구 목소리로 주의가 흘러간다. “이 순간만 / 살짝 빠져나가도 될까 / 나만 이런 걸까”는 몽상에 마음이 기우는 이유를 준다. | 감각 연결의 장점과 개별 문장의 통과 여부를 분리한다. “내 이름 불러도 / 살짝 뒤로 미뤄 둬”는 사용자 기각 표현이며 선례로 쓰거나 맥락으로 구제하지 않는다. “생각들은 / 달처럼 기울어”도 자동 승인하지 않는다. |
 
-| Dimension | Wavvy Baseline |
-|---|---|
-| Narrator | Close first person or lightly addressed second person. Avoid omniscient explanation. |
-| Line unit | Short breath units. One image or action per line. |
-| Hook | Compact phrase-first anchor with small contextual variation. |
-| Emotional arc | Small concrete state shift rather than dramatic confession. |
-| Vocabulary | Everyday Korean plus tactile nouns; sparse English only when concept allows. |
-| Imagery | Objects, space, light, air, body rhythm, movement, color. |
-| Register | Speakable, sung, non-literary Korean. |
-| Copyright | Abstract patterns only. Never copy, translate, or imitate external lyric lines. |
+## 응용할 때
 
-## Core Wavvy Vocabulary Lanes
+- 먼저 화자가 **누구에게, 어떤 상황에서, 왜 이 말을 하는지** 정한다. 평범한 대답, 머뭇거림, 농담, 직접 고백도 그 상황에 맞으면 살린다.
+- 사물은 분위기 할당량이 아니라 감각·연상·행동의 계기일 때 쓴다. 적게 쓰거나 없어도 된다. 특정 품사와 이미지군에 매몰되지 않는다.
+- 관계가 행동을 바꾸는 순간을 살핀다. 상대의 상태 때문에 목소리를 낮추거나, 기다리다가 엉뚱한 버스를 보고 고개를 드는 식이다. 관계가 없는 곡에는 이 장치를 강요하지 않는다.
+- 후렴의 동일한 말이 안심, 망설임, 붙잡음처럼 어떤 역할을 하는지 본다. 변주가 필요한지는 곡마다 판단한다.
+- “AI 냄새”라는 인상만으로 판정하지 않는다. 어색한 목적어·동사 결합, 화자에게 없는 지식, 억지 운율, 앞뒤 생각의 단절처럼 **본문에서 확인되는 문제**를 집어낸다. 본문만으로 실제 가창성이나 AI 작성 여부를 확정할 수 없다.
 
-Use as lanes, not as mandatory word banks:
-
-- Light/color: 빛, 색, 반짝, 선명, 환해져, 노란, 파란, 번져.
-- Body/rhythm: 손끝, 어깨, 숨, 박자, 리듬, 맥박, 발걸음.
-- Space/object: 창, 거리, 바닥, 공기, 스피커, 문, 그림자, 방.
-- Motion: 올라가, 가볍게, 한 칸, 고개, 돌아, 흔들려, 열려.
-- Inferred emotion: 표정이 풀리다, 웃음이 나다, 괜찮아지다, 마음이 열리다.
-
-Avoid as defaults:
-
-- Direct time/activity labels: `17:00`, `퇴근`, `점심`, `업무`, `사무실`, `commute`, `clock-out`.
-- Heavy labels: `사랑해`, `슬퍼`, `외로워`, `무너져`, `아파` unless the lane requires them.
-- Dark R&B defaults: 밤새, 취해, toxic, broken, lonely-room framing.
-- Trend-copy risk: distinctive English catchphrases, famous lyric turns, or borrowed cadence shapes.
-
-## Genre Lanes
-
-### Bright Pop/R&B
-
-- Goal: immediate replay, clear chorus memory, bright major-key lift.
-- Narration: conversational, lightly confident, close to spoken Korean.
-- Hook: repeated phrase with post-hook echo or response.
-- Verse: short lines that can ride 120+ BPM rhythmic delivery.
-- Chorus: opens wider than the verse and tightens around one memory phrase.
-- Avoid: heavy heartbreak, dark room, time/work labels, idol chant energy, and slogan-only positivity.
-
-### Contemporary R&B
-
-- Goal: smooth verse pocket and emotional closeness without losing Wavvy clarity.
-- Narration: intimate first person, still grounded in concrete scene cues.
-- Hook: melodic phrase that can stretch vocally; fewer chant-like repetitions than Pop/R&B.
-- Vocabulary: hand, breath, room, glass, shadow, pulse, door, temperature, distance.
-- Avoid: melodramatic confession, over-sexualized cliche, and harmony-dependent writing.
-
-### Neo-Soul / Urban Neo-Soul
-
-- Goal: groove, inner motion, tactile warmth, subtle sophistication.
-- Narration: reflective but object-based.
-- Hook: less obvious than pop, but still repeatable as phrase or cadence.
-- Vocabulary: floor, lamp, cup, window, shoulder, pocket, late light, slow color.
-- Avoid: abstract thesis lines, excessive metaphor density, and difficult language mirroring difficult chords.
-
-### Lo-fi / Chillhop Adjacent
-
-- Goal: texture and atmosphere with readable residue.
-- Narration: minimal, often fragmentary, but not meaningless.
-- Hook: can be mantra-like or absent when the concept supports low lyric density.
-- Vocabulary: room tone, weather, small objects, light, routine movement.
-- Avoid: dense story blocks, explicit emotional explanation, and over-specified scene scripts.
-
-## Known Failure Mode
-
-The 17-00 rewrite run showed that a draft can satisfy "image-based" on paper while still failing as a Wavvy lyric if it stacks abstract nouns without natural speech logic. Treat natural sung Korean as equal to imagery.
-
-Reject lines that read like:
-
-- object noun + color noun + breath/light noun with no human action.
-- abstract uplift claims without scene movement.
-- repeated hook surroundings that only restate the same emotion.
-
-Prefer:
-
-- ordinary first-person movement.
-- a small before/after change.
-- concrete objects that a vocalist can say naturally.
-- hook repetition where nearby images shift angle.
-
-## Suno Mode Pattern
-
-For `suno-prompt-only`, use one of:
-
-```text
-Korean lyrics about bright air, light movement, clear repeated hook
-```
-
-```text
-I-V1-PC-C-PC2-V2-C-B-C-O
-Korean Pop R&B, speakable Korean, bright color, light steps, compact hook
-```
-
-Do not include full Korean lyric rows in prompt-only mode. Do not wrap prompt-only directions in parentheses.
+사용자에게는 최종 가사를 보여 준다. 기계 검토 기록은 스킬·스펙에서 정한 별도 내부 산출물로 둔다.

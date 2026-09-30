@@ -1,7 +1,7 @@
 # Wavvy LYRICS.md
 
-Version: 4.3
-Last Updated: 2026-05-22
+Version: 4.4
+Last Updated: 2026-09-30
 Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 
 ---
@@ -13,18 +13,18 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 **원칙:**
 - 혼자 읽히고 혼자 들리는 언어
 - 말보다 **소리가 먼저 닿는** 한국어
-- 장르별 밀도 조절 (Chillhop=텍스처, R&B=서사)
+- 장르와 곡에 맞는 밀도 조절 (Chillhop의 텍스처나 R&B의 서사는 가능한 선택지이며 필수 공식이 아니다)
 - 시간대 컨셉은 가사 주제 강제가 아니라 BPM/Mood/Energy 포지셔닝이다
 
-**지향:** 사물·공간·현상 중심, "가사 없는 듯 들리지만 읽으면 남는 가사"
+**지향:** 읽었을 때 자연스러운 한국어와 곡에 맞는 표현. 사물·공간·현상은 선택 가능한 소재다.
 
 ### 0.1 Time Concept vs Lyrics
 
 - 각 시리즈의 시간대는 주로 사운드 톤앤매너를 정한다.
-- 가사가 반드시 `17:00`, `퇴근`, `점심`, `수면 전` 같은 시간/활동을 직접 다룰 필요는 없다.
+- 가사가 반드시 `17:00`, `퇴근`, `점심`, `수면 전` 같은 시간/활동을 직접 다룰 필요는 없다. 자연스럽게 필요한 경우에는 사용할 수 있다.
 - 우선순위는 **BPM → Mood → 장르 에너지 → 보컬 톤 → 가사 주제**다.
-- 가사는 해당 시간대에 듣기 좋은 감정과 이미지만 맞으면 충분하다.
-- 시간/활동 소재를 쓰는 경우에도 hook이나 핵심 주제로 과하게 고정하지 않는다.
+- 가사는 해당 시리즈의 사운드·장르·주제 조건과 맞추되, 문장 자체의 자연스러움을 우선한다.
+- 시간/활동 소재를 후렴이나 핵심 주제로 쓰는 것도 가능하다. 시간대만을 이유로 소재를 강제하지 않는다.
 
 ---
 
@@ -52,7 +52,7 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 **예시:**
 ```
 Korean lyrics about midday heat, hazy afternoon, drowsy rhythm
-Minimal Korean lyrics, repetitive hook chant, English hook in chorus
+Minimal Korean lyrics, repetitive hook chant where the track calls for it
 ```
 
 ### 1.4 약칭 구조 포맷
@@ -83,7 +83,7 @@ Minimal Korean lyrics, repetitive hook chant, English hook in chorus
 
 # 약칭 (~30자 구조, 키워드 공간 +60자)
 I-V1-PC-C-PC2-V2-C-B-C-O
-Minimal Korean, midday noon heat, harsh sunlight, lunch hour pause, scene not emotion, repetitive hook chant, English hook "feel the light"
+Minimal Korean, midday noon heat, lunch hour pause, warm feeling, repeating phrase where useful
 ```
 
 ### 1.3 Do / Don't

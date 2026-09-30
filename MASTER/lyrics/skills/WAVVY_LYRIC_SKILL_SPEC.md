@@ -1,7 +1,7 @@
 # Wavvy Lyric Skill Spec
 
-Version: 0.1
-Last Updated: 2026-05-22
+Version: 0.2
+Last Updated: 2026-09-30
 Owner: `MASTER/lyrics/LYRICS.md` policy layer
 Skill: `skills/wavvy-lyricist/SKILL.md`
 
@@ -72,11 +72,11 @@ Not allowed:
 
 ### `suno-prompt-only`
 
-Use for direct Suno Lyrics input.
+Use for direct Suno Lyrics input, including an intentionally Empty input.
 
 Allowed:
 
-- 1-3 short English direction lines.
+- 1-3 short English direction lines for Prompt or Structure, or an empty Draft when `suno_input: Empty` is declared.
 - Structure-only tags or compact structure line such as `I-V1-PC-C-PC2-V2-C-B-C-O`.
 - Brief mood/theme/image keywords.
 
@@ -88,11 +88,11 @@ Not allowed:
 
 ### `review-only`
 
-Use when judging an existing lyric without drafting a replacement.
+Use when judging an existing readable lyric-body file without drafting a replacement. Point `Review Source` in `Findings` to that file, relative to the review artifact or absolute. If it is a full-draft artifact, only its `Draft` section is reviewed; a file with production metadata but no `Draft` is not a lyric-body source.
 
 Required:
 
-- Findings tied to source rules.
+- Findings tied to exact lines of the reviewed lyric.
 - Verdict: `PASS`, `HOLD`, or `FAIL`.
 - Minimum viable fix direction for every `HOLD` or `FAIL`.
 
@@ -129,37 +129,48 @@ Include all fields that are known:
 - `time_activity_policy`
 - `explicit_overrides`
 - `copyright_boundary`
+- `suno_input` (`Empty`, `Prompt`, or `Structure`) when a prompt-only Draft is intentionally empty
 
 Unknown fields should be marked `unknown`, not guessed.
 
 ## Lyric Strategy Fields
 
-For drafts and rewrites, state:
+For drafts and rewrites, state the useful choices for this track; do not invent a hook or plot to fill a field:
 
 - `narrator`
-- `emotional_arc`
-- `hook_anchor`
-- `vocabulary_lane`
+- `connection` (conversation, action, sensation, association, or another fitting relation)
+- `emotional_movement` (including a held or repeated state)
+- `hook_or_repetition_role` (or why it is absent)
 - `density`
-- `banned_cliches`
 - `suno_handling`
 
 ## Self-Gate Contract
 
-Each gate must be marked `PASS`, `HOLD`, or `FAIL` with one concise reason.
+Human review order is **Expression → Connection → Emotional Flow**. First read each sentence without rescuing awkward wording through surrounding context. Then check how the words, actions, unspoken replies, sensations, or associations connect. Finally check how the feeling moves or stays. Direct emotion, explanation, metaphor, ordinary lines, static scenes, and repetition are allowed when they work for this track. Do not count nouns, image terms, short lines, or new events as quality proxies. A series meter/style rule does not justify an awkward line; record the conflict and revise it.
 
-| Gate | PASS Standard |
-|---|---|
-| Copyright Safety | No copied, translated, closely paraphrased, or famous-cadence material. |
-| Wavvy Identity | Korean lyric identity, single lead, chest-dominant direction, no harmony dependency. |
-| Series DNA | Aligns with concept BPM, key, mood, genre, and vocal constraints. |
-| Time Policy | Direct time/activity terms are absent unless explicitly allowed. |
-| Lyric Philosophy | Uses object/space/phenomenon and inferred emotion instead of explanation/slogans. |
-| Natural Korean | Lines are speakable and singable; no awkward abstract image stacking. |
-| Hook Clarity | Hook anchor is identifiable where the genre lane requires one. |
-| Suno Format | Output mode follows `MASTER/lyrics/LYRICS.md` exactly. |
+### Compact Review Evidence
 
-Any `FAIL` blocks handoff as final lyric output. Any `HOLD` requires a named next fix.
+For `full-lyric-draft`, place these lines inside `Self-Gate`; for `review-only`, place them inside `Findings` and add one `Verdict` line. The same evidence contract applies to both:
+
+```text
+- Review Source: Draft
+- Source SHA256: <hash of stripped Draft body>
+- Expression: PASS | "exact quote from body" | reason
+- Connection: PASS | "exact quote from body" | reason
+- Emotional Flow: PASS | "exact quote from body" | reason
+- Copyright Safety: PASS | reason
+- Wavvy Identity: PASS | reason
+- Series DNA: PASS | reason
+- Suno Format: PASS | reason
+```
+
+In `review-only`, `Review Source` instead names a readable separate lyric-body file. Paths are relative to the review artifact or absolute. A source artifact with a `Draft` heading contributes only its stripped `Draft` body; a plain lyric-only file contributes its stripped whole body. Each axis needs an exact nonblank lyric quote and a specific reason. `Source SHA256` must match the current body. The harness reports the current hash in `reviewed_source_sha256` and the corresponding check detail, including on a stale or missing claim, so the reviewer can reread and update the record. Review evidence is kept outside listener-facing lyric rows.
+
+Each status is exactly one `PASS`, `HOLD`, or `FAIL` with a reason. `HOLD` names the next fix; `FAIL` blocks final handoff. `review-only` uses its own `Findings` and `Verdict`; it has no `Self-Gate`. A `PASS` Verdict cannot contradict a HOLD/FAIL finding. The four contract lines retain copyright, brand, series, and Suno format checks. Time/activity words and hook presence are judged in context under Series DNA, not through a fixed list.
+
+For `suno-prompt-only`, use only the four contract lines in `Self-Gate`. Full-lyric axes, body hash, and quotes do not apply. A blank `Draft` is valid only with `suno_input: Empty` in `Constraint Freeze`; otherwise use one to three direction/structure lines. Preserve the Suno Empty, Prompt, and Structure choices and the English prompt-only input rules in `MASTER/lyrics/LYRICS.md`.
+
+These records show what was checked and which body was read. The harness validates their shape, binding, and status; it does not certify lyrical meaning, musical performance, human authorship, or the correctness of a reviewer's PASS.
 
 ## Harness Acceptance Baseline
 
@@ -172,17 +183,17 @@ A file-level harness may validate the skill package with static checks:
 - `patterns.md` states that copied/translated external lyric lines are not stored.
 - This spec defines `Self-Gate Contract` and `Harness Acceptance Baseline`.
 
-A lyric-artifact harness may validate draft output with text checks and manual review prompts:
+A lyric-artifact harness validates the record and deterministic input constraints:
 
 - Required output sections appear in order.
 - Mode is named exactly once in `Constraint Freeze`.
 - `suno-prompt-only` output contains no full Korean lyric rows.
-- Direct time/activity terms are rejected unless the concept has an explicit override.
-- At least three concrete object/space/phenomenon images appear for full lyric drafts unless the genre lane is intentionally minimal.
-- Hook anchor is present for Pop/R&B, Contemporary R&B, and bright mainstream lanes.
-- Copyright Safety gate is present and not omitted.
+- Full draft/review-only evidence quotes occur in a nonempty current lyric body and the reported hash matches that body.
+- Expression, Connection, Emotional Flow, Copyright Safety, Wavvy Identity, Series DNA, and Suno Format each appear once with a status and reason.
+- `review-only` Verdict appears once and does not contradict its findings. Missing/duplicate/stale evidence or any FAIL cannot pass; HOLD requires a decision.
+- Package-only `PASS` means the skill files are installed. `gate --stage lyrics-review` requires `--artifact`; its result concerns the record's structure and status, not verified lyric quality.
 
-Static checks are necessary but not sufficient. Natural Korean speech and copyright similarity require human or reviewer judgment when risk is non-trivial.
+Static checks are necessary but not sufficient. Natural Korean speech and copyright similarity require meaning review by a person or an agent that actually reads the lyric. Musical effect requires listening when it matters. This adds no user-approval step.
 
 ## Release Note Requirement
 

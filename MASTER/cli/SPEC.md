@@ -1,7 +1,7 @@
 # Project Wavvy: CLI Spec
 
-Version: 4.1
-Last Updated: 2026-05-02
+Version: 4.2
+Last Updated: 2026-09-30
 Purpose: wavvy CLI 시스템 명세
 
 ---
@@ -82,6 +82,12 @@ brand/
 - shorts.mp4 루프 → 9:16 크롭 → 텍스트 오버레이
 - Output: `output/shorts/short_[TrackName].mp4`
 
+### F. `lyrics-skill` / `gate --stage lyrics-review`
+- `lyrics-skill SERIES/[시리즈]` checks skill installation only (`scope: PACKAGE_ONLY`, `quality_status: NOT_REVIEWED`).
+- `lyrics-skill SERIES/[시리즈] --artifact REVIEW.md --mode review-only` checks a review record and its current source binding. `full-lyric-draft` and `suno-prompt-only` are also accepted modes.
+- `gate SERIES/[시리즈] --stage lyrics-review --artifact REVIEW.md --mode review-only` requires an artifact. Without one, the stage fails instead of presenting installed files as reviewed lyrics.
+- `reviewed_source_sha256` and the hash-check detail show the current source-body hash. `PASS` means the required record and deterministic checks pass, not that software certified naturalness, musical effect, or authorship.
+
 ---
 
 ## 5. 사용 예시
@@ -110,6 +116,7 @@ python3 wavvy.py state SERIES/[시리즈] --check
 python3 wavvy.py state SERIES/[시리즈] --write --phase uploaded --if-match N
 python3 wavvy.py gate SERIES/[시리즈] --stage source-final
 python3 wavvy.py gate SERIES/[시리즈] --stage uploaded
+python3 wavvy.py gate SERIES/[시리즈] --stage lyrics-review --artifact REVIEW.md --mode review-only --json
 
 # 업로드 FINAL 소스 아카이브
 python3 wavvy.py finalize-upload SERIES/[시리즈] --check

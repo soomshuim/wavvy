@@ -1,3 +1,4 @@
+import hashlib
 import json
 import tempfile
 import unittest
@@ -173,6 +174,9 @@ For review-only:
 
 
 def write_full_lyric_artifact(path: Path, draft: str, self_gate_extra: str = "") -> None:
+    body = draft.strip()
+    body_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
+    quote = next((line.strip() for line in body.splitlines() if line.strip() and not line.startswith("[")), "")
     path.write_text(
         f"""Source Map
 - `MASTER/SSOT.md`
@@ -188,32 +192,60 @@ Constraint Freeze
 - mood: bright
 - vocal_identity: single lead, chest-dominant
 - language_policy: Korean
-- time_activity_policy: direct terms absent
+- time_activity_policy: topic is optional
 - explicit_overrides: none
 - copyright_boundary: no copied, translated, closely paraphrased material
 
 Lyric Strategy
 - narrator: first person
-- emotional_arc: small lift
-- hook_anchor: 다시 올라가
-- vocabulary_lane: light, air, motion
+- connection: spoken thought
+- emotional_movement: may remain still
+- hook_or_repetition_role: optional
 - density: medium
-- banned_cliches: direct time words
 - suno_handling: full lyric draft, not prompt-only
 
 Draft
 {draft}
 
 Self-Gate
-- Copyright Safety: PASS - original draft
-- Wavvy Identity: PASS - Korean single lead
-- Series DNA: PASS - Pop/R&B lane
-- Time Policy: PASS - direct terms absent
-- Lyric Philosophy: PASS - image based
-- Natural Korean: PASS - speakable
-- Hook Clarity: PASS - hook anchor present
-- Suno Format: PASS - full lyric draft mode
+- Review Source: Draft
+- Source SHA256: {body_hash}
+- Expression: PASS | "{quote}" | the speaker can say this directly
+- Connection: PASS | "{quote}" | this line connects to the surrounding thought
+- Emotional Flow: PASS | "{quote}" | this line carries the current feeling
+- Copyright Safety: PASS | original draft
+- Wavvy Identity: PASS | Korean single lead
+- Series DNA: PASS | fits the target series
+- Suno Format: PASS | full lyric draft mode
 {self_gate_extra}
+""",
+        encoding="utf-8",
+    )
+
+
+def write_review_artifact(path: Path, source: Path, body: str, verdict: str = "PASS | reviewed lines are ready", findings_extra: str = "") -> None:
+    body_hash = hashlib.sha256(body.strip().encode("utf-8")).hexdigest()
+    quote = next(line.strip() for line in body.splitlines() if line.strip() and not line.startswith("["))
+    path.write_text(
+        f"""Source Map
+- `{source.name}`
+
+Constraint Freeze
+- mode: review-only
+
+Findings
+- Review Source: {source.name}
+- Source SHA256: {body_hash}
+- Expression: PASS | "{quote}" | this is a readable utterance
+- Connection: PASS | "{quote}" | this follows the speaker's thought
+- Emotional Flow: PASS | "{quote}" | this sustains the mood
+- Copyright Safety: PASS | source is original
+- Wavvy Identity: PASS | Korean solo vocal
+- Series DNA: PASS | the track direction fits
+- Suno Format: PASS | reviewing lyric body only
+{findings_extra}
+Verdict
+{verdict}
 """,
         encoding="utf-8",
     )
@@ -258,8 +290,10 @@ class HarnessTests(unittest.TestCase):
             self.assertEqual(checks["skill_front_matter_name"]["status"], "PASS")
             self.assertEqual(checks["spec_defines_self_gate_contract"]["status"], "PASS")
             self.assertIn("MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md", result["evidence_refs"])
+            self.assertEqual(result["scope"], "PACKAGE_ONLY")
+            self.assertEqual(result["quality_status"], "NOT_REVIEWED")
 
-    def test_lyrics_skill_artifact_gate_rejects_direct_time_terms_without_override(self):
+    def test_lyrics_skill_artifact_accepts_direct_feeling_time_topic_and_no_image_quota(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             make_lyric_skill_package(root)
@@ -269,13 +303,46 @@ class HarnessTests(unittest.TestCase):
             artifact = root / "artifact.md"
             write_full_lyric_artifact(
                 artifact,
-                "[Verse]\n창가에 빛이 내려\n공기 끝이 다시 열려\n손끝의 리듬이 퇴근길을 밀어\n",
+                "[Verse]\n퇴근하니까 마음이 아파\n오늘은 조금 쉬고 싶어\n그래도 너랑 얘기할래\n",
             )
 
             result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft")
 
-            self.assertEqual(result["result"], "FAIL")
-            self.assertTrue(any("direct time/activity" in blocker for blocker in result["blockers"]))
+            self.assertEqual(result["result"], "PASS", result)
+            self.assertEqual(result["quality_status"], "REVIEW_RECORD_CHECKED")
+            self.assertNotIn("object_space_phenomenon_images_minimum", {check["name"] for check in result["checks"]})
+
+    def test_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            artifact = root / "draft.md"
+            write_full_lyric_artifact(artifact, "[Verse]\n오늘은 조금 쉬고 싶어")
+
+            mismatch = run_lyrics_skill_gate(root, artifact_path=artifact, mode="review-only")
+            self.assertEqual(mismatch["result"], "FAIL")
+            self.assertIn("constraint_freeze_mode_exactly_once", {check["name"] for check in mismatch["checks"] if check["status"] == "FAIL"})
+
+            artifact.write_text(artifact.read_text(encoding="utf-8").replace("오늘은 조금 쉬고 싶어", "오늘은 조금 더 쉬고 싶어", 1), encoding="utf-8")
+            stale = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft")
+            self.assertEqual(stale["result"], "FAIL")
+            self.assertIn("actual_sha256=", next(check["detail"] for check in stale["checks"] if check["name"] == "reviewed_source_sha256_matches"))
+
+    def test_lyrics_skill_artifact_rejects_blank_quote_and_tag_only_draft(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            artifact = root / "draft.md"
+            write_full_lyric_artifact(artifact, "[Verse]\n오늘은 조금 쉬고 싶어")
+            artifact.write_text(artifact.read_text(encoding="utf-8").replace('"오늘은 조금 쉬고 싶어"', '"   "'), encoding="utf-8")
+            blank_quote = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft")
+            self.assertEqual(blank_quote["result"], "FAIL")
+            self.assertIn("review_expression_evidence", {check["name"] for check in blank_quote["checks"] if check["status"] == "FAIL"})
+
+            write_full_lyric_artifact(artifact, "[Verse][Chorus]\n[Bridge] [Outro]")
+            tag_only = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft")
+            self.assertEqual(tag_only["result"], "FAIL")
+            self.assertIn("reviewed_lyric_body_present", {check["name"] for check in tag_only["checks"] if check["status"] == "FAIL"})
 
     def test_lyrics_skill_artifact_gate_rejects_korean_rows_in_suno_prompt_only(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -300,14 +367,10 @@ Draft
 창가에 빛이 내려와
 
 Self-Gate
-- Copyright Safety: PASS - original prompt
-- Wavvy Identity: PASS - prompt only
-- Series DNA: PASS - Pop/R&B lane
-- Time Policy: PASS - direct terms absent
-- Lyric Philosophy: PASS - image based
-- Natural Korean: PASS - n/a
-- Hook Clarity: PASS - hook named
-- Suno Format: PASS - prompt-only
+- Copyright Safety: PASS | original prompt
+- Wavvy Identity: PASS | prompt only
+- Series DNA: PASS | Pop/R&B lane
+- Suno Format: PASS | prompt-only
 """,
                 encoding="utf-8",
             )
@@ -318,6 +381,90 @@ Self-Gate
             checks = {check["name"]: check for check in result["checks"]}
             self.assertEqual(checks["suno_prompt_only_has_no_korean_lyric_rows"]["status"], "FAIL")
 
+    def test_lyrics_skill_prompt_only_preserves_intentional_empty(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            artifact = root / "empty.md"
+            artifact.write_text("""Source Map
+- `SERIES/17-00/concept.md`
+
+Constraint Freeze
+- mode: suno-prompt-only
+- suno_input: Empty
+
+Lyric Strategy
+- density: free Suno generation
+
+Draft
+
+Self-Gate
+- Copyright Safety: PASS | no copied lyric input
+- Wavvy Identity: PASS | Korean direction comes from the series
+- Series DNA: PASS | style prompt carries the series direction
+- Suno Format: PASS | Empty input selected
+""", encoding="utf-8")
+            result = run_lyrics_skill_gate(root, artifact_path=artifact)
+            self.assertEqual(result["result"], "PASS", result)
+            self.assertEqual(result["mode"], "suno-prompt-only")
+            self.assertEqual(result["quality_status"], "PROMPT_INPUT_CHECKED")
+            artifact.write_text(artifact.read_text(encoding="utf-8").replace("Draft\n\nSelf-Gate", "Draft\nKorean lyrics about a quiet room\n\nSelf-Gate"), encoding="utf-8")
+            self.assertEqual(run_lyrics_skill_gate(root, artifact_path=artifact)["result"], "FAIL")
+
+    def test_lyrics_skill_review_only_binds_to_draft_body_not_metadata(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            source = root / "source.md"
+            body = "[Verse]\n오늘은 조금 쉬고 싶어\n내일 네 얘기도 들어볼게"
+            source.write_text(f"Source Map\n- metadata before\n\nDraft\n{body}\n\nSelf-Gate\n- metadata after\n", encoding="utf-8")
+            review = root / "review.md"
+            write_review_artifact(review, source, body)
+
+            accepted = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(accepted["result"], "PASS", accepted)
+            self.assertEqual(accepted["reviewed_source_sha256"], hashlib.sha256(body.encode("utf-8")).hexdigest())
+            self.assertNotIn("review_self_gate", {check["name"] for check in accepted["checks"]})
+
+            source.write_text(source.read_text(encoding="utf-8").replace("metadata before", "changed metadata"), encoding="utf-8")
+            self.assertEqual(run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")["result"], "PASS")
+            source.write_text(source.read_text(encoding="utf-8").replace("조금 쉬고 싶어", "더 쉬고 싶어"), encoding="utf-8")
+            self.assertEqual(run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")["result"], "FAIL")
+
+    def test_lyrics_skill_review_only_rejects_missing_empty_duplicate_and_conflicting_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            source = root / "source.md"
+            body = "[Verse]\n오늘은 조금 쉬고 싶어"
+            source.write_text(body, encoding="utf-8")
+            review = root / "review.md"
+
+            write_review_artifact(review, source, body)
+            source.unlink()
+            missing = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(missing["result"], "FAIL")
+            source.write_text("[Verse][Chorus]", encoding="utf-8")
+            empty = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(empty["result"], "FAIL")
+
+            source.write_text(body, encoding="utf-8")
+            write_review_artifact(review, source, body, findings_extra='- Expression: HOLD | "오늘은 조금 쉬고 싶어" | revise wording')
+            duplicate = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(duplicate["result"], "FAIL")
+
+            write_review_artifact(review, source, body, verdict="PASS | ready")
+            review.write_text(review.read_text(encoding="utf-8").replace('Expression: PASS |', 'Expression: HOLD |'), encoding="utf-8")
+            conflict = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(conflict["result"], "FAIL")
+            self.assertTrue(any("conflicts" in blocker for blocker in conflict["blockers"]))
+
+            write_review_artifact(review, source, body, verdict="HOLD | revise this line")
+            held = run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")
+            self.assertEqual(held["result"], "USER_DECISION")
+            write_review_artifact(review, source, body, verdict="FAIL | line is broken")
+            self.assertEqual(run_lyrics_skill_gate(root, artifact_path=review, mode="review-only")["result"], "FAIL")
+
     def test_lyrics_skill_cli_review_stage_skips_media_validation(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -326,17 +473,26 @@ Self-Gate
             series.mkdir(parents=True)
             (series / "concept.md").write_text("Genre: Pop/R&B\n", encoding="utf-8")
             runner = CliRunner()
+            source = root / "source.md"
+            body = "[Verse]\n오늘은 조금 쉬고 싶어"
+            source.write_text(body, encoding="utf-8")
+            review = root / "review.md"
+            write_review_artifact(review, source, body)
 
             with patch("wavvy.git_repo_root", return_value=root), patch(
                 "wavvy.validate_project",
                 side_effect=AssertionError("lyrics-review must not run media validation"),
             ):
-                result = runner.invoke(cli, ["gate", str(series), "--stage", "lyrics-review", "--json"])
+                missing = runner.invoke(cli, ["gate", str(series), "--stage", "lyrics-review", "--json"])
+                result = runner.invoke(cli, ["gate", str(series), "--stage", "lyrics-review", "--artifact", str(review), "--mode", "review-only", "--json"])
 
+            self.assertEqual(missing.exit_code, 1, missing.output)
+            self.assertEqual(json.loads(missing.output)["quality_status"], "NOT_REVIEWED")
             self.assertEqual(result.exit_code, 0, result.output)
             payload = json.loads(result.output)
             self.assertEqual(payload["schema"], "wavvy.lyrics_skill_gate.v1")
             self.assertEqual(payload["result"], "PASS")
+            self.assertEqual(payload["mode"], "review-only")
 
     def test_compilation_source_map_counts_as_available_audio(self):
         with tempfile.TemporaryDirectory() as tmp:

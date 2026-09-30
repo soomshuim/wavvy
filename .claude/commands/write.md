@@ -29,10 +29,11 @@ Out of scope:
 ```bash
 python3 wavvy.py lyrics-skill SERIES/[series] --json
 python3 wavvy.py lyrics-skill SERIES/[series] --artifact <file> --mode full-lyric-draft --json
-python3 wavvy.py gate SERIES/[series] --stage lyrics-review --json
+python3 wavvy.py gate SERIES/[series] --stage lyrics-review --artifact <file> --mode full-lyric-draft --json
 ```
 
 ## Output Contract
 
 Return the sections defined by `skills/wavvy-lyricist/SKILL.md`: Source Map,
 Constraint Freeze, Lyric Strategy, Draft or Findings, Self-Gate, and Verdict.
+For `review-only`, use `--mode review-only` and keep the review artifact separate from the reviewed lyric file. The source hash and exact lyric quotes belong in `Findings`. If the user wants finished lyrics, deliver the `Draft` lyric rows without the working review record. A package-only PASS checks installation, not lyric quality.

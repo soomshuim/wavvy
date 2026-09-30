@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import subprocess
 import re
 from pathlib import Path
@@ -17,62 +18,13 @@ LYRIC_SKILL_REQUIRED_FILES = {
 LYRIC_OUTPUT_MODES = ("full-lyric-draft", "suno-prompt-only", "review-only")
 LYRIC_DRAFT_SECTIONS = ("Source Map", "Constraint Freeze", "Lyric Strategy", "Draft", "Self-Gate")
 LYRIC_REVIEW_SECTIONS = ("Source Map", "Constraint Freeze", "Findings", "Verdict")
-LYRIC_SELF_GATE_NAMES = (
+LYRIC_CONTRACT_GATE_NAMES = (
     "Copyright Safety",
     "Wavvy Identity",
     "Series DNA",
-    "Time Policy",
-    "Lyric Philosophy",
-    "Natural Korean",
-    "Hook Clarity",
     "Suno Format",
 )
-DIRECT_TIME_ACTIVITY_TERMS = (
-    "17:00",
-    "퇴근",
-    "출근",
-    "업무",
-    "근무",
-    "사무실",
-    "회사",
-    "오피스",
-    "commute",
-    "clock-out",
-    "office",
-    "workday",
-)
-OBJECT_SPACE_IMAGE_TERMS = (
-    "빛",
-    "공기",
-    "창",
-    "창가",
-    "바닥",
-    "방",
-    "걸음",
-    "손",
-    "숨",
-    "리듬",
-    "색",
-    "거리",
-    "문",
-    "유리",
-    "벽",
-    "바람",
-    "온도",
-    "소리",
-    "어깨",
-    "발",
-    "light",
-    "air",
-    "window",
-    "floor",
-    "room",
-    "step",
-    "hand",
-    "breath",
-    "rhythm",
-    "color",
-)
+LYRIC_REVIEW_AXES = ("Expression", "Connection", "Emotional Flow")
 
 
 def _check(name: str, passed: bool, detail: str = "") -> dict[str, Any]:
@@ -150,71 +102,93 @@ def _korean_lyric_lines(text: str) -> list[str]:
         stripped = line.strip()
         if not stripped or stripped.startswith(("#", "```", "|")):
             continue
-        if re.fullmatch(r"\[[^\]]+\]", stripped):
+        if re.fullmatch(r"(?:\[[^\]]+\]\s*)+", stripped):
             continue
-        hangul = re.findall(r"[가-힣]", stripped)
-        if len(hangul) >= 4:
+        if re.search(r"[가-힣]", stripped):
             lines.append(stripped)
     return lines
 
 
-def _found_terms(text: str, terms: tuple[str, ...]) -> list[str]:
-    found = []
-    for term in terms:
-        flags = re.IGNORECASE if re.search(r"[A-Za-z]", term) else 0
-        if re.search(re.escape(term), text, flags=flags):
-            found.append(term)
-    return sorted(set(found), key=found.index)
+def _field_lines(text: str, label: str) -> list[str]:
+    return [
+        match.group(1).strip()
+        for match in re.finditer(rf"(?im)^\s*[-*]?\s*{re.escape(label)}\s*:\s*(.*?)\s*$", text)
+    ]
 
 
-def _concept_allows_time_terms(concept_text: str, terms: list[str]) -> bool:
-    if not concept_text or not terms:
-        return False
-    marker = r"(?:explicit[_ -]?overrides?|overrides?|allowed|allow|requires|required|허용|예외|필수|명시)"
-    for term in terms:
-        term_pattern = re.escape(term)
-        if re.search(rf"{marker}.{{0,160}}{term_pattern}|{term_pattern}.{{0,160}}{marker}", concept_text, flags=re.IGNORECASE | re.DOTALL):
-            return True
-    return False
+def _reviewed_body(mode: str, artifact_path: Path, text: str, evidence: str) -> tuple[str, str]:
+    """Return the reviewed lyric body and a source error, if any."""
+    sources = _field_lines(evidence, "Review Source")
+    if len(sources) != 1:
+        return "", "Review Source must appear exactly once"
+    if mode == "full-lyric-draft":
+        if sources[0] != "Draft":
+            return "", "full-lyric-draft Review Source must be Draft"
+        return _extract_section(text, "Draft"), ""
+
+    if sources[0] == "Draft":
+        return "", "review-only Review Source must name a readable lyric file"
+    source_path = Path(sources[0])
+    if not source_path.is_absolute():
+        source_path = artifact_path.parent / source_path
+    source_path = source_path.resolve()
+    if source_path == artifact_path.resolve() or not source_path.is_file():
+        return "", "review-only Review Source must be a separate readable lyric file"
+    try:
+        source_text = source_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return "", "review-only Review Source cannot be read as UTF-8"
+    if _section_position(source_text, "Draft") >= 0:
+        return _extract_section(source_text, "Draft"), ""
+    has_artifact_metadata = any(_section_position(source_text, label) >= 0 for label in (*LYRIC_DRAFT_SECTIONS, *LYRIC_REVIEW_SECTIONS))
+    if source_path.name == "concept.md" or has_artifact_metadata or re.search(r"(?im)^\s*(?:={3,}\s*(?:STYLE|EXCLUDE|LYRICS)|##\s+Final Track Sources)", source_text):
+        return "", "review-only source has metadata but no Draft section; provide a lyric-body file"
+    return source_text.strip(), ""
 
 
-def _minimal_lyric_lane(concept_text: str, constraint_freeze: str) -> bool:
-    text = f"{concept_text}\n{constraint_freeze}"
-    return bool(
-        re.search(
-            r"minimal|minimalistic|ambient|instrumental|low lyric density|낮은\s*가사\s*밀도|미니멀",
-            text,
-            flags=re.IGNORECASE,
-        )
-    )
+def _review_record_checks(
+    mode: str, artifact_path: Path, text: str, evidence: str
+) -> tuple[list[dict[str, Any]], list[str], list[str], str]:
+    """Check review evidence binding and completeness, never the truth of its judgments."""
+    checks: list[dict[str, Any]] = []
+    blockers: list[str] = []
+    decisions: list[str] = []
+    body, source_error = _reviewed_body(mode, artifact_path, text, evidence)
+    lyric_lines = [line.strip() for line in body.splitlines() if line.strip() and not re.fullmatch(r"(?:\[[^]]+\]\s*)+", line.strip())]
+    body_ok = not source_error and any(re.search(r"[가-힣A-Za-z]{2,}", line) for line in lyric_lines)
+    checks.append(_status_check("reviewed_lyric_body_present", "PASS" if body_ok else "FAIL", source_error or f"{len(lyric_lines)} lyric lines", artifact_path))
+    if not body_ok:
+        blockers.append(source_error or "reviewed lyric body is empty or has only structure tags")
 
+    actual_hash = hashlib.sha256(body.encode("utf-8")).hexdigest() if body_ok else ""
+    claimed_hashes = _field_lines(evidence, "Source SHA256")
+    hash_ok = body_ok and len(claimed_hashes) == 1 and claimed_hashes[0].lower() == actual_hash
+    checks.append(_status_check("reviewed_source_sha256_matches", "PASS" if hash_ok else "FAIL", f"actual_sha256={actual_hash}; claimed={','.join(claimed_hashes)}", artifact_path))
+    if not hash_ok:
+        blockers.append("review evidence is missing, duplicated, or stale for the current lyric body")
 
-def _requires_hook(concept_text: str, constraint_freeze: str) -> bool:
-    text = f"{concept_text}\n{constraint_freeze}"
-    return bool(
-        re.search(
-            r"pop/r&b|contemporary\s+r&b|\br&b\b|\brnb\b|\bpop\b|bright mainstream|mainstream|알앤비|팝",
-            text,
-            flags=re.IGNORECASE,
-        )
-    )
-
-
-def _hook_anchor_present(strategy: str) -> bool:
-    match = re.search(r"(?im)^\s*[-*]?\s*`?hook[_ -]?anchor`?\s*[:：-]\s*(.+)$", strategy)
-    if not match:
-        return False
-    value = match.group(1).strip().strip("`")
-    return bool(value) and not re.fullmatch(r"unknown|none|n/?a|tbd|미정|없음", value, flags=re.IGNORECASE)
-
-
-def _self_gate_statuses(self_gate: str) -> dict[str, str]:
-    statuses = {}
-    for name in LYRIC_SELF_GATE_NAMES:
-        match = re.search(rf"{re.escape(name)}[^\n]*(PASS|HOLD|FAIL)", self_gate, flags=re.IGNORECASE)
-        if match:
-            statuses[name] = match.group(1).upper()
-    return statuses
+    for label in (*LYRIC_REVIEW_AXES, *LYRIC_CONTRACT_GATE_NAMES):
+        entries = _field_lines(evidence, label)
+        status = ""
+        valid = len(entries) == 1
+        if valid:
+            parts = [part.strip() for part in entries[0].split("|", 2)]
+            status = parts[0].upper()
+            valid = len(parts) == (3 if label in LYRIC_REVIEW_AXES else 2) and status in {"PASS", "HOLD", "FAIL"}
+            if valid and label in LYRIC_REVIEW_AXES:
+                quote = parts[1]
+                quoted_text = quote[1:-1] if quote.startswith('"') and quote.endswith('"') else ""
+                valid = bool(quoted_text.strip()) and quoted_text in body and bool(re.search(r"[가-힣A-Za-z]{2,}", quoted_text))
+            if valid:
+                valid = bool(parts[-1]) and parts[-1].lower() not in {"n/a", "none", "tbd", "unknown", "미정", "없음"}
+        checks.append(_status_check(f"review_{label.lower().replace(' ', '_')}_evidence", "PASS" if valid else "FAIL", status if valid else "missing/duplicate/invalid status, quote, or reason", artifact_path))
+        if not valid:
+            blockers.append(f"{label} review evidence must appear once with status, {'exact quote, ' if label in LYRIC_REVIEW_AXES else ''}and reason")
+        elif status == "FAIL":
+            blockers.append(f"{label} review status is FAIL")
+        elif status == "HOLD":
+            decisions.append(f"{label} review status is HOLD")
+    return checks, blockers, decisions, actual_hash
 
 
 def _lyric_package_checks(repo_root: Path) -> tuple[list[dict[str, Any]], list[str], list[str]]:
@@ -280,9 +254,8 @@ def _lyric_package_checks(repo_root: Path) -> tuple[list[dict[str, Any]], list[s
 
 def _lyric_artifact_checks(
     artifact_path: Path,
-    concept_text: str,
     requested_mode: str | None,
-) -> tuple[list[dict[str, Any]], list[str], list[str], list[str]]:
+) -> tuple[list[dict[str, Any]], list[str], list[str], list[str], str]:
     checks: list[dict[str, Any]] = []
     blockers: list[str] = []
     user_decisions: list[str] = []
@@ -292,7 +265,7 @@ def _lyric_artifact_checks(
     inferred_mode, mode_counts, total_modes = _infer_artifact_mode(text)
     mode = requested_mode or inferred_mode
     mode_detail = ", ".join(f"{key}={value}" for key, value in mode_counts.items())
-    mode_ok = total_modes == 1 and (requested_mode is None or mode == requested_mode)
+    mode_ok = total_modes == 1 and (requested_mode is None or inferred_mode == requested_mode)
     checks.append(_status_check("constraint_freeze_mode_exactly_once", "PASS" if mode_ok else "FAIL", mode_detail, artifact_path))
     if not mode_ok:
         blockers.append("Constraint Freeze must name exactly one output mode matching --mode when provided")
@@ -305,7 +278,6 @@ def _lyric_artifact_checks(
 
     constraint_freeze = _extract_section(text, "Constraint Freeze")
     draft = _extract_section(text, "Draft")
-    strategy = _extract_section(text, "Lyric Strategy")
     self_gate = _extract_section(text, "Self-Gate")
 
     if mode == "suno-prompt-only":
@@ -321,76 +293,50 @@ def _lyric_artifact_checks(
         if korean_lines:
             blockers.append("suno-prompt-only output must not contain full Korean lyric rows")
 
-    direct_terms = _found_terms(draft, DIRECT_TIME_ACTIVITY_TERMS)
-    time_allowed = _concept_allows_time_terms(concept_text, direct_terms)
-    checks.append(
-        _status_check(
-            "direct_time_activity_terms_absent_or_overridden",
-            "PASS" if not direct_terms or time_allowed else "FAIL",
-            ", ".join(direct_terms) if direct_terms else "",
-            artifact_path,
-        )
-    )
-    if direct_terms and not time_allowed:
-        blockers.append("direct time/activity terms require an explicit concept override: " + ", ".join(direct_terms))
+    actual_hash = ""
+    if mode in {"full-lyric-draft", "review-only"}:
+        evidence = self_gate if mode == "full-lyric-draft" else _extract_section(text, "Findings")
+        review_checks, review_blockers, review_decisions, actual_hash = _review_record_checks(mode, artifact_path, text, evidence)
+        checks.extend(review_checks)
+        blockers.extend(review_blockers)
+        user_decisions.extend(review_decisions)
+    elif mode == "suno-prompt-only":
+        prompt_lines = [line.strip() for line in draft.splitlines() if line.strip()]
+        empty_selected = bool(re.search(r"(?im)^\s*[-*]?\s*suno_input\s*:\s*Empty\s*$", constraint_freeze))
+        prompt_ok = (not prompt_lines and empty_selected) or (not empty_selected and 1 <= len(prompt_lines) <= 3 and not any(line.startswith("(") for line in prompt_lines))
+        checks.append(_status_check("suno_prompt_shape", "PASS" if prompt_ok else "FAIL", f"{len(prompt_lines)} nonempty lines", artifact_path))
+        if not prompt_ok:
+            blockers.append("suno-prompt-only Draft must have 1-3 non-parenthesized lines, or an empty Draft with suno_input: Empty")
+        for label in LYRIC_CONTRACT_GATE_NAMES:
+            entries = _field_lines(self_gate, label)
+            parts = [part.strip() for part in entries[0].split("|", 1)] if len(entries) == 1 else []
+            valid = len(parts) == 2 and parts[0].upper() in {"PASS", "HOLD", "FAIL"} and bool(parts[1])
+            checks.append(_status_check(f"prompt_{label.lower().replace(' ', '_')}_recorded", "PASS" if valid else "FAIL", parts[0] if valid else "missing/duplicate status or reason", artifact_path))
+            if not valid:
+                blockers.append(f"suno-prompt-only {label} must have one status and reason")
+            elif parts[0].upper() == "FAIL":
+                blockers.append(f"suno-prompt-only {label} is FAIL")
+            elif parts[0].upper() == "HOLD":
+                user_decisions.append(f"suno-prompt-only {label} is HOLD")
+    else:
+        blockers.append("lyric artifact mode is missing or unsupported")
 
-    if mode == "full-lyric-draft":
-        image_terms = _found_terms(draft, OBJECT_SPACE_IMAGE_TERMS)
-        enough_images = len(image_terms) >= 3 or _minimal_lyric_lane(concept_text, constraint_freeze)
-        checks.append(
-            _status_check(
-                "object_space_phenomenon_images_minimum",
-                "PASS" if enough_images else "USER_DECISION",
-                f"{len(image_terms)} unique terms: {', '.join(image_terms[:8])}",
-                artifact_path,
-            )
-        )
-        if not enough_images:
-            user_decisions.append("full-lyric-draft has fewer than three concrete object/space/phenomenon image terms")
+    if mode == "review-only":
+        verdict = _extract_section(text, "Verdict")
+        verdict_lines = [line.strip() for line in verdict.splitlines() if line.strip()]
+        parts = [part.strip() for part in verdict_lines[0].split("|", 1)] if len(verdict_lines) == 1 else []
+        verdict_ok = len(parts) == 2 and parts[0].upper() in {"PASS", "HOLD", "FAIL"} and bool(parts[1])
+        checks.append(_status_check("review_verdict_recorded", "PASS" if verdict_ok else "FAIL", parts[0] if verdict_ok else "one verdict and reason required", artifact_path))
+        if not verdict_ok:
+            blockers.append("review-only Verdict must contain exactly one PASS, HOLD, or FAIL with a reason")
+        elif parts[0].upper() == "FAIL":
+            blockers.append("review-only Verdict is FAIL")
+        elif parts[0].upper() == "HOLD":
+            user_decisions.append("review-only Verdict is HOLD")
+        elif user_decisions or blockers:
+            blockers.append("review-only PASS Verdict conflicts with review evidence status")
 
-    if mode in {"full-lyric-draft", "suno-prompt-only"} and _requires_hook(concept_text, constraint_freeze):
-        hook_ok = _hook_anchor_present(strategy)
-        checks.append(_status_check("hook_anchor_present_for_pop_rnb_lane", "PASS" if hook_ok else "FAIL", "", artifact_path))
-        if not hook_ok:
-            blockers.append("Pop/R&B or bright mainstream lanes require a non-empty hook_anchor in Lyric Strategy")
-
-    statuses = _self_gate_statuses(self_gate)
-    copyright_status = statuses.get("Copyright Safety")
-    checks.append(
-        _status_check(
-            "copyright_safety_self_gate_present",
-            "PASS" if copyright_status else "FAIL",
-            copyright_status or "",
-            artifact_path,
-        )
-    )
-    if not copyright_status:
-        blockers.append("Self-Gate must include Copyright Safety")
-    elif copyright_status == "FAIL":
-        blockers.append("Self-Gate Copyright Safety is FAIL")
-    elif copyright_status == "HOLD":
-        user_decisions.append("Self-Gate Copyright Safety is HOLD")
-
-    missing_self_gates = [name for name in LYRIC_SELF_GATE_NAMES if name not in statuses]
-    checks.append(
-        _status_check(
-            "self_gate_contract_labels_present",
-            "PASS" if not missing_self_gates else "USER_DECISION",
-            ", ".join(missing_self_gates),
-            artifact_path,
-        )
-    )
-    if missing_self_gates:
-        user_decisions.append("Self-Gate is missing contract labels: " + ", ".join(missing_self_gates))
-
-    failed_gates = [name for name, status in statuses.items() if status == "FAIL"]
-    held_gates = [name for name, status in statuses.items() if status == "HOLD"]
-    if failed_gates:
-        blockers.append("Self-Gate contains FAIL: " + ", ".join(failed_gates))
-    if held_gates:
-        user_decisions.append("Self-Gate contains HOLD: " + ", ".join(held_gates))
-
-    return checks, blockers, user_decisions, evidence_refs
+    return checks, blockers, user_decisions, evidence_refs, actual_hash
 
 
 def run_lyrics_skill_gate(
@@ -404,21 +350,20 @@ def run_lyrics_skill_gate(
     checks, blockers, evidence_refs = _lyric_package_checks(repo_root)
     warnings: list[str] = []
     user_decisions: list[str] = []
+    actual_hash = ""
+    effective_mode = mode or (_infer_artifact_mode(_read_text(artifact_path))[0] if artifact_path else None)
 
-    concept_text = ""
     if series_path is not None:
         concept_path = series_path / "concept.md"
-        concept_text = _read_text(concept_path)
-        concept_ok = bool(concept_text)
+        concept_ok = bool(_read_text(concept_path))
         checks.append(_status_check("series_concept_present", "PASS" if concept_ok else "FAIL", str(concept_path), concept_path))
         evidence_refs.append(str(concept_path))
         if not concept_ok:
             blockers.append("series concept.md is required when a series path is supplied")
 
     if artifact_path is not None:
-        artifact_checks, artifact_blockers, artifact_decisions, artifact_refs = _lyric_artifact_checks(
+        artifact_checks, artifact_blockers, artifact_decisions, artifact_refs, actual_hash = _lyric_artifact_checks(
             artifact_path,
-            concept_text,
             mode,
         )
         checks.extend(artifact_checks)
@@ -427,13 +372,24 @@ def run_lyrics_skill_gate(
         evidence_refs.extend(artifact_refs)
 
     result = "FAIL" if blockers else ("USER_DECISION" if user_decisions else "PASS")
+    if artifact_path is None:
+        quality_status = "NOT_REVIEWED"
+    elif result == "FAIL":
+        quality_status = "RECORD_INVALID"
+    elif result == "USER_DECISION":
+        quality_status = "RECORD_ON_HOLD"
+    else:
+        quality_status = "PROMPT_INPUT_CHECKED" if effective_mode == "suno-prompt-only" else "REVIEW_RECORD_CHECKED"
     return {
         "schema": "wavvy.lyrics_skill_gate.v1",
         "stage": "lyrics-review",
         "result": result,
+        "scope": "ARTIFACT_RECORD" if artifact_path else "PACKAGE_ONLY",
+        "quality_status": quality_status,
+        "reviewed_source_sha256": actual_hash,
         "series": str(series_path) if series_path else "",
         "artifact": str(artifact_path) if artifact_path else "",
-        "mode": mode or "",
+        "mode": effective_mode or "",
         "checks": checks,
         "warnings": sorted(set(warnings)),
         "blockers": sorted(set(blockers)),
@@ -469,6 +425,8 @@ def run_gate(
     repo_root: Path,
     stage: str,
     validation: dict[str, Any],
+    lyric_artifact: Path | None = None,
+    lyric_mode: str | None = None,
 ) -> dict[str, Any]:
     """Run a stage-specific gate."""
     stage = stage.replace("_", "-")
@@ -476,7 +434,11 @@ def run_gate(
         raise ValueError(f"unknown stage: {stage}")
 
     if stage == "lyrics-review":
-        return run_lyrics_skill_gate(repo_root, series_path)
+        payload = run_lyrics_skill_gate(repo_root, series_path, lyric_artifact, lyric_mode)
+        if lyric_artifact is None:
+            payload["result"] = "FAIL"
+            payload["blockers"].append("lyrics-review requires --artifact; package installation alone does not review a lyric")
+        return payload
 
     checks: list[dict[str, Any]] = []
     warnings: list[str] = []
