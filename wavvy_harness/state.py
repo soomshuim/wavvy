@@ -202,6 +202,26 @@ def _infer_phase(artifact_status: dict[str, Any], concept_text: str, report: dic
     return "concept_draft"
 
 
+def _infer_next_action(phase: str, artifact_status: dict[str, Any]) -> str:
+    if phase == "uploaded":
+        return DEFAULT_NEXT_ACTION
+    if artifact_status["concept_md"] == "missing":
+        return "Create concept.md for the active series."
+    if phase == "concept_draft":
+        return "Draft track sources from concept.md."
+    if phase == "track_source_draft":
+        return "Review existing track source drafts and follow the next source work in concept.md."
+    if phase == "source_final":
+        return "Review final track sources and prepare the render."
+    if phase == "render_final":
+        if artifact_status["final_mkv"] != "present" or artifact_status["upload_csv"] != "present":
+            return "Create final.mkv and upload.csv for the render-final stage."
+        if artifact_status["subtitle_txt"] == "missing" and artifact_status["subtitle_srt"] == "missing":
+            return "Create subtitle text or SRT for the rendered series."
+        return "Review the rendered series for upload readiness."
+    return "Upload the series and record completion in concept.md."
+
+
 def build_state(
     series_path: Path,
     repo_root: Path,
@@ -264,13 +284,15 @@ def build_state(
         "lyric_skill_files": lyric_skill_files,
     }
 
+    series_rel = series_path.relative_to(repo_root).as_posix() if series_path.is_relative_to(repo_root) else str(series_path)
+    same_series = (previous_state or {}).get("active_series") == series_rel
+    prior_phase = (previous_state or {}).get("phase") if same_series else None
     inferred_phase = _infer_phase(artifact_status, concept_text, report)
-    selected_phase = phase or (previous_state or {}).get("phase") or inferred_phase
+    selected_phase = phase or prior_phase or inferred_phase
     if selected_phase not in PHASES:
         selected_phase = inferred_phase
-    next_action = (previous_state or {}).get("next_action") or DEFAULT_NEXT_ACTION
-    if selected_phase == "uploaded":
-        next_action = DEFAULT_NEXT_ACTION
+    prior_next_action = (previous_state or {}).get("next_action") if same_series else None
+    next_action = prior_next_action or _infer_next_action(selected_phase, artifact_status)
 
     blocked_by = []
     if selected_phase in LOCAL_RENDER_PHASES:
@@ -294,7 +316,6 @@ def build_state(
         blocked_by.append("uploaded phase requires concept.md upload completion evidence")
 
     previous_revision = int((previous_state or {}).get("revision", 0) or 0)
-    series_rel = series_path.relative_to(repo_root).as_posix() if series_path.is_relative_to(repo_root) else str(series_path)
 
     return {
         "schema": "wavvy.state.v1",
@@ -328,7 +349,14 @@ def check_state(
     """Validate declared state against current filesystem evidence."""
     repo_root = repo_root.resolve()
     existing = state_payload if state_payload is not None else load_state(repo_root)
-    current = build_state(series_path, repo_root, phase=(existing or {}).get("phase"), previous_state=existing)
+    resolved_series = series_path.resolve()
+    requested_series = (
+        resolved_series.relative_to(repo_root).as_posix()
+        if resolved_series.is_relative_to(repo_root)
+        else str(resolved_series)
+    )
+    phase = (existing or {}).get("phase") if (existing or {}).get("active_series") in (None, requested_series) else None
+    current = build_state(series_path, repo_root, phase=phase, previous_state=existing)
     phase = current["phase"]
     artifacts = current["artifact_status"]
     concept_text = _read_text(series_path / "concept.md")

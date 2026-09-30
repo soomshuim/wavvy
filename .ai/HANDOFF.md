@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-09-30 21:17:28 +0900
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17:00 어쿠스틱 시리즈 concept와 01 「서랍」/02 「공강」 사용자 제공 소스를 정리하고 구 「올라가」 자료를 원본 그대로 보관했다. 목표 20곡은 리믹스 3곡(01/02/04)+신규 17곡(03/05–20)이며 04의 원곡·제목·STYLE·LYRICS는 미제공이다. 125 BPM 상한과 01의 `high-energy` 보완을 기록했다. 시리즈 전환 시 이전 state phase/next_action이 넘어가던 오류를 고쳐 revision 4 `track_source_draft`로 기록하고 테스트 23개·실제 state check PASS 및 격리 Astra CLEAN을 확인했다.
+Next-TODO: 없음 — 03 신규 곡 작업은 이번 기록과 분리하고, 04 리믹스의 구체 자료는 젠이 제공할 때 반영한다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-09-30 20:52:19
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex

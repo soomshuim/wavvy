@@ -128,6 +128,8 @@ python3 wavvy.py clean SERIES/[시리즈]
 python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 ```
 
+`state`는 같은 시리즈를 재개할 때 저장된 `phase`/`next_action`을 유지한다. 다른 시리즈를 지정하면 대상 `concept.md`와 산출물에서 다시 추론하며, 명시한 `--phase`와 `--if-match` revision 조건은 그대로 적용한다.
+
 ---
 
 ## 6. 영상 패키징 워크플로우

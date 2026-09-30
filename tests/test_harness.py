@@ -129,6 +129,15 @@ def make_series(root: Path, concept_text: str = CONCEPT_FINAL) -> Path:
     return series
 
 
+def make_draft_series(root: Path) -> Path:
+    series = root / "SERIES" / "17-00"
+    tracks = series / "input" / "tracks"
+    tracks.mkdir(parents=True)
+    (series / "concept.md").write_text("# Test Draft Series\n\n## Series Status\n\nTrack drafts in progress.\n", encoding="utf-8")
+    (tracks / "01__Draft.txt").write_text("draft lyrics\n", encoding="utf-8")
+    return series
+
+
 def make_lyric_skill_package(root: Path) -> None:
     skill_dir = root / "skills" / "wavvy-lyricist"
     references_dir = skill_dir / "references"
@@ -277,6 +286,80 @@ class HarnessTests(unittest.TestCase):
             self.assertIn("MASTER/cli/SPEC.md", state["authoritative_docs"])
             self.assertEqual(state["artifact_status"]["lyric_skill_package"], "present")
             self.assertIn("skills/wavvy-lyricist/SKILL.md", state["evidence_refs"])
+
+    def test_state_switch_infers_target_phase_action_and_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            uploaded = make_series(root, CONCEPT_UPLOADED)
+            draft = make_draft_series(root)
+            previous = build_state(uploaded, root)
+            previous["revision"] = 3
+            previous["next_action"] = "Review the 20-00 upload manually."
+
+            switched = build_state(draft, root, previous_state=previous)
+            self.assertEqual(switched["active_series"], "SERIES/17-00")
+            self.assertEqual(switched["phase"], "track_source_draft")
+            self.assertEqual(switched["inferred_phase"], "track_source_draft")
+            self.assertEqual(switched["next_action"], "Review existing track source drafts and follow the next source work in concept.md.")
+            self.assertEqual(switched["revision"], 3)
+            self.assertEqual(switched["artifact_status"]["txt_sources"], 1)
+            self.assertEqual(switched["artifact_status"]["youtube_upload"], "missing")
+            self.assertIn("SERIES/17-00/concept.md", switched["authoritative_docs"])
+            self.assertNotIn("SERIES/20-00/concept.md", switched["evidence_refs"])
+            self.assertEqual(switched["blocked_by"], [])
+
+            checked = check_state(draft, root, previous)
+            self.assertEqual(checked["state"]["phase"], "track_source_draft")
+            self.assertIn("state active_series differs from requested series", checked["warnings"])
+            self.assertEqual(checked["blockers"], [])
+
+    def test_state_resume_preserves_same_series_manual_phase_and_action(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = make_series(root)
+            previous = build_state(series, root)
+            previous["phase"] = "track_source_draft"
+            previous["next_action"] = "Compare the two chorus options manually."
+
+            resumed = build_state(series, root, previous_state=previous)
+            self.assertEqual(resumed["phase"], "track_source_draft")
+            self.assertEqual(resumed["inferred_phase"], "source_final")
+            self.assertEqual(resumed["next_action"], "Compare the two chorus options manually.")
+
+            (series / "concept.md").write_text(CONCEPT_UPLOADED, encoding="utf-8")
+            previous_uploaded = build_state(series, root)
+            previous_uploaded["next_action"] = "Review the published upload manually."
+            resumed_uploaded = build_state(series, root, previous_state=previous_uploaded)
+            self.assertEqual(resumed_uploaded["phase"], "uploaded")
+            self.assertEqual(resumed_uploaded["next_action"], "Review the published upload manually.")
+
+    def test_state_cli_explicit_phase_and_if_match_on_series_switch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            uploaded = make_series(root, CONCEPT_UPLOADED)
+            draft = make_draft_series(root)
+            state_path = root / ".ai" / "state.json"
+            state_path.parent.mkdir(parents=True)
+            previous = build_state(uploaded, root)
+            previous["revision"] = 3
+            state_path.write_text(json.dumps(previous), encoding="utf-8")
+
+            runner = CliRunner()
+            with patch("wavvy._resolve_repo_root", return_value=root):
+                written = runner.invoke(cli, ["state", str(draft), "--write", "--phase", "concept_draft", "--if-match", "3", "--json"])
+                self.assertEqual(written.exit_code, 0, written.output)
+                saved = json.loads(state_path.read_text(encoding="utf-8"))
+                self.assertEqual(saved["revision"], 4)
+                self.assertEqual(saved["active_series"], "SERIES/17-00")
+                self.assertEqual(saved["phase"], "concept_draft")
+                self.assertEqual(saved["inferred_phase"], "track_source_draft")
+                self.assertEqual(saved["next_action"], "Draft track sources from concept.md.")
+
+                before_rejected_write = state_path.read_bytes()
+                rejected = runner.invoke(cli, ["state", str(draft), "--write", "--if-match", "3", "--json"])
+                self.assertEqual(rejected.exit_code, 1, rejected.output)
+                self.assertIn("state revision mismatch", rejected.output)
+                self.assertEqual(state_path.read_bytes(), before_rejected_write)
 
     def test_lyrics_skill_package_gate_passes_static_contract(self):
         with tempfile.TemporaryDirectory() as tmp:

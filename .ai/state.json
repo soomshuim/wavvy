@@ -1,25 +1,37 @@
 {
   "schema": "wavvy.state.v1",
-  "revision": 3,
-  "updated_at": "2026-05-02T03:11:31",
-  "active_series": "SERIES/20-00",
-  "phase": "uploaded",
-  "inferred_phase": "uploaded",
-  "next_action": "No active blocker. Local final.mkv/upload.csv are disposable after upload and can be regenerated with pack if needed.",
+  "revision": 4,
+  "updated_at": "2026-09-30T21:13:43",
+  "active_series": "SERIES/17-00",
+  "phase": "track_source_draft",
+  "inferred_phase": "track_source_draft",
+  "next_action": "Review existing track source drafts and follow the next source work in concept.md.",
   "artifact_status": {
     "concept_md": "present",
-    "final_track_sources": "present",
-    "final_track_sources_count": 20,
-    "report_json": "present",
-    "report_tracks": 20,
-    "audio_files": 20,
-    "txt_sources": 0,
-    "final_mkv": "deleted_after_upload",
-    "upload_csv": "deleted_after_upload",
-    "subtitle_txt": "present",
-    "subtitle_srt": "present",
-    "youtube_metadata": "present",
-    "youtube_upload": "completed"
+    "final_track_sources": "missing",
+    "final_track_sources_count": 0,
+    "report_json": "missing",
+    "report_tracks": 0,
+    "audio_files": 0,
+    "available_audio_files": 0,
+    "audio_source": "missing",
+    "source_map": "missing",
+    "source_map_tracks": 0,
+    "source_map_audio_files": 0,
+    "source_map_missing": [],
+    "txt_sources": 2,
+    "final_mkv": "missing",
+    "upload_csv": "missing",
+    "subtitle_txt": "missing",
+    "subtitle_srt": "missing",
+    "youtube_metadata": "missing",
+    "youtube_upload": "missing",
+    "lyric_skill_package": "present",
+    "lyric_skill_files": {
+      "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",
+      "skills/wavvy-lyricist/SKILL.md": "present",
+      "skills/wavvy-lyricist/references/patterns.md": "present"
+    }
   },
   "authoritative_docs": [
     "MASTER/SSOT.md",
@@ -29,7 +41,20 @@
     "MASTER/cli/SPEC.md",
     "MASTER/youtube/YOUTUBE.md",
     "wavvy.md",
-    "SERIES/20-00/concept.md"
+    "SERIES/17-00/concept.md"
+  ],
+  "evidence_refs": [
+    "MASTER/SSOT.md",
+    "MASTER/ai/RUNTIME_RULES.md",
+    "MASTER/MANAGER.md",
+    "MASTER/WORKFLOWS.md",
+    "MASTER/cli/SPEC.md",
+    "MASTER/youtube/YOUTUBE.md",
+    "wavvy.md",
+    "SERIES/17-00/concept.md",
+    "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+    "skills/wavvy-lyricist/SKILL.md",
+    "skills/wavvy-lyricist/references/patterns.md"
   ],
   "blocked_by": []
 }
