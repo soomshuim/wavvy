@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from .state import check_state
+from .source import parse_track_source_fields
 
 LYRIC_SKILL_REQUIRED_FILES = {
     "skill": Path("skills/wavvy-lyricist/SKILL.md"),
@@ -25,6 +26,11 @@ LYRIC_CONTRACT_GATE_NAMES = (
     "Suno Format",
 )
 LYRIC_REVIEW_AXES = ("Expression", "Connection", "Emotional Flow")
+TRACK_PROMPT_STYLE_LIMIT = 900
+TRACK_PROMPT_EXCLUDE_LIMIT = 8
+KEY_MODE_RE = re.compile(r"(?<![A-Za-z])([A-G](?:#|b|♯|♭)?)\s+(Major|Minor)\b", re.IGNORECASE)
+STYLE_BPM_RE = re.compile(r"(?<!\d)(\d{1,3})\s*BPM\b", re.IGNORECASE)
+VOCAL_GENDER_RE = re.compile(r"(?<![A-Za-z])(female|male)(?![A-Za-z])|여성|남성", re.IGNORECASE)
 
 
 def _check(name: str, passed: bool, detail: str = "") -> dict[str, Any]:
@@ -51,6 +57,107 @@ def _read_text(path: Path) -> str:
         return path.read_text(encoding="utf-8")
     except FileNotFoundError:
         return ""
+
+
+def _vocal_gender(text: str) -> str:
+    match = VOCAL_GENDER_RE.search(text)
+    if not match:
+        return ""
+    return "female" if match.group().lower() in {"female", "여성"} else "male"
+
+
+def _key_mode(text: str) -> str:
+    match = KEY_MODE_RE.search(text)
+    if not match:
+        return ""
+    note = match.group(1).upper().replace("♯", "#").replace("♭", "B")
+    return f"{note} {match.group(2).lower()}"
+
+
+def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: Any, source_error: str) -> dict[str, Any]:
+    """Check one newly authored full-track txt source, without judging musical quality."""
+    checks: list[dict[str, Any]] = []
+    blockers: list[str] = []
+    tracks_dir = (series_path / "input" / "tracks").resolve()
+    artifact_ok = artifact_path is not None and artifact_path.is_file() and artifact_path.suffix.lower() == ".txt" and artifact_path.resolve().parent == tracks_dir
+    checks.append(_check("track_source_artifact", artifact_ok, str(artifact_path) if artifact_path else "--artifact is required"))
+    if not artifact_ok:
+        blockers.append("track-prompt requires --artifact pointing to one SERIES/[series]/input/tracks/*.txt source")
+
+    concept_path = series_path / "concept.md"
+    concept_ok = bool(_read_text(concept_path))
+    checks.append(_check("series_concept_present", concept_ok, str(concept_path)))
+    if not concept_ok:
+        blockers.append("series concept.md is required for a new full-track prompt")
+
+    parsed_ok = source is not None and not source_error
+    checks.append(_check("track_source_parsed", parsed_ok, source_error or "STYLE and LYRICS sections present"))
+    if not parsed_ok:
+        blockers.append(source_error or "track source could not be parsed")
+
+    if parsed_ok:
+        metadata = source.metadata
+        style = source.style
+        exclude = source.exclude
+        sections = source.sections
+
+        section_ok = all(name in sections for name in ("STYLE", "EXCLUDE", "LYRICS"))
+        checks.append(_check("track_source_sections", section_ok, "STYLE, EXCLUDE, LYRICS"))
+        if not section_ok:
+            blockers.append("full-track source requires STYLE, EXCLUDE, and LYRICS sections")
+
+        style_length = len(style)
+        length_ok = style_length <= TRACK_PROMPT_STYLE_LIMIT
+        checks.append(_check("style_character_limit", length_ok, f"{style_length}/{TRACK_PROMPT_STYLE_LIMIT} Unicode characters including internal whitespace"))
+        if not length_ok:
+            blockers.append(f"STYLE has {style_length} characters including whitespace; limit is {TRACK_PROMPT_STYLE_LIMIT}")
+
+        exclude_lines = [line.strip() for line in exclude.splitlines() if line.strip()]
+        exclude_terms = [term.strip() for line in exclude_lines for term in re.split(r"[,;]", line) if term.strip()]
+        exclude_ok = len(exclude_terms) <= TRACK_PROMPT_EXCLUDE_LIMIT
+        checks.append(_check("exclude_budget", exclude_ok, f"{len(exclude_terms)}/{TRACK_PROMPT_EXCLUDE_LIMIT} terms"))
+        if not exclude_ok:
+            blockers.append(f"EXCLUDE has {len(exclude_terms)} terms; maximum is {TRACK_PROMPT_EXCLUDE_LIMIT}")
+
+        bpm_text = metadata.get("BPM", "")
+        bpm_match = re.match(r"^\s*(\d{1,3})\b", bpm_text)
+        bpm = int(bpm_match.group(1)) if bpm_match else None
+        style_bpms = {int(match.group(1)) for match in STYLE_BPM_RE.finditer(style)}
+        bpm_ok = bpm is not None and bpm > 0 and style_bpms == {bpm}
+        checks.append(_check("bpm_metadata_matches_style", bpm_ok, f"metadata={bpm_text or '<missing>'}; STYLE={sorted(style_bpms)}"))
+        if not bpm_ok:
+            blockers.append("BPM must start with a number in the txt header and match the numeric BPM in STYLE")
+
+        key_text = metadata.get("Key", "")
+        key = _key_mode(key_text) if KEY_MODE_RE.match(key_text.strip()) else ""
+        style_keys = {_key_mode(match.group()) for match in KEY_MODE_RE.finditer(style)}
+        key_ok = bool(key) and style_keys == {key}
+        checks.append(_check("key_metadata_matches_style", key_ok, f"metadata={key_text or '<missing>'}; STYLE={sorted(style_keys)}"))
+        if not key_ok:
+            blockers.append("Key must name a note and Major/Minor in the txt header and match STYLE")
+
+        vocal_text = metadata.get("Vocal", "")
+        vocal_gender = "" if re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE) else _vocal_gender(vocal_text)
+        style_genders = {_vocal_gender(match.group()) for match in VOCAL_GENDER_RE.finditer(style)}
+        gender_ok = bool(vocal_gender) and style_genders == {vocal_gender}
+        checks.append(_check("vocal_gender_metadata_matches_style", gender_ok, f"metadata={vocal_text or '<missing>'}; STYLE={sorted(style_genders)}"))
+        if not gender_ok:
+            blockers.append("Vocal must name male/female or 남성/여성 in the txt header and match STYLE")
+
+    return {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "FAIL" if blockers else "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED" if not blockers else "PROMPT_CONTRACT_INVALID",
+        "series": str(series_path),
+        "artifact": str(artifact_path) if artifact_path else "",
+        "source_sha256": source.sha256 if parsed_ok else "",
+        "checks": checks,
+        "warnings": [],
+        "blockers": blockers,
+        "evidence_refs": [str(artifact_path)] if artifact_path else [],
+    }
 
 
 def _token_count(text: str, token: str) -> int:
@@ -191,6 +298,104 @@ def _review_record_checks(
     return checks, blockers, decisions, actual_hash
 
 
+def _full_song_draft_checks(
+    repo_root: Path,
+    series_path: Path | None,
+    constraint_freeze: str,
+    draft: str,
+) -> tuple[list[dict[str, Any]], list[str], float | None]:
+    """Check a declared full-song plan and bind its Draft to the track txt."""
+    checks: list[dict[str, Any]] = []
+    blockers: list[str] = []
+
+    target_entries = _field_lines(constraint_freeze, "target_duration_seconds")
+    target_text = target_entries[0] if len(target_entries) == 1 else ""
+    target = int(target_text) if re.fullmatch(r"[1-9]\d*", target_text) else None
+    checks.append(_check("full_song_target_duration", target is not None, f"target_seconds={target_text or '<missing>'}"))
+    if target is None:
+        blockers.append("full-song draft requires one positive numeric target_duration_seconds")
+
+    bpm_entries = _field_lines(constraint_freeze, "bpm")
+    bpm_text = bpm_entries[0] if len(bpm_entries) == 1 else ""
+    bpm_match = re.match(r"^([1-9]\d{0,2})\b", bpm_text)
+    bpm = int(bpm_match.group(1)) if bpm_match else None
+    checks.append(_check("full_song_numeric_bpm", bpm is not None, f"bpm={bpm_text or '<missing>'}"))
+    if bpm is None:
+        blockers.append("full-song duration estimate requires one numeric bpm field")
+
+    meter_entries = _field_lines(constraint_freeze, "meter")
+    meter_text = meter_entries[0] if len(meter_entries) == 1 else ""
+    meter_match = re.fullmatch(r"([1-9]\d?)/(2|4|8|16)", meter_text)
+    quarter_beats_per_bar = int(meter_match.group(1)) * 4 / int(meter_match.group(2)) if meter_match else None
+    checks.append(_check("full_song_meter", meter_match is not None, f"meter={meter_text or '<missing>'}; quarter-note BPM assumed"))
+    if meter_match is None:
+        blockers.append("full-song draft requires one meter such as 4/4; estimate assumes quarter-note BPM")
+
+    bars_entries = _field_lines(constraint_freeze, "section_bars")
+    bars_text = bars_entries[0] if len(bars_entries) == 1 else ""
+    bar_parts = [part.strip() for part in bars_text.split(";")] if bars_text else []
+    parsed_bars: list[tuple[str, int]] = []
+    for part in bar_parts:
+        match = re.fullmatch(r"([^=;]+?)\s*=\s*([1-9]\d*)", part)
+        if match:
+            parsed_bars.append((re.sub(r"\s+", " ", match.group(1).strip()).casefold(), int(match.group(2))))
+    draft_tags = [re.sub(r"\s+", " ", tag.strip()).casefold() for tag in re.findall(r"(?m)^\s*\[([^\]]+)\]\s*$", draft)]
+    plan_tags = [label for label, _ in parsed_bars]
+    bars_ok = bool(parsed_bars) and len(parsed_bars) == len(bar_parts) and plan_tags == draft_tags
+    checks.append(_check("full_song_section_bars_match_draft", bars_ok, f"plan={plan_tags}; Draft={draft_tags}; bars={sum(bars for _, bars in parsed_bars)}"))
+    if not bars_ok:
+        blockers.append("section_bars must list positive bars for every Draft section tag in the same order")
+
+    exception_entries = _field_lines(constraint_freeze, "intro_outro_exception")
+    exception_parts = [part.strip() for part in exception_entries[0].split("|", 1)] if len(exception_entries) == 1 else []
+    exception_names = {item.strip().casefold() for item in exception_parts[0].split(",")} if len(exception_parts) == 2 else set()
+    exception_ok = not exception_entries or (len(exception_parts) == 2 and bool(exception_names) and exception_names <= {"intro", "outro"} and bool(exception_parts[1]) and exception_parts[1].casefold() not in {"unknown", "none", "tbd", "미정"})
+    checks.append(_check("full_song_intro_outro_exception", exception_ok, exception_entries[0] if exception_entries else "none"))
+    if not exception_ok:
+        blockers.append("intro_outro_exception must name Intro and/or Outro with a user/series reason")
+    intro_outro_ok = bool(draft_tags) and (draft_tags[0] == "intro" or "intro" in exception_names) and (draft_tags[-1] == "outro" or "outro" in exception_names)
+    checks.append(_check("full_song_intro_outro_tags", intro_outro_ok, "[Intro] first and [Outro] last unless an explicit exception is recorded"))
+    if not intro_outro_ok:
+        blockers.append("full-song Draft must open with [Intro] and close with [Outro], or record an intro_outro_exception")
+
+    estimate = sum(bars for _, bars in parsed_bars) * quarter_beats_per_bar * 60 / bpm if bars_ok and quarter_beats_per_bar and bpm else None
+    duration_ok = estimate is not None and target is not None and estimate >= target
+    checks.append(_check("full_song_planned_duration", duration_ok, f"estimated_seconds={round(estimate, 1) if estimate is not None else '<unavailable>'}; target_seconds={target if target is not None else '<missing>'}; planned bars only, not measured audio"))
+    if not duration_ok:
+        blockers.append("full-song planned bar duration is missing or below the target; generated audio length still needs listening/measurement")
+
+    source_entries = _field_lines(constraint_freeze, "track_source")
+    source_text = source_entries[0] if len(source_entries) == 1 else ""
+    source_path = (repo_root / source_text).resolve() if source_text and not Path(source_text).is_absolute() else Path(source_text).resolve() if source_text else None
+    expected_tracks_dir = (series_path / "input" / "tracks").resolve() if series_path else None
+    source_path_ok = source_path is not None and source_path.is_file() and source_path.suffix.lower() == ".txt" and (source_path.parent == expected_tracks_dir if expected_tracks_dir else source_path.parent.name == "tracks" and source_path.parent.parent.name == "input" and source_path.is_relative_to(repo_root))
+    source_lyrics = ""
+    source_bpm: int | None = None
+    source_error = ""
+    if source_path_ok:
+        try:
+            source_content = source_path.read_text(encoding="utf-8")
+            source_metadata, source_sections = parse_track_source_fields(source_content)
+            source_lyrics = source_sections.get("LYRICS", "")
+            source_bpm_match = re.match(r"^([1-9]\d{0,2})\b", source_metadata.get("BPM", ""))
+            source_bpm = int(source_bpm_match.group(1)) if source_bpm_match else None
+        except (OSError, UnicodeError, ValueError) as error:
+            source_path_ok = False
+            source_error = str(error)
+    source_matches = source_path_ok and bool(source_lyrics) and source_lyrics == draft.strip()
+    checks.append(_check("full_song_track_source_matches_draft", source_matches, f"source={source_text or '<missing>'}; source_sha256={hashlib.sha256(source_lyrics.encode('utf-8')).hexdigest() if source_lyrics else '<unavailable>'}; error={source_error or 'none'}"))
+    if not source_matches:
+        source_error_suffix = f": {source_error}" if source_error else ""
+        blockers.append(f"full-song track_source must point to this series' txt and its LYRICS body must exactly match Draft{source_error_suffix}")
+
+    bpm_matches_source = source_matches and bpm is not None and source_bpm == bpm
+    checks.append(_check("full_song_bpm_matches_track_source", bpm_matches_source, f"artifact_bpm={bpm}; txt_bpm={source_bpm}"))
+    if not bpm_matches_source:
+        blockers.append("full-song bpm must match the bound track txt BPM header")
+
+    return checks, blockers, round(estimate, 1) if estimate is not None else None
+
+
 def _lyric_package_checks(repo_root: Path) -> tuple[list[dict[str, Any]], list[str], list[str]]:
     checks: list[dict[str, Any]] = []
     blockers: list[str] = []
@@ -255,7 +460,10 @@ def _lyric_package_checks(repo_root: Path) -> tuple[list[dict[str, Any]], list[s
 def _lyric_artifact_checks(
     artifact_path: Path,
     requested_mode: str | None,
-) -> tuple[list[dict[str, Any]], list[str], list[str], list[str], str]:
+    requested_draft_scope: str | None,
+    repo_root: Path,
+    series_path: Path | None,
+) -> tuple[list[dict[str, Any]], list[str], list[str], list[str], str, str, float | None]:
     checks: list[dict[str, Any]] = []
     blockers: list[str] = []
     user_decisions: list[str] = []
@@ -279,6 +487,22 @@ def _lyric_artifact_checks(
     constraint_freeze = _extract_section(text, "Constraint Freeze")
     draft = _extract_section(text, "Draft")
     self_gate = _extract_section(text, "Self-Gate")
+    scope_entries = _field_lines(constraint_freeze, "draft_scope")
+    draft_scope = scope_entries[0] if len(scope_entries) == 1 else "UNSPECIFIED"
+    estimate: float | None = None
+    if mode == "full-lyric-draft":
+        scope_ok = len(scope_entries) <= 1 and draft_scope in {"full-song", "excerpt", "UNSPECIFIED"}
+        if requested_draft_scope is not None:
+            scope_ok = scope_ok and draft_scope == requested_draft_scope
+        checks.append(_check("full_lyric_draft_scope", scope_ok, f"declared={draft_scope}; requested={requested_draft_scope or '<none>'}"))
+        if not scope_ok:
+            blockers.append("full-lyric-draft draft_scope must be full-song or excerpt and match --draft-scope when requested")
+        if draft_scope == "full-song" and scope_ok:
+            song_checks, song_blockers, estimate = _full_song_draft_checks(repo_root, series_path, constraint_freeze, draft)
+            checks.extend(song_checks)
+            blockers.extend(song_blockers)
+    elif requested_draft_scope is not None:
+        blockers.append("--draft-scope applies only to full-lyric-draft")
 
     if mode == "suno-prompt-only":
         korean_lines = _korean_lyric_lines(draft)
@@ -336,7 +560,7 @@ def _lyric_artifact_checks(
         elif user_decisions or blockers:
             blockers.append("review-only PASS Verdict conflicts with review evidence status")
 
-    return checks, blockers, user_decisions, evidence_refs, actual_hash
+    return checks, blockers, user_decisions, evidence_refs, actual_hash, draft_scope if mode == "full-lyric-draft" else "NOT_APPLICABLE", estimate
 
 
 def run_lyrics_skill_gate(
@@ -344,6 +568,7 @@ def run_lyrics_skill_gate(
     series_path: Path | None = None,
     artifact_path: Path | None = None,
     mode: str | None = None,
+    draft_scope: str | None = None,
 ) -> dict[str, Any]:
     """Validate the Wavvy lyric skill package and optional lyric artifact."""
     repo_root = repo_root.resolve()
@@ -351,6 +576,8 @@ def run_lyrics_skill_gate(
     warnings: list[str] = []
     user_decisions: list[str] = []
     actual_hash = ""
+    actual_draft_scope = "NOT_APPLICABLE"
+    duration_estimate_seconds: float | None = None
     effective_mode = mode or (_infer_artifact_mode(_read_text(artifact_path))[0] if artifact_path else None)
 
     if series_path is not None:
@@ -362,14 +589,19 @@ def run_lyrics_skill_gate(
             blockers.append("series concept.md is required when a series path is supplied")
 
     if artifact_path is not None:
-        artifact_checks, artifact_blockers, artifact_decisions, artifact_refs, actual_hash = _lyric_artifact_checks(
+        artifact_checks, artifact_blockers, artifact_decisions, artifact_refs, actual_hash, actual_draft_scope, duration_estimate_seconds = _lyric_artifact_checks(
             artifact_path,
             mode,
+            draft_scope,
+            repo_root,
+            series_path,
         )
         checks.extend(artifact_checks)
         blockers.extend(artifact_blockers)
         user_decisions.extend(artifact_decisions)
         evidence_refs.extend(artifact_refs)
+    elif draft_scope is not None:
+        blockers.append("--draft-scope requires --artifact")
 
     result = "FAIL" if blockers else ("USER_DECISION" if user_decisions else "PASS")
     if artifact_path is None:
@@ -379,13 +611,16 @@ def run_lyrics_skill_gate(
     elif result == "USER_DECISION":
         quality_status = "RECORD_ON_HOLD"
     else:
-        quality_status = "PROMPT_INPUT_CHECKED" if effective_mode == "suno-prompt-only" else "REVIEW_RECORD_CHECKED"
+        quality_status = "PROMPT_INPUT_CHECKED" if effective_mode == "suno-prompt-only" else ("REVIEW_RECORD_CHECKED_SCOPE_UNSPECIFIED" if actual_draft_scope == "UNSPECIFIED" else "REVIEW_RECORD_CHECKED")
     return {
         "schema": "wavvy.lyrics_skill_gate.v1",
         "stage": "lyrics-review",
         "result": result,
         "scope": "ARTIFACT_RECORD" if artifact_path else "PACKAGE_ONLY",
         "quality_status": quality_status,
+        "draft_scope": actual_draft_scope,
+        "full_song_ready": result == "PASS" and actual_draft_scope == "full-song",
+        "planned_duration_estimate_seconds": duration_estimate_seconds,
         "reviewed_source_sha256": actual_hash,
         "series": str(series_path) if series_path else "",
         "artifact": str(artifact_path) if artifact_path else "",
@@ -427,14 +662,20 @@ def run_gate(
     validation: dict[str, Any],
     lyric_artifact: Path | None = None,
     lyric_mode: str | None = None,
+    track_source: Any = None,
+    track_source_error: str = "",
+    lyric_draft_scope: str | None = None,
 ) -> dict[str, Any]:
     """Run a stage-specific gate."""
     stage = stage.replace("_", "-")
-    if stage not in {"source-final", "render-final", "upload-ready", "uploaded", "lyrics-review"}:
+    if stage not in {"source-final", "render-final", "upload-ready", "uploaded", "lyrics-review", "track-prompt"}:
         raise ValueError(f"unknown stage: {stage}")
 
+    if stage == "track-prompt":
+        return _track_prompt_gate(series_path, lyric_artifact, track_source, track_source_error)
+
     if stage == "lyrics-review":
-        payload = run_lyrics_skill_gate(repo_root, series_path, lyric_artifact, lyric_mode)
+        payload = run_lyrics_skill_gate(repo_root, series_path, lyric_artifact, lyric_mode, lyric_draft_scope)
         if lyric_artifact is None:
             payload["result"] = "FAIL"
             payload["blockers"].append("lyrics-review requires --artifact; package installation alone does not review a lyric")

@@ -133,6 +133,10 @@ Include all fields that are known:
 
 Unknown fields should be marked `unknown`, not guessed.
 
+If the task also produces Style/Exclude or a song package, route prompt decisions to `MASTER/style/STYLE.md` and `MASTER/roles/ROLES.md`. For a new-song proposal, choose and label vocal gender, key, and numeric BPM as proposals within the series direction instead of leaving the requested creative choices unknown. Preserve unknown facts in existing user-provided sources and review-only work; lyric-only tasks need no Style proposal. Present proposed vocal gender, key, and BPM in a short Korean line before a new song's English Style. Run `python3 wavvy.py gate SERIES/[series] --stage track-prompt --artifact SERIES/[series]/input/tracks/[track].txt --json` for the prompt source; lyric review PASS does not cover this check.
+
+For a newly requested complete song, set `draft_scope: full-song` in `Constraint Freeze` and include `target_duration_seconds`, `meter`, ordered `section_bars`, and `track_source` (the corresponding txt path). Estimate duration from BPM and section bars and include Intro/Outro by default, with an explicit track exception when needed. The plan does not equate lyric lines to fixed bars or guarantee generated length. Do not impose a word-count floor, scene count, or repeated filler. A missing scope in an older artifact remains unspecified; excerpts, review-only, prompt-only, and user-provided original sources do not inherit this new requirement. Validate with `python3 wavvy.py lyrics-skill SERIES/[series] --artifact FILE --mode full-lyric-draft --draft-scope full-song --json`; the gate also compares the artifact Draft to the txt LYRICS body.
+
 ## Lyric Strategy Fields
 
 For drafts and rewrites, state the useful choices for this track; do not invent a hook or plot to fill a field:

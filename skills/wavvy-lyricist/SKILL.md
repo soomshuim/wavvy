@@ -20,6 +20,10 @@ Read in this order before drafting:
 
 Local Wavvy docs override external trend evidence. Per-series overrides are valid only when explicitly written in the series concept.
 
+When a lyric task also asks for Style/Exclude or a complete song package, read `MASTER/style/STYLE.md` and `MASTER/roles/ROLES.md` and apply their prompt rules separately. For a new-song draft, propose vocal gender, key, and numeric BPM within the series direction and label these choices as proposed until the user confirms them. An unknown input is not a reason to leave a requested creative proposal blank; preserve unknown facts for existing user-provided sources and review-only work. Lyric-only tasks do not require a Style proposal. When presenting a new song package, show a short Korean line with proposed vocal gender, key, and BPM before the English Style. Validate its txt with `python3 wavvy.py gate SERIES/[series] --stage track-prompt --artifact SERIES/[series]/input/tracks/[track].txt --json`; lyric review PASS does not substitute for this prompt check.
+
+For a newly requested full song, read `MASTER/lyrics/LYRICS.md` §1.6 and put `draft_scope: full-song`, `target_duration_seconds`, `meter`, ordered `section_bars`, and `track_source` in `Constraint Freeze`. Plan an Intro and Outro unless an explicit song-specific exception applies. Use BPM and section bars to estimate duration; bars are arrangement choices, not a fixed number per lyric line or a promise about generated audio. Write enough connected lyric for the song without word-count floors, scene quotas, or filler repetition. Excerpts, review-only work, prompt-only work, and transcription of a user-provided source are outside this full-song planning requirement. Check the full-song artifact with `python3 wavvy.py lyrics-skill SERIES/[series] --artifact FILE --mode full-lyric-draft --draft-scope full-song --json` and the actual txt with the separate prompt gate when Style is included.
+
 ## Hard Rules
 
 - Korean lyric channel: full lyric drafts should be Korean unless a series concept explicitly permits code-switching.

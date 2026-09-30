@@ -13,8 +13,9 @@
 
 ### 절차
 1. **txt 파일 먼저 생성** → `SERIES/[시리즈]/input/tracks/{N}_{제목}.txt`
-2. 유저에게 제시 → **PASS 컨펌 받기**
-3. PASS 후에만 concept.md 반영
+2. 새로 쓴 전체 트랙 프롬프트라면 `python3 wavvy.py gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/{N}_{제목}.txt --json`으로 실제 txt를 검사한다.
+3. 유저에게 제시 → **PASS 컨펌 받기**
+4. PASS 후에만 concept.md 반영
 
 ### 금지
 - ❌ txt 없이 바로 concept.md 수정
@@ -77,7 +78,10 @@ python3 wavvy.py finalize-upload SERIES/[시리즈]
 ### 절차
 1. `concept.md` + `LYRICS_DNA.md`(있으면) 참조 — 시리즈 톤/방향 확인
 2. Style + Exclude + Lyric Prompt(또는 비움) 작성 → txt 저장
-3. 사용자 컨펌 → Suno 제출
+3. 새 전체 트랙 초안이면 txt에 제안 BPM·Key/Mode·보컬 성별을 명시하고 `gate --stage track-prompt --artifact <txt>` 검사. 이 게이트의 PASS는 STYLE/EXCLUDE 예산과 필드·파일 형식이 맞는다는 뜻이다. 가사 표현, 실제 음원 길이, 생성 품질을 인증하지 않는다. 기존 사용자 제공 리믹스 원문에는 이 새 초안 게이트를 소급 적용하지 않는다.
+4. 전체곡 가사를 새로 쓰면 가사 검토 기록에 `draft_scope: full-song`, 목표 초, 박자표, 구간별 마디 계획, 트랙 txt 경로를 적는다. `gate --stage lyrics-review --artifact <review.md> --mode full-lyric-draft --draft-scope full-song`으로 실제 txt의 LYRICS 본문과 계획을 확인한다. 계산한 길이는 BPM/마디 계획에 따른 추정치다. Suno에서 생성한 음원의 실제 길이는 별도로 재생·측정한다.
+5. 가사 일부(`draft_scope: excerpt`), 기존 가사 검토(`review-only`), Suno prompt-only에는 전체곡 길이 계획을 강제하지 않는다.
+6. 사용자 컨펌 → Suno 제출
 
 > Lyric Prompt 3가지 모드: Empty(비움), Prompt(mood/theme 힌트), Structure(구조 태그만). 상세는 LYRICS.md §1 참조.
 

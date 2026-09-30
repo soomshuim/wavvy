@@ -1,12 +1,24 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-09-30 22:27:04 +0900
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17:00 03 「너와」를 Intro 포함 67행 완곡 초안으로 확장했다. 제안 메타는 남성 중저음·G Major·106 BPM, STYLE 822자/EXCLUDE 6개, 약 3:20 목표다. 4/4·92마디는 약 208.3초의 편곡 추정이며 실제 생성 길이가 아니다. 현재 가사 SHA-256 3e2f035302e55f840b1ae93f6ce47514e6034d43c760c6dd11d2393c9d971896. 이전 독립 검토의 중복 LYRICS와 중복 BPM High는 공통 `parse_track_source_fields`에서 헤더 메타와 구역을 함께 읽고, 대소문자·공백 변형을 포함한 중복을 거부해 해결했다. 중복 BPM 106/125는 track-prompt·lyrics-review·아카이브 모두 거부한다. 실제 03 두 gate와 lyric-skill PASS, 01/02/04 파싱 성공, 33 tests·py_compile·diffcheck PASS. 최종 fresh 격리 검토 `shared_parser_review`는 Critical/High 0·원칙 관찰 0으로 CLEAN. 이전 55행 초안의 CLEAN을 현 본문에 승계한 것은 아니다. 04 제공 원문은 불변.
+Evidence: /tmp/wavvy-prompt-gate-{track03.json,lyrics03.json,skill03.json,unittest.log,pycompile.log,diffcheck.log,duplicate-regression.log,duplicate-header-regression.log,remix-parse.log}
+Next-TODO: 03 가사·제안 프롬프트의 젠 검토와 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인이 남는다. 텍스트 검사와 마디 계산은 생성 음원을 보증하지 않는다.
+Resume-Trigger: -wavvy
+Commits: pending integrated review and commit
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-09-30 21:42:22 +0900
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 17:00 03 「너와」 신규 가사 초안·제안 STYLE/EXCLUDE와 04 「낮꿈 (Accoustic Version)」 사용자 제공 원문을 txt에 저장하고 concept/plan을 현행화했다. 03 lyric artifact SHA-256 e6ea4c559b05b4dc4471f5b13a4d6ad92310667f684fe0b311da2785e0968886, skill gate PASS 및 격리 Astra CLEAN(부모 전달). 04는 원문 보존이며 품질 PASS가 아니다. state revision 5는 17-00 track_source_draft, txt 4개, 최종 소스·음원 없음.
+Summary: 과거 55행 초안 이력(위 확장본으로 교체). 당시 17:00 03 「너와」 가사와 106 BPM·G Major·따뜻한 중저음 남성 보컬 제안(STYLE 853자/EXCLUDE 8개), 04 「낮꿈 (Accoustic Version)」 사용자 제공 원문을 txt에 저장했다. 당시 03 가사 SHA-256 e6ea4c559b05b4dc4471f5b13a4d6ad92310667f684fe0b311da2785e0968886, 해당 본문에 한해 skill gate PASS 및 격리 Astra CLEAN. 04 원문 보존은 품질 PASS가 아니다. state revision 5는 track_source_draft, txt 4개, 최종 소스·음원 없음.
 Next-TODO: 젠의 03 가사·제안 프롬프트 검토가 남아 있다. 04 실제 음원/BPM/키는 자료가 들어오면 확인한다. 05–20은 젠과 신규 제작한다.
 Resume-Trigger: -wavvy
-Commits: (이번 커밋)
+Commits: 2ec4ada
 ---
 
 ---

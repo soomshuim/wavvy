@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 
-from wavvy import ProjectPaths, TrackInfo, cli, generate_report, validate_project
+from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, cli, generate_report, parse_track_source, validate_project
 from wavvy_harness.doctor import run_ssot_hygiene
 from wavvy_harness.gate import run_gate, run_lyrics_skill_gate
 from wavvy_harness.state import build_state, check_state
@@ -182,7 +182,7 @@ For review-only:
     )
 
 
-def write_full_lyric_artifact(path: Path, draft: str, self_gate_extra: str = "") -> None:
+def write_full_lyric_artifact(path: Path, draft: str, self_gate_extra: str = "", constraint_extra: str = "", bpm: int = 104) -> None:
     body = draft.strip()
     body_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
     quote = next((line.strip() for line in body.splitlines() if line.strip() and not line.startswith("[")), "")
@@ -196,7 +196,7 @@ Constraint Freeze
 - track: 01
 - mode: full-lyric-draft
 - genre_lane: Pop/R&B
-- bpm: 104
+- bpm: {bpm}
 - key: unknown
 - mood: bright
 - vocal_identity: single lead, chest-dominant
@@ -204,6 +204,7 @@ Constraint Freeze
 - time_activity_policy: topic is optional
 - explicit_overrides: none
 - copyright_boundary: no copied, translated, closely paraphrased material
+{constraint_extra}
 
 Lyric Strategy
 - narrator: first person
@@ -228,6 +229,15 @@ Self-Gate
 - Suno Format: PASS | full lyric draft mode
 {self_gate_extra}
 """,
+        encoding="utf-8",
+    )
+
+
+def write_track_prompt_source(path: Path, style: str, exclude: str = "choir, doubled vocals", bpm: str = "106", key: str = "G Major", vocal: str = "warm male lead", lyrics: str = "[Verse]\n오늘은 웃었어") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        f"Track: 너와\nBPM: {bpm}\nKey: {key}\nVocal: {vocal}\n\n"
+        f"=== STYLE ===\n{style}\n\n=== EXCLUDE ===\n{exclude}\n\n=== LYRICS ===\n{lyrics}\n",
         encoding="utf-8",
     )
 
@@ -392,7 +402,7 @@ class HarnessTests(unittest.TestCase):
             result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft")
 
             self.assertEqual(result["result"], "PASS", result)
-            self.assertEqual(result["quality_status"], "REVIEW_RECORD_CHECKED")
+            self.assertEqual(result["quality_status"], "REVIEW_RECORD_CHECKED_SCOPE_UNSPECIFIED")
             self.assertNotIn("object_space_phenomenon_images_minimum", {check["name"] for check in result["checks"]})
 
     def test_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash(self):
@@ -576,6 +586,265 @@ Self-Gate
             self.assertEqual(payload["schema"], "wavvy.lyrics_skill_gate.v1")
             self.assertEqual(payload["result"], "PASS")
             self.assertEqual(payload["mode"], "review-only")
+
+    def test_full_song_lyric_gate_checks_plan_and_bound_txt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            source.parent.mkdir(parents=True)
+            draft = "[Intro]\n[Verse 1]\n오늘 너와 웃었어\n[Chorus]\n괜찮다고 말했어\n[Verse 2]\n또 얘기했어\n[Chorus]\n괜찮다고 말했어\n[Bridge]\n조금 더 걸었어\n[Final Chorus]\n너와 웃었어\n[Outro]"
+            source.write_text(f"Track: 너와\nBPM: 106 (proposed)\n\n=== STYLE ===\nAcoustic neo-soul\n\n=== EXCLUDE ===\n\n=== LYRICS ===\n{draft}\n", encoding="utf-8")
+            artifact = root / "draft.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse 1=16; Chorus=8; Verse 2=16; Chorus=8; Bridge=8; Final Chorus=24; Outro=8\n- track_source: SERIES/17-00/input/tracks/03_너와.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+
+            runner = CliRunner()
+            with patch("wavvy.git_repo_root", return_value=root), patch("wavvy.validate_project", side_effect=AssertionError("lyric review must not run media validation")):
+                command = [str(series), "--artifact", str(artifact), "--mode", "full-lyric-draft", "--draft-scope", "full-song", "--json"]
+                skill = runner.invoke(cli, ["lyrics-skill", *command])
+                gate = runner.invoke(cli, ["gate", str(series), "--stage", "lyrics-review", *command[1:]])
+
+            self.assertEqual(skill.exit_code, 0, skill.output)
+            self.assertEqual(gate.exit_code, 0, gate.output)
+            payload = json.loads(gate.output)
+            self.assertEqual(payload["draft_scope"], "full-song")
+            self.assertTrue(payload["full_song_ready"])
+            self.assertGreaterEqual(payload["planned_duration_estimate_seconds"], 200)
+            self.assertIn("not measured audio", str(payload["checks"]))
+
+            source.write_text(source.read_text(encoding="utf-8").replace("BPM: 106", "BPM: 125"), encoding="utf-8")
+            mismatch = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(mismatch["result"], "FAIL")
+            self.assertEqual({c["name"]: c["status"] for c in mismatch["checks"]}["full_song_bpm_matches_track_source"], "FAIL")
+
+    def test_full_song_scope_does_not_silently_pass_without_plan(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            artifact = root / "draft.md"
+            draft = "[Verse]\n오늘은 조금 쉬고 싶어"
+            write_full_lyric_artifact(artifact, draft)
+            legacy = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft")
+            self.assertEqual(legacy["result"], "PASS")
+            self.assertEqual(legacy["draft_scope"], "UNSPECIFIED")
+            self.assertFalse(legacy["full_song_ready"])
+            self.assertEqual(legacy["quality_status"], "REVIEW_RECORD_CHECKED_SCOPE_UNSPECIFIED")
+
+            required = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft", draft_scope="full-song")
+            self.assertEqual(required["result"], "FAIL")
+            self.assertEqual({c["name"]: c["status"] for c in required["checks"]}["full_lyric_draft_scope"], "FAIL")
+
+            write_full_lyric_artifact(artifact, draft, constraint_extra="- draft_scope: excerpt")
+            excerpt = run_lyrics_skill_gate(root, artifact_path=artifact, mode="full-lyric-draft", draft_scope="excerpt")
+            self.assertEqual(excerpt["result"], "PASS")
+            self.assertFalse(excerpt["full_song_ready"])
+
+    def test_full_song_gate_rejects_missing_intro_short_plan_and_source_drift(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            source.parent.mkdir(parents=True)
+            draft = "[Verse]\n오늘은 조금 쉬고 싶어\n[Outro]"
+            source.write_text(f"BPM: 106\n=== STYLE ===\nA\n=== EXCLUDE ===\n\n=== LYRICS ===\n{draft}\n", encoding="utf-8")
+            artifact = root / "draft.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Verse=16; Outro=4\n- track_source: SERIES/17-00/input/tracks/03_너와.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            failed = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            failures = {check["name"] for check in failed["checks"] if check["status"] == "FAIL"}
+            self.assertIn("full_song_intro_outro_tags", failures)
+            self.assertIn("full_song_planned_duration", failures)
+
+            source.write_text(source.read_text(encoding="utf-8").replace("오늘은 조금 쉬고 싶어", "오늘은 조금 걷고 싶어"), encoding="utf-8")
+            drift = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual({check["name"]: check["status"] for check in drift["checks"]}["full_song_track_source_matches_draft"], "FAIL")
+
+            source.write_text(source.read_text(encoding="utf-8").replace("오늘은 조금 걷고 싶어", "오늘은 조금 쉬고 싶어"), encoding="utf-8")
+            fields += "\n- intro_outro_exception: Intro | user requested a direct verse opening"
+            fields = fields.replace("Verse=16; Outro=4", "Verse=88; Outro=4")
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            excepted = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(excepted["result"], "PASS", excepted)
+
+    def test_duplicate_track_source_sections_fail_both_prompt_and_lyric_gates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            draft = "[Intro]\n[Verse]\n오늘은 웃었어\n[Outro]"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct.", lyrics=draft)
+            original = source.read_text(encoding="utf-8")
+            artifact = root / "draft.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse=88; Outro=4\n- track_source: SERIES/17-00/input/tracks/03_너와.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            runner = CliRunner()
+            prompt_command = ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"]
+
+            with patch("wavvy.git_repo_root", return_value=root):
+                self.assertEqual(run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")["result"], "PASS")
+                self.assertEqual(runner.invoke(cli, prompt_command).exit_code, 0)
+                for duplicate in ("=== LYRICS ===\n[Verse]\n갑자기 다른 가사야\n", "=== STYLE ===\nA different style\n"):
+                    with self.subTest(duplicate=duplicate.splitlines()[0]):
+                        source.write_text(original + "\n" + duplicate, encoding="utf-8")
+                        lyric_result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+                        self.assertEqual(lyric_result["result"], "FAIL")
+                        self.assertFalse(lyric_result["full_song_ready"])
+                        self.assertIn("duplicate ===", str(lyric_result["blockers"]))
+                        prompt_result = runner.invoke(cli, prompt_command)
+                        self.assertEqual(prompt_result.exit_code, 1, prompt_result.output)
+                        self.assertIn("duplicate ===", str(json.loads(prompt_result.output)["blockers"]))
+                        with self.assertRaisesRegex(FinalizeUploadError, "duplicate ==="):
+                            parse_track_source(str(source), source.read_text(encoding="utf-8"))
+
+    def test_duplicate_track_source_bpm_header_fails_both_gates_and_archiving(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            draft = "[Intro]\n[Verse]\n오늘은 웃었어\n[Outro]"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct.", lyrics=draft)
+            original = source.read_text(encoding="utf-8")
+            artifact = root / "draft.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse=88; Outro=4\n- track_source: SERIES/17-00/input/tracks/03_너와.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            runner = CliRunner()
+            prompt_command = ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"]
+
+            with patch("wavvy.git_repo_root", return_value=root):
+                self.assertEqual(run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")["result"], "PASS")
+                self.assertEqual(runner.invoke(cli, prompt_command).exit_code, 0)
+                for duplicate in ("BPM: 125", "  bPm : 125"):
+                    with self.subTest(duplicate=duplicate):
+                        changed = original.replace("BPM: 106", f"BPM: 106\n{duplicate}", 1).replace("106 BPM", "125 BPM", 1)
+                        source.write_text(changed, encoding="utf-8")
+                        lyric_result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+                        self.assertEqual(lyric_result["result"], "FAIL")
+                        self.assertFalse(lyric_result["full_song_ready"])
+                        self.assertIn("duplicate", str(lyric_result["blockers"]))
+                        prompt_result = runner.invoke(cli, prompt_command)
+                        self.assertEqual(prompt_result.exit_code, 1, prompt_result.output)
+                        self.assertIn("duplicate", str(json.loads(prompt_result.output)["blockers"]))
+                        with self.assertRaisesRegex(FinalizeUploadError, "duplicate"):
+                            parse_track_source(str(source), source.read_text(encoding="utf-8"))
+
+    def test_track_prompt_gate_checks_actual_new_source_without_media(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul, up to 125 BPM\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            style = "Acoustic neo-soul, 106 BPM, G Major. One warm mid-low male lead sings in a conversational tone."
+            write_track_prompt_source(source, style)
+            runner = CliRunner()
+
+            with patch("wavvy.git_repo_root", return_value=root), patch(
+                "wavvy.validate_project",
+                side_effect=AssertionError("track-prompt must not run media validation"),
+            ):
+                missing = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--json"])
+                accepted = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+
+            self.assertEqual(missing.exit_code, 1, missing.output)
+            self.assertIn("--artifact", json.loads(missing.output)["blockers"][0])
+            self.assertEqual(accepted.exit_code, 0, accepted.output)
+            payload = json.loads(accepted.output)
+            self.assertEqual(payload["scope"], "NEW_FULL_TRACK_PROMPT_CONTRACT")
+            self.assertEqual(payload["quality_status"], "PROMPT_CONTRACT_CHECKED")
+            self.assertEqual(payload["source_sha256"], hashlib.sha256(source.read_bytes()).hexdigest())
+
+    def test_track_prompt_gate_enforces_unicode_style_budget_and_exclude_items(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            base = "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct. "
+            runner = CliRunner()
+
+            with patch("wavvy.git_repo_root", return_value=root):
+                write_track_prompt_source(source, base + "가" * (900 - len(base)), exclude="")
+                exact = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                write_track_prompt_source(source, base + "가" * (901 - len(base)), exclude="")
+                over = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                write_track_prompt_source(source, base, exclude=", ".join(f"item {i}" for i in range(12)))
+                many = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+
+            self.assertEqual(exact.exit_code, 0, exact.output)
+            self.assertEqual(over.exit_code, 1, over.output)
+            self.assertIn("901/900", str(json.loads(over.output)["checks"]))
+            self.assertEqual(many.exit_code, 1, many.output)
+            self.assertIn("12/8", str(json.loads(many.output)["checks"]))
+
+    def test_track_prompt_gate_rejects_unknown_and_mismatched_proposals(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            style = "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct."
+            runner = CliRunner()
+            cases = [
+                ({"bpm": "unknown"}, "bpm_metadata_matches_style"),
+                ({"bpm": "108"}, "bpm_metadata_matches_style"),
+                ({"key": "unknown"}, "key_metadata_matches_style"),
+                ({"key": "A Minor"}, "key_metadata_matches_style"),
+                ({"vocal": "gender unknown"}, "vocal_gender_metadata_matches_style"),
+                ({"vocal": "warm female lead"}, "vocal_gender_metadata_matches_style"),
+            ]
+            with patch("wavvy.git_repo_root", return_value=root):
+                for fields, failed_check in cases:
+                    with self.subTest(fields=fields):
+                        write_track_prompt_source(source, style, **fields)
+                        result = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                        self.assertEqual(result.exit_code, 1, result.output)
+                        checks = {check["name"]: check["status"] for check in json.loads(result.output)["checks"]}
+                        self.assertEqual(checks[failed_check], "FAIL")
+
+    def test_track_prompt_gate_rejects_prior_track03_failure_shape(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "03_너와.txt"
+            base = "Korean acoustic neo-soul, 106 BPM, conversational single lead. "
+            style = base + "가" * (949 - len(base))
+            write_track_prompt_source(source, style, exclude=", ".join(f"item {i}" for i in range(12)), key="unknown", vocal="single lead; gender unknown")
+            with patch("wavvy.git_repo_root", return_value=root):
+                result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+            self.assertEqual(result.exit_code, 1, result.output)
+            checks = {check["name"]: check["status"] for check in json.loads(result.output)["checks"]}
+            for name in ("style_character_limit", "exclude_budget", "key_metadata_matches_style", "vocal_gender_metadata_matches_style"):
+                self.assertEqual(checks[name], "FAIL", name)
+
+    def test_track_prompt_gate_rejects_source_from_another_series(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = root / "SERIES" / "18-00" / "input" / "tracks" / "03_너와.txt"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct.")
+            with patch("wavvy.git_repo_root", return_value=root):
+                result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+            self.assertEqual(result.exit_code, 1, result.output)
+            self.assertEqual(json.loads(result.output)["checks"][0]["status"], "FAIL")
 
     def test_compilation_source_map_counts_as_available_audio(self):
         with tempfile.TemporaryDirectory() as tmp:

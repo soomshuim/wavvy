@@ -30,6 +30,7 @@ import pandas as pd
 
 from wavvy_harness import build_state, check_state, load_state, run_doctor, run_gate, write_state
 from wavvy_harness.gate import run_lyrics_skill_gate
+from wavvy_harness.source import parse_track_source_fields
 from wavvy_harness.state import PHASES
 
 
@@ -1535,9 +1536,6 @@ def generate_report(
 # UPLOAD FINAL SOURCE ARCHIVE
 # =============================================================================
 
-SOURCE_SECTION_RE = re.compile(r"^===\s*([^=]+?)\s*===\s*$", re.MULTILINE)
-
-
 class FinalizeUploadError(Exception):
     """Raised when upload finalization cannot safely proceed."""
 
@@ -1549,21 +1547,10 @@ def sha256_text(content: str) -> str:
 
 def parse_track_source(label: str, content: str) -> TrackSource:
     """Parse a Wavvy track source txt file."""
-    matches = list(SOURCE_SECTION_RE.finditer(content))
-    header = content[:matches[0].start()] if matches else content
-    metadata = {}
-
-    for line in header.splitlines():
-        match = re.match(r"^([A-Za-z][A-Za-z0-9 _-]*):\s*(.*)$", line.strip())
-        if match:
-            metadata[match.group(1).strip()] = match.group(2).strip()
-
-    sections = {}
-    for idx, match in enumerate(matches):
-        name = match.group(1).strip().upper()
-        start = match.end()
-        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(content)
-        sections[name] = content[start:end].strip()
+    try:
+        metadata, sections = parse_track_source_fields(content)
+    except ValueError as error:
+        raise FinalizeUploadError(f"{label}: {error}") from error
 
     source = TrackSource(
         label=label,
@@ -2132,18 +2119,29 @@ def state_cmd(path: Path, check: bool, write_file: bool, phase: Optional[str], i
 @click.option(
     '--stage',
     required=True,
-    type=click.Choice(['source-final', 'render-final', 'upload-ready', 'uploaded', 'lyrics-review']),
+    type=click.Choice(['source-final', 'render-final', 'upload-ready', 'uploaded', 'lyrics-review', 'track-prompt']),
     help='Stage gate to evaluate',
 )
 @click.option('--json', 'json_output', is_flag=True, help='Print machine-readable JSON')
-@click.option('--artifact', type=click.Path(exists=True, dir_okay=False, path_type=Path), default=None, help='Lyric review artifact for the lyrics-review stage')
+@click.option('--artifact', type=click.Path(exists=True, dir_okay=False, path_type=Path), default=None, help='Lyric review record or new full-track source txt for the selected stage')
 @click.option('--mode', type=click.Choice(['full-lyric-draft', 'suno-prompt-only', 'review-only']), default=None, help='Expected lyric artifact mode')
-def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path], mode: Optional[str]):
+@click.option('--draft-scope', type=click.Choice(['full-song', 'excerpt']), default=None, help='Expected full-lyric-draft scope (required in the new full-song workflow)')
+def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path], mode: Optional[str], draft_scope: Optional[str]):
     """Run a deterministic stage gate for a series."""
     repo_root = _resolve_repo_root(path)
     paths = ProjectPaths(path)
 
-    if stage == "lyrics-review":
+    track_source = None
+    track_source_error = ""
+    if stage == "track-prompt" and artifact is not None:
+        try:
+            track_source = parse_track_source(str(artifact), artifact.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, FinalizeUploadError) as error:
+            track_source_error = str(error)
+    if stage == "track-prompt" and (mode is not None or draft_scope is not None):
+        track_source_error = "--mode and --draft-scope apply only to lyrics-review; track-prompt checks the source txt directly"
+
+    if stage in {"lyrics-review", "track-prompt"}:
         validation_result = ValidationResult(is_valid=True)
     elif json_output:
         with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
@@ -2157,7 +2155,12 @@ def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path]
         "warnings": validation_result.warnings,
         "detail": f"{len(validation_result.tracks)} tracks",
     }
-    payload = run_gate(path, repo_root, stage, validation_payload, artifact, mode)
+    payload = run_gate(
+        path, repo_root, stage, validation_payload,
+        lyric_artifact=artifact, lyric_mode=mode,
+        track_source=track_source, track_source_error=track_source_error,
+        lyric_draft_scope=draft_scope,
+    )
     _emit_payload(payload, json_output)
     if payload.get("result") != "PASS":
         sys.exit(1)
@@ -2167,12 +2170,13 @@ def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path]
 @click.argument('path', required=False, type=click.Path(exists=True, file_okay=False, path_type=Path))
 @click.option('--artifact', type=click.Path(exists=True, dir_okay=False, path_type=Path), default=None, help='Optional lyric artifact to validate')
 @click.option('--mode', type=click.Choice(['full-lyric-draft', 'suno-prompt-only', 'review-only']), default=None, help='Expected output mode for --artifact')
+@click.option('--draft-scope', type=click.Choice(['full-song', 'excerpt']), default=None, help='Expected full-lyric-draft scope')
 @click.option('--json', 'json_output', is_flag=True, help='Print machine-readable JSON')
-def lyrics_skill_cmd(path: Optional[Path], artifact: Optional[Path], mode: Optional[str], json_output: bool):
+def lyrics_skill_cmd(path: Optional[Path], artifact: Optional[Path], mode: Optional[str], draft_scope: Optional[str], json_output: bool):
     """Validate the Wavvy lyric skill package and optional lyric artifact."""
     anchor = path or artifact or Path.cwd()
     repo_root = _resolve_repo_root(anchor)
-    payload = run_lyrics_skill_gate(repo_root, path, artifact, mode)
+    payload = run_lyrics_skill_gate(repo_root, path, artifact, mode, draft_scope)
     _emit_payload(payload, json_output)
     if payload.get("result") == "FAIL":
         sys.exit(1)

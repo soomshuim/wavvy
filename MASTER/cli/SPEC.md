@@ -82,11 +82,13 @@ brand/
 - shorts.mp4 루프 → 9:16 크롭 → 텍스트 오버레이
 - Output: `output/shorts/short_[TrackName].mp4`
 
-### F. `lyrics-skill` / `gate --stage lyrics-review`
+### F. `lyrics-skill` / `gate --stage lyrics-review` / `gate --stage track-prompt`
 - `lyrics-skill SERIES/[시리즈]` checks skill installation only (`scope: PACKAGE_ONLY`, `quality_status: NOT_REVIEWED`).
 - `lyrics-skill SERIES/[시리즈] --artifact REVIEW.md --mode review-only` checks a review record and its current source binding. `full-lyric-draft` and `suno-prompt-only` are also accepted modes.
 - `gate SERIES/[시리즈] --stage lyrics-review --artifact REVIEW.md --mode review-only` requires an artifact. Without one, the stage fails instead of presenting installed files as reviewed lyrics.
 - `reviewed_source_sha256` and the hash-check detail show the current source-body hash. `PASS` means the required record and deterministic checks pass, not that software certified naturalness, musical effect, or authorship.
+- New full-song lyric records declare `draft_scope: full-song`, `target_duration_seconds`, `meter`, `section_bars`, and `track_source`. Invoke `--mode full-lyric-draft --draft-scope full-song` on both `lyrics-skill` and `gate --stage lyrics-review`. The gate checks the Draft against the txt LYRICS body and compares planned bar duration against the target using the declared BPM (quarter-note assumption). `planned_duration_estimate_seconds` is not measured audio duration. Missing `draft_scope` in an older record is reported as `UNSPECIFIED` with `full_song_ready: false`; a new full-song call with `--draft-scope full-song` fails if that declaration is absent.
+- `gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/[track].txt` checks one newly authored full-track source. It requires the actual txt under that series and reports its SHA-256, `scope: NEW_FULL_TRACK_PROMPT_CONTRACT`, STYLE length (Wavvy's internal 900-character budget including whitespace), EXCLUDE count (internal maximum eight items), numeric BPM, Key/Mode, and explicit vocal gender matching between header and STYLE. This check does not inspect lyric meaning or certify Suno audio. User-provided remix originals are preserved without a retrospective new-draft check.
 
 ---
 
@@ -117,6 +119,9 @@ python3 wavvy.py state SERIES/[시리즈] --write --phase uploaded --if-match N
 python3 wavvy.py gate SERIES/[시리즈] --stage source-final
 python3 wavvy.py gate SERIES/[시리즈] --stage uploaded
 python3 wavvy.py gate SERIES/[시리즈] --stage lyrics-review --artifact REVIEW.md --mode review-only --json
+python3 wavvy.py gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/[track].txt --json
+python3 wavvy.py lyrics-skill SERIES/[시리즈] --artifact FULL_DRAFT.md --mode full-lyric-draft --draft-scope full-song --json
+python3 wavvy.py gate SERIES/[시리즈] --stage lyrics-review --artifact FULL_DRAFT.md --mode full-lyric-draft --draft-scope full-song --json
 
 # 업로드 FINAL 소스 아카이브
 python3 wavvy.py finalize-upload SERIES/[시리즈] --check

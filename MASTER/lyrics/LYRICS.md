@@ -1,6 +1,6 @@
 # Wavvy LYRICS.md
 
-Version: 4.4
+Version: 4.5
 Last Updated: 2026-09-30
 Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 
@@ -30,8 +30,7 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 
 ## 1. Lyric Prompt Guide
 
-> Suno 가사 입력란에 넣는 "작사 방향 지시". 풀 가사 대신 mood/theme 힌트를 제공하거나 비워두면 Suno가 자체 작사.
-> Style prompt에 보컬 지시를 남겨두면 Suno가 자연스러운 허밍/맨트라 수준 보컬을 자동 생성.
+> 이 절은 Suno가 가사를 직접 쓰게 할 때의 짧은 방향 지시다. 사용자가 검토한 전체 가사는 별도 경로로 Custom Mode의 Lyrics 입력란에 넣을 수 있다(§1.6).
 
 ### 1.1 3가지 모드
 
@@ -43,7 +42,7 @@ Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 
 ### 1.2 Prompt 작성법
 
-- **Prompt-only 모드는 괄호 없이** 영문으로 직접 작성 (소괄호 기본 금지 — Suno가 보컬로 읽음)
+- **Prompt-only 모드는 괄호 없이** 영문으로 직접 작성 (소괄호 문장이 노래로 처리될 가능성을 줄이려는 Wavvy 내부 입력 규칙)
 - 핵심 감정/장면 키워드 2-3개
 - 시리즈 `LYRICS_DNA.md` 있으면 참조 (톤, 이미지 소재 풀)
 - 길이: 1-3줄 (짧을수록 Suno 자유도 높음)
@@ -57,8 +56,7 @@ Minimal Korean lyrics, repetitive hook chant where the track calls for it
 
 ### 1.4 약칭 구조 포맷
 
-> 풀 태그(`[intro][verse 1]...`)는 200자 중 ~45%를 구조에 소모. 약칭 포맷으로 압축하면 키워드 공간이 2배+ 확보됨.
-> Suno 인식 확인 완료 (2026-03-15).
+> 약칭은 짧은 prompt-only 입력에서 공간을 아끼려는 Wavvy 내부 표기다. 확인한 Suno 공식 자료는 이 약칭의 인식률이나 200자 제한을 보증하지 않는다. 섹션을 분명히 지정해야 하는 완곡 가사는 명시적 구조 태그를 쓴다.
 
 **약칭 매핑:**
 
@@ -90,10 +88,10 @@ Minimal Korean, midday noon heat, lunch hour pause, warm feeling, repeating phra
 
 | Do | Don't |
 |----|-------|
-| 분위기/장면 키워드 | 풀 가사 직접 작성 |
+| 분위기/장면 키워드 | prompt-only 입력에 풀 가사 섞기 |
 | 영문 방향 지시 | 한국어 가사 행 나열 |
 | 짧고 추상적 | 구체적 운율/음절 지정 |
-| Prompt-only 모드는 괄호 없이 직접 작성 | Prompt-only 내용을 `(...)` 소괄호로 감싸기 — Suno가 보컬로 읽음 |
+| Prompt-only 모드는 괄호 없이 직접 작성 | Prompt-only 내용을 `(...)` 소괄호로 감싸기 — 노래로 처리될 가능성을 줄이기 위한 내부 규칙 |
 
 ### 1.5 Wavvy Lyric Skill / Review Gate
 
@@ -103,9 +101,18 @@ Full lyric drafting, rewrite, and review tasks should use `skills/wavvy-lyricist
 - Pattern reference: `skills/wavvy-lyricist/references/patterns.md`
 - Package check: `python3 wavvy.py lyrics-skill SERIES/[series] --json`
 - Artifact check: `python3 wavvy.py lyrics-skill SERIES/[series] --artifact FILE --mode full-lyric-draft --json`
+- New full-song artifact check: `python3 wavvy.py lyrics-skill SERIES/[series] --artifact FILE --mode full-lyric-draft --draft-scope full-song --json`
 - Gate stage: `python3 wavvy.py gate SERIES/[series] --stage lyrics-review --json`
 
 This document remains the SSOT for direct Suno Lyrics input. The skill must preserve the mode boundary: `full-lyric-draft` is for human/source review, while `suno-prompt-only` must stay short, English, and prompt/structure-only.
+
+### 1.6 직접 쓴 전체 가사와 곡 길이 계획
+
+Suno [공식 도움말](https://help.suno.com/en/articles/2415873)은 Custom Mode에서 직접 쓴 전체 가사 입력을 안내한다. Wavvy의 `full-lyric-draft`는 사용자 검토를 위한 원문이며, 승인된 본문은 이 경로에 넣을 수 있다. `suno-prompt-only`는 Suno가 가사를 쓰게 하는 별도 선택이다. 두 모드를 한 LYRICS 본문에 섞지 않는다.
+
+새 **완곡**을 요청받으면 초안 기록에 `draft_scope: full-song`, 목표 길이(초), 예상 BPM, 박자, 순서별 섹션 마디 수를 적는다. 예상 길이(초)는 `전체 마디 × 박자 수 × 60 ÷ BPM`으로 계산한다. 곡의 의미와 구조에 맞춰 가사를 충분히 쓰되 글자 수 하한, 장면 수, 기계적 반복으로 길이를 채우지 않는다. 기본적으로 `[Intro]`와 `[Outro]`를 계획하고, 다른 섹션은 곡에 맞게 고른다. 명시적인 사용자·트랙 구조 예외는 기록한다. 짧은 발췌, 기존 원문 기록, review-only, prompt-only에는 완곡 계획을 강제하지 않는다.
+
+섹션 마디 수는 작성자가 고른 편곡 계획이며 가사 한 줄을 고정 마디 수로 환산한 값이 아니다. 이 계산과 태그는 제작 목표일 뿐이다. Suno가 실제 Intro·길이·박자를 지키는지는 생성 후 오디오로 확인하고, 부족하면 가사/구조 또는 Extend를 검토한다. [Suno의 길이 안내](https://help.suno.com/en/articles/13924929)는 단일 생성의 상한과 Extend를 설명하며 특정 곡의 목표 길이를 보장하지 않는다.
 
 ---
 
@@ -119,19 +126,19 @@ This document remains the SSOT for direct Suno Lyrics input. The skill must pres
 | 규칙 | 설명 |
 |------|------|
 | `[]` 대괄호 | 구조 태그 전용 |
-| `()` 소괄호 | 기본 금지. Structure 모드에서만 구조 태그 뒤 보컬 메타 + 작사 프롬프트를 한 줄로 통합할 때 예외 허용 |
+| `()` 소괄호 | 기본 금지. Structure 모드에서만 구조 태그 뒤 짧은 작사 방향을 한 줄로 통합할 때 예외 허용. 보컬·편곡 지시는 Style로 이동 |
 | 1행 원칙 | 예외 사용 시 구조 태그 뒤 `()` **1행만** |
 
-정리: §1 Prompt-only 모드는 괄호를 쓰지 않는다. §2 Structure 모드는 `[Verse]`, `[Chorus]` 같은 구조 태그 뒤에 한 번만 `(Direct vocal, Korean lyrics about...)` 형태의 메타 봉투를 둘 수 있다.
+정리: §1 Prompt-only 모드는 괄호를 쓰지 않는다. §2 Structure 모드는 `[Verse]`, `[Chorus]` 같은 구조 태그 뒤에 한 번만 `(Korean lyrics about...)` 형태의 작사 방향을 둘 수 있다. 이 제한은 Wavvy의 입력 정리 규칙이지 Suno의 파싱 보증이 아니다.
 
 ### 2.3 금지 태그
 `[Kick in]`, `[Drums enter]`, `[Pad widens]` → Style Prompt로
 
 ### 2.4 허용 태그
-**필수:** `[intro]`, `[outro]`, `[verse]`, `[bridge]`, `[chorus]`
-**조건부:** `[pre-chorus]`, `[hook]`, `[instrumental]`, `[end]`
+**완곡 초안 기본 구조:** `[Intro]`, `[Outro]` (명시한 사용자·트랙 예외가 있으면 기록)
+**곡에 맞춰 선택:** `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Hook]`, `[Bridge]`, `[Instrumental]`, `[End]`
 
-**보컬 키워드:** `No harmony`, `Direct vocal`, `Chest voice`, `Powerful belt`
+보컬 성격과 편곡 지시는 가사 줄이나 구조 태그에 끼워 넣지 말고 Style에 쓴다.
 
 ### 2.5 Song Structure Patterns
 

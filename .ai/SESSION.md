@@ -1,14 +1,16 @@
 # Session State — Wavvy
 
-> Last updated: 2026-09-30 (17:00 03 초안 및 04 원문 등록)
+> Last updated: 2026-09-30 (17:00 03 확장 초안·Style/가사 검사 보강)
 
 ## 진행 중
 
-- **17-00 03 「너와」 초안·04 「낮꿈 (Accoustic Version)」 원문** (2026-09-30)
-  - ✅ **03 신규 가사**: 오래된 친구 앞에서 꾸밈없이 투덜대고 웃는 첫 초안을 `input/tracks/03_너와.txt`에 저장. 어쿠스틱 네오소울 106 BPM STYLE/EXCLUDE는 제안이며 키·보컬 성별 미정. 가사 본문 SHA-256 `e6ea4c559b05b4dc4471f5b13a4d6ad92310667f684fe0b311da2785e0968886`; `lyrics-skill` full-lyric-draft PASS. 격리 Astra 검토 CLEAN(부모 전달). **젠의 가사 검토는 아직 남음**.
+- **17-00 03 「너와」 확장 초안·Style/가사 검사 보강** (2026-09-30)
+  - ✅ **03 현재 초안**: `[Intro]`를 더하고 가사 55→67행으로 의미 있게 확장. 오래된 친구 테마와 후렴은 유지. 106 BPM·G Major·따뜻한 중저음 남성 보컬, STYLE 822자·EXCLUDE 6개, 약 3:20 목표는 모두 미승인 제안. 4/4·92마디 계획은 약 208.3초 추정이며 실제 생성 길이는 아니다. 현재 본문 SHA-256 `3e2f035302e55f840b1ae93f6ce47514e6034d43c760c6dd11d2393c9d971896`.
+  - ✅ **원인과 보수**: 이전 검사는 가사 검토 기록만 확인해 Style 메타와 완곡 길이·구조 계획을 놓쳤다. `track-prompt`와 `lyrics-review --draft-scope full-song`을 분리하고 실제 txt·artifact 본문/메타를 연결했다. STYLE/ROLES/LYRICS와 작사 스킬은 자연어 음악 의도·완곡 계획·실제 음원 확인 기준으로 갱신했다. 기존 제공곡의 미확인 사실은 unknown으로 보존.
+  - ✅ **구현·독립 검토 완료**: 공통 `parse_track_source_fields`가 헤더 메타와 STYLE/EXCLUDE/LYRICS 구역을 함께 읽는다. 대소문자·주변 공백 변형을 포함한 중복 헤더와 중복 STYLE/LYRICS를 거부하므로 가사 검토·프롬프트 검사·아카이브가 서로 다른 값을 읽지 않는다. 중복 BPM `106`/`125` 회귀에서 양쪽 gate와 아카이브 모두 거부. 실제 03 track-prompt/lyrics-review full-song/lyric-skill PASS, 01/02/04 파싱 성공, 33 tests·py_compile·diffcheck PASS. fresh 격리 검토 `shared_parser_review`는 Critical/High 0·원칙 관찰 0으로 CLEAN. 로그 `/tmp/wavvy-prompt-gate-{track03.json,lyrics03.json,skill03.json,unittest.log,pycompile.log,diffcheck.log,duplicate-regression.log,duplicate-header-regression.log,remix-parse.log}`. 텍스트 검사는 실제 생성 음원의 길이·Intro·보컬·BPM/키를 보증하지 않는다.
   - ✅ **04 기존곡 리믹스 원문**: 젠이 제공한 STYLE와 혼합 언어 LYRICS를 `input/tracks/04_낮꿈 (Accoustic Version).txt`에 그대로 저장. 과거 기각 표현도 원문대로 보존하며 품질 PASS로 취급하지 않음. 12-00 저장 파일에는 해당 전체 가사가 아닌 prompt-only 입력만 있음.
   - ✅ **시리즈 상태**: 총 20곡(리믹스 01/02/04, 신규 03/05–20) concept 반영. `.ai/state.json` revision 5 `track_source_draft`, txt 4개, state check PASS·warning/blocker 0.
-  - **남은 TODO**: 젠과 03 가사·제안 프롬프트 검토. 04 음원·실제 BPM/키는 자료가 들어오면 확인. 05–20은 젠과 신규 제작.
+  - **남은 TODO**: 젠의 03 가사·제안 프롬프트 검토와 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인이 남는다. 04의 실제 음원·기술값은 자료가 들어오면 확인하고, 05–20은 젠과 신규 제작.
 
 - **Historical artifact pruning** (2026-06-02 34차, `-record`)
   - ✅ **삭제 기준 확인**: `concept.md`는 시리즈별 전곡 정보 원장으로 보존. 하네스/스킬/에이전트 라우팅 참조가 없는 과거 기록만 삭제 대상으로 분류
@@ -17,11 +19,11 @@
   - ✅ **검증 PASS**: `py_compile`, `unittest` 15개, `doctor`, `state --check`, `validate SERIES/20-00`, `gate --stage uploaded`, `git diff --check`, `git diff --cached --check`
   - **남은 TODO**: 없음. 향후 과거 기록이 필요하면 git history에서 확인
 
-- **17-00 Track 01 self-spell rewrite** (2026-05-22 33차)
+- **17-00 Track 01 self-spell rewrite — 과거 Pop R&B 초안 이력, 현행 아님** (2026-05-22 33차)
   - ✅ **사용자 피드백 반영**: `올라가` 훅 대신 `기분 좋아져라` 셀프 주문형 콘셉트로 변경
   - ✅ **샘플 파일 갱신**: `SERIES/17-00/input/tracks/01_기분 좋아져라 (Feel Good Spell).txt`로 파일명/트랙명/Style hook phrase/가사/Listen For 동기화
   - ✅ **concept 동기화**: `SERIES/17-00/concept.md` Track Map과 Next Steps의 Track 01 참조를 새 제목으로 변경
-  - **남은 TODO**: Track 01 Suno V5.5 샘플 생성 → `기분 좋아져라` hook memorability / bright mood / R&B DNA / no minor-dark drift 기준 PASS 판정
+  - **당시 TODO (현행 아님)**: Track 01 Suno V5.5 샘플 생성 → `기분 좋아져라` hook memorability / bright mood / R&B DNA / no minor-dark drift 기준 PASS 판정. 2026-09-30 어쿠스틱 기획으로 교체됨.
 
 - **`/write` / `-write` lyricist command shim** (2026-05-22 32차, `-director`)
   - ✅ **로컬 command 추가**: `.claude/commands/write.md` 생성. Claude Code `/write`와 Codex `-write`가 같은 Wavvy-local `write` command 이름으로 해석되도록 연결
@@ -44,14 +46,14 @@
   - ✅ **Doctor 경로 보정**: `peer_review_script` 기본 경로를 `/Users/zenkim_office/Project/agent-center/scripts/peer-agent-review.sh`로 정정. `state SERIES/17-00 --check`와 `source-final` gate는 17-00이 아직 draft source 단계라 FAIL
   - **남은 TODO**: 다음 17-00 가사/프롬프트 작업부터 `skills/wavvy-lyricist`를 사용하고, lyric draft 산출물은 `lyrics-skill --artifact ... --mode full-lyric-draft`로 검증
 
-- **17-00 Main POP R&B concept draft** (2026-05-21 29차)
+- **17-00 Main POP R&B concept draft — 과거 초안 이력, 현행 아님** (2026-05-21 29차)
   - ✅ **사용자 방향 반영**: 다음 시리즈는 `기분 좋은 POP(Main) R&B`
   - ✅ **Hard gate 확정**: 최소 `120 BPM`, `Major key only`. 119 BPM 이하 / Minor key / dark late-night R&B / slow jam 금지
   - ✅ **시간 슬롯 확정**: `17:00`. 18:00 퇴근길 위로와 겹치지 않게 `퇴근 전부터 기분을 먼저 올리는 시간`으로 포지셔닝
   - ✅ **신규 시리즈 초안 생성**: `SERIES/17-00/concept.md` 작성. Style A Main Pop R&B, Style B Bright Contemporary R&B, Style C Light Funk Pop R&B, 18트랙 draft map, YouTube Draft 포함
   - ✅ **샘플 곡 리디자인**: 초기 `올라가 (Up Again)` 샘플 작성 후 2026-05-22 33차에서 `SERIES/17-00/input/tracks/01_기분 좋아져라 (Feel Good Spell).txt`로 변경. 124 BPM, D Major, Female vocal, Main Pop R&B / Pop Neo-Soul. `기분 좋아져라` 셀프 주문형 반복 훅 중심
   - ✅ **가사 정책 보정**: 시간대는 BPM/Mood/Energy 포지셔닝이고 가사 주제 강제가 아님. `wavvy.md`, `MASTER/lyrics/LYRICS.md`, `SERIES/17-00/concept.md`에 반영하고 Track 01 가사에서 업무/퇴근 직전 소재를 제거
-  - **남은 TODO**: Track 01 Suno V5.5 샘플 생성 → `기분 좋아져라` hook memorability / bright mood / R&B DNA / no minor-dark drift 기준 PASS 판정 → 18-track prompt batch 확장
+  - **당시 TODO (현행 아님)**: Track 01 Suno V5.5 샘플 생성 → `기분 좋아져라` hook memorability / bright mood / R&B DNA / no minor-dark drift 기준 PASS 판정 → 18-track prompt batch 확장. 2026-09-30 어쿠스틱 기획으로 교체됨.
 
 - **RNB-BEST source-map compilation 하네스 보강** (2026-05-21 28차)
   - ✅ **트랙 폴더 부재 정책 반영**: `RNB-BEST`는 `input/tracks/`에 오디오를 복사하지 않아도 `concept.md`의 `## Track Selection` `Source` 경로를 오디오 SSOT로 인정하도록 정리

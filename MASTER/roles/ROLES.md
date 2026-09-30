@@ -1,125 +1,32 @@
-# Wavvy Role System
+# Wavvy Style Roles
 
-Version: 2.0
-Last Updated: 2026-03-03
-Purpose: AI 역할 분리 (중복/드리프트 방지)
+Version: 3.0
+Last Updated: 2026-09-30
+Purpose: 근거 수집, 곡 설계, 검토를 구분하고 프롬프트의 음악적 의도를 살린다.
 
----
+Style 작성 규칙은 MASTER/style/STYLE.md, 시리즈별 경계는 대상 concept.md가 소유한다. 이 문서는 모든 곡에 같은 단어·편곡·에너지 곡선을 강제하지 않는다.
 
-## Core Principle
+## 역할
 
-역할 분리 목적:
-- Prompt overfitting 방지
-- 알고리즘 중복 리스크 방지
-- Creative drift 방지
+| 역할 | 책임 | 산출물 |
+|---|---|---|
+| Source Researcher | 시리즈 선례·사용자 제공 원문·필요한 공식 도구 근거를 구분한다. | 출처와 확인/미확인 사실 |
+| Song Designer | 한 곡의 장르, 그루브, 보컬, 악기 역할, 공간, 대비를 선택한다. | 새 곡의 제안 메타와 Style/Exclude |
+| Variation Designer | 시리즈 정체성을 유지하면서 곡마다 실제로 필요한 차이를 만든다. | 선택의 이유가 드러나는 변주 |
+| Reviewer | 텍스트가 음악적 의도를 분명히 전달하는지 살피고, 생성 후에는 음원을 듣는다. | 수정 근거와 실제 청취 결과 |
 
-**규칙:** 역할은 겹치지 않는다. "무난함" = FAIL.
+역할 구분은 한 사람이 여러 단계를 수행하지 못하게 하는 규칙이 아니다. 원문 기록, 창작 제안, 실측 결과를 서로 혼동하지 않게 한다.
 
----
+## 새 곡 제안 계약
 
-## Seed Energy Contract
+1. 대상 concept.md와 기존 곡 선례를 확인한다. 사용자 제공 원문은 임의로 개선하지 않는다.
+2. 보컬 곡의 성별·조성·숫자 BPM을 시리즈 안에서 제안하고, 근거를 한 줄로 설명한다. 미승인 제안과 실제 생성/측정 사실을 구분한다.
+3. MASTER/style/STYLE.md에 따라 사운드와 곡의 움직임을 쓴다. 브랜드의 한국어 가사·진성 중심 단독 리드 기본값과 명시적 예외를 확인한다.
+4. Style/Exclude 예산과 모순을 점검한다. 장르 수, 악기 수, 특정 문구, 후렴 세기, 보컬 처리의 보편 할당량으로 품질을 판정하지 않는다.
+5. 사용자에게 “보컬·조성·BPM (제안)” 한 줄을 Style 앞에 제시한다. 길이와 Intro 같은 목표도 필요하면 명시하되, 생성 결과라고 단정하지 않는다.
 
-> **금지는 레이어에만, 허용은 에너지에.**
+## 검토 경계
 
-- Verse2 emotional escalation 필수
-- Chorus vocal intensity > Verse2
-- Higher register/belt 권장
-- Energy = vocal delivery, NOT layering
+텍스트 검토는 출처·제안값·형식·의도와 모순을 확인한다. track-prompt 게이트는 작성된 txt를 검사하고, lyrics-review 게이트는 가사 기록을 검사한다. 어느 쪽도 실제 음원의 보컬, 조성, BPM, 길이, Intro, 편곡을 보증하지 않는다. 생성 후 청취와 필요한 측정은 별도다.
 
-**Canonical:**
-```
-Lead vocal remains single and dominant. No stacked harmonies.
-Vocal line may intensify dynamically, but no additional layers.
-```
-
----
-
-## S1-S10 Validation
-
-모든 AI 출력에 필수:
-
-| # | 슬롯 | 체크 |
-|---|------|------|
-| S1 | Vocal Persona | gender + tone + delivery |
-| S2 | Vocal Processing | dry/close-mic |
-| S3 | Lead Instrument | 악기명 |
-| S4 | Rhythm Source | 리듬 요소 |
-| S5 | BPM | 숫자 |
-| S6 | Key/Mode | 조성 |
-| S7 | Musicality | V2 lift + Chorus lift |
-| S8 | Harmony Guard | 문장 포함 |
-| S9 | Articulation | articulation |
-| S10 | Sound Eng | EQ balanced, clean mix |
-
-**S1 비어있음 = 즉시 FAIL**
-
----
-
-## Role Overview
-
-| Role | Function | Allowed | Forbidden |
-|------|----------|---------|-----------|
-| Seed Researcher | Reference 분석 | Bullets | Prompts, Lyrics |
-| Seed Designer | Seed DNA 정의 | DNA, Constraints | Track variation |
-| Variation Designer | 안전한 변주 | Slot changes | Seed 변경 |
-
----
-
-## 1. Seed Researcher
-
-- Reference에서 "왜 작동하는지" 추출
-- Bullet points, Cause→Effect
-- Prompts/Lyrics 작성 금지
-
----
-
-## 2. Seed Designer
-
-- 8-15 트랙 생산 가능한 Seed DNA 설계
-- Style Prompt 8-10 토큰
-- Musicality Matrix + Exclude ≤3 그룹
-
-**필수 참조:** STYLE.md, LYRICS.md
-
-**Sanity Check:**
-1. "10 variations 후에도 identity 유지되나?"
-2. "Verse2 energy permission 있나?" (YES 필수)
-
----
-
-## 3. Variation Designer
-
-- Seed 내에서 안전한 변주
-- 최소 2개 슬롯 선택
-- Seed constants 변경 금지
-
-**FAIL 조건:**
-- Chorus ≤ Verse2 에너지
-- Chorus에 vocal layering
-- V2 마지막 2행 안 올라감
-- Vocal Persona 없음
-
-**출력:** SAFE / BORDERLINE / FAIL
-
----
-
-## Controlled Variation Pattern
-
-| 구분 | 역할 | 예시 |
-|------|------|------|
-| Core | 고정 | 장르 spine, BPM 범위 |
-| Variable | 변주 | 가사 톤, 악기 |
-| Gate | 판정 | ≥80점, 개별 >5 |
-
-**규칙:** Core 정의 → Variable만 변경 → Gate 미달 시 FAIL
-
----
-
-## Clean Slate Protocol
-
-> 3회 연속 FAIL 시 리셋
-
-1. 이전 버전 완전 삭제
-2. "이전 가사 모두 잊고" 지시
-3. 톤앤매너 완전 변경
-4. 새 버전 → Gate 검증
+Verse 2의 상승, chorus의 벨팅·롱톤, 후렴의 동일 반복, bridge build, outro fade는 곡에 맞으면 사용할 수 있는 선택이다. 이전의 S1–S10 고정 슬롯과 즉시 FAIL 문구는 현재의 보편 검토 기준이 아니다.

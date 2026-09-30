@@ -2,7 +2,7 @@
 
 Version: 1.2
 Last Updated: 2026-03-08
-Purpose: Style Prompt **키워드 목록** (작성법은 `STYLE.md §1.5` 참조)
+Purpose: Style Prompt 표현을 찾는 선택지 (`STYLE.md` §2 참조). 단어를 모두 넣거나 그대로 복사할 필요는 없다.
 
 > 담당: Mood, Parts, Texture, Structure Cues, Key/Mode
 > Genre/Tempo → `reference/GENRES.md`
@@ -11,7 +11,7 @@ Purpose: Style Prompt **키워드 목록** (작성법은 `STYLE.md §1.5` 참조
 
 ## 1. 보컬 스타일 키워드
 
-**기본 (Raw Vocal Baseline):**
+**곡에 맞을 때 선택:**
 ```
 Raw, Solid, Direct, Intimate, Clear, Dry, Unprocessed
 ```
@@ -128,4 +128,3 @@ Add a short instrumental break
 Reduce density in the middle section
 Build intensity gradually toward the end
 ```
-

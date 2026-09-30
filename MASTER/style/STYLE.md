@@ -1,166 +1,40 @@
-# Wavvy STYLE.md
+# Wavvy Style Prompt Guide
 
-Version: 3.1
-Last Updated: 2026-03-03
-Purpose: Style Prompt 핵심 규칙 (SSOT)
+Version: 4.0
+Last Updated: 2026-09-30
+Purpose: 곡의 음악적 의도를 Suno Style에 명확하게 전달하는 Wavvy 내부 기준
 
-> **Tag Bank**: `style/TAG_BANK.md` 참조
+근거와 한계: MASTER/style/references/prompt-evidence-2026-09-30.md. 단어의 위치나 고정 문구가 생성 결과를 보장한다는 주장은 하지 않는다.
 
----
+## 1. 적용 범위와 출처
 
-## 0. Non-Negotiables
+- 새 곡의 Style/Exclude를 제안할 때 적용한다. 사용자가 이미 제공한 기존 곡·리믹스의 원문은 기록 단계에서 임의로 고치지 않는다.
+- 대상 시리즈 concept.md의 장르·템포·분위기·명시된 트랙 예외를 먼저 확인한다. 보컬과 언어의 채널 기본값은 wavvy.md, 가사 입력 방식은 MASTER/lyrics/LYRICS.md를 따른다.
+- 새 보컬 곡을 함께 설계할 때 보컬 성별, 조성, 숫자 BPM을 시리즈 범위 안에서 제안한다. 선택 이유는 곡의 분위기나 음역과 연결해 짧게 설명한다. 사용자 확정값이나 실제 음원 측정값처럼 쓰지 않는다. 기존 제공 원문에 없는 사실은 unknown으로 둔다.
+- 사용자에게 곡 패키지를 보여줄 때는 긴 영어 Style 앞에 “보컬: … · 조성: … · 템포: … BPM (제안)”처럼 세 값을 한국어 한 줄로 먼저 표시한다.
 
-### 0.1 Prompt Length
-- **Style Prompt 제한: <= 900자 (공백 포함)**
-- 이 문서가 길이 규칙 SSOT.
+## 2. 음악적 의도를 쓰는 법
 
-### 0.2 Pure Input Principle
-- 가사 입력 규격은 `LYRICS.md §2` (SSOT)
-- 설명형 연출/분위기는 **Style Prompt**에 둔다
+핵심 장르와 곡의 움직임을 초반에 밝히고, 필요한 내용을 자연스러운 영어 문장으로 연결한다. 다음은 선택할 재료이지 모든 곡에 채울 칸이 아니다.
 
-### 0.3 Prompt Priority Rule
-- **핵심을 앞에**: 첫 3단어가 곡의 방향 결정
-- ✅ `Korean Lo-fi R&B, 80 BPM, Eb Major, felt piano...`
-- ❌ `Cinematic but restrained, high fidelity, Korean Lo-fi R&B...`
+- **장르·그루브**: 중심 사운드, 체감 리듬, 속도와 에너지. 여러 장르를 섞으면 각 장르의 역할을 구분한다.
+- **보컬**: 성별 제안, 음색·음역, 발성·딕션, 리드의 위치. Wavvy의 한국어 가사·진성 중심 단독 리드 기본값을 따르되, 시리즈/트랙에 기록된 예외를 존중한다. Suno Custom Mode에서 Vocal Gender를 선택한 경우 실제 설정값을 기록한다. 프롬프트나 옵션을 지정해도 실제 보컬 결과를 보장하지는 않는다.
+- **악기 역할**: 무엇이 리듬을 밀고, 화성을 받치고, 여백을 채우는지. 악기 목록만 길게 나열하지 않는다.
+- **공간·질감**: 가까운 목소리, 자연스러운 룸, 정돈된 믹스 등 원하는 인상을 적는다. organic과 polished처럼 함께 가능한 표현도 맥락을 설명하면 쓸 수 있다. 실제로 충돌하는 지시만 정리한다.
+- **곡의 대비**: 필요한 경우 verse와 chorus의 밀도, 훅의 열림, bridge의 역할, 마지막 회귀를 제안한다. 모든 곡에 Verse 2 상승, 벨팅, 롱톤, 같은 후렴 반복, bridge build, 연주 fade-out을 강제하지 않는다.
+- **목표 길이·도입부**: 곡에 필요한 경우 around 3:20이나 짧은 Intro 같은 목표를 Style/가사 구조에 제안한다. BPM·글자 수·Intro 지시만으로 실제 길이나 도입부 생성을 보증할 수 없다.
 
-### 0.4 Gravity Words
-주의: `pop, beat, bass, catchy, upbeat` → "기본값"으로 수렴
+가사 문장은 Style에 복제하지 않는다. 전체 가사와 구조 태그는 MASTER/lyrics/LYRICS.md에 맞춰 별도 LYRICS에 둔다. 특정 영어 단어를 첫 단어로 쓰거나 8–10개 토큰으로 제한하는 규칙은 없다. Suno가 문구를 정확히 따를 것이라는 가정으로 품질을 판정하지 않는다.
 
-### 0.5 Filler Sounds Ban
-**금지:** `eh, uh, hm, ah, oh, yeah, woah, ooh`
-**Style:** `No filler sounds. Clean vocal lines only.`
+## 3. Style과 Exclude 예산
 
-### 0.6 Articulation First
-- **Style Prompt 첫 단어로 `Articulation.` 필수**
-- Suno가 발음/아티큘레이션을 최우선으로 인식하도록 보장
+- **Style 900자 이하(공백 포함)**는 Wavvy의 내부 편집 예산이다. 확인한 Suno 공식 자료에서 이 수치를 제품 한도로 제시하지 않는다. 핵심 정보를 남기며 군더더기부터 줄인다.
+- **Exclude 최대 8개 항목**도 Wavvy 내부 예산이다. 필요하지 않으면 비워 두고, 여덟 개를 채우려고 금지어를 만들지 않는다. 세 그룹·세 줄 형식은 요구하지 않는다.
+- 원하는 사운드는 Style에, 피하고 싶은 악기·보컬 처리·장르 요소는 가능하면 별도 Exclude에 적는다. 같은 요소를 동시에 요구하고 배제하는 모순은 피한다. Custom Mode Advanced Options의 Exclude 사용법은 위 근거 문서를 참조한다.
+- MASTER/style/TAG_BANK.md는 표현을 찾는 선택지일 뿐 필수 키워드 목록이 아니다.
 
----
+## 4. 검토와 생성 후 확인
 
-## 1. Core Sound DNA
+텍스트 검토에서는 시리즈 적합성, 보컬·조성·BPM의 제안/사실 구분, 듣고 싶은 사운드의 선명함, 지시 간 충돌, Style/Exclude 예산을 본다. 새 곡 패키지의 txt는 python3 wavvy.py gate SERIES/[series] --stage track-prompt --artifact SERIES/[series]/input/tracks/[track].txt --json 으로 검사한다. 가사 검토 PASS는 Style 검사를 대신하지 않는다.
 
-- Texture: high fidelity, wide stereo, cinematic but restrained
-- Vocal: dry close-mic, very forward, natural breaths, minimal autotune
-- Diction: clear Korean articulation
-
-### 1.1 Default Vocal Persona
-**핵심:** `Raw vocal, Solid, Direct, Intimate, Clear, Dry, Unprocessed`
-**발성:** `Chest voice, Belting, Raspy, Grit`
-**프로덕션 필수:** `articulation, Moderate reverb, room ambience, EQ balanced sound, clean mix`
-**피해야 할 단어:** `Airy, Falsetto, Harmonized, Backing vocals, Opera, Whisper`
-
----
-
-## 1.5 Writing Formula (7요소)
-
-> **키워드 뱅크:** Genre/Tempo → `reference/GENRES.md` | 나머지 → `style/TAG_BANK.md`
-
-| # | 요소 | 형식 | 예시 |
-|---|------|------|------|
-| 1 | **Genre** | `[큰 장르] + [세부 장르]` (최대 2개, 첫 3-5단어) | `Korean Lo-fi R&B`, `Chillhop Jazz-hop` |
-| 2 | **Mood** | `[감정 1-2개] + [시간대]` (선택) | `melancholic, nostalgic, late-night` |
-| 3 | **Key/Mode** | `[Key] + [Major/Minor] + [코드 진행]` (선택) | `Eb Major, warm major7 chords` |
-| 4 | **Tempo** | `[BPM 숫자]` — Belt 규칙 §4.1 참조 | `78 BPM` |
-| 5 | **Parts** | `[Lead 1] + [Rhythm 2-3] + [Bass 1] + [Vocal]` | `Rhodes-led groove, soft shaker, warm bass` |
-| 6 | **Texture** | `[질감] + [공간감] + [프로덕션]` | `dusty texture, intimate room, subtle reverb` |
-| 7 | **Structure Cues** | `[섹션]: [연출 지시]` (가사 태그 보조) | `Chorus: emotional peak, 1 held note` |
-
-**Parts — Vocal 형식:** `[Gender] vocal: [Tone], [Delivery], [Register], [Production]`
-- 예: `Female vocal: Raw, Direct, Chest voice, Dry, articulation`
-- 가사 있으면 `articulation` 필수
-
----
-
-## 2. Harmony Guard (필수)
-
-**초압축 2줄:**
-```
-Lead vocal remains single and dominant throughout. No stacked or choir-like harmonies.
-Vocal line may intensify dynamically (belt, higher register), but no additional vocal layers.
-```
-
-**핵심:** 금지=레이어, 허용=에너지(belt, higher register, dynamics)
-
-### 2.1 Energy Permission (필수)
-```
-Chorus vocal may be delivered with stronger intensity or light belt.
-Higher register emphasis is encouraged. Natural vocal strain allowed.
-```
-
----
-
-## 3. Musicality Matrix
-
-- **Verse2 Lift**: last 2 lines MUST rise (higher register encouraged)
-- **Chorus Lift**: first line = peak (belt + **1 held note**)
-- **Chorus Rule**: hook-first; lyrics repeated identically
-- **Chorus2 Expansion**: bigger by arrangement, not vocal layers
-- **Bridge Build**: no energy drop into chorus
-- **Outro**: instrumental fade
-
-**Fail Fast:** V2 안 올라감 / Chorus 안 올라감 / held note 없음 / 레이어 의존 → FAIL
-
----
-
-## 4. Energy Switch (Chorus 폭발)
-
-> "후렴 폭발감 부족" 시 Lever A+B 모두 적용
-
-**Lever A (Arrangement):** Bass active / Perc intensity up / Stereo wider / Crash as impact marker
-**Lever B (Vocal):** Belt (chorus 첫 줄) / Higher register / **1 held note** / Stronger dynamics
-
-**핵심:** 리드 1명이 더 세게/높게 = OK, 레이어 추가 = 금지
-
-### 4.1 Belt/Tempo Conflict Rule
-
-| BPM | Mood | 보컬 지시 |
-|-----|------|----------|
-| 70-80 | Chill | higher register + stronger dynamics (NO belt) |
-| 80-90 | Hazy | higher register + controlled intensity |
-| 90+ | Warm | belt 허용 |
-
-**안전한 대체:** `belt` → `higher register + stronger dynamics`
-
----
-
-## 5. Variation Slots
-
-| Slot | 선택 |
-|------|------|
-| Lead Instrument | Nylon guitar / Felt piano / Rhodes / Ambient pad |
-| Rhythm Source | No drums / Soft shaker / Brush kit / Understated kick |
-| BPM | 컨셉 범위 내 |
-| Key/Mode | 최소 3개 key bucket |
-| Mood | Chill / Hazy / Ethereal / Nocturne / Sentimental / Melancholic |
-| Vocal Persona | Female husky / Female pure / Male soulful / Male soft |
-
----
-
-## 6. Exclude Style Library
-
-> **최대 3개 그룹, 총 8개 키워드 이내**
-
-**Group A (Vocal FX):** `autotune heavy, vocoder, vocal chop, hyperpop vocal`
-**Group B (EDM Arr):** `EDM drops, big room, festival, supersaw lead`
-**Group C (Harmony):** `choir, stacked harmonies, backing vocal layers, doubled vocals`
-
-**운영:** Harmony Guard로 먼저 제어 → 실패 시 Exclude 1-2개 추가
-
----
-
-## 7. Self-QC 슬롯 체크리스트
-
-| # | 슬롯 | 체크 |
-|---|------|------|
-| S0 | 핵심 앞에 | Genre/BPM 첫 5단어 내 |
-| S1 | Raw Vocal | Raw, Solid, Direct, Dry |
-| S2 | Vocal Persona | gender + tone + delivery |
-| S3 | Chest voice | 진성 강제 |
-| S4 | Articulation First | Style 첫 단어 `Articulation.` |
-| S5 | Reverb | Moderate reverb, room ambience |
-| S6 | Sound Engineering | EQ balanced sound, clean mix |
-| S7 | Harmony Guard | 2줄 필수 |
-| S8 | Energy Permission | 에너지 허용 문장 |
-| S9 | Musicality | V2 lift, Chorus held note |
-| S10 | Exclude | 최대 8개 |
-
-> FAIL 시 재생성 + 900자 이하까지 압축 루프
+생성 후에는 실제로 듣고 보컬 성별·발음·리듬·조성·길이·도입부·곡 전개를 확인한다. 텍스트 프롬프트나 하네스가 오디오 결과의 정확한 BPM, key, 길이, 보컬을 증명하지 않는다. 모델 버전과 생성 옵션은 해당 곡에서 실제 사용한 값만 기록하며, 모든 곡에 같은 버전을 가정하지 않는다.
