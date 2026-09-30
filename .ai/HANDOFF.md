@@ -1,4 +1,15 @@
 ---
+HANDOFF: Codex -> 젠
+Date: 2026-09-30 23:05:51
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: Wavvy 17:00 03 「너와」의 Intro 포함 67행 완곡 초안과 track-prompt/full-song 검사 개선을 구현 커밋 1c49abe로 원격 반영했다. STYLE 822자/EXCLUDE 6개, 제안 106 BPM·G Major·남성 중저음, 4/4·92마디 약 208.3초는 계획값이다. 33 tests·compile·diffcheck·03 gates PASS, 독립 Astra xhigh CLEAN(C/H 0·원칙 관찰 0). 젠이 2026-09-30 트랙 03의 현재 가사·프롬프트 초안에 PASS했다. 실제 음원 길이·Intro·보컬·BPM/키는 미확인이다.
+Next-TODO: 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인. 04의 실제 음원·기술값은 자료 입수 후 확인. 05–20 신규 곡은 젠과 공동 제작.
+Resume-Trigger: -wavvy
+Commits: 1c49abe, (이번 기록 커밋)
+---
+
+---
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 22:27:04 +0900
 Project: ~/Project/wavvy

@@ -10,7 +10,8 @@
   - ✅ **구현·독립 검토 완료**: 공통 `parse_track_source_fields`가 헤더 메타와 STYLE/EXCLUDE/LYRICS 구역을 함께 읽는다. 대소문자·주변 공백 변형을 포함한 중복 헤더와 중복 STYLE/LYRICS를 거부하므로 가사 검토·프롬프트 검사·아카이브가 서로 다른 값을 읽지 않는다. 중복 BPM `106`/`125` 회귀에서 양쪽 gate와 아카이브 모두 거부. 실제 03 track-prompt/lyrics-review full-song/lyric-skill PASS, 01/02/04 파싱 성공, 33 tests·py_compile·diffcheck PASS. fresh 격리 검토 `shared_parser_review`는 Critical/High 0·원칙 관찰 0으로 CLEAN. 로그 `/tmp/wavvy-prompt-gate-{track03.json,lyrics03.json,skill03.json,unittest.log,pycompile.log,diffcheck.log,duplicate-regression.log,duplicate-header-regression.log,remix-parse.log}`. 텍스트 검사는 실제 생성 음원의 길이·Intro·보컬·BPM/키를 보증하지 않는다.
   - ✅ **04 기존곡 리믹스 원문**: 젠이 제공한 STYLE와 혼합 언어 LYRICS를 `input/tracks/04_낮꿈 (Accoustic Version).txt`에 그대로 저장. 과거 기각 표현도 원문대로 보존하며 품질 PASS로 취급하지 않음. 12-00 저장 파일에는 해당 전체 가사가 아닌 prompt-only 입력만 있음.
   - ✅ **시리즈 상태**: 총 20곡(리믹스 01/02/04, 신규 03/05–20) concept 반영. `.ai/state.json` revision 5 `track_source_draft`, txt 4개, state check PASS·warning/blocker 0.
-  - **남은 TODO**: 젠의 03 가사·제안 프롬프트 검토와 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인이 남는다. 04의 실제 음원·기술값은 자료가 들어오면 확인하고, 05–20은 젠과 신규 제작.
+  - ✅ **사용자 승인**: 젠이 2026-09-30 트랙 03 「너와」의 현재 가사·프롬프트 초안에 PASS했다. 실제 생성 음원 확인과는 별개다.
+  - **남은 TODO**: 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인이 남는다. 04의 실제 음원·기술값은 자료가 들어오면 확인하고, 05–20은 젠과 신규 제작.
 
 - **Historical artifact pruning** (2026-06-02 34차, `-record`)
   - ✅ **삭제 기준 확인**: `concept.md`는 시리즈별 전곡 정보 원장으로 보존. 하네스/스킬/에이전트 라우팅 참조가 없는 과거 기록만 삭제 대상으로 분류
@@ -1261,3 +1262,8 @@
 - 01 「서랍 (Acoustic Remix)」와 02 「공강 (Accoustic Remix)」의 사용자 제공 STYLE/LYRICS를 txt로 저장했다. 02의 `Accoustic` 표기는 그대로 두고, 01 STYLE의 잘린 `highly en`은 젠 확인대로 `high-energy`로 보완했다. EXCLUDE는 제공되지 않아 비웠다. 이전 17-00 Pop R&B concept와 「올라가」 샘플은 바이트 동일성을 확인해 archive에 보관했고 현재 후보에서 제외했다.
 - 기존 state writer는 active_series가 바뀌어도 20-00의 `uploaded` phase/next_action을 넘겼다. `wavvy_harness/state.py`는 같은 시리즈의 수동 값을 보존하고 다른 시리즈는 실제 concept/artifact에서 다시 추론하도록 수정했다. `check_state`도 다른 시리즈 phase를 끌고 오지 않는다. 명시 `--phase`와 `--if-match`는 유지한다.
 - 실제 `state --write --if-match 3`은 `SERIES/17-00`, revision 4, `track_source_draft`, txt 2개, final sources 없음으로 기록했다. `state --check --json`은 PASS/warnings[]/blockers[]. 검증: unittest 23개 PASS(`/tmp/wavvy-1700-state-unittest.log`), py_compile PASS(`/tmp/wavvy-1700-state-pycompile.log`), diffcheck PASS(`/tmp/wavvy-1700-state-diffcheck.log`), writer/check 원시 JSON(`/tmp/wavvy-1700-state-write.json`, `/tmp/wavvy-1700-state-check.json`). Root가 전달한 격리 Astra xhigh 검토는 CLEAN(Critical/High 0, 원칙 관찰 없음). 음원·실측 BPM·음악 품질은 검증하거나 확정하지 않았다.
+## 2026-09-30 [CDX] Wavvy 17:00 03 초안·프롬프트/완곡 검사 세션 기록
+- 구현 커밋 `1c49abe`를 Wavvy `master`/원격에 반영했다. 17:00은 20곡(01/02/04 제공 리믹스, 03/05–20 신규)이며 현재 state revision 5 `track_source_draft`, txt 4개다.
+- 03 「너와」는 Intro 포함 67행 완곡 초안, 남성 중저음·G Major·106 BPM 제안, STYLE 822자/EXCLUDE 6개다. 4/4·92마디 약 208.3초는 편곡 추정이며 약 3:20 목표다. 실제 생성 음원의 길이·Intro·보컬·BPM/키는 확인되지 않았다. 04의 실제 BPM/key도 unknown이다.
+- `track-prompt`는 STYLE 900자·EXCLUDE 8개와 보컬 성별·조성·BPM 정합을 검사한다. `lyrics-review --draft-scope full-song`은 Intro/Outro·길이/마디 계획·실제 txt 본문과 BPM 연결을 검사한다. 공통 파서는 중복 헤더/구역을 거부한다. 33 tests·py_compile·diffcheck·03 관련 3개 gate PASS, 독립 Astra xhigh 검토 CLEAN(Critical/High 0, 원칙 관찰 0).
+- 젠이 2026-09-30 트랙 03의 현재 가사·프롬프트 초안에 PASS했다. 다음: 재생성 음원의 실제 길이·Intro·보컬·BPM/키를 확인한다. 04의 음원/기술값은 자료가 들어오면 확인한다. 05–20은 젠과 공동 제작한다.
