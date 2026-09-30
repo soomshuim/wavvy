@@ -22,9 +22,18 @@ Scope: series concept and two user-provided remix source texts, followed by the 
 3. Write the new concept as a draft: explicit 17:00 Pop R&B default override, two supplied source rows, and an unsupplied Track 04 remix placeholder. Mark the old sample as history rather than a production candidate. Do not invent Track 04's identity/source, new-song drafts, audio properties, key/tempo for Track 02, or final upload metadata.
 4. Check exact source text, archived bytes, filenames, and `git diff --check`. Do not run media completion gates for this draft.
 
-## Outcome (2026-09-30)
+## Previous outcome (2026-09-30, before Tracks 03–04)
 
 - The current concept contains the 20-song target (three acoustic-version remixes at 01/02/04 and 17 new songs at 03/05–20), two supplied source tracks, and only a placeholder for 04. It preserves the user spelling `Accoustic Remix`, the allowed 125 BPM ceiling, and the clarified `high-energy` ending. Track 03 draft work is separate; no new-song source or media is included in this change.
 - The prior concept and `올라가` sample are archived byte-for-byte; SHA-256 comparison against their previous tracked versions passed. They are history, not current production candidates.
 - The state writer now keeps manual `phase`/`next_action` on the same series and infers both for a different series from its concept/artifacts. Explicit `--phase` and `--if-match` remain effective. Revision 4 was written by `python3 wavvy.py state SERIES/17-00 --write --if-match 3 --json` without a phase override; it infers `track_source_draft` with two txt sources, no final sources, and a next action to review drafts and follow the concept's next source work.
 - Validation: 23 unit tests PASS (`/tmp/wavvy-1700-state-unittest.log`), py_compile PASS (`/tmp/wavvy-1700-state-pycompile.log`), diffcheck PASS (`/tmp/wavvy-1700-state-diffcheck.log`), state write output (`/tmp/wavvy-1700-state-write.json`), and state check PASS with no warnings or blockers (`/tmp/wavvy-1700-state-check.json`). The controller reported an isolated Astra xhigh reviewer CLEAN (Critical/High 0, no principle observations). No musical quality or audio property was inferred from the source text.
+
+## Continuation: Tracks 03–04
+
+- The user confirmed the 20-song order: acoustic-version remixes at 01, 02, and 04; new songs at 03 and 05–20.
+- Track 03 is titled `너와` and has a new full-lyric-draft txt and separate skill artifact. The longtime-friend lyric awaits the user's review. Acoustic neo-soul and 106 BPM are proposals; key and vocal gender are unknown.
+- Track 04 is `낮꿈 (Accoustic Version)`. Its user-supplied STYLE and bilingual LYRICS are saved verbatim as a remix source txt. The older `SERIES/12-00` Track 07 txt has only a prompt-only LYRICS field; it is not treated as the source of the newly supplied full lyric.
+- Track 04's bilingual lyric, discreet harmony doubles, intimate female lead, and natural breath detail are source-specific overrides only. The previously rejected line remains in this supplied source without being made a precedent for new songwriting or assigned a quality PASS.
+- Concept now records the 03 review draft and 04 supplied remix, with no final-source or audio-complete claim. After the txt files exist, write the current active state through `wavvy.py state` with revision matching and check the draft phase.
+- State was written with `--if-match 4` to revision 5. The check returned PASS: active `SERIES/17-00`, phase `track_source_draft`, four txt sources, no Final Track Sources, warnings `[]`, blockers `[]` (`/tmp/wavvy-17-04-state-check.json`).

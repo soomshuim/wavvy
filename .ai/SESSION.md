@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-06-02 (34차 업데이트 — historical artifact pruning)
+> Last updated: 2026-09-30 (17:00 03 초안 및 04 원문 등록)
 
 ## 진행 중
+
+- **17-00 03 「너와」 초안·04 「낮꿈 (Accoustic Version)」 원문** (2026-09-30)
+  - ✅ **03 신규 가사**: 오래된 친구 앞에서 꾸밈없이 투덜대고 웃는 첫 초안을 `input/tracks/03_너와.txt`에 저장. 어쿠스틱 네오소울 106 BPM STYLE/EXCLUDE는 제안이며 키·보컬 성별 미정. 가사 본문 SHA-256 `e6ea4c559b05b4dc4471f5b13a4d6ad92310667f684fe0b311da2785e0968886`; `lyrics-skill` full-lyric-draft PASS. 격리 Astra 검토 CLEAN(부모 전달). **젠의 가사 검토는 아직 남음**.
+  - ✅ **04 기존곡 리믹스 원문**: 젠이 제공한 STYLE와 혼합 언어 LYRICS를 `input/tracks/04_낮꿈 (Accoustic Version).txt`에 그대로 저장. 과거 기각 표현도 원문대로 보존하며 품질 PASS로 취급하지 않음. 12-00 저장 파일에는 해당 전체 가사가 아닌 prompt-only 입력만 있음.
+  - ✅ **시리즈 상태**: 총 20곡(리믹스 01/02/04, 신규 03/05–20) concept 반영. `.ai/state.json` revision 5 `track_source_draft`, txt 4개, state check PASS·warning/blocker 0.
+  - **남은 TODO**: 젠과 03 가사·제안 프롬프트 검토. 04 음원·실제 BPM/키는 자료가 들어오면 확인. 05–20은 젠과 신규 제작.
 
 - **Historical artifact pruning** (2026-06-02 34차, `-record`)
   - ✅ **삭제 기준 확인**: `concept.md`는 시리즈별 전곡 정보 원장으로 보존. 하네스/스킬/에이전트 라우팅 참조가 없는 과거 기록만 삭제 대상으로 분류
