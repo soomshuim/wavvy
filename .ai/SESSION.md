@@ -1328,3 +1328,7 @@
 - 젠이 제목·집에서 좋아하는 음악을 따라 부르다가 다음 곡도 좋아 계속 듣는 주제·신나는 Acoustic R&B/acoustic neo-soul·D Major·122 BPM·남성 단독 편안한 중음·기타/베이스의 경쾌한 주고받기를 확정하고 제작을 승인했다. txt와 full-song 가사 기록, plan, concept의 09 초안 행을 저장했다. 정확한 가사/STYLE/EXCLUDE 문구는 아직 젠의 PASS를 받지 않았다.
 - 가사 본문 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`, STYLE 740자, EXCLUDE 7개다. 3 Verse, Intro/Outro, 기악 쉼, 4/4·104마디는 약 204.6초(3:25) 편곡 추정이다. 실제 음원은 없어서 길이·보컬·BPM·조성은 실측하지 않았다.
 - full-song·lyrics-review·track-prompt·doctor·state check·diffcheck PASS. 원시 결과는 `/tmp/wavvy-17-09-*.json`과 `/tmp/wavvy-17-09-diffcheck.log`. 격리 텍스트 검토는 controller가 CLEAN/PASS 회수했고, 이후 길이 게이트를 위해 마디 계획만 100→104로 조정했다. STYLE·EXCLUDE·LYRICS 본문은 유지했다. state revision 10·txt 9개·`track_source_draft`; Tracks 01–08과 Final Track Sources는 변경하지 않았다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 09 「한 곡만 더」 사용자 PASS
+- 젠이 Track 09의 현재 전체 가사·STYLE·EXCLUDE에 PASS했다. txt·full-song 가사 기록·concept·plan의 승인 상태만 현행화했다. STYLE·EXCLUDE·LYRICS 본문과 가사 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`는 유지했다.
+- state revision 10·txt 9개·`track_source_draft`를 유지하며 Final Track Sources로 승격하지 않았다. 104마디·약 3:25는 편곡 추정치다. 실제 음원은 없어 길이·보컬·BPM·조성을 실측하지 않았다. 다음 신규곡은 10–20이며, 09 음원이 제공되면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다.
