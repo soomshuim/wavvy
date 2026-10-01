@@ -43,6 +43,7 @@ Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
 
+
 ---
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 20:52:19
@@ -1104,6 +1105,17 @@ Agent: Codex
 Summary: Wavvy 전체 작사 스킬·규칙·검토 하네스를 지정한 13곡 선례에 맞춰 개정. 저장된 Wavvy 가사와 젠이 채팅으로 제공한 「낮꿈」 원문을 구분했고, 기각된 “내 이름 불러도 / 살짝 뒤로 미뤄 둬”를 승인 사례로 쓰지 않음. 검토 순서는 문장 표현→앞뒤 연결→감정 흐름. `lyrics-review`는 실제 본문 해시·정확 인용·이유·Verdict가 묶인 기록을 검사하며, package-only PASS는 가사 검토가 아님. 자동 의미·가창·작성 주체 보증 없음. 새 가을 R&B 시리즈, 기존 series/audio/state/AGENTS/CLAUDE는 이번 변경 범위 밖.
 Verification: unittest 20 PASS(`/tmp/wavvy-lyric-unittest.log`), py_compile PASS(`/tmp/wavvy-lyric-pycompile.log`), skill quick_validate PASS(`/tmp/wavvy-lyric-quickvalidate.log`), git diff --check PASS(`/tmp/wavvy-lyric-diffcheck.log`), package smoke PASS PACKAGE_ONLY NOT_REVIEWED(`/tmp/wavvy-lyric-package-smoke.json`). Controller reported isolated Astra xhigh CLEAN(Critical/High 0, principle observations 0), reran tests and CLI artifact/no-artifact checks, and checked three skill behavior samples(A/C fit, B awkward expression rejected).
 Next-TODO: 없음 — 이번 요청 범위의 구현·검토·기록 완료.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+---
+HANDOFF: Codex -> User
+Date: 2026-10-01 09:00:15 +0900
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17:00 Track 05 「한 정거장」의 전체 가사와 Acoustic R&B STYLE/EXCLUDE 초안을 `SERIES/17-00/input/tracks/05_한 정거장.txt`에 저장하고 별도 full-song 검토 기록을 연결했다. 제목·버스 한 대를 보내는 상황·후렴 `다음 거 타면 돼`·여성 단독 중음·D Major·112 BPM은 젠의 제작 방향이다. 94마디 계획은 약 3:21 추정치이며 실제 음원은 없다. concept은 초안/user review pending으로만 표시하고 state writer로 revision 6, txt 5개, `track_source_draft`를 기록했다. 기존 01–04는 수정하지 않았다.
+Verification: full-song artifact·lyrics-review·track-prompt·doctor·state check·diffcheck PASS(`/tmp/wavvy-17-05-*.json`, `/tmp/wavvy-17-05-diffcheck.log`). `validate`는 MP3/WAV 소스 음원이 없어 실패했다(`/tmp/wavvy-17-05-validate.log`). 독립 격리 검토는 Critical/High 0으로 회수됐다. 텍스트 검사는 실제 가창·음원 길이를 보증하지 않는다.
+Next-TODO: 젠의 05 가사/STYLE 검토. 생성 뒤 실제 Intro·길이·보컬·BPM·조성을 확인한다. 05를 Final Track Sources로 승격하지 않는다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---

@@ -1267,3 +1267,9 @@
 - 03 「너와」는 Intro 포함 67행 완곡 초안, 남성 중저음·G Major·106 BPM 제안, STYLE 822자/EXCLUDE 6개다. 4/4·92마디 약 208.3초는 편곡 추정이며 약 3:20 목표다. 실제 생성 음원의 길이·Intro·보컬·BPM/키는 확인되지 않았다. 04의 실제 BPM/key도 unknown이다.
 - `track-prompt`는 STYLE 900자·EXCLUDE 8개와 보컬 성별·조성·BPM 정합을 검사한다. `lyrics-review --draft-scope full-song`은 Intro/Outro·길이/마디 계획·실제 txt 본문과 BPM 연결을 검사한다. 공통 파서는 중복 헤더/구역을 거부한다. 33 tests·py_compile·diffcheck·03 관련 3개 gate PASS, 독립 Astra xhigh 검토 CLEAN(Critical/High 0, 원칙 관찰 0).
 - 젠이 2026-09-30 트랙 03의 현재 가사·프롬프트 초안에 PASS했다. 다음: 재생성 음원의 실제 길이·Intro·보컬·BPM/키를 확인한다. 04의 음원/기술값은 자료가 들어오면 확인한다. 05–20은 젠과 공동 제작한다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 05 draft
+- 젠은 05 제목 「한 정거장」, 버스 한 대를 보내며 함께 있고 싶은 설렘, 후렴 `다음 거 타면 돼`, Acoustic R&B, 여성 단독 중음, D Major, 112 BPM, Intro 포함 약 3:20 목표를 확정했다. 완성 가사와 STYLE에 대한 PASS는 아직 받지 않았다.
+- `SERIES/17-00/input/tracks/05_한 정거장.txt`와 `.ai/lyrics/2026-10-01_17-00_05_한-정거장-full-draft.md`를 저장했다. 4/4·94마디로 약 201.4초를 추정하며 실제 음원 길이는 미측정이다. STYLE 770자, EXCLUDE 7개다. 01–04 원본은 수정하지 않았다.
+- concept은 05를 review pending 초안으로만 기록했다. `state --write --if-match 5`는 revision 6, `track_source_draft`, txt 5개, 오디오 0개로 PASS했다. full-song artifact·lyrics-review·track-prompt·doctor·state check와 diffcheck 모두 PASS. 원시 결과는 `/tmp/wavvy-17-05-*.json` 및 `/tmp/wavvy-17-05-diffcheck.log`에 있다. `validate SERIES/17-00`은 소스 오디오 MP3/WAV가 없어 실패했다(`/tmp/wavvy-17-05-validate.log`); 초안 단계의 예상된 미충족 조건이다.
+- 다음 실제 작업은 젠의 05 가사/STYLE 검토와 생성 후 청취·길이/보컬/조성/템포 확인이다. final source나 업로드 완료는 주장하지 않는다.
