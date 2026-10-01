@@ -1254,3 +1254,15 @@ Next-TODO: 젠이 10 가사·STYLE·EXCLUDE와 제목/여성·조성·템포 제
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 제공한 「타임캡슐」 3쪽 멜로디·코드 악보와 공개자료를 읽고 17:00 Track 10 「그때의 빛」 미승인 초안을 수정했다. 어쿠스틱 기타 중심의 경쾌한 리듬·열리는 후렴·짧은 단조 색채를 STYLE에, 회상 뒤 조금 돌아 걷고 더 걷고 싶은 작은 변화를 가사에 반영했다. 원곡의 가사·선율·코드열은 재현하지 않았고 PDF SHA/페이지 근거는 `.ai/research/2026-10-01_17-00-track-10-time-capsule.md`에 기록했다. 104 BPM/F Major/여성 단독은 신곡 제안값이며 미승인·미실측이다. 01–09는 보존했고, concept은 기존 초안 설명만 최신 txt에 맞췄다. state revision 12·txt 10개·`track_source_draft`이며 Final Track Sources는 승격하지 않았다.
+Verification: STYLE 829/900자·EXCLUDE 7/8개, 가사 SHA-256 `f7fc1fde8be7a4d4c5215c5de397c67f95c5782153b1cf885b61714274349519`. full-song·lyrics-review·track-prompt·doctor PASS(`/tmp/wavvy-17-10-revision-*.json`). 88마디 약 3:23은 편곡 추정치다. 실제 생성 음원은 없어 길이·보컬·BPM·조성·편곡을 확인하지 않았다.
+Next-TODO: 젠이 Track 10 가사·STYLE·EXCLUDE와 제목·제안 음악값을 검토한다. 음원이 생기면 실제 결과를 확인한다. 11–20은 젠과 새로 제작한다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---

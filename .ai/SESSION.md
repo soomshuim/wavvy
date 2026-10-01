@@ -1,6 +1,13 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-01 (17:00 Track 07 「봄비같은 너」 사용자 제공 리믹스 원문)
+> Last updated: 2026-10-01 (17:00 Track 10 「그때의 빛」 악보 근거 반영 초안)
+
+## 2026-10-01 [CDX] 17:00 Track 10 악보 근거 반영 초안
+
+- 젠이 다비치 「타임캡슐」 3쪽 멜로디·코드 PDF를 제공하고 Track 10에 원리를 꼼꼼히 반영하도록 요청했다. `.ai/research/2026-10-01_17-00-track-10-time-capsule.md`에 PDF SHA·페이지별 관찰·공개자료 URL·한계를 기록했다. 원곡 선율·가사·코드열은 재현하지 않았다.
+- `SERIES/17-00/input/tracks/10_그때의 빛.txt`는 어쿠스틱 기타 리듬과 분명한 라이브 드럼/베이스, 낮은 대화식 절과 넓게 열리는 후렴, 잠깐의 단조 색채 후 따뜻한 회귀를 제안한다. 가사는 어린 시절의 저녁을 떠올린 뒤 고개를 들고 조금 돌아 걸으며 집에 다 와서도 더 걷고 싶어지는 작은 변화를 담았다. `104 BPM`·`F Major`·여성 단독은 이 신곡의 제안값이며, 음원 실측이나 사용자 PASS가 아니다.
+- 4/4·88마디 계획은 약 203.1초(3:23) 추정이다. STYLE 829/900자·EXCLUDE 7/8개. 현재 가사 본문 SHA-256 `f7fc1fde8be7a4d4c5215c5de397c67f95c5782153b1cf885b61714274349519`. full-song·lyrics-review·track-prompt·doctor PASS(`/tmp/wavvy-17-10-revision-*.json`); state writer revision 12·10 txt·`track_source_draft`. 실제 음원 길이·BPM·조성·보컬·편곡은 확인하지 않았다.
+- `concept.md`는 기존의 미승인 초안 설명만 현재 txt에 맞게 바로잡았다. Final Track Sources 승격과 사용자 승인 표기는 하지 않았다. 01–09는 보존했고, 10의 가사·STYLE·EXCLUDE와 제목·제안 음악값에 대한 젠의 최종 검토가 남았다.
 
 ## 진행 중
 
