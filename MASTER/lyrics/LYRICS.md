@@ -110,9 +110,9 @@ This document remains the SSOT for direct Suno Lyrics input. The skill must pres
 
 Suno [공식 도움말](https://help.suno.com/en/articles/2415873)은 Custom Mode에서 직접 쓴 전체 가사 입력을 안내한다. Wavvy의 `full-lyric-draft`는 사용자 검토를 위한 원문이며, 승인된 본문은 이 경로에 넣을 수 있다. `suno-prompt-only`는 Suno가 가사를 쓰게 하는 별도 선택이다. 두 모드를 한 LYRICS 본문에 섞지 않는다.
 
-새 **완곡**을 요청받으면 초안 기록에 `draft_scope: full-song`, 목표 길이(초), 예상 BPM, 박자, 순서별 섹션 마디 수를 적는다. 예상 길이(초)는 `전체 마디 × 박자 수 × 60 ÷ BPM`으로 계산한다. 곡의 의미와 구조에 맞춰 가사를 충분히 쓰되 글자 수 하한, 장면 수, 기계적 반복으로 길이를 채우지 않는다. 기본적으로 `[Intro]`와 `[Outro]`를 계획하고, 다른 섹션은 곡에 맞게 고른다. 명시적인 사용자·트랙 구조 예외는 기록한다. 짧은 발췌, 기존 원문 기록, review-only, prompt-only에는 완곡 계획을 강제하지 않는다.
+새 **완곡**을 요청받으면 초안 기록에 `draft_scope: full-song`, 목표 길이(초), 예상 BPM, 박자, 순서별 섹션 마디 수를 적는다. 예상 길이(초)는 `전체 마디 × 박자 수 × 60 ÷ BPM`으로 계산한다. 기본 출발점은 `[Intro]`, 짧게 나눈 Verse 3개, `[Outro]`다. 곡에 맞는 Chorus·Bridge·연주 구간을 사이에 두고, 가창 구절 뒤 보컬이 쉬는 마디도 계획한다. 다른 Verse 개수가 맞으면 그 곡의 이유를 `verse_structure_exception`에 적는다. 글자 수 하한·행 길이 상한이나 가사 총량 증가를 목표로 삼지 않는다. 한 문장을 줄바꿈만 해서 숨 쉴 틈이 생겼다고 판정하지 않는다. 실제 이어지는 문장 길이와 Verse 밀도, 구절 뒤 쉼을 읽고 소리 내어 검토한다. 짧은 발췌, 기존 원문 기록, review-only, prompt-only에는 이 신규 완곡 계획을 강제하지 않는다.
 
-섹션 마디 수는 작성자가 고른 편곡 계획이며 가사 한 줄을 고정 마디 수로 환산한 값이 아니다. 이 계산과 태그는 제작 목표일 뿐이다. Suno가 실제 Intro·길이·박자를 지키는지는 생성 후 오디오로 확인하고, 부족하면 가사/구조 또는 Extend를 검토한다. [Suno의 길이 안내](https://help.suno.com/en/articles/13924929)는 단일 생성의 상한과 Extend를 설명하며 특정 곡의 목표 길이를 보장하지 않는다.
+섹션 마디 수는 작성자가 고른 편곡 계획이며 가사 한 줄을 고정 마디 수로 환산한 값이 아니다. 초안 Self-Gate에는 Verse별 실제 가창행 수, 가장 긴 가창행, 이어지는 두 행의 자연스러운 구절 구분, 인용한 구절 뒤 쉼을 남긴다. 글자 수만으로 가창성을 판정할 수 없으므로 이는 작성자의 검토 근거다. 이 계산과 태그는 제작 목표일 뿐이다. Suno가 실제 Intro·길이·박자·숨 쉴 틈을 지키는지는 생성 후 오디오로 확인하고, 부족하면 가사/구조 또는 Extend를 검토한다. [Suno의 길이 안내](https://help.suno.com/en/articles/13924929)는 단일 생성의 상한과 Extend를 설명하며 특정 곡의 목표 길이를 보장하지 않는다.
 
 ---
 
@@ -135,7 +135,7 @@ Suno [공식 도움말](https://help.suno.com/en/articles/2415873)은 Custom Mod
 `[Kick in]`, `[Drums enter]`, `[Pad widens]` → Style Prompt로
 
 ### 2.4 허용 태그
-**완곡 초안 기본 구조:** `[Intro]`, `[Outro]` (명시한 사용자·트랙 예외가 있으면 기록)
+**신규 완곡 초안 기본 구조:** `[Intro]`, Verse 3개, `[Outro]` (명시한 사용자·트랙 예외가 있으면 기록)
 **곡에 맞춰 선택:** `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Hook]`, `[Bridge]`, `[Instrumental]`, `[End]`
 
 보컬 성격과 편곡 지시는 가사 줄이나 구조 태그에 끼워 넣지 말고 Style에 쓴다.

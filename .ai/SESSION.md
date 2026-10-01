@@ -1278,3 +1278,13 @@
 - 젠은 첫 05 초안이 “너무 빡빡해서 숨 쉴 틈조차 없어”라고 피드백하고 Verse를 늘리되 문장을 짧게 다듬자고 요청했다. 원래 초안 `ef48c6f`는 원격에 반영됐고, 이번 개정은 별도 미커밋 작업이다.
 - 05 txt와 별도 full-song 기록을 함께 개정했다. 각 12행 Verse 2개를 각 6행 Verse 3개로 재배분하고, 후렴은 8행에서 5행으로 줄였다. 첫 후렴 뒤 4마디 기악 구간과 STYLE의 구절 뒤 쉼·기타 응답을 추가했다. 후렴 `다음 거 타면 돼`, 여성 단독 중음, D Major, 112 BPM은 유지했다. STYLE 842/900자, EXCLUDE 7/8개다.
 - 4/4·94마디·약 201.4초는 편곡 추정치다. 한 가사 행에 고정 마디를 강제하지 않는다. Full-song·lyrics-review·track-prompt·state check·doctor·diffcheck가 PASS했다(`/tmp/wavvy-17-05-revision-*.json`, `/tmp/wavvy-17-05-revision-diffcheck.log`). 독립 검토와 젠의 개정 가사/STYLE 승인은 아직 대기 중이다. 실제 음원은 없으며 05는 계속 초안 단계다. 기존 01–04, concept, state는 이번 개정에서 변경하지 않았다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 05 original version selected
+- 젠은 결과가 괜찮게 나왔다며 05의 기존 버전을 PASS했다. 여기서 기존 버전은 `ef48c6f`의 두-Verse 가사·STYLE·EXCLUDE다. 세-Verse 개정안 `74383e6`은 Git 이력으로 보존하고, 현재 txt와 full-song record의 본문은 원래 버전으로 복원했다.
+- 05 txt와 concept에 사용자 승인 상태를 기록했다. 원래 94마디·약 201.4초 계획은 편곡 추정치다. 사용자가 들은 결과물은 이 저장소에 제공되지 않았으므로 실제 길이·보컬·조성·템포를 에이전트가 확인했다고 기록하지 않는다. Final Track Sources 승격과 state phase 변경은 하지 않았다.
+- 젠이 요청한 다음 곡부터의 Verse 수·문장 길이 보정은 별도 하네스·스킬 변경으로 진행한다. 승인된 05 원문에는 이를 소급 적용하지 않는다.
+
+## 2026-10-01 [CDX] New full-song lyric breathing contract
+- 젠의 05 피드백은 다음 신곡부터 적용한다. 신규 완곡은 Verse 3개를 출발점으로 삼고, 다른 구성이 맞으면 `verse_structure_exception`에 곡별 이유를 적는다. Intro/Outro·마디별 목표 길이 계획은 유지한다. 구절을 짧게 다듬고 보컬 쉼/연주 공간을 계획하되 총 가사량이나 글자 수 상한은 강제하지 않는다.
+- `wavvy_harness/gate.py`와 작사 스킬·LYRICS/스펙·CLI 문서를 보정했다. 새 full-song Self-Gate는 Verse별 실제 가창행 수, 가장 긴 가창행, 짧은 구절, 구절 뒤 쉼의 현재 Draft 인용·이유를 요구한다. 행 분할이나 텍스트 근거만으로 실제 가창성을 보증하지 않는다. 03과 원본 05는 `MASTER/lyrics/legacy-full-song-approvals.json`의 경로+Draft SHA256이 맞을 때만 새 증거 계약에서 제외된다.
+- 테스트 36개, Python compile, skill validation, 실제 03/05 full-song gate, diffcheck PASS. 원시 로그: `/tmp/wavvy-breath-{unittest,pycompile,quickvalidate,diffcheck}.log`, `/tmp/wavvy-breath-{03,05}-gate.json`. 부모가 회수한 독립 Astra xhigh 검토는 Critical/High 0이며, 부모는 36개 테스트와 05 원본 `ef48c6f`의 세 txt 구역 일치를 직접 확인했다.

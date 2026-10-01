@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- **신규 완곡 가사 호흡·Verse 구조 검토** (2026-10-01) — 05 「한 정거장」의 음악 결과는 젠이 괜찮다고 판단해 원래 두-Verse 가사·STYLE을 승인했다. 다음 신곡부터 Verse 3개를 기본 출발점으로 삼고 곡별 구조 예외를 기록한다. `lyrics-review`는 Verse별 가창행 수, 가장 긴 가창행, 짧은 구절, 구절 뒤 쉼의 정확 인용·이유를 새 완곡 기록에 요구한다. 글자/행수 상한과 가사 총량 증가는 강제하지 않으며 실제 가창성은 오디오로 확인한다. 기존 승인 03·05는 기록 경로와 원문 해시가 모두 일치할 때만 새 증거에서 제외한다. 36 tests·py_compile·skill validation·03/05 full-song gate·diffcheck PASS; 독립 검토 Critical/High 0.
 - **17-00 「너와」 완곡 초안·Style/가사 검사 현대화** (2026-09-30) — 사용자의 짧은 생성곡·누락된 Intro 피드백을 반영해 03의 가사를 55→67행으로 확장하고 `[Intro]`와 4/4·92마디 계획을 더했다. 약 3:20은 목표이며 106 BPM 기준 약 208.3초는 계획 추정치다. G Major·따뜻한 중저음 남성 보컬도 미승인 제안이며 STYLE은 822자, EXCLUDE는 6개다. `STYLE.md`·`ROLES.md`·`LYRICS.md`/작사 스킬을 고정 문구보다 음악적 의도·완곡 구조·출처 구분 중심으로 고치고, 실제 txt의 `track-prompt`와 `lyrics-review --draft-scope full-song` 검사를 분리했다. 독립 검토가 찾은 중복 STYLE/LYRICS와 BPM 헤더의 경로별 해석 차이는 공통 `wavvy_harness/source.py`에서 메타·구역을 함께 파싱하고 중복을 거부해 해결했다. 중복 BPM 106/125는 양쪽 gate와 아카이브에서 거부한다. 실제 03의 두 gate·lyric-skill, 01/02/04 파싱, 33 tests·py_compile·diffcheck PASS; 최종 fresh 격리 검토 `shared_parser_review`는 Critical/High 0·원칙 관찰 0으로 CLEAN. 사용자 가사·제안 프롬프트 검토와 실제 생성 음원 확인은 남아 있다. 이전 853자/8개 프롬프트와 55행 가사의 검토 결과는 현재 초안에 적용하지 않는다.
 
 ### Changed

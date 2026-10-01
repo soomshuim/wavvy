@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import subprocess
 import re
 from pathlib import Path
@@ -26,6 +27,7 @@ LYRIC_CONTRACT_GATE_NAMES = (
     "Suno Format",
 )
 LYRIC_REVIEW_AXES = ("Expression", "Connection", "Emotional Flow")
+LEGACY_FULL_SONG_APPROVALS = Path("MASTER/lyrics/legacy-full-song-approvals.json")
 TRACK_PROMPT_STYLE_LIMIT = 900
 TRACK_PROMPT_EXCLUDE_LIMIT = 8
 KEY_MODE_RE = re.compile(r"(?<![A-Za-z])([A-G](?:#|b|♯|♭)?)\s+(Major|Minor)\b", re.IGNORECASE)
@@ -221,6 +223,84 @@ def _field_lines(text: str, label: str) -> list[str]:
         match.group(1).strip()
         for match in re.finditer(rf"(?im)^\s*[-*]?\s*{re.escape(label)}\s*:\s*(.*?)\s*$", text)
     ]
+
+
+def _approved_legacy_full_song(repo_root: Path, artifact_path: Path, draft: str) -> bool:
+    """Exempt only the exact already-approved Draft at its original record path."""
+    try:
+        artifact = artifact_path.resolve().relative_to(repo_root.resolve()).as_posix()
+        approvals = json.loads((repo_root / LEGACY_FULL_SONG_APPROVALS).read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return False
+    digest = hashlib.sha256(draft.strip().encode("utf-8")).hexdigest()
+    return isinstance(approvals, list) and any(
+        isinstance(item, dict) and item.get("artifact") == artifact and item.get("draft_sha256") == digest
+        for item in approvals
+    )
+
+
+def _full_song_breath_checks(constraint_freeze: str, draft: str, evidence: str) -> tuple[list[dict[str, Any]], list[str], list[str]]:
+    """Bind breathing review claims to the written lyric, without scoring its music."""
+    checks: list[dict[str, Any]] = []
+    blockers: list[str] = []
+    decisions: list[str] = []
+    sections: list[tuple[str, list[str]]] = []
+    for raw_line in draft.splitlines():
+        line = raw_line.strip()
+        tag = re.fullmatch(r"\[([^\]]+)\]", line)
+        if tag:
+            sections.append((tag.group(1).strip(), []))
+        elif line and sections:
+            sections[-1][1].append(line)
+    verse_lines = [lines for tag, lines in sections if re.fullmatch(r"Verse(?:\s+\d+)?", tag, re.IGNORECASE)]
+    sung_lines = [line for _, lines in sections for line in lines]
+    exception_entries = _field_lines(constraint_freeze, "verse_structure_exception")
+    exception = exception_entries[0] if len(exception_entries) == 1 else ""
+    exception_ok = len(exception_entries) <= 1 and (not exception or exception.casefold() not in {"unknown", "none", "tbd", "미정", "없음"})
+    checks.append(_check("full_song_verse_structure_exception", exception_ok, exception or "none"))
+    if not exception_ok:
+        blockers.append("verse_structure_exception must contain one concrete song/user/series reason")
+    structure_ok = len(verse_lines) == 3 or bool(exception and exception_ok)
+    checks.append(_check("full_song_verse_count", structure_ok, f"verses={len(verse_lines)}; default=3; exception={exception or 'none'}"))
+    if not structure_ok:
+        blockers.append("new full-song Draft defaults to three Verse sections; record verse_structure_exception for a different structure")
+
+    def record(label: str, evidence_ok: bool, detail: str, status: str) -> None:
+        name = f"full_song_{label.lower().replace(' ', '_')}_evidence"
+        checks.append(_check(name, evidence_ok, detail if evidence_ok else "missing/duplicate/invalid status, exact lyric evidence, or reason"))
+        if not evidence_ok:
+            blockers.append(f"{label} needs one status, current lyric evidence, and a specific phrasing reason")
+        elif status == "FAIL":
+            blockers.append(f"{label} review status is FAIL")
+        elif status == "HOLD":
+            decisions.append(f"{label} review status is HOLD")
+
+    expected_distribution = "; ".join(f"{number}={len(lines)}" for number, lines in enumerate(verse_lines, 1)) or "none"
+    entries = _field_lines(evidence, "Verse Distribution")
+    parts = [part.strip() for part in entries[0].split("|", 2)] if len(entries) == 1 else []
+    status = parts[0].upper() if parts else ""
+    valid = len(parts) == 3 and status in {"PASS", "HOLD", "FAIL"} and parts[1] == expected_distribution and bool(parts[2])
+    record("Verse Distribution", valid, f"recorded={parts[1] if len(parts) > 1 else '<missing>'}; actual={expected_distribution}", status)
+
+    for label in ("Longest Sung Line", "Short Phrasing", "Breathing Room"):
+        entries = _field_lines(evidence, label)
+        parts = [part.strip() for part in entries[0].split("|", 2)] if len(entries) == 1 else []
+        status = parts[0].upper() if parts else ""
+        quote = parts[1][1:-1] if len(parts) == 3 and parts[1].startswith('"') and parts[1].endswith('"') else ""
+        if label == "Longest Sung Line":
+            longest = max((len(line) for line in sung_lines), default=0)
+            quote_ok = bool(quote) and quote in sung_lines and len(quote) == longest
+        elif label == "Short Phrasing":
+            pair = quote.split(" / ")
+            quote_ok = (len(pair) == 1 and quote in sung_lines) or (len(pair) == 2 and any(
+                lines[index:index + 2] == pair
+                for _, lines in sections for index in range(len(lines) - 1)
+            ))
+        else:
+            quote_ok = bool(quote) and quote in sung_lines
+        valid = len(parts) == 3 and status in {"PASS", "HOLD", "FAIL"} and quote_ok and bool(parts[2]) and parts[2].casefold() not in {"n/a", "none", "tbd", "unknown", "미정", "없음"}
+        record(label, valid, quote if quote_ok else "quote absent from the required lyric span", status)
+    return checks, blockers, decisions
 
 
 def _reviewed_body(mode: str, artifact_path: Path, text: str, evidence: str) -> tuple[str, str]:
@@ -501,6 +581,13 @@ def _lyric_artifact_checks(
             song_checks, song_blockers, estimate = _full_song_draft_checks(repo_root, series_path, constraint_freeze, draft)
             checks.extend(song_checks)
             blockers.extend(song_blockers)
+            legacy_approved = _approved_legacy_full_song(repo_root, artifact_path, draft)
+            checks.append(_check("full_song_breath_contract_applies", True, "approved earlier Draft" if legacy_approved else "new full-song Draft"))
+            if not legacy_approved:
+                breath_checks, breath_blockers, breath_decisions = _full_song_breath_checks(constraint_freeze, draft, self_gate)
+                checks.extend(breath_checks)
+                blockers.extend(breath_blockers)
+                user_decisions.extend(breath_decisions)
     elif requested_draft_scope is not None:
         blockers.append("--draft-scope applies only to full-lyric-draft")
 

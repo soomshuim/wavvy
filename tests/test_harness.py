@@ -1,5 +1,6 @@
 import hashlib
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -186,6 +187,31 @@ def write_full_lyric_artifact(path: Path, draft: str, self_gate_extra: str = "",
     body = draft.strip()
     body_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
     quote = next((line.strip() for line in body.splitlines() if line.strip() and not line.startswith("[")), "")
+    if "draft_scope: full-song" in constraint_extra:
+        verse_counts = []
+        sung_lines = []
+        in_verse = False
+        for raw_line in body.splitlines():
+            line = raw_line.strip()
+            tag = re.fullmatch(r"\[([^\]]+)\]", line)
+            if tag:
+                in_verse = bool(re.fullmatch(r"Verse(?:\s+\d+)?", tag.group(1), re.IGNORECASE))
+                if in_verse:
+                    verse_counts.append(0)
+            elif line:
+                sung_lines.append(line)
+                if in_verse:
+                    verse_counts[-1] += 1
+        if len(verse_counts) != 3 and "verse_structure_exception" not in constraint_extra:
+            constraint_extra += "\n- verse_structure_exception: test song uses a different Verse layout"
+        distribution = "; ".join(f"{i}={count}" for i, count in enumerate(verse_counts, 1)) or "none"
+        longest = max(sung_lines, key=len, default="")
+        self_gate_extra += (
+            f'\n- Verse Distribution: PASS | {distribution} | recorded sung rows by verse'
+            f'\n- Longest Sung Line: PASS | "{longest}" | checked the densest row aloud'
+            f'\n- Short Phrasing: PASS | "{quote}" | this phrase has a natural ending'
+            f'\n- Breathing Room: PASS | "{quote}" | the voice rests after this phrase while instruments continue'
+        )
     path.write_text(
         f"""Source Map
 - `MASTER/SSOT.md`
@@ -620,6 +646,93 @@ Self-Gate
             mismatch = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
             self.assertEqual(mismatch["result"], "FAIL")
             self.assertEqual({c["name"]: c["status"] for c in mismatch["checks"]}["full_song_bpm_matches_track_source"], "FAIL")
+
+    def test_new_full_song_breath_evidence_checks_current_draft(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "06_새노래.txt"
+            draft = "[Intro]\n[Verse 1]\n오늘은 잠깐 걷자\n천천히 얘기해\n[Chorus]\n바람을 따라가\n[Verse 2]\n길이 조금 길어도\n너랑 있으면 좋아\n[Instrumental]\n[Verse 3]\n한 번 더 쉬었다가\n집으로 돌아가자\n[Outro]"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male lead.", lyrics=draft)
+            artifact = root / "new-full-song.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse 1=16; Chorus=12; Verse 2=16; Instrumental=12; Verse 3=16; Outro=16\n- track_source: SERIES/17-00/input/tracks/06_새노래.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            valid = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(valid["result"], "PASS", valid)
+            original = artifact.read_text(encoding="utf-8")
+
+            cases = (
+                ("- Verse Distribution: PASS | 1=2; 2=2; 3=2", "- Verse Distribution: PASS | 1=2; 2=9; 3=2", "full_song_verse_distribution_evidence"),
+                ('- Longest Sung Line: PASS | "한 번 더 쉬었다가"', '- Longest Sung Line: PASS | "천천히 얘기해"', "full_song_longest_sung_line_evidence"),
+                ('- Short Phrasing: PASS | "오늘은 잠깐 걷자"', '- Short Phrasing: PASS | "오늘은 잠깐 걷자 / 너랑 있으면 좋아"', "full_song_short_phrasing_evidence"),
+                ('- Breathing Room: PASS | "오늘은 잠깐 걷자"', '- Breathing Room: PASS | "없는 가사"', "full_song_breathing_room_evidence"),
+            )
+            for current, changed, failed_check in cases:
+                with self.subTest(failed_check=failed_check):
+                    artifact.write_text(original.replace(current, changed), encoding="utf-8")
+                    result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+                    self.assertEqual(result["result"], "FAIL")
+                    self.assertEqual({item["name"]: item["status"] for item in result["checks"]}[failed_check], "FAIL")
+
+            artifact.write_text(original.replace("- Breathing Room: PASS", "- Breathing Room: HOLD"), encoding="utf-8")
+            hold = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(hold["result"], "USER_DECISION")
+
+    def test_new_full_song_verse_exception_including_no_verse(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "06_새노래.txt"
+            draft = "[Intro]\n[Chorus]\n오늘은 천천히 걷자\n이 길에서 쉬어 가자\n[Instrumental]\n[Outro]"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male lead.", lyrics=draft)
+            artifact = root / "new-full-song.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Chorus=64; Instrumental=16; Outro=8\n- track_source: SERIES/17-00/input/tracks/06_새노래.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            excepted = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(excepted["result"], "PASS", excepted)
+            self.assertIn("none", str(next(check for check in excepted["checks"] if check["name"] == "full_song_verse_distribution_evidence")))
+            artifact.write_text(artifact.read_text(encoding="utf-8").replace("- verse_structure_exception: test song uses a different Verse layout\n", ""), encoding="utf-8")
+            unexcepted = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual({check["name"]: check["status"] for check in unexcepted["checks"]}["full_song_verse_count"], "FAIL")
+
+    def test_legacy_full_song_exemption_binds_artifact_path_and_draft_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "05_원본.txt"
+            draft = "[Intro]\n[Verse 1]\n오늘은 함께 걷자\n[Verse 2]\n조금만 더 걷자\n[Outro]"
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male lead.", lyrics=draft)
+            artifact = root / ".ai" / "lyrics" / "approved.md"
+            artifact.parent.mkdir(parents=True)
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse 1=44; Verse 2=44; Outro=4\n- track_source: SERIES/17-00/input/tracks/05_원본.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=106)
+            legacy_text = artifact.read_text(encoding="utf-8")
+            legacy_text = legacy_text[:legacy_text.index("\n- Verse Distribution:")].rstrip() + "\n"
+            legacy_text = legacy_text.replace("- verse_structure_exception: test song uses a different Verse layout\n", "")
+            artifact.write_text(legacy_text, encoding="utf-8")
+            manifest = root / "MASTER" / "lyrics" / "legacy-full-song-approvals.json"
+            manifest.parent.mkdir(parents=True, exist_ok=True)
+            manifest.write_text(json.dumps([{"artifact": ".ai/lyrics/approved.md", "draft_sha256": hashlib.sha256(draft.encode("utf-8")).hexdigest()}]), encoding="utf-8")
+            approved = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(approved["result"], "PASS", approved)
+
+            revised = draft.replace("조금만 더 걷자", "이번엔 더 걸어가자")
+            write_track_prompt_source(source, "Acoustic neo-soul, 106 BPM, G Major. Male lead.", lyrics=revised)
+            write_full_lyric_artifact(artifact, revised, constraint_extra=fields, bpm=106)
+            revised_text = artifact.read_text(encoding="utf-8")
+            artifact.write_text(revised_text[:revised_text.index("\n- Verse Distribution:")].rstrip().replace("- verse_structure_exception: test song uses a different Verse layout\n", "") + "\n", encoding="utf-8")
+            revision = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(revision["result"], "FAIL")
+            self.assertEqual({check["name"]: check["status"] for check in revision["checks"]}["full_song_verse_count"], "FAIL")
 
     def test_full_song_scope_does_not_silently_pass_without_plan(self):
         with tempfile.TemporaryDirectory() as tmp:
