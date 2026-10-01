@@ -5,12 +5,12 @@ Last Updated: 2026-10-01
 
 ## Series Status
 
-- **Status**: Concept and track source draft. Three user-provided remixes (01, 02, 04) have STYLE and LYRICS text in `input/tracks/`. The user approved Track 03's expanded full-song lyric and STYLE draft on 2026-09-30. The user approved Track 05's original full-song lyric and STYLE version on 2026-10-01 after reporting that its result sounded acceptable. No Track 05 recording is available here for agent-side technical verification. Remix audio is not present in this repository.
+- **Status**: Concept and track source draft. Three user-provided remixes (01, 02, 04) have STYLE and LYRICS text in `input/tracks/`. The user approved Track 03's expanded full-song lyric and STYLE draft on 2026-09-30. The user approved Track 05's original full-song lyric and STYLE version on 2026-10-01 after reporting that its result sounded acceptable. Track 06 `그냥 좋아` has a new full-song lyric and STYLE/EXCLUDE proposal awaiting user review. No Track 05 or 06 recording is available here for agent-side technical verification. Remix audio is not present in this repository.
 - **Time Slot**: 17:00.
 - **Genre Lanes**: Acoustic R&B, acoustic neo-soul, acoustic indie rock. These are options across the series; an individual track does not need all three at once.
 - **Tempo**: Medium tempo through 125 BPM. No numerical lower bound has been set. The upper allowance of 125 BPM was explicitly confirmed.
 - **Atmosphere**: Autumn warmth and comfortable listening, with room for bright, buoyant grooves. An all-ballad or sluggish mood is not required.
-- **Track Count**: Target 20 total: three acoustic-version remixes (Tracks 01, 02, and 04) plus 17 new songs (Track 03 and Tracks 05–20) to be made with the user. Track 03's title is `너와`; its current draft has the user's PASS. Track 05 `한 정거장` has the user's PASS on the original version; Tracks 06–20 remain unplanned.
+- **Track Count**: Target 20 total: three acoustic-version remixes (Tracks 01, 02, and 04) plus 17 new songs (Track 03 and Tracks 05–20) to be made with the user. Track 03's title is `너와`; its current draft has the user's PASS. Track 05 `한 정거장` has the user's PASS on the original version. Track 06 `그냥 좋아` is a proposal awaiting the user's review; Tracks 07–20 remain unplanned.
 
 ## Series Overrides
 
@@ -27,6 +27,7 @@ The `wavvy.md` 17:00 bright-POP station example is overridden for this series by
 | 03 | 너와 | User-approved expanded full-song draft with Intro and acoustic neo-soul STYLE | 106 BPM, G Major, warm mid-low male lead, and around 3:20 target in approved prompt; audio not measured | New song with the user | `input/tracks/03_너와.txt` |
 | 04 | 낮꿈 (Accoustic Version) | User-provided indie acoustic R&B remix source | Not supplied or measured | `SERIES/12-00/concept.md` Track 07 | `input/tracks/04_낮꿈 (Accoustic Version).txt` |
 | 05 | 한 정거장 | User-approved original full-song lyric and STYLE version (2026-10-01) | 112 BPM, D Major, warm clear midrange female lead in confirmed prompt direction; audio not measured | New song with the user | `input/tracks/05_한 정거장.txt` |
+| 06 | 그냥 좋아 | Full-song lyric and acoustic indie rock STYLE/EXCLUDE proposal; user review pending | 125 BPM, A Major, comfortable midrange male lead in confirmed prompt direction; audio not measured | New song with the user | `input/tracks/06_그냥 좋아.txt` |
 
 The spellings `Accoustic Remix` and `Accoustic Version` are the user's titles for Tracks 02 and 04 and are preserved. The user recalled Tracks 01–02 as earlier 17:00 songs; the repository currently stores their originals in 16:00. The stored earlier 「낮꿈」 track is in 12:00, and its txt contains a prompt-only LYRICS field; the full Track 04 lyric here is from the user's current message. Suno model versions are unspecified. No remix audio, measured BPM, musical quality judgment, or upload-ready result is asserted here.
 
@@ -37,6 +38,7 @@ Track 01's supplied STYLE originally ended with `highly en`. The user clarified 
 - Keep the three user-supplied remix txt files as the source for their STYLE and LYRICS while the series is in draft.
 - Track 03's current lyric and prompt draft received the user's PASS on 2026-09-30. Check the generated audio's duration, Intro, vocal, BPM, and key after regeneration. Its 92-bar plan estimates about 3:28 at 106 BPM; the actual recording remains unchecked.
 - Track 05 `한 정거장` uses the user-confirmed bus-waiting premise and `다음 거 타면 돼` chorus anchor. The user chose the original two-Verse lyric and STYLE version after hearing a result; the shorter three-Verse revision remains only in Git history. A 94-bar 4/4 plan at 112 BPM estimates about 3:21 with Intro and Outro. The reported result was not provided here, so its actual duration, key, tempo, and vocal remain unverified by this agent.
+- Track 06 `그냥 좋아` has a solo, ordinary-day lyric centered on `그냥 좋아 / 오늘은 이대로`, with three short Verses and space for guitar replies. The user confirmed acoustic indie rock, one comfortable midrange male lead, A Major, and 125 BPM. Its 106-bar 4/4 plan estimates about 3:24 toward a 3:20 target. The lyric and Style/Exclude are awaiting user review; no audio result or measured duration, key, tempo, or vocal is claimed.
 - Confirm audio and technical metadata when remix files become available in this repository.
-- Make Tracks 06–20 anew with the user; do not import older songs automatically.
+- Make Tracks 07–20 anew with the user after reviewing the Track 06 proposal; do not import older songs automatically.
 - Promote complete track sources to the Final Track Sources section only through the `finalize-upload` workflow after its prerequisites are met.

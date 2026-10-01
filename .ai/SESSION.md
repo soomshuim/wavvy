@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-09-30 (17:00 03 확장 초안·Style/가사 검사 보강)
+> Last updated: 2026-10-01 (17:00 Track 06 「그냥 좋아」 완곡 초안)
 
 ## 진행 중
+
+- **17-00 06 「그냥 좋아」 전체곡 가사·STYLE 초안** (2026-10-01)
+  - ✅ **사용자 확정 방향**: 별일 없는 하루와 즐거운 혼자 시간, 교훈 없는 마무리. 밝고 편한 acoustic indie rock, 남성 단독 중음, A Major, 처음 제안한 118보다 빠른 125 BPM, `그냥 좋아 / 오늘은 이대로` 후렴.
+  - ✅ **초안 저장**: `SERIES/17-00/input/tracks/06_그냥 좋아.txt`와 `.ai/lyrics/2026-10-01_17-00_06_그냥-좋아-full-draft.md`. 짧은 Verse 3개(각 6행), 구절 사이 기타 응답, 가벼운 밴드. STYLE 801/900자·EXCLUDE 7/8개, 가사 본문 SHA-256 `d9f87639487d27a0f7c62ce2d1103cabac31de915eb3e82bbdcebef2df623612`.
+  - ✅ **계획·검증**: 4/4·106마디를 125 BPM으로 계산하면 203.5초(약 3:24)이며 실제 음원 길이가 아니다. package/full-song artifact/lyrics-review/track-prompt PASS(`/tmp/wavvy-17-06-{package,fullsong,lyrics-review,track-prompt}.json`). controller가 독립적으로 두 artifact gate를 확인하고 격리 검토 CLEAN(Critical/High 0)을 보고했다. state writer PASS revision 7·txt 6개·`track_source_draft`(`/tmp/wavvy-17-06-state-write.json`). 기존 01–05를 고치지 않았다.
+  - **남은 일**: 젠의 06 가사·STYLE 검토. 생성 음원이 생기면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 듣고 확인한다. Final Track Sources 반영은 아직 하지 않는다.
 
 - **17-00 03 「너와」 확장 초안·Style/가사 검사 보강** (2026-09-30)
   - ✅ **03 현재 초안**: `[Intro]`를 더하고 가사 55→67행으로 의미 있게 확장. 오래된 친구 테마와 후렴은 유지. 106 BPM·G Major·따뜻한 중저음 남성 보컬, STYLE 822자·EXCLUDE 6개, 약 3:20 목표는 모두 미승인 제안. 4/4·92마디 계획은 약 208.3초 추정이며 실제 생성 길이는 아니다. 현재 본문 SHA-256 `3e2f035302e55f840b1ae93f6ce47514e6034d43c760c6dd11d2393c9d971896`.
