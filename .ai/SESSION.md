@@ -1332,3 +1332,8 @@
 ## 2026-10-01 [CDX] Wavvy 17:00 Track 09 「한 곡만 더」 사용자 PASS
 - 젠이 Track 09의 현재 전체 가사·STYLE·EXCLUDE에 PASS했다. txt·full-song 가사 기록·concept·plan의 승인 상태만 현행화했다. STYLE·EXCLUDE·LYRICS 본문과 가사 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`는 유지했다.
 - state revision 10·txt 9개·`track_source_draft`를 유지하며 Final Track Sources로 승격하지 않았다. 104마디·약 3:25는 편곡 추정치다. 실제 음원은 없어 길이·보컬·BPM·조성을 실측하지 않았다. 다음 신규곡은 10–20이며, 09 음원이 제공되면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 10 「그때의 빛」 초안
+- 젠의 10번 신규곡 요청에 따라 어린 시절 저녁의 온기가 현재의 긴 하루를 누그러뜨리는 한국어 완곡 초안을 만들었다. 사용자가 제공한 다비치 「타임캡슐」은 회상·위로라는 추상 감정 방향에만 참고했고, 편지/서랍/과거·미래 질문/손잡고 걷기 전개와 가사 표현은 사용하지 않았다. 사용자의 추가 지시대로 유치한 색칠 설명을 버리고 저녁빛·그림자·집에 돌아오라는 목소리를 중심으로 썼다.
+- 제목 「그때의 빛」, 따뜻한 Acoustic R&B / acoustic neo-soul, 여성 단독 진성 중심 중음, F Major, 104 BPM은 모두 제안이며 현재 가사·STYLE·EXCLUDE는 사용자 PASS 전 초안이다. 본문 SHA-256 `18bbd39980ac1fda2dd2b29bac04c50b982aacd53a916a2561e4970e15b8dd63`; STYLE 771/900자, EXCLUDE 7/8개. 88마디·203.1초(약 3:23)는 편곡 추정치이며 실제 음원·길이·보컬·BPM·조성은 확인하지 않았다.
+- `lyrics-skill` full-song, `lyrics-review`, `track-prompt`, doctor, state writer 모두 PASS. 원시 JSON `/tmp/wavvy-17-10-{fullsong,lyrics-review,track-prompt,doctor,state-write}.json`. 격리 텍스트 검토는 CLEAN/PASS. 현행 state revision 11·txt 10개·`track_source_draft`; Final Track Sources는 미승격이다. 젠의 본문/제안값 검토가 다음 단계이며 11–20은 미기획이다.
