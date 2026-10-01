@@ -1310,3 +1310,8 @@
 - 젠은 06의 전체 가사와 최종 funky acoustic indie rock STYLE·EXCLUDE를 PASS했다. 처음 STYLE은 포크처럼 들린다는 피드백으로 교체했다. 현재 가사는 짧은 Verse 3개(각 6행)와 혼자 보내는 별일 없는 하루의 좋은 기분을 담는다. 가사 본문 SHA-256 d9f87639487d27a0f7c62ce2d1103cabac31de915eb3e82bbdcebef2df623612는 승인 수정 전후 동일하다.
 - 승인 프롬프트는 125 BPM·A Major·남성 단독, STYLE 807자, EXCLUDE 정확히 Folk, choir, stacked harmonies, duet vocal, falsetto lead, heavy distortion, heavy 808, EDM drop(8개)이다. 최종 초안 커밋 a6aa8d8(최초 초안 778e9da). track-prompt와 full-song gate PASS. state revision 7·txt 6개·track_source_draft이며 Final Track Sources로 승격하지 않았다. 106마디·약 203.5초는 계획 계산이고 실제 음원은 미실측이다.
 - 남은 일: 젠과 07–20을 제작한다. 06의 생성 음원이 제공되면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 08 「네 취향」 초안
+- 젠이 확정한 제목·상대의 음식/음악 취향을 함께 지내며 좋아하게 되는 주제·acoustic neo-soul·E Major·118 BPM·Intro 포함 약 3:20 목표로 완곡 txt와 가사 검토 기록을 만들었다. 보컬 최종 정정은 1절 여성·2절 남성·3절 여성, 후렴 남녀 화음이다. Bridge 여성 단독은 제안이다. 08만 채널의 단독 리드/무화음 기본 예외로 concept에 명시했다.
+- 100마디 4/4 계획은 약 203.4초 추정치다. STYLE 850/900자, EXCLUDE 6/8개이며 화음을 배제하는 항목은 넣지 않았다. 가사 SHA-256은 `400ed035200e7403c626a5f65eeaf54a3001ad20b5b5fa5030a997db4f5f29c0`. 01–07은 보존하고 08은 사용자 검토 대기 초안으로 둔다.
+- 혼성 보컬을 헤더·STYLE에서 함께 검사하는 `track-prompt` 보정은 별도 실행 워커가 맡았다. 처음 가사 독립 검토 후 젠이 2절 남성으로 정정했고, 부모가 최종 txt/STYLE 배정을 직접 대조했다. full-song·lyrics-review·track-prompt·state check·doctor·diffcheck PASS. 원시 JSON은 `/tmp/wavvy-17-08-*.json`. state writer는 revision 9·txt 8개·`track_source_draft`를 기록했다. 실제 음원·실측 길이/조성/템포/보컬은 없다.

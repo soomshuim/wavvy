@@ -929,6 +929,34 @@ Self-Gate
                         checks = {check["name"]: check["status"] for check in json.loads(result.output)["checks"]}
                         self.assertEqual(checks[failed_check], "FAIL")
 
+    def test_track_prompt_gate_matches_all_explicit_vocal_genders(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic neo-soul\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "08_너와.txt"
+            cases = [
+                ("warm male lead", "Male vocal", "PASS"),
+                ("warm female lead", "Female vocal", "PASS"),
+                ("female verses, male and female choruses", "Male and female vocals", "PASS"),
+                ("여성 벌스, 남성 여성 후렴", "여성과 남성 보컬", "PASS"),
+                ("female and male vocals", "Female vocal", "FAIL"),
+                ("female vocal", "Female and male vocals", "FAIL"),
+                ("female and male; gender unknown", "Female and male vocals", "FAIL"),
+            ]
+            with patch("wavvy.git_repo_root", return_value=root):
+                for vocal, style_vocal, expected in cases:
+                    with self.subTest(vocal=vocal, style_vocal=style_vocal):
+                        style = f"Acoustic neo-soul, 106 BPM, G Major. {style_vocal}."
+                        write_track_prompt_source(source, style, vocal=vocal)
+                        result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                        payload = json.loads(result.output)
+                        checks = {check["name"]: check["status"] for check in payload["checks"]}
+                        self.assertEqual(payload["result"], expected, result.output)
+                        self.assertEqual(checks["vocal_gender_metadata_matches_style"], expected)
+                        self.assertEqual(result.exit_code, 0 if expected == "PASS" else 1)
+
     def test_track_prompt_gate_rejects_prior_track03_failure_shape(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

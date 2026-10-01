@@ -61,11 +61,11 @@ def _read_text(path: Path) -> str:
         return ""
 
 
-def _vocal_gender(text: str) -> str:
-    match = VOCAL_GENDER_RE.search(text)
-    if not match:
-        return ""
-    return "female" if match.group().lower() in {"female", "여성"} else "male"
+def _vocal_genders(text: str) -> set[str]:
+    return {
+        "female" if match.group().lower() in {"female", "여성"} else "male"
+        for match in VOCAL_GENDER_RE.finditer(text)
+    }
 
 
 def _key_mode(text: str) -> str:
@@ -139,12 +139,13 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
             blockers.append("Key must name a note and Major/Minor in the txt header and match STYLE")
 
         vocal_text = metadata.get("Vocal", "")
-        vocal_gender = "" if re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE) else _vocal_gender(vocal_text)
-        style_genders = {_vocal_gender(match.group()) for match in VOCAL_GENDER_RE.finditer(style)}
-        gender_ok = bool(vocal_gender) and style_genders == {vocal_gender}
+        vocal_genders = _vocal_genders(vocal_text)
+        style_genders = _vocal_genders(style)
+        gender_known = not re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE)
+        gender_ok = bool(vocal_genders) and gender_known and style_genders == vocal_genders
         checks.append(_check("vocal_gender_metadata_matches_style", gender_ok, f"metadata={vocal_text or '<missing>'}; STYLE={sorted(style_genders)}"))
         if not gender_ok:
-            blockers.append("Vocal must name male/female or 남성/여성 in the txt header and match STYLE")
+            blockers.append("Vocal must name male/female or 남성/여성 in the txt header and match all genders in STYLE")
 
     return {
         "schema": "wavvy.track_prompt_gate.v1",

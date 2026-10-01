@@ -1187,3 +1187,14 @@ Next-TODO: 젠과 08–20을 제작한다. 07 음원이 제공되면 실제 기�
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17:00 Track 08 「네 취향」의 전체 한국어 가사와 acoustic neo-soul STYLE/EXCLUDE 초안을 txt에 저장했다. 최종 보컬 배정은 1절 여성·2절 남성·3절 여성, 후렴 남녀 화음이며 Bridge 여성 단독은 제안이다. 08 한정 보컬 예외를 concept에 명시했다. 118 BPM·E Major·약 3:20은 사용자 확정 프롬프트 방향이고 100마디·약 3:23은 편곡 추정치다. 08은 사용자 검토 대기, state revision 9·txt 8개·track_source_draft이며 01–07은 보존했다.
+Verification: full-song·lyrics-review·track-prompt·state check·doctor·diffcheck PASS(`/tmp/wavvy-17-08-*.json`). 혼성 보컬 검사 보정은 별도 워커가 수행했다. 초기 독립 검토 뒤 젠이 2절 남성으로 정정했으며 부모가 최종 txt/STYLE 배정을 직접 대조했다. 실제 음원은 없고 길이·조성·템포·보컬을 측정하지 않았다.
+Next-TODO: 젠의 08 가사·STYLE 검토. 생성 음원이 제공되면 실제 Intro·길이·보컬 배정·화음·BPM·조성을 확인한다. 09–20은 젠과 새로 제작한다. Final Track Sources는 아직 승격하지 않았다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
