@@ -1266,3 +1266,15 @@ Next-TODO: 젠이 Track 10 가사·STYLE·EXCLUDE와 제목·제안 음악값을
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 Track 10 「그때의 빛」에 120 BPM을 선택하고, 사운드·편곡·노래 전개를 참고곡에 더 가깝게 하되 가사는 유지하라고 했다. STYLE은 클린 기타 도입 훅·어쿠스틱 기타 리듬·선명한 드럼·움직이는 베이스·피아노·기타 응답·스트링·절/후렴/브리지 대비를 지정한다. 가사·제목·F Major 제안·여성 단독 제안은 유지했다. 4/4·100마디=200초(3:20)는 편곡 추정치이며, 참고곡의 제3자 104 BPM 정보는 별도로 보존했다.
+Verification: 가사 SHA-256 `f7fc1fde8be7a4d4c5215c5de397c67f95c5782153b1cf885b61714274349519` 불변, STYLE 853/900자·EXCLUDE 8/8개, full-song·lyrics-review·track-prompt·state check PASS(`/tmp/wavvy-17-10-style120-*.json`). 실제 음원 길이·템포·조성·보컬·편곡은 미확인이다.
+Next-TODO: 젠의 Track 10 전체 초안 검토와 생성 음원 확인이 남는다. Final Track Sources는 승격하지 않는다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
