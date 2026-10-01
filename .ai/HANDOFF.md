@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-01 11:43:17
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 17:00의 07 「봄비같은 너 (Accoustic Remix)」 사용자 제공 원문과 08 「네 취향」 전체 가사·STYLE·EXCLUDE·보컬 배정의 젠 PASS를 기록했다. 07은 110 BPM 남성 리드·조성 미제공·EXCLUDE 빈칸이며 08은 acoustic neo-soul·E Major·118 BPM·1절 여성/2절 남성/3절·Bridge 여성/후렴 남녀 화음이다. state revision 9·txt 8개·track_source_draft, 20곡 중 리믹스 4곡+신곡 16곡이다. 실제 음원은 없어 기술값을 실측하지 않았고 Final Track Sources는 승격하지 않았다.
+Next-TODO: 09–20은 젠과 새로 제작한다. 07·08 음원이 제공되면 실제 길이·보컬·화음·BPM·조성을 확인한다.
+Resume-Trigger: -wavvy
+Commits: 61e92a5, 74a638f, 4ac77c3, (이번 기록 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-01 10:31:01
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex

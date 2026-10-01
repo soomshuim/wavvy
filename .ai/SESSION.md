@@ -1319,3 +1319,7 @@
 ## 2026-10-01 [CDX] Wavvy 17:00 Track 08 「네 취향」 사용자 PASS
 - 젠이 08의 현재 전체 가사·STYLE·EXCLUDE와 보컬 배정(1절 여성, 2절 남성, 3절/Bridge 여성, 모든 후렴 남녀 화음)을 PASS했다. txt·가사 기록·concept·plan의 승인 상태만 현행화했다. STYLE·EXCLUDE·LYRICS 본문은 바꾸지 않았다.
 - 초안 단계 `track_source_draft`, state revision 9·txt 8개는 그대로다. 100마디 약 3:23은 편곡 추정치이며 실제 음원·보컬·조성·템포는 확인되지 않았다. Final Track Sources는 승격하지 않았다.
+## 2026-10-01 [CDX] Wavvy 17:00 Tracks 07·08 승인본 세션 기록
+- 07 「봄비같은 너 (Accoustic Remix)」는 젠이 제공한 STYLE·LYRICS 원문을 그대로 저장하고 PASS했다(61e92a5). 제공 프롬프트는 Acoustic R&B·110 BPM·남성 리드다. 조성과 EXCLUDE는 미제공이며 후렴 stacked harmonies·마지막 ad-libs는 07 한정 예외다.
+- 08 「네 취향」은 젠이 전체 가사·STYLE·EXCLUDE와 1절 여성/2절 남성/3절·Bridge 여성/모든 후렴 남녀 화음을 PASS했다(초안 74a638f, 승인 4ac77c3). acoustic neo-soul·E Major·118 BPM은 승인된 프롬프트 방향이다. STYLE 850자·EXCLUDE 6개, 가사 SHA-256 400ed035200e7403c626a5f65eeaf54a3001ad20b5b5fa5030a997db4f5f29c0. 승인 시 본문은 바뀌지 않았다.
+- 혼성 보컬의 메타/STYLE 성별 집합 일치 검사 보정은 37 tests PASS·독립 Codex 검토 CLEAN이었다. 최종 보컬 정정은 부모가 현재 txt/STYLE 배정과 gate PASS를 직접 대조했다. 현재 state revision 9·txt 8개·track_source_draft이며 20곡 목표는 제공 리믹스 4곡+신곡 16곡이다. 실제 음원은 없어 길이·보컬·화음·BPM·조성은 실측하지 않았고 Final Track Sources도 승격하지 않았다. 다음 09–20은 젠과 제작한다.
