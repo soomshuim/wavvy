@@ -1176,3 +1176,14 @@ Next-TODO: 생성 음원이 생기면 실제 Intro·길이·보컬·BPM·조성�
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 PASS한 17:00 Track 07 「봄비같은 너 (Accoustic Remix)」의 제공 STYLE·LYRICS를 txt에 원문대로 기록했다. 13-00 Track 16 원곡을 선례로 확인하되 이번 제공본을 우선했다. 110 BPM·남성 리드는 제공 프롬프트 값이고, 조성은 미제공·EXCLUDE는 빈칸이다. 후렴 stacked harmonies와 마지막 ad-libs는 07 한정 예외다. concept은 20곡 중 리믹스 4곡(01/02/04/07)·신곡 16곡(03/05/06/08–20)으로 현행화했고 state revision 8·txt 7개·track_source_draft다. 기존 01–06은 보존했다.
+Verification: 제공 원문 대조·source parser·state check·diffcheck 수행. 실제 음원과 조성은 확인하지 않았다.
+Next-TODO: 젠과 08–20을 제작한다. 07 음원이 제공되면 실제 기술값을 확인한다. Final Track Sources는 아직 승격하지 않았다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---

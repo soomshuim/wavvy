@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-01 (17:00 Track 06 「그냥 좋아」 완곡 초안)
+> Last updated: 2026-10-01 (17:00 Track 07 「봄비같은 너」 사용자 제공 리믹스 원문)
 
 ## 진행 중
+
+- **17-00 07 「봄비같은 너 (Accoustic Remix)」 사용자 제공 PASS 원문** (2026-10-01)
+  - ✅ **txt 우선 기록**: `SERIES/17-00/input/tracks/07_봄비같은 너 (Accoustic Remix).txt`에 제공 STYLE과 LYRICS를 글자·줄바꿈 그대로 저장했다. 13-00 concept Track 16 원곡 선례를 확인했지만 이번 제공 리믹스 원문을 우선했다. 제목의 `Accoustic` 철자를 유지했다.
+  - ✅ **제공 정보와 예외**: Acoustic R&B, 프롬프트 110 BPM, 남성 리드. 조성은 제공되지 않았고 EXCLUDE 목록도 없다. STYLE의 후렴 airy stacked harmonies와 마지막 후렴 ad-libs는 07 한정 예외다. 기존 사용자 제공 소스이므로 신규 완곡의 세 Verse·Intro·key 요구를 소급하지 않았다.
+  - ✅ **시리즈 현행화**: 20곡 목표 = 리믹스 01/02/04/07 네 곡 + 신곡 03/05/06/08–20 열여섯 곡. state writer revision 8·txt 7개·`track_source_draft`. 01–06은 보존했다.
+  - **남은 일**: 08–20 신곡을 젠과 제작한다. 07 음원이 제공되면 실제 BPM·조성·보컬·편곡을 확인한다. Final Track Sources 승격은 아직 하지 않았다.
 
 - **17-00 06 「그냥 좋아」 전체곡 가사·STYLE 초안** (2026-10-01)
   - ✅ **사용자 확정 방향**: 별일 없는 하루와 즐거운 혼자 시간, 교훈 없는 마무리. 밝고 편한 acoustic indie rock, 남성 단독 중음, A Major, 처음 제안한 118보다 빠른 125 BPM, `그냥 좋아 / 오늘은 이대로` 후렴.
