@@ -1273,3 +1273,8 @@
 - `SERIES/17-00/input/tracks/05_한 정거장.txt`와 `.ai/lyrics/2026-10-01_17-00_05_한-정거장-full-draft.md`를 저장했다. 4/4·94마디로 약 201.4초를 추정하며 실제 음원 길이는 미측정이다. STYLE 770자, EXCLUDE 7개다. 01–04 원본은 수정하지 않았다.
 - concept은 05를 review pending 초안으로만 기록했다. `state --write --if-match 5`는 revision 6, `track_source_draft`, txt 5개, 오디오 0개로 PASS했다. full-song artifact·lyrics-review·track-prompt·doctor·state check와 diffcheck 모두 PASS. 원시 결과는 `/tmp/wavvy-17-05-*.json` 및 `/tmp/wavvy-17-05-diffcheck.log`에 있다. `validate SERIES/17-00`은 소스 오디오 MP3/WAV가 없어 실패했다(`/tmp/wavvy-17-05-validate.log`); 초안 단계의 예상된 미충족 조건이다.
 - 다음 실제 작업은 젠의 05 가사/STYLE 검토와 생성 후 청취·길이/보컬/조성/템포 확인이다. final source나 업로드 완료는 주장하지 않는다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 05 breathing-room revision
+- 젠은 첫 05 초안이 “너무 빡빡해서 숨 쉴 틈조차 없어”라고 피드백하고 Verse를 늘리되 문장을 짧게 다듬자고 요청했다. 원래 초안 `ef48c6f`는 원격에 반영됐고, 이번 개정은 별도 미커밋 작업이다.
+- 05 txt와 별도 full-song 기록을 함께 개정했다. 각 12행 Verse 2개를 각 6행 Verse 3개로 재배분하고, 후렴은 8행에서 5행으로 줄였다. 첫 후렴 뒤 4마디 기악 구간과 STYLE의 구절 뒤 쉼·기타 응답을 추가했다. 후렴 `다음 거 타면 돼`, 여성 단독 중음, D Major, 112 BPM은 유지했다. STYLE 842/900자, EXCLUDE 7/8개다.
+- 4/4·94마디·약 201.4초는 편곡 추정치다. 한 가사 행에 고정 마디를 강제하지 않는다. Full-song·lyrics-review·track-prompt·state check·doctor·diffcheck가 PASS했다(`/tmp/wavvy-17-05-revision-*.json`, `/tmp/wavvy-17-05-revision-diffcheck.log`). 독립 검토와 젠의 개정 가사/STYLE 승인은 아직 대기 중이다. 실제 음원은 없으며 05는 계속 초안 단계다. 기존 01–04, concept, state는 이번 개정에서 변경하지 않았다.
