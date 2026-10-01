@@ -1315,3 +1315,7 @@
 - 젠이 확정한 제목·상대의 음식/음악 취향을 함께 지내며 좋아하게 되는 주제·acoustic neo-soul·E Major·118 BPM·Intro 포함 약 3:20 목표로 완곡 txt와 가사 검토 기록을 만들었다. 보컬 최종 정정은 1절 여성·2절 남성·3절 여성, 후렴 남녀 화음이다. Bridge 여성 단독은 제안이다. 08만 채널의 단독 리드/무화음 기본 예외로 concept에 명시했다.
 - 100마디 4/4 계획은 약 203.4초 추정치다. STYLE 850/900자, EXCLUDE 6/8개이며 화음을 배제하는 항목은 넣지 않았다. 가사 SHA-256은 `400ed035200e7403c626a5f65eeaf54a3001ad20b5b5fa5030a997db4f5f29c0`. 01–07은 보존하고 08은 사용자 검토 대기 초안으로 둔다.
 - 혼성 보컬을 헤더·STYLE에서 함께 검사하는 `track-prompt` 보정은 별도 실행 워커가 맡았다. 처음 가사 독립 검토 후 젠이 2절 남성으로 정정했고, 부모가 최종 txt/STYLE 배정을 직접 대조했다. full-song·lyrics-review·track-prompt·state check·doctor·diffcheck PASS. 원시 JSON은 `/tmp/wavvy-17-08-*.json`. state writer는 revision 9·txt 8개·`track_source_draft`를 기록했다. 실제 음원·실측 길이/조성/템포/보컬은 없다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 08 「네 취향」 사용자 PASS
+- 젠이 08의 현재 전체 가사·STYLE·EXCLUDE와 보컬 배정(1절 여성, 2절 남성, 3절/Bridge 여성, 모든 후렴 남녀 화음)을 PASS했다. txt·가사 기록·concept·plan의 승인 상태만 현행화했다. STYLE·EXCLUDE·LYRICS 본문은 바꾸지 않았다.
+- 초안 단계 `track_source_draft`, state revision 9·txt 8개는 그대로다. 100마디 약 3:23은 편곡 추정치이며 실제 음원·보컬·조성·템포는 확인되지 않았다. Final Track Sources는 승격하지 않았다.
