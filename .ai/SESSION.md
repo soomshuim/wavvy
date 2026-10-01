@@ -1288,3 +1288,8 @@
 - 젠의 05 피드백은 다음 신곡부터 적용한다. 신규 완곡은 Verse 3개를 출발점으로 삼고, 다른 구성이 맞으면 `verse_structure_exception`에 곡별 이유를 적는다. Intro/Outro·마디별 목표 길이 계획은 유지한다. 구절을 짧게 다듬고 보컬 쉼/연주 공간을 계획하되 총 가사량이나 글자 수 상한은 강제하지 않는다.
 - `wavvy_harness/gate.py`와 작사 스킬·LYRICS/스펙·CLI 문서를 보정했다. 새 full-song Self-Gate는 Verse별 실제 가창행 수, 가장 긴 가창행, 짧은 구절, 구절 뒤 쉼의 현재 Draft 인용·이유를 요구한다. 행 분할이나 텍스트 근거만으로 실제 가창성을 보증하지 않는다. 03과 원본 05는 `MASTER/lyrics/legacy-full-song-approvals.json`의 경로+Draft SHA256이 맞을 때만 새 증거 계약에서 제외된다.
 - 테스트 36개, Python compile, skill validation, 실제 03/05 full-song gate, diffcheck PASS. 원시 로그: `/tmp/wavvy-breath-{unittest,pycompile,quickvalidate,diffcheck}.log`, `/tmp/wavvy-breath-{03,05}-gate.json`. 부모가 회수한 독립 Astra xhigh 검토는 Critical/High 0이며, 부모는 36개 테스트와 05 원본 `ef48c6f`의 세 txt 구역 일치를 직접 확인했다.
+## 2026-10-01 [CDX] 17:00 05 승인본·신규 완곡 호흡 계약 세션 마감
+- 젠은 05 「한 정거장」의 생성 결과를 괜찮다고 평가하고 원래 초안을 PASS했다. 현행 STYLE·EXCLUDE·LYRICS는 `ef48c6f` 원문과 정확히 일치한다. 짧은 개정안 `74383e6`은 이력으로 남고, 승인본과 구분한다.
+- 구현 `0d2cde6`: 신규 완곡은 Verse 3개를 기본으로 하되 곡별 예외 이유를 허용한다. Verse 분포·최장 가창행·짧은 구절·구절 뒤 쉼의 현재 Draft 인용과 이유를 검토한다. 글자 수 할당량이나 줄바꿈을 통한 형식적 통과는 두지 않는다. 기존 03/05 예외는 artifact 경로와 Draft SHA256이 맞는 원본에만 적용하고, review-only·excerpt·prompt-only 및 기존 unscoped ready=false 계약을 유지한다.
+- 검증: 36 tests, py_compile, skill quick validation, 03/05 gate, diffcheck PASS. 독립 Astra xhigh 검토 Critical/High 0. 원시 로그 `/tmp/wavvy-breath-*`. 05 실제 음원은 이 저장소에서 실측하지 않았다.
+- 다음 일: 06–20 신규 곡은 젠과 제작하며 새 호흡 계약을 적용한다. 05 승인본에는 추가 수정이 남지 않았다.
