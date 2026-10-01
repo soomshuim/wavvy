@@ -1153,3 +1153,15 @@ Next-TODO: 젠의 06 가사·STYLE 검토. 생성 음원이 생기면 실제 결
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+
+---
+HANDOFF: Codex -> User
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 06 「그냥 좋아」의 전체 가사, 제시된 funky acoustic indie rock STYLE 본문, `Folk, choir, stacked harmonies, duet vocal, falsetto lead, heavy distortion, heavy 808, EDM drop` EXCLUDE를 PASS했다. txt의 STYLE/EXCLUDE를 승인 문구로 교체하고 사용자 승인 상태를 concept·full-song 기록에 반영했다. STYLE 807자·EXCLUDE 8개이며 LYRICS 본문과 SHA-256 `d9f87639487d27a0f7c62ce2d1103cabac31de915eb3e82bbdcebef2df623612`는 바뀌지 않았다. 시리즈는 `track_source_draft`이며 기존 01–05는 보존했다.
+Verification: 승인 버전 track-prompt와 full-song lyric gate PASS. 125 BPM·A Major·남성 단독은 승인된 프롬프트 값이고 실제 음원은 측정하지 않았다.
+Next-TODO: 생성 음원이 생기면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 06을 Final Track Sources로 승격하지 않았다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
