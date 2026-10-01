@@ -1220,3 +1220,14 @@ Next-TODO: 08 음원이 제공되면 Intro·길이·보컬 배정·화음·BPM·
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
 ---
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-01
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17:00 Track 09 「한 곡만 더」의 한국어 완곡 가사와 Acoustic R&B/acoustic neo-soul STYLE/EXCLUDE 초안을 txt에 저장했다. 사용자 확정 방향은 D Major·122 BPM·편안한 중음 남성 단독·집에서 노래하다 다음 좋아하는 곡도 계속 듣는 하루·기타/베이스 주고받기다. 현행 문구는 사용자 PASS 전 초안이며 state revision 10·txt 9개·track_source_draft다. 01–08은 보존했다.
+Verification: full-song·lyrics-review·track-prompt·doctor·state check·diffcheck PASS(`/tmp/wavvy-17-09-*.json`). 격리 텍스트 검토 CLEAN/PASS 후 104마디·약 3:25 계획으로 길이 메타만 보정했고 가사/STYLE/EXCLUDE 본문은 유지했다. 실제 음원은 없어 길이·보컬·BPM·조성은 미측정이다.
+Next-TODO: 젠이 09 가사·STYLE·EXCLUDE 문구를 검토한다. 생성 음원이 제공되면 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 10–20은 젠과 새로 제작한다. Final Track Sources는 아직 승격하지 않았다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---

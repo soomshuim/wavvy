@@ -1323,3 +1323,8 @@
 - 07 「봄비같은 너 (Accoustic Remix)」는 젠이 제공한 STYLE·LYRICS 원문을 그대로 저장하고 PASS했다(61e92a5). 제공 프롬프트는 Acoustic R&B·110 BPM·남성 리드다. 조성과 EXCLUDE는 미제공이며 후렴 stacked harmonies·마지막 ad-libs는 07 한정 예외다.
 - 08 「네 취향」은 젠이 전체 가사·STYLE·EXCLUDE와 1절 여성/2절 남성/3절·Bridge 여성/모든 후렴 남녀 화음을 PASS했다(초안 74a638f, 승인 4ac77c3). acoustic neo-soul·E Major·118 BPM은 승인된 프롬프트 방향이다. STYLE 850자·EXCLUDE 6개, 가사 SHA-256 400ed035200e7403c626a5f65eeaf54a3001ad20b5b5fa5030a997db4f5f29c0. 승인 시 본문은 바뀌지 않았다.
 - 혼성 보컬의 메타/STYLE 성별 집합 일치 검사 보정은 37 tests PASS·독립 Codex 검토 CLEAN이었다. 최종 보컬 정정은 부모가 현재 txt/STYLE 배정과 gate PASS를 직접 대조했다. 현재 state revision 9·txt 8개·track_source_draft이며 20곡 목표는 제공 리믹스 4곡+신곡 16곡이다. 실제 음원은 없어 길이·보컬·화음·BPM·조성은 실측하지 않았고 Final Track Sources도 승격하지 않았다. 다음 09–20은 젠과 제작한다.
+
+## 2026-10-01 [CDX] Wavvy 17:00 Track 09 「한 곡만 더」 초안
+- 젠이 제목·집에서 좋아하는 음악을 따라 부르다가 다음 곡도 좋아 계속 듣는 주제·신나는 Acoustic R&B/acoustic neo-soul·D Major·122 BPM·남성 단독 편안한 중음·기타/베이스의 경쾌한 주고받기를 확정하고 제작을 승인했다. txt와 full-song 가사 기록, plan, concept의 09 초안 행을 저장했다. 정확한 가사/STYLE/EXCLUDE 문구는 아직 젠의 PASS를 받지 않았다.
+- 가사 본문 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`, STYLE 740자, EXCLUDE 7개다. 3 Verse, Intro/Outro, 기악 쉼, 4/4·104마디는 약 204.6초(3:25) 편곡 추정이다. 실제 음원은 없어서 길이·보컬·BPM·조성은 실측하지 않았다.
+- full-song·lyrics-review·track-prompt·doctor·state check·diffcheck PASS. 원시 결과는 `/tmp/wavvy-17-09-*.json`과 `/tmp/wavvy-17-09-diffcheck.log`. 격리 텍스트 검토는 controller가 CLEAN/PASS 회수했고, 이후 길이 게이트를 위해 마디 계획만 100→104로 조정했다. STYLE·EXCLUDE·LYRICS 본문은 유지했다. state revision 10·txt 9개·`track_source_draft`; Tracks 01–08과 Final Track Sources는 변경하지 않았다.
