@@ -1,7 +1,7 @@
 # Wavvy LYRICS.md
 
-Version: 4.5
-Last Updated: 2026-09-30
+Version: 4.6
+Last Updated: 2026-10-02
 Purpose: Suno 가사 입력(Lyrics) 규칙 SSOT
 
 ---
@@ -125,20 +125,23 @@ Suno [공식 도움말](https://help.suno.com/en/articles/2415873)은 Custom Mod
 
 | 규칙 | 설명 |
 |------|------|
-| `[]` 대괄호 | 구조 태그 전용 |
-| `()` 소괄호 | 기본 금지. Structure 모드에서만 구조 태그 뒤 짧은 작사 방향을 한 줄로 통합할 때 예외 허용. 보컬·편곡 지시는 Style로 이동 |
+| `[]` 대괄호 | 구조 태그와 필요한 짧은 구간별 지시. 보컬 역할·악기·코드 진행 등을 해당 섹션 태그 뒤에 붙일 수 있다 (§2.4) |
+| `()` 소괄호 | 기본 금지. Structure 모드에서만 구조 태그 뒤 짧은 작사 방향을 한 줄로 통합할 때 예외 허용. 보컬·편곡 지시는 가창행이 아닌 Style 또는 `[]` 지시로 둔다 |
 | 1행 원칙 | 예외 사용 시 구조 태그 뒤 `()` **1행만** |
 
 정리: §1 Prompt-only 모드는 괄호를 쓰지 않는다. §2 Structure 모드는 `[Verse]`, `[Chorus]` 같은 구조 태그 뒤에 한 번만 `(Korean lyrics about...)` 형태의 작사 방향을 둘 수 있다. 이 제한은 Wavvy의 입력 정리 규칙이지 Suno의 파싱 보증이 아니다.
 
-### 2.3 금지 태그
-`[Kick in]`, `[Drums enter]`, `[Pad widens]` → Style Prompt로
+### 2.3 태그 사용 경계
+
+곡 전체에 적용할 장르·음색·악기 역할은 Style에 쓴다. 특정 구간에서 달라져야 할 지시만 가사 구조 태그 옆에 짧게 붙인다. 지시를 가창 문장으로 쓰거나 모든 섹션에 같은 태그를 반복하지 않는다.
 
 ### 2.4 허용 태그
 **신규 완곡 초안 기본 구조:** `[Intro]`, Verse 3개, `[Outro]` (명시한 사용자·트랙 예외가 있으면 기록)
 **곡에 맞춰 선택:** `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Hook]`, `[Bridge]`, `[Instrumental]`, `[End]`
 
-보컬 성격과 편곡 지시는 가사 줄이나 구조 태그에 끼워 넣지 말고 Style에 쓴다.
+예: `[Verse 1] [Female]`, `[Chorus] [Male + Female]`, `[Instrumental] [fingerpicked guitar]`. 코드 진행을 정한 곡이라면 해당 섹션에 짧은 코드 지시를 붙일 수 있다. 사용자 제공 태그의 문구와 공백은 원문 기록 시 그대로 보존한다.
+
+[Suno 공식 릴리스 노트](https://suno.com/release-notes)는 Lyrics에 구조 라벨을 쓰는 기능과 `[female vocals]` 지시 예시를 안내한다. 악기·코드 태그의 특정 구문이나 인식률까지 보증하지는 않는다. 구간별 악기·코드 태그는 Wavvy의 제작 선택이며, 실제 반영 여부는 생성한 음원을 듣고 확인한다. 17:00 Track 08의 보컬 역할 태그가 혼선을 줄였다는 결과는 사용자가 보고한 해당 곡의 경험이다.
 
 ### 2.5 Song Structure Patterns
 

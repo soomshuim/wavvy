@@ -226,6 +226,12 @@ def _field_lines(text: str, label: str) -> list[str]:
     ]
 
 
+def _draft_section_tag(line: str) -> str | None:
+    """Read the section name while allowing bracketed cues after its tag."""
+    match = re.fullmatch(r"\[([^\]]+)\](?:[ \t]+\[[^\]]+\])*", line.strip())
+    return match.group(1).strip() if match else None
+
+
 def _approved_legacy_full_song(repo_root: Path, artifact_path: Path, draft: str) -> bool:
     """Exempt only the exact already-approved Draft at its original record path."""
     try:
@@ -248,9 +254,9 @@ def _full_song_breath_checks(constraint_freeze: str, draft: str, evidence: str) 
     sections: list[tuple[str, list[str]]] = []
     for raw_line in draft.splitlines():
         line = raw_line.strip()
-        tag = re.fullmatch(r"\[([^\]]+)\]", line)
-        if tag:
-            sections.append((tag.group(1).strip(), []))
+        tag = _draft_section_tag(line)
+        if tag is not None:
+            sections.append((tag, []))
         elif line and sections:
             sections[-1][1].append(line)
     verse_lines = [lines for tag, lines in sections if re.fullmatch(r"Verse(?:\s+\d+)?", tag, re.IGNORECASE)]
@@ -420,7 +426,7 @@ def _full_song_draft_checks(
         match = re.fullmatch(r"([^=;]+?)\s*=\s*([1-9]\d*)", part)
         if match:
             parsed_bars.append((re.sub(r"\s+", " ", match.group(1).strip()).casefold(), int(match.group(2))))
-    draft_tags = [re.sub(r"\s+", " ", tag.strip()).casefold() for tag in re.findall(r"(?m)^\s*\[([^\]]+)\]\s*$", draft)]
+    draft_tags = [re.sub(r"\s+", " ", tag).casefold() for line in draft.splitlines() if (tag := _draft_section_tag(line)) is not None]
     plan_tags = [label for label, _ in parsed_bars]
     bars_ok = bool(parsed_bars) and len(parsed_bars) == len(bar_parts) and plan_tags == draft_tags
     checks.append(_check("full_song_section_bars_match_draft", bars_ok, f"plan={plan_tags}; Draft={draft_tags}; bars={sum(bars for _, bars in parsed_bars)}"))

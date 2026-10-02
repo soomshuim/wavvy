@@ -1,7 +1,7 @@
 # Wavvy Style Prompt Guide
 
-Version: 4.0
-Last Updated: 2026-09-30
+Version: 4.1
+Last Updated: 2026-10-02
 Purpose: 곡의 음악적 의도를 Suno Style에 명확하게 전달하는 Wavvy 내부 기준
 
 근거와 한계: MASTER/style/references/prompt-evidence-2026-09-30.md. 단어의 위치나 고정 문구가 생성 결과를 보장한다는 주장은 하지 않는다.
@@ -25,6 +25,8 @@ Purpose: 곡의 음악적 의도를 Suno Style에 명확하게 전달하는 Wavv
 - **목표 길이·도입부**: 곡에 필요한 경우 around 3:20이나 짧은 Intro 같은 목표를 Style/가사 구조에 제안한다. BPM·글자 수·Intro 지시만으로 실제 길이나 도입부 생성을 보증할 수 없다.
 
 가사 문장은 Style에 복제하지 않는다. 전체 가사와 구조 태그는 MASTER/lyrics/LYRICS.md에 맞춰 별도 LYRICS에 둔다. 특정 영어 단어를 첫 단어로 쓰거나 8–10개 토큰으로 제한하는 규칙은 없다. Suno가 문구를 정확히 따를 것이라는 가정으로 품질을 판정하지 않는다.
+
+Style에는 곡 전체의 장르·그루브·보컬·악기 역할을 적고, 특정 섹션에서 바뀌어야 하는 보컬 역할·악기·코드 진행은 필요한 경우 LYRICS의 구조 태그 옆에도 짧게 적는다. 예를 들어 듀엣의 전체 방향은 Style에 두고 `[Verse 1] [Female]`, `[Chorus] [Male + Female]`로 구간을 지정한다. 악기·코드 지시도 곡에 실제로 필요한 섹션에만 붙이며, 임의의 코드 진행을 채워 넣지 않는다. 태그 사용과 근거의 범위는 `MASTER/lyrics/LYRICS.md` §2.4를 따른다.
 
 ## 3. Style과 Exclude 예산
 

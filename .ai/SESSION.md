@@ -1,6 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-02 (17:00 Track 15 「바람이 드는 쪽」 남성 리드·110 BPM 반영, 전체 검토 대기)
+> Last updated: 2026-10-02 (17:00 시리즈 20곡 완료 사용자 보고; 다음 새 세션은 유튜브 트랙 작업)
+
+---
+
+## 2026-10-02 [CDX] -record: 17:00 시리즈 20곡 완료 보고와 새 세션 인계
+- 젠이 현재 20곡 모두 완료됐다고 보고했다. 현행 txt는 20개이며 08 「취향」과 09 「한 곡만 더」는 새 사용자 원문이다. 기존 08·09 버전은 이력이다.
+- Suno 공식 구조·보컬 태그 예시와 젠의 08 생성 경험을 구분해 Style·Lyrics 지침과 작사 스킬을 갱신했다. 구간 태그를 읽는 검사기와 테스트를 추가했다.
+- 로컬 음원은 0개라 오디오 실측과 유튜브 패키징은 하지 않았다. State revision 41·track_source_draft. 38 tests·py_compile·state check·diff check는 PASS다. 08/09 track-prompt는 새 원문에 없는 key 또는 BPM을 요구해 명시적 FAIL이다.
+- 다음 새 세션에서는 프로젝트를 로드해 상태를 확인하고, 젠의 그 세션 시작 신호에 따라 유튜브 트랙 작업을 시작한다.
 
 ## 2026-10-02 [CDX] 17:00 Track 15 — 바람이 드는 쪽 검토 초안
 
@@ -1402,3 +1410,77 @@
 ## 2026-10-02 [CDX] Wavvy 17:00 Tracks 10–15 세션 record
 - 10번 사용자 최종본, 11·14번 사용자 제공 리믹스, 12·13번 사용자 PASS 신곡, 15번 은유적 신곡 초안과 남성 리드·110 BPM 결정을 저장했다. 15번 제목·전체 가사·나머지 STYLE은 PASS 전이고 음원은 없다. State revision 25·txt 15개·`track_source_draft`; concept에는 15번 승인 항목을 넣지 않았다.
 - 10·12·13·15 track-prompt, 12·13·15 lyrics-review, 11·14 source parser, doctor, state check, diff check PASS. `-record`로 Wavvy 작업 기록을 커밋·푸시한다.
+
+## 2026-10-02 [CDX] 17:00 Track 15 PASS와 Track 16 「매듭」 초안
+- 젠이 15번 「바람이 드는 쪽」의 현행 제목·전체 가사·STYLE·빈 EXCLUDE·110 BPM/C Major·남성 단독 보컬에 PASS했다. txt 승인 메타를 바꾼 뒤 concept 승인 목록에 15번을 추가했다. 가사·STYLE 본문은 불변이고, 생성 음원은 없다.
+- 젠의 `16 가자`에 따라 11번 「약속」 리믹스의 어쿠스틱 네오소울 사운드를 16번에 재사용했다. `16_매듭.txt`는 재킷의 풀린 솔기를 꿰매고 외출하며 안쪽 매듭을 느끼는 새 한국어 완곡 가사다. 112 BPM/Bb Major/남성 단독 진성 보컬은 검토용 제안값, EXCLUDE는 공란이다. 102마디·약 3:39는 편곡 추정이다.
+- 16번 txt와 `.ai/lyrics/2026-10-02_17-00_16_매듭-full-draft.md`의 가사 본문 SHA-256은 `12fae6fc12de650ee2e3d16bc7554871a316320e31bfffd68d2963ab2c42f693`로 같다. STYLE 629/900자. Full-song·lyrics-review·track-prompt·state write/check PASS(`/tmp/wavvy-17-16-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. State revision 27·txt 16개·`track_source_draft`·음원 0개.
+- 16번은 사용자 검토 대기이므로 concept 승인 목록에는 넣지 않았다. 다음은 젠의 16번 PASS 또는 수정 의견 반영이다. Final Track Sources 승격·음원 기술 검증은 아직 해당 단계가 아니다.
+
+## 2026-10-02 [CDX] 17:00 Track 16 제목을 「매듭」으로 변경
+- 젠이 16번 제목을 기존 「안쪽의 매듭」에서 「매듭」으로 정했다. `16_매듭.txt`와 `.ai/lyrics/2026-10-02_17-00_16_매듭-full-draft.md`로 파일을 옮기고 두 문서의 제목·경로, 계획·기록의 현행 참조를 맞췄다. STYLE·EXCLUDE·LYRICS 본문은 그대로다.
+- 이름을 바꾼 파일로 full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-16-title-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). State revision 28·txt 16개·`track_source_draft`·음원 0개. 젠이 승인한 것은 제목이며, 가사·STYLE·112 BPM/Bb Major·남성 단독 보컬 제안은 계속 검토 대기다. Concept 승인 목록은 15번까지다.
+
+## 2026-10-02 [CDX] 17:00 Track 16 「매듭」 사용자 PASS
+- 젠이 직전 16번 전체 초안에 `PASS`라고 답했다. 승인 범위는 제목, 전체 한국어 가사, 11번 「약속」 리믹스 STYLE을 바탕으로 한 629자 프롬프트, 빈 EXCLUDE, 112 BPM/Bb Major, 남성 단독 진성 보컬 방향이다. STYLE·EXCLUDE·LYRICS 본문은 승인 전후 동일하다.
+- `MASTER/WORKFLOWS.md` §0에 따라 txt 승인 메타를 먼저 수정하고 `SERIES/17-00/concept.md` 트랙 목록에 16번을 추가했다. 102마디·약 3:39는 편곡 추정치이며 생성 음원은 없다. Final Track Sources 승격은 하지 않았다.
+- Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-16-approved-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). State revision 29·txt 16개·`track_source_draft`. 기존 독립 Codex Astra/xhigh 텍스트 검토 CLEAN은 변경되지 않은 가사·STYLE 초안에 대한 판정이며 생성 음원에 대한 판정이 아니다. Track 17–20은 아직 소스 초안이 없다.
+
+## 2026-10-02 [CDX] 17:00 Track 17 「물결」 사용자 리믹스·Track 18 「파장」 검토용 초안
+- 젠이 17번을 신곡 대신 이전 14:00 Track 06 「물결」의 어쿠스틱 리믹스로 정하고 STYLE·전체 가사를 제공했다. 사용자 원문을 `SERIES/17-00/input/tracks/17_물결 (Acoustic Remix).txt`에 저장했다. 원곡의 가창 가사는 같고, 두 `[Instrumental]` 태그의 대문자 표기는 제공 원문 그대로다. 리믹스 STYLE 650자·74 BPM·남성 진성 중심 리드, 조성과 EXCLUDE는 미제공이다. Concept는 리믹스 7곡·신곡 13곡으로 현행화하고 17번을 소스 목록에 추가했다.
+- 젠이 18번 시작을 지시해, 사용자에게 제시 전이었던 17번 신곡 초안의 시장 파장 소재를 18번으로 옮겼다. `SERIES/17-00/input/tracks/18_파장.txt`는 07번 「봄비같은 너」 리믹스의 경쾌한 어쿠스틱 R&B 사운드를 쓰되 원곡 가사·멜로디·화음·애드리브를 쓰지 않는다. 새 가사는 과일 가게 주인이 작은 사과를 더 건네고 그 말이 귀갓길에 남는 장면이다. 110 BPM/G Major/남성 단독 진성 보컬은 제안값이며, STYLE 678/900자·빈 EXCLUDE·LYRICS SHA-256 `18d976fb0cc11d12cd202d2657718fbd490db622594594a5635b0cb57d04bb2f`다.
+- `.ai/lyrics/2026-10-02_17-00_18_파장-full-draft.md`는 txt 가사와 일치한다. 4/4·100마디·약 3:38은 편곡 추정이고 실제 음원은 없다. Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-18-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. State revision 30·txt 18개·`track_source_draft`·음원 0개. 18번은 젠의 PASS 전이므로 concept 승인 목록에는 없다. 19번은 새 시작 요청 전 착수하지 않는다.
+
+## 2026-10-02 [CDX] 17:00 Track 18 「흔들린 사진」 사랑 이야기로 재작성
+- 젠의 `사랑 얘기로` 정정에 따라 승인 전 시장 소재 「파장」 초안을 교체했다. 현행 소스는 `SERIES/17-00/input/tracks/18_흔들린 사진.txt`, 동일 가사 기록은 `.ai/lyrics/2026-10-02_17-00_18_흔들린-사진-full-draft.md`다. 두 연인이 사진 부스에서 가까이 앉아 흔들린 첫 장을 남기고, 며칠 뒤 같은 자리에서 손짓을 되돌려 주는 새 한국어 완곡 가사다.
+- 07번 리믹스에서 온 사운드 STYLE 678자는 이전 18번 초안과 바이트 동일하다. EXCLUDE는 공란이고 110 BPM/G Major/남성 단독 보컬은 검토용 제안이다. 가사 SHA-256 `ae90881c8b66e23bffd06e4e20d3a6a48476b429796ac02df0bbb0245e66f26e`. 4/4·100마디·약 3:38은 편곡 추정이며 생성 음원은 없다.
+- 현행 소스의 full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-18-love-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). 새 가사에 대한 격리 Codex Astra/xhigh 검토 CLEAN, Critical/High 0·원칙 관찰 없음. State revision 32·txt 18개·`track_source_draft`·음원 0개. 젠의 PASS 전이므로 concept 승인 목록에는 18번을 넣지 않았다. 앞선 「파장」 기록은 이력이다.
+
+## 2026-10-02 [CDX] 17:00 Track 18 「흔들린 사진」 여성 단독 리드 선택
+- 젠의 `여성으로` 선택을 `18_흔들린 사진.txt`의 Vocal 헤더·STYLE·META와 대응 가사 기록의 보컬 설명에 반영했다. STYLE은 남성→여성(`male`→`female`) 한 단어만 바뀌었다. 현재 680자, SHA-256 `ea63a3c548c0987cbdc6efc91400566ed7ada84363efbc48f62665f7d676f1d0`. 현재 STYLE에서 그 단어를 되돌리면 이전 STYLE SHA-256 `181757dfaa64348b2efe496427a138e7d8b6784ac77229e48d8ce5bca2ed09af`와 일치한다.
+- 가사와 문서 Draft 본문은 같고 SHA-256 `ae90881c8b66e23bffd06e4e20d3a6a48476b429796ac02df0bbb0245e66f26e`로 불변이다. 편곡·제안 110 BPM/G Major·빈 EXCLUDE도 유지된다. Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-18-female-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). 독립 Codex Astra/xhigh 검토 CLEAN·Critical/High 0·원칙 관찰 없음. State revision 33·txt 18개·`track_source_draft`·음원 0개. 여성 리드는 선택됐지만 18번 전체 초안은 아직 PASS 전이라 concept 승인 목록에 없다.
+
+## 2026-10-02 [CDX] 17:00 Track 18 「흔들린 사진」 사용자 PASS
+- 젠이 직전 여성 단독 리드 버전의 전체 초안에 `pass`라고 답했다. 승인 범위는 제목, 사진 부스 사랑 이야기의 전체 한국어 가사, 07번 리믹스 사운드 기반 STYLE, 빈 EXCLUDE, 110 BPM/G Major, 여성 단독 진성 보컬 방향이다. txt 승인 메타를 먼저 고치고 `SERIES/17-00/concept.md` 승인 트랙 목록에 18번을 추가했다. STYLE·EXCLUDE·LYRICS 본문은 승인 전후 같다.
+- STYLE SHA-256 `ea63a3c548c0987cbdc6efc91400566ed7ada84363efbc48f62665f7d676f1d0`, 가사 SHA-256 `ae90881c8b66e23bffd06e4e20d3a6a48476b429796ac02df0bbb0245e66f26e`. Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS(`/tmp/wavvy-17-18-approved-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`). 독립 Codex Astra/xhigh 검토 CLEAN·Critical/High 0·원칙 관찰 없음. State revision 34·txt 18개·`track_source_draft`·음원 0개. 100마디·약 3:38은 편곡 추정이며 실제 보컬·길이·템포·조성은 실측하지 않았다. Final Track Sources 승격은 하지 않았다. 19번은 젠의 별도 시작 요청에서 진행한다.
+
+## 2026-10-02 [CDX] 17:00 Track 19 「엄마가 고른 색」 가사 전용 초안
+- 젠이 19번을 가사만 새로 쓰고 11번 「약속 (Acoustic Remix)」 STYLE을 그대로 쓰도록 했다. 이어 리드를 여성으로 정정하고 딸과 엄마 이야기로 지정했다. 사용자에게 제시 전인 부자 이야기 초안은 폐기하고, 엄마가 밝은 색 신발을 직접 고르고 신고 나서는 장면을 새로 썼다. `SERIES/17-00/input/tracks/19_엄마가 고른 색.txt`와 `.ai/lyrics/2026-10-02_17-00_19_엄마가-고른-색-full-draft.md`의 가사 본문은 같다.
+- STYLE은 11번 원문에서 `Single male chest-voice lead`를 `Single female chest-voice lead`로 바꾼 것 외에는 같다. EXCLUDE는 공란이다. 11번 원문에 BPM·조성이 없으므로 STYLE에 추가하지 않았다. 헤더의 100 BPM은 92마디·4/4 길이 계산만 위한 가정이며 실제 프롬프트·음원값이 아니다. 추정 길이는 220.8초(약 3:41)다. 가사 SHA-256 `8fe490db25285389172ac93358f08a52f84d88177739a13ebad93e57f28c3425`.
+- Full-song·lyrics-review·state write/check PASS. Track-prompt 게이트는 기존 STYLE에 숫자 BPM·조성이 없어서 명시적 FAIL이며, 가사 전용 요청의 STYLE 보존을 위해 임의의 값을 넣지 않았다. 독립 Codex Astra/xhigh 검토 CLEAN·Critical/High 0·원칙 관찰 없음. State revision 35·txt 19개·`track_source_draft`·음원 0개. 19번의 제목·가사는 사용자 PASS 전이라 concept 승인 목록에 넣지 않았다. 다음은 젠의 19번 가사 검토다.
+
+## 2026-10-02 [CDX] 17:00 Track 19 제목 「엄마」 선택
+- 젠이 19번 제목을 첫 제안 「엄마가 고른 색」에서 「엄마」로 정했다. 곡 소스를 `SERIES/17-00/input/tracks/19_엄마.txt`, 가사 검토 기록을 `.ai/lyrics/2026-10-02_17-00_19_엄마-full-draft.md`로 옮기고 제목·경로 참조를 맞췄다. STYLE·EXCLUDE·LYRICS 본문은 그대로이며 가사 SHA-256은 `8fe490db25285389172ac93358f08a52f84d88177739a13ebad93e57f28c3425`다.
+- 새 경로의 full-song·lyrics-review·state write/check PASS. Track-prompt 게이트는 여전히 원본 STYLE에 BPM·조성이 없어 명시적 FAIL이다. State revision 36·txt 19개·`track_source_draft`·음원 0개. 젠이 정한 것은 제목이며 전체 가사는 검토 대기다. Concept 승인 목록에는 19번을 넣지 않았다.
+
+## 2026-10-02 [CDX] 17:00 Track 19 「엄마」 사용자 PASS
+- 젠이 19번 「엄마」의 현행 전체 가사에 `pass`라고 답했다. txt 승인 메타를 먼저 고치고 `SERIES/17-00/concept.md` 승인 트랙 목록에 19번을 추가했다. STYLE·EXCLUDE·LYRICS 본문은 불변이다. STYLE SHA-256 `d3b7e2e2f1d8820b5585e8c7e9a92027d56e407eca4d8eb4ee5e0c6cc51154da`, 가사 SHA-256 `8fe490db25285389172ac93358f08a52f84d88177739a13ebad93e57f28c3425`, EXCLUDE 공란이다.
+- Full-song·lyrics-review·state check PASS. 원본 11번 STYLE에 BPM·조성이 없어 track-prompt 게이트는 명시적 FAIL이다. State revision 37·txt 19개·`track_source_draft`·음원 0개. 독립 Codex Astra/xhigh 검토에서 승인 전후 본문 불변과 concept 등록을 확인했고 Critical/High 0, 원칙 관찰 없음이었다. Final Track Sources는 승격하지 않았다.
+
+## 2026-10-02 [CDX] 17:00 Track 20 「여섯 층」 폐기된 초안
+- 젠의 `20번 제작` 요청에 따라 02번 「공강 (Accoustic Remix)」의 STYLE과 빈 EXCLUDE를 그대로 사용하고 새 한국어 가사를 썼다. 고장 난 승강기 앞에서 만난 두 이웃이 여섯 층을 함께 오르며 이름을 알고, 다음 날 다시 인사하는 이야기다. 남성 단독 보컬은 02번 STYLE에서 이어받았다. `SERIES/17-00/input/tracks/20_여섯 층.txt`와 `.ai/lyrics/2026-10-02_17-00_20_여섯-층-full-draft.md`의 가사 본문은 같다.
+- STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df0d0c951411e8c`, 가사 SHA-256 `1288951b7068a59f3c79136461ff5bed036cd6a3b51a6f51049058c32c13b4eb`. 세 Verse, Intro·Interlude·Outro, 가창 44행이다. 4/4·100마디·118 BPM으로 계산한 약 3:23은 길이 계획용 가정이며, STYLE의 BPM·조성이나 실제 음원값이 아니다.
+- Full-song·lyrics-review PASS. Track-prompt 게이트는 02번 STYLE에 BPM·조성이 없어 명시적 FAIL이다. 독립 Codex Astra/xhigh 검토 CLEAN, Critical/High 0·원칙 관찰 없음. State revision 38·txt 20개·`track_source_draft`·음원 0개. 젠의 PASS 전이므로 concept 승인 목록에는 20번을 넣지 않았다. 제목·가사·02번 STYLE 선택·남성 단독 보컬은 검토 대기다.
+
+## 2026-10-02 [CDX] 17:00 Track 20 「오랜만이야」 전면 재작성
+- 젠이 앞선 「여섯 층」을 뜻을 알 수 없고 억지스럽다고 기각했다. 이전 승강기·이웃 이야기는 현재 소스에서 제거했다. 새 제목·가사는 연락을 미뤄 온 친구와 역 앞에서 다시 만나고, 설명을 강요받지 않아 스스로 힘들었던 시간을 말한 뒤 친구의 이야기도 듣는 내용이다. `SERIES/17-00/input/tracks/20_오랜만이야.txt`와 `.ai/lyrics/2026-10-02_17-00_20_오랜만이야-full-draft.md`가 현행 소스·가사 기록이다. 이전 「여섯 층」 파일·검토 결과는 이력이며 사용자 승인본이 아니다.
+- 02번 「공강 (Accoustic Remix)」 STYLE과 빈 EXCLUDE는 불변이다(STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df0d0c951411e8c`). 새 LYRICS SHA-256 `22af8bb45341ec338dbd3173d225c806c2f8a12da675f70aea05fc43fbfd10dd`; 세 Verse, Intro·Interlude·Outro, 가창 46행. 4/4·104마디·118 BPM으로 계산한 약 3:32는 길이 계획용 가정이며 STYLE의 BPM·조성이나 음원 실측값이 아니다.
+- Full-song·lyrics-review PASS. Track-prompt 게이트는 재사용 STYLE에 BPM·조성이 없어 명시적 FAIL이다. State writer revision 39·txt 20개·`track_source_draft`·음원 0개. 20번은 아직 젠의 PASS 전이므로 concept 승인 트랙 표에 없다. 제목·새 가사는 검토 대기다.
+- 현행 가사에 대한 격리 Codex Astra/xhigh 검토는 CLEAN, Critical/High 0·원칙 관찰 없음이었다. 답장 회피→재회→자발적 고백의 연결이 가사에서 이해된다고 확인했다. 03번의 오래된 친구 소재와 넓은 주제 일부는 겹치지만, 20번의 중심은 늦은 답장과 관계 회복이며 기존 19곡과 완전히 같은 가창 문장은 0개다. 이 결과는 젠의 승인이나 실제 음원 품질 검증을 대신하지 않는다.
+
+
+## 2026-10-02 [CDX] 17:00 Track 20 PASS·Track 12 「서점」 제목 변경
+- 젠은 20번 STYLE의 보컬이 여성인지 물었고, `clear male lead`가 남성 단독 보컬임을 확인한 뒤 `pass`했다. 승인 범위는 현재 제목 「오랜만이야」, 전체 가사, 02번 「공강」 STYLE 원문, 빈 EXCLUDE, 남성 단독 리드다. txt 승인 메타를 고치고 concept 승인 표에 20번을 추가했다. STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df0d0c951411e8c`, LYRICS SHA-256 `22af8bb45341ec338dbd3173d225c806c2f8a12da675f70aea05fc43fbfd10dd`는 불변이다.
+- 이어 젠이 기존 승인곡 12번의 제목을 「서점」으로 변경했다. `SERIES/17-00/input/tracks/12_서점.txt`와 `.ai/lyrics/2026-10-02_17-00_12_서점-full-draft.md`로 옮기고 제목·현재 경로를 맞췄다. 가창 가사 `여기 이런 데가 있었네`는 그대로다. STYLE SHA-256 `9cc6925522654e6c5a024ca0ad0a7675716ec807a00315d36e406a48f71a6303`, LYRICS SHA-256 `ce4a22e49c1d2f3f0dddbd2307f178318c6ecc5b07170254a134f167b93c26c9`와 빈 EXCLUDE는 불변이다.
+- 12·20의 full-song·lyrics-review PASS, 12 track-prompt PASS. 20 track-prompt는 재사용 STYLE에 숫자 BPM·조성이 없어 명시적 FAIL. State writer revision 40·txt 20개·`track_source_draft`·음원 0개. 118 BPM/104마디·약 3:32는 20번 길이 계획용 가정이며 음원 실측이 아니다. Final Track Sources 승격은 하지 않았다.
+- 최종 state check와 `git diff --check` PASS. 12·20의 가사 SHA-256 및 concept 승인 표 행을 대조했고 08·09 소스 본문은 변경되지 않았다.
+
+## 2026-10-02 [CDX] 17:00 Tracks 08·09 사용자 재제작 예정
+- 젠이 08 「네 취향」과 09 「한 곡만 더」를 다시 만들고 새 STYLE과 가사를 직접 제공하겠다고 했다. 현재 제공된 새 원문은 없다. 기존 승인 txt·가사 기록은 교체 전 버전으로 보존하고, `SERIES/17-00/concept.md`에 사용자 제공 대기 상태를 기록했다. 사용자 원문을 받기 전에는 두 곡의 STYLE·LYRICS를 변경하거나 새 승인으로 취급하지 않는다.
+- 12·20 승인/제목 변경과 08·09 대기 상태에 대한 격리 Codex Astra/xhigh 검토는 CLEAN, Critical/High 0·원칙 관찰 없음이었다. 12 가사·STYLE·EXCLUDE 불변, 20 가사 해시와 남성 승인 범위, 08·09 소스 불변을 확인했다.
+
+## 2026-10-02 [CDX] 17:00 Tracks 08·09 사용자 재제작 원문 및 Suno 구간 태그 기준
+- 젠이 08을 「취향」으로 다시 제공했다. 현행 `SERIES/17-00/input/tracks/08_취향.txt`의 STYLE과 `[Verse 1] [Female]`·`[Chorus] [Male + Female]` 등 구간별 보컬 태그는 입력 원문 그대로다. STYLE은 100 BPM, 조성과 EXCLUDE는 미제공이다. 이전 「네 취향」의 118 BPM/E Major/EXCLUDE는 이력이다. 젠은 새 태그 표기로 이전 생성의 남녀 파트 혼선이 해결됐다고 보고했다. 그 음원은 저장소에 없어 에이전트가 청취 검증하지 못했다.
+- 젠이 09 「한 곡만 더」의 새 indie acoustic rock STYLE과 전체 가사를 제공했다. 현행 `SERIES/17-00/input/tracks/09_한 곡만 더.txt`의 가사 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`는 기존 승인 가사와 정확히 같다. 새 STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df0d0c951411e8c`는 546자이며 남성 단독 리드를 지정한다. 새 STYLE에는 BPM·조성이 없고 EXCLUDE도 미제공이다. 예전 122 BPM/D Major/EXCLUDE는 현재 설정이 아니다.
+- [Suno 공식 릴리스 노트](https://suno.com/release-notes)의 Lyrics 구조 라벨과 `[female vocals]` 예시를 확인했다. 악기·코드 진행 태그의 보장된 구문까지 공식화하지 않았다. `MASTER/lyrics/LYRICS.md`, `MASTER/style/STYLE.md`, `skills/wavvy-lyricist/SKILL.md`/스펙, style 근거 문서에 곡 전체 지시는 Style, 구간별 필요 지시는 Lyrics의 구조 태그 옆에 적는 기준을 반영했다. 원문 보존과 생성 후 청취 확인도 명시했다. `wavvy_harness/gate.py`는 다중 대괄호 태그 줄의 첫 구조 태그를 읽도록 수정하고 테스트를 추가했다.
+- 08·09 review-only 가사 검사 PASS. 08의 가사 SHA-256 `63d438fcf44efd10d5d5bb495f7c5cc7295c833939e5ad3d77ad5aaa6f3b48ca`; 09는 위 기존 가사 해시와 동일하다. 38개 harness 테스트, py_compile, state check, diff check PASS. Track-prompt는 08의 key와 09의 BPM/key가 새 STYLE에 없어 명시적 FAIL이다. State revision 41·txt 20개·`track_source_draft`·음원 0개. 사용자가 새 소스에 별도 PASS라고 말하지 않았으므로 새 승인으로 기록하지 않는다.

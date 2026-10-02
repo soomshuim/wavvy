@@ -1,7 +1,7 @@
 # Wavvy Lyric Skill Spec
 
-Version: 0.3
-Last Updated: 2026-10-01
+Version: 0.4
+Last Updated: 2026-10-02
 Owner: `MASTER/lyrics/LYRICS.md` policy layer
 Skill: `skills/wavvy-lyricist/SKILL.md`
 
@@ -62,6 +62,7 @@ Allowed:
 
 - Korean lyric rows.
 - Structure tags such as `[Intro]`, `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Post-Chorus]`, `[Bridge]`, `[Outro]`.
+- Short section-specific cues beside structure tags for vocal roles, instruments, or chord progressions when they help this song. Preserve user-supplied cue text and spacing.
 - Short notes outside the draft explaining mode, constraints, and gate results.
 
 Not allowed:
@@ -84,7 +85,7 @@ Not allowed:
 
 - Full Korean lyric rows.
 - Parenthesized prompt-only text such as `(Scene: ...)`.
-- Production instructions that belong in the style prompt.
+- Whole-song production instructions repeated as lyric rows; put section-specific cues beside structure tags only when useful.
 
 ### `review-only`
 

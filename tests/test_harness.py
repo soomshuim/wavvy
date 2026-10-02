@@ -193,7 +193,7 @@ def write_full_lyric_artifact(path: Path, draft: str, self_gate_extra: str = "",
         in_verse = False
         for raw_line in body.splitlines():
             line = raw_line.strip()
-            tag = re.fullmatch(r"\[([^\]]+)\]", line)
+            tag = re.fullmatch(r"\[([^\]]+)\](?:[ \t]+\[[^\]]+\])*", line)
             if tag:
                 in_verse = bool(re.fullmatch(r"Verse(?:\s+\d+)?", tag.group(1), re.IGNORECASE))
                 if in_verse:
@@ -680,6 +680,25 @@ Self-Gate
             artifact.write_text(original.replace("- Breathing Room: PASS", "- Breathing Room: HOLD"), encoding="utf-8")
             hold = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
             self.assertEqual(hold["result"], "USER_DECISION")
+
+    def test_full_song_section_cues_are_not_sung_lines(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_lyric_skill_package(root)
+            series = root / "SERIES" / "17-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("Acoustic duet\n", encoding="utf-8")
+            source = series / "input" / "tracks" / "08_취향.txt"
+            draft = "[Intro]\n[Verse 1] [Female]\n오늘은 함께 걷자\n[Chorus] [Male + Female]\n이 길이 좋아\n[Verse 2] [Male]\n너랑 다시 걷자\n[Instrumental] [fingerpicked guitar]\n[Verse 3] [Female]\n잠깐 쉬어 가자\n[Outro]"
+            write_track_prompt_source(source, "Acoustic duet, 100 BPM, G Major. Female and male leads.", bpm="100", lyrics=draft)
+            artifact = root / "tagged-full-song.md"
+            fields = "- draft_scope: full-song\n- target_duration_seconds: 200\n- meter: 4/4\n- section_bars: Intro=4; Verse 1=16; Chorus=16; Verse 2=16; Instrumental=16; Verse 3=16; Outro=4\n- track_source: SERIES/17-00/input/tracks/08_취향.txt"
+            write_full_lyric_artifact(artifact, draft, constraint_extra=fields, bpm=100)
+            result = run_lyrics_skill_gate(root, series, artifact, "full-lyric-draft", "full-song")
+            self.assertEqual(result["result"], "PASS", result)
+            checks = {item["name"]: item["status"] for item in result["checks"]}
+            self.assertEqual(checks["full_song_verse_count"], "PASS")
+            self.assertEqual(checks["full_song_section_bars_match_draft"], "PASS")
 
     def test_new_full_song_verse_exception_including_no_verse(self):
         with tempfile.TemporaryDirectory() as tmp:

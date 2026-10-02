@@ -27,7 +27,7 @@ For a newly requested full song, read `MASTER/lyrics/LYRICS.md` §1.6 and put `d
 ## Hard Rules
 
 - Korean lyric channel: full lyric drafts should be Korean unless a series concept explicitly permits code-switching.
-- Single lead vocal, chest-dominant identity. Do not solve lyric weakness with harmony, backing vocal, falsetto, or choir instructions.
+- Default to one chest-dominant lead unless the series concept records a track exception, as it does for 17:00 Track 08's alternating female/male verses and shared Choruses. Do not add harmony, backing vocal, falsetto, or choir merely to cover weak writing.
 - Time slots define BPM, mood, energy, use case, and vocal tone before lyric topic.
 - Time or activity words may be used when the lyric calls for them; a time slot does not force those words into a track.
 - Use external songs only as abstract pattern evidence. Do not copy, translate, closely paraphrase, or imitate distinctive lyric lines or cadences.
@@ -37,7 +37,7 @@ For a newly requested full song, read `MASTER/lyrics/LYRICS.md` §1.6 and put `d
 
 Choose and name exactly one mode:
 
-- `full-lyric-draft`: Use for track source files, rewrite proposals, or human review. Section tags such as `[Verse]` and `[Chorus]` are allowed as drafting structure.
+- `full-lyric-draft`: Use for track source files, rewrite proposals, or human review. Section tags such as `[Verse]` and `[Chorus]` may carry a short, relevant section cue for a vocal role, instrument, or chord progression. Preserve user-supplied cues verbatim.
 - `suno-prompt-only`: Use for direct Suno Lyrics input. Choose Empty, or output 1-3 short English direction lines or structure tags. Do not output full Korean lyric rows.
 - `review-only`: Use when asked to judge an existing lyric without rewriting.
 
@@ -48,7 +48,7 @@ Never mix prompt-only text and full lyric rows in the same deliverable.
 1. Build a Source Map: series concept, Wavvy docs, track/source file, research artifact, and external pattern sources if used.
 2. Freeze the known BPM, key, genre, mood, vocal identity, language, subject, and series-specific conditions. Mark unknowns as unknown.
 3. Pick a Lyric Strategy suited to this track: speaker/listener, expression, connection, emotional movement, density, and whether repetition or a hook has a role. These are choices, not required plot beats.
-4. Draft in the selected mode.
+4. Draft in the selected mode. When a vocal role, instrument, or chord progression changes at a specific section and the cue helps this song, put a short bracketed cue beside that section tag in Lyrics. Keep whole-song direction in Style. Preserve a user's existing cue wording and spacing.
 5. Read the actual lines in order: expression first, connection second, emotional flow third. An awkward line is not rescued by an explanation of its context. If a series meter or style condition forces awkward Korean, mark the conflict and revise the wording.
 6. For a new complete song, speak each connected phrase through the planned tempo. Shorten wording where the thought runs past a natural breath, inspect the densest Verse, and name where the voice rests while the music continues. A line break alone is not a breath. Record the actual Verse line distribution, longest sung line, one adjacent two-line phrase, and a phrase followed by vocal or instrumental space in `Self-Gate`.
 7. Record compact review evidence in `Self-Gate`, or in `Findings` for `review-only`. Never put review metadata inside the lyric rows delivered to listeners.
@@ -67,7 +67,7 @@ Never mix prompt-only text and full lyric rows in the same deliverable.
 - Explanations that claim an awkward line is natural because its surrounding context is good.
 - Heavy heartbreak, toxic intimacy, dark room framing, or melodrama unless the target series requires it.
 - Prompt-only parentheses such as `(Scene: ...)` or `(Mood: ...)`.
-- Production/performance instructions in lyric text; move those to style prompts.
+- Production/performance instructions written as sung lyric rows. Put whole-song direction in Style; put only useful section-specific cues beside structure tags in Lyrics, as allowed by `MASTER/lyrics/LYRICS.md` §2.4. Check the generated audio before claiming a cue worked.
 
 ## Required Output
 
