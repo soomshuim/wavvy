@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-02 11:40:05
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 17:00 Tracks 10–15 텍스트 작업을 기록했다. 10 최종본, 11·14 리믹스, 12·13 승인 신곡, 15 은유적 초안(남성 리드·110 BPM)이며 state revision 25·txt 15개다. 15 전체 PASS와 생성 음원 확인은 아직이다.
+Next-TODO: 젠이 Track 15 제목·전체 가사·나머지 STYLE을 검토한다. PASS 후 concept 승인 목록을 갱신한다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-01 16:35:45
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
@@ -1288,4 +1299,136 @@ Verification: 가사 SHA-256 `f7fc1fde8be7a4d4c5215c5de397c67f95c5782153b1cf885b
 Next-TODO: 젠의 Track 10 전체 초안 검토와 생성 음원 확인이 남는다. Final Track Sources는 승격하지 않는다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 10 「그때의 빛」의 새 최종 STYLE·EXCLUDE·전체 LYRICS를 제공했다. 현행 txt는 acoustic neo-soul R&B, 104 BPM·4/4·F Major, 맑고 가까운 여성 진성 중심 중음, 핑거피킹 기타/Rhodes 4마디 도입, 연주 쉼 2회, 기타 4마디 아웃트로와 EXCLUDE 7개를 담는다. 3절·Bridge·마지막 후렴 2행을 새 원문으로 교체하고 Intro/Outro의 `(instrumental)`을 보존했다. 종전 120 BPM 승인본과 100마디·3:20 추정은 과거 기록이며 새 최종본에 적용하지 않는다. 현재 시리즈는 state revision 15·txt 10개·`track_source_draft`; Final Track Sources는 승격하지 않았다.
+Verification: 가사 SHA-256 `9ddc12222783ba2569a71592e8d317caafb4e80c636c9ddc167b27b2bfe31157`, STYLE 396/900자·EXCLUDE 7/8개. `track-prompt`, state writer/check, doctor, 최종 문구 대조, `git diff --check` PASS. 독립 Codex Astra/xhigh 검토 Critical/High 0·원칙 관찰 없음. 저장소에 음원이 없어 실제 길이·BPM·조성·보컬·편곡은 미확인이다.
+Next-TODO: 생성 음원이 제공되면 실제 결과를 확인한다. 11–20은 젠의 새 시작 요청 때 제작한다. Track 10의 가사·STYLE 사용자 검토는 완료됐다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 Track 11 「약속 (Acoustic Remix)」의 STYLE·전체 LYRICS를 제공해 17:00 시리즈에 기록했다. 선례는 18-00 Track 02 「약속」으로 확인했고 13-00 동명 곡과 구분했다. 리믹스 프롬프트에 BPM·조성·EXCLUDE가 없어 미제공으로 남겼다. 시리즈는 리믹스 5곡·신곡 15곡 목표, state revision 16·txt 11개·`track_source_draft`다. 이전 Track 10 최종본 로컬 변경은 보존했고 Final Track Sources는 승격하지 않았다.
+Verification: 사용자 제공 가사 42행과 18-00 원곡 가창행 일치, source parser PASS, STYLE 606자, 가사 SHA-256 `b8a285b7ae1ad14f3bd6b265d611fee248702026a2ac422771060751c6729bc8`, state writer/check PASS, `git diff --check` PASS. 저장소에 리믹스 음원이 없어 실제 BPM·조성·보컬·편곡·길이는 미확인이다.
+Next-TODO: 11번 생성 음원이 제공되면 실제 결과를 확인한다. 다음 신규곡 12–20은 젠의 새 시작 요청 때 제작한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠은 17:00의 12–20번 신곡에 01–11번 중 이전 곡 리믹스 STYLE의 사운드를 재사용하고 새 가사를 쓰기로 했다. 기존 STYLE의 충돌 문장·누락된 새 곡 설정은 필요한 만큼만 조정하는 안에 동의했다. 12번 초안 「이런 데가 있었네」는 02번 「공강」의 밝은 어쿠스틱 인디 록 STYLE을 바탕으로 124 BPM·G Major 제안만 추가했고, 길을 잘못 들어 작은 책방을 발견하는 새 가사를 썼다. EXCLUDE는 빈칸이다. 사용자 PASS 전이므로 12번은 concept 확정 트랙 목록에 반영하지 않았다. State revision 17·txt 12개·`track_source_draft`, Final Track Sources 미승격.
+Verification: 02 STYLE와의 대조에서 `at 124 BPM in G Major` 삽입 외 문구 동일. 가사 SHA-256 `ce4a22e49c1d2f3f0dddbd2307f178318c6ecc5b07170254a134f167b93c26c9`, 48 가창행, STYLE 568자, 104마디·약 201.3초 편곡 추정. Full-song lyric, lyrics-review, track-prompt, state writer/check PASS. 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 음원이 없어 실제 길이·템포·조성·보컬·편곡은 미확인.
+Next-TODO: 젠이 12번 제목·STYLE 제안값·전체 가사를 검토해 PASS 또는 수정 방향을 준다. PASS 후 concept에 현행화한다. 13–20번은 이후 순서대로 새 가사를 제작한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 12 「이런 데가 있었네」의 직전 전체 초안에 PASS했다. 제목·전체 한국어 가사·02번 「공강」 리믹스 STYLE에서 124 BPM/G Major만 추가한 문구·남성 단독 보컬 방향·빈 EXCLUDE를 승인 상태로 기록했다. STYLE·EXCLUDE·LYRICS 본문은 바꾸지 않고 txt 승인 메타와 concept Track 12 행·시리즈 12–20 리믹스 STYLE 재사용 방향을 현행화했다. state revision 18·txt 12개·`track_source_draft`. Final Track Sources는 승격하지 않았다.
+Verification: 승인 전후 STYLE SHA-256 `9cc6925522654e6c5a024ca0ad0a7675716ec807a00315d36e406a48f71a6303`, 빈 EXCLUDE SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, LYRICS SHA-256 `ce4a22e49c1d2f3f0dddbd2307f178318c6ecc5b07170254a134f167b93c26c9` 모두 동일. Full-song·lyrics-review·track-prompt·state check·`git diff --check` PASS; 원시 출력 `/tmp/wavvy-17-12-approved-{fullsong,lyrics-review,prompt,state}.json`. 초안 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 104마디·약 3:21은 편곡 추정일 뿐 음원 실측이 아니다.
+Next-TODO: 12번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 13–20번에는 기존 리믹스 STYLE의 사운드를 바탕으로 새 가사를 쓰되, 각 곡은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 17:00 Track 13 시작 요청에 따라 「컵 두 개」의 새 한국어 완곡 가사와 04번 「낮꿈」 리믹스 STYLE 기반 사운드를 작성했다. 제안 프롬프트는 115 BPM·A Major·여성 단독 진성 리드다. 04의 화음 이중 녹음 지시는 신곡 기본값에 맞게 제거했고 EXCLUDE는 비웠다. 13번은 사용자 검토 대기 초안이므로 concept에는 아직 없다. state revision 19·txt 13개·`track_source_draft`; Final Track Sources 미승격.
+Verification: STYLE 483/900자·EXCLUDE 0/8개·LYRICS SHA-256 `0684da9269adebf7d8904b445250d288f43acb8c443cbb2350ec7b0e88c64a31`. Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS. 원시 출력 `/tmp/wavvy-17-13-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`. 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 96마디·약 3:20은 편곡 추정이며 생성 음원 실측은 아니다.
+Next-TODO: 젠이 13번 전체 가사·STYLE·제안값을 검토해 PASS 또는 수정 방향을 준다. PASS 후 `SERIES/17-00/concept.md`에 13번을 추가한다. 14–20번은 젠의 다음 시작 요청에서 순서대로 만든다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 13 「컵 두 개」의 직전 전체 초안에 PASS했다. 제목·새 한국어 가사·04번 「낮꿈」 리믹스 STYLE 기반 여성 단독 진성 보컬·빈 EXCLUDE·115 BPM/A Major를 승인 상태로 기록했다. STYLE·EXCLUDE·LYRICS 본문은 바꾸지 않고 txt 승인 메타와 concept Track 13 행을 현행화했다. State revision 20·txt 13개·`track_source_draft`; Final Track Sources는 승격하지 않았다.
+Verification: 승인 전후 STYLE SHA-256 `96307eaeabcdbb62444452894400ffc9f3cc58d15bcc738b13983c2758b009cb`, 빈 EXCLUDE SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, LYRICS SHA-256 `0684da9269adebf7d8904b445250d288f43acb8c443cbb2350ec7b0e88c64a31` 모두 동일. Full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS; 원시 출력 `/tmp/wavvy-17-13-approved-{fullsong,lyrics-review,prompt,state-write,state-check}.json`. 초안 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 96마디·약 3:20은 편곡 추정일 뿐 음원 실측이 아니다.
+Next-TODO: 13번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 14–20번은 기존 리믹스 STYLE의 사운드를 바탕으로 새 가사를 쓰되, 각 곡은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 14 「통화 (Acoustic Remix)」의 STYLE과 전체 LYRICS를 제공해 사용자 제공 리믹스 소스로 기록했다. 18-00 Track 06 「전화」와 가사·구간 지시를 대조해 일치함을 확인했다. 88 BPM·남성 진성 보컬은 새 STYLE의 프롬프트 값이고, 리믹스 조성·EXCLUDE는 미제공으로 뒀다. 20곡 구성은 리믹스 6곡·신곡 14곡으로 바뀌었다. State revision 21·txt 14개·`track_source_draft`; Final Track Sources는 승격하지 않았다.
+Verification: STYLE 376자·SHA-256 `3c9442d0be4f8f6f030adf418cec3c69dbc30c30000dacc465e0eea0c84fb0de`, LYRICS 91행·SHA-256 `74c1f983ee32db4eabfabd3698e08b3a6189fe5733c0407cadf7da5db821e9c1`; 원곡 가사와 정확 일치. Source parser·state write/check·`git diff --check` PASS. 원시 상태 출력 `/tmp/wavvy-17-14-{state-write,state-check,state-check-final}.json`. 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 음원이 없어 실제 결과는 미확인이다.
+Next-TODO: 14번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 15–20번은 젠의 다음 시작 요청에서 기존 리믹스 STYLE 사운드와 새 가사로 제작한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 시작 요청에 따라 17:00 Track 15 「맨 앞줄」의 새 한국어 전체 가사와 Track 01 「서랍」 리믹스 사운드 기반 STYLE을 검토용 초안으로 저장했다. 작은 카페 공연을 맨 앞줄에서 응원하는 장면이다. 원곡 전용 화음·애드리브 지시를 빼고 여성 단독 진성 보컬, 125 BPM, C Major를 제안했다. EXCLUDE는 공란이다. 사용자 PASS 전이라 concept의 승인 목록에는 올리지 않았다. State revision 22·txt 15개·`track_source_draft`·음원 0개.
+Verification: STYLE 885/900자, LYRICS SHA-256 `f0eda7092d6f95039249571b8d3528181a43442c044f23be165a489ce2a6a718`; full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS. 원시 출력 `/tmp/wavvy-17-15-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`. 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 106마디·약 3:24는 편곡 추정이며 실제 음원 길이·보컬·템포·조성·편곡은 미확인이다.
+Next-TODO: 젠의 Track 15 전체 가사·STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 Track 15 「맨 앞줄」의 공연 응원 가사를 유치하다고 판단하고, 컨셉 자체를 은유적·서정적으로 전면 변경하라고 했다. 기존 공연 제목·소재를 폐기하고 「바람이 드는 쪽」으로 다시 썼다. 열린 창, 움직이는 커튼·적다 만 종이, 구분되어 들리는 거리 소리로 내면의 변화를 암시한다. Track 01 「서랍」 리믹스의 밝은 acoustic R&B 사운드와 여성 단독 진성 보컬·125 BPM·C Major 제안은 유지하되, 리드 표현은 nuanced로 조정했다. EXCLUDE는 공란이다. 사용자 PASS 전이므로 concept 승인 목록에는 올리지 않았다. State revision 23·txt 15개·`track_source_draft`·음원 0개.
+Verification: STYLE 885/900자, 현재 LYRICS SHA-256 `180c8da91988a7451034a78f35fd111738d9f182e225dec76c062f15384fd84a`; full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS. 원시 출력 `/tmp/wavvy-17-15-newconcept-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`. 새 컨셉 독립 Codex Astra/xhigh 검토 CLEAN·원칙 관찰 없음. 106마디·약 3:24는 편곡 추정이며 실제 음원은 미확인이다.
+Next-TODO: 젠의 Track 15 새 제목·전체 가사·STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 15 「바람이 드는 쪽」의 리드를 남성으로 선택했다. Track 01 「서랍」 리믹스에서 가져온 밝은 acoustic R&B 사운드·125 BPM·C Major 제안은 유지하면서 여성 보컬 지시를 남성 단독 진성·따뜻한 중음으로 바꿨다. 가사 본문은 변경하지 않았다. 젠의 선택은 보컬 성별에 한정되며 제목·전체 가사·나머지 STYLE은 아직 검토 대기다. EXCLUDE는 공란, concept Track 15 승인 항목은 미추가. State revision 24·txt 15개·`track_source_draft`·음원 0개.
+Verification: STYLE 881/900자·SHA-256 `a40f41720e18d8b1c2621f040a80412eeee6a466b2c7236f48f1b15d6e80a3a7`; LYRICS SHA-256 `180c8da91988a7451034a78f35fd111738d9f182e225dec76c062f15384fd84a` 불변. 변경 후 full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS. 원시 출력 `/tmp/wavvy-17-15-male-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`. 이전 격리 리뷰 CLEAN은 가사가 불변인 새 컨셉 검토이며 실제 남성 생성 음원은 검토하지 않았다.
+Next-TODO: 젠의 Track 15 제목·전체 가사·나머지 STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-02
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 17:00 Track 15 「바람이 드는 쪽」의 BPM을 125에서 110으로 수정했다. 앞서 선택한 남성 단독 진성 보컬과 가사·106마디 계획은 유지했다. Track 01 「서랍」 리믹스의 사운드는 참고하되 원곡의 125 BPM·여성 리드 지시를 사용자 지정 110 BPM·남성 리드로 대체했다. C Major와 나머지 STYLE은 아직 제안이다. 106마디의 계산상 길이는 약 3:51이며 실제 음원 길이가 아니다. State revision 25·txt 15개·`track_source_draft`·음원 0개.
+Verification: STYLE 880/900자·SHA-256 `bc3766eb63f52f94a2b57b44f27316a97eb05275713532d24aea25b5a55236a6`; LYRICS SHA-256 `180c8da91988a7451034a78f35fd111738d9f182e225dec76c062f15384fd84a` 불변. 변경 후 full-song·lyrics-review·track-prompt·state write/check·`git diff --check` PASS. 원시 출력 `/tmp/wavvy-17-15-110-{fullsong,lyrics-review,track-prompt,state-write,state-check}.json`. 이전 격리 리뷰 CLEAN은 변경되지 않은 가사 검토이며 실제 생성 음원은 없다.
+Next-TODO: 젠의 Track 15 제목·전체 가사·나머지 STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
 ---
