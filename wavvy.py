@@ -1911,6 +1911,140 @@ def validate_final_track_sources_archive(concept_text: str, report_tracks: list[
     return errors
 
 
+def build_untimed_subtitles(concept_text: str, report_tracks: list[dict], repeat: int = 1) -> str:
+    """Extract spoken/sung lines from the finalized source archive in report order."""
+    errors = validate_final_track_sources_archive(concept_text, report_tracks)
+    if errors:
+        raise FinalizeUploadError("; ".join(errors))
+    heading = re.search(r"^## Final Track Sources\s*$", concept_text, flags=re.MULTILINE)
+    tail = concept_text[heading.end():]
+    next_heading = re.search(r"^## ", tail, flags=re.MULTILINE)
+    archive = tail[:next_heading.start()] if next_heading else tail
+    songs = []
+    for track in report_tracks:
+        order = int(track["order"])
+        block = re.search(
+            rf"^### {order:02d}\. .*$([\s\S]*?)(?=^### \d{{2}}\. |\Z)",
+            archive,
+            flags=re.MULTILINE,
+        )
+        lyric_block = re.search(r"^#### LYRICS\s*\n\s*```(?:text)?\s*\n([\s\S]*?)\n```", block.group(0), flags=re.MULTILINE)
+        if not lyric_block:
+            raise FinalizeUploadError(f"Track {order:02d}: LYRICS text block missing")
+        lines = [
+            line.strip() for line in lyric_block.group(1).splitlines()
+            if line.strip()
+            and not re.fullmatch(r"\[[^\]]+\]", line.strip())
+            and not re.fullmatch(r"\(instrumental[^)]*\)", line.strip(), flags=re.IGNORECASE)
+        ]
+        if not lines:
+            raise FinalizeUploadError(f"Track {order:02d}: no subtitle lines")
+        songs.append("\n".join(lines))
+    if repeat < 1:
+        raise FinalizeUploadError("Invalid report repeat count for subtitles")
+    return "\n\n".join(songs * repeat) + "\n"
+
+
+def verify_release_package(paths: ProjectPaths) -> list[str]:
+    """Check selected WAV identity and upload metadata against the render report."""
+    errors = []
+    report, tracks = load_finalize_report(paths)
+    manifest_path = paths.base / "input" / "download-manifest.json"
+    if not manifest_path.exists():
+        errors.append("Missing input/download-manifest.json")
+        manifest = {}
+    else:
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (ValueError, OSError) as error:
+            errors.append(f"Invalid download-manifest.json: {error}")
+            manifest = {}
+    manifest_tracks = manifest.get("tracks", [])
+    if len(manifest_tracks) != len(tracks):
+        errors.append(f"Manifest track count {len(manifest_tracks)} != report count {len(tracks)}")
+    by_order = {}
+    for item in manifest_tracks:
+        order = item.get("order")
+        if order in by_order:
+            errors.append(f"Duplicate manifest order {order}")
+        by_order[order] = item
+    for track in tracks:
+        order = int(track["order"])
+        item = by_order.get(order)
+        if not item:
+            errors.append(f"Track {order:02d}: missing manifest entry")
+            continue
+        filename = track["filename"]
+        if item.get("input_filename") != filename or item.get("approved_title") != track["title"]:
+            errors.append(f"Track {order:02d}: manifest filename/title differs from report")
+        audio = paths.tracks_dir / filename
+        actual_sha = compute_sha256(audio) if audio.is_file() else None
+        if not actual_sha or item.get("sha256") != actual_sha or track.get("sha256") != actual_sha:
+            errors.append(f"Track {order:02d}: WAV SHA-256 differs from manifest/report")
+        try:
+            if abs(float(item["duration_seconds"]) - float(track["duration"])) > 0.1:
+                errors.append(f"Track {order:02d}: manifest duration differs from report")
+        except (KeyError, TypeError, ValueError):
+            errors.append(f"Track {order:02d}: manifest duration missing or invalid")
+
+    candidate_path = paths.base / "input" / "suno-candidates.json"
+    if not candidate_path.exists() and any(item.get("candidate_id") for item in manifest_tracks):
+        errors.append("Missing suno-candidates.json for selected candidate IDs")
+    if candidate_path.exists():
+        try:
+            candidates = json.loads(candidate_path.read_text(encoding="utf-8"))
+            if candidates.get("workspace") != manifest.get("workspace"):
+                errors.append("Suno workspace differs from download manifest")
+            candidate_tracks = {item["order"]: item for item in candidates["tracks"]}
+            if len(candidate_tracks) != len(candidates["tracks"]) or len(candidate_tracks) != len(tracks):
+                errors.append("Suno candidate orders/count differ from report")
+            for track in tracks:
+                order = int(track["order"])
+                candidate = candidate_tracks.get(order, {})
+                decision = candidate.get("decision", {})
+                chosen = decision.get("chosen_candidate_id") if isinstance(decision, dict) else None
+                manifest_id = by_order.get(order, {}).get("candidate_id")
+                if candidate.get("title") != track["title"] or not chosen or chosen != manifest_id or decision.get("status") != "keep":
+                    errors.append(f"Track {order:02d}: selected Suno candidate differs from manifest/report")
+                available_ids = {entry.get("id") for entry in candidate.get("candidates", [])}
+                if chosen and chosen not in available_ids:
+                    errors.append(f"Track {order:02d}: chosen candidate ID absent from candidate list")
+                source_name = candidate.get("source_txt")
+                source_path = paths.base / source_name if source_name else None
+                if not source_path or not source_path.resolve().is_relative_to((paths.base / "input" / "tracks").resolve()) or not source_path.is_file():
+                    errors.append(f"Track {order:02d}: candidate source txt missing or outside input/tracks")
+                elif candidate.get("source_sha256") != compute_sha256(source_path):
+                    errors.append(f"Track {order:02d}: candidate source txt SHA-256 differs")
+        except (ValueError, OSError, KeyError, TypeError) as error:
+            errors.append(f"Invalid suno-candidates.json: {error}")
+
+    metadata = parse_concept_youtube_metadata(paths)
+    if not paths.upload_csv.exists():
+        errors.append("Missing output/upload.csv")
+        upload_rows = []
+    else:
+        with paths.upload_csv.open(newline="", encoding="utf-8") as stream:
+            upload_rows = list(csv.DictReader(stream))
+    if len(upload_rows) != 1:
+        errors.append(f"upload.csv row count {len(upload_rows)} != 1")
+    else:
+        for field in ("title", "description", "tags"):
+            if not metadata.get(field) or upload_rows[0].get(field) != metadata.get(field):
+                errors.append(f"YouTube {field} differs between concept.md and upload.csv")
+    description = metadata.get("description", "")
+    chapters = re.findall(r"(?m)^[^\n]*?(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2})\.\s+([^\n]+)$", description)
+    first, repeated = compute_track_timestamps(report, tracks)
+    expected = [(first[int(t["order"])], int(t["order"]), t["title"]) for t in tracks]
+    expected += [(repeated[int(t["order"])], int(t["order"]), t["title"]) for t in tracks if repeated]
+    if len(chapters) != len(expected):
+        errors.append(f"YouTube chapter count {len(chapters)} != report-derived count {len(expected)}")
+    for index, (actual, wanted) in enumerate(zip(chapters, expected), start=1):
+        actual_time, actual_order, actual_title = actual
+        if (actual_time, int(actual_order), actual_title.removesuffix(" (반복)")) != wanted:
+            errors.append(f"YouTube chapter {index} differs from report timestamp/order/title")
+    return errors
+
+
 def materialize_restored_sources(
     paths: ProjectPaths,
     report_tracks: list[dict],
@@ -2256,6 +2390,48 @@ def finalize_upload(path: Path, check: bool, keep_txt: bool, restore_from: Optio
 
     click.echo("")
     click.echo(click.style("FINALIZE UPLOAD PASSED", fg='green', bold=True))
+
+
+@cli.command("prepare-subtitles")
+@click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
+def prepare_subtitles(path: Path):
+    """Create untimed Korean subtitles from finalized lyrics without overwriting edits."""
+    paths = ProjectPaths(path)
+    try:
+        report, tracks = load_finalize_report(paths)
+        repeat = int(report.get("processing_params", {}).get("repeat", 1))
+        content = build_untimed_subtitles((paths.base / "concept.md").read_text(encoding="utf-8"), tracks, repeat)
+        destination = paths.base / "output" / "youtube_subtitles_ko_no_timing.txt"
+        if destination.exists():
+            if destination.read_text(encoding="utf-8") != content:
+                raise FinalizeUploadError(f"Existing subtitle differs from source archive; review it before replacing: {destination}")
+            click.echo(f"Subtitles already match final sources: {destination}")
+            return
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(content, encoding="utf-8")
+        click.echo(f"Untimed subtitles written: {destination}")
+    except (FinalizeUploadError, OSError) as error:
+        raise click.ClickException(str(error)) from error
+
+
+@cli.command("verify-release")
+@click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
+@click.option('--json', 'json_output', is_flag=True, help='Print machine-readable JSON')
+def verify_release(path: Path, json_output: bool):
+    """Verify selected WAVs and YouTube metadata before private upload."""
+    try:
+        errors = verify_release_package(ProjectPaths(path))
+    except (FinalizeUploadError, OSError, ValueError) as error:
+        errors = [str(error)]
+    payload = {"schema": "wavvy.release.v1", "result": "FAIL" if errors else "PASS", "errors": errors}
+    if json_output:
+        click.echo(json.dumps(payload, ensure_ascii=False, indent=2))
+    else:
+        click.echo(f"VERIFY RELEASE {payload['result']}")
+        for error in errors:
+            click.echo(f"- {error}")
+    if errors:
+        raise SystemExit(1)
 
 
 @cli.command()

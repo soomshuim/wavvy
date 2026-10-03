@@ -37,6 +37,10 @@ Canonical agent router for Wavvy. Keep this file small; route detailed rules to 
 | Resolve conflicting docs | `MASTER/SSOT.md` |
 | Track prompt/source work | `MASTER/WORKFLOWS.md` §0-2 |
 | Lyric writing/rewrite/review | `.claude/commands/write.md`, then `skills/wavvy-lyricist/SKILL.md` |
+| New series 20-song batch (explicit command required) | `/wavvy-produce` or `-wavvy-produce`, then `MASTER/WORKFLOWS.md` §0.1 and `skills/wavvy-suno-batch/SKILL.md` |
+| Selected WAV collection | `skills/wavvy-audio-ingest/SKILL.md`, then `MASTER/WORKFLOWS.md` WAV naming rule |
+| Series artwork and thumbnail | `skills/wavvy-thumbnail/SKILL.md`, then its Taste adaptation reference |
+| Full finished-series release (explicit command required) | `/wavvy-release` or `-wavvy-release`, then `skills/wavvy-release/SKILL.md` |
 | Packaging, preview, shorts, gates | `MASTER/cli/SPEC.md` |
 | Media runtime cautions | `MASTER/ai/RUNTIME_RULES.md` |
 | YouTube title/description/tags | `MASTER/youtube/YOUTUBE.md`, then series `concept.md` |

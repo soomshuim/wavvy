@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 
-from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project
+from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project, verify_release_package
 from wavvy_harness.doctor import run_ssot_hygiene
 from wavvy_harness.gate import run_gate, run_lyrics_skill_gate
 from wavvy_harness.state import build_state, check_state
@@ -1198,6 +1198,103 @@ Self-Gate
             required = [check for check in checks if check.get("required")]
             self.assertTrue(required)
             self.assertTrue(all(check["status"] == "pass" for check in required), checks)
+
+
+class ReleaseVerificationTests(unittest.TestCase):
+    def make_release(self, root: Path) -> Path:
+        series = make_series(root)
+        report_path = series / "output" / "report.json"
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        report["processing_params"] = {"fade": 0.8, "repeat": 2}
+        manifest = {"workspace": "[20:00]", "tracks": []}
+        candidate_tracks = []
+        for track in report["tracks"]:
+            order = track["order"]
+            audio = series / "input" / "tracks" / track["filename"]
+            source = series / "input" / "tracks" / f"{order:02d}_source.txt"
+            source.write_text(f"source-{order}", encoding="utf-8")
+            audio.write_bytes(f"audio-{order}".encode())
+            digest = hashlib.sha256(audio.read_bytes()).hexdigest()
+            track.update({"duration": 60.0, "sha256": digest})
+            manifest["tracks"].append({
+                "order": order, "approved_title": track["title"], "input_filename": track["filename"],
+                "duration_seconds": 60.0, "sha256": digest, "candidate_id": f"candidate-{order}",
+            })
+            candidate_tracks.append({
+                "order": order, "title": track["title"], "source_txt": f"input/tracks/{source.name}",
+                "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                "candidates": [{"id": f"candidate-{order}"}],
+                "decision": {"status": "keep", "chosen_candidate_id": f"candidate-{order}"},
+            })
+        report_path.write_text(json.dumps(report), encoding="utf-8")
+        (series / "input" / "download-manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        (series / "input" / "suno-candidates.json").write_text(
+            json.dumps({"workspace": "[20:00]", "tracks": candidate_tracks}), encoding="utf-8"
+        )
+        description = "Track List\n00:00 - 01. One\n00:59 - 02. Two\nRepeat\n01:58 - 01. One\n02:58 - 02. Two"
+        concept = CONCEPT_FINAL.replace("description\n```", description + "\n```")
+        (series / "concept.md").write_text(concept, encoding="utf-8")
+        (series / "output" / "upload.csv").write_text(
+            'video_path,title,description,tags,thumbnail_path,visibility\n'
+            'final.mkv,Playlist | 20:00 | Test | Wavvy,"' + description.replace("\n", "\n") + '","tag1,tag2",thumb.jpg,private\n',
+            encoding="utf-8",
+        )
+        return series
+
+    def test_subtitles_strip_structure_but_keep_sung_lines(self):
+        concept = CONCEPT_FINAL.replace("- Filename:", "- Source Checksum: `test`\n- Filename:")
+        concept = concept.replace("lyrics\n```", "[Verse 1]\n사랑해\n[Instrumental]\n(instrumental)\n```", 1)
+        tracks = [{"order": 1, "title": "One", "filename": "01__One__A__Genre__100.wav"},
+                  {"order": 2, "title": "Two", "filename": "02__Two__B__Genre__110.wav"}]
+        self.assertEqual(build_untimed_subtitles(concept, tracks), "사랑해\n\nlyrics\n")
+        self.assertEqual(build_untimed_subtitles(concept, tracks, repeat=2), "사랑해\n\nlyrics\n\n사랑해\n\nlyrics\n")
+        with tempfile.TemporaryDirectory() as tmp:
+            series = make_series(Path(tmp), concept)
+            report_path = series / "output" / "report.json"
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            report["processing_params"] = {"repeat": 2}
+            report_path.write_text(json.dumps(report), encoding="utf-8")
+            result = CliRunner().invoke(cli, ["prepare-subtitles", str(series)])
+            self.assertEqual(result.exit_code, 0, result.output)
+            destination = series / "output" / "youtube_subtitles_ko_no_timing.txt"
+            self.assertEqual(destination.read_text(encoding="utf-8"), "사랑해\n\nlyrics\n\n사랑해\n\nlyrics\n")
+            destination.write_text("human edit\n", encoding="utf-8")
+            result = CliRunner().invoke(cli, ["prepare-subtitles", str(series)])
+            self.assertNotEqual(result.exit_code, 0)
+            self.assertEqual(destination.read_text(encoding="utf-8"), "human edit\n")
+
+    def test_verify_release_checks_identity_and_chapters(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            self.assertEqual(verify_release_package(ProjectPaths(series)), [])
+            manifest_path = series / "input" / "download-manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["tracks"][0]["candidate_id"] = "wrong-candidate"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            self.assertTrue(any("selected Suno candidate" in error for error in verify_release_package(ProjectPaths(series))))
+            manifest["tracks"][0]["candidate_id"] = "candidate-1"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            candidate_path = series / "input" / "suno-candidates.json"
+            candidate_path.unlink()
+            self.assertTrue(any("Missing suno-candidates.json" in error for error in verify_release_package(ProjectPaths(series))))
+            candidate_path.write_text(json.dumps({"workspace": "[20:00]", "tracks": [
+                {"order": i, "title": title, "source_txt": f"input/tracks/{i:02d}_source.txt",
+                 "source_sha256": hashlib.sha256(f"source-{i}".encode()).hexdigest(),
+                 "candidates": [{"id": f"candidate-{i}"}],
+                 "decision": {"status": "keep", "chosen_candidate_id": f"candidate-{i}"}}
+                for i, title in ((1, "One"), (2, "Two"))
+            ]}), encoding="utf-8")
+            (series / "input" / "tracks" / manifest["tracks"][0]["input_filename"]).write_bytes(b"wrong-audio")
+            self.assertTrue(any("WAV SHA-256" in error for error in verify_release_package(ProjectPaths(series))))
+
+    def test_verify_release_rejects_chapter_drift_and_csv_drift(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            concept_path = series / "concept.md"
+            concept_path.write_text(concept_path.read_text(encoding="utf-8").replace("00:59 - 02. Two", "01:00 - 02. Two"), encoding="utf-8")
+            errors = verify_release_package(ProjectPaths(series))
+            self.assertTrue(any("chapter 2" in error for error in errors))
+            self.assertTrue(any("description differs" in error for error in errors))
 
 
 if __name__ == "__main__":

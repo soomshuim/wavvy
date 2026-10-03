@@ -2,8 +2,8 @@
 
 > **모든 작업 워크플로우 통합 문서**
 >
-> Version: 2.1
-> Last Updated: 2026-05-02
+> Version: 2.2
+> Last Updated: 2026-10-03
 
 ---
 
@@ -14,8 +14,8 @@
 ### 절차
 1. **txt 파일 먼저 생성** → `SERIES/[시리즈]/input/tracks/{N}_{제목}.txt`
 2. 새로 쓴 전체 트랙 프롬프트라면 `python3 wavvy.py gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/{N}_{제목}.txt --json`으로 실제 txt를 검사한다.
-3. 유저에게 제시 → **PASS 컨펌 받기**
-4. PASS 후에만 concept.md 반영
+3. 일반적인 한 곡씩 제작에서는 유저에게 제시 → **PASS 컨펌 받기**. 새 시리즈 20곡 일괄 제작은 아래 §0.1의 생성 전 PASS 예외를 따른다.
+4. 사용자 선택·PASS 후에만 최종 트랙 소스를 concept.md에 반영
 
 ### 금지
 - ❌ txt 없이 바로 concept.md 수정
@@ -23,6 +23,12 @@
 - ❌ 컨펌 전 concept.md 반영
 - ❌ 채팅으로만 제시하고 txt 생성 안 함
 - ❌ `finalize-upload` PASS 없이 `input/tracks/*.txt` 삭제
+
+### 0.1 새 시리즈 20곡 일괄 제작 예외 (2026-10-03 젠 결정)
+
+젠이 Claude `/wavvy-produce` 또는 Codex `-wavvy-produce`를 **명시적으로 호출**하면 `skills/wavvy-suno-batch/SKILL.md`를 사용한다. 먼저 시리즈 시간과 메인 음악 테마(예: acoustic, R&B, neo-soul, indie)를 제안하고 젠의 피드백을 받는다. 이어 레퍼런스 곡 2~3곡을 받거나, 레퍼런스 없이 진행하겠다는 젠의 선택을 확인한다. 그 방향이 정해진 뒤 20곡의 txt 초안을 쓰고 기존 track-prompt·해당 lyrics-review 게이트를 거친다. Suno에서 확정된 시간의 `[HH:MM]` 폴더/작업 공간을 만들거나 선택해 활성 상태를 확인한 뒤, 곡별 PASS를 기다리지 않고 그 안에서 각 곡의 첫 후보를 생성한다. 생성 위치를 후보 기록에 남긴다. 젠은 생성된 음원을 듣고 유지할 후보와 다시 만들 곡을 고른다. 이 선택이 일괄 제작 경로의 채택 결정이며, 그 뒤에만 최종 소스를 concept.md에 반영한다. 시리즈 컨셉의 방향을 기록하는 brief는 초안 전에 만들 수 있지만 미채택 트랙을 최종 소스로 쓰지 않는다.
+
+생성 비용이 드는 재시도는 젠이 다시 만들 곡을 골랐을 때만 한다. 일반 문장 “새 시리즈 만들자”, 프로젝트 로드(`-wavvy`·`/wavvy`), 가능성에 대한 대화, 이미 완료된 시리즈의 상태 확인은 이 일괄 제작 경로의 시작 신호가 아니다. 커맨드 호출 뒤의 피드백은 같은 작업의 계속이므로 두 번째 커맨드는 필요 없다. 한 곡씩 수정·제작할 때는 위 §0의 사전 PASS 경로를 계속 쓴다.
 
 ### 파일 네이밍
 | 파일명 | 용도 |
@@ -83,7 +89,7 @@ python3 wavvy.py finalize-upload SERIES/[시리즈]
 3. 새 전체 트랙 초안이면 txt에 제안 BPM·Key/Mode·보컬 성별을 명시하고 `gate --stage track-prompt --artifact <txt>` 검사. 이 게이트의 PASS는 STYLE/EXCLUDE 예산과 필드·파일 형식이 맞는다는 뜻이다. 가사 표현, 실제 음원 길이, 생성 품질을 인증하지 않는다. 기존 사용자 제공 리믹스 원문에는 이 새 초안 게이트를 소급 적용하지 않는다.
 4. 전체곡 가사를 새로 쓰면 가사 검토 기록에 `draft_scope: full-song`, 목표 초, 박자표, 구간별 마디 계획, 트랙 txt 경로를 적는다. `gate --stage lyrics-review --artifact <review.md> --mode full-lyric-draft --draft-scope full-song`으로 실제 txt의 LYRICS 본문과 계획을 확인한다. 계산한 길이는 BPM/마디 계획에 따른 추정치다. Suno에서 생성한 음원의 실제 길이는 별도로 재생·측정한다.
 5. 가사 일부(`draft_scope: excerpt`), 기존 가사 검토(`review-only`), Suno prompt-only에는 전체곡 길이 계획을 강제하지 않는다.
-6. 사용자 컨펌 → Suno 제출
+6. 일반적인 한 곡씩 제작: 사용자 컨펌 → Suno 제출. 명시 커맨드로 시작한 새 시리즈 20곡 일괄 제작은 §0.1에 따라 방향 피드백·레퍼런스 수집 후 첫 생성, 이어 청취·채택 결정을 받는다.
 
 > Lyric Prompt 3가지 모드: Empty(비움), Prompt(mood/theme 힌트), Structure(구조 태그만). 상세는 LYRICS.md §1 참조.
 

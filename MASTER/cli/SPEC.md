@@ -127,6 +127,11 @@ python3 wavvy.py gate SERIES/[시리즈] --stage lyrics-review --artifact FULL_D
 
 # 업로드 FINAL 소스 아카이브
 python3 wavvy.py finalize-upload SERIES/[시리즈] --check
+python3 wavvy.py finalize-upload SERIES/[시리즈] --keep-txt
+
+# 확정 가사 자막 + 발매 전 파일/챕터 대조
+python3 wavvy.py prepare-subtitles SERIES/[시리즈]
+python3 wavvy.py verify-release SERIES/[시리즈] --json
 
 # 정리
 python3 wavvy.py clean SERIES/[시리즈]
@@ -136,6 +141,8 @@ python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 ```
 
 `state`는 같은 시리즈를 재개할 때 저장된 `phase`/`next_action`을 유지한다. 다른 시리즈를 지정하면 대상 `concept.md`와 산출물에서 다시 추론하며, 명시한 `--phase`와 `--if-match` revision 조건은 그대로 적용한다.
+
+`prepare-subtitles`는 `Final Track Sources`의 노랫말에서 구간 지시를 제외하고 `report.json`의 반복 횟수만큼 이어 붙여 시간 표시 없는 한국어 자막을 만든다. 기존 자막이 다르면 덮어쓰지 않고 중단한다. `verify-release`는 선택 WAV의 해시·제목·순서·길이를 `download-manifest.json`과 렌더 보고서에 대조한다. 후보 기록이 있으면 채택 ID와 원본 txt 해시도 확인한다. 유튜브 문안의 제목·설명·태그와 실제 시작 시각·반복 챕터를 `upload.csv`와 보고서에 대조한다. 업로드 직전에 두 명령과 `upload-ready` 게이트를 통과해야 한다.
 
 ---
 

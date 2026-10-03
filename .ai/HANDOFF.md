@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-10-03 13:50:27
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: Wavvy 공용 produce/release 스킬과 명시적 커맨드를 구현했다. 자막·음원/챕터 발매 전 대조·예약 댓글 후속 절차를 보강했고 44 tests 및 독립 Astra 검토가 통과했다.
+Next-TODO: 17:00 공개 뒤 실제 공개·댓글·고정·자막 상태를 확인한다. 다음 180 BPM 러닝곡 시리즈는 젠의 명시적 -wavvy-produce 호출에서만 시작하고 첫 실사용으로 스킬을 검증한다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-10-03 12:19:30
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex

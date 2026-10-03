@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-10-03 [CDX] -record — Wavvy 공동 제작·발매 스킬 정리
+- 명시적 produce/release 커맨드, 20곡 Suno [HH:MM] 작업 공간, WAV 선택 확인, 작은 썸네일 승인 후 4K 발매, 유튜브 업로드·예약 흐름을 공용 스킬로 연결했다.
+- 발매 전 자막 생성, 후보·WAV 해시·보고서·챕터 대조, 예약 댓글의 등록·상태·중복 방지·재개 절차를 보강했다.
+- 44 tests·py_compile·17:00 verify-release·doctor·state/gate·diff check PASS, 독립 Astra xhigh 검토 CLEAN. 실제 신규 시리즈 실행은 향후 명시적 커맨드 때 확인한다.
+- 이번 -record에서 Wavvy와 agent-center 세션·인계 기록을 커밋·푸시한다.
+
+## 2026-10-03 [CDX] 발매 스킬 후속 보강
+- `prepare-subtitles`: `Final Track Sources`의 가사에서 구간 태그를 빼고 렌더 반복 횟수대로 시간 표시 없는 자막을 만든다. 기존 편집 자막은 덮어쓰지 않는다.
+- `verify-release`: 실제 WAV 해시와 선택 후보·원본 txt·다운로드 기록·보고서, 유튜브 concept/upload.csv 메타데이터와 보고서 기준 전체 챕터를 업로드 전에 대조한다. 17:00 기존 패키지에 읽기 전용으로 적용해 PASS했다.
+- 예약 댓글은 고유 작업·등록 실측·상태 파일·정확한 댓글 문안 존재 확인·중복 방지·재개 절차를 `wavvy-youtube-publish` 참고문서로 정했다. 기존 17:00 예약 작업은 변경하지 않았다. 새 시리즈의 실제 등록·게시 과정은 첫 실사용 때 확인해야 한다.
+- 검증: 44 unit tests, py_compile, doctor, 17:00 verify-release PASS. 새 함수·발매 스킬과 기존 state/gate 상호작용을 fresh 격리 Astra xhigh가 검토해 CLEAN(Critical/High 0, 원칙 관찰 없음). 미커밋 변경은 이번 스킬/하네스 작업물이며 젠의 commit/push 요청은 없다.
+
+## 2026-10-03 [CDX] Wavvy 공동 제작·발매 스킬 연결
+- 젠 정정에 따라 새 시리즈 일괄 제작의 시작은 명시적인 Claude `/wavvy-produce` 또는 Codex `-wavvy-produce` 커맨드로 한정했다. 커맨드 뒤 시리즈 시간·음악 메인 테마를 먼저 제안하고 젠의 피드백, 레퍼런스 곡 2~3개(또는 없이 진행 선택)를 받은 뒤 20곡 txt·기존 소스 게이트·Suno 첫 생성까지 이어간다. Suno 생성은 확정 시간의 `[HH:MM]` 폴더/작업 공간 안에서만 수행하고 후보 기록에 그 이름을 남긴다. 생성 뒤 젠이 듣고 채택/재생성할 곡을 고른다. 일반 문장 “새 시리즈 만들자”와 `-wavvy` 로드는 생성 신호가 아니다. `MASTER/WORKFLOWS.md` §0.1에 일괄 제작 예외를 기록했다.
+- `wavvy-suno-batch`, `wavvy-audio-ingest`, `wavvy-thumbnail`, `wavvy-release`, `wavvy-youtube-publish` 다섯 공용 스킬과 Taste 정적 이미지 적용 참고문서를 만들었다. Claude `/wavvy-produce`·`/wavvy-release`, Codex `-wavvy-produce`·`-wavvy-release`는 같은 스킬을 가리키는 필수 시작 커맨드다. 발매 커맨드 실행 시 작은 썸네일 초안을 자동으로 만들고 젠의 시각 승인 뒤 최종 4K 이미지·썸네일·영상을 만든다.
+- 발매 순서는 선택 WAV 확인 → 초안 승인·아트워크 → validate/preview/pack → `finalize-upload --check` 및 `--keep-txt` 실제 보관 → source-final/render-final → 보고서 기반 메타데이터 → upload-ready/유튜브 업로드·예약·실제 공개/댓글 확인이다. 기존 `wavvy.py`를 재사용하며 새 패커는 만들지 않았다.
+- 새 스킬 5개 형식 PASS, 공유 라우터 byte 동일, 41 tests·py_compile·doctor·17:00 state/업로드 gate·diff check PASS. 정정 전 초안과 명시 커맨드·사전 피드백·Suno 작업 공간 정정본을 각각 격리 Astra xhigh로 검토해 모두 CLEAN(Critical/High 0, 원칙 관찰 없음)이었다. 새 커맨드의 실시간 인식, 새 시리즈 Suno 생성과 새 발매 경로의 실서비스 실행은 아직 시작하지 않아 미검증이다. 젠은 향후 180 BPM 러닝곡을 첫 실사용으로 정했고, 그때 작업하며 스킬·하네스를 다듬기로 했다. 이번 턴은 제작 커맨드 호출이 아니므로 시작하지 않았다. 17:00 기존 uploaded 상태는 변경하지 않았다.
+
 ## 2026-10-03 [CDX] -record: 17:00 공개 예약과 댓글 예약 작업
 - Wavvy24의 https://youtu.be/KGzllkCkozw를 2026-10-03 오후 5:00, GMT+09:00 공개로 예약했다. YouTube Studio에서 저장 후 날짜·시간·현지 시간(GMT+0900)과 예약 상태를 다시 확인했다. SD·HD·4K 처리는 완료됐고 저작권 최종 결과는 별도로 확정하지 않았다.
 - 비공개 시청 페이지는 댓글을 지원하지 않는다. 17:01 KST부터 승인된 댓글을 게시·고정하도록 Mac launchd `com.wavvy.1700-comment.20261003`을 등록했다. Aside CLI의 공개 영상 읽기 전용 검증은 DRY_RUN_READY, 대상 비공개 영상은 WAIT_PUBLIC이었다. 실제 공개·댓글·고정은 예약 시각 이후 확인이 필요하다. 결과는 ~/Library/Application Support/Wavvy/17-00-comment-2026-10-03-status.json에 남긴다.
