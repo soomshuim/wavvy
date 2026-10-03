@@ -5,7 +5,7 @@ Last Updated: 2026-10-03
 
 ## YouTube Metadata (v2 — 실제 WAV 타임스탬프 반영)
 
-> Suno `[17:00]`의 20개 WAV와 `pack --repeat 2`의 `output/report.json`을 바탕으로 한 업로드 메타데이터다. 타임스탬프는 0.8초 크로스페이드를 반영했다. 2026-10-03 Wavvy24 채널에 비공개 업로드했으며 청취 반응은 아직 확인할 수 없다.
+> Suno `[17:00]`의 20개 WAV와 `pack --repeat 2`의 `output/report.json`을 바탕으로 한 업로드 메타데이터다. 타임스탬프는 0.8초 크로스페이드를 반영했다. 2026-10-03 Wavvy24 채널에 비공개 업로드한 뒤 당일 17:00 KST 공개로 예약했으며, 공개 전 청취 반응은 확인할 수 없다.
 
 ### Context Mode
 
@@ -120,14 +120,16 @@ acoustic rnb, acoustic neo soul, indie rock, korean rnb, korean neo soul, korean
 
 ## Upload Status
 
-- **YouTube upload completed**: 2026-10-03, Wavvy24 채널, 비공개. https://youtu.be/KGzllkCkozw
+- **YouTube upload completed**: 2026-10-03, Wavvy24 채널. https://youtu.be/KGzllkCkozw
+- **Publication scheduled**: YouTube Studio에 2026-10-03 오후 5:00, GMT+09:00, 공개로 예약했다. 저장 후 날짜·시간과 선택된 `현지 시간(GMT+0900)`을 재확인했다. 실제 공개 전에는 비공개다.
 - Aside CLI의 YouTube Studio에서 제목·설명(40개 시작 시각)·썸네일·태그 25개를 업로드 후 재확인했다. 시청자층은 아동용 아님, AI 사용은 예로 저장했다.
-- 영상 업로드 자체는 완료됐다. 확인 시점에 표준 화질(SD)·4K 처리와 저작권 검토는 대기 중이므로, YouTube에서 최종 재생 화질과 검토 결과는 아직 확인하지 못했다.
+- YouTube Studio에서 SD·HD·4K 처리 완료를 확인했다. 저작권 검토의 최종 결과는 별도로 확정하지 않았다.
+- 비공개 상태의 시청 페이지는 댓글을 지원하지 않는다. 위 고정 댓글 원문을 공개 후 게시·고정하도록 이 Mac의 Aside CLI 예약 작업(`com.wavvy.1700-comment.20261003`)을 2026-10-03 17:01 KST에 등록했다. 실제 게시·고정 결과는 아직 확인 전이며, 로컬 상태 기록은 `~/Library/Application Support/Wavvy/17-00-comment-2026-10-03-status.json`에 남긴다.
 - 한국어 가사 원고는 타이밍 없는 자막 파일로 제출해 초안 저장까지 확인했다. 자동 동기화 자막의 최종 게시에는 실패했으며, 영상 처리 후 자막 상태를 다시 확인해야 한다.
 
 ## Series Status
 
-- **Status**: 20 WAV tracks and a twice-through 4K static playlist render are complete locally; the playlist is uploaded privately to Wavvy24. YouTube processing remains pending.
+- **Status**: 20 WAV tracks and a twice-through 4K static playlist render are complete locally; the playlist is uploaded to Wavvy24 and scheduled to become public at 17:00 KST on 2026-10-03. The comment task awaits publication.
 - **Time Slot**: 17:00.
 - **Genre Lanes**: Acoustic R&B, acoustic neo-soul, acoustic indie rock.
 - **Tempo**: The earlier source prompts allow up to 125 BPM; six prompts omit a numeric BPM. Filename values represent prompt targets, not measured audio tempos.

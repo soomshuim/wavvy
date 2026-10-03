@@ -1,8 +1,13 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-03 (17:00 WAV 20곡·4K 렌더·유튜브 초안 완료, 업로드 전)
+> Last updated: 2026-10-03 (17:00 영상 업로드·4K 처리 완료, 17:00 KST 공개 예약, 댓글 예약 작업 대기)
 
 ---
+
+## 2026-10-03 [CDX] -record: 17:00 공개 예약과 댓글 예약 작업
+- Wavvy24의 https://youtu.be/KGzllkCkozw를 2026-10-03 오후 5:00, GMT+09:00 공개로 예약했다. YouTube Studio에서 저장 후 날짜·시간·현지 시간(GMT+0900)과 예약 상태를 다시 확인했다. SD·HD·4K 처리는 완료됐고 저작권 최종 결과는 별도로 확정하지 않았다.
+- 비공개 시청 페이지는 댓글을 지원하지 않는다. 17:01 KST부터 승인된 댓글을 게시·고정하도록 Mac launchd `com.wavvy.1700-comment.20261003`을 등록했다. Aside CLI의 공개 영상 읽기 전용 검증은 DRY_RUN_READY, 대상 비공개 영상은 WAIT_PUBLIC이었다. 실제 공개·댓글·고정은 예약 시각 이후 확인이 필요하다. 결과는 ~/Library/Application Support/Wavvy/17-00-comment-2026-10-03-status.json에 남긴다.
+- concept·계획·CHANGELOG를 현행화했다. uploaded gate·state check·git diff check PASS. 독립 Codex Astra/xhigh 검토에서 확인된 댓글 칸 탐지 결함을 수정했고 최종 Critical/High 0건·원칙 관찰 없음으로 CLEAN이다. 이번 기록은 커밋·푸시한다.
 
 ## 2026-10-03 [CDX] -record: 17:00 YouTube 비공개 업로드
 - 젠이 지정한 soomshuim@gmail.com 계정의 Wavvy24 채널에 17:00 20곡×2회 3840×2160 MP4를 비공개 업로드했다: https://youtu.be/KGzllkCkozw. Aside CLI의 YouTube Studio에서 영상 업로드 완료, 제목·설명(40개 챕터)·썸네일·태그 25개, 아동용 아님·AI 사용 예·비공개 선택을 확인했다.

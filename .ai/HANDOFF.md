@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-10-03 12:19:30
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 17:00 플레이리스트를 2026-10-03 17:00 KST 공개로 예약했고 SD·HD·4K 처리 완료를 확인했다. 비공개 단계에서는 댓글 불가라 17:01 KST부터 Aside CLI로 승인 댓글을 게시·고정하는 Mac launchd 작업을 등록했다. 실제 공개·댓글·고정은 아직 미확인이다.
+Next-TODO: 17:00 이후 https://youtu.be/KGzllkCkozw의 공개 상태와 ~/Library/Application Support/Wavvy/17-00-comment-2026-10-03-status.json의 댓글·고정 결과를 확인한다. 댓글 실패 시 Aside CLI로 직접 게시·고정한다. 한국어 자막은 초안으로 남아 있어 별도 확인이 필요하다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-10-03 11:52:02
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex

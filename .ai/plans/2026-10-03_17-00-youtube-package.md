@@ -1,7 +1,7 @@
 # 17:00 YouTube package
 
 Date: 2026-10-03
-Status: Uploaded privately; YouTube processing pending
+Status: Uploaded; 2026-10-03 17:00 KST public release scheduled; comment pending publication
 
 ## Requested result
 
@@ -42,3 +42,5 @@ The YouTube upload is private. Local media is excluded from Git, so a remote clo
 - Uploaded `output/final.mp4` to Wavvy24 as `https://youtu.be/KGzllkCkozw` and saved it private. YouTube Studio confirmed upload complete; SD and 4K processing and the copyright check had not completed at the last inspection.
 - Verified the persisted title, exact description with 40 chapter starts, uploaded thumbnail, all 25 tags, not-made-for-kids selection, and AI-use disclosure in YouTube Studio.
 - Submitted the untimed Korean transcript. Publishing the auto-synced subtitles failed while the video was still uploading, then YouTube confirmed the transcript was saved as a draft. Its timing and publication need a later check after processing.
+- YouTube Studio subsequently showed SD, HD, and 4K processing complete. Its visibility dialog persisted `2026. 10. 3.`, `오후 5:00`, and `공개로 예약` after save; the reopened timezone menu selected `현지 시간(GMT+0900)`, matching Korea time. The video remains private until that time.
+- The private watch page explicitly says comments are unavailable. A local `launchd` job (`com.wavvy.1700-comment.20261003`) is registered for 17:01 KST to post and pin the approved comment through Aside CLI. Its read-only preflight returned `WAIT_PUBLIC`; `launchctl print` showed the calendar event registered. Publication, comment posting, and pinning still require post-release verification.
