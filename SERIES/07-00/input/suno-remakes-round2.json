@@ -1,0 +1,41 @@
+{
+  "workspace": "[07:00]",
+  "workspace_url": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "round": 2,
+  "vocal_direction": "instrumental",
+  "target_bpm": 180,
+  "reference_track_order": 10,
+  "tracks": [
+    {
+      "order": 2,
+      "title": "파란불",
+      "displayed_name": "2. 파란불 (2차)",
+      "source_txt": "input/remakes/02_파란불_round2.txt",
+      "source_sha256": "d9b7deed09f6782cc167387dae8a606a18f912a67648a5ecde4fa10c0be13573",
+      "prior_round_candidate_ids": [
+        "1344779c-7aef-442f-be39-21446d8ac3a9",
+        "ec9f0739-5efc-43e2-a324-b0e32a0ecd95"
+      ],
+      "submission_status": "created",
+      "submission_evidence": "One Create action reached Suno; credits decreased from 1296 to 1286. A later Aside workspace snapshot showed two new rows named 2. 파란불 (2차), and both stable song links were read from those rows. No retry was made.",
+      "candidates": [
+        {
+          "id": "3f7a19cd-fe53-4722-bf1d-deb0e6455ddd",
+          "displayed_name": "2. 파란불 (2차)",
+          "url": "https://suno.com/song/3f7a19cd-fe53-4722-bf1d-deb0e6455ddd",
+          "observed_status": "created"
+        },
+        {
+          "id": "e4292017-f044-4a69-8945-322a2bd235fb",
+          "displayed_name": "2. 파란불 (2차)",
+          "url": "https://suno.com/song/e4292017-f044-4a69-8945-322a2bd235fb",
+          "observed_status": "created"
+        }
+      ],
+      "decision": {
+        "status": "pending",
+        "chosen_candidate_id": null
+      }
+    }
+  ]
+}

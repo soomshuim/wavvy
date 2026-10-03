@@ -145,7 +145,12 @@ def _upload_completed(concept_text: str) -> bool:
             return False
         return any(re.search(pattern, upload_status, flags=re.IGNORECASE) for pattern in completion_patterns)
 
-    if re.search(r"https?://(?:www\.)?(?:youtube\.com|youtu\.be)/\S+", concept_text, flags=re.IGNORECASE):
+    # Legacy published concepts can identify the release in a dedicated YouTube
+    # blockquote. Reference-video URLs elsewhere are not publication evidence.
+    if re.search(
+        r"(?im)^>\s*\*\*YouTube\*\*:\s*https?://(?:www\.)?(?:youtube\.com|youtu\.be)/\S+",
+        concept_text,
+    ):
         return True
 
     explicit_patterns = [

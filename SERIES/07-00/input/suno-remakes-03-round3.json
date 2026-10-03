@@ -1,0 +1,42 @@
+{
+  "workspace": "[07:00]",
+  "workspace_url": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "request": "03 only: previous stronger A/B sounded slow to 젠; retain instrumental 180 BPM target and make the running drum pulse more forceful",
+  "tracks": [
+    {
+      "order": 3,
+      "title": "첫 바퀴",
+      "displayed_name": "3. 첫 바퀴 (3차)",
+      "source_txt": "input/remakes/03_첫 바퀴_round3.txt",
+      "source_sha256": "1d2dec89ac87c7e01366032031e4088a9e5c0c068638fe123a26aa9d19180554",
+      "prior_remake_candidate_ids": [
+        "a0bc1984-fea1-4a34-9344-f85a35a3be3c",
+        "a7d110db-56fd-4857-b441-60a84ecde29b"
+      ],
+      "submission_status": "created",
+      "submission_evidence": "Aside CLI attached the existing Suno [07:00] tab. The Advanced form showed [Instrumental] in the lyrics editor, the round-three style and exclusions, title 3. 첫 바퀴 (3차), Save to [07:00], and v6. One Create click reduced credits from 1,146 to 1,136 and added two V6 rows. No song was deleted.",
+      "candidates": [
+        {
+          "id": "fad9fc49-9b35-4f10-aa76-f62ddd9cf10c",
+          "displayed_name": "3. 첫 바퀴 (3차)",
+          "url": "https://suno.com/song/fad9fc49-9b35-4f10-aa76-f62ddd9cf10c",
+          "displayed_duration": "2:24",
+          "observed_status": "playable"
+        },
+        {
+          "id": "b074e6e8-59b9-4160-ad1f-771bdce0ad61",
+          "displayed_name": "3. 첫 바퀴 (3차)",
+          "url": "https://suno.com/song/b074e6e8-59b9-4160-ad1f-771bdce0ad61",
+          "displayed_duration": "2:37",
+          "observed_status": "playable"
+        }
+      ],
+      "decision": {
+        "status": "selected",
+        "chosen_candidate_id": "fad9fc49-9b35-4f10-aa76-f62ddd9cf10c",
+        "listener_feedback": "젠: 3통과 (2026-10-03). 젠이 A를 남기고 B를 삭제해 최종 03으로 선택했다. `input/suno-selected.json`의 03 ID와 일치한다.",
+        "tempo_verified": false
+      }
+    }
+  ]
+}

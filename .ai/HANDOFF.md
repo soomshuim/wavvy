@@ -1,5 +1,105 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-10-03 18:09:24
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 07:00 최종 20곡을 선택 ID로 고정했고 02–07의 WAV 6개를 다운로드·검증했다. 17:00 공개·댓글 확인 및 Suno 제작/검사기 변경도 이번 기록에 포함한다.
+Next-TODO: 01 및 08–20 WAV 수집 후 전곡 음원 확인과 Final Track Sources 진행. 지금은 02–07 WAV만 있음.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 07:00 시리즈 20곡을 번호별로 추려 듣고, 마지막 03 3차까지 통과시켰다. “20곡 모두 패스지?” 확인에 따라 01–20 전체를 번호별 청취 PASS로 기록했다.
+Next-TODO: Suno의 추가 A/B 중 최종 음원 ID 20개는 아직 확정되지 않았다. 실제 178–182 BPM 지속 박자와 길이 확인, Final Track Sources·WAV 수집도 남아 있다. 03 3차는 화면 길이 2:24·2:37로 둘 다 3분 목표보다 짧다.
+Resume-Trigger: 젠의 최종 음원 선택 또는 후속 제작 요청 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 03 2차는 젠이 “느려”라고 판정했다. 03 3차를 빠른 모토릭 드럼 중심의 무가사 180 BPM 목표로 `[07:00]`에서 한 번 생성했고, 젠이 “3통과”로 청취 PASS했다. 새 A/B 링크는 `input/suno-remakes-03-round3.json`과 `input/remake-review.md`에 기록했다.
+Next-TODO: 03 3차 A/B 중 최종 한 곡은 아직 지정되지 않았다. 두 화면 길이는 2:24·2:37로 3분 목표 미달이며 실제 178–182 BPM은 아직 측정되지 않았다. Final Track Sources·WAV는 없다. 다른 번호는 이번 턴에 변경하지 않았다.
+Resume-Trigger: 젠의 A/B 선택 또는 후속 제작 요청 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 `[07:00]` 작업 공간을 20곡으로 정리한 것을 화면에서 확인했다. 이어 03만 더 힘 있게 재생성하도록 요청해 무가사 180 BPM 목표의 밝은 신스 인디 일렉트로록 소스를 작성하고 Suno Create를 한 번 실행했다. 새 03 A/B 링크는 `input/suno-remakes-03.json`과 `input/remake-review.md`에 있다. 생성 후 Suno 작업 공간은 기존 20곡+새 A/B=22곡이다.
+Next-TODO: 젠이 새 03 A(화면 2:28)와 B(화면 3:05)를 듣고 선택하거나 재수정을 지시한다. 실제 178–182 BPM은 아직 측정되지 않았고 Final Track Sources·WAV도 없다. 원본 03 Cover와 다른 19곡은 건드리지 않았다.
+Resume-Trigger: 젠의 03 청취 선택 또는 후속 요청 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 07:00의 03·05·07·08·11·12·15·16·18·20 Cover 결과를 직접 확인하고 전체 PASS했다. `input/cover-review.md`와 concept·계획에 이 청취 결정을 기록했다. A/B 후보는 20개이며 원본 연결 ID는 `input/suno-covers.json`에 있다.
+Next-TODO: 번호별 A/B 최종 선택과 실제 178–182 BPM 지속 박자·길이 확인은 아직 남아 있다. 03 A는 Suno 페이지 표시 길이 약 1:01로 3분 목표에 못 미친다. Final Track Sources·WAV는 없다.
+Resume-Trigger: 젠의 번호별 선택 또는 후속 제작 요청 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “2 완료” 뒤 07:00의 03·05·07·08·11·12·15·16·18·20 생존 원본에서 각각 Remix → Cover를 실행했다. 각 Cover의 가사 칸은 `[Instrumental]` 한 줄이었고, 번호당 한 번 요청해 A/B 20개 결과 ID를 `SERIES/07-00/input/suno-covers.json`에 기록했다. 듣기 링크는 `input/cover-review.md`에 있다. 01·02와 원본은 건드리지 않았다.
+Next-TODO: 젠이 Cover A/B를 들어 번호별 한 곡을 고른다. 실제 무가사 청감·길이·178–182 BPM 지속 박자는 아직 미확인이고 Final Track Sources·WAV는 없다. 기존 재생성 곡과 01·02도 전체 20곡 채택 전 확인이 필요하다.
+Resume-Trigger: 젠의 청취 선택 또는 후속 제작 요청 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 07:00 시리즈 02·04·06·09·10·13·14·17·19를 서로 다른 강약의 무가사 180 BPM 목표 프롬프트로 재설계하고 `[07:00]`에서 번호마다 한 번씩 생성했다. 새 A/B 18개 ID는 `SERIES/07-00/input/suno-remakes.json`, 듣기 링크는 `SERIES/07-00/input/remake-review.md`에 기록했다. 최초 40개 이력은 보존했다. 180 BPM 실제 오디오 판정·최종 선택은 아직 없으며 다른 11곡 Cover도 실행하지 않았다.
+Next-TODO: 젠이 새 후보를 듣고 번호별 한 곡을 고르거나 재생성을 지시한다. 실제 178–182 BPM과 90 BPM 반박자 느낌 여부를 확인한 뒤 선택 상태를 기록한다. 나머지 원본의 정리 완료 연락을 받으면 11개 생존 ID를 다시 확인하고 각각 Remix → Cover에서 `[Instrumental]`을 적용한다.
+Resume-Trigger: 젠의 후보 선택 또는 정리 완료 연락 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> Codex
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 07:00 최초 후보를 듣고 가사 없는 러닝곡으로 전환하기로 했다. Suno의 요청당 기본 두 곡 생성 사실을 공용 제작 스킬에 기록했다. 최초 20번 생성·40개 후보 링크와 가사 txt는 출처 이력으로 보존한다.
+Next-TODO: 젠이 느린 느낌의 곡을 직접 지우고 번호마다 원본 한 곡만 남긴 뒤 연락할 때까지 Aside/Suno를 조작하지 않는다. 연락 후 [07:00]에서 생존 원본 ID를 확인하고 각각 ... → Remix → Cover의 가사 칸에 [Instrumental]만 남겨 생성한다. Cover 출처와 결과 ID를 별도로 기록하고 실제 178–182 BPM은 별도 확인한다.
+Resume-Trigger: 젠의 정리 완료 연락 뒤 -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> Codex
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 명시적 -wavvy-produce로 07:00 밝은 인디 일렉트로닉 러닝 시리즈 소스 20곡을 작성하고, Suno [07:00] 작업 공간에서 각 곡을 한 번 생성해 A/B 후보 40개를 기록했다. 가사는 짧은 한국어 운동 만트라로 유지한다. state revision 48·track_source_draft이고 채택 후보·최종 음원은 없다. 참고 YouTube URL이 업로드 완료로 오인되던 state 판정을 수정했다.
+Verification: 20개 track-prompt·20개 full-song lyrics-review, 46개 unit tests, py_compile, state check, git diff check PASS. 격리 Astra xhigh 검토 CLEAN(Critical/High 0, 원칙 관찰 없음); 40개 링크와 소스 연결을 대조했고 01·02의 최초 클릭 횟수는 독립 확인되지 않았다. 실제 음원의 180 BPM 판정은 미완료다. 20B 일부 구간의 저역 반복은 92–94 BPM 가능성을 보였으나 전체곡 판정이 아니다. Aside 화면 전환 오류 두 번 뒤 자동 박자 측정을 멈췄다. Suno가 표시한 남은 다운로드는 7회이며 이번 후보 파일 다운로드는 하지 않았다.
+Next-TODO: 젠이 `SERIES/07-00/input/candidate-review.md`의 A/B를 듣고 채택 또는 재생성할 곡을 고른다. 채택 전에 실제 178–182 BPM을 확인해야 한다. 박자 자동 측정 방식은 오류 원인과 접근 방법을 젠과 결정한 뒤 재개한다. 확정 전 Final Track Sources 승격·WAV 수집·발매는 하지 않는다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-10-03 13:50:27
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
@@ -1665,6 +1765,18 @@ Agent: Codex
 Summary: 17:00 Track 08을 젠이 제공한 「취향」 STYLE·태그 포함 가사로, Track 09 「한 곡만 더」를 젠이 제공한 새 indie acoustic rock STYLE·가사로 교체했다. 08의 구간별 남녀 태그는 원문 그대로이며 젠은 생성에서 파트 혼선이 해결됐다고 보고했다. 09 가사는 기존 승인본과 정확히 같다. Suno 공식 구조·보컬 태그 예시와 사용자 경험을 구분해 STYLE/LYRICS 지침과 작사 스킬을 갱신하고, full-song 검사기에 구간 태그 뒤 지시를 읽는 기능을 추가했다. 새 소스에 별도 PASS 표시는 없다.
 Verification: 08·09 review-only PASS, harness 38 tests·py_compile·state check·diff check PASS. 08 track-prompt는 미제공 key, 09 track-prompt는 미제공 BPM/key 때문에 명시적 FAIL. State revision 41·txt 20개·track_source_draft·음원 0개. 생성 음원은 에이전트가 확인하지 못했다.
 Next-TODO: 현재 소스는 08·09 사용자 제공 원문이다. 생성 음원 확인이나 다음 제작 작업은 젠의 후속 요청과 자료가 있을 때 진행한다. 예전 08/09 PASS 버전과 09의 122 BPM/D Major는 이력이다.
+Resume-Trigger: -wavvy
+Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 07:00 최종 20곡 중 02–07 선택 음원의 WAV 6개를 Aside CLI로 다운로드해 `SERIES/07-00/input/tracks/`에 복사하고 `input/download-manifest.json`에 선택 ID·파일 해시·오디오 형식을 기록했다. 01은 젠이 MP3/M4A로 다운로드했고 01 및 08–20 WAV는 아직 없다. Downloads 원본은 보존했다. 03 최종 선택 A도 3차 후보 기록에 반영했다.
+Verification: 02–07 모두 선택 ID 일치, 48 kHz·16-bit PCM·stereo WAV, Downloads 원본/시리즈 복사본 SHA-256 일치. 수치 BPM은 미측정이며 젠의 러닝감 청취 PASS만 기록한다.
+Next-TODO: 추가 다운로드가 가능해지면 08–20 및 필요한 경우 01 WAV를 수집하고, 전곡 파일을 확인해 Final Track Sources 단계로 진행한다. 현 시점에 전체 20곡의 WAV가 있는 것으로 표기하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
 ---

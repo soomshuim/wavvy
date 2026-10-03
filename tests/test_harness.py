@@ -1003,6 +1003,28 @@ Self-Gate
                         self.assertEqual(checks["vocal_gender_metadata_matches_style"], expected)
                         self.assertEqual(result.exit_code, 0 if expected == "PASS" else 1)
 
+    def test_track_prompt_gate_instrumental_remake_requires_instrumental_only_lyrics(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "07-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text("180 BPM instrumental running music\n", encoding="utf-8")
+            source = series / "input" / "remakes" / "02_파란불.txt"
+            style = "Instrumental indie electronic breakbeat, 180 BPM in D Major. Fast drums and bright guitar."
+            runner = CliRunner()
+            with patch("wavvy.git_repo_root", return_value=root):
+                write_track_prompt_source(source, style, bpm="180", key="D Major", vocal="Instrumental", lyrics="[Instrumental]")
+                accepted = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                write_track_prompt_source(source, style, bpm="180", key="D Major", vocal="Instrumental", lyrics="[Instrumental]\nSing this")
+                sung = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                write_track_prompt_source(source, style + " Male lead.", bpm="180", key="D Major", vocal="Instrumental", lyrics="[Instrumental]")
+                gendered = runner.invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+            self.assertEqual(accepted.exit_code, 0, accepted.output)
+            self.assertEqual(sung.exit_code, 1, sung.output)
+            self.assertEqual(gendered.exit_code, 1, gendered.output)
+            self.assertIn("instrumental_lyrics_only", str(json.loads(sung.output)["checks"]))
+            self.assertIn("vocal_gender_metadata_matches_style", str(json.loads(gendered.output)["checks"]))
+
     def test_track_prompt_gate_rejects_prior_track03_failure_shape(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -1120,6 +1142,23 @@ Self-Gate
             series = make_series(root, concept)
             state = build_state(series, root)
             self.assertEqual(state["artifact_status"]["youtube_upload"], "missing")
+
+    def test_reference_video_url_does_not_mark_upload_completed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            concept = "# New Series\n\n## Reference videos\n\n- https://youtu.be/A3psJJwkdSY\n"
+            series = make_series(root, concept)
+            state = build_state(series, root)
+            self.assertEqual(state["artifact_status"]["youtube_upload"], "missing")
+            self.assertNotEqual(state["phase"], "uploaded")
+
+    def test_legacy_published_youtube_marker_marks_upload_completed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            concept = CONCEPT_FINAL + "\n> **YouTube**: https://youtu.be/i1GHmn1WZr4\n"
+            series = make_series(root, concept)
+            state = build_state(series, root)
+            self.assertEqual(state["artifact_status"]["youtube_upload"], "completed")
 
     def test_upload_ready_gate_passes_when_upload_already_completed(self):
         with tempfile.TemporaryDirectory() as tmp:

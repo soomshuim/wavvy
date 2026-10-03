@@ -80,11 +80,14 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
     """Check one newly authored full-track txt source, without judging musical quality."""
     checks: list[dict[str, Any]] = []
     blockers: list[str] = []
-    tracks_dir = (series_path / "input" / "tracks").resolve()
-    artifact_ok = artifact_path is not None and artifact_path.is_file() and artifact_path.suffix.lower() == ".txt" and artifact_path.resolve().parent == tracks_dir
+    source_dirs = {
+        (series_path / "input" / "tracks").resolve(),
+        (series_path / "input" / "remakes").resolve(),
+    }
+    artifact_ok = artifact_path is not None and artifact_path.is_file() and artifact_path.suffix.lower() == ".txt" and artifact_path.resolve().parent in source_dirs
     checks.append(_check("track_source_artifact", artifact_ok, str(artifact_path) if artifact_path else "--artifact is required"))
     if not artifact_ok:
-        blockers.append("track-prompt requires --artifact pointing to one SERIES/[series]/input/tracks/*.txt source")
+        blockers.append("track-prompt requires --artifact pointing to one SERIES/[series]/input/tracks/*.txt or input/remakes/*.txt source")
 
     concept_path = series_path / "concept.md"
     concept_ok = bool(_read_text(concept_path))
@@ -141,11 +144,19 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
         vocal_text = metadata.get("Vocal", "")
         vocal_genders = _vocal_genders(vocal_text)
         style_genders = _vocal_genders(style)
-        gender_known = not re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE)
-        gender_ok = bool(vocal_genders) and gender_known and style_genders == vocal_genders
+        instrumental = vocal_text.strip().casefold() == "instrumental"
+        if instrumental:
+            gender_ok = not style_genders and bool(re.search(r"\binstrumental\b", style, re.IGNORECASE))
+            instrumental_lyrics_ok = sections.get("LYRICS", "").strip() == "[Instrumental]"
+            checks.append(_check("instrumental_lyrics_only", instrumental_lyrics_ok, "LYRICS must contain exactly [Instrumental]"))
+            if not instrumental_lyrics_ok:
+                blockers.append("Instrumental source LYRICS must contain exactly [Instrumental]")
+        else:
+            gender_known = not re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE)
+            gender_ok = bool(vocal_genders) and gender_known and style_genders == vocal_genders
         checks.append(_check("vocal_gender_metadata_matches_style", gender_ok, f"metadata={vocal_text or '<missing>'}; STYLE={sorted(style_genders)}"))
         if not gender_ok:
-            blockers.append("Vocal must name male/female or 남성/여성 in the txt header and match all genders in STYLE")
+            blockers.append("Vocal must match STYLE as male/female, 남성/여성, or instrumental without a gender")
 
     return {
         "schema": "wavvy.track_prompt_gate.v1",

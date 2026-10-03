@@ -1,0 +1,41 @@
+{
+  "workspace": "[07:00]",
+  "workspace_url": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "request": "03 only, more powerful, instrumental, 180 BPM target",
+  "tracks": [
+    {
+      "order": 3,
+      "title": "첫 바퀴",
+      "displayed_name": "3. 첫 바퀴 (2차)",
+      "source_txt": "input/remakes/03_첫 바퀴.txt",
+      "source_sha256": "389eafe83a1e80e7e017233c02e3c1a16ec8a16d83451469d8512c579566eb50",
+      "prior_cover_candidate_ids": [
+        "25ef43b1-495f-41e7-a144-1e66ea55e884",
+        "f400aa05-659b-4453-869f-07e985f8dac9"
+      ],
+      "submission_status": "created",
+      "submission_evidence": "Suno [07:00] showed 20 songs before the action. Lyrics were exactly [Instrumental], title was 3. 첫 바퀴 (2차), and the new style and seven exclude terms matched the source txt. One Create click reduced credits from 1,156 to 1,146 and added two V6 rows; the workspace then showed 22 songs. No prior song was deleted.",
+      "candidates": [
+        {
+          "id": "a0bc1984-fea1-4a34-9344-f85a35a3be3c",
+          "displayed_name": "3. 첫 바퀴 (2차)",
+          "url": "https://suno.com/song/a0bc1984-fea1-4a34-9344-f85a35a3be3c",
+          "displayed_duration": "2:28",
+          "observed_status": "playable"
+        },
+        {
+          "id": "a7d110db-56fd-4857-b441-60a84ecde29b",
+          "displayed_name": "3. 첫 바퀴 (2차)",
+          "url": "https://suno.com/song/a7d110db-56fd-4857-b441-60a84ecde29b",
+          "displayed_duration": "3:05",
+          "observed_status": "playable"
+        }
+      ],
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null,
+        "listener_feedback": "젠: 느려 (2026-10-03). Both new 03 candidates remain unselected; no measured BPM was recorded."
+      }
+    }
+  ]
+}

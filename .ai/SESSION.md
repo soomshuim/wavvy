@@ -1,8 +1,45 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-03 (17:00 영상 업로드·4K 처리 완료, 17:00 KST 공개 예약, 댓글 예약 작업 대기)
+> Last updated: 2026-10-03 (07:00 선택 음원 02–07 WAV 다운로드)
 
 ---
+
+07:00 최종 20곡 ID 고정·청취 PASS, 02–07 선택 음원 WAV 다운로드/형식·해시 검증 완료; 01은 젠의 MP3/M4A, 01 및 08–20 WAV는 미수집. 17:00 공개·댓글 확인과 Suno 제작/게이트 변경을 47개 테스트·doctor·state check로 확인.
+
+## 2026-10-03 [CDX] 07:00 20곡 번호별 청취 PASS 확인
+- 젠이 20곡을 번호별로 정리하고 03 3차를 마지막으로 “통과”시킨 뒤 “20곡 모두 패스지?”라고 확인했다. 01–20을 번호별 청취 PASS로 기록한다. Suno 재생성 A/B가 추가된 상태이므로 최종 음원 ID 20개 선정과 실제 178–182 BPM 측정은 별도 미완료다. Final Track Sources·WAV도 없다.
+
+## 2026-10-03 [CDX] 07:00 03 3차 청취 PASS
+- 젠이 03 2차 후보를 “느려”라고 판정했다. 10번의 빠른 모토릭 드럼을 참고해 03 3차 무가사 180 BPM 목표 소스를 작성하고 `track-prompt` PASS 후 Suno `[07:00]`에서 Create를 한 번 실행했다. 크레딧 표시는 1,146→1,136이었다.
+- 새 A는 `fad9fc49-9b35-4f10-aa76-f62ddd9cf10c`(화면 2:24), B는 `b074e6e8-59b9-4160-ad1f-771bdce0ad61`(화면 2:37)이다. 젠이 “3통과”로 3차 버전을 청취 PASS했다. A/B 중 최종 한 곡은 아직 지정하지 않았고, 두 곡 모두 3분 목표보다 짧으며 실제 178–182 BPM은 측정되지 않았다. `input/suno-remakes-03-round3.json`과 `input/remake-review.md`에 이력과 링크를 기록했다. 이번 턴에 `-record` 요청은 없어 커밋·푸시하지 않았다.
+
+## 2026-10-03 [CDX] 07:00 03 강화 재생성
+- 젠의 정리 뒤 Aside Suno `[07:00]` 작업 공간에 번호 1–20이 한 곡씩, 총 20곡인 것을 확인했다. 젠이 03만 더 힘 있게 요청해, 아르페지오 중심 정체성은 남기고 드럼·기타·저역을 강화한 무가사 180 BPM 목표 소스 `input/remakes/03_첫 바퀴.txt`를 작성했다. `track-prompt` PASS, Suno Create 한 번으로 A/B 두 V6 후보를 생성했다. 크레딧 표시는 1,156→1,146, 작업 공간 곡 수는 20→22였다.
+- A는 `a0bc1984-fea1-4a34-9344-f85a35a3be3c`(화면 2:28), B는 `a7d110db-56fd-4857-b441-60a84ecde29b`(화면 3:05)이다. 링크와 소스 해시는 `input/suno-remakes-03.json`, 청취 목록은 `input/remake-review.md`에 있다. 이전 03 Cover와 다른 19곡은 건드리지 않았다. 새 03 청취·선택, 실제 178–182 BPM 측정, Final Track Sources·WAV는 아직 없다. 이번 턴에 `-record` 요청은 없어 커밋·푸시하지 않았다.
+
+## 2026-10-03 [CDX] 07:00 무가사 Cover 10곡 청취 PASS
+- 젠이 03·05·07·08·11·12·15·16·18·20의 Cover 결과를 확인하고 “다 괜찮아. 확인 완료 모두 pass”라고 승인했다. `input/cover-review.md`와 concept·계획에 청취 PASS를 반영했다. 03 A는 Suno 직접 페이지에서 약 1:01로 표시됐고, 03 B는 생성 직후 약 3:10으로 표시됐다.
+- 이 PASS는 지정한 10곡의 청취 승인이다. 번호별 A/B 최종 선택과 자동 무가사·178–182 BPM 측정, Final Track Sources·WAV 확정은 아직 없다. 기존 원본·후보와 01·02는 건드리지 않았다. 이번 턴에도 `-record` 요청이 없어 커밋·푸시하지 않았다.
+
+## 2026-10-03 [CDX] 07:00 원본 연결 무가사 Cover 10곡
+- 젠의 “2 완료” 신호와 03·05·07·08·11·12·15·16·18·20 지정에 따라, Aside CLI로 Suno `[07:00]`의 생존 원본 ID를 각 번호마다 대조했다. 매번 원본의 `... → Remix → Cover`를 열어 이전 입력 내용을 해당 원본으로 덮어쓴 뒤 가사를 `[Instrumental]` 한 줄로 바꿨다. Cover 연결 원본·제목·저장 작업 공간을 확인하고 번호마다 Create를 한 번씩 눌렀다.
+- 요청 10회에서 V6 COVER A/B 20개 ID를 확인했다. 원본과 결과는 `SERIES/07-00/input/suno-covers.json`, 듣기 링크는 `input/cover-review.md`에 기록했다. 01·02와 기존 원본/후보는 건드리지 않았다. 실제 무가사 청감·길이·178–182 BPM 지속 박자 및 최종 채택은 아직 검증하지 않았다. Final Track Sources·WAV는 여전히 없다. 이번 턴에는 `-record` 요청이 없어 커밋·푸시하지 않았다.
+
+## 2026-10-03 [CDX] 07:00 강약 변화 무가사 재생성 9곡
+- 젠이 02·04·06·09·10을 180 BPM 느낌 부족으로, 04·13·17·19 등을 반복적인 인디 댄스 팝 흐름 때문에 다시 만들도록 요청했다. 시리즈의 밝은 아침 느낌은 유지하고 중간 06·09·10·13·14를 더 강하게, 17·19를 밝게 풀어 달라는 최신 피드백을 반영했다.
+- `input/remakes/`의 9개 소스는 180 BPM·`[Instrumental]`·각기 다른 빠른 리듬으로 작성해 `track-prompt` 게이트 PASS했다. Suno `[07:00]`에서 번호마다 Create를 한 번씩 눌러 A/B 18개 ID를 `input/suno-remakes.json`에 즉시 기록했다. 듣기 링크는 `input/remake-review.md`에 있다. 첫 생성 40개 ID는 별도 이력으로 보존했다.
+- 실제 박자 178–182 BPM과 무가사 청감은 아직 합격 판정하지 않았다. 9곡의 최종 선택도 없다. 다른 생존 원본 11곡의 Cover는 젠의 정리 완료 연락 전이라 실행하지 않았다. 프로젝트 phase는 여전히 `track_source_draft`; Final Track Sources·WAV는 없다. 이번 턴에 `-record` 요청은 없어서 커밋·푸시하지 않았다.
+
+## 2026-10-03 [CDX] 07:00 청취 후 무가사 전환 결정
+- 젠이 처음 생성한 곡들을 듣고 이번 러닝 시리즈는 가사 없는 편이 낫다고 결정했다. 기존 가사 txt와 A/B 후보 40개 링크는 최초 생성 이력으로 보존한다. Suno는 한 번 생성하면 기본 두 곡이 나온다는 관찰을 공용 `wavvy-suno-batch` 스킬과 07:00 계획에 반영했다.
+- 젠이 180 BPM으로 느껴지지 않는 버전을 직접 지우고 번호마다 원본 한 곡만 남긴 뒤 연락하기로 했다. 그 전에는 Aside/Suno의 생성·삭제·Remix를 하지 않는다. 연락을 받으면 현재 남은 원본 ID를 다시 확인하고 각각 `... → Remix → Cover`에서 가사 칸에 `[Instrumental]`만 남긴다. Cover 결과는 기존 후보와 구분해 기록한다. 젠의 청감상 선별을 기술적 178–182 BPM 합격으로 표시하지 않는다.
+- 현행 state phase는 `track_source_draft`이고 최종 무가사 곡·Final Track Sources·WAV는 아직 없다. 이번 결정 기록은 커밋·푸시 요청이 없어 로컬 미커밋으로 둔다.
+
+## 2026-10-03 [CDX] 07:00 러닝 시리즈 첫 Suno 생성
+- 젠의 명시적 `-wavvy-produce`와 후속 피드백으로 07:00 밝은 indie electronic 러닝 시리즈 20곡을 180 BPM 목표로 작성했다. 가사는 짧고 유치하지 않은 운동 만트라, 단일 남·여 보컬로 정리했다. 두 유튜브 레퍼런스는 콘셉트에 기록했다.
+- `SERIES/07-00/input/tracks/` 20개와 `lyric-reviews/` 20개가 각각 track-prompt·full-song lyrics-review 게이트 PASS다. `[07:00]` Suno 작업 공간에서 트랙당 한 번씩 생성해 40개 후보 ID를 `suno-candidates.json`에, A/B 듣기 링크를 `candidate-review.md`에 기록했다. 젠의 채택·재생성 선택은 아직 없으며 Final Track Sources와 오디오 파일도 없다.
+- 실제 178–182 BPM 합격 후보는 아직 0개다. 다운로드 없이 재생 신호로 측정한 20B 일부 구간은 92–94 BPM 저역 반복 가능성을 보였지만, 곡 전체 판정은 아니다. 추가 자동 측정은 Aside 화면 전환 오류가 두 번 발생해 멈췄다. Suno 화면은 남은 Pro 다운로드 7회를 표시했고 이번 후보에서는 다운로드를 사용하지 않았다.
+- `.ai/state.json` revision 48은 active 07-00, `track_source_draft`이고 state check PASS다. `wavvy_harness/state.py`의 참고 유튜브 링크를 업로드 완료로 오인하는 판정 결함을 수정하고 회귀 테스트를 추가했다. 46 tests·py_compile·state check·20×2 소스 게이트·diff check PASS. 격리 Astra xhigh 검토는 40개 링크와 소스 연결에 Critical/High 0건·원칙 관찰 없음으로 CLEAN이다. 01·02의 최초 클릭 횟수와 실제 음원 박자는 검토 범위 밖이다. 이번 턴은 `-record` 요청이 없어 커밋·푸시하지 않았다.
 
 ## 2026-10-03 [CDX] -record — Wavvy 공동 제작·발매 스킬 정리
 - 명시적 produce/release 커맨드, 20곡 Suno [HH:MM] 작업 공간, WAV 선택 확인, 작은 썸네일 승인 후 4K 발매, 유튜브 업로드·예약 흐름을 공용 스킬로 연결했다.
@@ -1528,3 +1565,8 @@
 - 젠이 09 「한 곡만 더」의 새 indie acoustic rock STYLE과 전체 가사를 제공했다. 현행 `SERIES/17-00/input/tracks/09_한 곡만 더.txt`의 가사 SHA-256 `4a8745d567c990732c103ed7c534a830febe6e49fafdb801fbd4aeed41928ab9`는 기존 승인 가사와 정확히 같다. 새 STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df0d0c951411e8c`는 546자이며 남성 단독 리드를 지정한다. 새 STYLE에는 BPM·조성이 없고 EXCLUDE도 미제공이다. 예전 122 BPM/D Major/EXCLUDE는 현재 설정이 아니다.
 - [Suno 공식 릴리스 노트](https://suno.com/release-notes)의 Lyrics 구조 라벨과 `[female vocals]` 예시를 확인했다. 악기·코드 진행 태그의 보장된 구문까지 공식화하지 않았다. `MASTER/lyrics/LYRICS.md`, `MASTER/style/STYLE.md`, `skills/wavvy-lyricist/SKILL.md`/스펙, style 근거 문서에 곡 전체 지시는 Style, 구간별 필요 지시는 Lyrics의 구조 태그 옆에 적는 기준을 반영했다. 원문 보존과 생성 후 청취 확인도 명시했다. `wavvy_harness/gate.py`는 다중 대괄호 태그 줄의 첫 구조 태그를 읽도록 수정하고 테스트를 추가했다.
 - 08·09 review-only 가사 검사 PASS. 08의 가사 SHA-256 `63d438fcf44efd10d5d5bb495f7c5cc7295c833939e5ad3d77ad5aaa6f3b48ca`; 09는 위 기존 가사 해시와 동일하다. 38개 harness 테스트, py_compile, state check, diff check PASS. Track-prompt는 08의 key와 09의 BPM/key가 새 STYLE에 없어 명시적 FAIL이다. State revision 41·txt 20개·`track_source_draft`·음원 0개. 사용자가 새 소스에 별도 PASS라고 말하지 않았으므로 새 승인으로 기록하지 않는다.
+
+## 2026-10-03 [CDX] 07:00 선택 음원 02–07 WAV 다운로드
+- 젠이 01을 MP3/M4A로 직접 받은 뒤 02–07 다운로드를 요청했다. Aside CLI로 `[07:00]`의 선택 음원 ID를 각각 대조하고 02–07을 WAV로 받았다. Suno가 각 클릭 직후 자동 M4A를 먼저 저장했지만 선택·검증 대상은 WAV였다. 구매·추가 결제는 하지 않았다.
+- 여섯 WAV 모두 48 kHz·16-bit PCM·stereo로 확인했다. Downloads 원본과 `SERIES/07-00/input/tracks/` 복사본의 SHA-256이 일치하며, 파일명·ID·길이·해시는 `input/download-manifest.json`에 있다. Downloads 원본은 삭제하지 않았다. 01 및 08–20 WAV는 남아 있다. 01은 Downloads에 MP3/M4A만 있다.
+- `concept.md`와 07:00 제작 계획의 낡은 다운로드 전/선택 미확정/BPM 실측 필수 표현을 현재 결정과 파일 상태에 맞췄다. 03 3차 A를 최종 선택했다는 근거를 3차 후보 기록에 반영했다. 180 BPM 러닝감은 젠의 청취 PASS이며 수치 측정값은 없다. State revision 49·오디오 파일 6개·`track_source_draft`.
