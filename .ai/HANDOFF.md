@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> Codex
+Date: 2026-10-03 18:32:20
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 07:00 추가 WAV 다운로드를 새로고침 후 재시도했으나 Suno Pro 잔여 0회로 막혔다. 새 다운로드·결제는 없고 기존 02–07 WAV 6개가 유지된다.
+Next-TODO: Suno 다운로드 잔여량이 갱신되면 08–20 및 01 WAV를 받아 최종 20곡을 검증한다. 지금은 01과 08–20 WAV가 미수집이다.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> Codex
 Date: 2026-10-03 18:09:24
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
