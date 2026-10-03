@@ -1,7 +1,7 @@
 # 17:00 YouTube package
 
 Date: 2026-10-03
-Status: Rendered locally; upload not performed
+Status: Uploaded privately; YouTube processing pending
 
 ## Requested result
 
@@ -28,8 +28,17 @@ Status: Rendered locally; upload not performed
 - `python3 -m unittest tests/test_harness.py`: 41 tests PASS; py_compile PASS; doctor PASS with an optional drawtext binary warning.
 - `final.mp4` ffprobe: H.264 3840×2160, AAC 48 kHz stereo, duration 7658.0s. Video/audio decode at 0s, 3800s, and 7656s PASS.
 - Direct audit: 20 WAV SHA-256 values and titles match manifest/report; all 40 description chapters match calculated starts; CSV description matches concept; title is 80 characters.
-- `upload-ready` gate is currently FAIL only because no subtitle artifact exists. `uploaded` gate is FAIL because no YouTube upload occurred. These stages were not claimed. Independent Astra xhigh review: CLEAN, Critical/High 0, principle observations none. Reviewer compared audio at all 40 chapter starts with the source tracks and reported minimum waveform similarity 0.999569. The change set is ready for record/push.
+- At the time of the package review, `upload-ready` was FAIL because no subtitle artifact existed and `uploaded` was FAIL because upload had not occurred. The later upload execution below supersedes those gate results. Independent Astra xhigh package review: CLEAN, Critical/High 0, principle observations none. Reviewer compared audio at all 40 chapter starts with the source tracks and reported minimum waveform similarity 0.999569.
 
 ## Publishing boundary
 
-No YouTube upload has occurred. `upload_ready` and `uploaded` are not claimed. Local media is excluded from Git, so a remote clone does not contain the video or WAVs.
+The YouTube upload is private. Local media is excluded from Git, so a remote clone does not contain the video or WAVs.
+
+## Upload execution (2026-10-03)
+
+- Browser selection: user-approved Aside CLI; actual browser tool `aside repl` on the local Aside browser. No alternate browser connection is authorized.
+- Visibility: private, following `output/upload.csv`. Apply the existing title, description with 40 chapters, tags, and thumbnail.
+- A 20-song twice-through untimed transcript is available locally at `output/youtube_subtitles_ko_no_timing.txt`; `upload-ready` gate passed before upload.
+- Uploaded `output/final.mp4` to Wavvy24 as `https://youtu.be/KGzllkCkozw` and saved it private. YouTube Studio confirmed upload complete; SD and 4K processing and the copyright check had not completed at the last inspection.
+- Verified the persisted title, exact description with 40 chapter starts, uploaded thumbnail, all 25 tags, not-made-for-kids selection, and AI-use disclosure in YouTube Studio.
+- Submitted the untimed Korean transcript. Publishing the auto-synced subtitles failed while the video was still uploading, then YouTube confirmed the transcript was saved as a draft. Its timing and publication need a later check after processing.

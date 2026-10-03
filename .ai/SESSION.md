@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-10-03 [CDX] -record: 17:00 YouTube 비공개 업로드
+- 젠이 지정한 soomshuim@gmail.com 계정의 Wavvy24 채널에 17:00 20곡×2회 3840×2160 MP4를 비공개 업로드했다: https://youtu.be/KGzllkCkozw. Aside CLI의 YouTube Studio에서 영상 업로드 완료, 제목·설명(40개 챕터)·썸네일·태그 25개, 아동용 아님·AI 사용 예·비공개 선택을 확인했다.
+- 한국어 가사 자막 파일은 YouTube에 제출했고 초안 저장이 확인됐다. 최종 자막 게시와 SD/4K 처리·저작권 검토 결과는 확인 시점에 남아 있다. 영상 원본은 로컬에 보존하며 Git에서 제외한다.
+- concept·계획·CHANGELOG와 state revision 46·uploaded를 현행화했다. validate, uploaded gate, state check, diff check PASS. 격리 Astra/xhigh 검토 CLEAN(Critical/High 0건, 원칙 관찰 없음). 이 기록을 커밋·푸시한다.
+
+
 ## 2026-10-03 [CDX] 17:00 WAV 20곡·4K 유튜브 패키지
 - `[17:00]`의 WAV 20곡을 확인해 `input/tracks/`에 배치했다. 08 「취향」은 젠이 직접 다운로드했고, 나머지 19곡은 젠이 승인한 Aside CLI로 받았다. 잠금 해제 과정의 M4A는 영상 제작에 쓰지 않았다. `input/download-manifest.json`에 파일별 SHA-256·실제 길이·원본 이름·받은 주체를 기록했다.
 - 20개 모두 48 kHz/16-bit/stereo PCM이다. BPM이 없는 6곡에는 `NA`를 사용하고 보고서에는 `null`로 남겼다. 02·04·07의 `Accoustic` 오타는 젠 요청에 따라 프로젝트 원본 제목·파일명·유튜브 표기에서 `Acoustic`으로 고쳤다.

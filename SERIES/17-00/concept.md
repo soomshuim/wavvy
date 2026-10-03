@@ -3,9 +3,9 @@
 Version: 0.4
 Last Updated: 2026-10-03
 
-## YouTube Draft (v2 — 실제 WAV 타임스탬프 반영)
+## YouTube Metadata (v2 — 실제 WAV 타임스탬프 반영)
 
-> Suno `[17:00]`의 20개 WAV와 `pack --repeat 2`의 `output/report.json`을 바탕으로 한 업로드 초안이다. 타임스탬프는 0.8초 크로스페이드를 반영했다. 실제 YouTube 업로드와 청취 반응 검증은 아직 이루어지지 않았다.
+> Suno `[17:00]`의 20개 WAV와 `pack --repeat 2`의 `output/report.json`을 바탕으로 한 업로드 메타데이터다. 타임스탬프는 0.8초 크로스페이드를 반영했다. 2026-10-03 Wavvy24 채널에 비공개 업로드했으며 청취 반응은 아직 확인할 수 없다.
 
 ### Context Mode
 
@@ -115,12 +115,19 @@ acoustic rnb, acoustic neo soul, indie rock, korean rnb, korean neo soul, korean
 - Suno `[17:00]`의 WAV 20개를 `input/tracks/`에 배치했다. 08 `취향`은 젠이 직접 다운로드했고, 나머지 19개는 젠이 승인한 Aside CLI 경로로 받았다. 파일별 원본 이름·승인 제목·SHA-256·실제 길이는 `input/download-manifest.json`에 기록했다.
 - 20개 모두 48 kHz, 16-bit PCM, stereo이며 하네스 `validate`가 통과했다. 프롬프트에 BPM이 없는 02·04·09·11·19·20은 파일명에서 `NA`, `report.json`에서 `null`로 기록했다. 다른 숫자 BPM도 프롬프트 목표치이며 실측 템포를 주장하지 않는다.
 - 3840×2160 정적 영상 `output/final.mkv`를 20곡×2회·0.8초 오디오 크로스페이드로 제작했다. `output/final.mp4`는 YouTube 업로드용 H.264 영상 복사/AAC 384 kbps 오디오 사본이다. 업로드용 메타데이터는 `output/upload.csv`에 둔다. 로컬 미디어 파일은 Git에서 제외된다.
-- 장면 원본은 1672×941 생성 결과를 3840×2160으로 업스케일한 것으로, 원생 4K 세부 묘사를 뜻하지 않는다. YouTube에는 아직 업로드하지 않았다.
+- 장면 원본은 1672×941 생성 결과를 3840×2160으로 업스케일한 것으로, 원생 4K 세부 묘사를 뜻하지 않는다.
 - 2026-10-02까지의 소스 제작 이력은 `archive/2026-10-02-source-progress.md`에 보존했다. 현재 파일 현황은 이 절과 `.ai/state.json`을 따른다.
+
+## Upload Status
+
+- **YouTube upload completed**: 2026-10-03, Wavvy24 채널, 비공개. https://youtu.be/KGzllkCkozw
+- Aside CLI의 YouTube Studio에서 제목·설명(40개 시작 시각)·썸네일·태그 25개를 업로드 후 재확인했다. 시청자층은 아동용 아님, AI 사용은 예로 저장했다.
+- 영상 업로드 자체는 완료됐다. 확인 시점에 표준 화질(SD)·4K 처리와 저작권 검토는 대기 중이므로, YouTube에서 최종 재생 화질과 검토 결과는 아직 확인하지 못했다.
+- 한국어 가사 원고는 타이밍 없는 자막 파일로 제출해 초안 저장까지 확인했다. 자동 동기화 자막의 최종 게시에는 실패했으며, 영상 처리 후 자막 상태를 다시 확인해야 한다.
 
 ## Series Status
 
-- **Status**: 20 WAV tracks and a twice-through 4K static playlist render are complete locally. The YouTube upload has not occurred.
+- **Status**: 20 WAV tracks and a twice-through 4K static playlist render are complete locally; the playlist is uploaded privately to Wavvy24. YouTube processing remains pending.
 - **Time Slot**: 17:00.
 - **Genre Lanes**: Acoustic R&B, acoustic neo-soul, acoustic indie rock.
 - **Tempo**: The earlier source prompts allow up to 125 BPM; six prompts omit a numeric BPM. Filename values represent prompt targets, not measured audio tempos.
