@@ -28,16 +28,18 @@
 | 파일명 | 용도 |
 |--------|------|
 | `{NN}_{제목}.txt` | 통합 (Style + Exclude + Lyrics) |
-| `{NN}__{제목}__{감정}__{장르}__{BPM}.wav` | Suno 완성 오디오 |
+| `{NN}__{제목}__{감정}__{장르}__{BPM 또는 NA}.wav` | Suno 완성 오디오. BPM이 확인되지 않으면 `NA`로 표시 |
 
 예: `02_멀어져.txt`, `02__멀어져__Distant__Chillhop__87.wav`
+
+오디오 파일명의 `NA`는 BPM 미확인 표시이며 `report.json`에는 `null`로 기록한다. 프롬프트의 목표 BPM을 실제 녹음에서 측정한 BPM으로 해석하지 않는다.
 
 **WAV 네이밍 규칙:**
 - 구분자: 더블 언더스코어 `__`
 - 제목: **사용자가 부여한 원본 파일명** 유지 (txt 제목과 다를 수 있음)
 - 감정: 영문 (Title Case, 공백 허용)
 - 장르: 시리즈 Style Template명 (Afro-Drill, Afropiano, Chillhop 등)
-- BPM: 숫자만
+- BPM: 숫자, 미기재 시 `NA`
 - **기존 시리즈 컨벤션 확인 필수** — 리네임 전 다른 시리즈 `input/tracks/*.wav` 참조
 
 ### 파일 포맷

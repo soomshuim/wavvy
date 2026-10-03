@@ -291,7 +291,7 @@ def build_state(
     selected_phase = phase or prior_phase or inferred_phase
     if selected_phase not in PHASES:
         selected_phase = inferred_phase
-    prior_next_action = (previous_state or {}).get("next_action") if same_series else None
+    prior_next_action = (previous_state or {}).get("next_action") if same_series and selected_phase == prior_phase else None
     next_action = prior_next_action or _infer_next_action(selected_phase, artifact_status)
 
     blocked_by = []

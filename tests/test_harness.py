@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 
-from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, cli, generate_report, parse_track_source, validate_project
+from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project
 from wavvy_harness.doctor import run_ssot_hygiene
 from wavvy_harness.gate import run_gate, run_lyrics_skill_gate
 from wavvy_harness.state import build_state, check_state
@@ -297,6 +297,21 @@ Verdict
 
 
 class HarnessTests(unittest.TestCase):
+    def test_track_filename_accepts_unknown_bpm_without_inventing_a_number(self):
+        track = TrackInfo.from_filename(Path("09__한 곡만 더__Buoyant__Indie Rock__NA.wav"))
+        self.assertIsNotNone(track)
+        self.assertIsNone(track.bpm)
+
+    def test_repeat_timestamp_includes_crossfade_at_pass_boundary(self):
+        report = {"processing_params": {"repeat": 2, "fade": 0.8}}
+        tracks = [
+            {"order": 1, "duration": 10.0},
+            {"order": 2, "duration": 20.0},
+        ]
+        first, repeated = compute_track_timestamps(report, tracks)
+        self.assertEqual(first, {1: "00:00", 2: "00:09"})
+        self.assertEqual(repeated, {1: "00:28", 2: "00:38"})
+
     def test_generate_report_crossfade_reduction_uses_repeat(self):
         with tempfile.TemporaryDirectory() as tmp:
             output = Path(tmp) / "report.json"
@@ -368,6 +383,18 @@ class HarnessTests(unittest.TestCase):
             resumed_uploaded = build_state(series, root, previous_state=previous_uploaded)
             self.assertEqual(resumed_uploaded["phase"], "uploaded")
             self.assertEqual(resumed_uploaded["next_action"], "Review the published upload manually.")
+
+    def test_state_phase_change_updates_stale_next_action(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = make_series(root)
+            previous = build_state(series, root)
+            previous["phase"] = "track_source_draft"
+            previous["next_action"] = "Review existing track source drafts and follow the next source work in concept.md."
+
+            advanced = build_state(series, root, phase="render_final", previous_state=previous)
+            self.assertEqual(advanced["phase"], "render_final")
+            self.assertEqual(advanced["next_action"], "Create final.mkv and upload.csv for the render-final stage.")
 
     def test_state_cli_explicit_phase_and_if_match_on_series_switch(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -39,7 +39,7 @@ from wavvy_harness.state import PHASES
 # =============================================================================
 
 TRACK_PATTERN = re.compile(
-    r'^(?P<order>\d{2})__(?P<title>[^_]+)__(?P<mood>[^_]+)__(?P<genre>[^_]+)__(?P<bpm>\d+)\.(?:mp3|wav)$'
+    r'^(?P<order>\d{2})__(?P<title>[^_]+)__(?P<mood>[^_]+)__(?P<genre>[^_]+)__(?P<bpm>\d+|NA)\.(?:mp3|wav)$'
 )
 
 DEFAULT_CROSSFADE_SEC = 0.8
@@ -82,7 +82,7 @@ class TrackInfo:
     title: str
     mood: str
     genre: str
-    bpm: int
+    bpm: Optional[int]
     duration: float = 0.0
     sample_rate: int = 0
     sha256: str = ""
@@ -100,7 +100,7 @@ class TrackInfo:
             title=match.group('title'),
             mood=match.group('mood'),
             genre=match.group('genre'),
-            bpm=int(match.group('bpm')),
+            bpm=int(match.group('bpm')) if match.group('bpm') != 'NA' else None,
         )
 
 
@@ -648,7 +648,7 @@ def validate_project(paths: ProjectPaths) -> ValidationResult:
         if track is None:
             result.add_error(
                 f"Invalid filename format: {virtual_path.name}\n"
-                f"  Expected: NN__Title__Mood__Genre__BPM.mp3 (or .wav)"
+                f"  Expected: NN__Title__Mood__Genre__BPM-or-NA.mp3 (or .wav)"
             )
             continue
         track.path = audio_path
@@ -966,7 +966,9 @@ def render_video_from_image(
     """
     Render final video from a static image + audio.
 
-    Uses -loop 1 with -tune stillimage and -r 1 for optimal encoding.
+    Uses a 1 fps image input and caps the output at the measured audio duration.
+    An output-only -r 1 lets FFmpeg buffer extra looped-image frames after
+    the audio ends, leaving a long silent video tail despite -shortest.
     Logo overlay is applied directly in the filter graph (no preprocessing).
     """
     audio_info = get_audio_info(audio_path)
@@ -1005,7 +1007,7 @@ def render_video_from_image(
             filter_complex = f"[1]scale=iw:ih[logo];[0][logo]overlay={lx}:{ly}[v]"
         cmd = [
             'ffmpeg', '-y',
-            '-loop', '1', '-i', str(image_path),
+            '-loop', '1', '-framerate', '1', '-i', str(image_path),
             '-i', str(logo_path),
             '-i', str(audio_path),
             '-filter_complex', filter_complex,
@@ -1015,7 +1017,7 @@ def render_video_from_image(
         if crop_filter:
             cmd = [
                 'ffmpeg', '-y',
-                '-loop', '1', '-i', str(image_path),
+                '-loop', '1', '-framerate', '1', '-i', str(image_path),
                 '-i', str(audio_path),
                 '-vf', crop_filter,
                 '-map', '0:v', '-map', '1:a',
@@ -1023,7 +1025,7 @@ def render_video_from_image(
         else:
             cmd = [
                 'ffmpeg', '-y',
-                '-loop', '1', '-i', str(image_path),
+                '-loop', '1', '-framerate', '1', '-i', str(image_path),
                 '-i', str(audio_path),
                 '-map', '0:v', '-map', '1:a',
             ]
@@ -1044,7 +1046,7 @@ def render_video_from_image(
         cmd.extend(['-c:a', AUDIO_CODEC_LOSSY, '-b:a', AUDIO_BITRATE_LOSSY])
         cmd.extend(['-movflags', '+faststart'])
 
-    cmd.extend(['-shortest', str(output_path)])
+    cmd.extend(['-shortest', '-t', f'{audio_duration:.6f}', str(output_path)])
 
     try:
         log_info("Running FFmpeg render (image mode)...")
@@ -1594,7 +1596,7 @@ def format_timestamp(seconds: float) -> str:
     minutes = (total % 3600) // 60
     secs = total % 60
     if hours:
-        return f"{hours}:{minutes:02d}:{secs:02d}"
+        return f"{hours:02d}:{minutes:02d}:{secs:02d}"
     return f"{minutes:02d}:{secs:02d}"
 
 
@@ -1758,7 +1760,9 @@ def compute_track_timestamps(report: dict, report_tracks: list[dict]) -> tuple[d
     first = {order: format_timestamp(offset) for order, offset in offsets.items()}
     repeated = {}
     if repeat >= 2:
-        repeated = {order: format_timestamp(first_pass_duration + offset) for order, offset in offsets.items()}
+        # The last track also crossfades into track 01 of the next pass.
+        repeated_start = first_pass_duration - fade
+        repeated = {order: format_timestamp(repeated_start + offset) for order, offset in offsets.items()}
     return first, repeated
 
 
@@ -1803,7 +1807,7 @@ def build_final_track_sources_section(
         source = matched_sources[order]
         metadata = source.metadata
         source_type = metadata.get("Type") or (str(track.get("mood", ""))[:1] if track.get("mood") else "")
-        source_bpm = metadata.get("BPM") or str(track.get("bpm", ""))
+        source_bpm = metadata.get("BPM") or str(track.get("bpm") or "unknown")
         exclude = source.exclude or "None"
 
         lines.extend([
@@ -1819,7 +1823,7 @@ def build_final_track_sources_section(
             f"- Mood: {track.get('mood', '')}",
             f"- Genre: {track.get('genre', '')}",
             f"- Type: {source_type}",
-            f"- BPM: {track.get('bpm', source_bpm)}",
+            f"- BPM: {track.get('bpm') if track.get('bpm') is not None else source_bpm}",
             f"- Key: {metadata.get('Key', '') or 'Unknown'}",
             f"- Length: {metadata.get('Length', '') or 'Unknown'}",
             f"- Vocal: {metadata.get('Vocal', '') or 'Unknown'}",

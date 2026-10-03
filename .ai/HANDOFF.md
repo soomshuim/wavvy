@@ -3,6 +3,18 @@ HANDOFF: Codex -> Codex
 Date: 2026-10-03
 Project: ~/Project/wavvy
 Agent: Codex
+Summary: 17:00 WAV 20곡(08은 젠 다운로드, 나머지 19곡은 승인된 Aside CLI)을 확보해 3840×2160 정적 영상과 썸네일, 20곡×2회 약 02:07:38 MP4/MKV, 실제 40개 챕터가 든 YouTube 초안을 완성했다. 02·04·07의 Acoustic 오타를 프로젝트 제목·파일명·메타데이터에 반영했다. State revision 44·render_final.
+Verification: WAV 20개 48 kHz/16-bit/stereo·SHA-256 일치, validate/source-final/render-final/finalize-upload check·41 tests·py_compile·doctor PASS. MP4 H.264/AAC 세 지점 디코딩, 40개 챕터 대조 PASS. 영상·WAV는 로컬 Git 제외. 업로드는 하지 않았다. 독립 Astra xhigh 검토 CLEAN(Critical/High 0건, 원칙 관찰 없음); 40개 시작 지점의 오디오 대조 최소 파형 유사도 0.999569.
+Next-TODO: YouTube 업로드는 하지 않았다. 추후 업로드 준비를 이어갈 때 하네스 다음 단계는 자막 txt 또는 SRT 생성이다. 이미지는 원생 1672×941에서 4K 픽셀로 확대했다.
+Resume-Trigger: -wavvy
+Commits: current package commit (see git log)
+---
+
+---
+HANDOFF: Codex -> Codex
+Date: 2026-10-03
+Project: ~/Project/wavvy
+Agent: Codex
 Summary: 17:00 YouTube 제목·설명·태그·고정 댓글 초안, 3840×2160 확대 가을 이미지와 썸네일을 준비했다. Aside Suno [17:00]에서 20곡을 확인했고, 08 취향 WAV 1개만 로컬 다운로드했다. 이미지·문안 초안 격리 리뷰 CLEAN. State revision 42·youtube_metadata present·track_source_draft.
 Verification: state --check, git diff --check PASS. 2초 3840×2160 정적 이미지 렌더 PASS. 08 WAV 48 kHz/16-bit/stereo·186.4초. 나머지 19곡 부재로 validate/pack 미완료. 09·20의 Aside MCP Download 클릭은 잠금 해제 뒤에도 파일·이벤트가 없어 동일 현상 3회 재현 후 중단했다.
 Next-TODO: 젠에게 요청한 Aside CLI 연결 전환 결정을 기다린다. 허용되면 남은 WAV 19곡 다운로드, 파일명/무결성 검증, 4K pack, 실제 report.json 타임스탬프 반영, 전체 검토를 진행한다. 승인된 곡명과 Suno 표시 제목 차이는 `.ai/plans/2026-10-03_17-00-youtube-package.md` 참조. 이미지 원생 크기는 1672×941이고 4K는 확대본이다.

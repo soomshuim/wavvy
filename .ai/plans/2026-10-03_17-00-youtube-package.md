@@ -1,45 +1,35 @@
 # 17:00 YouTube package
 
 Date: 2026-10-03
-Status: In progress
+Status: Rendered locally; upload not performed
 
 ## Requested result
 
 - Save all 20 finished songs from the Suno `[17:00]` workspace as WAV.
 - Use the approved autumn street image for a 3840×2160 static video and a series-consistent thumbnail.
 - Build and verify the full playlist with the Wavvy harness.
-- Put actual track start times into the YouTube draft, then review the title and description for a clear, compelling 17:00 promise.
+- Put actual track start times into the YouTube draft, then review the title and description.
 
-## Evidence and sequence
+## Result
 
-1. `SERIES/17-00/concept.md`, `.ai/state.json`, `MASTER/SSOT.md`, `MASTER/cli/SPEC.md`, and `MASTER/youtube/YOUTUBE.md` govern the package. Existing series thumbnails and descriptions are precedents.
-2. The Suno workspace has 20 songs. Search finds tracks 01–05 even though their initial list rows appeared as `Untitled`. Compare clip titles with the approved track map before naming files.
-3. Download each WAV through the user-opened Aside Suno tab. Preserve raw files until the 20-file inventory and WAV integrity checks pass. The browser connection for the remaining downloads awaits a user decision after repeated Aside MCP download failures.
-4. Place canonical numbered files in `input/tracks/`, run `validate`, render a short `preview`, then `pack --repeat 2 -y`. Read `output/report.json` for exact timestamps and compare video duration with the report.
-5. Update YouTube metadata in `concept.md`, review the complete result, then update state/session records according to project gates. Do not mark uploaded without an upload.
+1. `input/download-manifest.json` records all 20 48 kHz, 16-bit stereo PCM WAV files, their approved titles, durations, SHA-256 hashes, and source names. 젠 downloaded 08 `취향` directly; Codex downloaded the other 19 through the approved Aside CLI. Suno also initiated incidental M4A downloads for locked tracks; no M4A was used.
+2. `input/loop-4k-candidate-v1.png` is a 3840×2160 upscale of a 1672×941 generated image. `input/loop.png` is the ignored video background copy. `input/thumb.jpg` is the series-consistent thumbnail candidate. The image is not native 4K detail.
+3. The 30-second preview was inspected. The final `output/final.mkv` contains 20 tracks twice, -14 LUFS normalization, -1 dBTP ceiling, and 0.8-second audio crossfades. The YouTube upload copy `output/final.mp4` retains the H.264 image stream and encodes audio to AAC 384 kbps. Both are 3840×2160 and about 02:07:38 long. These large media files remain local and ignored by Git.
+4. `concept.md` and `output/upload.csv` contain the 80-character playlist title, full description, tags, and 40 chapter starts derived from `output/report.json`. `output/upload.csv` points to `output/final.mp4` and remains private. `finalize-upload --keep-txt` archived all 20 sources into `concept.md` without deleting the source txt files.
+5. The user corrected `Accoustic` to `Acoustic` in 02, 04, and 07 across source titles, filenames, manifest, report, and YouTube metadata. The source recording bytes did not change. Source drafting status through 2026-10-02 is preserved in `archive/2026-10-02-source-progress.md`.
 
-## Current artifacts and limits
+## Verification
 
-- `input/loop-4k-candidate-v1.png`: 3840×2160 upscale of a 1672×941 generated image.
-- `input/loop.png`: static image rendering input; local/ignored.
-- `input/thumb.jpg`: thumbnail candidate.
-- One verified 48 kHz/16-bit stereo WAV, `08 취향`, is staged under `input/tracks/.downloads/`.
-- Full video and actual timestamps depend on the remaining 19 WAV files.
+- `python3 wavvy.py validate SERIES/17-00`: PASS, 20 audio files.
+- `python3 wavvy.py gate SERIES/17-00 --stage source-final --json`: PASS.
+- `python3 wavvy.py gate SERIES/17-00 --stage render-final --json`: PASS.
+- `python3 wavvy.py finalize-upload SERIES/17-00 --check`: PASS.
+- `python3 wavvy.py state SERIES/17-00 --check --json`: PASS with no warnings after current status correction; durable phase write pending final review.
+- `python3 -m unittest tests/test_harness.py`: 41 tests PASS; py_compile PASS; doctor PASS with an optional drawtext binary warning.
+- `final.mp4` ffprobe: H.264 3840×2160, AAC 48 kHz stereo, duration 7658.0s. Video/audio decode at 0s, 3800s, and 7656s PASS.
+- Direct audit: 20 WAV SHA-256 values and titles match manifest/report; all 40 description chapters match calculated starts; CSV description matches concept; title is 80 characters.
+- `upload-ready` gate is currently FAIL only because no subtitle artifact exists. `uploaded` gate is FAIL because no YouTube upload occurred. These stages were not claimed. Independent Astra xhigh review: CLEAN, Critical/High 0, principle observations none. Reviewer compared audio at all 40 chapter starts with the source tracks and reported minimum waveform similarity 0.999569. The change set is ready for record/push.
 
-## Suno title mapping to verify on download
+## Publishing boundary
 
-The approved project track titles remain the YouTube track-list names. Suno's clip labels differ for these rows:
-
-| # | Suno clip label | Approved title |
-|---|---|---|
-| 02 | 공강 (Acoustic Remix) | 공강 (Accoustic Remix) |
-| 03 | 너와 (With you) | 너와 |
-| 04 | 낮꿈 (Acoustic Remix) | 낮꿈 (Accoustic Version) |
-| 05 | 한 정거장만 | 한 정거장 |
-| 07 | 봄비같은 너 (Acoustic Remix) | 봄비같은 너 (Accoustic Remix) |
-| 10 | 그날 오후 | 그때의 빛 |
-| 12 | 이런 데가 있었네 | 서점 |
-| 13 | 컵 두개 | 컵 두 개 |
-| 18 | 사진 | 흔들린 사진 |
-
-The workspace search returned playable numbered rows for 01–05, resolving the initial `Untitled` placeholders in the unfiltered list. The clip labels alone do not verify that their recorded lyrics match the final text sources.
+No YouTube upload has occurred. `upload_ready` and `uploaded` are not claimed. Local media is excluded from Git, so a remote clone does not contain the video or WAVs.
