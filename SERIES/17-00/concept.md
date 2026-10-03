@@ -1,7 +1,92 @@
 # 17:00 Acoustic R&B / Neo-Soul / Indie Rock
 
-Version: 0.3
-Last Updated: 2026-10-02
+Version: 0.4
+Last Updated: 2026-10-03
+
+## YouTube Draft (v1 — 타임스탬프 미확정)
+
+> 현재 Track Map Draft의 20곡 제목과 순서를 반영한 문안이다. `[시각 미정]`은 실제 WAV와 `pack`의 `output/report.json`으로 확인한 뒤 교체한다. 반복 재생 구간은 패키징 설정이 확정되면 추가한다. 이 초안만으로 실제 게시나 음원 품질 검증이 이루어진 것은 아니다.
+
+### Context Mode
+
+Transition — 17:00의 따뜻한 가을빛과 편안한 발걸음. 어쿠스틱 R&B·네오소울·인디 록을 오가는 20곡을 오후 산책과 일상에 맞춘다. 기존 17:00 밝은 POP 예시보다 이 시리즈의 어쿠스틱 방향을 우선한다.
+
+### 제목
+
+```
+Playlist | 17:00 | 가을빛을 따라 걷는 오후 🍂 | ACOUSTIC R&B · NEO-SOUL · INDIE ROCK | 산책 · 일상 | Wavvy
+```
+
+### 설명
+
+```
+🍂 17:00, 가을빛을 따라 걷는 오후
+느슨해진 발걸음에 어울리는 어쿠스틱 노래들 - Wavvy
+
+이어폰을 쓰고 문을 나서면,
+갈색 코트 위로 낮은 햇빛이 내려앉고,
+횡단보도 앞에서는 기타 리듬에 발이 맞춰지고,
+길가 나무 사이로 부는 바람을 지나,
+조금 전까지 서두르던 마음도 속도를 늦추고,
+익숙한 골목이 다른 색으로 보이는 시간.
+
+어쿠스틱 R&B, 네오소울, 인디 록 사이를 걷는 노래들.
+Wavvy는 우리말 가사로, 그 시간들의 감정을 기록합니다.
+──────────────
+Track List
+🍂 00:00 - 01. 서랍 (Acoustic Remix)
+🍂 [시각 미정] - 02. 공강 (Accoustic Remix)
+🍂 [시각 미정] - 03. 너와
+🍂 [시각 미정] - 04. 낮꿈 (Accoustic Version)
+🍂 [시각 미정] - 05. 한 정거장
+🍂 [시각 미정] - 06. 그냥 좋아
+🍂 [시각 미정] - 07. 봄비같은 너 (Accoustic Remix)
+🍂 [시각 미정] - 08. 취향
+🍂 [시각 미정] - 09. 한 곡만 더
+🍂 [시각 미정] - 10. 그때의 빛
+🍂 [시각 미정] - 11. 약속 (Acoustic Remix)
+🍂 [시각 미정] - 12. 서점
+🍂 [시각 미정] - 13. 컵 두 개
+🍂 [시각 미정] - 14. 통화 (Acoustic Remix)
+🍂 [시각 미정] - 15. 바람이 드는 쪽
+🍂 [시각 미정] - 16. 매듭
+🍂 [시각 미정] - 17. 물결 (Acoustic Remix)
+🍂 [시각 미정] - 18. 흔들린 사진
+🍂 [시각 미정] - 19. 엄마
+🍂 [시각 미정] - 20. 오랜만이야
+──────────────
+Music for your space, 24 hours a day.
+All tracks feature Korean lyrics.
+
+🎵 Music: Wavvy
+Copyright Ⓒ Wavvy. All rights reserved.
+──────────────
+#acousticrnb #neosoul #indierock #어쿠스틱알앤비 #네오소울 #인디록
+#가을산책 #오후플리 #산책음악 #한국어가사
+#playlist #플리 #wavvy #웨이비
+```
+
+### 태그
+
+```
+acoustic rnb, acoustic neo soul, indie rock, korean rnb, korean neo soul, korean indie rock, acoustic playlist, autumn playlist, afternoon playlist, walking music, 어쿠스틱 알앤비, 네오소울, 인디록, 가을플리, 가을산책, 오후플리, 산책음악, 일상음악, 한국어가사, korean lyrics, playlist, 플리, wavvy, 웨이비, PM1700
+```
+
+### 고정 댓글
+
+```
+🍂 오늘은 어느 곡에서 걸음을 늦추셨나요?
+기억에 남은 트랙 번호와 그때의 장면을 댓글로 남겨주세요.
+한 곡만 더 듣고 싶은 17:00이 되길 바라요.
+```
+
+### 영상·썸네일 준비
+
+- 장면 후보: `input/loop-4k-candidate-v1.png` (3840×2160). 이미지 생성 결과 1672×941을 3840×2160으로 업스케일한 파일이다. 이 크기는 출력 픽셀 수이며 원생 4K 디테일을 뜻하지 않는다. 갈색 코트와 헤드폰을 쓴 인물, 늦은 오후의 가을빛을 담았다. 앞서 만들었던 `thumb-preview-v1/v2/v3.png`는 현재 `input/`에 없으므로 이 파일을 현행 이미지 후보로 사용한다.
+- 정적 영상 배경: `input/loop.png` (3840×2160, 위 업스케일 후보와 동일한 사본). 이미지 모드이므로 `vfade`는 사용하지 않는다. 이 파일은 로컬 미디어 정책에 따라 Git에서 제외되며 `cp SERIES/17-00/input/loop-4k-candidate-v1.png SERIES/17-00/input/loop.png`으로 다시 만들 수 있다.
+- 썸네일 후보: `input/thumb.jpg` (2532×1424). 위 장면에 `brand/logo_wavvy.png`, `17:00`, `AUTUMN WALK`를 넣고 모바일에서 읽기 어려운 하단 작은 문장은 뺐다. 기존 시리즈의 좌상단 로고·시간 표기와 큰 영어 제목 배치를 따른다. 화면·썸네일 선택은 아직 확정되지 않았다.
+- 오디오가 준비되면 `input/tracks/`에 번호·제목·감정·장르·숫자 BPM을 담은 `NN__Title__Mood__Genre__BPM.wav` 형식으로 배치한 뒤 `python3 wavvy.py validate SERIES/17-00`을 실행한다. 원본에 없는 BPM은 짐작으로 파일명에 넣지 않는다.
+- 검증 후 `python3 wavvy.py preview SERIES/17-00 --sec 30`으로 짧은 화면을 확인한다. 20곡 전부를 담는 최종 영상은 `python3 wavvy.py pack SERIES/17-00 --repeat 2 -y`로 만든다. 패키징 후 `output/report.json`의 실제 시작 시각으로 위 설명의 `[시각 미정]`을 교체한다.
 
 ## Series Status
 

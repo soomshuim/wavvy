@@ -1,8 +1,16 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-02 (17:00 시리즈 20곡 완료 사용자 보고; 다음 새 세션은 유튜브 트랙 작업)
+> Last updated: 2026-10-03 (17:00 유튜브 초안·이미지 준비, WAV 다운로드 연결 결정 대기)
 
 ---
+
+## 2026-10-03 [CDX] 17:00 YouTube package — partial, download decision pending
+- 젠 요청으로 `SERIES/17-00/concept.md` 맨 앞에 20곡 YouTube 제목·설명·태그·고정 댓글 초안을 작성했다. 타임스탬프는 실제 WAV 기반 `pack` 결과 전까지 미정이다. `.ai/state.json` revision 42에 `youtube_metadata=present`, phase `track_source_draft`, audio_files 0으로 기록했다.
+- 가을 코트 차림 여성의 17:00 거리 장면을 만들고 원생 1672×941을 3840×2160으로 확대해 `input/loop-4k-candidate-v1.png`에 저장했다. 동일 이미지의 `input/loop.png`은 로컬 영상 입력이며 Git 제외다. 기존 시리즈 형식으로 `input/thumb.jpg`를 만들었다. 2초 시험 렌더는 3840×2160 H.264/AAC로 성공했고 시험 파일은 삭제했다.
+- 사용자 Aside Suno `[17:00]` 작업 공간에서 검색으로 01–05를 포함한 20곡의 재생 가능한 행을 확인했다. 일부 Suno 표시 제목과 확정된 프로젝트 제목의 차이는 `.ai/plans/2026-10-03_17-00-youtube-package.md`에 기록했다. Track 10은 Suno 가사 패널에서 사용자 최종 가사와 일치함을 확인했다.
+- `08 취향` WAV 1개를 다운로드해 `input/tracks/.downloads/`에 로컬 보관했다(48 kHz/16-bit/stereo, 186.4초). 09와 20은 잠금 해제 뒤 Download 클릭에서도 Aside MCP download 이벤트·로컬 파일이 발생하지 않는 현상을 세 번 재현해 같은 방법의 재시도를 중단했다. 젠에게 Aside CLI 연결 방식으로 전환할지 질문했고 답을 기다린다. 전체 4K 영상·실제 타임스탬프는 19곡 WAV 확보 후 제작한다.
+- 이미지·썸네일·유튜브 문안 초안의 격리 Astra/xhigh 역할 리뷰는 Critical/High 0건, 원칙 관찰 없음이었다. 실제 모델 실측값은 reviewer 환경에서 확보하지 못했고 역할 계약만 확인했다. 전체 영상·WAV·타임스탬프는 리뷰 범위 밖이다.
+
 
 ## 2026-10-02 [CDX] -record: 17:00 시리즈 20곡 완료 보고와 새 세션 인계
 - 젠이 현재 20곡 모두 완료됐다고 보고했다. 현행 txt는 20개이며 08 「취향」과 09 「한 곡만 더」는 새 사용자 원문이다. 기존 08·09 버전은 이력이다.
