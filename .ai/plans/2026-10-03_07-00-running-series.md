@@ -1,9 +1,29 @@
 # 07:00 running series production
 
 Date: 2026-10-03
-Status: 젠이 01–20을 번호별로 한 곡씩 남기고 전곡 청취 PASS했다. `[07:00]`의 최종 20개 음원 ID는 `input/suno-selected.json`에 고정했다. 180 BPM 러닝감은 젠의 귀 판정으로 PASS이며 수치 BPM은 측정하지 않았다. 02–07의 선택 음원 WAV를 다운로드·검증해 `input/download-manifest.json`에 기록했다. 01은 젠이 MP3/M4A로 받았고, 01 및 08–20의 WAV는 아직 없다.
+Status (2026-10-06): 기존 7곡(02·03·04·13·14·18·19), 1차 선택 9곡(01·05·07·08·12·15·16·17·20), 2차 11B는 보존한다. 젠이 직접 다시 만든 06·09·10은 `My Workspace`의 새 후보이며 채택 미정이다. 현재 WAV 6개(02–07) 중 현행 보존곡에 맞는 것은 02·03·04뿐이다. 전 구간 180 BPM은 미측정이고 phase는 `track_source_draft`다. 다운로드부터 이후 제작은 한도 회복과 젠의 재개 요청 전까지 보류한다.
 
-## Confirmed direction
+## 2026-10-06 hold after user remakes
+
+- 11의 현재 보존 ID는 2차 B `ee96c338-2a08-4248-827d-82fc44da3de6`(3:00)이다. 젠이 직접 만든 새 후보는 06 `6155c557-6cc3-448d-a38c-e608401624fc`(2:04), 09 `54688321-7ea2-479f-8e5e-0bf7c94bd2b3`(3:22), 10 `a851a574-8836-40dd-8616-ee6549d3e4a1`(2:25)이다. 세 후보의 STYLE 입력 원문·별도 EXCLUDE·채택·실제 박자는 확인되지 않았다. 과거 10B 삭제는 젠의 보고로만 기록했으며 UI 재조회는 하지 않았다. 자세한 관측은 `input/suno-user-remakes-2026-10-06.json`과 `input/user-remakes-review-2026-10-06.md`에 있다.
+- 젠이 다운로드부터 이후 과정은 다운로드 한도가 돌아온 뒤 진행하기로 했다. 한도 회복과 젠의 재개 요청 전에는 브라우저 다운로드·WAV ingest·Final Track Sources 확정·편집/렌더·업로드/릴리스를 자동 시작하지 않는다. 재개 시 현재 선택 ID와 새 세 후보의 위치·채택을 먼저 확인해 그때 범위를 정한다. 업로드에는 별도 명시적 `-wavvy-release` 경계가 적용된다.
+
+## 2026-10-06 latest user decisions and round 2
+
+- 선례: 1차 재지 정글 13의 빠른 쪼개진 드럼·재즈 화성은 사용자가 좋아한 방향이고, 1차 06·09·11 드릴은 사용자가 대체로 마음에 들지 않는다고 했다. 1차 10은 록으로 생성했으나 젠이 재즈로 재요청했다. 1차 기록·원문은 유지한다.
+- `[07:00]` UI에서 1차 생존 ID를 조회해 9개 슬롯 01·05·07·08·12·15·16·17·20에 각 한 곡만 남았고 그 ID가 1차 후보 기록과 일치함을 확인했다. 사용자 선택을 기록한 것이며 실제 180 BPM을 인증한 것은 아니다. 06·09·11의 1차 후보는 보이지 않았고, 10B는 남아 있었다. 10B를 임의 삭제하지 않고 10의 결정은 재생성으로 기록했다. 보존 7곡 ID도 UI와 옛 기록이 일치했다.
+- 젠이 확정한 이번 새 스타일: 06 빠른 개러지 록, 09 재지 정글, 10 강한 어쿠스틱 재즈/하드 밥, 11 베이스·기타 펑크(funk) 록. 각 STYLE 맨 앞에 엄격한 180 BPM 지속 문장을 넣고 `[Instrumental]`, 신시사이저·808 드릴·90 BPM 하프타임 배제를 지시했다. 새 txt 네 개는 `input/remakes/*_redirection-round2-2026-10-06.txt`; 원본 13개는 불변이다. 4개 `track-prompt` 게이트 PASS는 입력 형식·내용 검사이며 실제 오디오 품질·템포 판정이 아니다.
+- Suno Custom Create에서 각 한 번씩 제출했다. UI의 Duration 입력은 네 곡 모두 Custom 3:00, 표시 모델은 V6, 크레딧은 976→936, 작업공간 곡 수는 17→25였다. 새 A/B 여덟 개의 실제 링크·표시 길이는 `input/redirection-round2-review-2026-10-06.md`, 제출 intent·소스 SHA·UI 관측은 `input/suno-redirection-round2-2026-10-06.json`에 있다. 11A는 화면에 2:59로 표시된다. 새 8개는 청취·채택 대기이며 WAV 다운로드·삭제는 없었다. 최종 채택 전 보존 7곡을 포함한 실제 음원이 180 BPM을 전 구간 지속하는지 확인해야 한다. 템포 변화나 90 BPM 하프타임 후보는 채택하지 않는다.
+
+## 2026-10-06 current redirection
+
+- 선례: `SERIES/07-00/input/remakes/13_호흡.txt`의 빠른 쪼개진 드럼·재즈 화성은 젠이 좋아한 방향이다. 그 원문은 신스 베이스·키보드 선율도 담고 있으므로 13 선택 음원은 그대로 두되 신규 jungle 네 곡에서는 피아노·색소폰·비브라폰·기타 선율로 갈라 놓는다. `input/remakes/03_첫 바퀴_round3.txt`는 느린 체감 문제 뒤 연속 러닝 박자를 명시한 선례다. `MASTER/WORKFLOWS.md` §0과 `MASTER/cli/SPEC.md`는 새 txt와 track-prompt 검사를 요구한다.
+- 젠이 직접 보존한 7곡은 선택 ID·기존 txt·WAV·manifest를 변경하지 않는다. 교체 번호는 01·05·06·07·08·09·10·11·12·15·16·17·20이다.
+- 교체곡 4 jazzy jungle / 4 drill / 5 rock 분배와 슬롯 배치는 이번 생성에 젠이 승인한 배치이며 최종 채택 분포는 아직 미확정이다. 13곡의 STYLE 첫 문장은 엄격한 180 BPM 및 중단 없는 러닝 박자 지시다. 최종 채택은 보존 7곡까지 포함해 실제 음원의 180 BPM 전 구간 지속을 확인한 뒤 판정한다. 미측정을 수치 PASS로 쓰지 않고 템포 변화·90 BPM 하프타임 후보는 채택하지 않는다. 보존 7곡 선택은 확정이나 수치 템포 확인은 미완료다. 신디사이저가 없는 악기 설계와 서로 다른 선율 움직임은 index에 곡별로 적었다.
+- 게이트 실측: `input/redirection-2026-10-06/` 하위 폴더의 첫 txt는 내용 검사 전부 PASS였지만 경로 계약 때문에 FAIL했다. 기존 `input/remakes/*.txt` 선례와 게이트 허용 경로에 맞춰 새 파일만 `input/remakes/NN_제목_redirection-2026-10-06.txt`로 옮겼다. 게이트 코드는 변경하지 않았다.
+- 젠의 명시 승인 뒤 기존 Suno `[07:00]`에서 교체 13곡을 각 한 번씩 생성해 A/B 후보 26개의 고유 ID·제목·표시 길이·V6를 확인했다. 제출 전 intent와 소스 해시, 제출 뒤 UI 결과는 `input/suno-redirection-2026-10-06.json`에 기록했다. 듣기 링크는 `input/redirection-review-2026-10-06.md`에 있다. 새 음원 다운로드·삭제는 하지 않았다. 02–07 WAV 여섯 개는 그대로 존재하고, 현행 보존 번호에 속하는 WAV는 02·03·04뿐이다. 새 음원 청취·선택과 실제 180 BPM 확인 전에는 Final Track Sources를 확정할 수 없다. 프롬프트 게이트 PASS는 실제 180 BPM 측정이 아니다.
+
+## 2026-10-03 confirmed direction (historical)
 
 - Trigger: explicit `-wavvy-produce` from 젠.
 - Time: 07:00, 젠's own exercise hour. Suno workspace must be exactly `[07:00]`.

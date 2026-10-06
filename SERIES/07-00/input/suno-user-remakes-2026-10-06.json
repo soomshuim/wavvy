@@ -1,0 +1,141 @@
+{
+  "schema": "wavvy.suno-user-remakes-observation.v1",
+  "date": "2026-10-06",
+  "observed_at": "2026-10-06T07:48:22.236425+00:00",
+  "observation_method": "Aside CLI aside repl, existing Suno tab and read-only song detail UI",
+  "observed_ui_evidence_dir": "/tmp/wavvy-20261006-user-remakes-evidence",
+  "workspace_song_counts_ui": {
+    "My Workspace": 3,
+    "[07:00]": 18
+  },
+  "workspace_required_for_agent_generation": "[07:00]",
+  "user_created_candidates_workspace_mismatch_observed": true,
+  "source_phase": "track_source_draft",
+  "round2_manifest": "input/suno-redirection-round2-2026-10-06.json",
+  "tracks": [
+    {
+      "order": 6,
+      "title": "정해 둔 건 없어",
+      "created_by": "user",
+      "created_by_basis": "user report; creation action was not observed",
+      "workspace_observed": "My Workspace",
+      "workspace_url_observed": "https://suno.com/create?wid=default",
+      "candidate": {
+        "id": "6155c557-6cc3-448d-a38c-e608401624fc",
+        "url": "https://suno.com/song/6155c557-6cc3-448d-a38c-e608401624fc",
+        "title_displayed": "6. 정해 둔 건 없어",
+        "model_displayed": "V6",
+        "duration_displayed": "2:04",
+        "lyrics_displayed": "[Instrumental]",
+        "style_description_ui": "Rock, dry live production; ringing electric guitar leads a broad six-note melody with a sustained high note, second crunchy guitar and bass drive F Major, dry kick on every quarter note, firm snare, steady eighth-note hats; relentless 180 BPM four-square pulse through a new-chord final refrain, full-band closing hit after the last complete bar; instrumental, ‑vocals, ‑spoken words, ‑synthesizers, ‑half-time ending, ‑slowing down, ‑beat-free outro",
+        "style_description_contains_180_bpm": true,
+        "style_description_starts_with_strict_180_bpm": false,
+        "style_description_exact_match_to_existing": {
+          "order": 20,
+          "title": "집으로 가는 길",
+          "id": "7ba63037-56ff-439d-9b55-a1c5a9d162c0",
+          "comparison_scope": "Suno displayed style description, character-for-character"
+        }
+      },
+      "submitted_style_original_observed": false,
+      "exclude_input_original_observed": false,
+      "local_source_pre_generation_available": false,
+      "audio_listened_by_agent": false,
+      "measured_bpm": null,
+      "decision": {
+        "status": "pending",
+        "chosen_candidate_id": null
+      }
+    },
+    {
+      "order": 9,
+      "title": "숨을 세어",
+      "created_by": "user",
+      "created_by_basis": "user report; creation action was not observed",
+      "workspace_observed": "My Workspace",
+      "workspace_url_observed": "https://suno.com/create?wid=default",
+      "candidate": {
+        "id": "54688321-7ea2-479f-8e5e-0bf7c94bd2b3",
+        "url": "https://suno.com/song/54688321-7ea2-479f-8e5e-0bf7c94bd2b3",
+        "title_displayed": "9. 숨을 세어",
+        "model_displayed": "V6",
+        "duration_displayed": "3:22",
+        "lyrics_displayed": "[Instrumental]",
+        "style_description_ui": "STRICT 180 BPM throughout, Maintain a continuous, clearly audible 180 BPM running pulse; no tempo changes or half-time slowdown, Instrumental guitar-led jazzy jungle in G Major, Tight chopped breakbeats and a quiet but firm quarter-note kick keep every 4/4 running step clear; live bass guitar follows the kick while rim taps color the gaps, Clean guitar leads with a high, spacious four-note question; an acoustic piano answers with a quicker descending run over warm jazz chords, Later the guitar stretches its first note and shifts the answer into a lower register, Pull back the chords near the end while the fast drums and step pulse continue, Airy after the peak, still moving, roughly three minutes, ‑vocals, ‑spoken words, ‑synthesizers, ‑half-time breaks, ‑slow fade, ‑beat-free passage",
+        "style_description_contains_180_bpm": true,
+        "style_description_starts_with_strict_180_bpm": true,
+        "style_description_exact_match_to_existing": {
+          "order": 17,
+          "title": "이어지는 소리",
+          "id": "1e73b35f-a731-4a2a-8d34-fb66d85aef76",
+          "comparison_scope": "Suno displayed style description, character-for-character"
+        }
+      },
+      "submitted_style_original_observed": false,
+      "exclude_input_original_observed": false,
+      "local_source_pre_generation_available": false,
+      "audio_listened_by_agent": false,
+      "measured_bpm": null,
+      "decision": {
+        "status": "pending",
+        "chosen_candidate_id": null
+      }
+    },
+    {
+      "order": 10,
+      "title": "생각을 놓고",
+      "created_by": "user",
+      "created_by_basis": "user report; creation action was not observed",
+      "workspace_observed": "My Workspace",
+      "workspace_url_observed": "https://suno.com/create?wid=default",
+      "candidate": {
+        "id": "a851a574-8836-40dd-8616-ee6549d3e4a1",
+        "url": "https://suno.com/song/a851a574-8836-40dd-8616-ee6549d3e4a1",
+        "title_displayed": "10. 생각을 놓고",
+        "model_displayed": "V6",
+        "duration_displayed": "2:25",
+        "lyrics_displayed": "[Instrumental]",
+        "style_description_ui": "Indie breakbeat, full-speed 180 BPM in E major; light morning mood, nimble and cheerful, Real drum punch with live-feel break drums and continuous eighth-note hats; instrumental, Warm electric piano riff leads, airy analog synth and bouncing bass support it, with staccato keys answering fills and brighter chords widening the main refrain; short sparse bridge, clean outro, ‑vocals, ‑spoken words, ‑half-time groove, ‑slow ambient intro, ‑heavy 808, ‑giant EDM drop",
+        "style_description_contains_180_bpm": true,
+        "style_description_starts_with_strict_180_bpm": false,
+        "style_description_exact_match_to_existing": {
+          "order": 4,
+          "title": "조금 일찍",
+          "id": "91b7d5a3-eb05-4f30-9911-ae04252ac541",
+          "comparison_scope": "Suno displayed style description, character-for-character"
+        }
+      },
+      "submitted_style_original_observed": false,
+      "exclude_input_original_observed": false,
+      "local_source_pre_generation_available": false,
+      "audio_listened_by_agent": false,
+      "measured_bpm": null,
+      "decision": {
+        "status": "pending",
+        "chosen_candidate_id": null
+      }
+    }
+  ],
+  "retained_round2_11": {
+    "id": "ee96c338-2a08-4248-827d-82fc44da3de6",
+    "url": "https://suno.com/song/ee96c338-2a08-4248-827d-82fc44da3de6",
+    "workspace_observed": "[07:00]",
+    "title_displayed": "11. 다시 해볼게",
+    "duration_displayed": "3:00",
+    "user_decision": "keep_by_user_statement_and_single_surviving_round2_candidate",
+    "measured_bpm": null
+  },
+  "historical_10_still_visible_in_07": {
+    "id": "9d950463-0850-400a-a88f-3a9804d25e91",
+    "title_displayed": "10. 생각을 놓고",
+    "duration_displayed": "1:44",
+    "current_status": "deleted_user_report",
+    "status_source": "User: 옛날 10번 지움.",
+    "deletion_rechecked_in_ui": false
+  },
+  "caveats": [
+    "Suno displayed style description may differ from originally submitted STYLE text.",
+    "Exact copied input source, separate EXCLUDE input, generation attempt count, credits, full-song audio quality, and actual BPM were not observed.",
+    "One visible candidate per requested track does not itself prove a listening PASS."
+  ]
+}

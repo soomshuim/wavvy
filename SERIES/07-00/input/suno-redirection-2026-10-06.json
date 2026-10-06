@@ -1,0 +1,742 @@
+{
+  "schema": "wavvy.suno-redirection.v1",
+  "date": "2026-10-06",
+  "workspace_required": "[07:00]",
+  "workspace_url_recorded": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "generation_authorization": "User explicitly approved generating audio from the 13 reviewed replacement drafts on 2026-10-06; 4 jungle / 4 drill / 5 rock approved for this generation only.",
+  "audio_listening_status": "partial_user_decisions_9_keep_4_regenerate; round2 pending",
+  "tempo_measurement_status": "unmeasured",
+  "historical_selection_manifest": "input/suno-selected.json (unchanged)",
+  "tracks": [
+    {
+      "order": 1,
+      "title": "문을 열고",
+      "display_title_requested": "1. 문을 열고 (10/06)",
+      "genre_proposal_approved_for_generation": "rock",
+      "source_txt": "input/remakes/01_문을 열고_redirection-2026-10-06.txt",
+      "source_sha256": "e9cf05f5aac6774bd498986d6fdf71da2baea0e8bb53495a43d5b4ffea54d827",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "1. 문을 열고 (10/06)",
+      "credits_before": 1106,
+      "credits_after": 1096,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "e0416200-4907-4538-8054-6ee5c81bc2b3",
+          "url": "https://suno.com/song/e0416200-4907-4538-8054-6ee5c81bc2b3",
+          "ui_status": "complete_duration_displayed",
+          "title": "1. 문을 열고 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        },
+        {
+          "label": "B",
+          "id": "9741a6ca-12a4-45fb-8cd1-8821b95b3912",
+          "url": "https://suno.com/song/9741a6ca-12a4-45fb-8cd1-8821b95b3912",
+          "ui_status": "complete_duration_displayed",
+          "title": "1. 문을 열고 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "e0416200-4907-4538-8054-6ee5c81bc2b3"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:00:35.967928+00:00",
+      "duration_input_observed": "3:00",
+      "clicked_at_utc": "2026-10-06T06:00:52.571945+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "e0416200-4907-4538-8054-6ee5c81bc2b3"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 5,
+      "title": "길을 바꿔",
+      "display_title_requested": "5. 길을 바꿔 (10/06)",
+      "genre_proposal_approved_for_generation": "jazzy jungle",
+      "source_txt": "input/remakes/05_길을 바꿔_redirection-2026-10-06.txt",
+      "source_sha256": "311f53a0d58ad938750c47d1e9e675ad91e88a8d903e69c9ee8b15ebd5f7adfc",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "5. 길을 바꿔 (10/06)",
+      "credits_before": 1096,
+      "credits_after": 1086,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "a1c1c548-d536-478d-b898-a5ff6d8d37c7",
+          "url": "https://suno.com/song/a1c1c548-d536-478d-b898-a5ff6d8d37c7",
+          "ui_status": "complete_duration_displayed",
+          "title": "5. 길을 바꿔 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00"
+        },
+        {
+          "label": "B",
+          "id": "d6fc1cb5-2b68-418b-aee8-d77dc5c9ae58",
+          "url": "https://suno.com/song/d6fc1cb5-2b68-418b-aee8-d77dc5c9ae58",
+          "ui_status": "complete_duration_displayed",
+          "title": "5. 길을 바꿔 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "d6fc1cb5-2b68-418b-aee8-d77dc5c9ae58"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:02:15.160248+00:00",
+      "duration_input_observed": "3:00",
+      "clicked_at_utc": "2026-10-06T06:02:29.124110+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "d6fc1cb5-2b68-418b-aee8-d77dc5c9ae58"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 6,
+      "title": "정해 둔 건 없어",
+      "display_title_requested": "6. 정해 둔 건 없어 (10/06)",
+      "genre_proposal_approved_for_generation": "drill",
+      "source_txt": "input/remakes/06_정해 둔 건 없어_redirection-2026-10-06.txt",
+      "source_sha256": "9e815bea55c1999c92fa74134f01ab993e8ce0138ab724b424592a182e18e8a7",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "6. 정해 둔 건 없어 (10/06)",
+      "credits_before": 1086,
+      "credits_after": 1076,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "354f395b-ddbb-41ba-9c02-cb4b35233ee8",
+          "url": "https://suno.com/song/354f395b-ddbb-41ba-9c02-cb4b35233ee8",
+          "ui_status": "complete_duration_displayed",
+          "title": "6. 정해 둔 건 없어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        },
+        {
+          "label": "B",
+          "id": "3506c25c-08e1-4573-90db-f021dfed218c",
+          "url": "https://suno.com/song/3506c25c-08e1-4573-90db-f021dfed218c",
+          "ui_status": "complete_duration_displayed",
+          "title": "6. 정해 둔 건 없어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T06:03:17.462155+00:00",
+      "duration_input_observed": "3:00",
+      "clicked_at_utc": "2026-10-06T06:03:34.680859+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 06·09·11 drill 청취 불만과 다른 스타일 재생성을 요청."
+    },
+    {
+      "order": 7,
+      "title": "같은 방향",
+      "display_title_requested": "7. 같은 방향 (10/06)",
+      "genre_proposal_approved_for_generation": "rock",
+      "source_txt": "input/remakes/07_같은 방향_redirection-2026-10-06.txt",
+      "source_sha256": "ad84d26fdab3a3ca57afb8d2d90035f1b2982669af036913ab57ed24a3a9e8fc",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "7. 같은 방향 (10/06)",
+      "credits_before": 1076,
+      "credits_after": 1066,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "f5051488-a300-4057-b9fb-f3acbc92ce8c",
+          "url": "https://suno.com/song/f5051488-a300-4057-b9fb-f3acbc92ce8c",
+          "ui_status": "complete_duration_displayed",
+          "title": "7. 같은 방향 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        },
+        {
+          "label": "B",
+          "id": "50b26036-a65e-405d-81a7-4ec1cfa4a98b",
+          "url": "https://suno.com/song/50b26036-a65e-405d-81a7-4ec1cfa4a98b",
+          "ui_status": "complete_duration_displayed",
+          "title": "7. 같은 방향 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "f5051488-a300-4057-b9fb-f3acbc92ce8c"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:04:07.080059+00:00",
+      "duration_input_observed": "3:00",
+      "clicked_at_utc": "2026-10-06T06:04:18.736432+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "f5051488-a300-4057-b9fb-f3acbc92ce8c"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 8,
+      "title": "낮은 비트",
+      "display_title_requested": "8. 낮은 비트 (10/06)",
+      "genre_proposal_approved_for_generation": "jazzy jungle",
+      "source_txt": "input/remakes/08_낮은 비트_redirection-2026-10-06.txt",
+      "source_sha256": "c0bd0058316f8cc16b07de8fccd4a8c24808cbbbf865c06e8d0a64675073a511",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "8. 낮은 비트 (10/06)",
+      "credits_before": 1066,
+      "credits_after": 1056,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "8dc7697b-4603-4ac8-975b-67a55c91d397",
+          "url": "https://suno.com/song/8dc7697b-4603-4ac8-975b-67a55c91d397",
+          "ui_status": "complete_duration_displayed",
+          "title": "8. 낮은 비트 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:20"
+        },
+        {
+          "label": "B",
+          "id": "0afda644-727e-4036-8af2-b549fd7b1872",
+          "url": "https://suno.com/song/0afda644-727e-4036-8af2-b549fd7b1872",
+          "ui_status": "complete_duration_displayed",
+          "title": "8. 낮은 비트 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:37"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "8dc7697b-4603-4ac8-975b-67a55c91d397"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:08:45.537011+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:08:55.342220+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "8dc7697b-4603-4ac8-975b-67a55c91d397"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 9,
+      "title": "숨을 세어",
+      "display_title_requested": "9. 숨을 세어 (10/06)",
+      "genre_proposal_approved_for_generation": "drill",
+      "source_txt": "input/remakes/09_숨을 세어_redirection-2026-10-06.txt",
+      "source_sha256": "515bafb819fb1b19e273b1b0ca66d7b27dc25b47298b7d0d939d1b2d0030dc99",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "9. 숨을 세어 (10/06)",
+      "credits_before": 1056,
+      "credits_after": 1046,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "e4bb79d6-0f69-4f27-8e9e-1889e2024c95",
+          "url": "https://suno.com/song/e4bb79d6-0f69-4f27-8e9e-1889e2024c95",
+          "ui_status": "complete_duration_displayed",
+          "title": "9. 숨을 세어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:26"
+        },
+        {
+          "label": "B",
+          "id": "251b7ceb-5b8f-4ca5-9bb5-273756eb0eca",
+          "url": "https://suno.com/song/251b7ceb-5b8f-4ca5-9bb5-273756eb0eca",
+          "ui_status": "complete_duration_displayed",
+          "title": "9. 숨을 세어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:09"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T06:09:32.334322+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:09:33.525733+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 06·09·11 drill 청취 불만과 다른 스타일 재생성을 요청."
+    },
+    {
+      "order": 10,
+      "title": "생각을 놓고",
+      "display_title_requested": "10. 생각을 놓고 (10/06)",
+      "genre_proposal_approved_for_generation": "rock",
+      "source_txt": "input/remakes/10_생각을 놓고_redirection-2026-10-06.txt",
+      "source_sha256": "1b3594cb6b9913010510f3f4a4273fffd4de3bc7b64f308f36f043a4b1bf1bb4",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "10. 생각을 놓고 (10/06)",
+      "credits_before": 1046,
+      "credits_after": 1036,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "1d18327c-3ce7-4aea-abb6-eac76686c6a9",
+          "url": "https://suno.com/song/1d18327c-3ce7-4aea-abb6-eac76686c6a9",
+          "ui_status": "complete_duration_displayed",
+          "title": "10. 생각을 놓고 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:03"
+        },
+        {
+          "label": "B",
+          "id": "9d950463-0850-400a-a88f-3a9804d25e91",
+          "url": "https://suno.com/song/9d950463-0850-400a-a88f-3a9804d25e91",
+          "ui_status": "complete_duration_displayed",
+          "title": "10. 생각을 놓고 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "1:44"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T06:10:17.055983+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:10:18.243641+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "9d950463-0850-400a-a88f-3a9804d25e91"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 06·09·11 drill을 다시 요청하고 10도 재즈로 재생성 요청; 기존 생존 후보가 있어도 새 후보 선택은 별도."
+    },
+    {
+      "order": 11,
+      "title": "다시 해볼게",
+      "display_title_requested": "11. 다시 해볼게 (10/06)",
+      "genre_proposal_approved_for_generation": "drill",
+      "source_txt": "input/remakes/11_다시 해볼게_redirection-2026-10-06.txt",
+      "source_sha256": "a31d3a5a549cb91520619784817956978bce81bb051c33e7401f3baf59e66076",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "11. 다시 해볼게 (10/06)",
+      "credits_before": 1036,
+      "credits_after": 1026,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "bba66f26-26c5-49cc-bafe-97c6cc326493",
+          "url": "https://suno.com/song/bba66f26-26c5-49cc-bafe-97c6cc326493",
+          "ui_status": "complete_duration_displayed",
+          "title": "11. 다시 해볼게 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "1:42"
+        },
+        {
+          "label": "B",
+          "id": "89ae1991-e082-48a2-8604-dce64325f4e7",
+          "url": "https://suno.com/song/89ae1991-e082-48a2-8604-dce64325f4e7",
+          "ui_status": "complete_duration_displayed",
+          "title": "11. 다시 해볼게 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:15"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T06:10:25.704466+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:10:26.889518+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 06·09·11 drill 청취 불만과 다른 스타일 재생성을 요청."
+    },
+    {
+      "order": 12,
+      "title": "바람이 바뀌어",
+      "display_title_requested": "12. 바람이 바뀌어 (10/06)",
+      "genre_proposal_approved_for_generation": "jazzy jungle",
+      "source_txt": "input/remakes/12_바람이 바뀌어_redirection-2026-10-06.txt",
+      "source_sha256": "80e208593091d3f6ea19c58e0d7660d7aa83f3cc0351ca265aba04827f9a691b",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "12. 바람이 바뀌어 (10/06)",
+      "credits_before": 1026,
+      "credits_after": 1016,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "0aeea41b-9019-4533-aab6-4b6449f4a475",
+          "url": "https://suno.com/song/0aeea41b-9019-4533-aab6-4b6449f4a475",
+          "ui_status": "complete_duration_displayed",
+          "title": "12. 바람이 바뀌어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:41"
+        },
+        {
+          "label": "B",
+          "id": "c9e15e32-63ed-45c7-9208-cb82aa89d1d0",
+          "url": "https://suno.com/song/c9e15e32-63ed-45c7-9208-cb82aa89d1d0",
+          "ui_status": "complete_duration_displayed",
+          "title": "12. 바람이 바뀌어 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:40"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "c9e15e32-63ed-45c7-9208-cb82aa89d1d0"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:10:34.322911+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:10:35.910373+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "c9e15e32-63ed-45c7-9208-cb82aa89d1d0"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 15,
+      "title": "드럼 위로",
+      "display_title_requested": "15. 드럼 위로 (10/06)",
+      "genre_proposal_approved_for_generation": "rock",
+      "source_txt": "input/remakes/15_드럼 위로_redirection-2026-10-06.txt",
+      "source_sha256": "4714af1e011bafcd45ff36fb3393ab0904ec06d7cd94c46c444a1c13ec022a95",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "15. 드럼 위로 (10/06)",
+      "credits_before": 1016,
+      "credits_after": 1006,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "16185831-28d0-4d1d-afaa-0ba1a894720d",
+          "url": "https://suno.com/song/16185831-28d0-4d1d-afaa-0ba1a894720d",
+          "ui_status": "complete_duration_displayed",
+          "title": "15. 드럼 위로 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:37"
+        },
+        {
+          "label": "B",
+          "id": "ca70a462-9a54-4e8c-85af-c62c05d49233",
+          "url": "https://suno.com/song/ca70a462-9a54-4e8c-85af-c62c05d49233",
+          "ui_status": "complete_duration_displayed",
+          "title": "15. 드럼 위로 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "1:45"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "16185831-28d0-4d1d-afaa-0ba1a894720d"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:10:51.883662+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:10:53.071811+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "16185831-28d0-4d1d-afaa-0ba1a894720d"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 16,
+      "title": "비가 갠 뒤",
+      "display_title_requested": "16. 비가 갠 뒤 (10/06)",
+      "genre_proposal_approved_for_generation": "drill",
+      "source_txt": "input/remakes/16_비가 갠 뒤_redirection-2026-10-06.txt",
+      "source_sha256": "a872f323cfd5f064a821c900c64c43cf4635df881e74de5a3e528c7dae647e45",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "16. 비가 갠 뒤 (10/06)",
+      "credits_before": 1006,
+      "credits_after": 996,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "c22376ee-9378-4243-ba77-541d09b4e772",
+          "url": "https://suno.com/song/c22376ee-9378-4243-ba77-541d09b4e772",
+          "ui_status": "complete_duration_displayed",
+          "title": "16. 비가 갠 뒤 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:27"
+        },
+        {
+          "label": "B",
+          "id": "e520177a-5286-4cf6-844b-91ae5446ac7a",
+          "url": "https://suno.com/song/e520177a-5286-4cf6-844b-91ae5446ac7a",
+          "ui_status": "complete_duration_displayed",
+          "title": "16. 비가 갠 뒤 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:28"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "c22376ee-9378-4243-ba77-541d09b4e772"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:11:00.512490+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:11:01.683466+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "c22376ee-9378-4243-ba77-541d09b4e772"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 17,
+      "title": "이어지는 소리",
+      "display_title_requested": "17. 이어지는 소리 (10/06)",
+      "genre_proposal_approved_for_generation": "jazzy jungle",
+      "source_txt": "input/remakes/17_이어지는 소리_redirection-2026-10-06.txt",
+      "source_sha256": "36faed4c24cebb8e9c6f11d7e09573c8a8eea5ce0b72d80bb98d3d26ab6a2134",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "17. 이어지는 소리 (10/06)",
+      "credits_before": 996,
+      "credits_after": 986,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "1e73b35f-a731-4a2a-8d34-fb66d85aef76",
+          "url": "https://suno.com/song/1e73b35f-a731-4a2a-8d34-fb66d85aef76",
+          "ui_status": "complete_duration_displayed",
+          "title": "17. 이어지는 소리 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:28"
+        },
+        {
+          "label": "B",
+          "id": "03331adc-0815-4d3f-854e-6276fd252168",
+          "url": "https://suno.com/song/03331adc-0815-4d3f-854e-6276fd252168",
+          "ui_status": "complete_duration_displayed",
+          "title": "17. 이어지는 소리 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:14"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "1e73b35f-a731-4a2a-8d34-fb66d85aef76"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:11:09.164028+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:11:10.360177+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "1e73b35f-a731-4a2a-8d34-fb66d85aef76"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    },
+    {
+      "order": 20,
+      "title": "집으로 가는 길",
+      "display_title_requested": "20. 집으로 가는 길 (10/06)",
+      "genre_proposal_approved_for_generation": "rock",
+      "source_txt": "input/remakes/20_집으로 가는 길_redirection-2026-10-06.txt",
+      "source_sha256": "29eff2608a5836d839d23212050cfd82943db7ce5e919267440f9f7c410129de",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "20. 집으로 가는 길 (10/06)",
+      "credits_before": 986,
+      "credits_after": 976,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "7ba63037-56ff-439d-9b55-a1c5a9d162c0",
+          "url": "https://suno.com/song/7ba63037-56ff-439d-9b55-a1c5a9d162c0",
+          "ui_status": "complete_duration_displayed",
+          "title": "20. 집으로 가는 길 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:24"
+        },
+        {
+          "label": "B",
+          "id": "7793dd25-82cd-45ee-8044-bc51c6166428",
+          "url": "https://suno.com/song/7793dd25-82cd-45ee-8044-bc51c6166428",
+          "ui_status": "complete_duration_displayed",
+          "title": "20. 집으로 가는 길 (10/06)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:45"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "7ba63037-56ff-439d-9b55-a1c5a9d162c0"
+      },
+      "ui_fields_verified_at": "2026-10-06T06:11:17.861386+00:00",
+      "duration_input_observed": "Auto",
+      "clicked_at_utc": "2026-10-06T06:11:19.051751+00:00",
+      "current_workspace_observation": {
+        "date": "2026-10-06",
+        "workspace": "[07:00]",
+        "candidate_ids_visible": [
+          "7ba63037-56ff-439d-9b55-a1c5a9d162c0"
+        ],
+        "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/workspace-survivor-hrefs.json"
+      },
+      "decision_basis": "젠이 나머지는 하나만 남겼다고 보고; [07:00] UI에서 해당 번호의 생존 후보 1개가 이 기록의 A/B ID와 일치함."
+    }
+  ],
+  "generation_status": "complete_13_submissions_26_candidates_ui_observed",
+  "post_listening_reconciliation": {
+    "date": "2026-10-06",
+    "workspace_song_count_ui": 17,
+    "kept_round1_orders": [
+      1,
+      5,
+      7,
+      8,
+      12,
+      15,
+      16,
+      17,
+      20
+    ],
+    "regenerate_orders": [
+      6,
+      9,
+      10,
+      11
+    ],
+    "historical_seven_orders": [
+      2,
+      3,
+      4,
+      13,
+      14,
+      18,
+      19
+    ],
+    "old_10_candidate_still_visible": "9d950463-0850-400a-a88f-3a9804d25e91",
+    "tempo_measurement_status": "unmeasured",
+    "evidence": "/tmp/wavvy-20261006-round2-selection-evidence/survivor-compare.json"
+  }
+}

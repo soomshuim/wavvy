@@ -1,0 +1,205 @@
+{
+  "schema": "wavvy.suno-redirection.v1",
+  "date": "2026-10-06",
+  "workspace_required": "[07:00]",
+  "workspace_url_observed_at_round2_start": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "workspace_reference_url_from_prior_generation": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+  "generation_authorization": "젠이 06·09·11을 다른 스타일로 재생성하고 10을 재즈로 재생성하도록 명시했다. 확정 배치: 06 fast garage rock, 09 jazzy jungle, 10 acoustic hard bop jazz, 11 bass-and-guitar funk rock.",
+  "round1_manifest": "input/suno-redirection-2026-10-06.json",
+  "historical_selection_manifest": "input/suno-selected.json (unchanged)",
+  "workspace_baseline_song_count_ui": 17,
+  "round1_old_10_candidate_still_visible": "9d950463-0850-400a-a88f-3a9804d25e91",
+  "audio_listening_status": "user_rejected_06_09_10_and_kept_11_by_2026-10-06_statement_and_surviving_id",
+  "subsequent_user_remakes_manifest": "input/suno-user-remakes-2026-10-06.json",
+  "tempo_measurement_status": "unmeasured",
+  "generation_status": "complete_4_submissions_8_candidates_ui_observed",
+  "tracks": [
+    {
+      "order": 6,
+      "title": "정해 둔 건 없어",
+      "display_title_requested": "6. 정해 둔 건 없어 (10/06 2차)",
+      "genre_user_approved_for_round2": "fast garage rock",
+      "source_txt": "input/remakes/06_정해 둔 건 없어_redirection-round2-2026-10-06.txt",
+      "source_sha256": "60151f7f7e4226e7d15229a1be0ad50bf9b3116db7ece1f0e95cc207226b703d",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "6. 정해 둔 건 없어 (10/06 2차)",
+      "credits_before": 976,
+      "credits_after": 966,
+      "duration_input_observed": "3:00",
+      "candidates": [
+        {
+          "label": "A",
+          "id": "7ed46cdd-1fd8-4577-8dc6-789747f822cc",
+          "url": "https://suno.com/song/7ed46cdd-1fd8-4577-8dc6-789747f822cc",
+          "title": "6. 정해 둔 건 없어 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        },
+        {
+          "label": "B",
+          "id": "04271024-7f61-4853-b37d-36e693e3352c",
+          "url": "https://suno.com/song/04271024-7f61-4853-b37d-36e693e3352c",
+          "title": "6. 정해 둔 건 없어 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T07:02:53.336741+00:00",
+      "workspace_url_at_submit": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+      "final_ui_observation_evidence": "/tmp/wavvy-20261006-round2-generation-evidence/final-06-snapshot.txt"
+    },
+    {
+      "order": 9,
+      "title": "숨을 세어",
+      "display_title_requested": "9. 숨을 세어 (10/06 2차)",
+      "genre_user_approved_for_round2": "jazzy jungle",
+      "source_txt": "input/remakes/09_숨을 세어_redirection-round2-2026-10-06.txt",
+      "source_sha256": "7f7336a51cefcab5158336f40ec56886fd792bef1945c6aa733d4c970f84dc02",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "9. 숨을 세어 (10/06 2차)",
+      "credits_before": 966,
+      "credits_after": 956,
+      "duration_input_observed": "3:00",
+      "candidates": [
+        {
+          "label": "A",
+          "id": "f3cf1533-cd2e-4f10-89f6-0cbb7fda81e8",
+          "url": "https://suno.com/song/f3cf1533-cd2e-4f10-89f6-0cbb7fda81e8",
+          "title": "9. 숨을 세어 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        },
+        {
+          "label": "B",
+          "id": "9505244c-993b-4d64-a5b8-e6ce52e9b7b7",
+          "url": "https://suno.com/song/9505244c-993b-4d64-a5b8-e6ce52e9b7b7",
+          "title": "9. 숨을 세어 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T07:05:28.535859+00:00",
+      "workspace_url_at_submit": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+      "final_ui_observation_evidence": "/tmp/wavvy-20261006-round2-generation-evidence/final-09-snapshot.txt"
+    },
+    {
+      "order": 10,
+      "title": "생각을 놓고",
+      "display_title_requested": "10. 생각을 놓고 (10/06 2차)",
+      "genre_user_approved_for_round2": "acoustic hard bop jazz",
+      "source_txt": "input/remakes/10_생각을 놓고_redirection-round2-2026-10-06.txt",
+      "source_sha256": "b5d631c369781fe333653ddda068b72fe2881f146878f65a31726722f85a79b9",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "10. 생각을 놓고 (10/06 2차)",
+      "credits_before": 956,
+      "credits_after": 946,
+      "duration_input_observed": "3:00",
+      "candidates": [
+        {
+          "label": "A",
+          "id": "ee294da6-b70d-498b-ad22-2916ba5222be",
+          "url": "https://suno.com/song/ee294da6-b70d-498b-ad22-2916ba5222be",
+          "title": "10. 생각을 놓고 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        },
+        {
+          "label": "B",
+          "id": "7c78ba58-9efa-45d4-918c-3d617f857d59",
+          "url": "https://suno.com/song/7c78ba58-9efa-45d4-918c-3d617f857d59",
+          "title": "10. 생각을 놓고 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "regenerate",
+        "chosen_candidate_id": null
+      },
+      "ui_fields_verified_at": "2026-10-06T07:07:05.135264+00:00",
+      "workspace_url_at_submit": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+      "final_ui_observation_evidence": "/tmp/wavvy-20261006-round2-generation-evidence/final-10-snapshot.txt"
+    },
+    {
+      "order": 11,
+      "title": "다시 해볼게",
+      "display_title_requested": "11. 다시 해볼게 (10/06 2차)",
+      "genre_user_approved_for_round2": "bass-and-guitar funk rock",
+      "source_txt": "input/remakes/11_다시 해볼게_redirection-round2-2026-10-06.txt",
+      "source_sha256": "aeb0e109c38f739c87394f3c16024db298b9544668abf0aa7ba6a8c526d8ac1a",
+      "bpm_prompt_target": 180,
+      "measured_bpm": null,
+      "generation_intent": "submitted",
+      "submission_attempts": 1,
+      "workspace_confirmed_before_submit": "[07:00]",
+      "model_version_observed": "v6",
+      "displayed_title_accepted": "11. 다시 해볼게 (10/06 2차)",
+      "credits_before": 946,
+      "credits_after": 936,
+      "duration_input_observed": "3:00",
+      "candidates": [
+        {
+          "label": "A",
+          "id": "c2a0711e-2d87-4b44-b522-2b12d6f546a0",
+          "url": "https://suno.com/song/c2a0711e-2d87-4b44-b522-2b12d6f546a0",
+          "title": "11. 다시 해볼게 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "2:59",
+          "ui_status": "complete_duration_displayed"
+        },
+        {
+          "label": "B",
+          "id": "ee96c338-2a08-4248-827d-82fc44da3de6",
+          "url": "https://suno.com/song/ee96c338-2a08-4248-827d-82fc44da3de6",
+          "title": "11. 다시 해볼게 (10/06 2차)",
+          "model_displayed": "V6",
+          "duration_displayed": "3:00",
+          "ui_status": "complete_duration_displayed"
+        }
+      ],
+      "submission_status": "complete_2_candidates_ui_observed",
+      "decision": {
+        "status": "keep",
+        "chosen_candidate_id": "ee96c338-2a08-4248-827d-82fc44da3de6"
+      },
+      "ui_fields_verified_at": "2026-10-06T07:08:28.505826+00:00",
+      "workspace_url_at_submit": "https://suno.com/create?wid=dee79f9f-f6d1-47be-8d91-2a88fafaa265",
+      "final_ui_observation_evidence": "/tmp/wavvy-20261006-round2-generation-evidence/final-11-snapshot.txt"
+    }
+  ],
+  "workspace_final_song_count_ui": 25,
+  "credits_start_observed": 976,
+  "credits_end_observed": 936
+}

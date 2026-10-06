@@ -1,12 +1,33 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-03 (07:00 선택 음원 02–07 WAV 다운로드)
+> Last updated: 2026-10-06 (07:00 재구성 기록 저장·다운로드 이후 작업 보류)
 
 ---
 
+## 2026-10-06 [CDX] -record: 07:00 재구성 기록 저장·다운로드 이후 보류
+- 현재 .ai/state.json은 active 07-00, revision 49, `track_source_draft`다. 기존 7곡 02·03·04·13·14·18·19, 1차 선택 9곡 01·05·07·08·12·15·16·17·20, 2차 11B `ee96c338-2a08-4248-827d-82fc44da3de6`(3:00)를 보존한다. 젠이 직접 다시 만든 06 `6155c557-6cc3-448d-a38c-e608401624fc`(2:04), 09 `54688321-7ea2-479f-8e5e-0bf7c94bd2b3`(3:22), 10 `a851a574-8836-40dd-8616-ee6549d3e4a1`(2:25)은 기본 `My Workspace`의 채택 미정 후보이며 `[07:00]`에는 없다. 과거 10B `9d950463-0850-400a-a88f-3a9804d25e91` 삭제는 젠 보고 기준이고 UI 재조회는 하지 않았다.
+- 이번 세션의 13+4 신규 txt 소스는 각 1회 Create로 26+8 ID를 생성한 이력이다. 각 소스·생성·보존 검토는 격리 Astra/xhigh CLEAN으로 끝났고 원시 판정은 `/tmp/wavvy-20261006-generation-review.md` 및 `/tmp/wavvy-20261006-round2-review.md`다. 프롬프트 게이트 17개 PASS는 실제 청취 품질·전 구간 180 BPM 측정을 뜻하지 않는다. 02–07 WAV 여섯 개 중 현행 보존 선택과 맞는 것은 02·03·04뿐이며 새 WAV·Final Track Sources·렌더·업로드는 없다. 옛 선택 JSON·다운로드 manifest·기존 txt/WAV는 이력으로 보존한다.
+- 젠 결정: 다운로드부터 이후 제작은 다운로드 한도 회복과 젠의 재개 요청 전까지 보류한다. 자동 다운로드·ingest·Final Track Sources·편집/렌더·업로드/릴리스·예약 재시도는 시작하지 않는다. 재개 시 현재 선택 ID와 새 06·09·10 후보의 위치·채택을 대조한 뒤 해당 범위를 진행한다. 업로드는 별도 명시적 `-wavvy-release` 경계를 따른다. 이번 `-record`는 기록·커밋·푸시만 수행한다.
+
+2026-10-06 [CDX] 젠이 “옛날 10번 지움.”이라고 알려 과거 10 `9d950463-0850-400a-a88f-3a9804d25e91`(1:44)을 사용자 보고 기준 삭제 상태로 기록했다. 삭제 후 UI 재조회는 하지 않았고, 현재 새 10 후보는 `a851a574-8836-40dd-8616-ee6549d3e4a1`(2:25)이다. 새 10의 채택·실제 BPM 판정은 추가하지 않았다.
+
+2026-10-06 [CDX] 젠이 2차 11만 마음에 든다고 하고 06·09·10을 다른 곡 스타일을 복사해 직접 다시 만들었다. Aside CLI로 확인한 새 세 ID는 `6155c557-6cc3-448d-a38c-e608401624fc`(06·2:04), `54688321-7ea2-479f-8e5e-0bf7c94bd2b3`(09·3:22), `a851a574-8836-40dd-8616-ee6549d3e4a1`(10·2:25)이다. 세 곡은 `[07:00]`이 아닌 Suno 기본 `My Workspace`의 3곡이며, 각각 V6·`[Instrumental]`이다. 화면 스타일 설명은 기존 20·17·보존 04와 각각 글자 단위로 일치하지만, 제출한 STYLE 입력 원문과 별도 EXCLUDE 필드는 확인하지 않았다. `[07:00]`은 18곡이고 11의 단일 생존 ID는 기존 2차 B `ee96c338-2a08-4248-827d-82fc44da3de6`(3:00)와 일치해 보존 선택으로 기록했다. 새 06·09·10은 채택 미정이다. 실제 청감·BPM은 미확인이고 단계는 `track_source_draft`; 생성·이동·삭제·다운로드 없음. 기록: `SERIES/07-00/input/suno-user-remakes-2026-10-06.json`, `input/user-remakes-review-2026-10-06.md`; 원시 UI: `/tmp/wavvy-20261006-user-remakes-evidence/`.
+
+2026-10-06 [CDX] 2차 06·09·10·11 생성·입력/결과 연결·1차 선택 기록·보존 상태의 새 격리 gpt-6-astra/xhigh 검토가 CLEAN(Critical/High 0, 원칙 관찰 없음)으로 끝났다. 실제 turn_context 모델·effort를 확인했고, 컨트롤러도 네 소스 SHA와 4회 제출·8개 고유 ID·9 keep/4 regenerate를 직접 대조했다. 실제 청감·전 구간 180 BPM 판정은 포함하지 않는다. 판정 원문: `/tmp/wavvy-20261006-round2-review.md`.
+
+2026-10-06 [CDX] 젠이 1차 06·09·11 드릴을 다른 스타일로 다시 만들고 10도 재즈로 바꾸도록 결정했다. `[07:00]` UI에서 보존 7곡 ID가 이전 선택 기록과 일치하고, 1차 01·05·07·08·12·15·16·17·20에는 각 하나의 생존 후보만 있으며 1차 생성 ID와 일치함을 확인해 아홉 선택을 기록했다. 06·09·10·11은 1차 재생성 결정으로 기록했고, 남아 있던 1차 10B도 삭제하지 않았다. 네 곡의 새 무가사 소스는 빠른 개러지 록·재지 정글·어쿠스틱 하드 밥 재즈·베이스/기타 펑크(funk) 록이며 4개 track-prompt PASS 뒤 Suno Custom Create에 각 한 번씩 제출했다. V6 새 후보 8개 ID·제목·표시 길이를 확인했고 Custom 3:00 입력에도 11A는 2:59로 표시됐다. 작업공간 17→25곡, 크레딧 976→936. 새 후보 채택·청취 판단과 보존곡 포함 전 구간 180 BPM 실제 확인은 아직 없다. 새 WAV·삭제·commit/push 없음. 기록은 `SERIES/07-00/input/suno-redirection-round2-2026-10-06.json`, 듣기표는 `input/redirection-round2-review-2026-10-06.md`; 원시 UI는 `/tmp/wavvy-20261006-round2-selection-evidence/` 및 `/tmp/wavvy-20261006-round2-generation-evidence/`. Phase `track_source_draft`.
+
+2026-10-06 [CDX] 생성 수행·기록·보존 상태를 새 격리 gpt-6-astra/xhigh 검토자가 독립 대조해 CLEAN(Critical/High 0, 원칙 관찰 없음)으로 판정했다. 컨트롤러가 실제 turn_context의 모델·effort를 확인했다. 13회 제출·26개 후보, 소스/화면 입력 일치, 보존 7곡과 기존 기록·WAV 불변을 확인한 범위이며 실제 음원 품질·180 BPM 인증은 아니다. 판정 원문: `/tmp/wavvy-20261006-generation-review.md`.
+
+2026-10-06 [CDX] 젠의 명시 승인으로 07:00 교체 소스 13개를 기존 Suno `[07:00]`에서 각 한 번씩 제출했다. 새 A/B 26개 고유 ID·실제 제목·V6·표시 길이를 UI로 확인하고 `SERIES/07-00/input/suno-redirection-2026-10-06.json`에 소스 SHA-256·제출 intent·크레딧 1,106→976·선택 대기 상태와 함께 기록했다. 듣기 목록은 `input/redirection-review-2026-10-06.md`다. 4 jazzy jungle / 4 drill / 5 rock 배치는 이번 생성에 승인되었고 최종 채택은 미정이다. 일부 후보는 약 3분 길이 목표보다 짧다. 보존 7곡 ID와 기존 선택 기록은 그대로이고, 새 WAV 다운로드·후보 청취·실제 180 BPM 측정은 하지 않았다. Phase `track_source_draft`; Final Track Sources 미확정. 브라우저 원시 증거·검증: `/tmp/wavvy-20261006-generation-evidence/`.
+
+2026-10-06 [CDX] 소스 초안 단계 기록: 07:00 최신 결정은 02·03·04·13·14·18·19 보존, 나머지 13곡 재구성이다. `SERIES/07-00/input/redirection-2026-10-06.md`에 기존 선택 ID와 새 13곡의 장르·선율 차이·source 경로를 기록했다. 4 jazzy jungle / 4 drill / 5 rock 배분은 미확정 제안이다. 신규 txt만 날짜 접미사로 `input/remakes/`에 추가했고 STYLE 첫머리에 strict 180 BPM·연속 러닝 박자를 썼다. 신규 Suno 음원·실측 BPM은 없다. 이전 전곡 청취 PASS는 과거 상태이며 현재 보존곡은 일곱 곡이다. `input/suno-selected.json`과 기존 txt·다운로드 기록은 보존했다. 기존 WAV 여섯 개 중 현행 보존곡 WAV는 02·03·04만 해당한다. Phase `track_source_draft`; 새 음원 청취·선택 전 Final Track Sources 없음. 신규 13개 track-prompt PASS(13/13), state check PASS, git diff --check PASS. 원시 검증: `/tmp/wavvy-20261006-redirection-verification/`.
+
+2026-10-06 [CDX] 격리 Astra/xhigh 소스·문서 검토 CLEAN(Critical/High 0, 원칙 관찰 없음). 신규 13개와 원시 gate의 source SHA-256 일치, 보존 7 ID 및 교체 13 번호 일치, 기존 WAV 6개의 manifest 해시 일치를 검토자가 확인했다. 판정은 소스·문서에 한정하며 실제 음원 템포·품질 PASS가 아니다. 판정 원문: `/tmp/wavvy-20261006-redirection-review.md`. 실행 워커 gpt-6-sol/xhigh와 검토자 gpt-6-astra/xhigh의 실제 turn_context를 컨트롤러가 확인했다.
+
 2026-10-03 [CDX] 07:00 추가 WAV 다운로드 재시도: 젠 요청대로 Suno 페이지를 새로고침하고 08을 두 차례 확인했으나 Pro 다운로드 잔여 0회·다음 갱신 2026-10-12로 표시됐다. 01 다운로드 메뉴도 요금제 화면으로 이동했고 같은 계정의 잔여 0회를 확인했다. 신규 파일·결제 없음. 현재 02–07 WAV 6개만 확보, 01 및 08–20 WAV는 미수집; 다운로드 가능 상태 갱신을 기다린다.
 
-07:00 최종 20곡 ID 고정·청취 PASS, 02–07 선택 음원 WAV 다운로드/형식·해시 검증 완료; 01은 젠의 MP3/M4A, 01 및 08–20 WAV는 미수집. 17:00 공개·댓글 확인과 Suno 제작/게이트 변경을 47개 테스트·doctor·state check로 확인.
+2026-10-03 당시 07:00 최종 20곡 ID 고정·청취 PASS, 02–07 선택 음원 WAV 다운로드/형식·해시 검증 완료; 01은 젠의 MP3/M4A, 01 및 08–20 WAV는 미수집. 17:00 공개·댓글 확인과 Suno 제작/게이트 변경을 47개 테스트·doctor·state check로 확인. 이 행은 2026-10-06 교체 결정 이전 기록이다.
 
 ## 2026-10-03 [CDX] 07:00 20곡 번호별 청취 PASS 확인
 - 젠이 20곡을 번호별로 정리하고 03 3차를 마지막으로 “통과”시킨 뒤 “20곡 모두 패스지?”라고 확인했다. 01–20을 번호별 청취 PASS로 기록한다. Suno 재생성 A/B가 추가된 상태이므로 최종 음원 ID 20개 선정과 실제 178–182 BPM 측정은 별도 미완료다. Final Track Sources·WAV도 없다.

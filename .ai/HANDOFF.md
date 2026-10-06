@@ -1,4 +1,47 @@
 ---
+HANDOFF: Codex -> 젠
+Date: 2026-10-06 16:59:58
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 07:00 재구성 세션 기록 저장: 기존 7곡·1차 9곡·2차 11B 보존, 직접 재제작 06·09·10은 채택 미정. 신규 17 txt/생성 기록과 기존 선택·WAV 이력을 보존했다. state revision 49·track_source_draft; 물리 WAV 02–07 중 현행 선택에 맞는 것은 02·03·04뿐이다. 다운로드부터 이후 제작은 한도 회복과 젠의 재개 요청 전까지 보류한다.
+Next-TODO: 젠: 다운로드 한도 회복 후 재개할 때 요청한다. 재개 시 현행 선택 ID와 My Workspace의 새 06·09·10 후보 위치·채택부터 확인하고 그때 필요한 WAV 수집·음원 검증·Final Track Sources를 진행한다. 그 전에는 다운로드·ingest·렌더·업로드·예약 재시도 없음. 업로드는 별도 명시적 -wavvy-release에서만.
+Resume-Trigger: -wavvy
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-06
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 07:00의 기존 7곡 ID를 유지했다. 젠이 1차 생성곡 중 아홉 번호(01·05·07·08·12·15·16·17·20)에서 한 후보씩 남긴 것을 UI와 1차 후보 ID로 대조해 기록했다. 06·09·10·11은 재생성 결정으로 기록했고, 기존 10B는 남아 있던 사실만 보존했다. 젠이 정한 개러지 록·재지 정글·어쿠스틱 재즈·펑크(funk) 록 새 소스 네 개를 각 1회 생성해 V6 A/B 여덟 개의 ID·제목·표시 길이를 확인했다. 작업공간 17→25곡, 크레딧 976→936. 2차 후보 선택은 대기 중이다.
+Verification: 새 source gate 4/4 PASS, 각 소스 SHA·제출 1회·후보 2개와 UI 표시를 `input/suno-redirection-round2-2026-10-06.json`에 기록. 1차 선택 UI 원시는 `/tmp/wavvy-20261006-round2-selection-evidence/`, 2차 제출·최종 UI와 게이트 원시는 `/tmp/wavvy-20261006-round2-generation-evidence/`. 이 확인은 실제 180 BPM·청감 품질 PASS가 아니다.
+Next-TODO: 젠이 `input/redirection-round2-review-2026-10-06.md`의 06·09·10·11 A/B를 듣고 번호당 한 곡을 고른다. 보존 7곡을 포함해 최종 음원의 180 BPM 전 구간 지속을 확인한다. 새 WAV 다운로드·Final Track Sources 확정은 아직 없다. Phase `track_source_draft`.
+Resume-Trigger: -wavvy
+Commits: 이번 작업에서 commit/push 없음.
+---
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-06
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 승인한 07:00 교체 13곡을 기존 Suno `[07:00]`에서 각 한 번씩 생성했다. A/B 26개 고유 ID·실제 제목·V6·표시 길이를 UI에서 확인했고, 소스 해시와 제출 intent·크레딧 1,106→976을 `SERIES/07-00/input/suno-redirection-2026-10-06.json`에 기록했다. `input/redirection-review-2026-10-06.md`는 26개 듣기 링크다. 4 jungle / 4 drill / 5 rock은 이번 생성 배치로 승인되었지만 최종 선택은 미정이다. 일부 길이는 목표인 약 3분보다 짧다. 보존 02·03·04·13·14·18·19 ID와 옛 선택 기록·WAV는 그대로이며 새 WAV 다운로드는 없다.
+Verification: 13번 Create 각 1회, 새 후보 ID 26개 고유, 26개 UI 제목·V6·길이 확인, 13개 소스 SHA-256 일치. 브라우저 원시 증거와 최종 검증은 `/tmp/wavvy-20261006-generation-evidence/`. 소스 게이트 원시는 `/tmp/wavvy-20261006-redirection-verification/`. 브라우저 관측은 청취 품질이나 실제 180 BPM 증거가 아니다.
+Next-TODO: 젠이 새 A/B 후보를 듣고 채택할 곡을 결정한다. 보존 7곡까지 포함해 실제 음원에서 180 BPM 러닝 박자가 전 구간 이어지는지 확인해야 한다. 그 전에는 새 선택 기록·Final Track Sources를 확정하지 않는다. Phase `track_source_draft`.
+Resume-Trigger: -wavvy
+Commits: 이번 작업에서 commit/push 없음.
+---
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-06
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 02·03·04·13·14·18·19를 보존하고 13곡을 다시 설계하도록 한 최신 결정에 맞춰, 새 무가사 source draft 13개를 `SERIES/07-00/input/remakes/*_redirection-2026-10-06.txt`에 추가했다. `input/redirection-2026-10-06.md`의 4 jazzy jungle / 4 drill / 5 rock 배치와 키는 미확정 제안이다. 13 jazzy jungle 원곡은 그대로 보존한다. 새 음원 생성·다운로드·선택·BPM 실측은 없다. `input/suno-selected.json`의 옛 20곡 선택과 download manifest는 역사 기록으로 불변이다. 물리적 WAV 02–07 중 현행 보존 번호는 02·03·04다.
+Verification: 신규 13개 track-prompt PASS(13/13), 07:00 state check PASS, git diff --check PASS. 원시 결과는 `/tmp/wavvy-20261006-redirection-verification/`에 있다. 기존 선택·다운로드·13 원문 diff는 0바이트다. 게이트 PASS는 오디오 180 BPM이나 음원 품질을 증명하지 않는다.
+Next-TODO: 젠이 장르 배분·곡별 소스 초안을 검토한다. 새 음원 생성 및 청취·선택이 실제로 이뤄진 뒤에야 새 선택 기록과 Final Track Sources를 갱신한다. 기존 05·06·07 WAV는 옛 선택 이력으로 보존한다.
+Resume-Trigger: -wavvy
+Commits: 이번 작업에서 commit/push 없음.
+---
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 18:32:20
 Project: /Users/zenkim_office/Project/wavvy
