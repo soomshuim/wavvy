@@ -10,7 +10,7 @@ Last updated: 2026-03-03
 
 ### 제목
 ```
-Playlist | 16:00 | 퇴근까지 버티는 중 🎸 | KOREAN ROCK · INDIE ROCK | 직장인 · 학생 | Wavvy
+Playlist | 퇴근까지 버티는 중 🎸 | MODERN ROCK · INDIE ROCK | 직장인 · 학생 | Wavvy | 16:00
 ```
 
 ### 설명

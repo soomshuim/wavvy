@@ -12,7 +12,7 @@
 
 ### 제목
 ```
-Playlist | 06:00 | 잠든 몸을 깨우는 새벽 🌅 | FAST LO-FI · LOFI POP | 러닝 · 모닝루틴 | Wavvy
+Playlist | 잠든 몸을 깨우는 새벽 🌅 | FAST LO-FI · LOFI POP | 러닝 · 모닝루틴 | Wavvy | 06:00
 ```
 
 ### 설명

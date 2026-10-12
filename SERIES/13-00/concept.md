@@ -16,7 +16,7 @@ Transition — 점심 후 봄 산책, 설렘과 따뜻함의 전환
 
 ### 제목
 ```
-Playlist | 13:00 | 봄이라 괜히 기분 좋은 하루 🌸 | FEEL GOOD R&B · URBAN NEO-SOUL | 봄플리 · 산책 · 드라이브 | Wavvy
+Playlist | 봄이라 괜히 기분 좋은 하루 🌸 | FEEL GOOD R&B · URBAN NEO-SOUL | 봄 플리 · 산책 · 드라이브 | Wavvy | 13:00
 ```
 
 ### 설명

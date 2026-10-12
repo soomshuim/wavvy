@@ -10,7 +10,7 @@
 
 ### 제목
 ```
-Playlist | 18:00 | 오늘도 수고했어요 🚶 | NEO-SOUL · R&B | 퇴근길 · 저녁감성 | Wavvy
+Playlist | 오늘도 수고했어요 🚶 | NEO-SOUL · R&B | 퇴근길 · 저녁감성 | Wavvy | 18:00
 ```
 
 ### 설명

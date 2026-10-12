@@ -1,6 +1,6 @@
 # 15-00 오후 3시, 라디오
 
-Playlist | 15:00 | 🕶️ 바람 좋은 날의 드라이브 | FUNKY R&B · URBAN NEO-SOUL | 드라이브 · 바람 · 봄
+Playlist | 🕶️ 바람 좋은 날의 드라이브 | FUNKY R&B · URBAN NEO-SOUL | 드라이브 · 바람 · 봄 | Wavvy | 15:00
 
 ---
 
@@ -46,7 +46,7 @@ Breezy Afternoon Drive — 창문 내리고 바람 맞으며 달리는 드라이
 
 ### 제목
 ```
-Playlist | 15:00 | 🕶️ 바람 좋은 날의 드라이브 | FUNKY R&B · URBAN NEO-SOUL | 드라이브 · 바람 · 봄 | Wavvy
+Playlist | 🕶️ 바람 좋은 날의 드라이브 | FUNKY R&B · URBAN NEO-SOUL | 드라이브 · 바람 · 봄 | Wavvy | 15:00
 ```
 
 ### 설명

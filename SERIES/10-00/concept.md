@@ -12,7 +12,7 @@
 
 ### 제목
 ```
-Playlist | 10:00 | 조용히 몰입하는 시간 ☕ | CHILLHOP · JAZZHOP | 집중 · 작업 | Wavvy
+Playlist | 조용히 몰입하는 시간 ☕ | CHILLHOP · JAZZHOP | 집중 · 작업 | Wavvy | 10:00
 ```
 
 ### 설명

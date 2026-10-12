@@ -12,7 +12,7 @@
 
 ### 제목
 ```
-Playlist | 04:00 | 하루가 멈춘 시간 🌙 | SLOW R&B · R&B BALLAD | 새벽감성 · 잠이안올때 | Wavvy
+Playlist | 하루가 멈춘 시간 🌙 | SLOW R&B · R&B BALLAD | 새벽감성 · 잠이안올때 | Wavvy | 04:00
 ```
 
 ### 설명

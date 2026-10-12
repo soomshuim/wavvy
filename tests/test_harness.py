@@ -8,9 +8,11 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 
-from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project, verify_release_package
+from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, TrackSource, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project, verify_final_selection_source_provenance, verify_release_package
 from wavvy_harness.doctor import run_ssot_hygiene
 from wavvy_harness.gate import run_gate, run_lyrics_skill_gate
+from wavvy_harness.packaging import check_thumbnail_layout, packaging_contract
+from wavvy_harness.selected_audio import check_selected_audio
 from wavvy_harness.state import build_state, check_state
 
 
@@ -137,6 +139,146 @@ def make_draft_series(root: Path) -> Path:
     (series / "concept.md").write_text("# Test Draft Series\n\n## Series Status\n\nTrack drafts in progress.\n", encoding="utf-8")
     (tracks / "01__Draft.txt").write_text("draft lyrics\n", encoding="utf-8")
     return series
+
+
+class PackagingContractTests(unittest.TestCase):
+    def _fixture(self, root: Path, logo_width: int = 284, time_size: int = 58, wrong_font: bool = False,
+                 missing_text: str | None = None, text_offset_x: int = 0, cadence_y: int = 688, tempo_y: int = 719):
+        from PIL import Image, ImageDraw, ImageFont
+
+        series = root / "SERIES" / "07-00"
+        input_dir = series / "input"
+        output_dir = series / "output"
+        brand_dir = root / "brand"
+        input_dir.mkdir(parents=True)
+        output_dir.mkdir()
+        brand_dir.mkdir()
+        logo_source = Path(__file__).resolve().parents[1] / "brand" / "logo_wavvy.png"
+        (brand_dir / "logo_wavvy.png").write_bytes(logo_source.read_bytes())
+        (series / "concept.md").write_text(
+            "# 07:00\n\n## Packaging Contract\n\n- Playlist repeat: 2\n- Thumbnail layout: input/thumbnail-layout.json\n",
+            encoding="utf-8",
+        )
+        (output_dir / "report.json").write_text(json.dumps({"processing_params": {"repeat": 1}}), encoding="utf-8")
+        scene = Image.new("RGB", (1672, 941), (40, 50, 80))
+        scene.save(input_dir / "scene.png")
+        thumb = scene.copy()
+        with Image.open(brand_dir / "logo_wavvy.png") as raw_logo:
+            logo = raw_logo.convert("RGBA")
+        logo = logo.resize((logo_width, round(logo.height * logo_width / logo.width)), Image.Resampling.LANCZOS)
+        thumb.paste(logo, (65, 56), logo)
+        font = ImageFont.load_default(size=time_size) if wrong_font else ImageFont.truetype("Pacifico-Regular.ttf", time_size)
+        ImageDraw.Draw(thumb).text((343, 78), "07:00", font=font, fill="white")
+        if missing_text != "cadence":
+            ImageDraw.Draw(thumb).text((64 + text_offset_x, cadence_y), "Cadence", font=ImageFont.truetype("SF-Pro-Display-Thin.otf", 50), fill="white")
+        if missing_text != "tempo":
+            ImageDraw.Draw(thumb).text((59 + text_offset_x, tempo_y), "180 BPM", font=ImageFont.truetype("HelveticaNeue.ttc", 148, index=9), fill="white")
+        thumb.save(input_dir / "thumb.jpg", quality=95)
+        (input_dir / "loop.png").write_bytes(b"loop")
+        layout = {
+            "schema": "wavvy.thumbnail_layout.v1",
+            "scene": "input/scene.png",
+            "thumbnail": "input/thumb.jpg",
+            "reference_psds": ["SERIES/06-00/input/thumb.psd", "SERIES/11-00/input/thumb.psd"],
+            "logo": {"asset": "brand/logo_wavvy.png", "x": 65, "y": 56, "source_width": logo_width},
+            "time": {"text": "07:00", "font": "Pacifico-Regular", "font_size": time_size, "x": 343, "y": 78},
+            "cadence": {"text": "Cadence", "font": "SF-Pro-Display-Thin", "font_size": 50, "x": 64 + text_offset_x, "y": cadence_y},
+            "tempo": {"text": "180 BPM", "font": "HelveticaNeue-CondensedBlack", "font_size": 148, "x": 59 + text_offset_x, "y": tempo_y},
+        }
+        (input_dir / "thumbnail-layout.json").write_text(json.dumps(layout), encoding="utf-8")
+        return series
+
+    def test_pack_rejects_repeat_one_before_render(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self._fixture(Path(tmp))
+            result = CliRunner().invoke(cli, ["pack", str(series), "--repeat", "1", "-y"])
+            self.assertNotEqual(result.exit_code, 0)
+            self.assertIn("requires --repeat 2", result.output)
+            self.assertFalse((series / "output" / "final.mkv").exists())
+
+    def test_report_repeat_one_fails_gate_and_two_matches(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = self._fixture(root)
+            result = run_gate(series, root, "source-final", {"is_valid": True})
+            self.assertEqual(next(item for item in result["checks"] if item["name"] == "playlist_repeat_contract")["status"], "FAIL")
+            self.assertTrue(any("playlist repeat" in item for item in result["blockers"]))
+            (series / "output" / "report.json").write_text(json.dumps({"processing_params": {"repeat": 2}}), encoding="utf-8")
+            result = run_gate(series, root, "source-final", {"is_valid": True})
+            self.assertEqual(next(item for item in result["checks"] if item["name"] == "playlist_repeat_contract")["status"], "PASS")
+
+    def test_thumbnail_real_logo_and_pacifico_pass(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = self._fixture(root)
+            contract, parse_errors = packaging_contract(series)
+            self.assertEqual(parse_errors, [])
+            checks, errors = check_thumbnail_layout(series, root, contract["layout_path"])
+            self.assertEqual(errors, [])
+            self.assertTrue(all(item["status"] == "PASS" for item in checks))
+
+    def test_thumbnail_small_logo_large_time_or_wrong_font_fails(self):
+        for case in ("small_logo", "large_time", "wrong_font"):
+            with self.subTest(case=case), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = self._fixture(
+                    root,
+                    logo_width=200 if case == "small_logo" else 284,
+                    time_size=85 if case == "large_time" else 58,
+                    wrong_font=case == "wrong_font",
+                )
+                contract, _ = packaging_contract(series)
+                checks, errors = check_thumbnail_layout(series, root, contract["layout_path"])
+                self.assertTrue(errors)
+                expected_name = "thumbnail_time_pixels" if case == "wrong_font" else "thumbnail_reference_proportions"
+                self.assertEqual(next(item for item in checks if item["name"] == expected_name)["status"], "FAIL")
+
+    def test_bad_thumbnail_blocks_pack_and_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = self._fixture(root, logo_width=200)
+            packed = CliRunner().invoke(cli, ["pack", str(series), "--repeat", "2", "-y"])
+            self.assertNotEqual(packed.exit_code, 0)
+            self.assertIn("proportions differ", packed.output)
+            self.assertFalse((series / "output" / "final.mkv").exists())
+            gated = run_gate(series, root, "source-final", {"is_valid": True})
+            self.assertEqual(gated["result"], "FAIL")
+            self.assertEqual(next(item for item in gated["checks"] if item["name"] == "thumbnail_reference_proportions")["status"], "FAIL")
+
+    def test_missing_cadence_or_tempo_blocks_pack_and_gate(self):
+        for missing in ("cadence", "tempo"):
+            with self.subTest(missing=missing), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = self._fixture(root, missing_text=missing)
+                contract, _ = packaging_contract(series)
+                checks, errors = check_thumbnail_layout(series, root, contract["layout_path"])
+                self.assertTrue(errors)
+                self.assertEqual(next(item for item in checks if item["name"] == f"thumbnail_{missing}_pixels")["status"], "FAIL")
+                packed = CliRunner().invoke(cli, ["pack", str(series), "--repeat", "2", "-y"])
+                self.assertNotEqual(packed.exit_code, 0)
+                self.assertIn(f"thumbnail {missing}", packed.output)
+                gated = run_gate(series, root, "source-final", {"is_valid": True})
+                self.assertEqual(gated["result"], "FAIL")
+
+    def test_headline_moved_right_or_cadence_below_tempo_fails_independent_layout(self):
+        for case, params in (
+            ("moved_right", {"text_offset_x": 886}),
+            ("cadence_below", {"cadence_y": 830, "tempo_y": 630}),
+        ):
+            with self.subTest(case=case), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = self._fixture(root, **params)
+                contract, _ = packaging_contract(series)
+                checks, errors = check_thumbnail_layout(series, root, contract["layout_path"])
+                self.assertTrue(errors)
+                self.assertEqual(next(item for item in checks if item["name"] == "thumbnail_lower_left_layout")["status"], "FAIL")
+                self.assertEqual(next(item for item in checks if item["name"] == "thumbnail_cadence_pixels")["status"], "PASS")
+                self.assertEqual(next(item for item in checks if item["name"] == "thumbnail_tempo_pixels")["status"], "PASS")
+                packed = CliRunner().invoke(cli, ["pack", str(series), "--repeat", "2", "-y"])
+                self.assertNotEqual(packed.exit_code, 0)
+                self.assertIn("lower left", packed.output)
+                gated = run_gate(series, root, "source-final", {"is_valid": True})
+                self.assertTrue(any("lower left" in blocker for blocker in gated["blockers"]))
 
 
 def make_lyric_skill_package(root: Path) -> None:
@@ -1326,6 +1468,47 @@ class ReleaseVerificationTests(unittest.TestCase):
             (series / "input" / "tracks" / manifest["tracks"][0]["input_filename"]).write_bytes(b"wrong-audio")
             self.assertTrue(any("WAV SHA-256" in error for error in verify_release_package(ProjectPaths(series))))
 
+    def test_verify_release_prefers_current_final_selection_over_historical_candidates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            manifest_path = series / "input" / "download-manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            selection = {"workspace": "[20:00]", "tracks": []}
+            for item in manifest["tracks"]:
+                item["candidate_id"] = f"new-{item['order']}"
+                selection["tracks"].append({
+                    "order": item["order"], "title": item["approved_title"],
+                    "candidate_id": item["candidate_id"],
+                })
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            selection_path = series / "input" / "suno-final-selection-2026-10-12.json"
+            selection_path.write_text(json.dumps(selection), encoding="utf-8")
+            self.assertEqual(verify_release_package(ProjectPaths(series)), [])
+
+            selection["tracks"][0]["candidate_id"] = "wrong-id"
+            selection_path.write_text(json.dumps(selection), encoding="utf-8")
+            self.assertTrue(any("final Suno selection ID/title" in error for error in verify_release_package(ProjectPaths(series))))
+            selection["tracks"][0]["candidate_id"] = "new-1"
+            selection["tracks"][0]["title"] = "Wrong Title"
+            selection_path.write_text(json.dumps(selection), encoding="utf-8")
+            self.assertTrue(any("final Suno selection ID/title" in error for error in verify_release_package(ProjectPaths(series))))
+            selection["tracks"][0]["title"] = "One"
+            selection["workspace"] = "[wrong]"
+            selection_path.write_text(json.dumps(selection), encoding="utf-8")
+            self.assertTrue(any("selection workspace" in error for error in verify_release_package(ProjectPaths(series))))
+
+    def test_verify_release_invalid_final_selection_does_not_fall_back(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            selection_path = series / "input" / "suno-final-selection-2026-10-12.json"
+            selection_path.write_text("{invalid", encoding="utf-8")
+            self.assertTrue(any("Invalid suno-final-selection" in error for error in verify_release_package(ProjectPaths(series))))
+            selection_path.write_text(json.dumps({
+                "workspace": "[20:00]",
+                "tracks": [{"order": 1, "title": "One", "candidate_id": "candidate-1"}],
+            }), encoding="utf-8")
+            self.assertTrue(any("orders/count" in error for error in verify_release_package(ProjectPaths(series))))
+
     def test_verify_release_rejects_chapter_drift_and_csv_drift(self):
         with tempfile.TemporaryDirectory() as tmp:
             series = self.make_release(Path(tmp))
@@ -1334,6 +1517,171 @@ class ReleaseVerificationTests(unittest.TestCase):
             errors = verify_release_package(ProjectPaths(series))
             self.assertTrue(any("chapter 2" in error for error in errors))
             self.assertTrue(any("description differs" in error for error in errors))
+
+    def test_verify_release_checks_existing_upload_copy_path_streams_and_duration(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            concept = series / "concept.md"
+            concept.write_text(concept.read_text(encoding="utf-8") +
+                               "\n## Packaging Contract\n\n- Playlist repeat: 2\n- Thumbnail layout: input/thumbnail-layout.json\n", encoding="utf-8")
+            (series / "output" / "final.mp4").write_bytes(b"upload-copy")
+            report_path = series / "output" / "report.json"
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            report["summary"] = {"final_duration": 238.4}
+            report_path.write_text(json.dumps(report), encoding="utf-8")
+            csv_path = series / "output" / "upload.csv"
+            csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mkv", str(series / "output" / "final.mp4")), encoding="utf-8")
+            good_probe = {"streams": [
+                {"codec_type": "video", "codec_name": "h264", "width": 3840, "height": 2160},
+                {"codec_type": "audio", "codec_name": "aac"}], "format": {"duration": "238.4"}}
+            with patch("wavvy.ffmpeg.probe", return_value=good_probe):
+                self.assertEqual(verify_release_package(ProjectPaths(series)), [])
+                csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mp4", "final.mkv"), encoding="utf-8")
+                self.assertTrue(any("video_path" in error for error in verify_release_package(ProjectPaths(series))))
+            csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mkv", "final.mp4"), encoding="utf-8")
+            with patch("wavvy.ffmpeg.probe", return_value={"streams": [{"codec_type": "video"}], "format": {"duration": "250"}}):
+                errors = verify_release_package(ProjectPaths(series))
+            self.assertTrue(any("requires video and audio streams" in error for error in errors))
+            self.assertTrue(any("duration differs" in error for error in errors))
+
+    def test_missing_or_low_quality_4k_upload_copy_fails_release_and_upload_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = self.make_release(root)
+            concept = series / "concept.md"
+            concept.write_text(concept.read_text(encoding="utf-8") +
+                               "\n## Packaging Contract\n\n- Playlist repeat: 2\n- Thumbnail layout: input/thumbnail-layout.json\n", encoding="utf-8")
+            report_path = series / "output" / "report.json"
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            report["summary"] = {"final_duration": 238.4}
+            report_path.write_text(json.dumps(report), encoding="utf-8")
+            csv_path = series / "output" / "upload.csv"
+            csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mkv", str(series / "output" / "final.mp4")), encoding="utf-8")
+            errors = verify_release_package(ProjectPaths(series))
+            self.assertTrue(any("upload file is missing" in error for error in errors), errors)
+            gate = run_gate(series, root, "upload-ready", {"is_valid": True})
+            self.assertTrue(any("upload file is missing" in error for error in gate["blockers"]))
+
+            csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mp4", "final.mkv"), encoding="utf-8")
+            errors = verify_release_package(ProjectPaths(series))
+            self.assertTrue(any("video_path must identify output/final.mp4" in error for error in errors), errors)
+            self.assertTrue(any("upload file is missing" in error for error in errors), errors)
+            gate = run_gate(series, root, "upload-ready", {"is_valid": True})
+            self.assertTrue(any("video_path must identify output/final.mp4" in error for error in gate["blockers"]))
+            self.assertTrue(any("upload file is missing" in error for error in gate["blockers"]))
+            csv_path.write_text(csv_path.read_text(encoding="utf-8").replace("final.mkv", "final.mp4"), encoding="utf-8")
+
+            (series / "output" / "final.mp4").write_bytes(b"fake-small-video")
+            tiny_probe = {"streams": [
+                {"codec_type": "video", "codec_name": "mpeg4", "width": 160, "height": 90},
+                {"codec_type": "audio", "codec_name": "mp3"}],
+                "format": {"duration": "238.4"}}
+            with patch("wavvy_harness.upload_copy.ffmpeg.probe", return_value=tiny_probe):
+                errors = verify_release_package(ProjectPaths(series))
+                gate = run_gate(series, root, "upload-ready", {"is_valid": True})
+            self.assertTrue(any("3840x2160 H.264" in error for error in errors), errors)
+            self.assertTrue(any("3840x2160 H.264" in error for error in gate["blockers"]), gate["blockers"])
+
+
+class SelectedAudioSourceTests(unittest.TestCase):
+    def make_instrumental(self, root: Path) -> Path:
+        series = ReleaseVerificationTests().make_release(root)
+        concept = (series / "concept.md").read_text(encoding="utf-8")
+        concept = concept.replace("## Final Track Sources", "## Series Direction\n\n- **Final vocal direction**: Instrumental.\n\n## Final Selected Audio Sources\n\n- Manifest: `input/final-selected-audio-sources.json`\n\n## Final Track Sources")
+        (series / "concept.md").write_text(concept, encoding="utf-8")
+        report = json.loads((series / "output" / "report.json").read_text(encoding="utf-8"))
+        download = json.loads((series / "input" / "download-manifest.json").read_text(encoding="utf-8"))
+        selection = {"workspace": "[20:00]", "tracks": [
+            {"order": t["order"], "title": t["approved_title"], "candidate_id": t["candidate_id"]}
+            for t in download["tracks"]
+        ]}
+        (series / "input" / "suno-final-selection-test.json").write_text(json.dumps(selection), encoding="utf-8")
+        source_sha = hashlib.sha256(b"source-1").hexdigest()
+        archive = {"schema": "wavvy.final_selected_audio.v1", "workspace": "[20:00]", "vocal_mode": "instrumental", "tracks": [
+            {"order": 1, "title": "One", "candidate_id": "candidate-1", "wav_sha256": report["tracks"][0]["sha256"],
+             "start_time": "00:00", "raw_prompt_status": "confirmed", "source_txt": "input/tracks/01_source.txt",
+             "source_sha256": source_sha, "observed_style_description": None, "observation_ref": None},
+            {"order": 2, "title": "Two", "candidate_id": "candidate-2", "wav_sha256": report["tracks"][1]["sha256"],
+             "start_time": "00:59", "raw_prompt_status": "unverified", "observed_style_description": None, "observation_ref": None},
+        ]}
+        (series / "input" / "final-selected-audio-sources.json").write_text(json.dumps(archive), encoding="utf-8")
+        return series
+
+    def test_instrumental_archive_passes_source_and_upload_without_subtitles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = self.make_instrumental(root)
+            self.assertEqual(check_selected_audio(series), (True, []))
+            state = check_state(series, root, {"phase": "source_final"})
+            self.assertEqual(state["result"], "PASS", state["blockers"])
+            source_gate = run_gate(series, root, "source-final", {"is_valid": True})
+            self.assertEqual(source_gate["result"], "PASS", source_gate["blockers"])
+            (series / "output" / "final.mkv").write_bytes(b"video")
+            with patch("wavvy_harness.gate._has_media_stream", return_value=True):
+                upload_gate = run_gate(series, root, "upload-ready", {"is_valid": True})
+            self.assertEqual(upload_gate["result"], "PASS", upload_gate["blockers"])
+            self.assertFalse((series / "output" / "youtube_subtitles_ko_no_timing.txt").exists())
+
+    def test_archive_rejects_false_identity_timing_and_prompt_claims(self):
+        for field, value, message in (
+            ("candidate_id", "wrong-id", "candidate ID"),
+            ("wav_sha256", "0" * 64, "WAV SHA"),
+            ("start_time", "01:00", "start_time"),
+            ("source_sha256", "0" * 64, "candidate-to-source binding"),
+        ):
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = self.make_instrumental(root)
+                path = series / "input" / "final-selected-audio-sources.json"
+                archive = json.loads(path.read_text(encoding="utf-8"))
+                archive["tracks"][0][field] = value
+                path.write_text(json.dumps(archive), encoding="utf-8")
+                opted, errors = check_selected_audio(series)
+                self.assertTrue(opted)
+                self.assertTrue(any(message in error for error in errors), errors)
+                self.assertEqual(run_gate(series, root, "source-final", {"is_valid": True})["result"], "FAIL")
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_instrumental(Path(tmp))
+            path = series / "input" / "final-selected-audio-sources.json"
+            archive = json.loads(path.read_text(encoding="utf-8"))
+            archive["tracks"][1]["source_txt"] = "input/tracks/02_source.txt"
+            path.write_text(json.dumps(archive), encoding="utf-8")
+            self.assertTrue(any("unverified raw prompt" in error for error in check_selected_audio(series)[1]))
+
+    def test_archive_requires_explicit_instrumental_and_observation_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_instrumental(Path(tmp))
+            concept = series / "concept.md"
+            concept.write_text(concept.read_text(encoding="utf-8").replace("Instrumental.", "Vocal."), encoding="utf-8")
+            self.assertTrue(any("explicitly declare" in error for error in check_selected_audio(series)[1]))
+            concept.write_text(concept.read_text(encoding="utf-8").replace("Vocal.", "Instrumental."), encoding="utf-8")
+            path = series / "input" / "final-selected-audio-sources.json"
+            archive = json.loads(path.read_text(encoding="utf-8"))
+            archive["tracks"][1]["observed_style_description"] = "invented style"
+            archive["tracks"][1]["observation_ref"] = "input/suno-candidates.json"
+            path.write_text(json.dumps(archive), encoding="utf-8")
+            self.assertTrue(any("not bound to candidate" in error for error in check_selected_audio(series)[1]))
+            evidence = {"tracks": [
+                {"candidate": {"id": "candidate-1", "style_description_ui": "style one"}},
+                {"candidate": {"id": "candidate-2", "style_description_ui": "style two"}},
+            ]}
+            (series / "input" / "observed.json").write_text(json.dumps(evidence), encoding="utf-8")
+            archive["tracks"][1]["observed_style_description"] = "style one"
+            archive["tracks"][1]["observation_ref"] = "input/observed.json"
+            path.write_text(json.dumps(archive), encoding="utf-8")
+            self.assertTrue(any("not bound to candidate" in error for error in check_selected_audio(series)[1]))
+
+    def test_finalize_upload_rejects_old_txt_for_new_selected_id(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_instrumental(Path(tmp))
+            report = json.loads((series / "output" / "report.json").read_text(encoding="utf-8"))
+            selection_path = series / "input" / "suno-final-selection-test.json"
+            selection = json.loads(selection_path.read_text(encoding="utf-8"))
+            selection["tracks"][1]["candidate_id"] = "later-cover-not-bound-to-original-txt"
+            selection_path.write_text(json.dumps(selection), encoding="utf-8")
+            matched = {i: TrackSource(label=str(i), content="", metadata={}, sections={}, sha256=hashlib.sha256(f"source-{i}".encode()).hexdigest()) for i in (1, 2)}
+            with self.assertRaisesRegex(FinalizeUploadError, "no recorded source txt/hash"):
+                verify_final_selection_source_provenance(ProjectPaths(series), report["tracks"], matched)
 
 
 if __name__ == "__main__":

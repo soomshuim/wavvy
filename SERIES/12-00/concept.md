@@ -197,7 +197,7 @@ kalimba
 
 ### 제목
 ```
-Playlist | 12:00 | 점심시간 리듬 맛집 🍽️ | KOREAN AFROBEATS · AFRO-DRILL | 점심플리 · 작업 | Wavvy
+Playlist | 4K 리듬 맛집 🍽️ | KOREAN AFROBEATS · AFRO-DRILL | 점심플리 · 작업 | Wavvy | 12:00
 ```
 
 ### Context Mode

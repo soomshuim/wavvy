@@ -1,7 +1,7 @@
 # 17:00 Acoustic R&B / Neo-Soul / Indie Rock
 
 Version: 0.4
-Last Updated: 2026-10-03
+Last Updated: 2026-10-12
 
 ## YouTube Metadata (v2 — 실제 WAV 타임스탬프 반영)
 
@@ -14,14 +14,14 @@ Transition — 17:00의 따뜻한 가을빛과 편안한 발걸음. 어쿠스틱
 ### 제목
 
 ```
-Playlist | 17:00 | 가을빛을 따라 걷는 오후 🍂 | ACOUSTIC R&B · INDIE ROCK | 산책 · 일상 | Wavvy
+Playlist | 가을 햇살 가득한 카페 느낌 어쿠스틱 플리 🍂 | ACOUSTIC R&B · INDIE ROCK | 산책 · 일상 | Wavvy | 17:00
 ```
 
 ### 설명
 
 ```
-🍂 17:00, 가을빛을 따라 걷는 오후
-느슨해진 발걸음에 어울리는 어쿠스틱 노래들 - Wavvy
+🍂 17:00, 가을 햇살 가득한 카페 느낌 어쿠스틱 플리
+가을에 어울리는 어쿠스틱 노래들 - Wavvy
 
 이어폰을 쓰고 문을 나서면,
 갈색 코트 위로 낮은 햇빛이 내려앉고,

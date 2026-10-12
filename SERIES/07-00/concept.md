@@ -1,19 +1,132 @@
 # 07:00 — 아침 러닝 (제작 브리프)
 
 Version: 0.1 draft · 2026-10-03
-Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기존 선택 02·03·04·13·14·18·19 일곱 곡, 1차 선택 01·05·07·08·15·16·17·20 여덟 곡, 2차 11B, 젠의 직접 재제작 06·09·10, 현재 `[07:00]`에 있는 12를 사용한다. 정확한 20개 ID는 `input/suno-final-selection-2026-10-12.json`에 있다. 현재 선택과 일치하는 WAV 20개를 파일 형식·길이·해시로 확인했다(`input/download-manifest.json`, 합계 약 58분 19초). 옛 05·06·07 WAV와 기존 선택 기록은 이력으로 보존한다. 실제 전 구간 180 BPM과 음악적 품질은 아직 검증하지 않았으며 phase는 `track_source_draft`다.
+Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기존 선택 02·03·04·13·14·18·19 일곱 곡, 1차 선택 01·05·07·08·15·16·17·20 여덟 곡, 2차 11B, 젠의 직접 재제작 06·09·10, 현재 `[07:00]`에 있는 12를 사용한다. 정확한 20개 ID는 `input/suno-final-selection-2026-10-12.json`에 있다. 현재 선택과 일치하는 WAV 20개를 파일 형식·길이·해시로 확인했다(`input/download-manifest.json`, 합계 약 58분 19초). 옛 05·06·07 WAV와 기존 선택 기록은 이력으로 보존한다. 젠은 이 곡들로 20~30분 달리면 평균 케이던스가 대략 180이라고 보고했다. 탐색적 오디오 측정에서는 일부 곡이 약 174~192 BPM으로 추정됐다. 20곡의 채택은 유지하고 `180 BPM`은 목표 케이던스 표기로 쓰며 전곡이 정확히 180 BPM이라는 주장은 하지 않는다. 음악적 품질의 별도 기계 판정은 아직 없다. Wavvy24에 업로드했고 2026-10-12 17:00 KST 공개 예약 시각 이후 Studio에서 공개·4K 처리 완료를 확인했다.
 
-젠의 2026-10-06 다운로드 보류는 2026-10-12 재개 요청으로 끝났다. Final Track Sources·편집/렌더·업로드/릴리스는 아직 수행하지 않았으며 업로드는 별도 명시적 `-wavvy-release`에서 진행한다.
+젠의 2026-10-06 다운로드 보류는 2026-10-12 재개 요청으로 끝났다. 확정 20곡을 번호순으로 2회 반복한 40개 재생 구간의 4K 본편을 렌더했고, 40개 시작 시각을 포함한 업로드 문안을 작성했다. 선택 음원의 일부 정확한 원문 프롬프트는 확인되지 않아 최초 보컬 txt를 최종 음원 출처로 승격하지 않는다. 현행 선택 ID·WAV 해시·확인된 원문 또는 관측된 화면 설명을 아래 `Final Selected Audio Sources`와 `input/final-selected-audio-sources.json`에 구분해 기록한다.
 
 2026-10-12 현재: Suno 대화상자에서 Pro 다운로드 20회를 확인한 뒤, 확정된 20곡의 WAV를 수집했다. 06·09·10은 젠이 최종 채택했고, 12는 10월 6일 선택 B와 다른 현재 화면의 음원을 젠이 최종 12번으로 골랐다. 현재 `input/tracks/`의 상위 폴더에는 선택된 WAV만 20개 있다. 옛 05·06·07의 원본 해시와 파일은 `input/historical-downloads-2026-10-03.json` 및 `input/tracks/history/2026-10-03/`에 보존했다. 다운로드 과정에서 자동으로 생긴 M4A는 Downloads에 남겨 두었고 패키지에는 넣지 않았다.
 
-시각 초안(2026-10-12): `input/art-draft-2026-10-12.png`(1672×941, SHA-256 `30b7ac69ecf58cdffeb0bb8e1ea8bb9899542b69a8b364ef342efefa0964b79e`). 강변에서 한 사람이 달리고, 왼쪽에 실제 Wavvy 로고·시리즈 시간·짧은 제목을 올릴 공간을 둔다. 젠은 배경 장면이 정확히 07:00일 필요는 없다고 했다. 제목 글자가 없는 장면 초안이며 강변 러닝 구도 승인 여부를 확인 중이다. 승인 전에는 4K 최종 배경·썸네일로 사용하지 않는다.
+시각 작업(2026-10-12): `input/art-draft-2026-10-12.png`는 거절된 첫 초안으로 보존한다. 젠이 제공한 러닝 사진은 구도·움직임·직접 플래시의 참고로만 쓰고 원본 픽셀은 사용하지 않았다. `input/thumb-scene-dawn-2026-10-12.png`(1672×941, SHA-256 `57619ab694ee2f4128db2c9bf7574fc6dbc6353f366bcc94b24d4f2ac1a68df7`)는 해가 막 뜨는 푸른 새벽에 보랏빛을 살짝 더한 강변 러닝 장면이다. 메인 러너는 블랙 러닝복, 라임 양말, 흰색 바탕에 작은 라임 포인트가 있는 신발을 신고 낮은 카메라를 살짝 내려다본다. 검은 나시 가슴에는 작은 형광 라임색 Nike 스우시가 있다. 젠이 승인한 `input/thumb.jpg`(1672×941, SHA-256 `cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30`)에는 실제 Wavvy 로고를 표시 너비 264px로 두고, Pacifico `07:00`을 오른쪽에 배치했다. 시간 글자의 크기·간격은 06:00·11:00 썸네일을 같은 폭으로 비교해 맞췄다. 왼쪽 아래에는 아주 얇은 SF Pro Display Thin `Cadence`를 작게, 그 옆에 헤드라인 오른쪽 끝까지 1px 선을 뒀다. 그 아래 두꺼운 Helvetica Neue Condensed Black `180 BPM`을 왼쪽 정렬로 배치했다. 전체 크기와 320×180을 확인했다. 조사·재생성 경위·해시는 `input/thumbnail-reference-review-2026-10-12.md`에 있다. `180 BPM`은 목표 케이던스 표기이며 전곡의 정확한 오디오 BPM 인증값이 아니다. 승인된 장면을 확대해 `input/loop.png`(3840×2160, SHA-256 `75dac23e65f3908a126c5fa19bd01d854ef5ef1767585e23de3139634d346e89`)로 저장했다. 원본 사진은 1672×941이며 배경의 4K 픽셀은 원본 생성이 아니라 Lanczos 확대 결과다.
+
+## Upload Status
+
+- YouTube 업로드 완료: Wavvy24 채널, https://youtu.be/DU_vBuIdMG4, 2026-10-12.
+- 공개 예약: 2026-10-12 17:00 서울(GMT+09:00). Studio 확인 대화상자와 콘텐츠 목록의 `예약됨` 상태를 확인했다.
+- 최종 제목: `Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 2Hour | Wavvy | 07:00`. 젠의 최종안 승인 후 2026-10-12 YouTube Studio에서 저장 완료를 확인했다. `2Hour`는 제목 표기이며 실제 영상 길이는 1:56:06이다.
+- 업로드 파일: `output/final.mp4` (3840×2160 H.264/AAC, 1:56:06). 20곡을 번호순으로 2회 반복했다.
+- 2026-10-12 16:08 KST 재확인: 콘텐츠 목록은 `예약됨`이다. 목록에는 `4K까지 처리 ... 완료`가 표시되지만 영상 세부정보의 화질 표시에는 아직 `4K 처리 중`이어서 4K 완료로 판정하지 않는다. `소유권 주장 개요`에는 `동영상에서 소유권 주장이 발견되지 않았습니다`가 표시됐다. 당시 실제 공개는 17:00 이후 확인 대상이었다.
+- 2026-10-12 약 17:20 KST 재확인: Studio 세부정보와 새로 불러온 콘텐츠 목록에 모두 `공개`가 표시됐고, 목록에 `4K까지 처리 ... 완료`가 표시됐다. 목록의 게시일은 2026-10-12이다. 앞선 `예약됨`과 세부정보의 `4K 처리 중`은 과거 확인 시점의 상태다.
+- 아동용 아님, AI 사용 예, 유료 프로모션 없음으로 설정했다. 가사 없는 음원이므로 가사 자막은 제출하지 않았다.
+
+## YouTube Metadata (v2.1 — scheduled)
+
+Context Mode: Energizing (07:00 러닝)
+
+### 제목
+```
+Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 2Hour | Wavvy | 07:00
+```
+
+### 설명
+```
+🌅 07:00, 발걸음이 먼저 나가는 아침.
+리듬을 따라 하루를 달리기 시작해요 - Wavvy
+
+문을 열자마자 서늘한 공기가 닿고,
+신발 끈을 한 번 더 당겨 묶어요.
+첫 박자에 맞춰 강변으로 발을 내딛고,
+가로등이 꺼질 무렵 호흡이 고르게 이어져요.
+어느새 걸음이 길어지고 몸이 가벼워지면,
+기타와 드럼이 다음 구간으로 밀어줘요.
+한 바퀴를 마치고 같은 곡을 다시 만나도,
+내 페이스를 따라 계속 달릴 수 있어요.
+
+20곡을 번호순으로 두 번 이어 듣는 러닝 플레이리스트예요.
+180 BPM은 목표 러닝 케이던스입니다. 수록곡의 실제 음악 템포는 곡마다 달라요.
+가사 없는 인스트루멘털 중심으로 구성했어요.
+
+──────────────
+Track List
+🏃 00:00 - 01. 문을 열고
+🏃 02:58 - 02. 파란불
+🏃 06:09 - 03. 첫 바퀴
+🏃 08:32 - 04. 조금 일찍
+🏃 11:43 - 05. 길을 바꿔
+🏃 14:41 - 06. 정해 둔 건 없어
+🏃 16:45 - 07. 같은 방향
+🏃 19:43 - 08. 낮은 비트
+🏃 23:02 - 09. 숨을 세어
+🏃 26:23 - 10. 생각을 놓고
+🏃 28:48 - 11. 다시 해볼게
+🏃 31:47 - 12. 바람이 바뀌어
+🏃 34:28 - 13. 호흡
+🏃 37:39 - 14. 하나씩
+🏃 40:49 - 15. 드럼 위로
+🏃 43:25 - 16. 비가 갠 뒤
+🏃 45:51 - 17. 이어지는 소리
+🏃 49:18 - 18. 가까운 곳
+🏃 52:29 - 19. 괜찮은 날
+🏃 55:40 - 20. 집으로 가는 길
+──────────────
+다시 한 바퀴
+🏃 58:03 - 01. 문을 열고 (반복)
+🏃 01:01:01 - 02. 파란불 (반복)
+🏃 01:04:12 - 03. 첫 바퀴 (반복)
+🏃 01:06:35 - 04. 조금 일찍 (반복)
+🏃 01:09:46 - 05. 길을 바꿔 (반복)
+🏃 01:12:44 - 06. 정해 둔 건 없어 (반복)
+🏃 01:14:48 - 07. 같은 방향 (반복)
+🏃 01:17:46 - 08. 낮은 비트 (반복)
+🏃 01:21:05 - 09. 숨을 세어 (반복)
+🏃 01:24:26 - 10. 생각을 놓고 (반복)
+🏃 01:26:51 - 11. 다시 해볼게 (반복)
+🏃 01:29:50 - 12. 바람이 바뀌어 (반복)
+🏃 01:32:31 - 13. 호흡 (반복)
+🏃 01:35:42 - 14. 하나씩 (반복)
+🏃 01:38:52 - 15. 드럼 위로 (반복)
+🏃 01:41:28 - 16. 비가 갠 뒤 (반복)
+🏃 01:43:54 - 17. 이어지는 소리 (반복)
+🏃 01:47:21 - 18. 가까운 곳 (반복)
+🏃 01:50:32 - 19. 괜찮은 날 (반복)
+🏃 01:53:43 - 20. 집으로 가는 길 (반복)
+──────────────
+Music for your space, 24 hours a day.
+
+🎵 Music: Wavvy
+Copyright Ⓒ Wavvy. All rights reserved.
+──────────────
+#runningmusic #instrumental #indierock #breakbeat
+#러닝음악 #아침러닝 #러닝플리 #케이던스180
+#playlist #플리 #wavvy #웨이비
+```
+
+### 태그 (업로드 시)
+```
+running music, 180 cadence, running playlist, instrumental, indie rock, breakbeat, jazzy jungle, guitar rock, 아침러닝, 러닝음악, 러닝플리, 케이던스180, 운동음악, playlist, 플리, wavvy, 웨이비
+```
+
+### 고정 댓글
+```
+아침 7시, 첫 발을 내딛을 때의 공기를 담았어요. 🏃
+20곡을 두 번 이어 들으며 자기 페이스로 달려보세요.
+어떤 곡에서 발걸음이 가장 가벼워지나요?
+```
+
+## Packaging Contract
+
+- Playlist repeat: 2
+- Thumbnail layout: `input/thumbnail-layout.json`
+
+## Final Selected Audio Sources
+
+확정된 20개 무가사 음원의 번호·Suno 후보 ID·WAV SHA-256·실제 첫 재생 시작 시각은 `input/final-selected-audio-sources.json`에 기록한다. 원문 프롬프트가 생성 기록의 후보 ID 및 해시와 직접 연결된 곡만 `confirmed`로 표기한다. 연결을 확인하지 못한 곡은 `unverified`로 두고, Suno 화면에서 관측한 스타일 설명이 있으면 원문 프롬프트와 구별해 보존한다. 처음 만든 보컬 txt는 이력이며 최종 무가사 음원의 가사나 출처가 아니다. 이 시리즈에는 노랫말 자막을 만들지 않는다.
 
 ## Series direction
 
-- **Time and use:** 07:00, 젠이 실제로 운동하는 시간. 20곡을 이어 들으며 달리는 아침 플레이리스트.
+- **Time and use:** 07:00, 젠이 실제로 운동하는 시간. 20곡을 이어 들으며 달리는 아침 플레이리스트. 본편은 선택한 20곡을 번호순으로 2회 반복해 총 40개 재생 구간으로 구성한다(젠 2026-10-12 확인). 곡 사이는 0.8초 오디오 전환이며 예상 길이는 약 1시간 56분이다.
 - **Music (current source direction):** 보존 7곡, 1차에서 남긴 8곡, 2차 11B, 젠이 직접 다시 만든 06·09·10, 현재 작업공간의 12를 선택했다. 1차의 4 jungle / 4 drill / 5 rock과 2차 06·09·10의 장르는 생성 당시 이력이다. 젠의 직접 재제작 06은 기존 20과 같은 화면 스타일 설명의 기타 록, 09는 기존 17과 같은 기타 중심 재지 정글, 10은 보존 04와 같은 피아노 중심 인디 브레이크비트다. 세 곡의 채택은 확정됐지만 STYLE 입력 원문은 확인하지 않았다. 16은 젠이 남긴 선택이며 이번 재생성 대상이 아니다.
-- **Pulse and acceptance:** 교체곡 STYLE의 첫 문장부터 180 BPM 지속과 명확한 4분음표 러닝 박자를 지시한다. 최종 채택 기준은 보존 7곡을 포함해 실제 음원이 전 구간 180 BPM의 러닝 박자를 유지하는지 확인하는 것이다. 템포가 바뀌거나 90 BPM 하프타임으로 느껴지는 후보는 채택하지 않는다. 프롬프트는 실제 음원의 BPM 증거가 아니며, 미측정 상태를 수치 PASS로 기록하지 않는다. 보존 7곡을 남기겠다는 젠의 선택은 확정되었지만 그 일곱 음원의 수치 템포 확인은 아직 미완료다. 2026-10-03 당시 전곡 청취 PASS도 현재 재구성의 오디오 판정으로 소급하지 않는다.
+- **Pulse and acceptance (2026-10-12 decision):** 교체곡 STYLE에는 180 BPM 지속과 명확한 4분음표 러닝 박자를 지시했지만, 이는 제작 당시 목표였고 실제 음원의 수치 증거는 아니다. 젠은 확정한 20곡을 유지하기로 결정했다. 젠이 이 곡들로 20~30분 달렸을 때 평균 케이던스가 대략 180이었다는 사용 경험을 근거로 썸네일의 `180 BPM`을 목표 러닝 케이던스로 쓴다. 일부 곡의 탐색 측정치는 약 174~192 BPM이어서 전곡이 실제로 정확히 180 BPM이라고 주장하지 않는다. 템포 차이만으로 이미 확정한 곡을 다시 만들거나 보정하지 않는다. 음악적 결함이나 편집 결함의 QC는 별도로 한다.
 - **Final vocal direction (2026-10-03 listening correction):** Instrumental. 젠 heard the initial vocal versions and chose to remove lyrics for the running playlist. The 20 lyric-bearing txt files and 40 initial candidate IDs remain as generation history; they are not final instrumental sources. 젠의 “2 완료” 신호 후 **03·05·07·08·11·12·15·16·18·20**의 생존 원본 ID를 확인하고 각각 Suno `... → Remix → Cover`에서 가사 칸을 `[Instrumental]` 한 줄로 바꿔 요청했다. 01은 이 Cover 요청에 포함되지 않았다. 젠은 이 10곡의 Cover 결과를 청취 PASS했으며, 기계적 무가사 분석은 하지 않았다.
 - **Duration target:** about three minutes or longer per song. 현재 보존된 03은 2:24 표시/약 2:23.72 WAV로 이 목표보다 짧지만 젠이 남기기로 정했다. 2026-10-03 선택됐던 옛 01의 표시 길이 2:41은 역사 기록이고, 새 01 후보 두 개는 UI에 각각 2:59로 표시된다. 1차 후보 26개의 UI 표시 길이는 `input/redirection-review-2026-10-06.md`, 2차 후보 8개는 `input/redirection-round2-review-2026-10-06.md`에 기록했다. 2차 11A는 3:00 입력에도 2:59로 표시됐고, 현재 남은 11B는 3:00이다. 젠의 직접 재제작 06·09·10은 각각 화면상 2:04·3:22·2:25다. 길이 목표는 전곡 통과로 판정하지 않는다.
 - **03 stronger remake:** After the 20-song cleanup, 젠 requested a more powerful 03 only. Its second A/B was judged “느려.” The third prompt added a continuous motorik drum pulse. 젠은 A (`fad9fc49-9b35-4f10-aa76-f62ddd9cf10c`, 화면 2:24)를 남기고 B를 삭제했다. The earlier 03 Cover and second remake remain historical.
@@ -31,7 +144,7 @@ Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기�
 
 - [Paw&Power — 180 BPM Running Music Mix 1Hour Metronome Synced 042026](https://youtu.be/A3psJJwkdSY): use the idea of a sustained, step-aligned 180 BPM pulse.
 - [달리런 — Playlist 180BPM 러닝 플리](https://youtu.be/u2eyM-tS6QI): use the idea of a 20-track, continuously motivating running set, with firm bass and some broad hooks. Its YouTube description emphasizes a club setting; 젠 chose a brighter morning sound with medium-strength moments for this series.
-- These directions come from the videos' published metadata and descriptions, checked 2026-10-03. Direct numerical BPM analysis was not performed. 2026-10-03 당시 젠의 청취 판정은 역사 기록이며, 현행 교체 후보와 보존곡의 180 BPM 지속 여부는 새로 확인해야 한다. Do not copy melody, distinctive arrangement, or lyrics from either reference.
+- These directions come from the videos' published metadata and descriptions, checked 2026-10-03. 2026-10-03 당시 수치 BPM 분석은 없었다. 2026-10-12 탐색 측정과 젠의 실제 러닝 경험 및 현행 채택 결정은 위의 현재 기준에 기록했다. Do not copy melody, distinctive arrangement, or lyrics from either reference.
 
 ## Initial vocal source arc (historical)
 
@@ -62,8 +175,8 @@ The following titles and lanes describe the initial submissions. The lyric angle
 
 ## Production status
 
-Initial vocal txt: 20/20, with track-prompt and full-song lyric-record gates PASS. These apply to the first generation only. Instrumental remake txt: 12/12 in `input/remakes/`, with track-prompt gates PASS. First-pass, remake, and Cover IDs remain in their historical manifests. 젠이 20곡을 한 번호당 한 곡으로 정리한 뒤 Suno `[07:00]`을 새로고침해 20곡과 고유 ID를 대조했다. `input/suno-selected.json` is the selected-song map, including 01·02 Covers made outside this agent's recorded submissions. 젠의 전곡 청취 및 180 BPM 체감 PASS는 기록했다. Numerical BPM and automated no-vocal checks were not performed.
+Initial vocal txt: 20/20, with track-prompt and full-song lyric-record gates PASS. These apply to the first generation only. Instrumental remake txt: 12/12 in `input/remakes/`, with track-prompt gates PASS. First-pass, remake, and Cover IDs remain in their historical manifests. 젠이 20곡을 한 번호당 한 곡으로 정리한 뒤 Suno `[07:00]`을 새로고침해 20곡과 고유 ID를 대조했다. `input/suno-selected.json`은 당시 선택의 역사 기록이고, 현재 선택은 `input/suno-final-selection-2026-10-12.json`이다. 젠의 전곡 청취 및 약 180 케이던스 체감 PASS를 기록했다. 일부 구간의 탐색적 박자 측정은 했지만 전곡·전 구간 정확한 BPM 인증이나 기계적 무가사 검사는 하지 않았다.
 
-The Suno download dialog displayed 7 remaining Pro downloads on 2026-10-03 before that historical download pass. 젠이 당시 01을 MP3/M4A로 받았고, Codex가 당시 선택 ID를 대조해 02–07을 WAV로 다운로드했다. 2026-10-12에는 현재 선택된 20곡을 모두 WAV로 수집했고, 옛 05·06·07은 이력 폴더로 분리했다. 현재 20개 파일은 48 kHz·16-bit PCM·stereo WAV이며 Downloads 원본과 시리즈 복사본의 SHA-256이 일치한다. Suno's [download policy](https://help.suno.com/en/articles/13926209) counts each distinct song once, regardless of format. A browser-stream pulse probe of an earlier 20B candidate at 30–42 seconds suggested a roughly 92–94 BPM low-frequency pulse; that short window was inconclusive and the candidate is not the selected 20. Automated tempo probing stopped after two Aside navigation/context failures. 젠은 최종 20곡을 채택했지만, 기술적으로 측정한 BPM 값은 없다.
+The Suno download dialog displayed 7 remaining Pro downloads on 2026-10-03 before that historical download pass. 젠이 당시 01을 MP3/M4A로 받았고, Codex가 당시 선택 ID를 대조해 02–07을 WAV로 다운로드했다. 2026-10-12에는 현재 선택된 20곡을 모두 WAV로 수집했고, 옛 05·06·07은 이력 폴더로 분리했다. 현재 20개 파일은 48 kHz·16-bit PCM·stereo WAV이며 Downloads 원본과 시리즈 복사본의 SHA-256이 일치한다. Suno's [download policy](https://help.suno.com/en/articles/13926209) counts each distinct song once, regardless of format. A browser-stream pulse probe of an earlier 20B candidate at 30–42 seconds suggested a roughly 92–94 BPM low-frequency pulse; that short window was inconclusive and the candidate is not the selected 20. 그 당시 탐색은 Aside 탐색 실패 두 번 뒤 중단했다. 2026-10-12에는 현재 선택 중 일부 WAV 구간을 탐색적으로 측정해 약 174~192 BPM 추정치를 기록했으나, 전곡 정확한 박자 인증으로 해석하지 않는다.
 
-The ten agent-created Covers are recorded separately from the initial 40 and later remakes. 2026-10-03 젠은 당시 01–20 전체를 번호별로 청취 PASS했고 Suno에는 각 번호 한 곡씩만 남겼다. 그날의 20개 ID는 `input/suno-selected.json`에 고정한 역사 기록이다. 당시 청취 러닝감 PASS는 수치 BPM 측정이 아니다. 2026-10-06 재구성 뒤 보존 번호는 02·03·04·13·14·18·19이다. 그날 새로 남긴 1차 아홉 곡 중 12는 2026-10-12에 현재 작업공간의 다른 음원으로 교체됐다. 옛 05·06·07 WAV는 이력으로 보존한다. 젠이 직접 만든 06·09·10은 2026-10-12 최종 채택했다. 실제 전 구간 180 BPM 확인 전에는 Final Track Sources로 올리지 않는다.
+The ten agent-created Covers are recorded separately from the initial 40 and later remakes. 2026-10-03 젠은 당시 01–20 전체를 번호별로 청취 PASS했고 Suno에는 각 번호 한 곡씩만 남겼다. 그날의 20개 ID는 `input/suno-selected.json`에 고정한 역사 기록이다. 당시 청취 러닝감 PASS는 수치 BPM 측정이 아니다. 2026-10-06 재구성 뒤 보존 번호는 02·03·04·13·14·18·19이다. 그날 새로 남긴 1차 아홉 곡 중 12는 2026-10-12에 현재 작업공간의 다른 음원으로 교체됐다. 옛 05·06·07 WAV는 이력으로 보존한다. 젠이 직접 만든 06·09·10은 2026-10-12 최종 채택했다. 최종 출처는 옛 보컬 txt를 복사하는 방식 대신 `Final Selected Audio Sources`의 ID·해시·원문 확인 상태로 구분해 기록한다.

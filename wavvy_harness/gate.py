@@ -11,6 +11,9 @@ from typing import Any
 
 from .state import check_state
 from .source import parse_track_source_fields
+from .packaging import check_thumbnail_layout, packaging_contract
+from .upload_copy import check_upload_copy
+from .selected_audio import check_selected_audio
 
 LYRIC_SKILL_REQUIRED_FILES = {
     "skill": Path("skills/wavvy-lyricist/SKILL.md"),
@@ -798,8 +801,27 @@ def run_gate(
     state_result = check_state(series_path, repo_root, {"phase": stage.replace("-", "_")})
     state = state_result["state"]
     artifacts = state["artifact_status"]
+    selected_opt_in, selected_errors = check_selected_audio(series_path)
+    if selected_opt_in:
+        checks.append(_check("final_selected_audio_sources", not selected_errors, "; ".join(selected_errors)))
+        blockers.extend(selected_errors)
     warnings.extend(state_result.get("warnings", []))
     blockers.extend(state_result.get("blockers", []))
+    contract, contract_errors = packaging_contract(series_path)
+    blockers.extend(contract_errors)
+    if contract is not None:
+        try:
+            report = json.loads((series_path / "output" / "report.json").read_text(encoding="utf-8"))
+            reported_repeat = report.get("processing_params", {}).get("repeat")
+        except (OSError, ValueError, TypeError, AttributeError):
+            reported_repeat = None
+        repeat_ok = type(reported_repeat) is int and reported_repeat == contract["repeat"]
+        checks.append(_check("playlist_repeat_contract", repeat_ok, f"required={contract['repeat']} report={reported_repeat}"))
+        if not repeat_ok:
+            blockers.append(f"report.json playlist repeat must equal concept.md Packaging Contract ({contract['repeat']})")
+        layout_checks, layout_errors = check_thumbnail_layout(series_path, repo_root, contract["layout_path"])
+        checks.extend(layout_checks)
+        blockers.extend(layout_errors)
     available_audio_files = artifacts.get("available_audio_files", artifacts.get("audio_files", 0))
     audio_source = artifacts.get("audio_source", "input_tracks")
 
@@ -807,7 +829,7 @@ def run_gate(
         ("concept_md_present", artifacts["concept_md"] == "present"),
         (
             "final_track_sources_or_source_map_present",
-            artifacts["final_track_sources"] == "present" or artifacts.get("source_map") == "present",
+            artifacts["final_track_sources"] == "present" or artifacts.get("source_map") == "present" or (selected_opt_in and not selected_errors),
         ),
         (
             "report_json_present_or_source_map_ready",
@@ -821,7 +843,7 @@ def run_gate(
         name, passed, *detail = item
         checks.append(_check(name, bool(passed), detail[0] if detail else ""))
 
-    if artifacts["final_track_sources_count"] and artifacts["report_tracks"]:
+    if not selected_opt_in and artifacts["final_track_sources_count"] and artifacts["report_tracks"]:
         counts_match = artifacts["final_track_sources_count"] == artifacts["report_tracks"]
         checks.append(
             _check(
@@ -854,6 +876,14 @@ def run_gate(
                 blockers.append("output/final.mkv missing audio stream")
 
     if stage == "upload-ready":
+        try:
+            upload_report = json.loads((series_path / "output" / "report.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            upload_report = {}
+        if contract is not None:
+            _, upload_copy_checks, upload_copy_errors = check_upload_copy(series_path, upload_report, require_4k=True)
+            checks.extend(upload_copy_checks)
+            blockers.extend(upload_copy_errors)
         upload_completed = artifacts["youtube_upload"] == "completed"
         final_mkv = series_path / "output" / "final.mkv"
         upload_csv = series_path / "output" / "upload.csv"
@@ -882,7 +912,7 @@ def run_gate(
             if not has_audio:
                 blockers.append("output/final.mkv missing audio stream")
         has_subtitle = artifacts["subtitle_txt"] == "present" or artifacts["subtitle_srt"] == "present"
-        checks.append(_check("subtitle_artifact_present", has_subtitle))
+        checks.append(_check("subtitle_artifact_present_or_instrumental", has_subtitle or (selected_opt_in and not selected_errors)))
 
     if stage == "uploaded":
         checks.append(_check("youtube_upload_completed", artifacts["youtube_upload"] == "completed"))

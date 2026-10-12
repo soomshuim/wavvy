@@ -1,11 +1,35 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-12 17:29:26
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 07:00 러닝 영상 20곡×2회 공개와 4K 처리 완료를 Studio에서 확인했다. 기존 시간대 영상 14개 제목, 17:00 설명, 시리즈 문서와 로컬 업로드 정보를 현행화했다. 06:00·20:00은 비공개 상태를 유지했다.
+Next-TODO: 현재 요청 범위에 남은 일 없음. 07:00 최종 무가사 음원 6개의 원본 프롬프트는 확인되지 않은 상태로 보존한다.
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-12
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 젠이 07:00 최종 음원 20곡을 번호별로 정했다. 현행 12는 10월 6일 선택과 다른 현재 작업공간 음원이다. 현재 선택 ID와 일치하는 WAV 20개를 수집·검증했고 옛 05·06·07 WAV를 해시와 함께 이력으로 분리했다. state revision 52·track_source_draft; Final Track Sources·렌더·업로드 없음. 강변 러닝 배경 초안을 보여줬고 젠은 실제 장면이 정확히 07:00일 필요는 없다고 했다. 구도 승인 여부는 답변 대기 중이다.
-Verification: doctor·state check·20곡 ID/해시/형식 대조·diff check PASS. validate는 20 WAV를 모두 인식했으나 loop·thumb·YouTube metadata 부재로 실패했다. 실제 전 구간 180 BPM과 음악적 품질은 미검증이다.
-Next-TODO: 젠의 강변 러닝 구도 결정 반영 → 승인된 경우 최종 배경·썸네일 제작. 실제 러닝 박자·품질 검증 후 Final Track Sources 단계 판단. 업로드는 별도 명시적 -wavvy-release에서만.
+Summary: 07:00의 확정 WAV 20개를 번호순 2회 반복해 1:56:06 4K H.264/AAC 영상을 만들고 Wavvy24에 업로드했다: https://youtu.be/DU_vBuIdMG4. YouTube Studio 확인 대화상자에서 2026-10-12 17:00 서울(GMT+09:00) 공개 예약을 확인했고 콘텐츠 목록은 `예약됨`이었다. 승인 썸네일·40개 챕터·태그를 반영했다. 180 BPM은 목표 케이던스 표기다. 선택 무가사 음원 20개 출처 중 원문 14개 confirmed, 6개 unverified로 기록하고 옛 보컬 txt의 잘못된 승격을 차단했다.
+Title: Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 2Hour | Wavvy | 07:00 (YouTube Studio 저장 확인; 실제 길이 1:56:06)
+Other-title sync: 젠이 승인한 기존 시간대 영상 14개의 제목을 Studio에 저장하고 시리즈 문서 14개와 존재하는 로컬 업로드 CSV 5개의 제목을 맞췄다. 17:00 최종 제목은 `Playlist | 가을 햇살 가득한 카페 느낌 어쿠스틱 플리 🍂 | ACOUSTIC R&B · INDIE ROCK | 산책 · 일상 | Wavvy | 17:00`이다. 젠이 보낸 17:00 설명도 Studio·시리즈 문서·로컬 CSV에 반영했다. 06:00·20:00은 Studio에서 비공개 유지, 17:00은 공개로 확인했다. 07:00은 약 17:20 KST 재조회에서 공개·4K 처리 완료로 확인했다. 전체 목록은 `.ai/plans/2026-10-12-youtube-title-order.md`에 있다.
+Verification: `verify-release`, `uploaded` gate, state check, 62개 하네스 테스트 PASS. 썸네일 로고·Pacifico 07:00·Cadence/180 BPM 위치와 반복 2회·업로드 MP4 형식을 검사한다. 격리 Astra/xhigh 최종 검토는 CLEAN(Critical/High 0)이고, 검토자가 MP4의 40개 구간을 원본 WAV와 직접 대조했다. state revision 55·uploaded. 16:08 KST Studio 세부정보는 4K 처리 중, 소유권 주장 개요는 주장 없음으로 표시됐다. 약 17:20 KST Studio 세부정보와 새로 불러온 목록에서 공개·4K 처리 완료를 확인했다.
+Next-TODO: 07:00 영상은 공개·4K 처리 완료가 확인됐다. 최종 무가사 음원의 소스 원문 6개는 확인되지 않은 상태로 유지한다. 옛 보컬 txt로 `finalize-upload`하지 않는다.
+Resume-Trigger: -wavvy
+Commits: 이번 작업은 프로젝트 미디어 런타임 규칙에 따라 commit/push 요청이 없어 미커밋 로컬 변경으로 남긴다. 대형 미디어는 로컬/Git 제외로 보존한다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-12
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 07:00 최종 음원 20곡을 번호별로 정했고 현재 선택 ID와 일치하는 WAV 20개를 수집·검증했다. 썸네일은 제공 사진을 픽셀 복사하지 않고 역분석해 만든 새벽 강변 러닝 장면으로 수정했다. 현재 사진은 은은한 보랏빛 하늘, 블랙 러닝복의 작은 라임색 Nike 스우시, 라임 양말, 흰색 신발의 작은 라임 포인트, 낮은 카메라를 살짝 내려다보는 메인 러너다. `input/thumb.jpg`에는 264px 너비 Wavvy 로고를 왼쪽 위에 두고, Pacifico `07:00`을 로고 오른쪽에 06:00·11:00 가이드 비율로 배치했다. 왼쪽 아래에는 작은 `Cadence`와 헤드라인 오른쪽 끝까지 이어지는 1px 선, 두꺼운 `180 BPM`을 왼쪽 정렬로 뒀다. 젠이 썸네일을 승인했다. 승인 장면을 3840×2160 `input/loop.png`로 확대했다. state revision 53·track_source_draft; Final Track Sources·렌더·업로드 없음.
+Verification: 썸네일 1672×941 및 휴대폰 320×180을 시각 확인했다. 배경 3840×2160과 SHA-256 `75dac23e65f3908a126c5fa19bd01d854ef5ef1767585e23de3139634d346e89`를 확인했다. 원본 사진은 1672×941이므로 원생 4K가 아니다. 20곡 ID/해시/형식 대조는 기존 PASS다. 초반·중반·후반 탐색 측정에서는 일부 곡이 약 174~192 BPM으로 추정되어 엄격한 전 구간 180 BPM PASS를 기록할 수 없다. 실제 음악적 품질은 미검증이다.
+Next-TODO: 젠에게 확정곡 20곡 유지와 엄격한 전곡 180 BPM 중 우선순위를 질문했다. 결정 뒤 오디오 검증·Final Track Sources·패키징을 진행한다. YouTube metadata는 아직 없다. 업로드는 별도 명시적 -wavvy-release에서만.
 Resume-Trigger: -wavvy
 Commits: 07:00 선택·WAV 수집 기록 `d32383c`를 `origin/master`에 반영했다. 현재 WAV 20개와 과거 WAV 3개는 프로젝트 규칙에 따라 로컬 보존한다.
 ---

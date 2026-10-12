@@ -11,7 +11,8 @@ Purpose: 하네스가 문서/상태/산출물 충돌을 판정하기 위한 단�
 | Priority | File / Artifact | Owns | Notes |
 |---|---|---|---|
 | 1 | `.ai/state.json` | active series, phase, next action, local artifact availability, current authoritative doc pointers | Machine-readable resume contract. Written only by `python3 wavvy.py state --write`. |
-| 2 | `SERIES/[series]/concept.md` | per-series concept, YouTube metadata, Final Track Sources | Upload-final source archive after `finalize-upload`. |
+| 2 | `SERIES/[series]/concept.md` | per-series concept, YouTube metadata, Final Track Sources or Final Selected Audio Sources declaration | Vocal source archive after `finalize-upload`; instrumental selection archive must point to its manifest. |
+| 2a | `SERIES/[series]/input/final-selected-audio-sources.json` (explicit instrumental opt-in only) | selected candidate IDs, WAV hashes, actual starts, and raw-prompt confirmation status | Checked against final selection, download manifest, report, source evidence, and WAV files. Unknown raw prompts stay `unverified`. |
 | 3 | `SERIES/[series]/output/report.json` | technical track durations, hashes, processing params | Local generated artifact. Regeneratable by `pack`. |
 | 4 | `MASTER/ai/RUNTIME_RULES.md` | runtime hard constraints, media execution cautions, approval/safety rules | Entry files route here; workflow details still live in `WORKFLOWS.md` / `cli/SPEC.md`. |
 | 5 | `MASTER/MANAGER.md` | quality gate hierarchy | Conservative fail when no lower rule applies. |
@@ -31,9 +32,9 @@ Purpose: 하네스가 문서/상태/산출물 충돌을 판정하기 위한 단�
 |---|---|
 | `concept_draft` | Concept exists but source work is incomplete. |
 | `track_source_draft` | Track txt/source prompt work is active. |
-| `source_final` | Audio, metadata, report, and Final Track Sources are final enough for subtitle/upload prep. |
+| `source_final` | Audio, metadata, report, and verified Final Track Sources or explicitly declared instrumental Final Selected Audio Sources are final enough for upload prep. |
 | `render_final` | Rendered video and upload CSV exist and match the current report. |
-| `upload_ready` | Rendered video plus subtitle/upload support artifacts are present. |
+| `upload_ready` | Rendered video and upload support artifacts are present. Vocal releases need subtitles; a verified instrumental selection archive exempts lyric subtitles. |
 | `uploaded` | YouTube upload is complete. Large local render artifacts may be deleted if upload completion is recorded in `concept.md`. |
 
 `output/final.mkv` absence is a blocker for `render_final`. It is also a blocker for `upload_ready` unless upload completion is already recorded. It is not a blocker for `source_final` or `uploaded`.
@@ -77,7 +78,7 @@ The `authoritative_docs` list in state should mirror the current conflict-owner 
 `python3 wavvy.py state SERIES/[series] --check` should warn or fail on these conflicts:
 
 1. `concept.md` has `## Final Track Sources` but status/TODO text still says `draft`, `DRAFT`, or `Suno 생성/검수`.
-2. `.ai/state.json` phase is `source_final` or later but `concept.md` lacks `## Final Track Sources`.
+2. `.ai/state.json` phase is `source_final` or later but `concept.md` lacks both a valid `## Final Track Sources` archive and a verified instrumental `## Final Selected Audio Sources` archive.
 3. `.ai/state.json` next action mentions upload/render while render artifacts are missing:
    - warning for `source_final`
    - blocker for `render_final` / `upload_ready`

@@ -1,6 +1,6 @@
 # 20-00 — 💪 AFTER HOURS WORKOUT
 
-Playlist | 20:00 | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | Drill · Rage · Trap · Boombap | 헬스·러닝 BGM | Wavvy
+Playlist | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | Drill · Rage · Trap · Boombap | 헬스·러닝 BGM | Wavvy | 20:00
 
 ---
 
@@ -8,7 +8,7 @@ Playlist | 20:00 | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | 
 
 ### 제목
 ```
-Playlist | 20:00 | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | Drill · Rage · Trap · Boombap | 헬스·러닝 BGM | Wavvy
+Playlist | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | Drill · Rage · Trap · Boombap | 헬스·러닝 BGM | Wavvy | 20:00
 ```
 
 ### Context Mode

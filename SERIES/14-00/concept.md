@@ -20,7 +20,7 @@
 
 ### 제목
 ```
-Playlist | 14:00 | 햇살에 멍해지는 시간 ☀️ | SOFT R&B · R&B | 카페음악 · 휴식 | Wavvy
+Playlist | 햇살에 멍해지는 시간 ☀️ | SOFT R&B · R&B | 카페음악 · 휴식 | Wavvy | 14:00
 ```
 
 ### 설명

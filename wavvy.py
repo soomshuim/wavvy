@@ -30,6 +30,8 @@ import pandas as pd
 
 from wavvy_harness import build_state, check_state, load_state, run_doctor, run_gate, write_state
 from wavvy_harness.gate import run_lyrics_skill_gate
+from wavvy_harness.packaging import check_thumbnail_layout, packaging_contract
+from wavvy_harness.upload_copy import check_upload_copy
 from wavvy_harness.source import parse_track_source_fields
 from wavvy_harness.state import PHASES
 
@@ -1741,6 +1743,59 @@ def match_sources_to_report_tracks(sources: list[TrackSource], report_tracks: li
     return matched
 
 
+def verify_final_selection_source_provenance(
+    paths: ProjectPaths, report_tracks: list[dict], matched_sources: dict[int, TrackSource]
+) -> None:
+    """Do not archive same-title drafts as sources of later selected recordings."""
+    selection_paths = sorted(paths.input_dir.glob("suno-final-selection*.json"))
+    if not selection_paths:
+        return
+    if len(selection_paths) != 1:
+        raise FinalizeUploadError("Multiple final selection manifests; source provenance is ambiguous")
+    try:
+        selection = json.loads(selection_paths[0].read_text(encoding="utf-8"))
+        selected = selection["tracks"]
+        by_order = {item["order"]: item for item in selected}
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        raise FinalizeUploadError(f"Invalid final selection manifest: {error}") from error
+    report_orders = {int(track["order"]) for track in report_tracks}
+    if len(by_order) != len(selected) or set(by_order) != report_orders:
+        raise FinalizeUploadError("Final selection orders/count differ from report; cannot archive source txt")
+
+    selected_ids = {item.get("candidate_id") for item in selected}
+    source_bindings: dict[str, set[str]] = {}
+    for manifest_path in sorted(paths.input_dir.glob("suno-*.json")):
+        if manifest_path in selection_paths:
+            continue
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for item in manifest.get("tracks", []):
+            if not isinstance(item, dict) or not item.get("source_txt") or not item.get("source_sha256"):
+                continue
+            candidates = item.get("candidates", [])
+            for candidate in candidates if isinstance(candidates, list) else []:
+                candidate_id = candidate.get("id") if isinstance(candidate, dict) else candidate
+                if candidate_id in selected_ids:
+                    source_bindings.setdefault(candidate_id, set()).add(item["source_sha256"])
+
+    failures = []
+    for track in report_tracks:
+        order = int(track["order"])
+        selected_track = by_order[order]
+        candidate_id = selected_track.get("candidate_id")
+        source = matched_sources[order]
+        if selected_track.get("title") != track["title"] or not candidate_id:
+            failures.append(f"{order:02d}: final selection title/ID missing or differs")
+        elif candidate_id not in source_bindings:
+            failures.append(f"{order:02d}: selected candidate has no recorded source txt/hash")
+        elif source.sha256 not in source_bindings[candidate_id]:
+            failures.append(f"{order:02d}: matched txt is not the selected candidate's recorded source")
+    if failures:
+        raise FinalizeUploadError("Final selection source provenance mismatch: " + "; ".join(failures))
+
+
 def compute_track_timestamps(report: dict, report_tracks: list[dict]) -> tuple[dict[int, str], dict[int, str]]:
     """Compute first-pass and repeat-pass timestamps from report.json."""
     params = report.get("processing_params", {})
@@ -1987,10 +2042,38 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
         except (KeyError, TypeError, ValueError):
             errors.append(f"Track {order:02d}: manifest duration missing or invalid")
 
+    selection_paths = sorted((paths.base / "input").glob("suno-final-selection*.json"))
     candidate_path = paths.base / "input" / "suno-candidates.json"
-    if not candidate_path.exists() and any(item.get("candidate_id") for item in manifest_tracks):
+    if len(selection_paths) > 1:
+        errors.append("Multiple suno-final-selection manifests; current selection is ambiguous")
+    elif selection_paths:
+        selection_path = selection_paths[0]
+        try:
+            selection = json.loads(selection_path.read_text(encoding="utf-8"))
+            if selection.get("workspace") != manifest.get("workspace"):
+                errors.append("Final Suno selection workspace differs from download manifest")
+            selected_tracks = selection["tracks"]
+            if not isinstance(selected_tracks, list):
+                raise TypeError("tracks must be a list")
+            selected_by_order = {item["order"]: item for item in selected_tracks}
+            if len(selected_by_order) != len(selected_tracks) or set(selected_by_order) != {int(track["order"]) for track in tracks}:
+                errors.append("Final Suno selection orders/count differ from report")
+            selected_ids = [item.get("candidate_id") for item in selected_tracks]
+            if any(not candidate_id for candidate_id in selected_ids) or len(set(selected_ids)) != len(selected_ids):
+                errors.append("Final Suno selection IDs are missing or duplicated")
+            for track in tracks:
+                order = int(track["order"])
+                selected = selected_by_order.get(order, {})
+                manifest_item = by_order.get(order, {})
+                if (selected.get("title") != track["title"]
+                        or not selected.get("candidate_id")
+                        or selected.get("candidate_id") != manifest_item.get("candidate_id")):
+                    errors.append(f"Track {order:02d}: final Suno selection ID/title differs from manifest/report")
+        except (ValueError, OSError, KeyError, TypeError, AttributeError) as error:
+            errors.append(f"Invalid {selection_path.name}: {error}")
+    elif not candidate_path.exists() and any(item.get("candidate_id") for item in manifest_tracks):
         errors.append("Missing suno-candidates.json for selected candidate IDs")
-    if candidate_path.exists():
+    elif candidate_path.exists():
         try:
             candidates = json.loads(candidate_path.read_text(encoding="utf-8"))
             if candidates.get("workspace") != manifest.get("workspace"):
@@ -2031,6 +2114,11 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
         for field in ("title", "description", "tags"):
             if not metadata.get(field) or upload_rows[0].get(field) != metadata.get(field):
                 errors.append(f"YouTube {field} differs between concept.md and upload.csv")
+        contract, contract_errors = packaging_contract(paths.base)
+        errors.extend(contract_errors)
+        if contract is not None:
+            _, _, upload_copy_errors = check_upload_copy(paths.base, report, require_4k=True)
+            errors.extend(upload_copy_errors)
     description = metadata.get("description", "")
     chapters = re.findall(r"(?m)^[^\n]*?(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2})\.\s+([^\n]+)$", description)
     first, repeated = compute_track_timestamps(report, tracks)
@@ -2088,6 +2176,7 @@ def finalize_upload_sources(
     report, report_tracks = load_finalize_report(paths)
     sources, source_origin = collect_track_sources(paths, restore_from)
     matched_sources = match_sources_to_report_tracks(sources, report_tracks)
+    verify_final_selection_source_provenance(paths, report_tracks, matched_sources)
 
     concept_text = concept_path.read_text(encoding="utf-8")
     upload_timestamps = extract_upload_tracklist_timestamps(concept_text)
@@ -2692,6 +2781,17 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
 
     # Update params
     repeat = config['repeat']
+    contract, contract_errors = packaging_contract(paths.base)
+    if contract_errors:
+        raise click.ClickException("; ".join(contract_errors))
+    if contract is not None:
+        if repeat != contract['repeat']:
+            raise click.ClickException(
+                f"Packaging contract requires --repeat {contract['repeat']}; requested {repeat}"
+            )
+        _, layout_errors = check_thumbnail_layout(paths.base, _resolve_repo_root(paths.base), contract['layout_path'])
+        if layout_errors:
+            raise click.ClickException("; ".join(layout_errors))
     use_xfade = config['video_xfade']
     params = {'lufs': lufs, 'tp': tp, 'fade': fade, 'repeat': repeat, 'use_xfade': use_xfade}
 

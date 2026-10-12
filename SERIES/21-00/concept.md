@@ -12,7 +12,7 @@
 
 ### 제목
 ```
-Playlist | 21:00 | 서울의 밤을 걷는 중 🌙 | CITY POP · NEO-SOUL | 밤산책 · 뉴트로 | Wavvy
+Playlist | 서울의 밤 🌙 | CITY POP · NEO-SOUL | 밤산책 · 뉴트로 | Wavvy | 21:00
 ```
 
 ### 설명

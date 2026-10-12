@@ -18,6 +18,7 @@ REQUIRED_MODULES = {
     "ffmpeg-python": "ffmpeg",
     "pandas": "pandas",
     "ffmpeg-normalize": "ffmpeg_normalize",
+    "Pillow": "PIL",
 }
 
 REQUIRED_BINARIES = ["ffmpeg", "ffprobe", "git"]
