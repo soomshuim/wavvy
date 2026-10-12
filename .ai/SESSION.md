@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-06 (07:00 재구성 기록 저장·다운로드 이후 작업 보류)
+> Last updated: 2026-10-12 (07:00 최종 선택 20곡·WAV 수집, 배경 구도 결정 대기)
 
 ---
+
+## 2026-10-12 [CDX] 07:00 제작 재개
+- 젠이 06·09·10 직접 재제작곡과 현재 `[07:00]`에 보이는 12 「바람이 바뀌어」를 최종 채택했다. 현행 12 ID `38ac63e8-804a-47a2-9545-a07373d0b319`는 10월 6일 선택 B와 다르며, 현행 번호별 20개 고유 ID는 `SERIES/07-00/input/suno-final-selection-2026-10-12.json`에 고정했다.
+- 확정 ID와 일치하는 WAV 20개를 `SERIES/07-00/input/tracks/`에 모았다. `input/download-manifest.json`의 번호·ID·파일 SHA-256·48 kHz/16-bit PCM/stereo·길이를 전부 대조했고 합계는 3498.76초(약 58:19)다. 과거 05·06·07 WAV는 원본 해시를 보존해 `input/tracks/history/2026-10-03/`으로 분리하고 `input/historical-downloads-2026-10-03.json`에 기록했다. 다운로드 때 자동 생성된 M4A는 Downloads에 그대로 둔다.
+- `.ai/state.json` revision 52는 `track_source_draft`이며 audio_files 20이다. `doctor`·state check·manifest 대조·diff check PASS. `validate SERIES/07-00`은 20곡 오디오를 모두 통과시키지만 최종 배경·썸네일·YouTube 메타데이터 부재로 아직 실패한다. 180 BPM 전 구간 실측과 음악적 품질 판정은 완료하지 않았다. 짧은 구간의 탐색성 박자 분석은 90/180 등 복수 주기를 보여 확정 근거로 쓰지 않는다. Final Track Sources·렌더·업로드는 아직 없다.
+- 강변 러닝 배경 초안은 `SERIES/07-00/input/art-draft-2026-10-12.png`다. 젠은 배경이 정확히 07:00일 필요는 없다고 했으며, 현재 구도의 최종 승인 여부를 묻는 중이다. 승인 전 최종 4K 배경·썸네일은 만들지 않는다. 업로드에는 별도 `-wavvy-release` 호출이 필요하다.
 
 ## 2026-10-06 [CDX] -record: 07:00 재구성 기록 저장·다운로드 이후 보류
 - 현재 .ai/state.json은 active 07-00, revision 49, `track_source_draft`다. 기존 7곡 02·03·04·13·14·18·19, 1차 선택 9곡 01·05·07·08·12·15·16·17·20, 2차 11B `ee96c338-2a08-4248-827d-82fc44da3de6`(3:00)를 보존한다. 젠이 직접 다시 만든 06 `6155c557-6cc3-448d-a38c-e608401624fc`(2:04), 09 `54688321-7ea2-479f-8e5e-0bf7c94bd2b3`(3:22), 10 `a851a574-8836-40dd-8616-ee6549d3e4a1`(2:25)은 기본 `My Workspace`의 채택 미정 후보이며 `[07:00]`에는 없다. 과거 10B `9d950463-0850-400a-a88f-3a9804d25e91` 삭제는 젠 보고 기준이고 UI 재조회는 하지 않았다.

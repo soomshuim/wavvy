@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-12
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 07:00 최종 음원 20곡을 번호별로 정했다. 현행 12는 10월 6일 선택과 다른 현재 작업공간 음원이다. 현재 선택 ID와 일치하는 WAV 20개를 수집·검증했고 옛 05·06·07 WAV를 해시와 함께 이력으로 분리했다. state revision 52·track_source_draft; Final Track Sources·렌더·업로드 없음. 강변 러닝 배경 초안을 보여줬고 젠은 실제 장면이 정확히 07:00일 필요는 없다고 했다. 구도 승인 여부는 답변 대기 중이다.
+Verification: doctor·state check·20곡 ID/해시/형식 대조·diff check PASS. validate는 20 WAV를 모두 인식했으나 loop·thumb·YouTube metadata 부재로 실패했다. 실제 전 구간 180 BPM과 음악적 품질은 미검증이다.
+Next-TODO: 젠의 강변 러닝 구도 결정 반영 → 승인된 경우 최종 배경·썸네일 제작. 실제 러닝 박자·품질 검증 후 Final Track Sources 단계 판단. 업로드는 별도 명시적 -wavvy-release에서만.
+Resume-Trigger: -wavvy
+Commits: 현재 미커밋 로컬 변경. 세션 종료 전 현행 규칙에 맞춰 기록·지속화 필요.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-06 16:59:58
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
