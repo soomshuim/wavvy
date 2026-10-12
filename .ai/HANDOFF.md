@@ -7,7 +7,7 @@ Summary: 젠이 07:00 최종 음원 20곡을 번호별로 정했다. 현행 12�
 Verification: doctor·state check·20곡 ID/해시/형식 대조·diff check PASS. validate는 20 WAV를 모두 인식했으나 loop·thumb·YouTube metadata 부재로 실패했다. 실제 전 구간 180 BPM과 음악적 품질은 미검증이다.
 Next-TODO: 젠의 강변 러닝 구도 결정 반영 → 승인된 경우 최종 배경·썸네일 제작. 실제 러닝 박자·품질 검증 후 Final Track Sources 단계 판단. 업로드는 별도 명시적 -wavvy-release에서만.
 Resume-Trigger: -wavvy
-Commits: 현재 미커밋 로컬 변경. 세션 종료 전 현행 규칙에 맞춰 기록·지속화 필요.
+Commits: 07:00 선택·WAV 수집 기록 `d32383c`를 `origin/master`에 반영했다. 현재 WAV 20개와 과거 WAV 3개는 프로젝트 규칙에 따라 로컬 보존한다.
 ---
 
 ---
