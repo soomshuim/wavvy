@@ -1,8 +1,12 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-12 (07:00 20곡×2회 영상 공개·4K 처리 완료 확인, 기존 제목 현행화)
+> Last updated: 2026-10-12 (07:00 공개 영상 고정 댓글 게시·재조회 확인)
 
 ---
+
+## 2026-10-12 [CDX] 07:00 공개 영상 고정 댓글
+- 앞선 `-record`에서 07:00 댓글 후속 작업이 빠진 것을 확인했다. 공개 시청 페이지는 댓글 0개였고, `SERIES/07-00/concept.md`의 문구를 Wavvy24 계정으로 한 번 게시했다.
+- 댓글 주소: https://www.youtube.com/watch?v=DU_vBuIdMG4&lc=Ugz4aOucarXn6_sgILZ4AaABAg. Aside YouTube 조회에서 원문과 작성자를 확인했고, 시청 페이지를 새로 불러온 후 댓글 1개와 `@wavvy24님이 고정함`을 확인했다(약 18:22 KST).
 
 ## 2026-10-12 [CDX] -record: 07:00 공개·기존 제목 현행화
 - 07:00 영상은 20곡을 두 번 반복한 1:56:06 러닝 플리로 공개됐고 YouTube Studio에서 4K 처리 완료를 확인했다.
