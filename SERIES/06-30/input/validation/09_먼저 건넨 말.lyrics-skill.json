@@ -1,0 +1,281 @@
+{
+  "schema": "wavvy.lyrics_skill_gate.v1",
+  "stage": "lyrics-review",
+  "result": "PASS",
+  "scope": "ARTIFACT_RECORD",
+  "quality_status": "REVIEW_RECORD_CHECKED",
+  "draft_scope": "full-song",
+  "full_song_ready": true,
+  "planned_duration_estimate_seconds": 182.1,
+  "reviewed_source_sha256": "6d00b50c4c328043f29381a63f9de50370cb7fcecb082c124ed31376adde316f",
+  "series": "SERIES/06-30",
+  "artifact": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md",
+  "mode": "full-lyric-draft",
+  "checks": [
+    {
+      "name": "skill_file_present",
+      "status": "PASS",
+      "detail": "skills/wavvy-lyricist/SKILL.md",
+      "path": "/Users/zenkim_office/Project/wavvy/skills/wavvy-lyricist/SKILL.md"
+    },
+    {
+      "name": "patterns_file_present",
+      "status": "PASS",
+      "detail": "skills/wavvy-lyricist/references/patterns.md",
+      "path": "/Users/zenkim_office/Project/wavvy/skills/wavvy-lyricist/references/patterns.md"
+    },
+    {
+      "name": "spec_file_present",
+      "status": "PASS",
+      "detail": "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+      "path": "/Users/zenkim_office/Project/wavvy/MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md"
+    },
+    {
+      "name": "skill_front_matter_name",
+      "status": "PASS",
+      "detail": "name: wavvy-lyricist"
+    },
+    {
+      "name": "skill_names_mode_full-lyric-draft",
+      "status": "PASS",
+      "detail": "full-lyric-draft"
+    },
+    {
+      "name": "skill_names_mode_suno-prompt-only",
+      "status": "PASS",
+      "detail": "suno-prompt-only"
+    },
+    {
+      "name": "skill_names_mode_review-only",
+      "status": "PASS",
+      "detail": "review-only"
+    },
+    {
+      "name": "skill_output_section_source_map",
+      "status": "PASS",
+      "detail": "Source Map"
+    },
+    {
+      "name": "skill_output_section_constraint_freeze",
+      "status": "PASS",
+      "detail": "Constraint Freeze"
+    },
+    {
+      "name": "skill_output_section_lyric_strategy",
+      "status": "PASS",
+      "detail": "Lyric Strategy"
+    },
+    {
+      "name": "skill_output_section_draft",
+      "status": "PASS",
+      "detail": "Draft"
+    },
+    {
+      "name": "skill_output_section_self-gate",
+      "status": "PASS",
+      "detail": "Self-Gate"
+    },
+    {
+      "name": "skill_output_section_findings",
+      "status": "PASS",
+      "detail": "Findings"
+    },
+    {
+      "name": "skill_output_section_verdict",
+      "status": "PASS",
+      "detail": "Verdict"
+    },
+    {
+      "name": "skill_references_WAVVY_LYRIC_SKILL_SPEC.md",
+      "status": "PASS",
+      "detail": "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md"
+    },
+    {
+      "name": "skill_references_patterns.md",
+      "status": "PASS",
+      "detail": "skills/wavvy-lyricist/references/patterns.md"
+    },
+    {
+      "name": "patterns_external_lyric_storage_boundary",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "spec_defines_self_gate_contract",
+      "status": "PASS",
+      "detail": "Self-Gate Contract"
+    },
+    {
+      "name": "spec_defines_harness_acceptance_baseline",
+      "status": "PASS",
+      "detail": "Harness Acceptance Baseline"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/06-30/concept.md",
+      "path": "SERIES/06-30/concept.md"
+    },
+    {
+      "name": "constraint_freeze_mode_exactly_once",
+      "status": "PASS",
+      "detail": "full-lyric-draft=1, suno-prompt-only=0, review-only=0",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "required_output_sections_in_order",
+      "status": "PASS",
+      "detail": "Source Map > Constraint Freeze > Lyric Strategy > Draft > Self-Gate",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "full_lyric_draft_scope",
+      "status": "PASS",
+      "detail": "declared=full-song; requested=full-song"
+    },
+    {
+      "name": "full_song_target_duration",
+      "status": "PASS",
+      "detail": "target_seconds=180"
+    },
+    {
+      "name": "full_song_numeric_bpm",
+      "status": "PASS",
+      "detail": "bpm=116 (proposed prompt target; audio not measured)"
+    },
+    {
+      "name": "full_song_meter",
+      "status": "PASS",
+      "detail": "meter=4/4; quarter-note BPM assumed"
+    },
+    {
+      "name": "full_song_section_bars_match_draft",
+      "status": "PASS",
+      "detail": "plan=['intro', 'verse 1', 'chorus', 'instrumental', 'verse 2', 'chorus', 'instrumental', 'verse 3', 'bridge', 'final chorus', 'outro']; Draft=['intro', 'verse 1', 'chorus', 'instrumental', 'verse 2', 'chorus', 'instrumental', 'verse 3', 'bridge', 'final chorus', 'outro']; bars=88"
+    },
+    {
+      "name": "full_song_intro_outro_exception",
+      "status": "PASS",
+      "detail": "none"
+    },
+    {
+      "name": "full_song_intro_outro_tags",
+      "status": "PASS",
+      "detail": "[Intro] first and [Outro] last unless an explicit exception is recorded"
+    },
+    {
+      "name": "full_song_planned_duration",
+      "status": "PASS",
+      "detail": "estimated_seconds=182.1; target_seconds=180; planned bars only, not measured audio"
+    },
+    {
+      "name": "full_song_track_source_matches_draft",
+      "status": "PASS",
+      "detail": "source=SERIES/06-30/input/tracks/09_먼저 건넨 말.txt; source_sha256=6d00b50c4c328043f29381a63f9de50370cb7fcecb082c124ed31376adde316f; error=none"
+    },
+    {
+      "name": "full_song_bpm_matches_track_source",
+      "status": "PASS",
+      "detail": "artifact_bpm=116; txt_bpm=116"
+    },
+    {
+      "name": "full_song_breath_contract_applies",
+      "status": "PASS",
+      "detail": "new full-song Draft"
+    },
+    {
+      "name": "full_song_verse_structure_exception",
+      "status": "PASS",
+      "detail": "none"
+    },
+    {
+      "name": "full_song_verse_count",
+      "status": "PASS",
+      "detail": "verses=3; default=3; exception=none"
+    },
+    {
+      "name": "full_song_verse_distribution_evidence",
+      "status": "PASS",
+      "detail": "recorded=1=6; 2=6; 3=6; actual=1=6; 2=6; 3=6"
+    },
+    {
+      "name": "full_song_longest_sung_line_evidence",
+      "status": "PASS",
+      "detail": "문 앞에서 숨을 고르고"
+    },
+    {
+      "name": "full_song_short_phrasing_evidence",
+      "status": "PASS",
+      "detail": "복도 끝에 네가 보여 / 괜히 휴대폰을 봤어"
+    },
+    {
+      "name": "full_song_breathing_room_evidence",
+      "status": "PASS",
+      "detail": "다시 길이 생겼어"
+    },
+    {
+      "name": "reviewed_lyric_body_present",
+      "status": "PASS",
+      "detail": "34 lyric lines",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "reviewed_source_sha256_matches",
+      "status": "PASS",
+      "detail": "actual_sha256=6d00b50c4c328043f29381a63f9de50370cb7fcecb082c124ed31376adde316f; claimed=6d00b50c4c328043f29381a63f9de50370cb7fcecb082c124ed31376adde316f",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_expression_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_connection_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_emotional_flow_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_copyright_safety_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_wavvy_identity_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_series_dna_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    },
+    {
+      "name": "review_suno_format_evidence",
+      "status": "PASS",
+      "detail": "PASS",
+      "path": "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "user_decisions": [],
+  "evidence_refs": [
+    "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+    "SERIES/06-30/concept.md",
+    "SERIES/06-30/input/lyrics-review/09_먼저 건넨 말.md",
+    "skills/wavvy-lyricist/SKILL.md",
+    "skills/wavvy-lyricist/references/patterns.md"
+  ]
+}

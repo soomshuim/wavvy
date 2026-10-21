@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/06-30",
+  "artifact": "SERIES/06-30/input/tracks/20_오늘을 남겨.txt",
+  "source_sha256": "eec22426ef750e53540639a65c9dea52003f70d609cdbe59a5d35fb0838ad4cf",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/06-30/input/tracks/20_오늘을 남겨.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/06-30/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "815/900 Unicode characters including internal whitespace"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "0/8 terms"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=104 (proposed prompt target; audio not measured); STYLE=[104]"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=F Major (proposed; audio not measured); STYLE=['F major']"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=one clear male chest-voice lead, solo (proposed; audio not measured); STYLE=['male']"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/06-30/input/tracks/20_오늘을 남겨.txt"
+  ]
+}

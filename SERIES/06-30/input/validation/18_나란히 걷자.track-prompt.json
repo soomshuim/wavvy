@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/06-30",
+  "artifact": "SERIES/06-30/input/tracks/18_나란히 걷자.txt",
+  "source_sha256": "00a2fa2fa09e2df2852b240e408d6cae184c2f23cb65b380f08541c3ff6c63a6",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/06-30/input/tracks/18_나란히 걷자.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/06-30/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "823/900 Unicode characters including internal whitespace"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "0/8 terms"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=114 (proposed prompt target; audio not measured); STYLE=[114]"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=E Major (proposed; audio not measured); STYLE=['E major']"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=one clear male chest-voice lead, solo (proposed; audio not measured); STYLE=['male']"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/06-30/input/tracks/18_나란히 걷자.txt"
+  ]
+}
