@@ -1,0 +1,79 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/15-raw.wav",
+  "raw_sha256": "3aa1a91917cc6d9a68697fb9038675d44bc987bb539009fac5323ea43e1a1c2d",
+  "raw_duration_seconds": 192.7,
+  "raw_frames": 9249600,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 187.2,
+  "first_nonzero_seconds": 1.5601458333333333,
+  "expected_target_end_seconds": 188.76014583333333,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 188.76891666666666,
+      "end_seconds": 189.42129166666666,
+      "duration_seconds": 0.652375
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.5601458333333333,
+      "duration_seconds": 1.5601458333333333
+    },
+    {
+      "start_seconds": 188.76891666666666,
+      "end_seconds": 189.42129166666666,
+      "duration_seconds": 0.652375
+    },
+    {
+      "start_seconds": 192.08991666666665,
+      "end_seconds": 192.7,
+      "duration_seconds": 0.6100833333333333
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    1.0000735521316528,
+    0.886160671710968
+  ],
+  "overunity_by_channel": [
+    1,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/15__작은 용기__captured.wav",
+    "sha256": "ada7d7bbe46fdbe47539e9fd34535f38a8dbac0474ab06dd28c248ee5cdc5d68",
+    "start_raw_seconds": 1.47,
+    "end_raw_seconds": 189.05,
+    "frames": 9003840,
+    "duration_seconds": 187.58,
+    "first_nonzero_seconds": 0.09014583333333333,
+    "last_nonzero_seconds": 187.29889583333335,
+    "peak_by_channel": [
+      1.0000735521316528,
+      0.886160671710968
+    ],
+    "overunity_by_channel": [
+      1,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 187.29891666666666,
+        "end_seconds": 187.58,
+        "duration_seconds": 0.28108333333333335
+      }
+    ]
+  },
+  "candidate_id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
+  "title": "15. 작은 용기",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 187.2s; raw first sound 1.5601458333333333s; target-to-next exact-zero gap 188.76891666666666–189.42129166666666s. Manual trim 1.47–189.05s retains 0.09014583333333333s lead and 0.28108333333333335s tail, excludes next-song signal."
+}

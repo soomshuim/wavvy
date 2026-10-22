@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/13-raw.wav",
+  "raw_sha256": "80ce25214f0d244a76b376a663c0551558a64f3e34a59c3dbf8547562792bb96",
+  "raw_duration_seconds": 191.2,
+  "raw_frames": 9177600,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 187.2,
+  "first_nonzero_seconds": 1.4172291666666668,
+  "expected_target_end_seconds": 188.61722916666665,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 188.6259375,
+      "end_seconds": 189.17164583333334,
+      "duration_seconds": 0.5457083333333334
+    },
+    {
+      "start_seconds": 190.81627083333333,
+      "end_seconds": 191.2,
+      "duration_seconds": 0.3837291666666667
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4172291666666668,
+      "duration_seconds": 1.4172291666666668
+    },
+    {
+      "start_seconds": 188.6259375,
+      "end_seconds": 189.17164583333334,
+      "duration_seconds": 0.5457083333333334
+    },
+    {
+      "start_seconds": 190.81627083333333,
+      "end_seconds": 191.2,
+      "duration_seconds": 0.3837291666666667
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9554315209388733,
+    0.8556244373321533
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/13__유리컵의 햇빛__captured.wav",
+    "sha256": "1230d545e928760d04344e2ca84d6cc3203ce43a6bf5cc157be19f748560a5eb",
+    "start_raw_seconds": 1.33,
+    "end_raw_seconds": 188.9,
+    "frames": 9003360,
+    "duration_seconds": 187.57,
+    "first_nonzero_seconds": 0.08722916666666666,
+    "last_nonzero_seconds": 187.29591666666667,
+    "peak_by_channel": [
+      0.9554315209388733,
+      0.8556244373321533
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 187.2959375,
+        "end_seconds": 187.57,
+        "duration_seconds": 0.2740625
+      }
+    ]
+  },
+  "candidate_id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+  "title": "13. 유리컵의 햇빛",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 187.2s; raw first sound 1.4172291666666668s; target-to-next exact-zero gap 188.6259375–189.17164583333334s. Manual trim 1.33–188.9s retains 0.08722916666666666s lead and 0.2740625s tail, excludes next-song signal."
+}

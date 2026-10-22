@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/16-raw.wav",
+  "raw_sha256": "59aa9b60d2045a627aba765f13d60c05de5f80428ef97179cb14b7fcd65dfa6a",
+  "raw_duration_seconds": 207.88,
+  "raw_frames": 9978240,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 188.0,
+  "first_nonzero_seconds": 16.823770833333334,
+  "expected_target_end_seconds": 204.82377083333333,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 204.8325,
+      "end_seconds": 205.85820833333332,
+      "duration_seconds": 1.0257083333333334
+    },
+    {
+      "start_seconds": 207.18283333333332,
+      "end_seconds": 207.88,
+      "duration_seconds": 0.6971666666666667
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 16.823770833333334,
+      "duration_seconds": 16.823770833333334
+    },
+    {
+      "start_seconds": 204.8325,
+      "end_seconds": 205.85820833333332,
+      "duration_seconds": 1.0257083333333334
+    },
+    {
+      "start_seconds": 207.18283333333332,
+      "end_seconds": 207.88,
+      "duration_seconds": 0.6971666666666667
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    1.0047225952148438,
+    1.0304961204528809
+  ],
+  "overunity_by_channel": [
+    1,
+    2
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/16__돌아가는 길__captured.wav",
+    "sha256": "0894780ec4e5f6d1c3feec25efafc682c11d7e9ebd023bfa376229f8df37905a",
+    "start_raw_seconds": 16.73,
+    "end_raw_seconds": 205.13,
+    "frames": 9043200,
+    "duration_seconds": 188.4,
+    "first_nonzero_seconds": 0.09377083333333333,
+    "last_nonzero_seconds": 188.10247916666665,
+    "peak_by_channel": [
+      1.0047225952148438,
+      1.0304961204528809
+    ],
+    "overunity_by_channel": [
+      1,
+      2
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 188.1025,
+        "end_seconds": 188.4,
+        "duration_seconds": 0.2975
+      }
+    ]
+  },
+  "candidate_id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+  "title": "16. 돌아가는 길",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 188.0s; raw first sound 16.823770833333334s; target-to-next exact-zero gap 204.8325–205.85820833333332s. Manual trim 16.73–205.13s retains 0.09377083333333333s lead and 0.2975s tail, excludes next-song signal."
+}

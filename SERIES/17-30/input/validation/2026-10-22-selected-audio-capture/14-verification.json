@@ -1,0 +1,79 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/14-raw.wav",
+  "raw_sha256": "d38376d6dacd70620009f6bc953062d9fbba767ae1b1f7d198322e4bd09b3bff",
+  "raw_duration_seconds": 188.0,
+  "raw_frames": 9024000,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 182.52,
+  "first_nonzero_seconds": 1.61,
+  "expected_target_end_seconds": 184.13000000000002,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 184.13875,
+      "end_seconds": 185.055125,
+      "duration_seconds": 0.916375
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.61,
+      "duration_seconds": 1.61
+    },
+    {
+      "start_seconds": 184.13875,
+      "end_seconds": 185.055125,
+      "duration_seconds": 0.916375
+    },
+    {
+      "start_seconds": 187.25441666666666,
+      "end_seconds": 188.0,
+      "duration_seconds": 0.7455833333333334
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.996850848197937,
+    0.9653372764587402
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/14__먼저 건넨 말__captured.wav",
+    "sha256": "a61ff66f93b6474f602b23d93fb531475694e99707b3906c523dff38d5f6333e",
+    "start_raw_seconds": 1.52,
+    "end_raw_seconds": 184.45,
+    "frames": 8780640,
+    "duration_seconds": 182.93,
+    "first_nonzero_seconds": 0.09,
+    "last_nonzero_seconds": 182.61872916666667,
+    "peak_by_channel": [
+      0.996850848197937,
+      0.9653372764587402
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 182.61875,
+        "end_seconds": 182.93,
+        "duration_seconds": 0.31125
+      }
+    ]
+  },
+  "candidate_id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
+  "title": "14. 먼저 건넨 말",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 182.52s; raw first sound 1.61s; target-to-next exact-zero gap 184.13875–185.055125s. Manual trim 1.52–184.45s retains 0.09s lead and 0.31125s tail, excludes next-song signal."
+}

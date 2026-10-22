@@ -1,0 +1,54 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+  "source_evidence_ref": "16-verification.json",
+  "ui_evidence_ref": "16-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/16-raw.wav",
+  "raw_sha256": "59aa9b60d2045a627aba765f13d60c05de5f80428ef97179cb14b7fcd65dfa6a",
+  "trim_source_path": "work/2026-10-22-capture-ingest-document-sync/16__돌아가는 길__captured.wav",
+  "input_filename": "16__돌아가는 길__Bright__Modern R&B__NA.wav",
+  "input_sha256": "0894780ec4e5f6d1c3feec25efafc682c11d7e9ebd023bfa376229f8df37905a",
+  "trim_start_raw_seconds": 16.73,
+  "trim_end_raw_seconds": 205.13,
+  "exact_zero_gap": {
+    "start_seconds": 204.8325,
+    "end_seconds": 205.85820833333332,
+    "duration_seconds": 1.0257083333333334
+  },
+  "raw_gap_peak": 0.0,
+  "raw_next_song_peak": 0.19322270154953003,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 188.4,
+    "size_bytes": 72345658
+  },
+  "per_channel_peak": [
+    1.0047225952148438,
+    1.0304961204528809
+  ],
+  "per_channel_overunity_sample_count": [
+    1,
+    2
+  ],
+  "flat_adjacent_high_sample_count": 0,
+  "interior_exact_zero_runs_ge_0_1s": [],
+  "interior_run_review_note": "No interior exact-zero span >=0.1s observed; callback continuity is still unproven",
+  "checks": {
+    "selected_id_and_ui_title_match_playback_slot": true,
+    "raw_sha256_matches_capture_report": true,
+    "trim_exact_raw_sample_slice": true,
+    "ingested_sha256_matches_trim": true,
+    "raw_gap_before_next_song_is_zero": true,
+    "raw_next_song_onset_after_trim": true,
+    "all_trim_samples_finite": true,
+    "format_float32_48k_stereo": true
+  },
+  "limitations": [
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim"
+  ]
+}

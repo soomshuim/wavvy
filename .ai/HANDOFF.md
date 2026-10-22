@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (선택 WAV 16/20 checkpoint)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 13~16번을 각각 재생 순서의 선택 ID·Suno UI 길이·원시 SHA-256·곡간 무음 경계·sample-exact 절단으로 대조해 입력에 등록했다([곡별 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/)). 로컬 WAV는 16/20곡(공식 다운로드 3·내부 녹음 13)으로 manifest와 state writer가 일치한다. 15번 +1 초과 1샘플과 16번 +1 초과 3샘플은 float32 그대로 보존했고 연속 평탄 최고점은 검출되지 않았다.
+Next-TODO: 17~20번 4곡은 raw·UI·경계·SHA 검사 후에만 정식 등록한다. 젠의 4번 전곡 청취 판정과 5~16번 파일 기술 검사는 구분한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 13~16번 입력·근거·상태 checkpoint는 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 12/20·10번 재시도 등록 checkpoint)
 Project: ~/Project/wavvy
 Agent: Codex
