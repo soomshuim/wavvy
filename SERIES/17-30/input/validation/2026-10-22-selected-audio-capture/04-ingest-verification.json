@@ -1,0 +1,40 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+  "source_evidence_ref": "04-verification.json",
+  "ui_evidence_ref": "04-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/04-raw.wav",
+  "raw_sha256": "1ee4466449a613c5850f7e2ab597143dc241bda4a69af3d2b3183368e7dc75db",
+  "trim_source_path": "work/2026-10-22-selected-audio-capture/04__우리 행복하자__captured.wav",
+  "input_filename": "04__우리 행복하자__Bright__Modern R&B__NA.wav",
+  "input_sha256": "774d3b4e79c33b325701cacacee755ce0c3df0aca861f3f1bb2bad150440c3c9",
+  "trim_start_raw_seconds": 7.7,
+  "trim_end_raw_seconds": 209.2,
+  "raw_zero_gap_peak_208_9_to_209_5": 0.0,
+  "raw_next_song_peak_209_5_to_210": 0.32051795721054077,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 201.5,
+    "size_bytes": 77376058
+  },
+  "checks": {
+    "playback_order_4_selected_id_matches_ui": true,
+    "playback_title_matches_ui": true,
+    "raw_sha256_matches_capture_evidence": true,
+    "trim_sha256_matches_capture_evidence": true,
+    "ingested_sha256_matches_trim": true,
+    "trim_exact_raw_sample_slice": true,
+    "raw_gap_before_next_song_is_zero": true,
+    "raw_next_song_onset_after_trim": true,
+    "ingest_format_float32_48k_stereo": true,
+    "ingest_duration_201_5s": true
+  },
+  "limitations": [
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim"
+  ]
+}

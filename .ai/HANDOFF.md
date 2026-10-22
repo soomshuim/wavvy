@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (재생 4번 내부 녹음 한 곡 등록·청취 판정 대기)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 4번 「우리 행복하자」 선택 ID `810a0d51-39e5-460c-ae78-ed3a8181837b`의 내부 녹음을 원시 7.70~209.20초에서 잘라 다음 곡 자동재생을 제외했다. [원시 검사](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/04-verification.json), [입력 대조](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/04-ingest-verification.json), [독립 검토](reviews/2026-10-22-single-audio-capture-review.md)는 기술 범위에서 PASS/CLEAN이다. 로컬 선택 WAV는 4/20곡(공식 다운로드 3·내부 녹음 1)이고 state writer가 이 4개를 기록했다.
+Next-TODO: 젠의 “내가 녹음본 들어볼게”에 따라 4번 전곡 청취 판정과 남은 16곡 녹음을 대기한다. 원시 녹음은 공식 다운로드가 아니며 직접 청취·원본 파형 동일성은 검증되지 않았다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
+Commits: 이 4번 파일 등록과 근거·상태 기록은 이번 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (청취 시험 동안 녹음 일시 중지)
 Project: ~/Project/wavvy
 Agent: Codex

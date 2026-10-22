@@ -1,0 +1,58 @@
+{
+  "candidate_id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+  "title": "4. 우리 행복하자",
+  "provenance": "ScreenCaptureKit capture of normal Suno UI playback, not an official download",
+  "raw_path": "work/2026-10-22-selected-audio-capture/04-raw.wav",
+  "raw_sha256": "1ee4466449a613c5850f7e2ab597143dc241bda4a69af3d2b3183368e7dc75db",
+  "raw_frames": 11523840,
+  "raw_duration_seconds": 240.08,
+  "trim_path": "work/2026-10-22-selected-audio-capture/04__우리 행복하자__captured.wav",
+  "trim_sha256": "774d3b4e79c33b325701cacacee755ce0c3df0aca861f3f1bb2bad150440c3c9",
+  "trim_start_raw_seconds": 7.7,
+  "trim_end_raw_seconds": 209.2,
+  "trim_frames": 9672000,
+  "trim_duration_seconds": 201.5,
+  "ui_duration_seconds": 201.12,
+  "duration_difference_seconds": 0.37999999999999545,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sample_type": "float32",
+  "sample_exact_copy_from_raw": true,
+  "raw_stats": {
+    "rms": 0.14682651733888158,
+    "peak": 0.9660029411315918,
+    "clipped_fraction_abs_gte_0_999": 0.0,
+    "near_silence_fraction_abs_lt_1e_4": 0.03801241600022215
+  },
+  "trim_stats": {
+    "rms": 0.15444535973587187,
+    "peak": 0.9660029411315918,
+    "clipped_fraction_abs_gte_0_999": 0.0,
+    "near_silence_fraction_abs_lt_1e_4": 0.004917390405293631
+  },
+  "trim_first_0_5s_stats": {
+    "rms": 0.05917281273821562,
+    "peak": 0.30859696865081787,
+    "clipped_fraction_abs_gte_0_999": 0.0,
+    "near_silence_fraction_abs_lt_1e_4": 0.2569166666666667
+  },
+  "trim_last_0_5s_stats": {
+    "rms": 0.00012771718553336608,
+    "peak": 0.0040208748541772366,
+    "clipped_fraction_abs_gte_0_999": 0.0,
+    "near_silence_fraction_abs_lt_1e_4": 0.9288333333333333
+  },
+  "raw_end_gap_208_9_to_209_5_seconds_peak": 0.0,
+  "raw_next_song_209_5_to_210_seconds_peak": 0.32051795721054077,
+  "interior_exact_all_zero_runs_longest": [],
+  "interior_exact_all_zero_run_count_ge_0_1s": 0,
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "autoplay_contamination_removed_from_trim": true,
+  "next_song_first_observed_sound_raw_seconds": "209.5–209.65",
+  "boundary_basis": [
+    "raw first nonzero 7.76594s; trim starts 7.7s to preserve intro",
+    "same-song UI advanced from 0:00 to 188.47/201.12s; at 10:24:14Z media switched to 227.6s next song",
+    "target audio faded to <0.005 peak by raw 208.9s; raw 208.9–209.5s zero gap; next song sound resumes at 209.5s; trim ends 209.2s"
+  ]
+}

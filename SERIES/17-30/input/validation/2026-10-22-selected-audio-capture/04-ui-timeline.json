@@ -1,0 +1,116 @@
+{
+  "candidate_id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+  "song_url": "https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b",
+  "displayed_title": "4. 우리 행복하자",
+  "capture_started_before_ui_play": true,
+  "ui_before_click": {
+    "paused": true,
+    "currentTime": 0,
+    "duration": null
+  },
+  "ui_immediately_after_click": {
+    "paused": true,
+    "currentTime": 0,
+    "duration": null
+  },
+  "first_playing_observation": {
+    "paused": false,
+    "currentTime": 2.967403,
+    "duration": 201.12
+  },
+  "checkpoints": [
+    {
+      "observed_at": "2026-10-22T10:21:02.446Z",
+      "currentTime": 10.427941,
+      "duration": 201.12,
+      "paused": false,
+      "source_file": "04-ui-start.json"
+    },
+    {
+      "observed_at": "2026-10-22T10:21:51.491Z",
+      "currentTime": 59.464765,
+      "duration": 201.12,
+      "paused": false,
+      "since_previous_same_media": {
+        "wall_seconds": 49.045,
+        "media_advance_seconds": 49.036824,
+        "difference_seconds": -0.008176
+      }
+    },
+    {
+      "observed_at": "2026-10-22T10:22:27.878Z",
+      "currentTime": 95.856238,
+      "duration": 201.12,
+      "paused": false,
+      "since_previous_same_media": {
+        "wall_seconds": 36.387,
+        "media_advance_seconds": 36.391473,
+        "difference_seconds": 0.004473
+      }
+    },
+    {
+      "observed_at": "2026-10-22T10:23:03.236Z",
+      "currentTime": 131.262239,
+      "duration": 201.12,
+      "paused": false,
+      "since_previous_same_media": {
+        "wall_seconds": 35.358,
+        "media_advance_seconds": 35.406001,
+        "difference_seconds": 0.048001
+      }
+    },
+    {
+      "observed_at": "2026-10-22T10:23:42.939Z",
+      "currentTime": 170.936387,
+      "duration": 201.12,
+      "paused": false,
+      "since_previous_same_media": {
+        "wall_seconds": 39.703,
+        "media_advance_seconds": 39.674148,
+        "difference_seconds": -0.028852
+      }
+    },
+    {
+      "observed_at": "2026-10-22T10:24:00.482Z",
+      "currentTime": 188.465718,
+      "duration": 201.12,
+      "paused": false,
+      "since_previous_same_media": {
+        "wall_seconds": 17.543,
+        "media_advance_seconds": 17.529331,
+        "difference_seconds": -0.013669
+      }
+    },
+    {
+      "observed_at": "2026-10-22T10:24:14.214Z",
+      "currentTime": 0.432029,
+      "duration": 227.6,
+      "paused": false,
+      "interpretation": "autoplay_next_song_already_started"
+    },
+    {
+      "observed_at": "2026-10-22T10:24:39.372Z",
+      "currentTime": 25.592424,
+      "duration": 227.6,
+      "paused": false,
+      "interpretation": "next_song_not_target",
+      "since_previous_same_media": {
+        "wall_seconds": 25.158,
+        "media_advance_seconds": 25.160395,
+        "difference_seconds": 0.002395
+      }
+    }
+  ],
+  "natural_target_end_exact_ui_moment_observed": false,
+  "new_media_after_target": {
+    "duration_seconds": 227.6,
+    "first_observed_currentTime": 0.432029
+  },
+  "final_player_state": {
+    "paused": true,
+    "currentTime": 37.266161,
+    "duration": 227.6,
+    "source_file": "04-ui-after.json"
+  },
+  "notes": "Timeline values copied from Aside MCP UI tool results; direct exact target end was missed by polling. Boundary is corroborated by raw zero gap before next song."
+}
