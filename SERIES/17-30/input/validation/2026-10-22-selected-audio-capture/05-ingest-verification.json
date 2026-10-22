@@ -1,0 +1,51 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+  "source_evidence_ref": "05-verification.json",
+  "ui_evidence_ref": "05-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/05-raw.wav",
+  "raw_sha256": "381a948ed84ff7b9bb681db12356f59bafbc5c9156ab3fed97be5eba246d5055",
+  "trim_source_path": "work/2026-10-22-selected-audio-capture/05__오래된 농담__captured.wav",
+  "input_filename": "05__오래된 농담__Bright__Modern R&B__NA.wav",
+  "input_sha256": "81e6300528d30b8bcb28ce550c4fc8cf153b443375e9e7aa860593818fc027fd",
+  "trim_start_raw_seconds": 6.0,
+  "trim_end_raw_seconds": 208.0,
+  "raw_zero_gap_peak_207_8_to_208_2": 0.0,
+  "raw_next_song_peak_208_3_to_208_8": 0.16362306475639343,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 202.0,
+    "size_bytes": 77568058
+  },
+  "per_channel_peak": [
+    1.0043903589248657,
+    0.978992223739624
+  ],
+  "per_channel_overunity_sample_count": [
+    2,
+    0
+  ],
+  "flat_adjacent_high_sample_count": 0,
+  "checks": {
+    "selected_id_and_ui_title_match_playback_slot": true,
+    "raw_sha256_matches_capture_evidence": true,
+    "trim_sha256_matches_capture_evidence": true,
+    "ingested_sha256_matches_trim": true,
+    "trim_exact_raw_sample_slice": true,
+    "raw_gap_before_next_song_is_zero": true,
+    "raw_next_song_onset_after_trim": true,
+    "all_trim_samples_finite": true,
+    "no_flat_adjacent_high_samples": true,
+    "format_float32_48k_stereo": true,
+    "duration_202_0s": true
+  },
+  "limitations": [
+    "Two isolated left-channel float32 samples above unity; no flat high-sample plateau detected, no source gain or limiting applied; clipping not inferred",
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim"
+  ]
+}

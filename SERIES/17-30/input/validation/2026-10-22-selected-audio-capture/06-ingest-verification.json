@@ -1,0 +1,40 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+  "source_evidence_ref": "06-verification.json",
+  "ui_evidence_ref": "06-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/06-raw.wav",
+  "raw_sha256": "12076204f841f92ed736cfd5c727b0b2abe9e59bb59adbe98fd13a59e5f93a98",
+  "trim_source_path": "work/2026-10-22-capture-ingest-document-sync/06__내일 뭐 해__captured.wav",
+  "input_filename": "06__내일 뭐 해__Bright__Modern R&B__NA.wav",
+  "input_sha256": "0cb5f46a551c58034a4c3645b44f214510e25c94a613f18c648e134e678d34da",
+  "trim_start_raw_seconds": 5.2,
+  "trim_end_raw_seconds": 210.2,
+  "raw_zero_gap_peak_210_05_to_210_4": 0.0,
+  "raw_next_song_peak_210_5_to_211_0": 0.32061177492141724,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 205.0,
+    "size_bytes": 78720058
+  },
+  "checks": {
+    "selected_id_and_ui_title_match_playback_slot": true,
+    "ui_end_and_next_duration_observed": true,
+    "raw_sha256_matches_worker_message": true,
+    "trim_exact_raw_sample_slice": true,
+    "ingested_sha256_matches_trim": true,
+    "raw_gap_before_next_song_is_zero": true,
+    "raw_next_song_onset_after_trim": true,
+    "all_trim_samples_finite": true,
+    "no_interior_exact_zero_run_ge_0_1s": true,
+    "format_float32_48k_stereo": true
+  },
+  "limitations": [
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim"
+  ]
+}

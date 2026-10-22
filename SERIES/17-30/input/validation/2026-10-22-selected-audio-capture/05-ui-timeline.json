@@ -1,0 +1,24 @@
+{
+  "candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+  "title": "5. 오래된 농담",
+  "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
+  "browser_tool": "mcp__aside__repl",
+  "capture_tool": "Apple ScreenCaptureKit, Aside app PID 640 only, capturesAudio=true, captureMicrophone=false",
+  "autoplay_ui": "Queue dialog showed Autoplay switch checked. Clicked it once; fresh snapshot showed unchecked. Queue still contained Next up items, so end-of-song transition was monitored.",
+  "capture_started_utc": "2026-10-22T10:41:54.468Z",
+  "capture_start_evidence": "05-capture.log capture_started before the Play click",
+  "ui_samples": [
+    {"utc": "2026-10-22T10:42:00.135Z", "media_current_seconds": 0, "media_duration_seconds": null, "paused": true, "note": "selected exact ID page immediately before Play"},
+    {"utc": "2026-10-22T10:42:00.648Z", "media_current_seconds": 0, "media_duration_seconds": 201.6, "paused": false, "note": "after one exact Play click"},
+    {"utc": "2026-10-22T10:42:40.434Z", "media_current_seconds": 39.720361, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:43:21.124Z", "media_current_seconds": 80.411048, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:43:55.933Z", "media_current_seconds": 115.22029, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:44:30.242Z", "media_current_seconds": 149.529041, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:45:06.407Z", "media_current_seconds": 185.695095, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:45:18.555Z", "media_current_seconds": 197.843125, "media_duration_seconds": 201.6, "paused": false},
+    {"utc": "2026-10-22T10:45:25.636Z", "media_current_seconds": 2.790789, "media_duration_seconds": 198.52, "paused": false, "note": "media duration changed: next item started on same page"},
+    {"utc": "2026-10-22T10:45:34.560Z", "media_current_seconds": 11.320614, "media_duration_seconds": 198.52, "paused": true, "note": "Playbar Pause clicked once; next item stopped"}
+  ],
+  "capture_stopped": "05-capture.log reason=stop_marker, write_error=none",
+  "observational_limit": "Playback checkpoints and sample-exact trim support this capture, but SCK sample-buffer PTS were not logged, so zero dropped callbacks are not directly proven."
+}

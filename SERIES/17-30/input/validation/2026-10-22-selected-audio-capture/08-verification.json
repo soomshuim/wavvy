@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/08-raw.wav",
+  "raw_sha256": "bca155ba7925fad647527b50b27c7ab46fbfc053769e3f39c97c87c21d14b52c",
+  "raw_duration_seconds": 196.28,
+  "raw_frames": 9421440,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 193.56,
+  "first_nonzero_seconds": 1.4860625,
+  "expected_target_end_seconds": 195.0460625,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 195.05491666666666,
+      "end_seconds": 195.55529166666668,
+      "duration_seconds": 0.500375
+    },
+    {
+      "start_seconds": 196.04791666666668,
+      "end_seconds": 196.28,
+      "duration_seconds": 0.23208333333333334
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4860625,
+      "duration_seconds": 1.4860625
+    },
+    {
+      "start_seconds": 195.05491666666666,
+      "end_seconds": 195.55529166666668,
+      "duration_seconds": 0.500375
+    },
+    {
+      "start_seconds": 196.04791666666668,
+      "end_seconds": 196.28,
+      "duration_seconds": 0.23208333333333334
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.8388822078704834,
+    0.8667019605636597
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/08__빵집 앞에서__captured.wav",
+    "sha256": "448d204fd8105628ad879fb32b5ec9d80681a000003d45b5c6e16bd69e522cef",
+    "start_raw_seconds": 1.4,
+    "end_raw_seconds": 195.25,
+    "frames": 9304800,
+    "duration_seconds": 193.85,
+    "first_nonzero_seconds": 0.0860625,
+    "last_nonzero_seconds": 193.65489583333334,
+    "peak_by_channel": [
+      0.8388822078704834,
+      0.8667019605636597
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 193.65491666666668,
+        "end_seconds": 193.85,
+        "duration_seconds": 0.19508333333333333
+      }
+    ]
+  },
+  "candidate_id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+  "title": "8. 빵집 앞에서",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 193.56s; raw first sound 1.4860625s; target-to-next exact-zero gap 195.05491666666666–195.55529166666668s. Manual trim 1.4–195.25s retains 0.0860625s lead and 0.19508333333333333s tail, excludes next-song signal."
+}

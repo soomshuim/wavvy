@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/06-raw.wav",
+  "raw_sha256": "12076204f841f92ed736cfd5c727b0b2abe9e59bb59adbe98fd13a59e5f93a98",
+  "raw_duration_seconds": 212.32,
+  "raw_frames": 10191360,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 204.72,
+  "first_nonzero_seconds": 5.280208333333333,
+  "expected_target_end_seconds": 210.00020833333332,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 210.00883333333334,
+      "end_seconds": 210.48520833333333,
+      "duration_seconds": 0.476375
+    },
+    {
+      "start_seconds": 211.95916666666668,
+      "end_seconds": 212.32,
+      "duration_seconds": 0.36083333333333334
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 5.280208333333333,
+      "duration_seconds": 5.280208333333333
+    },
+    {
+      "start_seconds": 210.00883333333334,
+      "end_seconds": 210.48520833333333,
+      "duration_seconds": 0.476375
+    },
+    {
+      "start_seconds": 211.95916666666668,
+      "end_seconds": 212.32,
+      "duration_seconds": 0.36083333333333334
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.8940830230712891,
+    0.9031091928482056
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/06__내일 뭐 해__captured.wav",
+    "sha256": "0cb5f46a551c58034a4c3645b44f214510e25c94a613f18c648e134e678d34da",
+    "start_raw_seconds": 5.2,
+    "end_raw_seconds": 210.2,
+    "frames": 9840000,
+    "duration_seconds": 205.0,
+    "first_nonzero_seconds": 0.08020833333333334,
+    "last_nonzero_seconds": 204.8088125,
+    "peak_by_channel": [
+      0.8940830230712891,
+      0.9031091928482056
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 204.80883333333333,
+        "end_seconds": 205.0,
+        "duration_seconds": 0.19116666666666668
+      }
+    ]
+  },
+  "candidate_id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+  "title": "6. 내일 뭐 해",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "boundary_basis": "Selected UI duration 204.72s and progress 204.47/204.72, then next item duration 227.6s. Raw first signal 5.280208s; target fades to exact zero at 210.008833s; next item starts at 210.485208s. Trim raw 5.2–210.2s retains 0.080208s lead and 0.191167s tail, excludes next item.",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false
+}

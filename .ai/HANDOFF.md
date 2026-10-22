@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (선택 WAV 8/20 첫 녹음 checkpoint)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 4번 「우리 행복하자」 전곡을 “통과 계속해.”라고 판단한 뒤 5~8번을 각각 선택 ID·UI 재생 시간·원시/절단 SHA-256·곡간 무음 경계·원시 샘플 일치로 대조해 입력에 등록했다. [획득 manifest](../SERIES/17-30/input/download-manifest.json) 기준 로컬 WAV 8/20곡(공식 다운로드 3·내부 녹음 5), state writer 파일 수도 8개다. 곡별 근거는 `SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/05–08-*`에 있다. 5번의 float32 왼쪽 채널 +1 초과 고립 샘플 2개는 무가공 보존했고 평평한 고점이 없어 클리핑을 단정하지 않았다.
+Next-TODO: 9~20번 12곡의 원시 녹음이 전달되면 곡별 경계·선택 ID·형식·해시를 확인해 등록한다. 4번의 사용자 청취 통과와 5~8번의 파일 기술 검사는 구분한다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
+Commits: 이 5~8번 입력·근거·상태 checkpoint는 이번 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (재생 4번 내부 녹음 한 곡 등록·청취 판정 대기)
 Project: ~/Project/wavvy
 Agent: Codex

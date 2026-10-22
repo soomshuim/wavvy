@@ -1,0 +1,99 @@
+{
+  "candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+  "title": "5. 오래된 농담",
+  "provenance": "ScreenCaptureKit capture of normal Suno UI playback, not an official download",
+  "raw_path": "work/2026-10-22-selected-audio-capture/05-raw.wav",
+  "raw_sha256": "381a948ed84ff7b9bb681db12356f59bafbc5c9156ab3fed97be5eba246d5055",
+  "raw_frames": 10724160,
+  "raw_duration_seconds": 223.42,
+  "trim_path": "work/2026-10-22-selected-audio-capture/05__오래된 농담__captured.wav",
+  "trim_sha256": "81e6300528d30b8bcb28ce550c4fc8cf153b443375e9e7aa860593818fc027fd",
+  "trim_start_raw_seconds": 6.0,
+  "trim_end_raw_seconds": 208.0,
+  "trim_frames": 9696000,
+  "trim_duration_seconds": 202.0,
+  "ui_duration_seconds": 201.6,
+  "duration_difference_seconds": 0.4000000000000057,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sample_type": "float32",
+  "sample_exact_copy_from_raw": true,
+  "raw_first_nonzero_seconds": 6.1058125,
+  "raw_last_nonzero_seconds": 219.633,
+  "raw_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 6.1058125,
+      "duration_seconds": 6.1058125
+    },
+    {
+      "start_seconds": 207.71470833333333,
+      "end_seconds": 208.23908333333333,
+      "duration_seconds": 0.524375
+    },
+    {
+      "start_seconds": 219.63302083333335,
+      "end_seconds": 223.42,
+      "duration_seconds": 3.786979166666667
+    }
+  ],
+  "raw_stats": {
+    "rms": 0.1371319591999054,
+    "peak": 1.0043903589248657,
+    "samples_abs_gte_0_999": 2,
+    "samples_abs_gte_1_0": 2,
+    "near_silence_fraction_abs_lt_1e_4": 0.04837334579118551
+  },
+  "trim_stats": {
+    "rms": 0.14185690879821777,
+    "peak": 1.0043903589248657,
+    "samples_abs_gte_0_999": 2,
+    "samples_abs_gte_1_0": 2,
+    "near_silence_fraction_abs_lt_1e_4": 0.0033212149339933994
+  },
+  "trim_first_0_5s_stats": {
+    "rms": 0.03459525853395462,
+    "peak": 0.1771751046180725,
+    "samples_abs_gte_0_999": 0,
+    "samples_abs_gte_1_0": 0,
+    "near_silence_fraction_abs_lt_1e_4": 0.41508333333333336
+  },
+  "trim_last_0_5s_stats": {
+    "rms": 0.0035444186069071293,
+    "peak": 0.02019837312400341,
+    "samples_abs_gte_0_999": 0,
+    "samples_abs_gte_1_0": 0,
+    "near_silence_fraction_abs_lt_1e_4": 0.5808333333333333
+  },
+  "interior_exact_all_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.1058125,
+      "duration_seconds": 0.1058125
+    },
+    {
+      "start_seconds": 201.71470833333333,
+      "end_seconds": 202.0,
+      "duration_seconds": 0.28529166666666667
+    }
+  ],
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "UI played selected song from 0.00/201.60 through 197.84/201.60; media then changed to a different 198.52-second item. Raw first nonzero 6.1058125s; selected song fades to exact zero at 207.714708s; exact-zero gap until 208.239083s; next song starts at 208.239083s. Trim keeps 0.1058s before first sound and 0.2853s after last target sound.",
+  "per_channel_peak_rms_and_over_one": [
+    {
+      "channel": "L",
+      "rms": 0.1443990021944046,
+      "peak": 1.0043903589248657,
+      "samples_abs_gte_1_0": 2
+    },
+    {
+      "channel": "R",
+      "rms": 0.1392684131860733,
+      "peak": 0.978992223739624,
+      "samples_abs_gte_1_0": 0
+    }
+  ],
+  "over_one_sample_observation": "Two isolated left-channel samples at trimmed 166.208375s and 198.211145833s; neighboring samples rise and fall rather than a flat plateau. Float32 values are preserved, no gain/limiting applied. This does not prove a clipped waveform.",
+  "interior_gap_note": "No exact-zero run >=0.1s within selected audio excluding 0.1058125s lead padding and 0.2852917s end padding; buffer PTS not recorded, so callback continuity cannot be proven."
+}

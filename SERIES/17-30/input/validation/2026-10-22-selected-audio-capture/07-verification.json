@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/07-raw.wav",
+  "raw_sha256": "2060adb392e610102ffcaf666da0800b56e165915c630cb117d5881a929d045f",
+  "raw_duration_seconds": 191.18,
+  "raw_frames": 9176640,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 187.56,
+  "first_nonzero_seconds": 1.4326041666666667,
+  "expected_target_end_seconds": 188.99260416666667,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 189.001375,
+      "end_seconds": 189.54975,
+      "duration_seconds": 0.548375
+    },
+    {
+      "start_seconds": 190.85304166666666,
+      "end_seconds": 191.18,
+      "duration_seconds": 0.32695833333333335
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4326041666666667,
+      "duration_seconds": 1.4326041666666667
+    },
+    {
+      "start_seconds": 189.001375,
+      "end_seconds": 189.54975,
+      "duration_seconds": 0.548375
+    },
+    {
+      "start_seconds": 190.85304166666666,
+      "end_seconds": 191.18,
+      "duration_seconds": 0.32695833333333335
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.7587077617645264,
+    0.7870942950248718
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/07__종이비행기__captured.wav",
+    "sha256": "dedf90d6f5be6544b1e437a609064d4b763fbf00e3364d25dcad067e93fd87c3",
+    "start_raw_seconds": 1.35,
+    "end_raw_seconds": 189.2,
+    "frames": 9016800,
+    "duration_seconds": 187.85,
+    "first_nonzero_seconds": 0.08260416666666667,
+    "last_nonzero_seconds": 187.65135416666666,
+    "peak_by_channel": [
+      0.7587077617645264,
+      0.7870942950248718
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 187.651375,
+        "end_seconds": 187.85,
+        "duration_seconds": 0.198625
+      }
+    ]
+  },
+  "candidate_id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+  "title": "7. 종이비행기",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 187.56s; raw first sound 1.4326041666666667s; target-to-next exact-zero gap 189.001375–189.54975s. Manual trim 1.35–189.2s retains 0.08260416666666667s lead and 0.198625s tail, excludes next-song signal."
+}
