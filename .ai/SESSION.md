@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-10-22 [CDX] -record — Wavvy 17:30 「기분좋아져라」 공개 기록
+- `SERIES/17-30`은 20곡을 두 번 반복한 7,718.5초 영상이다. 사용자 제작 `input/thumb.jpg`와 원본 음원·작업 raw를 보존했다. 관련 공개·댓글·제목 정책 기록은 wavvy `6421c06`으로 push됐다.
+- 젠이 승인한 정확한 98자 제목: `Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | Wavvy | 17:30`. Wavvy24 영상 `3HorT4OoDhg`를 즉시 공개했다. 일반 댓글 1건의 세 문장과 줄바꿈이 시청 페이지에 그대로 보였고 고정하지 않았다: `🍊 오늘은 어떤 순간에 이 플리를 듣고 계신가요?` / `마음에 남은 곡 번호나 제목도 댓글로 남겨주세요.` / `여러분의 하루가 조금 더 산뜻해지길 바라요.`
+- SD·HD·4K 처리 완료 뒤 22:54:36~38 KST 공개 시청 페이지 재생 위치 463.529146→465.791302초(+2.262156초)를 실측하고 일시정지를 확인했다. 공식 state revision 77 `uploaded`, state check·uploaded gate·verify-release PASS. 제목 작성 SSOT `MASTER/youtube/YOUTUBE.md` v2.3은 승인 제목을 대표 베스트 사례로 두되 형식은 유지하고 시리즈별 감각 비유와 다양한 용도를 기본 방향으로 삼는다. 제목 정책·공개 결과 격리 검토는 각각 확정 Critical/High 0이다. 원시 근거: `~/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/`.
+- 미완료: 한국어 자막은 Studio 초안 저장만 되었고 게시 오류 2회로 미게시다. 저작권 검토의 최종 결과도 미관측이다. 다음 일은 자막 게시 오류 해결·게시 확인과 저작권 최종 결과 확인뿐이다. 이번 기록 턴에는 브라우저 재시도·정책/코드 변경·대형 미디어 재검증·삭제를 하지 않았다.
+
 ## 2026-10-22 [CDX] 17:30 YouTube 실제 공개·댓글과 처리 상태
 - [원시 업로드 기록](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/upload-observation.json)과 Studio·시청 페이지 화면에서 Wavvy24 영상 `3HorT4OoDhg`의 업로드 1회, 즉시 공개, 2:08:38 재생, 승인된 98자 제목·설명 정확 일치, 일반 댓글 정확 문안 1건 노출을 확인했다. 4K 처리 완료 뒤 22:54:36~38 KST [플레이어 실측](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/watch-playback-followup.json)에서는 같은 URL의 재생 위치가 463.529146→465.791302초로 2.262156초 증가했다. 이는 시청 페이지 재생 근거이며 4K 화질 재생 판정은 아니다. 댓글은 고정하지 않았다. 영상: https://www.youtube.com/watch?v=3HorT4OoDhg. `17:30`은 예약 시각이 아니다.
 - [후속 처리 관찰](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 22:49:32 KST SD·HD·4K 완료와 공개 유지를 확인했다. 저작권 검토는 진행 중이며 최종 결과를 관측하지 못했다. 한국어 자막 원고는 Studio 초안에 저장됐지만 처리 전·후 게시 시도 모두 오류였고 시청 페이지에도 자막 사용 불가로 보였다. **자막은 미게시**다. 공식 state revision 77 `uploaded`는 영상 업로드 완료를 기록한다. [원시 state/gate/verify 결과](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/)는 모두 PASS다. 남은 일은 저작권 최종 결과 확인과 자막 게시 오류 해결·재확인이다. 아래의 ‘실제 결과 대기’ 기록은 공개 전 당시 이력이다.
