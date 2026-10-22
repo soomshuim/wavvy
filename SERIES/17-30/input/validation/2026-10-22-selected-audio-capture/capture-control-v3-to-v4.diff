@@ -1,0 +1,54 @@
+--- capture-control-v3.js
++++ capture-control-v4.js
+@@ -1,10 +1,10 @@
+ async function captureSong(track) {
+   const order=track.order, id=track.id, title=track.title;
+-  const p=String(order).padStart(2,"0");
++  const p=order===10?"10-retry1":String(order).padStart(2,"0");
+   const url=`https://suno.com/song/${id}`;
+   const root="/Users/zenkim_office/Project/wavvy";
+   const work="work/2026-10-22-selected-audio-capture";
+-  const mediaCode="console.log(JSON.stringify(await page.evaluate(()=>({time:new Date().toISOString(),url:location.href,title:document.title,audio:[...document.querySelectorAll('audio')].map(a=>({currentTime:a.currentTime,duration:a.duration,paused:a.paused,ended:a.ended,readyState:a.readyState}))}))));";
++  const mediaCode="console.log(JSON.stringify(await page.evaluate(()=>({time:new Date().toISOString(),url:location.href,title:document.title,audio:[...document.querySelectorAll('audio')].map(a=>({currentTime:a.currentTime,duration:a.duration,paused:a.paused,ended:a.ended,readyState:a.readyState})),playButtonPresent:!!document.querySelector('button[aria-label=Play]')}))));";
+   function parseLast(result) {
+     if(result.isError) throw Error(JSON.stringify(result.content));
+     const lines=result.content.filter(c=>c.type==="text").map(c=>c.text).join("\n").split("\n");
+@@ -14,13 +14,20 @@
+   }
+   let session=null, stopped=false, report=null;
+   try {
+-    const nav=await tools.mcp__aside__repl({title:`${order}번 대상 확인`,code:`await page.goto('${url}'); var ps${order}=await snapshot(page,{interactive:true}); console.log(ps${order}.tree); ${mediaCode}`});
++    const nav=await tools.mcp__aside__repl({title:`${order}번 대상 확인`,code:`await page.goto('${url}'); var ps${order}=await snapshot(page,{interactive:true}); for(var readiness${order}=0;readiness${order}<20 && !(await page.evaluate(()=>!!document.querySelector('button[aria-label=Play]')));readiness${order}++){await sleep(500);ps${order}=await snapshot(page,{interactive:true});} console.log(ps${order}.tree.slice(0,4000)); ${mediaCode}`});
+     const pre=parseLast(nav);
+-    if(pre.url!==url || pre.title!==`${title} by Wavvy | Suno` || !pre.audio[0].paused || pre.audio[0].currentTime!==0) throw Error("preflight ID/title/player mismatch: "+JSON.stringify(pre));
++    if(pre.url!==url || pre.title!==`${title} by Wavvy | Suno` || !pre.playButtonPresent || !pre.audio[0].paused || pre.audio[0].currentTime!==0) throw Error("preflight ID/title/player mismatch: "+JSON.stringify(pre));
+     const max=Math.min(360,Math.ceil(track.approxSeconds+35));
+     const started=await tools.exec_command({cmd:`./${work}/capture-song record 640 ${max} ${work}/${p}-raw.wav ${work}/${p}.stop 2>&1 | tee ${work}/${p}-capture.log`,workdir:root,tty:true,yield_time_ms:1000,max_output_tokens:1000});
+-    if(!started.session_id || !started.output.includes("capture_started") || !started.output.includes("microphone=false")) throw Error("capture not READY: "+JSON.stringify(started));
+     session=started.session_id;
++    if(!session) throw Error("capture process returned no session: "+JSON.stringify(started));
++    let readyOutput=started.output||"";
++    for(let readyPoll=0;readyPoll<6 && !(readyOutput.includes("capture_started") && readyOutput.includes("microphone=false"));readyPoll++) {
++      const chunk=await tools.write_stdin({session_id:session,chars:"",yield_time_ms:1000,max_output_tokens:1000});
++      readyOutput+=chunk.output||"";
++      if(chunk.exit_code!==undefined) break;
++    }
++    if(!readyOutput.includes("capture_started") || !readyOutput.includes("microphone=false")) throw Error("capture not READY after bounded wait: "+JSON.stringify({initial:started,readyOutput}));
+     notify(`${order}번 capture READY`);
+     const played=await tools.mcp__aside__repl({title:`${order}번 0초 재생`,code:`${mediaCode} await page.getByRole('button',{name:'Play',exact:true}).click(); var ac${order}=await snapshot(page,{selector:'button[aria-label^="Playbar:"]',interactive:true}); console.log(ac${order}.tree); ${mediaCode}`});
+     if(played.isError) throw Error(JSON.stringify(played.content));
+@@ -57,11 +64,11 @@
+     const closed=await tools.write_stdin({session_id:session,chars:"",yield_time_ms:1000,max_output_tokens:1000});
+     stopped=true;
+     if(closed.exit_code!==0 || !closed.output.includes("write_error=none")) throw Error("capture failed to close: "+JSON.stringify(closed));
+-    const scanR=await tools.exec_command({cmd:`python3 ${work}/raw-scan.py ${order}`,workdir:root,max_output_tokens:4000});
++    const scanR=await tools.exec_command({cmd:`python3 ${work}/raw-scan.py ${order} ${work}/${p}-raw.wav`,workdir:root,max_output_tokens:4000});
+     if(scanR.exit_code!==0) throw Error("raw scan failed: "+scanR.output);
+     const scan=JSON.parse(scanR.output.trim());
+-    report={candidate_id:id,title,url,browser_tool:"mcp__aside__repl",capture:"ScreenCaptureKit Aside PID640 app-only, captureMicrophone=false",capture_started:started.output,ui_duration_seconds:duration,before,after_click:afterClick,samples,stop_reason:switchReason,paused_after:pause,capture_stopped:closed.output,raw_scan:scan,pts_recorded:false};
+-    for(const [name,obj] of [["ui-timeline",report],["ui-start",{candidate_id:id,title,url,capture_started:started.output,before,after_click:afterClick,play_confirmed:first}],["ui-after",{candidate_id:id,title,url,last_selected_sample:samples.at(-2),switch_sample:samples.at(-1),paused_after:pause,capture_stopped:closed.output}]]) {
++    report={candidate_id:id,title,url,browser_tool:"mcp__aside__repl",capture:"ScreenCaptureKit Aside PID640 app-only, captureMicrophone=false",capture_started:readyOutput,ui_duration_seconds:duration,before,after_click:afterClick,samples,stop_reason:switchReason,paused_after:pause,capture_stopped:closed.output,raw_scan:scan,pts_recorded:false};
++    for(const [name,obj] of [["ui-timeline",report],["ui-start",{candidate_id:id,title,url,capture_started:readyOutput,before,after_click:afterClick,play_confirmed:first}],["ui-after",{candidate_id:id,title,url,last_selected_sample:samples.at(-2),switch_sample:samples.at(-1),paused_after:pause,capture_stopped:closed.output}]]) {
+       const patch=`*** Begin Patch\n*** Add File: ${root}/${work}/${p}-${name}.json\n+${JSON.stringify(obj,null,2).split("\n").join("\n+")}\n*** End Patch`;
+       await tools.apply_patch(patch);
+     }

@@ -1,0 +1,18 @@
+{
+  "schema": "wavvy.1730.capture_readiness_evidence.v1",
+  "first_attempt_failed_preflight_ref": "10-failed-preflight.json",
+  "first_attempt_ui_ref": "10-ui-failure.json",
+  "first_attempt_capture_log_ref": "10-capture.log",
+  "first_attempt_capture_log_sha256": "3319c739bb5a58d6a16dd572e0a5ee98faf1ee729beb0b25b3398b3331f770ce",
+  "retry_success_ui_start_ref": "10-retry1-ui-start.json",
+  "retry_success_capture_log_ref": "10-retry1-capture.log",
+  "retry_success_capture_log_sha256": "210f82885ce6ff92693a7ded022657435a28f5d57bb771aef5d1f7a4c7e3cf3a",
+  "v3_source_ref": "capture-control-v3.js",
+  "v3_sha256": "8659a5619a3016d894a566430484f9b59292388ebc47893d6dac6a5721f8808d",
+  "v4_source_ref": "capture-control-v4.js",
+  "v4_sha256": "0d008946ba4473f46ba2242cff785c399a1f504c0c192fd8f28a5c3c7dc8d0a2",
+  "source_diff_ref": "capture-control-v3-to-v4.diff",
+  "source_diff_sha256": "45b246fd347afa2838b0ac9e0c6ebd93405d655533c9bc829288a841727fb9da",
+  "observed_readiness_scope": "First attempt initial 1-second PTY response was empty while capture_started was later present in log; Play never clicked and raw was all zero. Retry1 capture_started with microphone=false was observed before Play and valid audio captured. Retry1 initial-versus-poll READY timing was not recorded, so actual delayed READY on retry1 is unverified.",
+  "simulation_scope": "Reviewer reported delayed-READY and never-READY control simulations CLEAN; separate from final audio boundary checks."
+}

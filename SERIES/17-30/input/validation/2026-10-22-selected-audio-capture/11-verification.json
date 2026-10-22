@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/11-raw.wav",
+  "raw_sha256": "a8c43fa5f245c9e96b74fa42b73d1549552fb1465a06caf873642860e69f6c36",
+  "raw_duration_seconds": 190.28,
+  "raw_frames": 9133440,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 186.36,
+  "first_nonzero_seconds": 1.6823125,
+  "expected_target_end_seconds": 188.0423125,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 188.05110416666668,
+      "end_seconds": 188.71147916666666,
+      "duration_seconds": 0.660375
+    },
+    {
+      "start_seconds": 189.88677083333334,
+      "end_seconds": 190.28,
+      "duration_seconds": 0.3932291666666667
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.6823125,
+      "duration_seconds": 1.6823125
+    },
+    {
+      "start_seconds": 188.05110416666668,
+      "end_seconds": 188.71147916666666,
+      "duration_seconds": 0.660375
+    },
+    {
+      "start_seconds": 189.88677083333334,
+      "end_seconds": 190.28,
+      "duration_seconds": 0.3932291666666667
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9701423645019531,
+    0.9674853086471558
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/11__메모 한 장__captured.wav",
+    "sha256": "22faa9462d2af653d7e8cdb2123adfb4746462e42aa50106957490a41dc44f29",
+    "start_raw_seconds": 1.6,
+    "end_raw_seconds": 188.35,
+    "frames": 8964000,
+    "duration_seconds": 186.75,
+    "first_nonzero_seconds": 0.0823125,
+    "last_nonzero_seconds": 186.45108333333334,
+    "peak_by_channel": [
+      0.9701423645019531,
+      0.9674853086471558
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 186.45110416666665,
+        "end_seconds": 186.75,
+        "duration_seconds": 0.29889583333333336
+      }
+    ]
+  },
+  "candidate_id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+  "title": "11. 메모 한 장",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 186.36s; raw first sound 1.6823125s; target-to-next exact-zero gap 188.05110416666668–188.71147916666666s. Manual trim 1.6–188.35s retains 0.0823125s lead and 0.29889583333333336s tail, excludes next-song signal."
+}

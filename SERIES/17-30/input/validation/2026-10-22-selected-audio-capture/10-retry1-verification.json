@@ -1,0 +1,75 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/10-retry1-raw.wav",
+  "raw_sha256": "e87e5cf439875de26df3536abae5dc3336f910427b8831e1e82f250a02472c2c",
+  "raw_duration_seconds": 192.48,
+  "raw_frames": 9239040,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 187.6,
+  "first_nonzero_seconds": 4.4928125,
+  "expected_target_end_seconds": 192.0928125,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 192.10158333333334,
+      "end_seconds": 192.48,
+      "duration_seconds": 0.3784166666666667
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 4.4928125,
+      "duration_seconds": 4.4928125
+    },
+    {
+      "start_seconds": 192.10158333333334,
+      "end_seconds": 192.48,
+      "duration_seconds": 0.3784166666666667
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9167551398277283,
+    0.9341002702713013
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/10__계단 끝에서__captured.wav",
+    "sha256": "7268ac45788fef44c2d7548ccc5332c3004ca93e16e8cdb7b179971e6ef9014a",
+    "start_raw_seconds": 4.4,
+    "end_raw_seconds": 192.3,
+    "frames": 9019200,
+    "duration_seconds": 187.9,
+    "first_nonzero_seconds": 0.0928125,
+    "last_nonzero_seconds": 187.7015625,
+    "peak_by_channel": [
+      0.9167551398277283,
+      0.9341002702713013
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 187.70158333333333,
+        "end_seconds": 187.9,
+        "duration_seconds": 0.19841666666666666
+      }
+    ]
+  },
+  "candidate_id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+  "title": "10. 계단 끝에서",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "boundary_basis": "Selected Suno UI reached natural end at 187.6/187.6s, paused=true, ended=true, with no next media observed. Raw first sound at 4.4928125s predicts end 192.0928125s; actual signal ended 192.1015833s (difference 0.0087708s), followed by exact zero. Raw 4.4–192.3s retains 0.0928125s lead and 0.1984167s tail.",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "previous_failed_attempt_ref": "input/validation/2026-10-22-selected-audio-capture/10-failed-preflight.json"
+}

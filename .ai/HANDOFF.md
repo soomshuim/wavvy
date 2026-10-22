@@ -1,5 +1,25 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (선택 WAV 12/20·10번 재시도 등록 checkpoint)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 10번은 젠의 재개 승인 뒤 별도 retry1 원시를 사용했다. 선택 ID·UI 자연 종료 187.6초·원시 끝 신호·샘플 동일 절단을 확인했고, 처음 53.8초 무음 실패는 분리 보존했다. 11·12번도 선택 ID·UI 길이·곡간 완전 무음·원시/절단 해시를 확인했다. [manifest](../SERIES/17-30/input/download-manifest.json)와 공식 state writer는 WAV 12/20곡(공식 다운로드 3·내부 녹음 9)이다. [준비 신호 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/capture-readiness-evidence.json)는 retry1 준비 신호의 초기 응답/후속 조회 시점을 구분하지 않는다.
+Next-TODO: 13~20번 8곡은 실제 raw·UI·경계·SHA 검사 후에만 정식 등록한다. 4번만 젠의 전곡 청취 통과이며 5~12번은 파일 기술 검사 범위다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 10~12번 입력·근거·상태 checkpoint는 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (10번부터 녹음 재개 승인)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 준비 신호 처리 수정 후 10번부터 계속할지에 “응”이라고 답했다. 앞선 10번 53.8초 무음 실패 raw/log는 보존하고 새 retry 녹음과 분리한다. 현재 정식 WAV는 9/20곡(공식 다운로드 3·내부 녹음 6)이며, 10~20번은 아직 확인된 입력이 아니다.
+Next-TODO: 10번부터 전달되는 새 raw마다 선택 ID·UI 시간·앞뒤 경계·샘플 동일·해시·48 kHz 스테레오 float32를 확인한 뒤 정식 등록한다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
+Commits: 이 재개 상태와 실제 등록 결과는 다음 checkpoint 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (9번 등록·10번 재생 전 무음 실패)
 Project: ~/Project/wavvy
 Agent: Codex

@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/12-raw.wav",
+  "raw_sha256": "086ffdb7b8da4910f2b75dc37d32220df43dc68ba4d14f2c4b6b18437aeb00e0",
+  "raw_duration_seconds": 218.22,
+  "raw_frames": 10474560,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 211.16,
+  "first_nonzero_seconds": 4.539645833333333,
+  "expected_target_end_seconds": 215.69964583333334,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 215.70839583333333,
+      "end_seconds": 216.2514375,
+      "duration_seconds": 0.5430416666666666
+    },
+    {
+      "start_seconds": 217.87470833333333,
+      "end_seconds": 218.22,
+      "duration_seconds": 0.34529166666666666
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 4.539645833333333,
+      "duration_seconds": 4.539645833333333
+    },
+    {
+      "start_seconds": 215.70839583333333,
+      "end_seconds": 216.2514375,
+      "duration_seconds": 0.5430416666666666
+    },
+    {
+      "start_seconds": 217.87470833333333,
+      "end_seconds": 218.22,
+      "duration_seconds": 0.34529166666666666
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9710242748260498,
+    1.0127912759780884
+  ],
+  "overunity_by_channel": [
+    0,
+    3
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/12__새 신발__captured.wav",
+    "sha256": "8954444c2d2814c7437a6e366ccbeb29ea38983e3687affe16de10785f7068eb",
+    "start_raw_seconds": 4.45,
+    "end_raw_seconds": 216.0,
+    "frames": 10154400,
+    "duration_seconds": 211.55,
+    "first_nonzero_seconds": 0.08964583333333333,
+    "last_nonzero_seconds": 211.258375,
+    "peak_by_channel": [
+      0.9710242748260498,
+      1.0127912759780884
+    ],
+    "overunity_by_channel": [
+      0,
+      3
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 211.25839583333334,
+        "end_seconds": 211.55,
+        "duration_seconds": 0.29160416666666666
+      }
+    ]
+  },
+  "candidate_id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+  "title": "12. 새 신발",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 211.16s; raw first sound 4.539645833333333s; target-to-next exact-zero gap 215.70839583333333–216.2514375s. Manual trim 4.45–216.0s retains 0.08964583333333333s lead and 0.29160416666666666s tail, excludes next-song signal."
+}
