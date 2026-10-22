@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "name": "track-prompt",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/06-30",
+        "--stage",
+        "track-prompt",
+        "--artifact",
+        "SERIES/06-30/input/tracks/10_계단 끝에서.txt",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout_file": "track-prompt.stdout.json",
+      "stderr_file": "track-prompt.stderr.txt"
+    },
+    {
+      "name": "lyrics-skill",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "lyrics-skill",
+        "SERIES/06-30",
+        "--artifact",
+        "SERIES/06-30/input/lyrics-review/10_계단 끝에서.md",
+        "--mode",
+        "full-lyric-draft",
+        "--draft-scope",
+        "full-song",
+        "--json"
+      ],
+      "exit_code": 1,
+      "stdout_file": "lyrics-skill.stdout.json",
+      "stderr_file": "lyrics-skill.stderr.txt"
+    },
+    {
+      "name": "lyrics-review",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/06-30",
+        "--stage",
+        "lyrics-review",
+        "--artifact",
+        "SERIES/06-30/input/lyrics-review/10_계단 끝에서.md",
+        "--mode",
+        "full-lyric-draft",
+        "--draft-scope",
+        "full-song",
+        "--json"
+      ],
+      "exit_code": 1,
+      "stdout_file": "lyrics-review.stdout.json",
+      "stderr_file": "lyrics-review.stderr.txt"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "wavvy.track-source-resolution.v1",
+  "source_order": 7,
+  "original_submitted_title": "07. 접힌 지도",
+  "first_eight_song_generation": {
+    "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+    "manifest_source_path_at_submission": "SERIES/06-30/input/tracks/07_접힌 지도.txt",
+    "resolved_immutable_source_path": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt",
+    "source_sha256": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
+    "generated_candidate_ids": [
+      "5564f083-79a3-4090-b495-1c070572228b",
+      "f6af4d8b-7f56-458d-8f0e-5f74ba8fe784"
+    ]
+  },
+  "later_source_revision": {
+    "revision_type": "full_concept_rewrite",
+    "source_path": "input/tracks/07_접힌 지도.txt",
+    "source_sha256": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+    "source_title": "내일 뭐 해",
+    "source_validation_ref": "input/validation/2026-10-22-track-07-concept-rewrite/source/command-results.json",
+    "preservation_ref": "input/validation/2026-10-22-track-07-concept-rewrite/source/preservation-and-style.json",
+    "generation_status_at_source_validation": "not_submitted_for_regeneration_at_source_validation; subsequently_submitted_as_recorded_below"
+  },
+  "resolution_rule": "The first-eight-song raw generation manifest source_path names the live source at that earlier submission time; the first-generation source is now resolved to the archive with the old SHA. The second-generation manifest used the current concept revision with a new SHA and proposed title. Neither completion observation establishes final user selection or audio quality.",
+  "second_generation": {
+    "manifest_ref": "input/validation/2026-10-22-track-07-concept-rewrite/generation-manifest.json",
+    "manifest_sha256": "43477d4c4c3730fd7b67b2e125ebfecd96bfd3768af1d2cb2bf2c00e5837b699",
+    "source_path": "input/tracks/07_접힌 지도.txt",
+    "source_sha256": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+    "submitted_title": "7. 내일 뭐 해",
+    "title_status": "author_creative_proposal_used_in_generation_not_user_confirmed",
+    "create_click_count": 1,
+    "generated_candidate_ids": [
+      "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+      "e69e2f04-0cc3-4b14-bd4c-3408312b74e0"
+    ],
+    "visible_at_completion_only": true
+  }
+}

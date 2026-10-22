@@ -1,0 +1,40 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c]
+- generic [ref=e22] [scrollable]:
+  - status
+  - status
+- region "Bottom notifications" [ref=e207]:
+  - dialog "Your song details have been updated." [ref=e935]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e936]
+  - dialog "Your song details have been updated." [ref=e870]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e871]
+  - dialog "Your song details have been updated." [ref=e806]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e807]
+- region "Top notifications" [ref=e208]
+- region "Bottom edge notifications" [ref=e209]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "20. 우리 행복하자" [ref=e954] [focused]
+  - button "Close" [ref=e955]
+  - text: "20. 우리 행복하자"
+  - button "Upload" [ref=e956]
+  - button "Create" [ref=e957]
+  - button "Animate" [ref=e958]
+  - text: "Allow comments"
+  - switch [ref=e959] [checked]
+  - text: "Allow remix"
+  - switch [ref=e960] [checked]
+  - text: "Show Remix Origin"
+  - switch [ref=e961] [checked]
+  - button "Edit caption, lyrics and styles" [ref=e962]
+  - button "Cancel" [ref=e963]
+  - button "Save" [ref=e964] [disabled]

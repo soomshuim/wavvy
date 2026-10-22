@@ -1,0 +1,30 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c]
+- generic [ref=e22] [scrollable]:
+  - status
+  - status
+- region "Bottom notifications" [ref=e207]:
+  - dialog "Your song details have been updated." [ref=e1033]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e1034]
+- region "Top notifications" [ref=e208]
+- region "Bottom edge notifications" [ref=e209]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "14. 이 노래 끝날 때까지" [ref=e1060] [focused]
+  - button "Close" [ref=e1061]
+  - text: "13. 이 노래 끝날 때까지"
+  - button "Upload" [ref=e1062]
+  - button "Create" [ref=e1063]
+  - button "Animate" [ref=e1064]
+  - text: "Allow comments"
+  - switch [ref=e1065] [checked]
+  - text: "Allow remix"
+  - switch [ref=e1066] [checked]
+  - text: "Show Remix Origin"
+  - switch [ref=e1067] [checked]
+  - button "Edit caption, lyrics and styles" [ref=e1068]
+  - button "Cancel" [ref=e1069]
+  - button "Save" [ref=e1070]

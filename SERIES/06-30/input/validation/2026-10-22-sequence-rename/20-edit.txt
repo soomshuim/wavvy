@@ -1,0 +1,37 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c]
+- generic [ref=e22] [scrollable]:
+  - status
+  - status
+- region "Bottom notifications" [ref=e207]:
+  - dialog "Your song details have been updated." [ref=e1367]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e1368]
+  - dialog "Your song details have been updated." [ref=e1303]:
+    - heading "Your song details have been updated." [level=2]
+    - text: "Press F6 to focus this notification."
+    - heading "Your song details have been updated." [level=3]
+    - button "Dismiss" [ref=e1304]
+- region "Top notifications" [ref=e208]
+- region "Bottom edge notifications" [ref=e209]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "18. 나란히 걷자" [ref=e1434] [focused]
+  - button "Close" [ref=e1435]
+  - text: "18. 나란히 걷자"
+  - button "Upload" [ref=e1436]
+  - button "Create" [ref=e1437]
+  - button "Animate" [ref=e1438]
+  - text: "Allow comments"
+  - switch [ref=e1439] [checked]
+  - text: "Allow remix"
+  - switch [ref=e1440] [checked]
+  - text: "Show Remix Origin"
+  - switch [ref=e1441]
+  - button "Edit caption, lyrics and styles" [ref=e1442]
+  - button "Cancel" [ref=e1443]
+  - button "Save" [ref=e1444] [disabled]
+- iframe:
+  - button "Open selection tools" [ref=f3e1]

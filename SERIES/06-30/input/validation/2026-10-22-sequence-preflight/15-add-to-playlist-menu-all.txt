@@ -1,0 +1,13 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "20. 우리 행복하자 by Wavvy | Suno" [url=https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b]
+- region "Bottom notifications" [ref=e338]
+- region "Top notifications" [ref=e339]
+- region "Bottom edge notifications" [ref=e340]
+- dialog "Add to Playlist":
+  - button "Close" [ref=e341] [focused]
+  - text: "Add to Playlist"
+  - generic "Liked songs" [ref=e342]
+  - generic "Workout" [ref=e343]
+  - generic "24h" [ref=e344]
+  - textbox "Playlist name" [ref=e345] [placeholder="Playlist name"]
+  - button "Create playlist" [ref=e346]

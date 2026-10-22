@@ -1,0 +1,18 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Untitled by @wavvy24 | Suno" [url=https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74?new]
+- region "Bottom notifications" [ref=e207]
+- region "Top notifications" [ref=e208]
+- region "Bottom edge notifications" [ref=e209]
+- dialog "Edit playlist details":
+  - button "Close" [ref=e1683]
+  - heading "Edit playlist details" [level=2]
+  - text: "Edit the playlist name, description, and cover image."
+  - button "기분좋아져라" [ref=e1690]: "기분좋아져라 Edit cover"
+  - textbox "Untitled playlist" [ref=e1685] [focused] [placeholder="Untitled playlist"]: "기분좋아져라"
+  - textbox "Playlist description..." [ref=e1686] [placeholder="Playlist description..."]
+  - text: "Make public"
+  - switch [ref=e1687]
+  - button "Cancel" [ref=e1688]
+  - button "Save" [ref=e1689]
+- iframe:
+  - button "Open selection tools" [ref=f3e1]

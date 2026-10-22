@@ -1,15 +1,14 @@
 {
   "schema": "wavvy.0630.suno_candidate_reconciliation.v1",
+  "series_title": "기분좋아져라",
   "workspace": "[06:30]",
   "workspace_url": "https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c",
-  "status": "user_retained_workspace_candidates_observed_audio_unverified",
-  "observed_at": "2026-10-22T14:59:38+09:00",
-  "observation_ref": "input/validation/2026-10-22-current-suno/observation.json",
-  "observation_sha256": "04c28c2ca2de33cd089aefb5760cc012f1ebf45751450b09e48f3cef046a8ec7",
-  "observed_current_workspace_song_count": 12,
-  "current_song_count_evidence": "UI footer 12 songs; 12 rows with original filters and filters cleared; Next/Page 2 attempts did not change rows but pagination completeness was not independently established",
-  "current_cover_count_observed": 10,
-  "current_existing_v6_count_observed": 2,
+  "status": "user_selected_twenty_titles_renamed_in_suno_private_playlist_order_verified; technical_audio_and_release_unverified",
+  "observed_at": "2026-10-22T16:29:18.848+09:00",
+  "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+  "observation_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+  "observed_current_workspace_song_count": 20,
+  "current_song_count_evidence": "At 16:29 KST with Filters (3), rename audit verified UI header 20 songs and 20 unique IDs exactly matching the 20 target titles; this is a point-in-time view, not an audio measurement.",
   "prior_candidate_count": 40,
   "prior_candidate_ids_not_visible_in_current_workspace_list": 38,
   "not_visible_semantics": "Not displayed in inspected workspace list; trash/deletion not independently confirmed",
@@ -146,9 +145,9 @@
       "candidates": [
         {
           "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-          "displayed_name": "1. 첫 페이지",
+          "displayed_name": "2. 첫 페이지",
           "url": "https://suno.com/song/ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:09",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -173,14 +172,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 2:24",
           "original_2026_10_21_candidate_id": "d0d79c76-18ac-4a64-997e-8b145481622f",
           "original_2026_10_21_candidate_url": "https://suno.com/song/d0d79c76-18ac-4a64-997e-8b145481622f",
-          "original_2026_10_21_candidate_position": "A"
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "1. 첫 페이지",
+          "title_after_agent_rename": "2. 첫 페이지",
+          "sequence_order": 2,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -271,6 +275,49 @@
         "target_bpm_source": 116,
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 182.068966
+      },
+      "sequence_order": 2,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
+          "displayed_name": "1. 첫 페이지",
+          "url": "https://suno.com/song/ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:09",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-01.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/01_첫 페이지.txt",
+            "source_sha256": "73ccb4c7752ffbfd3f1f3e1aa87280abc26c1d093dcd537e59ac6857cd2d6085",
+            "style_exact": "Bright Korean acoustic R&B at 116 BPM in D Major. Fingerpicked guitar turns into clipped offbeat strums as the notebook opens; round electric bass and a dry kick-rim pocket keep an easy walking bounce. Light Rhodes answers the spaces after each thought. One clear female chest-voice lead sings close, conversational Korean; the chorus broadens through guitar and bass while her tone stays natural. Clean, warm room sound.",
+            "style_sha256": "e05c58bec5b594e7e331c494a25c3af8d4674369cd840b512d9219f0f64b5283",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "d0d79c76-18ac-4a64-997e-8b145481622f",
+          "cover_of_ui_parent_url": "https://suno.com/song/d0d79c76-18ac-4a64-997e-8b145481622f",
+          "cover_chain_ids_current_to_original": [
+            "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
+            "d0d79c76-18ac-4a64-997e-8b145481622f"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:24",
+          "original_2026_10_21_candidate_id": "d0d79c76-18ac-4a64-997e-8b145481622f",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/d0d79c76-18ac-4a64-997e-8b145481622f",
+          "original_2026_10_21_candidate_position": "A"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -289,6 +336,83 @@
         "context": "2026-10-21 generation input; not inferred as current cover input"
       },
       "candidates": [
+        {
+          "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "displayed_name": "4. 오래된 농담",
+          "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "cover",
+          "duration_displayed": "3:22",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-02.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/02_오래된 농담.txt",
+            "source_sha256": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5",
+            "style_exact": "In G Major. Buoyant Korean acoustic R&B. Muted acoustic-guitar chords and a nimble bass line converse with tight live drums; light Rhodes replies leave space around the vocal. One warm male chest-voice lead speaks and sings naturally in Korean. The hook feels playful and relaxed within a bright, moving groove, with a clean vocal-forward mix. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
+            "style_sha256": "c84ca900cefdd408774254dbff5b18427915b6ae1f81bd2cecba5332069883a7",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "9181c865-f23d-4795-98bc-df274364a0b8",
+          "cover_of_ui_parent_url": "https://suno.com/song/9181c865-f23d-4795-98bc-df274364a0b8",
+          "cover_chain_ids_current_to_original": [
+            "d6801b81-e1bd-4272-b806-6445b86d6d80",
+            "9181c865-f23d-4795-98bc-df274364a0b8"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:42",
+          "original_2026_10_21_candidate_id": "9181c865-f23d-4795-98bc-df274364a0b8",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/9181c865-f23d-4795-98bc-df274364a0b8",
+          "original_2026_10_21_candidate_position": "B",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "2. 오래된 농담",
+          "title_after_agent_rename": "4. 오래된 농담",
+          "sequence_order": 4,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "decision": {
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
+        "release_approval_status": "not_recorded"
+      },
+      "before_user_remixes": {
+        "order": 2,
+        "title": "오래된 농담",
+        "source_txt": "input/tracks/02_오래된 농담.txt",
+        "source_sha256": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5",
+        "generation_status": "completed_candidates_observed",
+        "create_click_count": 1,
+        "submission_acceptance": "confirmed",
+        "candidates": [
+          {
+            "id": "40572d40-b7aa-4bc2-938c-6b6e97cff760",
+            "displayed_name": "2. 오래된 농담",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/40572d40-b7aa-4bc2-938c-6b6e97cff760",
+            "source_sha256_at_generation": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5"
+          },
+          {
+            "id": "9181c865-f23d-4795-98bc-df274364a0b8",
+            "displayed_name": "2. 오래된 농담",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/9181c865-f23d-4795-98bc-df274364a0b8",
+            "source_sha256_at_generation": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5"
+          }
+        ],
+        "decision": {
+          "status": "pending",
+          "chosen_candidate_id": null
+        }
+      },
+      "sequence_order": 4,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
         {
           "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
           "displayed_name": "2. 오래된 농담",
@@ -321,64 +445,56 @@
           "original_2026_10_21_candidate_position": "B"
         }
       ],
-      "decision": {
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
         "status": "user_retained",
         "chosen_candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
-      },
-      "before_user_remixes": {
-        "order": 2,
-        "title": "오래된 농담",
-        "source_txt": "input/tracks/02_오래된 농담.txt",
-        "source_sha256": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5",
-        "generation_status": "completed_candidates_observed",
-        "create_click_count": 1,
-        "submission_acceptance": "confirmed",
-        "candidates": [
-          {
-            "id": "40572d40-b7aa-4bc2-938c-6b6e97cff760",
-            "displayed_name": "2. 오래된 농담",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/40572d40-b7aa-4bc2-938c-6b6e97cff760",
-            "source_sha256_at_generation": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5"
-          },
-          {
-            "id": "9181c865-f23d-4795-98bc-df274364a0b8",
-            "displayed_name": "2. 오래된 농담",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/9181c865-f23d-4795-98bc-df274364a0b8",
-            "source_sha256_at_generation": "c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5"
-          }
-        ],
-        "decision": {
-          "status": "pending",
-          "chosen_candidate_id": null
-        }
       }
     },
     {
       "order": 3,
       "title": "새 신발",
       "title_before_user_remixes": "새 신발",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "submitted_source_title_with_current_displayed_name_observed",
+      "source_txt": "input/tracks/03_새 신발.txt",
+      "source_sha256": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
+      "current_source_status": "submitted_once_generation_completed_source_txt_header_predates_submission",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/03_새 신발.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/03_새 신발.txt",
         "source_sha256": "5014b976ec43cef79504cef289d3c981838e47ff5bb36a9d6632282ee739461d",
         "style_exact": "Buoyant Korean acoustic R&B at 120 BPM in A Major. Short nylon-guitar syncopations and a springy bass line give the new-shoes scene a lightly skipping feel; tight live kick, rim snare and sparse Rhodes keep the groove supple. One bright female chest-voice lead sings Korean with a relaxed smile. Let the first verse stay airy, then let a fuller bass turn and open guitar chords carry the chorus. Crisp organic mix.",
         "style_sha256": "e96e5fae377d4c1e8dd3b4e2e769b70099d8116497b1888663023e23ab7cc3f9",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/03_새 신발.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "displayed_name": "5. 새 신발",
+          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:31",
+          "source_sha256_at_generation": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
+          "submitted_title": "03. 새 신발",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "03. 새 신발",
+          "title_after_agent_rename": "5. 새 신발",
+          "sequence_order": 5,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -467,6 +583,76 @@
         "target_bpm_source": 120,
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 184.0
+      },
+      "sequence_order": 5,
+      "draft_submission_status": "submitted_once_two_candidates_generated",
+      "draft_source_review_ref": "input/lyrics-review/03_새 신발.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/03_새 신발.txt",
+        "sha256": "5014b976ec43cef79504cef289d3c981838e47ff5bb36a9d6632282ee739461d",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "Rhodes",
+        "lyric_direction": "everyday_mantra",
+        "chorus_hook": "기분 좋아져라"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:27:47+09:00",
+        "submitted_title": "03. 새 신발",
+        "source_sha256_at_submission": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
+        "create_click_count": 1,
+        "credits_before": 2236,
+        "credits_after": 2226,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "4f5d6505-ff13-40b3-8a04-e2102acecc85",
+            "url": "https://suno.com/song/4f5d6505-ff13-40b3-8a04-e2102acecc85",
+            "submitted_title": "03. 새 신발",
+            "duration_displayed": "3:27",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "not_visible_with_filters_at_observation",
+            "displayed_title_in_15_35_filtered_list": null
+          },
+          {
+            "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+            "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
+            "submitted_title": "03. 새 신발",
+            "duration_displayed": "3:31",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "03. 새 신발"
+          }
+        ]
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "displayed_name": "03. 새 신발",
+          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:31",
+          "source_sha256_at_generation": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
+          "submitted_title": "03. 새 신발",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained_interim",
+        "chosen_candidate_id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -485,6 +671,87 @@
         "context": "2026-10-21 generation input; not inferred as current cover input"
       },
       "candidates": [
+        {
+          "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "displayed_name": "6. 반대편 창가",
+          "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "existing_v6",
+          "duration_displayed": "3:18",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "In F Major. Bright Korean acoustic neo-soul with syncopated acoustic-guitar chords, round melodic bass, subtle Rhodes color and supple live drums. One intimate male chest-voice lead sings clear Korean with natural phrasing. Gentle harmonic turns support a lightly curious mood; the chorus gains lift through bass and chord voicing while the acoustic pulse stays lively. Clean room sound. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
+          "observed_style_description_sha256": "d7dca6aa7d065cdf9bd27f8e2f315d8e7e62ae1da4b8c51a737dea4c6c2fa211",
+          "observed_workspace_style_display": "In F Major, Bright Korean acoustic neo-soul with syncopated acoustic-guitar chords, round melodic bass, subtle Rhodes color and supple live drums, One intimate male chest-voice lead sings clear Korean with natural phrasing, Gentle harmonic turns support a lightly curious mood; the chorus gains lift through bass and chord voicing while the acoustic pulse stays lively, Clean room sound, TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song, Maintain the same 175 BPM from the beginning through every section, transition, and ending, No speeding up, slowing down, or tempo drift, Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes",
+          "raw_prompt_status": "confirmed_prior_generation_source_and_ui_style_match",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-04.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/04_반대편 창가.txt",
+            "source_sha256": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5",
+            "style_exact": "In F Major. Bright Korean acoustic neo-soul with syncopated acoustic-guitar chords, round melodic bass, subtle Rhodes color and supple live drums. One intimate male chest-voice lead sings clear Korean with natural phrasing. Gentle harmonic turns support a lightly curious mood; the chorus gains lift through bass and chord voicing while the acoustic pulse stays lively. Clean room sound. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
+            "style_sha256": "d7dca6aa7d065cdf9bd27f8e2f315d8e7e62ae1da4b8c51a737dea4c6c2fa211",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": null,
+          "cover_of_ui_parent_url": null,
+          "cover_chain_ids_current_to_original": [
+            "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a"
+          ],
+          "displayed_created_at": "2026년 10월 21일 오후 5:07",
+          "prior_generation_candidate_record": {
+            "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+            "displayed_name": "4. 반대편 창가",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+            "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
+          },
+          "ui_style_matches_prior_txt_style_exact": true,
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "4. 반대편 창가",
+          "title_after_agent_rename": "6. 반대편 창가",
+          "sequence_order": 6,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "decision": {
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
+        "release_approval_status": "not_recorded"
+      },
+      "before_user_remixes": {
+        "order": 4,
+        "title": "반대편 창가",
+        "source_txt": "input/tracks/04_반대편 창가.txt",
+        "source_sha256": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5",
+        "generation_status": "completed_candidates_observed",
+        "create_click_count": 1,
+        "submission_acceptance": "confirmed",
+        "candidates": [
+          {
+            "id": "c56490fc-2d12-42eb-856d-ad1aada7af87",
+            "displayed_name": "4. 반대편 창가",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/c56490fc-2d12-42eb-856d-ad1aada7af87",
+            "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
+          },
+          {
+            "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+            "displayed_name": "4. 반대편 창가",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+            "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
+          }
+        ],
+        "decision": {
+          "status": "pending",
+          "chosen_candidate_id": null
+        }
+      },
+      "sequence_order": 6,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
         {
           "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
           "displayed_name": "4. 반대편 창가",
@@ -521,41 +788,12 @@
           "ui_style_matches_prior_txt_style_exact": true
         }
       ],
-      "decision": {
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
         "status": "user_retained",
         "chosen_candidate_id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
-      },
-      "before_user_remixes": {
-        "order": 4,
-        "title": "반대편 창가",
-        "source_txt": "input/tracks/04_반대편 창가.txt",
-        "source_sha256": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5",
-        "generation_status": "completed_candidates_observed",
-        "create_click_count": 1,
-        "submission_acceptance": "confirmed",
-        "candidates": [
-          {
-            "id": "c56490fc-2d12-42eb-856d-ad1aada7af87",
-            "displayed_name": "4. 반대편 창가",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/c56490fc-2d12-42eb-856d-ad1aada7af87",
-            "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
-          },
-          {
-            "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-            "displayed_name": "4. 반대편 창가",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-            "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
-          }
-        ],
-        "decision": {
-          "status": "pending",
-          "chosen_candidate_id": null
-        }
       }
     },
     {
@@ -574,6 +812,83 @@
         "context": "2026-10-21 generation input; not inferred as current cover input"
       },
       "candidates": [
+        {
+          "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "displayed_name": "10. 잘 익은 하루",
+          "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "cover",
+          "duration_displayed": "3:19",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-05.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/05_잘 익은 하루.txt",
+            "source_sha256": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba",
+            "style_exact": "In E Major. Sunny Korean acoustic R&B with a lightly syncopated guitar rhythm, buoyant round bass, live drum pocket and small Rhodes answers. One warm female chest-voice lead sings close, articulate Korean. Let the verses notice ordinary details and the chorus bloom in the same organic palette with a memorable, easy melodic lift. Bright, clean, vocal-forward sound. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
+            "style_sha256": "cc8b37dd441f77111d39bb412e690ea32f19e668ad2e38f867eccf9b0bd0d3fe",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "35527b5e-9b6d-4b18-b064-4df5064393e2",
+          "cover_of_ui_parent_url": "https://suno.com/song/35527b5e-9b6d-4b18-b064-4df5064393e2",
+          "cover_chain_ids_current_to_original": [
+            "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+            "35527b5e-9b6d-4b18-b064-4df5064393e2"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:33",
+          "original_2026_10_21_candidate_id": "35527b5e-9b6d-4b18-b064-4df5064393e2",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/35527b5e-9b6d-4b18-b064-4df5064393e2",
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "5. 잘 익은 하루",
+          "title_after_agent_rename": "10. 잘 익은 하루",
+          "sequence_order": 10,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "decision": {
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
+        "release_approval_status": "not_recorded"
+      },
+      "before_user_remixes": {
+        "order": 5,
+        "title": "잘 익은 하루",
+        "source_txt": "input/tracks/05_잘 익은 하루.txt",
+        "source_sha256": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba",
+        "generation_status": "completed_candidates_observed",
+        "create_click_count": 1,
+        "submission_acceptance": "confirmed",
+        "candidates": [
+          {
+            "id": "35527b5e-9b6d-4b18-b064-4df5064393e2",
+            "displayed_name": "5. 잘 익은 하루",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/35527b5e-9b6d-4b18-b064-4df5064393e2",
+            "source_sha256_at_generation": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba"
+          },
+          {
+            "id": "566e6bd6-19df-43fc-b1c0-c59ed7dd8804",
+            "displayed_name": "5. 잘 익은 하루",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/566e6bd6-19df-43fc-b1c0-c59ed7dd8804",
+            "source_sha256_at_generation": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba"
+          }
+        ],
+        "decision": {
+          "status": "pending",
+          "chosen_candidate_id": null
+        }
+      },
+      "sequence_order": 10,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
         {
           "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
           "displayed_name": "5. 잘 익은 하루",
@@ -606,64 +921,56 @@
           "original_2026_10_21_candidate_position": "A"
         }
       ],
-      "decision": {
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
         "status": "user_retained",
         "chosen_candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
-      },
-      "before_user_remixes": {
-        "order": 5,
-        "title": "잘 익은 하루",
-        "source_txt": "input/tracks/05_잘 익은 하루.txt",
-        "source_sha256": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba",
-        "generation_status": "completed_candidates_observed",
-        "create_click_count": 1,
-        "submission_acceptance": "confirmed",
-        "candidates": [
-          {
-            "id": "35527b5e-9b6d-4b18-b064-4df5064393e2",
-            "displayed_name": "5. 잘 익은 하루",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/35527b5e-9b6d-4b18-b064-4df5064393e2",
-            "source_sha256_at_generation": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba"
-          },
-          {
-            "id": "566e6bd6-19df-43fc-b1c0-c59ed7dd8804",
-            "displayed_name": "5. 잘 익은 하루",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/566e6bd6-19df-43fc-b1c0-c59ed7dd8804",
-            "source_sha256_at_generation": "51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba"
-          }
-        ],
-        "decision": {
-          "status": "pending",
-          "chosen_candidate_id": null
-        }
       }
     },
     {
       "order": 6,
       "title": "빵집 앞에서",
       "title_before_user_remixes": "빵집 앞에서",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "submitted_source_title_with_current_displayed_name_observed",
+      "source_txt": "input/tracks/06_빵집 앞에서.txt",
+      "source_sha256": "87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4",
+      "current_source_status": "submitted_once_generation_completed_source_txt_header_predates_submission",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/06_빵집 앞에서.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/06_빵집 앞에서.txt",
         "source_sha256": "c0549ab85db302113339a81813d02c3e5b29479356f65369d1f2c6ef69be1356",
         "style_exact": "Warm Korean acoustic neo-soul at 106 BPM in C Major. A soft Rhodes figure and fingerpicked steel-string guitar open the bakery scene; rounded bass, brushed snare and restrained shaker settle into a gentle syncopated pocket. One clear male chest-voice lead sings conversational Korean, dry and close. Small Rhodes replies follow the neighbor exchange, while the chorus gains fuller guitar voicings and bass movement.",
         "style_sha256": "220b752eba36404d67cdda88236cfdb10b97114e0d893d79893e3ab0a6c72fbc",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/06_빵집 앞에서.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+          "displayed_name": "8. 빵집 앞에서",
+          "url": "https://suno.com/song/5aa6b60e-e108-4116-b541-a64c275a3676",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:14",
+          "source_sha256_at_generation": "87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4",
+          "submitted_title": "06. 빵집 앞에서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "06. 빵집 앞에서",
+          "title_after_agent_rename": "8. 빵집 앞에서",
+          "sequence_order": 8,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -752,29 +1059,116 @@
         "target_bpm_source": 106,
         "planned_bars": 80,
         "planned_duration_seconds_at_target_bpm": 181.132075
+      },
+      "sequence_order": 8,
+      "draft_submission_status": "submitted_once_two_candidates_generated",
+      "draft_source_review_ref": "input/lyrics-review/06_빵집 앞에서.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/06_빵집 앞에서.txt",
+        "sha256": "c0549ab85db302113339a81813d02c3e5b29479356f65369d1f2c6ef69be1356",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "Rhodes",
+        "lyric_direction": "romance_everyday",
+        "chorus_hook": "내일도 여기서 볼래"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:30:05.072000+09:00",
+        "submitted_title": "06. 빵집 앞에서",
+        "source_sha256_at_submission": "87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4",
+        "create_click_count": 1,
+        "credits_before": 2226,
+        "credits_after": 2216,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+            "url": "https://suno.com/song/5aa6b60e-e108-4116-b541-a64c275a3676",
+            "submitted_title": "06. 빵집 앞에서",
+            "duration_displayed": "3:14",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "06. 빵집 앞에서"
+          },
+          {
+            "id": "f36e3a7a-1da0-4b33-8234-76952df8b76e",
+            "url": "https://suno.com/song/f36e3a7a-1da0-4b33-8234-76952df8b76e",
+            "submitted_title": "06. 빵집 앞에서",
+            "duration_displayed": "3:33",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "not_visible_with_filters_at_observation",
+            "displayed_title_in_15_35_filtered_list": null
+          }
+        ]
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+          "displayed_name": "06. 빵집 앞에서",
+          "url": "https://suno.com/song/5aa6b60e-e108-4116-b541-a64c275a3676",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:14",
+          "source_sha256_at_generation": "87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4",
+          "submitted_title": "06. 빵집 앞에서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained_interim",
+        "chosen_candidate_id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 7,
-      "title": "접힌 지도",
+      "title": "내일 뭐 해",
       "title_before_user_remixes": "접힌 지도",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "current_source_author_proposal_not_user_confirmed; first_generation_display_title_historical",
+      "source_txt": "input/tracks/07_접힌 지도.txt",
+      "source_sha256": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+      "current_source_status": "concept_revision_submitted_once_two_candidates_generated_at_completion; first_generation_source_archived",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/07_접힌 지도.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/07_접힌 지도.txt",
         "source_sha256": "7a443685ce9402a44cbeea486fb68d99f14773e724cd22822b5d37eed5010c08",
         "style_exact": "In Bb Major. Upbeat Korean acoustic R&B with syncopated acoustic chords, rounded bass figures, natural live drums and discreet Rhodes responses. One supple female chest-voice lead sings clear Korean. Keep a breezy, curious movement through the verses; let the chorus lift with guitar and bass staying in the same acoustic palette. Detailed but uncluttered vocal-forward mix. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
         "style_sha256": "8f882d4a2c065ecf0d3affd0a9d9cfb402ff7d6295251f435a9d772637e0c768",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/07_접힌 지도.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+          "url": "https://suno.com/song/e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+          "displayed_name": "3. 내일 뭐 해",
+          "duration_displayed": "3:25",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+          "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "7. 내일 뭐 해",
+          "title_after_agent_rename": "3. 내일 뭐 해",
+          "sequence_order": 3,
+          "association_evidence": "current_rewrite_title_7_and_generation_manifest"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -805,6 +1199,153 @@
           "status": "pending",
           "chosen_candidate_id": null
         }
+      },
+      "sequence_order": 3,
+      "draft_submission_status": "first_batch_earlier_concept_generated_two_candidates; later_concept_revision_submitted_once_two_more_generated",
+      "draft_source_review_ref": "input/lyrics-review/07_접힌 지도.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/07_접힌 지도.txt",
+        "sha256": "7a443685ce9402a44cbeea486fb68d99f14773e724cd22822b5d37eed5010c08",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "nylon_guitar",
+        "lyric_direction": "romance_everyday",
+        "chorus_hook": "내일 뭐 해"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:30:52.476000+09:00",
+        "submitted_title": "07. 접힌 지도",
+        "source_sha256_at_submission": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
+        "create_click_count": 1,
+        "credits_before": 2216,
+        "credits_after": 2206,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "5564f083-79a3-4090-b495-1c070572228b",
+            "url": "https://suno.com/song/5564f083-79a3-4090-b495-1c070572228b",
+            "submitted_title": "07. 접힌 지도",
+            "duration_displayed": "3:46",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "07. 접힌 지도"
+          },
+          {
+            "id": "f6af4d8b-7f56-458d-8f0e-5f74ba8fe784",
+            "url": "https://suno.com/song/f6af4d8b-7f56-458d-8f0e-5f74ba8fe784",
+            "submitted_title": "07. 접힌 지도",
+            "duration_displayed": "3:40",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "07. 접힌 지도"
+          }
+        ],
+        "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt",
+        "source_resolution_ref": "input/validation/2026-10-22-track-07-concept-source-resolution.json"
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Current txt header is a pre-submission source snapshot. The later separate Create with a proposed new title and two candidate IDs is recorded in post_concept_rewrite_generation; the first batch used the archived earlier source.",
+      "source_revision": {
+        "revision_type": "concept_and_title_rewrite",
+        "current_source_title": "내일 뭐 해",
+        "title_status": "author_creative_proposal_not_user_confirmed",
+        "source_sha256": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+        "first_generation_source_archive": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt",
+        "first_generation_source_sha256": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
+        "source_resolution_ref": "input/validation/2026-10-22-track-07-concept-source-resolution.json",
+        "audio_quality_status": "not_independently_assessed"
+      },
+      "title_before_concept_rewrite": "접힌 지도",
+      "lyric_concept_rewrite": {
+        "status": "source_review_clean_then_one_submission_two_candidates_completed_at_later_observation",
+        "user_request": "야 그리고 때가 어느 땐대 지도냐. 접힌 지도는 아예 가사 컨셉 새로.",
+        "style_exclude_bpm_constraints": "retain current nylon guitar STYLE/EXCLUDE and 175 BPM prompt target",
+        "new_scene": "message_invititation_to_exhibition_reply_wait_then_time_agreement",
+        "proposed_new_title": "내일 뭐 해",
+        "proposed_title_status": "author_creative_proposal_not_user_confirmed",
+        "source_review_ref": ".ai/reviews/2026-10-22-track-07-concept-source-review.md",
+        "first_batch_candidates_status": "historical_candidates_from_archived_pre_rewrite_source"
+      },
+      "post_concept_rewrite_generation": {
+        "status": "one_submission_two_generated_candidates_completed_at_completion_observation",
+        "manifest_ref": "input/validation/2026-10-22-track-07-concept-rewrite/generation-manifest.json",
+        "manifest_sha256": "43477d4c4c3730fd7b67b2e125ebfecd96bfd3768af1d2cb2bf2c00e5837b699",
+        "source_sha256_at_submission": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+        "source_txt_at_submission": "input/tracks/07_접힌 지도.txt",
+        "submitted_title": "7. 내일 뭐 해",
+        "submitted_title_status": "author_creative_proposal_not_user_confirmed",
+        "create_click_count": 1,
+        "credits_before": 2126,
+        "credits_after": 2116,
+        "previous_first_batch_candidate_ids": [
+          "5564f083-79a3-4090-b495-1c070572228b",
+          "f6af4d8b-7f56-458d-8f0e-5f74ba8fe784"
+        ],
+        "previous_first_batch_visibility": "not_rechecked_whole_current_list_during_later_generation",
+        "candidates": [
+          {
+            "id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+            "url": "https://suno.com/song/e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+            "displayed_name": "7. 내일 뭐 해",
+            "duration_displayed": "3:25",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          },
+          {
+            "id": "e69e2f04-0cc3-4b14-bd4c-3408312b74e0",
+            "url": "https://suno.com/song/e69e2f04-0cc3-4b14-bd4c-3408312b74e0",
+            "displayed_name": "7. 내일 뭐 해",
+            "duration_displayed": "3:11",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          }
+        ],
+        "user_selection_status": "pending_user_selection",
+        "audio_quality_status": "not_independently_assessed"
+      },
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "5564f083-79a3-4090-b495-1c070572228b",
+          "displayed_name": "07. 접힌 지도",
+          "url": "https://suno.com/song/5564f083-79a3-4090-b495-1c070572228b",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:46",
+          "source_sha256_at_generation": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
+          "submitted_title": "07. 접힌 지도",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt"
+        },
+        {
+          "id": "f6af4d8b-7f56-458d-8f0e-5f74ba8fe784",
+          "displayed_name": "07. 접힌 지도",
+          "url": "https://suno.com/song/f6af4d8b-7f56-458d-8f0e-5f74ba8fe784",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:40",
+          "source_sha256_at_generation": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
+          "submitted_title": "07. 접힌 지도",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -823,6 +1364,83 @@
         "context": "2026-10-21 generation input; not inferred as current cover input"
       },
       "candidates": [
+        {
+          "id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+          "displayed_name": "11. 메모 한 장",
+          "url": "https://suno.com/song/a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "cover",
+          "duration_displayed": "3:06",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-08.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/08_메모 한 장.txt",
+            "source_sha256": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511",
+            "style_exact": "In D Major. Korean acoustic neo-soul with bright chord changes, lightly syncopated acoustic guitar, a mobile warm bass line, supple live drums and sparse Rhodes accents. One close male chest-voice lead sings articulate Korean without harmony layers. The chorus becomes more buoyant through fuller chord voicing, still intimate and organic. Clear, lightly playful mix. TEMPO: EXACTLY 175 BPM, fixed and constant for the entire song. Maintain the same 175 BPM from the beginning through every section, transition, and ending. No speeding up, slowing down, or tempo drift. Keep the tempo fixed at 175 BPM even when the arrangement or rhythmic density changes.",
+            "style_sha256": "853714fa336ed844dc031010c9e6ccda13268777dff25c7f4dba3a061e6ba8a4",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "3aa99cac-e0ac-41c5-a99d-d358468f775b",
+          "cover_of_ui_parent_url": "https://suno.com/song/3aa99cac-e0ac-41c5-a99d-d358468f775b",
+          "cover_chain_ids_current_to_original": [
+            "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+            "3aa99cac-e0ac-41c5-a99d-d358468f775b"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:28",
+          "original_2026_10_21_candidate_id": "3aa99cac-e0ac-41c5-a99d-d358468f775b",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/3aa99cac-e0ac-41c5-a99d-d358468f775b",
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "8. 메모 한 장",
+          "title_after_agent_rename": "11. 메모 한 장",
+          "sequence_order": 11,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "decision": {
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
+        "release_approval_status": "not_recorded"
+      },
+      "before_user_remixes": {
+        "order": 8,
+        "title": "메모 한 장",
+        "source_txt": "input/tracks/08_메모 한 장.txt",
+        "source_sha256": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511",
+        "generation_status": "completed_candidates_observed",
+        "create_click_count": 1,
+        "submission_acceptance": "confirmed",
+        "candidates": [
+          {
+            "id": "3aa99cac-e0ac-41c5-a99d-d358468f775b",
+            "displayed_name": "8. 메모 한 장",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/3aa99cac-e0ac-41c5-a99d-d358468f775b",
+            "source_sha256_at_generation": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511"
+          },
+          {
+            "id": "c562cce8-0d8a-4868-bea9-ed9673d05c51",
+            "displayed_name": "8. 메모 한 장",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/c562cce8-0d8a-4868-bea9-ed9673d05c51",
+            "source_sha256_at_generation": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511"
+          }
+        ],
+        "decision": {
+          "status": "pending",
+          "chosen_candidate_id": null
+        }
+      },
+      "sequence_order": 11,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
         {
           "id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
           "displayed_name": "8. 메모 한 장",
@@ -855,41 +1473,12 @@
           "original_2026_10_21_candidate_position": "A"
         }
       ],
-      "decision": {
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
         "status": "user_retained",
         "chosen_candidate_id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
-      },
-      "before_user_remixes": {
-        "order": 8,
-        "title": "메모 한 장",
-        "source_txt": "input/tracks/08_메모 한 장.txt",
-        "source_sha256": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511",
-        "generation_status": "completed_candidates_observed",
-        "create_click_count": 1,
-        "submission_acceptance": "confirmed",
-        "candidates": [
-          {
-            "id": "3aa99cac-e0ac-41c5-a99d-d358468f775b",
-            "displayed_name": "8. 메모 한 장",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/3aa99cac-e0ac-41c5-a99d-d358468f775b",
-            "source_sha256_at_generation": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511"
-          },
-          {
-            "id": "c562cce8-0d8a-4868-bea9-ed9673d05c51",
-            "displayed_name": "8. 메모 한 장",
-            "observed_status": "playable",
-            "url": "https://suno.com/song/c562cce8-0d8a-4868-bea9-ed9673d05c51",
-            "source_sha256_at_generation": "575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511"
-          }
-        ],
-        "decision": {
-          "status": "pending",
-          "chosen_candidate_id": null
-        }
       }
     },
     {
@@ -910,9 +1499,9 @@
       "candidates": [
         {
           "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
-          "displayed_name": "9. 먼저 건넨 말",
+          "displayed_name": "15. 먼저 건넨 말",
           "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "existing_v6",
           "duration_displayed": "3:03",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -941,14 +1530,19 @@
             "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
             "source_sha256_at_generation": "6d85ce10cef350d9dae4b3a341fa725f81838ced2506ae47a6816b284d4b8dcf"
           },
-          "ui_style_matches_prior_txt_style_exact": false
+          "ui_style_matches_prior_txt_style_exact": false,
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "9. 먼저 건넨 말",
+          "title_after_agent_rename": "15. 먼저 건넨 말",
+          "sequence_order": 15,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1037,29 +1631,93 @@
         "target_bpm_source": 116,
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 182.068966
+      },
+      "sequence_order": 15,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
+          "displayed_name": "9. 먼저 건넨 말",
+          "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "existing_v6",
+          "duration_displayed": "3:03",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Korean acoustic R&B, 116 BPM, bright but unhurried; muted acoustic-guitar strokes and light handclaps on a dry drum-kit backbeat, warm moving bass, short electric-piano answers, fuller Rhodes chords and flowing guitar strums in the chorus; hushed, close-mic female chest-voice lead, with gang-vocal shouts on the hook; natural-room production.",
+          "observed_style_description_sha256": "418bed0d5efd524dd172ac32c0c5677c9a9312d64d22e2e90b5be3c35514d310",
+          "observed_workspace_style_display": "Korean acoustic R&B, 116 BPM, bright but unhurried; muted acoustic-guitar strokes and light handclaps on a dry drum-kit backbeat, warm moving bass, short electric-piano answers, fuller Rhodes chords and flowing guitar strums in the chorus; hushed, close-mic female chest-voice lead, with gang-vocal shouts on the hook; natural-room production",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-09.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/09_먼저 건넨 말.txt",
+            "source_sha256": "6d85ce10cef350d9dae4b3a341fa725f81838ced2506ae47a6816b284d4b8dcf",
+            "style_exact": "Korean acoustic R&B at 116 BPM in G Major, bright but unhurried. Muted acoustic-guitar strokes and light handclaps share the backbeat with a dry live drum kit; warm bass and short electric-piano answers leave room for the first awkward hello. One clear female chest-voice lead sings direct Korean. The verses stay spare; the chorus opens through rounded bass motion, Rhodes chords and more flowing guitar strums, still a single voice in a natural room.",
+            "style_sha256": "57b2c7e7404e33b8df3fc2e6890203d10486f9430c334bbcc5d45b42e6603f8a",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": null,
+          "cover_of_ui_parent_url": null,
+          "cover_chain_ids_current_to_original": [
+            "825e0bfc-a2cf-4892-b372-ded25c688eb8"
+          ],
+          "displayed_created_at": "2026년 10월 21일 오후 5:36",
+          "prior_generation_candidate_record": {
+            "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
+            "displayed_name": "9. 먼저 건넨 말",
+            "observed_status": "playable",
+            "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
+            "source_sha256_at_generation": "6d85ce10cef350d9dae4b3a341fa725f81838ced2506ae47a6816b284d4b8dcf"
+          },
+          "ui_style_matches_prior_txt_style_exact": false
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 10,
       "title": "계단 끝에서",
       "title_before_user_remixes": "계단 끝에서",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "submitted_source_title_with_current_displayed_name_observed",
+      "source_txt": "input/tracks/10_계단 끝에서.txt",
+      "source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+      "current_source_status": "lyric_only_revision_submitted_once_two_candidates_generated_at_completion; first_generation_source_archived",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/10_계단 끝에서.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/10_계단 끝에서.txt",
         "source_sha256": "9049ae0507e0caca456f5f0abfb140ee7f4fdacd39a013686e89b5102822f1cd",
         "style_exact": "In A Major. Bright, propulsive Korean acoustic R&B. Rhythmic acoustic-guitar chops, nimble bass and natural live drums carry a clean forward groove; small Rhodes figures color the gaps. One resonant male chest-voice lead sings clear Korean. The verse keeps its human hesitation and the chorus opens with fuller guitar chords and confident bass, staying organic and vocal-led. Tempo 112 BPM in a supple acoustic pocket. The verse stays in a comfortable spoken midrange; each chorus lifts the same male lead into a clear, forceful high chest-mix belt, sustaining the hook before the band answers.",
         "style_sha256": "705c4138823a5f80e40d8f01ee210039cea793fcf5863a524a6da375ef0aff46",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/10_계단 끝에서.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+          "url": "https://suno.com/song/af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+          "displayed_name": "9. 계단 끝에서",
+          "duration_displayed": "3:08",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+          "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "10. 계단 끝에서",
+          "title_after_agent_rename": "9. 계단 끝에서",
+          "sequence_order": 9,
+          "association_evidence": "user_chose_new_lyrics_3m08; old_8fab_not_visible_after_user_deletion"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1113,6 +1771,149 @@
         "target_bpm_source": 112,
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 180.0
+      },
+      "sequence_order": 9,
+      "draft_submission_status": "first_batch_earlier_revision_generated_two_candidates; later_lyric_revision_submitted_once_two_more_generated",
+      "draft_source_review_ref": "input/lyrics-review/10_계단 끝에서.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/10_계단 끝에서.txt",
+        "sha256": "9049ae0507e0caca456f5f0abfb140ee7f4fdacd39a013686e89b5102822f1cd",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "clean_electric_guitar",
+        "lyric_direction": "everyday_mantra",
+        "chorus_hook": "오늘은 여기까지"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:31:26.927000+09:00",
+        "submitted_title": "10. 계단 끝에서",
+        "source_sha256_at_submission": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+        "create_click_count": 1,
+        "credits_before": 2206,
+        "credits_after": 2196,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "43350759-fb64-49f6-81be-50cd51f3fdcb",
+            "url": "https://suno.com/song/43350759-fb64-49f6-81be-50cd51f3fdcb",
+            "submitted_title": "10. 계단 끝에서",
+            "duration_displayed": "3:10",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "10. 계단 끝에서"
+          },
+          {
+            "id": "8fab08ab-2489-4286-9b05-f1c4676ea432",
+            "url": "https://suno.com/song/8fab08ab-2489-4286-9b05-f1c4676ea432",
+            "submitted_title": "10. 계단 끝에서",
+            "duration_displayed": "3:28",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "10. 계단 끝에서"
+          }
+        ],
+        "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt",
+        "source_resolution_ref": "input/validation/2026-10-22-track-10-lyric-source-resolution.json"
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Current txt header is a frozen pre-submission source snapshot. The separate later Create and candidate IDs are recorded in post_lyric_rewrite_generation. First-batch candidates resolve to the archived earlier source.",
+      "source_revision": {
+        "revision_type": "lyric_only_rewrite",
+        "current_source_title": "계단 끝에서",
+        "title_status": "unchanged",
+        "source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+        "first_generation_source_archive": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt",
+        "first_generation_source_sha256": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+        "source_resolution_ref": "input/validation/2026-10-22-track-10-lyric-source-resolution.json",
+        "audio_quality_status": "not_independently_assessed"
+      },
+      "lyric_rewrite": {
+        "status": "source_review_clean_then_one_submission_two_candidates_completed_at_later_observation",
+        "user_request": "계단 끝에서 스타일은 좋은데 가사가 영 이해가 안가.",
+        "new_scene": "leave_work_subway_station_stairs_walk_home_and_rest",
+        "style_exclude_prefix_status": "byte_identical_to_first_generation_source",
+        "source_review_status": "clean_critical_high_zero",
+        "source_review_ref": ".ai/reviews/2026-10-22-track-10-lyric-source-review.md"
+      },
+      "post_lyric_rewrite_generation": {
+        "status": "one_submission_two_generated_candidates_completed_at_completion_observation",
+        "manifest_ref": "input/validation/2026-10-22-track-10-lyric-rewrite/generation-manifest.json",
+        "manifest_sha256": "23834807c388040358e7c7e4d0336a5e3f4a1b2dec7c0ec2228c8c9c8ac658fb",
+        "source_sha256_at_submission": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+        "source_txt_at_submission": "input/tracks/10_계단 끝에서.txt",
+        "submitted_title": "10. 계단 끝에서",
+        "create_click_count": 1,
+        "credits_before": 2116,
+        "credits_after": 2106,
+        "previous_first_batch_candidate_ids": [
+          "43350759-fb64-49f6-81be-50cd51f3fdcb",
+          "8fab08ab-2489-4286-9b05-f1c4676ea432"
+        ],
+        "previous_first_batch_visibility_at_later_final_observation": "B visible among 16 identified rows; remaining 7 row placeholders prevent complete current inventory; absence is not deletion",
+        "candidates": [
+          {
+            "id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+            "url": "https://suno.com/song/af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+            "displayed_name": "10. 계단 끝에서",
+            "duration_displayed": "3:08",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          },
+          {
+            "id": "41f0cf8e-f40f-45b7-85dd-d3323b5c473a",
+            "url": "https://suno.com/song/41f0cf8e-f40f-45b7-85dd-d3323b5c473a",
+            "displayed_name": "10. 계단 끝에서",
+            "duration_displayed": "3:06",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          }
+        ],
+        "user_selection_status": "pending_user_selection",
+        "audio_quality_status": "not_independently_assessed"
+      },
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "43350759-fb64-49f6-81be-50cd51f3fdcb",
+          "displayed_name": "10. 계단 끝에서",
+          "url": "https://suno.com/song/43350759-fb64-49f6-81be-50cd51f3fdcb",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:10",
+          "source_sha256_at_generation": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+          "submitted_title": "10. 계단 끝에서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt"
+        },
+        {
+          "id": "8fab08ab-2489-4286-9b05-f1c4676ea432",
+          "displayed_name": "10. 계단 끝에서",
+          "url": "https://suno.com/song/8fab08ab-2489-4286-9b05-f1c4676ea432",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:28",
+          "source_sha256_at_generation": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+          "submitted_title": "10. 계단 끝에서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -1133,9 +1934,9 @@
       "candidates": [
         {
           "id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
-          "displayed_name": "11. 종이비행기",
+          "displayed_name": "7. 종이비행기",
           "url": "https://suno.com/song/e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:08",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1160,14 +1961,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 2:16",
           "original_2026_10_21_candidate_id": "fe1580be-2bfe-4cf5-8d57-969f74449daa",
           "original_2026_10_21_candidate_url": "https://suno.com/song/fe1580be-2bfe-4cf5-8d57-969f74449daa",
-          "original_2026_10_21_candidate_position": "A"
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "11. 종이비행기",
+          "title_after_agent_rename": "7. 종이비행기",
+          "sequence_order": 7,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1221,6 +2027,49 @@
         "target_bpm_source": 104,
         "planned_bars": 80,
         "planned_duration_seconds_at_target_bpm": 184.615385
+      },
+      "sequence_order": 7,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+          "displayed_name": "11. 종이비행기",
+          "url": "https://suno.com/song/e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:08",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-11.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/11_종이비행기.txt",
+            "source_sha256": "58979f8826f8be769bdd1215625f554f9d5606b613f2e60df293e752d8599e50",
+            "style_exact": "Korean acoustic neo-soul in F Major, bright and mobile, with a nimble live drum pocket, rounded bass, syncopated acoustic guitar, and warm Rhodes chords. One clear female chest-voice lead sings Korean with conversational phrasing and an upfront natural tone; no vocal layering. Let the verses leave space for guitar and keys to answer; broaden the choruses with the same acoustic band and return to a lean outro. 4/4, about three minutes. Keep the first Verse pared to guitar and Rhodes; let short guitar replies follow the hesitant lines, then let bass carry the release in the final Chorus. Tempo 104 BPM in a supple acoustic pocket. Keep the letter-reading verses intimate and low; each chorus opens into one strong female high chest-mix belt, with a ringing sustained peak on the send-off phrase.",
+            "style_sha256": "30da8fa0786a5527957d0a31894c7869fe1c3529a7c4533adb4cc29a25b0e08b",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "fe1580be-2bfe-4cf5-8d57-969f74449daa",
+          "cover_of_ui_parent_url": "https://suno.com/song/fe1580be-2bfe-4cf5-8d57-969f74449daa",
+          "cover_chain_ids_current_to_original": [
+            "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+            "fe1580be-2bfe-4cf5-8d57-969f74449daa"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:16",
+          "original_2026_10_21_candidate_id": "fe1580be-2bfe-4cf5-8d57-969f74449daa",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/fe1580be-2bfe-4cf5-8d57-969f74449daa",
+          "original_2026_10_21_candidate_position": "A"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -1241,9 +2090,9 @@
       "candidates": [
         {
           "id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
-          "displayed_name": "12. 유리컵의 햇빛",
+          "displayed_name": "13. 유리컵의 햇빛",
           "url": "https://suno.com/song/a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:07",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1268,14 +2117,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 2:10",
           "original_2026_10_21_candidate_id": "f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
           "original_2026_10_21_candidate_url": "https://suno.com/song/f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
-          "original_2026_10_21_candidate_position": "B"
+          "original_2026_10_21_candidate_position": "B",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "12. 유리컵의 햇빛",
+          "title_after_agent_rename": "13. 유리컵의 햇빛",
+          "sequence_order": 13,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1329,29 +2183,92 @@
         "target_bpm_source": 112,
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 180.0
+      },
+      "sequence_order": 13,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+          "displayed_name": "12. 유리컵의 햇빛",
+          "url": "https://suno.com/song/a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:07",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-12.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/12_유리컵의 햇빛.txt",
+            "source_sha256": "0199a38c3d76fd27e90d83a33e076ddd618361ceef079317f15426e705605d6e",
+            "style_exact": "Korean acoustic R&B in C Major, buoyant and warm, with crisp live kick and snare, light hi-hat detail, springy bass, fingerpicked and offbeat-strummed acoustic guitar, and spare electric-piano fills. One clear male chest-voice lead sings Korean with relaxed, articulate phrasing; keep the vocal singular and close. Open the choruses through guitar rhythm and bass movement, leaving short instrumental replies between sung thoughts. 4/4, about three minutes. Use the bouncing bass as a quiet answer to the domestic details; keep early drums lean and let the last Chorus settle on open guitar chords. Tempo 112 BPM in a supple acoustic pocket. Let the domestic verses sit easily in the male lead’s midrange; each chorus rises to a strong, bright high chest-mix belt and holds the final thought before the guitar replies.",
+            "style_sha256": "f27d92e961162ba59bd64a57fd80e26bdae0d97dca14efcd8bd0f5fcb727095b",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
+          "cover_of_ui_parent_url": "https://suno.com/song/f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
+          "cover_chain_ids_current_to_original": [
+            "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+            "f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:10",
+          "original_2026_10_21_candidate_id": "f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
+          "original_2026_10_21_candidate_position": "B"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 13,
-      "title": "옆자리의 노래",
+      "title": "이 노래 끝날 때까지",
       "title_before_user_remixes": "옆자리의 노래",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "latest_user_confirmed_logical_title; actual_suno_displayed_title_unverified_after_15_35_snapshot",
+      "source_txt": "input/tracks/13_옆자리의 노래.txt",
+      "source_sha256": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
+      "current_source_status": "submitted_once_generation_completed_source_txt_header_predates_submission",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/13_옆자리의 노래.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/13_옆자리의 노래.txt",
         "source_sha256": "58a1a77f4ece2b4fc7ed4b8411f8ee78d31a076fc33c99bdaa98f77227cc7e62",
         "style_exact": "Korean acoustic R&B at 118 BPM in E Major. Muted nylon-guitar chops echo the brief bus-seat exchange; supple bass pickup, soft kick-rim groove and small Rhodes accents answer the vocal. One clear female solo lead sings Korean in an easy midrange through the verses, then reaches a strong, ringing high chest-mix belt on each chorus hook, with the final refrain held longer. Let guitar voicings and bass widen the band without vocal stacks.",
         "style_sha256": "feef22177d215c50b67191efe086aa2fdf6036336ea50f02d1f5eea869991455",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/13_옆자리의 노래.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "e4841985-ad4c-48db-9389-82eba13b7b7f",
+          "url": "https://suno.com/song/e4841985-ad4c-48db-9389-82eba13b7b7f",
+          "version_type": "later_user_curated_version_lineage_unverified",
+          "raw_prompt_status": "unverified; do not assign earlier source STYLE/EXCLUDE as actual generation inputs",
+          "source_lineage_status": "direct_Cover_parent_unverified",
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "displayed_name": "14. 이 노래 끝날 때까지",
+          "duration_displayed": "3:20",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "13. 이 노래 끝날 때까지",
+          "title_after_agent_rename": "14. 이 노래 끝날 때까지",
+          "sequence_order": 14,
+          "observed_style_description_status": "not_confirmed_for_this_later_user_version",
+          "source_generation_prompt_status": "unknown; current draft txt does not establish this ID’s generation prompt"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "e4841985-ad4c-48db-9389-82eba13b7b7f",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1405,7 +2322,113 @@
         "target_bpm_source": 118,
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 187.118644
-      }
+      },
+      "sequence_order": 14,
+      "draft_submission_status": "submitted_once_two_candidates_generated",
+      "draft_source_review_ref": "input/lyrics-review/13_옆자리의 노래.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/13_옆자리의 노래.txt",
+        "sha256": "58a1a77f4ece2b4fc7ed4b8411f8ee78d31a076fc33c99bdaa98f77227cc7e62",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "Rhodes",
+        "lyric_direction": "romance_everyday",
+        "chorus_hook": "이 노래 끝날 때까지"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:32:02.806000+09:00",
+        "submitted_title": "13. 옆자리의 노래",
+        "source_sha256_at_submission": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
+        "create_click_count": 1,
+        "credits_before": 2196,
+        "credits_after": 2186,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "e4905f48-093f-45b1-992c-1c759a7fbf08",
+            "url": "https://suno.com/song/e4905f48-093f-45b1-992c-1c759a7fbf08",
+            "submitted_title": "13. 옆자리의 노래",
+            "duration_displayed": "3:11",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "13. 옆자리의 노래"
+          },
+          {
+            "id": "3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+            "url": "https://suno.com/song/3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+            "submitted_title": "13. 옆자리의 노래",
+            "duration_displayed": "3:22",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "13. 옆자리의 노래"
+          }
+        ]
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
+      "title_before_2026_10_22_user_rename": "옆자리의 노래",
+      "source_filename_and_header_title_context": "The source file and Track header preserve 옆자리의 노래 at submission. User title history: 옆자리의 노래 -> 옆자리 -> 이 노래가 끝날 때까지 -> 이 노래 끝날 때까지. Latest logical title is 이 노래 끝날 때까지; Suno rename not confirmed.",
+      "title_intermediate_2026_10_22": "옆자리",
+      "title_history": [
+        {
+          "title": "옆자리의 노래",
+          "context": "source_filename_track_header_submitted_title_and_15_35_observation"
+        },
+        {
+          "title": "옆자리",
+          "context": "intermediate_user_confirmed_logical_title"
+        },
+        {
+          "title": "이 노래가 끝날 때까지",
+          "context": "latest_user_confirmed_logical_title_not_applied_in_suno"
+        },
+        {
+          "title": "이 노래 끝날 때까지",
+          "context": "latest_user_correction_아_미안_이_노래_끝날_때까지_not_applied_in_suno"
+        }
+      ],
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "e4905f48-093f-45b1-992c-1c759a7fbf08",
+          "displayed_name": "13. 옆자리의 노래",
+          "url": "https://suno.com/song/e4905f48-093f-45b1-992c-1c759a7fbf08",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:11",
+          "source_sha256_at_generation": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
+          "submitted_title": "13. 옆자리의 노래",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        },
+        {
+          "id": "3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+          "displayed_name": "13. 옆자리의 노래",
+          "url": "https://suno.com/song/3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:22",
+          "source_sha256_at_generation": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
+          "submitted_title": "13. 옆자리의 노래",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        }
+      ],
+      "current_candidate_lineage_status": "logical_song_association_by_current_unique_title; direct_Cover_parent_unverified; actual_generation_prompt_unverified",
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
+      },
+      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified"
     },
     {
       "order": 14,
@@ -1425,9 +2448,9 @@
       "candidates": [
         {
           "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
-          "displayed_name": "14. 작은 용기",
+          "displayed_name": "16. 작은 용기",
           "url": "https://suno.com/song/f737072d-2874-4b2e-802d-aee3975ed8a7",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:07",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1455,14 +2478,19 @@
           "intermediate_cover_style_observed": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
           "original_2026_10_21_candidate_id": "0d5f802a-92a8-4a9d-8003-191c5231608b",
           "original_2026_10_21_candidate_url": "https://suno.com/song/0d5f802a-92a8-4a9d-8003-191c5231608b",
-          "original_2026_10_21_candidate_position": "A"
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "14. 작은 용기",
+          "title_after_agent_rename": "16. 작은 용기",
+          "sequence_order": 16,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1516,29 +2544,92 @@
         "target_bpm_source": 100,
         "planned_bars": 76,
         "planned_duration_seconds_at_target_bpm": 182.4
+      },
+      "sequence_order": 16,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
+          "displayed_name": "14. 작은 용기",
+          "url": "https://suno.com/song/f737072d-2874-4b2e-802d-aee3975ed8a7",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:07",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n gender, key and tempo. A single dry lead vocal, recorded very close to the\n microphone, centered and clearly in front of the instruments, as if the\n singer were right in front of the listener. Full natural chest voice, precise\n Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n the voice intimate, direct and exceptionally clear throughout every section,\n including the chorus. Rebuild the backing with tight rhythmic drums, warm\n controlled deep bass, clean electric piano and restrained muted guitar\n accents. Leave space around the voice so every word is easy to hear. Clean\n instrument separation and polished modern production. Lift the chorus through\n rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "d10f9866ed17a1ee3db165cc3c78dece74970a60873a28e88afa283223dbc612",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n gender, key and tempo, A single dry lead vocal, recorded very close to the\n microphone, centered and clearly in front of the instruments, as if the\n singer were right in front of the listener, Full natural chest voice, precise\n Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n controlled deep bass, clean electric piano and restrained muted guitar\n accents, Leave space around the voice so every word is easy to hear, Clean\n instrument separation and polished modern production, Lift the chorus through\n rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-14.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/14_작은 용기.txt",
+            "source_sha256": "534c1e03df47e5100572568d7af7a616c1a3a96af01533189c78a9f373b0b300",
+            "style_exact": "Korean acoustic neo-soul in Bb Major, bright and mobile, with a nimble live drum pocket, rounded bass, syncopated acoustic guitar, and warm Rhodes chords. One clear male chest-voice lead sings Korean with conversational phrasing and an upfront natural tone; no vocal layering. Let the verses leave space for guitar and keys to answer; broaden the choruses with the same acoustic band and return to a lean outro. 4/4, about three minutes. Keep Rhodes exposed beneath the apology; let bass become more present after the message is sent, with a quiet band release after the final high note. Tempo 100 BPM in a supple acoustic pocket. The apology stays gentle in the verses, but the male lead reaches a clear strong high chest-mix belt in each chorus; the final refrain holds that high phrase before a quiet Rhodes release.",
+            "style_sha256": "bad05728df3e2aa1667cd936b471e2aa7b990519dc7d54909d9fc44080abe919",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "040dc1ac-45ec-4420-ade0-5b176acbb41c",
+          "cover_of_ui_parent_url": "https://suno.com/song/040dc1ac-45ec-4420-ade0-5b176acbb41c",
+          "cover_chain_ids_current_to_original": [
+            "f737072d-2874-4b2e-802d-aee3975ed8a7",
+            "040dc1ac-45ec-4420-ade0-5b176acbb41c",
+            "0d5f802a-92a8-4a9d-8003-191c5231608b"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:07",
+          "intermediate_cover_observation_ref": "input/validation/2026-10-22-current-suno/source-detail-14-parent.json",
+          "intermediate_cover_style_observed": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "original_2026_10_21_candidate_id": "0d5f802a-92a8-4a9d-8003-191c5231608b",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/0d5f802a-92a8-4a9d-8003-191c5231608b",
+          "original_2026_10_21_candidate_position": "A"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 15,
       "title": "웃음의 순서",
       "title_before_user_remixes": "웃음의 순서",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "submitted_source_title_with_current_displayed_name_observed",
+      "source_txt": "input/tracks/15_웃음의 순서.txt",
+      "source_sha256": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+      "current_source_status": "lyric_only_revision_submitted_once_two_candidates_generated_at_completion; first_generation_source_archived",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/15_웃음의 순서.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/15_웃음의 순서.txt",
         "source_sha256": "4bd21decd3bf3f9c9371a6641ca807ecdb0762bbf6416046c3dbc6d68bca95fd",
         "style_exact": "Korean acoustic R&B in G Major, buoyant and warm, with crisp live kick and snare, light hi-hat detail, springy bass, fingerpicked and offbeat-strummed acoustic guitar, and spare electric-piano fills. One clear female chest-voice lead sings Korean with relaxed, articulate phrasing; keep the vocal singular and close. Open the choruses through guitar rhythm and bass movement, leaving short instrumental replies between sung thoughts. 4/4, about three minutes. Leave conversational gaps in the Verse guitar part; let drum and bass accents meet more often as the table talk returns. Tempo 112 BPM in a supple acoustic pocket. Keep the family-table verses warm and conversational; the female lead opens every chorus with a strong high chest-mix belt and sustains its last line over the fuller bass groove.",
         "style_sha256": "1cb30e4a348bcb35102626c318f773a61d43331dd1803f0d440139b68e31b410",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/15_웃음의 순서.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source. The live input/tracks path now holds the later lyric-only source; the 2026-10-22 first-eight-song generation source is separately archived in source_before_track_15_lyric_rewrite."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+          "url": "https://suno.com/song/1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+          "displayed_name": "17. 웃음의 순서",
+          "duration_displayed": "3:19",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+          "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "15. 웃음의 순서",
+          "title_after_agent_rename": "17. 웃음의 순서",
+          "sequence_order": 17,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1592,29 +2683,192 @@
         "target_bpm_source": 112,
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 180.0
+      },
+      "sequence_order": 17,
+      "draft_submission_status": "first_batch_earlier_revision_generated_two_candidates; later_lyric_revision_submitted_once_two_more_generated",
+      "draft_source_review_ref": "input/lyrics-review/15_웃음의 순서.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/15_웃음의 순서.txt",
+        "sha256": "4bd21decd3bf3f9c9371a6641ca807ecdb0762bbf6416046c3dbc6d68bca95fd",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "Rhodes",
+        "lyric_direction": "everyday_mantra",
+        "chorus_hook": "이만하면 좋은 저녁"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:32:37.101000+09:00",
+        "submitted_title": "15. 웃음의 순서",
+        "source_sha256_at_submission": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
+        "create_click_count": 1,
+        "credits_before": 2186,
+        "credits_after": 2176,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+            "url": "https://suno.com/song/31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+            "submitted_title": "15. 웃음의 순서",
+            "duration_displayed": "3:18",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "15. 웃음의 순서"
+          },
+          {
+            "id": "b359d975-f68f-44b6-a1e5-3375b855d74f",
+            "url": "https://suno.com/song/b359d975-f68f-44b6-a1e5-3375b855d74f",
+            "submitted_title": "15. 웃음의 순서",
+            "duration_displayed": "3:17",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "15. 웃음의 순서"
+          }
+        ],
+        "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
+        "source_resolution_ref": "input/validation/2026-10-22-track-15-source-resolution.json"
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "The current txt header is a frozen pre-submission source snapshot. A later separate Create and two candidate IDs are recorded in post_lyric_rewrite_generation; the first batch used the archived earlier source.",
+      "source_before_track_15_lyric_rewrite": {
+        "source_txt_archive": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
+        "source_sha256": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
+        "archive_manifest": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/archive-manifest.json",
+        "source_resolution_ref": "input/validation/2026-10-22-track-15-source-resolution.json"
+      },
+      "current_lyric_revision": {
+        "source_txt": "input/tracks/15_웃음의 순서.txt",
+        "source_sha256": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+        "lyrics_sha256": "4586f53beffd12d99553f6ccdcfda085f3095274ec5f06f431dbbd1b654cb8ae",
+        "status": "text_validated_and_submitted_once_two_candidates_generated_at_later_completion",
+        "final_text_checks_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/source/final/command-results.json",
+        "preservation_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/source/final/preservation-and-style.json",
+        "source_review_status": "independent_source_review_clean",
+        "style_and_exclude": "byte_identical_to_first_eight_song_generation_source",
+        "source_review_ref": ".ai/reviews/2026-10-22-track-15-lyric-source-review.md"
+      },
+      "post_lyric_rewrite_generation": {
+        "status": "one_submission_two_generated_candidates_completed_at_completion_observation",
+        "manifest_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json",
+        "manifest_sha256": "f3fa3cae36c4f10f0e631e2390cd9274af5419d43764d162c45ecbc3b5669db0",
+        "source_sha256_at_submission": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+        "source_txt_at_submission": "input/tracks/15_웃음의 순서.txt",
+        "submitted_title": "15. 웃음의 순서",
+        "create_click_count": 1,
+        "credits_before": 2136,
+        "credits_after": 2126,
+        "previous_first_batch_candidate_ids": [
+          "31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+          "b359d975-f68f-44b6-a1e5-3375b855d74f"
+        ],
+        "previous_first_batch_visibility_at_pre_submit": "not_visible_in_inspected_view_not_deletion_confirmation",
+        "candidates": [
+          {
+            "id": "1a76c9b8-704b-440e-bc94-a3d15a720548",
+            "url": "https://suno.com/song/1a76c9b8-704b-440e-bc94-a3d15a720548",
+            "displayed_name": "15. 웃음의 순서",
+            "duration_displayed": "3:04",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          },
+          {
+            "id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+            "url": "https://suno.com/song/1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+            "displayed_name": "15. 웃음의 순서",
+            "duration_displayed": "3:19",
+            "observed_status": "visible_at_generation_completion_only",
+            "source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+            "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest"
+          }
+        ],
+        "user_selection_status": "pending_user_selection",
+        "audio_quality_status": "not_independently_assessed"
+      },
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+          "displayed_name": "15. 웃음의 순서",
+          "url": "https://suno.com/song/31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:18",
+          "source_sha256_at_generation": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
+          "submitted_title": "15. 웃음의 순서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt"
+        },
+        {
+          "id": "b359d975-f68f-44b6-a1e5-3375b855d74f",
+          "displayed_name": "15. 웃음의 순서",
+          "url": "https://suno.com/song/b359d975-f68f-44b6-a1e5-3375b855d74f",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:17",
+          "source_sha256_at_generation": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
+          "submitted_title": "15. 웃음의 순서",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "source_txt_archive_at_generation": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 16,
       "title": "돌아가는 길",
       "title_before_user_remixes": "돌아가는 길",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "submitted_source_title_with_current_displayed_name_observed",
+      "source_txt": "input/tracks/16_돌아가는 길.txt",
+      "source_sha256": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+      "current_source_status": "submitted_once_generation_completed_source_txt_header_predates_submission",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/16_돌아가는 길.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/16_돌아가는 길.txt",
         "source_sha256": "877ad4392a1ac5079ccaa5a8b647d9ecc2f49a4de4bd0bf56e59966120002e90",
         "style_exact": "Korean acoustic neo-soul at 108 BPM in D Major. Fingerpicked steel-string guitar marks the uncertain route while Rhodes holds warm extended chords; dry brushed kit and rounded syncopated bass give the detour an easy sway. One male solo chest-voice lead tells the verses in a close, relaxed range, then rises to a strong high chest-mix belt in each chorus and sustains the final hook. Open the guitar strums when familiar streets return; keep the sound natural and vocal-forward.",
         "style_sha256": "185b84af4376645f1b7651d4e98a3284ed4c506efbbde470bb88c3c203579a61",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/16_돌아가는 길.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "displayed_name": "18. 돌아가는 길",
+          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:08",
+          "source_sha256_at_generation": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+          "submitted_title": "16. 돌아가는 길",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "16. 돌아가는 길",
+          "title_after_agent_rename": "18. 돌아가는 길",
+          "sequence_order": 18,
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1668,6 +2922,89 @@
         "target_bpm_source": 108,
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 186.666667
+      },
+      "sequence_order": 18,
+      "draft_submission_status": "submitted_once_two_candidates_generated",
+      "draft_source_review_ref": "input/lyrics-review/16_돌아가는 길.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/16_돌아가는 길.txt",
+        "sha256": "877ad4392a1ac5079ccaa5a8b647d9ecc2f49a4de4bd0bf56e59966120002e90",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "plucked_synth",
+        "lyric_direction": "romance_everyday",
+        "chorus_hook": "조금만 더 걸을래"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:33:15.680000+09:00",
+        "submitted_title": "16. 돌아가는 길",
+        "source_sha256_at_submission": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+        "create_click_count": 1,
+        "credits_before": 2176,
+        "credits_after": 2166,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "1bffb45e-5e2b-489c-a464-080017e4857f",
+            "url": "https://suno.com/song/1bffb45e-5e2b-489c-a464-080017e4857f",
+            "submitted_title": "16. 돌아가는 길",
+            "duration_displayed": "3:08",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "16. 돌아가는 길"
+          },
+          {
+            "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+            "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+            "submitted_title": "16. 돌아가는 길",
+            "duration_displayed": "3:08",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "16. 돌아가는 길"
+          }
+        ]
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "1bffb45e-5e2b-489c-a464-080017e4857f",
+          "displayed_name": "16. 돌아가는 길",
+          "url": "https://suno.com/song/1bffb45e-5e2b-489c-a464-080017e4857f",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:08",
+          "source_sha256_at_generation": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+          "submitted_title": "16. 돌아가는 길",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        },
+        {
+          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "displayed_name": "16. 돌아가는 길",
+          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:08",
+          "source_sha256_at_generation": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+          "submitted_title": "16. 돌아가는 길",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -1688,9 +3025,9 @@
       "candidates": [
         {
           "id": "2917ff51-6540-4165-808f-8a158c14c371",
-          "displayed_name": "17. 새 잎",
+          "displayed_name": "19. 새 잎",
           "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:04",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1715,14 +3052,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 2:04",
           "original_2026_10_21_candidate_id": "e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
           "original_2026_10_21_candidate_url": "https://suno.com/song/e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
-          "original_2026_10_21_candidate_position": "B"
+          "original_2026_10_21_candidate_position": "B",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "17. 새 잎",
+          "title_after_agent_rename": "19. 새 잎",
+          "sequence_order": 19,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1776,6 +3118,49 @@
         "target_bpm_source": 104,
         "planned_bars": 80,
         "planned_duration_seconds_at_target_bpm": 184.615385
+      },
+      "sequence_order": 19,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "2917ff51-6540-4165-808f-8a158c14c371",
+          "displayed_name": "17. 새 잎",
+          "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:04",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-17.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/17_새 잎.txt",
+            "source_sha256": "824c7a8543f8026068139b4d2b25196eae6f18a5431a42ea93f395383d69cb06",
+            "style_exact": "Korean acoustic neo-soul in A Major, bright and mobile, with a nimble live drum pocket, rounded bass, syncopated acoustic guitar, and warm Rhodes chords. One clear female chest-voice lead sings Korean with conversational phrasing and an upfront natural tone; no vocal layering. Let the verses leave space for guitar and keys to answer; broaden the choruses with the same acoustic band and return to a lean outro. 4/4, about three minutes. Keep the opening guitar spare and Rhodes sustained; give the bass more motion only after the new leaf is noticed. Tempo 104 BPM in a supple acoustic pocket. The first sight of the new leaf is sung close and unforced; each chorus lets the female lead climb to a clear, strong high chest-mix belt, holding the hook before the Rhodes answers.",
+            "style_sha256": "4355c2ae2aef33bc1e37853a5c42dfd0e828bf3aa4f9f899fc2b63dc1763c07b",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
+          "cover_of_ui_parent_url": "https://suno.com/song/e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
+          "cover_chain_ids_current_to_original": [
+            "2917ff51-6540-4165-808f-8a158c14c371",
+            "e5cbcabe-7f8d-41ff-9004-0d7b1582626e"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:04",
+          "original_2026_10_21_candidate_id": "e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
+          "original_2026_10_21_candidate_position": "B"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
@@ -1796,9 +3181,9 @@
       "candidates": [
         {
           "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
-          "displayed_name": "18. 나란히 걷자",
+          "displayed_name": "20. 나란히 걷자",
           "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:04",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1823,14 +3208,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 1:57",
           "original_2026_10_21_candidate_id": "bd38ca4e-5169-447e-ba31-99c0329dcd7f",
           "original_2026_10_21_candidate_url": "https://suno.com/song/bd38ca4e-5169-447e-ba31-99c0329dcd7f",
-          "original_2026_10_21_candidate_position": "A"
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "18. 나란히 걷자",
+          "title_after_agent_rename": "20. 나란히 걷자",
+          "sequence_order": 20,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "14f93021-945e-4c2d-a2f6-e9f696660320",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1884,29 +3274,92 @@
         "target_bpm_source": 114,
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 185.263158
+      },
+      "sequence_order": 20,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+          "displayed_name": "18. 나란히 걷자",
+          "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:04",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-18.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/18_나란히 걷자.txt",
+            "source_sha256": "00a2fa2fa09e2df2852b240e408d6cae184c2f23cb65b380f08541c3ff6c63a6",
+            "style_exact": "Korean acoustic R&B in E Major, buoyant and warm, with crisp live kick and snare, light hi-hat detail, springy bass, fingerpicked and offbeat-strummed acoustic guitar, and spare electric-piano fills. One clear male chest-voice lead sings Korean with relaxed, articulate phrasing; keep the vocal singular and close. Open the choruses through guitar rhythm and bass movement, leaving short instrumental replies between sung thoughts. 4/4, about three minutes. Let fingerpicked guitar mark the first mismatched steps; bass and offbeat strums find an easy shared sway as the two walk together. Tempo 114 BPM in a supple acoustic pocket. The walking verses stay relaxed in the male lead’s midrange; each chorus lifts to a strong high chest-mix belt with one long, ringing hook note, while guitar and bass keep their shared sway.",
+            "style_sha256": "e9916ca3a58a3570d1d829827b8b9b382597e20b43ff19227f1c024338e1c9d9",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "bd38ca4e-5169-447e-ba31-99c0329dcd7f",
+          "cover_of_ui_parent_url": "https://suno.com/song/bd38ca4e-5169-447e-ba31-99c0329dcd7f",
+          "cover_chain_ids_current_to_original": [
+            "14f93021-945e-4c2d-a2f6-e9f696660320",
+            "bd38ca4e-5169-447e-ba31-99c0329dcd7f"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 1:57",
+          "original_2026_10_21_candidate_id": "bd38ca4e-5169-447e-ba31-99c0329dcd7f",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/bd38ca4e-5169-447e-ba31-99c0329dcd7f",
+          "original_2026_10_21_candidate_position": "A"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     },
     {
       "order": 19,
-      "title": "작은 파티",
+      "title": "우리 행복하자",
       "title_before_user_remixes": "작은 파티",
-      "title_status": "historical_title_current_workspace_not_observed",
-      "source_txt": null,
-      "source_sha256": null,
-      "current_source_status": "no_current_candidate_observed",
+      "title_status": "user_confirmed_logical_title_rename; 15_42_new_different_ids_display_requested_title_but_direct_cover_lineage_unverified",
+      "source_txt": "input/tracks/19_작은 파티.txt",
+      "source_sha256": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
+      "current_source_status": "submitted_once_generation_completed_source_txt_header_predates_submission",
       "source_before_user_remixes": {
-        "source_txt": "input/tracks/19_작은 파티.txt",
+        "source_txt": "input/source-history/2026-10-22-before-user-remixes/19_작은 파티.txt",
         "source_sha256": "f82c5cf9fcf3e5e7928325d044c0c04d59dc0807836948ef28285e8ae6f23ce9",
         "style_exact": "Bright Korean acoustic R&B at 120 BPM in C Major. Clipped acoustic strums, buoyant bass, crisp live kick-rim drums and a few handclap accents make a small-room party groove; Rhodes adds warm chord replies between guests. One female solo lead keeps the verses conversational, then sings each chorus in a bold high chest-mix belt with a held, ringing peak on the toast; the final refrain reaches highest. Let groove and voicing widen the band, without layered vocals.",
         "style_sha256": "45ec5a9705dd6875c93d8c2c7e78b666bb924d150c80bbf37b642051243ffaeb",
-        "context": "2026-10-21 generation input; not inferred as current cover input"
+        "context": "2026-10-21 generation input; not inferred as current cover input",
+        "original_live_source_txt_at_generation": "input/tracks/19_작은 파티.txt",
+        "path_context": "Archived copy of the 2026-10-21 generation source; live input/tracks path now holds the different 2026-10-22 source that was submitted once."
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+          "url": "https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b",
+          "version_type": "later_user_curated_version_lineage_unverified",
+          "raw_prompt_status": "unverified; do not assign earlier source STYLE/EXCLUDE as actual generation inputs",
+          "source_lineage_status": "direct_Cover_parent_unverified",
+          "association_evidence": "current_title_plus_full_lyrics_exact_match_to_source_19; direct Cover parent unverified",
+          "displayed_name": "12. 우리 행복하자",
+          "duration_displayed": "3:21",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "20. 우리 행복하자",
+          "title_after_agent_rename": "12. 우리 행복하자",
+          "sequence_order": 12,
+          "observed_style_description_status": "not_confirmed_for_this_later_user_version",
+          "source_generation_prompt_status": "unknown; current draft txt does not establish this ID’s generation prompt"
+        }
+      ],
       "decision": {
-        "status": "not_visible_current_workspace_list",
-        "chosen_candidate_id": null,
-        "scope": "current_list_observation_only",
-        "audio_quality_status": "unverified",
+        "status": "user_selected_for_20_song_sequence",
+        "chosen_candidate_id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -1960,7 +3413,129 @@
         "target_bpm_source": 120,
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 184.0
-      }
+      },
+      "sequence_order": 12,
+      "draft_submission_status": "submitted_once_two_candidates_generated",
+      "draft_source_review_ref": "input/lyrics-review/19_작은 파티.md",
+      "source_before_eight_song_rewrite": {
+        "archive_txt": "input/source-history/2026-10-22-before-eight-song-rewrite/tracks/19_작은 파티.txt",
+        "sha256": "f82c5cf9fcf3e5e7928325d044c0c04d59dc0807836948ef28285e8ae6f23ce9",
+        "archive_manifest": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json"
+      },
+      "draft_profile": {
+        "target_bpm": 175,
+        "target_bpm_status": "prompt_target_audio_unmeasured",
+        "lead_instrument": "clavinet",
+        "lyric_direction": "everyday_mantra",
+        "chorus_hook": "우리 행복하자"
+      },
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "generation_history": {
+        "status": "one_submission_two_generated_candidates_completed",
+        "submitted_at_local": "2026-10-22T15:33:44.927000+09:00",
+        "submitted_title": "19. 작은 파티",
+        "source_sha256_at_submission": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
+        "create_click_count": 1,
+        "credits_before": 2166,
+        "credits_after": 2156,
+        "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+        "candidates": [
+          {
+            "id": "a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+            "url": "https://suno.com/song/a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+            "submitted_title": "19. 작은 파티",
+            "duration_displayed": "3:39",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "19. 작은 파티"
+          },
+          {
+            "id": "fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+            "url": "https://suno.com/song/fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+            "submitted_title": "19. 작은 파티",
+            "duration_displayed": "3:21",
+            "completion_observed": true,
+            "visibility_in_15_35_filtered_list": "visible_with_filters",
+            "displayed_title_in_15_35_filtered_list": "19. 작은 파티"
+          }
+        ]
+      },
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
+      "title_before_2026_10_22_user_rename": "작은 파티",
+      "source_filename_and_header_title_context": "The source file and Track header preserve 작은 파티 at submission. The submitted title was 19. 작은 파티; the current logical title is 우리 행복하자.",
+      "post_15_35_title_observation": {
+        "observed_at_local": "2026-10-22T15:42:31+09:00",
+        "audit_ref": "input/validation/2026-10-22-title-rename-19/title-rename-audit.json",
+        "original_submitted_candidates_visibility": [
+          {
+            "id": "a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+            "visibility": "not_observed_in_current_26_row_view"
+          },
+          {
+            "id": "fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+            "visibility": "not_observed_in_current_26_row_view"
+          }
+        ],
+        "different_ids_displaying_requested_title": [
+          {
+            "id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+            "url": "https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b",
+            "displayed_title": "20. 우리 행복하자",
+            "displayed_duration": "3:21",
+            "opening_lyrics_match_source_19": true,
+            "cover_lineage_visible_in_detail": false
+          },
+          {
+            "id": "d8924e1a-4c14-4f6a-b482-2248f77cd70b",
+            "url": "https://suno.com/song/d8924e1a-4c14-4f6a-b482-2248f77cd70b",
+            "displayed_title": "20. 우리 행복하자",
+            "displayed_duration": "3:19",
+            "opening_lyrics_match_source_19": true,
+            "cover_lineage_visible_in_detail": false
+          }
+        ],
+        "lineage_status": "pending_direct_cover_parent_evidence; do_not_merge_into_original_track_19_generation_history_or_15_35_candidate_snapshot",
+        "rename_attempt_count": 0,
+        "successful_rename_count": 0
+      },
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+          "displayed_name": "19. 작은 파티",
+          "url": "https://suno.com/song/a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "A",
+          "duration_displayed": "3:39",
+          "source_sha256_at_generation": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
+          "submitted_title": "19. 작은 파티",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        },
+        {
+          "id": "fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+          "displayed_name": "19. 작은 파티",
+          "url": "https://suno.com/song/fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+          "observed_status": "visible_with_filters_during_user_curation",
+          "version_type": "new_v6_generated",
+          "generation_variant": "B",
+          "duration_displayed": "3:21",
+          "source_sha256_at_generation": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
+          "submitted_title": "19. 작은 파티",
+          "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
+          "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json"
+        }
+      ],
+      "current_candidate_lineage_status": "logical_song_association_by_current_unique_title_and_full_lyrics_exact_match; direct_Cover_parent_unverified; actual_generation_prompt_unverified",
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "pending_user_selection",
+        "chosen_candidate_id": null,
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
+      },
+      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified"
     },
     {
       "order": 20,
@@ -1980,9 +3555,9 @@
       "candidates": [
         {
           "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
-          "displayed_name": "20. 오늘의 기록",
+          "displayed_name": "1. 오늘의 기록",
           "url": "https://suno.com/song/08d90306-9cf5-43f2-8fad-df2d4d2adae8",
-          "observed_status": "visible_complete_in_workspace_list",
+          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:17",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -2007,14 +3582,19 @@
           "displayed_created_at": "2026년 10월 22일 오후 2:00",
           "original_2026_10_21_candidate_id": "fb512f6a-30f1-4652-9341-d920ad0b06b6",
           "original_2026_10_21_candidate_url": "https://suno.com/song/fb512f6a-30f1-4652-9341-d920ad0b06b6",
-          "original_2026_10_21_candidate_position": "A"
+          "original_2026_10_21_candidate_position": "A",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "title_before_agent_rename": "20. 오늘의 기록",
+          "title_after_agent_rename": "1. 오늘의 기록",
+          "sequence_order": 1,
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "decision": {
-        "status": "user_retained",
+        "status": "user_selected_for_20_song_sequence",
         "chosen_candidate_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
-        "scope": "workspace_retention_only",
-        "audio_quality_status": "unverified",
+        "scope": "user_listening_pass_and_post_rename_filtered_20_ID_observation",
+        "audio_quality_status": "user_listening_pass_reported; technical_checks_not_independently_performed",
         "release_approval_status": "not_recorded"
       },
       "before_user_remixes": {
@@ -2068,7 +3648,181 @@
         "target_bpm_source": 104,
         "planned_bars": 80,
         "planned_duration_seconds_at_target_bpm": 184.615385
+      },
+      "sequence_order": 1,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "candidates_at_15_35_filtered_observation": [
+        {
+          "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+          "displayed_name": "20. 오늘의 기록",
+          "url": "https://suno.com/song/08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+          "observed_status": "visible_complete_in_workspace_list",
+          "version_type": "cover",
+          "duration_displayed": "3:17",
+          "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
+          "observed_style_description": "Modern R&B remix. Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo. A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener. Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds. Keep\n  the voice intimate, direct and exceptionally clear throughout every section,\n  including the chorus. Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents. Leave space around the voice so every word is easy to hear. Clean\n  instrument separation and polished modern production. Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present.",
+          "observed_style_description_sha256": "72ad21156a1502fdf47e455389260d8849ec24d2d8a2659286bd38a526e258c1",
+          "observed_workspace_style_display": "Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to the\n  microphone, centered and clearly in front of the instruments, as if the\n  singer were right in front of the listener, Full natural chest voice, precise\n  Korean diction, clear consonants, smooth highs and controlled S sounds, Keep\n  the voice intimate, direct and exceptionally clear throughout every section, including the chorus, Rebuild the backing with tight rhythmic drums, warm\n  controlled deep bass, clean electric piano and restrained muted guitar\n  accents, Leave space around the voice so every word is easy to hear, Clean\n  instrument separation and polished modern production, Lift the chorus through\n  rhythm and instrumentation while keeping the lead vocal dry and present, ‑vocal reverb, ‑vocal delay, ‑room reflections, ‑distant vocals, ‑vocal doubling, ‑backing harmonies, ‑breathy whisper vocals, ‑lo-fi distortion",
+          "raw_prompt_status": "unverified",
+          "observation_ref": "input/validation/2026-10-22-current-suno/detail-20.json",
+          "source_before_user_remixes": {
+            "source_txt": "input/tracks/20_오늘을 남겨.txt",
+            "source_sha256": "eec22426ef750e53540639a65c9dea52003f70d609cdbe59a5d35fb0838ad4cf",
+            "style_exact": "Korean acoustic neo-soul in F Major, bright and mobile, with a nimble live drum pocket, rounded bass, syncopated acoustic guitar, and warm Rhodes chords. One clear male chest-voice lead sings Korean with conversational phrasing and an upfront natural tone; no vocal layering. Let the verses leave space for guitar and keys to answer; broaden the choruses with the same acoustic band and return to a lean outro. 4/4, about three minutes. Let Rhodes and guitar exchange brief phrases in the Verses; return to the opening guitar figure in the final Chorus and thin the Outro at the same pulse. Tempo 104 BPM in a supple acoustic pocket. Keep the remembered details quiet in the male lead’s midrange; each chorus reaches a strong high chest-mix belt, and the final hook holds its peak before the opening guitar returns.",
+            "style_sha256": "690066e58b09854c908b10c34190103b665d326cebf3be6e241a980a93e233de",
+            "context": "2026-10-21 generation input; not inferred as current cover input"
+          },
+          "cover_of_ui_parent_id": "fb512f6a-30f1-4652-9341-d920ad0b06b6",
+          "cover_of_ui_parent_url": "https://suno.com/song/fb512f6a-30f1-4652-9341-d920ad0b06b6",
+          "cover_chain_ids_current_to_original": [
+            "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+            "fb512f6a-30f1-4652-9341-d920ad0b06b6"
+          ],
+          "displayed_created_at": "2026년 10월 22일 오후 2:00",
+          "original_2026_10_21_candidate_id": "fb512f6a-30f1-4652-9341-d920ad0b06b6",
+          "original_2026_10_21_candidate_url": "https://suno.com/song/fb512f6a-30f1-4652-9341-d920ad0b06b6",
+          "original_2026_10_21_candidate_position": "A"
+        }
+      ],
+      "previous_15_35_decision_status": "historical_filtered_observation_before_user_final_selection",
+      "decision_at_15_35_filtered_observation": {
+        "status": "user_retained",
+        "chosen_candidate_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+        "scope": "15:35_filtered_snapshot_during_user_curation",
+        "release_approval_status": "not_recorded"
       }
     }
-  ]
+  ],
+  "eight_song_draft_status": "submitted_once_each_two_candidates_generated; source txt header is a pre-submission snapshot",
+  "eight_song_draft_orders": [
+    3,
+    6,
+    7,
+    10,
+    13,
+    15,
+    16,
+    19
+  ],
+  "eight_song_draft_summary_ref": "input/validation/2026-10-22-eight-song-source-summary.json",
+  "before_eight_song_rewrite_archive": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json",
+  "historical_generation_source_path_context": "Nested before_user_remixes objects are exact 2026-10-21 snapshots: their source_txt paths name the then-live files. The eight rewritten live input/tracks files have different SHA-256 values and were submitted once each on 2026-10-22; historical generation inputs resolve to archives.",
+  "sequence_status": "twenty_suno_titles_renamed_and_verified; private_twenty_song_playlist_order_verified",
+  "sequence_decision": {
+    "source_track_order": 20,
+    "song_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+    "sequence_order": 1,
+    "other_19_sequence_orders": "applied_in_song_title_numbers_and_private_playlist_order",
+    "scope": "twenty_user_selected_song_IDs_in_private_ordered_playlist; workspace_row_order_not_claimed; no_release_approval",
+    "user_fixed_first_slot": true,
+    "other_slots": "creative_arrangement_delegated_not_explicitly_user_finalized"
+  },
+  "before_eight_song_generation_workspace_observation": {
+    "observed_at": "2026-10-22T14:59:38+09:00",
+    "observation_ref": "input/validation/2026-10-22-current-suno/observation.json",
+    "observation_sha256": "04c28c2ca2de33cd089aefb5760cc012f1ebf45751450b09e48f3cef046a8ec7",
+    "observed_current_workspace_song_count": 12,
+    "current_song_count_evidence": "UI footer 12 songs; 12 rows with original filters and filters cleared; Next/Page 2 attempts did not change rows but pagination completeness was not independently established",
+    "current_cover_count_observed": 10,
+    "current_existing_v6_count_observed": 2
+  },
+  "current_workspace_observation_scope": "Filtered post-rename 16:29 KST snapshot with 20 unique IDs; no assertion about later workspace changes.",
+  "pre_generation_candidate_archive": "input/source-history/2026-10-22-before-eight-song-generation/archive-manifest.json",
+  "eight_song_generation": {
+    "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+    "manifest_sha256": "7523f29d87ad1e0e422a839fe2d6bdf4cb012af91ba281c9f84228f2c38f5d83",
+    "summary_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+    "summary_sha256": "f6a58b20797eb3e4e3fbb3763df5ff54a323e9646c18ccaac7ca68f19ea5c0b0",
+    "requests_accepted": 8,
+    "candidates_historically_generated": 16,
+    "credits_before": 2236,
+    "credits_after": 2156,
+    "credits_spent_observed": 80,
+    "current_filtered_observation": {
+      "observed_utc_start": "2026-10-22T06:35:11.213Z",
+      "observed_utc_end": "2026-10-22T06:35:12.202Z",
+      "workspace_ui_count": 26,
+      "filter_indicator": "Filters (3)",
+      "baseline_12_ids_visible": true,
+      "new_candidate_ids_visible": 14,
+      "new_candidate_ids_not_visible": [
+        "4f5d6505-ff13-40b3-8a04-e2102acecc85",
+        "f36e3a7a-1da0-4b33-8234-76952df8b76e"
+      ],
+      "status": "user_curation_in_progress",
+      "interpretation": "Two generated candidates were not visible with the existing workspace filters during this observation. Do not infer deletion or restore them. This is a snapshot, not a final selection inventory.",
+      "evidence_files": [
+        "current-selection-independent-tab-initial.txt",
+        "current-selection-scroll-merged.json",
+        "current-selection-scroll-0.txt",
+        "current-selection-scroll-1.txt",
+        "current-selection-scroll-2.txt",
+        "current-selection-scroll-3.txt",
+        "current-selection-scroll-4.txt"
+      ]
+    },
+    "currently_visible_new_candidates": 14,
+    "generated_not_visible_with_filters": [
+      "4f5d6505-ff13-40b3-8a04-e2102acecc85",
+      "f36e3a7a-1da0-4b33-8234-76952df8b76e"
+    ],
+    "audio_content_and_bpm_status": "not_independently_checked",
+    "sequence_number_rename_status": "not_started_pending_user_curation"
+  },
+  "playback_order_ref": "input/playback-order.json",
+  "post_generation_title_observations": [
+    {
+      "source_order": 19,
+      "audit_ref": "input/validation/2026-10-22-title-rename-19/title-rename-audit.json",
+      "observed_at_local": "2026-10-22T15:42:31+09:00",
+      "scope": "later_filtered_view; two original submitted IDs not visible; two different IDs display 20. 우리 행복하자; direct Cover lineage unverified; no rename performed",
+      "related_track_candidate_link_status": "pending_lineage_not_current_source_19_candidate_assignment"
+    }
+  ],
+  "eight_song_draft_summary_ref_context": "Historical source summary for the first eight-song generation. Tracks 07, 10, and 15 were later revised; use their current source_sha256 and individual source-resolution records for the active drafts.",
+  "later_rewrite_generation_context": "Tracks 07, 10, and 15 each had one separate later Create and two generated candidates. Their later candidate IDs are separate from the 15:35 filtered 26-ID snapshot. Zen subsequently selected one version for each of the 20 song slots; see current candidates and private playlist audit.",
+  "historical_filtered_observation_15_35": {
+    "observed_at": "2026-10-22T15:35:12+09:00",
+    "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
+    "observation_sha256": "f6a58b20797eb3e4e3fbb3763df5ff54a323e9646c18ccaac7ca68f19ea5c0b0",
+    "observed_current_workspace_song_count": 26,
+    "current_song_count_evidence": "Filters (3) remained applied; footer and scroll-merged rows showed 26 IDs at 15:35:11-12 KST. No unfiltered completeness check for this observation.",
+    "current_cover_count_observed": 10,
+    "current_existing_v6_count_observed": 2,
+    "current_new_generation_candidate_count_observed": 14,
+    "current_workspace_observation_scope": "Filtered 15:35:11-12 KST snapshot only during ongoing user curation. It is not a final or continuously current inventory; absence does not establish deletion.",
+    "description": "15:35 filtered 26-ID snapshot during earlier user curation, before later lyric regeneration and final 20-ID selection"
+  },
+  "selection_and_quality_context": {
+    "user_listening_verdict": "좋아 모두 통과.",
+    "source_10_selected_option": "새 가사 3:08로 20곡 구성 (추천) — ‘오늘은 여기까지’ 후렴으로 다시 만든 버전이에요.",
+    "source_10_chosen_id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+    "old_10_user_statement": "기존건 지웠어.",
+    "old_10_workspace_observation": "not_visible_in_complete_20_ID_filtered_preflight_after_user_statement",
+    "agent_deletion_actions": 0,
+    "technical_audio_bpm_and_quality": "not_independently_measured",
+    "release_approval": "not_recorded",
+    "private_playlist_order": "20_selected_IDs_and_titles_verified_in_Default_order_after_reopen"
+  },
+  "sequence_application": {
+    "preflight_ref": "input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json",
+    "preflight_sha256": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69",
+    "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+    "rename_audit_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+    "title_saves": 20,
+    "post_rename_unique_ids": 20,
+    "post_rename_title_mismatches": 0,
+    "workspace_row_order_changed": "not_claimed",
+    "playlist_status": "completed_and_reopened_verified",
+    "playlist_audit_ref": "input/validation/2026-10-22-sequence-playlist/playlist-audit.json",
+    "playlist_audit_sha256": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc",
+    "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74",
+    "playlist_url": "https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74",
+    "playlist_privacy": "private_make_public_action_visible",
+    "playlist_sort": "Default",
+    "playlist_song_count": 20,
+    "playlist_order_matches_selected_ids_and_titles": true,
+    "playlist_reopened_order_persisted": true
+  }
 }

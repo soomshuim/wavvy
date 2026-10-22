@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "archive_tracks/10_계단 끝에서.txt",
+      "pass": true,
+      "sha256": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+      "bytes": 2779
+    },
+    {
+      "name": "archive_lyrics-review/10_계단 끝에서.md",
+      "pass": true,
+      "sha256": "65b86b62606f72f75a71cb1b6f94c55cd24f8d3fc1c825af9532e12a727fd8e5",
+      "bytes": 4869
+    },
+    {
+      "name": "header_style_exclude_prefix_byte_equal",
+      "pass": true,
+      "old_sha256": "12f7c2bd52f932a79e6e52663df8e63603dc5101e6845fd5b6129665e91656d0",
+      "new_sha256": "12f7c2bd52f932a79e6e52663df8e63603dc5101e6845fd5b6129665e91656d0"
+    },
+    {
+      "name": "style_byte_equal",
+      "pass": true,
+      "sha256": "ef54fb0c658577faf13fe7208a41d4db95ead3078240097462e03ba84259fae8"
+    },
+    {
+      "name": "exclude_byte_equal",
+      "pass": true,
+      "sha256": "1526cbee0fea0f3af4bde2309f564420a5118dba49a116f113fd34df83787512"
+    },
+    {
+      "name": "source_review_lyric_exact",
+      "pass": true,
+      "lyric_sha256": "e5f0478e13cf7497a0f3d664ee840243fdfa62a6455a28b29cd30671d7146674"
+    },
+    {
+      "name": "approved_specific_line",
+      "pass": true
+    },
+    {
+      "name": "old_and_new_lyrics_differ",
+      "pass": true
+    },
+    {
+      "name": "narrow_git_diff_check",
+      "pass": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "current_source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+  "current_review_sha256": "ea12e3327f7fc207ccca497eb4d64c8268af79d166caebef6d08906665c07a3a",
+  "other_tracks_unchanged_at_edit": 19,
+  "scope": "Track 10 source rewrite and archive; no audio assessment"
+}

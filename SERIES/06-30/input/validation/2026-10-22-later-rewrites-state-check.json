@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "wavvy.py",
+    "state",
+    "SERIES/06-30",
+    "--check",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 56,\n    \"updated_at\": \"2026-10-22T16:16:11\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 0,\n      \"available_audio_files\": 0,\n      \"audio_source\": \"missing\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      }\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+  "stderr": "",
+  "checked_at_utc": "2026-10-22T07:16:11.941727+00:00"
+}

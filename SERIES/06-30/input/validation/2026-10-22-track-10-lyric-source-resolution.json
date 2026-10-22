@@ -1,0 +1,37 @@
+{
+  "schema": "wavvy.track-source-resolution.v1",
+  "source_order": 10,
+  "original_submitted_title": "10. 계단 끝에서",
+  "first_eight_song_generation": {
+    "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+    "manifest_source_path_at_submission": "SERIES/06-30/input/tracks/10_계단 끝에서.txt",
+    "resolved_immutable_source_path": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt",
+    "source_sha256": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
+    "generated_candidate_ids": [
+      "43350759-fb64-49f6-81be-50cd51f3fdcb",
+      "8fab08ab-2489-4286-9b05-f1c4676ea432"
+    ]
+  },
+  "later_source_revision": {
+    "revision_type": "lyric_only_rewrite",
+    "source_path": "input/tracks/10_계단 끝에서.txt",
+    "source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+    "source_title": "계단 끝에서",
+    "source_validation_ref": "input/validation/2026-10-22-track-10-lyric-rewrite/source/final/command-results.json",
+    "preservation_ref": "input/validation/2026-10-22-track-10-lyric-rewrite/source/final/preservation-and-style.json",
+    "generation_status_at_source_validation": "not_submitted_for_regeneration_at_source_validation"
+  },
+  "resolution_rule": "The first generation raw manifest source_path named the live source at that submission; resolve its candidates to the archived file and original SHA. The later generation used the revised live source and has its own immutable manifest.",
+  "second_generation": {
+    "manifest_ref": "input/validation/2026-10-22-track-10-lyric-rewrite/generation-manifest.json",
+    "manifest_sha256": "23834807c388040358e7c7e4d0336a5e3f4a1b2dec7c0ec2228c8c9c8ac658fb",
+    "submitted_source_path": "input/tracks/10_계단 끝에서.txt",
+    "submitted_source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+    "submitted_title": "10. 계단 끝에서",
+    "generated_candidate_ids": [
+      "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+      "41f0cf8e-f40f-45b7-85dd-d3323b5c473a"
+    ],
+    "completion_observation_scope": "visible_at_generation_completion_only; no final user selection or complete current inventory"
+  }
+}

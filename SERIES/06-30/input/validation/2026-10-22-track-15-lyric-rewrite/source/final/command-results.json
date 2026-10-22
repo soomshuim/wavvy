@@ -1,0 +1,65 @@
+{
+  "scope": "final Track 15 lyric-only rewrite; text checks only",
+  "results": [
+    {
+      "check": "track-prompt",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/06-30",
+        "--stage",
+        "track-prompt",
+        "--artifact",
+        "SERIES/06-30/input/tracks/15_웃음의 순서.txt",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": "PASS",
+      "json": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/track-prompt.json",
+      "stderr": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/track-prompt.stderr.txt"
+    },
+    {
+      "check": "lyrics-skill",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "lyrics-skill",
+        "SERIES/06-30",
+        "--artifact",
+        "SERIES/06-30/input/lyrics-review/15_웃음의 순서.md",
+        "--mode",
+        "full-lyric-draft",
+        "--draft-scope",
+        "full-song",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": "PASS",
+      "json": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/lyrics-skill.json",
+      "stderr": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/lyrics-skill.stderr.txt"
+    },
+    {
+      "check": "lyrics-review",
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/06-30",
+        "--stage",
+        "lyrics-review",
+        "--artifact",
+        "SERIES/06-30/input/lyrics-review/15_웃음의 순서.md",
+        "--mode",
+        "full-lyric-draft",
+        "--draft-scope",
+        "full-song",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": "PASS",
+      "json": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/lyrics-review.json",
+      "stderr": "SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/lyrics-review.stderr.txt"
+    }
+  ]
+}

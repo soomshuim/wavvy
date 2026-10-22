@@ -1,0 +1,39 @@
+{
+  "schema": "wavvy.track-source-resolution.v1",
+  "source_order": 15,
+  "source_title": "웃음의 순서",
+  "first_eight_song_generation": {
+    "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
+    "manifest_source_path_at_submission": "SERIES/06-30/input/tracks/15_웃음의 순서.txt",
+    "resolved_immutable_source_path": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
+    "source_sha256": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
+    "source_summary_ref": "input/validation/2026-10-22-eight-song-source-summary.json",
+    "source_summary_status": "historical_as_of_first_eight_song_generation",
+    "generated_candidate_ids": [
+      "31cc7943-f9a7-428c-beef-fb5e9a4406f2",
+      "b359d975-f68f-44b6-a1e5-3375b855d74f"
+    ]
+  },
+  "current_lyric_revision": {
+    "source_path": "input/tracks/15_웃음의 순서.txt",
+    "source_sha256": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+    "lyrics_sha256": "4586f53beffd12d99553f6ccdcfda085f3095274ec5f06f431dbbd1b654cb8ae",
+    "status": "submitted_once_two_candidates_generated_at_completion_observation",
+    "final_text_checks_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/source/final/command-results.json",
+    "preservation_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/source/final/preservation-and-style.json",
+    "style_exclude_prefix_byte_identical_to_first_generation_source": true
+  },
+  "resolution_rule": "The first-eight-song raw generation manifest source_path names the live path at that earlier submission time; the first-generation source is now resolved to the archive with the old SHA. The second-generation manifest used the current lyric revision with a new SHA. Neither completion observation establishes final user selection or audio quality.",
+  "second_generation": {
+    "manifest_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json",
+    "manifest_sha256": "f3fa3cae36c4f10f0e631e2390cd9274af5419d43764d162c45ecbc3b5669db0",
+    "source_path": "input/tracks/15_웃음의 순서.txt",
+    "source_sha256": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+    "create_click_count": 1,
+    "generated_candidate_ids": [
+      "1a76c9b8-704b-440e-bc94-a3d15a720548",
+      "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa"
+    ],
+    "visible_at_completion_only": true
+  }
+}

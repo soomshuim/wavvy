@@ -1,0 +1,290 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "기분좋아져라 by @wavvy24 | Suno" [url=https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74]
+- main
+- region "Bottom notifications" [ref=e207]
+- region "Top notifications" [ref=e208]
+- region "Bottom edge notifications" [ref=e209]
+- dialog "Add to playlist":
+  - button "Close" [ref=e1912] [focused]
+  - text: "Add to playlist"
+  - tablist "Song source":
+    - tab "Library" [ref=e1913] [selected]
+    - tab "For You" [ref=e1914]
+  - tabpanel "Library" [ref=e1915]:
+    - textbox "Search for a song, lyric or style" [ref=e1916] [placeholder="Search for a song, lyric or style"]
+    - combobox "Filters" [ref=e1917]
+    - combobox "Newest" [ref=e1918]
+    - generic [ref=e1919] [scrollable]:
+      - rowgroup:
+        - group "9. 계단 끝에서":
+          - button "Play 9. 계단 끝에서" [ref=e1920]: "9. 계단 끝에서 artwork"
+          - link "9. 계단 끝에서" [ref=e1921]
+          - text: "V6 Korean R&B, neo-soul"
+          - button "Add 9. 계단 끝에서" [ref=e1922]
+        - group "3. 내일 뭐 해":
+          - button "Play 3. 내일 뭐 해" [ref=e1923]: "3. 내일 뭐 해 artwork"
+          - link "3. 내일 뭐 해" [ref=e1924]
+          - text: "V6 R&B, neo-soul"
+          - button "Add 3. 내일 뭐 해" [ref=e1925]
+        - group "17. 웃음의 순서":
+          - button "Play 17. 웃음의 순서" [ref=e1926]: "17. 웃음의 순서 artwork"
+          - link "17. 웃음의 순서" [ref=e1927]
+          - text: "V6 Korean R&B, neo-soul"
+          - button "Add 17. 웃음의 순서" [ref=e1928]
+        - group "14. 이 노래 끝날 때까지":
+          - button "Play 14. 이 노래 끝날 때까지" [ref=e1929]: "14. 이 노래 끝날 때까지 artwork"
+          - link "14. 이 노래 끝날 때까지" [ref=e1930]
+          - text: "V6 Korean R&B, neo-soul"
+          - button "Add 14. 이 노래 끝날 때까지" [ref=e1931]
+        - group "12. 우리 행복하자":
+          - button "Play 12. 우리 행복하자" [ref=e1932]: "12. 우리 행복하자 artwork"
+          - link "12. 우리 행복하자" [ref=e1933]
+          - text: "V6 Korean R&B, neo-soul"
+          - button "Add 12. 우리 행복하자" [ref=e1934]
+        - group "18. 돌아가는 길":
+          - button "Play 18. 돌아가는 길" [ref=e1935]: "18. 돌아가는 길 artwork"
+          - link "18. 돌아가는 길" [ref=e1936]
+          - text: "V6 neo-soul, R&B"
+          - button "Add 18. 돌아가는 길" [ref=e1937]
+        - group "8. 빵집 앞에서":
+          - button "Play 8. 빵집 앞에서" [ref=e1938]: "8. 빵집 앞에서 artwork"
+          - link "8. 빵집 앞에서" [ref=e1939]
+          - text: "V6 neo-soul, R&B"
+          - button "Add 8. 빵집 앞에서" [ref=e1940]
+        - group "5. 새 신발":
+          - button "Play 5. 새 신발" [ref=e1941]: "5. 새 신발 artwork"
+          - link "5. 새 신발" [ref=e1942]
+          - text: "V6 Korean R&B, neo-soul"
+          - button "Add 5. 새 신발" [ref=e1943]
+        - group "4. 오래된 농담":
+          - button "Play 4. 오래된 농담" [ref=e1944]: "4. 오래된 농담 artwork"
+          - link "4. 오래된 농담" [ref=e1945]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 4. 오래된 농담" [ref=e1946]
+        - group "10. 잘 익은 하루":
+          - button "Play 10. 잘 익은 하루" [ref=e1947]: "10. 잘 익은 하루 artwork"
+          - link "10. 잘 익은 하루" [ref=e1948]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 10. 잘 익은 하루" [ref=e1949]
+        - group "11. 메모 한 장":
+          - button "Play 11. 메모 한 장" [ref=e1950]: "11. 메모 한 장 artwork"
+          - link "11. 메모 한 장" [ref=e1951]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 11. 메모 한 장" [ref=e1952]
+        - group "2. 첫 페이지":
+          - button "Play 2. 첫 페이지" [ref=e1953]: "2. 첫 페이지 artwork"
+          - link "2. 첫 페이지" [ref=e1954]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Remove 2. 첫 페이지" [ref=e1955]
+        - group "7. 종이비행기":
+          - button "Play 7. 종이비행기" [ref=e1956]: "7. 종이비행기 artwork"
+          - link "7. 종이비행기" [ref=e1957]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 7. 종이비행기" [ref=e1958]
+        - group "13. 유리컵의 햇빛":
+          - button "Play 13. 유리컵의 햇빛" [ref=e1959]: "13. 유리컵의 햇빛 artwork"
+          - link "13. 유리컵의 햇빛" [ref=e1960]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 13. 유리컵의 햇빛" [ref=e1961]
+        - group "16. 작은 용기":
+          - button "Play 16. 작은 용기" [ref=e1962]: "16. 작은 용기 artwork"
+          - link "16. 작은 용기" [ref=e1963]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 16. 작은 용기" [ref=e1964]
+        - group "19. 새 잎":
+          - button "Play 19. 새 잎" [ref=e1965]: "19. 새 잎 artwork"
+          - link "19. 새 잎" [ref=e1966]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 19. 새 잎" [ref=e1967]
+        - group "1. 오늘의 기록":
+          - button "Play 1. 오늘의 기록" [ref=e1968]: "1. 오늘의 기록 artwork"
+          - link "1. 오늘의 기록" [ref=e1969]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Remove 1. 오늘의 기록" [ref=e1970]
+        - group "20. 나란히 걷자":
+          - button "Play 20. 나란히 걷자" [ref=e1971]: "20. 나란히 걷자 artwork"
+          - link "20. 나란히 걷자" [ref=e1972]
+          - text: "V6 COVER Modern R&B, remix"
+          - button "Add 20. 나란히 걷자" [ref=e1973]
+        - group "15. 먼저 건넨 말":
+          - button "Play 15. 먼저 건넨 말" [ref=e1974]: "15. 먼저 건넨 말 artwork"
+          - link "15. 먼저 건넨 말" [ref=e1975]
+          - text: "V6 acoustic R&B"
+          - button "Add 15. 먼저 건넨 말" [ref=e1976]
+        - group "6. 반대편 창가":
+          - button "Play 6. 반대편 창가" [ref=e1977]: "6. 반대편 창가 artwork"
+          - link "6. 반대편 창가" [ref=e1978]
+          - text: "V6 neo-soul, acoustic"
+          - button "Add 6. 반대편 창가" [ref=e1979]
+        - group "12. 바람이 바뀌어":
+          - button "Play 12. 바람이 바뀌어" [ref=e1980]: "12. 바람이 바뀌어 artwork"
+          - link "12. 바람이 바뀌어" [ref=e1981]
+          - text: "V6 jazzy jungle"
+          - button "Add 12. 바람이 바뀌어" [ref=e1982]
+        - group "10. 생각을 놓고":
+          - button "Play 10. 생각을 놓고" [ref=e1983]: "10. 생각을 놓고 artwork"
+          - link "10. 생각을 놓고" [ref=e1984]
+          - text: "V6 indie breakbeat"
+          - button "Add 10. 생각을 놓고" [ref=e1985]
+        - group "6. 정해 둔 건 없어":
+          - button "Play 6. 정해 둔 건 없어" [ref=e1986]: "6. 정해 둔 건 없어 artwork"
+          - link "6. 정해 둔 건 없어" [ref=e1987]
+          - text: "V6 Rock, instrumental"
+          - button "Add 6. 정해 둔 건 없어" [ref=e1988]
+        - group "9. 숨을 세어":
+          - button "Play 9. 숨을 세어" [ref=e1989]: "9. 숨을 세어 artwork"
+          - link "9. 숨을 세어" [ref=e1990]
+          - text: "V6 jungle, jazz"
+          - button "Add 9. 숨을 세어" [ref=e1991]
+        - group "11. 다시 해볼게":
+          - button "Play 11. 다시 해볼게" [ref=e1992]: "11. 다시 해볼게 artwork"
+          - link "11. 다시 해볼게" [ref=e1993]
+          - text: "V6 Funk rock, instrumental; bass-forward rock mix with slap bass clearly leading; live kick on every quarter note, sharp snare, busy sixteenth-note hats and fas…[+299 chars]"
+          - button "Add 11. 다시 해볼게" [ref=e1994]
+        - group "20. 집으로 가는 길":
+          - button "Play 20. 집으로 가는 길" [ref=e1995]: "20. 집으로 가는 길 artwork"
+          - link "20. 집으로 가는 길" [ref=e1996]
+          - text: "V6 Rock, dry live production; ringing electric guitar leads a broad six-note melody with a sustained high note, second crunchy guitar and bass drive F Major, dr…[+203 chars]"
+          - button "Add 20. 집으로 가는 길" [ref=e1997]
+        - group "17. 이어지는 소리":
+          - button "Play 17. 이어지는 소리" [ref=e1998]: "17. 이어지는 소리 artwork"
+          - link "17. 이어지는 소리" [ref=e1999]
+          - text: "V6 jungle, jazz"
+          - button "Add 17. 이어지는 소리" [ref=e2000]
+        - group "16. 비가 갠 뒤":
+          - button "Play 16. 비가 갠 뒤" [ref=e2001]: "16. 비가 갠 뒤 artwork"
+          - link "16. 비가 갠 뒤" [ref=e2002]
+          - text: "V6 drill, aggressive, instrumental"
+          - button "Add 16. 비가 갠 뒤" [ref=e2003]
+        - group "15. 드럼 위로":
+          - button "Play 15. 드럼 위로" [ref=e2004]: "15. 드럼 위로 artwork"
+          - link "15. 드럼 위로" [ref=e2005]
+          - text: "V6 guitar rock, peak-energy"
+          - button "Add 15. 드럼 위로" [ref=e2006]
+        - group "8. 낮은 비트":
+          - button "Play 8. 낮은 비트" [ref=e2007]: "8. 낮은 비트 artwork"
+          - link "8. 낮은 비트" [ref=e2008]
+          - text: "V6 jungle, jazz"
+          - button "Add 8. 낮은 비트" [ref=e2009]
+        - group "7. 같은 방향":
+          - button "Play 7. 같은 방향" [ref=e2010]: "7. 같은 방향 artwork"
+          - link "7. 같은 방향" [ref=e2011]
+          - text: "V6 alternative rock, instrumental"
+          - button "Add 7. 같은 방향" [ref=e2012]
+        - group "5. 길을 바꿔":
+          - button "Play 5. 길을 바꿔" [ref=e2013]: "5. 길을 바꿔 artwork"
+          - link "5. 길을 바꿔" [ref=e2014]
+          - text: "V6 jungle, jazz"
+          - button "Add 5. 길을 바꿔" [ref=e2015]
+        - group "1. 문을 열고":
+          - button "Play 1. 문을 열고" [ref=e2016]: "1. 문을 열고 artwork"
+          - link "1. 문을 열고" [ref=e2017]
+          - text: "V6 guitar rock, instrumental"
+          - button "Add 1. 문을 열고" [ref=e2018]
+        - group "3. 첫 바퀴":
+          - button "Play 3. 첫 바퀴" [ref=e2019]: "3. 첫 바퀴 artwork"
+          - link "3. 첫 바퀴" [ref=e2020]
+          - text: "V6 electroclash, indie rock"
+          - button "Add 3. 첫 바퀴" [ref=e2021]
+        - group "18. 가까운 곳":
+          - button "Play 18. 가까운 곳" [ref=e2022]: "18. 가까운 곳 artwork"
+          - link "18. 가까운 곳" [ref=e2023]
+          - text: "V6 COVER indie, synth pop"
+          - button "Add 18. 가까운 곳" [ref=e2024]
+        - group "2. 파란불":
+          - button "Play 2. 파란불" [ref=e2025]: "2. 파란불 artwork"
+          - link "2. 파란불" [ref=e2026]
+          - text: "V6 COVER fast rock, hard rock"
+          - button "Add 2. 파란불" [ref=e2027]
+        - group "19. 괜찮은 날":
+          - button "Play 19. 괜찮은 날" [ref=e2028]: "19. 괜찮은 날 artwork"
+          - link "19. 괜찮은 날" [ref=e2029]
+          - text: "V6 indie breakbeat"
+          - button "Add 19. 괜찮은 날" [ref=e2030]
+        - group "14. 하나씩":
+          - button "Play 14. 하나씩" [ref=e2031]: "14. 하나씩 artwork"
+          - link "14. 하나씩" [ref=e2032]
+          - text: "V6 Electronic breakbeat rock"
+          - button "Add 14. 하나씩" [ref=e2033]
+        - group "13. 호흡":
+          - button "Play 13. 호흡" [ref=e2034]: "13. 호흡 artwork"
+          - link "13. 호흡" [ref=e2035]
+          - text: "V6 jazzy jungle"
+          - button "Add 13. 호흡" [ref=e2036]
+        - group "4. 조금 일찍":
+          - button "Play 4. 조금 일찍" [ref=e2037]: "4. 조금 일찍 artwork"
+          - link "4. 조금 일찍" [ref=e2038]
+          - text: "V6 indie breakbeat"
+          - button "Add 4. 조금 일찍" [ref=e2039]
+        - group "8. 취향":
+          - button "Play 8. 취향" [ref=e2040]: "8. 취향 artwork"
+          - link "8. 취향" [ref=e2041]
+          - text: "V6 COVER folk-pop, acoustic pop"
+          - button "Add 8. 취향" [ref=e2042]
+        - group "9. 한 곡만 더":
+          - button "Play 9. 한 곡만 더" [ref=e2043]: "9. 한 곡만 더 artwork"
+          - link "9. 한 곡만 더" [ref=e2044]
+          - text: "V6 indie acoustic rock"
+          - button "Add 9. 한 곡만 더" [ref=e2045]
+        - group "20. 오랜만이야":
+          - button "Play 20. 오랜만이야" [ref=e2046]: "20. 오랜만이야 artwork"
+          - link "20. 오랜만이야" [ref=e2047]
+          - text: "V6 Indie acoustic rock"
+          - button "Add 20. 오랜만이야" [ref=e2048]
+        - group "19. 엄마":
+          - button "Play 19. 엄마" [ref=e2049]: "19. 엄마 artwork"
+          - link "19. 엄마" [ref=e2050]
+          - text: "V6 Neo-soul, R&B"
+          - button "Add 19. 엄마" [ref=e2051]
+        - group "18. 사진":
+          - button "Play 18. 사진" [ref=e2052]: "18. 사진 artwork"
+          - link "18. 사진" [ref=e2053]
+          - text: "V6 Acoustic R&B"
+          - button "Add 18. 사진" [ref=e2054]
+        - group "17. 물결 (Acoustic Remix)":
+          - button "Play 17. 물결 (Acoustic Remix)" [ref=e2055]: "17. 물결 (Acoustic Remix) artwork"
+          - link "17. 물결 (Acoustic Remix)" [ref=e2056]
+          - text: "V6 Acoustic Korean indie alt R&B, intimate fingerpicked steel-string guitar with jazzy M9 and minor-7 voicings, warm upright bass, restrained cajón and brushed …[+494 chars]"
+          - button "Add 17. 물결 (Acoustic Remix)" [ref=e2057]
+        - group "16. 매듭":
+          - button "Play 16. 매듭" [ref=e2058]: "16. 매듭 artwork"
+          - link "16. 매듭" [ref=e2059]
+          - text: "V6 Neo-soul, R&B"
+          - button "Add 16. 매듭" [ref=e2060]
+        - group "15. 바람이 드는 쪽":
+          - button "Play 15. 바람이 드는 쪽" [ref=e2061]: "15. 바람이 드는 쪽 artwork"
+          - link "15. 바람이 드는 쪽" [ref=e2062]
+          - text: "V6 Acoustic R&B, soul, gospel"
+          - button "Add 15. 바람이 드는 쪽" [ref=e2063]
+        - group "14. 통화 (Acoustic Remix)":
+          - button "Play 14. 통화 (Acoustic Remix)" [ref=e2064]: "14. 통화 (Acoustic Remix) artwork"
+          - link "14. 통화 (Acoustic Remix)" [ref=e2065]
+          - text: "V6 Peaceful acoustic Korean soft R&B, intimate male chest-voice lead with clear Korean articulation, relaxed fingerpicked steel-string guitar and gentle open st…[+448 chars]"
+          - button "Add 14. 통화 (Acoustic Remix)" [ref=e2066]
+        - group "13. 컵 두개":
+          - button "Play 13. 컵 두개" [ref=e2067]: "13. 컵 두개 artwork"
+          - link "13. 컵 두개" [ref=e2068]
+          - text: "V6 Indie, acoustic, R&B"
+          - button "Add 13. 컵 두개" [ref=e2069]
+        - group "12. 이런 데가 있었네":
+          - button "Play 12. 이런 데가 있었네" [ref=e2070]: "12. 이런 데가 있었네 artwork"
+          - link "12. 이런 데가 있었네" [ref=e2071]
+          - text: "V6 Indie acoustic rock"
+          - button "Add 12. 이런 데가 있었네" [ref=e2072]
+        - group "6. 그냥 좋아":
+          - button "Play 6. 그냥 좋아" [ref=e2073]: "6. 그냥 좋아 artwork"
+          - link "6. 그냥 좋아" [ref=e2074]
+          - text: "V6 indie rock, acoustic"
+          - button "Add 6. 그냥 좋아" [ref=e2075]
+        - group "11. 약속 (Acoustic Remix)":
+          - button "Play 11. 약속 (Acoustic Remix)" [ref=e2076]: "11. 약속 (Acoustic Remix) artwork"
+          - link "11. 약속 (Acoustic Remix)" [ref=e2077]
+          - text: "V6 neo-soul, R&B"
+          - button "Add 11. 약속 (Acoustic Remix)" [ref=e2078]
+        - group "10. 그날 오후":
+          - button "Play 10. 그날 오후" [ref=e2079]: "10. 그날 오후 artwork"
+          - link "10. 그날 오후" [ref=e2080]
+          - text: "V6 neo-soul, R&B"
+          - button "Add 10. 그날 오후" [ref=e2081]
+        - group "7. 봄비같은 너 (Acoustic Remix)":
+... [snapshot truncated at 16 KiB; narrow it with { interactive: true }, selector or ref]

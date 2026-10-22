@@ -1,0 +1,200 @@
+{
+  "schema": "wavvy.0630.sequence_final_integrity.v1",
+  "scope": "selected 20 IDs, title renames, private playlist order, source-history pointers, artwork draft tracking, state check; no audio measurement",
+  "total_assertions": 32,
+  "passed": 32,
+  "failed": [],
+  "checks": [
+    {
+      "name": "preflight_raw_sha256",
+      "pass": true,
+      "detail": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69"
+    },
+    {
+      "name": "rename_raw_sha256",
+      "pass": true,
+      "detail": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b"
+    },
+    {
+      "name": "playlist_raw_sha256",
+      "pass": true,
+      "detail": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc"
+    },
+    {
+      "name": "preflight_20",
+      "pass": true,
+      "detail": [
+        "observed_at",
+        "workspace_url",
+        "browser_tool",
+        "header",
+        "visible_unique_ids",
+        "filter_label",
+        "old_10_id_not_visible",
+        "new_10_id_visible",
+        "all_20_ids_mapped_once",
+        "desired_original_sequence",
+        "mapping",
+        "logical_19_lyrics_source_path",
+        "logical_19_lyrics_exact_match",
+        "logical_19_lyrics_sha256",
+        "logical_19_direct_cover_parent_verified",
+        "order_ui",
+        "rename_actions_taken",
+        "deletion_actions_taken",
+        "new_playlist_actions_taken"
+      ]
+    },
+    {
+      "name": "rename_saved20",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "playlist_private",
+      "pass": true,
+      "detail": {
+        "creation_switch_aria_checked": "false",
+        "main_action_after_creation": "Make public"
+      }
+    },
+    {
+      "name": "playlist_20_default",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "playlist_reopened",
+      "pass": true,
+      "detail": {
+        "observed_at_utc": "2026-10-22T07:32:22.936Z",
+        "pass": true,
+        "evidence": [
+          "24-playlists-after-creation.txt",
+          "25-reopened-final-playlist.txt",
+          "26-reopened-verification.json"
+        ]
+      }
+    },
+    {
+      "name": "playlist_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "order_20_unique_source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_20_to_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "slots_match_playlist",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "candidates_20_single",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "candidates_match_playlist",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_decisions_selected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "playlist_refs_hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "selected_10_new_308",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "13_19_unverified_lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "7_selected_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "7_old_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "10_selected_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "10_old_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "15_selected_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "15_old_source_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "current_table_20",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "current_table_20_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "current_docs_playlist",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_12_txt_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_20_archived_hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "draft_png_ignored",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "draft_meta_exists",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "state_check_pass",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}
