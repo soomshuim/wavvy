@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (9번 등록·10번 재생 전 무음 실패)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 9번 「잘 익은 하루」는 선택 ID·UI 198.5/198.52초·마지막 raw 신호와 예상 종료의 0.008646초 차이·끝 무음·sample-exact 절단을 확인해 등록했다([입력 대조](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/09-ingest-verification.json)). 현재 로컬 WAV 9/20곡(공식 다운로드 3·내부 녹음 6)이다. 이어 10번은 재생 전 준비 신호 타이밍 오류로 53.8초 전체 무음 파일만 생성됐다([실패 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/10-failed-preflight.json)); 정식 입력 미등록이다.
+Next-TODO: 반복 제어 실패에 따라 10번 재시도·다음 곡 녹음을 중단했다. 젠에게 수정 후 10번부터 계속할지, 잠시 멈출지 질문한 결과를 기다린다. 10~20번 11곡의 유효 WAV·전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 9번 입력·실패 근거·현재 상태 문서는 이번 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 8/20 첫 녹음 checkpoint)
 Project: ~/Project/wavvy
 Agent: Codex

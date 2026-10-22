@@ -1,0 +1,75 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/09-raw.wav",
+  "raw_sha256": "95a71db04a9c5f676f2afed87020869baf4dc7c40ce56857163b23f18d315971",
+  "raw_duration_seconds": 200.26,
+  "raw_frames": 9612480,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 198.52,
+  "first_nonzero_seconds": 1.4206458333333334,
+  "expected_target_end_seconds": 199.94064583333335,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 199.94929166666665,
+      "end_seconds": 200.26,
+      "duration_seconds": 0.3107083333333333
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4206458333333334,
+      "duration_seconds": 1.4206458333333334
+    },
+    {
+      "start_seconds": 199.94929166666665,
+      "end_seconds": 200.26,
+      "duration_seconds": 0.3107083333333333
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.8754816651344299,
+    0.9075750112533569
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/09__잘 익은 하루__captured.wav",
+    "sha256": "fcffff8267126cfd6f175dab97167f15073068da72a48af3816c0c104485506b",
+    "start_raw_seconds": 1.35,
+    "end_raw_seconds": 200.15,
+    "frames": 9542400,
+    "duration_seconds": 198.8,
+    "first_nonzero_seconds": 0.07064583333333334,
+    "last_nonzero_seconds": 198.59927083333332,
+    "peak_by_channel": [
+      0.8754816651344299,
+      0.9075750112533569
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 198.59929166666666,
+        "end_seconds": 198.8,
+        "duration_seconds": 0.20070833333333332
+      }
+    ]
+  },
+  "candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+  "title": "9. 잘 익은 하루",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "boundary_basis": "Selected UI progressed 0→198.5/198.52s, then monitor Pause selector failed on transition and catch stopped capture. Raw first sound 1.4206458333333334s + UI duration predicts 199.94064583333335s; last target sound ends 199.94929166666665s, delta 0.008645833333304154s. Raw remains exact zero to file end, no next-song sample in raw. Manual trim raw 1.35–200.15s retains 0.070646s lead and 0.200708s tail; no next song in trimmed file.",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "selector_error_observed": "Snapshot selector for Playbar: Pause button matched no elements at song transition. Monitor catch created stop marker and capture closed; later fresh snapshot showed next item playing."
+}

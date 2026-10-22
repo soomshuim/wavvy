@@ -1,9 +1,8 @@
 {
   "workspace": "[06:30]",
-  "audio_format": "Mixed 48 kHz stereo PCM WAV: orders 1–3 signed 16-bit, orders 4–8 float32; per-track codec/sample format is authoritative",
-  "status": "partial_8_of_20_verified_local_wavs_3_official_downloads_5_system_audio_captures; remaining_12_captures_in_progress",
+  "audio_format": "Mixed 48 kHz stereo PCM WAV: orders 1–3 signed 16-bit, orders 4–9 float32; per-track codec/sample format is authoritative",
+  "status": "partial_9_of_20_verified_local_wavs_3_official_downloads_6_system_audio_captures; remaining_11_captures_paused_after_slot_10_failed_preflight_pending_zen_decision",
   "pending_wav_orders": [
-    9,
     10,
     11,
     12,
@@ -225,9 +224,41 @@
       "bits_per_sample": 32,
       "sample_format": "float32",
       "bpm_measured": null
+    },
+    {
+      "order": 9,
+      "suno_filename": null,
+      "suno_ui_title": "9. 잘 익은 하루",
+      "approved_title": "잘 익은 하루",
+      "input_filename": "09__잘 익은 하루__Bright__Modern R&B__NA.wav",
+      "candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+      "candidate_url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+      "duration_seconds": 198.8,
+      "sha256": "fcffff8267126cfd6f175dab97167f15073068da72a48af3816c0c104485506b",
+      "source_kind": "system_audio_capture",
+      "download_actor": null,
+      "capture_actor": "Codex via Aside ScreenCaptureKit app-only capture",
+      "capture_method": "Normal selected Suno UI playback; app-only system audio, microphone disabled; not an official Suno download",
+      "raw_capture_path": "work/2026-10-22-selected-audio-capture/09-raw.wav",
+      "raw_capture_sha256": "95a71db04a9c5f676f2afed87020869baf4dc7c40ce56857163b23f18d315971",
+      "trimmed_capture_source_path": "work/2026-10-22-capture-ingest-document-sync/09__잘 익은 하루__captured.wav",
+      "trim_start_raw_seconds": 1.35,
+      "trim_end_raw_seconds": 200.15,
+      "capture_ui_evidence_ref": "input/validation/2026-10-22-selected-audio-capture/09-ui-timeline.json",
+      "capture_boundary_evidence_ref": "input/validation/2026-10-22-selected-audio-capture/09-verification.json",
+      "ingest_verification_ref": "input/validation/2026-10-22-selected-audio-capture/09-ingest-verification.json",
+      "capture_integrity_limit": "UI start timestamp was not persisted and monitor Pause selector failed at transition; capture stop marker closed file with no write error. Last raw sound aligns within 0.008646s of first sound + UI duration; no following-song sample. Callback PTS/missing-buffer proof, direct listening and official waveform identity unavailable.",
+      "format": "WAV",
+      "codec": "pcm_f32le",
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "bits_per_sample": 32,
+      "sample_format": "float32",
+      "bpm_measured": null
     }
   ],
   "download_limit_observation_ref": "input/validation/2026-10-22-wav-ingest/download-limit.json",
   "download_limit_observed_at_utc": "2026-10-22T09:16:37.024Z",
-  "download_limit_ui_text": "Out of Downloads; You've used all your downloads for now.; Pro Plan Downloads 0 Refreshes 11/12/26"
+  "download_limit_ui_text": "Out of Downloads; You've used all your downloads for now.; Pro Plan Downloads 0 Refreshes 11/12/26",
+  "failed_capture_observation_ref": "input/validation/2026-10-22-selected-audio-capture/10-failed-preflight.json"
 }

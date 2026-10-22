@@ -1,0 +1,46 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+  "source_evidence_ref": "09-verification.json",
+  "ui_evidence_ref": "09-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/09-raw.wav",
+  "raw_sha256": "95a71db04a9c5f676f2afed87020869baf4dc7c40ce56857163b23f18d315971",
+  "trim_source_path": "work/2026-10-22-capture-ingest-document-sync/09__잘 익은 하루__captured.wav",
+  "input_filename": "09__잘 익은 하루__Bright__Modern R&B__NA.wav",
+  "input_sha256": "fcffff8267126cfd6f175dab97167f15073068da72a48af3816c0c104485506b",
+  "trim_start_raw_seconds": 1.35,
+  "trim_end_raw_seconds": 200.15,
+  "ui_duration_seconds": 198.52,
+  "first_raw_signal_seconds": 1.4206458333333334,
+  "predicted_end_raw_seconds": 199.94064583333335,
+  "actual_end_raw_seconds": 199.94929166666665,
+  "end_timing_delta_seconds": 0.008645833333304154,
+  "terminal_zero_peak": 0.0,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 198.8,
+    "size_bytes": 76339258
+  },
+  "checks": {
+    "selected_id_and_ui_title_match_playback_slot": true,
+    "ui_progress_reached_198_5_of_198_52": true,
+    "raw_end_matches_ui_duration_within_20ms": true,
+    "capture_stopped_cleanly_after_monitor_selector_error": true,
+    "raw_sha256_matches_ui_evidence": true,
+    "trim_exact_raw_sample_slice": true,
+    "ingested_sha256_matches_trim": true,
+    "raw_terminal_region_exact_zero_and_no_next_song_sample": true,
+    "all_trim_samples_finite": true,
+    "format_float32_48k_stereo": true
+  },
+  "limitations": [
+    "UI start timestamp was not persisted; progress values and capture log retained",
+    "Monitor Pause selector failed at transition; stop marker still closed capture without write error",
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim"
+  ]
+}
