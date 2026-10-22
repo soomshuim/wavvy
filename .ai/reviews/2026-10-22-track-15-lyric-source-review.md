@@ -12,7 +12,7 @@
 
 ## 검토 범위와 직접 근거
 
-- 원번호 15의 수정 전후 txt와 가사 검토 자료, [이전 원문·검토 아카이브](../../SERIES/06-30/input/source-history/2026-10-22-before-track-15-lyric-rewrite/archive-manifest.json), [최종 텍스트 검사 3건](../../SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/command-results.json), [보존·스타일 검사](../../SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/preservation-and-style.json)를 검토했다.
+- 원번호 15의 수정 전후 txt와 가사 검토 자료, [이전 원문·검토 아카이브](../../SERIES/17-30/input/source-history/2026-10-22-before-track-15-lyric-rewrite/archive-manifest.json), [최종 텍스트 검사 3건](../../SERIES/17-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/command-results.json), [보존·스타일 검사](../../SERIES/17-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/preservation-and-style.json)를 검토했다.
 - STYLE·EXCLUDE·원문 앞부분은 수정 전후 바이트가 같다. STYLE은 첫 8곡 생성 당시 제출된 문구와도 같다. 현재 원문 SHA-256은 `c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7`이며 수정 전 원문 SHA-256 `e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68`과 구분된다.
 - 새 가사는 저녁 준비 → 상대의 귀가 → 하루 이야기 → 함께 설거지 → 이어지는 대화로 이어진다. 이전 가사의 내용이 비어 있던 “동생이 한마디” 구절을 없앴다. 후렴은 “이만하면 좋은 저녁”이다. 보관본 2개 파일의 해시와 검사 대상 파일을 직접 대조했고 최종 텍스트 검사 3건 모두 PASS다.
 

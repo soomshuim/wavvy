@@ -7,11 +7,11 @@ Scope: 17:00 음악 방향으로 개정한 06:30 원문·제출·후보·삭제�
 
 ## 검토 대상 기록
 
-- [현행 원문 manifest](../../SERIES/06-30/input/validation/20-song-manifest.json) SHA-256: `68f364018c913ba8fa10ece06eb47c11efa07f8d9d982699fa6a0865362f715a`
-- [생성 기록](../../SERIES/06-30/input/generation-log.json) SHA-256: `a36e760f21fb2dd570020530663f70418972451347c245c451ace3a4b032fc92`
-- [활성 후보 기록](../../SERIES/06-30/input/suno-candidates.json) SHA-256: `162eecb2f5e744743d426f0bc9f9b7b854f026e0bb1b42594a70581be1bbc493`
-- [휴지통 이동 기록](../../SERIES/06-30/input/deletion-log.json) SHA-256: `0e863a9966f3160536b0a51fab8337e53d06460c89540c66f629d76d61af47e5`
-- [최종 브라우저 관측](../../SERIES/06-30/input/validation/suno-final-ui-observation.json) SHA-256: `80c1df0df762b0371899e1eadbe7a233bed2b95a03847618104bb265cadebc2b`
+- [현행 원문 manifest](../../SERIES/17-30/input/validation/20-song-manifest.json) SHA-256: `68f364018c913ba8fa10ece06eb47c11efa07f8d9d982699fa6a0865362f715a`
+- [생성 기록](../../SERIES/17-30/input/generation-log.json) SHA-256: `a36e760f21fb2dd570020530663f70418972451347c245c451ace3a4b032fc92`
+- [활성 후보 기록](../../SERIES/17-30/input/suno-candidates.json) SHA-256: `162eecb2f5e744743d426f0bc9f9b7b854f026e0bb1b42594a70581be1bbc493`
+- [휴지통 이동 기록](../../SERIES/17-30/input/deletion-log.json) SHA-256: `0e863a9966f3160536b0a51fab8337e53d06460c89540c66f629d76d61af47e5`
+- [최종 브라우저 관측](../../SERIES/17-30/input/validation/suno-final-ui-observation.json) SHA-256: `80c1df0df762b0371899e1eadbe7a233bed2b95a03847618104bb265cadebc2b`
 
 ## 컨트롤러가 전달한 회수 판정 원문
 

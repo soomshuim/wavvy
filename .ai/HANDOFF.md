@@ -1,10 +1,50 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (폴더 이전·썸네일 정리 검토 완료, 영상 제작 재개 지시)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: [독립 검토](reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이다. `SERIES/17-30` 이동, 사용자 `thumb.jpg`·`thumb.psd`·`loop.png` 보존, 미사용 작업물 15개 삭제와 음악 자료 보존을 확인했다. 젠의 최신 지시는 “이제 영상 제작하고 업로드하자. 단 제목은 내 컨펌 받아”다. 영상 제작·업로드는 재개 승인됐지만 현재 영상 파일은 아직 없고, 업로드 제목은 젠 확인 전 확정하지 않는다.
+Next-TODO: 별도 영상 제작·업로드 작업에서 제목 초안을 젠에게 확인받는다. 현재 이동·정리 범위는 저장소 반영 대상이다.
+Commits: 이 인계 기록 시점에는 이동·정리 커밋 전이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (젠 직접 제작 RE-FRESH 썸네일 기준본·미사용 시안 정리)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: `SERIES/17-30` 폴더 이전 뒤 젠이 “내가 직접 만들었어.”라며 새 `input/thumb.jpg`를 제공했다. 이 JPEG 2532×1424, SHA-256 `634cbb9ff89b2c39cf89a240100368b310c0e22bfaee60a0463170f25912e025`를 현재 썸네일 기준본으로 보존한다. 글자는 흰 Wavvy·`17:30`·`RE-FRESH`다. 옛 합성본·UPLIFT/FEEL GOOD 시안은 미채택 이력이다. 젠의 미사용 시안·프롬프트 삭제 요청에 따라 프로젝트 안 15개를 상대 경로·SHA·크기만 [목록](../SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json)에 남기고 삭제했다. `input/artwork/thumb.psd`·`input/loop.png`·음악 원문·원시 근거는 보존한다. `.ai/state.json`은 공식 writer revision 57, active series `SERIES/17-30`, 로컬 오디오 0개다. Suno `[06:30]` 이름과 음악 20곡은 변경하지 않았다.
+Next-TODO: 영상 제작은 젠의 중지 뒤 미착수다. 현재 썸네일 기준본과 파일 이동·삭제 기록의 격리 검토 후 저장소 반영을 진행한다.
+Commits: 이번 폴더 이전·사용자 썸네일·정리 변경은 아직 커밋하지 않았다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 폴더 이전·새 이미지 생성 시안 검토 대기)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “그리고 폴더 이름이 아직 06-30인데?”에 따라 전체 시리즈 폴더를 `SERIES/17-30`으로 옮겼다. [이동 대응 기록](../SERIES/17-30/input/folder-migration-2026-10-22.md)에 옛 경로를 연결했다. 이동 전 984파일은 ignored 이미지·PSD를 포함해 같은 상대 경로와 해시로 보존됐다. 공식 state writer가 revision 57·active series `SERIES/17-30`·`track_source_draft`·로컬 오디오 0개를 기록했다. Suno `[06:30]` 작업 공간은 변경하지 않았다. 젠이 첫 수정 썸네일 v2를 “와..진짜 개 구리네...그냥 이미지 생성을 해봐”라고 반려해 컨트롤러가 사진·문자를 함께 v3 이미지(당시 자료·현재 파일 삭제)로 새로 생성해 젠에게 보여줬다. `FEEL GOOD`은 아직 승인되지 않았고 기존 `thumb.jpg`·`loop.png`·v2는 보존한다. 영상 제작은 시작하지 않았다.
+Next-TODO: 새 v3 시안의 사용자 피드백을 기다린다. 실제 영상 제작은 정지 상태다.
+Commits: 이 폴더 이전·시안 기록은 아직 커밋하지 않았다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (영상 제작 미착수·기존 썸네일 글자 디자인 반려)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 영상 제작 전 “에? 잠깐”이라고 멈췄다. 영상 제작은 시작하지 않았다. 젠은 “썸네일이 거지같은데? 색상도 이상하고 타이틀 위치도”, “폰트도 이상하고 크기도 이상해”라고 기존 합성 썸네일을 반려했다. 승인된 v5 주방 사진은 유지한다. “그리고 영문 단어 제목이 필요하고, 좌측 하단에. 로고 시간 제목에는 옅은 쉐도우로 배경과 분리”를 반영한 수정 시안 제작 중이다. `UPLIFT`는 제작자 제안이고 젠의 확정 제목이 아니다. 기존 `thumb.jpg`·`loop.png`는 보존한다. 앞선 독립 검토 CLEAN은 당시 파일·기술 검토이며 젠의 디자인 승인은 아니다.
+Next-TODO: 수정 시안을 젠에게 보여주고 새 글자 디자인에 대한 피드백을 받는다. 영상 제작은 멈춘 상태다.
+Commits: 이 최신 디자인 피드백 기록은 아직 커밋하지 않았다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 썸네일 최종 제작·20곡 순서 재조정 적용 완료)
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 젠은 v5 오렌지 주방 시안을 “좋아 패스. 이제 제작하자.”라고 승인했고 “잠깐 시간은06:30말고17:30으로하자.”라고 표시 시간을 17:30으로 바꿨다. `SERIES/06-30` 폴더·Suno 기존 작업 공간 이름은 이력으로 보존한다. [최종 이미지 제작 기록](../SERIES/06-30/input/artwork/final-artwork-2026-10-22.md)에 3840×2160 배경과 2560×1440 썸네일 완성·해시·축소 보기 확인을 남겼다. 승인 v5의 Lanczos 확대 배경에 실제 로고·`17:30`·`기분좋아져라`를 로컬 합성했으며 원생성 4K는 아니다. 젠은 “순서바꾼거맞지?유사한스타일최대한안이어지게”라고 요청했다. 앞선 1–2·10–11·19–20번 Modern R&B 커버 템플릿 인접을 확인했다. 이어 “이 노래 끝날 때까지를2번으로우리행복하자를4번으로해줘.”, “이변경으로인해일부스타일연속되는건허용할게.”라고 지정했다. 원번호 20·13·19를 각각 재생 1·2·4번에 고정한 최종 적용 원번호 배열은 `[20,13,1,19,2,7,11,6,5,10,8,3,12,9,14,16,17,4,18,15]`다. [최종 원시 요약](../SERIES/06-30/input/validation/2026-10-22-sequence-final-adjustment/summary.json)에서 같은 20 ID의 Suno 제목 번호와 비공개 재생목록 `Default` 순서를 재진입 후 확인했다. 이전 원시 검증은 변경 전 상태다. 13·19의 실제 제출 STYLE과 전곡 실제 청취 스타일은 미확인이다.
-Evidence: [v5 시안 메타](../SERIES/06-30/input/artwork/orange-kitchen-draft-v5.md); [기존 선택·번호·재생목록 기록](../SERIES/06-30/input/playback-order.json); 새 조정 원시 기록은 `SERIES/06-30/input/validation/2026-10-22-sequence-final-adjustment/`에 저장됐다.
+Summary: 젠은 v5 오렌지 주방 시안을 “좋아 패스. 이제 제작하자.”라고 승인했고 “잠깐 시간은06:30말고17:30으로하자.”라고 표시 시간을 17:30으로 바꿨다. `SERIES/06-30` 폴더·Suno 기존 작업 공간 이름은 이력으로 보존한다. 최종 이미지 제작 기록(당시 자료·현재 파일 삭제)에 3840×2160 배경과 2560×1440 썸네일 완성·해시·축소 보기 확인을 남겼다. 승인 v5의 Lanczos 확대 배경에 실제 로고·`17:30`·`기분좋아져라`를 로컬 합성했으며 원생성 4K는 아니다. 젠은 “순서바꾼거맞지?유사한스타일최대한안이어지게”라고 요청했다. 앞선 1–2·10–11·19–20번 Modern R&B 커버 템플릿 인접을 확인했다. 이어 “이 노래 끝날 때까지를2번으로우리행복하자를4번으로해줘.”, “이변경으로인해일부스타일연속되는건허용할게.”라고 지정했다. 원번호 20·13·19를 각각 재생 1·2·4번에 고정한 최종 적용 원번호 배열은 `[20,13,1,19,2,7,11,6,5,10,8,3,12,9,14,16,17,4,18,15]`다. [최종 원시 요약](../SERIES/17-30/input/validation/2026-10-22-sequence-final-adjustment/summary.json)에서 같은 20 ID의 Suno 제목 번호와 비공개 재생목록 `Default` 순서를 재진입 후 확인했다. 이전 원시 검증은 변경 전 상태다. 13·19의 실제 제출 STYLE과 전곡 실제 청취 스타일은 미확인이다.
+Evidence: v5 시안 메타(당시 자료·현재 파일 삭제); [기존 선택·번호·재생목록 기록](../SERIES/17-30/input/playback-order.json); 새 조정 원시 기록은 `SERIES/17-30/input/validation/2026-10-22-sequence-final-adjustment/`에 저장됐다.
 Next-TODO: 17:30 이미지와 Suno 최종 제목·비공개 재생목록 증거를 확인하고 현재 문서·JSON을 갱신했다. [최종 독립 검토](reviews/2026-10-22-final-artwork-sequence-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)으로 회수됐다. 이번 변경의 저장소 반영이 남았다.
 Commits: 이 기록 시점에 새 조정 작업은 아직 커밋하지 않았다. 이전 첫 순서·v5 메타는 원격 `master`에 반영된 이력이다.
 ---
@@ -14,9 +54,9 @@ HANDOFF: Codex -> 젠
 Date: 2026-10-22 (기분좋아져라 선택 20곡·제목 번호·비공개 재생 순서)
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 젠이 “좋아 모두 통과.”라고 청취 판단하고 “순서 조정하자.”라고 지시했다. 원번호 10은 새 가사 3:08 버전 `af9af447-7ed3-4f31-84fd-b5be0c8fb504`를 선택했다. 선별 뒤 화면 고유 ID 20개를 원번호20→재생1의 20칸 순서에 대응했다. 현재 20곡의 Suno 제목 번호를 각각 저장·검증했고, 같은 ID·제목을 비공개 재생목록 「기분좋아져라」의 Default 1~20 순서로 담아 재진입 후 유지까지 확인했다. 작업 공간 행 자체를 정렬한 것은 아니다. 옛 10번 삭제는 젠의 진술이며 작업자 삭제는 0회다. 13·19 현재 사용자 ID의 직접 Cover 부모·생성 STYLE/EXCLUDE는 미확인이다. 오렌지 주방 v1 시안 뒤 젠이 “약간 밝은 회색 접시. 물기가 살짝 맺힌 오렌지 반이쪼개져있음 좀 더 현실 주방 같아야지. 너무 물건이 없잖아.”라고 수정 요청해 [v2 시안](../SERIES/06-30/input/artwork/orange-kitchen-draft-v2.md)을 제작했다. 젠이 이어 “커피잔이 너무 위험한 곳에 놓여있는데?”·“일반 가정집 같지 않아. 좌측이 너무 허전해”·“블러도 좀 더 세게”라고 지적해 [v3 시안](../SERIES/06-30/input/artwork/orange-kitchen-draft-v3.md)을 제작했다. 추가 원문 “주방에는 노란 격자 문의 작은 커튼도”, “주방창에”를 [v4 시안](../SERIES/06-30/input/artwork/orange-kitchen-draft-v4.md)에 반영했다. 젠의 추가 원문 “블러를 좀 더 진하게”에 따라 [현재 v5 시안](../SERIES/06-30/input/artwork/orange-kitchen-draft-v5.md)의 배경 흐림을 더 강화하고 오렌지와 접시는 선명하게 유지했다. v1~v4는 이전 시안으로 보존하며 v5 사용자 승인·최종 4K·thumb.jpg는 미완료다.
-Evidence: `SERIES/06-30/input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json`; `SERIES/06-30/input/validation/2026-10-22-sequence-rename/rename-audit.json`; `SERIES/06-30/input/validation/2026-10-22-sequence-playlist/playlist-audit.json`; `SERIES/06-30/input/playback-order.json`; `SERIES/06-30/input/candidate-review.md`; `SERIES/06-30/input/artwork/orange-kitchen-draft-v1.md`
-Verification: [좁은 무결성](../SERIES/06-30/input/validation/2026-10-22-sequence-final-integrity.json)은 32/32 PASS, [공식 상태 검사](../SERIES/06-30/input/validation/2026-10-22-sequence-state-check.json)는 PASS, [diff 검사](../SERIES/06-30/input/validation/2026-10-22-sequence-diff-check.json)는 빈 출력·종료 코드 0이다. `.ai/state.json`은 `track_source_draft`, 로컬 오디오 0개이며 원격 선별 20곡과 별개다. 젠 청취 통과는 독립 175 BPM·기술 품질 측정이나 최종 발매 승인이 아니다. 16:16 이전 문서 리뷰 CLEAN은 이번 후속 선택·번호·재생목록 적용을 포함하지 않는다. 이번 [후속 격리 검토](reviews/2026-10-22-final-sequence-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이며 썸네일 품질을 포함하지 않는다.
+Summary: 젠이 “좋아 모두 통과.”라고 청취 판단하고 “순서 조정하자.”라고 지시했다. 원번호 10은 새 가사 3:08 버전 `af9af447-7ed3-4f31-84fd-b5be0c8fb504`를 선택했다. 선별 뒤 화면 고유 ID 20개를 원번호20→재생1의 20칸 순서에 대응했다. 현재 20곡의 Suno 제목 번호를 각각 저장·검증했고, 같은 ID·제목을 비공개 재생목록 「기분좋아져라」의 Default 1~20 순서로 담아 재진입 후 유지까지 확인했다. 작업 공간 행 자체를 정렬한 것은 아니다. 옛 10번 삭제는 젠의 진술이며 작업자 삭제는 0회다. 13·19 현재 사용자 ID의 직접 Cover 부모·생성 STYLE/EXCLUDE는 미확인이다. 오렌지 주방 v1 시안 뒤 젠이 “약간 밝은 회색 접시. 물기가 살짝 맺힌 오렌지 반이쪼개져있음 좀 더 현실 주방 같아야지. 너무 물건이 없잖아.”라고 수정 요청해 v2 시안(당시 자료·현재 파일 삭제)을 제작했다. 젠이 이어 “커피잔이 너무 위험한 곳에 놓여있는데?”·“일반 가정집 같지 않아. 좌측이 너무 허전해”·“블러도 좀 더 세게”라고 지적해 v3 시안(당시 자료·현재 파일 삭제)을 제작했다. 추가 원문 “주방에는 노란 격자 문의 작은 커튼도”, “주방창에”를 v4 시안(당시 자료·현재 파일 삭제)에 반영했다. 젠의 추가 원문 “블러를 좀 더 진하게”에 따라 현재 v5 시안(당시 자료·현재 파일 삭제)의 배경 흐림을 더 강화하고 오렌지와 접시는 선명하게 유지했다. v1~v4는 이전 시안으로 보존하며 v5 사용자 승인·최종 4K·thumb.jpg는 미완료다.
+Evidence: `SERIES/17-30/input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json`; `SERIES/17-30/input/validation/2026-10-22-sequence-rename/rename-audit.json`; `SERIES/17-30/input/validation/2026-10-22-sequence-playlist/playlist-audit.json`; `SERIES/17-30/input/playback-order.json`; `SERIES/17-30/input/candidate-review.md`; `SERIES/17-30/input/artwork/orange-kitchen-draft-v1.md`
+Verification: [좁은 무결성](../SERIES/17-30/input/validation/2026-10-22-sequence-final-integrity.json)은 32/32 PASS, [공식 상태 검사](../SERIES/17-30/input/validation/2026-10-22-sequence-state-check.json)는 PASS, [diff 검사](../SERIES/17-30/input/validation/2026-10-22-sequence-diff-check.json)는 빈 출력·종료 코드 0이다. `.ai/state.json`은 `track_source_draft`, 로컬 오디오 0개이며 원격 선별 20곡과 별개다. 젠 청취 통과는 독립 175 BPM·기술 품질 측정이나 최종 발매 승인이 아니다. 16:16 이전 문서 리뷰 CLEAN은 이번 후속 선택·번호·재생목록 적용을 포함하지 않는다. 이번 [후속 격리 검토](reviews/2026-10-22-final-sequence-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이며 썸네일 품질을 포함하지 않는다.
 Next-TODO: 음악 순서 후속 격리 검토는 CLEAN으로 완료됐다. 음악·원시 기록은 커밋 `a5dbd1df37272bafa16afc5402420692c0a1bb8c`로 원격 반영했다. v5 시안은 젠의 시각 결정을 기다리며 최종 4K·thumb.jpg 제작은 아직 진행하지 않는다.
 Commits: 음악·원시 기록 `a5dbd1df37272bafa16afc5402420692c0a1bb8c` 원격 반영 확인. v5 메타데이터와 현재 상태 문서는 후속 커밋 대상이다.
 ---
@@ -27,8 +67,8 @@ Date: 2026-10-22 (기분좋아져라 7·10·15 후속 생성·문서 통합)
 Project: ~/Project/wavvy
 Agent: Codex
 Summary: 새 8곡 첫 생성은 8회 Create·16후보 이력이다. 이후 원번호 15 「웃음의 순서」, 7 「내일 뭐 해」(작성자 제안 제목), 10 「계단 끝에서」의 개정 가사를 각각 별도 1회 Create해 새 A/B 두 후보씩 총 6후보를 추가 생성했다. 첫 생성 세 곡의 옛 원문·후보는 아카이브와 출처 연결에 보존했다. 청취표 맨 위에 새 6후보 듣기 링크를 두고, 기존 20행은 15:35 KST 필터 관찰 이력으로 구분했다. 문서상 재생 순서안은 원번호 20 「오늘의 기록」을 첫 슬롯에 둔 20칸 편성안이다. 젠의 후보 선별은 진행 중이며 최종 현재 목록·채택 후보는 확정하지 않았다. 원번호 13 최신 논리 제목은 「이 노래 끝날 때까지」, 19는 「우리 행복하자」이며 실제 전체 Suno 번호 변경·행 재정렬·재생목록 생성은 0회다. 19의 후속 새 두 ID는 직접 Cover 연결 미확인이라 원19 확정 후보에 합치지 않았다.
-Evidence: `SERIES/06-30/input/validation/2026-10-22-eight-song-generation/generation-manifest.json`; `SERIES/06-30/input/validation/2026-10-22-track-07-concept-rewrite/generation-manifest.json`; `SERIES/06-30/input/validation/2026-10-22-track-10-lyric-rewrite/generation-manifest.json`; `SERIES/06-30/input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json`; `SERIES/06-30/input/candidate-review.md`; `SERIES/06-30/input/playback-order.json`; `SERIES/06-30/input/suno-candidates.json`
-Verification: [좁은 통합 무결성](../SERIES/06-30/input/validation/2026-10-22-later-rewrites-document-integrity.json)은 24/24 PASS, [공식 상태 검사](../SERIES/06-30/input/validation/2026-10-22-later-rewrites-state-check.json)는 종료 코드 0·PASS다. diff check 원시 결과는 같은 validation 폴더에 저장한다. `.ai/state.json`은 `track_source_draft`, `audio_files: 0`으로 로컬 원문 단계와 로컬 오디오 0개를 뜻하며 Suno 원격 생성 수와 다르다. 실제 음원 청취·175 BPM 측정·발매 PASS는 없다.
+Evidence: `SERIES/17-30/input/validation/2026-10-22-eight-song-generation/generation-manifest.json`; `SERIES/17-30/input/validation/2026-10-22-track-07-concept-rewrite/generation-manifest.json`; `SERIES/17-30/input/validation/2026-10-22-track-10-lyric-rewrite/generation-manifest.json`; `SERIES/17-30/input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json`; `SERIES/17-30/input/candidate-review.md`; `SERIES/17-30/input/playback-order.json`; `SERIES/17-30/input/suno-candidates.json`
+Verification: [좁은 통합 무결성](../SERIES/17-30/input/validation/2026-10-22-later-rewrites-document-integrity.json)은 24/24 PASS, [공식 상태 검사](../SERIES/17-30/input/validation/2026-10-22-later-rewrites-state-check.json)는 종료 코드 0·PASS다. diff check 원시 결과는 같은 validation 폴더에 저장한다. `.ai/state.json`은 `track_source_draft`, `audio_files: 0`으로 로컬 원문 단계와 로컬 오디오 0개를 뜻하며 Suno 원격 생성 수와 다르다. 실제 음원 청취·175 BPM 측정·발매 PASS는 없다.
 Next-TODO: 원문·생성·순서안 최종 격리 검토 뒤 이번 작업 범위를 커밋·일반 푸시한다. 젠의 선별 완료 뒤 현재 남은 ID를 다시 관찰해 실제 번호 변경 여부를 정한다. 옛 15:35 26 ID와 후속 완료 시점의 새 6 ID를 지속적 현행 전체 목록으로 합산하지 않는다.
 Commits: 최종 검토 전이라 이 기록 시점에는 새 통합 작업을 아직 커밋·푸시하지 않았다.
 ---
@@ -38,8 +78,8 @@ HANDOFF: Codex -> 젠
 Date: 2026-10-22 (기분좋아져라 새 8곡 생성·문서상 20곡 순서안)
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 원번호 15 「웃음의 순서」의 새 가사를 확정했다. 새 후렴은 “이만하면 좋은 저녁”이며 현재 원문은 아직 Suno 미제출이다. 첫 8곡 생성 당시 15번 A/B 두 후보는 옛 원문으로 만든 이력으로 두고, 해당 원문과 SHA는 `SERIES/06-30/input/source-history/2026-10-22-before-track-15-lyric-rewrite/`와 `SERIES/06-30/input/validation/2026-10-22-track-15-source-resolution.json`에 연결했다. STYLE/EXCLUDE 동일·현재 텍스트 검사 3/3 PASS, 원문 독립 검토 진행 중이다. 그 이전 작업에서는 새 원문 8곡을 각 1회 Suno에 제출해 A/B 16후보가 생성됐다. 15:35 KST `Filters (3)` 목록에서는 생성 전 보존 12개와 새 후보 14개, 총 26 ID가 보였다. 젠은 후보를 듣고 마음에 드는 곡만 남기는 중이며 26은 시점 관찰일 뿐 최종 선택이 아니다. 원번호 3 A·6 B는 생성 이력에 있지만 그 필터 화면에서 보이지 않았다(삭제 확정 아님). 시리즈 제목은 기분좋아져라다. 원번호 20 「오늘의 기록」을 재생 1번으로 고정하고, 다른 19곡을 원문 악기·가사 방향에 따라 섞은 문서 편성안을 작성했다. 실제 Suno 행 정렬·전체 번호 변경·재생목록 생성은 하지 않았다. 젠이 “작은 파티 제목은 우리 행복하자로”라고 정해 원번호 19의 논리 제목과 문서상 목표 `12. 우리 행복하자`를 바꿨고, 원문 파일·제출 제목은 보존했다. [15:42 후속 관찰](../SERIES/06-30/input/validation/2026-10-22-title-rename-19/title-rename-audit.json)에는 그 원래 두 ID가 필터 목록에서 미노출이고, 다른 새 두 ID가 `20. 우리 행복하자`로 보였다. 첫 가사는 19번 원문과 같지만 직접 Cover 부모 연결은 미확인이라 생성 이력에 합치지 않았다. 제목 변경 0회다. 젠의 “옆자리의 노래 -> 옆자리” 다음 “옆자리 -> 이 노래가 끝날 때까지”, 마지막 “아 미안 '이 노래 끝날 때까지'” 정정에 따라 원번호 13의 최신 논리 제목과 문서 목표 `14. 이 노래 끝날 때까지`를 기록했다. 중간 제목 「옆자리」도 이력에 보존했다. 원문·제출·15:35 화면의 옛 제목은 보존했다.
-Evidence: `SERIES/06-30/input/validation/2026-10-22-eight-song-generation/generation-manifest.json`; `SERIES/06-30/input/validation/2026-10-22-eight-song-generation/generation-summary.json`; `SERIES/06-30/input/suno-candidates.json`; `SERIES/06-30/input/playback-order.json`; `SERIES/06-30/input/candidate-review.md`
+Summary: 원번호 15 「웃음의 순서」의 새 가사를 확정했다. 새 후렴은 “이만하면 좋은 저녁”이며 현재 원문은 아직 Suno 미제출이다. 첫 8곡 생성 당시 15번 A/B 두 후보는 옛 원문으로 만든 이력으로 두고, 해당 원문과 SHA는 `SERIES/17-30/input/source-history/2026-10-22-before-track-15-lyric-rewrite/`와 `SERIES/17-30/input/validation/2026-10-22-track-15-source-resolution.json`에 연결했다. STYLE/EXCLUDE 동일·현재 텍스트 검사 3/3 PASS, 원문 독립 검토 진행 중이다. 그 이전 작업에서는 새 원문 8곡을 각 1회 Suno에 제출해 A/B 16후보가 생성됐다. 15:35 KST `Filters (3)` 목록에서는 생성 전 보존 12개와 새 후보 14개, 총 26 ID가 보였다. 젠은 후보를 듣고 마음에 드는 곡만 남기는 중이며 26은 시점 관찰일 뿐 최종 선택이 아니다. 원번호 3 A·6 B는 생성 이력에 있지만 그 필터 화면에서 보이지 않았다(삭제 확정 아님). 시리즈 제목은 기분좋아져라다. 원번호 20 「오늘의 기록」을 재생 1번으로 고정하고, 다른 19곡을 원문 악기·가사 방향에 따라 섞은 문서 편성안을 작성했다. 실제 Suno 행 정렬·전체 번호 변경·재생목록 생성은 하지 않았다. 젠이 “작은 파티 제목은 우리 행복하자로”라고 정해 원번호 19의 논리 제목과 문서상 목표 `12. 우리 행복하자`를 바꿨고, 원문 파일·제출 제목은 보존했다. [15:42 후속 관찰](../SERIES/17-30/input/validation/2026-10-22-title-rename-19/title-rename-audit.json)에는 그 원래 두 ID가 필터 목록에서 미노출이고, 다른 새 두 ID가 `20. 우리 행복하자`로 보였다. 첫 가사는 19번 원문과 같지만 직접 Cover 부모 연결은 미확인이라 생성 이력에 합치지 않았다. 제목 변경 0회다. 젠의 “옆자리의 노래 -> 옆자리” 다음 “옆자리 -> 이 노래가 끝날 때까지”, 마지막 “아 미안 '이 노래 끝날 때까지'” 정정에 따라 원번호 13의 최신 논리 제목과 문서 목표 `14. 이 노래 끝날 때까지`를 기록했다. 중간 제목 「옆자리」도 이력에 보존했다. 원문·제출·15:35 화면의 옛 제목은 보존했다.
+Evidence: `SERIES/17-30/input/validation/2026-10-22-eight-song-generation/generation-manifest.json`; `SERIES/17-30/input/validation/2026-10-22-eight-song-generation/generation-summary.json`; `SERIES/17-30/input/suno-candidates.json`; `SERIES/17-30/input/playback-order.json`; `SERIES/17-30/input/candidate-review.md`
 Verification: 생성 raw SHA 대조, 8원문·16생성이력·15:35 필터 26ID·20칸 순서·원번호20→재생1 검사를 별도 무결성 결과로 보존한다. 공식 state check는 `track_source_draft`, 로컬 오디오 0개이며 실제 오디오 청취·BPM·발매 PASS는 없다.
 Next-TODO: 젠의 선별 완료 뒤 현재 남은 ID·최종 버전을 다시 관찰하고 Suno 번호 변경 여부를 결정한다. 이번 생성·문서 통합의 최종 격리 검토 뒤에만 커밋·일반 푸시한다.
 Commits: 생성·문서 통합은 격리 검토 전이므로 아직 커밋·푸시하지 않았다.
@@ -51,8 +91,8 @@ Date: 2026-10-22 (미노출 8곡 원문 개편)
 Project: ~/Project/wavvy
 Agent: Codex
 Summary: 젠이 “이번 시리즈 제목은 '기분좋아져라'”라고 확정했다. `[06:30]` 작업 공간과 `SERIES/06-30` 경로는 이력 식별자로 보존한다. 현재 보이지 않는 03·06·07·10·13·15·16·19의 가사·STYLE/EXCLUDE 원문을 175 BPM 목표로 다시 썼다. Rhodes 4곡/새 악기 리드 4곡, 사랑·설렘 일상 4곡/만트라 일상 4곡이며 각 교차 조합은 2곡이다. 이전 원문·가사 검토 16개를 아카이브에 보존했다. 현재 화면의 12곡 ID와 과거 40후보 이력은 바꾸지 않았다. 새 8곡 원문은 이 문서 기록 시점에 Suno 미제출이며 로컬 오디오는 0개다. 젠이 확정한 원곡 번호 20 「오늘의 기록」의 재생 순서 1번만 기록했으며, 다른 19곡은 새 8곡 생성 뒤 기존 12곡까지 섞어 정한다.
-Evidence: `SERIES/06-30/input/eight-song-rewrite-2026-10-22.md`; `SERIES/06-30/input/validation/2026-10-22-eight-song-source-summary.json`; `SERIES/06-30/input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json`
-Verification: 통합 무결성 `SERIES/06-30/input/validation/2026-10-22-eight-song-document-integrity.json` PASS, 새 원문 최종 텍스트 검사 21/21 PASS, state check PASS(`track_source_draft`, txt 20·audio 0), `git diff --check` 빈 출력·종료 코드 0. 새 8곡 원문 격리 검토 CLEAN은 `.ai/reviews/2026-10-22-eight-song-source-review.md`에 기록했다. 문서 통합 최종 검토와 실제 음원 판정은 별도다.
+Evidence: `SERIES/17-30/input/eight-song-rewrite-2026-10-22.md`; `SERIES/17-30/input/validation/2026-10-22-eight-song-source-summary.json`; `SERIES/17-30/input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json`
+Verification: 통합 무결성 `SERIES/17-30/input/validation/2026-10-22-eight-song-document-integrity.json` PASS, 새 원문 최종 텍스트 검사 21/21 PASS, state check PASS(`track_source_draft`, txt 20·audio 0), `git diff --check` 빈 출력·종료 코드 0. 새 8곡 원문 격리 검토 CLEAN은 `.ai/reviews/2026-10-22-eight-song-source-review.md`에 기록했다. 문서 통합 최종 검토와 실제 음원 판정은 별도다.
 Next-TODO: Suno에서 진행 중인 새 8곡 생성의 완료 원시 기록을 받은 뒤 실제 후보와 기존 12곡을 함께 보고, 유사 스타일을 흩어 20번을 첫곡으로 둔 나머지 재생 순서를 정한다. 실제 오디오 BPM·품질·발매 승인은 아직 확인하지 않았다.
 Commits: 격리 검토 전 문서 통합 단계이므로 이번 개편은 아직 커밋·푸시하지 않았다.
 ---
@@ -63,7 +103,7 @@ Date: 2026-10-22
 Project: ~/Project/wavvy
 Agent: Codex
 Summary: 젠이 [06:30] 작업 공간에서 곡을 정리하고 일부를 리믹스한 뒤의 화면 관측을 문서에 반영했다. 현재 확인된 12곡은 새 Cover 10곡과 기존 ID를 유지한 04B·09B다. 03·06·07·10·13·15·16·19는 현재 관측 목록에 없으며 삭제 여부는 확인되지 않았다. 옛 40개 후보와 생성 원문 20개를 이력으로 보존하고, 리믹스별 이전 STYLE 원문과 현재 화면의 스타일 설명을 비교할 수 있게 연결했다. 14는 중간 Cover를 거친 2단계 연결이며 20의 현재 제목은 ‘오늘의 기록’이다. 현재 관측된 곡의 사용자 보존 선택은 기록했지만 실제 청취 품질·발매 승인으로 해석하지 않는다. `.ai/state.json`은 변경하지 않았다.
-Evidence: `SERIES/06-30/input/validation/2026-10-22-current-suno/observation.json`; `SERIES/06-30/input/source-history/2026-10-22-before-user-remixes/archive-manifest.json`; `SERIES/06-30/input/style-comparison-2026-10-22.md`
+Evidence: `SERIES/17-30/input/validation/2026-10-22-current-suno/observation.json`; `SERIES/17-30/input/source-history/2026-10-22-before-user-remixes/archive-manifest.json`; `SERIES/17-30/input/style-comparison-2026-10-22.md`
 Verification: 문서 무결성 16/16 PASS, 공식 state check PASS(`track_source_draft`, 원문 txt 20개·로컬 오디오 0개), `git diff --check` 빈 출력·종료 코드 0. 격리 Astra xhigh 검토 CLEAN·직접 대조 267/267 PASS·원칙 관찰 없음. 판정은 `.ai/reviews/2026-10-22-remix-reconciliation-review.md`에 보존했다.
 Repository: 이 기록을 포함한 변경은 `master` 커밋과 `origin/master` 일반 푸시로 보존한다. 완료 여부는 로컬·원격 HEAD 대조로 확인한다.
 Next-TODO: 젠은 현재 미노출 8곡의 가사·스타일 개편을 새 작업으로 요청했다. 이 작업은 부모 컨트롤러가 별도로 이어간다. 현재 12곡의 실제 음원 품질·발매 여부는 아직 판단하지 않았다. 목록 미노출 8곡의 삭제 여부와 화면 밖 페이지의 완전성도 별도 확증이 없다. 이번 기록에는 다운로드·추가 생성이 없다.
@@ -76,7 +116,7 @@ Date: 2026-10-21 19:39:08
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
 Summary: Wavvy [06:30] 추적 공간에서 17:00 어쿠스틱 R&B·네오소울 방향 신규 20곡의 A/B 활성 후보 40개를 생성·기록했다. 옛 인디 록 8후보는 휴지통으로 옮기고 유지 5곡의 10후보를 보존했다. 원문·실행 기록 격리 검토 CLEAN, 청취표 40링크 일치, 크레딧 2396이다. 실제 청취·최종 선택·다운로드·BPM/고음 실측은 아직 없다. 175 BPM 러닝 시리즈는 별도 후속이다.
-Next-TODO: 젠이 SERIES/06-30/input/candidate-review.md의 20곡 A/B를 청취·선택한다. 선택 전 자동 생성 재개는 하지 않는다.
+Next-TODO: 젠이 SERIES/17-30/input/candidate-review.md의 20곡 A/B를 청취·선택한다. 선택 전 자동 생성 재개는 하지 않는다.
 Commits: (이번 커밋)
 ---
 
@@ -85,7 +125,7 @@ HANDOFF: Codex -> 젠
 Date: 2026-10-21 17:47 KST (17:00 음악 방향 20곡 A/B 생성 완료·청취 대기)
 Project: ~/Project/wavvy
 Agent: Codex
-Summary: 젠의 최신 지시로 `[06:30]` 기존 공간에서 17:00 어쿠스틱 R&B·네오소울 방향을 이어간다. 새 러닝용 175 BPM은 다음 별도 시리즈다. 02·04·05·07·08 원문과 원격 후보 10개는 보존했다. 브라우저 작업자가 인디 록 01·03·06·09의 옛 후보 8개를 휴지통으로 옮겼다. 01·03·06·09·10–20의 15개 원문을 곡별 템포로 수정하고 인디 록 7곡을 R&B·네오소울로 바꿨다. 당시 미생성 10–20 후렴에는 고음 벨팅 지시를 더했다. 변경 전 15개는 `SERIES/06-30/input/source-history/2026-10-21-running-draft/`에 보존했다. 수정 15곡 원시 텍스트 검사 45/45 PASS, 유지 5곡 원문 해시 동일. 격리 Astra xhigh 개정 원문 검토는 CLEAN/PASS다(`.ai/reviews/2026-10-21-nonrock-source-review.md`). 17:47 KST 원격 활성 후보 20곡×2개=40개 모두 재생 가능하며, 수정 15곡에 새 후보 30개가 생겼다. 크레딧 2546→2396(150 사용), 세션 전체 2636→2396(240 사용). `SERIES/06-30/input/candidate-review.md`에 A/B 청취 링크를 기록했다. 공식 state check PASS, phase `track_source_draft`·로컬 오디오 0개다. 전곡 선택은 대기이며 실제 음원 템포·고음 후렴·길이·보컬은 미검증이다.
+Summary: 젠의 최신 지시로 `[06:30]` 기존 공간에서 17:00 어쿠스틱 R&B·네오소울 방향을 이어간다. 새 러닝용 175 BPM은 다음 별도 시리즈다. 02·04·05·07·08 원문과 원격 후보 10개는 보존했다. 브라우저 작업자가 인디 록 01·03·06·09의 옛 후보 8개를 휴지통으로 옮겼다. 01·03·06·09·10–20의 15개 원문을 곡별 템포로 수정하고 인디 록 7곡을 R&B·네오소울로 바꿨다. 당시 미생성 10–20 후렴에는 고음 벨팅 지시를 더했다. 변경 전 15개는 `SERIES/17-30/input/source-history/2026-10-21-running-draft/`에 보존했다. 수정 15곡 원시 텍스트 검사 45/45 PASS, 유지 5곡 원문 해시 동일. 격리 Astra xhigh 개정 원문 검토는 CLEAN/PASS다(`.ai/reviews/2026-10-21-nonrock-source-review.md`). 17:47 KST 원격 활성 후보 20곡×2개=40개 모두 재생 가능하며, 수정 15곡에 새 후보 30개가 생겼다. 크레딧 2546→2396(150 사용), 세션 전체 2636→2396(240 사용). `SERIES/17-30/input/candidate-review.md`에 A/B 청취 링크를 기록했다. 공식 state check PASS, phase `track_source_draft`·로컬 오디오 0개다. 전곡 선택은 대기이며 실제 음원 템포·고음 후렴·길이·보컬은 미검증이다.
 Next-TODO: 젠의 A/B 청취 선택과 필요한 실제 음원 확인이 남았다. 기존 `SERIES/17-00`과 07:00 운동용은 건드리지 않는다. `.ai/state.json`의 로컬 오디오 0개를 원격 후보 40개로 해석하지 않는다.
 Resume-Trigger: 젠의 후보 청취·선택 결과
 Commits: 없음(이번 턴 커밋·푸시하지 않음)

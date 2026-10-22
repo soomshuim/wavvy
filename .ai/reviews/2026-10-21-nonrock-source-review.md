@@ -5,9 +5,9 @@ Status: 전달받은 격리 Astra xhigh 검토 판정의 전사. 이 문서 작�
 
 ## 검토 대상
 
-- 대상: `SERIES/06-30/input/tracks/`의 현행 20곡 원문. 이 중 02·04·05·07·08은 기존 생성 원문 유지, 나머지 15곡은 17:00 음악 방향·인디 록 제외·곡별 템포로 개정했다.
-- [대상 manifest](../../SERIES/06-30/input/validation/20-song-manifest.json) SHA-256: `68f364018c913ba8fa10ece06eb47c11efa07f8d9d982699fa6a0865362f715a`. 개정 15개 각각의 파일 SHA-256은 해당 manifest의 `tracks[].source_sha256`에, 검사 원시는 각 `tracks[].raw_gate_results`에 있다. Manifest의 `pending_independent_review` 상태 문자열은 검토 전 소스 스냅샷이므로 이 판정 기록이 후속 결과다.
-- 변경 전 15개 원문은 [원본 보관 목록](../../SERIES/06-30/input/source-history/2026-10-21-running-draft/archive-manifest.json)의 바이트·SHA-256으로 보존했다.
+- 대상: `SERIES/17-30/input/tracks/`의 현행 20곡 원문. 이 중 02·04·05·07·08은 기존 생성 원문 유지, 나머지 15곡은 17:00 음악 방향·인디 록 제외·곡별 템포로 개정했다.
+- [대상 manifest](../../SERIES/17-30/input/validation/20-song-manifest.json) SHA-256: `68f364018c913ba8fa10ece06eb47c11efa07f8d9d982699fa6a0865362f715a`. 개정 15개 각각의 파일 SHA-256은 해당 manifest의 `tracks[].source_sha256`에, 검사 원시는 각 `tracks[].raw_gate_results`에 있다. Manifest의 `pending_independent_review` 상태 문자열은 검토 전 소스 스냅샷이므로 이 판정 기록이 후속 결과다.
+- 변경 전 15개 원문은 [원본 보관 목록](../../SERIES/17-30/input/source-history/2026-10-21-running-draft/archive-manifest.json)의 바이트·SHA-256으로 보존했다.
 
 ## 전달받은 판정
 

@@ -17,6 +17,6 @@
 > - 검증: 상태 검사와 변경 형식 검사는 종료 코드 0이에요. 음원 실청과 BPM(분당 박자 수) 측정은 이번 검토 범위에 포함하지 않았어요.
 > 원칙 관찰: 없음. 파일 변경과 추가 검토자 호출은 하지 않았어요.
 
-검토 근거: [최종 이미지 제작 메타](../../SERIES/06-30/input/artwork/final-artwork-2026-10-22.md), [제목·재생목록 조정 원시 요약](../../SERIES/06-30/input/validation/2026-10-22-sequence-final-adjustment/summary.json), [20곡 순서](../../SERIES/06-30/input/playback-order.json), [선택 후보](../../SERIES/06-30/input/suno-candidates.json), [청취표](../../SERIES/06-30/input/candidate-review.md), [좁은 무결성 22/22](../../SERIES/06-30/input/validation/2026-10-22-final-release-docs-checks/document-integrity.json), [상태 검사](../../SERIES/06-30/input/validation/2026-10-22-final-release-docs-checks/state-check.json), [변경 형식 검사](../../SERIES/06-30/input/validation/2026-10-22-final-release-docs-checks/diff-check.json).
+검토 근거: [최종 이미지 제작 메타](../../SERIES/17-30/input/artwork/final-artwork-2026-10-22.md), [제목·재생목록 조정 원시 요약](../../SERIES/17-30/input/validation/2026-10-22-sequence-final-adjustment/summary.json), [20곡 순서](../../SERIES/17-30/input/playback-order.json), [선택 후보](../../SERIES/17-30/input/suno-candidates.json), [청취표](../../SERIES/17-30/input/candidate-review.md), [좁은 무결성 22/22](../../SERIES/17-30/input/validation/2026-10-22-final-release-docs-checks/document-integrity.json), [상태 검사](../../SERIES/17-30/input/validation/2026-10-22-final-release-docs-checks/state-check.json), [변경 형식 검사](../../SERIES/17-30/input/validation/2026-10-22-final-release-docs-checks/diff-check.json).
 
 범위 밖: 실제 음원 재청취, BPM·보컬·기술 품질의 독립 측정, 최종 발매 승인.

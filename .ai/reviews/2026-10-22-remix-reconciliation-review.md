@@ -17,8 +17,8 @@
 - 보존 검사: 기준본의 원문 txt 20개, 이전 후보 문서 2개 및 이전 후보 ID 40개. 아카이브 파일 22개.
 - 현재 대조: 화면 관찰 12개 고유 ID와 문서 12개 일치. 새 Cover 10개, 기존 ID 2개. 제목·스타일 툴팁·원곡 연결, 14의 중간 Cover와 20의 제목 변경 대조.
 - 의미 구분: 화면 스타일 설명과 예전 생성 입력 STYLE, 현 목록 미노출과 삭제 확정, 젠의 보존 선택과 음원 품질·발매 승인.
-- 상태 검사: `SERIES/06-30/input/validation/2026-10-22-state-check.json`의 `result=PASS`. 검토 당시 `git diff --check` 출력 없음·종료 코드 0.
-- 원시 관찰: `SERIES/06-30/input/validation/2026-10-22-current-suno/observation.json`.
-- 작업자 무결성 결과: `SERIES/06-30/input/validation/2026-10-22-document-integrity.json`.
+- 상태 검사: `SERIES/17-30/input/validation/2026-10-22-state-check.json`의 `result=PASS`. 검토 당시 `git diff --check` 출력 없음·종료 코드 0.
+- 원시 관찰: `SERIES/17-30/input/validation/2026-10-22-current-suno/observation.json`.
+- 작업자 무결성 결과: `SERIES/17-30/input/validation/2026-10-22-document-integrity.json`.
 
 원칙 관찰: 없음.

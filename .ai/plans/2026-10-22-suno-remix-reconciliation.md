@@ -20,9 +20,9 @@ Status: 현재 화면 대조·문서 반영·격리 검토 CLEAN, 저장소 반�
 
 ## 선례
 
-- `SERIES/06-30/concept.md`와 `input/candidate-review.md`: 음악 방향·청취 선택 상태.
-- `SERIES/06-30/input/suno-candidates.json`: 후보 ID·생성 소스·이전 후보 이력.
-- `SERIES/06-30/input/validation/suno-final-ui-observation.json`: 화면 실측 근거.
+- `SERIES/17-30/concept.md`와 `input/candidate-review.md`: 음악 방향·청취 선택 상태.
+- `SERIES/17-30/input/suno-candidates.json`: 후보 ID·생성 소스·이전 후보 이력.
+- `SERIES/17-30/input/validation/suno-final-ui-observation.json`: 화면 실측 근거.
 - `MASTER/SSOT.md`: 화면의 스타일 설명과 확인된 생성 원문을 구분한다.
 
 ## 실행 순서
@@ -36,7 +36,7 @@ Status: 현재 화면 대조·문서 반영·격리 검토 CLEAN, 저장소 반�
 ## 실행 정보
 
 - browser: Aside / MCP; 실제 사용 도구 `mcp__aside__repl`.
-- source evidence: `SERIES/06-30/input/validation/2026-10-22-current-suno/`.
+- source evidence: `SERIES/17-30/input/validation/2026-10-22-current-suno/`.
 - 문서 수정 전 기준: `master` / `de9fced`, 작업 폴더 clean.
 - 지정 실행 역할: Sol xhigh; 최종 격리 검토: Astra xhigh.
 - 원문 20개 파일 해시·이전 40개 후보 객체·현재 12개 ID·스타일 문구를 대조했다. 원시 결과는 `input/validation/2026-10-22-document-integrity.json`과 `2026-10-22-state-check.json`에 있다.

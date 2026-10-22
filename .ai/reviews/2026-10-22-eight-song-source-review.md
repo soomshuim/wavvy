@@ -16,7 +16,7 @@
 - 개편 대상 03·06·07·10·13·15·16·19의 새 txt 8개와 가사 검토 8개, 개편 전 원문·가사 검토 16개의 바이트·해시 보존, 손대지 않은 나머지 12곡, 원시 텍스트 검사 24건을 검토했다.
 - Rhodes 03·06·13·15 / 다른 리드 악기 07·10·16·19, 설렘 일상 06·07·13·16 / 만트라 일상 03·10·15·19로 각 축 4곡, 교차 조합 각 2곡이다. 전곡 원문은 175 BPM 목표, modern R&B/neo-soul, 가까운 마른 단독 진성 리드를 지시한다.
 - 제목·보컬 성별·조성의 기존 조건과 10·13·15·16·19의 높은 후렴 조건을 대조했다. 원문 8개·가사 검토 8개의 개편 전 아카이브 해시는 Git 기준본과 같고, 미수정 12곡도 기준본과 같았다.
-- 검토자가 직접 확인한 해당 원시 검사 24건은 모두 `exit=0`, `PASS`였으며 새 원문 해시도 [최종 원문 요약](../../SERIES/06-30/input/validation/2026-10-22-eight-song-source-summary.json)과 일치했다. 해당 24건은 가사 손질 뒤 [최종 텍스트 게이트](../../SERIES/06-30/input/validation/2026-10-22-eight-song-final-text-gates/command-results.json) 21건과, 그때 수정하지 않은 06·07·16의 [초기 track-prompt 검사](../../SERIES/06-30/input/validation/2026-10-22-eight-song-text-gates/command-results.json) 3건이다. [보존 결과](../../SERIES/06-30/input/validation/2026-10-22-eight-song-preservation.json)와 [아카이브 목록](../../SERIES/06-30/input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json)도 대조 대상이다.
+- 검토자가 직접 확인한 해당 원시 검사 24건은 모두 `exit=0`, `PASS`였으며 새 원문 해시도 [최종 원문 요약](../../SERIES/17-30/input/validation/2026-10-22-eight-song-source-summary.json)과 일치했다. 해당 24건은 가사 손질 뒤 [최종 텍스트 게이트](../../SERIES/17-30/input/validation/2026-10-22-eight-song-final-text-gates/command-results.json) 21건과, 그때 수정하지 않은 06·07·16의 [초기 track-prompt 검사](../../SERIES/17-30/input/validation/2026-10-22-eight-song-text-gates/command-results.json) 3건이다. [보존 결과](../../SERIES/17-30/input/validation/2026-10-22-eight-song-preservation.json)와 [아카이브 목록](../../SERIES/17-30/input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json)도 대조 대상이다.
 
 검토 범위에 실제 Suno 생성 결과, 음원 청취·템포·품질, 20곡의 최종 재생 순서, 문서 통합 최종 검토는 포함되지 않는다.
 

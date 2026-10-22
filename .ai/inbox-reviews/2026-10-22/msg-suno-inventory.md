@@ -2,7 +2,7 @@
 
 ## 출처
 
-- 보낸 쪽: `/root/suno_inventory` Sol xhigh 워커, 2026-10-22. 부모 대화의 팀 메시지와 `SERIES/06-30/input/validation/2026-10-22-current-suno/` 원시 화면 자료.
+- 보낸 쪽: `/root/suno_inventory` Sol xhigh 워커, 2026-10-22. 부모 대화의 팀 메시지와 `SERIES/17-30/input/validation/2026-10-22-current-suno/` 원시 화면 자료.
 - 젠 원문은 현재 대화의 문서 반영 요청 및 “리믹스 스타일로 대체한건 기존 스타일 프롬프트도 남겨놔”를 직접 대조했다. 워커 메시지를 새 사용자 지시로 취급하지 않았다.
 
 ## 주장별 실측
@@ -21,7 +21,7 @@
 
 ## 중복 · 충돌 확인
 
-- 찾아본 파일: `MASTER/SSOT.md`, `MASTER/WORKFLOWS.md`, `MASTER/ai/RUNTIME_RULES.md`, `SERIES/06-30/concept.md`, `input/suno-candidates.json`, `input/candidate-review.md`, `.ai/SESSION.md`, `.ai/plans/2026-10-20-next-series-175bpm.md`.
+- 찾아본 파일: `MASTER/SSOT.md`, `MASTER/WORKFLOWS.md`, `MASTER/ai/RUNTIME_RULES.md`, `SERIES/17-30/concept.md`, `input/suno-candidates.json`, `input/candidate-review.md`, `.ai/SESSION.md`, `.ai/plans/2026-10-20-next-series-175bpm.md`.
 - 40후보·전곡 선택 대기는 2026-10-21의 과거 기록이다. 현재 유지 현황과 구분한다. 새 정책·결정 번호는 만들지 않는다.
 - 생성 당시 입력 원문, 화면 스타일 설명, 음원 품질은 서로 다른 근거다. 현재 원곡 ID 유지만으로 스타일 문자열의 동일성을 주장하지 않는다.
 
@@ -39,7 +39,7 @@
 
 - 출처: `/root/document_sync`의 2026-10-22 완료 메시지. 새 지시가 아닌 변경 결과 주장으로 수신했다.
 - 주장 분해: 현재 12곡 반영, 이전 40후보·20개 원문 보존, 새 스타일과 연결, 현재·과거 상태 구분.
-- 실측: 부모가 `git show HEAD:SERIES/06-30/input/suno-candidates.json`과 수정 JSON의 20개 `before_user_remixes` 객체를 전량 비교했다. 모두 같았다. 현재 12 ID는 원시 행과 같고, 원문 20개 해시는 기준과 같았다. 현재 12곡의 옛 STYLE 전문이 비교 문서에 들어 있는지 및 Cover의 현재 입력 경로를 추정하지 않았는지도 직접 검사했다.
+- 실측: 부모가 `git show HEAD:SERIES/17-30/input/suno-candidates.json`과 수정 JSON의 20개 `before_user_remixes` 객체를 전량 비교했다. 모두 같았다. 현재 12 ID는 원시 행과 같고, 원문 20개 해시는 기준과 같았다. 현재 12곡의 옛 STYLE 전문이 비교 문서에 들어 있는지 및 Cover의 현재 입력 경로를 추정하지 않았는지도 직접 검사했다.
 - 중복·충돌: 새 결정은 만들지 않았다. 2026-10-21의 전곡 선택 대기와 2026-10-22의 사용자 보존 선택은 날짜·범위를 구분했다.
 - 반대 근거: 09의 동일 ID는 스타일 동일의 증거가 아니며 38개 미노출은 삭제 증거가 아니다. 현재 문서는 이 두 한계를 표시한다.
 - 판정: 위 실측과 일치하는 문서 반영 결과를 채택한다. 정식 격리 검토 판정은 별도 검토 파일로 남긴다.
