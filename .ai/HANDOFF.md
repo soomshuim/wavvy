@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17번 내부 녹음 중도 무음·정식 등록 보류)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: [실패 원시 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-failed-mid-capture.json)에서 17번 녹음 raw 63.763917초 이후 끝까지 140.136083초 완전 무음을 직접 확인했다. Suno UI는 선택곡 64.811617/184.4초 뒤에도 160.3779초까지 재생됐으나 UI volume/muted와 구간별 캡처 PTS는 미기록이라 원인은 미확인이다. [실패 후 진단](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-diagnosis.json)의 macOS 출력 음소거=true는 당시 전환 시각이 없어 원인 확정 근거가 아니다. 젠에게 음소거 해제 후 17번부터 계속할지 잠시 멈출지 물었고 답을 기다린다. 실패 raw는 보존하고 17번 정식 WAV를 만들지 않았다. manifest/state는 16/20곡(공식 다운로드 3·내부 녹음 13) 그대로다.
+Next-TODO: 브라우저·캡처 담당의 읽기 전용 원인 조사를 기다린다. 18~20번과 17번 재시도는 현재 대기하며, 새 유효 raw가 와야 경계·선택 ID·SHA 확인 후 등록한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 실패 작은 근거·상태 문서는 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 16/20 checkpoint)
 Project: ~/Project/wavvy
 Agent: Codex
