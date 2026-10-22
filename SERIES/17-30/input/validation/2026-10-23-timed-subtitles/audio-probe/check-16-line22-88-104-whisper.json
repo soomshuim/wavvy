@@ -1,0 +1,108 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-16-line22-88-104.flac",
+  "audio_sha256": "60f5f8d5c31e8d32a170659399c4981bb1272449c3121e3bfcb9a99ba6c717cf",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 1.917,
+  "transcription": {
+    "text": " 다 했지만 네 목소리가 좋으니까 집 앞까지 가고 싶어",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 8.54,
+        "text": " 다 했지만 네 목소리가 좋으니까 집 앞까지 가고 싶어",
+        "tokens": [
+          50365,
+          4279,
+          8154,
+          9231,
+          8808,
+          20433,
+          17921,
+          27116,
+          5008,
+          19975,
+          12111,
+          13727,
+          8786,
+          4147,
+          1313,
+          10785,
+          3103,
+          51165
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.30718386800665604,
+        "compression_ratio": 0.8875,
+        "no_speech_prob": 2.942547594475542e-11,
+        "words": [
+          {
+            "word": " 다",
+            "start": 0.0,
+            "end": 0.24,
+            "probability": 0.0994873046875
+          },
+          {
+            "word": " 했지만",
+            "start": 0.24,
+            "end": 1.94,
+            "probability": 0.826171875
+          },
+          {
+            "word": " 네",
+            "start": 1.94,
+            "end": 2.42,
+            "probability": 0.85888671875
+          },
+          {
+            "word": " 목소리가",
+            "start": 2.42,
+            "end": 3.12,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 좋으니까",
+            "start": 3.12,
+            "end": 4.48,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 집",
+            "start": 4.48,
+            "end": 5.16,
+            "probability": 0.97509765625
+          },
+          {
+            "word": " 앞까지",
+            "start": 5.16,
+            "end": 5.68,
+            "probability": 0.96875
+          },
+          {
+            "word": " 가고",
+            "start": 5.68,
+            "end": 6.84,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 싶어",
+            "start": 6.84,
+            "end": 8.54,
+            "probability": 0.990234375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

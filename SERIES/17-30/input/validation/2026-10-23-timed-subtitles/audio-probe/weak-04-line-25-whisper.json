@@ -1,0 +1,62 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/weak-04-line-25.flac",
+  "audio_sha256": "0cf569ab015027654024cfec3d063d0cd89c190889dc1f425aff696362fb1904",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 0.894,
+  "transcription": {
+    "text": " 다음 영상에서 만나요.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 10.239999999999998,
+        "end": 15.18,
+        "text": " 다음 영상에서 만나요.",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          13,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.39757559034559464,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 4.6766861216962496e-11,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 10.239999999999998,
+            "end": 11.639999999999999,
+            "probability": 0.08453369140625
+          },
+          {
+            "word": " 영상에서",
+            "start": 11.639999999999999,
+            "end": 13.04,
+            "probability": 0.841796875
+          },
+          {
+            "word": " 만나요.",
+            "start": 13.04,
+            "end": 15.18,
+            "probability": 0.98828125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

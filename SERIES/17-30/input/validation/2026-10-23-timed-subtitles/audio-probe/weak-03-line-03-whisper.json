@@ -1,0 +1,189 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/weak-03-line-03.flac",
+  "audio_sha256": "e960a84ffba76224289cd3ad1dd63e30280530bc7f45c5fc7549006757f9d148",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 1.919,
+  "transcription": {
+    "text": " 한참 표지만 만졌어 처음 적으란 마디가 괜히 어려워 보여 연필 끝을 돌리다가",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.3,
+        "text": " 한참 표지만 만졌어",
+        "tokens": [
+          50365,
+          4815,
+          5786,
+          116,
+          20966,
+          9231,
+          14671,
+          25001,
+          3103,
+          50565
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3027930904079128,
+        "compression_ratio": 1.0097087378640777,
+        "no_speech_prob": 3.649293714436119e-11,
+        "words": [
+          {
+            "word": " 한참",
+            "start": 0.0,
+            "end": 2.24,
+            "probability": 0.87109375
+          },
+          {
+            "word": " 표지만",
+            "start": 2.24,
+            "end": 2.86,
+            "probability": 0.923828125
+          },
+          {
+            "word": " 만졌어",
+            "start": 2.86,
+            "end": 4.3,
+            "probability": 0.99462890625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.3,
+        "end": 8.34,
+        "text": " 처음 적으란 마디가",
+        "tokens": [
+          50591,
+          18736,
+          14370,
+          3336,
+          18781,
+          25847,
+          9520,
+          1453,
+          50765
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3027930904079128,
+        "compression_ratio": 1.0097087378640777,
+        "no_speech_prob": 3.649293714436119e-11,
+        "words": [
+          {
+            "word": " 처음",
+            "start": 4.3,
+            "end": 6.22,
+            "probability": 0.9580078125
+          },
+          {
+            "word": " 적으란",
+            "start": 6.22,
+            "end": 7.02,
+            "probability": 0.80029296875
+          },
+          {
+            "word": " 마디가",
+            "start": 7.02,
+            "end": 8.34,
+            "probability": 0.95703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 8.34,
+        "end": 11.58,
+        "text": " 괜히 어려워 보여",
+        "tokens": [
+          50797,
+          17327,
+          5905,
+          32289,
+          10086,
+          21918,
+          50948
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3027930904079128,
+        "compression_ratio": 1.0097087378640777,
+        "no_speech_prob": 3.649293714436119e-11,
+        "words": [
+          {
+            "word": " 괜히",
+            "start": 8.34,
+            "end": 9.52,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 어려워",
+            "start": 9.52,
+            "end": 10.78,
+            "probability": 0.990234375
+          },
+          {
+            "word": " 보여",
+            "start": 10.78,
+            "end": 11.58,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 13.02,
+        "end": 15.76,
+        "text": " 연필 끝을 돌리다가",
+        "tokens": [
+          50948,
+          11839,
+          817,
+          226,
+          13932,
+          1638,
+          34324,
+          2250,
+          14325,
+          51165
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3027930904079128,
+        "compression_ratio": 1.0097087378640777,
+        "no_speech_prob": 3.649293714436119e-11,
+        "words": [
+          {
+            "word": " 연필",
+            "start": 13.02,
+            "end": 14.42,
+            "probability": 0.9658203125
+          },
+          {
+            "word": " 끝을",
+            "start": 14.42,
+            "end": 15.0,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 돌리다가",
+            "start": 15.0,
+            "end": 15.76,
+            "probability": 0.87158203125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-04-weak-line25-context-110-145.flac",
+  "audio_sha256": "a35170e4a5330f4909cb4d07e13db87b2a297bb5fee4ef7d13980e8510db9752",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 1.687,
+  "transcription": {
+    "text": " 귤을 닦아 먹을 쯤 친구 하나가 사진을 찍어 눈을 감은 사람이 있어도 다시 찍지 말자고 해 그 얼굴이 우리 같아서 사진을 나눠가기로 해 돌아갈 때 문 앞에서",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 11.9,
+        "end": 17.34,
+        "text": " 귤을 닦아 먹을 쯤 친구 하나가 사진을 찍어",
+        "tokens": [
+          50365,
+          1510,
+          97,
+          1638,
+          2515,
+          99,
+          2230,
+          28130,
+          451,
+          46652,
+          28307,
+          12261,
+          1453,
+          29899,
+          1638,
+          17285,
+          3103,
+          51238
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17253585815429687,
+        "compression_ratio": 1.2569444444444444,
+        "no_speech_prob": 8.102656566533195e-12,
+        "words": [
+          {
+            "word": " 귤을",
+            "start": 11.9,
+            "end": 13.06,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 닦아",
+            "start": 13.06,
+            "end": 13.58,
+            "probability": 0.955078125
+          },
+          {
+            "word": " 먹을",
+            "start": 13.58,
+            "end": 14.08,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 쯤",
+            "start": 14.08,
+            "end": 14.48,
+            "probability": 0.6279296875
+          },
+          {
+            "word": " 친구",
+            "start": 14.48,
+            "end": 15.02,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 하나가",
+            "start": 15.02,
+            "end": 15.6,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 사진을",
+            "start": 15.6,
+            "end": 16.42,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 찍어",
+            "start": 16.42,
+            "end": 17.34,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 17.34,
+        "end": 22.98,
+        "text": " 눈을 감은 사람이 있어도 다시 찍지 말자고 해",
+        "tokens": [
+          51238,
+          15333,
+          1638,
+          10892,
+          2124,
+          27660,
+          2297,
+          34296,
+          15463,
+          17285,
+          1831,
+          7058,
+          4264,
+          1313,
+          11683,
+          51517
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17253585815429687,
+        "compression_ratio": 1.2569444444444444,
+        "no_speech_prob": 8.102656566533195e-12,
+        "words": [
+          {
+            "word": " 눈을",
+            "start": 17.34,
+            "end": 17.88,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 감은",
+            "start": 17.88,
+            "end": 18.42,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 사람이",
+            "start": 18.42,
+            "end": 19.12,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 있어도",
+            "start": 19.12,
+            "end": 19.86,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 다시",
+            "start": 19.86,
+            "end": 20.4,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 찍지",
+            "start": 20.4,
+            "end": 21.2,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 말자고",
+            "start": 21.2,
+            "end": 22.5,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 해",
+            "start": 22.5,
+            "end": 22.98,
+            "probability": 0.99267578125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 22.98,
+        "end": 29.12,
+        "text": " 그 얼굴이 우리 같아서 사진을 나눠가기로 해",
+        "tokens": [
+          51517,
+          4296,
+          30818,
+          1129,
+          8126,
+          48084,
+          29899,
+          1638,
+          44263,
+          254,
+          1453,
+          27860,
+          11683,
+          51831
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17253585815429687,
+        "compression_ratio": 1.2569444444444444,
+        "no_speech_prob": 8.102656566533195e-12,
+        "words": [
+          {
+            "word": " 그",
+            "start": 22.98,
+            "end": 23.34,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 얼굴이",
+            "start": 23.34,
+            "end": 24.2,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 우리",
+            "start": 24.2,
+            "end": 24.66,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 같아서",
+            "start": 24.66,
+            "end": 25.2,
+            "probability": 0.96337890625
+          },
+          {
+            "word": " 사진을",
+            "start": 25.2,
+            "end": 26.56,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 나눠가기로",
+            "start": 26.56,
+            "end": 28.26,
+            "probability": 0.8271484375
+          },
+          {
+            "word": " 해",
+            "start": 28.26,
+            "end": 29.12,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2912,
+        "start": 32.019999999999996,
+        "end": 34.98,
+        "text": " 돌아갈 때 문 앞에서",
+        "tokens": [
+          50365,
+          26761,
+          27657,
+          7765,
+          13086,
+          13727,
+          4885,
+          50658
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.09613619910346137,
+        "compression_ratio": 0.7105263157894737,
+        "no_speech_prob": 2.047060958243474e-11,
+        "words": [
+          {
+            "word": " 돌아갈",
+            "start": 32.019999999999996,
+            "end": 33.36,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 때",
+            "start": 33.36,
+            "end": 33.64,
+            "probability": 0.95556640625
+          },
+          {
+            "word": " 문",
+            "start": 33.64,
+            "end": 34.1,
+            "probability": 0.98828125
+          },
+          {
+            "word": " 앞에서",
+            "start": 34.1,
+            "end": 34.98,
+            "probability": 0.9873046875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

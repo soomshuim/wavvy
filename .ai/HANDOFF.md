@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-23 (17:30 수동 한국어 자막 게시 완료)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 공개 영상 `3HorT4OoDhg`에 시간 맞춘 직접 한국어 자막을 게시했다. [Studio·공개 원시 관찰](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/publication-observation.json)은 수동 `게시됨`, 자동 자막 별도 보존, 공개 0:05·38:20·1:04:59·2:08:04 네 구간의 확정 원고 표시를 확인했다. 승인 제목·영상·공개·댓글은 그대로다.
+Current: [최종 SRT](../SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt)는 1,270구간·1,498행, SHA-256 `29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226`이다. [Studio 다운로드](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/studio-published-manual-ko.srt)는 마지막 LF 1바이트 외 전부 같다. 시간은 일반 읽기용 추정이며 전곡 청취 검증은 아니다. 기존 오류 3회와 젠 선택 대기는 아래 당시 기록이다. 저작권 화면의 소유권 주장 0건·보호 콘텐츠 미발견은 관찰 시점의 결과다.
+Verification: [최종 자막 격리 검토](reviews/2026-10-23-timed-subtitle-final-review.md)와 [게시·스킬 격리 검토](reviews/2026-10-23-timed-subtitle-publication-skill-review.md)는 각각 CLEAN(확정 Critical/High 0)이다. Studio 공개 관찰과 다운로드 전체 바이트를 대조했다. 공식 state revision 78 `uploaded`·자막 SRT `present`, state check·uploaded gate PASS와 스킬 형식 검사 PASS를 [로컬 검사 원시](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/local-validation/)에 남겼다.
+Next-TODO: 이번 요청 범위의 자막 게시와 스킬 반영에 남은 일은 없다.
+Commits: 이 변경 묶음에서 문서·스킬·작은 원시 관찰을 함께 보존한다. 큰 미디어와 로컬 자막 산출물은 ignored 상태로 유지한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-23 (17:30 저작권·직접 자막 후속 관찰)
 Project: ~/Project/wavvy
 Agent: Codex

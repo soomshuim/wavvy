@@ -1,10 +1,18 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-23 (17:30 소유권 주장 0건 확인, 직접 한국어 자막 게시 3회 오류·젠 선택 대기)
+> Last updated: 2026-10-23 (17:30 직접 한국어 자막 게시·공개 확인)
 
 ---
 
-## 2026-10-23 [CDX] 17:30 저작권·직접 자막 후속 관찰
+## 2026-10-23 [CDX] 17:30 수동 한국어 자막 게시 완료
+- 젠의 “응. 잘 되면 스킬도 수정” 승인에 따라 확정 원고를 시간 맞춘 [최종 SRT](../SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt)로 만들었다. 1,270구간·1,498행, SHA-256 `29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226`이다. 원문 가사 자체는 변경하지 않았고 실제 가창 근거가 있는 반복만 회차당 10행 더했다. 전곡 청취 판정이 아니라 일반 읽기용 시간 추정이다. [최종 독립 검토](reviews/2026-10-23-timed-subtitle-final-review.md)는 CLEAN(확정 Critical/High 0)이다.
+- [게시 원시 관찰](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/publication-observation.json)에서 기존 공개 영상 `3HorT4OoDhg`의 수동 한국어 `게시됨`, 별도 자동 한국어 보존, 공개 자막 0:05·38:20·1:04:59·2:08:04의 정확한 원문 표시와 확인 뒤 일시정지를 확인했다. [Studio 다운로드 SRT](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/studio-published-manual-ko.srt)는 최종 SRT보다 마지막 LF 1바이트만 많고 그 외 바이트가 같다(86,025바이트, SHA-256 `b9ef1541954c96ee07593278d34d0553ed1965e8a6e8758d352d20ea37de1731`). 승인 제목·영상·공개·댓글은 변경하지 않았다. `wavvy-youtube-publish` 스킬에 기존 영상의 자막 후속 경로를 반영했다.
+- 아래의 무시각 초안 게시 실패 3회·젠 선택 대기는 **당시 기록**이며 현재 미완료 일이 아니다. 소유권 주장 0건·저작권 보호 콘텐츠 미발견은 2026-10-23 Studio 관찰 범위다. 이번 요청 범위에서 남은 게시 작업은 없다.
+- 공식 state writer로 revision 78 `uploaded`를 기록했고 자막 SRT 상태는 `present`다. state check와 uploaded gate는 PASS였다.
+
+---
+
+## 2026-10-23 [CDX] 17:30 저작권·직접 자막 후속 관찰 (당시 기록)
 - [Studio 소유권 주장 개요](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-claims.txt)에 영상 `3HorT4OoDhg`의 소유권 주장 0건과 저작권 보호 콘텐츠 미발견이 표시됐다. 이는 해당 화면의 현재 관찰이며 장래 권리 주장 부재를 보증하지 않는다. 제목·공개 상태·영상·댓글은 변경하지 않았다.
 - [한국어 초안](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-draft.txt) 40,971바이트·가사 1,478행의 SHA-256 `29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18`는 로컬 원고와 같다. 2026-10-23 06:43:34 KST [게시 시도](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-publish-attempt.txt)는 전날 2회와 동일한 자막 트랙 업데이트 오류로 실패했다. 총 3회이며 직접 가사 자막은 **미게시**다. 타이밍 수정은 비활성이고 편집 타임라인에 수동 자막 구간은 보이지 않았다. 원인 확정 없이 추가 게시 시도를 멈췄다. [Studio 언어 세부정보](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language-details.txt)에는 별도의 자동 한국어 자막만 `게시됨`, 수동 자막은 `임시본`으로 나온다. [공개 watch 화면](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-auto-caption-visible.png) 23:28 지점에 선택된 자동 트랙의 문구가 실제 보였다. [자동 SRT](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-auto-captions.srt)는 1,410구간·90,113바이트이며 원고와 다른 오인식이 있어 직접 원고 게시로 간주하지 않는다.
 - 젠에게 확정 가사의 시간 맞춘 파일 제작과 자막 작업 중단 중 선택을 묻는 중이다. 선택 전 추가 자막 제작·게시를 하지 않는다. [YouTube 도움말](https://support.google.com/youtube/answer/2734796?hl=en-CA)의 1시간 초과 자동 동기화 비권장은 원인 후보일 뿐 이번 오류의 확정 원인이 아니다. 공식 state revision 77 `uploaded`는 그대로다. 이전 항목의 저작권 검토 중·게시 오류 2회는 2026-10-22 당시 기록이다.

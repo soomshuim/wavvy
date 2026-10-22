@@ -1,11 +1,13 @@
 ---
 name: wavvy-youtube-publish
-description: Prepare, upload, schedule, and verify a finished Wavvy playlist on YouTube. Use from wavvy-release after the package passes upload-ready, or when 젠 asks to publish an already finished Wavvy video. For artwork use wavvy-thumbnail.
+description: Prepare, upload, schedule, and verify a finished Wavvy playlist on YouTube, or add timed subtitles to an existing published Wavvy video. Use from wavvy-release after the package passes upload-ready, or when 젠 asks to publish or caption a Wavvy video. For artwork use wavvy-thumbnail.
 ---
 
 # Wavvy YouTube Publish
 
 Trigger: model-invoked after a release package is ready. The user's release request authorizes the requested upload; ask only for a publishing choice that the request and series concept do not resolve.
+
+For a subtitles-only follow-up on an existing video, use [`references/timed-subtitles.md`](references/timed-subtitles.md). Keep that work on the existing video; do not restart this full-upload sequence, ask for title approval again, or repost a comment.
 
 ## Steps
 

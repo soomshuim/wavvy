@@ -1,0 +1,93 @@
+- title: "언어 - YouTube Studio" [url=https://studio.youtube.com/video/3HorT4OoDhg/translations]
+- text: "언어"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]:
+    - image "YouTube 스튜디오 대시보드"
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 언어" [ref=e96]
+  - image "동영상 미리보기 이미지: Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | "
+  - text: "2:08:39\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n      …[+272 chars]"
+  - menu:
+    - listitem:
+      - menuitem "세부정보" [ref=e11]
+    - listitem:
+      - menuitem "분석" [ref=e12]
+    - listitem:
+      - menuitem "편집기" [ref=e13]
+    - listitem:
+      - menuitem "댓글" [ref=e14]
+    - listitem:
+      - menuitem "언어" [ref=e15]
+    - listitem:
+      - menuitem "소유권 주장" [ref=e16]
+    - listitem:
+      - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - list:
+    - listitem:
+      - button "설정" [ref=e20]
+    - listitem:
+      - button "의견 보내기" [ref=e21]
+- main:
+  - heading "언어" [level=1]
+  - region "동영상 언어: 한국어" [ref=e98]:
+    - heading "동영상 언어: 한국어" [level=2]
+    - button "세부정보" [ref=e99]
+    - text: "한국어 자막은 자막 및 오디오의 자동 번역을 위한 기본 소스입니다."
+    - button "자막 수정" [ref=e100]
+    - button "수동 업로드" [ref=e101]
+  - region "번역" [ref=e102]:
+    - heading "번역" [level=2]
+    - button "언어 추가" [ref=e103]
+    - table "번역":
+      - text: "각 언어의 오디오, 자막, 제목, 설명, 썸네일에 대한 번역을 관리할 수 있는 표"
+      - row "언어 오디오 자막 제목 및 설명 썸네일":
+        - columnheader "언어" [ref=e104]
+        - columnheader "오디오" [ref=e105]
+        - columnheader "자막" [ref=e106]
+        - columnheader "제목 및 설명" [ref=e107]
+        - columnheader "썸네일" [ref=e108]
+- dialog "한국어 세부정보" [focused]:
+  - heading [level=1]: "한국어"
+  - region "대화상자 컨트롤" [ref=e252]:
+    - heading "대화상자 컨트롤" [level=2]
+    - button "업데이트" [ref=e253] [disabled]
+    - status: "업데이트 버튼 중지됨"
+    - button "취소" [ref=e254]
+  - region "제목 및 설명" [ref=e255]:
+    - heading "제목 및 설명" [level=2]
+    - text: "제목"
+    - textbox "제목" [ref=e257] [disabled]
+    - text: "설명"
+    - textbox "설명" [ref=e259] [disabled]
+  - region "미디어" [ref=e260]:
+    - table "미디어":
+      - text: "각 유형의 소스, 게시 상태, 작업과 함께 오디오, 자막, 썸네일 유형을 이름별로 보여주는 미디어 표 유형 이름 출처 상태 작업"
+      - img "오디오"
+      - text: "오디오\n           \n            원본"
+      - status "게시됨" [ref=e261]
+      - button "더빙 오디오 옵션 표시" [ref=e262]
+      - img "자막"
+      - text: "자동 자막\n           \n            자동"
+      - status "게시됨" [ref=e263]
+      - button "자막 옵션 표시" [ref=e264]
+      - img "자막"
+      - text: "수동 자막\n           \n            수동"
+      - status "게시됨" [ref=e265]
+      - button "자막 옵션 표시" [ref=e266]
+  - region "미리보기" [ref=e267]:
+    - region "동영상 플레이어" [ref=e268]:
+      - button "재생" [ref=e270]
+      - button "음소거" [ref=e271]
+      - slider "볼륨" [ref=e272]
+      - text: "0:00:00 / 2:08:39"
+      - button "설정" [ref=e273]
+      - button "전체 화면" [ref=e274]
+    - button [ref=e275]:
+      - button "미리보기 원본 오디오" [ref=e276]

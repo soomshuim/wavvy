@@ -1,0 +1,31 @@
+{
+  "status": "STRUCTURAL_PASS_PUBLICATION_UNDECIDED",
+  "total_srt_cues": 1266,
+  "cues_per_pass": 633,
+  "exact_source_lines_per_pass": 739,
+  "exact_source_lines_both_passes": 1478,
+  "source_text_order_exact": true,
+  "subtitle_cue_overlap_count": 0,
+  "repeat_text_and_time_offset_exact": true,
+  "repeat_offset_ms": 3858850,
+  "minimum_cue_duration_ms": 1200,
+  "median_cue_duration_ms": 4039,
+  "maximum_cue_duration_ms": 6500,
+  "two_line_cues_per_pass": 106,
+  "max_display_lines_per_cue": 2,
+  "warning_counts_first_pass": {
+    "pass_onset_disagreement_over_1s": 56,
+    "long_pair_internal_split_estimated": 26,
+    "weak_or_missing_text_anchor": 8
+  },
+  "final_video_duration_ms": 7718500,
+  "last_subtitle_end_ms": 7687424,
+  "source_sha256": "29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18",
+  "srt_sha256": "8e481119b574b519173db56454d97e60c4ec44d59dfd7d5f9ef3cfa6feff0a08",
+  "unresolved_for_publication": [
+    "Automatic-caption timing does not prove vocal onset.",
+    "Eight source rows have weak exact text anchors in both passes, including one with no exact match in either.",
+    "Long fused pairs need internally estimated splits; these are disclosed in candidate metadata.",
+    "Audio/manual spot checks and upload outcome have not been completed by this validator."
+  ]
+}

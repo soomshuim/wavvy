@@ -1,0 +1,368 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-16-weak-line01-context-0-40.flac",
+  "audio_sha256": "56217dd91c0e57c776ee61bceffa770e5b5e3b75f84728b63d548c0b463403d5",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 1.794,
+  "transcription": {
+    "text": " 역 앞에서 헤어질 때 내가 먼저 손을 흔들어 그런데 발이 안 떨어져 너도 아직 그 자리에서 막차 가진 시간이 있다면 조금 걸을까 물었어 가까운 길도 있는데 우린 긴 쪽으로도",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 10.219999999999999,
+        "end": 13.4,
+        "text": " 역 앞에서 헤어질 때",
+        "tokens": [
+          50365,
+          19427,
+          13727,
+          4885,
+          45037,
+          2782,
+          8667,
+          7765,
+          51049
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 역",
+            "start": 10.219999999999999,
+            "end": 11.62,
+            "probability": 0.8125
+          },
+          {
+            "word": " 앞에서",
+            "start": 11.62,
+            "end": 12.14,
+            "probability": 0.9755859375
+          },
+          {
+            "word": " 헤어질",
+            "start": 12.14,
+            "end": 13.08,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 때",
+            "start": 13.08,
+            "end": 13.4,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 13.4,
+        "end": 15.98,
+        "text": " 내가 먼저 손을 흔들어",
+        "tokens": [
+          51049,
+          10474,
+          20749,
+          15268,
+          1638,
+          14473,
+          3261,
+          2403,
+          3103,
+          51157
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 내가",
+            "start": 13.4,
+            "end": 14.14,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 먼저",
+            "start": 14.14,
+            "end": 14.52,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 손을",
+            "start": 14.52,
+            "end": 14.98,
+            "probability": 0.98291015625
+          },
+          {
+            "word": " 흔들어",
+            "start": 14.98,
+            "end": 15.98,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 15.98,
+        "end": 18.6,
+        "text": " 그런데 발이 안 떨어져",
+        "tokens": [
+          51157,
+          16610,
+          13825,
+          1129,
+          4811,
+          30667,
+          14264,
+          51301
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 그런데",
+            "start": 15.98,
+            "end": 16.7,
+            "probability": 0.9833984375
+          },
+          {
+            "word": " 발이",
+            "start": 16.7,
+            "end": 17.58,
+            "probability": 0.7509765625
+          },
+          {
+            "word": " 안",
+            "start": 17.58,
+            "end": 17.7,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 떨어져",
+            "start": 17.7,
+            "end": 18.6,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 18.6,
+        "end": 20.96,
+        "text": " 너도 아직 그 자리에서",
+        "tokens": [
+          51301,
+          3214,
+          22616,
+          22729,
+          4296,
+          15905,
+          2250,
+          4885,
+          51421
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 너도",
+            "start": 18.6,
+            "end": 19.16,
+            "probability": 0.888671875
+          },
+          {
+            "word": " 아직",
+            "start": 19.16,
+            "end": 19.6,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 그",
+            "start": 19.6,
+            "end": 19.94,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 자리에서",
+            "start": 19.94,
+            "end": 20.96,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 20.96,
+        "end": 25.54,
+        "text": " 막차 가진 시간이 있다면",
+        "tokens": [
+          51421,
+          14438,
+          15886,
+          4147,
+          8097,
+          39330,
+          2297,
+          19826,
+          51657
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 막차",
+            "start": 20.96,
+            "end": 22.0,
+            "probability": 0.6904296875
+          },
+          {
+            "word": " 가진",
+            "start": 22.0,
+            "end": 23.0,
+            "probability": 0.9228515625
+          },
+          {
+            "word": " 시간이",
+            "start": 23.0,
+            "end": 23.9,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 있다면",
+            "start": 23.9,
+            "end": 25.54,
+            "probability": 0.79150390625
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 25.54,
+        "end": 29.54,
+        "text": " 조금 걸을까 물었어",
+        "tokens": [
+          51657,
+          13091,
+          14240,
+          1638,
+          3294,
+          14403,
+          30562,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40377405340021305,
+        "compression_ratio": 1.2066666666666668,
+        "no_speech_prob": 1.2845201464994904e-11,
+        "words": [
+          {
+            "word": " 조금",
+            "start": 25.54,
+            "end": 26.48,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 걸을까",
+            "start": 26.48,
+            "end": 27.8,
+            "probability": 0.95458984375
+          },
+          {
+            "word": " 물었어",
+            "start": 27.8,
+            "end": 29.54,
+            "probability": 0.6435546875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2954,
+        "start": 31.82,
+        "end": 39.88,
+        "text": " 가까운 길도 있는데 우린 긴 쪽으로도",
+        "tokens": [
+          50365,
+          44913,
+          9996,
+          4291,
+          1397,
+          1838,
+          19197,
+          22776,
+          12811,
+          4291,
+          112,
+          31790,
+          4130,
+          3744,
+          50887
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3194597065448761,
+        "compression_ratio": 0.819672131147541,
+        "no_speech_prob": 2.75685949763238e-11,
+        "words": [
+          {
+            "word": " 가까운",
+            "start": 31.82,
+            "end": 33.22,
+            "probability": 0.5380859375
+          },
+          {
+            "word": " 길도",
+            "start": 33.22,
+            "end": 34.32,
+            "probability": 0.98974609375
+          },
+          {
+            "word": " 있는데",
+            "start": 34.32,
+            "end": 35.26,
+            "probability": 0.97314453125
+          },
+          {
+            "word": " 우린",
+            "start": 35.26,
+            "end": 37.56,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 긴",
+            "start": 37.56,
+            "end": 38.34,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 쪽으로도",
+            "start": 38.34,
+            "end": 39.88,
+            "probability": 0.8662109375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

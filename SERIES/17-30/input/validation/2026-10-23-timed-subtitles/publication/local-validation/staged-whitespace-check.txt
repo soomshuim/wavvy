@@ -1,0 +1,4 @@
+git diff --check: PASS (tracked working-tree changes)
+git diff --cached --check: exit 2; EOF blank-line notices only in audio-probe/weak-eight-source-context.md:215 and publication/studio-published-manual-ko.srt:5308
+git -c core.whitespace=-blank-at-eof diff --cached --check: PASS
+Raw file bytes and repository configuration preserved. Studio SRT trailing LF is part of the downloaded evidence.

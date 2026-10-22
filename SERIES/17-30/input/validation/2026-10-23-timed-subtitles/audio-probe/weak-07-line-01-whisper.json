@@ -1,0 +1,120 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/weak-07-line-01.flac",
+  "audio_sha256": "b3c8958598ea5c789938f4c164de77f605439d622820b90981e3d4035a979ec0",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 0.839,
+  "transcription": {
+    "text": " 책상 서랍 맨 아래에 적어둔 편지가 있어 쓰던 나를 나는",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.9600000000000004,
+        "end": 13.76,
+        "text": " 책상 서랍 맨 아래에 적어둔 편지가 있어 쓰던 나를 나는",
+        "tokens": [
+          50365,
+          33623,
+          5979,
+          32558,
+          252,
+          235,
+          1747,
+          101,
+          9200,
+          4241,
+          1517,
+          14370,
+          6540,
+          239,
+          242,
+          16990,
+          30232,
+          17300,
+          37159,
+          8092,
+          12623,
+          2429,
+          17955,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32155418395996094,
+        "compression_ratio": 0.9036144578313253,
+        "no_speech_prob": 3.357100708534233e-11,
+        "words": [
+          {
+            "word": " 책상",
+            "start": 2.9600000000000004,
+            "end": 4.36,
+            "probability": 0.603515625
+          },
+          {
+            "word": " 서랍",
+            "start": 4.36,
+            "end": 5.36,
+            "probability": 0.6552734375
+          },
+          {
+            "word": " 맨",
+            "start": 5.36,
+            "end": 5.68,
+            "probability": 0.90185546875
+          },
+          {
+            "word": " 아래에",
+            "start": 5.68,
+            "end": 7.12,
+            "probability": 0.8740234375
+          },
+          {
+            "word": " 적어둔",
+            "start": 7.12,
+            "end": 8.96,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 편지가",
+            "start": 8.96,
+            "end": 9.82,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 있어",
+            "start": 9.82,
+            "end": 10.84,
+            "probability": 0.9765625
+          },
+          {
+            "word": " 쓰던",
+            "start": 10.84,
+            "end": 11.76,
+            "probability": 0.98974609375
+          },
+          {
+            "word": " 나를",
+            "start": 11.76,
+            "end": 12.82,
+            "probability": 0.4921875
+          },
+          {
+            "word": " 나는",
+            "start": 12.82,
+            "end": 13.76,
+            "probability": 0.7958984375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

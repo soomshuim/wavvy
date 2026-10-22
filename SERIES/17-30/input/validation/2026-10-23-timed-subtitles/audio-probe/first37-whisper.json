@@ -1,0 +1,393 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/first37-source.flac",
+  "audio_sha256": "3e1436d60df00faa6a432412a9489440a4767a086a908137890f0f5f550b5af6",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 4.934,
+  "transcription": {
+    "text": " 하루가 다 지나갈 때 달력의 빈칸을 찾아봐 적어둘 만한 일이 없나 잠깐 생각해보다가 작은 글씨로 한 줄 써 점심에 마신 차가 좋았어 그 정도면 충분하지 오늘의 영상은 정말 좋습니다.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.58,
+        "end": 6.26,
+        "text": " 하루가 다 지나갈 때",
+        "tokens": [
+          50365,
+          33918,
+          1453,
+          4279,
+          41672,
+          27657,
+          7765,
+          50686
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 하루가",
+            "start": 2.58,
+            "end": 3.98,
+            "probability": 0.55859375
+          },
+          {
+            "word": " 다",
+            "start": 3.98,
+            "end": 4.6,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 지나갈",
+            "start": 4.6,
+            "end": 5.84,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 때",
+            "start": 5.84,
+            "end": 6.26,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 6.26,
+        "end": 10.26,
+        "text": " 달력의 빈칸을 찾아봐",
+        "tokens": [
+          50686,
+          20738,
+          11770,
+          2785,
+          5005,
+          230,
+          4741,
+          116,
+          1638,
+          18283,
+          23733,
+          16808,
+          50881
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 달력의",
+            "start": 6.26,
+            "end": 8.32,
+            "probability": 0.83447265625
+          },
+          {
+            "word": " 빈칸을",
+            "start": 8.32,
+            "end": 9.08,
+            "probability": 0.9580078125
+          },
+          {
+            "word": " 찾아봐",
+            "start": 9.08,
+            "end": 10.26,
+            "probability": 0.92724609375
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 10.26,
+        "end": 14.08,
+        "text": " 적어둘 만한 일이 없나",
+        "tokens": [
+          50881,
+          14370,
+          6540,
+          239,
+          246,
+          14671,
+          3049,
+          42848,
+          5711,
+          11318,
+          51071
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 적어둘",
+            "start": 10.26,
+            "end": 12.34,
+            "probability": 0.87109375
+          },
+          {
+            "word": " 만한",
+            "start": 12.34,
+            "end": 13.04,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 일이",
+            "start": 13.04,
+            "end": 13.42,
+            "probability": 0.9775390625
+          },
+          {
+            "word": " 없나",
+            "start": 13.42,
+            "end": 14.08,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 14.08,
+        "end": 16.3,
+        "text": " 잠깐 생각해보다가",
+        "tokens": [
+          51071,
+          43479,
+          8594,
+          14841,
+          7062,
+          14325,
+          51184
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 잠깐",
+            "start": 14.08,
+            "end": 14.56,
+            "probability": 0.9580078125
+          },
+          {
+            "word": " 생각해보다가",
+            "start": 14.56,
+            "end": 16.3,
+            "probability": 0.90478515625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 16.3,
+        "end": 19.3,
+        "text": " 작은 글씨로 한 줄 써",
+        "tokens": [
+          51184,
+          45870,
+          4291,
+          222,
+          9751,
+          3891,
+          1955,
+          4815,
+          15320,
+          32575,
+          51346
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 16.3,
+            "end": 16.92,
+            "probability": 0.99462890625
+          },
+          {
+            "word": " 글씨로",
+            "start": 16.92,
+            "end": 17.78,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 한",
+            "start": 17.78,
+            "end": 18.28,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 줄",
+            "start": 18.28,
+            "end": 18.68,
+            "probability": 0.8896484375
+          },
+          {
+            "word": " 써",
+            "start": 18.68,
+            "end": 19.3,
+            "probability": 0.72998046875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 21.3,
+        "end": 25.56,
+        "text": " 점심에 마신 차가 좋았어",
+        "tokens": [
+          51346,
+          20060,
+          12766,
+          1517,
+          6437,
+          7575,
+          15391,
+          1453,
+          5008,
+          27844,
+          51644
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 점심에",
+            "start": 21.3,
+            "end": 22.7,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 마신",
+            "start": 22.7,
+            "end": 23.7,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 차가",
+            "start": 23.7,
+            "end": 24.64,
+            "probability": 0.990234375
+          },
+          {
+            "word": " 좋았어",
+            "start": 24.64,
+            "end": 25.56,
+            "probability": 0.9931640625
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 25.56,
+        "end": 28.98,
+        "text": " 그 정도면 충분하지",
+        "tokens": [
+          51644,
+          4296,
+          13636,
+          21448,
+          47891,
+          16175,
+          51831
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25284287588936943,
+        "compression_ratio": 1.2142857142857142,
+        "no_speech_prob": 1.8108460911325786e-11,
+        "words": [
+          {
+            "word": " 그",
+            "start": 25.56,
+            "end": 26.52,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 정도면",
+            "start": 26.52,
+            "end": 27.34,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 충분하지",
+            "start": 27.34,
+            "end": 28.98,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 2898,
+        "start": 30.660000000000004,
+        "end": 34.52,
+        "text": " 오늘의 영상은 정말 좋습니다.",
+        "tokens": [
+          50365,
+          8880,
+          2785,
+          15603,
+          2124,
+          12793,
+          5008,
+          3115,
+          13,
+          50765
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.9251764470880681,
+        "compression_ratio": 0.7843137254901961,
+        "no_speech_prob": 1.0935899755204481e-11,
+        "words": [
+          {
+            "word": " 오늘의",
+            "start": 30.660000000000004,
+            "end": 32.06,
+            "probability": 0.245849609375
+          },
+          {
+            "word": " 영상은",
+            "start": 32.06,
+            "end": 33.4,
+            "probability": 0.330322265625
+          },
+          {
+            "word": " 정말",
+            "start": 33.4,
+            "end": 33.4,
+            "probability": 0.031982421875
+          },
+          {
+            "word": " 좋습니다.",
+            "start": 33.4,
+            "end": 34.52,
+            "probability": 0.12744140625
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}
