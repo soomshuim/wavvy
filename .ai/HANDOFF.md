@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (1번 곡 A/B 청취 샘플 전달)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠 요청에 따라 `~/Downloads`에 내부 녹음과 공식 원본의 같은 33.76초 구간 샘플 2개를 저장·해시 확인했다. [샘플 목록](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/downloads-ab-full-excerpt.json)과 [비교](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/compare-test2-fullrate-and-ab.json)를 보존했다. 같은 곡 구간의 좌·우 상관계수는 약 0.996, mono 약 0.9973이며 음량 보정 없이 녹음이 약 1.69 dB 크다. 원본과 동일한 바이트나 전곡 음질 승인은 아니다. 17곡 추가 녹음은 아직 시작하지 않았고 공식 선택 WAV는 3/20곡이다.
+Next-TODO: 젠의 두 샘플 청취 의견을 기다린다. 전체 영상·업로드는 미완료이며 YouTube 제목은 아직 젠 승인 전이다.
+Commits: 이 샘플 사실 기록은 이번 상태 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 릴리스 부분 준비·출처/자막 독립 검토 완료)
 Project: ~/Project/wavvy
 Agent: Codex

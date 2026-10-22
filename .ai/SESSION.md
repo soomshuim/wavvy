@@ -1,8 +1,11 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-22 (17:30 공개 Suno 20곡·로컬 WAV 3곡, 1곡 30초 미리보기, 녹음 시험 무음, 제목은 젠 확인 대기)
+> Last updated: 2026-10-22 (17:30 공개 Suno 20곡·로컬 WAV 3곡, 1번 곡 녹음/원본 청취 샘플 2개 전달, 제목은 젠 확인 대기)
 
 ---
+
+## 2026-10-22 [CDX] 1번 곡 녹음·원본 같은 구간 청취 샘플 전달
+- 젠의 “음? 로컬 다운로드 폴더에 저장해봐 내가 들어볼게” 요청에 따라 별도 담당자가 `~/Downloads`에 1번 곡의 내부 녹음과 공식 다운로드 원본의 **같은 33.76초 구간** WAV 두 개를 저장하고 해시를 대조했다([샘플 목록](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/downloads-ab-full-excerpt.json)). 녹음·원본 구간의 좌·우 상관계수는 약 0.996, mono는 약 0.9973이며 음량 보정 없이 녹음 쪽이 약 1.69 dB 크다([시험 요약](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot2-summary.json), [비교](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/compare-test2-fullrate-and-ab.json)). 이는 같은 음악 구간 수신의 기술 대조이며 원본과 바이트 동일하거나 전곡 음질 합격이라는 뜻은 아니다. 젠의 청취 의견을 기다린다. 추가 17곡 녹음은 아직 시작하지 않았고 공식 선택 WAV는 3/20곡, 전체 영상·업로드는 미완료, 제목은 젠 승인 전이다.
 
 ## 2026-10-22 [CDX] 릴리스 부분 준비·출처 연결 코드
 - 젠의 “이제 영상 제작하고 업로드하자. 단 제목은 내 컨펌 받아”에 따라 YouTube 문안 초안을 [계획](plans/2026-10-22-1730-release.md)과 `SERIES/17-30/concept.md`에 적었다. **제목 전체의 사용자 승인은 아직 없다.** 실제 챕터 시각은 보고서 생성 뒤에만 채운다.
