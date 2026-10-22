@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- **17:30 업로드 제목 참고 조사·반려 문구 기록** (2026-10-22) — 젠이 이전 `기분전환·드라이브` 문구를 “기분전환 드라이브 완전 별론데”라고 반려하고 “제목 포맷은 바꾸지 말고 내용만 레퍼런스 참조”라고 확정했다. `Playlist | 감정 훅+이모지 | MODERN R&B · NEO SOUL | 용도1 · 용도2 | Wavvy | 17:30` 형식은 유지한다. Aside/MCP로 공개 YouTube 제목·조회수·게시일을 [조사표](.ai/research/2026-10-22-1730-title/research.md)와 [원시 메타데이터](.ai/research/2026-10-22-1730-title/youtube-metadata-raw.json)에 남겼다. 완성 로컬 영상 7,718.5초와 기존 미승인 메타데이터는 그대로다. 새 제목은 젠 승인 전이며 업로드·공개·예약은 0회다.
+
 - **17:30 로컬 최종 영상·업로드 자료 기술 준비** (2026-10-22) — 선택 WAV 20곡을 확정 순서로 두 번 반복해 실제 7,718.5초 H.264/FLAC 마스터와 H.264/AAC 업로드용 4K MP4를 제작했다. 20곡×2회 실제 시작 시각의 40개 챕터, 최종 출처 보존본, 한국어 자막 원문과 업로드 CSV를 동기화했다. `source-final`·`render-final`·`upload-ready`·`verify-release`가 PASS했고 전체 오디오 디코드·음량 실측·최종 화면을 [원시 기록](SERIES/17-30/input/validation/2026-10-22-release-production/)에 남겼다. 사용자 제작 썸네일·승인 배경과 원본 WAV/raw는 보존했다. 기술적 `upload-ready`와 별개로 YouTube 제목은 승인 전이며 업로드·공개·예약 0회다.
 
 - **17:30 선택 WAV 20곡 로컬 입력 완료 (당시 제작 전 체크포인트)** (2026-10-22) — 확정 재생 순서의 선택 ID·WAV SHA·길이를 20/20 대조했다. 1~3번은 공식 Suno 다운로드, 4~20번은 Aside 앱 전용 내부 녹음이다. 17번 첫 무음 실패 원시와 비교 샘플은 보존하고 정상 retry1만 등록했다. 원시·절단본의 기술 검사는 완료됐지만 젠의 전곡 청취 PASS는 4번에 한정한다. 이 시점에는 pack·전체 영상·자막·업로드가 없었고 YouTube 제목은 승인 전이었다.

@@ -1,5 +1,16 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 업로드 제목 참고 조사·이전 문구 반려 기록)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 기존 `기분전환·드라이브` 문구를 “기분전환 드라이브 완전 별론데”라고 반려했고, “제목 포맷은 바꾸지 말고 내용만 레퍼런스 참조”라고 확정했다. `Playlist | 감정 훅+이모지 | MODERN R&B · NEO SOUL | 용도1 · 용도2 | Wavvy | 17:30` 형식 안에서 훅·용도 내용만 검토한다. 2026-10-22 Aside/MCP 공개 YouTube [조사표](research/2026-10-22-1730-title/research.md)와 [원시 메타데이터](research/2026-10-22-1730-title/youtube-metadata-raw.json)에 관측 조회수·게시일(KST)을 남겼다. 조회수로 제목 효과를 단정하지 않는다.
+Current: 완성 로컬 영상은 7,718.5초(2:08:38.5) 그대로다. `concept.md`·`output/upload.csv`·공식 state의 미승인 제목은 변경하지 않았다. 새 제목 전체는 젠 승인 전이고 업로드·공개·예약은 0회다.
+Next-TODO: 확정된 형식의 감정 훅·용도 내용을 제안해 젠에게 제목 전체 승인을 받는다. 승인 전 업로드하지 않는다.
+Commits: 제목 조사·현행 기록은 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 로컬 최종 영상·업로드 자료 기술 준비 완료)
 Project: ~/Project/wavvy
 Agent: Codex
