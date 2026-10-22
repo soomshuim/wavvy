@@ -3,12 +3,12 @@
   "series_title": "기분좋아져라",
   "workspace": "[06:30]",
   "workspace_url": "https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c",
-  "status": "user_selected_twenty_titles_renamed_in_suno_private_playlist_order_verified; technical_audio_and_release_unverified",
-  "observed_at": "2026-10-22T16:29:18.848+09:00",
-  "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-  "observation_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+  "status": "user_selected_twenty_titles_reordered_private_playlist_reopened_verified; technical_audio_and_release_unverified",
+  "observed_at": "2026-10-22T08:08:04.753Z",
+  "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+  "observation_sha256": "87ef8fcafd55e7eed8f802e1c37d63a37fc817c177120efa33121ea68202965d",
   "observed_current_workspace_song_count": 20,
-  "current_song_count_evidence": "At 16:29 KST with Filters (3), rename audit verified UI header 20 songs and 20 unique IDs exactly matching the 20 target titles; this is a point-in-time view, not an audio measurement.",
+  "current_song_count_evidence": "17:07 KST workspace-after.json 20 unique IDs and exact target titles; same 20 private Default playlist rows and order persisted after reopening. Point-in-time UI observation, not technical audio verification.",
   "prior_candidate_count": 40,
   "prior_candidate_ids_not_visible_in_current_workspace_list": 38,
   "not_visible_semantics": "Not displayed in inspected workspace list; trash/deletion not independently confirmed",
@@ -145,9 +145,9 @@
       "candidates": [
         {
           "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-          "displayed_name": "2. 첫 페이지",
+          "displayed_name": "3. 첫 페이지",
           "url": "https://suno.com/song/ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:09",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -173,11 +173,15 @@
           "original_2026_10_21_candidate_id": "d0d79c76-18ac-4a64-997e-8b145481622f",
           "original_2026_10_21_candidate_url": "https://suno.com/song/d0d79c76-18ac-4a64-997e-8b145481622f",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "1. 첫 페이지",
-          "title_after_agent_rename": "2. 첫 페이지",
-          "sequence_order": 2,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "3. 첫 페이지",
+          "sequence_order": 3,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "2. 첫 페이지",
+          "title_before_final_adjustment": "2. 첫 페이지",
+          "title_after_final_adjustment": "3. 첫 페이지",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -276,9 +280,9 @@
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 182.068966
       },
-      "sequence_order": 2,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 3,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
@@ -318,6 +322,11 @@
         "chosen_candidate_id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 2,
+        "displayed_name": "2. 첫 페이지",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -338,9 +347,9 @@
       "candidates": [
         {
           "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "displayed_name": "4. 오래된 농담",
+          "displayed_name": "5. 오래된 농담",
           "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:22",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -366,11 +375,15 @@
           "original_2026_10_21_candidate_id": "9181c865-f23d-4795-98bc-df274364a0b8",
           "original_2026_10_21_candidate_url": "https://suno.com/song/9181c865-f23d-4795-98bc-df274364a0b8",
           "original_2026_10_21_candidate_position": "B",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "2. 오래된 농담",
-          "title_after_agent_rename": "4. 오래된 농담",
-          "sequence_order": 4,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "5. 오래된 농담",
+          "sequence_order": 5,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "4. 오래된 농담",
+          "title_before_final_adjustment": "4. 오래된 농담",
+          "title_after_final_adjustment": "5. 오래된 농담",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -409,9 +422,9 @@
           "chosen_candidate_id": null
         }
       },
-      "sequence_order": 4,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 5,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
@@ -451,6 +464,11 @@
         "chosen_candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 4,
+        "displayed_name": "4. 오래된 농담",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -473,9 +491,9 @@
       "candidates": [
         {
           "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "displayed_name": "5. 새 신발",
+          "displayed_name": "12. 새 신발",
           "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "new_v6_generated",
           "generation_variant": "B",
           "duration_displayed": "3:31",
@@ -483,11 +501,15 @@
           "submitted_title": "03. 새 신발",
           "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
           "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "03. 새 신발",
-          "title_after_agent_rename": "5. 새 신발",
-          "sequence_order": 5,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "12. 새 신발",
+          "sequence_order": 12,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "5. 새 신발",
+          "title_before_final_adjustment": "5. 새 신발",
+          "title_after_final_adjustment": "12. 새 신발",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -584,7 +606,7 @@
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 184.0
       },
-      "sequence_order": 5,
+      "sequence_order": 12,
       "draft_submission_status": "submitted_once_two_candidates_generated",
       "draft_source_review_ref": "input/lyrics-review/03_새 신발.md",
       "source_before_eight_song_rewrite": {
@@ -599,7 +621,7 @@
         "lyric_direction": "everyday_mantra",
         "chorus_hook": "기분 좋아져라"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:27:47+09:00",
@@ -630,7 +652,7 @@
           }
         ]
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
       "candidates_at_15_35_filtered_observation": [
         {
@@ -653,6 +675,11 @@
         "chosen_candidate_id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 5,
+        "displayed_name": "5. 새 신발",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -673,9 +700,9 @@
       "candidates": [
         {
           "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "displayed_name": "6. 반대편 창가",
+          "displayed_name": "18. 반대편 창가",
           "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "existing_v6",
           "duration_displayed": "3:18",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -705,11 +732,15 @@
             "source_sha256_at_generation": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5"
           },
           "ui_style_matches_prior_txt_style_exact": true,
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "4. 반대편 창가",
-          "title_after_agent_rename": "6. 반대편 창가",
-          "sequence_order": 6,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "18. 반대편 창가",
+          "sequence_order": 18,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "6. 반대편 창가",
+          "title_before_final_adjustment": "6. 반대편 창가",
+          "title_after_final_adjustment": "18. 반대편 창가",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -748,9 +779,9 @@
           "chosen_candidate_id": null
         }
       },
-      "sequence_order": 6,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 18,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
@@ -794,6 +825,11 @@
         "chosen_candidate_id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 6,
+        "displayed_name": "6. 반대편 창가",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -814,9 +850,9 @@
       "candidates": [
         {
           "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "displayed_name": "10. 잘 익은 하루",
+          "displayed_name": "9. 잘 익은 하루",
           "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:19",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -842,11 +878,15 @@
           "original_2026_10_21_candidate_id": "35527b5e-9b6d-4b18-b064-4df5064393e2",
           "original_2026_10_21_candidate_url": "https://suno.com/song/35527b5e-9b6d-4b18-b064-4df5064393e2",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "5. 잘 익은 하루",
-          "title_after_agent_rename": "10. 잘 익은 하루",
-          "sequence_order": 10,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "9. 잘 익은 하루",
+          "sequence_order": 9,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "10. 잘 익은 하루",
+          "title_before_final_adjustment": "10. 잘 익은 하루",
+          "title_after_final_adjustment": "9. 잘 익은 하루",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -885,9 +925,9 @@
           "chosen_candidate_id": null
         }
       },
-      "sequence_order": 10,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 9,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
@@ -927,6 +967,11 @@
         "chosen_candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 10,
+        "displayed_name": "10. 잘 익은 하루",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -951,7 +996,7 @@
           "id": "5aa6b60e-e108-4116-b541-a64c275a3676",
           "displayed_name": "8. 빵집 앞에서",
           "url": "https://suno.com/song/5aa6b60e-e108-4116-b541-a64c275a3676",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "new_v6_generated",
           "generation_variant": "A",
           "duration_displayed": "3:14",
@@ -959,11 +1004,15 @@
           "submitted_title": "06. 빵집 앞에서",
           "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
           "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "06. 빵집 앞에서",
           "title_after_agent_rename": "8. 빵집 앞에서",
           "sequence_order": 8,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "8. 빵집 앞에서",
+          "title_before_final_adjustment": "8. 빵집 앞에서",
+          "title_after_final_adjustment": "8. 빵집 앞에서",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -1075,7 +1124,7 @@
         "lyric_direction": "romance_everyday",
         "chorus_hook": "내일도 여기서 볼래"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:30:05.072000+09:00",
@@ -1106,7 +1155,7 @@
           }
         ]
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
       "candidates_at_15_35_filtered_observation": [
         {
@@ -1129,6 +1178,11 @@
         "chosen_candidate_id": "5aa6b60e-e108-4116-b541-a64c275a3676",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 8,
+        "displayed_name": "8. 빵집 앞에서",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -1152,16 +1206,20 @@
         {
           "id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
           "url": "https://suno.com/song/e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
-          "displayed_name": "3. 내일 뭐 해",
+          "displayed_name": "6. 내일 뭐 해",
           "duration_displayed": "3:25",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
           "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "7. 내일 뭐 해",
-          "title_after_agent_rename": "3. 내일 뭐 해",
-          "sequence_order": 3,
-          "association_evidence": "current_rewrite_title_7_and_generation_manifest"
+          "title_after_agent_rename": "6. 내일 뭐 해",
+          "sequence_order": 6,
+          "association_evidence": "current_rewrite_title_7_and_generation_manifest",
+          "previous_applied_sequence_title": "3. 내일 뭐 해",
+          "title_before_final_adjustment": "3. 내일 뭐 해",
+          "title_after_final_adjustment": "6. 내일 뭐 해",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -1200,7 +1258,7 @@
           "chosen_candidate_id": null
         }
       },
-      "sequence_order": 3,
+      "sequence_order": 6,
       "draft_submission_status": "first_batch_earlier_concept_generated_two_candidates; later_concept_revision_submitted_once_two_more_generated",
       "draft_source_review_ref": "input/lyrics-review/07_접힌 지도.md",
       "source_before_eight_song_rewrite": {
@@ -1215,7 +1273,7 @@
         "lyric_direction": "romance_everyday",
         "chorus_hook": "내일 뭐 해"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:30:52.476000+09:00",
@@ -1248,7 +1306,7 @@
         "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt",
         "source_resolution_ref": "input/validation/2026-10-22-track-07-concept-source-resolution.json"
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Current txt header is a pre-submission source snapshot. The later separate Create with a proposed new title and two candidate IDs is recorded in post_concept_rewrite_generation; the first batch used the archived earlier source.",
       "source_revision": {
         "revision_type": "concept_and_title_rewrite",
@@ -1346,6 +1404,11 @@
         "chosen_candidate_id": null,
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 3,
+        "displayed_name": "3. 내일 뭐 해",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -1368,7 +1431,7 @@
           "id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
           "displayed_name": "11. 메모 한 장",
           "url": "https://suno.com/song/a6c208ae-fb73-409e-a4a4-c9adc338bc47",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:06",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1394,11 +1457,15 @@
           "original_2026_10_21_candidate_id": "3aa99cac-e0ac-41c5-a99d-d358468f775b",
           "original_2026_10_21_candidate_url": "https://suno.com/song/3aa99cac-e0ac-41c5-a99d-d358468f775b",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "8. 메모 한 장",
           "title_after_agent_rename": "11. 메모 한 장",
           "sequence_order": 11,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "11. 메모 한 장",
+          "title_before_final_adjustment": "11. 메모 한 장",
+          "title_after_final_adjustment": "11. 메모 한 장",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -1438,8 +1505,8 @@
         }
       },
       "sequence_order": 11,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
@@ -1479,6 +1546,11 @@
         "chosen_candidate_id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 11,
+        "displayed_name": "11. 메모 한 장",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -1499,9 +1571,9 @@
       "candidates": [
         {
           "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
-          "displayed_name": "15. 먼저 건넨 말",
+          "displayed_name": "14. 먼저 건넨 말",
           "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "existing_v6",
           "duration_displayed": "3:03",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1531,11 +1603,15 @@
             "source_sha256_at_generation": "6d85ce10cef350d9dae4b3a341fa725f81838ced2506ae47a6816b284d4b8dcf"
           },
           "ui_style_matches_prior_txt_style_exact": false,
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "9. 먼저 건넨 말",
-          "title_after_agent_rename": "15. 먼저 건넨 말",
-          "sequence_order": 15,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "14. 먼저 건넨 말",
+          "sequence_order": 14,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "15. 먼저 건넨 말",
+          "title_before_final_adjustment": "15. 먼저 건넨 말",
+          "title_after_final_adjustment": "14. 먼저 건넨 말",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -1632,9 +1708,9 @@
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 182.068966
       },
-      "sequence_order": 15,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 14,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
@@ -1678,6 +1754,11 @@
         "chosen_candidate_id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 15,
+        "displayed_name": "15. 먼저 건넨 말",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -1701,16 +1782,20 @@
         {
           "id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
           "url": "https://suno.com/song/af9af447-7ed3-4f31-84fd-b5be0c8fb504",
-          "displayed_name": "9. 계단 끝에서",
+          "displayed_name": "10. 계단 끝에서",
           "duration_displayed": "3:08",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
           "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "10. 계단 끝에서",
-          "title_after_agent_rename": "9. 계단 끝에서",
-          "sequence_order": 9,
-          "association_evidence": "user_chose_new_lyrics_3m08; old_8fab_not_visible_after_user_deletion"
+          "title_after_agent_rename": "10. 계단 끝에서",
+          "sequence_order": 10,
+          "association_evidence": "user_chose_new_lyrics_3m08; old_8fab_not_visible_after_user_deletion",
+          "previous_applied_sequence_title": "9. 계단 끝에서",
+          "title_before_final_adjustment": "9. 계단 끝에서",
+          "title_after_final_adjustment": "10. 계단 끝에서",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -1772,7 +1857,7 @@
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 180.0
       },
-      "sequence_order": 9,
+      "sequence_order": 10,
       "draft_submission_status": "first_batch_earlier_revision_generated_two_candidates; later_lyric_revision_submitted_once_two_more_generated",
       "draft_source_review_ref": "input/lyrics-review/10_계단 끝에서.md",
       "source_before_eight_song_rewrite": {
@@ -1787,7 +1872,7 @@
         "lyric_direction": "everyday_mantra",
         "chorus_hook": "오늘은 여기까지"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:31:26.927000+09:00",
@@ -1820,7 +1905,7 @@
         "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt",
         "source_resolution_ref": "input/validation/2026-10-22-track-10-lyric-source-resolution.json"
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Current txt header is a frozen pre-submission source snapshot. The separate later Create and candidate IDs are recorded in post_lyric_rewrite_generation. First-batch candidates resolve to the archived earlier source.",
       "source_revision": {
         "revision_type": "lyric_only_rewrite",
@@ -1914,6 +1999,11 @@
         "chosen_candidate_id": null,
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 9,
+        "displayed_name": "9. 계단 끝에서",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -1936,7 +2026,7 @@
           "id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
           "displayed_name": "7. 종이비행기",
           "url": "https://suno.com/song/e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:08",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -1962,11 +2052,15 @@
           "original_2026_10_21_candidate_id": "fe1580be-2bfe-4cf5-8d57-969f74449daa",
           "original_2026_10_21_candidate_url": "https://suno.com/song/fe1580be-2bfe-4cf5-8d57-969f74449daa",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "11. 종이비행기",
           "title_after_agent_rename": "7. 종이비행기",
           "sequence_order": 7,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "7. 종이비행기",
+          "title_before_final_adjustment": "7. 종이비행기",
+          "title_after_final_adjustment": "7. 종이비행기",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -2029,8 +2123,8 @@
         "planned_duration_seconds_at_target_bpm": 184.615385
       },
       "sequence_order": 7,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
@@ -2070,6 +2164,11 @@
         "chosen_candidate_id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 7,
+        "displayed_name": "7. 종이비행기",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -2092,7 +2191,7 @@
           "id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
           "displayed_name": "13. 유리컵의 햇빛",
           "url": "https://suno.com/song/a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:07",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -2118,11 +2217,15 @@
           "original_2026_10_21_candidate_id": "f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
           "original_2026_10_21_candidate_url": "https://suno.com/song/f5ac3ecb-49aa-41ab-982e-7ccf0c3a2c12",
           "original_2026_10_21_candidate_position": "B",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "12. 유리컵의 햇빛",
           "title_after_agent_rename": "13. 유리컵의 햇빛",
           "sequence_order": 13,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "13. 유리컵의 햇빛",
+          "title_before_final_adjustment": "13. 유리컵의 햇빛",
+          "title_after_final_adjustment": "13. 유리컵의 햇빛",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -2185,8 +2288,8 @@
         "planned_duration_seconds_at_target_bpm": 180.0
       },
       "sequence_order": 13,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
@@ -2226,6 +2329,11 @@
         "chosen_candidate_id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 13,
+        "displayed_name": "13. 유리컵의 햇빛",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -2253,15 +2361,22 @@
           "raw_prompt_status": "unverified; do not assign earlier source STYLE/EXCLUDE as actual generation inputs",
           "source_lineage_status": "direct_Cover_parent_unverified",
           "association_evidence": "current_unique_title_matches_logical_original",
-          "displayed_name": "14. 이 노래 끝날 때까지",
+          "displayed_name": "2. 이 노래 끝날 때까지",
           "duration_displayed": "3:20",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "13. 이 노래 끝날 때까지",
-          "title_after_agent_rename": "14. 이 노래 끝날 때까지",
-          "sequence_order": 14,
-          "observed_style_description_status": "not_confirmed_for_this_later_user_version",
-          "source_generation_prompt_status": "unknown; current draft txt does not establish this ID’s generation prompt"
+          "title_after_agent_rename": "2. 이 노래 끝날 때까지",
+          "sequence_order": 2,
+          "observed_style_description_status": "current_workspace_row_text_observed_not_actual_submitted_STYLE",
+          "source_generation_prompt_status": "unverified",
+          "previous_applied_sequence_title": "14. 이 노래 끝날 때까지",
+          "title_before_final_adjustment": "14. 이 노래 끝날 때까지",
+          "title_after_final_adjustment": "2. 이 노래 끝날 때까지",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+          "observed_style_description": "Modern Korean R&B / neo-soul in E Major; lilting syncopated Rhodes leads and vocal answers, chord voicings widening at the hook, tight drums and elastic bass, exact 175 BPM, forward-moving groove with phrases leaning slightly behind the beat, Bright, articulate female chest voice shifting from conversational half-spoken talk-singing in verses to strong high chest-mix chorus belts; one close, dry lead vocal, Rhodes interludes and extended form beyond three minutes",
+          "style_observation_kind": "current_workspace_row_text_not_submitted_STYLE_or_verified_audio",
+          "style_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json"
         }
       ],
       "decision": {
@@ -2323,7 +2438,7 @@
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 187.118644
       },
-      "sequence_order": 14,
+      "sequence_order": 2,
       "draft_submission_status": "submitted_once_two_candidates_generated",
       "draft_source_review_ref": "input/lyrics-review/13_옆자리의 노래.md",
       "source_before_eight_song_rewrite": {
@@ -2338,7 +2453,7 @@
         "lyric_direction": "romance_everyday",
         "chorus_hook": "이 노래 끝날 때까지"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:32:02.806000+09:00",
@@ -2369,7 +2484,7 @@
           }
         ]
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
       "title_before_2026_10_22_user_rename": "옆자리의 노래",
       "source_filename_and_header_title_context": "The source file and Track header preserve 옆자리의 노래 at submission. User title history: 옆자리의 노래 -> 옆자리 -> 이 노래가 끝날 때까지 -> 이 노래 끝날 때까지. Latest logical title is 이 노래 끝날 때까지; Suno rename not confirmed.",
@@ -2428,7 +2543,12 @@
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
       },
-      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified"
+      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified",
+      "prior_applied_sequence": {
+        "sequence_order": 14,
+        "displayed_name": "14. 이 노래 끝날 때까지",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      }
     },
     {
       "order": 14,
@@ -2448,9 +2568,9 @@
       "candidates": [
         {
           "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
-          "displayed_name": "16. 작은 용기",
+          "displayed_name": "15. 작은 용기",
           "url": "https://suno.com/song/f737072d-2874-4b2e-802d-aee3975ed8a7",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:07",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -2479,11 +2599,15 @@
           "original_2026_10_21_candidate_id": "0d5f802a-92a8-4a9d-8003-191c5231608b",
           "original_2026_10_21_candidate_url": "https://suno.com/song/0d5f802a-92a8-4a9d-8003-191c5231608b",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "14. 작은 용기",
-          "title_after_agent_rename": "16. 작은 용기",
-          "sequence_order": 16,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "15. 작은 용기",
+          "sequence_order": 15,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "16. 작은 용기",
+          "title_before_final_adjustment": "16. 작은 용기",
+          "title_after_final_adjustment": "15. 작은 용기",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -2545,9 +2669,9 @@
         "planned_bars": 76,
         "planned_duration_seconds_at_target_bpm": 182.4
       },
-      "sequence_order": 16,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 15,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
@@ -2590,6 +2714,11 @@
         "chosen_candidate_id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 16,
+        "displayed_name": "16. 작은 용기",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -2613,16 +2742,20 @@
         {
           "id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
           "url": "https://suno.com/song/1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
-          "displayed_name": "17. 웃음의 순서",
+          "displayed_name": "20. 웃음의 순서",
           "duration_displayed": "3:19",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
           "raw_prompt_status": "submitted_inputs_confirmed_in_separate_generation_manifest",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "15. 웃음의 순서",
-          "title_after_agent_rename": "17. 웃음의 순서",
-          "sequence_order": 17,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "20. 웃음의 순서",
+          "sequence_order": 20,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "17. 웃음의 순서",
+          "title_before_final_adjustment": "17. 웃음의 순서",
+          "title_after_final_adjustment": "20. 웃음의 순서",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -2684,7 +2817,7 @@
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 180.0
       },
-      "sequence_order": 17,
+      "sequence_order": 20,
       "draft_submission_status": "first_batch_earlier_revision_generated_two_candidates; later_lyric_revision_submitted_once_two_more_generated",
       "draft_source_review_ref": "input/lyrics-review/15_웃음의 순서.md",
       "source_before_eight_song_rewrite": {
@@ -2699,7 +2832,7 @@
         "lyric_direction": "everyday_mantra",
         "chorus_hook": "이만하면 좋은 저녁"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:32:37.101000+09:00",
@@ -2732,7 +2865,7 @@
         "resolved_source_txt_at_submission": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
         "source_resolution_ref": "input/validation/2026-10-22-track-15-source-resolution.json"
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "The current txt header is a frozen pre-submission source snapshot. A later separate Create and two candidate IDs are recorded in post_lyric_rewrite_generation; the first batch used the archived earlier source.",
       "source_before_track_15_lyric_rewrite": {
         "source_txt_archive": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
@@ -2825,6 +2958,11 @@
         "chosen_candidate_id": null,
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 17,
+        "displayed_name": "17. 웃음의 순서",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -2847,9 +2985,9 @@
       "candidates": [
         {
           "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "displayed_name": "18. 돌아가는 길",
+          "displayed_name": "16. 돌아가는 길",
           "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "new_v6_generated",
           "generation_variant": "B",
           "duration_displayed": "3:08",
@@ -2857,11 +2995,15 @@
           "submitted_title": "16. 돌아가는 길",
           "raw_prompt_status": "submitted_inputs_and_source_confirmed_in_generation_manifest",
           "observation_ref": "input/validation/2026-10-22-eight-song-generation/generation-summary.json",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "16. 돌아가는 길",
-          "title_after_agent_rename": "18. 돌아가는 길",
-          "sequence_order": 18,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "16. 돌아가는 길",
+          "sequence_order": 16,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "18. 돌아가는 길",
+          "title_before_final_adjustment": "18. 돌아가는 길",
+          "title_after_final_adjustment": "16. 돌아가는 길",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -2923,7 +3065,7 @@
         "planned_bars": 84,
         "planned_duration_seconds_at_target_bpm": 186.666667
       },
-      "sequence_order": 18,
+      "sequence_order": 16,
       "draft_submission_status": "submitted_once_two_candidates_generated",
       "draft_source_review_ref": "input/lyrics-review/16_돌아가는 길.md",
       "source_before_eight_song_rewrite": {
@@ -2938,7 +3080,7 @@
         "lyric_direction": "romance_everyday",
         "chorus_hook": "조금만 더 걸을래"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:33:15.680000+09:00",
@@ -2969,7 +3111,7 @@
           }
         ]
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
       "candidates_at_15_35_filtered_observation": [
         {
@@ -3005,6 +3147,11 @@
         "chosen_candidate_id": null,
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 18,
+        "displayed_name": "18. 돌아가는 길",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -3025,9 +3172,9 @@
       "candidates": [
         {
           "id": "2917ff51-6540-4165-808f-8a158c14c371",
-          "displayed_name": "19. 새 잎",
+          "displayed_name": "17. 새 잎",
           "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:04",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -3053,11 +3200,15 @@
           "original_2026_10_21_candidate_id": "e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
           "original_2026_10_21_candidate_url": "https://suno.com/song/e5cbcabe-7f8d-41ff-9004-0d7b1582626e",
           "original_2026_10_21_candidate_position": "B",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "17. 새 잎",
-          "title_after_agent_rename": "19. 새 잎",
-          "sequence_order": 19,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "17. 새 잎",
+          "sequence_order": 17,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "19. 새 잎",
+          "title_before_final_adjustment": "19. 새 잎",
+          "title_after_final_adjustment": "17. 새 잎",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -3119,9 +3270,9 @@
         "planned_bars": 80,
         "planned_duration_seconds_at_target_bpm": 184.615385
       },
-      "sequence_order": 19,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 17,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "2917ff51-6540-4165-808f-8a158c14c371",
@@ -3161,6 +3312,11 @@
         "chosen_candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 19,
+        "displayed_name": "19. 새 잎",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -3181,9 +3337,9 @@
       "candidates": [
         {
           "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
-          "displayed_name": "20. 나란히 걷자",
+          "displayed_name": "19. 나란히 걷자",
           "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:04",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -3209,11 +3365,15 @@
           "original_2026_10_21_candidate_id": "bd38ca4e-5169-447e-ba31-99c0329dcd7f",
           "original_2026_10_21_candidate_url": "https://suno.com/song/bd38ca4e-5169-447e-ba31-99c0329dcd7f",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "18. 나란히 걷자",
-          "title_after_agent_rename": "20. 나란히 걷자",
-          "sequence_order": 20,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "title_after_agent_rename": "19. 나란히 걷자",
+          "sequence_order": 19,
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "20. 나란히 걷자",
+          "title_before_final_adjustment": "20. 나란히 걷자",
+          "title_after_final_adjustment": "19. 나란히 걷자",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -3275,9 +3435,9 @@
         "planned_bars": 88,
         "planned_duration_seconds_at_target_bpm": 185.263158
       },
-      "sequence_order": 20,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "sequence_order": 19,
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
@@ -3317,6 +3477,11 @@
         "chosen_candidate_id": "14f93021-945e-4c2d-a2f6-e9f696660320",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 20,
+        "displayed_name": "20. 나란히 걷자",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     },
     {
@@ -3344,15 +3509,22 @@
           "raw_prompt_status": "unverified; do not assign earlier source STYLE/EXCLUDE as actual generation inputs",
           "source_lineage_status": "direct_Cover_parent_unverified",
           "association_evidence": "current_title_plus_full_lyrics_exact_match_to_source_19; direct Cover parent unverified",
-          "displayed_name": "12. 우리 행복하자",
+          "displayed_name": "4. 우리 행복하자",
           "duration_displayed": "3:21",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "20. 우리 행복하자",
-          "title_after_agent_rename": "12. 우리 행복하자",
-          "sequence_order": 12,
-          "observed_style_description_status": "not_confirmed_for_this_later_user_version",
-          "source_generation_prompt_status": "unknown; current draft txt does not establish this ID’s generation prompt"
+          "title_after_agent_rename": "4. 우리 행복하자",
+          "sequence_order": 4,
+          "observed_style_description_status": "current_workspace_row_text_observed_not_actual_submitted_STYLE",
+          "source_generation_prompt_status": "unverified",
+          "previous_applied_sequence_title": "12. 우리 행복하자",
+          "title_before_final_adjustment": "12. 우리 행복하자",
+          "title_after_final_adjustment": "4. 우리 행복하자",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+          "observed_style_description": "Modern Korean R&B and neo-soul: single clear female solo, smooth silky dark lower-register verses, conversational and close with crisp, deliberate Korean consonants and clean syllable separation, lifting into high chest-mix belts; crisp clavinet-led riff and gap replies, buoyant wider hook bass, muted rhythm guitar, compact dry drums; locked 175 BPM in C major, slight behind-beat phrasing, extended arrangement, wide layered backing textures around a dry lead vocal",
+          "style_observation_kind": "current_workspace_row_text_not_submitted_STYLE_or_verified_audio",
+          "style_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json"
         }
       ],
       "decision": {
@@ -3414,7 +3586,7 @@
         "planned_bars": 92,
         "planned_duration_seconds_at_target_bpm": 184.0
       },
-      "sequence_order": 12,
+      "sequence_order": 4,
       "draft_submission_status": "submitted_once_two_candidates_generated",
       "draft_source_review_ref": "input/lyrics-review/19_작은 파티.md",
       "source_before_eight_song_rewrite": {
@@ -3429,7 +3601,7 @@
         "lyric_direction": "everyday_mantra",
         "chorus_hook": "우리 행복하자"
       },
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
       "generation_history": {
         "status": "one_submission_two_generated_candidates_completed",
         "submitted_at_local": "2026-10-22T15:33:44.927000+09:00",
@@ -3460,7 +3632,7 @@
           }
         ]
       },
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "source_txt_header_status_context": "Original txt header is an unchanged pre-submission snapshot; current generation is documented here and in the raw manifest.",
       "title_before_2026_10_22_user_rename": "작은 파티",
       "source_filename_and_header_title_context": "The source file and Track header preserve 작은 파티 at submission. The submitted title was 19. 작은 파티; the current logical title is 우리 행복하자.",
@@ -3535,7 +3707,12 @@
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
       },
-      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified"
+      "source_txt_status_for_current_selected_candidate": "logical current draft source only; selected later user version generation inputs unverified",
+      "prior_applied_sequence": {
+        "sequence_order": 12,
+        "displayed_name": "12. 우리 행복하자",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      }
     },
     {
       "order": 20,
@@ -3557,7 +3734,7 @@
           "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
           "displayed_name": "1. 오늘의 기록",
           "url": "https://suno.com/song/08d90306-9cf5-43f2-8fad-df2d4d2adae8",
-          "observed_status": "visible_in_post_rename_20_unique_ID_filtered_snapshot",
+          "observed_status": "visible_in_final_20_unique_ID_filtered_workspace_snapshot",
           "version_type": "cover",
           "duration_displayed": "3:17",
           "style_observation_kind": "Suno song details style tooltip; Create form fields not verified",
@@ -3583,11 +3760,15 @@
           "original_2026_10_21_candidate_id": "fb512f6a-30f1-4652-9341-d920ad0b06b6",
           "original_2026_10_21_candidate_url": "https://suno.com/song/fb512f6a-30f1-4652-9341-d920ad0b06b6",
           "original_2026_10_21_candidate_position": "A",
-          "current_title_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "current_title_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "title_before_agent_rename": "20. 오늘의 기록",
           "title_after_agent_rename": "1. 오늘의 기록",
           "sequence_order": 1,
-          "association_evidence": "current_unique_title_matches_logical_original"
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "previous_applied_sequence_title": "1. 오늘의 기록",
+          "title_before_final_adjustment": "1. 오늘의 기록",
+          "title_after_final_adjustment": "1. 오늘의 기록",
+          "final_adjustment_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json"
         }
       ],
       "decision": {
@@ -3650,8 +3831,8 @@
         "planned_duration_seconds_at_target_bpm": 184.615385
       },
       "sequence_order": 1,
-      "current_observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_title_rename",
+      "current_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+      "current_filtered_visibility": "one_unique_ID_visible_after_user_curation_and_final_title_adjustment",
       "candidates_at_15_35_filtered_observation": [
         {
           "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
@@ -3691,6 +3872,11 @@
         "chosen_candidate_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
         "scope": "15:35_filtered_snapshot_during_user_curation",
         "release_approval_status": "not_recorded"
+      },
+      "prior_applied_sequence": {
+        "sequence_order": 1,
+        "displayed_name": "1. 오늘의 기록",
+        "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
       }
     }
   ],
@@ -3708,15 +3894,40 @@
   "eight_song_draft_summary_ref": "input/validation/2026-10-22-eight-song-source-summary.json",
   "before_eight_song_rewrite_archive": "input/source-history/2026-10-22-before-eight-song-rewrite/archive-manifest.json",
   "historical_generation_source_path_context": "Nested before_user_remixes objects are exact 2026-10-21 snapshots: their source_txt paths name the then-live files. The eight rewritten live input/tracks files have different SHA-256 values and were submitted once each on 2026-10-22; historical generation inputs resolve to archives.",
-  "sequence_status": "twenty_suno_titles_renamed_and_verified; private_twenty_song_playlist_order_verified",
+  "sequence_status": "twenty_suno_titles_final_adjustment_verified; private_twenty_song_playlist_final_order_reopened_verified",
   "sequence_decision": {
-    "source_track_order": 20,
-    "song_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
-    "sequence_order": 1,
-    "other_19_sequence_orders": "applied_in_song_title_numbers_and_private_playlist_order",
-    "scope": "twenty_user_selected_song_IDs_in_private_ordered_playlist; workspace_row_order_not_claimed; no_release_approval",
+    "fixed_source_orders_by_playback_position": {
+      "1": 20,
+      "2": 13,
+      "4": 19
+    },
+    "source_order_sequence": [
+      20,
+      13,
+      1,
+      19,
+      2,
+      7,
+      11,
+      6,
+      5,
+      10,
+      8,
+      3,
+      12,
+      9,
+      14,
+      16,
+      17,
+      4,
+      18,
+      15
+    ],
     "user_fixed_first_slot": true,
-    "other_slots": "creative_arrangement_delegated_not_explicitly_user_finalized"
+    "user_fixed_second_and_fourth_slots": true,
+    "some_similar_styles_adjacent_user_allowed": true,
+    "scope": "twenty_user_selected_IDs_in_private_playlist; workspace_row_order_not_claimed; no_release_approval",
+    "basis": "current_UI_observed_styles_and_source_prompt_leads_not_comprehensive_audio_listening"
   },
   "before_eight_song_generation_workspace_observation": {
     "observed_at": "2026-10-22T14:59:38+09:00",
@@ -3727,7 +3938,7 @@
     "current_cover_count_observed": 10,
     "current_existing_v6_count_observed": 2
   },
-  "current_workspace_observation_scope": "Filtered post-rename 16:29 KST snapshot with 20 unique IDs; no assertion about later workspace changes.",
+  "current_workspace_observation_scope": "Filtered current workspace at 17:07 KST with 20 unique IDs and exact final titles; no assertion about later changes.",
   "pre_generation_candidate_archive": "input/source-history/2026-10-22-before-eight-song-generation/archive-manifest.json",
   "eight_song_generation": {
     "manifest_ref": "input/validation/2026-10-22-eight-song-generation/generation-manifest.json",
@@ -3806,23 +4017,86 @@
     "private_playlist_order": "20_selected_IDs_and_titles_verified_in_Default_order_after_reopen"
   },
   "sequence_application": {
-    "preflight_ref": "input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json",
-    "preflight_sha256": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69",
-    "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-    "rename_audit_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
-    "title_saves": 20,
-    "post_rename_unique_ids": 20,
-    "post_rename_title_mismatches": 0,
-    "workspace_row_order_changed": "not_claimed",
-    "playlist_status": "completed_and_reopened_verified",
-    "playlist_audit_ref": "input/validation/2026-10-22-sequence-playlist/playlist-audit.json",
-    "playlist_audit_sha256": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc",
-    "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74",
+    "summary_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+    "summary_sha256": "87ef8fcafd55e7eed8f802e1c37d63a37fc817c177120efa33121ea68202965d",
+    "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+    "rename_audit_sha256": "19840eecf3ca50cc08ef7d01843056173f2f73fb870cb5707b11055efe729d4e",
+    "title_saves": 15,
+    "already_correct": 5,
+    "unique_post_rename_ids": 20,
+    "title_mismatches": [],
+    "playlist_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/playlist-reorder-audit-final.json",
+    "playlist_audit_sha256": "e9cfc436dcfa28ab0df3d628e8236e9175e7581dee0853cbd404b522e458b576",
+    "playlist_reopened_ref": "input/validation/2026-10-22-sequence-final-adjustment/playlist-after-reopen.json",
+    "playlist_reopened_sha256": "6ece5b11aa4ff92fa7a7a192bb16a4225cb778364e3e2c44a029228594a3dac3",
     "playlist_url": "https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74",
-    "playlist_privacy": "private_make_public_action_visible",
+    "playlist_privacy": "private",
     "playlist_sort": "Default",
     "playlist_song_count": 20,
     "playlist_order_matches_selected_ids_and_titles": true,
-    "playlist_reopened_order_persisted": true
-  }
+    "playlist_reopened_order_persisted": true,
+    "workspace_row_order_changed": "not_claimed",
+    "song_creation": 0,
+    "song_deletion": 0,
+    "playlist_publication": 0,
+    "workspace_rename": 0,
+    "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74"
+  },
+  "prior_applied_sequence": {
+    "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+    "observation_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+    "sequence_status": "twenty_suno_titles_renamed_and_verified; private_twenty_song_playlist_order_verified",
+    "sequence_decision": {
+      "source_track_order": 20,
+      "song_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+      "sequence_order": 1,
+      "other_19_sequence_orders": "applied_in_song_title_numbers_and_private_playlist_order",
+      "scope": "twenty_user_selected_song_IDs_in_private_ordered_playlist; workspace_row_order_not_claimed; no_release_approval",
+      "user_fixed_first_slot": true,
+      "other_slots": "creative_arrangement_delegated_not_explicitly_user_finalized"
+    },
+    "sequence_application": {
+      "preflight_ref": "input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json",
+      "preflight_sha256": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "rename_audit_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+      "title_saves": 20,
+      "post_rename_unique_ids": 20,
+      "post_rename_title_mismatches": 0,
+      "workspace_row_order_changed": "not_claimed",
+      "playlist_status": "completed_and_reopened_verified",
+      "playlist_audit_ref": "input/validation/2026-10-22-sequence-playlist/playlist-audit.json",
+      "playlist_audit_sha256": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc",
+      "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74",
+      "playlist_url": "https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74",
+      "playlist_privacy": "private_make_public_action_visible",
+      "playlist_sort": "Default",
+      "playlist_song_count": 20,
+      "playlist_order_matches_selected_ids_and_titles": true,
+      "playlist_reopened_order_persisted": true
+    },
+    "source_order_sequence": [
+      20,
+      1,
+      7,
+      2,
+      3,
+      4,
+      11,
+      6,
+      10,
+      5,
+      8,
+      19,
+      12,
+      13,
+      9,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "series_display_time": "17:30"
 }

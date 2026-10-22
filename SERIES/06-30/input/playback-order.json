@@ -2,34 +2,34 @@
   "schema": "wavvy.0630.playback_order.v1",
   "series_title": "기분좋아져라",
   "workspace": "[06:30]",
-  "status": "twenty_selected_suno_titles_and_private_playlist_order_applied_and_verified",
-  "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-  "observation_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+  "status": "user_selected_twenty_reordered_titles_and_private_playlist_verified_after_reopen",
+  "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+  "observation_sha256": "87ef8fcafd55e7eed8f802e1c37d63a37fc817c177120efa33121ea68202965d",
   "user_fixed_first_source_order": 20,
   "playback_source_order_sequence": [
     20,
+    13,
     1,
-    7,
+    19,
     2,
-    3,
-    4,
+    7,
     11,
     6,
-    10,
     5,
+    10,
     8,
-    19,
+    3,
     12,
-    13,
     9,
     14,
-    15,
     16,
     17,
-    18
+    4,
+    18,
+    15
   ],
-  "arrangement_basis": "Creative scheduling from source prompt lead instruments and lyric themes. Existing 12 and rewritten eight are interleaved, with no more than two pre-existing songs consecutively. No audio listening or independent quality/BPM assessment.",
-  "selection_and_rename_limits": "Zen chose the 20-song set; 20 Suno song titles were saved and UI-verified. A private playlist with the same 20 IDs and titles in Default 1–20 order was verified after reopening. Workspace row order was not changed. Audio BPM and technical quality are not independently measured.",
+  "arrangement_basis": "User fixed positions 1, 2 and 4 and explicitly allowed some similar styles to remain adjacent. Current UI style descriptions distinguish Rhodes on source 13 and clavinet on source 19 from ten generic Modern R&B Cover styles; arrangement aims to disperse these observed groups. Other source prompt instruments inform placement. Not a full listening-based or technical audio-style-distance test. Earlier maximum-two-originals rule is historical, not a current constraint.",
+  "selection_and_rename_limits": "Zen selected the same 20 IDs. 15 Suno song titles were saved and five already matched; UI verified all 20 titles. The existing private playlist was rearranged by removing/re-adding 19 songs and verified after reopening in Default 1–20 order. Workspace row order was not changed. Actual generation STYLE/EXCLUDE and direct Cover parent for source 13 and 19 remain unverified. Audio BPM and technical quality are not independently measured.",
   "slots": [
     {
       "playback_order": 1,
@@ -45,7 +45,7 @@
           "url": "https://suno.com/song/08d90306-9cf5-43f2-8fad-df2d4d2adae8",
           "displayed_title": "1. 오늘의 기록",
           "duration_displayed": "3:17",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -53,8 +53,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
@@ -62,25 +62,85 @@
           "displayed_title": "20. 오늘의 기록"
         }
       ],
-      "pre_rename_displayed_title": "20. 오늘의 기록",
+      "pre_rename_displayed_title": "1. 오늘의 기록",
       "post_rename_displayed_title": "1. 오늘의 기록",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 1,
+        "displayed_title": "1. 오늘의 기록",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "20. 오늘의 기록"
     },
     {
       "playback_order": 2,
+      "source_order": 13,
+      "source_order_label": "13",
+      "title": "이 노래 끝날 때까지",
+      "title_before_user_rename": "옆자리의 노래",
+      "target_displayed_title": "2. 이 노래 끝날 때까지",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "e4841985-ad4c-48db-9389-82eba13b7b7f",
+          "url": "https://suno.com/song/e4841985-ad4c-48db-9389-82eba13b7b7f",
+          "displayed_title": "2. 이 노래 끝날 때까지",
+          "duration_displayed": "3:20",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original",
+          "observed_style_description": "Modern Korean R&B / neo-soul in E Major; lilting syncopated Rhodes leads and vocal answers, chord voicings widening at the hook, tight drums and elastic bass, exact 175 BPM, forward-moving groove with phrases leaning slightly behind the beat, Bright, articulate female chest voice shifting from conversational half-spoken talk-singing in verses to strong high chest-mix chorus belts; one close, dry lead vocal, Rhodes interludes and extended form beyond three minutes",
+          "style_observation_kind": "current_workspace_row_text_not_submitted_STYLE_or_verified_audio",
+          "style_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+          "source_generation_prompt_status": "unverified",
+          "direct_cover_parent_status": "unverified"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": "input/tracks/13_옆자리의 노래.txt",
+      "source_sha256": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "title_intermediate_user_rename": "옆자리",
+      "title_previous_user_correction": "이 노래가 끝날 때까지",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "e4905f48-093f-45b1-992c-1c759a7fbf08",
+          "url": "https://suno.com/song/e4905f48-093f-45b1-992c-1c759a7fbf08",
+          "displayed_title": "13. 옆자리의 노래"
+        },
+        {
+          "id": "3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+          "url": "https://suno.com/song/3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
+          "displayed_title": "13. 옆자리의 노래"
+        }
+      ],
+      "pre_rename_displayed_title": "14. 이 노래 끝날 때까지",
+      "post_rename_displayed_title": "2. 이 노래 끝날 때까지",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "current_candidate_source_lineage_status": "logical_title_association; direct_Cover_parent_unverified; generation STYLE/EXCLUDE unverified",
+      "prior_applied_sequence": {
+        "playback_order": 14,
+        "displayed_title": "14. 이 노래 끝날 때까지",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "13. 이 노래 끝날 때까지"
+    },
+    {
+      "playback_order": 3,
       "source_order": 1,
       "source_order_label": "01",
       "title": "첫 페이지",
       "title_before_user_rename": null,
-      "target_displayed_title": "2. 첫 페이지",
+      "target_displayed_title": "3. 첫 페이지",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
           "url": "https://suno.com/song/ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
-          "displayed_title": "2. 첫 페이지",
+          "displayed_title": "3. 첫 페이지",
           "duration_displayed": "3:09",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -88,8 +148,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
@@ -97,25 +157,126 @@
           "displayed_title": "1. 첫 페이지"
         }
       ],
-      "pre_rename_displayed_title": "1. 첫 페이지",
-      "post_rename_displayed_title": "2. 첫 페이지",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "pre_rename_displayed_title": "2. 첫 페이지",
+      "post_rename_displayed_title": "3. 첫 페이지",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 2,
+        "displayed_title": "2. 첫 페이지",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "1. 첫 페이지"
     },
     {
-      "playback_order": 3,
+      "playback_order": 4,
+      "source_order": 19,
+      "source_order_label": "19",
+      "title": "우리 행복하자",
+      "title_before_user_rename": "작은 파티",
+      "target_displayed_title": "4. 우리 행복하자",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+          "url": "https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b",
+          "displayed_title": "4. 우리 행복하자",
+          "duration_displayed": "3:21",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_title_plus_full_lyrics_exact_match_to_source_19; direct Cover parent unverified",
+          "observed_style_description": "Modern Korean R&B and neo-soul: single clear female solo, smooth silky dark lower-register verses, conversational and close with crisp, deliberate Korean consonants and clean syllable separation, lifting into high chest-mix belts; crisp clavinet-led riff and gap replies, buoyant wider hook bass, muted rhythm guitar, compact dry drums; locked 175 BPM in C major, slight behind-beat phrasing, extended arrangement, wide layered backing textures around a dry lead vocal",
+          "style_observation_kind": "current_workspace_row_text_not_submitted_STYLE_or_verified_audio",
+          "style_observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+          "source_generation_prompt_status": "unverified",
+          "direct_cover_parent_status": "unverified"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": "input/tracks/19_작은 파티.txt",
+      "source_sha256": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "post_15_35_title_observation_ref": "input/validation/2026-10-22-title-rename-19/title-rename-audit.json",
+      "post_15_35_title_observation_status": "original_submitted_candidate_ids_not_visible_in_later_filtered_view; two_different_ids_display_20_우리_행복하자; direct_lineage_unverified; no_rename_performed",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+          "url": "https://suno.com/song/a20fcbd4-eb86-4069-8af5-d1c623175c1f",
+          "displayed_title": "19. 작은 파티"
+        },
+        {
+          "id": "fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+          "url": "https://suno.com/song/fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
+          "displayed_title": "19. 작은 파티"
+        }
+      ],
+      "pre_rename_displayed_title": "12. 우리 행복하자",
+      "post_rename_displayed_title": "4. 우리 행복하자",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "current_candidate_source_lineage_status": "logical_title_association; direct_Cover_parent_unverified; generation STYLE/EXCLUDE unverified",
+      "prior_applied_sequence": {
+        "playback_order": 12,
+        "displayed_title": "12. 우리 행복하자",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "20. 우리 행복하자"
+    },
+    {
+      "playback_order": 5,
+      "source_order": 2,
+      "source_order_label": "02",
+      "title": "오래된 농담",
+      "title_before_user_rename": null,
+      "target_displayed_title": "5. 오래된 농담",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "displayed_title": "5. 오래된 농담",
+          "duration_displayed": "3:22",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": null,
+      "source_sha256": null,
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
+          "displayed_title": "2. 오래된 농담"
+        }
+      ],
+      "pre_rename_displayed_title": "4. 오래된 농담",
+      "post_rename_displayed_title": "5. 오래된 농담",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 4,
+        "displayed_title": "4. 오래된 농담",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "2. 오래된 농담"
+    },
+    {
+      "playback_order": 6,
       "source_order": 7,
       "source_order_label": "07",
       "title": "내일 뭐 해",
       "title_before_user_rename": null,
-      "target_displayed_title": "3. 내일 뭐 해",
+      "target_displayed_title": "6. 내일 뭐 해",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
           "url": "https://suno.com/song/e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
-          "displayed_title": "3. 내일 뭐 해",
+          "displayed_title": "6. 내일 뭐 해",
           "duration_displayed": "3:25",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_rewrite_title_7_and_generation_manifest"
         }
       ],
@@ -123,8 +284,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": "input/tracks/07_접힌 지도.txt",
       "source_sha256": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "arrangement_basis_status": "revised_source_concept_after_first_generation; placement_still_document_draft_not_audio_listening",
       "source_resolution_ref": "input/validation/2026-10-22-track-07-concept-source-resolution.json",
       "title_before_rewrite": "접힌 지도",
@@ -148,118 +309,19 @@
           "displayed_title": "07. 접힌 지도"
         }
       ],
-      "pre_rename_displayed_title": "7. 내일 뭐 해",
-      "post_rename_displayed_title": "3. 내일 뭐 해",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "pre_rename_displayed_title": "3. 내일 뭐 해",
+      "post_rename_displayed_title": "6. 내일 뭐 해",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
       "historical_15_35_candidates_source_archive": "input/source-history/2026-10-22-before-track-07-concept-rewrite/tracks/07_접힌 지도.txt",
       "historical_15_35_candidates_source_sha256": "ea693988ee91faebad9ef134e86ea65654fea65b8932608d714ec2c981172bd0",
       "selected_candidate_source_at_generation": "input/tracks/07_접힌 지도.txt",
-      "selected_candidate_source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576"
-    },
-    {
-      "playback_order": 4,
-      "source_order": 2,
-      "source_order_label": "02",
-      "title": "오래된 농담",
-      "title_before_user_rename": null,
-      "target_displayed_title": "4. 오래된 농담",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "displayed_title": "4. 오래된 농담",
-          "duration_displayed": "3:22",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": null,
-      "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "url": "https://suno.com/song/d6801b81-e1bd-4272-b806-6445b86d6d80",
-          "displayed_title": "2. 오래된 농담"
-        }
-      ],
-      "pre_rename_displayed_title": "2. 오래된 농담",
-      "post_rename_displayed_title": "4. 오래된 농담",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
-    },
-    {
-      "playback_order": 5,
-      "source_order": 3,
-      "source_order_label": "03",
-      "title": "새 신발",
-      "title_before_user_rename": null,
-      "target_displayed_title": "5. 새 신발",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "displayed_title": "5. 새 신발",
-          "duration_displayed": "3:31",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": "input/tracks/03_새 신발.txt",
-      "source_sha256": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
-          "displayed_title": "03. 새 신발"
-        }
-      ],
-      "pre_rename_displayed_title": "03. 새 신발",
-      "post_rename_displayed_title": "5. 새 신발",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
-    },
-    {
-      "playback_order": 6,
-      "source_order": 4,
-      "source_order_label": "04",
-      "title": "반대편 창가",
-      "title_before_user_rename": null,
-      "target_displayed_title": "6. 반대편 창가",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "displayed_title": "6. 반대편 창가",
-          "duration_displayed": "3:18",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": "input/tracks/04_반대편 창가.txt",
-      "source_sha256": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
-          "displayed_title": "4. 반대편 창가"
-        }
-      ],
-      "pre_rename_displayed_title": "4. 반대편 창가",
-      "post_rename_displayed_title": "6. 반대편 창가",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "selected_candidate_source_sha256_at_generation": "3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576",
+      "prior_applied_sequence": {
+        "playback_order": 3,
+        "displayed_title": "3. 내일 뭐 해",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "7. 내일 뭐 해"
     },
     {
       "playback_order": 7,
@@ -275,7 +337,7 @@
           "url": "https://suno.com/song/e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
           "displayed_title": "7. 종이비행기",
           "duration_displayed": "3:08",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -283,8 +345,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
@@ -292,9 +354,15 @@
           "displayed_title": "11. 종이비행기"
         }
       ],
-      "pre_rename_displayed_title": "11. 종이비행기",
+      "pre_rename_displayed_title": "7. 종이비행기",
       "post_rename_displayed_title": "7. 종이비행기",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 7,
+        "displayed_title": "7. 종이비행기",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "11. 종이비행기"
     },
     {
       "playback_order": 8,
@@ -310,7 +378,7 @@
           "url": "https://suno.com/song/5aa6b60e-e108-4116-b541-a64c275a3676",
           "displayed_title": "8. 빵집 앞에서",
           "duration_displayed": "3:14",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -318,8 +386,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": "input/tracks/06_빵집 앞에서.txt",
       "source_sha256": "87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "5aa6b60e-e108-4116-b541-a64c275a3676",
@@ -327,25 +395,72 @@
           "displayed_title": "06. 빵집 앞에서"
         }
       ],
-      "pre_rename_displayed_title": "06. 빵집 앞에서",
+      "pre_rename_displayed_title": "8. 빵집 앞에서",
       "post_rename_displayed_title": "8. 빵집 앞에서",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 8,
+        "displayed_title": "8. 빵집 앞에서",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "06. 빵집 앞에서"
     },
     {
       "playback_order": 9,
+      "source_order": 5,
+      "source_order_label": "05",
+      "title": "잘 익은 하루",
+      "title_before_user_rename": null,
+      "target_displayed_title": "9. 잘 익은 하루",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "displayed_title": "9. 잘 익은 하루",
+          "duration_displayed": "3:19",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": null,
+      "source_sha256": null,
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+          "displayed_title": "5. 잘 익은 하루"
+        }
+      ],
+      "pre_rename_displayed_title": "10. 잘 익은 하루",
+      "post_rename_displayed_title": "9. 잘 익은 하루",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 10,
+        "displayed_title": "10. 잘 익은 하루",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "5. 잘 익은 하루"
+    },
+    {
+      "playback_order": 10,
       "source_order": 10,
       "source_order_label": "10",
       "title": "계단 끝에서",
       "title_before_user_rename": null,
-      "target_displayed_title": "9. 계단 끝에서",
+      "target_displayed_title": "10. 계단 끝에서",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
           "url": "https://suno.com/song/af9af447-7ed3-4f31-84fd-b5be0c8fb504",
-          "displayed_title": "9. 계단 끝에서",
+          "displayed_title": "10. 계단 끝에서",
           "duration_displayed": "3:08",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "user_chose_new_lyrics_3m08; old_8fab_not_visible_after_user_deletion"
         }
       ],
@@ -353,8 +468,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": "input/tracks/10_계단 끝에서.txt",
       "source_sha256": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "source_resolution_ref": "input/validation/2026-10-22-track-10-lyric-source-resolution.json",
       "arrangement_basis_status": "revised_source_concept_after_first_generation; placement_still_document_draft_not_audio_listening",
       "source_status": "lyric_revision_submitted_once_two_candidates_generated_at_later_completion",
@@ -376,49 +491,20 @@
           "displayed_title": "10. 계단 끝에서"
         }
       ],
-      "pre_rename_displayed_title": "10. 계단 끝에서",
-      "post_rename_displayed_title": "9. 계단 끝에서",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "pre_rename_displayed_title": "9. 계단 끝에서",
+      "post_rename_displayed_title": "10. 계단 끝에서",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
       "source_10_user_selection": "새 가사 3:08로 20곡 구성 (추천) — ‘오늘은 여기까지’ 후렴으로 다시 만든 버전이에요.",
       "historical_15_35_candidates_source_archive": "input/source-history/2026-10-22-before-track-10-lyric-rewrite/tracks/10_계단 끝에서.txt",
       "historical_15_35_candidates_source_sha256": "e3daa4344805e20d0ebb1480bf875ec7cfc35fa464c19cea8d6e813cbdf14bd6",
       "selected_candidate_source_at_generation": "input/tracks/10_계단 끝에서.txt",
-      "selected_candidate_source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32"
-    },
-    {
-      "playback_order": 10,
-      "source_order": 5,
-      "source_order_label": "05",
-      "title": "잘 익은 하루",
-      "title_before_user_rename": null,
-      "target_displayed_title": "10. 잘 익은 하루",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "displayed_title": "10. 잘 익은 하루",
-          "duration_displayed": "3:19",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": null,
-      "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "url": "https://suno.com/song/2650ca9a-2e51-4621-b508-cc87cfecd0b1",
-          "displayed_title": "5. 잘 익은 하루"
-        }
-      ],
-      "pre_rename_displayed_title": "5. 잘 익은 하루",
-      "post_rename_displayed_title": "10. 잘 익은 하루",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "selected_candidate_source_sha256_at_generation": "ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32",
+      "prior_applied_sequence": {
+        "playback_order": 9,
+        "displayed_title": "9. 계단 끝에서",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "10. 계단 끝에서"
     },
     {
       "playback_order": 11,
@@ -434,7 +520,7 @@
           "url": "https://suno.com/song/a6c208ae-fb73-409e-a4a4-c9adc338bc47",
           "displayed_title": "11. 메모 한 장",
           "duration_displayed": "3:06",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -442,8 +528,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
@@ -451,52 +537,56 @@
           "displayed_title": "8. 메모 한 장"
         }
       ],
-      "pre_rename_displayed_title": "8. 메모 한 장",
+      "pre_rename_displayed_title": "11. 메모 한 장",
       "post_rename_displayed_title": "11. 메모 한 장",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 11,
+        "displayed_title": "11. 메모 한 장",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "8. 메모 한 장"
     },
     {
       "playback_order": 12,
-      "source_order": 19,
-      "source_order_label": "19",
-      "title": "우리 행복하자",
-      "title_before_user_rename": "작은 파티",
-      "target_displayed_title": "12. 우리 행복하자",
+      "source_order": 3,
+      "source_order_label": "03",
+      "title": "새 신발",
+      "title_before_user_rename": null,
+      "target_displayed_title": "12. 새 신발",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
-          "id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
-          "url": "https://suno.com/song/810a0d51-39e5-460c-ae78-ed3a8181837b",
-          "displayed_title": "12. 우리 행복하자",
-          "duration_displayed": "3:21",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_title_plus_full_lyrics_exact_match_to_source_19; direct Cover parent unverified"
+          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "displayed_title": "12. 새 신발",
+          "duration_displayed": "3:31",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
       "current_observed_candidate_count": 1,
       "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": "input/tracks/19_작은 파티.txt",
-      "source_sha256": "3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "post_15_35_title_observation_ref": "input/validation/2026-10-22-title-rename-19/title-rename-audit.json",
-      "post_15_35_title_observation_status": "original_submitted_candidate_ids_not_visible_in_later_filtered_view; two_different_ids_display_20_우리_행복하자; direct_lineage_unverified; no_rename_performed",
+      "source_txt": "input/tracks/03_새 신발.txt",
+      "source_sha256": "8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
-          "id": "a20fcbd4-eb86-4069-8af5-d1c623175c1f",
-          "url": "https://suno.com/song/a20fcbd4-eb86-4069-8af5-d1c623175c1f",
-          "displayed_title": "19. 작은 파티"
-        },
-        {
-          "id": "fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
-          "url": "https://suno.com/song/fc2ca61b-9e8e-4ba7-9c0f-1f9edfc98e65",
-          "displayed_title": "19. 작은 파티"
+          "id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "url": "https://suno.com/song/72dd15dd-00b7-445c-bfcc-7c07274ad588",
+          "displayed_title": "03. 새 신발"
         }
       ],
-      "pre_rename_displayed_title": "20. 우리 행복하자",
-      "post_rename_displayed_title": "12. 우리 행복하자",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_candidate_source_lineage_status": "logical_title_association; direct_Cover_parent_unverified; generation STYLE/EXCLUDE unverified"
+      "pre_rename_displayed_title": "5. 새 신발",
+      "post_rename_displayed_title": "12. 새 신발",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 5,
+        "displayed_title": "5. 새 신발",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "03. 새 신발"
     },
     {
       "playback_order": 13,
@@ -512,7 +602,7 @@
           "url": "https://suno.com/song/a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
           "displayed_title": "13. 유리컵의 햇빛",
           "duration_displayed": "3:07",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -520,8 +610,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
@@ -529,68 +619,31 @@
           "displayed_title": "12. 유리컵의 햇빛"
         }
       ],
-      "pre_rename_displayed_title": "12. 유리컵의 햇빛",
+      "pre_rename_displayed_title": "13. 유리컵의 햇빛",
       "post_rename_displayed_title": "13. 유리컵의 햇빛",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 13,
+        "displayed_title": "13. 유리컵의 햇빛",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "12. 유리컵의 햇빛"
     },
     {
       "playback_order": 14,
-      "source_order": 13,
-      "source_order_label": "13",
-      "title": "이 노래 끝날 때까지",
-      "title_before_user_rename": "옆자리의 노래",
-      "target_displayed_title": "14. 이 노래 끝날 때까지",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "e4841985-ad4c-48db-9389-82eba13b7b7f",
-          "url": "https://suno.com/song/e4841985-ad4c-48db-9389-82eba13b7b7f",
-          "displayed_title": "14. 이 노래 끝날 때까지",
-          "duration_displayed": "3:20",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": "input/tracks/13_옆자리의 노래.txt",
-      "source_sha256": "9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "title_intermediate_user_rename": "옆자리",
-      "title_previous_user_correction": "이 노래가 끝날 때까지",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "e4905f48-093f-45b1-992c-1c759a7fbf08",
-          "url": "https://suno.com/song/e4905f48-093f-45b1-992c-1c759a7fbf08",
-          "displayed_title": "13. 옆자리의 노래"
-        },
-        {
-          "id": "3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
-          "url": "https://suno.com/song/3a439f43-c346-44a4-a1d0-2a15bf53cf7a",
-          "displayed_title": "13. 옆자리의 노래"
-        }
-      ],
-      "pre_rename_displayed_title": "13. 이 노래 끝날 때까지",
-      "post_rename_displayed_title": "14. 이 노래 끝날 때까지",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-      "current_candidate_source_lineage_status": "logical_title_association; direct_Cover_parent_unverified; generation STYLE/EXCLUDE unverified"
-    },
-    {
-      "playback_order": 15,
       "source_order": 9,
       "source_order_label": "09",
       "title": "먼저 건넨 말",
       "title_before_user_rename": null,
-      "target_displayed_title": "15. 먼저 건넨 말",
+      "target_displayed_title": "14. 먼저 건넨 말",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
           "url": "https://suno.com/song/825e0bfc-a2cf-4892-b372-ded25c688eb8",
-          "displayed_title": "15. 먼저 건넨 말",
+          "displayed_title": "14. 먼저 건넨 말",
           "duration_displayed": "3:03",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -598,8 +651,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
@@ -607,25 +660,31 @@
           "displayed_title": "9. 먼저 건넨 말"
         }
       ],
-      "pre_rename_displayed_title": "9. 먼저 건넨 말",
-      "post_rename_displayed_title": "15. 먼저 건넨 말",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "pre_rename_displayed_title": "15. 먼저 건넨 말",
+      "post_rename_displayed_title": "14. 먼저 건넨 말",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 15,
+        "displayed_title": "15. 먼저 건넨 말",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "9. 먼저 건넨 말"
     },
     {
-      "playback_order": 16,
+      "playback_order": 15,
       "source_order": 14,
       "source_order_label": "14",
       "title": "작은 용기",
       "title_before_user_rename": null,
-      "target_displayed_title": "16. 작은 용기",
+      "target_displayed_title": "15. 작은 용기",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
           "url": "https://suno.com/song/f737072d-2874-4b2e-802d-aee3975ed8a7",
-          "displayed_title": "16. 작은 용기",
+          "displayed_title": "15. 작은 용기",
           "duration_displayed": "3:07",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -633,8 +692,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": null,
       "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "historical_15_35_observed_candidates": [
         {
           "id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
@@ -642,25 +701,200 @@
           "displayed_title": "14. 작은 용기"
         }
       ],
-      "pre_rename_displayed_title": "14. 작은 용기",
-      "post_rename_displayed_title": "16. 작은 용기",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "pre_rename_displayed_title": "16. 작은 용기",
+      "post_rename_displayed_title": "15. 작은 용기",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 16,
+        "displayed_title": "16. 작은 용기",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "14. 작은 용기"
+    },
+    {
+      "playback_order": 16,
+      "source_order": 16,
+      "source_order_label": "16",
+      "title": "돌아가는 길",
+      "title_before_user_rename": null,
+      "target_displayed_title": "16. 돌아가는 길",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "displayed_title": "16. 돌아가는 길",
+          "duration_displayed": "3:08",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": "input/tracks/16_돌아가는 길.txt",
+      "source_sha256": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "1bffb45e-5e2b-489c-a464-080017e4857f",
+          "url": "https://suno.com/song/1bffb45e-5e2b-489c-a464-080017e4857f",
+          "displayed_title": "16. 돌아가는 길"
+        },
+        {
+          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+          "displayed_title": "16. 돌아가는 길"
+        }
+      ],
+      "pre_rename_displayed_title": "18. 돌아가는 길",
+      "post_rename_displayed_title": "16. 돌아가는 길",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 18,
+        "displayed_title": "18. 돌아가는 길",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "16. 돌아가는 길"
     },
     {
       "playback_order": 17,
+      "source_order": 17,
+      "source_order_label": "17",
+      "title": "새 잎",
+      "title_before_user_rename": null,
+      "target_displayed_title": "17. 새 잎",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "2917ff51-6540-4165-808f-8a158c14c371",
+          "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
+          "displayed_title": "17. 새 잎",
+          "duration_displayed": "3:04",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": null,
+      "source_sha256": null,
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "2917ff51-6540-4165-808f-8a158c14c371",
+          "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
+          "displayed_title": "17. 새 잎"
+        }
+      ],
+      "pre_rename_displayed_title": "19. 새 잎",
+      "post_rename_displayed_title": "17. 새 잎",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 19,
+        "displayed_title": "19. 새 잎",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "17. 새 잎"
+    },
+    {
+      "playback_order": 18,
+      "source_order": 4,
+      "source_order_label": "04",
+      "title": "반대편 창가",
+      "title_before_user_rename": null,
+      "target_displayed_title": "18. 반대편 창가",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "displayed_title": "18. 반대편 창가",
+          "duration_displayed": "3:18",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": "input/tracks/04_반대편 창가.txt",
+      "source_sha256": "16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "url": "https://suno.com/song/b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+          "displayed_title": "4. 반대편 창가"
+        }
+      ],
+      "pre_rename_displayed_title": "6. 반대편 창가",
+      "post_rename_displayed_title": "18. 반대편 창가",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 6,
+        "displayed_title": "6. 반대편 창가",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "4. 반대편 창가"
+    },
+    {
+      "playback_order": 19,
+      "source_order": 18,
+      "source_order_label": "18",
+      "title": "나란히 걷자",
+      "title_before_user_rename": null,
+      "target_displayed_title": "19. 나란히 걷자",
+      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
+      "current_observed_candidates": [
+        {
+          "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+          "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
+          "displayed_title": "19. 나란히 걷자",
+          "duration_displayed": "3:04",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
+          "association_evidence": "current_unique_title_matches_logical_original"
+        }
+      ],
+      "current_observed_candidate_count": 1,
+      "candidate_selection_status": "user_selected_for_20_song_sequence",
+      "source_txt": null,
+      "source_sha256": null,
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
+      "historical_15_35_observed_candidates": [
+        {
+          "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+          "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
+          "displayed_title": "18. 나란히 걷자"
+        }
+      ],
+      "pre_rename_displayed_title": "20. 나란히 걷자",
+      "post_rename_displayed_title": "19. 나란히 걷자",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+      "prior_applied_sequence": {
+        "playback_order": 20,
+        "displayed_title": "20. 나란히 걷자",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "18. 나란히 걷자"
+    },
+    {
+      "playback_order": 20,
       "source_order": 15,
       "source_order_label": "15",
       "title": "웃음의 순서",
       "title_before_user_rename": null,
-      "target_displayed_title": "17. 웃음의 순서",
+      "target_displayed_title": "20. 웃음의 순서",
       "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
       "current_observed_candidates": [
         {
           "id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
           "url": "https://suno.com/song/1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
-          "displayed_title": "17. 웃음의 순서",
+          "displayed_title": "20. 웃음의 순서",
           "duration_displayed": "3:19",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+          "observation_ref": "input/validation/2026-10-22-sequence-final-adjustment/workspace-after.json",
           "association_evidence": "current_unique_title_matches_logical_original"
         }
       ],
@@ -668,8 +902,8 @@
       "candidate_selection_status": "user_selected_for_20_song_sequence",
       "source_txt": "input/tracks/15_웃음의 순서.txt",
       "source_sha256": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
+      "arrangement_basis": "user_fixed_position_and_current_UI_observed_style_group_or_source_prompt_lead; not_full_audio_listening_test",
+      "candidate_observation_scope": "filtered_current_workspace_2026-10-22_17_07_KST_20_unique_ID_point_in_time_snapshot",
       "source_status": "current_lyric_revision_submitted_once_two_candidates_generated_at_later_completion",
       "later_generation_manifest_ref": "input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json",
       "later_generated_candidate_ids": [
@@ -689,123 +923,19 @@
           "displayed_title": "15. 웃음의 순서"
         }
       ],
-      "pre_rename_displayed_title": "15. 웃음의 순서",
-      "post_rename_displayed_title": "17. 웃음의 순서",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "pre_rename_displayed_title": "17. 웃음의 순서",
+      "post_rename_displayed_title": "20. 웃음의 순서",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
       "historical_15_35_candidates_source_archive": "input/source-history/2026-10-22-before-track-15-lyric-rewrite/tracks/15_웃음의 순서.txt",
       "historical_15_35_candidates_source_sha256": "e572fa3be5775eb430c3ac0d03bb95a7ee9c09eac82ac5344197c0877abe8a68",
       "selected_candidate_source_at_generation": "input/tracks/15_웃음의 순서.txt",
-      "selected_candidate_source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7"
-    },
-    {
-      "playback_order": 18,
-      "source_order": 16,
-      "source_order_label": "16",
-      "title": "돌아가는 길",
-      "title_before_user_rename": null,
-      "target_displayed_title": "18. 돌아가는 길",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "displayed_title": "18. 돌아가는 길",
-          "duration_displayed": "3:08",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": "input/tracks/16_돌아가는 길.txt",
-      "source_sha256": "59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de",
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "1bffb45e-5e2b-489c-a464-080017e4857f",
-          "url": "https://suno.com/song/1bffb45e-5e2b-489c-a464-080017e4857f",
-          "displayed_title": "16. 돌아가는 길"
-        },
-        {
-          "id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "url": "https://suno.com/song/7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
-          "displayed_title": "16. 돌아가는 길"
-        }
-      ],
-      "pre_rename_displayed_title": "16. 돌아가는 길",
-      "post_rename_displayed_title": "18. 돌아가는 길",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
-    },
-    {
-      "playback_order": 19,
-      "source_order": 17,
-      "source_order_label": "17",
-      "title": "새 잎",
-      "title_before_user_rename": null,
-      "target_displayed_title": "19. 새 잎",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "2917ff51-6540-4165-808f-8a158c14c371",
-          "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
-          "displayed_title": "19. 새 잎",
-          "duration_displayed": "3:04",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": null,
-      "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "2917ff51-6540-4165-808f-8a158c14c371",
-          "url": "https://suno.com/song/2917ff51-6540-4165-808f-8a158c14c371",
-          "displayed_title": "17. 새 잎"
-        }
-      ],
-      "pre_rename_displayed_title": "17. 새 잎",
-      "post_rename_displayed_title": "19. 새 잎",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
-    },
-    {
-      "playback_order": 20,
-      "source_order": 18,
-      "source_order_label": "18",
-      "title": "나란히 걷자",
-      "title_before_user_rename": null,
-      "target_displayed_title": "20. 나란히 걷자",
-      "target_displayed_title_status": "applied_and_verified_in_suno_song_title",
-      "current_observed_candidates": [
-        {
-          "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
-          "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
-          "displayed_title": "20. 나란히 걷자",
-          "duration_displayed": "3:04",
-          "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-          "association_evidence": "current_unique_title_matches_logical_original"
-        }
-      ],
-      "current_observed_candidate_count": 1,
-      "candidate_selection_status": "user_selected_for_20_song_sequence",
-      "source_txt": null,
-      "source_sha256": null,
-      "arrangement_basis": "source_prompt_lead_and_lyric_direction_not_audio_listening",
-      "candidate_observation_scope": "filtered_post_rename_2026-10-22_16_29_KST_20_unique_ID_snapshot",
-      "historical_15_35_observed_candidates": [
-        {
-          "id": "14f93021-945e-4c2d-a2f6-e9f696660320",
-          "url": "https://suno.com/song/14f93021-945e-4c2d-a2f6-e9f696660320",
-          "displayed_title": "18. 나란히 걷자"
-        }
-      ],
-      "pre_rename_displayed_title": "18. 나란히 걷자",
-      "post_rename_displayed_title": "20. 나란히 걷자",
-      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      "selected_candidate_source_sha256_at_generation": "c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7",
+      "prior_applied_sequence": {
+        "playback_order": 17,
+        "displayed_title": "17. 웃음의 순서",
+        "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json"
+      },
+      "initial_pre_rename_displayed_title": "15. 웃음의 순서"
     }
   ],
   "later_observation_context": "Source 13 current ID e484… and source 19 current ID 810a… are associated by current unique title (and for 19, full lyrics exact match). Direct Cover parent and actual generation STYLE/EXCLUDE are unverified; earlier first-batch IDs remain history.",
@@ -815,22 +945,80 @@
     "status": "earlier_filtered_26_ID_snapshot_not_current_selection"
   },
   "sequence_application": {
-    "preflight_ref": "input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json",
-    "preflight_sha256": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69",
-    "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
-    "rename_audit_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
-    "saved_song_titles": 20,
+    "summary_ref": "input/validation/2026-10-22-sequence-final-adjustment/summary.json",
+    "summary_sha256": "87ef8fcafd55e7eed8f802e1c37d63a37fc817c177120efa33121ea68202965d",
+    "rename_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/title-audit-final.json",
+    "rename_audit_sha256": "19840eecf3ca50cc08ef7d01843056173f2f73fb870cb5707b11055efe729d4e",
+    "title_saves": 15,
+    "already_correct": 5,
     "unique_post_rename_ids": 20,
-    "title_mismatches": 0,
-    "playlist_status": "completed_and_reopened_verified",
-    "playlist_audit_ref": "input/validation/2026-10-22-sequence-playlist/playlist-audit.json",
-    "playlist_audit_sha256": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc",
-    "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74",
+    "title_mismatches": [],
+    "playlist_audit_ref": "input/validation/2026-10-22-sequence-final-adjustment/playlist-reorder-audit-final.json",
+    "playlist_audit_sha256": "e9cfc436dcfa28ab0df3d628e8236e9175e7581dee0853cbd404b522e458b576",
+    "playlist_reopened_ref": "input/validation/2026-10-22-sequence-final-adjustment/playlist-after-reopen.json",
+    "playlist_reopened_sha256": "6ece5b11aa4ff92fa7a7a192bb16a4225cb778364e3e2c44a029228594a3dac3",
     "playlist_url": "https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74",
-    "playlist_privacy": "private_make_public_action_visible",
+    "playlist_privacy": "private",
     "playlist_sort": "Default",
     "playlist_song_count": 20,
     "playlist_order_matches_selected_ids_and_titles": true,
-    "playlist_reopened_order_persisted": true
+    "playlist_reopened_order_persisted": true,
+    "workspace_row_order_changed": "not_claimed",
+    "song_creation": 0,
+    "song_deletion": 0,
+    "playlist_publication": 0,
+    "workspace_rename": 0
+  },
+  "prior_applied_sequence": {
+    "source_order_sequence": [
+      20,
+      1,
+      7,
+      2,
+      3,
+      4,
+      11,
+      6,
+      10,
+      5,
+      8,
+      19,
+      12,
+      13,
+      9,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "observation_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+    "observation_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+    "sequence_application": {
+      "preflight_ref": "input/validation/2026-10-22-sequence-preflight/sequence-mapping-preflight.json",
+      "preflight_sha256": "1019fffbab032d75055782a6f0a14dd4ee6e8a00c50627c8895b15f655cfaa69",
+      "rename_audit_ref": "input/validation/2026-10-22-sequence-rename/rename-audit.json",
+      "rename_audit_sha256": "03ec94a16ddf75bf838d76ec7add925ec484f4aebe1c16bcf9034bfaf7e7d59b",
+      "saved_song_titles": 20,
+      "unique_post_rename_ids": 20,
+      "title_mismatches": 0,
+      "playlist_status": "completed_and_reopened_verified",
+      "playlist_audit_ref": "input/validation/2026-10-22-sequence-playlist/playlist-audit.json",
+      "playlist_audit_sha256": "5020deb82b07d5b35b3d3f575f5d44d57ca345fd5f4a80050d42978c39ffa6cc",
+      "playlist_id": "fcacea59-6c41-426e-aaad-444bcd91de74",
+      "playlist_url": "https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74",
+      "playlist_privacy": "private_make_public_action_visible",
+      "playlist_sort": "Default",
+      "playlist_song_count": 20,
+      "playlist_order_matches_selected_ids_and_titles": true,
+      "playlist_reopened_order_persisted": true
+    },
+    "status": "twenty_selected_suno_titles_and_private_playlist_order_applied_and_verified"
+  },
+  "series_display_time": "17:30",
+  "user_fixed_source_orders_by_playback_position": {
+    "1": 20,
+    "2": 13,
+    "4": 19
   }
 }
