@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 로컬 최종 영상·업로드 자료 기술 준비 완료)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 선택 WAV 20곡을 확정 순서로 2회 반복해 7,718.5초 `output/final.mkv`와 업로드용 H.264/AAC `output/final.mp4`를 제작했다. `output/report.json`의 실제 시각으로 40개 챕터를 `concept.md`·`output/upload.csv`에 동기화했고 Final Track Sources·한국어 자막 원문을 완성했다. 입력·raw·사용자 제작 썸네일과 승인 영상 배경은 보존했다.
+Verification: [원시 실행·검사 기록](../SERIES/17-30/input/validation/2026-10-22-release-production/)의 validate·전곡 30초 preview·pack·finalize check/keep-txt·자막·ffprobe·전체 오디오 디코드·중간 화면·source-final/render-final/upload-ready/verify-release를 확인한다. 마스터 오디오 전체 디코드 종료 코드 0, 실측 −13.97 LUFS/−0.96 dBTP다. 로컬 `upload-ready`는 PASS지만 제목 승인 또는 업로드 완료가 아니다.
+Review: [격리 최종 검토](reviews/2026-10-22-final-release-package-review.md) CLEAN, 확정 Critical/High 0. 부모가 최종 파일 해시·형식·길이·화면·챕터 수·자막 반복을 대조했다.
+Next-TODO: 젠에게 YouTube 제목 전체를 별도 승인받은 뒤 승인된 제목으로 비공개 업로드한다. 제목 승인 전 업로드·공개·예약은 하지 않는다. 공개 시각은 미정이며 17:30은 시리즈 식별 시각이다. 젠의 로컬 입력 전곡 청취 PASS는 4번만 확인됐고 5~20번은 기술 검사 범위다.
+Commits: 이 인계와 제작·검토 근거를 같은 변경 묶음으로 보존한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 선택 WAV 20/20 로컬 입력 완료)
 Project: ~/Project/wavvy
 Agent: Codex

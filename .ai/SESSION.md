@@ -1,6 +1,13 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-22 (17:30 공개 Suno 선택20곡·로컬 WAV 20/20: 공식 다운로드 3·내부 녹음 17, 입력 기술 검사 완료·영상 제작 전, 제목 승인 전)
+> Last updated: 2026-10-22 (17:30 선택 WAV 20/20·2회 반복 최종 로컬 영상/메타데이터 기술 준비 완료, YouTube 제목 승인·업로드 전)
+
+---
+
+## 2026-10-22 [CDX] 17:30 최종 로컬 영상·업로드 자료 제작
+- [격리 최종 검토](reviews/2026-10-22-final-release-package-review.md)는 CLEAN(확정 Critical/High 0)이다. 부모도 완성 파일 형식·길이·해시·최종 화면·40챕터·자막 1,478행의 동일한 2회 반복을 직접 대조했다. 현재 남은 선행 조건은 젠의 YouTube 제목 전체 승인이다. 아래 입력·녹음 체크포인트들은 각 시점의 과거 기록이다.
+- 확정 재생 순서의 실제 WAV 20곡(공식 다운로드 3·앱 내부 녹음 17)을 전곡 30초 미리보기로 확인하고 `pack --repeat 2 -y`로 `output/final.mkv`와 `output/report.json`을 제작했다. 보고서의 입력 합계는 3,874.85초, 최종 길이는 7,718.5초(2:08:38.5)다. H.264 영상·FLAC 오디오 마스터를 H.264 3840×2160·AAC 48 kHz 스테레오 MP4로 변환했다. 40개 챕터는 보고서의 실제 시각으로 작성했고 `output/upload.csv`·`concept.md`를 동기화했다. 기존 번호별 txt를 보존하며 `Final Track Sources`와 한국어 자막 원문을 만들었다.
+- [제작·검사 원시 기록](../SERIES/17-30/input/validation/2026-10-22-release-production/)에 `validate`, preview, pack, finalize check/keep-txt, 자막, ffprobe, 오디오 전체 디코드·음량, 최종 중간 화면, source-final/render-final/upload-ready/verify-release 게이트를 남겼다. 마스터 오디오 전체 디코드 종료 코드는 0, 실측 평균 −13.97 LUFS·true peak −0.96 dBTP다. 원본 WAV·raw·승인 썸네일/배경은 변경하지 않았다. `upload-ready` PASS는 기술적 준비만 뜻한다. 젠의 YouTube 제목 전체 승인은 아직 없으며 업로드·공개·예약은 0회다. 젠의 전곡 청취 PASS로 확인된 로컬 입력은 4번뿐이고 5~20번은 기술 검사다.
 
 ---
 

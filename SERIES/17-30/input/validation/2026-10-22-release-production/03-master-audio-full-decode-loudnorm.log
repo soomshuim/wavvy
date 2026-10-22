@@ -1,0 +1,37 @@
+Input #0, matroska,webm, from 'SERIES/17-30/output/final.mkv':
+  Metadata:
+    ENCODER         : Lavf62.3.100
+  Duration: 02:08:38.50, start: 0.000000, bitrate: 1247 kb/s
+  Stream #0:0: Video: h264 (High), yuv420p(tv, progressive), 3840x2160, 1 fps, 2 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc62.11.100 libx264
+      DURATION        : 02:08:38.000000000
+  Stream #0:1: Audio: flac, 48000 Hz, stereo, s16
+    Metadata:
+      ENCODER         : Lavc62.11.100 flac
+      DURATION        : 02:08:38.500000000
+Stream mapping:
+  Stream #0:1 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 pcm_s16le
+      DURATION        : 02:08:38.500000000
+[Parsed_loudnorm_0 @ 0x960838a80] 
+{
+	"input_i" : "-13.97",
+	"input_tp" : "-0.96",
+	"input_lra" : "4.60",
+	"input_thresh" : "-24.06",
+	"output_i" : "-13.99",
+	"output_tp" : "-1.00",
+	"output_lra" : "4.60",
+	"output_thresh" : "-24.07",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.01"
+}
+[out#0/null @ 0x960838300] video:0KiB audio:5788875KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=02:08:38.50 bitrate=N/A speed=39.3x elapsed=0:03:16.56    

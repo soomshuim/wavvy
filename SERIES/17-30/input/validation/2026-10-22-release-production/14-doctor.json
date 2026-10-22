@@ -1,0 +1,123 @@
+{
+  "schema": "wavvy.doctor.v1",
+  "repo": "/Users/zenkim_office/Project/wavvy",
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "click",
+      "module": "click",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ffmpeg-python",
+      "module": "ffmpeg",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "pandas",
+      "module": "pandas",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ffmpeg-normalize",
+      "module": "ffmpeg_normalize",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "Pillow",
+      "module": "PIL",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ffmpeg",
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "version": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ffprobe",
+      "path": "/opt/homebrew/bin/ffprobe",
+      "version": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "git",
+      "path": "/usr/bin/git",
+      "version": "/usr/bin/git",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "peer_review_script",
+      "path": "/Users/zenkim_office/Project/agent-center/scripts/peer-review/orchestrate.sh",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ffmpeg_full_drawtext",
+      "path": "/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg",
+      "required": false,
+      "status": "warn"
+    },
+    {
+      "name": "disk_free",
+      "path": "/Users/zenkim_office/Project/wavvy",
+      "required": false,
+      "status": "pass",
+      "free_gib": 269.65
+    },
+    {
+      "name": "workspace_writable",
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/tmp",
+      "required": true,
+      "status": "pass"
+    },
+    {
+      "name": "ssot_docs_present",
+      "required": true,
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "router_targets_consistent",
+      "required": true,
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "entrypoint_stale_patterns_absent",
+      "required": true,
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "state_authoritative_docs_current",
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/state.json",
+      "required": true,
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "tracked_ds_store_absent",
+      "required": true,
+      "status": "pass",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    {
+      "name": "ffmpeg_full_drawtext",
+      "path": "/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg",
+      "required": false,
+      "status": "warn"
+    }
+  ],
+  "blockers": []
+}

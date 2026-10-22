@@ -1,6 +1,14 @@
 # 기분좋아져라 — 17:30 시리즈 제작 기록
 
 Date: 2026-10-21 · Updated: 2026-10-22
+## Series Status
+
+선택 WAV 20곡(공식 다운로드 3·앱 내부 녹음 17)을 확정된 [재생 순서](input/playback-order.json)로 두 번 반복해 [실제 렌더 보고서](output/report.json)와 로컬 최종 영상 `output/final.mkv`·업로드용 `output/final.mp4`를 만들었다. 입력 합계는 3,874.85초, 최종 길이는 실측 7,718.5초다. [제작·검사 원시 기록](input/validation/2026-10-22-release-production/)에 전곡 30초 미리보기, 최종 오디오 전체 디코드·음량, MP4 재생 정보, 중간 화면, 출처·렌더·업로드 준비 게이트와 40개 챕터 검증 결과를 보존한다. 한국어 자막 원문은 `output/youtube_subtitles_ko_no_timing.txt`다. `input/thumb.jpg`·`input/loop.png`와 모든 입력·raw 파일은 변경하지 않았다.
+
+`upload-ready`는 로컬 파일·메타데이터의 기술적 준비 상태다. 아래 YouTube 제목은 아직 젠의 별도 승인을 받지 않았고, 영상 업로드·공개·예약은 0회다. 젠의 전곡 청취 통과로 확인된 로컬 입력은 4번에 한정한다. 5~20번은 파일 기술 검사 범위다. 기존 생성 STYLE/EXCLUDE 중 확인되지 않은 부분은 `Final Track Sources`에서 확인된 사실처럼 쓰지 않는다.
+
+## 이전 입력·제작 체크포인트 (당시 기록)
+
 현재 선택 음원 입력 20/20: [ID·해시·길이 대조](input/validation/2026-10-22-selected-audio-capture/selected-20-final-ingest-check.json)를 마쳤다. 공식 다운로드 3곡·앱 내부 녹음 17곡이며 실제 입력 합계는 3,874.85초다. 17번 「새 잎」은 [정상 retry1](input/validation/2026-10-22-selected-audio-capture/17-retry1-ingest-verification.json)을 사용하고 처음 실패 raw는 보존했다. 20번의 float32 최고값 초과 2샘플은 연속 평탄 파형이 없어 그 자체로 소리 잘림 확정이 아니다. 젠의 전곡 청취 통과는 4번만 확인됐고 5~20번은 기술 검사 범위다. 전체 pack·영상·업로드와 YouTube 제목 승인은 아직 없다.
 17번 재생 대조 완료: 같은 선택 ID의 Suno 화면 90.316878→110.554017초에서 별도 [짧은 캡처](input/validation/2026-10-22-selected-audio-capture/17-seek90-comparison.json)에 신호가 기록됐다. 첫 녹음의 후반 무음은 원곡 해당 구간 전체의 무음과 맞지 않지만 원인은 미확인이다. 젠 승인 전곡 retry1은 검사 대기이며 정식 WAV는 16/20곡이다.
 이전 단계(17번 재시도 진행 당시): 젠의 “재시도해봐” 지시로 별도 담당자가 맥 음소거 설정을 바꾸지 않고 17번 「새 잎」을 새 retry1 원시로 0초부터 다시 녹음한다. 기존 중도 무음 원시는 보존한다. 새 원시의 선택 ID·UI 전체 길이·약56초 이후 후반 신호·끝 경계를 확인하기 전에는 정식 입력으로 등록하지 않는다. 로컬 선택 WAV는 **16/20곡**, 18~20번 대기이며 전체 영상·업로드와 YouTube 제목 승인은 아직 없다.
@@ -17,9 +25,9 @@ Date: 2026-10-21 · Updated: 2026-10-22
 최종 순서 재조정 완료: 젠의 “순서바꾼거맞지?유사한스타일최대한안이어지게” 요청 뒤 첫 배치의 1–2·10–11·19–20번에 같은 Modern R&B 커버 템플릿이 연속한 점을 화면 표시 스타일로 확인했다. 젠은 “이 노래 끝날 때까지를2번으로우리행복하자를4번으로해줘.”, “이변경으로인해일부스타일연속되는건허용할게.”라고 고정했다. 원번호 20 「오늘의 기록」은 1번, 원번호 13 「이 노래 끝날 때까지」는 2번, 원번호 19 「우리 행복하자」는 4번이다. 최종 원번호 배열은 **20, 13, 1, 19, 2, 7, 11, 6, 5, 10, 8, 3, 12, 9, 14, 16, 17, 4, 18, 15**다. [최종 조정 기록](input/validation/2026-10-22-sequence-final-adjustment/summary.json)에서 같은 20 ID의 Suno 제목 번호와 비공개 재생목록 `Default` 순서를 다시 열어 확인했다. 작업 공간 행 정렬·목록 공개·곡 생성·곡 삭제는 이번 조정에서 0회다. 화면상 원번호 13은 Rhodes, 19는 클라비넷 리드로 묘사되지만 실제 제출 STYLE/EXCLUDE와 직접 Cover 부모는 미확인이다. 이는 화면 설명 기반 편성이며 전곡 음원을 재청취해 청감 거리를 측정한 결과가 아니다.
 첫 배치 이력: 젠이 20곡을 듣고 “좋아 모두 통과.”라고 판단했다. 원번호 10은 새 가사 3:08 버전 `af9af447-7ed3-4f31-84fd-b5be0c8fb504`를 골랐다. 2026-10-22 16:29 KST 필터 화면의 고유 ID 20개를 각각 목표 번호 제목으로 한 번씩 저장해 제목 불일치 0건을 확인했다. 별도로 비공개 재생목록 「기분좋아져라」에 같은 ID 20개를 1~20번 순서로 담았고, 다시 열어도 순서가 유지됐다. 작업 공간 행 순서를 변경했다는 뜻은 아니다. 175 BPM·보컬·기술 품질을 독립 측정하거나 최종 발매 승인한 기록은 없다. 첫 8곡 A/B 16개, 7·10·15 후속 A/B 6개, 15:35 필터 26개는 각각 과거 시점의 생성·관찰 이력이다.
 
-## YouTube Draft (2026-10-22 · 제목 승인 및 실제 챕터 대기)
+## YouTube Draft (2026-10-22 · 제목 승인 대기 / 실제 챕터 반영)
 
-이 절은 제작용 초안이다. 아래 제목 전체를 젠에게 확인 요청했으며 **아직 승인받지 않았다**. `output/report.json`이 없으므로 실제 시작 시각과 반복 구간의 챕터는 작성하지 않았다. 20곡의 번호·제목·선택 ID는 [현행 재생 순서](input/playback-order.json)를 따른다. 설명에 챕터를 넣을 때는 실제 렌더 보고서의 시작 시각을 사용하고 사람용 번호는 `1.`~`20.`처럼 앞의 0 없이 적는다. 승인 전 업로드는 진행하지 않는다.
+이 절은 제작용 초안이다. 아래 제목 전체를 젠에게 확인 요청했으며 **아직 승인받지 않았다**. `output/report.json`의 실제 20곡×2회 시작 시각으로 아래 40개 챕터를 작성했다. 20곡의 번호·제목·선택 ID는 [현행 재생 순서](input/playback-order.json)를 따른다. 설명에 챕터를 넣을 때는 실제 렌더 보고서의 시작 시각을 사용하고 사람용 번호는 `1.`~`20.`처럼 앞의 0 없이 적는다. 승인 전 업로드는 진행하지 않는다.
 
 ### Context Mode
 
@@ -45,12 +53,59 @@ Playlist | 기분좋아져라 🍊 | MODERN R&B · NEO SOUL | 기분전환 · �
 작은 설렘과 일상의 웃음, 기분을 다시 띄우는 후렴을 따라
 한 곡씩 듣다 보면 마음이 조금 가벼워지길 바라요.
 
+──────────────
+🎵 Track List
+00:00 - 1. 오늘의 기록
+03:16 - 2. 이 노래 끝날 때까지
+06:36 - 3. 첫 페이지
+09:44 - 4. 우리 행복하자
+13:05 - 5. 오래된 농담
+16:26 - 6. 내일 뭐 해
+19:50 - 7. 종이비행기
+22:57 - 8. 빵집 앞에서
+26:10 - 9. 잘 익은 하루
+29:28 - 10. 계단 끝에서
+32:35 - 11. 메모 한 장
+35:41 - 12. 새 신발
+39:12 - 13. 유리컵의 햇빛
+42:19 - 14. 먼저 건넨 말
+45:21 - 15. 작은 용기
+48:28 - 16. 돌아가는 길
+51:35 - 17. 새 잎
+54:39 - 18. 반대편 창가
+57:57 - 19. 나란히 걷자
+01:01:00 - 20. 웃음의 순서
+
+🔁 Repeat
+01:04:19 - 1. 오늘의 기록 (반복)
+01:07:35 - 2. 이 노래 끝날 때까지 (반복)
+01:10:54 - 3. 첫 페이지 (반복)
+01:14:03 - 4. 우리 행복하자 (반복)
+01:17:24 - 5. 오래된 농담 (반복)
+01:20:45 - 6. 내일 뭐 해 (반복)
+01:24:09 - 7. 종이비행기 (반복)
+01:27:16 - 8. 빵집 앞에서 (반복)
+01:30:29 - 9. 잘 익은 하루 (반복)
+01:33:47 - 10. 계단 끝에서 (반복)
+01:36:54 - 11. 메모 한 장 (반복)
+01:40:00 - 12. 새 신발 (반복)
+01:43:31 - 13. 유리컵의 햇빛 (반복)
+01:46:38 - 14. 먼저 건넨 말 (반복)
+01:49:40 - 15. 작은 용기 (반복)
+01:52:46 - 16. 돌아가는 길 (반복)
+01:55:54 - 17. 새 잎 (반복)
+01:58:58 - 18. 반대편 창가 (반복)
+02:02:15 - 19. 나란히 걷자 (반복)
+02:05:19 - 20. 웃음의 순서 (반복)
+
+──────────────
 Music for your space, 24 hours a day.
 All tracks feature Korean lyrics.
 
 🎵 Music: Wavvy
 Copyright Ⓒ Wavvy. All rights reserved.
 
+──────────────
 #modernrnb #neosoul #기분전환 #드라이브음악 #한국어가사
 #playlist #플리 #wavvy #웨이비
 ```
@@ -176,3 +231,1986 @@ modern rnb, modern r&b, neo soul, korean rnb, korean neo soul, feel good rnb, af
 - 20곡 원문·가사 검토 자료는 [독립 검토 기록](../../.ai/reviews/2026-10-21-0630-source-review.md)상 CLEAN/PASS다. 이 판정은 실제 음원 품질이나 BPM 인증이 아니다.
 - 당시 별도 브라우저 작업자는 `[06:30]` 작업 공간에서 01 원문 입력과 화면 표시 길이 3:18을 확인하고 Create를 **1회** 눌렀다. 이후 Cloudflare “사람인지 확인하십시오”가 나타났고 Create는 회전 로딩 중이었다. 당시 표시 크레딧은 2636으로 변하지 않았고 작업 공간에는 곡 0개였다. 그 시점에는 첫 요청의 서버 수락과 후보 ID를 확인하지 못했다. 자동 인증·우회·재클릭은 하지 않았다.
 - 당시에는 젠에게 사용자 직접 인증 완료를 요청하고, 기존 01 요청의 후보 ID·크레딧부터 확인해 중복 Create를 막는 절차를 적었다. 이후 수락 결과는 위 현행 기록에 반영됐다.
+
+## Final Track Sources
+
+> Generated by `wavvy.py finalize-upload` at 2026-10-22T21:52:11.
+> Source origin: `filesystem`. `Source Checksum` is SHA-256 of the source txt content.
+
+### 01. 오늘의 기록
+
+- Timestamp: 00:00
+- Repeat Timestamp: 01:04:19
+- Filename: `01__오늘의 기록__Bright__Modern R&B__NA.wav`
+- Title: 오늘의 기록
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `3eba557ff6caee2361922c2b35693c651bf699438fb2243786ba6cae24dc4e7d`
+- Source Title: 오늘을 남겨
+- Source Checksum: `eec22426ef750e53540639a65c9dea52003f70d609cdbe59a5d35fb0838ad4cf`
+- Original Source Order: 20
+- Selected Candidate ID: `08d90306-9cf5-43f2-8fad-df2d4d2adae8`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-20.json` (exact)
+- Historical Source: `input/tracks/20_오늘을 남겨.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+하루가 다 지나갈 때
+달력의 빈칸을 찾아봐
+적어 둘 만한 일이 없나
+잠깐 생각해 보다가
+작은 글씨로 한 줄 써
+
+[Pre-Chorus]
+점심에 마신 차가 좋았어
+그 정도면 충분하지
+
+[Chorus] [Strong high chest-mix belt]
+오늘을 조금 남겨 둘게
+다 외우고 싶진 않아도
+나중에 이 글을 읽으면
+그때의 웃음은 알겠지
+
+[Instrumental]
+
+[Verse 2]
+동료가 건넨 짧은 농담
+나 혼자 오래 웃었지
+집에 오는 길엔 친구가
+안부를 물어 와서
+잠깐 서서 답장을 했어
+
+[Chorus] [Strong high chest-mix belt]
+오늘을 조금 남겨 둘게
+다 외우고 싶진 않아도
+나중에 이 글을 읽으면
+그때의 웃음은 알겠지
+
+[Instrumental]
+
+[Verse 3]
+오늘 다 좋았던 건 아냐
+지친 순간도 분명 있어
+그런데 하루를 떠올리면
+먼저 생각나는 장면이
+하나쯤은 남아 있어
+
+[Bridge]
+달력을 제자리에 두고
+불을 끄기 전에 웃어
+내일은 내일 적을게
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+오늘을 조금 남겨 뒀어
+다 외우고 싶진 않아도
+나중에 이 글을 읽으면
+내가 웃던 밤을 알겠지
+
+[Outro]
+```
+
+### 02. 이 노래 끝날 때까지
+
+- Timestamp: 03:16
+- Repeat Timestamp: 01:07:35
+- Filename: `02__이 노래 끝날 때까지__Bright__Modern R&B__NA.wav`
+- Title: 이 노래 끝날 때까지
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `c0d1dafc519238e350669e989d936a642ee8ccb48e1ce52215815507aa3884cb`
+- Source Title: 옆자리의 노래
+- Source Checksum: `9a5a98e27f42eda12286df412e6c170a9e5d2234a54bc7e3fc4c3ee7fdfaef64`
+- Original Source Order: 13
+- Selected Candidate ID: `e4841985-ad4c-48db-9389-82eba13b7b7f`
+- Lyrics Evidence: `input/validation/2026-10-22-publish-selected-20/02-current-lyrics.json` (bracket_label_line_break_only)
+- Historical Source: `input/tracks/13_옆자리의 노래.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+[Instrumental]
+
+[Verse 1]
+버스 옆자리에 앉아
+나는 이어폰을 찾는데
+네 쪽에서 익숙한 노래
+작게 흘러나왔어
+시끄럽지 않냐고 네가 묻고
+나는 좋다며 웃었어
+
+[Pre-Chorus]
+같은 부분을 좋아한단 말
+이상하게 반가웠어
+
+[Chorus] [Strong high chest-mix belt]
+이 노래 끝날 때까지
+내 옆에 앉아 줄래
+내릴 곳을 알고 있는데
+조금 더 같이 듣고 싶어
+
+[Instrumental] [Rhodes reply]
+
+[Verse 2]
+넌 이어폰 한쪽을 빼고
+다음 곡도 들어 보래
+익숙하지 않은 멜로디에
+네가 먼저 박자를 타
+나는 창밖을 보다가
+슬쩍 네 손을 따라 해
+
+[Chorus] [Strong high chest-mix belt]
+이 노래 끝날 때까지
+내 옆에 앉아 줄래
+내릴 곳을 알고 있는데
+조금 더 같이 듣고 싶어
+
+[Instrumental] [Rhodes reply]
+
+[Verse 3]
+네가 먼저 내려야 해서
+이어폰을 돌려줬어
+다음에 또 듣자고 하며
+넌 내 번호를 물었고
+문이 닫히자마자 온 문자
+나도 바로 답장을 해
+
+[Bridge]
+아직 이름 옆에 적힌
+말은 짧은 인사뿐인데
+다시 버스 탈 시간이
+벌써 기다려져
+
+[Final Chorus] [Strong high chest-mix belt]
+이 노래 끝날 때까지
+다음엔 옆에 앉아 줄래
+그때는 내가 좋아하는
+노래도 들려줄게
+
+[Outro] [Instrumental]
+```
+
+### 03. 첫 페이지
+
+- Timestamp: 06:36
+- Repeat Timestamp: 01:10:54
+- Filename: `03__첫 페이지__Bright__Modern R&B__NA.wav`
+- Title: 첫 페이지
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `7b03c28cdbf7e1de74db7436790588e51810fd495019856e275e88fbd9784579`
+- Source Title: 첫 페이지
+- Source Checksum: `73ccb4c7752ffbfd3f1f3e1aa87280abc26c1d093dcd537e59ac6857cd2d6085`
+- Original Source Order: 1
+- Selected Candidate ID: `ddd6c7e9-5d64-48ae-8d41-aa674754d1ad`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-01.json` (exact)
+- Historical Source: `input/tracks/01_첫 페이지.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+새 노트를 꺼내 놓고
+한참 표지만 만졌어
+처음 적을 한마디가
+괜히 어려워 보여
+연필 끝을 돌리다가
+오늘 날짜부터 썼어
+
+[Pre-Chorus]
+정답 같은 문장보다
+내가 본 걸 적을래
+손에 묻은 연필 자국
+그것도 괜찮아
+
+[Chorus]
+첫 페이지를 넘겨
+서툰 글씨도 데리고
+말이 되는 날까지
+한 줄씩 더 써 볼게
+
+[Instrumental]
+
+[Verse 2]
+첫 줄은 삐뚤어져서
+지울까 잠깐 멈췄어
+그러다 그 옆에 그냥
+생각나는 말을 써
+창밖에서 들린 웃음도
+작은 글씨로 남겼어
+
+[Pre-Chorus]
+정답 같은 문장보다
+내가 본 걸 적을래
+손에 묻은 연필 자국
+그것도 괜찮아
+
+[Chorus]
+첫 페이지를 넘겨
+서툰 글씨도 데리고
+말이 되는 날까지
+한 줄씩 더 써 볼게
+
+[Verse 3]
+페이지가 반쯤 찰 때
+처음 줄을 다시 봤어
+아까는 낯설던 글씨가
+이제는 내 것 같아
+다음 장을 넘기면서
+빈 곳을 조금 남겨 둬
+
+[Bridge]
+끝을 미리 정하지 않아도
+이야기는 계속돼
+가만히 들여다보니
+다음 말이 떠올라
+
+[Final Chorus]
+첫 페이지를 넘겨
+서툰 글씨도 데리고
+말이 되는 날까지
+한 줄씩 더 써 볼게
+
+[Outro] [Instrumental]
+```
+
+### 04. 우리 행복하자
+
+- Timestamp: 09:44
+- Repeat Timestamp: 01:14:03
+- Filename: `04__우리 행복하자__Bright__Modern R&B__NA.wav`
+- Title: 우리 행복하자
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `774d3b4e79c33b325701cacacee755ce0c3df0aca861f3f1bb2bad150440c3c9`
+- Source Title: 작은 파티
+- Source Checksum: `3c74dca9e072cd110ca809e3e4974447e70f77a197a6b65bc45aece54e26e217`
+- Original Source Order: 19
+- Selected Candidate ID: `810a0d51-39e5-460c-ae78-ed3a8181837b`
+- Lyrics Evidence: `input/validation/2026-10-22-sequence-preflight/10-our-happiness-displayed-lyrics.txt` (exact)
+- Historical Source: `input/tracks/19_작은 파티.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+오늘 다들 시간이 맞아
+친구들이 우리 집에 와
+나는 케이크를 살까 하다
+귤 한 봉지를 꺼내 놔
+생일도 아닌데 왜 모였냐며
+현관에서 한참 웃어
+
+[Pre-Chorus]
+각자 잔을 찾아 들고
+오늘을 위해 건배해
+
+[Chorus] [Strong high chest-mix belt]
+우리 행복하자
+이런 날을 자주 만들자
+별일 없는 하루에도
+서로를 축하하자
+우리 행복하자
+
+[Instrumental] [Clavinet reply]
+
+[Verse 2]
+누군가는 이직 첫날을
+무사히 마쳤다고 하고
+누군가는 밀린 빨래를
+다 끝냈다고 자랑해
+우리는 그 말에도 잔을 들어
+그게 왜 웃긴지 또 웃어
+
+[Chorus] [Strong high chest-mix belt]
+우리 행복하자
+이런 날을 자주 만들자
+별일 없는 하루에도
+서로를 축하하자
+우리 행복하자
+
+[Instrumental] [Clavinet reply]
+
+[Verse 3]
+귤을 다 까먹을 즈음
+친구 하나가 사진을 찍어
+눈을 감은 사람이 있어도
+다시 찍지 말자고 해
+그 얼굴이 우리 같아서
+사진을 나눠 갖기로 해
+
+[Bridge]
+돌아갈 때 문 앞에서
+다음엔 우리 집으로 와
+그 말이 그냥 인사가 아니라
+약속이 되면 좋겠어
+
+[Final Chorus] [Strong high chest-mix belt]
+우리 행복하자
+다음에도 잔을 들자
+별일 없는 하루에도
+서로를 축하하자
+우리 행복하자
+
+[Outro] [Instrumental]
+```
+
+### 05. 오래된 농담
+
+- Timestamp: 13:05
+- Repeat Timestamp: 01:17:24
+- Filename: `05__오래된 농담__Bright__Modern R&B__NA.wav`
+- Title: 오래된 농담
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `81e6300528d30b8bcb28ce550c4fc8cf153b443375e9e7aa860593818fc027fd`
+- Source Title: 오래된 농담
+- Source Checksum: `c8627796f410bf31234d86e9454588810e68887823ea41cd16b34a8b876fa3f5`
+- Original Source Order: 2
+- Selected Candidate ID: `d6801b81-e1bd-4272-b806-6445b86d6d80`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-02.json` (exact)
+- Historical Source: `input/tracks/02_오래된 농담.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+네 이름이 뜬 화면에
+벌써 웃음이 났어
+받자마자 넌 대뜸
+옛 별명부터 불러
+그걸 아직 기억하냐고
+내가 웃으며 물었지
+
+[Pre-Chorus]
+몇 해가 지나도
+그 말은 그대로야
+설명할 필요 없이
+둘 다 아는 웃음
+
+[Chorus]
+또 그 농담을 해
+이번엔 내가 먼저 웃어
+오래된 한마디가
+오늘을 새롭게 해
+
+[Instrumental]
+
+[Verse 2]
+카페 앞에 마주 서서
+서로 얼굴을 봤어
+한동안 못 봤는데도
+말끝이 똑같아서
+주문하던 직원까지
+우리 따라 웃었어
+
+[Pre-Chorus]
+몇 해가 지나도
+그 말은 그대로야
+설명할 필요 없이
+둘 다 아는 웃음
+
+[Chorus]
+또 그 농담을 해
+이번엔 내가 먼저 웃어
+오래된 한마디가
+오늘을 새롭게 해
+
+[Verse 3]
+헤어질 때 넌 또 한 번
+그 별명으로 날 불러
+이번엔 고개 안 돌리고
+큰 소리로 대답해
+다음에 만나기 전까지
+새 농담도 하나 골라 둬
+
+[Bridge]
+돌아서는 길에서도
+입가에 남아 있어
+별것 아닌 말 하나
+이렇게 오래 가네
+
+[Final Chorus]
+또 그 농담을 해
+이번엔 내가 먼저 웃어
+오래된 한마디가
+오늘을 새롭게 해
+
+[Outro] [Instrumental]
+```
+
+### 06. 내일 뭐 해
+
+- Timestamp: 16:26
+- Repeat Timestamp: 01:20:45
+- Filename: `06__내일 뭐 해__Bright__Modern R&B__NA.wav`
+- Title: 내일 뭐 해
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: Bb Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Female solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `0cb5f46a551c58034a4c3645b44f214510e25c94a613f18c648e134e678d34da`
+- Source Title: 내일 뭐 해
+- Source Checksum: `3e3123fca263f07909a8c82cc3ac287eb57d00a832aeac157322c667397be576`
+- Original Source Order: 7
+- Selected Candidate ID: `e5a369a1-10a0-4fde-8c27-791c31ceb0f1`
+- Lyrics Evidence: `input/validation/2026-10-22-track-07-concept-rewrite/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/07_접힌 지도.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean R&B with a neo-soul pocket in Bb Major; exact, constant 175 BPM for the whole song. A close nylon-string guitar leads with nimble plucked syncopations and short melodic answers, above rounded bass and tight drums. Keep the guitar unmistakably in front of the instrumental arrangement. One clear female solo chest-voice sings Korean close and dry with no vocal reverb or room sound. Let a few phrases sit lightly behind the beat while the tempo remains fixed; open the chorus through bass and guitar. Aim beyond three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, Rhodes lead, airy vocals, falsetto, harmonies, backing vocals, vocal reverb, room ambience
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+오늘 네가 보낸 사진
+이번 주에 끝나는 전시
+가 보고 싶다던 말에
+나도 그랬다고 답했어
+한참 다른 얘길 하다
+손끝에서 말이 멈춰
+
+[Pre-Chorus]
+평소엔 쉽게 하던 질문
+오늘은 왜 망설여질까
+
+[Chorus]
+내일 뭐 해
+괜찮으면 같이 갈래
+네가 말한 그 전시를
+이번엔 같이 보고 싶어
+내일 뭐 해
+
+[Instrumental] [Nylon guitar reply]
+
+[Verse 2]
+그 말을 보내 놓고
+평소처럼 밥을 차려
+국을 한술 뜨다가도
+몇 번이나 화면을 봐
+바쁘면 다음에 가도 돼
+그런데 내일이면 좋겠어
+
+[Chorus]
+내일 뭐 해
+괜찮으면 같이 갈래
+네가 말한 그 전시를
+이번엔 같이 보고 싶어
+내일 뭐 해
+
+[Instrumental] [Nylon guitar reply]
+
+[Verse 3]
+저녁을 다 먹을 즈음
+"좋아, 몇 시가 편해?"
+네 답이 도착했어
+나는 두 시쯤 좋겠다고
+바로 보내고 나서
+혼자 좀 오래 웃었어
+
+[Bridge]
+잠들기 전에 다시
+약속한 시간을 확인해
+내일 먼저 도착해서
+널 기다리고 싶어
+
+[Final Chorus]
+내일 뭐 해
+묻기를 잘했다 싶어
+네가 말한 그 전시가
+이제 우리 약속이 됐어
+내일 봐
+
+[Outro] [Instrumental]
+```
+
+### 07. 종이비행기
+
+- Timestamp: 19:50
+- Repeat Timestamp: 01:24:09
+- Filename: `07__종이비행기__Bright__Modern R&B__NA.wav`
+- Title: 종이비행기
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `dedf90d6f5be6544b1e437a609064d4b763fbf00e3364d25dcad067e93fd87c3`
+- Source Title: 종이비행기
+- Source Checksum: `58979f8826f8be769bdd1215625f554f9d5606b613f2e60df293e752d8599e50`
+- Original Source Order: 11
+- Selected Candidate ID: `e8d4cc0f-ab9c-49b2-a618-811bf917a38a`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-11.json` (exact)
+- Historical Source: `input/tracks/11_종이비행기.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+책상 서랍 맨 아래
+접어 둔 편지가 있어
+쓰던 날의 나는 벌써
+조금 낯설어졌는데
+봉투를 버리진 못했어
+
+[Pre-Chorus]
+꺼내서 다시 읽다가
+끝의 인사를 고쳤어
+
+[Chorus] [Strong high chest-mix belt]
+이 말을 이제 보내 볼게
+완벽하지 않아도 괜찮아
+접힌 자국이 남아 있어도
+네게 닿으면 좋겠어
+
+[Instrumental]
+
+[Verse 2]
+한참 전에 써 둔 말은
+지금의 나와 조금 달라
+모두 지우고 새로 쓰면
+또 하루를 미룰 것 같아
+한 줄만 더 보태 놓았어
+
+[Chorus] [Strong high chest-mix belt]
+이 말을 이제 보내 볼게
+완벽하지 않아도 괜찮아
+접힌 자국이 남아 있어도
+네게 닿으면 좋겠어
+
+[Instrumental]
+
+[Verse 3]
+봉투에 주소를 적고
+현관 앞에 서 있었어
+한 번 더 읽고 싶었지만
+그냥 우체통에 넣었어
+손이 빈 게 어색했어
+
+[Bridge]
+답장을 기다리는 동안
+나는 내 하루를 살게
+오늘은 보냈다는 걸로
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+이 말을 이제 보냈어
+완벽하지 않아도 괜찮아
+접힌 자국이 남아 있는
+내 마음까지 전했어
+
+[Outro]
+```
+
+### 08. 빵집 앞에서
+
+- Timestamp: 22:57
+- Repeat Timestamp: 01:27:16
+- Filename: `08__빵집 앞에서__Bright__Modern R&B__NA.wav`
+- Title: 빵집 앞에서
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: C Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Male solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `448d204fd8105628ad879fb32b5ec9d80681a000003d45b5c6e16bd69e522cef`
+- Source Title: 빵집 앞에서
+- Source Checksum: `87d2dff22b706a927bbe0f551de36d4bc50d8b90f8a0cc7dc6a1c2479376fdd4`
+- Original Source Order: 6
+- Selected Candidate ID: `5aa6b60e-e108-4116-b541-a64c275a3676`
+- Lyrics Evidence: `input/validation/2026-10-22-eight-song-generation/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/06_빵집 앞에서.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean neo-soul and R&B in C Major, steady 175 BPM from intro to outro. Rhodes leads with a warm, nimble figure; rounded bass and crisp restrained drums leave conversational gaps. One male solo chest-voice sings clear Korean very close and dry, with no vocal reverb or room sound. Place a few vocal pickups gently behind the beat without slowing the pulse. Let Rhodes answer the pauses and widen the chorus chords around the same singular lead. Target a little over three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, airy vocals, falsetto, harmonies, backing vocals, vocal reverb, room ambience
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+빵집 앞에 줄을 서면
+늘 네가 먼저 와 있어
+오늘은 뭘 고를 거냐고
+네가 웃으며 묻길래
+나는 아직 못 정했다고
+메뉴판을 다시 봐
+
+[Pre-Chorus]
+뒤에 사람이 늘어나도
+대답이 자꾸 늦어져
+
+[Chorus]
+내일도 여기서 볼래
+빵 하나 고르는 동안
+네 얘길 더 듣고 싶어
+내일은 내가 먼저 올게
+
+[Instrumental] [Rhodes reply]
+
+[Verse 2]
+네가 좋아한다던 빵이
+막 나왔다는 말을 듣고
+뜨거운 봉투를 받아
+먼저 네 손에 쥐여 줘
+반으로 나눠 먹자면서
+넌 내 자리도 남겨 둬
+
+[Chorus]
+내일도 여기서 볼래
+빵 하나 고르는 동안
+네 얘길 더 듣고 싶어
+내일은 내가 먼저 올게
+
+[Instrumental] [Rhodes reply]
+
+[Verse 3]
+오늘은 줄이 짧아서
+금방 계산을 마쳤는데
+우리 둘 다 나가지 않고
+가게 앞에 서 있었어
+다음엔 커피도 마실래
+네가 먼저 말을 꺼내
+
+[Bridge]
+별일 아닌 질문인데
+집에 와서도 생각나
+내일 고를 빵보다
+만날 시간이 기다려져
+
+[Final Chorus]
+내일도 여기서 볼래
+빵 하나 고르는 동안
+네 얘길 더 듣고 싶어
+커피는 내가 사 올게
+
+[Outro] [Instrumental]
+```
+
+### 09. 잘 익은 하루
+
+- Timestamp: 26:10
+- Repeat Timestamp: 01:30:29
+- Filename: `09__잘 익은 하루__Bright__Modern R&B__NA.wav`
+- Title: 잘 익은 하루
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `fcffff8267126cfd6f175dab97167f15073068da72a48af3816c0c104485506b`
+- Source Title: 잘 익은 하루
+- Source Checksum: `51598d2f1421f74ccaddef28d47f85fbd2fe26e155ad30bf228f6661f4d290ba`
+- Original Source Order: 5
+- Selected Candidate ID: `2650ca9a-2e51-4621-b508-cc87cfecd0b1`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-05.json` (exact)
+- Historical Source: `input/tracks/05_잘 익은 하루.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+서두르다 내려놓은
+우산을 다시 챙겼어
+문을 나서자마자
+비가 살짝 시작돼
+가방 속에 있는 게
+오늘따라 참 다행이야
+
+[Pre-Chorus]
+크고 멋진 일 없이도
+기분이 꽤 좋아
+한 가지씩 제자리에
+놓인 것 같은 날
+
+[Chorus]
+잘 익은 하루야
+천천히 맛을 볼래
+작은 일들이 모여
+내 입가를 올려
+
+[Instrumental]
+
+[Verse 2]
+점심 줄이 길었지만
+마지막 빵이 남았어
+반을 떼어 건네자
+옆자리도 웃었지
+꼭 맞아떨어진 하루
+그냥 운이 좋은가 봐
+
+[Pre-Chorus]
+크고 멋진 일 없이도
+기분이 꽤 좋아
+한 가지씩 제자리에
+놓인 것 같은 날
+
+[Chorus]
+잘 익은 하루야
+천천히 맛을 볼래
+작은 일들이 모여
+내 입가를 올려
+
+[Verse 3]
+저녁엔 늦을 줄 알던
+친구가 먼저 와 있어
+괜찮아, 네가 늘 했던
+그 말을 내가 돌려줘
+마주 앉아 천천히
+남은 얘길 다 들어
+
+[Bridge]
+내일은 또 어떨지 몰라
+그래도 지금은 좋아
+서둘러 넘기지 않고
+이 장면에 좀 더 있어
+
+[Final Chorus]
+잘 익은 하루야
+천천히 맛을 볼래
+작은 일들이 모여
+내 입가를 올려
+
+[Outro] [Instrumental]
+```
+
+### 10. 계단 끝에서
+
+- Timestamp: 29:28
+- Repeat Timestamp: 01:33:47
+- Filename: `10__계단 끝에서__Bright__Modern R&B__NA.wav`
+- Title: 계단 끝에서
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: A Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Male solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `7268ac45788fef44c2d7548ccc5332c3004ca93e16e8cdb7b179971e6ef9014a`
+- Source Title: 계단 끝에서
+- Source Checksum: `ce019dd7185598c89b790a2d6760d2086fd314bbdbcd1a710498ff991ddd2e32`
+- Original Source Order: 10
+- Selected Candidate ID: `af9af447-7ed3-4f31-84fd-b5be0c8fb504`
+- Lyrics Evidence: `input/validation/2026-10-22-track-10-lyric-rewrite/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/10_계단 끝에서.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean R&B and neo-soul in A Major at an exact, unchanging 175 BPM. A clean electric guitar leads the clipped syncopated riff and answers the vocal, with round bass and a tight dry drum pocket. No Rhodes-centered part. One clear male solo chest-voice delivers precise Korean close and dry, without vocal reverb or room sound. Keep verses conversational; each chorus rises to a strong, lucid high chest-mix belt without doubles. Slightly laid-back phrases sit against the fixed beat. Let the guitar answer after the hook; target over three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, Rhodes lead, distorted guitars, airy vocals, falsetto, harmonies, backing vocals, vocal reverb
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+사무실 문을 닫고
+지하철에 올라탔어
+내일 해야 할 일을
+또 속으로 세다가
+우리 동네 역 이름이 들려
+자리에서 일어났어
+
+[Pre-Chorus]
+개찰구를 지나
+계단 앞에 섰어
+
+[Chorus] [Strong high chest-mix belt]
+오늘은 여기까지
+남은 일은 내일 하자
+계단 끝에 올라서니
+밤바람이 얼굴에 닿아
+오늘은 여기까지
+
+[Instrumental] [Clean guitar reply]
+
+[Verse 2]
+큰길 앞 신호를 기다려
+옆에는 퇴근한 사람들
+파란 불이 켜지면
+다 같이 길을 건너
+이어폰을 귀에 꽂고
+듣고 싶던 노래를 틀어
+
+[Chorus] [Strong high chest-mix belt]
+오늘은 여기까지
+남은 일은 내일 하자
+계단 끝에 올라서니
+밤바람이 얼굴에 닿아
+오늘은 여기까지
+
+[Instrumental] [Clean guitar reply]
+
+[Verse 3]
+집 앞 골목에 들어서
+불 켜진 가게를 지나
+현관문을 열고 들어
+가방을 바닥에 놔
+신발까지 벗어 놓고
+잠깐 아무것도 안 해
+
+[Bridge]
+아직 할 일이 있긴 해
+메모에 적어 뒀으니
+물 한 잔을 따라 마시고
+창문을 조금 열어
+
+[Final Chorus] [Strong high chest-mix belt]
+오늘은 여기까지
+남은 일은 내일 하자
+켜 둔 불 아래 앉아서
+노래를 조금 더 들어
+오늘은 여기까지
+
+[Outro] [Instrumental]
+```
+
+### 11. 메모 한 장
+
+- Timestamp: 32:35
+- Repeat Timestamp: 01:36:54
+- Filename: `11__메모 한 장__Bright__Modern R&B__NA.wav`
+- Title: 메모 한 장
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `22faa9462d2af653d7e8cdb2123adfb4746462e42aa50106957490a41dc44f29`
+- Source Title: 메모 한 장
+- Source Checksum: `575a0433a2194fb34ddcef7cb654b33947ba4700b56738509d02a0ff04265511`
+- Original Source Order: 8
+- Selected Candidate ID: `a6c208ae-fb73-409e-a4a4-c9adc338bc47`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-08.json` (exact)
+- Historical Source: `input/tracks/08_메모 한 장.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+책 사이에서 떨어진
+작게 접힌 메모 한 장
+언젠가 배우고 싶던
+수영장 주소가 있어
+누가 적었나 했더니
+끝에 내 글씨가 보여
+
+[Pre-Chorus]
+까맣게 잊은 줄 알던
+내 마음이 여기 있어
+접힌 선을 펴 보니
+말이 다시 읽혀
+
+[Chorus]
+메모 한 장을 펴서
+그 주소를 다시 봐
+미뤄 둔 내 마음이
+아직 여기 남았어
+
+[Instrumental]
+
+[Verse 2]
+번호를 눌렀다 지웠다
+한동안 망설였어
+그러다 안내 시간을
+달력 옆에 옮겨 적어
+첫날엔 구경만 해도
+괜찮다고 말해 줘
+
+[Pre-Chorus]
+까맣게 잊은 줄 알던
+내 마음이 여기 있어
+접힌 선을 펴 보니
+말이 다시 읽혀
+
+[Chorus]
+메모 한 장을 펴서
+그 주소를 다시 봐
+미뤄 둔 내 마음이
+아직 여기 남았어
+
+[Verse 3]
+물가에 발을 담그고
+메모 쓰던 나를 떠올려
+별것 아닌 한 줄인데
+여기까지 오게 했어
+집에 가면 다음 장에
+또 하고 싶은 걸 적을래
+
+[Bridge]
+잘할 수 있느냐보다
+들어가 보고 싶어
+그 생각 하나만으로
+발을 물에 넣었어
+
+[Final Chorus]
+메모 한 장을 펴서
+그 주소를 다시 봐
+미뤄 둔 내 마음이
+아직 여기 남았어
+
+[Outro] [Instrumental]
+```
+
+### 12. 새 신발
+
+- Timestamp: 35:41
+- Repeat Timestamp: 01:40:00
+- Filename: `12__새 신발__Bright__Modern R&B__NA.wav`
+- Title: 새 신발
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: A Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Female solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `8954444c2d2814c7437a6e366ccbeb29ea38983e3687affe16de10785f7068eb`
+- Source Title: 새 신발
+- Source Checksum: `8b0ff6f1197517ba37ed18107b4a7ef1790bbc8d66d2bfbd4f34b18ea3ba4a86`
+- Original Source Order: 3
+- Selected Candidate ID: `72dd15dd-00b7-445c-bfcc-7c07274ad588`
+- Lyrics Evidence: `input/validation/2026-10-22-eight-song-generation/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/03_새 신발.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean R&B and neo-soul in A Major at a fixed 175 BPM throughout. Rhodes plays the leading bright, syncopated motif; warm bass and tight kick-rim drums hold a buoyant 4/4 pocket. One clear female solo chest-voice lead sings close and dry with precise Korean consonants, no room sound or vocal reverb. A few phrases lean lightly behind the beat without changing tempo. Leave instrumental answers after vocal thoughts; broaden the chorus through bass and keys, keeping the single voice upfront. Aim for just over three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, airy vocals, falsetto, harmonies, backing vocals, vocal reverb, room ambience
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+새 신발 끈을 묶고
+현관 앞에 잠깐 서
+괜히 발끝만 내려다봐
+밖에 나갈 일이 없는데
+커피 한 잔 마시러
+모퉁이까지 가 볼까
+
+[Pre-Chorus]
+첫걸음은 좀 어색해
+그래도 문을 열어
+
+[Chorus]
+기분 좋아져라
+내 걸음 따라 좋아져라
+오늘이 별일 없어도
+나가면 뭐가 있겠지
+기분 좋아져라
+
+[Instrumental] [Rhodes reply]
+
+[Verse 2]
+횡단보도 앞에 서서
+구겨진 끈을 다시 매
+신호가 바뀌는 동안
+나도 모르게 웃음이 나
+커피집 창에 비친 내가
+아침보다 가벼워 보여
+
+[Chorus]
+기분 좋아져라
+내 걸음 따라 좋아져라
+오늘이 별일 없어도
+나가면 뭐가 있겠지
+기분 좋아져라
+
+[Instrumental] [Rhodes reply]
+
+[Verse 3]
+컵을 들고 돌아오는 길
+조금 더 멀리 걸어 봐
+익숙한 길 모퉁이에서
+새 가게가 눈에 들어와
+들어갈까 하다 말고
+내일 다시 와야지 해
+
+[Bridge]
+마음이 저절로 풀리는
+그런 날만 기다릴 순 없지
+끈을 묶고 나온 오늘이
+꽤 마음에 들어
+
+[Final Chorus]
+기분 좋아져라
+내 걸음 따라 좋아져라
+별일 없는 오늘에도
+좋아할 게 하나 생겼어
+기분 좋아져라
+
+[Outro] [Instrumental]
+```
+
+### 13. 유리컵의 햇빛
+
+- Timestamp: 39:12
+- Repeat Timestamp: 01:43:31
+- Filename: `13__유리컵의 햇빛__Bright__Modern R&B__NA.wav`
+- Title: 유리컵의 햇빛
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `1230d545e928760d04344e2ca84d6cc3203ce43a6bf5cc157be19f748560a5eb`
+- Source Title: 유리컵의 햇빛
+- Source Checksum: `0199a38c3d76fd27e90d83a33e076ddd618361ceef079317f15426e705605d6e`
+- Original Source Order: 12
+- Selected Candidate ID: `a9e25db7-3abb-4ed8-9892-e15253bc4ccb`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-12.json` (exact)
+- Historical Source: `input/tracks/12_유리컵의 햇빛.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+설거지를 끝내 놓고
+물 담은 컵을 창가에 뒀어
+아무 생각 없이 보다가
+손잡이에 빛이 걸려
+물 한 모금 더 마셨어
+
+[Pre-Chorus]
+라디오도 꺼 둔 채로
+조용한 집을 들었어
+
+[Chorus] [Strong high chest-mix belt]
+오늘은 이대로 좋아
+무언가 더 없어도 돼
+창가에 놓인 유리컵처럼
+그냥 여기 있으면 돼
+
+[Instrumental]
+
+[Verse 2]
+구겨진 행주를 펴고
+식탁 모서리를 닦아
+오래된 나무의 무늬가
+젖었다가 다시 말라
+별것 아닌데 오래 봤어
+
+[Chorus] [Strong high chest-mix belt]
+오늘은 이대로 좋아
+무언가 더 없어도 돼
+창가에 놓인 유리컵처럼
+그냥 여기 있으면 돼
+
+[Instrumental]
+
+[Verse 3]
+밖에서는 차가 지나고
+냉장고가 잠깐 울려
+내가 사는 작은 소리들
+한꺼번에 들려와서
+괜히 웃음이 났어
+
+[Bridge]
+손 닿는 곳에 컵을 두고
+식탁 의자에 앉았어
+서두를 일도 없는 오후
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+오늘은 이대로 좋아
+무언가 더 없어도 돼
+창가에 남은 작은 빛이
+내 방을 채우고 있어
+
+[Outro]
+```
+
+### 14. 먼저 건넨 말
+
+- Timestamp: 42:19
+- Repeat Timestamp: 01:46:38
+- Filename: `14__먼저 건넨 말__Bright__Modern R&B__NA.wav`
+- Title: 먼저 건넨 말
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `a61ff66f93b6474f602b23d93fb531475694e99707b3906c523dff38d5f6333e`
+- Source Title: 먼저 건넨 말
+- Source Checksum: `6d85ce10cef350d9dae4b3a341fa725f81838ced2506ae47a6816b284d4b8dcf`
+- Original Source Order: 9
+- Selected Candidate ID: `825e0bfc-a2cf-4892-b372-ded25c688eb8`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-09.json` (exact)
+- Historical Source: `input/tracks/09_먼저 건넨 말.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+복도 끝에 네가 보여
+괜히 휴대폰을 봤어
+지난번 어색한 말이
+자꾸 생각이 나서
+문 앞에서 숨을 고르고
+내가 먼저 이름 불러
+
+[Chorus]
+먼저 건넨 말 하나
+입 밖으로 내고 나니
+미뤄 둔 우리 사이에
+다시 길이 생겼어
+
+[Instrumental]
+
+[Verse 2]
+너는 잠깐 멈춰 서서
+괜찮냐고 되묻지
+나는 그날 내 말이
+좀 날카로웠다 했어
+넌 그때 바빴다고
+조용히 설명해 줬어
+
+[Chorus]
+먼저 건넨 말 하나
+입 밖으로 내고 나니
+미뤄 둔 우리 사이에
+다시 길이 생겼어
+
+[Instrumental]
+
+[Verse 3]
+점심 시간이 되자
+네가 내 자리를 찾아
+오늘 메뉴를 묻는 말
+예전처럼 가벼워
+같이 내려가는 동안
+우린 다른 얘길 해
+
+[Bridge]
+서로 말 못 한 사정이
+생각보다 가까웠네
+이번엔 듣고 나서
+내 얘기도 천천히 해
+
+[Final Chorus]
+먼저 건넨 말 하나
+입 밖으로 내고 나니
+미뤄 둔 우리 사이에
+다시 길이 생겼어
+
+[Outro] [Instrumental]
+```
+
+### 15. 작은 용기
+
+- Timestamp: 45:21
+- Repeat Timestamp: 01:49:40
+- Filename: `15__작은 용기__Bright__Modern R&B__NA.wav`
+- Title: 작은 용기
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `ada7d7bbe46fdbe47539e9fd34535f38a8dbac0474ab06dd28c248ee5cdc5d68`
+- Source Title: 작은 용기
+- Source Checksum: `534c1e03df47e5100572568d7af7a616c1a3a96af01533189c78a9f373b0b300`
+- Original Source Order: 14
+- Selected Candidate ID: `f737072d-2874-4b2e-802d-aee3975ed8a7`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-14.json` (exact)
+- Historical Source: `input/tracks/14_작은 용기.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+네 메시지를 읽고 나서
+답을 못 한 지 사흘째야
+그날은 내가 서둘러서
+끝까지 듣지 못했어
+뭐라고 써야 할지 몰라
+
+[Pre-Chorus]
+변명을 길게 적었다가
+모두 지우고 다시 써
+
+[Chorus] [Strong high chest-mix belt]
+그때 내 말이 너무 빨랐어
+네 얘기를 막아서 미안해
+답은 천천히 해도 좋아
+이번엔 내가 기다릴게
+
+[Instrumental]
+
+[Verse 2]
+보내기 전에 한 번 더
+문장을 소리 내 읽어
+예쁘게 말하려고 할수록
+진짜 할 말이 흐려져서
+짧은 그대로 눌러 보냈어
+
+[Chorus] [Strong high chest-mix belt]
+그때 내 말이 너무 빨랐어
+네 얘기를 막아서 미안해
+답은 천천히 해도 좋아
+이번엔 내가 기다릴게
+
+[Instrumental]
+
+[Verse 3]
+한참 뒤에 답이 왔어
+너도 마음이 무거웠대
+우린 모레 만나기로
+시간도 함께 정해 두고
+그날 일을 더 말하지 않아
+
+[Bridge]
+아직 풀어야 할 말은 있어
+그건 얼굴 보며 하자
+지금은 조금 편해졌어
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+그때 내 말이 너무 빨랐어
+이제는 끝까지 들을게
+모레 만나면 급하지 않게
+우리 얘기를 이어 가자
+
+[Outro]
+```
+
+### 16. 돌아가는 길
+
+- Timestamp: 48:28
+- Repeat Timestamp: 01:52:46
+- Filename: `16__돌아가는 길__Bright__Modern R&B__NA.wav`
+- Title: 돌아가는 길
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: D Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Male solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `0894780ec4e5f6d1c3feec25efafc682c11d7e9ebd023bfa376229f8df37905a`
+- Source Title: 돌아가는 길
+- Source Checksum: `59e8a0340f23e43213a9cc037457ccebcfc39af1724f4a7b072431a6e3e606de`
+- Original Source Order: 16
+- Selected Candidate ID: `7ec2b3ee-32fb-41ac-a89d-a36c48cc803f`
+- Lyrics Evidence: `input/validation/2026-10-22-eight-song-generation/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/16_돌아가는 길.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean neo-soul and R&B in D Major with an exact 175 BPM pulse that never slows. A short plucked synth motif is the clear instrumental lead, answering the vocal over nimble bass and tight dry drums; keep other keys as quiet support, with no Rhodes lead. One male solo chest-voice sings crisp Korean very close and dry, no vocal reverb or room ambience. The verses can place a few phrases lightly behind the fixed beat; each chorus opens into a strong clear high chest-mix belt from the same single voice. Give the synth space after each hook. Target over three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, Rhodes lead, airy vocals, falsetto, harmonies, backing vocals, vocal reverb, room ambience
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+역 앞에서 헤어질 때
+내가 먼저 손을 흔들어
+그런데 발이 안 떨어져
+너도 아직 그 자리에 서
+막차까진 시간이 있다며
+조금 걸을까 물었어
+
+[Pre-Chorus]
+가까운 길도 있는데
+우린 긴 쪽으로 돌아
+
+[Chorus] [Strong high chest-mix belt]
+조금만 더 걸을래
+오늘 얘긴 다 했지만
+네 목소리가 좋으니까
+집 앞까지 가고 싶어
+
+[Instrumental] [Plucked synth reply]
+
+[Verse 2]
+문 닫은 가게 앞에서
+넌 낮에 본 영화를 말해
+내가 놓친 장면 하나를
+손짓으로 보여 주다가
+둘이 동시에 같은 말을 해
+웃느라 잠깐 멈춰 서
+
+[Chorus] [Strong high chest-mix belt]
+조금만 더 걸을래
+오늘 얘긴 다 했지만
+네 목소리가 좋으니까
+집 앞까지 가고 싶어
+
+[Instrumental] [Plucked synth reply]
+
+[Verse 3]
+네 집이 저기 보인다고
+네가 손으로 가리켜
+나는 알면서도 일부러
+어느 건지 다시 물어
+금방 들킨 게 부끄러워
+우리 둘 다 웃어 버려
+
+[Bridge]
+다음에 만날 날짜를
+우린 걷다가 정하고
+이젠 정말 가야겠다며
+천천히 손을 놓아
+
+[Final Chorus] [Strong high chest-mix belt]
+조금만 더 걸을래
+다음에 만날 때에도
+멀리 돌아가는 길이
+너와 있으면 좋겠어
+
+[Outro] [Instrumental]
+```
+
+### 17. 새 잎
+
+- Timestamp: 51:35
+- Repeat Timestamp: 01:55:54
+- Filename: `17__새 잎__Bright__Modern R&B__NA.wav`
+- Title: 새 잎
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `73aaac5d45b6257c437d2039e4b93b8cfaa5da4d6379388ca46e999ef328cef9`
+- Source Title: 새 잎
+- Source Checksum: `824c7a8543f8026068139b4d2b25196eae6f18a5431a42ea93f395383d69cb06`
+- Original Source Order: 17
+- Selected Candidate ID: `2917ff51-6540-4165-808f-8a158c14c371`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-17.json` (exact)
+- Historical Source: `input/tracks/17_새 잎.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+창가의 화분에 물을 주고
+늘 하던 자리에 돌려놔
+마른 잎을 떼어 낸 뒤에
+괜찮아질까 궁금했어
+답은 며칠째 없었어
+
+[Pre-Chorus]
+오늘은 흙 옆을 보다가
+작은 초록을 발견해
+
+[Chorus] [Strong high chest-mix belt]
+새 잎이 하나 나왔어
+아주 작아서 가까이 가
+손대지 않고 바라보며
+괜히 오래 서 있었어
+
+[Instrumental]
+
+[Verse 2]
+물이 너무 많았던 걸까
+햇빛이 모자랐던 걸까
+잘 모르는 채로 매일
+화분의 방향을 바꾸고
+흙이 마를 때만 물을 줬어
+
+[Chorus] [Strong high chest-mix belt]
+새 잎이 하나 나왔어
+아주 작아서 가까이 가
+손대지 않고 바라보며
+괜히 오래 서 있었어
+
+[Instrumental]
+
+[Verse 3]
+오후에 다시 돌아와서
+잎의 끝을 살펴봤어
+아침보다 컸는지는
+솔직히 알아볼 수 없어
+그래도 자꾸 보게 돼
+
+[Bridge]
+언제 꽃이 필지는 몰라
+지금은 이 잎이면 돼
+물을 조금 덜 주기로 해
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+새 잎이 하나 나왔어
+작은 화분에 자리가 생겨
+내일도 창을 열어 두고
+한 번쯤 여기 서 있을게
+
+[Outro]
+```
+
+### 18. 반대편 창가
+
+- Timestamp: 54:39
+- Repeat Timestamp: 01:58:58
+- Filename: `18__반대편 창가__Bright__Modern R&B__NA.wav`
+- Title: 반대편 창가
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `6dbdf39018d5336e024a37abdff8650a8a4f6fd2f4cb9b9f8f1717b68f0715ba`
+- Source Title: 반대편 창가
+- Source Checksum: `16580e317a76a84c8f9ada2015a23dc9825d8ffee9c3066ed91736f52a84e1e5`
+- Original Source Order: 4
+- Selected Candidate ID: `b71ab521-08e9-41a1-9f02-ba7c94d1dd8a`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-04.json` (exact)
+- Historical Source: `input/tracks/04_반대편 창가.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+늘 같은 자리에 앉다
+오늘은 건너편에
+카페 창이 달라지니
+거리도 달라 보여
+못 보던 작은 간판에
+화분 그림이 있었네
+
+[Pre-Chorus]
+자리 하나 바꿨을 뿐
+거리의 선이 달라
+내가 놓친 모양이
+유리 위에 떠올라
+
+[Chorus]
+반대편 창가에 앉아
+같은 길을 다시 봐
+아무 일 없던 풍경도
+오늘은 말을 거네
+
+[Instrumental]
+
+[Verse 2]
+주인이 물을 놓으며
+처음 오셨냐고 물어
+나는 웃으며 손가락으로
+저쪽 자리를 가리켜
+이쪽에 앉아 보니까
+새로 온 기분이라 해
+
+[Pre-Chorus]
+자리 하나 바꿨을 뿐
+거리의 선이 달라
+내가 놓친 모양이
+유리 위에 떠올라
+
+[Chorus]
+반대편 창가에 앉아
+같은 길을 다시 봐
+아무 일 없던 풍경도
+오늘은 말을 거네
+
+[Verse 3]
+해가 조금 돌아와서
+컵 그림자가 옮겨 가
+익숙한 골목 안에도
+모르는 쪽이 많았어
+나갈 때는 문 옆에
+화분 이름을 읽어 봐
+
+[Bridge]
+다음엔 또 어디에 앉을까
+괜히 웃음이 나
+늘 지나던 길이라도
+처음처럼 볼 수 있어
+
+[Final Chorus]
+반대편 창가에 앉아
+같은 길을 다시 봐
+아무 일 없던 풍경도
+오늘은 말을 거네
+
+[Outro] [Instrumental]
+```
+
+### 19. 나란히 걷자
+
+- Timestamp: 57:57
+- Repeat Timestamp: 02:02:15
+- Filename: `19__나란히 걷자__Bright__Modern R&B__NA.wav`
+- Title: 나란히 걷자
+- Mood: Bright
+- Genre: Modern R&B
+- Type: Unknown
+- BPM: Unknown
+- Key: Unknown
+- Length: Unknown
+- Vocal: Unknown
+- SHA-256: `a2b4fb0f37ba71803106b1e1e4049321f4734a6b69efce9abc86d94ba076052b`
+- Source Title: 나란히 걷자
+- Source Checksum: `00a2fa2fa09e2df2852b240e408d6cae184c2f23cb65b380f08541c3ff6c63a6`
+- Original Source Order: 18
+- Selected Candidate ID: `14f93021-945e-4c2d-a2f6-e9f696660320`
+- Lyrics Evidence: `input/validation/2026-10-22-current-suno/detail-18.json` (exact)
+- Historical Source: `input/tracks/18_나란히 걷자.txt`
+- Generation Prompt Status: unverified
+
+#### STYLE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### EXCLUDE
+
+```text
+Unverified for selected recording; see historical source separately
+```
+
+#### LYRICS
+
+```text
+[Intro]
+
+[Verse 1]
+너는 걸음이 조금 빨라
+나는 뒤에서 이름을 불러
+미안하다며 돌아보는 너
+괜찮다고 손을 들어
+우린 보폭을 다시 맞춰
+
+[Pre-Chorus]
+별말 없이 걷다가도
+발소리가 어긋나면 알아
+
+[Chorus] [Strong high chest-mix belt]
+나란히 걷자 오늘은
+누가 앞설 필요 없어
+조금 느리면 기다리고
+빠르면 웃으며 따라가
+
+[Instrumental]
+
+[Verse 2]
+네가 보고 싶은 가게 앞
+나는 잠깐 멈춰 서 있어
+너는 창 안을 들여다보고
+내게 이것 좀 보라며
+유리 너머를 손으로 가리켜
+
+[Chorus] [Strong high chest-mix belt]
+나란히 걷자 오늘은
+누가 앞설 필요 없어
+조금 느리면 기다리고
+빠르면 웃으며 따라가
+
+[Instrumental]
+
+[Verse 3]
+내가 길을 잘못 들었을 땐
+너도 함께 돌아 나와
+다시 지도를 켜지 않고
+골목 끝을 먼저 보며
+어디로 갈지 이야기해
+
+[Bridge]
+같은 곳을 향하더라도
+보는 것은 조금 다르지
+그 얘길 들으며 걸어
+
+[Final Chorus] [Strong high chest-mix belt; held peak]
+나란히 걷자 오늘은
+누가 앞설 필요 없어
+서로 다른 걸 본 뒤에도
+같은 길 위에 서 있어
+
+[Outro]
+```
+
+### 20. 웃음의 순서
+
+- Timestamp: 01:01:00
+- Repeat Timestamp: 02:05:19
+- Filename: `20__웃음의 순서__Bright__Modern R&B__NA.wav`
+- Title: 웃음의 순서
+- Mood: Bright
+- Genre: Modern R&B
+- Type: A
+- BPM: 175 (fixed prompt target; audio not measured)
+- Key: G Major (preserved proposal; audio not measured)
+- Length: 3min+ (arrangement target; unverified)
+- Vocal: Female solo, chest-dominant (preserved proposal; audio not measured)
+- SHA-256: `94a5b694ab4f2e5d2367700337b34ae4b978b0d9ccfb62090dea24ac83dd3949`
+- Source Title: 웃음의 순서
+- Source Checksum: `c46b9ffcfc443eed0c8e1708a82ea3ec16b1e7b9028e3a337d6860c0819bd4d7`
+- Original Source Order: 15
+- Selected Candidate ID: `1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa`
+- Lyrics Evidence: `input/validation/2026-10-22-track-15-lyric-rewrite/generation-manifest.json` (exact)
+- Historical Source: `input/tracks/15_웃음의 순서.txt`
+- Generation Prompt Status: confirmed
+
+#### STYLE
+
+```text
+Modern Korean R&B and neo-soul in G Major at a fixed 175 BPM for the entire track. Rhodes leads warm, lightly bouncing chord stabs and answers the table-talk pauses; bass and crisp dry drums support the same pulse. One clear female solo chest-voice sings Korean right up front with no vocal reverb or room sound. Conversational verses open into a strong high chest-mix chorus without doubles, harmonies or a choir. Put small instrumental replies between complete thoughts, and keep the final hook bold but lucid. Target just over three minutes.
+```
+
+#### EXCLUDE
+
+```text
+Indie rock, airy vocals, falsetto, harmonies, backing vocals, vocal reverb, room ambience
+```
+
+#### LYRICS
+
+```text
+[Intro] [Instrumental]
+
+[Verse 1]
+늦은 저녁 식탁 위에
+그릇을 두 개 꺼내 놔
+식은 국을 다시 데우다
+현관문 소리에 돌아봐
+네가 가방을 내려놓고
+내 맞은편에 앉았어
+
+[Pre-Chorus]
+"오늘 어땠어?" 하는 말이
+둘 입에서 같이 나와
+
+[Chorus] [Strong high chest-mix belt]
+이만하면 좋은 저녁
+밥은 조금 식었지만
+오늘 얘길 나누다가
+나도 모르게 웃으니까
+이만하면 좋은 저녁
+
+[Instrumental] [Rhodes reply]
+
+[Verse 2]
+"지하철이 또 멈췄어"
+네가 국을 불며 말해
+나는 점심을 거른 얘길
+밥을 더 뜨면서 하고
+별것 아닌 얘기에도
+말이 조금씩 길어져
+
+[Chorus] [Strong high chest-mix belt]
+이만하면 좋은 저녁
+밥은 조금 식었지만
+오늘 얘길 나누다가
+나도 모르게 웃으니까
+이만하면 좋은 저녁
+
+[Instrumental] [Rhodes reply]
+
+[Verse 3]
+빈 그릇을 모으는데
+네가 먼저 일어나
+"오늘은 내가 할게"
+나도 막 하려던 말이야
+둘 다 서서 웃다가
+접시를 하나씩 들어
+
+[Bridge]
+설거지를 끝내고도
+식탁에 다시 앉아
+아까 하던 얘길 이어
+밤이 조금 늦어져
+
+[Final Chorus] [Strong high chest-mix belt]
+이만하면 좋은 저녁
+서로 늦게 돌아왔어도
+다 치운 식탁 앞에서
+또 웃고 있으니까
+이만하면 좋은 저녁
+
+[Outro] [Instrumental]
+```

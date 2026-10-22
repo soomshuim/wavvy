@@ -1,0 +1,111 @@
+{
+  "schema": "wavvy.release.production_audit.v1",
+  "series": "SERIES/17-30",
+  "local_only": true,
+  "youtube_title_approved": false,
+  "youtube_uploads_by_this_run": 0,
+  "state_revision": 76,
+  "state_phase": "upload_ready",
+  "report_summary": {
+    "total_tracks": 20,
+    "total_original_duration": 3874.85,
+    "final_duration": 7718.5,
+    "crossfade_reduction": 31.199999999999818
+  },
+  "upload_mp4": {
+    "path": "SERIES/17-30/output/final.mp4",
+    "bytes": 751128517,
+    "duration_seconds": 7718.5,
+    "sha256": "0b00e158f497f4a6c9ca57ce36b1678f38a215b01b44ef3d07a2a8a881b09943",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 3840,
+        "height": 2160,
+        "sample_rate": null,
+        "channels": null,
+        "r_frame_rate": "1/1",
+        "avg_frame_rate": "1/1"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "width": null,
+        "height": null,
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0"
+      }
+    ]
+  },
+  "master_audio_full_decode": {
+    "exit_code": 0,
+    "input_i_lufs": "-13.97",
+    "input_tp_dbtp": "-0.96",
+    "input_lra_lu": "4.60",
+    "log": "03-master-audio-full-decode-loudnorm.log"
+  },
+  "chapters": {
+    "count": 40,
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "description_separators": 3
+  },
+  "gate_results": {
+    "08-gate-source-final.json": "PASS",
+    "09-gate-render-final.json": "PASS",
+    "10-gate-upload-ready.json": "PASS",
+    "11-verify-release.json": "PASS"
+  },
+  "artwork_sha256": {
+    "thumb.jpg": "634cbb9ff89b2c39cf89a240100368b310c0e22bfaee60a0463170f25912e025",
+    "loop.png": "e27ade02cc17e58bceb7d9fbe6502e1ced62613cded357e59ffe58842dc68ca7"
+  },
+  "local_input_counts": {
+    "wav": 20,
+    "txt": 20
+  },
+  "final_middle_frame": "07-final-middle-frame.jpg"
+}
