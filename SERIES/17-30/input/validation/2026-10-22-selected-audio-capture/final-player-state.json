@@ -1,0 +1,35 @@
+{
+  "browser_tool": "mcp__aside__repl",
+  "song_page": "https://suno.com/song/1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+  "audio_observed_after_stop": [
+    {
+      "paused": true,
+      "current_time_seconds": 1.059227,
+      "duration_seconds": 227.6
+    },
+    {
+      "paused": true,
+      "current_time_seconds": 0,
+      "duration_seconds": 0.096
+    }
+  ],
+  "queue_panel_expanded": false,
+  "autoplay_observed_before_restore": false,
+  "autoplay_observed_after_restore": true,
+  "capture_process_list": [],
+  "note": "Suno next recommended media started after selected song 20 and was immediately paused; media ended at next 1.059227 seconds. Browser UI observations came from Aside MCP; process list came from local pgrep.",
+  "record_type": "agent_observation_report_from_Aside_MCP_UI_and_local_process_check; not a raw browser snapshot",
+  "report_written_at_utc": "2026-10-22T12:31:56.010918+00:00",
+  "os_audio_settings_changed_by_agent": false,
+  "browser_fs_write_attempt": {
+    "result": "failed",
+    "reason": "Aside REPL pwd is a separate session filesystem; ENOENT for work/.../final-player-state.json",
+    "resolution": "created this report via local exec_command and verified local file/hash"
+  },
+  "source_evidence": [
+    "mcp__aside__repl Queue switch aria-checked false→true, Queue aria-expanded false, audio DOM paused=true for both elements",
+    "local pgrep -fl capture-song returned no processes",
+    "work/2026-10-22-selected-audio-capture/20-ui-after.json",
+    "work/2026-10-22-selected-audio-capture/20-capture.log"
+  ]
+}

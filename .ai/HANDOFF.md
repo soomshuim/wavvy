@@ -1,5 +1,47 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 선택 WAV 20/20 로컬 입력 완료)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: [최종 입력 대조](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/selected-20-final-ingest-check.json)에서 선택 ID20·파일 SHA20·실제 길이·48 kHz 스테레오를 확인했다. 공식 다운로드3·앱 전용 내부 녹음17, 입력 길이 합 3,874.85초다. 17번 정상 retry1만 정식 등록했고 첫 무음 실패 raw와 seek90 대조는 따로 보존했다. 20번의 1 초과 float32 샘플2개는 원형 보존했으며 이 값만으로 소리 잘림은 확정하지 않는다.
+Verification: manifest 선택 20/20·pending0과 공식 state writer revision75/audio_files20, 곡별 원시/UI/경계/절단 검사를 대조했다. 기본 0.8초 겹침·2회 반복 추정은 7,718.5초로 실제 렌더 길이가 아니다. 젠의 전곡 청취 PASS는 4번만이며 5~20번은 기술 검사 범위다.
+Next-TODO: 부모가 입력 배치 검토·커밋 후 영상 제작 담당자에게 state/concept 소유권을 넘긴다. 전체 pack·영상·자막·업로드는 아직 없고 YouTube 제목은 승인 전이다.
+Commits: 이번 17~20번 등록·기록은 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17번 재시도 검증·정식 등록)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 17번 「새 잎」 같은 선택 ID의 전곡 retry1은 UI 184.4초 자연 종료와 48 kHz 스테레오 float32 최종 184.63초·원시/절단 샘플/해시가 일치했다([정식 등록 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-retry1-ingest-verification.json)). 최초 녹음의 140.136083초 무음이 재현되지 않아 첫 실패 raw는 이력으로 남겼다. 서버 지연은 젠의 가설이며 원인 미확정이다. 정식 WAV 17/20곡(공식3·내부14), 18~20번 진행 중이다.
+Next-TODO: 18~20번 각각 닫힌 원시와 선택 ID·UI 길이·경계·샘플·해시를 검사한 뒤 유효본만 정식 등록한다. 젠의 실제 청취 PASS는 4번까지만이며 영상·업로드와 제목 승인은 아직 없다.
+Commits: 이 17번 등록·기록은 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17번 전체 재시도 승인·원시 대기)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 “재시도해봐”라고 지시해 별도 담당자가 macOS 음소거 설정을 바꾸지 않고 17번 「새 잎」을 0초부터 새 retry1 원시로 녹음한다. 기존 17번 뒤 140.136083초 무음 실패 파일은 보존하며 새 녹음으로 덮지 않는다. 현재 정식 WAV 16/20곡(공식3·내부13)은 그대로다.
+Comparison: 17번 같은 ID의 Suno 화면 90.316878→110.554017초에 별도 샘플 PCM 신호가 연속 기록됐다([대조 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-seek90-comparison.json)). 기존 긴 무음은 원곡 해당 구간의 무음과 맞지 않으나 정확 원인은 미확인이다.
+Next-TODO: retry1 rawready 뒤 선택 ID·UI 전곡 진행·곡내 약 56초 이후 신호·종료/곡간 무음·원시/절단 SHA를 대조한다. 유효할 때만 17번 정식 등록하고 18~20번을 이어간다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 현재 재시도 지시와 이후 실제 입력 결과는 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17번 원본 무음·캡처 차이 대조 중)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠은 “간주중에 무음구간이 있을수도 있어. 맥은 처음부터 계속 음소거 상태였어.”라고 정정했다. 이는 사용자 진술이며 당시 시스템 음소거 시각의 실측은 아니다. 17번 녹음 raw의 뒤 140.136083초가 정확0인 사실만 확정이다. 원본 곡도 같은 구간이 무음인지 아직 확인 전이다. macOS 음소거 설정은 바꾸지 않고 별도 담당자가 약 90초 지점의 짧은 재생·캡처를 대조 중이다. 정식 WAV는 16/20곡(공식3·내부13) 유지, 17번 미등록이다.
+Next-TODO: 90초 대조가 실제 신호를 확인하면 17번 새 전곡 녹음의 원시 근거를 받고 검증한다. 신호가 없으면 기존 정상곡의 짧은 비교로 캡처 전반의 원인을 구별한다. 18~20번은 대기한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
+Commits: 사용자 정정·현행 상태 기록은 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17번 내부 녹음 중도 무음·정식 등록 보류)
 Project: ~/Project/wavvy
 Agent: Codex

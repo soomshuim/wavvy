@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/19-raw.wav",
+  "raw_sha256": "889800b1e7e13d969f33347b69ee01171eee3d7b90aec2ffadfc57cefa79f56a",
+  "raw_duration_seconds": 186.5,
+  "raw_frames": 8952000,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 184.0,
+  "first_nonzero_seconds": 1.4901041666666666,
+  "expected_target_end_seconds": 185.49010416666667,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 185.49889583333334,
+      "end_seconds": 185.9379375,
+      "duration_seconds": 0.43904166666666666
+    },
+    {
+      "start_seconds": 186.00389583333333,
+      "end_seconds": 186.5,
+      "duration_seconds": 0.4961041666666667
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4901041666666666,
+      "duration_seconds": 1.4901041666666666
+    },
+    {
+      "start_seconds": 185.49889583333334,
+      "end_seconds": 185.9379375,
+      "duration_seconds": 0.43904166666666666
+    },
+    {
+      "start_seconds": 186.00389583333333,
+      "end_seconds": 186.5,
+      "duration_seconds": 0.4961041666666667
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.8450992703437805,
+    0.8723694086074829
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/19__나란히 걷자__captured.wav",
+    "sha256": "a2b4fb0f37ba71803106b1e1e4049321f4734a6b69efce9abc86d94ba076052b",
+    "start_raw_seconds": 1.4,
+    "end_raw_seconds": 185.7,
+    "frames": 8846400,
+    "duration_seconds": 184.3,
+    "first_nonzero_seconds": 0.09010416666666667,
+    "last_nonzero_seconds": 184.098875,
+    "peak_by_channel": [
+      0.8450992703437805,
+      0.8723694086074829
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 184.09889583333333,
+        "end_seconds": 184.3,
+        "duration_seconds": 0.20110416666666667
+      }
+    ]
+  },
+  "candidate_id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+  "title": "19. 나란히 걷자",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 184.0s; raw first sound 1.4901041666666666s; target-to-next exact-zero gap 185.49889583333334–185.9379375s. Manual trim 1.4–185.7s retains 0.09010416666666667s lead and 0.20110416666666667s tail, excludes next-song signal."
+}

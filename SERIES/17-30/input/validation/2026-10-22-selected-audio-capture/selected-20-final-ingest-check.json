@@ -1,0 +1,210 @@
+{
+  "schema": "wavvy.1730.selected_audio_batch_check.v1",
+  "scope": "local_20_selected_audio_inputs_provenance_and_integrity_only_no_listening_or_render_claim",
+  "series": "SERIES/17-30",
+  "orders_checked": 20,
+  "unique_candidate_ids": 20,
+  "official_download_count": 3,
+  "system_audio_capture_count": 17,
+  "manifest_pending_wav_orders": [],
+  "source_duration_sum_seconds": 3874.85,
+  "estimated_two_pass_duration_seconds_default_0_8s_crossfade": 7718.5,
+  "estimate_formula": "2 * sum(source durations) - (20 * 2 - 1) * 0.8; actual pack/report not yet produced",
+  "checks": {
+    "all_20_orders_match_playback_slots": true,
+    "all_selected_candidate_ids_match_slot_current_ids": true,
+    "all_20_wav_sha256_match_manifest": true,
+    "all_20_wav_header_duration_match_manifest": true,
+    "all_20_are_48khz_stereo": true,
+    "source_kind_3_official_17_capture": true,
+    "all_17_capture_ingest_refs_exist": true
+  },
+  "limitations": [
+    "No direct listening pass for slots 5–20",
+    "No capture callback PTS or proof of zero missing buffers",
+    "Not a full-source or video/render quality validation",
+    "YouTube title is not approved"
+  ],
+  "tracks": [
+    {
+      "order": 1,
+      "candidate_id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+      "input_filename": "01__오늘의 기록__Bright__Modern R&B__NA.wav",
+      "sha256": "3eba557ff6caee2361922c2b35693c651bf699438fb2243786ba6cae24dc4e7d",
+      "duration_seconds": 197.16,
+      "source_kind": "suno_official_download",
+      "sample_dtype": "int16"
+    },
+    {
+      "order": 2,
+      "candidate_id": "e4841985-ad4c-48db-9389-82eba13b7b7f",
+      "input_filename": "02__이 노래 끝날 때까지__Bright__Modern R&B__NA.wav",
+      "sha256": "c0d1dafc519238e350669e989d936a642ee8ccb48e1ce52215815507aa3884cb",
+      "duration_seconds": 200.0,
+      "source_kind": "suno_official_download",
+      "sample_dtype": "int16"
+    },
+    {
+      "order": 3,
+      "candidate_id": "ddd6c7e9-5d64-48ae-8d41-aa674754d1ad",
+      "input_filename": "03__첫 페이지__Bright__Modern R&B__NA.wav",
+      "sha256": "7b03c28cdbf7e1de74db7436790588e51810fd495019856e275e88fbd9784579",
+      "duration_seconds": 189.2,
+      "source_kind": "suno_official_download",
+      "sample_dtype": "int16"
+    },
+    {
+      "order": 4,
+      "candidate_id": "810a0d51-39e5-460c-ae78-ed3a8181837b",
+      "input_filename": "04__우리 행복하자__Bright__Modern R&B__NA.wav",
+      "sha256": "774d3b4e79c33b325701cacacee755ce0c3df0aca861f3f1bb2bad150440c3c9",
+      "duration_seconds": 201.5,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 5,
+      "candidate_id": "d6801b81-e1bd-4272-b806-6445b86d6d80",
+      "input_filename": "05__오래된 농담__Bright__Modern R&B__NA.wav",
+      "sha256": "81e6300528d30b8bcb28ce550c4fc8cf153b443375e9e7aa860593818fc027fd",
+      "duration_seconds": 202.0,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 6,
+      "candidate_id": "e5a369a1-10a0-4fde-8c27-791c31ceb0f1",
+      "input_filename": "06__내일 뭐 해__Bright__Modern R&B__NA.wav",
+      "sha256": "0cb5f46a551c58034a4c3645b44f214510e25c94a613f18c648e134e678d34da",
+      "duration_seconds": 205.0,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 7,
+      "candidate_id": "e8d4cc0f-ab9c-49b2-a618-811bf917a38a",
+      "input_filename": "07__종이비행기__Bright__Modern R&B__NA.wav",
+      "sha256": "dedf90d6f5be6544b1e437a609064d4b763fbf00e3364d25dcad067e93fd87c3",
+      "duration_seconds": 187.85,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 8,
+      "candidate_id": "5aa6b60e-e108-4116-b541-a64c275a3676",
+      "input_filename": "08__빵집 앞에서__Bright__Modern R&B__NA.wav",
+      "sha256": "448d204fd8105628ad879fb32b5ec9d80681a000003d45b5c6e16bd69e522cef",
+      "duration_seconds": 193.85,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 9,
+      "candidate_id": "2650ca9a-2e51-4621-b508-cc87cfecd0b1",
+      "input_filename": "09__잘 익은 하루__Bright__Modern R&B__NA.wav",
+      "sha256": "fcffff8267126cfd6f175dab97167f15073068da72a48af3816c0c104485506b",
+      "duration_seconds": 198.8,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 10,
+      "candidate_id": "af9af447-7ed3-4f31-84fd-b5be0c8fb504",
+      "input_filename": "10__계단 끝에서__Bright__Modern R&B__NA.wav",
+      "sha256": "7268ac45788fef44c2d7548ccc5332c3004ca93e16e8cdb7b179971e6ef9014a",
+      "duration_seconds": 187.9,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 11,
+      "candidate_id": "a6c208ae-fb73-409e-a4a4-c9adc338bc47",
+      "input_filename": "11__메모 한 장__Bright__Modern R&B__NA.wav",
+      "sha256": "22faa9462d2af653d7e8cdb2123adfb4746462e42aa50106957490a41dc44f29",
+      "duration_seconds": 186.75,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 12,
+      "candidate_id": "72dd15dd-00b7-445c-bfcc-7c07274ad588",
+      "input_filename": "12__새 신발__Bright__Modern R&B__NA.wav",
+      "sha256": "8954444c2d2814c7437a6e366ccbeb29ea38983e3687affe16de10785f7068eb",
+      "duration_seconds": 211.55,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 13,
+      "candidate_id": "a9e25db7-3abb-4ed8-9892-e15253bc4ccb",
+      "input_filename": "13__유리컵의 햇빛__Bright__Modern R&B__NA.wav",
+      "sha256": "1230d545e928760d04344e2ca84d6cc3203ce43a6bf5cc157be19f748560a5eb",
+      "duration_seconds": 187.57,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 14,
+      "candidate_id": "825e0bfc-a2cf-4892-b372-ded25c688eb8",
+      "input_filename": "14__먼저 건넨 말__Bright__Modern R&B__NA.wav",
+      "sha256": "a61ff66f93b6474f602b23d93fb531475694e99707b3906c523dff38d5f6333e",
+      "duration_seconds": 182.93,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 15,
+      "candidate_id": "f737072d-2874-4b2e-802d-aee3975ed8a7",
+      "input_filename": "15__작은 용기__Bright__Modern R&B__NA.wav",
+      "sha256": "ada7d7bbe46fdbe47539e9fd34535f38a8dbac0474ab06dd28c248ee5cdc5d68",
+      "duration_seconds": 187.58,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 16,
+      "candidate_id": "7ec2b3ee-32fb-41ac-a89d-a36c48cc803f",
+      "input_filename": "16__돌아가는 길__Bright__Modern R&B__NA.wav",
+      "sha256": "0894780ec4e5f6d1c3feec25efafc682c11d7e9ebd023bfa376229f8df37905a",
+      "duration_seconds": 188.4,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 17,
+      "candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
+      "input_filename": "17__새 잎__Bright__Modern R&B__NA.wav",
+      "sha256": "73aaac5d45b6257c437d2039e4b93b8cfaa5da4d6379388ca46e999ef328cef9",
+      "duration_seconds": 184.63,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 18,
+      "candidate_id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+      "input_filename": "18__반대편 창가__Bright__Modern R&B__NA.wav",
+      "sha256": "6dbdf39018d5336e024a37abdff8650a8a4f6fd2f4cb9b9f8f1717b68f0715ba",
+      "duration_seconds": 198.31,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 19,
+      "candidate_id": "14f93021-945e-4c2d-a2f6-e9f696660320",
+      "input_filename": "19__나란히 걷자__Bright__Modern R&B__NA.wav",
+      "sha256": "a2b4fb0f37ba71803106b1e1e4049321f4734a6b69efce9abc86d94ba076052b",
+      "duration_seconds": 184.3,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    },
+    {
+      "order": 20,
+      "candidate_id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+      "input_filename": "20__웃음의 순서__Bright__Modern R&B__NA.wav",
+      "sha256": "94a5b694ab4f2e5d2367700337b34ae4b978b0d9ccfb62090dea24ac83dd3949",
+      "duration_seconds": 199.57,
+      "source_kind": "system_audio_capture",
+      "sample_dtype": "float32"
+    }
+  ]
+}

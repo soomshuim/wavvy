@@ -1,0 +1,82 @@
+{
+  "purpose": "slot_17_seek_90_comparison_only_not_formal_source",
+  "candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
+  "ui_evidence_ref": "17-seek90-ui.json",
+  "capture_log_ref": "17-seek90-capture.log",
+  "sample_local_path": "work/2026-10-22-selected-audio-capture/17-seek90-sample.wav",
+  "sample_sha256": "6b1ba16ea70d6ba95f20127baad1642aa4d7b274122cc3ecca335411e94d181b",
+  "sample_seconds": 33.78,
+  "sample_format": {
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "dtype": "float32"
+  },
+  "pcm_ranges": [
+    {
+      "raw_interval_seconds": [
+        0,
+        5
+      ],
+      "nonzero_channel_samples": 0,
+      "peak": 0.0
+    },
+    {
+      "raw_interval_seconds": [
+        5,
+        10
+      ],
+      "nonzero_channel_samples": 260514,
+      "peak": 0.7687178254127502
+    },
+    {
+      "raw_interval_seconds": [
+        10,
+        15
+      ],
+      "nonzero_channel_samples": 476280,
+      "peak": 0.7428592443466187
+    },
+    {
+      "raw_interval_seconds": [
+        15,
+        20
+      ],
+      "nonzero_channel_samples": 480000,
+      "peak": 0.7093284130096436
+    },
+    {
+      "raw_interval_seconds": [
+        17,
+        22
+      ],
+      "nonzero_channel_samples": 480000,
+      "peak": 0.7153881788253784
+    },
+    {
+      "raw_interval_seconds": [
+        20,
+        25
+      ],
+      "nonzero_channel_samples": 480000,
+      "peak": 0.7153881788253784
+    },
+    {
+      "raw_interval_seconds": [
+        25,
+        30
+      ],
+      "nonzero_channel_samples": 480000,
+      "peak": 0.6875662803649902
+    },
+    {
+      "raw_interval_seconds": [
+        30,
+        33.78
+      ],
+      "nonzero_channel_samples": 324378,
+      "peak": 0.6645689010620117
+    }
+  ],
+  "interpretation": "The observed selected-song UI advanced from 90.316878 to 110.554017 seconds and the sampled PCM after seek contains continuous nonzero signal. The first full capture zero tail is inconsistent with an all-silent original tail at this sampled interval. Exact failure mechanism remains unverified.",
+  "formal_slot_17_registered": false
+}

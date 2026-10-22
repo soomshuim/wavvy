@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/20-raw.wav",
+  "raw_sha256": "57e27025dabab5660e6b31fce488c35bb54c5a134d823e76d86f00ccb8d0a2f4",
+  "raw_duration_seconds": 202.56,
+  "raw_frames": 9722880,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 199.2,
+  "first_nonzero_seconds": 1.376,
+  "expected_target_end_seconds": 200.576,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 200.58479166666666,
+      "end_seconds": 201.0985,
+      "duration_seconds": 0.5137083333333333
+    },
+    {
+      "start_seconds": 202.20979166666666,
+      "end_seconds": 202.56,
+      "duration_seconds": 0.35020833333333334
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.376,
+      "duration_seconds": 1.376
+    },
+    {
+      "start_seconds": 200.58479166666666,
+      "end_seconds": 201.0985,
+      "duration_seconds": 0.5137083333333333
+    },
+    {
+      "start_seconds": 202.20979166666666,
+      "end_seconds": 202.56,
+      "duration_seconds": 0.35020833333333334
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9781275391578674,
+    1.0053949356079102
+  ],
+  "overunity_by_channel": [
+    0,
+    2
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/20__웃음의 순서__captured.wav",
+    "sha256": "94a5b694ab4f2e5d2367700337b34ae4b978b0d9ccfb62090dea24ac83dd3949",
+    "start_raw_seconds": 1.28,
+    "end_raw_seconds": 200.85,
+    "frames": 9579360,
+    "duration_seconds": 199.57,
+    "first_nonzero_seconds": 0.096,
+    "last_nonzero_seconds": 199.30477083333332,
+    "peak_by_channel": [
+      0.9781275391578674,
+      1.0053949356079102
+    ],
+    "overunity_by_channel": [
+      0,
+      2
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 199.30479166666666,
+        "end_seconds": 199.57,
+        "duration_seconds": 0.2652083333333333
+      }
+    ]
+  },
+  "candidate_id": "1efda1c6-6fa4-4a0b-9f36-6f0867f50ffa",
+  "title": "20. 웃음의 순서",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 199.2s; raw first sound 1.376s; target-to-next exact-zero gap 200.58479166666666–201.0985s. Manual trim 1.28–200.85s retains 0.096s lead and 0.2652083333333333s tail, excludes next-song signal."
+}

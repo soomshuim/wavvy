@@ -1,0 +1,84 @@
+{
+  "raw_path": "work/2026-10-22-selected-audio-capture/18-raw.wav",
+  "raw_sha256": "a09da91b143b685f9712be6ad9b1273edc0f7f8b9b4cbc13f7c67f0a28e016ec",
+  "raw_duration_seconds": 200.56,
+  "raw_frames": 9626880,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "dtype": "float32",
+  "ui_duration_seconds": 197.96,
+  "first_nonzero_seconds": 1.4836666666666667,
+  "expected_target_end_seconds": 199.44366666666667,
+  "exact_zero_runs_near_expected_end": [
+    {
+      "start_seconds": 199.45227083333333,
+      "end_seconds": 199.9473125,
+      "duration_seconds": 0.49504166666666666
+    },
+    {
+      "start_seconds": 200.29060416666667,
+      "end_seconds": 200.56,
+      "duration_seconds": 0.26939583333333333
+    }
+  ],
+  "all_exact_zero_runs_ge_0_1s": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.4836666666666667,
+      "duration_seconds": 1.4836666666666667
+    },
+    {
+      "start_seconds": 199.45227083333333,
+      "end_seconds": 199.9473125,
+      "duration_seconds": 0.49504166666666666
+    },
+    {
+      "start_seconds": 200.29060416666667,
+      "end_seconds": 200.56,
+      "duration_seconds": 0.26939583333333333
+    }
+  ],
+  "finite": true,
+  "peak_by_channel": [
+    0.9515295028686523,
+    0.9675482511520386
+  ],
+  "overunity_by_channel": [
+    0,
+    0
+  ],
+  "trim": {
+    "path": "work/2026-10-22-capture-ingest-document-sync/18__반대편 창가__captured.wav",
+    "sha256": "6dbdf39018d5336e024a37abdff8650a8a4f6fd2f4cb9b9f8f1717b68f0715ba",
+    "start_raw_seconds": 1.39,
+    "end_raw_seconds": 199.7,
+    "frames": 9518880,
+    "duration_seconds": 198.31,
+    "first_nonzero_seconds": 0.09366666666666666,
+    "last_nonzero_seconds": 198.06225,
+    "peak_by_channel": [
+      0.9515295028686523,
+      0.9675482511520386
+    ],
+    "overunity_by_channel": [
+      0,
+      0
+    ],
+    "flat_adjacent_high_sample_count": 0,
+    "finite": true,
+    "sample_exact_copy_from_raw": true,
+    "interior_exact_zero_runs_ge_0_1s": [
+      {
+        "start_seconds": 198.06227083333334,
+        "end_seconds": 198.31,
+        "duration_seconds": 0.24772916666666667
+      }
+    ]
+  },
+  "candidate_id": "b71ab521-08e9-41a1-9f02-ba7c94d1dd8a",
+  "title": "18. 반대편 창가",
+  "provenance": "ScreenCaptureKit app-only internal-audio capture of selected Suno UI playback; not official download",
+  "capture_buffer_pts_recorded": false,
+  "capture_callback_missing_buffer_count_proven_zero": false,
+  "boundary_basis": "Selected UI duration 197.96s; raw first sound 1.4836666666666667s; target-to-next exact-zero gap 199.45227083333333–199.9473125s. Manual trim 1.39–199.7s retains 0.09366666666666666s lead and 0.24772916666666667s tail, excludes next-song signal."
+}

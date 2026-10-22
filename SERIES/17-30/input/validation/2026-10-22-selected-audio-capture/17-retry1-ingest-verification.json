@@ -1,0 +1,56 @@
+{
+  "schema": "wavvy.1730.capture_ingest_check.v1",
+  "source_kind": "system_audio_capture",
+  "candidate_id": "2917ff51-6540-4165-808f-8a158c14c371",
+  "source_evidence_ref": "17-retry1-verification.json",
+  "ui_evidence_ref": "17-retry1-ui-timeline.json",
+  "raw_capture_path": "work/2026-10-22-selected-audio-capture/17-retry1-raw.wav",
+  "raw_sha256": "ce0d668db8f8d677eecb88ecac438b80448b5802d0b3f62815517c1f71bc4ffc",
+  "trim_source_path": "work/2026-10-22-capture-ingest-document-sync/17__새 잎__captured.wav",
+  "input_filename": "17__새 잎__Bright__Modern R&B__NA.wav",
+  "input_sha256": "73aaac5d45b6257c437d2039e4b93b8cfaa5da4d6379388ca46e999ef328cef9",
+  "trim_start_raw_seconds": 1.5,
+  "trim_end_raw_seconds": 186.13,
+  "ui_duration_seconds": 184.4,
+  "first_raw_signal_seconds": 1.5996458333333334,
+  "predicted_end_raw_seconds": 185.99964583333335,
+  "actual_end_raw_seconds": 186.008375,
+  "end_timing_delta_seconds": 0.008729166666654464,
+  "format_probe": {
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 184.63,
+    "size_bytes": 70897978
+  },
+  "per_channel_peak": [
+    0.8860222101211548,
+    0.8852611780166626
+  ],
+  "per_channel_overunity_sample_count": [
+    0,
+    0
+  ],
+  "flat_adjacent_high_sample_count": 0,
+  "interior_exact_zero_runs_ge_0_1s": [],
+  "checks": {
+    "selected_id_and_ui_title_match_playback_slot": true,
+    "ui_progress_reached_natural_end": true,
+    "raw_end_matches_ui_duration_within_20ms": true,
+    "capture_stopped_without_write_error": true,
+    "raw_sha256_matches_ui_evidence": true,
+    "trim_exact_raw_sample_slice": true,
+    "ingested_sha256_matches_trim": true,
+    "raw_terminal_region_exact_zero_and_no_next_song_sample": true,
+    "all_trim_samples_finite": true,
+    "format_float32_48k_stereo": true,
+    "old_failed_attempt_preserved_separately": true,
+    "no_repeat_of_140_second_zero_tail": true
+  },
+  "limitations": [
+    "No capture callback PTS or proof of zero missing buffers",
+    "No direct listening or official source-waveform identity claim",
+    "User proposed delayed Suno server response; exact failure cause remains unverified"
+  ]
+}
