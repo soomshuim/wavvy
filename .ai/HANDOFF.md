@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (청취 시험 동안 녹음 일시 중지)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “테스트해볼게 녹음은 잠시 스탑” 지시에 따라 녹음을 일시 중지했다. `~/Downloads`의 1번 곡 청취 샘플 두 개는 보존한다. 공식 선택 WAV는 3/20곡이며 전체 영상·업로드는 미완료다.
+Next-TODO: 젠의 청취 의견과 명시적인 녹음 재개 지시를 기다린다. 그 전에는 나머지 17곡 녹음을 자동으로 시작하지 않는다. YouTube 제목도 젠 승인 전이다.
+Commits: 이 일시 중지 기록은 이번 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (1번 곡 A/B 청취 샘플 전달)
 Project: ~/Project/wavvy
 Agent: Codex
