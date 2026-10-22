@@ -1,3 +1,4 @@
+import csv
 import hashlib
 import json
 import re
@@ -8,7 +9,7 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 
-from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, TrackSource, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, validate_project, verify_final_selection_source_provenance, verify_release_package
+from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, TrackSource, build_final_track_sources_section, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, read_filesystem_track_sources, replace_final_track_sources_section, resolve_playback_source_bindings, validate_project, verify_final_selection_source_provenance, verify_release_package
 from wavvy_harness.doctor import run_ssot_hygiene
 from wavvy_harness.gate import run_gate, run_lyrics_skill_gate
 from wavvy_harness.packaging import check_thumbnail_layout, packaging_contract
@@ -1382,6 +1383,171 @@ Self-Gate
 
 
 class ReleaseVerificationTests(unittest.TestCase):
+    def make_reordered_release(self, root: Path) -> Path:
+        series = make_series(root)
+        tracks_dir = series / "input" / "tracks"
+        source_texts = {
+            1: "Track: Old One\nOrder: 1\n\n=== STYLE ===\nold-style-one\n\n=== EXCLUDE ===\nold-exclude-one\n\n=== LYRICS ===\n[Intro] [Instrumental]\n\n[Verse]\n나\n",
+            2: "Track: Old Two\nOrder: 2\n\n=== STYLE ===\nsubmitted-style-two\n\n=== EXCLUDE ===\nsubmitted-exclude-two\n\n=== LYRICS ===\n[Verse]\n너\n",
+        }
+        sources = {}
+        for original, content in source_texts.items():
+            source_path = tracks_dir / f"{original:02d}_old.txt"
+            source_path.write_text(content, encoding="utf-8")
+            sources[original] = parse_track_source(str(source_path), content)
+        report_path = series / "output" / "report.json"
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        manifest = {"workspace": "[test]", "tracks": []}
+        slots = []
+        candidates = []
+        for playback, original, title in ((1, 2, "Renamed Two"), (2, 1, "Renamed One")):
+            candidate_id = f"candidate-{original}"
+            track = report["tracks"][playback - 1]
+            track["title"] = title
+            audio = tracks_dir / track["filename"]
+            audio.write_bytes(f"audio-{playback}".encode())
+            digest = hashlib.sha256(audio.read_bytes()).hexdigest()
+            track.update({"sha256": digest, "duration": 60.0})
+            manifest["tracks"].append({"order": playback, "approved_title": title,
+                                        "input_filename": track["filename"], "candidate_id": candidate_id,
+                                        "sha256": digest, "duration_seconds": 60.0})
+            slot = {"playback_order": playback, "source_order": original, "title": title,
+                    "source_txt": f"input/tracks/{original:02d}_old.txt",
+                    "source_sha256": sources[original].sha256,
+                    "current_observed_candidates": [{"id": candidate_id}],
+                    "candidate_selection_status": "user_selected_for_20_song_sequence"}
+            if original == 1:
+                slot["lyrics_evidence_ref"] = "input/validation/current-lyrics.json"
+            slots.append(slot)
+            candidates.append({"order": original, "title": title,
+                               "candidates": [{"id": candidate_id}],
+                               "decision": {"status": "user_selected_for_20_song_sequence",
+                                            "chosen_candidate_id": candidate_id}})
+        report_path.write_text(json.dumps(report), encoding="utf-8")
+        (series / "input" / "download-manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        (series / "input" / "playback-order.json").write_text(
+            json.dumps({"workspace": "[test]", "slots": slots}), encoding="utf-8")
+        (series / "input" / "suno-candidates.json").write_text(
+            json.dumps({"workspace": "[test]", "tracks": candidates}), encoding="utf-8")
+        evidence_dir = series / "input" / "validation"
+        evidence_dir.mkdir()
+        (evidence_dir / "current-lyrics.json").write_text(json.dumps({
+            "url": "https://suno.com/song/candidate-1",
+            "lyrics": "[Intro]\n[Instrumental]\n\n[Verse]\n나",
+        }), encoding="utf-8")
+        (evidence_dir / "generation-manifest.json").write_text(json.dumps({
+            "candidate_ids": ["candidate-2"], "source_sha256": sources[2].sha256,
+            "inputs": {"lyrics": sources[2].lyrics, "style": sources[2].style,
+                       "exclude_styles": sources[2].exclude},
+        }), encoding="utf-8")
+        return series
+
+    def test_reordered_sources_bind_by_id_and_original_order(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_reordered_release(Path(tmp))
+            paths = ProjectPaths(series)
+            report = json.loads((series / "output" / "report.json").read_text())
+            bindings = resolve_playback_source_bindings(
+                paths, report["tracks"], read_filesystem_track_sources(paths))
+            self.assertEqual([bindings[i].source_order for i in (1, 2)], [2, 1])
+            self.assertEqual([bindings[i].prompt_status for i in (1, 2)], ["confirmed", "unverified"])
+            self.assertEqual(bindings[2].lyrics_match_status, "bracket_label_line_break_only")
+            section, _ = build_final_track_sources_section(
+                report, report["tracks"], {i: b.source for i, b in bindings.items()}, "filesystem", bindings)
+            self.assertIn("### 01. Renamed Two", section)
+            self.assertIn("### 02. Renamed One", section)
+            self.assertIn("submitted-style-two", section)
+            self.assertNotIn("old-style-one", section)
+            self.assertIn("[Intro]\n[Instrumental]", section)
+
+    def test_reordered_sources_reject_wrong_id_hash_and_missing_lyrics(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_reordered_release(Path(tmp))
+            paths = ProjectPaths(series)
+            report = json.loads((series / "output" / "report.json").read_text())
+            def resolve():
+                return resolve_playback_source_bindings(
+                    paths, report["tracks"], read_filesystem_track_sources(paths))
+            candidate_path = series / "input" / "suno-candidates.json"
+            candidates = json.loads(candidate_path.read_text())
+            candidates["tracks"][1]["decision"]["chosen_candidate_id"] = "wrong-id"
+            candidate_path.write_text(json.dumps(candidates))
+            with self.assertRaisesRegex(FinalizeUploadError, "selected ID differs"):
+                resolve()
+            candidates["tracks"][1]["decision"]["chosen_candidate_id"] = "candidate-1"
+            candidate_path.write_text(json.dumps(candidates))
+            manifest_path = series / "input" / "download-manifest.json"
+            manifest = json.loads(manifest_path.read_text())
+            manifest["tracks"][0]["sha256"] = "bad-hash"
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(FinalizeUploadError, "WAV hash"):
+                resolve()
+            manifest["tracks"][0]["sha256"] = report["tracks"][0]["sha256"]
+            manifest_path.write_text(json.dumps(manifest))
+            evidence_path = series / "input" / "validation" / "current-lyrics.json"
+            evidence = json.loads(evidence_path.read_text())
+            evidence["lyrics"] = "different words"
+            evidence_path.write_text(json.dumps(evidence))
+            with self.assertRaisesRegex(FinalizeUploadError, "lyrics differ"):
+                resolve()
+
+            evidence["lyrics"] = "[Intro]\n[Instrumental]\n\n[Verse]\n나"
+            evidence_path.write_text(json.dumps(evidence))
+            order_path = series / "input" / "playback-order.json"
+            order_data = json.loads(order_path.read_text())
+            order_data["slots"][0]["source_sha256"] = "bad-source-hash"
+            order_path.write_text(json.dumps(order_data))
+            with self.assertRaisesRegex(FinalizeUploadError, "source order/SHA"):
+                resolve()
+            order_data["slots"][0]["source_sha256"] = read_filesystem_track_sources(paths)[1].sha256
+            order_path.write_text(json.dumps(order_data))
+            generation_path = series / "input" / "validation" / "generation-manifest.json"
+            generation = json.loads(generation_path.read_text())
+            generation["inputs"]["style"] = "different generation style"
+            generation_path.write_text(json.dumps(generation))
+            with self.assertRaisesRegex(FinalizeUploadError, "generation input mismatch"):
+                resolve()
+
+    def test_reordered_sources_reject_unproven_generation_prompt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_reordered_release(Path(tmp))
+            paths = ProjectPaths(series)
+            candidate_path = series / "input" / "suno-candidates.json"
+            candidates = json.loads(candidate_path.read_text())
+            candidates["tracks"][1]["candidates"][0]["source_sha256_at_generation"] = "unverified-claim"
+            candidate_path.write_text(json.dumps(candidates))
+            report = json.loads((series / "output" / "report.json").read_text())
+            with self.assertRaisesRegex(FinalizeUploadError, "no matching manifest"):
+                resolve_playback_source_bindings(
+                    paths, report["tracks"], read_filesystem_track_sources(paths))
+
+    def test_reordered_release_verifies_archive_without_claiming_old_prompt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_reordered_release(Path(tmp))
+            paths = ProjectPaths(series)
+            report = json.loads((series / "output" / "report.json").read_text())
+            tracks = report["tracks"]
+            bindings = resolve_playback_source_bindings(paths, tracks, read_filesystem_track_sources(paths))
+            section, _ = build_final_track_sources_section(
+                report, tracks, {i: b.source for i, b in bindings.items()}, "filesystem", bindings)
+            first, _ = compute_track_timestamps(report, tracks)
+            description = f"{first[1]} - 1. Renamed Two\n{first[2]} - 2. Renamed One"
+            concept_path = series / "concept.md"
+            concept = CONCEPT_FINAL.replace("description\n```", description + "\n```")
+            concept_path.write_text(replace_final_track_sources_section(concept, section), encoding="utf-8")
+            with (series / "output" / "upload.csv").open("w", newline="", encoding="utf-8") as stream:
+                writer = csv.DictWriter(stream, fieldnames=["video_path", "title", "description", "tags", "thumbnail_path", "visibility"])
+                writer.writeheader()
+                writer.writerow({"video_path": "final.mkv", "title": "Playlist | 20:00 | Test | Wavvy",
+                                 "description": description, "tags": "tag1,tag2", "thumbnail_path": "thumb.jpg",
+                                 "visibility": "private"})
+            self.assertEqual(verify_release_package(paths), [])
+            saved = concept_path.read_text(encoding="utf-8")
+            concept_path.write_text(saved.replace("- Selected Candidate ID: `candidate-1`", "- Selected Candidate ID: `wrong`"))
+            self.assertTrue(any("archived selected source" in error for error in verify_release_package(paths)))
+            concept_path.write_text(saved.replace("Unverified for selected recording; see historical source separately", "old-style-one", 1))
+            self.assertTrue(any("historical STYLE" in error for error in verify_release_package(paths)))
+
     def make_release(self, root: Path) -> Path:
         series = make_series(root)
         report_path = series / "output" / "report.json"
@@ -1424,11 +1590,11 @@ class ReleaseVerificationTests(unittest.TestCase):
 
     def test_subtitles_strip_structure_but_keep_sung_lines(self):
         concept = CONCEPT_FINAL.replace("- Filename:", "- Source Checksum: `test`\n- Filename:")
-        concept = concept.replace("lyrics\n```", "[Verse 1]\n사랑해\n[Instrumental]\n(instrumental)\n```", 1)
+        concept = concept.replace("lyrics\n```", "[Intro] [Instrumental]\n[Verse 1] [Female]\n사랑해\n[Chorus] [Strong high chest-mix belt]\n[Chorus] 같이 웃어\n오늘도 [Breath] 좋아\n[Instrumental] [Rhodes reply]\n(instrumental)\n```", 1)
         tracks = [{"order": 1, "title": "One", "filename": "01__One__A__Genre__100.wav"},
                   {"order": 2, "title": "Two", "filename": "02__Two__B__Genre__110.wav"}]
-        self.assertEqual(build_untimed_subtitles(concept, tracks), "사랑해\n\nlyrics\n")
-        self.assertEqual(build_untimed_subtitles(concept, tracks, repeat=2), "사랑해\n\nlyrics\n\n사랑해\n\nlyrics\n")
+        self.assertEqual(build_untimed_subtitles(concept, tracks), "사랑해\n같이 웃어\n오늘도 좋아\n\nlyrics\n")
+        self.assertEqual(build_untimed_subtitles(concept, tracks, repeat=2), "사랑해\n같이 웃어\n오늘도 좋아\n\nlyrics\n\n사랑해\n같이 웃어\n오늘도 좋아\n\nlyrics\n")
         with tempfile.TemporaryDirectory() as tmp:
             series = make_series(Path(tmp), concept)
             report_path = series / "output" / "report.json"
@@ -1438,11 +1604,25 @@ class ReleaseVerificationTests(unittest.TestCase):
             result = CliRunner().invoke(cli, ["prepare-subtitles", str(series)])
             self.assertEqual(result.exit_code, 0, result.output)
             destination = series / "output" / "youtube_subtitles_ko_no_timing.txt"
-            self.assertEqual(destination.read_text(encoding="utf-8"), "사랑해\n\nlyrics\n\n사랑해\n\nlyrics\n")
+            self.assertEqual(destination.read_text(encoding="utf-8"), "사랑해\n같이 웃어\n오늘도 좋아\n\nlyrics\n\n사랑해\n같이 웃어\n오늘도 좋아\n\nlyrics\n")
             destination.write_text("human edit\n", encoding="utf-8")
             result = CliRunner().invoke(cli, ["prepare-subtitles", str(series)])
             self.assertNotEqual(result.exit_code, 0)
             self.assertEqual(destination.read_text(encoding="utf-8"), "human edit\n")
+
+    def test_current_selected_song_13_lyrics_do_not_leak_directions(self):
+        evidence = Path(__file__).resolve().parents[1] / "SERIES/17-30/input/validation/2026-10-22-publish-selected-20/02-current-lyrics.json"
+        current_lyrics = json.loads(evidence.read_text(encoding="utf-8"))["lyrics"]
+        concept = CONCEPT_FINAL.replace("- Filename:", "- Source Checksum: `test`\n- Filename:")
+        concept = concept.replace("lyrics\n```", current_lyrics + "\n```", 1)
+        tracks = [{"order": 1, "title": "One", "filename": "01__One__A__Genre__100.wav"},
+                  {"order": 2, "title": "Two", "filename": "02__Two__B__Genre__110.wav"}]
+        subtitles = build_untimed_subtitles(concept, tracks)
+        self.assertIn("버스 옆자리에 앉아", subtitles)
+        self.assertIn("이 노래 끝날 때까지", subtitles)
+        self.assertNotIn("[Intro]", subtitles)
+        self.assertNotIn("[Strong high chest-mix belt]", subtitles)
+        self.assertNotIn("[Rhodes reply]", subtitles)
 
     def test_verify_release_checks_identity_and_chapters(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1467,6 +1647,14 @@ class ReleaseVerificationTests(unittest.TestCase):
             ]}), encoding="utf-8")
             (series / "input" / "tracks" / manifest["tracks"][0]["input_filename"]).write_bytes(b"wrong-audio")
             self.assertTrue(any("WAV SHA-256" in error for error in verify_release_package(ProjectPaths(series))))
+
+    def test_verify_release_accepts_one_digit_chapter_numbers(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            series = self.make_release(Path(tmp))
+            for path in (series / "concept.md", series / "output" / "upload.csv"):
+                text = path.read_text(encoding="utf-8")
+                path.write_text(text.replace("01. One", "1. One").replace("02. Two", "2. Two"), encoding="utf-8")
+            self.assertEqual(verify_release_package(ProjectPaths(series)), [])
 
     def test_verify_release_prefers_current_final_selection_over_historical_candidates(self):
         with tempfile.TemporaryDirectory() as tmp:

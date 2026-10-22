@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 릴리스 부분 준비·출처/자막 독립 검토 완료)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 선택 Suno 20곡의 공개(Published)는 원시 재진입 기록으로 확인했다. 로컬 WAV는 3/20곡이며 다운로드 화면의 잔여 수량이 0이라 17곡은 미확보다. 1번 WAV만으로 30초 3840×2160 임시 preview를 만들고 오디오·영상 스트림 및 입력 해시를 확인했다. 재생번호→원번호→선택 ID·WAV SHA·가사 관찰/생성 입력을 연결하는 릴리스 도구와 회귀시험을 작성했다. 원번호 13의 현재 화면 가사는 이력 txt와 첫 구간 태그의 줄바꿈만 다르며, 실제 화면 가사를 자막 출처로 보존한다. 생성 STYLE/EXCLUDE 미확인은 확정하지 않는다. 자막에서 여러 대괄호 지시문만 있는 줄은 제거하고 지시문과 같은 줄의 가창 가사는 보존하도록 수정했다. 20곡 출처 임시 아카이브 [대조](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/subtitle-direction-check.json)는 가창 739행 순서·내용 보존, 남은 대괄호 0행이다. [원시 검사](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/command-results.json)는 unittest 68/68·doctor·state check·diff check PASS다. 젠 동의로 1번 곡에 시험한 Aside 앱 전용 36.44초 [녹음](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot-summary.json)은 전 샘플 0으로 무음이며 정확한 원인은 미확인이다. 원시 WAV는 로컬 `work/2026-10-22-internal-audio-test/`에 보존하고 나머지 17곡 녹음은 하지 않았다. 공식 state revision 58, `track_source_draft`, 로컬 오디오 3, 전체 보고서·완성 영상·자막 없음이다.
+Next-TODO: [출처 연결](reviews/2026-10-22-release-prep-review.md)과 [자막 수정](reviews/2026-10-22-subtitle-fix-review.md)의 격리 검토는 각각 CLEAN으로 회수됐다. 실제 소리가 나는 브라우저 질문에 젠은 “3”이라고 답해 Aside를 선택했고, 기존 Aside Suno 탭의 [추가 진단](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot2-coreaudio-during.json)에서 audio helper PID 73077 `running_output=true`를 관측했다. 두 번째 로컬 시험 파일은 실제 오디오 신호를 수신했지만 원본 시간 정렬·음질 판정은 진행 중이다. 공식 선택 WAV는 아직 3/20곡이다. 17곡 WAV가 확보된 뒤 전곡 렌더·출처 확인·실제 챕터·자막을 진행한다. YouTube 제목 전체는 젠 승인 전이고 업로드는 아직 하지 않았다.
+Commits: 이번 릴리스 코드·문서·검사 범위는 현재 커밋 전이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (폴더 이전·썸네일 정리 검토 완료, 영상 제작 재개 지시)
 Project: ~/Project/wavvy
 Agent: Codex

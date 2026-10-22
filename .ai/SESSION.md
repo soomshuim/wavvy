@@ -1,8 +1,16 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-22 (17:30 폴더 이전·썸네일 정리 검토 CLEAN, 영상 제작·업로드 승인, 제목은 젠 확인 대기)
+> Last updated: 2026-10-22 (17:30 공개 Suno 20곡·로컬 WAV 3곡, 1곡 30초 미리보기, 녹음 시험 무음, 제목은 젠 확인 대기)
 
 ---
+
+## 2026-10-22 [CDX] 릴리스 부분 준비·출처 연결 코드
+- 젠의 “이제 영상 제작하고 업로드하자. 단 제목은 내 컨펌 받아”에 따라 YouTube 문안 초안을 [계획](plans/2026-10-22-1730-release.md)과 `SERIES/17-30/concept.md`에 적었다. **제목 전체의 사용자 승인은 아직 없다.** 실제 챕터 시각은 보고서 생성 뒤에만 채운다.
+- 선택 Suno 20곡의 공개(Published)는 [재진입 관찰](../SERIES/17-30/input/validation/2026-10-22-publish-selected-20/publication-audit-final.json)로 확인했다. 로컬 WAV는 **3/20곡**이고 4번 다운로드 화면에 잔여 다운로드 0이 표시돼 나머지 17곡·전체 렌더·보고서·자막·YouTube 업로드는 아직 없다. 공식 state는 `track_source_draft`, audio_files 3, report/final 없음이다.
+- 1번 WAV만으로 30초 `output/preview.mp4`를 만들었다. 3840×2160 H.264 영상, 48kHz 스테레오 AAC 오디오, 30.000초, 프레임·디코드·입력 해시를 확인했다. 이 부분 산출물을 전체20곡 영상으로 취급하지 않는다.
+- 재생번호가 원번호와 다른 20곡의 출처를 Suno 선택 ID·후보 기록·WAV 해시·생성 manifest 또는 화면 가사에 직접 묶는 도구 수정과 회귀시험을 작성했다. 실제 생성 STYLE/EXCLUDE가 없는 Cover는 `unverified`로 남긴다. 원번호 13 화면 가사는 역사 txt와 첫 태그 줄바꿈만 달라 [원문 대조](../SERIES/17-30/input/validation/2026-10-22-publish-selected-20/02-lyrics-comparison.json)를 보존하고 화면 가사를 자막 출처로 삼는다. [출처 연결 독립 검토](reviews/2026-10-22-release-prep-review.md)는 CLEAN이다. 전체20곡 실행은 WAV 미확보로 대기다.
+- 첫 독립 검토에서 기존 자막 함수가 `[Chorus] [Strong high chest-mix belt]`처럼 한 줄의 복수 지시문을 자막에 남기는 결함을 확인했다. 순수 지시문을 제거하고 같은 줄의 가창 문장은 보존하도록 수정했다. [20곡 출처 임시 자막 대조](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/subtitle-direction-check.json)는 가창 739행을 순서대로 보존하고 대괄호 지시문 0행을 확인했다. [재검사](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/command-results.json)는 68/68 PASS이고 [자막 수정 독립 검토](reviews/2026-10-22-subtitle-fix-review.md)도 CLEAN이다. 이 판정들은 전체 영상·전곡 음질·업로드 완료 판정이 아니다.
+- 젠이 동의한 1번 곡 30초 내부 오디오 시험은 [요약 원시 기록](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot-summary.json)에 남겼다. Aside 앱(PID 640)만 녹음한 36.44초 WAV는 전 샘플이 0으로 무음이다. 다운로드한 원본 1번 WAV는 정상 신호가 있으며, 재생 중 Aside 본체·오디오 helper의 출력 활성 관찰도 두 번 모두 false였다. 정확한 원인은 미확인이고 17곡의 녹음은 하지 않았다. 원시 WAV·도우미·진단은 로컬 `work/2026-10-22-internal-audio-test/`에 보존한다. 실제 소리가 나는 브라우저 질문에 젠은 “3”이라고 답해 Aside를 선택했다. 이후 [기존 Suno 탭 진단](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot2-coreaudio-during.json)에서 audio helper PID 73077의 `running_output=true`가 관측됐다. 두 번째 로컬 시험 파일은 실제 오디오 신호를 수신했으나 원본과의 시간 정렬·음질 판정은 진행 중이다. 공식 선택 WAV는 계속 3/20곡이며 YouTube 제목 승인도 대기다.
 
 ## 2026-10-22 [CDX] 폴더 이전·썸네일 정리 검토 완료와 영상 제작 재개 지시
 - [독립 검토](reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이다. 이동·정리 범위의 원문·원시 근거·선택 20곡 보존, 삭제 15개, 상태·diff 검사를 대조했다.

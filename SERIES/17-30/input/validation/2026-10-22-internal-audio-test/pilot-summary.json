@@ -1,0 +1,173 @@
+{
+  "observed_at_utc": "2026-10-22T09:38:22.279906+00:00",
+  "status": "pilot_recorded_but_all_silence",
+  "song": {
+    "id": "08d90306-9cf5-43f2-8fad-df2d4d2adae8",
+    "title": "1. 오늘의 기록",
+    "url": "https://suno.com/song/08d90306-9cf5-43f2-8fad-df2d4d2adae8"
+  },
+  "tool": "mcp__aside__repl for Suno playback; local Swift ScreenCaptureKit helper for audio capture",
+  "capture": {
+    "included_application_pid": 640,
+    "bundle_id": "at.studio.AsideBrowser",
+    "captures_audio": true,
+    "captures_microphone": false,
+    "playback_ui_from_seconds": 0,
+    "playback_ui_to_seconds": 35.8,
+    "callback_buffers": 1822,
+    "callback_frames": 1749120,
+    "write_error": null,
+    "output_path": "work/2026-10-22-internal-audio-test/01-sck-app-only-test.wav",
+    "stats": {
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "frames": 1749120,
+      "sample_format": "float32",
+      "duration_from_frames_seconds": 36.44,
+      "peak_absolute": 0.0,
+      "rms": 0.0,
+      "zero_sample_fraction": 1.0,
+      "clipped_sample_fraction_abs_ge_0_999": 0.0,
+      "sha256": "5810e458f84c196441ea6b820de408217127e6dfd1e90a5794569ce6b545e5f1",
+      "size_bytes": 13997056
+    }
+  },
+  "downloaded_source": {
+    "path": "SERIES/17-30/input/tracks/01__오늘의 기록__Bright__Modern R&B__NA.wav",
+    "stats": {
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "frames": 9463680,
+      "sample_format": "int16",
+      "duration_from_frames_seconds": 197.16,
+      "peak_absolute": 0.6090087890625,
+      "rms": 0.12348949870561658,
+      "zero_sample_fraction": 0.0020155478629877597,
+      "clipped_sample_fraction_abs_ge_0_999": 0.0,
+      "sha256": "3eba557ff6caee2361922c2b35693c651bf699438fb2243786ba6cae24dc4e7d",
+      "size_bytes": 37868560
+    }
+  },
+  "coreaudio": {
+    "before": {
+      "observed_at": "2026-10-22T09:35:32Z",
+      "process_count": 34,
+      "rows": [
+        {
+          "app_name": "Aside",
+          "audio_object_id": 101,
+          "bundle_id": "at.studio.AsideBrowser",
+          "pid": 640,
+          "running_output": false
+        },
+        {
+          "app_name": "",
+          "audio_object_id": 102,
+          "bundle_id": "",
+          "pid": 73077,
+          "running_output": false
+        },
+        {
+          "app_name": "Aside Helper",
+          "audio_object_id": 103,
+          "bundle_id": "at.studio.AsideBrowser.helper",
+          "pid": 73078,
+          "running_output": false
+        }
+      ]
+    },
+    "during": {
+      "observed_at": "2026-10-22T09:35:47Z",
+      "process_count": 34,
+      "rows": [
+        {
+          "app_name": "Aside",
+          "audio_object_id": 101,
+          "bundle_id": "at.studio.AsideBrowser",
+          "pid": 640,
+          "running_output": false
+        },
+        {
+          "app_name": "",
+          "audio_object_id": 102,
+          "bundle_id": "",
+          "pid": 73077,
+          "running_output": false
+        },
+        {
+          "app_name": "Aside Helper",
+          "audio_object_id": 103,
+          "bundle_id": "at.studio.AsideBrowser.helper",
+          "pid": 73078,
+          "running_output": false
+        }
+      ]
+    },
+    "during_second_sample": {
+      "observed_at": "2026-10-22T09:35:59Z",
+      "process_count": 34,
+      "rows": [
+        {
+          "app_name": "Aside",
+          "audio_object_id": 101,
+          "bundle_id": "at.studio.AsideBrowser",
+          "pid": 640,
+          "running_output": false
+        },
+        {
+          "app_name": "",
+          "audio_object_id": 102,
+          "bundle_id": "",
+          "pid": 73077,
+          "running_output": false
+        },
+        {
+          "app_name": "Aside Helper",
+          "audio_object_id": 103,
+          "bundle_id": "at.studio.AsideBrowser.helper",
+          "pid": 73078,
+          "running_output": false
+        }
+      ]
+    },
+    "process_flags": {
+      "observed_at_utc": "2026-10-22T09:37:56.732311+00:00",
+      "rows": [
+        {
+          "pid": 640,
+          "ppid": 1,
+          "process_name": "Aside",
+          "audio_disable_flags": []
+        },
+        {
+          "pid": 73077,
+          "ppid": 640,
+          "process_name": "Aside Helper (audio.mojom.AudioService)",
+          "audio_disable_flags": []
+        }
+      ],
+      "scope": "only three named flags checked; full argv omitted"
+    },
+    "sdk_header": "MacOSX26.2.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardware.h:1953-1983"
+  },
+  "interpretation": "The captured WAV is fully silent despite Suno UI progress. While the UI media element showed playback, CoreAudio did not report active output for Aside main PID or its audio helper PID in two during-playback samples. The exact cause remains unconfirmed; an app-only recording of remaining songs is not justified by this pilot.",
+  "limitations": [
+    "No raw amplitude measurement was made on ScreenCaptureKit callback buffers before AVAudioFile conversion.",
+    "No physical speaker/headphone listening observation was made.",
+    "The Suno tab was opened independently via Aside MCP; its local macOS window was not confirmed on-screen during recording.",
+    "No system-wide capture or CoreAudio tap capture was attempted."
+  ],
+  "raw_files": [
+    "capture.swift",
+    "diagnose.swift",
+    "capture-run.txt",
+    "01-sck-app-only-test.wav",
+    "probe-captured.json",
+    "probe-source.json",
+    "coreaudio-before.json",
+    "coreaudio-during.json",
+    "coreaudio-during-2.json",
+    "audio-process-flags.json",
+    "suno-song1-after-pause-snapshot.txt"
+  ]
+}

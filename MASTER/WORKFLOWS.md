@@ -77,6 +77,8 @@ python3 wavvy.py finalize-upload SERIES/[시리즈]
 
 `finalize-upload`는 `input/tracks/*.txt`의 STYLE/EXCLUDE/LYRICS와 `output/report.json`의 실제 타임스탬프를 `concept.md > Final Track Sources`로 병합한다. 병합 검증이 통과한 경우에만 txt 삭제가 허용된다. 삭제된 txt를 git history에서 복구해야 할 때는 `--restore-from <commitish>`를 사용한다.
 
+원번호와 재생번호가 다른 보컬 시리즈는 `input/playback-order.json`의 재생번호→원번호→선택 Suno ID를 `suno-candidates.json`, 다운로드 manifest, 렌더 보고서의 WAV SHA-256과 함께 대조한다. 원번호 txt는 이력·가사 근거로 보존하며 자동 삭제하지 않는다. 선택 ID의 생성 manifest가 STYLE·EXCLUDE·LYRICS와 원문 해시까지 일치할 때만 생성 프롬프트를 `confirmed`로 아카이브한다. Cover 등 생성 입력을 모르면 화면 가사와 선택 ID의 연결을 확인하고 STYLE·EXCLUDE는 `unverified`로 기록한다. 화면 가사와 이력 원문의 대괄호 구간 지시가 한 줄/두 줄로 갈린 경우에는 실제 화면 가사를 자막 출처로 사용하고 그 차이를 명시한다. 다른 가사 차이는 중단한다.
+
 최종 선택 음원이 무가사이고 `concept.md`에 Instrumental 및 `## Final Selected Audio Sources`를 명시한 시리즈는 `input/final-selected-audio-sources.json`을 사용한다. 이 opt-in 계약의 각 곡에는 순서·제목·최종 후보 ID·WAV SHA256·렌더 보고서에서 계산한 실제 시작시각·`raw_prompt_status`(`confirmed`/`unverified`)를 기록한다. 화면에서 본 스타일 설명은 `observed_style_description`과 `observation_ref`로 별도 기록하며 원본 STYLE이라고 주장하지 않는다. `confirmed`는 생성 manifest의 후보 ID→`source_txt`·`source_sha256` 연결과 현재 txt 해시가 일치할 때만 허용한다. `unverified`에는 원문 txt/해시를 넣지 않는다. 게이트는 최종 선택·다운로드 manifest, 보고서, 실제 WAV 해시와 1:1로 대조한다. 검증된 무가사 경로는 가사 자막을 요구하지 않는다. 과거 보컬 txt는 이 경로의 출처로 승격하지 않고 그대로 보존한다. `finalize-upload`는 이 경우에도 잘못된 보컬 txt 결합을 거부한다.
 
 ---

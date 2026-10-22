@@ -1,0 +1,23 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "기분좋아져라 by @wavvy24 | Suno" [url=https://suno.com/playlist/fcacea59-6c41-426e-aaad-444bcd91de74]
+- main
+- region "Bottom notifications" [ref=e153]
+- region "Top notifications" [ref=e154]
+- region "Bottom edge notifications" [ref=e155]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "10. 계단 끝에서" [ref=e981] [focused]
+  - button "Close" [ref=e982]
+  - text: "10. 계단 끝에서"
+  - button "Upload" [ref=e983]
+  - button "Create" [ref=e984]
+  - button "Animate" [ref=e985]
+  - text: "Allow comments"
+  - switch [ref=e986] [checked]
+  - text: "Allow remix"
+  - switch [ref=e987] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e988]
+  - button "Edit caption, lyrics and styles" [ref=e989]
+  - button "Save" [ref=e990] [disabled]
+  - button "Publish" [ref=e991]

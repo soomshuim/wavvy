@@ -167,6 +167,19 @@ class TrackSource:
         return "\n\n".join(meta_sections).strip()
 
 
+@dataclass(frozen=True)
+class PlaybackSourceBinding:
+    """Verified lyric source, distinct from a selected song's generation prompt."""
+    source: TrackSource
+    source_order: int
+    source_path: str
+    candidate_id: str
+    lyrics_evidence_ref: str
+    prompt_status: str
+    selected_lyrics: str
+    lyrics_match_status: str
+
+
 # =============================================================================
 # UTILITY FUNCTIONS
 # =============================================================================
@@ -1743,6 +1756,145 @@ def match_sources_to_report_tracks(sources: list[TrackSource], report_tracks: li
     return matched
 
 
+def resolve_playback_source_bindings(
+    paths: ProjectPaths, report_tracks: list[dict], sources: list[TrackSource]
+) -> Optional[dict[int, PlaybackSourceBinding]]:
+    """Bind a reordered release by selected ID and original order, never by renamed title."""
+    order_path = paths.input_dir / "playback-order.json"
+    if not order_path.exists():
+        return None  # Older series retain their title-based contract.
+    try:
+        order_data = json.loads(order_path.read_text(encoding="utf-8"))
+        candidate_data = json.loads((paths.input_dir / "suno-candidates.json").read_text(encoding="utf-8"))
+        download = json.loads((paths.input_dir / "download-manifest.json").read_text(encoding="utf-8"))
+        slots = order_data["slots"]
+        candidates = candidate_data["tracks"]
+        downloaded = download["tracks"]
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        raise FinalizeUploadError(f"Playback source evidence missing/invalid: {error}") from error
+
+    count = len(report_tracks)
+    if (not count or len(slots) != count or len(candidates) != count or len(downloaded) != count
+            or not isinstance(slots, list)):
+        raise FinalizeUploadError("Playback/report/candidate/download counts differ")
+    try:
+        by_slot = {int(item["playback_order"]): item for item in slots}
+        by_source = {int(item["order"]): item for item in candidates}
+        by_download = {int(item["order"]): item for item in downloaded}
+    except (KeyError, TypeError, ValueError) as error:
+        raise FinalizeUploadError(f"Playback order fields invalid: {error}") from error
+    expected_orders = set(range(1, count + 1))
+    if (set(by_slot) != expected_orders or set(by_source) != expected_orders
+            or set(by_download) != expected_orders or len(by_slot) != count
+            or len(by_source) != count or len(by_download) != count
+            or {int(item["source_order"]) for item in slots} != expected_orders):
+        raise FinalizeUploadError("Playback/source/download orders missing or duplicated")
+    if (order_data.get("workspace") != candidate_data.get("workspace")
+            or order_data.get("workspace") != download.get("workspace")):
+        raise FinalizeUploadError("Playback/candidate/download workspaces differ")
+
+    manifests = []
+    for manifest_path in sorted((paths.input_dir / "validation").rglob("generation-manifest.json")):
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as error:
+            raise FinalizeUploadError(f"Invalid generation evidence {manifest_path}: {error}") from error
+        manifests.extend((entry, manifest_path) for entry in manifest.get("entries", [manifest]))
+
+    def evidence_file(relative: str) -> Path:
+        if not isinstance(relative, str) or not relative or Path(relative).is_absolute():
+            raise FinalizeUploadError(f"Unsafe playback evidence path: {relative!r}")
+        resolved = (paths.base / relative).resolve()
+        if not resolved.is_relative_to(paths.base.resolve()) or not resolved.is_file():
+            raise FinalizeUploadError(f"Playback evidence missing/outside series: {relative}")
+        return resolved
+
+    known_sources = {Path(source.label).resolve(): source for source in sources}
+    bindings = {}
+    seen_ids = set()
+    for track in report_tracks:
+        order = int(track["order"])
+        slot = by_slot[order]
+        original = int(slot["source_order"])
+        candidate_track = by_source[original]
+        current = slot.get("current_observed_candidates", [])
+        if (slot.get("title") != track.get("title") or candidate_track.get("title") != track.get("title")
+                or len(current) != 1 or not current[0].get("id")
+                or slot.get("candidate_selection_status") != "user_selected_for_20_song_sequence"):
+            raise FinalizeUploadError(f"Track {order}: playback title/selection differs from report")
+        candidate_id = current[0]["id"]
+        if candidate_id in seen_ids:
+            raise FinalizeUploadError(f"Track {order}: duplicate selected candidate ID")
+        seen_ids.add(candidate_id)
+        decision = candidate_track.get("decision", {})
+        if (decision.get("chosen_candidate_id") != candidate_id
+                or decision.get("status") != "user_selected_for_20_song_sequence"
+                or candidate_id not in {item.get("id") for item in candidate_track.get("candidates", [])}):
+            raise FinalizeUploadError(f"Track {order}: selected ID differs from logical source candidate")
+        candidate = next(item for item in candidate_track["candidates"] if item.get("id") == candidate_id)
+
+        recorded_source = slot.get("source_txt") or candidate_track.get("source_before_user_remixes", {}).get("source_txt")
+        recorded_sha = slot.get("source_sha256") or candidate_track.get("source_before_user_remixes", {}).get("source_sha256")
+        source_path = evidence_file(recorded_source)
+        source = known_sources.get(source_path) or parse_track_source(str(source_path), source_path.read_text(encoding="utf-8"))
+        if source.sha256 != recorded_sha or int(source.metadata.get("Order", "0")) != original:
+            raise FinalizeUploadError(f"Track {order}: historical source order/SHA differs from playback evidence")
+
+        item = by_download[order]
+        audio = paths.tracks_dir / str(track.get("filename", ""))
+        if (item.get("candidate_id") != candidate_id or item.get("approved_title") != track.get("title")
+                or item.get("input_filename") != track.get("filename") or not audio.is_file()
+                or not track.get("sha256") or item.get("sha256") != track["sha256"]
+                or compute_sha256(audio) != track["sha256"]):
+            raise FinalizeUploadError(f"Track {order}: selected ID/WAV hash differs from download/report")
+
+        generation = [(entry, ref) for entry, ref in manifests if candidate_id in entry.get("candidate_ids", [])]
+        if len(generation) > 1:
+            raise FinalizeUploadError(f"Track {order}: ambiguous generation evidence for selected ID")
+        if generation:
+            entry, ref = generation[0]
+            inputs = entry.get("inputs", {})
+            if (entry.get("source_sha256") != source.sha256 or inputs.get("lyrics") != source.lyrics
+                    or inputs.get("style") != source.style or inputs.get("exclude_styles") != source.exclude):
+                raise FinalizeUploadError(f"Track {order}: candidate-to-source generation input mismatch")
+            lyrics_ref = ref.relative_to(paths.base).as_posix()
+            prompt_status = "confirmed"
+            selected_lyrics = source.lyrics
+            lyrics_match_status = "exact"
+        else:
+            if candidate.get("source_sha256_at_generation"):
+                raise FinalizeUploadError(f"Track {order}: claimed generation source has no matching manifest")
+            lyrics_ref = slot.get("lyrics_evidence_ref") or candidate.get("observation_ref")
+            evidence = evidence_file(lyrics_ref)
+            if evidence.suffix == ".json":
+                observed = json.loads(evidence.read_text(encoding="utf-8"))
+                observed_lyrics = observed.get("lyrics")
+                observed_id = observed.get("url", "").rstrip("/").split("/")[-1]
+                if observed_id != candidate_id or not isinstance(observed_lyrics, str):
+                    raise FinalizeUploadError(f"Track {order}: selected ID/lyrics not bound by detail evidence")
+            else:
+                identity_ref = slot.get("lyrics_identity_ref")
+                observed_lyrics = evidence.read_text(encoding="utf-8").strip()
+                if not identity_ref:
+                    raise FinalizeUploadError(f"Track {order}: selected lyrics evidence unbound")
+                if candidate_id not in evidence_file(identity_ref).read_text(encoding="utf-8"):
+                    raise FinalizeUploadError(f"Track {order}: lyrics evidence identity mismatch")
+            # The displayed detail can put adjacent bracket labels on separate lines.
+            # Preserve its actual text for subtitles; reject changes to words or labels.
+            normalize_labels = lambda value: re.sub(r"(?<=\]) (?=\[)", "\n", value)
+            if normalize_labels(observed_lyrics) != normalize_labels(source.lyrics):
+                raise FinalizeUploadError(f"Track {order}: selected lyrics differ from historical source")
+            selected_lyrics = observed_lyrics
+            lyrics_match_status = "exact" if observed_lyrics == source.lyrics else "bracket_label_line_break_only"
+            prompt_status = "unverified"
+
+        bindings[order] = PlaybackSourceBinding(
+            source, original, recorded_source, candidate_id, lyrics_ref, prompt_status,
+            selected_lyrics, lyrics_match_status,
+        )
+    return bindings
+
+
 def verify_final_selection_source_provenance(
     paths: ProjectPaths, report_tracks: list[dict], matched_sources: dict[int, TrackSource]
 ) -> None:
@@ -1824,7 +1976,7 @@ def compute_track_timestamps(report: dict, report_tracks: list[dict]) -> tuple[d
 def extract_upload_tracklist_timestamps(concept_text: str) -> dict[int, str]:
     """Extract first-pass upload-facing tracklist timestamps from concept.md, if present."""
     timestamps = {}
-    pattern = re.compile(r"^[^\n\d]*(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2})\.\s+", re.MULTILINE)
+    pattern = re.compile(r"^[^\n\d]*(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{1,2})\.\s+", re.MULTILINE)
     for match in pattern.finditer(concept_text):
         order = int(match.group(2))
         if order not in timestamps:
@@ -1843,6 +1995,7 @@ def build_final_track_sources_section(
     report_tracks: list[dict],
     matched_sources: dict[int, TrackSource],
     source_origin: str,
+    playback_bindings: Optional[dict[int, PlaybackSourceBinding]] = None,
 ) -> tuple[str, list[str]]:
     """Build the concept.md Final Track Sources archive section."""
     first_ts, repeat_ts = compute_track_timestamps(report, report_tracks)
@@ -1861,9 +2014,12 @@ def build_final_track_sources_section(
         order = int(track.get("order"))
         source = matched_sources[order]
         metadata = source.metadata
-        source_type = metadata.get("Type") or (str(track.get("mood", ""))[:1] if track.get("mood") else "")
-        source_bpm = metadata.get("BPM") or str(track.get("bpm") or "unknown")
-        exclude = source.exclude or "None"
+        binding = playback_bindings.get(order) if playback_bindings else None
+        prompt_confirmed = binding is None or binding.prompt_status == "confirmed"
+        source_type = (metadata.get("Type") or (str(track.get("mood", ""))[:1] if track.get("mood") else "")) if prompt_confirmed else "Unknown"
+        source_bpm = (metadata.get("BPM") or str(track.get("bpm") or "unknown")) if prompt_confirmed else "Unknown"
+        exclude = (source.exclude or "None") if prompt_confirmed else "Unverified for selected recording; see historical source separately"
+        style = source.style if prompt_confirmed else "Unverified for selected recording; see historical source separately"
 
         lines.extend([
             f"### {order:02d}. {track.get('title', '')}",
@@ -1878,17 +2034,27 @@ def build_final_track_sources_section(
             f"- Mood: {track.get('mood', '')}",
             f"- Genre: {track.get('genre', '')}",
             f"- Type: {source_type}",
-            f"- BPM: {track.get('bpm') if track.get('bpm') is not None else source_bpm}",
-            f"- Key: {metadata.get('Key', '') or 'Unknown'}",
-            f"- Length: {metadata.get('Length', '') or 'Unknown'}",
-            f"- Vocal: {metadata.get('Vocal', '') or 'Unknown'}",
+            f"- BPM: {(track.get('bpm') if track.get('bpm') is not None else source_bpm) if prompt_confirmed else 'Unknown'}",
+            f"- Key: {(metadata.get('Key', '') or 'Unknown') if prompt_confirmed else 'Unknown'}",
+            f"- Length: {(metadata.get('Length', '') or 'Unknown') if prompt_confirmed else 'Unknown'}",
+            f"- Vocal: {(metadata.get('Vocal', '') or 'Unknown') if prompt_confirmed else 'Unknown'}",
             f"- SHA-256: `{track.get('sha256', '')}`",
             f"- Source Title: {source.source_title or 'Unknown'}",
             f"- Source Checksum: `{source.sha256}`",
+        ])
+        if binding:
+            lines.extend([
+                f"- Original Source Order: {binding.source_order}",
+                f"- Selected Candidate ID: `{binding.candidate_id}`",
+                f"- Lyrics Evidence: `{binding.lyrics_evidence_ref}` ({binding.lyrics_match_status})",
+                f"- Historical Source: `{binding.source_path}`",
+                f"- Generation Prompt Status: {binding.prompt_status}",
+            ])
+        lines.extend([
             "",
             "#### STYLE",
             "",
-            *fenced_text_block(source.style),
+            *fenced_text_block(style),
             "",
             "#### EXCLUDE",
             "",
@@ -1896,10 +2062,10 @@ def build_final_track_sources_section(
             "",
             "#### LYRICS",
             "",
-            *fenced_text_block(source.lyrics),
+            *fenced_text_block(binding.selected_lyrics if binding else source.lyrics),
             "",
         ])
-        if source.meta:
+        if source.meta and prompt_confirmed:
             lines.extend([
                 "#### META",
                 "",
@@ -1986,12 +2152,16 @@ def build_untimed_subtitles(concept_text: str, report_tracks: list[dict], repeat
         lyric_block = re.search(r"^#### LYRICS\s*\n\s*```(?:text)?\s*\n([\s\S]*?)\n```", block.group(0), flags=re.MULTILINE)
         if not lyric_block:
             raise FinalizeUploadError(f"Track {order:02d}: LYRICS text block missing")
-        lines = [
-            line.strip() for line in lyric_block.group(1).splitlines()
-            if line.strip()
-            and not re.fullmatch(r"\[[^\]]+\]", line.strip())
-            and not re.fullmatch(r"\(instrumental[^)]*\)", line.strip(), flags=re.IGNORECASE)
-        ]
+        lines = []
+        for raw_line in lyric_block.group(1).splitlines():
+            line = raw_line.strip()
+            if not line or re.fullmatch(r"\(instrumental[^)]*\)", line, flags=re.IGNORECASE):
+                continue
+            # Square brackets are section/performance directions, including
+            # multiple labels on one line. Keep any sung words on that line.
+            sung = re.sub(r" {2,}", " ", re.sub(r"\[[^\]\n]+\]", "", line)).strip()
+            if sung:
+                lines.append(sung)
         if not lines:
             raise FinalizeUploadError(f"Track {order:02d}: no subtitle lines")
         songs.append("\n".join(lines))
@@ -2044,7 +2214,15 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
 
     selection_paths = sorted((paths.base / "input").glob("suno-final-selection*.json"))
     candidate_path = paths.base / "input" / "suno-candidates.json"
-    if len(selection_paths) > 1:
+    playback_bindings = None
+    if (paths.input_dir / "playback-order.json").exists():
+        try:
+            playback_bindings = resolve_playback_source_bindings(
+                paths, tracks, read_filesystem_track_sources(paths)
+            )
+        except (FinalizeUploadError, OSError, ValueError, KeyError, TypeError) as error:
+            errors.append(f"Playback source binding: {error}")
+    elif len(selection_paths) > 1:
         errors.append("Multiple suno-final-selection manifests; current selection is ambiguous")
     elif selection_paths:
         selection_path = selection_paths[0]
@@ -2101,6 +2279,44 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
         except (ValueError, OSError, KeyError, TypeError) as error:
             errors.append(f"Invalid suno-candidates.json: {error}")
 
+    if playback_bindings:
+        concept_text = (paths.base / "concept.md").read_text(encoding="utf-8")
+        errors.extend(validate_final_track_sources_archive(concept_text, tracks))
+        heading = re.search(r"^## Final Track Sources\s*$", concept_text, flags=re.MULTILINE)
+        archive = ""
+        if heading:
+            next_heading = re.search(r"^## ", concept_text[heading.end():], flags=re.MULTILINE)
+            end = heading.end() + next_heading.start() if next_heading else len(concept_text)
+            archive = concept_text[heading.start():end]
+        for track in tracks:
+            order = int(track["order"])
+            binding = playback_bindings[order]
+            block = re.search(
+                rf"(?m)^### {order:02d}\. .*$([\s\S]*?)(?=^### \d{{2}}\. |^## |\Z)",
+                archive,
+            )
+            if not block:
+                continue  # validate_final_track_sources_archive already reports this block.
+            archived = block.group(0)
+            required = (
+                f"- SHA-256: `{track['sha256']}`",
+                f"- Source Checksum: `{binding.source.sha256}`",
+                f"- Original Source Order: {binding.source_order}",
+                f"- Selected Candidate ID: `{binding.candidate_id}`",
+                f"- Historical Source: `{binding.source_path}`",
+                f"- Lyrics Evidence: `{binding.lyrics_evidence_ref}` ({binding.lyrics_match_status})",
+                f"- Generation Prompt Status: {binding.prompt_status}",
+                "#### LYRICS\n\n" + "\n".join(fenced_text_block(binding.selected_lyrics)),
+            )
+            if any(item not in archived for item in required):
+                errors.append(f"Track {order:02d}: archived selected source/lyrics differs from evidence")
+            if binding.prompt_status == "unverified" and binding.source.style in archived:
+                errors.append(f"Track {order:02d}: historical STYLE presented as selected generation input")
+            if binding.prompt_status == "confirmed" and (
+                "#### STYLE\n\n" + "\n".join(fenced_text_block(binding.source.style)) not in archived
+                or "#### EXCLUDE\n\n" + "\n".join(fenced_text_block(binding.source.exclude or "None")) not in archived
+            ):
+                errors.append(f"Track {order:02d}: archived confirmed generation prompt differs")
     metadata = parse_concept_youtube_metadata(paths)
     if not paths.upload_csv.exists():
         errors.append("Missing output/upload.csv")
@@ -2120,7 +2336,7 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
             _, _, upload_copy_errors = check_upload_copy(paths.base, report, require_4k=True)
             errors.extend(upload_copy_errors)
     description = metadata.get("description", "")
-    chapters = re.findall(r"(?m)^[^\n]*?(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2})\.\s+([^\n]+)$", description)
+    chapters = re.findall(r"(?m)^[^\n]*?(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{1,2})\.\s+([^\n]+)$", description)
     first, repeated = compute_track_timestamps(report, tracks)
     expected = [(first[int(t["order"])], int(t["order"]), t["title"]) for t in tracks]
     expected += [(repeated[int(t["order"])], int(t["order"]), t["title"]) for t in tracks if repeated]
@@ -2175,8 +2391,13 @@ def finalize_upload_sources(
 
     report, report_tracks = load_finalize_report(paths)
     sources, source_origin = collect_track_sources(paths, restore_from)
-    matched_sources = match_sources_to_report_tracks(sources, report_tracks)
-    verify_final_selection_source_provenance(paths, report_tracks, matched_sources)
+    playback_bindings = resolve_playback_source_bindings(paths, report_tracks, sources)
+    if playback_bindings is None:
+        matched_sources = match_sources_to_report_tracks(sources, report_tracks)
+        verify_final_selection_source_provenance(paths, report_tracks, matched_sources)
+    else:
+        matched_sources = {order: item.source for order, item in playback_bindings.items()}
+        keep_txt = True  # The playback map and later verification retain original-numbered sources.
 
     concept_text = concept_path.read_text(encoding="utf-8")
     upload_timestamps = extract_upload_tracklist_timestamps(concept_text)
@@ -2187,7 +2408,9 @@ def finalize_upload_sources(
                 f"Track {order:02d} upload timestamp {timestamp} != report timestamp {computed_timestamps[order]}"
             )
 
-    section, _ = build_final_track_sources_section(report, report_tracks, matched_sources, source_origin)
+    section, _ = build_final_track_sources_section(
+        report, report_tracks, matched_sources, source_origin, playback_bindings
+    )
     new_concept_text = replace_final_track_sources_section(concept_text, section)
     archive_errors = validate_final_track_sources_archive(new_concept_text, report_tracks)
     if archive_errors:

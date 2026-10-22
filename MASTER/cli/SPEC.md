@@ -144,6 +144,8 @@ python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 
 `prepare-subtitles`는 `Final Track Sources`의 노랫말에서 구간 지시를 제외하고 `report.json`의 반복 횟수만큼 이어 붙여 시간 표시 없는 한국어 자막을 만든다. 기존 자막이 다르면 덮어쓰지 않고 중단한다. `verify-release`는 선택 WAV의 해시·제목·순서·길이를 `download-manifest.json`과 렌더 보고서에 대조한다. 후보 기록이 있으면 채택 ID와 원본 txt 해시도 확인한다. 유튜브 문안의 제목·설명·태그와 실제 시작 시각·반복 챕터를 `upload.csv`와 보고서에 대조한다. 업로드 직전에 두 명령과 `upload-ready` 게이트를 통과해야 한다.
 
+`input/playback-order.json`이 있는 시리즈는 표시 제목으로 원문을 추정하지 않고 재생번호·원번호·선택 ID·WAV 해시·가사 관찰 및 생성 manifest를 함께 묶는다. 생성 입력 근거가 없으면 과거 txt의 STYLE/EXCLUDE를 현재 선택곡의 프롬프트로 표시하지 않는다. 챕터 번호는 `1.`/`01.`처럼 한 자리·두 자리 숫자를 모두 읽고 실제 보고서 순서와 대조한다. 이 경로의 `finalize-upload`는 원번호 txt를 보존한다.
+
 ---
 
 ## 6. 영상 패키징 워크플로우
