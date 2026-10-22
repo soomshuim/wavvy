@@ -1,0 +1,290 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=4a61c72f-425f-4e82-98b9-2abc0577920c]
+- link "Suno logo" [ref=e1]:
+  - image "Suno logo"
+- button "Collapse sidebar" [ref=e2]
+- link "Home" [ref=e3]
+- link "Explore" [ref=e4]
+- link "Create" [ref=e5]
+- link "Studio" [ref=e6]
+- link "Library" [ref=e7]
+- link [ref=e8]:
+  - image "wavvy24"
+  - text: "wavvy24"
+- button "Profile menu button" [ref=e9]
+- link "Earn Credits" [ref=e10]
+- link "Labs" [ref=e11]
+- link "Notifications" [ref=e12]
+- button "More" [ref=e13]
+- link "Upgrade to Premier" [ref=e14]
+- tablist "What to create":
+  - tab "Songs" [ref=e256] [selected]
+  - tab "Speech" [ref=e257]
+  - tab "Sounds" [ref=e258]
+- tablist "Create form mode":
+  - tab "Simple" [ref=e259]
+  - tab "Advanced" [ref=e260] [selected]
+- button "Credits remaining: 2,236" [ref=e261]: "2.2k"
+- button "v6" [ref=e262]
+- generic [ref=e263] [scrollable]:
+  - button "Add audio - Browse, upload, or record audio" [ref=e264]: "Audio"
+  - button "Add Voice" [ref=e265]: "Voice"
+  - button "Add inspiration from a playlist" [ref=e266]: "Inspo"
+  - button "Lyrics" [ref=e267]
+  - button "Undo" [ref=e268] [disabled]
+  - button "Redo" [ref=e269] [disabled]
+  - button "New draft" [ref=e270]
+  - button "Saved lyrics" [ref=e271]
+  - button "Open full screen lyrics editor" [ref=e272]
+  - status
+  - textbox "Lyrics editor" [ref=e273]
+  - text: "Start writing lyrics, or leave this empty for instrumental When text is selected, press Shift+Enter to move to the selection actions.0 of 5000 characters used."
+  - status
+  - button "Help me write lyrics" [ref=e274]
+  - button "Styles" [ref=e275]
+  - button "View saved style prompts" [ref=e276]
+  - textbox "emotionel, synth piano, grime, layered instrumentation, deep" [ref=e277] [placeholder="emotionel, synth piano, grime, layered instrumentation, deep"]
+  - generic [ref=e278] [scrollable]:
+    - button "View saved style prompts" [ref=e279]
+    - button "Personalize style prompt to match your taste" [ref=e280]
+    - button "Refresh recommended styles" [ref=e281]
+    - button "Add style: emotionel" [ref=e282]: "emotionel"
+    - button "Add style: synth piano" [ref=e283]: "synth piano"
+    - button "Add style: grime" [ref=e284]: "grime"
+    - button "Add style: layered instrumentation" [ref=e285]: "layered instrumentation"
+    - button "Add style: deep" [ref=e286]: "deep"
+    - button "Add style: nordic folk" [ref=e287]: "nordic folk"
+    - button "Add style: church choir" [ref=e288]: "church choir"
+    - button "Add style: cajón" [ref=e289]: "cajón"
+    - button "Add style: pulsating bass" [ref=e290]: "pulsating bass"
+    - button "Add style: rap jazz" [ref=e291]: "rap jazz"
+    - button "Add style: bass clarinet" [ref=e292]: "bass clarinet"
+    - button "Add style: slow ambient" [ref=e293]: "slow ambient"
+    - button "Add style: dynamisch" [ref=e294]: "dynamisch"
+    - button "Add style: slavic folk metal" [ref=e295]: "slavic folk metal"
+    - button "Add style: hardcore rap" [ref=e296]: "hardcore rap"
+    - button "Add style: smooth female voice" [ref=e297]: "smooth female voice"
+    - button "Add style: dance rock" [ref=e298]: "dance rock"
+    - button "Add style: trap mélodique" [ref=e299]: "trap mélodique"
+    - button "Add style: idol" [ref=e300]: "idol"
+    - button "Add style: korean traditional" [ref=e301]: "korean traditional"
+  - button "More Options" [ref=e302]
+  - textbox "Song Title (Optional)" [ref=e303] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "[06:30]" [ref=e304]
+- button "Clear all form inputs" [ref=e305]
+- button "Create song" [ref=e306] [disabled]: "Create"
+- button "Workspaces" [ref=e307]
+- button "[06:30]" [ref=e308]
+- button [ref=e309]
+- button "Share" [ref=e310]
+- textbox "Search clips" [ref=e311] [placeholder="Search"]
+- combobox "Filters (3)" [ref=e443]
+- listbox [ref=e420]:
+  - option "Filter to show only liked clips" [ref=e421]: "Liked"
+  - option "Filter to show disliked and not liked clips" [ref=e422]: "Disliked"
+  - option "Filter to show only public clips" [ref=e423]: "Public"
+  - option "Filter to show only private clips" [ref=e424]: "Private"
+  - option "Filter to show only uploaded clips" [ref=e425]: "Uploads"
+  - option "Filter to show only full songs" [ref=e426]: "Full Songs"
+  - option "Filter to show only covers" [ref=e427]: "Covers"
+  - option "Filter to show only extensions" [ref=e428]: "Extensions"
+  - option "Filter to show only Voices" [ref=e429]
+  - option "Filter to show only remasters" [ref=e430]: "Remasters"
+  - option "Filter to show only downloaded clips" [ref=e431]: "Downloads"
+  - option "Hide disliked clips" [ref=e432] [selected]: "Hide Disliked"
+  - option "Hide Stems" [ref=e433] [selected]
+  - option "Hide Clips from Edit Mode" [ref=e434] [focused] [selected]
+- combobox "New" [ref=e313]
+- combobox "View: List" [ref=e314]: "List"
+- button "Filter to show only liked clips" [ref=e315]: "Liked"
+- button "Filter to show only public clips" [ref=e316]: "Public"
+- button "Filter to show only uploaded clips" [ref=e317]: "Uploads"
+- button "Previous page" [ref=e318] [disabled]
+- textbox "Current page number" [ref=e319]: "1"
+- button "Next page" [ref=e320]
+- table:
+  - generic [ref=e321] [scrollable]:
+    - rowgroup:
+      - region:
+        - heading "Today" [level=3]
+        - group "2. 오래된 농담":
+          - button "Play 2. 오래된 농담" [ref=e322]:
+            - image "2. 오래된 농담 artwork"
+            - text: "3:22"
+          - link "2. 오래된 농담" [ref=e323]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e324]:
+            - image "Voice picture for SICBRO"
+            - link "SICBRO" [ref=e325]
+          - button "Like clip" [ref=e326]
+          - button "Dislike clip" [ref=e327]
+          - button "Pin clip to workspace" [ref=e328]
+          - button "Share clip" [ref=e329]: "Share"
+          - button "More options" [ref=e330]
+        - group "5. 잘 익은 하루":
+          - button "Play 5. 잘 익은 하루" [ref=e331]:
+            - image "5. 잘 익은 하루 artwork"
+            - text: "3:19"
+          - link "5. 잘 익은 하루" [ref=e332]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button "Like clip" [ref=e333]
+          - button "Dislike clip" [ref=e334]
+          - button "Pin clip to workspace" [ref=e335]
+          - button "Share clip" [ref=e336]: "Share"
+          - button "More options" [ref=e337]
+        - group "8. 메모 한 장":
+          - button "Play 8. 메모 한 장" [ref=e338]:
+            - image "8. 메모 한 장 artwork"
+            - text: "3:06"
+          - link "8. 메모 한 장" [ref=e339]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e340]:
+            - image "Voice picture for HappyDays"
+            - link "HappyDays" [ref=e341]
+          - button "Like clip" [ref=e342]
+          - button "Dislike clip" [ref=e343]
+          - button "Pin clip to workspace" [ref=e344]
+          - button "Share clip" [ref=e345]: "Share"
+          - button "More options" [ref=e346]
+        - group "1. 첫 페이지":
+          - button "Play 1. 첫 페이지" [ref=e347]:
+            - image "1. 첫 페이지 artwork"
+            - text: "3:09"
+          - link "1. 첫 페이지" [ref=e348]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e349]:
+            - image "Voice picture for Mute"
+            - link "Mute" [ref=e350]
+          - button "Like clip" [ref=e351]
+          - button "Dislike clip" [ref=e352]
+          - button "Pin clip to workspace" [ref=e353]
+          - button "Share clip" [ref=e354]: "Share"
+          - button "More options" [ref=e355]
+        - group "11. 종이비행기":
+          - button "Play 11. 종이비행기" [ref=e356]:
+            - image "11. 종이비행기 artwork"
+            - text: "3:08"
+          - link "11. 종이비행기" [ref=e357]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e358]:
+            - image "Voice picture for Mute"
+            - link "Mute" [ref=e359]
+          - button "Like clip" [ref=e360]
+          - button "Dislike clip" [ref=e361]
+          - button "Pin clip to workspace" [ref=e362]
+          - button "Share clip" [ref=e363]: "Share"
+          - button "More options" [ref=e364]
+        - group "12. 유리컵의 햇빛":
+          - button "Play 12. 유리컵의 햇빛" [ref=e365]:
+            - image "12. 유리컵의 햇빛 artwork"
+            - text: "3:07"
+          - link "12. 유리컵의 햇빛" [ref=e366]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button "Like clip" [ref=e367]
+          - button "Dislike clip" [ref=e368]
+          - button "Pin clip to workspace" [ref=e369]
+          - button "Share clip" [ref=e370]: "Share"
+          - button "More options" [ref=e371]
+        - group "14. 작은 용기":
+          - button "Play 14. 작은 용기" [ref=e372]:
+            - image "14. 작은 용기 artwork"
+            - text: "3:07"
+          - link "14. 작은 용기" [ref=e373]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n gender, key and tempo, A single dry lead vocal, recorded very close to the…[+828 chars]"
+          - button "Like clip" [ref=e374]
+          - button "Dislike clip" [ref=e375]
+          - button "Pin clip to workspace" [ref=e376]
+          - button "Share clip" [ref=e377]: "Share"
+          - button "More options" [ref=e378]
+        - group "17. 새 잎":
+          - button "Play 17. 새 잎" [ref=e379]:
+            - image "17. 새 잎 artwork"
+            - text: "3:04"
+          - link "17. 새 잎" [ref=e380]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e381]:
+            - image "Voice picture for Jna"
+            - link "Jna" [ref=e382]
+          - button "Like clip" [ref=e383]
+          - button "Dislike clip" [ref=e384]
+          - button "Pin clip to workspace" [ref=e385]
+          - button "Share clip" [ref=e386]: "Share"
+          - button "More options" [ref=e387]
+        - group "20. 오늘의 기록":
+          - button "Play 20. 오늘의 기록" [ref=e388]:
+            - image "20. 오늘의 기록 artwork"
+            - text: "3:17"
+          - link "20. 오늘의 기록" [ref=e389]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e390]:
+            - image "Voice picture for SICBRO"
+            - link "SICBRO" [ref=e391]
+          - button "Like clip" [ref=e392]
+          - button "Dislike clip" [ref=e393]
+          - button "Pin clip to workspace" [ref=e394]
+          - button "Share clip" [ref=e395]: "Share"
+          - button "More options" [ref=e396]
+        - group "18. 나란히 걷자":
+          - button "Play 18. 나란히 걷자" [ref=e397]:
+            - image "18. 나란히 걷자 artwork"
+            - text: "3:04"
+          - link "18. 나란히 걷자" [ref=e398]
+          - text: "V6 COVER Modern R&B remix, Preserve the original Korean lyrics, vocal melody, singer\n  gender, key and tempo, A single dry lead vocal, recorded very close to th…[+837 chars]"
+          - button [ref=e399]:
+            - image "Voice picture for SICBRO"
+            - link "SICBRO" [ref=e400]
+          - button "Like clip" [ref=e401]
+          - button "Dislike clip" [ref=e402]
+          - button "Pin clip to workspace" [ref=e403]
+          - button "Share clip" [ref=e404]: "Share"
+          - button "More options" [ref=e405]
+      - region:
+        - heading "Yesterday" [level=3]
+        - group "9. 먼저 건넨 말":
+          - button "Play 9. 먼저 건넨 말" [ref=e406]:
+            - image "9. 먼저 건넨 말 artwork"
+            - text: "3:03"
+          - link "9. 먼저 건넨 말" [ref=e407]
+          - text: "V6 Korean acoustic R&B, 116 BPM, bright but unhurried; muted acoustic-guitar strokes and light handclaps on a dry drum-kit backbeat, warm moving bass, short ele…[+185 chars]"
+          - button "Like clip" [ref=e408]
+          - button "Dislike clip" [ref=e409]
+          - button "Pin clip to workspace" [ref=e410]
+          - button "Share clip" [ref=e411]: "Share"
+          - button "More options" [ref=e412]
+        - group "4. 반대편 창가":
+          - button "Play 4. 반대편 창가" [ref=e413]:
+            - image "4. 반대편 창가 artwork"
+            - text: "3:18"
+          - link "4. 반대편 창가" [ref=e414]
+          - text: "V6 In F Major, Bright Korean acoustic neo-soul with syncopated acoustic-guitar chords, round melodic bass, subtle Rhodes color and supple live drums, One intima…[+518 chars]"
+          - button "Like clip" [ref=e415]
+          - button "Dislike clip" [ref=e416]
+          - button "Pin clip to workspace" [ref=e417]
+          - button "Share clip" [ref=e418]: "Share"
+          - button "More options" [ref=e419]
+- link "Playbar: Title for 2. 오래된 농담" [ref=e246]
+- link "Playbar: Title for 2. 오래된 농담" [ref=e247]: "2. 오래된 농담"
+- link "Playbar: Artist for 2. 오래된 농담" [ref=e248]: "Wavvy"
+- button "Playbar: Toggle shuffle button" [ref=e179]
+- button "Playbar: Previous Song button" [ref=e180]
+- button "Playbar: Play button" [ref=e181]
+- button "Playbar: Next Song button" [ref=e182]
+- button "Playbar: Toggle repeat button" [ref=e183]
+- text: "0:00"
+- textbox "Playback progress" [ref=e184] [disabled]: "0"
+- text: "3:21"
+- button "Queue" [ref=e249]
+- button "Playbar: Like" [ref=e250]
+- button "Playbar: Dislike" [ref=e251]
+- link "Playbar: Comment" [ref=e252]
+- button "Playbar: Share" [ref=e253]
+- button "More options" [ref=e254]
+- button "Playbar: Mute" [ref=e185]
+- button "Playbar: Toggle song details panel" [ref=e255]
+- region "Bottom notifications" [ref=e186]
+- region "Top notifications" [ref=e187]
+- region "Bottom edge notifications" [ref=e188]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

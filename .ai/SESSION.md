@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-21 (17:00 음악 방향 20곡 A/B 후보 생성 완료·청취 선택 대기)
+> Last updated: 2026-10-22 ([06:30] 화면 보존곡 12개와 이전 원문·후보 이력 대조)
 
 ---
+
+## 2026-10-22 [CDX] 06:30 사용자 정리·Cover 스타일 문서 반영
+- 젠이 원치 않는 곡을 정리하고 일부를 스타일 변경 Cover로 대체했으며 기존 버전도 남겼다고 알렸다. `[06:30]` 화면의 `12 songs`와 필터 적용·해제 후 동일한 12행을 확인했다. 새 Cover 10개, 기존 ID 유지 04B·09B 두 개다. 14는 원래 14A → 중간 Cover → 현재 Cover의 두 단계다. 20 화면 제목은 「오늘의 기록」, 이전 입력 원문 제목은 「오늘을 남겨」다. Next/Page 2 조작 뒤 행은 그대로였으나 페이지 전체성을 독립적으로 확증하지 못했다.
+- 이전 40개 후보 중 같은 ID로 보이는 2개 외 38개는 현 목록 미노출이다. 휴지통·영구 삭제는 확인하지 않았다. [원시 관찰](../SERIES/06-30/input/validation/2026-10-22-current-suno/observation.json)과 [현재 청취표](../SERIES/06-30/input/candidate-review.md), [스타일 비교](../SERIES/06-30/input/style-comparison-2026-10-22.md)를 연결했다. 원래 20개 txt·기존 40후보 기록은 [바이트 아카이브](../SERIES/06-30/input/source-history/2026-10-22-before-user-remixes/archive-manifest.json)와 후보 JSON 이력에 보존했다.
+- 새 Cover의 화면 스타일은 관찰 문구로 기록했고 생성 입력 STYLE/EXCLUDE 원문으로 단정하지 않았다. 기존 04의 툴팁은 보존 STYLE과 바이트 일치, 기존 09는 단독 리드 입력과 gang-vocal shouts 화면 문구가 달라 원인 미확인이다. 젠의 보존 선택을 기록했지만 실제 청취 품질·정확한 BPM·최종 발매 승인은 확인되지 않았다. phase는 여전히 `track_source_draft`, 로컬 오디오는 0개다. 2026-10-21의 20곡 A/B 40개·전곡 선택 대기는 당시 기록이다.
+- [무결성 검사](../SERIES/06-30/input/validation/2026-10-22-document-integrity.json) 16/16 PASS(원문 20개 불변·이전 40 ID·현행 12 ID), [공식 상태 검사](../SERIES/06-30/input/validation/2026-10-22-state-check.json) PASS, `git diff --check` 빈 출력·종료 코드 0이다. [격리 Astra xhigh 검토](reviews/2026-10-22-remix-reconciliation-review.md)는 CLEAN, 읽기 전용 직접 대조 267/267 PASS, 원칙 관찰 없음이다. 이 문서와 근거 자료는 `master` 커밋 및 `origin/master` 일반 푸시로 보존한다. 완료 확인은 로컬·원격 HEAD 대조로 한다.
 
 ## 2026-10-21 [CDX] -record: Wavvy 06:30 후보 생성·청취 인계
 - 젠의 지시에 따라 기존 [06:30] 작업 공간에서 17:00 어쿠스틱 R&B·네오소울 방향의 신규 20곡을 만들었다. 인디 록 4곡의 옛 후보 8개는 휴지통으로 옮겼고, 기존 5곡의 후보 10개를 보존했다. 수정 15곡을 각 1회 새로 제출해 활성 후보 20곡×2개=40개, 크레딧 2396을 확인했다. 러닝용 175 BPM은 다음 별도 시리즈다.
