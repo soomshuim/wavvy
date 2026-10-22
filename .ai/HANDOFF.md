@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-23 (17:30 저작권·직접 자막 후속 관찰)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: Wavvy24 공개 영상 `3HorT4OoDhg`의 [Studio 소유권 주장 개요](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-claims.txt)에서 주장 0건·저작권 보호 콘텐츠 미발견을 확인했다. 공개·승인 제목·영상·일반 댓글은 변경하지 않았다. [Studio 한국어 초안](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-draft.txt)은 로컬 확정 원고와 40,971바이트·가사 1,478행·SHA-256 `29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18`로 일치한다.
+Current: 2026-10-23 06:43:34 KST [게시 시도](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-publish-attempt.txt)는 전날 2회와 같은 자막 트랙 업데이트 오류로 실패했다. 총 3회이고 직접 한국어 가사 자막은 미게시다. 타이밍 수정이 비활성이고 편집 타임라인에 수동 자막 구간은 보이지 않았다. [Studio 언어 세부정보](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language-details.txt)의 자동 한국어 자막은 별도로 게시됐고 [공개 watch 화면](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-auto-caption-visible.png) 23:28 지점에도 보였지만, 직접 자막은 임시본이다. [자동 SRT](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-auto-captions.srt) 1,410구간·90,113바이트에는 원고와 다른 오인식이 있다. 원인은 확정되지 않았다. 공식 state revision 77 `uploaded` 그대로이며 저작권 0건은 관찰 시점의 결과다.
+Verification: 2026-10-23 [원시 관찰](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/followup-observation.json)·Studio 화면·SRT·공개 watch 화면을 대조했다. 부모가 공식 state check revision 77 `uploaded`와 uploaded gate PASS를 직접 확인했고, 이번 문서 변경의 `git diff --check`도 PASS다.
+Next-TODO: 동일 오류의 추가 게시 시도는 멈추고, 젠의 확정 가사 시간 맞춘 파일 제작 또는 자막 작업 중단 선택을 기다린다. 선택 전 추가 제작·게시를 하지 않는다. [YouTube 도움말](https://support.google.com/youtube/answer/2734796?hl=en-CA)의 1시간 초과 자동 동기화 비권장은 가능한 설명일 뿐 이번 오류의 확정 원인이 아니다.
+Commits: 이 기록과 2026-10-23 원시 관찰 파일을 같은 작업 커밋으로 보존한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 23:08:42
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex

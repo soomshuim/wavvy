@@ -1,11 +1,11 @@
 # 기분좋아져라 — 17:30 시리즈 제작 기록
 
-Date: 2026-10-21 · Updated: 2026-10-22
+Date: 2026-10-21 · Updated: 2026-10-23
 ## Series Status
 
 선택 WAV 20곡(공식 다운로드 3·앱 내부 녹음 17)을 확정된 [재생 순서](input/playback-order.json)로 두 번 반복해 [실제 렌더 보고서](output/report.json)와 로컬 최종 영상 `output/final.mkv`·업로드용 `output/final.mp4`를 만들었다. 입력 합계는 3,874.85초, 최종 길이는 실측 7,718.5초다. [제작·검사 원시 기록](input/validation/2026-10-22-release-production/)에 전곡 30초 미리보기, 최종 오디오 전체 디코드·음량, MP4 재생 정보, 중간 화면, 출처·렌더·업로드 준비 게이트와 40개 챕터 검증 결과를 보존한다. 한국어 자막 원문은 `output/youtube_subtitles_ko_no_timing.txt`다. `input/thumb.jpg`·`input/loop.png`와 모든 입력·raw 파일은 변경하지 않았다.
 
-젠이 아래 정확한 98자 YouTube 제목을 업로드 선택지 `1`로 최종 승인했고, 이어 “즉시 공개로 올리고 댓글도 달아”라고 지시했다. [원시 업로드 관찰](input/validation/2026-10-22-youtube-upload/upload-observation.json)에 따라 Wavvy24의 [영상](https://www.youtube.com/watch?v=3HorT4OoDhg)은 즉시 공개됐고 시청 페이지에서 2:08:38 재생과 일반 댓글 1건 노출을 확인했다. 공식 state revision 77은 영상 업로드 완료를 뜻하는 `uploaded`이며 자막 게시 완료를 뜻하지 않는다. `17:30`은 시리즈 식별 시각이며 예약 공개 시각이 아니다. 한국어 자막은 초안 저장만 확인됐고 게시 오류가 두 차례 발생해 아직 게시되지 않았다. [후속 관찰](input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 SD·HD·4K 완료와 공개 유지를 확인했으며 저작권은 검토 중이다. 자세한 범위와 남은 일은 아래 `Upload Status`를 따른다. 젠의 전곡 청취 통과로 확인된 로컬 입력은 4번에 한정한다. 5~20번은 파일 기술 검사 범위다. 기존 생성 STYLE/EXCLUDE 중 확인되지 않은 부분은 `Final Track Sources`에서 확인된 사실처럼 쓰지 않는다.
+젠이 아래 정확한 98자 YouTube 제목을 업로드 선택지 `1`로 최종 승인했고, 이어 “즉시 공개로 올리고 댓글도 달아”라고 지시했다. [원시 업로드 관찰](input/validation/2026-10-22-youtube-upload/upload-observation.json)에 따라 Wavvy24의 [영상](https://www.youtube.com/watch?v=3HorT4OoDhg)은 즉시 공개됐고 시청 페이지에서 2:08:38 재생과 일반 댓글 1건 노출을 확인했다. 공식 state revision 77은 영상 업로드 완료를 뜻하는 `uploaded`이며 자막 게시 완료를 뜻하지 않는다. `17:30`은 시리즈 식별 시각이며 예약 공개 시각이 아니다. [2026-10-23 후속 관찰](input/validation/2026-10-23-youtube-followup/)의 Studio 소유권 주장 화면에는 주장 0건·저작권 보호 콘텐츠 미발견이 표시됐다. 직접 한국어 자막은 어제 2회와 오늘 1회, 총 3회 게시 오류로 미게시다. SD·HD·4K 완료와 공개 유지는 [전날 후속 관찰](input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 확인했다. 자세한 범위와 남은 일은 아래 `Upload Status`를 따른다. 젠의 전곡 청취 통과로 확인된 로컬 입력은 4번에 한정한다. 5~20번은 파일 기술 검사 범위다. 기존 생성 STYLE/EXCLUDE 중 확인되지 않은 부분은 `Final Track Sources`에서 확인된 사실처럼 쓰지 않는다.
 
 ## 이전 입력·제작 체크포인트 (당시 기록)
 
@@ -131,10 +131,11 @@ modern rnb, modern r&b, neo soul, korean rnb, korean neo soul, feel good rnb, af
 - **YouTube upload completed**: 2026-10-22, Wavvy24 채널, 영상 ID `3HorT4OoDhg`. [공개 영상](https://www.youtube.com/watch?v=3HorT4OoDhg)은 시청 페이지에서 2:08:38 재생을 확인했다. [원시 관찰·화면 기록](input/validation/2026-10-22-youtube-upload/)에 업로드 1회, 업로드 MP4의 SHA-256 `0b00e158f497f4a6c9ca57ce36b1678f38a215b01b44ef3d07a2a8a881b09943`, 정확한 제목·설명 대조를 보존한다.
 - **즉시 공개 완료**: YouTube Studio의 공개 상태와 시청 페이지 재생을 확인했다. 예약 게시가 아니며 `17:30`은 시리즈 식별자다.
 - **일반 댓글 게시 완료**: 위 3줄 문안 1건을 Studio와 시청 페이지에서 확인했다. 고정하지 않았다.
-- **처리·검토 상태**: 첫 관찰에는 4K 처리 중이었고, 2026-10-22 22:49:32 KST [후속 관찰](input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 SD·HD·4K 완료와 공개 유지를 확인했다. 저작권은 여전히 검토 중이며 최종 판정은 확인되지 않았다.
+- **처리·저작권 관찰**: 첫 관찰에는 4K 처리 중이었고, 2026-10-22 22:49:32 KST [후속 관찰](input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 SD·HD·4K 완료와 공개 유지를 확인했다. 당시 저작권은 검토 중이었다. 2026-10-23 [Studio 소유권 주장 개요](input/validation/2026-10-23-youtube-followup/2026-10-23-claims.txt)에는 영상 `3HorT4OoDhg`의 소유권 주장 0건과 `저작권 보호 콘텐츠가 발견되지 않았습니다`가 표시됐다. 이 화면의 관찰 결과이며 장래의 소유권 주장을 영구히 배제하는 판정은 아니다.
 - **4K 처리 완료 후 시청 페이지 재생**: 22:54:36~38 KST [후속 플레이어 실측](input/validation/2026-10-22-youtube-upload/watch-playback-followup.json)에서 같은 영상 URL의 `currentTime`이 463.529146→465.791302초로 2.262156초 증가했다. 두 시점 모두 `paused=false`, `readyState=4`, 총 길이 7,718.521초였고 이후 일시정지 상태를 확인했다. 이는 처리 완료 후 실제 재생 근거이며 4K 화질로 재생했다는 판정은 아니다.
-- **한국어 자막 미게시**: `output/youtube_subtitles_ko_no_timing.txt` 원고를 Studio 초안으로 저장했다. 게시 시도는 처리 전과 SD 처리 후 각 1회 오류 `자막 트랙을 업데이트할 수 없습니다. 다시 시도해 주세요.`를 보였고, 시청 페이지에는 자막 사용 불가로 나타났다. 자막 게이트 통과로 기록하지 않는다.
-- **남은 확인**: 저작권 최종 결과를 확인하고, 한국어 자막 게시 오류를 해결한 뒤 실제 게시 상태를 재확인한다. 로컬 원본·영상·메타데이터는 보존한다.
+- **직접 한국어 자막 미게시**: `output/youtube_subtitles_ko_no_timing.txt` 원고를 Studio 초안으로 저장했다. [2026-10-23 초안 대조](input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-draft.txt)는 40,971바이트·가사 1,478행·SHA-256 `29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18`로 로컬 원고와 일치한다. 2026-10-22의 2회에 이어 2026-10-23 06:43:34 KST [게시 시도](input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-publish-attempt.txt)도 `자막 트랙을 업데이트할 수 없습니다. 다시 시도해 주세요.`로 실패해 총 3회다. 타이밍 수정은 비활성이고 편집 타임라인에는 수동 자막 구간이 보이지 않았다. 원인은 아직 확인되지 않았다. 직접 원고 자막을 게시 성공으로 기록하지 않는다.
+- **별도 자동 한국어 자막**: [Studio 언어 세부정보](input/validation/2026-10-23-youtube-followup/2026-10-23-language-details.txt)는 `자동 자막`을 `게시됨`, `수동 자막`을 `임시본`으로 표시한다. [공개 시청 페이지 화면](input/validation/2026-10-23-youtube-followup/2026-10-23-watch-auto-caption-visible.png)의 23:28 지점에서 선택된 `한국어 (자동 생성됨)` 트랙의 자막 문구가 보였고 확인 뒤 재생을 멈췄다. [자동 자막 SRT](input/validation/2026-10-23-youtube-followup/2026-10-23-auto-captions.srt)는 1,410개 구간·90,113바이트이며 확정 가사를 잘못 인식한 문구가 있다. 자동 생성 자막의 노출은 위 직접 원고의 게시 완료나 정확성 검증을 뜻하지 않는다.
+- **다음 결정 대기**: 같은 오류의 추가 게시 시도는 중단했다. 확정 가사에 시간을 맞춘 별도 자막 파일 제작과 자막 작업 중단 중 젠의 선택을 기다린다. [YouTube 공식 도움말](https://support.google.com/youtube/answer/2734796?hl=en-CA)은 1시간 넘는 영상에 자동 동기화 원고를 권장하지 않지만, 이번 오류의 원인으로 확정할 근거는 없다. 선택 전 추가 제작·게시를 하지 않으며 로컬 원본·영상·메타데이터를 보존한다.
 
 ## 사용자 선별 20곡·첫 제목 번호 적용 (변경 전 이력, 2026-10-22)
 
