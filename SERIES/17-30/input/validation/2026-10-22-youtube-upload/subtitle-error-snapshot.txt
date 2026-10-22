@@ -1,0 +1,63 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "언어 - YouTube Studio" [url=https://studio.youtube.com/video/3HorT4OoDhg/translations]
+- text: "언어"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e68]
+  - text: "동영상 미리보기 이미지: Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | \n\n\n    \n\n    \n    \n\n    \n      2:08:39\n    \n    \n  \n\n  \n  \n\n…[+403 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "언어" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "언어" [level=1]
+  - region "동영상 언어: 한국어" [ref=e300]:
+    - heading "동영상 언어: 한국어" [level=2]
+    - button "세부정보" [ref=e301]
+    - text: "한국어 자막은 자막 및 오디오의 자동 번역을 위한 기본 소스입니다.\n    자동 자막 생성 중..."
+    - progressbar
+    - text: "잠시만 기다려 주세요..."
+    - button "자막 수정" [ref=e302]
+    - button "수동 업로드" [ref=e303]
+  - region "번역" [ref=e304]:
+    - heading "번역" [level=2]
+    - button "언어 추가" [ref=e305]
+    - text: "각 언어의 오디오, 자막, 제목, 설명, 썸네일에 대한 번역을 관리할 수 있는 표"
+    - row "언어 오디오 자막 제목 및 설명 썸네일":
+      - columnheader "언어" [ref=e306]
+      - columnheader "오디오" [ref=e307]
+      - columnheader "자막" [ref=e308]
+      - columnheader "제목 및 설명" [ref=e309]
+      - columnheader "썸네일" [ref=e310]
+- dialog "한국어 자막":
+  - text: "한국어"
+  - region "대화상자 컨트롤" [ref=e311]:
+    - heading "대화상자 컨트롤" [level=2]
+    - button "의견 보내기" [ref=e312]
+    - button "초안 저장" [ref=e313]
+    - status: "초안 저장 사용 설정됨"
+    - button "게시" [ref=e314]
+    - status: "게시 사용 설정됨"
+    - button "닫기" [ref=e315]
+  - text: "자막 트랙을 업데이트할 수 없습니다. 다시 시도해 주세요."
+  - button "사본 다운로드" [ref=e339]
+  - button "닫기" [ref=e340]
+  - region "스크립트 수정" [ref=e316]:
+    - heading "스크립트 수정" [level=2]
+    - button "타이밍 수정" [ref=e317] [disabled]
+    - button "옵션" [ref=e318]
+... [snapshot truncated at 16 KiB; narrow it with { interactive: true }, selector or ref]

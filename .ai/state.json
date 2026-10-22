@@ -1,11 +1,11 @@
 {
   "schema": "wavvy.state.v1",
-  "revision": 76,
-  "updated_at": "2026-10-22T21:58:10",
+  "revision": 77,
+  "updated_at": "2026-10-22T22:51:25",
   "active_series": "SERIES/17-30",
-  "phase": "upload_ready",
-  "inferred_phase": "upload_ready",
-  "next_action": "Upload the series and record completion in concept.md.",
+  "phase": "uploaded",
+  "inferred_phase": "uploaded",
+  "next_action": "No active blocker. Local final.mkv/upload.csv are disposable after upload and can be regenerated with pack if needed.",
   "artifact_status": {
     "concept_md": "present",
     "final_track_sources": "present",
@@ -26,7 +26,7 @@
     "subtitle_txt": "present",
     "subtitle_srt": "missing",
     "youtube_metadata": "present",
-    "youtube_upload": "missing",
+    "youtube_upload": "completed",
     "lyric_skill_package": "present",
     "lyric_skill_files": {
       "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",

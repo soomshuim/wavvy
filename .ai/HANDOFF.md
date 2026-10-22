@@ -1,5 +1,27 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 실제 YouTube 공개·댓글 게시, 4K 처리 완료)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: Wavvy24에 17:30 「기분좋아져라」를 승인된 98자 제목으로 업로드 1회 후 즉시 공개했다. 영상 https://www.youtube.com/watch?v=3HorT4OoDhg (`3HorT4OoDhg`)은 시청 페이지에서 2:08:38 재생됐고 일반 댓글 정확 문안 1건도 보였다. 고정하지 않았다. 제목·설명은 로컬 원문과 정확히 일치한다. [원시 Studio·시청 페이지 근거](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/)와 concept `Upload Status`를 따른다.
+Current: 22:49:32 KST SD·HD·4K 처리 완료와 공개 유지를 확인했다. 저작권 검토 최종 결과는 아직 관측되지 않았다. 한국어 자막 원고는 초안 저장됐지만 처리 전·후 게시 오류 2회로 **미게시**다. 공식 state를 업로드 증거로 revision 77 `uploaded`로 갱신했고 state check·uploaded gate·verify-release가 PASS했다. 제목 기본형 정책 격리 검토는 Critical/High 0·원칙 관찰 없음이며, `MASTER/youtube/YOUTUBE.md`는 이번 업로드 결과 반영 중 수정하지 않았다.
+Next-TODO: 저작권 최종 결과를 확인하고 자막 게시 오류를 해결한 뒤 시청 페이지 자막 노출을 확인한다. 아래의 ‘업로드 결과 대기’ 항목은 공개 전 이력이다.
+Commits: 문서·state·작은 원시 검증 기록의 커밋/푸시는 부모 담당이다.
+---
+
+---
+HANDOFF: Codex -> 젠
+Date: 2026-10-22 (17:30 전체 제목 승인·즉시 공개/댓글 지시·기본 저작 규칙 반영)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠은 정확한 98자 `Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | Wavvy | 17:30` 업로드 선택지 `1`에 답해 제목 전체를 승인했다. “제목 저작 규칙에 베스트 사례로 앞으로도 기본형으로 따르게 해”에 따라 `MASTER/youtube/YOUTUBE.md` v2.3에 대표 사례와 시리즈별 감각 훅·가변 용도 작성 방향을 반영했다. 최신 “즉시 공개로 올리고 댓글도 달아”가 처음의 비공개 방식보다 우선하며 로컬 업로드 CSV visibility는 `public`이다. `17:30`은 예약 시각이 아니다. `concept.md`에 일반 댓글 문안을 기록하고 업로드 담당자에게 전달했다. 고정 요청은 없다.
+Current: 실제 YouTube 업로드·즉시 공개·댓글 게시의 결과와 URL은 아직 확인되지 않았다. 공식 state는 그대로이고 국문 시리즈명·설명·태그·챕터·영상·이미지·음원·자막도 변경하지 않았다. 아래 제목 컨펌 대기 항목은 당시 이력이다.
+Next-TODO: 별도 업로드 담당자의 실제 Studio/시청 페이지 결과를 확인해 URL·공개·댓글을 각각 기록한다.
+Commits: 이 제목 승인·정책·현행 기록은 부모의 다음 커밋 대상이다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 오렌지 제목 문구 선택·전체 제목 최종 컨펌 대기)
 Project: ~/Project/wavvy
 Agent: Codex

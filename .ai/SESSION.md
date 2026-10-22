@@ -1,6 +1,20 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-22 (17:30 최종 로컬 영상 완료, 오렌지 제목 문구 선택·전체 제목 최종 컨펌/업로드 전)
+> Last updated: 2026-10-22 (17:30 Wavvy24 즉시 공개·일반 댓글 게시 확인, 4K 완료, 저작권 검토·한국어 자막 게시 대기)
+
+---
+
+## 2026-10-22 [CDX] 17:30 YouTube 실제 공개·댓글과 처리 상태
+- [원시 업로드 기록](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/upload-observation.json)과 Studio·시청 페이지 화면에서 Wavvy24 영상 `3HorT4OoDhg`의 업로드 1회, 즉시 공개, 2:08:38 재생, 승인된 98자 제목·설명 정확 일치, 일반 댓글 정확 문안 1건 노출을 확인했다. 4K 처리 완료 뒤 22:54:36~38 KST [플레이어 실측](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/watch-playback-followup.json)에서는 같은 URL의 재생 위치가 463.529146→465.791302초로 2.262156초 증가했다. 이는 시청 페이지 재생 근거이며 4K 화질 재생 판정은 아니다. 댓글은 고정하지 않았다. 영상: https://www.youtube.com/watch?v=3HorT4OoDhg. `17:30`은 예약 시각이 아니다.
+- [후속 처리 관찰](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/processing-followup.json)에서 22:49:32 KST SD·HD·4K 완료와 공개 유지를 확인했다. 저작권 검토는 진행 중이며 최종 결과를 관측하지 못했다. 한국어 자막 원고는 Studio 초안에 저장됐지만 처리 전·후 게시 시도 모두 오류였고 시청 페이지에도 자막 사용 불가로 보였다. **자막은 미게시**다. 공식 state revision 77 `uploaded`는 영상 업로드 완료를 기록한다. [원시 state/gate/verify 결과](../SERIES/17-30/input/validation/2026-10-22-youtube-upload/)는 모두 PASS다. 남은 일은 저작권 최종 결과 확인과 자막 게시 오류 해결·재확인이다. 아래의 ‘실제 결과 대기’ 기록은 공개 전 당시 이력이다.
+- [제목 작성 기본형 격리 검토](reviews/2026-10-22-title-writing-default-review.md)는 부모가 받은 Astra xhigh 판정 Critical/High 0·원칙 관찰 없음이다. `MASTER/youtube/YOUTUBE.md` v2.3은 동결하고 이번 단계에서는 수정하지 않았다.
+- [공개 결과 격리 검토](reviews/2026-10-22-public-release-review.md)는 부모가 받은 CLEAN(확정 Critical/High 0·원칙 관찰 없음) 판정이다. 검토 당시 제출 원시 기록에는 처리 후 시청 페이지 재생 증거가 없었고, 이는 위 별도 후속 관찰로 보충됐다. 자막 미게시·저작권 검토 중 상태는 완료로 보지 않았다.
+
+---
+
+## 2026-10-22 [CDX] 17:30 전체 제목 승인·즉시 공개/댓글 지시·향후 제목 기본형 반영
+- 젠은 `Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | Wavvy | 17:30`으로 업로드하는 선택지 `1`에 답해 이 정확한 98자 제목 전체를 최종 승인했다. 이어 “제목 저작 규칙에 베스트 사례로 앞으로도 기본형으로 따르게 해”라고 지시했다. 최신 지시 “즉시 공개로 올리고 댓글도 달아”가 처음의 비공개 선택을 대체한다. 로컬 `output/upload.csv`의 visibility는 `public`이며, `17:30`은 예약 시각이 아닌 시리즈 식별 시각이다. `concept.md`에 일반 댓글 3줄 문안을 기록하고 업로드 담당자에게 전달했지만, 실제 업로드·공개·댓글 게시·URL은 아직 결과 대기다. 아래 문구 선택·컨펌 대기 기록은 당시 이력이다.
+- [YouTube 제목 SSOT](../MASTER/youtube/YOUTUBE.md) v2.3에 승인 제목을 대표 베스트 사례로 등재했다. 순서와 구분자는 유지하며, 각 시리즈 이미지·음악에 맞는 구체적 감각 비유와 여러 사용 상황을 100자 이내에서 고르는 기본 작성 방향을 반영했다. `오렌지`는 전 시리즈 고정어가 아니다. `concept.md` 제목 승인 상태와 로컬 `output/upload.csv`의 정확한 제목을 대조했다. 실제 YouTube 결과가 없으므로 공식 state는 변경하지 않았다.
 
 ---
 
