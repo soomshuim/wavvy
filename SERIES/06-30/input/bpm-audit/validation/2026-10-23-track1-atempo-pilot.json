@@ -1,0 +1,93 @@
+{
+  "scope": "reversible 30-second audio pilot only; no final source, selection, or remote candidate change",
+  "candidate_id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+  "source_bpm_basis": {
+    "bpm_fit": 187.746,
+    "band": "mid",
+    "span_s": 29.062,
+    "independent_raw_path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track1-round4-a.jsonl",
+    "meaning": "30-second source sample estimate, not whole-song BPM"
+  },
+  "target_bpm": 176.0,
+  "tempo_factor": 0.9374367496511243,
+  "expected_duration_s": 32.002159090909096,
+  "ffmpeg_version": "8.0.1",
+  "ffmpeg_command": "ffmpeg -hide_banner -nostdin -y -i SERIES/06-30/input/bpm-audit/audio/24703f3f-c7ce-433f-a892-16d9330b41a9-resume20261023-30s.wav -af atempo=0.937436749651 -c:a pcm_f32le work/0630-tempo-pilot/24703f3f-30s-to-176bpm-atempo.wav",
+  "source": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/24703f3f-c7ce-433f-a892-16d9330b41a9-resume20261023-30s.wav",
+    "sha256": "e1ec292f0c079d3eaecad339cc6aa7a5907a9e31ac3653861e3738d9cfe010d9",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 1440000,
+    "duration_s": 30.0,
+    "finite": true,
+    "peak_abs": 0.6344360709190369,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.1258649656827592,
+    "top_spectral_peak_hz": [
+      193.36,
+      146.48,
+      128.91,
+      99.61,
+      164.06,
+      738.28,
+      662.11,
+      785.16
+    ]
+  },
+  "output": {
+    "path": "work/0630-tempo-pilot/24703f3f-30s-to-176bpm-atempo.wav",
+    "sha256": "395f9b028031551013490682cd8b5bee6482d242121ab585d3883720e17165ff",
+    "git_ignored": true,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 1535169,
+    "duration_s": 31.9826875,
+    "finite": true,
+    "peak_abs": 0.6341302990913391,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.12485439647458002,
+    "top_spectral_peak_hz": [
+      193.36,
+      99.61,
+      128.91,
+      146.48,
+      164.06,
+      738.28,
+      662.11,
+      785.16
+    ]
+  },
+  "duration_difference_from_formula_s": -0.019471590909095227,
+  "automatic_analysis": {
+    "command": "/tmp/wavvy-0630-bpm-essentia/bin/python -B SERIES/06-30/input/bpm-audit/analyze.py work/0630-tempo-pilot/24703f3f-30s-to-176bpm-atempo.wav --candidate-id 24703f3f-c7ce-433f-a892-16d9330b41a9 --output work/0630-tempo-pilot/24703f3f-30s-to-176bpm-auto-result.json",
+    "raw_path": "SERIES/06-30/input/bpm-audit/validation/2026-10-23-track1-atempo-pilot-auto.json",
+    "raw_sha256": "fe14d9fbb2c9b0ebe82cdff2e586554f5fde5a4082da0c9b5d5c856860f2c752",
+    "classification": "uncertain",
+    "conservative_bpm_interval": {
+      "lower": 175.1616,
+      "upper": 176.29371
+    },
+    "reasons": [
+      "head:unstable_beat_grid",
+      "head:weak_full_speed_pulse",
+      "middle:weak_full_speed_pulse",
+      "sample:unstable_beat_grid",
+      "sample:weak_full_speed_pulse",
+      "short_0:missing_local_pulse",
+      "short_1:local_tempo_change_or_weak_pulse",
+      "short_3:local_tempo_change_or_weak_pulse",
+      "short_4:local_tempo_change_or_weak_pulse",
+      "short_5:local_tempo_change_or_weak_pulse",
+      "short_6:local_tempo_change_or_weak_pulse",
+      "tail:weak_full_speed_pulse",
+      "tempo_drift_or_disagreement"
+    ]
+  },
+  "pitch_sanity": "same dominant frequency-bin locations before/after atempo; not a listening-quality verdict",
+  "limitations": [
+    "Automatic classification is uncertain despite numeric interval lying within 175–177 BPM.",
+    "30-second sample cannot establish whole-song tempo.",
+    "Pitch-bin stability does not establish artifact-free listening quality."
+  ]
+}

@@ -1,8 +1,13 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-23 (젠 요청으로 새 06:30 BPM 작업 일시 중단)
+> Last updated: 2026-10-23 (06:30 기존 후보 30초 점검 완료, 길이 조절 시험 청취 의견 대기)
 
 ---
+
+## 2026-10-23 [CDX] 06:30 BPM 점검 재개·기존 후보 30초 표본 완료
+- 젠 원문 “재개해. 내 생각엔 음원 길이를 조정하는 방법도 있을 듯?”에 따라 아래 일시 중단을 해제했다. 후보 이력 68개에 유효한 연속 30초 표본을 확보해 68고유 후보·69표본의 [자동 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json)을 완성했다. 자동 결과는 모두 `uncertain` 원문 그대로다. 13번 2차 B의 첫 부분 무음 녹음은 제외하고 성공한 재시도 파일만 집계했다.
+- [독립 판정 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-independent-adjudications.json)은 68후보 `out` 54·`uncertain` 14다. [부모 전체 대조](validation/2026-10-23-0630-all-candidate-samples-parent-check.json)는 68 ID·69표본·원시 결과의 일치를 확인했다. Suno 휴지통 이동 34개·영구 삭제 0개·선택 0개, 크레딧 1,766이며 30초 판정은 전곡 BPM 보증이 아니다. 1번 네 번의 제출에서 나온 여덟 후보는 모두 `out`이라 다섯 번째 자동 반복은 하지 않는다.
+- 1번 4차 A의 원본 30초를 보존하고 FFmpeg `atempo`로 음높이를 유지하며 176 BPM을 겨냥한 [파생 시험본](../SERIES/06-30/input/bpm-audit/validation/2026-10-23-track1-atempo-pilot.json) 하나를 만들었다. 자동 판정은 `uncertain`, 별도 격자 측정은 약 175.948 BPM이며 [격리 검토](reviews/2026-10-23-0630-tempo-pilot-review.md)는 이 시험 범위에서 CLEAN이다. 원본·비교본은 `~/Downloads/wavvy-0630-tempo-test-20261023/`에 복사해 젠에게 전달했다. 청취 의견은 아직 없고 추가 삭제·생성·전곡 길이 조절은 보류한다. 원본 20 TXT·동결 입력·분석기·공식 state revision 83 `track_source_draft`는 바뀌지 않았다. 아래 중단 블록은 당시 이력이다.
 
 ## 2026-10-23 [CDX] 젠 요청으로 06:30 BPM 작업 일시 중단
 - 젠 원문 “잠깐만 스톱”에 따라 Suno 녹음·생성·휴지통 이동과 새 분석·검토 판정 반영을 즉시 멈췄다. 명시적 재개 요청 전에는 자동 진행하지 않는다. 9번 round2 B 분석은 중단 지시 수신 당시 이미 실행 중이었고, 중단 신호를 보낼 때 원시 결과 저장·종료코드 0이 확인됐다. 그 뒤 새 작업은 시작하지 않았다.
