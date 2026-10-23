@@ -1,0 +1,65 @@
+{
+  "schema": "wavvy.0630.bpm_capture_recovery_check.v1",
+  "candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "browser_tool": "mcp__aside__repl",
+  "actions": [
+    "Called capPage.bringToFront() through Aside MCP.",
+    "Reloaded the same candidate page through Aside MCP.",
+    "Clicked the visible Play button; playback restarted near zero.",
+    "Read existing CoreAudio diagnose binary twice during playback.",
+    "Paused playback after output was not detected; no third capture was started."
+  ],
+  "ui_observations": [
+    {
+      "time_utc": "2026-10-23T03:54:03.227Z",
+      "current_time_seconds": 0.031401,
+      "duration_seconds": 197.48,
+      "paused": false,
+      "muted": false,
+      "volume": 1,
+      "document_visibility": "visible",
+      "document_has_focus": true
+    },
+    {
+      "time_utc": "2026-10-23T03:54:20.450Z",
+      "current_time_seconds": 17.254371,
+      "duration_seconds": 197.48,
+      "paused": false,
+      "muted": false,
+      "volume": 1,
+      "document_visibility": "visible",
+      "document_has_focus": true
+    },
+    {
+      "time_utc": "2026-10-23T03:54:24.964Z",
+      "current_time_seconds": 21.291278,
+      "duration_seconds": 197.48,
+      "paused": true,
+      "muted": false,
+      "volume": 1
+    }
+  ],
+  "coreaudio_observations": [
+    {
+      "observed_at": "2026-10-23T03:54:05Z",
+      "aside_pid": 63240,
+      "aside_running_output": false,
+      "audio_helper_pid": 63897,
+      "audio_helper_present_in_coreaudio_rows": false,
+      "other_running_output_pid": 1364
+    },
+    {
+      "observed_at": "2026-10-23T03:54:20Z",
+      "aside_pid": 63240,
+      "aside_running_output": false,
+      "audio_helper_pid": 63897,
+      "audio_helper_present_in_coreaudio_rows": false,
+      "other_running_output_pid": 1364
+    }
+  ],
+  "tab_state_note": "After bringToFront, listBrowserTabs still marked Suno active=false and Challify active=true within the same window, while Suno document reported visibility=visible and hasFocus=true. This inconsistency is observed; it does not identify the cause of silent capture.",
+  "system_mute_changed": false,
+  "third_capture_started": false,
+  "conclusion": "The required CoreAudio output-positive condition was not observed. No valid BPM audio was obtained."
+}

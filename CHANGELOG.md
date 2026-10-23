@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- **새 06:30 1번 재생성·BPM 실측 대기** (2026-10-23) — 젠 승인으로 1번을 동결 원문·Custom 3:18로 한 번 더 생성해 3:17·3:18 두 후보를 추가했다. 기존 후보를 보존한 새 `[06:30]` 작업공간은 20논리곡·42후보, 크레딧 1,896이다. 젠은 175–177 BPM 밖 후보 삭제와 한 곡의 후보가 모두 탈락하면 재생성을 지시했다. 정상 다운로드 잔여 0이고 앱 전용 녹음 첫 두 번과 젠의 “재시도 해봐”에 따른 세 번째 짧은 녹음 모두 PCM 신호가 0이었다. [원시 증거](SERIES/06-30/input/bpm-audit/evidence/)와 실패 raw WAV 세 개를 보존했다. 유효 분석 음원·실측 BPM·삭제·최종 선택은 모두 0개다. 실제 무음 원인은 미확정이며 사용자 직접 재생 시 소리 여부 답변은 아직 없다. 공식 state는 revision 83 `track_source_draft`; 추가 녹음 재시도와 브라우저 조작은 멈췄다.
+
 - **시간 자막 검증·제목 작성 기본형 유지 하네스** (2026-10-23) — 명시적 시각 맵에서 SRT를 생성·검증하고 자막 준비와 보존된 게시 근거를 별도 상태로 확인한다. 1시간 초과 보컬 영상의 업로드 준비에는 검증된 시간 자막을 요구하며 `uploaded`는 영상 업로드를 뜻한다. 제목 기본 6구획의 형식·길이를 점검하고 기존 승인 제목·예외를 보존한다. [원시 검증](.ai/validation/2026-10-23-subtitle-title-harness/)은 86개 unit test, ignored 산출물 없는 격리 18개, 기존 제목 17개 모두 PASS다. [독립 검토](.ai/reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 원본 SRT·무시각 가사·썸네일·업로드 CSV 해시는 기준과 동일하다. 기존 17:30 자막 게시 근거를 재검증했으며 새 브라우저 확인·재게시·전곡 자동 청취는 하지 않았다. 원래 YouTube 게시 오류 원인은 미확정이다.
 
 - **17:30 시간 맞춘 수동 한국어 자막 게시 완료** (2026-10-23) — 젠 승인 뒤 원고 739행과 실제 가창 근거의 추가 반복 10행을 회차당 표시한 1,270구간·1,498행 [최종 SRT](SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt)를 기존 영상 `3HorT4OoDhg`에 게시했다. [Studio·공개 원시 관찰](SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/publication-observation.json)에서 수동 한국어 `게시됨`과 공개 네 구간의 정확한 가사를 확인했다. Studio 다운로드는 최종 파일에 LF 1바이트만 추가된 동일 내용이다. 최종 자막 격리 검토는 CLEAN(확정 Critical/High 0)이며, `wavvy-youtube-publish`에 기존 영상의 시간 자막 후속 절차를 반영했다. 제목·영상·공개·댓글·원고는 바꾸지 않았다. 아래 게시 오류 3회·선택 대기는 과거 기록이다.

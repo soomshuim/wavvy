@@ -1,7 +1,7 @@
 {
   "schema": "wavvy.suno_candidates.v1",
   "series": "SERIES/06-30",
-  "status": "initial_generation_complete",
+  "status": "regeneration_round2_ready_bpm_audit_pending",
   "workspace": {
     "name": "[06:30]",
     "id": "335455f4-30d5-4878-b658-365da757127e",
@@ -20,7 +20,7 @@
     "lyrics_marker": "[Instrumental]"
   },
   "credits_before": 2106,
-  "credits_after": 1906,
+  "credits_after": 1896,
   "source_packet_path": "SERIES/06-30/input/source-drafts-2026-10-23.json",
   "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
   "tracks": [
@@ -57,14 +57,53 @@
         "chosen_candidate_id": null
       },
       "duration_review": {
-        "status": "requires_user_regeneration_decision",
+        "status": "regeneration_round2_ready_originals_preserved",
         "minimum_target": "3:00",
         "observed_candidate_durations": [
           "1:30",
           "1:31"
         ],
-        "observation": "Both displayed durations are below the series minimum. This submission used Auto duration. No additional submission was made."
-      }
+        "observation": "Both first-generation displayed durations were below the series minimum. The first submission used Auto duration. A user-authorized Custom 3:18 second submission is recorded in regeneration_history.",
+        "regeneration_candidate_durations": [
+          "3:17",
+          "3:18"
+        ]
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "Initial Auto-duration candidates displayed 1:30 and 1:31, below the 3:00 series minimum; user authorized a 3:18 retry.",
+          "source_sha256": "34befd4b1649893ae0e03f29f3bdbc3dbb36adf7b5078b906a13bcac27b350ae",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "credits_before": 1906,
+          "credits_after_submission": 1896,
+          "precreate_ui_fields_exactly_matched_source": true,
+          "observed_workspace_song_count_after_submission": 42,
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
+              "observed_status": "play_button_and_duration_visible",
+              "duration": "3:17"
+            },
+            {
+              "id": "6ee02826-a14c-48e9-bf63-5671bae1008c",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/6ee02826-a14c-48e9-bf63-5671bae1008c",
+              "observed_status": "play_button_and_duration_visible",
+              "duration": "3:18"
+            }
+          ],
+          "ui_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-track1-regeneration-ui.json"
+        }
+      ]
     },
     {
       "order": 2,
@@ -699,5 +738,33 @@
     "final_workspace_snapshot": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-final-workspace-snapshot.json",
     "observed_workspace_song_count": 40,
     "observed_ready_candidate_count": 40
+  },
+  "bpm_audit": {
+    "status": "blocked_no_valid_analysis_audio",
+    "candidate_count_to_measure": 42,
+    "measured_candidate_count": 0,
+    "deleted_candidate_count": 0,
+    "audio_file_count": 0,
+    "download_test_candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+    "observed_download_dialog": "Out of Downloads; You have used all your downloads for now; Pro Plan Downloads 0; Refreshes 11/12/26",
+    "download_quota_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-download-quota-block.json",
+    "post_regeneration_workspace_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-post-regeneration-workspace-snapshot.json",
+    "user_instruction_quote": "응. 그리고 175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고",
+    "target_bpm_min": 175,
+    "target_bpm_max": 177,
+    "failed_capture_attempt_count": 3,
+    "failed_capture_raw_file_count": 3,
+    "failed_capture_reason": "Three Aside app-only ScreenCaptureKit captures had all-zero PCM despite visible browser playback progress; root cause unconfirmed.",
+    "valid_analysis_audio_file_count": 0,
+    "audio_file_count_definition": "Valid analysis audio only; three fully silent failed raw WAV files are preserved separately and excluded.",
+    "selected_candidate_count": 0,
+    "third_capture_started": true,
+    "failed_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json",
+    "recovery_check_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json",
+    "user_direct_aside_playback_sound_check": "asked; no direct hearing answer received; user instructed retry instead",
+    "next_action": "Obtain valid audio before measuring all 42 candidates; then apply the already user-approved 175-177 BPM deletion and regenerate a logical track if all of its candidates are removed. Do not delete based on prompt BPM or UI playback progress.",
+    "third_capture_result": "all-zero PCM; no usable audio",
+    "third_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json",
+    "user_retry_instruction_quote": "재시도 해봐"
   }
 }

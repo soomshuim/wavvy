@@ -1,6 +1,6 @@
 # 06:30 — 러닝 시리즈 제작 브리프
 
-Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). 첫 제출 20회에서 Suno 원격 후보 40개가 나타났고, 40개 모두 재생 버튼과 표시 길이가 확인됐다. 1번의 두 후보는 1:30·1:31로 3분 이상 목표에 못 미쳐 길이 보완 여부에 대한 젠의 답변을 기다린다. 전체 후보의 청취·선택도 대기 중이며 선택 음원·로컬 WAV는 0개다. 아래 20행은 곡별 **편곡 슬롯 제안**이지 완성곡·선택 음원 목록이 아니다.
+Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). Suno 첫 제출 20회와 젠이 승인한 1번 추가 제출 1회로 원격 후보 42개가 있다. 1번의 첫 두 후보 1:30·1:31은 보존했고, 추가 두 후보는 화면상 3:17·3:18이다. 175–177 BPM 실측·후보 삭제·최종 선택은 모두 0건이며, 선택 음원·유효 분석 음원도 없다. 아래 20행은 곡별 **편곡 슬롯 제안**이지 완성곡·선택 음원 목록이 아니다.
 
 ## 방향과 근거
 
@@ -47,6 +47,10 @@ Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). 첫 제출
 
 ## 현재 단계
 
-젠의 지시 “음원 생성해.”에 따라 첫 20곡 입력을 `input/tracks/`에 작성해 곡당 1회 제출했다. 원문·해시는 `input/source-drafts-2026-10-23.json`, 곡별 입력 게이트 출력은 `input/validation/2026-10-23-first-generation/source-gates.json`에 있다. 새 `[06:30]` 작업공간의 [원격 후보 기록](input/suno-candidates.json)과 [최종 화면 관찰](input/validation/2026-10-23-first-generation/suno-final-ui-observations.jsonl)에서 20곡×2후보, 서로 다른 ID 40개와 활성 재생 버튼 40개를 확인했다. 첫 1번은 Auto 길이로 제출해 표시 길이가 1:30·1:31이고, 2–20번의 38후보는 Custom 입력 뒤 표시 길이 3:12–3:31이다. 처음 20회 제출에 크레딧 200을 썼다(2,106→1,906). 1번 추가 생성 여부는 젠에게 질문해 답변 대기 중이며, 추가 제출은 하지 않았다.
+젠의 지시 “음원 생성해.”에 따라 첫 20곡 입력을 `input/tracks/`에 작성해 곡당 1회 제출했다. 원문·해시는 `input/source-drafts-2026-10-23.json`, 곡별 입력 게이트 출력은 `input/validation/2026-10-23-first-generation/source-gates.json`에 있다. 새 `[06:30]` 작업공간 `335455f4-30d5-4878-b658-365da757127e`의 [원격 후보 기록](input/suno-candidates.json)과 [첫 제출 화면 관찰](input/validation/2026-10-23-first-generation/suno-final-ui-observations.jsonl)에서 첫 20회 제출의 고유 ID 40개를 확인했다. 첫 1번은 Auto 길이로 제출해 표시 길이가 1:30·1:31이고, 2–20번의 38후보는 Custom 입력 뒤 표시 길이 3:12–3:31이다. 첫 20회에 크레딧 200을 썼다(2,106→1,906).
 
-다음 일은 1번 길이 보완 여부를 젠의 답변으로 정하고, 20곡의 후보를 실제로 듣고 선택하는 것이다. 현재 화면 길이·재생 가능 표시는 전곡 청취나 실제 175 BPM 검증이 아니다. 선택본 다운로드·최종 음원 보관은 아직 없고 로컬 WAV도 0개다. 이 문서는 `Final Track Sources` 또는 `Final Selected Audio Sources` 선언이 아니다.
+젠이 1번 길이 보완을 승인해 동결 원문으로 Custom 3:18을 한 번 더 제출했다. [추가 생성 화면](input/validation/2026-10-23-first-generation/suno-track1-regeneration-ui.json)의 새 후보 `a3af370c-b53f-4ecb-baa5-56bacc466599`·`6ee02826-a14c-48e9-bf63-5671bae1008c`는 화면상 3:17·3:18이다. 첫 두 후보를 삭제하지 않았고 전체는 20논리곡·42후보, 크레딧은 1,896이다. Suno 정상 다운로드 화면은 [잔여 0](input/validation/2026-10-23-first-generation/suno-download-quota-block.json)을 표시했다.
+
+젠의 최신 BPM 지시는 “응. 그리고 175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고”다. 이 지시는 유효한 음원을 확보해 실제 BPM을 잰 뒤 적용한다. 앱 전용 녹음 첫 두 시도는 [원시 검사](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json)에서 두 파일의 PCM 신호가 전부 0이었다. [새로고침 뒤 출력 확인](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json)에서도 실제 앱 오디오 출력이 확인되지 않았다. 젠이 “재시도 해봐”라고 지시한 뒤 세 번째 짧은 [녹음 재시도](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json)를 했지만 약 60초 48 kHz·2채널 파일 역시 PCM 신호가 전부 0이었다. 재생 화면의 시간은 약 33초까지 진행했다. 실패 원인은 확정하지 않았다. 젠에게 Aside에서 직접 재생할 때 소리가 들리는지 물었으나 소리 여부 답변은 받지 못했다.
+
+현재 유효한 분석 음원·BPM 측정·후보 삭제·최종 선택은 각각 0개다. 실패한 분석용 raw WAV 세 개는 별도로 보존하며 선택 음원이나 최종 WAV로 세지 않는다. 유효한 오디오 확보 뒤 42후보의 템포를 측정하고 젠이 지시한 범위 필터와 필요한 재생성을 이어간다. 화면의 길이·프롬프트상 175 BPM·재생 시간 진행만으로 실제 BPM이나 들리는 소리를 확정하지 않는다. 이 문서는 `Final Track Sources` 또는 `Final Selected Audio Sources` 선언이 아니다.

@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-23 (새 06:30 추가 생성·BPM 분석용 녹음 재시도)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 승인한 1번 동결 원문 Custom 3:18 재생성 1회로 새 후보 2개(3:17·3:18)를 추가했다. 기존 첫 40후보와 짧은 1번 두 후보는 보존해 새 `[06:30]` 작업공간 `335455f4-30d5-4878-b658-365da757127e`에 20논리곡·고유 ID 42개다. 크레딧은 1,896이다. [후보 기록](../SERIES/06-30/input/suno-candidates.json)에 추가 생성 이력이 있다.
+Current: 젠의 “175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고” 지시는 유효한 음원으로 BPM을 실측한 뒤 적용한다. 다운로드 잔여 0이다. 앱 전용 녹음 두 번이 전부 0 PCM이었고, 젠의 “재시도 해봐” 지시로 한 세 번째 짧은 녹음도 화면상 재생 시간은 약 33초 진행했으나 48 kHz·2채널 PCM 신호가 0이었다. 원인은 미확정이다. 실패 raw WAV 세 개는 보존했고 유효 분석 음원·BPM 측정·삭제·최종 선택은 각각 0개다. 젠에게 직접 재생 시 소리가 들리는지 물었지만 소리 여부 답변은 받지 못했다. 추가 재시도와 브라우저 조작은 멈췄다. 공식 state revision 83은 `track_source_draft`다.
+Verification: [첫 두 녹음](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json), [세 번째 재시도](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json)와 [현재 상태 검사](../SERIES/06-30/input/bpm-audit/evidence/2026-10-23-bpm-audit-document-check.json)에 실제 파일 해시·PCM 신호·후보 수를 남겼다. UI 재생 진행은 소리가 실제 출력됐다는 증거가 아니다. [BPM 분석기 최종 독립 검토](reviews/2026-10-23-0630-bpm-method-final-review.md)는 준비 범위에서 CLEAN(확인된 Critical/High 0·원칙 관찰 없음)이다. 수정 전 두 REVISE는 역사로 보존했다. 보존 원시 17건의 현재 분류 일치와 무음 입력 조기 반환을 검토했으며 전곡 재실행이나 실제 Suno 음원 판정은 아니다. 이전 합성 출력 3건의 숫자 구간은 현재 코드 결과로 인용하지 않는다.
+Next-TODO: 유효한 분석 음원 확보 뒤 42후보의 BPM을 측정하고, 젠이 이미 승인한 175–177 BPM 범위 밖 후보 삭제와 두 후보 모두 탈락하는 곡의 재생성을 진행한다. 같은 무음 방식의 반복 시도는 현재 멈췄다. 새 승인 요청이 필요한 상태로 바꾸지 않는다.
+Commits: 이번 후보 기록·분석기 준비·무음 블로커를 하나의 체크포인트 커밋으로 보존한다. 원격 반영 SHA는 실행 결과에서 대조한다. 분석용 raw WAV 세 개와 중지 마커는 로컬에만 보존한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-23 (새 06:30 첫 생성 20회·후보 40개 확인)
 Project: ~/Project/wavvy
 Agent: Codex
