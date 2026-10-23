@@ -1,0 +1,123 @@
+{
+  "as_of_utc": "2026-10-23T09:50:19.732731+00:00",
+  "scope": "Snapshot after initial 20 logical-track candidates plus first-track round3 were sampled; later retry samples are not covered. No whole-song or inside-tempo claim.",
+  "measured_unique_candidates": 44,
+  "measured_samples": 45,
+  "parent_reproduction_unique_samples": 45,
+  "explicit_raw_sample_log_provenance_rows": 40,
+  "legacy_first_track_metadata_rows": 5,
+  "legacy_first_track_provenance_reference": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+  "all_sample_and_result_hashes_match": true,
+  "automatic_uncertain_unchanged": true,
+  "all_measured_candidates_have_separate_independent_review": true,
+  "independent_counts": {
+    "independently_reviewed_candidates": 44,
+    "independent_out": 34,
+    "independent_uncertain": 10,
+    "moved_to_trash": 27,
+    "permanently_deleted": 0
+  },
+  "raw_reproduction_files": [
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-7a.jsonl",
+      "sha256": "9d816d6a13655955d15b8191d747a76c749fd625b27b8ce170b65d57477b47f0",
+      "rows": 1
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-7b.jsonl",
+      "sha256": "1099c81aa2c7cfa9eecffd7ab9c7077d421d59c482cb6f42fd1b7a5c8355df77",
+      "rows": 1
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-8a.jsonl",
+      "sha256": "f799184a44a6585bdfae1fba36bd48082b1b41a85c598a1aa07c0c0732c5aa16",
+      "rows": 1
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-8b.jsonl",
+      "sha256": "4538c6e5c0fc58d9bfa1a7cb3a39a50514093971db71df8b8d27be2ca604dc5c",
+      "rows": 1
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-first-track.jsonl",
+      "sha256": "6ad20f2310683bec0a46253c655ecca61105cba1180ec32de30e4036cf5d4f7a",
+      "rows": 5
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-remaining-part1.jsonl",
+      "sha256": "fbc0432d2581e7d090a6326259dcd8de25c178b217f2232237547b5b17a972fe",
+      "rows": 7
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-remaining-part2.jsonl",
+      "sha256": "5155436ce287ab117ec658a85e23e614a053b2ef5103dc84f264a664c1d0e445",
+      "rows": 3
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track1-round3.jsonl",
+      "sha256": "6f585903573fec9bd5fbca80f8beb2a7b8d6be1fc9a830319cfecd7a960a364f",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track10.jsonl",
+      "sha256": "46919efd3c51508f41a484a2149e43c78fb2369eb77c44a7312d66c10f240e1d",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track14.jsonl",
+      "sha256": "6153cb9fff45815aedc7a47f1d2815e8b5f858cadc7462b1f1f4e1242a92e78e",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track15.jsonl",
+      "sha256": "5b097f0a04dd724aeab0d0ebbe46e5fd1479d8c7a4f082bf10015fad058589ae",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track16.jsonl",
+      "sha256": "5519b99f110bd9f9ca7032a18dc57fa0d32134a65359e3c3e9bb79ab6bce29f3",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track17.jsonl",
+      "sha256": "30303df403591cb295642e2fad3cf93120221f0ac1bee4c9fe458553790b6758",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track18.jsonl",
+      "sha256": "c9c247d7524f00f798cd37593fd0036f574d709cd8b1e55442a3c86960416e41",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track19.jsonl",
+      "sha256": "b4b08ddb37a236bc120cf3f1bf32f80fd08ea622955f4c724e086186d6180d7c",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track20.jsonl",
+      "sha256": "ce49246880da6a3262155ac0a3b085c1209d417f37928303ee45002a75ad8328",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track9.jsonl",
+      "sha256": "2e5a1e239f20d096f05eefdb0f8b8d54948c14eed82cee225d8debd2d6ae1c1d",
+      "rows": 2
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-tracks11-12-partial.jsonl",
+      "sha256": "f5621045b923dd8c4a3728b188e374376d871b74cd1fb9868da8c38c89c92ea9",
+      "rows": 3
+    },
+    {
+      "path": "SERIES/06-30/input/bpm-audit/validation/independent-review-tracks12b-13.jsonl",
+      "sha256": "82b23c54467b1452f1f6205236f6d17aac94ac45e5ab5255a7b4066604bbbb94",
+      "rows": 3
+    }
+  ],
+  "actual_capture_format_check": {
+    "logs_checked": 43,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "write_error": "none"
+  }
+}

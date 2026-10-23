@@ -1,0 +1,410 @@
+{
+  "candidate_id": "6a6baa59-8576-4538-a157-b2410ce326d0",
+  "source": {
+    "kind": "recording",
+    "path": "SERIES/06-30/input/bpm-audit/audio/6a6baa59-8576-4538-a157-b2410ce326d0-resume20261023-30s.wav",
+    "sha256": "6cc6f3e947d773f097a22d65d80a5927a2cc029346a26500a3beaf71e28fb855",
+    "ffprobe_duration_seconds": 30.0
+  },
+  "duration_seconds": 30.0,
+  "methods": {
+    "essentia": "RhythmExtractor2013 multifeature; broad tempo 60-220",
+    "independent": "SciPy multi-band spectral-flux continuous-frequency peaks",
+    "local_change_check": "Overlapping 8-second low-attack beat grids, 4-second stride",
+    "boundary_margin_bpm": 0.2,
+    "note": "Margin is uncertainty allowance, not an extended acceptable BPM range.",
+    "scope": "Observed audio sample only; no unobserved-song tempo guarantee."
+  },
+  "silence_fraction": 0.0,
+  "rms": 0.1724896,
+  "essentia_version": "2.1-beta6-dev",
+  "tracker_reported_bpm": 116.67078,
+  "tracker_confidence": 2.46647,
+  "windows": [
+    {
+      "name": "sample",
+      "start_seconds": 0.0,
+      "stop_seconds": 30.0,
+      "tick_fit": {
+        "bpm": 115.81379,
+        "beats": 57,
+        "median_interval_bpm": 117.45373,
+        "missed_step_fraction": 0.0,
+        "residual_p95_ms": 81.29,
+        "coverage": 0.966
+      },
+      "combined_peaks": [
+        {
+          "bpm": 218.84877,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.23914,
+          "relative_strength": 0.7779
+        },
+        {
+          "bpm": 108.4287,
+          "relative_strength": 0.5016
+        },
+        {
+          "bpm": 97.28545,
+          "relative_strength": 0.4704
+        },
+        {
+          "bpm": 135.99342,
+          "relative_strength": 0.4454
+        }
+      ],
+      "low_peaks": [
+        {
+          "bpm": 109.05839,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 218.13957,
+          "relative_strength": 0.542
+        },
+        {
+          "bpm": 132.52864,
+          "relative_strength": 0.5075
+        }
+      ],
+      "high_peaks": [
+        {
+          "bpm": 219.24438,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.47252,
+          "relative_strength": 0.9297
+        },
+        {
+          "bpm": 111.34645,
+          "relative_strength": 0.9034
+        }
+      ],
+      "low_attack_grid": {
+        "bpm": 218.69506,
+        "coverage": 0.3853,
+        "matched_attacks": 42,
+        "detected_low_attacks": 60,
+        "residual_p95_ms": 70.04
+      }
+    },
+    {
+      "name": "head",
+      "start_seconds": 0.0,
+      "stop_seconds": 23.4,
+      "tick_fit": {
+        "bpm": 115.43792,
+        "beats": 45,
+        "median_interval_bpm": 117.45373,
+        "missed_step_fraction": 0.0,
+        "residual_p95_ms": 72.45,
+        "coverage": 0.9744
+      },
+      "combined_peaks": [
+        {
+          "bpm": 218.63735,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 97.20106,
+          "relative_strength": 0.8499
+        },
+        {
+          "bpm": 130.988,
+          "relative_strength": 0.8145
+        },
+        {
+          "bpm": 80.45664,
+          "relative_strength": 0.6174
+        },
+        {
+          "bpm": 107.48534,
+          "relative_strength": 0.6067
+        }
+      ],
+      "low_peaks": [
+        {
+          "bpm": 108.98127,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 217.80067,
+          "relative_strength": 0.4432
+        },
+        {
+          "bpm": 164.37342,
+          "relative_strength": 0.4147
+        }
+      ],
+      "high_peaks": [
+        {
+          "bpm": 111.14653,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.24496,
+          "relative_strength": 0.8657
+        },
+        {
+          "bpm": 218.932,
+          "relative_strength": 0.7876
+        }
+      ],
+      "low_attack_grid": {
+        "bpm": 218.65287,
+        "coverage": 0.3882,
+        "matched_attacks": 33,
+        "detected_low_attacks": 43,
+        "residual_p95_ms": 60.3
+      }
+    },
+    {
+      "name": "middle",
+      "start_seconds": 3.3,
+      "stop_seconds": 26.7,
+      "tick_fit": {
+        "bpm": 115.68441,
+        "beats": 45,
+        "median_interval_bpm": 117.45373,
+        "missed_step_fraction": 0.0,
+        "residual_p95_ms": 75.55,
+        "coverage": 0.9735
+      },
+      "combined_peaks": [
+        {
+          "bpm": 218.71571,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.48676,
+          "relative_strength": 0.7949
+        },
+        {
+          "bpm": 108.7738,
+          "relative_strength": 0.4915
+        },
+        {
+          "bpm": 97.13491,
+          "relative_strength": 0.4627
+        },
+        {
+          "bpm": 146.80994,
+          "relative_strength": 0.4285
+        }
+      ],
+      "low_peaks": [
+        {
+          "bpm": 109.26444,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 217.65515,
+          "relative_strength": 0.5599
+        },
+        {
+          "bpm": 132.78721,
+          "relative_strength": 0.5261
+        }
+      ],
+      "high_peaks": [
+        {
+          "bpm": 219.2779,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 111.40685,
+          "relative_strength": 0.9315
+        },
+        {
+          "bpm": 131.537,
+          "relative_strength": 0.9225
+        }
+      ],
+      "low_attack_grid": {
+        "bpm": 218.59056,
+        "coverage": 0.4118,
+        "matched_attacks": 35,
+        "detected_low_attacks": 48,
+        "residual_p95_ms": 56.85
+      }
+    },
+    {
+      "name": "tail",
+      "start_seconds": 6.6,
+      "stop_seconds": 30.0,
+      "tick_fit": {
+        "bpm": 116.08979,
+        "beats": 45,
+        "median_interval_bpm": 117.45373,
+        "missed_step_fraction": 0.0,
+        "residual_p95_ms": 85.15,
+        "coverage": 0.9735
+      },
+      "combined_peaks": [
+        {
+          "bpm": 219.14692,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.56817,
+          "relative_strength": 0.7635
+        },
+        {
+          "bpm": 109.69141,
+          "relative_strength": 0.537
+        },
+        {
+          "bpm": 84.67988,
+          "relative_strength": 0.3907
+        },
+        {
+          "bpm": 145.08584,
+          "relative_strength": 0.3689
+        }
+      ],
+      "low_peaks": [
+        {
+          "bpm": 109.11909,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 85.93084,
+          "relative_strength": 0.7164
+        },
+        {
+          "bpm": 131.71177,
+          "relative_strength": 0.7161
+        }
+      ],
+      "high_peaks": [
+        {
+          "bpm": 219.67332,
+          "relative_strength": 1.0
+        },
+        {
+          "bpm": 131.69443,
+          "relative_strength": 0.8085
+        },
+        {
+          "bpm": 111.60508,
+          "relative_strength": 0.6775
+        }
+      ],
+      "low_attack_grid": {
+        "bpm": 218.66838,
+        "coverage": 0.4706,
+        "matched_attacks": 40,
+        "detected_low_attacks": 54,
+        "residual_p95_ms": 60.27
+      }
+    }
+  ],
+  "short_windows": [
+    {
+      "start_seconds": 0.0,
+      "stop_seconds": 8.0,
+      "low_attack_grid": {
+        "bpm": null,
+        "coverage": 0,
+        "reason": "few_low_attacks"
+      }
+    },
+    {
+      "start_seconds": 4.0,
+      "stop_seconds": 12.0,
+      "low_attack_grid": {
+        "bpm": 217.08861,
+        "coverage": 0.4138,
+        "matched_attacks": 12,
+        "detected_low_attacks": 16,
+        "residual_p95_ms": 53.78
+      }
+    },
+    {
+      "start_seconds": 8.0,
+      "stop_seconds": 16.0,
+      "low_attack_grid": {
+        "bpm": 217.96964,
+        "coverage": 0.5517,
+        "matched_attacks": 16,
+        "detected_low_attacks": 19,
+        "residual_p95_ms": 56.83
+      }
+    },
+    {
+      "start_seconds": 12.0,
+      "stop_seconds": 20.0,
+      "low_attack_grid": {
+        "bpm": 217.9911,
+        "coverage": 0.4483,
+        "matched_attacks": 13,
+        "detected_low_attacks": 17,
+        "residual_p95_ms": 55.42
+      }
+    },
+    {
+      "start_seconds": 16.0,
+      "stop_seconds": 24.0,
+      "low_attack_grid": {
+        "bpm": 220.29038,
+        "coverage": 0.4667,
+        "matched_attacks": 14,
+        "detected_low_attacks": 17,
+        "residual_p95_ms": 44.96
+      }
+    },
+    {
+      "start_seconds": 20.0,
+      "stop_seconds": 28.0,
+      "low_attack_grid": {
+        "bpm": 220.37575,
+        "coverage": 0.4138,
+        "matched_attacks": 12,
+        "detected_low_attacks": 18,
+        "residual_p95_ms": 46.92
+      }
+    },
+    {
+      "start_seconds": 22.0,
+      "stop_seconds": 30.0,
+      "low_attack_grid": {
+        "bpm": 217.28492,
+        "coverage": 0.4483,
+        "matched_attacks": 13,
+        "detected_low_attacks": 20,
+        "residual_p95_ms": 65.19
+      }
+    }
+  ],
+  "classification": "uncertain",
+  "reasons": [
+    "head:tracker_disagreement",
+    "head:unstable_beat_grid",
+    "head:weak_full_speed_pulse",
+    "middle:tracker_disagreement",
+    "middle:unstable_beat_grid",
+    "middle:weak_full_speed_pulse",
+    "sample:tracker_disagreement",
+    "sample:unstable_beat_grid",
+    "sample:weak_full_speed_pulse",
+    "short_0:missing_local_pulse",
+    "short_1:local_tempo_change_or_weak_pulse",
+    "short_2:local_tempo_change_or_weak_pulse",
+    "short_3:local_tempo_change_or_weak_pulse",
+    "short_4:local_tempo_change_or_weak_pulse",
+    "short_5:local_tempo_change_or_weak_pulse",
+    "short_6:local_tempo_change_or_weak_pulse",
+    "tail:spectral_pulse_disagreement",
+    "tail:tracker_disagreement",
+    "tail:unstable_beat_grid",
+    "tail:weak_full_speed_pulse",
+    "tempo_drift_or_disagreement"
+  ],
+  "conservative_bpm_interval": {
+    "lower": 115.23792,
+    "upper": 219.34692
+  }
+}

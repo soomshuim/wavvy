@@ -1,7 +1,7 @@
 {
   "schema": "wavvy.suno_candidates.v1",
   "series": "SERIES/06-30",
-  "status": "regeneration_round2_ready_bpm_audit_pending",
+  "status": "user_paused",
   "workspace": {
     "name": "[06:30]",
     "id": "335455f4-30d5-4878-b658-365da757127e",
@@ -20,7 +20,7 @@
     "lyrics_marker": "[Instrumental]"
   },
   "credits_before": 2106,
-  "credits_after": 1896,
+  "credits_after": 1766,
   "source_packet_path": "SERIES/06-30/input/source-drafts-2026-10-23.json",
   "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
   "tracks": [
@@ -42,14 +42,34 @@
           "displayed_name": "1. 첫 박부터",
           "url": "https://suno.com/song/63595bb8-89b5-403c-8ded-0f0adf8934f2",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "1:30"
+          "duration": "1:30",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+            "scope": "reviewed 30-second sample(s), not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "3d7dd056-493e-4952-8236-506934affdff",
           "displayed_name": "1. 첫 박부터",
           "url": "https://suno.com/song/3d7dd056-493e-4952-8236-506934affdff",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "1:31"
+          "duration": "1:31",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+            "scope": "reviewed 30-second sample(s), not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
@@ -57,7 +77,7 @@
         "chosen_candidate_id": null
       },
       "duration_review": {
-        "status": "regeneration_round2_ready_originals_preserved",
+        "status": "regeneration_round3_ready_previous_four_candidates_trashed",
         "minimum_target": "3:00",
         "observed_candidate_durations": [
           "1:30",
@@ -65,6 +85,10 @@
         ],
         "observation": "Both first-generation displayed durations were below the series minimum. The first submission used Auto duration. A user-authorized Custom 3:18 second submission is recorded in regeneration_history.",
         "regeneration_candidate_durations": [
+          "3:17",
+          "3:18"
+        ],
+        "round3_observed_candidate_durations": [
           "3:17",
           "3:18"
         ]
@@ -91,17 +115,154 @@
               "displayed_name": "1. 첫 박부터",
               "url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
               "observed_status": "play_button_and_duration_visible",
-              "duration": "3:17"
+              "duration": "3:17",
+              "bpm_30s_adjudication": {
+                "status": "out",
+                "review_path": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+                "scope": "reviewed 30-second sample(s), not whole-song tempo"
+              },
+              "remote_disposition": {
+                "status": "moved_to_trash",
+                "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+                "permanent_delete": false
+              }
             },
             {
               "id": "6ee02826-a14c-48e9-bf63-5671bae1008c",
               "displayed_name": "1. 첫 박부터",
               "url": "https://suno.com/song/6ee02826-a14c-48e9-bf63-5671bae1008c",
               "observed_status": "play_button_and_duration_visible",
-              "duration": "3:18"
+              "duration": "3:18",
+              "bpm_30s_adjudication": {
+                "status": "out",
+                "review_path": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+                "scope": "reviewed 30-second sample(s), not whole-song tempo"
+              },
+              "remote_disposition": {
+                "status": "moved_to_trash",
+                "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+                "permanent_delete": false
+              }
             }
           ],
-          "ui_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-track1-regeneration-ui.json"
+          "ui_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-track1-regeneration-ui.json",
+          "disposition": "both_candidates_moved_to_trash_after_reviewed_30s_bpm_out"
+        },
+        {
+          "submission_attempt": 3,
+          "reason": "User requested deletion of candidates outside 175–177 BPM and regeneration when all candidates for a track are removed; independent first-track review classified all four previous candidates out on 30-second samples.",
+          "source_sha256": "34befd4b1649893ae0e03f29f3bdbc3dbb36adf7b5078b906a13bcac27b350ae",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "credits_before": 1896,
+          "credits_after_submission": 1886,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-regeneration-round3-precreate-committed-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-regeneration-round3-results-ui.json",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "a59a879f-9f55-43ec-bfa7-0de329f3d9c4",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/a59a879f-9f55-43ec-bfa7-0de329f3d9c4",
+              "observed_status": "play_button_and_duration_visible",
+              "duration": "3:17",
+              "bpm_30s_adjudication": {
+                "status": "out",
+                "review_path": ".ai/reviews/2026-10-23-0630-track1-round3-review.md",
+                "scope": "reviewed 30-second sample, not whole-song tempo"
+              },
+              "remote_disposition": {
+                "status": "moved_to_trash",
+                "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+                "permanent_delete": false
+              }
+            },
+            {
+              "id": "560103d6-c733-4d63-b38e-0b34191b7e31",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/560103d6-c733-4d63-b38e-0b34191b7e31",
+              "observed_status": "play_button_and_duration_visible",
+              "duration": "3:18",
+              "bpm_30s_adjudication": {
+                "status": "out",
+                "review_path": ".ai/reviews/2026-10-23-0630-track1-round3-review.md",
+                "scope": "reviewed 30-second sample, not whole-song tempo"
+              },
+              "remote_disposition": {
+                "status": "moved_to_trash",
+                "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+                "permanent_delete": false
+              }
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        },
+        {
+          "submission_attempt": 4,
+          "reason": "User explicitly selected tempo wording revision after three all-out submissions. One new submission authorized.",
+          "user_approval_quote": "박자 지시 수정안으로 재생성 (추천)",
+          "approved_retry_source_path": "SERIES/06-30/input/retry-sources/track01-round4-tempo-explicit-2026-10-23.json",
+          "approved_retry_source_sha256": "f624c1cdd9a881e93ac4f172deab84c64e3c3f9f8fbf48c6252a75da9a9e2b25",
+          "original_source_sha256": "34befd4b1649893ae0e03f29f3bdbc3dbb36adf7b5078b906a13bcac27b350ae",
+          "original_source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "style_source_field": "approved_revised_style",
+          "style_characters": 664,
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "credits_before": 1776,
+          "credits_after_submission": 1766,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track1-regeneration-round4-precreate-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track1-regeneration-round4-results-ui.json",
+          "create_click_count": 1,
+          "submission_status": "accepted_both_candidates_sampled_30s",
+          "delayed_acceptance_note": "Single Create click showed spinner with no credit or IDs for approximately 50+ seconds; the same UI then showed credits -10 and two new IDs. No retry click.",
+          "candidates": [
+            {
+              "id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/24703f3f-c7ce-433f-a892-16d9330b41a9",
+              "observed_status": "ready_played_30s_sample_observed",
+              "duration": null,
+              "sample_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/24703f3f-c7ce-433f-a892-16d9330b41a9-resume20261023-check.json"
+            },
+            {
+              "id": "7c3c2109-9aa8-4296-844e-441d60757eb4",
+              "displayed_name": "1. 첫 박부터",
+              "url": "https://suno.com/song/7c3c2109-9aa8-4296-844e-441d60757eb4",
+              "observed_status": "ready_played_30s_sample_observed",
+              "duration": null,
+              "sample_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/7c3c2109-9aa8-4296-844e-441d60757eb4-resume20261023-check.json"
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
         }
       ]
     },
@@ -123,20 +284,90 @@
           "displayed_name": "2. 가속선",
           "url": "https://suno.com/song/868aeec6-85ce-4a92-b0b1-ca02e638c540",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:23"
+          "duration": "3:23",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part1-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "ef60ea7d-8bcc-4bef-ba16-a900b67cf296",
           "displayed_name": "2. 가속선",
           "url": "https://suno.com/song/ef60ea7d-8bcc-4bef-ba16-a900b67cf296",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:22"
+          "duration": "3:22",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part1-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested removal of reviewed outside-175–177 BPM candidates and regeneration when both original candidates are removed.",
+          "source_sha256": "7eff84f951a7e0f5bd99a9729843fa98501623aeb9b798177494c3a16aaf1683",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "duration_note": "Controller-directed retry duration; original source Aim length unchanged. Future retries follow frozen Aim and original Custom target.",
+          "credits_before": 1886,
+          "credits_after_submission": 1876,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track2-regeneration-round2-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-remaining-part1-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "cfd5aee6-499e-4af0-8194-c9f89b6e5073",
+              "displayed_name": "2. 가속선",
+              "url": "https://suno.com/song/cfd5aee6-499e-4af0-8194-c9f89b6e5073",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:18",
+              "progress_max_seconds": 198
+            },
+            {
+              "id": "67d6a052-21ef-4c59-be09-790468e75152",
+              "displayed_name": "2. 가속선",
+              "url": "https://suno.com/song/67d6a052-21ef-4c59-be09-790468e75152",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:18",
+              "progress_max_seconds": 197.68
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 3,
@@ -163,7 +394,17 @@
           "displayed_name": "3. 빛나는 노면",
           "url": "https://suno.com/song/20ca5436-4964-448d-930a-34723d9b91d8",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:16"
+          "duration": "3:16",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part1-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
@@ -189,7 +430,17 @@
           "displayed_name": "4. 전력 곡선",
           "url": "https://suno.com/song/92223cd5-c992-41aa-a50d-6d25da7b5104",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:27"
+          "duration": "3:27",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part1-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "5ac0c138-5643-43ee-a2e4-07b02a794cbb",
@@ -255,20 +506,90 @@
           "displayed_name": "6. 다리의 불꽃",
           "url": "https://suno.com/song/ca41f79d-e11c-4277-a972-dbf011dfe338",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:12"
+          "duration": "3:12",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part2-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "6e69e03f-67b2-4b20-94ba-cc0715661142",
           "displayed_name": "6. 다리의 불꽃",
           "url": "https://suno.com/song/6e69e03f-67b2-4b20-94ba-cc0715661142",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:12"
+          "duration": "3:12",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-remaining-part2-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested removal of reviewed outside-175–177 BPM candidates and regeneration when both original candidates are removed.",
+          "source_sha256": "b38aa4fa2ad8f533fd88f99dd0234a7c17f83717f13ec40a827a4c6d893b8ecd",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "duration_note": "Controller-directed retry duration; original source Aim length unchanged. Future retries follow frozen Aim and original Custom target.",
+          "credits_before": 1876,
+          "credits_after_submission": 1866,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track6-regeneration-round2-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-remaining-part2-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+              "displayed_name": "6. 다리의 불꽃",
+              "url": "https://suno.com/song/e2196f98-b0f6-432b-b8a2-a900af30a793",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:18",
+              "progress_max_seconds": 197.6
+            },
+            {
+              "id": "a7a91428-17b9-476a-9a78-65b94f1bc75c",
+              "displayed_name": "6. 다리의 불꽃",
+              "url": "https://suno.com/song/a7a91428-17b9-476a-9a78-65b94f1bc75c",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:18",
+              "progress_max_seconds": 197.44
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 7,
@@ -288,20 +609,90 @@
           "displayed_name": "7. 하늘을 밀어",
           "url": "https://suno.com/song/9ba77190-23e4-4894-afc0-99b96301eedf",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:25"
+          "duration": "3:25",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track7-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "cb244064-d030-426a-8199-de24738319d0",
           "displayed_name": "7. 하늘을 밀어",
           "url": "https://suno.com/song/cb244064-d030-426a-8199-de24738319d0",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:26"
+          "duration": "3:26",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track7-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "36a133c4ee6e5a8c0efcef90762f22f0c748e05792d7545d7d70ab0dded75e62",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:26",
+          "duration_seconds": 206,
+          "credits_before": 1866,
+          "credits_after_submission": 1856,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track7-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-9-regeneration-round2-results-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track7-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "44f0d79f-d375-4624-bc4a-fc8ef4ac7336",
+              "displayed_name": "7. 하늘을 밀어",
+              "url": "https://suno.com/song/44f0d79f-d375-4624-bc4a-fc8ef4ac7336",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:25",
+              "progress_max_seconds": 205
+            },
+            {
+              "id": "b1e7fe46-ab35-46fd-85a7-25433230a485",
+              "displayed_name": "7. 하늘을 밀어",
+              "url": "https://suno.com/song/b1e7fe46-ab35-46fd-85a7-25433230a485",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:26",
+              "progress_max_seconds": 206.36
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 8,
@@ -321,7 +712,17 @@
           "displayed_name": "8. 유리 번개",
           "url": "https://suno.com/song/4655a9dc-d99b-41a0-a14e-d91046ce04ab",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:16"
+          "duration": "3:16",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track8-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
@@ -354,20 +755,90 @@
           "displayed_name": "9. 한계 위로",
           "url": "https://suno.com/song/6a6b3c12-75ae-4f78-9d7c-368f721b08e3",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:29"
+          "duration": "3:29",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track9-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "f7512e4f-2293-41de-b338-2244c59214de",
           "displayed_name": "9. 한계 위로",
           "url": "https://suno.com/song/f7512e4f-2293-41de-b338-2244c59214de",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:29"
+          "duration": "3:29",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track9-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "ce5912edae1a94a6d052b1a348f7a1ecdb9ed64d06b0327940e18cc731bd949a",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:29",
+          "duration_seconds": 209,
+          "credits_before": 1856,
+          "credits_after_submission": 1846,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track9-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-9-regeneration-round2-results-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track9-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "153cf1c0-7e93-4787-aebb-c332fbed6632",
+              "displayed_name": "9. 한계 위로",
+              "url": "https://suno.com/song/153cf1c0-7e93-4787-aebb-c332fbed6632",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:29",
+              "progress_max_seconds": 209.2
+            },
+            {
+              "id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+              "displayed_name": "9. 한계 위로",
+              "url": "https://suno.com/song/aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:28",
+              "progress_max_seconds": 208.4
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 10,
@@ -394,7 +865,17 @@
           "displayed_name": "10. 전류의 발끝",
           "url": "https://suno.com/song/8801f14c-352e-42fc-bfb7-18a551a063ca",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:19"
+          "duration": "3:19",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track10-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
@@ -420,7 +901,17 @@
           "displayed_name": "11. 계속 앞으로",
           "url": "https://suno.com/song/fa41e79f-de63-441d-a426-25144a5721dd",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:15"
+          "duration": "3:15",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
@@ -453,20 +944,91 @@
           "displayed_name": "12. 폭발 직전",
           "url": "https://suno.com/song/704d6663-6a2f-4a17-ba75-9a87bf768e7a",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:31"
+          "duration": "3:31",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "50609247-d7b1-49fb-b35e-062b1e39eb74",
           "displayed_name": "12. 폭발 직전",
           "url": "https://suno.com/song/50609247-d7b1-49fb-b35e-062b1e39eb74",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:30"
+          "duration": "3:30",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "dc216733c2334c6d9808dc9687fe8d337d4bbd6b3190db82d1f7cd7f7211540c",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:31",
+          "duration_seconds": 211,
+          "credits_before": 1846,
+          "credits_after_submission": 1836,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track12-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track12-regeneration-round2-results-ui.json",
+          "readiness_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "ee1bbe52-3678-474a-8add-649d63c0f46f",
+              "displayed_name": "12. 폭발 직전",
+              "url": "https://suno.com/song/ee1bbe52-3678-474a-8add-649d63c0f46f",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:30",
+              "progress_max_seconds": 209.92
+            },
+            {
+              "id": "656159cf-a887-4d7c-943a-455b73f31960",
+              "displayed_name": "12. 폭발 직전",
+              "url": "https://suno.com/song/656159cf-a887-4d7c-943a-455b73f31960",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:30",
+              "progress_max_seconds": 209.6
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 13,
@@ -486,20 +1048,91 @@
           "displayed_name": "13. 황금 주파수",
           "url": "https://suno.com/song/225b2ae2-c906-49fe-9dac-45d0fd443e33",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:21"
+          "duration": "3:21",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "a5fbfcd3-9187-45c0-81b8-005e0b6eb106",
           "displayed_name": "13. 황금 주파수",
           "url": "https://suno.com/song/a5fbfcd3-9187-45c0-81b8-005e0b6eb106",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:22"
+          "duration": "3:22",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "caa075c22540464e005d530e6f0f56a75d55b9f4186b68fffd7a2c3a0165c6a2",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:22",
+          "duration_seconds": 202,
+          "credits_before": 1836,
+          "credits_after_submission": 1826,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track13-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track13-regeneration-round2-results-ui.json",
+          "readiness_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-tracks11-to13-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+              "displayed_name": "13. 황금 주파수",
+              "url": "https://suno.com/song/b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:22",
+              "progress_max_seconds": 202.0
+            },
+            {
+              "id": "15245f48-251c-4678-83e6-1590561c53c0",
+              "displayed_name": "13. 황금 주파수",
+              "url": "https://suno.com/song/15245f48-251c-4678-83e6-1590561c53c0",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:22",
+              "progress_max_seconds": 201.6
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 14,
@@ -519,20 +1152,91 @@
           "displayed_name": "14. 높은 기어",
           "url": "https://suno.com/song/f8df1271-a60c-465b-900f-a8863c86f8dc",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:24"
+          "duration": "3:24",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track14-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "9146a3fc-adac-4e38-a1ad-160d41b61e4a",
           "displayed_name": "14. 높은 기어",
           "url": "https://suno.com/song/9146a3fc-adac-4e38-a1ad-160d41b61e4a",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:23"
+          "duration": "3:23",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track14-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "0c51f88ff08149176637b2dae4e6a9d684d3abe555db2fb64133d5cbdb2d5ed6",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:24",
+          "duration_seconds": 204,
+          "credits_before": 1826,
+          "credits_after_submission": 1816,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track14-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track14-regeneration-round2-results-ui.json",
+          "readiness_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track14-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "edb25d1d-c08c-4641-adf7-accf529b5202",
+              "displayed_name": "14. 높은 기어",
+              "url": "https://suno.com/song/edb25d1d-c08c-4641-adf7-accf529b5202",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:23",
+              "progress_max_seconds": 203.2
+            },
+            {
+              "id": "a61d1c6b-c42d-4714-9057-b5541e4cd110",
+              "displayed_name": "14. 높은 기어",
+              "url": "https://suno.com/song/a61d1c6b-c42d-4714-9057-b5541e4cd110",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:23",
+              "progress_max_seconds": 203.36
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 15,
@@ -552,20 +1256,91 @@
           "displayed_name": "15. 번쩍이는 궤도",
           "url": "https://suno.com/song/c16d57ef-9dde-4f05-996d-2086cbecffab",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:19"
+          "duration": "3:19",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track15-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "fdc4a65a-3a00-4401-a219-00dad20732d7",
           "displayed_name": "15. 번쩍이는 궤도",
           "url": "https://suno.com/song/fdc4a65a-3a00-4401-a219-00dad20732d7",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:19"
+          "duration": "3:19",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track15-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "e18d927afe613a8945cb1d4100b351d52c5cdd00e7cc70ae7bb2fad2418f2b87",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:20",
+          "duration_seconds": 200,
+          "credits_before": 1816,
+          "credits_after_submission": 1806,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track15-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track15-regeneration-round2-results-ui.json",
+          "readiness_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track15-review.md",
+          "submission_status": "accepted_two_candidates_ready",
+          "candidates": [
+            {
+              "id": "b9c055a2-3726-4073-a103-801dcfafd1bf",
+              "displayed_name": "15. 번쩍이는 궤도",
+              "url": "https://suno.com/song/b9c055a2-3726-4073-a103-801dcfafd1bf",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:20",
+              "progress_max_seconds": 199.56
+            },
+            {
+              "id": "50578a3f-cefa-45b9-8f90-7f46b8c6e763",
+              "displayed_name": "15. 번쩍이는 궤도",
+              "url": "https://suno.com/song/50578a3f-cefa-45b9-8f90-7f46b8c6e763",
+              "observed_status": "play_button_and_playbar_duration_visible",
+              "duration": "3:19",
+              "progress_max_seconds": 198.8
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ],
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out"
     },
     {
       "order": 16,
@@ -585,20 +1360,88 @@
           "displayed_name": "16. 가속의 틈",
           "url": "https://suno.com/song/b171ac5e-100a-484b-870a-b5da304070c6",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:15"
+          "duration": "3:15",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track16-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "2b744b5a-a5a2-4f28-a556-6135baf57361",
           "displayed_name": "16. 가속의 틈",
           "url": "https://suno.com/song/2b744b5a-a5a2-4f28-a556-6135baf57361",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:14"
+          "duration": "3:14",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track16-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "d06f15e9357d3088911de7727ff8326679b5e70edf6f60c5981dc69a92f7db51",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:15",
+          "duration_seconds": 195,
+          "credits_before": 1806,
+          "credits_after_submission": 1796,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track16-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track16-regeneration-round2-results-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track16-review.md",
+          "submission_status": "accepted_generating_initial",
+          "candidates": [
+            {
+              "id": "7c3bc62b-2599-4bf1-aecc-212fff88d556",
+              "displayed_name": "16. 가속의 틈",
+              "url": "https://suno.com/song/7c3bc62b-2599-4bf1-aecc-212fff88d556",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            },
+            {
+              "id": "b3bf9123-dae1-4909-820b-44f1710fcf3c",
+              "displayed_name": "16. 가속의 틈",
+              "url": "https://suno.com/song/b3bf9123-dae1-4909-820b-44f1710fcf3c",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ]
     },
     {
       "order": 17,
@@ -618,20 +1461,88 @@
           "displayed_name": "17. 몸이 먼저",
           "url": "https://suno.com/song/2c522f61-8d60-42cb-ba62-7e101b6df476",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:28"
+          "duration": "3:28",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track17-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "2f4c69d7-ae91-4f59-9e2d-3f241c431770",
           "displayed_name": "17. 몸이 먼저",
           "url": "https://suno.com/song/2f4c69d7-ae91-4f59-9e2d-3f241c431770",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:28"
+          "duration": "3:28",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track17-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "56efaed60b4beb22d57d361adaf6fafd5763d4676a5c9d65cb5df1a79850c99e",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:28",
+          "duration_seconds": 208,
+          "credits_before": 1796,
+          "credits_after_submission": 1786,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track17-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track17-regeneration-round2-results-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track17-review.md",
+          "submission_status": "accepted_generating_initial",
+          "candidates": [
+            {
+              "id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+              "displayed_name": "17. 몸이 먼저",
+              "url": "https://suno.com/song/fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            },
+            {
+              "id": "b4fbc446-bfb5-47da-b05e-b97e4c7c57d5",
+              "displayed_name": "17. 몸이 먼저",
+              "url": "https://suno.com/song/b4fbc446-bfb5-47da-b05e-b97e4c7c57d5",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ]
     },
     {
       "order": 18,
@@ -651,20 +1562,88 @@
           "displayed_name": "18. 빛을 따라",
           "url": "https://suno.com/song/ad4bc944-300f-466b-80cf-4ea29a14c9f4",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:17"
+          "duration": "3:17",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track18-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         },
         {
           "id": "af2385fb-8638-4392-a9a0-7a031e31853e",
           "displayed_name": "18. 빛을 따라",
           "url": "https://suno.com/song/af2385fb-8638-4392-a9a0-7a031e31853e",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:18"
+          "duration": "3:18",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track18-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
         "status": "pending",
         "chosen_candidate_id": null
-      }
+      },
+      "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
+      "regeneration_history": [
+        {
+          "submission_attempt": 2,
+          "reason": "User requested reviewed outside-175–177 BPM candidates moved to Trash and regeneration when both originals removed.",
+          "source_sha256": "40ec4ca440766080d8679719362fe1b25e8fb25dbe0d26cd2c3eae2643942ecf",
+          "source_packet_sha256": "1fabea73156de66ca02aacfec4d7e4bec9edb1d05bebfeadebb7dd5eb41cb4ea",
+          "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+          "model": "v6",
+          "duration_mode": "Custom",
+          "duration_target": "3:18",
+          "duration_seconds": 198,
+          "credits_before": 1786,
+          "credits_after_submission": 1776,
+          "settings_observed": {
+            "weirdness_percent": 50,
+            "style_influence_percent": 50,
+            "max_mode": "Off",
+            "personalize": "Off"
+          },
+          "precreate_ui_fields_exactly_matched_source": true,
+          "precreate_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track18-regeneration-round2-precreate-ui.json",
+          "trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+          "result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track18-regeneration-round2-results-ui.json",
+          "independent_review_path": ".ai/reviews/2026-10-23-0630-track18-review.md",
+          "submission_status": "accepted_generating_initial",
+          "candidates": [
+            {
+              "id": "d0def3e8-b583-4516-bebd-59ed6c29f012",
+              "displayed_name": "18. 빛을 따라",
+              "url": "https://suno.com/song/d0def3e8-b583-4516-bebd-59ed6c29f012",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            },
+            {
+              "id": "bfc81654-878b-4946-8d5c-88e421bce5ee",
+              "displayed_name": "18. 빛을 따라",
+              "url": "https://suno.com/song/bfc81654-878b-4946-8d5c-88e421bce5ee",
+              "observed_status": "accepted_generating_initial",
+              "duration": null
+            }
+          ],
+          "decision": {
+            "status": "pending_30s_bpm_audit",
+            "chosen_candidate_id": null
+          }
+        }
+      ]
     },
     {
       "order": 19,
@@ -691,7 +1670,17 @@
           "displayed_name": "19. 끝까지 당겨",
           "url": "https://suno.com/song/e1ccafe5-fe4c-4f23-a44f-415ce2181286",
           "observed_status": "play_button_and_duration_visible",
-          "duration": "3:12"
+          "duration": "3:12",
+          "bpm_30s_adjudication": {
+            "status": "out",
+            "review_path": ".ai/reviews/2026-10-23-0630-track19-review.md",
+            "scope": "reviewed 30-second sample, not whole-song tempo"
+          },
+          "remote_disposition": {
+            "status": "moved_to_trash",
+            "ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+            "permanent_delete": false
+          }
         }
       ],
       "decision": {
@@ -740,11 +1729,11 @@
     "observed_ready_candidate_count": 40
   },
   "bpm_audit": {
-    "status": "paused_by_user_await_explicit_resume",
-    "candidate_count_to_measure": 42,
-    "measured_candidate_count": 1,
-    "deleted_candidate_count": 0,
-    "audio_file_count": 2,
+    "status": "user_paused",
+    "candidate_count_to_measure": 68,
+    "measured_candidate_count": 54,
+    "deleted_candidate_count": 34,
+    "audio_file_count": 55,
     "download_test_candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
     "observed_download_dialog": "Out of Downloads; You have used all your downloads for now; Pro Plan Downloads 0; Refreshes 11/12/26",
     "download_quota_evidence_path": "SERIES/06-30/input/validation/2026-10-23-first-generation/suno-download-quota-block.json",
@@ -755,14 +1744,14 @@
     "failed_capture_attempt_count": 5,
     "failed_capture_raw_file_count": 5,
     "failed_capture_reason": "Five Aside app-only capture files had all-zero PCM; first four before signal probe5 and one interrupted full-song attempt after it. Cause unconfirmed.",
-    "valid_analysis_audio_file_count": 2,
+    "valid_analysis_audio_file_count": 55,
     "audio_file_count_definition": "Verified 30-second analysis samples, not full-song audio or final selected WAV.",
     "selected_candidate_count": 0,
     "third_capture_started": true,
     "failed_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json",
     "recovery_check_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json",
     "user_direct_aside_playback_sound_check": "asked; no direct hearing answer received; user instructed retry instead",
-    "next_action": "Paused. On explicit user resume request, continue from next B candidate with verified 30-second samples and conservative BPM audit; deletions require independent review first.",
+    "next_action": "User paused after track9 round2 B 30-second sample. No browser playback, capture, deletion, or regeneration until explicit user resume.",
     "third_capture_result": "all-zero PCM; no usable audio",
     "third_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json",
     "user_retry_instruction_quote": "재시도 해봐",
@@ -776,20 +1765,81 @@
     "short_signal_probe_audio_file_count": 1,
     "user_sample_scope_quote": "전체를 다 녹음할 필요는 없어 30초씩만 해도 돼",
     "analysis_scope": "Observed continuous 30-second music sample only; not a whole-song BPM guarantee.",
-    "measured_sample_count": 2,
-    "uncertain_candidate_count": 1,
+    "measured_sample_count": 55,
+    "uncertain_candidate_count": 10,
     "first_candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
     "first_candidate_sample_result_paths": [
       "SERIES/06-30/input/bpm-audit/results/a3af370c-b53f-4ecb-baa5-56bacc466599-30s.json",
       "SERIES/06-30/input/bpm-audit/results/a3af370c-b53f-4ecb-baa5-56bacc466599-mid-30s.json"
     ],
-    "first_candidate_classification": "uncertain; both samples, no deletion or pass decision",
+    "first_candidate_classification": "Historical: first three submissions (six candidates) independently out and moved to Trash. User-approved revised-STYLE fourth submission was accepted once; both new candidates have verified 30-second samples and await independent BPM disposition.",
     "interrupted_silent_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-full-interrupted-check.json",
     "user_pause_quotes": [
       "앗 그거 어려운데 잠깐 스톱해줘.",
       "내가 작업 재개 요청할 때 재개해줘. 지금은 aside를 써야해서.."
     ],
-    "resume_condition": "Explicit user request to resume; no further recording, analysis, deletion or regeneration before then.",
-    "browser_checkpoint": "Next B candidate page opened; no B sample captured."
+    "resume_condition": "Historical pause was lifted by “suno 켜놨어 다시 진행해”. Current user instruction “잠깐만 스톱” pauses collection again; await explicit resume.",
+    "browser_checkpoint": "Playback paused and app-only capture stopped after track9 round2 B (aadf83c5-cd5f-47d0-9819-0d3cbb86efd0) 30-second sample. No browser action after the pause instruction.",
+    "candidate_count_to_measure_note": "40 original candidates plus first-track second, third, fourth submission pairs plus eleven later regeneration pairs (2/6/7/9/12/13/14/15/16/17/18). Thirty-four reviewed candidates moved to Trash; none permanently deleted.",
+    "current_live_candidate_count_expected": 34,
+    "total_generated_candidate_ids": 68,
+    "user_resume_instruction_quote": "suno 켜놨어 다시 진행해",
+    "first_track_review_path": ".ai/reviews/2026-10-23-0630-resume-first-track-review.md",
+    "first_track_trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-trash-ui.json",
+    "first_track_round3_result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-first-track-regeneration-round3-results-ui.json",
+    "first_track_round3_candidate_ids": [
+      "a59a879f-9f55-43ec-bfa7-0de329f3d9c4",
+      "560103d6-c733-4d63-b38e-0b34191b7e31"
+    ],
+    "measurement_counts_source": "SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json (checkpoint; analyst updates independently)",
+    "additional_reviewed_trash_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-remaining-reviewed-trash-ui.json",
+    "track2_regeneration_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track2-regeneration-round2-ui.json",
+    "track6_regeneration_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track6-regeneration-round2-ui.json",
+    "track2_regeneration_candidate_ids": [
+      "cfd5aee6-499e-4af0-8194-c9f89b6e5073",
+      "67d6a052-21ef-4c59-be09-790468e75152"
+    ],
+    "track6_regeneration_candidate_ids": [
+      "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "a7a91428-17b9-476a-9a78-65b94f1bc75c"
+    ],
+    "additional_trash_tracks7_to10_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-to10-reviewed-trash-ui.json",
+    "track7_9_regeneration_result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks7-9-regeneration-round2-results-ui.json",
+    "track7_regeneration_candidate_ids": [
+      "44f0d79f-d375-4624-bc4a-fc8ef4ac7336",
+      "b1e7fe46-ab35-46fd-85a7-25433230a485"
+    ],
+    "track9_regeneration_candidate_ids": [
+      "153cf1c0-7e93-4787-aebb-c332fbed6632",
+      "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0"
+    ],
+    "current_collection_position": "Latest completed sample is track9 round2 B (aadf83c5-cd5f-47d0-9819-0d3cbb86efd0); 54 unique candidates and 55 verified 30-second samples in analyst ledger. User paused before any next candidate or disposition.",
+    "additional_trash_tracks1_11_to15_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json",
+    "tracks12_to15_regeneration_readiness_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json",
+    "first_track_round3_disposition": "both_reviewed_out_moved_to_trash; fourth_submission_user_approved_and_sampled",
+    "automatic_raw_uncertain_candidate_count": 54,
+    "independently_reviewed_out_count": 36,
+    "uncertain_candidate_count_definition": "Measured candidates remaining without reviewed outside-range deletion; automatic raw uncertain count is recorded separately.",
+    "additional_trash_tracks16_to19_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks16-to19-reviewed-trash-ui.json",
+    "track16_regeneration_candidate_ids": [
+      "7c3bc62b-2599-4bf1-aecc-212fff88d556",
+      "b3bf9123-dae1-4909-820b-44f1710fcf3c"
+    ],
+    "track17_regeneration_candidate_ids": [
+      "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+      "b4fbc446-bfb5-47da-b05e-b97e4c7c57d5"
+    ],
+    "track18_regeneration_candidate_ids": [
+      "d0def3e8-b583-4516-bebd-59ed6c29f012",
+      "bfc81654-878b-4946-8d5c-88e421bce5ee"
+    ],
+    "first_track_round4_candidate_ids": [
+      "24703f3f-c7ce-433f-a892-16d9330b41a9",
+      "7c3c2109-9aa8-4296-844e-441d60757eb4"
+    ],
+    "first_track_round4_approved_source_path": "SERIES/06-30/input/retry-sources/track01-round4-tempo-explicit-2026-10-23.json",
+    "first_track_round4_approved_source_sha256": "f624c1cdd9a881e93ac4f172deab84c64e3c3f9f8fbf48c6252a75da9a9e2b25",
+    "first_track_round4_result_ui_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/2026-10-23-track1-regeneration-round4-results-ui.json",
+    "first_track_classification": "First three submissions: six candidates independently out and moved to Trash. User-approved revised STYLE fourth submission accepted once; both new candidates sampled for 30 seconds and await independent BPM disposition."
   }
 }
