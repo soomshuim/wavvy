@@ -1,0 +1,71 @@
+{
+  "checked_at_utc": "2026-10-23T23:10:58.241258+00:00",
+  "scope": "Completed first retry-six after user deletion report only; later user-authorized renamed/slower attempts have separate records. Actual raw queue and workspace JSON excerpts compared directly, staged bytes rehashed.",
+  "result": "PASS_FOR_RECORDED_PARTIAL_RESULT",
+  "full_replacement_complete": false,
+  "deletion_actor": "user_reported_not_independently_verified",
+  "agent_executed_deletions": 0,
+  "manifest_sha256": "68affa80f3b83e5f6bd514877ed01f1006b521e40102a9740c60f87f34eff928",
+  "durable_raw_sha256": "7e2067731c989c06c50a530865b7ea0e2112cf7f18441d880e384f521fcc8539",
+  "retry_rows": [
+    {
+      "order": 6,
+      "source_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "staged_actual_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 9,
+      "source_candidate_id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+      "staged_actual_sha256": "3683ce6d2a9466b80c2be302178a7493edd1ec296a7bd15b3a13514bef71cdd4",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 11,
+      "source_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+      "staged_actual_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 12,
+      "source_candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+      "staged_actual_sha256": "3bf60bb4bc82336a9abba115db1b72107bfa62a2599b73986864086f2449ac74",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 17,
+      "source_candidate_id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+      "staged_actual_sha256": "ac07204626adbfb50d66897415b263cb2182173f740cc55ab3eea7cf4f2679d5",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 19,
+      "source_candidate_id": "08faf4f4-f3fa-404d-97a6-f0515f9ceed3",
+      "staged_actual_sha256": "ba0ac270628fbf1950a664ac36ee24e8db38200c02d71871d9c34fa529a10ecb",
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    }
+  ],
+  "workspace_checks": [
+    {
+      "raw_path": "work/0630-suno-retry-six-20261024/retry34.raw.json",
+      "raw_sha256": "9e21918f2828677fbc6eb6f262141d918d3765f8f938df30e68e8f83e70d3254",
+      "id_set_and_titles_durations_status_exact_match": true,
+      "count": 14
+    },
+    {
+      "raw_path": "work/0630-suno-retry-six-20261024/retry35.raw.json",
+      "raw_sha256": "cb80f4b5038d448416bb674e13c9e2baa0fe37bea16d47ab51f2044ad064705f",
+      "id_set_and_titles_durations_status_exact_match": true,
+      "count": 14
+    }
+  ],
+  "current_workspace_count_at_this_retry": 14,
+  "new_accepted_count": 0,
+  "pending": 0
+}

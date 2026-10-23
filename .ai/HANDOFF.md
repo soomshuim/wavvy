@@ -1,4 +1,17 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 원격18곡·6/11번 서비스 거부)
+Date: 2026-10-24
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 사용자 직접 삭제 보고 뒤 첫6곡 재시도는0성공, 새로고침·이름변경 배치에서17/19 추가 수락, 약1BPM 감속 배치에서9/12 추가 수락으로 현재 Suno18곡이다. 6/11은 감속 사본도 같은 오류로 거부돼 전곡 교체는 미완료다.
+Current: 정확한 작업공간335455f4-30d5-4878-b658-365da757127e. 기존14곡과 추가4곡만 있으며 필터 해제/복원 모두18개 ID·제목·길이·complete 일치, 대기0·선택0. 이번 에이전트 삭제/복원/생성/공개0. 사용자 직접 삭제는 user_reported이며 독립 검증하지 않았다. 강제 새로고침 단축키의 재로딩은 관찰되지 않았고 일반 reload 한 번을 실행했다. 캐시 우회는 미검증이다.
+Sources: SERIES/06-30/input/suno-replacement/2026-10-24/retry-six/retry-manifest.json → retry-renamed/retry-manifest.json → retry-slower/upload-manifest.json. 기존 원본 후보ID·local20·Downloads20·download-manifest/candidates/state는 불변. Suno9/12는 별도175목표 감속사본이며 로컬 최종입력9/12는 이전176목표 파일 그대로다. 감속4개는 retry-slower/processing-manifest.json에 실제경로/SHA/원본연결을 보존했다. 새 업로드ID로 원본출처ID를 덮어쓰지 않는다.
+Verification: .ai/validation/2026-10-24-0630-suno-retry-final-check.json, .ai/validation/2026-10-24-0630-suno-retry-state-check.json, .ai/validation/2026-10-24-0630-suno-retry-six-check.json, .ai/validation/2026-10-24-0630-suno-renamed-check.json, .ai/validation/2026-10-24-0630-suno-slower-audio-check.json, .ai/validation/2026-10-24-0630-suno-retry-six-preservation.json. 공식state revision84 track_source_draft·입력20개. 신규 전곡 청취·전곡 BPM·YouTube 업로드 완료는 선언하지 않는다.
+Review: .ai/reviews/2026-10-24-0630-suno-retry-review.md, 실제 fresh Astra/high. 기록 범위 CLEAN·확인된Critical/High0·원칙관찰없음. 전체20곡 수락 판정은 아니다.
+Next-TODO: 6번 다리의 불꽃·11번 계속 앞으로의 정상 업로드가 서비스 오류로 미완료다. 승인된 재시도는 끝났고 추가 자동 재시도·추가 감속·삭제 계획은 없다. 아래14곡·6거부 및33곡 휴지통 내용은 첫 교체 당시 이력이다.
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 Suno 교체 일부 완료·6곡 서비스 거부)
 Date: 2026-10-24
 Project: ~/Project/wavvy

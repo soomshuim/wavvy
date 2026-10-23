@@ -1,0 +1,109 @@
+{
+  "checked_at_utc": "2026-10-23T23:22:10.217439+00:00",
+  "scope": "Root direct raw queue, unfiltered/restored complete18 UI unions, exact staged/output/source SHA and source/state preservation. Recorded partial account result only; not full20 replacement.",
+  "result": "PASS_FOR_RECORDED_PARTIAL_RESULT",
+  "all20_replacement_complete": false,
+  "current_remote_count": 18,
+  "retained_previous14": true,
+  "renamed_accepts": [
+    17,
+    19
+  ],
+  "slower_accepts": [
+    9,
+    12
+  ],
+  "remaining_rejected": [
+    6,
+    11
+  ],
+  "pending": 0,
+  "selected": 0,
+  "rows": [
+    {
+      "order": 6,
+      "source_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "original_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "actual_slower_and_staged_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 9,
+      "source_candidate_id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+      "original_sha256": "3683ce6d2a9466b80c2be302178a7493edd1ec296a7bd15b3a13514bef71cdd4",
+      "actual_slower_and_staged_sha256": "ef5e95eb04742a0aafa331ed67a036f4983c6126560851f762beec36d1b9b393",
+      "uploaded_id": "cfe646f5-78ff-461e-9fc1-2989b9b6ea44",
+      "status": "complete",
+      "error": null
+    },
+    {
+      "order": 11,
+      "source_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+      "original_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "actual_slower_and_staged_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording"
+    },
+    {
+      "order": 12,
+      "source_candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+      "original_sha256": "3bf60bb4bc82336a9abba115db1b72107bfa62a2599b73986864086f2449ac74",
+      "actual_slower_and_staged_sha256": "ce5b579e44be0397164aec095c8da7937d1f9e7fc570c1f253a893eb4114eebd",
+      "uploaded_id": "43203e12-e8f3-45c4-bc44-62d64b92305d",
+      "status": "complete",
+      "error": null
+    }
+  ],
+  "workspace_views": [
+    {
+      "view": "unfiltered",
+      "count": 18,
+      "all_expected_ids_titles_durations_complete_and_unselected": true,
+      "raw_files": [
+        {
+          "path": "work/0630-suno-retry-slower-20261024/slower17.raw.json",
+          "sha256": "fe645068a55a0c3acb8cc4c0875d6455a937a2cfd7122fadeb394e13a9833626"
+        },
+        {
+          "path": "work/0630-suno-retry-slower-20261024/slower18.raw.json",
+          "sha256": "f6774a55a6cfbbb1bfb575d1cc4c4573c3bc2799bcc0b060fed7f78f188131ab"
+        }
+      ]
+    },
+    {
+      "view": "restored",
+      "count": 18,
+      "all_expected_ids_titles_durations_complete_and_unselected": true,
+      "raw_files": [
+        {
+          "path": "work/0630-suno-retry-slower-20261024/slower20.raw.json",
+          "sha256": "b1dc84b69b93d2cc9732e76719e61f023e87cca47a9b5be61899ba3e454317bc"
+        },
+        {
+          "path": "work/0630-suno-retry-slower-20261024/slower22.raw.json",
+          "sha256": "69034d25d5f1e55d9a23ec8ef160a736cdee3756f4813517d4b8943a7cd051e4"
+        }
+      ]
+    }
+  ],
+  "durable_raw_source_exact_matches": 14,
+  "upload_manifest_sha256": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+  "durable_ui_sha256": "20b696f2a4d5960e1939adbd28e6cd5d500e2c679153cf1146d9b281f32b6bb9",
+  "processing_manifest_sha256": "c217127ebf09e21f475fabcda3ba7866f796432b590da0f9ad29c5bf01ee8ca3",
+  "protected_files_unchanged": {
+    ".ai/state.json": "eb8fec35441820de3fbb38632dd814d498afd9211a433b09f6610e3b6d4a1f42",
+    "SERIES/06-30/input/download-manifest.json": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+    "SERIES/06-30/input/suno-candidates.json": "52d9fa70a6bb808c679c34a374eb66ed2c95ed42461239c75bfa3560b498ac8f",
+    "SERIES/06-30/input/suno-replacement/2026-10-24/replacement-manifest.json": "b4c622c5c6b4705583b161a53e2b5cb75f1315741ac6546e85e403e7eb3fa282",
+    "SERIES/06-30/input/suno-replacement/2026-10-24/final-ui-evidence.raw.json": "c09240ab88a2939ae8a5b218c9d63dc2bf22384a5c5ed1ee21d80b948032969e"
+  },
+  "deletion": "User reported direct deletion; agent deletion0 and independently verified=false",
+  "limits": [
+    "Hard reload shortcut did not show navigation; ordinary reload verified only. Cache bypass not verified.",
+    "Remote9/12 are separate175-target copies; local input20 and Downloads20 retain prior approved bytes.",
+    "No new whole-song BPM or listener certification; no server audio redownload."
+  ]
+}

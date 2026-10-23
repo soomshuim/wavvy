@@ -1,0 +1,312 @@
+{
+  "schema": "wavvy.suno.retry-renamed.v1",
+  "recorded_at_utc": "2026-10-23T23:17:05.686659+00:00",
+  "executor": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh"
+  },
+  "browser": {
+    "product": "Aside",
+    "method": "MCP",
+    "tool": "mcp__aside__repl",
+    "profile_id": "be41d9e1-db47-4e5c-b567-be8ce72163cc",
+    "target_id": "3EB9439619B26DA6372363A057510022",
+    "session_directory": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F"
+  },
+  "authorization_quote": "강제 새로 고침 후 다시 업로드해봐. 이름도 좀 바꿔보고",
+  "deletion": {
+    "status": "user_reported",
+    "reported_actor": "user",
+    "independently_verified": false,
+    "agent_executed_permanent_delete_count": 0,
+    "agent_executed_restore_count": 0,
+    "prior_trash_observations": "Historical before latest user deletion report; not proof of current Trash state."
+  },
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "workspace_name": "[06:30]",
+  "refresh": {
+    "keyboard_shortcut": "Meta+Shift+R",
+    "shortcut_attempts": 1,
+    "before_time_origin": 1792774018327.6,
+    "after_shortcut_time_origin": 1792774018327.6,
+    "shortcut_reload_observed": false,
+    "cache_bypass_verified": false,
+    "fallback": "page.reload()",
+    "fallback_attempts": 1,
+    "after_fallback_time_origin": 1792797015252.1,
+    "fallback_navigation_type": "reload",
+    "ordinary_reload_verified": true
+  },
+  "result": {
+    "attempted": 6,
+    "success": 2,
+    "rejected": 4,
+    "pending": 0,
+    "failed_orders": [
+      6,
+      9,
+      11,
+      12
+    ],
+    "causation": "Whether renamed filenames or reload affected acceptance is unknown."
+  },
+  "rows": [
+    {
+      "order": 6,
+      "title": "6. 다리의 불꽃",
+      "source_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "local_input_filename": "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "duration_seconds": 193.5710625,
+      "staged_filename": "06_LegSpark_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/06_LegSpark_Final.wav",
+      "staged_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "size_bytes": 74331380,
+      "retry_attempt_count": 1,
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e"
+    },
+    {
+      "order": 9,
+      "title": "9. 한계 위로",
+      "source_candidate_id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+      "local_input_filename": "SERIES/06-30/input/tracks/09__한계 위로__Driven__Post Hardcore Rock__NA.wav",
+      "sha256": "3683ce6d2a9466b80c2be302178a7493edd1ec296a7bd15b3a13514bef71cdd4",
+      "duration_seconds": 215.7628125,
+      "staged_filename": "09_AboveTheLimit_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/09_AboveTheLimit_Final.wav",
+      "staged_sha256": "3683ce6d2a9466b80c2be302178a7493edd1ec296a7bd15b3a13514bef71cdd4",
+      "size_bytes": 82853012,
+      "retry_attempt_count": 1,
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e"
+    },
+    {
+      "order": 11,
+      "title": "11. 계속 앞으로",
+      "source_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+      "local_input_filename": "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "duration_seconds": 193.76633333333334,
+      "staged_filename": "11_KeepMoving_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/11_KeepMoving_Final.wav",
+      "staged_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "size_bytes": 74406364,
+      "retry_attempt_count": 1,
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e"
+    },
+    {
+      "order": 12,
+      "title": "12. 폭발 직전",
+      "source_candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+      "local_input_filename": "SERIES/06-30/input/tracks/12__폭발 직전__Driven__Post Hardcore Rock__NA.wav",
+      "sha256": "3bf60bb4bc82336a9abba115db1b72107bfa62a2599b73986864086f2449ac74",
+      "duration_seconds": 229.73391666666666,
+      "staged_filename": "12_AboutToBurst_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/12_AboutToBurst_Final.wav",
+      "staged_sha256": "3bf60bb4bc82336a9abba115db1b72107bfa62a2599b73986864086f2449ac74",
+      "size_bytes": 88217916,
+      "retry_attempt_count": 1,
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e"
+    },
+    {
+      "order": 17,
+      "title": "17. 몸이 먼저",
+      "source_candidate_id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+      "local_input_filename": "SERIES/06-30/input/tracks/17__몸이 먼저__Driven__Post Hardcore Rock__NA.wav",
+      "sha256": "ac07204626adbfb50d66897415b263cb2182173f740cc55ab3eea7cf4f2679d5",
+      "duration_seconds": 218.84997916666666,
+      "staged_filename": "17_BodyFirst_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/17_BodyFirst_Final.wav",
+      "staged_sha256": "ac07204626adbfb50d66897415b263cb2182173f740cc55ab3eea7cf4f2679d5",
+      "size_bytes": 84038484,
+      "retry_attempt_count": 1,
+      "uploaded_id": "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+      "status": "complete",
+      "error": null,
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+      "visible_duration": "3:39",
+      "final_title": "17. 몸이 먼저"
+    },
+    {
+      "order": 19,
+      "title": "19. 끝까지 당겨",
+      "source_candidate_id": "08faf4f4-f3fa-404d-97a6-f0515f9ceed3",
+      "local_input_filename": "SERIES/06-30/input/tracks/19__끝까지 당겨__Driven__Hardcore Punk Rock__NA.wav",
+      "sha256": "ba0ac270628fbf1950a664ac36ee24e8db38200c02d71871d9c34fa529a10ecb",
+      "duration_seconds": 196.68425,
+      "staged_filename": "19_PullToTheEnd_Final.wav",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-renamed/19_PullToTheEnd_Final.wav",
+      "staged_sha256": "ba0ac270628fbf1950a664ac36ee24e8db38200c02d71871d9c34fa529a10ecb",
+      "size_bytes": 75526844,
+      "retry_attempt_count": 1,
+      "uploaded_id": "f7deea5a-f4c5-406c-bf58-6228dbd79021",
+      "status": "complete",
+      "error": null,
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+      "visible_duration": "3:17",
+      "final_title": "19. 끝까지 당겨"
+    }
+  ],
+  "final_workspace": {
+    "scope": "After renamed batch, before slower batch",
+    "url": "https://suno.com/create?wid=335455f4-30d5-4878-b658-365da757127e",
+    "current_count": 16,
+    "rows": [
+      {
+        "id": "5773f8c0-e37a-4816-a958-bd53c503a26c",
+        "title": "1. 첫 박부터",
+        "duration": "3:33",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "f1966f19-a26c-4816-bf1e-ad8d0376e23e",
+        "title": "2. 가속선",
+        "duration": "3:26",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "48cf2d45-c684-4f9a-857c-6de429a6b69f",
+        "title": "3. 빛나는 노면",
+        "duration": "3:17",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "8e187fa4-79bb-4e41-8400-8c67df07c267",
+        "title": "4. 전력 곡선",
+        "duration": "3:28",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "3049c58e-6ce9-4b28-b2d3-5abaf40696ab",
+        "title": "5. 빛의 마찰",
+        "duration": "3:21",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "13c7f55f-c798-412c-91c8-8d4159ed6561",
+        "title": "7. 하늘을 밀어",
+        "duration": "3:31",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "1708a2eb-b2b5-43ff-a2c8-031ed1d00c6e",
+        "title": "8. 유리 번개",
+        "duration": "3:22",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "7bfa9398-32e7-46a5-a8f4-7a71d1313dd1",
+        "title": "10. 전류의 발끝",
+        "duration": "3:20",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "5bc95d2a-6d77-4ffd-a2ba-96aa2970e725",
+        "title": "13. 황금 주파수",
+        "duration": "3:32",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "694a40cd-a627-4689-8225-befc087672f5",
+        "title": "14. 높은 기어",
+        "duration": "3:32",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "909040b8-1286-4e73-88a4-43a8863c043c",
+        "title": "15. 번쩍이는 궤도",
+        "duration": "3:26",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "63356d6d-d857-45a4-a920-f6d92c01138c",
+        "title": "16. 가속의 틈",
+        "duration": "3:27",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+        "title": "17. 몸이 먼저",
+        "duration": "3:39",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "45decf5d-7ff8-4a2a-8e98-2383af92a8c9",
+        "title": "18. 빛을 따라",
+        "duration": "3:22",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "f7deea5a-f4c5-406c-bf58-6228dbd79021",
+        "title": "19. 끝까지 당겨",
+        "duration": "3:17",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "5e271bdc-7584-46df-ad96-65d8d753b6c8",
+        "title": "20. 다시 점화",
+        "duration": "3:30",
+        "status": "complete",
+        "selected": false
+      }
+    ],
+    "collection_method": "Union of same-list top/bottom DOM IDs due virtual rows; visible count16 songs.",
+    "prior14_exact_ids_titles_durations_preserved": true,
+    "new_success_ids": [
+      "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+      "f7deea5a-f4c5-406c-bf58-6228dbd79021"
+    ],
+    "pending": 0,
+    "selected_count": 0,
+    "selected_filters": [
+      "Hide Disliked",
+      "Hide Stems",
+      "Hide Clips from Edit Mode"
+    ]
+  },
+  "agent_action_counts": {
+    "delete": 0,
+    "restore": 0,
+    "generate": 0,
+    "publish": 0,
+    "file_attachment_calls": 1,
+    "individual_file_attempts": 6,
+    "title_edits": 2
+  },
+  "preservation": {
+    "approved20_bytes_unchanged": true,
+    "renamed_uploads_bytes_equal_sources": true,
+    "source_candidate_ids_immutable": true,
+    "original_manifests_not_modified": true
+  },
+  "evidence": {
+    "path": "SERIES/06-30/input/suno-replacement/2026-10-24/retry-renamed/retry-ui-evidence.raw.json",
+    "sha256": "0b3ec3835bfa25d1499075f8de6a8f332cc939ce77dbf6a23b119cee3504755c"
+  }
+}

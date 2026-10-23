@@ -1,8 +1,17 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-24 (06:30 기존 Suno 33곡 휴지통 이동·수정본14곡 업로드·6곡 사이트 거부)
+> Last updated: 2026-10-24 (06:30 재시도 후 원격18곡·6/11번 거부·로컬20개 보존)
 
 ---
+
+## 2026-10-24 [CDX] 06:30 재시도 후 원격18곡·6/11번 서비스 거부
+
+- 젠 원문 “6,9,11,12,17,19는 suno에서 먼저 삭제하고 업로드 시도” → “영구 삭제 하고 재시도” → “내가 삭제했어.”. 사용자 직접 삭제 보고 뒤 에이전트 삭제 준비를 중단하고 업로드만 했다. 이번 에이전트 영구삭제·일반 휴지통 이동·복원은0이며 사용자 삭제 완료를 독립 검증했다고 기록하지 않는다. 이전 Trash 관찰은 사용자 보고 전 이력이다.
+- [첫 재시도](../SERIES/06-30/input/suno-replacement/2026-10-24/retry-six/retry-manifest.json)는 동일 최종6파일 각1회·성공0·거부6·대기0이었다. 추가 원문 “강제 새로 고침 후 다시 업로드해봐. 이름도 좀 바꿔보고”로 [이름변경 재시도](../SERIES/06-30/input/suno-replacement/2026-10-24/retry-renamed/retry-manifest.json)를 각1회 실행해17·19번이 수락됐고6·9·11·12번이 거부됐다. 강제 새로고침 단축키의 재로딩은 관찰되지 않아 일반 새로고침을 한 번 실행했다. 캐시 우회와 이름변경의 효과는 단정하지 않는다.
+- 추가 원문 “재시도해도 안되면 음원도 길이를 수정해. 1bpm 정도 느리게”에 따라 실패4개만 FFmpeg atempo=175/176으로 별도 처리하고 각1회 [감속 업로드](../SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json)했다. 9번 새ID `cfe646f5-78ff-461e-9fc1-2989b9b6ea44` 3:37, 12번 `43203e12-e8f3-45c4-bc44-62d64b92305d` 3:51이 수락됐다. 6·11번은 `This audio matches an existing recording`으로 거부됐다. 네 사본은 기술 검사 통과이며 첫6번의 JSON 기록 오류는 재렌더 없이 자료형만 고쳐 기존 출력 검사로 복구했다.
+- 현재 정확한 작업공간335455f4-30d5-4878-b658-365da757127e에는18곡이 있다. 이전14+이름변경성공2+감속성공2의 정확한 집합이며 필터 해제·복원 모두18개, 제목·표시 길이·완료 상태 일치, 대기0·선택0이다. 제목은 모두 기존 번호·한국어 곡명으로 저장했다. 새 원격17·19는 기존 최종 바이트이고9·12만 별도 감속 바이트다. 생성·공개·추가삭제·다른 작업공간 조작은 없다.
+- 원본 출처ID와 업로드ID는 분리한다. 최종 입력20WAV·Downloads20사본·download-manifest/candidates·공식state revision84 track_source_draft는 그대로다. 따라서 현재 Suno9·12의175처리목표 사본과 로컬9·12의이전176처리목표 파일은 다르며, 새 감속4개는 [별도 처리 목록](../SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/processing-manifest.json)에 보존한다. 175는 근사 처리목표이며 전곡 BPM·새 청취 통과를 선언하지 않는다.
+- [독립 Astra/high 검토](reviews/2026-10-24-0630-suno-retry-review.md)는 이 기록 범위에서 CLEAN(확인된 Critical/High0·원칙 관찰 없음)이다. [최종18곡 직접 대조](validation/2026-10-24-0630-suno-retry-final-check.json)·[공식 상태 점검](validation/2026-10-24-0630-suno-retry-state-check.json), [첫 재시도 직접 대조](validation/2026-10-24-0630-suno-retry-six-check.json), [이름변경 직접 대조](validation/2026-10-24-0630-suno-renamed-check.json), [감속4 실제 파일 검사](validation/2026-10-24-0630-suno-slower-audio-check.json), [기존20·사본20 보존 대조](validation/2026-10-24-0630-suno-retry-six-preservation.json)를 남겼다. 전체20곡 원격 교체는 미완료이며6·11번의 정상 업로드가 남았다. 같은 오류의 추가 자동 재시도·추가 속도 변경 계획은 없다. 아래14곡 상태는 이 재시도 전 기록이다.
 
 ## 2026-10-24 [CDX] 06:30 Suno 기존33곡 정리·수정본14곡 업로드·6곡 거부
 

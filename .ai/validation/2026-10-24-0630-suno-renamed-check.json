@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-10-23T23:18:31.761360+00:00",
+  "scope": "Direct raw queue, top/bottom virtualized UI identity/title/duration union, new2 complete status and actual staged bytes for renamed retry; later slower batch records final full workspace separately.",
+  "result": "PASS_FOR_RECORDED_PARTIAL_RESULT",
+  "manifest_sha256": "a2489cec50cdc739d8f9f051e0eb3556c5d36002f5790c6cecf1e79e05ff8ba7",
+  "raw_sha256": "0b3ec3835bfa25d1499075f8de6a8f332cc939ce77dbf6a23b119cee3504755c",
+  "durable_raw_observations_exact_source_matches": 11,
+  "rows": [
+    {
+      "order": 6,
+      "status": "rejected",
+      "uploaded_id": null,
+      "actual_staged_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662"
+    },
+    {
+      "order": 9,
+      "status": "rejected",
+      "uploaded_id": null,
+      "actual_staged_sha256": "3683ce6d2a9466b80c2be302178a7493edd1ec296a7bd15b3a13514bef71cdd4"
+    },
+    {
+      "order": 11,
+      "status": "rejected",
+      "uploaded_id": null,
+      "actual_staged_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e"
+    },
+    {
+      "order": 12,
+      "status": "rejected",
+      "uploaded_id": null,
+      "actual_staged_sha256": "3bf60bb4bc82336a9abba115db1b72107bfa62a2599b73986864086f2449ac74"
+    },
+    {
+      "order": 17,
+      "status": "complete",
+      "uploaded_id": "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+      "actual_staged_sha256": "ac07204626adbfb50d66897415b263cb2182173f740cc55ab3eea7cf4f2679d5"
+    },
+    {
+      "order": 19,
+      "status": "complete",
+      "uploaded_id": "f7deea5a-f4c5-406c-bf58-6228dbd79021",
+      "actual_staged_sha256": "ba0ac270628fbf1950a664ac36ee24e8db38200c02d71871d9c34fa529a10ecb"
+    }
+  ],
+  "workspace_count_at_this_retry": 16,
+  "all_prior14_id_title_duration_preserved": true,
+  "accepted_orders": [
+    17,
+    19
+  ],
+  "rejected_orders": [
+    6,
+    9,
+    11,
+    12
+  ],
+  "pending": 0,
+  "cache_bypass_verified": false,
+  "ordinary_reload_verified": true,
+  "name_or_reload_acceptance_causation_established": false,
+  "validation_recovery": "First validation failed on a heterogeneous raw row without duration. Inspected original rows; ignored non-song id=null and read visible duration from row text. No account or audio mutation."
+}
