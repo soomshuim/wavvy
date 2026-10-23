@@ -1,0 +1,401 @@
+{
+  "scope": "three new local 30-second target-173 listening comparisons for currently chosen candidate IDs of logical tracks 8, 13, 18 only",
+  "status": "created; new 173 variants awaiting user listening decision; existing 176 approvals and 175 comparisons preserved",
+  "user_quote": "13, 18, 8은 173 목표로 만들어봐",
+  "basis": {
+    "path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-candidate-tempo-basis.json",
+    "sha256": "1f8e131abe650c4a87787b34593180b5a321feb8468831455b43fb721f10d1b4"
+  },
+  "candidate_decisions": {
+    "path": "SERIES/06-30/input/suno-candidates.json",
+    "sha256_at_creation": "040253af75ba00ed476ef7ddb3d865d1d1e883a821499de9997079c59b4a8ee4"
+  },
+  "measurement_script": {
+    "path": "SERIES/06-30/input/tempo-adjustment/measurements/2026-10-23-free-lattice-slice.py",
+    "sha256": "e5787d1e71a1781c44511dbb2f7c29369b565133c4108796e890333e80106eee"
+  },
+  "delivery": {
+    "directory": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023",
+    "index_html_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/index.html",
+    "index_html_sha256": "a8031c15638966d50d8e3f98a793618641e9c22a3f70c1a8ba556bb02be44bd5"
+  },
+  "limitations": [
+    "Only 30-second app-captured source slices were transformed and measured.",
+    "The source pulse is a frozen hypothesis derived from onset lattice interpretation, not a certified whole-song tempo.",
+    "An atempo target is a transform parameter; independent measurements reflect only the first 30 seconds and may follow a double-pulse lattice.",
+    "The 173 versions have no listener approval yet.",
+    "No Suno generation, replay, capture, audio setting change, remote disposition change, or permanent 175–177 target change occurred.",
+    "The frozen tempo basis for track 18 says no final selection, meaning no formal whole-song source selection; its af2385fb candidate is currently chosen for the 30-second audition comparison. Remote status was not rechecked for any of the three tracks."
+  ],
+  "tracks": [
+    {
+      "order": 8,
+      "title": "유리 번개",
+      "chosen_candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+      "source_pulse_bpm_hypothesis": 176.04,
+      "source_pulse_hypothesis_basis": {
+        "entry_kind": "primary",
+        "raw_basis_path": "SERIES/06-30/input/bpm-audit/validation/independent-review-8b.jsonl",
+        "raw_basis_sha256": "4538c6e5c0fc58d9bfa1a7cb3a39a50514093971db71df8b8d27be2ca604dc5c",
+        "raw_basis_field": "lattice_fits[0].bpm_fit",
+        "raw_basis": {
+          "band": "mid",
+          "bpm_fit": 352.084,
+          "span_s": 29.818,
+          "coherence": 0.909,
+          "inlier_count": 148,
+          "observed_10s_estimates": [
+            352.0,
+            352.05,
+            352.127
+          ],
+          "harmonic_divider_for_pulse_hypothesis": 2
+        },
+        "harmonic_ambiguity": "약88.02/176.04/352.08"
+      },
+      "target_bpm": 173,
+      "atempo_factor_exact_ratio": "173/176.04",
+      "atempo_factor": 0.9827311974551238,
+      "atempo_filter_argument": "atempo=0.982731197455",
+      "method": "FFmpeg atempo once from original 30-second WAV; preserves pitch; no prior preview as input",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-loglevel",
+        "info",
+        "-n",
+        "-i",
+        "SERIES/06-30/input/bpm-audit/audio/45acc3bc-6c0a-4472-b87f-9c36adba05bf-resume20261023-30s.wav",
+        "-af",
+        "atempo=0.982731197455",
+        "-c:a",
+        "pcm_f32le",
+        "work/0630-target173-20261023/08-45acc3bc-30s-to-target173.wav"
+      ],
+      "ffmpeg_log": {
+        "path": "work/0630-target173-20261023/08-ffmpeg.log",
+        "sha256": "ba85e9ccea383ea5d89cfdb5d591f95ce281da434f706c83831d206bd5f238ec"
+      },
+      "source": {
+        "path": "SERIES/06-30/input/bpm-audit/audio/45acc3bc-6c0a-4472-b87f-9c36adba05bf-resume20261023-30s.wav",
+        "sha256": "19f7a2ef3d154d65d3af9f8e7baadf86636e2e577657757b67870c142cfb9ae3",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1440000,
+        "duration_s": 30.0,
+        "finite": true,
+        "peak_abs": 0.784907341003418,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.1076917958583551
+      },
+      "previous_176_preview": {
+        "path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/08_유리 번개_target176-preview.wav",
+        "sha256": "505e27292043163fa7cf6e5fa4bf639a29f63c9d508ca120119c97fcbe560922",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1440001,
+        "duration_s": 30.000020833333334,
+        "finite": true,
+        "peak_abs": 0.78452467918396,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.10763907331284313
+      },
+      "new_173_preview": {
+        "path": "work/0630-target173-20261023/08-45acc3bc-30s-to-target173.wav",
+        "sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1464779,
+        "duration_s": 30.516229166666665,
+        "finite": true,
+        "peak_abs": 0.7843111753463745,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.10749124873483351
+      },
+      "expected_output_duration_s": 30.527167630057804,
+      "duration_difference_from_formula_s": -0.010938463391138242,
+      "delivery": {
+        "previous_176_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/8. 유리 번개_176목표_기존비교본.wav",
+        "previous_176_sha256": "505e27292043163fa7cf6e5fa4bf639a29f63c9d508ca120119c97fcbe560922",
+        "new_173_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/8. 유리 번개_173목표_비교본.wav",
+        "new_173_sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db"
+      },
+      "independent_measurement": {
+        "scope": "first 30 seconds of output only",
+        "raw_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/08-target173-free-lattice-0s.json",
+        "raw_sha256": "40770ccd4a93cf88e549e5b3e1430a2eb775761ffd617ab711da521c90d6bb84",
+        "mid_grid_bpm_fit": 345.977,
+        "high_grid_bpm_fit": 345.999,
+        "mid_grid_implied_half_bpm": 172.9885,
+        "high_grid_implied_half_bpm": 172.9995,
+        "mid_grid_observed_10s_estimates": [
+          345.933,
+          346.063,
+          346.022
+        ],
+        "high_grid_observed_10s_estimates": [
+          345.959,
+          346.113,
+          346.042
+        ],
+        "note": "No target BPM was accepted by measurement script or used for seed choice. Grid may represent a double pulse; this is not a whole-song BPM or listening approval."
+      },
+      "historical_remote_context_from_frozen_basis": "active_not_moved_to_trash",
+      "current_30s_audition_chosen": true,
+      "formal_full_track_source_selection_status": "not established"
+    },
+    {
+      "order": 13,
+      "title": "황금 주파수",
+      "chosen_candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+      "source_pulse_bpm_hypothesis": 177.285,
+      "source_pulse_hypothesis_basis": {
+        "entry_kind": "primary",
+        "raw_basis_path": "SERIES/06-30/input/bpm-audit/validation/independent-review-tracks12-to14-round2.jsonl",
+        "raw_basis_sha256": "c093689841052a4682f4b867772d3d32afb4d62ce82a859b814b333e80f23e9b",
+        "raw_basis_field": "lattice_fits[1].bpm_fit",
+        "raw_basis": {
+          "band": "mid",
+          "bpm_fit": 354.572,
+          "span_s": 27.748,
+          "coherence": 0.805,
+          "inlier_count": 132,
+          "observed_10s_estimates": [
+            353.547,
+            354.834,
+            355.825
+          ],
+          "harmonic_divider_for_pulse_hypothesis": 2
+        },
+        "harmonic_ambiguity": "약177.29/354.57"
+      },
+      "target_bpm": 173,
+      "atempo_factor_exact_ratio": "173/177.285",
+      "atempo_factor": 0.9758298784443129,
+      "atempo_filter_argument": "atempo=0.975829878444",
+      "method": "FFmpeg atempo once from original 30-second WAV; preserves pitch; no prior preview as input",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-loglevel",
+        "info",
+        "-n",
+        "-i",
+        "SERIES/06-30/input/bpm-audit/audio/b51b42b3-2537-483a-b3ab-a65c4274fe6a-resume20261023-30s.wav",
+        "-af",
+        "atempo=0.975829878444",
+        "-c:a",
+        "pcm_f32le",
+        "work/0630-target173-20261023/13-b51b42b3-30s-to-target173.wav"
+      ],
+      "ffmpeg_log": {
+        "path": "work/0630-target173-20261023/13-ffmpeg.log",
+        "sha256": "f14cae0caf77020de2da2dcff27a239ad937b7783ed8fa89ab0557d510da68f7"
+      },
+      "source": {
+        "path": "SERIES/06-30/input/bpm-audit/audio/b51b42b3-2537-483a-b3ab-a65c4274fe6a-resume20261023-30s.wav",
+        "sha256": "04c81426b422455ee72fca95eb1fe5ae4f0136e547586cbd0208c7c567312fac",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1440000,
+        "duration_s": 30.0,
+        "finite": true,
+        "peak_abs": 0.7714764475822449,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.11982543466482139
+      },
+      "previous_176_preview": {
+        "path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/13_황금 주파수_target176-preview.wav",
+        "sha256": "569572719ac81ba4bcd86ab50244002893a948135c9ac1963cd5ea8c22653fab",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1450117,
+        "duration_s": 30.210770833333335,
+        "finite": true,
+        "peak_abs": 0.7710385918617249,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.11973545807272645
+      },
+      "new_173_preview": {
+        "path": "work/0630-target173-20261023/13-b51b42b3-30s-to-target173.wav",
+        "sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1475015,
+        "duration_s": 30.729479166666668,
+        "finite": true,
+        "peak_abs": 0.7710241675376892,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.11947838548898711
+      },
+      "expected_output_duration_s": 30.743063583815026,
+      "duration_difference_from_formula_s": -0.013584417148358341,
+      "delivery": {
+        "previous_176_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/13. 황금 주파수_176목표_기존비교본.wav",
+        "previous_176_sha256": "569572719ac81ba4bcd86ab50244002893a948135c9ac1963cd5ea8c22653fab",
+        "new_173_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/13. 황금 주파수_173목표_비교본.wav",
+        "new_173_sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d"
+      },
+      "independent_measurement": {
+        "scope": "first 30 seconds of output only",
+        "raw_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/13-target173-free-lattice-0s.json",
+        "raw_sha256": "b60e7f82cca4075345d7fe75414c0f5a4fc58de2e4d18120a0279caab69b6dff",
+        "mid_grid_bpm_fit": 346.022,
+        "high_grid_bpm_fit": 346.198,
+        "mid_grid_implied_half_bpm": 173.011,
+        "high_grid_implied_half_bpm": 173.099,
+        "mid_grid_observed_10s_estimates": [
+          345.003,
+          346.219,
+          347.069
+        ],
+        "high_grid_observed_10s_estimates": [
+          345.113,
+          346.311,
+          347.177
+        ],
+        "note": "No target BPM was accepted by measurement script or used for seed choice. Grid may represent a double pulse; this is not a whole-song BPM or listening approval."
+      },
+      "historical_remote_context_from_frozen_basis": "active_not_moved_to_trash",
+      "current_30s_audition_chosen": true,
+      "formal_full_track_source_selection_status": "not established"
+    },
+    {
+      "order": 18,
+      "title": "빛을 따라",
+      "chosen_candidate_id": "af2385fb-8638-4392-a9a0-7a031e31853e",
+      "source_pulse_bpm_hypothesis": 174.548,
+      "source_pulse_hypothesis_basis": {
+        "entry_kind": "local_only_alternative",
+        "raw_basis_path": "SERIES/06-30/input/bpm-audit/validation/independent-review-track18.jsonl",
+        "raw_basis_sha256": "c9c247d7524f00f798cd37593fd0036f574d709cd8b1e55442a3c86960416e41",
+        "raw_basis_field": "lattice_fits[2].bpm_fit",
+        "raw_basis": {
+          "band": "high",
+          "bpm_fit": 349.096,
+          "span_s": 29.392,
+          "coherence": 0.784,
+          "inlier_count": 137,
+          "observed_10s_estimates": [
+            348.971,
+            349.039,
+            349.146
+          ],
+          "harmonic_divider_for_pulse_hypothesis": 2
+        },
+        "harmonic_ambiguity": "약88/176/352"
+      },
+      "target_bpm": 173,
+      "atempo_factor_exact_ratio": "173/174.548",
+      "atempo_factor": 0.9911313793340514,
+      "atempo_filter_argument": "atempo=0.991131379334",
+      "method": "FFmpeg atempo once from original 30-second WAV; preserves pitch; no prior preview as input",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-loglevel",
+        "info",
+        "-n",
+        "-i",
+        "SERIES/06-30/input/bpm-audit/audio/af2385fb-8638-4392-a9a0-7a031e31853e-resume20261023-30s.wav",
+        "-af",
+        "atempo=0.991131379334",
+        "-c:a",
+        "pcm_f32le",
+        "work/0630-target173-20261023/18-af2385fb-30s-to-target173.wav"
+      ],
+      "ffmpeg_log": {
+        "path": "work/0630-target173-20261023/18-ffmpeg.log",
+        "sha256": "027d2169fef6a2efb04c1a9ca7b58193fc39ed1f55fdb39f5c61f74acdd7d566"
+      },
+      "source": {
+        "path": "SERIES/06-30/input/bpm-audit/audio/af2385fb-8638-4392-a9a0-7a031e31853e-resume20261023-30s.wav",
+        "sha256": "e80faca9c27a029f2d608f4164e6eb03dd72dd73e1e97a95dc5b2def9b446c02",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1440000,
+        "duration_s": 30.0,
+        "finite": true,
+        "peak_abs": 0.69273442029953,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.12926037830501808
+      },
+      "previous_176_preview": {
+        "path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/18_빛을 따라_이전후보_target176-preview.wav",
+        "sha256": "279adc1e3e1c2fc6f05d3961df462b70c7978906cc910043f22eb88cce50c9da",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1428520,
+        "duration_s": 29.760833333333334,
+        "finite": true,
+        "peak_abs": 0.6924662590026855,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.12902262883046028
+      },
+      "new_173_preview": {
+        "path": "work/0630-target173-20261023/18-af2385fb-30s-to-target173.wav",
+        "sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f",
+        "codec_name": "pcm_f32le",
+        "sample_fmt": "flt",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "frames": 1452300,
+        "duration_s": 30.25625,
+        "finite": true,
+        "peak_abs": 0.6923304200172424,
+        "clip_samples_abs_gte_1": 0,
+        "rms": 0.1292289437550106
+      },
+      "expected_output_duration_s": 30.26843930635838,
+      "duration_difference_from_formula_s": -0.012189306358379781,
+      "delivery": {
+        "previous_176_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/18. 빛을 따라_176목표_기존비교본.wav",
+        "previous_176_sha256": "279adc1e3e1c2fc6f05d3961df462b70c7978906cc910043f22eb88cce50c9da",
+        "new_173_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/18. 빛을 따라_173목표_비교본.wav",
+        "new_173_sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f"
+      },
+      "independent_measurement": {
+        "scope": "first 30 seconds of output only",
+        "raw_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/18-target173-free-lattice-0s.json",
+        "raw_sha256": "9c4c96a892821ab05d61ae30726f4b66fa1501de9db03781f7e6792e48392135",
+        "mid_grid_bpm_fit": 346.045,
+        "high_grid_bpm_fit": 346.059,
+        "mid_grid_implied_half_bpm": 173.0225,
+        "high_grid_implied_half_bpm": 173.0295,
+        "mid_grid_observed_10s_estimates": [
+          345.956,
+          346.136,
+          345.944
+        ],
+        "high_grid_observed_10s_estimates": [
+          346.115,
+          346.166,
+          345.961
+        ],
+        "note": "No target BPM was accepted by measurement script or used for seed choice. Grid may represent a double pulse; this is not a whole-song BPM or listening approval."
+      },
+      "historical_remote_context_from_frozen_basis": "moved_to_trash; retained local 30-second sample only; no restoration or final selection",
+      "current_30s_audition_chosen": true,
+      "formal_full_track_source_selection_status": "not established"
+    }
+  ]
+}

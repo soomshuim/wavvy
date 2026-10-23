@@ -1,7 +1,7 @@
 {
   "schema": "wavvy.suno_candidates.v1",
   "series": "SERIES/06-30",
-  "status": "all_generated_candidates_30s_audited_pending_listening_feedback",
+  "status": "audition_candidate_ids_selected_20_08_13_18_new_173_variants_listening_pending_full_audio_validation_pending",
   "workspace": {
     "name": "[06:30]",
     "id": "335455f4-30d5-4878-b658-365da757127e",
@@ -73,8 +73,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/01_첫 박부터_target176-preview.wav",
+          "delivered_file_sha256": "395f9b028031551013490682cd8b5bee6482d242121ab585d3883720e17165ff",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9374367496511243,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "duration_review": {
         "status": "regeneration_round3_ready_previous_four_candidates_trashed",
@@ -325,8 +338,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "67d6a052-21ef-4c59-be09-790468e75152",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "67d6a052-21ef-4c59-be09-790468e75152",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/02_가속선_target176-preview.wav",
+          "delivered_file_sha256": "39ca39e5edc107cd86b5fe4ea5ffb64da8737a5889915288822a3acd892695bb",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.97442143727162,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -433,8 +459,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "872b0aac-6e44-4d54-b8e0-c546359be0fe",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "872b0aac-6e44-4d54-b8e0-c546359be0fe",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/03_빛나는 노면_target176-preview.wav",
+          "delivered_file_sha256": "d40bcd2ec083e5f7f858c8d4a3c82cd7625a33e465f2a465bfe0301780347d98",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9990633780830472,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       }
     },
     {
@@ -481,8 +520,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "5ac0c138-5643-43ee-a2e4-07b02a794cbb",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "5ac0c138-5643-43ee-a2e4-07b02a794cbb",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/04_전력 곡선_target176-preview.wav",
+          "delivered_file_sha256": "15c578d147e9e569ebdcd78c968d439237140653694e5e24679e658ffc95e134",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9984116178806445,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       }
     },
     {
@@ -524,8 +576,42 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/pending-beat-check/05_빛의 마찰_원본속도_박자확인용.wav",
+          "delivered_file_sha256": "ca3768edc5efe6879e3ba528cb99f4b4508fecea9131bddec93c8674bc30344f",
+          "variant": "unmodified_30s_source_for_pulse_check",
+          "atempo_factor": 1.0,
+          "delivery_status": "unmodified_30s_source_for_pulse_check_not_adjusted",
+          "current_suno_candidate_match": "confirmed_same_id_in_sole_live_search_row"
+        },
+        "current_selection_source": {
+          "user_quote": "5.20번은 suno에 하나씩만 남겨뒀어. 녹음떠서 저장",
+          "live_workspace_provenance_path": "SERIES/06-30/input/selected-recordings/2026-10-23/05-capture-provenance.json",
+          "live_workspace_provenance_sha256": "416327712175e32cf704bf604c51d4d05a4e0216d4284c7bad28c5c6927e28e5",
+          "raw_live_selection_ui_path": "SERIES/06-30/input/selected-recordings/2026-10-23/live-selection-ui.json",
+          "raw_live_selection_ui_sha256": "5404c0b74f3eac091f43965e7e6941424894fe680c08af41acf4e27d78f77fe6"
+        },
+        "full_working_source": {
+          "recording_status": "captured_original_speed_app_output_for_comparison_only",
+          "candidate_id": "b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+          "path": "work/0630-selected-05-20-20261023/05-b868f3f7-selected.wav",
+          "sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+          "duration_seconds": 200.6,
+          "downloads_root_copy_path": "/Users/zenkim_office/Downloads/5. 빛의 마찰_수노 녹음본_20261023.wav",
+          "downloads_root_copy_sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+          "provenance_path": "SERIES/06-30/input/selected-recordings/2026-10-23/05-capture-provenance.json",
+          "provenance_sha256": "416327712175e32cf704bf604c51d4d05a4e0216d4284c7bad28c5c6927e28e5",
+          "official_suno_download": false,
+          "whole_song_tempo_certified": false,
+          "whole_song_listening_approved": false
+        }
       }
     },
     {
@@ -577,8 +663,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/06_다리의 불꽃_target176-preview.wav",
+          "delivered_file_sha256": "9332ec28233e49d24f52a9f627f740ca9fe544e0fb535f700a3b90a7dc8f06b7",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 1.0283377154542799,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -690,8 +789,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "b1e7fe46-ab35-46fd-85a7-25433230a485",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "b1e7fe46-ab35-46fd-85a7-25433230a485",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/07_하늘을 밀어_target176-preview.wav",
+          "delivered_file_sha256": "7eb6a9d34a0d2606e97ce9f2f7cfb995a40dd502d2c79eb7a3633da41b3032ac",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9767467673011822,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -798,8 +910,62 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/08_유리 번개_target176-preview.wav",
+          "delivered_file_sha256": "505e27292043163fa7cf6e5fa4bf639a29f63c9d508ca120119c97fcbe560922",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9997727789138833,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        },
+        "followup_tempo_comparison_history": [
+          {
+            "user_quote": "8번도 약간 더 느리게",
+            "status": "new_175_target_30s_comparison_delivered_listening_pending",
+            "candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+            "target_bpm": 175,
+            "source_pulse_bpm_hypothesis": 176.04,
+            "atempo_factor": 0.994092251761,
+            "new_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-slower-08-13-20261023/8. 유리 번개_175목표_비교본.wav",
+            "new_file_sha256": "1c1af853907a33937f942382e921b1f7dd6f4bd648804522f6bc020f9e84b738",
+            "duration_seconds": 30.166645833333334,
+            "independent_mid_grid_implied_half_bpm": 175.014,
+            "independent_high_grid_implied_half_bpm": 175.018,
+            "measurement_scope": "first 30 seconds of output; harmonic interpretation remains",
+            "provenance_path": "SERIES/06-30/input/tempo-adjustment/slower-08-13/2026-10-23-slower-08-13-target175-provenance.json",
+            "provenance_sha256": "99a5f35d74a00e73421c75dd74de951e0a12c7f20898eaf214f1e0217577a51d",
+            "new_variant_user_approved": false
+          }
+        ],
+        "followup_tempo_comparison": {
+          "user_quote": "13, 18, 8은 173 목표로 만들어봐",
+          "status": "new_173_target_30s_comparison_delivered_listening_pending",
+          "candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+          "target_bpm": 173,
+          "series_whole_song_target_range_unchanged": [
+            175,
+            177
+          ],
+          "source_pulse_bpm_hypothesis": 176.04,
+          "atempo_factor": 0.9827311974551238,
+          "new_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/8. 유리 번개_173목표_비교본.wav",
+          "new_file_sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db",
+          "duration_seconds": 30.516229166666665,
+          "independent_mid_grid_implied_half_bpm": 172.9885,
+          "independent_high_grid_implied_half_bpm": 172.9995,
+          "measurement_scope": "first 30 seconds of output; harmonic interpretation remains",
+          "provenance_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json",
+          "provenance_sha256": "b8e07f847f6cb387e2e1bcc70a2bb3d819af8ed3cd14c037e84173d68ac8b2fd",
+          "new_variant_user_approved": false,
+          "original_176_variant_user_quote": "모두 통과"
+        }
       }
     },
     {
@@ -851,8 +1017,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "aadf83c5-cd5f-47d0-9819-0d3cbb86efd0",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/09_한계 위로_target176-preview.wav",
+          "delivered_file_sha256": "bb90fd36b5cf51367f46b4efdf9ea056981d3fb7f4432e913c40f911cd7b4cac",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9759072888075633,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -959,8 +1138,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "8392855c-26db-400e-9553-e32df268d2c0",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "8392855c-26db-400e-9553-e32df268d2c0",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/10_전류의 발끝_target176-preview.wav",
+          "delivered_file_sha256": "99c5a9d1d1399d629227c3ff041b240c6cfc8d88102cdf63eb2f7aa471ec769a",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9957003847024214,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       }
     },
     {
@@ -1007,8 +1199,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/11_계속 앞으로_target176-preview.wav",
+          "delivered_file_sha256": "aa1639a00e2e852a45f53faa7260fb3e4c56c6d511120d20225894d0b55f1335",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.990767845079937,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       }
     },
     {
@@ -1060,8 +1265,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/12_폭발 직전_이전후보_target176-preview.wav",
+          "delivered_file_sha256": "2b4874869d17e8f10ba42b2b5044a9763cc87c595145daaa8abc477a794ec116",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9502162281814697,
+          "delivery_status": "local_only_alternative",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -1174,8 +1392,62 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/13_황금 주파수_target176-preview.wav",
+          "delivered_file_sha256": "569572719ac81ba4bcd86ab50244002893a948135c9ac1963cd5ea8c22653fab",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9927517838508616,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        },
+        "followup_tempo_comparison_history": [
+          {
+            "user_quote": "13번은 약간 빠른데",
+            "status": "new_175_target_30s_comparison_delivered_listening_pending",
+            "candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+            "target_bpm": 175,
+            "source_pulse_bpm_hypothesis": 177.285,
+            "atempo_factor": 0.987111148715,
+            "new_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-slower-08-13-20261023/13. 황금 주파수_175목표_비교본.wav",
+            "new_file_sha256": "4d99ecfb854b3de76f148466c7b67b5f4a3f51e9e9f2cd237f09346788bbd357",
+            "duration_seconds": 30.379375,
+            "independent_mid_grid_implied_half_bpm": 175.016,
+            "independent_high_grid_implied_half_bpm": 175.073,
+            "measurement_scope": "first 30 seconds of output; harmonic interpretation remains",
+            "provenance_path": "SERIES/06-30/input/tempo-adjustment/slower-08-13/2026-10-23-slower-08-13-target175-provenance.json",
+            "provenance_sha256": "99a5f35d74a00e73421c75dd74de951e0a12c7f20898eaf214f1e0217577a51d",
+            "new_variant_user_approved": false
+          }
+        ],
+        "followup_tempo_comparison": {
+          "user_quote": "13, 18, 8은 173 목표로 만들어봐",
+          "status": "new_173_target_30s_comparison_delivered_listening_pending",
+          "candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+          "target_bpm": 173,
+          "series_whole_song_target_range_unchanged": [
+            175,
+            177
+          ],
+          "source_pulse_bpm_hypothesis": 177.285,
+          "atempo_factor": 0.9758298784443129,
+          "new_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/13. 황금 주파수_173목표_비교본.wav",
+          "new_file_sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d",
+          "duration_seconds": 30.729479166666668,
+          "independent_mid_grid_implied_half_bpm": 173.011,
+          "independent_high_grid_implied_half_bpm": 173.099,
+          "measurement_scope": "first 30 seconds of output; harmonic interpretation remains",
+          "provenance_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json",
+          "provenance_sha256": "b8e07f847f6cb387e2e1bcc70a2bb3d819af8ed3cd14c037e84173d68ac8b2fd",
+          "new_variant_user_approved": false,
+          "original_176_variant_user_quote": "모두 통과"
+        }
       },
       "regeneration_history": [
         {
@@ -1288,8 +1560,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "f8df1271-a60c-465b-900f-a8863c86f8dc",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "f8df1271-a60c-465b-900f-a8863c86f8dc",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/14_높은 기어_이전후보_target176-preview.wav",
+          "delivered_file_sha256": "abf57c1ace3f3afde8de73d3ac40f5bddf2df60c59ad02937a5675ca018280f2",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9630722003190176,
+          "delivery_status": "local_only_alternative",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -1402,8 +1687,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "b9c055a2-3726-4073-a103-801dcfafd1bf",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "b9c055a2-3726-4073-a103-801dcfafd1bf",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/15_번쩍이는 궤도_target176-preview.wav",
+          "delivered_file_sha256": "bb32054470bfbf297226333dda5784657970a9b7920935b701a985cd4cb06cd4",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9756908833883083,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "regeneration_history": [
         {
@@ -1516,8 +1814,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "7c3bc62b-2599-4bf1-aecc-212fff88d556",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "7c3bc62b-2599-4bf1-aecc-212fff88d556",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/16_가속의 틈_target176-preview.wav",
+          "delivered_file_sha256": "4abe33702ba3c413c8da89867dbdb1034d41dbb7cd7c04f9a2cd85ee856e2a0a",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9449918118607211,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
       "regeneration_history": [
@@ -1627,8 +1938,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/17_몸이 먼저_target176-preview.wav",
+          "delivered_file_sha256": "4a02f4c196fc6f3edb57f4017fc07495e34e21f2e093fceaf6ef014c97fcd4c0",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9666080843585236,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       },
       "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
       "regeneration_history": [
@@ -1738,8 +2062,43 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "af2385fb-8638-4392-a9a0-7a031e31853e",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "af2385fb-8638-4392-a9a0-7a031e31853e",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/18_빛을 따라_이전후보_target176-preview.wav",
+          "delivered_file_sha256": "279adc1e3e1c2fc6f05d3961df462b70c7978906cc910043f22eb88cce50c9da",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 1.008318628686665,
+          "delivery_status": "local_only_alternative",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        },
+        "followup_tempo_comparison": {
+          "user_quote": "13, 18, 8은 173 목표로 만들어봐",
+          "status": "new_173_target_30s_comparison_delivered_listening_pending",
+          "candidate_id": "af2385fb-8638-4392-a9a0-7a031e31853e",
+          "target_bpm": 173,
+          "series_whole_song_target_range_unchanged": [
+            175,
+            177
+          ],
+          "source_pulse_bpm_hypothesis": 174.548,
+          "atempo_factor": 0.9911313793340514,
+          "new_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/18. 빛을 따라_173목표_비교본.wav",
+          "new_file_sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f",
+          "duration_seconds": 30.25625,
+          "independent_mid_grid_implied_half_bpm": 173.0225,
+          "independent_high_grid_implied_half_bpm": 173.0295,
+          "measurement_scope": "first 30 seconds of output; harmonic interpretation remains",
+          "provenance_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json",
+          "provenance_sha256": "b8e07f847f6cb387e2e1bcc70a2bb3d819af8ed3cd14c037e84173d68ac8b2fd",
+          "new_variant_user_approved": false,
+          "original_176_variant_user_quote": "모두 통과"
+        }
       },
       "original_candidate_disposition": "both_moved_to_trash_after_reviewed_30s_bpm_out",
       "regeneration_history": [
@@ -1844,8 +2203,21 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_approved_audition_candidate",
+        "chosen_candidate_id": "08faf4f4-f3fa-404d-97a6-f0515f9ceed3",
+        "user_quote": "모두 통과",
+        "approval_scope": "delivered 30-second audition candidate variant; not whole-song tempo certification or release approval",
+        "audition_approval": {
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "08faf4f4-f3fa-404d-97a6-f0515f9ceed3",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/19_끝까지 당겨_target176-preview.wav",
+          "delivered_file_sha256": "8a694d9d45930b4c7883e2532fee42ee0b4cbab7544de066e0b214292f68204a",
+          "variant": "atempo_adjusted_30s_preview",
+          "atempo_factor": 0.9914655099569051,
+          "delivery_status": "active_candidate_preview",
+          "current_suno_candidate_match": "not_rechecked; historical remote disposition preserved"
+        }
       }
     },
     {
@@ -1887,8 +2259,48 @@
         }
       ],
       "decision": {
-        "status": "pending",
-        "chosen_candidate_id": null
+        "status": "user_retained_current_candidate_for_recording",
+        "chosen_candidate_id": "6a6baa59-8576-4538-a157-b2410ce326d0",
+        "user_quote": "5.20번은 suno에 하나씩만 남겨뒀어. 녹음떠서 저장",
+        "approval_scope": "current sole Suno candidate retained and requested for original-speed whole-song recording; prior delivered 30-second audition approval belongs only to its different source ID; no whole-song tempo or release approval",
+        "historical_audition_approval": {
+          "user_quote": "모두 통과",
+          "scope": "delivered unmodified 30-second source only; source differs from current user-retained candidate",
+          "manifest_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json",
+          "manifest_sha256": "b7d6d753a7b458ac110148c34c376ed7c9deb7a6bc2340dee9c11d7c02c77665",
+          "delivered_candidate_id": "5f0f2be1-7ec8-4f36-aa18-8af4b43199c7",
+          "delivered_file_path": "/Users/zenkim_office/Downloads/wavvy-0630-tempo-previews-20261023/pending-beat-check/20_다시 점화_원본속도_박자확인용.wav",
+          "delivered_file_sha256": "c00140e88c60a56ebbd37ff2e61fe569fc0d6b5488da70dc85c66a2f15b1ce77",
+          "variant": "unmodified_30s_source_for_pulse_check",
+          "atempo_factor": 1.0,
+          "delivery_status": "unmodified_30s_source_for_pulse_check_not_adjusted",
+          "current_suno_candidate_match": "pending_live_candidate_match"
+        },
+        "current_selection_source": {
+          "selection_basis": "user retained one current Suno candidate for track 20 and requested recording",
+          "candidate_id": "6a6baa59-8576-4538-a157-b2410ce326d0",
+          "live_workspace_matching_rows": 1,
+          "live_workspace_provenance_path": "SERIES/06-30/input/selected-recordings/2026-10-23/20-capture-provenance.json",
+          "live_workspace_provenance_sha256": "3e20d7f782f864867fc8a668333aa2d28134dbd749a758a4e69611821846dfd4",
+          "prior_delivered_candidate_id_not_selected": "5f0f2be1-7ec8-4f36-aa18-8af4b43199c7",
+          "prior_candidate_absence_reason": "not established; no deletion or trash assertion",
+          "raw_live_selection_ui_path": "SERIES/06-30/input/selected-recordings/2026-10-23/live-selection-ui.json",
+          "raw_live_selection_ui_sha256": "5404c0b74f3eac091f43965e7e6941424894fe680c08af41acf4e27d78f77fe6"
+        },
+        "full_working_source": {
+          "recording_status": "captured_original_speed_app_output_for_comparison_only",
+          "candidate_id": "6a6baa59-8576-4538-a157-b2410ce326d0",
+          "path": "work/0630-selected-05-20-20261023/20-6a6baa59-selected.wav",
+          "sha256": "24d0e92db0e37cd0f23d6f3b04c237a95f2158ff39bb5769cec6a8288487bec7",
+          "duration_seconds": 210.2,
+          "downloads_root_copy_path": "/Users/zenkim_office/Downloads/20. 다시 점화_수노 녹음본_20261023.wav",
+          "downloads_root_copy_sha256": "24d0e92db0e37cd0f23d6f3b04c237a95f2158ff39bb5769cec6a8288487bec7",
+          "provenance_path": "SERIES/06-30/input/selected-recordings/2026-10-23/20-capture-provenance.json",
+          "provenance_sha256": "3e20d7f782f864867fc8a668333aa2d28134dbd749a758a4e69611821846dfd4",
+          "official_suno_download": false,
+          "whole_song_tempo_certified": false,
+          "whole_song_listening_approved": false
+        }
       }
     }
   ],

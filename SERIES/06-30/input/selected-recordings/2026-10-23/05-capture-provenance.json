@@ -1,0 +1,177 @@
+{
+  "status": "captured_selected_live_song_working_source_for_listening_not_quality_or_bpm_pass",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "song_id": "b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+  "title": "5. 빛의 마찰",
+  "url": "https://suno.com/song/b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+  "live_workspace_selection": {
+    "searched_title": "빛의 마찰",
+    "matching_rows": 1,
+    "row_title": "5. 빛의 마찰",
+    "row_duration_display": "3:20",
+    "selected_song_href": "/song/b868f3f7-a1fb-4cc7-aa18-e6202df90dcd",
+    "browser_product": "Aside",
+    "browser_tool": "mcp__aside__repl"
+  },
+  "capture": {
+    "method": "ScreenCaptureKit Aside application output; not official Suno download",
+    "application_pid": 63240,
+    "application_bundle": "at.studio.AsideBrowser",
+    "microphone": false,
+    "audio": true,
+    "device_mute_volume_monitor_changes": 0,
+    "log_path": "work/0630-selected-05-20-20261023/05-capture.log",
+    "log_sha256": "bde874fe5bc70bccf619e50dc347b626a2932aaa4c8c0fa84c5e452f2be9433c",
+    "start_local_kst": "2026-10-23 21:11:59.287",
+    "stop_reason": "stop_marker",
+    "write_error": "none"
+  },
+  "ui_playback": {
+    "player_duration_display": "3:19",
+    "checkpoints_utc": [
+      {
+        "at": "2026-10-23T12:12:04.938Z",
+        "event": "play_click_before",
+        "player_time_display": "0:00"
+      },
+      {
+        "at": "2026-10-23T12:12:05.576Z",
+        "event": "playing_5",
+        "player_time_display": "0:00"
+      },
+      {
+        "at": "2026-10-23T12:12:34.436Z",
+        "event": "playing_5",
+        "player_time_display": "0:29"
+      },
+      {
+        "at": "2026-10-23T12:13:05.132Z",
+        "event": "playing_5",
+        "player_time_display": "0:59"
+      },
+      {
+        "at": "2026-10-23T12:13:35.731Z",
+        "event": "playing_5",
+        "player_time_display": "1:30"
+      },
+      {
+        "at": "2026-10-23T12:14:05.878Z",
+        "event": "playing_5",
+        "player_time_display": "2:00"
+      },
+      {
+        "at": "2026-10-23T12:14:33.862Z",
+        "event": "playing_5",
+        "player_time_display": "2:28"
+      },
+      {
+        "at": "2026-10-23T12:15:04.158Z",
+        "event": "playing_5",
+        "player_time_display": "2:58"
+      },
+      {
+        "at": "2026-10-23T12:15:16.561Z",
+        "event": "playing_5",
+        "player_time_display": "3:11"
+      },
+      {
+        "at": "2026-10-23T12:15:23.749Z",
+        "event": "playing_5",
+        "player_time_display": "3:18"
+      },
+      {
+        "at": "2026-10-23T12:15:27.965Z",
+        "event": "autoplay_next",
+        "player_time_display": "0:01"
+      },
+      {
+        "at": "2026-10-23T12:15:35.328Z",
+        "event": "next_paused",
+        "player_time_display": "0:08"
+      }
+    ],
+    "next_autoplay_observed": "Neon Pulse by Yoppy",
+    "next_paused": true,
+    "player_paused_at_end": true
+  },
+  "raw": {
+    "path": "work/0630-selected-05-20-20261023/05-b868f3f7-raw.wav",
+    "sha256": "7f2bdafe8308aad5ed4d37fb728f7c0f01e188a2e19d6e8d4242755cbd200173",
+    "duration_s": 217.48,
+    "size_bytes": 83516416,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.7371402978897095,
+      "rms": 0.1270970317720785,
+      "samples_abs_gte_1": 0
+    }
+  },
+  "separation": {
+    "method": "UI playback end and target/next-song waveform boundary; external crop only; internal silence retained",
+    "crop_raw_interval_s": [
+      5.5,
+      206.1
+    ],
+    "first_music_raw_s_approx": 5.6,
+    "last_target_signal_raw_s_approx": 205.75,
+    "next_song_signal_raw_s_approx": 206.5,
+    "raw_before_first_rms": 0.0,
+    "raw_boundary_gap_rms": 0.0,
+    "selected_sample_equal_raw_slice": true
+  },
+  "selected": {
+    "path": "work/0630-selected-05-20-20261023/05-b868f3f7-selected.wav",
+    "sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+    "duration_s": 200.6,
+    "size_bytes": 77030458,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.7371402978897095,
+      "rms": 0.13172732850615998,
+      "samples_abs_gte_1": 0
+    },
+    "first_0_5s_rms": 0.004346412930074327,
+    "last_0_5s_rms": 0.0,
+    "exact_zero_gaps_inside_ge_0_1s_count": 2,
+    "exact_zero_gaps_inside_ge_0_1s_longest": [
+      {
+        "start_s": 200.082833,
+        "end_s": 200.6,
+        "duration_s": 0.517167
+      },
+      {
+        "start_s": 0.0,
+        "end_s": 0.274229,
+        "duration_s": 0.274229
+      }
+    ]
+  },
+  "copies": [
+    {
+      "path": "/Users/zenkim_office/Downloads/5. 빛의 마찰_수노 녹음본_20261023.wav",
+      "sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+      "size_bytes": 77030458
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/wavvy-0630-selected-recordings-20261023/5. 빛의 마찰.wav",
+      "sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+      "size_bytes": 77030458
+    }
+  ],
+  "same_song_30s_reference": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/b868f3f7-a1fb-4cc7-aa18-e6202df90dcd-resume20261023-30s.wav",
+    "sha256": "ca3768edc5efe6879e3ba528cb99f4b4508fecea9131bddec93c8674bc30344f",
+    "scope": "historical 30-second sample; not a whole-track approval"
+  },
+  "limitations": [
+    "Recorded app output, not an official Suno WAV download.",
+    "No musical quality or full-song BPM approval from this technical recording.",
+    "ScreenCaptureKit sample-buffer PTS not logged; zero dropped callbacks not independently proven."
+  ]
+}

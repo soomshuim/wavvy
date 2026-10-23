@@ -1,4 +1,16 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 청취·후속 저장 현행)
+Date: 2026-10-23
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “모두 통과”는 기존 30초 청취본 20개의 통과다. 현재 후보 ID 20개를 선택했다. 8·13·18번의 새 173 목표 비교본 청취를 기다리고, 5·20번은 현재 Suno 유일 후보 전곡을 앱 출력으로 녹음해 Downloads 사본까지 보존했다.
+Current: [후보표](../SERIES/06-30/input/candidate-review.md)에서 20번 옛 청취본 `5f0f2be1-7ec8-4f36-aa18-8af4b43199c7`와 현행 선택 `6a6baa59-8576-4538-a157-b2410ce326d0`를 분리했다. 새 20번 전곡 녹음은 청취·175–177 BPM 합격으로 선언하지 않는다. [8·13번 175 목표 비교본](../SERIES/06-30/input/tempo-adjustment/slower-08-13/2026-10-23-slower-08-13-target175-provenance.json)은 미승인 비교 이력으로 보존한다. 최신 [8·13·18번 173 목표 비교본](../SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json)은 세 파일 모두 사용자 청취 판정 전이다. 173은 이번 30초 시험 목표이며 시리즈 전곡 175–177 BPM 기준은 그대로다. 기존 176 목표본의 승인 해시를 옮기지 않는다. [5·20 전곡 녹음 출처](../SERIES/06-30/input/selected-recordings/2026-10-23/README.md)는 원속도 앱 출력 작업본이며 공식 다운로드·정식 최종 WAV는 0개다. 원본 BPM 판정과 원장 remote disposition(원격 후보 상태)은 불변, 공식 state revision83 `track_source_draft`다. 기존 68후보·휴지통34·크레딧1,766은 이전 원장 시점 이력이다. 이번 작업자는 생성·삭제0회이고 다른 곡의 현재 원격 수량을 전수 확인하지 않았다.
+Next-TODO: 8·13·18번 새 173 목표 비교본의 사용자 청취 판정을 기다린다. 전곡 175–177 BPM 기술 검증과 정식 WAV 확보·발매 단계는 별개로 남는다. 앞서 보낸 추가 시험 순서 질문은 후속 구체 지시가 실행돼 더 이상 답 대기 과제가 아니다. 아래 HANDOFF는 이전 시점 이력이다.
+Verification: [승인 연결 대조](validation/2026-10-23-0630-audition-approval-check.json)에 기존 전달본20·175 비교본2·173 비교본3·전곡작업본2/Downloads 루트 사본 해시와 원장 불변 비교를 기록한다. [175 비교본 부모 대조](validation/2026-10-23-0630-slower-parent-check.json), [5·20 녹음 부모 대조](validation/2026-10-23-0630-selected-recordings-parent-check.json), [173 비교본 부모 대조](validation/2026-10-23-0630-target173-parent-check.json)는 각 작업 당시 실측이다. [독립 Astra xhigh 검토](reviews/2026-10-23-0630-audition-recordings-tempo-followups-review.md)는 이 범위에서 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이며 새 청취 승인·전곡 BPM 인증은 아니다.
+Commits: 현행 문서와 작은 근거 파일은 이 상태 기록 커밋에 함께 반영한다. 큰 WAV는 로컬 무시 경로에 보존한다.
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 승인된 조절 방법의 현행 결과)
 Date: 2026-10-23
 Project: ~/Project/wavvy

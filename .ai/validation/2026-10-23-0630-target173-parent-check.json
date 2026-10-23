@@ -1,0 +1,116 @@
+{
+  "scope": "controller independent direct check of 3 target173 30-second comparisons; no whole-song or listener approval",
+  "provenance_path": "SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json",
+  "provenance_sha256": "b8e07f847f6cb387e2e1bcc70a2bb3d819af8ed3cd14c037e84173d68ac8b2fd",
+  "errors": [],
+  "tracks": [
+    {
+      "order": 8,
+      "candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+      "stats": {
+        "source": {
+          "sha256": "19f7a2ef3d154d65d3af9f8e7baadf86636e2e577657757b67870c142cfb9ae3",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1440000,
+          "duration_s": 30.0,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "previous_176_preview": {
+          "sha256": "505e27292043163fa7cf6e5fa4bf639a29f63c9d508ca120119c97fcbe560922",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1440001,
+          "duration_s": 30.000020833333334,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "new_173_preview": {
+          "sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1464779,
+          "duration_s": 30.516229166666665,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        }
+      },
+      "independent_measurement_exactly_reproduced": true,
+      "mid_half_grid_bpm": 172.9885,
+      "high_half_grid_bpm": 172.9995
+    },
+    {
+      "order": 13,
+      "candidate_id": "b51b42b3-2537-483a-b3ab-a65c4274fe6a",
+      "stats": {
+        "source": {
+          "sha256": "04c81426b422455ee72fca95eb1fe5ae4f0136e547586cbd0208c7c567312fac",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1440000,
+          "duration_s": 30.0,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "previous_176_preview": {
+          "sha256": "569572719ac81ba4bcd86ab50244002893a948135c9ac1963cd5ea8c22653fab",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1450117,
+          "duration_s": 30.210770833333335,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "new_173_preview": {
+          "sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1475015,
+          "duration_s": 30.729479166666668,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        }
+      },
+      "independent_measurement_exactly_reproduced": true,
+      "mid_half_grid_bpm": 173.011,
+      "high_half_grid_bpm": 173.099
+    },
+    {
+      "order": 18,
+      "candidate_id": "af2385fb-8638-4392-a9a0-7a031e31853e",
+      "stats": {
+        "source": {
+          "sha256": "e80faca9c27a029f2d608f4164e6eb03dd72dd73e1e97a95dc5b2def9b446c02",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1440000,
+          "duration_s": 30.0,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "previous_176_preview": {
+          "sha256": "279adc1e3e1c2fc6f05d3961df462b70c7978906cc910043f22eb88cce50c9da",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1428520,
+          "duration_s": 29.760833333333334,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        },
+        "new_173_preview": {
+          "sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f",
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "frames": 1452300,
+          "duration_s": 30.25625,
+          "finite": true,
+          "clip_samples_abs_gte_1": 0
+        }
+      },
+      "independent_measurement_exactly_reproduced": true,
+      "mid_half_grid_bpm": 173.0225,
+      "high_half_grid_bpm": 173.0295
+    }
+  ]
+}

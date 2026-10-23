@@ -1,8 +1,17 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-23 (06:30 청취용 30초 보정본 18개·첫 곡 전체 시험 1개 결과 기록)
+> Last updated: 2026-10-23 (06:30 전달 20개 청취 통과·현재 후보 ID 20개 선택·8/13/18 새 173 비교본 청취 대기·5/20 전곡 작업본 저장)
 
 ---
+
+## 2026-10-23 [CDX] 06:30 청취 승인·현재 후보 20개 선택·후속 비교본과 녹음
+- 젠의 “모두 통과”는 [기존 전달 30초 청취본 20개](../SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json)의 청취 통과다. [후보표](../SERIES/06-30/input/candidate-review.md)에 파일 SHA-256·출처 후보·보정 배수를 연결했다. 현재 선택 ID는 20개지만 20번은 젠이 한 곡만 남기고 녹음을 요청한 현행 ID `6a6baa59-8576-4538-a157-b2410ce326d0`이며 기존 청취 전달 ID `5f0f2be1-7ec8-4f36-aa18-8af4b43199c7`와 다르다. 옛 청취 통과를 새 20번 소리로 이전하지 않는다.
+- 젠의 “13번은 약간 빠른데”·“8번도 약간 더 느리게”로 만든 [175 BPM 목표 30초 비교본](../SERIES/06-30/input/tempo-adjustment/slower-08-13/2026-10-23-slower-08-13-target175-provenance.json)은 8·13번의 미승인 비교 이력이다. 최신 “13, 18, 8은 173 목표로 만들어봐”에 따라 [173 BPM 목표 새 30초 비교본](../SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json) 세 개를 만들고 전달했다. 8·13·18번 후보 ID는 그대로이며, 18번은 로컬 과거 후보로 Suno 원격 복구가 없다. 새 세 파일은 청취 판정 대기다. 173은 이번 비교본의 목표이며 전곡 175–177 BPM 기준·원시 판정은 불변이다. 기존 176 목표 청취 승인 해시는 해당 파일에만 적용된다.
+- 젠의 “5.20번은 suno에 하나씩만 남겨뒀어. 녹음떠서 저장”과 “5번 20번도 다운로드 폴더에 사본 넣어줘. 다른 것들과 비교해보게”에 따라 각각 현재 Suno 한 행을 확인하고 원속도 앱 출력 전곡 작업본 [5번](../SERIES/06-30/input/selected-recordings/2026-10-23/05-capture-provenance.json) 200.6초·[20번](../SERIES/06-30/input/selected-recordings/2026-10-23/20-capture-provenance.json) 210.2초를 분리해 Downloads 루트 사본과 함께 보존했다. 5번 현재 ID는 옛 전달 ID와 같고 20번은 다르다. 공식 다운로드·정식 최종 WAV·새 전체 파일 청취 통과·전곡 175–177 BPM 인증은 없다.
+- 이번 작업자의 Suno 생성·삭제 0회다. 다른 곡의 현재 원격 수량은 전수 확인하지 않았다. 기존 원장의 68후보·휴지통34·크레딧1,766은 이전 시점 이력이며 원래 `remote_disposition`(원격 후보 상태)과 BPM 결과는 수정하지 않았다. 1번 실패 구간별 시험본은 최종 승격하지 않았다. 공식 state revision83 `track_source_draft`다. 앞서 보낸 추가 시험 순서 질문은 젠의 구체적인 5·20번 녹음, 8·13번 비교본 지시로 실행됐고 답 대기 과제로 남지 않는다. 아래 블록은 승인 전 이력이다.
+- [연결 대조](validation/2026-10-23-0630-audition-approval-check.json)에 전달 20개와 새 파일·Downloads 루트 녹음 사본 해시, 현재 선택 ID 20개 소속, 원장 비결정 필드 불변을 기록했다. [175 비교본 부모 대조](validation/2026-10-23-0630-slower-parent-check.json), [5·20 녹음 부모 대조](validation/2026-10-23-0630-selected-recordings-parent-check.json), [173 비교본 부모 대조](validation/2026-10-23-0630-target173-parent-check.json)를 별도 보존했다.
+
+- [독립 Astra xhigh 검토](reviews/2026-10-23-0630-audition-recordings-tempo-followups-review.md)는 이 전달·녹음·승인 기록 범위에서 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 새 파일의 청취 승인이나 전곡 박자 통과 판정은 아니다. 작은 근거와 현행 문서를 함께 기록하고 큰 WAV는 로컬 무시 경로에 보존한다.
 
 ## 2026-10-23 [CDX] 06:30 승인된 조절법의 청취본 준비·첫 곡 전체 시험 결과
 - 젠 원문 “시험 통과 이런식으로 조절하자.”로 [1번 30초 시험](../SERIES/06-30/input/bpm-audit/validation/2026-10-23-track1-atempo-pilot.json)의 음높이 유지 FFmpeg `atempo` 방식을 **이번 06:30에 한해** 승인했다. [후보 박자 근거표](../SERIES/06-30/input/tempo-adjustment/2026-10-23-candidate-tempo-basis.md)에 따라 활성 후보 15개와 로컬 과거 후보 3개(12·14·18번)의 30초 보정 미리듣기 18개를 만들었다. 과거 후보의 Suno 원격 상태는 바꾸지 않았다. 박자 해석이 모호한 5·20번은 보정하지 않은 원본 30초 청취본을 둔다. [청취 전달 목록](../SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json)의 미리듣기는 전곡 확인이나 최종 선택을 뜻하지 않는다.
