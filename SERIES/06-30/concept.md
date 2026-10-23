@@ -1,6 +1,6 @@
 # 06:30 — 러닝 시리즈 제작 브리프
 
-Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). Suno 첫 제출 20회와 젠이 승인한 1번 추가 제출 1회로 원격 후보 42개가 있다. 1번의 첫 두 후보 1:30·1:31은 보존했고, 추가 두 후보는 화면상 3:17·3:18이다. 175–177 BPM 실측·후보 삭제·최종 선택은 모두 0건이며, 선택 음원·유효 분석 음원도 없다. 아래 20행은 곡별 **편곡 슬롯 제안**이지 완성곡·선택 음원 목록이 아니다.
+Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). Suno 첫 제출 20회와 젠이 승인한 1번 추가 제출 1회로 원격 후보 42개가 있다. 1번의 첫 두 후보 1:30·1:31은 보존했고, 추가 두 후보는 화면상 3:17·3:18이다. 49.9초 녹음 시험에서 실제 소리는 확인했으나 전곡 분석용 음원은 아직 없다. 175–177 BPM 실측·후보 삭제·최종 선택은 모두 0건이다. 아래 20행은 곡별 **편곡 슬롯 제안**이지 완성곡·선택 음원 목록이 아니다.
 
 ## 방향과 근거
 
@@ -51,6 +51,8 @@ Status: 2026-10-23 `track_source_draft`(트랙 입력 원문 단계). Suno 첫 �
 
 젠이 1번 길이 보완을 승인해 동결 원문으로 Custom 3:18을 한 번 더 제출했다. [추가 생성 화면](input/validation/2026-10-23-first-generation/suno-track1-regeneration-ui.json)의 새 후보 `a3af370c-b53f-4ecb-baa5-56bacc466599`·`6ee02826-a14c-48e9-bf63-5671bae1008c`는 화면상 3:17·3:18이다. 첫 두 후보를 삭제하지 않았고 전체는 20논리곡·42후보, 크레딧은 1,896이다. Suno 정상 다운로드 화면은 [잔여 0](input/validation/2026-10-23-first-generation/suno-download-quota-block.json)을 표시했다.
 
-젠의 최신 BPM 지시는 “응. 그리고 175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고”다. 이 지시는 유효한 음원을 확보해 실제 BPM을 잰 뒤 적용한다. 앱 전용 녹음 첫 두 시도는 [원시 검사](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json)에서 두 파일의 PCM 신호가 전부 0이었다. [새로고침 뒤 출력 확인](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json)에서도 실제 앱 오디오 출력이 확인되지 않았다. 젠이 “재시도 해봐”라고 지시한 뒤 세 번째 짧은 [녹음 재시도](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json)를 했지만 약 60초 48 kHz·2채널 파일 역시 PCM 신호가 전부 0이었다. 재생 화면의 시간은 약 33초까지 진행했다. 실패 원인은 확정하지 않았다. 젠에게 Aside에서 직접 재생할 때 소리가 들리는지 물었으나 소리 여부 답변은 받지 못했다.
+젠의 최신 BPM 지시는 “응. 그리고 175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고”다. 이 지시는 전곡 음원을 확보해 실제 BPM을 잰 뒤 적용한다. 앱 전용 녹음 첫 두 시도는 [원시 검사](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json)에서 두 파일의 PCM 신호가 전부 0이었다. [새로고침 뒤 출력 확인](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json)에서도 실제 앱 오디오 출력이 확인되지 않았다. 젠의 “재시도 해봐” 지시로 한 [세 번째 녹음](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json)도 무음이었다. 회의 녹음 종료 뒤의 [네 번째 재시도](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe4-check.json)는 화면상 3:17 곡이 재생됐지만 75.1초 파일의 PCM 데이터 28,838,400바이트가 전부 0이었다. Aside의 일반 새로고침은 확인했으나 캐시를 무시한 강제 새로고침 성공 여부는 확인하지 못했다.
 
-현재 유효한 분석 음원·BPM 측정·후보 삭제·최종 선택은 각각 0개다. 실패한 분석용 raw WAV 세 개는 별도로 보존하며 선택 음원이나 최종 WAV로 세지 않는다. 유효한 오디오 확보 뒤 42후보의 템포를 측정하고 젠이 지시한 범위 필터와 필요한 재생성을 이어간다. 화면의 길이·프롬프트상 175 BPM·재생 시간 진행만으로 실제 BPM이나 들리는 소리를 확정하지 않는다. 이 문서는 `Final Track Sources` 또는 `Final Selected Audio Sources` 선언이 아니다.
+이후 젠이 직접 ⌘ShiftR을 완료했다고 “완료했어.”라고 보고했다. 그 뒤 [다섯 번째 녹음 시험](input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-check.json)에서 49.9초·48 kHz·2채널 오디오 신호가 확인됐다(SHA-256 `8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503`). 순서는 확인됐지만 강제 새로고침이 소리 복구의 원인인지는 확정하지 않았다. 이 샘플은 3:17 전곡이 아니므로 분석용 전곡 음원이나 최종 선택 WAV로 세지 않는다.
+
+현재 전곡 분석 음원·실측 BPM·후보 삭제·최종 선택은 각각 0개다. 무음 raw WAV 네 개와 신호가 있는 짧은 시험 WAV 한 개를 별도로 보존한다. 전곡 확보 뒤 42후보의 템포를 측정하고 젠이 지시한 범위 필터와 필요한 재생성을 이어간다. 화면의 길이·프롬프트상 175 BPM·재생 시간 진행이나 짧은 신호 샘플만으로 실제 전곡 BPM을 확정하지 않는다. 이 문서는 `Final Track Sources` 또는 `Final Selected Audio Sources` 선언이 아니다.

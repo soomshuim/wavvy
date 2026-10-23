@@ -1,0 +1,62 @@
+{
+  "candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "page_url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "browser_product": "Aside",
+  "browser_tool": "mcp__aside__repl",
+  "refresh_evidence": {
+    "user_reported_manual_hard_refresh": "완료했어.",
+    "agent_performed_refresh": false,
+    "agent_cache_bypass_verified": false,
+    "note": "The user said they completed ⌘ShiftR in the Suno tab; the agent did not perform or independently verify cache bypass."
+  },
+  "ui_evidence": {
+    "tab_id": "E763258379140AB8EEECE49E0DB5E57F",
+    "title": "1. 첫 박부터 by Wavvy | Suno",
+    "pre_play": "0:00 paused, 3:17 total",
+    "post_play": "0:42 paused, 3:17 total",
+    "player_paused_after": true
+  },
+  "capture": {
+    "binary": "work/2026-10-22-selected-audio-capture/capture-song",
+    "aside_pid": 63240,
+    "app_bundle": "at.studio.AsideBrowser",
+    "microphone": false,
+    "audio": true,
+    "max_seconds": 50,
+    "stop_reason": "stop_marker",
+    "capture_log": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-capture.log",
+    "capture_process_remaining": false,
+    "wav_path": "SERIES/06-30/input/bpm-audit/audio/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-raw.wav",
+    "wav_sha256": "8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503",
+    "wav_size_bytes": 19165696,
+    "wav_data_bytes": 19161600,
+    "wav_data_nonzero_bytes": 16415841,
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_f32le",
+          "sample_rate": "48000",
+          "channels": 2,
+          "bits_per_sample": 32
+        }
+      ],
+      "format": {
+        "duration": "49.900000",
+        "size": "19165696"
+      }
+    },
+    "ffmpeg_astats_overall_peak_db": "-4.250927",
+    "ffmpeg_astats_overall_rms_db": "-18.152096",
+    "ffmpeg_astats_overall_raw": "[Parsed_astats_0 @ 0xc828109c0] Overall\n[Parsed_astats_0 @ 0xc828109c0] DC offset: 0.000002\n[Parsed_astats_0 @ 0xc828109c0] Min level: -0.587999\n[Parsed_astats_0 @ 0xc828109c0] Max level: 0.612990\n[Parsed_astats_0 @ 0xc828109c0] Min difference: 0.000000\n[Parsed_astats_0 @ 0xc828109c0] Max difference: 0.294975\n[Parsed_astats_0 @ 0xc828109c0] Mean difference: 0.020517\n[Parsed_astats_0 @ 0xc828109c0] RMS difference: 0.030190\n[Parsed_astats_0 @ 0xc828109c0] Peak level dB: -4.250927\n[Parsed_astats_0 @ 0xc828109c0] RMS level dB: -18.152096\n[Parsed_astats_0 @ 0xc828109c0] RMS peak dB: -13.376504\n[Parsed_astats_0 @ 0xc828109c0] RMS through dB: -inf\n[Parsed_astats_0 @ 0xc828109c0] Flat factor: 0.000000\n[Parsed_astats_0 @ 0xc828109c0] Peak count: 2.000000\n[Parsed_astats_0 @ 0xc828109c0] Abs Peak count: 1.000000\n[Parsed_astats_0 @ 0xc828109c0] Noise floor dB: -inf\n[Parsed_astats_0 @ 0xc828109c0] Noise floor count: 330023.000000\n[Parsed_astats_0 @ 0xc828109c0] Entropy: 0.781262\n[Parsed_astats_0 @ 0xc828109c0] Bit depth: 31/32/32/32\n[Parsed_astats_0 @ 0xc828109c0] Number of samples: 2395200\n[Parsed_astats_0 @ 0xc828109c0] Number of NaNs: 0.000000\n[Parsed_astats_0 @ 0xc828109c0] Number of Infs: 0.000000\n[Parsed_astats_0 @ 0xc828109c0] Number of denormals: 0.000000\n[out#0/null @ 0xc82810240] video:0KiB audio:9356KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:00:49.90 bitrate=N/A speed=1.04e+03x elapsed=0:00:00.04    "
+  },
+  "interpretation": {
+    "real_pcm_signal_observed": true,
+    "usable_full_song_bpm_input": false,
+    "reason": "This is only a 49.9-second audio probe, not the complete 3:17 song.",
+    "candidate_deletion_or_creation": false
+  },
+  "created_at": "2026-10-23T05:48:15.778133+00:00"
+}

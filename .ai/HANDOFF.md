@@ -2347,3 +2347,14 @@ Next-TODO: 추가 다운로드가 가능해지면 08–20 및 필요한 경우 0
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
 ---
+
+HANDOFF: Codex -> 젠
+Date: 2026-10-23 (새 06:30 수동 강제 새로고침 뒤 녹음 신호 확인)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 회의 녹음 종료 뒤 재시도 요청에 따라 Aside에서 네 번째 75.1초 녹음을 했지만 PCM 데이터 28,838,400바이트가 전부 0이었다. Aside의 일반 새로고침은 확인했으나 강제 새로고침 성공 여부는 확인하지 못했다. 젠이 직접 ⌘ShiftR 완료를 “완료했어.”라고 보고한 뒤 다섯 번째 49.9초 녹음에서 실제 소리가 담긴 신호가 확인됐다. 수동 강제 새로고침이 복구 원인인지는 미확정이다.
+Current: 20논리곡·원격 후보 42개 그대로다. 무음 시험 파일 네 개와 신호가 있는 짧은 시험 파일 한 개를 분리 보존한다. 49.9초 파일은 3:17 전곡이 아니므로 전곡 분석 음원·실측 BPM·삭제·최종 선택은 모두 0개다. 공식 state revision 83 `track_source_draft`는 바뀌지 않았다. 이번 재시도 범위에서 전체 후보 수집이나 삭제는 시작하지 않았다.
+Verification: [네 번째 원시 검사](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe4-check.json)는 0 PCM이다. [다섯 번째 원시 검사](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-check.json)의 WAV SHA-256은 `8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503`; 부모의 FFmpeg 디코드에서 4,790,400샘플 중 4,120,758개가 비영점이고 peak 0.6129903793·RMS 0.1237072590이었다. 녹음 프로세스가 종료된 것도 확인했다.
+Next-TODO: 전곡 오디오를 후보 ID와 길이·신호까지 확인해 확보한 뒤 실제 175–177 BPM을 측정한다. 범위 밖 후보를 삭제하고 한 곡의 모든 후보가 탈락하면 재생성한다. 이 단계는 젠이 이미 승인했다.
+Commits: 이번 결과의 문서·원시 JSON만 별도 체크포인트로 보존한다. 분석용 WAV는 로컬에만 둔다.
+---

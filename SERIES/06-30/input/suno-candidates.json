@@ -740,7 +740,7 @@
     "observed_ready_candidate_count": 40
   },
   "bpm_audit": {
-    "status": "blocked_no_valid_analysis_audio",
+    "status": "signal_probe_success_full_song_audio_pending",
     "candidate_count_to_measure": 42,
     "measured_candidate_count": 0,
     "deleted_candidate_count": 0,
@@ -752,19 +752,27 @@
     "user_instruction_quote": "응. 그리고 175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고",
     "target_bpm_min": 175,
     "target_bpm_max": 177,
-    "failed_capture_attempt_count": 3,
-    "failed_capture_raw_file_count": 3,
-    "failed_capture_reason": "Three Aside app-only ScreenCaptureKit captures had all-zero PCM despite visible browser playback progress; root cause unconfirmed.",
+    "failed_capture_attempt_count": 4,
+    "failed_capture_raw_file_count": 4,
+    "failed_capture_reason": "Four Aside app-only ScreenCaptureKit attempts had all-zero PCM despite visible playback progress; root cause unconfirmed.",
     "valid_analysis_audio_file_count": 0,
-    "audio_file_count_definition": "Valid analysis audio only; three fully silent failed raw WAV files are preserved separately and excluded.",
+    "audio_file_count_definition": "Complete-song analysis audio only; four silent failed raw WAV files and one 49.9-second signal probe are preserved separately and excluded.",
     "selected_candidate_count": 0,
     "third_capture_started": true,
     "failed_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json",
     "recovery_check_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-recovery-check.json",
     "user_direct_aside_playback_sound_check": "asked; no direct hearing answer received; user instructed retry instead",
-    "next_action": "Obtain valid audio before measuring all 42 candidates; then apply the already user-approved 175-177 BPM deletion and regenerate a logical track if all of its candidates are removed. Do not delete based on prompt BPM or UI playback progress.",
+    "next_action": "Capture and verify complete audio for all 42 candidates, measure BPM, then apply the already user-approved 175-177 BPM deletion and regenerate a logical track if all of its candidates are removed. A short signal probe or prompt BPM is not a whole-song measurement.",
     "third_capture_result": "all-zero PCM; no usable audio",
     "third_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json",
-    "user_retry_instruction_quote": "재시도 해봐"
+    "user_retry_instruction_quote": "재시도 해봐",
+    "fourth_capture_result": "75.1-second all-zero PCM; observed page reload but hard-refresh cache bypass unverified",
+    "fourth_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe4-check.json",
+    "user_manual_hard_refresh_report": "완료했어.",
+    "user_manual_hard_refresh_note": "User reported completing ⌘ShiftR; agent did not independently verify cache bypass or causation.",
+    "fifth_capture_result": "49.9-second real PCM signal observed; incomplete 3:17 candidate, not valid for whole-song BPM",
+    "fifth_capture_evidence_path": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-check.json",
+    "fifth_capture_wav_sha256": "8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503",
+    "short_signal_probe_audio_file_count": 1
   }
 }
