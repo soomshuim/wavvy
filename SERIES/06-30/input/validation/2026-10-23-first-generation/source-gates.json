@@ -1,0 +1,1447 @@
+{
+  "schema": "wavvy.source_gates.v1",
+  "series": "SERIES/06-30",
+  "command_template": "python3 wavvy.py gate SERIES/06-30 --stage track-prompt --artifact SERIES/06-30/input/tracks/NN_TITLE.txt --json",
+  "results": [
+    {
+      "order": 1,
+      "source_txt": "input/tracks/01_첫 박부터.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/01_첫 박부터.txt",
+        "source_sha256": "34befd4b1649893ae0e03f29f3bdbc3dbb36adf7b5078b906a13bcac27b350ae",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/01_첫 박부터.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "544/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=E Minor; STYLE=['E minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/01_첫 박부터.txt"
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "source_txt": "input/tracks/02_가속선.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/02_가속선.txt",
+        "source_sha256": "7eff84f951a7e0f5bd99a9729843fa98501623aeb9b798177494c3a16aaf1683",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/02_가속선.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "535/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=C Minor; STYLE=['C minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/02_가속선.txt"
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "source_txt": "input/tracks/03_빛나는 노면.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/03_빛나는 노면.txt",
+        "source_sha256": "bca3cbfd563ebe8e0d1cefa481a2a7823e2d19c5d733b3b5a6f5ea0734925856",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/03_빛나는 노면.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "549/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=D Major; STYLE=['D major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/03_빛나는 노면.txt"
+        ]
+      }
+    },
+    {
+      "order": 4,
+      "source_txt": "input/tracks/04_전력 곡선.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/04_전력 곡선.txt",
+        "source_sha256": "37b571a28d640ddc42707483bff32372e5328df4a3a7fd4b1ee64a8c9c36e711",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/04_전력 곡선.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "535/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=B Minor; STYLE=['B minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/04_전력 곡선.txt"
+        ]
+      }
+    },
+    {
+      "order": 5,
+      "source_txt": "input/tracks/05_빛의 마찰.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/05_빛의 마찰.txt",
+        "source_sha256": "17c96e2d4b0d154240d1b8f76a0a23e5e97252cba22dc8da43abcebabbc3bb99",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/05_빛의 마찰.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "552/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=G Major; STYLE=['G major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/05_빛의 마찰.txt"
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "source_txt": "input/tracks/06_다리의 불꽃.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/06_다리의 불꽃.txt",
+        "source_sha256": "b38aa4fa2ad8f533fd88f99dd0234a7c17f83717f13ec40a827a4c6d893b8ecd",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/06_다리의 불꽃.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "532/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=A Minor; STYLE=['A minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/06_다리의 불꽃.txt"
+        ]
+      }
+    },
+    {
+      "order": 7,
+      "source_txt": "input/tracks/07_하늘을 밀어.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/07_하늘을 밀어.txt",
+        "source_sha256": "36a133c4ee6e5a8c0efcef90762f22f0c748e05792d7545d7d70ab0dded75e62",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/07_하늘을 밀어.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "535/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=F# Minor; STYLE=['F# minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/07_하늘을 밀어.txt"
+        ]
+      }
+    },
+    {
+      "order": 8,
+      "source_txt": "input/tracks/08_유리 번개.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/08_유리 번개.txt",
+        "source_sha256": "75637e9fcfc68e14838ca81688ee059609c54559e5134a05940051b3b5e04631",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/08_유리 번개.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "528/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=C Major; STYLE=['C major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/08_유리 번개.txt"
+        ]
+      }
+    },
+    {
+      "order": 9,
+      "source_txt": "input/tracks/09_한계 위로.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/09_한계 위로.txt",
+        "source_sha256": "ce5912edae1a94a6d052b1a348f7a1ecdb9ed64d06b0327940e18cc731bd949a",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/09_한계 위로.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "546/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=D Major; STYLE=['D major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/09_한계 위로.txt"
+        ]
+      }
+    },
+    {
+      "order": 10,
+      "source_txt": "input/tracks/10_전류의 발끝.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/10_전류의 발끝.txt",
+        "source_sha256": "bf493228f60e9faf802b957553e3484c7ba0173c926999ea5a4b8719ffbb44b4",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/10_전류의 발끝.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "541/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=E Minor; STYLE=['E minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/10_전류의 발끝.txt"
+        ]
+      }
+    },
+    {
+      "order": 11,
+      "source_txt": "input/tracks/11_계속 앞으로.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/11_계속 앞으로.txt",
+        "source_sha256": "35d62bc81c7a1c743130a621e5630e85cf5cdecb6d7f4ecb176cda9aa44eb893",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/11_계속 앞으로.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "524/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=A Major; STYLE=['A major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/11_계속 앞으로.txt"
+        ]
+      }
+    },
+    {
+      "order": 12,
+      "source_txt": "input/tracks/12_폭발 직전.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/12_폭발 직전.txt",
+        "source_sha256": "dc216733c2334c6d9808dc9687fe8d337d4bbd6b3190db82d1f7cd7f7211540c",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/12_폭발 직전.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "537/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=F Minor; STYLE=['F minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/12_폭발 직전.txt"
+        ]
+      }
+    },
+    {
+      "order": 13,
+      "source_txt": "input/tracks/13_황금 주파수.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/13_황금 주파수.txt",
+        "source_sha256": "caa075c22540464e005d530e6f0f56a75d55b9f4186b68fffd7a2c3a0165c6a2",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/13_황금 주파수.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "536/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=B Major; STYLE=['B major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/13_황금 주파수.txt"
+        ]
+      }
+    },
+    {
+      "order": 14,
+      "source_txt": "input/tracks/14_높은 기어.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/14_높은 기어.txt",
+        "source_sha256": "0c51f88ff08149176637b2dae4e6a9d684d3abe555db2fb64133d5cbdb2d5ed6",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/14_높은 기어.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "511/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=G Minor; STYLE=['G minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/14_높은 기어.txt"
+        ]
+      }
+    },
+    {
+      "order": 15,
+      "source_txt": "input/tracks/15_번쩍이는 궤도.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/15_번쩍이는 궤도.txt",
+        "source_sha256": "e18d927afe613a8945cb1d4100b351d52c5cdd00e7cc70ae7bb2fad2418f2b87",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/15_번쩍이는 궤도.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "544/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=D Minor; STYLE=['D minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/15_번쩍이는 궤도.txt"
+        ]
+      }
+    },
+    {
+      "order": 16,
+      "source_txt": "input/tracks/16_가속의 틈.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/16_가속의 틈.txt",
+        "source_sha256": "d06f15e9357d3088911de7727ff8326679b5e70edf6f60c5981dc69a92f7db51",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/16_가속의 틈.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "513/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=C# Minor; STYLE=['C# minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/16_가속의 틈.txt"
+        ]
+      }
+    },
+    {
+      "order": 17,
+      "source_txt": "input/tracks/17_몸이 먼저.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/17_몸이 먼저.txt",
+        "source_sha256": "56efaed60b4beb22d57d361adaf6fafd5763d4676a5c9d65cb5df1a79850c99e",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/17_몸이 먼저.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "523/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=E Minor; STYLE=['E minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/17_몸이 먼저.txt"
+        ]
+      }
+    },
+    {
+      "order": 18,
+      "source_txt": "input/tracks/18_빛을 따라.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/18_빛을 따라.txt",
+        "source_sha256": "40ec4ca440766080d8679719362fe1b25e8fb25dbe0d26cd2c3eae2643942ecf",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/18_빛을 따라.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "554/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=A Major; STYLE=['A major']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/18_빛을 따라.txt"
+        ]
+      }
+    },
+    {
+      "order": 19,
+      "source_txt": "input/tracks/19_끝까지 당겨.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/19_끝까지 당겨.txt",
+        "source_sha256": "60c22d96b7b4d133cf8752d19e440ca257ab2b86bd73986fb069facdaf97bb5a",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/19_끝까지 당겨.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "513/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=B Minor; STYLE=['B minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/19_끝까지 당겨.txt"
+        ]
+      }
+    },
+    {
+      "order": 20,
+      "source_txt": "input/tracks/20_다시 점화.txt",
+      "exit_code": 0,
+      "output": {
+        "schema": "wavvy.track_prompt_gate.v1",
+        "stage": "track-prompt",
+        "result": "PASS",
+        "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+        "quality_status": "PROMPT_CONTRACT_CHECKED",
+        "series": "SERIES/06-30",
+        "artifact": "SERIES/06-30/input/tracks/20_다시 점화.txt",
+        "source_sha256": "ee6997956717240bb9b5b1c1f13774546007762ce47e4514a2630c48971a1a5d",
+        "checks": [
+          {
+            "name": "track_source_artifact",
+            "status": "PASS",
+            "detail": "SERIES/06-30/input/tracks/20_다시 점화.txt"
+          },
+          {
+            "name": "series_concept_present",
+            "status": "PASS",
+            "detail": "SERIES/06-30/concept.md"
+          },
+          {
+            "name": "track_source_parsed",
+            "status": "PASS",
+            "detail": "STYLE and LYRICS sections present"
+          },
+          {
+            "name": "track_source_sections",
+            "status": "PASS",
+            "detail": "STYLE, EXCLUDE, LYRICS"
+          },
+          {
+            "name": "style_character_limit",
+            "status": "PASS",
+            "detail": "544/900 Unicode characters including internal whitespace"
+          },
+          {
+            "name": "exclude_budget",
+            "status": "PASS",
+            "detail": "8/8 terms"
+          },
+          {
+            "name": "bpm_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=175; STYLE=[175]"
+          },
+          {
+            "name": "key_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=F# Minor; STYLE=['F# minor']"
+          },
+          {
+            "name": "instrumental_lyrics_only",
+            "status": "PASS",
+            "detail": "LYRICS must contain exactly [Instrumental]"
+          },
+          {
+            "name": "vocal_gender_metadata_matches_style",
+            "status": "PASS",
+            "detail": "metadata=Instrumental; STYLE=[]"
+          }
+        ],
+        "warnings": [],
+        "blockers": [],
+        "evidence_refs": [
+          "SERIES/06-30/input/tracks/20_다시 점화.txt"
+        ]
+      }
+    }
+  ]
+}

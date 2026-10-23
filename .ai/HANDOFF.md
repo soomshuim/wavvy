@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-23 (새 06:30 첫 생성 20회·후보 40개 확인)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “음원 생성해.” 지시로 동결된 20곡 입력을 새 `[06:30]` Suno 작업공간 `335455f4-30d5-4878-b658-365da757127e`에 곡당 1회 제출했다. [원격 후보 기록](../SERIES/06-30/input/suno-candidates.json)과 [최종 화면 관찰](../SERIES/06-30/input/validation/2026-10-23-first-generation/suno-final-ui-observations.jsonl)에 20곡×2후보·고유 ID 40개·활성 재생 버튼 40개가 있다. 첫 제출 크레딧 200(2,106→1,906)을 썼다.
+Current: 1번은 Auto 길이 후보 1:30·1:31로 3분 이상 목표 미달이고, 2–20번 Custom 제출의 38후보는 화면상 3:12–3:31이다. 1번 재생성 또는 현재 후보 유지 여부를 젠에게 질문해 답변 대기 중이며 추가 제출은 없다. 전곡 청취·실제 175 BPM·무보컬·음질은 미확인이다. 선택 음원·다운로드·로컬 WAV·최종 소스 선언은 0개다. 공식 state는 로컬 입력 단계 `track_source_draft`이며 원격 후보 40개를 로컬 음원으로 세지 않는다.
+Verification: [생성 입력 검토](reviews/2026-10-23-0630-source-review.md)와 [생성 기록 검토](reviews/2026-10-23-0630-generation-review.md)는 각 범위에서 CLEAN(확인된 Critical/High 0)이다. 기록 검토의 1–10번에는 입력 원문 대신 일치 검사 결과만 남아 있다. 공식 state write/check와 이번 문서 diff check 원시는 [로컬 검증](../SERIES/06-30/input/validation/2026-10-23-first-generation/local-validation/)에 둔다. 실제 음원 청취·속도·무보컬·음질 검토를 뜻하지 않는다.
+Next-TODO: 1번 길이 보완 여부에 대한 젠의 결정을 받고, 20곡 후보를 실제로 들어 선택한다. 영상·YouTube 제작은 이번 진행 범위 밖이다.
+Commits: 이 첫 생성 입력·후보 기록·검토·상태를 같은 작업 커밋으로 원격 반영한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-23 (새 06:30 러닝 콘셉트 초안)
 Project: ~/Project/wavvy
 Agent: Codex
