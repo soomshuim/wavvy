@@ -2358,3 +2358,14 @@ Verification: [네 번째 원시 검사](../SERIES/06-30/input/bpm-audit/evidenc
 Next-TODO: 전곡 오디오를 후보 ID와 길이·신호까지 확인해 확보한 뒤 실제 175–177 BPM을 측정한다. 범위 밖 후보를 삭제하고 한 곡의 모든 후보가 탈락하면 재생성한다. 이 단계는 젠이 이미 승인했다.
 Commits: 이번 결과의 문서·원시 JSON만 별도 체크포인트로 보존한다. 분석용 WAV는 로컬에만 둔다.
 ---
+
+HANDOFF: Codex -> 젠
+Date: 2026-10-23 (새 06:30 BPM 30초 분석 중단 체크포인트)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠이 “전체를 다 녹음할 필요는 없어 30초씩만 해도 돼”라고 하여 관측된 30초 샘플에 한정한 BPM 분석으로 범위를 바꿨다. 30초 지원 코드의 격리 검토는 CLEAN(확인된 Critical/High 0)이며, 첫 후보 `a3af370c-b53f-4ecb-baa5-56bacc466599`의 서로 다른 30초 샘플 2개는 모두 `uncertain`이다. 후보가 둘인 것이 아니다. 샘플 결과는 `SERIES/06-30/input/bpm-audit/results/`에 보존했다. 전곡 BPM 유지는 인증하지 않는다.
+Current: 젠의 “앗 그거 어려운데 잠깐 스톱해줘.”, “내가 작업 재개 요청할 때 재개해줘. 지금은 aside를 써야해서..”에 따라 녹음·분석·삭제·재생성을 중단했다. 20논리곡·원격 후보 42개, 측정 후보 1개·샘플 2개, 삭제 0개·선택 0개다. 녹음 담당자는 다음 B 후보 페이지로 이동만 하고 새 샘플을 얻지 않았다. 공식 state revision 83 `track_source_draft`는 변함없다.
+Verification: 30초 합성 11건의 기대 분류가 11/11 일치했고 원시 출력은 `SERIES/06-30/input/bpm-audit/validation/synthetic-30s.json`에 있다. 첫·다른 구간 원본 SHA는 각각 `a9cd0553908e28e4fa97b4a8f9fd231637e561dd5b83275b18e055e8a8c45d84`, `e49f79e28c53448c2be9decce37a6a8928ac46b2a207bd3ba1a9192c0ddfdaa3`다. Aside 탭 진단 원본에는 무관한 탭 정보가 있어 ignored `work/06-30-bpm-audit/`에 해시와 함께 보존하고 공유 기록에는 대상 Suno 사실만 남겼다.
+Resume-Trigger: 젠의 명시적 작업 재개 요청. 요청 전에는 자동 진행하지 않는다.
+Next-TODO: 재개 요청이 오면 B 후보에서 연속 30초 샘플 확보와 보수적 BPM 분석을 이어간다. 범위 밖 후보 삭제는 별도 독립 검토 뒤에만 실행한다.
+---

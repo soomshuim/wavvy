@@ -1,0 +1,60 @@
+{
+  "candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "source_url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "browser_tool": "mcp__aside__repl",
+  "created_at": "2026-10-23T05:59:28.968335+00:00",
+  "purpose": "Originally requested full-song capture, interrupted promptly after user changed scope to 30-second samples",
+  "ui_start": {
+    "current_time": 0.0,
+    "duration": 197.48,
+    "paused": true
+  },
+  "ui_play_confirmed": {
+    "current_time": 0.560139,
+    "paused": false
+  },
+  "ui_stop": {
+    "current_time": 44.924607,
+    "paused": true
+  },
+  "capture_log": "SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-full-capture.log",
+  "capture": {
+    "aside_pid": 63240,
+    "app_bundle": "at.studio.AsideBrowser",
+    "microphone": false,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stop_reason": "stop_marker",
+    "write_error": "none",
+    "raw_peak": 0.0,
+    "raw_rms": 0.0,
+    "raw_nonzero_bytes": 0,
+    "raw_frames": 2576640
+  },
+  "file": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/a3af370c-b53f-4ecb-baa5-56bacc466599-full-raw.wav",
+    "sha256": "f5a29dec2add8fb1b48e39a0a403c06ec4c304042b8937e81299a92a346813a9",
+    "file_bytes": 20617216,
+    "sample_frames": 2576640,
+    "nonzero_samples": 0,
+    "peak": 0.0,
+    "rms": 0.0,
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_f32le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "53.680000",
+        "size": "20617216"
+      }
+    }
+  },
+  "interpretation": "Invalid PCM audio despite advancing UI player; candidate has a separate valid probe5. No full-song claim. Active-tab false was observed before and after this attempt, but causality is unproven."
+}

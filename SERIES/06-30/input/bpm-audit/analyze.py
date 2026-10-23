@@ -216,7 +216,7 @@ def pulse_grid(
 def intervals(duration: float) -> list[tuple[str, float, float]]:
     window = min(55.0, duration * .78)
     return [
-        ("full", 0.0, duration),
+        ("sample", 0.0, duration),
         ("head", 0.0, window),
         ("middle", max(0.0, (duration - window) / 2), min(duration, (duration + window) / 2)),
         ("tail", max(0.0, duration - window), duration),
@@ -244,9 +244,10 @@ def analyze_audio(audio: np.ndarray, candidate_id: str, source: dict) -> dict:
             "local_change_check": "Overlapping 8-second low-attack beat grids, 4-second stride",
             "boundary_margin_bpm": BOUNDARY_MARGIN_BPM,
             "note": "Margin is uncertainty allowance, not an extended acceptable BPM range.",
+            "scope": "Observed audio sample only; no unobserved-song tempo guarantee.",
         },
     }
-    if duration < 60 or not np.all(np.isfinite(audio)):
+    if duration < 30 or not np.all(np.isfinite(audio)):
         report.update({"classification": "uncertain", "reasons": ["short_or_nonfinite_audio"]})
         return report
     one_second = SAMPLE_RATE
@@ -336,7 +337,7 @@ def classify(report: dict) -> dict:
                 reasons.append(f"{window['name']}:half_double_ambiguity")
                 break
     if len(values) < 8:
-        reasons.append("incomplete_whole_track_evidence")
+        reasons.append("incomplete_sample_evidence")
     values.extend(local_values)
     if values:
         span = max(values) - min(values)

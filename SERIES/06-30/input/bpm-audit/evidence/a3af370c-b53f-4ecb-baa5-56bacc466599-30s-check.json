@@ -1,0 +1,101 @@
+{
+  "candidate_id": "a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "source_url": "https://suno.com/song/a3af370c-b53f-4ecb-baa5-56bacc466599",
+  "browser_tool": "mcp__aside__repl",
+  "created_at": "2026-10-23T05:59:28.968335+00:00",
+  "purpose": "User-approved 30-second partial BPM sample",
+  "source_capture": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-raw.wav",
+    "sha256": "8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503",
+    "file_bytes": 19165696,
+    "sample_frames": 2395200,
+    "nonzero_samples": 4120758,
+    "peak": 0.6129903793334961,
+    "rms": 0.12370725721120834,
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_f32le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "49.900000",
+        "size": "19165696"
+      }
+    }
+  },
+  "extraction": {
+    "tool": "ffmpeg",
+    "start_seconds_in_capture": 5.0,
+    "end_seconds_in_capture": 35.0,
+    "duration_seconds": 30.0,
+    "command": "ffmpeg -i <probe5-raw.wav> -ss 5 -t 30 -c:a pcm_f32le <candidate-id>-30s.wav",
+    "user_visible_song_position": "start vicinity; exact alignment to Suno currentTime not independently calibrated"
+  },
+  "sample": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/a3af370c-b53f-4ecb-baa5-56bacc466599-30s.wav",
+    "sha256": "a9cd0553908e28e4fa97b4a8f9fd231637e561dd5b83275b18e055e8a8c45d84",
+    "file_bytes": 11520092,
+    "sample_frames": 1440000,
+    "nonzero_samples": 2880000,
+    "peak": 0.572176992893219,
+    "rms": 0.13107195496559143,
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_f32le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "30.000000",
+        "size": "11520092"
+      }
+    }
+  },
+  "per_second_rms": [
+    0.09354421496391296,
+    0.1167764812707901,
+    0.08487853407859802,
+    0.09840333461761475,
+    0.11599002033472061,
+    0.09283074736595154,
+    0.1040952056646347,
+    0.134599506855011,
+    0.12741868197917938,
+    0.12069504708051682,
+    0.13488797843456268,
+    0.12842205166816711,
+    0.13250799477100372,
+    0.13677716255187988,
+    0.14766164124011993,
+    0.13742239773273468,
+    0.1414409726858139,
+    0.1493101269006729,
+    0.14639119803905487,
+    0.14315615594387054,
+    0.13854049146175385,
+    0.1425287425518036,
+    0.1358901858329773,
+    0.14433406293392181,
+    0.14795652031898499,
+    0.14413180947303772,
+    0.1346999853849411,
+    0.1421225666999817,
+    0.1327735036611557,
+    0.14486323297023773
+  ],
+  "min_per_second_rms": 0.08487853407859802,
+  "all_30_seconds_nonzero": true,
+  "ffmpeg_astats_overall_peak_db": -4.849392,
+  "ffmpeg_astats_overall_rms_db": -17.649805,
+  "interpretation": "Valid partial music sample for 30-second BPM analysis only; no full-song BPM guarantee or deletion decision."
+}
