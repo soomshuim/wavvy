@@ -1,8 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-23 (06:30 기존 후보 30초 점검 완료, 길이 조절 시험 청취 의견 대기)
+> Last updated: 2026-10-23 (06:30 청취용 30초 보정본 18개·첫 곡 전체 시험 1개 결과 기록)
 
 ---
+
+## 2026-10-23 [CDX] 06:30 승인된 조절법의 청취본 준비·첫 곡 전체 시험 결과
+- 젠 원문 “시험 통과 이런식으로 조절하자.”로 [1번 30초 시험](../SERIES/06-30/input/bpm-audit/validation/2026-10-23-track1-atempo-pilot.json)의 음높이 유지 FFmpeg `atempo` 방식을 **이번 06:30에 한해** 승인했다. [후보 박자 근거표](../SERIES/06-30/input/tempo-adjustment/2026-10-23-candidate-tempo-basis.md)에 따라 활성 후보 15개와 로컬 과거 후보 3개(12·14·18번)의 30초 보정 미리듣기 18개를 만들었다. 과거 후보의 Suno 원격 상태는 바꾸지 않았다. 박자 해석이 모호한 5·20번은 보정하지 않은 원본 30초 청취본을 둔다. [청취 전달 목록](../SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json)의 미리듣기는 전곡 확인이나 최종 선택을 뜻하지 않는다.
+- 1번 후보 `24703f3f-c7ce-433f-a892-16d9330b41a9`의 앱 출력 [원시 녹음](../SERIES/06-30/input/tempo-adjustment/full-source/track01-round4-a-capture-provenance.json)은 217.56초이고 다음 곡 자동 재생이 섞여 있다. 2.35–200.75초만 분리한 작업용 원본은 198.4초다. [일정 배수 사전 측정](../SERIES/06-30/input/tempo-adjustment/full-source/track01-uniform-factor-stop-check.json)은 175.575–178.892 BPM을 예상해 전체 렌더를 만들지 않았다. [구간별 조절 작업본 1개](../SERIES/06-30/input/tempo-adjustment/full-source/track01-adaptive-output-adjudication.json)의 실제 길이는 209.262479초로 예상 213.514530초보다 4.252051초 짧다. 독립 측정의 강한 8초 창 49개가 모두 175–177 BPM 밖이라 목표 미달이다. 추가 튜닝 0회·최종 승격 0개이며 원인은 미확정이다.
+- 젠에게 1번 재시험과 18개 미리듣기 먼저 듣기 중 다음 순서를 물어 답을 기다린다. 원본 20 TXT·동결 입력·68후보/69표본 원장과 독립 판정 `out`54·`uncertain`14는 불변이다. Suno 휴지통 34개·영구 삭제0·최종 선택0, 크레딧1,766, 공식 state revision83 `track_source_draft`다. 이번 승인 뒤 추가 Suno 생성·삭제와 다른 곡의 전곡 조절은 없었다. 바로 아래 “청취 의견 대기”는 **승인 전 30초 시험 당시의 이력**이다.
+- [독립 Astra xhigh 검토](reviews/2026-10-23-0630-tempo-adjustment-checkpoint-review.md)는 이번 파일·전달·실패 기록 범위에서 CLEAN(확인된 Critical/High 0·원칙 관찰 없음)이다. 이는 전곡 보정 통과 판정이 아니다. 컨트롤러의 [전달 대조](validation/2026-10-23-0630-tempo-delivery-parent-check.json)와 [첫 곡 재현](validation/2026-10-23-0630-tempo-full-parent-check.json)은 `errors: []`, 공식 state check는 PASS다.
 
 ## 2026-10-23 [CDX] 06:30 BPM 점검 재개·기존 후보 30초 표본 완료
 - 젠 원문 “재개해. 내 생각엔 음원 길이를 조정하는 방법도 있을 듯?”에 따라 아래 일시 중단을 해제했다. 후보 이력 68개에 유효한 연속 30초 표본을 확보해 68고유 후보·69표본의 [자동 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json)을 완성했다. 자동 결과는 모두 `uncertain` 원문 그대로다. 13번 2차 B의 첫 부분 무음 녹음은 제외하고 성공한 재시도 파일만 집계했다.

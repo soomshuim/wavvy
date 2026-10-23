@@ -1,4 +1,16 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 승인된 조절 방법의 현행 결과)
+Date: 2026-10-23
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “시험 통과 이런식으로 조절하자.”로 음높이 유지 속도 조절을 이번 06:30에 한해 승인했다. 원본을 보존해 18곡의 30초 보정 미리듣기(활성 후보 15·로컬 과거 후보 3)를 만들었다. 5·20번은 박자 해석이 모호해 보정하지 않은 원본 30초를 청취용으로 둔다. 1번 전체 구간별 조절은 작업본 한 개가 목표에 못 미쳐 추가 튜닝을 멈췄다.
+Current: [청취 전달 기록](../SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json)의 보정 미리듣기 18개는 전곡 박자 확인이나 최종 선택이 아니다. 로컬 과거 후보 3개는 Suno에서 복구하지 않았다. [1번 앱 출력 원시](../SERIES/06-30/input/tempo-adjustment/full-source/track01-round4-a-capture-provenance.json) 217.56초에는 다음 곡 자동 재생이 있어 2.35–200.75초의 198.4초만 작업용 원본으로 분리했다. [일정 배수 예상](../SERIES/06-30/input/tempo-adjustment/full-source/track01-uniform-factor-stop-check.json)은 175.575–178.892 BPM이므로 전체 렌더는 하지 않았다. [구간별 시험 결과](../SERIES/06-30/input/tempo-adjustment/full-source/track01-adaptive-output-adjudication.json)는 출력 209.262479초, 예상 213.514530초와 차이 -4.252051초, 독립 측정의 강한 8초 창 49개 모두 175–177 BPM 밖이다. 원인은 미확정이다. 원본 68후보·69표본의 자동 원시 및 별도 `out`54·`uncertain`14 판정은 불변이고 Suno 휴지통34·영구삭제0·최종선택0·크레딧1,766이다. 공식 state revision83 `track_source_draft`, Mac 설정과 기존17:30 결과는 불변이다.
+Next-TODO: 젠에게 1번 추가 시험과 18개 미리듣기 먼저 듣기 중 다음 순서를 물어 답을 기다린다. 답 전 첫 곡 재조절·다른 곡 전체 보정·추가 Suno 생성/삭제를 진행하지 않는다. 목표 미달 작업본은 최종 음원이 아니며 추가 튜닝은 0회다. 이번 블록은 결과 체크포인트이고 아래 “청취 의견 대기” 블록은 방법 승인 전의 이력이다.
+Verification: [독립 Astra xhigh 검토](reviews/2026-10-23-0630-tempo-adjustment-checkpoint-review.md)는 파일·전달·실패 기록 범위에서 CLEAN(확인된 Critical/High 0·원칙 관찰 없음)이다. 전곡 보정 통과를 뜻하지 않는다. 컨트롤러의 전곡 시험 재현과 전달 대조는 errors 빈 배열, 공식 state check PASS다.
+Commits: 이 체크포인트는 검토 기록과 함께 커밋·푸시한다. 현재 요청의 전곡 보정 작업은 미완료이며 젠의 추가 시험 답을 기다린다.
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 기존 후보 30초 점검 완료)
 Date: 2026-10-23
 Project: ~/Project/wavvy

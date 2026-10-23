@@ -1,0 +1,36 @@
+{
+  "scope": "read-only audit of one attempted adaptive FFmpeg run; cause of duration/rhythm discrepancy is not established",
+  "log_path": "work/0630-tempo-adjustment-20261023/full/01-24703f3f-variable-target176-ffmpeg.log",
+  "log_sha256": "94b4b82de9b3ddcee54276b81d54008a3f072d5e7cb1f17d3eeec59b7ab8213f",
+  "commands_path": "SERIES/06-30/input/tempo-adjustment/full-source/track01-adaptive-atempo-commands.txt",
+  "commands_processed": 396,
+  "intervals_entered": 396,
+  "first_interval": {
+    "interval": 0,
+    "scheduled_source_pts_s": 0.5,
+    "observed_source_pts_s": 0.512
+  },
+  "middle_interval": {
+    "interval": 199,
+    "scheduled_source_pts_s": 100.0,
+    "observed_source_pts_s": 100.010667
+  },
+  "last_interval": {
+    "interval": 395,
+    "scheduled_source_pts_s": 198.0,
+    "observed_source_pts_s": 198.058667
+  },
+  "trigger_lag_s_min_max": [
+    0.0,
+    0.08400000000000318
+  ],
+  "command_reply_counts": {
+    "ret:Undefined error: 0 res:": 396
+  },
+  "observation": "asendcmd is placed before atempo; logged command triggers run from 0.512 to 198.059 input seconds, while output duration is 209.262 seconds. This supports source PTS as the command time base.",
+  "expected_integral_duration_s": 213.51453010782734,
+  "actual_output_duration_s": 209.26247916666668,
+  "difference_s": -4.252050941160661,
+  "known": "all 396 commands were dispatched with zero-code replies; output duration and independent beat measurements differ from the command-based expectation",
+  "unknown": "The root cause of the systematic ~2% difference is not established by this log alone; no second tuning or render was run."
+}

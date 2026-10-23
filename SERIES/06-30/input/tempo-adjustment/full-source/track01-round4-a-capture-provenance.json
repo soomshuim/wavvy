@@ -1,0 +1,150 @@
+{
+  "status": "working_candidate_source_only_not_final_selection",
+  "candidate_id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+  "candidate_title": "1. 첫 박부터",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "candidate_url": "https://suno.com/song/24703f3f-c7ce-433f-a892-16d9330b41a9",
+  "browser_product": "Aside",
+  "browser_tool": "mcp__aside__repl",
+  "capture_method": "existing ScreenCaptureKit capture-song; Aside app-only PID 63240; microphone=false; no device or mute changes",
+  "remote_actions_during_capture": "UI playback only; no generation, deletion, or download",
+  "ui_duration": {
+    "displayed": "3:18",
+    "dom_audio_duration_s": 198,
+    "note": "DOM number was exactly 198; source endpoint inferred with capture timeline and waveform, not from UI alone"
+  },
+  "ui_timeline": [
+    {
+      "at": "2026-10-23T11:35:50.132Z",
+      "event": "before_play",
+      "candidate_current_time_s": 0,
+      "paused": true
+    },
+    {
+      "at": "2026-10-23T11:35:51.584Z",
+      "event": "after_play",
+      "candidate_current_time_s": 0.032683,
+      "duration_s": 198,
+      "playback_rate": 1,
+      "playbar_candidate_link_match": true
+    },
+    {
+      "at": "2026-10-23T11:36:23.834Z",
+      "candidate_current_time_s": 32.276669
+    },
+    {
+      "at": "2026-10-23T11:36:58.325Z",
+      "candidate_current_time_s": 66.769467
+    },
+    {
+      "at": "2026-10-23T11:37:32.002Z",
+      "candidate_current_time_s": 100.448109
+    },
+    {
+      "at": "2026-10-23T11:38:03.481Z",
+      "candidate_current_time_s": 131.929074
+    },
+    {
+      "at": "2026-10-23T11:38:35.534Z",
+      "candidate_current_time_s": 163.983807
+    },
+    {
+      "at": "2026-10-23T11:38:57.657Z",
+      "candidate_current_time_s": 186.107747
+    },
+    {
+      "at": "2026-10-23T11:39:16.729Z",
+      "event": "autoplay_next_observed",
+      "next_current_time_s": 6.673894,
+      "next_song_id": "193d634b-e8c0-4887-8249-c85287b3ebd7",
+      "playbar_candidate_link_match": false
+    },
+    {
+      "at": "2026-10-23T11:39:26.676Z",
+      "event": "player_paused",
+      "next_current_time_s": 16.223283
+    }
+  ],
+  "raw_capture": {
+    "path": "/Users/zenkim_office/Project/wavvy/work/0630-tempo-full/24703f3f-c7ce-433f-a892-16d9330b41a9-full-raw.wav",
+    "sha256": "3a10c8116785fa5356916c5a14f7766000fca189707fc415b9ef5ddd6ba7c201",
+    "duration_s": 217.56,
+    "size_bytes": 83547136,
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "capture_log_path": "/Users/zenkim_office/Project/wavvy/work/0630-tempo-full/24703f3f-c7ce-433f-a892-16d9330b41a9-full-capture.log",
+    "capture_log_sha256": "638f768eb5e4860773cbd2965cea20928a3dd4c61b69d145d7a41e714b0b1124",
+    "capture_started_at": "2026-10-23T11:35:49.053Z",
+    "capture_stopped_reason": "stop_marker",
+    "write_error": "none",
+    "contains_autoplay_next_song": true
+  },
+  "source_separation": {
+    "method": "same-candidate reference 30-second waveform alignment plus observed 198-second UI timeline and trailing silent gap",
+    "reference_30s_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/bpm-audit/audio/24703f3f-c7ce-433f-a892-16d9330b41a9-resume20261023-30s.wav",
+    "reference_30s_sha256": "e1ec292f0c079d3eaecad339cc6aa7a5907a9e31ac3653861e3738d9cfe010d9",
+    "reference_phrase_sample_offset_s": 1,
+    "reference_phrase_raw_lag_s": 7.73775,
+    "reference_start_in_raw_s": 6.73775,
+    "reference_match_pearson_r": 0.994328355691275,
+    "first_music_raw_s_approx": 2.4,
+    "target_tail_raw_s_approx": 200.4,
+    "silent_gap_raw_s": [
+      200.5,
+      200.9
+    ],
+    "next_song_music_raw_s_approx": 201.0,
+    "rms_checks": {
+      "raw_0_to_2_35_s": 0.0,
+      "raw_2_4_to_2_6_s": 0.08610246606746942,
+      "raw_200_6_to_200_75_s": 0.0,
+      "raw_201_05_to_201_25_s": 0.05357081866392763
+    },
+    "crop_from_raw_s": [
+      2.35,
+      200.75
+    ],
+    "crop_duration_s": 198.4,
+    "selection_note": "0.05 s lead before first observed music and 0.25 s trailing silent gap after observed target tail; next-song signal begins after crop"
+  },
+  "working_source": {
+    "path": "/Users/zenkim_office/Project/wavvy/work/0630-tempo-full/24703f3f-c7ce-433f-a892-16d9330b41a9-working-source.wav",
+    "sha256": "b1f9c36e5085786008d48f2385b537817f71835e4b54b3bf59e138c38733017a",
+    "duration_s": 198.4,
+    "size_bytes": 76185692,
+    "codec": "pcm_f32le",
+    "sample_format": "flt",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "opening_0_2s_rms": 0.08015369143996315,
+    "final_0_2s_rms": 0.0,
+    "contains_next_song_by_boundary_evidence": false
+  },
+  "limits": [
+    "This is an app-output capture, not an official Suno WAV download.",
+    "UI duration of 198 seconds may be rounded; crop uses observed waveform and autoplay boundary.",
+    "No whole-song listening judgment or final candidate selection was made."
+  ],
+  "rms_definition": "RMS = sqrt(mean(square(stereo PCM converted to float64))); sample interval is [round(start_seconds*48000), round(end_seconds*48000)), with both channels included equally.",
+  "correction_history": [
+    {
+      "date": "2026-10-23",
+      "reason": "Four prior RMS numbers did not match the retained raw/source WAV samples; recomputed directly from float32 PCM with the stated float64 stereo RMS definition. Audio files, hashes, crop interval and UI observations unchanged.",
+      "previous_provenance_sha256": "4f6f2781bdf1aff79b0cc72581184b0bae0bcb5a6cc283e3247fba0de4453618",
+      "corrected_fields_before": {
+        "raw_2_4_to_2_6_s": 0.11604590768597525,
+        "raw_201_05_to_201_25_s": 0.06610377596322226,
+        "opening_0_2s_rms": 0.09766145932425266,
+        "final_0_2s_rms": 0.00011365942790187554
+      },
+      "corrected_fields_after": {
+        "raw_2_4_to_2_6_s": 0.08610246606746942,
+        "raw_201_05_to_201_25_s": 0.05357081866392763,
+        "opening_0_2s_rms": 0.08015369143996315,
+        "final_0_2s_rms": 0.0
+      }
+    }
+  ]
+}

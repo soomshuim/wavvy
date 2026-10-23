@@ -1,0 +1,120 @@
+{
+  "scope": "first candidate full working source; free high-band grid across seven overlapping 30-second windows; no full render",
+  "candidate_id": "24703f3f-c7ce-433f-a892-16d9330b41a9",
+  "working_source_path": "work/0630-tempo-full/24703f3f-c7ce-433f-a892-16d9330b41a9-working-source.wav",
+  "working_source_sha256": "b1f9c36e5085786008d48f2385b537817f71835e4b54b3bf59e138c38733017a",
+  "pilot_factor": 0.9374367496511243,
+  "target_range_bpm": [
+    175,
+    177
+  ],
+  "method": "source-free independent lattice measurements; divide ~375–382 onset grid by two following observed mid-band ~187–191 pulse and existing pilot hypothesis, not a target-seeded fit",
+  "windows": [
+    {
+      "start_s": 0.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-000s.json",
+      "raw_sha256": "2d668eaeaeb3927ebcb4fb3997aca6c917f1bbf231d1e5cb70c0bc2c2cedaa76",
+      "high_onset_grid_bpm": 375.272,
+      "high_onset_coherence": 0.712,
+      "high_grid_span_s": 29.424,
+      "half_grid_pulse_hypothesis_bpm": 187.636,
+      "predicted_after_pilot_factor_bpm": 175.89688195753837,
+      "direct_mid_fits_bpm": [
+        187.631
+      ]
+    },
+    {
+      "start_s": 30.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0030p0s.json",
+      "raw_sha256": "95947b92703f6bceed9abf96d1ce0f82a91d804cbadc95d85f154f6a6ff43d7a",
+      "high_onset_grid_bpm": 380.436,
+      "high_onset_coherence": 0.864,
+      "high_grid_span_s": 29.026,
+      "half_grid_pulse_hypothesis_bpm": 190.218,
+      "predicted_after_pilot_factor_bpm": 178.31734364513756,
+      "direct_mid_fits_bpm": [
+        190.226
+      ]
+    },
+    {
+      "start_s": 60.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0060p0s.json",
+      "raw_sha256": "c10f900bb36f78c6ccad20f39eb9c2a981040319aa8bea09f659ca984ca7348f",
+      "high_onset_grid_bpm": 381.663,
+      "high_onset_coherence": 0.913,
+      "high_grid_span_s": 29.878,
+      "half_grid_pulse_hypothesis_bpm": 190.8315,
+      "predicted_after_pilot_factor_bpm": 178.89246109104855,
+      "direct_mid_fits_bpm": [
+        190.839
+      ]
+    },
+    {
+      "start_s": 90.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0090p0s.json",
+      "raw_sha256": "7aa8fd435b0ba2df83d2e5c0e5586669ee1dcdc33c0288477ec16d38678a0942",
+      "high_onset_grid_bpm": 379.599,
+      "high_onset_coherence": 0.88,
+      "high_grid_span_s": 29.058,
+      "half_grid_pulse_hypothesis_bpm": 189.7995,
+      "predicted_after_pilot_factor_bpm": 177.92502636540857,
+      "direct_mid_fits_bpm": [
+        189.823
+      ]
+    },
+    {
+      "start_s": 120.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0120p0s.json",
+      "raw_sha256": "4f400ed9d90f3166e3d6e2aa07c24e5e0149803dda7374aca0b8a8d952ffd204",
+      "high_onset_grid_bpm": 374.586,
+      "high_onset_coherence": 0.703,
+      "high_grid_span_s": 29.436,
+      "half_grid_pulse_hypothesis_bpm": 187.293,
+      "predicted_after_pilot_factor_bpm": 175.57534115240804,
+      "direct_mid_fits_bpm": []
+    },
+    {
+      "start_s": 150.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0150p0s.json",
+      "raw_sha256": "aa723cedfbb5afa0ecb3ea27d98d94e88bd7a5065f98b5f2dc841961cb266c3d",
+      "high_onset_grid_bpm": 380.041,
+      "high_onset_coherence": 0.833,
+      "high_grid_span_s": 27.954,
+      "half_grid_pulse_hypothesis_bpm": 190.0205,
+      "predicted_after_pilot_factor_bpm": 178.13219988708147,
+      "direct_mid_fits_bpm": [
+        189.976
+      ]
+    },
+    {
+      "start_s": 168.4,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-full-source-free-0168p4s.json",
+      "raw_sha256": "96b07544e0155355a73c0034e87f56e68067db22d8b749a6de5111479b64e5bf",
+      "high_onset_grid_bpm": 381.125,
+      "high_onset_coherence": 0.962,
+      "high_grid_span_s": 24.894,
+      "half_grid_pulse_hypothesis_bpm": 190.5625,
+      "predicted_after_pilot_factor_bpm": 178.64029060539238,
+      "direct_mid_fits_bpm": []
+    }
+  ],
+  "half_grid_range_bpm": [
+    187.293,
+    190.8315
+  ],
+  "pilot_factor_predicted_range_bpm": [
+    175.57534115240804,
+    178.89246109104855
+  ],
+  "windows_predicted_outside_175_177": [
+    30.0,
+    60.0,
+    90.0,
+    150.0,
+    168.4
+  ],
+  "uniform_full_render_performed": false,
+  "final_selection": false,
+  "executed_method_path": "SERIES/06-30/input/tempo-adjustment/measurements/2026-10-23-free-lattice-slice.py",
+  "executed_method_sha256": "e5787d1e71a1781c44511dbb2f7c29369b565133c4108796e890333e80106eee"
+}

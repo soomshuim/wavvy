@@ -1,0 +1,42 @@
+{
+  "scope": "30-second listening preview only; not a whole-song or selected source",
+  "order": 8,
+  "candidate_id": "45acc3bc-6c0a-4472-b87f-9c36adba05bf",
+  "basis_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-candidate-tempo-basis.json",
+  "basis_sha256": "1f8e131abe650c4a87787b34593180b5a321feb8468831455b43fb721f10d1b4",
+  "raw_basis_path": "SERIES/06-30/input/bpm-audit/validation/independent-review-8b.jsonl",
+  "raw_basis_sha256": "4538c6e5c0fc58d9bfa1a7cb3a39a50514093971db71df8b8d27be2ca604dc5c",
+  "source_bpm_hypothesis": 176.04,
+  "target_bpm": 176,
+  "atempo_factor": 0.9997727789138833,
+  "basis_proposed_factor_rounded": 0.999772779,
+  "method": "ffmpeg_atempo_pcm_f32le",
+  "source": {
+    "path": "SERIES/06-30/input/bpm-audit/audio/45acc3bc-6c0a-4472-b87f-9c36adba05bf-resume20261023-30s.wav",
+    "sha256": "19f7a2ef3d154d65d3af9f8e7baadf86636e2e577657757b67870c142cfb9ae3",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 1440000,
+    "duration_s": 30.0,
+    "finite": true,
+    "peak_abs": 0.784907341003418,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.1076917958583551
+  },
+  "preview": {
+    "path": "work/0630-tempo-adjustment-20261023/preview/08-45acc3bc-30s-to-176bpm-working-preview.wav",
+    "sha256": "505e27292043163fa7cf6e5fa4bf639a29f63c9d508ca120119c97fcbe560922",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 1440001,
+    "duration_s": 30.000020833333334,
+    "finite": true,
+    "peak_abs": 0.78452467918396,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.10763907331284313
+  },
+  "expected_duration_s": 30.00681818181818,
+  "duration_difference_from_formula_s": -0.006797348484845145,
+  "original_automatic_classification": "uncertain",
+  "final_selection": false
+}

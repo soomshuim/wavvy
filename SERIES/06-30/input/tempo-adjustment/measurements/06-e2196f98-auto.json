@@ -1,0 +1,22 @@
+{
+  "candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+  "source": {
+    "kind": "recording",
+    "path": "work/0630-tempo-adjustment-20261023/preview/06-e2196f98-30s-to-176bpm-working-preview.wav",
+    "sha256": "9332ec28233e49d24f52a9f627f740ca9fe544e0fb535f700a3b90a7dc8f06b7",
+    "ffprobe_duration_seconds": 29.187
+  },
+  "duration_seconds": 29.187,
+  "methods": {
+    "essentia": "RhythmExtractor2013 multifeature; broad tempo 60-220",
+    "independent": "SciPy multi-band spectral-flux continuous-frequency peaks",
+    "local_change_check": "Overlapping 8-second low-attack beat grids, 4-second stride",
+    "boundary_margin_bpm": 0.2,
+    "note": "Margin is uncertainty allowance, not an extended acceptable BPM range.",
+    "scope": "Observed audio sample only; no unobserved-song tempo guarantee."
+  },
+  "classification": "uncertain",
+  "reasons": [
+    "short_or_nonfinite_audio"
+  ]
+}

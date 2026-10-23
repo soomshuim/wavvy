@@ -1,0 +1,41 @@
+{
+  "scope": "controller read-only direct check of failed first-song adaptive trial; no further render or listening verdict",
+  "errors": [],
+  "stats": {
+    "source": {
+      "sha256": "b1f9c36e5085786008d48f2385b537817f71835e4b54b3bf59e138c38733017a",
+      "sample_rate_hz": 48000,
+      "frames": 9523200,
+      "channels": 2,
+      "duration_s": 198.4,
+      "finite": true,
+      "clip_samples_abs_gte_1": 0
+    },
+    "output": {
+      "sha256": "7bc99715a740bcdedb5344cd1af580755df61ec909bb578a7b986e360b0d7aff",
+      "sample_rate_hz": 48000,
+      "frames": 10044599,
+      "channels": 2,
+      "duration_s": 209.26247916666668,
+      "finite": true,
+      "clip_samples_abs_gte_1": 0
+    }
+  },
+  "reproductions": [
+    {
+      "start_s": 0.0,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-adaptive-output-free-30s-000p000.json",
+      "raw_hash_matches": true,
+      "measurement_and_lattice_fits_match": true
+    },
+    {
+      "start_s": 179.26247916666668,
+      "raw_path": "SERIES/06-30/input/tempo-adjustment/measurements/track01-adaptive-output-free-30s-179p262.json",
+      "raw_hash_matches": true,
+      "measurement_and_lattice_fits_match": true
+    }
+  ],
+  "expected_s": 213.51453010782734,
+  "actual_minus_expected_s": -4.252050941160661,
+  "inside_target_claim": false
+}
