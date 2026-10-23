@@ -13,6 +13,7 @@ Purpose: 하네스가 문서/상태/산출물 충돌을 판정하기 위한 단�
 | 1 | `.ai/state.json` | active series, phase, next action, local artifact availability, current authoritative doc pointers | Machine-readable resume contract. Written only by `python3 wavvy.py state --write`. |
 | 2 | `SERIES/[series]/concept.md` | per-series concept, YouTube metadata, Final Track Sources or Final Selected Audio Sources declaration | Vocal source archive after `finalize-upload`; instrumental selection archive must point to its manifest. |
 | 2a | `SERIES/[series]/input/final-selected-audio-sources.json` (explicit instrumental opt-in only) | selected candidate IDs, WAV hashes, actual starts, and raw-prompt confirmation status | Checked against final selection, download manifest, report, source evidence, and WAV files. Unknown raw prompts stay `unverified`. |
+| 2b | `SERIES/[series]/input/subtitles.json` (timed vocal subtitles) | render report, approved timing map/SRT hashes, and separately observed manual-caption publication | `verify-subtitles` checks it against final lyrics, render timing, retained source evidence, and publication observations. |
 | 3 | `SERIES/[series]/output/report.json` | technical track durations, hashes, processing params | Local generated artifact. Regeneratable by `pack`. |
 | 4 | `MASTER/ai/RUNTIME_RULES.md` | runtime hard constraints, media execution cautions, approval/safety rules | Entry files route here; workflow details still live in `WORKFLOWS.md` / `cli/SPEC.md`. |
 | 5 | `MASTER/MANAGER.md` | quality gate hierarchy | Conservative fail when no lower rule applies. |
@@ -34,8 +35,8 @@ Purpose: 하네스가 문서/상태/산출물 충돌을 판정하기 위한 단�
 | `track_source_draft` | Track txt/source prompt work is active. |
 | `source_final` | Audio, metadata, report, and verified Final Track Sources or explicitly declared instrumental Final Selected Audio Sources are final enough for upload prep. |
 | `render_final` | Rendered video and upload CSV exist and match the current report. |
-| `upload_ready` | Rendered video and upload support artifacts are present. Vocal releases need subtitles; a verified instrumental selection archive exempts lyric subtitles. |
-| `uploaded` | YouTube upload is complete. Large local render artifacts may be deleted if upload completion is recorded in `concept.md`. |
+| `upload_ready` | Rendered video and upload support artifacts are present. Vocal releases need subtitles; videos longer than one hour need a validated timed SRT (`verify-subtitles --stage prepared`). A verified instrumental selection archive exempts lyric subtitles. |
+| `uploaded` | YouTube video upload is complete; this phase does not assert manual subtitle publication. Large local render artifacts may be deleted if upload completion is recorded in `concept.md`. |
 
 `output/final.mkv` absence is a blocker for `render_final`. It is also a blocker for `upload_ready` unless upload completion is already recorded. It is not a blocker for `source_final` or `uploaded`.
 

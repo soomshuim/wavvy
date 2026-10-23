@@ -142,4 +142,6 @@ concept 작성 완료 후 검증: 편곡지시 분리, 글자수, 타이틀/Desc
 
 > **SSOT: `MASTER/youtube/YOUTUBE.md` §9**
 
-Phase 1(Draft) → Phase 2(Final) 순서. 상세 절차는 YOUTUBE.md 참조.
+Phase 1(Draft) → Phase 2(Final) 순서. 새 제목은 `YOUTUBE.md`의 17:30 승인 제목을 작성 선례로 삼고, 실제 장르·감각적 훅·적합한 용도를 시리즈마다 다시 고른다. 기존 승인 제목은 형식 기본값을 이유로 바꾸지 않는다. 상세 절차는 YOUTUBE.md 참조.
+
+1시간 초과 보컬 영상은 원본 무시간 가사를 보존하고 검증된 타이밍 맵으로 시간 SRT를 준비한 뒤 `verify-subtitles --stage prepared`를 통과한다. 게시 후 실제 수동 자막의 `published` 검증은 영상 업로드 상태와 별도로 기록한다. 상세 절차는 `skills/wavvy-youtube-publish/references/timed-subtitles.md` 참조.

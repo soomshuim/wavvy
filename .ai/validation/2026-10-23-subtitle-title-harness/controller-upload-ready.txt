@@ -1,0 +1,80 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "upload-ready",
+  "result": "PASS",
+  "series": "SERIES/17-30",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "PASS",
+      "detail": "20 tracks"
+    },
+    {
+      "name": "concept_md_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_track_sources_or_source_map_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "report_json_present_or_source_map_ready",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "youtube_metadata_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_files_present",
+      "status": "PASS",
+      "detail": "20 audio files via input_tracks"
+    },
+    {
+      "name": "final_track_sources_match_report",
+      "status": "PASS",
+      "detail": "fts=20 report=20"
+    },
+    {
+      "name": "final_mkv_present_or_uploaded",
+      "status": "PASS",
+      "detail": "present"
+    },
+    {
+      "name": "upload_csv_present_or_uploaded",
+      "status": "PASS",
+      "detail": "present"
+    },
+    {
+      "name": "youtube_upload_status",
+      "status": "PASS",
+      "detail": "completed"
+    },
+    {
+      "name": "final_mkv_video_stream",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_mkv_audio_stream",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "subtitle_artifact_present_or_instrumental",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "long_vocal_timed_subtitles_prepared",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "warnings": [],
+  "blockers": []
+}

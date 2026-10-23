@@ -1,5 +1,17 @@
 ---
 HANDOFF: Codex -> 젠
+Date: 2026-10-23 (자막·제목 기본형 하네스 기록; 독립 검토 CLEAN)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 명시적 시각 맵에서 시간 자막 SRT를 생성·검증하고 준비/게시 상태를 분리했다. 1시간 초과 보컬 영상의 upload-ready는 검증된 시간 자막을 요구하며 uploaded는 영상 업로드 상태 그대로다. 제목은 감각적 음악 훅·실제 장르·다양하고 맞는 용도를 포함한 6구획을 작성 기본으로 두고 승인된 17:30 제목 및 기존 예외를 보존했다. 원래 YouTube 무시각 초안 오류의 정확한 원인은 미확정이고 전체 오디오 자동 정렬·전곡 청취를 주장하지 않는다.
+Current: 공식 state writer revision 79 `uploaded`, 자막 `prepared=verified`·`published=verified`다. 17:30의 게시 검증은 보존된 2026-10-23 Studio/공개 관찰과 다운로드를 재검증한 것이며 새 브라우저 관찰·재게시·제목 변경은 없다. [해시 대조](validation/2026-10-23-subtitle-title-harness/record-baseline-check.json)에서 SRT `29543de1…`(1,270구간·1,498행), 무시각 원고 `29cd296a…`, 썸네일 `634cbb9f…`, 업로드 CSV `bd63238f…`가 기준과 모두 같다.
+Verification: [원시 기록](validation/2026-10-23-subtitle-title-harness/)에 unit test 86개 PASS, ignored 산출물 없는 격리 복사본 18개 PASS, 기존 제목 17개 PASS, doctor·validate·verify-release·prepared/published·state·upload-ready/uploaded gate·스킬 형식 검사 PASS를 보존했다. [state writer 출력](validation/2026-10-23-subtitle-title-harness/record-state-write.json)을 보존했다. [이번 변경의 독립 검토](reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다.
+Next-TODO: 이번 요청 범위의 구현·검증·기록에 남은 일은 없다. 별도의 YouTube 재게시 작업은 계획되지 않았다.
+Commits: 코드·스킬·정책·검증 근거를 이 기록과 같은 작업 커밋으로 보존한다. 원격 반영 결과는 최종 응답에서 확인한다.
+---
+
+---
+HANDOFF: Codex -> 젠
 Date: 2026-10-23 (17:30 수동 한국어 자막 게시 완료)
 Project: ~/Project/wavvy
 Agent: Codex

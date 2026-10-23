@@ -128,6 +128,7 @@ modern rnb, modern r&b, neo soul, korean rnb, korean neo soul, feel good rnb, af
 
 ## Upload Status
 
+- **현재 자막 검증 상태 (2026-10-23)**: [유지 하네스 검증](../../.ai/validation/2026-10-23-subtitle-title-harness/)에서 기존 시간 맞춘 SRT의 `prepared`와 보존된 Studio/공개 게시 근거의 `published`가 각각 PASS했다. [독립 검토](../../.ai/reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 공식 state revision 79는 영상 `uploaded`를 유지하며 자막 `prepared=verified`·`published=verified`를 별도로 기록한다. 이는 저장된 2026-10-23 관찰의 재검증이며 새로운 브라우저 확인이나 자막 재게시가 아니다. 원래 무시각 초안 게시 오류의 원인은 미확정이다. [해시 대조](../../.ai/validation/2026-10-23-subtitle-title-harness/record-baseline-check.json)에서 SRT·무시각 원고·썸네일·업로드 CSV가 모두 기존 기준과 같다.
 - **YouTube upload completed**: 2026-10-22, Wavvy24 채널, 영상 ID `3HorT4OoDhg`. [공개 영상](https://www.youtube.com/watch?v=3HorT4OoDhg)은 시청 페이지에서 2:08:38 재생을 확인했다. [원시 관찰·화면 기록](input/validation/2026-10-22-youtube-upload/)에 업로드 1회, 업로드 MP4의 SHA-256 `0b00e158f497f4a6c9ca57ce36b1678f38a215b01b44ef3d07a2a8a881b09943`, 정확한 제목·설명 대조를 보존한다.
 - **즉시 공개 완료**: YouTube Studio의 공개 상태와 시청 페이지 재생을 확인했다. 예약 게시가 아니며 `17:30`은 시리즈 식별자다.
 - **일반 댓글 게시 완료**: 위 3줄 문안 1건을 Studio와 시청 페이지에서 확인했다. 고정하지 않았다.

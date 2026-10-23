@@ -34,6 +34,8 @@ from wavvy_harness.packaging import check_thumbnail_layout, packaging_contract
 from wavvy_harness.upload_copy import check_upload_copy
 from wavvy_harness.source import parse_track_source_fields
 from wavvy_harness.state import PHASES
+from wavvy_harness.subtitles import SubtitleError, prepare_timed, verify_prepared, verify_published
+from wavvy_harness.youtube_titles import validate_youtube_title
 
 
 # =============================================================================
@@ -2318,6 +2320,7 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
             ):
                 errors.append(f"Track {order:02d}: archived confirmed generation prompt differs")
     metadata = parse_concept_youtube_metadata(paths)
+    errors.extend(validate_youtube_title(metadata.get("title", ""), paths.base.name))
     if not paths.upload_csv.exists():
         errors.append("Missing output/upload.csv")
         upload_rows = []
@@ -2706,10 +2709,16 @@ def finalize_upload(path: Path, check: bool, keep_txt: bool, restore_from: Optio
 
 @cli.command("prepare-subtitles")
 @click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
-def prepare_subtitles(path: Path):
+@click.option('--timing-map', type=click.Path(exists=True, dir_okay=False, path_type=Path), default=None,
+              help='Approved explicit timing map for a timed SRT')
+def prepare_subtitles(path: Path, timing_map: Optional[Path]):
     """Create untimed Korean subtitles from finalized lyrics without overwriting edits."""
     paths = ProjectPaths(path)
     try:
+        if timing_map is not None:
+            payload = prepare_timed(paths.base, timing_map)
+            click.echo(f"Timed subtitles verified: {payload['srt']} ({payload['cues']} cues)")
+            return
         report, tracks = load_finalize_report(paths)
         repeat = int(report.get("processing_params", {}).get("repeat", 1))
         content = build_untimed_subtitles((paths.base / "concept.md").read_text(encoding="utf-8"), tracks, repeat)
@@ -2722,8 +2731,29 @@ def prepare_subtitles(path: Path):
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(content, encoding="utf-8")
         click.echo(f"Untimed subtitles written: {destination}")
-    except (FinalizeUploadError, OSError) as error:
+    except (FinalizeUploadError, SubtitleError, OSError) as error:
         raise click.ClickException(str(error)) from error
+
+
+@cli.command("verify-subtitles")
+@click.argument('path', type=click.Path(exists=True, file_okay=False, path_type=Path))
+@click.option('--stage', type=click.Choice(['prepared', 'published']), required=True)
+@click.option('--json', 'json_output', is_flag=True, help='Print machine-readable JSON')
+def verify_subtitles(path: Path, stage: str, json_output: bool):
+    """Verify prepared timed lyrics or independent manual publication evidence."""
+    try:
+        payload = verify_prepared(path) if stage == 'prepared' else verify_published(path)
+    except (SubtitleError, OSError, UnicodeError, KeyError, TypeError) as error:
+        payload = {"result": "FAIL", "stage": stage, "errors": [str(error)]}
+    payload = {"schema": "wavvy.subtitles.verify.v1", **payload}
+    if json_output:
+        click.echo(json.dumps(payload, ensure_ascii=False, indent=2))
+    else:
+        click.echo(f"VERIFY SUBTITLES {stage} {payload['result']}")
+        for error in payload.get('errors', []):
+            click.echo(f"- {error}")
+    if payload['result'] != 'PASS':
+        raise SystemExit(1)
 
 
 @cli.command("verify-release")

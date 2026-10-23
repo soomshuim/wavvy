@@ -913,6 +913,11 @@ def run_gate(
                 blockers.append("output/final.mkv missing audio stream")
         has_subtitle = artifacts["subtitle_txt"] == "present" or artifacts["subtitle_srt"] == "present"
         checks.append(_check("subtitle_artifact_present_or_instrumental", has_subtitle or (selected_opt_in and not selected_errors)))
+        if artifacts.get("timed_subtitles_required"):
+            timed_ready = artifacts.get("subtitle_prepared") == "verified"
+            checks.append(_check("long_vocal_timed_subtitles_prepared", timed_ready))
+            if not timed_ready:
+                blockers.append("long vocal video requires verified timed SRT before upload")
 
     if stage == "uploaded":
         checks.append(_check("youtube_upload_completed", artifacts["youtube_upload"] == "completed"))

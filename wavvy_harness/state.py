@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from .selected_audio import MANIFEST as SELECTED_AUDIO_MANIFEST, check_selected_audio
+from .subtitles import needs_timed_subtitles, subtitle_status
 
 
 PHASES = ["concept_draft", "track_source_draft", "source_final", "render_final", "upload_ready", "uploaded"]
@@ -191,6 +192,7 @@ def _infer_phase(artifact_status: dict[str, Any], concept_text: str, report: dic
         artifact_status.get("final_mkv") == "present"
         and artifact_status.get("upload_csv") == "present"
         and (artifact_status.get("subtitle_txt") == "present" or artifact_status.get("subtitle_srt") == "present")
+        and (not artifact_status.get("timed_subtitles_required") or artifact_status.get("subtitle_prepared") == "verified")
     ):
         return "upload_ready"
     if artifact_status.get("final_mkv") == "present" and artifact_status.get("upload_csv") == "present":
@@ -291,6 +293,12 @@ def build_state(
         "lyric_skill_package": "present" if all(status == "present" for status in lyric_skill_files.values()) else "missing",
         "lyric_skill_files": lyric_skill_files,
     }
+    selected_opt_in, selected_errors = check_selected_audio(series_path)
+    instrumental = selected_opt_in and not selected_errors
+    captions = subtitle_status(series_path, instrumental=instrumental)
+    artifact_status["subtitle_prepared"] = captions["prepared"]
+    artifact_status["subtitle_published"] = captions["published"]
+    artifact_status["timed_subtitles_required"] = needs_timed_subtitles(series_path, instrumental=instrumental)
 
     series_rel = series_path.relative_to(repo_root).as_posix() if series_path.is_relative_to(repo_root) else str(series_path)
     same_series = (previous_state or {}).get("active_series") == series_rel
@@ -313,7 +321,6 @@ def build_state(
             blocked_by.append("output/final.mkv missing for upload-ready stage")
         if artifact_status["upload_csv"] != "present":
             blocked_by.append("output/upload.csv missing for upload-ready stage")
-    selected_opt_in, selected_errors = check_selected_audio(series_path)
     if (
         selected_phase == "upload_ready"
         and artifact_status["youtube_upload"] != "completed"
@@ -322,6 +329,8 @@ def build_state(
         and not (selected_opt_in and not selected_errors)
     ):
         blocked_by.append("subtitle txt/srt missing for upload-ready stage")
+    if selected_phase == "upload_ready" and artifact_status["timed_subtitles_required"] and artifact_status["subtitle_prepared"] != "verified":
+        blocked_by.append("long vocal video requires verified timed SRT for upload-ready stage")
     if selected_phase == "uploaded" and artifact_status["youtube_upload"] != "completed":
         blocked_by.append("uploaded phase requires concept.md upload completion evidence")
 
@@ -336,6 +345,7 @@ def build_state(
         "inferred_phase": inferred_phase,
         "next_action": next_action,
         "artifact_status": artifact_status,
+        "subtitle_status": captions,
         "authoritative_docs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md"],
         "evidence_refs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md", *LYRIC_SKILL_EVIDENCE_REFS],
         "blocked_by": blocked_by,
@@ -430,6 +440,8 @@ def check_state(
         and not (selected_opt_in and not selected_errors)
     ):
         blockers.append("upload_ready requires subtitle txt or srt")
+    if phase == "upload_ready" and artifacts["timed_subtitles_required"] and artifacts["subtitle_prepared"] != "verified":
+        blockers.append("upload_ready requires verified timed SRT for long vocal video")
     if phase == "uploaded" and artifacts["youtube_upload"] != "completed":
         blockers.append("uploaded phase requires concept.md upload completion evidence")
 

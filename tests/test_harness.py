@@ -23,7 +23,7 @@ CONCEPT_FINAL = """# Test Series
 
 ### 제목
 ```text
-Playlist | 20:00 | Test | Wavvy
+Playlist | Test | Study | Wavvy | 20:00
 ```
 
 ### 설명
@@ -1538,7 +1538,7 @@ class ReleaseVerificationTests(unittest.TestCase):
             with (series / "output" / "upload.csv").open("w", newline="", encoding="utf-8") as stream:
                 writer = csv.DictWriter(stream, fieldnames=["video_path", "title", "description", "tags", "thumbnail_path", "visibility"])
                 writer.writeheader()
-                writer.writerow({"video_path": "final.mkv", "title": "Playlist | 20:00 | Test | Wavvy",
+                writer.writerow({"video_path": "final.mkv", "title": "Playlist | Test | Study | Wavvy | 20:00",
                                  "description": description, "tags": "tag1,tag2", "thumbnail_path": "thumb.jpg",
                                  "visibility": "private"})
             self.assertEqual(verify_release_package(paths), [])
@@ -1583,7 +1583,7 @@ class ReleaseVerificationTests(unittest.TestCase):
         (series / "concept.md").write_text(concept, encoding="utf-8")
         (series / "output" / "upload.csv").write_text(
             'video_path,title,description,tags,thumbnail_path,visibility\n'
-            'final.mkv,Playlist | 20:00 | Test | Wavvy,"' + description.replace("\n", "\n") + '","tag1,tag2",thumb.jpg,private\n',
+            'final.mkv,Playlist | Test | Study | Wavvy | 20:00,"' + description.replace("\n", "\n") + '","tag1,tag2",thumb.jpg,private\n',
             encoding="utf-8",
         )
         return series

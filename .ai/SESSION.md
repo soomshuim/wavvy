@@ -1,6 +1,14 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-23 (17:30 직접 한국어 자막 게시·공개 확인)
+> Last updated: 2026-10-23 (자막·제목 하네스 반영 및 기존 17:30 근거 재검증; 독립 검토 CLEAN)
+
+---
+
+## 2026-10-23 [CDX] 자막·제목 기본형의 유지 하네스 반영 (독립 검토 CLEAN)
+- 명시적 시각 맵으로 시간 맞춘 SRT를 생성·검증하는 `prepare-subtitles`와 준비/게시를 분리하는 `verify-subtitles --stage prepared|published`를 하네스·CLI·스킬에 반영했다. 1시간 초과 보컬 영상의 `upload-ready`는 준비 검증을 요구하고, `uploaded`는 영상 업로드 상태로 유지한다. 원문 가사를 자동 인식하거나 전곡 오디오를 자동 정렬·청취하는 기능은 아니다. 원래 YouTube 무시각 초안 게시 오류의 원인은 여전히 미확정이다.
+- 제목 기본은 `Playlist | 감각적 음악 훅 | 실제 장르 | 다양하고 맞는 용도 | Wavvy | 시간`의 6구획이다. 형식·길이 검증과 훅/장르/용도의 편집 판단을 구분하고, 확정된 17:30 제목·07:00 5구획·시간 없는 컴필레이션 예외를 보존했다. 공개 영상의 제목·영상·댓글을 다시 수정하지 않았다.
+- [검증 원시 기록](validation/2026-10-23-subtitle-title-harness/)에서 unit test 86개 PASS, ignored 산출물이 없는 격리 복사본 18개 PASS, 기존 시리즈 제목 17개 PASS다. 컴파일·doctor·17:30 validate/verify-release/state·prepared/published·upload-ready/uploaded gate·스킬 형식 검사도 PASS다. `published` PASS는 보존된 2026-10-23 Studio/공개 관찰·다운로드를 재검증한 결과이며 새 브라우저 관찰이나 재게시가 아니다.
+- [해시 재대조](validation/2026-10-23-subtitle-title-harness/record-baseline-check.json)에서 원본 SRT `29543de1…`(1,270구간·1,498행), 무시각 원고 `29cd296a…`, 썸네일 `634cbb9f…`, 업로드 CSV `bd63238f…`가 기존 기준과 모두 일치했다. [공식 state writer 출력](validation/2026-10-23-subtitle-title-harness/record-state-write.json)은 revision 79 `uploaded`, 자막 `prepared=verified`·`published=verified`다. [이번 변경의 독립 검토](reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 이번 요청 범위의 구현·검증·기록에 남은 일은 없다.
 
 ---
 
