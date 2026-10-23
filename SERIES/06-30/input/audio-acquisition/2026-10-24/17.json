@@ -1,0 +1,137 @@
+{
+  "order": 17,
+  "candidate_id": "fe8164a4-9a09-4bc0-8414-0f1ad368605b",
+  "method": "ScreenCaptureKit Aside application output; microphone=false",
+  "raw": {
+    "path": "work/0630-final-audio-capture-20261024/17-fe8164a4-raw.wav",
+    "sha256": "4306ab225c2c8aff464a5ebf8be67dcac3bf706a982e3ca22dd57925c7107e5d",
+    "duration_s": 210.32,
+    "size_bytes": 80766976,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9502321481704712,
+      "rms": 0.16247268430998588,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.5073958333333333,
+        "duration_s": 1.5073958333333333
+      },
+      {
+        "start_s": 209.396625,
+        "end_s": 209.95566666666667,
+        "duration_s": 0.5590416666666667
+      },
+      {
+        "start_s": 210.10695833333332,
+        "end_s": 210.32,
+        "duration_s": 0.21304166666666666
+      }
+    ],
+    "exact_zero_gaps_ge_0_02s": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.5073958333333333,
+        "duration_s": 1.5073958333333333
+      },
+      {
+        "start_s": 209.396625,
+        "end_s": 209.95566666666667,
+        "duration_s": 0.5590416666666667
+      },
+      {
+        "start_s": 210.10695833333332,
+        "end_s": 210.32,
+        "duration_s": 0.21304166666666666
+      }
+    ],
+    "near_silence_gaps_ge_0_02s_abs_le_1e_5": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.5083958333333334,
+        "duration_s": 1.5083958333333334
+      },
+      {
+        "start_s": 209.395625,
+        "end_s": 209.95675,
+        "duration_s": 0.561125
+      },
+      {
+        "start_s": 210.10597916666666,
+        "end_s": 210.32,
+        "duration_s": 0.21402083333333333
+      }
+    ]
+  },
+  "selected": {
+    "path": "work/0630-final-audio-capture-20261024/17-fe8164a4-original.wav",
+    "sha256": "4eece0075186df24d5dfb290e5bfe263a6286b1fd05fe8e1f5981ba66a4287ab",
+    "duration_s": 208.28,
+    "size_bytes": 79979578,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9502321481704712,
+      "rms": 0.1632664154360306,
+      "samples_abs_gte_1": 0
+    },
+    "opening_0_5s": {
+      "finite": true,
+      "peak": 0.2666398584842682,
+      "rms": 0.037117814230852114,
+      "samples_abs_gte_1": 0
+    },
+    "ending_0_5s": {
+      "finite": true,
+      "peak": 0.00192252139095217,
+      "rms": 5.769061957797953e-05,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 207.976625,
+        "end_s": 208.28,
+        "duration_s": 0.303375
+      }
+    ],
+    "exact_zero_gaps_ge_0_02s": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.08739583333333334,
+        "duration_s": 0.08739583333333334
+      },
+      {
+        "start_s": 207.976625,
+        "end_s": 208.28,
+        "duration_s": 0.303375
+      }
+    ],
+    "near_silence_gaps_ge_0_02s_abs_le_1e_5": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.08839583333333334,
+        "duration_s": 0.08839583333333334
+      },
+      {
+        "start_s": 207.975625,
+        "end_s": 208.28,
+        "duration_s": 0.304375
+      }
+    ]
+  },
+  "separation": {
+    "start_raw_s": 1.42,
+    "end_raw_s": 209.7,
+    "boundary_basis": "selected started raw1.50740, selected ended raw209.39663, next-song signal starts raw209.95567; crop raw209.70 in exterior silence",
+    "sample_exact_equality": true,
+    "interior_silence_removed": false
+  },
+  "ui_duration_s": 207.88
+}

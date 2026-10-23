@@ -1,0 +1,53 @@
+{
+  "scope": "Parent direct byte/crop/correlation checks for user-reported track12 interruption; source raw first take retained and excluded. No cause assignment between playback and capture callbacks.",
+  "first_raw_sha256": "e4a0f97545941fd7a6032d65aeb8f281155b7c8f9f3231884f5e5fcd37177bfc",
+  "second_raw_sha256": "29d515d6526f5f79ab152d9adaa8344db6e2b236253c15ab92831b000ca3cdc8",
+  "second_selected_sha256": "20b2c25f9f4771670386aca82b7a086194c72a062f7c2700bfae313f289b2393",
+  "sample_exact_crop": true,
+  "second_selected_duration_seconds": 211.45,
+  "second_selected_gaps_ge_100ms": [
+    {
+      "start_seconds": 211.246,
+      "end_seconds": 211.45,
+      "duration_seconds": 0.204
+    }
+  ],
+  "independent_correlation_at_reported_correspondences": [
+    {
+      "song_t_s": 15,
+      "offset_s": 4.015708333333333,
+      "cosine": 0.9995694433747693
+    },
+    {
+      "song_t_s": 40,
+      "offset_s": 4.015708333333333,
+      "cosine": 0.9992873492821486
+    },
+    {
+      "song_t_s": 55,
+      "offset_s": 4.015708333333333,
+      "cosine": 0.9991639005034825
+    },
+    {
+      "song_t_s": 65,
+      "offset_s": 4.151104166666666,
+      "cosine": 0.9997646024376172
+    },
+    {
+      "song_t_s": 100,
+      "offset_s": 4.151104166666666,
+      "cosine": 0.9900650489490425
+    },
+    {
+      "song_t_s": 150,
+      "offset_s": 4.151125,
+      "cosine": 0.9989484044124426
+    },
+    {
+      "song_t_s": 200,
+      "offset_s": 4.151125,
+      "cosine": 0.9988982351911838
+    }
+  ],
+  "errors": []
+}

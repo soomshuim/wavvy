@@ -1,0 +1,276 @@
+{
+  "scope": "single sparse atempo full-song output; technical proof, not listener approval",
+  "order": 15,
+  "candidate_id": "b9c055a2-3726-4073-a103-801dcfafd1bf",
+  "target_bpm": 176,
+  "approved_preview_basis_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-15-b9c055a2-30s-to-176bpm-working-preview.json",
+  "approved_preview_basis_sha256": "12b5e36be3e2b6b002a8c21165df6a2e0a06b300f4fe0f14586c357f379d736a",
+  "method": "FFmpeg asendcmd + atempo once on original full source; no audio slicing or joins",
+  "source": {
+    "path": "work/0630-final-audio-capture-20261024/15-b9c055a2-original.wav",
+    "sha256": "79a30d626da36eeb25397b52ffa703123717d449f313f474aec9c4d2374a05dc",
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 9598080,
+    "duration_seconds": 199.96,
+    "finite": true,
+    "peak_abs": 0.8048309683799744,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.15228415914029647,
+    "max_adjacent_frame_delta": 0.4275790750980377,
+    "first_second_rms": 0.05527761361824147,
+    "last_second_rms": 8.714891474920378e-05,
+    "last_100ms_rms": 0.0
+  },
+  "output": {
+    "path": "work/0630-final-audio-processing-20261024/15-b9c055a2-sparse-target176-full.wav",
+    "sha256": "d8680957539cec05739cac65e56605bfcbbb3c87d27d2b7330437fb5a4eb781e",
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 9875427,
+    "duration_seconds": 205.7380625,
+    "finite": true,
+    "peak_abs": 0.8045715093612671,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.1518739494768138,
+    "max_adjacent_frame_delta": 0.42737630009651184,
+    "first_second_rms": 0.055767575012963685,
+    "last_second_rms": 8.70233309589851e-05,
+    "last_100ms_rms": 0.0
+  },
+  "source_curve_path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-source-curve.json",
+  "source_curve_sha256": "ea9963fb45815d7f3aef87742d5397003e0ee8b5cc4509f93f74b5f48ddbc8de",
+  "commands_path": "work/0630-final-audio-processing-20261024/15-b9c055a2-sparse-target176-commands.txt",
+  "commands_sha256": "ea83816856b15707621d6b5179fe547406ac90b291b880effef0f59803ac3fea",
+  "command_count": 24,
+  "first_factor": 0.975344834275,
+  "ffmpeg_log_path": "work/0630-final-audio-processing-20261024/15-b9c055a2-sparse-target176-ffmpeg.log",
+  "ffmpeg_log_sha256": "ab4c9748768d6bdd3224ef8a46752b67fe6fc2dc76ef98f40f6ba03da97e6c3a",
+  "expected_integral_duration_seconds": 206.03454215908198,
+  "output_minus_integral_seconds": -0.2964796590819674,
+  "independent_30_second_windows": [
+    {
+      "start_seconds": 0,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-00.json",
+      "sha256": "d6bfe4bfc2b477f6c028fcb2fe6eadd0e012f46a8e326a4d00b0ba6759d250c3",
+      "high_grid_bpm": 352.511,
+      "half_grid_hypothesis_bpm": 176.2555,
+      "coherence": 0.769,
+      "span_seconds": 27.592,
+      "inlier_count": 141
+    },
+    {
+      "start_seconds": 30,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-01.json",
+      "sha256": "1831be01dd7b47aba3b630a1e36c18934fecd163a54bb40603809ad1a26daf82",
+      "high_grid_bpm": 352.453,
+      "half_grid_hypothesis_bpm": 176.2265,
+      "coherence": 0.923,
+      "span_seconds": 29.788,
+      "inlier_count": 165
+    },
+    {
+      "start_seconds": 60,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-02.json",
+      "sha256": "225c2cb36691e39a6e29345a19fdefff4de53c8f5eaae380e86cdcaac8c1b9cc",
+      "high_grid_bpm": 352.509,
+      "half_grid_hypothesis_bpm": 176.2545,
+      "coherence": 0.954,
+      "span_seconds": 29.62,
+      "inlier_count": 167
+    },
+    {
+      "start_seconds": 90,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-03.json",
+      "sha256": "b8d980d54a5123ec9c3d648dfc411a55834502ae79502e93290a77f2b0459a62",
+      "high_grid_bpm": 352.467,
+      "half_grid_hypothesis_bpm": 176.2335,
+      "coherence": 0.784,
+      "span_seconds": 29.764,
+      "inlier_count": 151
+    },
+    {
+      "start_seconds": 120,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-04.json",
+      "sha256": "97816444289d2be2e3749653c959777a562425dde0a6c00aa054ea9ade521ab5",
+      "high_grid_bpm": 352.44,
+      "half_grid_hypothesis_bpm": 176.22,
+      "coherence": 0.939,
+      "span_seconds": 29.784,
+      "inlier_count": 165
+    },
+    {
+      "start_seconds": 150,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-05.json",
+      "sha256": "e24eb17d1e1111b6f8df7850c1fb0b246b75c8babd45f540e11c1f1bb052418f",
+      "high_grid_bpm": 352.667,
+      "half_grid_hypothesis_bpm": 176.3335,
+      "coherence": 0.959,
+      "span_seconds": 29.77,
+      "inlier_count": 165
+    },
+    {
+      "start_seconds": 175.7380625,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track15-sparse-target176-free-30s-06.json",
+      "sha256": "f739f2f84d6769fee30715f4924348764b9c6292459072b3f165ad1417b9adcd",
+      "high_grid_bpm": 352.6,
+      "half_grid_hypothesis_bpm": 176.3,
+      "coherence": 0.977,
+      "span_seconds": 27.91,
+      "inlier_count": 160
+    }
+  ],
+  "all_windows_inside_target_plus_minus_1_bpm": true,
+  "command_boundary_checks": [
+    {
+      "source_command_seconds": 8,
+      "estimated_output_seconds": 8.190416666666666,
+      "local_one_second_rms": 0.11988890569862078,
+      "local_max_adjacent_frame_delta": 0.13192950189113617
+    },
+    {
+      "source_command_seconds": 16,
+      "estimated_output_seconds": 16.378916666666665,
+      "local_one_second_rms": 0.13455962571421953,
+      "local_max_adjacent_frame_delta": 0.30718955397605896
+    },
+    {
+      "source_command_seconds": 24,
+      "estimated_output_seconds": 24.564375,
+      "local_one_second_rms": 0.13374585272435624,
+      "local_max_adjacent_frame_delta": 0.21643930673599243
+    },
+    {
+      "source_command_seconds": 32,
+      "estimated_output_seconds": 32.75564583333333,
+      "local_one_second_rms": 0.1584419147951911,
+      "local_max_adjacent_frame_delta": 0.31159281730651855
+    },
+    {
+      "source_command_seconds": 40,
+      "estimated_output_seconds": 40.944833333333335,
+      "local_one_second_rms": 0.11427346236358951,
+      "local_max_adjacent_frame_delta": 0.3143736720085144
+    },
+    {
+      "source_command_seconds": 48,
+      "estimated_output_seconds": 49.1406875,
+      "local_one_second_rms": 0.16389184318311353,
+      "local_max_adjacent_frame_delta": 0.31484588980674744
+    },
+    {
+      "source_command_seconds": 56,
+      "estimated_output_seconds": 57.337604166666665,
+      "local_one_second_rms": 0.16120581361794162,
+      "local_max_adjacent_frame_delta": 0.3272072374820709
+    },
+    {
+      "source_command_seconds": 64,
+      "estimated_output_seconds": 65.53727083333334,
+      "local_one_second_rms": 0.1316759559445853,
+      "local_max_adjacent_frame_delta": 0.2829548120498657
+    },
+    {
+      "source_command_seconds": 72,
+      "estimated_output_seconds": 73.7421875,
+      "local_one_second_rms": 0.15175706584374157,
+      "local_max_adjacent_frame_delta": 0.2931235730648041
+    },
+    {
+      "source_command_seconds": 80,
+      "estimated_output_seconds": 81.94970833333333,
+      "local_one_second_rms": 0.15312311912712903,
+      "local_max_adjacent_frame_delta": 0.29048535227775574
+    },
+    {
+      "source_command_seconds": 88,
+      "estimated_output_seconds": 90.16591666666666,
+      "local_one_second_rms": 0.15124408487154842,
+      "local_max_adjacent_frame_delta": 0.2516126036643982
+    },
+    {
+      "source_command_seconds": 96,
+      "estimated_output_seconds": 98.38602083333333,
+      "local_one_second_rms": 0.14312242220227123,
+      "local_max_adjacent_frame_delta": 0.2705971598625183
+    },
+    {
+      "source_command_seconds": 104,
+      "estimated_output_seconds": 106.60772916666667,
+      "local_one_second_rms": 0.10775824925321066,
+      "local_max_adjacent_frame_delta": 0.2228497564792633
+    },
+    {
+      "source_command_seconds": 112,
+      "estimated_output_seconds": 114.8366875,
+      "local_one_second_rms": 0.1607722539803933,
+      "local_max_adjacent_frame_delta": 0.3232259452342987
+    },
+    {
+      "source_command_seconds": 120,
+      "estimated_output_seconds": 123.06152083333333,
+      "local_one_second_rms": 0.15930948178393153,
+      "local_max_adjacent_frame_delta": 0.24850459396839142
+    },
+    {
+      "source_command_seconds": 128,
+      "estimated_output_seconds": 131.29997916666667,
+      "local_one_second_rms": 0.15465740640842834,
+      "local_max_adjacent_frame_delta": 0.3374985456466675
+    },
+    {
+      "source_command_seconds": 136,
+      "estimated_output_seconds": 139.54985416666668,
+      "local_one_second_rms": 0.15738935682783853,
+      "local_max_adjacent_frame_delta": 0.2872384786605835
+    },
+    {
+      "source_command_seconds": 144,
+      "estimated_output_seconds": 147.817625,
+      "local_one_second_rms": 0.13079911459478827,
+      "local_max_adjacent_frame_delta": 0.25015294551849365
+    },
+    {
+      "source_command_seconds": 152,
+      "estimated_output_seconds": 156.10875,
+      "local_one_second_rms": 0.159738018762586,
+      "local_max_adjacent_frame_delta": 0.22350630164146423
+    },
+    {
+      "source_command_seconds": 160,
+      "estimated_output_seconds": 164.3749375,
+      "local_one_second_rms": 0.18713055352121746,
+      "local_max_adjacent_frame_delta": 0.32246196269989014
+    },
+    {
+      "source_command_seconds": 168,
+      "estimated_output_seconds": 172.63227083333334,
+      "local_one_second_rms": 0.11954926500255653,
+      "local_max_adjacent_frame_delta": 0.21096453070640564
+    },
+    {
+      "source_command_seconds": 176,
+      "estimated_output_seconds": 180.92141666666666,
+      "local_one_second_rms": 0.18332435944825282,
+      "local_max_adjacent_frame_delta": 0.3327740430831909
+    },
+    {
+      "source_command_seconds": 184,
+      "estimated_output_seconds": 189.20170833333333,
+      "local_one_second_rms": 0.2098250968052795,
+      "local_max_adjacent_frame_delta": 0.34974902868270874
+    },
+    {
+      "source_command_seconds": 192,
+      "estimated_output_seconds": 197.48854166666666,
+      "local_one_second_rms": 0.22220375958514738,
+      "local_max_adjacent_frame_delta": 0.41656333208084106
+    }
+  ],
+  "technical_errors": [],
+  "official_suno_download": false,
+  "full_output_listener_approval": false,
+  "remote_candidate_mutation": false
+}

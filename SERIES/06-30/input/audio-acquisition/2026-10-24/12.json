@@ -1,0 +1,84 @@
+{
+  "order": 12,
+  "candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+  "method": "ScreenCaptureKit Aside application output; microphone=false",
+  "raw": {
+    "path": "work/0630-final-audio-capture-20261024/12-704d6663-raw.wav",
+    "sha256": "e4a0f97545941fd7a6032d65aeb8f281155b7c8f9f3231884f5e5fcd37177bfc",
+    "duration_s": 222.4,
+    "size_bytes": 85405696,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9818350076675415,
+      "rms": 0.1370008598401149,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 0.0,
+        "end_s": 8.942604166666667,
+        "duration_s": 8.942604166666667
+      },
+      {
+        "start_s": 68.05660416666667,
+        "end_s": 68.1780625,
+        "duration_s": 0.12145833333333333
+      },
+      {
+        "start_s": 220.247125,
+        "end_s": 220.76883333333333,
+        "duration_s": 0.5217083333333333
+      }
+    ]
+  },
+  "selected": {
+    "path": "work/0630-final-audio-capture-20261024/12-704d6663-original.wav",
+    "sha256": "72ca6c1a48ebd759656c8858b524cc340e0b6fa4676ec0ccd599c7f46654cdff",
+    "duration_s": 211.65,
+    "size_bytes": 81273658,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9818350076675415,
+      "rms": 0.14022503534485647,
+      "samples_abs_gte_1": 0
+    },
+    "opening_0_5s": {
+      "finite": true,
+      "peak": 0.2520589828491211,
+      "rms": 0.03945573892022369,
+      "samples_abs_gte_1": 0
+    },
+    "ending_0_5s": {
+      "finite": true,
+      "peak": 0.03765168786048889,
+      "rms": 0.006854484342703244,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 59.206604166666665,
+        "end_s": 59.3280625,
+        "duration_s": 0.12145833333333333
+      },
+      {
+        "start_s": 211.397125,
+        "end_s": 211.65,
+        "duration_s": 0.252875
+      }
+    ]
+  },
+  "separation": {
+    "start_raw_s": 8.85,
+    "end_raw_s": 220.5,
+    "boundary_basis": "selected playback 211.16s ended true; first signal 8.94260s; target-to-next silent gap 220.24713-220.76883s; external crop only",
+    "sample_exact_equality": true,
+    "interior_silence_removed": false
+  },
+  "ui_duration_s": 211.16
+}

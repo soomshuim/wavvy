@@ -1,0 +1,77 @@
+{
+  "scope": "Parent direct first-packet identity/signal/crop checks and independent unseeded 30s remeasurement. No whole-song listener approval or whole-instant tempo certification.",
+  "track01_checks": [
+    {
+      "field": "source",
+      "sha256": "b1f9c36e5085786008d48f2385b537817f71835e4b54b3bf59e138c38733017a",
+      "frames": 9523200,
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "finite": true,
+      "clip_count": 0
+    },
+    {
+      "field": "output",
+      "sha256": "314ba0d981c8e273995fde15e819ee0d6f954350cc8b07fd2707ed59f5bde9fe",
+      "frames": 10236583,
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "finite": true,
+      "clip_count": 0
+    }
+  ],
+  "track01_expected_integral_duration_seconds": 213.55025454545455,
+  "track01_output_minus_integral_seconds": -0.2881087121212147,
+  "track01_independent_windows": [
+    {
+      "start_seconds": 0,
+      "half_grid_hypothesis_bpm": 175.8735,
+      "coherence": 0.803,
+      "span_seconds": 29.858
+    },
+    {
+      "start_seconds": 30,
+      "half_grid_hypothesis_bpm": 176.3095,
+      "coherence": 0.875,
+      "span_seconds": 29.598
+    },
+    {
+      "start_seconds": 60,
+      "half_grid_hypothesis_bpm": 176.232,
+      "coherence": 0.888,
+      "span_seconds": 29.81
+    },
+    {
+      "start_seconds": 90,
+      "half_grid_hypothesis_bpm": 176.306,
+      "coherence": 0.935,
+      "span_seconds": 29.946
+    },
+    {
+      "start_seconds": 120,
+      "half_grid_hypothesis_bpm": 176.23,
+      "coherence": 0.918,
+      "span_seconds": 29.47
+    },
+    {
+      "start_seconds": 150,
+      "half_grid_hypothesis_bpm": 176.1525,
+      "coherence": 0.949,
+      "span_seconds": 29.802
+    },
+    {
+      "start_seconds": 180,
+      "half_grid_hypothesis_bpm": 176.144,
+      "coherence": 0.946,
+      "span_seconds": 27.766
+    },
+    {
+      "start_seconds": 183.26214583333334,
+      "half_grid_hypothesis_bpm": 176.1655,
+      "coherence": 0.959,
+      "span_seconds": 24.542
+    }
+  ],
+  "track18_raw_to_source_sample_exact": true,
+  "errors": []
+}

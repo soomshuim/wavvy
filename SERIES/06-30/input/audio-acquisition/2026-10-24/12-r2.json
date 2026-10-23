@@ -1,0 +1,79 @@
+{
+  "order": 12,
+  "candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+  "method": "ScreenCaptureKit Aside application output; microphone=false",
+  "raw": {
+    "path": "work/0630-final-audio-capture-20261024/12-704d6663-r2-raw.wav",
+    "sha256": "29d515d6526f5f79ab152d9adaa8344db6e2b236253c15ab92831b000ca3cdc8",
+    "duration_s": 220.44,
+    "size_bytes": 84653056,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9715849161148071,
+      "rms": 0.13759297463662523,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 0.0,
+        "end_s": 4.926895833333333,
+        "duration_s": 4.926895833333333
+      },
+      {
+        "start_s": 216.096,
+        "end_s": 216.51104166666667,
+        "duration_s": 0.41504166666666664
+      },
+      {
+        "start_s": 217.857,
+        "end_s": 220.44,
+        "duration_s": 2.583
+      }
+    ]
+  },
+  "selected": {
+    "path": "work/0630-final-audio-capture-20261024/12-704d6663-r2-original.wav",
+    "sha256": "20b2c25f9f4771670386aca82b7a086194c72a062f7c2700bfae313f289b2393",
+    "duration_s": 211.45,
+    "size_bytes": 81196858,
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "stats": {
+      "finite": true,
+      "peak": 0.9715849161148071,
+      "rms": 0.14029942568481743,
+      "samples_abs_gte_1": 0
+    },
+    "opening_0_5s": {
+      "finite": true,
+      "peak": 0.2520589828491211,
+      "rms": 0.040174755357210545,
+      "samples_abs_gte_1": 0
+    },
+    "ending_0_5s": {
+      "finite": true,
+      "peak": 0.037679217755794525,
+      "rms": 0.007868706886607537,
+      "samples_abs_gte_1": 0
+    },
+    "exact_zero_gaps_ge_0_1s": [
+      {
+        "start_s": 211.246,
+        "end_s": 211.45,
+        "duration_s": 0.204
+      }
+    ]
+  },
+  "separation": {
+    "start_raw_s": 4.85,
+    "end_raw_s": 216.3,
+    "boundary_basis": "second full UI playback 211.16s; first signal 4.92690s; target-to-next silent gap 216.096-216.51104s; first take contains non-source 0.12146s interior gap",
+    "sample_exact_equality": true,
+    "interior_silence_removed": false
+  },
+  "ui_duration_s": 211.16
+}

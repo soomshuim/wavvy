@@ -1,0 +1,222 @@
+{
+  "scope": "read-only source tail assessment following sparse preflight stop; no output render or target-seeded fit",
+  "source_path": "work/0630-final-audio-capture-20261024/02-67d6a052-original.wav",
+  "source_sha256": "b9b0e9f6db0fadad1dfd0f4e0ae0a1d51e47e8e9fbfcbf6a523f78586eac6871",
+  "free_curve_path": "SERIES/06-30/input/audio-processing/2026-10-24/track02-sparse-source-8s-free-raw.json",
+  "free_curve_sha256": "8a04e562c400ea567e75ce2a60b81d315a32b3d723d4255f60692ee0bcc9d98f",
+  "eight_second_tail_windows": [
+    {
+      "source_start_s": 172,
+      "rms": 0.17002227597397968,
+      "peak": 0.8183128833770752,
+      "high_events": 47,
+      "high_event_step_median_s": 0.16199999999999992,
+      "high_event_step_p10_p90_s": [
+        0.15600000000000036,
+        0.17099999999999982
+      ],
+      "best_high_half_grid_bpm": 185.9575,
+      "best_high_coherence": 0.979,
+      "best_high_span_s": 7.75,
+      "best_high_inliers": 45
+    },
+    {
+      "source_start_s": 176,
+      "rms": 0.17736417102925195,
+      "peak": 0.8183128833770752,
+      "high_events": 46,
+      "high_event_step_median_s": 0.16199999999999992,
+      "high_event_step_p10_p90_s": [
+        0.1468000000000001,
+        0.1711999999999998
+      ],
+      "best_high_half_grid_bpm": 184.8365,
+      "best_high_coherence": 0.944,
+      "best_high_span_s": 7.478,
+      "best_high_inliers": 39
+    },
+    {
+      "source_start_s": 180,
+      "rms": 0.14442566864158735,
+      "peak": 0.7676488757133484,
+      "high_events": 36,
+      "high_event_step_median_s": 0.16399999999999998,
+      "high_event_step_p10_p90_s": [
+        0.14560000000000012,
+        0.33599999999999997
+      ],
+      "best_high_half_grid_bpm": 182.713,
+      "best_high_coherence": 0.768,
+      "best_high_span_s": 6.746,
+      "best_high_inliers": 24
+    },
+    {
+      "source_start_s": 184,
+      "rms": 0.0771537960127985,
+      "peak": 0.37308090925216675,
+      "high_events": 30,
+      "high_event_step_median_s": 0.17400000000000015,
+      "high_event_step_p10_p90_s": [
+        0.16199999999999998,
+        0.34640000000000004
+      ],
+      "best_high_half_grid_bpm": 177.242,
+      "best_high_coherence": 0.802,
+      "best_high_span_s": 5.578,
+      "best_high_inliers": 22
+    },
+    {
+      "source_start_s": 188,
+      "rms": 0.04806152336076807,
+      "peak": 0.2794484496116638,
+      "high_events": 23,
+      "high_event_step_median_s": 0.17400000000000027,
+      "high_event_step_p10_p90_s": [
+        0.16599999999999993,
+        0.3456
+      ],
+      "best_high_half_grid_bpm": 174.038,
+      "best_high_coherence": 0.989,
+      "best_high_span_s": 4.488,
+      "best_high_inliers": 23
+    },
+    {
+      "source_start_s": 190.05,
+      "rms": 0.0329744079437388,
+      "peak": 0.19456061720848083,
+      "high_events": 22,
+      "high_event_step_median_s": 0.17400000000000038,
+      "high_event_step_p10_p90_s": [
+        0.16400000000000003,
+        1.0
+      ],
+      "best_high_half_grid_bpm": 174.543,
+      "best_high_coherence": 0.933,
+      "best_high_span_s": 7.556,
+      "best_high_inliers": 18
+    }
+  ],
+  "one_second_rms": [
+    {
+      "start_s": 180,
+      "rms": 0.192117785649232,
+      "peak": 0.7607201337814331
+    },
+    {
+      "start_s": 181,
+      "rms": 0.1894146474211047,
+      "peak": 0.7676488757133484
+    },
+    {
+      "start_s": 182,
+      "rms": 0.21083707802509535,
+      "peak": 0.6900166869163513
+    },
+    {
+      "start_s": 183,
+      "rms": 0.1333019568289877,
+      "peak": 0.7032452821731567
+    },
+    {
+      "start_s": 184,
+      "rms": 0.08355520804239946,
+      "peak": 0.37308090925216675
+    },
+    {
+      "start_s": 185,
+      "rms": 0.08697053787636316,
+      "peak": 0.3149227499961853
+    },
+    {
+      "start_s": 186,
+      "rms": 0.09608483362683108,
+      "peak": 0.36389872431755066
+    },
+    {
+      "start_s": 187,
+      "rms": 0.0899094556369083,
+      "peak": 0.33130598068237305
+    },
+    {
+      "start_s": 188,
+      "rms": 0.07141341075459216,
+      "peak": 0.26600831747055054
+    },
+    {
+      "start_s": 189,
+      "rms": 0.06670920968648662,
+      "peak": 0.2794484496116638
+    },
+    {
+      "start_s": 190,
+      "rms": 0.0627262251995131,
+      "peak": 0.19456061720848083
+    },
+    {
+      "start_s": 191,
+      "rms": 0.047704716512760315,
+      "peak": 0.149651899933815
+    },
+    {
+      "start_s": 192,
+      "rms": 0.03433473585617062,
+      "peak": 0.1195492148399353
+    },
+    {
+      "start_s": 193,
+      "rms": 0.03501888837174893,
+      "peak": 0.12035223841667175
+    },
+    {
+      "start_s": 194,
+      "rms": 0.015696322431283542,
+      "peak": 0.05078615993261337
+    },
+    {
+      "start_s": 195,
+      "rms": 0.008209497983787234,
+      "peak": 0.0248427651822567
+    },
+    {
+      "start_s": 196,
+      "rms": 0.0011346941075477688,
+      "peak": 0.007034256123006344
+    },
+    {
+      "start_s": 197,
+      "rms": 9.439034950664918e-05,
+      "peak": 0.0033329047728329897
+    },
+    {
+      "start_s": 198,
+      "rms": 0.0,
+      "peak": 0.0
+    }
+  ],
+  "high_events_from_190p05_window_absolute_s": [
+    190.06,
+    190.20000000000002,
+    190.372,
+    190.55,
+    190.714,
+    190.888,
+    191.06,
+    191.238,
+    191.406,
+    191.58,
+    191.75,
+    191.928,
+    192.10000000000002,
+    192.274,
+    192.43800000000002,
+    192.626,
+    192.96800000000002,
+    193.882,
+    194.882,
+    195.882,
+    196.882,
+    197.756
+  ],
+  "last_nonzero_signal_s": 197.777375,
+  "conclusion": "180-193s retains decelerating beat through fade; after about193s weak approximately 1s-spaced residual events and sharply falling amplitude do not support a precise pulse. Strong-grid curve ends at center180s; no sparse output rendered."
+}

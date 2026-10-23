@@ -1,0 +1,29 @@
+{
+  "scope": "Parent file/signal checks and three unseeded 30s windows for track18 final output. Not whole-song listener approval or instantaneous BPM certification.",
+  "provenance_path": "SERIES/06-30/input/audio-processing/2026-10-24/track18-sparse-target173-full-provenance.json",
+  "provenance_sha256": "30fec5c433c96e60efba6d6af06dd15f13fb15c78560facb223bb75639ec1873",
+  "output_sha256": "7d348f9f9fc10f4c94918591bc982c4200d4cb4d1274ccd8defe7e073395f739",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "frames": 9677934,
+  "finite": true,
+  "clip_count": 0,
+  "windows": [
+    {
+      "start_seconds": 0,
+      "half_grid_hypothesis_bpm": 173.3185,
+      "coherence": 0.744
+    },
+    {
+      "start_seconds": 90,
+      "half_grid_hypothesis_bpm": 173.25,
+      "coherence": 0.904
+    },
+    {
+      "start_seconds": 171.623625,
+      "half_grid_hypothesis_bpm": 173.2005,
+      "coherence": 0.957
+    }
+  ],
+  "errors": []
+}

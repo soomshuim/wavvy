@@ -1,4 +1,41 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 선택 전곡 음원 확보 완료)
+Date: 2026-10-24
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 선택20곡의 최종 WAV20개와 Downloads 청취 사본20개·index.html을 저장하고 직접 전체 파일 검사·54개30초 박자 재측정·독립 Astra high 검토를 마쳤다. 총4134.9251875초이며 확정 Critical/High0·원칙 관찰 없음이다.
+Current: 공식 state writer revision84 track_source_draft, 실제 input/tracks 음원20개. 8·13·18은173목표, 다른보정15곡은176목표,5·20원속도 보존.12는 정상r2,14는 선택ID복원·젠추가1회승인후 성공r5만 채택했다.14 중간 끊김 검사에서 발견된 문제는 없다.13의 화면 로그 저장 예외와 모든 실패 원시는 보존했다.
+Verification: .ai/validation/2026-10-24-0630-parent-final-audio.json, .ai/reviews/2026-10-24-0630-final-audio-review.md, .ai/validation/2026-10-24-0630-post-review-finalization.json. 검토 뒤 마감은 상태·근거 필드만 변경하며 미디어·선택·목표는 불변이다. 모든순간 BPM·새전곡청취·source_final·발매완료를 주장하지 않는다.
+Delivery: ~/Downloads/wavvy-0630-final-audio-20261024/index.html
+Next-TODO: 요청받은20곡 음원 확보에 남은일은 없다. 아래 부모검사전·수집착수·일시중단 항목은 과거시점 이력이며 자동재개 과제가 아니다.
+---
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 최종 음원 입력 20곡 확보·부모 검사 전)
+Date: 2026-10-24
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 선택 ID 20개와 일치하는 입력 WAV 20개, 실제 사본 SHA·출처·곡별 예외가 든 download-manifest.json, Downloads 청취 폴더와 index.html을 만들었다.
+Current: 8·13·18번 173 목표, 다른 15곡 176 목표, 5·20번 원속도 보존. 12 r2·14 r5만 채택했고 14 복원/젠 추가 1회 승인/컨트롤러 r4 정지 이력을 보존했다. 원시 BPM·크레딧·선택 ID는 그대로다.
+Next-TODO: 부모의 전체 직접 검사, 신규 격리 검토, 공식 state writer 기록과 커밋·푸시가 남아 있다. 이 기록은 해당 단계 완료를 뜻하지 않는다.
+Verification: input/download-manifest.json의 20개 실제 입력·Downloads 사본 SHA 일치와 source/raw/processing 연결을 통합 담당이 확인했다. 전곡 모든 순간 BPM 또는 새 전곡 청취 승인은 주장하지 않는다.
+Delivery: /Users/zenkim_office/Downloads/wavvy-0630-final-audio-20261024/index.html
+Commits: 이 통합 단계에서 커밋·푸시는 실행하지 않았다.
+---
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 최종 음원 확보 진행)
+Date: 2026-10-24
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “모두 통과. 음원 최종 확보해.”로 정확한 173 목표 30초 비교본 8·13·18번과 원속도 전곡 녹음본 5·20번을 승인받았다. 선택 ID 20곡의 최종 WAV 수집과 검증을 진행한다.
+Current: [계획](plans/2026-10-24-0630-final-audio-acquisition.md)대로 8·13·18번은 이번 시리즈 한정 173 BPM 목표, 다른 15곡은 176 BPM 목표, 5·20번은 원속도 유지다. 기존 1·5·20번 원속도 전곡 작업본만 확보됐고 최종 input/tracks/ WAV와 download-manifest.json은 아직 없다. 20번 현행 ID와 옛 30초 전달 ID는 다르다. 8·13번 175 목표 파일은 미승인 비교 이력, 이전 176 승인본은 원래 SHA에만 유효하다. 전곡 BPM 인증·source_final 선언 없음. 공식 state revision83 track_source_draft.
+Next-TODO: 나머지 선택 ID 17개의 원속도 전곡 음원을 수집하고, 원본 보존 후 보정 목표에 맞춰 처리한다. 실제 파일 20개가 확인된 뒤 최종 WAV와 manifest를 작성·검증한다. pack·report·영상·썸네일은 이번 범위 밖이다.
+Verification: [승인·원장 대조](validation/2026-10-24-0630-final-audio-approval-check.json)에 새 승인 5개 파일의 SHA, 선택 ID 20개와 원장 비결정 필드 불변을 기록한다. 2026-10-23 기록은 당시 청취 대기 이력이며 이번 승인이 우선한다.
+Commits: 컨트롤러 검토 후 이번 작업 묶음에 한 번 반영한다. 큰 WAV는 로컬 경로에 보존한다.
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 청취·후속 저장 현행)
 Date: 2026-10-23
 Project: ~/Project/wavvy

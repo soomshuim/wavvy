@@ -1,0 +1,741 @@
+{
+  "scope": "track06 source-only mid-band special processing; frozen before one full render",
+  "source_path": "work/0630-final-audio-capture-20261024/06-e2196f98-original.wav",
+  "source_sha256": "38cd5c3940a42a0cea7aa2749c9790f83531b80c4cf71ac3940d01a997ec77e8",
+  "raw_curve_path": "SERIES/06-30/input/audio-processing/2026-10-24/track06-sparse-source-8s-free-raw.json",
+  "raw_curve_sha256": "18673fedd7c829139699269cf4d9df4d7851afe67251a5ac5953fe66c9e6f266",
+  "multiband_diagnostic_path": "SERIES/06-30/input/audio-processing/2026-10-24/track06-source-30s-multiband-diagnostic.json",
+  "multiband_diagnostic_sha256": "eb26739f79aeb2083c0a4edc6f1d72992763b31296bda4c68105f70e255ea6e2",
+  "analysis_band": "mid",
+  "analysis_band_selection_basis": "source-only high-band 8s strong anchors 19/49 with 76s gap; unchanged strong criteria in mid-band yield 42/49, first center16, last184, maximum gap8; source 30s mid and low fits/ACF/spectrum agree before target conversion",
+  "strong_criteria": {
+    "grid_bpm_open_range": [
+      300,
+      420
+    ],
+    "coherence_min": 0.7,
+    "span_seconds_min": 5,
+    "inliers_min": 25
+  },
+  "anchors": [
+    {
+      "center_source_seconds": 16,
+      "mid_grid_bpm": 342.44,
+      "pulse_hypothesis_bpm": 171.22,
+      "coherence": 0.918,
+      "span_seconds": 7.704,
+      "inlier_count": 36
+    },
+    {
+      "center_source_seconds": 20,
+      "mid_grid_bpm": 342.507,
+      "pulse_hypothesis_bpm": 171.2535,
+      "coherence": 0.92,
+      "span_seconds": 7.536,
+      "inlier_count": 37
+    },
+    {
+      "center_source_seconds": 24,
+      "mid_grid_bpm": 341.882,
+      "pulse_hypothesis_bpm": 170.941,
+      "coherence": 0.914,
+      "span_seconds": 7.898,
+      "inlier_count": 38
+    },
+    {
+      "center_source_seconds": 28,
+      "mid_grid_bpm": 341.983,
+      "pulse_hypothesis_bpm": 170.9915,
+      "coherence": 0.931,
+      "span_seconds": 7.724,
+      "inlier_count": 37
+    },
+    {
+      "center_source_seconds": 32,
+      "mid_grid_bpm": 342.355,
+      "pulse_hypothesis_bpm": 171.1775,
+      "coherence": 0.962,
+      "span_seconds": 7.896,
+      "inlier_count": 41
+    },
+    {
+      "center_source_seconds": 36,
+      "mid_grid_bpm": 342.002,
+      "pulse_hypothesis_bpm": 171.001,
+      "coherence": 0.951,
+      "span_seconds": 7.718,
+      "inlier_count": 41
+    },
+    {
+      "center_source_seconds": 40,
+      "mid_grid_bpm": 341.845,
+      "pulse_hypothesis_bpm": 170.9225,
+      "coherence": 0.968,
+      "span_seconds": 7.726,
+      "inlier_count": 42
+    },
+    {
+      "center_source_seconds": 44,
+      "mid_grid_bpm": 341.385,
+      "pulse_hypothesis_bpm": 170.6925,
+      "coherence": 0.956,
+      "span_seconds": 7.914,
+      "inlier_count": 43
+    },
+    {
+      "center_source_seconds": 48,
+      "mid_grid_bpm": 340.247,
+      "pulse_hypothesis_bpm": 170.1235,
+      "coherence": 0.921,
+      "span_seconds": 7.936,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 52,
+      "mid_grid_bpm": 340.232,
+      "pulse_hypothesis_bpm": 170.116,
+      "coherence": 0.87,
+      "span_seconds": 7.408,
+      "inlier_count": 38
+    },
+    {
+      "center_source_seconds": 56,
+      "mid_grid_bpm": 340.889,
+      "pulse_hypothesis_bpm": 170.4445,
+      "coherence": 0.911,
+      "span_seconds": 7.742,
+      "inlier_count": 40
+    },
+    {
+      "center_source_seconds": 60,
+      "mid_grid_bpm": 341.626,
+      "pulse_hypothesis_bpm": 170.813,
+      "coherence": 0.971,
+      "span_seconds": 7.904,
+      "inlier_count": 43
+    },
+    {
+      "center_source_seconds": 64,
+      "mid_grid_bpm": 341.653,
+      "pulse_hypothesis_bpm": 170.8265,
+      "coherence": 0.993,
+      "span_seconds": 7.902,
+      "inlier_count": 45
+    },
+    {
+      "center_source_seconds": 68,
+      "mid_grid_bpm": 341.98,
+      "pulse_hypothesis_bpm": 170.99,
+      "coherence": 0.894,
+      "span_seconds": 7.71,
+      "inlier_count": 37
+    },
+    {
+      "center_source_seconds": 72,
+      "mid_grid_bpm": 344.595,
+      "pulse_hypothesis_bpm": 172.2975,
+      "coherence": 0.865,
+      "span_seconds": 7.802,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 76,
+      "mid_grid_bpm": 343.84,
+      "pulse_hypothesis_bpm": 171.92,
+      "coherence": 0.866,
+      "span_seconds": 7.33,
+      "inlier_count": 37
+    },
+    {
+      "center_source_seconds": 84,
+      "mid_grid_bpm": 344.067,
+      "pulse_hypothesis_bpm": 172.0335,
+      "coherence": 0.714,
+      "span_seconds": 7.85,
+      "inlier_count": 32
+    },
+    {
+      "center_source_seconds": 88,
+      "mid_grid_bpm": 344.158,
+      "pulse_hypothesis_bpm": 172.079,
+      "coherence": 0.936,
+      "span_seconds": 7.674,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 92,
+      "mid_grid_bpm": 344.458,
+      "pulse_hypothesis_bpm": 172.229,
+      "coherence": 0.98,
+      "span_seconds": 7.828,
+      "inlier_count": 43
+    },
+    {
+      "center_source_seconds": 96,
+      "mid_grid_bpm": 344.584,
+      "pulse_hypothesis_bpm": 172.292,
+      "coherence": 0.999,
+      "span_seconds": 7.832,
+      "inlier_count": 46
+    },
+    {
+      "center_source_seconds": 100,
+      "mid_grid_bpm": 344.906,
+      "pulse_hypothesis_bpm": 172.453,
+      "coherence": 0.999,
+      "span_seconds": 7.832,
+      "inlier_count": 46
+    },
+    {
+      "center_source_seconds": 104,
+      "mid_grid_bpm": 344.635,
+      "pulse_hypothesis_bpm": 172.3175,
+      "coherence": 0.944,
+      "span_seconds": 7.66,
+      "inlier_count": 42
+    },
+    {
+      "center_source_seconds": 108,
+      "mid_grid_bpm": 343.806,
+      "pulse_hypothesis_bpm": 171.903,
+      "coherence": 0.808,
+      "span_seconds": 7.858,
+      "inlier_count": 34
+    },
+    {
+      "center_source_seconds": 112,
+      "mid_grid_bpm": 343.823,
+      "pulse_hypothesis_bpm": 171.9115,
+      "coherence": 0.923,
+      "span_seconds": 7.836,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 116,
+      "mid_grid_bpm": 343.702,
+      "pulse_hypothesis_bpm": 171.851,
+      "coherence": 0.992,
+      "span_seconds": 7.834,
+      "inlier_count": 45
+    },
+    {
+      "center_source_seconds": 120,
+      "mid_grid_bpm": 343.883,
+      "pulse_hypothesis_bpm": 171.9415,
+      "coherence": 0.983,
+      "span_seconds": 7.678,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 124,
+      "mid_grid_bpm": 343.904,
+      "pulse_hypothesis_bpm": 171.952,
+      "coherence": 0.96,
+      "span_seconds": 7.852,
+      "inlier_count": 34
+    },
+    {
+      "center_source_seconds": 128,
+      "mid_grid_bpm": 344.392,
+      "pulse_hypothesis_bpm": 172.196,
+      "coherence": 0.983,
+      "span_seconds": 7.84,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 132,
+      "mid_grid_bpm": 345.016,
+      "pulse_hypothesis_bpm": 172.508,
+      "coherence": 0.964,
+      "span_seconds": 7.652,
+      "inlier_count": 38
+    },
+    {
+      "center_source_seconds": 136,
+      "mid_grid_bpm": 345.468,
+      "pulse_hypothesis_bpm": 172.734,
+      "coherence": 0.939,
+      "span_seconds": 7.818,
+      "inlier_count": 34
+    },
+    {
+      "center_source_seconds": 140,
+      "mid_grid_bpm": 345.722,
+      "pulse_hypothesis_bpm": 172.861,
+      "coherence": 0.956,
+      "span_seconds": 7.456,
+      "inlier_count": 38
+    },
+    {
+      "center_source_seconds": 144,
+      "mid_grid_bpm": 343.002,
+      "pulse_hypothesis_bpm": 171.501,
+      "coherence": 0.953,
+      "span_seconds": 7.858,
+      "inlier_count": 42
+    },
+    {
+      "center_source_seconds": 148,
+      "mid_grid_bpm": 343.131,
+      "pulse_hypothesis_bpm": 171.5655,
+      "coherence": 0.919,
+      "span_seconds": 7.514,
+      "inlier_count": 40
+    },
+    {
+      "center_source_seconds": 152,
+      "mid_grid_bpm": 343.535,
+      "pulse_hypothesis_bpm": 171.7675,
+      "coherence": 0.882,
+      "span_seconds": 7.844,
+      "inlier_count": 35
+    },
+    {
+      "center_source_seconds": 156,
+      "mid_grid_bpm": 343.829,
+      "pulse_hypothesis_bpm": 171.9145,
+      "coherence": 0.903,
+      "span_seconds": 7.854,
+      "inlier_count": 34
+    },
+    {
+      "center_source_seconds": 160,
+      "mid_grid_bpm": 344.25,
+      "pulse_hypothesis_bpm": 172.125,
+      "coherence": 0.976,
+      "span_seconds": 7.842,
+      "inlier_count": 42
+    },
+    {
+      "center_source_seconds": 164,
+      "mid_grid_bpm": 344.781,
+      "pulse_hypothesis_bpm": 172.3905,
+      "coherence": 0.998,
+      "span_seconds": 7.83,
+      "inlier_count": 46
+    },
+    {
+      "center_source_seconds": 168,
+      "mid_grid_bpm": 345.62,
+      "pulse_hypothesis_bpm": 172.81,
+      "coherence": 0.997,
+      "span_seconds": 7.816,
+      "inlier_count": 45
+    },
+    {
+      "center_source_seconds": 172,
+      "mid_grid_bpm": 346.004,
+      "pulse_hypothesis_bpm": 173.002,
+      "coherence": 0.992,
+      "span_seconds": 7.802,
+      "inlier_count": 40
+    },
+    {
+      "center_source_seconds": 176,
+      "mid_grid_bpm": 346.698,
+      "pulse_hypothesis_bpm": 173.349,
+      "coherence": 0.963,
+      "span_seconds": 7.768,
+      "inlier_count": 41
+    },
+    {
+      "center_source_seconds": 180,
+      "mid_grid_bpm": 346.843,
+      "pulse_hypothesis_bpm": 173.4215,
+      "coherence": 0.965,
+      "span_seconds": 7.958,
+      "inlier_count": 39
+    },
+    {
+      "center_source_seconds": 184,
+      "mid_grid_bpm": 347.282,
+      "pulse_hypothesis_bpm": 173.641,
+      "coherence": 0.965,
+      "span_seconds": 7.776,
+      "inlier_count": 41
+    }
+  ],
+  "weak_windows": [
+    {
+      "center_source_seconds": 4,
+      "best_mid_fit": {
+        "seed": 339.203,
+        "band": "mid",
+        "bpm_fit": 337.863,
+        "coherence": 0.556,
+        "inlier_count": 25,
+        "span_s": 7.286,
+        "observed_10s_estimates": [
+          337.863
+        ],
+        "residual_p90_ms": 20.48,
+        "first_actual_events_s": [
+          0.158,
+          0.354,
+          0.494,
+          0.698,
+          1.056,
+          1.406,
+          1.6,
+          1.764
+        ],
+        "last_actual_events_s": [
+          5.846,
+          6.72,
+          6.916,
+          7.262,
+          7.444
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 8,
+      "best_mid_fit": {
+        "seed": 307.031,
+        "band": "mid",
+        "bpm_fit": 308.5,
+        "coherence": 0.397,
+        "inlier_count": 21,
+        "span_s": 7.816,
+        "observed_10s_estimates": [
+          308.5
+        ],
+        "residual_p90_ms": 16.48,
+        "first_actual_events_s": [
+          0.15,
+          0.768,
+          1.15,
+          2.332,
+          2.516,
+          2.72,
+          2.916,
+          3.11
+        ],
+        "last_actual_events_s": [
+          6.812,
+          6.982,
+          7.572,
+          7.766,
+          7.966
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 12,
+      "best_mid_fit": {
+        "seed": 343.323,
+        "band": "mid",
+        "bpm_fit": 344.722,
+        "coherence": 0.478,
+        "inlier_count": 25,
+        "span_s": 7.822,
+        "observed_10s_estimates": [
+          344.722
+        ],
+        "residual_p90_ms": 14.42,
+        "first_actual_events_s": [
+          0.16,
+          0.67,
+          0.858,
+          1.18,
+          3.966,
+          4.13,
+          4.482,
+          4.652
+        ],
+        "last_actual_events_s": [
+          7.278,
+          7.45,
+          7.63,
+          7.798,
+          7.982
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 80,
+      "best_mid_fit": {
+        "seed": 342.407,
+        "band": "mid",
+        "bpm_fit": 344.156,
+        "coherence": 0.676,
+        "inlier_count": 31,
+        "span_s": 7.676,
+        "observed_10s_estimates": [
+          344.156
+        ],
+        "residual_p90_ms": 4.69,
+        "first_actual_events_s": [
+          0.01,
+          0.184,
+          0.358,
+          0.546,
+          0.724,
+          0.884,
+          1.058,
+          1.406
+        ],
+        "last_actual_events_s": [
+          6.808,
+          6.984,
+          7.158,
+          7.506,
+          7.686
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 188,
+      "best_mid_fit": {
+        "seed": 341.034,
+        "band": "mid",
+        "bpm_fit": 343.584,
+        "coherence": 0.729,
+        "inlier_count": 22,
+        "span_s": 7.324,
+        "observed_10s_estimates": [
+          343.584
+        ],
+        "residual_p90_ms": 14.11,
+        "first_actual_events_s": [
+          0.672,
+          1.004,
+          1.19,
+          1.364,
+          1.516,
+          1.71,
+          1.882,
+          2.226
+        ],
+        "last_actual_events_s": [
+          5.202,
+          5.38,
+          6.084,
+          7.15,
+          7.996
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 192,
+      "best_mid_fit": {
+        "seed": 329.33,
+        "band": "mid",
+        "bpm_fit": 335.471,
+        "coherence": 0.286,
+        "inlier_count": 16,
+        "span_s": 5.54,
+        "observed_10s_estimates": [
+          335.471
+        ],
+        "residual_p90_ms": 19.98,
+        "first_actual_events_s": [
+          0.312,
+          0.672,
+          1.036,
+          1.202,
+          1.38,
+          1.934,
+          2.084,
+          2.806
+        ],
+        "last_actual_events_s": [
+          3.868,
+          4.614,
+          4.964,
+          5.682,
+          5.852
+        ]
+      }
+    },
+    {
+      "center_source_seconds": 193.94,
+      "best_mid_fit": {
+        "seed": 329.187,
+        "band": "mid",
+        "bpm_fit": 326.056,
+        "coherence": 0.26,
+        "inlier_count": 11,
+        "span_s": 5.334,
+        "observed_10s_estimates": [
+          326.056
+        ],
+        "residual_p90_ms": 14.35,
+        "first_actual_events_s": [
+          0.488,
+          0.866,
+          1.21,
+          2.514,
+          2.674,
+          3.248,
+          3.786,
+          5.094
+        ],
+        "last_actual_events_s": [
+          3.786,
+          5.094,
+          5.458,
+          5.622,
+          5.822
+        ]
+      }
+    }
+  ],
+  "source_after_last_strong_center": "final mid-band factor held through fading end; independent short-pulse inference not claimed",
+  "target_bpm": 176,
+  "factor_formula": "target/(source_mid_grid_bpm/2)",
+  "command_interval_source_seconds": 8,
+  "intervals": [
+    {
+      "source_start_seconds": 0,
+      "source_end_seconds": 8,
+      "source_pulse_hypothesis_bpm": 171.22,
+      "factor": 1.027917299381
+    },
+    {
+      "source_start_seconds": 8,
+      "source_end_seconds": 16,
+      "source_pulse_hypothesis_bpm": 171.22,
+      "factor": 1.027917299381
+    },
+    {
+      "source_start_seconds": 16,
+      "source_end_seconds": 24,
+      "source_pulse_hypothesis_bpm": 171.2535,
+      "factor": 1.027716221858
+    },
+    {
+      "source_start_seconds": 24,
+      "source_end_seconds": 32,
+      "source_pulse_hypothesis_bpm": 170.9915,
+      "factor": 1.029290929666
+    },
+    {
+      "source_start_seconds": 32,
+      "source_end_seconds": 40,
+      "source_pulse_hypothesis_bpm": 171.001,
+      "factor": 1.029233747171
+    },
+    {
+      "source_start_seconds": 40,
+      "source_end_seconds": 48,
+      "source_pulse_hypothesis_bpm": 170.6925,
+      "factor": 1.031093926212
+    },
+    {
+      "source_start_seconds": 48,
+      "source_end_seconds": 56,
+      "source_pulse_hypothesis_bpm": 170.116,
+      "factor": 1.034588163371
+    },
+    {
+      "source_start_seconds": 56,
+      "source_end_seconds": 64,
+      "source_pulse_hypothesis_bpm": 170.813,
+      "factor": 1.030366541188
+    },
+    {
+      "source_start_seconds": 64,
+      "source_end_seconds": 72,
+      "source_pulse_hypothesis_bpm": 170.99,
+      "factor": 1.029299959062
+    },
+    {
+      "source_start_seconds": 72,
+      "source_end_seconds": 80,
+      "source_pulse_hypothesis_bpm": 171.92,
+      "factor": 1.023731968357
+    },
+    {
+      "source_start_seconds": 80,
+      "source_end_seconds": 88,
+      "source_pulse_hypothesis_bpm": 172.0335,
+      "factor": 1.023056555845
+    },
+    {
+      "source_start_seconds": 88,
+      "source_end_seconds": 96,
+      "source_pulse_hypothesis_bpm": 172.229,
+      "factor": 1.021895267348
+    },
+    {
+      "source_start_seconds": 96,
+      "source_end_seconds": 104,
+      "source_pulse_hypothesis_bpm": 172.453,
+      "factor": 1.020567922854
+    },
+    {
+      "source_start_seconds": 104,
+      "source_end_seconds": 112,
+      "source_pulse_hypothesis_bpm": 171.903,
+      "factor": 1.023833208263
+    },
+    {
+      "source_start_seconds": 112,
+      "source_end_seconds": 120,
+      "source_pulse_hypothesis_bpm": 171.851,
+      "factor": 1.024143007605
+    },
+    {
+      "source_start_seconds": 120,
+      "source_end_seconds": 128,
+      "source_pulse_hypothesis_bpm": 171.952,
+      "factor": 1.023541453429
+    },
+    {
+      "source_start_seconds": 128,
+      "source_end_seconds": 136,
+      "source_pulse_hypothesis_bpm": 172.508,
+      "factor": 1.020242539476
+    },
+    {
+      "source_start_seconds": 136,
+      "source_end_seconds": 144,
+      "source_pulse_hypothesis_bpm": 172.861,
+      "factor": 1.018159098929
+    },
+    {
+      "source_start_seconds": 144,
+      "source_end_seconds": 152,
+      "source_pulse_hypothesis_bpm": 171.5655,
+      "factor": 1.025847271159
+    },
+    {
+      "source_start_seconds": 152,
+      "source_end_seconds": 160,
+      "source_pulse_hypothesis_bpm": 171.9145,
+      "factor": 1.023764720253
+    },
+    {
+      "source_start_seconds": 160,
+      "source_end_seconds": 168,
+      "source_pulse_hypothesis_bpm": 172.3905,
+      "factor": 1.020937928714
+    },
+    {
+      "source_start_seconds": 168,
+      "source_end_seconds": 176,
+      "source_pulse_hypothesis_bpm": 173.002,
+      "factor": 1.01732927943
+    },
+    {
+      "source_start_seconds": 176,
+      "source_end_seconds": 184,
+      "source_pulse_hypothesis_bpm": 173.4215,
+      "factor": 1.01486839867
+    },
+    {
+      "source_start_seconds": 184,
+      "source_end_seconds": 192,
+      "source_pulse_hypothesis_bpm": 173.641,
+      "factor": 1.01358550112
+    },
+    {
+      "source_start_seconds": 192,
+      "source_end_seconds": 197.94,
+      "source_pulse_hypothesis_bpm": 173.641,
+      "factor": 1.01358550112
+    }
+  ],
+  "expected_integral_duration_seconds": 193.31233829547824
+}

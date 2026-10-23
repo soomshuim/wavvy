@@ -1,0 +1,418 @@
+{
+  "scope": "track11 single frozen source-only mid sparse full render; technical proof only",
+  "order": 11,
+  "candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+  "target_bpm": 176,
+  "approved_preview_basis_path": "SERIES/06-30/input/tempo-adjustment/2026-10-23-11-4aebcc2f-30s-to-176bpm-working-preview.json",
+  "approved_preview_basis_sha256": "a27516c4188d5ccf346f8bfaaa707c79996a90448a9e817e028b2732fc16e559",
+  "method": "FFmpeg asendcmd + atempo once on original full source; no audio slicing or joins",
+  "analysis_band": "mid",
+  "source": {
+    "path": "work/0630-final-audio-capture-20261024/11-4aebcc2f-original.wav",
+    "sha256": "9a5fb9ad9c93128e724d501e3520ccfc2d5c7cbe2ab0f59a894933c8284fd5fa",
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 9272160,
+    "duration_seconds": 193.17,
+    "finite": true,
+    "peak_abs": 0.9348620772361755,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.18701593387845217,
+    "max_adjacent_frame_delta": 0.37260016798973083,
+    "first_second_rms": 0.10100254729549907,
+    "last_second_rms": 0.00012244205284244123,
+    "last_100ms_rms": 0.0
+  },
+  "output": {
+    "path": "work/0630-final-audio-processing-20261024/11-4aebcc2f-mid-sparse-target176-full.wav",
+    "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+    "codec": "pcm_f32le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "frames": 9300784,
+    "duration_seconds": 193.76633333333334,
+    "finite": true,
+    "peak_abs": 0.9341465830802917,
+    "clip_samples_abs_gte_1": 0,
+    "rms": 0.18679303902762764,
+    "max_adjacent_frame_delta": 0.3723212778568268,
+    "first_second_rms": 0.10142303059990482,
+    "last_second_rms": 0.00012967937484036383,
+    "last_100ms_rms": 0.0
+  },
+  "source_curve_path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-source-curve.json",
+  "source_curve_sha256": "4f628a12e1931e56fa82c9476ad3f60ebc44ed1608b66fc61b91a229714479ae",
+  "commands_path": "work/0630-final-audio-processing-20261024/11-4aebcc2f-mid-sparse-target176-commands.txt",
+  "commands_sha256": "b32ce3a3e3f38127f6103d952133233fb8e27a059a926929e42c0ed1fe713d52",
+  "command_count": 24,
+  "first_factor": 0.990937984736,
+  "ffmpeg_log_path": "work/0630-final-audio-processing-20261024/11-4aebcc2f-mid-sparse-target176-ffmpeg.log",
+  "ffmpeg_log_sha256": "004b01a4bf8ea2187edb1a392b3e6197a3a136fde143bdcc06d431169ab8bea5",
+  "expected_integral_duration_seconds": 193.876994280286,
+  "output_minus_integral_seconds": -0.11066094695266315,
+  "independent_30_second_windows": [
+    {
+      "start_seconds": 0,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-00.json",
+      "sha256": "cdf4028ac1d43714aa56a902e2eac97a8b373fc83a5926091c352e0170eeb596",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 176.7645,
+      "coherence": 0.606,
+      "span_seconds": 29.854,
+      "inlier_count": 91,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 176.919,
+          "coherence": 0.649,
+          "span_seconds": 29.844,
+          "inlier_count": 97
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 176.7645,
+          "coherence": 0.606,
+          "span_seconds": 29.854,
+          "inlier_count": 91
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 176.263,
+          "coherence": 0.58,
+          "span_seconds": 27.738,
+          "inlier_count": 66
+        }
+      }
+    },
+    {
+      "start_seconds": 30,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-01.json",
+      "sha256": "b01e4e9180289c0b509e82dec530dcef9c7a7dfbe3166b863aa32782afb5b56a",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 176.236,
+      "coherence": 0.793,
+      "span_seconds": 29.806,
+      "inlier_count": 130,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 176.206,
+          "coherence": 0.665,
+          "span_seconds": 29.972,
+          "inlier_count": 112
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 176.236,
+          "coherence": 0.793,
+          "span_seconds": 29.806,
+          "inlier_count": 130
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 176.2415,
+          "coherence": 0.645,
+          "span_seconds": 29.976,
+          "inlier_count": 91
+        }
+      }
+    },
+    {
+      "start_seconds": 60,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-02.json",
+      "sha256": "92060294954065a831c67aa314ef908454cffc846b391994556d0e145c3c8be1",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 176.033,
+      "coherence": 0.89,
+      "span_seconds": 29.498,
+      "inlier_count": 133,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 176.005,
+          "coherence": 0.817,
+          "span_seconds": 29.834,
+          "inlier_count": 139
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 176.033,
+          "coherence": 0.89,
+          "span_seconds": 29.498,
+          "inlier_count": 133
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 176.0365,
+          "coherence": 0.779,
+          "span_seconds": 29.642,
+          "inlier_count": 98
+        }
+      }
+    },
+    {
+      "start_seconds": 90,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-03.json",
+      "sha256": "222f4841412279771d5b3e5b0822f59ae146d69cd20af7112677e444b1bdf0c7",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 175.8995,
+      "coherence": 0.924,
+      "span_seconds": 29.852,
+      "inlier_count": 151,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 175.8895,
+          "coherence": 0.914,
+          "span_seconds": 29.69,
+          "inlier_count": 150
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 175.8995,
+          "coherence": 0.924,
+          "span_seconds": 29.852,
+          "inlier_count": 151
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 175.873,
+          "coherence": 0.366,
+          "span_seconds": 29.688,
+          "inlier_count": 83
+        }
+      }
+    },
+    {
+      "start_seconds": 120,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-04.json",
+      "sha256": "b9a6310af294ad12d8884a37eeefe2721a5bd605abae1e78bdfcbfff8a4f585f",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 176.2155,
+      "coherence": 0.866,
+      "span_seconds": 29.782,
+      "inlier_count": 137,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 176.226,
+          "coherence": 0.924,
+          "span_seconds": 29.61,
+          "inlier_count": 155
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 176.2155,
+          "coherence": 0.866,
+          "span_seconds": 29.782,
+          "inlier_count": 137
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 176.205,
+          "coherence": 0.64,
+          "span_seconds": 29.784,
+          "inlier_count": 99
+        }
+      }
+    },
+    {
+      "start_seconds": 150,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-05.json",
+      "sha256": "78f5cf80194810662261b1022574244bbe10c08627c661e182c49cc78c8cb151",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 175.8495,
+      "coherence": 0.912,
+      "span_seconds": 29.852,
+      "inlier_count": 140,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 175.8635,
+          "coherence": 0.912,
+          "span_seconds": 29.85,
+          "inlier_count": 151
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 175.8495,
+          "coherence": 0.912,
+          "span_seconds": 29.852,
+          "inlier_count": 140
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": 175.8645,
+          "coherence": 0.441,
+          "span_seconds": 29.34,
+          "inlier_count": 80
+        }
+      }
+    },
+    {
+      "start_seconds": 163.76633333333334,
+      "path": "SERIES/06-30/input/audio-processing/2026-10-24/track11-mid-sparse-target176-free-30s-06.json",
+      "sha256": "0164aeaba80ee2ccd6dc7b5b6adee43324c9b90b83c95ce44c0c9318ac360022",
+      "measurement_band": "mid",
+      "half_grid_hypothesis_bpm": 175.757,
+      "coherence": 0.874,
+      "span_seconds": 26.632,
+      "inlier_count": 113,
+      "all_band_fits": {
+        "high": {
+          "half_grid_hypothesis_bpm": 175.754,
+          "coherence": 0.863,
+          "span_seconds": 27.15,
+          "inlier_count": 122
+        },
+        "mid": {
+          "half_grid_hypothesis_bpm": 175.757,
+          "coherence": 0.874,
+          "span_seconds": 26.632,
+          "inlier_count": 113
+        },
+        "low": {
+          "half_grid_hypothesis_bpm": null,
+          "coherence": null,
+          "span_seconds": null,
+          "inlier_count": null
+        }
+      }
+    }
+  ],
+  "all_windows_inside_target_plus_minus_1_bpm": true,
+  "command_boundary_checks": [
+    {
+      "source_command_seconds": 8,
+      "estimated_output_seconds": 8.068541666666667,
+      "local_one_second_rms": 0.11565809817857049,
+      "local_max_adjacent_frame_delta": 0.22363439202308655
+    },
+    {
+      "source_command_seconds": 16,
+      "estimated_output_seconds": 16.137104166666667,
+      "local_one_second_rms": 0.14803908573919483,
+      "local_max_adjacent_frame_delta": 0.21725286543369293
+    },
+    {
+      "source_command_seconds": 24,
+      "estimated_output_seconds": 24.185083333333335,
+      "local_one_second_rms": 0.14677592992583843,
+      "local_max_adjacent_frame_delta": 0.23052765429019928
+    },
+    {
+      "source_command_seconds": 32,
+      "estimated_output_seconds": 32.28039583333333,
+      "local_one_second_rms": 0.14852380886890051,
+      "local_max_adjacent_frame_delta": 0.21700336039066315
+    },
+    {
+      "source_command_seconds": 40,
+      "estimated_output_seconds": 40.31625,
+      "local_one_second_rms": 0.14269164937416823,
+      "local_max_adjacent_frame_delta": 0.2727988362312317
+    },
+    {
+      "source_command_seconds": 48,
+      "estimated_output_seconds": 48.3833125,
+      "local_one_second_rms": 0.15494576727217668,
+      "local_max_adjacent_frame_delta": 0.2513028383255005
+    },
+    {
+      "source_command_seconds": 56,
+      "estimated_output_seconds": 56.45125,
+      "local_one_second_rms": 0.15094577020299635,
+      "local_max_adjacent_frame_delta": 0.23615525662899017
+    },
+    {
+      "source_command_seconds": 64,
+      "estimated_output_seconds": 64.50833333333334,
+      "local_one_second_rms": 0.17420836525077688,
+      "local_max_adjacent_frame_delta": 0.276464581489563
+    },
+    {
+      "source_command_seconds": 72,
+      "estimated_output_seconds": 72.55516666666666,
+      "local_one_second_rms": 0.12208270926033356,
+      "local_max_adjacent_frame_delta": 0.29150229692459106
+    },
+    {
+      "source_command_seconds": 80,
+      "estimated_output_seconds": 80.622625,
+      "local_one_second_rms": 0.17889080352691486,
+      "local_max_adjacent_frame_delta": 0.26092514395713806
+    },
+    {
+      "source_command_seconds": 88,
+      "estimated_output_seconds": 88.68179166666667,
+      "local_one_second_rms": 0.1624723678321971,
+      "local_max_adjacent_frame_delta": 0.1986979842185974
+    },
+    {
+      "source_command_seconds": 96,
+      "estimated_output_seconds": 96.70589583333333,
+      "local_one_second_rms": 0.1610123926029849,
+      "local_max_adjacent_frame_delta": 0.19659143686294556
+    },
+    {
+      "source_command_seconds": 104,
+      "estimated_output_seconds": 104.6961875,
+      "local_one_second_rms": 0.20807133722933266,
+      "local_max_adjacent_frame_delta": 0.21898305416107178
+    },
+    {
+      "source_command_seconds": 112,
+      "estimated_output_seconds": 112.69297916666666,
+      "local_one_second_rms": 0.21763524045353555,
+      "local_max_adjacent_frame_delta": 0.3207516670227051
+    },
+    {
+      "source_command_seconds": 120,
+      "estimated_output_seconds": 120.65297916666667,
+      "local_one_second_rms": 0.19994743950789742,
+      "local_max_adjacent_frame_delta": 0.26685571670532227
+    },
+    {
+      "source_command_seconds": 128,
+      "estimated_output_seconds": 128.679125,
+      "local_one_second_rms": 0.2110770945808656,
+      "local_max_adjacent_frame_delta": 0.2855451703071594
+    },
+    {
+      "source_command_seconds": 136,
+      "estimated_output_seconds": 136.694375,
+      "local_one_second_rms": 0.20666411721660036,
+      "local_max_adjacent_frame_delta": 0.2877306640148163
+    },
+    {
+      "source_command_seconds": 144,
+      "estimated_output_seconds": 144.7009375,
+      "local_one_second_rms": 0.22662619601372572,
+      "local_max_adjacent_frame_delta": 0.3723212778568268
+    },
+    {
+      "source_command_seconds": 152,
+      "estimated_output_seconds": 152.70391666666666,
+      "local_one_second_rms": 0.23104777305919688,
+      "local_max_adjacent_frame_delta": 0.31157299876213074
+    },
+    {
+      "source_command_seconds": 160,
+      "estimated_output_seconds": 160.69925,
+      "local_one_second_rms": 0.2470567816308991,
+      "local_max_adjacent_frame_delta": 0.29291921854019165
+    },
+    {
+      "source_command_seconds": 168,
+      "estimated_output_seconds": 168.69797916666667,
+      "local_one_second_rms": 0.1655592583447405,
+      "local_max_adjacent_frame_delta": 0.2559678554534912
+    },
+    {
+      "source_command_seconds": 176,
+      "estimated_output_seconds": 176.64775,
+      "local_one_second_rms": 0.25599583476946125,
+      "local_max_adjacent_frame_delta": 0.3625113368034363
+    },
+    {
+      "source_command_seconds": 184,
+      "estimated_output_seconds": 184.6225,
+      "local_one_second_rms": 0.24383871410567157,
+      "local_max_adjacent_frame_delta": 0.35064631700515747
+    },
+    {
+      "source_command_seconds": 192,
+      "estimated_output_seconds": 192.59966666666668,
+      "local_one_second_rms": 0.0020003881376506917,
+      "local_max_adjacent_frame_delta": 0.0008558126864954829
+    }
+  ],
+  "technical_errors": [],
+  "measurement_limit": "Preselected mid band is the tempo evidence; 30-second windows are sampled averages, not every-instant BPM or full-song listener approval.",
+  "official_suno_download": false,
+  "full_output_listener_approval": false,
+  "remote_candidate_mutation": false
+}

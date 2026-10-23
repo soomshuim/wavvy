@@ -1,0 +1,51 @@
+{
+  "scope": "root cause reproduction and one small source excerpt test; no full-song certification",
+  "source_path": "work/0630-tempo-full/24703f3f-c7ce-433f-a892-16d9330b41a9-working-source.wav",
+  "source_sha256": "b1f9c36e5085786008d48f2385b537817f71835e4b54b3bf59e138c38733017a",
+  "excerpt_seconds": [
+    0,
+    30
+  ],
+  "ffmpeg_version": "8.0.1",
+  "official_source_url": "https://github.com/FFmpeg/FFmpeg/blob/n8.0.1/libavfilter/af_atempo.c#L1147-L1160",
+  "official_source_observation": "process_command calls yae_update after accepting each tempo command; yae_update resets the WSOLA alignment origin. This makes repeated command events non-equivalent to one fixed tempo.",
+  "factor": 0.937436749651,
+  "constant_no_commands": {
+    "path": "work/0630-final-audio-processing-20261024/diagnosis/constant-30s.wav",
+    "sha256": "7247cb6533252f8f3d4a2ca47839da0384c1f72ba965623402b92713fe7cb9af",
+    "frames": 1535398,
+    "sample_rate_hz": 48000,
+    "duration_seconds": 31.987458333333333
+  },
+  "same_factor_every_half_second": {
+    "path": "work/0630-final-audio-processing-20261024/diagnosis/repeated-constant-30s.wav",
+    "sha256": "2c49a8163a4a907c9a7be3fb4572571726509b56d702d1182efc08ce726c91be",
+    "frames": 1505105,
+    "sample_rate_hz": 48000,
+    "duration_seconds": 31.356354166666666
+  },
+  "repeat_command_file": {
+    "path": "work/0630-final-audio-processing-20261024/diagnosis/repeated-constant-commands.txt",
+    "sha256": "cadbc4dcd47f942e586d3515f4fadb87281892cdaf79547243251734355f8f81",
+    "command_count": 59
+  },
+  "same_factor_repeated_duration_delta_seconds": -0.6311041666666668,
+  "sparse_8_second_variant": {
+    "path": "work/0630-final-audio-processing-20261024/diagnosis/sparse-8s-30s.wav",
+    "sha256": "7d0acc9145150c2c603a571e1cad63c5a0d069c826ea16e485f346243a4b5107",
+    "frames": 1526232,
+    "sample_rate_hz": 48000,
+    "duration_seconds": 31.7965
+  },
+  "sparse_command_file": {
+    "path": "work/0630-final-audio-processing-20261024/diagnosis/sparse-8s-commands.txt",
+    "sha256": "a3a39f8e750c8375903a215169bce6f25b65018b9bea1cf2f205b19f1c0a994a",
+    "command_count_full_plan": 24
+  },
+  "sparse_expected_first30_seconds": 31.840096590909088,
+  "sparse_first30_duration_delta_seconds": -0.043596590909086075,
+  "sparse_free_measure_path": "SERIES/06-30/input/audio-processing/2026-10-24/track01-sparse-8s-small-free-measure.json",
+  "sparse_free_measure_sha256": "ca2f5930d1f27747fd803331ef59049460682847d544fe3c2c822b81154797c5",
+  "sparse_high_grid_half_bpm": 175.8735,
+  "interpretation": "Repeated 0.5s tempo commands cause systematic shortening; a small 8s update excerpt yields near-integral duration and an independent first-30s half-grid near 176. Full-song output still requires measurement and listening."
+}

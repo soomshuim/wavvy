@@ -1,0 +1,626 @@
+{
+  "scope": "track 02 source-only special tail evidence; frozen before one full render",
+  "source_path": "work/0630-final-audio-capture-20261024/02-67d6a052-original.wav",
+  "source_sha256": "b9b0e9f6db0fadad1dfd0f4e0ae0a1d51e47e8e9fbfcbf6a523f78586eac6871",
+  "raw_curve_path": "SERIES/06-30/input/audio-processing/2026-10-24/track02-sparse-source-8s-free-raw.json",
+  "raw_curve_sha256": "8a04e562c400ea567e75ce2a60b81d315a32b3d723d4255f60692ee0bcc9d98f",
+  "tail_assessment_path": "SERIES/06-30/input/audio-processing/2026-10-24/track02-tail-beat-evidence.json",
+  "tail_assessment_sha256": "c31c8a9b90b9d0962200cb0dd19da133106a3f7519a5107a488a020b04c35cde",
+  "selection": "strongest high-band free grid through source center 180 with original strong criteria; three explicitly corroborated but weaker tail anchors; no target-seeded grid search",
+  "strong_anchor_minimum": {
+    "coherence": 0.7,
+    "span_seconds": 5,
+    "inliers": 25
+  },
+  "anchors": [
+    {
+      "center_source_seconds": 4,
+      "high_grid_bpm": 358.784,
+      "pulse_hypothesis_bpm": 179.392,
+      "coherence": 0.882,
+      "span_seconds": 7.7,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 8,
+      "high_grid_bpm": 358.47,
+      "pulse_hypothesis_bpm": 179.235,
+      "coherence": 0.839,
+      "span_seconds": 7.864,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 12,
+      "high_grid_bpm": 359.475,
+      "pulse_hypothesis_bpm": 179.7375,
+      "coherence": 0.744,
+      "span_seconds": 7.856,
+      "inlier_count": 34,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 16,
+      "high_grid_bpm": 361.591,
+      "pulse_hypothesis_bpm": 180.7955,
+      "coherence": 0.73,
+      "span_seconds": 7.44,
+      "inlier_count": 34,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 20,
+      "high_grid_bpm": 362.19,
+      "pulse_hypothesis_bpm": 181.095,
+      "coherence": 0.889,
+      "span_seconds": 7.808,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 24,
+      "high_grid_bpm": 362.749,
+      "pulse_hypothesis_bpm": 181.3745,
+      "coherence": 0.875,
+      "span_seconds": 7.774,
+      "inlier_count": 38,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 28,
+      "high_grid_bpm": 363.06,
+      "pulse_hypothesis_bpm": 181.53,
+      "coherence": 0.794,
+      "span_seconds": 7.922,
+      "inlier_count": 34,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 32,
+      "high_grid_bpm": 364.382,
+      "pulse_hypothesis_bpm": 182.191,
+      "coherence": 0.793,
+      "span_seconds": 7.868,
+      "inlier_count": 38,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 36,
+      "high_grid_bpm": 364.501,
+      "pulse_hypothesis_bpm": 182.2505,
+      "coherence": 0.752,
+      "span_seconds": 7.712,
+      "inlier_count": 36,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 40,
+      "high_grid_bpm": 364.544,
+      "pulse_hypothesis_bpm": 182.272,
+      "coherence": 0.795,
+      "span_seconds": 7.896,
+      "inlier_count": 34,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 44,
+      "high_grid_bpm": 364.696,
+      "pulse_hypothesis_bpm": 182.348,
+      "coherence": 0.878,
+      "span_seconds": 7.9,
+      "inlier_count": 38,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 48,
+      "high_grid_bpm": 365.25,
+      "pulse_hypothesis_bpm": 182.625,
+      "coherence": 0.919,
+      "span_seconds": 7.392,
+      "inlier_count": 41,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 52,
+      "high_grid_bpm": 365.555,
+      "pulse_hypothesis_bpm": 182.7775,
+      "coherence": 0.899,
+      "span_seconds": 7.886,
+      "inlier_count": 40,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 56,
+      "high_grid_bpm": 365.438,
+      "pulse_hypothesis_bpm": 182.719,
+      "coherence": 0.915,
+      "span_seconds": 7.878,
+      "inlier_count": 42,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 60,
+      "high_grid_bpm": 365.984,
+      "pulse_hypothesis_bpm": 182.992,
+      "coherence": 0.904,
+      "span_seconds": 7.874,
+      "inlier_count": 42,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 64,
+      "high_grid_bpm": 365.907,
+      "pulse_hypothesis_bpm": 182.9535,
+      "coherence": 0.858,
+      "span_seconds": 7.378,
+      "inlier_count": 38,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 68,
+      "high_grid_bpm": 366.291,
+      "pulse_hypothesis_bpm": 183.1455,
+      "coherence": 0.891,
+      "span_seconds": 7.372,
+      "inlier_count": 41,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 72,
+      "high_grid_bpm": 366.634,
+      "pulse_hypothesis_bpm": 183.317,
+      "coherence": 0.842,
+      "span_seconds": 7.84,
+      "inlier_count": 37,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 76,
+      "high_grid_bpm": 368.214,
+      "pulse_hypothesis_bpm": 184.107,
+      "coherence": 0.87,
+      "span_seconds": 7.83,
+      "inlier_count": 38,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 80,
+      "high_grid_bpm": 368.724,
+      "pulse_hypothesis_bpm": 184.362,
+      "coherence": 0.925,
+      "span_seconds": 7.65,
+      "inlier_count": 44,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 84,
+      "high_grid_bpm": 368.762,
+      "pulse_hypothesis_bpm": 184.381,
+      "coherence": 0.923,
+      "span_seconds": 7.968,
+      "inlier_count": 45,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 88,
+      "high_grid_bpm": 369.684,
+      "pulse_hypothesis_bpm": 184.842,
+      "coherence": 0.937,
+      "span_seconds": 7.794,
+      "inlier_count": 44,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 92,
+      "high_grid_bpm": 369.782,
+      "pulse_hypothesis_bpm": 184.891,
+      "coherence": 0.958,
+      "span_seconds": 7.624,
+      "inlier_count": 45,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 96,
+      "high_grid_bpm": 368.668,
+      "pulse_hypothesis_bpm": 184.334,
+      "coherence": 0.946,
+      "span_seconds": 7.812,
+      "inlier_count": 44,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 100,
+      "high_grid_bpm": 368.416,
+      "pulse_hypothesis_bpm": 184.208,
+      "coherence": 0.91,
+      "span_seconds": 7.8,
+      "inlier_count": 41,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 104,
+      "high_grid_bpm": 368.301,
+      "pulse_hypothesis_bpm": 184.1505,
+      "coherence": 0.936,
+      "span_seconds": 7.816,
+      "inlier_count": 42,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 108,
+      "high_grid_bpm": 368.885,
+      "pulse_hypothesis_bpm": 184.4425,
+      "coherence": 0.987,
+      "span_seconds": 7.81,
+      "inlier_count": 47,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 112,
+      "high_grid_bpm": 369.231,
+      "pulse_hypothesis_bpm": 184.6155,
+      "coherence": 0.817,
+      "span_seconds": 7.642,
+      "inlier_count": 40,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 116,
+      "high_grid_bpm": 368.029,
+      "pulse_hypothesis_bpm": 184.0145,
+      "coherence": 0.779,
+      "span_seconds": 7.654,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 120,
+      "high_grid_bpm": 368.946,
+      "pulse_hypothesis_bpm": 184.473,
+      "coherence": 0.998,
+      "span_seconds": 7.814,
+      "inlier_count": 44,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 124,
+      "high_grid_bpm": 369.266,
+      "pulse_hypothesis_bpm": 184.633,
+      "coherence": 0.987,
+      "span_seconds": 7.81,
+      "inlier_count": 47,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 128,
+      "high_grid_bpm": 369.718,
+      "pulse_hypothesis_bpm": 184.859,
+      "coherence": 0.959,
+      "span_seconds": 7.792,
+      "inlier_count": 43,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 132,
+      "high_grid_bpm": 369.913,
+      "pulse_hypothesis_bpm": 184.9565,
+      "coherence": 0.945,
+      "span_seconds": 7.784,
+      "inlier_count": 41,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 136,
+      "high_grid_bpm": 370.334,
+      "pulse_hypothesis_bpm": 185.167,
+      "coherence": 0.938,
+      "span_seconds": 7.94,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 140,
+      "high_grid_bpm": 370.9,
+      "pulse_hypothesis_bpm": 185.45,
+      "coherence": 0.959,
+      "span_seconds": 7.766,
+      "inlier_count": 42,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 144,
+      "high_grid_bpm": 370.867,
+      "pulse_hypothesis_bpm": 185.4335,
+      "coherence": 0.993,
+      "span_seconds": 7.776,
+      "inlier_count": 48,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 148,
+      "high_grid_bpm": 370.676,
+      "pulse_hypothesis_bpm": 185.338,
+      "coherence": 0.99,
+      "span_seconds": 7.93,
+      "inlier_count": 48,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 152,
+      "high_grid_bpm": 371.229,
+      "pulse_hypothesis_bpm": 185.6145,
+      "coherence": 0.984,
+      "span_seconds": 7.904,
+      "inlier_count": 47,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 156,
+      "high_grid_bpm": 370.972,
+      "pulse_hypothesis_bpm": 185.486,
+      "coherence": 0.952,
+      "span_seconds": 7.62,
+      "inlier_count": 42,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 160,
+      "high_grid_bpm": 371.597,
+      "pulse_hypothesis_bpm": 185.7985,
+      "coherence": 0.977,
+      "span_seconds": 7.754,
+      "inlier_count": 45,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 164,
+      "high_grid_bpm": 371.83,
+      "pulse_hypothesis_bpm": 185.915,
+      "coherence": 0.996,
+      "span_seconds": 7.908,
+      "inlier_count": 49,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 168,
+      "high_grid_bpm": 372.103,
+      "pulse_hypothesis_bpm": 186.0515,
+      "coherence": 0.952,
+      "span_seconds": 7.414,
+      "inlier_count": 47,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 172,
+      "high_grid_bpm": 372.529,
+      "pulse_hypothesis_bpm": 186.2645,
+      "coherence": 0.941,
+      "span_seconds": 7.734,
+      "inlier_count": 45,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 176,
+      "high_grid_bpm": 371.915,
+      "pulse_hypothesis_bpm": 185.9575,
+      "coherence": 0.979,
+      "span_seconds": 7.75,
+      "inlier_count": 45,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 180,
+      "high_grid_bpm": 369.673,
+      "pulse_hypothesis_bpm": 184.8365,
+      "coherence": 0.944,
+      "span_seconds": 7.478,
+      "inlier_count": 39,
+      "evidence_class": "strong"
+    },
+    {
+      "center_source_seconds": 184,
+      "high_grid_bpm": 365.426,
+      "pulse_hypothesis_bpm": 182.713,
+      "coherence": 0.768,
+      "span_seconds": 6.746,
+      "inlier_count": 24,
+      "evidence_class": "track02_tail_correlated_high_onsets_below_strong_inlier_threshold"
+    },
+    {
+      "center_source_seconds": 188,
+      "high_grid_bpm": 354.484,
+      "pulse_hypothesis_bpm": 177.242,
+      "coherence": 0.802,
+      "span_seconds": 5.578,
+      "inlier_count": 22,
+      "evidence_class": "track02_tail_correlated_high_onsets_below_strong_inlier_threshold"
+    },
+    {
+      "center_source_seconds": 192,
+      "high_grid_bpm": 348.076,
+      "pulse_hypothesis_bpm": 174.038,
+      "coherence": 0.989,
+      "span_seconds": 4.488,
+      "inlier_count": 23,
+      "evidence_class": "track02_tail_correlated_high_onsets_below_strong_inlier_threshold"
+    }
+  ],
+  "weak_windows_before_tail": [],
+  "tail_uncertainty": {
+    "source_centers_seconds": [
+      184,
+      188,
+      192
+    ],
+    "full_acf_counterevidence_at_center188_bpm": 179.662,
+    "counterevidence_distance_from_selected_fit_bpm": 2.42,
+    "corroborating_source_only_measurements": {
+      "center184_high_spectrum_half_bpm": 182.762,
+      "center188_high_spectrum_half_bpm": 176.697,
+      "center188_high_acf_part_bpm": 177.407,
+      "center192_high_spectrum_half_bpm": 173.836,
+      "center192_high_acf_bpm": 174.141,
+      "center192_mid_bpm": 174.589
+    },
+    "source_after_approximately_193_seconds": "fading; precise independent beat measurement unavailable",
+    "excluded_weak_window_center_seconds": 194.05,
+    "factor_after_last_anchor": "hold last source-measured pulse 174.038 BPM for fade"
+  },
+  "target_bpm": 176,
+  "factor_formula": "target/(source_high_grid_bpm/2)",
+  "command_interval_source_seconds": 8,
+  "intervals": [
+    {
+      "source_start_seconds": 0,
+      "source_end_seconds": 8,
+      "source_pulse_hypothesis_bpm": 179.392,
+      "factor": 0.981091687478
+    },
+    {
+      "source_start_seconds": 8,
+      "source_end_seconds": 16,
+      "source_pulse_hypothesis_bpm": 179.7375,
+      "factor": 0.979205786216
+    },
+    {
+      "source_start_seconds": 16,
+      "source_end_seconds": 24,
+      "source_pulse_hypothesis_bpm": 181.095,
+      "factor": 0.971865595406
+    },
+    {
+      "source_start_seconds": 24,
+      "source_end_seconds": 32,
+      "source_pulse_hypothesis_bpm": 181.53,
+      "factor": 0.969536715694
+    },
+    {
+      "source_start_seconds": 32,
+      "source_end_seconds": 40,
+      "source_pulse_hypothesis_bpm": 182.2505,
+      "factor": 0.965703797795
+    },
+    {
+      "source_start_seconds": 40,
+      "source_end_seconds": 48,
+      "source_pulse_hypothesis_bpm": 182.348,
+      "factor": 0.965187443789
+    },
+    {
+      "source_start_seconds": 48,
+      "source_end_seconds": 56,
+      "source_pulse_hypothesis_bpm": 182.7775,
+      "factor": 0.962919396534
+    },
+    {
+      "source_start_seconds": 56,
+      "source_end_seconds": 64,
+      "source_pulse_hypothesis_bpm": 182.992,
+      "factor": 0.961790679374
+    },
+    {
+      "source_start_seconds": 64,
+      "source_end_seconds": 72,
+      "source_pulse_hypothesis_bpm": 183.1455,
+      "factor": 0.960984572376
+    },
+    {
+      "source_start_seconds": 72,
+      "source_end_seconds": 80,
+      "source_pulse_hypothesis_bpm": 184.107,
+      "factor": 0.955965824222
+    },
+    {
+      "source_start_seconds": 80,
+      "source_end_seconds": 88,
+      "source_pulse_hypothesis_bpm": 184.381,
+      "factor": 0.95454520802
+    },
+    {
+      "source_start_seconds": 88,
+      "source_end_seconds": 96,
+      "source_pulse_hypothesis_bpm": 184.891,
+      "factor": 0.951912207733
+    },
+    {
+      "source_start_seconds": 96,
+      "source_end_seconds": 104,
+      "source_pulse_hypothesis_bpm": 184.208,
+      "factor": 0.955441674629
+    },
+    {
+      "source_start_seconds": 104,
+      "source_end_seconds": 112,
+      "source_pulse_hypothesis_bpm": 184.4425,
+      "factor": 0.954226927091
+    },
+    {
+      "source_start_seconds": 112,
+      "source_end_seconds": 120,
+      "source_pulse_hypothesis_bpm": 184.0145,
+      "factor": 0.956446366998
+    },
+    {
+      "source_start_seconds": 120,
+      "source_end_seconds": 128,
+      "source_pulse_hypothesis_bpm": 184.633,
+      "factor": 0.953242378123
+    },
+    {
+      "source_start_seconds": 128,
+      "source_end_seconds": 136,
+      "source_pulse_hypothesis_bpm": 184.9565,
+      "factor": 0.951575100091
+    },
+    {
+      "source_start_seconds": 136,
+      "source_end_seconds": 144,
+      "source_pulse_hypothesis_bpm": 185.45,
+      "factor": 0.949042868698
+    },
+    {
+      "source_start_seconds": 144,
+      "source_end_seconds": 152,
+      "source_pulse_hypothesis_bpm": 185.338,
+      "factor": 0.949616376566
+    },
+    {
+      "source_start_seconds": 152,
+      "source_end_seconds": 160,
+      "source_pulse_hypothesis_bpm": 185.486,
+      "factor": 0.94885867397
+    },
+    {
+      "source_start_seconds": 160,
+      "source_end_seconds": 168,
+      "source_pulse_hypothesis_bpm": 185.915,
+      "factor": 0.946669176774
+    },
+    {
+      "source_start_seconds": 168,
+      "source_end_seconds": 176,
+      "source_pulse_hypothesis_bpm": 186.2645,
+      "factor": 0.944892880823
+    },
+    {
+      "source_start_seconds": 176,
+      "source_end_seconds": 184,
+      "source_pulse_hypothesis_bpm": 184.8365,
+      "factor": 0.952192883981
+    },
+    {
+      "source_start_seconds": 184,
+      "source_end_seconds": 192,
+      "source_pulse_hypothesis_bpm": 177.242,
+      "factor": 0.992992631543
+    },
+    {
+      "source_start_seconds": 192,
+      "source_end_seconds": 198.05,
+      "source_pulse_hypothesis_bpm": 174.038,
+      "factor": 1.011273400062
+    }
+  ],
+  "expected_integral_duration_seconds": 206.0477153409086
+}

@@ -1,0 +1,1159 @@
+{
+  "scope": "track09 source-only sparse preflight failure and multiband inventory; no sparse render",
+  "source_path": "work/0630-final-audio-capture-20261024/09-aadf83c5-original.wav",
+  "source_sha256": "f3bf424b7734fa9b875bfbc3d48ceb954a5e89337cbc6faaef2b99abfd77b595",
+  "raw_source_measurement_path": "SERIES/06-30/input/audio-processing/2026-10-24/track09-sparse-source-8s-free-raw.json",
+  "raw_source_measurement_sha256": "4d2f4ff68c27adeab7040aec61185e35751b2d2f2eb92a7340a68f969c5a6492",
+  "unchanged_criteria": {
+    "coherence_min": 0.7,
+    "span_seconds_min": 5,
+    "inliers_min": 25,
+    "minimum_strong_count": 30,
+    "minimum_strong_fraction": 0.7,
+    "max_start_end_gap_seconds": 16,
+    "max_interanchor_gap_seconds": 16
+  },
+  "bands": {
+    "high": {
+      "strong_count": 35,
+      "total_windows": 52,
+      "strong_fraction": 0.6730769230769231,
+      "first_strong_center_seconds": 20,
+      "last_strong_center_seconds": 196,
+      "max_strong_gap": {
+        "from": 96,
+        "to": 116,
+        "seconds": 20
+      },
+      "strong_anchors": [
+        {
+          "center_source_seconds": 20,
+          "pulse_hypothesis_bpm": 180.482,
+          "coherence": 0.781,
+          "span_seconds": 7.644,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 24,
+          "pulse_hypothesis_bpm": 179.6305,
+          "coherence": 0.807,
+          "span_seconds": 7.504,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 28,
+          "pulse_hypothesis_bpm": 180.959,
+          "coherence": 0.75,
+          "span_seconds": 7.63,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 40,
+          "pulse_hypothesis_bpm": 181.8265,
+          "coherence": 0.71,
+          "span_seconds": 7.75,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 44,
+          "pulse_hypothesis_bpm": 180.8595,
+          "coherence": 0.735,
+          "span_seconds": 7.118,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 52,
+          "pulse_hypothesis_bpm": 182.4505,
+          "coherence": 0.727,
+          "span_seconds": 7.702,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 56,
+          "pulse_hypothesis_bpm": 182.6145,
+          "coherence": 0.853,
+          "span_seconds": 7.418,
+          "inliers": 39
+        },
+        {
+          "center_source_seconds": 72,
+          "pulse_hypothesis_bpm": 184.023,
+          "coherence": 0.766,
+          "span_seconds": 7.478,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 76,
+          "pulse_hypothesis_bpm": 184.018,
+          "coherence": 0.797,
+          "span_seconds": 7.842,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 80,
+          "pulse_hypothesis_bpm": 183.687,
+          "coherence": 0.707,
+          "span_seconds": 7.506,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 84,
+          "pulse_hypothesis_bpm": 183.4015,
+          "coherence": 0.764,
+          "span_seconds": 7.828,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 88,
+          "pulse_hypothesis_bpm": 183.5255,
+          "coherence": 0.79,
+          "span_seconds": 7.838,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 92,
+          "pulse_hypothesis_bpm": 184.097,
+          "coherence": 0.792,
+          "span_seconds": 7.804,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 96,
+          "pulse_hypothesis_bpm": 184.2095,
+          "coherence": 0.786,
+          "span_seconds": 7.654,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 116,
+          "pulse_hypothesis_bpm": 183.654,
+          "coherence": 0.833,
+          "span_seconds": 7.67,
+          "inliers": 39
+        },
+        {
+          "center_source_seconds": 120,
+          "pulse_hypothesis_bpm": 183.322,
+          "coherence": 0.801,
+          "span_seconds": 7.522,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 124,
+          "pulse_hypothesis_bpm": 183.666,
+          "coherence": 0.79,
+          "span_seconds": 7.84,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 128,
+          "pulse_hypothesis_bpm": 183.788,
+          "coherence": 0.928,
+          "span_seconds": 7.834,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 132,
+          "pulse_hypothesis_bpm": 183.7045,
+          "coherence": 0.819,
+          "span_seconds": 7.832,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 136,
+          "pulse_hypothesis_bpm": 184.4605,
+          "coherence": 0.81,
+          "span_seconds": 7.486,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 140,
+          "pulse_hypothesis_bpm": 184.243,
+          "coherence": 0.972,
+          "span_seconds": 7.816,
+          "inliers": 47
+        },
+        {
+          "center_source_seconds": 144,
+          "pulse_hypothesis_bpm": 184.4855,
+          "coherence": 0.961,
+          "span_seconds": 7.806,
+          "inliers": 47
+        },
+        {
+          "center_source_seconds": 148,
+          "pulse_hypothesis_bpm": 184.859,
+          "coherence": 0.96,
+          "span_seconds": 7.782,
+          "inliers": 45
+        },
+        {
+          "center_source_seconds": 152,
+          "pulse_hypothesis_bpm": 184.622,
+          "coherence": 0.95,
+          "span_seconds": 7.8,
+          "inliers": 45
+        },
+        {
+          "center_source_seconds": 156,
+          "pulse_hypothesis_bpm": 184.3385,
+          "coherence": 0.958,
+          "span_seconds": 7.974,
+          "inliers": 48
+        },
+        {
+          "center_source_seconds": 160,
+          "pulse_hypothesis_bpm": 184.585,
+          "coherence": 0.953,
+          "span_seconds": 7.8,
+          "inliers": 44
+        },
+        {
+          "center_source_seconds": 164,
+          "pulse_hypothesis_bpm": 184.617,
+          "coherence": 0.98,
+          "span_seconds": 7.8,
+          "inliers": 47
+        },
+        {
+          "center_source_seconds": 168,
+          "pulse_hypothesis_bpm": 184.628,
+          "coherence": 0.901,
+          "span_seconds": 7.804,
+          "inliers": 40
+        },
+        {
+          "center_source_seconds": 172,
+          "pulse_hypothesis_bpm": 183.848,
+          "coherence": 0.816,
+          "span_seconds": 7.832,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 176,
+          "pulse_hypothesis_bpm": 182.897,
+          "coherence": 0.908,
+          "span_seconds": 7.212,
+          "inliers": 41
+        },
+        {
+          "center_source_seconds": 180,
+          "pulse_hypothesis_bpm": 183.221,
+          "coherence": 0.723,
+          "span_seconds": 7.528,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 184,
+          "pulse_hypothesis_bpm": 182.8795,
+          "coherence": 0.786,
+          "span_seconds": 7.526,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 188,
+          "pulse_hypothesis_bpm": 180.7435,
+          "coherence": 0.908,
+          "span_seconds": 7.504,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 192,
+          "pulse_hypothesis_bpm": 177.7595,
+          "coherence": 0.942,
+          "span_seconds": 7.748,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 196,
+          "pulse_hypothesis_bpm": 176.286,
+          "coherence": 0.891,
+          "span_seconds": 7.5,
+          "inliers": 44
+        }
+      ],
+      "weak_anchors": [
+        {
+          "center_source_seconds": 4,
+          "pulse_hypothesis_bpm": 178.16,
+          "coherence": 0.543,
+          "span_seconds": 6.562,
+          "inliers": 24
+        },
+        {
+          "center_source_seconds": 8,
+          "pulse_hypothesis_bpm": 179.655,
+          "coherence": 0.521,
+          "span_seconds": 7.692,
+          "inliers": 25
+        },
+        {
+          "center_source_seconds": 12,
+          "pulse_hypothesis_bpm": 179.8225,
+          "coherence": 0.519,
+          "span_seconds": 7.324,
+          "inliers": 23
+        },
+        {
+          "center_source_seconds": 16,
+          "pulse_hypothesis_bpm": 180.0355,
+          "coherence": 0.645,
+          "span_seconds": 7.83,
+          "inliers": 26
+        },
+        {
+          "center_source_seconds": 32,
+          "pulse_hypothesis_bpm": 180.1315,
+          "coherence": 0.557,
+          "span_seconds": 7.478,
+          "inliers": 25
+        },
+        {
+          "center_source_seconds": 36,
+          "pulse_hypothesis_bpm": 180.3545,
+          "coherence": 0.54,
+          "span_seconds": 7.654,
+          "inliers": 21
+        },
+        {
+          "center_source_seconds": 48,
+          "pulse_hypothesis_bpm": 183.1105,
+          "coherence": 0.645,
+          "span_seconds": 7.724,
+          "inliers": 30
+        },
+        {
+          "center_source_seconds": 60,
+          "pulse_hypothesis_bpm": 182.1555,
+          "coherence": 0.695,
+          "span_seconds": 7.744,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 64,
+          "pulse_hypothesis_bpm": 184.7655,
+          "coherence": 0.511,
+          "span_seconds": 7.142,
+          "inliers": 23
+        },
+        {
+          "center_source_seconds": 68,
+          "pulse_hypothesis_bpm": 184.35,
+          "coherence": 0.637,
+          "span_seconds": 7.482,
+          "inliers": 28
+        },
+        {
+          "center_source_seconds": 100,
+          "pulse_hypothesis_bpm": 184.408,
+          "coherence": 0.657,
+          "span_seconds": 7.794,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 104,
+          "pulse_hypothesis_bpm": 184.3145,
+          "coherence": 0.655,
+          "span_seconds": 7.808,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 108,
+          "pulse_hypothesis_bpm": 184.5295,
+          "coherence": 0.652,
+          "span_seconds": 7.66,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 112,
+          "pulse_hypothesis_bpm": 184.67,
+          "coherence": 0.659,
+          "span_seconds": 7.962,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 200,
+          "pulse_hypothesis_bpm": 173.398,
+          "coherence": 0.969,
+          "span_seconds": 4.68,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 204,
+          "pulse_hypothesis_bpm": 172.5865,
+          "coherence": 0.976,
+          "span_seconds": 3.314,
+          "inliers": 19
+        },
+        {
+          "center_source_seconds": 204.57,
+          "pulse_hypothesis_bpm": 173.295,
+          "coherence": 0.922,
+          "span_seconds": 6.222,
+          "inliers": 18
+        }
+      ]
+    },
+    "mid": {
+      "strong_count": 40,
+      "total_windows": 52,
+      "strong_fraction": 0.7692307692307693,
+      "first_strong_center_seconds": 24,
+      "last_strong_center_seconds": 196,
+      "max_strong_gap": {
+        "from": 32,
+        "to": 44,
+        "seconds": 12
+      },
+      "strong_anchors": [
+        {
+          "center_source_seconds": 24,
+          "pulse_hypothesis_bpm": 180.294,
+          "coherence": 0.809,
+          "span_seconds": 7.664,
+          "inliers": 39
+        },
+        {
+          "center_source_seconds": 28,
+          "pulse_hypothesis_bpm": 180.814,
+          "coherence": 0.808,
+          "span_seconds": 7.478,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 32,
+          "pulse_hypothesis_bpm": 180.841,
+          "coherence": 0.755,
+          "span_seconds": 7.632,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 44,
+          "pulse_hypothesis_bpm": 181.701,
+          "coherence": 0.702,
+          "span_seconds": 7.596,
+          "inliers": 30
+        },
+        {
+          "center_source_seconds": 56,
+          "pulse_hypothesis_bpm": 182.676,
+          "coherence": 0.854,
+          "span_seconds": 7.38,
+          "inliers": 36
+        },
+        {
+          "center_source_seconds": 60,
+          "pulse_hypothesis_bpm": 183.419,
+          "coherence": 0.817,
+          "span_seconds": 7.36,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 64,
+          "pulse_hypothesis_bpm": 183.8115,
+          "coherence": 0.871,
+          "span_seconds": 7.672,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 68,
+          "pulse_hypothesis_bpm": 183.963,
+          "coherence": 0.924,
+          "span_seconds": 7.812,
+          "inliers": 41
+        },
+        {
+          "center_source_seconds": 72,
+          "pulse_hypothesis_bpm": 183.8295,
+          "coherence": 0.932,
+          "span_seconds": 7.832,
+          "inliers": 40
+        },
+        {
+          "center_source_seconds": 76,
+          "pulse_hypothesis_bpm": 184.0315,
+          "coherence": 0.885,
+          "span_seconds": 7.324,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 80,
+          "pulse_hypothesis_bpm": 183.728,
+          "coherence": 0.766,
+          "span_seconds": 7.676,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 84,
+          "pulse_hypothesis_bpm": 183.4345,
+          "coherence": 0.82,
+          "span_seconds": 7.682,
+          "inliers": 30
+        },
+        {
+          "center_source_seconds": 88,
+          "pulse_hypothesis_bpm": 183.6695,
+          "coherence": 0.964,
+          "span_seconds": 7.838,
+          "inliers": 41
+        },
+        {
+          "center_source_seconds": 92,
+          "pulse_hypothesis_bpm": 184.0535,
+          "coherence": 0.937,
+          "span_seconds": 7.66,
+          "inliers": 39
+        },
+        {
+          "center_source_seconds": 96,
+          "pulse_hypothesis_bpm": 184.205,
+          "coherence": 0.917,
+          "span_seconds": 7.824,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 100,
+          "pulse_hypothesis_bpm": 184.2775,
+          "coherence": 0.951,
+          "span_seconds": 7.806,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 104,
+          "pulse_hypothesis_bpm": 184.3755,
+          "coherence": 0.966,
+          "span_seconds": 7.644,
+          "inliers": 45
+        },
+        {
+          "center_source_seconds": 108,
+          "pulse_hypothesis_bpm": 184.6675,
+          "coherence": 0.948,
+          "span_seconds": 7.798,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 112,
+          "pulse_hypothesis_bpm": 184.525,
+          "coherence": 0.961,
+          "span_seconds": 7.802,
+          "inliers": 44
+        },
+        {
+          "center_source_seconds": 116,
+          "pulse_hypothesis_bpm": 183.6895,
+          "coherence": 0.882,
+          "span_seconds": 7.832,
+          "inliers": 40
+        },
+        {
+          "center_source_seconds": 120,
+          "pulse_hypothesis_bpm": 183.8595,
+          "coherence": 0.781,
+          "span_seconds": 7.63,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 124,
+          "pulse_hypothesis_bpm": 183.649,
+          "coherence": 0.856,
+          "span_seconds": 7.838,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 128,
+          "pulse_hypothesis_bpm": 183.789,
+          "coherence": 0.947,
+          "span_seconds": 7.346,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 132,
+          "pulse_hypothesis_bpm": 183.821,
+          "coherence": 0.896,
+          "span_seconds": 7.668,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 136,
+          "pulse_hypothesis_bpm": 184.2365,
+          "coherence": 0.875,
+          "span_seconds": 7.504,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 140,
+          "pulse_hypothesis_bpm": 184.195,
+          "coherence": 0.95,
+          "span_seconds": 7.818,
+          "inliers": 46
+        },
+        {
+          "center_source_seconds": 144,
+          "pulse_hypothesis_bpm": 184.5445,
+          "coherence": 0.888,
+          "span_seconds": 7.804,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 148,
+          "pulse_hypothesis_bpm": 184.7885,
+          "coherence": 0.922,
+          "span_seconds": 7.784,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 152,
+          "pulse_hypothesis_bpm": 184.5915,
+          "coherence": 0.926,
+          "span_seconds": 7.8,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 156,
+          "pulse_hypothesis_bpm": 184.325,
+          "coherence": 0.903,
+          "span_seconds": 7.982,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 160,
+          "pulse_hypothesis_bpm": 184.4615,
+          "coherence": 0.933,
+          "span_seconds": 7.816,
+          "inliers": 41
+        },
+        {
+          "center_source_seconds": 164,
+          "pulse_hypothesis_bpm": 184.614,
+          "coherence": 0.931,
+          "span_seconds": 7.8,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 168,
+          "pulse_hypothesis_bpm": 184.6435,
+          "coherence": 0.867,
+          "span_seconds": 7.644,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 172,
+          "pulse_hypothesis_bpm": 183.9145,
+          "coherence": 0.749,
+          "span_seconds": 7.834,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 176,
+          "pulse_hypothesis_bpm": 182.848,
+          "coherence": 0.91,
+          "span_seconds": 7.376,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 180,
+          "pulse_hypothesis_bpm": 183.301,
+          "coherence": 0.977,
+          "span_seconds": 7.876,
+          "inliers": 46
+        },
+        {
+          "center_source_seconds": 184,
+          "pulse_hypothesis_bpm": 182.86,
+          "coherence": 0.881,
+          "span_seconds": 7.874,
+          "inliers": 42
+        },
+        {
+          "center_source_seconds": 188,
+          "pulse_hypothesis_bpm": 180.739,
+          "coherence": 0.772,
+          "span_seconds": 7.022,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 192,
+          "pulse_hypothesis_bpm": 178.0605,
+          "coherence": 0.954,
+          "span_seconds": 7.916,
+          "inliers": 43
+        },
+        {
+          "center_source_seconds": 196,
+          "pulse_hypothesis_bpm": 176.1335,
+          "coherence": 0.909,
+          "span_seconds": 7.676,
+          "inliers": 43
+        }
+      ],
+      "weak_anchors": [
+        {
+          "center_source_seconds": 4,
+          "pulse_hypothesis_bpm": 181.09,
+          "coherence": 0.333,
+          "span_seconds": 7.76,
+          "inliers": 17
+        },
+        {
+          "center_source_seconds": 8,
+          "pulse_hypothesis_bpm": 181.48,
+          "coherence": 0.478,
+          "span_seconds": 7.436,
+          "inliers": 22
+        },
+        {
+          "center_source_seconds": 12,
+          "pulse_hypothesis_bpm": 179.635,
+          "coherence": 0.659,
+          "span_seconds": 7.686,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 16,
+          "pulse_hypothesis_bpm": 180.134,
+          "coherence": 0.57,
+          "span_seconds": 7.502,
+          "inliers": 28
+        },
+        {
+          "center_source_seconds": 20,
+          "pulse_hypothesis_bpm": 180.2235,
+          "coherence": 0.688,
+          "span_seconds": 7.65,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 36,
+          "pulse_hypothesis_bpm": 181.0365,
+          "coherence": 0.68,
+          "span_seconds": 7.96,
+          "inliers": 26
+        },
+        {
+          "center_source_seconds": 40,
+          "pulse_hypothesis_bpm": 181.529,
+          "coherence": 0.687,
+          "span_seconds": 7.746,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 48,
+          "pulse_hypothesis_bpm": 181.9545,
+          "coherence": 0.674,
+          "span_seconds": 7.25,
+          "inliers": 30
+        },
+        {
+          "center_source_seconds": 52,
+          "pulse_hypothesis_bpm": 182.359,
+          "coherence": 0.669,
+          "span_seconds": 7.896,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 200,
+          "pulse_hypothesis_bpm": 172.8225,
+          "coherence": 0.608,
+          "span_seconds": 7.608,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 204,
+          "pulse_hypothesis_bpm": null,
+          "coherence": null,
+          "span_seconds": null,
+          "inliers": null
+        },
+        {
+          "center_source_seconds": 204.57,
+          "pulse_hypothesis_bpm": 176.054,
+          "coherence": 0.352,
+          "span_seconds": 3.562,
+          "inliers": 10
+        }
+      ]
+    },
+    "low": {
+      "strong_count": 40,
+      "total_windows": 52,
+      "strong_fraction": 0.7692307692307693,
+      "first_strong_center_seconds": 16,
+      "last_strong_center_seconds": 184,
+      "max_strong_gap": {
+        "from": 116,
+        "to": 128,
+        "seconds": 12
+      },
+      "strong_anchors": [
+        {
+          "center_source_seconds": 16,
+          "pulse_hypothesis_bpm": 180.1,
+          "coherence": 0.767,
+          "span_seconds": 7.822,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 20,
+          "pulse_hypothesis_bpm": 180.61,
+          "coherence": 0.72,
+          "span_seconds": 7.646,
+          "inliers": 30
+        },
+        {
+          "center_source_seconds": 24,
+          "pulse_hypothesis_bpm": 180.369,
+          "coherence": 0.878,
+          "span_seconds": 7.814,
+          "inliers": 36
+        },
+        {
+          "center_source_seconds": 28,
+          "pulse_hypothesis_bpm": 180.6155,
+          "coherence": 0.889,
+          "span_seconds": 7.806,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 32,
+          "pulse_hypothesis_bpm": 180.795,
+          "coherence": 0.845,
+          "span_seconds": 7.466,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 36,
+          "pulse_hypothesis_bpm": 181.2315,
+          "coherence": 0.932,
+          "span_seconds": 7.616,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 40,
+          "pulse_hypothesis_bpm": 181.4105,
+          "coherence": 0.947,
+          "span_seconds": 7.936,
+          "inliers": 40
+        },
+        {
+          "center_source_seconds": 44,
+          "pulse_hypothesis_bpm": 181.6875,
+          "coherence": 0.919,
+          "span_seconds": 7.76,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 48,
+          "pulse_hypothesis_bpm": 181.909,
+          "coherence": 0.921,
+          "span_seconds": 7.582,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 52,
+          "pulse_hypothesis_bpm": 182.506,
+          "coherence": 0.9,
+          "span_seconds": 7.898,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 56,
+          "pulse_hypothesis_bpm": 182.6005,
+          "coherence": 0.867,
+          "span_seconds": 7.554,
+          "inliers": 28
+        },
+        {
+          "center_source_seconds": 60,
+          "pulse_hypothesis_bpm": 183.272,
+          "coherence": 0.841,
+          "span_seconds": 7.69,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 64,
+          "pulse_hypothesis_bpm": 183.7785,
+          "coherence": 0.854,
+          "span_seconds": 7.676,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 68,
+          "pulse_hypothesis_bpm": 183.911,
+          "coherence": 0.931,
+          "span_seconds": 7.986,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 72,
+          "pulse_hypothesis_bpm": 183.9115,
+          "coherence": 0.95,
+          "span_seconds": 7.666,
+          "inliers": 39
+        },
+        {
+          "center_source_seconds": 76,
+          "pulse_hypothesis_bpm": 184.0565,
+          "coherence": 0.855,
+          "span_seconds": 7.334,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 80,
+          "pulse_hypothesis_bpm": 183.665,
+          "coherence": 0.815,
+          "span_seconds": 7.688,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 84,
+          "pulse_hypothesis_bpm": 183.4005,
+          "coherence": 0.921,
+          "span_seconds": 6.522,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 88,
+          "pulse_hypothesis_bpm": 183.7775,
+          "coherence": 0.842,
+          "span_seconds": 7.676,
+          "inliers": 33
+        },
+        {
+          "center_source_seconds": 92,
+          "pulse_hypothesis_bpm": 183.9385,
+          "coherence": 0.802,
+          "span_seconds": 7.824,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 96,
+          "pulse_hypothesis_bpm": 184.181,
+          "coherence": 0.839,
+          "span_seconds": 7.494,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 100,
+          "pulse_hypothesis_bpm": 184.247,
+          "coherence": 0.894,
+          "span_seconds": 7.486,
+          "inliers": 35
+        },
+        {
+          "center_source_seconds": 104,
+          "pulse_hypothesis_bpm": 184.454,
+          "coherence": 0.878,
+          "span_seconds": 7.644,
+          "inliers": 36
+        },
+        {
+          "center_source_seconds": 108,
+          "pulse_hypothesis_bpm": 184.71,
+          "coherence": 0.899,
+          "span_seconds": 7.8,
+          "inliers": 36
+        },
+        {
+          "center_source_seconds": 112,
+          "pulse_hypothesis_bpm": 184.6325,
+          "coherence": 0.889,
+          "span_seconds": 7.958,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 116,
+          "pulse_hypothesis_bpm": 183.5985,
+          "coherence": 0.816,
+          "span_seconds": 7.836,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 128,
+          "pulse_hypothesis_bpm": 183.6855,
+          "coherence": 0.88,
+          "span_seconds": 7.514,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 132,
+          "pulse_hypothesis_bpm": 183.7945,
+          "coherence": 0.852,
+          "span_seconds": 7.834,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 136,
+          "pulse_hypothesis_bpm": 184.4915,
+          "coherence": 0.891,
+          "span_seconds": 6.348,
+          "inliers": 34
+        },
+        {
+          "center_source_seconds": 140,
+          "pulse_hypothesis_bpm": 184.4965,
+          "coherence": 0.948,
+          "span_seconds": 6.016,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 144,
+          "pulse_hypothesis_bpm": 184.4635,
+          "coherence": 0.936,
+          "span_seconds": 7.644,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 148,
+          "pulse_hypothesis_bpm": 184.607,
+          "coherence": 0.879,
+          "span_seconds": 6.986,
+          "inliers": 37
+        },
+        {
+          "center_source_seconds": 152,
+          "pulse_hypothesis_bpm": 184.5685,
+          "coherence": 0.744,
+          "span_seconds": 7.806,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 156,
+          "pulse_hypothesis_bpm": 184.532,
+          "coherence": 0.757,
+          "span_seconds": 7.816,
+          "inliers": 27
+        },
+        {
+          "center_source_seconds": 160,
+          "pulse_hypothesis_bpm": 184.4285,
+          "coherence": 0.823,
+          "span_seconds": 6.99,
+          "inliers": 32
+        },
+        {
+          "center_source_seconds": 164,
+          "pulse_hypothesis_bpm": 184.606,
+          "coherence": 0.736,
+          "span_seconds": 7.802,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 168,
+          "pulse_hypothesis_bpm": 184.572,
+          "coherence": 0.777,
+          "span_seconds": 7.79,
+          "inliers": 31
+        },
+        {
+          "center_source_seconds": 176,
+          "pulse_hypothesis_bpm": 182.9105,
+          "coherence": 0.738,
+          "span_seconds": 7.55,
+          "inliers": 29
+        },
+        {
+          "center_source_seconds": 180,
+          "pulse_hypothesis_bpm": 183.2565,
+          "coherence": 0.917,
+          "span_seconds": 7.692,
+          "inliers": 38
+        },
+        {
+          "center_source_seconds": 184,
+          "pulse_hypothesis_bpm": 182.935,
+          "coherence": 0.937,
+          "span_seconds": 7.872,
+          "inliers": 30
+        }
+      ],
+      "weak_anchors": [
+        {
+          "center_source_seconds": 4,
+          "pulse_hypothesis_bpm": null,
+          "coherence": null,
+          "span_seconds": null,
+          "inliers": null
+        },
+        {
+          "center_source_seconds": 8,
+          "pulse_hypothesis_bpm": 179.7855,
+          "coherence": 0.523,
+          "span_seconds": 6.344,
+          "inliers": 11
+        },
+        {
+          "center_source_seconds": 12,
+          "pulse_hypothesis_bpm": 179.7805,
+          "coherence": 0.818,
+          "span_seconds": 5.656,
+          "inliers": 20
+        },
+        {
+          "center_source_seconds": 120,
+          "pulse_hypothesis_bpm": 184.073,
+          "coherence": 0.53,
+          "span_seconds": 5.36,
+          "inliers": 16
+        },
+        {
+          "center_source_seconds": 124,
+          "pulse_hypothesis_bpm": 183.7415,
+          "coherence": 0.654,
+          "span_seconds": 7.828,
+          "inliers": 23
+        },
+        {
+          "center_source_seconds": 172,
+          "pulse_hypothesis_bpm": 184.0565,
+          "coherence": 0.677,
+          "span_seconds": 7.832,
+          "inliers": 24
+        },
+        {
+          "center_source_seconds": 188,
+          "pulse_hypothesis_bpm": 182.5525,
+          "coherence": 0.675,
+          "span_seconds": 5.256,
+          "inliers": 24
+        },
+        {
+          "center_source_seconds": 192,
+          "pulse_hypothesis_bpm": 173.1775,
+          "coherence": 0.464,
+          "span_seconds": 7.788,
+          "inliers": 21
+        },
+        {
+          "center_source_seconds": 196,
+          "pulse_hypothesis_bpm": 178.412,
+          "coherence": 0.455,
+          "span_seconds": 7.742,
+          "inliers": 18
+        },
+        {
+          "center_source_seconds": 200,
+          "pulse_hypothesis_bpm": 170.244,
+          "coherence": 0.345,
+          "span_seconds": 5.998,
+          "inliers": 11
+        },
+        {
+          "center_source_seconds": 204,
+          "pulse_hypothesis_bpm": null,
+          "coherence": null,
+          "span_seconds": null,
+          "inliers": null
+        },
+        {
+          "center_source_seconds": 204.57,
+          "pulse_hypothesis_bpm": null,
+          "coherence": null,
+          "span_seconds": null,
+          "inliers": null
+        }
+      ]
+    }
+  },
+  "status": "no sparse render"
+}

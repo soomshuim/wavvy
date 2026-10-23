@@ -1,0 +1,86 @@
+{
+  "order": 12,
+  "candidate_id": "704d6663-6a2f-4a17-ba75-9a87bf768e7a",
+  "conclusion": "first_take_has_capture_or_playback_interruption; second_take_preserves_continuous_selected-song_signal",
+  "first_take": {
+    "raw": "work/0630-final-audio-capture-20261024/12-704d6663-raw.wav",
+    "raw_sha256": "e4a0f97545941fd7a6032d65aeb8f281155b7c8f9f3231884f5e5fcd37177bfc",
+    "internal_exact_zero_gap_raw_s": [
+      68.05660416666667,
+      68.1780625
+    ],
+    "gap_duration_s": 0.12145833333333333,
+    "retained_for_evidence": true,
+    "not_for_final_input": true
+  },
+  "second_take": {
+    "raw": "work/0630-final-audio-capture-20261024/12-704d6663-r2-raw.wav",
+    "raw_sha256": "29d515d6526f5f79ab152d9adaa8344db6e2b236253c15ab92831b000ca3cdc8",
+    "interior_exact_zero_gaps_ge_0_1s": 0,
+    "selected": "work/0630-final-audio-capture-20261024/12-704d6663-r2-original.wav",
+    "selected_sha256": "20b2c25f9f4771670386aca82b7a086194c72a062f7c2700bfae313f289b2393",
+    "selected_duration_s": 211.45,
+    "source_ui_duration_s": 211.16,
+    "sample_exact_equality": true
+  },
+  "comparison": {
+    "method": "2-second left-channel PCM phrase correlation; 12 kHz coarse search then 48 kHz sample refinement; first capture to second capture offsets",
+    "points": [
+      {
+        "song_t_s": 15,
+        "first_raw_s": 23.85,
+        "second_raw_s": 19.834292,
+        "offset_s": 4.015708,
+        "cosine": 0.999569
+      },
+      {
+        "song_t_s": 40,
+        "first_raw_s": 48.85,
+        "second_raw_s": 44.834292,
+        "offset_s": 4.015708,
+        "cosine": 0.999287
+      },
+      {
+        "song_t_s": 55,
+        "first_raw_s": 63.85,
+        "second_raw_s": 59.834292,
+        "offset_s": 4.015708,
+        "cosine": 0.999164
+      },
+      {
+        "song_t_s": 65,
+        "first_raw_s": 73.85,
+        "second_raw_s": 69.698896,
+        "offset_s": 4.151104,
+        "cosine": 0.999765
+      },
+      {
+        "song_t_s": 100,
+        "first_raw_s": 108.85,
+        "second_raw_s": 104.698896,
+        "offset_s": 4.151104,
+        "cosine": 0.990065
+      },
+      {
+        "song_t_s": 150,
+        "first_raw_s": 158.85,
+        "second_raw_s": 154.698875,
+        "offset_s": 4.151125,
+        "cosine": 0.998948
+      },
+      {
+        "song_t_s": 200,
+        "first_raw_s": 208.85,
+        "second_raw_s": 204.698875,
+        "offset_s": 4.151125,
+        "cosine": 0.998898
+      }
+    ],
+    "offset_change_s_approx": 0.135396,
+    "interpretation": "same signal matches closely on both sides, but first take gains about 0.135s of delay at the middle gap; second take has no interior zero run. This supports a first playback/capture interruption, not an intrinsic pause in selected audio."
+  },
+  "limits": [
+    "ScreenCaptureKit sample-buffer PTS was not logged, so the tool alone cannot attribute the interruption specifically to browser playback versus capture callbacks.",
+    "Listening quality judgment beyond interruption was not performed."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "scope": "Independent parent full-signal silence scan, raw crop equality, seven shared-recording waveform alignments, and player/wall-clock comparison. Does not rule out every possible non-silent artifact or assign tab-change causality.",
+  "source_sha256": "95109855e40dbeefe6b8675d76c8a49cf9377065967b7c8d93cab1d003b0e8c8",
+  "source_duration_s": 203.89,
+  "source_finite": true,
+  "source_peak": 0.9124574661254883,
+  "source_exact_silence_ge_20ms": [
+    {
+      "start_s": 0.0,
+      "end_s": 0.08208333333333333,
+      "duration_s": 0.08208333333333333
+    },
+    {
+      "start_s": 203.65114583333335,
+      "end_s": 203.89,
+      "duration_s": 0.23885416666666667
+    }
+  ],
+  "source_near_silence_abs_le_1e_5_ge_20ms": [
+    {
+      "start_s": 0.0,
+      "end_s": 0.08308333333333333,
+      "duration_s": 0.08308333333333333
+    },
+    {
+      "start_s": 203.65014583333334,
+      "end_s": 203.89,
+      "duration_s": 0.23985416666666667
+    }
+  ],
+  "raw_crop_sample_equal": true,
+  "previous_incomplete_recording_sha256": "a9875e303f3464823eba5f6142c03790067f0c34dfb038c4a4641caf15f8281a",
+  "shared_waveform_correlations": [
+    {
+      "r5_selected_start_s": 15,
+      "r3_raw_offset_s": 1.2608958333333327,
+      "cosine": 0.9993049898460018
+    },
+    {
+      "r5_selected_start_s": 40,
+      "r3_raw_offset_s": 1.2609166666666667,
+      "cosine": 0.9911219379350188
+    },
+    {
+      "r5_selected_start_s": 65,
+      "r3_raw_offset_s": 1.2609166666666738,
+      "cosine": 0.9999591609649887
+    },
+    {
+      "r5_selected_start_s": 90,
+      "r3_raw_offset_s": 1.2609166666666738,
+      "cosine": 0.9917083786482762
+    },
+    {
+      "r5_selected_start_s": 115,
+      "r3_raw_offset_s": 1.2609166666666738,
+      "cosine": 0.9986719765286635
+    },
+    {
+      "r5_selected_start_s": 140,
+      "r3_raw_offset_s": 1.2609166666666738,
+      "cosine": 0.9998188570799579
+    },
+    {
+      "r5_selected_start_s": 165,
+      "r3_raw_offset_s": 1.2609166666666738,
+      "cosine": 0.9823545343630853
+    }
+  ],
+  "shared_time_offset_range_s": 2.0833333341130356e-05,
+  "selected_playback_timeline": [
+    {
+      "current_time_s": 0.046098,
+      "wall_elapsed_s": 0.0,
+      "player_minus_wall_elapsed_s": 0.0,
+      "paused": false
+    },
+    {
+      "current_time_s": 25.081318,
+      "wall_elapsed_s": 25.033,
+      "player_minus_wall_elapsed_s": 0.0022199999999976683,
+      "paused": false
+    },
+    {
+      "current_time_s": 50.107154,
+      "wall_elapsed_s": 50.062,
+      "player_minus_wall_elapsed_s": -0.0009439999999969473,
+      "paused": false
+    },
+    {
+      "current_time_s": 75.131103,
+      "wall_elapsed_s": 75.087,
+      "player_minus_wall_elapsed_s": -0.0019950000000079626,
+      "paused": false
+    },
+    {
+      "current_time_s": 100.156281,
+      "wall_elapsed_s": 100.11,
+      "player_minus_wall_elapsed_s": 0.00018300000000692762,
+      "paused": false
+    },
+    {
+      "current_time_s": 125.181319,
+      "wall_elapsed_s": 125.138,
+      "player_minus_wall_elapsed_s": -0.0027790000000038617,
+      "paused": false
+    },
+    {
+      "current_time_s": 150.208528,
+      "wall_elapsed_s": 150.164,
+      "player_minus_wall_elapsed_s": -0.0015699999999867487,
+      "paused": false
+    },
+    {
+      "current_time_s": 175.236437,
+      "wall_elapsed_s": 175.195,
+      "player_minus_wall_elapsed_s": -0.004660999999998694,
+      "paused": false
+    },
+    {
+      "current_time_s": 200.265842,
+      "wall_elapsed_s": 200.224,
+      "player_minus_wall_elapsed_s": -0.004255999999998039,
+      "paused": false
+    },
+    {
+      "current_time_s": 201.295723,
+      "wall_elapsed_s": 201.253,
+      "player_minus_wall_elapsed_s": -0.0033749999999770353,
+      "paused": false
+    },
+    {
+      "current_time_s": 202.325029,
+      "wall_elapsed_s": 202.283,
+      "player_minus_wall_elapsed_s": -0.004068999999987,
+      "paused": false
+    },
+    {
+      "current_time_s": 203.362118,
+      "wall_elapsed_s": 203.318,
+      "player_minus_wall_elapsed_s": -0.0019800000000032014,
+      "paused": false
+    }
+  ],
+  "processed_sha256": "7dce97d30af0345dbecbac4bc49986ee047a88772b772f904d7907a5364d798e",
+  "processed_duration_s": 211.7745,
+  "processed_exact_silence_ge_20ms": [
+    {
+      "start_s": 0.0,
+      "end_s": 0.0623125,
+      "duration_s": 0.0623125
+    },
+    {
+      "start_s": 211.53795833333334,
+      "end_s": 211.7745,
+      "duration_s": 0.23654166666666668
+    }
+  ],
+  "errors": []
+}

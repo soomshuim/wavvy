@@ -1,0 +1,74 @@
+{
+  "schema": "wavvy.final_audio_approval_check.v1",
+  "date": "2026-10-24",
+  "user_quote": "모두 통과. 음원 최종 확보해.",
+  "scope": "exact 173-target 30-second files 8/13/18 and original-speed full app captures 5/20 approved for this series; 20 selected candidates authorized for final audio acquisition, not all files already acquired or whole-song BPM certified",
+  "ledger_path": "SERIES/06-30/input/suno-candidates.json",
+  "ledger_head": "52e5952",
+  "selected_candidate_ids_count": 20,
+  "selected_candidate_ids_unique_count": 20,
+  "selected_ids_membership_pass": true,
+  "processing_target_counts": {
+    "173": 3,
+    "176": 15,
+    "original_speed": 2
+  },
+  "approved_exact_file_checks": [
+    {
+      "order": 5,
+      "kind": "original_speed_full_app_capture",
+      "path": "work/0630-selected-05-20-20261023/05-b868f3f7-selected.wav",
+      "expected_sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+      "actual_sha256": "9f026ccc63df7bb4de31d73a2ec2fd4294278ee8f770f93441a5b694f80e8543",
+      "user_approved": true,
+      "whole_song_tempo_certified": false
+    },
+    {
+      "order": 8,
+      "kind": "173_target_30s_trial",
+      "path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/8. 유리 번개_173목표_비교본.wav",
+      "expected_sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db",
+      "actual_sha256": "38be5e283b65723d2d97928c5088c2215d2e1ec066f9ed38804a016d1a8478db",
+      "user_approved": true
+    },
+    {
+      "order": 13,
+      "kind": "173_target_30s_trial",
+      "path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/13. 황금 주파수_173목표_비교본.wav",
+      "expected_sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d",
+      "actual_sha256": "9fe748cf3eab4b7c152f02108e4b26271238bccf0ec61c414d31f4e29c34540d",
+      "user_approved": true
+    },
+    {
+      "order": 18,
+      "kind": "173_target_30s_trial",
+      "path": "/Users/zenkim_office/Downloads/wavvy-0630-target173-08-13-18-20261023/18. 빛을 따라_173목표_비교본.wav",
+      "expected_sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f",
+      "actual_sha256": "c1674deed546db47ff37ce85ce9e4a1b17db1799df0e7622f7aff72e2377040f",
+      "user_approved": true
+    },
+    {
+      "order": 20,
+      "kind": "original_speed_full_app_capture",
+      "path": "work/0630-selected-05-20-20261023/20-6a6baa59-selected.wav",
+      "expected_sha256": "24d0e92db0e37cd0f23d6f3b04c237a95f2158ff39bb5769cec6a8288487bec7",
+      "actual_sha256": "24d0e92db0e37cd0f23d6f3b04c237a95f2158ff39bb5769cec6a8288487bec7",
+      "user_approved": true,
+      "whole_song_tempo_certified": false
+    }
+  ],
+  "approved_exact_file_count": 5,
+  "existing_original_speed_working_source_orders": [
+    1,
+    5,
+    20
+  ],
+  "final_input_wav_count_at_check": 0,
+  "download_manifest_exists_at_check": false,
+  "ledger_nondecision_track_changes": [],
+  "ledger_other_top_level_changes": 0,
+  "original_bpm_and_remote_disposition_changes": 0,
+  "earlier_175_and_176_approval_history_preserved": true,
+  "whole_song_bpm_certified_count": 0,
+  "errors": []
+}
