@@ -1,4 +1,16 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 Suno 교체 일부 완료·6곡 서비스 거부)
+Date: 2026-10-24
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 사용자 요청으로 기존 Suno33곡을 일반 휴지통으로 이동했다. 수정본20곡 업로드는14성공·6거부이며 전체20곡 교체는 미완료다.
+Current: 정확한 작업공간335455f4-30d5-4878-b658-365da757127e에 신규14곡만 남았다. 기존33개 남음0·신규누락0·대기0. 6/9/11/12/17/19번은 This audio matches an existing recording 오류다. 원인 미확정이며 재시도·변조·생성·공개 조작0, 영구삭제0. 원래 화면 필터3개를 복원했다.
+Verification: SERIES/06-30/input/suno-replacement/2026-10-24/replacement-manifest.json, .ai/validation/2026-10-24-0630-suno-upload-check.json, .ai/validation/2026-10-24-0630-suno-final-check.json. 기존생성ID와새업로드ID를구분하고 source download-manifest/candidates·로컬20WAV·Downloads20사본은 보존했다. 공식state revision84 track_source_draft·입력20개는 불변이다.
+Review: .ai/reviews/2026-10-24-0630-suno-replacement-review.md. 실제 Astra/high 격리검토는 기록범위 CLEAN·확인된Critical/High0·원칙관찰없음. 전체요청완료판정이아니다.
+Next-TODO: 거부6곡의 정상업로드가 남았다. 현재 사이트가 거부한 상태이며 같은 오류의 반복재시도·음원변조 계획은 없다. 아래 ‘20곡 확보 완료’는 로컬음원확보 이력이고 원격20곡교체 완료를 뜻하지 않는다.
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 선택 전곡 음원 확보 완료)
 Date: 2026-10-24
 Project: ~/Project/wavvy
