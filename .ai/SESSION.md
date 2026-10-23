@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-10-23 [CDX] -record — Wavvy 자막·제목 하네스 완료 기록
+- wavvy master `1154bb79e8e56d1b2a7f8cc5ca35f91e50cc6258`를 원격 동일 SHA로 확인했다. 1시간 초과 보컬 영상의 검증된 시간 자막 준비, 게시 근거 분리, 제목 6구획 기본형과 승인 예외를 하네스·스킬에 반영했다. 실제 직접 자막 게시 근거는 이전 `d00b891`이며 기존 영상·음원·썸네일·승인 업로드 제목은 바꾸지 않았다.
+- 86개 unit test, ignored 산출물 없는 격리 18개, 기존 제목 17개가 PASS했다. 독립 Astra xhigh 검토는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 원시 근거는 wavvy `.ai/validation/2026-10-23-subtitle-title-harness/`와 `.ai/reviews/2026-10-23-subtitle-title-harness-review.md`에 있다.
+- 공식 state revision 79는 영상 `uploaded`, 자막 `prepared=verified`·`published=verified`다. 게시 검증은 보존된 2026-10-23 Studio·공개 관찰과 다운로드의 재대조이며 새 실시간 관찰·재게시·전곡 청취가 아니다. 원래 YouTube 무시각 초안 오류 원인은 미확정이다. 이번 요청 범위의 남은 작업은 없다.
+
 ## 2026-10-23 [CDX] 자막·제목 기본형의 유지 하네스 반영 (독립 검토 CLEAN)
 - 명시적 시각 맵으로 시간 맞춘 SRT를 생성·검증하는 `prepare-subtitles`와 준비/게시를 분리하는 `verify-subtitles --stage prepared|published`를 하네스·CLI·스킬에 반영했다. 1시간 초과 보컬 영상의 `upload-ready`는 준비 검증을 요구하고, `uploaded`는 영상 업로드 상태로 유지한다. 원문 가사를 자동 인식하거나 전곡 오디오를 자동 정렬·청취하는 기능은 아니다. 원래 YouTube 무시각 초안 게시 오류의 원인은 여전히 미확정이다.
 - 제목 기본은 `Playlist | 감각적 음악 훅 | 실제 장르 | 다양하고 맞는 용도 | Wavvy | 시간`의 6구획이다. 형식·길이 검증과 훅/장르/용도의 편집 판단을 구분하고, 확정된 17:30 제목·07:00 5구획·시간 없는 컴필레이션 예외를 보존했다. 공개 영상의 제목·영상·댓글을 다시 수정하지 않았다.
