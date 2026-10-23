@@ -1,4 +1,14 @@
 ---
+HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-23 15:21:40
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: 06:30 러닝 시리즈는 20논리곡·원격 후보 42개를 보존한다. 젠이 허용한 30초 샘플로 첫 후보 1개의 구간 2개를 측정했지만 둘 다 uncertain이며 삭제·선택 0개다. 분석기 30초 지원 독립 Astra 검토는 CLEAN이나 전곡·42후보 판정은 아니다. Aside 전면에서 신호가 나온 원인은 미확정이다. 젠 요청으로 녹음·분석·브라우저 조작·삭제·재생성을 중단했다.
+Next-TODO: 젠이 명시적으로 재개를 요청할 때만 B 후보 페이지에서 30초 샘플 작업을 이어간다. 프로젝트 로드나 이전 승인만으로 자동 재개하지 않는다. 공식 state는 revision 83 track_source_draft 그대로다.
+Commits: 작업 체크포인트 228d6e9dad5202cb34283686defff09115e9fcaa; 세션 기록 (이번 커밋)
+---
+
+---
 HANDOFF: Codex -> 젠
 Date: 2026-10-23 (새 06:30 추가 생성·BPM 분석용 녹음 재시도)
 Project: ~/Project/wavvy
