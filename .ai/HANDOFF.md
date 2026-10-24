@@ -2498,3 +2498,25 @@ Verification: 30초 합성 11건의 기대 분류가 11/11 일치했고 원시 �
 Resume-Trigger: 젠의 명시적 작업 재개 요청. 요청 전에는 자동 진행하지 않는다.
 Next-TODO: 재개 요청이 오면 B 후보에서 연속 30초 샘플 확보와 보수적 BPM 분석을 이어간다. 범위 밖 후보 삭제는 별도 독립 검토 뒤에만 실행한다.
 ---
+
+HANDOFF: Codex -> 젠
+Date: 2026-10-24 (06:30 사용자 강제 새로고침 보고 뒤 남은2곡 재시도)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “강제 새로고침후 재시도” → “내가 했어” 뒤 검증된175목표 감속 사본6/11만 각각1회 정상 업로드했으나 둘 다 This audio matches an existing recording으로 거부됐다. 사용자 강제 새로고침은 user_reported이며 캐시 우회를 독립 인증하지 않는다. 에이전트 새로고침·추가 음원 처리·파일명 변경·삭제·복원·생성·공개0이다.
+Current: 정확한 Suno 작업공간335455f4-30d5-4878-b658-365da757127e에는 기존18곡이 그대로다. 성공0·거부2·대기0·선택0이며 원래3필터와 빈 검색을 복원했다. 전체20곡 교체는 미완료이고6/11의 정상 업로드가 남았다. 이번 승인 배치의 추가 반복은 없다. 로컬입력20·Downloads20·기존 감속사본·원본출처ID·기존 원장은 보존했다.
+Verification: 새 retry-user-refresh/retry-manifest.json과 retry-ui-evidence.raw.json에 별도 저장했다. .ai/validation/2026-10-24-0630-suno-user-refresh-final-check.json에서 원시13개 원문/해시, 전후18곡 ID/제목/길이/완료 상태, 필터 복원, 실제 원본/감속/전송6개 SHA와 기존21파일/기록 불변을 직접 확인했다. 공식 state revision84·track_source_draft·로컬입력20 점검 PASS다. 신규 독립 검토는 .ai/reviews/2026-10-24-0630-suno-user-refresh-review.md에 별도 보존한다.
+Next-TODO: 6/11의 서비스 거부 때문에 전체20곡 교체는 미완료다. 동일 오류의 추가 자동 재시도·추가 감속·삭제 계획은 없다. 이전 배치 중단 기록은 각 당시 이력이다.
+Commits: 이번 사용자 승인 배치의 결과 기록만 독립 검토 후 커밋·푸시한다.
+---
+
+HANDOFF: Codex -> 젠
+Date: 2026-10-24 (06:30 추가 재시도·업로드용 제목 변경·메타데이터 조사)
+Project: ~/Project/wavvy
+Agent: Codex
+Summary: 젠의 “한 번 더 재시도”와 “흠...제목을 한 번 더 바꿔봐”로 같은175목표6/11 사본을 두 배치에서 각각1회씩 정상 업로드했다. 새제목 배치의 전송 사본만06_DawnCurrent.wav/11_ForwardPulse.wav로 복사했다. 두 배치 모두 성공0·거부2·대기0이며 기존 녹음 일치 오류다. 앞 사용자 새로고침 보고 배치까지 총6파일 시도·추가 수락0이다.
+Current: 정확한 workspace335455f4-30d5-4878-b658-365da757127e에는18곡이 그대로이고6/11은 여전히 미수락이다. 전체20곡 교체는 미완료다. 원래3필터·빈검색·선택0, local20/Downloads20/기존감속/원본출처ID/기존원장/state revision84를 보존했다. 추가 음원처리·감속·새로고침·삭제·복원·생성·공개0이며 이번 승인 배치 이후 자동 반복 계획은 없다.
+Verification: retry-extra-once/와 retry-retitled/ 각각 원장·원시를 보존했고 .ai/validation/2026-10-24-0630-suno-additional-retries-final-check.json이 실제 원시28개·전후18집합·관련파일/기록 불변을 대조한다. 사용자 파일정보 질문은 .ai/validation/2026-10-24-0630-audio-metadata-check.json에서 실제8파일 전체구획과태그를 확인했다. 곡명/ID/C2PA구획은 없고 공통ISFT Lavf62.3.100만 있었다. Suno 일반C2PA출처표시/유사성검사 공식안내는 존재하나 이번거부의 특정원인은 미확정이다. 오디오 내부 숨은표식 부재 인증·탐지API·파일정보삭제는 하지 않았다.
+Next-TODO: 외부 서비스가 거부한6/11의 정상 업로드가 미완료다. 같은 오류의 추가 자동 반복·추가 감속/삭제 계획은 없다. 앞 세션의 재시도 기록은 각 시점의 이력이다.
+Commits: 이번 사용자 지시 결과와 조사 기록을 독립 검토 뒤 커밋·푸시한다. 검토 기록은 .ai/reviews/2026-10-24-0630-suno-user-refresh-review.md에 보존한다.
+---

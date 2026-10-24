@@ -1,0 +1,298 @@
+{
+  "schema": "wavvy.suno.retry-retitled.v1",
+  "recorded_at_utc": "2026-10-24T00:31:41.567729+00:00",
+  "executor": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh"
+  },
+  "browser": {
+    "product": "Aside",
+    "method": "MCP",
+    "tool": "mcp__aside__repl",
+    "profile_id": "be41d9e1-db47-4e5c-b567-be8ce72163cc",
+    "target_id": "D298E682BA32A273E17AA7C31B799845",
+    "actual_first_operation": "listBrowserTabs()",
+    "actual_selection_matches_request": true
+  },
+  "authorization": {
+    "user_quote": "흠...제목을 한 번 더 바꿔봐",
+    "scope": "Change only transfer filenames of unchanged existing175-target orders6 and11 to06_DawnCurrent.wav and11_ForwardPulse.wav; normal upload once each. Keep original Korean numbered titles if accepted. No further repetition."
+  },
+  "refresh": {
+    "requested_this_batch": false,
+    "agent_reload_calls": 0,
+    "agent_hard_refresh_calls": 0,
+    "new_user_refresh_report": false
+  },
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "workspace_name": "[06:30]",
+  "prior_records": [
+    {
+      "path": "SERIES/06-30/input/suno-replacement/2026-10-24/retry-extra-once/retry-manifest.json",
+      "sha256": "ac16d27ebd98b8b039fd764a7b2ed79c4793e6aa3d605083c2ff3f29b29a5d18"
+    },
+    {
+      "path": "SERIES/06-30/input/suno-replacement/2026-10-24/retry-extra-once/retry-ui-evidence.raw.json",
+      "sha256": "51b33af01349bcaf339b3accde66218b7e56f36f1a37469f02011fe9ff570512"
+    }
+  ],
+  "preflight": {
+    "current_count": 18,
+    "prior18_exact_ids_titles_durations_status_selection_match": true,
+    "target_orders6_11_already_present": false,
+    "selected_count": 0,
+    "search": "",
+    "original_filters": [
+      "Hide Disliked",
+      "Hide Stems",
+      "Hide Clips from Edit Mode"
+    ],
+    "filters_kept_unchanged": true,
+    "collection_method": "Stable upper/lower DOM identities union in same current18 workspace, with existing3 filters retained as authorized."
+  },
+  "execution_status": "completed_with_rejections",
+  "result": {
+    "attempted": 2,
+    "success": 0,
+    "rejected": 2,
+    "pending": 0,
+    "rejected_orders": [
+      6,
+      11
+    ],
+    "all20_replacement_complete": false,
+    "current_remote_songs": 18,
+    "remaining_unaccepted_orders": [
+      6,
+      11
+    ]
+  },
+  "rows": [
+    {
+      "order": 6,
+      "title": "6. 다리의 불꽃",
+      "immutable_source_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "source_candidate_id": "e2196f98-b0f6-432b-b8a2-a900af30a793",
+      "approved_176_target_input_path": "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "approved_176_target_input_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "upload_variant": "Existing validated175-target audio copied byte-for-byte under a new transfer filename only; no processing.",
+      "slower_175_target_output_path": "work/0630-suno-retry-slower-20261024/06-target175.wav",
+      "slower_175_target_output_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "output_duration_seconds": 194.65566666666666,
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/06_DawnCurrent.wav",
+      "staged_filename": "06_DawnCurrent.wav",
+      "staged_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "size_bytes": 74747868,
+      "retry_attempt_count": 1,
+      "attempt_scope": "This retitled batch only, authorized by user quote 흠...제목을 한 번 더 바꿔봐. One attempt each, no additional repetition.",
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+      "final_remote_title_if_success": "6. 다리의 불꽃"
+    },
+    {
+      "order": 11,
+      "title": "11. 계속 앞으로",
+      "immutable_source_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+      "source_candidate_id": "4aebcc2f-5d02-4761-9dc0-23cef9479acf",
+      "approved_176_target_input_path": "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "approved_176_target_input_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "upload_variant": "Existing validated175-target audio copied byte-for-byte under a new transfer filename only; no processing.",
+      "slower_175_target_output_path": "work/0630-suno-retry-slower-20261024/11-target175.wav",
+      "slower_175_target_output_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "output_duration_seconds": 194.85202083333334,
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/11_ForwardPulse.wav",
+      "staged_filename": "11_ForwardPulse.wav",
+      "staged_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "size_bytes": 74823268,
+      "retry_attempt_count": 1,
+      "attempt_scope": "This retitled batch only, authorized by user quote 흠...제목을 한 번 더 바꿔봐. One attempt each, no additional repetition.",
+      "uploaded_id": null,
+      "status": "rejected",
+      "error": "This audio matches an existing recording",
+      "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+      "final_remote_title_if_success": "11. 계속 앞으로"
+    }
+  ],
+  "final_workspace": {
+    "url": "https://suno.com/create?wid=335455f4-30d5-4878-b658-365da757127e",
+    "current_count": 18,
+    "rows": [
+      {
+        "id": "5773f8c0-e37a-4816-a958-bd53c503a26c",
+        "title": "1. 첫 박부터",
+        "duration": "3:33",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "f1966f19-a26c-4816-bf1e-ad8d0376e23e",
+        "title": "2. 가속선",
+        "duration": "3:26",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "48cf2d45-c684-4f9a-857c-6de429a6b69f",
+        "title": "3. 빛나는 노면",
+        "duration": "3:17",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "8e187fa4-79bb-4e41-8400-8c67df07c267",
+        "title": "4. 전력 곡선",
+        "duration": "3:28",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "3049c58e-6ce9-4b28-b2d3-5abaf40696ab",
+        "title": "5. 빛의 마찰",
+        "duration": "3:21",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "13c7f55f-c798-412c-91c8-8d4159ed6561",
+        "title": "7. 하늘을 밀어",
+        "duration": "3:31",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "1708a2eb-b2b5-43ff-a2c8-031ed1d00c6e",
+        "title": "8. 유리 번개",
+        "duration": "3:22",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "cfe646f5-78ff-461e-9fc1-2989b9b6ea44",
+        "title": "9. 한계 위로",
+        "duration": "3:37",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "7bfa9398-32e7-46a5-a8f4-7a71d1313dd1",
+        "title": "10. 전류의 발끝",
+        "duration": "3:20",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "43203e12-e8f3-45c4-bc44-62d64b92305d",
+        "title": "12. 폭발 직전",
+        "duration": "3:51",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "5bc95d2a-6d77-4ffd-a2ba-96aa2970e725",
+        "title": "13. 황금 주파수",
+        "duration": "3:32",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "694a40cd-a627-4689-8225-befc087672f5",
+        "title": "14. 높은 기어",
+        "duration": "3:32",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "909040b8-1286-4e73-88a4-43a8863c043c",
+        "title": "15. 번쩍이는 궤도",
+        "duration": "3:26",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "63356d6d-d857-45a4-a920-f6d92c01138c",
+        "title": "16. 가속의 틈",
+        "duration": "3:27",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+        "title": "17. 몸이 먼저",
+        "duration": "3:39",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "45decf5d-7ff8-4a2a-8e98-2383af92a8c9",
+        "title": "18. 빛을 따라",
+        "duration": "3:22",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "f7deea5a-f4c5-406c-bf58-6228dbd79021",
+        "title": "19. 끝까지 당겨",
+        "duration": "3:17",
+        "status": "complete",
+        "selected": false
+      },
+      {
+        "id": "5e271bdc-7584-46df-ad96-65d8d753b6c8",
+        "title": "20. 다시 점화",
+        "duration": "3:30",
+        "status": "complete",
+        "selected": false
+      }
+    ],
+    "prior18_exact_ids_titles_durations_preserved": true,
+    "pre_post_exact_equal": true,
+    "new_success_ids": [],
+    "pending": 0,
+    "selected_count": 0,
+    "search": "",
+    "original_filters": [
+      "Hide Disliked",
+      "Hide Stems",
+      "Hide Clips from Edit Mode"
+    ],
+    "filters_kept_unchanged": true,
+    "collection_method": "Stable upper15/lower15 DOM-ID unions equal preflight and previous exact18; no filter settings changed."
+  },
+  "agent_action_counts": {
+    "file_attachment_calls": 1,
+    "individual_file_attempts": 2,
+    "additional_retry_after_rejection": 0,
+    "reload": 0,
+    "hard_refresh": 0,
+    "audio_processing": 0,
+    "filename_changes": 2,
+    "delete": 0,
+    "restore": 0,
+    "generate": 0,
+    "publish": 0,
+    "title_edits": 0,
+    "filter_settings_changes": 0,
+    "playback_actions": 0,
+    "filename_change_scope": "Two new staged copies only; original/staged previous filenames untouched."
+  },
+  "ui_observation_notes": [
+    "Initial target snapshot had no More options menu; no menu item used.",
+    "Playback was already active; agent did not control playback.",
+    "After rejected queue Done was clicked and fresh snapshot showed existing18-song list.",
+    "Final Escape was sent after verifying original3 filter selections; snapshot still rendered filter listbox in another tree position. No filter value changed."
+  ],
+  "preservation": {
+    "original_approved_input2_sha_rechecked_after_upload": true,
+    "existing175_outputs_and_staged2_sha_match": true,
+    "approved_local20_and_Downloads_not_modified_by_worker": true,
+    "source_candidate_ids_immutable": true,
+    "prior_manifests_state_and_candidates_not_modified_by_worker": true
+  },
+  "evidence": {
+    "path": "SERIES/06-30/input/suno-replacement/2026-10-24/retry-retitled/retry-ui-evidence.raw.json",
+    "sha256": "34137959e81819978445df20b7722e354a1b776dbe4093f4495cac50ef538a82"
+  },
+  "next_action": "This retitled single batch is finished with2 rejections. No additional retry, browser or audio action. Controller handles reconciliation and review."
+}

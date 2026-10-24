@@ -1,0 +1,1056 @@
+{
+  "schema": "wavvy.audio-metadata-check.v1",
+  "recorded_at_utc": "2026-10-24T00:34:25.063367+00:00",
+  "raw_probe_path": "work/0630-audio-metadata-probe-20261024/metadata-probe.raw.json",
+  "raw_probe_sha256": "e4147e8b5c8cde9174b9f9e465ee3228e6edb107f799f1588dd2bfe910fad9ed",
+  "actual_files": [
+    {
+      "order": 6,
+      "role": "approved176",
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "483081f7ae9ac4a369e990191409918d09b10dc17c7f519256f5009c4705b8d0",
+          "payload_base64": "k8aNAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74331288,
+          "sha256": "bf973ba079ff76b7e055aa7074807381e13065d9b6ec04ac9f3705217b99d887",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 6,
+      "role": "slower175",
+      "path": "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/06-target175.wav",
+      "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "cb3e17dbc0a24f4a3bd5567e7aa105f959a01ef2ea7f268e81456cf602840a8c",
+          "payload_base64": "8JGOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74747776,
+          "sha256": "e44769ef1c22ed28060952b9cba141c8095d0de0c7ce7d2d8afebb8369b3ea7b",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 6,
+      "role": "slower175-staged",
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/06_LegSpark_175.wav",
+      "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "cb3e17dbc0a24f4a3bd5567e7aa105f959a01ef2ea7f268e81456cf602840a8c",
+          "payload_base64": "8JGOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74747776,
+          "sha256": "e44769ef1c22ed28060952b9cba141c8095d0de0c7ce7d2d8afebb8369b3ea7b",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 6,
+      "role": "retitled-staged",
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/06_DawnCurrent.wav",
+      "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "cb3e17dbc0a24f4a3bd5567e7aa105f959a01ef2ea7f268e81456cf602840a8c",
+          "payload_base64": "8JGOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74747776,
+          "sha256": "e44769ef1c22ed28060952b9cba141c8095d0de0c7ce7d2d8afebb8369b3ea7b",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 11,
+      "role": "approved176",
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "416ab693c0c96adc78178a5a478d6691fcea517ce97459c9453a17e8f3e5c298",
+          "payload_base64": "MOuNAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74406272,
+          "sha256": "7a2ab04f52d80a5dd94168fa94539a965413e0738c88d4dcdc57136c1e01b549",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 11,
+      "role": "slower175",
+      "path": "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/11-target175.wav",
+      "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "3a21e7262195074ca8e8861e21f6a3eba7e0ab8a3d546e1baaf20525b24d7b8f",
+          "payload_base64": "wbaOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74823176,
+          "sha256": "dabf56a73bd2fb84c4cbd15fa126ef28f9e35d575a921c82abe502b97619b329",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 11,
+      "role": "slower175-staged",
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/11_KeepMoving_175.wav",
+      "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "3a21e7262195074ca8e8861e21f6a3eba7e0ab8a3d546e1baaf20525b24d7b8f",
+          "payload_base64": "wbaOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74823176,
+          "sha256": "dabf56a73bd2fb84c4cbd15fa126ef28f9e35d575a921c82abe502b97619b329",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    },
+    {
+      "order": 11,
+      "role": "retitled-staged",
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/11_ForwardPulse.wav",
+      "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+      "chunks": [
+        {
+          "id": "fmt ",
+          "offset": 12,
+          "payload_offset": 20,
+          "payload_bytes": 18,
+          "sha256": "afdb9adc79c7ae6225a27f02dbd742fb72b278f98c1d308607edb0b2c147cdad",
+          "payload_base64": "AwACAIC7AAAA3AUACAAgAAAA",
+          "wave_format": {
+            "format_tag": 3,
+            "channels": 2,
+            "sample_rate": 48000,
+            "average_bytes_per_second": 384000,
+            "block_align": 8,
+            "bits_per_sample": 32
+          }
+        },
+        {
+          "id": "fact",
+          "offset": 38,
+          "payload_offset": 46,
+          "payload_bytes": 4,
+          "sha256": "3a21e7262195074ca8e8861e21f6a3eba7e0ab8a3d546e1baaf20525b24d7b8f",
+          "payload_base64": "wbaOAA=="
+        },
+        {
+          "id": "LIST",
+          "offset": 50,
+          "payload_offset": 58,
+          "payload_bytes": 26,
+          "sha256": "cb67ec3826392e95cc1dd50cae57f305b11ae12ec281ab817b2d433b0b1338c7",
+          "payload_base64": "SU5GT0lTRlQNAAAATGF2ZjYyLjMuMTAwAAA=",
+          "list_type": "INFO",
+          "subchunks": [
+            {
+              "id": "ISFT",
+              "relative_offset": 4,
+              "payload_bytes": 13,
+              "value": "Lavf62.3.100",
+              "payload_hex": "4c61766636322e332e31303000"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "offset": 84,
+          "payload_offset": 92,
+          "payload_bytes": 74823176,
+          "sha256": "dabf56a73bd2fb84c4cbd15fa126ef28f9e35d575a921c82abe502b97619b329",
+          "interpretation": "audio sample payload; not scanned for metadata strings"
+        }
+      ],
+      "ffprobe_format_tags": {
+        "encoder": "Lavf62.3.100"
+      },
+      "ffprobe_stream_tags": [
+        {}
+      ],
+      "complete_container_traversal": true,
+      "trailing_bytes": 0
+    }
+  ],
+  "raw_probe": {
+    "recorded_at_utc": "2026-10-24T00:32:57.093133+00:00",
+    "source_manifests": {
+      "SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+      "SERIES/06-30/input/suno-replacement/2026-10-24/retry-retitled/retry-manifest.json": "47bd741b61b7a9826209dec3df56e435e090e8c9a3fb7c2e1e455c3d4b15c418"
+    },
+    "method": "ffprobe format/stream tags plus complete sequential RIFF chunk-header traversal; non-data payloads recorded. No audio-data string scan; no upload, API detection, processing or source writes.",
+    "files": [
+      {
+        "order": 6,
+        "role": "approved176",
+        "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+        "exists": true,
+        "manifest_expected_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+        "bytes": 74331380,
+        "sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-approved176.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-approved176.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "193.571063",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 6,
+        "role": "slower175",
+        "path": "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/06-target175.wav",
+        "exists": true,
+        "manifest_expected_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "bytes": 74747868,
+        "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-slower175.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/06-target175.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-slower175.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.655667",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 6,
+        "role": "slower175-staged",
+        "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/06_LegSpark_175.wav",
+        "exists": true,
+        "manifest_expected_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "bytes": 74747868,
+        "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-slower175-staged.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/06_LegSpark_175.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-slower175-staged.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.655667",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 6,
+        "role": "retitled-staged",
+        "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/06_DawnCurrent.wav",
+        "exists": true,
+        "manifest_expected_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "bytes": 74747868,
+        "sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-retitled-staged.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/06_DawnCurrent.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/06-retitled-staged.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.655667",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "97e6b8e2db8bfb310b4d3b502b4f8223caeb1b0fdc6f4eb462076d7cdac6e7e2",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 11,
+        "role": "approved176",
+        "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+        "exists": true,
+        "manifest_expected_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+        "bytes": 74406364,
+        "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-approved176.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-approved176.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "193.766333",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 11,
+        "role": "slower175",
+        "path": "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/11-target175.wav",
+        "exists": true,
+        "manifest_expected_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "bytes": 74823268,
+        "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-slower175.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/work/0630-suno-retry-slower-20261024/11-target175.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-slower175.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.852021",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 11,
+        "role": "slower175-staged",
+        "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/11_KeepMoving_175.wav",
+        "exists": true,
+        "manifest_expected_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "bytes": 74823268,
+        "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-slower175-staged.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_ejvz33oJaFZrzP1F/artifacts/retry-slower/11_KeepMoving_175.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-slower175-staged.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.852021",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "unchanged_by_inspection": true
+      },
+      {
+        "order": 11,
+        "role": "retitled-staged",
+        "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/11_ForwardPulse.wav",
+        "exists": true,
+        "manifest_expected_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "bytes": 74823268,
+        "sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "manifest_sha256_match": true,
+        "riff_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-retitled-staged.riff.json",
+        "riff_chunk_ids": [
+          "fmt ",
+          "fact",
+          "LIST",
+          "data"
+        ],
+        "riff_errors": [],
+        "riff_info": [
+          {
+            "id": "ISFT",
+            "relative_offset": 4,
+            "payload_bytes": 13,
+            "value": "Lavf62.3.100",
+            "payload_hex": "4c61766636322e332e31303000"
+          }
+        ],
+        "ffprobe_command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_format",
+          "-show_streams",
+          "-of",
+          "json",
+          "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_JjuuGTivIu1eWeAi/artifacts/retry-retitled/11_ForwardPulse.wav"
+        ],
+        "ffprobe_exit_code": 0,
+        "ffprobe_stderr": "",
+        "ffprobe_evidence_path": "/Users/zenkim_office/Project/wavvy/work/0630-audio-metadata-probe-20261024/11-retitled-staged.ffprobe.json",
+        "format_tags": {
+          "encoder": "Lavf62.3.100"
+        },
+        "stream_tags": [
+          {}
+        ],
+        "duration_seconds": "194.852021",
+        "audio_streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_fmt": "flt",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 32
+          }
+        ],
+        "after_inspection_sha256": "94052a47541fc41678c5565fa9873032d5a50fb6cbcadade72de97beef2917c7",
+        "unchanged_by_inspection": true
+      }
+    ],
+    "comparisons": [
+      {
+        "order": 6,
+        "all_expected_sha256_match": true,
+        "slower_and_prior_stage_identical": true,
+        "slower_and_retitled_stage_identical": true,
+        "all_four_unchanged_by_inspection": true
+      },
+      {
+        "order": 11,
+        "all_expected_sha256_match": true,
+        "slower_and_prior_stage_identical": true,
+        "slower_and_retitled_stage_identical": true,
+        "all_four_unchanged_by_inspection": true
+      }
+    ]
+  },
+  "official_sources": [
+    {
+      "url": "https://suno.com/suno-credentials",
+      "observed": "Suno states newly downloaded songs going forward receive C2PA metadata identifying AI content made with Suno; this does not establish that the checked recordings contain it."
+    },
+    {
+      "url": "https://suno.com/safety",
+      "observed": "Updated October1 2026; Suno states multiple checks block input similar to existing recordings and lyrics."
+    },
+    {
+      "url": "https://www.suno.com/blog/suno-partners-with-audible-magic",
+      "observed": "October18 2024; integration of Audible Magic content identification into uploads announced."
+    }
+  ],
+  "findings": {
+    "inspected_embedded_song_title_or_id_found": false,
+    "observed_metadata": {
+      "ISFT": "Lavf62.3.100"
+    },
+    "c2pa_metadata_in_checked_riff_container_found": false,
+    "exact_rejection_cause": "unconfirmed",
+    "audio_content_matching": "plausible inference, not a confirmed diagnosis for these two tracks"
+  },
+  "limits": [
+    "RIFF metadata inspection is not a test for an inaudible watermark inside audio samples.",
+    "No C2PA detection service/API or new upload invoked.",
+    "No audio data string scan or new listener approval.",
+    "No source or metadata changes."
+  ],
+  "pass_all": true
+}
