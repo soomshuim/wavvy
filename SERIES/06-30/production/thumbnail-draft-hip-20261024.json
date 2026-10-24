@@ -1,0 +1,76 @@
+{
+  "schema": "wavvy.thumbnail-draft.v1",
+  "created_at": "2026-10-24T10:41:34.413902+09:00",
+  "status": "superseded_by_v2_after_user_personal_style_direction",
+  "series": "06:30",
+  "design_read": "새벽 강변 러닝 크루 / 강한 러닝 음악 청자 / 거친 에너지와 청량함 / 오른쪽 전경의 힘찬 러너 한 명 / 왼쪽은 향후 Wavvy 06:30과 짧은 문구 자리",
+  "user_direction_at_generation": "썸네일은 07:00 의 더 힙한 버전으로",
+  "latest_user_steering_received_after_generation": "ai티가 덜 나는 감각적인 일상 사진 느낌이어야해. 인물은 젊고 힙하고 개성이 있어야해",
+  "generation": {
+    "tool": "image_gen__imagegen",
+    "mode": "built-in",
+    "generation_count": 1,
+    "input_mechanism": "text prompt only; reference images inspected but not submitted",
+    "transparent_background": false,
+    "source_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-ca51007e-33ee-4d1e-b0c5-1a53bce34150.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: ONE text-free 16:9 photographic scene DRAFT for a Wavvy 06:30 running-music YouTube thumbnail. Review resolution 1536 x 864, well below 4K. Produce a single image only.\n\nPrimary request: A more hip, more immediate editorial street-running version of a dawn riverside running crew photograph. It must feel like a real candid image shot while running, with powerful rock and breakbeat energy, rather than a fashion pose. Create an original composition and original people.\n\nScene/backdrop: A red rubber riverside running path in Seoul at blue-hour dawn around 06:30. Low metal railing beside dark blue river water, small distant city buildings and bridge lights, deep blue-purple clouds with only a narrow peach line on the horizon. The path creates a strong diagonal perspective toward the distance. No rain, no nightclub.\n\nSubject and action: One adult East Asian woman runner is the clear focal point in the right foreground, running fast diagonally toward and just past the moving camera. Her body is unmistakably in a natural active running stride: a powerful grounded push-off, the other knee driving forward, elbows bent and hands relaxed, balanced athletic anatomy. She has a short slightly windblown dark bob, a naturally focused energized expression and real skin texture, not a beauty-advertisement smile. Plain charcoal technical running clothes: a light windbreaker partially unzipped over a dark running top, running shorts, one restrained cobalt-blue fabric panel and a small acid-lime accessory detail. Plain unbranded pale running shoes. Two adult friends are much smaller and farther behind her on the right half of the path, also clearly running, wearing understated dark technical clothes.\n\nComposition/framing: Landscape exactly 16:9. Close, low wide-angle perspective from approximately knee height, with a subtle 4-degree camera tilt. The main runner fills the rightmost 45 percent of the frame, head comfortably below the top edge and her dynamic stride visible. Do not place any person in the left 43 percent. Keep the upper-left and lower-left broad, dark, quiet and uncluttered, using open deep blue sky and river for later logo and short copy. The view should have depth, strong foreground presence, and a spontaneous street-sports editorial attitude. Avoid a centered symmetrical stock-photo arrangement.\n\nLighting/mood: Direct on-camera flash crisply freezes the main runner with believable highlights, sweat and fabric texture, while retaining the cool dark dawn atmosphere. Gentle background directional motion and slight trail in distant lights only; the focal runner and all her limbs stay sharp and anatomically convincing. Natural photographic contrast and restrained fine grain, rich cool blue-black background with subtle warm horizon, no glossy CGI finish.\n\nConstraints: This is the scene only. Absolutely no words, letters, numbers, typography, captions, logos, watermarks, branded clothing marks, badges, graphic overlays, decorative shapes or borders. No headphones or sunglasses. No neon cyberpunk, nightclub styling or artificial glowing outlines. No duplicate faces, extra limbs, distorted hands or shoes, or static fashion poses. Do not recreate any existing person's exact face, pose or source photograph."
+  },
+  "worker_runtime": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence": "/Users/zenkim_office/.codex/sessions/2026/10/24/rollout-2026-10-24T10-38-52-01a16b8f-8df2-7470-9784-a394c44b28ec.jsonl",
+    "evidence_type": "turn_context model and effort plus explicit-session context-guard measurement"
+  },
+  "references_inspected": [
+    {
+      "path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30",
+      "role": "style/brand reference only"
+    },
+    {
+      "path": "SERIES/17-30/input/thumb.jpg",
+      "sha256": "634cbb9ff89b2c39cf89a240100368b310c0e22bfaee60a0463170f25912e025",
+      "role": "style/brand reference only"
+    },
+    {
+      "path": "brand/logo_wavvy.png",
+      "sha256": "140be637760ab412ec45b869a4c776a315b5f447232149947bff576e28e51607",
+      "role": "style/brand reference only"
+    }
+  ],
+  "output": {
+    "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "bytes": 2219009,
+    "sha256": "1cf8fff78a2e488c10ae311fc17bc4cdcec60551f03b47c4547c4060876e4035",
+    "native_generation": true,
+    "enlarged": false,
+    "cropped": false,
+    "requested_aspect_ratio": "16:9",
+    "exact_16_9": false,
+    "actual_aspect_ratio": 1.7768331562167907
+  },
+  "inspection": {
+    "seen_with": "view_image",
+    "observed": "Single foreground runner at right, two runners behind, dawn river path, direct flash, broad left negative space, no composed text/logo.",
+    "limitations": [
+      "Generated before latest candid daily-life photography instruction arrived.",
+      "A polished sports-campaign impression remains; distinctive everyday personality and snapshot imperfections are weak.",
+      "Native output is 1672x941, approximately 16:9 but not mathematically exact.",
+      "The near leg is cropped by the bottom edge."
+    ],
+    "formal_review_performed": false,
+    "user_visual_approval": false
+  },
+  "boundaries": {
+    "final_loop_created": false,
+    "final_thumbnail_created": false,
+    "four_k_created": false,
+    "audio_changed": false,
+    "state_or_manifests_changed_by_this_worker": false,
+    "shared_concept_session_changelog_changed_by_this_worker": false
+  },
+  "superseded_by": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json"
+}

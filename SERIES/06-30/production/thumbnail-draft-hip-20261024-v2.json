@@ -1,0 +1,85 @@
+{
+  "schema": "wavvy.thumbnail-draft.v1",
+  "created_at": "2026-10-24T10:43:13.533221+09:00",
+  "status": "awaiting_user_visual_approval",
+  "series": "06:30",
+  "draft_version": 2,
+  "previous_draft_preserved": "SERIES/06-30/input/thumbnail-draft-hip-20261024.png",
+  "design_read": "강변을 달리는 20대 친구들 / 강한 러닝 음악 청자 / 감각적인 일상 사진과 편한 개성 / 오른쪽의 짧은 머리 러너 / 왼쪽은 향후 Wavvy 06:30과 짧은 문구 자리",
+  "user_direction": [
+    "썸네일은 07:00 의 더 힙한 버전으로",
+    "ai티가 덜 나는 감각적인 일상 사진 느낌이어야해. 인물은 젊고 힙하고 개성이 있어야해"
+  ],
+  "steering_timing": {
+    "candid_daily_life_direction": "received after v1 completed; incorporated before v2 generation",
+    "night_optional_direction": "밤이 아니어도 돼",
+    "night_optional_direction_received": "after v2 generation completed; no automatic third image was made"
+  },
+  "generation": {
+    "tool": "image_gen__imagegen",
+    "mode": "built-in",
+    "image_count_this_call": 1,
+    "generation_count_this_worker_total": 2,
+    "input_mechanism": "fresh text prompt only; no previous generated image or face supplied",
+    "transparent_background": false,
+    "source_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-9dee2185-b804-4000-af7d-f6effb7a3ec4.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: ONE text-free landscape 16:9 draft scene, requested review size 1536 x 864, for a running-music thumbnail.\n\nPrimary request: A stylish but ordinary candid daily-life photograph of a young adult running crew at dawn. The image should feel like a friend quickly took it on a small 35mm compact camera while running together. Less polished and less obviously AI-generated. Individual personality, real people, a casually observed moment, not models in a sports advertising campaign. Create entirely new people and a new composition.\n\nScene: An urban riverside running path just before sunrise in Seoul, close to the open end of a concrete bridge underpass. The river is visible toward the left, an ordinary metal railing, scuffed red running pavement, a little grass at the edges and a few distant lamps. Some weathered concrete on the far right makes the setting feel lived in. Deep muted blue dawn with a low soft peach horizon. The setting has depth and everyday details without becoming busy.\n\nPeople and moment: Three young adult friends in their twenties are genuinely running. Main runner is an adult East Asian woman close to the camera in the right half, seen from an informal three-quarter angle. She has individual ordinary facial features, slightly flushed cheeks, a short choppy dark shag with an uneven short fringe, flyaway hair, and a tiny silver ear cuff. She wears a faded oversized charcoal training T-shirt, plain loose navy running shorts and worn light-gray running shoes with one restrained acid-lime lace detail. No visible brand or writing. The fabric falls and wrinkles naturally from running. She is caught between steps, arms swinging naturally and shoulders relaxed, turning her eyes briefly toward a friend just beside and behind the camera; her expression is an unposed, slightly breathless half-smile with personality. She is clearly running at a strong training pace, not walking or posing. Two friends run slightly farther behind to the right, with distinct hairstyles and simple, different plain training clothes. The crew feels comfortable together rather than arranged for a shoot.\n\nCamera and framing: Real 35mm compact-camera photograph at about waist height, taken while moving backward ahead of them, slightly off-level and imperfectly framed. An intimate spontaneous snapshot with the main runner at approximately 68 percent of the image width, not the exact arrangement of a familiar stock running photo. Main runner should be visibly in a credible mid-stride from head to shoes with convincing anatomy. Preserve a usable quiet left third made from the shadowed river and sky for future thumbnail lettering, but do not leave two-thirds of the whole frame empty. The environment and running friends should make it feel like a real moment.\n\nLight and photographic texture: A modest direct camera flash catches faces, hair and the T-shirt with ordinary point-and-shoot-camera light, not glamour beauty lighting. Natural dawn exposure, soft shadows under eyes, nonuniform real skin texture and tiny imperfections, no airbrushing. A little fine 35mm film grain, slight background motion softness, slightly imperfect exposure. Muted cool-blue and charcoal tones, worn red path and a faint warm horizon. Keep faces legible and human, without excessive detail enhancement.\n\nConstraints: Absolutely no text, letters, numbers, brand logos, watermarks, captions, borders or decorative graphics. No fashion editorial posing, no generic symmetrical catalogue faces, no plastic skin, no hyper-detailed AI beauty look, no HDR, no excessive sharpening, no studio rim light, no neon nightclub styling, no cyberpunk. Avoid costume-like accessories and flashy fashion props. No duplicate people, extra fingers, extra limbs, fused limbs or broken running mechanics. This is one small draft only; do not make 4K or multiple alternatives."
+  },
+  "worker_runtime": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence": "/Users/zenkim_office/.codex/sessions/2026/10/24/rollout-2026-10-24T10-38-52-01a16b8f-8df2-7470-9784-a394c44b28ec.jsonl",
+    "evidence_type": "turn_context model and effort plus explicit-session context-guard measurement"
+  },
+  "references_inspected": [
+    {
+      "path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30",
+      "role": "style/brand reference inspected only, not image-generation input"
+    },
+    {
+      "path": "SERIES/17-30/input/thumb.jpg",
+      "sha256": "634cbb9ff89b2c39cf89a240100368b310c0e22bfaee60a0463170f25912e025",
+      "role": "style/brand reference inspected only, not image-generation input"
+    },
+    {
+      "path": "brand/logo_wavvy.png",
+      "sha256": "140be637760ab412ec45b869a4c776a315b5f447232149947bff576e28e51607",
+      "role": "style/brand reference inspected only, not image-generation input"
+    }
+  ],
+  "output": {
+    "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "bytes": 2405783,
+    "sha256": "807be7ae1295e69e690aba2440375e6e0ee77d75184bba587909b6633b66990d",
+    "native_generation": true,
+    "enlarged": false,
+    "cropped": false,
+    "requested_aspect_ratio": "16:9",
+    "exact_16_9": false,
+    "actual_aspect_ratio": 1.7768331562167907
+  },
+  "inspection": {
+    "seen_with": "view_image",
+    "observed": "Short uneven hair, plain worn charcoal T-shirt and shorts, running midstride with candid smile toward friend; two distinct friends behind; grainy direct-flash scene with dawn river and underpass; usable left side; no composed logo or letters.",
+    "limitations": [
+      "Native output is 1672x941, approximately 16:9 but not mathematically exact.",
+      "The near leg is cropped by the bottom edge despite the full-stride prompt.",
+      "The scene remains dawn; daylight was permitted by the user after this image had completed.",
+      "Image-generation artificiality cannot be certified absent. User visual approval is outstanding."
+    ],
+    "formal_review_performed": false,
+    "user_visual_approval": false
+  },
+  "boundaries": {
+    "final_loop_created": false,
+    "final_thumbnail_created": false,
+    "four_k_created": false,
+    "audio_changed": false,
+    "state_or_manifests_changed_by_this_worker": false,
+    "shared_concept_session_changelog_changed_by_this_worker": false
+  }
+}

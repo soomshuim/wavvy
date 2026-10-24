@@ -1,0 +1,38 @@
+{
+  "scope": "Incomplete continuous-mix checkpoint gates; not final audio acceptance",
+  "commands": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "syntax",
+        "chunk_id": "5716e8",
+        "wall_time_seconds": 0.000006209,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "state",
+        "chunk_id": "adb729",
+        "wall_time_seconds": 0.498422875,
+        "exit_code": 0,
+        "original_token_count": 575,
+        "output": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 84,\n    \"updated_at\": \"2026-10-24T10:15:31\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 20,\n      \"available_audio_files\": 20,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"unverified\",\n      \"subtitle_published\": \"unverified\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"unverified\",\n      \"published\": \"unverified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "diff_and_routes",
+        "chunk_id": "3be5a6",
+        "wall_time_seconds": 0.000006542,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  ]
+}
