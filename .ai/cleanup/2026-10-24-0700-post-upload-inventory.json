@@ -1,0 +1,2636 @@
+{
+  "schema": "wavvy.post_upload_cleanup_inventory.v1",
+  "created_at_utc": "2026-10-24T09:37:31.939583+00:00",
+  "root": "/Users/zenkim_office/Project/wavvy",
+  "series": "SERIES/07-00",
+  "authorization": [
+    "이제 폴더 파일 정리해 뭐해야하는지 기억해?",
+    "다음은 07:00에서 06:30과 똑같은 작업을할거야.",
+    "유튜브 업로드하면 이번 영상도 삭제할거야.",
+    "최종 버전 기록 아닌 과정 기록이면 문서도 다 지워."
+  ],
+  "scope": "07:00 uploaded audio/video and process files, exact matching Downloads/browser copies only; no other series or general caches",
+  "candidates": [
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-comments-after.json",
+      "reason": "browser duplicate of retained final publication evidence",
+      "bytes": 585,
+      "device": 16777233,
+      "inode": 461982164,
+      "mtime_ns": 1792833824132463310,
+      "sha256": "985216fcd1161c62306672376c5a64ab8f4467d17eb05cf200ed7cccdca87cbc"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-comments-before.json",
+      "reason": "browser duplicate of retained final publication evidence",
+      "bytes": 69,
+      "device": 16777233,
+      "inode": 461981496,
+      "mtime_ns": 1792833778866170957,
+      "sha256": "617a486bf8ebaa062d6b617010144ec780dd16086b21b1c200f68bf33f694cd6"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-public-metadata.json",
+      "reason": "browser duplicate of retained final publication evidence",
+      "bytes": 3246,
+      "device": 16777233,
+      "inode": 461981495,
+      "mtime_ns": 1792833778865699119,
+      "sha256": "d883763f41115b4a62d8820c49814e69cdfd6078475f3ad1229de1398a9eb663"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-public-watch.jpg",
+      "reason": "publication inspection image; final user artwork retained",
+      "bytes": 4857816,
+      "device": 16777233,
+      "inode": 461983988,
+      "mtime_ns": 1792833928146657032,
+      "sha256": "17acd059fa6f015f6c6061f537796c56884d31a79982699aae151aefae58f1e7"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-published-thumbnail.jpg",
+      "reason": "publication inspection image; final user artwork retained",
+      "bytes": 360595,
+      "device": 16777233,
+      "inode": 461982393,
+      "mtime_ns": 1792833844340539109,
+      "sha256": "03f7ced6cabe862b27c9dec4cea347f939483dcfa5884b69db7a9fb20710fdd1"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/artifacts/youtube-0700-upload-observations.json",
+      "reason": "browser duplicate of retained final publication evidence",
+      "bytes": 304321,
+      "device": 16777233,
+      "inode": 461960777,
+      "mtime_ns": 1792834457740784833,
+      "sha256": "d6208141153024a4ee5f7e216d5c6912b38a21a70ad08622c2a39efdaf1d675d"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/1. 문을 열고.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 34320400,
+      "device": 16777233,
+      "inode": 461681173,
+      "mtime_ns": 1792827192338430363,
+      "sha256": "24fdc9bf96bc281b3316ab72feb8217af01ebe8c40fea154ca81b047d1941ca8"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/10. 생각을 놓고.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 27892240,
+      "device": 16777233,
+      "inode": 461685217,
+      "mtime_ns": 1792827734291194525,
+      "sha256": "e83968778e85160a3ace3f9752d413acd6aa33504eff201ddc5641eda89dea07"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/11. 다시 해볼게.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 34566160,
+      "device": 16777233,
+      "inode": 461685455,
+      "mtime_ns": 1792827763034461047,
+      "sha256": "e81f449a221e011b462972100497a3ac876e033d6699a4568a3eb6043498d1b2"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/12. 바람이 바뀌어.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 31110172,
+      "device": 16777233,
+      "inode": 461685812,
+      "mtime_ns": 1792827795414553740,
+      "sha256": "6245471648d0d0d05e55b1785eebdaa19fdce5b0ae83c32658f4eba64117b3d3"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/13. 호흡.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36831760,
+      "device": 16777233,
+      "inode": 461686502,
+      "mtime_ns": 1792827891606781033,
+      "sha256": "eb297739baff114d7f04dea78469567ec98e5f09da8ac1d4c41d33cec763da7d"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/14. 하나씩.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36647440,
+      "device": 16777233,
+      "inode": 461686723,
+      "mtime_ns": 1792827929173063694,
+      "sha256": "4ca2108ac65335584b2dececc224f50c762d9f3dd760ebd71b91e709cffb1e69"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/15. 드럼 위로.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 30111760,
+      "device": 16777233,
+      "inode": 461686924,
+      "mtime_ns": 1792827958776179464,
+      "sha256": "1281b1726e93d742a886765ec5821621df463a82372a1af66f3592e813fba373"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/16. 비가 갠 뒤.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 28199446,
+      "device": 16777233,
+      "inode": 461687885,
+      "mtime_ns": 1792828091526864523,
+      "sha256": "77045f4b27f082de96eaaceb5425ea36bba14ad980dc0aa4e37779ce8f178b64"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/17. 이어지는 소리.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 39873046,
+      "device": 16777233,
+      "inode": 461688248,
+      "mtime_ns": 1792828126337799526,
+      "sha256": "ff1e611b7a0aa3660ad5e03103fd7291226d5b881371a2260b3bf950fa051861"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/18. 가까운 곳.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36908560,
+      "device": 16777233,
+      "inode": 461688658,
+      "mtime_ns": 1792828158781109910,
+      "sha256": "2ec1ff2be3fb6ffe9c1ad08d957c714a4e1ffee98a59b0ff43ff34d8abadfcd2"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/19. 괜찮은 날.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36793360,
+      "device": 16777233,
+      "inode": 461689383,
+      "mtime_ns": 1792828210263460078,
+      "sha256": "3a0228558770ca28d265c9f05b52b17c79a94e63fcd4bb1177ebf4ef3585bae6"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/2. 파란불.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36877840,
+      "device": 16777233,
+      "inode": 461682959,
+      "mtime_ns": 1792827472546586000,
+      "sha256": "a51e78f5ecad7c5111388dcf38eba1803841cd3f34d44b65ef3c919bd0642bac"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/20. 집으로 가는 길.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 27585040,
+      "device": 16777233,
+      "inode": 461689834,
+      "mtime_ns": 1792828245461045509,
+      "sha256": "4ca2d14aac2826069cdf66ce3103bdb0b6887ee4dec19e14d7051a27d9f22688"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/3. 첫 바퀴.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 27608080,
+      "device": 16777233,
+      "inode": 461683186,
+      "mtime_ns": 1792827511753916704,
+      "sha256": "412795e58f51c5eecf41060bc0767895ede9feaf8f20d4341d58af3aa1a4e700"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/4. 조금 일찍.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 36801040,
+      "device": 16777233,
+      "inode": 461679667,
+      "mtime_ns": 1792827039065047872,
+      "sha256": "5219b3d14a564c185bf9f6a1f459fecb941753b0560f76182f2b43e847286e8a"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/5. 길을 바꿔.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 34443280,
+      "device": 16777233,
+      "inode": 461683377,
+      "mtime_ns": 1792827535992472870,
+      "sha256": "cf5783f3f21adb1afa8ea13ccfb38af30b1e2a422375290f079eb7f95e7f2d5d"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/6. 정해 둔 건 없어.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 23898640,
+      "device": 16777233,
+      "inode": 461683621,
+      "mtime_ns": 1792827555536791648,
+      "sha256": "51a6391a3782452c524a18d7f8e25b2bbb251342dfaf28f79c5c07bdff2f3012"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/7. 같은 방향.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 34312720,
+      "device": 16777233,
+      "inode": 461684202,
+      "mtime_ns": 1792827617887771279,
+      "sha256": "96d1aed220435923b0ba7976dda74aa460f685bb7903d9ffb1d03b8077c068b3"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/8. 낮은 비트.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 38406160,
+      "device": 16777233,
+      "inode": 461684481,
+      "mtime_ns": 1792827649367816864,
+      "sha256": "5702fe48f2dfcda832ee51acf125c93b0693c091e6ddd99276104f3cbac5b20d"
+    },
+    {
+      "path": "/Users/zenkim_office/Downloads/9. 숨을 세어.wav",
+      "reason": "matching exact 07:00 Suno download copy",
+      "bytes": 38851600,
+      "device": 16777233,
+      "inode": 461684791,
+      "mtime_ns": 1792827682209309403,
+      "sha256": "38ee23b39b28d99337fa79cf080c0c54d3cc665e964c94efafa9a1158482ac43"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/plans/2026-10-24-0700-180bpm-remaster.md",
+      "reason": "completed workflow plan; final result retained in concept/session/publication record",
+      "bytes": 9372,
+      "device": 16777233,
+      "inode": 461677889,
+      "mtime_ns": 1792834704955357332,
+      "sha256": "e193d01c7ad7eb40d504c47a3f4d0ff85063dc8819b25e28ffb0857b88128002"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/.DS_Store",
+      "reason": "local cache",
+      "bytes": 8196,
+      "device": 16777233,
+      "inode": 270205393,
+      "mtime_ns": 1792832542209476141,
+      "sha256": "40047b413775458c27d4d1f90ec05eeebf2130fa5ccfecf3481c828c6faa236a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/.DS_Store",
+      "reason": "local cache",
+      "bytes": 12292,
+      "device": 16777233,
+      "inode": 270347890,
+      "mtime_ns": 1792829531210829221,
+      "sha256": "ba9962fbc1d5f7900d1d231042602b142ad1050a7bfb1546bdf30664c9e24bd4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/candidate-review.md",
+      "reason": "superseded review or planning document",
+      "bytes": 5241,
+      "device": 16777233,
+      "inode": 147946883,
+      "mtime_ns": 1791010282773371150,
+      "sha256": "3cc30825561d71464ba0c45758d27d286b69b1145b3f0ed7d38c7510e03bd0a5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/cover-review.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3698,
+      "device": 16777233,
+      "inode": 148139736,
+      "mtime_ns": 1791013047918657157,
+      "sha256": "b979107e5add8f6a61c3547102be336b889ddeeef7f2047865a17f3ecfda8cbf"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/01_문을 열고.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3729,
+      "device": 16777233,
+      "inode": 147918117,
+      "mtime_ns": 1791005283849918648,
+      "sha256": "acc84a115016dbf5a45365fe7d40574c16633bfe453c36dabfb0e3fe8e0b230c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/02_파란불.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3782,
+      "device": 16777233,
+      "inode": 147918118,
+      "mtime_ns": 1791005283850265690,
+      "sha256": "310a527965166ee4828f6e0c626327a8f047bf80c8de6f162fdd12a6020c98ba"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/03_첫 바퀴.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3694,
+      "device": 16777233,
+      "inode": 147918119,
+      "mtime_ns": 1791005283850518857,
+      "sha256": "792f4d2136bae7a8b0a0bf14325a3d89c41587780f37c5ac1a9f724ce2b19359"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/04_조금 일찍.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3751,
+      "device": 16777233,
+      "inode": 147918120,
+      "mtime_ns": 1791005283850680107,
+      "sha256": "3eb41ee42f96bb3a19fc86540b64aeab8d35959837a749b59c55ccbd7f023a30"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/05_길을 바꿔.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3707,
+      "device": 16777233,
+      "inode": 147918121,
+      "mtime_ns": 1791005283850819440,
+      "sha256": "000feb19cb45bd29f3e59312f9838e2649418dbc1ddbf00a55ef491cbc4c4cae"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/06_정해 둔 건 없어.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3750,
+      "device": 16777233,
+      "inode": 147918122,
+      "mtime_ns": 1791005283850954524,
+      "sha256": "d3ef00da037653041cf279c34465a29e30ca21df8fae46fa7bcf539c6361ab25"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/07_같은 방향.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3736,
+      "device": 16777233,
+      "inode": 147918123,
+      "mtime_ns": 1791005283851081149,
+      "sha256": "b6eda93673831169712a34a9ec8e7079ca5e74a937915da22c09fc4b84aac08c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/08_낮은 비트.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3796,
+      "device": 16777233,
+      "inode": 147918124,
+      "mtime_ns": 1791005283851200774,
+      "sha256": "7413cbf9ab4ef491d37fed5f20a5f187331c8ed5ace2efa21ad75f64862384b6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/09_숨을 세어.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3686,
+      "device": 16777233,
+      "inode": 147918125,
+      "mtime_ns": 1791005283851318232,
+      "sha256": "43b5467f10afc653b3b36cc38893c61e79598bca13990d948e85cb1519aaf84f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/10_생각을 놓고.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3750,
+      "device": 16777233,
+      "inode": 147918126,
+      "mtime_ns": 1791005283851438441,
+      "sha256": "5a8338d7a7052d850ea024d4097fd492eb55bac498a363ed63564a6a4b67c61a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/11_다시 해볼게.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3725,
+      "device": 16777233,
+      "inode": 147918127,
+      "mtime_ns": 1791005283851560274,
+      "sha256": "77c58217490f83be8bde62404b7585708869124bcffa0654b4e16de7f4f267b3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/12_바람이 바뀌어.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3756,
+      "device": 16777233,
+      "inode": 147918128,
+      "mtime_ns": 1791005283851678941,
+      "sha256": "6154ef30c89d8425b77d56fa62248e3c5ff970d73709a8e1012218a4dd6dad4d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/13_호흡.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3692,
+      "device": 16777233,
+      "inode": 147918129,
+      "mtime_ns": 1791005283851798232,
+      "sha256": "958d6d0dc1255a0793eef1c6a465ff9a818c074573271d46b179f0c4e7242773"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/14_하나씩.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3710,
+      "device": 16777233,
+      "inode": 147918130,
+      "mtime_ns": 1791005283851918108,
+      "sha256": "484950080b8f1a1924a643cd4647deecf1634191d2fc8ff6ae3d792a62135f9c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/15_드럼 위로.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3702,
+      "device": 16777233,
+      "inode": 147918131,
+      "mtime_ns": 1791005283852033608,
+      "sha256": "2e0e4043128a5661ed9b2e1ab86c9ea1db65fd65132e9364229b24c766b0a842"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/16_비가 갠 뒤.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3738,
+      "device": 16777233,
+      "inode": 147918132,
+      "mtime_ns": 1791005283852146566,
+      "sha256": "970b06d4d1d5368d8df70e5f5d74d12bc93d1d2f3e6c9478c7c69dbeb5825e20"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/17_이어지는 소리.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3763,
+      "device": 16777233,
+      "inode": 147918133,
+      "mtime_ns": 1791005283852260358,
+      "sha256": "0c18fac2c02be8ca8f93b0f5baaa32f084f329bdf4463821919682d82a647210"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/18_가까운 곳.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3738,
+      "device": 16777233,
+      "inode": 147918134,
+      "mtime_ns": 1791005283852368650,
+      "sha256": "a0ade26f343f8da9befd9777a50877596670b0bbeba409093099f996960c6c0d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/19_괜찮은 날.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3706,
+      "device": 16777233,
+      "inode": 147918135,
+      "mtime_ns": 1791005283852486233,
+      "sha256": "3ef5cb096b3794477f3d8dcca26c1721af752d4384a784ebdaf9390ceab3d243"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/lyric-reviews/20_집으로 가는 길.md",
+      "reason": "superseded review or planning document",
+      "bytes": 3760,
+      "device": 16777233,
+      "inode": 147918136,
+      "mtime_ns": 1791005283852602858,
+      "sha256": "a3b43c6d2518cfd90f7ce31544a933d7f949ad169208db33ec132b2a48e603cc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/01__문을 열고__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 71416066,
+      "device": 16777233,
+      "inode": 461688481,
+      "mtime_ns": 1792828140678705306,
+      "sha256": "ed6d09085416f233b935849bf8738d209bd0e74083592dac815784a61f340b97"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/02__파란불__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 74603842,
+      "device": 16777233,
+      "inode": 461691571,
+      "mtime_ns": 1792828386963041166,
+      "sha256": "db80987378c925431f92af38daf2bd3a69dc4a5f946b73859aa35ca1f0614afd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/03__첫 바퀴__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 55664746,
+      "device": 16777233,
+      "inode": 461688562,
+      "mtime_ns": 1792828142793859781,
+      "sha256": "b0836b814b6befab3171f19cd4d13755a9b0c05f8b0ee7cc6e310f2df5763397"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/04__조금 일찍__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 77741970,
+      "device": 16777233,
+      "inode": 461686428,
+      "mtime_ns": 1792827873899068336,
+      "sha256": "1667e5de3cfe5f21790355f4e3d0f9bb4c58115eb927cc35f9f8b441108890d2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/05__길을 바꿔__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 71111658,
+      "device": 16777233,
+      "inode": 461691661,
+      "mtime_ns": 1792828389607107790,
+      "sha256": "faf4114d9ae16cc72613184511efb88594116c64f7340f1ec00ba53e376f3e9a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/06__정해 둔 건 없어__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 48237802,
+      "device": 16777233,
+      "inode": 461691705,
+      "mtime_ns": 1792828391393954466,
+      "sha256": "808194a44a6182019bcd1d663170a7727933515756f64dc8ae1e0daaf3f4b033"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/07__같은 방향__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 70993722,
+      "device": 16777233,
+      "inode": 461691756,
+      "mtime_ns": 1792828393825682432,
+      "sha256": "826f01f772f63a2cc02aeec788217578a896cc999824d459f3e492297e993c28"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/08__낮은 비트__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 78784658,
+      "device": 16777233,
+      "inode": 461691818,
+      "mtime_ns": 1792828396622864805,
+      "sha256": "8cab1023a54cc72d150b84b9292f9bb1b152b0291e8bcd23e257b3b1f1959de2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/09__숨을 세어__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 79968538,
+      "device": 16777233,
+      "inode": 461691890,
+      "mtime_ns": 1792828399523316523,
+      "sha256": "8eb899be2518ad9b952c0f834e31879549ef654fe51f434a5c2ee4694561a64d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/10__생각을 놓고__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 55319234,
+      "device": 16777233,
+      "inode": 461691930,
+      "mtime_ns": 1792828401548521691,
+      "sha256": "bc70732a111eaeca850fb354b590792a14b1f6e311195a51c2fcd31a37a544fa"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/11__다시 해볼게__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 69210738,
+      "device": 16777233,
+      "inode": 461692000,
+      "mtime_ns": 1792828404028599413,
+      "sha256": "f261cfc72d97794283c8991bcf55f6795dd89e51d26855a7db815b4d6dcfe1ef"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/12__바람이 바뀌어__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 60316338,
+      "device": 16777233,
+      "inode": 461692033,
+      "mtime_ns": 1792828406238606758,
+      "sha256": "896449f3c77ca61291af7b2b2d53cdb3424f50e4fba67de3f9e4b48fa47667fa"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/13__호흡__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 72798514,
+      "device": 16777233,
+      "inode": 461692092,
+      "mtime_ns": 1792828408832895560,
+      "sha256": "cceb82880a645221600accd4348623d4f4fb5526437f45b957c920721bab8c26"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/14__하나씩__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 76006146,
+      "device": 16777233,
+      "inode": 461692173,
+      "mtime_ns": 1792828411564844476,
+      "sha256": "ae30e92c8c5ede4dd0a4622f3c58e8c794b242a8900f99fcfd388a47aded2bb6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/15__드럼 위로__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 62608866,
+      "device": 16777233,
+      "inode": 461692212,
+      "mtime_ns": 1792828413949251506,
+      "sha256": "0c1dcb3da30b42c1a4dd7f415801811ef7905562cd3c5c627bac64e2cfbaabef"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/16__비가 갠 뒤__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 58166458,
+      "device": 16777233,
+      "inode": 461694256,
+      "mtime_ns": 1792828579342194403,
+      "sha256": "b94760fe5c89d895e3351d77b62bd8d7b0cdca131283d2c135a273825588baa7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/17__이어지는 소리__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 81217810,
+      "device": 16777233,
+      "inode": 461806410,
+      "mtime_ns": 1792829648934759027,
+      "sha256": "51eb41a23f56163313a8b37726582d5e6b1000e17f1ea5d3f5d5794b11412aae"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/18__가까운 곳__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 77108994,
+      "device": 16777233,
+      "inode": 461700187,
+      "mtime_ns": 1792828819485386348,
+      "sha256": "191415bbed812d21edbe0eed642a424057d4f55a8a28cf33498039189c2b05dd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/19__괜찮은 날__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 75017098,
+      "device": 16777233,
+      "inode": 461700271,
+      "mtime_ns": 1792828822329580369,
+      "sha256": "88eb95fd4655c4fc8587865479c7f0d98a7f3f03d8fe4e313b1eefba680d17e4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/processed-180/20__집으로 가는 길__180.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 55292026,
+      "device": 16777233,
+      "inode": 461700338,
+      "mtime_ns": 1792828824451432717,
+      "sha256": "a97d268fe4431ab4cf5dab92d5d71e980a9ebcc5ce27b7e692a3ae711e10399e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/redirection-2026-10-06.md",
+      "reason": "superseded review or planning document",
+      "bytes": 6542,
+      "device": 16777233,
+      "inode": 181452353,
+      "mtime_ns": 1791270833880254429,
+      "sha256": "0fbbcc3b6d51e54b5595685d02dca9638824e69b88164de7a5e6ddc67c2862b8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/redirection-review-2026-10-06.md",
+      "reason": "superseded review or planning document",
+      "bytes": 4213,
+      "device": 16777233,
+      "inode": 181485950,
+      "mtime_ns": 1791270735748364432,
+      "sha256": "0d80d0ecf0043a28f7d30ce927fc040a439a1aa3d47992a75af8c9f746ff7d9d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/redirection-round2-review-2026-10-06.md",
+      "reason": "superseded review or planning document",
+      "bytes": 2586,
+      "device": 16777233,
+      "inode": 181711547,
+      "mtime_ns": 1791272972691316284,
+      "sha256": "5157429992b0d064ae06339bddde1f464ed6450ab6569ccd03251c17513e6c3c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remake-review.md",
+      "reason": "superseded review or planning document",
+      "bytes": 4698,
+      "device": 16777233,
+      "inode": 147993717,
+      "mtime_ns": 1791014078712676045,
+      "sha256": "632785daf173e1a66255bc7e6a6475d86d405fa064b63965ac4019b3fb19a8f2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/01__문을 열고__Bright__Guitar Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 34320400,
+      "device": 16777233,
+      "inode": 461682912,
+      "mtime_ns": 1792827459635870544,
+      "sha256": "24fdc9bf96bc281b3316ab72feb8217af01ebe8c40fea154ca81b047d1941ca8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/02__파란불__Driven__Fast Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36877840,
+      "device": 16777233,
+      "inode": 461684166,
+      "mtime_ns": 1792827614786651713,
+      "sha256": "a51e78f5ecad7c5111388dcf38eba1803841cd3f34d44b65ef3c919bd0642bac"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 27608080,
+      "device": 16777233,
+      "inode": 461684167,
+      "mtime_ns": 1792827614853673105,
+      "sha256": "412795e58f51c5eecf41060bc0767895ede9feaf8f20d4341d58af3aa1a4e700"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/04__조금 일찍__Bright__Indie Breakbeat__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36801040,
+      "device": 16777233,
+      "inode": 461680347,
+      "mtime_ns": 1792827112776525967,
+      "sha256": "5219b3d14a564c185bf9f6a1f459fecb941753b0560f76182f2b43e847286e8a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/05__길을 바꿔__Bright__Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 34443280,
+      "device": 16777233,
+      "inode": 461684168,
+      "mtime_ns": 1792827614921993522,
+      "sha256": "cf5783f3f21adb1afa8ea13ccfb38af30b1e2a422375290f079eb7f95e7f2d5d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/06__정해 둔 건 없어__Driven__Guitar Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 23898640,
+      "device": 16777233,
+      "inode": 461684169,
+      "mtime_ns": 1792827614986995690,
+      "sha256": "51a6391a3782452c524a18d7f8e25b2bbb251342dfaf28f79c5c07bdff2f3012"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/07__같은 방향__Driven__Alternative Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 34312720,
+      "device": 16777233,
+      "inode": 461685692,
+      "mtime_ns": 1792827787669267185,
+      "sha256": "96d1aed220435923b0ba7976dda74aa460f685bb7903d9ffb1d03b8077c068b3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 38406160,
+      "device": 16777233,
+      "inode": 461685694,
+      "mtime_ns": 1792827787743278488,
+      "sha256": "5702fe48f2dfcda832ee51acf125c93b0693c091e6ddd99276104f3cbac5b20d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 38851600,
+      "device": 16777233,
+      "inode": 461685698,
+      "mtime_ns": 1792827787821606777,
+      "sha256": "38ee23b39b28d99337fa79cf080c0c54d3cc665e964c94efafa9a1158482ac43"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 27892240,
+      "device": 16777233,
+      "inode": 461686391,
+      "mtime_ns": 1792827872052788920,
+      "sha256": "e83968778e85160a3ace3f9752d413acd6aa33504eff201ddc5641eda89dea07"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 34566160,
+      "device": 16777233,
+      "inode": 461686393,
+      "mtime_ns": 1792827872124693917,
+      "sha256": "e81f449a221e011b462972100497a3ac876e033d6699a4568a3eb6043498d1b2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/12__바람이 바뀌어__Lively__Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 31110172,
+      "device": 16777233,
+      "inode": 461686396,
+      "mtime_ns": 1792827872201883554,
+      "sha256": "6245471648d0d0d05e55b1785eebdaa19fdce5b0ae83c32658f4eba64117b3d3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/13__호흡__Bright__Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36831760,
+      "device": 16777233,
+      "inode": 461687461,
+      "mtime_ns": 1792828050721583642,
+      "sha256": "eb297739baff114d7f04dea78469567ec98e5f09da8ac1d4c41d33cec763da7d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36647440,
+      "device": 16777233,
+      "inode": 461687462,
+      "mtime_ns": 1792828050792645650,
+      "sha256": "4ca2108ac65335584b2dececc224f50c762d9f3dd760ebd71b91e709cffb1e69"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 30111760,
+      "device": 16777233,
+      "inode": 461687463,
+      "mtime_ns": 1792828050861086899,
+      "sha256": "1281b1726e93d742a886765ec5821621df463a82372a1af66f3592e813fba373"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 28199446,
+      "device": 16777233,
+      "inode": 461688885,
+      "mtime_ns": 1792828181078645998,
+      "sha256": "77045f4b27f082de96eaaceb5425ea36bba14ad980dc0aa4e37779ce8f178b64"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 39873046,
+      "device": 16777233,
+      "inode": 461688886,
+      "mtime_ns": 1792828181152183557,
+      "sha256": "ff1e611b7a0aa3660ad5e03103fd7291226d5b881371a2260b3bf950fa051861"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36908560,
+      "device": 16777233,
+      "inode": 461688887,
+      "mtime_ns": 1792828181228333791,
+      "sha256": "2ec1ff2be3fb6ffe9c1ad08d957c714a4e1ffee98a59b0ff43ff34d8abadfcd2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 36793360,
+      "device": 16777233,
+      "inode": 461691351,
+      "mtime_ns": 1792828360227655283,
+      "sha256": "3a0228558770ca28d265c9f05b52b17c79a94e63fcd4bb1177ebf4ef3585bae6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+      "reason": "uploaded source/corrected audio",
+      "bytes": 27585040,
+      "device": 16777233,
+      "inode": 461691352,
+      "mtime_ns": 1792828360295496082,
+      "sha256": "4ca2d14aac2826069cdf66ce3103bdb0b6887ee4dec19e14d7051a27d9f22688"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/user-remakes-review-2026-10-06.md",
+      "reason": "superseded review or planning document",
+      "bytes": 2857,
+      "device": 16777233,
+      "inode": 181755986,
+      "mtime_ns": 1791273286889048426,
+      "sha256": "c015f0c6205557c49dc653ee7e0dcccdb41c9681a4cadcddde698d8e675e0c0a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 275096655,
+      "device": 16777233,
+      "inode": 461853797,
+      "mtime_ns": 1792830523683439179,
+      "sha256": "69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/encode.log",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461853796,
+      "mtime_ns": 1792830436589514291,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/01-02.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853723,
+      "mtime_ns": 1792830429581999899,
+      "sha256": "aa193b462547d08b001a9aaaa7b681f9157c26efe93fe017f978bae24302352f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/02-03.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853729,
+      "mtime_ns": 1792830430107458945,
+      "sha256": "46744e3798d9852f553e3a2f80da487d896f49ccd6a03415a6f6bf524533fb5e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/03-04.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461846865,
+      "mtime_ns": 1792830233258081370,
+      "sha256": "05ee433f059aa744c0594cfca9781855f3645dde41fde1f1c6bb5c6db9126dfe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/04-05.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853731,
+      "mtime_ns": 1792830430518598428,
+      "sha256": "057515c479f094d6279b963fb7ae52402dfe553d5ef8bcfb38bdb6c07ecedbb0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/05-06.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853738,
+      "mtime_ns": 1792830430929037075,
+      "sha256": "fb42bda9aa65b0841e3f7e42d7ffba70e70651c16b78eccc59de54b80734e6f7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/06-07.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853746,
+      "mtime_ns": 1792830431336324213,
+      "sha256": "19a292feffe5864f5d8eafdfbbf12173fe6ff1cb66d9fea3409483b2bb2efeca"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/07-08.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853748,
+      "mtime_ns": 1792830431742017470,
+      "sha256": "50c5ec951f7b39fd29b2c59b19b582d6d5b2bbda07e0301187d767c680b29286"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/08-09.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853754,
+      "mtime_ns": 1792830432150885113,
+      "sha256": "f410b6f3a3653f006c2adc8827951520d65c5b1a2456990f223ee1252823b8e0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/09-10.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853758,
+      "mtime_ns": 1792830432561618220,
+      "sha256": "911fe0e08c4a124e33d97aeee08154896ad329f6178f49780fea6dc9b7bad566"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/10-11.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853760,
+      "mtime_ns": 1792830432968142772,
+      "sha256": "3a73739dfc005e3109d76232c0afad93cf97882007cce922069d4c2e211fd6ef"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/11-12.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853762,
+      "mtime_ns": 1792830433374596324,
+      "sha256": "8c6565699f95197a64fbbf1d22f5ac0cf8289a856b651bd5456506b88c04f4f5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/12-13.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853764,
+      "mtime_ns": 1792830433780455415,
+      "sha256": "7e9d7d3567ca0c7f5bdea2c98a13ae1937e986793329929ee7697bc58d51aa47"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/13-14.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853769,
+      "mtime_ns": 1792830434190854563,
+      "sha256": "b6dccc435df2fe80b60cdae7840be810674acdde9a5cb44c93cb450de94a627d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/14-15.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853780,
+      "mtime_ns": 1792830434600805750,
+      "sha256": "d8d20a95c6f0111b6dfb494c0344b9902d59bba08f820d16bac39b28c1dd5d9b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/15-16.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853783,
+      "mtime_ns": 1792830435004827836,
+      "sha256": "0efea9564027c52d39db5634aaf21f1b3457ab4398e849c87b26b3b12493a787"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/16-17.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461846910,
+      "mtime_ns": 1792830233712742238,
+      "sha256": "3a69d3b00ad71a446438bb902cd9ef6fe0425ef6aca11f792e99cd450b4a84f8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/17-18.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853785,
+      "mtime_ns": 1792830435415682235,
+      "sha256": "bb81e82148d78f5b26ec9bb11b4bdde2d57746184e93b53e108b1d12bf5fc9bd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/18-19.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853790,
+      "mtime_ns": 1792830435822732289,
+      "sha256": "6e03365b926b4adf6162f6e742d994595fd21f305a8eaae0fd587c7ac2ae9c11"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/19-20.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461853793,
+      "mtime_ns": 1792830436225289203,
+      "sha256": "0646e4f3fc46b69020967ba981b2aa8763b2d3256230de7e9b826df232368568"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/20-01.wav",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 6144058,
+      "device": 16777233,
+      "inode": 461846915,
+      "mtime_ns": 1792830234127620607,
+      "sha256": "ece898cc1892224aa88abb6684fb31d8ba6e592b41ee020a23d40c7156c7aa99"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/provenance.md",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 4829,
+      "device": 16777233,
+      "inode": 270935269,
+      "mtime_ns": 1791786868082031060,
+      "sha256": "703eba8c297e822b51ac4a0ca11a335f3b3703cf1a50b1a0c8d89f3f338edf53"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/report.json",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 7404,
+      "device": 16777233,
+      "inode": 270935271,
+      "mtime_ns": 1791786868083563493,
+      "sha256": "be01609989e08be20c2826b26f1a506eec281ea417776a957d71674854c31e32"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/upload.csv",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 3397,
+      "device": 16777233,
+      "inode": 270935270,
+      "mtime_ns": 1792832899390113585,
+      "sha256": "0247c2882d518bd1a02b9f46f943d2d2592c61a8a502c8cee54872fe842d485f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/chapters.ffmetadata",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 3651,
+      "device": 16777233,
+      "inode": 461915439,
+      "mtime_ns": 1792832785215940547,
+      "sha256": "feaca80286fca34fc95e9a6ffb6b8b6c06e35105e296b9f39315eb98d8797ae4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/expected-scaled-jpg.png",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 10294763,
+      "device": 16777233,
+      "inode": 461947286,
+      "mtime_ns": 1792833027165667888,
+      "sha256": "c5dadbd9bad53c138c8e0eaa79bf13a97be01a415864214cf872a3d845b6489f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 676670955,
+      "device": 16777233,
+      "inode": 461915442,
+      "mtime_ns": 1792832960790249667,
+      "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-begin.png",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 10430921,
+      "device": 16777233,
+      "inode": 461947169,
+      "mtime_ns": 1792833021425662381,
+      "sha256": "cd73c3b7bdeb8eca15a71a08dbbd480b98bfddbb84994a560ce30c503b3de3a6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-end.png",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 10483794,
+      "device": 16777233,
+      "inode": 461947259,
+      "mtime_ns": 1792833025702877178,
+      "sha256": "7bbccbda0273ddd69d585ca13888d983a96029f53cd11cb4bc77232831f625b0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-middle.png",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 10473918,
+      "device": 16777233,
+      "inode": 461947234,
+      "mtime_ns": 1792833023529498378,
+      "sha256": "f0ea4769300895ddcb7032dbd76ff29ae0cfba49332e2854e2cf8ac45c0c6626"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/full-ffmpeg.log",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 14274,
+      "device": 16777233,
+      "inode": 461915440,
+      "mtime_ns": 1792832960867981341,
+      "sha256": "8ebe415e6b4cefe29771675946b476e2c31dab8ff5e0b9cfae7050fbf0977837"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/full-progress.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 72712,
+      "device": 16777233,
+      "inode": 461915441,
+      "mtime_ns": 1792832960867222584,
+      "sha256": "b5e6044698714342c7c8bfe858cda56e5941aa560a70f7fc43a69190db76662a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/preview-30s-4k.mp4",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 7174301,
+      "device": 16777233,
+      "inode": 461914673,
+      "mtime_ns": 1792832742391725738,
+      "sha256": "1c845d4735449ae9bbb49f6c20971587f5a830013c63049300d0433d996f9d8a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/preview-ffmpeg.log",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 4121,
+      "device": 16777233,
+      "inode": 461914671,
+      "mtime_ns": 1792832742392235618,
+      "sha256": "35e4e95fe0ab0f755f6578506819201f85b6740c634f90661cc16bcbf869dd8e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/preview-frame.png",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 10439075,
+      "device": 16777233,
+      "inode": 461915235,
+      "mtime_ns": 1792832772946390592,
+      "sha256": "8b5a130f1a9cc6d9b95d2a700ca70b023c8c5fc8749f4e9075c87abdd9b2471d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/preview-progress.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 719,
+      "device": 16777233,
+      "inode": 461914672,
+      "mtime_ns": 1792832742391907198,
+      "sha256": "eb5474d6b745fe52c64a7988b23a33ffd78de1fd24a976d37b93ee23571b4acd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-expected-scaled-jpg.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947288,
+      "mtime_ns": 1792833027168242038,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-expected-scaled-jpg.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947287,
+      "mtime_ns": 1792833027168139287,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-final-packet-summary.json",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 1300,
+      "device": 16777233,
+      "inode": 461947038,
+      "mtime_ns": 1792833005063190382,
+      "sha256": "fa55d8997f94c455f7634eb17466424221fd2f2b8914f3f181cb1728538975ad"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-begin.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947171,
+      "mtime_ns": 1792833021434406175,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-begin.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947170,
+      "mtime_ns": 1792833021434294840,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-end.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947262,
+      "mtime_ns": 1792833025711353094,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-end.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947261,
+      "mtime_ns": 1792833025711229010,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-middle.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947236,
+      "mtime_ns": 1792833023538957012,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-middle.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947235,
+      "mtime_ns": 1792833023538833053,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947140,
+      "mtime_ns": 1792833019506225764,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461947139,
+      "mtime_ns": 1792833019506110221,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-probe.stderr.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461944795,
+      "mtime_ns": 1792833001383281988,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-probe.stdout.txt",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 18193,
+      "device": 16777233,
+      "inode": 461944794,
+      "mtime_ns": 1792833001383120862,
+      "sha256": "47be3ba7f3744b11c12a82d14ecb7fb485c9892d3ee53792693e7adc31995265"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/validation-source-packet-summary.json",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 1308,
+      "device": 16777233,
+      "inode": 461946988,
+      "mtime_ns": 1792833003094522493,
+      "sha256": "6f2595139299ba88a0671be29b44242482481b1f261d9cad767ad772985e5f66"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/analyze-180bpm.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 13637,
+      "device": 16777233,
+      "inode": 461860579,
+      "mtime_ns": 1792830808106206629,
+      "sha256": "44220ce5cec21860d3dbeb494deac31b5c7b97835bd3ebfec7f9106478ef716d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/measure-corrected-beats-180.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 10054,
+      "device": 16777233,
+      "inode": 461860581,
+      "mtime_ns": 1792830808109522139,
+      "sha256": "f3a2fb8f502156ad284dae4be456b33eb87a49e87f90edce33030d05383e354b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/plan-continuous-180.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 16252,
+      "device": 16777233,
+      "inode": 461860582,
+      "mtime_ns": 1792830808110966186,
+      "sha256": "0b0a09f9dc6793508d987960eeabf548b16587bf3521274f41684784b02f0456"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/render-180bpm.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 18532,
+      "device": 16777233,
+      "inode": 461860580,
+      "mtime_ns": 1792830808108179177,
+      "sha256": "bfa306c0a19b33658e131e4c18ccaf58c435e7e08bb9e8b0f08e4149fde27f55"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/render-continuous-180.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 27565,
+      "device": 16777233,
+      "inode": 461860583,
+      "mtime_ns": 1792830808113167234,
+      "sha256": "44092e26678be08fc6bb5c31e551a7f36981037c72db708411cbcac5eb1ee9b4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/render-user-thumbnail-20261024.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 12385,
+      "device": 16777233,
+      "inode": 461949631,
+      "mtime_ns": 1792833119628457105,
+      "sha256": "8d23d99a1c630de4b8454452d002414a53ef0baf4ea66216067c6e70e4a72c55"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/__pycache__/validate-user-thumbnail-video-20261024.cpython-314.pyc",
+      "reason": "local cache",
+      "bytes": 13678,
+      "device": 16777233,
+      "inode": 461949632,
+      "mtime_ns": 1792833119629628242,
+      "sha256": "cf9fa1debcd4bf4a065be99c1b82d92736512b1f001d8afebe8292986288e659"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/beat-model-pilot-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 1612,
+      "device": 16777233,
+      "inode": 461806417,
+      "mtime_ns": 1792829649383117833,
+      "sha256": "0bc72532e72286e9ce2e3b604e77cdd675f8a08130df28889a318c2db9bffb21"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/cue-candidates.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 5950542,
+      "device": 16777233,
+      "inode": 461845722,
+      "mtime_ns": 1792830207361058749,
+      "sha256": "d82b301f83db70de4c74f7660a0147dac125588e2521adf6d3ef9167edd955a6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/incomplete-grid-cue-candidates.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 2925776,
+      "device": 16777233,
+      "inode": 461833009,
+      "mtime_ns": 1792830023972818157,
+      "sha256": "255cce10db604554d87e73168b44579f70f6eae8bfbcbc402b69ef6fbdcbf324"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/incomplete-grid-cue-plan.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 86702,
+      "device": 16777233,
+      "inode": 461833040,
+      "mtime_ns": 1792830025047840698,
+      "sha256": "adf0ea512ea2cf455327569d920f7793ff5963010f053866b159dced05c973c1"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-01-02.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1286,
+      "device": 16777233,
+      "inode": 461853727,
+      "mtime_ns": 1792830430061599678,
+      "sha256": "49a59d3ff457a172cc8a384548cf6ac7fae47194cb37e58544bb6304e775d2f1"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-02-03.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1283,
+      "device": 16777233,
+      "inode": 461853730,
+      "mtime_ns": 1792830430470746863,
+      "sha256": "737a254ebdc5303f7ec37d38b39741f026bd5cba92bc19f8fbc333b271f48556"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-03-04.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1299,
+      "device": 16777233,
+      "inode": 461846909,
+      "mtime_ns": 1792830233668606976,
+      "sha256": "a52e4776397af1fff39eea310f1fa4fdc482251883fd7e244a480caea1023e39"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-04-05.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1276,
+      "device": 16777233,
+      "inode": 461853737,
+      "mtime_ns": 1792830430885728441,
+      "sha256": "ebbc3251f5adc9d1d5bdba8bbe34b437bb6513bb88bf282de7605a11e89e761f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-05-06.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1266,
+      "device": 16777233,
+      "inode": 461853745,
+      "mtime_ns": 1792830431292147492,
+      "sha256": "79ef566fc78576d505620f66a96476936c228f4f9a0c601b11bf4365a5161ce8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-06-07.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1267,
+      "device": 16777233,
+      "inode": 461853747,
+      "mtime_ns": 1792830431698784753,
+      "sha256": "5b179618384b508625cc141c603e9acf94795ecbf721651f5a877182c7a96536"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-07-08.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1269,
+      "device": 16777233,
+      "inode": 461853753,
+      "mtime_ns": 1792830432107527604,
+      "sha256": "2267afddc01ac14b106fd82fd04939740a605097c0374693b22114183156fbc5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-08-09.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1271,
+      "device": 16777233,
+      "inode": 461853757,
+      "mtime_ns": 1792830432517034165,
+      "sha256": "168681d1721337244ae4bc51647834b8c0d2596dc2b4fa153611a2fc1f09d58f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-09-10.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1251,
+      "device": 16777233,
+      "inode": 461853759,
+      "mtime_ns": 1792830432925073597,
+      "sha256": "d23463b7f25d954bd8c3a95deba7ade1507af17943777f9f489852a0e7c19a15"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-10-11.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1275,
+      "device": 16777233,
+      "inode": 461853761,
+      "mtime_ns": 1792830433330402395,
+      "sha256": "4ec564c14fc1a3cfc75cdfdd0319e6a538afa1250d2b580dec324b5e6d349819"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-11-12.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1294,
+      "device": 16777233,
+      "inode": 461853763,
+      "mtime_ns": 1792830433737421449,
+      "sha256": "2bb2379562b2d19b9f58b218abf6faaaf0764a4eb5a7604867c85935b5cfc2d4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-12-13.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1266,
+      "device": 16777233,
+      "inode": 461853767,
+      "mtime_ns": 1792830434148550848,
+      "sha256": "2a3d4e339535e5ef32e2e2d4529ba544e6bfc88e15574e24aadce0df95d0706f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-13-14.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1303,
+      "device": 16777233,
+      "inode": 461853779,
+      "mtime_ns": 1792830434557921409,
+      "sha256": "eda80856f42a0ed0926516b53d3c648847fa8454b90de9e08a7fac68c3fb78b9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-14-15.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1314,
+      "device": 16777233,
+      "inode": 461853782,
+      "mtime_ns": 1792830434962522205,
+      "sha256": "4f14a453d56c8466c0c4afa9fb01d57a86105b547b93cc3beb11eca55d065b19"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-15-16.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1317,
+      "device": 16777233,
+      "inode": 461853784,
+      "mtime_ns": 1792830435367989045,
+      "sha256": "3ce3be6c4750219ab9e97aeb34d180ef10871454d5ecea016c71f95b7af49231"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-16-17.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1283,
+      "device": 16777233,
+      "inode": 461846914,
+      "mtime_ns": 1792830234083756638,
+      "sha256": "35b166d5f92632634038d88308b535a5e330e0b7fb5a682f95cbe4cbcfdea133"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-17-18.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1274,
+      "device": 16777233,
+      "inode": 461853789,
+      "mtime_ns": 1792830435780188573,
+      "sha256": "066fa29c285661d8cac293fedd3b2d61c5e27ae43726d1e049f1229e3e4fcdac"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-18-19.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1285,
+      "device": 16777233,
+      "inode": 461853792,
+      "mtime_ns": 1792830436183244073,
+      "sha256": "f303571b5be54dfb70dde60c623da254cb51c099cfcc1d394cd469402c3699d2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-19-20.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1271,
+      "device": 16777233,
+      "inode": 461853795,
+      "mtime_ns": 1792830436584344358,
+      "sha256": "bacd60f0b2ed0f1aa648d5361788a83140b0f8f355eb339dad5b535077561bba"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/preview-20-01.json",
+      "reason": "cue search, incomplete plan or transition preview record",
+      "bytes": 1285,
+      "device": 16777233,
+      "inode": 461846932,
+      "mtime_ns": 1792830234507512076,
+      "sha256": "59fb90dd4e9332cd40a4f2aaa6e96f11a1d70c492658327c58cf10d99c7a2ab6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/final-static-check-0-20261024.txt",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461959625,
+      "mtime_ns": 1792833354225901919,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/final-static-check-1-20261024.txt",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461959626,
+      "mtime_ns": 1792833354267977162,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/ingest-reacquired.py",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 3766,
+      "device": 16777233,
+      "inode": 461684165,
+      "mtime_ns": 1792827614655002689,
+      "sha256": "b2938a884df76cc693a435f1305c64813a927d7785145f468ab80cc7070da4b7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-17-anchor-diagnostic-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 2715,
+      "device": 16777233,
+      "inode": 461701005,
+      "mtime_ns": 1792828867382363689,
+      "sha256": "5c136fe35a7d6de6201dc9be0faa9f633a109699d93bd3d5394c4765b5f4548c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-prototype-diagnostic-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 706,
+      "device": 16777233,
+      "inode": 461686378,
+      "mtime_ns": 1792827870769909587,
+      "sha256": "667e0c24e6028c710be87a0e94bd07ae3a21f188d2555383d7a6286b3542e37c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-post-upload-release-check-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 71,
+      "device": 16777233,
+      "inode": 461989382,
+      "mtime_ns": 1792834197195458218,
+      "sha256": "86dfa161a54545e6d61f02d819c291c60bab6d29dee589bb677f00534ba7a446"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-render-final-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 443,
+      "device": 16777233,
+      "inode": 461952796,
+      "mtime_ns": 1792833176504340192,
+      "sha256": "5d3087d344cfe45c3ccc731ab5b93fd571c1bd8910e3785e6c6c4fd65091d2db"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-source-final-20261024-before-state-fix.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 2787,
+      "device": 16777233,
+      "inode": 461947506,
+      "mtime_ns": 1792833044283572288,
+      "sha256": "6e422f08243ce424c256db0af6bfccacdd66ba8b0cdc6b7d53c4d9270d319daf"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-source-final-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 345,
+      "device": 16777233,
+      "inode": 461931285,
+      "mtime_ns": 1792833049026033243,
+      "sha256": "e91eb818a0dde048fbba4bdf7b6c3a11e3dd2ae3600e2b67615800fd58704255"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-state-check-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 2607,
+      "device": 16777233,
+      "inode": 461959611,
+      "mtime_ns": 1792833356640077270,
+      "sha256": "a8180489ec8aa92deab0f9cc076b7b7fab1ac08f1e6c34f4a880111492f80e53"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-upload-ready-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 443,
+      "device": 16777233,
+      "inode": 461952795,
+      "mtime_ns": 1792833176437970128,
+      "sha256": "1499ce9e45e42e062690572365b1ecfad0f4e3727d6796b93c3c9c5ed75a0f79"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-uploaded-gate-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 537,
+      "device": 16777233,
+      "inode": 461989440,
+      "mtime_ns": 1792834200233339256,
+      "sha256": "9c3fbb72e865f16a2d9ef16639bd8506f3eec4bac926f4b5c55388e0bd941ef6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-uploaded-state-check-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 2676,
+      "device": 16777233,
+      "inode": 461989359,
+      "mtime_ns": 1792834193616395734,
+      "sha256": "2e21684f792139c83c6c41fdbc0d4a68b69e41589ab74bcb6be521878f81a52d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-user-thumbnail-20261024-preview-validation.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 4656,
+      "device": 16777233,
+      "inode": 461915238,
+      "mtime_ns": 1792832785035957294,
+      "sha256": "8b9fc7ef7835652a143ff17e323fecbf500cc782e8083131e07c0812f5cf9bc0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-validate-20261024.stderr.txt",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 0,
+      "device": 16777233,
+      "inode": 461952798,
+      "mtime_ns": 1792833167388160125,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-validate-20261024.stdout.txt",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 163,
+      "device": 16777233,
+      "inode": 461952797,
+      "mtime_ns": 1792833169693353959,
+      "sha256": "caf9dd93f155d725af42c5477bcd9412104bb5d659044554cf9b963975eeb56b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-verify-release-20261024.json",
+      "reason": "intermediate diagnostics/checks superseded by final records",
+      "bytes": 71,
+      "device": 16777233,
+      "inode": 461952794,
+      "mtime_ns": 1792833173159428936,
+      "sha256": "86dfa161a54545e6d61f02d819c291c60bab6d29dee589bb677f00534ba7a446"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/work/tempo-evidence/03_A.log",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 947,
+      "device": 16777233,
+      "inode": 147945426,
+      "mtime_ns": 1791007221366180019,
+      "sha256": "34af67ba7cca45eaf8934b4bf003f2aa3c65b5c811c953f0c5cedad63339b11e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/work/tempo-evidence/20_B.json",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 9501,
+      "device": 16777233,
+      "inode": 147945239,
+      "mtime_ns": 1791007144704450292,
+      "sha256": "d919c42e530aa653181930b14291ca5fb140ac6b6a1d7f7f412c238c8a53da37"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/work/tempo-evidence/20_B.log",
+      "reason": "regeneratable uploaded media or intermediate output",
+      "bytes": 8723,
+      "device": 16777233,
+      "inode": 147945238,
+      "mtime_ns": 1791007144704030379,
+      "sha256": "0e00ad3b1b463e51fa5ed9e7ac3418071398d4e51f02aaa2aee6138ca9f24737"
+    }
+  ],
+  "protected": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/concept.md",
+      "bytes": 31612,
+      "sha256": "b3a8930c45930240989db1fd5d4ff6da659aed8d1ba9e1a3e5dfba557cafc366"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/download-manifest.json",
+      "bytes": 17483,
+      "sha256": "b2fe8db3b9b9f29b2610b70d1f566ba42937e8d5cb8de2a1d825730673088b32"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/final-selected-audio-sources.json",
+      "bytes": 11399,
+      "sha256": "bcb495e6e5c809f5ce9a8df80427c53b576f610d52b4c12086ae54170a86ffb5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/historical-downloads-2026-10-03.json",
+      "bytes": 2492,
+      "sha256": "5c61bbe12667284ee6c60a21bba493427747ccdbb29285e694d67b058984488d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/01_문을 열고_redirection-2026-10-06.txt",
+      "bytes": 832,
+      "sha256": "e9cf05f5aac6774bd498986d6fdf71da2baea0e8bb53495a43d5b4ffea54d827"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/02_파란불.txt",
+      "bytes": 706,
+      "sha256": "2761630c69fbedf5eb6ba9bea1846462d0e73a241de349987019a94c98c60d7a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/02_파란불_round2.txt",
+      "bytes": 844,
+      "sha256": "d9b7deed09f6782cc167387dae8a606a18f912a67648a5ecde4fa10c0be13573"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/03_첫 바퀴.txt",
+      "bytes": 912,
+      "sha256": "389eafe83a1e80e7e017233c02e3c1a16ec8a16d83451469d8512c579566eb50"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/03_첫 바퀴_round3.txt",
+      "bytes": 935,
+      "sha256": "1d2dec89ac87c7e01366032031e4088a9e5c0c068638fe123a26aa9d19180554"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/04_조금 일찍.txt",
+      "bytes": 704,
+      "sha256": "61979540fe0c5c8002704ee4def99de56d1b1cf057eab8e8c42da57696f31f9d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/05_길을 바꿔_redirection-2026-10-06.txt",
+      "bytes": 912,
+      "sha256": "311f53a0d58ad938750c47d1e9e675ad91e88a8d903e69c9ee8b15ebd5f7adfc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/06_정해 둔 건 없어.txt",
+      "bytes": 737,
+      "sha256": "ea52b35cc3a564c5d84c1ecdb59e76dcdc2a39a7fd8b6e5665b74c8a218c28d2"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/06_정해 둔 건 없어_redirection-2026-10-06.txt",
+      "bytes": 932,
+      "sha256": "9e815bea55c1999c92fa74134f01ab993e8ce0138ab724b424592a182e18e8a7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/06_정해 둔 건 없어_redirection-round2-2026-10-06.txt",
+      "bytes": 992,
+      "sha256": "60151f7f7e4226e7d15229a1be0ad50bf9b3116db7ece1f0e95cc207226b703d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/07_같은 방향_redirection-2026-10-06.txt",
+      "bytes": 871,
+      "sha256": "ad84d26fdab3a3ca57afb8d2d90035f1b2982669af036913ab57ed24a3a9e8fc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/08_낮은 비트_redirection-2026-10-06.txt",
+      "bytes": 916,
+      "sha256": "c0bd0058316f8cc16b07de8fccd4a8c24808cbbbf865c06e8d0a64675073a511"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/09_숨을 세어.txt",
+      "bytes": 726,
+      "sha256": "ffa254cc7db7ad347c6d77741f4e88609849e2852f0a21bff6a4ef1d0e9e12bf"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/09_숨을 세어_redirection-2026-10-06.txt",
+      "bytes": 907,
+      "sha256": "515bafb819fb1b19e273b1b0ca66d7b27dc25b47298b7d0d939d1b2d0030dc99"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/09_숨을 세어_redirection-round2-2026-10-06.txt",
+      "bytes": 1033,
+      "sha256": "7f7336a51cefcab5158336f40ec56886fd792bef1945c6aa733d4c970f84dc02"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/10_생각을 놓고.txt",
+      "bytes": 774,
+      "sha256": "9029a541ad17b93982bd83054bef91416761db3463b98c679341ba7a35f024c3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/10_생각을 놓고_redirection-2026-10-06.txt",
+      "bytes": 919,
+      "sha256": "1b3594cb6b9913010510f3f4a4273fffd4de3bc7b64f308f36f043a4b1bf1bb4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/10_생각을 놓고_redirection-round2-2026-10-06.txt",
+      "bytes": 1039,
+      "sha256": "b5d631c369781fe333653ddda068b72fe2881f146878f65a31726722f85a79b9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/11_다시 해볼게_redirection-2026-10-06.txt",
+      "bytes": 901,
+      "sha256": "a31d3a5a549cb91520619784817956978bce81bb051c33e7401f3baf59e66076"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/11_다시 해볼게_redirection-round2-2026-10-06.txt",
+      "bytes": 1050,
+      "sha256": "aeb0e109c38f739c87394f3c16024db298b9544668abf0aa7ba6a8c526d8ac1a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/12_바람이 바뀌어_redirection-2026-10-06.txt",
+      "bytes": 929,
+      "sha256": "80e208593091d3f6ea19c58e0d7660d7aa83f3cc0351ca265aba04827f9a691b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/13_호흡.txt",
+      "bytes": 738,
+      "sha256": "13a3ab7c48cb60d7b9e7c65dcefabc066490f5355d3a5cdf6ef267b989d20759"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/14_하나씩.txt",
+      "bytes": 761,
+      "sha256": "1ab3ee4d348f5c3da4a09e603f65473e2196d115f051f7b2fc29cd8f18be4a51"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/15_드럼 위로_redirection-2026-10-06.txt",
+      "bytes": 904,
+      "sha256": "4714af1e011bafcd45ff36fb3393ab0904ec06d7cd94c46c444a1c13ec022a95"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/16_비가 갠 뒤_redirection-2026-10-06.txt",
+      "bytes": 927,
+      "sha256": "a872f323cfd5f064a821c900c64c43cf4635df881e74de5a3e528c7dae647e45"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/17_이어지는 소리.txt",
+      "bytes": 710,
+      "sha256": "20f900c38b1d0e113d0574a1fb1df11292ac8e7870acb70b3a1b604dc7286165"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/17_이어지는 소리_redirection-2026-10-06.txt",
+      "bytes": 944,
+      "sha256": "36faed4c24cebb8e9c6f11d7e09573c8a8eea5ce0b72d80bb98d3d26ab6a2134"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/19_괜찮은 날.txt",
+      "bytes": 695,
+      "sha256": "fbf064004c8d8f27e521e35353905a65cfa00ba79451e8d5cc39e71410c1da05"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/remakes/20_집으로 가는 길_redirection-2026-10-06.txt",
+      "bytes": 927,
+      "sha256": "29eff2608a5836d839d23212050cfd82943db7ce5e919267440f9f7c410129de"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-candidates.json",
+      "bytes": 16702,
+      "sha256": "8e4f96eba27e059fdd151523ae8914f46498f7698f34054fb1bbdfd16ac67535"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-covers.json",
+      "bytes": 4377,
+      "sha256": "4928bddd817c3ec6ed9c259de30526451a9120362d7013d6d589847febe9599d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-final-selection-2026-10-12.json",
+      "bytes": 6013,
+      "sha256": "6cb0037b5f81727f1c82b115387f94efe2d14c1ef8afbc3a9fbbf058b3c571c9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-redirection-2026-10-06.json",
+      "bytes": 30573,
+      "sha256": "ec173b19d7ea33f2baf0fc246729773546c9443e231ccaab0c77a7ced2ee33fd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-redirection-round2-2026-10-06.json",
+      "bytes": 9190,
+      "sha256": "b469e13cfd74c9c4377aa49789a5914b4b57528563e4cc7c46d6d55787f31ab9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-remakes-03-round3.json",
+      "bytes": 2002,
+      "sha256": "ae4c9f54e652ef3265ae05ab424128848c6c8a1679183171319936f10c97c110"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-remakes-03.json",
+      "bytes": 1821,
+      "sha256": "b05f6af1346887357c461380f407c5cbebb78c938b2064d2bda72361c4b412b3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-remakes-round2.json",
+      "bytes": 1543,
+      "sha256": "1ccf399528305ca2f8d2b33749960f3095cdbdc091c18a0e843f0fcf152a77cc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-remakes.json",
+      "bytes": 8056,
+      "sha256": "5f90fd75340da9b2f446e1c62ab59661c861d19b664a2ff752014a970a1d6e9d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-selected.json",
+      "bytes": 6697,
+      "sha256": "129e27137940981668f70cf3114b9429280c1d50dc96354647e3f2fbbc14539a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/suno-user-remakes-2026-10-06.json",
+      "bytes": 7474,
+      "sha256": "87d0d2902ebf9da0f0ed9ba7df25bad4b3be7191a300bfbda7b258903322e122"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+      "bytes": 2475288,
+      "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.psd",
+      "bytes": 26290735,
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-prompt.txt",
+      "bytes": 2394,
+      "sha256": "2c16167ba65c1860d2c11113159d1c4bad746c129142127160ace1a001cc1293"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-source.png",
+      "bytes": 3615892,
+      "sha256": "6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/01_문을 열고.txt",
+      "bytes": 1359,
+      "sha256": "db9b015f1b451bb15e7831785ec6c7341297b8bac828f8b867e05f3db20010c9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/02_파란불.txt",
+      "bytes": 1396,
+      "sha256": "94252e30ab6ec1f90e3cc3456ae13f2cc0e3b1d7913416b5981e70d0a0748167"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03_첫 바퀴.txt",
+      "bytes": 1385,
+      "sha256": "e9aa2ec585ec1df27530548f6ff1fa8e1e9533989c1dee81cd0b8cb0322f68f8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/04_조금 일찍.txt",
+      "bytes": 1425,
+      "sha256": "9d8e6174dac21780ceef3f47251a6433a46c433fe0266fc6df145bb4f751be14"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/05_길을 바꿔.txt",
+      "bytes": 1388,
+      "sha256": "f616c65707397933edf28621ead6a48d88abb62b686370723bbc20ff54df377f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/06_정해 둔 건 없어.txt",
+      "bytes": 1430,
+      "sha256": "1569f236332d4417c9a0b11b16631af6af71f63048c4b744c965a700a0545ece"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/07_같은 방향.txt",
+      "bytes": 1421,
+      "sha256": "a8e51c30f9d75fb9dab5459a4ec61f7a6a326d8ef5b058fe649637d0d3d7c9e8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08_낮은 비트.txt",
+      "bytes": 1486,
+      "sha256": "6fdda291498652d4154cd5e24666d2d09859bfa17266342931781878f519f348"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09_숨을 세어.txt",
+      "bytes": 1385,
+      "sha256": "b50c1143f28c1468cf69eb24f746d0e607b68d6b108ecf099abe0d41b935f95c"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10_생각을 놓고.txt",
+      "bytes": 1422,
+      "sha256": "7d8e249cca0e91c6629a9c62894437af2b87d07f9db105b47615c56857cf6fb3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11_다시 해볼게.txt",
+      "bytes": 1412,
+      "sha256": "351d3cd026cac04405b9be8e64cb30eeb28adb882bc9d33a49a20f9c1b6833ce"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/12_바람이 바뀌어.txt",
+      "bytes": 1422,
+      "sha256": "99cf570bc631bf705dc2b16d931a0baeacb7bdf8ac45f16df204095a3570209a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/13_호흡.txt",
+      "bytes": 1420,
+      "sha256": "99a5880bac15ad5c69808f2808950f3d34202e163a4bb40b1ad632ae499880f5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14_하나씩.txt",
+      "bytes": 1369,
+      "sha256": "285859a6b767aea5c727a469cf52588a76ddf915450a8e86d710deb4f07515f7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15_드럼 위로.txt",
+      "bytes": 1385,
+      "sha256": "6141e1fbad235c4c0d9b09a0ae7d0dad769ad5624976060375ed8aa10c6f46b4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16_비가 갠 뒤.txt",
+      "bytes": 1421,
+      "sha256": "260bc15d62b4b782b9455103e1353db502752ce5f7ac8c9536bcf55da8dd68cb"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17_이어지는 소리.txt",
+      "bytes": 1430,
+      "sha256": "fb6f505eab1b3b90d0d7fcc4d66aacaa0dc7862224ff65bfcab669707d36a56b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18_가까운 곳.txt",
+      "bytes": 1443,
+      "sha256": "392d716c7f224e67f6dcce5da44d050288e8942657acb636f411267b260a5d0d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19_괜찮은 날.txt",
+      "bytes": 1389,
+      "sha256": "92155528203c5a322a898ed7bddfd57cd01a47fdbcebe1a6503923e94111ee40"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20_집으로 가는 길.txt",
+      "bytes": 1480,
+      "sha256": "86df6b6293820e180c7c3811f58cdfaf9bab7982ab02cfcbaa233041c98388f7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/analyze-180bpm.py",
+      "bytes": 7249,
+      "sha256": "1bb5001d38a3c9be7fcb296892cdd9637f1b13151fcf4a91b132b4c7e43bd665"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/controller-check.json",
+      "bytes": 1694,
+      "sha256": "6e321199451b097054d705d6dcce1ea61b07fca6c341780d0f0c354a05631b47"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/manifest.json",
+      "bytes": 160166,
+      "sha256": "de5d22060bb2d0dbc05e94e0d7561f5927d3b172b7b2383b7461aa1d9cdbb4bb"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/plan.json",
+      "bytes": 90783,
+      "sha256": "f90cbb47fe88fd1c3d5629caac8e33ba10db67c4034e277d046b9e682ff2d938"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/stage-validation.json",
+      "bytes": 1490,
+      "sha256": "0185327239faae93a008db1ce67688ff0e57fbf94235c62819d842329912cf54"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/continuous-180-20261024/tracklist.txt",
+      "bytes": 1424,
+      "sha256": "97cd0a9f3219ea080c4db81e8c91a38a47c09b74e8dc007f6434c163513a54ba"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/01.json",
+      "bytes": 8789,
+      "sha256": "433418189340ee05529b383ed40a033973a36def6f26a7992688efc806ebd5c8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/02.json",
+      "bytes": 11261,
+      "sha256": "f71a41f24c576d4c5e39d9bc5d96edd80921d4eb31eef12b7585b3e00854dfc4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/03.json",
+      "bytes": 9445,
+      "sha256": "aad8b3f3cdb92e8417ba311811d1ebc1ffb91bfa34831bb0c0031a4f24c1e243"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/04.json",
+      "bytes": 10511,
+      "sha256": "3c8c1a817128e420f332f38fe2e2b67aa6f7cca2d2fd1f94e412a4ad748c8155"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/05.json",
+      "bytes": 10703,
+      "sha256": "095b0c6b3b9ebffa33888d951a68fe35d216818fee7296a97432c81ed3e654a6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/06.json",
+      "bytes": 7832,
+      "sha256": "0b9933039e4941c0bd5a41cbc4f9a89b5f12d6ce3bf693c7c7eff9fef72879a0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/07.json",
+      "bytes": 10176,
+      "sha256": "343da7fde10a8955c9b0915b49d713f2ac91a18cf185ae75102d26def170a92b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/08.json",
+      "bytes": 11689,
+      "sha256": "d938cbc9bef68eef8ee2eb0234d9b2430b581929bc795e4d1be3059176afa85f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/09.json",
+      "bytes": 11430,
+      "sha256": "350ddbe2d8f447ee3cce39b84688a21c198733b7641acd9a095283e59cc62014"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/10.json",
+      "bytes": 9068,
+      "sha256": "45b4d880a0b11b1d5f66dc44bccad5620e1b40ef434ea5d784c38894be9c7297"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/11.json",
+      "bytes": 10300,
+      "sha256": "1ab925b5a1fdeb439620219b93bc51ae9d84cdb3b959b7fa429b2bedf86dacec"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/12.json",
+      "bytes": 10384,
+      "sha256": "58854e417f859e9480dea9b9a41d26bf482a04be9482fd303425780f8d768924"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/13.json",
+      "bytes": 11057,
+      "sha256": "de7559c54ee3fd1bc73f9d836a258b66b65de044aec0a97064b3fba8463a1289"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/14.json",
+      "bytes": 11171,
+      "sha256": "fb7f4d435d4e06ad1fe46bb9c59a17ab51ac13f8f83afcc97b5ec449ed43c976"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/15.json",
+      "bytes": 9973,
+      "sha256": "336130f8646b1995c49ca1b8a75df7c48ea3ea2f9557c1b47733a7e738e0ebf5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/16.json",
+      "bytes": 9516,
+      "sha256": "eabb4d69090336f4f1341190d1d44d8d8eeb740d6596fbd0e663dc91227b568d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/17.json",
+      "bytes": 11876,
+      "sha256": "f9650db102199d387cb353aa6e34325bb383edbd193c5d5142f0d285af77888b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/18.json",
+      "bytes": 9020,
+      "sha256": "a6aa00f336ecdbadb90f1e4d4975acddd75cd68b49e8ac3d4c9181a843fa903b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/19.json",
+      "bytes": 10353,
+      "sha256": "e9bdfd2865f22f6d6aa006fb280641316be430bfafb7c20b77a968f9dc99dd6e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/corrected-beats-20261024/20.json",
+      "bytes": 8342,
+      "sha256": "540263eb1146c25e677fda4b2b439207bf726a8fe3dfc5ddba8abf25c3602e1a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/final-premixed-audio.json",
+      "bytes": 1464,
+      "sha256": "238380599f30dc3999c076db2855effb8bb3a9588087f77d30b8a78c90dbd80b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/full-harness-tests-20261024.stderr.txt",
+      "bytes": 209,
+      "sha256": "bf1c6c5df7dfcb169544cdc654f5b7bc88669a62810f41b493f50b023d8eebfc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/full-harness-tests-20261024.stdout.txt",
+      "bytes": 327,
+      "sha256": "b66ed487278be1d4d7b02e2aa0b3c6c5e3f1966843463d6fc9e131829cef9d4d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/measure-corrected-beats-180.py",
+      "bytes": 4269,
+      "sha256": "8be29c50b23e4f19abe5c69e043a81f37e4840d9d86fb088933dd238c7dafe9f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/plan-continuous-180.py",
+      "bytes": 7257,
+      "sha256": "13aa60d9a78f76b046919c3e14e3043ab34ba592db9a7f31475ced4b0b49670f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/pre-remaster-source-ledger-20261024.json",
+      "bytes": 35968,
+      "sha256": "597d379abdcbe8ff9148721f81f33805740916dba6cee9466cb151fd284e7939"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/premix-tests-20261024.stderr.txt",
+      "bytes": 118,
+      "sha256": "56e0a63cfa132e5884ab512801c2f71a621e1f79abc8af424e0a14589dac03a3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/premix-tests-20261024.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/reacquisition-20261024.json",
+      "bytes": 20065,
+      "sha256": "ba9cbb93b6b074d8d9cdd1d553ac5594fd81c9d084083b9dc0ea64472f9ce2d3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/render-180bpm.py",
+      "bytes": 11006,
+      "sha256": "1203326ad8096fcc4da2e3cd718d45c3b338d0714b8253fb7b8a0717db710dcf"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/render-continuous-180.py",
+      "bytes": 11611,
+      "sha256": "5359a0475f0fabc9fbfaa3e67576e9c499a01d3f0bdfd8e32da035afa2722bac"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/render-user-thumbnail-20261024.py",
+      "bytes": 7425,
+      "sha256": "96cbcc076d6ad0c94f05ff2f150c34f9d7bbc553297bc0116356bfb11773777f"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-17-alias-resolution-20261024.json",
+      "bytes": 1163,
+      "sha256": "d687bc4d924f7ac7c86683cc61c3781690b486e6b5d6f3952d9a915e9882e9f0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/01.json",
+      "bytes": 20869,
+      "sha256": "3d547fcec113e7bea4756dab1cd460f2a8c5b48ee6fe90104c8ed7f1acf7a57b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/02.json",
+      "bytes": 22354,
+      "sha256": "2fc6d73c3f66538793a8febf09377dbf1550e41e1c6c435c4b034553b7a404db"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/03.json",
+      "bytes": 16585,
+      "sha256": "e3d2a3cb28b99b56bc011cdb23509c6de3c9ca521c4802751a9c7bc7a83be0f8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/04.json",
+      "bytes": 22734,
+      "sha256": "fb95ef53b8f7dbbf5902fcbe32c773dbd6abab0b57757213c33b15477615165a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/05.json",
+      "bytes": 20871,
+      "sha256": "13b4599b1383e118e0a8746b57767ce66358facfe006d31c7524438bde24e68a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/06.json",
+      "bytes": 14227,
+      "sha256": "00c3d8fceb9c9f2bdba54b93210a0d4c7cb5cb44c693b0e28cf98895a7b1e9e9"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/07.json",
+      "bytes": 20844,
+      "sha256": "23997d563e9dca73a6357927272225d3aedfb6cd97c3a385a4be5ccb87e8da63"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/08.json",
+      "bytes": 23325,
+      "sha256": "3ca8d8b6622070535e32b31bf110bf4e6793b1eeeeda2b533cf8e1bda8bdcd52"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/09.json",
+      "bytes": 23756,
+      "sha256": "8759200926cdcc1b76488cb70f63706d9d4689eb66abab5a9acf6c63a7aa5771"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/10.json",
+      "bytes": 16945,
+      "sha256": "de34cdfa9caf0271bd98e2ada301bd1f277a80c5271d51d1aeb26077a2940014"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/11.json",
+      "bytes": 20655,
+      "sha256": "5dddf693551d20835bfa1bccae095372e834289f5d6d6bad78b8869052bbb46e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/12.json",
+      "bytes": 18636,
+      "sha256": "5e916242105cea09a23f8e765623089dcbe56b451c410d6991d2068c5402db64"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/13.json",
+      "bytes": 22253,
+      "sha256": "0abde74319579ae254d6220610790d9e2bbf51f7d15c707f0f09c2b93f1aefa0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/14.json",
+      "bytes": 22589,
+      "sha256": "3c153db3a8ddc68c743cc3ac67989669433867d933b2b438ed273415fbc5bd99"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/15.json",
+      "bytes": 18455,
+      "sha256": "700d5f0ad06bd175f2fe562b33e73b912e03049b06c34f7f1a83bc894a71cce7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/16.json",
+      "bytes": 17232,
+      "sha256": "445a7e171154acbe0b35dfe8b4fd5a9f1bdb3cb6140a9784b9abf103b6769348"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/17.json",
+      "bytes": 24338,
+      "sha256": "bbd82074e121661ae84845cd6425916a211f1a10d9cc6024a56d5ca72b2451f0"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/18.json",
+      "bytes": 22655,
+      "sha256": "2e19719f9a8e86662d4f3571a2e4977ad11f3e0ac8e0ba6fd6e7516d1ea2afe5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/19.json",
+      "bytes": 22373,
+      "sha256": "1e78071a0d52897c0dd74783ab8eaa271a6b68566ea3422ae44fdc286dcaed8e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-analysis-20261024/20.json",
+      "bytes": 16556,
+      "sha256": "dcfe8355cd7279432dba5bbf728ae0c4c276965839156a52a230c713ceddc68e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/01.json",
+      "bytes": 60563,
+      "sha256": "56dda6efa0785df51e293831ea51121b3c59a05200f2d7e70d1aaa34fe95592e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/02.json",
+      "bytes": 61798,
+      "sha256": "bbe233f159493000b466c7154149b57243ea9c8c6d8248b3e86843a664b158dd"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/03.json",
+      "bytes": 47952,
+      "sha256": "a9a3ad6d6d1c9cabab655c4c8715c92f4ba67c89d1684475d7fae4a6a19154f5"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/04.json",
+      "bytes": 66016,
+      "sha256": "3057b5ee76002fcf8e3ceb90064d05d829f81c5e760d7f50368985af9381e652"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/05.json",
+      "bytes": 60507,
+      "sha256": "bd7a070a12be980a1550374ff241c13bb74dce69aca3212d0d709fe1a6e72584"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/06.json",
+      "bytes": 41562,
+      "sha256": "06b2f67ec587eb4e93e5391b5bf4121b53450f8ac72320412cdad8f0f6f21cfe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/07.json",
+      "bytes": 60225,
+      "sha256": "033dd4b8ca1a838592652ee4625edca661ab2c63bfcb4c131b054cf837797d5a"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/08.json",
+      "bytes": 67173,
+      "sha256": "1172454ad2d159e1b8325acce8f1b76c593e14efe6dd7eb33630f790a6b54874"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/09.json",
+      "bytes": 67723,
+      "sha256": "82172b6d575146b42f056aa630db85a8586817f4bf7f93424ed85cefd3ac4707"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/10.json",
+      "bytes": 46610,
+      "sha256": "364942c158c10a25cd1f118bf8ec1ae2bcacf3943cfae46d416bcdf2c2e04aad"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/11.json",
+      "bytes": 58540,
+      "sha256": "772b03a0206fab529a4594e983d5a1b0cf48c5e049c20c6646fa18b2f0552e88"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/12.json",
+      "bytes": 51832,
+      "sha256": "325e2ad59d23feade424202fa6f21a8eac8ff8640d3c35a17b9634adebbf52d7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/13.json",
+      "bytes": 61316,
+      "sha256": "28c85871da996c7d0677110a6450c92d318a5a22a82678e1c49c5221593d18e4"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/14.json",
+      "bytes": 63946,
+      "sha256": "32497faccfad849b7bdba525ca988cc769c2c4ca87996333cfe09a0210526166"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/15.json",
+      "bytes": 53491,
+      "sha256": "7cce968092bab17b6452b3146e88301e2fee557ba8cd3e6e7f07d1b41b717d97"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/16.json",
+      "bytes": 49815,
+      "sha256": "156678e5ad7b0da497c21500bdc9f6e68afdf91cc54210f987acbd235a5dc057"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/17.json",
+      "bytes": 101977,
+      "sha256": "6e2cb3dbfe9fb0a669d34f6027cd78a568a55c149409d754760785c765194bea"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/18.json",
+      "bytes": 65803,
+      "sha256": "b7bc2ea0931147fb85e7d4f97f0c452a60ed0b86a2c9f1696eda1c7550118dd3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/19.json",
+      "bytes": 62731,
+      "sha256": "55482b899d2a0370443a786ecb6089f23a3a1996c000f93bac2f36d57d8f7953"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-corrected-20261024/20.json",
+      "bytes": 46502,
+      "sha256": "a891d5113fdf5fb5628bdeeb2d72e5fc36bb577b5d752bd0c8975f0317b14b86"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/tempo-renderer-recipes-20261024.json",
+      "bytes": 21429,
+      "sha256": "bb9ef9b67c8fa714270a340620d059ec156ea699446b75085e413199999e4e76"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/upload-metadata-preservation-20261024.json",
+      "bytes": 14446,
+      "sha256": "ea7bb97b3dc9f2bf94a7292753d539429c33fdd05d1ee896554fe83777154ace"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/validate-user-thumbnail-video-20261024.py",
+      "bytes": 9091,
+      "sha256": "f90fee11b471828637351f65c026cdfc5e77d8e5cf8586f3f1f5b3df87a6ec49"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-release-execution-checks-20261024.json",
+      "bytes": 2516,
+      "sha256": "fcc18a42c8db3f8cfba7654f13bcc6cd02e355850ff54885b40582ca374d9038"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-user-thumbnail-20261024-validation.json",
+      "bytes": 24352,
+      "sha256": "815f2344f3d5c950d67e403891aaed97827bd1a18cdb3f5a8a6c75c82c54aa33"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/video-user-thumbnail-20261024.json",
+      "bytes": 39827,
+      "sha256": "668de5bc2d8ba87b55de2b7be0034a3719d91fe49020f504dc8344095a83312e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-comments-after-20261024.json",
+      "bytes": 585,
+      "sha256": "985216fcd1161c62306672376c5a64ab8f4467d17eb05cf200ed7cccdca87cbc"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-comments-before-20261024.json",
+      "bytes": 69,
+      "sha256": "617a486bf8ebaa062d6b617010144ec780dd16086b21b1c200f68bf33f694cd6"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-description-20261024.txt",
+      "bytes": 2735,
+      "sha256": "5477d9d49490849fb4ab956ea7a783dc1337d138f37053cc6c7db181e3c5fb61"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-metadata-20261024.json",
+      "bytes": 3397,
+      "sha256": "50e28498f0593eff68c1c3f6aceac77f57b51799db9130f851eae4d481c2ee35"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-pinned-comment-20261024.txt",
+      "bytes": 197,
+      "sha256": "7429b585958ae9edfb29e88e8bb3d6b272c9a109aeac94a8e393d0d7f0517682"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-public-metadata-20261024.json",
+      "bytes": 3246,
+      "sha256": "d883763f41115b4a62d8820c49814e69cdfd6078475f3ad1229de1398a9eb663"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-tags-20261024.txt",
+      "bytes": 217,
+      "sha256": "f572875121429920e73aae3eaf101ba928e3fee699c4339736cfc20be7ef8ea8"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-title-20261024.txt",
+      "bytes": 101,
+      "sha256": "a84ea389a0934e26198e01160f4eaeccf87c8469ba90d729a2b849016a639771"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-upload-20261024-ui.json",
+      "bytes": 304321,
+      "sha256": "d6208141153024a4ee5f7e216d5c6912b38a21a70ad08622c2a39efdaf1d675d"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-upload-20261024.json",
+      "bytes": 4985,
+      "sha256": "c18ce50ec34df04ed68af7ef1b3935c2e3cd9a807b78bdde21242c596b33c839"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/production/youtube-upload-staging-20261024.json",
+      "bytes": 2994,
+      "sha256": "770447a4c61ccb8f8719dbaa4a6b2f72a8eb9cdab3a1db8ce71cfbc6a2e83a77"
+    }
+  ],
+  "candidate_count": 198,
+  "candidate_bytes": 3864544687,
+  "protected_count": 164,
+  "final_artwork": [
+    "input/thumbnail-prompt.txt",
+    "input/thumbnail-source.png",
+    "input/thumb.psd",
+    "input/thumb.jpg"
+  ],
+  "upload_evidence": {
+    "path": "SERIES/07-00/production/youtube-upload-20261024.json",
+    "video_id": "7iVqqukk5WA",
+    "public": true,
+    "processing_4k": "complete",
+    "copyright": "pending_at_last_observation"
+  },
+  "free_bytes_before_inventory": 572619722752
+}

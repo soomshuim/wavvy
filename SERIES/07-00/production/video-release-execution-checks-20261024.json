@@ -1,0 +1,75 @@
+{
+  "schema": "wavvy.release_execution_checks.v1",
+  "scope": "Worker execution evidence only; independent final review and actual upload/publication are not claimed",
+  "video": {
+    "path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+    "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3",
+    "bytes": 676670955,
+    "container_seconds": 6723.0,
+    "audio_seconds": 6722.859,
+    "embedded_chapters": 40
+  },
+  "thumbnail": {
+    "path": "SERIES/07-00/input/thumb.jpg",
+    "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+  },
+  "metadata_payload": "SERIES/07-00/production/youtube-metadata-20261024.json",
+  "metadata_preservation": "SERIES/07-00/production/upload-metadata-preservation-20261024.json",
+  "csv": "SERIES/07-00/output/upload.csv",
+  "static_checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "wavvy.py",
+        "wavvy_harness/subtitles.py",
+        "wavvy_harness/upload_copy.py",
+        "wavvy_harness/youtube_titles.py",
+        "wavvy_harness/__init__.py",
+        "wavvy_harness/premixed_audio.py",
+        "wavvy_harness/selected_audio.py",
+        "wavvy_harness/packaging.py",
+        "wavvy_harness/gate.py",
+        "wavvy_harness/source.py",
+        "wavvy_harness/doctor.py",
+        "wavvy_harness/state.py"
+      ],
+      "exit_code": 0,
+      "output_path": "SERIES/07-00/production/final-static-check-0-20261024.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_path": "SERIES/07-00/production/final-static-check-1-20261024.txt"
+    }
+  ],
+  "full_test_command": [
+    "python3",
+    "-m",
+    "unittest",
+    "tests/test_harness.py",
+    "tests/test_premixed_audio.py",
+    "tests/test_youtube_titles.py",
+    "tests/test_subtitles.py"
+  ],
+  "full_test_count": 109,
+  "full_test_stderr": "SERIES/07-00/production/full-harness-tests-20261024.stderr.txt",
+  "gate_records": [
+    "SERIES/07-00/production/video-source-final-20261024.json",
+    "SERIES/07-00/production/video-render-final-20261024.json",
+    "SERIES/07-00/production/video-upload-ready-20261024.json",
+    "SERIES/07-00/production/video-verify-release-20261024.json"
+  ],
+  "raw_prompt_status": "unverified",
+  "sources_and_artwork_unchanged": true,
+  "state_writer": "controller-owned; worker did not modify .ai/state.json",
+  "browser_actions": 0,
+  "uploads": 0,
+  "deletions": 0,
+  "commits": 0
+}

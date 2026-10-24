@@ -1,0 +1,133 @@
+{
+  "schema": "wavvy.youtube_publication.v1",
+  "series": "SERIES/07-00",
+  "recorded_at_utc": "2026-10-24T09:27:17.969038+00:00",
+  "authorization": {
+    "upload_and_publication_quote": "영상 제작하고 업로드하자. 본문이나 댓글은 그대로고 바로 공개",
+    "title_confirmation_quote": "기존 제목 그대로 (추천)",
+    "like_quote": "방금 올린 거 좋아요도 하고"
+  },
+  "channel": {
+    "name": "Wavvy24",
+    "id": "UC4R4NGwp19Y4lbdNs2HQVcg"
+  },
+  "video_id": "7iVqqukk5WA",
+  "url": "https://youtu.be/7iVqqukk5WA",
+  "upload_submission_count": 1,
+  "video": {
+    "path": "output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+    "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3",
+    "bytes": 676670955,
+    "dimensions": [
+      3840,
+      2160
+    ],
+    "container_duration_seconds": 6723.0,
+    "audio_duration_seconds": 6722.859,
+    "track_occurrences": 40,
+    "repeat_count": 2
+  },
+  "title": "Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 2Hour | Wavvy | 07:00",
+  "metadata_preserved": {
+    "title": true,
+    "description_narrative": true,
+    "tags": true,
+    "comment": true,
+    "only_description_edit": "40 chapter timestamps replaced with actual new mix start times"
+  },
+  "persisted_title_equal": true,
+  "persisted_description_equal": true,
+  "public_title_equal": true,
+  "public_description_equal": true,
+  "settings": {
+    "audience": "not_made_for_kids",
+    "paid_promotion": false,
+    "ai_used": true,
+    "comments_enabled": true,
+    "category": "Music"
+  },
+  "visibility": {
+    "saved": "public",
+    "reopened_selection": "public",
+    "observed_after_reload": "public",
+    "studio_observed_at_utc": "2026-10-24T09:25:15.712Z",
+    "scheduled": false,
+    "premiere": false
+  },
+  "processing": {
+    "sd": "complete",
+    "hd": "complete",
+    "4k": "complete",
+    "observed_at_utc": "2026-10-24T09:25:15.712Z"
+  },
+  "copyright": {
+    "status": "pending",
+    "observed_text": "검토 완료 대기 중...",
+    "observed_at_utc": "2026-10-24T09:34:17.737Z",
+    "future_clearance_guaranteed": false
+  },
+  "comment": {
+    "text": "아침 7시, 첫 발을 내딛을 때의 공기를 담았어요. 🏃\n20곡을 두 번 이어 들으며 자기 페이스로 달려보세요.\n어떤 곡에서 발걸음이 가장 가벼워지나요?",
+    "url": "https://www.youtube.com/watch?v=7iVqqukk5WA&lc=UgxFItNn5xsIRHIf6ZF4AaABAg",
+    "submission_count": 1,
+    "exact_matching_comments": 1,
+    "pinned": true,
+    "pin_persisted_after_watch_reload": true
+  },
+  "watch_playback": {
+    "before_seconds": 1.608104,
+    "after_seconds": 4.610258,
+    "advance_seconds": 3.002154,
+    "wait_ms": 3000,
+    "paused_after": true,
+    "note": "Brief page playback verification only; not a full-stream listening or 4K playback-quality certification."
+  },
+  "thumbnail": {
+    "url": "https://i.ytimg.com/vi/7iVqqukk5WA/maxresdefault.jpg",
+    "downloaded_bytes": 360595,
+    "downloaded_sha256": "03f7ced6cabe862b27c9dec4cea347f939483dcfa5884b69db7a9fb20710fdd1",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "source_sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944",
+    "source_resized_comparison_rgb_rms": [
+      3.8503804600974174,
+      3.4132415822731232,
+      4.554784429357405
+    ],
+    "visual_observation": "Controller inspected published thumbnail and watch-page screenshot: selected three-runner image, Wavvy logo, Running Mix and 180BPM layout match the user-final JPG. YouTube recompression is not byte identity."
+  },
+  "review": {
+    "path": ".ai/reviews/2026-10-24-0700-video-release-review.md",
+    "verdict": "CLEAN",
+    "critical_high_count": 0,
+    "scope": "Local video, narrow premix validation changes and preserved metadata; external publication separately observed."
+  },
+  "evidence_files": [
+    {
+      "path": "production/youtube-upload-20261024-ui.json",
+      "sha256": "d6208141153024a4ee5f7e216d5c6912b38a21a70ad08622c2a39efdaf1d675d"
+    },
+    {
+      "path": "production/youtube-public-metadata-20261024.json",
+      "sha256": "d883763f41115b4a62d8820c49814e69cdfd6078475f3ad1229de1398a9eb663"
+    },
+    {
+      "path": "production/youtube-comments-before-20261024.json",
+      "sha256": "617a486bf8ebaa062d6b617010144ec780dd16086b21b1c200f68bf33f694cd6"
+    },
+    {
+      "path": "production/youtube-comments-after-20261024.json",
+      "sha256": "985216fcd1161c62306672376c5a64ab8f4467d17eb05cf200ed7cccdca87cbc"
+    }
+  ],
+  "staging_cleanup_record": "production/youtube-upload-staging-20261024.json",
+  "media_policy": "Post-upload cleanup authorized by user; exact deletion inventory and verification will be recorded in .ai/cleanup/2026-10-24-0700-post-upload-cleanup.json. Final artwork and provenance retained.",
+  "like": {
+    "applied": true,
+    "persisted_after_watch_reload": true,
+    "button_label": "좋아요 취소",
+    "displayed_count": 1
+  }
+}

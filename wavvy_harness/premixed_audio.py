@@ -69,8 +69,100 @@ def premixed_opt_in(series: Path) -> bool:
     return (series / MANIFEST).exists() or (concept.is_file() and _section(concept.read_text(encoding="utf-8")) is not None)
 
 
-def _producer_ref(repo: Path, data: dict, key: str) -> Path:
-    return _bound(repo, {"path": data[f"{key}_path"], "sha256": data[f"{key}_sha256"]})
+def _producer_ref(repo: Path, data: dict, key: str, *, allow_missing: bool = False) -> Path:
+    ref = {"path": data[f"{key}_path"], "sha256": data[f"{key}_sha256"]}
+    path = _path(repo, ref["path"])
+    if allow_missing and not path.exists():
+        _require(_digest(ref["sha256"]), f"invalid retained media hash: {ref['path']}")
+        return path
+    return _bound(repo, ref)
+
+
+def _corrected_repeat_evidence(series: Path, archive: dict, mix: dict, *, allow_uploaded_cleanup: bool = False) -> tuple[list, int, int]:
+    """Check the retained source -> tempo correction -> two-cycle producer chain."""
+    repo = series.parent.parent
+    plan = _json(_producer_ref(repo, mix, "plan"))
+    _producer_ref(repo, mix, "producer_script")
+    _require(plan.get("schema") == "wavvy.continuous_180_plan.v1"
+             and plan.get("series") == mix.get("series") == series.name
+             and plan.get("failures") == [] and plan.get("target_bpm") == 180,
+             "premix corrected production plan differs")
+    _require(all(data.get("repeat_count") == 2 and data.get("additional_repeats") == 0
+                 and data.get("sample_rate") == 48000 for data in (plan, mix)),
+             "premix corrected production repeat/rate differs")
+    download = _json(_bound(series, archive["download_manifest"]))
+    selection = _json(_bound(series, archive["selection_basis"]))
+    reacquired = _json(_bound(series, archive["source_ledger"]))
+    _require(reacquired.get("schema") == "wavvy.reacquisition.v1"
+             and download.get("workspace") == selection.get("workspace") == reacquired.get("workspace")
+             and bool(download.get("workspace")), "premix corrected selection workspaces differ")
+    sources = mix["sources"]
+    groups = (sources, download["tracks"], selection["tracks"], reacquired["tracks"])
+    _require(all(isinstance(items, list) and len(items) == 20 for items in groups)
+             and sources == plan.get("sources"), "premix corrected production requires the same 20 planned sources")
+    ids = set()
+    for order, (source, item, chosen, acquired) in enumerate(zip(*groups), 1):
+        _require(all(type(entry.get("order")) is int and entry["order"] == order
+                     for entry in (source, item, chosen, acquired)), "premix corrected source order differs")
+        identity = source["candidate_id"]
+        _require(bool(identity) and identity not in ids
+                 and identity == item.get("candidate_id") == chosen.get("candidate_id") == acquired.get("candidate_id"),
+                 f"premix corrected source {order}: selected candidate differs")
+        ids.add(identity)
+        _require(source["title"] == chosen.get("title") == item.get("approved_title") == acquired.get("approved_title"),
+                 f"premix corrected source {order}: title differs")
+        correction_path = _bound(repo, {"path": source["correction_record"], "sha256": source["correction_record_sha256"]})
+        correction = _json(correction_path)
+        _require(correction.get("schema") == "wavvy.tempo_corrected_source.v1"
+                 and (correction.get("order"), correction.get("title"), correction.get("candidate_id"))
+                 == (order, source["title"], identity) and correction.get("target_bpm") == 180,
+                 f"premix corrected source {order}: correction identity differs")
+        original = _producer_ref(repo, correction, "source", allow_missing=allow_uploaded_cleanup)
+        _require(correction["source_sha256"] == item.get("sha256") == acquired.get("sha256")
+                 and original.name == item.get("input_filename") == acquired.get("input_filename"),
+                 f"premix corrected source {order}: reacquired WAV identity differs")
+        output = _producer_ref(repo, correction, "output", allow_missing=allow_uploaded_cleanup)
+        _require(output == _path(repo, source["path"]) and correction["output_sha256"] == source["sha256"],
+                 f"premix corrected source {order}: corrected WAV identity differs")
+        _producer_ref(repo, correction, "analysis")
+        beats = _json(_bound(repo, {"path": source["beat_record"], "sha256": source["beat_record_sha256"]}))
+        _require(beats.get("schema") == "wavvy.independent_corrected_beats.v1"
+                 and (beats.get("order"), beats.get("title")) == (order, source["title"])
+                 and _path(repo, beats["audio_path"]) == output and beats.get("audio_sha256") == source["sha256"]
+                 and beats.get("correction_record_sha256") == source["correction_record_sha256"],
+                 f"premix corrected source {order}: independent beat evidence differs")
+    timeline = mix["timeline"]
+    chunks = timeline["chunks"]
+    _require(len(chunks) == 79 and sum(c.get("kind") == "transition" for c in chunks) == 39
+             and sum(c.get("kind") == "body" for c in chunks) == 40,
+             "premix corrected timeline requires 40 bodies and 39 transitions")
+    cursor, expected_entries = 0, []
+    for index, chunk in enumerate(chunks):
+        _require(type(chunk.get("samples")) is int and chunk["samples"] > 0
+                 and chunk.get("mix_start_sample") == cursor
+                 and chunk.get("mix_end_sample") == cursor + chunk["samples"], "premix corrected chunk timing differs")
+        if index % 2 == 0:
+            occurrence = index // 2
+            cycle, order = occurrence // 20 + 1, occurrence % 20 + 1
+            _require((chunk.get("kind"), chunk.get("cycle"), chunk.get("order")) == ("body", cycle, order),
+                     "premix corrected body cycle/order differs")
+            expected_entries.append((cycle, order, 0 if occurrence == 0 else chunks[index - 1]["mix_start_sample"]))
+        else:
+            outgoing = (index // 2) % 20 + 1
+            _require(chunk.get("kind") == "transition" and chunk.get("label") == f"{outgoing:02d}-{outgoing % 20 + 1:02d}",
+                     "premix corrected transition order differs")
+        cursor += chunk["samples"]
+    _require([(e["cycle"], e["order"], e["mix_entry_sample"]) for e in timeline["track_entries"]] == expected_entries,
+             "premix corrected 40 starts differ from actual transition chunks")
+    samples = timeline["expected_samples"]
+    _require(type(samples) is int and samples > 0 and cursor == samples == mix.get("pcm_stream_samples"),
+             "premix corrected PCM sample count differs")
+    transitions = mix["transition_results"]
+    _require(len(transitions) == 20 and [t["label"] for t in transitions]
+             == [f"{n:02d}-{n % 20 + 1:02d}" for n in range(1, 21)]
+             and all(t.get("technical_gate_pass") is True for t in transitions),
+             "premix corrected transition technical evidence differs")
+    return sources, 48000, samples
 
 
 def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) -> tuple[bool, dict, list[str]]:
@@ -96,56 +188,63 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
                  "premix must contain exactly two cycles and zero additional repeats")
         repo = series.parent.parent
         mix = _json(_bound(series, archive["mix_manifest"]))
-        repeat = _json(_producer_ref(repo, mix, "configuration"))
-        _producer_ref(repo, mix, "script")
-        baseline_path = _producer_ref(repo, mix, "baseline_manifest")
-        baseline = _json(baseline_path)
-        config_path = _bound(repo, repeat["base_config"])
-        config = _json(config_path)
-        _require(_bound(repo, repeat["base_manifest"]) == baseline_path, "premix baseline manifests differ")
-        _require(_producer_ref(repo, baseline, "configuration") == config_path, "premix baseline configuration differs")
-        _bound(repo, repeat["base_script"])
-        download_path = _bound(series, archive["download_manifest"])
-        download = _json(download_path)
-        basis_path = _bound(series, archive["selection_basis"])
-        basis = _json(basis_path)
-        ledger = _json(_bound(series, archive["source_ledger"]))
-        _require(_producer_ref(repo, download, "selection_basis") == basis_path, "premix selection basis differs")
-        ledger_workspace = ledger.get("workspace")
-        if isinstance(ledger_workspace, dict):
-            ledger_workspace = ledger_workspace.get("name")
-        _require(download.get("workspace") == basis.get("workspace") == ledger_workspace
-                 and bool(download.get("workspace")), "premix selection workspaces differ")
-        _require(ledger.get("settings", {}).get("lyrics_marker") == "[Instrumental]", "premix lacks retained instrumental source evidence")
-        sources, downloaded, selected, candidates = config["sources"], download["tracks"], basis["tracks"], ledger["tracks"]
-        before, after = repeat["source_hashes"], mix["source20_hashes_after"]
-        _require(all(isinstance(items, list) and len(items) == 20 for items in (sources, downloaded, selected, candidates, before, after)),
-                 "premix requires exactly 20 distinct selected sources and before/after hash records")
-        ids = set()
-        for order, (source, item, chosen, candidate, pre, post) in enumerate(zip(sources, downloaded, selected, candidates, before, after), 1):
-            _require(all(type(entry.get("order")) is int and entry["order"] == order for entry in (source, item, chosen, candidate, pre, post)),
-                     f"premix source {order}: source evidence order differs")
-            identity = source["candidate_id"]
-            _require(bool(identity) and identity not in ids and identity == item.get("candidate_id") == chosen.get("candidate_id")
-                     == candidate.get("decision", {}).get("chosen_candidate_id"), f"premix source {order}: candidate ID differs")
-            ids.add(identity)
-            _require(source["title"] == item.get("approved_title") == chosen.get("approved_title"), f"premix source {order}: title differs")
-            sha = source["sha256"]
-            _require(_digest(sha) and sha == item.get("sha256") == pre.get("expected") == pre.get("actual")
-                     == post.get("expected") == post.get("actual"), f"premix source {order}: historical WAV hash differs")
-            _require(Path(source["path"]).name == item.get("input_filename"), f"premix source {order}: source filename differs")
-        entries = mix["timeline"]["track_entries"]
-        _require(mix.get("repeat_count") == repeat.get("repeat_count") == 2
-                 and mix.get("track_occurrences") == repeat.get("track_occurrences") == 40
-                 and mix.get("transition_occurrences") == repeat.get("transition_occurrences") == 39
-                 and mix.get("transition_acceptance", {}).get("all39_accepted") is True,
-                 "premix retained production must contain 40 accepted entries/39 transitions")
-        rate = repeat["sample_rate_hz"]
-        samples = repeat["expected_samples"]
-        _require(type(rate) is int and rate == 48000 and type(samples) is int and samples > 0
-                 and mix["timeline"]["expected_samples"] == samples
-                 and mix["lossless_pcm_stream_validation"]["total_samples"] == samples,
-                 "premix production sample count/rate differs")
+        corrected = mix.get("schema") == "wavvy.continuous_mix.repeat2.v1"
+        if corrected:
+            sources, rate, samples = _corrected_repeat_evidence(series, archive, mix, allow_uploaded_cleanup=allow_uploaded_cleanup)
+            entries = mix["timeline"]["track_entries"]
+            audio_ref = {"path": mix["audio_path"], "sha256": mix["audio_sha256"]}
+        else:
+            repeat = _json(_producer_ref(repo, mix, "configuration"))
+            _producer_ref(repo, mix, "script")
+            baseline_path = _producer_ref(repo, mix, "baseline_manifest")
+            baseline = _json(baseline_path)
+            config_path = _bound(repo, repeat["base_config"])
+            config = _json(config_path)
+            _require(_bound(repo, repeat["base_manifest"]) == baseline_path, "premix baseline manifests differ")
+            _require(_producer_ref(repo, baseline, "configuration") == config_path, "premix baseline configuration differs")
+            _bound(repo, repeat["base_script"])
+            download_path = _bound(series, archive["download_manifest"])
+            download = _json(download_path)
+            basis_path = _bound(series, archive["selection_basis"])
+            basis = _json(basis_path)
+            ledger = _json(_bound(series, archive["source_ledger"]))
+            _require(_producer_ref(repo, download, "selection_basis") == basis_path, "premix selection basis differs")
+            ledger_workspace = ledger.get("workspace")
+            if isinstance(ledger_workspace, dict):
+                ledger_workspace = ledger_workspace.get("name")
+            _require(download.get("workspace") == basis.get("workspace") == ledger_workspace
+                     and bool(download.get("workspace")), "premix selection workspaces differ")
+            _require(ledger.get("settings", {}).get("lyrics_marker") == "[Instrumental]", "premix lacks retained instrumental source evidence")
+            sources, downloaded, selected, candidates = config["sources"], download["tracks"], basis["tracks"], ledger["tracks"]
+            before, after = repeat["source_hashes"], mix["source20_hashes_after"]
+            _require(all(isinstance(items, list) and len(items) == 20 for items in (sources, downloaded, selected, candidates, before, after)),
+                     "premix requires exactly 20 distinct selected sources and before/after hash records")
+            ids = set()
+            for order, (source, item, chosen, candidate, pre, post) in enumerate(zip(sources, downloaded, selected, candidates, before, after), 1):
+                _require(all(type(entry.get("order")) is int and entry["order"] == order for entry in (source, item, chosen, candidate, pre, post)),
+                         f"premix source {order}: source evidence order differs")
+                identity = source["candidate_id"]
+                _require(bool(identity) and identity not in ids and identity == item.get("candidate_id") == chosen.get("candidate_id")
+                         == candidate.get("decision", {}).get("chosen_candidate_id"), f"premix source {order}: candidate ID differs")
+                ids.add(identity)
+                _require(source["title"] == item.get("approved_title") == chosen.get("approved_title"), f"premix source {order}: title differs")
+                sha = source["sha256"]
+                _require(_digest(sha) and sha == item.get("sha256") == pre.get("expected") == pre.get("actual")
+                         == post.get("expected") == post.get("actual"), f"premix source {order}: historical WAV hash differs")
+                _require(Path(source["path"]).name == item.get("input_filename"), f"premix source {order}: source filename differs")
+            entries = mix["timeline"]["track_entries"]
+            _require(mix.get("repeat_count") == repeat.get("repeat_count") == 2
+                     and mix.get("track_occurrences") == repeat.get("track_occurrences") == 40
+                     and mix.get("transition_occurrences") == repeat.get("transition_occurrences") == 39
+                     and mix.get("transition_acceptance", {}).get("all39_accepted") is True,
+                     "premix retained production must contain 40 accepted entries/39 transitions")
+            rate = repeat["sample_rate_hz"]
+            samples = repeat["expected_samples"]
+            _require(type(rate) is int and rate == 48000 and type(samples) is int and samples > 0
+                     and mix["timeline"]["expected_samples"] == samples
+                     and mix["lossless_pcm_stream_validation"]["total_samples"] == samples,
+                     "premix production sample count/rate differs")
+            audio_ref = mix["listening_copy"]
         duration = samples / rate
         _require(math.isfinite(duration) and abs(float(mix["timeline"]["expected_seconds"]) - duration) <= 1 / rate,
                  "premix production duration differs")
@@ -158,12 +257,13 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
             _require(type(sample) is int and previous < sample < samples and (index != 0 or sample == 0)
                      and abs(float(entry["mix_entry_seconds"]) - sample / rate) < 1 / rate,
                      "premix timeline start sample/time differs")
-            _require((entry["title"], entry["source_path"]) == (sources[order - 1]["title"], sources[order - 1]["path"]),
+            _require(entry["title"] == sources[order - 1]["title"]
+                     and (corrected or entry.get("source_path") == sources[order - 1]["path"]),
                      "premix timeline source/title differs")
             previous = sample
         audio = _path(series, archive["audio"]["path"])
-        _require(audio == _path(repo, mix["listening_copy"]["path"])
-                 and _digest(archive["audio"].get("sha256")) and archive["audio"]["sha256"] == mix["listening_copy"]["sha256"],
+        _require(audio == _path(repo, audio_ref["path"])
+                 and _digest(archive["audio"].get("sha256")) and archive["audio"]["sha256"] == audio_ref["sha256"],
                  "premix audio differs from production manifest")
         if audio.is_file():
             _bound(series, archive["audio"])

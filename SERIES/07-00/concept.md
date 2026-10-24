@@ -1,38 +1,29 @@
 # 07:00 — 아침 러닝 (제작 브리프)
 
-Version: 0.2 재제작 · 2026-10-24
+Version: 0.4 재제작 공개·업로드 후 정리 완료 · 2026-10-24
 
 ## Current Rebuild — 2026-10-24
 
-- 젠은 이전 YouTube 영상을 삭제했다고 알렸고, 기존 선택 20곡을 다시 제작해 업로드하도록 요청했다. 새 영상은 아직 제작·업로드 전이다.
+- 젠은 이전 YouTube 영상을 삭제했다고 알렸고, 기존 선택 20곡을 다시 제작해 업로드하도록 요청했다. 새 정적 이미지 4K 영상 제작·기술 검사와 source-final·render-final·upload-ready·verify-release 검사를 마쳤다. 독립 최종 검토 CLEAN 이후 Wavvy24에 한 번 업로드하고 즉시 공개했다. 새 영상은 https://youtu.be/7iVqqukk5WA 이며 기존 댓글도 원문 그대로 게시·고정했다. 4K 처리 완료와 공개 페이지의 짧은 재생을 확인했다. 저작권 검토는 아래 마지막 관측 시점에 아직 진행 중이다.
 - 확정된 번호순과 후보 ID는 `input/suno-final-selection-2026-10-12.json`을 유지한다. 음악을 새로 생성하거나 선택곡을 바꾸는 요청은 아니다.
 - 이번에는 각 곡을 실제로 측정하고 음높이를 유지하며 180 BPM으로 늘리거나 줄인다. 곡이 바뀌는 전환부도 박자가 이어지도록 연결한다. 2026-10-12의 ‘템포 차이만으로 보정하지 않는다’는 결정은 이번 재제작에 적용하지 않는다.
 - 20곡을 번호순으로 2회 구성한다. 20→1을 포함해 39개 전환과 40개 실제 시작 시각을 새로 기록한다. 이전 영상의 0.8초 전환과 챕터 시각은 새 제작 기준이 아니다.
-- 착수 시점에는 이전 정리로 로컬 음원·영상이 없었다. 같은 선택 ID의 원본 WAV 20곡을 다시 확보했다. 새 다운로드와 과거 원본의 해시는 다르므로 출처 원장에 각각 기록했다. 현재 20곡의 180 BPM 보정과 독립 박자 분석, 2회 연결 음원 제작 및 저장 파일의 기술 검사를 마쳤다. 독립 최종 오디오 검토는 CLEAN이며 젠의 새 음원 청취 확인과 새 영상 제작은 아직 전이다. 아래 2026-10-12 기록은 당시 이력이다.
-- 새 장면은 한국 도심 빌딩을 배경으로 위에서 본 세 러너이며 젠이 선택했다. 젠이 직접 만든 `input/thumb.jpg`와 `input/thumb.psd`를 최종본으로 받았다. 새 영상의 정적 이미지 입력은 `input/thumb.jpg`이다. 시간 숫자는 넣지 않으며 색·글자·배치를 다시 편집하지 않는다. 새 업로드 제목은 아직 젠의 확인 전이다.
-- 실행 계획: `.ai/plans/2026-10-24-0700-180bpm-remaster.md`.
+- 착수 시점에는 이전 정리로 로컬 음원·영상이 없었다. 같은 선택 ID의 원본 WAV 20곡을 다시 확보했다. 새 다운로드와 과거 원본의 해시는 다르므로 출처 원장에 각각 기록했다. 현재 20곡의 180 BPM 보정과 독립 박자 분석, 2회 연결 음원 제작 및 저장 파일의 기술 검사를 마쳤다. 독립 최종 오디오 검토는 CLEAN이다. 젠은 현재 음원으로 영상 제작·업로드하고 바로 공개하도록 지시했다. 별도의 전곡 청취 승인이 있었다고 기록하지 않는다. 아래 2026-10-12 기록은 당시 이력이다.
+- 새 장면은 한국 도심 빌딩을 배경으로 위에서 본 세 러너이며 젠이 선택했다. 젠이 직접 만든 `input/thumb.jpg`와 `input/thumb.psd`를 최종본으로 받았다. 새 영상의 정적 이미지 입력은 `input/thumb.jpg`이다. 시간 숫자는 넣지 않으며 색·글자·배치를 다시 편집하지 않는다. 새 업로드 제목은 젠의 “기존 제목 그대로 (추천)” 확인에 따라 이전 확정 제목을 그대로 쓴다.
+- 완료된 실행 계획과 중간 검사는 업로드 후 정리했다. 최종 제작·게시·정리 결과만 보존한다.
 
 ## Current Audio — 2026-10-24
 
-- 기존 선택 20곡의 ID·번호순은 동일하다. 새로 확보한 원본은 `input/tracks/`, 음높이를 유지한 180 BPM 보정본은 `input/processed-180/`에 각각 보관한다.
+- 기존 선택 20곡의 ID·번호순은 동일하다. 제작 때 원본은 `input/tracks/`, 음높이를 유지한 180 BPM 보정본은 `input/processed-180/`을 사용했다. 업로드 후 두 음원 폴더의 WAV를 삭제했으며 ID·해시·보정 기록은 보존한다.
 - 보정 방식은 FFmpeg `atempo`이다. 곡 안의 구간별 속도를 조정했으며 음높이 변경이나 악기 추가는 하지 않았다. 원본은 덮어쓰지 않았다.
-- 현재 2회 연결 음원: `output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a`, 48 kHz·stereo AAC, 6,722.858833초(약 1:52:03), SHA-256 `69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe`.
+- 게시에 사용한 2회 연결 음원(로컬 파일 삭제): `output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a`, 48 kHz·stereo AAC, 6,722.858833초(약 1:52:03), SHA-256 `69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe`.
 - 제작·검사 기록: `production/continuous-180-20261024/manifest.json`. 실제 40개 재생 구간·39개 전환이며 20→1도 연결했다. 전환은 16박(5⅓초)씩 겹친다. 2시간 WAV 중간 사본은 쓰지 않았다.
 - 전환 20종의 관측 타격음 차이는 각 연결의 90백분위가 최대 19.867 ms이다. 다른 박자 분석 모델의 마디 시작점도 대조했다. 이는 측정 오차를 포함한 추정치이며 모든 연주 타격이 기계적으로 정확히 180 BPM이라는 인증은 아니다.
 - 저장 AAC의 39개 전환과 첫 회차 본문 20곳을 원본 재구성 파형과 대조했다. 59곳의 최대 시간 차이는 0샘플, 최소 파형 상관은 0.96926이었다. 최종 음량은 -15.95 LUFS, true peak -3.04 dBTP이며 클리핑은 관측되지 않았다. 원곡의 간주·조용한 본문을 무음이라는 이유로 제거하지 않았다.
-- `output/continuous-180-20261024/transitions/`에 전환별 16초 청취 WAV 20개가 있다. 첫 회차 끝에서 두 번째 회차로 이어지는 샘플은 `20-01.wav`이다.
+- 전환별 16초 청취 WAV 20개와 모든 미리보기는 삭제했다. 20→1을 포함한 실제 연결 시각·측정 결과는 최종 제작 기록에 남겼다.
 - 실제 40개 시작 시각은 `production/continuous-180-20261024/tracklist.txt`에 기록했다. 곡이 처음 들리는 순간의 인증이 아니라 다음 곡의 페이드가 시작되는 위치다.
-- 독립 Astra/high 최종 오디오 검토는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. [검토 범위와 독립 측정](../../.ai/reviews/2026-10-24-0700-continuous-audio-review.md)을 따른다. 기술 검사 통과는 젠의 청취 승인이 아니다. 현재 새 보정본·연결 음원의 청취 승인, 새 업로드 제목 승인, 영상 제작·업로드는 아직 전이다.
-- 이전 `Final Selected Audio Sources` 및 `output/report.json`의 해시·시각은 2026-10-12 개별 음원 제작 이력이다. 새 완성 믹스의 출처·시각은 위 제작 기록을 따른다. 새 믹스는 아직 발매 게이트에 맞는 최종 보관 계약으로 승격하지 않았다. `pack`으로 반복·합성을 추가하지 않는다.
-
-## Previous Release Summary — 과거 기록
-Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기존 선택 02·03·04·13·14·18·19 일곱 곡, 1차 선택 01·05·07·08·15·16·17·20 여덟 곡, 2차 11B, 젠의 직접 재제작 06·09·10, 현재 `[07:00]`에 있는 12를 사용한다. 정확한 20개 ID는 `input/suno-final-selection-2026-10-12.json`에 있다. 현재 선택과 일치하는 WAV 20개를 파일 형식·길이·해시로 확인했다(`input/download-manifest.json`, 합계 약 58분 19초). 옛 05·06·07 WAV와 기존 선택 기록은 이력으로 보존한다. 젠은 이 곡들로 20~30분 달리면 평균 케이던스가 대략 180이라고 보고했다. 탐색적 오디오 측정에서는 일부 곡이 약 174~192 BPM으로 추정됐다. 20곡의 채택은 유지하고 `180 BPM`은 목표 케이던스 표기로 쓰며 전곡이 정확히 180 BPM이라는 주장은 하지 않는다. 음악적 품질의 별도 기계 판정은 아직 없다. Wavvy24에 업로드했고 2026-10-12 17:00 KST 공개 예약 시각 이후 Studio에서 공개·4K 처리 완료를 확인했다.
-
-젠의 2026-10-06 다운로드 보류는 2026-10-12 재개 요청으로 끝났다. 확정 20곡을 번호순으로 2회 반복한 40개 재생 구간의 4K 본편을 렌더했고, 40개 시작 시각을 포함한 업로드 문안을 작성했다. 선택 음원의 일부 정확한 원문 프롬프트는 확인되지 않아 최초 보컬 txt를 최종 음원 출처로 승격하지 않는다. 현행 선택 ID·WAV 해시·확인된 원문 또는 관측된 화면 설명을 아래 `Final Selected Audio Sources`와 `input/final-selected-audio-sources.json`에 구분해 기록한다.
-
-2026-10-12 현재: Suno 대화상자에서 Pro 다운로드 20회를 확인한 뒤, 확정된 20곡의 WAV를 수집했다. 06·09·10은 젠이 최종 채택했고, 12는 10월 6일 선택 B와 다른 현재 화면의 음원을 젠이 최종 12번으로 골랐다. 현재 `input/tracks/`의 상위 폴더에는 선택된 WAV만 20개 있다. 옛 05·06·07의 원본 해시와 파일은 `input/historical-downloads-2026-10-03.json` 및 `input/tracks/history/2026-10-03/`에 보존했다. 다운로드 과정에서 자동으로 생긴 M4A는 Downloads에 남겨 두었고 패키지에는 넣지 않았다.
-
-시각 작업(2026-10-12)은 이전 영상의 강변 새벽 장면과 시간 표기가 있는 썸네일이었다. 2026-10-24 새 최종본으로 교체했으며 옛 배경·시안·배치 지시·과정 검토 문서는 이번 썸네일 정리 대상이다. 현재 제작 입력이나 보존 대상이 아니다.
+- 독립 Astra/high 최종 오디오 검토는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. [검토 범위와 독립 측정](../../.ai/reviews/2026-10-24-0700-continuous-audio-review.md)을 따른다. 기술 검사 통과는 젠의 청취 승인이 아니다. 젠은 “영상 제작하고 업로드하자. 본문이나 댓글은 그대로고 바로 공개”를 지시했고, 제목은 “기존 제목 그대로 (추천)”로 확인했다. 별도의 전곡 청취 승인을 주장하지 않으며 새 영상 제작·검증과 실제 업로드를 구분한다.
+- 이전 `Final Selected Audio Sources` 및 `output/report.json`의 해시·시각은 2026-10-12 개별 음원 제작 이력이다. 새 완성 믹스의 출처·시각은 위 제작 기록을 따른다. 새 믹스의 현행 발매 계약은 아래 `Final Premixed Audio`와 `production/final-premixed-audio.json`이다. `pack`으로 반복·합성을 추가하지 않는다.
 
 ## Final Artwork — 2026-10-24
 
@@ -40,27 +31,24 @@ Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기�
 - 글자 없는 원본: `input/thumbnail-source.png`, 1672×941, SHA-256 `6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe`.
 - 젠의 편집 원본: `input/thumb.psd`, 2532×1424, SHA-256 `533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439`.
 - 최종 썸네일 겸 새 영상의 정적 이미지: `input/thumb.jpg`, 2532×1424, SHA-256 `93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944`.
-- 새 영상은 최종 JPG를 3840×2160으로 확대해 사용할 예정이며 원본 사진이 4K로 생성됐다고 주장하지 않는다. 아직 영상은 제작하지 않았다.
+- 새 영상은 최종 JPG를 3840×2160으로 확대만 한다. 원본 사진이 4K로 생성됐다고 주장하지 않는다. 30초 미리보기와 전체 영상의 화면·기술 검사를 통과했다. 전체 영상의 길이는 6,723.000초이며 AAC는 6,722.859초 그대로다. 마지막 정적 화면의 반올림은 0.141초다.
 - 옛 `input/loop.png`를 새 영상 입력으로 사용하지 않는다. 완성된 2회 믹스와 최종 JPG를 직접 연결하는 정적 이미지 제작 방식을 사용한다. 일반 `pack` 반복을 다시 적용하지 않는다.
 
 ## Upload Status
 
-- Status: pending
-- 현재 작업: 180 BPM 보정·박자 연결·새 썸네일로 재제작 중이며 새 업로드는 아직 하지 않았다.
+- YouTube upload: completed
+- 새 공개 영상: Wavvy24, https://youtu.be/7iVqqukk5WA, 2026-10-24. 정상 UI 파일 제출은 한 번이다. 비공개 저장 뒤 제목·본문·태그·썸네일·아동용 아님·AI 사용 예·유료 프로모션 없음을 다시 확인하고 즉시 공개로 저장했다. 다시 연 공개 설정과 새로 불러온 Studio의 `공개`를 확인했다.
+- 승인 제목은 기존 제목 그대로다. 본문의 40개 챕터 시각만 새 믹스의 실제 시작점으로 변경했으며 나머지 본문·댓글·태그는 유지했다. Studio 편집 내용과 공개 YouTube 조회의 제목·본문이 업로드 문안과 정확히 같다. 기존 템포 설명도 젠의 본문 유지 지시 범위에서 그대로 뒀다.
+- 게시 파일: `output/video-user-thumbnail-20261024/final-0700-4k.mp4`, 3840×2160 H.264/AAC, 실제 1:52:03, 20곡×2회·40챕터. 파일 해시는 `Final Premixed Audio` 계약과 같다. 2026-10-24 18:25 KST에 SD·HD·4K 처리 완료를 관측했다.
+- 젠의 추가 “방금 올린 거 좋아요도 하고” 지시로 새 영상에 좋아요를 눌렀고 `좋아요 취소`·1개 표시를 확인했다.
+- 기존 댓글 원문을 한 번 게시했고 정확히 같은 댓글 한 개를 조회했다. [고정 댓글](https://www.youtube.com/watch?v=7iVqqukk5WA&lc=UgxFItNn5xsIRHIf6ZF4AaABAg)은 시청 페이지를 다시 불러온 뒤에도 `@wavvy24님이 고정함`이 표시됐다.
+- 공개 시청 페이지에서 재생 위치 1.608104→4.610258초의 증가를 실측한 뒤 일시정지했다. 짧은 재생 검사이며 전체 청취나 4K 화질 재생 인증은 아니다. 가사 없는 음원이므로 자막은 제출하지 않았다.
+- 저작권 상태: 2026-10-24 마지막 관측은 `검토 완료 대기 중...`이다. 공개 완료·4K 처리 완료와 저작권 최종 판정을 구분한다. 현재 요청의 영상 제작·공개·댓글 작업은 완료했으며 YouTube의 자동 검토 결과는 미확정이다.
+- 원시 관측과 최종 결과: `production/youtube-upload-20261024{,-ui}.json`, 공개 문안·댓글 조회, `production/youtube-upload-staging-20261024.json`. 독립 로컬 영상·검증 코드 검토는 `.ai/reviews/2026-10-24-0700-video-release-review.md`의 CLEAN이다. 이 판정을 외부 공개 증거로 대신 사용하지 않았다.
+- 업로드 직후 브라우저 제출용 사본 네 파일 679,150,371바이트를 정리했다. 이어 젠의 폴더 정리 지시로 아래 Local Retention의 영상·음원·과정 자료도 정리했다. 최종 썸네일과 제작·게시 근거는 남겼다.
 - 이전 영상 `DU_vBuIdMG4`는 젠이 삭제했다고 보고했다(2026-10-24). 아래 공개 확인은 삭제 전 과거 기록이다.
 
-## Previous Upload — 2026-10-12 과거 기록
-
-- YouTube 업로드 완료: Wavvy24 채널, https://youtu.be/DU_vBuIdMG4, 2026-10-12.
-- 공개 예약: 2026-10-12 17:00 서울(GMT+09:00). Studio 확인 대화상자와 콘텐츠 목록의 `예약됨` 상태를 확인했다.
-- 최종 제목: `Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 2Hour | Wavvy | 07:00`. 젠의 최종안 승인 후 2026-10-12 YouTube Studio에서 저장 완료를 확인했다. `2Hour`는 제목 표기이며 실제 영상 길이는 1:56:06이다.
-- 업로드 파일: `output/final.mp4` (3840×2160 H.264/AAC, 1:56:06). 20곡을 번호순으로 2회 반복했다.
-- 2026-10-12 16:08 KST 재확인: 콘텐츠 목록은 `예약됨`이다. 목록에는 `4K까지 처리 ... 완료`가 표시되지만 영상 세부정보의 화질 표시에는 아직 `4K 처리 중`이어서 4K 완료로 판정하지 않는다. `소유권 주장 개요`에는 `동영상에서 소유권 주장이 발견되지 않았습니다`가 표시됐다. 당시 실제 공개는 17:00 이후 확인 대상이었다.
-- 2026-10-12 약 17:20 KST 재확인: Studio 세부정보와 새로 불러온 콘텐츠 목록에 모두 `공개`가 표시됐고, 목록에 `4K까지 처리 ... 완료`가 표시됐다. 목록의 게시일은 2026-10-12이다. 앞선 `예약됨`과 세부정보의 `4K 처리 중`은 과거 확인 시점의 상태다.
-- 2026-10-12 약 18:22 KST: 아래 고정 댓글 원문을 Wavvy24 계정으로 공개 영상에 게시했다. [댓글 링크](https://www.youtube.com/watch?v=DU_vBuIdMG4&lc=Ugz4aOucarXn6_sgILZ4AaABAg). Aside YouTube 조회에서 동일 원문 댓글 1개를 확인했고, 시청 페이지를 새로 불러온 뒤 `@wavvy24님이 고정함` 표시를 확인했다.
-- 아동용 아님, AI 사용 예, 유료 프로모션 없음으로 설정했다. 가사 없는 음원이므로 가사 자막은 제출하지 않았다.
-
-## YouTube Metadata (v2.1 — 삭제된 이전 영상의 문안, 새 제목 승인 전 참고)
+## YouTube Metadata (v2.2 — 2026-10-24 기존 제목·본문·댓글 유지, 실제 챕터 시각 갱신)
 
 Context Mode: Energizing (07:00 러닝)
 
@@ -90,47 +78,47 @@ Playlist | 상쾌하게 달릴 준비 됐나요?! 🏃 | 180 BPM Running Mix · 
 ──────────────
 Track List
 🏃 00:00 - 01. 문을 열고
-🏃 02:58 - 02. 파란불
-🏃 06:09 - 03. 첫 바퀴
-🏃 08:32 - 04. 조금 일찍
-🏃 11:43 - 05. 길을 바꿔
-🏃 14:41 - 06. 정해 둔 건 없어
-🏃 16:45 - 07. 같은 방향
-🏃 19:43 - 08. 낮은 비트
-🏃 23:02 - 09. 숨을 세어
-🏃 26:23 - 10. 생각을 놓고
-🏃 28:48 - 11. 다시 해볼게
-🏃 31:47 - 12. 바람이 바뀌어
-🏃 34:28 - 13. 호흡
-🏃 37:39 - 14. 하나씩
-🏃 40:49 - 15. 드럼 위로
-🏃 43:25 - 16. 비가 갠 뒤
-🏃 45:51 - 17. 이어지는 소리
-🏃 49:18 - 18. 가까운 곳
-🏃 52:29 - 19. 괜찮은 날
-🏃 55:40 - 20. 집으로 가는 길
+🏃 02:59 - 02. 파란불
+🏃 06:04 - 03. 첫 바퀴
+🏃 08:23 - 04. 조금 일찍
+🏃 11:33 - 05. 길을 바꿔
+🏃 14:17 - 06. 정해 둔 건 없어
+🏃 16:13 - 07. 같은 방향
+🏃 19:10 - 08. 낮은 비트
+🏃 22:24 - 09. 숨을 세어
+🏃 25:39 - 10. 생각을 놓고
+🏃 27:56 - 11. 다시 해볼게
+🏃 30:39 - 12. 바람이 바뀌어
+🏃 33:10 - 13. 호흡
+🏃 36:08 - 14. 하나씩
+🏃 39:19 - 15. 드럼 위로
+🏃 41:53 - 16. 비가 갠 뒤
+🏃 44:18 - 17. 이어지는 소리
+🏃 47:30 - 18. 가까운 곳
+🏃 50:42 - 19. 괜찮은 날
+🏃 53:48 - 20. 집으로 가는 길
 ──────────────
 다시 한 바퀴
-🏃 58:03 - 01. 문을 열고 (반복)
-🏃 01:01:01 - 02. 파란불 (반복)
-🏃 01:04:12 - 03. 첫 바퀴 (반복)
-🏃 01:06:35 - 04. 조금 일찍 (반복)
-🏃 01:09:46 - 05. 길을 바꿔 (반복)
-🏃 01:12:44 - 06. 정해 둔 건 없어 (반복)
-🏃 01:14:48 - 07. 같은 방향 (반복)
-🏃 01:17:46 - 08. 낮은 비트 (반복)
-🏃 01:21:05 - 09. 숨을 세어 (반복)
-🏃 01:24:26 - 10. 생각을 놓고 (반복)
-🏃 01:26:51 - 11. 다시 해볼게 (반복)
-🏃 01:29:50 - 12. 바람이 바뀌어 (반복)
-🏃 01:32:31 - 13. 호흡 (반복)
-🏃 01:35:42 - 14. 하나씩 (반복)
-🏃 01:38:52 - 15. 드럼 위로 (반복)
-🏃 01:41:28 - 16. 비가 갠 뒤 (반복)
-🏃 01:43:54 - 17. 이어지는 소리 (반복)
-🏃 01:47:21 - 18. 가까운 곳 (반복)
-🏃 01:50:32 - 19. 괜찮은 날 (반복)
-🏃 01:53:43 - 20. 집으로 가는 길 (반복)
+🏃 55:58 - 01. 문을 열고 (반복)
+🏃 58:50 - 02. 파란불 (반복)
+🏃 01:01:55 - 03. 첫 바퀴 (반복)
+🏃 01:04:14 - 04. 조금 일찍 (반복)
+🏃 01:07:24 - 05. 길을 바꿔 (반복)
+🏃 01:10:08 - 06. 정해 둔 건 없어 (반복)
+🏃 01:12:04 - 07. 같은 방향 (반복)
+🏃 01:15:01 - 08. 낮은 비트 (반복)
+🏃 01:18:15 - 09. 숨을 세어 (반복)
+🏃 01:21:30 - 10. 생각을 놓고 (반복)
+🏃 01:23:47 - 11. 다시 해볼게 (반복)
+🏃 01:26:30 - 12. 바람이 바뀌어 (반복)
+🏃 01:29:00 - 13. 호흡 (반복)
+🏃 01:31:59 - 14. 하나씩 (반복)
+🏃 01:35:10 - 15. 드럼 위로 (반복)
+🏃 01:37:43 - 16. 비가 갠 뒤 (반복)
+🏃 01:40:09 - 17. 이어지는 소리 (반복)
+🏃 01:43:21 - 18. 가까운 곳 (반복)
+🏃 01:46:33 - 19. 괜찮은 날 (반복)
+🏃 01:49:39 - 20. 집으로 가는 길 (반복)
 ──────────────
 Music for your space, 24 hours a day.
 
@@ -160,7 +148,19 @@ running music, 180 cadence, running playlist, instrumental, indie rock, breakbea
 - Video image and thumbnail: `input/thumb.jpg` (젠 제작 최종본; Final Artwork의 해시 적용)
 - Legacy `input/loop.png` and thumbnail-layout are replaced; do not use them for this remake.
 
-## Final Selected Audio Sources
+## Final Premixed Audio
+
+- Manifest: `production/final-premixed-audio.json`
+- **Final vocal direction**: Instrumental.
+- 게시 때 사용한 입력은 20곡×2회의 완성 AAC 한 개다. 추가 반복·재합성 없이 한 번 복사했고, 공개 완료 뒤 로컬 AAC·MP4·원본/보정 WAV·CSV를 삭제했다. 경로·해시와 최종 제작·검증 기록은 아래 계약에 남는다.
+- 원본 재확보 기록은 `production/reacquisition-20261024.json`, 선택 ID는 `input/suno-final-selection-2026-10-12.json`, 원본→180 BPM 보정→2회 믹스 연결은 `production/continuous-180-20261024/manifest.json`을 따른다. 새 원본·보정본·과거 원본의 해시는 서로 다른 역할이며 동일하다고 주장하지 않는다.
+- PCM 제작 길이는 6,722.858833초, 저장 AAC의 재생 길이는 6,722.859000초다. 차이 0.167 ms는 저장 형식의 시간 반올림이다. MP4는 AAC의 전체 압축 데이터와 시간 위치를 보존한다.
+- 실제 40개 시작점은 다음 곡의 페이드 시작이다. MP4 내부 챕터는 밀리초, YouTube 문안은 가장 가까운 초로 표기한다. `2Hour`는 젠이 승인한 기존 제목 표기이며 실제 길이는 약 1:52:03이다.
+- 최종 JPG: `input/thumb.jpg`. 영상 경로: `output/video-user-thumbnail-20261024/final-0700-4k.mp4`. 제작·기술 검사 원시는 `production/video-user-thumbnail-20261024.json` 및 검증 기록을 따른다.
+- 원문 생성 프롬프트의 현행 연결 상태는 `unverified`다. 과거 보컬 txt를 현재 무가사 음원의 원문으로 승격하지 않는다. 아래 개별 WAV 출처 선언은 과거 기록이며 현행 발매 계약이 아니다.
+- 업로드 문안 보존 대조: `production/upload-metadata-preservation-20261024.json`. 본문 40개 챕터의 시각만 바꾸고 다른 본문·댓글·태그는 정확히 유지한다.
+
+## Previous Selected Audio Sources — 2026-10-12 과거 기록
 
 확정된 20개 무가사 음원의 번호·Suno 후보 ID·WAV SHA-256·실제 첫 재생 시작 시각은 `input/final-selected-audio-sources.json`에 기록한다. 원문 프롬프트가 생성 기록의 후보 ID 및 해시와 직접 연결된 곡만 `confirmed`로 표기한다. 연결을 확인하지 못한 곡은 `unverified`로 두고, Suno 화면에서 관측한 스타일 설명이 있으면 원문 프롬프트와 구별해 보존한다. 처음 만든 보컬 txt는 이력이며 최종 무가사 음원의 가사나 출처가 아니다. 이 시리즈에는 노랫말 자막을 만들지 않는다.
 
@@ -188,37 +188,7 @@ running music, 180 cadence, running playlist, instrumental, indie rock, breakbea
 - [달리런 — Playlist 180BPM 러닝 플리](https://youtu.be/u2eyM-tS6QI): use the idea of a 20-track, continuously motivating running set, with firm bass and some broad hooks. Its YouTube description emphasizes a club setting; 젠 chose a brighter morning sound with medium-strength moments for this series.
 - These directions come from the videos' published metadata and descriptions, checked 2026-10-03. 2026-10-03 당시 수치 BPM 분석은 없었다. 2026-10-12 탐색 측정과 젠의 실제 러닝 경험 및 현행 채택 결정은 위의 현재 기준에 기록했다. Do not copy melody, distinctive arrangement, or lyrics from either reference.
 
-## Initial vocal source arc (historical)
 
-The following titles and lanes describe the initial submissions. The lyric angles and proposed leads are historical; they do not apply to the instrumental covers and are not approved Final Track Sources.
+## Local Retention — 2026-10-24
 
-| # | Working title | Energy role | Main musical variation | Initial lyric angle | Initial lead |
-|---|---|---|---|---|---|
-| 01 | 문을 열고 | open | bright synth pluck, dry live-feel drums | air and first beat | Female |
-| 02 | 파란불 | open | muted guitar rhythm and synth bass | step into the beat | Male |
-| 03 | 첫 바퀴 | open | arpeggiator and crisp kick | settling breath | Female |
-| 04 | 조금 일찍 | open | warm keys and light breakbeat | waking through movement | Male |
-| 05 | 길을 바꿔 | stride | guitar chop with electronic drums | same pulse, new route | Female |
-| 06 | 정해 둔 건 없어 | stride | rubbery bass and short synth replies | leave the distance counter aside | Male |
-| 07 | 같은 방향 | stride | layered guitar and pad | own pace | Female |
-| 08 | 낮은 비트 | stride | percussive keys and restrained 808 sub-bass | low end and light steps | Male |
-| 09 | 숨을 세어 | stride | shimmering sequencer | breathing and counting | Female |
-| 10 | 생각을 놓고 | stride | clipped synth chords | release mental noise | Male |
-| 11 | 다시 해볼게 | push | heavier live kick and bass synth | recover the pace | Female |
-| 12 | 바람이 바뀌어 | push | syncopated synth lead | adjust to a changing breeze | Male |
-| 13 | 호흡 | push | sharp drums and warm counter-melody | comfortable breath | Female |
-| 14 | 하나씩 | push | bass-led indie dance | one step at a time | Male |
-| 15 | 드럼 위로 | push | wide chorus guitar and synth | voice riding the drums | Female |
-| 16 | 비가 갠 뒤 | push | driving drum break and lifted chords | air after rain | Male |
-| 17 | 이어지는 소리 | return | light piano over steady drums | hold the pulse lightly | Female |
-| 18 | 가까운 곳 | return | soft plucked synth, defined bass | focus on the next stretch | Male |
-| 19 | 괜찮은 날 | return | open guitar and brushed synth | keep a sustainable pace | Female |
-| 20 | 집으로 가는 길 | return | simple repeating synth figure | return without slowing the beat | Male |
-
-## Production status
-
-Initial vocal txt: 20/20, with track-prompt and full-song lyric-record gates PASS. These apply to the first generation only. Instrumental remake txt: 12/12 in `input/remakes/`, with track-prompt gates PASS. First-pass, remake, and Cover IDs remain in their historical manifests. 젠이 20곡을 한 번호당 한 곡으로 정리한 뒤 Suno `[07:00]`을 새로고침해 20곡과 고유 ID를 대조했다. `input/suno-selected.json`은 당시 선택의 역사 기록이고, 현재 선택은 `input/suno-final-selection-2026-10-12.json`이다. 젠의 전곡 청취 및 약 180 케이던스 체감 PASS를 기록했다. 일부 구간의 탐색적 박자 측정은 했지만 전곡·전 구간 정확한 BPM 인증이나 기계적 무가사 검사는 하지 않았다.
-
-The Suno download dialog displayed 7 remaining Pro downloads on 2026-10-03 before that historical download pass. 젠이 당시 01을 MP3/M4A로 받았고, Codex가 당시 선택 ID를 대조해 02–07을 WAV로 다운로드했다. 2026-10-12에는 현재 선택된 20곡을 모두 WAV로 수집했고, 옛 05·06·07은 이력 폴더로 분리했다. 현재 20개 파일은 48 kHz·16-bit PCM·stereo WAV이며 Downloads 원본과 시리즈 복사본의 SHA-256이 일치한다. Suno's [download policy](https://help.suno.com/en/articles/13926209) counts each distinct song once, regardless of format. A browser-stream pulse probe of an earlier 20B candidate at 30–42 seconds suggested a roughly 92–94 BPM low-frequency pulse; that short window was inconclusive and the candidate is not the selected 20. 그 당시 탐색은 Aside 탐색 실패 두 번 뒤 중단했다. 2026-10-12에는 현재 선택 중 일부 WAV 구간을 탐색적으로 측정해 약 174~192 BPM 추정치를 기록했으나, 전곡 정확한 박자 인증으로 해석하지 않는다.
-
-The ten agent-created Covers are recorded separately from the initial 40 and later remakes. 2026-10-03 젠은 당시 01–20 전체를 번호별로 청취 PASS했고 Suno에는 각 번호 한 곡씩만 남겼다. 그날의 20개 ID는 `input/suno-selected.json`에 고정한 역사 기록이다. 당시 청취 러닝감 PASS는 수치 BPM 측정이 아니다. 2026-10-06 재구성 뒤 보존 번호는 02·03·04·13·14·18·19이다. 그날 새로 남긴 1차 아홉 곡 중 12는 2026-10-12에 현재 작업공간의 다른 음원으로 교체됐다. 옛 05·06·07 WAV는 이력으로 보존한다. 젠이 직접 만든 06·09·10은 2026-10-12 최종 채택했다. 최종 출처는 옛 보컬 txt를 복사하는 방식 대신 `Final Selected Audio Sources`의 ID·해시·원문 확인 상태로 구분해 기록한다.
+젠의 “이제 폴더 파일 정리해 뭐해야하는지 기억해?” 지시로 정확한 목록 198개·3,864,544,687바이트를 삭제했다. 원본/보정 WAV 40개, 완성 AAC·MP4·미리보기·과정 문서, 일치하는 Downloads 사본 20개와 브라우저 검사 사본을 포함한다. 삭제 198개 모두 부재와 보존 164개 모두 내용 불변을 확인했다. 최종 artwork 네 파일과 가사·스타일 원문, 선택 ID·해시·보정/박자/믹스 설정·40개 시각·최종 렌더 검증·게시 근거는 남겼다. 실제 여유 공간 관측 증가량은 3,188,232,192바이트이며 삭제한 논리 파일 크기와 구분한다. 정리 결과는 `.ai/cleanup/2026-10-24-0700-post-upload-cleanup.json`, 동결 목록은 같은 접두사의 `inventory.json`이다. 재제작하려면 같은 Suno 선택 ID의 음원을 다시 확보하고 보존한 최종 제작 설정을 적용해야 한다.

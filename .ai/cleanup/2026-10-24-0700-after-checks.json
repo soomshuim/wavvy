@@ -1,0 +1,46 @@
+{
+  "state_write": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "state",
+      "SERIES/07-00",
+      "--write",
+      "--phase",
+      "uploaded",
+      "--if-match",
+      "96",
+      "--json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.state.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 97,\n    \"updated_at\": \"2026-10-24T18:50:04\",\n    \"active_series\": \"SERIES/07-00\",\n    \"phase\": \"uploaded\",\n    \"inferred_phase\": \"uploaded\",\n    \"next_action\": \"YouTube upload is recorded. Follow the approved retention policy for the premix and rendered video.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"premixed_audio\": \"verified\",\n      \"premix_production_report\": \"verified\",\n      \"premixed_video\": \"deleted_after_upload\",\n      \"premixed_video_path\": \"output/video-user-thumbnail-20261024/final-0700-4k.mp4\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 0,\n      \"available_audio_files\": 0,\n      \"audio_source\": \"final_premixed_audio\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"deleted_after_upload\",\n      \"upload_csv\": \"deleted_after_upload\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"present\",\n      \"youtube_upload\": \"completed\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"exempt_instrumental\",\n      \"subtitle_published\": \"exempt_instrumental\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"exempt_instrumental\",\n      \"published\": \"exempt_instrumental\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/07-00/concept.md\",\n      \"SERIES/07-00/production/final-premixed-audio.json\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/07-00/concept.md\",\n      \"SERIES/07-00/production/final-premixed-audio.json\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  }\n}\n",
+    "stderr": ""
+  },
+  "state_check": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "state",
+      "SERIES/07-00",
+      "--check",
+      "--json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 97,\n    \"updated_at\": \"2026-10-24T18:50:05\",\n    \"active_series\": \"SERIES/07-00\",\n    \"phase\": \"uploaded\",\n    \"inferred_phase\": \"uploaded\",\n    \"next_action\": \"YouTube upload is recorded. Follow the approved retention policy for the premix and rendered video.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"premixed_audio\": \"verified\",\n      \"premix_production_report\": \"verified\",\n      \"premixed_video\": \"deleted_after_upload\",\n      \"premixed_video_path\": \"output/video-user-thumbnail-20261024/final-0700-4k.mp4\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 0,\n      \"available_audio_files\": 0,\n      \"audio_source\": \"final_premixed_audio\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"deleted_after_upload\",\n      \"upload_csv\": \"deleted_after_upload\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"present\",\n      \"youtube_upload\": \"completed\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"exempt_instrumental\",\n      \"subtitle_published\": \"exempt_instrumental\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"exempt_instrumental\",\n      \"published\": \"exempt_instrumental\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/07-00/concept.md\",\n      \"SERIES/07-00/production/final-premixed-audio.json\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/07-00/concept.md\",\n      \"SERIES/07-00/production/final-premixed-audio.json\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+    "stderr": ""
+  },
+  "uploaded_gate": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "gate",
+      "SERIES/07-00",
+      "--stage",
+      "uploaded",
+      "--json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"PASS\",\n  \"series\": \"SERIES/07-00\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_premixed_audio\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"premixed_render_identity\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "wavvy.final_premixed_audio.v1",
+  "vocal_mode": "instrumental",
+  "raw_prompt_status": "unverified",
+  "repeat_count": 2,
+  "additional_repeats": 0,
+  "audio": {
+    "path": "output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a",
+    "sha256": "69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe"
+  },
+  "mix_manifest": {
+    "path": "production/continuous-180-20261024/manifest.json",
+    "sha256": "de5d22060bb2d0dbc05e94e0d7561f5927d3b172b7b2383b7461aa1d9cdbb4bb"
+  },
+  "download_manifest": {
+    "path": "input/download-manifest.json",
+    "sha256": "b2fe8db3b9b9f29b2610b70d1f566ba42937e8d5cb8de2a1d825730673088b32"
+  },
+  "selection_basis": {
+    "path": "input/suno-final-selection-2026-10-12.json",
+    "sha256": "6cb0037b5f81727f1c82b115387f94efe2d14c1ef8afbc3a9fbbf058b3c571c9"
+  },
+  "source_ledger": {
+    "path": "production/reacquisition-20261024.json",
+    "sha256": "ba9cbb93b6b074d8d9cdd1d553ac5594fd81c9d084083b9dc0ea64472f9ce2d3"
+  },
+  "image": {
+    "path": "input/thumb.jpg",
+    "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+  },
+  "render": {
+    "path": "output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+    "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3",
+    "record": {
+      "path": "production/video-user-thumbnail-20261024.json",
+      "sha256": "668de5bc2d8ba87b55de2b7be0034a3719d91fe49020f504dc8344095a83312e"
+    }
+  }
+}

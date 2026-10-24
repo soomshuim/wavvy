@@ -1,0 +1,58 @@
+{
+  "uploaded_gate": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "gate",
+      "SERIES/17-30",
+      "--stage",
+      "uploaded",
+      "--json"
+    ],
+    "returncode": 1,
+    "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"FAIL\",\n  \"series\": \"SERIES/17-30\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"FAIL\",\n      \"detail\": \"0 tracks\"\n    },\n    {\n      \"name\": \"concept_md_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_track_sources_or_source_map_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"report_json_present_or_source_map_ready\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"youtube_metadata_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"audio_files_present\",\n      \"status\": \"FAIL\",\n      \"detail\": \"0 audio files via missing\"\n    },\n    {\n      \"name\": \"final_track_sources_match_report\",\n      \"status\": \"PASS\",\n      \"detail\": \"fts=20 report=20\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [\n    \"local final.mkv deleted after upload; regenerate with pack if needed\"\n  ],\n  \"blockers\": [\n    \"No audio files (MP3/WAV) found in: SERIES/17-30/input/tracks\",\n    \"source_final requires audio files in input/tracks or concept.md Track Selection source map\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  "subtitles_prepared": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/17-30",
+      "--stage",
+      "prepared",
+      "--json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"prepared\",\n  \"srt\": \"/Users/zenkim_office/Project/wavvy/SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1270,\n  \"duration_ms\": 7718500,\n  \"sha256\": \"29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226\",\n  \"source_sha256\": \"29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\"\n}\n",
+    "stderr": ""
+  },
+  "subtitles_published": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/17-30",
+      "--stage",
+      "published",
+      "--json"
+    ],
+    "returncode": 1,
+    "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"FAIL\",\n  \"stage\": \"published\",\n  \"errors\": [\n    \"Published subtitle video ID differs from concept upload target\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  "subtitles_published_after_retaining_upload_target_link": {
+    "argv": [
+      "python3",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/17-30",
+      "--stage",
+      "published",
+      "--json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"published\",\n  \"srt\": \"/Users/zenkim_office/Project/wavvy/SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1270,\n  \"duration_ms\": 7718500,\n  \"sha256\": \"29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226\",\n  \"source_sha256\": \"29cd296a8c31bcf6629e2f468862698970931ca7ad50e36fd2f8f547c953ba18\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\",\n  \"video_id\": \"3HorT4OoDhg\",\n  \"samples\": 4,\n  \"studio_download_compared\": true,\n  \"publication_scope\": \"manual Korean Studio status, public selection and samples, official SRT when available\"\n}\n",
+    "stderr": ""
+  }
+}

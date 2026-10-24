@@ -153,6 +153,8 @@ python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 
 Retained premix releases explicitly declare `## Final Premixed Audio`, `- Manifest: production/final-premixed-audio.json` (backticks allowed), and `- **Final vocal direction**: Instrumental.` in that section. The manifest schema is `wavvy.final_premixed_audio.v1`, with `vocal_mode: instrumental`, `raw_prompt_status: unverified`, `repeat_count: 2`, and `additional_repeats: 0`. Its `audio`, `mix_manifest`, `download_manifest`, `selection_basis`, `source_ledger`, and `image` fields bind series-relative `path`/`sha256` pairs. `render` binds the MP4 and its `record` path/hash; render hashes may remain pending at source stage. Producer manifests retain their original repository-relative references. No `Final Track Sources` or `Final Selected Audio Sources` declaration is added for deleted WAVs.
 
+The `wavvy.continuous_mix.repeat2.v1` producer schema binds its `plan_path`/hash and `producer_script_path`/hash directly. Its selection basis is the approved selected-ID manifest; its source ledger is `wavvy.reacquisition.v1`. Source validation compares reacquired WAV hashes with download/correction inputs, and separately compares corrected WAV hashes with correction outputs, independent beat records, plan and mix. It requires the 40 chapter starts to equal the starts of the 39 incoming transition chunks plus zero. Historical prompt ledgers are not relabeled as current evidence. The earlier base/repeat producer contract remains active for 06:30.
+
 `source-final` checks the actual AAC/JPG and preserved source/timeline evidence. `render-final` / `upload-ready` additionally compare the complete AAC packet payload/timing, source audio duration, 3840×2160 H.264/AAC streams, at most one final video frame of duration rounding, recorded JPG render inputs, 40 embedded starts/titles, CSV video path, and concept/CSV metadata with 40 rounded chapter starts. `verify-release` performs the same full release comparison and title validation. This instrumental path requires no lyric subtitles. State exposes `premixed_audio`, `premix_production_report`, `premixed_video`, and `premixed_video_path` separately; missing `final.mkv`/`report.json` remain truthfully missing. Uploaded cleanup requires recorded YouTube upload completion and retained render identity evidence.
 
 ---
@@ -203,3 +205,7 @@ ffmpeg -i input/loop_xfade.mp4 -i work/xfade_bridge.mp4 -filter_complex \
 | **비디오** | `vfade` → `pack` | video mode 루프 영상 끊김 없는 반복 |
 
 **주의:** video mode에서 `pack` 단독 실행은 오디오만 크로스페이드한다. image mode는 정적 이미지 렌더이므로 비디오 루프 xfade 문제가 없다.
+
+### Corrected premix cleanup after upload
+
+After dedicated upload-completion evidence and an approved retention cleanup, original/corrected WAVs may be absent alongside the final AAC/MP4/CSV. Their retained paths and SHA-256 identities still must agree across the selection, download, correction, beat, plan, and mix records. Existing files remain hash-checked. Nonmedia provenance and final artwork remain required; this does not open a pre-upload cleanup exemption.

@@ -4,6 +4,7 @@ import copy
 import csv
 import hashlib
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -14,7 +15,7 @@ from PIL import Image
 
 from wavvy import ProjectPaths, cli, validate_project, verify_release_package
 from wavvy_harness.gate import run_gate
-from wavvy_harness.premixed_audio import MANIFEST, chapter_timestamp, check_premixed_audio, check_premixed_render
+from wavvy_harness.premixed_audio import audio_packet_fingerprint, MANIFEST, chapter_timestamp, check_premixed_audio, check_premixed_render
 from wavvy_harness.state import build_state, check_state
 
 
@@ -272,6 +273,216 @@ class PremixedAudioTests(unittest.TestCase):
         result = CliRunner().invoke(cli, ["pack", str(self.series), "-y"])
         self.assertNotEqual(result.exit_code, 0)
         self.assertIn("already mixed/repeated", result.output)
+
+
+class CorrectedRepeatPremixTests(unittest.TestCase):
+    # Reuse the complete release fixture while giving the current producer its
+    # actual original-WAV -> correction-record -> corrected-WAV evidence chain.
+    sha = PremixedAudioTests.sha
+    repo_path = PremixedAudioTests.repo_path
+    ref = PremixedAudioTests.ref
+    write = PremixedAudioTests.write
+    save_archive = PremixedAudioTests.save_archive
+    csv = PremixedAudioTests.csv
+    probe = PremixedAudioTests.probe
+    source = PremixedAudioTests.source
+
+    def setUp(self):
+        PremixedAudioTests.setUp(self)
+        (self.series / "input/originals").mkdir()
+        (self.series / "input/corrected").mkdir()
+        sources, acquired, selected = [], [], []
+        for source in self.sources:
+            order, title, identity = source["order"], source["title"], source["candidate_id"]
+            original = self.series / f"input/originals/{order:02d}.wav"
+            original.write_bytes(f"original-{order}".encode())
+            corrected = self.series / f"input/corrected/{order:02d}.wav"
+            corrected.write_bytes(f"corrected-{order}".encode())
+            analysis = self.write(f"production/analysis-{order}.json", {"order": order})
+            correction = self.write(f"production/correction-{order}.json", {
+                "schema": "wavvy.tempo_corrected_source.v1", "order": order, "title": title,
+                "candidate_id": identity, "target_bpm": 180,
+                "source_path": self.repo_path(original), "source_sha256": self.sha(original),
+                "output_path": self.repo_path(corrected), "output_sha256": self.sha(corrected),
+                "analysis_path": self.repo_path(analysis), "analysis_sha256": self.sha(analysis)})
+            beat = self.write(f"production/beats-{order}.json", {
+                "schema": "wavvy.independent_corrected_beats.v1", "order": order, "title": title,
+                "audio_path": self.repo_path(corrected), "audio_sha256": self.sha(corrected),
+                "correction_record_sha256": self.sha(correction)})
+            sources.append(dict(source, path=self.repo_path(corrected), sha256=self.sha(corrected),
+                correction_record=self.repo_path(correction), correction_record_sha256=self.sha(correction),
+                beat_record=self.repo_path(beat), beat_record_sha256=self.sha(beat)))
+            acquired.append({"order": order, "approved_title": title, "candidate_id": identity,
+                "input_filename": original.name, "sha256": self.sha(original)})
+            selected.append({"order": order, "title": title, "candidate_id": identity})
+        download = self.write("input/download-manifest.json", {"workspace": "[20:00]", "tracks": acquired})
+        selection = self.write("input/selected-current.json", {"workspace": "[20:00]", "tracks": selected})
+        ledger = self.write("production/reacquisition.json", {"schema": "wavvy.reacquisition.v1", "workspace": "[20:00]", "tracks": acquired})
+        plan = self.write("production/plan-current.json", {"schema": "wavvy.continuous_180_plan.v1", "series": "20-00",
+            "sources": sources, "failures": [], "target_bpm": 180, "repeat_count": 2, "additional_repeats": 0, "sample_rate": 48000})
+        chunks = []
+        cursor = 0
+        for n in range(40):
+            if n:
+                chunks.append({"kind": "transition", "label": f"{(n - 1) % 20 + 1:02d}-{n % 20 + 1:02d}",
+                    "samples": 48000, "mix_start_sample": cursor, "mix_end_sample": cursor + 48000})
+                cursor += 48000
+            count = 480000 if n == 0 else 432000
+            chunks.append({"kind": "body", "cycle": n // 20 + 1, "order": n % 20 + 1,
+                "samples": count, "mix_start_sample": cursor, "mix_end_sample": cursor + count})
+            cursor += count
+        # Incoming transition starts remain the actual chapter starts.
+        self.entries = [dict(e, mix_entry_sample=(0 if n == 0 else n * 480000),
+                             source_path=sources[n % 20]["path"]) for n, e in enumerate(self.entries)]
+        mix_path = self.series / self.archive["mix_manifest"]["path"]
+        mix = {"schema": "wavvy.continuous_mix.repeat2.v1", "series": "20-00", "plan_path": self.repo_path(plan),
+            "plan_sha256": self.sha(plan), "producer_script_path": self.repo_path(self.root / "scripts/mix.py"),
+            "producer_script_sha256": self.sha(self.root / "scripts/mix.py"), "sources": sources,
+            "repeat_count": 2, "additional_repeats": 0, "sample_rate": 48000, "pcm_stream_samples": cursor,
+            "audio_path": self.repo_path(self.audio), "audio_sha256": self.sha(self.audio),
+            "timeline": {"expected_samples": cursor, "expected_seconds": cursor / 48000,
+                         "track_entries": self.entries, "chunks": chunks},
+            "transition_results": [{"label": f"{n:02d}-{n % 20 + 1:02d}", "technical_gate_pass": True} for n in range(1, 21)]}
+        mix_path.write_text(json.dumps(mix))
+        self.archive.update(mix_manifest=self.ref(mix_path), download_manifest=self.ref(download),
+                            selection_basis=self.ref(selection), source_ledger=self.ref(ledger))
+        record = json.loads(self.record.read_text())
+        record["source_manifest"] = self.ref(mix_path, self.root)
+        record["chapter_entries"] = self.entries
+        self.record.write_text(json.dumps(record))
+        self.archive["render"]["record"] = self.ref(self.record)
+        self.save_archive()
+
+    def test_original_and_corrected_hashes_are_distinct_valid_evidence(self):
+        data = self.source()
+        self.assertEqual(data["duration"], 400)
+        self.assertEqual(check_premixed_render(self.series, data, metadata=self.metadata, require_csv=True), [])
+        self.assertTrue(validate_project(ProjectPaths(self.series)).is_valid)
+
+    def test_wrong_selected_id_order_and_reacquired_hash_fail(self):
+        for name, key, value in [("selection_basis", "candidate_id", "wrong"),
+                                 ("selection_basis", "order", 2),
+                                 ("download_manifest", "sha256", "0" * 64)]:
+            path = self.series / self.archive[name]["path"]
+            original = path.read_text()
+            changed = json.loads(original)
+            changed["tracks"][0][key] = value
+            path.write_text(json.dumps(changed))
+            self.archive[name] = self.ref(path)
+            self.save_archive()
+            with self.subTest(name=name, key=key):
+                self.assertTrue(check_premixed_audio(self.series)[2])
+            path.write_text(original)
+            self.archive[name] = self.ref(path)
+            self.save_archive()
+
+    def test_changed_corrected_wav_and_producer_script_fail(self):
+        for path in [self.series / "input/corrected/01.wav", self.root / "scripts/mix.py"]:
+            original = path.read_bytes()
+            path.write_bytes(b"changed")
+            self.assertTrue(check_premixed_audio(self.series)[2])
+            path.write_bytes(original)
+
+    def test_corrected_source_media_cleanup_requires_recorded_upload(self):
+        for directory in ["input/originals", "input/corrected"]:
+            for path in (self.series / directory).glob("*.wav"):
+                path.unlink()
+        self.audio.unlink()
+        self.video.unlink()
+        (self.series / "output/upload.csv").unlink()
+        self.assertFalse(validate_project(ProjectPaths(self.series)).is_valid)
+        self.assertEqual(run_gate(self.series, self.root, "uploaded", {"is_valid": False})["result"], "FAIL")
+        (self.series / "concept.md").write_text(self.concept + "\n## Upload Status\n\n- YouTube upload: completed\n")
+        self.assertTrue(validate_project(ProjectPaths(self.series)).is_valid)
+        # Preparing another upload still requires the actual media package.
+        self.assertTrue(verify_release_package(ProjectPaths(self.series)))
+        gate = run_gate(self.series, self.root, "uploaded", {"is_valid": True, "youtube_metadata": self.metadata})
+        self.assertEqual(gate["result"], "PASS", gate["blockers"])
+        state = build_state(self.series, self.root)
+        self.assertEqual(state["phase"], "uploaded")
+        self.assertEqual(state["artifact_status"]["premixed_video"], "deleted_after_upload")
+        self.assertEqual(state["artifact_status"]["available_audio_files"], 0)
+
+    def test_uploaded_cleanup_still_rejects_present_media_hash_changes(self):
+        (self.series / "concept.md").write_text(self.concept + "\n## Upload Status\n\n- YouTube upload: completed\n")
+        for relative in ["input/originals/01.wav", "input/corrected/01.wav"]:
+            path = self.series / relative
+            original = path.read_bytes()
+            path.write_bytes(b"changed-after-upload")
+            with self.subTest(relative=relative):
+                self.assertFalse(validate_project(ProjectPaths(self.series)).is_valid)
+                self.assertTrue(check_premixed_audio(self.series, allow_uploaded_cleanup=True)[2])
+            path.write_bytes(original)
+
+    def test_uploaded_cleanup_still_requires_nonmedia_provenance(self):
+        (self.series / "concept.md").write_text(self.concept + "\n## Upload Status\n\n- YouTube upload: completed\n")
+        for relative in ["production/analysis-1.json", "production/correction-1.json", "production/beats-1.json", "production/plan-current.json"]:
+            path = self.series / relative
+            original = path.read_bytes()
+            path.unlink()
+            with self.subTest(relative=relative):
+                self.assertTrue(check_premixed_audio(self.series, allow_uploaded_cleanup=True)[2])
+            path.write_bytes(original)
+
+    def test_forty_start_must_match_actual_transition_not_just_be_increasing(self):
+        path = self.series / self.archive["mix_manifest"]["path"]
+        original = path.read_text()
+        for mutate in [lambda m: m["timeline"]["track_entries"].pop(),
+                       lambda m: m["timeline"]["track_entries"][1].update(mix_entry_sample=528000, mix_entry_seconds=11),
+                       lambda m: m["timeline"]["chunks"][1].update(label="20-01")]:
+            changed = json.loads(original)
+            mutate(changed)
+            path.write_text(json.dumps(changed))
+            self.archive["mix_manifest"] = self.ref(path)
+            self.save_archive()
+            self.assertTrue(check_premixed_audio(self.series)[2])
+
+    def test_real_aac_payload_mutation_is_detected_without_changing_packet_timing(self):
+        original = self.series / "output/real-aac.m4a"
+        changed = self.series / "output/changed-aac.m4a"
+        subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-f", "lavfi", "-i",
+                        "sine=frequency=997:sample_rate=48000:duration=0.1", "-ac", "2",
+                        "-c:a", "aac", str(original)], check=True, capture_output=True)
+        command = ["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_packets",
+                   "-show_entries", "packet=pts,dts,duration,size,pos", "-of", "json"]
+        packets = json.loads(subprocess.check_output(command + [str(original)]))["packets"]
+        payload = bytearray(original.read_bytes())
+        packet = packets[1]
+        payload[int(packet["pos"]) + int(packet["size"]) // 2] ^= 1
+        changed.write_bytes(payload)
+        changed_packets = json.loads(subprocess.check_output(command + [str(changed)]))["packets"]
+        self.assertEqual(packets, changed_packets)
+        self.assertNotEqual(audio_packet_fingerprint(original), audio_packet_fingerprint(changed))
+
+    def test_historical_individual_archive_does_not_override_current_premix(self):
+        self.write("input/final-selected-audio-sources.json", {"schema": "historical", "tracks": []})
+        (self.series / "concept.md").write_text(self.concept + "\n## Previous Selected Audio Sources — historical\n")
+        result = check_state(self.series, self.root, {"phase": "source_final"})
+        self.assertEqual(result["result"], "PASS", result["blockers"])
+        self.assertEqual(result["state"]["artifact_status"]["selected_audio_sources"], "missing")
+        self.assertEqual(result["state"]["artifact_status"]["premixed_audio"], "verified")
+
+    def test_invalid_current_premix_cannot_fall_back_to_historical_archive(self):
+        self.write("input/final-selected-audio-sources.json", {"schema": "historical", "tracks": []})
+        self.archive["audio"]["sha256"] = "0" * 64
+        self.save_archive()
+        result = check_state(self.series, self.root, {"phase": "source_final"})
+        self.assertEqual(result["result"], "FAIL")
+        self.assertTrue(any("premix audio differs" in error for error in result["blockers"]), result["blockers"])
+        self.assertEqual(result["state"]["artifact_status"]["premixed_audio"], "invalid")
+
+    def test_two_current_final_source_declarations_fail_instead_of_picking_one(self):
+        self.write("input/final-selected-audio-sources.json", {"schema": "historical", "tracks": []})
+        (self.series / "concept.md").write_text(self.concept + "\n## Final Selected Audio Sources\n")
+        result = check_state(self.series, self.root, {"phase": "source_final"})
+        self.assertEqual(result["result"], "FAIL")
+        self.assertTrue(any("cannot also declare" in error for error in result["blockers"]), result["blockers"])
+
+    def test_changed_final_aac_payload_is_rejected_by_shared_render_check(self):
+        data = self.source()
+        with patch("wavvy_harness.premixed_audio.audio_packet_fingerprint", side_effect=lambda p: "changed" if Path(p).resolve() == self.video.resolve() else "original"):
+            errors = check_premixed_render(self.series, data)
+        self.assertTrue(any("AAC packet identity differs" in error for error in errors), errors)
 
 
 if __name__ == "__main__":

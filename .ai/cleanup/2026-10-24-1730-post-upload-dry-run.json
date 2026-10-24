@@ -1,0 +1,21 @@
+{
+  "schema": "wavvy.post_upload_cleanup.v1",
+  "mode": "dry_run",
+  "inventory_sha256": "ee73044fe60e4b5f5d63a58b748ce4f70157954347db86ae5f7749b4726f30ad",
+  "script_sha256": "31ddf3f97a90b125c16421d300f2a09d887f52d95a767e154afed0d82ac14fed",
+  "candidate_count": 9319,
+  "candidate_bytes": 3460180848,
+  "protected_count": 266,
+  "deleted": [],
+  "started_at_utc": "2026-10-24T09:49:04.610526+00:00",
+  "all_protected_unchanged": true,
+  "all_targets_absent": null,
+  "status": "dry_run_pass",
+  "deleted_count": 0,
+  "deleted_logical_bytes": 0,
+  "free_bytes_before": 576513138688,
+  "free_bytes_after": 576513064960,
+  "observed_free_bytes_delta": -73728,
+  "allocation_note": "Logical file sizes and observed free-space change differ; APFS storage sharing and other activity affect the latter.",
+  "finished_at_utc": "2026-10-24T09:49:04.639376+00:00"
+}

@@ -323,7 +323,7 @@ def build_state(
         "lyric_skill_package": "present" if all(status == "present" for status in lyric_skill_files.values()) else "missing",
         "lyric_skill_files": lyric_skill_files,
     }
-    selected_opt_in, selected_errors = check_selected_audio(series_path)
+    selected_opt_in, selected_errors = (False, []) if premixed_opt_in else check_selected_audio(series_path)
     instrumental = (selected_opt_in and not selected_errors) or premixed_valid
     captions = subtitle_status(series_path, instrumental=instrumental)
     artifact_status["subtitle_prepared"] = captions["prepared"]
@@ -412,8 +412,8 @@ def check_state(
     phase = current["phase"]
     artifacts = current["artifact_status"]
     concept_text = _read_text(series_path / "concept.md")
-    selected_opt_in, selected_errors = check_selected_audio(series_path)
     premixed_opt_in, premix, premixed_errors = check_premixed_audio(series_path, allow_uploaded_cleanup=artifacts["youtube_upload"] == "completed")
+    selected_opt_in, selected_errors = (False, []) if premixed_opt_in else check_selected_audio(series_path)
     premixed_valid = premixed_opt_in and not premixed_errors
     render_status = artifacts["premixed_video"] if premixed_opt_in else artifacts["final_mkv"]
 

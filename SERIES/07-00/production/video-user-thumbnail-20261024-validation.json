@@ -1,0 +1,726 @@
+{
+  "schema": "wavvy.series_local_premix_video_validation.v1",
+  "completed_utc": "2026-10-24T09:10:27.672900+00:00",
+  "checks": {
+    "source_hashes": {
+      "image": {
+        "path": "SERIES/07-00/input/thumb.jpg",
+        "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944",
+        "unchanged": true
+      },
+      "audio": {
+        "path": "SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a",
+        "sha256": "69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe",
+        "unchanged": true
+      }
+    },
+    "final_file_sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3",
+    "probe": {
+      "evidence": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_streams",
+          "-show_format",
+          "-show_chapters",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.28339149995008484,
+        "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-probe.stdout.txt",
+        "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-probe.stderr.txt"
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuvj420p",
+          "level": 51,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "1/1",
+          "avg_frame_rate": "1/1",
+          "time_base": "1/16384",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 110149632,
+          "duration": "6723.000000",
+          "bit_rate": "477666",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "6723",
+          "extradata_size": 52,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc62.11.100 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 322697232,
+          "duration": "6722.859000",
+          "bit_rate": "325849",
+          "nb_frames": "315136",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "bin_data",
+          "codec_long_name": "binary data",
+          "codec_type": "data",
+          "codec_tag_string": "text",
+          "codec_tag": "0x74786574",
+          "id": "0x3",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/1000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 6722859,
+          "duration": "6722.859000",
+          "bit_rate": "1",
+          "nb_frames": "40",
+          "extradata_size": 63,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "eng",
+            "handler_name": "SubtitleHandler"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "6723.000000",
+        "size": "676670955",
+        "bit_rate": "805201",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf62.3.100"
+        }
+      },
+      "video_frame_rounding_tail_seconds": 0.14099999999962165
+    },
+    "chapters": {
+      "count": 40,
+      "source_sample_starts_retained": true,
+      "mp4_maximum_rounding_seconds": 0.00033333333340124227,
+      "entries": [
+        {
+          "cycle": 1,
+          "order": 1,
+          "source_start_sample": 0,
+          "actual_start_seconds": 0.0,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 2,
+          "source_start_sample": 8582016,
+          "actual_start_seconds": 178.792,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 3,
+          "source_start_sample": 17478224,
+          "actual_start_seconds": 364.13,
+          "rounding_seconds": 0.00033333333334439885
+        },
+        {
+          "cycle": 1,
+          "order": 4,
+          "source_start_sample": 24134160,
+          "actual_start_seconds": 502.795,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 5,
+          "source_start_sample": 33285488,
+          "actual_start_seconds": 693.448,
+          "rounding_seconds": 0.00033333333328755543
+        },
+        {
+          "cycle": 1,
+          "order": 6,
+          "source_start_sample": 41156448,
+          "actual_start_seconds": 857.426,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 7,
+          "source_start_sample": 46724432,
+          "actual_start_seconds": 973.426,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 1,
+          "order": 8,
+          "source_start_sample": 55179552,
+          "actual_start_seconds": 1149.574,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 9,
+          "source_start_sample": 64523920,
+          "actual_start_seconds": 1344.248,
+          "rounding_seconds": -0.0003333333331738686
+        },
+        {
+          "cycle": 1,
+          "order": 10,
+          "source_start_sample": 73867248,
+          "actual_start_seconds": 1538.901,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 11,
+          "source_start_sample": 80458784,
+          "actual_start_seconds": 1676.225,
+          "rounding_seconds": 0.0003333333331738686
+        },
+        {
+          "cycle": 1,
+          "order": 12,
+          "source_start_sample": 88266304,
+          "actual_start_seconds": 1838.881,
+          "rounding_seconds": -0.0003333333331738686
+        },
+        {
+          "cycle": 1,
+          "order": 13,
+          "source_start_sample": 95498048,
+          "actual_start_seconds": 1989.543,
+          "rounding_seconds": 0.0003333333331738686
+        },
+        {
+          "cycle": 1,
+          "order": 14,
+          "source_start_sample": 104074128,
+          "actual_start_seconds": 2168.211,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 15,
+          "source_start_sample": 113227072,
+          "actual_start_seconds": 2358.897,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 1,
+          "order": 16,
+          "source_start_sample": 120603232,
+          "actual_start_seconds": 2512.567,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 1,
+          "order": 17,
+          "source_start_sample": 127578880,
+          "actual_start_seconds": 2657.893,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 1,
+          "order": 18,
+          "source_start_sample": 136786320,
+          "actual_start_seconds": 2849.715,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 19,
+          "source_start_sample": 146002416,
+          "actual_start_seconds": 3041.717,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 20,
+          "source_start_sample": 154962320,
+          "actual_start_seconds": 3228.382,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 1,
+          "source_start_sample": 161170464,
+          "actual_start_seconds": 3357.718,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 2,
+          "source_start_sample": 169426752,
+          "actual_start_seconds": 3529.724,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 3,
+          "source_start_sample": 178322960,
+          "actual_start_seconds": 3715.062,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 4,
+          "source_start_sample": 184978896,
+          "actual_start_seconds": 3853.727,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 5,
+          "source_start_sample": 194130224,
+          "actual_start_seconds": 4044.38,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 6,
+          "source_start_sample": 202001184,
+          "actual_start_seconds": 4208.358,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 7,
+          "source_start_sample": 207569168,
+          "actual_start_seconds": 4324.358,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 8,
+          "source_start_sample": 216024288,
+          "actual_start_seconds": 4500.506,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 9,
+          "source_start_sample": 225368656,
+          "actual_start_seconds": 4695.18,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 10,
+          "source_start_sample": 234711984,
+          "actual_start_seconds": 4889.833,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 11,
+          "source_start_sample": 241303520,
+          "actual_start_seconds": 5027.157,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 12,
+          "source_start_sample": 249111040,
+          "actual_start_seconds": 5189.813,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 13,
+          "source_start_sample": 256342784,
+          "actual_start_seconds": 5340.475,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 14,
+          "source_start_sample": 264918864,
+          "actual_start_seconds": 5519.143,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 15,
+          "source_start_sample": 274071808,
+          "actual_start_seconds": 5709.829,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 16,
+          "source_start_sample": 281447968,
+          "actual_start_seconds": 5863.499,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 17,
+          "source_start_sample": 288423616,
+          "actual_start_seconds": 6008.825,
+          "rounding_seconds": -0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 18,
+          "source_start_sample": 297631056,
+          "actual_start_seconds": 6200.647,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 19,
+          "source_start_sample": 306847152,
+          "actual_start_seconds": 6392.649,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 2,
+          "order": 20,
+          "source_start_sample": 315807056,
+          "actual_start_seconds": 6579.314,
+          "rounding_seconds": 0.00033333333340124227
+        }
+      ]
+    },
+    "audio_packets": {
+      "all_identical": true,
+      "source": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-select_streams",
+          "a:0",
+          "-show_packets",
+          "-show_data_hash",
+          "sha256",
+          "-show_entries",
+          "packet=pts,dts,duration,size,data_hash:packet_side_data=side_data_type,skip_samples,discard_padding",
+          "-of",
+          "compact=p=0:nk=0",
+          "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a"
+        ],
+        "exit_code": 0,
+        "packet_count": 315136,
+        "packet_payload_and_timing_sha256": "132fe0ad79d55c4039f6fd612c106575542f142a7bedb58060a894984ff72e5c",
+        "first_two": [
+          "pts=-1024|dts=-1024|duration=1024|size=712|data_hash=SHA256:d63db1fee3ef813bfe0db1587a5747a33e37eac50f4d80a3bfce7c7c67dba910|side_datum/skip_samples:side_data_type=Skip Samples|side_datum/skip_samples:skip_samples=1024|side_datum/skip_samples:discard_padding=0",
+          "pts=0|dts=0|duration=1024|size=789|data_hash=SHA256:c9eb0c24e592e7ae8f6889ad444f98b4d3d1d2bf70d0a7c36fbc96a452e6668a"
+        ],
+        "last_two": [
+          "pts=322696192|dts=322696192|duration=1024|size=1029|data_hash=SHA256:e96b59267d16eb1f1810c95b9f3efc4f83c96a457207cc910b8eb3cae18cd79e",
+          "pts=322697216|dts=322697216|duration=8|size=7|data_hash=SHA256:8a3734dbcb6f4f91174047b0e347cbbd65a57aca20511f53b8488f8da10ff600"
+        ],
+        "stderr": ""
+      },
+      "final": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-select_streams",
+          "a:0",
+          "-show_packets",
+          "-show_data_hash",
+          "sha256",
+          "-show_entries",
+          "packet=pts,dts,duration,size,data_hash:packet_side_data=side_data_type,skip_samples,discard_padding",
+          "-of",
+          "compact=p=0:nk=0",
+          "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4"
+        ],
+        "exit_code": 0,
+        "packet_count": 315136,
+        "packet_payload_and_timing_sha256": "132fe0ad79d55c4039f6fd612c106575542f142a7bedb58060a894984ff72e5c",
+        "first_two": [
+          "pts=-1024|dts=-1024|duration=1024|size=712|data_hash=SHA256:d63db1fee3ef813bfe0db1587a5747a33e37eac50f4d80a3bfce7c7c67dba910|side_datum/skip_samples:side_data_type=Skip Samples|side_datum/skip_samples:skip_samples=1024|side_datum/skip_samples:discard_padding=0",
+          "pts=0|dts=0|duration=1024|size=789|data_hash=SHA256:c9eb0c24e592e7ae8f6889ad444f98b4d3d1d2bf70d0a7c36fbc96a452e6668a"
+        ],
+        "last_two": [
+          "pts=322696192|dts=322696192|duration=1024|size=1029|data_hash=SHA256:e96b59267d16eb1f1810c95b9f3efc4f83c96a457207cc910b8eb3cae18cd79e",
+          "pts=322697216|dts=322697216|duration=8|size=7|data_hash=SHA256:8a3734dbcb6f4f91174047b0e347cbbd65a57aca20511f53b8488f8da10ff600"
+        ],
+        "stderr": ""
+      }
+    },
+    "full_video_audio_decode": {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-xerror",
+        "-err_detect",
+        "explode",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "-"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.442834999994375,
+      "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stdout.txt",
+      "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stderr.txt"
+    },
+    "frames": [
+      {
+        "position_seconds": 0,
+        "path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-begin.png",
+        "sha256": "cd73c3b7bdeb8eca15a71a08dbbd480b98bfddbb84994a560ce30c503b3de3a6",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "0",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-begin.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.928082833008375,
+          "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-begin.stdout.txt",
+          "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-begin.stderr.txt"
+        }
+      },
+      {
+        "position_seconds": 3361,
+        "path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-middle.png",
+        "sha256": "f0ea4769300895ddcb7032dbd76ff29ae0cfba49332e2854e2cf8ac45c0c6626",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "3361",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-middle.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.1003217499819584,
+          "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-middle.stdout.txt",
+          "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-middle.stderr.txt"
+        }
+      },
+      {
+        "position_seconds": 6722,
+        "path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-end.png",
+        "sha256": "7bbccbda0273ddd69d585ca13888d983a96029f53cd11cb4bc77232831f625b0",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "6722",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-end.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.168191874981858,
+          "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-end.stdout.txt",
+          "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-frame-end.stderr.txt"
+        }
+      }
+    ],
+    "approved_image_match": {
+      "reference": "SERIES/07-00/output/video-user-thumbnail-20261024/expected-scaled-jpg.png",
+      "reference_sha256": "c5dadbd9bad53c138c8e0eaa79bf13a97be01a415864214cf872a3d845b6489f",
+      "reference_command": {
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-nostdin",
+          "-v",
+          "error",
+          "-n",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+          "-vf",
+          "scale=3840:2160:flags=lanczos,setsar=1,format=yuv420p",
+          "-frames:v",
+          "1",
+          "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/video-user-thumbnail-20261024/expected-scaled-jpg.png"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 1.4526008340180852,
+        "stdout_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-expected-scaled-jpg.stdout.txt",
+        "stderr_path": "SERIES/07-00/output/video-user-thumbnail-20261024/validation-expected-scaled-jpg.stderr.txt"
+      },
+      "minimum_psnr_db": 35,
+      "matches": [
+        {
+          "frame_path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-begin.png",
+          "rgb_psnr_db": 51.200376863508666,
+          "rgb_mean_squared_error": 0.49322226643562317
+        },
+        {
+          "frame_path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-middle.png",
+          "rgb_psnr_db": 54.867414830132915,
+          "rgb_mean_squared_error": 0.2120014727115631
+        },
+        {
+          "frame_path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-frame-end.png",
+          "rgb_psnr_db": 54.866073127898304,
+          "rgb_mean_squared_error": 0.21206697821617126
+        }
+      ],
+      "scope": "decoded video frames versus the exact approved JPG after declared upscale and yuv420p conversion"
+    }
+  },
+  "technical_assertions_passed": true,
+  "scope": "Direct final MP4 checks; no user listening approval or actual YouTube upload claimed",
+  "visual_inspection_status": "worker_view_confirmed_begin_middle_end",
+  "visual_inspection": "All three decoded frames preserve the approved user JPG, including exact text/layout; no crop, added text, grading, or overlay. Numerical frame-to-upscaled-JPG PSNR assertions also passed."
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "wavvy.youtube_upload_staging_cleanup.v1",
+  "observed_at_utc": "2026-10-24T09:27:17.969038+00:00",
+  "scope": "Only four task-created files under the dedicated browser upload directory; project media and other browser sessions untouched.",
+  "source_receipt": [
+    {
+      "source": "SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/wavvy-0700-running-180-4k.mp4",
+      "bytes": 676670955,
+      "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3"
+    },
+    {
+      "source": "SERIES/07-00/input/thumb.jpg",
+      "staged_path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/thumb.jpg",
+      "bytes": 2475288,
+      "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/staging-receipt.json",
+      "bytes": 618,
+      "sha256": "5c0d5cab8bdb28ccc0fc8381f0f22afc630dc6757fee32b1ef73242261c95319"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/thumb.jpg",
+      "bytes": 2475288,
+      "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/upload-payload.json",
+      "bytes": 3510,
+      "sha256": "7e5bac204462c79f2ac066f04584a79635cd7e29f98cbf738e83ca1753ef856b"
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-24_k25cxqx6HVLbmkXN/wavvy-0700-upload/wavvy-0700-running-180-4k.mp4",
+      "bytes": 676670955,
+      "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3"
+    }
+  ],
+  "removed_file_count": 4,
+  "removed_logical_bytes": 679150371,
+  "all_removed": true,
+  "directory_removed": true,
+  "protected_project_files": [
+    {
+      "path": "SERIES/07-00/input/thumbnail-source.png",
+      "sha256": "6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe",
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/07-00/input/thumb.psd",
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439",
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944",
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/07-00/output/video-user-thumbnail-20261024/final-0700-4k.mp4",
+      "sha256": "8cf22d3026118fe2e9dbf4db87622c169169429d80372f68d55e07120df64fa3",
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a",
+      "sha256": "69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe",
+      "unchanged": true
+    }
+  ]
+}

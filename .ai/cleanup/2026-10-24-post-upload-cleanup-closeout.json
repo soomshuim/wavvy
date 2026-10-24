@@ -1,0 +1,39 @@
+{
+  "schema": "wavvy.post_upload_cleanup_closeout.v1",
+  "recorded_at_utc": "2026-10-24T09:53:38.925096+00:00",
+  "authorization": "승인 받지 말고 바로 정리하고 17:30도 정리해",
+  "series": {
+    "07-00": {
+      "deleted_items": 199,
+      "deleted_logical_bytes": 3864566321,
+      "records": [
+        "2026-10-24-0700-post-upload-cleanup.json",
+        "2026-10-24-0700-old-plan-cleanup.json"
+      ],
+      "uploaded_gate": "PASS",
+      "state_revision": 97
+    },
+    "17-30": {
+      "deleted_items": 9319,
+      "deleted_logical_bytes": 3460180848,
+      "symlinks_unlinked_without_following": 11,
+      "record": "2026-10-24-1730-post-upload-cleanup.json",
+      "published_subtitles_prepared": "PASS",
+      "published_subtitles_publication_evidence": "PASS",
+      "legacy_uploaded_gate": "Pre-existing FAIL because source audio was already deleted before this cleanup; no new blockers."
+    }
+  },
+  "total_deleted_items": 9518,
+  "total_deleted_logical_bytes": 7324747169,
+  "observed_free_bytes_deltas_separate_apply_windows": [
+    3188232192,
+    3490861056
+  ],
+  "storage_note": "File-size total is not exclusive APFS space reclaimed; observed free-space deltas also include unrelated machine activity.",
+  "retained": "Final prompt/source PNG/PSD/JPG where available; original lyrics/styles including pre-remix styles; final source identities, mix/render/publication records and actual published timed subtitles.",
+  "scope_exclusions": "06:30, other series/projects, Git internals, external Python and unrelated system caches unchanged.",
+  "reviews": [
+    ".ai/reviews/2026-10-24-0700-post-upload-cleanup-review.md",
+    ".ai/reviews/2026-10-24-1730-post-upload-cleanup-review.md"
+  ]
+}
