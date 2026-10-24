@@ -1,0 +1,967 @@
+{
+  "schema": "wavvy.cleanup-post-apply-check.v1",
+  "checked_at_utc": "2026-10-24T02:27:32.482498+00:00",
+  "apply_command": [
+    "python3",
+    ".ai/cleanup/execute-2026-10-24.py",
+    "--apply"
+  ],
+  "apply_exit_code": 0,
+  "apply_status": "applied",
+  "deleted_file_count": 1298,
+  "deleted_logical_bytes": 52534148348,
+  "journal_event_counts": {
+    "preflight_pass": 1,
+    "delete_intent": 1298,
+    "deleted": 1298
+  },
+  "candidate_lstat_absent_count": 1298,
+  "candidate_paths_still_present": [],
+  "protected_checks": [
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-25232fa8-ccd9-4104-8f90-de3d79c179ae.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 461099571,
+        "bytes": 2131294,
+        "mtime_ns": 1792807638888700206,
+        "ctime_ns": 1792807638888700206,
+        "link_count": 1,
+        "allocated_bytes": 2134016
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/reviews/2026-10-22-final-artwork-sequence-review.md",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 412852799,
+        "bytes": 2613,
+        "mtime_ns": 1792658240453338640,
+        "ctime_ns": 1792658240453338640,
+        "link_count": 1,
+        "allocated_bytes": 4096
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 414096950,
+        "bytes": 982,
+        "mtime_ns": 1792659330716859695,
+        "ctime_ns": 1792659330716859695,
+        "link_count": 1,
+        "allocated_bytes": 4096
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/04-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492318,
+        "bytes": 1806981,
+        "mtime_ns": 1777100820397954514,
+        "ctime_ns": 1777100820397954514,
+        "link_count": 1,
+        "allocated_bytes": 1810432
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/04-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492319,
+        "bytes": 21636187,
+        "mtime_ns": 1777100820442126330,
+        "ctime_ns": 1791783407573865758,
+        "link_count": 1,
+        "allocated_bytes": 21639168
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492320,
+        "bytes": 1141421,
+        "mtime_ns": 1777100820446288563,
+        "ctime_ns": 1777100820446288563,
+        "link_count": 1,
+        "allocated_bytes": 1142784
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492321,
+        "bytes": 44676034,
+        "mtime_ns": 1777100820535759439,
+        "ctime_ns": 1777100820535759439,
+        "link_count": 1,
+        "allocated_bytes": 44679168
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb_origin.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680121,
+        "bytes": 1583334,
+        "mtime_ns": 1772862630288336744,
+        "ctime_ns": 1772862630288336744,
+        "link_count": 1,
+        "allocated_bytes": 1585152
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 461117496,
+        "bytes": 2131294,
+        "mtime_ns": 1792807748823760541,
+        "ctime_ns": 1792807748823760541,
+        "link_count": 1,
+        "allocated_bytes": 2134016
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 457742811,
+        "bytes": 74331380,
+        "mtime_ns": 1792774553304897688,
+        "ctime_ns": 1792774553304897688,
+        "link_count": 1,
+        "allocated_bytes": 74334208
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 457742821,
+        "bytes": 74406364,
+        "mtime_ns": 1792774554219677882,
+        "ctime_ns": 1792774554219677882,
+        "link_count": 1,
+        "allocated_bytes": 74407936
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 461047699,
+        "bytes": 307505324,
+        "mtime_ns": 1792805526306250061,
+        "ctime_ns": 1792805526306250061,
+        "link_count": 1,
+        "allocated_bytes": 307507200
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 461117510,
+        "bytes": 6272,
+        "mtime_ns": 1792807748852936318,
+        "ctime_ns": 1792807748852936318,
+        "link_count": 1,
+        "allocated_bytes": 8192
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 270667634,
+        "bytes": 6786512,
+        "mtime_ns": 1791785726920371557,
+        "ctime_ns": 1791785726920371557,
+        "link_count": 1,
+        "allocated_bytes": 6787072
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb-scene-dawn-2026-10-12.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 270483137,
+        "bytes": 2038082,
+        "mtime_ns": 1791784983945349526,
+        "ctime_ns": 1791784983945464027,
+        "link_count": 1,
+        "allocated_bytes": 2039808
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 270456362,
+        "bytes": 1513732,
+        "mtime_ns": 1791785529335903415,
+        "ctime_ns": 1791785529336055332,
+        "link_count": 1,
+        "allocated_bytes": 1515520
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-layout.json",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 270934325,
+        "bytes": 707,
+        "mtime_ns": 1791788123756879523,
+        "ctime_ns": 1791788123756879523,
+        "link_count": 1,
+        "allocated_bytes": 4096
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-reference-review-2026-10-12.md",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 270456752,
+        "bytes": 5846,
+        "mtime_ns": 1791786001335003804,
+        "ctime_ns": 1791786001335003804,
+        "link_count": 1,
+        "allocated_bytes": 8192
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/10-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680144,
+        "bytes": 1674742,
+        "mtime_ns": 1772862631846561911,
+        "ctime_ns": 1772862631846561911,
+        "link_count": 1,
+        "allocated_bytes": 1675264
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/10-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680145,
+        "bytes": 43565305,
+        "mtime_ns": 1772862631941496008,
+        "ctime_ns": 1772862631941496008,
+        "link_count": 1,
+        "allocated_bytes": 43569152
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/11-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492322,
+        "bytes": 979569,
+        "mtime_ns": 1777100820537821181,
+        "ctime_ns": 1777100820537821181,
+        "link_count": 1,
+        "allocated_bytes": 983040
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/11-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492323,
+        "bytes": 15671985,
+        "mtime_ns": 1777100820568543719,
+        "ctime_ns": 1777100820568543719,
+        "link_count": 1,
+        "allocated_bytes": 15675392
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/12-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 19547206,
+        "bytes": 2243225,
+        "mtime_ns": 1774225905375098738,
+        "ctime_ns": 1774225905375098738,
+        "link_count": 1,
+        "allocated_bytes": 2244608
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/12-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 19547207,
+        "bytes": 27963459,
+        "mtime_ns": 1774225905444624365,
+        "ctime_ns": 1774225905444624365,
+        "link_count": 1,
+        "allocated_bytes": 27967488
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 21780214,
+        "bytes": 20228708,
+        "mtime_ns": 1776055287220025093,
+        "ctime_ns": 1776055323708931819,
+        "link_count": 1,
+        "allocated_bytes": 20230144
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492324,
+        "bytes": 2805348,
+        "mtime_ns": 1777100832486222077,
+        "ctime_ns": 1777100832486468951,
+        "link_count": 1,
+        "allocated_bytes": 2805760
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492294,
+        "bytes": 22487931,
+        "mtime_ns": 1777100832493452839,
+        "ctime_ns": 1792657982159667786,
+        "link_count": 1,
+        "allocated_bytes": 22491136
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/14-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492325,
+        "bytes": 1654697,
+        "mtime_ns": 1777100820574766610,
+        "ctime_ns": 1777100820574766610,
+        "link_count": 1,
+        "allocated_bytes": 1654784
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/14-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492326,
+        "bytes": 30346378,
+        "mtime_ns": 1777100820637077183,
+        "ctime_ns": 1777100820637077183,
+        "link_count": 1,
+        "allocated_bytes": 30347264
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492328,
+        "bytes": 29297306,
+        "mtime_ns": 1777100820677762055,
+        "ctime_ns": 1777100820677762055,
+        "link_count": 1,
+        "allocated_bytes": 29298688
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492329,
+        "bytes": 2979945,
+        "mtime_ns": 1777100820680319545,
+        "ctime_ns": 1777100820680319545,
+        "link_count": 1,
+        "allocated_bytes": 2981888
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492330,
+        "bytes": 20010370,
+        "mtime_ns": 1777100820719258965,
+        "ctime_ns": 1777247751815380704,
+        "link_count": 1,
+        "allocated_bytes": 20013056
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/16-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680209,
+        "bytes": 1626669,
+        "mtime_ns": 1772862633853295420,
+        "ctime_ns": 1772862633853295420,
+        "link_count": 1,
+        "allocated_bytes": 1630208
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/16-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680210,
+        "bytes": 21053279,
+        "mtime_ns": 1772862633920875127,
+        "ctime_ns": 1772862633920875127,
+        "link_count": 1,
+        "allocated_bytes": 21053440
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/loop-4k-candidate-v1.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 146720544,
+        "bytes": 8778130,
+        "mtime_ns": 1790988092657601110,
+        "ctime_ns": 1790988092658102999,
+        "link_count": 1,
+        "allocated_bytes": 8781824
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 146795534,
+        "bytes": 8778130,
+        "mtime_ns": 1790988092657601110,
+        "ctime_ns": 1790988599679061572,
+        "link_count": 1,
+        "allocated_bytes": 8781824
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 146834396,
+        "bytes": 523867,
+        "mtime_ns": 1790988997916659947,
+        "ctime_ns": 1790988997916659947,
+        "link_count": 1,
+        "allocated_bytes": 524288
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 413402353,
+        "bytes": 17535068,
+        "mtime_ns": 1792658263320283605,
+        "ctime_ns": 1792658263321809447,
+        "link_count": 1,
+        "allocated_bytes": 17539072
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/user-thumbnail-2026-10-22.md",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 413588962,
+        "bytes": 2076,
+        "mtime_ns": 1792658961042239848,
+        "ctime_ns": 1792658961042239848,
+        "link_count": 1,
+        "allocated_bytes": 4096
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 412074046,
+        "bytes": 4584887,
+        "mtime_ns": 1792655804465255748,
+        "ctime_ns": 1792658032047437171,
+        "link_count": 1,
+        "allocated_bytes": 4587520
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 413398086,
+        "bytes": 1441407,
+        "mtime_ns": 1792658235959423523,
+        "ctime_ns": 1792676498635393643,
+        "link_count": 2,
+        "allocated_bytes": 1441792
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 413591649,
+        "bytes": 2938,
+        "mtime_ns": 1792658828000590975,
+        "ctime_ns": 1792658828000590975,
+        "link_count": 1,
+        "allocated_bytes": 4096
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/18-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492331,
+        "bytes": 1479002,
+        "mtime_ns": 1777100820720653293,
+        "ctime_ns": 1777100820720653293,
+        "link_count": 1,
+        "allocated_bytes": 1482752
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/18-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492332,
+        "bytes": 21110307,
+        "mtime_ns": 1777100820768194553,
+        "ctime_ns": 1777100820768194553,
+        "link_count": 1,
+        "allocated_bytes": 21110784
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/loop.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23601558,
+        "bytes": 34107792,
+        "mtime_ns": 1777135851187945673,
+        "ctime_ns": 1777136439496550797,
+        "link_count": 1,
+        "allocated_bytes": 34111488
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 24475961,
+        "bytes": 1721838,
+        "mtime_ns": 1777893967431562064,
+        "ctime_ns": 1777893967431562064,
+        "link_count": 1,
+        "allocated_bytes": 1724416
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23603502,
+        "bytes": 30504400,
+        "mtime_ns": 1777136422781775191,
+        "ctime_ns": 1777136422784529490,
+        "link_count": 1,
+        "allocated_bytes": 30507008
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/21-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492342,
+        "bytes": 1208885,
+        "mtime_ns": 1777100820775847813,
+        "ctime_ns": 1777100820775847813,
+        "link_count": 1,
+        "allocated_bytes": 1212416
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/21-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 23492343,
+        "bytes": 26494174,
+        "mtime_ns": 1777100820851931287,
+        "ctime_ns": 1777100820851931287,
+        "link_count": 1,
+        "allocated_bytes": 26497024
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/22-00/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 21764518,
+        "bytes": 2507354,
+        "mtime_ns": 1776049802069496799,
+        "ctime_ns": 1776049802069496799,
+        "link_count": 1,
+        "allocated_bytes": 2510848
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/22-00/input/thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 21764519,
+        "bytes": 34941659,
+        "mtime_ns": 1776049802185981761,
+        "ctime_ns": 1776049802185981761,
+        "link_count": 1,
+        "allocated_bytes": 34942976
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/RNB-BEST/input/thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 24999731,
+        "bytes": 2182359,
+        "mtime_ns": 1778202525148414129,
+        "ctime_ns": 1778202525148414129,
+        "link_count": 1,
+        "allocated_bytes": 2183168
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/Single/alleyway/thumb.jpeg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 14354380,
+        "bytes": 873003,
+        "mtime_ns": 1769836278117283914,
+        "ctime_ns": 1769836278117283914,
+        "link_count": 1,
+        "allocated_bytes": 876544
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/.DS_Store",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17707212,
+        "bytes": 6148,
+        "mtime_ns": 1774404321378752101,
+        "ctime_ns": 1774404321378752101,
+        "link_count": 1,
+        "allocated_bytes": 8192
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/header_youtube.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680268,
+        "bytes": 1275771,
+        "mtime_ns": 1772862636051099204,
+        "ctime_ns": 1772862636051099204,
+        "link_count": 1,
+        "allocated_bytes": 1277952
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/header_youtube.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680269,
+        "bytes": 26607276,
+        "mtime_ns": 1772862636103228408,
+        "ctime_ns": 1772862636103228408,
+        "link_count": 1,
+        "allocated_bytes": 26607616
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17721164,
+        "bytes": 21634,
+        "mtime_ns": 1772868777257200697,
+        "ctime_ns": 1772868777257200697,
+        "link_count": 1,
+        "allocated_bytes": 24576
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 20390513,
+        "bytes": 204632,
+        "mtime_ns": 1774914987866663671,
+        "ctime_ns": 1774914987866663671,
+        "link_count": 1,
+        "allocated_bytes": 204800
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/profile.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680271,
+        "bytes": 525525,
+        "mtime_ns": 1772862636104352530,
+        "ctime_ns": 1772862636104352530,
+        "link_count": 1,
+        "allocated_bytes": 528384
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/profile_youtube.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680272,
+        "bytes": 21741469,
+        "mtime_ns": 1772862636167155749,
+        "ctime_ns": 1772862636167155749,
+        "link_count": 1,
+        "allocated_bytes": 21741568
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/template_thumb.jpg",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17680273,
+        "bytes": 1096918,
+        "mtime_ns": 1772862636171412488,
+        "ctime_ns": 1772862636171412488,
+        "link_count": 1,
+        "allocated_bytes": 1097728
+      }
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/brand/template_thumb.psd",
+      "ok": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 17949602,
+        "bytes": 12020148,
+        "mtime_ns": 1773019142562679152,
+        "ctime_ns": 1773019142562679152,
+        "link_count": 1,
+        "allocated_bytes": 12021760
+      }
+    }
+  ],
+  "control_hash_checks": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/.ai/state.json",
+      "expected_sha256": "eb8fec35441820de3fbb38632dd814d498afd9211a433b09f6610e3b6d4a1f42",
+      "actual_sha256": "eb8fec35441820de3fbb38632dd814d498afd9211a433b09f6610e3b6d4a1f42",
+      "ok": true
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/download-manifest.json",
+      "expected_sha256": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+      "actual_sha256": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+      "ok": true
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json",
+      "expected_sha256": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+      "actual_sha256": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+      "ok": true
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/manifest.json",
+      "expected_sha256": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1",
+      "actual_sha256": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1",
+      "ok": true
+    }
+  ],
+  "remaining_project_audio_video_regular_files": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74406364
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74331380
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+      "bytes": 307505324
+    }
+  ],
+  "remaining_media_symlinks_not_followed": [],
+  "zero_byte_media_placeholders": [],
+  "remaining_scan_errors": [],
+  "storage_before": {
+    "at_utc": "2026-10-24T02:26:39.158887+00:00",
+    "statvfs": {
+      "/Users/zenkim_office/Project/wavvy": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 4042014720,
+        "available_bytes": 4042014720
+      },
+      "/private/tmp": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 4042014720,
+        "available_bytes": 4042014720
+      },
+      "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 4042014720,
+        "available_bytes": 4042014720
+      }
+    },
+    "df": {
+      "command": [
+        "df",
+        "-k",
+        "/System/Volumes/Data"
+      ],
+      "exit_code": 0,
+      "stdout": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 934481212   3947272   100% 21591504 39472720   35%   /System/Volumes/Data\n",
+      "stderr": ""
+    }
+  },
+  "storage_after": {
+    "at_utc": "2026-10-24T02:26:41.805669+00:00",
+    "statvfs": {
+      "/Users/zenkim_office/Project/wavvy": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 55041216512,
+        "available_bytes": 55041216512
+      },
+      "/private/tmp": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 55041216512,
+        "available_bytes": 55041216512
+      },
+      "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec": {
+        "block_size": 4096,
+        "blocks": 242837545,
+        "free_bytes": 55041216512,
+        "available_bytes": 55041216512
+      }
+    },
+    "df": {
+      "command": [
+        "df",
+        "-k",
+        "/System/Volumes/Data"
+      ],
+      "exit_code": 0,
+      "stdout": "Filesystem   1024-blocks      Used Available Capacity  iused     ifree %iused  Mounted on\n/dev/disk3s5   971350180 884677296  53751188    95% 21590208 537511880    4%   /System/Volumes/Data\n",
+      "stderr": ""
+    }
+  },
+  "observed_available_bytes_delta": 50999201792,
+  "artifact_hashes": {
+    "execute-2026-10-24.py": {
+      "bytes": 19873,
+      "sha256": "84520f17b400520aa079540d414ab485885d17705586d534544a6b98b14a574a"
+    },
+    "2026-10-24-wavvy-media-inventory.json": {
+      "bytes": 1024804,
+      "sha256": "f78c0a9e9004050c2566cd5b7f5353fc0259372e5120d73812164598f1977517"
+    },
+    "2026-10-24-wavvy-thumbnail-inventory.json": {
+      "bytes": 143142,
+      "sha256": "d30b1421d71acd30c544e528e0fd5886d27446f037cef2c779c649768703d578"
+    },
+    "2026-10-24-wavvy-cleanup-dry-run.json": {
+      "bytes": 1651874,
+      "sha256": "03d30d91be921e76aa816c70c18f1e8286669aa9a1da4f5dbdf6c51ec860286a"
+    },
+    "2026-10-24-wavvy-cleanup-apply.json": {
+      "bytes": 1952197,
+      "sha256": "57fcd88f868d1b2412f93c145c35f1204b0c5e6a96d80521418bd586b156b762"
+    },
+    "2026-10-24-wavvy-cleanup-apply.events.jsonl": {
+      "bytes": 815070,
+      "sha256": "5ec334eb5df96e4927475626c32c0e3622743838e158c40e43cf008509292c92"
+    }
+  },
+  "deleted_directories": 0,
+  "state_write_count": 0,
+  "docs_changed_by_this_apply_worker": 0
+}

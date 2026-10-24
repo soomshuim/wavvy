@@ -1,0 +1,3031 @@
+{
+  "schema": "wavvy.system-data-private-var-readonly.v1",
+  "started_at_utc": "2026-10-24T02:37:58.690994+00:00",
+  "runtime": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "source": "explicit session context-guard measurement"
+  },
+  "scope": {
+    "measure": [
+      "/private/etc",
+      "/private/var direct entries except folders and vm"
+    ],
+    "excluded_from_recursive_measurement": [
+      "/private/var/folders",
+      "/private/var/vm",
+      "/private/tmp"
+    ],
+    "mutations": "Only this new small diagnostic JSON; no deletion, sudo, app termination, cache cleanup or media creation."
+  },
+  "var_direct_entries": [
+    {
+      "path": "/private/var/OOPJit",
+      "kind": "directory",
+      "mode": "0o777",
+      "uid": 0,
+      "gid": 80,
+      "inode": 31173386,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/agentx",
+      "kind": "directory",
+      "mode": "0o700",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173907,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/at",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 1,
+      "gid": 0,
+      "inode": 31173876,
+      "direct_stat_bytes": 256
+    },
+    {
+      "path": "/private/var/audit",
+      "kind": "directory",
+      "mode": "0o700",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173391,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/backups",
+      "kind": "directory",
+      "mode": "0o700",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173906,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/boot",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 1,
+      "inode": 31173359,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/containers",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 17517,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/db",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173405,
+      "direct_stat_bytes": 4160
+    },
+    {
+      "path": "/private/var/dextcores",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 270,
+      "gid": 270,
+      "inode": 31173356,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/dirs_cleaner",
+      "kind": "directory",
+      "mode": "0o700",
+      "uid": 0,
+      "gid": 0,
+      "inode": 17248,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/empty",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 3,
+      "inode": 31173360,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/folders",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31174096,
+      "direct_stat_bytes": 128
+    },
+    {
+      "path": "/private/var/install",
+      "kind": "directory",
+      "mode": "0o700",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173358,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/jabberd",
+      "kind": "directory",
+      "mode": "0o750",
+      "uid": 84,
+      "gid": 84,
+      "inode": 31173385,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/lib",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173402,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/log",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173883,
+      "direct_stat_bytes": 1440
+    },
+    {
+      "path": "/private/var/logs",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 17361,
+      "direct_stat_bytes": 224
+    },
+    {
+      "path": "/private/var/ma",
+      "kind": "directory",
+      "mode": "0o750",
+      "uid": 253,
+      "gid": 253,
+      "inode": 31173361,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/mail",
+      "kind": "directory",
+      "mode": "0o775",
+      "uid": 0,
+      "gid": 6,
+      "inode": 31173362,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/msgs",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173389,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/netboot",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173897,
+      "direct_stat_bytes": 64
+    },
+    {
+      "path": "/private/var/networkd",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 24,
+      "gid": 24,
+      "inode": 31173357,
+      "direct_stat_bytes": 128
+    },
+    {
+      "path": "/private/var/protected",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173899,
+      "direct_stat_bytes": 160
+    },
+    {
+      "path": "/private/var/root",
+      "kind": "directory",
+      "mode": "0o750",
+      "uid": 0,
+      "gid": 0,
+      "inode": 16695,
+      "direct_stat_bytes": 160
+    },
+    {
+      "path": "/private/var/rpc",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173902,
+      "direct_stat_bytes": 128
+    },
+    {
+      "path": "/private/var/run",
+      "kind": "directory",
+      "mode": "0o775",
+      "uid": 0,
+      "gid": 1,
+      "inode": 31173898,
+      "direct_stat_bytes": 1056
+    },
+    {
+      "path": "/private/var/select",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173895,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/sntpd",
+      "kind": "directory",
+      "mode": "0o775",
+      "uid": 281,
+      "gid": 281,
+      "inode": 31173404,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/spool",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173363,
+      "direct_stat_bytes": 192
+    },
+    {
+      "path": "/private/var/tmp",
+      "kind": "directory",
+      "mode": "0o1777",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173905,
+      "direct_stat_bytes": 192
+    },
+    {
+      "path": "/private/var/vm",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173388,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/yp",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 31173354,
+      "direct_stat_bytes": 96
+    }
+  ],
+  "folder_account_direct_entries": [
+    {
+      "path": "/private/var/folders/j8",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 32333,
+      "direct_stat_bytes": 96
+    },
+    {
+      "path": "/private/var/folders/zz",
+      "kind": "directory",
+      "mode": "0o755",
+      "uid": 0,
+      "gid": 0,
+      "inode": 17254,
+      "direct_stat_bytes": 1120
+    }
+  ],
+  "listing_errors": [],
+  "commands": [
+    {
+      "argv": [
+        "du",
+        "-sk",
+        "/private/etc",
+        "/private/var/OOPJit",
+        "/private/var/agentx",
+        "/private/var/at",
+        "/private/var/audit",
+        "/private/var/backups",
+        "/private/var/boot",
+        "/private/var/containers",
+        "/private/var/db",
+        "/private/var/dextcores",
+        "/private/var/dirs_cleaner",
+        "/private/var/empty",
+        "/private/var/install",
+        "/private/var/jabberd",
+        "/private/var/lib",
+        "/private/var/log",
+        "/private/var/logs",
+        "/private/var/ma",
+        "/private/var/mail",
+        "/private/var/msgs",
+        "/private/var/netboot",
+        "/private/var/networkd",
+        "/private/var/protected",
+        "/private/var/root",
+        "/private/var/rpc",
+        "/private/var/run",
+        "/private/var/select",
+        "/private/var/sntpd",
+        "/private/var/spool",
+        "/private/var/tmp",
+        "/private/var/yp"
+      ],
+      "timeout_seconds": 52,
+      "timed_out": false,
+      "exit_code": 1,
+      "elapsed_seconds": 0.672,
+      "stdout": "1620\t/private/etc\n0\t/private/var/at\n0\t/private/var/boot\n0\t/private/var/containers\n3713012\t/private/var/db\n0\t/private/var/dextcores\n0\t/private/var/empty\n0\t/private/var/lib\n115004\t/private/var/log\n3936\t/private/var/logs\n0\t/private/var/mail\n0\t/private/var/msgs\n0\t/private/var/netboot\n0\t/private/var/networkd\n51676\t/private/var/protected\n0\t/private/var/rpc\n36\t/private/var/run\n0\t/private/var/select\n4\t/private/var/sntpd\n0\t/private/var/spool\n12\t/private/var/tmp\n0\t/private/var/yp\n",
+      "stderr": "du: /private/etc/cups/certs: Permission denied\ndu: /private/var/OOPJit: Operation not permitted\ndu: /private/var/agentx: Permission denied\ndu: /private/var/at/tabs: Permission denied\ndu: /private/var/at/tmp: Permission denied\ndu: /private/var/audit: Permission denied\ndu: /private/var/backups: Permission denied\ndu: /private/var/db/appinstalld: Operation not permitted\ndu: /private/var/db/diskimagesiod: Permission denied\ndu: /private/var/db/ExtensibleSSO/Configuration: Operation not permitted\ndu: /private/var/db/Spotlight: Operation not permitted\ndu: /private/var/db/locationd/Library: Permission denied\ndu: /private/var/db/modelmanagerd: Permission denied\ndu: /private/var/db/terminus: Permission denied\ndu: /private/var/db/sysdiagnose/com.apple.sysdiagnose: Operation not permitted\ndu: /private/var/db/SoC: Operation not permitted\ndu: /private/var/db/DumpPanic: Operation not permitted\ndu: /private/var/db/analyticsd: Permission denied\ndu: /private/var/db/AppleIntelligencePlatform: Operation not permitted\ndu: /private/var/db/rmd: Permission denied\ndu: /private/var/db/knowledgegraphd: Permission denied\ndu: /private/var/db/coreml: Permission denied\ndu: /private/var/db/nsurlsessiond: Permission denied\ndu: /private/var/db/softwareupdate/Library: Permission denied\ndu: /private/var/db/fpsd: Permission denied\ndu: /private/var/db/hidd: Permission denied\ndu: /private/var/db/installcoordinationd: Operation not permitted\ndu: /private/var/db/Spotlight-V100: Operation not permitted\ndu: /private/var/db/geod: Permission denied\ndu: /private/var/db/oah: Operation not permitted\ndu: /private/var/db/reportmemoryexception: Permission denied\ndu: /private/var/db/Sandbox: Permission denied\ndu: /private/var/db/ctkd: Permission denied\ndu: /private/var/db/lockdown: Operation not permitted\ndu: /private/var/db/biome: Permission denied\ndu: /private/var/db/KernelExtensionManagement/Staging: Operation not permitted\ndu: /private/var/db/datadetectors: Permission denied\ndu: /private/var/db/cmiodalassistants: Permission denied\ndu: /private/var/db/DifferentialPrivacy: Operation not permitted\ndu: /private/var/db/assetsubscriptiond/StagingLogs: Permission denied\ndu: /private/var/db/assetsubscriptiond/history: Permission denied\ndu: /private/var/db/com.apple.xpc.roleaccountd.staging: Permission denied\ndu: /private/var/db/dslocal/nodes/Default: Permission denied\ndu: /private/var/db/com.apple.findmy.findmybeaconingd: Permission denied\ndu: /private/var/db/sudo: Permission denied\ndu: /private/var/db/nearbyd: Permission denied\ndu: /private/var/db/MobileIdentityService: Operation not permitted\ndu: /private/var/db/mmaintenanced: Permission denied\ndu: /private/var/db/dhcpclient: Permission denied\ndu: /private/var/db/timed: Permission denied\ndu: /private/var/db/applepay: Permission denied\ndu: /private/var/db/SystemKeys: Operation not permitted\ndu: /private/var/db/darwindaemon: Permission denied\ndu: /private/var/db/audiomxd/Library: Permission denied\ndu: /private/var/db/securityagent: Permission denied\ndu: /private/var/db/accessoryupdater: Permission denied\ndu: /private/var/db/searchparty: Operation not permitted\ndu: /private/var/db/CoreDuet/Knowledge: Operation not permitted\ndu: /private/var/db/CoreDuet/People/Feedback/CNA: Permission denied\ndu: /private/var/db/CoreDuet/Caches: Permission denied\ndu: /private/var/db/ConfigurationProfiles/Store: Operation not permitted\ndu: /private/var/db/fseventsd: Permission denied\ndu: /private/var/db/caches/opendirectory: Permission denied\ndu: /private/var/dirs_cleaner: Permission denied\ndu: /private/var/install: Permission denied\ndu: /private/var/jabberd: Permission denied\ndu: /private/var/lib/postfix: Permission denied\ndu: /private/var/ma: Permission denied\ndu: /private/var/networkd/Library: Permission denied\ndu: /private/var/networkd/db: Operation not permitted\ndu: /private/var/protected/xprotect/db: Operation not permitted\ndu: /private/var/protected/trustd/private: Operation not permitted\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000059: Permission denied\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000106: Permission denied\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000018: Permission denied\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000116: Permission denied\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA000000CD: Permission denied\ndu: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA000000F8: Permission denied\ndu: /private/var/root: Permission denied\ndu: /private/var/run/mds: Permission denied\ndu: /private/var/spool/mqueue: Permission denied\ndu: /private/var/spool/postfix/saved: Permission denied\ndu: /private/var/spool/postfix/trace: Permission denied\ndu: /private/var/spool/postfix/defer: Permission denied\ndu: /private/var/spool/postfix/flush: Permission denied\ndu: /private/var/spool/postfix/deferred: Permission denied\ndu: /private/var/spool/postfix/corrupt: Permission denied\ndu: /private/var/spool/postfix/public: Permission denied\ndu: /private/var/spool/postfix/private: Permission denied\ndu: /private/var/spool/postfix/incoming: Permission denied\ndu: /private/var/spool/postfix/active: Permission denied\ndu: /private/var/spool/postfix/maildrop: Permission denied\ndu: /private/var/spool/postfix/hold: Permission denied\ndu: /private/var/spool/postfix/bounce: Permission denied\ndu: /private/var/spool/cups: Permission denied\n"
+    },
+    {
+      "argv": [
+        "df",
+        "-k"
+      ],
+      "timeout_seconds": 52,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.004,
+      "stdout": "Filesystem     1024-blocks      Used Available Capacity  iused     ifree %iused  Mounted on\n/dev/disk3s1s1   971350180  12276548  53041324    19%   458725 530413240    0%   /\ndevfs                  200       200         0   100%      694         0  100%   /dev\n/dev/disk3s6     971350180   7340356  53041324    13%        7 530413240    0%   /System/Volumes/VM\n/dev/disk3s2     971350180  10549840  53041324    17%     2100 530413240    0%   /System/Volumes/Preboot\n/dev/disk3s4     971350180      7104  53041324     1%      110 530413240    0%   /System/Volumes/Update\n/dev/disk1s2        512000      6164    492416     2%        1   4924160    0%   /System/Volumes/xarts\n/dev/disk1s1        512000      5768    492416     2%       36   4924160    0%   /System/Volumes/iSCPreboot\n/dev/disk1s3        512000      2792    492416     1%       88   4924160    0%   /System/Volumes/Hardware\n/dev/disk3s5     971350180 885387160  53041324    95% 21599301 530413240    4%   /System/Volumes/Data\nmap auto_home            0         0         0   100%        0         0     -   /System/Volumes/Data/home\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "diskutil",
+        "apfs",
+        "list",
+        "-plist"
+      ],
+      "timeout_seconds": 52,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.176,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>Containers</key>\n\t<array>\n\t\t<dict>\n\t\t\t<key>APFSContainerUUID</key>\n\t\t\t<string>D01336EA-D513-4105-A6EC-3218E3BF5AEA</string>\n\t\t\t<key>CapacityCeiling</key>\n\t\t\t<integer>524288000</integer>\n\t\t\t<key>CapacityFree</key>\n\t\t\t<integer>504233984</integer>\n\t\t\t<key>ContainerReference</key>\n\t\t\t<string>disk1</string>\n\t\t\t<key>DesignatedPhysicalStore</key>\n\t\t\t<string>disk0s1</string>\n\t\t\t<key>PhysicalStores</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk0s1</string>\n\t\t\t\t\t<key>DiskUUID</key>\n\t\t\t\t\t<string>7C4A7A1E-5B27-46FA-AEF7-D5F28670114D</string>\n\t\t\t\t\t<key>Size</key>\n\t\t\t\t\t<integer>524288000</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t\t<key>Volumes</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>5BC0B631-8EE9-4560-8348-F17A3E288B69</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>5906432</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk1s1</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>iSCPreboot</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Preboot</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>ADF73E1A-AFE5-499E-8815-D9295A67FF1C</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>6311936</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk1s2</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>xART</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>xART</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>0256C838-BA1B-4BD9-81C0-BC8E3A68F81F</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>2859008</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk1s3</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Hardware</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Hardware</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>006DBEFB-2B3F-48A3-8B0A-3A8459C2B71D</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>20480</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk1s4</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<dict>\n\t\t\t<key>APFSContainerUUID</key>\n\t\t\t<string>E85D94BD-5BDF-48DB-B04B-F5A8216AD313</string>\n\t\t\t<key>CapacityCeiling</key>\n\t\t\t<integer>5368664064</integer>\n\t\t\t<key>CapacityFree</key>\n\t\t\t<integer>3036454912</integer>\n\t\t\t<key>ContainerReference</key>\n\t\t\t<string>disk2</string>\n\t\t\t<key>DesignatedPhysicalStore</key>\n\t\t\t<string>disk0s3</string>\n\t\t\t<key>PhysicalStores</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk0s3</string>\n\t\t\t\t\t<key>DiskUUID</key>\n\t\t\t\t\t<string>90E3E290-AC26-4083-B88A-4AB4D991277B</string>\n\t\t\t\t\t<key>Size</key>\n\t\t\t\t\t<integer>5368664064</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t\t<key>Volumes</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>A5D187E2-4016-4B16-9967-D07BF7B1A0FB</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>2310987776</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk2s1</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>0479DF7D-08A6-4926-9966-CBFC1C5650ED</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>1474560</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk2s2</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Update</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Update</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<dict>\n\t\t\t<key>APFSContainerUUID</key>\n\t\t\t<string>9EAD686F-7E36-4D6E-BD0B-6B1764172D7D</string>\n\t\t\t<key>CapacityCeiling</key>\n\t\t\t<integer>994662584320</integer>\n\t\t\t<key>CapacityFree</key>\n\t\t\t<integer>54314311680</integer>\n\t\t\t<key>ContainerReference</key>\n\t\t\t<string>disk3</string>\n\t\t\t<key>DesignatedPhysicalStore</key>\n\t\t\t<string>disk0s2</string>\n\t\t\t<key>PhysicalStores</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk0s2</string>\n\t\t\t\t\t<key>DiskUUID</key>\n\t\t\t\t\t<string>95341A5D-C0CD-4770-B3A7-601045E9E271</string>\n\t\t\t\t\t<key>Size</key>\n\t\t\t\t\t<integer>994662584320</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t\t<key>Volumes</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>D707B653-A9C6-4620-83CA-B6EEAF2F7E33</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>12571185152</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s1</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<true/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<true/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Macintosh HD</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>System</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>C3F24E08-9EAE-49A1-B4E7-8FD036B74521</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>10803036160</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s2</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Preboot</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Preboot</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>A4289B7E-1500-4AB9-84FC-BF6BF4DBA2F9</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>2607112192</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s3</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Recovery</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>BA2ED576-78C7-44BB-BB22-7C7299B4E6CD</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>7274496</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s4</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Update</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Update</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>A685C7E7-D7C4-4C4E-B678-E9093155F059</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>906636455936</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s5</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<true/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<true/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>Macintosh HD - Data</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>Data</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>APFSVolumeUUID</key>\n\t\t\t\t\t<string>35228193-3DD6-4EBF-B69B-E7119AA50FC5</string>\n\t\t\t\t\t<key>CapacityInUse</key>\n\t\t\t\t\t<integer>7516524544</integer>\n\t\t\t\t\t<key>CapacityQuota</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CapacityReserve</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t<key>CryptoMigrationOn</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>DeviceIdentifier</key>\n\t\t\t\t\t<string>disk3s6</string>\n\t\t\t\t\t<key>Encryption</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>FileVault</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Locked</key>\n\t\t\t\t\t<false/>\n\t\t\t\t\t<key>Name</key>\n\t\t\t\t\t<string>VM</string>\n\t\t\t\t\t<key>Roles</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<string>VM</string>\n\t\t\t\t\t</array>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t</array>\n</dict>\n</plist>\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "-z",
+        "--untracked-files=all"
+      ],
+      "timeout_seconds": 52,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.079,
+      "stdout": " M .ai/HANDOFF.md\u0000 M .ai/SESSION.md\u0000 M .ai/state.json\u0000 M CHANGELOG.md\u0000 D SERIES/04-00/input/loop.mp4\u0000 D SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3\u0000 D SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3\u0000 D SERIES/04-00/input/tracks/03__잔향__Hazy__AltR&B__88.mp3\u0000 D SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3\u0000 D SERIES/04-00/input/tracks/05__습기__Sentimental__Acoustic-RnB__88.mp3\u0000 D SERIES/04-00/input/tracks/06__적막__Melancholic__RnB__68.mp3\u0000 D SERIES/04-00/input/tracks/07__문틈__Hopeful__RnB__82.mp3\u0000 D SERIES/04-00/input/tracks/08__빗줄기__Melancholic__RnB__85.mp3\u0000 D SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3\u0000 D SERIES/06-00/input/loop.mp4\u0000 D SERIES/06-00/input/tracks/01__ConcreteMorning__Driven__FastLofi__124.wav\u0000 D SERIES/06-00/input/tracks/02__StaticLane__Focused__FastLofi__118.wav\u0000 D SERIES/06-00/input/tracks/03__Signal__Rising__FastLofi__126.wav\u0000 D SERIES/06-00/input/tracks/04__BlueCurb__Groovy__FastLofi__122.wav\u0000 D SERIES/06-00/input/tracks/05__Iron__Powerful__FastLofi__128.wav\u0000 D SERIES/06-00/input/tracks/06__Moving__Peak__FastLofi__130.wav\u0000 D SERIES/06-00/input/tracks/07__WakeUp__Bright__FastLofi__127.wav\u0000 D SERIES/06-00/input/tracks/08__KitchenLight__Light__FastLofi__123.wav\u0000 D SERIES/06-00/input/tracks/09__Unfold__Tense__FastLofi__142.wav\u0000 D SERIES/06-00/input/tracks/10__SettleDown__Cooldown__FastLofi__116.wav\u0000 M SERIES/06-30/concept.md\u0000 D SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png\u0000 D SERIES/06-30/input/thumbnail-draft-hip-20261024.png\u0000 D SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json\u0000 D SERIES/06-30/production/thumbnail-draft-hip-20261024.json\u0000 D SERIES/07-00/input/art-draft-2026-10-12.png\u0000 D SERIES/10-00/input/loop.mp4\u0000 D SERIES/10-00/input/shorts_original.mov\u0000 D SERIES/10-00/input/tracks/01__오전__Calm__Chillhop__85.wav\u0000 D SERIES/10-00/input/tracks/02__거울__Calm__Chillhop__87.wav\u0000 D SERIES/10-00/input/tracks/03__사진__Warm__Chillhop__90.wav\u0000 D SERIES/10-00/input/tracks/04__모니터__Focus__Chillhop__90.wav\u0000 D SERIES/10-00/input/tracks/05__집중__Deep__Chillhop__78.wav\u0000 D SERIES/10-00/input/tracks/06__알림__Alert__Chillhop__83.wav\u0000 D SERIES/10-00/input/tracks/07__잉크__Steady__Chillhop__85.wav\u0000 D SERIES/10-00/input/tracks/08__타이핑__Rhythm__Chillhop__88.wav\u0000 D SERIES/10-00/input/tracks/09__숨__Relief__Chillhop__85.wav\u0000 D SERIES/10-00/input/tracks/10__환기__Open__Chillhop__80.wav\u0000 D SERIES/10-00/input/tracks/11__회의__Routine__Chillhop__87.wav\u0000 D SERIES/10-00/input/tracks/12__다시__Return__Chillhop__82.wav\u0000 D SERIES/10-00/input/tracks/13__Tab__Click__Chillhop__85.wav\u0000 D SERIES/10-00/input/tracks/14__TickTock__Time__Chillhop__80.wav\u0000 D SERIES/10-00/input/tracks/15__Hunger__Sparse__Chillhop__78.wav\u0000 D SERIES/10-00/input/소예웃음_반복20.wav\u0000 D SERIES/11-00/input/loop.mp4\u0000 D SERIES/11-00/input/tracks/01__경계__Threshold__LofiHiphop__82.wav\u0000 D SERIES/11-00/input/tracks/02__멀어져__Fade__LofiHiphop__80.wav\u0000 D SERIES/11-00/input/tracks/03__리듬__Rhythm__LofiHiphop__78.wav\u0000 D SERIES/11-00/input/tracks/04__에이전트__Agent__LofiHiphop__76.wav\u0000 D SERIES/11-00/input/tracks/05__초점__Focus__LofiHiphop__75.wav\u0000 D SERIES/11-00/input/tracks/06__망각__Forget__LofiHiphop__74.wav\u0000 D SERIES/11-00/input/tracks/07__몰입__Flow__LofiHiphop__73.wav\u0000 D SERIES/11-00/input/tracks/08__하나__One__LofiHiphop__72.wav\u0000 D SERIES/11-00/input/tracks/09__정지__Freeze__LofiHiphop__70.wav\u0000 D SERIES/11-00/input/tracks/10__터널__Tunnel__LofiHiphop__72.wav\u0000 D SERIES/11-00/input/tracks/11__어딘가__Somewhere__LofiHiphop__74.wav\u0000 D SERIES/11-00/input/tracks/12__신호__Signal__LofiHiphop__78.wav\u0000 D SERIES/11-00/input/tracks/13__꼬르륵__Growl__LofiHiphop__82.wav\u0000 D SERIES/11-00/input/tracks/14__고개__LookUp__LofiHiphop__85.wav\u0000 D SERIES/11-00/input/tracks/15__벌써__Already__LofiHiphop__88.wav\u0000 D SERIES/12-00/input/loop.mp4\u0000 D SERIES/12-00/input/shorts.mov\u0000 D SERIES/12-00/input/tracks/01__한낮__Haze__Afro-Drill__105.wav\u0000 D SERIES/12-00/input/tracks/02__먼지__Dust__Afro-Drill__105.wav\u0000 D SERIES/12-00/input/tracks/03__볕__Sunlit__Afropiano__108.wav\u0000 D SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav\u0000 D SERIES/12-00/input/tracks/05__갈증__Thirst__Afro-Drill__104.wav\u0000 D SERIES/12-00/input/tracks/06__낮 그림자__Noon Shadow__Afro-Drill__107.wav\u0000 D SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav\u0000 D SERIES/12-00/input/tracks/08__차가워진__Cold At Noon__Afropiano__112.wav\u0000 D SERIES/12-00/input/tracks/09__맥박__Pulse__Afro-Drill__106.wav\u0000 D SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav\u0000 D SERIES/12-00/input/tracks/11__그늘__Shade__Afro-Drill__100.wav\u0000 D SERIES/12-00/input/tracks/12__기다림__Waiting__Afropiano__105.wav\u0000 D SERIES/12-00/input/tracks/13__정오의 균열__Midday Crack__Afro-Drill__110.wav\u0000 D SERIES/12-00/input/tracks/14__설렘__Flutter__Afro-Drill__104.wav\u0000 D SERIES/12-00/input/tracks/15__온기__Warmth__Afro-Drill__107.wav\u0000 D SERIES/12-00/input/tracks/16__미열__Low Fever__Afropiano__103.wav\u0000 D SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav\u0000 D SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav\u0000 D SERIES/12-00/input/tracks/19__폭발__Burst__Afro-Drill__111.wav\u0000 D SERIES/12-00/input/tracks/20__고요__Stillness__Afropiano__100.wav\u0000 D SERIES/14-00/input/loop.mp4\u0000 D SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3\u0000 D SERIES/14-00/input/tracks/02__얼음__Groovy__Pop-RnB__90.mp3\u0000 D SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3\u0000 D SERIES/14-00/input/tracks/04__온기__Warm__Soft-RnB__70.mp3\u0000 D SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3\u0000 D SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3\u0000 D SERIES/14-00/input/tracks/07__그늘__Chill__Soft-RnB__72.mp3\u0000 D SERIES/14-00/input/tracks/08__구름__Chill__Soft-RnB__76.mp3\u0000 D SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3\u0000 D SERIES/14-00/input/tracks/10__깸__Chill__Alt-RnB__74.mp3\u0000 D SERIES/15-00/input/tracks/01__오렌지 드라이브__Orange Drive__Urban Neo-Soul Ballad__120.wav\u0000 D SERIES/15-00/input/tracks/02__라디오를 켜고__Turn on the Radio__Modern R&B__120.wav\u0000 D SERIES/15-00/input/tracks/03__봄 냄새__Smell of Spring__Bouncy Neo-Soul__114.wav\u0000 D SERIES/15-00/input/tracks/04__오늘 드라이브__Drive Today__Intimate R&B Ballad__118.wav\u0000 D SERIES/15-00/input/tracks/05__달려가는 중__Still On My Way__Urban Neo-Soul__120.wav\u0000 D SERIES/15-00/input/tracks/06__창문 내려__Window Down__Funky Neo-Soul R&B__120.wav\u0000 D SERIES/15-00/input/tracks/07__잠깐 도망가자__Let's Get Away__Funky Contemporary R&B__120.wav\u0000 D SERIES/15-00/input/tracks/08__그레이 투 그린__Grey To Green__Korean Neo-Soul R&B__110.wav\u0000 D SERIES/15-00/input/tracks/09__같은 재생목록__Playlist__Up-tempo Funky Neo-Soul__120.wav\u0000 D SERIES/15-00/input/tracks/10__기울어진 햇살__Slanted Sun__Bouncy Neo-Soul__112.wav\u0000 D SERIES/15-00/input/tracks/11__곁에서__Passenger__Bouncy Neo-Soul__110.wav\u0000 D SERIES/15-00/input/tracks/12__체리, 소다, 봄길__Cherry, Soda, Spring Road__Doo-Wop Neo-Soul__120.wav\u0000 D SERIES/15-00/input/tracks/13__밝은 공기 냄새__Bright Air__Indie Neo-Soul__120.wav\u0000 D SERIES/15-00/input/tracks/14__함께__With You__Modern Neo-Soul R&B__118.wav\u0000 D SERIES/15-00/input/tracks/15__잔디에 누워__Lying on the Grass__Urban Neo-Soul__120.wav\u0000 D SERIES/15-00/input/tracks/16__믹스테잎__Mixtape__Lo-fi Doo-Wop Pop__122.wav\u0000 D SERIES/16-00/input/loop.mp4\u0000 D SERIES/16-00/input/tracks/01__가도되나요__Weary__SoftPopRock__160.mp3\u0000 D SERIES/16-00/input/tracks/02__눈치__Fluttering__JRock__160.mp3\u0000 D SERIES/16-00/input/tracks/03__7교시__Restless__PunkRock__84.mp3\u0000 D SERIES/16-00/input/tracks/04__공강__Lazy__IndieRock__148.mp3\u0000 D SERIES/16-00/input/tracks/05__기다림__Serene__AcousticRock__98.mp3\u0000 D SERIES/16-00/input/tracks/06__침묵__Anxious__AltRock__160.mp3\u0000 D SERIES/16-00/input/tracks/07__신호__Driven__GarageRock__126.mp3\u0000 D SERIES/16-00/input/tracks/08__컨펌__Playful__BrightPop__130.mp3\u0000 D SERIES/16-00/input/tracks/09__서랍__Hopeful__PopBallad__108.mp3\u0000 D SERIES/18-00/input/loop.mp4\u0000 D SERIES/18-00/input/tracks/01__Exit__Liberation__Funk-Pop__115.mp3\u0000 D SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3\u0000 D SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3\u0000 D SERIES/18-00/input/tracks/04__차창밖__Contemplation__Lo-fi-Blues__85.mp3\u0000 D SERIES/18-00/input/tracks/05__쪽잠__Drowsy__Lo-fi__78.mp3\u0000 D SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3\u0000 D SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3\u0000 D SERIES/18-00/input/tracks/08__숨__Reflection__Soft-RnB__70.mp3\u0000 D SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3\u0000 D SERIES/21-00/input/loop.mp4\u0000 D SERIES/21-00/input/shorts/PM0900_1_canva.mp4\u0000 D SERIES/21-00/input/shorts/PM0900_1_original.mov\u0000 D SERIES/21-00/input/shorts/PM0900_1_x2.mov\u0000 D SERIES/21-00/input/shorts/PM0900_2_canva.mp4\u0000 D SERIES/21-00/input/shorts/PM0900_2_loop4x.mov\u0000 D SERIES/21-00/input/shorts/PM0900_2_original.mov\u0000 D SERIES/21-00/input/tracks/01__문__설렘__CityPop-Ballad__75.wav\u0000 D SERIES/21-00/input/tracks/02__밤산책__고요__CityPop__90.wav\u0000 D SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav\u0000 D SERIES/21-00/input/tracks/04__가로등__그리움__CityPop-Ballad__72.wav\u0000 D SERIES/21-00/input/tracks/05__한강__관조__CityPop__88.wav\u0000 D SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav\u0000 D SERIES/21-00/input/tracks/07__공원__관조__CityPop-Ballad__68.wav\u0000 D SERIES/21-00/input/tracks/08__창가__온기__NeoSoul__85.wav\u0000 D SERIES/21-00/input/tracks/09__서울의밤__압도__CityPop-Funk__105.wav\u0000 D SERIES/21-00/input/tracks/10__방__안도__CityPop-Ballad__65.wav\u0000 D SERIES/22-00/input/loop.mp4\u0000 D SERIES/22-00/input/loop_preprocessed.mp4\u0000 D SERIES/22-00/input/tracks/01__스위치__Off__Chill R&B__78.wav\u0000 D SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav\u0000 D SERIES/22-00/input/tracks/03__조명__Lights__Acoustic Chill R&B__77.wav\u0000 D SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav\u0000 D SERIES/22-00/input/tracks/05__야경__Nightscape__Chill R&B__74.wav\u0000 D SERIES/22-00/input/tracks/06__목욕__Bath__Chill R&B__73.wav\u0000 D SERIES/22-00/input/tracks/07__향기__Scent__Chill R&B__72.wav\u0000 D SERIES/22-00/input/tracks/08__체온__Warm__Acoustic Chill R&B__71.wav\u0000 D SERIES/22-00/input/tracks/09__풀어져가__Let It Unwind__Ambient Slow Jam__70.wav\u0000 D SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav\u0000 D SERIES/22-00/input/tracks/11__일기__Diary__Acoustic Chill R&B__75.wav\u0000 D SERIES/22-00/input/tracks/12__창문__Window__Ambient Slow Jam__66.wav\u0000 D SERIES/22-00/input/tracks/13__달빛 커튼__Moonlit Curtain__Chill R&B__67.wav\u0000 D SERIES/22-00/input/tracks/14__무게__Weight__Acoustic Chill R&B__66.wav\u0000 D SERIES/22-00/input/tracks/15__비__Rain__Ambient Slow Jam__65.wav\u0000 D SERIES/22-00/input/tracks/16__이불__Blanket__Chill R&B__64.wav\u0000 D SERIES/22-00/input/tracks/17__베개__Pillow__Acoustic Chill R&B__63.wav\u0000 D SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav\u0000 D SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav\u0000 D SERIES/22-00/input/tracks/20__눈을 감으면__When I Close My Eyes__Ambient Slow Jam__60.wav\u0000 D SERIES/Single/alleyway/alleyway.mp4\u0000 D SERIES/Single/alleyway/loop.mp4\u0000 D SERIES/Single/alleyway/single_crossfade.mp4\u0000 D SERIES/Single/alleyway/골목.mp3\u0000?? .ai/cleanup/2026-10-24-controller-post-cleanup.json\u0000?? .ai/cleanup/2026-10-24-controller-preflight.json\u0000?? .ai/cleanup/2026-10-24-doc-state-gates.json\u0000?? .ai/cleanup/2026-10-24-state-after-cleanup.json\u0000?? .ai/cleanup/2026-10-24-system-data-chrome-clones.json\u0000?? .ai/cleanup/2026-10-24-system-data-j8-du.json\u0000?? .ai/cleanup/2026-10-24-system-data-private-var.json\u0000?? .ai/cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl\u0000?? .ai/cleanup/2026-10-24-wavvy-cleanup-apply.json\u0000?? .ai/cleanup/2026-10-24-wavvy-cleanup-dry-run.json\u0000?? .ai/cleanup/2026-10-24-wavvy-cleanup-post-apply-check.json\u0000?? .ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json\u0000?? .ai/cleanup/2026-10-24-wavvy-media-inventory.json\u0000?? .ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json\u0000?? .ai/cleanup/execute-2026-10-24.py\u0000?? .ai/plans/2026-10-24-wavvy-media-cleanup.md\u0000?? .ai/reviews/2026-10-24-wavvy-media-cleanup-review.md\u0000?? SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png\u0000?? SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json\u0000",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "du",
+        "-x",
+        "-k",
+        "-d1",
+        "/private/var/folders/zz"
+      ],
+      "timeout_seconds": 52,
+      "timed_out": false,
+      "exit_code": 1,
+      "elapsed_seconds": 0.02,
+      "stdout": "0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000012m00008n\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000b000002r\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000010r000086\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000150000098\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000012800008k\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000011h00008c\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000003000000r\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000013800008t\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000tm00006n\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000010w000087\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000108000082\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000016h00009m\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000114000089\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000014r000096\n468\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000144000091\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000012r00008p\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000012400008j\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000015m00009d\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000010h000084\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000016c00009l\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000yw00007q\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w\n4\t/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000\n0\t/private/var/folders/zz/zyxvpxvq6csfxvn_n000011w00008g\n472\t/private/var/folders/zz\n",
+      "stderr": "du: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012m00008n/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012m00008n/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b000002r/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b000002r/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010r000086/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010r000086/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d/0: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d/C: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000150000098/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000150000098/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012800008k/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012800008k/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000011h00008c/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000011h00008c/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000003000000r/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000003000000r/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000013800008t/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000013800008t/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000tm00006n/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000tm00006n/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010w000087/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010w000087/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k/0/com.apple.nsurlsessiond: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000108000082/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000108000082/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000016h00009m/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000016h00009m/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000114000089/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000114000089/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000014r000096/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000014r000096/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.ScreenTimeAgent: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.lockoutagent: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.Spotlight: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/dmd: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.nsurlsessiond: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.routined/dv: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000144000091/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000144000091/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012r00008p/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012r00008p/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012400008j/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000012400008j/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000015m00009d/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000015m00009d/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010h000084/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000010h000084/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000016c00009l/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000016c00009l/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000yw00007q/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000yw00007q/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.revisiond/com.apple.revisiond.temp: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.Spotlight: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.LaunchServices.dv: Operation not permitted\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000011w00008g/T: Permission denied\ndu: /private/var/folders/zz/zyxvpxvq6csfxvn_n000011w00008g/C: Permission denied\n",
+      "attempts": 1,
+      "retried": false
+    }
+  ],
+  "measurements_descending": [
+    {
+      "path": "/private/var/db",
+      "du_allocated_kib": 3713012,
+      "du_allocated_bytes": 3802124288
+    },
+    {
+      "path": "/private/var/log",
+      "du_allocated_kib": 115004,
+      "du_allocated_bytes": 117764096
+    },
+    {
+      "path": "/private/var/protected",
+      "du_allocated_kib": 51676,
+      "du_allocated_bytes": 52916224
+    },
+    {
+      "path": "/private/var/logs",
+      "du_allocated_kib": 3936,
+      "du_allocated_bytes": 4030464
+    },
+    {
+      "path": "/private/etc",
+      "du_allocated_kib": 1620,
+      "du_allocated_bytes": 1658880
+    },
+    {
+      "path": "/private/var/run",
+      "du_allocated_kib": 36,
+      "du_allocated_bytes": 36864
+    },
+    {
+      "path": "/private/var/tmp",
+      "du_allocated_kib": 12,
+      "du_allocated_bytes": 12288
+    },
+    {
+      "path": "/private/var/sntpd",
+      "du_allocated_kib": 4,
+      "du_allocated_bytes": 4096
+    },
+    {
+      "path": "/private/var/at",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/boot",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/containers",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/dextcores",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/empty",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/lib",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/mail",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/msgs",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/netboot",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/networkd",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/rpc",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/select",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/spool",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    },
+    {
+      "path": "/private/var/yp",
+      "du_allocated_kib": 0,
+      "du_allocated_bytes": 0
+    }
+  ],
+  "measured_kib_sum_excluding_other_workers_scopes": 3885300,
+  "requested_paths_without_stdout_measurement": [
+    "/private/var/OOPJit",
+    "/private/var/agentx",
+    "/private/var/audit",
+    "/private/var/backups",
+    "/private/var/dirs_cleaner",
+    "/private/var/install",
+    "/private/var/jabberd",
+    "/private/var/ma",
+    "/private/var/root"
+  ],
+  "permission_limitations": [
+    "du: /private/etc/cups/certs: Permission denied",
+    "du: /private/var/OOPJit: Operation not permitted",
+    "du: /private/var/agentx: Permission denied",
+    "du: /private/var/at/tabs: Permission denied",
+    "du: /private/var/at/tmp: Permission denied",
+    "du: /private/var/audit: Permission denied",
+    "du: /private/var/backups: Permission denied",
+    "du: /private/var/db/appinstalld: Operation not permitted",
+    "du: /private/var/db/diskimagesiod: Permission denied",
+    "du: /private/var/db/ExtensibleSSO/Configuration: Operation not permitted",
+    "du: /private/var/db/Spotlight: Operation not permitted",
+    "du: /private/var/db/locationd/Library: Permission denied",
+    "du: /private/var/db/modelmanagerd: Permission denied",
+    "du: /private/var/db/terminus: Permission denied",
+    "du: /private/var/db/sysdiagnose/com.apple.sysdiagnose: Operation not permitted",
+    "du: /private/var/db/SoC: Operation not permitted",
+    "du: /private/var/db/DumpPanic: Operation not permitted",
+    "du: /private/var/db/analyticsd: Permission denied",
+    "du: /private/var/db/AppleIntelligencePlatform: Operation not permitted",
+    "du: /private/var/db/rmd: Permission denied",
+    "du: /private/var/db/knowledgegraphd: Permission denied",
+    "du: /private/var/db/coreml: Permission denied",
+    "du: /private/var/db/nsurlsessiond: Permission denied",
+    "du: /private/var/db/softwareupdate/Library: Permission denied",
+    "du: /private/var/db/fpsd: Permission denied",
+    "du: /private/var/db/hidd: Permission denied",
+    "du: /private/var/db/installcoordinationd: Operation not permitted",
+    "du: /private/var/db/Spotlight-V100: Operation not permitted",
+    "du: /private/var/db/geod: Permission denied",
+    "du: /private/var/db/oah: Operation not permitted",
+    "du: /private/var/db/reportmemoryexception: Permission denied",
+    "du: /private/var/db/Sandbox: Permission denied",
+    "du: /private/var/db/ctkd: Permission denied",
+    "du: /private/var/db/lockdown: Operation not permitted",
+    "du: /private/var/db/biome: Permission denied",
+    "du: /private/var/db/KernelExtensionManagement/Staging: Operation not permitted",
+    "du: /private/var/db/datadetectors: Permission denied",
+    "du: /private/var/db/cmiodalassistants: Permission denied",
+    "du: /private/var/db/DifferentialPrivacy: Operation not permitted",
+    "du: /private/var/db/assetsubscriptiond/StagingLogs: Permission denied",
+    "du: /private/var/db/assetsubscriptiond/history: Permission denied",
+    "du: /private/var/db/com.apple.xpc.roleaccountd.staging: Permission denied",
+    "du: /private/var/db/dslocal/nodes/Default: Permission denied",
+    "du: /private/var/db/com.apple.findmy.findmybeaconingd: Permission denied",
+    "du: /private/var/db/sudo: Permission denied",
+    "du: /private/var/db/nearbyd: Permission denied",
+    "du: /private/var/db/MobileIdentityService: Operation not permitted",
+    "du: /private/var/db/mmaintenanced: Permission denied",
+    "du: /private/var/db/dhcpclient: Permission denied",
+    "du: /private/var/db/timed: Permission denied",
+    "du: /private/var/db/applepay: Permission denied",
+    "du: /private/var/db/SystemKeys: Operation not permitted",
+    "du: /private/var/db/darwindaemon: Permission denied",
+    "du: /private/var/db/audiomxd/Library: Permission denied",
+    "du: /private/var/db/securityagent: Permission denied",
+    "du: /private/var/db/accessoryupdater: Permission denied",
+    "du: /private/var/db/searchparty: Operation not permitted",
+    "du: /private/var/db/CoreDuet/Knowledge: Operation not permitted",
+    "du: /private/var/db/CoreDuet/People/Feedback/CNA: Permission denied",
+    "du: /private/var/db/CoreDuet/Caches: Permission denied",
+    "du: /private/var/db/ConfigurationProfiles/Store: Operation not permitted",
+    "du: /private/var/db/fseventsd: Permission denied",
+    "du: /private/var/db/caches/opendirectory: Permission denied",
+    "du: /private/var/dirs_cleaner: Permission denied",
+    "du: /private/var/install: Permission denied",
+    "du: /private/var/jabberd: Permission denied",
+    "du: /private/var/lib/postfix: Permission denied",
+    "du: /private/var/ma: Permission denied",
+    "du: /private/var/networkd/Library: Permission denied",
+    "du: /private/var/networkd/db: Operation not permitted",
+    "du: /private/var/protected/xprotect/db: Operation not permitted",
+    "du: /private/var/protected/trustd/private: Operation not permitted",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000059: Permission denied",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000106: Permission denied",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000018: Permission denied",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000116: Permission denied",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA000000CD: Permission denied",
+    "du: /private/var/protected/sfanalytics/FFFFEEEE-DDDD-CCCC-BBBB-AAAA000000F8: Permission denied",
+    "du: /private/var/root: Permission denied",
+    "du: /private/var/run/mds: Permission denied",
+    "du: /private/var/spool/mqueue: Permission denied",
+    "du: /private/var/spool/postfix/saved: Permission denied",
+    "du: /private/var/spool/postfix/trace: Permission denied",
+    "du: /private/var/spool/postfix/defer: Permission denied",
+    "du: /private/var/spool/postfix/flush: Permission denied",
+    "du: /private/var/spool/postfix/deferred: Permission denied",
+    "du: /private/var/spool/postfix/corrupt: Permission denied",
+    "du: /private/var/spool/postfix/public: Permission denied",
+    "du: /private/var/spool/postfix/private: Permission denied",
+    "du: /private/var/spool/postfix/incoming: Permission denied",
+    "du: /private/var/spool/postfix/active: Permission denied",
+    "du: /private/var/spool/postfix/maildrop: Permission denied",
+    "du: /private/var/spool/postfix/hold: Permission denied",
+    "du: /private/var/spool/postfix/bounce: Permission denied",
+    "du: /private/var/spool/cups: Permission denied"
+  ],
+  "unmeasured_scope": [
+    "/private/var/folders/j8: assigned to another worker, not scanned by this worker.",
+    "Unreadable descendants in /private/var, /private/etc and /private/var/folders/zz are unknown; raw permission errors retained.",
+    "APFS snapshots, shared/clone storage and macOS System Data categorization are not inferred from du."
+  ],
+  "additional_account_candidates_without_size": [],
+  "size_interpretation": "du -sk reports allocated KiB visible to the process; not a proof of uniquely reclaimable physical space or macOS System Data categorization.",
+  "finished_at_utc": "2026-10-24T02:39:39.479286+00:00",
+  "apfs_parsed": {
+    "Containers": [
+      {
+        "APFSContainerUUID": "D01336EA-D513-4105-A6EC-3218E3BF5AEA",
+        "CapacityCeiling": 524288000,
+        "CapacityFree": 504233984,
+        "ContainerReference": "disk1",
+        "DesignatedPhysicalStore": "disk0s1",
+        "PhysicalStores": [
+          {
+            "DeviceIdentifier": "disk0s1",
+            "DiskUUID": "7C4A7A1E-5B27-46FA-AEF7-D5F28670114D",
+            "Size": 524288000
+          }
+        ],
+        "Volumes": [
+          {
+            "APFSVolumeUUID": "5BC0B631-8EE9-4560-8348-F17A3E288B69",
+            "CapacityInUse": 5906432,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk1s1",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "iSCPreboot",
+            "Roles": [
+              "Preboot"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "ADF73E1A-AFE5-499E-8815-D9295A67FF1C",
+            "CapacityInUse": 6311936,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk1s2",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "xART",
+            "Roles": [
+              "xART"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "0256C838-BA1B-4BD9-81C0-BC8E3A68F81F",
+            "CapacityInUse": 2859008,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk1s3",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Hardware",
+            "Roles": [
+              "Hardware"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "006DBEFB-2B3F-48A3-8B0A-3A8459C2B71D",
+            "CapacityInUse": 20480,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk1s4",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Recovery",
+            "Roles": [
+              "Recovery"
+            ]
+          }
+        ]
+      },
+      {
+        "APFSContainerUUID": "E85D94BD-5BDF-48DB-B04B-F5A8216AD313",
+        "CapacityCeiling": 5368664064,
+        "CapacityFree": 3036454912,
+        "ContainerReference": "disk2",
+        "DesignatedPhysicalStore": "disk0s3",
+        "PhysicalStores": [
+          {
+            "DeviceIdentifier": "disk0s3",
+            "DiskUUID": "90E3E290-AC26-4083-B88A-4AB4D991277B",
+            "Size": 5368664064
+          }
+        ],
+        "Volumes": [
+          {
+            "APFSVolumeUUID": "A5D187E2-4016-4B16-9967-D07BF7B1A0FB",
+            "CapacityInUse": 2310987776,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk2s1",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Recovery",
+            "Roles": [
+              "Recovery"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "0479DF7D-08A6-4926-9966-CBFC1C5650ED",
+            "CapacityInUse": 1474560,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk2s2",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Update",
+            "Roles": [
+              "Update"
+            ]
+          }
+        ]
+      },
+      {
+        "APFSContainerUUID": "9EAD686F-7E36-4D6E-BD0B-6B1764172D7D",
+        "CapacityCeiling": 994662584320,
+        "CapacityFree": 54314311680,
+        "ContainerReference": "disk3",
+        "DesignatedPhysicalStore": "disk0s2",
+        "PhysicalStores": [
+          {
+            "DeviceIdentifier": "disk0s2",
+            "DiskUUID": "95341A5D-C0CD-4770-B3A7-601045E9E271",
+            "Size": 994662584320
+          }
+        ],
+        "Volumes": [
+          {
+            "APFSVolumeUUID": "D707B653-A9C6-4620-83CA-B6EEAF2F7E33",
+            "CapacityInUse": 12571185152,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s1",
+            "Encryption": true,
+            "FileVault": true,
+            "Locked": false,
+            "Name": "Macintosh HD",
+            "Roles": [
+              "System"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "C3F24E08-9EAE-49A1-B4E7-8FD036B74521",
+            "CapacityInUse": 10803036160,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s2",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Preboot",
+            "Roles": [
+              "Preboot"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "A4289B7E-1500-4AB9-84FC-BF6BF4DBA2F9",
+            "CapacityInUse": 2607112192,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s3",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Recovery",
+            "Roles": [
+              "Recovery"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "BA2ED576-78C7-44BB-BB22-7C7299B4E6CD",
+            "CapacityInUse": 7274496,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s4",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "Update",
+            "Roles": [
+              "Update"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "A685C7E7-D7C4-4C4E-B678-E9093155F059",
+            "CapacityInUse": 906636455936,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s5",
+            "Encryption": true,
+            "FileVault": true,
+            "Locked": false,
+            "Name": "Macintosh HD - Data",
+            "Roles": [
+              "Data"
+            ]
+          },
+          {
+            "APFSVolumeUUID": "35228193-3DD6-4EBF-B69B-E7119AA50FC5",
+            "CapacityInUse": 7516524544,
+            "CapacityQuota": 0,
+            "CapacityReserve": 0,
+            "CryptoMigrationOn": false,
+            "DeviceIdentifier": "disk3s6",
+            "Encryption": false,
+            "FileVault": false,
+            "Locked": false,
+            "Name": "VM",
+            "Roles": [
+              "VM"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "apfs_containers_summary": [
+    {
+      "ContainerReference": "disk1",
+      "APFSContainerUUID": "D01336EA-D513-4105-A6EC-3218E3BF5AEA",
+      "CapacityCeiling": 524288000,
+      "CapacityFree": 504233984,
+      "DesignatedPhysicalStore": "disk0s1",
+      "Volumes": [
+        {
+          "DeviceIdentifier": "disk1s1",
+          "Name": "iSCPreboot",
+          "Roles": [
+            "Preboot"
+          ],
+          "CapacityInUse": 5906432,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "5BC0B631-8EE9-4560-8348-F17A3E288B69"
+        },
+        {
+          "DeviceIdentifier": "disk1s2",
+          "Name": "xART",
+          "Roles": [
+            "xART"
+          ],
+          "CapacityInUse": 6311936,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "ADF73E1A-AFE5-499E-8815-D9295A67FF1C"
+        },
+        {
+          "DeviceIdentifier": "disk1s3",
+          "Name": "Hardware",
+          "Roles": [
+            "Hardware"
+          ],
+          "CapacityInUse": 2859008,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "0256C838-BA1B-4BD9-81C0-BC8E3A68F81F"
+        },
+        {
+          "DeviceIdentifier": "disk1s4",
+          "Name": "Recovery",
+          "Roles": [
+            "Recovery"
+          ],
+          "CapacityInUse": 20480,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "006DBEFB-2B3F-48A3-8B0A-3A8459C2B71D"
+        }
+      ]
+    },
+    {
+      "ContainerReference": "disk2",
+      "APFSContainerUUID": "E85D94BD-5BDF-48DB-B04B-F5A8216AD313",
+      "CapacityCeiling": 5368664064,
+      "CapacityFree": 3036454912,
+      "DesignatedPhysicalStore": "disk0s3",
+      "Volumes": [
+        {
+          "DeviceIdentifier": "disk2s1",
+          "Name": "Recovery",
+          "Roles": [
+            "Recovery"
+          ],
+          "CapacityInUse": 2310987776,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "A5D187E2-4016-4B16-9967-D07BF7B1A0FB"
+        },
+        {
+          "DeviceIdentifier": "disk2s2",
+          "Name": "Update",
+          "Roles": [
+            "Update"
+          ],
+          "CapacityInUse": 1474560,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "0479DF7D-08A6-4926-9966-CBFC1C5650ED"
+        }
+      ]
+    },
+    {
+      "ContainerReference": "disk3",
+      "APFSContainerUUID": "9EAD686F-7E36-4D6E-BD0B-6B1764172D7D",
+      "CapacityCeiling": 994662584320,
+      "CapacityFree": 54314311680,
+      "DesignatedPhysicalStore": "disk0s2",
+      "Volumes": [
+        {
+          "DeviceIdentifier": "disk3s1",
+          "Name": "Macintosh HD",
+          "Roles": [
+            "System"
+          ],
+          "CapacityInUse": 12571185152,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "D707B653-A9C6-4620-83CA-B6EEAF2F7E33"
+        },
+        {
+          "DeviceIdentifier": "disk3s2",
+          "Name": "Preboot",
+          "Roles": [
+            "Preboot"
+          ],
+          "CapacityInUse": 10803036160,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "C3F24E08-9EAE-49A1-B4E7-8FD036B74521"
+        },
+        {
+          "DeviceIdentifier": "disk3s3",
+          "Name": "Recovery",
+          "Roles": [
+            "Recovery"
+          ],
+          "CapacityInUse": 2607112192,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "A4289B7E-1500-4AB9-84FC-BF6BF4DBA2F9"
+        },
+        {
+          "DeviceIdentifier": "disk3s4",
+          "Name": "Update",
+          "Roles": [
+            "Update"
+          ],
+          "CapacityInUse": 7274496,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "BA2ED576-78C7-44BB-BB22-7C7299B4E6CD"
+        },
+        {
+          "DeviceIdentifier": "disk3s5",
+          "Name": "Macintosh HD - Data",
+          "Roles": [
+            "Data"
+          ],
+          "CapacityInUse": 906636455936,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "A685C7E7-D7C4-4C4E-B678-E9093155F059"
+        },
+        {
+          "DeviceIdentifier": "disk3s6",
+          "Name": "VM",
+          "Roles": [
+            "VM"
+          ],
+          "CapacityInUse": 7516524544,
+          "CapacityReserve": 0,
+          "CapacityQuota": 0,
+          "APFSVolumeUUID": "35228193-3DD6-4EBF-B69B-E7119AA50FC5"
+        }
+      ]
+    }
+  ],
+  "volume_interpretation": "APFS volume/container usage and df availability are storage accounting observations, not macOS System Data category totals; do not sum snapshots/shared extents as unique bytes.",
+  "git_cleanup_scope_comparison": {
+    "at_utc": "2026-10-24T02:39:05.846672+00:00",
+    "inventory_sha256": {
+      ".ai/cleanup/2026-10-24-wavvy-media-inventory.json": "f78c0a9e9004050c2566cd5b7f5353fc0259372e5120d73812164598f1977517",
+      ".ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json": "d30b1421d71acd30c544e528e0fd5886d27446f037cef2c779c649768703d578"
+    },
+    "manifest_candidate_count": 1298,
+    "apply_deleted_count": 1298,
+    "apply_exactly_matches_two_manifests": true,
+    "git_status_records": [
+      {
+        "status": " M",
+        "path": ".ai/HANDOFF.md"
+      },
+      {
+        "status": " M",
+        "path": ".ai/SESSION.md"
+      },
+      {
+        "status": " M",
+        "path": ".ai/state.json"
+      },
+      {
+        "status": " M",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/03__잔향__Hazy__AltR&B__88.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/05__습기__Sentimental__Acoustic-RnB__88.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/06__적막__Melancholic__RnB__68.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/07__문틈__Hopeful__RnB__82.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/08__빗줄기__Melancholic__RnB__85.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/01__ConcreteMorning__Driven__FastLofi__124.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/02__StaticLane__Focused__FastLofi__118.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/03__Signal__Rising__FastLofi__126.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/04__BlueCurb__Groovy__FastLofi__122.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/05__Iron__Powerful__FastLofi__128.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/06__Moving__Peak__FastLofi__130.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/07__WakeUp__Bright__FastLofi__127.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/08__KitchenLight__Light__FastLofi__123.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/09__Unfold__Tense__FastLofi__142.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-00/input/tracks/10__SettleDown__Cooldown__FastLofi__116.wav"
+      },
+      {
+        "status": " M",
+        "path": "SERIES/06-30/concept.md"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024.png"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/07-00/input/art-draft-2026-10-12.png"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/shorts_original.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/01__오전__Calm__Chillhop__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/02__거울__Calm__Chillhop__87.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/03__사진__Warm__Chillhop__90.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/04__모니터__Focus__Chillhop__90.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/05__집중__Deep__Chillhop__78.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/06__알림__Alert__Chillhop__83.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/07__잉크__Steady__Chillhop__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/08__타이핑__Rhythm__Chillhop__88.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/09__숨__Relief__Chillhop__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/10__환기__Open__Chillhop__80.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/11__회의__Routine__Chillhop__87.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/12__다시__Return__Chillhop__82.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/13__Tab__Click__Chillhop__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/14__TickTock__Time__Chillhop__80.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/tracks/15__Hunger__Sparse__Chillhop__78.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/10-00/input/소예웃음_반복20.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/01__경계__Threshold__LofiHiphop__82.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/02__멀어져__Fade__LofiHiphop__80.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/03__리듬__Rhythm__LofiHiphop__78.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/04__에이전트__Agent__LofiHiphop__76.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/05__초점__Focus__LofiHiphop__75.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/06__망각__Forget__LofiHiphop__74.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/07__몰입__Flow__LofiHiphop__73.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/08__하나__One__LofiHiphop__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/09__정지__Freeze__LofiHiphop__70.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/10__터널__Tunnel__LofiHiphop__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/11__어딘가__Somewhere__LofiHiphop__74.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/12__신호__Signal__LofiHiphop__78.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/13__꼬르륵__Growl__LofiHiphop__82.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/14__고개__LookUp__LofiHiphop__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/11-00/input/tracks/15__벌써__Already__LofiHiphop__88.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/shorts.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/01__한낮__Haze__Afro-Drill__105.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/02__먼지__Dust__Afro-Drill__105.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/03__볕__Sunlit__Afropiano__108.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/05__갈증__Thirst__Afro-Drill__104.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/06__낮 그림자__Noon Shadow__Afro-Drill__107.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/08__차가워진__Cold At Noon__Afropiano__112.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/09__맥박__Pulse__Afro-Drill__106.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/11__그늘__Shade__Afro-Drill__100.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/12__기다림__Waiting__Afropiano__105.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/13__정오의 균열__Midday Crack__Afro-Drill__110.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/14__설렘__Flutter__Afro-Drill__104.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/15__온기__Warmth__Afro-Drill__107.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/16__미열__Low Fever__Afropiano__103.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/19__폭발__Burst__Afro-Drill__111.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/12-00/input/tracks/20__고요__Stillness__Afropiano__100.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/02__얼음__Groovy__Pop-RnB__90.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/04__온기__Warm__Soft-RnB__70.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/07__그늘__Chill__Soft-RnB__72.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/08__구름__Chill__Soft-RnB__76.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/14-00/input/tracks/10__깸__Chill__Alt-RnB__74.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/01__오렌지 드라이브__Orange Drive__Urban Neo-Soul Ballad__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/02__라디오를 켜고__Turn on the Radio__Modern R&B__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/03__봄 냄새__Smell of Spring__Bouncy Neo-Soul__114.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/04__오늘 드라이브__Drive Today__Intimate R&B Ballad__118.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/05__달려가는 중__Still On My Way__Urban Neo-Soul__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/06__창문 내려__Window Down__Funky Neo-Soul R&B__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/07__잠깐 도망가자__Let's Get Away__Funky Contemporary R&B__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/08__그레이 투 그린__Grey To Green__Korean Neo-Soul R&B__110.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/09__같은 재생목록__Playlist__Up-tempo Funky Neo-Soul__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/10__기울어진 햇살__Slanted Sun__Bouncy Neo-Soul__112.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/11__곁에서__Passenger__Bouncy Neo-Soul__110.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/12__체리, 소다, 봄길__Cherry, Soda, Spring Road__Doo-Wop Neo-Soul__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/13__밝은 공기 냄새__Bright Air__Indie Neo-Soul__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/14__함께__With You__Modern Neo-Soul R&B__118.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/15__잔디에 누워__Lying on the Grass__Urban Neo-Soul__120.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/15-00/input/tracks/16__믹스테잎__Mixtape__Lo-fi Doo-Wop Pop__122.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/01__가도되나요__Weary__SoftPopRock__160.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/02__눈치__Fluttering__JRock__160.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/03__7교시__Restless__PunkRock__84.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/04__공강__Lazy__IndieRock__148.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/05__기다림__Serene__AcousticRock__98.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/06__침묵__Anxious__AltRock__160.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/07__신호__Driven__GarageRock__126.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/08__컨펌__Playful__BrightPop__130.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/16-00/input/tracks/09__서랍__Hopeful__PopBallad__108.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/01__Exit__Liberation__Funk-Pop__115.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/04__차창밖__Contemplation__Lo-fi-Blues__85.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/05__쪽잠__Drowsy__Lo-fi__78.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/08__숨__Reflection__Soft-RnB__70.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_1_canva.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_1_original.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_1_x2.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_2_canva.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_2_loop4x.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/shorts/PM0900_2_original.mov"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/01__문__설렘__CityPop-Ballad__75.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/02__밤산책__고요__CityPop__90.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/04__가로등__그리움__CityPop-Ballad__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/05__한강__관조__CityPop__88.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/07__공원__관조__CityPop-Ballad__68.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/08__창가__온기__NeoSoul__85.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/09__서울의밤__압도__CityPop-Funk__105.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/21-00/input/tracks/10__방__안도__CityPop-Ballad__65.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/loop_preprocessed.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/01__스위치__Off__Chill R&B__78.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/03__조명__Lights__Acoustic Chill R&B__77.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/05__야경__Nightscape__Chill R&B__74.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/06__목욕__Bath__Chill R&B__73.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/07__향기__Scent__Chill R&B__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/08__체온__Warm__Acoustic Chill R&B__71.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/09__풀어져가__Let It Unwind__Ambient Slow Jam__70.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/11__일기__Diary__Acoustic Chill R&B__75.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/12__창문__Window__Ambient Slow Jam__66.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/13__달빛 커튼__Moonlit Curtain__Chill R&B__67.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/14__무게__Weight__Acoustic Chill R&B__66.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/15__비__Rain__Ambient Slow Jam__65.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/16__이불__Blanket__Chill R&B__64.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/17__베개__Pillow__Acoustic Chill R&B__63.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/22-00/input/tracks/20__눈을 감으면__When I Close My Eyes__Ambient Slow Jam__60.wav"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/Single/alleyway/alleyway.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/Single/alleyway/loop.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/Single/alleyway/single_crossfade.mp4"
+      },
+      {
+        "status": " D",
+        "path": "SERIES/Single/alleyway/골목.mp3"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-controller-post-cleanup.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-controller-preflight.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-doc-state-gates.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-state-after-cleanup.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-system-data-chrome-clones.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-system-data-j8-du.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-system-data-private-var.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-dry-run.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-post-apply-check.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-media-inventory.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json"
+      },
+      {
+        "status": "??",
+        "path": ".ai/cleanup/execute-2026-10-24.py"
+      },
+      {
+        "status": "??",
+        "path": ".ai/plans/2026-10-24-wavvy-media-cleanup.md"
+      },
+      {
+        "status": "??",
+        "path": ".ai/reviews/2026-10-24-wavvy-media-cleanup-review.md"
+      },
+      {
+        "status": "??",
+        "path": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png"
+      },
+      {
+        "status": "??",
+        "path": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json"
+      }
+    ],
+    "groups": {
+      "manifest_matched_tracked_deletions": [
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/03__잔향__Hazy__AltR&B__88.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/05__습기__Sentimental__Acoustic-RnB__88.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/06__적막__Melancholic__RnB__68.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/07__문틈__Hopeful__RnB__82.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/08__빗줄기__Melancholic__RnB__85.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/01__ConcreteMorning__Driven__FastLofi__124.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/02__StaticLane__Focused__FastLofi__118.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/03__Signal__Rising__FastLofi__126.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/04__BlueCurb__Groovy__FastLofi__122.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/05__Iron__Powerful__FastLofi__128.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/06__Moving__Peak__FastLofi__130.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/07__WakeUp__Bright__FastLofi__127.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/08__KitchenLight__Light__FastLofi__123.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/09__Unfold__Tense__FastLofi__142.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-00/input/tracks/10__SettleDown__Cooldown__FastLofi__116.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/07-00/input/art-draft-2026-10-12.png"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/shorts_original.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/01__오전__Calm__Chillhop__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/02__거울__Calm__Chillhop__87.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/03__사진__Warm__Chillhop__90.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/04__모니터__Focus__Chillhop__90.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/05__집중__Deep__Chillhop__78.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/06__알림__Alert__Chillhop__83.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/07__잉크__Steady__Chillhop__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/08__타이핑__Rhythm__Chillhop__88.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/09__숨__Relief__Chillhop__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/10__환기__Open__Chillhop__80.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/11__회의__Routine__Chillhop__87.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/12__다시__Return__Chillhop__82.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/13__Tab__Click__Chillhop__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/14__TickTock__Time__Chillhop__80.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/tracks/15__Hunger__Sparse__Chillhop__78.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/10-00/input/소예웃음_반복20.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/01__경계__Threshold__LofiHiphop__82.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/02__멀어져__Fade__LofiHiphop__80.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/03__리듬__Rhythm__LofiHiphop__78.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/04__에이전트__Agent__LofiHiphop__76.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/05__초점__Focus__LofiHiphop__75.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/06__망각__Forget__LofiHiphop__74.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/07__몰입__Flow__LofiHiphop__73.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/08__하나__One__LofiHiphop__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/09__정지__Freeze__LofiHiphop__70.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/10__터널__Tunnel__LofiHiphop__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/11__어딘가__Somewhere__LofiHiphop__74.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/12__신호__Signal__LofiHiphop__78.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/13__꼬르륵__Growl__LofiHiphop__82.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/14__고개__LookUp__LofiHiphop__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/11-00/input/tracks/15__벌써__Already__LofiHiphop__88.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/shorts.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/01__한낮__Haze__Afro-Drill__105.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/02__먼지__Dust__Afro-Drill__105.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/03__볕__Sunlit__Afropiano__108.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/05__갈증__Thirst__Afro-Drill__104.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/06__낮 그림자__Noon Shadow__Afro-Drill__107.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/08__차가워진__Cold At Noon__Afropiano__112.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/09__맥박__Pulse__Afro-Drill__106.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/11__그늘__Shade__Afro-Drill__100.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/12__기다림__Waiting__Afropiano__105.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/13__정오의 균열__Midday Crack__Afro-Drill__110.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/14__설렘__Flutter__Afro-Drill__104.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/15__온기__Warmth__Afro-Drill__107.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/16__미열__Low Fever__Afropiano__103.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/19__폭발__Burst__Afro-Drill__111.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/12-00/input/tracks/20__고요__Stillness__Afropiano__100.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/02__얼음__Groovy__Pop-RnB__90.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/04__온기__Warm__Soft-RnB__70.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/07__그늘__Chill__Soft-RnB__72.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/08__구름__Chill__Soft-RnB__76.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/14-00/input/tracks/10__깸__Chill__Alt-RnB__74.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/01__오렌지 드라이브__Orange Drive__Urban Neo-Soul Ballad__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/02__라디오를 켜고__Turn on the Radio__Modern R&B__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/03__봄 냄새__Smell of Spring__Bouncy Neo-Soul__114.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/04__오늘 드라이브__Drive Today__Intimate R&B Ballad__118.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/05__달려가는 중__Still On My Way__Urban Neo-Soul__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/06__창문 내려__Window Down__Funky Neo-Soul R&B__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/07__잠깐 도망가자__Let's Get Away__Funky Contemporary R&B__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/08__그레이 투 그린__Grey To Green__Korean Neo-Soul R&B__110.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/09__같은 재생목록__Playlist__Up-tempo Funky Neo-Soul__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/10__기울어진 햇살__Slanted Sun__Bouncy Neo-Soul__112.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/11__곁에서__Passenger__Bouncy Neo-Soul__110.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/12__체리, 소다, 봄길__Cherry, Soda, Spring Road__Doo-Wop Neo-Soul__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/13__밝은 공기 냄새__Bright Air__Indie Neo-Soul__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/14__함께__With You__Modern Neo-Soul R&B__118.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/15__잔디에 누워__Lying on the Grass__Urban Neo-Soul__120.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/15-00/input/tracks/16__믹스테잎__Mixtape__Lo-fi Doo-Wop Pop__122.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/01__가도되나요__Weary__SoftPopRock__160.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/02__눈치__Fluttering__JRock__160.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/03__7교시__Restless__PunkRock__84.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/04__공강__Lazy__IndieRock__148.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/05__기다림__Serene__AcousticRock__98.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/06__침묵__Anxious__AltRock__160.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/07__신호__Driven__GarageRock__126.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/08__컨펌__Playful__BrightPop__130.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/16-00/input/tracks/09__서랍__Hopeful__PopBallad__108.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/01__Exit__Liberation__Funk-Pop__115.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/04__차창밖__Contemplation__Lo-fi-Blues__85.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/05__쪽잠__Drowsy__Lo-fi__78.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/08__숨__Reflection__Soft-RnB__70.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_1_canva.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_1_original.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_1_x2.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_2_canva.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_2_loop4x.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/shorts/PM0900_2_original.mov"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/01__문__설렘__CityPop-Ballad__75.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/02__밤산책__고요__CityPop__90.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/04__가로등__그리움__CityPop-Ballad__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/05__한강__관조__CityPop__88.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/07__공원__관조__CityPop-Ballad__68.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/08__창가__온기__NeoSoul__85.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/09__서울의밤__압도__CityPop-Funk__105.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/21-00/input/tracks/10__방__안도__CityPop-Ballad__65.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/loop_preprocessed.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/01__스위치__Off__Chill R&B__78.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/03__조명__Lights__Acoustic Chill R&B__77.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/05__야경__Nightscape__Chill R&B__74.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/06__목욕__Bath__Chill R&B__73.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/07__향기__Scent__Chill R&B__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/08__체온__Warm__Acoustic Chill R&B__71.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/09__풀어져가__Let It Unwind__Ambient Slow Jam__70.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/11__일기__Diary__Acoustic Chill R&B__75.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/12__창문__Window__Ambient Slow Jam__66.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/13__달빛 커튼__Moonlit Curtain__Chill R&B__67.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/14__무게__Weight__Acoustic Chill R&B__66.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/15__비__Rain__Ambient Slow Jam__65.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/16__이불__Blanket__Chill R&B__64.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/17__베개__Pillow__Acoustic Chill R&B__63.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/22-00/input/tracks/20__눈을 감으면__When I Close My Eyes__Ambient Slow Jam__60.wav"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/Single/alleyway/alleyway.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/Single/alleyway/loop.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/Single/alleyway/single_crossfade.mp4"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/Single/alleyway/골목.mp3"
+        }
+      ],
+      "already_absent_before_apply_do_not_stage_or_restore": [
+        {
+          "status": " D",
+          "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png"
+        },
+        {
+          "status": " D",
+          "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024.png"
+        }
+      ],
+      "document_and_writer_state_updates": [
+        {
+          "status": " M",
+          "path": ".ai/HANDOFF.md"
+        },
+        {
+          "status": " M",
+          "path": ".ai/SESSION.md"
+        },
+        {
+          "status": " M",
+          "path": ".ai/state.json"
+        },
+        {
+          "status": " M",
+          "path": "CHANGELOG.md"
+        },
+        {
+          "status": " M",
+          "path": "SERIES/06-30/concept.md"
+        }
+      ],
+      "cleanup_diagnostic_or_record_new_files": [
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-controller-post-cleanup.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-controller-preflight.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-doc-state-gates.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-state-after-cleanup.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-system-data-chrome-clones.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-system-data-j8-du.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-system-data-private-var.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-dry-run.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-post-apply-check.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-media-inventory.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json"
+        },
+        {
+          "status": "??",
+          "path": ".ai/cleanup/execute-2026-10-24.py"
+        },
+        {
+          "status": "??",
+          "path": ".ai/plans/2026-10-24-wavvy-media-cleanup.md"
+        },
+        {
+          "status": "??",
+          "path": ".ai/reviews/2026-10-24-wavvy-media-cleanup-review.md"
+        }
+      ],
+      "protected_selected_photo_and_provenance_new_files": [
+        {
+          "status": "??",
+          "path": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png"
+        },
+        {
+          "status": "??",
+          "path": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json"
+        }
+      ],
+      "unclassified_changes": []
+    },
+    "staging_candidate_paths_only": [
+      "SERIES/04-00/input/loop.mp4",
+      "SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3",
+      "SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3",
+      "SERIES/04-00/input/tracks/03__잔향__Hazy__AltR&B__88.mp3",
+      "SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3",
+      "SERIES/04-00/input/tracks/05__습기__Sentimental__Acoustic-RnB__88.mp3",
+      "SERIES/04-00/input/tracks/06__적막__Melancholic__RnB__68.mp3",
+      "SERIES/04-00/input/tracks/07__문틈__Hopeful__RnB__82.mp3",
+      "SERIES/04-00/input/tracks/08__빗줄기__Melancholic__RnB__85.mp3",
+      "SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3",
+      "SERIES/06-00/input/loop.mp4",
+      "SERIES/06-00/input/tracks/01__ConcreteMorning__Driven__FastLofi__124.wav",
+      "SERIES/06-00/input/tracks/02__StaticLane__Focused__FastLofi__118.wav",
+      "SERIES/06-00/input/tracks/03__Signal__Rising__FastLofi__126.wav",
+      "SERIES/06-00/input/tracks/04__BlueCurb__Groovy__FastLofi__122.wav",
+      "SERIES/06-00/input/tracks/05__Iron__Powerful__FastLofi__128.wav",
+      "SERIES/06-00/input/tracks/06__Moving__Peak__FastLofi__130.wav",
+      "SERIES/06-00/input/tracks/07__WakeUp__Bright__FastLofi__127.wav",
+      "SERIES/06-00/input/tracks/08__KitchenLight__Light__FastLofi__123.wav",
+      "SERIES/06-00/input/tracks/09__Unfold__Tense__FastLofi__142.wav",
+      "SERIES/06-00/input/tracks/10__SettleDown__Cooldown__FastLofi__116.wav",
+      "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json",
+      "SERIES/06-30/production/thumbnail-draft-hip-20261024.json",
+      "SERIES/07-00/input/art-draft-2026-10-12.png",
+      "SERIES/10-00/input/loop.mp4",
+      "SERIES/10-00/input/shorts_original.mov",
+      "SERIES/10-00/input/tracks/01__오전__Calm__Chillhop__85.wav",
+      "SERIES/10-00/input/tracks/02__거울__Calm__Chillhop__87.wav",
+      "SERIES/10-00/input/tracks/03__사진__Warm__Chillhop__90.wav",
+      "SERIES/10-00/input/tracks/04__모니터__Focus__Chillhop__90.wav",
+      "SERIES/10-00/input/tracks/05__집중__Deep__Chillhop__78.wav",
+      "SERIES/10-00/input/tracks/06__알림__Alert__Chillhop__83.wav",
+      "SERIES/10-00/input/tracks/07__잉크__Steady__Chillhop__85.wav",
+      "SERIES/10-00/input/tracks/08__타이핑__Rhythm__Chillhop__88.wav",
+      "SERIES/10-00/input/tracks/09__숨__Relief__Chillhop__85.wav",
+      "SERIES/10-00/input/tracks/10__환기__Open__Chillhop__80.wav",
+      "SERIES/10-00/input/tracks/11__회의__Routine__Chillhop__87.wav",
+      "SERIES/10-00/input/tracks/12__다시__Return__Chillhop__82.wav",
+      "SERIES/10-00/input/tracks/13__Tab__Click__Chillhop__85.wav",
+      "SERIES/10-00/input/tracks/14__TickTock__Time__Chillhop__80.wav",
+      "SERIES/10-00/input/tracks/15__Hunger__Sparse__Chillhop__78.wav",
+      "SERIES/10-00/input/소예웃음_반복20.wav",
+      "SERIES/11-00/input/loop.mp4",
+      "SERIES/11-00/input/tracks/01__경계__Threshold__LofiHiphop__82.wav",
+      "SERIES/11-00/input/tracks/02__멀어져__Fade__LofiHiphop__80.wav",
+      "SERIES/11-00/input/tracks/03__리듬__Rhythm__LofiHiphop__78.wav",
+      "SERIES/11-00/input/tracks/04__에이전트__Agent__LofiHiphop__76.wav",
+      "SERIES/11-00/input/tracks/05__초점__Focus__LofiHiphop__75.wav",
+      "SERIES/11-00/input/tracks/06__망각__Forget__LofiHiphop__74.wav",
+      "SERIES/11-00/input/tracks/07__몰입__Flow__LofiHiphop__73.wav",
+      "SERIES/11-00/input/tracks/08__하나__One__LofiHiphop__72.wav",
+      "SERIES/11-00/input/tracks/09__정지__Freeze__LofiHiphop__70.wav",
+      "SERIES/11-00/input/tracks/10__터널__Tunnel__LofiHiphop__72.wav",
+      "SERIES/11-00/input/tracks/11__어딘가__Somewhere__LofiHiphop__74.wav",
+      "SERIES/11-00/input/tracks/12__신호__Signal__LofiHiphop__78.wav",
+      "SERIES/11-00/input/tracks/13__꼬르륵__Growl__LofiHiphop__82.wav",
+      "SERIES/11-00/input/tracks/14__고개__LookUp__LofiHiphop__85.wav",
+      "SERIES/11-00/input/tracks/15__벌써__Already__LofiHiphop__88.wav",
+      "SERIES/12-00/input/loop.mp4",
+      "SERIES/12-00/input/shorts.mov",
+      "SERIES/12-00/input/tracks/01__한낮__Haze__Afro-Drill__105.wav",
+      "SERIES/12-00/input/tracks/02__먼지__Dust__Afro-Drill__105.wav",
+      "SERIES/12-00/input/tracks/03__볕__Sunlit__Afropiano__108.wav",
+      "SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav",
+      "SERIES/12-00/input/tracks/05__갈증__Thirst__Afro-Drill__104.wav",
+      "SERIES/12-00/input/tracks/06__낮 그림자__Noon Shadow__Afro-Drill__107.wav",
+      "SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav",
+      "SERIES/12-00/input/tracks/08__차가워진__Cold At Noon__Afropiano__112.wav",
+      "SERIES/12-00/input/tracks/09__맥박__Pulse__Afro-Drill__106.wav",
+      "SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav",
+      "SERIES/12-00/input/tracks/11__그늘__Shade__Afro-Drill__100.wav",
+      "SERIES/12-00/input/tracks/12__기다림__Waiting__Afropiano__105.wav",
+      "SERIES/12-00/input/tracks/13__정오의 균열__Midday Crack__Afro-Drill__110.wav",
+      "SERIES/12-00/input/tracks/14__설렘__Flutter__Afro-Drill__104.wav",
+      "SERIES/12-00/input/tracks/15__온기__Warmth__Afro-Drill__107.wav",
+      "SERIES/12-00/input/tracks/16__미열__Low Fever__Afropiano__103.wav",
+      "SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav",
+      "SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav",
+      "SERIES/12-00/input/tracks/19__폭발__Burst__Afro-Drill__111.wav",
+      "SERIES/12-00/input/tracks/20__고요__Stillness__Afropiano__100.wav",
+      "SERIES/14-00/input/loop.mp4",
+      "SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3",
+      "SERIES/14-00/input/tracks/02__얼음__Groovy__Pop-RnB__90.mp3",
+      "SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3",
+      "SERIES/14-00/input/tracks/04__온기__Warm__Soft-RnB__70.mp3",
+      "SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3",
+      "SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3",
+      "SERIES/14-00/input/tracks/07__그늘__Chill__Soft-RnB__72.mp3",
+      "SERIES/14-00/input/tracks/08__구름__Chill__Soft-RnB__76.mp3",
+      "SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3",
+      "SERIES/14-00/input/tracks/10__깸__Chill__Alt-RnB__74.mp3",
+      "SERIES/15-00/input/tracks/01__오렌지 드라이브__Orange Drive__Urban Neo-Soul Ballad__120.wav",
+      "SERIES/15-00/input/tracks/02__라디오를 켜고__Turn on the Radio__Modern R&B__120.wav",
+      "SERIES/15-00/input/tracks/03__봄 냄새__Smell of Spring__Bouncy Neo-Soul__114.wav",
+      "SERIES/15-00/input/tracks/04__오늘 드라이브__Drive Today__Intimate R&B Ballad__118.wav",
+      "SERIES/15-00/input/tracks/05__달려가는 중__Still On My Way__Urban Neo-Soul__120.wav",
+      "SERIES/15-00/input/tracks/06__창문 내려__Window Down__Funky Neo-Soul R&B__120.wav",
+      "SERIES/15-00/input/tracks/07__잠깐 도망가자__Let's Get Away__Funky Contemporary R&B__120.wav",
+      "SERIES/15-00/input/tracks/08__그레이 투 그린__Grey To Green__Korean Neo-Soul R&B__110.wav",
+      "SERIES/15-00/input/tracks/09__같은 재생목록__Playlist__Up-tempo Funky Neo-Soul__120.wav",
+      "SERIES/15-00/input/tracks/10__기울어진 햇살__Slanted Sun__Bouncy Neo-Soul__112.wav",
+      "SERIES/15-00/input/tracks/11__곁에서__Passenger__Bouncy Neo-Soul__110.wav",
+      "SERIES/15-00/input/tracks/12__체리, 소다, 봄길__Cherry, Soda, Spring Road__Doo-Wop Neo-Soul__120.wav",
+      "SERIES/15-00/input/tracks/13__밝은 공기 냄새__Bright Air__Indie Neo-Soul__120.wav",
+      "SERIES/15-00/input/tracks/14__함께__With You__Modern Neo-Soul R&B__118.wav",
+      "SERIES/15-00/input/tracks/15__잔디에 누워__Lying on the Grass__Urban Neo-Soul__120.wav",
+      "SERIES/15-00/input/tracks/16__믹스테잎__Mixtape__Lo-fi Doo-Wop Pop__122.wav",
+      "SERIES/16-00/input/loop.mp4",
+      "SERIES/16-00/input/tracks/01__가도되나요__Weary__SoftPopRock__160.mp3",
+      "SERIES/16-00/input/tracks/02__눈치__Fluttering__JRock__160.mp3",
+      "SERIES/16-00/input/tracks/03__7교시__Restless__PunkRock__84.mp3",
+      "SERIES/16-00/input/tracks/04__공강__Lazy__IndieRock__148.mp3",
+      "SERIES/16-00/input/tracks/05__기다림__Serene__AcousticRock__98.mp3",
+      "SERIES/16-00/input/tracks/06__침묵__Anxious__AltRock__160.mp3",
+      "SERIES/16-00/input/tracks/07__신호__Driven__GarageRock__126.mp3",
+      "SERIES/16-00/input/tracks/08__컨펌__Playful__BrightPop__130.mp3",
+      "SERIES/16-00/input/tracks/09__서랍__Hopeful__PopBallad__108.mp3",
+      "SERIES/18-00/input/loop.mp4",
+      "SERIES/18-00/input/tracks/01__Exit__Liberation__Funk-Pop__115.mp3",
+      "SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3",
+      "SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3",
+      "SERIES/18-00/input/tracks/04__차창밖__Contemplation__Lo-fi-Blues__85.mp3",
+      "SERIES/18-00/input/tracks/05__쪽잠__Drowsy__Lo-fi__78.mp3",
+      "SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3",
+      "SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3",
+      "SERIES/18-00/input/tracks/08__숨__Reflection__Soft-RnB__70.mp3",
+      "SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3",
+      "SERIES/21-00/input/loop.mp4",
+      "SERIES/21-00/input/shorts/PM0900_1_canva.mp4",
+      "SERIES/21-00/input/shorts/PM0900_1_original.mov",
+      "SERIES/21-00/input/shorts/PM0900_1_x2.mov",
+      "SERIES/21-00/input/shorts/PM0900_2_canva.mp4",
+      "SERIES/21-00/input/shorts/PM0900_2_loop4x.mov",
+      "SERIES/21-00/input/shorts/PM0900_2_original.mov",
+      "SERIES/21-00/input/tracks/01__문__설렘__CityPop-Ballad__75.wav",
+      "SERIES/21-00/input/tracks/02__밤산책__고요__CityPop__90.wav",
+      "SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav",
+      "SERIES/21-00/input/tracks/04__가로등__그리움__CityPop-Ballad__72.wav",
+      "SERIES/21-00/input/tracks/05__한강__관조__CityPop__88.wav",
+      "SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav",
+      "SERIES/21-00/input/tracks/07__공원__관조__CityPop-Ballad__68.wav",
+      "SERIES/21-00/input/tracks/08__창가__온기__NeoSoul__85.wav",
+      "SERIES/21-00/input/tracks/09__서울의밤__압도__CityPop-Funk__105.wav",
+      "SERIES/21-00/input/tracks/10__방__안도__CityPop-Ballad__65.wav",
+      "SERIES/22-00/input/loop.mp4",
+      "SERIES/22-00/input/loop_preprocessed.mp4",
+      "SERIES/22-00/input/tracks/01__스위치__Off__Chill R&B__78.wav",
+      "SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav",
+      "SERIES/22-00/input/tracks/03__조명__Lights__Acoustic Chill R&B__77.wav",
+      "SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav",
+      "SERIES/22-00/input/tracks/05__야경__Nightscape__Chill R&B__74.wav",
+      "SERIES/22-00/input/tracks/06__목욕__Bath__Chill R&B__73.wav",
+      "SERIES/22-00/input/tracks/07__향기__Scent__Chill R&B__72.wav",
+      "SERIES/22-00/input/tracks/08__체온__Warm__Acoustic Chill R&B__71.wav",
+      "SERIES/22-00/input/tracks/09__풀어져가__Let It Unwind__Ambient Slow Jam__70.wav",
+      "SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav",
+      "SERIES/22-00/input/tracks/11__일기__Diary__Acoustic Chill R&B__75.wav",
+      "SERIES/22-00/input/tracks/12__창문__Window__Ambient Slow Jam__66.wav",
+      "SERIES/22-00/input/tracks/13__달빛 커튼__Moonlit Curtain__Chill R&B__67.wav",
+      "SERIES/22-00/input/tracks/14__무게__Weight__Acoustic Chill R&B__66.wav",
+      "SERIES/22-00/input/tracks/15__비__Rain__Ambient Slow Jam__65.wav",
+      "SERIES/22-00/input/tracks/16__이불__Blanket__Chill R&B__64.wav",
+      "SERIES/22-00/input/tracks/17__베개__Pillow__Acoustic Chill R&B__63.wav",
+      "SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav",
+      "SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav",
+      "SERIES/22-00/input/tracks/20__눈을 감으면__When I Close My Eyes__Ambient Slow Jam__60.wav",
+      "SERIES/Single/alleyway/alleyway.mp4",
+      "SERIES/Single/alleyway/loop.mp4",
+      "SERIES/Single/alleyway/single_crossfade.mp4",
+      "SERIES/Single/alleyway/골목.mp3",
+      ".ai/HANDOFF.md",
+      ".ai/SESSION.md",
+      ".ai/state.json",
+      "CHANGELOG.md",
+      "SERIES/06-30/concept.md",
+      ".ai/cleanup/2026-10-24-controller-post-cleanup.json",
+      ".ai/cleanup/2026-10-24-controller-preflight.json",
+      ".ai/cleanup/2026-10-24-doc-state-gates.json",
+      ".ai/cleanup/2026-10-24-state-after-cleanup.json",
+      ".ai/cleanup/2026-10-24-system-data-chrome-clones.json",
+      ".ai/cleanup/2026-10-24-system-data-j8-du.json",
+      ".ai/cleanup/2026-10-24-system-data-private-var.json",
+      ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl",
+      ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.json",
+      ".ai/cleanup/2026-10-24-wavvy-cleanup-dry-run.json",
+      ".ai/cleanup/2026-10-24-wavvy-cleanup-post-apply-check.json",
+      ".ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json",
+      ".ai/cleanup/2026-10-24-wavvy-media-inventory.json",
+      ".ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json",
+      ".ai/cleanup/execute-2026-10-24.py",
+      ".ai/plans/2026-10-24-wavvy-media-cleanup.md",
+      ".ai/reviews/2026-10-24-wavvy-media-cleanup-review.md",
+      "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json"
+    ],
+    "excluded_preexisting_absent_paths": [
+      "SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png",
+      "SERIES/06-30/input/thumbnail-draft-hip-20261024.png"
+    ],
+    "unrelated_unclassified_changes_count": 0,
+    "limits": "Path/scope comparison only. No content review of other workers' files, no attribution of preexisting absences, no git add, commit, push or index mutation."
+  },
+  "zz_one_pass": {
+    "command_index": 4,
+    "measurements_descending": [
+      {
+        "path": "/private/var/folders/zz",
+        "visible_du_allocated_kib": 472,
+        "visible_du_allocated_bytes": 483328
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r",
+        "visible_du_allocated_kib": 468,
+        "visible_du_allocated_bytes": 479232
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000",
+        "visible_du_allocated_kib": 4,
+        "visible_du_allocated_bytes": 4096
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000012m00008n",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000b000002r",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000010r000086",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000150000098",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000012800008k",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000011h00008c",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000003000000r",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000013800008t",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000tm00006n",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000010w000087",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000108000082",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000016h00009m",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000114000089",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000014r000096",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0000144000091",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000012r00008p",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000012400008j",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000015m00009d",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000010h000084",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000016c00009l",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000yw00007q",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      },
+      {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n000011w00008g",
+        "visible_du_allocated_kib": 0,
+        "visible_du_allocated_bytes": 0
+      }
+    ],
+    "permission_error_lines": 77,
+    "interpretation": "Unreadable/permission-denied content is UNKNOWN, not zero. Parent and child du lines overlap and must not be added. This was the sole permitted scan, no retry.",
+    "completion": "partial permissions"
+  }
+}

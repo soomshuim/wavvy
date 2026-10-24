@@ -1,0 +1,28 @@
+{
+  "schema": "wavvy.cleanup-retention-decision.v1",
+  "recorded_at_utc": "2026-10-24T02:27:32.483326+00:00",
+  "source": "Controller relay of explicit user scope choice and retention answer",
+  "scope_quote": "Wavvy 프로젝트와 Wavvy 임시 복사본 전체 (추천)",
+  "retention_answer_quote": "이 세 파일만 남기고 나머지 삭제 (추천)",
+  "historical_pending_inventories_left_immutable": true,
+  "frozen_apply_allowlist_changed": false,
+  "retained_files": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74331380,
+      "decision": "keep separately"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74406364,
+      "decision": "keep separately"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+      "bytes": 307505324,
+      "decision": "keep until current video YouTube upload is verified; no deletion performed now"
+    }
+  ],
+  "current_video_upload_verified": false,
+  "decision_record_changes_no_file_retention_itself": true
+}

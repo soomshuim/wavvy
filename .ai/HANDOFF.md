@@ -2585,3 +2585,24 @@ Date: 2026-10-24 (오디오 마감·썸네일 사진 확인 대기)
 Project: ~/Project/wavvy
 Current: 20곡 총2회 M4A 2:06:10.660·회차20→1 연결과 실제79구간 검사를 마쳤고 독립 Astra/high CLEAN(확인된 Critical/High0·원칙 관찰 없음)을 채택했다. source20/state84 불변. 최종 파일은 SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a이며 영상에서 다시 반복하지 않는다. 코드·설정·검토 근거·현재 문서와 썸네일 시안을 이번 커밋에 묶어 푸시한다.
 Next: 별도 썸네일 v2 사진 사용자 확인만 기다린다. SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png를 실제로 보여주고 승인 질문을 보냈으나 아직 답변이 없다. 밤은 필수가 아니며 자연스러운 일상 사진·젊고 힙하고 개성 있는 인물이 우선이다. 승인 전 최종4K/loop.png/thumb.jpg는 만들지 않는다. Suno·영상·업로드는 이번 작업 범위가 아니다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-24 (승인된 일회성 로컬 미디어 정리 후 현재 상태)
+Project: ~/Project/wavvy
+Authorization: “Wavvy 프로젝트와 Wavvy 임시 복사본 전체 (추천)” 및 “이 세 파일만 남기고 나머지 삭제 (추천)”. .ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json에 원문과 조건을 기록했다. 현재 필수 사용자 결정 대기는 없다.
+Cleanup: 동결 목록 1,298파일·52,534,148,348바이트를 삭제했고 삭제 후 1,298개 모두 부재·보호 62개 모두 불변이다. 실제 여유 공간 4,042,014,720→55,041,216,512바이트, 관측 증가량 50,999,201,792바이트다. 디렉터리 삭제·Git 내부 이력·다른 프로젝트·기타 캐시 정리는 없다. apply 원시·파일별 journal·post-apply-check는 .ai/cleanup/2026-10-24-wavvy-cleanup-*에 보존했다. .ai/reviews/2026-10-24-wavvy-media-cleanup-review.md는 실행 전 동결 목록·실행기 범위의 독립 Astra/high CLEAN 판정이며 컨트롤러가 채택했다.
+Retained audio: 프로젝트의 실제 오디오·영상은 SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav(74,331,380바이트), 11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav(74,406,364바이트), output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a(307,505,324바이트), 합계 3개·456,243,068바이트뿐이다. Suno 미수락 6·11번은 별도 보관한다. 믹스는 2:06:10.660·SHA-256 bc63dc3836cc83864e58f6f1890d9f4cf071d2a94fb5292d110a7af59869caea이며 이번 영상의 실제 YouTube 업로드 확인 뒤 삭제한다. 업로드는 아직 미확인이다. 이미 총 2회이므로 영상에서 반복을 추가하지 않는다. 다른 18개 최종 개별 입력·1회 기준본·원시 녹음·비교본·미리듣기는 의도적 삭제다. 기존 입력 목록·원시 검사·검토는 과거 이력이며 전체 20개 재다운로드를 보장하거나 자동 복구할 일이 아니다.
+Thumbnail: 현재 보호 사진은 SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png, 1672×941·2,131,294바이트·SHA-256 3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d다. production/thumbnail-draft-runningwear-tiedhair-20261024.json도 보호했다. 최종 지시 “스포츠 밴드 하지 말고”에 따라 밴드 없는 짧은 묶음머리로, 기존 얼굴·표정·러닝복·장면을 유지하는 편집 지시의 사진이다. 새 결과의 주관적 최종 승인·정식 썸네일 검토를 주장하지 않는다.
+Remaining: 로고·06:30 좌상단과 Cadence 175 BPM 우하단 글자 합성이 Swift 글꼴 대체 오류로 중단된 미완료 제작이다. loop.png·thumb.jpg·최종 4K는 없다. 이후 이 합성을 재개할 때 보존 사진과 정확한 배치 지시를 사용한다. 이번 문서 워커는 추가 합성 시도·미디어 생성/삭제·업로드를 하지 않는다. 오디오 기록은 0a35bac로 푸시 완료이며 과거 “오디오 기록 대기/v2 승인 대기”는 현재 상태가 아니다. 이번 문서·writer 재측정 상태의 커밋·푸시는 컨트롤러가 맡는다. 현재 보관 상태는 concept/SESSION 상단, 공식 상태 저장·대조는 .ai/cleanup/2026-10-24-state-after-cleanup.json을 따른다.
+State measured: 전용 writer를 정확히 1회 실행해 revision 85·track_source_draft·input audio_files/available_audio_files 2로 재측정했다. 보존 믹스 1개는 입력 개수와 별도다. 공식 CLI에는 next_action 직접 지정 옵션이 없으며 기존 일반 문구 “Review existing track source drafts and follow the next source work in concept.md.”를 유지했다. 현행 concept은 의도적 삭제를 자동 재다운로드·재생성할 일로 삼지 않는다. 원시 명령·exit·출력·전후 상태는 .ai/cleanup/2026-10-24-state-after-cleanup.json에 있다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-24 (맥 저장 공간 읽기 전용 진단 결론)
+Diagnostic: ~/Project 직접19항목 합계515,335,004,160바이트이며, 그 안에 CDS-wt 직접90/90항목(89폴더+1파일)424,142,188,544바이트와 CDS 본체57,809,522,688바이트가 포함된다. CDS/report40,139,710,464바이트는 본체에 포함돼 별도 합산하지 않는다. 대표 worktree7.628GB에서는 report5.367·assets1.550·review0.633GB가 약99%다. /private/tmp110.64GB·~/Library67.43GB·~/.claude45.15GB·~/.codex12.20GB는 이전 세션 측정 재사용으로 구분했다.
+Chrome: X/com.google.Chrome.code_sign_clone 638개와 du 표시962.65GB를 확인했지만 APFS 공유 블록 때문에 독점 물리 용량·시스템 데이터772.07GB의 정확한 원인·삭제 회수량은 미확정이다. 시스템 볼륨 사용량을 화면의 시스템 데이터 분류와 같다고 보지 않는다. 권한 거부는0바이트가 아니라 미확인이다.
+Evidence: .ai/cleanup/2026-10-24-system-data-summary.md 및 링크된 whole-mac/j8-du/chrome-clones/private-var JSON 네 개에 원시 명령·접근 한계·공식 Chromium/Apple 근거를 기록했다. 전체 원시는 완료·동결 확인 뒤 이번 마감 기록에 포함한다.
+Actions: 이번 원인 진단의 삭제·이동·앱 종료·권한 변경·sudo0회다. 앞서 승인된 Wavvy 삭제1,298파일52,534,148,348바이트는 별도 실행 이력이며 이미 없던 v1/v2 PNG2개도 그 수에 넣지 않는다. 현재 음원3개·선택 묶음머리 사진·state revision85·미완료 글자 합성은 진단으로 바꾸지 않았다. 커밋·푸시는 아직 하지 않았고 컨트롤러 승인 후 이번 마감 기록을 저장한다.

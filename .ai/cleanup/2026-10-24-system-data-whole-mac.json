@@ -1,0 +1,2601 @@
+{
+  "largest_roots_worker": {
+    "schema_version": 1,
+    "agent_task": "system_data_largest_roots",
+    "operation": "read_only_storage_diagnosis",
+    "observation_date": "2026-10-24",
+    "fresh_measurements": true,
+    "deleted_files": 0,
+    "moved_files": 0,
+    "compressed_files": 0,
+    "sudo_used": false,
+    "measurement_units": {
+      "du": "allocated KiB, 1 KiB = 1024 bytes",
+      "GB": "1,000,000,000 bytes",
+      "GiB": "1,073,741,824 bytes"
+    },
+    "fresh_disk_state": {
+      "observed_at": "2026-10-24T11:40:32.676518+09:00",
+      "command": [
+        "df",
+        "-k",
+        "/System/Volumes/Data"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "Filesystem   1024-blocks      Used Available Capacity  iused     ifree %iused  Mounted on\n/dev/disk3s5   971350180 885933700  52494784    95% 21608935 524947840    4%   /System/Volumes/Data\n",
+      "stderr": "",
+      "used_KiB": 885933700,
+      "available_KiB": 52494784,
+      "used_bytes": 907196108800,
+      "available_bytes": 53754658816
+    },
+    "derived_nonoverlapping_path_totals": {
+      "Project": {
+        "bytes": 515335004160,
+        "GB": 515.33500416,
+        "GiB": 479.94312286376953,
+        "direct_items_covered": 19,
+        "children": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt",
+            "bytes": 424142188544,
+            "allocated_KiB": 414201356,
+            "method": "sum of 90 non-overlapping direct child path summaries; parent directory own lstat allocation is zero"
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS",
+            "allocated_KiB": 56454612,
+            "bytes": 57809522688
+          },
+          {
+            "path": "/Users/zenkim_office/Project/wavvy",
+            "allocated_KiB": 11932008,
+            "bytes": 12218376192
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-worktrees",
+            "allocated_KiB": 7001084,
+            "bytes": 7169110016
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-context",
+            "allocated_KiB": 6213780,
+            "bytes": 6362910720
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plumlabs-context",
+            "allocated_KiB": 3787884,
+            "bytes": 3878793216
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plum-ds",
+            "allocated_KiB": 2005952,
+            "bytes": 2054094848
+          },
+          {
+            "path": "/Users/zenkim_office/Project/agent-center",
+            "allocated_KiB": 914276,
+            "bytes": 936218624
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-context.wt-w93-cds-policy-sync-skill",
+            "allocated_KiB": 364388,
+            "bytes": 373133312
+          },
+          {
+            "path": "/Users/zenkim_office/Project/pm-ops",
+            "allocated_KiB": 137724,
+            "bytes": 141029376
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plumlabs-backoffice",
+            "allocated_KiB": 72292,
+            "bytes": 74027008
+          },
+          {
+            "path": "/Users/zenkim_office/Project/AIZen",
+            "allocated_KiB": 56896,
+            "bytes": 58261504
+          },
+          {
+            "path": "/Users/zenkim_office/Project/AX-CENTER",
+            "allocated_KiB": 51284,
+            "bytes": 52514816
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-precbt-site-20261024",
+            "allocated_KiB": 47776,
+            "bytes": 48922624
+          },
+          {
+            "path": "/Users/zenkim_office/Project/lenny",
+            "allocated_KiB": 15504,
+            "bytes": 15876096
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.DS_Store",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.ai",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.cds-pre-status.txt",
+            "allocated_KiB": 0,
+            "bytes": 0
+          },
+          {
+            "path": "/Users/zenkim_office/Project/agent-center-wt",
+            "allocated_KiB": 0,
+            "bytes": 0
+          }
+        ]
+      },
+      "CDS_wt": {
+        "bytes": 424142188544,
+        "GB": 424.142188544,
+        "GiB": 395.0131950378418,
+        "direct_items_covered": 90,
+        "direct_directories": 89,
+        "direct_regular_files": 1,
+        "children": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-reedition",
+            "allocated_KiB": 8515492,
+            "bytes": 8719863808
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-destinations-20261024",
+            "allocated_KiB": 7512640,
+            "bytes": 7692943360
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-large-read-guidance-20261024",
+            "allocated_KiB": 7505248,
+            "bytes": 7685373952
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-runtime-20261024",
+            "allocated_KiB": 7503044,
+            "bytes": 7683117056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s7",
+            "allocated_KiB": 7492828,
+            "bytes": 7672655872
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-revise-bundle",
+            "allocated_KiB": 7479384,
+            "bytes": 7658889216
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/population-live-r2",
+            "allocated_KiB": 7473484,
+            "bytes": 7652847616
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-r4-self-flow",
+            "allocated_KiB": 7459044,
+            "bytes": 7638061056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6c",
+            "allocated_KiB": 7458960,
+            "bytes": 7637975040
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-p1-overlay",
+            "allocated_KiB": 7455512,
+            "bytes": 7634444288
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-20261024",
+            "allocated_KiB": 7454464,
+            "bytes": 7633371136
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-flow-source-text-20261024",
+            "allocated_KiB": 7450372,
+            "bytes": 7629180928
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-figma-nested-descriptions-20261024",
+            "allocated_KiB": 7450356,
+            "bytes": 7629164544
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-author-bounded-read-20261024",
+            "allocated_KiB": 7450204,
+            "bytes": 7629008896
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+            "allocated_KiB": 7449556,
+            "bytes": 7628345344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-roundtrip-20261024",
+            "allocated_KiB": 7449112,
+            "bytes": 7627890688
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-common-contract-r7-20261024",
+            "allocated_KiB": 7448800,
+            "bytes": 7627571200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-context-v2-20261024",
+            "allocated_KiB": 7448740,
+            "bytes": 7627509760
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-smoke-batches-20261024",
+            "allocated_KiB": 7448488,
+            "bytes": 7627251712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-start-observe",
+            "allocated_KiB": 7437520,
+            "bytes": 7616020480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6d",
+            "allocated_KiB": 7429492,
+            "bytes": 7607799808
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-overlay-host",
+            "allocated_KiB": 7419300,
+            "bytes": 7597363200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-panel-keys",
+            "allocated_KiB": 7413460,
+            "bytes": 7591383040
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6b",
+            "allocated_KiB": 7412384,
+            "bytes": 7590281216
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-waitpre-item",
+            "allocated_KiB": 7410504,
+            "bytes": 7588356096
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-t4-reapprove",
+            "allocated_KiB": 7408648,
+            "bytes": 7586455552
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-data-fix",
+            "allocated_KiB": 7407796,
+            "bytes": 7585583104
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-flowid-one",
+            "allocated_KiB": 7405300,
+            "bytes": 7583027200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-toast-wait",
+            "allocated_KiB": 7405020,
+            "bytes": 7582740480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/sp5-record",
+            "allocated_KiB": 7399092,
+            "bytes": 7576670208
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p2",
+            "allocated_KiB": 7369484,
+            "bytes": 7546351616
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/sp5-flow",
+            "allocated_KiB": 7353280,
+            "bytes": 7529758720
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-int",
+            "allocated_KiB": 7344996,
+            "bytes": 7521275904
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p3",
+            "allocated_KiB": 7343488,
+            "bytes": 7519731712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-pop",
+            "allocated_KiB": 7342304,
+            "bytes": 7518519296
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-c",
+            "allocated_KiB": 7342212,
+            "bytes": 7518425088
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6",
+            "allocated_KiB": 7342184,
+            "bytes": 7518396416
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p2b",
+            "allocated_KiB": 7341188,
+            "bytes": 7517376512
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-a",
+            "allocated_KiB": 7340236,
+            "bytes": 7516401664
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-b",
+            "allocated_KiB": 7337812,
+            "bytes": 7513919488
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p1",
+            "allocated_KiB": 7337668,
+            "bytes": 7513772032
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/qa-skill-interim",
+            "allocated_KiB": 7313372,
+            "bytes": 7488892928
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h12-measurer",
+            "allocated_KiB": 7288464,
+            "bytes": 7463387136
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/f3-dry",
+            "allocated_KiB": 7259052,
+            "bytes": 7433269248
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-mockups",
+            "allocated_KiB": 7251896,
+            "bytes": 7425941504
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h10-smoke",
+            "allocated_KiB": 7250960,
+            "bytes": 7424983040
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h8-int",
+            "allocated_KiB": 7244756,
+            "bytes": 7418630144
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7a-flow",
+            "allocated_KiB": 7217488,
+            "bytes": 7390707712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7b-look",
+            "allocated_KiB": 7216068,
+            "bytes": 7389253632
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7b-base",
+            "allocated_KiB": 7216028,
+            "bytes": 7389212672
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/tc-reach",
+            "allocated_KiB": 7151352,
+            "bytes": 7322984448
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-home-viewed-20261024",
+            "allocated_KiB": 7006988,
+            "bytes": 7175155712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-preconditions-20261024",
+            "allocated_KiB": 7000592,
+            "bytes": 7168606208
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-guidance-tests-20261024",
+            "allocated_KiB": 6637748,
+            "bytes": 6797053952
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-decision-context-20261024",
+            "allocated_KiB": 5934156,
+            "bytes": 6076575744
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-compaction-20261024",
+            "allocated_KiB": 5934116,
+            "bytes": 6076534784
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-common-preparation-20261024",
+            "allocated_KiB": 2198512,
+            "bytes": 2251276288
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r4",
+            "allocated_KiB": 320044,
+            "bytes": 327725056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r2",
+            "allocated_KiB": 318864,
+            "bytes": 326516736
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-review-r1",
+            "allocated_KiB": 111624,
+            "bytes": 114302976
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-bundles-20261024",
+            "allocated_KiB": 109500,
+            "bytes": 112128000
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-bundles-20261024",
+            "allocated_KiB": 106740,
+            "bytes": 109301760
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-review-20261024",
+            "allocated_KiB": 106700,
+            "bytes": 109260800
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-context-v3-20261024",
+            "allocated_KiB": 96004,
+            "bytes": 98308096
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r5",
+            "allocated_KiB": 78148,
+            "bytes": 80023552
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-sidecar-read-view-20261024",
+            "allocated_KiB": 63056,
+            "bytes": 64569344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-launch-newline-20261024",
+            "allocated_KiB": 62168,
+            "bytes": 63660032
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-exec-pragma-20261024",
+            "allocated_KiB": 61064,
+            "bytes": 62529536
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-pair-read-20261024",
+            "allocated_KiB": 56844,
+            "bytes": 58208256
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-qa-evidence-20261024",
+            "allocated_KiB": 56032,
+            "bytes": 57376768
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-status-20261024",
+            "allocated_KiB": 54204,
+            "bytes": 55504896
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-rev5-20261024",
+            "allocated_KiB": 53664,
+            "bytes": 54951936
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s7-review",
+            "allocated_KiB": 23232,
+            "bytes": 23789568
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s7-bundles",
+            "allocated_KiB": 22900,
+            "bytes": 23449600
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-inputs-20261024",
+            "allocated_KiB": 18476,
+            "bytes": 18919424
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-inputs-20261024",
+            "allocated_KiB": 18064,
+            "bytes": 18497536
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles",
+            "allocated_KiB": 16880,
+            "bytes": 17285120
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s9-review",
+            "allocated_KiB": 10888,
+            "bytes": 11149312
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-review",
+            "allocated_KiB": 10888,
+            "bytes": 11149312
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s9-bundles",
+            "allocated_KiB": 10804,
+            "bytes": 11063296
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-bundles",
+            "allocated_KiB": 10800,
+            "bytes": 11059200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-inputs",
+            "allocated_KiB": 8628,
+            "bytes": 8835072
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s9-inputs",
+            "allocated_KiB": 8584,
+            "bytes": 8790016
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-inputs-20261024",
+            "allocated_KiB": 6484,
+            "bytes": 6639616
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r6",
+            "allocated_KiB": 6104,
+            "bytes": 6250496
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-review-20261024",
+            "allocated_KiB": 2556,
+            "bytes": 2617344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r3",
+            "allocated_KiB": 392,
+            "bytes": 401408
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-review-20261024",
+            "allocated_KiB": 192,
+            "bytes": 196608
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-bundles-20261024",
+            "allocated_KiB": 180,
+            "bytes": 184320
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-memo-performance-20261020.manifest.json",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          }
+        ]
+      },
+      "home_fresh_except_Project_and_reused_paths": {
+        "bytes": 25788895232,
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/.aside",
+            "allocated_KiB": 7199388,
+            "bytes": 7372173312
+          },
+          {
+            "path": "/Users/zenkim_office/.npm",
+            "allocated_KiB": 6287592,
+            "bytes": 6438494208
+          },
+          {
+            "path": "/Users/zenkim_office/.cache",
+            "allocated_KiB": 4025920,
+            "bytes": 4122542080
+          },
+          {
+            "path": "/Users/zenkim_office/Pictures",
+            "allocated_KiB": 3143232,
+            "bytes": 3218669568
+          },
+          {
+            "path": "/Users/zenkim_office/.local",
+            "allocated_KiB": 1588348,
+            "bytes": 1626468352
+          },
+          {
+            "path": "/Users/zenkim_office/wt-archive-20261008",
+            "allocated_KiB": 1575404,
+            "bytes": 1613213696
+          },
+          {
+            "path": "/Users/zenkim_office/Music",
+            "allocated_KiB": 1068100,
+            "bytes": 1093734400
+          },
+          {
+            "path": "/Users/zenkim_office/.cherrystudio",
+            "allocated_KiB": 213292,
+            "bytes": 218411008
+          },
+          {
+            "path": "/Users/zenkim_office/.pencil",
+            "allocated_KiB": 22336,
+            "bytes": 22872064
+          },
+          {
+            "path": "/Users/zenkim_office/Documents",
+            "allocated_KiB": 14728,
+            "bytes": 15081472
+          },
+          {
+            "path": "/Users/zenkim_office/.venv",
+            "allocated_KiB": 13204,
+            "bytes": 13520896
+          },
+          {
+            "path": "/Users/zenkim_office/.ai",
+            "allocated_KiB": 12744,
+            "bytes": 13049856
+          },
+          {
+            "path": "/Users/zenkim_office/Applications",
+            "allocated_KiB": 6932,
+            "bytes": 7098368
+          },
+          {
+            "path": "/Users/zenkim_office/tmp",
+            "allocated_KiB": 6588,
+            "bytes": 6746112
+          },
+          {
+            "path": "/Users/zenkim_office/.vscode",
+            "allocated_KiB": 3356,
+            "bytes": 3436544
+          },
+          {
+            "path": "/Users/zenkim_office/.claude-swap-backup",
+            "allocated_KiB": 624,
+            "bytes": 638976
+          },
+          {
+            "path": "/Users/zenkim_office/.openclaw",
+            "allocated_KiB": 500,
+            "bytes": 512000
+          },
+          {
+            "path": "/Users/zenkim_office/.matplotlib",
+            "allocated_KiB": 404,
+            "bytes": 413696
+          },
+          {
+            "path": "/Users/zenkim_office/.agents",
+            "allocated_KiB": 360,
+            "bytes": 368640
+          },
+          {
+            "path": "/Users/zenkim_office/.ralph",
+            "allocated_KiB": 348,
+            "bytes": 356352
+          },
+          {
+            "path": "/Users/zenkim_office/.zsh_sessions",
+            "allocated_KiB": 280,
+            "bytes": 286720
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json",
+            "allocated_KiB": 108,
+            "bytes": 110592
+          },
+          {
+            "path": "/Users/zenkim_office/.config",
+            "allocated_KiB": 108,
+            "bytes": 110592
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup",
+            "allocated_KiB": 64,
+            "bytes": 65536
+          },
+          {
+            "path": "/Users/zenkim_office/.tailscale-userspace",
+            "allocated_KiB": 60,
+            "bytes": 61440
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472638",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472654",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472658",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775708491435",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775708492017",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.zsh_history",
+            "allocated_KiB": 28,
+            "bytes": 28672
+          },
+          {
+            "path": "/Users/zenkim_office/.ssh",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/.vscode-shared",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/report",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/.DS_Store",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/.bootstrap-backup-20260307150353",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/.cloudflared",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.hkg",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.wizvera",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.copilot",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/.pi",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/Desktop",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/Public",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/.CFUserTextEncoding",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.cache-impact.json",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.cups",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.gemini",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.gitconfig",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.homebrew",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.kiro",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.moss",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.storybook",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.tmux.conf",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zprofile",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshenv",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshenv.bak-2026-08-26",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshrc",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshrc.bak-pat-1783238574",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.swiftpm",
+            "allocated_KiB": 0,
+            "bytes": 0
+          }
+        ]
+      }
+    },
+    "representative_CDS_worktree": {
+      "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+      "total_bytes": 7628345344,
+      "child_summaries": [
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/report",
+          "allocated_KiB": 5240992,
+          "bytes": 5366775808
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/assets",
+          "allocated_KiB": 1513676,
+          "bytes": 1550004224
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/review",
+          "allocated_KiB": 617832,
+          "bytes": 632659968
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/scripts",
+          "allocated_KiB": 51688,
+          "bytes": 52928512
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/reviews",
+          "allocated_KiB": 11168,
+          "bytes": 11436032
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.ai",
+          "allocated_KiB": 9812,
+          "bytes": 10047488
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.claude",
+          "allocated_KiB": 1324,
+          "bytes": 1355776
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/docs",
+          "allocated_KiB": 1308,
+          "bytes": 1339392
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/meetings",
+          "allocated_KiB": 796,
+          "bytes": 815104
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/research",
+          "allocated_KiB": 84,
+          "bytes": 86016
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.githooks",
+          "allocated_KiB": 32,
+          "bytes": 32768
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/inbox",
+          "allocated_KiB": 4,
+          "bytes": 4096
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.codex",
+          "allocated_KiB": 4,
+          "bytes": 4096
+        },
+        {
+          "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.agents",
+          "allocated_KiB": 0,
+          "bytes": 0
+        }
+      ],
+      "git_metadata_samples": [
+        {
+          "sample": "codex-oracle-bounded-read-20261024",
+          "git_file": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/.git",
+          "first_line": "gitdir: /Users/zenkim_office/Project/CDS/.git/worktrees/codex-oracle-bounded-read-20261024",
+          "resolved_gitdir": "/Users/zenkim_office/Project/CDS/.git/worktrees/codex-oracle-bounded-read-20261024",
+          "points_under_CDS_git_worktrees": true,
+          "gitdir_exists": true,
+          "gitdir_backlink_exists": true
+        },
+        {
+          "sample": "oracle-s7",
+          "git_file": "/Users/zenkim_office/Project/CDS-wt/oracle-s7/.git",
+          "first_line": "gitdir: /Users/zenkim_office/Project/CDS/.git/worktrees/oracle-s7",
+          "resolved_gitdir": "/Users/zenkim_office/Project/CDS/.git/worktrees/oracle-s7",
+          "points_under_CDS_git_worktrees": true,
+          "gitdir_exists": true,
+          "gitdir_backlink_exists": true
+        }
+      ],
+      "interpretation": "For the sampled worktree, report/assets/review account for nearly all reported size. Two .git pointer files reference existing ~/Project/CDS/.git/worktrees registration directories. This is not a claim about data uniqueness or safe deletion."
+    },
+    "earlier_session_measurements": [
+      {
+        "path": "/Users/zenkim_office/Library",
+        "approx_GB": 67.43,
+        "source": "earlier_session_measurement",
+        "raw_command_evidence_available_to_this_worker": false
+      },
+      {
+        "path": "/Users/zenkim_office/.claude",
+        "approx_GB": 45.15,
+        "source": "earlier_session_measurement",
+        "raw_command_evidence_available_to_this_worker": false
+      },
+      {
+        "path": "/Users/zenkim_office/.codex",
+        "approx_GB": 12.2,
+        "source": "earlier_session_measurement",
+        "raw_command_evidence_available_to_this_worker": false
+      },
+      {
+        "path": "/private/tmp",
+        "approx_GB": 110.64,
+        "source": "earlier_session_measurement",
+        "raw_command_evidence_available_to_this_worker": false
+      },
+      {
+        "path": "/Library",
+        "approx_GiB": 9.55,
+        "source": "earlier_session_measurement",
+        "raw_command_evidence_available_to_this_worker": false
+      },
+      {
+        "paths": [
+          "/Users/zenkim_office/Downloads",
+          "/Users/zenkim_office/Movies",
+          "/Users/zenkim_office/.Trash"
+        ],
+        "size": "controller reported very small; exact raw sizes unavailable to this worker",
+        "source": "earlier_session_measurement"
+      }
+    ],
+    "coverage": {
+      "Project": {
+        "direct_inventory_count": 19,
+        "all_direct_paths_measured": true,
+        "paths": [
+          "/Users/zenkim_office/Project/CDS-wt",
+          "/Users/zenkim_office/Project/CDS",
+          "/Users/zenkim_office/Project/wavvy",
+          "/Users/zenkim_office/Project/challify-worktrees",
+          "/Users/zenkim_office/Project/challify-context",
+          "/Users/zenkim_office/Project/plumlabs-context",
+          "/Users/zenkim_office/Project/plum-ds",
+          "/Users/zenkim_office/Project/agent-center",
+          "/Users/zenkim_office/Project/challify-context.wt-w93-cds-policy-sync-skill",
+          "/Users/zenkim_office/Project/pm-ops",
+          "/Users/zenkim_office/Project/plumlabs-backoffice",
+          "/Users/zenkim_office/Project/AIZen",
+          "/Users/zenkim_office/Project/AX-CENTER",
+          "/Users/zenkim_office/Project/challify-precbt-site-20261024",
+          "/Users/zenkim_office/Project/lenny",
+          "/Users/zenkim_office/Project/.DS_Store",
+          "/Users/zenkim_office/Project/.ai",
+          "/Users/zenkim_office/Project/.cds-pre-status.txt",
+          "/Users/zenkim_office/Project/agent-center-wt"
+        ],
+        "note": "Initial parent scan timed out, but subsequent disjoint direct child scans completed. Derived total is sum of directory/file path summaries."
+      },
+      "CDS_wt": {
+        "direct_inventory_count": 90,
+        "completed_paths": [
+          "/Users/zenkim_office/Project/CDS-wt/search-reedition",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-destinations-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-large-read-guidance-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-runtime-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s7",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-revise-bundle",
+          "/Users/zenkim_office/Project/CDS-wt/population-live-r2",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-r4-self-flow",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6c",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-p1-overlay",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-flow-source-text-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-figma-nested-descriptions-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-author-bounded-read-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-roundtrip-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-common-contract-r7-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-context-v2-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-smoke-batches-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-start-observe",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6d",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-overlay-host",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-panel-keys",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6b",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-waitpre-item",
+          "/Users/zenkim_office/Project/CDS-wt/search-t4-reapprove",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-data-fix",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-flowid-one",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-toast-wait",
+          "/Users/zenkim_office/Project/CDS-wt/sp5-record",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p2",
+          "/Users/zenkim_office/Project/CDS-wt/sp5-flow",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-int",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p3",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-pop",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-c",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p2b",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-a",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-b",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p1",
+          "/Users/zenkim_office/Project/CDS-wt/qa-skill-interim",
+          "/Users/zenkim_office/Project/CDS-wt/h12-measurer",
+          "/Users/zenkim_office/Project/CDS-wt/f3-dry",
+          "/Users/zenkim_office/Project/CDS-wt/search-mockups",
+          "/Users/zenkim_office/Project/CDS-wt/h10-smoke",
+          "/Users/zenkim_office/Project/CDS-wt/h8-int",
+          "/Users/zenkim_office/Project/CDS-wt/h7a-flow",
+          "/Users/zenkim_office/Project/CDS-wt/h7b-look",
+          "/Users/zenkim_office/Project/CDS-wt/h7b-base",
+          "/Users/zenkim_office/Project/CDS-wt/tc-reach",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-home-viewed-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-preconditions-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-guidance-tests-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-decision-context-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-compaction-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-common-preparation-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r4",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r2",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-review-r1",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-review-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-context-v3-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r5",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-sidecar-read-view-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-launch-newline-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-exec-pragma-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-pair-read-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/search-qa-evidence-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-status-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-rev5-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s7-review",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s7-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-inputs-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-inputs-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s9-review",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-review",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s9-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-inputs",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s9-inputs",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-inputs-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r6",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-review-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r3",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-review-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-memo-performance-20261020.manifest.json"
+        ],
+        "unmeasured_paths": [],
+        "note": "26 direct child summaries from partial parent scan and 64 remaining disjoint child summaries from five completed batches; representative rescan excluded from total."
+      },
+      "Users": {
+        "direct_inventory_paths": [
+          "/Users/zenkim_office",
+          "/Users/Shared",
+          "/Users/.localized"
+        ],
+        "other_user_home_directories": [],
+        "Shared_fresh_measured": true,
+        "localized_lstat_allocated_bytes": 0
+      },
+      "Applications": {
+        "root": "/Applications",
+        "all_direct_entries_in_initial_inventory": 31,
+        "raw_scan_completed": true,
+        "note": "28 real app/directory subtrees plus regular metadata files measured; Safari.app symlink not followed."
+      },
+      "home": {
+        "reused_or_excluded": [
+          "Library",
+          ".claude",
+          ".codex",
+          "Downloads",
+          "Movies",
+          ".Trash"
+        ],
+        "symlinks_skipped": [
+          "AGENTS.md",
+          "CLAUDE.md"
+        ],
+        "note": "All remaining non-symlink top-level entries freshly measured; Project covered by disjoint child summaries."
+      },
+      "Data_direct": {
+        "measured_or_attempted": [
+          "/System/Volumes/Data/.DocumentRevisions-V100",
+          "/System/Volumes/Data/.PreviousSystemInformation",
+          "/System/Volumes/Data/.Spotlight-V100",
+          "/System/Volumes/Data/.TemporaryItems",
+          "/System/Volumes/Data/.adobeTemp",
+          "/System/Volumes/Data/.com.apple.templatemigration.boot-install",
+          "/System/Volumes/Data/.fseventsd",
+          "/System/Volumes/Data/MobileSoftwareUpdate",
+          "/System/Volumes/Data/System",
+          "/System/Volumes/Data/cores",
+          "/System/Volumes/Data/opt",
+          "/System/Volumes/Data/pkg",
+          "/System/Volumes/Data/sw",
+          "/System/Volumes/Data/usr"
+        ],
+        "reused": [
+          "Library"
+        ],
+        "covered_elsewhere": [
+          "Users",
+          "Applications"
+        ],
+        "deliberately_not_recurred": [
+          "private",
+          "Volumes",
+          "mnt",
+          "home"
+        ],
+        "other_filesystem_or_symlink_skips": []
+      }
+    },
+    "commands": [
+      {
+        "scope": "home_unmeasured_top_level_initial_attempt",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/.CFUserTextEncoding",
+          "/Users/zenkim_office/.DS_Store",
+          "/Users/zenkim_office/.agents",
+          "/Users/zenkim_office/.ai",
+          "/Users/zenkim_office/.aside",
+          "/Users/zenkim_office/.bootstrap-backup-20260307150353",
+          "/Users/zenkim_office/.cache",
+          "/Users/zenkim_office/.cache-impact.json",
+          "/Users/zenkim_office/.cherrystudio",
+          "/Users/zenkim_office/.claude-swap-backup",
+          "/Users/zenkim_office/.claude.json",
+          "/Users/zenkim_office/.claude.json.backup",
+          "/Users/zenkim_office/.claude.json.backup.1775704472638",
+          "/Users/zenkim_office/.claude.json.backup.1775704472654",
+          "/Users/zenkim_office/.claude.json.backup.1775704472658",
+          "/Users/zenkim_office/.claude.json.backup.1775708491435",
+          "/Users/zenkim_office/.claude.json.backup.1775708492017",
+          "/Users/zenkim_office/.cloudflared",
+          "/Users/zenkim_office/.config",
+          "/Users/zenkim_office/.copilot",
+          "/Users/zenkim_office/.cups",
+          "/Users/zenkim_office/.gemini",
+          "/Users/zenkim_office/.gitconfig",
+          "/Users/zenkim_office/.hkg",
+          "/Users/zenkim_office/.homebrew",
+          "/Users/zenkim_office/.kiro",
+          "/Users/zenkim_office/.local",
+          "/Users/zenkim_office/.matplotlib",
+          "/Users/zenkim_office/.moss",
+          "/Users/zenkim_office/.npm",
+          "/Users/zenkim_office/.openclaw",
+          "/Users/zenkim_office/.pencil",
+          "/Users/zenkim_office/.pi",
+          "/Users/zenkim_office/.ralph",
+          "/Users/zenkim_office/.ssh",
+          "/Users/zenkim_office/.storybook",
+          "/Users/zenkim_office/.swiftpm",
+          "/Users/zenkim_office/.tailscale-userspace",
+          "/Users/zenkim_office/.tmux.conf",
+          "/Users/zenkim_office/.venv",
+          "/Users/zenkim_office/.vscode",
+          "/Users/zenkim_office/.vscode-shared",
+          "/Users/zenkim_office/.wizvera",
+          "/Users/zenkim_office/.zprofile",
+          "/Users/zenkim_office/.zsh_history",
+          "/Users/zenkim_office/.zsh_sessions",
+          "/Users/zenkim_office/.zshenv",
+          "/Users/zenkim_office/.zshenv.bak-2026-08-26",
+          "/Users/zenkim_office/.zshrc",
+          "/Users/zenkim_office/.zshrc.bak-pat-1783238574",
+          "/Users/zenkim_office/Applications",
+          "/Users/zenkim_office/Desktop",
+          "/Users/zenkim_office/Documents",
+          "/Users/zenkim_office/Music",
+          "/Users/zenkim_office/Pictures",
+          "/Users/zenkim_office/Project",
+          "/Users/zenkim_office/Public",
+          "/Users/zenkim_office/report",
+          "/Users/zenkim_office/tmp",
+          "/Users/zenkim_office/wt-archive-20261008"
+        ],
+        "duration_seconds": 52.005,
+        "exit_code": null,
+        "timeout": true,
+        "units": "allocated KiB (1024 bytes)",
+        "stdout_top10": [],
+        "stdout_line_count": 0,
+        "stderr_error_count": 0,
+        "stderr": "",
+        "result": "No usable summaries returned. Superseded by narrower completed scans; no zero-size inference."
+      },
+      {
+        "scope": "Data_direct_unmeasured_nonprivate",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/System/Volumes/Data/.DocumentRevisions-V100",
+          "/System/Volumes/Data/.PreviousSystemInformation",
+          "/System/Volumes/Data/.Spotlight-V100",
+          "/System/Volumes/Data/.TemporaryItems",
+          "/System/Volumes/Data/.adobeTemp",
+          "/System/Volumes/Data/.com.apple.templatemigration.boot-install",
+          "/System/Volumes/Data/.fseventsd",
+          "/System/Volumes/Data/MobileSoftwareUpdate",
+          "/System/Volumes/Data/System",
+          "/System/Volumes/Data/cores",
+          "/System/Volumes/Data/opt",
+          "/System/Volumes/Data/pkg",
+          "/System/Volumes/Data/sw",
+          "/System/Volumes/Data/usr"
+        ],
+        "duration_seconds": 3.413,
+        "exit_code": 1,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "excluded": [
+          "Applications",
+          "Library",
+          "Users",
+          "Volumes",
+          "home",
+          "mnt",
+          "private"
+        ],
+        "other_filesystem_or_symlink_skips": [],
+        "root_summaries": [
+          {
+            "path": "/System/Volumes/Data/System",
+            "allocated_KiB": 6419720,
+            "bytes": 6573793280
+          },
+          {
+            "path": "/System/Volumes/Data/opt",
+            "allocated_KiB": 4582604,
+            "bytes": 4692586496
+          },
+          {
+            "path": "/System/Volumes/Data/.adobeTemp",
+            "allocated_KiB": 31500,
+            "bytes": 32256000
+          },
+          {
+            "path": "/System/Volumes/Data/.PreviousSystemInformation",
+            "allocated_KiB": 4096,
+            "bytes": 4194304
+          },
+          {
+            "path": "/System/Volumes/Data/usr",
+            "allocated_KiB": 3192,
+            "bytes": 3268608
+          },
+          {
+            "path": "/System/Volumes/Data/.com.apple.templatemigration.boot-install",
+            "allocated_KiB": 972,
+            "bytes": 995328
+          },
+          {
+            "path": "/System/Volumes/Data/MobileSoftwareUpdate",
+            "allocated_KiB": 944,
+            "bytes": 966656
+          },
+          {
+            "path": "/System/Volumes/Data/.TemporaryItems",
+            "allocated_KiB": 0,
+            "bytes": 0
+          },
+          {
+            "path": "/System/Volumes/Data/cores",
+            "allocated_KiB": 0,
+            "bytes": 0
+          },
+          {
+            "path": "/System/Volumes/Data/pkg",
+            "allocated_KiB": 0,
+            "bytes": 0
+          },
+          {
+            "path": "/System/Volumes/Data/sw",
+            "allocated_KiB": 0,
+            "bytes": 0
+          }
+        ],
+        "requested_roots_without_summary": [
+          "/System/Volumes/Data/.DocumentRevisions-V100",
+          "/System/Volumes/Data/.Spotlight-V100",
+          "/System/Volumes/Data/.fseventsd"
+        ],
+        "stdout_top10": [
+          "6419720\t/System/Volumes/Data/System/Library",
+          "6419720\t/System/Volumes/Data/System",
+          "4582604\t/System/Volumes/Data/opt/homebrew",
+          "4582604\t/System/Volumes/Data/opt",
+          "31500\t/System/Volumes/Data/.adobeTemp/336D57F4-9152-4716-9DDA-457A7F4B103A",
+          "31500\t/System/Volumes/Data/.adobeTemp",
+          "4096\t/System/Volumes/Data/.PreviousSystemInformation",
+          "3192\t/System/Volumes/Data/usr",
+          "2156\t/System/Volumes/Data/usr/libexec",
+          "1032\t/System/Volumes/Data/usr/share"
+        ],
+        "stdout_line_count": 19,
+        "stderr_error_count": 9,
+        "stderr": "du: /System/Volumes/Data/.DocumentRevisions-V100: Permission denied\ndu: /System/Volumes/Data/.Spotlight-V100: Permission denied\ndu: /System/Volumes/Data/.fseventsd: Permission denied\ndu: /System/Volumes/Data/System/Library/AssetsV2/com_apple_MobileAsset_UAF_FM_Visual: Operation not permitted\ndu: /System/Volumes/Data/System/Library/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels: Operation not permitted\ndu: /System/Volumes/Data/System/Library/AssetsV2/com_apple_MobileAsset_UAF_IF_Planner: Operation not permitted\ndu: /System/Volumes/Data/System/Library/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides: Operation not permitted\ndu: /System/Volumes/Data/System/Library/AssetsV2/com_apple_MobileAsset_UAF_FM_CodeLM: Operation not permitted\ndu: /System/Volumes/Data/System/Library/Caches/com.apple.coresymbolicationd: Permission denied\n"
+      },
+      {
+        "scope": "home_unmeasured_except_Project",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/.CFUserTextEncoding",
+          "/Users/zenkim_office/.DS_Store",
+          "/Users/zenkim_office/.agents",
+          "/Users/zenkim_office/.ai",
+          "/Users/zenkim_office/.aside",
+          "/Users/zenkim_office/.bootstrap-backup-20260307150353",
+          "/Users/zenkim_office/.cache",
+          "/Users/zenkim_office/.cache-impact.json",
+          "/Users/zenkim_office/.cherrystudio",
+          "/Users/zenkim_office/.claude-swap-backup",
+          "/Users/zenkim_office/.claude.json",
+          "/Users/zenkim_office/.claude.json.backup",
+          "/Users/zenkim_office/.claude.json.backup.1775704472638",
+          "/Users/zenkim_office/.claude.json.backup.1775704472654",
+          "/Users/zenkim_office/.claude.json.backup.1775704472658",
+          "/Users/zenkim_office/.claude.json.backup.1775708491435",
+          "/Users/zenkim_office/.claude.json.backup.1775708492017",
+          "/Users/zenkim_office/.cloudflared",
+          "/Users/zenkim_office/.config",
+          "/Users/zenkim_office/.copilot",
+          "/Users/zenkim_office/.cups",
+          "/Users/zenkim_office/.gemini",
+          "/Users/zenkim_office/.gitconfig",
+          "/Users/zenkim_office/.hkg",
+          "/Users/zenkim_office/.homebrew",
+          "/Users/zenkim_office/.kiro",
+          "/Users/zenkim_office/.local",
+          "/Users/zenkim_office/.matplotlib",
+          "/Users/zenkim_office/.moss",
+          "/Users/zenkim_office/.npm",
+          "/Users/zenkim_office/.openclaw",
+          "/Users/zenkim_office/.pencil",
+          "/Users/zenkim_office/.pi",
+          "/Users/zenkim_office/.ralph",
+          "/Users/zenkim_office/.ssh",
+          "/Users/zenkim_office/.storybook",
+          "/Users/zenkim_office/.swiftpm",
+          "/Users/zenkim_office/.tailscale-userspace",
+          "/Users/zenkim_office/.tmux.conf",
+          "/Users/zenkim_office/.venv",
+          "/Users/zenkim_office/.vscode",
+          "/Users/zenkim_office/.vscode-shared",
+          "/Users/zenkim_office/.wizvera",
+          "/Users/zenkim_office/.zprofile",
+          "/Users/zenkim_office/.zsh_history",
+          "/Users/zenkim_office/.zsh_sessions",
+          "/Users/zenkim_office/.zshenv",
+          "/Users/zenkim_office/.zshenv.bak-2026-08-26",
+          "/Users/zenkim_office/.zshrc",
+          "/Users/zenkim_office/.zshrc.bak-pat-1783238574",
+          "/Users/zenkim_office/Applications",
+          "/Users/zenkim_office/Desktop",
+          "/Users/zenkim_office/Documents",
+          "/Users/zenkim_office/Music",
+          "/Users/zenkim_office/Pictures",
+          "/Users/zenkim_office/Public",
+          "/Users/zenkim_office/report",
+          "/Users/zenkim_office/tmp",
+          "/Users/zenkim_office/wt-archive-20261008"
+        ],
+        "duration_seconds": 6.171,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/.aside",
+            "allocated_KiB": 7199388,
+            "bytes": 7372173312
+          },
+          {
+            "path": "/Users/zenkim_office/.npm",
+            "allocated_KiB": 6287592,
+            "bytes": 6438494208
+          },
+          {
+            "path": "/Users/zenkim_office/.cache",
+            "allocated_KiB": 4025920,
+            "bytes": 4122542080
+          },
+          {
+            "path": "/Users/zenkim_office/Pictures",
+            "allocated_KiB": 3143232,
+            "bytes": 3218669568
+          },
+          {
+            "path": "/Users/zenkim_office/.local",
+            "allocated_KiB": 1588348,
+            "bytes": 1626468352
+          },
+          {
+            "path": "/Users/zenkim_office/wt-archive-20261008",
+            "allocated_KiB": 1575404,
+            "bytes": 1613213696
+          },
+          {
+            "path": "/Users/zenkim_office/Music",
+            "allocated_KiB": 1068100,
+            "bytes": 1093734400
+          },
+          {
+            "path": "/Users/zenkim_office/.cherrystudio",
+            "allocated_KiB": 213292,
+            "bytes": 218411008
+          },
+          {
+            "path": "/Users/zenkim_office/.pencil",
+            "allocated_KiB": 22336,
+            "bytes": 22872064
+          },
+          {
+            "path": "/Users/zenkim_office/Documents",
+            "allocated_KiB": 14728,
+            "bytes": 15081472
+          },
+          {
+            "path": "/Users/zenkim_office/.venv",
+            "allocated_KiB": 13204,
+            "bytes": 13520896
+          },
+          {
+            "path": "/Users/zenkim_office/.ai",
+            "allocated_KiB": 12744,
+            "bytes": 13049856
+          },
+          {
+            "path": "/Users/zenkim_office/Applications",
+            "allocated_KiB": 6932,
+            "bytes": 7098368
+          },
+          {
+            "path": "/Users/zenkim_office/tmp",
+            "allocated_KiB": 6588,
+            "bytes": 6746112
+          },
+          {
+            "path": "/Users/zenkim_office/.vscode",
+            "allocated_KiB": 3356,
+            "bytes": 3436544
+          },
+          {
+            "path": "/Users/zenkim_office/.claude-swap-backup",
+            "allocated_KiB": 624,
+            "bytes": 638976
+          },
+          {
+            "path": "/Users/zenkim_office/.openclaw",
+            "allocated_KiB": 500,
+            "bytes": 512000
+          },
+          {
+            "path": "/Users/zenkim_office/.matplotlib",
+            "allocated_KiB": 404,
+            "bytes": 413696
+          },
+          {
+            "path": "/Users/zenkim_office/.agents",
+            "allocated_KiB": 360,
+            "bytes": 368640
+          },
+          {
+            "path": "/Users/zenkim_office/.ralph",
+            "allocated_KiB": 348,
+            "bytes": 356352
+          },
+          {
+            "path": "/Users/zenkim_office/.zsh_sessions",
+            "allocated_KiB": 280,
+            "bytes": 286720
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json",
+            "allocated_KiB": 108,
+            "bytes": 110592
+          },
+          {
+            "path": "/Users/zenkim_office/.config",
+            "allocated_KiB": 108,
+            "bytes": 110592
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup",
+            "allocated_KiB": 64,
+            "bytes": 65536
+          },
+          {
+            "path": "/Users/zenkim_office/.tailscale-userspace",
+            "allocated_KiB": 60,
+            "bytes": 61440
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472638",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472654",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775704472658",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775708491435",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.claude.json.backup.1775708492017",
+            "allocated_KiB": 36,
+            "bytes": 36864
+          },
+          {
+            "path": "/Users/zenkim_office/.zsh_history",
+            "allocated_KiB": 28,
+            "bytes": 28672
+          },
+          {
+            "path": "/Users/zenkim_office/.ssh",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/.vscode-shared",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/report",
+            "allocated_KiB": 24,
+            "bytes": 24576
+          },
+          {
+            "path": "/Users/zenkim_office/.DS_Store",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/.bootstrap-backup-20260307150353",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/.cloudflared",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.hkg",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.wizvera",
+            "allocated_KiB": 12,
+            "bytes": 12288
+          },
+          {
+            "path": "/Users/zenkim_office/.copilot",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/.pi",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/Desktop",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/Public",
+            "allocated_KiB": 8,
+            "bytes": 8192
+          },
+          {
+            "path": "/Users/zenkim_office/.CFUserTextEncoding",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.cache-impact.json",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.cups",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.gemini",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.gitconfig",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.homebrew",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.kiro",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.moss",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.storybook",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.tmux.conf",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zprofile",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshenv",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshenv.bak-2026-08-26",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshrc",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.zshrc.bak-pat-1783238574",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/.swiftpm",
+            "allocated_KiB": 0,
+            "bytes": 0
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "7199388\t/Users/zenkim_office/.aside",
+          "6465368\t/Users/zenkim_office/.aside/u",
+          "6287592\t/Users/zenkim_office/.npm",
+          "5780944\t/Users/zenkim_office/.npm/_cacache",
+          "4025920\t/Users/zenkim_office/.cache",
+          "3567824\t/Users/zenkim_office/.cache/codex-runtimes",
+          "3143232\t/Users/zenkim_office/Pictures",
+          "3143224\t/Users/zenkim_office/Pictures/Photos Library.photoslibrary",
+          "1588348\t/Users/zenkim_office/.local",
+          "1588304\t/Users/zenkim_office/.local/share"
+        ],
+        "stdout_line_count": 159,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "Project_top_level",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/Project"
+        ],
+        "duration_seconds": 52.002,
+        "exit_code": -9,
+        "timeout": true,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [],
+        "requested_roots_without_summary": [
+          "/Users/zenkim_office/Project"
+        ],
+        "stdout_top10": [
+          "6213780\t/Users/zenkim_office/Project/challify-context",
+          "364388\t/Users/zenkim_office/Project/challify-context.wt-w93-cds-policy-sync-skill",
+          "15504\t/Users/zenkim_office/Project/lenny"
+        ],
+        "stdout_line_count": 3,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "Applications_and_Shared_top_level",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Applications",
+          "/Users/Shared"
+        ],
+        "duration_seconds": 3.492,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Applications",
+            "allocated_KiB": 24880904,
+            "bytes": 25478045696
+          },
+          {
+            "path": "/Users/Shared",
+            "allocated_KiB": 13440,
+            "bytes": 13762560
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "24880904\t/Applications",
+          "6353460\t/Applications/Adobe Photoshop 2026",
+          "4882616\t/Applications/Xcode.app",
+          "1719616\t/Applications/ChatGPT.app",
+          "1655224\t/Applications/Aside.app",
+          "1505568\t/Applications/Visual Studio Code.app",
+          "1473856\t/Applications/Google Chrome.app",
+          "1047944\t/Applications/Cherry Studio.app",
+          "1000928\t/Applications/Pen.app",
+          "770340\t/Applications/GIMP.app"
+        ],
+        "stdout_line_count": 42,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "Project_remaining_except_CDS-wt_and_completed",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/Project/.DS_Store",
+          "/Users/zenkim_office/Project/.ai",
+          "/Users/zenkim_office/Project/.cds-pre-status.txt",
+          "/Users/zenkim_office/Project/AIZen",
+          "/Users/zenkim_office/Project/AX-CENTER",
+          "/Users/zenkim_office/Project/CDS",
+          "/Users/zenkim_office/Project/agent-center",
+          "/Users/zenkim_office/Project/agent-center-wt",
+          "/Users/zenkim_office/Project/challify-precbt-site-20261024",
+          "/Users/zenkim_office/Project/challify-worktrees",
+          "/Users/zenkim_office/Project/plum-ds",
+          "/Users/zenkim_office/Project/plumlabs-backoffice",
+          "/Users/zenkim_office/Project/plumlabs-context",
+          "/Users/zenkim_office/Project/pm-ops",
+          "/Users/zenkim_office/Project/wavvy"
+        ],
+        "duration_seconds": 13.484,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS",
+            "allocated_KiB": 56454612,
+            "bytes": 57809522688
+          },
+          {
+            "path": "/Users/zenkim_office/Project/wavvy",
+            "allocated_KiB": 11932008,
+            "bytes": 12218376192
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-worktrees",
+            "allocated_KiB": 7001084,
+            "bytes": 7169110016
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plumlabs-context",
+            "allocated_KiB": 3787884,
+            "bytes": 3878793216
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plum-ds",
+            "allocated_KiB": 2005952,
+            "bytes": 2054094848
+          },
+          {
+            "path": "/Users/zenkim_office/Project/agent-center",
+            "allocated_KiB": 914276,
+            "bytes": 936218624
+          },
+          {
+            "path": "/Users/zenkim_office/Project/pm-ops",
+            "allocated_KiB": 137724,
+            "bytes": 141029376
+          },
+          {
+            "path": "/Users/zenkim_office/Project/plumlabs-backoffice",
+            "allocated_KiB": 72292,
+            "bytes": 74027008
+          },
+          {
+            "path": "/Users/zenkim_office/Project/AIZen",
+            "allocated_KiB": 56896,
+            "bytes": 58261504
+          },
+          {
+            "path": "/Users/zenkim_office/Project/AX-CENTER",
+            "allocated_KiB": 51284,
+            "bytes": 52514816
+          },
+          {
+            "path": "/Users/zenkim_office/Project/challify-precbt-site-20261024",
+            "allocated_KiB": 47776,
+            "bytes": 48922624
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.DS_Store",
+            "allocated_KiB": 20,
+            "bytes": 20480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.ai",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          },
+          {
+            "path": "/Users/zenkim_office/Project/.cds-pre-status.txt",
+            "allocated_KiB": 0,
+            "bytes": 0
+          },
+          {
+            "path": "/Users/zenkim_office/Project/agent-center-wt",
+            "allocated_KiB": 0,
+            "bytes": 0
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "56454612\t/Users/zenkim_office/Project/CDS",
+          "39198936\t/Users/zenkim_office/Project/CDS/report",
+          "11932008\t/Users/zenkim_office/Project/wavvy",
+          "11869244\t/Users/zenkim_office/Project/CDS/.git",
+          "7268144\t/Users/zenkim_office/Project/wavvy/.git",
+          "7001084\t/Users/zenkim_office/Project/challify-worktrees",
+          "5557196\t/Users/zenkim_office/Project/challify-worktrees/sessions",
+          "4398244\t/Users/zenkim_office/Project/wavvy/SERIES",
+          "3787884\t/Users/zenkim_office/Project/plumlabs-context",
+          "2623504\t/Users/zenkim_office/Project/plumlabs-context/_ux-flows"
+        ],
+        "stdout_line_count": 199,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_and_CDS_report_detail",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/Project/CDS/report",
+          "/Users/zenkim_office/Project/CDS-wt"
+        ],
+        "duration_seconds": 52.007,
+        "exit_code": -9,
+        "timeout": true,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS/report",
+            "allocated_KiB": 39198936,
+            "bytes": 40139710464
+          }
+        ],
+        "requested_roots_without_summary": [
+          "/Users/zenkim_office/Project/CDS-wt"
+        ],
+        "stdout_top10": [
+          "39198936\t/Users/zenkim_office/Project/CDS/report",
+          "22643332\t/Users/zenkim_office/Project/CDS/report/2026-09-28_i1-rework",
+          "7492828\t/Users/zenkim_office/Project/CDS-wt/oracle-s7",
+          "7479384\t/Users/zenkim_office/Project/CDS-wt/oracle-revise-bundle",
+          "7473484\t/Users/zenkim_office/Project/CDS-wt/population-live-r2",
+          "7458960\t/Users/zenkim_office/Project/CDS-wt/oracle-s6c",
+          "7455512\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-p1-overlay",
+          "7449556\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+          "7448740\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-context-v2-20261024",
+          "7429492\t/Users/zenkim_office/Project/CDS-wt/oracle-s6d"
+        ],
+        "stdout_line_count": 544,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_remaining_batch1",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "0",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-int",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p1",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p2b",
+          "/Users/zenkim_office/Project/CDS-wt/bundle-p3",
+          "/Users/zenkim_office/Project/CDS-wt/codex-figma-nested-descriptions-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-flow-source-text-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-memo-performance-20261020.manifest.json",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-author-bounded-read-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-pair-read-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-status-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-common-contract-r7-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-compaction-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-decision-context-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-exec-pragma-20261024"
+        ],
+        "duration_seconds": 27.888,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-20261024",
+            "allocated_KiB": 7454464,
+            "bytes": 7633371136
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-flow-source-text-20261024",
+            "allocated_KiB": 7450372,
+            "bytes": 7629180928
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-figma-nested-descriptions-20261024",
+            "allocated_KiB": 7450356,
+            "bytes": 7629164544
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-author-bounded-read-20261024",
+            "allocated_KiB": 7450204,
+            "bytes": 7629008896
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-common-contract-r7-20261024",
+            "allocated_KiB": 7448800,
+            "bytes": 7627571200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-int",
+            "allocated_KiB": 7344996,
+            "bytes": 7521275904
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p3",
+            "allocated_KiB": 7343488,
+            "bytes": 7519731712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p2b",
+            "allocated_KiB": 7341188,
+            "bytes": 7517376512
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/bundle-p1",
+            "allocated_KiB": 7337668,
+            "bytes": 7513772032
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-decision-context-20261024",
+            "allocated_KiB": 5934156,
+            "bytes": 6076575744
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-compaction-20261024",
+            "allocated_KiB": 5934116,
+            "bytes": 6076534784
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-exec-pragma-20261024",
+            "allocated_KiB": 61064,
+            "bytes": 62529536
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-pair-read-20261024",
+            "allocated_KiB": 56844,
+            "bytes": 58208256
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-status-20261024",
+            "allocated_KiB": 54204,
+            "bytes": 55504896
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-memo-performance-20261020.manifest.json",
+            "allocated_KiB": 4,
+            "bytes": 4096
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "7454464\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-checked-write-20261024",
+          "7450372\t/Users/zenkim_office/Project/CDS-wt/codex-flow-source-text-20261024",
+          "7450356\t/Users/zenkim_office/Project/CDS-wt/codex-figma-nested-descriptions-20261024",
+          "7450204\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-author-bounded-read-20261024",
+          "7448800\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-common-contract-r7-20261024",
+          "7344996\t/Users/zenkim_office/Project/CDS-wt/bundle-int",
+          "7343488\t/Users/zenkim_office/Project/CDS-wt/bundle-p3",
+          "7341188\t/Users/zenkim_office/Project/CDS-wt/bundle-p2b",
+          "7337668\t/Users/zenkim_office/Project/CDS-wt/bundle-p1",
+          "5934156\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-decision-context-20261024"
+        ],
+        "stdout_line_count": 15,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_remaining_batch2",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "0",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-large-read-guidance-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-launch-newline-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-guidance-tests-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-rev5-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-runtime-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-sidecar-read-view-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-smoke-batches-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-roundtrip-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-common-preparation-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-destinations-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/codex-search-home-viewed-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/f3-dry",
+          "/Users/zenkim_office/Project/CDS-wt/h10-smoke",
+          "/Users/zenkim_office/Project/CDS-wt/h12-measurer",
+          "/Users/zenkim_office/Project/CDS-wt/h7a-flow"
+        ],
+        "duration_seconds": 26.742,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-destinations-20261024",
+            "allocated_KiB": 7512640,
+            "bytes": 7692943360
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-large-read-guidance-20261024",
+            "allocated_KiB": 7505248,
+            "bytes": 7685373952
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-runtime-20261024",
+            "allocated_KiB": 7503044,
+            "bytes": 7683117056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-roundtrip-20261024",
+            "allocated_KiB": 7449112,
+            "bytes": 7627890688
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-smoke-batches-20261024",
+            "allocated_KiB": 7448488,
+            "bytes": 7627251712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h12-measurer",
+            "allocated_KiB": 7288464,
+            "bytes": 7463387136
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/f3-dry",
+            "allocated_KiB": 7259052,
+            "bytes": 7433269248
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h10-smoke",
+            "allocated_KiB": 7250960,
+            "bytes": 7424983040
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7a-flow",
+            "allocated_KiB": 7217488,
+            "bytes": 7390707712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-home-viewed-20261024",
+            "allocated_KiB": 7006988,
+            "bytes": 7175155712
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-guidance-tests-20261024",
+            "allocated_KiB": 6637748,
+            "bytes": 6797053952
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-search-common-preparation-20261024",
+            "allocated_KiB": 2198512,
+            "bytes": 2251276288
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-sidecar-read-view-20261024",
+            "allocated_KiB": 63056,
+            "bytes": 64569344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-launch-newline-20261024",
+            "allocated_KiB": 62168,
+            "bytes": 63660032
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-read-rev5-20261024",
+            "allocated_KiB": 53664,
+            "bytes": 54951936
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "7512640\t/Users/zenkim_office/Project/CDS-wt/codex-search-destinations-20261024",
+          "7505248\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-large-read-guidance-20261024",
+          "7503044\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-runtime-20261024",
+          "7449112\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-state-roundtrip-20261024",
+          "7448488\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-smoke-batches-20261024",
+          "7288464\t/Users/zenkim_office/Project/CDS-wt/h12-measurer",
+          "7259052\t/Users/zenkim_office/Project/CDS-wt/f3-dry",
+          "7250960\t/Users/zenkim_office/Project/CDS-wt/h10-smoke",
+          "7217488\t/Users/zenkim_office/Project/CDS-wt/h7a-flow",
+          "7006988\t/Users/zenkim_office/Project/CDS-wt/codex-search-home-viewed-20261024"
+        ],
+        "stdout_line_count": 15,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_remaining_batch3",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "0",
+          "/Users/zenkim_office/Project/CDS-wt/h7b-base",
+          "/Users/zenkim_office/Project/CDS-wt/h7b-look",
+          "/Users/zenkim_office/Project/CDS-wt/h8-int",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-a",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-b",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-c",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-flowid-one",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-panel-keys",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-r4-self-flow",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-start-observe",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-fix-toast-wait",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-inputs-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-review-20261024"
+        ],
+        "duration_seconds": 27.52,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-r4-self-flow",
+            "allocated_KiB": 7459044,
+            "bytes": 7638061056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-start-observe",
+            "allocated_KiB": 7437520,
+            "bytes": 7616020480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-panel-keys",
+            "allocated_KiB": 7413460,
+            "bytes": 7591383040
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-flowid-one",
+            "allocated_KiB": 7405300,
+            "bytes": 7583027200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-fix-toast-wait",
+            "allocated_KiB": 7405020,
+            "bytes": 7582740480
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-c",
+            "allocated_KiB": 7342212,
+            "bytes": 7518425088
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-a",
+            "allocated_KiB": 7340236,
+            "bytes": 7516401664
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-b",
+            "allocated_KiB": 7337812,
+            "bytes": 7513919488
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h8-int",
+            "allocated_KiB": 7244756,
+            "bytes": 7418630144
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7b-look",
+            "allocated_KiB": 7216068,
+            "bytes": 7389253632
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/h7b-base",
+            "allocated_KiB": 7216028,
+            "bytes": 7389212672
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-bundles-20261024",
+            "allocated_KiB": 106740,
+            "bytes": 109301760
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-inputs-20261024",
+            "allocated_KiB": 18476,
+            "bytes": 18919424
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-review-20261024",
+            "allocated_KiB": 192,
+            "bytes": 196608
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-r2-bundles-20261024",
+            "allocated_KiB": 180,
+            "bytes": 184320
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "7459044\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-r4-self-flow",
+          "7437520\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-start-observe",
+          "7413460\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-panel-keys",
+          "7405300\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-flowid-one",
+          "7405020\t/Users/zenkim_office/Project/CDS-wt/oracle-fix-toast-wait",
+          "7342212\t/Users/zenkim_office/Project/CDS-wt/oracle-c",
+          "7340236\t/Users/zenkim_office/Project/CDS-wt/oracle-a",
+          "7337812\t/Users/zenkim_office/Project/CDS-wt/oracle-b",
+          "7244756\t/Users/zenkim_office/Project/CDS-wt/h8-int",
+          "7216068\t/Users/zenkim_office/Project/CDS-wt/h7b-look"
+        ],
+        "stdout_line_count": 15,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_remaining_batch4",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "0",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-next24-review-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-pop",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-bundles-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-inputs-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r2",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r3",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r4",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r5",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s6b",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s7-review",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-bundles",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-inputs",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s8-review",
+          "/Users/zenkim_office/Project/CDS-wt/oracle-s9-bundles"
+        ],
+        "duration_seconds": 5.433,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6b",
+            "allocated_KiB": 7412384,
+            "bytes": 7590281216
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-pop",
+            "allocated_KiB": 7342304,
+            "bytes": 7518519296
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r4",
+            "allocated_KiB": 320044,
+            "bytes": 327725056
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r2",
+            "allocated_KiB": 318864,
+            "bytes": 326516736
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-bundles-20261024",
+            "allocated_KiB": 109500,
+            "bytes": 112128000
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r5",
+            "allocated_KiB": 78148,
+            "bytes": 80023552
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s7-review",
+            "allocated_KiB": 23232,
+            "bytes": 23789568
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-rev6-inputs-20261024",
+            "allocated_KiB": 18064,
+            "bytes": 18497536
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles",
+            "allocated_KiB": 16880,
+            "bytes": 17285120
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-review",
+            "allocated_KiB": 10888,
+            "bytes": 11149312
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s9-bundles",
+            "allocated_KiB": 10804,
+            "bytes": 11063296
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-bundles",
+            "allocated_KiB": 10800,
+            "bytes": 11059200
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s8-inputs",
+            "allocated_KiB": 8628,
+            "bytes": 8835072
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-next24-review-20261024",
+            "allocated_KiB": 2556,
+            "bytes": 2617344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r3",
+            "allocated_KiB": 392,
+            "bytes": 401408
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "7412384\t/Users/zenkim_office/Project/CDS-wt/oracle-s6b",
+          "7342304\t/Users/zenkim_office/Project/CDS-wt/oracle-pop",
+          "320044\t/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r4",
+          "318864\t/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r2",
+          "109500\t/Users/zenkim_office/Project/CDS-wt/oracle-rev6-bundles-20261024",
+          "78148\t/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles-r5",
+          "23232\t/Users/zenkim_office/Project/CDS-wt/oracle-s7-review",
+          "18064\t/Users/zenkim_office/Project/CDS-wt/oracle-rev6-inputs-20261024",
+          "16880\t/Users/zenkim_office/Project/CDS-wt/oracle-s6-bundles",
+          "10888\t/Users/zenkim_office/Project/CDS-wt/oracle-s8-review"
+        ],
+        "stdout_line_count": 15,
+        "stderr_error_count": 0,
+        "stderr": ""
+      },
+      {
+        "scope": "CDS_wt_final4_and_representative_detail",
+        "command": [
+          "du",
+          "-x",
+          "-k",
+          "-d",
+          "1",
+          "/Users/zenkim_office/Project/CDS-wt/qa-skill-interim",
+          "/Users/zenkim_office/Project/CDS-wt/search-qa-evidence-20261024",
+          "/Users/zenkim_office/Project/CDS-wt/search-reedition",
+          "/Users/zenkim_office/Project/CDS-wt/sp5-flow",
+          "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024"
+        ],
+        "duration_seconds": 11.607,
+        "exit_code": 0,
+        "timeout": false,
+        "units": "allocated KiB (1024 bytes)",
+        "root_summaries": [
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-reedition",
+            "allocated_KiB": 8515492,
+            "bytes": 8719863808
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+            "allocated_KiB": 7449556,
+            "bytes": 7628345344
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/sp5-flow",
+            "allocated_KiB": 7353280,
+            "bytes": 7529758720
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/qa-skill-interim",
+            "allocated_KiB": 7313372,
+            "bytes": 7488892928
+          },
+          {
+            "path": "/Users/zenkim_office/Project/CDS-wt/search-qa-evidence-20261024",
+            "allocated_KiB": 56032,
+            "bytes": 57376768
+          }
+        ],
+        "requested_roots_without_summary": [],
+        "stdout_top10": [
+          "8515492\t/Users/zenkim_office/Project/CDS-wt/search-reedition",
+          "7449556\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024",
+          "7353280\t/Users/zenkim_office/Project/CDS-wt/sp5-flow",
+          "7313372\t/Users/zenkim_office/Project/CDS-wt/qa-skill-interim",
+          "6243140\t/Users/zenkim_office/Project/CDS-wt/search-reedition/report",
+          "5240992\t/Users/zenkim_office/Project/CDS-wt/codex-oracle-bounded-read-20261024/report",
+          "5143000\t/Users/zenkim_office/Project/CDS-wt/sp5-flow/report",
+          "5105272\t/Users/zenkim_office/Project/CDS-wt/qa-skill-interim/report",
+          "1570296\t/Users/zenkim_office/Project/CDS-wt/search-reedition/assets",
+          "1520040\t/Users/zenkim_office/Project/CDS-wt/sp5-flow/assets"
+        ],
+        "stdout_line_count": 63,
+        "stderr_error_count": 0,
+        "stderr": ""
+      }
+    ],
+    "limitations": [
+      "System Settings System Data is a UI classification. No measured folder total is asserted equal to that category or its 772.07 GB value.",
+      "du reports per-path block accounting. APFS clone/shared extents and cross-batch hard links may make aggregate path size differ from unique physical storage; no physical reclaim amount is established.",
+      "Fresh Project/CDS-wt/Applications/home measurements were not an atomic snapshot; active processes could change files during observation.",
+      "Data .DocumentRevisions-V100, .Spotlight-V100, .fseventsd were unreadable. System subtree totals are partial due five protected AssetsV2 directories and coresymbolicationd cache denial. Permission denial means unmeasured, not zero.",
+      "/private/var/folders was assigned to another worker and was not traversed by this worker. Earlier measurements were reused only as labeled; no fresh parent Data recursive total was attempted.",
+      "No personal file content was inspected. Only folder/file metadata and two .git registration pointer lines were read.",
+      "No safe-to-delete, no-unique-data, System Data category attribution, or actual reclaim-size conclusion is made."
+    ]
+  }
+}

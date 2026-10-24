@@ -1,0 +1,202 @@
+{
+  "schema": "wavvy.cleanup-state-write-check.v1",
+  "at_utc": "2026-10-24T02:32:45.637735+00:00",
+  "state_before": {
+    "sha256": "eb8fec35441820de3fbb38632dd814d498afd9211a433b09f6610e3b6d4a1f42",
+    "content": {
+      "schema": "wavvy.state.v1",
+      "revision": 84,
+      "updated_at": "2026-10-24T01:59:06",
+      "active_series": "SERIES/06-30",
+      "phase": "track_source_draft",
+      "inferred_phase": "track_source_draft",
+      "next_action": "Review existing track source drafts and follow the next source work in concept.md.",
+      "artifact_status": {
+        "concept_md": "present",
+        "final_track_sources": "missing",
+        "selected_audio_sources": "missing",
+        "final_track_sources_count": 0,
+        "report_json": "missing",
+        "report_tracks": 0,
+        "audio_files": 20,
+        "available_audio_files": 20,
+        "audio_source": "input_tracks",
+        "source_map": "missing",
+        "source_map_tracks": 0,
+        "source_map_audio_files": 0,
+        "source_map_missing": [],
+        "txt_sources": 20,
+        "final_mkv": "missing",
+        "upload_csv": "missing",
+        "subtitle_txt": "missing",
+        "subtitle_srt": "missing",
+        "youtube_metadata": "missing",
+        "youtube_upload": "missing",
+        "lyric_skill_package": "present",
+        "lyric_skill_files": {
+          "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",
+          "skills/wavvy-lyricist/SKILL.md": "present",
+          "skills/wavvy-lyricist/references/patterns.md": "present"
+        },
+        "subtitle_prepared": "unverified",
+        "subtitle_published": "unverified",
+        "timed_subtitles_required": false
+      },
+      "subtitle_status": {
+        "prepared": "unverified",
+        "published": "unverified"
+      },
+      "authoritative_docs": [
+        "MASTER/SSOT.md",
+        "MASTER/ai/RUNTIME_RULES.md",
+        "MASTER/MANAGER.md",
+        "MASTER/WORKFLOWS.md",
+        "MASTER/cli/SPEC.md",
+        "MASTER/youtube/YOUTUBE.md",
+        "wavvy.md",
+        "SERIES/06-30/concept.md"
+      ],
+      "evidence_refs": [
+        "MASTER/SSOT.md",
+        "MASTER/ai/RUNTIME_RULES.md",
+        "MASTER/MANAGER.md",
+        "MASTER/WORKFLOWS.md",
+        "MASTER/cli/SPEC.md",
+        "MASTER/youtube/YOUTUBE.md",
+        "wavvy.md",
+        "SERIES/06-30/concept.md",
+        "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+        "skills/wavvy-lyricist/SKILL.md",
+        "skills/wavvy-lyricist/references/patterns.md"
+      ],
+      "blocked_by": []
+    }
+  },
+  "controls_before": {
+    "SERIES/06-30/input/download-manifest.json": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+    "SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+    "SERIES/06-30/output/continuous-mix-20261024/repeat2/manifest.json": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "wavvy.py",
+        "state",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Usage: wavvy.py state [OPTIONS] PATH\n\n  Inspect or write the active Wavvy state contract.\n\nOptions:\n  --check                         Validate .ai/state.json against current\n                                  filesystem evidence\n  --write                         Atomically write .ai/state.json from current\n                                  evidence\n  --phase [concept_draft|track_source_draft|source_final|render_final|upload_ready|uploaded]\n                                  Override/infer the phase for generated state\n  --if-match INTEGER              Only write when current state revision\n                                  matches\n  --json                          Print machine-readable JSON\n  --help                          Show this message and exit.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "wavvy.py",
+        "state",
+        "SERIES/06-30",
+        "--write",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"wavvy.state.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 85,\n    \"updated_at\": \"2026-10-24T11:32:46\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 2,\n      \"available_audio_files\": 2,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"unverified\",\n      \"subtitle_published\": \"unverified\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"unverified\",\n      \"published\": \"unverified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "wavvy.py",
+        "state",
+        "SERIES/06-30",
+        "--check",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 85,\n    \"updated_at\": \"2026-10-24T11:33:45\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 2,\n      \"available_audio_files\": 2,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"unverified\",\n      \"subtitle_published\": \"unverified\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"unverified\",\n      \"published\": \"unverified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+      "stderr": ""
+    }
+  ],
+  "state_after": {
+    "sha256": "641b6924015ac2f20c138c29b9983fc0f02d85c48e4fd7090e6f16a160d6237a",
+    "content": {
+      "schema": "wavvy.state.v1",
+      "revision": 85,
+      "updated_at": "2026-10-24T11:32:46",
+      "active_series": "SERIES/06-30",
+      "phase": "track_source_draft",
+      "inferred_phase": "track_source_draft",
+      "next_action": "Review existing track source drafts and follow the next source work in concept.md.",
+      "artifact_status": {
+        "concept_md": "present",
+        "final_track_sources": "missing",
+        "selected_audio_sources": "missing",
+        "final_track_sources_count": 0,
+        "report_json": "missing",
+        "report_tracks": 0,
+        "audio_files": 2,
+        "available_audio_files": 2,
+        "audio_source": "input_tracks",
+        "source_map": "missing",
+        "source_map_tracks": 0,
+        "source_map_audio_files": 0,
+        "source_map_missing": [],
+        "txt_sources": 20,
+        "final_mkv": "missing",
+        "upload_csv": "missing",
+        "subtitle_txt": "missing",
+        "subtitle_srt": "missing",
+        "youtube_metadata": "missing",
+        "youtube_upload": "missing",
+        "lyric_skill_package": "present",
+        "lyric_skill_files": {
+          "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",
+          "skills/wavvy-lyricist/SKILL.md": "present",
+          "skills/wavvy-lyricist/references/patterns.md": "present"
+        },
+        "subtitle_prepared": "unverified",
+        "subtitle_published": "unverified",
+        "timed_subtitles_required": false
+      },
+      "subtitle_status": {
+        "prepared": "unverified",
+        "published": "unverified"
+      },
+      "authoritative_docs": [
+        "MASTER/SSOT.md",
+        "MASTER/ai/RUNTIME_RULES.md",
+        "MASTER/MANAGER.md",
+        "MASTER/WORKFLOWS.md",
+        "MASTER/cli/SPEC.md",
+        "MASTER/youtube/YOUTUBE.md",
+        "wavvy.md",
+        "SERIES/06-30/concept.md"
+      ],
+      "evidence_refs": [
+        "MASTER/SSOT.md",
+        "MASTER/ai/RUNTIME_RULES.md",
+        "MASTER/MANAGER.md",
+        "MASTER/WORKFLOWS.md",
+        "MASTER/cli/SPEC.md",
+        "MASTER/youtube/YOUTUBE.md",
+        "wavvy.md",
+        "SERIES/06-30/concept.md",
+        "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+        "skills/wavvy-lyricist/SKILL.md",
+        "skills/wavvy-lyricist/references/patterns.md"
+      ],
+      "blocked_by": []
+    }
+  },
+  "controls_after": {
+    "SERIES/06-30/input/download-manifest.json": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+    "SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+    "SERIES/06-30/output/continuous-mix-20261024/repeat2/manifest.json": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1"
+  },
+  "controls_unchanged": true,
+  "next_action_option_supported": false,
+  "next_action_before": "Review existing track source drafts and follow the next source work in concept.md.",
+  "next_action_after": "Review existing track source drafts and follow the next source work in concept.md.",
+  "state_write_requested_once": true,
+  "check_exit_code": 0,
+  "next_action_assessment": "Existing generic instruction to follow current concept.md; no automatic download/regeneration instruction; CLI has no next_action override option."
+}

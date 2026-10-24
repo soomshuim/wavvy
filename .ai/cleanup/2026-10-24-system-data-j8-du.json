@@ -1,0 +1,179 @@
+{
+  "schema": "wavvy.system_data_readonly_diagnostic.v1",
+  "created_at_utc": "2026-10-24T02:31:36.600868+00:00",
+  "read_only": true,
+  "deletions": 0,
+  "scope": "Exact j8 account directory and its X child; no file contents read.",
+  "prior_claim_unverified": {
+    "account_du_gib_approx": 923,
+    "T_gib_approx": 24.66,
+    "C_gib_approx": 0.77,
+    "0_accessible_mib_approx": 4.97
+  },
+  "du_notes": [
+    "du -k reports KiB. Every row is a separate path total; child and parent rows must not be added together.",
+    "A timeout or permission errors mean reported values are partial accessible sizes.",
+    "The exact account path total is used only when a matching path row exists; the last child row is never treated as the account total."
+  ],
+  "runs": [
+    {
+      "started_at_utc": "2026-10-24T02:31:36.601169+00:00",
+      "command": [
+        "/usr/bin/du",
+        "-x",
+        "-k",
+        "-d",
+        "1",
+        "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X"
+      ],
+      "timeout_seconds": 55,
+      "elapsed_seconds": 21.018,
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout_raw": "1655224\t/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/at.studio.AsideBrowser.code_sign_clone\n940090808\t/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/com.google.Chrome.code_sign_clone\n941746032\t/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X\n",
+      "stderr_raw": "",
+      "stderr_line_count": 0,
+      "permission_error_count": 0,
+      "parsed_rows": [
+        {
+          "kib": 1655224,
+          "bytes_from_du_kib": 1694949376,
+          "gib": 1.5785446166992188,
+          "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/at.studio.AsideBrowser.code_sign_clone"
+        },
+        {
+          "kib": 940090808,
+          "bytes_from_du_kib": 962652987392,
+          "gib": 896.5404586791992,
+          "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/com.google.Chrome.code_sign_clone"
+        },
+        {
+          "kib": 941746032,
+          "bytes_from_du_kib": 964347936768,
+          "gib": 898.1190032958984,
+          "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X"
+        }
+      ],
+      "matching_target_total": {
+        "kib": 941746032,
+        "bytes_from_du_kib": 964347936768,
+        "gib": 898.1190032958984,
+        "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X"
+      },
+      "last_parsed_row": {
+        "kib": 941746032,
+        "bytes_from_du_kib": 964347936768,
+        "gib": 898.1190032958984,
+        "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X"
+      },
+      "last_row_is_target_total": true,
+      "largest_direct_children_max10": [
+        {
+          "kib": 940090808,
+          "bytes_from_du_kib": 962652987392,
+          "gib": 896.5404586791992,
+          "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/com.google.Chrome.code_sign_clone"
+        },
+        {
+          "kib": 1655224,
+          "bytes_from_du_kib": 1694949376,
+          "gib": 1.5785446166992188,
+          "path": "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/X/at.studio.AsideBrowser.code_sign_clone"
+        }
+      ],
+      "complete_accessible_traversal": true,
+      "full_authoritative_size": true
+    },
+    {
+      "started_at_utc": "2026-10-24T02:31:57.619135+00:00",
+      "command": [
+        "/usr/bin/du",
+        "-x",
+        "-k",
+        "-d",
+        "1",
+        "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn"
+      ],
+      "timeout_seconds": 55,
+      "elapsed_seconds": 55.007,
+      "exit_code": null,
+      "timed_out": true,
+      "stdout_raw": "",
+      "stderr_raw": "du: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.ScreenTimeAgent: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.lockoutagent: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.progressd/ClassKit: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.exchangesync: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.LaunchServices.dv: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/dmd: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.nsurlsessiond: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.SharedWebCredentials: Operation not permitted\ndu: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/0/com.apple.routined/dv: Operation not permitted\n",
+      "stderr_line_count": 9,
+      "permission_error_count": 9,
+      "parsed_rows": [],
+      "matching_target_total": null,
+      "last_parsed_row": null,
+      "last_row_is_target_total": false,
+      "largest_direct_children_max10": [],
+      "complete_accessible_traversal": false,
+      "full_authoritative_size": false
+    }
+  ],
+  "filesystem_observation": {
+    "df": {
+      "command": [
+        "df",
+        "-k",
+        "/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn"
+      ],
+      "exit_code": 0,
+      "stdout_raw": "Filesystem   1024-blocks      Used Available Capacity  iused     ifree %iused  Mounted on\n/dev/disk3s5   971350180 885329060  53099424    95% 21598927 530994240    4%   /System/Volumes/Data\n",
+      "stderr_raw": "",
+      "used_kib": 885329060,
+      "used_gib": 844.3155860900879,
+      "available_kib": 53099424,
+      "available_gib": 50.639556884765625
+    },
+    "diskutil": {
+      "command": [
+        "/usr/sbin/diskutil",
+        "info",
+        "-plist",
+        "/dev/disk3s5"
+      ],
+      "exit_code": 0,
+      "selected_filesystem_metadata": {
+        "FilesystemType": "apfs",
+        "FilesystemName": "APFS",
+        "MountPoint": "/System/Volumes/Data",
+        "VolumeName": "Macintosh HD - Data",
+        "APFSContainerFree": 54362890240,
+        "APFSContainerSize": 994662584320,
+        "APFSContainerReference": "disk3",
+        "DeviceIdentifier": "disk3s5"
+      },
+      "stderr_raw": "",
+      "first_subdirectory_info_probe_exit_code": 1,
+      "first_probe_note": "diskutil info did not accept the account subdirectory; the actual device from df was queried once successfully."
+    }
+  },
+  "conclusions": {
+    "confirmed": "X completed with exit 0 and no stderr. Its exact final target row is 941746032 KiB (898.1190032958984 GiB). The direct Chrome code_sign_clone child is 940090808 KiB (896.5404586791992 GiB); the AsideBrowser child is 1655224 KiB (1.5785446166992188 GiB).",
+    "account_923_gib_claim": "Not reproduced or refuted: account traversal reached the 55-second limit with no completed stdout rows, 9 permission errors, and no matching account total. No second traversal was attempted.",
+    "relationship_to_system_data_772_07gb": "Chrome-namespaced code_sign_clone is the dominant measured apparent directory and a strong investigation lead. This does not measure its exclusive physical allocation or prove it equals the Storage Settings System Data category.",
+    "double_counting_prevented": "No parent/child rows or independent folder totals were added together. The X total was read from the exact matching target final line.",
+    "physical_size_caveat": "The X/Chrome du count exceeds the current entire Data volume df-used count. Treating the du value as independently occupied/reclaimable bytes would be invalid. APFS supports clones sharing underlying blocks, which can explain such discrepancies in principle. Shared blocks of these exact files were not inspected, so clone accounting is a hypothesis, not a proven exclusive cause.",
+    "exclusive_physical_bytes": null,
+    "reclaimable_bytes": null,
+    "not_performed": [
+      "No file content inspection.",
+      "No processes or apps stopped.",
+      "No sudo.",
+      "No cache/clone/snapshot deletion.",
+      "No broad /private/var traversal.",
+      "No Wavvy cleanup candidate additions.",
+      "No second account traversal after timeout."
+    ]
+  },
+  "primary_documentation": [
+    {
+      "title": "About Apple File System — Apple Developer",
+      "url": "https://developer.apple.com/documentation/foundation/about-apple-file-system",
+      "supported_fact": "APFS clones initially share original data blocks; unmodified blocks remain shared after changes.",
+      "application_to_this_device": "diskutil reports APFS. Shared-block status of the measured code_sign_clone files was not directly established."
+    }
+  ],
+  "completed_at_utc": "2026-10-24T02:33:40.343136+00:00"
+}

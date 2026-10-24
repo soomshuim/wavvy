@@ -1,0 +1,3535 @@
+{
+  "schema": "wavvy.thumbnail_cleanup_inventory.v1",
+  "created_at_utc": "2026-10-24T02:18:54.343303+00:00",
+  "inventory_only": true,
+  "deletion_performed": false,
+  "restore_performed": false,
+  "worker": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "runtime_evidence": "/Users/zenkim_office/.codex/sessions/2026/10/24/rollout-2026-10-24T10-38-52-01a16b8f-8df2-7470-9784-a394c44b28ec.jsonl"
+  },
+  "authorization_context": {
+    "user_scope": "Wavvy 프로젝트와 Wavvy 임시 복사본 전체 (추천)",
+    "user_cleanup_quote": "썸네일 만들었던 프롬프트 중 최종 아닌 자료나 이런 것도 싹 삭제",
+    "controller_limit": "Prepare inventory only; controller will inspect exact list before any deletion.",
+    "current_0630_selection": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+    "current_0630_new_typography_final_exists": false
+  },
+  "classification_meaning": {
+    "delete_candidate": "Provisional exact-file deletion candidate; no deletion authorization is executed by this inventory.",
+    "protected": "Keep; provisional_protection means this inventory must never nominate it for deletion.",
+    "already_absent": "lstat found no file; no bytes reclaimed and no restoration. would_be_classification records its prior role.",
+    "excluded_non_thumbnail": "Outside thumbnail draft scope; keep here and refer to controller/media worker.",
+    "excluded_uncertain": "Ownership/final status uncertain; keep.",
+    "excluded_symlink": "Do not follow target or delete through this inventory."
+  },
+  "scan": {
+    "repo_root": "/Users/zenkim_office/Project/wavvy",
+    "repository_walk_followlinks": false,
+    "repository_pruned_directory_names": [
+      ".git",
+      "node_modules",
+      "__pycache__"
+    ],
+    "repository_counts": {
+      "directories_seen": 1174,
+      "files_seen": 11098
+    },
+    "candidate_discovery": "Every non-pruned repository file inspected by name; raster/source image extensions or thumb/thumbnail/imagegen/art-draft/artwork names included. Text search also checked image-generation prompt markers.",
+    "bounded_external_discovery": [
+      {
+        "root": "/Users/zenkim_office/Project",
+        "max_depth": 3,
+        "purpose": "Wavvy-named temporary/copy directories; no additional copy root found."
+      },
+      {
+        "root": "/private/tmp",
+        "max_depth": 3,
+        "purpose": "Wavvy and thumbnail-specific filenames; only named video preview image handled above."
+      },
+      {
+        "root": "/Users/zenkim_office/.codex/tmp",
+        "max_depth": 3,
+        "purpose": "Wavvy temporary copies; none found."
+      },
+      {
+        "root": "/Users/zenkim_office/Library/Caches",
+        "max_depth": 2,
+        "purpose": "Name-only Wavvy cache discovery; generic thumbnail caches and application/MCP logs excluded."
+      }
+    ],
+    "external_generated_images_policy": "No recursive .codex/generated_images scan or whole-folder candidate. Inspect only exact paths in source_references.",
+    "errors": []
+  },
+  "protected_scope_rules": [
+    "All canonical existing SERIES/*/input/thumb raster files and loop.png, except absent rejected 06:30 artifacts, are protected.",
+    "Existing thumb.psd and thumb_origin.png are provisionally protected source art.",
+    "07:00 selected scene, final provenance/layout, final thumb/loop are protected. Rejected art-draft alone is a candidate.",
+    "17:00 selected loop-4k-candidate-v1.png is protected despite candidate in its filename.",
+    "17:30 user thumb, possible editable PSD, loop and final provenance are protected. Prior deletion receipt remains as audit.",
+    "06:30 only current selected tied-hair scene, its exact provenance and exact native generated output are protected image-work materials. Obsolete ancestors are not transitively protected.",
+    "brand/, MASTER/, scripts/, skills/, tests/, wavvy_harness/, wavvy.py, requirements.txt, AGENTS.md, CLAUDE.md, wavvy.md, concepts, lyrics, styles, planning and shared operational docs are outside deletion candidates.",
+    "System/user installed font files are not Wavvy temporary outputs and are excluded."
+  ],
+  "excluded_unrelated_or_uncertain_roots": [
+    {
+      "path": "/Users/zenkim_office/Project/agent-center",
+      "reason": "Unrelated repository and global agent rules/memory; not a Wavvy temporary copy."
+    },
+    {
+      "path": "/private/tmp/s*-wt",
+      "reason": "Other project worktree roots. Thumbnail word alone does not establish Wavvy ownership; excluded."
+    },
+    {
+      "path": ".ai/auto-handoff/",
+      "reason": "Historical planning/handoff archive; not classified as disposable image prompts."
+    },
+    {
+      "path": "/Users/zenkim_office/Library/Caches/org.freedesktop.thumbnails",
+      "reason": "Generic cross-application thumbnail cache; outside Wavvy-specific scope."
+    },
+    {
+      "path": "/Users/zenkim_office/Library/Caches/claude-cli-nodejs/-Users-zenkim-office-Project-wavvy",
+      "reason": "MCP application logs, not image-generation thumbnail artifacts; excluded from this inventory."
+    }
+  ],
+  "source_references": [
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json",
+      "json_pointer": "/generation/source_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-9dee2185-b804-4000-af7d-f6effb7a3ec4.png",
+      "selected": false
+    },
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v3.json",
+      "json_pointer": "/generation/source_output_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e2753c4d-0bae-4b46-8c2b-e8f34abf6b48.png",
+      "selected": false
+    },
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json",
+      "json_pointer": "/generation/source_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-ca51007e-33ee-4d1e-b0c5-1a53bce34150.png",
+      "selected": false
+    },
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-runningwear-20261024.json",
+      "json_pointer": "/generation/source_output_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-40f4629f-bdd5-4fa9-874b-1d8a3c894580.png",
+      "selected": false
+    },
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-runningwear-headband-20261024.json",
+      "json_pointer": "/generation/source_output_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e53d479f-b5d9-41cd-8872-3c65e6743932.png",
+      "selected": false
+    },
+    {
+      "provenance": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json",
+      "json_pointer": "/generation/source_output_path",
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-25232fa8-ccd9-4104-8f90-de3d79c179ae.png",
+      "selected": true
+    }
+  ],
+  "summary_by_classification": {
+    "already_absent": {
+      "entries": 25,
+      "existing_regular_files": 0,
+      "logical_bytes": 0,
+      "unique_inode_files": 0,
+      "unique_inode_logical_bytes": 0,
+      "allocated_bytes_stat_blocks": 0
+    },
+    "delete_candidate": {
+      "entries": 21,
+      "existing_regular_files": 21,
+      "logical_bytes": 16677259,
+      "unique_inode_files": 21,
+      "unique_inode_logical_bytes": 16677259,
+      "allocated_bytes_stat_blocks": 16723968
+    },
+    "excluded_non_thumbnail": {
+      "entries": 40,
+      "existing_regular_files": 40,
+      "logical_bytes": 31498698,
+      "unique_inode_files": 40,
+      "unique_inode_logical_bytes": 31498698,
+      "allocated_bytes_stat_blocks": 31576064
+    },
+    "protected": {
+      "entries": 59,
+      "existing_regular_files": 59,
+      "logical_bytes": 592327004,
+      "unique_inode_files": 59,
+      "unique_inode_logical_bytes": 592327004,
+      "allocated_bytes_stat_blocks": 592453632
+    }
+  },
+  "candidate_regions": {
+    "generated_images_exact_references": {
+      "files": 5,
+      "logical_bytes": 11272611
+    },
+    "project": {
+      "files": 16,
+      "logical_bytes": 5404648
+    }
+  },
+  "snapshot_limitations": [
+    "Files may be changed or externally deleted after this stat snapshot. Revalidate exact path/type/device/inode/mtime/size before deletion.",
+    "statbytes is logical size; st_blocks allocation is not guaranteed reclaimable space on APFS because snapshots/clones may share storage.",
+    "No rejected prompt bodies were copied into this inventory. Only original file paths and classification evidence are recorded.",
+    "A canceled face-change generation had no delivered result and no recorded file path; it is not invented as a candidate.",
+    "External discovery was bounded and name-based; unrelated archives/copies that cannot be safely tied to Wavvy are excluded, not guessed."
+  ],
+  "entries": [
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-25232fa8-ccd9-4104-8f90-de3d79c179ae.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-25232fa8-ccd9-4104-8f90-de3d79c179ae.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "selected_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json#/generation/source_output_path",
+          "reason": "Exact native output of current selected no-band tied-hair image."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2131294,
+      "mtime": "2026-10-24T02:07:18.888700+00:00",
+      "mtime_ns": 1792807638888700206,
+      "inode": 461099571,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2134016
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-40f4629f-bdd5-4fa9-874b-1d8a3c894580.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-40f4629f-bdd5-4fa9-874b-1d8a3c894580.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-runningwear-20261024.json#/generation/source_output_path",
+          "reason": "Exact generated output of a superseded Wavvy 06:30 thumbnail iteration, directly referenced by its provenance. Do not generalize to its directory or unreferenced outputs."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2232776,
+      "mtime": "2026-10-24T01:57:31.966409+00:00",
+      "mtime_ns": 1792807051966409229,
+      "inode": 461091026,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2236416
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-9dee2185-b804-4000-af7d-f6effb7a3ec4.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-9dee2185-b804-4000-af7d-f6effb7a3ec4.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json#/generation/source_path",
+          "reason": "Exact generated output of a superseded Wavvy 06:30 thumbnail iteration, directly referenced by its provenance. Do not generalize to its directory or unreferenced outputs."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2405783,
+      "mtime": "2026-10-24T01:42:33.101161+00:00",
+      "mtime_ns": 1792806153101161410,
+      "inode": 461073252,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2408448
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-ca51007e-33ee-4d1e-b0c5-1a53bce34150.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-ca51007e-33ee-4d1e-b0c5-1a53bce34150.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json#/generation/source_path",
+          "reason": "Exact generated output of a superseded Wavvy 06:30 thumbnail iteration, directly referenced by its provenance. Do not generalize to its directory or unreferenced outputs."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2219009,
+      "mtime": "2026-10-24T01:40:42.726439+00:00",
+      "mtime_ns": 1792806042726438794,
+      "inode": 461068650,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2220032
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e2753c4d-0bae-4b46-8c2b-e8f34abf6b48.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e2753c4d-0bae-4b46-8c2b-e8f34abf6b48.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v3.json#/generation/source_output_path",
+          "reason": "Exact generated output of a superseded Wavvy 06:30 thumbnail iteration, directly referenced by its provenance. Do not generalize to its directory or unreferenced outputs."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2269593,
+      "mtime": "2026-10-24T01:54:00.003349+00:00",
+      "mtime_ns": 1792806840003349302,
+      "inode": 461088402,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2273280
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e53d479f-b5d9-41cd-8872-3c65e6743932.png",
+      "absolute_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-e53d479f-b5d9-41cd-8872-3c65e6743932.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_native_generated_output",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-runningwear-headband-20261024.json#/generation/source_output_path",
+          "reason": "Exact generated output of a superseded Wavvy 06:30 thumbnail iteration, directly referenced by its provenance. Do not generalize to its directory or unreferenced outputs."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2145450,
+      "mtime": "2026-10-24T01:59:06.665747+00:00",
+      "mtime_ns": 1792807146665747414,
+      "inode": 461092186,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2146304
+    },
+    {
+      "path": ".ai/reviews/2026-10-22-final-artwork-sequence-review.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/.ai/reviews/2026-10-22-final-artwork-sequence-review.md",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "operational_audit",
+      "evidence": [
+        {
+          "source": "controller no shared-docs modification scope",
+          "reason": "Formal review/audit record, not an image generation prompt or discarded scene. No shared documentation deletion assigned."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2613,
+      "mtime": "2026-10-22T08:37:20.453339+00:00",
+      "mtime_ns": 1792658240453338640,
+      "inode": 412852799,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": ".ai/reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/.ai/reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "operational_audit",
+      "evidence": [
+        {
+          "source": "controller no shared-docs modification scope",
+          "reason": "Formal review/audit record, not an image generation prompt or discarded scene. No shared documentation deletion assigned."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 982,
+      "mtime": "2026-10-22T08:55:30.716860+00:00",
+      "mtime_ns": 1792659330716859695,
+      "inode": 414096950,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "SERIES/04-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/04-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1806981,
+      "mtime": "2026-04-25T07:07:00.397954+00:00",
+      "mtime_ns": 1777100820397954514,
+      "inode": 23492318,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1810432
+    },
+    {
+      "path": "SERIES/04-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/04-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 21636187,
+      "mtime": "2026-04-25T07:07:00.442126+00:00",
+      "mtime_ns": 1777100820442126330,
+      "inode": 23492319,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 21639168
+    },
+    {
+      "path": "SERIES/06-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1141421,
+      "mtime": "2026-04-25T07:07:00.446289+00:00",
+      "mtime_ns": 1777100820446288563,
+      "inode": 23492320,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1142784
+    },
+    {
+      "path": "SERIES/06-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 44676034,
+      "mtime": "2026-04-25T07:07:00.535759+00:00",
+      "mtime_ns": 1777100820535759439,
+      "inode": 23492321,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 44679168
+    },
+    {
+      "path": "SERIES/06-00/input/thumb_origin.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-00/input/thumb_origin.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1583334,
+      "mtime": "2026-03-07T05:50:30.288337+00:00",
+      "mtime_ns": 1772862630288336744,
+      "inode": 17680121,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1585152
+    },
+    {
+      "path": "SERIES/06-30/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/loop.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-tiedhair-swift-paused-20261024.json",
+          "reason": "Old rejected headband background was externally absent; current tied-hair composition was never completed."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-tiedhair-swift-paused-20261024.json",
+          "reason": "Old rejected headband final was externally absent; current tied-hair composition was never completed."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "missing_project_draft",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json#/output/path",
+          "reason": "Referenced project copy is already absent; do not recreate or restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024-v3.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-hip-20261024-v3.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "missing_project_draft",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v3.json#/output/path",
+          "reason": "Referenced project copy is already absent; do not recreate or restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-hip-20261024.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-hip-20261024.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "missing_project_draft",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json#/output/path",
+          "reason": "Referenced project copy is already absent; do not recreate or restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-runningwear-20261024.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-20261024.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2232776,
+      "mtime": "2026-10-24T01:58:18.666759+00:00",
+      "mtime_ns": 1792807098666758554,
+      "inode": 461091633,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2236416
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-runningwear-headband-20261024.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-headband-20261024.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "missing_project_draft",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-draft-runningwear-headband-20261024.json#/output/path",
+          "reason": "Referenced project copy is already absent; do not recreate or restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "current_selected_scene",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Latest user-selected no-band short tied-hair scene; no completed new final typography exists."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2131294,
+      "mtime": "2026-10-24T02:09:08.823761+00:00",
+      "mtime_ns": 1792807748823760541,
+      "inode": 461117496,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2134016
+    },
+    {
+      "path": "SERIES/06-30/production/compose-thumbnail-20261024.py",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/compose-thumbnail-20261024.py",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 9487,
+      "mtime": "2026-10-24T02:02:30.660560+00:00",
+      "mtime_ns": 1792807350660559851,
+      "inode": 461093578,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "SERIES/06-30/production/compose-thumbnail-tiedhair-20261024.swift",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/compose-thumbnail-tiedhair-20261024.swift",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 13624,
+      "mtime": "2026-10-24T02:11:21.913395+00:00",
+      "mtime_ns": 1792807881913394669,
+      "inode": 461149180,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-hip-20261024-v2.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 7876,
+      "mtime": "2026-10-24T01:43:26.260257+00:00",
+      "mtime_ns": 1792806206260257352,
+      "inode": 461073565,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024-v3.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-hip-20261024-v3.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6440,
+      "mtime": "2026-10-24T01:54:50.313550+00:00",
+      "mtime_ns": 1792806890313549624,
+      "inode": 461088958,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-hip-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-hip-20261024.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6705,
+      "mtime": "2026-10-24T01:43:26.260053+00:00",
+      "mtime_ns": 1792806206260053441,
+      "inode": 461069036,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-runningwear-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-runningwear-20261024.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6041,
+      "mtime": "2026-10-24T01:58:18.674799+00:00",
+      "mtime_ns": 1792807098674799302,
+      "inode": 461091634,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-runningwear-headband-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-runningwear-headband-20261024.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 4311,
+      "mtime": "2026-10-24T02:00:37.309517+00:00",
+      "mtime_ns": 1792807237309517009,
+      "inode": 461092807,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "current_selected_provenance",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Exact current selected image prompt/reference/source/hash record; preserve without recursively protecting obsolete ancestors."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6272,
+      "mtime": "2026-10-24T02:09:08.852936+00:00",
+      "mtime_ns": 1792807748852936318,
+      "inode": 461117510,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-layout-rejected-headband-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-layout-rejected-headband-20261024.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6957,
+      "mtime": "2026-10-24T02:09:08.844923+00:00",
+      "mtime_ns": 1792807748844922987,
+      "inode": 461117509,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-layout-tiedhair-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-layout-tiedhair-20261024.json",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/06-30/production/thumbnail-tiedhair-swift-paused-20261024.json",
+          "reason": "Planned output of stopped Swift composition; not created."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-layout.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-layout.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6957,
+      "mtime": "2026-10-24T02:03:19.401180+00:00",
+      "mtime_ns": 1792807399401179464,
+      "inode": 461093587,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-phone-preview-20261024.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-phone-preview-20261024.jpg",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 31327,
+      "mtime": "2026-10-24T02:02:31.517710+00:00",
+      "mtime_ns": 1792807351517710155,
+      "inode": 461093586,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-phone-rejected-headband-20261024.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-phone-rejected-headband-20261024.jpg",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 31327,
+      "mtime": "2026-10-24T02:09:08.844181+00:00",
+      "mtime_ns": 1792807748844180964,
+      "inode": 461117508,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-rejected-headband-20261024.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-rejected-headband-20261024.jpg",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 637095,
+      "mtime": "2026-10-24T02:09:08.840174+00:00",
+      "mtime_ns": 1792807748840174361,
+      "inode": 461117507,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 638976
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-tiedhair-swift-font-failure-20261024.log",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-tiedhair-swift-font-failure-20261024.log",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 4850,
+      "mtime": "2026-10-24T02:13:01.146459+00:00",
+      "mtime_ns": 1792807981146459005,
+      "inode": 461152521,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-tiedhair-swift-paused-20261024.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/production/thumbnail-tiedhair-swift-paused-20261024.json",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "obsolete_0630_thumbnail_material",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Superseded/rejected 06:30 draft, old headband composite/layout/preview, or stopped/failed one-off renderer/log. Current chosen tied-hair photo and its exact provenance are explicitly protected separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 5343,
+      "mtime": "2026-10-24T02:13:01.147269+00:00",
+      "mtime_ns": 1792807981147269192,
+      "inode": 461150346,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/07-00/input/art-draft-2026-10-12.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/art-draft-2026-10-12.png",
+      "classification": "delete_candidate",
+      "provisional_protection": false,
+      "role": "rejected_scene",
+      "evidence": [
+        {
+          "source": "SERIES/07-00/concept.md:10; controller assignment 2026-10-24",
+          "reason": "Explicit rejected first draft; latest cleanup request supersedes old retain-as-history wording."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2393532,
+      "mtime": "2026-10-12T06:15:21.241132+00:00",
+      "mtime_ns": 1791785721241131843,
+      "inode": 270667549,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2396160
+    },
+    {
+      "path": "SERIES/07-00/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6786512,
+      "mtime": "2026-10-12T06:15:26.920372+00:00",
+      "mtime_ns": 1791785726920371557,
+      "inode": 270667634,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 6787072
+    },
+    {
+      "path": "SERIES/07-00/input/thumb-scene-dawn-2026-10-12.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb-scene-dawn-2026-10-12.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "selected_scene",
+      "evidence": [
+        {
+          "source": "SERIES/07-00/concept.md:10",
+          "reason": "Explicitly approved native scene used for final thumbnail and loop."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2038082,
+      "mtime": "2026-10-12T06:03:03.945349+00:00",
+      "mtime_ns": 1791784983945349526,
+      "inode": 270483137,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2039808
+    },
+    {
+      "path": "SERIES/07-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1513732,
+      "mtime": "2026-10-12T06:12:09.335903+00:00",
+      "mtime_ns": 1791785529335903415,
+      "inode": 270456362,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1515520
+    },
+    {
+      "path": "SERIES/07-00/input/thumbnail-layout.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-layout.json",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "final_provenance",
+      "evidence": [
+        {
+          "source": "SERIES/07-00/concept.md:120",
+          "reason": "Approved final layout and real brand asset/font record."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 707,
+      "mtime": "2026-10-12T06:55:23.756880+00:00",
+      "mtime_ns": 1791788123756879523,
+      "inode": 270934325,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "SERIES/07-00/input/thumbnail-reference-review-2026-10-12.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-reference-review-2026-10-12.md",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "final_provenance",
+      "evidence": [
+        {
+          "source": "SERIES/07-00/concept.md:10",
+          "reason": "Contains approved scene/final thumbnail/background hashes and production provenance; protect as a whole even though it also describes rejected history."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 5846,
+      "mtime": "2026-10-12T06:20:01.335004+00:00",
+      "mtime_ns": 1791786001335003804,
+      "inode": 270456752,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "SERIES/10-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/10-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1674742,
+      "mtime": "2026-03-07T05:50:31.846562+00:00",
+      "mtime_ns": 1772862631846561911,
+      "inode": 17680144,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1675264
+    },
+    {
+      "path": "SERIES/10-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/10-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 43565305,
+      "mtime": "2026-03-07T05:50:31.941496+00:00",
+      "mtime_ns": 1772862631941496008,
+      "inode": 17680145,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 43569152
+    },
+    {
+      "path": "SERIES/11-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/11-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 979569,
+      "mtime": "2026-04-25T07:07:00.537821+00:00",
+      "mtime_ns": 1777100820537821181,
+      "inode": 23492322,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 983040
+    },
+    {
+      "path": "SERIES/11-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/11-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 15671985,
+      "mtime": "2026-04-25T07:07:00.568544+00:00",
+      "mtime_ns": 1777100820568543719,
+      "inode": 23492323,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 15675392
+    },
+    {
+      "path": "SERIES/12-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/12-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2243225,
+      "mtime": "2026-03-23T00:31:45.375099+00:00",
+      "mtime_ns": 1774225905375098738,
+      "inode": 19547206,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2244608
+    },
+    {
+      "path": "SERIES/12-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/12-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 27963459,
+      "mtime": "2026-03-23T00:31:45.444624+00:00",
+      "mtime_ns": 1774225905444624365,
+      "inode": 19547207,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 27967488
+    },
+    {
+      "path": "SERIES/13-00/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 20228708,
+      "mtime": "2026-04-13T04:41:27.220025+00:00",
+      "mtime_ns": 1776055287220025093,
+      "inode": 21780214,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 20230144
+    },
+    {
+      "path": "SERIES/13-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2805348,
+      "mtime": "2026-04-25T07:07:12.486222+00:00",
+      "mtime_ns": 1777100832486222077,
+      "inode": 23492324,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2805760
+    },
+    {
+      "path": "SERIES/13-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/13-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 22487931,
+      "mtime": "2026-04-25T07:07:12.493453+00:00",
+      "mtime_ns": 1777100832493452839,
+      "inode": 23492294,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 22491136
+    },
+    {
+      "path": "SERIES/14-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/14-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1654697,
+      "mtime": "2026-04-25T07:07:00.574767+00:00",
+      "mtime_ns": 1777100820574766610,
+      "inode": 23492325,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1654784
+    },
+    {
+      "path": "SERIES/14-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/14-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 30346378,
+      "mtime": "2026-04-25T07:07:00.637077+00:00",
+      "mtime_ns": 1777100820637077183,
+      "inode": 23492326,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 30347264
+    },
+    {
+      "path": "SERIES/15-00/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 29297306,
+      "mtime": "2026-04-25T07:07:00.677762+00:00",
+      "mtime_ns": 1777100820677762055,
+      "inode": 23492328,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 29298688
+    },
+    {
+      "path": "SERIES/15-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2979945,
+      "mtime": "2026-04-25T07:07:00.680320+00:00",
+      "mtime_ns": 1777100820680319545,
+      "inode": 23492329,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2981888
+    },
+    {
+      "path": "SERIES/15-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/15-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 20010370,
+      "mtime": "2026-04-25T07:07:00.719259+00:00",
+      "mtime_ns": 1777100820719258965,
+      "inode": 23492330,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 20013056
+    },
+    {
+      "path": "SERIES/16-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/16-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1626669,
+      "mtime": "2026-03-07T05:50:33.853295+00:00",
+      "mtime_ns": 1772862633853295420,
+      "inode": 17680209,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1630208
+    },
+    {
+      "path": "SERIES/16-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/16-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 21053279,
+      "mtime": "2026-03-07T05:50:33.920875+00:00",
+      "mtime_ns": 1772862633920875127,
+      "inode": 17680210,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 21053440
+    },
+    {
+      "path": "SERIES/17-00/input/loop-4k-candidate-v1.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/loop-4k-candidate-v1.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "selected_scene",
+      "evidence": [
+        {
+          "source": "SERIES/17-00/concept.md:107-108",
+          "reason": "Explicit current selected scene and exact source copy of canonical loop, despite candidate in filename."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 8778130,
+      "mtime": "2026-10-03T00:41:32.657601+00:00",
+      "mtime_ns": 1790988092657601110,
+      "inode": 146720544,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8781824
+    },
+    {
+      "path": "SERIES/17-00/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 8778130,
+      "mtime": "2026-10-03T00:41:32.657601+00:00",
+      "mtime_ns": 1790988092657601110,
+      "inode": 146795534,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8781824
+    },
+    {
+      "path": "SERIES/17-00/input/thumb-preview-v1.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/thumb-preview-v1.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/17-00/concept.md:107",
+          "reason": "Earlier preview explicitly reported absent in current concept."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/17-00/input/thumb-preview-v2.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/thumb-preview-v2.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/17-00/concept.md:107",
+          "reason": "Earlier preview explicitly reported absent in current concept."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/17-00/input/thumb-preview-v3.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/thumb-preview-v3.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "referenced_absent_or_obsolete_preview",
+      "evidence": [
+        {
+          "source": "SERIES/17-00/concept.md:107",
+          "reason": "Earlier preview explicitly reported absent in current concept."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false
+    },
+    {
+      "path": "SERIES/17-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 523867,
+      "mtime": "2026-10-03T00:56:37.916660+00:00",
+      "mtime_ns": 1790988997916659947,
+      "inode": 146834396,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 524288
+    },
+    {
+      "path": "SERIES/17-00/work/preview-frame.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-00/work/preview-frame.jpg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 287563,
+      "mtime": "2026-10-03T02:00:30.562258+00:00",
+      "mtime_ns": 1790992830562257866,
+      "inode": 147132362,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 290816
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/compose-final-artwork.py",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/compose-final-artwork.py",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/13",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2582,
+        "sha256": "22da33e22d48098ae34cb862a9e83bebba06d4ec25f1593d8f4fcc7376d4f399",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/final-artwork-2026-10-22.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/final-artwork-2026-10-22.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/14",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2648,
+        "sha256": "f72c46c5537ff3202578fd29d7daea0a7caeabb1e04c27e0f599945bcf51a31c",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/final-thumb-phone-320x180.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/final-thumb-phone-320x180.jpg",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/12",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 25821,
+        "sha256": "ebbfab0f2c7152ca7533fdee3c8eeb163ec1dd06e985419cf034b2b06fc17e24",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v1.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v1.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/1",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2612,
+        "sha256": "37f77ad2aa1bc7b62d0a7b5942cfcc585c9d4f1ccb745022e02f0b1dae558b31",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v1.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v1.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/0",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1677024,
+        "sha256": "9d1577caf95208c876efd577e6bf5dd1364d7efc33f3cf599853925639dc5270",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v2.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v2.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/3",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2951,
+        "sha256": "d0171672b1179cf940f5a2320f3a94be02a9246135970520c8500b14380fdf29",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v2.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v2.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/2",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1784704,
+        "sha256": "716f3347dbba9c157286a87c354e2f3131c2434cd72de686d3835f5043895dd4",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v3.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v3.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/5",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 3061,
+        "sha256": "b8fadca1e52765fab6b1237c6862bcfa7b042086eab555b5d754f1718726a498",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v3.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v3.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/4",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1895658,
+        "sha256": "64b1510cf63de4efd09a4811b1e0454cd27010825844b5d9fa935ceee169ce09",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v4.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v4.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/7",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2456,
+        "sha256": "8c29caae342e49d46bcc2404195eba7f1ecc8274cf16feba06f08fd3861c6f3b",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v4.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v4.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/6",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1903504,
+        "sha256": "202aad9c4ffb46b75c32947bcebb4b0a7abefb085850c41fff9ee2e2d085ef75",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v5.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v5.md",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/9",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 2575,
+        "sha256": "3605ddcf3fecfb54c15b996f69704473b7d11ed2879c413591c08f092ad76faf",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/orange-kitchen-draft-v5.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/orange-kitchen-draft-v5.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/8",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1776721,
+        "sha256": "cf0cfbf5d10b88585a188054ba1ba839a47f7b08fca1b649f2d62c664e97f8c1",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "editable_selected_source",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/artwork/user-thumbnail-2026-10-22.md",
+          "reason": "Explicitly retained possible user editable original; ownership not independently verified, so do not delete."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 17535068,
+      "mtime": "2026-10-22T08:37:43.320284+00:00",
+      "mtime_ns": 1792658263320283605,
+      "inode": 413402353,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 17539072
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/thumbnail-revision-v2.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/thumbnail-revision-v2.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/10",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1794423,
+        "sha256": "078cb19dc4524310af389a4718390e64da43c90975422b56904f1d7538b1a6f8",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/thumbnail-revision-v3.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/thumbnail-revision-v3.png",
+      "classification": "already_absent",
+      "provisional_protection": false,
+      "role": "historical_deleted_thumbnail_artifact",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json#/deleted_files/11",
+          "reason": "Prior 2026-10-22 deletion receipt lists this discarded thumbnail artifact. Record current existence only; do not restore."
+        }
+      ],
+      "present": false,
+      "file_type": "missing",
+      "statbytes": null,
+      "mtime": null,
+      "mtime_ns": null,
+      "inode": null,
+      "device": null,
+      "nlink": null,
+      "allocated_bytes": null,
+      "would_be_classification": "delete_candidate",
+      "restoration_allowed": false,
+      "historical_record": {
+        "bytes": 1886027,
+        "sha256": "aeeb90d65bd6b9e772a61d7d705d89dd80869a54b5cb5c943948c2c7788cf7ff",
+        "recorded_deleted_at": "2026-10-22"
+      }
+    },
+    {
+      "path": "SERIES/17-30/input/artwork/user-thumbnail-2026-10-22.md",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/artwork/user-thumbnail-2026-10-22.md",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "final_provenance",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/concept.md:23-24",
+          "reason": "User-created current final thumbnail and preserved loop/source record."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2076,
+      "mtime": "2026-10-22T08:49:21.042240+00:00",
+      "mtime_ns": 1792658961042239848,
+      "inode": 413588962,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "SERIES/17-30/input/evidence/first-create-cloudflare-challenge.jpeg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/evidence/first-create-cloudflare-challenge.jpeg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 113514,
+      "mtime": "2026-10-21T06:25:14.538677+00:00",
+      "mtime_ns": 1792563914538677389,
+      "inode": 377275095,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 114688
+    },
+    {
+      "path": "SERIES/17-30/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 4584887,
+      "mtime": "2026-10-22T07:56:44.465256+00:00",
+      "mtime_ns": 1792655804465255748,
+      "inode": 412074046,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4587520
+    },
+    {
+      "path": "SERIES/17-30/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1441407,
+      "mtime": "2026-10-22T08:37:15.959424+00:00",
+      "mtime_ns": 1792658235959423523,
+      "inode": 413398086,
+      "device": 16777233,
+      "nlink": 2,
+      "allocated_bytes": 1441792
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-current-suno/workspace-page-1.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-current-suno/workspace-page-1.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 663376,
+      "mtime": "2026-10-22T05:53:19.353972+00:00",
+      "mtime_ns": 1792648399353971769,
+      "inode": 405088444,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 663552
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-publish-selected-20/02-current-lyrics-page.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-publish-selected-20/02-current-lyrics-page.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 443873,
+      "mtime": "2026-10-22T09:13:06.614443+00:00",
+      "mtime_ns": 1792660386614442686,
+      "inode": 414828418,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 446464
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-publish-selected-20/reopen-playlist.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-publish-selected-20/reopen-playlist.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 235834,
+      "mtime": "2026-10-22T09:13:16.204334+00:00",
+      "mtime_ns": 1792660396204334460,
+      "inode": 414828478,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 237568
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-release-production/02-preview-frame.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-release-production/02-preview-frame.jpg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 239511,
+      "mtime": "2026-10-22T12:41:28.775743+00:00",
+      "mtime_ns": 1792672888775743313,
+      "inode": 428390295,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 241664
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-release-production/07-final-middle-frame.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-release-production/07-final-middle-frame.jpg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 239594,
+      "mtime": "2026-10-22T12:56:20.709135+00:00",
+      "mtime_ns": 1792673780709135158,
+      "inode": 429395334,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 241664
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "deletion_audit",
+      "evidence": [
+        {
+          "source": "SERIES/17-30/input/artwork/user-thumbnail-2026-10-22.md",
+          "reason": "Prior authorized deletion receipt; metadata only, no discarded prompt bodies. Preserve as operational audit rather than treat as a prompt draft."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2938,
+      "mtime": "2026-10-22T08:47:08.000591+00:00",
+      "mtime_ns": 1792658828000590975,
+      "inode": 413591649,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-wav-ingest/download-limit.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-wav-ingest/download-limit.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 245256,
+      "mtime": "2026-10-22T09:16:37.218451+00:00",
+      "mtime_ns": 1792660597218451018,
+      "inode": 414842931,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 245760
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-wav-ingest/quota-after-first.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-wav-ingest/quota-after-first.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 205534,
+      "mtime": "2026-10-22T09:01:13.467490+00:00",
+      "mtime_ns": 1792659673467490338,
+      "inode": 414842942,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 208896
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-wav-ingest/second-unlock-dialog.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-wav-ingest/second-unlock-dialog.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 205618,
+      "mtime": "2026-10-22T09:02:27.193913+00:00",
+      "mtime_ns": 1792659747193912836,
+      "inode": 414842930,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 208896
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-youtube-upload/comment.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/comment.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 326010,
+      "mtime": "2026-10-22T13:45:37.607424+00:00",
+      "mtime_ns": 1792676737607424513,
+      "inode": 431350462,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 327680
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-youtube-upload/public-details.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/public-details.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 802484,
+      "mtime": "2026-10-22T13:47:57.196272+00:00",
+      "mtime_ns": 1792676877196272398,
+      "inode": 431356839,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 802816
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-youtube-upload/studio-details.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/studio-details.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 325606,
+      "mtime": "2026-10-22T13:44:20.932650+00:00",
+      "mtime_ns": 1792676660932650237,
+      "inode": 431349123,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 327680
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-youtube-upload/subtitle-error.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/subtitle-error.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 881706,
+      "mtime": "2026-10-22T13:46:38.229124+00:00",
+      "mtime_ns": 1792676798229123741,
+      "inode": 431354840,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 884736
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-22-youtube-upload/watch-playback-followup.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/watch-playback-followup.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2935040,
+      "mtime": "2026-10-22T13:54:45.455061+00:00",
+      "mtime_ns": 1792677285455061233,
+      "inode": 431402473,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2936832
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-caption-published-studio.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-caption-published-studio.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 579730,
+      "mtime": "2026-10-22T22:57:39.013351+00:00",
+      "mtime_ns": 1792709859013350647,
+      "inode": 440755765,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 581632
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-srt-loaded.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-srt-loaded.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 866301,
+      "mtime": "2026-10-22T22:56:53.711950+00:00",
+      "mtime_ns": 1792709813711949730,
+      "inode": 440755763,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 868352
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-public-manual-caption-menu.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-public-manual-caption-menu.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2895294,
+      "mtime": "2026-10-22T22:58:51.408040+00:00",
+      "mtime_ns": 1792709931408039669,
+      "inode": 440755767,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2895872
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-000005.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-000005.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2945080,
+      "mtime": "2026-10-22T22:59:06.986577+00:00",
+      "mtime_ns": 1792709946986577096,
+      "inode": 440755769,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2949120
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-ending.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-ending.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2884122,
+      "mtime": "2026-10-22T23:02:27.542302+00:00",
+      "mtime_ns": 1792710147542302169,
+      "inode": 440755775,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2887680
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-mid.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-mid.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2921936,
+      "mtime": "2026-10-22T23:00:32.544765+00:00",
+      "mtime_ns": 1792710032544765591,
+      "inode": 440755771,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2924544
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-repeat.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-repeat.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2963653,
+      "mtime": "2026-10-22T23:00:56.399426+00:00",
+      "mtime_ns": 1792710056399425989,
+      "inode": 440755773,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2965504
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/ui-preflight/2026-10-23-timed-upload-reentry-details.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/ui-preflight/2026-10-23-timed-upload-reentry-details.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 579736,
+      "mtime": "2026-10-22T22:52:54.378669+00:00",
+      "mtime_ns": 1792709574378668608,
+      "inode": 440716913,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 581632
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-timed-subtitles/ui-preflight/2026-10-23-timed-upload-route-prompt.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-timed-subtitles/ui-preflight/2026-10-23-timed-upload-route-prompt.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 534952,
+      "mtime": "2026-10-22T22:12:07.948560+00:00",
+      "mtime_ns": 1792707127948560144,
+      "inode": 439955651,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 536576
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-claims.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-claims.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 118488,
+      "mtime": "2026-10-22T21:46:11.662861+00:00",
+      "mtime_ns": 1792705571662861190,
+      "inode": 439347467,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 118784
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-content-list.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-content-list.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 324441,
+      "mtime": "2026-10-22T21:46:11.664405+00:00",
+      "mtime_ns": 1792705571664404612,
+      "inode": 439351143,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 327680
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language-details.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language-details.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 218666,
+      "mtime": "2026-10-22T21:46:11.666328+00:00",
+      "mtime_ns": 1792705571666328537,
+      "inode": 439351146,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 221184
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-language.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 105553,
+      "mtime": "2026-10-22T21:46:11.667962+00:00",
+      "mtime_ns": 1792705571667962084,
+      "inode": 439347469,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 106496
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-studio-details.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-studio-details.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 307402,
+      "mtime": "2026-10-22T21:46:11.670906+00:00",
+      "mtime_ns": 1792705571670906096,
+      "inode": 439347472,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 311296
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-before-publish.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-before-publish.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 329667,
+      "mtime": "2026-10-22T21:46:11.676593+00:00",
+      "mtime_ns": 1792705571676592576,
+      "inode": 439347894,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 331776
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-dialog-initial.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-dialog-initial.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 126243,
+      "mtime": "2026-10-22T21:46:11.677608+00:00",
+      "mtime_ns": 1792705571677608205,
+      "inode": 439347474,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 126976
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-publish-attempt.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-subtitle-publish-attempt.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 335425,
+      "mtime": "2026-10-22T21:46:11.682498+00:00",
+      "mtime_ns": 1792705571682497432,
+      "inode": 439347895,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 335872
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-auto-caption-visible.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-auto-caption-visible.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1037513,
+      "mtime": "2026-10-22T21:47:09.001091+00:00",
+      "mtime_ns": 1792705629001091188,
+      "inode": 439355543,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1040384
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-caption-selected.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-caption-selected.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1028888,
+      "mtime": "2026-10-22T21:47:09.003182+00:00",
+      "mtime_ns": 1792705629003181904,
+      "inode": 439355545,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1032192
+    },
+    {
+      "path": "SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-caption-state.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/2026-10-23-youtube-followup/2026-10-23-watch-caption-state.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1036034,
+      "mtime": "2026-10-22T21:47:09.004542+00:00",
+      "mtime_ns": 1792705629004541868,
+      "inode": 439355547,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1036288
+    },
+    {
+      "path": "SERIES/17-30/input/validation/suno-01-candidates-visible.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/suno-01-candidates-visible.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 282267,
+      "mtime": "2026-10-21T08:00:45.077632+00:00",
+      "mtime_ns": 1792569645077631752,
+      "inode": 379391443,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 282624
+    },
+    {
+      "path": "SERIES/17-30/input/validation/suno-final-40-candidates-ui.jpeg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/suno-final-40-candidates-ui.jpeg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 199522,
+      "mtime": "2026-10-21T08:45:03.307058+00:00",
+      "mtime_ns": 1792572303307057699,
+      "inode": 380074454,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 200704
+    },
+    {
+      "path": "SERIES/17-30/input/validation/suno-human-verification.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/17-30/input/validation/suno-human-verification.png",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 249564,
+      "mtime": "2026-10-21T06:26:06.575907+00:00",
+      "mtime_ns": 1792563966575907489,
+      "inode": 377278151,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 249856
+    },
+    {
+      "path": "SERIES/18-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/18-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1479002,
+      "mtime": "2026-04-25T07:07:00.720653+00:00",
+      "mtime_ns": 1777100820720653293,
+      "inode": 23492331,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1482752
+    },
+    {
+      "path": "SERIES/18-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/18-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 21110307,
+      "mtime": "2026-04-25T07:07:00.768194+00:00",
+      "mtime_ns": 1777100820768194553,
+      "inode": 23492332,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 21110784
+    },
+    {
+      "path": "SERIES/20-00/input/loop.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/loop.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_background",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Canonical final static background; explicitly retained even while audio/video are being inventoried separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 34107792,
+      "mtime": "2026-04-25T16:50:51.187946+00:00",
+      "mtime_ns": 1777135851187945673,
+      "inode": 23601558,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 34111488
+    },
+    {
+      "path": "SERIES/20-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1721838,
+      "mtime": "2026-05-04T11:26:07.431562+00:00",
+      "mtime_ns": 1777893967431562064,
+      "inode": 24475961,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1724416
+    },
+    {
+      "path": "SERIES/20-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/20-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 30504400,
+      "mtime": "2026-04-25T17:00:22.781775+00:00",
+      "mtime_ns": 1777136422781775191,
+      "inode": 23603502,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 30507008
+    },
+    {
+      "path": "SERIES/21-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/21-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1208885,
+      "mtime": "2026-04-25T07:07:00.775848+00:00",
+      "mtime_ns": 1777100820775847813,
+      "inode": 23492342,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1212416
+    },
+    {
+      "path": "SERIES/21-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/21-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 26494174,
+      "mtime": "2026-04-25T07:07:00.851931+00:00",
+      "mtime_ns": 1777100820851931287,
+      "inode": 23492343,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 26497024
+    },
+    {
+      "path": "SERIES/22-00/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/22-00/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2507354,
+      "mtime": "2026-04-13T03:10:02.069497+00:00",
+      "mtime_ns": 1776049802069496799,
+      "inode": 21764518,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2510848
+    },
+    {
+      "path": "SERIES/22-00/input/thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/22-00/input/thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "source_artwork_provisional",
+      "evidence": [
+        {
+          "source": "controller protection scope; existing source filename",
+          "reason": "Existing editable/original thumbnail source. Exact approval not independently established, so protect provisionally instead of assuming it is disposable."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 34941659,
+      "mtime": "2026-04-13T03:10:02.185982+00:00",
+      "mtime_ns": 1776049802185981761,
+      "inode": 21764519,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 34942976
+    },
+    {
+      "path": "SERIES/RNB-BEST/input/thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/RNB-BEST/input/thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 2182359,
+      "mtime": "2026-05-08T01:08:45.148414+00:00",
+      "mtime_ns": 1778202525148414129,
+      "inode": 24999731,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 2183168
+    },
+    {
+      "path": "SERIES/Single/alleyway/thumb.jpeg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/SERIES/Single/alleyway/thumb.jpeg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "canonical_thumbnail",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24; repository input naming",
+          "reason": "Canonical final thumbnail filename; existing finished series thumbnails are explicitly retained."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 873003,
+      "mtime": "2026-01-31T05:11:18.117284+00:00",
+      "mtime_ns": 1769836278117283914,
+      "inode": 14354380,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 876544
+    },
+    {
+      "path": "brand/.DS_Store",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/.DS_Store",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 6148,
+      "mtime": "2026-03-25T02:05:21.378752+00:00",
+      "mtime_ns": 1774404321378752101,
+      "inode": 17707212,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "brand/header_youtube.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/header_youtube.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1275771,
+      "mtime": "2026-03-07T05:50:36.051099+00:00",
+      "mtime_ns": 1772862636051099204,
+      "inode": 17680268,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1277952
+    },
+    {
+      "path": "brand/header_youtube.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/header_youtube.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 26607276,
+      "mtime": "2026-03-07T05:50:36.103228+00:00",
+      "mtime_ns": 1772862636103228408,
+      "inode": 17680269,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 26607616
+    },
+    {
+      "path": "brand/logo_wavvy.png",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 21634,
+      "mtime": "2026-03-07T07:32:57.257201+00:00",
+      "mtime_ns": 1772868777257200697,
+      "inode": 17721164,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "brand/logo_wavvy.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 204632,
+      "mtime": "2026-03-30T23:56:27.866664+00:00",
+      "mtime_ns": 1774914987866663671,
+      "inode": 20390513,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 204800
+    },
+    {
+      "path": "brand/profile.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/profile.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 525525,
+      "mtime": "2026-03-07T05:50:36.104352+00:00",
+      "mtime_ns": 1772862636104352530,
+      "inode": 17680271,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 528384
+    },
+    {
+      "path": "brand/profile_youtube.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/profile_youtube.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 21741469,
+      "mtime": "2026-03-07T05:50:36.167156+00:00",
+      "mtime_ns": 1772862636167155749,
+      "inode": 17680272,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 21741568
+    },
+    {
+      "path": "brand/template_thumb.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/template_thumb.jpg",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 1096918,
+      "mtime": "2026-03-07T05:50:36.171412+00:00",
+      "mtime_ns": 1772862636171412488,
+      "inode": 17680273,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 1097728
+    },
+    {
+      "path": "brand/template_thumb.psd",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/brand/template_thumb.psd",
+      "classification": "protected",
+      "provisional_protection": true,
+      "role": "brand_asset",
+      "evidence": [
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand asset/template is explicitly outside deletion candidates."
+        },
+        {
+          "source": "controller assignment 2026-10-24",
+          "reason": "Brand directory contents explicitly protected."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 12020148,
+      "mtime": "2026-03-09T01:19:02.562679+00:00",
+      "mtime_ns": 1773019142562679152,
+      "inode": 17949602,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 12021760
+    },
+    {
+      "path": "work/2026-10-22-internal-audio-test/video-preview-frame.jpg",
+      "absolute_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-22-internal-audio-test/video-preview-frame.jpg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_evidence",
+      "evidence": [
+        {
+          "source": "path role and controller delegated thumbnail-only inventory",
+          "reason": "Screenshot or video/audio validation frame; not a thumbnail generation draft. Excluded from this thumbnail candidate list; media worker/controller may classify separately."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 238851,
+      "mtime": "2026-10-22T10:20:43.704252+00:00",
+      "mtime_ns": 1792664443704252288,
+      "inode": 420557194,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 241664
+    },
+    {
+      "path": "/private/tmp/wavvy-1730-preview-frame.jpg",
+      "absolute_path": "/private/tmp/wavvy-1730-preview-frame.jpg",
+      "classification": "excluded_non_thumbnail",
+      "provisional_protection": true,
+      "role": "other_media_preview",
+      "evidence": [
+        {
+          "source": "bounded temp filename inventory",
+          "reason": "Explicit Wavvy-named temporary video preview frame; assign through media inventory to avoid duplicate candidate accounting. /tmp is the OS alias of /private/tmp."
+        }
+      ],
+      "present": true,
+      "file_type": "regular_file",
+      "statbytes": 238851,
+      "mtime": "2026-10-22T09:18:27.765373+00:00",
+      "mtime_ns": 1792660707765373047,
+      "inode": 414852652,
+      "device": 16777233,
+      "nlink": 1,
+      "allocated_bytes": 241664
+    }
+  ]
+}

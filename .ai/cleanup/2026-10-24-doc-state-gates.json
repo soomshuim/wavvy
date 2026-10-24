@@ -1,0 +1,170 @@
+{
+  "schema": "wavvy.cleanup-doc-state-gates.v1",
+  "at_utc": "2026-10-24T02:34:04.136365+00:00",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "wavvy.py",
+        "state",
+        "SERIES/06-30",
+        "--check",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 85,\n    \"updated_at\": \"2026-10-24T11:33:45\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 2,\n      \"available_audio_files\": 2,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"unverified\",\n      \"subtitle_published\": \"unverified\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"unverified\",\n      \"published\": \"unverified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cmp",
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "retained_media": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "regular": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 457742811,
+        "bytes": 74331380,
+        "mtime_ns": 1792774553304897688
+      },
+      "matches_apply_postcheck": true
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "regular": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 457742821,
+        "bytes": 74406364,
+        "mtime_ns": 1792774554219677882
+      },
+      "matches_apply_postcheck": true
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+      "regular": true,
+      "actual": {
+        "device": 16777233,
+        "inode": 461047699,
+        "bytes": 307505324,
+        "mtime_ns": 1792805526306250061
+      },
+      "matches_apply_postcheck": true
+    }
+  ],
+  "retained_media_count": 3,
+  "retained_media_bytes": 456243068,
+  "selected_photo_and_provenance": [
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "actual": {
+        "bytes": 2131294,
+        "sha256": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d"
+      },
+      "ok": true
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json",
+      "actual": {
+        "bytes": 6272,
+        "sha256": "1830fd73c11b060e28104cdcda2466bbd9007239a40855a82c35b4485f122096"
+      },
+      "ok": true
+    }
+  ],
+  "selected_photo_dimensions": [
+    1672,
+    941
+  ],
+  "unfinished_canonical_outputs_absent": {
+    "SERIES/06-30/input/loop.png": true,
+    "SERIES/06-30/input/thumb.jpg": true,
+    "SERIES/06-30/loop.png": true,
+    "SERIES/06-30/thumb.jpg": true
+  },
+  "frozen_cleanup_artifacts": [
+    {
+      "path": ".ai/cleanup/execute-2026-10-24.py",
+      "actual_sha256": "84520f17b400520aa079540d414ab485885d17705586d534544a6b98b14a574a",
+      "expected_sha256": "84520f17b400520aa079540d414ab485885d17705586d534544a6b98b14a574a",
+      "ok": true
+    },
+    {
+      "path": ".ai/cleanup/2026-10-24-wavvy-media-inventory.json",
+      "actual_sha256": "f78c0a9e9004050c2566cd5b7f5353fc0259372e5120d73812164598f1977517",
+      "expected_sha256": "f78c0a9e9004050c2566cd5b7f5353fc0259372e5120d73812164598f1977517",
+      "ok": true
+    },
+    {
+      "path": ".ai/cleanup/2026-10-24-wavvy-thumbnail-inventory.json",
+      "actual_sha256": "d30b1421d71acd30c544e528e0fd5886d27446f037cef2c779c649768703d578",
+      "expected_sha256": "d30b1421d71acd30c544e528e0fd5886d27446f037cef2c779c649768703d578",
+      "ok": true
+    },
+    {
+      "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-dry-run.json",
+      "actual_sha256": "03d30d91be921e76aa816c70c18f1e8286669aa9a1da4f5dbdf6c51ec860286a",
+      "expected_sha256": "03d30d91be921e76aa816c70c18f1e8286669aa9a1da4f5dbdf6c51ec860286a",
+      "ok": true
+    },
+    {
+      "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.json",
+      "actual_sha256": "57fcd88f868d1b2412f93c145c35f1204b0c5e6a96d80521418bd586b156b762",
+      "expected_sha256": "57fcd88f868d1b2412f93c145c35f1204b0c5e6a96d80521418bd586b156b762",
+      "ok": true
+    },
+    {
+      "path": ".ai/cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl",
+      "actual_sha256": "5ec334eb5df96e4927475626c32c0e3622743838e158c40e43cf008509292c92",
+      "expected_sha256": "5ec334eb5df96e4927475626c32c0e3622743838e158c40e43cf008509292c92",
+      "ok": true
+    }
+  ],
+  "source_and_output_manifests": [
+    {
+      "path": "SERIES/06-30/input/download-manifest.json",
+      "actual_sha256": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+      "expected_sha256": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+      "ok": true
+    },
+    {
+      "path": "SERIES/06-30/input/suno-replacement/2026-10-24/retry-slower/upload-manifest.json",
+      "actual_sha256": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+      "expected_sha256": "941998152ddeb091834df329284783647efe1a437cfda1f3a7e3b5f078b55d31",
+      "ok": true
+    },
+    {
+      "path": "SERIES/06-30/output/continuous-mix-20261024/repeat2/manifest.json",
+      "actual_sha256": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1",
+      "expected_sha256": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1",
+      "ok": true
+    }
+  ],
+  "state": {
+    "revision": 85,
+    "phase": "track_source_draft",
+    "audio_files": 2,
+    "sha256": "641b6924015ac2f20c138c29b9983fc0f02d85c48e4fd7090e6f16a160d6237a"
+  },
+  "no_audio_full_rehash": true,
+  "all_pass": true
+}
