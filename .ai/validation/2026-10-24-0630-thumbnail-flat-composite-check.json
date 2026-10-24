@@ -1,0 +1,122 @@
+{
+  "scope": "Latest original-photo local flat-white composition; narrow file/state/doc checks only",
+  "checked_at_utc": "2026-10-24T04:00:13.242268+00:00",
+  "files": [
+    {
+      "path": "SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "bytes": 2131294,
+      "sha256": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "embedded_icc_bytes": 0,
+      "matches_controller_final": true
+    },
+    {
+      "path": "SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+      "bytes": 2222156,
+      "sha256": "d21c0c4f3428ba182be3fe251b55be7e381912146467be0569407a3af1cad9fd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "embedded_icc_bytes": 0,
+      "matches_controller_final": true
+    },
+    {
+      "path": "SERIES/06-30/input/thumb.jpg",
+      "bytes": 458902,
+      "sha256": "ee54be10e668ac4d1e38e37043bde9c4c4f0cf76e6ae2e5714280b7a2c7b425e",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "embedded_icc_bytes": 0,
+      "matches_controller_final": true
+    },
+    {
+      "path": "SERIES/06-30/production/thumbnail-branded-0630-20261024.json",
+      "bytes": 41171,
+      "sha256": "b5db8b5bd3dc32b6b1fa0b2189b187f95f2c5551fa70c6bd972d8071b003c1be",
+      "matches_controller_final": true
+    },
+    {
+      "path": "SERIES/06-30/production/compose-thumbnail-flat-white-20261024.swift",
+      "bytes": 13351,
+      "sha256": "961ce0a1596fe10f40bd46002221331265bfc7cae6d83bca9ee920b684e0073d",
+      "matches_controller_final": true
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "wavvy.py",
+        "state",
+        "SERIES/06-30",
+        "--check",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 86,\n    \"updated_at\": \"2026-10-24T13:00:13\",\n    \"active_series\": \"SERIES/06-30\",\n    \"phase\": \"track_source_draft\",\n    \"inferred_phase\": \"track_source_draft\",\n    \"next_action\": \"Review existing track source drafts and follow the next source work in concept.md.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"missing\",\n      \"selected_audio_sources\": \"missing\",\n      \"final_track_sources_count\": 0,\n      \"report_json\": \"missing\",\n      \"report_tracks\": 0,\n      \"audio_files\": 2,\n      \"available_audio_files\": 2,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 20,\n      \"final_mkv\": \"missing\",\n      \"upload_csv\": \"missing\",\n      \"subtitle_txt\": \"missing\",\n      \"subtitle_srt\": \"missing\",\n      \"youtube_metadata\": \"missing\",\n      \"youtube_upload\": \"missing\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"unverified\",\n      \"subtitle_published\": \"unverified\",\n      \"timed_subtitles_required\": false\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"unverified\",\n      \"published\": \"unverified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/06-30/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cmp",
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "state_writer_invocations_for_this_correction": 0,
+  "protected_audio_stat_unchanged": [
+    {
+      "path": "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74331380,
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+      "bytes": 74406364,
+      "unchanged": true
+    },
+    {
+      "path": "SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+      "bytes": 307505324,
+      "unchanged": true
+    }
+  ],
+  "controller_direct_png_comparison": {
+    "reported_by": "controller direct alpha comparison, independently repeated by final reviewer",
+    "alpha_zero_pixels": 1521686,
+    "alpha_zero_changed_pixels": 0,
+    "alpha_zero_max_rgb_difference": 0,
+    "darkened_channels": 0,
+    "overlay_nonwhite_pixels": 0,
+    "scope": "PNG decoded RGB. JPEG compression is not claimed pixel-identical."
+  },
+  "review_record": ".ai/reviews/2026-10-24-0630-thumbnail-flat-composite-review.md",
+  "state": {
+    "revision": 86,
+    "phase": "track_source_draft",
+    "audio_files": 2,
+    "next_action": "Review existing track source drafts and follow the next source work in concept.md."
+  },
+  "state_writer_reason": "Existing state already passes the dedicated check, with no thumbnail fields or phase/input-count change; no write needed for this correction.",
+  "status": "PASS_CONTROLLER_APPROVED_EXACT_12_PATH_COMMIT_PUSH"
+}

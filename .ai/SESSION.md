@@ -1,6 +1,6 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-24 (썸네일 기본 시간 표기 제거·좌하단 케이던스/가로선 이미지 생성·최신 독립 검토 CLEAN)
+> Last updated: 2026-10-24 (원본 사진 위 평면 흰색 글자 직접 합성·원본 색 보존·새 독립 검토 CLEAN)
 
 ## 현재 맥 저장 공간 진단 — 읽기 전용
 
@@ -12,23 +12,15 @@
 - 프로젝트의 현재 오디오·영상 실물은 **음원 3개·456,243,068바이트**뿐이다. `SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav`(74,331,380바이트)와 `11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav`(74,406,364바이트)는 Suno 미수락 6·11번으로 별도 보관한다. `SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a`(307,505,324바이트)는 이번 영상의 실제 YouTube 업로드 확인 뒤 삭제한다. 업로드 확인은 아직 없으며 지금 삭제하지 않는다.
 - 보존 믹스는 **2:06:10.660**이고 SHA-256(파일 내용 동일성 확인값)은 `bc63dc3836cc83864e58f6f1890d9f4cf071d2a94fb5292d110a7af59869caea`다. 이미 20곡이 두 번 들어 있으므로 영상 단계에서 repeat2(두 번 반복 처리)를 다시 적용하지 않는다. 다른 18개 최종 입력·1회 WAV/M4A·원시 녹음·비교본·미리듣기는 의도적으로 삭제했다. 다른 시리즈의 로컬 미디어 삭제도 동결 목록을 따른다. 원격 18곡 수락 이력으로 최종 20개 입력의 재다운로드를 보장하지 않으며 자동 재다운로드·재생성 계획은 없다. 보존 믹스로 향후 이번 영상 제작이 가능하다.
 - 실제 여유 공간은 **4,042,014,720→55,041,216,512바이트**, 관측 증가량은 **50,999,201,792바이트**다. 삭제한 파일 크기 합계와 실제 확보 공간은 구분한다. [보존 결정 원문](cleanup/2026-10-24-wavvy-cleanup-retention-decision.json), [실행 원시](cleanup/2026-10-24-wavvy-cleanup-apply.json), [파일별 실행 기록](cleanup/2026-10-24-wavvy-cleanup-apply.events.jsonl), [삭제 후 실물 대조](cleanup/2026-10-24-wavvy-cleanup-post-apply-check.json)를 보존했다. [실행 전 독립 Astra/high 검토](reviews/2026-10-24-wavvy-media-cleanup-review.md)는 CLEAN(확인된 중대 결함 0건·원칙 관찰 없음)으로 컨트롤러가 채택한 동결 목록·실행기 범위의 판정이다.
-- 현재 공식 상태는 이번 최종 썸네일 기록 뒤 전용 writer(실제 파일을 다시 재어 상태를 저장하는 명령)를 정확히 한 번 실행한 **revision 86·`track_source_draft`(트랙 입력 원문 단계)·개별 입력 음원 2개**다. 완성 믹스 1개는 입력 개수와 별도다. [이번 상태 저장·대조 원시](validation/2026-10-24-0630-thumbnail-branding-gates.json)에 결과를 보존한다. 정리 직후 revision 85는 [당시 원시](cleanup/2026-10-24-state-after-cleanup.json)의 이력이다. CLI(명령어 도구)에는 다음 작업을 직접 지정하는 옵션이 없고 기존 일반 문구는 현행 concept을 따르라는 안내다. 삭제된 미디어의 자동 다운로드·재생성 지시가 아니며 `source_final`(발매용 소스 최종 확정)이나 발매 완료로 올리지 않았다.
+- 공식 상태는 **revision 86·`track_source_draft`(트랙 입력 원문 단계)·개별 입력 음원 2개**이며 완성 믹스 1개는 별도다. [직접 합성 후 상태·파일 확인](validation/2026-10-24-0630-thumbnail-flat-composite-check.json)을 보존한다. 이전 writer(전용 상태 저장 명령)로 기록한 revision 85→86은 [당시 원시](validation/2026-10-24-0630-thumbnail-branding-gates.json)에 남긴다. 일반 다음 작업 문구는 현행 concept을 따르라는 안내이며 삭제한 미디어의 자동 다운로드·재생성 지시나 발매 단계 상향은 없다.
 
-## 현재 06:30 썸네일 — 시간 없는 로고·좌하단 케이던스와 선 생성 완료
+## 현재 06:30 썸네일 — 원본 위 평면 흰색 로고·글자 합성 완료
 
-최신 지시 “좌측 하단으로 하고 라인은 어디다 팔아먹었어.”, “06:30은 그냥 삭제해 이제 기본 포맷에서 시간 안쓸거야”를 반영한 실제 이미지가 나왔다. **좌상단 Wavvy 로고만, 좌하단 Cadence·그 오른쪽 흰 수평선·아래 175 BPM**이며 시간 숫자는 없다. 흰색 글자와 배경을 분리하는 그림자가 있다. 기본 썸네일 시간 표시 제거를 [wavvy.md](../wavvy.md)·[썸네일 스킬](../skills/wavvy-thumbnail/SKILL.md)에 반영했고 시간대별 시리즈 이름·YouTube 제목·과거 시리즈 실물은 바꾸지 않았다.
+젠의 “원본 사진에 글자만 합성해줘 (추천)” 선택으로 실제 로고·글꼴을 별도 합성했다. **좌상단 Wavvy만·시간 없음, 좌하단 Cadence·오른쪽 흰 선·아래 175 BPM, 그림자 없음**이다. 현재 방식의 새 이미지 생성은 0회이며 [Swift 재현 코드](../SERIES/06-30/production/compose-thumbnail-flat-white-20261024.swift)와 [제작 원시](../SERIES/06-30/production/thumbnail-branded-0630-20261024.json)를 보존한다. PNG는 **1672×941·2,222,156바이트**, SHA-256 `d21c0c4f3428ba182be3fe251b55be7e381912146467be0569407a3af1cad9fd`, JPEG는 **1672×941·458,902바이트**, SHA-256 `ee54be10e668ac4d1e38e37043bde9c4c4f0cf76e6ae2e5714280b7a2c7b425e`다.
 
-- [현재 PNG](../SERIES/06-30/input/thumbnail-branded-0630-20261024.png): **1672×941·2,183,648바이트**, SHA-256 `268680bd25d300d85882a3c707e11c2500ea6ac68a10b775f35a1eeef44f0622`.
-- [사용 JPEG](../SERIES/06-30/input/thumb.jpg): **1672×941·487,974바이트**, SHA-256 `597814938758568a33c544c8eada78d7f878e67bd761b061a5ed73b94a0bd98c`.
-- [원본 묶음머리 사진](../SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png): **1672×941·2,131,294바이트**, SHA-256 `3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d`로 불변이다. [원본 제작 기록](../SERIES/06-30/production/thumbnail-draft-runningwear-tiedhair-20261024.json)도 보존한다.
+원본 사진 해시는 `3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d`로 불변이다. PNG의 글자 밖 1,521,686화소는 변경·최대 색 차이 0, 어두워진 채널·흰색 외 합성 화소도 0이다. JPEG는 압축 형식이므로 같은 화소 일치를 주장하지 않는다. 원본·PNG에 embedded ICC(파일 안의 색상 설명)는 없으며 프로그램이 해석한 색 공간과 구분한다. [이번 독립 실제 Astra/high 검토](reviews/2026-10-24-0630-thumbnail-flat-composite-review.md)는 CLEAN(확인된 중대 결함 0건·원칙 관찰 없음)으로 컨트롤러가 채택했다. 이전 생성 결과의 검토는 당시 파일에만 적용한다.
 
-최신 수정은 내장 imagegen(이미지 생성·편집 도구) 한 번과 `sips`(맥 이미지 변환 명령) JPEG 품질 92 변환이다. 이전 시안 한 번과 구분해 [제작 원시](../SERIES/06-30/production/thumbnail-branded-0630-20261024.json)에 두 지시·결과를 기록했다. 실제 JPEG와 480×270 작은 화면을 직접 확인한 뒤 확인용 임시 사본 한 개만 제거했다. 얼굴·머리·러닝복·장면·색감은 시각적으로 유지됐으나 사진 화소·정확한 글꼴·로고 화소 일치는 보장하지 않는다. [최신 이미지·정책의 독립 실제 Astra/high 검토](reviews/2026-10-24-0630-thumbnail-branding-final-review.md)는 CLEAN(확인된 중대 결함 0건·원칙 관찰 없음)으로 컨트롤러가 채택했으며 새 사진·썸네일의 사용자 주관적 최종 승인은 아직 없다. 4K·`loop.png`·영상·업로드는 이번 범위 밖이다. 원본 사진·보관 음원 3개는 그대로이며 이미 총 2회인 믹스에 반복을 추가하지 않는다.
-
-## 2026-10-24 [CDX] 무시간·좌하단 케이던스/가로선 썸네일 생성
-
-현재 실측과 보존 경계는 위 절을 따른다. [최신 계획](plans/2026-10-24-0630-thumbnail-branding.md)과 [상태 저장·좁은 검사 원시](validation/2026-10-24-0630-thumbnail-branding-gates.json)를 보존한다. 최신 독립 검토 결과를 채택한 뒤 컨트롤러가 정확 범위의 커밋·푸시를 승인했다. 앞 로컬 정리·맥 진단 기록은 `8cafd15`로 커밋·푸시를 마쳤다. 새 branch/worktree(분리된 작업 공간)·추가 삭제는 하지 않는다.
-
-이전 우하단·시간 포함 PNG 2,165,441바이트·SHA-256 `c0ed54cb44eb3094fa02d88340d49df20b9f53a449d730ad48dbc72ce54fa484`와 JPEG 488,925바이트·SHA-256 `0b11e432a76a277a45357666cf158495a6244940d5b2e4e1e1b831f98593fc21`는 당시 이력이다. 현재 사용 경로는 위 최신 파일로 교체됐다. [당시 독립 Astra/high CLEAN](reviews/2026-10-24-0630-thumbnail-branding-review.md)은 이전 요구·이전 시안에만 적용하며 최신 결과의 판정이나 사용자 승인이 아니다. Swift(애플 앱 제작 언어) 오류·미완료 합성과 v2 승인 대기도 각 당시 이력이다.
+원본 사진·음원 3개와 기본 썸네일 시간 제거 정책을 보존했다. 이번 그림자 제거를 전역 정책으로 확대하지 않는다. 이미 총 2회인 믹스에 반복을 추가하지 않으며 4K·loop·영상·업로드는 이번 범위가 아니다. 새 사진·썸네일의 사용자 주관적 최종 승인은 아직 없다. 좁은 검사를 통과했고 컨트롤러가 정확한 12개 파일의 커밋·푸시를 승인했다.
 
 ## 2026-10-24 [CDX] 승인된 로컬 미디어 정리 완료
 
