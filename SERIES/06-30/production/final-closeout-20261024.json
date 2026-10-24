@@ -1,0 +1,347 @@
+{
+  "schema": "wavvy.final_release_closeout.v1",
+  "recorded_at_utc": "2026-10-24T07:07:38.174321+00:00",
+  "scope": "current SERIES/06-30 only; process records removed, final result records preserved",
+  "authorization": [
+    "최종 버전 기록 아닌 과정 기록이면 문서도 다 지워.",
+    "이번 06:30의 과정 기록만 (추천)",
+    "음원도 남은 두개 재 업로드 시도해봐.",
+    "마지막으로 제목 대폭 변경해서 다시 해보자."
+  ],
+  "release": {
+    "video_id": "FUBJ6OBTzoI",
+    "visibility": "public",
+    "title": "Playlist | 출발은 가볍게, 끝까지 신나게! 🏃 | 175 BPM Running Mix · 2Hour | Wavvy | 06:30",
+    "cycle_count": 2,
+    "track_occurrences": 40,
+    "transition_occurrences": 39,
+    "duration_seconds": 7570.66,
+    "video_resolution": [
+      3840,
+      2160
+    ],
+    "comments_posted": 1,
+    "video_liked": true,
+    "source_evidence": [
+      "production/youtube-public-followup-20261024.json",
+      "production/youtube-upload-20261024.json"
+    ],
+    "video_local_retention": "intentionally_deleted_after_confirmed_upload",
+    "whole_mix_listener_approval_claimed": false
+  },
+  "cleanup": {
+    "schema": "wavvy.scoped_process_cleanup_applied.v1",
+    "scope": "06:30 only",
+    "project_files_deleted": 3515,
+    "project_logical_bytes_deleted": 222799092,
+    "temporary_wav_copies_deleted": 4,
+    "temporary_logical_bytes_deleted": 297475488,
+    "empty_directories_removed": 264,
+    "protected_files_unchanged": 49,
+    "unrelated_files_unchanged": 10193,
+    "document_sections_removed": {
+      ".ai/SESSION.md": 24,
+      ".ai/HANDOFF.md": 31,
+      "CHANGELOG.md": 22
+    },
+    "all_listed_files_absent": true,
+    "final_contracts_unchanged": true
+  },
+  "prior_confirmed_post_upload_media_cleanup": {
+    "files_deleted": 6,
+    "logical_bytes_deleted": 2654380359,
+    "source_commit": "1f9b4274985dc18470f0922782e89ec2b0cf216c",
+    "current_video_file_count": 0
+  },
+  "suno_final_retry": {
+    "workspace": "[06:30]",
+    "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+    "observed_at": "2026-10-24T07:04:13.794Z",
+    "method": "normal UI upload through Aside MCP; wholly different filenames; unchanged WAV bytes",
+    "uploaded": 0,
+    "rejected": 2,
+    "pending": 0,
+    "final_ui_message": "Upload 2 songs\n\nThese upload in the background and will appear when they finish. You can keep working.\n\nNEON WILDFIRE - Unchained Velocity.wav\nThis audio matches an existing recording\nCARBON HORIZON - Run Beyond Gravity.wav\nThis audio matches an existing recording\n0 of 2 uploaded, 2 failed\nDone",
+    "retained_audio": [
+      {
+        "order": 6,
+        "title": "다리의 불꽃",
+        "retained_path": "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+        "bytes": 74331380,
+        "sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+        "last_upload_filename": "NEON WILDFIRE - Unchained Velocity.wav",
+        "result": "rejected",
+        "message": "This audio matches an existing recording",
+        "audio_bytes_changed": false
+      },
+      {
+        "order": 11,
+        "title": "계속 앞으로",
+        "retained_path": "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+        "bytes": 74406364,
+        "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+        "last_upload_filename": "CARBON HORIZON - Run Beyond Gravity.wav",
+        "result": "rejected",
+        "message": "This audio matches an existing recording",
+        "audio_bytes_changed": false
+      }
+    ],
+    "visible_workspace_count_after": 18,
+    "full18_identity_reverified_in_this_retry": false,
+    "prior_accepted18_records": {
+      "source_recorded_at": "2026-10-24T00:31:41.567729+00:00",
+      "rows": [
+        {
+          "id": "5773f8c0-e37a-4816-a958-bd53c503a26c",
+          "title": "1. 첫 박부터",
+          "duration": "3:33",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "f1966f19-a26c-4816-bf1e-ad8d0376e23e",
+          "title": "2. 가속선",
+          "duration": "3:26",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "48cf2d45-c684-4f9a-857c-6de429a6b69f",
+          "title": "3. 빛나는 노면",
+          "duration": "3:17",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "8e187fa4-79bb-4e41-8400-8c67df07c267",
+          "title": "4. 전력 곡선",
+          "duration": "3:28",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "3049c58e-6ce9-4b28-b2d3-5abaf40696ab",
+          "title": "5. 빛의 마찰",
+          "duration": "3:21",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "13c7f55f-c798-412c-91c8-8d4159ed6561",
+          "title": "7. 하늘을 밀어",
+          "duration": "3:31",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "1708a2eb-b2b5-43ff-a2c8-031ed1d00c6e",
+          "title": "8. 유리 번개",
+          "duration": "3:22",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "cfe646f5-78ff-461e-9fc1-2989b9b6ea44",
+          "title": "9. 한계 위로",
+          "duration": "3:37",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "7bfa9398-32e7-46a5-a8f4-7a71d1313dd1",
+          "title": "10. 전류의 발끝",
+          "duration": "3:20",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "43203e12-e8f3-45c4-bc44-62d64b92305d",
+          "title": "12. 폭발 직전",
+          "duration": "3:51",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "5bc95d2a-6d77-4ffd-a2ba-96aa2970e725",
+          "title": "13. 황금 주파수",
+          "duration": "3:32",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "694a40cd-a627-4689-8225-befc087672f5",
+          "title": "14. 높은 기어",
+          "duration": "3:32",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "909040b8-1286-4e73-88a4-43a8863c043c",
+          "title": "15. 번쩍이는 궤도",
+          "duration": "3:26",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "63356d6d-d857-45a4-a920-f6d92c01138c",
+          "title": "16. 가속의 틈",
+          "duration": "3:27",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "3b73190c-6c34-4bbe-a75b-bf9e6c202093",
+          "title": "17. 몸이 먼저",
+          "duration": "3:39",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "45decf5d-7ff8-4a2a-8e98-2383af92a8c9",
+          "title": "18. 빛을 따라",
+          "duration": "3:22",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "f7deea5a-f4c5-406c-bf58-6228dbd79021",
+          "title": "19. 끝까지 당겨",
+          "duration": "3:17",
+          "status": "complete",
+          "selected": false
+        },
+        {
+          "id": "5e271bdc-7584-46df-ad96-65d8d753b6c8",
+          "title": "20. 다시 점화",
+          "duration": "3:30",
+          "status": "complete",
+          "selected": false
+        }
+      ],
+      "note": "historical final accepted record mapping, retained as result record; current retry reobserved count18 but did not re-read every virtualized row"
+    },
+    "further_retry_planned": false
+  },
+  "retained_final_contracts_sha256": {
+    ".ai/inbox-reviews/2026-10-24/premixed-release-final-review.md": "68bba3d9df04d36ed52c9ba2af7209d467adc95df4de035a56b5ebb7da82cc8e",
+    ".ai/reviews/2026-10-24-0630-continuous-mix-final-review.md": "53fe7dc30e8898c23f817c68a0db15d35e8388837bfd2d168cac112c47a8e8d2",
+    ".ai/reviews/2026-10-24-0630-final-audio-review.md": "8f6234c10a2f963c8913f75f791525b627f42c12b3b54031f525f76d7ea53fa8",
+    ".ai/validation/2026-10-24-0630-continuous-mix-listening-approval.json": "cd4a345795feffd505d5c552948a6b6516395cb3890865d488aa912a3f809c66",
+    ".ai/validation/2026-10-24-0630-final-audio-approval-check.json": "3eb474bab6cbde1bdbb6cd8fff30b5ad59c74f4d98661e8ef9279f52ad9ce34a",
+    ".ai/validation/2026-10-24-0630-premixed-release-contract.json": "29f61c2bb20d499e0b25514ed7214f4dd78baec359b99eda0a99c9060bb0cc32",
+    "SERIES/06-30/input/audio-integration/2026-10-24/selected-basis.json": "7deff8ac3fd509b07c8f54c37eedbae981163e00ee8ec033ce9b2cc5fef84651",
+    "SERIES/06-30/input/download-manifest.json": "ce3ca9e18c92f0fbb62812cf66521da9d211201ca0700478e7ef277ffe2d912b",
+    "SERIES/06-30/input/suno-candidates.json": "52d9fa70a6bb808c679c34a374eb66ed2c95ed42461239c75bfa3560b498ac8f",
+    "SERIES/06-30/input/thumb.jpg": "d3f38504237b6bca5f07592f607844dd423104e3780a5314d5c0a122d6b1c2c8",
+    "SERIES/06-30/input/thumb.psd": "825ae2a13412efa3dc58e595fc60354bc0ba98eeb8c1ebcf3c86e59560cfa9cc",
+    "SERIES/06-30/input/tracks/01_첫 박부터.txt": "34befd4b1649893ae0e03f29f3bdbc3dbb36adf7b5078b906a13bcac27b350ae",
+    "SERIES/06-30/input/tracks/02_가속선.txt": "7eff84f951a7e0f5bd99a9729843fa98501623aeb9b798177494c3a16aaf1683",
+    "SERIES/06-30/input/tracks/03_빛나는 노면.txt": "bca3cbfd563ebe8e0d1cefa481a2a7823e2d19c5d733b3b5a6f5ea0734925856",
+    "SERIES/06-30/input/tracks/04_전력 곡선.txt": "37b571a28d640ddc42707483bff32372e5328df4a3a7fd4b1ee64a8c9c36e711",
+    "SERIES/06-30/input/tracks/05_빛의 마찰.txt": "17c96e2d4b0d154240d1b8f76a0a23e5e97252cba22dc8da43abcebabbc3bb99",
+    "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+    "SERIES/06-30/input/tracks/06_다리의 불꽃.txt": "b38aa4fa2ad8f533fd88f99dd0234a7c17f83717f13ec40a827a4c6d893b8ecd",
+    "SERIES/06-30/input/tracks/07_하늘을 밀어.txt": "36a133c4ee6e5a8c0efcef90762f22f0c748e05792d7545d7d70ab0dded75e62",
+    "SERIES/06-30/input/tracks/08_유리 번개.txt": "75637e9fcfc68e14838ca81688ee059609c54559e5134a05940051b3b5e04631",
+    "SERIES/06-30/input/tracks/09_한계 위로.txt": "ce5912edae1a94a6d052b1a348f7a1ecdb9ed64d06b0327940e18cc731bd949a",
+    "SERIES/06-30/input/tracks/10_전류의 발끝.txt": "bf493228f60e9faf802b957553e3484c7ba0173c926999ea5a4b8719ffbb44b4",
+    "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+    "SERIES/06-30/input/tracks/11_계속 앞으로.txt": "35d62bc81c7a1c743130a621e5630e85cf5cdecb6d7f4ecb176cda9aa44eb893",
+    "SERIES/06-30/input/tracks/12_폭발 직전.txt": "dc216733c2334c6d9808dc9687fe8d337d4bbd6b3190db82d1f7cd7f7211540c",
+    "SERIES/06-30/input/tracks/13_황금 주파수.txt": "caa075c22540464e005d530e6f0f56a75d55b9f4186b68fffd7a2c3a0165c6a2",
+    "SERIES/06-30/input/tracks/14_높은 기어.txt": "0c51f88ff08149176637b2dae4e6a9d684d3abe555db2fb64133d5cbdb2d5ed6",
+    "SERIES/06-30/input/tracks/15_번쩍이는 궤도.txt": "e18d927afe613a8945cb1d4100b351d52c5cdd00e7cc70ae7bb2fad2418f2b87",
+    "SERIES/06-30/input/tracks/16_가속의 틈.txt": "d06f15e9357d3088911de7727ff8326679b5e70edf6f60c5981dc69a92f7db51",
+    "SERIES/06-30/input/tracks/17_몸이 먼저.txt": "56efaed60b4beb22d57d361adaf6fafd5763d4676a5c9d65cb5df1a79850c99e",
+    "SERIES/06-30/input/tracks/18_빛을 따라.txt": "40ec4ca440766080d8679719362fe1b25e8fb25dbe0d26cd2c3eae2643942ecf",
+    "SERIES/06-30/input/tracks/19_끝까지 당겨.txt": "60c22d96b7b4d133cf8752d19e440ca257ab2b86bd73986fb069facdaf97bb5a",
+    "SERIES/06-30/input/tracks/20_다시 점화.txt": "ee6997956717240bb9b5b1c1f13774546007762ce47e4514a2630c48971a1a5d",
+    "SERIES/06-30/output/continuous-mix-20261024/manifest.json": "9d70ef845550442a03e33f65dacbecfc1c80eb2a11e38da786752d73429ca826",
+    "SERIES/06-30/output/continuous-mix-20261024/repeat2/manifest.json": "ed41b62843bfed4db9e1cb2895562be3bb43b7e22ff11f9e1ee24ce78ea1c0f1",
+    "SERIES/06-30/output/continuous-mix-20261024/repeat2/tracklist.txt": "41ae31df388df0531eab6d856f93d3a11bb4ab005d53ee12a4e84ecc7670a90e",
+    "SERIES/06-30/output/continuous-mix-20261024/tracklist.txt": "0ceb1ff228e5a3e524523177c97543a8d70496e4d4a7e469bbf0d836893959f8",
+    "SERIES/06-30/output/upload.csv": "df068e357e5602e8208f9cf79908faf07304931636ae7f66fd4921d470d90dad",
+    "SERIES/06-30/production/continuous-mix-20261024-repeat2.json": "63e5396e904c0929df2f0234dc6a72069e057500eed7a1d87a3028aebf6bfe65",
+    "SERIES/06-30/production/continuous-mix-20261024.json": "30925db57f1073c2e2e36944a8bba7466ac27a7cfa8cad4b53d45513dfff5eae",
+    "SERIES/06-30/production/final-premixed-audio.json": "55fe5ae267f041c623b8f68d78ea4ac96b1b1add0ad6d8e26281efa3b4d5b702",
+    "SERIES/06-30/production/render-user-thumbnail-20261024.py": "541e9914fa6f755a9c5a4fa48de3046bc1d79a1a14afc38d942e39ae04f95f93",
+    "SERIES/06-30/production/validate-user-thumbnail-video-20261024.py": "6af0dcc38d968636d217754ef561f2264b96468968683e86e243ea5f30c027e1",
+    "SERIES/06-30/production/video-user-thumbnail-20261024-validation.json": "32d6595e0e3a93d33b4e56f78d0da007cf525204fa31d4cb76627da876594012",
+    "SERIES/06-30/production/video-user-thumbnail-20261024.json": "23001d9dafb66ec1a6856bbce9d33a5e7c8cb782f379a47784a1029319b2b6c4",
+    "SERIES/06-30/production/youtube-public-followup-20261024.json": "b1f0ab366588564e4a7ab8a55c487246cab160be0729fad80907c7dd39f0a326",
+    "SERIES/06-30/production/youtube-upload-20261024.json": "91443f781f78c60c8750820a7a06d80586b11741b0d00a8c8c24dc8b42811b28",
+    "scripts/continuous_mix_0630.py": "033e3489aae555027528608d84debfbc703ba2680208cebb1c6e29512bfe7a98",
+    "scripts/continuous_mix_0630_repeat.py": "4a282bae462dd28d11a460d29ba66c7ff571a679c20b89e82007c5fc457c22ee"
+  },
+  "review": {
+    "confirmed_critical_high": 0,
+    "verdict": "CLEAN",
+    "principle_observations": [],
+    "reviewer_role": "reviewer",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "plan_sha256": "622250cd26d002a48381cacfdccb2683f521ef4745f97b494c989d1d2386b744",
+    "executor_sha256": "98f8b17323ad65dd5e6cbbbfe90fe4683025d1d905906049e4b3c0b2eca60c96",
+    "scope": "frozen deletion list, executor, protected closure, four proposed documents",
+    "adoption": {
+      "source": "isolated reviewer /root/scoped_0630_cleanup_review",
+      "claims": [
+        "stat/hash checks",
+        "protected49 and unrelated10193 unchanged",
+        "virtual contract check12 dependencies",
+        "other-series and global-policy preservation"
+      ],
+      "controller_measurement": "same bound dependency closure, exact published metadata section, protected file set, explicit final upload rejection text; executor rechecks every deletion and every preserved file before and after",
+      "duplicates_conflicts": "no conflicting user scope; older 06:30-to-17:30 records excluded",
+      "counterevidence": "review is not full music listening or assurance that all 20 files can be recovered",
+      "decision": "CLEAN accepted for exact plan and executor hashes"
+    }
+  },
+  "post_cleanup_checks": {
+    "pending": false,
+    "official_state_revision": 91,
+    "state_check": "PASS",
+    "uploaded_gate": {
+      "schema": "wavvy.gate.v1",
+      "stage": "uploaded",
+      "result": "PASS",
+      "series": "SERIES/06-30",
+      "checks": [
+        {
+          "name": "validate_project",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "name": "final_premixed_audio",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "name": "premixed_render_identity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "name": "youtube_upload_completed",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "warnings": [],
+      "blockers": []
+    },
+    "git_diff_check": "PASS after removing trailing whitespace",
+    "agent_router_byte_identity": "PASS",
+    "protected_files_unchanged": 49,
+    "unrelated_files_unchanged": 10193,
+    "video_files_remaining": 0,
+    "retained_audio_files": 2
+  },
+  "notes": [
+    "Deleted-path strings inside immutable final provenance records are historical references, not pending restoration tasks.",
+    "Logical deleted bytes are not measured APFS free-space recovery.",
+    "Other series and Git internal history were not deleted.",
+    "Full20 exact-source recovery is not guaranteed."
+  ]
+}

@@ -1,196 +1,10 @@
 # Wavvy Handoff — 2026-10-24
 
-## 2026-10-24 최종 마감 — 공개 완료·업로드 후 미디어 정리
+## 2026-10-24 06:30 최종 발매·보관 기록
 
-- 공개·4K 처리·일반 댓글 1개·영상 좋아요와 요청한 설명 한 줄 삭제는 기존 직접 관측대로 완료됐다. 승인 제목·최종 썸네일은 그대로다.
-- 젠의 기존 업로드 후 삭제 승인에 따라 정확한 **6파일·2,654,380,359바이트**의 믹스·최종/진단 영상·임시 전송 사본을 삭제했다. 이는 논리 파일 크기의 합계이며 실제 회수 공간과 같다고 주장하지 않는다. 삭제 후 6개 전부 부재와 보호 자료·생산/게시 기록 13개 불변을 직접 확인했다.
-- 현재 프로젝트와 지정 브라우저 전송 폴더의 오디오·영상은 **6·11번 WAV 2개·148,737,744바이트**뿐이다. 사용자 `input/thumb.jpg`도 기존 내용 그대로 보존했다. 가사·스타일·선택 목록·믹스 설정·제작/검사 기록을 남겼다. 다른 프로젝트·다운로드 폴더·디렉터리·Git(변경 이력 관리 도구) 내부 이력은 삭제하지 않았다.
-- 전용 상태 저장 명령 `state SERIES/06-30 --write --phase uploaded --if-match 89 --json`을 1회 실행해 revision 90·uploaded(업로드 완료)를 저장했다. 영상의 현재 표시는 `deleted_after_upload`(업로드 확인 뒤 의도적으로 삭제함)다. `premixed_audio: verified`는 보존 계약·검사 기록의 확인이며 믹스 실물 보유를 뜻하지 않는다.
-- 별도 보관한 두 WAV 외 전체 20곡의 정확한 재확보를 보장하지 않는다. Suno 6·11번 미수락은 사용자 중지 이력이며 추가 업로드·복구 계획은 없다. 이번 영상에 남은 제작·게시 작업은 없다.
-- 독립 검토는 실제 `gpt-6-astra` / `high`로 CLEAN(확인된 Critical/High 중대 결함 0건·원칙 관찰 없음)을 회수했다. 현재 사실은 새 정리 원문을 따르며 아래 보존·처리 대기는 각 당시 시점의 이력이다.
+승인 제목으로 YouTube 영상 `FUBJ6OBTzoI`를 공개했다. 20곡×2회·2:06:10.660·40챕터이며 일반 댓글 1개·좋아요와 SD/HD/4K 완료를 확인했다. 업로드 후 영상·믹스는 승인 삭제했다. 이번 06:30의 과정 기록만 정리하며 다른 시리즈 기록은 보존한다. 최종 사용자 JPG·PSD, 원문 20개, 최종 선택·제작·게시 기록과 6·11번 WAV 두 개를 보관한다. 완전히 다른 영문 제목으로 재업로드한 6·11번은 모두 기존 녹음 일치로 거절됐다. 두 원본을 별도 보관하며 추가 재시도 계획은 없다. 마지막 Suno 재업로드 결과와 정리 수량은 `SERIES/06-30/production/final-closeout-20261024.json`, 최종 공개 문안과 보관 기준은 `SERIES/06-30/concept.md`를 따른다. 제작·게시할 작업은 남아 있지 않다.
 
-근거: [동결 목록](cleanup/2026-10-24-0630-post-upload-cleanup-manifest.json) · [실행 결과](cleanup/2026-10-24-0630-post-upload-cleanup-apply.json) · [삭제 후 대조](cleanup/2026-10-24-0630-post-upload-cleanup-postcheck.json) · [독립 검토 수용](inbox-reviews/2026-10-24/0630-post-upload-cleanup-review.md) · [공식 상태 저장](validation/2026-10-24-0630-closeout-state-write.json).
 
-삭제 후 `state --check`와 `gate --stage uploaded`는 PASS(통과)이고 경고·차단 사유가 없다. 문서 공백 검사와 AGENTS/CLAUDE 동일성도 통과했다. 추가 실행한 `verify-release`는 종료값 1로 삭제된 믹스를 요구했다. 이 명령은 업로드 직전 실물 대조용이며 업로드 후 정리를 허용하는 인자를 쓰지 않는다(`wavvy.py:2187`, `MASTER/cli/SPEC.md:150`). 결과를 숨기거나 통과로 바꾸지 않고 [마감 검사 원문](validation/2026-10-24-0630-closeout-gates.json)에 남겼다. 현재 마감 판정은 업로드 완료 전용 검사를 따른다. 파일이 있던 공개 직후의 전체 발매 대조 통과 기록도 보존한다.
-
-## 현재 06:30 — 즉시 공개·설명 한 줄 삭제·댓글·좋아요 완료
-
-- 젠의 “지금 공개하고 댓글달아.”에 따라 Wavvy24 영상 [FUBJ6OBTzoI](https://youtu.be/FUBJ6OBTzoI)를 즉시 공개했다. 저장 뒤 Studio(유튜브 영상 관리 화면)를 새로 열고 공개 선택을 다시 열어 확인했다. 이전 공개 시점 질문은 해소됐다.
-- 승인 제목과 사용자 썸네일을 유지했다. “17BPM이 목표고 실제 곡마다 빠르기는 다르다는 설명은 빼” 요청에 맞춰 실제 설명의 `175 BPM은 이 플레이리스트의 목표 속도예요. 실제 곡마다 빠르기는 달라요.` 한 줄을 삭제하고 서버 저장·로컬 CSV(업로드 문안을 저장하는 표 파일) 일치를 확인했다. 내부 제작·실측 이력은 바꾸지 않았다.
-- SD·HD·4K 처리 완료와 현재 소유권 주장·저작권 보호 콘텐츠 미발견 화면을 확인했다. 미래 권리 주장 부재를 보장하지 않는다.
-- [일반 댓글](https://www.youtube.com/watch?v=FUBJ6OBTzoI&lc=UgxQyi1zjfh2fk5osSV4AaABAg) 1개를 @wavvy24로 게시했고 정확한 세 줄을 화면과 Aside(연결된 브라우저 도구)의 댓글 조회로 확인했다. 영상 좋아요 적용과 “좋아요 취소”·1 표시도 확인했다. 댓글은 고정하지 않았다.
-- 직접 관측: `SERIES/06-30/production/youtube-public-followup-20261024.json` 및 같은 이름의 화면 기록. 이 공개·댓글 관측 시점에는 미디어를 삭제하지 않았다. 이후 실제 정리 결과는 위 최종 마감 절을 따른다.
-
-공개 직후 공식 상태는 전용 명령으로 revision 89·uploaded(업로드 완료)에 저장했다. 현재는 위 revision 90을 따른다. 상태 검사·uploaded 검사·발매 자료 대조는 모두 종료값 0이며 `.ai/validation/2026-10-24-0630-public-followup.json`을 따른다. 최초 비공개 업로드 원문·렌더 검증은 보존한다. 믹스·영상은 위 마감에서 삭제했고 6/11 별도 보관 파일은 유지한다. 새 브랜치나 worktree(분리 작업 폴더)는 만들지 않았다.
-
-## 이전 인계 기록 — 아래 공개·처리 대기는 각 당시 시점의 이력
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 원격18곡·6/11번 서비스 거부)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 사용자 직접 삭제 보고 뒤 첫6곡 재시도는0성공, 새로고침·이름변경 배치에서17/19 추가 수락, 약1BPM 감속 배치에서9/12 추가 수락으로 현재 Suno18곡이다. 6/11은 감속 사본도 같은 오류로 거부돼 전곡 교체는 미완료다.
-Current: 정확한 작업공간335455f4-30d5-4878-b658-365da757127e. 기존14곡과 추가4곡만 있으며 필터 해제/복원 모두18개 ID·제목·길이·complete 일치, 대기0·선택0. 이번 에이전트 삭제/복원/생성/공개0. 사용자 직접 삭제는 user_reported이며 독립 검증하지 않았다. 강제 새로고침 단축키의 재로딩은 관찰되지 않았고 일반 reload 한 번을 실행했다. 캐시 우회는 미검증이다.
-Sources: SERIES/06-30/input/suno-replacement/2026-10-24/retry-six/retry-manifest.json → retry-renamed/retry-manifest.json → retry-slower/upload-manifest.json. 기존 원본 후보ID·local20·Downloads20·download-manifest/candidates/state는 불변. Suno9/12는 별도175목표 감속사본이며 로컬 최종입력9/12는 이전176목표 파일 그대로다. 감속4개는 retry-slower/processing-manifest.json에 실제경로/SHA/원본연결을 보존했다. 새 업로드ID로 원본출처ID를 덮어쓰지 않는다.
-Verification: .ai/validation/2026-10-24-0630-suno-retry-final-check.json, .ai/validation/2026-10-24-0630-suno-retry-state-check.json, .ai/validation/2026-10-24-0630-suno-retry-six-check.json, .ai/validation/2026-10-24-0630-suno-renamed-check.json, .ai/validation/2026-10-24-0630-suno-slower-audio-check.json, .ai/validation/2026-10-24-0630-suno-retry-six-preservation.json. 공식state revision84 track_source_draft·입력20개. 신규 전곡 청취·전곡 BPM·YouTube 업로드 완료는 선언하지 않는다.
-Review: .ai/reviews/2026-10-24-0630-suno-retry-review.md, 실제 fresh Astra/high. 기록 범위 CLEAN·확인된Critical/High0·원칙관찰없음. 전체20곡 수락 판정은 아니다.
-Next-TODO: 6번 다리의 불꽃·11번 계속 앞으로의 정상 업로드가 서비스 오류로 미완료다. 승인된 재시도는 끝났고 추가 자동 재시도·추가 감속·삭제 계획은 없다. 아래14곡·6거부 및33곡 휴지통 내용은 첫 교체 당시 이력이다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 Suno 교체 일부 완료·6곡 서비스 거부)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 사용자 요청으로 기존 Suno33곡을 일반 휴지통으로 이동했다. 수정본20곡 업로드는14성공·6거부이며 전체20곡 교체는 미완료다.
-Current: 정확한 작업공간335455f4-30d5-4878-b658-365da757127e에 신규14곡만 남았다. 기존33개 남음0·신규누락0·대기0. 6/9/11/12/17/19번은 This audio matches an existing recording 오류다. 원인 미확정이며 재시도·변조·생성·공개 조작0, 영구삭제0. 원래 화면 필터3개를 복원했다.
-Verification: SERIES/06-30/input/suno-replacement/2026-10-24/replacement-manifest.json, .ai/validation/2026-10-24-0630-suno-upload-check.json, .ai/validation/2026-10-24-0630-suno-final-check.json. 기존생성ID와새업로드ID를구분하고 source download-manifest/candidates·로컬20WAV·Downloads20사본은 보존했다. 공식state revision84 track_source_draft·입력20개는 불변이다.
-Review: .ai/reviews/2026-10-24-0630-suno-replacement-review.md. 실제 Astra/high 격리검토는 기록범위 CLEAN·확인된Critical/High0·원칙관찰없음. 전체요청완료판정이아니다.
-Next-TODO: 거부6곡의 정상업로드가 남았다. 현재 사이트가 거부한 상태이며 같은 오류의 반복재시도·음원변조 계획은 없다. 아래 ‘20곡 확보 완료’는 로컬음원확보 이력이고 원격20곡교체 완료를 뜻하지 않는다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 선택 전곡 음원 확보 완료)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 선택20곡의 최종 WAV20개와 Downloads 청취 사본20개·index.html을 저장하고 직접 전체 파일 검사·54개30초 박자 재측정·독립 Astra high 검토를 마쳤다. 총4134.9251875초이며 확정 Critical/High0·원칙 관찰 없음이다.
-Current: 공식 state writer revision84 track_source_draft, 실제 input/tracks 음원20개. 8·13·18은173목표, 다른보정15곡은176목표,5·20원속도 보존.12는 정상r2,14는 선택ID복원·젠추가1회승인후 성공r5만 채택했다.14 중간 끊김 검사에서 발견된 문제는 없다.13의 화면 로그 저장 예외와 모든 실패 원시는 보존했다.
-Verification: .ai/validation/2026-10-24-0630-parent-final-audio.json, .ai/reviews/2026-10-24-0630-final-audio-review.md, .ai/validation/2026-10-24-0630-post-review-finalization.json. 검토 뒤 마감은 상태·근거 필드만 변경하며 미디어·선택·목표는 불변이다. 모든순간 BPM·새전곡청취·source_final·발매완료를 주장하지 않는다.
-Delivery: ~/Downloads/wavvy-0630-final-audio-20261024/index.html
-Next-TODO: 요청받은20곡 음원 확보에 남은일은 없다. 아래 부모검사전·수집착수·일시중단 항목은 과거시점 이력이며 자동재개 과제가 아니다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 최종 음원 입력 20곡 확보·부모 검사 전)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 선택 ID 20개와 일치하는 입력 WAV 20개, 실제 사본 SHA·출처·곡별 예외가 든 download-manifest.json, Downloads 청취 폴더와 index.html을 만들었다.
-Current: 8·13·18번 173 목표, 다른 15곡 176 목표, 5·20번 원속도 보존. 12 r2·14 r5만 채택했고 14 복원/젠 추가 1회 승인/컨트롤러 r4 정지 이력을 보존했다. 원시 BPM·크레딧·선택 ID는 그대로다.
-Next-TODO: 부모의 전체 직접 검사, 신규 격리 검토, 공식 state writer 기록과 커밋·푸시가 남아 있다. 이 기록은 해당 단계 완료를 뜻하지 않는다.
-Verification: input/download-manifest.json의 20개 실제 입력·Downloads 사본 SHA 일치와 source/raw/processing 연결을 통합 담당이 확인했다. 전곡 모든 순간 BPM 또는 새 전곡 청취 승인은 주장하지 않는다.
-Delivery: /Users/zenkim_office/Downloads/wavvy-0630-final-audio-20261024/index.html
-Commits: 이 통합 단계에서 커밋·푸시는 실행하지 않았다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 최종 음원 확보 진행)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “모두 통과. 음원 최종 확보해.”로 정확한 173 목표 30초 비교본 8·13·18번과 원속도 전곡 녹음본 5·20번을 승인받았다. 선택 ID 20곡의 최종 WAV 수집과 검증을 진행한다.
-Current: [계획](plans/2026-10-24-0630-final-audio-acquisition.md)대로 8·13·18번은 이번 시리즈 한정 173 BPM 목표, 다른 15곡은 176 BPM 목표, 5·20번은 원속도 유지다. 기존 1·5·20번 원속도 전곡 작업본만 확보됐고 최종 input/tracks/ WAV와 download-manifest.json은 아직 없다. 20번 현행 ID와 옛 30초 전달 ID는 다르다. 8·13번 175 목표 파일은 미승인 비교 이력, 이전 176 승인본은 원래 SHA에만 유효하다. 전곡 BPM 인증·source_final 선언 없음. 공식 state revision83 track_source_draft.
-Next-TODO: 나머지 선택 ID 17개의 원속도 전곡 음원을 수집하고, 원본 보존 후 보정 목표에 맞춰 처리한다. 실제 파일 20개가 확인된 뒤 최종 WAV와 manifest를 작성·검증한다. pack·report·영상·썸네일은 이번 범위 밖이다.
-Verification: [승인·원장 대조](validation/2026-10-24-0630-final-audio-approval-check.json)에 새 승인 5개 파일의 SHA, 선택 ID 20개와 원장 비결정 필드 불변을 기록한다. 2026-10-23 기록은 당시 청취 대기 이력이며 이번 승인이 우선한다.
-Commits: 컨트롤러 검토 후 이번 작업 묶음에 한 번 반영한다. 큰 WAV는 로컬 경로에 보존한다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 청취·후속 저장 현행)
-Date: 2026-10-23
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “모두 통과”는 기존 30초 청취본 20개의 통과다. 현재 후보 ID 20개를 선택했다. 8·13·18번의 새 173 목표 비교본 청취를 기다리고, 5·20번은 현재 Suno 유일 후보 전곡을 앱 출력으로 녹음해 Downloads 사본까지 보존했다.
-Current: [후보표](../SERIES/06-30/input/candidate-review.md)에서 20번 옛 청취본 `5f0f2be1-7ec8-4f36-aa18-8af4b43199c7`와 현행 선택 `6a6baa59-8576-4538-a157-b2410ce326d0`를 분리했다. 새 20번 전곡 녹음은 청취·175–177 BPM 합격으로 선언하지 않는다. [8·13번 175 목표 비교본](../SERIES/06-30/input/tempo-adjustment/slower-08-13/2026-10-23-slower-08-13-target175-provenance.json)은 미승인 비교 이력으로 보존한다. 최신 [8·13·18번 173 목표 비교본](../SERIES/06-30/input/tempo-adjustment/target173-08-13-18/2026-10-23-target173-08-13-18-provenance.json)은 세 파일 모두 사용자 청취 판정 전이다. 173은 이번 30초 시험 목표이며 시리즈 전곡 175–177 BPM 기준은 그대로다. 기존 176 목표본의 승인 해시를 옮기지 않는다. [5·20 전곡 녹음 출처](../SERIES/06-30/input/selected-recordings/2026-10-23/README.md)는 원속도 앱 출력 작업본이며 공식 다운로드·정식 최종 WAV는 0개다. 원본 BPM 판정과 원장 remote disposition(원격 후보 상태)은 불변, 공식 state revision83 `track_source_draft`다. 기존 68후보·휴지통34·크레딧1,766은 이전 원장 시점 이력이다. 이번 작업자는 생성·삭제0회이고 다른 곡의 현재 원격 수량을 전수 확인하지 않았다.
-Next-TODO: 8·13·18번 새 173 목표 비교본의 사용자 청취 판정을 기다린다. 전곡 175–177 BPM 기술 검증과 정식 WAV 확보·발매 단계는 별개로 남는다. 앞서 보낸 추가 시험 순서 질문은 후속 구체 지시가 실행돼 더 이상 답 대기 과제가 아니다. 아래 HANDOFF는 이전 시점 이력이다.
-Verification: [승인 연결 대조](validation/2026-10-23-0630-audition-approval-check.json)에 기존 전달본20·175 비교본2·173 비교본3·전곡작업본2/Downloads 루트 사본 해시와 원장 불변 비교를 기록한다. [175 비교본 부모 대조](validation/2026-10-23-0630-slower-parent-check.json), [5·20 녹음 부모 대조](validation/2026-10-23-0630-selected-recordings-parent-check.json), [173 비교본 부모 대조](validation/2026-10-23-0630-target173-parent-check.json)는 각 작업 당시 실측이다. [독립 Astra xhigh 검토](reviews/2026-10-23-0630-audition-recordings-tempo-followups-review.md)는 이 범위에서 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이며 새 청취 승인·전곡 BPM 인증은 아니다.
-Commits: 현행 문서와 작은 근거 파일은 이 상태 기록 커밋에 함께 반영한다. 큰 WAV는 로컬 무시 경로에 보존한다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 승인된 조절 방법의 현행 결과)
-Date: 2026-10-23
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “시험 통과 이런식으로 조절하자.”로 음높이 유지 속도 조절을 이번 06:30에 한해 승인했다. 원본을 보존해 18곡의 30초 보정 미리듣기(활성 후보 15·로컬 과거 후보 3)를 만들었다. 5·20번은 박자 해석이 모호해 보정하지 않은 원본 30초를 청취용으로 둔다. 1번 전체 구간별 조절은 작업본 한 개가 목표에 못 미쳐 추가 튜닝을 멈췄다.
-Current: [청취 전달 기록](../SERIES/06-30/input/tempo-adjustment/2026-10-23-listening-delivery.json)의 보정 미리듣기 18개는 전곡 박자 확인이나 최종 선택이 아니다. 로컬 과거 후보 3개는 Suno에서 복구하지 않았다. [1번 앱 출력 원시](../SERIES/06-30/input/tempo-adjustment/full-source/track01-round4-a-capture-provenance.json) 217.56초에는 다음 곡 자동 재생이 있어 2.35–200.75초의 198.4초만 작업용 원본으로 분리했다. [일정 배수 예상](../SERIES/06-30/input/tempo-adjustment/full-source/track01-uniform-factor-stop-check.json)은 175.575–178.892 BPM이므로 전체 렌더는 하지 않았다. [구간별 시험 결과](../SERIES/06-30/input/tempo-adjustment/full-source/track01-adaptive-output-adjudication.json)는 출력 209.262479초, 예상 213.514530초와 차이 -4.252051초, 독립 측정의 강한 8초 창 49개 모두 175–177 BPM 밖이다. 원인은 미확정이다. 원본 68후보·69표본의 자동 원시 및 별도 `out`54·`uncertain`14 판정은 불변이고 Suno 휴지통34·영구삭제0·최종선택0·크레딧1,766이다. 공식 state revision83 `track_source_draft`, Mac 설정과 기존17:30 결과는 불변이다.
-Next-TODO: 젠에게 1번 추가 시험과 18개 미리듣기 먼저 듣기 중 다음 순서를 물어 답을 기다린다. 답 전 첫 곡 재조절·다른 곡 전체 보정·추가 Suno 생성/삭제를 진행하지 않는다. 목표 미달 작업본은 최종 음원이 아니며 추가 튜닝은 0회다. 이번 블록은 결과 체크포인트이고 아래 “청취 의견 대기” 블록은 방법 승인 전의 이력이다.
-Verification: [독립 Astra xhigh 검토](reviews/2026-10-23-0630-tempo-adjustment-checkpoint-review.md)는 파일·전달·실패 기록 범위에서 CLEAN(확인된 Critical/High 0·원칙 관찰 없음)이다. 전곡 보정 통과를 뜻하지 않는다. 컨트롤러의 전곡 시험 재현과 전달 대조는 errors 빈 배열, 공식 state check PASS다.
-Commits: 이 체크포인트는 검토 기록과 함께 커밋·푸시한다. 현재 요청의 전곡 보정 작업은 미완료이며 젠의 추가 시험 답을 기다린다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 기존 후보 30초 점검 완료)
-Date: 2026-10-23
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “재개해. 내 생각엔 음원 길이를 조정하는 방법도 있을 듯?” 지시로 이전 일시 중단을 해제했다. 기존 Suno 후보 68개 모두 유효한 연속 30초 음악 표본 점검을 마쳤다. 1번 후보의 음높이를 유지한 길이 조절 시험 두 파일을 젠에게 전달했고 청취 의견을 기다린다. 아래 ‘사용자 요청 일시 중단’ 블록은 과거 기록이다.
-Current: [자동 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json)은 68고유 후보·69표본 모두 원본 `uncertain`이다. [독립 판정 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-independent-adjudications.json)은 `out` 54·`uncertain` 14이며 [부모 전체 대조](validation/2026-10-23-0630-all-candidate-samples-parent-check.json)는 후보·표본·원시 결과의 일치를 확인했다. Suno 휴지통 이동 34개·영구 삭제 0개·최종 선택 0개, 크레딧 1,766이다. [길이 조절 시험](../SERIES/06-30/input/bpm-audit/validation/2026-10-23-track1-atempo-pilot.json)은 1번 4차 A의 30초 원본을 보존한 파생본이며, 자동 판정 `uncertain`·독립 측정 약 175.948 BPM이다. 30초 결과는 전곡 보증이 아니다. 공식 state revision 83 `track_source_draft`는 그대로다.
-Next-TODO: 젠의 비교 청취 의견을 기다린다. 추가 삭제·생성·전곡 길이 조절과 20곡 최종 선택은 현재 보류한다. 1번 네 차례 제출의 여덟 후보는 모두 `out`이라 다섯 번째 자동 생성은 별도 결정 없이는 진행하지 않는다. 이번 블록은 진행 체크포인트이며 최종 음원 제작 완료 기록이 아니다.
-Commits: 이번 변경 묶음은 컨트롤러가 최종 확인 뒤 커밋·푸시한다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (사용자 요청 일시 중단)
-Date: 2026-10-23 19:15 KST
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “잠깐만 스톱” 요청으로 06:30 BPM(분당 박자 수) 작업을 일시 중단했다. 현재 후보 이력 68개 중 54고유 후보·55개 연속 30초 표본의 자동 분석 기록을 보존한다. Suno 재생·녹음은 정지됐고 젠의 명시적 재개 요청을 기다린다. 30초 판정은 전곡 보증이 아니다. 아래 18:38 체크포인트와 이전 중단 기록은 각 시점의 이력이다.
-Current: 젠 원문 “잠깐만 스톱”으로 06:30 Suno 녹음·생성·휴지통 이동 및 새 BPM 분석·판정 반영을 멈췄다. [자동 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json)은 54고유 후보·55표본 모두 원시 `uncertain`이다. 9번 round2 B 결과는 중단 직전 실행 중이던 명령이 종료0으로 저장한 결과이며 검토자 전달 전이다. [독립 판정 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-independent-adjudications.json)은 46후보 `out`36·`uncertain`10이고 실제 Suno 휴지통 이동34·영구 삭제0이다. 2번 round2 `out`2는 원격 이동 대기, 1번 round4 및 6/7/9번 round2는 독립 판정 원장 적용 전이다. [원격 후보 기록](../SERIES/06-30/input/suno-candidates.json)은 이력68·활성 계산34·크레딧1,766, 최종 선택0이며 공식 state revision83 `track_source_draft`는 불변이다. 검토자 메시지로만 접수된 미채택 7후보 잠정값은 1번 round4 A/B `out`, 6번 round2 A `uncertain`·B `out`, 7번 round2 A/B `out`, 9번 round2 A `out`이다. 이는 부모 재현·판정 원장 반영 전 주장으로 위 독립 집계에 더하지 않는다. 9번 round2 B는 중단 시점 검토자에게 전달되지 않아 검토 전이다. 1번은 기존 세 제출의 여섯 후보와 승인 수정문구 네 번째 제출의 두 후보가 이 잠정값까지 모두 범위 밖이라도 다섯 번째 자동 반복을 하지 않으며, 사용자 명시 재개 후 별도 결정이 필요하다. Suno 재생·녹음은 9번 B 뒤 정지 확인됐다.
-Next-TODO: 젠이 명시적으로 재개를 요청할 때만 이 원시 결과와 검토 대기열에서 이어간다. 프로젝트 로드나 이 기록만으로 음악 작업을 자동 시작하지 않는다. 30초 표본은 전곡 BPM 보증이 아니며 전체 재생성 후보 감사·최종 음악 선택은 아직 끝나지 않았다.
-Commits: 이번 진행 중 변경은 아직 커밋·푸시하지 않았다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (진행 중 체크포인트)
-Date: 2026-10-23 18:38:30 KST
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “suno 켜놨어 다시 진행해”로 이전 일시 중단을 해제했다. 06:30은 20논리곡이고 175–177 BPM(양끝 포함)을 각 후보의 연속 30초 음악 샘플로 점검 중이다. 30초 결과는 곡 전체 박자 보증이 아니다. 이전 첫 HANDOFF의 “중단·42후보·첫1후보 측정”은 당시 이력이며 현재 상태가 아니다.
-Current: [Suno 후보 기록](../SERIES/06-30/input/suno-candidates.json)은 고유 후보 이력 60개·실제 휴지통 이동 27개·활성 계산 33개, 크레딧 1,806이다. 12–15번의 동결 원문 각 1회 재생성은 접수됐고 [후속 재생 준비 화면](../SERIES/06-30/input/bpm-audit/evidence/2026-10-23-recent-regeneration-readiness-ui.json)에서 새 8개와 9번 B의 활성 Play를 확인했다. [자동 30초 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-30s-batch-ledger.json)은 이 시점에 고유 34후보·35샘플을 분석해 전부 `uncertain`으로 보존한다. 별도 [독립 판정 원장](../SERIES/06-30/input/bpm-audit/results/2026-10-23-independent-adjudications.json)은 34후보 중 `out` 27·`uncertain` 7이고, [Suno 휴지통 화면](../SERIES/06-30/input/bpm-audit/evidence/2026-10-23-tracks1-11-to15-reviewed-trash-ui.json)까지 실제 `out` 27개 모두 휴지통 이동·영구 삭제 0개를 확인했다. 최종 선택 0개이며 공식 state revision 83 `track_source_draft`는 바뀌지 않았다.
-Next-TODO: 녹음 담당자가 완료 통지한 나머지 기존 후보와 새 후보의 유효 30초 파일만 해시·ID·재생 구간 근거를 대조해 분석한다. 자동 `uncertain`을 임의 삭제 근거로 바꾸지 않고 독립 판정과 원격 이동 UI를 따로 기록한다. 1번은 3회 생성의 6후보가 모두 30초 독립 측정상 범위 밖이어서 [박자 지시 수정안](plans/2026-10-23-track1-tempo-retry-proposal.md)에 관한 젠의 답을 기다린다. 답 전 추가 생성은 하지 않는다. 이것은 진행 체크포인트이며 전체 후보 감사·20곡 청취/선택의 종료 기록이 아니다.
-Commits: 이번 진행 중 변경은 아직 커밋·푸시하지 않았다. 기존 체크포인트 228d6e9dad5202cb34283686defff09115e9fcaa는 과거 중단 기록이다.
----
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex
-Date: 2026-10-23 15:21:40
-Project: /Users/zenkim_office/Project/wavvy
-Agent: Codex
-Summary: 06:30 러닝 시리즈는 20논리곡·원격 후보 42개를 보존한다. 젠이 허용한 30초 샘플로 첫 후보 1개의 구간 2개를 측정했지만 둘 다 uncertain이며 삭제·선택 0개다. 분석기 30초 지원 독립 Astra 검토는 CLEAN이나 전곡·42후보 판정은 아니다. Aside 전면에서 신호가 나온 원인은 미확정이다. 젠 요청으로 녹음·분석·브라우저 조작·삭제·재생성을 중단했다.
-Next-TODO: 젠이 명시적으로 재개를 요청할 때만 B 후보 페이지에서 30초 샘플 작업을 이어간다. 프로젝트 로드나 이전 승인만으로 자동 재개하지 않는다. 공식 state는 revision 83 track_source_draft 그대로다.
-Commits: 작업 체크포인트 228d6e9dad5202cb34283686defff09115e9fcaa; 세션 기록 (이번 커밋)
----
-
----
-HANDOFF: Codex -> 젠
-Date: 2026-10-23 (새 06:30 추가 생성·BPM 분석용 녹음 재시도)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠이 승인한 1번 동결 원문 Custom 3:18 재생성 1회로 새 후보 2개(3:17·3:18)를 추가했다. 기존 첫 40후보와 짧은 1번 두 후보는 보존해 새 `[06:30]` 작업공간 `335455f4-30d5-4878-b658-365da757127e`에 20논리곡·고유 ID 42개다. 크레딧은 1,896이다. [후보 기록](../SERIES/06-30/input/suno-candidates.json)에 추가 생성 이력이 있다.
-Current: 젠의 “175-177bpm 아닌건 삭제해. 둘 다 삭제되는거면 다시 만들고” 지시는 유효한 음원으로 BPM을 실측한 뒤 적용한다. 다운로드 잔여 0이다. 앱 전용 녹음 두 번이 전부 0 PCM이었고, 젠의 “재시도 해봐” 지시로 한 세 번째 짧은 녹음도 화면상 재생 시간은 약 33초 진행했으나 48 kHz·2채널 PCM 신호가 0이었다. 원인은 미확정이다. 실패 raw WAV 세 개는 보존했고 유효 분석 음원·BPM 측정·삭제·최종 선택은 각각 0개다. 젠에게 직접 재생 시 소리가 들리는지 물었지만 소리 여부 답변은 받지 못했다. 추가 재시도와 브라우저 조작은 멈췄다. 공식 state revision 83은 `track_source_draft`다.
-Verification: [첫 두 녹음](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-failed-capture-audit.json), [세 번째 재시도](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe3-check.json)와 [현재 상태 검사](../SERIES/06-30/input/bpm-audit/evidence/2026-10-23-bpm-audit-document-check.json)에 실제 파일 해시·PCM 신호·후보 수를 남겼다. UI 재생 진행은 소리가 실제 출력됐다는 증거가 아니다. [BPM 분석기 최종 독립 검토](reviews/2026-10-23-0630-bpm-method-final-review.md)는 준비 범위에서 CLEAN(확인된 Critical/High 0·원칙 관찰 없음)이다. 수정 전 두 REVISE는 역사로 보존했다. 보존 원시 17건의 현재 분류 일치와 무음 입력 조기 반환을 검토했으며 전곡 재실행이나 실제 Suno 음원 판정은 아니다. 이전 합성 출력 3건의 숫자 구간은 현재 코드 결과로 인용하지 않는다.
-Next-TODO: 유효한 분석 음원 확보 뒤 42후보의 BPM을 측정하고, 젠이 이미 승인한 175–177 BPM 범위 밖 후보 삭제와 두 후보 모두 탈락하는 곡의 재생성을 진행한다. 같은 무음 방식의 반복 시도는 현재 멈췄다. 새 승인 요청이 필요한 상태로 바꾸지 않는다.
-Commits: 이번 후보 기록·분석기 준비·무음 블로커를 하나의 체크포인트 커밋으로 보존한다. 원격 반영 SHA는 실행 결과에서 대조한다. 분석용 raw WAV 세 개와 중지 마커는 로컬에만 보존한다.
----
-
----
-HANDOFF: Codex -> 젠
-Date: 2026-10-23 (새 06:30 첫 생성 20회·후보 40개 확인)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “음원 생성해.” 지시로 동결된 20곡 입력을 새 `[06:30]` Suno 작업공간 `335455f4-30d5-4878-b658-365da757127e`에 곡당 1회 제출했다. [원격 후보 기록](../SERIES/06-30/input/suno-candidates.json)과 [최종 화면 관찰](../SERIES/06-30/input/validation/2026-10-23-first-generation/suno-final-ui-observations.jsonl)에 20곡×2후보·고유 ID 40개·활성 재생 버튼 40개가 있다. 첫 제출 크레딧 200(2,106→1,906)을 썼다.
-Current: 1번은 Auto 길이 후보 1:30·1:31로 3분 이상 목표 미달이고, 2–20번 Custom 제출의 38후보는 화면상 3:12–3:31이다. 1번 재생성 또는 현재 후보 유지 여부를 젠에게 질문해 답변 대기 중이며 추가 제출은 없다. 전곡 청취·실제 175 BPM·무보컬·음질은 미확인이다. 선택 음원·다운로드·로컬 WAV·최종 소스 선언은 0개다. 공식 state는 로컬 입력 단계 `track_source_draft`이며 원격 후보 40개를 로컬 음원으로 세지 않는다.
-Verification: [생성 입력 검토](reviews/2026-10-23-0630-source-review.md)와 [생성 기록 검토](reviews/2026-10-23-0630-generation-review.md)는 각 범위에서 CLEAN(확인된 Critical/High 0)이다. 기록 검토의 1–10번에는 입력 원문 대신 일치 검사 결과만 남아 있다. 공식 state write/check와 이번 문서 diff check 원시는 [로컬 검증](../SERIES/06-30/input/validation/2026-10-23-first-generation/local-validation/)에 둔다. 실제 음원 청취·속도·무보컬·음질 검토를 뜻하지 않는다.
-Next-TODO: 1번 길이 보완 여부에 대한 젠의 결정을 받고, 20곡 후보를 실제로 들어 선택한다. 영상·YouTube 제작은 이번 진행 범위 밖이다.
-Commits: 이 첫 생성 입력·후보 기록·검토·상태를 같은 작업 커밋으로 원격 반영한다.
----
-
----
-HANDOFF: Codex -> 젠
-Date: 2026-10-23 (새 06:30 러닝 콘셉트 초안)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 07:00 최종 무가사 러닝 방향·175 BPM 목표·강한 록 확대와 최신 재즈/드릴 배제·일렉트로닉 기반 브레이크비트·전곡 강한 드럼/고에너지 정정을 `SERIES/06-30/concept.md`에 반영했다. “엔돌핀 솟는”은 기분이 들뜨는 음악적 인상 목표다. 20곡의 록 12·전자 브레이크비트 8은 제작 제안이고 곡별 조성·코드·배치도 미확정 초안이다. 밝은 장조·믹솔리디안 곡도 섞었다. 이전 `[06:30]`→17:30 보컬 이력과 별개이고 17:30 공개 자료는 변경하지 않았다.
-Current: 공식 state revision 80 `SERIES/06-30` `concept_draft`. 트랙 txt·생성 후보·선택 음원·WAV 모두 0개다. 175 BPM 달성·곡당 3분 이상은 아직 실측하지 않았다. 곡명·아트·YouTube 문안은 미정이다.
-Verification: 공식 state check PASS·warnings `[]`·blockers `[]`, 20행 록 12/전자 브레이크비트 8, 상대적인 코드 진행 19그룹(07/12는 같은 진행의 이조), 07:00·17:30 변경 0건, diff check 종료 코드 0. [독립 Astra xhigh 검토](reviews/2026-10-23-0630-running-concept-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다.
-Next-TODO: 젠이 `-wavvy-produce`를 명시적으로 시작하면 `MASTER/WORKFLOWS.md` §0.1의 방향·레퍼런스 절차부터 진행한다. 현재 턴의 제작 입력·Suno 생성·미디어 작업은 없다.
-Commits: 콘셉트·계획·상태·검토·기록을 하나의 커밋으로 원격 반영한다. 정확한 커밋 SHA와 원격 대조는 최종 보고에 남긴다.
----
-
----
 HANDOFF: Codex -> 젠
 Date: 2026-10-23 11:04:08
 Project: /Users/zenkim_office/Project/wavvy
@@ -198,9 +12,9 @@ Agent: Codex
 Summary: Wavvy 자막·제목 하네스와 스킬을 wavvy master 1154bb79로 완료·원격 반영했다. 검증 86/86·격리 18/18·기존 제목 17/17 PASS, 독립 Astra xhigh CLEAN이다.
 Next-TODO: 없음. 게시 검증은 보존된 2026-10-23 관찰 재대조이며 새 실시간 확인이 아니다. 원래 YouTube 오류 원인은 미확정이다.
 Commits: wavvy 1154bb79; session record (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-23 (자막·제목 기본형 하네스 기록; 독립 검토 CLEAN)
 Project: ~/Project/wavvy
@@ -210,9 +24,9 @@ Current: 공식 state writer revision 79 `uploaded`, 자막 `prepared=verified`�
 Verification: [원시 기록](validation/2026-10-23-subtitle-title-harness/)에 unit test 86개 PASS, ignored 산출물 없는 격리 복사본 18개 PASS, 기존 제목 17개 PASS, doctor·validate·verify-release·prepared/published·state·upload-ready/uploaded gate·스킬 형식 검사 PASS를 보존했다. [state writer 출력](validation/2026-10-23-subtitle-title-harness/record-state-write.json)을 보존했다. [이번 변경의 독립 검토](reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다.
 Next-TODO: 이번 요청 범위의 구현·검증·기록에 남은 일은 없다. 별도의 YouTube 재게시 작업은 계획되지 않았다.
 Commits: 코드·스킬·정책·검증 근거를 이 기록과 같은 작업 커밋으로 보존한다. 원격 반영 결과는 최종 응답에서 확인한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-23 (17:30 수동 한국어 자막 게시 완료)
 Project: ~/Project/wavvy
@@ -222,9 +36,9 @@ Current: [최종 SRT](../SERIES/17-30/output/youtube_subtitles_ko_timed_estimate
 Verification: [최종 자막 격리 검토](reviews/2026-10-23-timed-subtitle-final-review.md)와 [게시·스킬 격리 검토](reviews/2026-10-23-timed-subtitle-publication-skill-review.md)는 각각 CLEAN(확정 Critical/High 0)이다. Studio 공개 관찰과 다운로드 전체 바이트를 대조했다. 공식 state revision 78 `uploaded`·자막 SRT `present`, state check·uploaded gate PASS와 스킬 형식 검사 PASS를 [로컬 검사 원시](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/local-validation/)에 남겼다.
 Next-TODO: 이번 요청 범위의 자막 게시와 스킬 반영에 남은 일은 없다.
 Commits: 이 변경 묶음에서 문서·스킬·작은 원시 관찰을 함께 보존한다. 큰 미디어와 로컬 자막 산출물은 ignored 상태로 유지한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-23 (17:30 저작권·직접 자막 후속 관찰)
 Project: ~/Project/wavvy
@@ -234,9 +48,9 @@ Current: 2026-10-23 06:43:34 KST [게시 시도](../SERIES/17-30/input/validatio
 Verification: 2026-10-23 [원시 관찰](../SERIES/17-30/input/validation/2026-10-23-youtube-followup/followup-observation.json)·Studio 화면·SRT·공개 watch 화면을 대조했다. 부모가 공식 state check revision 77 `uploaded`와 uploaded gate PASS를 직접 확인했고, 이번 문서 변경의 `git diff --check`도 PASS다.
 Next-TODO: 동일 오류의 추가 게시 시도는 멈추고, 젠의 확정 가사 시간 맞춘 파일 제작 또는 자막 작업 중단 선택을 기다린다. 선택 전 추가 제작·게시를 하지 않는다. [YouTube 도움말](https://support.google.com/youtube/answer/2734796?hl=en-CA)의 1시간 초과 자동 동기화 비권장은 가능한 설명일 뿐 이번 오류의 확정 원인이 아니다.
 Commits: 이 기록과 2026-10-23 원시 관찰 파일을 같은 작업 커밋으로 보존한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 23:08:42
 Project: /Users/zenkim_office/Project/wavvy
@@ -244,9 +58,9 @@ Agent: Codex
 Summary: 17:30 「기분좋아져라」 20곡×2회·7,718.5초 영상을 승인 98자 제목 `Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | Wavvy | 17:30`으로 Wavvy24에 즉시 공개했다(영상 3HorT4OoDhg, 공개·댓글·정책 기록 6421c06 push). 사용자 제작 thumb와 원본을 보존했고 일반 댓글 정확 문구 1건은 노출·미고정이다. SD/HD/4K 완료 뒤 22:54:36~38 KST watch 재생 위치 463.529146→465.791302초를 확인 후 일시정지했다. 제목 작성 SSOT v2.3 대표 사례·시리즈별 감각 비유/다양한 용도 기본 방향을 반영했고 state revision77 uploaded, state check·uploaded gate·verify-release PASS, 제목 정책/공개 결과 격리 Critical/High 0이다. 원시 근거: ~/Project/wavvy/SERIES/17-30/input/validation/2026-10-22-youtube-upload/. 한국어 자막은 초안만 저장·게시 오류 2회, 저작권 최종 판정은 미관측이다.
 Next-TODO: 한국어 자막 게시 오류 해결·실제 게시 확인, 저작권 검토 최종 결과 확인만 남음. 이번 기록 턴의 브라우저 재시도·정책/코드 변경·대형 미디어 재검증·삭제 없음.
 Commits: 6421c06 · (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 실제 YouTube 공개·댓글 게시, 4K 처리 완료)
 Project: ~/Project/wavvy
@@ -255,9 +69,9 @@ Summary: Wavvy24에 17:30 「기분좋아져라」를 승인된 98자 제목으�
 Current: 22:49:32 KST SD·HD·4K 처리 완료와 공개 유지를 확인했다. 저작권 검토 최종 결과는 아직 관측되지 않았다. 한국어 자막 원고는 초안 저장됐지만 처리 전·후 게시 오류 2회로 **미게시**다. 공식 state를 업로드 증거로 revision 77 `uploaded`로 갱신했고 state check·uploaded gate·verify-release가 PASS했다. 제목 기본형 정책 격리 검토는 Critical/High 0·원칙 관찰 없음이며, `MASTER/youtube/YOUTUBE.md`는 이번 업로드 결과 반영 중 수정하지 않았다.
 Next-TODO: 저작권 최종 결과를 확인하고 자막 게시 오류를 해결한 뒤 시청 페이지 자막 노출을 확인한다. 아래의 ‘업로드 결과 대기’ 항목은 공개 전 이력이다.
 Commits: 문서·state·작은 원시 검증 기록의 커밋/푸시는 부모 담당이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 전체 제목 승인·즉시 공개/댓글 지시·기본 저작 규칙 반영)
 Project: ~/Project/wavvy
@@ -266,9 +80,9 @@ Summary: 젠은 정확한 98자 `Playlist | 오렌지 한 입처럼 산뜻한 �
 Current: 실제 YouTube 업로드·즉시 공개·댓글 게시의 결과와 URL은 아직 확인되지 않았다. 공식 state는 그대로이고 국문 시리즈명·설명·태그·챕터·영상·이미지·음원·자막도 변경하지 않았다. 아래 제목 컨펌 대기 항목은 당시 이력이다.
 Next-TODO: 별도 업로드 담당자의 실제 Studio/시청 페이지 결과를 확인해 URL·공개·댓글을 각각 기록한다.
 Commits: 이 제목 승인·정책·현행 기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 오렌지 제목 문구 선택·전체 제목 최종 컨펌 대기)
 Project: ~/Project/wavvy
@@ -276,9 +90,9 @@ Agent: Codex
 Summary: 젠의 “제목 포맷은 바꾸지 말고 내용만 레퍼런스 참조”와 “오렌지쪽이 더 좋아.”로 훅을 선택했다. 이어 “카페 작업 말고 내가 줬던 레퍼런스처럼 더 다양하게”라고 정정해 2개 용도 미승인안을 대체했다. 현행 `Playlist | 오렌지 한 입처럼 산뜻한 그루브 🍊 | MODERN R&B · NEO SOUL | 카페 · 산책 · 작업 · 드라이브 · 노동요 | Wavvy | 17:30`을 `concept.md` 초안과 `output/upload.csv` 제목에 동기화했다. 국문 시리즈명 「기분좋아져라」와 설명·태그·챕터·영상·이미지·음원·자막은 그대로다.
 Next-TODO: 젠의 **전체 제목 최종 업로드 컨펌** 답을 기다린다. 문구 선택은 업로드 승인이 아니며 업로드·공개·예약은 0회다.
 Commits: 이 제목 준비 기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 업로드 제목 참고 조사·이전 문구 반려 기록)
 Project: ~/Project/wavvy
@@ -287,9 +101,9 @@ Summary: 젠이 기존 `기분전환·드라이브` 문구를 “기분전환 �
 Current: 완성 로컬 영상은 7,718.5초(2:08:38.5) 그대로다. `concept.md`·`output/upload.csv`·공식 state의 미승인 제목은 변경하지 않았다. 새 제목 전체는 젠 승인 전이고 업로드·공개·예약은 0회다.
 Next-TODO: 확정된 형식의 감정 훅·용도 내용을 제안해 젠에게 제목 전체 승인을 받는다. 승인 전 업로드하지 않는다.
 Commits: 제목 조사·현행 기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 로컬 최종 영상·업로드 자료 기술 준비 완료)
 Project: ~/Project/wavvy
@@ -299,9 +113,9 @@ Verification: [원시 실행·검사 기록](../SERIES/17-30/input/validation/20
 Review: [격리 최종 검토](reviews/2026-10-22-final-release-package-review.md) CLEAN, 확정 Critical/High 0. 부모가 최종 파일 해시·형식·길이·화면·챕터 수·자막 반복을 대조했다.
 Next-TODO: 젠에게 YouTube 제목 전체를 별도 승인받은 뒤 승인된 제목으로 비공개 업로드한다. 제목 승인 전 업로드·공개·예약은 하지 않는다. 공개 시각은 미정이며 17:30은 시리즈 식별 시각이다. 젠의 로컬 입력 전곡 청취 PASS는 4번만 확인됐고 5~20번은 기술 검사 범위다.
 Commits: 이 인계와 제작·검토 근거를 같은 변경 묶음으로 보존한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 선택 WAV 20/20 로컬 입력 완료)
 Project: ~/Project/wavvy
@@ -310,9 +124,9 @@ Summary: [최종 입력 대조](../SERIES/17-30/input/validation/2026-10-22-sele
 Verification: manifest 선택 20/20·pending0과 공식 state writer revision75/audio_files20, 곡별 원시/UI/경계/절단 검사를 대조했다. 기본 0.8초 겹침·2회 반복 추정은 7,718.5초로 실제 렌더 길이가 아니다. 젠의 전곡 청취 PASS는 4번만이며 5~20번은 기술 검사 범위다.
 Next-TODO: 부모가 입력 배치 검토·커밋 후 영상 제작 담당자에게 state/concept 소유권을 넘긴다. 전체 pack·영상·자막·업로드는 아직 없고 YouTube 제목은 승인 전이다.
 Commits: 이번 17~20번 등록·기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17번 재시도 검증·정식 등록)
 Project: ~/Project/wavvy
@@ -320,9 +134,9 @@ Agent: Codex
 Summary: 17번 「새 잎」 같은 선택 ID의 전곡 retry1은 UI 184.4초 자연 종료와 48 kHz 스테레오 float32 최종 184.63초·원시/절단 샘플/해시가 일치했다([정식 등록 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-retry1-ingest-verification.json)). 최초 녹음의 140.136083초 무음이 재현되지 않아 첫 실패 raw는 이력으로 남겼다. 서버 지연은 젠의 가설이며 원인 미확정이다. 정식 WAV 17/20곡(공식3·내부14), 18~20번 진행 중이다.
 Next-TODO: 18~20번 각각 닫힌 원시와 선택 ID·UI 길이·경계·샘플·해시를 검사한 뒤 유효본만 정식 등록한다. 젠의 실제 청취 PASS는 4번까지만이며 영상·업로드와 제목 승인은 아직 없다.
 Commits: 이 17번 등록·기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17번 전체 재시도 승인·원시 대기)
 Project: ~/Project/wavvy
@@ -331,9 +145,9 @@ Summary: 젠이 “재시도해봐”라고 지시해 별도 담당자가 macOS 
 Comparison: 17번 같은 ID의 Suno 화면 90.316878→110.554017초에 별도 샘플 PCM 신호가 연속 기록됐다([대조 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-seek90-comparison.json)). 기존 긴 무음은 원곡 해당 구간의 무음과 맞지 않으나 정확 원인은 미확인이다.
 Next-TODO: retry1 rawready 뒤 선택 ID·UI 전곡 진행·곡내 약 56초 이후 신호·종료/곡간 무음·원시/절단 SHA를 대조한다. 유효할 때만 17번 정식 등록하고 18~20번을 이어간다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 현재 재시도 지시와 이후 실제 입력 결과는 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17번 원본 무음·캡처 차이 대조 중)
 Project: ~/Project/wavvy
@@ -341,9 +155,9 @@ Agent: Codex
 Summary: 젠은 “간주중에 무음구간이 있을수도 있어. 맥은 처음부터 계속 음소거 상태였어.”라고 정정했다. 이는 사용자 진술이며 당시 시스템 음소거 시각의 실측은 아니다. 17번 녹음 raw의 뒤 140.136083초가 정확0인 사실만 확정이다. 원본 곡도 같은 구간이 무음인지 아직 확인 전이다. macOS 음소거 설정은 바꾸지 않고 별도 담당자가 약 90초 지점의 짧은 재생·캡처를 대조 중이다. 정식 WAV는 16/20곡(공식3·내부13) 유지, 17번 미등록이다.
 Next-TODO: 90초 대조가 실제 신호를 확인하면 17번 새 전곡 녹음의 원시 근거를 받고 검증한다. 신호가 없으면 기존 정상곡의 짧은 비교로 캡처 전반의 원인을 구별한다. 18~20번은 대기한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 사용자 정정·현행 상태 기록은 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17번 내부 녹음 중도 무음·정식 등록 보류)
 Project: ~/Project/wavvy
@@ -351,9 +165,9 @@ Agent: Codex
 Summary: [실패 원시 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-failed-mid-capture.json)에서 17번 녹음 raw 63.763917초 이후 끝까지 140.136083초 완전 무음을 직접 확인했다. Suno UI는 선택곡 64.811617/184.4초 뒤에도 160.3779초까지 재생됐으나 UI volume/muted와 구간별 캡처 PTS는 미기록이라 원인은 미확인이다. [실패 후 진단](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/17-diagnosis.json)의 macOS 출력 음소거=true는 당시 전환 시각이 없어 원인 확정 근거가 아니다. 젠에게 음소거 해제 후 17번부터 계속할지 잠시 멈출지 물었고 답을 기다린다. 실패 raw는 보존하고 17번 정식 WAV를 만들지 않았다. manifest/state는 16/20곡(공식 다운로드 3·내부 녹음 13) 그대로다.
 Next-TODO: 브라우저·캡처 담당의 읽기 전용 원인 조사를 기다린다. 18~20번과 17번 재시도는 현재 대기하며, 새 유효 raw가 와야 경계·선택 ID·SHA 확인 후 등록한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 실패 작은 근거·상태 문서는 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 16/20 checkpoint)
 Project: ~/Project/wavvy
@@ -361,9 +175,9 @@ Agent: Codex
 Summary: 13~16번을 각각 재생 순서의 선택 ID·Suno UI 길이·원시 SHA-256·곡간 무음 경계·sample-exact 절단으로 대조해 입력에 등록했다([곡별 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/)). 로컬 WAV는 16/20곡(공식 다운로드 3·내부 녹음 13)으로 manifest와 state writer가 일치한다. 15번 +1 초과 1샘플과 16번 +1 초과 3샘플은 float32 그대로 보존했고 연속 평탄 최고점은 검출되지 않았다.
 Next-TODO: 17~20번 4곡은 raw·UI·경계·SHA 검사 후에만 정식 등록한다. 젠의 4번 전곡 청취 판정과 5~16번 파일 기술 검사는 구분한다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 13~16번 입력·근거·상태 checkpoint는 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 12/20·10번 재시도 등록 checkpoint)
 Project: ~/Project/wavvy
@@ -371,9 +185,9 @@ Agent: Codex
 Summary: 10번은 젠의 재개 승인 뒤 별도 retry1 원시를 사용했다. 선택 ID·UI 자연 종료 187.6초·원시 끝 신호·샘플 동일 절단을 확인했고, 처음 53.8초 무음 실패는 분리 보존했다. 11·12번도 선택 ID·UI 길이·곡간 완전 무음·원시/절단 해시를 확인했다. [manifest](../SERIES/17-30/input/download-manifest.json)와 공식 state writer는 WAV 12/20곡(공식 다운로드 3·내부 녹음 9)이다. [준비 신호 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/capture-readiness-evidence.json)는 retry1 준비 신호의 초기 응답/후속 조회 시점을 구분하지 않는다.
 Next-TODO: 13~20번 8곡은 실제 raw·UI·경계·SHA 검사 후에만 정식 등록한다. 4번만 젠의 전곡 청취 통과이며 5~12번은 파일 기술 검사 범위다. 전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 10~12번 입력·근거·상태 checkpoint는 부모의 다음 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (10번부터 녹음 재개 승인)
 Project: ~/Project/wavvy
@@ -381,9 +195,9 @@ Agent: Codex
 Summary: 젠이 준비 신호 처리 수정 후 10번부터 계속할지에 “응”이라고 답했다. 앞선 10번 53.8초 무음 실패 raw/log는 보존하고 새 retry 녹음과 분리한다. 현재 정식 WAV는 9/20곡(공식 다운로드 3·내부 녹음 6)이며, 10~20번은 아직 확인된 입력이 아니다.
 Next-TODO: 10번부터 전달되는 새 raw마다 선택 ID·UI 시간·앞뒤 경계·샘플 동일·해시·48 kHz 스테레오 float32를 확인한 뒤 정식 등록한다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
 Commits: 이 재개 상태와 실제 등록 결과는 다음 checkpoint 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (9번 등록·10번 재생 전 무음 실패)
 Project: ~/Project/wavvy
@@ -391,9 +205,9 @@ Agent: Codex
 Summary: 9번 「잘 익은 하루」는 선택 ID·UI 198.5/198.52초·마지막 raw 신호와 예상 종료의 0.008646초 차이·끝 무음·sample-exact 절단을 확인해 등록했다([입력 대조](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/09-ingest-verification.json)). 현재 로컬 WAV 9/20곡(공식 다운로드 3·내부 녹음 6)이다. 이어 10번은 재생 전 준비 신호 타이밍 오류로 53.8초 전체 무음 파일만 생성됐다([실패 근거](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/10-failed-preflight.json)); 정식 입력 미등록이다.
 Next-TODO: 반복 제어 실패에 따라 10번 재시도·다음 곡 녹음을 중단했다. 젠에게 수정 후 10번부터 계속할지, 잠시 멈출지 질문한 결과를 기다린다. 10~20번 11곡의 유효 WAV·전체 영상·업로드는 없고 YouTube 제목은 승인 전이다.
 Commits: 9번 입력·실패 근거·현재 상태 문서는 이번 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (선택 WAV 8/20 첫 녹음 checkpoint)
 Project: ~/Project/wavvy
@@ -401,9 +215,9 @@ Agent: Codex
 Summary: 젠이 4번 「우리 행복하자」 전곡을 “통과 계속해.”라고 판단한 뒤 5~8번을 각각 선택 ID·UI 재생 시간·원시/절단 SHA-256·곡간 무음 경계·원시 샘플 일치로 대조해 입력에 등록했다. [획득 manifest](../SERIES/17-30/input/download-manifest.json) 기준 로컬 WAV 8/20곡(공식 다운로드 3·내부 녹음 5), state writer 파일 수도 8개다. 곡별 근거는 `SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/05–08-*`에 있다. 5번의 float32 왼쪽 채널 +1 초과 고립 샘플 2개는 무가공 보존했고 평평한 고점이 없어 클리핑을 단정하지 않았다.
 Next-TODO: 9~20번 12곡의 원시 녹음이 전달되면 곡별 경계·선택 ID·형식·해시를 확인해 등록한다. 4번의 사용자 청취 통과와 5~8번의 파일 기술 검사는 구분한다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
 Commits: 이 5~8번 입력·근거·상태 checkpoint는 이번 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (재생 4번 내부 녹음 한 곡 등록·청취 판정 대기)
 Project: ~/Project/wavvy
@@ -411,9 +225,9 @@ Agent: Codex
 Summary: 4번 「우리 행복하자」 선택 ID `810a0d51-39e5-460c-ae78-ed3a8181837b`의 내부 녹음을 원시 7.70~209.20초에서 잘라 다음 곡 자동재생을 제외했다. [원시 검사](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/04-verification.json), [입력 대조](../SERIES/17-30/input/validation/2026-10-22-selected-audio-capture/04-ingest-verification.json), [독립 검토](reviews/2026-10-22-single-audio-capture-review.md)는 기술 범위에서 PASS/CLEAN이다. 로컬 선택 WAV는 4/20곡(공식 다운로드 3·내부 녹음 1)이고 state writer가 이 4개를 기록했다.
 Next-TODO: 젠의 “내가 녹음본 들어볼게”에 따라 4번 전곡 청취 판정과 남은 16곡 녹음을 대기한다. 원시 녹음은 공식 다운로드가 아니며 직접 청취·원본 파형 동일성은 검증되지 않았다. 전체 영상·업로드는 없고 YouTube 제목은 젠 승인 전이다.
 Commits: 이 4번 파일 등록과 근거·상태 기록은 이번 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (청취 시험 동안 녹음 일시 중지)
 Project: ~/Project/wavvy
@@ -421,9 +235,9 @@ Agent: Codex
 Summary: 젠의 “테스트해볼게 녹음은 잠시 스탑” 지시에 따라 녹음을 일시 중지했다. `~/Downloads`의 1번 곡 청취 샘플 두 개는 보존한다. 공식 선택 WAV는 3/20곡이며 전체 영상·업로드는 미완료다.
 Next-TODO: 젠의 청취 의견과 명시적인 녹음 재개 지시를 기다린다. 그 전에는 나머지 17곡 녹음을 자동으로 시작하지 않는다. YouTube 제목도 젠 승인 전이다.
 Commits: 이 일시 중지 기록은 이번 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (1번 곡 A/B 청취 샘플 전달)
 Project: ~/Project/wavvy
@@ -431,9 +245,9 @@ Agent: Codex
 Summary: 젠 요청에 따라 `~/Downloads`에 내부 녹음과 공식 원본의 같은 33.76초 구간 샘플 2개를 저장·해시 확인했다. [샘플 목록](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/downloads-ab-full-excerpt.json)과 [비교](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/compare-test2-fullrate-and-ab.json)를 보존했다. 같은 곡 구간의 좌·우 상관계수는 약 0.996, mono 약 0.9973이며 음량 보정 없이 녹음이 약 1.69 dB 크다. 원본과 동일한 바이트나 전곡 음질 승인은 아니다. 17곡 추가 녹음은 아직 시작하지 않았고 공식 선택 WAV는 3/20곡이다.
 Next-TODO: 젠의 두 샘플 청취 의견을 기다린다. 전체 영상·업로드는 미완료이며 YouTube 제목은 아직 젠 승인 전이다.
 Commits: 이 샘플 사실 기록은 이번 상태 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 릴리스 부분 준비·출처/자막 독립 검토 완료)
 Project: ~/Project/wavvy
@@ -441,9 +255,9 @@ Agent: Codex
 Summary: 선택 Suno 20곡의 공개(Published)는 원시 재진입 기록으로 확인했다. 로컬 WAV는 3/20곡이며 다운로드 화면의 잔여 수량이 0이라 17곡은 미확보다. 1번 WAV만으로 30초 3840×2160 임시 preview를 만들고 오디오·영상 스트림 및 입력 해시를 확인했다. 재생번호→원번호→선택 ID·WAV SHA·가사 관찰/생성 입력을 연결하는 릴리스 도구와 회귀시험을 작성했다. 원번호 13의 현재 화면 가사는 이력 txt와 첫 구간 태그의 줄바꿈만 다르며, 실제 화면 가사를 자막 출처로 보존한다. 생성 STYLE/EXCLUDE 미확인은 확정하지 않는다. 자막에서 여러 대괄호 지시문만 있는 줄은 제거하고 지시문과 같은 줄의 가창 가사는 보존하도록 수정했다. 20곡 출처 임시 아카이브 [대조](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/subtitle-direction-check.json)는 가창 739행 순서·내용 보존, 남은 대괄호 0행이다. [원시 검사](../SERIES/17-30/input/validation/2026-10-22-release-source-binding/command-results.json)는 unittest 68/68·doctor·state check·diff check PASS다. 젠 동의로 1번 곡에 시험한 Aside 앱 전용 36.44초 [녹음](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot-summary.json)은 전 샘플 0으로 무음이며 정확한 원인은 미확인이다. 원시 WAV는 로컬 `work/2026-10-22-internal-audio-test/`에 보존하고 나머지 17곡 녹음은 하지 않았다. 공식 state revision 58, `track_source_draft`, 로컬 오디오 3, 전체 보고서·완성 영상·자막 없음이다.
 Next-TODO: [출처 연결](reviews/2026-10-22-release-prep-review.md)과 [자막 수정](reviews/2026-10-22-subtitle-fix-review.md)의 격리 검토는 각각 CLEAN으로 회수됐다. 실제 소리가 나는 브라우저 질문에 젠은 “3”이라고 답해 Aside를 선택했고, 기존 Aside Suno 탭의 [추가 진단](../SERIES/17-30/input/validation/2026-10-22-internal-audio-test/pilot2-coreaudio-during.json)에서 audio helper PID 73077 `running_output=true`를 관측했다. 두 번째 로컬 시험 파일은 실제 오디오 신호를 수신했지만 원본 시간 정렬·음질 판정은 진행 중이다. 공식 선택 WAV는 아직 3/20곡이다. 17곡 WAV가 확보된 뒤 전곡 렌더·출처 확인·실제 챕터·자막을 진행한다. YouTube 제목 전체는 젠 승인 전이고 업로드는 아직 하지 않았다.
 Commits: 이번 릴리스 코드·문서·검사 범위는 현재 커밋 전이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (폴더 이전·썸네일 정리 검토 완료, 영상 제작 재개 지시)
 Project: ~/Project/wavvy
@@ -451,9 +265,9 @@ Agent: Codex
 Summary: [독립 검토](reviews/2026-10-22-folder-migration-thumbnail-cleanup-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이다. `SERIES/17-30` 이동, 사용자 `thumb.jpg`·`thumb.psd`·`loop.png` 보존, 미사용 작업물 15개 삭제와 음악 자료 보존을 확인했다. 젠의 최신 지시는 “이제 영상 제작하고 업로드하자. 단 제목은 내 컨펌 받아”다. 영상 제작·업로드는 재개 승인됐지만 현재 영상 파일은 아직 없고, 업로드 제목은 젠 확인 전 확정하지 않는다.
 Next-TODO: 별도 영상 제작·업로드 작업에서 제목 초안을 젠에게 확인받는다. 현재 이동·정리 범위는 저장소 반영 대상이다.
 Commits: 이 인계 기록 시점에는 이동·정리 커밋 전이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (젠 직접 제작 RE-FRESH 썸네일 기준본·미사용 시안 정리)
 Project: ~/Project/wavvy
@@ -461,9 +275,9 @@ Agent: Codex
 Summary: `SERIES/17-30` 폴더 이전 뒤 젠이 “내가 직접 만들었어.”라며 새 `input/thumb.jpg`를 제공했다. 이 JPEG 2532×1424, SHA-256 `634cbb9ff89b2c39cf89a240100368b310c0e22bfaee60a0463170f25912e025`를 현재 썸네일 기준본으로 보존한다. 글자는 흰 Wavvy·`17:30`·`RE-FRESH`다. 옛 합성본·UPLIFT/FEEL GOOD 시안은 미채택 이력이다. 젠의 미사용 시안·프롬프트 삭제 요청에 따라 프로젝트 안 15개를 상대 경로·SHA·크기만 [목록](../SERIES/17-30/input/validation/2026-10-22-unused-thumbnail-deletion.json)에 남기고 삭제했다. `input/artwork/thumb.psd`·`input/loop.png`·음악 원문·원시 근거는 보존한다. `.ai/state.json`은 공식 writer revision 57, active series `SERIES/17-30`, 로컬 오디오 0개다. Suno `[06:30]` 이름과 음악 20곡은 변경하지 않았다.
 Next-TODO: 영상 제작은 젠의 중지 뒤 미착수다. 현재 썸네일 기준본과 파일 이동·삭제 기록의 격리 검토 후 저장소 반영을 진행한다.
 Commits: 이번 폴더 이전·사용자 썸네일·정리 변경은 아직 커밋하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 폴더 이전·새 이미지 생성 시안 검토 대기)
 Project: ~/Project/wavvy
@@ -471,9 +285,9 @@ Agent: Codex
 Summary: 젠의 “그리고 폴더 이름이 아직 06-30인데?”에 따라 전체 시리즈 폴더를 `SERIES/17-30`으로 옮겼다. [이동 대응 기록](../SERIES/17-30/input/folder-migration-2026-10-22.md)에 옛 경로를 연결했다. 이동 전 984파일은 ignored 이미지·PSD를 포함해 같은 상대 경로와 해시로 보존됐다. 공식 state writer가 revision 57·active series `SERIES/17-30`·`track_source_draft`·로컬 오디오 0개를 기록했다. Suno `[06:30]` 작업 공간은 변경하지 않았다. 젠이 첫 수정 썸네일 v2를 “와..진짜 개 구리네...그냥 이미지 생성을 해봐”라고 반려해 컨트롤러가 사진·문자를 함께 v3 이미지(당시 자료·현재 파일 삭제)로 새로 생성해 젠에게 보여줬다. `FEEL GOOD`은 아직 승인되지 않았고 기존 `thumb.jpg`·`loop.png`·v2는 보존한다. 영상 제작은 시작하지 않았다.
 Next-TODO: 새 v3 시안의 사용자 피드백을 기다린다. 실제 영상 제작은 정지 상태다.
 Commits: 이 폴더 이전·시안 기록은 아직 커밋하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (영상 제작 미착수·기존 썸네일 글자 디자인 반려)
 Project: ~/Project/wavvy
@@ -481,9 +295,9 @@ Agent: Codex
 Summary: 젠이 영상 제작 전 “에? 잠깐”이라고 멈췄다. 영상 제작은 시작하지 않았다. 젠은 “썸네일이 거지같은데? 색상도 이상하고 타이틀 위치도”, “폰트도 이상하고 크기도 이상해”라고 기존 합성 썸네일을 반려했다. 승인된 v5 주방 사진은 유지한다. “그리고 영문 단어 제목이 필요하고, 좌측 하단에. 로고 시간 제목에는 옅은 쉐도우로 배경과 분리”를 반영한 수정 시안 제작 중이다. `UPLIFT`는 제작자 제안이고 젠의 확정 제목이 아니다. 기존 `thumb.jpg`·`loop.png`는 보존한다. 앞선 독립 검토 CLEAN은 당시 파일·기술 검토이며 젠의 디자인 승인은 아니다.
 Next-TODO: 수정 시안을 젠에게 보여주고 새 글자 디자인에 대한 피드백을 받는다. 영상 제작은 멈춘 상태다.
 Commits: 이 최신 디자인 피드백 기록은 아직 커밋하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (17:30 썸네일 최종 제작·20곡 순서 재조정 적용 완료)
 Project: ~/Project/wavvy
@@ -492,9 +306,9 @@ Summary: 젠은 v5 오렌지 주방 시안을 “좋아 패스. 이제 제작하
 Evidence: v5 시안 메타(당시 자료·현재 파일 삭제); [기존 선택·번호·재생목록 기록](../SERIES/17-30/input/playback-order.json); 새 조정 원시 기록은 `SERIES/17-30/input/validation/2026-10-22-sequence-final-adjustment/`에 저장됐다.
 Next-TODO: 17:30 이미지와 Suno 최종 제목·비공개 재생목록 증거를 확인하고 현재 문서·JSON을 갱신했다. [최종 독립 검토](reviews/2026-10-22-final-artwork-sequence-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)으로 회수됐다. 이번 변경의 저장소 반영이 남았다.
 Commits: 이 기록 시점에 새 조정 작업은 아직 커밋하지 않았다. 이전 첫 순서·v5 메타는 원격 `master`에 반영된 이력이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (기분좋아져라 선택 20곡·제목 번호·비공개 재생 순서)
 Project: ~/Project/wavvy
@@ -504,9 +318,9 @@ Evidence: `SERIES/17-30/input/validation/2026-10-22-sequence-preflight/sequence-
 Verification: [좁은 무결성](../SERIES/17-30/input/validation/2026-10-22-sequence-final-integrity.json)은 32/32 PASS, [공식 상태 검사](../SERIES/17-30/input/validation/2026-10-22-sequence-state-check.json)는 PASS, [diff 검사](../SERIES/17-30/input/validation/2026-10-22-sequence-diff-check.json)는 빈 출력·종료 코드 0이다. `.ai/state.json`은 `track_source_draft`, 로컬 오디오 0개이며 원격 선별 20곡과 별개다. 젠 청취 통과는 독립 175 BPM·기술 품질 측정이나 최종 발매 승인이 아니다. 16:16 이전 문서 리뷰 CLEAN은 이번 후속 선택·번호·재생목록 적용을 포함하지 않는다. 이번 [후속 격리 검토](reviews/2026-10-22-final-sequence-review.md)는 CLEAN(Critical/High 0, 원칙 관찰 없음)이며 썸네일 품질을 포함하지 않는다.
 Next-TODO: 음악 순서 후속 격리 검토는 CLEAN으로 완료됐다. 음악·원시 기록은 커밋 `a5dbd1df37272bafa16afc5402420692c0a1bb8c`로 원격 반영했다. v5 시안은 젠의 시각 결정을 기다리며 최종 4K·thumb.jpg 제작은 아직 진행하지 않는다.
 Commits: 음악·원시 기록 `a5dbd1df37272bafa16afc5402420692c0a1bb8c` 원격 반영 확인. v5 메타데이터와 현재 상태 문서는 후속 커밋 대상이다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (기분좋아져라 7·10·15 후속 생성·문서 통합)
 Project: ~/Project/wavvy
@@ -516,9 +330,9 @@ Evidence: `SERIES/17-30/input/validation/2026-10-22-eight-song-generation/genera
 Verification: [좁은 통합 무결성](../SERIES/17-30/input/validation/2026-10-22-later-rewrites-document-integrity.json)은 24/24 PASS, [공식 상태 검사](../SERIES/17-30/input/validation/2026-10-22-later-rewrites-state-check.json)는 종료 코드 0·PASS다. diff check 원시 결과는 같은 validation 폴더에 저장한다. `.ai/state.json`은 `track_source_draft`, `audio_files: 0`으로 로컬 원문 단계와 로컬 오디오 0개를 뜻하며 Suno 원격 생성 수와 다르다. 실제 음원 청취·175 BPM 측정·발매 PASS는 없다.
 Next-TODO: 원문·생성·순서안 최종 격리 검토 뒤 이번 작업 범위를 커밋·일반 푸시한다. 젠의 선별 완료 뒤 현재 남은 ID를 다시 관찰해 실제 번호 변경 여부를 정한다. 옛 15:35 26 ID와 후속 완료 시점의 새 6 ID를 지속적 현행 전체 목록으로 합산하지 않는다.
 Commits: 최종 검토 전이라 이 기록 시점에는 새 통합 작업을 아직 커밋·푸시하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (기분좋아져라 새 8곡 생성·문서상 20곡 순서안)
 Project: ~/Project/wavvy
@@ -528,9 +342,9 @@ Evidence: `SERIES/17-30/input/validation/2026-10-22-eight-song-generation/genera
 Verification: 생성 raw SHA 대조, 8원문·16생성이력·15:35 필터 26ID·20칸 순서·원번호20→재생1 검사를 별도 무결성 결과로 보존한다. 공식 state check는 `track_source_draft`, 로컬 오디오 0개이며 실제 오디오 청취·BPM·발매 PASS는 없다.
 Next-TODO: 젠의 선별 완료 뒤 현재 남은 ID·최종 버전을 다시 관찰하고 Suno 번호 변경 여부를 결정한다. 이번 생성·문서 통합의 최종 격리 검토 뒤에만 커밋·일반 푸시한다.
 Commits: 생성·문서 통합은 격리 검토 전이므로 아직 커밋·푸시하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22 (미노출 8곡 원문 개편)
 Project: ~/Project/wavvy
@@ -540,9 +354,9 @@ Evidence: `SERIES/17-30/input/eight-song-rewrite-2026-10-22.md`; `SERIES/17-30/i
 Verification: 통합 무결성 `SERIES/17-30/input/validation/2026-10-22-eight-song-document-integrity.json` PASS, 새 원문 최종 텍스트 검사 21/21 PASS, state check PASS(`track_source_draft`, txt 20·audio 0), `git diff --check` 빈 출력·종료 코드 0. 새 8곡 원문 격리 검토 CLEAN은 `.ai/reviews/2026-10-22-eight-song-source-review.md`에 기록했다. 문서 통합 최종 검토와 실제 음원 판정은 별도다.
 Next-TODO: Suno에서 진행 중인 새 8곡 생성의 완료 원시 기록을 받은 뒤 실제 후보와 기존 12곡을 함께 보고, 유사 스타일을 흩어 20번을 첫곡으로 둔 나머지 재생 순서를 정한다. 실제 오디오 BPM·품질·발매 승인은 아직 확인하지 않았다.
 Commits: 격리 검토 전 문서 통합 단계이므로 이번 개편은 아직 커밋·푸시하지 않았다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-22
 Project: ~/Project/wavvy
@@ -553,9 +367,9 @@ Verification: 문서 무결성 16/16 PASS, 공식 state check PASS(`track_source
 Repository: 이 기록을 포함한 변경은 `master` 커밋과 `origin/master` 일반 푸시로 보존한다. 완료 여부는 로컬·원격 HEAD 대조로 확인한다.
 Next-TODO: 젠은 현재 미노출 8곡의 가사·스타일 개편을 새 작업으로 요청했다. 이 작업은 부모 컨트롤러가 별도로 이어간다. 현재 12곡의 실제 음원 품질·발매 여부는 아직 판단하지 않았다. 목록 미노출 8곡의 삭제 여부와 화면 밖 페이지의 완전성도 별도 확증이 없다. 이번 기록에는 다운로드·추가 생성이 없다.
 Commits: 이번 작업의 Git 커밋 ID는 `git log -1`에서 확인한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-21 19:39:08
 Project: /Users/zenkim_office/Project/wavvy
@@ -563,9 +377,9 @@ Agent: Codex
 Summary: Wavvy [06:30] 추적 공간에서 17:00 어쿠스틱 R&B·네오소울 방향 신규 20곡의 A/B 활성 후보 40개를 생성·기록했다. 옛 인디 록 8후보는 휴지통으로 옮기고 유지 5곡의 10후보를 보존했다. 원문·실행 기록 격리 검토 CLEAN, 청취표 40링크 일치, 크레딧 2396이다. 실제 청취·최종 선택·다운로드·BPM/고음 실측은 아직 없다. 175 BPM 러닝 시리즈는 별도 후속이다.
 Next-TODO: 젠이 SERIES/17-30/input/candidate-review.md의 20곡 A/B를 청취·선택한다. 선택 전 자동 생성 재개는 하지 않는다.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-21 17:47 KST (17:00 음악 방향 20곡 A/B 생성 완료·청취 대기)
 Project: ~/Project/wavvy
@@ -574,9 +388,9 @@ Summary: 젠의 최신 지시로 `[06:30]` 기존 공간에서 17:00 어쿠스�
 Next-TODO: 젠의 A/B 청취 선택과 필요한 실제 음원 확인이 남았다. 기존 `SERIES/17-00`과 07:00 운동용은 건드리지 않는다. `.ai/state.json`의 로컬 오디오 0개를 원격 후보 40개로 해석하지 않는다.
 Resume-Trigger: 젠의 후보 청취·선택 결과
 Commits: 없음(이번 턴 커밋·푸시하지 않음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-21 (17:11 KST 브라우저 중단 확인·이후 계속 지시로 대체)
 Project: ~/Project/wavvy
@@ -585,9 +399,9 @@ Summary: 젠의 “실수했다 야 스탑스탑”으로 06:30 후보 생성을
 Next-TODO: 당시 재개 허가 전 중단 지시였다. 위 현행 계속 제작 지시가 이를 대체한다. `.ai/state.json`의 로컬 `audio_files: 0`은 원격 후보 수가 아니다.
 Resume-Trigger: 젠의 명시적 재개 지시
 Commits: 없음(이번 턴 커밋·푸시하지 않음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-21 (후보 목록 17:07 KST 직접 조회·사용자 탭 16:58 KST 관찰)
 Project: ~/Project/wavvy
@@ -596,9 +410,9 @@ Summary: 06:30 첫 01 Create는 뒤늦게 수락됐다. 17:07 KST 후보 목록 
 Next-TODO: 당시에는 04–20의 미완료 곡 생성을 계속하기로 기록했다. 젠의 최신 중단 지시가 이 계획을 대체한다. `.ai/state.json`의 로컬 `audio_files: 0`으로 원격 후보 수를 추정하지 않는다.
 Resume-Trigger: 당시 브라우저 생성 로그·후보 목록의 다음 관측; 현행 재개 조건은 위 최신 블록 참조
 Commits: 없음(이번 턴 커밋·푸시하지 않음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-21
 Project: ~/Project/wavvy
@@ -607,9 +421,9 @@ Summary: 첫 Create 직후 당시 관찰: 06:30의 신규 한국어 보컬 20곡
 Next-TODO: 당시에는 젠의 직접 인증 완료 후 기존 01 요청의 후보 ID·크레딧·작업 공간을 먼저 확인하도록 적었다. 이후 01 수락 결과는 위 최신 기록에 있다.
 Resume-Trigger: 당시 젠의 Cloudflare 인증 완료 신호
 Commits: 없음(이번 턴 커밋·푸시하지 않음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-12 18:40:36
 Project: /Users/zenkim_office/Project/wavvy
@@ -618,9 +432,9 @@ Summary: 07:00 공개 영상의 기획서 댓글을 Wavvy24로 게시·고정하
 Next-TODO: 현재 요청 범위의 남은 일 없음. 최종 무가사 음원 6개의 미확인 원본 프롬프트는 불확인 이력으로 보존.
 Resume-Trigger: -wavvy
 Commits: bd33f94; 이번 세션 기록 커밋
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-12 18:22 KST
 Project: /Users/zenkim_office/Project/wavvy
@@ -629,9 +443,9 @@ Summary: 앞선 07:00 발매 기록에서 빠진 고정 댓글을 Wavvy24 계정
 Comment: https://www.youtube.com/watch?v=DU_vBuIdMG4&lc=Ugz4aOucarXn6_sgILZ4AaABAg
 Next-TODO: 07:00 공개·4K·고정 댓글 확인 완료. 최종 무가사 음원 6개의 원본 프롬프트는 미확인 상태로 보존한다.
 Resume-Trigger: -wavvy
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-12 17:29:26
 Project: /Users/zenkim_office/Project/wavvy
@@ -639,9 +453,9 @@ Agent: Codex
 Summary: 07:00 러닝 영상 20곡×2회 공개와 4K 처리 완료를 Studio에서 확인했다. 기존 시간대 영상 14개 제목, 17:00 설명, 시리즈 문서와 로컬 업로드 정보를 현행화했다. 06:00·20:00은 비공개 상태를 유지했다.
 Next-TODO: 현재 요청 범위에 남은 일 없음. 07:00 최종 무가사 음원 6개의 원본 프롬프트는 확인되지 않은 상태로 보존한다.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-12
 Project: ~/Project/wavvy
@@ -653,9 +467,9 @@ Verification: `verify-release`, `uploaded` gate, state check, 62개 하네스 �
 Next-TODO: 07:00 영상은 공개·4K 처리 완료가 확인됐다. 최종 무가사 음원의 소스 원문 6개는 확인되지 않은 상태로 유지한다. 옛 보컬 txt로 `finalize-upload`하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 이번 작업은 프로젝트 미디어 런타임 규칙에 따라 commit/push 요청이 없어 미커밋 로컬 변경으로 남긴다. 대형 미디어는 로컬/Git 제외로 보존한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-12
 Project: ~/Project/wavvy
@@ -665,9 +479,9 @@ Verification: 썸네일 1672×941 및 휴대폰 320×180을 시각 확인했다.
 Next-TODO: 젠에게 확정곡 20곡 유지와 엄격한 전곡 180 BPM 중 우선순위를 질문했다. 결정 뒤 오디오 검증·Final Track Sources·패키징을 진행한다. YouTube metadata는 아직 없다. 업로드는 별도 명시적 -wavvy-release에서만.
 Resume-Trigger: -wavvy
 Commits: 07:00 선택·WAV 수집 기록 `d32383c`를 `origin/master`에 반영했다. 현재 WAV 20개와 과거 WAV 3개는 프로젝트 규칙에 따라 로컬 보존한다.
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-06 16:59:58
 Project: /Users/zenkim_office/Project/wavvy
@@ -676,9 +490,9 @@ Summary: 07:00 재구성 세션 기록 저장: 기존 7곡·1차 9곡·2차 11B 
 Next-TODO: 젠: 다운로드 한도 회복 후 재개할 때 요청한다. 재개 시 현행 선택 ID와 My Workspace의 새 06·09·10 후보 위치·채택부터 확인하고 그때 필요한 WAV 수집·음원 검증·Final Track Sources를 진행한다. 그 전에는 다운로드·ingest·렌더·업로드·예약 재시도 없음. 업로드는 별도 명시적 -wavvy-release에서만.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-06
 Project: ~/Project/wavvy
@@ -688,8 +502,9 @@ Verification: 새 source gate 4/4 PASS, 각 소스 SHA·제출 1회·후보 2개
 Next-TODO: 젠이 `input/redirection-round2-review-2026-10-06.md`의 06·09·10·11 A/B를 듣고 번호당 한 곡을 고른다. 보존 7곡을 포함해 최종 음원의 180 BPM 전 구간 지속을 확인한다. 새 WAV 다운로드·Final Track Sources 확정은 아직 없다. Phase `track_source_draft`.
 Resume-Trigger: -wavvy
 Commits: 이번 작업에서 commit/push 없음.
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-06
 Project: ~/Project/wavvy
@@ -699,8 +514,9 @@ Verification: 13번 Create 각 1회, 새 후보 ID 26개 고유, 26개 UI 제목
 Next-TODO: 젠이 새 A/B 후보를 듣고 채택할 곡을 결정한다. 보존 7곡까지 포함해 실제 음원에서 180 BPM 러닝 박자가 전 구간 이어지는지 확인해야 한다. 그 전에는 새 선택 기록·Final Track Sources를 확정하지 않는다. Phase `track_source_draft`.
 Resume-Trigger: -wavvy
 Commits: 이번 작업에서 commit/push 없음.
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-06
 Project: ~/Project/wavvy
@@ -710,7 +526,9 @@ Verification: 신규 13개 track-prompt PASS(13/13), 07:00 state check PASS, git
 Next-TODO: 젠이 장르 배분·곡별 소스 초안을 검토한다. 새 음원 생성 및 청취·선택이 실제로 이뤄진 뒤에야 새 선택 기록과 Final Track Sources를 갱신한다. 기존 05·06·07 WAV는 옛 선택 이력으로 보존한다.
 Resume-Trigger: -wavvy
 Commits: 이번 작업에서 commit/push 없음.
+
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 18:32:20
 Project: /Users/zenkim_office/Project/wavvy
@@ -719,9 +537,9 @@ Summary: 07:00 추가 WAV 다운로드를 새로고침 후 재시도했으나 Su
 Next-TODO: Suno 다운로드 잔여량이 갱신되면 08–20 및 01 WAV를 받아 최종 20곡을 검증한다. 지금은 01과 08–20 WAV가 미수집이다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 18:09:24
 Project: /Users/zenkim_office/Project/wavvy
@@ -730,9 +548,9 @@ Summary: 07:00 최종 20곡을 선택 ID로 고정했고 02–07의 WAV 6개를 
 Next-TODO: 01 및 08–20 WAV 수집 후 전곡 음원 확인과 Final Track Sources 진행. 지금은 02–07 WAV만 있음.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -741,9 +559,9 @@ Summary: 젠이 07:00 시리즈 20곡을 번호별로 추려 듣고, 마지막 0
 Next-TODO: Suno의 추가 A/B 중 최종 음원 ID 20개는 아직 확정되지 않았다. 실제 178–182 BPM 지속 박자와 길이 확인, Final Track Sources·WAV 수집도 남아 있다. 03 3차는 화면 길이 2:24·2:37로 둘 다 3분 목표보다 짧다.
 Resume-Trigger: 젠의 최종 음원 선택 또는 후속 제작 요청 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -752,9 +570,9 @@ Summary: 03 2차는 젠이 “느려”라고 판정했다. 03 3차를 빠른 �
 Next-TODO: 03 3차 A/B 중 최종 한 곡은 아직 지정되지 않았다. 두 화면 길이는 2:24·2:37로 3분 목표 미달이며 실제 178–182 BPM은 아직 측정되지 않았다. Final Track Sources·WAV는 없다. 다른 번호는 이번 턴에 변경하지 않았다.
 Resume-Trigger: 젠의 A/B 선택 또는 후속 제작 요청 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -763,9 +581,9 @@ Summary: 젠이 `[07:00]` 작업 공간을 20곡으로 정리한 것을 화면�
 Next-TODO: 젠이 새 03 A(화면 2:28)와 B(화면 3:05)를 듣고 선택하거나 재수정을 지시한다. 실제 178–182 BPM은 아직 측정되지 않았고 Final Track Sources·WAV도 없다. 원본 03 Cover와 다른 19곡은 건드리지 않았다.
 Resume-Trigger: 젠의 03 청취 선택 또는 후속 요청 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -774,9 +592,9 @@ Summary: 젠이 07:00의 03·05·07·08·11·12·15·16·18·20 Cover 결과를 
 Next-TODO: 번호별 A/B 최종 선택과 실제 178–182 BPM 지속 박자·길이 확인은 아직 남아 있다. 03 A는 Suno 페이지 표시 길이 약 1:01로 3분 목표에 못 미친다. Final Track Sources·WAV는 없다.
 Resume-Trigger: 젠의 번호별 선택 또는 후속 제작 요청 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -785,9 +603,9 @@ Summary: 젠의 “2 완료” 뒤 07:00의 03·05·07·08·11·12·15·16·18·
 Next-TODO: 젠이 Cover A/B를 들어 번호별 한 곡을 고른다. 실제 무가사 청감·길이·178–182 BPM 지속 박자는 아직 미확인이고 Final Track Sources·WAV는 없다. 기존 재생성 곡과 01·02도 전체 20곡 채택 전 확인이 필요하다.
 Resume-Trigger: 젠의 청취 선택 또는 후속 제작 요청 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -796,9 +614,9 @@ Summary: 07:00 시리즈 02·04·06·09·10·13·14·17·19를 서로 다른 강
 Next-TODO: 젠이 새 후보를 듣고 번호별 한 곡을 고르거나 재생성을 지시한다. 실제 178–182 BPM과 90 BPM 반박자 느낌 여부를 확인한 뒤 선택 상태를 기록한다. 나머지 원본의 정리 완료 연락을 받으면 11개 생존 ID를 다시 확인하고 각각 Remix → Cover에서 `[Instrumental]`을 적용한다.
 Resume-Trigger: 젠의 후보 선택 또는 정리 완료 연락 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -807,9 +625,9 @@ Summary: 젠이 07:00 최초 후보를 듣고 가사 없는 러닝곡으로 전�
 Next-TODO: 젠이 느린 느낌의 곡을 직접 지우고 번호마다 원본 한 곡만 남긴 뒤 연락할 때까지 Aside/Suno를 조작하지 않는다. 연락 후 [07:00]에서 생존 원본 ID를 확인하고 각각 ... → Remix → Cover의 가사 칸에 [Instrumental]만 남겨 생성한다. Cover 출처와 결과 ID를 별도로 기록하고 실제 178–182 BPM은 별도 확인한다.
 Resume-Trigger: 젠의 정리 완료 연락 뒤 -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -819,9 +637,9 @@ Verification: 20개 track-prompt·20개 full-song lyrics-review, 46개 unit test
 Next-TODO: 젠이 `SERIES/07-00/input/candidate-review.md`의 A/B를 듣고 채택 또는 재생성할 곡을 고른다. 채택 전에 실제 178–182 BPM을 확인해야 한다. 박자 자동 측정 방식은 오류 원인과 접근 방법을 젠과 결정한 뒤 재개한다. 확정 전 Final Track Sources 승격·WAV 수집·발매는 하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(이번 턴에 -record 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 13:50:27
 Project: /Users/zenkim_office/Project/wavvy
@@ -830,9 +648,9 @@ Summary: Wavvy 공용 produce/release 스킬과 명시적 커맨드를 구현했
 Next-TODO: 17:00 공개 뒤 실제 공개·댓글·고정·자막 상태를 확인한다. 다음 180 BPM 러닝곡 시리즈는 젠의 명시적 -wavvy-produce 호출에서만 시작하고 첫 실사용으로 스킬을 검증한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 12:19:30
 Project: /Users/zenkim_office/Project/wavvy
@@ -841,9 +659,9 @@ Summary: 17:00 플레이리스트를 2026-10-03 17:00 KST 공개로 예약했고
 Next-TODO: 17:00 이후 https://youtu.be/KGzllkCkozw의 공개 상태와 ~/Library/Application Support/Wavvy/17-00-comment-2026-10-03-status.json의 댓글·고정 결과를 확인한다. 댓글 실패 시 Aside CLI로 직접 게시·고정한다. 한국어 자막은 초안으로 남아 있어 별도 확인이 필요하다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03 11:52:02
 Project: /Users/zenkim_office/Project/wavvy
@@ -852,9 +670,9 @@ Summary: 17:00 시리즈 20곡×2회 3840×2160 MP4를 soomshuim@gmail.com의 Wa
 Next-TODO: YouTube SD/4K 처리와 저작권 검토가 끝나면 실제 재생 화질과 검토 결과를 확인한다. 한국어 자막 원고는 초안 저장 상태이며 자동 동기화와 최종 게시 여부를 확인한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -864,9 +682,9 @@ Verification: WAV 20개 48 kHz/16-bit/stereo·SHA-256 일치, validate/source-fi
 Next-TODO: YouTube 업로드는 하지 않았다. 추후 업로드 준비를 이어갈 때 하네스 다음 단계는 자막 txt 또는 SRT 생성이다. 이미지는 원생 1672×941에서 4K 픽셀로 확대했다.
 Resume-Trigger: -wavvy
 Commits: current package commit (see git log)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -876,9 +694,9 @@ Verification: state --check, git diff --check PASS. 2초 3840×2160 정적 이�
 Next-TODO: 젠에게 요청한 Aside CLI 연결 전환 결정을 기다린다. 허용되면 남은 WAV 19곡 다운로드, 파일명/무결성 검증, 4K pack, 실제 report.json 타임스탬프 반영, 전체 검토를 진행한다. 승인된 곡명과 Suno 표시 제목 차이는 `.ai/plans/2026-10-03_17-00-youtube-package.md` 참조. 이미지 원생 크기는 1672×941이고 4K는 확대본이다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-10-02 18:13:04
 Project: /Users/zenkim_office/Project/wavvy
@@ -887,9 +705,9 @@ Summary: 젠이 17:00 시리즈 20곡 완료를 보고했다. 08·09 새 원문�
 Next-TODO: 다음 새 세션에서 -wavvy로 상태만 로드한 뒤, 젠의 그 세션 시작 신호에 따라 유튜브 트랙 작업에 착수한다. 로컬 음원이 생기면 그때 기술 검증과 패키징을 진행한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02 11:40:05
 Project: /Users/zenkim_office/Project/wavvy
@@ -898,9 +716,9 @@ Summary: 17:00 Tracks 10–15 텍스트 작업을 기록했다. 10 최종본, 11
 Next-TODO: 젠이 Track 15 제목·전체 가사·나머지 STYLE을 검토한다. PASS 후 concept 승인 목록을 갱신한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01 16:35:45
 Project: /Users/zenkim_office/Project/wavvy
@@ -909,9 +727,9 @@ Summary: 17:00 Track 10 「그때의 빛」 현행 전체 가사·제목과 120 
 Next-TODO: 젠이 생성한 음원이 제공되면 실제 길이·BPM·조성·보컬·편곡을 확인한다. Final Track Sources 승격은 별도 절차로 판단하고, Track 11은 새 시작 요청 전 자동 착수하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 660183f, 37f4ce2, (이번 기록 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01 11:43:17
 Project: /Users/zenkim_office/Project/wavvy
@@ -920,9 +738,9 @@ Summary: 17:00의 07 「봄비같은 너 (Accoustic Remix)」 사용자 제공 �
 Next-TODO: 09–20은 젠과 새로 제작한다. 07·08 음원이 제공되면 실제 길이·보컬·화음·BPM·조성을 확인한다.
 Resume-Trigger: -wavvy
 Commits: 61e92a5, 74a638f, 4ac77c3, (이번 기록 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01 10:31:01
 Project: /Users/zenkim_office/Project/wavvy
@@ -931,9 +749,9 @@ Summary: 젠이 17:00 Track 06 「그냥 좋아」의 전체 가사와 포크 �
 Next-TODO: 젠과 07–20 신규 곡을 제작한다. 06 생성 음원이 제공되면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 06의 Final Track Sources 승격은 아직 하지 않았다.
 Resume-Trigger: -wavvy
 Commits: 778e9da, a6aa8d8, (이번 기록 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01 09:23:00
 Project: /Users/zenkim_office/Project/wavvy
@@ -941,9 +759,9 @@ Agent: Codex
 Summary: 17:00 05 「한 정거장」은 젠이 원래 ef48c6f 가사·STYLE·EXCLUDE를 PASS했고, 현행 본문이 그 원본과 일치한다. 구현 0d2cde6은 다음 신규 완곡부터 Verse 분포·문장 길이·호흡 여백의 Draft 근거를 요구한다. 36 tests와 03/05 gate PASS, 독립 Astra xhigh Critical/High 0. 실제 음원은 저장소에서 실측하지 않았다.
 Next-TODO: 06–20 신규 곡은 젠과 제작하며 새 완곡 호흡 계약을 적용한다. 실제 생성 음원을 받으면 길이·보컬·호흡을 별도 확인한다. 05 승인본에 남은 텍스트 수정은 없다.
 Commits: 0d2cde6, (이번 기록 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-09-30 23:05:51
 Project: /Users/zenkim_office/Project/wavvy
@@ -952,9 +770,9 @@ Summary: Wavvy 17:00 03 「너와」의 Intro 포함 67행 완곡 초안과 trac
 Next-TODO: 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인. 04의 실제 음원·기술값은 자료 입수 후 확인. 05–20 신규 곡은 젠과 공동 제작.
 Resume-Trigger: -wavvy
 Commits: 1c49abe, (이번 기록 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 22:27:04 +0900
 Project: ~/Project/wavvy
@@ -964,9 +782,9 @@ Evidence: /tmp/wavvy-prompt-gate-{track03.json,lyrics03.json,skill03.json,unitte
 Next-TODO: 03 가사·제안 프롬프트의 젠 검토와 재생성 음원의 실제 길이·Intro·보컬·BPM/키 확인이 남는다. 텍스트 검사와 마디 계산은 생성 음원을 보증하지 않는다.
 Resume-Trigger: -wavvy
 Commits: pending integrated review and commit
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 21:42:22 +0900
 Project: ~/Project/wavvy
@@ -975,9 +793,9 @@ Summary: 과거 55행 초안 이력(위 확장본으로 교체). 당시 17:00 03
 Next-TODO: 젠의 03 가사·제안 프롬프트 검토가 남아 있다. 04 실제 음원/BPM/키는 자료가 들어오면 확인한다. 05–20은 젠과 신규 제작한다.
 Resume-Trigger: -wavvy
 Commits: 2ec4ada
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 21:17:28 +0900
 Project: ~/Project/wavvy
@@ -986,10 +804,9 @@ Summary: 17:00 어쿠스틱 시리즈 concept와 01 「서랍」/02 「공강」
 Next-TODO: 없음 — 03 신규 곡 작업은 이번 기록과 분리하고, 04 리믹스의 구체 자료는 젠이 제공할 때 반영한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
-
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-09-30 20:52:19
 Project: /Users/zenkim_office/Project/wavvy
@@ -997,9 +814,9 @@ Agent: Codex
 Summary: Wavvy 작사 자연스러움 스킬·하네스 개선(24a0fed)은 테스트 20개 PASS와 독립 Astra CLEAN을 확인하고 원격 반영을 마쳤다. 이번 -record는 세션 기록 동기화이며 새 가을 R&B 시리즈는 변경 범위 밖이다.
 Next-TODO: 없음
 Commits: 24a0fedb459bbeb0324095448aa5d34983f18f83
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-06-02 21:13:45 +0900
 Project: /Users/zen/Project/wavvy
@@ -1007,9 +824,9 @@ Agent: Codex
 Summary: Pruned Wavvy historical artifacts after checking active harness, skill, and agent-routing references. Preserved `concept.md`, state/session/handoff, MASTER/skill/harness docs, lyricist baseline research runs, and 20-00 rubric/concept evidence while deleting stale auto-handoff, peer-review, pipeline, meeting, review, reference, and unreferenced report records.
 Next-TODO: 없음. Deleted records remain recoverable through git history if needed.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 23:34:54 +0900
 Project: /Users/zen/Project/wavvy
@@ -1017,9 +834,9 @@ Agent: Codex
 Summary: 20-00 Final Track Sources를 사용자 제공 final prompt/lyrics 기준으로 보정했다. 12/15/19/20은 실제 교체, 05/06/13은 본문 일치 확인 후 manual final confirmation과 stale 트랙 번호를 정리했다. YouTube 자막 테스트용으로 타이밍 제외 transcript와 report 기반 추정 SRT를 생성했고, 비가사 마크업 제거/SRT 문법/시리즈 validate를 통과했다.
 Next-TODO: YouTube에 먼저 `SERIES/20-00/output/youtube_subtitles_ko_no_timing.txt`를 타이밍 제외로 업로드 테스트. 실패하거나 싱크가 낮으면 `SERIES/20-00/output/youtube_subtitles_ko_timed_estimated.srt`를 타이밍 포함으로 테스트. 더 정확한 방식으로 `wavvy-subtitles` 스킬/하네스화 후 남은 시리즈 일괄 생성.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 22:23:22 +0900
 Project: /Users/zen/Project/wavvy
@@ -1027,9 +844,9 @@ Agent: Codex
 Summary: 20-00 업로드 전환용 `finalize-upload` 하네스 구현. txt 소스의 STYLE/LYRICS 계약을 검증하고, 현재 report와 제목 기반으로 매칭해 `concept.md` `## Final Track Sources`에 트랙별 타임스탬프/스타일/exclude/풀가사/source checksum을 아카이브하도록 했다. 이미 삭제된 20-00 txt는 `b6f13c4^` git tree에서 복원해 concept.md에 20블록으로 이식했고, 문서에는 `finalize-upload --check` PASS 전 txt 삭제 금지 규칙을 추가했다.
 Next-TODO: 20-00 자막 생성은 `SERIES/20-00/concept.md`의 `Final Track Sources` LYRICS 기준으로 진행. 영상이나 upload.csv가 다시 필요하면 `python3 wavvy.py pack SERIES/20-00 -y` 재실행.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 21:25:15
 Project: /Users/zen/Project/wavvy
@@ -1037,9 +854,9 @@ Agent: Codex
 Summary: 20-00 YouTube 업로드 문안을 `concept.md` 최상단 SSOT로 확정. 최종 제목은 `Playlist | 20:00 | 💪 앞으로 이 플리 없이 절대 운동 못할걸?! | Drill · Rage · Trap · Boombap | 헬스·러닝 BGM | Wavvy`. 설명문은 `20:00, 앞으로는 이 플리 없이 절대 운동 못할 거예요.` + `아드레날린 강제 폭주시키는 Drill · Rage · Trap · Boombap Hiphop Mix Workout 플리 - Wavvy` 시작으로 정리했고, 사용자 제공 태그 리스트를 해시태그 블록으로 변환해 반영. `wavvy.py`는 이제 `concept.md`의 `## YouTube Metadata`/`## YouTube Draft`에서 `제목/설명/태그`를 읽어 validate warning 및 upload.csv 자동 생성에 사용한다. concept.md 외 YouTube 보조 파일(`youtube_*.txt`, `youtube_upload_info.md`, `upload.csv`)은 삭제했고, 사용자가 `final.mkv`도 삭제함.
 Next-TODO: 영상이나 upload.csv가 다시 필요하면 `wavvy.py pack SERIES/20-00 -y`로 재생성. 업로드 문안은 `SERIES/20-00/concept.md` 최상단 metadata를 SSOT로 사용.
 Commits: c9f2192, fe8239f, 5d699b1, 4314c21
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 20:45:26
 Project: /Users/zen/Project/wavvy
@@ -1047,9 +864,9 @@ Agent: Codex
 Summary: 20-00 다운로드 WAV 20개를 v0.6 최종 러닝 오더 기준으로 리네임하고 YouTube 영상 패키징 완료. 입력상 `17. Engine.wav` / `18. Fake.wav`는 concept 최종맵과 반대였으므로 제목 기준으로 `17 Fake` / `18 Engine`으로 교정. `wavvy.py validate` PASS 후 `wavvy.py pack SERIES/20-00 -y` 자동모드로 -14 LUFS 정규화, 0.8s 크로스페이드, 20곡 x2 반복 머지, `loop.png` 기반 H.264+FLAC `output/final.mkv` 생성. 초기 render의 61초 container tail은 remux-trim해 final duration 7,879s로 보정했고 video/audio decode QA PASS.
 Next-TODO: `SERIES/20-00/output/final.mkv`와 `SERIES/20-00/input/thumb.jpg`로 YouTube 업로드. 더 작은 파일이 필요하면 AAC MP4 copy/transcode 생성.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 20:05:50
 Project: /Users/zen/Project/wavvy
@@ -1057,9 +874,9 @@ Agent: Codex
 Summary: 20-00 `AFTER HOURS WORKOUT`을 v0.6 최종 러닝 오더로 정리. BPM 숫자만 보지 않고 장르·질감·체감 속도를 종합해 5곡 단위 `강-약-중-강-약` 파형으로 재배치했다. 최종 순서는 01 Paycheck / 02 Night Rider / 03 Bottom to the Top / 04 Yang Gang / 05 Old Cassette / 06 Real Talk / 07 LLC / 08 Boomerang / 09 Black Mirror / 10 Bottom Line / 11 Overtime Flame / 12 Small Talk / 13 Concrete / 14 Cold Stack / 15 Old Page / 16 Rewrite / 17 Fake / 18 Engine / 19 Side Street / 20 Slow Glow. Slow Glow는 108 BPM half-time melodic cooldown 체감상 최종 엔딩, Black Mirror는 150 BPM sultry female dark trap 질감 피크, Cold Stack은 180 BPM 속도 피크로 분리. `SERIES/20-00/input/tracks/*.txt`는 전부 삭제하고 `concept.md` v0.6 단일 관리로 전환.
 Next-TODO: draft 8곡(05 Old Cassette / 06 Real Talk / 07 LLC / 09 Black Mirror / 10 Bottom Line / 11 Overtime Flame / 13 Concrete / 18 Engine) Suno 생성/검수. PASS 곡은 `concept.md` Status만 갱신. 오디오 파일은 v0.6 순서 기준으로 리네임/패키징.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-30 17:09:12
 Project: /Users/zen/Project/wavvy
@@ -1067,9 +884,9 @@ Agent: Codex
 Summary: 20-00 Track 17을 `Late Lane`에서 `Small Talk`로 리네임하고, 크루 간 단톡/DM/스토리/캡처 소모전 냉소 주제로 전환. 175 BPM F Faster Dark Trap에서 한국어 라임 발음 뭉개짐과 final hook 댄스화가 발생해 150 BPM B Rage Tuned sing-rap으로 재분류. `Final Chorus` 태그를 제거하고 반복 Chorus에 same locked 2-bar drum loop / no tempo increase / no final lift / no dance beat 보정을 반영. `concept.md`는 Track 17 `B | Male | 150`, 분포 `A3/B5/C5/D3/E2/F2`, Hard 65%로 동기화.
 Next-TODO: Suno V5.5에서 `17_Small Talk.txt` 현 버전 생성 후 sing-rap hook이 영하게 들리는지, 한국어 발음이 유지되는지, 반복 Chorus에서 드럼/템포가 댄스곡처럼 바뀌지 않는지 검수. 현재 `check_lyric_avoid.sh`는 PASS, `check_series_gate.sh`는 v1.4 목표(B4/F3, HIIT 5-7, A·B 인접 회피)와 충돌해 S1/S2/S3 FAIL이므로 Small Talk PASS 후 Track Map 순서/게이트 정책 재정렬 필요. PASS 시 Status/META 확정.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-28 22:57:31
 Project: /Users/zen/Project/wavvy
@@ -1077,9 +894,9 @@ Agent: Codex
 Summary: 20-00 1-12 주요 트랙 txt를 사용자 확정 제목/가사/스타일 기준으로 정합화. 09 Block Signal→Bottom Line rename, 12 Black Mirror를 femme fatale club clock-in으로 재작성/스타일 보정. concept.md와 관련 meta 동기화. 사용자 첨부 loop 이미지 `SERIES/20-00/input/new_loop.png`도 이번 푸시에 포함. 검증 PASS 20/20 + gate 7/7.
 Next-TODO: Suno V5.5에서 draft 12곡 생성/검수, PASS 곡 Status 확정, 20곡 PASS 후 강-약-중-강-약 최종 셔플, 오디오 리네임/YouTube metadata/패키징.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-29 23:51:26
 Project: /Users/zen/Project/wavvy
@@ -1087,9 +904,9 @@ Agent: Codex
 Summary: 파일명 넘버링 제거로 깨진 20-00 series gate 검증을 복구. 번호 제거된 03-11 트랙 헤더에 Order 메타를 추가해 정렬 기준을 파일명 대신 내부 메타로 맞춤.
 Next-TODO: 없음
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 컨셉 정합성 정비 — 5곡 교체 + 3곡 retheme + concept.md v0.5 + Codex review 수용)
 Date: 2026-04-28
 Project: ~/Project/wavvy
@@ -1098,6 +915,7 @@ Summary: 사용자 피드백 "운동 컨셉보다 힙합 본연 주제로 조정
 Concept-Policy: 시리즈 라벨 `💪 AFTER HOURS WORKOUT`은 사운드 포지셔닝(workout BGM 검색 노출). 가사는 hip-hop 본연 주제 (밤·도시·디스·자수성가·crew·내면·라이리시즘). 직접 운동 어휘는 모든 트랙에서 사용 금지. concept.md v0.4 "사운드 우선" 정책의 강화 버전.
 Track-Diversity: C축 5곡 톤 분기(C1 lazy 03 / C2 sarcastic 05·07 / C3 chant 08 / C4 husky 15) / F축 3곡 narrative 차별(10 stack money / 12 vanity / 17 lane drive) / E축 2곡 male/female 카운터파트 명확 차별(13 nostalgia at desk / 20 cypher at mic).
 Codex-Review: `.ai/peer-review/runs/20260428-145415-codex-review-98088.md` FAIL. High(stale docs)+Medium(workout vocab 잔존)+Medium(13/20 duplication)+Low(어색 라인)+Low(라벨) 모두 수용 후 정비 완료.
+
 
 ---
 
@@ -1118,9 +936,9 @@ Key-Files:
   - Track Map: `SERIES/20-00/concept.md` v0.4
   - 검증 스크립트: `MASTER/scripts/check_series_gate.sh` v1.4, `check_lyric_avoid.sh`
 Commits: (미커밋)
----
 
 ---
+
 HANDOFF: Codex -> User (20-00 Track 06 클럽 열기 개사 + Ad-lib Pocket 버전)
 Date: 2026-04-28 01:24:18
 Project: ~/Project/wavvy
@@ -1128,9 +946,9 @@ Agent: Codex
 Summary: 20-00 이어작업. Track 03 `Bottom to the Top`은 호흡이 여전히 약하지만 사용자 최종 PASS로 기록. Track 06 `Overtime Flame`은 사무실 야근불에서 after-hours club heat 콘셉트로 개사. 도입부는 8 bars instrumental / 808 bass lead only / no vocal / no ad-lib / no hook / no bell melody로 고정하고, bell melody는 Verse 1 이후 진입하도록 STYLE/EXCLUDE/LYRICS/META에 모두 반영. 호흡 문제는 `Break - No Vocal` 대신 A/B verse 사이 `[Ad-lib Pocket]`을 쓰는 방식으로 정리. `chant` 표현은 파일에서 제거하고, 포켓은 구호가 아니라 짧은 rapper aside(`huh/yeah/uh`)로 처리. `check_lyric_avoid.sh`는 Track 06 기준 PASS.
 Next-TODO: Track 06 현 버전으로 Suno 생성 후 (1) intro 808-only 준수, (2) bell melody가 intro 이후에만 나오는지, (3) Ad-lib Pocket이 숨표로 들리는지, (4) 클럽 열기 콘셉트가 어색하지 않은지 검수. 이후 draft 5곡(02/06/09/12/13) 생성/검수와 14-20 추가 7곡 설계 진행.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User (20-00 최종 20곡 체제 + 남성 14 / 여성 6 확정)
 Date: 2026-04-27
 Project: ~/Project/wavvy
@@ -1151,9 +969,9 @@ Key-Files:
   - Track Map: `SERIES/20-00/concept.md`
   - 검증 스크립트: `MASTER/scripts/check_series_gate.sh`, `MASTER/scripts/check_lyric_avoid.sh`
 Commits: (미커밋)
----
 
 ---
+
 HANDOFF: Claude -> User (7곡 PASS + RUBRIC v1.3 + concept v0.3 + 13곡 분포 확정 + F축 신설 — 변주 6곡 작업 대기)
 Date: 2026-04-26
 Project: ~/Project/wavvy
@@ -1173,9 +991,9 @@ Key-Files:
   - 회의록: `meetings/2026-04-26_20-00-genre-gate-{rubric-design,execution-plan}.md`
   - 보충 리서치: `SERIES/20-00/report/2026-04-25_workout-tuned-rage-supplement.md`
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User (HARD_HIPHOP_RUBRIC v1.1 + 자동화 스크립트 2건 + Hard 60% 정책 완료 — Suno V5.5 5곡 1차 테스트 대기)
 Date: 2026-04-26
 Project: ~/Project/wavvy
@@ -1194,9 +1012,9 @@ Key-Files:
   - 회의록: `meetings/2026-04-26_20-00-genre-gate-{rubric-design,execution-plan}.md`
   - 보충 리서치: `SERIES/20-00/report/2026-04-25_workout-tuned-rage-supplement.md` (Section A·B)
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 장르 게이트 v1.0 /team 만장 합의 — HARD_HIPHOP_RUBRIC.md 작성 + 자동화 스크립트 2건 대기)
 Date: 2026-04-26
 Project: ~/Project/wavvy
@@ -1215,9 +1033,9 @@ Key-Files:
   - 보충 리서치: `~/Project/wavvy/SERIES/20-00/report/2026-04-25_workout-tuned-rage-supplement.md` (50KB)
   - 12-00 형식 참고: `~/Project/wavvy/MASTER/rubrics/AFROBEATS_RUBRIC.md`
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (💪 AFTER HOURS WORKOUT concept.md v0.2 + P0 갭 보충 리서치 통합 완료 — Suno V5.5 5곡 1차 테스트 대기)
 Date: 2026-04-26
 Project: ~/Project/wavvy
@@ -1235,9 +1053,9 @@ Key-Files:
   - 1162줄 1차 딥리서치 / 차트 검증 / K-hiphop 트랩 트렌드 / GPT 빡센 붐뱁 (보존)
   - /team 회의록 4건 (보존)
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 /team 리서치 갭 점검 5/5 PASS — P0 리서치 2건 호출 대기)
 Date: 2026-04-25 21:55
 Project: ~/Project/wavvy
@@ -1252,9 +1070,9 @@ Key-Files:
   - 회의: `~/Project/wavvy/meetings/2026-04-25_20-00-pre-concept-research-gaps.md`
   - 보유 자산 4건: `report/2026-04-24_hard-hiphop-4axis-musical-deep.md` (1162줄) / `report/2026-04-25_chart-vs-awards-validation.md` / `report/2026-04-25_k-hiphop-trap-trends-deep.md` / `report/2026-04-25_suno-boom-bap-prompt-engineering-gpt.md`
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 새 정체성 합의 — Workout + 빡센 트랩 4축 + 보너스 붐뱁, concept.md v0.2 작성 대기)
 Date: 2026-04-25 21:10
 Project: ~/Project/wavvy
@@ -1271,9 +1089,9 @@ Key-Files:
   - GPT 빡센 붐뱁 자료: `~/Project/wavvy/SERIES/20-00/report/2026-04-25_suno-boom-bap-prompt-engineering-gpt.md` (출처 표기 추가)
   - 1차 1162줄 딥리서치: `~/Project/wavvy/SERIES/20-00/report/2026-04-24_hard-hiphop-4axis-musical-deep.md` (Rage §3 + Hardcore Trap §6 자산 활용)
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 산출물 전면 리셋 — 차트·청자 검증 후 새 방향 논의 대기)
 Date: 2026-04-25 20:15
 Project: ~/Project/wavvy
@@ -1290,9 +1108,9 @@ Key-Files:
   - 미팅 노트 3건: `meetings/2026-04-25_20-00-{hard-hiphop-positioning,4axis-realignment,music-detail-audit}.md`
   - 삭제 자산 (git history 복원 가능): concept.md v0.1 / test-prompts.md / 가사 2건
 Commits: (이번 리셋 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 4축 재편 /team 만장 합의 — concept.md v0.2 재작성 대기)
 Date: 2026-04-25 16:30
 Project: ~/Project/wavvy
@@ -1310,9 +1128,9 @@ Key-Files:
   - 1차 딥리서치: `~/Project/wavvy/SERIES/20-00/report/2026-04-24_hard-hiphop-4axis-musical-deep.md` (1162줄, 보존)
   - 통과 가사 2건: `~/Project/wavvy/SERIES/20-00/input/tracks/불붙은 paycheck (Paycheck on Fire).txt` + `씬에 침 뱉어 (Spit on the Scene).txt`
 Commits: (이번 회의 record commit)
----
 
 ---
+
 HANDOFF: Claude -> User (20-00 Paycheck 인사이트 B~D 확산 + EXCLUDE 축별 특화 13종 + Rewrite 4차 수용 + Verse 16 bar 표기)
 Date: 2026-04-25 03:26
 Project: ~/Project/wavvy
@@ -1320,9 +1138,9 @@ Agent: Claude
 Summary: 20-00 AFTER HOURS — Paycheck Rage v3 인사이트를 A타입 기본 플랜(concept.md §Style A)에 반영 완료(5차 "일단 통과" 해결): v3 Style Prompt(`same 2-bar trap drum loop throughout no beat switch no final lift` 앞쪽, `screamed raw shouted + chest voice dry close vocal`, autotune 제거, `raw uncut rage energy`) + EXCLUDE v2 rage 13종 + 가사 구조(Refrain 4행, `[Hook]/[Final Hook]/[Drop]` 금지 메타태그). **서사 아크 6단 "자유"로 격하** (사용자 피드백 "서사 아크는 필수가 아냐"). **B/C/D 축별 EXCLUDE 특화 재설계** (각 13종, 공통 5종 `sung hook, drum fill, beat switch, double-time drums, halftime switch`): B K-Drill `+ amapiano, jersey club, trap 808 sustain` (hybrid drift 차단) / C Boom bap `+ auto-tune` (80s-90s chest voice 보존) / D Hard Trap `+ EDM drop, pitch-shifted vocals, glitch drums` (Rage drift 차단 최강화, `32nd triplet burst`/`vocal chop` 미포함 — D축 시그니처). **B/D Style Prompt 비트 고정 앞쪽 배치** (D축 `no beat switch no final lift` 최강) + **B/C/D chest voice 명시 강화** (Wavvy DNA). **Rewrite(씬에 침 뱉어) 4차+5차 재설계 수용**: 4차 V1-V6 → V1-V4 (V5/V6 삭제), Pre-Hook 제거, Refrain 4회 교대, Refrain 가사 고유화(뱉어/place/mistake/trace), V3/V4 완전 교체(가면 디스 / 반격·판 접기), V1/V2 부분 수정; 5차 EXCLUDE 수정 Rage v2 오적용 → B축 특화 13종 (사용자 "rage 전용 exclude는 내 실수"). **test-prompts.md §곡 1/2/3/4 동기화** — Style Prompt v2/v3 + EXCLUDE 축별 특화. **Verse 16 bar 표준 표기 반영** (사용자 "플랜+테스트 프롬프트 V1~V6 16마디 반영 안 됨"): concept.md §Style A "Verse 2택" → 16 bar 단일 표준 + Paycheck 완성 예외 / §Style B "V3-V6 NEW" → "V1-V4 64 bar" 정정 / test-prompts.md §곡 2 구조 bar 표기, §곡 3 `I-V1(16)-H(4-8)-V2(16)-H-V3(16)-O`, §곡 4 `I-V1(16)-PH(4)-H(8)-V2(16)-PH-H-O` + LYRICS 프롬프트 `Verse 16 bars each (4 lines × 4 blocks)` 추가. **Paycheck 미변경** (사용자 "paycheck은 신경쓰지 말고 이미 완성").
 Next-TODO: (1) Suno V5.5 4곡 재테스트 (§곡 1 Paycheck v3 / §곡 2 Rewrite 4차 / §곡 3 Come Up C v2 / §곡 4 Paranoia D v2). (2) 각 축 FAIL 패턴 관찰 → EXCLUDE v2 특화 조정 여부 판단. (3) 3+ PASS 시 20곡 확장. (4) A축 Paycheck 제외 3곡(Track 03/07/18) 신규 제작 시 Verse 16 bar 표준 적용. (5) 3번 제목(`Come Up` 올라와) / 4번 제목(`Paranoia` 편집) 사용자 확인.
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User (Rage Style v3 + Verse 16 bar 표준 + Paycheck/Rewrite Verse 6 확장 → Suno 재테스트 대기)
 Date: 2026-04-25 02:43
 Project: ~/Project/wavvy
@@ -1330,9 +1148,9 @@ Agent: Claude
 Summary: 20-00 AFTER HOURS 외부 분석(GPT-5 등 타 세션 Rage Trap 비트 스위치 트러블슈팅) 검토 후 균형점 도출. **Rage Style v3**: 비트 고정 앞쪽 배치 + `supersaw` 유지(rage 정체성) + `32nd triplet burst` `vocal chop` `mosh pit energy` `loud master` 삭제 + `dense ad-libs between rap lines` + `raw uncut rage energy` + `rolling 1/16 hi-hats steady`. **EXCLUDE v2 13종** rage 특화 (`EDM drop, vocal chop, vocal stutter, pitch-shifted vocals, beat switch, drum fill, double-time drums, halftime switch, breakbeat, glitch drums, riser, sung hook, 32nd triplet burst`). **Paycheck(불붙은 paycheck) Verse 6 확장**: 서사 아크 6단(허슬→의심→크루→반격→상승→선언), V3 V2 복붙 문제 폐기, Refrain 3번(V6 뒤 Outro 직행), 각 Verse 라임 교차, Style+EXCLUDE 섹션 추가. **Rewrite(씬에 침 뱉어) Verse 6 확장**: V1/V2 12→16행, V3-V6 NEW 16행, 구조 `V1→PH→R→V2→V3→R→V4→V5→PH→R→V6→Outro` (Pre-Hook 2번, Refrain 3번, [Hook]→[Refrain] 통일). **Verse 16 bar 표준 정립**: concept.md §LYRICS 원칙 5번 추가 + Style D Verse bar 표기 통일. **부분 미반영**(사용자 "일단 통과"): concept.md Style A Template + test-prompts.md 1번 Style/EXCLUDE v3/v2 보류, paycheck.txt만 반영 (파일 간 불일치 의도적).
 Next-TODO: (1) Suno V5.5 재테스트 — Paycheck(풀 가사 V1-V6) / Rewrite(풀 가사 V1-V6) Custom Mode. (2) 3+ PASS 시 concept.md Style A / test-prompts.md 전체 v3/v2 반영 재시도. (3) 3/4번 제목(Come Up/Paranoia) 사용자 확인 후 적용. (4) Rewrite 파일 Style+EXCLUDE 섹션 추가 여부 결정. (5) Suno 곡 길이 검증 — 6 Verse 16 bar 기준 3:30-5:00 목표.
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User (Suno 프롬프트 10단 방어막 구축 완료 → Suno V5.5 4곡 재테스트 대기)
 Date: 2026-04-25 01:48
 Project: ~/Project/wavvy
@@ -1340,9 +1158,9 @@ Agent: Claude
 Summary: 20-00 AFTER HOURS Suno V5.5 프롬프트 대대적 튜닝 — 가사·보컬·드럼·전자 드리프트 다층 차단. **Style Prompt**: 샘플링 키워드 4축(A `pitched-up vocal chop` / B `flipped soul sample` / C `chopped 70s-80s soul/ballad` / D `dark pitched vocal sample loop`, 샘플 소스 영어 무관) + Positive 공통 꼬리(`locked drum pattern throughout no fills no switch-up, hard rap only no singing, no arp synth no stutter loop, rapping in Korean`) + 보컬 rap 밀도(A/D `male vocal`→`male rap vocal`) + 악기 반복 키워드 제거(D `arpeggio`→`chord`, A `staccato loop`→`sustained stab`). **EXCLUDE 3→10종**: `[축별 장르], melodic singing, four-on-the-floor, drum fill, double-time switch, sung hook, arpeggiated synth, electronic riser, synth FX, EDM FX` (12-00 Afrobeats 9개 선례 근거 V5.5 안정). **가사 구조**: Bridge 금지(4축) + `[Chorus]`/`[Pre-Chorus]` → `[Hook]`/`[Pre-Hook]` + 약칭 `PH` 도입(20-00 전용) + BLOCK/INSOMNIA 약칭 `I-V1-H-V2-H-B-H-O` → `I-V1-PH-H-V2-PH-H-O`. **4곡 재설계**: 1 `Paycheck`(불붙은 paycheck·A Rage·Custom Mode 풀 가사) / 2 `Rewrite`(씬에 침 뱉어·B K-Drill·Custom Mode 풀 가사·사용자 샘플 프롬프트 PASS) / 3 `Come Up`(올라와·C Boom bap·작사 프롬프트) / 4 `Paranoia`(편집·D Hard Trap·작사 프롬프트). **산출물**: `SERIES/20-00/concept.md` + `test-prompts.md` + `input/tracks/` 가사 2건(Bridge 제거 + Pre-Hook/Hook 적용) + FAIL 대응표 5행 추가.
 Next-TODO: (1) Suno V5.5에서 4곡 재테스트 — 1/2 Custom Mode 풀 가사 입력 · 3/4 작사 프롬프트 자체 생성. (2) 각 곡 2-3회 생성 → 최선 선택 → 장르 충실도 · 보컬 톤 · BPM · 믹스 품질 체크. (3) 3+ PASS 시 20곡 확장 진행 / 3 미만이면 FAIL 패턴 식별 후 추가 튜닝. (4) 3/4번 제목(`Come Up`/`Paranoia`) 사용자 리뷰 — 교체 원하면 알림.
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User/다음 세션 Claude (Suno 가사 품질 FAIL + Claude 재작성 FAIL → 경로 3개 미결정, 다음 세션 이어감)
 Date: 2026-04-25 00:44 (3차 record — 세션 마감)
 Project: ~/Project/wavvy
@@ -1350,9 +1168,9 @@ Agent: Claude
 Summary: 20-00 AFTER HOURS Suno 1차 테스트 실제 생성 결과 **가사 품질 FAIL**. 사용자 공유 샘플(가칭 "불붙은 paycheck" 훅)은 Suno 영어 rap 데이터 드리프트 기본값 — 영어 50%+ 범벅 + 미국 믹스테입 B급 클리셰(I don't sleep / got receipts / make it stack / no second chance) + 20-00 시간 감성 전무 + 메타 가사 촌스러움("Korean to English, check that swag"). **Style Prompt의 `singing in Korean` 태그만으로는 가사 내용 드리프트 방지 불가** — Suno는 영어 rap 학습 비중 절대적이라 Custom Mode로 가사 주입 필요. Claude가 ESCAPE 가사 재작성 시도했으나 **역시 FAIL** — (1) 라임 밀도 0 (어미 반복 "뒤집어/뒤집어" 수준), (2) 서정시·미문체로 빠짐("엘리베이터 거울에 내가 두 명" 등 래퍼 1인칭 아님), (3) 힙합 구어체·펀치라인·swag 부재, (4) Wavvy 사물·공간 중심 룰 집착으로 힙합 본연의 구어 어투 훼손. Claude 한계 인정 — 한국 하드 힙합 가사는 Huckleberry P / Paloalto / Fleeky Bang / HAON / QM 급 라임 craft + 구어 리듬감 필요, AI 1발 생성 무리. **다음 세션 경로 3개 미결정**: (A) 사용자 리드 + Claude 라임/구조 어시스트 — 15-00 방식(사용자 직접 제작 14/20) 계승. (B) 실존 Korean hard rap 5-10곡 가사 분석 → 라임 패턴·어휘 풀·구어 리듬 추출 문서화 → Suno Custom Lyrics 인젝션 + Claude 작성 템플릿. (C) Suno 자동 cherry-pick 반복. **Claude 추천: B + A 조합**.
 Next-TODO: (1) 다음 세션 시작 시 경로 A/B/C 또는 조합 선택. (2) B 선택 시: KC BUST IT DOWN / HAON 꼴통 / Fleeky Bang MY NAME IS / Odyssey.1 금도끼 은도끼 / QM 개미 / Huckleberry P READMISSION 트랙 등 실존 가사 수집·분석. (3) A 선택 시: 사용자가 ESCAPE 1-2 bar 초안 제시 → Claude 보강. (4) 경로 확정 후 Suno 4곡 재테스트 → 3+ PASS 시 20곡 확장. 산출물 보존: `SERIES/20-00/concept.md` v0.1 + `test-prompts.md` (4곡 Style Prompt는 음악 프로덕션용으로 유효, LYRICS 샘플만 재작성 대상).
 Commits: (이번 record)
----
 
 ---
+
 HANDOFF: Claude -> User (Suno 1차 테스트 4곡 프롬프트 준비 완료, 사용자 생성 대기)
 Date: 2026-04-25 (2차 record)
 Project: ~/Project/wavvy
@@ -1360,9 +1178,9 @@ Agent: Claude
 Summary: 20-00 AFTER HOURS 시리즈 기획 Phase 3 (concept.md v0.1 + Suno 테스트 준비) 완료. **concept.md v0.1** (`SERIES/20-00/concept.md`) 스캘폴딩: Series DNA v0.1 + 힙합 가사 룰 예외 원칙 명시 + 4축 Style Templates(A Rage/B K-Drill/C Boom bap/D Hard Trap, 각 200자 Prompt + EXCLUDE 3) + Track Map v0.1 4막×20곡 스켈레톤(15-00 역추출 방식 계승, 개별 곡 TBD) + YouTube Metadata v0.1 + LYRICS 축별 가이드 + Suno V5.5 생성 규칙 + QA 체크리스트. **Suno 1차 테스트 프롬프트 4곡** (`SERIES/20-00/test-prompts.md`): (1) ESCAPE/Rage 150BPM 퇴근 점화 (2) BLOCK/K-Drill 140BPM 지역 프라이드 02 (3) CLOCK OUT/Boom bap 90BPM 퇴근 서사 (4) INSOMNIA/Hard Trap 142BPM 불면 내면. 각 곡: Style Prompt 200자 + EXCLUDE 3개 + LYRICS 샘플(메타태그 포함 ~190자) + 축별 체크포인트 + FAIL 시 튜닝 가이드. 종료 기준: 3개 이상 PASS 시 Style Template 확정 → 20곡 확장.
 Next-TODO: (1) 사용자 Suno V5.5에서 4곡 각 2-3회 생성 → 최선 1개씩 선택. (2) PASS/FAIL 피드백 → Style 튜닝 or 20곡 확장 결정. (3) 20곡 PASS 누적 후 DNA/배분/4막 구조 역추출 → Track Map v1.0 확정.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-25
 Project: ~/Project/wavvy
@@ -1370,9 +1188,9 @@ Agent: Claude
 Summary: 20-00 빡센 힙합 시리즈 기획 Phase 1(리서치) + Phase 2(/team) 완료. **Wavvy 첫 힙합 시리즈**. 4축 모델 확정(Rage·KC 레이블 / K-Drill·Fleeky Bang / 모던 하드코어 붐뱁·B-Free×Hukky Odyssey.1 / 하드코어 트랩 젊은 씬·Ash Island·ZENE·Loopy·EK·KWAII). 2차 딥리서치(10 parallel agents, 신뢰도 88%, 소스 180+, ~1,500줄 리포트) — 4축 × 악기·프로덕션·보컬·믹싱 전수 + 2026 글로벌 트렌드 + Korean 현지화 + Suno V5.5 최적화 프롬프트 20개 템플릿. /team Trade-off Discussion(Marketing·Product·Growth·Design + QA Reviewer) 5 안건 만장 합의: **시리즈명 `🌃 AFTER HOURS` / 부제 `밤 여덟시 하드 힙합`**, 하이브리드 포지셔닝(After Hours 프레임 × Dark City 미학), 20곡 배분 **4:5:7:4** (Rage/K-Drill/모던 하드코어 붐뱁/하드코어 트랩), 썸네일 블루아워 도시 실루엣+네온 악센트+Wavvy 로고 좌상단, Suno V5.5 1,000자 Style 필드(LYRICS 200자 QA 분리). 힙합 장르 가사 룰 예외 메모리 저장(`feedback-wavvy-genre-lyrics-rules.md`). 리서치 오류 6건 교정: AMADU=2019(NOISEMASTERMINSU 프로듀싱, Dingo X DAMOIM Part 2) / Deepflow `Legacy` 2024 미존재(2024 핵심 = Garion 3 Executive Producer) / Loopy The Cohort·AOMG 미소속(실제: MKIT RAIN 2016-22→AI0213→UNWANTED WRLD, MARNI 2024.04 = Rage 컨셉) / ZENE THE ZILLA(이상용 1991 춘천) ≠ 조광일 / KC=레이블(Sik-K·HAON·Vangdale·NOWIMYOUNG·JMIN) / 한국 Jersey Drill 전담 아티스트 미정립. 산출물: `SERIES/20-00/report/2026-04-24_hard-hiphop-4axis-musical-deep.md` + `meetings/2026-04-25_20-00-hard-hiphop-positioning.md`.
 Next-TODO: (1) concept.md v0.1 스캘폴딩 — DNA · 4축 Style 템플릿 · Track Map 20곡 · YouTube 메타 초안. (2) 썸네일 Midjourney 프롬프트 3안 — 블루아워 도시 + 네온 악센트 (After Hours 테마). (3) Suno 4축×1곡 1차 테스트 — 품질 확인 → 20곡 확장 가부 결정.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-20 00:18:00
 Project: ~/Project/wavvy
@@ -1380,9 +1198,9 @@ Agent: Claude (+ 사용자 loop.png/thumb 작업 + YouTube 업로드)
 Summary: 15-00 PACK + YouTube 업로드 완료. 썸네일 v1.0 `🕶️ AFTERNOON DRIVE` 확정(후보 비교: DRIVE 평범 / WEEKEND DRIVE v1.3 충돌 / GOING OUT 밤 뉘앙스 / NOON DRIVE noon=12시 의미 충돌 → AFTERNOON DRIVE = 시간대 명시 + 13-00 차별 + SEO). loop.png 4K 5504x3072 해안 도로 + 빨간 컨버터블(채도 조정 v2). **wavvy.py crop 버그 수정** — 이미지 16:9보다 넓은 케이스(target_h > img_h) width crop 분기 추가. 기존 코드는 height만 crop → 5504x3072(1.79:1) 케이스에서 height 늘리기(5504x3096) 시도 → FFmpeg `Invalid too big size` 에러. 13-00(1.75:1)은 height crop으로 작동했으나 미처리 분기 발견. **PACK COMPLETE** final.mkv 1.27GB / 101.2분 / 5460x3072 / 16곡 x2 / FLAC 48kHz / 로고 overlay (192,136). YouTube Metadata 타임스탬프 재계산(concept.md TBD 16곡 + 2회차 추가, acrossfade 0.8s). 마지막 트랙 1:38:18 + 175.72s = 1:41:14 정확 일치. 다른 시리즈 영문 텍스트 후보 결정(04 SLEEPLESS / 06 MORNING JOG / 11 LO-FI / 12 AFROBEATS / 14 SUNLIT DAZE / 18 WAY HOME 또는 GOLDEN HOUR / 21 CITY POP), 결정 framework 정리. 사용자가 PSD 직접 작업.
 Next-TODO: 다른 시리즈 PSD 마무리 → 영상 제작 → YouTube 업로드. 11-00 LO-FI vs LO-FI FOCUS 최종 결정. 18-00 WAY HOME vs GOLDEN HOUR 최종 결정.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-19 22:00:00
 Project: ~/Project/wavvy
@@ -1390,9 +1208,9 @@ Agent: Claude (+ 사용자 피드백)
 Summary: 15-00 WAV 16곡 리네임 + YouTube Metadata v1.3 확정. WAV: `NN__제목__영문__장르__BPM.wav` 컨벤션(22-00 선례) 적용, 원 파일명 "NN. 제목" → 신 넘버링 01-16 기반 재명명. 12번 체리소다봄길 파일이 원 "6."으로 잘못 들어왔던 것 수정. 제목은 v1.1 `오후 3시 드라이브` → v1.2 (사용자 레퍼런스 복붙 유사 폐기) → **v1.3 `🕶️ 바람 좋은 날의 드라이브`** 확정. 주말/평일 무관 범용 타겟팅으로 방향 전환(사용자 피드백 "주말 단어 빼고 창문·바람·드라이브 키워드로"). 주제 태그 `드라이브 · 바람 · 봄`, 이모지 🕶️ (드라이브 선글라스), 해시태그 `#바람좋은날 #창문열고달리는` 추가, `#주말드라이브` 제거. 설명/고정 댓글/상단 라벨 동기화.
 Next-TODO: **(다음 세션) 썸네일 작업** — Midjourney 프롬프트 3안 + 이미지 생성 + YouTube 업로드용 + loop.png(4K). 이후 validate → preview → pack(이미지 모드) → YouTube Metadata 타임스탬프 재계산 → 업로드.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-19 21:23:09
 Project: ~/Project/wavvy
@@ -1400,9 +1218,9 @@ Agent: Claude (+ 사용자 Suno PASS 확정본 16곡 · /team 회의)
 Summary: 15-00 시리즈 재설계 완료. Suno PASS 16곡 정보 입력 (함께/그레이투그린/오렌지/라디오/달려가는중/체리소다봄길/오늘드라이브/밝은공기냄새/같은재생목록/창문내려/잠깐도망가자/잔디에누워/기울어진햇살/곁에서/봄냄새/믹스테잎). **16곡 완결 결정**. Series DNA v1.0 역추출 — 라벨 `FUNKY R&B · URBAN NEO-SOUL | 오후 3시 · 드라이브 · 라디오`, BPM 120 중심, F11:M5:Duet0, Minor 2곡(5 달려가는중 Em / 11 곁에서 Am). Track Map v1.0 4막 구조 확정. 미정 Key 3곡 Db Major 임시 (⚠ Db 5곡 중복 플래그). 달려가는 중 Key 정정 (prompt E Major → 실제 E Minor). 체리소다봄길 가사 미세 변경(네온/파티/바람). 주제 규칙 완화(드라이브는 무드 기준). YouTube Metadata v1.1 작성. **/team 회의(Trade-off Discussion, Marketing+Product+Growth+QA PASS)** — 라디오 vs 드라이브 → 드라이브 메인 결정(콘텐츠 실체 8+곡 + 트래픽 볼륨 + 브랜드 직관성 3중 근거, 13-00과 Cannibalize 아닌 Bundle 효과). 제목 `오후 3시 드라이브`, 태그 `드라이브 · 오후 · 봄`, 썸네일 후보 2 "창문 내린 드라이브" 우선. 회의 기록 `meetings/2026-04-19_15-00-radio-vs-drive.md`.
 Next-TODO: WAV 정리 + 패키징(16곡 체제 타이트 러닝타임, acrossfade 0.8s 반영). 썸네일 Midjourney 프롬프트 3안 작성. 실제 패키징 후 YouTube Metadata 타임스탬프 재계산(report.json 기반). 13-00 YouTube Analytics로 드라이브 키워드 유입 검증(옵션). Db Major 5곡 중복 추후 조정.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-19 00:17:04
 Project: ~/Project/wavvy
@@ -1410,9 +1228,9 @@ Agent: Claude (+ 사용자 Suno PASS 확정본 11곡)
 Summary: 15-00 사용자 확정본 11곡 순차 반영 후 시리즈 리셋. 2026-04-18 세션에서 Track 01(Urban Neo-Soul F 120 D), 02(Modern R&B M 120 E, Key 표기 제거), 03(Neo-Soul F 110 Am + Exclude), 06(Doo-Wop+Urban Neo-Soul 하이브리드 F 120 E, Eb→E Key 변경), 07(Urban Neo-Soul F 120 E, Warm R&B 116 Am→120 E 재확정), 08(Neo-Soul M 112 Bb + Exclude), 09(Urban Neo-Soul F 120 E, Lo-fi Chill Hop M 112 F→F 120 E 재확정 + M→F 전환), 10(Lo-fi chill Texture + Bubbly Doowop F 122 C + Exclude, 라벨 "Pop"→"Texture"), 11(창문 너머→창문 내려, Funky Neo-Soul R&B 하이브리드 M 120 G, F→M 전환, 풀가사 신규), 12(백미러→잠깐 도망가자, Funky Contemporary R&B 하이브리드 F 120 G, C→B 축 이동, M→F, Em→G, 주제 회고→바다 탈출), 13(주파수→플레이리스트, Modern driving Neo-Soul Funky R&B F 114 Ab) 반영. 누적 분석 결과 원 기획 4축(Doowop/Funk/Neo-Soul/Modern) 균형 실제 구현 실패 → Funky Neo-Soul R&B 하이브리드 시리즈로 자연 재편됨. Minor 배치 4→2곡 축소(03/17), 보컬 F12:M6:Duet2, 배분 B 5→6/C 5→4곡. 2026-04-19 시리즈 리셋 결정: concept.md(~1000줄+) + input/tracks/ txt 17개 git rm, 빈 스켈레톤 재생성. 리서치 리포트 `report/2026-04-17_track06-dear-future-husband.md` + HANDOFF 2026-04-17 엔트리 2건 보존.
 Next-TODO: Suno PASS 곡 정보 누적 입력 재시작 (트랙별 제목/Style/가사 받으면 concept.md Track Details에 누적). 충분히 쌓이면 시리즈 DNA/배분/4막 구조 역추출 → Track 20까지 재설계. 시리즈 라벨 결정 (후보: "Korean Funky Neo-Soul R&B Drive").
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-17 23:49:49
 Project: ~/Project/wavvy
@@ -1420,9 +1238,9 @@ Agent: Claude
 Summary: 15-00 Track 06-10 확정 + 시리즈 스타일 전면 재조정. Track 06 "벚꽃 소다 봄길"(Bubbly Doowop Pop R&B 120 F Eb, Meghan Trainor "Dear Future Husband" 리서치 후 전면 교체, "한 바퀴 더" 대체), Track 07 "달려가는 중"(Warm R&B 116 F Am ★ 예외, "비상등" 대체), Track 08 풀 가사(Neo-Soul 유지), Track 09 "잔디에 누워" 재설계(Lo-fi Chill Hop 112 M F, 제목 "봄" 제거, BPM 사용자 92→112), Track 10 "믹스테잎"(Lo-fi chill Pop Doowop 122 F C, 제목 표기 변경). Track 01 Contemporary R&B Cruise 스타일 재설계(가사 유지), 02/03 제목 변경(라디오 온→라디오를 켜고, 조수석→곁에서). A/D축 Template 재정의(Track 06/02 앵커), "Retro" 라벨 전수 제거(08/16), 브라스/호른 미확정 6곡 제거(11/12/14/16/17/18). 배분 재집계: A 4곡 + ★ 예외 3곡(01/07/09) / B 5곡 / C 5곡 / D 3곡, 보컬 F11:M7:Duet2. 리서치 리포트 `report/2026-04-17_track06-dear-future-husband.md` (신뢰도 93%, 23 소스) 생성.
 Next-TODO: Track 11-20 Suno 테스트 순차 진행. 시리즈 전반 "질림" 이슈 해소 위해 variety 축(BPM/mood 대조 트랙) 추가 검토. 시리즈 정체성 "Korean Retro R&B Drive" 라벨 내 Retro 단어 잔존 — 사용자 결정 대기. 차기 시리즈 "Korean Hip-hop Drive" 기획 검토 가능.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-17 15:52:51
 Project: ~/Project/wavvy
@@ -1430,9 +1248,9 @@ Agent: Claude (+ 사용자 직접 제작 4곡)
 Summary: 15-00 "오후 3시, 라디오" 신규 시리즈 기획 v0.1~v0.2. Korean Retro R&B Drive 컨셉 (13-00과 씬 분리: 걷는 산책 vs 달리는 드라이브), 장르 4축 믹스 (A Doowop 25% / B Funk-R&B 30% / C Neo-Soul 25% / D Modern K-R&B 20%), 보컬 F10:M8:Duet2 (5:5), BPM 108-126. 사용자 제작 4곡 (Track 01 오렌지 드라이브 Doowop F / 04 오늘 드라이브 Funk-R&B M Eb Major / 05 봄 냄새 Neo-Soul F D Major / 09 봄 잔디에 누워 K-R&B M) 포함 20트랙 Track Map 확정. 신규 16곡 Style + Lyrics Prompt 설계 (약칭 I-V1-PC-C-... 구조 + 영문 키워드 + English hook + "길 위" POV 전곡 검증). Lyrics 200자 QA 통과 (최대 196자). concept.md v0.2 (727줄) + input/tracks/ txt 16개 생성.
 Next-TODO: 16곡 Suno 테스트 착수 (Track 02부터 순차 or 장르별 묶음). 사용자 제작 4곡 wav 파일 input/tracks/ 정리 대기. 전곡 PASS 후 YouTube Metadata / Genre Gate / 레퍼런스 보강.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-13 14:50:00
 Project: ~/Project/wavvy
@@ -1440,9 +1258,9 @@ Agent: Claude (+ 사용자 직접 제작 Track 01)
 Summary: 13-00 v0.5.1 재패키지 + YouTube 재업로드. Track 01 "첫 바람 (First Breeze)" → "봄이 번져 (Spring Bleeds)" 교체 (Urban Neo-Soul, 110 BPM, E Major, Female, 사용자 직접 제작). 3-way 트랙 재배열: (02 새싹, 03 햇살, 11 봄 향기, 12 약속, 13 피크닉) → (02 봄 향기, 03 약속, 11 피크닉, 12 햇살, 13 새싹). concept.md Track Map / 배분 규칙 / Series DNA / Track 01 Details / YouTube Tracklist 실제 타임스탬프(report.json 기반 1회차 누적 + acrossfade 0.8s 반영) 재계산. wavvy.py image mode 버그 수정 (ProjectPaths.__init__ 안에서 self.logo/merged_wav/final_mkv 등 할당이 is_image_mode @property 뒤 dead code로 잘못 위치 → AttributeError) + 로고 scale `iw/2:ih/2` → `iw:ih` (50% → 100%, 4K 기준 572x312 원본 크기). PACK v0.5.1 COMPLETE — final.mkv 1.4GB, 135.6분, 4096x2304 static image mode, 로고 100%. loop.png 사용자 신규 4K 이미지 교체. 세트 A wav 20개 git rm (로컬 세트 B를 SSOT로). output/final.mkv 로컬 정리.
 Next-TODO: 없음 (13-00 v0.5.1 완료)
 Commits: f3d7e93 (wavvy.py image mode fix) / c02636d (13-00 v0.5.1 재패키지)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-13 02:36:38
 Project: ~/Project/wavvy
@@ -1450,9 +1268,9 @@ Agent: Claude
 Summary: 13-00 시리즈 완료 (YouTube 업로드). WAV 20곡 리네이밍, YouTube 메타 작성(FEEL GOOD R&B · URBAN NEO-SOUL, 봄플리·산책·드라이브), 이미지 기반 영상 제작(loop.png 4K → final.mkv 1.3GB/135.4분), 업로드 완료. 부가로 wavvy.py에 이미지 모드 지원 추가 (loop.png/jpg 자동 감지 시 vfade 스킵, `-loop 1 -tune stillimage -r 1` 최적화 렌더).
 Next-TODO: K_LIGHTPOP_RUBRIC.md v0.5 정합성 재검토 / brand/logo_wavvy.psd 삭제 의도 확인
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-12 23:46:46
 Project: ~/Project/wavvy
@@ -1460,9 +1278,9 @@ Agent: 혼합 (사용자 직접 제작 14곡 + Claude 구조 반영)
 Summary: 13-00 v0.5 전면 업데이트. 20트랙 전곡 PASS. 사용자 커스텀 14곡 (Neo-Soul/Funk/Urban Soul). concept.md에 Track Details 20곡 통합, txt 삭제.
 Next-TODO: WAV 리네이밍 + 루프영상 + 썸네일 + 패키징
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-12 11:05:14
 Project: ~/Project/wavvy
@@ -1470,9 +1288,9 @@ Agent: 혼합 (사용자 직접 제작 + Claude 구조 반영)
 Summary: 13-00 Track 11-12 사용자 직접 제작 삽입, 기존 11-19→13-21 리넘버링, Track 07/08 스타일 교체. 21트랙 체제 전환.
 Next-TODO: Track 13-21 사용자 추가 변경 반영 + Suno 테스트
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> User
 Date: 2026-04-12 00:05:00
 Project: ~/Project/wavvy
@@ -1480,8 +1298,9 @@ Agent: Claude
 Summary: 13-00 v0.3→v0.4 Silky R&B 전환 (3단 진화: v0.2.1 Korean Light Pop R&B → v0.3 Korean Bright Pop R&B 단일 라벨 → v0.4 Silky midtempo Korean R&B Male/Female 2종 템플릿). Suno auto-gen 2샘플 분석으로 R&B DNA 확정 (Rhodes + soft EP + round bass + rim shots + airy harmonies + intimate close-mic). Female stacked vocals 허용 (기존 No stacked harmonies 룰 폐지). Track 08 "고백" drop → **19곡 시리즈**, 기존 09-20 파일 → 08-19 리넘버링, _excluded/ 폴더도 삭제. Track 01(legacy Korean Light R&B)/02/03/04/05/06/07/08/09/10 풀 가사 저장 + Suno PASS **10/19**. Track 09 손끝 Key B Minor → B Major 변경 (Minor 배치 3곡으로 축소, 05 F#m/10 Em/14 Dm). Track 10 그네 Male+Female Duet 커스텀 스타일 (trading lines + thirds/fifths 화음).
 Next-TODO: 내일 Track 11-19 (피크닉/무지개/벚꽃/봄비/눈부심/약속/노을/만개/우리의 봄) Suno 테스트 이어서. 전부 PASS 시 루브릭 K_LIGHTPOP_RUBRIC.md v0.4 정합성 재검토 (Korean Pop R&B 기준 업데이트) + 루프 영상/썸네일 컨셉 착수.
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Claude -> User
 Date: 2026-04-04 17:08
 Project: ~/Project/wavvy
@@ -1489,8 +1308,9 @@ Agent: 혼합
 Summary: 13-00 트랙 txt 20곡 생성 + Lyrics 약칭 포맷 + English hook 추가 + Track 01 Suno PASS + Track 02 Male Duet 전환
 Next-TODO: Style B/C Suno 테스트 계속
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Claude -> User
 Date: 2026-04-04 15:40
 Project: ~/Project/wavvy
@@ -1498,8 +1318,9 @@ Agent: Claude
 Summary: 13-00 벚꽃 산책 시리즈 신규 생성 — concept v0.1 + INDIE_POP_RUBRIC v1.0 + 장르 리서치 2건 + Track Map 20곡 (루브릭 검증 완료)
 Next-TODO: Suno 테스트 (Style A 1곡 먼저) → 프롬프트 튜닝
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Claude -> User
 Date: 2026-04-04 01:11
 Project: ~/Project/wavvy
@@ -1507,20 +1328,20 @@ Agent: Claude
 Summary: 22-00 YouTube 제목 변경 (태그 세분화) + 업로드 완료 반영
 Next-TODO: brand/logo_wavvy.psd 삭제 의도 확인
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Claude -> Codex (peer review)
 Date: 2026-04-28 14:57:35
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Claude via peer-agent-review
-Summary: codex peer review completed. Verdict: FAIL. Focus: 20-00 시리즈 `💪 AFTER HOURS WORKOUT` (Korean Hard Hip-Hop · Workout · Night Grind) 추가 7곡(14-20) draft 작성 + 5곡 컨셉 교체 작업에 대한 peer review. ## 컨텍스트 - 시리즈 정체성: Korean Workout Hip-Hop 빈자리 채우기. 20곡 최종 (Hard 70%, A 3 / B 4 / C 5 / D 3 / E 2 / F 3, 남성 
+Summary: codex peer review completed. Verdict: FAIL. Focus: 20-00 시리즈 `💪 AFTER HOURS WORKOUT` (Korean Hard Hip-Hop · Workout · Night Grind) 추가 7곡(14-20) draft 작성 + 5곡 컨셉 교체 작업에 대한 peer review. ## 컨텍스트 - 시리즈 정체성: Korean Workout Hip-Hop 빈자리 채우기. 20곡 최종 (Hard 70%, A 3 / B 4 / C 5 / D 3 / E 2 / F 3, 남성
 Next-TODO: Review result file and address FAIL/NEEDS_USER_DECISION items before completion.
 Review-Result: /Users/zenkim_office/Project/wavvy/.ai/peer-review/runs/20260428-145415-codex-review-98088.md
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-04-29 23:47:56
 Project: /Users/zen/Project/wavvy
@@ -1528,9 +1349,9 @@ Agent: Codex
 Summary: 20-00 힙합 시리즈 트랙 프롬프트를 사용자 제공 본문 기준으로 정리. Black Mirror, Bottom Line, Old Cassette, Engine, Concrete, Real Talk를 반영하고 03-16 트랙 txt 파일명 넘버링을 제거함.
 Next-TODO: 17_Late Lane / 18_Side Street / 19_Slow Glow / 20_Old Page는 제외 상태 유지. 필요 시 남은 트랙도 사용자 최종 본문 기준으로 개별 정리.
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Claude (peer review)
 Date: 2026-05-02 00:29:11
 Project: /Users/zen/Project/wavvy
@@ -1539,9 +1360,9 @@ Summary: claude peer review completed. Verdict: NEEDS_USER_DECISION. Focus: Revi
 Next-TODO: Review result file and address FAIL/NEEDS_USER_DECISION items before completion.
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-002626-claude-review-40431.md
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-04 20:31:48 +0900
 Project: /Users/zen/Project/wavvy
@@ -1549,9 +1370,9 @@ Agent: Codex
 Summary: Session record after Wavvy SSOT/harness hardening and legacy markdown pruning. Work commit `0d78e41 docs: harden wavvy ssot and prune legacy docs` was pushed to `origin/master`; local and upstream are in sync.
 Next-TODO: 없음.
 Commits: 0d78e41; this record commit
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-04 18:31:09 +0900
 Project: /Users/zen/Project/wavvy
@@ -1559,9 +1380,9 @@ Agent: Codex
 Summary: `-team` 기준으로 legacy/superseded markdown pruning을 수행했다. 최신 SSOT/하네스 운영에 쓰이지 않는 draft plan 2개, 과거 `vibem`/`final.mp4` 중심 회고·리네임 기록 3개를 삭제하고, 삭제 기준을 `meetings/2026-05-04_legacy-doc-pruning.md`에 기록했다. `.ai/peer-review/*`, `.ai/pipeline/*`, HANDOFF/SESSION, MASTER SSOT 문서, active series concept/research는 보존했다. 검증은 `py_compile`, `unittest`, `doctor`, `validate`, `state --check`, `gate upload-ready/uploaded`, `git diff --check` PASS.
 Next-TODO: 커밋/푸시.
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> Claude (peer plan)
 Date: 2026-05-02 00:36:07
 Project: /Users/zen/Project/wavvy
@@ -1570,9 +1391,9 @@ Summary: claude peer plan completed. Verdict: unknown. Focus: Review this implem
 Next-TODO: Review result file and address FAIL/NEEDS_USER_DECISION items before completion.
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-003357-claude-plan-57722.md
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-02 00:57:00
 Project: /Users/zen/Project/wavvy
@@ -1581,9 +1402,9 @@ Summary: Wavvy harness engineering flow completed and corrected for 20-00 upload
 Next-TODO: No active 20-00 upload blocker. If re-upload/audit is needed, regenerate local video artifacts with `python3 wavvy.py pack SERIES/20-00 -y`. If URL should be tracked, add it to `SERIES/20-00/concept.md` Upload Status.
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-004637-claude-review-91756.md
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-02 01:29:00
 Project: /Users/zen/Project/wavvy
@@ -1592,9 +1413,9 @@ Summary: Agent instruction minimalism refactor completed. Added `AGENTS.md` as c
 Next-TODO: None for this refactor. Continue using `AGENTS.md` as canonical router and `MASTER/ai/RUNTIME_RULES.md` for runtime safety/media rules.
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-012932-claude-review-93881.md
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-02 03:15:00
 Project: /Users/zen/Project/wavvy
@@ -1604,9 +1425,9 @@ Next-TODO: 없음. 커밋/푸시는 사용자 명시 요청 전까지 보류. �
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-030039-claude-review-54952.md; /Users/zen/Project/wavvy/.ai/peer-review/runs/20260502-030342-claude-plan-62270.md
 Play-Run: /Users/zen/Project/wavvy/.ai/pipeline/runs/20260502-025736_ssot-harness-audit
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> Claude (peer review)
 Date: 2026-05-07 21:38:45
 Project: /Users/zen/Project/wavvy
@@ -1616,9 +1437,9 @@ Next-TODO: 없음. Packaging assets are still pending separately: `SERIES/RNB-BE
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260507-213930-claude-review-60530.md
 ReReview-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260507-214414-claude-review-direct.md
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-08 01:45:20 +0900
 Project: /Users/zen/Project/wavvy
@@ -1627,9 +1448,9 @@ Summary: RNB-BEST compilation series prepared from existing Wavvy R&B/R&B-adjace
 Next-TODO: If an upload-ready video is needed again, regenerate with `python3 wavvy.py pack SERIES/RNB-BEST -y` or use an external retained video copy. Current tracked record should preserve `concept.md`, `input/thumb.jpg`, and `.ai` meeting/review/pipeline artifacts.
 Review-Result: /Users/zen/Project/wavvy/.ai/peer-review/runs/20260507-222711-claude-review-66991.md
 Commits: (이번 record commit)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-22 00:52:48 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1641,9 +1462,9 @@ Auto-Handoff-Snapshot: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 13%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-27 17:28:20 +0900
 Project: /Users/zen/Project/wavvy
@@ -1651,9 +1472,9 @@ Agent: Codex
 Summary: Updated stale claude-center references to agent-center in Wavvy harness engineering notes.
 Next-TODO: 없음
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex worker-04 -> Orchestrator
 Date: 2026-05-22 10:43:56 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1662,9 +1483,9 @@ Summary: Wavvy lyricist skill release documentation completed after worker-01 re
 Next-TODO: Controller should run/collect final peer review if required, then record/commit the combined worker output. Known non-blocker remains: 17-00 source-final/state gates fail because the series is still draft-level evidence.
 Play-Run: /Users/zenkim_office/Project/wavvy/.ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness
 Commits: pending
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-22 11:13:34 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1676,9 +1497,9 @@ Auto-Handoff-Snapshot: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 24%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-22 14:18:42 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1690,9 +1511,9 @@ Auto-Handoff-Snapshot: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 23%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-05-22 14:22:23 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1703,9 +1524,9 @@ Verification: `test -f .claude/commands/write.md`; `rg --files -uu | rg '(^|/)co
 Review-Result: /Users/zenkim_office/Project/wavvy/.ai/peer-review/runs/20260522-134926-claude-review-42185.md
 Play-Run: /Users/zenkim_office/Project/wavvy/.ai/pipeline/runs/20260522-132827_wavvy-write-command-shim-impl
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-22 14:22:01 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1717,9 +1538,9 @@ Auto-Handoff-Snapshot: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 21%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 18:48:05 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1732,9 +1553,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 14%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 19:56:14 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1747,9 +1568,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 18%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 19:57:13 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1762,9 +1583,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 17%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 19:58:06 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1777,9 +1598,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 12%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 21:08:13 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1792,9 +1613,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 22%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 21:09:04 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1807,9 +1628,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 17%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 21:09:50 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1822,9 +1643,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 12%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-23 21:10:36 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1837,9 +1658,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 7%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 13:35:13 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1852,9 +1673,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 22%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 13:37:26 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1867,9 +1688,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 20%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 13:42:38 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1882,9 +1703,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 18%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 15:28:51 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1897,9 +1718,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 16%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 17:09:31 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1912,9 +1733,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 18%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-05-24 17:15:16 +0900
 Project: /Users/zenkim_office/Project/wavvy
@@ -1927,9 +1748,9 @@ Pending-User-Requests: /Users/zenkim_office/Project/wavvy/.ai/auto-handoff/20260
 Context-Remaining: 16%
 Clear-Required: /Users/zenkim_office/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-02 19:52:16 +0900
 Project: /Users/zen/Project/wavvy
@@ -1953,9 +1774,9 @@ Pending-User-Requests: /Users/zen/Project/wavvy/.ai/auto-handoff/20260602-195216
 Context-Remaining: 18%
 Clear-Required: /Users/zen/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-03 15:22:17 +0900
 Project: /Users/zen/Project/wavvy
@@ -1964,9 +1785,9 @@ Summary: Completed a read-only policy/document/harness audit followed by user-ap
 Next-TODO: Run verification: `bash -n MASTER/scripts/check_series_gate.sh MASTER/scripts/check_lyric_avoid.sh`, `python3 -m py_compile wavvy.py wavvy_harness/*.py`, `python3 -m unittest tests/test_harness.py`, `python3 wavvy.py doctor --json`, `python3 wavvy.py state SERIES/20-00 --check --json`, `python3 wavvy.py gate SERIES/20-00 --stage uploaded --json`, `git diff --check`, and `git status --short --branch`. No deletion/archive was performed; do not delete `meetings/`, `report/`, or referenced `.ai/pipeline/runs` artifacts without a new manifest.
 Resume-Trigger: -wavvy
 Commits: not committed; Wavvy runtime says do not commit/push unless explicitly requested.
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-02 19:57:30 +0900
 Project: /Users/zen/Project/wavvy
@@ -1990,9 +1811,9 @@ Pending-User-Requests: /Users/zen/Project/wavvy/.ai/auto-handoff/20260602-195730
 Context-Remaining: 18%
 Clear-Required: /Users/zen/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-02 21:36:58 +0900
 Project: /Users/zen/Project/wavvy
@@ -2018,9 +1839,9 @@ Pending-User-Requests: /Users/zen/Project/wavvy/.ai/auto-handoff/20260602-213658
 Context-Remaining: 16%
 Clear-Required: /Users/zen/.codex/auto-handoff/clear-required.json
 Commits: auto-record attempted after this entry; check git log and result.json
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-03 15:34:00 +0900
 Project: /Users/zen/Project/wavvy
@@ -2029,9 +1850,9 @@ Summary: Addressed reviewer concern that the 20-00 legacy series gate mutation c
 Next-TODO: No code/test blocker. Verification passed: bash syntax, py_compile, unit tests, doctor/state/gate, legacy fixture check, and `git diff --check`. Uploaded gate warnings remain non-blocking: local `final.mkv`/`upload.csv` deleted after upload and `rubric_unverified_after_finalize`. Do not commit/push unless explicitly requested.
 Resume-Trigger: -wavvy
 Commits: not committed; Wavvy runtime says do not commit/push unless explicitly requested.
----
 
 ---
+
 HANDOFF: Codex -> Codex
 Date: 2026-06-03 16:05:30 +0900
 Project: /Users/zen/Project/wavvy
@@ -2040,9 +1861,9 @@ Summary: Recording completed Wavvy policy audit/safe mutation work. Includes 20-
 Next-TODO: 없음
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-09-30 20:30:47 +0900
 Project: ~/Project/wavvy
@@ -2052,8 +1873,9 @@ Verification: unittest 20 PASS(`/tmp/wavvy-lyric-unittest.log`), py_compile PASS
 Next-TODO: 없음 — 이번 요청 범위의 구현·검토·기록 완료.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> User
 Date: 2026-10-01 09:00:15 +0900
 Project: ~/Project/wavvy
@@ -2063,9 +1885,9 @@ Verification: full-song artifact·lyrics-review·track-prompt·doctor·state che
 Next-TODO: 젠의 05 가사/STYLE 검토. 생성 뒤 실제 Intro·길이·보컬·BPM·조성을 확인한다. 05를 Final Track Sources로 승격하지 않는다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2075,9 +1897,9 @@ Verification: 36 tests, py_compile, skill validation, 03/05 full-song gate, diff
 Next-TODO: 다음 신규 곡 작성 때 새 완곡 계약을 적용하고 생성 음원에서 실제 호흡·길이·도입부를 확인한다. 05는 사용자 승인 원본이지만 Final Track Sources나 실제 음원 기술값은 확정하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2087,9 +1909,9 @@ Verification: package/full-song artifact/lyrics-review/track-prompt PASS(`/tmp/w
 Next-TODO: 젠의 06 가사·STYLE 검토. 생성 음원이 생기면 실제 결과를 듣고 측정한다. 06을 Final Track Sources로 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> User
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2099,8 +1921,9 @@ Verification: 승인 버전 track-prompt와 full-song lyric gate PASS. 125 BPM·
 Next-TODO: 생성 음원이 생기면 실제 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 06을 Final Track Sources로 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2110,8 +1933,9 @@ Verification: 제공 원문 대조·source parser·state check·diffcheck 수행
 Next-TODO: 젠과 08–20을 제작한다. 07 음원이 제공되면 실제 기술값을 확인한다. Final Track Sources는 아직 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2121,8 +1945,9 @@ Verification: full-song·lyrics-review·track-prompt·state check·doctor·diffc
 Next-TODO: 젠의 08 가사·STYLE 검토. 생성 음원이 제공되면 실제 Intro·길이·보컬 배정·화음·BPM·조성을 확인한다. 09–20은 젠과 새로 제작한다. Final Track Sources는 아직 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2132,8 +1957,9 @@ Verification: 승인 전후 STYLE·EXCLUDE·LYRICS 해시 동일 및 git diff --
 Next-TODO: 08 음원이 제공되면 Intro·길이·보컬 배정·화음·BPM·조성을 확인한다. 09–20은 젠과 새로 제작한다. 08 Final Track Sources 승격은 아직 하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2143,8 +1969,9 @@ Verification: full-song·lyrics-review·track-prompt·doctor·state check·diffc
 Next-TODO: 젠이 09 가사·STYLE·EXCLUDE 문구를 검토한다. 생성 음원이 제공되면 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 10–20은 젠과 새로 제작한다. Final Track Sources는 아직 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
+
 ---
----
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2154,9 +1981,9 @@ Verification: 승인 전후 STYLE·EXCLUDE·LYRICS 해시 동일 및 git diff --
 Next-TODO: 09 음원이 제공되면 Intro·길이·보컬·BPM·조성·가창 호흡을 확인한다. 10–20은 젠과 새로 제작한다. 09 Final Track Sources 승격은 아직 하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2166,9 +1993,9 @@ Verification: full-song·lyrics-review·track-prompt·doctor·state writer PASS(
 Next-TODO: 젠이 10 가사·STYLE·EXCLUDE와 제목/여성·조성·템포 제안값을 검토한다. 생성 음원이 제공되면 실제 길이·보컬·BPM·조성을 확인한다. 11–20은 젠과 새로 제작한다. Final Track Sources는 아직 승격하지 않았다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2178,9 +2005,9 @@ Verification: STYLE 829/900자·EXCLUDE 7/8개, 가사 SHA-256 `f7fc1fde8be7a4d4
 Next-TODO: 젠이 Track 10 가사·STYLE·EXCLUDE와 제목·제안 음악값을 검토한다. 음원이 생기면 실제 결과를 확인한다. 11–20은 젠과 새로 제작한다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-01
 Project: ~/Project/wavvy
@@ -2190,9 +2017,9 @@ Verification: 가사 SHA-256 `f7fc1fde8be7a4d4c5215c5de397c67f95c5782153b1cf885b
 Next-TODO: 젠의 Track 10 전체 초안 검토와 생성 음원 확인이 남는다. Final Track Sources는 승격하지 않는다.
 Resume-Trigger: -wavvy
 Commits: (이번 커밋)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2202,9 +2029,9 @@ Verification: 가사 SHA-256 `9ddc12222783ba2569a71592e8d317caafb4e80c636c9ddc16
 Next-TODO: 생성 음원이 제공되면 실제 결과를 확인한다. 11–20은 젠의 새 시작 요청 때 제작한다. Track 10의 가사·STYLE 사용자 검토는 완료됐다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2214,9 +2041,9 @@ Verification: 사용자 제공 가사 42행과 18-00 원곡 가창행 일치, so
 Next-TODO: 11번 생성 음원이 제공되면 실제 결과를 확인한다. 다음 신규곡 12–20은 젠의 새 시작 요청 때 제작한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2226,9 +2053,9 @@ Verification: 02 STYLE와의 대조에서 `at 124 BPM in G Major` 삽입 외 문
 Next-TODO: 젠이 12번 제목·STYLE 제안값·전체 가사를 검토해 PASS 또는 수정 방향을 준다. PASS 후 concept에 현행화한다. 13–20번은 이후 순서대로 새 가사를 제작한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2238,9 +2065,9 @@ Verification: 승인 전후 STYLE SHA-256 `9cc6925522654e6c5a024ca0ad0a7675716ec
 Next-TODO: 12번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 13–20번에는 기존 리믹스 STYLE의 사운드를 바탕으로 새 가사를 쓰되, 각 곡은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2250,9 +2077,9 @@ Verification: STYLE 483/900자·EXCLUDE 0/8개·LYRICS SHA-256 `0684da9269adebf7
 Next-TODO: 젠이 13번 전체 가사·STYLE·제안값을 검토해 PASS 또는 수정 방향을 준다. PASS 후 `SERIES/17-00/concept.md`에 13번을 추가한다. 14–20번은 젠의 다음 시작 요청에서 순서대로 만든다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2262,9 +2089,9 @@ Verification: 승인 전후 STYLE SHA-256 `96307eaeabcdbb62444452894400ffc9f3cc5
 Next-TODO: 13번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 14–20번은 기존 리믹스 STYLE의 사운드를 바탕으로 새 가사를 쓰되, 각 곡은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2274,9 +2101,9 @@ Verification: STYLE 376자·SHA-256 `3c9442d0be4f8f6f030adf418cec3c69dbc30c30000
 Next-TODO: 14번 생성 음원이 제공되면 실제 길이·템포·조성·보컬·편곡을 확인한다. 15–20번은 젠의 다음 시작 요청에서 기존 리믹스 STYLE 사운드와 새 가사로 제작한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2286,9 +2113,9 @@ Verification: STYLE 885/900자, LYRICS SHA-256 `f0eda7092d6f95039249571b8d352818
 Next-TODO: 젠의 Track 15 전체 가사·STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2298,9 +2125,9 @@ Verification: STYLE 885/900자, 현재 LYRICS SHA-256 `180c8da91988a7451034a78f3
 Next-TODO: 젠의 Track 15 새 제목·전체 가사·STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2310,9 +2137,9 @@ Verification: STYLE 881/900자·SHA-256 `a40f41720e18d8b1c2621f040a80412eeee6a46
 Next-TODO: 젠의 Track 15 제목·전체 가사·나머지 STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2322,9 +2149,9 @@ Verification: STYLE 880/900자·SHA-256 `bc3766eb63f52f94a2b57b44f27316a97eb0527
 Next-TODO: 젠의 Track 15 제목·전체 가사·나머지 STYLE PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록을 현행화한다. Track 16은 젠의 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2334,9 +2161,9 @@ Verification: 15번 승인 후 full-song·lyrics-review·track-prompt·state che
 Next-TODO: 젠의 Track 16 제목·전체 가사·STYLE 및 112 BPM/Bb Major/남성 보컬 제안에 대한 PASS 또는 수정 의견을 반영한다. PASS 후 concept 승인 목록에 16번을 추가한다. Track 17은 다음 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2346,9 +2173,9 @@ Verification: 이름을 바꾼 파일로 full-song·lyrics-review·track-prompt�
 Next-TODO: 젠이 Track 16 「매듭」의 가사·STYLE 및 제안 템포·조성·보컬을 검토해 PASS 또는 수정 의견을 준다. PASS 후 concept 승인 목록에 Track 16을 추가한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2358,9 +2185,9 @@ Verification: STYLE 629/900자·SHA-256 `c4fe6444ab1c76cb4e711821fd3a41b78d5d062
 Next-TODO: Track 17–20은 젠의 다음 시작 요청에서 순서대로 작성한다. 16번 생성 음원이 제공되면 실제 길이·보컬·템포·조성·편곡을 확인한다. Final Track Sources 승격은 별도 절차에서 판단한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(프로젝트 런타임 규칙에 따라 명시 요청 전 commit/push 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2370,9 +2197,9 @@ Verification: Track 17 STYLE 650자·빈 EXCLUDE·가창 가사는 14:00 원곡�
 Next-TODO: 젠이 Track 18 「파장」의 제목·전체 가사·STYLE 및 제안 템포·조성·보컬을 보고 PASS 또는 수정 의견을 준다. PASS 뒤에만 concept 승인 목록에 18번을 추가한다. Track 19–20은 젠의 새 시작 요청에서 제작한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2382,9 +2209,9 @@ Verification: 현행 STYLE 678자·가사 SHA-256 `ae90881c8b66e23bffd06e4e20d3a
 Next-TODO: 젠이 Track 18 「흔들린 사진」의 제목·전체 가사·STYLE과 제안 템포·조성·보컬에 PASS 또는 수정 의견을 준다. PASS 후에만 concept 승인 목록에 18번을 추가한다. Track 19는 젠의 별도 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2394,9 +2221,9 @@ Verification: STYLE 680자·SHA-256 `ea63a3c548c0987cbdc6efc91400566ed7ada84363e
 Next-TODO: 젠이 Track 18의 제목·전체 가사·나머지 STYLE 및 제안 템포·조성에 PASS 또는 수정 의견을 준다. PASS 후에만 concept 승인 목록에 Track 18을 추가한다. Track 19는 젠의 별도 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2406,9 +2233,9 @@ Verification: STYLE SHA-256 `ea63a3c548c0987cbdc6efc91400566ed7ada84363efbc48f62
 Next-TODO: 18번 생성 음원이 제공되면 실제 보컬·길이·템포·조성을 확인한다. Track 19는 젠의 별도 시작 요청에서 진행한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2418,9 +2245,9 @@ Verification: 가사 SHA-256 `8fe490db25285389172ac93358f08a52f84d88177739a13eba
 Next-TODO: 젠이 19번 제목·전체 가사에 PASS 또는 수정 의견을 준다. PASS 후에만 concept 승인 목록에 추가한다. 실제 음원 길이·보컬·BPM·조성은 음원이 생기면 확인한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2430,9 +2257,9 @@ Verification: 가사 SHA-256 `8fe490db25285389172ac93358f08a52f84d88177739a13eba
 Next-TODO: 젠이 19번 전체 가사에 PASS 또는 수정 의견을 준다. PASS 후에만 concept 승인 목록에 추가한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2442,9 +2269,9 @@ Verification: 19번 STYLE SHA-256 `d3b7e2e2f1d8820b5585e8c7e9a92027d56e407eca4d8
 Next-TODO: 젠이 20번 「여섯 층」의 제목·전체 가사·02번 STYLE 선택·남성 단독 리드에 PASS하거나 수정 의견을 준다. PASS 후에만 concept 승인 목록에 20번을 추가한다. 음원 길이·BPM·조성·보컬은 실제 음원이 생기면 확인한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2454,9 +2281,9 @@ Verification: STYLE SHA-256 `5e9be4609da6e5b8ce27201a6ad1f07d6b36b6de253d166d7df
 Next-TODO: 젠이 「오랜만이야」 제목·전체 가사를 검토해 PASS 또는 수정 의견을 준다. PASS 후에만 concept 승인 표에 20번을 추가한다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2466,9 +2293,9 @@ Verification: 12·20 full-song/lyrics-review, 12 track-prompt, state check, diff
 Next-TODO: 확정된 17:00 source 20곡은 현재 초안 단계다. 젠이 음원을 제공하거나 다음 작업을 지정하면 그때 해당 단계로 진행한다. 12번 제목 변경과 20번 PASS에 대한 추가 사용자 결정은 없다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2478,9 +2305,9 @@ Verification: 12·20 가사 검토와 12 track-prompt, state check, diff check P
 Next-TODO: 젠이 08·09 새 STYLE과 가사를 제공하면 해당 곡을 교체하고 검토한다. 나머지 현재 승인 소스는 이 사용자 계획만으로 수정하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-02
 Project: ~/Project/wavvy
@@ -2490,9 +2317,9 @@ Verification: 08·09 review-only PASS, harness 38 tests·py_compile·state check
 Next-TODO: 현재 소스는 08·09 사용자 제공 원문이다. 생성 음원 확인이나 다음 제작 작업은 젠의 후속 요청과 자료가 있을 때 진행한다. 예전 08/09 PASS 버전과 09의 122 BPM/D Major는 이력이다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
 ---
+
 HANDOFF: Codex -> 젠
 Date: 2026-10-03
 Project: ~/Project/wavvy
@@ -2502,80 +2329,7 @@ Verification: 02–07 모두 선택 ID 일치, 48 kHz·16-bit PCM·stereo WAV, D
 Next-TODO: 추가 다운로드가 가능해지면 08–20 및 필요한 경우 01 WAV를 수집하고, 전곡 파일을 확인해 Final Track Sources 단계로 진행한다. 현 시점에 전체 20곡의 WAV가 있는 것으로 표기하지 않는다.
 Resume-Trigger: -wavvy
 Commits: 미커밋 로컬 변경(현재 턴에서 commit/push 요청 없음)
----
 
-HANDOFF: Codex -> 젠
-Date: 2026-10-23 (새 06:30 수동 강제 새로고침 뒤 녹음 신호 확인)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 회의 녹음 종료 뒤 재시도 요청에 따라 Aside에서 네 번째 75.1초 녹음을 했지만 PCM 데이터 28,838,400바이트가 전부 0이었다. Aside의 일반 새로고침은 확인했으나 강제 새로고침 성공 여부는 확인하지 못했다. 젠이 직접 ⌘ShiftR 완료를 “완료했어.”라고 보고한 뒤 다섯 번째 49.9초 녹음에서 실제 소리가 담긴 신호가 확인됐다. 수동 강제 새로고침이 복구 원인인지는 미확정이다.
-Current: 20논리곡·원격 후보 42개 그대로다. 무음 시험 파일 네 개와 신호가 있는 짧은 시험 파일 한 개를 분리 보존한다. 49.9초 파일은 3:17 전곡이 아니므로 전곡 분석 음원·실측 BPM·삭제·최종 선택은 모두 0개다. 공식 state revision 83 `track_source_draft`는 바뀌지 않았다. 이번 재시도 범위에서 전체 후보 수집이나 삭제는 시작하지 않았다.
-Verification: [네 번째 원시 검사](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe4-check.json)는 0 PCM이다. [다섯 번째 원시 검사](../SERIES/06-30/input/bpm-audit/evidence/a3af370c-b53f-4ecb-baa5-56bacc466599-probe5-check.json)의 WAV SHA-256은 `8dceb0593c18727f1828b356dde6c3d41dbf64349b43d0bb7cc09eaf85689503`; 부모의 FFmpeg 디코드에서 4,790,400샘플 중 4,120,758개가 비영점이고 peak 0.6129903793·RMS 0.1237072590이었다. 녹음 프로세스가 종료된 것도 확인했다.
-Next-TODO: 전곡 오디오를 후보 ID와 길이·신호까지 확인해 확보한 뒤 실제 175–177 BPM을 측정한다. 범위 밖 후보를 삭제하고 한 곡의 모든 후보가 탈락하면 재생성한다. 이 단계는 젠이 이미 승인했다.
-Commits: 이번 결과의 문서·원시 JSON만 별도 체크포인트로 보존한다. 분석용 WAV는 로컬에만 둔다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-23 (새 06:30 BPM 30초 분석 중단 체크포인트)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠이 “전체를 다 녹음할 필요는 없어 30초씩만 해도 돼”라고 하여 관측된 30초 샘플에 한정한 BPM 분석으로 범위를 바꿨다. 30초 지원 코드의 격리 검토는 CLEAN(확인된 Critical/High 0)이며, 첫 후보 `a3af370c-b53f-4ecb-baa5-56bacc466599`의 서로 다른 30초 샘플 2개는 모두 `uncertain`이다. 후보가 둘인 것이 아니다. 샘플 결과는 `SERIES/06-30/input/bpm-audit/results/`에 보존했다. 전곡 BPM 유지는 인증하지 않는다.
-Current: 젠의 “앗 그거 어려운데 잠깐 스톱해줘.”, “내가 작업 재개 요청할 때 재개해줘. 지금은 aside를 써야해서..”에 따라 녹음·분석·삭제·재생성을 중단했다. 20논리곡·원격 후보 42개, 측정 후보 1개·샘플 2개, 삭제 0개·선택 0개다. 녹음 담당자는 다음 B 후보 페이지로 이동만 하고 새 샘플을 얻지 않았다. 공식 state revision 83 `track_source_draft`는 변함없다.
-Verification: 30초 합성 11건의 기대 분류가 11/11 일치했고 원시 출력은 `SERIES/06-30/input/bpm-audit/validation/synthetic-30s.json`에 있다. 첫·다른 구간 원본 SHA는 각각 `a9cd0553908e28e4fa97b4a8f9fd231637e561dd5b83275b18e055e8a8c45d84`, `e49f79e28c53448c2be9decce37a6a8928ac46b2a207bd3ba1a9192c0ddfdaa3`다. Aside 탭 진단 원본에는 무관한 탭 정보가 있어 ignored `work/06-30-bpm-audit/`에 해시와 함께 보존하고 공유 기록에는 대상 Suno 사실만 남겼다.
-Resume-Trigger: 젠의 명시적 작업 재개 요청. 요청 전에는 자동 진행하지 않는다.
-Next-TODO: 재개 요청이 오면 B 후보에서 연속 30초 샘플 확보와 보수적 BPM 분석을 이어간다. 범위 밖 후보 삭제는 별도 독립 검토 뒤에만 실행한다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (06:30 사용자 강제 새로고침 보고 뒤 남은2곡 재시도)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “강제 새로고침후 재시도” → “내가 했어” 뒤 검증된175목표 감속 사본6/11만 각각1회 정상 업로드했으나 둘 다 This audio matches an existing recording으로 거부됐다. 사용자 강제 새로고침은 user_reported이며 캐시 우회를 독립 인증하지 않는다. 에이전트 새로고침·추가 음원 처리·파일명 변경·삭제·복원·생성·공개0이다.
-Current: 정확한 Suno 작업공간335455f4-30d5-4878-b658-365da757127e에는 기존18곡이 그대로다. 성공0·거부2·대기0·선택0이며 원래3필터와 빈 검색을 복원했다. 전체20곡 교체는 미완료이고6/11의 정상 업로드가 남았다. 이번 승인 배치의 추가 반복은 없다. 로컬입력20·Downloads20·기존 감속사본·원본출처ID·기존 원장은 보존했다.
-Verification: 새 retry-user-refresh/retry-manifest.json과 retry-ui-evidence.raw.json에 별도 저장했다. .ai/validation/2026-10-24-0630-suno-user-refresh-final-check.json에서 원시13개 원문/해시, 전후18곡 ID/제목/길이/완료 상태, 필터 복원, 실제 원본/감속/전송6개 SHA와 기존21파일/기록 불변을 직접 확인했다. 공식 state revision84·track_source_draft·로컬입력20 점검 PASS다. 신규 독립 검토는 .ai/reviews/2026-10-24-0630-suno-user-refresh-review.md에 별도 보존한다.
-Next-TODO: 6/11의 서비스 거부 때문에 전체20곡 교체는 미완료다. 동일 오류의 추가 자동 재시도·추가 감속·삭제 계획은 없다. 이전 배치 중단 기록은 각 당시 이력이다.
-Commits: 이번 사용자 승인 배치의 결과 기록만 독립 검토 후 커밋·푸시한다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (06:30 추가 재시도·업로드용 제목 변경·메타데이터 조사)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠의 “한 번 더 재시도”와 “흠...제목을 한 번 더 바꿔봐”로 같은175목표6/11 사본을 두 배치에서 각각1회씩 정상 업로드했다. 새제목 배치의 전송 사본만06_DawnCurrent.wav/11_ForwardPulse.wav로 복사했다. 두 배치 모두 성공0·거부2·대기0이며 기존 녹음 일치 오류다. 앞 사용자 새로고침 보고 배치까지 총6파일 시도·추가 수락0이다.
-Current: 정확한 workspace335455f4-30d5-4878-b658-365da757127e에는18곡이 그대로이고6/11은 여전히 미수락이다. 전체20곡 교체는 미완료다. 원래3필터·빈검색·선택0, local20/Downloads20/기존감속/원본출처ID/기존원장/state revision84를 보존했다. 추가 음원처리·감속·새로고침·삭제·복원·생성·공개0이며 이번 승인 배치 이후 자동 반복 계획은 없다.
-Verification: retry-extra-once/와 retry-retitled/ 각각 원장·원시를 보존했고 .ai/validation/2026-10-24-0630-suno-additional-retries-final-check.json이 실제 원시28개·전후18집합·관련파일/기록 불변을 대조한다. 사용자 파일정보 질문은 .ai/validation/2026-10-24-0630-audio-metadata-check.json에서 실제8파일 전체구획과태그를 확인했다. 곡명/ID/C2PA구획은 없고 공통ISFT Lavf62.3.100만 있었다. Suno 일반C2PA출처표시/유사성검사 공식안내는 존재하나 이번거부의 특정원인은 미확정이다. 오디오 내부 숨은표식 부재 인증·탐지API·파일정보삭제는 하지 않았다.
-Next-TODO: 외부 서비스가 거부한6/11의 정상 업로드가 미완료다. 같은 오류의 추가 자동 반복·추가 감속/삭제 계획은 없다. 앞 세션의 재시도 기록은 각 시점의 이력이다.
-Commits: 이번 사용자 지시 결과와 조사 기록을 독립 검토 뒤 커밋·푸시한다. 검토 기록은 .ai/reviews/2026-10-24-0630-suno-user-refresh-review.md에 보존한다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (06:30 업로드 사용자 중지·최종20곡 연속 믹스 진행)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 젠은 실패 업로드를 여기서 중지하고, 로컬 최종20곡을 곡경계에서도 박자가 이어지는 하나의 리믹스로 만들라고 지시했다. 이어 계속 진행을 지시했다. Suno 현재18곡/6·11미수락은 그대로이며 새계정조작0이다. 앞 업로드·메타데이터 기록은 독립검토CLEAN 뒤99fd079e256390782d139cf9df5e9fcfa3d3918d로commit/push하고원격master일치를확인했다.
-Current: input/download-manifest.json의현재20곡번호순·프로젝트입력만사용한다. Downloads모든음원삭제는사용자직접보고이며,컨트롤러가그뒤프로젝트20실제SHA일치를재확인했다. 입력덮어쓰기/Downloads복구0. 원속도5/20과173목표8/13/18의몸통속도를살리면서전환부만맞추는별도출력을준비중이다.
-Progress: continuous_mix_0630(Sol6.1/xhigh,session01a16b59-daca-7391-80b0-b3610052ec16)이앞뒤40구간/BeatThis보조박·강박/실제타격으로3시범전환을준비한다. v1두경계어긋남은통과시키지않았다. atempo_timing_probe_0630(Sol6.1/xhigh,session01a16b64-0f0e-7120-83d5-0145a4ce33ad)은별도합성클릭에서5ms반복tempo명령자체의시간오차를재현했고정적구간처리를검사중이다. 두워커의실제모델/effort를세션에서확인했다. 실제전곡소스수정·전체렌더0,실패파일/원시보존.
-Evidence: .ai/plans/2026-10-24-0630-continuous-mix.md, work/0630-continuous-mix-20261024/, work/0630-atempo-timing-probe-20261024/.
-Next-TODO: actuator문제를해소한3전환출력의실제타격/몸통접점검사후19경계계획과예상길이를확정하고전체음원·미리듣기·출처목록을만든다. 독립Astra/high최종검토와기록/commit/push가남았다. 모델추정/목표BPM만으로완성·자연스러운청감·사용자승인을주장하지않는다. 추가Suno업로드·영상·발매는계획없다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (06:30 전환17곳 근거·2곳 청취 결정 대기)
-Project: ~/Project/wavvy
-Agent: Codex
-Summary: 20곡 연속 믹스 진행에서 초기19전환 출력·제한된 이웃 비교를 마쳤다. 초기15곳+대체2곳(8→9·15→16)에 기술 통과 근거가 있으며 대체는 미승격이다. 9→10·10→11은 미해소여서 전체 master 미착수다.
-Decision-Pending: 실제 output/continuous-mix-20261024/transitions/09-10.wav와10-11.wav(각 약16초)를 제시해 둘 다 그대로 쓸지 사용자에게 물었다. 아직 답변·새 청취 승인은 없다. 두 WAV 교체·기준 변경·추가 후보·전체 렌더를 중지했다. 9→10은반복기타의모호한단발파형대응이고실제오류확정아님,10→11은마디후보일치/공유quarter p90 24.942ms다. 내부20ms조건을사용자절대청감기준으로쓰지않는다.
-Evidence: .ai/plans/2026-10-24-0630-continuous-mix.md; .ai/validation/2026-10-24-0630-continuous-mix-worker-check.json; .ai/validation/2026-10-24-0630-continuous-mix-controller-check.json; work/0630-continuous-mix-20261024/worker-report.md 및 seventeen-available-summary.json.
-Preserved: 실제 input20개 해시 전부기준일치, 기존manifest/state revision84 불변, Downloads는사용자직접삭제보고이며재생성0. 추가Suno/영상/발매작업0.
-Resume: 사용자결정뒤 scripts/continuous_mix_0630.py와production/continuous-mix-20261024.json을최종설정으로고정하고대체2곳을승격한뒤시각/길이를재계산한다. 현재초기예상63:14.4663은완성파일길이가아니다. master함수는미실행·미검증이며전체39구간의원본gain/preview/staging 직접대조와최종독립검토가남았다. 사용자청취승인이와도자동검사통과로꾸며쓰지않는다.
----
-
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (06:30 미해소 두 실제 연결 사용자 승인·전체 제작 재개)
-Project: ~/Project/wavvy
-Decision: 사용자 답변 원문 “둘 다 이대로 사용”. .ai/validation/2026-10-24-0630-continuous-mix-listening-approval.json에 두preview SHA와승인범위를고정했다. 앞대기항목은과거이며전체제작을재개한다.
-Current: 17기술근거+9→10/10→11 정확파일사용자승인2개를분리해집계한다. 자동검사미통과기록/기준을지우지않는다. 나머지결함·해시불일치·무음·클립·길이오류는차단한다. 전체완성본은아직미완료/미청취다.
-Next: worker continuous_mix_0630이통과대체2곳승격·최종config/timeline고정·master WAV/M4A/전환사본/실제39구간직접대조를진행한다. 최종독립검토·문서기록·commit/push가남았다. 입력20·Downloads비의존·추가계정조작금지는같다.
 ---
 
 HANDOFF: Codex -> 젠
@@ -2584,125 +2338,20 @@ Project: ~/Project/wavvy
 Decision: “유튜브에서는 2번 반복해야하는 점을 잊으면 안돼.” 기존MASTER/cli/SPEC.md2회필수와같다. 1회기준본을보존하고20곡번호순총2회음원을별도제작한다. 회차20→1도실제박자를이어붙인다. 별도repeat helper/config로1회근거를보존하며영상/업로드범위아님.
 Current: 1회최종예상3790.339646초/181936303샘플,가용13260972032바이트확인. 17기술+2정확SHA사용자승인분리,승인2파일재현SHA일치/7음성검사확인. SciPy24bit mmap미지원은읽기문제여서조각읽기로수정/9686933샘플동일검사뒤새chunks에서진행. 전체1회/2회제작·검증은아직진행중.
 Next: 1회실제전체검사와해시고정→20tail/1head회차전환작은시험→2회예상길이/공간확인→2회실제전체파일·40시작시각·회차preview검사→최종독립검토/기록/commit/push.
----
-
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 20곡 총 2회 연속 믹스 오디오 완성)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Summary: 젠의 박자 연속 믹스와 유튜브 총 2회 반복 지시를 반영한 오디오 파일 생성·직접 검사를 마쳤다. 실제 최종 파일은 SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a, 2:06:10.660, SHA-256 bc63dc3836cc83864e58f6f1890d9f4cf071d2a94fb5292d110a7af59869caea다. 이 파일에는 이미 1→20 두 회가 있으므로 영상 단계 repeat2를 다시 적용하지 않는다.
-Preserved: 1회 WAV/M4A·원본 20개·입력 목록·실패 원시를 보존했다. 1회 WAV는 181936303 samples/3790.339645833초, SHA-256 9530de7be132a32e438f3b89c9ca90787d2b14f572c2503e148b96213d22e07a다. 공간 제약으로 2회 대용량 WAV는 만들지 않았고 363391668 samples/7570.659750초의 압축 전 전체 흐름을 검사하며 AAC 320k M4A를 직접 저장했다. 삭제·앱 종료·추가 계정 조작은 없다.
-Acceptance: 1회 17자동 기술 통과+정확 파일 사용자 승인 2개, 2회 35자동 통과+같은 승인 파일 사용 4회다. 승인 원문 “둘 다 이대로 사용”은 9→10·10→11 두 약 16초 WAV의 고정 SHA에 한정한다. 자동 미통과는 보존했다. 새 20→1 연결은 실제 한 박 타격 p90 13.2396ms로 기술 검사 통과다. 전체 믹스 주관적 청취 승인·강박 확정은 없다.
-Verification: .ai/validation/2026-10-24-0630-continuous-mix-final-worker-check.json 및 onecycle-controller-check.json에 1회 39구간 전체 대조와 각 1초 별도 대조가 있다. repeat2-worker-check.json의 79구간 전체 대조·세 전체 PCM 해시는 de3e7db1179526b6911c9e9f6c7154c779958f28432c6b28195dfca287d4253a로 일치한다. repeat2-controller-check.json의 실제 AAC 79개 1초 직접 대조는 최저 상관 0.985795·위치 차이 0 samples다. 전체 해독 exit 0·-16.1 LUFS/-2.9 dBTP·예상 밖 내부 무음 0개다. AAC 시작 skip 1024 samples와 끝 padding 332 samples/6.9167ms는 기록된 형식 처리이며 내부 밀림으로 보지 않는다. 소규모 최종 검사는 .ai/validation/2026-10-24-0630-continuous-mix-final-gates.json에 기록한다.
-Current: 공식 state revision 84·track_source_draft·입력 음원 20개이며 source_final/영상/발매 완료로 올리지 않았다. Suno 업로드는 사용자 중지로 원격 18곡·6/11 미수락에서 끝났고 아래·앞선 재시도 기록은 자동 재개할 할 일이 아니다.
-Remaining: 컨트롤러의 새 독립 Astra/high 검토와 결과 기록·커밋·푸시가 남았다. 이 문서 워커는 오디오/스크립트/설정 수정·정식 검토·커밋·푸시를 하지 않았다. 영상·YouTube 업로드는 범위에 없다.
----
-
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 연속 믹스 최종 독립 검토 CLEAN)
-Date: 2026-10-24
-Project: ~/Project/wavvy
-Review: .ai/reviews/2026-10-24-0630-continuous-mix-final-review.md에 독립 검토 원문을 보존했다. 검토자 /root/continuous_mix_0630_final_review의 실제 세션01a16b92-582c-7a22-9f17-291acfe9bc55에서 gpt-6-astra/high를 확인했다. CLEAN(확인된 Critical/High 결함 0건·원칙 관찰 없음)을 컨트롤러가 채택했으며 추가 검토 회차는 없다.
-Evidence: .ai/validation/2026-10-24-0630-continuous-mix-reviewer-check.json은 실제 검토자의 명령과 직접 AAC 해독 원문이다. 승인 연결4회+20→1의 다섯 대조는 exit0·최저상관0.994759109947142·위치차이모두0samples다. 전체 주관적 청취·음악적 강박 확정·썸네일 미적 승인은 검토 판정에 포함하지 않는다. 검토 전 final-gates.json 원시는 수정하지 않았다.
-Current: 현재 오디오 산출물·공식state revision84/track_source_draft·원본20은 그대로다. 별도 썸네일 v2는 생성·제시했으며 사용자 승인 답변은 아직 없다. SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png 1672×941·SHA807be7ae1295e69e690aba2440375e6e0ee77d75184bba587909b6633b66990d와 production/thumbnail-draft-hip-20261024-v2.json을 확인했다. v1은 이전시안으로 보존, 최종4K/loop.png/thumb.jpg는 미생성이다. 밤이 필수가 아니라는 사용자 허용은 v2 생성 뒤 받았으며 자동 낮시안 생성은 하지 않았다.
-Remaining: 컨트롤러의 승인된 정확 파일 staging·기록 커밋·푸시만 오디오 마감으로 남았다. 이 워커는 문서에 사실을 기록했으며 오디오/코드/설정/raw gates 수정·추가 정식검토·커밋·푸시를 하지 않았다. 영상·YouTube 업로드는 범위에 없다.
----
 
 ---
-HANDOFF: Codex -> 젠
-Date: 2026-10-24 (오디오 마감·썸네일 사진 확인 대기)
-Project: ~/Project/wavvy
-Current: 20곡 총2회 M4A 2:06:10.660·회차20→1 연결과 실제79구간 검사를 마쳤고 독립 Astra/high CLEAN(확인된 Critical/High0·원칙 관찰 없음)을 채택했다. source20/state84 불변. 최종 파일은 SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a이며 영상에서 다시 반복하지 않는다. 코드·설정·검토 근거·현재 문서와 썸네일 시안을 이번 커밋에 묶어 푸시한다.
-Next: 별도 썸네일 v2 사진 사용자 확인만 기다린다. SERIES/06-30/input/thumbnail-draft-hip-20261024-v2.png를 실제로 보여주고 승인 질문을 보냈으나 아직 답변이 없다. 밤은 필수가 아니며 자연스러운 일상 사진·젊고 힙하고 개성 있는 인물이 우선이다. 승인 전 최종4K/loop.png/thumb.jpg는 만들지 않는다. Suno·영상·업로드는 이번 작업 범위가 아니다.
 
-
----
 HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-24 (승인된 일회성 로컬 미디어 정리 후 현재 상태)
 Project: ~/Project/wavvy
 Authorization: “Wavvy 프로젝트와 Wavvy 임시 복사본 전체 (추천)” 및 “이 세 파일만 남기고 나머지 삭제 (추천)”. .ai/cleanup/2026-10-24-wavvy-cleanup-retention-decision.json에 원문과 조건을 기록했다. 현재 필수 사용자 결정 대기는 없다.
 Cleanup: 동결 목록 1,298파일·52,534,148,348바이트를 삭제했고 삭제 후 1,298개 모두 부재·보호 62개 모두 불변이다. 실제 여유 공간 4,042,014,720→55,041,216,512바이트, 관측 증가량 50,999,201,792바이트다. 디렉터리 삭제·Git 내부 이력·다른 프로젝트·기타 캐시 정리는 없다. apply 원시·파일별 journal·post-apply-check는 .ai/cleanup/2026-10-24-wavvy-cleanup-*에 보존했다. .ai/reviews/2026-10-24-wavvy-media-cleanup-review.md는 실행 전 동결 목록·실행기 범위의 독립 Astra/high CLEAN 판정이며 컨트롤러가 채택했다.
-Retained audio: 프로젝트의 실제 오디오·영상은 SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav(74,331,380바이트), 11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav(74,406,364바이트), output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a(307,505,324바이트), 합계 3개·456,243,068바이트뿐이다. Suno 미수락 6·11번은 별도 보관한다. 믹스는 2:06:10.660·SHA-256 bc63dc3836cc83864e58f6f1890d9f4cf071d2a94fb5292d110a7af59869caea이며 이번 영상의 실제 YouTube 업로드 확인 뒤 삭제한다. 업로드는 아직 미확인이다. 이미 총 2회이므로 영상에서 반복을 추가하지 않는다. 다른 18개 최종 개별 입력·1회 기준본·원시 녹음·비교본·미리듣기는 의도적 삭제다. 기존 입력 목록·원시 검사·검토는 과거 이력이며 전체 20개 재다운로드를 보장하거나 자동 복구할 일이 아니다.
-Thumbnail: 현재 보호 사진은 SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png, 1672×941·2,131,294바이트·SHA-256 3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d다. production/thumbnail-draft-runningwear-tiedhair-20261024.json도 보호했다. 최종 지시 “스포츠 밴드 하지 말고”에 따라 밴드 없는 짧은 묶음머리로, 기존 얼굴·표정·러닝복·장면을 유지하는 편집 지시의 사진이다. 새 결과의 주관적 최종 승인·정식 썸네일 검토를 주장하지 않는다.
-Remaining: 로고·06:30 좌상단과 Cadence 175 BPM 우하단 글자 합성이 Swift 글꼴 대체 오류로 중단된 미완료 제작이다. loop.png·thumb.jpg·최종 4K는 없다. 이후 이 합성을 재개할 때 보존 사진과 정확한 배치 지시를 사용한다. 이번 문서 워커는 추가 합성 시도·미디어 생성/삭제·업로드를 하지 않는다. 오디오 기록은 0a35bac로 푸시 완료이며 과거 “오디오 기록 대기/v2 승인 대기”는 현재 상태가 아니다. 이번 문서·writer 재측정 상태의 커밋·푸시는 컨트롤러가 맡는다. 현재 보관 상태는 concept/SESSION 상단, 공식 상태 저장·대조는 .ai/cleanup/2026-10-24-state-after-cleanup.json을 따른다.
-State measured: 전용 writer를 정확히 1회 실행해 revision 85·track_source_draft·input audio_files/available_audio_files 2로 재측정했다. 보존 믹스 1개는 입력 개수와 별도다. 공식 CLI에는 next_action 직접 지정 옵션이 없으며 기존 일반 문구 “Review existing track source drafts and follow the next source work in concept.md.”를 유지했다. 현행 concept은 의도적 삭제를 자동 재다운로드·재생성할 일로 삼지 않는다. 원시 명령·exit·출력·전후 상태는 .ai/cleanup/2026-10-24-state-after-cleanup.json에 있다.
-
 
 ---
+
 HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-24 (맥 저장 공간 읽기 전용 진단 결론)
 Diagnostic: ~/Project 직접19항목 합계515,335,004,160바이트이며, 그 안에 CDS-wt 직접90/90항목(89폴더+1파일)424,142,188,544바이트와 CDS 본체57,809,522,688바이트가 포함된다. CDS/report40,139,710,464바이트는 본체에 포함돼 별도 합산하지 않는다. 대표 worktree7.628GB에서는 report5.367·assets1.550·review0.633GB가 약99%다. /private/tmp110.64GB·~/Library67.43GB·~/.claude45.15GB·~/.codex12.20GB는 이전 세션 측정 재사용으로 구분했다.
 Chrome: X/com.google.Chrome.code_sign_clone 638개와 du 표시962.65GB를 확인했지만 APFS 공유 블록 때문에 독점 물리 용량·시스템 데이터772.07GB의 정확한 원인·삭제 회수량은 미확정이다. 시스템 볼륨 사용량을 화면의 시스템 데이터 분류와 같다고 보지 않는다. 권한 거부는0바이트가 아니라 미확인이다.
 Evidence: .ai/cleanup/2026-10-24-system-data-summary.md 및 링크된 whole-mac/j8-du/chrome-clones/private-var JSON 네 개에 원시 명령·접근 한계·공식 Chromium/Apple 근거를 기록했다. 전체 원시는 완료·동결 확인 뒤 이번 마감 기록에 포함한다.
-Actions: 이번 원인 진단의 삭제·이동·앱 종료·권한 변경·sudo0회다. 앞서 승인된 Wavvy 삭제1,298파일52,534,148,348바이트는 별도 실행 이력이며 이미 없던 v1/v2 PNG2개도 그 수에 넣지 않는다. 현재 음원3개·선택 묶음머리 사진·state revision85·미완료 글자 합성은 진단으로 바꾸지 않았다. 커밋·푸시는 아직 하지 않았고 컨트롤러 승인 후 이번 마감 기록을 저장한다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex
-Date: 2026-10-24 (썸네일 최신 정정·기본 시간 표기 제거)
-Current: 최신 원문 “좌측 하단으로 하고 라인은 어디다 팔아먹었어.”, “06:30은 그냥 삭제해 이제 기본 포맷에서 시간 안쓸거야”. 좌상단 Wavvy 로고만·좌하단 Cadence와 오른쪽 흰 가로선·아래 175 BPM으로 별도 이미지 워커가 수정 중이다. 새 실물은 아직 대기다. wavvy.md·썸네일 스킬의 기본 시간 표기만 제거했으며 시리즈 이름·YouTube 제목·기존 시리즈 실물은 이 변경 대상이 아니다.
-History: 이전 우하단·시간 포함 PNG/JPEG와 당시 독립 Astra/high CLEAN은 수정 전 이력이다. 최신 정정 결과의 최종 판정이나 사용자 승인이 아니다. 정확한 원문·모델 증거는 .ai/reviews/2026-10-24-0630-thumbnail-branding-review.md에 범위를 표시해 보존했다.
-Preserved: 원본 묶음머리 사진·제작 기록·음원 3개는 그대로다. 이미 총 2회인 믹스에는 반복을 추가하지 않는다. 4K/loop/영상/업로드·추가 삭제는 없다.
-Resume: 최신 이미지 실측과 새 검토 결과가 도착하면 현재 문서를 현행화하고 전용 상태 writer를 한 번 실행한다. 이번 writer는 아직 0회이며 revision85/track_source_draft/input2 그대로다. 커밋·푸시는 최신 정정으로 중단됐고 컨트롤러 재지시를 기다린다. HEAD는 8cafd15a05d28f2a115e75757502901353928d3d다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex
-Date: 2026-10-24 (무시간·좌하단 케이던스/흰 가로선 썸네일 생성·최종 독립 검토)
-Current: 최신 사용자 정정을 반영해 좌상단 Wavvy 로고만, 좌하단 Cadence·그 오른쪽 흰 수평선·아래 175 BPM인 실제 PNG/JPEG를 만들었다. 시간 숫자는 없다. PNG는 SERIES/06-30/input/thumbnail-branded-0630-20261024.png·1672×941·2,183,648바이트·SHA-256 268680bd25d300d85882a3c707e11c2500ea6ac68a10b775f35a1eeef44f0622, JPEG는 input/thumb.jpg·1672×941·487,974바이트·SHA-256 597814938758568a33c544c8eada78d7f878e67bd761b061a5ed73b94a0bd98c다. 원본 묶음머리 사진은 SHA-256 3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d로 불변이다.
-Policy: wavvy.md와 skills/wavvy-thumbnail/SKILL.md의 기본 썸네일 시간 표시를 제거했다. 시리즈 이름·YouTube 제목·옛 시리즈 실물은 바꾸지 않는다. 명시 Packaging Contract의 시간 검사는 기존07:00에만 적용돼 현재06:30을 막지 않으며 코드는 수정하지 않았다.
-Review: 최신 독립 실제 gpt-6-astra/high 검토 .ai/reviews/2026-10-24-0630-thumbnail-branding-final-review.md의 CLEAN(확인된 중대 결함0·원칙 관찰 없음)을 컨트롤러가 원본/PNG/JPEG/정책 직접 대조 뒤 채택했다. 이전 우하단 판정은 별도 당시 이력이며 최신 판정으로 복사하지 않았다. 작은 480×270 화면 확인은 이미지 실행 워커의 실제 관찰이다. 검토자는 별도 폰 축소본이나 전체 생성 경로를 실행 확인하지 않았고 로고 정밀 윤곽은 판정에서 제외했다.
-State: 전용 writer를 정확히1회 실행해85→86·track_source_draft·입력 음원2개를 기록했다. 일반 next_action과 artifact_status는 동일하며 삭제된 미디어의 자동 복구 지시가 아니다. .ai/validation/2026-10-24-0630-thumbnail-branding-gates.json에 전후 상태·좁은 파일 대조·실제 명령 결과를 보존한다.
-Boundary: 원본 사진·동명 제작 기록·음원3개를 보존했다. 이미 총2회인 믹스에는 반복을 추가하지 않는다. 사진은 시각적으로 유지됐으나 화소·정확한 글꼴·로고 화소·그림자 강도의 수학적 일치는 보장하지 않는다. 사용자 주관적 최종 승인·4K·loop·영상·업로드 완료는 주장하지 않는다. 이미지 워커가 확인용 임시 사본1개만 제거했으며 추가 삭제는 없다.
-Record: 컨트롤러가 최신 검토 뒤 이 정확 범위의 커밋·푸시를 승인했다. 기본 폴더의 기존master에서 이번 마감 기록을 저장하며 새 branch/worktree는 만들지 않는다. 현재 필수 사용자 결정 대기는 없다.
-
-
----
-2026-10-24 06:30 직접 합성 마감: 젠의 “원본 사진에 글자만 합성해줘 (추천)” 선택으로 실제 로고·글꼴을 원본 위에 평면 흰색으로 합성했다. 좌상단 Wavvy만·시간 없음, 좌하단 Cadence/흰 선/175 BPM이며 그림자는 없다. PNG 1672×941·2,222,156B·SHA d21c0c4f3428ba182be3fe251b55be7e381912146467be0569407a3af1cad9fd, JPEG 1672×941·458,902B·SHA ee54be10e668ac4d1e38e37043bde9c4c4f0cf76e6ae2e5714280b7a2c7b425e. PNG 글자 밖1,521,686화소 변경0·어두워진 채널0이며 JPEG는 압축 형식이다. 원본사진·음원3개 불변, 재현Swift/제작원시 보존, 임시alpha1개는 이미지워커가 제거했다. 최신 독립 실제 Astra/high CLEAN·원칙관찰없음을 채택했고 이전 생성시안 판정은 당시 이력이다. 상태확인 통과로 revision86/track_source_draft/input2를 유지해 이번 writer0회다. 좁은 원시는 .ai/validation/2026-10-24-0630-thumbnail-flat-composite-check.json, 새 검토는 .ai/reviews/2026-10-24-0630-thumbnail-flat-composite-review.md를 따른다. 새 이미지 생성·전역 그림자 정책·4K/loop/영상/업로드·사용자 주관적 최종 승인 주장은 없고 컨트롤러가 정확12경로의1회 커밋·정상 푸시를 승인했다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 사용자 제작 JPG 승인·영상 제작·제목 승인 대기)
-Date: 2026-10-24
-Current: 젠의 “이걸로. 이제 영상 만들어서 업로드하자. 제목은 컨펌 받고”에 따라 사용자 제작 SERIES/06-30/input/thumb.jpg를 최종 선택했다. 직접 대조한2532×1424·1,574,457B·SHA-256(파일 내용 동일성 확인값) d3f38504237b6bca5f07592f607844dd423104e3780a5314d5c0a122d6b1c2c8이며 좌상단Wavvy·좌하단RunningMix/175BPM·시간없음이다. 새 생성·보정 없이 그대로 사용한다. 이전Cadence PNG는 사용자 삭제 상태이며 이전 파일의 검사·검토 판정을 새 JPG에 적용하지 않는다.
-Video: 이미20곡×2회인7570.660초 M4A를 추가 반복 없이 오디오 복사하여 SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k.mp4를 제작 중이다. 전체 파일·끝부분 검사가 대기이며 영상 완료·외부 업로드는 아직 없다. 실제 YouTube 업로드 확인 전 원본 믹스 삭제 금지. 승인 삭제된 개별 입력18개는 복원할 계획이 없다.
-Title: 최종 승인된 제목은 없다. 젠의07:00 제목 레퍼런스 요청 후 후보 문구를 정정 중이며 현재 여섯 후보의 답변을 기다린다. 07:00 선례5구획과175 BPM Running Mix · 2Hour는 젠의 최종 제목 승인 뒤 이번 시리즈의 개별 예외로 적용한다. 승인 전 가짜 제목을 CSV(업로드 문안을 저장하는 표 파일)에 채우지 않는다. 설명·태그·실제40챕터 초안은 준비됐고 승인제목에 맞춘 저장은 뒤에 진행한다.
-Source: concept.md에 ## Final Premixed Audio, production/final-premixed-audio.json 포인터와 Final vocal direction: Instrumental을 추가했다. 새 완성 믹스 발매 계약은 별도 구현·검증 중이다. 이전 공식 저장값revision86/track_source_draft/input2는 당시 기록이며 최종 검증 뒤 전용 상태 저장 명령으로 갱신한다. 이 문서 작업에서 state·생산manifest·코드·미디어는 수정하지 않았다.
-Boundary: 제목 승인 뒤 공개 시점을 젠에게 확인한다. 댓글 외부 게시 요청은 없으며 게시하지 않는다. 175 BPM은 시리즈 목표 표기이고 전 구간 정확 실측 인증이 아니다. 기존20곡 선택·개별WAV 해시·처리목표173/176/미확인·연결 예외·삭제 이력은 보존한다. 전체 믹스 주관적 청취 승인·YouTube 처리·저작권 검사 완료를 주장하지 않는다.
-Record: 원본master에서 concept.md/.ai/SESSION.md/.ai/HANDOFF.md/CHANGELOG.md의 현재 상태만 갱신했다. 새 branch/worktree·커밋·푸시는 하지 않았고 컨트롤러 마감 지시를 기다린다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 전체 제목 승인·메타데이터 저장·공개 방식 대기)
-Date: 2026-10-24
-Title: 젠이 승인한 원문은 `Playlist | 출발은 가볍게, 끝까지 신나게! 🏃 | 175 BPM Running Mix · 2Hour | Wavvy | 06:30`다. 직전 여섯 후보 승인 대기는 이 최종 답변으로 끝났다. 07:00 선례5구획·175 BPM·2Hour는 이번 시리즈 한정 승인 예외이고 전역6구획 기본형을 바꾸지 않는다. 실제길이7570.660초는 보존한다.
-Metadata: 이전 읽기 전용 작업에서 제안한 설명·태그 초안을 승인제목에 맞춘 최종 문안으로 수정해 concept.md의YouTube Metadata 및 SERIES/06-30/output/upload.csv에 저장했다. CSV는기존07/17선례와 같은video_path,title,description,tags,thumbnail_path,visibility6열·1행이며 video_path는SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4다. 실제40챕터는repeat2/manifest.json의timeline.track_entries를현행format_timestamp로초반올림했다. 무보컬연주곡이므로노랫말SRT(시간이붙은자막파일)는만들지않는다.
-Current: 최종v2영상의전체·끝부분검사는대기이며외부업로드는없다. 공개시점·방식(즉시공개/비공개/예약)은젠의선택대기다. CSV의private는기존생성기와같은준비기본값이지젠의비공개발행결정이아니다. 댓글외부게시요청없음·게시0회. 실제업로드확인전원본믹스삭제금지. 사용자JPG·개별음원삭제이력·기존20곡출처근거는보존했다.
-Boundary: 이번문서/CSV작업에서state·코드·생산manifest·미디어는수정하지않았고커밋·푸시는하지않았다. 최종계약검증과공식상태저장은컨트롤러의마감절차를따른다.
-
-Video observation update (2026-10-24): 최종 v2 파일 생성 후 직접 ffprobe로 3840×2160 영상·AAC 48kHz/2채널 7570.660초·40챕터·778,406,893바이트를 확인했다. 컨트롤러 직접 파일 SHA-256은 7b570ce8f1822d8f5a94a5e530de0f8d2b019676b79f011f1298471b7300524a다. 영상 끝 정적 프레임 0.340초는 실제 오디오 길이와 구분한다. 전체 해독·최종 제작·발매 검사와 공개 방식 결정은 아직 대기이며 외부 업로드·댓글 게시·원본 믹스 삭제는 하지 않았다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 영상 기술 검사 완료·업로드 상태 판정 수정 확인 전 전송 차단)
-Date: 2026-10-24
-Current: 바로 앞 기록의 전체 해독·영상 검사 대기는 이후 실측으로 해소됐다. 컨트롤러가 최종 v2 영상 전체 해독 종료값 0과 원본·최종 영상의 AAC(압축 오디오 형식) 복사 스트림 해시(압축된 소리 내용의 동일성 확인값) 동일성 6b8fd65dd8c5064ef76253d5c735bd462a9a99f71d4d1126537122fbcdc8b83e를 직접 확인했다. 영상 기술 검사는 끝났으며 실제 업로드·공개 완료로 확대하지 않는다.
-Gate and review: 첫 95개 테스트·verify-release·upload-ready 검사는 종료값 0이었다. 실제 gpt-6-astra/high 첫 독립 검토는 미업로드 문장을 완료 증거로 오판하는 High(중대 결함) 1건을 보고했고 컨트롤러가 수정 전 직접 Python 재현과 코드 조회로 채택했다. 따라서 첫 통과값은 전송 허가가 아니다. 근본 수정 확인과 새 독립 검토 전까지 실제 전송을 차단한다. 첫 검토 수용 기록은 .ai/inbox-reviews/2026-10-24/premixed-release-review.md이며, 검토자 회수문과 컨트롤러 직접 재현을 구분한다. 기존 함수와 이번 새 문구가 만나 발화한 결함 1건으로 계상했다.
-Upload: 컨트롤러가 Aside(연결된 브라우저 도구) 세션 artifacts/wavvy-0630에 cp -c(같은 내용을 보존해 복사하는 명령)로 정확한 v2 영상·사용자 JPG·metadata.json을 준비했다. 컨트롤러의 실제 브라우저 확인상 파일 선택·업로드는 0회다. 공개 시점·방식의 사용자 답변은 아직 없다. 댓글 요청·게시도 없다. 실제 업로드 성공 증거를 받기 전 원본 믹스를 삭제하거나 업로드 완료를 기록하지 않는다.
-Boundary: 이 갱신은 SESSION/HANDOFF/CHANGELOG와 첫 검토 수용 기록에 한정했다. concept.md는 계약 담당이 Upload Status(업로드 상태 명시 구획)를 수정하도록 편집을 피했고 코드·공식 상태·미디어·CSV는 바꾸지 않았다. 커밋·푸시·외부 게시는 하지 않았다. 직전 append-only(기존 내용을 고치지 않고 뒤에 추가함) 기록의 검사 대기는 당시 이력으로 보존한다.
-
-Root post-fix observation update (2026-10-24): 컨트롤러가 코드 동결 뒤 직접 확인한 수정 검사는 100개 테스트 4.936초 OK·종료값 0, upload-ready PASS·종료값 0, verify-release PASS·errors[]·종료값 0, uploaded 예상 FAIL·종료값 1이다. 마지막 검사는 youtube_upload_completed=FAIL과 차단 사유 두 개(YouTube upload completion evidence is required / uploaded phase requires concept.md upload completion evidence)를 반환했다. 수정 기술 검사는 끝났고 새 격리 Astra/high 검토가 실행 중이다. 앞의 근본 수정 확인 대기는 이 관측으로 대체하되, 새 검토 판정 전 실제 전송 차단·업로드 0회·공개 방식 미응답·원본 믹스 보존은 그대로다. 이전 검토 판정은 새 검토자에게 전달하지 않았다.
-
-
----
-HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 새 독립 검토 CLEAN·비공개 업로드 완료)
-Date: 2026-10-24
-Review: 앞의 새 독립 검토 판정 대기는 끝났다. 컨트롤러가 실제 실행 기록에서 gpt-6-astra/high를 확인한 새 격리 검토는 CLEAN(확인된 Critical/High 중대 결함 0건·원칙 관찰 없음)이며 채택됐다. 이전 판정을 새 검토자에게 전달하지 않았다. 첫 High와 수정 전후 직접 재현은 .ai/inbox-reviews/2026-10-24/premixed-release-review.md에, 새 수용 근거는 .ai/inbox-reviews/2026-10-24/premixed-release-final-review.md에 분리했다. 따라서 앞의 검토 대기·전송 차단·업로드 0회는 그 당시 이력이다.
-Upload: 컨트롤러가 Wavvy24/UC4R4NGwp19Y4lbdNs2HQVcg에 정확한 final-0630-4k-v2.mp4를 1회 전송했고 비공개 선택을 저장했다. 영상 ID(식별번호)는 FUBJ6OBTzoI, 시청 주소 https://youtu.be/FUBJ6OBTzoI, Studio 주소 https://studio.youtube.com/video/FUBJ6OBTzoI/edit 이다. 파일 전송 100% 뒤 비공개 SD 처리 중 화면을 확인했고 콘텐츠 목록에서 실제 영상을 다시 열어 제목 일치·설명 끝 개행 제외 일치·태그26개 정확 일치·사용자 썸네일·비공개 선택 보존을 확인했다. 아동용 아님·AI 사용 표시 Yes·유료 홍보 없음·음악 카테고리도 확인했다. 원문은 SERIES/06-30/production/youtube-upload-20261024.json이며 관측 시각 2026-10-24T05:51:28.980Z다.
-Pending: 현재 SD/HD/4K 처리·저작권 검사는 대기다. 4K UI의 예상31분은 보장된 완료 시간이 아니다. 공개 시점·방식은 여전히 젠의 답변 전이고 비공개 저장이 최종 공개 선택은 아니다. 외부 댓글 요청·게시 0회다. 서버 재생은 아직 확인하지 않았다.
-Retention: 원본 두 회 M4A·최종 영상·Aside(연결된 브라우저 도구) 세션의 임시 전송 사본을 모두 보존한다. 서버 재생 확인 전 삭제하지 않는다. 승인 삭제된 개별 입력18개는 자동 복구하지 않는다.
-State and boundary: concept의 단일 Upload Status(업로드 상태 명시 구획)를 completed(private)·실제 URL·처리/저작권/공개 결정 대기로 갱신했다. 공식 상태는 컨트롤러가 뒤에 전용 저장 명령을 한 번 실행한다. 이 작업은 concept·SESSION·HANDOFF·CHANGELOG·현재 계획·새 검토 수용 기록만 수정하며 코드·생산 목록·렌더 기록·미디어·CSV는 수정하지 않았다. 커밋·푸시·추가 외부 게시도 하지 않았다.
-
-Watch playback update (2026-10-24): 위의 서버 재생 미확인은 이후 관측으로 해소됐다. 컨트롤러가 실제 시청 주소에서 비공개 표시·Wavvy24·승인 제목·2:06:11 길이를 확인했고, HTML video(웹페이지의 실제 영상 재생 요소)의 18.760431초와3785.718835초에서 paused=false(재생 중)·readyState=4(즉시 재생할 자료가 충분함)·1920×1080·error=null(재생 오류 없음)을 직접 읽었다. 두 번째 표본은 seeking=false(위치 이동 중 아님)였고 반복 챕터 1. 첫 박부터 (반복)도 인식됐다. 음소거 재생 동작 검사이므로 음질 청취·끝부분 재생 성공을 주장하지 않는다. 현재 플레이어는 일시정지·음소거다. 1080p 재생 가능은 확인했고 4K 상위 화질 처리·저작권 검사·공개 결정은 대기다. 보존 조건은 이제 상위 처리·저작권 검사 대기 동안 원본 믹스·최종 영상·임시 전송 사본 모두 보존이며 실제 정리0회다. 원문 관측 JSON의 watchPageVerification과 retentionReason을 직접 대조해 반영했다.
-
-Final Studio reload observation (2026-10-24): 컨트롤러의 최종 재열기 관측과 갱신 JSON에서 SD 완료·HD 처리 중·4K 처리 중, 알림 검토 중..., 공개 상태 비공개를 확인했다. 저작권 검토는 진행 중이며 무문제로 확정하지 않는다. 1080p 재생 관측과 Studio의 상위 처리 진행 상태를 구분한다. 공개 선택은 사용자 답변 전이고 원본 믹스·영상·임시 전송 사본은 상위 처리·저작권 검토가 남아 있는 동안 보존한다.
-
-Official state and final gates (2026-10-24): 컨트롤러가 기본 전용 저장 명령으로 revision 87을 썼으나 기본값이 이전 phase(작업 단계)를 보존함을 확인했다. 이어 `state SERIES/06-30 --write --phase uploaded --if-match 87 --json`으로 revision 88·uploaded(실제 비공개 업로드 완료)에 맞췄다. 공식 저장 2회이며 수동 상태 파일 편집은 없다. 이후 state --check·gate --stage uploaded·verify-release·git diff --check는 모두 종료값 0이다. 앞의 상태 저장 대기는 해소됐으며 원문은 .ai/validation/2026-10-24-0630-uploaded.json이다. 공개 시점 사용자 답변·HD/4K 처리와 저작권 검토 결과 확인은 남아 있고 모든 로컬 원음·영상·임시 전송 사본은 보존한다.
+Actions: 이번 원인 진단의 삭제·이동·앱 종료·권한 변경·sudo0회다. 앞서 승인된 Wavvy 삭제1,298파일52,534,148,348바이트는 별도 실행 이력이며 이미 없던 v1/v2 PNG2개도 그 수에 넣지 않는다.
