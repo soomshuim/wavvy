@@ -1,6 +1,20 @@
 # 06:30 — 러닝 시리즈 제작 브리프
 
-## 현재 발매 현황 — 2026-10-24 비공개 업로드 완료·처리 및 공개 결정 대기
+## 현재 발매 현황 — 2026-10-24 즉시 공개·댓글·좋아요 완료
+
+젠의 “지금 공개하고 댓글달아.”에 따라 [영상](https://youtu.be/FUBJ6OBTzoI)을 공개로 저장했다. 편집 화면을 새로 열고 공개 선택을 다시 열어 저장을 확인했다. 승인 제목과 사용자 제작 썸네일을 유지했고, 요청한 목표 속도·곡별 빠르기 안내 문장 한 줄을 설명에서 삭제했다. 공개 댓글 입력란의 Wavvy24 작성자와 게시 댓글 1개를 확인했으며 영상 좋아요도 적용했다. 고정 댓글 지시는 없어 일반 댓글로 게시했다.
+
+Studio(유튜브 영상 관리 화면)의 SD·HD·4K 처리는 완료다. 현재 소유권 주장 개요에는 소유권 주장과 저작권 보호 콘텐츠가 발견되지 않았다고 표시됐다. [이번 관측 원문](production/youtube-public-followup-20261024.json)과 [화면 기록](production/youtube-public-followup-20261024-snapshots.txt)을 보존한다. 아래 최초 비공개 업로드의 처리·공개·댓글 대기는 이후 이번 실행으로 해소됐으며 현재 상태는 단일 Upload Status 구획을 따른다.
+
+### 게시한 일반 댓글
+
+```
+🏃 오늘은 어디서 달리고 계신가요?
+함께 달리고 싶은 곡 번호나 제목을 댓글로 남겨주세요.
+오늘도 내 페이스로, 끝까지 신나게 달려요!
+```
+
+## 최초 비공개 업로드 관측 이력 — 아래 대기 상태는 당시 기록
 
 젠의 “이걸로. 이제 영상 만들어서 업로드하자. 제목은 컨펌 받고”에 따라 사용자 제작 [thumb.jpg](input/thumb.jpg)를 이번 영상에 사용한다. 이어 젠이 아래 YouTube Metadata의 전체 제목을 직접 승인했다. 07:00 선례의 다섯 구획과 `175 BPM Running Mix · 2Hour` 표기는 이번 시리즈에 한정한 승인 예외이며 전역 여섯 구획 기본형은 바꾸지 않는다. 실제 길이는 **2:06:10.660**이고 `2Hour`는 이 실제 길이와 함께 젠이 승인한 전체 제목의 표기다.
 
@@ -14,32 +28,31 @@
 
 ## Upload Status
 
-- YouTube upload: completed (private)
+- YouTube upload: completed (public)
 - External upload count: 1
-- Observed at: 2026-10-24T05:51:28.980Z (2026-10-24 14:51:28.980 KST)
+- Observed at: 2026-10-24T06:09:30.728Z
 - Channel: Wavvy24 (`UC4R4NGwp19Y4lbdNs2HQVcg`)
 - Video ID: `FUBJ6OBTzoI`
 - Video URL: https://youtu.be/FUBJ6OBTzoI
 - Studio URL: https://studio.youtube.com/video/FUBJ6OBTzoI/edit
-- Evidence: `production/youtube-upload-20261024.json`
-- Visibility: private; 선택값을 저장한 뒤 실제 편집 화면을 다시 열어 확인했다.
-- Metadata: 제목 일치·설명 끝 개행을 제외하고 일치·태그 26개 정확 일치·사용자 썸네일 표시를 확인했다.
-- Settings: 아동용 아님·AI 사용 표시 Yes·유료 홍보 없음·카테고리 음악을 확인했다.
-- Processing: Studio 재열기에서 SD complete·HD processing·4K processing. 별도로 1080p 재생을 관측했다. 최초 UI의 4K 예상 31분은 당시 예상값이며 완료 보장이 아니다.
-- Playback: 약18.8초·1:03:05.7에서 1920×1080 재생 중·오류 없음을 확인했다. 반복 첫 챕터를 인식했다. 음소거 검사이며 음질 청취·끝부분 재생은 확인하지 않았다. 플레이어는 일시정지·음소거로 남겼다.
-- Copyright: Studio 재열기에서 검토 중... (checks in progress). 저작권 무문제로 확정하지 않았다.
-- Public timing: pending user answer. 아직 공개·예약하지 않았다.
-- Comments: 0; 별도 게시 요청 없음.
-- Retention: 원본 믹스·최종 영상·임시 전송 사본 보존. 상위 화질 처리·저작권 검사가 남아 있는 동안 삭제하지 않는다.
+- Evidence: `production/youtube-public-followup-20261024.json`; 최초 비공개 관측은 `production/youtube-upload-20261024.json`.
+- Visibility: public; 저장 후 편집 화면을 새로 열고 공개 선택을 다시 열어 확인했다.
+- Metadata: 승인 제목·사용자 썸네일 유지. 젠 요청으로 목표 속도·곡별 빠르기 안내 문장 한 줄만 설명에서 삭제하고 저장 뒤 재확인했다. CSV(업로드 문안을 저장하는 표 파일)도 일치한다.
+- Processing: Studio 재열기에서 SD complete·HD complete·4K complete.
+- Copyright: 현재 소유권 주장 개요에 소유권 주장 및 저작권 보호 콘텐츠가 발견되지 않았다고 표시됐다. 미래 권리 주장 부재의 보장은 아니다.
+- Public timing: 젠의 “지금 공개하고 댓글달아.”에 따라 즉시 공개했다. 기존 공개 시점 질문은 해소됐다.
+- Comments: Wavvy24 일반 댓글 1개 게시. 고정하지 않았다. https://www.youtube.com/watch?v=FUBJ6OBTzoI&lc=UgxQyi1zjfh2fk5osSV4AaABAg
+- Video like: 좋아요 적용 뒤 “좋아요 취소”·1 표시를 확인했다.
+- Retention: 이번 공개·댓글 작업에서 로컬 미디어를 삭제하지 않았다. 6·11번 별도 보관과 기존 업로드 후 정리 승인은 보존한다.
 
 ## Final Premixed Audio
 
 - Manifest: `production/final-premixed-audio.json`
 - **Final vocal direction**: Instrumental.
 
-## YouTube Metadata (2026-10-24 · 승인 원문·비공개 저장 확인·공개 결정 대기)
+## YouTube Metadata (2026-10-24 · 승인 제목·설명 한 줄 삭제·즉시 공개 확인)
 
-젠이 승인한 전체 제목 원문은 아래 제목과 같다. 다섯 구획과 `175 BPM Running Mix · 2Hour`는 07:00 선례를 따른 이번 시리즈의 개별 승인 예외다. 실제 영상 길이 2:06:10.660을 정확히 보존하며 전역 제목 기본형을 바꾸지 않는다. 설명·태그는 준비 초안을 이 승인 제목에 맞춰 최종 저장한 문안이며 실제 비공개 영상에서 일치를 확인했다. 업로드·처리·공개 상태와 관측 근거는 위 Upload Status(업로드 상태 명시 구획)를 따른다.
+젠이 승인한 전체 제목 원문은 아래 제목과 같다. 다섯 구획과 `175 BPM Running Mix · 2Hour`는 07:00 선례를 따른 이번 시리즈의 개별 승인 예외다. 실제 영상 길이 2:06:10.660을 정확히 보존하며 전역 제목 기본형을 바꾸지 않는다. 설명·태그는 이 승인 제목에 맞춘 최종 문안이다. 공개 뒤 요청한 설명 한 줄 삭제와 저장을 확인했다. 업로드·처리·공개 상태와 관측 근거는 위 Upload Status(업로드 상태 명시 구획)를 따른다.
 
 ### Context Mode
 
@@ -69,7 +82,6 @@ Playlist | 출발은 가볍게, 끝까지 신나게! 🏃 | 175 BPM Running Mix 
 강한 록 12곡과 일렉트로닉 브레이크비트 8곡을 담았어요.
 20곡을 번호순으로 두 번 이어 듣는 약 2시간 6분의 러닝 믹스예요.
 전곡 가사와 보컬이 없는 연주곡이에요.
-175 BPM은 이 플레이리스트의 목표 속도예요. 실제 곡마다 빠르기는 달라요.
 
 ──────────────
 🎵 Track List
