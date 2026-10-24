@@ -1,0 +1,492 @@
+{
+  "started_at": "2026-10-24T13:24:17.592289+00:00",
+  "mode": "dry-run",
+  "manifest_sha256": "14816a38cdbd8f704bbb9b4d4d5c1eca36928c60b7210d7a99e436cf319bdba4",
+  "script_sha256": "c09b504889ef236eab7359d0cac0478aee61e5b45933070f4eb3f81bb8d16c91",
+  "runtime_before": {
+    "captured_at": "2026-10-24T13:24:17.433038+00:00",
+    "active_candidate_apps": {
+      "atlas": [],
+      "pencil-updater": [],
+      "cherrystudio-updater": [],
+      "notion-updater": []
+    },
+    "cds_processes": [
+      {
+        "pid": "851",
+        "command": "zsh",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "1755",
+        "command": "2.1.304",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "2254",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "2255",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "4966",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7260",
+        "command": "zsh",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7327",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7340",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7504",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7505",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7506",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7516",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7519",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7520",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11724",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11725",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11726",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19752",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19753",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19756",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31669",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31670",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31726",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35224",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35237",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35238",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36373",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36397",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36399",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42234",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42243",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42246",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54435",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54436",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54988",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "60586",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "65657",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "71477",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "71478",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "72334",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "78894",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "91429",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "94159",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      }
+    ]
+  },
+  "groups": {
+    "atlas": {
+      "files": 110597,
+      "logical_bytes": 3147073462,
+      "allocated_bytes": 3367079936
+    },
+    "pencil-updater": {
+      "files": 3,
+      "logical_bytes": 696794378,
+      "allocated_bytes": 696799232
+    },
+    "cherrystudio-updater": {
+      "files": 2,
+      "logical_bytes": 343048829,
+      "allocated_bytes": 343056384
+    },
+    "notion-updater": {
+      "files": 3,
+      "logical_bytes": 249752413,
+      "allocated_bytes": 249761792
+    },
+    "old_adobe_logs": {
+      "files": 388,
+      "logical_bytes": 926388309,
+      "allocated_bytes": 927371264
+    }
+  },
+  "skipped": [],
+  "status": "dry_run_pass",
+  "runtime_after": {
+    "captured_at": "2026-10-24T13:24:30.680160+00:00",
+    "active_candidate_apps": {
+      "atlas": [],
+      "pencil-updater": [],
+      "cherrystudio-updater": [],
+      "notion-updater": []
+    },
+    "cds_processes": [
+      {
+        "pid": "851",
+        "command": "zsh",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "1755",
+        "command": "2.1.304",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "2254",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "2255",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "4966",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7260",
+        "command": "zsh",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7327",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7340",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7504",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7505",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7506",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7516",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7519",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "7520",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11724",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11725",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "11726",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19752",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19753",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "19756",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31669",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31670",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "31726",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35224",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35237",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "35238",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36373",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36397",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "36399",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42234",
+        "command": "mcp-server-darwin-arm64",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42243",
+        "command": "aside",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "42246",
+        "command": "python3.10",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54435",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54436",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "54988",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "60586",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "65657",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "71477",
+        "command": "node",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "71478",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "72334",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "78894",
+        "command": "node_repl",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "91429",
+        "command": "codex",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      },
+      {
+        "pid": "94159",
+        "command": "codex-code-mode-host",
+        "cwd": "/Users/zenkim_office/Project/CDS"
+      }
+    ]
+  },
+  "free_bytes_before": 598503833600,
+  "free_bytes_after": 598499057664,
+  "observed_free_bytes_delta": -4775936,
+  "allocation_note": "File-size totals and live free-space change differ due to APFS shared storage and concurrent work.",
+  "finished_at": "2026-10-24T13:24:30.680270+00:00"
+}
