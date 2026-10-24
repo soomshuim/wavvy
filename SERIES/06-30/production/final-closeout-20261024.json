@@ -1,12 +1,13 @@
 {
   "schema": "wavvy.final_release_closeout.v1",
-  "recorded_at_utc": "2026-10-24T07:07:38.174321+00:00",
+  "recorded_at_utc": "2026-10-24T07:16:16.251268+00:00",
   "scope": "current SERIES/06-30 only; process records removed, final result records preserved",
   "authorization": [
     "최종 버전 기록 아닌 과정 기록이면 문서도 다 지워.",
     "이번 06:30의 과정 기록만 (추천)",
     "음원도 남은 두개 재 업로드 시도해봐.",
-    "마지막으로 제목 대폭 변경해서 다시 해보자."
+    "마지막으로 제목 대폭 변경해서 다시 해보자.",
+    "그럼 다시 2bpm 올려서 업로드해볼까?"
   ],
   "release": {
     "video_id": "FUBJ6OBTzoI",
@@ -56,8 +57,8 @@
   "suno_final_retry": {
     "workspace": "[06:30]",
     "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
-    "observed_at": "2026-10-24T07:04:13.794Z",
-    "method": "normal UI upload through Aside MCP; wholly different filenames; unchanged WAV bytes",
+    "observed_at": "2026-10-24T07:14:21.420Z",
+    "method": "normal UI upload through Aside MCP; each retained original accelerated once with FFmpeg atempo=178/176, pitch preserved; wholly different English filenames retained",
     "uploaded": 0,
     "rejected": 2,
     "pending": 0,
@@ -72,7 +73,21 @@
         "last_upload_filename": "NEON WILDFIRE - Unchained Velocity.wav",
         "result": "rejected",
         "message": "This audio matches an existing recording",
-        "audio_bytes_changed": false
+        "audio_bytes_changed": false,
+        "uploaded_copy_audio_bytes_changed": true,
+        "upload_copy": {
+          "upload_filename": "NEON WILDFIRE - Unchained Velocity.wav",
+          "upload_sha256": "1d7b5ba2a1eba6f4144d138cb910ebde9917799d35bb38aff849adaf41542e5c",
+          "bytes": 73488164,
+          "original_duration_seconds": 193.571063,
+          "expected_duration_seconds": 191.39610723595504,
+          "actual_duration_seconds": 191.375188,
+          "duration_error_seconds": -0.02091923595503431,
+          "peak_abs": 0.8723083138465881,
+          "decode_complete": true,
+          "samples_finite": true,
+          "retention": "temporary copy removed after terminal rejection; retained original unchanged"
+        }
       },
       {
         "order": 11,
@@ -83,7 +98,21 @@
         "last_upload_filename": "CARBON HORIZON - Run Beyond Gravity.wav",
         "result": "rejected",
         "message": "This audio matches an existing recording",
-        "audio_bytes_changed": false
+        "audio_bytes_changed": false,
+        "uploaded_copy_audio_bytes_changed": true,
+        "upload_copy": {
+          "upload_filename": "CARBON HORIZON - Run Beyond Gravity.wav",
+          "upload_sha256": "49c9c52959a1e583aa0e8993ee70243195083df31a52af6e548d9123a702d80b",
+          "bytes": 73562308,
+          "original_duration_seconds": 193.766333,
+          "expected_duration_seconds": 191.58918319101122,
+          "actual_duration_seconds": 191.568271,
+          "duration_error_seconds": -0.020912191011206005,
+          "peak_abs": 0.9335029125213623,
+          "decode_complete": true,
+          "samples_finite": true,
+          "retention": "temporary copy removed after terminal rejection; retained original unchanged"
+        }
       }
     ],
     "visible_workspace_count_after": 18,
@@ -220,7 +249,52 @@
       ],
       "note": "historical final accepted record mapping, retained as result record; current retry reobserved count18 but did not re-read every virtualized row"
     },
-    "further_retry_planned": false
+    "further_retry_planned": false,
+    "tempo_adjustment": {
+      "tempo_factor": 1.0113636363636365,
+      "source_processing_target_bpm": 176,
+      "copy_processing_target_bpm": 178,
+      "whole_song_bpm_certified": false,
+      "recipe": {
+        "filter": "atempo=1.0113636363636365",
+        "codec": "pcm_f32le",
+        "sample_rate": 48000,
+        "channels": 2,
+        "map_metadata": -1
+      }
+    },
+    "temporary_cleanup": {
+      "files_deleted": 4,
+      "wav_copies_deleted": 2,
+      "wav_logical_bytes_deleted": 147050472,
+      "directory_removed": true,
+      "originals_unchanged": true
+    },
+    "final_checks": {
+      "protected_final_contracts_unchanged": 49,
+      "original_wav_count": 2,
+      "tempo_retry_directory_absent": true,
+      "official_state_revision": 91,
+      "state_check": "PASS",
+      "uploaded_gate": "PASS",
+      "git_diff_check": "PASS"
+    },
+    "review": {
+      "source": "isolated reviewer /root/plus2_suno_final_review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "verdict": "CLEAN",
+      "confirmed_critical_high": 0,
+      "principle_observations": [],
+      "adoption": {
+        "source_checked": "original user request and five-file diff with raw FFmpeg and Suno UI results",
+        "claims": "tempo target, terminal rejection, preserved originals, removed copies and unchanged release records",
+        "controller_measurement": "original2 and protected49 SHA256 unchanged; exact published metadata section unchanged; temporary directory absent; terminal Suno 0 uploaded/2 failed/0 pending and18songs",
+        "duplicates_conflicts": "no conflict with retained original sources or published video; prior cleanup review remains historical",
+        "counterevidence": "processing target178 is not whole-song measured BPM; no successful Suno upload and no whole-song listening claim",
+        "decision": "CLEAN adopted for current five-file change"
+      }
+    }
   },
   "retained_final_contracts_sha256": {
     ".ai/inbox-reviews/2026-10-24/premixed-release-final-review.md": "68bba3d9df04d36ed52c9ba2af7209d467adc95df4de035a56b5ebb7da82cc8e",

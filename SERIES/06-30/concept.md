@@ -140,7 +140,7 @@ hard rock, hardcore punk, post hardcore, breakbeat, electronic breakbeat, instru
 
 ## Suno 최종 보관 상태
 
-6번 「다리의 불꽃」과 11번 「계속 앞으로」는 완전히 다른 영문 제목으로 마지막 재업로드를 했으나 둘 다 `This audio matches an existing recording`(기존 녹음과 일치)으로 거절됐다. 성공 0·거절 2·처리 대기 0이며 화면의 곡 수는 18개다. 두 원본 WAV는 변경 없이 별도 보관한다. 추가 재시도 계획은 없다.
+6번 「다리의 불꽃」과 11번 「계속 앞으로」를 보관본보다 2 BPM 빠르게 만든 사본으로 각각 한 번 재업로드했으나 둘 다 `This audio matches an existing recording`(기존 녹음과 일치)으로 거절됐다. 처리 목표는 176→178 BPM이며 전곡 실측 인증은 아니다. 성공 0·거절 2·처리 대기 0, 화면의 곡 수는 18개다. 원본 두 개는 변경 없이 보관하고 이번 임시 사본은 삭제했다. 추가 재시도 계획은 없다.
 
 ## 최종 썸네일
 
