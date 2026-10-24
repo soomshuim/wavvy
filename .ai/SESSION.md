@@ -27,6 +27,12 @@
 
 ---
 
+## 2026-10-24 [CDX] 06:30 시리즈 최종 마감 (-record)
+- 젠의 “좋아 여기서 일단 06:30 마무리” 지시로 이번 시리즈를 마감했다. 공개 영상 FUBJ6OBTzoI는 20곡×2회·2:06:10.660·40챕터이며 댓글 1개·좋아요까지 반영한 최종 상태다.
+- 승인에 따라 영상·믹스·이번 과정 기록과 임시 사본은 삭제했다. 최종 JPG·PSD·원문 20개·최종 결과 기록 및 6·11번 원본 WAV 두 개를 보관한다. 두 곡은 2 BPM 빠른 사본도 Suno에서 기존 녹음 일치로 거절됐고 마지막 관측은 18곡이다.
+- 공식 상태 revision 91 uploaded(업로드 완료), state check·uploaded gate PASS를 재확인했다. 최신 실행 결과는 c1ec79c이며 production/final-closeout-20261024.json에 고정돼 있다. 남은 제작·게시·재업로드 작업은 없다. 이번 기록에서 새 미디어 제작·사이트 변경은 하지 않았다.
+
+
 ## 2026-10-23 [CDX] 17:30 수동 한국어 자막 게시 완료
 - 젠의 “응. 잘 되면 스킬도 수정” 승인에 따라 확정 원고를 시간 맞춘 [최종 SRT](../SERIES/17-30/output/youtube_subtitles_ko_timed_estimated.srt)로 만들었다. 1,270구간·1,498행, SHA-256 `29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226`이다. 원문 가사 자체는 변경하지 않았고 실제 가창 근거가 있는 반복만 회차당 10행 더했다. 전곡 청취 판정이 아니라 일반 읽기용 시간 추정이다. [최종 독립 검토](reviews/2026-10-23-timed-subtitle-final-review.md)는 CLEAN(확정 Critical/High 0)이다.
 - [게시 원시 관찰](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/publication-observation.json)에서 기존 공개 영상 `3HorT4OoDhg`의 수동 한국어 `게시됨`, 별도 자동 한국어 보존, 공개 자막 0:05·38:20·1:04:59·2:08:04의 정확한 원문 표시와 확인 뒤 일시정지를 확인했다. [Studio 다운로드 SRT](../SERIES/17-30/input/validation/2026-10-23-timed-subtitles/publication/studio-published-manual-ko.srt)는 최종 SRT보다 마지막 LF 1바이트만 많고 그 외 바이트가 같다(86,025바이트, SHA-256 `b9ef1541954c96ee07593278d34d0553ed1965e8a6e8758d352d20ea37de1731`). 승인 제목·영상·공개·댓글은 변경하지 않았다. `wavvy-youtube-publish` 스킬에 기존 영상의 자막 후속 경로를 반영했다.
