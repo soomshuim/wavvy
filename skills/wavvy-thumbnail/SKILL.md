@@ -13,9 +13,9 @@ Read the target `SERIES/[series]/concept.md`, `wavvy.md`, existing `brand/` asse
 
 ## Steps
 
-1. **Design Read:** State the intended scene, audience, mood, one visual focal point, and short thumbnail copy in one line. Audit the existing Wavvy logo/time treatment before choosing placement. Keep the image concept tied to the actual series, not a generic playlist aesthetic.
+1. **Design Read:** State the intended scene, audience, mood, one visual focal point, and short thumbnail copy in one line. Audit the existing Wavvy logo treatment before choosing placement. The default thumbnail does not display a time; use older thumbnails as visual references without copying their time digits. Keep the image concept tied to the actual series, not a generic playlist aesthetic.
 2. **Draft:** Make a 16:9 scene image at a review size well below final 4K. Keep title lettering out of the generated scene. Show the draft to 젠 and ask for one visual approval or revision decision. A specific user correction changes the draft brief; repeat the preview only as needed.
-3. **After approval:** Produce the final 3840×2160 video background from the approved composition. State whether the pixels came from native generation or enlargement. Compose the thumbnail with the real Wavvy logo, series time, and a short title using a suitable local graphics tool; do not rely on image generation to spell text. Preserve the approved subject, clothing, season, and scene.
+3. **After approval:** Produce the final 3840×2160 video background from the approved composition. State whether the pixels came from native generation or enlargement. Compose the thumbnail with the real Wavvy logo and a short title, without time digits in the default format, using a suitable local graphics tool; do not rely on image generation to spell text. Preserve the approved subject, clothing, season, and scene.
 4. **Preflight:** Inspect the final image and thumbnail at full size and at a small phone-feed size. Check exact text, readable hierarchy and contrast, safe spacing, intentional negative space, subject integrity, brand consistency, and image artifacts. Remove text that only reads at desktop size. Verify actual file dimensions and record the approved draft, resulting paths, and any visible limitation in the series concept.
 
 ## Outputs and boundary

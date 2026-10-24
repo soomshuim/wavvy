@@ -1,0 +1,370 @@
+{
+  "schema": "wavvy.branded_thumbnail.v2",
+  "created_at_utc": "2026-10-24T03:20:54.602999+00:00",
+  "status": "corrected_final_saved_visual_inspection_recorded",
+  "attempt_number": 2,
+  "user_request_quotes": [
+    "좌측 하단으로 하고 라인은 어디다 팔아먹었어",
+    "06:30은 그냥 삭제해 이제 기본 포맷에서 시간 안쓸거야"
+  ],
+  "scope": "One builtin imagegen correction from the preserved unlettered photo. Top-left real Wavvy logo only, no time. Bottom-left Cadence + required hairline +175 BPM.",
+  "worker_runtime": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence": "/Users/zenkim_office/.codex/sessions/2026/10/24/rollout-2026-10-24T10-38-52-01a16b8f-8df2-7470-9784-a394c44b28ec.jsonl"
+  },
+  "tool": "image_gen__imagegen",
+  "referenced_image_paths": [
+    "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+    "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+    "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg"
+  ],
+  "references": [
+    {
+      "role": "exact_base_photo",
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+      "bytes": 2131294,
+      "sha256": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d",
+      "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+    },
+    {
+      "role": "real_logo_artwork",
+      "path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+      "bytes": 21634,
+      "sha256": "140be637760ab412ec45b869a4c776a315b5f447232149947bff576e28e51607",
+      "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png\n  pixelWidth: 572\n  pixelHeight: 312\n"
+    },
+    {
+      "role": "typography_reference_only",
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+      "bytes": 1513732,
+      "sha256": "cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30",
+      "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+    }
+  ],
+  "prompt": "Make one strictly limited logo-and-typography edit to reference image 1. Retain its photographic image and framing. Do not generate a new photograph.\n\nREFERENCE ROLES:\nReference 1 is the exact unlettered running photograph. Preserve the three runners, every face and identity, expressions, skin, short hair tied naturally at the back with NO headband, technical running clothes, body proportions, poses, shoes, river, railings, bridge, buildings, sky, light, colors, image texture and camera position. Keep all non-overlay areas as faithfully unchanged as possible. No beauty retouching or scene changes.\nReference 2 is the actual white Wavvy logo with transparency. Use its precise lettering proportions and curled underline flourish. The white transparent artwork may look blank on white.\nReference 3 is ONLY the finished typography/layout example. Copy its top-left logo placement and bottom-LEFT label, horizontal line and bold BPM hierarchy. Do not copy its people, setting or background. Ignore and omit ALL time text visible in that reference. The output must contain NO TIME, no clock digits, and no time next to the logo.\n\nOUTPUT: One 1672 x 941 widescreen thumbnail, same framing as reference 1, below 4K.\nOnly add these elements in white with a faint soft shadow:\n1) Upper LEFT: real Wavvy logo from reference 2, about x=65 y=56, width=284 px. LOGO ALONE. Do not place any time or additional text beside it.\n2) Bottom LEFT: EXACT text \"Cadence\", thin delicate sans-serif matching reference 3 (SF Pro Display Thin-like, about 50 px), around x=64 y=688. Keep the entire lower group aligned to the LEFT, not the right.\n3) MANDATORY THIN WHITE HORIZONTAL LINE: restore the same hairline shown immediately to the RIGHT of Cadence in reference 3. It runs approximately from x=261 to x=600 at y=718, one pixel thick, level with the optical middle of the Cadence word. This line is a required part of the layout. Do not omit it. It is not a line below the headline.\n4) Directly BELOW that Cadence-and-line row, add EXACT text \"175 BPM\". Use one ordinary space between 175 and BPM. Very large heavy condensed white sans-serif matching the reference's bold tempo headline (Helvetica Neue Condensed Black-like, about 148 px), around x=59 y=719. The rendered large glyphs should sit around y=755 through y=866, with about 75 px bottom safe space. Keep its left edge near x=64. The line above should finish roughly aligned to the right edge of the headline M.\n\nThe BOTTOM-RIGHT must contain NO text, label, time or graphic. No extra words, numbers, badges, boxes, watermarks, additional logos or decorative elements. The one specified Cadence horizontal line MUST be present.\nHighest priority: preserve reference-1 photograph, remove time from the template entirely, and faithfully produce the top-left Wavvy logo plus bottom-left Cadence / horizontal line / 175 BPM layout.",
+  "requested_exact_text": [
+    "Wavvy",
+    "Cadence",
+    "175 BPM"
+  ],
+  "time_text_allowed": false,
+  "mandatory_line": {
+    "from": [
+      261,
+      718
+    ],
+    "to": [
+      600,
+      718
+    ],
+    "approx_thickness_px": 1
+  },
+  "planned_outputs": [
+    "SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+    "SERIES/06-30/input/thumb.jpg"
+  ],
+  "source_original_verification": {
+    "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+    "sha256_after": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d",
+    "matches_pre_generation": true
+  },
+  "superseded_attempts": [
+    {
+      "schema": "wavvy.branded_thumbnail.v1",
+      "created_at_utc": "2026-10-24T03:15:57.061594+00:00",
+      "status": "superseded_by_explicit_user_correction",
+      "user_request": "썸네일 다시 로고 시간 175bpm cadence 넣어줘",
+      "scope": "One builtin image_gen edit adding real Wavvy +06:30 upper left and Cadence +175 BPM lower right to the existing tied-hair photo. JPEG conversion only with sips. No loop/4K/compositor.",
+      "worker_runtime": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "evidence": "/Users/zenkim_office/.codex/sessions/2026/10/24/rollout-2026-10-24T10-38-52-01a16b8f-8df2-7470-9784-a394c44b28ec.jsonl"
+      },
+      "tool": "image_gen__imagegen",
+      "referenced_image_paths": [
+        "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+        "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg"
+      ],
+      "references": [
+        {
+          "role": "exact_base_photo",
+          "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+          "bytes": 2131294,
+          "sha256": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d",
+          "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+        },
+        {
+          "role": "real_logo_artwork",
+          "path": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png",
+          "bytes": 21634,
+          "sha256": "140be637760ab412ec45b869a4c776a315b5f447232149947bff576e28e51607",
+          "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/brand/logo_wavvy.png\n  pixelWidth: 572\n  pixelHeight: 312\n"
+        },
+        {
+          "role": "typography_reference_only",
+          "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+          "bytes": 1513732,
+          "sha256": "cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30",
+          "sips_dimensions_raw": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+        }
+      ],
+      "prompt": "Edit reference image 1 only. This is a strictly limited typography-and-logo addition to the supplied photograph, not a new scene generation.\n\nREFERENCE ROLES:\n1. thumbnail-draft-runningwear-tiedhair-20261024.png is the exact base photograph to retain. Keep its entire photographic image: all three runners' identities, faces, skin, expressions, hair, small tied-back short hair, dark technical running clothes, bodies, limbs, shoes, poses, positions, camera perspective, river, bridge, railings, skyline, sky colors, light, grain, and framing. There must be no sports headband or new accessory. Do not beautify, retouch, repaint, recolor, reshoot, or recompose any part of this photograph. Preserve all non-overlay regions as faithfully as possible.\n2. logo_wavvy.png is the real Wavvy brand artwork. It is white lettering with transparency, so a white viewer background can hide it. Use that precise flowing Wavvy lettering and its long curled underline flourish, preserving its proportions. Do not invent a different logo.\n3. SERIES/07-00/input/thumb.jpg is ONLY a reference for the logo/time size, type shapes, and Cadence/BPM hierarchy. Do not borrow its people, background, colors, clothing, scene, or the text 07:00 and 180 BPM.\n\nOUTPUT:\nOne finished widescreen thumbnail at the same 1672 x 941 framing/aspect as reference 1, below 4K. Add only these four white graphic/text elements:\n- Upper left: the supplied real Wavvy logo, around x=65 y=56, displayed width about 284 px in a 1672 px wide canvas.\n- Immediately to its right: EXACT text \"06:30\", using the same time-number styling and optical placement as reference 3; target Pacifico-Regular-like numerals, about 58 px, reference anchor x=343 y=78.\n- Lower RIGHT: EXACT text \"Cadence\", small, delicate and thin, target SF Pro Display Thin-like, about 50 px.\n- Directly below Cadence: EXACT text \"175 BPM\", very bold condensed sans-serif, target Helvetica Neue Condensed Black-like, about 148 px. Include one standard space between 175 and BPM. All characters must be clear, correct and complete.\n\nAlign the RIGHT edge of Cadence and 175 BPM at about x=1607 (65 px safe margin from the right); leave approximately 75 px beneath the large headline. Keep the headline group together in the lower-right quadrant, preserving the size hierarchy of reference 3 while moving that group to the right. Avoid faces. It can cross lower legs at the bottom as an overlay. White ink with only a faint soft shadow for legibility; no badges, boxes, new gradients, decorative lines, extra text, watermarks, extra logos, or other design additions.\n\nHighest priority: this must remain the exact reference-1 running photograph with only the real logo and specified text overlaid. Do not modify the face, hairstyle, clothing or photo color.",
+      "requested_exact_text": [
+        "Wavvy",
+        "06:30",
+        "Cadence",
+        "175 BPM"
+      ],
+      "planned_outputs": [
+        "SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+        "SERIES/06-30/input/thumb.jpg"
+      ],
+      "photo_source_untouched": true,
+      "loop_generation": false,
+      "cli_python_image_editing": false,
+      "tool_result_metadata": {
+        "image_url": {
+          "binary_payload_omitted": true,
+          "encoded_character_count": 2887278
+        },
+        "output_hint": "Generated images are saved to /Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec as /Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-d56db754-48e1-44e1-9adf-031830f4305f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "actual_generated_source_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-d56db754-48e1-44e1-9adf-031830f4305f.png",
+      "jpeg_conversion": {
+        "command": [
+          "/usr/bin/sips",
+          "-s",
+          "format",
+          "jpeg",
+          "-s",
+          "formatOptions",
+          "92",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+          "--out",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg"
+        ],
+        "exit_code": 0,
+        "stdout_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png\n  /Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg\n",
+        "stderr_raw": "",
+        "resize": false,
+        "crop": false,
+        "note": "Format conversion only. JPEG is lossy; image dimensions and framing are retained, not numerically identical RGB samples."
+      },
+      "completed_at_utc": "2026-10-24T03:18:19.088357+00:00",
+      "outputs": [
+        {
+          "path": "SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2165441,
+          "sha256": "c0ed54cb44eb3094fa02d88340d49df20b9f53a449d730ad48dbc72ce54fa484",
+          "dimension_command": [
+            "/usr/bin/sips",
+            "-g",
+            "pixelWidth",
+            "-g",
+            "pixelHeight",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png"
+          ],
+          "dimension_stdout_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+        },
+        {
+          "path": "SERIES/06-30/input/thumb.jpg",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 488925,
+          "sha256": "0b11e432a76a277a45357666cf158495a6244940d5b2e4e1e1b831f98593fc21",
+          "dimension_command": [
+            "/usr/bin/sips",
+            "-g",
+            "pixelWidth",
+            "-g",
+            "pixelHeight",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg"
+          ],
+          "dimension_stdout_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+        }
+      ],
+      "visual_inspection": {
+        "inspected_actual_generated_png": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-d56db754-48e1-44e1-9adf-031830f4305f.png",
+        "inspected_actual_final_jpeg": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg",
+        "visible_exact_text": [
+          "Wavvy",
+          "06:30",
+          "Cadence",
+          "175 BPM"
+        ],
+        "layout_observation": "White Wavvy +06:30 are at upper left; thin Cadence above large bold 175 BPM is right aligned at lower right; no text covers faces.",
+        "photo_observation": "The same three runners, facial expressions, tied-back short hair without a sports band, dark technical clothes, running poses, river/bridge/skyline, light and framing remain visually consistent with the supplied base photo.",
+        "limitations": [
+          "This is one generative edit, so non-text pixels and the real logo glyphs are not guaranteed to be mathematically identical to the inputs. No pixel-exact preservation claim is made.",
+          "Typeface shapes visually follow the 07:00 reference; exact installed font rendering/metrics are not guaranteed by imagegen.",
+          "JPEG conversion is lossy, with unchanged 1672x941 geometry."
+        ],
+        "formal_review_claim": false,
+        "user_final_approval_claim": false,
+        "phone_preview": {
+          "path_used_then_removed": "work/thumbnail-branded-0630-phone-20261024.jpg",
+          "dimensions": [
+            480,
+            270
+          ],
+          "bytes": 44901,
+          "sha256": "c1eae7a4114e965d0c6ce951c9cd3489d8fe8cac58786383092f1c59aeb79e68",
+          "command": [
+            "/usr/bin/sips",
+            "-Z",
+            "480",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg",
+            "--out",
+            "/Users/zenkim_office/Project/wavvy/work/thumbnail-branded-0630-phone-20261024.jpg"
+          ],
+          "actually_viewed": true,
+          "observation": "At 480x270 the white Wavvy/06:30 and lower-right Cadence/175 BPM are readable; Cadence remains deliberately small and thin. No face is covered. Lower-leg overlap is visible as intended.",
+          "removed_exact_own_preview_after_view": true,
+          "preview_exists_after": false
+        },
+        "branding_method": "One built-in imagegen edit combining the photo, real-logo reference and 07:00 typography reference. Visual correspondence only; no claim of exact glyph pixels or installed-font rendering."
+      },
+      "source_original_verification": {
+        "path": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-draft-runningwear-tiedhair-20261024.png",
+        "sha256_after": "3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d",
+        "matches_pre_generation": true
+      },
+      "output_scope": {
+        "png_final": true,
+        "jpeg_final": true,
+        "loop_generated": false,
+        "upscale_4k": false,
+        "extra_variant_generated": false,
+        "local_photo_editing": false
+      },
+      "superseded_reason": "User rejected bottom-right placement and missing Cadence line, then removed time from the default format.",
+      "canonical_paths_note": "Historical hashes describe the first output; canonical PNG/JPEG will be overwritten by the newly authorized correction. No extra project copy of the rejected PNG is made. Native tool output path remains in the historical record."
+    }
+  ],
+  "loop_generation": false,
+  "cli_python_image_editing": false,
+  "actual_generated_source_path": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-081d49be-7eed-468d-9f9e-9b2542044428.png",
+  "tool_result_metadata": {
+    "image_url": {
+      "binary_payload_omitted": true,
+      "encoded_character_count": 2911554
+    },
+    "output_hint": "Generated images are saved to /Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec as /Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-081d49be-7eed-468d-9f9e-9b2542044428.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "outputs": [
+    {
+      "path": "SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2183648,
+      "sha256": "268680bd25d300d85882a3c707e11c2500ea6ac68a10b775f35a1eeef44f0622",
+      "dimension_command": [
+        "/usr/bin/sips",
+        "-g",
+        "pixelWidth",
+        "-g",
+        "pixelHeight",
+        "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png"
+      ],
+      "dimension_stdout_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+    },
+    {
+      "path": "SERIES/06-30/input/thumb.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 487974,
+      "sha256": "597814938758568a33c544c8eada78d7f878e67bd761b061a5ed73b94a0bd98c",
+      "dimension_command": [
+        "/usr/bin/sips",
+        "-g",
+        "pixelWidth",
+        "-g",
+        "pixelHeight",
+        "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg"
+      ],
+      "dimension_stdout_raw": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg\n  pixelWidth: 1672\n  pixelHeight: 941\n"
+    }
+  ],
+  "jpeg_conversion": {
+    "command": [
+      "/usr/bin/sips",
+      "-s",
+      "format",
+      "jpeg",
+      "-s",
+      "formatOptions",
+      "92",
+      "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumbnail-branded-0630-20261024.png",
+      "--out",
+      "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg"
+    ],
+    "exit_code": 0,
+    "raw_stdout_preserved": false,
+    "execution_evidence": "The preceding subprocess.run(check=True) completed before a dimension-metadata parsing exception. No image conversion was repeated to recover metadata.",
+    "resize": false,
+    "crop": false,
+    "note": "Format-only conversion; same geometry, lossy RGB samples."
+  },
+  "metadata_recording_issue": {
+    "raw_error": "AttributeError: NoneType object has no attribute group",
+    "cause": "Overescaped regex in dimension metadata parser, after image copy/JPEG conversion had succeeded.",
+    "resolution": "Read-only sips dimension query parsed by field name; no new generation or composition."
+  },
+  "completed_at_utc": "2026-10-24T03:23:09.806190+00:00",
+  "visual_inspection": {
+    "actual_generated_png_viewed": "/Users/zenkim_office/.codex/generated_images/01a16b8f-8df2-7470-9784-a394c44b28ec/exec-081d49be-7eed-468d-9f9e-9b2542044428.png",
+    "actual_final_jpeg_viewed": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/input/thumb.jpg",
+    "visible_exact_text": [
+      "Wavvy",
+      "Cadence",
+      "175 BPM"
+    ],
+    "time_text_present": false,
+    "lower_right_text_present": false,
+    "mandatory_line_visible": true,
+    "layout_observation": "Top-left Wavvy logo alone. Bottom-left thin Cadence with a thin horizontal white line immediately to its right; large bold 175 BPM sits directly beneath. No label at bottom right.",
+    "photo_observation": "All three runners, their expressions and poses, tied-back short hair without a sports band, technical clothes, river/bridge/sky and framing remain visually consistent with the unlettered source. Original source file SHA is unchanged.",
+    "branding_method": "One built-in imagegen edit from the unlettered scene, real-logo reference and 07:00 layout reference. This is visual reference matching, not deterministic installed-font composition.",
+    "limitations": [
+      "Exact logo glyph pixels, installed typeface metrics and requested coordinate/thickness values are not guaranteed by imagegen.",
+      "Photographic non-overlay pixels are not guaranteed numerically identical despite visual consistency.",
+      "JPEG conversion is lossy and retains the same 1672x941 geometry."
+    ],
+    "phone_preview": {
+      "path_used_then_removed": "work/thumbnail-branded-0630-phone-20261024.jpg",
+      "dimensions": [
+        480,
+        270
+      ],
+      "bytes": 44579,
+      "sha256": "17137b4da4516c567f1568f9439f963c24b456a8dc1202c43c709a9e32666653",
+      "actual_viewed": true,
+      "observation": "Wavvy alone and bottom-left Cadence / horizontal line / 175 BPM are readable at 480x270. The thin Cadence line is subtle at this size, like the reference. Faces stay unobstructed.",
+      "removed_exact_own_preview_after_view": true,
+      "preview_exists_after": false
+    },
+    "formal_review_claim": false,
+    "user_final_approval_claim": false
+  },
+  "output_scope": {
+    "single_current_png": true,
+    "single_current_jpeg": true,
+    "loop_generated": false,
+    "upscale_4k": false,
+    "new_generation_calls_for_this_correction": 1,
+    "extra_project_rejected_png_copy": false,
+    "local_photo_editing": false
+  }
+}

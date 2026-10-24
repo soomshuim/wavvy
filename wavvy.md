@@ -116,13 +116,13 @@ Use `skills/wavvy-lyricist/SKILL.md` when writing, rewriting, or reviewing Wavvy
 | **채널명** | Wavvy |
 | **핸들** | @wavvy24 |
 | **로고** | Wavvy (24 제외) |
-| **썸네일** | Wavvy {HH:MM} 포맷 |
-| **시간 표기** | 24시간제 (00:00 ~ 23:00) |
+| **썸네일** | Wavvy 로고 + 시리즈별 짧은 문구 |
+| **썸네일 시간 표기** | 기본 포맷에서는 사용하지 않음 |
 
 ### 타이틀 포맷
 YouTube title/description/tag format SSOT: `MASTER/youtube/YOUTUBE.md`.
 
-Thumbnail text may keep the shorter `Wavvy {HH:MM}` branding treatment when the series design requires it.
+2026-10-24 젠의 “06:30은 그냥 삭제해 이제 기본 포맷에서 시간 안쓸거야”에 따라 기본 썸네일에는 시간 숫자를 넣지 않는다. 기존 시간대별 시리즈 이름·음악 포지셔닝·YouTube 제목 형식은 이 변경의 대상이 아니다. 과거 썸네일은 당시 이력과 시간 표시를 제외한 디자인 참고로 유지한다.
 
 ### 영상 구성
 - **롱폼**: 좌상단 로고 워터마크 (인트로 없음)

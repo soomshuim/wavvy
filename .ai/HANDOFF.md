@@ -2606,3 +2606,23 @@ Diagnostic: ~/Project 직접19항목 합계515,335,004,160바이트이며, 그 �
 Chrome: X/com.google.Chrome.code_sign_clone 638개와 du 표시962.65GB를 확인했지만 APFS 공유 블록 때문에 독점 물리 용량·시스템 데이터772.07GB의 정확한 원인·삭제 회수량은 미확정이다. 시스템 볼륨 사용량을 화면의 시스템 데이터 분류와 같다고 보지 않는다. 권한 거부는0바이트가 아니라 미확인이다.
 Evidence: .ai/cleanup/2026-10-24-system-data-summary.md 및 링크된 whole-mac/j8-du/chrome-clones/private-var JSON 네 개에 원시 명령·접근 한계·공식 Chromium/Apple 근거를 기록했다. 전체 원시는 완료·동결 확인 뒤 이번 마감 기록에 포함한다.
 Actions: 이번 원인 진단의 삭제·이동·앱 종료·권한 변경·sudo0회다. 앞서 승인된 Wavvy 삭제1,298파일52,534,148,348바이트는 별도 실행 이력이며 이미 없던 v1/v2 PNG2개도 그 수에 넣지 않는다. 현재 음원3개·선택 묶음머리 사진·state revision85·미완료 글자 합성은 진단으로 바꾸지 않았다. 커밋·푸시는 아직 하지 않았고 컨트롤러 승인 후 이번 마감 기록을 저장한다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-24 (썸네일 최신 정정·기본 시간 표기 제거)
+Current: 최신 원문 “좌측 하단으로 하고 라인은 어디다 팔아먹었어.”, “06:30은 그냥 삭제해 이제 기본 포맷에서 시간 안쓸거야”. 좌상단 Wavvy 로고만·좌하단 Cadence와 오른쪽 흰 가로선·아래 175 BPM으로 별도 이미지 워커가 수정 중이다. 새 실물은 아직 대기다. wavvy.md·썸네일 스킬의 기본 시간 표기만 제거했으며 시리즈 이름·YouTube 제목·기존 시리즈 실물은 이 변경 대상이 아니다.
+History: 이전 우하단·시간 포함 PNG/JPEG와 당시 독립 Astra/high CLEAN은 수정 전 이력이다. 최신 정정 결과의 최종 판정이나 사용자 승인이 아니다. 정확한 원문·모델 증거는 .ai/reviews/2026-10-24-0630-thumbnail-branding-review.md에 범위를 표시해 보존했다.
+Preserved: 원본 묶음머리 사진·제작 기록·음원 3개는 그대로다. 이미 총 2회인 믹스에는 반복을 추가하지 않는다. 4K/loop/영상/업로드·추가 삭제는 없다.
+Resume: 최신 이미지 실측과 새 검토 결과가 도착하면 현재 문서를 현행화하고 전용 상태 writer를 한 번 실행한다. 이번 writer는 아직 0회이며 revision85/track_source_draft/input2 그대로다. 커밋·푸시는 최신 정정으로 중단됐고 컨트롤러 재지시를 기다린다. HEAD는 8cafd15a05d28f2a115e75757502901353928d3d다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-24 (무시간·좌하단 케이던스/흰 가로선 썸네일 생성·최종 독립 검토)
+Current: 최신 사용자 정정을 반영해 좌상단 Wavvy 로고만, 좌하단 Cadence·그 오른쪽 흰 수평선·아래 175 BPM인 실제 PNG/JPEG를 만들었다. 시간 숫자는 없다. PNG는 SERIES/06-30/input/thumbnail-branded-0630-20261024.png·1672×941·2,183,648바이트·SHA-256 268680bd25d300d85882a3c707e11c2500ea6ac68a10b775f35a1eeef44f0622, JPEG는 input/thumb.jpg·1672×941·487,974바이트·SHA-256 597814938758568a33c544c8eada78d7f878e67bd761b061a5ed73b94a0bd98c다. 원본 묶음머리 사진은 SHA-256 3a8a528e99d87d1a202a29baddc50bf04e791d170e5d15a3522f8cf03898404d로 불변이다.
+Policy: wavvy.md와 skills/wavvy-thumbnail/SKILL.md의 기본 썸네일 시간 표시를 제거했다. 시리즈 이름·YouTube 제목·옛 시리즈 실물은 바꾸지 않는다. 명시 Packaging Contract의 시간 검사는 기존07:00에만 적용돼 현재06:30을 막지 않으며 코드는 수정하지 않았다.
+Review: 최신 독립 실제 gpt-6-astra/high 검토 .ai/reviews/2026-10-24-0630-thumbnail-branding-final-review.md의 CLEAN(확인된 중대 결함0·원칙 관찰 없음)을 컨트롤러가 원본/PNG/JPEG/정책 직접 대조 뒤 채택했다. 이전 우하단 판정은 별도 당시 이력이며 최신 판정으로 복사하지 않았다. 작은 480×270 화면 확인은 이미지 실행 워커의 실제 관찰이다. 검토자는 별도 폰 축소본이나 전체 생성 경로를 실행 확인하지 않았고 로고 정밀 윤곽은 판정에서 제외했다.
+State: 전용 writer를 정확히1회 실행해85→86·track_source_draft·입력 음원2개를 기록했다. 일반 next_action과 artifact_status는 동일하며 삭제된 미디어의 자동 복구 지시가 아니다. .ai/validation/2026-10-24-0630-thumbnail-branding-gates.json에 전후 상태·좁은 파일 대조·실제 명령 결과를 보존한다.
+Boundary: 원본 사진·동명 제작 기록·음원3개를 보존했다. 이미 총2회인 믹스에는 반복을 추가하지 않는다. 사진은 시각적으로 유지됐으나 화소·정확한 글꼴·로고 화소·그림자 강도의 수학적 일치는 보장하지 않는다. 사용자 주관적 최종 승인·4K·loop·영상·업로드 완료는 주장하지 않는다. 이미지 워커가 확인용 임시 사본1개만 제거했으며 추가 삭제는 없다.
+Record: 컨트롤러가 최신 검토 뒤 이 정확 범위의 커밋·푸시를 승인했다. 기본 폴더의 기존master에서 이번 마감 기록을 저장하며 새 branch/worktree는 만들지 않는다. 현재 필수 사용자 결정 대기는 없다.
