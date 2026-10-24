@@ -1,0 +1,2413 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 9,
+  "title": "숨을 세어",
+  "candidate_id": "54688321-7ea2-479f-8e5e-0bf7c94bd2b3",
+  "source_path": "SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+  "source_sha256": "38ee23b39b28d99337fa79cf080c0c54d3cc665e964c94efafa9a1158482ac43",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/09.json",
+  "analysis_sha256": "8759200926cdcc1b76488cb70f63706d9d4689eb66abab5a9acf6c63a7aa5771",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/09__숨을 세어__180.wav",
+  "output_sha256": "8eb899be2518ad9b952c0f834e31879549ef654fe51f434a5c2ee4694561a64d",
+  "source_duration_seconds": 202.28,
+  "output_duration_seconds": 208.25125,
+  "output_peak_linear": 0.727508544921875,
+  "first_grid_beat_output_seconds": 0.14974358974358973,
+  "grid_beat_count": 619,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 180.70632568269073,
+        "mid": 180.61921003564743,
+        "high": 180.58197320799647
+      },
+      "band_strength": {
+        "low": 0.6715010788290159,
+        "mid": 0.5147085167730486,
+        "high": 0.6160083927472151
+      },
+      "median_bpm": 180.61921003564743,
+      "band_spread_bpm": 0.12435247469426258
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 180.31001363494056,
+        "mid": 180.35483356103725,
+        "high": 179.9467286580983
+      },
+      "band_strength": {
+        "low": 0.6290017708431859,
+        "mid": 0.5909432766905824,
+        "high": 0.6587020399868847
+      },
+      "median_bpm": 180.31001363494056,
+      "band_spread_bpm": 0.40810490293895896
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 180.3954419205009,
+        "mid": 180.32084271030132,
+        "high": 179.93671924923797
+      },
+      "band_strength": {
+        "low": 0.64131228284194,
+        "mid": 0.5852397256051313,
+        "high": 0.6775646756457924
+      },
+      "median_bpm": 180.32084271030132,
+      "band_spread_bpm": 0.4587226712629331
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.1606480032095,
+        "mid": 180.15160039031875,
+        "high": 179.85599084903777
+      },
+      "band_strength": {
+        "low": 0.6318167639725041,
+        "mid": 0.6003496437288742,
+        "high": 0.7029612491026608
+      },
+      "median_bpm": 180.15160039031875,
+      "band_spread_bpm": 0.30465715417173556
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.87848990709836,
+        "mid": 179.98875173851047,
+        "high": 179.81610351742395
+      },
+      "band_strength": {
+        "low": 0.5883895164502716,
+        "mid": 0.5815068866116572,
+        "high": 0.7004115601121628
+      },
+      "median_bpm": 179.87848990709836,
+      "band_spread_bpm": 0.17264822108651856
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 179.82932288242947,
+        "mid": 179.85888888685685,
+        "high": 179.78442674580907
+      },
+      "band_strength": {
+        "low": 0.5720202268576445,
+        "mid": 0.5680833687573443,
+        "high": 0.6979955095097633
+      },
+      "median_bpm": 179.82932288242947,
+      "band_spread_bpm": 0.07446214104777482
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.8004952699121,
+        "mid": 179.92695851918202,
+        "high": 179.84982540905784
+      },
+      "band_strength": {
+        "low": 0.5404459663590766,
+        "mid": 0.6066775319027443,
+        "high": 0.7502795081261635
+      },
+      "median_bpm": 179.84982540905784,
+      "band_spread_bpm": 0.12646324926993202
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 180.38220522724546,
+        "mid": 179.9763761606054,
+        "high": 179.98109827513645
+      },
+      "band_strength": {
+        "low": 0.5402970332993533,
+        "mid": 0.6251656821210849,
+        "high": 0.7461644928381652
+      },
+      "median_bpm": 179.98109827513645,
+      "band_spread_bpm": 0.40582906664005236
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.37764724226778,
+        "mid": 179.9752729042081,
+        "high": 179.98726911057136
+      },
+      "band_strength": {
+        "low": 0.5370809693698638,
+        "mid": 0.6166971283054636,
+        "high": 0.7414613220432319
+      },
+      "median_bpm": 179.98726911057136,
+      "band_spread_bpm": 0.4023743380596727
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.09249223595444,
+        "mid": 179.8613820837705,
+        "high": 179.90778295512436
+      },
+      "band_strength": {
+        "low": 0.5567590281909778,
+        "mid": 0.6342525524990077,
+        "high": 0.7385674693414435
+      },
+      "median_bpm": 179.90778295512436,
+      "band_spread_bpm": 0.2311101521839305
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.12869762405532,
+        "mid": 179.79576867976533,
+        "high": 179.893098291558
+      },
+      "band_strength": {
+        "low": 0.5760484128267628,
+        "mid": 0.6729656711834501,
+        "high": 0.7772362675726705
+      },
+      "median_bpm": 179.893098291558,
+      "band_spread_bpm": 0.3329289442899892
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.87877377518544,
+        "mid": 179.85309546401186,
+        "high": 179.82594585686803
+      },
+      "band_strength": {
+        "low": 0.6214207991155155,
+        "mid": 0.6598304942168391,
+        "high": 0.8116227505506639
+      },
+      "median_bpm": 179.85309546401186,
+      "band_spread_bpm": 0.052827918317404965
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 179.7686338047687,
+        "mid": 179.88655852340244,
+        "high": 179.82214062114224
+      },
+      "band_strength": {
+        "low": 0.6358763115666308,
+        "mid": 0.6735700462331461,
+        "high": 0.8268842876331356
+      },
+      "median_bpm": 179.82214062114224,
+      "band_spread_bpm": 0.11792471863373066
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.93304125561548,
+        "mid": 179.92403255144686,
+        "high": 179.86051325829115
+      },
+      "band_strength": {
+        "low": 0.5711687217602626,
+        "mid": 0.679998594939186,
+        "high": 0.8632860343972866
+      },
+      "median_bpm": 179.92403255144686,
+      "band_spread_bpm": 0.07252799732432891
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 179.8450509814607,
+        "mid": 180.01260956612958,
+        "high": 179.9560087513879
+      },
+      "band_strength": {
+        "low": 0.6064242792476635,
+        "mid": 0.6276294296081091,
+        "high": 0.8340752727673482
+      },
+      "median_bpm": 179.9560087513879,
+      "band_spread_bpm": 0.16755858466888185
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.9174834833261,
+        "mid": 179.84092983115562,
+        "high": 179.92590118811398
+      },
+      "band_strength": {
+        "low": 0.6047926030279027,
+        "mid": 0.6557838840403978,
+        "high": 0.7952058804026138
+      },
+      "median_bpm": 179.9174834833261,
+      "band_spread_bpm": 0.08497135695836278
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.89331689686065,
+        "mid": 179.72780994518425,
+        "high": 179.84970756653348
+      },
+      "band_strength": {
+        "low": 0.6408657448113421,
+        "mid": 0.6504394196678907,
+        "high": 0.7902852725754044
+      },
+      "median_bpm": 179.84970756653348,
+      "band_spread_bpm": 0.16550695167640583
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.94564419582616,
+        "mid": 179.8945933884837,
+        "high": 179.92170446837076
+      },
+      "band_strength": {
+        "low": 0.62829275360214,
+        "mid": 0.6118571768168388,
+        "high": 0.694360799419969
+      },
+      "median_bpm": 179.92170446837076,
+      "band_spread_bpm": 0.051050807342448934
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 180.09281315870493,
+        "mid": 179.9265744823648,
+        "high": 179.82611819626771
+      },
+      "band_strength": {
+        "low": 0.6423836015527259,
+        "mid": 0.6205575750133047,
+        "high": 0.6928115009347026
+      },
+      "median_bpm": 179.9265744823648,
+      "band_spread_bpm": 0.2666949624372137
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 180.28023605775644,
+        "mid": 180.01541562001444,
+        "high": 179.86256328976205
+      },
+      "band_strength": {
+        "low": 0.626822959513207,
+        "mid": 0.5713368197635821,
+        "high": 0.6801984678298453
+      },
+      "median_bpm": 180.01541562001444,
+      "band_spread_bpm": 0.41767276799438946
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.45609460865023,
+        "mid": 180.1678021334555,
+        "high": 179.98472110068874
+      },
+      "band_strength": {
+        "low": 0.6604799302594054,
+        "mid": 0.5928513070486766,
+        "high": 0.7056113665839684
+      },
+      "median_bpm": 180.1678021334555,
+      "band_spread_bpm": 0.4713735079614878
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.21222162744783,
+        "mid": 179.99389972173213,
+        "high": 180.01210016667739
+      },
+      "band_strength": {
+        "low": 0.7102034389774184,
+        "mid": 0.6280463946600309,
+        "high": 0.8361966263874883
+      },
+      "median_bpm": 180.01210016667739,
+      "band_spread_bpm": 0.21832190571569754
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.14582877556597,
+        "mid": 179.95229423079655,
+        "high": 179.97488077347165
+      },
+      "band_strength": {
+        "low": 0.7394765676384052,
+        "mid": 0.6915024843777577,
+        "high": 0.8714951566679462
+      },
+      "median_bpm": 179.97488077347165,
+      "band_spread_bpm": 0.19353454476942034
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 179.9873422834673,
+        "mid": 179.9500735924378,
+        "high": 180.04314317457093
+      },
+      "band_strength": {
+        "low": 0.7659109472376499,
+        "mid": 0.657570768858884,
+        "high": 0.8725044586781876
+      },
+      "median_bpm": 179.9873422834673,
+      "band_spread_bpm": 0.09306958213312555
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.01634705625912,
+        "mid": 179.82262058395975,
+        "high": 179.8925267826951
+      },
+      "band_strength": {
+        "low": 0.7603961943074767,
+        "mid": 0.6888661006372158,
+        "high": 0.8330950649758685
+      },
+      "median_bpm": 179.8925267826951,
+      "band_spread_bpm": 0.19372647229937456
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.02172578373376,
+        "mid": 179.7674410174057,
+        "high": 179.86276407182922
+      },
+      "band_strength": {
+        "low": 0.7352729694195032,
+        "mid": 0.6903109948627084,
+        "high": 0.8331778844654696
+      },
+      "median_bpm": 179.86276407182922,
+      "band_spread_bpm": 0.2542847663280554
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 180.15049752359693,
+        "mid": 179.74804701945118,
+        "high": 179.86553942262825
+      },
+      "band_strength": {
+        "low": 0.7066434932724541,
+        "mid": 0.6131068385339723,
+        "high": 0.7515674245485675
+      },
+      "median_bpm": 179.86553942262825,
+      "band_spread_bpm": 0.40245050414574735
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 180.54280167654971,
+        "mid": 180.01724976432428,
+        "high": 179.86876987666233
+      },
+      "band_strength": {
+        "low": 0.7273632021398829,
+        "mid": 0.6385498931491925,
+        "high": 0.6420764733058618
+      },
+      "median_bpm": 180.01724976432428,
+      "band_spread_bpm": 0.6740317998873877
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 179.9344178106463,
+        "mid": 179.8903778376743,
+        "high": 179.94477261976965
+      },
+      "band_strength": {
+        "low": 1.069560374596314,
+        "mid": 0.7916261635968652,
+        "high": 0.4741023985837272
+      },
+      "median_bpm": 179.9344178106463,
+      "band_spread_bpm": 0.05439478209535764
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.96290544949375,
+        "mid": 179.83419175578865,
+        "high": 180.04127144145164
+      },
+      "band_strength": {
+        "low": 0.8728837646476285,
+        "mid": 0.7428843303626451,
+        "high": 0.665860288593455
+      },
+      "median_bpm": 179.96290544949375,
+      "band_spread_bpm": 0.20707968566298973
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 180.0859870549266,
+        "mid": 179.7424387380922,
+        "high": 179.78320619224883
+      },
+      "band_strength": {
+        "low": 0.7974608943090444,
+        "mid": 0.7345714357950096,
+        "high": 0.6853389321614064
+      },
+      "median_bpm": 179.78320619224883,
+      "band_spread_bpm": 0.34354831683438647
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 180.0768736507143,
+        "mid": 179.7332870289847,
+        "high": 179.8354015206769
+      },
+      "band_strength": {
+        "low": 0.7814850990186034,
+        "mid": 0.7271471938679398,
+        "high": 0.6828034480632369
+      },
+      "median_bpm": 179.8354015206769,
+      "band_spread_bpm": 0.34358662172959953
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 179.97550814640218,
+        "mid": 179.69426035533425,
+        "high": 179.8690977990855
+      },
+      "band_strength": {
+        "low": 0.6639970451058532,
+        "mid": 0.685364375048993,
+        "high": 0.7891501326620748
+      },
+      "median_bpm": 179.8690977990855,
+      "band_spread_bpm": 0.2812477910679263
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 179.6533768863611,
+        "mid": 179.57887091855204,
+        "high": 179.71090681289857
+      },
+      "band_strength": {
+        "low": 0.6624990533531107,
+        "mid": 0.6363502022688097,
+        "high": 0.6967434900691687
+      },
+      "median_bpm": 179.6533768863611,
+      "band_spread_bpm": 0.1320358943465294
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 179.51339079593913,
+        "mid": 179.48824374185799,
+        "high": 179.7763692040877
+      },
+      "band_strength": {
+        "low": 0.6794665357195859,
+        "mid": 0.6325032626299735,
+        "high": 0.7105226181749928
+      },
+      "median_bpm": 179.51339079593913,
+      "band_spread_bpm": 0.2881254622297149
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 179.17767578040124,
+        "mid": 179.35851468357345,
+        "high": 179.717558925192
+      },
+      "band_strength": {
+        "low": 0.6555942716144927,
+        "mid": 0.6656497570716279,
+        "high": 0.7356095067223002
+      },
+      "median_bpm": 179.35851468357345,
+      "band_spread_bpm": 0.5398831447907639
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 178.93228387773826,
+        "mid": 179.36500374584378,
+        "high": 179.76172361372804
+      },
+      "band_strength": {
+        "low": 0.6276946449313298,
+        "mid": 0.6402422647401516,
+        "high": 0.7025447842147432
+      },
+      "median_bpm": 179.36500374584378,
+      "band_spread_bpm": 0.82943973598978
+    },
+    {
+      "center_seconds": 195.0,
+      "band_bpm": {
+        "low": 179.1208404999961,
+        "mid": 179.3779231333724,
+        "high": 180.00897070159
+      },
+      "band_strength": {
+        "low": 0.5557766610862215,
+        "mid": 0.6307713411988393,
+        "high": 0.6728949130269777
+      },
+      "median_bpm": 179.3779231333724,
+      "band_spread_bpm": 0.8881302015938957
+    },
+    {
+      "center_seconds": 200.0,
+      "band_bpm": {
+        "low": 178.972752978049,
+        "mid": 179.31210063132954,
+        "high": 179.8519296085509
+      },
+      "band_strength": {
+        "low": 0.4950302102979802,
+        "mid": 0.635497836235498,
+        "high": 0.6865464474224748
+      },
+      "median_bpm": 179.31210063132954,
+      "band_spread_bpm": 0.8791766305019166
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.36435483961674,
+    179.90778295512436,
+    180.31109654247663
+  ],
+  "leading_alignment_padding_samples": 836,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.146,
+        5.346
+      ],
+      "target_anchors_seconds": [
+        0.14974358974358973,
+        5.483076923076923
+      ],
+      "tempo_factor": 0.9750000000000001,
+      "source_guard_samples": [
+        0,
+        275808
+      ],
+      "output_offset_samples": 836,
+      "observed_raw_anchors_seconds": [
+        0.13233333333333333,
+        5.476416666666666
+      ],
+      "waveform_correlations": [
+        0.9946683250036525,
+        0.999999973569964
+      ],
+      "observed_end_error_ms": 10.749999999999815,
+      "raw_sha256": "9600311ef7d0444e8435400c9d51a7ff749108584e28312c5739e2544983e2cd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=275808,asetpts=PTS-STARTPTS,atempo=0.9750000000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.346,
+        10.652
+      ],
+      "target_anchors_seconds": [
+        5.483076923076923,
+        10.816410256410256
+      ],
+      "tempo_factor": 0.9948749999999998,
+      "source_guard_samples": [
+        237408,
+        530496
+      ],
+      "output_offset_samples": 243988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999687155114,
+        0.999999983669088
+      ],
+      "observed_end_error_ms": -6.104166666666799,
+      "raw_sha256": "c658501a408536ea2f4e24952860ff1cc0b6316e7881331018f3a91ae0e58f0f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=237408:end_sample=530496,asetpts=PTS-STARTPTS,atempo=0.9948749999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.652,
+        15.88
+      ],
+      "target_anchors_seconds": [
+        10.816410256410256,
+        16.14974358974359
+      ],
+      "tempo_factor": 0.9802500000000002,
+      "source_guard_samples": [
+        492096,
+        781440
+      ],
+      "output_offset_samples": 499988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735625
+      ],
+      "waveform_correlations": [
+        0.9999999601071582,
+        0.9999999820634106
+      ],
+      "observed_end_error_ms": 2.2916666666654706,
+      "raw_sha256": "3293e99b0d6459d6499c1070ac93a046074bd23626e00da12ff5296802a0d26a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=492096:end_sample=781440,asetpts=PTS-STARTPTS,atempo=0.9802500000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.88,
+        21.066
+      ],
+      "target_anchors_seconds": [
+        16.14974358974359,
+        21.483076923076922
+      ],
+      "tempo_factor": 0.9723749999999999,
+      "source_guard_samples": [
+        743040,
+        1030368
+      ],
+      "output_offset_samples": 755843,
+      "observed_raw_anchors_seconds": [
+        0.40302083333333333,
+        5.739979166666667
+      ],
+      "waveform_correlations": [
+        0.999999981631076,
+        0.9999999896911467
+      ],
+      "observed_end_error_ms": 3.6250000000013216,
+      "raw_sha256": "18252a574d173f5e506da31b1b5542598b26fdecffc13fa5df60167498d4be8b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=743040:end_sample=1030368,asetpts=PTS-STARTPTS,atempo=0.9723749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.066,
+        26.25
+      ],
+      "target_anchors_seconds": [
+        21.483076923076922,
+        26.816410256410258
+      ],
+      "tempo_factor": 0.9719999999999998,
+      "source_guard_samples": [
+        991968,
+        1279200
+      ],
+      "output_offset_samples": 1011772,
+      "observed_raw_anchors_seconds": [
+        0.4045,
+        5.737791666666666
+      ],
+      "waveform_correlations": [
+        0.9999999856094031,
+        0.999999975556913
+      ],
+      "observed_end_error_ms": -0.041666666668938035,
+      "raw_sha256": "1871666d16ebaa6b61661d6a2c62246d9ad3b153e31ae7f1a10034a413c926a0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=991968:end_sample=1279200,asetpts=PTS-STARTPTS,atempo=0.9719999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.25,
+        31.44
+      ],
+      "target_anchors_seconds": [
+        26.816410256410258,
+        32.149743589743586
+      ],
+      "tempo_factor": 0.9731250000000011,
+      "source_guard_samples": [
+        1240800,
+        1528320
+      ],
+      "output_offset_samples": 1267988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730020833333334
+      ],
+      "waveform_correlations": [
+        0.9999999758483052,
+        0.9999999745334339
+      ],
+      "observed_end_error_ms": -3.3124999999953886,
+      "raw_sha256": "6fad4bfdf040f17989a7b459d2e020738739e1c38d820a642d36b1ba3f814292",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1240800:end_sample=1528320,asetpts=PTS-STARTPTS,atempo=0.9731250000000011,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.44,
+        36.628
+      ],
+      "target_anchors_seconds": [
+        32.149743589743586,
+        37.48307692307692
+      ],
+      "tempo_factor": 0.9727499999999993,
+      "source_guard_samples": [
+        1489920,
+        1777344
+      ],
+      "output_offset_samples": 1523988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737104166666667
+      ],
+      "waveform_correlations": [
+        0.9999999784790373,
+        0.9999999792688352
+      ],
+      "observed_end_error_ms": 3.7708333333306143,
+      "raw_sha256": "f8a7eac16d61b2c84cb07f414cc171bfa4c9927285b878956f9df5656daa0600",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1489920:end_sample=1777344,asetpts=PTS-STARTPTS,atempo=0.9727499999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.628,
+        41.816
+      ],
+      "target_anchors_seconds": [
+        37.48307692307692,
+        42.81641025641025
+      ],
+      "tempo_factor": 0.9727500000000013,
+      "source_guard_samples": [
+        1738944,
+        2026368
+      ],
+      "output_offset_samples": 1779988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737958333333333
+      ],
+      "waveform_correlations": [
+        0.9999954463684619,
+        0.9999999778845658
+      ],
+      "observed_end_error_ms": 4.62500000000432,
+      "raw_sha256": "d47ff4f7950b1b1895c96e090b61bb8c2f641f4d6dfa86b6d1d3c03780928b12",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1738944:end_sample=2026368,asetpts=PTS-STARTPTS,atempo=0.9727500000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        41.816,
+        47.004
+      ],
+      "target_anchors_seconds": [
+        42.81641025641025,
+        48.149743589743586
+      ],
+      "tempo_factor": 0.9727499999999987,
+      "source_guard_samples": [
+        1987968,
+        2275392
+      ],
+      "output_offset_samples": 2035844,
+      "observed_raw_anchors_seconds": [
+        0.403,
+        5.732166666666667
+      ],
+      "waveform_correlations": [
+        0.999999986184244,
+        0.9999953375760715
+      ],
+      "observed_end_error_ms": -4.166666666668206,
+      "raw_sha256": "e577d09f2a99de0b421a20437dbfd4022802dad216e62a8852e8ee67462f800a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1987968:end_sample=2275392,asetpts=PTS-STARTPTS,atempo=0.9727499999999987,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        47.004,
+        52.194
+      ],
+      "target_anchors_seconds": [
+        48.149743589743586,
+        53.48307692307692
+      ],
+      "tempo_factor": 0.9731250000000005,
+      "source_guard_samples": [
+        2236992,
+        2524512
+      ],
+      "output_offset_samples": 2291988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737020833333333
+      ],
+      "waveform_correlations": [
+        0.9999999687670905,
+        0.999999983858792
+      ],
+      "observed_end_error_ms": 3.687499999997179,
+      "raw_sha256": "49b60f802840b75744595ddeff54906e295a3c6c97248b2870b335678ab033cd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2236992:end_sample=2524512,asetpts=PTS-STARTPTS,atempo=0.9731250000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        52.194,
+        57.382
+      ],
+      "target_anchors_seconds": [
+        53.48307692307692,
+        58.81641025641025
+      ],
+      "tempo_factor": 0.97275,
+      "source_guard_samples": [
+        2486112,
+        2773536
+      ],
+      "output_offset_samples": 2547988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7398541666666665
+      ],
+      "waveform_correlations": [
+        0.9999999700335844,
+        0.999999987873192
+      ],
+      "observed_end_error_ms": 6.520833333337528,
+      "raw_sha256": "ee228e5a19deab9d36780f32354453ec456cc3de2d060dc675740817e95e098d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2486112:end_sample=2773536,asetpts=PTS-STARTPTS,atempo=0.9727500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.382,
+        62.568
+      ],
+      "target_anchors_seconds": [
+        58.81641025641025,
+        64.1497435897436
+      ],
+      "tempo_factor": 0.9723749999999982,
+      "source_guard_samples": [
+        2735136,
+        3022464
+      ],
+      "output_offset_samples": 2803988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7380625
+      ],
+      "waveform_correlations": [
+        0.9999999708110506,
+        0.9999999732051292
+      ],
+      "observed_end_error_ms": 4.729166666656681,
+      "raw_sha256": "fe254b7d6544b8a3311b5c390999564f9b3b0520d2cba65d9ca05a3ed0691128",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2735136:end_sample=3022464,asetpts=PTS-STARTPTS,atempo=0.9723749999999982,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        62.568,
+        67.756
+      ],
+      "target_anchors_seconds": [
+        64.1497435897436,
+        69.48307692307692
+      ],
+      "tempo_factor": 0.9727500000000013,
+      "source_guard_samples": [
+        2984064,
+        3271488
+      ],
+      "output_offset_samples": 3059988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730729166666666
+      ],
+      "waveform_correlations": [
+        0.99987854476396,
+        0.9999999699881901
+      ],
+      "observed_end_error_ms": -2.604166666662522,
+      "raw_sha256": "0c798c900d26ebe540ec1173e595ce0a4fe989a7d8a4589020d6fdfe90744d95",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2984064:end_sample=3271488,asetpts=PTS-STARTPTS,atempo=0.9727500000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        67.756,
+        72.944
+      ],
+      "target_anchors_seconds": [
+        69.48307692307692,
+        74.81641025641026
+      ],
+      "tempo_factor": 0.9727499999999987,
+      "source_guard_samples": [
+        3233088,
+        3520512
+      ],
+      "output_offset_samples": 3315988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737854166666667
+      ],
+      "waveform_correlations": [
+        0.9999655678741067,
+        0.9999999736416414
+      ],
+      "observed_end_error_ms": 4.520833333323537,
+      "raw_sha256": "4748f5df463aa35883fb3e3a22fabee4765fbde23562f0563cf7a346d4455079",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3233088:end_sample=3520512,asetpts=PTS-STARTPTS,atempo=0.9727499999999987,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        72.944,
+        78.13
+      ],
+      "target_anchors_seconds": [
+        74.81641025641026,
+        80.1497435897436
+      ],
+      "tempo_factor": 0.9723749999999995,
+      "source_guard_samples": [
+        3482112,
+        3769440
+      ],
+      "output_offset_samples": 3571988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733125
+      ],
+      "waveform_correlations": [
+        0.9999907936141446,
+        0.9999802172895466
+      ],
+      "observed_end_error_ms": -0.20833333332870296,
+      "raw_sha256": "36977f733a02b8f3009c599d692ee5d52069fefe20d0d81ee76651a74d4b69c7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3482112:end_sample=3769440,asetpts=PTS-STARTPTS,atempo=0.9723749999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        78.13,
+        83.316
+      ],
+      "target_anchors_seconds": [
+        80.1497435897436,
+        85.48307692307692
+      ],
+      "tempo_factor": 0.9723750000000022,
+      "source_guard_samples": [
+        3731040,
+        4018368
+      ],
+      "output_offset_samples": 3827988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731583333333333
+      ],
+      "waveform_correlations": [
+        0.9999596870864391,
+        0.9999999597462995
+      ],
+      "observed_end_error_ms": -1.7499999999959215,
+      "raw_sha256": "e6010d3ebd856fc9c29d17163cfb1668a173b0b93f1b493f82c202007c6a1c28",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3731040:end_sample=4018368,asetpts=PTS-STARTPTS,atempo=0.9723750000000022,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        83.316,
+        88.502
+      ],
+      "target_anchors_seconds": [
+        85.48307692307692,
+        90.81641025641026
+      ],
+      "tempo_factor": 0.9723749999999969,
+      "source_guard_samples": [
+        3979968,
+        4267296
+      ],
+      "output_offset_samples": 4083988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737
+      ],
+      "waveform_correlations": [
+        0.9999996408449549,
+        0.9999999764381646
+      ],
+      "observed_end_error_ms": 3.666666666656937,
+      "raw_sha256": "4402706c8505b93cecf16ef208578956554cbb312ccbaa79a9d4d912c1ba9ab6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3979968:end_sample=4267296,asetpts=PTS-STARTPTS,atempo=0.9723749999999969,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        88.502,
+        93.69
+      ],
+      "target_anchors_seconds": [
+        90.81641025641026,
+        96.1497435897436
+      ],
+      "tempo_factor": 0.9727500000000013,
+      "source_guard_samples": [
+        4228896,
+        4516320
+      ],
+      "output_offset_samples": 4339988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737125
+      ],
+      "waveform_correlations": [
+        0.999949401552135,
+        0.9999999748323554
+      ],
+      "observed_end_error_ms": 3.7916666666708565,
+      "raw_sha256": "f8ca8c6e57c1b07794ca0d382e24f1046fe5be5541785fda2e7162d6d242bed8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4228896:end_sample=4516320,asetpts=PTS-STARTPTS,atempo=0.9727500000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        93.69,
+        98.872
+      ],
+      "target_anchors_seconds": [
+        96.1497435897436,
+        101.48307692307692
+      ],
+      "tempo_factor": 0.9716250000000013,
+      "source_guard_samples": [
+        4477920,
+        4765056
+      ],
+      "output_offset_samples": 4595988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736354166666667
+      ],
+      "waveform_correlations": [
+        0.9999985121448636,
+        0.999981303662386
+      ],
+      "observed_end_error_ms": 3.0208333333376913,
+      "raw_sha256": "abf8b2aa1457aa4c7cc5c978dd5e8baba64d861bc51e70cc908daaf17daf2ff2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4477920:end_sample=4765056,asetpts=PTS-STARTPTS,atempo=0.9716250000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        98.872,
+        104.056
+      ],
+      "target_anchors_seconds": [
+        101.48307692307692,
+        106.81641025641026
+      ],
+      "tempo_factor": 0.9719999999999978,
+      "source_guard_samples": [
+        4726656,
+        5013888
+      ],
+      "output_offset_samples": 4851880,
+      "observed_raw_anchors_seconds": [
+        0.40225,
+        5.7339166666666666
+      ],
+      "waveform_correlations": [
+        0.9999915746251188,
+        0.9999999699412179
+      ],
+      "observed_end_error_ms": -1.666666666675809,
+      "raw_sha256": "0f9cff34a7b73169292141f5a999cfcf533d4c7d8e83609dea8c179eafa27800",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4726656:end_sample=5013888,asetpts=PTS-STARTPTS,atempo=0.9719999999999978,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        104.056,
+        109.236
+      ],
+      "target_anchors_seconds": [
+        106.81641025641026,
+        112.1497435897436
+      ],
+      "tempo_factor": 0.9712500000000022,
+      "source_guard_samples": [
+        4975488,
+        5262528
+      ],
+      "output_offset_samples": 5107988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.739604166666667
+      ],
+      "waveform_correlations": [
+        0.9999960871561582,
+        0.9999999871707276
+      ],
+      "observed_end_error_ms": 6.2708333333381105,
+      "raw_sha256": "7ced76dfe9033b8315245554db8a7f8a5bdd4325af42cf4f29f3e99d4d7be9a0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4975488:end_sample=5262528,asetpts=PTS-STARTPTS,atempo=0.9712500000000022,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        109.236,
+        114.42
+      ],
+      "target_anchors_seconds": [
+        112.1497435897436,
+        117.48307692307692
+      ],
+      "tempo_factor": 0.9720000000000004,
+      "source_guard_samples": [
+        5224128,
+        5511360
+      ],
+      "output_offset_samples": 5363988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7401875
+      ],
+      "waveform_correlations": [
+        0.9999991240560847,
+        0.9999999853512025
+      ],
+      "observed_end_error_ms": 6.854166666671269,
+      "raw_sha256": "791ab272cae7dc2226a00e7b8441284a8a7200b1b67ee3d6905fa2d59ff9230b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5224128:end_sample=5511360,asetpts=PTS-STARTPTS,atempo=0.9720000000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        114.42,
+        119.602
+      ],
+      "target_anchors_seconds": [
+        117.48307692307692,
+        122.81641025641026
+      ],
+      "tempo_factor": 0.9716249999999986,
+      "source_guard_samples": [
+        5472960,
+        5760096
+      ],
+      "output_offset_samples": 5619988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7365208333333335
+      ],
+      "waveform_correlations": [
+        0.9999985213483541,
+        0.99999998284898
+      ],
+      "observed_end_error_ms": 3.187499999990351,
+      "raw_sha256": "dc72caf7fe0c8306947db98fe8bf92286f86e2c1b2c34ddc8c0725c7b70ae546",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5472960:end_sample=5760096,asetpts=PTS-STARTPTS,atempo=0.9716249999999986,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        119.602,
+        124.778
+      ],
+      "target_anchors_seconds": [
+        122.81641025641026,
+        128.1497435897436
+      ],
+      "tempo_factor": 0.9705000000000013,
+      "source_guard_samples": [
+        5721696,
+        6008544
+      ],
+      "output_offset_samples": 5875988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7335625
+      ],
+      "waveform_correlations": [
+        0.9999999708164685,
+        0.9999762611487722
+      ],
+      "observed_end_error_ms": 0.2291666666707215,
+      "raw_sha256": "770eafa1f58c5c73621dc94243c65c7ff8b61cc8db81844565c89e0249b08fcd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5721696:end_sample=6008544,asetpts=PTS-STARTPTS,atempo=0.9705000000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        124.778,
+        129.954
+      ],
+      "target_anchors_seconds": [
+        128.1497435897436,
+        133.48307692307694
+      ],
+      "tempo_factor": 0.9704999999999986,
+      "source_guard_samples": [
+        5970144,
+        6256992
+      ],
+      "output_offset_samples": 6131988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738270833333333
+      ],
+      "waveform_correlations": [
+        0.9999855570987543,
+        0.9999999803284265
+      ],
+      "observed_end_error_ms": 4.937499999989825,
+      "raw_sha256": "16b4e49aa1878942dbfb57f05d960334ce8bf3280dec43169f5996b28323ddc7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5970144:end_sample=6256992,asetpts=PTS-STARTPTS,atempo=0.9704999999999986,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        129.954,
+        135.126
+      ],
+      "target_anchors_seconds": [
+        133.48307692307694,
+        138.81641025641025
+      ],
+      "tempo_factor": 0.9697500000000029,
+      "source_guard_samples": [
+        6218592,
+        6505248
+      ],
+      "output_offset_samples": 6387988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730666666666667
+      ],
+      "waveform_correlations": [
+        0.9999899283732698,
+        0.9999999721575404
+      ],
+      "observed_end_error_ms": -2.6666666666477212,
+      "raw_sha256": "4f59eb8c41c858d27448252f413e81e03e556572332be1acb3e0f5796e449873",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6218592:end_sample=6505248,asetpts=PTS-STARTPTS,atempo=0.9697500000000029,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        135.126,
+        140.286
+      ],
+      "target_anchors_seconds": [
+        138.81641025641025,
+        144.1497435897436
+      ],
+      "tempo_factor": 0.9674999999999977,
+      "source_guard_samples": [
+        6466848,
+        6752928
+      ],
+      "output_offset_samples": 6643988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7391041666666665
+      ],
+      "waveform_correlations": [
+        0.9999620559259166,
+        0.9999999628977188
+      ],
+      "observed_end_error_ms": 5.770833333323289,
+      "raw_sha256": "f4c97b2903dd4aeeaceac78d6d6167a8f8b93197019efa023548c5ddbdba1d93",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6466848:end_sample=6752928,asetpts=PTS-STARTPTS,atempo=0.9674999999999977,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        140.286,
+        145.442
+      ],
+      "target_anchors_seconds": [
+        144.1497435897436,
+        149.48307692307694
+      ],
+      "tempo_factor": 0.9667499999999994,
+      "source_guard_samples": [
+        6714528,
+        7000416
+      ],
+      "output_offset_samples": 6899988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.739625
+      ],
+      "waveform_correlations": [
+        0.9999512345110709,
+        0.9999999731282427
+      ],
+      "observed_end_error_ms": 6.2916666666570364,
+      "raw_sha256": "6fb4841e145c82bbf543fd12b8e5d94a246bc82426b0ce676f523b9c61aca413",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6714528:end_sample=7000416,asetpts=PTS-STARTPTS,atempo=0.9667499999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        145.442,
+        150.592
+      ],
+      "target_anchors_seconds": [
+        149.48307692307694,
+        154.81641025641025
+      ],
+      "tempo_factor": 0.9656250000000045,
+      "source_guard_samples": [
+        6962016,
+        7247616
+      ],
+      "output_offset_samples": 7155602,
+      "observed_raw_anchors_seconds": [
+        0.4080416666666667,
+        5.735229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999819628639,
+        0.999997258788301
+      ],
+      "observed_end_error_ms": -6.145833333314421,
+      "raw_sha256": "57035f47bfc2386d128b04b0fcf905bd0eec95414f675e4db2429f9263f8c93d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6962016:end_sample=7247616,asetpts=PTS-STARTPTS,atempo=0.9656250000000045,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        150.592,
+        155.744
+      ],
+      "target_anchors_seconds": [
+        154.81641025641025,
+        160.1497435897436
+      ],
+      "tempo_factor": 0.9659999999999959,
+      "source_guard_samples": [
+        7209216,
+        7494912
+      ],
+      "output_offset_samples": 7411795,
+      "observed_raw_anchors_seconds": [
+        0.40402083333333333,
+        5.745145833333333
+      ],
+      "waveform_correlations": [
+        0.9999847274523885,
+        0.9999999960178773
+      ],
+      "observed_end_error_ms": 7.791666666657093,
+      "raw_sha256": "863bac3da38c81fb8ff6fb7f06e37542ce3f33cd3eda8f705ae8e460c7ec540d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7209216:end_sample=7494912,asetpts=PTS-STARTPTS,atempo=0.9659999999999959,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        155.744,
+        160.902
+      ],
+      "target_anchors_seconds": [
+        160.1497435897436,
+        165.48307692307694
+      ],
+      "tempo_factor": 0.9671249999999959,
+      "source_guard_samples": [
+        7456512,
+        7742496
+      ],
+      "output_offset_samples": 7667455,
+      "observed_raw_anchors_seconds": [
+        0.41110416666666666,
+        5.737770833333333
+      ],
+      "waveform_correlations": [
+        0.9999999951201902,
+        0.9999999693637852
+      ],
+      "observed_end_error_ms": -6.666666666676591,
+      "raw_sha256": "40c9efb891e1d1a6f26b57cf1f1355c48e87bb4ac7b3b18e632d81a3c8a03e07",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7456512:end_sample=7742496,asetpts=PTS-STARTPTS,atempo=0.9671249999999959,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        160.902,
+        166.062
+      ],
+      "target_anchors_seconds": [
+        165.48307692307694,
+        170.81641025641025
+      ],
+      "tempo_factor": 0.9675000000000081,
+      "source_guard_samples": [
+        7704096,
+        7990176
+      ],
+      "output_offset_samples": 7923988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730104166666667
+      ],
+      "waveform_correlations": [
+        0.9999976777069519,
+        0.9981024810631273
+      ],
+      "observed_end_error_ms": -3.2291666666477425,
+      "raw_sha256": "8005d3a59b804438dfc9dcf948009256973157624175e78f5354ce703b5bca0c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7704096:end_sample=7990176,asetpts=PTS-STARTPTS,atempo=0.9675000000000081,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        166.062,
+        171.216
+      ],
+      "target_anchors_seconds": [
+        170.81641025641025,
+        176.1497435897436
+      ],
+      "tempo_factor": 0.9663749999999977,
+      "source_guard_samples": [
+        7951776,
+        8237568
+      ],
+      "output_offset_samples": 8179982,
+      "observed_raw_anchors_seconds": [
+        0.400125,
+        5.7375
+      ],
+      "waveform_correlations": [
+        0.9999999820553006,
+        0.9999999774408158
+      ],
+      "observed_end_error_ms": 4.041666666656951,
+      "raw_sha256": "6347b52ec9c342bda3f6cca8d7649dec76245362cb74f72721e942c13e845607",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7951776:end_sample=8237568,asetpts=PTS-STARTPTS,atempo=0.9663749999999977,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        171.216,
+        176.368
+      ],
+      "target_anchors_seconds": [
+        176.1497435897436,
+        181.48307692307694
+      ],
+      "tempo_factor": 0.9659999999999959,
+      "source_guard_samples": [
+        8199168,
+        8484864
+      ],
+      "output_offset_samples": 8435507,
+      "observed_raw_anchors_seconds": [
+        0.41002083333333333,
+        5.7396875
+      ],
+      "waveform_correlations": [
+        0.9999999960327514,
+        0.9999999784784107
+      ],
+      "observed_end_error_ms": -3.666666666676477,
+      "raw_sha256": "2eb1e85a2075cb464838ccec54db8aa17497117029c31bda1ef6ef98b18c855a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8199168:end_sample=8484864,asetpts=PTS-STARTPTS,atempo=0.9659999999999959,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        176.368,
+        181.518
+      ],
+      "target_anchors_seconds": [
+        181.48307692307694,
+        186.81641025641025
+      ],
+      "tempo_factor": 0.9656250000000045,
+      "source_guard_samples": [
+        8446464,
+        8732064
+      ],
+      "output_offset_samples": 8691663,
+      "observed_raw_anchors_seconds": [
+        0.40677083333333336,
+        5.734083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999803886767,
+        0.9999991041110025
+      ],
+      "observed_end_error_ms": -6.020833333314712,
+      "raw_sha256": "9bd21f97b27fd7fe910606850a63398c1897e75a0609ccd90d986e144b8020b3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8446464:end_sample=8732064,asetpts=PTS-STARTPTS,atempo=0.9656250000000045,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        576
+      ],
+      "source_anchors_seconds": [
+        181.518,
+        186.664
+      ],
+      "target_anchors_seconds": [
+        186.81641025641025,
+        192.1497435897436
+      ],
+      "tempo_factor": 0.9648749999999958,
+      "source_guard_samples": [
+        8693664,
+        8979072
+      ],
+      "output_offset_samples": 8947951,
+      "observed_raw_anchors_seconds": [
+        0.40077083333333335,
+        5.735541666666666
+      ],
+      "waveform_correlations": [
+        0.999998801151354,
+        0.9999873388595691
+      ],
+      "observed_end_error_ms": 1.4374999999899885,
+      "raw_sha256": "5d47d193a193b78b7cb82f6bc1d7da62230835aa4c3766b1079c4dc50d050c1b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8693664:end_sample=8979072,asetpts=PTS-STARTPTS,atempo=0.9648749999999958,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-035.wav"
+      ]
+    },
+    {
+      "block": 36,
+      "source_beat_indices": [
+        576,
+        592
+      ],
+      "source_anchors_seconds": [
+        186.664,
+        191.806
+      ],
+      "target_anchors_seconds": [
+        192.1497435897436,
+        197.48307692307694
+      ],
+      "tempo_factor": 0.9641250000000029,
+      "source_guard_samples": [
+        8940672,
+        9225888
+      ],
+      "output_offset_samples": 9203917,
+      "observed_raw_anchors_seconds": [
+        0.40147916666666666,
+        5.742104166666667
+      ],
+      "waveform_correlations": [
+        0.9999908231143908,
+        0.9998481577603048
+      ],
+      "observed_end_error_ms": 7.29166666665737,
+      "raw_sha256": "94daa5981cff3bf668d92af4d0127a1478f34b69ec2ba6495e279a94de1fbc30",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8940672:end_sample=9225888,asetpts=PTS-STARTPTS,atempo=0.9641250000000029,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-036.wav"
+      ]
+    },
+    {
+      "block": 37,
+      "source_beat_indices": [
+        592,
+        608
+      ],
+      "source_anchors_seconds": [
+        191.806,
+        197.022
+      ],
+      "target_anchors_seconds": [
+        197.48307692307694,
+        202.81641025641025
+      ],
+      "tempo_factor": 0.9779999999999996,
+      "source_guard_samples": [
+        9187488,
+        9476256
+      ],
+      "output_offset_samples": 9459988,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729166666666667
+      ],
+      "waveform_correlations": [
+        0.9999997172231391,
+        0.9999999521232129
+      ],
+      "observed_end_error_ms": -4.166666666647778,
+      "raw_sha256": "f3ffcbf56cbbadf7452979b2e0173250d3497bfb546416451409a7223e69cbe9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9187488:end_sample=9476256,asetpts=PTS-STARTPTS,atempo=0.9779999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-037.wav"
+      ]
+    },
+    {
+      "block": 38,
+      "source_beat_indices": [
+        608,
+        618
+      ],
+      "source_anchors_seconds": [
+        197.022,
+        200.24
+      ],
+      "target_anchors_seconds": [
+        202.81641025641025,
+        206.1497435897436
+      ],
+      "tempo_factor": 0.9654000000000026,
+      "source_guard_samples": [
+        9437856,
+        9709440
+      ],
+      "output_offset_samples": 9715526,
+      "observed_raw_anchors_seconds": [
+        0.409625,
+        3.7398541666666665
+      ],
+      "waveform_correlations": [
+        0.9999999436438158,
+        0.9999996158476684
+      ],
+      "observed_end_error_ms": -3.1041666666764556,
+      "raw_sha256": "07127b44f23cf69b3b02b88ed7b6d43089f82fbb0917fa247bd2441b18c4f9d8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/09__숨을 세어__Driven__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9437856:end_sample=9709440,asetpts=PTS-STARTPTS,atempo=0.9654000000000026,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-09/block-038.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

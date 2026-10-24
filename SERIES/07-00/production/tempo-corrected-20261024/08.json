@@ -1,0 +1,2413 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 8,
+  "title": "낮은 비트",
+  "candidate_id": "8dc7697b-4603-4ac8-975b-67a55c91d397",
+  "source_path": "SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+  "source_sha256": "5702fe48f2dfcda832ee51acf125c93b0693c091e6ddd99276104f3cbac5b20d",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/08.json",
+  "analysis_sha256": "3ca8d8b6622070535e32b31bf110bf4e6793b1eeeeda2b533cf8e1bda8bdcd52",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/08__낮은 비트__180.wav",
+  "output_sha256": "8cab1023a54cc72d150b84b9292f9bb1b152b0291e8bcd23e257b3b1f1959de2",
+  "source_duration_seconds": 199.96,
+  "output_duration_seconds": 205.16822916666666,
+  "output_peak_linear": 0.667755126953125,
+  "first_grid_beat_output_seconds": 0.049863654070899883,
+  "grid_beat_count": 616,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.7621391641785,
+        "mid": 179.4844214309009,
+        "high": 179.25457862397195
+      },
+      "band_strength": {
+        "low": 0.5635950932895912,
+        "mid": 0.5344896217010522,
+        "high": 0.5294703267552482
+      },
+      "median_bpm": 179.4844214309009,
+      "band_spread_bpm": 0.5075605402065548
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.870402378711,
+        "mid": 179.83143488733776,
+        "high": 179.47070541159806
+      },
+      "band_strength": {
+        "low": 0.5824088879642813,
+        "mid": 0.6521352802100355,
+        "high": 0.5374348019915112
+      },
+      "median_bpm": 179.83143488733776,
+      "band_spread_bpm": 0.3996969671129307
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 180.01161167298332,
+        "mid": 179.90559508507226,
+        "high": 180.11503119125533
+      },
+      "band_strength": {
+        "low": 0.5955013770931133,
+        "mid": 0.6787554301481931,
+        "high": 0.5361166924914214
+      },
+      "median_bpm": 180.01161167298332,
+      "band_spread_bpm": 0.20943610618306252
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.19943964003707,
+        "mid": 179.93497013603334,
+        "high": 180.5770625788059
+      },
+      "band_strength": {
+        "low": 0.5732261514198682,
+        "mid": 0.6752162547417623,
+        "high": 0.5566624127473992
+      },
+      "median_bpm": 180.19943964003707,
+      "band_spread_bpm": 0.6420924427725652
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 180.1312129773491,
+        "mid": 180.0283452981557,
+        "high": 180.60678575051523
+      },
+      "band_strength": {
+        "low": 0.586057705700407,
+        "mid": 0.7242703061879688,
+        "high": 0.6227769782827579
+      },
+      "median_bpm": 180.1312129773491,
+      "band_spread_bpm": 0.5784404523595299
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.13740479991742,
+        "mid": 179.92410713113162,
+        "high": 180.07390601474222
+      },
+      "band_strength": {
+        "low": 0.6119102310249878,
+        "mid": 0.7549398526687188,
+        "high": 0.6813578943125637
+      },
+      "median_bpm": 180.07390601474222,
+      "band_spread_bpm": 0.21329766878579903
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.6803164233363,
+        "mid": 179.8219118101155,
+        "high": 179.9689974475545
+      },
+      "band_strength": {
+        "low": 0.6501997837348386,
+        "mid": 0.7255796423939329,
+        "high": 0.6702584400515129
+      },
+      "median_bpm": 179.8219118101155,
+      "band_spread_bpm": 0.2886810242181923
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.81053268852,
+        "mid": 179.80660727856653,
+        "high": 179.87575688566324
+      },
+      "band_strength": {
+        "low": 0.6632345823884278,
+        "mid": 0.7388007371230606,
+        "high": 0.6876849811493685
+      },
+      "median_bpm": 179.81053268852,
+      "band_spread_bpm": 0.06914960709670481
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 179.93206256453087,
+        "mid": 179.7962344413982,
+        "high": 179.66946221777846
+      },
+      "band_strength": {
+        "low": 0.6636928568099665,
+        "mid": 0.7848533687476433,
+        "high": 0.6563376801718144
+      },
+      "median_bpm": 179.7962344413982,
+      "band_spread_bpm": 0.2626003467524072
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.98298590668995,
+        "mid": 179.76558169688604,
+        "high": 179.5738300558653
+      },
+      "band_strength": {
+        "low": 0.6887381023734267,
+        "mid": 0.7871836969452682,
+        "high": 0.6379115412125315
+      },
+      "median_bpm": 179.76558169688604,
+      "band_spread_bpm": 0.40915585082464645
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.05043089206458,
+        "mid": 179.89909293669803,
+        "high": 179.7604669855048
+      },
+      "band_strength": {
+        "low": 0.6972460828098249,
+        "mid": 0.8126758562130083,
+        "high": 0.7218795566785658
+      },
+      "median_bpm": 179.89909293669803,
+      "band_spread_bpm": 0.289963906559791
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 180.164697649676,
+        "mid": 179.8794831255284,
+        "high": 179.57137063729581
+      },
+      "band_strength": {
+        "low": 0.6477808919966185,
+        "mid": 0.7646704555007712,
+        "high": 0.678055053541168
+      },
+      "median_bpm": 179.8794831255284,
+      "band_spread_bpm": 0.5933270123801719
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 179.99287096844736,
+        "mid": 179.8507421673473,
+        "high": 179.70123155528594
+      },
+      "band_strength": {
+        "low": 0.6628867657021535,
+        "mid": 0.7182710980182734,
+        "high": 0.6982604236784057
+      },
+      "median_bpm": 179.8507421673473,
+      "band_spread_bpm": 0.2916394131614197
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.99955839691205,
+        "mid": 179.85840627643609,
+        "high": 179.73094465430472
+      },
+      "band_strength": {
+        "low": 0.6446467945079968,
+        "mid": 0.6942998455709004,
+        "high": 0.6913541151190322
+      },
+      "median_bpm": 179.85840627643609,
+      "band_spread_bpm": 0.26861374260732873
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.15110554267676,
+        "mid": 179.77439376642053,
+        "high": 179.60397237873303
+      },
+      "band_strength": {
+        "low": 0.6458540739418093,
+        "mid": 0.728160442102722,
+        "high": 0.732856480675876
+      },
+      "median_bpm": 179.77439376642053,
+      "band_spread_bpm": 0.5471331639437267
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 180.22276109724072,
+        "mid": 179.67385176085483,
+        "high": 179.73579241076297
+      },
+      "band_strength": {
+        "low": 0.6557718064829231,
+        "mid": 0.7434436796849371,
+        "high": 0.7880642635136814
+      },
+      "median_bpm": 179.73579241076297,
+      "band_spread_bpm": 0.5489093363858899
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 180.27334860651445,
+        "mid": 179.83827690257482,
+        "high": 179.8214603839203
+      },
+      "band_strength": {
+        "low": 0.6887536228087583,
+        "mid": 0.7777391520102928,
+        "high": 0.8114138720383078
+      },
+      "median_bpm": 179.83827690257482,
+      "band_spread_bpm": 0.4518882225941354
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 180.23497407418398,
+        "mid": 179.9252095013605,
+        "high": 179.8568984206367
+      },
+      "band_strength": {
+        "low": 0.6644220023281118,
+        "mid": 0.7575713692998824,
+        "high": 0.8416642402332644
+      },
+      "median_bpm": 179.9252095013605,
+      "band_spread_bpm": 0.3780756535472847
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 180.09752930463614,
+        "mid": 180.28182283515227,
+        "high": 180.11450344024072
+      },
+      "band_strength": {
+        "low": 0.6412034966317761,
+        "mid": 0.7068425919452589,
+        "high": 0.7633947714046795
+      },
+      "median_bpm": 180.11450344024072,
+      "band_spread_bpm": 0.18429353051612907
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.95858815600238,
+        "mid": 180.404242481818,
+        "high": 180.02831841414567
+      },
+      "band_strength": {
+        "low": 0.5312837191110226,
+        "mid": 0.6627020706122811,
+        "high": 0.7488564958677018
+      },
+      "median_bpm": 180.02831841414567,
+      "band_spread_bpm": 0.44565432581561026
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.02419263517731,
+        "mid": 180.22296715724087,
+        "high": 180.01361946730287
+      },
+      "band_strength": {
+        "low": 0.7063572374500624,
+        "mid": 0.7034385409174335,
+        "high": 0.6818913723543325
+      },
+      "median_bpm": 180.02419263517731,
+      "band_spread_bpm": 0.20934768993799935
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.00041902958156,
+        "mid": 180.0980451055894,
+        "high": 179.92904001401817
+      },
+      "band_strength": {
+        "low": 0.7430840019168787,
+        "mid": 0.7359956145509756,
+        "high": 0.6297008637154983
+      },
+      "median_bpm": 180.00041902958156,
+      "band_spread_bpm": 0.169005091571222
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.11563449858855,
+        "mid": 179.91590230525438,
+        "high": 179.96005011114394
+      },
+      "band_strength": {
+        "low": 0.7557650622399263,
+        "mid": 0.7441491214262383,
+        "high": 0.6357445291769597
+      },
+      "median_bpm": 179.96005011114394,
+      "band_spread_bpm": 0.19973219333417092
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.09647953744582,
+        "mid": 179.84790100809929,
+        "high": 180.08566030535286
+      },
+      "band_strength": {
+        "low": 0.7584323259564546,
+        "mid": 0.8153495530868297,
+        "high": 0.6574018507439043
+      },
+      "median_bpm": 180.08566030535286,
+      "band_spread_bpm": 0.24857852934653124
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.08242834714764,
+        "mid": 179.8216850720815,
+        "high": 180.06358274922428
+      },
+      "band_strength": {
+        "low": 0.6713296325596347,
+        "mid": 0.826305755316375,
+        "high": 0.767675370964492
+      },
+      "median_bpm": 180.06358274922428,
+      "band_spread_bpm": 0.26074327506614736
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.25808461893854,
+        "mid": 179.76409109066626,
+        "high": 180.15945945337637
+      },
+      "band_strength": {
+        "low": 0.6571906342720001,
+        "mid": 0.8067278603823865,
+        "high": 0.7619794609586413
+      },
+      "median_bpm": 180.15945945337637,
+      "band_spread_bpm": 0.49399352827228427
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 180.20506481927828,
+        "mid": 179.83737875727678,
+        "high": 180.1576491131358
+      },
+      "band_strength": {
+        "low": 0.6768839636704601,
+        "mid": 0.7998356118950947,
+        "high": 0.7372314214082365
+      },
+      "median_bpm": 180.1576491131358,
+      "band_spread_bpm": 0.36768606200149634
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 180.21577300571076,
+        "mid": 179.79136524744908,
+        "high": 180.04047321570673
+      },
+      "band_strength": {
+        "low": 0.683701862817234,
+        "mid": 0.8185649327657748,
+        "high": 0.7766862588854647
+      },
+      "median_bpm": 180.04047321570673,
+      "band_spread_bpm": 0.42440775826167965
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 180.03735419363971,
+        "mid": 179.903697553569,
+        "high": 180.03303057964132
+      },
+      "band_strength": {
+        "low": 0.7782573639286655,
+        "mid": 0.8054890341573259,
+        "high": 0.6742339699029503
+      },
+      "median_bpm": 180.03303057964132,
+      "band_spread_bpm": 0.13365664007071132
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.9789075582439,
+        "mid": 179.8127331676278,
+        "high": 180.0432089808059
+      },
+      "band_strength": {
+        "low": 0.7760469871968885,
+        "mid": 0.8242223466896484,
+        "high": 0.7422352931036005
+      },
+      "median_bpm": 179.9789075582439,
+      "band_spread_bpm": 0.23047581317808863
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 180.17646218523242,
+        "mid": 179.90824690828774,
+        "high": 180.00144582222163
+      },
+      "band_strength": {
+        "low": 0.7918135446776227,
+        "mid": 0.8454320846378092,
+        "high": 0.7699877833513746
+      },
+      "median_bpm": 180.00144582222163,
+      "band_spread_bpm": 0.2682152769446873
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 180.01250317389625,
+        "mid": 179.86386334983393,
+        "high": 180.0050818221329
+      },
+      "band_strength": {
+        "low": 0.8044206369143803,
+        "mid": 0.8463996379839253,
+        "high": 0.7206814415101281
+      },
+      "median_bpm": 180.0050818221329,
+      "band_spread_bpm": 0.14863982406231457
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 180.17231654897338,
+        "mid": 179.84406099799045,
+        "high": 180.0912706954999
+      },
+      "band_strength": {
+        "low": 0.7841306064605993,
+        "mid": 0.834058665799722,
+        "high": 0.7189545492988181
+      },
+      "median_bpm": 180.0912706954999,
+      "band_spread_bpm": 0.3282555509829308
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 180.07858999902564,
+        "mid": 179.86006978880377,
+        "high": 180.25252129001595
+      },
+      "band_strength": {
+        "low": 0.8038793597264708,
+        "mid": 0.8215072645757567,
+        "high": 0.6699784809836413
+      },
+      "median_bpm": 180.07858999902564,
+      "band_spread_bpm": 0.39245150121217875
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 180.2187684807666,
+        "mid": 179.75521128853194,
+        "high": 180.06979808623424
+      },
+      "band_strength": {
+        "low": 0.715945438746021,
+        "mid": 0.7533808151749779,
+        "high": 0.6069087896841977
+      },
+      "median_bpm": 180.06979808623424,
+      "band_spread_bpm": 0.4635571922346742
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 180.23989887678647,
+        "mid": 179.80295533747193,
+        "high": 180.00424807659348
+      },
+      "band_strength": {
+        "low": 0.6195495179531516,
+        "mid": 0.7038050658644736,
+        "high": 0.6390412207557254
+      },
+      "median_bpm": 180.00424807659348,
+      "band_spread_bpm": 0.4369435393145409
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 180.1000762460048,
+        "mid": 179.89568712373048,
+        "high": 179.85485362405956
+      },
+      "band_strength": {
+        "low": 0.6085156579859549,
+        "mid": 0.7377685838762739,
+        "high": 0.7022171473005749
+      },
+      "median_bpm": 179.89568712373048,
+      "band_spread_bpm": 0.24522262194523137
+    },
+    {
+      "center_seconds": 195.0,
+      "band_bpm": {
+        "low": 180.147655298588,
+        "mid": 179.89363503229418,
+        "high": 179.82527421233968
+      },
+      "band_strength": {
+        "low": 0.6187732593558047,
+        "mid": 0.7401204338609734,
+        "high": 0.7281185852970968
+      },
+      "median_bpm": 179.89363503229418,
+      "band_spread_bpm": 0.3223810862483276
+    },
+    {
+      "center_seconds": 200.0,
+      "band_bpm": {
+        "low": 160.43544052532476,
+        "mid": 179.86864927165897,
+        "high": 179.8761505401239
+      },
+      "band_strength": {
+        "low": 0.6190479160004687,
+        "mid": 0.7446849787595174,
+        "high": 0.7609926873097743
+      },
+      "median_bpm": 179.86864927165897,
+      "band_spread_bpm": 19.440710014799123
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.76260276827375,
+    180.00041902958156,
+    180.15783014715984
+  ],
+  "leading_alignment_padding_samples": 393,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.048,
+        5.182
+      ],
+      "target_anchors_seconds": [
+        0.049863654070899883,
+        5.383196987404233
+      ],
+      "tempo_factor": 0.9626250000000001,
+      "source_guard_samples": [
+        0,
+        267936
+      ],
+      "output_offset_samples": 393,
+      "observed_raw_anchors_seconds": [
+        0.041666666666666664,
+        5.380020833333333
+      ],
+      "waveform_correlations": [
+        0.9999337953892669,
+        0.9999999675421004
+      ],
+      "observed_end_error_ms": 5.02083333333303,
+      "raw_sha256": "5125300bc4131dc9f4fef3afe5d6eb6feda3e45444d23714903eebc2d3fe87e7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=267936,asetpts=PTS-STARTPTS,atempo=0.9626250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.182,
+        10.398
+      ],
+      "target_anchors_seconds": [
+        5.383196987404233,
+        10.716530320737567
+      ],
+      "tempo_factor": 0.9779999999999998,
+      "source_guard_samples": [
+        229536,
+        518304
+      ],
+      "output_offset_samples": 239031,
+      "observed_raw_anchors_seconds": [
+        0.403375,
+        5.73675
+      ],
+      "waveform_correlations": [
+        0.9999999590602051,
+        0.9999999800442217
+      ],
+      "observed_end_error_ms": 0.0416666666662735,
+      "raw_sha256": "b953442ae4f7f23fc5e95dd623f69db9658665a2ac5df034a3f5f65e06d7aac2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=229536:end_sample=518304,asetpts=PTS-STARTPTS,atempo=0.9779999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.398,
+        15.594
+      ],
+      "target_anchors_seconds": [
+        10.716530320737567,
+        16.0498636540709
+      ],
+      "tempo_factor": 0.9742499999999998,
+      "source_guard_samples": [
+        479904,
+        767712
+      ],
+      "output_offset_samples": 494977,
+      "observed_raw_anchors_seconds": [
+        0.4045,
+        5.7283125
+      ],
+      "waveform_correlations": [
+        0.9999999728023542,
+        0.9999999886701545
+      ],
+      "observed_end_error_ms": -9.5208333333332,
+      "raw_sha256": "082861342534d9f54f5ddadccfd2929bfc0722060d07e00e8a9a43f61b8b9264",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=479904:end_sample=767712,asetpts=PTS-STARTPTS,atempo=0.9742499999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.594,
+        20.794
+      ],
+      "target_anchors_seconds": [
+        16.0498636540709,
+        21.383196987404233
+      ],
+      "tempo_factor": 0.9750000000000004,
+      "source_guard_samples": [
+        729312,
+        1017312
+      ],
+      "output_offset_samples": 751193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73825
+      ],
+      "waveform_correlations": [
+        0.9999999708033125,
+        0.9999999777623234
+      ],
+      "observed_end_error_ms": 4.916666666667346,
+      "raw_sha256": "d5fc434e79272e8a45c9cfa23dd70eb92a9670a7882c76ab8fc56b94aa9df17a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=729312:end_sample=1017312,asetpts=PTS-STARTPTS,atempo=0.9750000000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        20.794,
+        26.0
+      ],
+      "target_anchors_seconds": [
+        21.383196987404233,
+        26.71653032073757
+      ],
+      "tempo_factor": 0.9761249999999995,
+      "source_guard_samples": [
+        978912,
+        1267200
+      ],
+      "output_offset_samples": 1007193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734166666666667
+      ],
+      "waveform_correlations": [
+        0.9999999674929689,
+        0.999999972818369
+      ],
+      "observed_end_error_ms": 0.8333333333307991,
+      "raw_sha256": "08553d3674eca11fcb7c517d0563ac6a8365e1a5bb4e6ee0d1433fbbdc9e29fc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=978912:end_sample=1267200,asetpts=PTS-STARTPTS,atempo=0.9761249999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.0,
+        31.204
+      ],
+      "target_anchors_seconds": [
+        26.71653032073757,
+        32.0498636540709
+      ],
+      "tempo_factor": 0.975750000000001,
+      "source_guard_samples": [
+        1228800,
+        1516992
+      ],
+      "output_offset_samples": 1263193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733833333333333
+      ],
+      "waveform_correlations": [
+        0.9999999675561775,
+        0.9999999718825505
+      ],
+      "observed_end_error_ms": 0.5000000000041638,
+      "raw_sha256": "6b9b017c04574d11d847daa4d331cad090afe4aecab9b62b3b0a0ee17b51c805",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1228800:end_sample=1516992,asetpts=PTS-STARTPTS,atempo=0.9757500000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.204,
+        36.41
+      ],
+      "target_anchors_seconds": [
+        32.0498636540709,
+        37.38319698740423
+      ],
+      "tempo_factor": 0.9761249999999988,
+      "source_guard_samples": [
+        1478592,
+        1766880
+      ],
+      "output_offset_samples": 1519193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.72725
+      ],
+      "waveform_correlations": [
+        0.9999999727664675,
+        0.9999999913858347
+      ],
+      "observed_end_error_ms": -6.083333333336327,
+      "raw_sha256": "a43cad0099847f145cfdb6262ad9e0b68b06ea858cc54a88ca77ff77fd7e9956",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1478592:end_sample=1766880,asetpts=PTS-STARTPTS,atempo=0.9761249999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.41,
+        41.616
+      ],
+      "target_anchors_seconds": [
+        37.38319698740423,
+        42.71653032073756
+      ],
+      "tempo_factor": 0.9761250000000015,
+      "source_guard_samples": [
+        1728480,
+        2016768
+      ],
+      "output_offset_samples": 1775193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7283125
+      ],
+      "waveform_correlations": [
+        0.9999999605810063,
+        0.9999999850037314
+      ],
+      "observed_end_error_ms": -5.020833333328589,
+      "raw_sha256": "c533aa4988a2af76e1b0d4f8cbf0a308cbfdb8a6f6ee902f5bb2895d65560e3b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1728480:end_sample=2016768,asetpts=PTS-STARTPTS,atempo=0.9761250000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        41.616,
+        46.82
+      ],
+      "target_anchors_seconds": [
+        42.71653032073756,
+        48.0498636540709
+      ],
+      "tempo_factor": 0.9757499999999997,
+      "source_guard_samples": [
+        1978368,
+        2266560
+      ],
+      "output_offset_samples": 2031193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7279583333333335
+      ],
+      "waveform_correlations": [
+        0.9999999569307099,
+        0.9999999884068713
+      ],
+      "observed_end_error_ms": -5.375000000002572,
+      "raw_sha256": "82305a118949562e921b08b2470264362e7e347fbd9ec2553c611276126a9655",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1978368:end_sample=2266560,asetpts=PTS-STARTPTS,atempo=0.9757499999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        46.82,
+        52.024
+      ],
+      "target_anchors_seconds": [
+        48.0498636540709,
+        53.38319698740423
+      ],
+      "tempo_factor": 0.9757499999999997,
+      "source_guard_samples": [
+        2228160,
+        2516352
+      ],
+      "output_offset_samples": 2287193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7326041666666665
+      ],
+      "waveform_correlations": [
+        0.9999999714766005,
+        0.9999999650664841
+      ],
+      "observed_end_error_ms": -0.7291666666695562,
+      "raw_sha256": "25cacd4a5ec3e17ca7dac19a2d97768cf914a097606f9fad404efa38f6a68d0e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2228160:end_sample=2516352,asetpts=PTS-STARTPTS,atempo=0.9757499999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        52.024,
+        57.226
+      ],
+      "target_anchors_seconds": [
+        53.38319698740423,
+        58.71653032073756
+      ],
+      "tempo_factor": 0.9753750000000005,
+      "source_guard_samples": [
+        2477952,
+        2766048
+      ],
+      "output_offset_samples": 2543193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7339166666666666
+      ],
+      "waveform_correlations": [
+        0.9999999668291573,
+        0.9999999656868483
+      ],
+      "observed_end_error_ms": 0.583333333337599,
+      "raw_sha256": "6f84c6f3be2bef31a8c6a08aad7649dfd21c99e4710a611bd8284f003a8bda47",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2477952:end_sample=2766048,asetpts=PTS-STARTPTS,atempo=0.9753750000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.226,
+        62.432
+      ],
+      "target_anchors_seconds": [
+        58.71653032073756,
+        64.0498636540709
+      ],
+      "tempo_factor": 0.9761249999999988,
+      "source_guard_samples": [
+        2727648,
+        3015936
+      ],
+      "output_offset_samples": 2799193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732625
+      ],
+      "waveform_correlations": [
+        0.9999999697544237,
+        0.9999999720774186
+      ],
+      "observed_end_error_ms": -0.7083333333435249,
+      "raw_sha256": "8b326eaaccb4781c72a95255fda06b22e74cb00b09eaf5cf39b4524ce495e1b1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2727648:end_sample=3015936,asetpts=PTS-STARTPTS,atempo=0.9761249999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        62.432,
+        67.634
+      ],
+      "target_anchors_seconds": [
+        64.0498636540709,
+        69.38319698740423
+      ],
+      "tempo_factor": 0.9753750000000005,
+      "source_guard_samples": [
+        2977536,
+        3265632
+      ],
+      "output_offset_samples": 3055193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728833333333333
+      ],
+      "waveform_correlations": [
+        0.9999999705884164,
+        0.9999999865778095
+      ],
+      "observed_end_error_ms": -4.49999999999573,
+      "raw_sha256": "f29d5506be1049921d7e3bfede6dc869fa42a874a409e2ca2613b539ec8304ec",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2977536:end_sample=3265632,asetpts=PTS-STARTPTS,atempo=0.9753750000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        67.634,
+        72.838
+      ],
+      "target_anchors_seconds": [
+        69.38319698740423,
+        74.71653032073758
+      ],
+      "tempo_factor": 0.975749999999997,
+      "source_guard_samples": [
+        3227232,
+        3515424
+      ],
+      "output_offset_samples": 3311193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7315
+      ],
+      "waveform_correlations": [
+        0.999999973977735,
+        0.999999970559752
+      ],
+      "observed_end_error_ms": -1.8333333333435675,
+      "raw_sha256": "5799c079fa96fbb3f2ca9d3e8e94095e8be3bc98222ef5e2981c18a2ab75045c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3227232:end_sample=3515424,asetpts=PTS-STARTPTS,atempo=0.9757499999999970,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        72.838,
+        78.036
+      ],
+      "target_anchors_seconds": [
+        74.71653032073758,
+        80.0498636540709
+      ],
+      "tempo_factor": 0.9746250000000023,
+      "source_guard_samples": [
+        3477024,
+        3764928
+      ],
+      "output_offset_samples": 3567193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732666666666667
+      ],
+      "waveform_correlations": [
+        0.999999967152333,
+        0.9999999640746524
+      ],
+      "observed_end_error_ms": -0.6666666666621524,
+      "raw_sha256": "1aff5663df396866ee07859c098064530a29fc517f49830cdb8aa3c27a515b60",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3477024:end_sample=3764928,asetpts=PTS-STARTPTS,atempo=0.9746250000000023,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        78.036,
+        83.236
+      ],
+      "target_anchors_seconds": [
+        80.0498636540709,
+        85.38319698740423
+      ],
+      "tempo_factor": 0.9750000000000014,
+      "source_guard_samples": [
+        3726528,
+        4014528
+      ],
+      "output_offset_samples": 3823193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732333333333333
+      ],
+      "waveform_correlations": [
+        0.999999968695208,
+        0.9999999688666533
+      ],
+      "observed_end_error_ms": -0.9999999999958931,
+      "raw_sha256": "5c95b39c81feaa495625735e533e51df024eef36a5a9c69bcd9958a3d6a65574",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3726528:end_sample=4014528,asetpts=PTS-STARTPTS,atempo=0.9750000000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        83.236,
+        88.436
+      ],
+      "target_anchors_seconds": [
+        85.38319698740423,
+        90.71653032073758
+      ],
+      "tempo_factor": 0.9749999999999988,
+      "source_guard_samples": [
+        3976128,
+        4264128
+      ],
+      "output_offset_samples": 4079193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7334375
+      ],
+      "waveform_correlations": [
+        0.9999999755891963,
+        0.9999999707044774
+      ],
+      "observed_end_error_ms": 0.10416666665680197,
+      "raw_sha256": "4dd27719fa334e9bb9f739a2953839c2c43ef6c2ce2db68978b42627e2e53e65",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3976128:end_sample=4264128,asetpts=PTS-STARTPTS,atempo=0.9749999999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        88.436,
+        93.636
+      ],
+      "target_anchors_seconds": [
+        90.71653032073758,
+        96.0498636540709
+      ],
+      "tempo_factor": 0.9749999999999988,
+      "source_guard_samples": [
+        4225728,
+        4513728
+      ],
+      "output_offset_samples": 4335193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7355833333333335
+      ],
+      "waveform_correlations": [
+        0.9999999709203111,
+        0.9999999820309602
+      ],
+      "observed_end_error_ms": 2.250000000004526,
+      "raw_sha256": "6ed2a42e14ba86f42443c18c739987b12497b7c39c1f81d2f0c07464c85b301c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4225728:end_sample=4513728,asetpts=PTS-STARTPTS,atempo=0.9749999999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        93.636,
+        98.832
+      ],
+      "target_anchors_seconds": [
+        96.0498636540709,
+        101.38319698740423
+      ],
+      "tempo_factor": 0.9742500000000005,
+      "source_guard_samples": [
+        4475328,
+        4763136
+      ],
+      "output_offset_samples": 4591193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736
+      ],
+      "waveform_correlations": [
+        0.9999999766830743,
+        0.9999999715898388
+      ],
+      "observed_end_error_ms": 2.666666666670814,
+      "raw_sha256": "d0d55e33673fa6f737d0cd5eb3a8365aafca8fea032574c23f965c0e3194a6b5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4475328:end_sample=4763136,asetpts=PTS-STARTPTS,atempo=0.9742500000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        98.832,
+        104.026
+      ],
+      "target_anchors_seconds": [
+        101.38319698740423,
+        106.71653032073758
+      ],
+      "tempo_factor": 0.9738749999999987,
+      "source_guard_samples": [
+        4724736,
+        5012448
+      ],
+      "output_offset_samples": 4847031,
+      "observed_raw_anchors_seconds": [
+        0.403375,
+        5.73575
+      ],
+      "waveform_correlations": [
+        0.9999999729210849,
+        0.999999977087289
+      ],
+      "observed_end_error_ms": -0.9583333333420541,
+      "raw_sha256": "46424ac09dfde7db5ae57001ecf7810cee30ac9bc8d1135f578ada0b56659c96",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4724736:end_sample=5012448,asetpts=PTS-STARTPTS,atempo=0.9738749999999987,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        104.026,
+        109.224
+      ],
+      "target_anchors_seconds": [
+        106.71653032073758,
+        112.0498636540709
+      ],
+      "tempo_factor": 0.9746250000000023,
+      "source_guard_samples": [
+        4974048,
+        5261952
+      ],
+      "output_offset_samples": 5103193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.740875
+      ],
+      "waveform_correlations": [
+        0.9999999517061984,
+        0.9999999804507477
+      ],
+      "observed_end_error_ms": 7.541666666670999,
+      "raw_sha256": "27b4e12b23fb58a28e8fb974b062da9486ae204546602df97a0dabc9144af9c7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4974048:end_sample=5261952,asetpts=PTS-STARTPTS,atempo=0.9746250000000023,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        109.224,
+        114.424
+      ],
+      "target_anchors_seconds": [
+        112.0498636540709,
+        117.38319698740423
+      ],
+      "tempo_factor": 0.9750000000000014,
+      "source_guard_samples": [
+        5223552,
+        5511552
+      ],
+      "output_offset_samples": 5358907,
+      "observed_raw_anchors_seconds": [
+        0.4059583333333333,
+        5.733666666666666
+      ],
+      "waveform_correlations": [
+        0.999999978091365,
+        0.9999999781859694
+      ],
+      "observed_end_error_ms": -5.624999999995772,
+      "raw_sha256": "6b080661c3812249ef44d243dea07015726c5bce05f1ab81e32f29e521fd30a0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5223552:end_sample=5511552,asetpts=PTS-STARTPTS,atempo=0.9750000000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        114.424,
+        119.624
+      ],
+      "target_anchors_seconds": [
+        117.38319698740423,
+        122.71653032073758
+      ],
+      "tempo_factor": 0.9749999999999961,
+      "source_guard_samples": [
+        5473152,
+        5761152
+      ],
+      "output_offset_samples": 5615193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731645833333333
+      ],
+      "waveform_correlations": [
+        0.999999976090753,
+        0.9999999718250355
+      ],
+      "observed_end_error_ms": -1.687500000009834,
+      "raw_sha256": "07ec8c66e4f94d9f5ae534ad894c3707d982db89104a09dc700c82780009c203",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5473152:end_sample=5761152,asetpts=PTS-STARTPTS,atempo=0.9749999999999961,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        119.624,
+        124.822
+      ],
+      "target_anchors_seconds": [
+        122.71653032073758,
+        128.0498636540709
+      ],
+      "tempo_factor": 0.9746250000000048,
+      "source_guard_samples": [
+        5722752,
+        6010656
+      ],
+      "output_offset_samples": 5871193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736666666666666
+      ],
+      "waveform_correlations": [
+        0.9999999701790016,
+        0.999999970245954
+      ],
+      "observed_end_error_ms": 3.333333333351618,
+      "raw_sha256": "9870f89ea7dfc312bb28840c9bc2404a2566ab28633573356a14d82d1ee7c032",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5722752:end_sample=6010656,asetpts=PTS-STARTPTS,atempo=0.9746250000000048,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        124.822,
+        130.024
+      ],
+      "target_anchors_seconds": [
+        128.0498636540709,
+        133.38319698740423
+      ],
+      "tempo_factor": 0.9753749999999979,
+      "source_guard_samples": [
+        5972256,
+        6260352
+      ],
+      "output_offset_samples": 6127193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736583333333333
+      ],
+      "waveform_correlations": [
+        0.9999999700240233,
+        0.999999975521695
+      ],
+      "observed_end_error_ms": 3.249999999989761,
+      "raw_sha256": "375bf88aec754d26c45ef053ce2b3f167bda8b7ecbd519106dc1ed2449c5dbe1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5972256:end_sample=6260352,asetpts=PTS-STARTPTS,atempo=0.9753749999999979,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        130.024,
+        135.224
+      ],
+      "target_anchors_seconds": [
+        133.38319698740423,
+        138.71653032073755
+      ],
+      "tempo_factor": 0.9750000000000013,
+      "source_guard_samples": [
+        6221952,
+        6509952
+      ],
+      "output_offset_samples": 6383193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999694320941,
+        0.999999972659049
+      ],
+      "observed_end_error_ms": 0.8958333333515256,
+      "raw_sha256": "839b6c5a5ffc333ab89f75973ba17f36cfa9cfa035b899597edbc4d7d8e333f4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6221952:end_sample=6509952,asetpts=PTS-STARTPTS,atempo=0.9750000000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        135.224,
+        140.42
+      ],
+      "target_anchors_seconds": [
+        138.71653032073755,
+        144.0498636540709
+      ],
+      "tempo_factor": 0.9742499999999978,
+      "source_guard_samples": [
+        6471552,
+        6759360
+      ],
+      "output_offset_samples": 6639193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733458333333333
+      ],
+      "waveform_correlations": [
+        0.9999999679657351,
+        0.999999975468515
+      ],
+      "observed_end_error_ms": 0.12499999998993871,
+      "raw_sha256": "90bb23910629f5b302ca8cf0dcb1be77fc0aafa90a17fc28724a7d2fed2b845a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6471552:end_sample=6759360,asetpts=PTS-STARTPTS,atempo=0.9742499999999978,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        140.42,
+        145.62
+      ],
+      "target_anchors_seconds": [
+        144.0498636540709,
+        149.38319698740423
+      ],
+      "tempo_factor": 0.9750000000000014,
+      "source_guard_samples": [
+        6720960,
+        7008960
+      ],
+      "output_offset_samples": 6895193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732583333333333
+      ],
+      "waveform_correlations": [
+        0.9999999754211847,
+        0.9999999664109505
+      ],
+      "observed_end_error_ms": -0.7500000000097984,
+      "raw_sha256": "d7fe8aac2a3d901a5776933603f82279d39819a8c2a163ef4446657a089f35a2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6720960:end_sample=7008960,asetpts=PTS-STARTPTS,atempo=0.9750000000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        145.62,
+        150.816
+      ],
+      "target_anchors_seconds": [
+        149.38319698740423,
+        154.71653032073755
+      ],
+      "tempo_factor": 0.9742500000000031,
+      "source_guard_samples": [
+        6970560,
+        7258368
+      ],
+      "output_offset_samples": 7151193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732104166666667
+      ],
+      "waveform_correlations": [
+        0.9999999702488294,
+        0.9999999596439517
+      ],
+      "observed_end_error_ms": -1.2291666666479628,
+      "raw_sha256": "2141fb166d4c82a761742f8fcd274d5c36311d95b8126af79ce68d6cd3397ee7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6970560:end_sample=7258368,asetpts=PTS-STARTPTS,atempo=0.9742500000000031,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        150.816,
+        156.01
+      ],
+      "target_anchors_seconds": [
+        154.71653032073755,
+        160.0498636540709
+      ],
+      "tempo_factor": 0.973874999999996,
+      "source_guard_samples": [
+        7219968,
+        7507680
+      ],
+      "output_offset_samples": 7407193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999562876272,
+        0.9999999672328399
+      ],
+      "observed_end_error_ms": -1.3750000000101181,
+      "raw_sha256": "598c25210f83cae746ba2d2b543d36a92e19e76fd10d08ec827b40cfa8e747dd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7219968:end_sample=7507680,asetpts=PTS-STARTPTS,atempo=0.9738749999999960,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        156.01,
+        161.206
+      ],
+      "target_anchors_seconds": [
+        160.0498636540709,
+        165.38319698740423
+      ],
+      "tempo_factor": 0.9742499999999978,
+      "source_guard_samples": [
+        7469280,
+        7757088
+      ],
+      "output_offset_samples": 7663193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7296875
+      ],
+      "waveform_correlations": [
+        0.9999999718917418,
+        0.9999999757621445
+      ],
+      "observed_end_error_ms": -3.64583333334334,
+      "raw_sha256": "c26943a74b5b373eb5c9f71724911f35a2d8ba3eb4f228eca097b472110e45d9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7469280:end_sample=7757088,asetpts=PTS-STARTPTS,atempo=0.9742499999999978,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        161.206,
+        166.402
+      ],
+      "target_anchors_seconds": [
+        165.38319698740423,
+        170.71653032073755
+      ],
+      "tempo_factor": 0.9742500000000031,
+      "source_guard_samples": [
+        7718688,
+        8006496
+      ],
+      "output_offset_samples": 7919193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7327916666666665
+      ],
+      "waveform_correlations": [
+        0.9999999615722928,
+        0.999999963140223
+      ],
+      "observed_end_error_ms": -0.5416666666482328,
+      "raw_sha256": "fa61d9dcd8e8f06c49ab6e4cfb7a91032876d808f4d20cd290f2967260013317",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7718688:end_sample=8006496,asetpts=PTS-STARTPTS,atempo=0.9742500000000031,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        166.402,
+        171.594
+      ],
+      "target_anchors_seconds": [
+        170.71653032073755,
+        176.0498636540709
+      ],
+      "tempo_factor": 0.9734999999999996,
+      "source_guard_samples": [
+        7968096,
+        8255712
+      ],
+      "output_offset_samples": 8175193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735541666666666
+      ],
+      "waveform_correlations": [
+        0.9999999648146907,
+        0.9999999822157417
+      ],
+      "observed_end_error_ms": 2.2083333333231536,
+      "raw_sha256": "1889fad260baf3ffd731f5d626ecd31941b0d2592265930ef2e5550d247b736a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7968096:end_sample=8255712,asetpts=PTS-STARTPTS,atempo=0.9734999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        171.594,
+        176.804
+      ],
+      "target_anchors_seconds": [
+        176.0498636540709,
+        181.38319698740423
+      ],
+      "tempo_factor": 0.9768749999999997,
+      "source_guard_samples": [
+        8217312,
+        8505792
+      ],
+      "output_offset_samples": 8431193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736104166666666
+      ],
+      "waveform_correlations": [
+        0.9999999803770567,
+        0.9999098783880005
+      ],
+      "observed_end_error_ms": 2.770833333323175,
+      "raw_sha256": "8e9b898c149bf59fedda31f2347c4cf12f2e820ceef112c6905ae8a2bab78920",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8217312:end_sample=8505792,asetpts=PTS-STARTPTS,atempo=0.9768749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        176.804,
+        181.994
+      ],
+      "target_anchors_seconds": [
+        181.38319698740423,
+        186.71653032073755
+      ],
+      "tempo_factor": 0.973125000000003,
+      "source_guard_samples": [
+        8467392,
+        8754912
+      ],
+      "output_offset_samples": 8686902,
+      "observed_raw_anchors_seconds": [
+        0.4060625,
+        5.736583333333333
+      ],
+      "waveform_correlations": [
+        0.999999910611381,
+        0.9999999740538991
+      ],
+      "observed_end_error_ms": -2.812499999981455,
+      "raw_sha256": "88133dc804ad201bc22eee334bd4b4ebea88a8d314a9bede641c4c31d2ce1d65",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8467392:end_sample=8754912,asetpts=PTS-STARTPTS,atempo=0.9731250000000030,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        576
+      ],
+      "source_anchors_seconds": [
+        181.994,
+        187.186
+      ],
+      "target_anchors_seconds": [
+        186.71653032073755,
+        192.0498636540709
+      ],
+      "tempo_factor": 0.9734999999999996,
+      "source_guard_samples": [
+        8716512,
+        9004128
+      ],
+      "output_offset_samples": 8942867,
+      "observed_raw_anchors_seconds": [
+        0.40679166666666666,
+        5.7343125
+      ],
+      "waveform_correlations": [
+        0.9999999583704949,
+        0.9999999822789597
+      ],
+      "observed_end_error_ms": -5.81250000000999,
+      "raw_sha256": "990cc280d27e3c2cf0596c13fbe7d8e0cec7f2274439ab605ca022d053dd4ccb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8716512:end_sample=9004128,asetpts=PTS-STARTPTS,atempo=0.9734999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-035.wav"
+      ]
+    },
+    {
+      "block": 36,
+      "source_beat_indices": [
+        576,
+        592
+      ],
+      "source_anchors_seconds": [
+        187.186,
+        192.38
+      ],
+      "target_anchors_seconds": [
+        192.0498636540709,
+        197.38319698740423
+      ],
+      "tempo_factor": 0.973874999999996,
+      "source_guard_samples": [
+        8965728,
+        9253440
+      ],
+      "output_offset_samples": 9199192,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.733083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999799401156,
+        0.9999999759855667
+      ],
+      "observed_end_error_ms": -0.27083333334321225,
+      "raw_sha256": "bc600f990bf88751c57b1bc4bd3cf7fd854d780d436373b50eab65da2360ead2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8965728:end_sample=9253440,asetpts=PTS-STARTPTS,atempo=0.9738749999999960,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-036.wav"
+      ]
+    },
+    {
+      "block": 37,
+      "source_beat_indices": [
+        592,
+        608
+      ],
+      "source_anchors_seconds": [
+        192.38,
+        197.568
+      ],
+      "target_anchors_seconds": [
+        197.38319698740423,
+        202.71653032073755
+      ],
+      "tempo_factor": 0.9727500000000066,
+      "source_guard_samples": [
+        9215040,
+        9502464
+      ],
+      "output_offset_samples": 9455131,
+      "observed_raw_anchors_seconds": [
+        0.40129166666666666,
+        5.731875
+      ],
+      "waveform_correlations": [
+        0.9999999740621571,
+        0.999999940143665
+      ],
+      "observed_end_error_ms": -2.7499999999811564,
+      "raw_sha256": "ff73806a93373aa304ba8ff28f88d046e7438b7203b15c46e882f86450d8cd7b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9215040:end_sample=9502464,asetpts=PTS-STARTPTS,atempo=0.9727500000000066,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-037.wav"
+      ]
+    },
+    {
+      "block": 38,
+      "source_beat_indices": [
+        608,
+        615
+      ],
+      "source_anchors_seconds": [
+        197.568,
+        199.85
+      ],
+      "target_anchors_seconds": [
+        202.71653032073755,
+        205.0498636540709
+      ],
+      "tempo_factor": 0.9779999999999884,
+      "source_guard_samples": [
+        9464064,
+        9598080
+      ],
+      "output_offset_samples": 9711193,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        2.7281875
+      ],
+      "waveform_correlations": [
+        0.9999999389280895,
+        0.9999987870007045
+      ],
+      "observed_end_error_ms": -5.145833333342509,
+      "raw_sha256": "9829e3c0ca2a9154ef2795460f71836be1f937caced1e0a2f525f6ebc947e70c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/08__낮은 비트__Bright__Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9464064:end_sample=9598080,asetpts=PTS-STARTPTS,atempo=0.9779999999999884,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-08/block-038.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

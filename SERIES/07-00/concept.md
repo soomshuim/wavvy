@@ -1,15 +1,55 @@
 # 07:00 — 아침 러닝 (제작 브리프)
 
-Version: 0.1 draft · 2026-10-03
+Version: 0.2 재제작 · 2026-10-24
+
+## Current Rebuild — 2026-10-24
+
+- 젠은 이전 YouTube 영상을 삭제했다고 알렸고, 기존 선택 20곡을 다시 제작해 업로드하도록 요청했다. 새 영상은 아직 제작·업로드 전이다.
+- 확정된 번호순과 후보 ID는 `input/suno-final-selection-2026-10-12.json`을 유지한다. 음악을 새로 생성하거나 선택곡을 바꾸는 요청은 아니다.
+- 이번에는 각 곡을 실제로 측정하고 음높이를 유지하며 180 BPM으로 늘리거나 줄인다. 곡이 바뀌는 전환부도 박자가 이어지도록 연결한다. 2026-10-12의 ‘템포 차이만으로 보정하지 않는다’는 결정은 이번 재제작에 적용하지 않는다.
+- 20곡을 번호순으로 2회 구성한다. 20→1을 포함해 39개 전환과 40개 실제 시작 시각을 새로 기록한다. 이전 영상의 0.8초 전환과 챕터 시각은 새 제작 기준이 아니다.
+- 착수 시점에는 이전 정리로 로컬 음원·영상이 없었다. 같은 선택 ID의 원본 WAV 20곡을 다시 확보했다. 새 다운로드와 과거 원본의 해시는 다르므로 출처 원장에 각각 기록했다. 현재 20곡의 180 BPM 보정과 독립 박자 분석, 2회 연결 음원 제작 및 저장 파일의 기술 검사를 마쳤다. 독립 최종 오디오 검토는 CLEAN이며 젠의 새 음원 청취 확인과 새 영상 제작은 아직 전이다. 아래 2026-10-12 기록은 당시 이력이다.
+- 새 장면은 한국 도심 빌딩을 배경으로 위에서 본 세 러너이며 젠이 선택했다. 젠이 직접 만든 `input/thumb.jpg`와 `input/thumb.psd`를 최종본으로 받았다. 새 영상의 정적 이미지 입력은 `input/thumb.jpg`이다. 시간 숫자는 넣지 않으며 색·글자·배치를 다시 편집하지 않는다. 새 업로드 제목은 아직 젠의 확인 전이다.
+- 실행 계획: `.ai/plans/2026-10-24-0700-180bpm-remaster.md`.
+
+## Current Audio — 2026-10-24
+
+- 기존 선택 20곡의 ID·번호순은 동일하다. 새로 확보한 원본은 `input/tracks/`, 음높이를 유지한 180 BPM 보정본은 `input/processed-180/`에 각각 보관한다.
+- 보정 방식은 FFmpeg `atempo`이다. 곡 안의 구간별 속도를 조정했으며 음높이 변경이나 악기 추가는 하지 않았다. 원본은 덮어쓰지 않았다.
+- 현재 2회 연결 음원: `output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a`, 48 kHz·stereo AAC, 6,722.858833초(약 1:52:03), SHA-256 `69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe`.
+- 제작·검사 기록: `production/continuous-180-20261024/manifest.json`. 실제 40개 재생 구간·39개 전환이며 20→1도 연결했다. 전환은 16박(5⅓초)씩 겹친다. 2시간 WAV 중간 사본은 쓰지 않았다.
+- 전환 20종의 관측 타격음 차이는 각 연결의 90백분위가 최대 19.867 ms이다. 다른 박자 분석 모델의 마디 시작점도 대조했다. 이는 측정 오차를 포함한 추정치이며 모든 연주 타격이 기계적으로 정확히 180 BPM이라는 인증은 아니다.
+- 저장 AAC의 39개 전환과 첫 회차 본문 20곳을 원본 재구성 파형과 대조했다. 59곳의 최대 시간 차이는 0샘플, 최소 파형 상관은 0.96926이었다. 최종 음량은 -15.95 LUFS, true peak -3.04 dBTP이며 클리핑은 관측되지 않았다. 원곡의 간주·조용한 본문을 무음이라는 이유로 제거하지 않았다.
+- `output/continuous-180-20261024/transitions/`에 전환별 16초 청취 WAV 20개가 있다. 첫 회차 끝에서 두 번째 회차로 이어지는 샘플은 `20-01.wav`이다.
+- 실제 40개 시작 시각은 `production/continuous-180-20261024/tracklist.txt`에 기록했다. 곡이 처음 들리는 순간의 인증이 아니라 다음 곡의 페이드가 시작되는 위치다.
+- 독립 Astra/high 최종 오디오 검토는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. [검토 범위와 독립 측정](../../.ai/reviews/2026-10-24-0700-continuous-audio-review.md)을 따른다. 기술 검사 통과는 젠의 청취 승인이 아니다. 현재 새 보정본·연결 음원의 청취 승인, 새 업로드 제목 승인, 영상 제작·업로드는 아직 전이다.
+- 이전 `Final Selected Audio Sources` 및 `output/report.json`의 해시·시각은 2026-10-12 개별 음원 제작 이력이다. 새 완성 믹스의 출처·시각은 위 제작 기록을 따른다. 새 믹스는 아직 발매 게이트에 맞는 최종 보관 계약으로 승격하지 않았다. `pack`으로 반복·합성을 추가하지 않는다.
+
+## Previous Release Summary — 과거 기록
 Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기존 선택 02·03·04·13·14·18·19 일곱 곡, 1차 선택 01·05·07·08·15·16·17·20 여덟 곡, 2차 11B, 젠의 직접 재제작 06·09·10, 현재 `[07:00]`에 있는 12를 사용한다. 정확한 20개 ID는 `input/suno-final-selection-2026-10-12.json`에 있다. 현재 선택과 일치하는 WAV 20개를 파일 형식·길이·해시로 확인했다(`input/download-manifest.json`, 합계 약 58분 19초). 옛 05·06·07 WAV와 기존 선택 기록은 이력으로 보존한다. 젠은 이 곡들로 20~30분 달리면 평균 케이던스가 대략 180이라고 보고했다. 탐색적 오디오 측정에서는 일부 곡이 약 174~192 BPM으로 추정됐다. 20곡의 채택은 유지하고 `180 BPM`은 목표 케이던스 표기로 쓰며 전곡이 정확히 180 BPM이라는 주장은 하지 않는다. 음악적 품질의 별도 기계 판정은 아직 없다. Wavvy24에 업로드했고 2026-10-12 17:00 KST 공개 예약 시각 이후 Studio에서 공개·4K 처리 완료를 확인했다.
 
 젠의 2026-10-06 다운로드 보류는 2026-10-12 재개 요청으로 끝났다. 확정 20곡을 번호순으로 2회 반복한 40개 재생 구간의 4K 본편을 렌더했고, 40개 시작 시각을 포함한 업로드 문안을 작성했다. 선택 음원의 일부 정확한 원문 프롬프트는 확인되지 않아 최초 보컬 txt를 최종 음원 출처로 승격하지 않는다. 현행 선택 ID·WAV 해시·확인된 원문 또는 관측된 화면 설명을 아래 `Final Selected Audio Sources`와 `input/final-selected-audio-sources.json`에 구분해 기록한다.
 
 2026-10-12 현재: Suno 대화상자에서 Pro 다운로드 20회를 확인한 뒤, 확정된 20곡의 WAV를 수집했다. 06·09·10은 젠이 최종 채택했고, 12는 10월 6일 선택 B와 다른 현재 화면의 음원을 젠이 최종 12번으로 골랐다. 현재 `input/tracks/`의 상위 폴더에는 선택된 WAV만 20개 있다. 옛 05·06·07의 원본 해시와 파일은 `input/historical-downloads-2026-10-03.json` 및 `input/tracks/history/2026-10-03/`에 보존했다. 다운로드 과정에서 자동으로 생긴 M4A는 Downloads에 남겨 두었고 패키지에는 넣지 않았다.
 
-시각 작업(2026-10-12): `input/art-draft-2026-10-12.png`는 거절된 첫 초안으로 보존한다. 젠이 제공한 러닝 사진은 구도·움직임·직접 플래시의 참고로만 쓰고 원본 픽셀은 사용하지 않았다. `input/thumb-scene-dawn-2026-10-12.png`(1672×941, SHA-256 `57619ab694ee2f4128db2c9bf7574fc6dbc6353f366bcc94b24d4f2ac1a68df7`)는 해가 막 뜨는 푸른 새벽에 보랏빛을 살짝 더한 강변 러닝 장면이다. 메인 러너는 블랙 러닝복, 라임 양말, 흰색 바탕에 작은 라임 포인트가 있는 신발을 신고 낮은 카메라를 살짝 내려다본다. 검은 나시 가슴에는 작은 형광 라임색 Nike 스우시가 있다. 젠이 승인한 `input/thumb.jpg`(1672×941, SHA-256 `cb623c2811ce2cfe9bf003629516c4e36554fe89f05e6b2eea34e27d1659de30`)에는 실제 Wavvy 로고를 표시 너비 264px로 두고, Pacifico `07:00`을 오른쪽에 배치했다. 시간 글자의 크기·간격은 06:00·11:00 썸네일을 같은 폭으로 비교해 맞췄다. 왼쪽 아래에는 아주 얇은 SF Pro Display Thin `Cadence`를 작게, 그 옆에 헤드라인 오른쪽 끝까지 1px 선을 뒀다. 그 아래 두꺼운 Helvetica Neue Condensed Black `180 BPM`을 왼쪽 정렬로 배치했다. 전체 크기와 320×180을 확인했다. 조사·재생성 경위·해시는 `input/thumbnail-reference-review-2026-10-12.md`에 있다. `180 BPM`은 목표 케이던스 표기이며 전곡의 정확한 오디오 BPM 인증값이 아니다. 승인된 장면을 확대해 `input/loop.png`(3840×2160, SHA-256 `75dac23e65f3908a126c5fa19bd01d854ef5ef1767585e23de3139634d346e89`)로 저장했다. 원본 사진은 1672×941이며 배경의 4K 픽셀은 원본 생성이 아니라 Lanczos 확대 결과다.
+시각 작업(2026-10-12)은 이전 영상의 강변 새벽 장면과 시간 표기가 있는 썸네일이었다. 2026-10-24 새 최종본으로 교체했으며 옛 배경·시안·배치 지시·과정 검토 문서는 이번 썸네일 정리 대상이다. 현재 제작 입력이나 보존 대상이 아니다.
+
+## Final Artwork — 2026-10-24
+
+- 최종 생성 프롬프트: `input/thumbnail-prompt.txt`. 최종 장면의 생성·배경 수정 지시를 모은 재현용 설명이며 동일 픽셀을 보장하는 기록은 아니다.
+- 글자 없는 원본: `input/thumbnail-source.png`, 1672×941, SHA-256 `6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe`.
+- 젠의 편집 원본: `input/thumb.psd`, 2532×1424, SHA-256 `533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439`.
+- 최종 썸네일 겸 새 영상의 정적 이미지: `input/thumb.jpg`, 2532×1424, SHA-256 `93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944`.
+- 새 영상은 최종 JPG를 3840×2160으로 확대해 사용할 예정이며 원본 사진이 4K로 생성됐다고 주장하지 않는다. 아직 영상은 제작하지 않았다.
+- 옛 `input/loop.png`를 새 영상 입력으로 사용하지 않는다. 완성된 2회 믹스와 최종 JPG를 직접 연결하는 정적 이미지 제작 방식을 사용한다. 일반 `pack` 반복을 다시 적용하지 않는다.
 
 ## Upload Status
+
+- Status: pending
+- 현재 작업: 180 BPM 보정·박자 연결·새 썸네일로 재제작 중이며 새 업로드는 아직 하지 않았다.
+- 이전 영상 `DU_vBuIdMG4`는 젠이 삭제했다고 보고했다(2026-10-24). 아래 공개 확인은 삭제 전 과거 기록이다.
+
+## Previous Upload — 2026-10-12 과거 기록
 
 - YouTube 업로드 완료: Wavvy24 채널, https://youtu.be/DU_vBuIdMG4, 2026-10-12.
 - 공개 예약: 2026-10-12 17:00 서울(GMT+09:00). Studio 확인 대화상자와 콘텐츠 목록의 `예약됨` 상태를 확인했다.
@@ -20,7 +60,7 @@ Status (2026-10-12): 젠이 번호별 최종 음원 20곡을 확정했다. 기�
 - 2026-10-12 약 18:22 KST: 아래 고정 댓글 원문을 Wavvy24 계정으로 공개 영상에 게시했다. [댓글 링크](https://www.youtube.com/watch?v=DU_vBuIdMG4&lc=Ugz4aOucarXn6_sgILZ4AaABAg). Aside YouTube 조회에서 동일 원문 댓글 1개를 확인했고, 시청 페이지를 새로 불러온 뒤 `@wavvy24님이 고정함` 표시를 확인했다.
 - 아동용 아님, AI 사용 예, 유료 프로모션 없음으로 설정했다. 가사 없는 음원이므로 가사 자막은 제출하지 않았다.
 
-## YouTube Metadata (v2.1 — scheduled)
+## YouTube Metadata (v2.1 — 삭제된 이전 영상의 문안, 새 제목 승인 전 참고)
 
 Context Mode: Energizing (07:00 러닝)
 
@@ -117,7 +157,8 @@ running music, 180 cadence, running playlist, instrumental, indie rock, breakbea
 ## Packaging Contract
 
 - Playlist repeat: 2
-- Thumbnail layout: `input/thumbnail-layout.json`
+- Video image and thumbnail: `input/thumb.jpg` (젠 제작 최종본; Final Artwork의 해시 적용)
+- Legacy `input/loop.png` and thumbnail-layout are replaced; do not use them for this remake.
 
 ## Final Selected Audio Sources
 
@@ -125,9 +166,9 @@ running music, 180 cadence, running playlist, instrumental, indie rock, breakbea
 
 ## Series direction
 
-- **Time and use:** 07:00, 젠이 실제로 운동하는 시간. 20곡을 이어 들으며 달리는 아침 플레이리스트. 본편은 선택한 20곡을 번호순으로 2회 반복해 총 40개 재생 구간으로 구성한다(젠 2026-10-12 확인). 곡 사이는 0.8초 오디오 전환이며 예상 길이는 약 1시간 56분이다.
+- **Time and use:** 07:00, 젠이 실제로 운동하는 시간. 20곡을 이어 들으며 달리는 아침 플레이리스트. 본편은 선택한 20곡을 번호순으로 2회 반복해 총 40개 재생 구간으로 구성한다(젠 2026-10-12 확인). 2026-10-24 재제작에서는 곡별 180 BPM 보정과 박자 연결을 적용하며 길이와 시작 시각은 새로 확정한다. 이전 영상의 0.8초 전환·약 1시간 56분은 과거 기록이다.
 - **Music (current source direction):** 보존 7곡, 1차에서 남긴 8곡, 2차 11B, 젠이 직접 다시 만든 06·09·10, 현재 작업공간의 12를 선택했다. 1차의 4 jungle / 4 drill / 5 rock과 2차 06·09·10의 장르는 생성 당시 이력이다. 젠의 직접 재제작 06은 기존 20과 같은 화면 스타일 설명의 기타 록, 09는 기존 17과 같은 기타 중심 재지 정글, 10은 보존 04와 같은 피아노 중심 인디 브레이크비트다. 세 곡의 채택은 확정됐지만 STYLE 입력 원문은 확인하지 않았다. 16은 젠이 남긴 선택이며 이번 재생성 대상이 아니다.
-- **Pulse and acceptance (2026-10-12 decision):** 교체곡 STYLE에는 180 BPM 지속과 명확한 4분음표 러닝 박자를 지시했지만, 이는 제작 당시 목표였고 실제 음원의 수치 증거는 아니다. 젠은 확정한 20곡을 유지하기로 결정했다. 젠이 이 곡들로 20~30분 달렸을 때 평균 케이던스가 대략 180이었다는 사용 경험을 근거로 썸네일의 `180 BPM`을 목표 러닝 케이던스로 쓴다. 일부 곡의 탐색 측정치는 약 174~192 BPM이어서 전곡이 실제로 정확히 180 BPM이라고 주장하지 않는다. 템포 차이만으로 이미 확정한 곡을 다시 만들거나 보정하지 않는다. 음악적 결함이나 편집 결함의 QC는 별도로 한다.
+- **Pulse and acceptance (2026-10-12 historical decision; 재제작에는 위 Current Rebuild 적용):** 교체곡 STYLE에는 180 BPM 지속과 명확한 4분음표 러닝 박자를 지시했지만, 이는 제작 당시 목표였고 실제 음원의 수치 증거는 아니다. 젠은 확정한 20곡을 유지하기로 결정했다. 젠이 이 곡들로 20~30분 달렸을 때 평균 케이던스가 대략 180이었다는 사용 경험을 근거로 썸네일의 `180 BPM`을 목표 러닝 케이던스로 쓴다. 일부 곡의 탐색 측정치는 약 174~192 BPM이어서 전곡이 실제로 정확히 180 BPM이라고 주장하지 않는다. 템포 차이만으로 이미 확정한 곡을 다시 만들거나 보정하지 않는다. 음악적 결함이나 편집 결함의 QC는 별도로 한다.
 - **Final vocal direction (2026-10-03 listening correction):** Instrumental. 젠 heard the initial vocal versions and chose to remove lyrics for the running playlist. The 20 lyric-bearing txt files and 40 initial candidate IDs remain as generation history; they are not final instrumental sources. 젠의 “2 완료” 신호 후 **03·05·07·08·11·12·15·16·18·20**의 생존 원본 ID를 확인하고 각각 Suno `... → Remix → Cover`에서 가사 칸을 `[Instrumental]` 한 줄로 바꿔 요청했다. 01은 이 Cover 요청에 포함되지 않았다. 젠은 이 10곡의 Cover 결과를 청취 PASS했으며, 기계적 무가사 분석은 하지 않았다.
 - **Duration target:** about three minutes or longer per song. 현재 보존된 03은 2:24 표시/약 2:23.72 WAV로 이 목표보다 짧지만 젠이 남기기로 정했다. 2026-10-03 선택됐던 옛 01의 표시 길이 2:41은 역사 기록이고, 새 01 후보 두 개는 UI에 각각 2:59로 표시된다. 1차 후보 26개의 UI 표시 길이는 `input/redirection-review-2026-10-06.md`, 2차 후보 8개는 `input/redirection-round2-review-2026-10-06.md`에 기록했다. 2차 11A는 3:00 입력에도 2:59로 표시됐고, 현재 남은 11B는 3:00이다. 젠의 직접 재제작 06·09·10은 각각 화면상 2:04·3:22·2:25다. 길이 목표는 전곡 통과로 판정하지 않는다.
 - **03 stronger remake:** After the 20-song cleanup, 젠 requested a more powerful 03 only. Its second A/B was judged “느려.” The third prompt added a continuous motorik drum pulse. 젠은 A (`fad9fc49-9b35-4f10-aa76-f62ddd9cf10c`, 화면 2:24)를 남기고 B를 삭제했다. The earlier 03 Cover and second remake remain historical.

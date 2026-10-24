@@ -1,0 +1,1666 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 10,
+  "title": "생각을 놓고",
+  "candidate_id": "a851a574-8836-40dd-8616-ee6549d3e4a1",
+  "source_path": "SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+  "source_sha256": "e83968778e85160a3ace3f9752d413acd6aa33504eff201ddc5641eda89dea07",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/10.json",
+  "analysis_sha256": "de34cdfa9caf0271bd98e2ada301bd1f277a80c5271d51d1aeb26077a2940014",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/10__생각을 놓고__180.wav",
+  "output_sha256": "bc70732a111eaeca850fb354b590792a14b1f6e311195a51c2fcd31a37a544fa",
+  "source_duration_seconds": 145.2,
+  "output_duration_seconds": 144.06035416666666,
+  "output_peak_linear": 0.63726806640625,
+  "first_grid_beat_output_seconds": 0.2076904237080578,
+  "grid_beat_count": 431,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 180.15561064878986,
+        "mid": 180.01182313889518,
+        "high": 179.88767243022656
+      },
+      "band_strength": {
+        "low": 0.6701462936339545,
+        "mid": 0.6166415621024747,
+        "high": 0.8186734811081683
+      },
+      "median_bpm": 180.01182313889518,
+      "band_spread_bpm": 0.2679382185633017
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 180.0644470472048,
+        "mid": 180.05683561196372,
+        "high": 179.93317165461178
+      },
+      "band_strength": {
+        "low": 0.697749552531693,
+        "mid": 0.6525711147345329,
+        "high": 0.82259187543834
+      },
+      "median_bpm": 180.05683561196372,
+      "band_spread_bpm": 0.13127539259301102
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 180.30568450217945,
+        "mid": 180.21581960144414,
+        "high": 179.94674103611177
+      },
+      "band_strength": {
+        "low": 0.6908803392209973,
+        "mid": 0.6162767234725657,
+        "high": 0.8637114323697741
+      },
+      "median_bpm": 180.21581960144414,
+      "band_spread_bpm": 0.3589434660676716
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.2635881623678,
+        "mid": 180.1982649305997,
+        "high": 179.9324890546616
+      },
+      "band_strength": {
+        "low": 0.658734387248625,
+        "mid": 0.7214860772349464,
+        "high": 0.8870941478771638
+      },
+      "median_bpm": 180.1982649305997,
+      "band_spread_bpm": 0.3310991077061942
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.88332746249628,
+        "mid": 180.07609702254962,
+        "high": 179.90183723153362
+      },
+      "band_strength": {
+        "low": 0.6634737352894201,
+        "mid": 0.7354245433769567,
+        "high": 0.8620609861526851
+      },
+      "median_bpm": 179.90183723153362,
+      "band_spread_bpm": 0.19276956005333545
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.0841207329021,
+        "mid": 180.038983613153,
+        "high": 179.9156162656163
+      },
+      "band_strength": {
+        "low": 0.6766299095274361,
+        "mid": 0.7741460204867737,
+        "high": 0.8648216520084403
+      },
+      "median_bpm": 180.038983613153,
+      "band_spread_bpm": 0.16850446728579982
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.9496628596035,
+        "mid": 179.94948881133416,
+        "high": 179.86518760354764
+      },
+      "band_strength": {
+        "low": 0.6707742284335867,
+        "mid": 0.8092799083279043,
+        "high": 0.8825051172185764
+      },
+      "median_bpm": 179.94948881133416,
+      "band_spread_bpm": 0.08447525605586748
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.85008829389326,
+        "mid": 179.7112651204393,
+        "high": 179.7868297477217
+      },
+      "band_strength": {
+        "low": 0.7109047295128651,
+        "mid": 0.7208249559313522,
+        "high": 0.8415085055203297
+      },
+      "median_bpm": 179.7868297477217,
+      "band_spread_bpm": 0.13882317345397155
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.10250989250815,
+        "mid": 179.7636564321545,
+        "high": 180.00105510676468
+      },
+      "band_strength": {
+        "low": 0.7303523855906222,
+        "mid": 0.7042130712696566,
+        "high": 0.8645791443955819
+      },
+      "median_bpm": 180.00105510676468,
+      "band_spread_bpm": 0.33885346035364705
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.11443658435962,
+        "mid": 180.18548175222563,
+        "high": 180.14652011760845
+      },
+      "band_strength": {
+        "low": 0.6784134212123393,
+        "mid": 0.6983267023981508,
+        "high": 0.854265319039249
+      },
+      "median_bpm": 180.14652011760845,
+      "band_spread_bpm": 0.07104516786600357
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 179.80045145766925,
+        "mid": 179.8138699701542,
+        "high": 180.22696976833555
+      },
+      "band_strength": {
+        "low": 0.7001154997405348,
+        "mid": 0.7152185399665483,
+        "high": 0.8095991389427228
+      },
+      "median_bpm": 179.8138699701542,
+      "band_spread_bpm": 0.426518310666296
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.91303320167458,
+        "mid": 179.90811192710225,
+        "high": 179.9417075465072
+      },
+      "band_strength": {
+        "low": 0.7048612500883964,
+        "mid": 0.7488613130207132,
+        "high": 0.8357879046225212
+      },
+      "median_bpm": 179.91303320167458,
+      "band_spread_bpm": 0.033595619404934496
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.0627387405026,
+        "mid": 180.06946776493075,
+        "high": 179.9781516767456
+      },
+      "band_strength": {
+        "low": 0.7188955701417113,
+        "mid": 0.77939649765708,
+        "high": 0.8545211785264499
+      },
+      "median_bpm": 180.0627387405026,
+      "band_spread_bpm": 0.09131608818515247
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.70105889663145,
+        "mid": 179.84324247029414,
+        "high": 179.81949172085683
+      },
+      "band_strength": {
+        "low": 0.7626576733115361,
+        "mid": 0.7912544979922661,
+        "high": 0.916410906915049
+      },
+      "median_bpm": 179.81949172085683,
+      "band_spread_bpm": 0.14218357366269174
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 179.88632749491453,
+        "mid": 179.9640426406334,
+        "high": 179.86037516919168
+      },
+      "band_strength": {
+        "low": 0.7464950552264363,
+        "mid": 0.8074880787539215,
+        "high": 0.9262962740314896
+      },
+      "median_bpm": 179.88632749491453,
+      "band_spread_bpm": 0.1036674714417245
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.7739935939496,
+        "mid": 179.89728868641595,
+        "high": 179.77150775580495
+      },
+      "band_strength": {
+        "low": 0.723336253648666,
+        "mid": 0.8384929382911412,
+        "high": 0.9722208929384253
+      },
+      "median_bpm": 179.7739935939496,
+      "band_spread_bpm": 0.12578093061100049
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.70543176891258,
+        "mid": 179.76969123266966,
+        "high": 179.80092779287395
+      },
+      "band_strength": {
+        "low": 0.7362705729362441,
+        "mid": 0.9236767144011262,
+        "high": 1.0277060503741733
+      },
+      "median_bpm": 179.76969123266966,
+      "band_spread_bpm": 0.09549602396137402
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.90038157207553,
+        "mid": 179.8265732892443,
+        "high": 179.89008647261323
+      },
+      "band_strength": {
+        "low": 0.9336858635932747,
+        "mid": 1.0254759900786259,
+        "high": 1.0534346285662606
+      },
+      "median_bpm": 179.89008647261323,
+      "band_spread_bpm": 0.07380828283123719
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.934111940597,
+        "mid": 179.86294777621887,
+        "high": 180.08470980693167
+      },
+      "band_strength": {
+        "low": 1.0119468434666534,
+        "mid": 1.0458556392168554,
+        "high": 0.8908770267272924
+      },
+      "median_bpm": 179.934111940597,
+      "band_spread_bpm": 0.22176203071279588
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.95199507553,
+        "mid": 179.88666499569123,
+        "high": 180.18393194735955
+      },
+      "band_strength": {
+        "low": 1.0279458038004192,
+        "mid": 1.0889875458932319,
+        "high": 0.854554062726514
+      },
+      "median_bpm": 179.95199507553,
+      "band_spread_bpm": 0.29726695166831973
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.05831980573416,
+        "mid": 179.9804177269328,
+        "high": 180.17544052572424
+      },
+      "band_strength": {
+        "low": 1.0592339848634398,
+        "mid": 1.0506471869973684,
+        "high": 0.826194494418061
+      },
+      "median_bpm": 180.05831980573416,
+      "band_spread_bpm": 0.19502279879142748
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.1842115059028,
+        "mid": 180.1792572862166,
+        "high": 180.23435724264237
+      },
+      "band_strength": {
+        "low": 1.0154529482515942,
+        "mid": 1.046966797420981,
+        "high": 0.8742924568617052
+      },
+      "median_bpm": 180.1842115059028,
+      "band_spread_bpm": 0.05509995642577792
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.1821402014385,
+        "mid": 180.1921612396128,
+        "high": 179.92186315752207
+      },
+      "band_strength": {
+        "low": 1.0306322963678773,
+        "mid": 1.0503322313838572,
+        "high": 1.0035198169891835
+      },
+      "median_bpm": 180.1821402014385,
+      "band_spread_bpm": 0.2702980820907328
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.19572282918818,
+        "mid": 180.2425058980617,
+        "high": 179.90423441197075
+      },
+      "band_strength": {
+        "low": 1.0299539626779715,
+        "mid": 1.0222163529467847,
+        "high": 0.9489490702462965
+      },
+      "median_bpm": 180.19572282918818,
+      "band_spread_bpm": 0.3382714860909459
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.18011684005705,
+        "mid": 180.29240664989882,
+        "high": 180.0512444483496
+      },
+      "band_strength": {
+        "low": 1.013935533452038,
+        "mid": 1.0307869478055018,
+        "high": 0.8945008470201435
+      },
+      "median_bpm": 180.18011684005705,
+      "band_spread_bpm": 0.24116220154922985
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.09929790808036,
+        "mid": 180.24085259584868,
+        "high": 179.93680316276587
+      },
+      "band_strength": {
+        "low": 0.9682420443097539,
+        "mid": 0.9651639853803544,
+        "high": 0.8416813272654545
+      },
+      "median_bpm": 180.09929790808036,
+      "band_spread_bpm": 0.30404943308280963
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.77720263239263,
+    180.00643912282993,
+    180.1976294052468
+  ],
+  "leading_alignment_padding_samples": 0,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.212,
+        5.656
+      ],
+      "target_anchors_seconds": [
+        0.2076904237080578,
+        5.5410237570413905
+      ],
+      "tempo_factor": 1.02075,
+      "source_guard_samples": [
+        0,
+        290688
+      ],
+      "output_offset_samples": -202,
+      "observed_raw_anchors_seconds": [
+        0.21189583333333334,
+        5.541833333333333
+      ],
+      "waveform_correlations": [
+        0.9999958813326781,
+        0.9911864465373675
+      ],
+      "observed_end_error_ms": -3.3958333333332646,
+      "raw_sha256": "3791e15dc0e04e026fb967fd9e226772af12435b0a7d0eaeeac0ac5cb367b6cd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=290688,asetpts=PTS-STARTPTS,atempo=1.0207500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.656,
+        11.076
+      ],
+      "target_anchors_seconds": [
+        5.5410237570413905,
+        10.874357090374724
+      ],
+      "tempo_factor": 1.01625,
+      "source_guard_samples": [
+        252288,
+        550848
+      ],
+      "output_offset_samples": 246769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7325625
+      ],
+      "waveform_correlations": [
+        0.9999999687941052,
+        0.99999997341662
+      ],
+      "observed_end_error_ms": -0.7708333333340533,
+      "raw_sha256": "784b2ea8f8411f55183f7992815815da78ded9b3a9cdee59a64d3cd19a83bb87",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=252288:end_sample=550848,asetpts=PTS-STARTPTS,atempo=1.0162500000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        11.076,
+        16.492
+      ],
+      "target_anchors_seconds": [
+        10.874357090374724,
+        16.20769042370806
+      ],
+      "tempo_factor": 1.0154999999999998,
+      "source_guard_samples": [
+        512448,
+        810816
+      ],
+      "output_offset_samples": 502769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7320416666666665
+      ],
+      "waveform_correlations": [
+        0.9999999743731471,
+        0.9999999734517503
+      ],
+      "observed_end_error_ms": -1.2916666666678012,
+      "raw_sha256": "991889bdab82b5c2fee5e7b424849427b0753b09ec67313a1ed9ff2013fe837a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=512448:end_sample=810816,asetpts=PTS-STARTPTS,atempo=1.0154999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        16.492,
+        21.91
+      ],
+      "target_anchors_seconds": [
+        16.20769042370806,
+        21.54102375704139
+      ],
+      "tempo_factor": 1.015875,
+      "source_guard_samples": [
+        772416,
+        1070880
+      ],
+      "output_offset_samples": 758769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732166666666667
+      ],
+      "waveform_correlations": [
+        0.9999999671331404,
+        0.9999999638622005
+      ],
+      "observed_end_error_ms": -1.166666666665428,
+      "raw_sha256": "71e0b6523307b15f49799415906b17e8539898883ae2cdf458c72ed6f1331b52",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=772416:end_sample=1070880,asetpts=PTS-STARTPTS,atempo=1.0158750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.91,
+        27.33
+      ],
+      "target_anchors_seconds": [
+        21.54102375704139,
+        26.874357090374726
+      ],
+      "tempo_factor": 1.0162499999999992,
+      "source_guard_samples": [
+        1032480,
+        1331040
+      ],
+      "output_offset_samples": 1014769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7285625
+      ],
+      "waveform_correlations": [
+        0.9999999661604461,
+        0.9999999866205549
+      ],
+      "observed_end_error_ms": -4.770833333336277,
+      "raw_sha256": "a3e6aa2d993e15a7deb0fc44f9f658c2745ed78dbd8318a10453aa1708fb2e98",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1032480:end_sample=1331040,asetpts=PTS-STARTPTS,atempo=1.0162499999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        27.33,
+        32.746
+      ],
+      "target_anchors_seconds": [
+        26.874357090374726,
+        32.20769042370806
+      ],
+      "tempo_factor": 1.015500000000001,
+      "source_guard_samples": [
+        1292640,
+        1591008
+      ],
+      "output_offset_samples": 1270769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734895833333334
+      ],
+      "waveform_correlations": [
+        0.9999999640819488,
+        0.9999999768928158
+      ],
+      "observed_end_error_ms": 1.5625000000012434,
+      "raw_sha256": "ad4417b32dd84024a61a4966440d90332037cee3ce8b3f18cc8ac3063869e5d2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1292640:end_sample=1591008,asetpts=PTS-STARTPTS,atempo=1.0155000000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        32.746,
+        38.162
+      ],
+      "target_anchors_seconds": [
+        32.20769042370806,
+        37.541023757041394
+      ],
+      "tempo_factor": 1.015499999999999,
+      "source_guard_samples": [
+        1552608,
+        1850976
+      ],
+      "output_offset_samples": 1526769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7359583333333335
+      ],
+      "waveform_correlations": [
+        0.9999999674514205,
+        0.9999999674612201
+      ],
+      "observed_end_error_ms": 2.624999999997435,
+      "raw_sha256": "7fc5eb7c25f36352287fd32bd00e7ffb588272c554073118bc2382cf11d621c1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1552608:end_sample=1850976,asetpts=PTS-STARTPTS,atempo=1.0154999999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        38.162,
+        43.576
+      ],
+      "target_anchors_seconds": [
+        37.541023757041394,
+        42.87435709037472
+      ],
+      "tempo_factor": 1.0151250000000012,
+      "source_guard_samples": [
+        1812576,
+        2110848
+      ],
+      "output_offset_samples": 1782769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.739395833333333
+      ],
+      "waveform_correlations": [
+        0.9999999674155384,
+        0.9999999779603103
+      ],
+      "observed_end_error_ms": 6.0625000000040785,
+      "raw_sha256": "29079428623319f81aa8bb0743afffc10289def121d50033b928a0e95a6f89c3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1812576:end_sample=2110848,asetpts=PTS-STARTPTS,atempo=1.0151250000000012,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        43.576,
+        48.98
+      ],
+      "target_anchors_seconds": [
+        42.87435709037472,
+        48.20769042370806
+      ],
+      "tempo_factor": 1.0132499999999989,
+      "source_guard_samples": [
+        2072448,
+        2370240
+      ],
+      "output_offset_samples": 2038769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735979166666667
+      ],
+      "waveform_correlations": [
+        0.9999999713317561,
+        0.9999999708939916
+      ],
+      "observed_end_error_ms": 2.6458333333305717,
+      "raw_sha256": "f01f8476131d392b7b08c52fef02914f16708e40a86a3296c5fd6453caf45274",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2072448:end_sample=2370240,asetpts=PTS-STARTPTS,atempo=1.0132499999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        48.98,
+        54.382
+      ],
+      "target_anchors_seconds": [
+        48.20769042370806,
+        53.541023757041394
+      ],
+      "tempo_factor": 1.0128749999999997,
+      "source_guard_samples": [
+        2331840,
+        2629536
+      ],
+      "output_offset_samples": 2294769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999731448806,
+        0.9999999641107772
+      ],
+      "observed_end_error_ms": -0.37500000000267875,
+      "raw_sha256": "0fbcedd411cbe08893837ee62b79af576b669d12e56b40fd892ba82cf3bbf97a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2331840:end_sample=2629536,asetpts=PTS-STARTPTS,atempo=1.0128749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        54.382,
+        59.784
+      ],
+      "target_anchors_seconds": [
+        53.541023757041394,
+        58.87435709037472
+      ],
+      "tempo_factor": 1.012875000000001,
+      "source_guard_samples": [
+        2591136,
+        2888832
+      ],
+      "output_offset_samples": 2550769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.740958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999648052332,
+        0.9999999829184472
+      ],
+      "observed_end_error_ms": 7.625000000004434,
+      "raw_sha256": "0644d51ea333acab99e11071b56fb025bdd366046e4dba13575915c1c372662a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2591136:end_sample=2888832,asetpts=PTS-STARTPTS,atempo=1.0128750000000011,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        59.784,
+        65.176
+      ],
+      "target_anchors_seconds": [
+        58.87435709037472,
+        64.20769042370806
+      ],
+      "tempo_factor": 1.0110000000000001,
+      "source_guard_samples": [
+        2850432,
+        3147648
+      ],
+      "output_offset_samples": 2806769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733270833333333
+      ],
+      "waveform_correlations": [
+        0.99999996933984,
+        0.9999999765931301
+      ],
+      "observed_end_error_ms": -0.06250000000296296,
+      "raw_sha256": "5810bc94a7d7feaa6facd0c2c6d38ed7127eea36f67c0c2fea77ebf8bebf55aa",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2850432:end_sample=3147648,asetpts=PTS-STARTPTS,atempo=1.0110000000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        65.176,
+        70.562
+      ],
+      "target_anchors_seconds": [
+        64.20769042370806,
+        69.54102375704139
+      ],
+      "tempo_factor": 1.009875,
+      "source_guard_samples": [
+        3109248,
+        3406176
+      ],
+      "output_offset_samples": 3062769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.742020833333333
+      ],
+      "waveform_correlations": [
+        0.9999999766185895,
+        0.9999999878355259
+      ],
+      "observed_end_error_ms": 8.687500000004178,
+      "raw_sha256": "41f0240d9b9f8dfebe2894ae8ca7e15013dbab41d1722d2a01f1aea85082de94",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3109248:end_sample=3406176,asetpts=PTS-STARTPTS,atempo=1.0098750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        70.562,
+        75.95
+      ],
+      "target_anchors_seconds": [
+        69.54102375704139,
+        74.87435709037473
+      ],
+      "tempo_factor": 1.0102499999999992,
+      "source_guard_samples": [
+        3367776,
+        3664800
+      ],
+      "output_offset_samples": 3318769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.74225
+      ],
+      "waveform_correlations": [
+        0.999999978016379,
+        0.9999999853778908
+      ],
+      "observed_end_error_ms": 8.916666666657136,
+      "raw_sha256": "a7fe0dba046ab4aa4916d6805d656cb8514c3013a5c12fb8e8113ec3ee2061b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3367776:end_sample=3664800,asetpts=PTS-STARTPTS,atempo=1.0102499999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        75.95,
+        81.332
+      ],
+      "target_anchors_seconds": [
+        74.87435709037473,
+        80.20769042370806
+      ],
+      "tempo_factor": 1.0091249999999992,
+      "source_guard_samples": [
+        3626400,
+        3923136
+      ],
+      "output_offset_samples": 3574769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.742291666666667
+      ],
+      "waveform_correlations": [
+        0.9999999746092175,
+        0.9999999840646885
+      ],
+      "observed_end_error_ms": 8.95833333333762,
+      "raw_sha256": "7ff89cbe9fb5e28fb69b637e4d94a9145b41371b97a6fb38fc69c5923cdd18bc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3626400:end_sample=3923136,asetpts=PTS-STARTPTS,atempo=1.0091249999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        81.332,
+        86.71
+      ],
+      "target_anchors_seconds": [
+        80.20769042370806,
+        85.54102375704139
+      ],
+      "tempo_factor": 1.008375000000001,
+      "source_guard_samples": [
+        3884736,
+        4181280
+      ],
+      "output_offset_samples": 3830769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.743666666666667
+      ],
+      "waveform_correlations": [
+        0.9999999686163346,
+        0.9999999829154415
+      ],
+      "observed_end_error_ms": 10.333333333337968,
+      "raw_sha256": "ac611a58cd567f19a789b464c2a78aa7314b9c978cd3746cb55400912bdef8cf",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3884736:end_sample=4181280,asetpts=PTS-STARTPTS,atempo=1.0083750000000009,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        86.71,
+        92.072
+      ],
+      "target_anchors_seconds": [
+        85.54102375704139,
+        90.87435709037473
+      ],
+      "tempo_factor": 1.005375,
+      "source_guard_samples": [
+        4142880,
+        4438656
+      ],
+      "output_offset_samples": 4086769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.739083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999748999613,
+        0.9999999595379181
+      ],
+      "observed_end_error_ms": 5.749999999990152,
+      "raw_sha256": "29e71d8a4b98c57684294f6d57208ac3c9469ad1549d998172708c92d9e1429e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4142880:end_sample=4438656,asetpts=PTS-STARTPTS,atempo=1.0053749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        92.072,
+        97.414
+      ],
+      "target_anchors_seconds": [
+        90.87435709037473,
+        96.20769042370806
+      ],
+      "tempo_factor": 1.0016250000000007,
+      "source_guard_samples": [
+        4400256,
+        4695072
+      ],
+      "output_offset_samples": 4342771,
+      "observed_raw_anchors_seconds": [
+        0.39995833333333336,
+        5.741833333333333
+      ],
+      "waveform_correlations": [
+        0.9999999423393244,
+        0.9999999903988289
+      ],
+      "observed_end_error_ms": 8.541666666671333,
+      "raw_sha256": "2ad183cfc6a13eb5349520ab11a3d2eb1bf36f071246c4d88f28a5723c0d6a98",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4400256:end_sample=4695072,asetpts=PTS-STARTPTS,atempo=1.0016250000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        97.414,
+        102.756
+      ],
+      "target_anchors_seconds": [
+        96.20769042370806,
+        101.54102375704139
+      ],
+      "tempo_factor": 1.0016250000000007,
+      "source_guard_samples": [
+        4656672,
+        4951488
+      ],
+      "output_offset_samples": 4598769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.742
+      ],
+      "waveform_correlations": [
+        0.9999999748285111,
+        0.9999999857259412
+      ],
+      "observed_end_error_ms": 8.666666666671041,
+      "raw_sha256": "bdbade5e1e07151b7a0201acb2f0f6ee9b2f464176ad6d350925f94f267a41d3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4656672:end_sample=4951488,asetpts=PTS-STARTPTS,atempo=1.0016250000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        102.756,
+        108.096
+      ],
+      "target_anchors_seconds": [
+        101.54102375704139,
+        106.87435709037473
+      ],
+      "tempo_factor": 1.0012499999999989,
+      "source_guard_samples": [
+        4913088,
+        5207808
+      ],
+      "output_offset_samples": 4854769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7374583333333335
+      ],
+      "waveform_correlations": [
+        0.9999999793872214,
+        0.9998529572297239
+      ],
+      "observed_end_error_ms": 4.124999999990386,
+      "raw_sha256": "2ff00f9c8b8b70b220cae99bb2305a22030e5b1a5fd1230571fe5de6282c4edb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4913088:end_sample=5207808,asetpts=PTS-STARTPTS,atempo=1.0012499999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        108.096,
+        113.43
+      ],
+      "target_anchors_seconds": [
+        106.87435709037473,
+        112.20769042370806
+      ],
+      "tempo_factor": 1.0001250000000015,
+      "source_guard_samples": [
+        5169408,
+        5463840
+      ],
+      "output_offset_samples": 5110785,
+      "observed_raw_anchors_seconds": [
+        0.39966666666666667,
+        5.733666666666666
+      ],
+      "waveform_correlations": [
+        0.9999999808689963,
+        0.9999999694215987
+      ],
+      "observed_end_error_ms": 0.6666666666710341,
+      "raw_sha256": "9151e3eb4295641565605fc68d3e8ea79711b2e237ce3ca27df8382574cccf4a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5169408:end_sample=5463840,asetpts=PTS-STARTPTS,atempo=1.0001250000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        113.43,
+        118.758
+      ],
+      "target_anchors_seconds": [
+        112.20769042370806,
+        117.54102375704139
+      ],
+      "tempo_factor": 0.9989999999999988,
+      "source_guard_samples": [
+        5425440,
+        5719584
+      ],
+      "output_offset_samples": 5366769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728
+      ],
+      "waveform_correlations": [
+        0.9999999723233651,
+        0.9999999877801672
+      ],
+      "observed_end_error_ms": -5.333333333329193,
+      "raw_sha256": "74be2c2dad5896f1d13f1defee995969ecb9b03218aea9dc6b87659295f8bb4f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5425440:end_sample=5719584,asetpts=PTS-STARTPTS,atempo=0.9989999999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        118.758,
+        124.082
+      ],
+      "target_anchors_seconds": [
+        117.54102375704139,
+        122.87435709037473
+      ],
+      "tempo_factor": 0.9982499999999979,
+      "source_guard_samples": [
+        5681184,
+        5975136
+      ],
+      "output_offset_samples": 5622769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724083333333334
+      ],
+      "waveform_correlations": [
+        0.9999999721277905,
+        0.9999999943538205
+      ],
+      "observed_end_error_ms": -9.250000000009528,
+      "raw_sha256": "14b32c45db9c52e522adda913549807826315e1872856a49b8bf5f7641820286",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5681184:end_sample=5975136,asetpts=PTS-STARTPTS,atempo=0.9982499999999979,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        124.082,
+        129.4
+      ],
+      "target_anchors_seconds": [
+        122.87435709037473,
+        128.20769042370804
+      ],
+      "tempo_factor": 0.9971250000000058,
+      "source_guard_samples": [
+        5936736,
+        6230400
+      ],
+      "output_offset_samples": 5878769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999861825081,
+        0.9999999912420591
+      ],
+      "observed_end_error_ms": -5.541666666648126,
+      "raw_sha256": "156abc034ef8a5e3e4aac9a22cf034d9eba1ad52b6934c3ddb2c732d9dc9741b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5936736:end_sample=6230400,asetpts=PTS-STARTPTS,atempo=0.9971250000000058,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        129.4,
+        134.714
+      ],
+      "target_anchors_seconds": [
+        128.20769042370804,
+        133.5410237570414
+      ],
+      "tempo_factor": 0.9963749999999969,
+      "source_guard_samples": [
+        6192000,
+        6485472
+      ],
+      "output_offset_samples": 6134769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724875
+      ],
+      "waveform_correlations": [
+        0.9999999689230896,
+        0.999999996915411
+      ],
+      "observed_end_error_ms": -8.458333333343226,
+      "raw_sha256": "753ce06b30ce1277c90c2cdbb43f92ec91ee45888f718073b972e678fbda1835",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6192000:end_sample=6485472,asetpts=PTS-STARTPTS,atempo=0.9963749999999969,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        134.714,
+        140.026
+      ],
+      "target_anchors_seconds": [
+        133.5410237570414,
+        138.8743570903747
+      ],
+      "tempo_factor": 0.9960000000000058,
+      "source_guard_samples": [
+        6447072,
+        6740448
+      ],
+      "output_offset_samples": 6390769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7291875
+      ],
+      "waveform_correlations": [
+        0.9999999820262312,
+        0.9999999868385581
+      ],
+      "observed_end_error_ms": -4.145833333314641,
+      "raw_sha256": "6bf9c7bee84fae30bd4038a6fee64deab32ede44dee575b13a0b94bf4922a218",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6447072:end_sample=6740448,asetpts=PTS-STARTPTS,atempo=0.9960000000000058,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        430
+      ],
+      "source_anchors_seconds": [
+        140.026,
+        144.678
+      ],
+      "target_anchors_seconds": [
+        138.8743570903747,
+        143.5410237570414
+      ],
+      "tempo_factor": 0.996857142857136,
+      "source_guard_samples": [
+        6702048,
+        6969600
+      ],
+      "output_offset_samples": 6646769,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.056791666666666
+      ],
+      "waveform_correlations": [
+        0.9999999767734074,
+        0.9995035385914424
+      ],
+      "observed_end_error_ms": -9.875000000019618,
+      "raw_sha256": "fb0ed7ed643165c59e958d2cbd7994841aa96a479e408b15b796155ec355bbc6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/10__생각을 놓고__Bright__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6702048:end_sample=6969600,asetpts=PTS-STARTPTS,atempo=0.9968571428571360,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-10/block-026.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

@@ -1,0 +1,1666 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 20,
+  "title": "집으로 가는 길",
+  "candidate_id": "7ba63037-56ff-439d-9b55-a1c5a9d162c0",
+  "source_path": "SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+  "source_sha256": "4ca2d14aac2826069cdf66ce3103bdb0b6887ee4dec19e14d7051a27d9f22688",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/20.json",
+  "analysis_sha256": "dcfe8355cd7279432dba5bbf728ae0c4c276965839156a52a230c713ceddc68e",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/20__집으로 가는 길__180.wav",
+  "output_sha256": "a97d268fe4431ab4cf5dab92d5d71e980a9ebcc5ce27b7e692a3ae711e10399e",
+  "source_duration_seconds": 143.6,
+  "output_duration_seconds": 143.9895,
+  "output_peak_linear": 0.51300048828125,
+  "first_grid_beat_output_seconds": 0.11785268414481898,
+  "grid_beat_count": 430,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.6893005196986,
+        "mid": 179.6585777084678,
+        "high": 179.8730367144356
+      },
+      "band_strength": {
+        "low": 0.8360129064757278,
+        "mid": 0.587369901025517,
+        "high": 0.7684622920598684
+      },
+      "median_bpm": 179.6893005196986,
+      "band_spread_bpm": 0.21445900596782508
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.7797728189331,
+        "mid": 180.02122161620517,
+        "high": 179.7238428870095
+      },
+      "band_strength": {
+        "low": 0.7842838402483185,
+        "mid": 0.6245624346565812,
+        "high": 0.7076836497594873
+      },
+      "median_bpm": 179.7797728189331,
+      "band_spread_bpm": 0.2973787291956569
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 179.7973067557194,
+        "mid": 179.97105790317156,
+        "high": 179.70489951808514
+      },
+      "band_strength": {
+        "low": 0.773682106455881,
+        "mid": 0.6309063807061648,
+        "high": 0.7352706256233074
+      },
+      "median_bpm": 179.7973067557194,
+      "band_spread_bpm": 0.2661583850864133
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 179.90574957361835,
+        "mid": 180.01202701075198,
+        "high": 179.7880228350869
+      },
+      "band_strength": {
+        "low": 0.6984255562692995,
+        "mid": 0.6460179744672385,
+        "high": 0.7235443532961497
+      },
+      "median_bpm": 179.90574957361835,
+      "band_spread_bpm": 0.22400417566507258
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.90068566379549,
+        "mid": 180.12613924519803,
+        "high": 179.66190435355537
+      },
+      "band_strength": {
+        "low": 0.6746936934438613,
+        "mid": 0.6409844674915355,
+        "high": 0.6980750893349483
+      },
+      "median_bpm": 179.90068566379549,
+      "band_spread_bpm": 0.4642348916426613
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 179.7893608939864,
+        "mid": 179.98501332578815,
+        "high": 179.78462122157387
+      },
+      "band_strength": {
+        "low": 0.6874490255802264,
+        "mid": 0.6315044842192757,
+        "high": 0.6724097463683097
+      },
+      "median_bpm": 179.7893608939864,
+      "band_spread_bpm": 0.20039210421427356
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.83737367153344,
+        "mid": 180.02865853769265,
+        "high": 180.00807551723298
+      },
+      "band_strength": {
+        "low": 0.7072105450595909,
+        "mid": 0.6454338590939726,
+        "high": 0.6818543138653599
+      },
+      "median_bpm": 180.00807551723298,
+      "band_spread_bpm": 0.19128486615920792
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.85972703318208,
+        "mid": 180.01311501761603,
+        "high": 180.1009882630694
+      },
+      "band_strength": {
+        "low": 0.7362464507059023,
+        "mid": 0.6629231445490257,
+        "high": 0.6567905110449855
+      },
+      "median_bpm": 180.01311501761603,
+      "band_spread_bpm": 0.24126122988732845
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 179.97675601151803,
+        "mid": 179.94679313999666,
+        "high": 180.36157450305902
+      },
+      "band_strength": {
+        "low": 0.7313300325290414,
+        "mid": 0.6408485095422588,
+        "high": 0.6285326413439438
+      },
+      "median_bpm": 179.97675601151803,
+      "band_spread_bpm": 0.41478136306236024
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.09931018459025,
+        "mid": 179.99711213403387,
+        "high": 180.60270514996031
+      },
+      "band_strength": {
+        "low": 0.7902030641442394,
+        "mid": 0.6357377492387503,
+        "high": 0.6232828791072815
+      },
+      "median_bpm": 180.09931018459025,
+      "band_spread_bpm": 0.6055930159264449
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.2962776041415,
+        "mid": 179.98234622023435,
+        "high": 181.51043403329308
+      },
+      "band_strength": {
+        "low": 0.8448673686460364,
+        "mid": 0.6420805998286072,
+        "high": 0.6196472446979592
+      },
+      "median_bpm": 180.2962776041415,
+      "band_spread_bpm": 1.5280878130587325
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 180.33578928733493,
+        "mid": 180.15256404705053,
+        "high": 179.8570880882345
+      },
+      "band_strength": {
+        "low": 0.8220975646942843,
+        "mid": 0.6316558023593313,
+        "high": 0.6433940608342154
+      },
+      "median_bpm": 180.15256404705053,
+      "band_spread_bpm": 0.47870119910044195
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.36696915559486,
+        "mid": 180.32457318985075,
+        "high": 179.8191487097818
+      },
+      "band_strength": {
+        "low": 0.821791534406843,
+        "mid": 0.6607144193354526,
+        "high": 0.6476614634508463
+      },
+      "median_bpm": 180.32457318985075,
+      "band_spread_bpm": 0.5478204458130449
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 180.4003075605179,
+        "mid": 180.42532834418208,
+        "high": 179.8589896649714
+      },
+      "band_strength": {
+        "low": 0.8381994148264363,
+        "mid": 0.7038835130595309,
+        "high": 0.6410669595740265
+      },
+      "median_bpm": 180.4003075605179,
+      "band_spread_bpm": 0.5663386792106735
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.20327638622692,
+        "mid": 180.64525695494717,
+        "high": 179.8743381335008
+      },
+      "band_strength": {
+        "low": 0.8188274674887085,
+        "mid": 0.6583567307869007,
+        "high": 0.6435164560679563
+      },
+      "median_bpm": 180.20327638622692,
+      "band_spread_bpm": 0.7709188214463722
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.97525336384032,
+        "mid": 180.19963119167855,
+        "high": 180.2562840334134
+      },
+      "band_strength": {
+        "low": 0.8759493130098553,
+        "mid": 0.6964299933731862,
+        "high": 0.6588670330767785
+      },
+      "median_bpm": 180.19963119167855,
+      "band_spread_bpm": 0.2810306695730844
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.88085113674217,
+        "mid": 179.98612480233146,
+        "high": 180.0514643404635
+      },
+      "band_strength": {
+        "low": 0.8581621689953856,
+        "mid": 0.7188872646205712,
+        "high": 0.6764040511574516
+      },
+      "median_bpm": 179.98612480233146,
+      "band_spread_bpm": 0.17061320372133082
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.78588542394553,
+        "mid": 180.01977960382416,
+        "high": 180.00192467043692
+      },
+      "band_strength": {
+        "low": 0.8744898238746257,
+        "mid": 0.7568160680942676,
+        "high": 0.7708812673636165
+      },
+      "median_bpm": 180.00192467043692,
+      "band_spread_bpm": 0.23389417987863226
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.9679171252299,
+        "mid": 180.0379212727133,
+        "high": 180.05436953666197
+      },
+      "band_strength": {
+        "low": 0.8798191530619931,
+        "mid": 0.8097874467895647,
+        "high": 0.7817113561612328
+      },
+      "median_bpm": 180.0379212727133,
+      "band_spread_bpm": 0.08645241143207727
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 180.00946872109284,
+        "mid": 180.0612727769928,
+        "high": 180.023427642846
+      },
+      "band_strength": {
+        "low": 0.902159671006628,
+        "mid": 0.7412442526111356,
+        "high": 0.7727508290777433
+      },
+      "median_bpm": 180.023427642846,
+      "band_spread_bpm": 0.051804055899964396
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.06387345506045,
+        "mid": 180.0710225815759,
+        "high": 180.17257449355213
+      },
+      "band_strength": {
+        "low": 0.8838931865979762,
+        "mid": 0.690891869735335,
+        "high": 0.7623101690084322
+      },
+      "median_bpm": 180.0710225815759,
+      "band_spread_bpm": 0.108701038491688
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.14099701397814,
+        "mid": 180.21981689276973,
+        "high": 180.31935462851504
+      },
+      "band_strength": {
+        "low": 0.8676438375841755,
+        "mid": 0.674150098407799,
+        "high": 0.6828302143656
+      },
+      "median_bpm": 180.21981689276973,
+      "band_spread_bpm": 0.1783576145369068
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.11516055818663,
+        "mid": 180.153409666586,
+        "high": 180.01967800927991
+      },
+      "band_strength": {
+        "low": 0.8599720460899939,
+        "mid": 0.634590881154711,
+        "high": 0.6860782146251234
+      },
+      "median_bpm": 180.11516055818663,
+      "band_spread_bpm": 0.13373165730607184
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.09659046997746,
+        "mid": 180.3125174643052,
+        "high": 180.2233114078223
+      },
+      "band_strength": {
+        "low": 0.8430405296506994,
+        "mid": 0.6716393963466937,
+        "high": 0.6873255199341539
+      },
+      "median_bpm": 180.2233114078223,
+      "band_spread_bpm": 0.21592699432773088
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.1493856128361,
+        "mid": 180.47920761914168,
+        "high": 180.5943195800046
+      },
+      "band_strength": {
+        "low": 0.8282035055177734,
+        "mid": 0.7053286421491561,
+        "high": 0.7009677510116807
+      },
+      "median_bpm": 180.47920761914168,
+      "band_spread_bpm": 0.4449339671684811
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.22251916551514,
+        "mid": 180.37820561872886,
+        "high": 180.75480931038214
+      },
+      "band_strength": {
+        "low": 0.715939414867372,
+        "mid": 0.6537844601228472,
+        "high": 0.6654772099778516
+      },
+      "median_bpm": 180.37820561872886,
+      "band_spread_bpm": 0.5322901448670052
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.78216983769644,
+    180.05447192714462,
+    180.39478207507062
+  ],
+  "leading_alignment_padding_samples": 0,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.118,
+        5.458
+      ],
+      "target_anchors_seconds": [
+        0.11785268414481898,
+        5.451186017478152
+      ],
+      "tempo_factor": 1.00125,
+      "source_guard_samples": [
+        0,
+        281184
+      ],
+      "output_offset_samples": -7,
+      "observed_raw_anchors_seconds": [
+        0.118,
+        5.458
+      ],
+      "waveform_correlations": [
+        0.9999999775327066,
+        0.9999999652516363
+      ],
+      "observed_end_error_ms": 6.666666666666821,
+      "raw_sha256": "c6cd606a6e1398813dc99af2874ae53ea8250836719ef69d37282554ce80f758",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=281184,asetpts=PTS-STARTPTS,atempo=1.0012500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.458,
+        10.802
+      ],
+      "target_anchors_seconds": [
+        5.451186017478152,
+        10.784519350811484
+      ],
+      "tempo_factor": 1.0020000000000002,
+      "source_guard_samples": [
+        242784,
+        537696
+      ],
+      "output_offset_samples": 242457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.744
+      ],
+      "waveform_correlations": [
+        0.9999999634643337,
+        0.9999999842090836
+      ],
+      "observed_end_error_ms": 10.666666666667268,
+      "raw_sha256": "cc91938f3643cfb53d3e200f3a50ce1f9a21f72c0e68519f90f9a4862b3a86f8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=242784:end_sample=537696,asetpts=PTS-STARTPTS,atempo=1.0020000000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.802,
+        16.164
+      ],
+      "target_anchors_seconds": [
+        10.784519350811484,
+        16.117852684144818
+      ],
+      "tempo_factor": 1.0053750000000001,
+      "source_guard_samples": [
+        499296,
+        795072
+      ],
+      "output_offset_samples": 498457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7394791666666665
+      ],
+      "waveform_correlations": [
+        0.9999999702845379,
+        0.9999999796549925
+      ],
+      "observed_end_error_ms": 6.145833333332185,
+      "raw_sha256": "a3bf4f897f65472512a50f91523594cd06a20a50667350574d0ced9c34d92540",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=499296:end_sample=795072,asetpts=PTS-STARTPTS,atempo=1.0053750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        16.164,
+        21.502
+      ],
+      "target_anchors_seconds": [
+        16.117852684144818,
+        21.45118601747815
+      ],
+      "tempo_factor": 1.0008749999999997,
+      "source_guard_samples": [
+        756672,
+        1051296
+      ],
+      "output_offset_samples": 754457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738
+      ],
+      "waveform_correlations": [
+        0.9999999729344617,
+        0.9999999714407182
+      ],
+      "observed_end_error_ms": 4.666666666667929,
+      "raw_sha256": "f19c2c5d4a2f975350e1ea4da9a174fdf861b62e907995ab57cc0f1371a9f530",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=756672:end_sample=1051296,asetpts=PTS-STARTPTS,atempo=1.0008749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.502,
+        26.832
+      ],
+      "target_anchors_seconds": [
+        21.45118601747815,
+        26.784519350811486
+      ],
+      "tempo_factor": 0.9993749999999999,
+      "source_guard_samples": [
+        1012896,
+        1307136
+      ],
+      "output_offset_samples": 1010457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999661769848,
+        0.9999999768009012
+      ],
+      "observed_end_error_ms": -3.3333333333356308,
+      "raw_sha256": "a327bacc0b5d95b8044c1708327094c640586caa48fa04ec363f206738c39477",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1012896:end_sample=1307136,asetpts=PTS-STARTPTS,atempo=0.9993749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.832,
+        32.162
+      ],
+      "target_anchors_seconds": [
+        26.784519350811486,
+        32.11785268414482
+      ],
+      "tempo_factor": 0.9993749999999992,
+      "source_guard_samples": [
+        1268736,
+        1562976
+      ],
+      "output_offset_samples": 1266457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999615468692,
+        0.9999999758858052
+      ],
+      "observed_end_error_ms": -3.3333333333356308,
+      "raw_sha256": "79095738695ad89a54081a3f8eed3d97e2dc4ce3a4a2bdbdad75ebcdf70389a7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1268736:end_sample=1562976,asetpts=PTS-STARTPTS,atempo=0.9993749999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        32.162,
+        37.488
+      ],
+      "target_anchors_seconds": [
+        32.11785268414482,
+        37.45118601747816
+      ],
+      "tempo_factor": 0.9986249999999997,
+      "source_guard_samples": [
+        1524576,
+        1818624
+      ],
+      "output_offset_samples": 1522457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726
+      ],
+      "waveform_correlations": [
+        0.9999999600913769,
+        0.9999999875204325
+      ],
+      "observed_end_error_ms": -7.333333333336078,
+      "raw_sha256": "9baaf36b40a2678857250661269af5197b369f1888baa461a59df15bdb389201",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1524576:end_sample=1818624,asetpts=PTS-STARTPTS,atempo=0.9986249999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        37.488,
+        42.818
+      ],
+      "target_anchors_seconds": [
+        37.45118601747816,
+        42.784519350811486
+      ],
+      "tempo_factor": 0.9993750000000006,
+      "source_guard_samples": [
+        1780224,
+        2074464
+      ],
+      "output_offset_samples": 1778457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999643132126,
+        0.9999999648285887
+      ],
+      "observed_end_error_ms": -3.3333333333285253,
+      "raw_sha256": "1dfb21b3d11e147703bd99f2089ab18d60b6ad39442ba0c5240f0f92d00ebe18",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1780224:end_sample=2074464,asetpts=PTS-STARTPTS,atempo=0.9993750000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        42.818,
+        48.148
+      ],
+      "target_anchors_seconds": [
+        42.784519350811486,
+        48.11785268414482
+      ],
+      "tempo_factor": 0.9993750000000006,
+      "source_guard_samples": [
+        2036064,
+        2330304
+      ],
+      "output_offset_samples": 2034457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999655446526,
+        0.9999999691085376
+      ],
+      "observed_end_error_ms": -3.3333333333356308,
+      "raw_sha256": "2762e7d98f12ace928e1677a812246621352e149ddeefba76554855599d05de5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2036064:end_sample=2330304,asetpts=PTS-STARTPTS,atempo=0.9993750000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        48.148,
+        53.478
+      ],
+      "target_anchors_seconds": [
+        48.11785268414482,
+        53.45118601747816
+      ],
+      "tempo_factor": 0.9993749999999992,
+      "source_guard_samples": [
+        2291904,
+        2586144
+      ],
+      "output_offset_samples": 2290457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999631143224,
+        0.9999999714661294
+      ],
+      "observed_end_error_ms": -3.3333333333356308,
+      "raw_sha256": "09f6d2d40557fb8c01e6449fff825c31538b45d7a2b04e69ec549c1a96980835",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2291904:end_sample=2586144,asetpts=PTS-STARTPTS,atempo=0.9993749999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        53.478,
+        58.8
+      ],
+      "target_anchors_seconds": [
+        53.45118601747816,
+        58.784519350811486
+      ],
+      "tempo_factor": 0.9978750000000001,
+      "source_guard_samples": [
+        2547744,
+        2841600
+      ],
+      "output_offset_samples": 2546457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.72775
+      ],
+      "waveform_correlations": [
+        0.9999999655014132,
+        0.999999985233667
+      ],
+      "observed_end_error_ms": -5.583333333328611,
+      "raw_sha256": "4e51a72babd780458cf3f78d1c0edfad914d6df15d026fccc5f12876b712e1b4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2547744:end_sample=2841600,asetpts=PTS-STARTPTS,atempo=0.9978750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        58.8,
+        64.126
+      ],
+      "target_anchors_seconds": [
+        58.784519350811486,
+        64.11785268414482
+      ],
+      "tempo_factor": 0.998625000000001,
+      "source_guard_samples": [
+        2803200,
+        3097248
+      ],
+      "output_offset_samples": 2802457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726
+      ],
+      "waveform_correlations": [
+        0.9999999589650191,
+        0.9999999858680133
+      ],
+      "observed_end_error_ms": -7.333333333336078,
+      "raw_sha256": "18cfa72079c6cacd636917669144a4adc1058e228dfb662ba5ce78724e5594b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2803200:end_sample=3097248,asetpts=PTS-STARTPTS,atempo=0.9986250000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        64.126,
+        69.446
+      ],
+      "target_anchors_seconds": [
+        64.11785268414482,
+        69.45118601747815
+      ],
+      "tempo_factor": 0.9974999999999996,
+      "source_guard_samples": [
+        3058848,
+        3352608
+      ],
+      "output_offset_samples": 3058457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7254375
+      ],
+      "waveform_correlations": [
+        0.999999963362608,
+        0.9999999905923304
+      ],
+      "observed_end_error_ms": -7.895833333328994,
+      "raw_sha256": "df965a1b507ecd51031868e21ff9b9893704a6a41fbf853a11c68f8331ee0556",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3058848:end_sample=3352608,asetpts=PTS-STARTPTS,atempo=0.9974999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        69.446,
+        74.758
+      ],
+      "target_anchors_seconds": [
+        69.45118601747815,
+        74.7845193508115
+      ],
+      "tempo_factor": 0.9959999999999978,
+      "source_guard_samples": [
+        3314208,
+        3607584
+      ],
+      "output_offset_samples": 3314457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726458333333333
+      ],
+      "waveform_correlations": [
+        0.9999999711955071,
+        0.9999999887258955
+      ],
+      "observed_end_error_ms": -6.875000000009734,
+      "raw_sha256": "e18622c7a50cad99649ee9d0b79817398144fe2c8e5deda29c623365675cf336",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3314208:end_sample=3607584,asetpts=PTS-STARTPTS,atempo=0.9959999999999978,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        74.758,
+        80.074
+      ],
+      "target_anchors_seconds": [
+        74.7845193508115,
+        80.11785268414482
+      ],
+      "tempo_factor": 0.9967500000000014,
+      "source_guard_samples": [
+        3569184,
+        3862752
+      ],
+      "output_offset_samples": 3570457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7214583333333335
+      ],
+      "waveform_correlations": [
+        0.9999999556847556,
+        0.999999977008181
+      ],
+      "observed_end_error_ms": -11.874999999995417,
+      "raw_sha256": "2d2db0463a1abbc06c28c3aea85374ce0d0ce10ca295decf3ff8d6ae3ac5b452",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3569184:end_sample=3862752,asetpts=PTS-STARTPTS,atempo=0.9967500000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        80.074,
+        85.378
+      ],
+      "target_anchors_seconds": [
+        80.11785268414482,
+        85.45118601747815
+      ],
+      "tempo_factor": 0.9945000000000013,
+      "source_guard_samples": [
+        3824352,
+        4117344
+      ],
+      "output_offset_samples": 3826457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728833333333333
+      ],
+      "waveform_correlations": [
+        0.9999999669746675,
+        0.9999999825591604
+      ],
+      "observed_end_error_ms": -4.49999999999573,
+      "raw_sha256": "6fa71f02b7364aeada55f22cb9463d4f16e6cb8f5f1dc8656465dfdfcb4900ab",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3824352:end_sample=4117344,asetpts=PTS-STARTPTS,atempo=0.9945000000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        85.378,
+        90.678
+      ],
+      "target_anchors_seconds": [
+        85.45118601747815,
+        90.7845193508115
+      ],
+      "tempo_factor": 0.9937499999999977,
+      "source_guard_samples": [
+        4078944,
+        4371744
+      ],
+      "output_offset_samples": 4082457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726708333333334
+      ],
+      "waveform_correlations": [
+        0.9999999699286095,
+        0.9999999896961933
+      ],
+      "observed_end_error_ms": -6.625000000009429,
+      "raw_sha256": "171c1fee0ee337558afdb4a6e8b385b4831f03633371cea67bbe579d982220ee",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4078944:end_sample=4371744,asetpts=PTS-STARTPTS,atempo=0.9937499999999977,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        90.678,
+        95.972
+      ],
+      "target_anchors_seconds": [
+        90.7845193508115,
+        96.11785268414482
+      ],
+      "tempo_factor": 0.9926250000000003,
+      "source_guard_samples": [
+        4333344,
+        4625856
+      ],
+      "output_offset_samples": 4338457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731979166666667
+      ],
+      "waveform_correlations": [
+        0.9999999666431497,
+        0.9999999681626538
+      ],
+      "observed_end_error_ms": -1.3541666666618823,
+      "raw_sha256": "0157b09385aa62d8b5c67b837145bea553b0f4a518dd11cf426c88a1021e1d72",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4333344:end_sample=4625856,asetpts=PTS-STARTPTS,atempo=0.9926250000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        95.972,
+        101.306
+      ],
+      "target_anchors_seconds": [
+        96.11785268414482,
+        101.45118601747815
+      ],
+      "tempo_factor": 1.0001250000000015,
+      "source_guard_samples": [
+        4587456,
+        4881888
+      ],
+      "output_offset_samples": 4594457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734
+      ],
+      "waveform_correlations": [
+        0.9999999704743102,
+        0.9999999732388845
+      ],
+      "observed_end_error_ms": 0.6666666666710341,
+      "raw_sha256": "c0ae90a5bd6a59717c7e52dab4626d0efcd3ca9ef74319431a2201e98e74466e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4587456:end_sample=4881888,asetpts=PTS-STARTPTS,atempo=1.0001250000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        101.306,
+        106.638
+      ],
+      "target_anchors_seconds": [
+        101.45118601747815,
+        106.7845193508115
+      ],
+      "tempo_factor": 0.9997499999999997,
+      "source_guard_samples": [
+        4843488,
+        5137824
+      ],
+      "output_offset_samples": 4850457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732
+      ],
+      "waveform_correlations": [
+        0.999999972059536,
+        0.9999999746262983
+      ],
+      "observed_end_error_ms": -1.3333333333429565,
+      "raw_sha256": "4aa24c8945bb1438afd711772d38aa35e766e6b674e473d558863a4d11532fa6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4843488:end_sample=5137824,asetpts=PTS-STARTPTS,atempo=0.9997499999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        106.638,
+        111.948
+      ],
+      "target_anchors_seconds": [
+        106.7845193508115,
+        112.11785268414482
+      ],
+      "tempo_factor": 0.9956249999999986,
+      "source_guard_samples": [
+        5099424,
+        5392704
+      ],
+      "output_offset_samples": 5106457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7248125
+      ],
+      "waveform_correlations": [
+        0.9999999712761017,
+        0.9999999797964754
+      ],
+      "observed_end_error_ms": -8.520833333329314,
+      "raw_sha256": "3926cdbdcfc5c71c4fd00d36c4605e837377906105c6474d8593f68f39920d87",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5099424:end_sample=5392704,asetpts=PTS-STARTPTS,atempo=0.9956249999999986,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        111.948,
+        117.256
+      ],
+      "target_anchors_seconds": [
+        112.11785268414482,
+        117.45118601747815
+      ],
+      "tempo_factor": 0.9952500000000022,
+      "source_guard_samples": [
+        5354304,
+        5647488
+      ],
+      "output_offset_samples": 5362457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.725854166666666
+      ],
+      "waveform_correlations": [
+        0.9999999687306002,
+        0.9999999894417007
+      ],
+      "observed_end_error_ms": -7.479166666662707,
+      "raw_sha256": "0cac57212ac764e05443e08fb2b3c1ec02b20a2c389392d7b160401c19468b96",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5354304:end_sample=5647488,asetpts=PTS-STARTPTS,atempo=0.9952500000000022,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        117.256,
+        122.56
+      ],
+      "target_anchors_seconds": [
+        117.45118601747815,
+        122.7845193508115
+      ],
+      "tempo_factor": 0.9944999999999986,
+      "source_guard_samples": [
+        5609088,
+        5902080
+      ],
+      "output_offset_samples": 5618457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7208958333333335
+      ],
+      "waveform_correlations": [
+        0.9999999772151124,
+        0.999999978709346
+      ],
+      "observed_end_error_ms": -12.43750000000965,
+      "raw_sha256": "88346e2997883407c5f16d43f68cfc022d3bf8777943e77038767a127102c66f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5609088:end_sample=5902080,asetpts=PTS-STARTPTS,atempo=0.9944999999999986,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        122.56,
+        127.86
+      ],
+      "target_anchors_seconds": [
+        122.7845193508115,
+        128.11785268414482
+      ],
+      "tempo_factor": 0.9937500000000004,
+      "source_guard_samples": [
+        5863680,
+        6156480
+      ],
+      "output_offset_samples": 5874457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724479166666667
+      ],
+      "waveform_correlations": [
+        0.9999999705531606,
+        0.9999999899654424
+      ],
+      "observed_end_error_ms": -8.854166666662167,
+      "raw_sha256": "e488a019190db2b6a6b2beea9bb73e4895782cf45a1e2956ffc2884dd09283c0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5863680:end_sample=6156480,asetpts=PTS-STARTPTS,atempo=0.9937500000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        127.86,
+        133.158
+      ],
+      "target_anchors_seconds": [
+        128.11785268414482,
+        133.45118601747816
+      ],
+      "tempo_factor": 0.9933749999999959,
+      "source_guard_samples": [
+        6118080,
+        6410784
+      ],
+      "output_offset_samples": 6130457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.723229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999752612803,
+        0.9999999784290398
+      ],
+      "observed_end_error_ms": -10.104166666676129,
+      "raw_sha256": "f49fe79119c6d3aabcab432bb273dc13e497ef67da33608618c3bcd76fdc45d5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6118080:end_sample=6410784,asetpts=PTS-STARTPTS,atempo=0.9933749999999959,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        133.158,
+        138.47
+      ],
+      "target_anchors_seconds": [
+        133.45118601747816,
+        138.78451935081148
+      ],
+      "tempo_factor": 0.9960000000000058,
+      "source_guard_samples": [
+        6372384,
+        6665760
+      ],
+      "output_offset_samples": 6386457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729895833333333
+      ],
+      "waveform_correlations": [
+        0.9999999719163611,
+        0.9999999764884311
+      ],
+      "observed_end_error_ms": -3.4374999999817746,
+      "raw_sha256": "c24074ff9b0ca98e2e85ae7636952958b99b0ad354468b5d210945377d86d327",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6372384:end_sample=6665760,asetpts=PTS-STARTPTS,atempo=0.9960000000000058,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        429
+      ],
+      "source_anchors_seconds": [
+        138.47,
+        142.732
+      ],
+      "target_anchors_seconds": [
+        138.78451935081148,
+        143.11785268414482
+      ],
+      "tempo_factor": 0.9835384615384595,
+      "source_guard_samples": [
+        6627360,
+        6892800
+      ],
+      "output_offset_samples": 6642457,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        4.726
+      ],
+      "waveform_correlations": [
+        0.9999999566284962,
+        0.9999997774017517
+      ],
+      "observed_end_error_ms": -7.333333333343184,
+      "raw_sha256": "6fb24c1057fd7e51aa06bf42655231349067fe5a6e48f061f702dbc900c95cbe",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/20__집으로 가는 길__Bright__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6627360:end_sample=6892800,asetpts=PTS-STARTPTS,atempo=0.9835384615384595,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-20/block-026.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

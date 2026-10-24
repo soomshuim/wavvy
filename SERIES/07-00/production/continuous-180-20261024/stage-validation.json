@@ -1,0 +1,34 @@
+{
+  "schema": "wavvy.audio_stage_validation.v1",
+  "recorded_at_utc": "2026-10-24T08:34:21.368727+00:00",
+  "scope": "07-00 audio technical completion only; release contract/video/upload not yet prepared",
+  "checks": [
+    {
+      "command": "python3 SERIES/07-00/production/render-continuous-180.py render",
+      "exit_code": 0,
+      "result": "audio technical checks passed; see manifest.json"
+    },
+    {
+      "command": "python3 -m py_compile SERIES/07-00/production/analyze-180bpm.py SERIES/07-00/production/render-180bpm.py SERIES/07-00/production/measure-corrected-beats-180.py SERIES/07-00/production/plan-continuous-180.py SERIES/07-00/production/render-continuous-180.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 wavvy.py validate SERIES/07-00",
+      "exit_code": 1,
+      "audio_inputs_pass": 20,
+      "thumbnail_pass": true,
+      "metadata_present": true,
+      "error": "Missing loop source: need loop.mp4 or loop.png/jpg in SERIES/07-00/input",
+      "interpretation": "The old loop was intentionally replaced by the approved thumb.jpg. Current new audio has not been bound to the premixed release contract yet. No generic release-gate PASS or upload readiness is claimed; do not restore the superseded scene."
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "listening_approved": false,
+  "release_contract_current": false,
+  "new_title_approved": false,
+  "video_created": false,
+  "upload_completed": false
+}

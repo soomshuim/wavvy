@@ -1,3 +1,23 @@
+# Current Handoff — 07:00 audio complete / 06:30 Suno retry, 2026-10-24
+
+- 07:00의 승인된 20곡·순서를 유지해 음높이를 보존하며 180 BPM으로 보정했다. 20곡을 두 번 반복한 완성 음원은 `SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a`다. 길이 6,722.858833초(1:52:02.859), 40개 재생 항목·39개 연결이며 20→1도 포함한다. SHA-256 `69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe`.
+- 제작 원장 `SERIES/07-00/production/continuous-180-20261024/manifest.json`, 컨트롤러 실측 `controller-check.json`, 독립 검토 `.ai/reviews/2026-10-24-0700-continuous-audio-review.md`를 보존했다. 독립 검토는 CLEAN(확정 Critical/High 0)이다. 이는 기술 검사이며 젠의 청취 승인은 아직 없다. 새로운 제목 승인·완성 음원에 맞는 발매 입력 계약 연결·영상 제작·YouTube 재업로드가 남아 있다.
+- 현재 state는 revision 93 `concept_draft`이며 state check는 PASS다. 일반 `validate`는 폐기된 `loop.mp4`/`loop.png`/`loop.jpg`를 요구해 FAIL한다. 최종 사용자 `thumb.jpg`를 사용하며 옛 장면을 복원하지 않는다. 현재 완성 음원은 아직 새 발매 계약에 연결하지 않았으므로 source-final/upload-ready로 승격하지 않는다. 일반 next_action의 `Draft track sources`는 이번에 새로 곡을 만들라는 지시가 아니다. 실제 단계는 07:00 concept의 Current Audio와 `.ai/plans/2026-10-24-0700-180bpm-remaster.md`를 따른다.
+- 젠의 추가 지시 “병렬로 06:30 업로드 안된 두곡 다시 시도해봐.”에 따라 보관 원본 두 곡을 변경 없이 각각 한 번 UI 업로드했다. 6번 ‘다리의 불꽃’은 성공해 Suno ID `5dc324ff-4495-4c19-83a9-d8be070a3de4`, 제목 `6. 다리의 불꽃`, 3:14·UPLOAD·Play를 확인했다. 11번 ‘계속 앞으로’는 `This audio matches an existing recording`으로 거절됐다. 결과 성공 1·거절 1·대기 0, [06:30]은 18→19곡이다. 추가 자동 재시도 계획은 없다.
+- 06:30 원본 WAV 두 개는 그대로 보관하고 이번 업로드용 임시 사본 4개만 제거했다. 기존 YouTube 발매·게시 문안·이전 18곡·Publish 상태는 변경하지 않았다. 원시 결과 `SERIES/06-30/production/suno-two-track-retry-20261024-latest.json`, 부모 실측 `.ai/validation/2026-10-24-0630-latest-retry-controller.json`, 독립 검토 `.ai/reviews/2026-10-24-0630-latest-retry-review.md`(CLEAN)를 따른다. 아래 06:30 성공 0·거절 2·18곡 기록은 이전 시점의 이력이다.
+- 최종 썸네일 PNG 원본·프롬프트·사용자 PSD/JPG 네 개와 음원 제작 자료를 보존한다. 이전 썸네일 과정 자료 20개만 승인 범위대로 삭제했다. 아래 인계들은 당시 기록이며 현재 상태와 다음 할 일은 이 블록을 우선한다.
+
+---
+
+# Historical Handoff — 07:00 rebuild, 2026-10-24
+
+- Same approved 20 candidate IDs reacquired as WAV; fresh bytes differ from the historical downloads and are recorded separately.
+- 20/20 outputs corrected toward 180 BPM with pitch-preserving FFmpeg processing. Track 17’s ambiguous periodic-bass match was resolved by a measurement-only 300 Hz high-pass corroboration under the same correlation and agreement thresholds. No completed continuous mix, new video or upload yet. New title approval remains required.
+- User-final artwork is now `SERIES/07-00/input/thumb.jpg` plus PSD. Preserve the final prompt/source PNG/PSD/JPG. Scoped art cleanup removed exactly 20 files (51,719,610 logical bytes); all absent and protected 4 unchanged. Receipt: `.ai/cleanup/2026-10-24-0700-thumbnail-final-cleanup-result.json`. Reviewer: `.ai/reviews/2026-10-24-0700-thumbnail-cleanup-review.md`.
+- Current plan: `.ai/plans/2026-10-24-0700-180bpm-remaster.md`; concept is the current series brief. Older handoffs below are historical, not the active next action.
+
+---
+
 ---
 HANDOFF: Codex -> 젠
 Date: 2026-10-24 16:23:54

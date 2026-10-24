@@ -1,0 +1,38 @@
+{
+  "schema": "wavvy.suno_retry_controller_check.v1",
+  "observed_at_utc": "2026-10-24T08:41:44.267176+00:00",
+  "result_path": "SERIES/06-30/production/suno-two-track-retry-20261024-latest.json",
+  "result_sha256": "c280b39bf3d0a552979fa22c1d9d7099803673347c8182e9b5f76e4d6a568bef",
+  "browser": "Aside MCP",
+  "tool": "mcp__aside__repl",
+  "workspace_id": "335455f4-30d5-4878-b658-365da757127e",
+  "target_id": "C5219B0385884FF4EE7B37C8E8219129",
+  "observed_terminal_listitems": [
+    "6. 다리의 불꽃.wav Uploaded",
+    "11. 계속 앞으로.wav This audio matches an existing recording"
+  ],
+  "observed_terminal_summary": "1 of 2 uploaded, 1 failed",
+  "observed_final_song_title": "6. 다리의 불꽃",
+  "observed_final_song_href": "/song/5dc324ff-4495-4c19-83a9-d8be070a3de4",
+  "observed_final_song_ui_duration": "3:14",
+  "observed_final_song_upload_marker": true,
+  "original2_sha256_match": true,
+  "protected_existing_files_before_parent_document_update": {
+    "count": 46,
+    "unchanged": 46,
+    "mismatches": []
+  },
+  "task_owned_temporary_copies4_absent": true,
+  "successful": 1,
+  "rejected": 1,
+  "pending": 0,
+  "no_new_tempo_or_audio_change": true,
+  "no_youtube_change": true,
+  "no_whole_song_listening_claim": true,
+  "isolated_review": {
+    "path": ".ai/reviews/2026-10-24-0630-latest-retry-review.md",
+    "verdict": "CLEAN",
+    "confirmed_critical_high": 0
+  },
+  "prior_closeout_result_preserved": true
+}

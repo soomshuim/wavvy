@@ -1,0 +1,2245 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 19,
+  "title": "괜찮은 날",
+  "candidate_id": "6302ab31-3e9f-4db3-ae20-5efb65fa5860",
+  "source_path": "SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+  "source_sha256": "3a0228558770ca28d265c9f05b52b17c79a94e63fcd4bb1177ebf4ef3585bae6",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/19.json",
+  "analysis_sha256": "1e78071a0d52897c0dd74783ab8eaa271a6b68566ea3422ae44fdc286dcaed8e",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/19__괜찮은 날__180.wav",
+  "output_sha256": "88eb95fd4655c4fc8587865479c7f0d98a7f3f03d8fe4e313b1eefba680d17e4",
+  "source_duration_seconds": 191.56,
+  "output_duration_seconds": 195.356875,
+  "output_peak_linear": 0.650726318359375,
+  "first_grid_beat_output_seconds": 0.16032470826991377,
+  "grid_beat_count": 570,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.90680276642846,
+        "mid": 180.07281085981512,
+        "high": 180.1847280551187
+      },
+      "band_strength": {
+        "low": 0.625925149317858,
+        "mid": 0.6806118799538025,
+        "high": 0.8129270696778117
+      },
+      "median_bpm": 180.07281085981512,
+      "band_spread_bpm": 0.27792528869025546
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.97107667438453,
+        "mid": 179.95904384659087,
+        "high": 180.18249724232862
+      },
+      "band_strength": {
+        "low": 0.6500436471916539,
+        "mid": 0.6901651814105852,
+        "high": 0.7852635080836406
+      },
+      "median_bpm": 179.97107667438453,
+      "band_spread_bpm": 0.22345339573774936
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 179.96401606614697,
+        "mid": 179.82812118921956,
+        "high": 179.99667822126167
+      },
+      "band_strength": {
+        "low": 0.6626928464583961,
+        "mid": 0.6798701953765048,
+        "high": 0.7820451578122679
+      },
+      "median_bpm": 179.96401606614697,
+      "band_spread_bpm": 0.16855703204211636
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.48092721209915,
+        "mid": 179.87118234233438,
+        "high": 179.96444448308932
+      },
+      "band_strength": {
+        "low": 0.6555485433019678,
+        "mid": 0.696769663426624,
+        "high": 0.7802476665569916
+      },
+      "median_bpm": 179.96444448308932,
+      "band_spread_bpm": 0.6097448697647678
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 180.5815251636822,
+        "mid": 179.87467093585624,
+        "high": 180.0362917925559
+      },
+      "band_strength": {
+        "low": 0.6926592357425261,
+        "mid": 0.7214241716246997,
+        "high": 0.7869451999317117
+      },
+      "median_bpm": 180.0362917925559,
+      "band_spread_bpm": 0.7068542278259429
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.3065876817889,
+        "mid": 179.96824834266266,
+        "high": 180.10077609209054
+      },
+      "band_strength": {
+        "low": 0.7222027306470855,
+        "mid": 0.7433786205363354,
+        "high": 0.8630493348641516
+      },
+      "median_bpm": 180.10077609209054,
+      "band_spread_bpm": 0.3383393391262359
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 180.38703898743992,
+        "mid": 180.07769104567777,
+        "high": 180.1376745384313
+      },
+      "band_strength": {
+        "low": 0.7167394069462729,
+        "mid": 0.6970517253169906,
+        "high": 0.8473985650212019
+      },
+      "median_bpm": 180.1376745384313,
+      "band_spread_bpm": 0.3093479417621552
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 180.25620501535855,
+        "mid": 179.9545391530591,
+        "high": 180.0019024849783
+      },
+      "band_strength": {
+        "low": 0.7065072248679495,
+        "mid": 0.6859488149600895,
+        "high": 0.7959564265095569
+      },
+      "median_bpm": 180.0019024849783,
+      "band_spread_bpm": 0.30166586229944414
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.16679235171674,
+        "mid": 180.3384510549493,
+        "high": 180.13832898465088
+      },
+      "band_strength": {
+        "low": 0.7063930692880116,
+        "mid": 0.6537998126823108,
+        "high": 0.7339557900587041
+      },
+      "median_bpm": 180.16679235171674,
+      "band_spread_bpm": 0.20012207029841989
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.17386208333394,
+        "mid": 180.0708125011681,
+        "high": 179.78676994614756
+      },
+      "band_strength": {
+        "low": 0.7392522681725814,
+        "mid": 0.6276019139296465,
+        "high": 0.7348735622247109
+      },
+      "median_bpm": 180.0708125011681,
+      "band_spread_bpm": 0.3870921371863858
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.19763655599087,
+        "mid": 180.1281570989061,
+        "high": 179.7726941554784
+      },
+      "band_strength": {
+        "low": 0.7766976390884589,
+        "mid": 0.6525909143898951,
+        "high": 0.7664009326221747
+      },
+      "median_bpm": 180.1281570989061,
+      "band_spread_bpm": 0.4249424005124638
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 180.0910322370186,
+        "mid": 180.17558750202636,
+        "high": 179.9975682092073
+      },
+      "band_strength": {
+        "low": 0.8450437415661238,
+        "mid": 0.665597263190255,
+        "high": 0.7745968686217177
+      },
+      "median_bpm": 180.0910322370186,
+      "band_spread_bpm": 0.17801929281907292
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.17664395541618,
+        "mid": 180.0674263100974,
+        "high": 179.90099037474272
+      },
+      "band_strength": {
+        "low": 0.8472037604364495,
+        "mid": 0.6779510017321048,
+        "high": 0.8020041893006914
+      },
+      "median_bpm": 180.0674263100974,
+      "band_spread_bpm": 0.27565358067346324
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 180.1716929467445,
+        "mid": 180.09051815666527,
+        "high": 179.91381416086884
+      },
+      "band_strength": {
+        "low": 0.8275315944073097,
+        "mid": 0.6847433716969328,
+        "high": 0.7778056779882015
+      },
+      "median_bpm": 180.09051815666527,
+      "band_spread_bpm": 0.2578787858756755
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 179.95654822357702,
+        "mid": 179.95333591864375,
+        "high": 179.85998491455143
+      },
+      "band_strength": {
+        "low": 0.8447670953695943,
+        "mid": 0.6727530468213437,
+        "high": 0.7575717829229442
+      },
+      "median_bpm": 179.95333591864375,
+      "band_spread_bpm": 0.09656330902558352
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 180.05391507080284,
+        "mid": 179.7971786052757,
+        "high": 179.726331613059
+      },
+      "band_strength": {
+        "low": 0.8349674037944929,
+        "mid": 0.7096164453993508,
+        "high": 0.7700923712790368
+      },
+      "median_bpm": 179.7971786052757,
+      "band_spread_bpm": 0.3275834577438559
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.99656568107787,
+        "mid": 179.81740069500148,
+        "high": 179.83699325958543
+      },
+      "band_strength": {
+        "low": 0.8067723573826743,
+        "mid": 0.7304045378211488,
+        "high": 0.7934885377813548
+      },
+      "median_bpm": 179.83699325958543,
+      "band_spread_bpm": 0.17916498607638687
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.99686304074945,
+        "mid": 179.91073270857765,
+        "high": 180.11101139298012
+      },
+      "band_strength": {
+        "low": 0.8543622315529003,
+        "mid": 0.7452681984332676,
+        "high": 0.8381665153565104
+      },
+      "median_bpm": 179.99686304074945,
+      "band_spread_bpm": 0.20027868440246266
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.91035538176308,
+        "mid": 179.8862494166951,
+        "high": 180.09127674477298
+      },
+      "band_strength": {
+        "low": 0.8744677315452716,
+        "mid": 0.7457905186244734,
+        "high": 0.842197610226976
+      },
+      "median_bpm": 179.91035538176308,
+      "band_spread_bpm": 0.20502732807787538
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.86198935182992,
+        "mid": 179.9180675768166,
+        "high": 180.0450659140179
+      },
+      "band_strength": {
+        "low": 0.9235458582100224,
+        "mid": 0.7972904566229484,
+        "high": 0.8769180062756491
+      },
+      "median_bpm": 179.9180675768166,
+      "band_spread_bpm": 0.18307656218797774
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 179.87305783616182,
+        "mid": 179.9073767369838,
+        "high": 180.05112372831962
+      },
+      "band_strength": {
+        "low": 0.9246931199275887,
+        "mid": 0.770470251448867,
+        "high": 0.8503033791263439
+      },
+      "median_bpm": 179.9073767369838,
+      "band_spread_bpm": 0.17806589215780377
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 179.80798476123678,
+        "mid": 179.94861178412663,
+        "high": 179.74824512832
+      },
+      "band_strength": {
+        "low": 0.9050737684898668,
+        "mid": 0.7795182906819953,
+        "high": 0.7987699578612111
+      },
+      "median_bpm": 179.80798476123678,
+      "band_spread_bpm": 0.2003666558066186
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 179.8649306375466,
+        "mid": 179.90340390633938,
+        "high": 179.6843664306337
+      },
+      "band_strength": {
+        "low": 0.9242861539465926,
+        "mid": 0.8024724975816592,
+        "high": 0.896638303808
+      },
+      "median_bpm": 179.8649306375466,
+      "band_spread_bpm": 0.2190374757056759
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 179.97068258615155,
+        "mid": 180.03995771345188,
+        "high": 179.91369440569744
+      },
+      "band_strength": {
+        "low": 0.8092429390387618,
+        "mid": 0.7148710832101708,
+        "high": 0.7980596328757289
+      },
+      "median_bpm": 179.97068258615155,
+      "band_spread_bpm": 0.12626330775444217
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 179.72767605374236,
+        "mid": 179.7579578147727,
+        "high": 179.7646962401782
+      },
+      "band_strength": {
+        "low": 0.9334017617536016,
+        "mid": 0.7599712549732602,
+        "high": 0.6789692536057306
+      },
+      "median_bpm": 179.7579578147727,
+      "band_spread_bpm": 0.037020186435853475
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 179.73225302146673,
+        "mid": 179.56883996576835,
+        "high": 179.65381861035905
+      },
+      "band_strength": {
+        "low": 0.8899679671202878,
+        "mid": 0.7010087139426934,
+        "high": 0.6503903576475883
+      },
+      "median_bpm": 179.65381861035905,
+      "band_spread_bpm": 0.16341305569838482
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 179.7219822479748,
+        "mid": 179.59833867314808,
+        "high": 179.64517939965688
+      },
+      "band_strength": {
+        "low": 0.9247444643174568,
+        "mid": 0.6926530258177833,
+        "high": 0.6840578495623497
+      },
+      "median_bpm": 179.64517939965688,
+      "band_spread_bpm": 0.12364357482672972
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 179.71481328541986,
+        "mid": 179.59965574519848,
+        "high": 179.6708361106565
+      },
+      "band_strength": {
+        "low": 0.8918334597296244,
+        "mid": 0.7224784029707613,
+        "high": 0.6907350336496831
+      },
+      "median_bpm": 179.6708361106565,
+      "band_spread_bpm": 0.11515754022138935
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 179.87329734121707,
+        "mid": 179.87337507164077,
+        "high": 179.86886923505955
+      },
+      "band_strength": {
+        "low": 0.9510184389317784,
+        "mid": 0.7035814216668828,
+        "high": 0.7073194603972693
+      },
+      "median_bpm": 179.87329734121707,
+      "band_spread_bpm": 0.004505836581216727
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.84297410375862,
+        "mid": 179.867576769467,
+        "high": 179.79558832888347
+      },
+      "band_strength": {
+        "low": 0.9752905838527078,
+        "mid": 0.7476674254223592,
+        "high": 0.7681722971029545
+      },
+      "median_bpm": 179.84297410375862,
+      "band_spread_bpm": 0.0719884405835387
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 179.84378421175697,
+        "mid": 179.8743842149744,
+        "high": 179.88014996458023
+      },
+      "band_strength": {
+        "low": 1.036913037194943,
+        "mid": 0.7889198541646528,
+        "high": 0.787687503939016
+      },
+      "median_bpm": 179.8743842149744,
+      "band_spread_bpm": 0.036365752823257935
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 179.86779047513383,
+        "mid": 179.8983719078288,
+        "high": 179.82504434092877
+      },
+      "band_strength": {
+        "low": 1.039741394786644,
+        "mid": 0.795254409394923,
+        "high": 0.7722918394647966
+      },
+      "median_bpm": 179.86779047513383,
+      "band_spread_bpm": 0.07332756690001929
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 179.83713895548507,
+        "mid": 179.8316614677058,
+        "high": 179.71503509922826
+      },
+      "band_strength": {
+        "low": 1.020785750913064,
+        "mid": 0.7981869050243532,
+        "high": 0.8077113618692355
+      },
+      "median_bpm": 179.8316614677058,
+      "band_spread_bpm": 0.12210385625681397
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 179.94765561129003,
+        "mid": 179.88942945201302,
+        "high": 179.82034303765252
+      },
+      "band_strength": {
+        "low": 0.988551129303628,
+        "mid": 0.7591229040344822,
+        "high": 0.7777177865092
+      },
+      "median_bpm": 179.88942945201302,
+      "band_spread_bpm": 0.1273125736375107
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 179.94149886252697,
+        "mid": 179.95820332761033,
+        "high": 179.8395879449465
+      },
+      "band_strength": {
+        "low": 0.9682260014335319,
+        "mid": 0.7361200301292281,
+        "high": 0.7912270973587944
+      },
+      "median_bpm": 179.94149886252697,
+      "band_spread_bpm": 0.11861538266384741
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 180.0382382132479,
+        "mid": 180.0600624724729,
+        "high": 180.05701985394683
+      },
+      "band_strength": {
+        "low": 0.9045131538690542,
+        "mid": 0.7120096408512585,
+        "high": 0.7559287367683414
+      },
+      "median_bpm": 180.05701985394683,
+      "band_spread_bpm": 0.02182425922501352
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 180.06322891972067,
+        "mid": 180.07398906433647,
+        "high": 180.0491087975413
+      },
+      "band_strength": {
+        "low": 0.946821604444953,
+        "mid": 0.7009435728667301,
+        "high": 0.7998481153264178
+      },
+      "median_bpm": 180.06322891972067,
+      "band_spread_bpm": 0.024880266795179296
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.66743261059702,
+    179.95333591864375,
+    180.13006058681114
+  ],
+  "leading_alignment_padding_samples": 510,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.158,
+        5.414
+      ],
+      "target_anchors_seconds": [
+        0.16032470826991377,
+        5.493658041603247
+      ],
+      "tempo_factor": 0.9854999999999999,
+      "source_guard_samples": [
+        0,
+        279072
+      ],
+      "output_offset_samples": 510,
+      "observed_raw_anchors_seconds": [
+        0.14970833333333333,
+        5.484354166666667
+      ],
+      "waveform_correlations": [
+        0.9981385498522904,
+        0.9999999733884047
+      ],
+      "observed_end_error_ms": 1.3125000000000497,
+      "raw_sha256": "b6a3e925039bfc0e5daf7ec351f37618fcc68098cc6762bc9a2ca5affe47e7c3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=279072,asetpts=PTS-STARTPTS,atempo=0.9854999999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.414,
+        10.668
+      ],
+      "target_anchors_seconds": [
+        5.493658041603247,
+        10.82699137493658
+      ],
+      "tempo_factor": 0.9851250000000001,
+      "source_guard_samples": [
+        240672,
+        531264
+      ],
+      "output_offset_samples": 244496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729979166666666
+      ],
+      "waveform_correlations": [
+        0.9999999571333993,
+        0.9999999759755972
+      ],
+      "observed_end_error_ms": -3.354166666666103,
+      "raw_sha256": "2c451d80434ad7e6dea60524c4a20be53085adfe1da5e2da8d894b5f7758fb88",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=240672:end_sample=531264,asetpts=PTS-STARTPTS,atempo=0.9851250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.668,
+        15.91
+      ],
+      "target_anchors_seconds": [
+        10.82699137493658,
+        16.160324708269915
+      ],
+      "tempo_factor": 0.9828749999999997,
+      "source_guard_samples": [
+        492864,
+        782880
+      ],
+      "output_offset_samples": 500496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726125
+      ],
+      "waveform_correlations": [
+        0.9999999632229445,
+        0.9999999910044621
+      ],
+      "observed_end_error_ms": -7.20833333333637,
+      "raw_sha256": "c79ea1cd064da5951aebad1c8c9b6d030c218ed05e09b20b920289eecc2ceb73",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=492864:end_sample=782880,asetpts=PTS-STARTPTS,atempo=0.9828749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.91,
+        21.154
+      ],
+      "target_anchors_seconds": [
+        16.160324708269915,
+        21.493658041603247
+      ],
+      "tempo_factor": 0.9832500000000002,
+      "source_guard_samples": [
+        744480,
+        1034592
+      ],
+      "output_offset_samples": 756496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728770833333333
+      ],
+      "waveform_correlations": [
+        0.999999962628006,
+        0.9999999858553351
+      ],
+      "observed_end_error_ms": -4.562499999999581,
+      "raw_sha256": "9a14055bab8ec0c653bbeca95880bb41566a2f31e75cc0fd43eb846c1522301a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=744480:end_sample=1034592,asetpts=PTS-STARTPTS,atempo=0.9832500000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.154,
+        26.402
+      ],
+      "target_anchors_seconds": [
+        21.493658041603247,
+        26.826991374936583
+      ],
+      "tempo_factor": 0.9839999999999998,
+      "source_guard_samples": [
+        996192,
+        1286496
+      ],
+      "output_offset_samples": 1012496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729916666666667
+      ],
+      "waveform_correlations": [
+        0.9999999719727529,
+        0.9999999800624841
+      ],
+      "observed_end_error_ms": -3.416666666669066,
+      "raw_sha256": "cee3d630d22db8a1dbbd1a03be7a67ffc33ad6461810c123bfda0f209b56248c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=996192:end_sample=1286496,asetpts=PTS-STARTPTS,atempo=0.9839999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.402,
+        31.648
+      ],
+      "target_anchors_seconds": [
+        26.826991374936583,
+        32.16032470826991
+      ],
+      "tempo_factor": 0.9836250000000006,
+      "source_guard_samples": [
+        1248096,
+        1538304
+      ],
+      "output_offset_samples": 1268496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733854166666666
+      ],
+      "waveform_correlations": [
+        0.9999999721460925,
+        0.9999999609963958
+      ],
+      "observed_end_error_ms": 0.5208333333373005,
+      "raw_sha256": "8b45714b0b781ab9cf6187b4d76bb79c78926afd86949fab10771a9b1d3f0160",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1248096:end_sample=1538304,asetpts=PTS-STARTPTS,atempo=0.9836250000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.648,
+        36.89
+      ],
+      "target_anchors_seconds": [
+        32.16032470826991,
+        37.49365804160325
+      ],
+      "tempo_factor": 0.9828749999999997,
+      "source_guard_samples": [
+        1499904,
+        1789920
+      ],
+      "output_offset_samples": 1524496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.725666666666666
+      ],
+      "waveform_correlations": [
+        0.9999999623248765,
+        0.9999999920509267
+      ],
+      "observed_end_error_ms": -7.666666666669819,
+      "raw_sha256": "2cf600cfcaf451a26ba403da529502e2c4e765c40be6f5028e75f0789e5e50a8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1499904:end_sample=1789920,asetpts=PTS-STARTPTS,atempo=0.9828749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.89,
+        42.134
+      ],
+      "target_anchors_seconds": [
+        37.49365804160325,
+        42.826991374936576
+      ],
+      "tempo_factor": 0.9832500000000008,
+      "source_guard_samples": [
+        1751520,
+        2041632
+      ],
+      "output_offset_samples": 1780496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7300625
+      ],
+      "waveform_correlations": [
+        0.9999999606938522,
+        0.9999999662670556
+      ],
+      "observed_end_error_ms": -3.270833333329115,
+      "raw_sha256": "e4cb3b2034c7e7d2e601f83bc9f3bdeea59865f3c300f9ba6fe73e7a549e0971",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=1751520:end_sample=2041632,asetpts=PTS-STARTPTS,atempo=0.9832500000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        42.134,
+        47.38
+      ],
+      "target_anchors_seconds": [
+        42.826991374936576,
+        48.16032470826991
+      ],
+      "tempo_factor": 0.983625,
+      "source_guard_samples": [
+        2003232,
+        2293440
+      ],
+      "output_offset_samples": 2036496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7300625
+      ],
+      "waveform_correlations": [
+        0.9999999662420326,
+        0.9999999735069763
+      ],
+      "observed_end_error_ms": -3.2708333333362205,
+      "raw_sha256": "7d7be84921b71ea662a45418e392b9685b533be3c8873025ce7d4ebea8f17a4a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2003232:end_sample=2293440,asetpts=PTS-STARTPTS,atempo=0.9836250000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        47.38,
+        52.616
+      ],
+      "target_anchors_seconds": [
+        48.16032470826991,
+        53.49365804160325
+      ],
+      "tempo_factor": 0.981749999999999,
+      "source_guard_samples": [
+        2255040,
+        2544768
+      ],
+      "output_offset_samples": 2292496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.725791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999662872145,
+        0.9999999901865024
+      ],
+      "observed_end_error_ms": -7.541666666669222,
+      "raw_sha256": "c81edf6af335b85b8c0c7e04f2f1729b1d95c3430c5eeacb5c17ec96634d6c1a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2255040:end_sample=2544768,asetpts=PTS-STARTPTS,atempo=0.9817499999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        52.616,
+        57.86
+      ],
+      "target_anchors_seconds": [
+        53.49365804160325,
+        58.826991374936576
+      ],
+      "tempo_factor": 0.9832500000000008,
+      "source_guard_samples": [
+        2506368,
+        2796480
+      ],
+      "output_offset_samples": 2548496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734625
+      ],
+      "waveform_correlations": [
+        0.9999999640998908,
+        0.9999999777445964
+      ],
+      "observed_end_error_ms": 1.2916666666713539,
+      "raw_sha256": "f69790d0018c5c8fac463f4be174b9f0bee22cc70bc8aa69e276d165f2e26a1e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2506368:end_sample=2796480,asetpts=PTS-STARTPTS,atempo=0.9832500000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.86,
+        63.1
+      ],
+      "target_anchors_seconds": [
+        58.826991374936576,
+        64.16032470826991
+      ],
+      "tempo_factor": 0.9824999999999999,
+      "source_guard_samples": [
+        2758080,
+        3048000
+      ],
+      "output_offset_samples": 2804496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727083333333334
+      ],
+      "waveform_correlations": [
+        0.9999999687585425,
+        0.9999999882806663
+      ],
+      "observed_end_error_ms": -6.250000000002309,
+      "raw_sha256": "d67b6135b96b0284131e234e17f6d783eed798a20c993fcd3594384ff7617d27",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=2758080:end_sample=3048000,asetpts=PTS-STARTPTS,atempo=0.9824999999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        63.1,
+        68.342
+      ],
+      "target_anchors_seconds": [
+        64.16032470826991,
+        69.49365804160324
+      ],
+      "tempo_factor": 0.9828750000000004,
+      "source_guard_samples": [
+        3009600,
+        3299616
+      ],
+      "output_offset_samples": 3060496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7327916666666665
+      ],
+      "waveform_correlations": [
+        0.9999999682471562,
+        0.9999999670313308
+      ],
+      "observed_end_error_ms": -0.5416666666624437,
+      "raw_sha256": "e40fae1a618a040c8ac13a45504752825a144ddb312e8c955b60462ff290d1d3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3009600:end_sample=3299616,asetpts=PTS-STARTPTS,atempo=0.9828750000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        68.342,
+        73.582
+      ],
+      "target_anchors_seconds": [
+        69.49365804160324,
+        74.82699137493658
+      ],
+      "tempo_factor": 0.9824999999999973,
+      "source_guard_samples": [
+        3261216,
+        3551136
+      ],
+      "output_offset_samples": 3316496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728104166666666
+      ],
+      "waveform_correlations": [
+        0.9999999686337646,
+        0.9999999878903463
+      ],
+      "observed_end_error_ms": -5.229166666676832,
+      "raw_sha256": "bd29d7d70bc1a4966804e8ee4b2db4057ff1260b7072012c7dbfd77eef4eec3e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3261216:end_sample=3551136,asetpts=PTS-STARTPTS,atempo=0.9824999999999973,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        73.582,
+        78.82
+      ],
+      "target_anchors_seconds": [
+        74.82699137493658,
+        80.16032470826991
+      ],
+      "tempo_factor": 0.9821250000000008,
+      "source_guard_samples": [
+        3512736,
+        3802560
+      ],
+      "output_offset_samples": 3572496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7266875
+      ],
+      "waveform_correlations": [
+        0.9999999715844968,
+        0.9999999889939454
+      ],
+      "observed_end_error_ms": -6.645833333329243,
+      "raw_sha256": "01e1eb14183d5bdb51d38a955559ce603ed73d5f9167106206b1c0a9504536ae",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3512736:end_sample=3802560,asetpts=PTS-STARTPTS,atempo=0.9821250000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        78.82,
+        84.06
+      ],
+      "target_anchors_seconds": [
+        80.16032470826991,
+        85.49365804160324
+      ],
+      "tempo_factor": 0.9825000000000026,
+      "source_guard_samples": [
+        3764160,
+        4054080
+      ],
+      "output_offset_samples": 3828496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728583333333333
+      ],
+      "waveform_correlations": [
+        0.9999999610766057,
+        0.9999999844233857
+      ],
+      "observed_end_error_ms": -4.749999999996035,
+      "raw_sha256": "f4659bb3d21d2045b1a5bc020851316132365d4e85c329e49e35f5380e259cd4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=3764160:end_sample=4054080,asetpts=PTS-STARTPTS,atempo=0.9825000000000026,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        84.06,
+        89.294
+      ],
+      "target_anchors_seconds": [
+        85.49365804160324,
+        90.82699137493658
+      ],
+      "tempo_factor": 0.9813749999999972,
+      "source_guard_samples": [
+        4015680,
+        4305312
+      ],
+      "output_offset_samples": 4084496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7294583333333335
+      ],
+      "waveform_correlations": [
+        0.9999999777270138,
+        0.9999999737231826
+      ],
+      "observed_end_error_ms": -3.8750000000096207,
+      "raw_sha256": "b41261e8934b864e5866185c855511491c2743faf5be4642bc20f5ffe2db6d32",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4015680:end_sample=4305312,asetpts=PTS-STARTPTS,atempo=0.9813749999999972,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        89.294,
+        94.53
+      ],
+      "target_anchors_seconds": [
+        90.82699137493658,
+        96.16032470826991
+      ],
+      "tempo_factor": 0.9817500000000017,
+      "source_guard_samples": [
+        4266912,
+        4556640
+      ],
+      "output_offset_samples": 4340496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729729166666667
+      ],
+      "waveform_correlations": [
+        0.9999999573205591,
+        0.9999999797194478
+      ],
+      "observed_end_error_ms": -3.6041666666619676,
+      "raw_sha256": "fac54510e79cbc842e9c8c9be67e6220262a8bf03af83d05cfa84d96d7c745be",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4266912:end_sample=4556640,asetpts=PTS-STARTPTS,atempo=0.9817500000000017,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        94.53,
+        99.766
+      ],
+      "target_anchors_seconds": [
+        96.16032470826991,
+        101.49365804160324
+      ],
+      "tempo_factor": 0.9817500000000017,
+      "source_guard_samples": [
+        4518240,
+        4807968
+      ],
+      "output_offset_samples": 4596496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731604166666667
+      ],
+      "waveform_correlations": [
+        0.9999999745199153,
+        0.9999999677286424
+      ],
+      "observed_end_error_ms": -1.7291666666618966,
+      "raw_sha256": "7120090e225c4f3b9646cb591d741d04122d700d30dad15d05d6a1b15ebd50e7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4518240:end_sample=4807968,asetpts=PTS-STARTPTS,atempo=0.9817500000000017,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        99.766,
+        105.0
+      ],
+      "target_anchors_seconds": [
+        101.49365804160324,
+        106.82699137493658
+      ],
+      "tempo_factor": 0.9813749999999972,
+      "source_guard_samples": [
+        4769568,
+        5059200
+      ],
+      "output_offset_samples": 4852496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999732499256,
+        0.9999999831646064
+      ],
+      "observed_end_error_ms": 0.8958333333231039,
+      "raw_sha256": "f29f7b45b3eaa0e34ef54ed47dc11cbf2941448b35ae7f3d0feb301a2fb5df2a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=4769568:end_sample=5059200,asetpts=PTS-STARTPTS,atempo=0.9813749999999972,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        105.0,
+        110.232
+      ],
+      "target_anchors_seconds": [
+        106.82699137493658,
+        112.16032470826991
+      ],
+      "tempo_factor": 0.9810000000000008,
+      "source_guard_samples": [
+        5020800,
+        5310336
+      ],
+      "output_offset_samples": 5108496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737395833333333
+      ],
+      "waveform_correlations": [
+        0.9999999736055009,
+        0.9999999828062334
+      ],
+      "observed_end_error_ms": 4.062500000004299,
+      "raw_sha256": "bd396f910d3c687205e928e4e219ae6a4204b43b226c04b8fd580f6f6d1479ec",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5020800:end_sample=5310336,asetpts=PTS-STARTPTS,atempo=0.9810000000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        110.232,
+        115.464
+      ],
+      "target_anchors_seconds": [
+        112.16032470826991,
+        117.49365804160324
+      ],
+      "tempo_factor": 0.9810000000000008,
+      "source_guard_samples": [
+        5271936,
+        5561472
+      ],
+      "output_offset_samples": 5364496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730541666666666
+      ],
+      "waveform_correlations": [
+        0.9999999729916434,
+        0.9999999749216804
+      ],
+      "observed_end_error_ms": -2.791666666662529,
+      "raw_sha256": "5c72647b5af20debe2ed19f99cf33ff6096f4b3335fefc1bdfcc8b8206e7b82a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5271936:end_sample=5561472,asetpts=PTS-STARTPTS,atempo=0.9810000000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        115.464,
+        120.686
+      ],
+      "target_anchors_seconds": [
+        117.49365804160324,
+        122.82699137493658
+      ],
+      "tempo_factor": 0.9791249999999998,
+      "source_guard_samples": [
+        5523072,
+        5812128
+      ],
+      "output_offset_samples": 5620496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730625
+      ],
+      "waveform_correlations": [
+        0.99999997932674,
+        0.9999999825270215
+      ],
+      "observed_end_error_ms": -2.7083333333433046,
+      "raw_sha256": "e0e2672d101971cf29a7ff14766b331935b99afa8387229662f411c224e25516",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5523072:end_sample=5812128,asetpts=PTS-STARTPTS,atempo=0.9791249999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        120.686,
+        125.908
+      ],
+      "target_anchors_seconds": [
+        122.82699137493658,
+        128.1603247082699
+      ],
+      "tempo_factor": 0.9791249999999998,
+      "source_guard_samples": [
+        5773728,
+        6062784
+      ],
+      "output_offset_samples": 5876496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732666666666667
+      ],
+      "waveform_correlations": [
+        0.9999999738691477,
+        0.9999999498318571
+      ],
+      "observed_end_error_ms": -0.6666666666621524,
+      "raw_sha256": "cb94938f94d5711a8acbd3cf661801c9045269d931bb9e316dc664e70a72f20f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=5773728:end_sample=6062784,asetpts=PTS-STARTPTS,atempo=0.9791249999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        125.908,
+        131.126
+      ],
+      "target_anchors_seconds": [
+        128.1603247082699,
+        133.49365804160325
+      ],
+      "tempo_factor": 0.9783749999999989,
+      "source_guard_samples": [
+        6024384,
+        6313248
+      ],
+      "output_offset_samples": 6132496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734583333333333
+      ],
+      "waveform_correlations": [
+        0.9999998632968744,
+        0.9999999735813594
+      ],
+      "observed_end_error_ms": 1.2499999999899813,
+      "raw_sha256": "6868ad5e838248a2754659938dbf38867ba62a008912e287300948e3afe70009",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6024384:end_sample=6313248,asetpts=PTS-STARTPTS,atempo=0.9783749999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        131.126,
+        136.342
+      ],
+      "target_anchors_seconds": [
+        133.49365804160325,
+        138.82699137493657
+      ],
+      "tempo_factor": 0.978000000000005,
+      "source_guard_samples": [
+        6274848,
+        6563616
+      ],
+      "output_offset_samples": 6388496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735625
+      ],
+      "waveform_correlations": [
+        0.9999999676127801,
+        0.9999999885654605
+      ],
+      "observed_end_error_ms": 2.2916666666850105,
+      "raw_sha256": "724a325f802515f25acae9083adb70242ba7ff995c0f87a5ccb7bfbcda4963a5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6274848:end_sample=6563616,asetpts=PTS-STARTPTS,atempo=0.9780000000000050,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        136.342,
+        141.564
+      ],
+      "target_anchors_seconds": [
+        138.82699137493657,
+        144.1603247082699
+      ],
+      "tempo_factor": 0.9791249999999945,
+      "source_guard_samples": [
+        6525216,
+        6814272
+      ],
+      "output_offset_samples": 6644496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731104166666666
+      ],
+      "waveform_correlations": [
+        0.9999999866193465,
+        0.9999999729216303
+      ],
+      "observed_end_error_ms": -2.2291666666767185,
+      "raw_sha256": "6ed406b41e0602db07c6665053a4f00a10402f202664b45bf5be333ac3d2c715",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6525216:end_sample=6814272,asetpts=PTS-STARTPTS,atempo=0.9791249999999945,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        141.564,
+        146.78
+      ],
+      "target_anchors_seconds": [
+        144.1603247082699,
+        149.49365804160325
+      ],
+      "tempo_factor": 0.9779999999999998,
+      "source_guard_samples": [
+        6775872,
+        7064640
+      ],
+      "output_offset_samples": 6900496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734395833333333
+      ],
+      "waveform_correlations": [
+        0.9999999744017154,
+        0.9999999838131421
+      ],
+      "observed_end_error_ms": 1.0624999999899742,
+      "raw_sha256": "e9f01693f4d67624ffd9f96fc440a57f572236601956f05a86c9ebb2529f2152",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=6775872:end_sample=7064640,asetpts=PTS-STARTPTS,atempo=0.9779999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        146.78,
+        151.998
+      ],
+      "target_anchors_seconds": [
+        149.49365804160325,
+        154.82699137493657
+      ],
+      "tempo_factor": 0.9783750000000014,
+      "source_guard_samples": [
+        7026240,
+        7315104
+      ],
+      "output_offset_samples": 7156496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736604166666667
+      ],
+      "waveform_correlations": [
+        0.9999999828412101,
+        0.9999999799158475
+      ],
+      "observed_end_error_ms": 3.2708333333522077,
+      "raw_sha256": "a6b81cf9eab5621c502cfeed0c4f7597b505630492a04d35353c7c9b3469c9ff",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=7026240:end_sample=7315104,asetpts=PTS-STARTPTS,atempo=0.9783750000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        151.998,
+        157.21
+      ],
+      "target_anchors_seconds": [
+        154.82699137493657,
+        160.1603247082699
+      ],
+      "tempo_factor": 0.9772500000000015,
+      "source_guard_samples": [
+        7276704,
+        7565280
+      ],
+      "output_offset_samples": 7412496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736729166666667
+      ],
+      "waveform_correlations": [
+        0.9999999732327195,
+        0.9999999807081541
+      ],
+      "observed_end_error_ms": 3.3958333333234947,
+      "raw_sha256": "c149f7f1ece1ba13cf3de2e0c576cc9d399b5032ff9a63d0ebaef345729dc915",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=7276704:end_sample=7565280,asetpts=PTS-STARTPTS,atempo=0.9772500000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        157.21,
+        162.418
+      ],
+      "target_anchors_seconds": [
+        160.1603247082699,
+        165.49365804160325
+      ],
+      "tempo_factor": 0.9764999999999979,
+      "source_guard_samples": [
+        7526880,
+        7815264
+      ],
+      "output_offset_samples": 7668496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730395833333334
+      ],
+      "waveform_correlations": [
+        0.999999972933541,
+        0.9999999785511279
+      ],
+      "observed_end_error_ms": -2.937500000009585,
+      "raw_sha256": "31d1e85c5a3414fdfe927cd72d9901a10f21d0b5512ee28d71b4ee428e23959d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=7526880:end_sample=7815264,asetpts=PTS-STARTPTS,atempo=0.9764999999999979,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        162.418,
+        167.63
+      ],
+      "target_anchors_seconds": [
+        165.49365804160325,
+        170.82699137493657
+      ],
+      "tempo_factor": 0.9772500000000014,
+      "source_guard_samples": [
+        7776864,
+        8065440
+      ],
+      "output_offset_samples": 7924496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735166666666666
+      ],
+      "waveform_correlations": [
+        0.9999999817563454,
+        0.9999999830609548
+      ],
+      "observed_end_error_ms": 1.8333333333515611,
+      "raw_sha256": "dfedfee139123ec324968e115e3c1ec081a5bf10faaeb817d3b83463884e47a7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=7776864:end_sample=8065440,asetpts=PTS-STARTPTS,atempo=0.9772500000000014,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        167.63,
+        172.84
+      ],
+      "target_anchors_seconds": [
+        170.82699137493657,
+        176.1603247082699
+      ],
+      "tempo_factor": 0.9768749999999997,
+      "source_guard_samples": [
+        8027040,
+        8315520
+      ],
+      "output_offset_samples": 8180496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735520833333333
+      ],
+      "waveform_correlations": [
+        0.9999999759275846,
+        0.9999999871764534
+      ],
+      "observed_end_error_ms": 2.187499999990017,
+      "raw_sha256": "78bfd60c5796824639b99abc096b328af3a520db81d9bfc46102df499de3c0c5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=8027040:end_sample=8315520,asetpts=PTS-STARTPTS,atempo=0.9768749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        172.84,
+        178.04
+      ],
+      "target_anchors_seconds": [
+        176.1603247082699,
+        181.49365804160325
+      ],
+      "tempo_factor": 0.9749999999999961,
+      "source_guard_samples": [
+        8277120,
+        8565120
+      ],
+      "output_offset_samples": 8436496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728958333333333
+      ],
+      "waveform_correlations": [
+        0.9999991339397045,
+        0.999999981937413
+      ],
+      "observed_end_error_ms": -4.375000000010232,
+      "raw_sha256": "4138064671c686909a2f8314622c2a14c4a03c48b9a8a4648a8c6a2b4fd56bab",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=8277120:end_sample=8565120,asetpts=PTS-STARTPTS,atempo=0.9749999999999961,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        178.04,
+        183.244
+      ],
+      "target_anchors_seconds": [
+        181.49365804160325,
+        186.82699137493657
+      ],
+      "tempo_factor": 0.9757500000000049,
+      "source_guard_samples": [
+        8526720,
+        8814912
+      ],
+      "output_offset_samples": 8692496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7276875
+      ],
+      "waveform_correlations": [
+        0.9999999847743852,
+        0.9999999892240674
+      ],
+      "observed_end_error_ms": -5.645833333314698,
+      "raw_sha256": "3bf12d4fb2129717ecb1d19f577ec7d3b0b81d87a87b186951b4445631d6ee7e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=8526720:end_sample=8814912,asetpts=PTS-STARTPTS,atempo=0.9757500000000049,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        569
+      ],
+      "source_anchors_seconds": [
+        183.244,
+        186.17
+      ],
+      "target_anchors_seconds": [
+        186.82699137493657,
+        189.82699137493657
+      ],
+      "tempo_factor": 0.9753333333333293,
+      "source_guard_samples": [
+        8776512,
+        9194880
+      ],
+      "output_offset_samples": 8948496,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        3.4083125
+      ],
+      "waveform_correlations": [
+        0.9999981295997955,
+        0.9999999568870075
+      ],
+      "observed_end_error_ms": 8.312500000000167,
+      "raw_sha256": "5f54d02aaeb677b2601dae759786345f9c5147ff305725591f39216c43b604dc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/19__괜찮은 날__Optimistic__Indie Breakbeat__NA.wav",
+        "-af",
+        "atrim=start_sample=8776512:end_sample=9194880,asetpts=PTS-STARTPTS,atempo=0.9753333333333293,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-19/block-035.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "wavvy.waveform_alias_resolution.v1",
+  "order": 17,
+  "source_sha256": "ff1e611b7a0aa3660ad5e03103fd7291226d5b881371a2260b3bf950fa051861",
+  "failed_raw_sha256": "00a6083acb03f0139a442c5ecc86433a35df665e3e00c1840ca290d508365d8e",
+  "script_sha256": "1203326ad8096fcc4da2e3cd718d45c3b338d0714b8253fb7b8a0717db710dcf",
+  "source_anchor_seconds": 10.754,
+  "observed_raw_anchor_seconds": 5.724354166666667,
+  "minimum_correlation": 0.9916064608544829,
+  "evidence": {
+    "method": "highpass-300Hz-corroboration",
+    "full_band_positions_and_correlations": [
+      [
+        5.724354166666667,
+        0.9941037878396818
+      ],
+      [
+        5.730395833333334,
+        0.9787642954378024
+      ],
+      [
+        5.730395833333334,
+        0.9818059160404768
+      ]
+    ],
+    "positions_and_correlations": [
+      [
+        5.724354166666667,
+        0.9948779024238622
+      ],
+      [
+        5.724354166666667,
+        0.9925252286344807
+      ],
+      [
+        5.724354166666667,
+        0.9916064608544829
+      ]
+    ]
+  },
+  "audio_filter_applied": false,
+  "acceptance_correlation_gt": 0.9,
+  "acceptance_location_spread_lt_ms": 1.5
+}

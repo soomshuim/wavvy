@@ -1,0 +1,1910 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 15,
+  "title": "드럼 위로",
+  "candidate_id": "16185831-28d0-4d1d-afaa-0ba1a894720d",
+  "source_path": "SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+  "source_sha256": "1281b1726e93d742a886765ec5821621df463a82372a1af66f3592e813fba373",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/15.json",
+  "analysis_sha256": "700d5f0ad06bd175f2fe562b33e73b912e03049b06c34f7f1a83bc894a71cce7",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/15__드럼 위로__180.wav",
+  "output_sha256": "0c1dcb3da30b42c1a4dd7f415801811ef7905562cd3c5c627bac64e2cfbaabef",
+  "source_duration_seconds": 156.76,
+  "output_duration_seconds": 163.04377083333333,
+  "output_peak_linear": 0.54962158203125,
+  "first_grid_beat_output_seconds": 0.1455850313981802,
+  "grid_beat_count": 487,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 180.03162892724612,
+        "mid": 187.68221891101575,
+        "high": 180.1858474631352
+      },
+      "band_strength": {
+        "low": 0.67261205561398,
+        "mid": 0.5548600556215064,
+        "high": 0.7227330371013767
+      },
+      "median_bpm": 180.1858474631352,
+      "band_spread_bpm": 7.650589983769635
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 180.02692727164882,
+        "mid": 179.43129016042948,
+        "high": 179.7635300364441
+      },
+      "band_strength": {
+        "low": 0.6542513675344102,
+        "mid": 0.5603114225059489,
+        "high": 0.7097492047359399
+      },
+      "median_bpm": 179.7635300364441,
+      "band_spread_bpm": 0.5956371112193324
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 180.02616900009446,
+        "mid": 180.07300034787283,
+        "high": 179.81842975686808
+      },
+      "band_strength": {
+        "low": 0.6567581464530364,
+        "mid": 0.5863848067832159,
+        "high": 0.7368549028266507
+      },
+      "median_bpm": 180.02616900009446,
+      "band_spread_bpm": 0.2545705910047502
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.49970785767198,
+        "mid": 180.06810128883708,
+        "high": 179.91272780576256
+      },
+      "band_strength": {
+        "low": 0.648386675125812,
+        "mid": 0.6081355670323809,
+        "high": 0.7417664376596749
+      },
+      "median_bpm": 180.06810128883708,
+      "band_spread_bpm": 0.5869800519094213
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 180.56472502057727,
+        "mid": 180.23108894862702,
+        "high": 179.70467635798386
+      },
+      "band_strength": {
+        "low": 0.6403796782632766,
+        "mid": 0.6123858171539011,
+        "high": 0.7401312380006373
+      },
+      "median_bpm": 180.23108894862702,
+      "band_spread_bpm": 0.8600486625934138
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.02986194661202,
+        "mid": 180.30439621027938,
+        "high": 179.8543439300111
+      },
+      "band_strength": {
+        "low": 0.7061949395697104,
+        "mid": 0.5735445846937903,
+        "high": 0.6781796704092782
+      },
+      "median_bpm": 180.02986194661202,
+      "band_spread_bpm": 0.4500522802682667
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.72957027450516,
+        "mid": 180.30418190359094,
+        "high": 179.82894006173842
+      },
+      "band_strength": {
+        "low": 0.7227478355820581,
+        "mid": 0.5777862077420685,
+        "high": 0.6886837073035262
+      },
+      "median_bpm": 179.82894006173842,
+      "band_spread_bpm": 0.5746116290857799
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.57492831558656,
+        "mid": 180.3516912674187,
+        "high": 179.805219575249
+      },
+      "band_strength": {
+        "low": 0.7552583158668618,
+        "mid": 0.5928703588328428,
+        "high": 0.7040483216531404
+      },
+      "median_bpm": 179.805219575249,
+      "band_spread_bpm": 0.7767629518321257
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 179.5451047198391,
+        "mid": 180.0539619610104,
+        "high": 179.90664297308365
+      },
+      "band_strength": {
+        "low": 0.7310254859577093,
+        "mid": 0.5985992003546953,
+        "high": 0.6814248882437204
+      },
+      "median_bpm": 179.90664297308365,
+      "band_spread_bpm": 0.508857241171313
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.72067534605276,
+        "mid": 179.9328160725826,
+        "high": 179.9933892498125
+      },
+      "band_strength": {
+        "low": 0.7205745888592325,
+        "mid": 0.619034018080918,
+        "high": 0.7239869187868908
+      },
+      "median_bpm": 179.9328160725826,
+      "band_spread_bpm": 0.272713903759751
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.2236410970916,
+        "mid": 180.03380207010053,
+        "high": 180.00786770808062
+      },
+      "band_strength": {
+        "low": 0.6836080775049584,
+        "mid": 0.6522669445535356,
+        "high": 0.6852696994449747
+      },
+      "median_bpm": 180.03380207010053,
+      "band_spread_bpm": 0.21577338901096255
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 180.4760687676089,
+        "mid": 179.97560383604477,
+        "high": 179.9302043960419
+      },
+      "band_strength": {
+        "low": 0.7238351634343608,
+        "mid": 0.6749182437891171,
+        "high": 0.7419936053497646
+      },
+      "median_bpm": 179.97560383604477,
+      "band_spread_bpm": 0.5458643715670064
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.28757131038066,
+        "mid": 180.0380864457102,
+        "high": 179.85219604859859
+      },
+      "band_strength": {
+        "low": 0.7266212083241049,
+        "mid": 0.6864204901963025,
+        "high": 0.7448502383073297
+      },
+      "median_bpm": 180.0380864457102,
+      "band_spread_bpm": 0.4353752617820703
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 180.24087865567824,
+        "mid": 180.21312222695448,
+        "high": 179.97033651592594
+      },
+      "band_strength": {
+        "low": 0.716429662259181,
+        "mid": 0.6850330586682822,
+        "high": 0.7229217472683807
+      },
+      "median_bpm": 180.21312222695448,
+      "band_spread_bpm": 0.27054213975230823
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.08959141434397,
+        "mid": 180.16372023053765,
+        "high": 180.08575033315037
+      },
+      "band_strength": {
+        "low": 0.7845309778021486,
+        "mid": 0.6504400639834916,
+        "high": 0.7167016210030726
+      },
+      "median_bpm": 180.08959141434397,
+      "band_spread_bpm": 0.07796989738727689
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.90304266866363,
+        "mid": 180.1727977097044,
+        "high": 180.0332961836856
+      },
+      "band_strength": {
+        "low": 0.7779726076259582,
+        "mid": 0.6752867912912726,
+        "high": 0.6948035548194774
+      },
+      "median_bpm": 180.0332961836856,
+      "band_spread_bpm": 0.2697550410407814
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.71053277781965,
+        "mid": 179.87469448945112,
+        "high": 180.01193084187116
+      },
+      "band_strength": {
+        "low": 0.7462897758464349,
+        "mid": 0.6449213748653461,
+        "high": 0.6714209179909165
+      },
+      "median_bpm": 179.87469448945112,
+      "band_spread_bpm": 0.3013980640515115
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.7537915239502,
+        "mid": 180.05151283256058,
+        "high": 180.12118480401233
+      },
+      "band_strength": {
+        "low": 0.7496990108074385,
+        "mid": 0.6025798515585771,
+        "high": 0.6574494095027305
+      },
+      "median_bpm": 180.05151283256058,
+      "band_spread_bpm": 0.36739328006211736
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.55251672064446,
+        "mid": 180.21384574252713,
+        "high": 179.77705009326328
+      },
+      "band_strength": {
+        "low": 0.8197683308571734,
+        "mid": 0.5581031026510673,
+        "high": 0.6791834424859554
+      },
+      "median_bpm": 179.77705009326328,
+      "band_spread_bpm": 0.6613290218826648
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.54041392672883,
+        "mid": 182.57442435228853,
+        "high": 179.59881697748156
+      },
+      "band_strength": {
+        "low": 0.8202406413004083,
+        "mid": 0.5201929042924307,
+        "high": 0.6612579292436002
+      },
+      "median_bpm": 179.59881697748156,
+      "band_spread_bpm": 3.0340104255597
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 179.77062489146365,
+        "mid": 180.82201597804166,
+        "high": 179.45472078121884
+      },
+      "band_strength": {
+        "low": 0.8245387464231088,
+        "mid": 0.554217049566974,
+        "high": 0.6772226239185473
+      },
+      "median_bpm": 179.77062489146365,
+      "band_spread_bpm": 1.3672951968228233
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 179.82525046088165,
+        "mid": 180.05715825068583,
+        "high": 179.48335410814914
+      },
+      "band_strength": {
+        "low": 0.8050026460759446,
+        "mid": 0.5627614263642656,
+        "high": 0.6742220507509804
+      },
+      "median_bpm": 179.82525046088165,
+      "band_spread_bpm": 0.5738041425366873
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 179.909338480329,
+        "mid": 179.87419692118536,
+        "high": 179.35780747867307
+      },
+      "band_strength": {
+        "low": 0.7550948120240029,
+        "mid": 0.5951493861219185,
+        "high": 0.6650415482487203
+      },
+      "median_bpm": 179.87419692118536,
+      "band_spread_bpm": 0.5515310016559454
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 179.9228771198122,
+        "mid": 179.83325286266398,
+        "high": 179.63271670113093
+      },
+      "band_strength": {
+        "low": 0.7903535578791031,
+        "mid": 0.6065592681134558,
+        "high": 0.6960461361620917
+      },
+      "median_bpm": 179.83325286266398,
+      "band_spread_bpm": 0.29016041868126763
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 179.86671343836576,
+        "mid": 180.09427695388752,
+        "high": 179.87434565998535
+      },
+      "band_strength": {
+        "low": 0.8029886575348293,
+        "mid": 0.5873301695135891,
+        "high": 0.7101109085122257
+      },
+      "median_bpm": 179.87434565998535,
+      "band_spread_bpm": 0.22756351552175147
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 179.9747588672606,
+        "mid": 180.18349881439363,
+        "high": 179.7778684031824
+      },
+      "band_strength": {
+        "low": 0.8179647118986139,
+        "mid": 0.624598961475325,
+        "high": 0.7749854512849297
+      },
+      "median_bpm": 179.9747588672606,
+      "band_spread_bpm": 0.40563041121123433
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 179.94858835973383,
+        "mid": 180.15902855162622,
+        "high": 179.86071664698304
+      },
+      "band_strength": {
+        "low": 0.7953139669221814,
+        "mid": 0.6283435048611108,
+        "high": 0.7726877919234902
+      },
+      "median_bpm": 179.94858835973383,
+      "band_spread_bpm": 0.29831190464318524
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 180.00921771349232,
+        "mid": 180.31882844203543,
+        "high": 179.88186059840285
+      },
+      "band_strength": {
+        "low": 0.7772316992315007,
+        "mid": 0.5419443879216099,
+        "high": 0.8016981724044706
+      },
+      "median_bpm": 180.00921771349232,
+      "band_spread_bpm": 0.4369678436325728
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 180.01175211849971,
+        "mid": 180.2153490003593,
+        "high": 180.01136959394012
+      },
+      "band_strength": {
+        "low": 0.7607268874893579,
+        "mid": 0.5117405854148754,
+        "high": 0.7800824104470019
+      },
+      "median_bpm": 180.01175211849971,
+      "band_spread_bpm": 0.20397940641919377
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 180.0480701682597,
+        "mid": 180.3871274833265,
+        "high": 180.20550447965385
+      },
+      "band_strength": {
+        "low": 0.7523003294412068,
+        "mid": 0.4924675086200915,
+        "high": 0.7602511058997979
+      },
+      "median_bpm": 180.20550447965385,
+      "band_spread_bpm": 0.33905731506681036
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.7667227212029,
+    179.97518135165268,
+    180.2096942406692
+  ],
+  "leading_alignment_padding_samples": 446,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.142,
+        5.344
+      ],
+      "target_anchors_seconds": [
+        0.1455850313981802,
+        5.478918364731514
+      ],
+      "tempo_factor": 0.975375,
+      "source_guard_samples": [
+        0,
+        275712
+      ],
+      "output_offset_samples": 446,
+      "observed_raw_anchors_seconds": [
+        0.13629166666666667,
+        5.463791666666666
+      ],
+      "waveform_correlations": [
+        0.9999999657647792,
+        0.9999999649301857
+      ],
+      "observed_end_error_ms": -5.833333333333357,
+      "raw_sha256": "7f5d2a57588e859c67d404c8164a993c3bfa634bb82ffbb5f8ca60ee9af448c8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=275712,asetpts=PTS-STARTPTS,atempo=0.9753750000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.344,
+        10.538
+      ],
+      "target_anchors_seconds": [
+        5.478918364731514,
+        10.812251698064847
+      ],
+      "tempo_factor": 0.973875,
+      "source_guard_samples": [
+        237312,
+        525024
+      ],
+      "output_offset_samples": 243788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7365625
+      ],
+      "waveform_correlations": [
+        0.9999999604538893,
+        0.999999970639649
+      ],
+      "observed_end_error_ms": 3.2291666666663943,
+      "raw_sha256": "4131e12348d1550409bbad5e47e71eb4ba7d637eec167682de1ed0c6b384b482",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=237312:end_sample=525024,asetpts=PTS-STARTPTS,atempo=0.9738750000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.538,
+        15.726
+      ],
+      "target_anchors_seconds": [
+        10.812251698064847,
+        16.14558503139818
+      ],
+      "tempo_factor": 0.97275,
+      "source_guard_samples": [
+        486624,
+        774048
+      ],
+      "output_offset_samples": 499788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.739208333333333
+      ],
+      "waveform_correlations": [
+        0.9999999626800883,
+        0.9999999674599747
+      ],
+      "observed_end_error_ms": 5.874999999998742,
+      "raw_sha256": "2a5ff67eaa761f16fb517d554138ba2c160f88289a34b200f08aa4f5fe82dc84",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=486624:end_sample=774048,asetpts=PTS-STARTPTS,atempo=0.9727500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.726,
+        20.906
+      ],
+      "target_anchors_seconds": [
+        16.14558503139818,
+        21.478918364731513
+      ],
+      "tempo_factor": 0.9712499999999998,
+      "source_guard_samples": [
+        735648,
+        1022688
+      ],
+      "output_offset_samples": 755462,
+      "observed_raw_anchors_seconds": [
+        0.40679166666666666,
+        5.7329375
+      ],
+      "waveform_correlations": [
+        0.9999999715362173,
+        0.9999999664157114
+      ],
+      "observed_end_error_ms": -7.187499999998792,
+      "raw_sha256": "a246da0ce23247a37299b13b81d4b0a63b265f22fc2993b7be060311b5d4a2ca",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=735648:end_sample=1022688,asetpts=PTS-STARTPTS,atempo=0.9712499999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        20.906,
+        26.086
+      ],
+      "target_anchors_seconds": [
+        21.478918364731513,
+        26.81225169806485
+      ],
+      "tempo_factor": 0.9712499999999995,
+      "source_guard_samples": [
+        984288,
+        1271328
+      ],
+      "output_offset_samples": 1011788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734604166666666
+      ],
+      "waveform_correlations": [
+        0.999999965910707,
+        0.9999999692887164
+      ],
+      "observed_end_error_ms": 1.2708333333302235,
+      "raw_sha256": "934270d22601f01b85f16bf99d0bb2494bc1eb1a58504a204a32c3734d4be1cc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=984288:end_sample=1271328,asetpts=PTS-STARTPTS,atempo=0.9712499999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.086,
+        31.242
+      ],
+      "target_anchors_seconds": [
+        26.81225169806485,
+        32.14558503139818
+      ],
+      "tempo_factor": 0.9667500000000013,
+      "source_guard_samples": [
+        1232928,
+        1518816
+      ],
+      "output_offset_samples": 1267788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7359583333333335
+      ],
+      "waveform_correlations": [
+        0.99999996689879,
+        0.9999999680607947
+      ],
+      "observed_end_error_ms": 2.6250000000045404,
+      "raw_sha256": "30a0d1433b6ebda4a540e85b5d601e32291b6e8a9f261e89586379fa3d50173b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1232928:end_sample=1518816,asetpts=PTS-STARTPTS,atempo=0.9667500000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.242,
+        36.396
+      ],
+      "target_anchors_seconds": [
+        32.14558503139818,
+        37.47891836473151
+      ],
+      "tempo_factor": 0.9663749999999995,
+      "source_guard_samples": [
+        1480416,
+        1766208
+      ],
+      "output_offset_samples": 1523788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7409375
+      ],
+      "waveform_correlations": [
+        0.9999999714293258,
+        0.9999999794653774
+      ],
+      "observed_end_error_ms": 7.604166666664192,
+      "raw_sha256": "c8b6553eb159b960027f5820438fb63e896f59b198ade4d564051b33553f9c75",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1480416:end_sample=1766208,asetpts=PTS-STARTPTS,atempo=0.9663749999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.396,
+        41.546
+      ],
+      "target_anchors_seconds": [
+        37.47891836473151,
+        42.81225169806484
+      ],
+      "tempo_factor": 0.9656250000000006,
+      "source_guard_samples": [
+        1727808,
+        2013408
+      ],
+      "output_offset_samples": 1779374,
+      "observed_raw_anchors_seconds": [
+        0.408625,
+        5.7426458333333334
+      ],
+      "waveform_correlations": [
+        0.9999999800775561,
+        0.9999999758923529
+      ],
+      "observed_end_error_ms": 0.6875000000050591,
+      "raw_sha256": "776bc55303987b23185b34e9812bca187f215d17078c5150b43a2a6dc0d464aa",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1727808:end_sample=2013408,asetpts=PTS-STARTPTS,atempo=0.9656250000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        41.546,
+        46.698
+      ],
+      "target_anchors_seconds": [
+        42.81225169806484,
+        48.14558503139818
+      ],
+      "tempo_factor": 0.9659999999999997,
+      "source_guard_samples": [
+        1975008,
+        2260704
+      ],
+      "output_offset_samples": 2035300,
+      "observed_raw_anchors_seconds": [
+        0.4101666666666667,
+        5.7333541666666665
+      ],
+      "waveform_correlations": [
+        0.9999999739786186,
+        0.9998985733852225
+      ],
+      "observed_end_error_ms": -10.145833333336185,
+      "raw_sha256": "64e884724bc6c15564fd06030890f9fd7f8f439a4c14b67fbf63eecc3a7f5a3b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1975008:end_sample=2260704,asetpts=PTS-STARTPTS,atempo=0.9659999999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        46.698,
+        51.85
+      ],
+      "target_anchors_seconds": [
+        48.14558503139818,
+        53.47891836473151
+      ],
+      "tempo_factor": 0.9659999999999997,
+      "source_guard_samples": [
+        2222304,
+        2508000
+      ],
+      "output_offset_samples": 2291788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738208333333334
+      ],
+      "waveform_correlations": [
+        0.9999024048490671,
+        0.9999999750288351
+      ],
+      "observed_end_error_ms": 4.87499999999752,
+      "raw_sha256": "387694cbb7065c7487fbdfc76dc6908bf914682d85a3fd7085ec1991e21f6ebb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2222304:end_sample=2508000,asetpts=PTS-STARTPTS,atempo=0.9659999999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        51.85,
+        56.994
+      ],
+      "target_anchors_seconds": [
+        53.47891836473151,
+        58.81225169806484
+      ],
+      "tempo_factor": 0.9645000000000006,
+      "source_guard_samples": [
+        2469600,
+        2754912
+      ],
+      "output_offset_samples": 2547788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733958333333334
+      ],
+      "waveform_correlations": [
+        0.9999677433076376,
+        0.9999999652591602
+      ],
+      "observed_end_error_ms": 0.6250000000047606,
+      "raw_sha256": "658d4e917071e6bd098a1d334c555b43dacd803aa76c05bf32f3f53f0c7f56b3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2469600:end_sample=2754912,asetpts=PTS-STARTPTS,atempo=0.9645000000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        56.994,
+        62.142
+      ],
+      "target_anchors_seconds": [
+        58.81225169806484,
+        64.14558503139818
+      ],
+      "tempo_factor": 0.9652499999999989,
+      "source_guard_samples": [
+        2716512,
+        3002016
+      ],
+      "output_offset_samples": 2803788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7318541666666665
+      ],
+      "waveform_correlations": [
+        0.9999999651948663,
+        0.9999997377727741
+      ],
+      "observed_end_error_ms": -1.47916666667669,
+      "raw_sha256": "398757d3e0bab785ce196d10f1cf65d697c07dc0ae630f1bd2285c4e9d6c61e5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2716512:end_sample=3002016,asetpts=PTS-STARTPTS,atempo=0.9652499999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        62.142,
+        67.284
+      ],
+      "target_anchors_seconds": [
+        64.14558503139818,
+        69.47891836473151
+      ],
+      "tempo_factor": 0.9641250000000015,
+      "source_guard_samples": [
+        2963616,
+        3248832
+      ],
+      "output_offset_samples": 3059788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7348333333333334
+      ],
+      "waveform_correlations": [
+        0.999934877460757,
+        0.9999999798855641
+      ],
+      "observed_end_error_ms": 1.5000000000044977,
+      "raw_sha256": "54e8ea63e6f408e90bafa49217d83927d4988d97bd38a112392d8a1cc51ae6a2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2963616:end_sample=3248832,asetpts=PTS-STARTPTS,atempo=0.9641250000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        67.284,
+        72.416
+      ],
+      "target_anchors_seconds": [
+        69.47891836473151,
+        74.81225169806486
+      ],
+      "tempo_factor": 0.9622499999999966,
+      "source_guard_samples": [
+        3210432,
+        3495168
+      ],
+      "output_offset_samples": 3315788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7364375
+      ],
+      "waveform_correlations": [
+        0.9999647736575715,
+        0.9999999721579473
+      ],
+      "observed_end_error_ms": 3.1041666666569157,
+      "raw_sha256": "f050c0b9853bacc7e1a13e9e2edb6ef5f4f2a1f1d639d629388e61658b3aa742",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3210432:end_sample=3495168,asetpts=PTS-STARTPTS,atempo=0.9622499999999966,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        72.416,
+        77.548
+      ],
+      "target_anchors_seconds": [
+        74.81225169806486,
+        80.14558503139818
+      ],
+      "tempo_factor": 0.9622500000000018,
+      "source_guard_samples": [
+        3456768,
+        3741504
+      ],
+      "output_offset_samples": 3571788,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736020833333333
+      ],
+      "waveform_correlations": [
+        0.99997821739673,
+        0.9976999702666333
+      ],
+      "observed_end_error_ms": 2.6875000000039506,
+      "raw_sha256": "1716be364d103ca751c2b0933e16c662155fb76e90ea23057374ea91c048cd70",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3456768:end_sample=3741504,asetpts=PTS-STARTPTS,atempo=0.9622500000000018,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        77.548,
+        82.676
+      ],
+      "target_anchors_seconds": [
+        80.14558503139818,
+        85.47891836473151
+      ],
+      "tempo_factor": 0.9615000000000009,
+      "source_guard_samples": [
+        3703104,
+        3987648
+      ],
+      "output_offset_samples": 3827421,
+      "observed_raw_anchors_seconds": [
+        0.4076458333333333,
+        5.7385
+      ],
+      "waveform_correlations": [
+        0.9999999785659253,
+        0.9999999759043966
+      ],
+      "observed_end_error_ms": -2.479166666661925,
+      "raw_sha256": "880896ffa3869c23de8e18f54198dbbef522a83332bf1d7f1a7b4ac7f028258d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3703104:end_sample=3987648,asetpts=PTS-STARTPTS,atempo=0.9615000000000009,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        82.676,
+        87.794
+      ],
+      "target_anchors_seconds": [
+        85.47891836473151,
+        90.81225169806486
+      ],
+      "tempo_factor": 0.9596249999999974,
+      "source_guard_samples": [
+        3949248,
+        4233312
+      ],
+      "output_offset_samples": 4083375,
+      "observed_raw_anchors_seconds": [
+        0.40860416666666666,
+        5.741604166666667
+      ],
+      "waveform_correlations": [
+        0.9999999771956242,
+        0.9999999775006195
+      ],
+      "observed_end_error_ms": -0.3333333333426225,
+      "raw_sha256": "abb40fc330de636b9c7f9f4956f60d8ac240b5619c89f927f5ddbf470f09b388",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3949248:end_sample=4233312,asetpts=PTS-STARTPTS,atempo=0.9596249999999974,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        87.794,
+        92.908
+      ],
+      "target_anchors_seconds": [
+        90.81225169806486,
+        96.14558503139818
+      ],
+      "tempo_factor": 0.9588750000000017,
+      "source_guard_samples": [
+        4194912,
+        4478784
+      ],
+      "output_offset_samples": 4339442,
+      "observed_raw_anchors_seconds": [
+        0.40720833333333334,
+        5.7403125
+      ],
+      "waveform_correlations": [
+        0.9999999746085928,
+        0.9999999697012414
+      ],
+      "observed_end_error_ms": -0.2291666666618397,
+      "raw_sha256": "235137e201444c297724e309d6758782fbf87f629843ab27f2f352559d36422f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4194912:end_sample=4478784,asetpts=PTS-STARTPTS,atempo=0.9588750000000017,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        92.908,
+        98.006
+      ],
+      "target_anchors_seconds": [
+        96.14558503139818,
+        101.47891836473151
+      ],
+      "tempo_factor": 0.9558750000000007,
+      "source_guard_samples": [
+        4440384,
+        4723488
+      ],
+      "output_offset_samples": 4595354,
+      "observed_raw_anchors_seconds": [
+        0.4090416666666667,
+        5.745520833333333
+      ],
+      "waveform_correlations": [
+        0.9999999632501431,
+        0.9999999755928339
+      ],
+      "observed_end_error_ms": 3.1458333333374,
+      "raw_sha256": "63494ebdf6e645227303b9afc4b1e28d98504749f2d6b5bf6defe78a63eca4a8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4440384:end_sample=4723488,asetpts=PTS-STARTPTS,atempo=0.9558750000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        98.006,
+        103.118
+      ],
+      "target_anchors_seconds": [
+        101.47891836473151,
+        106.81225169806486
+      ],
+      "tempo_factor": 0.9584999999999974,
+      "source_guard_samples": [
+        4685088,
+        4968864
+      ],
+      "output_offset_samples": 4851376,
+      "observed_raw_anchors_seconds": [
+        0.40858333333333335,
+        5.737770833333333
+      ],
+      "waveform_correlations": [
+        0.9999999722655336,
+        0.9999999792461894
+      ],
+      "observed_end_error_ms": -4.145833333343063,
+      "raw_sha256": "aa97602c7cf0f93dfccd7ee369b53c0b854a1ead2b275468d05ff2e86d2602ab",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4685088:end_sample=4968864,asetpts=PTS-STARTPTS,atempo=0.9584999999999974,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        103.118,
+        108.214
+      ],
+      "target_anchors_seconds": [
+        106.81225169806486,
+        112.14558503139818
+      ],
+      "tempo_factor": 0.9555000000000016,
+      "source_guard_samples": [
+        4930464,
+        5213472
+      ],
+      "output_offset_samples": 5107464,
+      "observed_raw_anchors_seconds": [
+        0.40675,
+        5.749083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999819886608,
+        0.9999999906012116
+      ],
+      "observed_end_error_ms": 9.000000000004782,
+      "raw_sha256": "32982a9ae479f416ec6053a4fc1976da4bff1bf5a9794b003600519d368f27e2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4930464:end_sample=5213472,asetpts=PTS-STARTPTS,atempo=0.9555000000000016,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        108.214,
+        113.318
+      ],
+      "target_anchors_seconds": [
+        112.14558503139818,
+        117.47891836473151
+      ],
+      "tempo_factor": 0.9570000000000007,
+      "source_guard_samples": [
+        5175072,
+        5458464
+      ],
+      "output_offset_samples": 5363207,
+      "observed_raw_anchors_seconds": [
+        0.41210416666666666,
+        5.7404375
+      ],
+      "waveform_correlations": [
+        0.9999999800004178,
+        0.9999999800338114
+      ],
+      "observed_end_error_ms": -4.9999999999954525,
+      "raw_sha256": "04fd9f8d9588db76c537497858f0b081e8f66a34a8ecf63b4e062ede7a067420",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5175072:end_sample=5458464,asetpts=PTS-STARTPTS,atempo=0.9570000000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        113.318,
+        118.414
+      ],
+      "target_anchors_seconds": [
+        117.47891836473151,
+        122.81225169806486
+      ],
+      "tempo_factor": 0.955499999999999,
+      "source_guard_samples": [
+        5420064,
+        5703072
+      ],
+      "output_offset_samples": 5619347,
+      "observed_raw_anchors_seconds": [
+        0.4091875,
+        5.740104166666667
+      ],
+      "waveform_correlations": [
+        0.9999999859182231,
+        0.9999999762101859
+      ],
+      "observed_end_error_ms": -2.4166666666758374,
+      "raw_sha256": "1520f6c915f5ddd4860a907c368c281b806c702f81186d75d7464bd1b4d024a5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5420064:end_sample=5703072,asetpts=PTS-STARTPTS,atempo=0.9554999999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        118.414,
+        123.498
+      ],
+      "target_anchors_seconds": [
+        122.81225169806486,
+        128.14558503139818
+      ],
+      "tempo_factor": 0.9532500000000015,
+      "source_guard_samples": [
+        5664672,
+        5947104
+      ],
+      "output_offset_samples": 5875424,
+      "observed_raw_anchors_seconds": [
+        0.40758333333333335,
+        5.739791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999789995541,
+        0.9999999783458463
+      ],
+      "observed_end_error_ms": -1.1249999999947136,
+      "raw_sha256": "af294967057acabf9ad2ac022c7eb16df708158ad1ce817514f6c094464438e1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5664672:end_sample=5947104,asetpts=PTS-STARTPTS,atempo=0.9532500000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        123.498,
+        128.58
+      ],
+      "target_anchors_seconds": [
+        128.14558503139818,
+        133.47891836473153
+      ],
+      "tempo_factor": 0.9528749999999998,
+      "source_guard_samples": [
+        5908704,
+        6191040
+      ],
+      "output_offset_samples": 6131376,
+      "observed_raw_anchors_seconds": [
+        0.40858333333333335,
+        5.7361458333333335
+      ],
+      "waveform_correlations": [
+        0.9999999775414031,
+        0.9975006434944762
+      ],
+      "observed_end_error_ms": -5.7708333333428286,
+      "raw_sha256": "f890299550c1b707ef56daf6e90333c6a1f40ec0294c1e79d81c82731a2da5e6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5908704:end_sample=6191040,asetpts=PTS-STARTPTS,atempo=0.9528749999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        128.58,
+        133.664
+      ],
+      "target_anchors_seconds": [
+        133.47891836473153,
+        138.81225169806484
+      ],
+      "tempo_factor": 0.9532499999999987,
+      "source_guard_samples": [
+        6152640,
+        6435072
+      ],
+      "output_offset_samples": 6387514,
+      "observed_raw_anchors_seconds": [
+        0.40570833333333334,
+        5.738041666666667
+      ],
+      "waveform_correlations": [
+        0.9999999756520032,
+        0.9999999735252947
+      ],
+      "observed_end_error_ms": -0.999999999980794,
+      "raw_sha256": "ca4ddc2c0b29d479a55fe198ac8b04c42e3ad2898d77d94a8473d26972a6555d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6152640:end_sample=6435072,asetpts=PTS-STARTPTS,atempo=0.9532499999999987,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        133.664,
+        138.744
+      ],
+      "target_anchors_seconds": [
+        138.81225169806484,
+        144.14558503139818
+      ],
+      "tempo_factor": 0.9525000000000007,
+      "source_guard_samples": [
+        6396672,
+        6678912
+      ],
+      "output_offset_samples": 6643056,
+      "observed_raw_anchors_seconds": [
+        0.41525,
+        5.742520833333334
+      ],
+      "waveform_correlations": [
+        0.9999999906806877,
+        0.9999999792781424
+      ],
+      "observed_end_error_ms": -6.062500000009408,
+      "raw_sha256": "3242928391c7a57924a15717272f019ea77e65170e45348589e8493c5619e22c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6396672:end_sample=6678912,asetpts=PTS-STARTPTS,atempo=0.9525000000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        138.744,
+        143.826
+      ],
+      "target_anchors_seconds": [
+        144.14558503139818,
+        149.47891836473153
+      ],
+      "tempo_factor": 0.9528749999999971,
+      "source_guard_samples": [
+        6640512,
+        6922848
+      ],
+      "output_offset_samples": 6899178,
+      "observed_raw_anchors_seconds": [
+        0.41270833333333334,
+        5.7395625
+      ],
+      "waveform_correlations": [
+        0.9999999764739074,
+        0.9999999707773376
+      ],
+      "observed_end_error_ms": -6.4791666666765835,
+      "raw_sha256": "0b3ce5fcadddd636cb5b434ade168eaa599fb321c0d81b08b93c296a928627e3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6640512:end_sample=6922848,asetpts=PTS-STARTPTS,atempo=0.9528749999999971,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        143.826,
+        148.912
+      ],
+      "target_anchors_seconds": [
+        149.47891836473153,
+        154.81225169806484
+      ],
+      "tempo_factor": 0.9536250000000058,
+      "source_guard_samples": [
+        6884448,
+        7166976
+      ],
+      "output_offset_samples": 7155300,
+      "observed_raw_anchors_seconds": [
+        0.4101666666666667,
+        5.7406041666666665
+      ],
+      "waveform_correlations": [
+        0.9999999800305697,
+        0.999999981378228
+      ],
+      "observed_end_error_ms": -2.89583333331489,
+      "raw_sha256": "215a62e0cd5241f42f3b0d31d4f2ac9027a48a4beacb6409652ef95c4920d9d7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6884448:end_sample=7166976,asetpts=PTS-STARTPTS,atempo=0.9536250000000058,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        148.912,
+        153.988
+      ],
+      "target_anchors_seconds": [
+        154.81225169806484,
+        160.14558503139818
+      ],
+      "tempo_factor": 0.9517499999999971,
+      "source_guard_samples": [
+        7128576,
+        7410624
+      ],
+      "output_offset_samples": 7411400,
+      "observed_raw_anchors_seconds": [
+        0.40808333333333335,
+        5.740875
+      ],
+      "waveform_correlations": [
+        0.999999984737834,
+        0.9999999855376208
+      ],
+      "observed_end_error_ms": -0.5416666666757664,
+      "raw_sha256": "864ec2693ed0ad9b50c673e9d8fd56922bd1be214baa4909d2bfd45c6562bfeb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7128576:end_sample=7410624,asetpts=PTS-STARTPTS,atempo=0.9517499999999971,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        486
+      ],
+      "source_anchors_seconds": [
+        153.988,
+        155.898
+      ],
+      "target_anchors_seconds": [
+        160.14558503139818,
+        162.14558503139818
+      ],
+      "tempo_factor": 0.9549999999999983,
+      "source_guard_samples": [
+        7372224,
+        7524480
+      ],
+      "output_offset_samples": 7667377,
+      "observed_raw_anchors_seconds": [
+        0.4085625,
+        2.4101458333333334
+      ],
+      "waveform_correlations": [
+        0.9999999846642421,
+        0.9999947610805936
+      ],
+      "observed_end_error_ms": 1.583333333333492,
+      "raw_sha256": "b8c99564bd2d0d1f44aee857e0b00f935fc2e6470dab35264e0f405cbd0894e7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/15__드럼 위로__Powerful__Guitar Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7372224:end_sample=7524480,asetpts=PTS-STARTPTS,atempo=0.9549999999999983,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-15/block-030.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

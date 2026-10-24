@@ -1,0 +1,1788 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 16,
+  "title": "비가 갠 뒤",
+  "candidate_id": "c22376ee-9378-4243-ba77-541d09b4e772",
+  "source_path": "SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+  "source_sha256": "77045f4b27f082de96eaaceb5425ea36bba14ad980dc0aa4e37779ce8f178b64",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/16.json",
+  "analysis_sha256": "445a7e171154acbe0b35dfe8b4fd5a9f1bdb3cb6140a9784b9abf103b6769348",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/16__비가 갠 뒤__180.wav",
+  "output_sha256": "b94760fe5c89d895e3351d77b62bd8d7b0cdca131283d2c135a273825588baa7",
+  "source_duration_seconds": 146.8,
+  "output_duration_seconds": 151.475,
+  "output_peak_linear": 0.596038818359375,
+  "first_grid_beat_output_seconds": 0.14436395984241962,
+  "grid_beat_count": 455,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 212.42816621148637,
+        "mid": 181.641268877866,
+        "high": 179.33646393028883
+      },
+      "band_strength": {
+        "low": 0.5179458465492761,
+        "mid": 0.5945000482415727,
+        "high": 0.7126900516703236
+      },
+      "median_bpm": 181.641268877866,
+      "band_spread_bpm": 33.09170228119754
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 211.8835165050793,
+        "mid": 180.38664841969324,
+        "high": 179.94661393672902
+      },
+      "band_strength": {
+        "low": 0.5388181367286051,
+        "mid": 0.6258153676379724,
+        "high": 0.7857117601076514
+      },
+      "median_bpm": 180.38664841969324,
+      "band_spread_bpm": 31.93690256835029
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 194.6854183845763,
+        "mid": 180.07378834283512,
+        "high": 179.89238566849454
+      },
+      "band_strength": {
+        "low": 0.5955543221374231,
+        "mid": 0.6985737155038066,
+        "high": 0.8585097708336195
+      },
+      "median_bpm": 180.07378834283512,
+      "band_spread_bpm": 14.793032716081768
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 217.71220400011376,
+        "mid": 180.03562411077635,
+        "high": 179.91390810752466
+      },
+      "band_strength": {
+        "low": 0.6025622615897999,
+        "mid": 0.6838862672239844,
+        "high": 0.8605385390886642
+      },
+      "median_bpm": 180.03562411077635,
+      "band_spread_bpm": 37.798295892589096
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 217.61368194762287,
+        "mid": 179.84234264310186,
+        "high": 179.90464084534267
+      },
+      "band_strength": {
+        "low": 0.6207669165660429,
+        "mid": 0.691076616801541,
+        "high": 0.8746327225396546
+      },
+      "median_bpm": 179.90464084534267,
+      "band_spread_bpm": 37.77133930452101
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 197.01497909607545,
+        "mid": 179.6785927835274,
+        "high": 179.77022603272647
+      },
+      "band_strength": {
+        "low": 0.6375195537079213,
+        "mid": 0.660456076223568,
+        "high": 0.7954357994077583
+      },
+      "median_bpm": 179.77022603272647,
+      "band_spread_bpm": 17.336386312548058
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 197.45511333307138,
+        "mid": 179.81621244353025,
+        "high": 179.85774134684613
+      },
+      "band_strength": {
+        "low": 0.6413328591322343,
+        "mid": 0.7098889522501507,
+        "high": 0.8163515361076087
+      },
+      "median_bpm": 179.85774134684613,
+      "band_spread_bpm": 17.638900889541134
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 207.75172315584007,
+        "mid": 179.81165545683638,
+        "high": 179.8650243881987
+      },
+      "band_strength": {
+        "low": 0.6335855446618646,
+        "mid": 0.6798717953489132,
+        "high": 0.8960164239442884
+      },
+      "median_bpm": 179.8650243881987,
+      "band_spread_bpm": 27.94006769900369
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 202.8338181223009,
+        "mid": 179.71990320136626,
+        "high": 179.9059380383608
+      },
+      "band_strength": {
+        "low": 0.6433256871453678,
+        "mid": 0.6800802275890637,
+        "high": 0.9031336540080405
+      },
+      "median_bpm": 179.9059380383608,
+      "band_spread_bpm": 23.113914920934633
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.89271763798845,
+        "mid": 179.6804951358869,
+        "high": 179.97557511597765
+      },
+      "band_strength": {
+        "low": 0.6588436540186541,
+        "mid": 0.641447609262006,
+        "high": 0.8565546892622486
+      },
+      "median_bpm": 179.89271763798845,
+      "band_spread_bpm": 0.29507998009074754
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 179.61598980712938,
+        "mid": 179.62653672731804,
+        "high": 180.1096762350134
+      },
+      "band_strength": {
+        "low": 0.642175620046128,
+        "mid": 0.6089409719769443,
+        "high": 0.8370035744325135
+      },
+      "median_bpm": 179.62653672731804,
+      "band_spread_bpm": 0.49368642788402894
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.66734833129797,
+        "mid": 179.60567129444647,
+        "high": 180.1589149925738
+      },
+      "band_strength": {
+        "low": 0.6581313824977997,
+        "mid": 0.6213235373644423,
+        "high": 0.8493250336019313
+      },
+      "median_bpm": 179.66734833129797,
+      "band_spread_bpm": 0.5532436981273463
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.25447405098205,
+        "mid": 179.94958662201256,
+        "high": 180.1664973969623
+      },
+      "band_strength": {
+        "low": 0.6677206677684409,
+        "mid": 0.5863514377397775,
+        "high": 0.8366651919598469
+      },
+      "median_bpm": 180.1664973969623,
+      "band_spread_bpm": 0.3048874289694936
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 180.5167744872746,
+        "mid": 180.37820295071504,
+        "high": 179.9087345032834
+      },
+      "band_strength": {
+        "low": 0.6446540120865469,
+        "mid": 0.6232356878099934,
+        "high": 0.8853433947931597
+      },
+      "median_bpm": 180.37820295071504,
+      "band_spread_bpm": 0.6080399839912047
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.8409507295496,
+        "mid": 180.1905976676634,
+        "high": 179.8347363779813
+      },
+      "band_strength": {
+        "low": 0.6520854579712945,
+        "mid": 0.6579836013251528,
+        "high": 0.8946846108300234
+      },
+      "median_bpm": 180.1905976676634,
+      "band_spread_bpm": 1.0062143515683033
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 180.68008988651397,
+        "mid": 179.91552690323653,
+        "high": 179.87310638266112
+      },
+      "band_strength": {
+        "low": 0.644247031545856,
+        "mid": 0.6786133747140747,
+        "high": 0.8933976497546077
+      },
+      "median_bpm": 179.91552690323653,
+      "band_spread_bpm": 0.8069835038528481
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.8153548107516,
+        "mid": 179.96293760166293,
+        "high": 179.94441533122693
+      },
+      "band_strength": {
+        "low": 0.6432029567003745,
+        "mid": 0.7322208415959028,
+        "high": 0.8981565354763342
+      },
+      "median_bpm": 179.94441533122693,
+      "band_spread_bpm": 0.1475827909113434
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.7717143722486,
+        "mid": 179.94675481144463,
+        "high": 180.09122009509073
+      },
+      "band_strength": {
+        "low": 0.6311587210601899,
+        "mid": 0.7422724564083446,
+        "high": 0.8832816259328515
+      },
+      "median_bpm": 179.94675481144463,
+      "band_spread_bpm": 0.31950572284213763
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.47195364948973,
+        "mid": 179.82075139062943,
+        "high": 179.96443494845627
+      },
+      "band_strength": {
+        "low": 0.6221355694087473,
+        "mid": 0.6874477687175076,
+        "high": 0.8570127676118697
+      },
+      "median_bpm": 179.82075139062943,
+      "band_spread_bpm": 0.49248129896653836
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 178.31265766553543,
+        "mid": 179.84104413472042,
+        "high": 179.98537187970186
+      },
+      "band_strength": {
+        "low": 0.6333331910690583,
+        "mid": 0.6202092589440866,
+        "high": 0.8040197022396586
+      },
+      "median_bpm": 179.84104413472042,
+      "band_spread_bpm": 1.672714214166433
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 176.79269368492237,
+        "mid": 179.63550792978214,
+        "high": 179.91360662962504
+      },
+      "band_strength": {
+        "low": 0.6485253045167099,
+        "mid": 0.7427904597665136,
+        "high": 0.9313051227425857
+      },
+      "median_bpm": 179.63550792978214,
+      "band_spread_bpm": 3.120912944702667
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 175.92708373913214,
+        "mid": 179.71053437515042,
+        "high": 179.97843223819547
+      },
+      "band_strength": {
+        "low": 0.6381281674052051,
+        "mid": 0.8069290140790998,
+        "high": 0.9542443927824998
+      },
+      "median_bpm": 179.71053437515042,
+      "band_spread_bpm": 4.051348499063323
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 175.61313684734702,
+        "mid": 179.75393934769437,
+        "high": 180.01668223995426
+      },
+      "band_strength": {
+        "low": 0.6551432120847779,
+        "mid": 0.8416854967435043,
+        "high": 0.9306569733387188
+      },
+      "median_bpm": 179.75393934769437,
+      "band_spread_bpm": 4.403545392607242
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 175.28487102107658,
+        "mid": 179.84550210308691,
+        "high": 179.87201247640817
+      },
+      "band_strength": {
+        "low": 0.6685684784809713,
+        "mid": 0.867316189940866,
+        "high": 0.9793597765434141
+      },
+      "median_bpm": 179.84550210308691,
+      "band_spread_bpm": 4.58714145533159
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 175.35901215156508,
+        "mid": 180.19333923920348,
+        "high": 180.018279550164
+      },
+      "band_strength": {
+        "low": 0.7136776770974107,
+        "mid": 0.8961411646795552,
+        "high": 0.883881226844785
+      },
+      "median_bpm": 180.018279550164,
+      "band_spread_bpm": 4.8343270876384
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 174.75115045263792,
+        "mid": 180.1644255252079,
+        "high": 179.90469815488848
+      },
+      "band_strength": {
+        "low": 0.6866466636735343,
+        "mid": 0.8249563239507726,
+        "high": 0.8350715013621816
+      },
+      "median_bpm": 179.90469815488848,
+      "band_spread_bpm": 5.413275072569974
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 180.1018041527338,
+        "mid": 180.19643068564184,
+        "high": 180.0433485711526
+      },
+      "band_strength": {
+        "low": 0.6839636841757697,
+        "mid": 0.787793599144713,
+        "high": 0.8475486043690489
+      },
+      "median_bpm": 180.1018041527338,
+      "band_spread_bpm": 0.15308211448925135
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 179.86024144561384,
+        "mid": 180.10346212722396,
+        "high": 179.99292590101516
+      },
+      "band_strength": {
+        "low": 0.6892197708714101,
+        "mid": 0.7463481144165504,
+        "high": 0.8191151680901101
+      },
+      "median_bpm": 179.99292590101516,
+      "band_spread_bpm": 0.24322068161012567
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.64665207031268,
+    179.90531809662463,
+    180.38369250555087
+  ],
+  "leading_alignment_padding_samples": 799,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.142,
+        5.388
+      ],
+      "target_anchors_seconds": [
+        0.14436395984241962,
+        5.477697293175753
+      ],
+      "tempo_factor": 0.983625,
+      "source_guard_samples": [
+        0,
+        277824
+      ],
+      "output_offset_samples": 799,
+      "observed_raw_anchors_seconds": [
+        0.12770833333333334,
+        5.467270833333333
+      ],
+      "waveform_correlations": [
+        0.9999892617142684,
+        0.9999999761264959
+      ],
+      "observed_end_error_ms": 6.229166666666508,
+      "raw_sha256": "de0460af488f03be52ba5e2fba94ffc737faf7c6875b4e72937810016ef57037",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=277824,asetpts=PTS-STARTPTS,atempo=0.9836250000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.388,
+        10.63
+      ],
+      "target_anchors_seconds": [
+        5.477697293175753,
+        10.811030626509085
+      ],
+      "tempo_factor": 0.9828750000000004,
+      "source_guard_samples": [
+        239424,
+        529440
+      ],
+      "output_offset_samples": 243729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729541666666667
+      ],
+      "waveform_correlations": [
+        0.9999999608478685,
+        0.9999999813124674
+      ],
+      "observed_end_error_ms": -3.7916666666655274,
+      "raw_sha256": "63b0575c27934d7a2ce23dbf86f24914ca38ee964d12f8ae0e01800dd5bfe6d8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=239424:end_sample=529440,asetpts=PTS-STARTPTS,atempo=0.9828750000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.63,
+        15.84
+      ],
+      "target_anchors_seconds": [
+        10.811030626509085,
+        16.14436395984242
+      ],
+      "tempo_factor": 0.9768749999999997,
+      "source_guard_samples": [
+        491040,
+        779520
+      ],
+      "output_offset_samples": 499729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728020833333333
+      ],
+      "waveform_correlations": [
+        0.999999959536537,
+        0.9999999861174237
+      ],
+      "observed_end_error_ms": -5.312500000001386,
+      "raw_sha256": "594e625ec30c755f727808f28fb806ab2e4ba28d048039e6df4acf66c49ca1b9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=491040:end_sample=779520,asetpts=PTS-STARTPTS,atempo=0.9768749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.84,
+        21.05
+      ],
+      "target_anchors_seconds": [
+        16.14436395984242,
+        21.47769729317575
+      ],
+      "tempo_factor": 0.9768750000000004,
+      "source_guard_samples": [
+        741120,
+        1029600
+      ],
+      "output_offset_samples": 755729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736166666666667
+      ],
+      "waveform_correlations": [
+        0.9999999658452806,
+        0.9999999783544924
+      ],
+      "observed_end_error_ms": 2.8333333333341315,
+      "raw_sha256": "682650c2fdd2cd9c6503183c28e3f624de847f95e9b221f919cbce825a8c84e9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=741120:end_sample=1029600,asetpts=PTS-STARTPTS,atempo=0.9768750000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.05,
+        26.252
+      ],
+      "target_anchors_seconds": [
+        21.47769729317575,
+        26.811030626509087
+      ],
+      "tempo_factor": 0.9753749999999992,
+      "source_guard_samples": [
+        991200,
+        1279296
+      ],
+      "output_offset_samples": 1011729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729479166666667
+      ],
+      "waveform_correlations": [
+        0.9999999691925405,
+        0.9999999804725559
+      ],
+      "observed_end_error_ms": -3.8541666666693786,
+      "raw_sha256": "fab1758aace66b0fea4e42c8c52358c1370444dea0211336f35759139a61cee1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=991200:end_sample=1279296,asetpts=PTS-STARTPTS,atempo=0.9753749999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.252,
+        31.452
+      ],
+      "target_anchors_seconds": [
+        26.811030626509087,
+        32.14436395984242
+      ],
+      "tempo_factor": 0.9750000000000001,
+      "source_guard_samples": [
+        1240896,
+        1528896
+      ],
+      "output_offset_samples": 1267729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7368958333333335
+      ],
+      "waveform_correlations": [
+        0.9999999708161392,
+        0.9999999757265039
+      ],
+      "observed_end_error_ms": 3.5624999999974705,
+      "raw_sha256": "4d1f6ab6e38830af7d6280ec41cff1ca8c3b754f5cfcae98d71e0bb1b63bb709",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=1240896:end_sample=1528896,asetpts=PTS-STARTPTS,atempo=0.9750000000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.452,
+        36.644
+      ],
+      "target_anchors_seconds": [
+        32.14436395984242,
+        37.47769729317576
+      ],
+      "tempo_factor": 0.9734999999999989,
+      "source_guard_samples": [
+        1490496,
+        1778112
+      ],
+      "output_offset_samples": 1523714,
+      "observed_raw_anchors_seconds": [
+        0.4003125,
+        5.7324166666666665
+      ],
+      "waveform_correlations": [
+        0.9999999634070245,
+        0.9999999669214993
+      ],
+      "observed_end_error_ms": -1.229166666669279,
+      "raw_sha256": "55d11824d7cae9c98e820acfcb5c28302eeb331856ba9748eb9e16f47f1f987d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=1490496:end_sample=1778112,asetpts=PTS-STARTPTS,atempo=0.9734999999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.644,
+        41.834
+      ],
+      "target_anchors_seconds": [
+        37.47769729317576,
+        42.81103062650909
+      ],
+      "tempo_factor": 0.9731250000000018,
+      "source_guard_samples": [
+        1739712,
+        2027232
+      ],
+      "output_offset_samples": 1779729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732895833333333
+      ],
+      "waveform_correlations": [
+        0.9999999630680846,
+        0.9999999601623928
+      ],
+      "observed_end_error_ms": -0.43749999999587175,
+      "raw_sha256": "8e3697eefce553314652db913da8fd3b940e080167603cc2a40134268e2f9e71",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=1739712:end_sample=2027232,asetpts=PTS-STARTPTS,atempo=0.9731250000000018,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        41.834,
+        47.022
+      ],
+      "target_anchors_seconds": [
+        42.81103062650909,
+        48.14436395984242
+      ],
+      "tempo_factor": 0.9727499999999987,
+      "source_guard_samples": [
+        1988832,
+        2276256
+      ],
+      "output_offset_samples": 2035729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735479166666667
+      ],
+      "waveform_correlations": [
+        0.9999999607172243,
+        0.9999999676680933
+      ],
+      "observed_end_error_ms": 2.145833333330849,
+      "raw_sha256": "9dd2d765c7e676315ad9f3ef0f90d29f8b5f8d25040e88ec07bf94f87c136fcc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=1988832:end_sample=2276256,asetpts=PTS-STARTPTS,atempo=0.9727499999999987,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        47.022,
+        52.212
+      ],
+      "target_anchors_seconds": [
+        48.14436395984242,
+        53.47769729317576
+      ],
+      "tempo_factor": 0.9731250000000005,
+      "source_guard_samples": [
+        2237856,
+        2525376
+      ],
+      "output_offset_samples": 2291729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727479166666667
+      ],
+      "waveform_correlations": [
+        0.9999999628789755,
+        0.999999988887405
+      ],
+      "observed_end_error_ms": -5.854166666669158,
+      "raw_sha256": "991358707c053da955ed570ee071697bf4e332b6ddc092311cf90b072a2ed422",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=2237856:end_sample=2525376,asetpts=PTS-STARTPTS,atempo=0.9731250000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        52.212,
+        57.388
+      ],
+      "target_anchors_seconds": [
+        53.47769729317576,
+        58.81103062650909
+      ],
+      "tempo_factor": 0.9704999999999999,
+      "source_guard_samples": [
+        2486976,
+        2773824
+      ],
+      "output_offset_samples": 2547729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732854166666667
+      ],
+      "waveform_correlations": [
+        0.9999999702338527,
+        0.9999999730359914
+      ],
+      "observed_end_error_ms": -0.47916666666214525,
+      "raw_sha256": "42fb7ae0f28a449e100f69c5db24892ac895cbff0372d5afa2d17d37df164615",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=2486976:end_sample=2773824,asetpts=PTS-STARTPTS,atempo=0.9704999999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.388,
+        62.562
+      ],
+      "target_anchors_seconds": [
+        58.81103062650909,
+        64.14436395984242
+      ],
+      "tempo_factor": 0.9701249999999995,
+      "source_guard_samples": [
+        2735424,
+        3022176
+      ],
+      "output_offset_samples": 2803729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999729014771,
+        0.9999999675321247
+      ],
+      "observed_end_error_ms": 3.895833333330323,
+      "raw_sha256": "3ddbdcd51038b464e5678047ebe53ee9e6cf461c8316a8ffd847d5c46270273e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=2735424:end_sample=3022176,asetpts=PTS-STARTPTS,atempo=0.9701249999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        62.562,
+        67.728
+      ],
+      "target_anchors_seconds": [
+        64.14436395984242,
+        69.47769729317575
+      ],
+      "tempo_factor": 0.9686250000000003,
+      "source_guard_samples": [
+        2983776,
+        3270144
+      ],
+      "output_offset_samples": 3059729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999652618986,
+        0.999999986525798
+      ],
+      "observed_end_error_ms": -4.541666666662003,
+      "raw_sha256": "7285a24e1b1dab27deb2033f170a7d39f6f21c9627e28c0cc32893f5cd12b9bd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=2983776:end_sample=3270144,asetpts=PTS-STARTPTS,atempo=0.9686250000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        67.728,
+        72.888
+      ],
+      "target_anchors_seconds": [
+        69.47769729317575,
+        74.8110306265091
+      ],
+      "tempo_factor": 0.9675000000000004,
+      "source_guard_samples": [
+        3231744,
+        3517824
+      ],
+      "output_offset_samples": 3315729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736979166666667
+      ],
+      "waveform_correlations": [
+        0.999999961046097,
+        0.9999999785631821
+      ],
+      "observed_end_error_ms": 3.6458333333238,
+      "raw_sha256": "8c734379a4d55b88ad6560e731aa108f3334a55df61d74853671ea7aa5a060a7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=3231744:end_sample=3517824,asetpts=PTS-STARTPTS,atempo=0.9675000000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        72.888,
+        78.05
+      ],
+      "target_anchors_seconds": [
+        74.8110306265091,
+        80.14436395984242
+      ],
+      "tempo_factor": 0.9678749999999994,
+      "source_guard_samples": [
+        3479424,
+        3765600
+      ],
+      "output_offset_samples": 3571729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734625
+      ],
+      "waveform_correlations": [
+        0.9999999554170477,
+        0.9999999672803704
+      ],
+      "observed_end_error_ms": 1.2916666666713539,
+      "raw_sha256": "ce5c64713e92fc58e14898bc4e4dece094cdff210d2f5aabe768cf31960d0107",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=3479424:end_sample=3765600,asetpts=PTS-STARTPTS,atempo=0.9678749999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        78.05,
+        83.196
+      ],
+      "target_anchors_seconds": [
+        80.14436395984242,
+        85.47769729317575
+      ],
+      "tempo_factor": 0.964875000000001,
+      "source_guard_samples": [
+        3727200,
+        4012608
+      ],
+      "output_offset_samples": 3827729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737791666666666
+      ],
+      "waveform_correlations": [
+        0.9999999672935409,
+        0.9999999726413967
+      ],
+      "observed_end_error_ms": 4.45833333333745,
+      "raw_sha256": "0c4db1f9078cbe5d193098a611ab8d1866fad199a7d46363d3b5b82d904181e3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=3727200:end_sample=4012608,asetpts=PTS-STARTPTS,atempo=0.9648750000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        83.196,
+        88.338
+      ],
+      "target_anchors_seconds": [
+        85.47769729317575,
+        90.8110306265091
+      ],
+      "tempo_factor": 0.9641249999999976,
+      "source_guard_samples": [
+        3974208,
+        4259424
+      ],
+      "output_offset_samples": 4083363,
+      "observed_raw_anchors_seconds": [
+        0.407625,
+        5.734125
+      ],
+      "waveform_correlations": [
+        0.9999999795794572,
+        0.9999999702109473
+      ],
+      "observed_end_error_ms": -6.833333333343461,
+      "raw_sha256": "6e874b58452c3a0e78b81c4bf1be2773466d8d76a57fba3154e253cfa12ed152",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=3974208:end_sample=4259424,asetpts=PTS-STARTPTS,atempo=0.9641249999999976,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        88.338,
+        93.48
+      ],
+      "target_anchors_seconds": [
+        90.8110306265091,
+        96.14436395984242
+      ],
+      "tempo_factor": 0.9641250000000028,
+      "source_guard_samples": [
+        4221024,
+        4506240
+      ],
+      "output_offset_samples": 4339729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738625
+      ],
+      "waveform_correlations": [
+        0.9999999693156573,
+        0.9999999751171726
+      ],
+      "observed_end_error_ms": 5.291666666670913,
+      "raw_sha256": "9075b70ca23b4627ae83682103e5781b09f3b34a71ed8ddebc3548e55a71b508",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=4221024:end_sample=4506240,asetpts=PTS-STARTPTS,atempo=0.9641250000000028,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        93.48,
+        98.624
+      ],
+      "target_anchors_seconds": [
+        96.14436395984242,
+        101.47769729317575
+      ],
+      "tempo_factor": 0.9644999999999992,
+      "source_guard_samples": [
+        4467840,
+        4753152
+      ],
+      "output_offset_samples": 4595729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.741270833333333
+      ],
+      "waveform_correlations": [
+        0.9999999622818824,
+        0.999999972386149
+      ],
+      "observed_end_error_ms": 7.93750000000415,
+      "raw_sha256": "896af6268ebaf7c977c1c9515782e2fe004a0808fac45cef687d92793b3546c9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=4467840:end_sample=4753152,asetpts=PTS-STARTPTS,atempo=0.9644999999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        98.624,
+        103.772
+      ],
+      "target_anchors_seconds": [
+        101.47769729317575,
+        106.8110306265091
+      ],
+      "tempo_factor": 0.9652500000000003,
+      "source_guard_samples": [
+        4714752,
+        5000256
+      ],
+      "output_offset_samples": 4851240,
+      "observed_raw_anchors_seconds": [
+        0.4101875,
+        5.731770833333333
+      ],
+      "waveform_correlations": [
+        0.9999999649712056,
+        0.9999999635392628
+      ],
+      "observed_end_error_ms": -11.75000000000992,
+      "raw_sha256": "bae4f9f13ac2ee721f47a8d18706977cc0c2c195d14be7f7d41514b1b8ba0c22",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=4714752:end_sample=5000256,asetpts=PTS-STARTPTS,atempo=0.9652500000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        103.772,
+        108.874
+      ],
+      "target_anchors_seconds": [
+        106.8110306265091,
+        112.14436395984242
+      ],
+      "tempo_factor": 0.956624999999999,
+      "source_guard_samples": [
+        4961856,
+        5245152
+      ],
+      "output_offset_samples": 5107666,
+      "observed_raw_anchors_seconds": [
+        0.4013125,
+        5.7426458333333334
+      ],
+      "waveform_correlations": [
+        0.999999966876835,
+        0.9999999745002337
+      ],
+      "observed_end_error_ms": 8.000000000004448,
+      "raw_sha256": "0b9fac369a36a1d5a196b1addd9cbefdf7205fd23b19bf9b4e9ad190ca9435ad",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=4961856:end_sample=5245152,asetpts=PTS-STARTPTS,atempo=0.9566249999999989,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        108.874,
+        113.984
+      ],
+      "target_anchors_seconds": [
+        112.14436395984242,
+        117.47769729317575
+      ],
+      "tempo_factor": 0.9581250000000008,
+      "source_guard_samples": [
+        5206752,
+        5490432
+      ],
+      "output_offset_samples": 5363729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734583333333333
+      ],
+      "waveform_correlations": [
+        0.9999413368906089,
+        0.9996950582416116
+      ],
+      "observed_end_error_ms": 1.2500000000041922,
+      "raw_sha256": "8576a7278b37533dc0bd66bc1a583c682d12defa12fc55aaad1cd4cef924c5d7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=5206752:end_sample=5490432,asetpts=PTS-STARTPTS,atempo=0.9581250000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        113.984,
+        119.122
+      ],
+      "target_anchors_seconds": [
+        117.47769729317575,
+        122.8110306265091
+      ],
+      "tempo_factor": 0.9633749999999993,
+      "source_guard_samples": [
+        5452032,
+        5737056
+      ],
+      "output_offset_samples": 5619729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.740916666666666
+      ],
+      "waveform_correlations": [
+        0.9999999608905463,
+        0.9999999742314585
+      ],
+      "observed_end_error_ms": 7.583333333323061,
+      "raw_sha256": "fb6b76ef12c16a6b1c669861a620c73a1e9c180f84c27e06d2e104a987ea7b62",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=5452032:end_sample=5737056,asetpts=PTS-STARTPTS,atempo=0.9633749999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        119.122,
+        124.3
+      ],
+      "target_anchors_seconds": [
+        122.8110306265091,
+        128.14436395984242
+      ],
+      "tempo_factor": 0.9708750000000004,
+      "source_guard_samples": [
+        5698656,
+        5985600
+      ],
+      "output_offset_samples": 5875363,
+      "observed_raw_anchors_seconds": [
+        0.407625,
+        5.731520833333334
+      ],
+      "waveform_correlations": [
+        0.9999999742612196,
+        0.9999999666817645
+      ],
+      "observed_end_error_ms": -9.437499999995325,
+      "raw_sha256": "3dd5335dcc807541c063fb53b2190f06ce739735940724a78068e5f2bdcfdcd4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=5698656:end_sample=5985600,asetpts=PTS-STARTPTS,atempo=0.9708750000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        124.3,
+        129.448
+      ],
+      "target_anchors_seconds": [
+        128.14436395984242,
+        133.47769729317577
+      ],
+      "tempo_factor": 0.9652500000000003,
+      "source_guard_samples": [
+        5947200,
+        6232704
+      ],
+      "output_offset_samples": 6131729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.741479166666666
+      ],
+      "waveform_correlations": [
+        0.999999965009846,
+        0.9999999792387656
+      ],
+      "observed_end_error_ms": 8.145833333323083,
+      "raw_sha256": "0daf421dca985e006f9106097d9f7e0b60eaec94ea46c4ba5bdf08363bf9f31e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=5947200:end_sample=6232704,asetpts=PTS-STARTPTS,atempo=0.9652500000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        129.448,
+        134.592
+      ],
+      "target_anchors_seconds": [
+        133.47769729317577,
+        138.81103062650908
+      ],
+      "tempo_factor": 0.9645000000000045,
+      "source_guard_samples": [
+        6194304,
+        6479616
+      ],
+      "output_offset_samples": 6387363,
+      "observed_raw_anchors_seconds": [
+        0.407625,
+        5.7400625
+      ],
+      "waveform_correlations": [
+        0.999999979228735,
+        0.9999999698417166
+      ],
+      "observed_end_error_ms": -0.8958333333151103,
+      "raw_sha256": "81f033b4754cbf8864ccad898ec7853ac5e729c285d7f0198ac99bcfd60500bd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=6194304:end_sample=6479616,asetpts=PTS-STARTPTS,atempo=0.9645000000000045,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        134.592,
+        139.724
+      ],
+      "target_anchors_seconds": [
+        138.81103062650908,
+        144.14436395984242
+      ],
+      "tempo_factor": 0.9622499999999939,
+      "source_guard_samples": [
+        6441216,
+        6725952
+      ],
+      "output_offset_samples": 6643729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738416666666667
+      ],
+      "waveform_correlations": [
+        0.999999960990164,
+        0.9999999745609
+      ],
+      "observed_end_error_ms": 5.083333333323559,
+      "raw_sha256": "52d92b725f7f4ec81fab97b759959bd12ca0aa6f1964f518e0d4c1cc395d07bc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=6441216:end_sample=6725952,asetpts=PTS-STARTPTS,atempo=0.9622499999999939,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        139.724,
+        144.872
+      ],
+      "target_anchors_seconds": [
+        144.14436395984242,
+        149.47769729317577
+      ],
+      "tempo_factor": 0.9652500000000029,
+      "source_guard_samples": [
+        6687552,
+        6973056
+      ],
+      "output_offset_samples": 6899729,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7393125
+      ],
+      "waveform_correlations": [
+        0.999999966199786,
+        0.9999999685295761
+      ],
+      "observed_end_error_ms": 5.9791666666564325,
+      "raw_sha256": "c88e09d752a4c7796ce12d1a1c8b38174ec34e899d36968a621a3d1b14ec06c7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=6687552:end_sample=6973056,asetpts=PTS-STARTPTS,atempo=0.9652500000000029,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        454
+      ],
+      "source_anchors_seconds": [
+        144.872,
+        146.798
+      ],
+      "target_anchors_seconds": [
+        149.47769729317577,
+        151.47769729317577
+      ],
+      "tempo_factor": 0.9629999999999939,
+      "source_guard_samples": [
+        6934656,
+        7046400
+      ],
+      "output_offset_samples": 7155343,
+      "observed_raw_anchors_seconds": [
+        0.4080416666666667,
+        2.4033541666666665
+      ],
+      "waveform_correlations": [
+        0.9999999751541842,
+        0.9999999999999999
+      ],
+      "observed_end_error_ms": -4.687500000000178,
+      "raw_sha256": "e7e17c42b7e3ddb363679e99548969593ba9bea66867ac801017ac79a542516e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/16__비가 갠 뒤__Aggressive__Drill__NA.wav",
+        "-af",
+        "atrim=start_sample=6934656:end_sample=7046400,asetpts=PTS-STARTPTS,atempo=0.9629999999999939,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-16/block-028.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

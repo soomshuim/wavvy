@@ -1,0 +1,130 @@
+{
+  "schema": "wavvy.scoped_art_cleanup.v1",
+  "scope": "07:00 thumbnail process materials only",
+  "user_quote": "최종 버전 프롬프트와 원본 이미지, psd, 최종 썸네일 jpg 제외한 과정 자료 다 지워.",
+  "protected": [
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-source.png",
+      "bytes": 3615892,
+      "sha256": "6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-prompt.txt",
+      "bytes": 2394,
+      "sha256": "2c16167ba65c1860d2c11113159d1c4bad746c129142127160ace1a001cc1293"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.psd",
+      "bytes": 26290735,
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb.jpg",
+      "bytes": 2475288,
+      "sha256": "93b63f208ff89c81c705ef64b53fd299911a55d7f65d8a3386bd65fa8feb4944"
+    }
+  ],
+  "delete": [
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-0ba2e61c-12e1-49ce-922c-98bef40e72d4.png",
+      "bytes": 2792011,
+      "sha256": "987ccf1234e0ab46c4b078e9d4b36483af6ace13ee72c887ee33aabb408da26b"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-0e5a6057-4bc3-4c1d-8432-8570f9f8fd87.png",
+      "bytes": 3337025,
+      "sha256": "6e9bc9108bf57a9ff66e73641a6d74bbd6085a4c2697a1586006dbb93c400c88"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-18c62fc1-8c30-4427-a845-db85311e8ca1.png",
+      "bytes": 2686153,
+      "sha256": "558f0f81c38f25ebaecff776107b109ae3e91ccace6f261826ffc5e54bbdab12"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-4c9bd8c2-9922-4628-9233-3ca4ff39463e.png",
+      "bytes": 3404415,
+      "sha256": "531c723d869a3a7a2b795e02c6943448a8ceb3e03dd9be33a85e00854d100b81"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-b999b9e8-eeee-4f33-aa4f-b17d2d68941f.png",
+      "bytes": 2506349,
+      "sha256": "d2da15357328014d95869e74e95f319237aba40fdf1d32a2671540a07b1151c7"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-be86a48f-4801-4fde-9958-7494847f3ae5.png",
+      "bytes": 3615892,
+      "sha256": "6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe"
+    },
+    {
+      "path": "/Users/zenkim_office/.codex/generated_images/01a161eb-ccc4-7b71-b0fb-5a4034eb931a/exec-c032cc76-4b38-465a-897d-bcab06c78e4a.png",
+      "bytes": 2216275,
+      "sha256": "7d819ef01f9b594630d3691f8f1080466d60dd0254d04f22d9a4d0edbc2048af"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/loop.png",
+      "bytes": 6786512,
+      "sha256": "75dac23e65f3908a126c5fa19bd01d854ef5ef1767585e23de3139634d346e89"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumb-scene-dawn-2026-10-12.png",
+      "bytes": 2038082,
+      "sha256": "57619ab694ee2f4128db2c9bf7574fc6dbc6353f366bcc94b24d4f2ac1a68df7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-city-a-20261024.png",
+      "bytes": 3615892,
+      "sha256": "6bfe986cce7ff3ed9c17c60c816e51873d00e89b3cfd2c6adeaf11bb7d2111fe"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-city-b-20261024.png",
+      "bytes": 2686153,
+      "sha256": "558f0f81c38f25ebaecff776107b109ae3e91ccace6f261826ffc5e54bbdab12"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-original-a-20261024.png",
+      "bytes": 3404415,
+      "sha256": "531c723d869a3a7a2b795e02c6943448a8ceb3e03dd9be33a85e00854d100b81"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-original-b-20261024.png",
+      "bytes": 2792011,
+      "sha256": "987ccf1234e0ab46c4b078e9d4b36483af6ace13ee72c887ee33aabb408da26b"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-running-a-20261024.png",
+      "bytes": 3337025,
+      "sha256": "6e9bc9108bf57a9ff66e73641a6d74bbd6085a4c2697a1586006dbb93c400c88"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-running-b-20261024.png",
+      "bytes": 2506349,
+      "sha256": "d2da15357328014d95869e74e95f319237aba40fdf1d32a2671540a07b1151c7"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-draft-street-20261024.png",
+      "bytes": 2216275,
+      "sha256": "7d819ef01f9b594630d3691f8f1080466d60dd0254d04f22d9a4d0edbc2048af"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-layout.json",
+      "bytes": 707,
+      "sha256": "8fd3fe17c066a1bed6f5b7fcecb081f515240bc7cc059ce347c379ee4ab0dda3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/thumbnail-reference-review-2026-10-12.md",
+      "bytes": 5846,
+      "sha256": "6194cec8de494d95e515ce3ba9aca36b8883e124f0f01d57bb915eefcd650dd3"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/reference-view/nike-reference-1.png",
+      "bytes": 1323340,
+      "sha256": "392666412cfa83f435b83f55ff330ae6a5e038babefe99da4fef2ff3b896204e"
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/reference-view/nike-reference-2.png",
+      "bytes": 448883,
+      "sha256": "6e0399fe07196b6f4642daaea496da2a5d899e34f8cb36b744328cf049dee688"
+    }
+  ],
+  "excluded": "All audio, audio processing, user Downloads, other series, Git internals and package dependencies."
+}

@@ -1,0 +1,3929 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 17,
+  "title": "이어지는 소리",
+  "candidate_id": "1e73b35f-a731-4a2a-8d34-fb66d85aef76",
+  "source_path": "SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+  "source_sha256": "ff1e611b7a0aa3660ad5e03103fd7291226d5b881371a2260b3bf950fa051861",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/17.json",
+  "analysis_sha256": "bbd82074e121661ae84845cd6425916a211f1a10d9cc6024a56d5ca72b2451f0",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "producer_script_sha256": "1203326ad8096fcc4da2e3cd718d45c3b338d0714b8253fb7b8a0717db710dcf",
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/17__이어지는 소리__180.wav",
+  "output_sha256": "51eb41a23f56163313a8b37726582d5e6b1000e17f1ea5d3f5d5794b11412aae",
+  "source_duration_seconds": 207.6,
+  "output_duration_seconds": 211.5045625,
+  "output_peak_linear": 0.56646728515625,
+  "first_grid_beat_output_seconds": 0.15947514509210195,
+  "grid_beat_count": 633,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 208.6791545404563,
+        "mid": 180.3480333472428,
+        "high": 181.22707297697426
+      },
+      "band_strength": {
+        "low": 0.3995119340805677,
+        "mid": 0.5007691636537154,
+        "high": 0.4107316096920007
+      },
+      "median_bpm": 181.22707297697426,
+      "band_spread_bpm": 28.331121193213505
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 207.72125037096907,
+        "mid": 180.73457365806655,
+        "high": 180.5630688098989
+      },
+      "band_strength": {
+        "low": 0.355075377356874,
+        "mid": 0.5522996667789379,
+        "high": 0.40200909059139955
+      },
+      "median_bpm": 180.73457365806655,
+      "band_spread_bpm": 27.158181561070165
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 207.8819530778723,
+        "mid": 180.31682970126337,
+        "high": 180.54614436679213
+      },
+      "band_strength": {
+        "low": 0.5265227929146761,
+        "mid": 0.5246430240012505,
+        "high": 0.5912881856115431
+      },
+      "median_bpm": 180.54614436679213,
+      "band_spread_bpm": 27.565123376608938
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 179.76168020014094,
+        "mid": 180.17483214389944,
+        "high": 180.3537089269228
+      },
+      "band_strength": {
+        "low": 0.5779825070524419,
+        "mid": 0.5335339756668567,
+        "high": 0.571966087961187
+      },
+      "median_bpm": 180.17483214389944,
+      "band_spread_bpm": 0.592028726781848
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.99007914815257,
+        "mid": 180.19311119159053,
+        "high": 180.2973280255684
+      },
+      "band_strength": {
+        "low": 0.5759412577653825,
+        "mid": 0.537631878162958,
+        "high": 0.5990333043818958
+      },
+      "median_bpm": 180.19311119159053,
+      "band_spread_bpm": 0.30724887741581597
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.0760192800892,
+        "mid": 180.02865662005456,
+        "high": 180.29248679485676
+      },
+      "band_strength": {
+        "low": 0.5992716660449342,
+        "mid": 0.5249437885866043,
+        "high": 0.5769108767347888
+      },
+      "median_bpm": 180.0760192800892,
+      "band_spread_bpm": 0.2638301748021945
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 180.41524581044746,
+        "mid": 180.1748473381847,
+        "high": 180.1118221317599
+      },
+      "band_strength": {
+        "low": 0.6162881193574116,
+        "mid": 0.5481113469458345,
+        "high": 0.5419551146238891
+      },
+      "median_bpm": 180.1748473381847,
+      "band_spread_bpm": 0.30342367868755105
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 180.58481925612875,
+        "mid": 180.08119378596686,
+        "high": 179.74102189413972
+      },
+      "band_strength": {
+        "low": 0.6016776189830871,
+        "mid": 0.5512918819939657,
+        "high": 0.6028683203539296
+      },
+      "median_bpm": 180.08119378596686,
+      "band_spread_bpm": 0.8437973619890329
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.52068502609092,
+        "mid": 179.96655395577687,
+        "high": 179.71042778284766
+      },
+      "band_strength": {
+        "low": 0.5768936873201281,
+        "mid": 0.5246239179433811,
+        "high": 0.5905249566243491
+      },
+      "median_bpm": 179.96655395577687,
+      "band_spread_bpm": 0.8102572432432567
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.5101068191639,
+        "mid": 179.88082294030548,
+        "high": 179.69917308804966
+      },
+      "band_strength": {
+        "low": 0.5837490114907551,
+        "mid": 0.5398246925421936,
+        "high": 0.5757411223452893
+      },
+      "median_bpm": 179.88082294030548,
+      "band_spread_bpm": 0.8109337311142326
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 181.12830032122895,
+        "mid": 183.02700517144135,
+        "high": 183.67262232130417
+      },
+      "band_strength": {
+        "low": 0.5292796163351741,
+        "mid": 0.542632831146546,
+        "high": 0.5444885383843414
+      },
+      "median_bpm": 183.02700517144135,
+      "band_spread_bpm": 2.5443220000752262
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 181.8933742460836,
+        "mid": 180.62560561364262,
+        "high": 182.86403554761785
+      },
+      "band_strength": {
+        "low": 0.5359497024448042,
+        "mid": 0.5241383942292221,
+        "high": 0.4899886695999221
+      },
+      "median_bpm": 181.8933742460836,
+      "band_spread_bpm": 2.238429933975226
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 183.12164511941486,
+        "mid": 180.3240182985562,
+        "high": 180.00860412114008
+      },
+      "band_strength": {
+        "low": 0.56510455011697,
+        "mid": 0.5058942629538143,
+        "high": 0.5205561990910795
+      },
+      "median_bpm": 180.3240182985562,
+      "band_spread_bpm": 3.1130409982747835
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 182.8662191747681,
+        "mid": 180.12809481664883,
+        "high": 180.03588563854765
+      },
+      "band_strength": {
+        "low": 0.5767357508914536,
+        "mid": 0.5142556670764376,
+        "high": 0.5376197144526207
+      },
+      "median_bpm": 180.12809481664883,
+      "band_spread_bpm": 2.8303335362204507
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.35439913145117,
+        "mid": 179.82084112244968,
+        "high": 179.81708943045845
+      },
+      "band_strength": {
+        "low": 0.5760438648086161,
+        "mid": 0.5390868861784459,
+        "high": 0.6096107057310648
+      },
+      "median_bpm": 179.82084112244968,
+      "band_spread_bpm": 0.5373097009927221
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 186.595693021499,
+        "mid": 179.65499036552,
+        "high": 179.95900892605965
+      },
+      "band_strength": {
+        "low": 0.5689155172178058,
+        "mid": 0.5214776584526004,
+        "high": 0.6040610599479123
+      },
+      "median_bpm": 179.95900892605965,
+      "band_spread_bpm": 6.940702655978981
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 186.45160182041795,
+        "mid": 179.60909606976708,
+        "high": 180.01806982532304
+      },
+      "band_strength": {
+        "low": 0.5967961336832163,
+        "mid": 0.5229685860753376,
+        "high": 0.5872312740128468
+      },
+      "median_bpm": 180.01806982532304,
+      "band_spread_bpm": 6.842505750650872
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 186.23239018765403,
+        "mid": 179.43962888413765,
+        "high": 179.7950591095225
+      },
+      "band_strength": {
+        "low": 0.6200115658413666,
+        "mid": 0.528273421360366,
+        "high": 0.6220607923129987
+      },
+      "median_bpm": 179.7950591095225,
+      "band_spread_bpm": 6.792761303516386
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 186.32014634596294,
+        "mid": 179.57700014831516,
+        "high": 179.69137028308575
+      },
+      "band_strength": {
+        "low": 0.6189862566172396,
+        "mid": 0.4982816649614002,
+        "high": 0.6033596277408577
+      },
+      "median_bpm": 179.69137028308575,
+      "band_spread_bpm": 6.743146197647775
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 186.44053607961652,
+        "mid": 179.65082535407092,
+        "high": 179.674855268966
+      },
+      "band_strength": {
+        "low": 0.5378697062489514,
+        "mid": 0.4782915501511684,
+        "high": 0.5555334453485284
+      },
+      "median_bpm": 179.674855268966,
+      "band_spread_bpm": 6.7897107255456035
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 179.13391958411654,
+        "mid": 179.64038546112914,
+        "high": 179.77965673377844
+      },
+      "band_strength": {
+        "low": 0.46568501583935173,
+        "mid": 0.5676546300868512,
+        "high": 0.5543501042840077
+      },
+      "median_bpm": 179.64038546112914,
+      "band_spread_bpm": 0.6457371496618975
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 179.57178062338713,
+        "mid": 179.69474991709134,
+        "high": 180.44771030841727
+      },
+      "band_strength": {
+        "low": 0.4296751331761702,
+        "mid": 0.5966574101059174,
+        "high": 0.5732210915463012
+      },
+      "median_bpm": 179.69474991709134,
+      "band_spread_bpm": 0.8759296850301439
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 179.64713572033256,
+        "mid": 179.610165946338,
+        "high": 180.04105421845864
+      },
+      "band_strength": {
+        "low": 0.6812049214494568,
+        "mid": 0.6027004999753145,
+        "high": 0.6623801597568135
+      },
+      "median_bpm": 179.64713572033256,
+      "band_spread_bpm": 0.4308882721206544
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 179.64957254545925,
+        "mid": 179.55461822095464,
+        "high": 179.36836554590772
+      },
+      "band_strength": {
+        "low": 0.6250597387683287,
+        "mid": 0.6056011404618327,
+        "high": 0.6362665229245635
+      },
+      "median_bpm": 179.55461822095464,
+      "band_spread_bpm": 0.2812069995515287
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 179.6123073023492,
+        "mid": 179.64513109960134,
+        "high": 179.44448909632834
+      },
+      "band_strength": {
+        "low": 0.6553029470174851,
+        "mid": 0.5569141494474446,
+        "high": 0.568794902902485
+      },
+      "median_bpm": 179.6123073023492,
+      "band_spread_bpm": 0.2006420032730034
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 179.4660862056295,
+        "mid": 179.3912043247745,
+        "high": 179.38911654749134
+      },
+      "band_strength": {
+        "low": 0.6614709336877715,
+        "mid": 0.5452209564000876,
+        "high": 0.5667545112225791
+      },
+      "median_bpm": 179.3912043247745,
+      "band_spread_bpm": 0.07696965813815382
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 169.65938544889235,
+        "mid": 179.3386061506911,
+        "high": 179.6020403519555
+      },
+      "band_strength": {
+        "low": 0.6438464799152417,
+        "mid": 0.5413909189528854,
+        "high": 0.5481854982897805
+      },
+      "median_bpm": 179.3386061506911,
+      "band_spread_bpm": 9.942654903063158
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 179.33280140933323,
+        "mid": 179.41017272093896,
+        "high": 179.7375628101446
+      },
+      "band_strength": {
+        "low": 0.6503159799602982,
+        "mid": 0.5710048526504322,
+        "high": 0.5672328360659246
+      },
+      "median_bpm": 179.41017272093896,
+      "band_spread_bpm": 0.4047614008113669
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 179.4480778251877,
+        "mid": 179.30242549046164,
+        "high": 179.83693003454277
+      },
+      "band_strength": {
+        "low": 0.6360060863540724,
+        "mid": 0.5610037064271006,
+        "high": 0.5987551685189878
+      },
+      "median_bpm": 179.4480778251877,
+      "band_spread_bpm": 0.5345045440811305
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.54526206019884,
+        "mid": 182.65654170337416,
+        "high": 179.86420193157065
+      },
+      "band_strength": {
+        "low": 0.5903757934719573,
+        "mid": 0.5113850898121036,
+        "high": 0.5615488501476474
+      },
+      "median_bpm": 179.86420193157065,
+      "band_spread_bpm": 3.1112796431753225
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 179.77154097153567,
+        "mid": 182.90264975717417,
+        "high": 180.37887365163022
+      },
+      "band_strength": {
+        "low": 0.5306225222465119,
+        "mid": 0.5323472544257035,
+        "high": 0.4794626869943631
+      },
+      "median_bpm": 180.37887365163022,
+      "band_spread_bpm": 3.131108785638503
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 180.46778042535567,
+        "mid": 183.08392179128435,
+        "high": 182.88669670620772
+      },
+      "band_strength": {
+        "low": 0.4765695314851099,
+        "mid": 0.5184826655218018,
+        "high": 0.37401945700197237
+      },
+      "median_bpm": 182.88669670620772,
+      "band_spread_bpm": 2.6161413659286836
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 180.1499779093283,
+        "mid": 182.6868715402834,
+        "high": 180.17623366833567
+      },
+      "band_strength": {
+        "low": 0.5425196675223074,
+        "mid": 0.5356754373293926,
+        "high": 0.4195156145293625
+      },
+      "median_bpm": 180.17623366833567,
+      "band_spread_bpm": 2.536893630955092
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 180.45884403727192,
+        "mid": 183.5060117643441,
+        "high": 180.28862255838104
+      },
+      "band_strength": {
+        "low": 0.5873203103693804,
+        "mid": 0.5657413541770594,
+        "high": 0.46888281695476147
+      },
+      "median_bpm": 180.45884403727192,
+      "band_spread_bpm": 3.217389205963059
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 180.80838300004123,
+        "mid": 179.7866583409935,
+        "high": 180.43132470482908
+      },
+      "band_strength": {
+        "low": 0.6119668476778193,
+        "mid": 0.5593281334693916,
+        "high": 0.4221973682966869
+      },
+      "median_bpm": 180.43132470482908,
+      "band_spread_bpm": 1.0217246590477203
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 180.8553743148038,
+        "mid": 179.65411929483855,
+        "high": 180.29207622954036
+      },
+      "band_strength": {
+        "low": 0.6278098849738248,
+        "mid": 0.5652680688151438,
+        "high": 0.45329360286514747
+      },
+      "median_bpm": 180.29207622954036,
+      "band_spread_bpm": 1.2012550199652594
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 180.45586494970323,
+        "mid": 179.73879618906616,
+        "high": 180.31292153339467
+      },
+      "band_strength": {
+        "low": 0.6447676826091051,
+        "mid": 0.558579894762851,
+        "high": 0.47130273162407554
+      },
+      "median_bpm": 180.31292153339467,
+      "band_spread_bpm": 0.717068760637062
+    },
+    {
+      "center_seconds": 195.0,
+      "band_bpm": {
+        "low": 180.3966912673459,
+        "mid": 179.54483610235187,
+        "high": 180.3179559158461
+      },
+      "band_strength": {
+        "low": 0.6531869463897723,
+        "mid": 0.5701818809517427,
+        "high": 0.46970541617735273
+      },
+      "median_bpm": 180.3179559158461,
+      "band_spread_bpm": 0.8518551649940207
+    },
+    {
+      "center_seconds": 200.0,
+      "band_bpm": {
+        "low": 179.80778665339344,
+        "mid": 178.42096015052556,
+        "high": 179.97001550071425
+      },
+      "band_strength": {
+        "low": 0.6333380427198183,
+        "mid": 0.6000947482699028,
+        "high": 0.6386398646033407
+      },
+      "median_bpm": 179.80778665339344,
+      "band_spread_bpm": 1.549055350188695
+    },
+    {
+      "center_seconds": 205.0,
+      "band_bpm": {
+        "low": 179.65669405245558,
+        "mid": 178.4846234780303,
+        "high": 179.96538359341076
+      },
+      "band_strength": {
+        "low": 0.7485558710072346,
+        "mid": 0.6073712064638263,
+        "high": 0.8420493392905185
+      },
+      "median_bpm": 179.65669405245558,
+      "band_spread_bpm": 1.4807601153804626
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.40922430113073,
+    180.04704455270613,
+    181.9430403690898
+  ],
+  "leading_alignment_padding_samples": 71,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.158,
+        5.442
+      ],
+      "target_anchors_seconds": [
+        0.15947514509210195,
+        5.492808478425435
+      ],
+      "tempo_factor": 0.99075,
+      "source_guard_samples": [
+        0,
+        280416
+      ],
+      "output_offset_samples": 71,
+      "observed_raw_anchors_seconds": [
+        0.158,
+        5.484520833333334
+      ],
+      "waveform_correlations": [
+        0.9999999530267114,
+        0.999999957122689
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.158,
+              0.9999999609870139
+            ],
+            [
+              0.158,
+              0.9999999530267114
+            ],
+            [
+              0.158,
+              0.9999999550595179
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.484520833333334,
+              0.999999957122689
+            ],
+            [
+              5.484520833333334,
+              0.9999999610926497
+            ],
+            [
+              5.484520833333334,
+              0.999999959793226
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -6.812499999999666,
+      "raw_sha256": "7d08187e68f295a78f7d289f6d540fff503eedcb8574d7057e138af826ba7c0b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=280416,asetpts=PTS-STARTPTS,atempo=0.9907500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.442,
+        10.754
+      ],
+      "target_anchors_seconds": [
+        5.492808478425435,
+        10.826141811758768
+      ],
+      "tempo_factor": 0.9959999999999999,
+      "source_guard_samples": [
+        242016,
+        535392
+      ],
+      "output_offset_samples": 244455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724354166666667
+      ],
+      "waveform_correlations": [
+        0.9999999329434827,
+        0.9916064608544829
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999413267857
+            ],
+            [
+              0.4,
+              0.9999999340476134
+            ],
+            [
+              0.4,
+              0.9999999329434827
+            ]
+          ]
+        },
+        {
+          "method": "highpass-300Hz-corroboration",
+          "full_band_positions_and_correlations": [
+            [
+              5.724354166666667,
+              0.9941037878396818
+            ],
+            [
+              5.730395833333334,
+              0.9787642954378024
+            ],
+            [
+              5.730395833333334,
+              0.9818059160404768
+            ]
+          ],
+          "positions_and_correlations": [
+            [
+              5.724354166666667,
+              0.9948779024238622
+            ],
+            [
+              5.724354166666667,
+              0.9925252286344807
+            ],
+            [
+              5.724354166666667,
+              0.9916064608544829
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -8.979166666666316,
+      "raw_sha256": "00a6083acb03f0139a442c5ecc86433a35df665e3e00c1840ca290d508365d8e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=242016:end_sample=535392,asetpts=PTS-STARTPTS,atempo=0.9959999999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.754,
+        16.014
+      ],
+      "target_anchors_seconds": [
+        10.826141811758768,
+        16.159475145092102
+      ],
+      "tempo_factor": 0.9862499999999998,
+      "source_guard_samples": [
+        496992,
+        787872
+      ],
+      "output_offset_samples": 500455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736291666666666
+      ],
+      "waveform_correlations": [
+        0.9999997760149671,
+        0.9999999727803089
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999997760149671
+            ],
+            [
+              0.4,
+              0.9999997828320917
+            ],
+            [
+              0.4,
+              0.9999997957241703
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.736291666666666,
+              0.9999999823041037
+            ],
+            [
+              5.736291666666666,
+              0.999999975299757
+            ],
+            [
+              5.736291666666666,
+              0.9999999727803089
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 2.958333333332064,
+      "raw_sha256": "af3342f283b876c61bbc9b559babf9194a577169eac464be04cee22e7a658f27",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=496992:end_sample=787872,asetpts=PTS-STARTPTS,atempo=0.9862499999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        16.014,
+        21.248
+      ],
+      "target_anchors_seconds": [
+        16.159475145092102,
+        21.492808478425435
+      ],
+      "tempo_factor": 0.9813750000000006,
+      "source_guard_samples": [
+        749472,
+        1039104
+      ],
+      "output_offset_samples": 756452,
+      "observed_raw_anchors_seconds": [
+        0.4000625,
+        5.7355833333333335
+      ],
+      "waveform_correlations": [
+        0.9999694531917901,
+        0.9999999702660349
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000625,
+              0.9999694531917901
+            ],
+            [
+              0.4000625,
+              0.9999735683836812
+            ],
+            [
+              0.4000625,
+              0.9999703555412884
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7355833333333335,
+              0.9999999767246612
+            ],
+            [
+              5.7355833333333335,
+              0.9999999754535064
+            ],
+            [
+              5.7355833333333335,
+              0.9999999702660349
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 2.187500000001563,
+      "raw_sha256": "4ad5ae22da4ca77fa980c4c6035b68a031034aa3c91fb562bddd18bb9e4bd4d6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=749472:end_sample=1039104,asetpts=PTS-STARTPTS,atempo=0.9813750000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.248,
+        26.466
+      ],
+      "target_anchors_seconds": [
+        21.492808478425435,
+        26.82614181175877
+      ],
+      "tempo_factor": 0.9783749999999996,
+      "source_guard_samples": [
+        1000704,
+        1289568
+      ],
+      "output_offset_samples": 1012455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7312916666666665
+      ],
+      "waveform_correlations": [
+        0.9999998980673671,
+        0.9999999716901642
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999762400845
+            ],
+            [
+              0.4,
+              0.9999999588261239
+            ],
+            [
+              0.4,
+              0.9999998980673671
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7312916666666665,
+              0.9999999908390828
+            ],
+            [
+              5.7312916666666665,
+              0.9999999784404774
+            ],
+            [
+              5.7312916666666665,
+              0.9999999716901642
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -2.041666666669606,
+      "raw_sha256": "633d0329033df58ab9788579491c235c71d4e408b67cb77cafdaa7980dcb7966",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1000704:end_sample=1289568,asetpts=PTS-STARTPTS,atempo=0.9783749999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.466,
+        31.684
+      ],
+      "target_anchors_seconds": [
+        26.82614181175877,
+        32.1594751450921
+      ],
+      "tempo_factor": 0.9783750000000002,
+      "source_guard_samples": [
+        1251168,
+        1540032
+      ],
+      "output_offset_samples": 1268451,
+      "observed_raw_anchors_seconds": [
+        0.40008333333333335,
+        5.7288958333333335
+      ],
+      "waveform_correlations": [
+        0.9999999645507769,
+        0.9999999861151354
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.40008333333333335,
+              0.9999999819448866
+            ],
+            [
+              0.40008333333333335,
+              0.99999996511787
+            ],
+            [
+              0.40008333333333335,
+              0.9999999645507769
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7288958333333335,
+              0.9999999959666851
+            ],
+            [
+              5.7288958333333335,
+              0.9999999943165842
+            ],
+            [
+              5.7288958333333335,
+              0.9999999861151354
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -4.520833333332419,
+      "raw_sha256": "d3870fea7971fbd18fb1b5b936a9eb555174b2afc7835cd6a16a363210cc055a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1251168:end_sample=1540032,asetpts=PTS-STARTPTS,atempo=0.9783750000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.684,
+        36.906
+      ],
+      "target_anchors_seconds": [
+        32.1594751450921,
+        37.49280847842544
+      ],
+      "tempo_factor": 0.9791249999999991,
+      "source_guard_samples": [
+        1501632,
+        1790688
+      ],
+      "output_offset_samples": 1524448,
+      "observed_raw_anchors_seconds": [
+        0.4001458333333333,
+        5.731645833333333
+      ],
+      "waveform_correlations": [
+        0.9999999635017295,
+        0.9999999745935931
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4001458333333333,
+              0.999999979060681
+            ],
+            [
+              0.4001458333333333,
+              0.9999999635017295
+            ],
+            [
+              0.4001458333333333,
+              0.9999999637218873
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.731645833333333,
+              0.9999999880253134
+            ],
+            [
+              5.731645833333333,
+              0.9999999790943631
+            ],
+            [
+              5.731645833333333,
+              0.9999999745935931
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.833333333335574,
+      "raw_sha256": "6fdea00eda77e9dd7b0354ea2fe8311195fa15a9153002ceeed71bfb8bb55d42",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1501632:end_sample=1790688,asetpts=PTS-STARTPTS,atempo=0.9791249999999991,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.906,
+        42.116
+      ],
+      "target_anchors_seconds": [
+        37.49280847842544,
+        42.82614181175877
+      ],
+      "tempo_factor": 0.976875000000001,
+      "source_guard_samples": [
+        1752288,
+        2040768
+      ],
+      "output_offset_samples": 1780455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736125
+      ],
+      "waveform_correlations": [
+        0.9999999705355265,
+        0.9999999615674623
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.99999998463365
+            ],
+            [
+              0.4,
+              0.9999999745372173
+            ],
+            [
+              0.4,
+              0.9999999705355265
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.736125,
+              0.9999999798522197
+            ],
+            [
+              5.736125,
+              0.9999999654474068
+            ],
+            [
+              5.736125,
+              0.9999999615674623
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 2.7916666666714107,
+      "raw_sha256": "02f58d97dca474267bcdd63f513be95c02544dd7bb786c20ba275f71e4a1e229",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=1752288:end_sample=2040768,asetpts=PTS-STARTPTS,atempo=0.9768750000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        42.116,
+        47.328
+      ],
+      "target_anchors_seconds": [
+        42.82614181175877,
+        48.1594751450921
+      ],
+      "tempo_factor": 0.9772500000000002,
+      "source_guard_samples": [
+        2002368,
+        2290944
+      ],
+      "output_offset_samples": 2036309,
+      "observed_raw_anchors_seconds": [
+        0.4030416666666667,
+        5.739604166666667
+      ],
+      "waveform_correlations": [
+        0.9999999618597938,
+        0.9999999647283868
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4030416666666667,
+              0.999999982380352
+            ],
+            [
+              0.4030416666666667,
+              0.9999999669907753
+            ],
+            [
+              0.4030416666666667,
+              0.9999999618597938
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.739604166666667,
+              0.999999984992226
+            ],
+            [
+              5.739604166666667,
+              0.9999999751692917
+            ],
+            [
+              5.739604166666667,
+              0.9999999647283868
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 3.229166666664618,
+      "raw_sha256": "b47e035b5dc9337897f16486a2335ca579712e115a3b781dd8765996109c3ade",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2002368:end_sample=2290944,asetpts=PTS-STARTPTS,atempo=0.9772500000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        47.328,
+        52.54
+      ],
+      "target_anchors_seconds": [
+        48.1594751450921,
+        53.49280847842544
+      ],
+      "tempo_factor": 0.9772499999999988,
+      "source_guard_samples": [
+        2252544,
+        2541120
+      ],
+      "output_offset_samples": 2292455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.72875
+      ],
+      "waveform_correlations": [
+        0.9999999719929882,
+        0.9999999880046145
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999835610994
+            ],
+            [
+              0.4,
+              0.9999999753496382
+            ],
+            [
+              0.4,
+              0.9999999719929882
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.72875,
+              0.999999994787028
+            ],
+            [
+              5.72875,
+              0.9999999880046145
+            ],
+            [
+              5.72875,
+              0.9999999882234593
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -4.58333333333627,
+      "raw_sha256": "140acd8720f58dd3133fe7fee7c2d6bf2ee4d0b1d7afca0f74bc8e2f57eed42e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2252544:end_sample=2541120,asetpts=PTS-STARTPTS,atempo=0.9772499999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        52.54,
+        57.758
+      ],
+      "target_anchors_seconds": [
+        53.49280847842544,
+        58.82614181175877
+      ],
+      "tempo_factor": 0.9783750000000015,
+      "source_guard_samples": [
+        2502720,
+        2791584
+      ],
+      "output_offset_samples": 2548454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.734729166666667
+      ],
+      "waveform_correlations": [
+        0.9999999591122372,
+        0.9999999681723233
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999999853124577
+            ],
+            [
+              0.4000208333333333,
+              0.9999999659700431
+            ],
+            [
+              0.4000208333333333,
+              0.9999999591122372
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.734729166666667,
+              0.9999999773244324
+            ],
+            [
+              5.734729166666667,
+              0.9999999681723233
+            ],
+            [
+              5.734729166666667,
+              0.9999999694548773
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 1.375000000004789,
+      "raw_sha256": "fe86ac8f496cc096cf142f8a044e69180cebc7914d023f4002126b39d1dd4fb0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2502720:end_sample=2791584,asetpts=PTS-STARTPTS,atempo=0.9783750000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.758,
+        63.026
+      ],
+      "target_anchors_seconds": [
+        58.82614181175877,
+        64.1594751450921
+      ],
+      "tempo_factor": 0.9877499999999997,
+      "source_guard_samples": [
+        2753184,
+        3044448
+      ],
+      "output_offset_samples": 2804455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727625
+      ],
+      "waveform_correlations": [
+        0.9999999641576116,
+        0.9999999720326924
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999816766844
+            ],
+            [
+              0.4,
+              0.9999999742726889
+            ],
+            [
+              0.4,
+              0.9999999641576116
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.727625,
+              0.9999999866724092
+            ],
+            [
+              5.727625,
+              0.9999999839461564
+            ],
+            [
+              5.727625,
+              0.9999999720326924
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -5.708333333336313,
+      "raw_sha256": "f6fcf76b00ab104dd41aa0808bf43262de14adf4d01b8314932112978b1fb5e2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=2753184:end_sample=3044448,asetpts=PTS-STARTPTS,atempo=0.9877499999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        63.026,
+        68.34
+      ],
+      "target_anchors_seconds": [
+        64.1594751450921,
+        69.49280847842543
+      ],
+      "tempo_factor": 0.9963750000000009,
+      "source_guard_samples": [
+        3006048,
+        3299520
+      ],
+      "output_offset_samples": 3060455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7236875
+      ],
+      "waveform_correlations": [
+        0.9999999524992113,
+        0.9996303832092058
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999557427705
+            ],
+            [
+              0.4,
+              0.9999999524992113
+            ],
+            [
+              0.4,
+              0.9999999594493963
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7236875,
+              0.9996303832092058
+            ],
+            [
+              5.7236875,
+              0.9997054000890024
+            ],
+            [
+              5.7236875,
+              0.9997961991249071
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -9.645833333329357,
+      "raw_sha256": "f32181387a1894887be9095e287d3f6530bc6d374667b59a3b85e7bd1be3251f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3006048:end_sample=3299520,asetpts=PTS-STARTPTS,atempo=0.9963750000000009,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        68.34,
+        73.556
+      ],
+      "target_anchors_seconds": [
+        69.49280847842543,
+        74.82614181175877
+      ],
+      "tempo_factor": 0.9779999999999971,
+      "source_guard_samples": [
+        3261120,
+        3549888
+      ],
+      "output_offset_samples": 3316453,
+      "observed_raw_anchors_seconds": [
+        0.4000416666666667,
+        5.735229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999618859292,
+        0.9999999665031186
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000416666666667,
+              0.9999999829660953
+            ],
+            [
+              0.4000416666666667,
+              0.9999999618859292
+            ],
+            [
+              0.4000416666666667,
+              0.9999999702445186
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.735229166666667,
+              0.9999999716456079
+            ],
+            [
+              5.735229166666667,
+              0.9999999665031186
+            ],
+            [
+              5.735229166666667,
+              0.9999999763010636
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 1.8541666666571643,
+      "raw_sha256": "24a886b4422f35f957b2c4a8ae0e2c896d39189583b0d141014fc11261641180",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3261120:end_sample=3549888,asetpts=PTS-STARTPTS,atempo=0.9779999999999971,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        73.556,
+        78.764
+      ],
+      "target_anchors_seconds": [
+        74.82614181175877,
+        80.1594751450921
+      ],
+      "tempo_factor": 0.9765000000000006,
+      "source_guard_samples": [
+        3511488,
+        3799872
+      ],
+      "output_offset_samples": 3572452,
+      "observed_raw_anchors_seconds": [
+        0.4000625,
+        5.729104166666667
+      ],
+      "waveform_correlations": [
+        0.9999993733647727,
+        0.9999999812227225
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000625,
+              0.9999999750486804
+            ],
+            [
+              0.4000625,
+              0.9999999630056464
+            ],
+            [
+              0.4000625,
+              0.9999993733647727
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.729104166666667,
+              0.9999999962098404
+            ],
+            [
+              5.729104166666667,
+              0.9999999929168286
+            ],
+            [
+              5.729104166666667,
+              0.9999999812227225
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -4.291666666661698,
+      "raw_sha256": "84315c5ed6ddd99b282ec3a7ecf3167be1153dd47c644b0ea64c424d5cf77d75",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3511488:end_sample=3799872,asetpts=PTS-STARTPTS,atempo=0.9765000000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        78.764,
+        83.978
+      ],
+      "target_anchors_seconds": [
+        80.1594751450921,
+        85.49280847842543
+      ],
+      "tempo_factor": 0.9776250000000006,
+      "source_guard_samples": [
+        3761472,
+        4050144
+      ],
+      "output_offset_samples": 3828455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7286875
+      ],
+      "waveform_correlations": [
+        0.9999997585908906,
+        0.9999999805918173
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999831716861
+            ],
+            [
+              0.4,
+              0.9999999789083325
+            ],
+            [
+              0.4,
+              0.9999997585908906
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7286875,
+              0.9999999939944254
+            ],
+            [
+              5.7286875,
+              0.9999999881906131
+            ],
+            [
+              5.7286875,
+              0.9999999805918173
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -4.645833333328575,
+      "raw_sha256": "a70c48917cedc26e3804b266fe8b30019d09b85eaf3d02b01882d92b639a1a0f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=3761472:end_sample=4050144,asetpts=PTS-STARTPTS,atempo=0.9776250000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        83.978,
+        89.186
+      ],
+      "target_anchors_seconds": [
+        85.49280847842543,
+        90.82614181175877
+      ],
+      "tempo_factor": 0.9765000000000006,
+      "source_guard_samples": [
+        4011744,
+        4300128
+      ],
+      "output_offset_samples": 4084455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731041666666667
+      ],
+      "waveform_correlations": [
+        0.9999999452792583,
+        0.9999999731718706
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999757055471
+            ],
+            [
+              0.4,
+              0.9999999452792583
+            ],
+            [
+              0.4,
+              0.9999999513985864
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.731041666666667,
+              0.9999999907011405
+            ],
+            [
+              5.731041666666667,
+              0.9999999735144312
+            ],
+            [
+              5.731041666666667,
+              0.9999999731718706
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -2.2916666666761287,
+      "raw_sha256": "a2293303d71b044932b11cc283d163a16c786f8e91e15702dc03887aa3f69131",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4011744:end_sample=4300128,asetpts=PTS-STARTPTS,atempo=0.9765000000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        89.186,
+        94.396
+      ],
+      "target_anchors_seconds": [
+        90.82614181175877,
+        96.1594751450921
+      ],
+      "tempo_factor": 0.9768749999999997,
+      "source_guard_samples": [
+        4261728,
+        4550208
+      ],
+      "output_offset_samples": 4340454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.735416666666667
+      ],
+      "waveform_correlations": [
+        0.9999987599485131,
+        0.9999926644510271
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999999838547938
+            ],
+            [
+              0.4000208333333333,
+              0.9999999663994371
+            ],
+            [
+              0.4000208333333333,
+              0.9999987599485131
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.735416666666667,
+              0.9999999620238872
+            ],
+            [
+              5.735416666666667,
+              0.9999991589765526
+            ],
+            [
+              5.735416666666667,
+              0.9999926644510271
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 2.062500000004519,
+      "raw_sha256": "25a224f64400c15a665870988e729a0f1506145aaf31cfbaf06d66361eb122e7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4261728:end_sample=4550208,asetpts=PTS-STARTPTS,atempo=0.9768749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        94.396,
+        99.604
+      ],
+      "target_anchors_seconds": [
+        96.1594751450921,
+        101.49280847842543
+      ],
+      "tempo_factor": 0.9765000000000006,
+      "source_guard_samples": [
+        4511808,
+        4800192
+      ],
+      "output_offset_samples": 4596452,
+      "observed_raw_anchors_seconds": [
+        0.4000625,
+        5.739083333333333
+      ],
+      "waveform_correlations": [
+        0.9999971007856465,
+        0.999976405123457
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000625,
+              0.9999999647546622
+            ],
+            [
+              0.4000625,
+              0.999999959745776
+            ],
+            [
+              0.4000625,
+              0.9999971007856465
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.739083333333333,
+              0.9999982419874959
+            ],
+            [
+              5.739083333333333,
+              0.9999920838782689
+            ],
+            [
+              5.739083333333333,
+              0.999976405123457
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 5.6875000000049525,
+      "raw_sha256": "b5b875e8cbb682a9340af0a7f9db70916a2240a4be114c02be9708bf99c7c07b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4511808:end_sample=4800192,asetpts=PTS-STARTPTS,atempo=0.9765000000000006,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        99.604,
+        104.82
+      ],
+      "target_anchors_seconds": [
+        101.49280847842543,
+        106.82614181175877
+      ],
+      "tempo_factor": 0.9779999999999971,
+      "source_guard_samples": [
+        4761792,
+        5050560
+      ],
+      "output_offset_samples": 4852454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.734354166666667
+      ],
+      "waveform_correlations": [
+        0.999946631829414,
+        0.9999999645558949
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999823496132398
+            ],
+            [
+              0.4000208333333333,
+              0.9999620514846163
+            ],
+            [
+              0.4000208333333333,
+              0.999946631829414
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.734354166666667,
+              0.99999997927133
+            ],
+            [
+              5.734354166666667,
+              0.9999999645558949
+            ],
+            [
+              5.734354166666667,
+              0.9999999659866227
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 0.999999999990564,
+      "raw_sha256": "97ac1a64c2c0c986d18f203ef54443eab78a338b4a95dc35eee3bcfbdacfa65b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=4761792:end_sample=5050560,asetpts=PTS-STARTPTS,atempo=0.9779999999999971,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        104.82,
+        110.03
+      ],
+      "target_anchors_seconds": [
+        106.82614181175877,
+        112.1594751450921
+      ],
+      "tempo_factor": 0.9768750000000024,
+      "source_guard_samples": [
+        5012160,
+        5300640
+      ],
+      "output_offset_samples": 5108455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999597691199,
+        0.9999970298453377
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999790684375
+            ],
+            [
+              0.4,
+              0.9999999597691199
+            ],
+            [
+              0.4,
+              0.9999999624907935
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.735229166666667,
+              0.9999999863923626
+            ],
+            [
+              5.735229166666667,
+              0.9999996248252905
+            ],
+            [
+              5.735229166666667,
+              0.9999970298453377
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 1.8958333333376487,
+      "raw_sha256": "435fc3f7627542454fded25d5c3516847439c09ea9583a5df3061c973771e9eb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5012160:end_sample=5300640,asetpts=PTS-STARTPTS,atempo=0.9768750000000024,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        110.03,
+        115.254
+      ],
+      "target_anchors_seconds": [
+        112.1594751450921,
+        117.49280847842543
+      ],
+      "tempo_factor": 0.9795000000000016,
+      "source_guard_samples": [
+        5262240,
+        5551392
+      ],
+      "output_offset_samples": 5364451,
+      "observed_raw_anchors_seconds": [
+        0.40008333333333335,
+        5.73175
+      ],
+      "waveform_correlations": [
+        0.9999999447164155,
+        0.9999999474827098
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.40008333333333335,
+              0.9999999874348799
+            ],
+            [
+              0.40008333333333335,
+              0.9999999628995403
+            ],
+            [
+              0.40008333333333335,
+              0.9999999447164155
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.73175,
+              0.999999987170068
+            ],
+            [
+              5.73175,
+              0.9999999740491071
+            ],
+            [
+              5.73175,
+              0.9999999474827098
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.6666666666615981,
+      "raw_sha256": "c94ee62e6051a22da1f49805063ac97d22cac571ee3902cc3727709672496b4b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5262240:end_sample=5551392,asetpts=PTS-STARTPTS,atempo=0.9795000000000016,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        115.254,
+        120.466
+      ],
+      "target_anchors_seconds": [
+        117.49280847842543,
+        122.82614181175877
+      ],
+      "tempo_factor": 0.9772499999999962,
+      "source_guard_samples": [
+        5512992,
+        5801568
+      ],
+      "output_offset_samples": 5620459,
+      "observed_raw_anchors_seconds": [
+        0.39991666666666664,
+        5.737479166666667
+      ],
+      "waveform_correlations": [
+        0.9999998772326935,
+        0.9999999790278822
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.39991666666666664,
+              0.9999999794822129
+            ],
+            [
+              0.39991666666666664,
+              0.9999999655776651
+            ],
+            [
+              0.39991666666666664,
+              0.9999998772326935
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.737479166666667,
+              0.9999999883166996
+            ],
+            [
+              5.737479166666667,
+              0.9999999825307503
+            ],
+            [
+              5.737479166666667,
+              0.9999999790278822
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 4.229166666656958,
+      "raw_sha256": "28aab1570b08a854723d4d7e0f697219ceab135be345f5c63b0eeb101b0e36fa",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5512992:end_sample=5801568,asetpts=PTS-STARTPTS,atempo=0.9772499999999962,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        120.466,
+        125.724
+      ],
+      "target_anchors_seconds": [
+        122.82614181175877,
+        128.1594751450921
+      ],
+      "tempo_factor": 0.9858750000000027,
+      "source_guard_samples": [
+        5763168,
+        6053952
+      ],
+      "output_offset_samples": 5876455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733125
+      ],
+      "waveform_correlations": [
+        0.9999999692773865,
+        0.9999999672883161
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999926332699
+            ],
+            [
+              0.4,
+              0.999999977782285
+            ],
+            [
+              0.4,
+              0.9999999692773865
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.733125,
+              0.9999999789975583
+            ],
+            [
+              5.733125,
+              0.9999999675895652
+            ],
+            [
+              5.733125,
+              0.9999999672883161
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -0.20833333332870296,
+      "raw_sha256": "49e49e3a91fa0f7ecd45a2f6f9a0ad6546a49bda94261ff6e79701f7c9c7bc39",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=5763168:end_sample=6053952,asetpts=PTS-STARTPTS,atempo=0.9858750000000027,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        125.724,
+        130.938
+      ],
+      "target_anchors_seconds": [
+        128.1594751450921,
+        133.49280847842545
+      ],
+      "tempo_factor": 0.9776249999999953,
+      "source_guard_samples": [
+        6015552,
+        6304224
+      ],
+      "output_offset_samples": 6132455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7365
+      ],
+      "waveform_correlations": [
+        0.9999999665093847,
+        0.9999999826469046
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999773288172
+            ],
+            [
+              0.4,
+              0.9999999665093847
+            ],
+            [
+              0.4,
+              0.9999999666581335
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7365,
+              0.9999999895382712
+            ],
+            [
+              5.7365,
+              0.999999987116167
+            ],
+            [
+              5.7365,
+              0.9999999826469046
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 3.166666666657214,
+      "raw_sha256": "a07742ea86bccbea2fc703b5fa693788157f26015e7bd58a9f1aec3c83143795",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6015552:end_sample=6304224,asetpts=PTS-STARTPTS,atempo=0.9776249999999953,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        130.938,
+        136.154
+      ],
+      "target_anchors_seconds": [
+        133.49280847842545,
+        138.82614181175876
+      ],
+      "tempo_factor": 0.978000000000005,
+      "source_guard_samples": [
+        6265824,
+        6554592
+      ],
+      "output_offset_samples": 6388455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734125
+      ],
+      "waveform_correlations": [
+        0.9999999042714309,
+        0.9999987393104619
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999820453324
+            ],
+            [
+              0.4,
+              0.9999999755626293
+            ],
+            [
+              0.4,
+              0.9999999042714309
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.734125,
+              0.9999999857225553
+            ],
+            [
+              5.734125,
+              0.9999999469784161
+            ],
+            [
+              5.734125,
+              0.9999987393104619
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 0.7916666666849537,
+      "raw_sha256": "839519c0d866157e94663bfd1c4a2a019d8dc1bb66f1f7aa4267c0d5c4960221",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6265824:end_sample=6554592,asetpts=PTS-STARTPTS,atempo=0.9780000000000050,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        136.154,
+        141.372
+      ],
+      "target_anchors_seconds": [
+        138.82614181175876,
+        144.1594751450921
+      ],
+      "tempo_factor": 0.9783750000000015,
+      "source_guard_samples": [
+        6516192,
+        6805056
+      ],
+      "output_offset_samples": 6644453,
+      "observed_raw_anchors_seconds": [
+        0.4000416666666667,
+        5.7368958333333335
+      ],
+      "waveform_correlations": [
+        0.9999996991873452,
+        0.9999999749582122
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000416666666667,
+              0.9999999878659075
+            ],
+            [
+              0.4000416666666667,
+              0.9999999643845568
+            ],
+            [
+              0.4000416666666667,
+              0.9999996991873452
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7368958333333335,
+              0.9999999838479994
+            ],
+            [
+              5.7368958333333335,
+              0.9999999834250629
+            ],
+            [
+              5.7368958333333335,
+              0.9999999749582122
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 3.5208333333240915,
+      "raw_sha256": "55f1cf991eeccc9e2099950b9d99035af0d869cccb6272182dc9fd8b089cf7a8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6516192:end_sample=6805056,asetpts=PTS-STARTPTS,atempo=0.9783750000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        141.372,
+        146.586
+      ],
+      "target_anchors_seconds": [
+        144.1594751450921,
+        149.49280847842545
+      ],
+      "tempo_factor": 0.977624999999998,
+      "source_guard_samples": [
+        6766656,
+        7055328
+      ],
+      "output_offset_samples": 6900454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.733145833333333
+      ],
+      "waveform_correlations": [
+        0.9999999224858543,
+        0.999999969809905
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999999854592498
+            ],
+            [
+              0.4000208333333333,
+              0.999999962104306
+            ],
+            [
+              0.4000208333333333,
+              0.9999999224858543
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.733145833333333,
+              0.9999999788356049
+            ],
+            [
+              5.733145833333333,
+              0.9999999758764361
+            ],
+            [
+              5.733145833333333,
+              0.999999969809905
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -0.20833333334291382,
+      "raw_sha256": "2d9a0e4db4e89791268465e732d1c8b8b7454144529ad4e3e2716cd3cdaf7755",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=6766656:end_sample=7055328,asetpts=PTS-STARTPTS,atempo=0.9776249999999980,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        146.586,
+        151.79
+      ],
+      "target_anchors_seconds": [
+        149.49280847842545,
+        154.82614181175876
+      ],
+      "tempo_factor": 0.9757499999999996,
+      "source_guard_samples": [
+        7016928,
+        7305120
+      ],
+      "output_offset_samples": 7156443,
+      "observed_raw_anchors_seconds": [
+        0.40025,
+        5.7285625
+      ],
+      "waveform_correlations": [
+        0.9999999688817894,
+        0.9994773800961703
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.40025,
+              0.9999999752373924
+            ],
+            [
+              0.40025,
+              0.9999999716243847
+            ],
+            [
+              0.40025,
+              0.9999999688817894
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7285625,
+              0.9997160603419675
+            ],
+            [
+              5.7285625,
+              0.9995581704920169
+            ],
+            [
+              5.7285625,
+              0.9994773800961703
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -5.020833333314378,
+      "raw_sha256": "1385825bafc90887e3cd98d23affe3ce233b7d3ce429bcfb5c0b746d4d9e9270",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7016928:end_sample=7305120,asetpts=PTS-STARTPTS,atempo=0.9757499999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        151.79,
+        157.06
+      ],
+      "target_anchors_seconds": [
+        154.82614181175876,
+        160.1594751450921
+      ],
+      "tempo_factor": 0.9881250000000001,
+      "source_guard_samples": [
+        7266720,
+        7558080
+      ],
+      "output_offset_samples": 7412455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731541666666667
+      ],
+      "waveform_correlations": [
+        0.9999999730714181,
+        0.9999999678025391
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999891954687
+            ],
+            [
+              0.4,
+              0.9999999746035972
+            ],
+            [
+              0.4,
+              0.9999999730714181
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.731541666666667,
+              0.9999999907137699
+            ],
+            [
+              5.731541666666667,
+              0.9999999807221132
+            ],
+            [
+              5.731541666666667,
+              0.9999999678025391
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.7916666666764058,
+      "raw_sha256": "2ded8ea80aa19854512bcf4a6f64019b6fdf8f1bb596df92fb7f7a0c54536a91",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7266720:end_sample=7558080,asetpts=PTS-STARTPTS,atempo=0.9881250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        157.06,
+        162.302
+      ],
+      "target_anchors_seconds": [
+        160.1594751450921,
+        165.49280847842545
+      ],
+      "tempo_factor": 0.9828749999999964,
+      "source_guard_samples": [
+        7519680,
+        7809696
+      ],
+      "output_offset_samples": 7668455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735083333333334
+      ],
+      "waveform_correlations": [
+        0.9999998510047076,
+        0.9999708660177881
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999851664939
+            ],
+            [
+              0.4,
+              0.9999999777456974
+            ],
+            [
+              0.4,
+              0.9999998510047076
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.735083333333334,
+              0.9999923667652941
+            ],
+            [
+              5.735083333333334,
+              0.9999708660177881
+            ],
+            [
+              5.735083333333334,
+              0.9999826617862775
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 1.7499999999905924,
+      "raw_sha256": "95e691e56640d7a2023ca824c7f5a2b1a87e99417486eb478f698b4d26ef89cc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7519680:end_sample=7809696,asetpts=PTS-STARTPTS,atempo=0.9828749999999964,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        162.302,
+        167.554
+      ],
+      "target_anchors_seconds": [
+        165.49280847842545,
+        170.82614181175876
+      ],
+      "tempo_factor": 0.9847500000000053,
+      "source_guard_samples": [
+        7771296,
+        8061792
+      ],
+      "output_offset_samples": 7924455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7315625
+      ],
+      "waveform_correlations": [
+        0.9999999653588483,
+        0.9999999686478979
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999789877451
+            ],
+            [
+              0.4,
+              0.9999999770661143
+            ],
+            [
+              0.4,
+              0.9999999653588483
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7315625,
+              0.9999999891513065
+            ],
+            [
+              5.7315625,
+              0.9999999696411943
+            ],
+            [
+              5.7315625,
+              0.9999999686478979
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.7708333333148474,
+      "raw_sha256": "f4ece1bde06420755357b16e5993dccf2030611b4c6467643b6a206765572bdc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=7771296:end_sample=8061792,asetpts=PTS-STARTPTS,atempo=0.9847500000000053,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        167.554,
+        172.806
+      ],
+      "target_anchors_seconds": [
+        170.82614181175876,
+        176.1594751450921
+      ],
+      "tempo_factor": 0.98475,
+      "source_guard_samples": [
+        8023392,
+        8313888
+      ],
+      "output_offset_samples": 8180456,
+      "observed_raw_anchors_seconds": [
+        0.39997916666666666,
+        5.7306875
+      ],
+      "waveform_correlations": [
+        0.9998735915362331,
+        0.9999999799070531
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.39997916666666666,
+              0.9998735915362331
+            ],
+            [
+              0.39997916666666666,
+              0.9999288493188809
+            ],
+            [
+              0.39997916666666666,
+              0.9999408100976788
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7306875,
+              0.9999999917239023
+            ],
+            [
+              5.7306875,
+              0.9999999905381733
+            ],
+            [
+              5.7306875,
+              0.9999999799070531
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -2.6250000000089813,
+      "raw_sha256": "77759dd8e44b35f0d8f95eb566536f27e74160bfe8283f371527c49df4854d1f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8023392:end_sample=8313888,asetpts=PTS-STARTPTS,atempo=0.9847500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        172.806,
+        178.06
+      ],
+      "target_anchors_seconds": [
+        176.1594751450921,
+        181.49280847842545
+      ],
+      "tempo_factor": 0.9851249999999965,
+      "source_guard_samples": [
+        8275488,
+        8566080
+      ],
+      "output_offset_samples": 8436454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.735520833333333
+      ],
+      "waveform_correlations": [
+        0.9999999697240902,
+        0.9999999762187367
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999999751305538
+            ],
+            [
+              0.4000208333333333,
+              0.9999999739517177
+            ],
+            [
+              0.4000208333333333,
+              0.9999999697240902
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.735520833333333,
+              0.9999999787869156
+            ],
+            [
+              5.735520833333333,
+              0.9999999762187367
+            ],
+            [
+              5.735520833333333,
+              0.9999999768324914
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 2.16666666665688,
+      "raw_sha256": "89261adf29f4d6bc8cac5ebb883f0f054e8dc54bf039e16205753f2d44695388",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8275488:end_sample=8566080,asetpts=PTS-STARTPTS,atempo=0.9851249999999965,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        178.06,
+        183.346
+      ],
+      "target_anchors_seconds": [
+        181.49280847842545,
+        186.82614181175876
+      ],
+      "tempo_factor": 0.9911250000000038,
+      "source_guard_samples": [
+        8527680,
+        8819808
+      ],
+      "output_offset_samples": 8692455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.725791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999610218161,
+        0.9999999938474834
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999812323787
+            ],
+            [
+              0.4,
+              0.9999999667725505
+            ],
+            [
+              0.4,
+              0.9999999610218161
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.725791666666667,
+              0.9999999973182909
+            ],
+            [
+              5.725791666666667,
+              0.99999999571361
+            ],
+            [
+              5.725791666666667,
+              0.9999999938474834
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -7.541666666647906,
+      "raw_sha256": "ab6ac374bc7a25272ef5d6512de1a6d8eec73c78717b4ad0dfe858053bad0950",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8527680:end_sample=8819808,asetpts=PTS-STARTPTS,atempo=0.9911250000000038,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        576
+      ],
+      "source_anchors_seconds": [
+        183.346,
+        188.604
+      ],
+      "target_anchors_seconds": [
+        186.82614181175876,
+        192.1594751450921
+      ],
+      "tempo_factor": 0.9858750000000001,
+      "source_guard_samples": [
+        8781408,
+        9072192
+      ],
+      "output_offset_samples": 8948452,
+      "observed_raw_anchors_seconds": [
+        0.4000625,
+        5.7288958333333335
+      ],
+      "waveform_correlations": [
+        0.9999999639187968,
+        0.9999999870840409
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000625,
+              0.9999999747514499
+            ],
+            [
+              0.4000625,
+              0.999999965739038
+            ],
+            [
+              0.4000625,
+              0.9999999639187968
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7288958333333335,
+              0.9999999966740195
+            ],
+            [
+              5.7288958333333335,
+              0.9999999913939414
+            ],
+            [
+              5.7288958333333335,
+              0.9999999870840409
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -4.500000000009052,
+      "raw_sha256": "3d6612335e9e200b0e4e2c8f3e50e1ba705a80cdf3e0e8bb600138d6442b83b3",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=8781408:end_sample=9072192,asetpts=PTS-STARTPTS,atempo=0.9858750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-035.wav"
+      ]
+    },
+    {
+      "block": 36,
+      "source_beat_indices": [
+        576,
+        592
+      ],
+      "source_anchors_seconds": [
+        188.604,
+        193.826
+      ],
+      "target_anchors_seconds": [
+        192.1594751450921,
+        197.49280847842545
+      ],
+      "tempo_factor": 0.9791249999999945,
+      "source_guard_samples": [
+        9033792,
+        9322848
+      ],
+      "output_offset_samples": 9204455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7343125
+      ],
+      "waveform_correlations": [
+        0.9999999555979006,
+        0.999999940285922
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999840049527
+            ],
+            [
+              0.4,
+              0.9999999564133195
+            ],
+            [
+              0.4,
+              0.9999999555979006
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7343125,
+              0.9999999764479434
+            ],
+            [
+              5.7343125,
+              0.9999999675100112
+            ],
+            [
+              5.7343125,
+              0.999999940285922
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": 0.9791666666565391,
+      "raw_sha256": "ce6d7144881d1782abe218e0b43b5a66d0ebb2c868b29cc53b8fa7beac275de1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9033792:end_sample=9322848,asetpts=PTS-STARTPTS,atempo=0.9791249999999945,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-036.wav"
+      ]
+    },
+    {
+      "block": 37,
+      "source_beat_indices": [
+        592,
+        608
+      ],
+      "source_anchors_seconds": [
+        193.826,
+        199.074
+      ],
+      "target_anchors_seconds": [
+        197.49280847842545,
+        202.82614181175876
+      ],
+      "tempo_factor": 0.984000000000007,
+      "source_guard_samples": [
+        9284448,
+        9574752
+      ],
+      "output_offset_samples": 9460454,
+      "observed_raw_anchors_seconds": [
+        0.4000208333333333,
+        5.7315
+      ],
+      "waveform_correlations": [
+        0.9999627951651254,
+        0.9999274173781802
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000208333333333,
+              0.9999802654973909
+            ],
+            [
+              0.4000208333333333,
+              0.9999627951651254
+            ],
+            [
+              0.4000208333333333,
+              0.9999742180477406
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7315,
+              0.9999575205172219
+            ],
+            [
+              5.7315,
+              0.9999412035856325
+            ],
+            [
+              5.7315,
+              0.9999274173781802
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.8541666666482826,
+      "raw_sha256": "c5165d21f3d3750a9d0b5d4c5a7045cfef4e0e914b7659c51d0f8e20b959119d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9284448:end_sample=9574752,asetpts=PTS-STARTPTS,atempo=0.9840000000000070,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-037.wav"
+      ]
+    },
+    {
+      "block": 38,
+      "source_beat_indices": [
+        608,
+        624
+      ],
+      "source_anchors_seconds": [
+        199.074,
+        204.312
+      ],
+      "target_anchors_seconds": [
+        202.82614181175876,
+        208.1594751450921
+      ],
+      "tempo_factor": 0.9821249999999981,
+      "source_guard_samples": [
+        9536352,
+        9826176
+      ],
+      "output_offset_samples": 9716453,
+      "observed_raw_anchors_seconds": [
+        0.4000416666666667,
+        5.7327916666666665
+      ],
+      "waveform_correlations": [
+        0.9998558880941102,
+        0.9999999667761222
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4000416666666667,
+              0.9999369986273432
+            ],
+            [
+              0.4000416666666667,
+              0.9998964711270509
+            ],
+            [
+              0.4000416666666667,
+              0.9998558880941102
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              5.7327916666666665,
+              0.9999999768094904
+            ],
+            [
+              5.7327916666666665,
+              0.9999999683321017
+            ],
+            [
+              5.7327916666666665,
+              0.9999999667761222
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -0.583333333342928,
+      "raw_sha256": "2cc5f4be4e678be4848268af5507577f3058a4acbac3c139fcdf9f992474ab47",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9536352:end_sample=9826176,asetpts=PTS-STARTPTS,atempo=0.9821249999999981,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-038.wav"
+      ]
+    },
+    {
+      "block": 39,
+      "source_beat_indices": [
+        624,
+        632
+      ],
+      "source_anchors_seconds": [
+        204.312,
+        206.932
+      ],
+      "target_anchors_seconds": [
+        208.1594751450921,
+        210.82614181175876
+      ],
+      "tempo_factor": 0.9824999999999945,
+      "source_guard_samples": [
+        9787776,
+        9964800
+      ],
+      "output_offset_samples": 9972455,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        3.0649583333333332
+      ],
+      "waveform_correlations": [
+        0.9999999644819376,
+        0.9999994577643269
+      ],
+      "waveform_anchor_evidence": [
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              0.4,
+              0.9999999739868836
+            ],
+            [
+              0.4,
+              0.999999965390216
+            ],
+            [
+              0.4,
+              0.9999999644819376
+            ]
+          ]
+        },
+        {
+          "method": "full-band",
+          "positions_and_correlations": [
+            [
+              3.0649583333333332,
+              0.9999995122707229
+            ],
+            [
+              3.0649583333333332,
+              0.999999519244004
+            ],
+            [
+              3.0649583333333332,
+              0.9999994577643269
+            ]
+          ]
+        }
+      ],
+      "observed_end_error_ms": -1.7083333333238748,
+      "raw_sha256": "86e6cba9e86d77d348a3f9b40697a337610c12e9c51cbf8a9a5c3da302848185",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/17__이어지는 소리__Light__Guitar-led Jazzy Jungle__NA.wav",
+        "-af",
+        "atrim=start_sample=9787776:end_sample=9964800,asetpts=PTS-STARTPTS,atempo=0.9824999999999945,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-17/block-039.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

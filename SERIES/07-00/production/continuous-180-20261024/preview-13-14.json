@@ -1,0 +1,57 @@
+{
+  "label": "13-14",
+  "path": "SERIES/07-00/output/continuous-180-20261024/transitions/13-14.wav",
+  "sha256": "b6dccc435df2fe80b60cdae7840be810674acdde9a5cb44c93cb450de94a627d",
+  "samples": 768000,
+  "overlap_preview_samples": [
+    256000,
+    512000
+  ],
+  "minimum_overlap_100ms_rms_dbfs": -23.206756186269043,
+  "peak_abs": 0.6029853820800781,
+  "shared_observed_quarters": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    12,
+    13,
+    14,
+    15
+  ],
+  "cross_source_quarter_phase": {
+    "count": 12,
+    "median_ms": 4.773959005888173e-12,
+    "p90_abs_ms": 11.600000000013335,
+    "max_abs_ms": 14.000000000011003
+  },
+  "equal_power_fade": {
+    "out": "cos(0..pi/2)",
+    "in": "sin(0..pi/2)",
+    "squared_gains_sum": 1
+  },
+  "source_body_before_and_after_preserved_at_constant_gain": true,
+  "loudness": {
+    "integrated_lufs": -16.42,
+    "true_peak_dbtp": -4.38,
+    "loudness_range_lu": 3.5,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-nostdin",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/SERIES/07-00/output/continuous-180-20261024/transitions/13-14.wav",
+      "-af",
+      "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
+      "-f",
+      "null",
+      "-"
+    ]
+  },
+  "technical_gate_pass": true,
+  "listener_approved": false
+}

@@ -1,8 +1,18 @@
 # Session State — Wavvy
 
-> Last updated: 2026-10-24 (06:30 발매 마감·업로드 후 승인 미디어 정리 완료)
+> Last updated: 2026-10-24 (07:00 180 BPM·2회 연속 음원 완성 / 06:30 원본 재시도 6 성공·11 거절)
 
-## 2026-10-24 06:30 최종 발매·보관 기록
+## 2026-10-24 07:00 재제작 — 현재 작업
+
+젠이 삭제한 이전 영상을 대신해 같은 선택 ID 20곡을 180 BPM으로 보정하고 박자를 연결해 두 번 재생하는 새 영상을 제작한다. 원본 WAV 20/20곡 재확보·형식·길이·새 해시 대조를 완료했다. 과거 WAV와 새 다운로드의 해시가 다르므로 같은 바이트라고 주장하지 않는다. 20곡의 음높이 유지 보정과 독립 박자 분석을 완료했다. 40개 곡 배치·39개 전환(20→1 포함)의 AAC는 `SERIES/07-00/output/continuous-180-20261024/continuous-mix-0700-repeat2.m4a`이며 6,722.858833초, SHA `69304f102a2455446252661fb1696afad94579ebcfab2cde8b559038b53a5afe`다. 전환별 16초 WAV 20개와 실제 시작 시각 40개도 남겼다. 최종 음량 -15.95 LUFS·true peak -3.04 dBTP, 저장 파일 59곳의 시간 차이 0샘플이다. 독립 Astra/high 오디오 검토 CLEAN이며 별도로 두 번째 회차 본문 20곳도 대조했다. 검토는 청취 승인이 아니고 새 음원 청취 확인·제목 승인·영상·업로드는 아직 전이다.
+
+새 음원 기록은 `production/continuous-180-20261024/manifest.json`, 독립 검토는 `.ai/reviews/2026-10-24-0700-continuous-audio-review.md`다. 새 완성 믹스의 발매 계약은 아직 현행화 전이며 일반 `validate`는 대체된 옛 loop 입력 부재로 실패한다. 이를 음원 실패나 발매 준비 PASS로 섞어 말하지 않는다. 공식 상태는 revision 93 `concept_draft`로 승격하지 않았고 state check는 PASS다. 상태 도구의 일반 문구 `Draft track sources`는 이번 재제작의 실제 다음 작업이 아니다. 같은 선택 20곡을 새로 생성하지 말고 concept의 Current Audio와 계획을 따른다.
+
+썸네일은 젠이 한국 도심을 위에서 본 세 러너 장면을 선택하고 JPG·PSD를 직접 제공했다. 최종 `thumbnail-prompt.txt`, `thumbnail-source.png`, `thumb.psd`, `thumb.jpg` 네 파일을 남겼다. 승인 범위의 썸네일 과정 자료 20개·51,719,610바이트를 삭제하고 전부 부재·보존 4개 불변을 확인했다. 격리 Astra/high 검토는 CLEAN이다. 음원·음원 진행 자료·Downloads 원본·다른 시리즈는 삭제하지 않았다. 현재 입력과 실제 진행은 `SERIES/07-00/concept.md`, `.ai/plans/2026-10-24-0700-180bpm-remaster.md`, `SERIES/07-00/production/`을 따른다. 06:30의 YouTube 발매본은 변경하지 않으며 별도 요청한 Suno 재시도 결과는 다음 절을 따른다.
+
+## 2026-10-24 06:30 최신 추가 재시도와 최종 발매·보관 기록
+
+젠의 새 요청으로 보관 원본 6·11번을 속도 변경 없이 각각 한 번 Suno에 업로드했다. 6번 ‘다리의 불꽃’은 성공했고 신규 ID `5dc324ff-4495-4c19-83a9-d8be070a3de4`, 제목 `6. 다리의 불꽃`, 3:14·UPLOAD·재생 표시를 확인했다. 11번은 `This audio matches an existing recording`으로 거절됐다. 성공 1·거절 1·대기 0, 현재 19곡이다. 두 원본 불변, 임시 사본 4개 정리, 기존 보호 파일 46개 불변을 실측했고 독립 검토 CLEAN이다. 원시는 `SERIES/06-30/production/suno-two-track-retry-20261024-latest.json`, 부모 확인은 `.ai/validation/2026-10-24-0630-latest-retry-controller.json`이다. YouTube 발매는 바꾸지 않았으며 uploaded gate는 PASS다. 추가 자동 재시도는 없다. 다음 문단은 이 추가 재시도 전 마감 기록이다.
 
 승인 제목으로 YouTube 영상 `FUBJ6OBTzoI`를 공개했다. 20곡×2회·2:06:10.660·40챕터이며 일반 댓글 1개·좋아요와 SD/HD/4K 완료를 확인했다. 업로드 후 영상·믹스는 승인 삭제했다. 이번 06:30의 과정 기록만 정리하며 다른 시리즈 기록은 보존한다. 최종 사용자 JPG·PSD, 원문 20개, 최종 선택·제작·게시 기록과 6·11번 WAV 두 개를 보관한다. 6·11번을 보관본보다 2 BPM 빠르게 만든 사본(처리 목표 176→178 BPM)으로 각각 한 번 재업로드했으나 모두 기존 녹음 일치로 거절됐다. 성공 0·거절 2·대기 0, Suno 화면 18곡이다. 두 원본은 변경 없이 보관하고 이번 임시 사본은 삭제했다. 추가 재시도 계획은 없다. 마지막 Suno 재업로드 결과와 정리 수량은 `SERIES/06-30/production/final-closeout-20261024.json`, 최종 공개 문안과 보관 기준은 `SERIES/06-30/concept.md`를 따른다. 제작·게시할 작업은 남아 있지 않다.
 

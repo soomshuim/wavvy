@@ -1,0 +1,2291 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 14,
+  "title": "하나씩",
+  "candidate_id": "ccb46537-3f33-4577-80c2-dc70bbfa65e1",
+  "source_path": "SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+  "source_sha256": "4ca2108ac65335584b2dececc224f50c762d9f3dd760ebd71b91e709cffb1e69",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/14.json",
+  "analysis_sha256": "3c153db3a8ddc68c743cc3ac67989669433867d933b2b438ed273415fbc5bd99",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/14__하나씩__180.wav",
+  "output_sha256": "ae30e92c8c5ede4dd0a4622f3c58e8c794b242a8900f99fcfd388a47aded2bb6",
+  "source_duration_seconds": 190.8,
+  "output_duration_seconds": 197.93252083333334,
+  "output_peak_linear": 0.6002197265625,
+  "first_grid_beat_output_seconds": 0.0,
+  "grid_beat_count": 591,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 203.72434042076304,
+        "mid": 179.65594235206095,
+        "high": 179.868848360986
+      },
+      "band_strength": {
+        "low": 0.6495085319626679,
+        "mid": 0.6997233720318178,
+        "high": 0.8098445191331551
+      },
+      "median_bpm": 179.868848360986,
+      "band_spread_bpm": 24.068398068702095
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 180.2164135017278,
+        "mid": 179.91082559893985,
+        "high": 179.9342950342346
+      },
+      "band_strength": {
+        "low": 0.6703994162319364,
+        "mid": 0.7045280783283676,
+        "high": 0.8376191668561825
+      },
+      "median_bpm": 179.9342950342346,
+      "band_spread_bpm": 0.30558790278794845
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 179.87921243489933,
+        "mid": 179.87955633120714,
+        "high": 179.94425320036117
+      },
+      "band_strength": {
+        "low": 0.6818373402038764,
+        "mid": 0.6964911529456669,
+        "high": 0.8216749890967407
+      },
+      "median_bpm": 179.87955633120714,
+      "band_spread_bpm": 0.06504076546184479
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 179.9865071824528,
+        "mid": 179.87053517007467,
+        "high": 179.9118200341726
+      },
+      "band_strength": {
+        "low": 0.7092408005878262,
+        "mid": 0.6797241878811563,
+        "high": 0.8735307209594668
+      },
+      "median_bpm": 179.9118200341726,
+      "band_spread_bpm": 0.11597201237813692
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.7367995098674,
+        "mid": 179.90518388808988,
+        "high": 179.97037051284363
+      },
+      "band_strength": {
+        "low": 0.6878511309886232,
+        "mid": 0.6500185322607768,
+        "high": 0.7260249539400898
+      },
+      "median_bpm": 179.90518388808988,
+      "band_spread_bpm": 0.2335710029762197
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.02807507159488,
+        "mid": 179.94068082728202,
+        "high": 180.0851432694009
+      },
+      "band_strength": {
+        "low": 0.700270680991875,
+        "mid": 0.7377804268200246,
+        "high": 0.7698075660154856
+      },
+      "median_bpm": 180.02807507159488,
+      "band_spread_bpm": 0.14446244211887915
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 180.05740121708337,
+        "mid": 179.94496832917173,
+        "high": 179.96856588347475
+      },
+      "band_strength": {
+        "low": 0.7449568257249337,
+        "mid": 0.7331589507465527,
+        "high": 0.7805584018724271
+      },
+      "median_bpm": 179.96856588347475,
+      "band_spread_bpm": 0.11243288791163764
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 180.1111642275561,
+        "mid": 179.97232107610168,
+        "high": 179.9969170649951
+      },
+      "band_strength": {
+        "low": 0.7634482093258284,
+        "mid": 0.7622715025033052,
+        "high": 0.8031161201879876
+      },
+      "median_bpm": 179.9969170649951,
+      "band_spread_bpm": 0.1388431514544095
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.04842765501516,
+        "mid": 179.93078566821924,
+        "high": 179.98835511477662
+      },
+      "band_strength": {
+        "low": 0.7846042681087174,
+        "mid": 0.8281536420503524,
+        "high": 0.9623336077225515
+      },
+      "median_bpm": 179.98835511477662,
+      "band_spread_bpm": 0.11764198679591686
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.97314505593764,
+        "mid": 180.08398565793365,
+        "high": 180.0806432428514
+      },
+      "band_strength": {
+        "low": 0.7887068311168053,
+        "mid": 0.7392567236804867,
+        "high": 0.8515421950141554
+      },
+      "median_bpm": 180.0806432428514,
+      "band_spread_bpm": 0.11084060199601709
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.04523663561943,
+        "mid": 180.0925382068195,
+        "high": 180.19851937540813
+      },
+      "band_strength": {
+        "low": 0.7787216154755694,
+        "mid": 0.7534827471702636,
+        "high": 0.8475041079275263
+      },
+      "median_bpm": 180.0925382068195,
+      "band_spread_bpm": 0.15328273978869333
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.90694212369783,
+        "mid": 179.9953568638923,
+        "high": 179.97184531341566
+      },
+      "band_strength": {
+        "low": 0.7447990436017026,
+        "mid": 0.730185164655426,
+        "high": 0.772546065024145
+      },
+      "median_bpm": 179.97184531341566,
+      "band_spread_bpm": 0.08841474019448015
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.07308318468577,
+        "mid": 180.15213988283918,
+        "high": 180.02272544369362
+      },
+      "band_strength": {
+        "low": 0.7399574376934934,
+        "mid": 0.7039386522820262,
+        "high": 0.7443983942525266
+      },
+      "median_bpm": 180.07308318468577,
+      "band_spread_bpm": 0.12941443914556316
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.9706157792799,
+        "mid": 180.01897154491988,
+        "high": 179.9440331084363
+      },
+      "band_strength": {
+        "low": 0.7520243405465445,
+        "mid": 0.7250437249623172,
+        "high": 0.7503334572449578
+      },
+      "median_bpm": 179.9706157792799,
+      "band_spread_bpm": 0.07493843648359189
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 179.94856019143498,
+        "mid": 179.94294990948868,
+        "high": 179.8591662251312
+      },
+      "band_strength": {
+        "low": 0.771416963027128,
+        "mid": 0.7224564049996269,
+        "high": 0.7211339007632852
+      },
+      "median_bpm": 179.94294990948868,
+      "band_spread_bpm": 0.08939396630378837
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.9086322316967,
+        "mid": 179.90283228400483,
+        "high": 180.0034166885941
+      },
+      "band_strength": {
+        "low": 0.8308795149274416,
+        "mid": 0.7829226330602529,
+        "high": 0.7495031053843626
+      },
+      "median_bpm": 179.9086322316967,
+      "band_spread_bpm": 0.10058440458925588
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.83018354490318,
+        "mid": 179.77045134903446,
+        "high": 179.89501049545416
+      },
+      "band_strength": {
+        "low": 0.8518210361656613,
+        "mid": 0.8033974805938987,
+        "high": 0.8167315034629425
+      },
+      "median_bpm": 179.83018354490318,
+      "band_spread_bpm": 0.12455914641969912
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.9309943695483,
+        "mid": 179.93493198032533,
+        "high": 180.12622569584386
+      },
+      "band_strength": {
+        "low": 0.8284454599317561,
+        "mid": 0.7840926672689831,
+        "high": 0.8468212351214679
+      },
+      "median_bpm": 179.93493198032533,
+      "band_spread_bpm": 0.19523132629555562
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.82358060932847,
+        "mid": 179.90264106857546,
+        "high": 180.04614100942015
+      },
+      "band_strength": {
+        "low": 0.7562645410754145,
+        "mid": 0.8106406144216171,
+        "high": 0.8489464337408387
+      },
+      "median_bpm": 179.90264106857546,
+      "band_spread_bpm": 0.22256040009168032
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 180.07063454056546,
+        "mid": 179.97906812522763,
+        "high": 179.96035842682784
+      },
+      "band_strength": {
+        "low": 0.6153687974828195,
+        "mid": 0.741214197731426,
+        "high": 0.8888113766526367
+      },
+      "median_bpm": 179.97906812522763,
+      "band_spread_bpm": 0.11027611373762625
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.06222715068705,
+        "mid": 180.21315817957793,
+        "high": 180.05918496180632
+      },
+      "band_strength": {
+        "low": 0.6389358083668998,
+        "mid": 0.7102873799832861,
+        "high": 0.8145832891814486
+      },
+      "median_bpm": 180.06222715068705,
+      "band_spread_bpm": 0.15397321777160755
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 179.85302645783875,
+        "mid": 180.11240544225274,
+        "high": 179.81578248885694
+      },
+      "band_strength": {
+        "low": 0.6536704194417937,
+        "mid": 0.692850808141874,
+        "high": 0.8339404316344273
+      },
+      "median_bpm": 179.85302645783875,
+      "band_spread_bpm": 0.29662295339579714
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 179.83499972234426,
+        "mid": 179.9140889271223,
+        "high": 179.8221877469263
+      },
+      "band_strength": {
+        "low": 0.6941475757656081,
+        "mid": 0.6758597218288449,
+        "high": 0.7965702276167151
+      },
+      "median_bpm": 179.83499972234426,
+      "band_spread_bpm": 0.0919011801960039
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 179.94289874898334,
+        "mid": 179.97729438109695,
+        "high": 179.89996996003006
+      },
+      "band_strength": {
+        "low": 0.7091356476469599,
+        "mid": 0.6736037164346537,
+        "high": 0.7282083476991698
+      },
+      "median_bpm": 179.94289874898334,
+      "band_spread_bpm": 0.07732442106689064
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 179.83887967434316,
+        "mid": 179.85011242797145,
+        "high": 180.0363977169742
+      },
+      "band_strength": {
+        "low": 0.773399259418111,
+        "mid": 0.7490335424034368,
+        "high": 0.71111797314144
+      },
+      "median_bpm": 179.85011242797145,
+      "band_spread_bpm": 0.19751804263103168
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 179.80697545653305,
+        "mid": 179.74995095160855,
+        "high": 179.97641642404037
+      },
+      "band_strength": {
+        "low": 0.7826424755594106,
+        "mid": 0.8063848896381427,
+        "high": 0.710523921329161
+      },
+      "median_bpm": 179.80697545653305,
+      "band_spread_bpm": 0.22646547243181203
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 179.8799133306827,
+        "mid": 179.95694339574098,
+        "high": 180.01771979253456
+      },
+      "band_strength": {
+        "low": 0.7847676842939847,
+        "mid": 0.848097564035055,
+        "high": 0.8073335550920151
+      },
+      "median_bpm": 179.95694339574098,
+      "band_spread_bpm": 0.1378064618518522
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 179.77381795912626,
+        "mid": 180.03462236842216,
+        "high": 179.9814371397972
+      },
+      "band_strength": {
+        "low": 0.7346382622487501,
+        "mid": 0.8596396206189804,
+        "high": 0.9342625712330727
+      },
+      "median_bpm": 179.9814371397972,
+      "band_spread_bpm": 0.26080440929590054
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 180.3222771187918,
+        "mid": 180.14081032633678,
+        "high": 180.1855521824935
+      },
+      "band_strength": {
+        "low": 0.8045023822113043,
+        "mid": 0.8628158887651133,
+        "high": 1.0056839521384842
+      },
+      "median_bpm": 180.1855521824935,
+      "band_spread_bpm": 0.18146679245501218
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.76452836910534,
+        "mid": 180.03850837704957,
+        "high": 180.1000225921053
+      },
+      "band_strength": {
+        "low": 0.7719579394442803,
+        "mid": 0.9072797209314202,
+        "high": 1.0030073346843842
+      },
+      "median_bpm": 180.03850837704957,
+      "band_spread_bpm": 0.3354942229999551
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 179.86574846151768,
+        "mid": 180.13650237090192,
+        "high": 180.1895283532421
+      },
+      "band_strength": {
+        "low": 0.7630826974487486,
+        "mid": 0.866420710004795,
+        "high": 0.9474126055209843
+      },
+      "median_bpm": 180.13650237090192,
+      "band_spread_bpm": 0.32377989172442767
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 179.70134926236722,
+        "mid": 179.99907217066402,
+        "high": 180.14449614240317
+      },
+      "band_strength": {
+        "low": 0.7686447534074607,
+        "mid": 0.8383126045351874,
+        "high": 0.8715844309432152
+      },
+      "median_bpm": 179.99907217066402,
+      "band_spread_bpm": 0.4431468800359539
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 179.43747261662023,
+        "mid": 179.93325168995895,
+        "high": 180.0544202375345
+      },
+      "band_strength": {
+        "low": 0.7617684059922614,
+        "mid": 0.8208979833895254,
+        "high": 0.8047757614202468
+      },
+      "median_bpm": 179.93325168995895,
+      "band_spread_bpm": 0.6169476209142601
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 179.77630723152998,
+        "mid": 180.04507077840182,
+        "high": 180.27979617001287
+      },
+      "band_strength": {
+        "low": 0.7676453020895204,
+        "mid": 0.7796205093785742,
+        "high": 0.7753315452626884
+      },
+      "median_bpm": 180.04507077840182,
+      "band_spread_bpm": 0.5034889384828887
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 179.91226745162675,
+        "mid": 180.27210999117804,
+        "high": 180.17452180280387
+      },
+      "band_strength": {
+        "low": 0.7890491108521306,
+        "mid": 0.8006300921401235,
+        "high": 0.7814154807196891
+      },
+      "median_bpm": 180.17452180280387,
+      "band_spread_bpm": 0.35984253955129475
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 179.88636149331626,
+        "mid": 180.2924291152312,
+        "high": 180.26170087879484
+      },
+      "band_strength": {
+        "low": 0.7582317430057522,
+        "mid": 0.7972839275707517,
+        "high": 0.8140630637319822
+      },
+      "median_bpm": 180.26170087879484,
+      "band_spread_bpm": 0.4060676219149286
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 180.41197828492878,
+        "mid": 180.47506832888303,
+        "high": 180.37831860393175
+      },
+      "band_strength": {
+        "low": 0.6975862487908492,
+        "mid": 0.7681639136526778,
+        "high": 0.8072994819575957
+      },
+      "median_bpm": 180.41197828492878,
+      "band_spread_bpm": 0.09674972495128031
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.83403648685604,
+    179.9706157792799,
+    180.20078192175376
+  ],
+  "leading_alignment_padding_samples": 0,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.0,
+        5.23
+      ],
+      "target_anchors_seconds": [
+        0.0,
+        5.333333333333333
+      ],
+      "tempo_factor": 0.9806250000000001,
+      "source_guard_samples": [
+        0,
+        270240
+      ],
+      "output_offset_samples": 0,
+      "observed_raw_anchors_seconds": [
+        0.0,
+        5.323958333333334
+      ],
+      "waveform_correlations": [
+        0.9999988531789565,
+        0.9999999784222393
+      ],
+      "observed_end_error_ms": -9.374999999999467,
+      "raw_sha256": "f18f096c875135377be6f7fede46fcd4f9e60be9dd20a525f7eeef94c24d6ad8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=270240,asetpts=PTS-STARTPTS,atempo=0.9806250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.23,
+        10.46
+      ],
+      "target_anchors_seconds": [
+        5.333333333333333,
+        10.666666666666666
+      ],
+      "tempo_factor": 0.9806250000000001,
+      "source_guard_samples": [
+        231840,
+        521280
+      ],
+      "output_offset_samples": 236800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731916666666667
+      ],
+      "waveform_correlations": [
+        0.9999999636755833,
+        0.9999999618630074
+      ],
+      "observed_end_error_ms": -1.4166666666666217,
+      "raw_sha256": "8db3168df8ae98cc7d4255b1db189a457a9b773d356ecb0a2e073627cd0aa188",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=231840:end_sample=521280,asetpts=PTS-STARTPTS,atempo=0.9806250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.46,
+        15.678
+      ],
+      "target_anchors_seconds": [
+        10.666666666666666,
+        16.0
+      ],
+      "tempo_factor": 0.9783749999999999,
+      "source_guard_samples": [
+        482880,
+        771744
+      ],
+      "output_offset_samples": 492800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733104166666666
+      ],
+      "waveform_correlations": [
+        0.9999999557092178,
+        0.9999999601726856
+      ],
+      "observed_end_error_ms": -0.22916666666805696,
+      "raw_sha256": "e06ddb99825470deb0d5378108fcc692bb410fbd72bec26079cc4bbdfdf84090",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=482880:end_sample=771744,asetpts=PTS-STARTPTS,atempo=0.9783749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.678,
+        20.874
+      ],
+      "target_anchors_seconds": [
+        16.0,
+        21.333333333333332
+      ],
+      "tempo_factor": 0.9742499999999998,
+      "source_guard_samples": [
+        733344,
+        1021152
+      ],
+      "output_offset_samples": 748800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7306875
+      ],
+      "waveform_correlations": [
+        0.9999999613547251,
+        0.9999999756102229
+      ],
+      "observed_end_error_ms": -2.645833333332348,
+      "raw_sha256": "46789d5e0d31ccca3d7136b84b1becb4587a1d9b56a8c019ca27a43d3c843382",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=733344:end_sample=1021152,asetpts=PTS-STARTPTS,atempo=0.9742499999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        20.874,
+        26.07
+      ],
+      "target_anchors_seconds": [
+        21.333333333333332,
+        26.666666666666668
+      ],
+      "tempo_factor": 0.9742499999999998,
+      "source_guard_samples": [
+        982752,
+        1270560
+      ],
+      "output_offset_samples": 1004800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731625
+      ],
+      "waveform_correlations": [
+        0.9999999601223303,
+        0.9999999657001336
+      ],
+      "observed_end_error_ms": -1.7083333333358652,
+      "raw_sha256": "0a01c75ecec8093f105375661cd9e31e8df0666fb6a076e3085cdc610def138d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=982752:end_sample=1270560,asetpts=PTS-STARTPTS,atempo=0.9742499999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.07,
+        31.26
+      ],
+      "target_anchors_seconds": [
+        26.666666666666668,
+        32.0
+      ],
+      "tempo_factor": 0.9731250000000005,
+      "source_guard_samples": [
+        1232160,
+        1519680
+      ],
+      "output_offset_samples": 1260800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732104166666667
+      ],
+      "waveform_correlations": [
+        0.9999999613897744,
+        0.9999999656469212
+      ],
+      "observed_end_error_ms": -1.2291666666657264,
+      "raw_sha256": "f972553eae91988fe4be7cb630cc4a1c0046b3b0b526ae7d57061ca97ff0f912",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1232160:end_sample=1519680,asetpts=PTS-STARTPTS,atempo=0.9731250000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        31.26,
+        36.444
+      ],
+      "target_anchors_seconds": [
+        32.0,
+        37.333333333333336
+      ],
+      "tempo_factor": 0.9719999999999998,
+      "source_guard_samples": [
+        1481280,
+        1768512
+      ],
+      "output_offset_samples": 1516800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730270833333333
+      ],
+      "waveform_correlations": [
+        0.9999999640377708,
+        0.9999999574940452
+      ],
+      "observed_end_error_ms": -3.0625000000030767,
+      "raw_sha256": "d0cdb0829a81dcb21708bb8b9fff51272d7ecfd963c0000b67fd7c88b1c5b77d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1481280:end_sample=1768512,asetpts=PTS-STARTPTS,atempo=0.9719999999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        36.444,
+        41.622
+      ],
+      "target_anchors_seconds": [
+        37.333333333333336,
+        42.666666666666664
+      ],
+      "tempo_factor": 0.9708750000000004,
+      "source_guard_samples": [
+        1730112,
+        2017056
+      ],
+      "output_offset_samples": 1772800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728583333333333
+      ],
+      "waveform_correlations": [
+        0.9999999663262762,
+        0.9999999820273399
+      ],
+      "observed_end_error_ms": -4.749999999996035,
+      "raw_sha256": "6b3293c4b3e1483aa9c6fafafcf2726e911b845bcb2cd103511b797d7171b5f7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1730112:end_sample=2017056,asetpts=PTS-STARTPTS,atempo=0.9708750000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        41.622,
+        46.796
+      ],
+      "target_anchors_seconds": [
+        42.666666666666664,
+        48.0
+      ],
+      "tempo_factor": 0.9701249999999995,
+      "source_guard_samples": [
+        1978656,
+        2265408
+      ],
+      "output_offset_samples": 2028800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.72825
+      ],
+      "waveform_correlations": [
+        0.9999999618184086,
+        0.9999999845539251
+      ],
+      "observed_end_error_ms": -5.083333333335993,
+      "raw_sha256": "f968d359d20d6971793c6453beaccd66d335f97259fd9a87c549039643b54e0f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1978656:end_sample=2265408,asetpts=PTS-STARTPTS,atempo=0.9701249999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        46.796,
+        51.958
+      ],
+      "target_anchors_seconds": [
+        48.0,
+        53.333333333333336
+      ],
+      "tempo_factor": 0.9678749999999994,
+      "source_guard_samples": [
+        2227008,
+        2513184
+      ],
+      "output_offset_samples": 2284800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731270833333333
+      ],
+      "waveform_correlations": [
+        0.9999999669840609,
+        0.9999999204660978
+      ],
+      "observed_end_error_ms": -2.0625000000027427,
+      "raw_sha256": "c6098d0d38c080f30ba6e912b1b3c2185dc8ed01c5311f952902b46322a6c42b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2227008:end_sample=2513184,asetpts=PTS-STARTPTS,atempo=0.9678749999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        51.958,
+        57.122
+      ],
+      "target_anchors_seconds": [
+        53.333333333333336,
+        58.666666666666664
+      ],
+      "tempo_factor": 0.9682500000000012,
+      "source_guard_samples": [
+        2474784,
+        2761056
+      ],
+      "output_offset_samples": 2540800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737708333333333
+      ],
+      "waveform_correlations": [
+        0.9999999632281004,
+        0.9930081325164243
+      ],
+      "observed_end_error_ms": 4.375000000004015,
+      "raw_sha256": "9c5e385b638197b996d5d7eac2f9cb5c562a7f847813a9ee71e798d62ee5a7f2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2474784:end_sample=2761056,asetpts=PTS-STARTPTS,atempo=0.9682500000000012,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        57.122,
+        62.278
+      ],
+      "target_anchors_seconds": [
+        58.666666666666664,
+        64.0
+      ],
+      "tempo_factor": 0.9667499999999993,
+      "source_guard_samples": [
+        2722656,
+        3008544
+      ],
+      "output_offset_samples": 2796800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7318125
+      ],
+      "waveform_correlations": [
+        0.999999960745413,
+        0.9999999639301228
+      ],
+      "observed_end_error_ms": -1.5208333333358581,
+      "raw_sha256": "2f85d8472d7e2f11aa9b59cbab4c3c9f372820847017fdb01fd0e81b612e4004",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2722656:end_sample=3008544,asetpts=PTS-STARTPTS,atempo=0.9667499999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        62.278,
+        67.432
+      ],
+      "target_anchors_seconds": [
+        64.0,
+        69.33333333333333
+      ],
+      "tempo_factor": 0.9663750000000015,
+      "source_guard_samples": [
+        2970144,
+        3255936
+      ],
+      "output_offset_samples": 3052800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731229166666667
+      ],
+      "waveform_correlations": [
+        0.9999999619597792,
+        0.9999999700888285
+      ],
+      "observed_end_error_ms": -2.1041666666619108,
+      "raw_sha256": "b8a81a44a193f282855d3bbe3120209895b8a7976f0335ef888466b9bfc8eff9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2970144:end_sample=3255936,asetpts=PTS-STARTPTS,atempo=0.9663750000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        67.432,
+        72.574
+      ],
+      "target_anchors_seconds": [
+        69.33333333333333,
+        74.66666666666667
+      ],
+      "tempo_factor": 0.9641249999999976,
+      "source_guard_samples": [
+        3217536,
+        3502752
+      ],
+      "output_offset_samples": 3308800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730604166666667
+      ],
+      "waveform_correlations": [
+        0.9999618553700294,
+        0.9999999744570318
+      ],
+      "observed_end_error_ms": -2.7291666666764414,
+      "raw_sha256": "e3ef2eee42c48f6cdff486e9d7b4caea4f4b031a933f587451b107f4aa41c642",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3217536:end_sample=3502752,asetpts=PTS-STARTPTS,atempo=0.9641249999999976,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        72.574,
+        77.722
+      ],
+      "target_anchors_seconds": [
+        74.66666666666667,
+        80.0
+      ],
+      "tempo_factor": 0.9652500000000002,
+      "source_guard_samples": [
+        3464352,
+        3749856
+      ],
+      "output_offset_samples": 3564800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7331875
+      ],
+      "waveform_correlations": [
+        0.9999999647434352,
+        0.999987048533037
+      ],
+      "observed_end_error_ms": -0.1458333333292927,
+      "raw_sha256": "42563164d4311ba90777a8c654ab8b4e0c7fa59ff3babfdcdb63835aee2350b9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3464352:end_sample=3749856,asetpts=PTS-STARTPTS,atempo=0.9652500000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        77.722,
+        82.852
+      ],
+      "target_anchors_seconds": [
+        80.0,
+        85.33333333333333
+      ],
+      "tempo_factor": 0.9618750000000027,
+      "source_guard_samples": [
+        3711456,
+        3996096
+      ],
+      "output_offset_samples": 3820800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.733770833333334
+      ],
+      "waveform_correlations": [
+        0.9999828868405414,
+        0.999999961383307
+      ],
+      "observed_end_error_ms": 0.43750000000475353,
+      "raw_sha256": "c5114376567a35c548625b7d1a4a6b39faf3cb7020e3f610606fb97362475f97",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3711456:end_sample=3996096,asetpts=PTS-STARTPTS,atempo=0.9618750000000027,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        82.852,
+        87.988
+      ],
+      "target_anchors_seconds": [
+        85.33333333333333,
+        90.66666666666667
+      ],
+      "tempo_factor": 0.9629999999999975,
+      "source_guard_samples": [
+        3957696,
+        4242624
+      ],
+      "output_offset_samples": 4076800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7341875
+      ],
+      "waveform_correlations": [
+        0.9999999631895934,
+        0.999999964809811
+      ],
+      "observed_end_error_ms": 0.8541666666568304,
+      "raw_sha256": "c0593a4c4eb0fe06225705878cc5aab543d0b3174e58c9538802d036060a31a9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3957696:end_sample=4242624,asetpts=PTS-STARTPTS,atempo=0.9629999999999975,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        87.988,
+        93.114
+      ],
+      "target_anchors_seconds": [
+        90.66666666666667,
+        96.0
+      ],
+      "tempo_factor": 0.9611250000000018,
+      "source_guard_samples": [
+        4204224,
+        4488672
+      ],
+      "output_offset_samples": 4332800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.737229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999639968802,
+        0.9999999749571596
+      ],
+      "observed_end_error_ms": 3.8958333333374284,
+      "raw_sha256": "03c1c68aafef940e1804241f7c6a56f37acdb462e382859273b2491a3068490c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4204224:end_sample=4488672,asetpts=PTS-STARTPTS,atempo=0.9611250000000018,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        93.114,
+        98.228
+      ],
+      "target_anchors_seconds": [
+        96.0,
+        101.33333333333333
+      ],
+      "tempo_factor": 0.958874999999999,
+      "source_guard_samples": [
+        4450272,
+        4734144
+      ],
+      "output_offset_samples": 4588667,
+      "observed_raw_anchors_seconds": [
+        0.40277083333333336,
+        5.746375
+      ],
+      "waveform_correlations": [
+        0.9830562308600305,
+        0.9999999828558134
+      ],
+      "observed_end_error_ms": 10.27083333333767,
+      "raw_sha256": "5f62f4adb15746b8e7a55a4375db3b775ecaa1284fbbc4b0f39a1f25114ed0eb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4450272:end_sample=4734144,asetpts=PTS-STARTPTS,atempo=0.9588749999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        98.228,
+        103.338
+      ],
+      "target_anchors_seconds": [
+        101.33333333333333,
+        106.66666666666667
+      ],
+      "tempo_factor": 0.9581249999999982,
+      "source_guard_samples": [
+        4695744,
+        4979424
+      ],
+      "output_offset_samples": 4844218,
+      "observed_raw_anchors_seconds": [
+        0.412125,
+        5.744458333333333
+      ],
+      "waveform_correlations": [
+        0.9999999772642072,
+        0.999999967320318
+      ],
+      "observed_end_error_ms": -1.0000000000092157,
+      "raw_sha256": "348330d89a40be37358b75a910c1c7a535dc42619b24b711f44593f379052061",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4695744:end_sample=4979424,asetpts=PTS-STARTPTS,atempo=0.9581249999999982,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        103.338,
+        108.45
+      ],
+      "target_anchors_seconds": [
+        106.66666666666667,
+        112.0
+      ],
+      "tempo_factor": 0.9585000000000026,
+      "source_guard_samples": [
+        4941024,
+        5224800
+      ],
+      "output_offset_samples": 5100221,
+      "observed_raw_anchors_seconds": [
+        0.4120625,
+        5.736625
+      ],
+      "waveform_correlations": [
+        0.9999999726302417,
+        0.9999999762523324
+      ],
+      "observed_end_error_ms": -8.770833333328731,
+      "raw_sha256": "c9ce84993dacf6cf47a80fee8b6e5fcbd2b580da5a93696605b1072f11b71975",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4941024:end_sample=5224800,asetpts=PTS-STARTPTS,atempo=0.9585000000000026,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        108.45,
+        113.56
+      ],
+      "target_anchors_seconds": [
+        112.0,
+        117.33333333333333
+      ],
+      "tempo_factor": 0.9581250000000008,
+      "source_guard_samples": [
+        5186400,
+        5470080
+      ],
+      "output_offset_samples": 5356217,
+      "observed_raw_anchors_seconds": [
+        0.4121458333333333,
+        5.740083333333334
+      ],
+      "waveform_correlations": [
+        0.9999999780774206,
+        0.999999967408276
+      ],
+      "observed_end_error_ms": -5.3958333333286035,
+      "raw_sha256": "42705bdb28623a6155caffba55d385f0912af6c12d1b2798b2587ff013f8ee18",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5186400:end_sample=5470080,asetpts=PTS-STARTPTS,atempo=0.9581250000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        113.56,
+        118.672
+      ],
+      "target_anchors_seconds": [
+        117.33333333333333,
+        122.66666666666667
+      ],
+      "tempo_factor": 0.9584999999999974,
+      "source_guard_samples": [
+        5431680,
+        5715456
+      ],
+      "output_offset_samples": 5612454,
+      "observed_raw_anchors_seconds": [
+        0.40720833333333334,
+        5.747416666666667
+      ],
+      "waveform_correlations": [
+        0.9999999684633181,
+        0.9999999837932938
+      ],
+      "observed_end_error_ms": 6.874999999991083,
+      "raw_sha256": "057ad955014a7aedbfb70a96226fa6b3b218f0939554285b45d955c97695eab0",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5431680:end_sample=5715456,asetpts=PTS-STARTPTS,atempo=0.9584999999999974,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        118.672,
+        123.774
+      ],
+      "target_anchors_seconds": [
+        122.66666666666667,
+        128.0
+      ],
+      "tempo_factor": 0.9566250000000016,
+      "source_guard_samples": [
+        5677056,
+        5960352
+      ],
+      "output_offset_samples": 5868113,
+      "observed_raw_anchors_seconds": [
+        0.4143125,
+        5.736166666666667
+      ],
+      "waveform_correlations": [
+        0.9999999850246472,
+        0.9999999720278628
+      ],
+      "observed_end_error_ms": -11.479166666662266,
+      "raw_sha256": "f01a9250201b15e9c31a706b88624d074d6516b81f1dce8458bcac88a36129cf",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5677056:end_sample=5960352,asetpts=PTS-STARTPTS,atempo=0.9566250000000016,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        123.774,
+        128.874
+      ],
+      "target_anchors_seconds": [
+        128.0,
+        133.33333333333334
+      ],
+      "tempo_factor": 0.9562499999999973,
+      "source_guard_samples": [
+        5921952,
+        6205152
+      ],
+      "output_offset_samples": 6124452,
+      "observed_raw_anchors_seconds": [
+        0.40725,
+        5.737333333333333
+      ],
+      "waveform_correlations": [
+        0.9976290401031153,
+        0.9999999749221729
+      ],
+      "observed_end_error_ms": -3.250000000010189,
+      "raw_sha256": "ff646f26f7af74da83b356fc07beaafccc1b427b604bb8283fd2b5cfce596dbf",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5921952:end_sample=6205152,asetpts=PTS-STARTPTS,atempo=0.9562499999999973,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        128.874,
+        133.972
+      ],
+      "target_anchors_seconds": [
+        133.33333333333334,
+        138.66666666666666
+      ],
+      "tempo_factor": 0.9558750000000059,
+      "source_guard_samples": [
+        6166752,
+        6449856
+      ],
+      "output_offset_samples": 6380408,
+      "observed_raw_anchors_seconds": [
+        0.4081666666666667,
+        5.741854166666666
+      ],
+      "waveform_correlations": [
+        0.999999973316852,
+        0.999999968814003
+      ],
+      "observed_end_error_ms": 0.3541666666855292,
+      "raw_sha256": "dea2db4fa9b331e812f2731906c89efea472b543366b22ed10709ea811199bd8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6166752:end_sample=6449856,asetpts=PTS-STARTPTS,atempo=0.9558750000000059,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        133.972,
+        139.07
+      ],
+      "target_anchors_seconds": [
+        138.66666666666666,
+        144.0
+      ],
+      "tempo_factor": 0.9558749999999955,
+      "source_guard_samples": [
+        6411456,
+        6694560
+      ],
+      "output_offset_samples": 6636509,
+      "observed_raw_anchors_seconds": [
+        0.4060625,
+        5.737979166666666
+      ],
+      "waveform_correlations": [
+        0.9999999693986519,
+        0.9989075865573093
+      ],
+      "observed_end_error_ms": -1.4166666666763916,
+      "raw_sha256": "d09490dc1ef91c1bcd5ac9a5bfe2acc1c6bc79bd4a49fdc57bd97c19c6df2f70",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6411456:end_sample=6694560,asetpts=PTS-STARTPTS,atempo=0.9558749999999955,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        139.07,
+        144.178
+      ],
+      "target_anchors_seconds": [
+        144.0,
+        149.33333333333334
+      ],
+      "tempo_factor": 0.9577499999999991,
+      "source_guard_samples": [
+        6656160,
+        6939744
+      ],
+      "output_offset_samples": 6892221,
+      "observed_raw_anchors_seconds": [
+        0.4120625,
+        5.739333333333334
+      ],
+      "waveform_correlations": [
+        0.9999999664296408,
+        0.9999999697907032
+      ],
+      "observed_end_error_ms": -6.062500000009408,
+      "raw_sha256": "c240e42fd9bc3331ac8427e7ca277efd45cd63c5982e29d390ee7e5bd2547433",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6656160:end_sample=6939744,asetpts=PTS-STARTPTS,atempo=0.9577499999999991,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        144.178,
+        149.296
+      ],
+      "target_anchors_seconds": [
+        149.33333333333334,
+        154.66666666666666
+      ],
+      "tempo_factor": 0.9596250000000025,
+      "source_guard_samples": [
+        6901344,
+        7185408
+      ],
+      "output_offset_samples": 7148510,
+      "observed_raw_anchors_seconds": [
+        0.4060416666666667,
+        5.7443333333333335
+      ],
+      "waveform_correlations": [
+        0.9999999696863655,
+        0.9999999754724097
+      ],
+      "observed_end_error_ms": 4.958333333352272,
+      "raw_sha256": "b3966f6017223f3c67499bee468af3804c010df4bdf98fe0f4e1b9b66348d5d5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6901344:end_sample=7185408,asetpts=PTS-STARTPTS,atempo=0.9596250000000025,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        149.296,
+        154.414
+      ],
+      "target_anchors_seconds": [
+        154.66666666666666,
+        160.0
+      ],
+      "tempo_factor": 0.9596249999999974,
+      "source_guard_samples": [
+        7147008,
+        7431072
+      ],
+      "output_offset_samples": 7404362,
+      "observed_raw_anchors_seconds": [
+        0.409125,
+        5.7425
+      ],
+      "waveform_correlations": [
+        0.9999999719013911,
+        0.9999999740439746
+      ],
+      "observed_end_error_ms": 0.04166666665650354,
+      "raw_sha256": "1b1965c7a8057d2e0a8be6ddae57f596258d45d54297e6a271fd6f9be8066a28",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7147008:end_sample=7431072,asetpts=PTS-STARTPTS,atempo=0.9596249999999974,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        154.414,
+        159.534
+      ],
+      "target_anchors_seconds": [
+        160.0,
+        165.33333333333334
+      ],
+      "tempo_factor": 0.9599999999999992,
+      "source_guard_samples": [
+        7392672,
+        7676832
+      ],
+      "output_offset_samples": 7660800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.742416666666666
+      ],
+      "waveform_correlations": [
+        0.9999742484285544,
+        0.9999999847967609
+      ],
+      "observed_end_error_ms": 9.083333333323118,
+      "raw_sha256": "fb0b735fb1c493ef5b4fb30f9ae80f9b123caca0fc2cec5b2175dbf02ed4a5a2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7392672:end_sample=7676832,asetpts=PTS-STARTPTS,atempo=0.9599999999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        159.534,
+        164.646
+      ],
+      "target_anchors_seconds": [
+        165.33333333333334,
+        170.66666666666666
+      ],
+      "tempo_factor": 0.9585000000000025,
+      "source_guard_samples": [
+        7638432,
+        7922208
+      ],
+      "output_offset_samples": 7916412,
+      "observed_raw_anchors_seconds": [
+        0.40808333333333335,
+        5.734875
+      ],
+      "waveform_correlations": [
+        0.9999999853689435,
+        0.999345588739007
+      ],
+      "observed_end_error_ms": -6.541666666647572,
+      "raw_sha256": "274732da7888e798316ad5f95b919e26ce6524de4a3194541cc63b3deab1d795",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7638432:end_sample=7922208,asetpts=PTS-STARTPTS,atempo=0.9585000000000025,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        164.646,
+        169.762
+      ],
+      "target_anchors_seconds": [
+        170.66666666666666,
+        176.0
+      ],
+      "tempo_factor": 0.9592500000000009,
+      "source_guard_samples": [
+        7883808,
+        8167776
+      ],
+      "output_offset_samples": 8172453,
+      "observed_raw_anchors_seconds": [
+        0.40722916666666664,
+        5.737770833333333
+      ],
+      "waveform_correlations": [
+        0.9988112141290404,
+        0.9999999796166066
+      ],
+      "observed_end_error_ms": -2.7916666666758516,
+      "raw_sha256": "6336e1eb7c463c4f913bf08367822407b3908d262f594a38e2d5e2e36b71450a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7883808:end_sample=8167776,asetpts=PTS-STARTPTS,atempo=0.9592500000000009,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        169.762,
+        174.878
+      ],
+      "target_anchors_seconds": [
+        176.0,
+        181.33333333333334
+      ],
+      "tempo_factor": 0.9592499999999956,
+      "source_guard_samples": [
+        8129376,
+        8413344
+      ],
+      "output_offset_samples": 8428800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73275
+      ],
+      "waveform_correlations": [
+        0.9999706980401345,
+        0.999994321674466
+      ],
+      "observed_end_error_ms": -0.583333333342928,
+      "raw_sha256": "d3f137ce750da7c6ffb138706fd37b8bc05b302b6e4c2f4195ea98c902f83d9f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8129376:end_sample=8413344,asetpts=PTS-STARTPTS,atempo=0.9592499999999956,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        174.878,
+        179.992
+      ],
+      "target_anchors_seconds": [
+        181.33333333333334,
+        186.66666666666666
+      ],
+      "tempo_factor": 0.9588750000000043,
+      "source_guard_samples": [
+        8374944,
+        8658816
+      ],
+      "output_offset_samples": 8684800,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.741458333333333
+      ],
+      "waveform_correlations": [
+        0.9999771852639164,
+        0.9999999739384675
+      ],
+      "observed_end_error_ms": 8.125000000018368,
+      "raw_sha256": "2b7d9604a070e85bbc3e30e519d6d69dda37335c1121e2a692602a5481c9e059",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8374944:end_sample=8658816,asetpts=PTS-STARTPTS,atempo=0.9588750000000043,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        576
+      ],
+      "source_anchors_seconds": [
+        179.992,
+        185.116
+      ],
+      "target_anchors_seconds": [
+        186.66666666666666,
+        192.0
+      ],
+      "tempo_factor": 0.9607500000000028,
+      "source_guard_samples": [
+        8620416,
+        8904768
+      ],
+      "output_offset_samples": 8940433,
+      "observed_raw_anchors_seconds": [
+        0.4076458333333333,
+        5.743270833333334
+      ],
+      "waveform_correlations": [
+        0.9999999775546689,
+        0.9999999830003904
+      ],
+      "observed_end_error_ms": 2.291666666657477,
+      "raw_sha256": "f2387c210e70039046f5e21fd8ba3996b4b46017772ce4e54334bcee903ddd51",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8620416:end_sample=8904768,asetpts=PTS-STARTPTS,atempo=0.9607500000000028,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-035.wav"
+      ]
+    },
+    {
+      "block": 36,
+      "source_beat_indices": [
+        576,
+        590
+      ],
+      "source_anchors_seconds": [
+        185.116,
+        189.588
+      ],
+      "target_anchors_seconds": [
+        192.0,
+        196.66666666666666
+      ],
+      "tempo_factor": 0.958285714285712,
+      "source_guard_samples": [
+        8866368,
+        9158400
+      ],
+      "output_offset_samples": 9196220,
+      "observed_raw_anchors_seconds": [
+        0.41208333333333336,
+        5.0700625
+      ],
+      "waveform_correlations": [
+        0.9999999869990626,
+        0.9999993916265104
+      ],
+      "observed_end_error_ms": -8.687499999990855,
+      "raw_sha256": "f99528ab4d568d810619d69021d94ae42e80cf064e0c895c7059b597cfc71079",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/14__하나씩__Driven__Electronic Breakbeat Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8866368:end_sample=9158400,asetpts=PTS-STARTPTS,atempo=0.9582857142857120,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-14/block-036.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

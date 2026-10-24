@@ -1,0 +1,2108 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 11,
+  "title": "다시 해볼게",
+  "candidate_id": "ee96c338-2a08-4248-827d-82fc44da3de6",
+  "source_path": "SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+  "source_sha256": "e81f449a221e011b462972100497a3ac876e033d6699a4568a3eb6043498d1b2",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/11.json",
+  "analysis_sha256": "5dddf693551d20835bfa1bccae095372e834289f5d6d6bad78b8869052bbb46e",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/11__다시 해볼게__180.wav",
+  "output_sha256": "f261cfc72d97794283c8991bcf55f6795dd89e51d26855a7db815b4d6dcfe1ef",
+  "source_duration_seconds": 179.96,
+  "output_duration_seconds": 180.23614583333332,
+  "output_peak_linear": 0.5848388671875,
+  "first_grid_beat_output_seconds": 0.1705080545229244,
+  "grid_beat_count": 533,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.61411816144985,
+        "mid": 180.04604099293627,
+        "high": 179.7005978123858
+      },
+      "band_strength": {
+        "low": 0.8566974385386555,
+        "mid": 0.5417470586486556,
+        "high": 0.7784804232156612
+      },
+      "median_bpm": 179.7005978123858,
+      "band_spread_bpm": 0.43192283148641764
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.70167149194558,
+        "mid": 180.91593254705373,
+        "high": 179.9453571700611
+      },
+      "band_strength": {
+        "low": 0.8674343493527059,
+        "mid": 0.6486663942274166,
+        "high": 0.6893295728905732
+      },
+      "median_bpm": 179.9453571700611,
+      "band_spread_bpm": 1.2142610551081532
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 179.70132283634547,
+        "mid": 181.54990643150657,
+        "high": 180.5960927026679
+      },
+      "band_strength": {
+        "low": 0.8600008459573791,
+        "mid": 0.6447350875657248,
+        "high": 0.6811336565336163
+      },
+      "median_bpm": 180.5960927026679,
+      "band_spread_bpm": 1.8485835951611023
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 179.63792977573755,
+        "mid": 181.82563003611088,
+        "high": 181.39499270799084
+      },
+      "band_strength": {
+        "low": 0.811552176507991,
+        "mid": 0.6512784098193825,
+        "high": 0.6769372629477655
+      },
+      "median_bpm": 181.39499270799084,
+      "band_spread_bpm": 2.187700260373333
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 179.50700788116455,
+        "mid": 180.3815618435961,
+        "high": 181.54771811011014
+      },
+      "band_strength": {
+        "low": 0.6835532755384162,
+        "mid": 0.6919922215541348,
+        "high": 0.6710090182196216
+      },
+      "median_bpm": 180.3815618435961,
+      "band_spread_bpm": 2.040710228945585
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 179.64049939747682,
+        "mid": 179.942153402306,
+        "high": 180.1918920998778
+      },
+      "band_strength": {
+        "low": 0.7243283158956403,
+        "mid": 0.7947750560493659,
+        "high": 0.6830704859456626
+      },
+      "median_bpm": 179.942153402306,
+      "band_spread_bpm": 0.5513927024009888
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 179.75133492909862,
+        "mid": 180.00035557616332,
+        "high": 180.00010264016868
+      },
+      "band_strength": {
+        "low": 0.7067602371420422,
+        "mid": 0.8635946133574423,
+        "high": 0.7113067457447121
+      },
+      "median_bpm": 180.00010264016868,
+      "band_spread_bpm": 0.24902064706469673
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.8218325560342,
+        "mid": 179.94193127524179,
+        "high": 180.1199724809409
+      },
+      "band_strength": {
+        "low": 0.7179888192579574,
+        "mid": 0.869776816901228,
+        "high": 0.7182034638785684
+      },
+      "median_bpm": 179.94193127524179,
+      "band_spread_bpm": 0.2981399249067067
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 179.8780625564535,
+        "mid": 179.9534968736571,
+        "high": 179.9827574082353
+      },
+      "band_strength": {
+        "low": 0.7333215802908786,
+        "mid": 0.8498028579477938,
+        "high": 0.7442635646422187
+      },
+      "median_bpm": 179.9534968736571,
+      "band_spread_bpm": 0.10469485178180093
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.9200654434939,
+        "mid": 180.0015167276011,
+        "high": 180.24008658090412
+      },
+      "band_strength": {
+        "low": 0.7812583933436211,
+        "mid": 0.8158566741193524,
+        "high": 0.7673994389507909
+      },
+      "median_bpm": 180.0015167276011,
+      "band_spread_bpm": 0.3200211374102082
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 179.97782292713444,
+        "mid": 179.94260054528783,
+        "high": 180.0788746488929
+      },
+      "band_strength": {
+        "low": 0.8415617080026143,
+        "mid": 0.8166146983334601,
+        "high": 0.7688021298984697
+      },
+      "median_bpm": 179.97782292713444,
+      "band_spread_bpm": 0.13627410360507497
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.98154490320462,
+        "mid": 179.9659330131967,
+        "high": 180.1376163523895
+      },
+      "band_strength": {
+        "low": 0.8560383412396743,
+        "mid": 0.8887832899175911,
+        "high": 0.7717147759522234
+      },
+      "median_bpm": 179.98154490320462,
+      "band_spread_bpm": 0.17168333919281054
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 179.9556332882911,
+        "mid": 179.92827915933228,
+        "high": 180.1896081545916
+      },
+      "band_strength": {
+        "low": 0.8905534982955815,
+        "mid": 0.8843433738925317,
+        "high": 0.7388374838467239
+      },
+      "median_bpm": 179.9556332882911,
+      "band_spread_bpm": 0.2613289952593334
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.9317630997683,
+        "mid": 180.05691971716473,
+        "high": 180.1310321891395
+      },
+      "band_strength": {
+        "low": 0.7416228379997349,
+        "mid": 0.866160128277732,
+        "high": 0.7255803560261072
+      },
+      "median_bpm": 180.05691971716473,
+      "band_spread_bpm": 0.19926908937119947
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 179.7332129454496,
+        "mid": 180.069884344765,
+        "high": 179.96318675798605
+      },
+      "band_strength": {
+        "low": 0.7073439914221172,
+        "mid": 0.8604553645063228,
+        "high": 0.7526671704136657
+      },
+      "median_bpm": 179.96318675798605,
+      "band_spread_bpm": 0.33667139931540646
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 179.89459380086328,
+        "mid": 180.22553942567896,
+        "high": 179.81056287147635
+      },
+      "band_strength": {
+        "low": 0.7303374456027736,
+        "mid": 0.8329197241560063,
+        "high": 0.7637747063426414
+      },
+      "median_bpm": 179.89459380086328,
+      "band_spread_bpm": 0.41497655420261026
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 179.95130371143773,
+        "mid": 180.28026101070986,
+        "high": 179.97716291971707
+      },
+      "band_strength": {
+        "low": 0.7858289517961725,
+        "mid": 0.8597352673335434,
+        "high": 0.7840931271235851
+      },
+      "median_bpm": 179.97716291971707,
+      "band_spread_bpm": 0.32895729927213324
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.94782743556198,
+        "mid": 180.22772446518522,
+        "high": 179.930583980595
+      },
+      "band_strength": {
+        "low": 0.849761029361688,
+        "mid": 0.8273949429992155,
+        "high": 0.7872218118487353
+      },
+      "median_bpm": 179.94782743556198,
+      "band_spread_bpm": 0.2971404845902157
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 180.3158394504194,
+        "mid": 180.38808911410692,
+        "high": 180.30654873203366
+      },
+      "band_strength": {
+        "low": 1.0229782841606443,
+        "mid": 0.8356069748661794,
+        "high": 0.9575114456323269
+      },
+      "median_bpm": 180.3158394504194,
+      "band_spread_bpm": 0.08154038207325698
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 180.3266779754673,
+        "mid": 180.37315021104646,
+        "high": 180.29024792995673
+      },
+      "band_strength": {
+        "low": 1.1656216652564586,
+        "mid": 0.8365908222661145,
+        "high": 0.9606564108019627
+      },
+      "median_bpm": 180.3266779754673,
+      "band_spread_bpm": 0.08290228108972997
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.27287110720084,
+        "mid": 180.20202673137427,
+        "high": 180.28858859749894
+      },
+      "band_strength": {
+        "low": 1.078235138841802,
+        "mid": 0.7590553333977993,
+        "high": 0.9338876995913921
+      },
+      "median_bpm": 180.27287110720084,
+      "band_spread_bpm": 0.08656186612466854
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.2907235295345,
+        "mid": 180.29701900759255,
+        "high": 180.35627606316223
+      },
+      "band_strength": {
+        "low": 1.1030268584424225,
+        "mid": 0.804094400134967,
+        "high": 0.9270101394885372
+      },
+      "median_bpm": 180.29701900759255,
+      "band_spread_bpm": 0.06555253362773783
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.00469669616663,
+        "mid": 180.11325826719371,
+        "high": 179.94713598972962
+      },
+      "band_strength": {
+        "low": 0.9682990381734262,
+        "mid": 0.7760733877534629,
+        "high": 0.7479380070740038
+      },
+      "median_bpm": 180.00469669616663,
+      "band_spread_bpm": 0.16612227746409758
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.08402910181726,
+        "mid": 180.38418305988344,
+        "high": 180.2113838902392
+      },
+      "band_strength": {
+        "low": 0.8452990137304183,
+        "mid": 0.7458034048050062,
+        "high": 0.712301663633797
+      },
+      "median_bpm": 180.2113838902392,
+      "band_spread_bpm": 0.3001539580661756
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.05329834993051,
+        "mid": 180.04925242896996,
+        "high": 179.598338090182
+      },
+      "band_strength": {
+        "low": 0.848652990050585,
+        "mid": 0.7955082445562577,
+        "high": 0.8611994057270108
+      },
+      "median_bpm": 180.04925242896996,
+      "band_spread_bpm": 0.4549602597485034
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 179.97435473896257,
+        "mid": 180.1348428466787,
+        "high": 179.7076680228729
+      },
+      "band_strength": {
+        "low": 0.8421668125184505,
+        "mid": 0.8032205973108016,
+        "high": 0.9655180151564079
+      },
+      "median_bpm": 179.97435473896257,
+      "band_spread_bpm": 0.42717482380581373
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 180.23345781475695,
+        "mid": 180.32106013949428,
+        "high": 179.78147099231478
+      },
+      "band_strength": {
+        "low": 0.7597115755844578,
+        "mid": 0.7928949859052342,
+        "high": 0.940485560316819
+      },
+      "median_bpm": 180.23345781475695,
+      "band_spread_bpm": 0.5395891471794982
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 179.9693498246102,
+        "mid": 180.1517425239956,
+        "high": 179.91297147476234
+      },
+      "band_strength": {
+        "low": 0.7276588976573695,
+        "mid": 0.7378572552021005,
+        "high": 0.9493520937962528
+      },
+      "median_bpm": 179.9693498246102,
+      "band_spread_bpm": 0.23877104923326442
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 179.79080978492598,
+        "mid": 180.31174112119535,
+        "high": 180.1008805946726
+      },
+      "band_strength": {
+        "low": 0.8632320538220587,
+        "mid": 0.7006318633247592,
+        "high": 0.8945931668691507
+      },
+      "median_bpm": 180.1008805946726,
+      "band_spread_bpm": 0.5209313362693706
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 179.78939833822744,
+        "mid": 180.13251443736658,
+        "high": 180.15233290771886
+      },
+      "band_strength": {
+        "low": 0.7940937138532974,
+        "mid": 0.7223669383765396,
+        "high": 0.8080319344788772
+      },
+      "median_bpm": 180.13251443736658,
+      "band_spread_bpm": 0.362934569491415
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 179.94573665297358,
+        "mid": 180.04349626582257,
+        "high": 180.1483002764416
+      },
+      "band_strength": {
+        "low": 0.8887725555780746,
+        "mid": 0.8067377033799753,
+        "high": 0.8040989077514814
+      },
+      "median_bpm": 180.04349626582257,
+      "band_spread_bpm": 0.20256362346802348
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 179.94280730042763,
+        "mid": 179.99209299473785,
+        "high": 179.73790267480908
+      },
+      "band_strength": {
+        "low": 0.8821319114617989,
+        "mid": 0.8093759495430395,
+        "high": 0.834649713097832
+      },
+      "median_bpm": 179.94280730042763,
+      "band_spread_bpm": 0.2541903199287674
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 180.18057619982693,
+        "mid": 179.99074134741974,
+        "high": 179.66796884087535
+      },
+      "band_strength": {
+        "low": 0.7770810938498585,
+        "mid": 0.8048158223709876,
+        "high": 0.8064833367311494
+      },
+      "median_bpm": 179.99074134741974,
+      "band_spread_bpm": 0.512607358951584
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 180.33114521468917,
+        "mid": 180.06695330965835,
+        "high": 179.4440878050932
+      },
+      "band_strength": {
+        "low": 0.7884702794586335,
+        "mid": 0.7699046122338141,
+        "high": 0.8074826138112948
+      },
+      "median_bpm": 180.06695330965835,
+      "band_spread_bpm": 0.8870574095959682
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.9253631592093,
+    180.00080968388488,
+    180.45664764427124
+  ],
+  "leading_alignment_padding_samples": 0,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.172,
+        5.552
+      ],
+      "target_anchors_seconds": [
+        0.1705080545229244,
+        5.503841387856258
+      ],
+      "tempo_factor": 1.00875,
+      "source_guard_samples": [
+        0,
+        285696
+      ],
+      "output_offset_samples": -72,
+      "observed_raw_anchors_seconds": [
+        0.172,
+        5.5075625
+      ],
+      "waveform_correlations": [
+        0.9999999747289136,
+        0.9999999622101569
+      ],
+      "observed_end_error_ms": 2.2291666666669485,
+      "raw_sha256": "093a5306560adab997642f7ff0b237c05f6b8dcbcef0689f443135d5b3b53901",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=285696,asetpts=PTS-STARTPTS,atempo=1.0087500000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.552,
+        10.948
+      ],
+      "target_anchors_seconds": [
+        5.503841387856258,
+        10.83717472118959
+      ],
+      "tempo_factor": 1.0117500000000001,
+      "source_guard_samples": [
+        247296,
+        544704
+      ],
+      "output_offset_samples": 244984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.74575
+      ],
+      "waveform_correlations": [
+        0.9999999579423906,
+        0.9999999915003034
+      ],
+      "observed_end_error_ms": 12.416666666666742,
+      "raw_sha256": "09fa46069852f432be4e8f1575d57be8a8caae5ec217117cdbd26a0398d038df",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=247296:end_sample=544704,asetpts=PTS-STARTPTS,atempo=1.0117500000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.948,
+        16.324
+      ],
+      "target_anchors_seconds": [
+        10.83717472118959,
+        16.170508054522923
+      ],
+      "tempo_factor": 1.0080000000000005,
+      "source_guard_samples": [
+        506304,
+        802752
+      ],
+      "output_offset_samples": 500984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738770833333334
+      ],
+      "waveform_correlations": [
+        0.9999999670843264,
+        0.9999999806044755
+      ],
+      "observed_end_error_ms": 5.437500000001094,
+      "raw_sha256": "73af593f0ae2d859c73df2b49f437bab3a38261d752d1e4d4e12123fc63c4a0e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=506304:end_sample=802752,asetpts=PTS-STARTPTS,atempo=1.0080000000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        16.324,
+        21.706
+      ],
+      "target_anchors_seconds": [
+        16.170508054522923,
+        21.503841387856255
+      ],
+      "tempo_factor": 1.0091249999999998,
+      "source_guard_samples": [
+        764352,
+        1061088
+      ],
+      "output_offset_samples": 756984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.743541666666666
+      ],
+      "waveform_correlations": [
+        0.9999999652099565,
+        0.9999999789144386
+      ],
+      "observed_end_error_ms": 10.208333333333819,
+      "raw_sha256": "62a710b2963b720402e8a97838387ca66975480454fc07f7e6be9668b61566fb",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=764352:end_sample=1061088,asetpts=PTS-STARTPTS,atempo=1.0091249999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.706,
+        27.066
+      ],
+      "target_anchors_seconds": [
+        21.503841387856255,
+        26.83717472118959
+      ],
+      "tempo_factor": 1.0049999999999994,
+      "source_guard_samples": [
+        1022688,
+        1318368
+      ],
+      "output_offset_samples": 1012984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.735895833333333
+      ],
+      "waveform_correlations": [
+        0.9999999626038721,
+        0.9999999767602797
+      ],
+      "observed_end_error_ms": 2.5624999999971365,
+      "raw_sha256": "79bb3695fb9f3eb3e8d5b6a43c78c3c1c7237722363f21b0d2060c5782e2d5b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1022688:end_sample=1318368,asetpts=PTS-STARTPTS,atempo=1.0049999999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        27.066,
+        32.422
+      ],
+      "target_anchors_seconds": [
+        26.83717472118959,
+        32.17050805452293
+      ],
+      "tempo_factor": 1.0042499999999992,
+      "source_guard_samples": [
+        1279968,
+        1575456
+      ],
+      "output_offset_samples": 1268984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.745229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999626154519,
+        0.9999999616639836
+      ],
+      "observed_end_error_ms": 11.89583333333033,
+      "raw_sha256": "775888d0a1aa3f431bcac1325c3819909ac847a7df6b6821449f57c2c45f2367",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1279968:end_sample=1575456,asetpts=PTS-STARTPTS,atempo=1.0042499999999992,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        32.422,
+        37.746
+      ],
+      "target_anchors_seconds": [
+        32.17050805452293,
+        37.50384138785626
+      ],
+      "tempo_factor": 0.9982500000000005,
+      "source_guard_samples": [
+        1537056,
+        1831008
+      ],
+      "output_offset_samples": 1524984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724
+      ],
+      "waveform_correlations": [
+        0.9999999563490045,
+        0.9999999877728609
+      ],
+      "observed_end_error_ms": -9.333333333335858,
+      "raw_sha256": "7f23ceab67e8cebd7d6b1be3ede70d2ef94ef0c3f02e19891e4aa59c9d8c6856",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1537056:end_sample=1831008,asetpts=PTS-STARTPTS,atempo=0.9982500000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        37.746,
+        43.08
+      ],
+      "target_anchors_seconds": [
+        37.50384138785626,
+        42.83717472118959
+      ],
+      "tempo_factor": 1.0001250000000002,
+      "source_guard_samples": [
+        1792608,
+        2087040
+      ],
+      "output_offset_samples": 1780984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734
+      ],
+      "waveform_correlations": [
+        0.9999999651782495,
+        0.9999999676390884
+      ],
+      "observed_end_error_ms": 0.6666666666710341,
+      "raw_sha256": "0c858c3e3b67f40a5b070ef9089d1070d119a4cff7c376c728280808a8497305",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1792608:end_sample=2087040,asetpts=PTS-STARTPTS,atempo=1.0001250000000002,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        43.08,
+        48.418
+      ],
+      "target_anchors_seconds": [
+        42.83717472118959,
+        48.17050805452293
+      ],
+      "tempo_factor": 1.0008749999999997,
+      "source_guard_samples": [
+        2048640,
+        2343264
+      ],
+      "output_offset_samples": 2036984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.738
+      ],
+      "waveform_correlations": [
+        0.9999999675869,
+        0.9999999790573915
+      ],
+      "observed_end_error_ms": 4.666666666664376,
+      "raw_sha256": "0f4b491dcb66a32c60d7ecd236bd4bc65beaf9c2e2cb85968dcc78efbfa196f6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2048640:end_sample=2343264,asetpts=PTS-STARTPTS,atempo=1.0008749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        48.418,
+        53.754
+      ],
+      "target_anchors_seconds": [
+        48.17050805452293,
+        53.50384138785626
+      ],
+      "tempo_factor": 1.0004999999999993,
+      "source_guard_samples": [
+        2304864,
+        2599392
+      ],
+      "output_offset_samples": 2292984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.736
+      ],
+      "waveform_correlations": [
+        0.999999958548639,
+        0.9999999767392028
+      ],
+      "observed_end_error_ms": 2.6666666666637084,
+      "raw_sha256": "d03b9eb01f2e2cb4a1d9a772831244ddc7bb92825e5d3011c731a90de807269a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2304864:end_sample=2599392,asetpts=PTS-STARTPTS,atempo=1.0004999999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        53.754,
+        59.084
+      ],
+      "target_anchors_seconds": [
+        53.50384138785626,
+        58.83717472118959
+      ],
+      "tempo_factor": 0.9993750000000019,
+      "source_guard_samples": [
+        2560992,
+        2855232
+      ],
+      "output_offset_samples": 2548984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.73
+      ],
+      "waveform_correlations": [
+        0.9999999615714038,
+        0.9999999852332526
+      ],
+      "observed_end_error_ms": -3.3333333333285253,
+      "raw_sha256": "dd8e909411fa5612d994cda45dbca74d03c989a7ae4f41d7bfe6b8244796152f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2560992:end_sample=2855232,asetpts=PTS-STARTPTS,atempo=0.9993750000000019,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        59.084,
+        64.416
+      ],
+      "target_anchors_seconds": [
+        58.83717472118959,
+        64.17050805452293
+      ],
+      "tempo_factor": 0.9997499999999984,
+      "source_guard_samples": [
+        2816832,
+        3111168
+      ],
+      "output_offset_samples": 2804984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732
+      ],
+      "waveform_correlations": [
+        0.9999999787734466,
+        0.9999999768242717
+      ],
+      "observed_end_error_ms": -1.333333333335851,
+      "raw_sha256": "d639d312cf5d64aa4bd324c72929f6fb3ba04f29ba04f984b3599d074941e77e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2816832:end_sample=3111168,asetpts=PTS-STARTPTS,atempo=0.9997499999999984,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        64.416,
+        69.75
+      ],
+      "target_anchors_seconds": [
+        64.17050805452293,
+        69.50384138785626
+      ],
+      "tempo_factor": 1.0001250000000015,
+      "source_guard_samples": [
+        3072768,
+        3367200
+      ],
+      "output_offset_samples": 3060984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734
+      ],
+      "waveform_correlations": [
+        0.9999999688193836,
+        0.999999969245897
+      ],
+      "observed_end_error_ms": 0.6666666666710341,
+      "raw_sha256": "3a510f28357a8a7c660c6ad525d101321b065cf435061f851e85bd9c82b91f16",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3072768:end_sample=3367200,asetpts=PTS-STARTPTS,atempo=1.0001250000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        69.75,
+        75.078
+      ],
+      "target_anchors_seconds": [
+        69.50384138785626,
+        74.8371747211896
+      ],
+      "tempo_factor": 0.9989999999999988,
+      "source_guard_samples": [
+        3328800,
+        3622944
+      ],
+      "output_offset_samples": 3316984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728
+      ],
+      "waveform_correlations": [
+        0.9999999719974259,
+        0.9999999830331726
+      ],
+      "observed_end_error_ms": -5.333333333343404,
+      "raw_sha256": "cb43b8e802e2e6e122a645211c80705c989893588776e2a2dbe80a8f2df24411",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3328800:end_sample=3622944,asetpts=PTS-STARTPTS,atempo=0.9989999999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        75.078,
+        80.402
+      ],
+      "target_anchors_seconds": [
+        74.8371747211896,
+        80.17050805452293
+      ],
+      "tempo_factor": 0.9982500000000005,
+      "source_guard_samples": [
+        3584544,
+        3878496
+      ],
+      "output_offset_samples": 3572984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.730354166666666
+      ],
+      "waveform_correlations": [
+        0.999999965820713,
+        0.9999999737120002
+      ],
+      "observed_end_error_ms": -2.979166666662536,
+      "raw_sha256": "48f2cd733e2e1a5f174f5e4746f770bdc3bea0dacb6edaafbcb877ff4d74218b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3584544:end_sample=3878496,asetpts=PTS-STARTPTS,atempo=0.9982500000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        80.402,
+        85.728
+      ],
+      "target_anchors_seconds": [
+        80.17050805452293,
+        85.50384138785626
+      ],
+      "tempo_factor": 0.9986249999999997,
+      "source_guard_samples": [
+        3840096,
+        4134144
+      ],
+      "output_offset_samples": 3828984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726
+      ],
+      "waveform_correlations": [
+        0.9999999647472351,
+        0.9999999896926621
+      ],
+      "observed_end_error_ms": -7.333333333328973,
+      "raw_sha256": "d8c885e67f7ce602f49ae568556cd2e919689c2ade981fae3bacd70ad56a4337",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3840096:end_sample=4134144,asetpts=PTS-STARTPTS,atempo=0.9986249999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        85.728,
+        91.048
+      ],
+      "target_anchors_seconds": [
+        85.50384138785626,
+        90.8371747211896
+      ],
+      "tempo_factor": 0.9974999999999996,
+      "source_guard_samples": [
+        4095744,
+        4389504
+      ],
+      "output_offset_samples": 4084984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7268125
+      ],
+      "waveform_correlations": [
+        0.9999999749082943,
+        0.9999999925472954
+      ],
+      "observed_end_error_ms": -6.520833333342857,
+      "raw_sha256": "6b58bc5bb94a845d007e90851d7cf976874c8524d2c236f8d5c86b6adcc5925d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4095744:end_sample=4389504,asetpts=PTS-STARTPTS,atempo=0.9974999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        91.048,
+        96.368
+      ],
+      "target_anchors_seconds": [
+        90.8371747211896,
+        96.17050805452293
+      ],
+      "tempo_factor": 0.9974999999999996,
+      "source_guard_samples": [
+        4351104,
+        4644864
+      ],
+      "output_offset_samples": 4340984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727979166666667
+      ],
+      "waveform_correlations": [
+        0.9999999829078637,
+        0.9999999897827462
+      ],
+      "observed_end_error_ms": -5.35416666666233,
+      "raw_sha256": "b7bfe23db0efe8b27245199e43036fb0c3f6aa175d6a5ac857d5df988c9b09aa",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4351104:end_sample=4644864,asetpts=PTS-STARTPTS,atempo=0.9974999999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        96.368,
+        101.688
+      ],
+      "target_anchors_seconds": [
+        96.17050805452293,
+        101.50384138785626
+      ],
+      "tempo_factor": 0.9975000000000023,
+      "source_guard_samples": [
+        4606464,
+        4900224
+      ],
+      "output_offset_samples": 4596984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999749295515,
+        0.9999999916037143
+      ],
+      "observed_end_error_ms": -5.249999999995758,
+      "raw_sha256": "9c2b6d1eaaadacd1bf9db2ea31cdd8f5b891e4ae908bfa1697505612934c6b96",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4606464:end_sample=4900224,asetpts=PTS-STARTPTS,atempo=0.9975000000000023,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        101.688,
+        107.012
+      ],
+      "target_anchors_seconds": [
+        101.50384138785626,
+        106.8371747211896
+      ],
+      "tempo_factor": 0.9982499999999979,
+      "source_guard_samples": [
+        4861824,
+        5155776
+      ],
+      "output_offset_samples": 4852984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724
+      ],
+      "waveform_correlations": [
+        0.9999999788782489,
+        0.9999999922472295
+      ],
+      "observed_end_error_ms": -9.333333333342964,
+      "raw_sha256": "e338ac9b24f67b56fc3775697fffcaab31020cc06492893415df54131c5c98ef",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4861824:end_sample=5155776,asetpts=PTS-STARTPTS,atempo=0.9982499999999979,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        107.012,
+        112.324
+      ],
+      "target_anchors_seconds": [
+        106.8371747211896,
+        112.17050805452293
+      ],
+      "tempo_factor": 0.9960000000000004,
+      "source_guard_samples": [
+        5117376,
+        5410752
+      ],
+      "output_offset_samples": 5108984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.723375
+      ],
+      "waveform_correlations": [
+        0.9999999765222529,
+        0.9999999862863983
+      ],
+      "observed_end_error_ms": -9.958333333329072,
+      "raw_sha256": "cc074b9b80d06292d11d6a9e230f890b7eeec9d320bc5d076aaa4f87ca0b405c",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5117376:end_sample=5410752,asetpts=PTS-STARTPTS,atempo=0.9960000000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        112.324,
+        117.628
+      ],
+      "target_anchors_seconds": [
+        112.17050805452293,
+        117.50384138785626
+      ],
+      "tempo_factor": 0.9945000000000013,
+      "source_guard_samples": [
+        5372352,
+        5665344
+      ],
+      "output_offset_samples": 5364984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.722645833333333
+      ],
+      "waveform_correlations": [
+        0.999999965859862,
+        0.9999999884510825
+      ],
+      "observed_end_error_ms": -10.687499999995964,
+      "raw_sha256": "4d0e63082d1e0a508f4053b546ad740636eb7a18a283bef9078cf8e9b11354ff",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5372352:end_sample=5665344,asetpts=PTS-STARTPTS,atempo=0.9945000000000013,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        117.628,
+        122.93
+      ],
+      "target_anchors_seconds": [
+        117.50384138785626,
+        122.8371747211896
+      ],
+      "tempo_factor": 0.9941249999999995,
+      "source_guard_samples": [
+        5626944,
+        5919840
+      ],
+      "output_offset_samples": 5620984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.722854166666667
+      ],
+      "waveform_correlations": [
+        0.9999999722248861,
+        0.9999999871019091
+      ],
+      "observed_end_error_ms": -10.479166666676143,
+      "raw_sha256": "8d8abdf3ee5407887aeb0b89031566aeb768b270c5842b648c96ea7c8459b829",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5626944:end_sample=5919840,asetpts=PTS-STARTPTS,atempo=0.9941249999999995,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        122.93,
+        128.218
+      ],
+      "target_anchors_seconds": [
+        122.8371747211896,
+        128.1705080545229
+      ],
+      "tempo_factor": 0.9915000000000003,
+      "source_guard_samples": [
+        5881440,
+        6173664
+      ],
+      "output_offset_samples": 5876984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7291875
+      ],
+      "waveform_correlations": [
+        0.9999999738868105,
+        0.999999986143961
+      ],
+      "observed_end_error_ms": -4.145833333314641,
+      "raw_sha256": "abc53d42442e165de0dc267fdfe70f6fe4bc3e7e760d9c0ff2beade9d3e8b6b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5881440:end_sample=6173664,asetpts=PTS-STARTPTS,atempo=0.9915000000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        128.218,
+        133.502
+      ],
+      "target_anchors_seconds": [
+        128.1705080545229,
+        133.50384138785626
+      ],
+      "tempo_factor": 0.990750000000002,
+      "source_guard_samples": [
+        6135264,
+        6427296
+      ],
+      "output_offset_samples": 6132984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7275833333333335
+      ],
+      "waveform_correlations": [
+        0.999999970306223,
+        0.9999999914562742
+      ],
+      "observed_end_error_ms": -5.750000000009692,
+      "raw_sha256": "7473fb0696a4154d01c5ba3b54178141778b01c7aca6c066ae9e9d5893078d17",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6135264:end_sample=6427296,asetpts=PTS-STARTPTS,atempo=0.9907500000000020,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        133.502,
+        138.804
+      ],
+      "target_anchors_seconds": [
+        133.50384138785626,
+        138.83717472118957
+      ],
+      "tempo_factor": 0.9941250000000021,
+      "source_guard_samples": [
+        6388896,
+        6681792
+      ],
+      "output_offset_samples": 6388984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728125
+      ],
+      "waveform_correlations": [
+        0.999999971537711,
+        0.9999999890591302
+      ],
+      "observed_end_error_ms": -5.2083333333143855,
+      "raw_sha256": "bab61cad44e4189e2fa3642521b0a8029e56bd00a4e7bb15a49bd791393ef581",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6388896:end_sample=6681792,asetpts=PTS-STARTPTS,atempo=0.9941250000000021,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        138.804,
+        144.132
+      ],
+      "target_anchors_seconds": [
+        138.83717472118957,
+        144.1705080545229
+      ],
+      "tempo_factor": 0.9989999999999988,
+      "source_guard_samples": [
+        6643392,
+        6937536
+      ],
+      "output_offset_samples": 6644984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727979166666667
+      ],
+      "waveform_correlations": [
+        0.9999999667679095,
+        0.9999999873776215
+      ],
+      "observed_end_error_ms": -5.354166666676541,
+      "raw_sha256": "ef1b83f9005f43eb0501ed33b3f6fcb7e57d90eb23601943b197bc5a3d9c2b3a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6643392:end_sample=6937536,asetpts=PTS-STARTPTS,atempo=0.9989999999999988,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        144.132,
+        149.446
+      ],
+      "target_anchors_seconds": [
+        144.1705080545229,
+        149.50384138785626
+      ],
+      "tempo_factor": 0.9963749999999969,
+      "source_guard_samples": [
+        6899136,
+        7192608
+      ],
+      "output_offset_samples": 6900984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727354166666666
+      ],
+      "waveform_correlations": [
+        0.9999999559550949,
+        0.9999999850787324
+      ],
+      "observed_end_error_ms": -5.979166666676861,
+      "raw_sha256": "2892ade75ce13623f6b4d5d771002be84e158b2a74df51d2426534d1559e3e05",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6899136:end_sample=7192608,asetpts=PTS-STARTPTS,atempo=0.9963749999999969,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        149.446,
+        154.77
+      ],
+      "target_anchors_seconds": [
+        149.50384138785626,
+        154.83717472118957
+      ],
+      "tempo_factor": 0.9982500000000059,
+      "source_guard_samples": [
+        7154208,
+        7448160
+      ],
+      "output_offset_samples": 7156984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724
+      ],
+      "waveform_correlations": [
+        0.999999971738597,
+        0.9999999691395193
+      ],
+      "observed_end_error_ms": -9.333333333314542,
+      "raw_sha256": "57efa604a6acb6b1dcb9b0470d01dae17d10617a4f9506cf7843ef97dd7338fa",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7154208:end_sample=7448160,asetpts=PTS-STARTPTS,atempo=0.9982500000000059,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        154.77,
+        160.07
+      ],
+      "target_anchors_seconds": [
+        154.83717472118957,
+        160.1705080545229
+      ],
+      "tempo_factor": 0.993749999999995,
+      "source_guard_samples": [
+        7409760,
+        7702560
+      ],
+      "output_offset_samples": 7412984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.722354166666666
+      ],
+      "waveform_correlations": [
+        0.9999999532162659,
+        0.9999999703083936
+      ],
+      "observed_end_error_ms": -10.979166666676754,
+      "raw_sha256": "0c620b5020ff0049009fde194f1cdc5fb7a5e7baef24c7d09139d691c1a004a4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7409760:end_sample=7702560,asetpts=PTS-STARTPTS,atempo=0.9937499999999950,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        160.07,
+        165.358
+      ],
+      "target_anchors_seconds": [
+        160.1705080545229,
+        165.50384138785626
+      ],
+      "tempo_factor": 0.9915000000000003,
+      "source_guard_samples": [
+        7664160,
+        7956384
+      ],
+      "output_offset_samples": 7668984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7245
+      ],
+      "waveform_correlations": [
+        0.9999999708102089,
+        0.9999999876980955
+      ],
+      "observed_end_error_ms": -8.83333333334324,
+      "raw_sha256": "611d18b8311fc7f1ef40c80e1f3db3a8e7eea716e7240bcd155583352b51f63e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7664160:end_sample=7956384,asetpts=PTS-STARTPTS,atempo=0.9915000000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        165.358,
+        170.636
+      ],
+      "target_anchors_seconds": [
+        165.50384138785626,
+        170.83717472118957
+      ],
+      "tempo_factor": 0.989625000000002,
+      "source_guard_samples": [
+        7917984,
+        8209728
+      ],
+      "output_offset_samples": 7924984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7287083333333335
+      ],
+      "waveform_correlations": [
+        0.9999999731415959,
+        0.9999999854145126
+      ],
+      "observed_end_error_ms": -4.6249999999812275,
+      "raw_sha256": "a94f4bcb861d7306fd966bda9d6261f14027cfd702c5f81cdfc0403841da71a7",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=7917984:end_sample=8209728,asetpts=PTS-STARTPTS,atempo=0.9896250000000020,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        170.636,
+        175.96
+      ],
+      "target_anchors_seconds": [
+        170.83717472118957,
+        176.1705080545229
+      ],
+      "tempo_factor": 0.9982500000000005,
+      "source_guard_samples": [
+        8171328,
+        8465280
+      ],
+      "output_offset_samples": 8180984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724479166666667
+      ],
+      "waveform_correlations": [
+        0.9999999712613488,
+        0.9999999781275997
+      ],
+      "observed_end_error_ms": -8.854166666676377,
+      "raw_sha256": "d6ccf69ddf730c6e3830563bef4e08182e4a7014fb2f1ad049729d3d20947414",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8171328:end_sample=8465280,asetpts=PTS-STARTPTS,atempo=0.9982500000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        532
+      ],
+      "source_anchors_seconds": [
+        175.96,
+        177.27
+      ],
+      "target_anchors_seconds": [
+        176.1705080545229,
+        177.50384138785626
+      ],
+      "tempo_factor": 0.9824999999999947,
+      "source_guard_samples": [
+        8426880,
+        8638080
+      ],
+      "output_offset_samples": 8436984,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        1.7300625
+      ],
+      "waveform_correlations": [
+        0.9999999673948654,
+        0.9987817599855233
+      ],
+      "observed_end_error_ms": -3.270833333342882,
+      "raw_sha256": "e2e86d1fd201c1b6b91a779d70fc15287c2deea161f81e8eaa94757e6198893e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/11__다시 해볼게__Driven__Funk Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=8426880:end_sample=8638080,asetpts=PTS-STARTPTS,atempo=0.9824999999999947,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-11/block-033.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

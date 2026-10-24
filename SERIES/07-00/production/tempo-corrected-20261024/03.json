@@ -1,0 +1,1712 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 3,
+  "title": "첫 바퀴",
+  "candidate_id": "fad9fc49-9b35-4f10-aa76-f62ddd9cf10c",
+  "source_path": "SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+  "source_sha256": "412795e58f51c5eecf41060bc0767895ede9feaf8f20d4341d58af3aa1a4e700",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/03.json",
+  "analysis_sha256": "e3d2a3cb28b99b56bc011cdb23509c6de3c9ca521c4802751a9c7bc7a83be0f8",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/03__첫 바퀴__180.wav",
+  "output_sha256": "b0836b814b6befab3171f19cd4d13755a9b0c05f8b0ee7cc6e310f2df5763397",
+  "source_duration_seconds": 143.72,
+  "output_duration_seconds": 144.960125,
+  "output_peak_linear": 0.561767578125,
+  "first_grid_beat_output_seconds": 0.05411499436302142,
+  "grid_beat_count": 434,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.77237096544994,
+        "mid": 180.06894980417937,
+        "high": 180.01217278909158
+      },
+      "band_strength": {
+        "low": 0.8064531492093298,
+        "mid": 0.8994945241153138,
+        "high": 1.1950959574006
+      },
+      "median_bpm": 180.01217278909158,
+      "band_spread_bpm": 0.296578838729431
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.9105140783454,
+        "mid": 180.03478479598027,
+        "high": 180.01838325020333
+      },
+      "band_strength": {
+        "low": 0.8569770625508073,
+        "mid": 0.9830759334450283,
+        "high": 1.2211702157258615
+      },
+      "median_bpm": 180.01838325020333,
+      "band_spread_bpm": 0.12427071763488584
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 179.9416734710184,
+        "mid": 179.9828188106091,
+        "high": 179.9525766081158
+      },
+      "band_strength": {
+        "low": 0.9087247412790888,
+        "mid": 1.0693185704614079,
+        "high": 1.282551962599409
+      },
+      "median_bpm": 179.9525766081158,
+      "band_spread_bpm": 0.04114533959071309
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 180.17384948309413,
+        "mid": 179.98731480632117,
+        "high": 180.00338287943336
+      },
+      "band_strength": {
+        "low": 0.8808248803778519,
+        "mid": 1.0395703848582178,
+        "high": 1.1500635193683686
+      },
+      "median_bpm": 180.00338287943336,
+      "band_spread_bpm": 0.18653467677296476
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 180.3849640116477,
+        "mid": 179.99582408475342,
+        "high": 180.067235084113
+      },
+      "band_strength": {
+        "low": 0.8197172648114551,
+        "mid": 0.924009166961774,
+        "high": 1.0525744337454424
+      },
+      "median_bpm": 180.067235084113,
+      "band_spread_bpm": 0.38913992689427346
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.19561828607397,
+        "mid": 180.08604641209484,
+        "high": 180.03469659766102
+      },
+      "band_strength": {
+        "low": 0.7651909817961465,
+        "mid": 0.7616866189367901,
+        "high": 0.8857631528488236
+      },
+      "median_bpm": 180.08604641209484,
+      "band_spread_bpm": 0.16092168841294097
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 180.03284262670923,
+        "mid": 180.12255842481477,
+        "high": 180.16012658940573
+      },
+      "band_strength": {
+        "low": 0.7077037049347124,
+        "mid": 0.6863344498354579,
+        "high": 0.7800081072190425
+      },
+      "median_bpm": 180.12255842481477,
+      "band_spread_bpm": 0.12728396269650943
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 179.59630461680476,
+        "mid": 180.13805056129922,
+        "high": 179.84100012601868
+      },
+      "band_strength": {
+        "low": 0.7123807964066081,
+        "mid": 0.7049740834180434,
+        "high": 0.7836928623680572
+      },
+      "median_bpm": 179.84100012601868,
+      "band_spread_bpm": 0.5417459444944654
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 179.66800742852968,
+        "mid": 180.4705956946293,
+        "high": 180.39150808071665
+      },
+      "band_strength": {
+        "low": 0.7205809085236168,
+        "mid": 0.6982263386229294,
+        "high": 0.767088686028927
+      },
+      "median_bpm": 180.39150808071665,
+      "band_spread_bpm": 0.8025882660996331
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 179.98920835323264,
+        "mid": 180.2959013917367,
+        "high": 180.32700131557874
+      },
+      "band_strength": {
+        "low": 0.7382727501348659,
+        "mid": 0.6503375262497562,
+        "high": 0.7444297030971524
+      },
+      "median_bpm": 180.2959013917367,
+      "band_spread_bpm": 0.3377929623461
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 180.01105684768086,
+        "mid": 180.1388674192104,
+        "high": 180.28934483180615
+      },
+      "band_strength": {
+        "low": 0.785377135253641,
+        "mid": 0.6383127711914914,
+        "high": 0.7867807635971468
+      },
+      "median_bpm": 180.1388674192104,
+      "band_spread_bpm": 0.278287984125285
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 180.05411156341134,
+        "mid": 179.9330365592008,
+        "high": 180.1361554521013
+      },
+      "band_strength": {
+        "low": 0.7601117081614948,
+        "mid": 0.6227107522277047,
+        "high": 0.8713675275080627
+      },
+      "median_bpm": 180.05411156341134,
+      "band_spread_bpm": 0.20311889290050544
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.1438985899618,
+        "mid": 179.8802185423027,
+        "high": 179.92947395713577
+      },
+      "band_strength": {
+        "low": 0.7006867329469602,
+        "mid": 0.6175585844878383,
+        "high": 0.8942661267419315
+      },
+      "median_bpm": 179.92947395713577,
+      "band_spread_bpm": 0.26368004765907926
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 179.99960399902625,
+        "mid": 180.21552465327485,
+        "high": 179.9495803675485
+      },
+      "band_strength": {
+        "low": 0.6855808771827999,
+        "mid": 0.6072970726501099,
+        "high": 0.9507711158161423
+      },
+      "median_bpm": 179.99960399902625,
+      "band_spread_bpm": 0.26594428572636275
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.11626744187328,
+        "mid": 180.10782529481352,
+        "high": 179.89751989197677
+      },
+      "band_strength": {
+        "low": 0.7025377939378357,
+        "mid": 0.6405105069874586,
+        "high": 0.8976216570922096
+      },
+      "median_bpm": 180.10782529481352,
+      "band_spread_bpm": 0.2187475498965057
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 180.5113071713558,
+        "mid": 180.02911639387213,
+        "high": 179.88396041238994
+      },
+      "band_strength": {
+        "low": 0.6747694165518743,
+        "mid": 0.7347852016852084,
+        "high": 0.9227692567924173
+      },
+      "median_bpm": 180.02911639387213,
+      "band_spread_bpm": 0.6273467589658708
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 180.40273688369365,
+        "mid": 179.8825589515492,
+        "high": 179.85508575430464
+      },
+      "band_strength": {
+        "low": 0.6710671238317945,
+        "mid": 0.810968600541016,
+        "high": 0.9395694973729393
+      },
+      "median_bpm": 179.8825589515492,
+      "band_spread_bpm": 0.5476511293890098
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 180.43358367099927,
+        "mid": 179.92487467489227,
+        "high": 179.88092560252352
+      },
+      "band_strength": {
+        "low": 0.6485056504621601,
+        "mid": 0.8068804007781439,
+        "high": 0.9331984046644839
+      },
+      "median_bpm": 179.92487467489227,
+      "band_spread_bpm": 0.5526580684757505
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 180.0753027865152,
+        "mid": 179.92272719127772,
+        "high": 179.85383084030096
+      },
+      "band_strength": {
+        "low": 0.654124532474713,
+        "mid": 0.7994753965048549,
+        "high": 0.9395490550908222
+      },
+      "median_bpm": 179.92272719127772,
+      "band_spread_bpm": 0.22147194621425115
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.75138252698463,
+        "mid": 179.82397570971918,
+        "high": 179.74855411931233
+      },
+      "band_strength": {
+        "low": 0.6852280387802089,
+        "mid": 0.7474615756302129,
+        "high": 0.8963598041669368
+      },
+      "median_bpm": 179.75138252698463,
+      "band_spread_bpm": 0.07542159040684737
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 179.8016194223693,
+        "mid": 179.923828169629,
+        "high": 179.95852133120556
+      },
+      "band_strength": {
+        "low": 0.710257927671775,
+        "mid": 0.7499670938996263,
+        "high": 0.9598816739494294
+      },
+      "median_bpm": 179.923828169629,
+      "band_spread_bpm": 0.15690190883626087
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.10312784858874,
+        "mid": 179.9419431886085,
+        "high": 179.9824046238856
+      },
+      "band_strength": {
+        "low": 0.7714929854069306,
+        "mid": 0.762126499100672,
+        "high": 0.9866796205294185
+      },
+      "median_bpm": 179.9824046238856,
+      "band_spread_bpm": 0.16118465998025044
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.20011565279253,
+        "mid": 179.94735778695497,
+        "high": 180.0047029572317
+      },
+      "band_strength": {
+        "low": 0.9166139587223158,
+        "mid": 0.8071719242337401,
+        "high": 1.003304979196831
+      },
+      "median_bpm": 180.0047029572317,
+      "band_spread_bpm": 0.252757865837566
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.21030695976668,
+        "mid": 180.12710935514346,
+        "high": 180.15452484727487
+      },
+      "band_strength": {
+        "low": 0.9465581175195544,
+        "mid": 0.763104289259585,
+        "high": 0.9423171622338623
+      },
+      "median_bpm": 180.15452484727487,
+      "band_spread_bpm": 0.08319760462322279
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.22941740062484,
+        "mid": 180.41286493500684,
+        "high": 180.13365798377333
+      },
+      "band_strength": {
+        "low": 0.9032597790679104,
+        "mid": 0.7113374867633955,
+        "high": 0.9687432106354064
+      },
+      "median_bpm": 180.22941740062484,
+      "band_spread_bpm": 0.2792069512335047
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.11839264168978,
+        "mid": 180.2621794452209,
+        "high": 180.0542615018771
+      },
+      "band_strength": {
+        "low": 0.874446301739448,
+        "mid": 0.7335872832078223,
+        "high": 0.9726026172937602
+      },
+      "median_bpm": 180.11839264168978,
+      "band_spread_bpm": 0.20791794334380143
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.8513898324013,
+    180.01527801964744,
+    180.27928039395874
+  ],
+  "leading_alignment_padding_samples": 6,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.054,
+        5.376
+      ],
+      "target_anchors_seconds": [
+        0.05411499436302142,
+        5.3874483276963545
+      ],
+      "tempo_factor": 0.9978750000000001,
+      "source_guard_samples": [
+        0,
+        277248
+      ],
+      "output_offset_samples": 6,
+      "observed_raw_anchors_seconds": [
+        0.054,
+        5.382083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999813771451,
+        0.9999999810291932
+      ],
+      "observed_end_error_ms": -5.250000000000199,
+      "raw_sha256": "2ba067adff86ca6e7f75119197ab897e2255e9579e28728206b75e88ff4e3299",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=277248,asetpts=PTS-STARTPTS,atempo=0.9978750000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.376,
+        10.694
+      ],
+      "target_anchors_seconds": [
+        5.3874483276963545,
+        10.720781661029687
+      ],
+      "tempo_factor": 0.9971250000000003,
+      "source_guard_samples": [
+        238848,
+        532512
+      ],
+      "output_offset_samples": 239398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7270625
+      ],
+      "waveform_correlations": [
+        0.9999999569770858,
+        0.9999999863841169
+      ],
+      "observed_end_error_ms": -6.2708333333327815,
+      "raw_sha256": "37e95acc7711caa8dcdaad83da66a6ad51b2af2c0cc5441f0b526860e2525fbd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=238848:end_sample=532512,asetpts=PTS-STARTPTS,atempo=0.9971250000000003,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.694,
+        16.024
+      ],
+      "target_anchors_seconds": [
+        10.720781661029687,
+        16.054114994363022
+      ],
+      "tempo_factor": 0.9993749999999996,
+      "source_guard_samples": [
+        494112,
+        788352
+      ],
+      "output_offset_samples": 495398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999576179769,
+        0.999999960101932
+      ],
+      "observed_end_error_ms": -3.3750000000027924,
+      "raw_sha256": "7b713013ad6078e42a4bda8b4355eb6c46f7f29fac32612aae866737fe302173",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=494112:end_sample=788352,asetpts=PTS-STARTPTS,atempo=0.9993749999999996,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        16.024,
+        21.356
+      ],
+      "target_anchors_seconds": [
+        16.054114994363022,
+        21.387448327696355
+      ],
+      "tempo_factor": 0.9997500000000004,
+      "source_guard_samples": [
+        749952,
+        1044288
+      ],
+      "output_offset_samples": 751398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7319375
+      ],
+      "waveform_correlations": [
+        0.9999999535889844,
+        0.9999999549649566
+      ],
+      "observed_end_error_ms": -1.3958333333325967,
+      "raw_sha256": "be7150ceb936512a273f818cfe629aeeaafdd1a434277b894c500d7bb51f5f74",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=749952:end_sample=1044288,asetpts=PTS-STARTPTS,atempo=0.9997500000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        21.356,
+        26.688
+      ],
+      "target_anchors_seconds": [
+        21.387448327696355,
+        26.72078166102969
+      ],
+      "tempo_factor": 0.999749999999999,
+      "source_guard_samples": [
+        1005888,
+        1300224
+      ],
+      "output_offset_samples": 1007398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.731958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999567543936,
+        0.9999999582797997
+      ],
+      "observed_end_error_ms": -1.3750000000030127,
+      "raw_sha256": "f915641a125ff449e5e3673fe00f8e99783ce1575971af73205fb3d054ea7378",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1005888:end_sample=1300224,asetpts=PTS-STARTPTS,atempo=0.9997499999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        26.688,
+        32.016
+      ],
+      "target_anchors_seconds": [
+        26.72078166102969,
+        32.05411499436302
+      ],
+      "tempo_factor": 0.9990000000000008,
+      "source_guard_samples": [
+        1261824,
+        1555968
+      ],
+      "output_offset_samples": 1263398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728
+      ],
+      "waveform_correlations": [
+        0.9999999618582037,
+        0.9999999852783826
+      ],
+      "observed_end_error_ms": -5.333333333329193,
+      "raw_sha256": "25e47c3f2d92b6bc3debafcd8305cce1c64d45cf9f3ddd1d25fd7d31452cfa34",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1261824:end_sample=1555968,asetpts=PTS-STARTPTS,atempo=0.9990000000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        32.016,
+        37.316
+      ],
+      "target_anchors_seconds": [
+        32.05411499436302,
+        37.387448327696355
+      ],
+      "tempo_factor": 0.9937500000000004,
+      "source_guard_samples": [
+        1517568,
+        1810368
+      ],
+      "output_offset_samples": 1519398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724895833333333
+      ],
+      "waveform_correlations": [
+        0.9999999629910696,
+        0.9999999716090989
+      ],
+      "observed_end_error_ms": -8.437500000002984,
+      "raw_sha256": "6c3f184b983a681dbec2975e5355708cb0d9fdc733c08925f8fecc0609a23db6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1517568:end_sample=1810368,asetpts=PTS-STARTPTS,atempo=0.9937500000000004,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        37.316,
+        42.608
+      ],
+      "target_anchors_seconds": [
+        37.387448327696355,
+        42.72078166102968
+      ],
+      "tempo_factor": 0.9922499999999999,
+      "source_guard_samples": [
+        1771968,
+        2064384
+      ],
+      "output_offset_samples": 1775398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7270625
+      ],
+      "waveform_correlations": [
+        0.9999999631522756,
+        0.9999999786664082
+      ],
+      "observed_end_error_ms": -6.270833333329229,
+      "raw_sha256": "30241ad4c20119d797fe00bca21a9f131f7da65a95a54abd8b7db6694b7e42db",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=1771968:end_sample=2064384,asetpts=PTS-STARTPTS,atempo=0.9922499999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        42.608,
+        47.898
+      ],
+      "target_anchors_seconds": [
+        42.72078166102968,
+        48.05411499436302
+      ],
+      "tempo_factor": 0.9918750000000007,
+      "source_guard_samples": [
+        2025984,
+        2318304
+      ],
+      "output_offset_samples": 2031398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727291666666667
+      ],
+      "waveform_correlations": [
+        0.9999999765257758,
+        0.9999999877140506
+      ],
+      "observed_end_error_ms": -6.041666666669165,
+      "raw_sha256": "b5e0c95f4639a86eee6df2748b80e2623d582058eb1bd3400aa37c17098abcbc",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2025984:end_sample=2318304,asetpts=PTS-STARTPTS,atempo=0.9918750000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        47.898,
+        53.188
+      ],
+      "target_anchors_seconds": [
+        48.05411499436302,
+        53.387448327696355
+      ],
+      "tempo_factor": 0.9918749999999994,
+      "source_guard_samples": [
+        2279904,
+        2572224
+      ],
+      "output_offset_samples": 2287398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7281458333333335
+      ],
+      "waveform_correlations": [
+        0.9999999634242916,
+        0.9999999858608589
+      ],
+      "observed_end_error_ms": -5.187500000002565,
+      "raw_sha256": "8f3111bb2d918319b3d2379205a8296146afa92752567c01c1b640ff05a043b9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2279904:end_sample=2572224,asetpts=PTS-STARTPTS,atempo=0.9918749999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        53.188,
+        58.472
+      ],
+      "target_anchors_seconds": [
+        53.387448327696355,
+        58.72078166102968
+      ],
+      "tempo_factor": 0.9907500000000007,
+      "source_guard_samples": [
+        2533824,
+        2825856
+      ],
+      "output_offset_samples": 2543398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.724875
+      ],
+      "waveform_correlations": [
+        0.999999960981441,
+        0.9999999831602585
+      ],
+      "observed_end_error_ms": -8.458333333329016,
+      "raw_sha256": "e91a4bf60cb1bf70192c86341b0104c246c58ac8d3afca611ea58a553da6dbd6",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2533824:end_sample=2825856,asetpts=PTS-STARTPTS,atempo=0.9907500000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        58.472,
+        63.746
+      ],
+      "target_anchors_seconds": [
+        58.72078166102968,
+        64.05411499436302
+      ],
+      "tempo_factor": 0.9888749999999997,
+      "source_guard_samples": [
+        2787456,
+        3079008
+      ],
+      "output_offset_samples": 2799398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.729833333333334
+      ],
+      "waveform_correlations": [
+        0.9999999664541466,
+        0.999999977220582
+      ],
+      "observed_end_error_ms": -3.500000000002501,
+      "raw_sha256": "e7bdfd162d5df1975f54367e0441342d84384f38a35b3778e5134c33332e4591",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=2787456:end_sample=3079008,asetpts=PTS-STARTPTS,atempo=0.9888749999999997,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        63.746,
+        69.022
+      ],
+      "target_anchors_seconds": [
+        64.05411499436302,
+        69.38744832769635
+      ],
+      "tempo_factor": 0.9892500000000015,
+      "source_guard_samples": [
+        3040608,
+        3332256
+      ],
+      "output_offset_samples": 3055398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726645833333333
+      ],
+      "waveform_correlations": [
+        0.9999999669194246,
+        0.9999999777438079
+      ],
+      "observed_end_error_ms": -6.6874999999955165,
+      "raw_sha256": "081a3ed06abfd996ce704eec460b4bd4d31f9119f89edf760380c71e1bfdbbcd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3040608:end_sample=3332256,asetpts=PTS-STARTPTS,atempo=0.9892500000000015,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        69.022,
+        74.298
+      ],
+      "target_anchors_seconds": [
+        69.38744832769635,
+        74.72078166102969
+      ],
+      "tempo_factor": 0.9892499999999975,
+      "source_guard_samples": [
+        3293856,
+        3585504
+      ],
+      "output_offset_samples": 3311398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728625
+      ],
+      "waveform_correlations": [
+        0.9999999569453945,
+        0.9999999813968075
+      ],
+      "observed_end_error_ms": -4.708333333343084,
+      "raw_sha256": "3e29066fbe3e90b738c1ae897e23c4ff00a48915ff8aa91133224948ab757f76",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3293856:end_sample=3585504,asetpts=PTS-STARTPTS,atempo=0.9892499999999975,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        74.298,
+        79.566
+      ],
+      "target_anchors_seconds": [
+        74.72078166102969,
+        80.05411499436302
+      ],
+      "tempo_factor": 0.987750000000001,
+      "source_guard_samples": [
+        3547104,
+        3838368
+      ],
+      "output_offset_samples": 3567398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.725770833333334
+      ],
+      "waveform_correlations": [
+        0.999999965012704,
+        0.9999999856017922
+      ],
+      "observed_end_error_ms": -7.562499999995254,
+      "raw_sha256": "6f6a08afe8827cd9c325eacb043c37221d80c5d1152520b8ee24e3253e29f560",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3547104:end_sample=3838368,asetpts=PTS-STARTPTS,atempo=0.9877500000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        79.566,
+        84.828
+      ],
+      "target_anchors_seconds": [
+        80.05411499436302,
+        85.38744832769635
+      ],
+      "tempo_factor": 0.986625000000001,
+      "source_guard_samples": [
+        3799968,
+        4090944
+      ],
+      "output_offset_samples": 3823398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.732729166666667
+      ],
+      "waveform_correlations": [
+        0.999999970106774,
+        0.9999999652143418
+      ],
+      "observed_end_error_ms": -0.6041666666618539,
+      "raw_sha256": "96e7a49807828c69f6527062241aae58610e21b9c8e6420e4526b0aabf7cc49b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=3799968:end_sample=4090944,asetpts=PTS-STARTPTS,atempo=0.9866250000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        84.828,
+        90.094
+      ],
+      "target_anchors_seconds": [
+        85.38744832769635,
+        90.72078166102969
+      ],
+      "tempo_factor": 0.9873749999999966,
+      "source_guard_samples": [
+        4052544,
+        4343712
+      ],
+      "output_offset_samples": 4079398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.734104166666667
+      ],
+      "waveform_correlations": [
+        0.9999999678213464,
+        0.9999999721172618
+      ],
+      "observed_end_error_ms": 0.7708333333233952,
+      "raw_sha256": "d53bec9702f4bc2dff9a15d9376fbec8d06d68a559d0245d1644f21b4b37d3b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4052544:end_sample=4343712,asetpts=PTS-STARTPTS,atempo=0.9873749999999966,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        90.094,
+        95.364
+      ],
+      "target_anchors_seconds": [
+        90.72078166102969,
+        96.05411499436302
+      ],
+      "tempo_factor": 0.9881250000000028,
+      "source_guard_samples": [
+        4305312,
+        4596672
+      ],
+      "output_offset_samples": 4335398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7303125
+      ],
+      "waveform_correlations": [
+        0.9999999719567252,
+        0.9999999464658486
+      ],
+      "observed_end_error_ms": -3.0208333333288095,
+      "raw_sha256": "eb4824059d2a3b340b5399cd19f4da3cd44f41ebc27dc19d7ea2775cdac1c53b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4305312:end_sample=4596672,asetpts=PTS-STARTPTS,atempo=0.9881250000000028,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        95.364,
+        100.642
+      ],
+      "target_anchors_seconds": [
+        96.05411499436302,
+        101.38744832769635
+      ],
+      "tempo_factor": 0.9896249999999993,
+      "source_guard_samples": [
+        4558272,
+        4850016
+      ],
+      "output_offset_samples": 4591398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.727041666666667
+      ],
+      "waveform_correlations": [
+        0.9999999691205221,
+        0.9999999854189503
+      ],
+      "observed_end_error_ms": -6.2916666666623655,
+      "raw_sha256": "f35e945a8533045ec039bbb7f53dba8b6cbbc9574bc18793c7d3d22c3bf538ea",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4558272:end_sample=4850016,asetpts=PTS-STARTPTS,atempo=0.9896249999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        100.642,
+        105.912
+      ],
+      "target_anchors_seconds": [
+        101.38744832769635,
+        106.72078166102969
+      ],
+      "tempo_factor": 0.9881250000000001,
+      "source_guard_samples": [
+        4811616,
+        5102976
+      ],
+      "output_offset_samples": 4847398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728479166666666
+      ],
+      "waveform_correlations": [
+        0.9999999541399329,
+        0.9999999882342319
+      ],
+      "observed_end_error_ms": -4.854166666676818,
+      "raw_sha256": "74df12867b318bc617a1fcadef54c7cea617e8bc89cc53df6040f3469711f3a8",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=4811616:end_sample=5102976,asetpts=PTS-STARTPTS,atempo=0.9881250000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        105.912,
+        111.19
+      ],
+      "target_anchors_seconds": [
+        106.72078166102969,
+        112.05411499436302
+      ],
+      "tempo_factor": 0.9896249999999993,
+      "source_guard_samples": [
+        5064576,
+        5356320
+      ],
+      "output_offset_samples": 5103398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7276875
+      ],
+      "waveform_correlations": [
+        0.9999999521167052,
+        0.9999999822837623
+      ],
+      "observed_end_error_ms": -5.645833333328909,
+      "raw_sha256": "ef21c46c61a10dc1feea0e9ff5a29f5bea75d6e972cdd21f7b6dbe84c4281ca5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5064576:end_sample=5356320,asetpts=PTS-STARTPTS,atempo=0.9896249999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        111.19,
+        116.458
+      ],
+      "target_anchors_seconds": [
+        112.05411499436302,
+        117.38744832769635
+      ],
+      "tempo_factor": 0.987750000000001,
+      "source_guard_samples": [
+        5317920,
+        5609184
+      ],
+      "output_offset_samples": 5359398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.728854166666666
+      ],
+      "waveform_correlations": [
+        0.9999999680207853,
+        0.9999999796195899
+      ],
+      "observed_end_error_ms": -4.479166666662593,
+      "raw_sha256": "86155ee602ffcee6fa70a1f310656aa3549a6fb5d3fbebf9007f4eb062386061",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5317920:end_sample=5609184,asetpts=PTS-STARTPTS,atempo=0.9877500000000010,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        116.458,
+        121.732
+      ],
+      "target_anchors_seconds": [
+        117.38744832769635,
+        122.72078166102969
+      ],
+      "tempo_factor": 0.9888749999999984,
+      "source_guard_samples": [
+        5570784,
+        5862336
+      ],
+      "output_offset_samples": 5615421,
+      "observed_raw_anchors_seconds": [
+        0.3995208333333333,
+        5.728104166666666
+      ],
+      "waveform_correlations": [
+        0.9999999693292162,
+        0.9999999829962085
+      ],
+      "observed_end_error_ms": -4.750000000010246,
+      "raw_sha256": "b6bf07ef516f27f0d7b58f82c111ac0111432e8a7f25fc5421c6d92f363020c9",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5570784:end_sample=5862336,asetpts=PTS-STARTPTS,atempo=0.9888749999999984,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        121.732,
+        127.004
+      ],
+      "target_anchors_seconds": [
+        122.72078166102969,
+        128.05411499436303
+      ],
+      "tempo_factor": 0.9884999999999993,
+      "source_guard_samples": [
+        5823936,
+        6115392
+      ],
+      "output_offset_samples": 5871398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7249375
+      ],
+      "waveform_correlations": [
+        0.9999999593358669,
+        0.9999999880389697
+      ],
+      "observed_end_error_ms": -8.395833333342928,
+      "raw_sha256": "de9e04341276fa343cc8cf99ef987a0930bc8ef628f5a6861a500ae0f55da8c1",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=5823936:end_sample=6115392,asetpts=PTS-STARTPTS,atempo=0.9884999999999993,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        127.004,
+        132.274
+      ],
+      "target_anchors_seconds": [
+        128.05411499436303,
+        133.38744832769638
+      ],
+      "tempo_factor": 0.9881249999999975,
+      "source_guard_samples": [
+        6076992,
+        6368352
+      ],
+      "output_offset_samples": 6127398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.726020833333333
+      ],
+      "waveform_correlations": [
+        0.9999999594866703,
+        0.9999999907288994
+      ],
+      "observed_end_error_ms": -7.312500000010047,
+      "raw_sha256": "75110f9b61df446f7adc94bfb1bbce97ab8fe3c7ed7de8fe540c356ef1423d04",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6076992:end_sample=6368352,asetpts=PTS-STARTPTS,atempo=0.9881249999999975,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        132.274,
+        137.538
+      ],
+      "target_anchors_seconds": [
+        133.38744832769638,
+        138.7207816610297
+      ],
+      "tempo_factor": 0.9870000000000054,
+      "source_guard_samples": [
+        6329952,
+        6621024
+      ],
+      "output_offset_samples": 6383398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.7341875
+      ],
+      "waveform_correlations": [
+        0.9999999715813546,
+        0.9999999654502838
+      ],
+      "observed_end_error_ms": 0.8541666666852521,
+      "raw_sha256": "db939600dfc254d7fe196d24353691911e8eba18cf1143d993bbbcfa2bf5856b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6329952:end_sample=6621024,asetpts=PTS-STARTPTS,atempo=0.9870000000000054,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        137.538,
+        142.814
+      ],
+      "target_anchors_seconds": [
+        138.7207816610297,
+        144.05411499436303
+      ],
+      "tempo_factor": 0.9892499999999949,
+      "source_guard_samples": [
+        6582624,
+        6874272
+      ],
+      "output_offset_samples": 6639398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        5.72925
+      ],
+      "waveform_correlations": [
+        0.9999999601866069,
+        0.9999999760197551
+      ],
+      "observed_end_error_ms": -4.083333333342765,
+      "raw_sha256": "88a9b74c5af7f0c82dc12a51a91a06469fa9945628bdd560696e8084da51ceac",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6582624:end_sample=6874272,asetpts=PTS-STARTPTS,atempo=0.9892499999999949,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        433
+      ],
+      "source_anchors_seconds": [
+        142.814,
+        143.144
+      ],
+      "target_anchors_seconds": [
+        144.05411499436303,
+        144.38744832769638
+      ],
+      "tempo_factor": 0.9900000000000094,
+      "source_guard_samples": [
+        6835872,
+        6898560
+      ],
+      "output_offset_samples": 6895398,
+      "observed_raw_anchors_seconds": [
+        0.4,
+        0.73
+      ],
+      "waveform_correlations": [
+        0.9999999716075952,
+        0.9999764338845653
+      ],
+      "observed_end_error_ms": -3.333333333342847,
+      "raw_sha256": "5abbba5dd0e721097f9852d758f112f50b072f3b64c26f08ecef86eb2fd95438",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/03__첫 바퀴__Driven__Electroclash Indie Rock__NA.wav",
+        "-af",
+        "atrim=start_sample=6835872:end_sample=6898560,asetpts=PTS-STARTPTS,atempo=0.9900000000000094,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-03/block-027.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}

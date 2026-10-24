@@ -1,0 +1,2352 @@
+{
+  "schema": "wavvy.tempo_corrected_source.v1",
+  "order": 18,
+  "title": "가까운 곳",
+  "candidate_id": "4df43801-27cc-4592-a97e-8b6c38074240",
+  "source_path": "SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+  "source_sha256": "2ec1ff2be3fb6ffe9c1ad08d957c714a4e1ffee98a59b0ff43ff34d8abadfcd2",
+  "analysis_path": "SERIES/07-00/production/tempo-analysis-20261024/18.json",
+  "analysis_sha256": "2e19719f9a8e86662d4f3571a2e4977ad11f3e0ac8e0ba6fd6e7516d1ea2afe5",
+  "target_bpm": 180,
+  "block_quarter_beats": 16,
+  "guard_seconds": 0.4,
+  "internal_crossfade_seconds": 0.024,
+  "pitch_processing": "FFmpeg static atempo, no pitch/resample rate change",
+  "output_path": "SERIES/07-00/input/processed-180/18__가까운 곳__180.wav",
+  "output_sha256": "191415bbed812d21edbe0eed642a424057d4f55a8a28cf33498039189c2b05dd",
+  "source_duration_seconds": 192.16,
+  "output_duration_seconds": 200.80452083333333,
+  "output_peak_linear": 0.594482421875,
+  "first_grid_beat_output_seconds": 0.1320235756385069,
+  "grid_beat_count": 596,
+  "output_windows": [
+    {
+      "center_seconds": 10.0,
+      "band_bpm": {
+        "low": 179.86885103189212,
+        "mid": 179.9038743581663,
+        "high": 179.88960709358372
+      },
+      "band_strength": {
+        "low": 0.9016736425718638,
+        "mid": 0.6221927972854554,
+        "high": 0.8106553448324808
+      },
+      "median_bpm": 179.88960709358372,
+      "band_spread_bpm": 0.03502332627417104
+    },
+    {
+      "center_seconds": 15.0,
+      "band_bpm": {
+        "low": 179.87167703348183,
+        "mid": 179.76848406313607,
+        "high": 179.8316399613289
+      },
+      "band_strength": {
+        "low": 0.849896429528602,
+        "mid": 0.6353292478310694,
+        "high": 0.8170095468858196
+      },
+      "median_bpm": 179.8316399613289,
+      "band_spread_bpm": 0.10319297034575925
+    },
+    {
+      "center_seconds": 20.0,
+      "band_bpm": {
+        "low": 180.02512584268402,
+        "mid": 179.99660516575406,
+        "high": 179.94754149765333
+      },
+      "band_strength": {
+        "low": 0.7856493575011971,
+        "mid": 0.647933283221663,
+        "high": 0.8326042588942373
+      },
+      "median_bpm": 179.99660516575406,
+      "band_spread_bpm": 0.07758434503068656
+    },
+    {
+      "center_seconds": 25.0,
+      "band_bpm": {
+        "low": 179.96955052071388,
+        "mid": 179.9413954408383,
+        "high": 179.8033751460917
+      },
+      "band_strength": {
+        "low": 0.7748934895121545,
+        "mid": 0.6682924144443365,
+        "high": 0.7295360412848485
+      },
+      "median_bpm": 179.9413954408383,
+      "band_spread_bpm": 0.1661753746221848
+    },
+    {
+      "center_seconds": 30.0,
+      "band_bpm": {
+        "low": 180.1354485050936,
+        "mid": 180.09846056307507,
+        "high": 180.0556241661057
+      },
+      "band_strength": {
+        "low": 0.7481630371342765,
+        "mid": 0.638162402406539,
+        "high": 0.714212012242949
+      },
+      "median_bpm": 180.09846056307507,
+      "band_spread_bpm": 0.07982433898789054
+    },
+    {
+      "center_seconds": 35.0,
+      "band_bpm": {
+        "low": 180.18820983964488,
+        "mid": 180.11890644375376,
+        "high": 180.14659740262982
+      },
+      "band_strength": {
+        "low": 0.8045595032974254,
+        "mid": 0.6589914566397322,
+        "high": 0.7492847778364783
+      },
+      "median_bpm": 180.14659740262982,
+      "band_spread_bpm": 0.06930339589112577
+    },
+    {
+      "center_seconds": 40.0,
+      "band_bpm": {
+        "low": 180.20775580812582,
+        "mid": 179.99711747633762,
+        "high": 180.11224557720715
+      },
+      "band_strength": {
+        "low": 0.8388878110076454,
+        "mid": 0.666344523560403,
+        "high": 0.6823065876022432
+      },
+      "median_bpm": 180.11224557720715,
+      "band_spread_bpm": 0.21063833178820346
+    },
+    {
+      "center_seconds": 45.0,
+      "band_bpm": {
+        "low": 180.21361916134373,
+        "mid": 179.95299026991898,
+        "high": 180.0765123888428
+      },
+      "band_strength": {
+        "low": 0.9186949025825526,
+        "mid": 0.6757065681800891,
+        "high": 0.7779671091291133
+      },
+      "median_bpm": 180.0765123888428,
+      "band_spread_bpm": 0.2606288914247443
+    },
+    {
+      "center_seconds": 50.0,
+      "band_bpm": {
+        "low": 180.12812918244964,
+        "mid": 179.79666651087203,
+        "high": 180.02396831587484
+      },
+      "band_strength": {
+        "low": 0.9562727182074015,
+        "mid": 0.688037116487028,
+        "high": 0.8166388640005693
+      },
+      "median_bpm": 180.02396831587484,
+      "band_spread_bpm": 0.33146267157761145
+    },
+    {
+      "center_seconds": 55.0,
+      "band_bpm": {
+        "low": 180.04729629022603,
+        "mid": 179.9592425730087,
+        "high": 180.09947569274462
+      },
+      "band_strength": {
+        "low": 0.8938206495973908,
+        "mid": 0.7485315158849972,
+        "high": 0.7734156103740728
+      },
+      "median_bpm": 180.04729629022603,
+      "band_spread_bpm": 0.14023311973591035
+    },
+    {
+      "center_seconds": 60.0,
+      "band_bpm": {
+        "low": 179.9490494538369,
+        "mid": 180.0621118027258,
+        "high": 180.14112660107912
+      },
+      "band_strength": {
+        "low": 0.8280794706686219,
+        "mid": 0.7520913983202393,
+        "high": 0.883678504669832
+      },
+      "median_bpm": 180.0621118027258,
+      "band_spread_bpm": 0.19207714724223024
+    },
+    {
+      "center_seconds": 65.0,
+      "band_bpm": {
+        "low": 179.85050621931606,
+        "mid": 180.03743650209503,
+        "high": 180.1830778727936
+      },
+      "band_strength": {
+        "low": 0.7891007872064273,
+        "mid": 0.7391388459015918,
+        "high": 0.8210295146733054
+      },
+      "median_bpm": 180.03743650209503,
+      "band_spread_bpm": 0.3325716534775438
+    },
+    {
+      "center_seconds": 70.0,
+      "band_bpm": {
+        "low": 180.03642789367515,
+        "mid": 180.09835995673473,
+        "high": 180.20965232762012
+      },
+      "band_strength": {
+        "low": 0.7131914033581116,
+        "mid": 0.7250353292611286,
+        "high": 0.8050726577194504
+      },
+      "median_bpm": 180.09835995673473,
+      "band_spread_bpm": 0.17322443394496645
+    },
+    {
+      "center_seconds": 75.0,
+      "band_bpm": {
+        "low": 180.09318857930592,
+        "mid": 180.0778235478591,
+        "high": 180.1536262573868
+      },
+      "band_strength": {
+        "low": 0.8232498455542819,
+        "mid": 0.6535248937798533,
+        "high": 0.8132872494292679
+      },
+      "median_bpm": 180.09318857930592,
+      "band_spread_bpm": 0.07580270952769297
+    },
+    {
+      "center_seconds": 80.0,
+      "band_bpm": {
+        "low": 180.21951585083582,
+        "mid": 180.0642962134349,
+        "high": 180.06574237909254
+      },
+      "band_strength": {
+        "low": 0.866253331026905,
+        "mid": 0.5772638432741338,
+        "high": 0.7277198831417121
+      },
+      "median_bpm": 180.06574237909254,
+      "band_spread_bpm": 0.1552196374009327
+    },
+    {
+      "center_seconds": 85.0,
+      "band_bpm": {
+        "low": 180.22154533757865,
+        "mid": 180.1070800064178,
+        "high": 179.91923836885485
+      },
+      "band_strength": {
+        "low": 0.9191411530761913,
+        "mid": 0.6183727080328667,
+        "high": 0.7506774373979803
+      },
+      "median_bpm": 180.1070800064178,
+      "band_spread_bpm": 0.3023069687237978
+    },
+    {
+      "center_seconds": 90.0,
+      "band_bpm": {
+        "low": 180.1544061754898,
+        "mid": 179.97388333945375,
+        "high": 179.8996745291643
+      },
+      "band_strength": {
+        "low": 0.947736232937153,
+        "mid": 0.7094524545561635,
+        "high": 0.826423668079726
+      },
+      "median_bpm": 179.97388333945375,
+      "band_spread_bpm": 0.25473164632552425
+    },
+    {
+      "center_seconds": 95.0,
+      "band_bpm": {
+        "low": 179.95464214400226,
+        "mid": 179.9820357956905,
+        "high": 179.84802079939047
+      },
+      "band_strength": {
+        "low": 1.0010651887243907,
+        "mid": 0.6913337144240533,
+        "high": 0.8532010275619768
+      },
+      "median_bpm": 179.95464214400226,
+      "band_spread_bpm": 0.13401499630003855
+    },
+    {
+      "center_seconds": 100.0,
+      "band_bpm": {
+        "low": 179.9077370828289,
+        "mid": 179.91119698862133,
+        "high": 179.8010776516425
+      },
+      "band_strength": {
+        "low": 1.0168974254832734,
+        "mid": 0.7362776277207219,
+        "high": 0.8229551189896389
+      },
+      "median_bpm": 179.9077370828289,
+      "band_spread_bpm": 0.11011933697884047
+    },
+    {
+      "center_seconds": 105.0,
+      "band_bpm": {
+        "low": 179.9556986160982,
+        "mid": 179.9010514137739,
+        "high": 179.83154194125083
+      },
+      "band_strength": {
+        "low": 0.973641595171867,
+        "mid": 0.6827003313761428,
+        "high": 0.8693583743545875
+      },
+      "median_bpm": 179.9010514137739,
+      "band_spread_bpm": 0.12415667484737014
+    },
+    {
+      "center_seconds": 110.0,
+      "band_bpm": {
+        "low": 180.03992505328287,
+        "mid": 179.96353042802969,
+        "high": 179.919896949733
+      },
+      "band_strength": {
+        "low": 0.9298042724426001,
+        "mid": 0.65090893654071,
+        "high": 0.8222848091089615
+      },
+      "median_bpm": 179.96353042802969,
+      "band_spread_bpm": 0.12002810354988469
+    },
+    {
+      "center_seconds": 115.0,
+      "band_bpm": {
+        "low": 180.2332356663909,
+        "mid": 180.0681019667418,
+        "high": 179.95655633181693
+      },
+      "band_strength": {
+        "low": 0.8763603324940019,
+        "mid": 0.6852414284600414,
+        "high": 0.8526359782152572
+      },
+      "median_bpm": 180.0681019667418,
+      "band_spread_bpm": 0.27667933457397
+    },
+    {
+      "center_seconds": 120.0,
+      "band_bpm": {
+        "low": 180.28510867545504,
+        "mid": 179.8886594935837,
+        "high": 179.99268680983948
+      },
+      "band_strength": {
+        "low": 0.8024760914663349,
+        "mid": 0.6760007041490227,
+        "high": 0.8373060676506555
+      },
+      "median_bpm": 179.99268680983948,
+      "band_spread_bpm": 0.3964491818713327
+    },
+    {
+      "center_seconds": 125.0,
+      "band_bpm": {
+        "low": 180.1330683913844,
+        "mid": 179.76078535414337,
+        "high": 180.01951154384176
+      },
+      "band_strength": {
+        "low": 0.7967616948946306,
+        "mid": 0.6402130270632076,
+        "high": 0.8134837937780439
+      },
+      "median_bpm": 180.01951154384176,
+      "band_spread_bpm": 0.37228303724103284
+    },
+    {
+      "center_seconds": 130.0,
+      "band_bpm": {
+        "low": 180.1412679412711,
+        "mid": 179.53461859286094,
+        "high": 180.0501558915755
+      },
+      "band_strength": {
+        "low": 0.8103620888496423,
+        "mid": 0.5819748505353777,
+        "high": 0.7943196721668913
+      },
+      "median_bpm": 180.0501558915755,
+      "band_spread_bpm": 0.6066493484101727
+    },
+    {
+      "center_seconds": 135.0,
+      "band_bpm": {
+        "low": 180.0146475152091,
+        "mid": 179.63645868666433,
+        "high": 179.9148039008076
+      },
+      "band_strength": {
+        "low": 0.6436852141409195,
+        "mid": 0.5020295560590695,
+        "high": 0.6438003307050076
+      },
+      "median_bpm": 179.9148039008076,
+      "band_spread_bpm": 0.3781888285447792
+    },
+    {
+      "center_seconds": 140.0,
+      "band_bpm": {
+        "low": 180.3493581398996,
+        "mid": 179.9405951037368,
+        "high": 180.1714841847705
+      },
+      "band_strength": {
+        "low": 0.9025195920794762,
+        "mid": 0.506183473081803,
+        "high": 0.629004221548048
+      },
+      "median_bpm": 180.1714841847705,
+      "band_spread_bpm": 0.40876303616281007
+    },
+    {
+      "center_seconds": 145.0,
+      "band_bpm": {
+        "low": 180.12696984576706,
+        "mid": 180.09851396048637,
+        "high": 180.23544235022146
+      },
+      "band_strength": {
+        "low": 0.9611744647930909,
+        "mid": 0.5590532695693307,
+        "high": 0.7668373390249704
+      },
+      "median_bpm": 180.12696984576706,
+      "band_spread_bpm": 0.1369283897350897
+    },
+    {
+      "center_seconds": 150.0,
+      "band_bpm": {
+        "low": 180.12438558694564,
+        "mid": 180.2665512027248,
+        "high": 180.35379543533853
+      },
+      "band_strength": {
+        "low": 0.9645173237089337,
+        "mid": 0.6264289140078392,
+        "high": 0.7845694874613002
+      },
+      "median_bpm": 180.2665512027248,
+      "band_spread_bpm": 0.22940984839289058
+    },
+    {
+      "center_seconds": 155.0,
+      "band_bpm": {
+        "low": 180.0928393810613,
+        "mid": 180.1521895772096,
+        "high": 180.288827850794
+      },
+      "band_strength": {
+        "low": 0.9203362411312725,
+        "mid": 0.6872497993585955,
+        "high": 0.7709298629292809
+      },
+      "median_bpm": 180.1521895772096,
+      "band_spread_bpm": 0.195988469732697
+    },
+    {
+      "center_seconds": 160.0,
+      "band_bpm": {
+        "low": 180.04197888257463,
+        "mid": 180.04269571396594,
+        "high": 180.42795244760222
+      },
+      "band_strength": {
+        "low": 0.9880909239798078,
+        "mid": 0.7476495328486598,
+        "high": 0.8286223713975444
+      },
+      "median_bpm": 180.04269571396594,
+      "band_spread_bpm": 0.38597356502759794
+    },
+    {
+      "center_seconds": 165.0,
+      "band_bpm": {
+        "low": 180.120589638164,
+        "mid": 180.16706444303748,
+        "high": 180.50303136244312
+      },
+      "band_strength": {
+        "low": 1.010686095187183,
+        "mid": 0.7415182574503608,
+        "high": 0.7819020720011906
+      },
+      "median_bpm": 180.16706444303748,
+      "band_spread_bpm": 0.3824417242791185
+    },
+    {
+      "center_seconds": 170.0,
+      "band_bpm": {
+        "low": 180.00999889556067,
+        "mid": 179.81015180700385,
+        "high": 180.1721850114908
+      },
+      "band_strength": {
+        "low": 1.0818750622701774,
+        "mid": 0.7813360106013499,
+        "high": 0.78619786318783
+      },
+      "median_bpm": 180.00999889556067,
+      "band_spread_bpm": 0.36203320448694853
+    },
+    {
+      "center_seconds": 175.0,
+      "band_bpm": {
+        "low": 180.06749790661019,
+        "mid": 179.99410961760776,
+        "high": 180.270779527871
+      },
+      "band_strength": {
+        "low": 1.077321237293441,
+        "mid": 0.7588580946864036,
+        "high": 0.8049863600022841
+      },
+      "median_bpm": 180.06749790661019,
+      "band_spread_bpm": 0.2766699102632515
+    },
+    {
+      "center_seconds": 180.0,
+      "band_bpm": {
+        "low": 180.02841647362396,
+        "mid": 179.99266784218835,
+        "high": 180.10254697696632
+      },
+      "band_strength": {
+        "low": 1.044247867024045,
+        "mid": 0.7338293548903315,
+        "high": 0.8352822429096998
+      },
+      "median_bpm": 180.02841647362396,
+      "band_spread_bpm": 0.10987913477796951
+    },
+    {
+      "center_seconds": 185.0,
+      "band_bpm": {
+        "low": 180.2253357418121,
+        "mid": 180.15485776360975,
+        "high": 180.32986846293542
+      },
+      "band_strength": {
+        "low": 1.0230769044254977,
+        "mid": 0.6506432164669468,
+        "high": 0.800136442854428
+      },
+      "median_bpm": 180.2253357418121,
+      "band_spread_bpm": 0.17501069932566793
+    },
+    {
+      "center_seconds": 190.0,
+      "band_bpm": {
+        "low": 180.26404927572298,
+        "mid": 180.15439437065066,
+        "high": 180.33833648653405
+      },
+      "band_strength": {
+        "low": 1.0269997046712582,
+        "mid": 0.6138116800258249,
+        "high": 0.7802327587698639
+      },
+      "median_bpm": 180.26404927572298,
+      "band_spread_bpm": 0.18394211588338294
+    },
+    {
+      "center_seconds": 195.0,
+      "band_bpm": {
+        "low": 180.36760156202328,
+        "mid": 180.18541535915318,
+        "high": 180.28050110482778
+      },
+      "band_strength": {
+        "low": 1.0347245438176063,
+        "mid": 0.5745614067633333,
+        "high": 0.7571118468625427
+      },
+      "median_bpm": 180.28050110482778,
+      "band_spread_bpm": 0.18218620287009912
+    }
+  ],
+  "output_window_bpm_p05_p50_p95": [
+    179.89933476574538,
+    180.05613384715065,
+    180.26442456477326
+  ],
+  "leading_alignment_padding_samples": 291,
+  "blocks": [
+    {
+      "block": 0,
+      "source_beat_indices": [
+        0,
+        16
+      ],
+      "source_anchors_seconds": [
+        0.126,
+        5.216
+      ],
+      "target_anchors_seconds": [
+        0.1320235756385069,
+        5.46535690897184
+      ],
+      "tempo_factor": 0.954375,
+      "source_guard_samples": [
+        0,
+        269568
+      ],
+      "output_offset_samples": 291,
+      "observed_raw_anchors_seconds": [
+        0.12595833333333334,
+        5.4516875
+      ],
+      "waveform_correlations": [
+        0.9998815525680282,
+        0.9999999777846118
+      ],
+      "observed_end_error_ms": -7.604166666665968,
+      "raw_sha256": "b6fe4469d1c830adfd776beae8f89368f3a13cf91347e62a91991f3c9fae47b4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=0:end_sample=269568,asetpts=PTS-STARTPTS,atempo=0.9543750000000000,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-000.wav"
+      ]
+    },
+    {
+      "block": 1,
+      "source_beat_indices": [
+        16,
+        32
+      ],
+      "source_anchors_seconds": [
+        5.216,
+        10.322
+      ],
+      "target_anchors_seconds": [
+        5.46535690897184,
+        10.798690242305174
+      ],
+      "tempo_factor": 0.9573749999999998,
+      "source_guard_samples": [
+        231168,
+        514656
+      ],
+      "output_offset_samples": 242770,
+      "observed_raw_anchors_seconds": [
+        0.4076458333333333,
+        5.742458333333333
+      ],
+      "waveform_correlations": [
+        0.9999999872175663,
+        0.9999999783141691
+      ],
+      "observed_end_error_ms": 1.479166666666032,
+      "raw_sha256": "e215750653be7c1d5687d612ed43227d5cc8f9d2202b0762d7f48f9671c04b36",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=231168:end_sample=514656,asetpts=PTS-STARTPTS,atempo=0.9573749999999998,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-001.wav"
+      ]
+    },
+    {
+      "block": 2,
+      "source_beat_indices": [
+        32,
+        48
+      ],
+      "source_anchors_seconds": [
+        10.322,
+        15.428
+      ],
+      "target_anchors_seconds": [
+        10.798690242305174,
+        16.132023575638506
+      ],
+      "tempo_factor": 0.9573750000000005,
+      "source_guard_samples": [
+        476256,
+        759744
+      ],
+      "output_offset_samples": 498745,
+      "observed_raw_anchors_seconds": [
+        0.4081666666666667,
+        5.7391041666666665
+      ],
+      "waveform_correlations": [
+        0.9999999825887427,
+        0.9999999757872319
+      ],
+      "observed_end_error_ms": -2.3958333333320425,
+      "raw_sha256": "647ec2efd023d7e273ea35f9c31d64ed95db6e45f38db489868f797bb23e3a97",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=476256:end_sample=759744,asetpts=PTS-STARTPTS,atempo=0.9573750000000005,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-002.wav"
+      ]
+    },
+    {
+      "block": 3,
+      "source_beat_indices": [
+        48,
+        64
+      ],
+      "source_anchors_seconds": [
+        15.428,
+        20.534
+      ],
+      "target_anchors_seconds": [
+        16.132023575638506,
+        21.465356908971838
+      ],
+      "tempo_factor": 0.9573749999999999,
+      "source_guard_samples": [
+        721344,
+        1004832
+      ],
+      "output_offset_samples": 754771,
+      "observed_raw_anchors_seconds": [
+        0.407625,
+        5.738083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999834832954,
+        0.9999999762394393
+      ],
+      "observed_end_error_ms": -2.874999999999517,
+      "raw_sha256": "6df0c8f5fc9c87e1c8a5d11d78f1013fcf25bed475c6983b552b231ba9df31d4",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=721344:end_sample=1004832,asetpts=PTS-STARTPTS,atempo=0.9573749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-003.wav"
+      ]
+    },
+    {
+      "block": 4,
+      "source_beat_indices": [
+        64,
+        80
+      ],
+      "source_anchors_seconds": [
+        20.534,
+        25.64
+      ],
+      "target_anchors_seconds": [
+        21.465356908971838,
+        26.798690242305174
+      ],
+      "tempo_factor": 0.9573749999999999,
+      "source_guard_samples": [
+        966432,
+        1249920
+      ],
+      "output_offset_samples": 1010828,
+      "observed_raw_anchors_seconds": [
+        0.4064375,
+        5.741125
+      ],
+      "waveform_correlations": [
+        0.9999999770480474,
+        0.9999999778386411
+      ],
+      "observed_end_error_ms": 1.3541666666645469,
+      "raw_sha256": "49e68104c9b990bd3db5530743d0b2a8108961c9dec8337da94c9daead01a871",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=966432:end_sample=1249920,asetpts=PTS-STARTPTS,atempo=0.9573749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-004.wav"
+      ]
+    },
+    {
+      "block": 5,
+      "source_beat_indices": [
+        80,
+        96
+      ],
+      "source_anchors_seconds": [
+        25.64,
+        30.744
+      ],
+      "target_anchors_seconds": [
+        26.798690242305174,
+        32.132023575638506
+      ],
+      "tempo_factor": 0.9570000000000001,
+      "source_guard_samples": [
+        1211520,
+        1494912
+      ],
+      "output_offset_samples": 1266699,
+      "observed_raw_anchors_seconds": [
+        0.409125,
+        5.739375
+      ],
+      "waveform_correlations": [
+        0.9999998437719702,
+        0.9813861223322307
+      ],
+      "observed_end_error_ms": -3.0833333333326607,
+      "raw_sha256": "d1fabeeafb23d48120d91350873e3fb34d52e80fe857b1e6c95d43a516510b62",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=1211520:end_sample=1494912,asetpts=PTS-STARTPTS,atempo=0.9570000000000001,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-005.wav"
+      ]
+    },
+    {
+      "block": 6,
+      "source_beat_indices": [
+        96,
+        112
+      ],
+      "source_anchors_seconds": [
+        30.744,
+        35.854
+      ],
+      "target_anchors_seconds": [
+        32.132023575638506,
+        37.46535690897184
+      ],
+      "tempo_factor": 0.9581249999999994,
+      "source_guard_samples": [
+        1456512,
+        1740192
+      ],
+      "output_offset_samples": 1522796,
+      "observed_raw_anchors_seconds": [
+        0.40710416666666666,
+        5.745229166666666
+      ],
+      "waveform_correlations": [
+        0.9999999841095725,
+        0.9999999882898292
+      ],
+      "observed_end_error_ms": 4.791666666664085,
+      "raw_sha256": "ad6223f6b95d5268be643c519191c263f5e787541c589f0977a42c7338b8737d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=1456512:end_sample=1740192,asetpts=PTS-STARTPTS,atempo=0.9581249999999994,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-006.wav"
+      ]
+    },
+    {
+      "block": 7,
+      "source_beat_indices": [
+        112,
+        128
+      ],
+      "source_anchors_seconds": [
+        35.854,
+        40.96
+      ],
+      "target_anchors_seconds": [
+        37.46535690897184,
+        42.79869024230517
+      ],
+      "tempo_factor": 0.9573750000000012,
+      "source_guard_samples": [
+        1701792,
+        1985280
+      ],
+      "output_offset_samples": 1778649,
+      "observed_raw_anchors_seconds": [
+        0.4101666666666667,
+        5.743
+      ],
+      "waveform_correlations": [
+        0.9999999847936716,
+        0.9999828821812499
+      ],
+      "observed_end_error_ms": -0.499999999995282,
+      "raw_sha256": "3a2b37d03d1456b91615fdf6477ad69978973c2107e7e9cff6c69a9533b0f921",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=1701792:end_sample=1985280,asetpts=PTS-STARTPTS,atempo=0.9573750000000012,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-007.wav"
+      ]
+    },
+    {
+      "block": 8,
+      "source_beat_indices": [
+        128,
+        144
+      ],
+      "source_anchors_seconds": [
+        40.96,
+        46.068
+      ],
+      "target_anchors_seconds": [
+        42.79869024230517,
+        48.132023575638506
+      ],
+      "tempo_factor": 0.957749999999999,
+      "source_guard_samples": [
+        1946880,
+        2230464
+      ],
+      "output_offset_samples": 2034770,
+      "observed_raw_anchors_seconds": [
+        0.4076458333333333,
+        5.741916666666667
+      ],
+      "waveform_correlations": [
+        0.9999999808122115,
+        0.99999998273286
+      ],
+      "observed_end_error_ms": 0.937499999997371,
+      "raw_sha256": "08ac81d37330bd8b5e66c615a6aaef9d0780dc4cea6cd070453bb2b58a45c3c2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=1946880:end_sample=2230464,asetpts=PTS-STARTPTS,atempo=0.9577499999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-008.wav"
+      ]
+    },
+    {
+      "block": 9,
+      "source_beat_indices": [
+        144,
+        160
+      ],
+      "source_anchors_seconds": [
+        46.068,
+        51.174
+      ],
+      "target_anchors_seconds": [
+        48.132023575638506,
+        53.46535690897184
+      ],
+      "tempo_factor": 0.9573749999999999,
+      "source_guard_samples": [
+        2192064,
+        2475552
+      ],
+      "output_offset_samples": 2290814,
+      "observed_raw_anchors_seconds": [
+        0.40672916666666664,
+        5.7405625
+      ],
+      "waveform_correlations": [
+        0.9999999848773232,
+        0.9999999799730043
+      ],
+      "observed_end_error_ms": 0.49999999999794653,
+      "raw_sha256": "4a0ec7cf04729661861371f310dfa94730fbd43d00388fbca8931161256dcc4d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=2192064:end_sample=2475552,asetpts=PTS-STARTPTS,atempo=0.9573749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-009.wav"
+      ]
+    },
+    {
+      "block": 10,
+      "source_beat_indices": [
+        160,
+        176
+      ],
+      "source_anchors_seconds": [
+        51.174,
+        56.276
+      ],
+      "target_anchors_seconds": [
+        53.46535690897184,
+        58.79869024230517
+      ],
+      "tempo_factor": 0.9566250000000016,
+      "source_guard_samples": [
+        2437152,
+        2720448
+      ],
+      "output_offset_samples": 2546749,
+      "observed_raw_anchors_seconds": [
+        0.40808333333333335,
+        5.7439375
+      ],
+      "waveform_correlations": [
+        0.9999999780947196,
+        0.9999959635612058
+      ],
+      "observed_end_error_ms": 2.5208333333388566,
+      "raw_sha256": "c4d9cbdabb2f554b836c8cc4b6f8cc9c33649e55adf5bb842ca7f4f5f04eed35",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=2437152:end_sample=2720448,asetpts=PTS-STARTPTS,atempo=0.9566250000000016,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-010.wav"
+      ]
+    },
+    {
+      "block": 11,
+      "source_beat_indices": [
+        176,
+        192
+      ],
+      "source_anchors_seconds": [
+        56.276,
+        61.384
+      ],
+      "target_anchors_seconds": [
+        58.79869024230517,
+        64.13202357563851
+      ],
+      "tempo_factor": 0.9577499999999978,
+      "source_guard_samples": [
+        2682048,
+        2965632
+      ],
+      "output_offset_samples": 2802826,
+      "observed_raw_anchors_seconds": [
+        0.40647916666666667,
+        5.746125
+      ],
+      "waveform_correlations": [
+        0.9999999737877893,
+        0.9999999932327374
+      ],
+      "observed_end_error_ms": 6.312499999991061,
+      "raw_sha256": "578a4185c05d29c8e11707a07b0ddf334e86125bb788789240d279ecde00b56a",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=2682048:end_sample=2965632,asetpts=PTS-STARTPTS,atempo=0.9577499999999978,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-011.wav"
+      ]
+    },
+    {
+      "block": 12,
+      "source_beat_indices": [
+        192,
+        208
+      ],
+      "source_anchors_seconds": [
+        61.384,
+        66.488
+      ],
+      "target_anchors_seconds": [
+        64.13202357563851,
+        69.46535690897184
+      ],
+      "tempo_factor": 0.9570000000000007,
+      "source_guard_samples": [
+        2927232,
+        3210624
+      ],
+      "output_offset_samples": 3058729,
+      "observed_raw_anchors_seconds": [
+        0.4085,
+        5.743458333333334
+      ],
+      "waveform_correlations": [
+        0.9999998100746827,
+        0.9999999892250375
+      ],
+      "observed_end_error_ms": 1.6250000000050946,
+      "raw_sha256": "c9afe8f69cb6be292ac9100638ffad7a69d1b4ec15400b343cb52178fa227f28",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=2927232:end_sample=3210624,asetpts=PTS-STARTPTS,atempo=0.9570000000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-012.wav"
+      ]
+    },
+    {
+      "block": 13,
+      "source_beat_indices": [
+        208,
+        224
+      ],
+      "source_anchors_seconds": [
+        66.488,
+        71.598
+      ],
+      "target_anchors_seconds": [
+        69.46535690897184,
+        74.79869024230518
+      ],
+      "tempo_factor": 0.9581249999999982,
+      "source_guard_samples": [
+        3172224,
+        3455904
+      ],
+      "output_offset_samples": 3314649,
+      "observed_raw_anchors_seconds": [
+        0.4101666666666667,
+        5.740875
+      ],
+      "waveform_correlations": [
+        0.99999998931544,
+        0.9999999845365213
+      ],
+      "observed_end_error_ms": -2.6250000000098694,
+      "raw_sha256": "2ae4bc3f37f4eaf43c7733ec77312108014863dc7f92481385b69c0becddfaad",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=3172224:end_sample=3455904,asetpts=PTS-STARTPTS,atempo=0.9581249999999982,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-013.wav"
+      ]
+    },
+    {
+      "block": 14,
+      "source_beat_indices": [
+        224,
+        240
+      ],
+      "source_anchors_seconds": [
+        71.598,
+        76.702
+      ],
+      "target_anchors_seconds": [
+        74.79869024230518,
+        80.13202357563851
+      ],
+      "tempo_factor": 0.9570000000000007,
+      "source_guard_samples": [
+        3417504,
+        3700896
+      ],
+      "output_offset_samples": 3570650,
+      "observed_raw_anchors_seconds": [
+        0.4101458333333333,
+        5.743875
+      ],
+      "waveform_correlations": [
+        0.9999999882808921,
+        0.9999999753218195
+      ],
+      "observed_end_error_ms": 0.39583333333848003,
+      "raw_sha256": "749984ca3e153f975a4e46f4a3bad7b1afd5cd7b9aede39266cc87f6287dcd6b",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=3417504:end_sample=3700896,asetpts=PTS-STARTPTS,atempo=0.9570000000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-014.wav"
+      ]
+    },
+    {
+      "block": 15,
+      "source_beat_indices": [
+        240,
+        256
+      ],
+      "source_anchors_seconds": [
+        76.702,
+        81.812
+      ],
+      "target_anchors_seconds": [
+        80.13202357563851,
+        85.46535690897184
+      ],
+      "tempo_factor": 0.9581250000000008,
+      "source_guard_samples": [
+        3662496,
+        3946176
+      ],
+      "output_offset_samples": 3826771,
+      "observed_raw_anchors_seconds": [
+        0.407625,
+        5.741958333333334
+      ],
+      "waveform_correlations": [
+        0.9999999780041184,
+        0.9999999789218585
+      ],
+      "observed_end_error_ms": 1.0000000000047748,
+      "raw_sha256": "0792ae8c93adc64ea9de27d801b89435efe4f1da1f95de556927eed9f4a4bf4e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=3662496:end_sample=3946176,asetpts=PTS-STARTPTS,atempo=0.9581250000000008,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-015.wav"
+      ]
+    },
+    {
+      "block": 16,
+      "source_beat_indices": [
+        256,
+        272
+      ],
+      "source_anchors_seconds": [
+        81.812,
+        86.914
+      ],
+      "target_anchors_seconds": [
+        85.46535690897184,
+        90.79869024230518
+      ],
+      "tempo_factor": 0.9566249999999991,
+      "source_guard_samples": [
+        3907776,
+        4191072
+      ],
+      "output_offset_samples": 4082652,
+      "observed_raw_anchors_seconds": [
+        0.41010416666666666,
+        5.743416666666667
+      ],
+      "waveform_correlations": [
+        0.9999999707563488,
+        0.9999999855915959
+      ],
+      "observed_end_error_ms": -0.020833333342906712,
+      "raw_sha256": "78bf478a145c2331f5884ed5f1698c9469b746b2a923660e7583922c11d12ec5",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=3907776:end_sample=4191072,asetpts=PTS-STARTPTS,atempo=0.9566249999999991,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-016.wav"
+      ]
+    },
+    {
+      "block": 17,
+      "source_beat_indices": [
+        272,
+        288
+      ],
+      "source_anchors_seconds": [
+        86.914,
+        92.02
+      ],
+      "target_anchors_seconds": [
+        90.79869024230518,
+        96.13202357563851
+      ],
+      "tempo_factor": 0.9573749999999999,
+      "source_guard_samples": [
+        4152672,
+        4436160
+      ],
+      "output_offset_samples": 4338621,
+      "observed_raw_anchors_seconds": [
+        0.41075,
+        5.7438125
+      ],
+      "waveform_correlations": [
+        0.9999999887405805,
+        0.9999999783642348
+      ],
+      "observed_end_error_ms": -0.2708333333290014,
+      "raw_sha256": "aa61ba8817ee30a26ab2c17fa9c3c565dab72f5c7531916b41f1a89c066f4eec",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=4152672:end_sample=4436160,asetpts=PTS-STARTPTS,atempo=0.9573749999999999,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-017.wav"
+      ]
+    },
+    {
+      "block": 18,
+      "source_beat_indices": [
+        288,
+        304
+      ],
+      "source_anchors_seconds": [
+        92.02,
+        97.128
+      ],
+      "target_anchors_seconds": [
+        96.13202357563851,
+        101.46535690897184
+      ],
+      "tempo_factor": 0.9577500000000017,
+      "source_guard_samples": [
+        4397760,
+        4681344
+      ],
+      "output_offset_samples": 4594648,
+      "observed_raw_anchors_seconds": [
+        0.4101875,
+        5.738291666666667
+      ],
+      "waveform_correlations": [
+        0.9999999777247665,
+        0.9999999835471175
+      ],
+      "observed_end_error_ms": -5.229166666661733,
+      "raw_sha256": "874fdcb8ab385ab6accb32818c4f7b3c66a9d6ee187c79852e82899802945dce",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=4397760:end_sample=4681344,asetpts=PTS-STARTPTS,atempo=0.9577500000000017,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-018.wav"
+      ]
+    },
+    {
+      "block": 19,
+      "source_beat_indices": [
+        304,
+        320
+      ],
+      "source_anchors_seconds": [
+        97.128,
+        102.23
+      ],
+      "target_anchors_seconds": [
+        101.46535690897184,
+        106.79869024230518
+      ],
+      "tempo_factor": 0.9566249999999991,
+      "source_guard_samples": [
+        4642944,
+        4926240
+      ],
+      "output_offset_samples": 4850944,
+      "observed_raw_anchors_seconds": [
+        0.40402083333333333,
+        5.7429375
+      ],
+      "waveform_correlations": [
+        0.9981902816132961,
+        0.9999999853815591
+      ],
+      "observed_end_error_ms": 5.58333333332417,
+      "raw_sha256": "89c5f1d8b7fb9889ee215929a3bdb697b9e9d060d8b50de83408780087cfe79e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=4642944:end_sample=4926240,asetpts=PTS-STARTPTS,atempo=0.9566249999999991,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-019.wav"
+      ]
+    },
+    {
+      "block": 20,
+      "source_beat_indices": [
+        320,
+        336
+      ],
+      "source_anchors_seconds": [
+        102.23,
+        107.328
+      ],
+      "target_anchors_seconds": [
+        106.79869024230518,
+        112.13202357563851
+      ],
+      "tempo_factor": 0.9558750000000007,
+      "source_guard_samples": [
+        4887840,
+        5170944
+      ],
+      "output_offset_samples": 5106651,
+      "observed_raw_anchors_seconds": [
+        0.410125,
+        5.749083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999874384691,
+        0.9999999906050686
+      ],
+      "observed_end_error_ms": 5.625000000004654,
+      "raw_sha256": "27a917343e0d63d5560836b9430d419b21ef86d8d8b46f0ac4853419434222df",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=4887840:end_sample=5170944,asetpts=PTS-STARTPTS,atempo=0.9558750000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-020.wav"
+      ]
+    },
+    {
+      "block": 21,
+      "source_beat_indices": [
+        336,
+        352
+      ],
+      "source_anchors_seconds": [
+        107.328,
+        112.426
+      ],
+      "target_anchors_seconds": [
+        112.13202357563851,
+        117.46535690897184
+      ],
+      "tempo_factor": 0.9558750000000007,
+      "source_guard_samples": [
+        5132544,
+        5415648
+      ],
+      "output_offset_samples": 5362366,
+      "observed_raw_anchors_seconds": [
+        0.4160625,
+        5.742770833333333
+      ],
+      "waveform_correlations": [
+        0.9999999894878859,
+        0.9999999872256428
+      ],
+      "observed_end_error_ms": -6.624999999995218,
+      "raw_sha256": "7bd2ddb5fef51def337ee181180d8e03f0e85d1639db393e7b719ec563b94c1e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=5132544:end_sample=5415648,asetpts=PTS-STARTPTS,atempo=0.9558750000000007,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-021.wav"
+      ]
+    },
+    {
+      "block": 22,
+      "source_beat_indices": [
+        352,
+        368
+      ],
+      "source_anchors_seconds": [
+        112.426,
+        117.536
+      ],
+      "target_anchors_seconds": [
+        117.46535690897184,
+        122.79869024230518
+      ],
+      "tempo_factor": 0.9581249999999982,
+      "source_guard_samples": [
+        5377248,
+        5660928
+      ],
+      "output_offset_samples": 5618773,
+      "observed_raw_anchors_seconds": [
+        0.40758333333333335,
+        5.7395
+      ],
+      "waveform_correlations": [
+        0.9999999845794101,
+        0.999999981989527
+      ],
+      "observed_end_error_ms": -1.4166666666763916,
+      "raw_sha256": "c4ca8b67fafb11c60f870d9c732d8b4bdd2aa7dfd51b246394336d85e2e731ed",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=5377248:end_sample=5660928,asetpts=PTS-STARTPTS,atempo=0.9581249999999982,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-022.wav"
+      ]
+    },
+    {
+      "block": 23,
+      "source_beat_indices": [
+        368,
+        384
+      ],
+      "source_anchors_seconds": [
+        117.536,
+        122.64
+      ],
+      "target_anchors_seconds": [
+        122.79869024230518,
+        128.1320235756385
+      ],
+      "tempo_factor": 0.9570000000000033,
+      "source_guard_samples": [
+        5622528,
+        5905920
+      ],
+      "output_offset_samples": 5874546,
+      "observed_raw_anchors_seconds": [
+        0.4123125,
+        5.744958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999958919484,
+        0.9998873511753036
+      ],
+      "observed_end_error_ms": -0.6874999999810782,
+      "raw_sha256": "0d9ae66f75715b83590dbbcad1fed767645b93feda84c1afe5f812513a460b74",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=5622528:end_sample=5905920,asetpts=PTS-STARTPTS,atempo=0.9570000000000033,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-023.wav"
+      ]
+    },
+    {
+      "block": 24,
+      "source_beat_indices": [
+        384,
+        400
+      ],
+      "source_anchors_seconds": [
+        122.64,
+        127.744
+      ],
+      "target_anchors_seconds": [
+        128.1320235756385,
+        133.46535690897184
+      ],
+      "tempo_factor": 0.9569999999999982,
+      "source_guard_samples": [
+        5867520,
+        6150912
+      ],
+      "output_offset_samples": 6130701,
+      "observed_raw_anchors_seconds": [
+        0.40908333333333335,
+        5.747604166666667
+      ],
+      "waveform_correlations": [
+        0.9998651591643857,
+        0.9999999747063401
+      ],
+      "observed_end_error_ms": 5.187499999991019,
+      "raw_sha256": "887d22c69ef2aa6535f66f5c0a59eb040de6060d9b9473061ad4e85e60004dfe",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=5867520:end_sample=6150912,asetpts=PTS-STARTPTS,atempo=0.9569999999999982,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-024.wav"
+      ]
+    },
+    {
+      "block": 25,
+      "source_beat_indices": [
+        400,
+        416
+      ],
+      "source_anchors_seconds": [
+        127.744,
+        132.838
+      ],
+      "target_anchors_seconds": [
+        133.46535690897184,
+        138.79869024230516
+      ],
+      "tempo_factor": 0.9551250000000023,
+      "source_guard_samples": [
+        6112512,
+        6395424
+      ],
+      "output_offset_samples": 6386430,
+      "observed_raw_anchors_seconds": [
+        0.41472916666666665,
+        5.749395833333334
+      ],
+      "waveform_correlations": [
+        0.9999999801338932,
+        0.9999999865206533
+      ],
+      "observed_end_error_ms": 1.3333333333527264,
+      "raw_sha256": "c54288075752536c53b28fd2ccf7f7f7acd1178f8575d39f935629c3e0903232",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=6112512:end_sample=6395424,asetpts=PTS-STARTPTS,atempo=0.9551250000000023,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-025.wav"
+      ]
+    },
+    {
+      "block": 26,
+      "source_beat_indices": [
+        416,
+        432
+      ],
+      "source_anchors_seconds": [
+        132.838,
+        137.932
+      ],
+      "target_anchors_seconds": [
+        138.79869024230516,
+        144.1320235756385
+      ],
+      "tempo_factor": 0.9551249999999972,
+      "source_guard_samples": [
+        6357024,
+        6639936
+      ],
+      "output_offset_samples": 6642327,
+      "observed_raw_anchors_seconds": [
+        0.416875,
+        5.7479375
+      ],
+      "waveform_correlations": [
+        0.9999999825019148,
+        0.9999999937871199
+      ],
+      "observed_end_error_ms": -2.270833333342992,
+      "raw_sha256": "6da5d75b04499b797a977d2e776e89fd746329c50e5d3fd9544ea8ec98bdd8ca",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=6357024:end_sample=6639936,asetpts=PTS-STARTPTS,atempo=0.9551249999999972,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-026.wav"
+      ]
+    },
+    {
+      "block": 27,
+      "source_beat_indices": [
+        432,
+        448
+      ],
+      "source_anchors_seconds": [
+        137.932,
+        143.028
+      ],
+      "target_anchors_seconds": [
+        144.1320235756385,
+        149.46535690897184
+      ],
+      "tempo_factor": 0.955499999999999,
+      "source_guard_samples": [
+        6601536,
+        6884544
+      ],
+      "output_offset_samples": 6898444,
+      "observed_raw_anchors_seconds": [
+        0.4144375,
+        5.7424375
+      ],
+      "waveform_correlations": [
+        0.9999999942609034,
+        0.9999999743438653
+      ],
+      "observed_end_error_ms": -5.333333333342516,
+      "raw_sha256": "f070953230e0b628a9a479b4d6fceabfaef9823fc82ff41a679d122ef9942cbd",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=6601536:end_sample=6884544,asetpts=PTS-STARTPTS,atempo=0.9554999999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-027.wav"
+      ]
+    },
+    {
+      "block": 28,
+      "source_beat_indices": [
+        448,
+        464
+      ],
+      "source_anchors_seconds": [
+        143.028,
+        148.128
+      ],
+      "target_anchors_seconds": [
+        149.46535690897184,
+        154.79869024230516
+      ],
+      "tempo_factor": 0.9562500000000024,
+      "source_guard_samples": [
+        6846144,
+        7129344
+      ],
+      "output_offset_samples": 7154813,
+      "observed_raw_anchors_seconds": [
+        0.40675,
+        5.7461875
+      ],
+      "waveform_correlations": [
+        0.999999976464592,
+        0.9999999934936048
+      ],
+      "observed_end_error_ms": 6.104166666685451,
+      "raw_sha256": "d607bb4ec8f0255c5645f61cc21736cd3815b97fb4cf5a2f9a0578b82846bdef",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=6846144:end_sample=7129344,asetpts=PTS-STARTPTS,atempo=0.9562500000000024,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-028.wav"
+      ]
+    },
+    {
+      "block": 29,
+      "source_beat_indices": [
+        464,
+        480
+      ],
+      "source_anchors_seconds": [
+        148.128,
+        153.228
+      ],
+      "target_anchors_seconds": [
+        154.79869024230516,
+        160.1320235756385
+      ],
+      "tempo_factor": 0.9562500000000026,
+      "source_guard_samples": [
+        7090944,
+        7374144
+      ],
+      "output_offset_samples": 7410748,
+      "observed_raw_anchors_seconds": [
+        0.40810416666666666,
+        5.738791666666667
+      ],
+      "waveform_correlations": [
+        0.9999999793522555,
+        0.9999999822413466
+      ],
+      "observed_end_error_ms": -2.645833333343006,
+      "raw_sha256": "f859f2cf8e3d5718b2c57fe5b7472782b698072a97ec70a57ba94e025454696d",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=7090944:end_sample=7374144,asetpts=PTS-STARTPTS,atempo=0.9562500000000026,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-029.wav"
+      ]
+    },
+    {
+      "block": 30,
+      "source_beat_indices": [
+        480,
+        496
+      ],
+      "source_anchors_seconds": [
+        153.228,
+        158.328
+      ],
+      "target_anchors_seconds": [
+        160.1320235756385,
+        165.46535690897184
+      ],
+      "tempo_factor": 0.9562499999999973,
+      "source_guard_samples": [
+        7335744,
+        7618944
+      ],
+      "output_offset_samples": 7666751,
+      "observed_raw_anchors_seconds": [
+        0.4080416666666667,
+        5.739083333333333
+      ],
+      "waveform_correlations": [
+        0.9999999821936727,
+        0.9999999794291697
+      ],
+      "observed_end_error_ms": -2.2916666666761287,
+      "raw_sha256": "08a52f396547c4fd2bd9670ff5cfec2c91db5a0a4ff8bcfb9075c9f6f4842579",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=7335744:end_sample=7618944,asetpts=PTS-STARTPTS,atempo=0.9562499999999973,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-030.wav"
+      ]
+    },
+    {
+      "block": 31,
+      "source_beat_indices": [
+        496,
+        512
+      ],
+      "source_anchors_seconds": [
+        158.328,
+        163.43
+      ],
+      "target_anchors_seconds": [
+        165.46535690897184,
+        170.79869024230516
+      ],
+      "tempo_factor": 0.9566250000000042,
+      "source_guard_samples": [
+        7580544,
+        7863840
+      ],
+      "output_offset_samples": 7922849,
+      "observed_raw_anchors_seconds": [
+        0.406,
+        5.7443333333333335
+      ],
+      "waveform_correlations": [
+        0.9999999797992936,
+        0.99999998640843
+      ],
+      "observed_end_error_ms": 5.000000000019433,
+      "raw_sha256": "8b101a5867a992b2e19a2b4e1d22d67f322130fa02b5b63d9605bf0640a3457f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=7580544:end_sample=7863840,asetpts=PTS-STARTPTS,atempo=0.9566250000000042,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-031.wav"
+      ]
+    },
+    {
+      "block": 32,
+      "source_beat_indices": [
+        512,
+        528
+      ],
+      "source_anchors_seconds": [
+        163.43,
+        168.53
+      ],
+      "target_anchors_seconds": [
+        170.79869024230516,
+        176.1320235756385
+      ],
+      "tempo_factor": 0.9562499999999973,
+      "source_guard_samples": [
+        7825440,
+        8108640
+      ],
+      "output_offset_samples": 8178648,
+      "observed_raw_anchors_seconds": [
+        0.4101875,
+        5.747395833333333
+      ],
+      "waveform_correlations": [
+        0.9999999849430284,
+        0.9999999943172163
+      ],
+      "observed_end_error_ms": 3.874999999990081,
+      "raw_sha256": "3fb4c7f5aad0b303ee30c73288b8e001cce384dfba558c073b936b19f5c9a18e",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=7825440:end_sample=8108640,asetpts=PTS-STARTPTS,atempo=0.9562499999999973,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-032.wav"
+      ]
+    },
+    {
+      "block": 33,
+      "source_beat_indices": [
+        528,
+        544
+      ],
+      "source_anchors_seconds": [
+        168.53,
+        173.626
+      ],
+      "target_anchors_seconds": [
+        176.1320235756385,
+        181.46535690897184
+      ],
+      "tempo_factor": 0.955499999999999,
+      "source_guard_samples": [
+        8070240,
+        8353248
+      ],
+      "output_offset_samples": 8434759,
+      "observed_raw_anchors_seconds": [
+        0.407875,
+        5.744958333333333
+      ],
+      "waveform_correlations": [
+        0.9999999899826957,
+        0.9999999965673793
+      ],
+      "observed_end_error_ms": 3.749999999990372,
+      "raw_sha256": "435525e513c9ba563bcc4e69797f8c15b0808a908615f225004087b0137c0e41",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=8070240:end_sample=8353248,asetpts=PTS-STARTPTS,atempo=0.9554999999999990,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-033.wav"
+      ]
+    },
+    {
+      "block": 34,
+      "source_beat_indices": [
+        544,
+        560
+      ],
+      "source_anchors_seconds": [
+        173.626,
+        178.72
+      ],
+      "target_anchors_seconds": [
+        181.46535690897184,
+        186.79869024230516
+      ],
+      "tempo_factor": 0.9551250000000023,
+      "source_guard_samples": [
+        8314848,
+        8597760
+      ],
+      "output_offset_samples": 8690556,
+      "observed_raw_anchors_seconds": [
+        0.41210416666666666,
+        5.745041666666666
+      ],
+      "waveform_correlations": [
+        0.9999999966937273,
+        0.9999999845079279
+      ],
+      "observed_end_error_ms": -0.3958333333144992,
+      "raw_sha256": "6e4fa2410d5501d127f882f5b44b20c4ffdd4bf13afcdd29101a7ecd83bfbc45",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=8314848:end_sample=8597760,asetpts=PTS-STARTPTS,atempo=0.9551250000000023,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-034.wav"
+      ]
+    },
+    {
+      "block": 35,
+      "source_beat_indices": [
+        560,
+        576
+      ],
+      "source_anchors_seconds": [
+        178.72,
+        183.82
+      ],
+      "target_anchors_seconds": [
+        186.79869024230516,
+        192.1320235756385
+      ],
+      "tempo_factor": 0.9562499999999973,
+      "source_guard_samples": [
+        8559360,
+        8842560
+      ],
+      "output_offset_samples": 8946561,
+      "observed_raw_anchors_seconds": [
+        0.412,
+        5.738916666666666
+      ],
+      "waveform_correlations": [
+        0.9999999850026676,
+        0.999999983760823
+      ],
+      "observed_end_error_ms": -6.416666666676285,
+      "raw_sha256": "4a1bc613157a99c16177be5a660b6d8df896aafe7505ac2b49c7d613245a160f",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=8559360:end_sample=8842560,asetpts=PTS-STARTPTS,atempo=0.9562499999999973,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-035.wav"
+      ]
+    },
+    {
+      "block": 36,
+      "source_beat_indices": [
+        576,
+        592
+      ],
+      "source_anchors_seconds": [
+        183.82,
+        188.932
+      ],
+      "target_anchors_seconds": [
+        192.1320235756385,
+        197.46535690897184
+      ],
+      "tempo_factor": 0.9584999999999974,
+      "source_guard_samples": [
+        8804160,
+        9087936
+      ],
+      "output_offset_samples": 9202651,
+      "observed_raw_anchors_seconds": [
+        0.410125,
+        5.7465
+      ],
+      "waveform_correlations": [
+        0.9999999817200087,
+        0.9999999579025319
+      ],
+      "observed_end_error_ms": 3.0416666666575054,
+      "raw_sha256": "124d390e252265ac16389b15fc84a1c77f3010ea1efb6de84fd9fbfba81576b2",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=8804160:end_sample=9087936,asetpts=PTS-STARTPTS,atempo=0.9584999999999974,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-036.wav"
+      ]
+    },
+    {
+      "block": 37,
+      "source_beat_indices": [
+        592,
+        595
+      ],
+      "source_anchors_seconds": [
+        188.932,
+        189.898
+      ],
+      "target_anchors_seconds": [
+        197.46535690897184,
+        198.46535690897184
+      ],
+      "tempo_factor": 0.9660000000000082,
+      "source_guard_samples": [
+        9049536,
+        9223680
+      ],
+      "output_offset_samples": 9458773,
+      "observed_raw_anchors_seconds": [
+        0.40758333333333335,
+        1.4040625
+      ],
+      "waveform_correlations": [
+        0.9999999269364632,
+        0.9999998067683845
+      ],
+      "observed_end_error_ms": -3.5208333333334174,
+      "raw_sha256": "0629812e81bf4596ef89ebc02a292772253e8ec5b663b22ba019e2a820f18bab",
+      "ffmpeg_command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/07-00/input/tracks/18__가까운 곳__Warm__Indie Synth Pop__NA.wav",
+        "-af",
+        "atrim=start_sample=9049536:end_sample=9223680,asetpts=PTS-STARTPTS,atempo=0.9660000000000082,asetpts=N/SR/TB",
+        "-c:a",
+        "pcm_f32le",
+        "/Users/zenkim_office/Project/wavvy/work/0700-remaster-20261024/track-18/block-037.wav"
+      ]
+    }
+  ],
+  "status": "prototype_requires_validation_and_listening",
+  "listener_approved": false
+}
