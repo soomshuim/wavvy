@@ -2630,3 +2630,52 @@ Record: 컨트롤러가 최신 검토 뒤 이 정확 범위의 커밋·푸시를
 
 ---
 2026-10-24 06:30 직접 합성 마감: 젠의 “원본 사진에 글자만 합성해줘 (추천)” 선택으로 실제 로고·글꼴을 원본 위에 평면 흰색으로 합성했다. 좌상단 Wavvy만·시간 없음, 좌하단 Cadence/흰 선/175 BPM이며 그림자는 없다. PNG 1672×941·2,222,156B·SHA d21c0c4f3428ba182be3fe251b55be7e381912146467be0569407a3af1cad9fd, JPEG 1672×941·458,902B·SHA ee54be10e668ac4d1e38e37043bde9c4c4f0cf76e6ae2e5714280b7a2c7b425e. PNG 글자 밖1,521,686화소 변경0·어두워진 채널0이며 JPEG는 압축 형식이다. 원본사진·음원3개 불변, 재현Swift/제작원시 보존, 임시alpha1개는 이미지워커가 제거했다. 최신 독립 실제 Astra/high CLEAN·원칙관찰없음을 채택했고 이전 생성시안 판정은 당시 이력이다. 상태확인 통과로 revision86/track_source_draft/input2를 유지해 이번 writer0회다. 좁은 원시는 .ai/validation/2026-10-24-0630-thumbnail-flat-composite-check.json, 새 검토는 .ai/reviews/2026-10-24-0630-thumbnail-flat-composite-review.md를 따른다. 새 이미지 생성·전역 그림자 정책·4K/loop/영상/업로드·사용자 주관적 최종 승인 주장은 없고 컨트롤러가 정확12경로의1회 커밋·정상 푸시를 승인했다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 사용자 제작 JPG 승인·영상 제작·제목 승인 대기)
+Date: 2026-10-24
+Current: 젠의 “이걸로. 이제 영상 만들어서 업로드하자. 제목은 컨펌 받고”에 따라 사용자 제작 SERIES/06-30/input/thumb.jpg를 최종 선택했다. 직접 대조한2532×1424·1,574,457B·SHA-256(파일 내용 동일성 확인값) d3f38504237b6bca5f07592f607844dd423104e3780a5314d5c0a122d6b1c2c8이며 좌상단Wavvy·좌하단RunningMix/175BPM·시간없음이다. 새 생성·보정 없이 그대로 사용한다. 이전Cadence PNG는 사용자 삭제 상태이며 이전 파일의 검사·검토 판정을 새 JPG에 적용하지 않는다.
+Video: 이미20곡×2회인7570.660초 M4A를 추가 반복 없이 오디오 복사하여 SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k.mp4를 제작 중이다. 전체 파일·끝부분 검사가 대기이며 영상 완료·외부 업로드는 아직 없다. 실제 YouTube 업로드 확인 전 원본 믹스 삭제 금지. 승인 삭제된 개별 입력18개는 복원할 계획이 없다.
+Title: 최종 승인된 제목은 없다. 젠의07:00 제목 레퍼런스 요청 후 후보 문구를 정정 중이며 현재 여섯 후보의 답변을 기다린다. 07:00 선례5구획과175 BPM Running Mix · 2Hour는 젠의 최종 제목 승인 뒤 이번 시리즈의 개별 예외로 적용한다. 승인 전 가짜 제목을 CSV(업로드 문안을 저장하는 표 파일)에 채우지 않는다. 설명·태그·실제40챕터 초안은 준비됐고 승인제목에 맞춘 저장은 뒤에 진행한다.
+Source: concept.md에 ## Final Premixed Audio, production/final-premixed-audio.json 포인터와 Final vocal direction: Instrumental을 추가했다. 새 완성 믹스 발매 계약은 별도 구현·검증 중이다. 이전 공식 저장값revision86/track_source_draft/input2는 당시 기록이며 최종 검증 뒤 전용 상태 저장 명령으로 갱신한다. 이 문서 작업에서 state·생산manifest·코드·미디어는 수정하지 않았다.
+Boundary: 제목 승인 뒤 공개 시점을 젠에게 확인한다. 댓글 외부 게시 요청은 없으며 게시하지 않는다. 175 BPM은 시리즈 목표 표기이고 전 구간 정확 실측 인증이 아니다. 기존20곡 선택·개별WAV 해시·처리목표173/176/미확인·연결 예외·삭제 이력은 보존한다. 전체 믹스 주관적 청취 승인·YouTube 처리·저작권 검사 완료를 주장하지 않는다.
+Record: 원본master에서 concept.md/.ai/SESSION.md/.ai/HANDOFF.md/CHANGELOG.md의 현재 상태만 갱신했다. 새 branch/worktree·커밋·푸시는 하지 않았고 컨트롤러 마감 지시를 기다린다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 전체 제목 승인·메타데이터 저장·공개 방식 대기)
+Date: 2026-10-24
+Title: 젠이 승인한 원문은 `Playlist | 출발은 가볍게, 끝까지 신나게! 🏃 | 175 BPM Running Mix · 2Hour | Wavvy | 06:30`다. 직전 여섯 후보 승인 대기는 이 최종 답변으로 끝났다. 07:00 선례5구획·175 BPM·2Hour는 이번 시리즈 한정 승인 예외이고 전역6구획 기본형을 바꾸지 않는다. 실제길이7570.660초는 보존한다.
+Metadata: 이전 읽기 전용 작업에서 제안한 설명·태그 초안을 승인제목에 맞춘 최종 문안으로 수정해 concept.md의YouTube Metadata 및 SERIES/06-30/output/upload.csv에 저장했다. CSV는기존07/17선례와 같은video_path,title,description,tags,thumbnail_path,visibility6열·1행이며 video_path는SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4다. 실제40챕터는repeat2/manifest.json의timeline.track_entries를현행format_timestamp로초반올림했다. 무보컬연주곡이므로노랫말SRT(시간이붙은자막파일)는만들지않는다.
+Current: 최종v2영상의전체·끝부분검사는대기이며외부업로드는없다. 공개시점·방식(즉시공개/비공개/예약)은젠의선택대기다. CSV의private는기존생성기와같은준비기본값이지젠의비공개발행결정이아니다. 댓글외부게시요청없음·게시0회. 실제업로드확인전원본믹스삭제금지. 사용자JPG·개별음원삭제이력·기존20곡출처근거는보존했다.
+Boundary: 이번문서/CSV작업에서state·코드·생산manifest·미디어는수정하지않았고커밋·푸시는하지않았다. 최종계약검증과공식상태저장은컨트롤러의마감절차를따른다.
+
+Video observation update (2026-10-24): 최종 v2 파일 생성 후 직접 ffprobe로 3840×2160 영상·AAC 48kHz/2채널 7570.660초·40챕터·778,406,893바이트를 확인했다. 컨트롤러 직접 파일 SHA-256은 7b570ce8f1822d8f5a94a5e530de0f8d2b019676b79f011f1298471b7300524a다. 영상 끝 정적 프레임 0.340초는 실제 오디오 길이와 구분한다. 전체 해독·최종 제작·발매 검사와 공개 방식 결정은 아직 대기이며 외부 업로드·댓글 게시·원본 믹스 삭제는 하지 않았다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 영상 기술 검사 완료·업로드 상태 판정 수정 확인 전 전송 차단)
+Date: 2026-10-24
+Current: 바로 앞 기록의 전체 해독·영상 검사 대기는 이후 실측으로 해소됐다. 컨트롤러가 최종 v2 영상 전체 해독 종료값 0과 원본·최종 영상의 AAC(압축 오디오 형식) 복사 스트림 해시(압축된 소리 내용의 동일성 확인값) 동일성 6b8fd65dd8c5064ef76253d5c735bd462a9a99f71d4d1126537122fbcdc8b83e를 직접 확인했다. 영상 기술 검사는 끝났으며 실제 업로드·공개 완료로 확대하지 않는다.
+Gate and review: 첫 95개 테스트·verify-release·upload-ready 검사는 종료값 0이었다. 실제 gpt-6-astra/high 첫 독립 검토는 미업로드 문장을 완료 증거로 오판하는 High(중대 결함) 1건을 보고했고 컨트롤러가 수정 전 직접 Python 재현과 코드 조회로 채택했다. 따라서 첫 통과값은 전송 허가가 아니다. 근본 수정 확인과 새 독립 검토 전까지 실제 전송을 차단한다. 첫 검토 수용 기록은 .ai/inbox-reviews/2026-10-24/premixed-release-review.md이며, 검토자 회수문과 컨트롤러 직접 재현을 구분한다. 기존 함수와 이번 새 문구가 만나 발화한 결함 1건으로 계상했다.
+Upload: 컨트롤러가 Aside(연결된 브라우저 도구) 세션 artifacts/wavvy-0630에 cp -c(같은 내용을 보존해 복사하는 명령)로 정확한 v2 영상·사용자 JPG·metadata.json을 준비했다. 컨트롤러의 실제 브라우저 확인상 파일 선택·업로드는 0회다. 공개 시점·방식의 사용자 답변은 아직 없다. 댓글 요청·게시도 없다. 실제 업로드 성공 증거를 받기 전 원본 믹스를 삭제하거나 업로드 완료를 기록하지 않는다.
+Boundary: 이 갱신은 SESSION/HANDOFF/CHANGELOG와 첫 검토 수용 기록에 한정했다. concept.md는 계약 담당이 Upload Status(업로드 상태 명시 구획)를 수정하도록 편집을 피했고 코드·공식 상태·미디어·CSV는 바꾸지 않았다. 커밋·푸시·외부 게시는 하지 않았다. 직전 append-only(기존 내용을 고치지 않고 뒤에 추가함) 기록의 검사 대기는 당시 이력으로 보존한다.
+
+Root post-fix observation update (2026-10-24): 컨트롤러가 코드 동결 뒤 직접 확인한 수정 검사는 100개 테스트 4.936초 OK·종료값 0, upload-ready PASS·종료값 0, verify-release PASS·errors[]·종료값 0, uploaded 예상 FAIL·종료값 1이다. 마지막 검사는 youtube_upload_completed=FAIL과 차단 사유 두 개(YouTube upload completion evidence is required / uploaded phase requires concept.md upload completion evidence)를 반환했다. 수정 기술 검사는 끝났고 새 격리 Astra/high 검토가 실행 중이다. 앞의 근본 수정 확인 대기는 이 관측으로 대체하되, 새 검토 판정 전 실제 전송 차단·업로드 0회·공개 방식 미응답·원본 믹스 보존은 그대로다. 이전 검토 판정은 새 검토자에게 전달하지 않았다.
+
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex (06:30 새 독립 검토 CLEAN·비공개 업로드 완료)
+Date: 2026-10-24
+Review: 앞의 새 독립 검토 판정 대기는 끝났다. 컨트롤러가 실제 실행 기록에서 gpt-6-astra/high를 확인한 새 격리 검토는 CLEAN(확인된 Critical/High 중대 결함 0건·원칙 관찰 없음)이며 채택됐다. 이전 판정을 새 검토자에게 전달하지 않았다. 첫 High와 수정 전후 직접 재현은 .ai/inbox-reviews/2026-10-24/premixed-release-review.md에, 새 수용 근거는 .ai/inbox-reviews/2026-10-24/premixed-release-final-review.md에 분리했다. 따라서 앞의 검토 대기·전송 차단·업로드 0회는 그 당시 이력이다.
+Upload: 컨트롤러가 Wavvy24/UC4R4NGwp19Y4lbdNs2HQVcg에 정확한 final-0630-4k-v2.mp4를 1회 전송했고 비공개 선택을 저장했다. 영상 ID(식별번호)는 FUBJ6OBTzoI, 시청 주소 https://youtu.be/FUBJ6OBTzoI, Studio 주소 https://studio.youtube.com/video/FUBJ6OBTzoI/edit 이다. 파일 전송 100% 뒤 비공개 SD 처리 중 화면을 확인했고 콘텐츠 목록에서 실제 영상을 다시 열어 제목 일치·설명 끝 개행 제외 일치·태그26개 정확 일치·사용자 썸네일·비공개 선택 보존을 확인했다. 아동용 아님·AI 사용 표시 Yes·유료 홍보 없음·음악 카테고리도 확인했다. 원문은 SERIES/06-30/production/youtube-upload-20261024.json이며 관측 시각 2026-10-24T05:51:28.980Z다.
+Pending: 현재 SD/HD/4K 처리·저작권 검사는 대기다. 4K UI의 예상31분은 보장된 완료 시간이 아니다. 공개 시점·방식은 여전히 젠의 답변 전이고 비공개 저장이 최종 공개 선택은 아니다. 외부 댓글 요청·게시 0회다. 서버 재생은 아직 확인하지 않았다.
+Retention: 원본 두 회 M4A·최종 영상·Aside(연결된 브라우저 도구) 세션의 임시 전송 사본을 모두 보존한다. 서버 재생 확인 전 삭제하지 않는다. 승인 삭제된 개별 입력18개는 자동 복구하지 않는다.
+State and boundary: concept의 단일 Upload Status(업로드 상태 명시 구획)를 completed(private)·실제 URL·처리/저작권/공개 결정 대기로 갱신했다. 공식 상태는 컨트롤러가 뒤에 전용 저장 명령을 한 번 실행한다. 이 작업은 concept·SESSION·HANDOFF·CHANGELOG·현재 계획·새 검토 수용 기록만 수정하며 코드·생산 목록·렌더 기록·미디어·CSV는 수정하지 않았다. 커밋·푸시·추가 외부 게시도 하지 않았다.
+
+Watch playback update (2026-10-24): 위의 서버 재생 미확인은 이후 관측으로 해소됐다. 컨트롤러가 실제 시청 주소에서 비공개 표시·Wavvy24·승인 제목·2:06:11 길이를 확인했고, HTML video(웹페이지의 실제 영상 재생 요소)의 18.760431초와3785.718835초에서 paused=false(재생 중)·readyState=4(즉시 재생할 자료가 충분함)·1920×1080·error=null(재생 오류 없음)을 직접 읽었다. 두 번째 표본은 seeking=false(위치 이동 중 아님)였고 반복 챕터 1. 첫 박부터 (반복)도 인식됐다. 음소거 재생 동작 검사이므로 음질 청취·끝부분 재생 성공을 주장하지 않는다. 현재 플레이어는 일시정지·음소거다. 1080p 재생 가능은 확인했고 4K 상위 화질 처리·저작권 검사·공개 결정은 대기다. 보존 조건은 이제 상위 처리·저작권 검사 대기 동안 원본 믹스·최종 영상·임시 전송 사본 모두 보존이며 실제 정리0회다. 원문 관측 JSON의 watchPageVerification과 retentionReason을 직접 대조해 반영했다.
+
+Final Studio reload observation (2026-10-24): 컨트롤러의 최종 재열기 관측과 갱신 JSON에서 SD 완료·HD 처리 중·4K 처리 중, 알림 검토 중..., 공개 상태 비공개를 확인했다. 저작권 검토는 진행 중이며 무문제로 확정하지 않는다. 1080p 재생 관측과 Studio의 상위 처리 진행 상태를 구분한다. 공개 선택은 사용자 답변 전이고 원본 믹스·영상·임시 전송 사본은 상위 처리·저작권 검토가 남아 있는 동안 보존한다.
+
+Official state and final gates (2026-10-24): 컨트롤러가 기본 전용 저장 명령으로 revision 87을 썼으나 기본값이 이전 phase(작업 단계)를 보존함을 확인했다. 이어 `state SERIES/06-30 --write --phase uploaded --if-match 87 --json`으로 revision 88·uploaded(실제 비공개 업로드 완료)에 맞췄다. 공식 저장 2회이며 수동 상태 파일 편집은 없다. 이후 state --check·gate --stage uploaded·verify-release·git diff --check는 모두 종료값 0이다. 앞의 상태 저장 대기는 해소됐으며 원문은 .ai/validation/2026-10-24-0630-uploaded.json이다. 공개 시점 사용자 답변·HD/4K 처리와 저작권 검토 결과 확인은 남아 있고 모든 로컬 원음·영상·임시 전송 사본은 보존한다.

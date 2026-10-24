@@ -1295,6 +1295,58 @@ Self-Gate
             self.assertEqual(state["artifact_status"]["youtube_upload"], "missing")
             self.assertNotEqual(state["phase"], "uploaded")
 
+    def test_upload_completion_requires_an_explicit_positive_status_field(self):
+        claims = [
+            "실제 공개·업로드 완료 기록은 아니다.",
+            "YouTube upload completed is not an observed fact.",
+            "- 없음 (시리즈 완료, YouTube 업로드 완료)",
+            "- Title approval: completed",
+            "- Metadata: completed",
+            "- YouTube upload completed: false",
+            "- YouTube 업로드 완료: 아직 아니다",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = make_series(root)
+            for section in ["## YouTube Draft", "## Upload Status"]:
+                for claim in claims:
+                    with self.subTest(section=section, claim=claim):
+                        (series / "concept.md").write_text(CONCEPT_FINAL + f"\n{section}\n\n{claim}\n", encoding="utf-8")
+                        state = build_state(series, root)
+                        self.assertEqual(state["artifact_status"]["youtube_upload"], "missing")
+                        self.assertNotEqual(state["phase"], "uploaded")
+
+    def test_upload_status_preserves_existing_published_series_fields(self):
+        fields = [
+            "- YouTube 업로드 완료: Wavvy24 채널, https://youtu.be/DU_vBuIdMG4, 2026-10-12.",
+            "- **YouTube upload completed**: 2026-10-03, Wavvy24 채널. https://youtu.be/KGzllkCkozw",
+            "- **YouTube upload completed**: 2026-10-22, Wavvy24 채널, 영상 ID `3HorT4OoDhg`.",
+            "- **YouTube upload**: completed (2026-05-02 user correction)",
+            "- YouTube upload: completed",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = make_series(root)
+            for field in fields:
+                with self.subTest(field=field):
+                    (series / "concept.md").write_text(CONCEPT_FINAL + f"\n## Upload Status\n\n{field}\n", encoding="utf-8")
+                    self.assertEqual(build_state(series, root)["artifact_status"]["youtube_upload"], "completed")
+
+    def test_explicit_pending_empty_or_conflicting_status_overrides_legacy_url(self):
+        sections = [
+            "## Upload Status\n\n- YouTube upload: not uploaded yet\n",
+            "## Upload Status\n",
+            "## Upload Status\n\n- YouTube upload: completed\n- YouTube upload: pending\n",
+            "## Upload Status\n\n- YouTube upload: completed\n\n## Upload Status\n\n- YouTube upload: completed\n",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = make_series(root)
+            for section in sections:
+                with self.subTest(section=section):
+                    (series / "concept.md").write_text(CONCEPT_FINAL + "\n> **YouTube**: https://youtu.be/i1GHmn1WZr4\n\n" + section, encoding="utf-8")
+                    self.assertEqual(build_state(series, root)["artifact_status"]["youtube_upload"], "missing")
+
     def test_legacy_published_youtube_marker_marks_upload_completed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

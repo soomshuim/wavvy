@@ -14,6 +14,7 @@ from .source import parse_track_source_fields
 from .packaging import check_thumbnail_layout, packaging_contract
 from .upload_copy import check_upload_copy
 from .selected_audio import check_selected_audio
+from .premixed_audio import check_premixed_audio, check_premixed_render, premixed_opt_in
 
 LYRIC_SKILL_REQUIRED_FILES = {
     "skill": Path("skills/wavvy-lyricist/SKILL.md"),
@@ -788,6 +789,31 @@ def run_gate(
             payload["result"] = "FAIL"
             payload["blockers"].append("lyrics-review requires --artifact; package installation alone does not review a lyric")
         return payload
+
+    if premixed_opt_in(series_path):
+        state_result = check_state(series_path, repo_root, {"phase": stage.replace("-", "_")})
+        artifacts = state_result["state"]["artifact_status"]
+        uploaded = stage == "uploaded" and artifacts["youtube_upload"] == "completed"
+        _, data, errors = check_premixed_audio(series_path, allow_uploaded_cleanup=uploaded)
+        checks = [_check("validate_project", bool(validation.get("is_valid"))),
+                  _check("final_premixed_audio", not errors, "; ".join(errors))]
+        blockers = list(state_result["blockers"]) + errors
+        if not validation.get("is_valid"):
+            blockers.extend(validation.get("errors", ["validate_project failed"]))
+        if stage in {"render-final", "upload-ready", "uploaded"} and data:
+            metadata = validation.get("youtube_metadata")
+            render_errors = check_premixed_render(series_path, data, metadata=metadata, require_csv=True, allow_uploaded_cleanup=uploaded)
+            if stage != "uploaded" and not metadata:
+                render_errors.append("premix gate requires parsed YouTube metadata for CSV/chapter verification")
+            checks.append(_check("premixed_render_identity", not render_errors, "; ".join(render_errors)))
+            blockers.extend(render_errors)
+        if stage == "uploaded":
+            checks.append(_check("youtube_upload_completed", uploaded))
+            if not uploaded:
+                blockers.append("YouTube upload completion evidence is required")
+        return {"schema": "wavvy.gate.v1", "stage": stage, "result": "FAIL" if blockers else "PASS",
+                "series": str(series_path), "checks": checks, "warnings": state_result.get("warnings", []),
+                "blockers": sorted(set(blockers))}
 
     checks: list[dict[str, Any]] = []
     warnings: list[str] = []

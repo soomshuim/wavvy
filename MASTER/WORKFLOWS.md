@@ -81,6 +81,8 @@ python3 wavvy.py finalize-upload SERIES/[시리즈]
 
 최종 선택 음원이 무가사이고 `concept.md`에 Instrumental 및 `## Final Selected Audio Sources`를 명시한 시리즈는 `input/final-selected-audio-sources.json`을 사용한다. 이 opt-in 계약의 각 곡에는 순서·제목·최종 후보 ID·WAV SHA256·렌더 보고서에서 계산한 실제 시작시각·`raw_prompt_status`(`confirmed`/`unverified`)를 기록한다. 화면에서 본 스타일 설명은 `observed_style_description`과 `observation_ref`로 별도 기록하며 원본 STYLE이라고 주장하지 않는다. `confirmed`는 생성 manifest의 후보 ID→`source_txt`·`source_sha256` 연결과 현재 txt 해시가 일치할 때만 허용한다. `unverified`에는 원문 txt/해시를 넣지 않는다. 게이트는 최종 선택·다운로드 manifest, 보고서, 실제 WAV 해시와 1:1로 대조한다. 검증된 무가사 경로는 가사 자막을 요구하지 않는다. 과거 보컬 txt는 이 경로의 출처로 승격하지 않고 그대로 보존한다. `finalize-upload`는 이 경우에도 잘못된 보컬 txt 결합을 거부한다.
 
+승인된 정리 뒤 완성된 2회 믹스만 보존한 무가사 시리즈는 별도의 `Final Premixed Audio` 계약을 명시할 수 있다. `production/final-premixed-audio.json`은 실제 믹스/JPG와 보존한 제작 manifest·설정·선택 ID 20개·제작 전후 역사 해시·40개 실제 진입 시각을 연결한다. 삭제된 WAV를 현재 보존 중이라고 쓰거나 과거 txt를 확정 생성 원문으로 승격하지 않는다. 상세 필드는 `MASTER/cli/SPEC.md`를 따른다. 소스 단계는 영상 없이 검증하고, 렌더 완료 뒤 실제 MP4·제작 기록 해시를 계약에 채운다. AAC는 그대로 한 번 복사하며 추가 반복·재합성·`pack`을 실행하지 않는다. 제목 승인을 반영한 문안/CSV와 영상의 전체 AAC identity·4K·40챕터를 `verify-release`와 `upload-ready`로 검증한 뒤 업로드한다. 업로드 완료 관측은 `concept.md`에 별도로 기록하며, 승인된 미디어 정리는 그 완료 근거를 확인한 뒤 적용한다.
+
 ---
 
 ## 1. 트랙 프롬프트 생성 워크플로우

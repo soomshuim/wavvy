@@ -11,6 +11,7 @@ from typing import Any, Optional
 
 from .selected_audio import MANIFEST as SELECTED_AUDIO_MANIFEST, check_selected_audio
 from .subtitles import needs_timed_subtitles, subtitle_status
+from .premixed_audio import MANIFEST as PREMIXED_AUDIO_MANIFEST, check_premixed_audio
 
 
 PHASES = ["concept_draft", "track_source_draft", "source_final", "render_final", "upload_ready", "uploaded"]
@@ -132,21 +133,29 @@ def _markdown_section(concept_text: str, heading_name: str) -> str:
 
 
 def _upload_completed(concept_text: str) -> bool:
-    upload_status = _markdown_section(concept_text, "Upload Status")
-    completion_patterns = [
-        r"\bcompleted\b",
-        r"YouTube upload completed",
-        r"YouTube 업로드 완료",
-        r"업로드 완료",
-    ]
-    if upload_status:
-        negative_patterns = [
-            r"\bnot\s+(?:uploaded|completed)\b",
-            r"업로드\s*(?:전|미완료|안\s*됨)",
-        ]
-        if any(re.search(pattern, upload_status, flags=re.IGNORECASE) for pattern in negative_patterns):
+    headings = re.findall(r"^## Upload Status\s*$", concept_text, flags=re.MULTILINE)
+    if headings:
+        if len(headings) != 1:
             return False
-        return any(re.search(pattern, upload_status, flags=re.IGNORECASE) for pattern in completion_patterns)
+        completed = False
+        for line in _markdown_section(concept_text, "Upload Status").splitlines():
+            field = re.sub(r"^\s*[-*+]\s+", "", line).replace("**", "").replace("`", "").strip()
+            status = re.fullmatch(r"YouTube (?:upload|업로드)\s*:\s*(.*)", field, flags=re.IGNORECASE)
+            if status:
+                # A status field is authoritative, including an explicit pending
+                # value. Other completed tasks in this section prove no upload.
+                if not re.fullmatch(r"completed(?:\s+\([^()\n]+\))?", status[1], flags=re.IGNORECASE):
+                    return False
+                completed = True
+                continue
+            # Existing published series use these two explicit completion keys.
+            legacy = re.fullmatch(r"(?:YouTube upload completed|YouTube 업로드 완료)(?:\s*:\s*(.+))?", field, flags=re.IGNORECASE)
+            if legacy:
+                evidence = legacy[1] or ""
+                if re.search(r"\b(?:not|no|false|pending|planned)\b|아니|아님|미완료|대기|예정|아직", evidence, flags=re.IGNORECASE):
+                    return False
+                completed = True
+        return completed
 
     # Legacy published concepts can identify the release in a dedicated YouTube
     # blockquote. Reference-video URLs elsewhere are not publication evidence.
@@ -156,12 +165,7 @@ def _upload_completed(concept_text: str) -> bool:
     ):
         return True
 
-    explicit_patterns = [
-        r"YouTube upload completed",
-        r"YouTube 업로드 완료",
-        r"업로드 완료",
-    ]
-    return any(re.search(pattern, concept_text, flags=re.IGNORECASE) for pattern in explicit_patterns)
+    return False
 
 
 def _has_stale_final_todo(concept_text: str) -> bool:
@@ -186,17 +190,21 @@ def _has_stale_final_todo(concept_text: str) -> bool:
 
 def _infer_phase(artifact_status: dict[str, Any], concept_text: str, report: dict[str, Any]) -> str:
     txt_sources = artifact_status.get("txt_sources", 0)
+    render_present = artifact_status.get("final_mkv") == "present" or artifact_status.get("premixed_video") == "present"
     if artifact_status.get("youtube_upload") == "completed":
         return "uploaded"
     if (
-        artifact_status.get("final_mkv") == "present"
+        render_present
         and artifact_status.get("upload_csv") == "present"
-        and (artifact_status.get("subtitle_txt") == "present" or artifact_status.get("subtitle_srt") == "present")
+        and (artifact_status.get("subtitle_txt") == "present" or artifact_status.get("subtitle_srt") == "present"
+             or artifact_status.get("premixed_audio") == "verified")
         and (not artifact_status.get("timed_subtitles_required") or artifact_status.get("subtitle_prepared") == "verified")
     ):
         return "upload_ready"
-    if artifact_status.get("final_mkv") == "present" and artifact_status.get("upload_csv") == "present":
+    if render_present and artifact_status.get("upload_csv") == "present":
         return "render_final"
+    if artifact_status.get("premixed_audio") == "verified" and artifact_status.get("youtube_metadata") == "present":
+        return "source_final"
     if ("## Final Track Sources" in concept_text or artifact_status.get("selected_audio_sources") == "present") and report.get("tracks") and artifact_status.get("available_audio_files", 0) > 0:
         return "source_final"
     if (
@@ -212,6 +220,15 @@ def _infer_phase(artifact_status: dict[str, Any], concept_text: str, report: dic
 
 
 def _infer_next_action(phase: str, artifact_status: dict[str, Any]) -> str:
+    if artifact_status.get("premixed_audio") == "verified":
+        if phase == "uploaded":
+            return "YouTube upload is recorded. Follow the approved retention policy for the premix and rendered video."
+        if phase == "source_final":
+            return "Render the declared JPG with the retained premix once; do not run pack or repeat the audio."
+        if phase == "render_final":
+            return "Review the declared premixed video and upload metadata for upload readiness."
+        if phase in {"concept_draft", "track_source_draft"}:
+            return "Prepare the approved YouTube title, description and tags for the retained premix."
     if phase == "uploaded":
         return DEFAULT_NEXT_ACTION
     if artifact_status["concept_md"] == "missing":
@@ -262,6 +279,15 @@ def build_state(
     available_audio_files = len(audio_files) if audio_files else source_map_audio_files
     audio_source = "input_tracks" if audio_files else ("concept_track_selection" if source_map_entries else "missing")
     upload_completed = _upload_completed(concept_text)
+    premixed_opt_in, premix, premixed_errors = check_premixed_audio(series_path, allow_uploaded_cleanup=upload_completed)
+    premixed_valid = premixed_opt_in and not premixed_errors
+    premixed_video_status = "missing"
+    if premixed_valid:
+        available_audio_files = int(premix["audio"].is_file())
+        audio_source = "final_premixed_audio"
+        premixed_video_status = _status(premix["render_path"])
+        if upload_completed and premixed_video_status == "missing":
+            premixed_video_status = "deleted_after_upload"
     final_mkv_status = _status(output_dir / "final.mkv")
     upload_csv_status = _status(output_dir / "upload.csv")
     if upload_completed and final_mkv_status == "missing":
@@ -273,6 +299,10 @@ def build_state(
         "concept_md": _status(concept_path),
         "final_track_sources": "present" if "## Final Track Sources" in concept_text else "missing",
         "selected_audio_sources": "present" if "## Final Selected Audio Sources" in concept_text and (series_path / SELECTED_AUDIO_MANIFEST).is_file() else "missing",
+        "premixed_audio": "verified" if premixed_valid else ("invalid" if premixed_opt_in else "missing"),
+        "premix_production_report": "verified" if premixed_valid else "missing",
+        "premixed_video": premixed_video_status,
+        "premixed_video_path": str(premix["render_path"].relative_to(series_path)) if premixed_valid else None,
         "final_track_sources_count": _final_track_sources_count(concept_text),
         "report_json": _status(report_path),
         "report_tracks": len(report.get("tracks", [])) if isinstance(report.get("tracks"), list) else 0,
@@ -294,7 +324,7 @@ def build_state(
         "lyric_skill_files": lyric_skill_files,
     }
     selected_opt_in, selected_errors = check_selected_audio(series_path)
-    instrumental = selected_opt_in and not selected_errors
+    instrumental = (selected_opt_in and not selected_errors) or premixed_valid
     captions = subtitle_status(series_path, instrumental=instrumental)
     artifact_status["subtitle_prepared"] = captions["prepared"]
     artifact_status["subtitle_published"] = captions["published"]
@@ -311,14 +341,15 @@ def build_state(
     next_action = prior_next_action or _infer_next_action(selected_phase, artifact_status)
 
     blocked_by = []
+    render_status = premixed_video_status if premixed_opt_in else artifact_status["final_mkv"]
     if selected_phase in LOCAL_RENDER_PHASES:
-        if artifact_status["final_mkv"] != "present":
-            blocked_by.append("output/final.mkv missing for render-final stage")
+        if render_status != "present":
+            blocked_by.append("declared render missing for render-final stage")
         if artifact_status["upload_csv"] != "present":
             blocked_by.append("output/upload.csv missing for render-final stage")
     if selected_phase == "upload_ready" and artifact_status["youtube_upload"] != "completed":
-        if artifact_status["final_mkv"] != "present":
-            blocked_by.append("output/final.mkv missing for upload-ready stage")
+        if render_status != "present":
+            blocked_by.append("declared render missing for upload-ready stage")
         if artifact_status["upload_csv"] != "present":
             blocked_by.append("output/upload.csv missing for upload-ready stage")
     if (
@@ -326,7 +357,7 @@ def build_state(
         and artifact_status["youtube_upload"] != "completed"
         and artifact_status["subtitle_txt"] == "missing"
         and artifact_status["subtitle_srt"] == "missing"
-        and not (selected_opt_in and not selected_errors)
+        and not instrumental
     ):
         blocked_by.append("subtitle txt/srt missing for upload-ready stage")
     if selected_phase == "upload_ready" and artifact_status["timed_subtitles_required"] and artifact_status["subtitle_prepared"] != "verified":
@@ -335,6 +366,7 @@ def build_state(
         blocked_by.append("uploaded phase requires concept.md upload completion evidence")
 
     previous_revision = int((previous_state or {}).get("revision", 0) or 0)
+    premixed_refs = [f"{series_rel}/{PREMIXED_AUDIO_MANIFEST}"] if premixed_opt_in else []
 
     return {
         "schema": "wavvy.state.v1",
@@ -346,8 +378,8 @@ def build_state(
         "next_action": next_action,
         "artifact_status": artifact_status,
         "subtitle_status": captions,
-        "authoritative_docs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md"],
-        "evidence_refs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md", *LYRIC_SKILL_EVIDENCE_REFS],
+        "authoritative_docs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md", *premixed_refs],
+        "evidence_refs": [*AUTHORITATIVE_DOCS, f"{series_rel}/concept.md", *premixed_refs, *LYRIC_SKILL_EVIDENCE_REFS],
         "blocked_by": blocked_by,
     }
 
@@ -381,6 +413,9 @@ def check_state(
     artifacts = current["artifact_status"]
     concept_text = _read_text(series_path / "concept.md")
     selected_opt_in, selected_errors = check_selected_audio(series_path)
+    premixed_opt_in, premix, premixed_errors = check_premixed_audio(series_path, allow_uploaded_cleanup=artifacts["youtube_upload"] == "completed")
+    premixed_valid = premixed_opt_in and not premixed_errors
+    render_status = artifacts["premixed_video"] if premixed_opt_in else artifacts["final_mkv"]
 
     warnings: list[str] = []
     blockers: list[str] = []
@@ -389,6 +424,8 @@ def check_state(
         warnings.append("state active_series differs from requested series")
 
     if phase in SOURCE_FINAL_PHASES:
+        if premixed_opt_in:
+            blockers.extend(premixed_errors)
         if selected_opt_in:
             blockers.extend(selected_errors)
         source_map_complete = (
@@ -396,7 +433,7 @@ def check_state(
             and artifacts.get("source_map_tracks", 0) > 0
             and not artifacts.get("source_map_missing")
         )
-        if not source_map_complete and not selected_opt_in:
+        if not source_map_complete and not selected_opt_in and not premixed_opt_in:
             if artifacts["final_track_sources"] == "missing":
                 blockers.append("source_final requires concept.md ## Final Track Sources")
             if artifacts["report_json"] == "missing":
@@ -410,26 +447,26 @@ def check_state(
                 "source_final requires existing source-map audio files: "
                 + ", ".join(artifacts["source_map_missing"])
             )
-        if artifacts.get("available_audio_files", artifacts["audio_files"]) <= 0:
+        if artifacts.get("available_audio_files", artifacts["audio_files"]) <= 0 and not (premixed_valid and artifacts["youtube_upload"] == "completed"):
             blockers.append("source_final requires audio files in input/tracks or concept.md Track Selection source map")
         if not selected_opt_in and artifacts["final_track_sources_count"] and artifacts["report_tracks"]:
             if artifacts["final_track_sources_count"] != artifacts["report_tracks"]:
                 blockers.append("Final Track Sources count differs from report track count")
 
     if phase in LOCAL_RENDER_PHASES:
-        if artifacts["final_mkv"] != "present":
-            blockers.append("render_final requires local output/final.mkv")
+        if render_status != "present":
+            blockers.append("render_final requires local declared render")
         if artifacts["upload_csv"] != "present":
             blockers.append("render_final requires local output/upload.csv")
     if phase == "upload_ready" and artifacts["youtube_upload"] != "completed":
-        if artifacts["final_mkv"] != "present":
-            blockers.append("upload_ready requires local output/final.mkv unless upload is already completed")
+        if render_status != "present":
+            blockers.append("upload_ready requires local declared render unless upload is already completed")
         if artifacts["upload_csv"] != "present":
             blockers.append("upload_ready requires local output/upload.csv unless upload is already completed")
     elif artifacts["youtube_upload"] != "completed" and (
         "upload" in current.get("next_action", "").lower() or "render" in current.get("next_action", "").lower()
     ):
-        if artifacts["final_mkv"] != "present" or artifacts["upload_csv"] != "present":
+        if render_status != "present" or artifacts["upload_csv"] != "present":
             warnings.append("render/upload artifacts are missing; this is a blocker only for render_final/upload_ready")
 
     if (
@@ -437,7 +474,7 @@ def check_state(
         and artifacts["youtube_upload"] != "completed"
         and artifacts["subtitle_txt"] == "missing"
         and artifacts["subtitle_srt"] == "missing"
-        and not (selected_opt_in and not selected_errors)
+        and not ((selected_opt_in and not selected_errors) or premixed_valid)
     ):
         blockers.append("upload_ready requires subtitle txt or srt")
     if phase == "upload_ready" and artifacts["timed_subtitles_required"] and artifacts["subtitle_prepared"] != "verified":

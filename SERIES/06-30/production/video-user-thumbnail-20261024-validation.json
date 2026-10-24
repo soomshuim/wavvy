@@ -1,0 +1,743 @@
+{
+  "schema": "wavvy.series_local_premix_video_validation.v1",
+  "completed_utc": "2026-10-24T05:34:20.592435+00:00",
+  "checks": {
+    "source_hashes": {
+      "image": {
+        "path": "SERIES/06-30/input/thumb.jpg",
+        "sha256": "d3f38504237b6bca5f07592f607844dd423104e3780a5314d5c0a122d6b1c2c8",
+        "unchanged": true
+      },
+      "audio": {
+        "path": "SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a",
+        "sha256": "bc63dc3836cc83864e58f6f1890d9f4cf071d2a94fb5292d110a7af59869caea",
+        "unchanged": true
+      }
+    },
+    "retained_6_and_11": [
+      {
+        "path": "SERIES/06-30/input/tracks/06__다리의 불꽃__Driven__Hardcore Punk Rock__NA.wav",
+        "sha256": "3d422414e390ea2c3c541b7d57edf33776f57525556b74cd34c94fdd39fc4662",
+        "unchanged": true
+      },
+      {
+        "path": "SERIES/06-30/input/tracks/11__계속 앞으로__Driven__Hardcore Punk Rock__NA.wav",
+        "sha256": "e2f056baa0ea4a0ed849ef27144243687723c6e438d98b0ce0e184a55f397c8e",
+        "unchanged": true
+      }
+    ],
+    "final_file_sha256": "7b570ce8f1822d8f5a94a5e530de0f8d2b019676b79f011f1298471b7300524a",
+    "probe": {
+      "evidence": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-show_streams",
+          "-show_format",
+          "-show_chapters",
+          "-of",
+          "json",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.2701455000205897,
+        "stdout_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-probe.stdout.txt",
+        "stderr_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-probe.stderr.txt"
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuvj420p",
+          "level": 51,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "1/1",
+          "avg_frame_rate": "1/1",
+          "time_base": "1/16384",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 124043264,
+          "duration": "7571.000000",
+          "bit_rate": "497400",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "7571",
+          "extradata_size": 52,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc62.11.100 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 363391680,
+          "duration": "7570.660000",
+          "bit_rate": "323437",
+          "nb_frames": "354876",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "bin_data",
+          "codec_long_name": "binary data",
+          "codec_type": "data",
+          "codec_tag_string": "text",
+          "codec_tag": "0x74786574",
+          "id": "0x3",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/1000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 7570660,
+          "duration": "7570.660000",
+          "bit_rate": "1",
+          "nb_frames": "40",
+          "extradata_size": 63,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "eng",
+            "handler_name": "SubtitleHandler"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "7571.000000",
+        "size": "778406893",
+        "bit_rate": "822514",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf62.3.100"
+        }
+      },
+      "video_frame_rounding_tail_seconds": 0.3400000000001455
+    },
+    "chapters": {
+      "count": 40,
+      "source_sample_starts_retained": true,
+      "mp4_maximum_rounding_seconds": 0.0004791666665369121,
+      "entries": [
+        {
+          "cycle": 1,
+          "order": 1,
+          "source_start_sample": 0,
+          "actual_start_seconds": 0.0,
+          "rounding_seconds": 0.0
+        },
+        {
+          "cycle": 1,
+          "order": 2,
+          "source_start_sample": 9698933,
+          "actual_start_seconds": 202.061,
+          "rounding_seconds": -0.0001041666666594665
+        },
+        {
+          "cycle": 1,
+          "order": 3,
+          "source_start_sample": 18459075,
+          "actual_start_seconds": 384.564,
+          "rounding_seconds": -6.249999995588951e-05
+        },
+        {
+          "cycle": 1,
+          "order": 4,
+          "source_start_sample": 26890996,
+          "actual_start_seconds": 560.229,
+          "rounding_seconds": -8.333333323662373e-05
+        },
+        {
+          "cycle": 1,
+          "order": 5,
+          "source_start_sample": 36441327,
+          "actual_start_seconds": 759.194,
+          "rounding_seconds": -0.00031250000006366463
+        },
+        {
+          "cycle": 1,
+          "order": 6,
+          "source_start_sample": 45405963,
+          "actual_start_seconds": 945.958,
+          "rounding_seconds": 0.00043749999997544364
+        },
+        {
+          "cycle": 1,
+          "order": 7,
+          "source_start_sample": 53139293,
+          "actual_start_seconds": 1107.069,
+          "rounding_seconds": 0.0003958333331866015
+        },
+        {
+          "cycle": 1,
+          "order": 8,
+          "source_start_sample": 62552619,
+          "actual_start_seconds": 1303.18,
+          "rounding_seconds": 0.0004375000000891305
+        },
+        {
+          "cycle": 1,
+          "order": 9,
+          "source_start_sample": 71129173,
+          "actual_start_seconds": 1481.858,
+          "rounding_seconds": 0.00022916666671335406
+        },
+        {
+          "cycle": 1,
+          "order": 10,
+          "source_start_sample": 80022214,
+          "actual_start_seconds": 1667.129,
+          "rounding_seconds": -0.0004583333334267081
+        },
+        {
+          "cycle": 1,
+          "order": 11,
+          "source_start_sample": 88132168,
+          "actual_start_seconds": 1836.087,
+          "rounding_seconds": 0.00016666666670062114
+        },
+        {
+          "cycle": 1,
+          "order": 12,
+          "source_start_sample": 96763380,
+          "actual_start_seconds": 2015.904,
+          "rounding_seconds": 0.0002500000000509317
+        },
+        {
+          "cycle": 1,
+          "order": 13,
+          "source_start_sample": 106829188,
+          "actual_start_seconds": 2225.608,
+          "rounding_seconds": -8.333333335031057e-05
+        },
+        {
+          "cycle": 1,
+          "order": 14,
+          "source_start_sample": 116078262,
+          "actual_start_seconds": 2418.297,
+          "rounding_seconds": -0.00012500000002546585
+        },
+        {
+          "cycle": 1,
+          "order": 15,
+          "source_start_sample": 125624288,
+          "actual_start_seconds": 2617.173,
+          "rounding_seconds": 0.0003333333329464949
+        },
+        {
+          "cycle": 1,
+          "order": 16,
+          "source_start_sample": 134906137,
+          "actual_start_seconds": 2810.545,
+          "rounding_seconds": 0.0004791666665369121
+        },
+        {
+          "cycle": 1,
+          "order": 17,
+          "source_start_sample": 144383049,
+          "actual_start_seconds": 3007.98,
+          "rounding_seconds": -0.0001874999998108251
+        },
+        {
+          "cycle": 1,
+          "order": 18,
+          "source_start_sample": 154316982,
+          "actual_start_seconds": 3214.937,
+          "rounding_seconds": -0.00012500000002546585
+        },
+        {
+          "cycle": 1,
+          "order": 19,
+          "source_start_sample": 163092572,
+          "actual_start_seconds": 3397.762,
+          "rounding_seconds": 8.333333335031057e-05
+        },
+        {
+          "cycle": 1,
+          "order": 20,
+          "source_start_sample": 171858904,
+          "actual_start_seconds": 3580.394,
+          "rounding_seconds": 0.00016666666624587378
+        },
+        {
+          "cycle": 2,
+          "order": 1,
+          "source_start_sample": 181609578,
+          "actual_start_seconds": 3783.533,
+          "rounding_seconds": 0.00012500000002546585
+        },
+        {
+          "cycle": 2,
+          "order": 2,
+          "source_start_sample": 191154298,
+          "actual_start_seconds": 3982.381,
+          "rounding_seconds": -0.00020833333337577642
+        },
+        {
+          "cycle": 2,
+          "order": 3,
+          "source_start_sample": 199914440,
+          "actual_start_seconds": 4164.884,
+          "rounding_seconds": -0.00016666666670062114
+        },
+        {
+          "cycle": 2,
+          "order": 4,
+          "source_start_sample": 208346361,
+          "actual_start_seconds": 4340.549,
+          "rounding_seconds": -0.0001874999998108251
+        },
+        {
+          "cycle": 2,
+          "order": 5,
+          "source_start_sample": 217896692,
+          "actual_start_seconds": 4539.514,
+          "rounding_seconds": -0.00041666666675155284
+        },
+        {
+          "cycle": 2,
+          "order": 6,
+          "source_start_sample": 226861328,
+          "actual_start_seconds": 4726.278,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 7,
+          "source_start_sample": 234594658,
+          "actual_start_seconds": 4887.389,
+          "rounding_seconds": 0.00029166666718083434
+        },
+        {
+          "cycle": 2,
+          "order": 8,
+          "source_start_sample": 244007984,
+          "actual_start_seconds": 5083.5,
+          "rounding_seconds": 0.00033333333340124227
+        },
+        {
+          "cycle": 2,
+          "order": 9,
+          "source_start_sample": 252584538,
+          "actual_start_seconds": 5262.178,
+          "rounding_seconds": 0.0001249999995707185
+        },
+        {
+          "cycle": 2,
+          "order": 10,
+          "source_start_sample": 261477579,
+          "actual_start_seconds": 5447.45,
+          "rounding_seconds": 0.0004374999998617568
+        },
+        {
+          "cycle": 2,
+          "order": 11,
+          "source_start_sample": 269587533,
+          "actual_start_seconds": 5616.407,
+          "rounding_seconds": 6.25000002401066e-05
+        },
+        {
+          "cycle": 2,
+          "order": 12,
+          "source_start_sample": 278218745,
+          "actual_start_seconds": 5796.224,
+          "rounding_seconds": 0.00014583333359041717
+        },
+        {
+          "cycle": 2,
+          "order": 13,
+          "source_start_sample": 288284553,
+          "actual_start_seconds": 6005.928,
+          "rounding_seconds": -0.0001874999998108251
+        },
+        {
+          "cycle": 2,
+          "order": 14,
+          "source_start_sample": 297533627,
+          "actual_start_seconds": 6198.617,
+          "rounding_seconds": -0.00022916666603123304
+        },
+        {
+          "cycle": 2,
+          "order": 15,
+          "source_start_sample": 307079653,
+          "actual_start_seconds": 6397.493,
+          "rounding_seconds": 0.00022916666694072774
+        },
+        {
+          "cycle": 2,
+          "order": 16,
+          "source_start_sample": 316361502,
+          "actual_start_seconds": 6590.865,
+          "rounding_seconds": 0.0003749999996216502
+        },
+        {
+          "cycle": 2,
+          "order": 17,
+          "source_start_sample": 325838414,
+          "actual_start_seconds": 6788.3,
+          "rounding_seconds": -0.00029166666627133964
+        },
+        {
+          "cycle": 2,
+          "order": 18,
+          "source_start_sample": 335772347,
+          "actual_start_seconds": 6995.257,
+          "rounding_seconds": -0.00022916666694072774
+        },
+        {
+          "cycle": 2,
+          "order": 19,
+          "source_start_sample": 344547937,
+          "actual_start_seconds": 7178.082,
+          "rounding_seconds": -2.0833333110203966e-05
+        },
+        {
+          "cycle": 2,
+          "order": 20,
+          "source_start_sample": 353314269,
+          "actual_start_seconds": 7360.714,
+          "rounding_seconds": 6.25000002401066e-05
+        }
+      ]
+    },
+    "audio_packets": {
+      "all_identical": true,
+      "source": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-select_streams",
+          "a:0",
+          "-show_packets",
+          "-show_data_hash",
+          "sha256",
+          "-show_entries",
+          "packet=pts,dts,duration,size,data_hash:packet_side_data=side_data_type,skip_samples,discard_padding",
+          "-of",
+          "compact=p=0:nk=0",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/continuous-mix-20261024/repeat2/continuous-mix-0630-repeat2.m4a"
+        ],
+        "exit_code": 0,
+        "packet_count": 354876,
+        "packet_payload_and_timing_sha256": "6ff05eb667aff31cb9f4cea31e5bd90dc48f62806279927f3c946d3a8c10ec28",
+        "first_two": [
+          "pts=-1024|dts=-1024|duration=1024|size=23|data_hash=SHA256:7cf0798680a2dc596698fb22c98fb651f6b8060cb494bbb5dc0e092271b2b940|side_datum/skip_samples:side_data_type=Skip Samples|side_datum/skip_samples:skip_samples=1024|side_datum/skip_samples:discard_padding=0",
+          "pts=0|dts=0|duration=1024|size=6|data_hash=SHA256:a606d221e901302cb1ea1f6fc65018e8c582bed8e65b24758715d7122cffef46"
+        ],
+        "last_two": [
+          "pts=363389952|dts=363389952|duration=1024|size=6|data_hash=SHA256:8a487dc722403a9dffef435b459f5afa999401a7623878ad7ab41eeb8ea0609b",
+          "pts=363390976|dts=363390976|duration=692|size=6|data_hash=SHA256:8a487dc722403a9dffef435b459f5afa999401a7623878ad7ab41eeb8ea0609b"
+        ],
+        "stderr": ""
+      },
+      "final": {
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-select_streams",
+          "a:0",
+          "-show_packets",
+          "-show_data_hash",
+          "sha256",
+          "-show_entries",
+          "packet=pts,dts,duration,size,data_hash:packet_side_data=side_data_type,skip_samples,discard_padding",
+          "-of",
+          "compact=p=0:nk=0",
+          "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4"
+        ],
+        "exit_code": 0,
+        "packet_count": 354876,
+        "packet_payload_and_timing_sha256": "6ff05eb667aff31cb9f4cea31e5bd90dc48f62806279927f3c946d3a8c10ec28",
+        "first_two": [
+          "pts=-1024|dts=-1024|duration=1024|size=23|data_hash=SHA256:7cf0798680a2dc596698fb22c98fb651f6b8060cb494bbb5dc0e092271b2b940|side_datum/skip_samples:side_data_type=Skip Samples|side_datum/skip_samples:skip_samples=1024|side_datum/skip_samples:discard_padding=0",
+          "pts=0|dts=0|duration=1024|size=6|data_hash=SHA256:a606d221e901302cb1ea1f6fc65018e8c582bed8e65b24758715d7122cffef46"
+        ],
+        "last_two": [
+          "pts=363389952|dts=363389952|duration=1024|size=6|data_hash=SHA256:8a487dc722403a9dffef435b459f5afa999401a7623878ad7ab41eeb8ea0609b",
+          "pts=363390976|dts=363390976|duration=692|size=6|data_hash=SHA256:8a487dc722403a9dffef435b459f5afa999401a7623878ad7ab41eeb8ea0609b"
+        ],
+        "stderr": ""
+      }
+    },
+    "full_video_audio_decode": {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-xerror",
+        "-err_detect",
+        "explode",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "-"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.491544375021476,
+      "stdout_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stdout.txt",
+      "stderr_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-full-video-audio-decode.stderr.txt"
+    },
+    "frames": [
+      {
+        "position_seconds": 0,
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-begin.png",
+        "sha256": "27a7f352910d749e1d98caa42f5616fa5cbbc151e40839cad540ba6e5968e2d0",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "0",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-begin.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.9906886669923551,
+          "stdout_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-begin.stdout.txt",
+          "stderr_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-begin.stderr.txt"
+        }
+      },
+      {
+        "position_seconds": 3785,
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-middle.png",
+        "sha256": "983cc6196ae80601ef7a99a9f003fda69b88161f6e18a11a8c74ed124c1697fc",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "3785",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-middle.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.0895426249480806,
+          "stdout_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-middle.stdout.txt",
+          "stderr_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-middle.stderr.txt"
+        }
+      },
+      {
+        "position_seconds": 7570,
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-end.png",
+        "sha256": "69701faec80348df33d79fb5b18a218585fc7c89477480fa19bd9afe00444c0b",
+        "evidence": {
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-v",
+            "error",
+            "-n",
+            "-ss",
+            "7570",
+            "-i",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-0630-4k-v2.mp4",
+            "-map",
+            "0:v:0",
+            "-frames:v",
+            "1",
+            "/Users/zenkim_office/Project/wavvy/SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-end.png"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.149381541996263,
+          "stdout_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-end.stdout.txt",
+          "stderr_path": "SERIES/06-30/output/video-user-thumbnail-20261024/validation-frame-end.stderr.txt"
+        }
+      }
+    ],
+    "image_comparisons": [
+      {
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-begin.png",
+        "comparison": "Decoded PNG RGB vs approved JPG RGB enlarged in memory with Pillow Lanczos; interpolation and lossy-codec differences are expected",
+        "mean_abs_channel_error_0_to_255": 0.6853837370872498,
+        "mean_signed_rgb_channel_error": [
+          -0.031691864132881165,
+          0.5746208429336548,
+          0.25465747714042664
+        ],
+        "root_mean_squared_channel_error": 1.0885902643203735
+      },
+      {
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-middle.png",
+        "comparison": "Decoded PNG RGB vs approved JPG RGB enlarged in memory with Pillow Lanczos; interpolation and lossy-codec differences are expected",
+        "mean_abs_channel_error_0_to_255": 0.6583166122436523,
+        "mean_signed_rgb_channel_error": [
+          -0.03025173582136631,
+          0.576633870601654,
+          0.2560226321220398
+        ],
+        "root_mean_squared_channel_error": 1.05711030960083
+      },
+      {
+        "path": "SERIES/06-30/output/video-user-thumbnail-20261024/final-frame-end.png",
+        "comparison": "Decoded PNG RGB vs approved JPG RGB enlarged in memory with Pillow Lanczos; interpolation and lossy-codec differences are expected",
+        "mean_abs_channel_error_0_to_255": 0.6584355235099792,
+        "mean_signed_rgb_channel_error": [
+          -0.029874734580516815,
+          0.5770284533500671,
+          0.25640347599983215
+        ],
+        "root_mean_squared_channel_error": 1.0576202869415283
+      }
+    ],
+    "color_metadata": {
+      "source": {
+        "color_range": "pc",
+        "color_space": "bt470bg"
+      },
+      "final": {
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "color_primaries": null,
+        "color_transfer": null
+      },
+      "note": "No bt709 retagging or color-grading filter; source and encoded video retain full-range bt470bg."
+    }
+  },
+  "technical_assertions_passed": true,
+  "scope": "Direct final MP4 checks; does not assert legacy source-final gate pass, listening approval, title approval or YouTube upload",
+  "visual_inspection_status": "worker_viewed_begin_middle_end_same_approved_composition_no_added_elements",
+  "visual_inspected_utc": "2026-10-24T05:35:31.093441+00:00"
+}

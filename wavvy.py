@@ -36,6 +36,8 @@ from wavvy_harness.source import parse_track_source_fields
 from wavvy_harness.state import PHASES
 from wavvy_harness.subtitles import SubtitleError, prepare_timed, verify_prepared, verify_published
 from wavvy_harness.youtube_titles import validate_youtube_title
+from wavvy_harness.premixed_audio import check_premixed_audio, check_premixed_render, premixed_opt_in
+from wavvy_harness.state import _upload_completed
 
 
 # =============================================================================
@@ -610,6 +612,13 @@ def validate_project(paths: ProjectPaths) -> ValidationResult:
     5. Sample rate consistency
     """
     result = ValidationResult()
+
+    if premixed_opt_in(paths.base):
+        concept = read_text_if_exists(paths.base / "concept.md")
+        _, _, errors = check_premixed_audio(paths.base, allow_uploaded_cleanup=_upload_completed(concept))
+        for error in errors:
+            result.add_error(error)
+        return result
 
     # Check base directory exists
     if not paths.base.exists():
@@ -2174,6 +2183,13 @@ def build_untimed_subtitles(concept_text: str, report_tracks: list[dict], repeat
 
 def verify_release_package(paths: ProjectPaths) -> list[str]:
     """Check selected WAV identity and upload metadata against the render report."""
+    if premixed_opt_in(paths.base):
+        _, data, errors = check_premixed_audio(paths.base)
+        metadata = parse_concept_youtube_metadata(paths)
+        errors.extend(validate_youtube_title(metadata.get("title", ""), paths.base.name))
+        if data and not errors:
+            errors.extend(check_premixed_render(paths.base, data, metadata=metadata, require_csv=True))
+        return errors
     errors = []
     report, tracks = load_finalize_report(paths)
     manifest_path = paths.base / "input" / "download-manifest.json"
@@ -2607,6 +2623,7 @@ def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path]
         "errors": validation_result.errors,
         "warnings": validation_result.warnings,
         "detail": f"{len(validation_result.tracks)} tracks",
+        "youtube_metadata": parse_concept_youtube_metadata(paths),
     }
     payload = run_gate(
         path, repo_root, stage, validation_payload,
@@ -2672,9 +2689,14 @@ def validate(path: Path):
         sys.exit(1)
 
     # Success summary
-    total_duration = sum(t.duration for t in result.tracks)
     click.echo(click.style("Summary:", fg='green', bold=True))
-    click.echo(f"  Tracks: {len(result.tracks)}")
+    if premixed_opt_in(paths.base):
+        _, premix, _ = check_premixed_audio(paths.base, allow_uploaded_cleanup=_upload_completed(read_text_if_exists(paths.base / "concept.md")))
+        total_duration = premix["duration"]
+        click.echo("  Retained premix: 20 selected sources, 2 cycles, 40 chapter entries")
+    else:
+        total_duration = sum(t.duration for t in result.tracks)
+        click.echo(f"  Tracks: {len(result.tracks)}")
     click.echo(f"  Total Duration: {total_duration:.1f}s ({total_duration/60:.1f} min)")
     click.echo("")
     click.echo(click.style("VALIDATION PASSED", fg='green', bold=True))
@@ -3000,6 +3022,8 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
 
     Output: output/final.mkv + artifacts
     """
+    if premixed_opt_in(path):
+        raise click.ClickException("Final Premixed Audio is already mixed/repeated. Use its declared image render; pack would merge individual WAVs again.")
     click.echo(click.style("\n=== WAVVY PACK ===\n", fg='cyan', bold=True))
 
     paths = ProjectPaths(path)
