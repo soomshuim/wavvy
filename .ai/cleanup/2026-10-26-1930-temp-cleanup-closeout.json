@@ -1,0 +1,48 @@
+{
+  "schema": "wavvy.temp_cleanup_closeout.v1",
+  "recorded_at_utc": "2026-10-26T09:22:19.757744+00:00",
+  "status": "completed",
+  "series": "19-30",
+  "video_id": "s5pY5cqvbS8",
+  "deleted_count": 167,
+  "deleted_logical_bytes": 5908319615,
+  "protected_count": 1528,
+  "all_protected_unchanged_at_apply_completion": true,
+  "all_targets_absent": true,
+  "uploaded_gate_after": "PASS",
+  "state_read_only_verification": {
+    "revision": 98,
+    "phase": "uploaded",
+    "state_writer_not_invoked": true
+  },
+  "observed_free_bytes_before": 574206922752,
+  "observed_free_bytes_after": 580122685440,
+  "observed_free_bytes_delta": 5915762688,
+  "storage_note": "Observed available-space delta includes APFS sharing and concurrent machine activity; it is separate from summed logical file sizes.",
+  "controller_independent_verification": {
+    "source": "Controller /root task message after direct local inspection; not re-executed by this worker",
+    "observations": [
+      "Read applied/167/5908319615/protected1528 flags and post-cleanup gate PASS.",
+      "Direct os.path.lexists verification: all167 candidates absent.",
+      "Direct assertion: candidate path set exactly equals deleted path set."
+    ]
+  },
+  "post_apply_intentional_record_updates": [
+    "SERIES/19-30/concept.md",
+    ".ai/SESSION.md",
+    ".ai/HANDOFF.md",
+    "CHANGELOG.md",
+    "agent-center own SESSION/HANDOFF entries"
+  ],
+  "retained": "Selected20 originals, final160WAV/AAC/4K, source170WAV/AAC, Wish reference originals, PNG/JPG/PSD/prompt and every JSON/script/report/log/review/analysis array/validation frame remain.",
+  "excluded": "Other series, CDS, unrelated inbox, user07thumb move, other browser sessions, Git internals, global other edits.",
+  "review": ".ai/reviews/2026-10-26-1930-temp-cleanup-isolated-review.md",
+  "records": [
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-inventory.json",
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-candidates.json",
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-protected.json",
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-dry-run.json",
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-apply.json",
+    ".ai/cleanup/2026-10-26-1930-temp-cleanup-execution.json"
+  ]
+}

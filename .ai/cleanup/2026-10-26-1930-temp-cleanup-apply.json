@@ -1,0 +1,749 @@
+{
+  "schema": "wavvy.temp_cleanup_execution.v1",
+  "mode": "apply",
+  "started_at_utc": "2026-10-26T09:18:22.805632+00:00",
+  "manifest_sha256": {
+    "candidates": "22775c7e80ad1f3c2b65ed800037799b5716df147a67ff0e49d3de00298696cd",
+    "protected": "c9e495f4f9528410a920b7373adefa31001f6b73c63da8dde301ae07d727d6eb"
+  },
+  "script_sha256": "9f9772fc3081a717ab6d7fb9f83eb514ca80209b98f9b43db64763dc2ca1dee6",
+  "candidate_count": 167,
+  "candidate_bytes": 5908319615,
+  "protected_count": 1528,
+  "uploaded_gate_before": {
+    "schema": "wavvy.gate.v1",
+    "stage": "uploaded",
+    "result": "PASS",
+    "series": "SERIES/19-30",
+    "checks": [
+      {
+        "name": "validate_project",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "final_premixed_audio",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "premixed_render_identity",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "youtube_upload_completed",
+        "status": "PASS",
+        "detail": ""
+      }
+    ],
+    "warnings": [],
+    "blockers": []
+  },
+  "deleted": [
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/final-1930-4k.mp4",
+      "bytes": 487692589
+    },
+    {
+      "path": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/thumb.jpg",
+      "bytes": 3232365
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/.DS_Store",
+      "bytes": 10244
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/.DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-30s-4k.mp4",
+      "bytes": 5465427
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/.DS_Store",
+      "bytes": 10244
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/__pycache__/render-logo-only-20261026.cpython-314.pyc",
+      "bytes": 14802
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/__pycache__/validate-logo-only-20261026.cpython-314.pyc",
+      "bytes": 14156
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-160-20261026/.DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-160-20261026/__pycache__/loudnorm-replay-qa.cpython-314.pyc",
+      "bytes": 17736
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-160-20261026/__pycache__/pulse-family-audit.cpython-314.pyc",
+      "bytes": 4774
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-160-20261026/__pycache__/render-160.cpython-314.pyc",
+      "bytes": 43064
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/assemble-170.cpython-314.pyc",
+      "bytes": 31476
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/audit-final-windows.cpython-314.pyc",
+      "bytes": 11833
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/diagnose-model-beats.cpython-314.pyc",
+      "bytes": 9525
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/measure-rubberband-beats.cpython-314.pyc",
+      "bytes": 8178
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/render-170.cpython-314.pyc",
+      "bytes": 25703
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/production/mix-170-20261026/__pycache__/render-rubberband-170.cpython-314.pyc",
+      "bytes": 24320
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/__pycache__/analyze-wish.cpython-314.pyc",
+      "bytes": 53494
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish-audio-input-test-5s.mp3",
+      "bytes": 105308
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-26-1930-current20-capture/__pycache__/analyze-capture.cpython-314.pyc",
+      "bytes": 44016
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-26-1930-current20-capture/captures/1d615bbf-a039-4f3b-9e91-c84bc687afd4/attempt-01/raw.wav",
+      "bytes": 91050496
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-26-1930-current20-capture/captures/1d615bbf-a039-4f3b-9e91-c84bc687afd4/attempt-02/raw.wav",
+      "bytes": 30870016
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-26-1930-current20-capture/probes/active-tab-01/raw.wav",
+      "bytes": 11554816
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-01/160.wav",
+      "bytes": 8160058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-01/170.wav",
+      "bytes": 7680058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-04/160.wav",
+      "bytes": 8160058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-04/170.wav",
+      "bytes": 7680058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-11/160.wav",
+      "bytes": 8160058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-11/170.wav",
+      "bytes": 7680058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-16/160.wav",
+      "bytes": 8160058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-16/170.wav",
+      "bytes": 7680058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-20/160.wav",
+      "bytes": 8160058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/body-20/170.wav",
+      "bytes": 7680058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-01/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-01/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-02/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-02/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-03/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-03/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-04/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-04/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-05/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-05/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-06/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-06/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-07/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-07/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-08/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-08/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-09/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-09/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-10/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-10/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-11/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-11/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-12/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-12/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-13/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-13/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-14/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-14/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-15/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-15/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-16/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-16/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-17/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-17/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-18/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-18/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-19/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-19/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-20/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-20/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-21/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-21/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-22/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-22/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-23/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-23/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-24/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-24/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-25/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-25/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-26/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-26/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-27/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-27/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-28/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-28/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-29/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-29/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-30/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-30/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-31/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-31/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-32/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-32/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-33/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-33/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-34/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-34/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-35/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-35/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-36/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-36/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-37/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-37/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-38/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-38/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-39/160.wav",
+      "bytes": 2448058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/checks/transition-39/170.wav",
+      "bytes": 2304058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/pilot-input.wav",
+      "bytes": 11520058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/pilot-output.wav",
+      "bytes": 12240088
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+      "bytes": 1911410744
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/blocks/01/block-000.wav",
+      "bytes": 2447268
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/continuous-mix-1930-repeat2-pre-pts-fix.m4a",
+      "bytes": 249797613
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/01.wav",
+      "bytes": 57559144
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/02.wav",
+      "bytes": 76291736
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/03.wav",
+      "bytes": 58712144
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/04.wav",
+      "bytes": 49571176
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/05.wav",
+      "bytes": 55148648
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/06.wav",
+      "bytes": 62515576
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/07.wav",
+      "bytes": 57316528
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/08.wav",
+      "bytes": 73661056
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/09.wav",
+      "bytes": 73262496
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/10.wav",
+      "bytes": 62043072
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/11.wav",
+      "bytes": 75890568
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/12.wav",
+      "bytes": 69165824
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/13.wav",
+      "bytes": 44786672
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/14.wav",
+      "bytes": 65827000
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/15.wav",
+      "bytes": 49026016
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/16.wav",
+      "bytes": 53860040
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/17.wav",
+      "bytes": 49259840
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/18.wav",
+      "bytes": 61980464
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/19.wav",
+      "bytes": 54074096
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/20.wav",
+      "bytes": 59703536
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/01/block-010.wav",
+      "bytes": 2398788
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/03/block-022.wav",
+      "bytes": 2408068
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/20/block-020.wav",
+      "bytes": 2407636
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/20/guard-045/block-020.wav",
+      "bytes": 2423396
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/01/output.wav",
+      "bytes": 11395368
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/01/source.wav",
+      "bytes": 15360058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/03/output.wav",
+      "bytes": 11976792
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/03/source.wav",
+      "bytes": 15360058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/20/output.wav",
+      "bytes": 11911152
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/20/source.wav",
+      "bytes": 15360058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/01.wav",
+      "bytes": 77568058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/02.wav",
+      "bytes": 84142138
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/03.wav",
+      "bytes": 76769338
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/04.wav",
+      "bytes": 63436858
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/05.wav",
+      "bytes": 73820218
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/06.wav",
+      "bytes": 80609338
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/07.wav",
+      "bytes": 75878458
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/08.wav",
+      "bytes": 82944058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/09.wav",
+      "bytes": 80624698
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/10.wav",
+      "bytes": 81868858
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/11.wav",
+      "bytes": 80240698
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/12.wav",
+      "bytes": 91084858
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/13.wav",
+      "bytes": 59904058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/14.wav",
+      "bytes": 86292538
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/15.wav",
+      "bytes": 64312378
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/16.wav",
+      "bytes": 72791098
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/17.wav",
+      "bytes": 64512058
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/18.wav",
+      "bytes": 80593978
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/19.wav",
+      "bytes": 69980218
+    },
+    {
+      "path": "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/20.wav",
+      "bytes": 78028858
+    }
+  ],
+  "status": "applied",
+  "all_protected_unchanged": true,
+  "all_targets_absent": true,
+  "uploaded_gate_after": {
+    "schema": "wavvy.gate.v1",
+    "stage": "uploaded",
+    "result": "PASS",
+    "series": "SERIES/19-30",
+    "checks": [
+      {
+        "name": "validate_project",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "final_premixed_audio",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "premixed_render_identity",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "youtube_upload_completed",
+        "status": "PASS",
+        "detail": ""
+      }
+    ],
+    "warnings": [],
+    "blockers": []
+  },
+  "deleted_count": 167,
+  "deleted_logical_bytes": 5908319615,
+  "finished_at_utc": "2026-10-26T09:18:46.816822+00:00"
+}

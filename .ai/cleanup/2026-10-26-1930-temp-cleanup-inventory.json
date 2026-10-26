@@ -1,0 +1,75 @@
+{
+  "schema": "wavvy.temp_cleanup_inventory.v1",
+  "created_at_utc": "2026-10-26T09:13:34.982047+00:00",
+  "mode": "read_only_preparation_no_delete_or_move",
+  "root": "/Users/zenkim_office/Project/wavvy",
+  "scopes": [
+    "SERIES/19-30",
+    "work/2026-10-25-1930-wish",
+    "work/2026-10-26-1930-current20-capture",
+    "work/mix-170-20261026",
+    "work/mix-160-20261026",
+    ".ai/research/2026-10-25-1930-wish",
+    ".ai/research/2026-10-26-1930-expansion",
+    ".ai/research/2026-10-26-1930-six-tracks"
+  ],
+  "extra_protected_paths": [
+    ".ai/state.json",
+    "wavvy.py",
+    "wavvy_harness/gate.py",
+    "wavvy_harness/premixed_audio.py",
+    "wavvy_harness/integrated_premix.py",
+    "wavvy_harness/video_artwork.py",
+    "MASTER/SSOT.md",
+    "MASTER/ai/RUNTIME_RULES.md",
+    "MASTER/WORKFLOWS.md",
+    "MASTER/cli/SPEC.md",
+    ".ai/reviews/2026-10-26-video-artwork-isolated-review.md",
+    ".ai/reviews/2026-10-26-video-artwork-existing-subtitle-failure.json",
+    ".ai/reviews/2026-10-26-video-artwork-historical-baseline.json",
+    ".ai/reviews/2026-10-26-1930-release-isolated-review.md",
+    ".ai/reviews/2026-10-26-video-artwork-historical-gates.json",
+    ".ai/reviews/2026-10-26-integrated-premix-source-checks.json",
+    ".ai/reviews/2026-10-26-video-artwork-checks.json",
+    ".ai/reviews/2026-10-26-video-artwork-tests.json"
+  ],
+  "external_exact_upload_copies": [
+    "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/final-1930-4k.mp4",
+    "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/thumb.jpg"
+  ],
+  "selected_original_count": 20,
+  "final_delivery_paths_protected": [
+    "SERIES/19-30/output/mix-160-20261026/continuous-mix-1930-160-repeat2.m4a",
+    "SERIES/19-30/output/mix-160-20261026/continuous-mix-1930-160-repeat2.wav",
+    "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+    "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+    "SERIES/19-30/output/video-logo-only-20261026/final-1930-4k.mp4"
+  ],
+  "candidate_count": 167,
+  "candidate_bytes": 5908319615,
+  "protected_count": 1528,
+  "protected_bytes": 7009866495,
+  "candidate_groups": {
+    "exact duplicate browser upload copy; canonical source retained": 2,
+    "filesystem display metadata": 4,
+    "30-second preview; final4K and visual validation frames retained": 1,
+    "regenerable Python bytecode cache": 13,
+    "five-second audio-input transport test": 1,
+    "excluded Goodbye failed/partial attempt or active-tab probe; timing/verification records retained": 3,
+    "160 pilot or numerical-check audio excerpt": 90,
+    "uploaded media-only transform intermediate": 1,
+    "170 pilot/check or superseded pre-PTS-fix encode; final170 master retained": 12,
+    "uploaded media-only intermediate: extracted/corrected source": 40
+  },
+  "nonregular_untouched": [],
+  "gate_policy": "gate.py:798 passes observed uploaded completion to integrated_premix._Evidence. Only bound(media=True) and wav checks permit missing media. All JSON/script/QA/analysis identity records remain mandatory and are protected. No gate code changes. Selected originals, final160/4K and retained170 finals are protected despite media-cleanup capability.",
+  "precedent": ".ai/cleanup/execute-0700-post-upload-20261024.py exact frozen allowlist and nofollow parent descriptors; 2026-10-24 complete-media deletion used separate explicit approval and is not inferred here.",
+  "candidates_manifest": {
+    "path": ".ai/cleanup/2026-10-26-1930-temp-cleanup-candidates.json",
+    "sha256": "22775c7e80ad1f3c2b65ed800037799b5716df147a67ff0e49d3de00298696cd"
+  },
+  "protected_manifest": {
+    "path": ".ai/cleanup/2026-10-26-1930-temp-cleanup-protected.json",
+    "sha256": "c9e495f4f9528410a920b7373adefa31001f6b73c63da8dde301ae07d727d6eb"
+  }
+}

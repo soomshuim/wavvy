@@ -228,3 +228,11 @@ electronica, EDM, big beat, melodic electronica, electronic running music, 160 b
 - Manifest: `production/final-premixed-audio.json`
 - **Final vocal direction**: Instrumental.
 - 160 BPM 캡처 기반 통합 음원과 정본 영상·선택·원본 녹음 근거를 해시로 연결한다. 20곡 전체가 이미 2회 들어 있으므로 추가 반복은 0회다. 과거 생성 프롬프트는 검증되지 않은 이력으로 남긴다.
+
+
+## Local Temporary Cleanup — 2026-10-26
+
+- 젠의 “작업 파일 정리해줘” 요청으로 이번 19:30 임시 파일만 정리했다. 독립 검토 뒤 동결한 목록의 **167파일·5,908,319,615 bytes(파일 크기 합계)**를 삭제했다. 실패·시험 녹음, 추출/보정/검사 중간 음원, 30초 영상 미리보기, 이번 브라우저 업로드 사본 2개와 재생성 가능한 작은 캐시가 대상이다. 다른 시리즈·CDS·다른 브라우저 세션은 대상이 아니다.
+- **보존:** 선택 20곡의 원본 녹음, 최종 160 WAV/AAC·로고 전용 4K MP4, 160 제작 출처인 170 최종 WAV/AAC, Wish 참조 원음, 최종 PNG/JPG/PSD, 프롬프트, 모든 JSON·스크립트·보고서·로그·독립 검토·분석 배열·시각 검수 프레임을 남겼다. 정리 직후 보호 1,528파일의 지문·파일 정보 불변과 삭제 대상 전부의 부재를 확인했다. 이 보관 상태 문단과 세션 기록은 그 확인 뒤 의도적으로 갱신한 문서다.
+- 기존 업로드 완료 검사 경로가 허용하는 중간 미디어 누락만 적용했으며 검사 코드를 바꾸지 않았다. 정리 후 `uploaded` gate 4개 검사 PASS·경고/차단 0, state revision98·phase uploaded를 읽기 전용으로 확인했다. 원본 제작/업로드 기록은 당시 관측으로 보존한다.
+- 근거: [동결 목록](../../.ai/cleanup/2026-10-26-1930-temp-cleanup-inventory.json), [정리 결과](../../.ai/cleanup/2026-10-26-1930-temp-cleanup-apply.json), [독립 검토](../../.ai/reviews/2026-10-26-1930-temp-cleanup-isolated-review.md). 관측 여유 공간 증가 **5,915,762,688 bytes**는 파일 크기 합계와 별개이며 파일시스템 공유·다른 활동의 영향을 포함한다.

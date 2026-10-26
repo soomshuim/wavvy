@@ -1,0 +1,47 @@
+{
+  "schema": "wavvy.temp_cleanup_execution.v1",
+  "mode": "dry_run",
+  "started_at_utc": "2026-10-26T09:15:08.706657+00:00",
+  "manifest_sha256": {
+    "candidates": "22775c7e80ad1f3c2b65ed800037799b5716df147a67ff0e49d3de00298696cd",
+    "protected": "c9e495f4f9528410a920b7373adefa31001f6b73c63da8dde301ae07d727d6eb"
+  },
+  "script_sha256": "9f9772fc3081a717ab6d7fb9f83eb514ca80209b98f9b43db64763dc2ca1dee6",
+  "candidate_count": 167,
+  "candidate_bytes": 5908319615,
+  "protected_count": 1528,
+  "uploaded_gate_before": {
+    "schema": "wavvy.gate.v1",
+    "stage": "uploaded",
+    "result": "PASS",
+    "series": "SERIES/19-30",
+    "checks": [
+      {
+        "name": "validate_project",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "final_premixed_audio",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "premixed_render_identity",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "youtube_upload_completed",
+        "status": "PASS",
+        "detail": ""
+      }
+    ],
+    "warnings": [],
+    "blockers": []
+  },
+  "deleted": [],
+  "status": "dry_run_pass",
+  "all_protected_unchanged": true,
+  "deleted_count": 0
+}
