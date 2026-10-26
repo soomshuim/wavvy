@@ -1,0 +1,80 @@
+{
+  "schema": "wavvy.state.check.v1",
+  "result": "PASS",
+  "state": {
+    "schema": "wavvy.state.v1",
+    "revision": 99,
+    "updated_at": "2026-10-26T19:34:34",
+    "active_series": "SERIES/19-30",
+    "phase": "uploaded",
+    "inferred_phase": "uploaded",
+    "next_action": "YouTube upload is recorded. Follow the approved retention policy for the premix and rendered video.",
+    "artifact_status": {
+      "concept_md": "present",
+      "final_track_sources": "missing",
+      "selected_audio_sources": "missing",
+      "premixed_audio": "verified",
+      "premix_production_report": "verified",
+      "premixed_video": "deleted_after_upload",
+      "premixed_video_path": "output/video-logo-only-20261026/final-1930-4k.mp4",
+      "final_track_sources_count": 0,
+      "report_json": "missing",
+      "report_tracks": 0,
+      "audio_files": 0,
+      "available_audio_files": 0,
+      "audio_source": "final_premixed_audio",
+      "source_map": "missing",
+      "source_map_tracks": 0,
+      "source_map_audio_files": 0,
+      "source_map_missing": [],
+      "txt_sources": 20,
+      "final_mkv": "deleted_after_upload",
+      "upload_csv": "present",
+      "subtitle_txt": "missing",
+      "subtitle_srt": "missing",
+      "youtube_metadata": "present",
+      "youtube_upload": "completed",
+      "lyric_skill_package": "present",
+      "lyric_skill_files": {
+        "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",
+        "skills/wavvy-lyricist/SKILL.md": "present",
+        "skills/wavvy-lyricist/references/patterns.md": "present"
+      },
+      "subtitle_prepared": "exempt_instrumental",
+      "subtitle_published": "exempt_instrumental",
+      "timed_subtitles_required": false
+    },
+    "subtitle_status": {
+      "prepared": "exempt_instrumental",
+      "published": "exempt_instrumental"
+    },
+    "authoritative_docs": [
+      "MASTER/SSOT.md",
+      "MASTER/ai/RUNTIME_RULES.md",
+      "MASTER/MANAGER.md",
+      "MASTER/WORKFLOWS.md",
+      "MASTER/cli/SPEC.md",
+      "MASTER/youtube/YOUTUBE.md",
+      "wavvy.md",
+      "SERIES/19-30/concept.md",
+      "SERIES/19-30/production/final-premixed-audio.json"
+    ],
+    "evidence_refs": [
+      "MASTER/SSOT.md",
+      "MASTER/ai/RUNTIME_RULES.md",
+      "MASTER/MANAGER.md",
+      "MASTER/WORKFLOWS.md",
+      "MASTER/cli/SPEC.md",
+      "MASTER/youtube/YOUTUBE.md",
+      "wavvy.md",
+      "SERIES/19-30/concept.md",
+      "SERIES/19-30/production/final-premixed-audio.json",
+      "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+      "skills/wavvy-lyricist/SKILL.md",
+      "skills/wavvy-lyricist/references/patterns.md"
+    ],
+    "blocked_by": []
+  },
+  "warnings": [],
+  "blockers": []
+}

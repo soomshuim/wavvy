@@ -221,7 +221,7 @@ electronica, EDM, big beat, melodic electronica, electronic running music, 160 b
 - SD·HD·4K 처리 완료를 관측했다. 최신 Studio 알림은 `—`다. 앞서 저작권 `검토 중`을 관측한 이력은 보존하며, 명시적인 저작권 최종 판정을 별도로 포착했다고 주장하지 않는다.
 - 실제 공개 페이지에서 승인 제목, **1:50:37**, 로고만 있는 영상 화면, 설명의 **40개 챕터**와 첫 챕터 재생을 확인했다. 이는 짧은 화면·재생 검사이며 전체 청취나 실제 4K 스트림 재생 인증은 아니다.
 - 댓글 0개를 먼저 확인한 뒤 승인된 3줄을 한 번 게시했다. 댓글 ID는 `UgxjZ6ONiEtA11sFUSx4AaABAg`다. `@wavvy24님이 고정함`과 `댓글이 고정되었습니다.`를 확인했으며, 컨트롤러도 정확한 댓글 1개와 고정 표시를 독립 확인했다.
-- 결과 및 원시 UI 근거: [공개 기록](production/youtube-upload-20261026.json), [고정 댓글](production/youtube-upload-ui-20261026/comment-pinned-ui.txt), [40개 챕터](production/youtube-upload-ui-20261026/public-expanded-description-ui.txt), [최신 Studio](production/youtube-upload-ui-20261026/studio-final-processing-ui.txt), [실제 공개 화면](production/youtube-upload-ui-20261026/public-chapter-playback.webp). 로컬 원본·출력 음원·영상과 브라우저 제출용 사본은 삭제하지 않았다.
+- 결과 및 원시 UI 근거: [공개 기록](production/youtube-upload-20261026.json), [고정 댓글](production/youtube-upload-ui-20261026/comment-pinned-ui.txt), [40개 챕터](production/youtube-upload-ui-20261026/public-expanded-description-ui.txt), [최신 Studio](production/youtube-upload-ui-20261026/studio-final-processing-ui.txt), [실제 공개 화면](production/youtube-upload-ui-20261026/public-chapter-playback.webp). 게시 직후에는 로컬 원본·출력 음원·영상과 브라우저 제출용 사본을 삭제하지 않았다. 이후 사용자 요청으로 적용한 두 차례 정리는 아래의 해당 시점 기록과 현재 보관 상태를 따른다.
 
 ## Final Premixed Audio
 
@@ -236,3 +236,13 @@ electronica, EDM, big beat, melodic electronica, electronic running music, 160 b
 - **보존:** 선택 20곡의 원본 녹음, 최종 160 WAV/AAC·로고 전용 4K MP4, 160 제작 출처인 170 최종 WAV/AAC, Wish 참조 원음, 최종 PNG/JPG/PSD, 프롬프트, 모든 JSON·스크립트·보고서·로그·독립 검토·분석 배열·시각 검수 프레임을 남겼다. 정리 직후 보호 1,528파일의 지문·파일 정보 불변과 삭제 대상 전부의 부재를 확인했다. 이 보관 상태 문단과 세션 기록은 그 확인 뒤 의도적으로 갱신한 문서다.
 - 기존 업로드 완료 검사 경로가 허용하는 중간 미디어 누락만 적용했으며 검사 코드를 바꾸지 않았다. 정리 후 `uploaded` gate 4개 검사 PASS·경고/차단 0, state revision98·phase uploaded를 읽기 전용으로 확인했다. 원본 제작/업로드 기록은 당시 관측으로 보존한다.
 - 근거: [동결 목록](../../.ai/cleanup/2026-10-26-1930-temp-cleanup-inventory.json), [정리 결과](../../.ai/cleanup/2026-10-26-1930-temp-cleanup-apply.json), [독립 검토](../../.ai/reviews/2026-10-26-1930-temp-cleanup-isolated-review.md). 관측 여유 공간 증가 **5,915,762,688 bytes**는 파일 크기 합계와 별개이며 파일시스템 공유·다른 활동의 영향을 포함한다.
+
+
+## Local Final Media Cleanup — 2026-10-26 (현재 보관 상태)
+
+- 젠의 후속 원문 “4K 영상과 음원도 필요 없어”에 따라 이번 19:30의 남은 음원·영상을 정리했다. 선택 20곡 원본 WAV, 최종 160/170 WAV·AAC 4개, 로고 전용 최종 4K MP4 1개, Wish 참조 음원 4개로 **29파일·6,738,666,640 bytes(파일 크기 합계)**다. 이 새 요청은 앞선 임시 정리 때의 원본·최종 미디어 보관 방침만 변경하며, 과거 167개 정리 기록은 그대로 보존한다.
+- **현재 보관:** 최종 PNG/JPG/PSD, 승인 영상 배경·프롬프트·모든 제작/선택/출처 해시 원장·JSON·스크립트·보고서·로그·독립 검토·분석 배열·시각 검수 프레임을 남겼다. 정리 직후 보호 1,529파일의 지문·파일 정보 불변과 29개 대상 전체의 부재, 삭제 집합과 동결 목록의 정확한 일치를 확인했다. 이 현행 보관 문서와 정상 state writer·세션 기록은 그 확인 뒤 의도적으로 갱신한다. 다른 시리즈, 특히 06:30 보관 WAV와 CDS·다른 세션 자료는 삭제하지 않았다.
+- 기존 `uploaded` 정리 분기의 미디어 부재 지원을 그대로 사용했다. 검사 코드 변경은 0개이며 사후 `uploaded` gate 4개 검사 PASS·경고/차단 0이다. 출처 계약은 삭제 전 경로와 SHA256을 보존하는 제작 이력이며 현재 음원·영상 보관을 뜻하지 않는다. 공개 영상 `s5pY5cqvbS8`·고정 댓글·Suno 번호는 변경하지 않았다.
+- 정확한 170 WAV의 동일 inode(475818468)를 QuickLookUIService가 읽기 전용으로 잡고 있는 경우만 컨트롤러가 새 계획에서 허용했다. 독립 검토 뒤 실행 직전 열린 모드·대상을 재측정해 기록하고 경로만 정상 삭제했다. 프로세스 종료·다른 창 조작은 없었다. 열린 읽기 참조의 종료 전에는 저장 공간 반환이 늦을 수 있다.
+- 실제 여유 공간 관측은 **576,555,700,224→579,572,756,480 bytes(+3,017,056,256 bytes)**다. 이는 파일 크기 합계와 별개이며 열린 참조·파일시스템·다른 저장 활동의 영향을 포함한다.
+- 근거: [동결 목록](../../.ai/cleanup/2026-10-26-1930-final-media-cleanup-inventory.json), [삭제/보호 검사 결과](../../.ai/cleanup/2026-10-26-1930-final-media-cleanup-apply.json), [실행·공간 관측](../../.ai/cleanup/2026-10-26-1930-final-media-cleanup-execution.json), [독립 검토](../../.ai/reviews/2026-10-26-1930-final-media-cleanup-isolated-review.md). 인자 없는 정식 `-record`는 SESSION/HANDOFF를 로컬·글로벌에 남기는 세션 모드로 수행한다.

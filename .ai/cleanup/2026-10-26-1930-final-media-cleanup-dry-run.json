@@ -1,0 +1,68 @@
+{
+  "schema": "wavvy.final_media_cleanup_execution.v1",
+  "mode": "dry_run",
+  "started_at_utc": "2026-10-26T10:30:07.816926+00:00",
+  "manifest_sha256": {
+    "candidates": "242a58889b40b313998a1a287d4173e7da292383719d57acccf01eb1a717060c",
+    "protected": "51d50f880707bf8ba553482c67286bc0262ab7051fa7702a2c818717d2c057ab"
+  },
+  "script_sha256": "138441383a5882d01593fc97f0abbfa4d0cc4b6236117a148e028160c42e3987",
+  "candidate_count": 29,
+  "candidate_bytes": 6738666640,
+  "protected_count": 1529,
+  "uploaded_gate_before": {
+    "schema": "wavvy.gate.v1",
+    "stage": "uploaded",
+    "result": "PASS",
+    "series": "SERIES/19-30",
+    "checks": [
+      {
+        "name": "validate_project",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "final_premixed_audio",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "premixed_render_identity",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "name": "youtube_upload_completed",
+        "status": "PASS",
+        "detail": ""
+      }
+    ],
+    "warnings": [],
+    "blockers": []
+  },
+  "process_snapshot": {
+    "observed_at_utc": "2026-10-26T10:30:07.815921+00:00",
+    "command": [
+      "lsof",
+      "-nP",
+      "-Fpcfain"
+    ],
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "allowed_read_only_readers": [
+      {
+        "path": "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+        "pid": "76067",
+        "command": "QuickLookUIService",
+        "fd": "15",
+        "access": "r",
+        "inode": "475818468"
+      }
+    ]
+  },
+  "space_note": "POSIX unlink removes the path; QuickLook may retain read-only data until its descriptor closes. Logical bytes are separate from actual free-space change.",
+  "deleted": [],
+  "status": "dry_run_pass",
+  "all_protected_unchanged": true,
+  "deleted_count": 0
+}

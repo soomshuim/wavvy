@@ -1,0 +1,52 @@
+{
+  "schema": "wavvy.final_media_cleanup_closeout.v1",
+  "recorded_at_utc": "2026-10-26T10:36:11.475118+00:00",
+  "status": "cleanup_and_formal_session_record_complete_pending_scoped_commit_push",
+  "candidate_count": 29,
+  "deleted_count": 29,
+  "deleted_logical_bytes": 6738666640,
+  "exact_candidate_deleted_set_equal": true,
+  "all_candidate_paths_absent": true,
+  "protected_count": 1529,
+  "all_protected_unchanged_at_apply_finish": true,
+  "intentional_post_verification_metadata_changes": [
+    ".ai/state.json",
+    "SERIES/19-30/concept.md"
+  ],
+  "state_writer_revision_before": 98,
+  "state_writer_revision_after": 99,
+  "state_phase": "uploaded",
+  "state_check": "PASS",
+  "uploaded_gate": "PASS",
+  "gate_checks": 4,
+  "warnings": 0,
+  "blockers": 0,
+  "free_space_observation": {
+    "free_bytes_before": 576555700224,
+    "free_bytes_after": 579572756480,
+    "actual_free_bytes_delta": 3017056256
+  },
+  "free_space_limit": "Actual delta is not logical deletion size. Exact QuickLook read-only descriptor may retain data after unlink; other activity and filesystem behavior also affect this observation.",
+  "controller_independent_verification": {
+    "source": "controller /root tool transcript, relayed in team message2026-10-26 after apply; no separate root evidence file invented",
+    "observed": "29 candidates lexists false; exact candidate/deleted set equality;6738666640 bytes; protected1529/applyflags; postuploaded gate PASS"
+  },
+  "formal_record": {
+    "trigger": "-record",
+    "mode": "session_only_no_arguments",
+    "canonical_command": "agent-center/commands/record.md reread after runtime",
+    "writer": "agent-center/scripts/record-append.sh",
+    "session": "local+global",
+    "handoff": "local+global",
+    "changelog": "actual cleanup work entry only; session-only record adds no separate changelog entry"
+  },
+  "scope_exclusions": [
+    "SERIES/07-00/input/thumb.jpg user-move deletion",
+    ".ai/inbox-reviews/2026-10-25/",
+    "other agent-center dirty changes",
+    "other series media especially06:30",
+    "CDS",
+    "other sessions"
+  ],
+  "previous167_cleanup_records_and_script": "unchanged historical evidence"
+}
