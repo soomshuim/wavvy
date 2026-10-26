@@ -1,0 +1,180 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=FQ-8bQbPSaY",
+  "raw_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish-live-r2-raw.wav",
+  "raw_sha256": "9e6c5885e2bcfe6a481e5a53d088220b51b5262c5e5464c5b8ea45de7dcb219d",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sample_type": "float32",
+  "raw_frames": 20911680,
+  "raw_duration_seconds": 435.66,
+  "peak": 0.5725334882736206,
+  "peak_dbfs": -4.843982219696045,
+  "sample_clipping_at_or_above_one": 0,
+  "exact_zero_gaps_ge_0_1_seconds": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 11.438729166666667,
+      "duration_seconds": 11.438729166666667
+    },
+    {
+      "start_seconds": 11.5786875,
+      "end_seconds": 12.102770833333333,
+      "duration_seconds": 0.5240833333333333
+    },
+    {
+      "start_seconds": 264.2100625,
+      "end_seconds": 264.9974583333333,
+      "duration_seconds": 0.7873958333333333
+    },
+    {
+      "start_seconds": 402.4429583333333,
+      "end_seconds": 405.9437291666667,
+      "duration_seconds": 3.500770833333333
+    },
+    {
+      "start_seconds": 426.831,
+      "end_seconds": 435.4903958333333,
+      "duration_seconds": 8.659395833333333
+    }
+  ],
+  "pts": {
+    "buffer_count": 21783,
+    "first_pts_seconds": 449943.8875185,
+    "last_pts_seconds": 450379.5275185,
+    "summed_frames": 20911680,
+    "frame_offset_gap_count": 0,
+    "pts_gap_over_one_sample_count": 0,
+    "max_absolute_gap_seconds": 3.958120983749147e-11,
+    "callback_delay_seconds_percentiles": [
+      0.042456208379007876,
+      0.05621541669825092,
+      0.06775215416564606,
+      0.16253900004085153
+    ]
+  },
+  "ui": {
+    "event_count": 1475,
+    "non_timeupdate_events": [
+      {
+        "event": "play",
+        "unix_seconds": 1792939409.874,
+        "currentTime": 0.013865,
+        "duration": 389.701,
+        "paused": false,
+        "ended": false,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "playing",
+        "unix_seconds": 1792939409.877,
+        "currentTime": 0.016223,
+        "duration": 389.701,
+        "paused": false,
+        "ended": false,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "pause",
+        "unix_seconds": 1792939662.679,
+        "currentTime": 252.024838,
+        "duration": 389.701,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "play",
+        "unix_seconds": 1792939663.471,
+        "currentTime": 252.247689,
+        "duration": 389.701,
+        "paused": false,
+        "ended": false,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "playing",
+        "unix_seconds": 1792939663.472,
+        "currentTime": 252.249214,
+        "duration": 389.701,
+        "paused": false,
+        "ended": false,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "pause",
+        "unix_seconds": 1792939801.158,
+        "currentTime": 389.701,
+        "duration": 389.701,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      },
+      {
+        "event": "ended",
+        "unix_seconds": 1792939801.158,
+        "currentTime": 389.701,
+        "duration": 389.701,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "volume": 0.41399968435242535,
+        "muted": false,
+        "playbackRate": 1
+      }
+    ],
+    "natural_end_observed": true,
+    "video_duration_seconds": 389.701,
+    "stable_media_clock_unix_epoch": 1792939410.647353,
+    "media_clock_slope": 0.9971718237921962,
+    "timeupdate_epoch_residual_seconds_percentiles": [
+      -0.005169868469238281,
+      -0.003577280044555664,
+      0.0,
+      0.7929508686065674,
+      0.7938451766967773
+    ]
+  },
+  "alignment": {
+    "raw_pts_unix_start": 1792939398.546593,
+    "raw_video_start_seconds": 11.438729166666667,
+    "raw_video_end_seconds": 402.4429583333333,
+    "derivative_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish.wav",
+    "derivative_frames": 18730408,
+    "derivative_sha256": "3c5f7c560115682be1e42893d6ea807c5afdd22dc5bc5c75a0b01593a49380f8",
+    "method": "Piecewise retained-raw-interval and media-time-event interpolation.",
+    "edited_source": true,
+    "excluded_original_video_seconds": [
+      250.024838,
+      254.247689
+    ],
+    "limitation": "Browser media clock and ScreenCaptureKit audio output latency are not calibrated; subsecond alignment is approximate. Raw original is preserved."
+  },
+  "capture_scope": "Aside application-only ScreenCaptureKit; captureMicrophone=false; does not isolate an individual tab.",
+  "direct_audio_listening": false,
+  "crowd_policy": "Audience cheers, applause and singing must be ignored when describing the composition. No source separation was performed; measurements include venue/audience contamination.",
+  "stereo": {
+    "channel_rms_dbfs": [
+      -17.8783370428907,
+      -17.820819498051904
+    ],
+    "left_right_correlation": 0.5294448655710539
+  }
+}

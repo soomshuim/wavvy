@@ -1,0 +1,37 @@
+{
+  "schema": "wavvy.actual_release_gate_execution.v1",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "wavvy.py",
+        "verify-release",
+        "SERIES/19-30",
+        "--json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.427036167006008,
+      "stdout_path": "SERIES/19-30/production/video-logo-only-20261026/gates/verify-release.stdout.json",
+      "stderr_path": "SERIES/19-30/production/video-logo-only-20261026/gates/verify-release.stderr.txt",
+      "completed_utc": "2026-10-26T08:32:00.352198+00:00",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/19-30",
+        "--stage",
+        "upload-ready",
+        "--json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.983041708997916,
+      "stdout_path": "SERIES/19-30/production/video-logo-only-20261026/gates/upload-ready.stdout.json",
+      "stderr_path": "SERIES/19-30/production/video-logo-only-20261026/gates/upload-ready.stderr.txt",
+      "completed_utc": "2026-10-26T08:32:30.335952+00:00",
+      "result": "PASS"
+    }
+  ]
+}

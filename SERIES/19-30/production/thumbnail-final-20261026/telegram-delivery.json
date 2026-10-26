@@ -1,0 +1,29 @@
+{
+  "schema": "wavvy.telegram_document_delivery.v1",
+  "status": "sent",
+  "started_at": "2026-10-26T05:31:31.370678+00:00",
+  "method": "sendDocument",
+  "file_path": "SERIES/19-30/input/thumb.jpg",
+  "file_sha256": "2eee7e97a26fdaff03df1e6681c645bbd1cdcaf023be8cc7408103ab92842c56",
+  "file_bytes": 1840479,
+  "caption": "19:30 최종 썸네일 — Running Mix · 170BPM · 4K",
+  "chat_type": "private",
+  "configured_recipient_matches": true,
+  "send_attempts": 1,
+  "finished_at": "2026-10-26T05:31:35.712025+00:00",
+  "message_id": 53664,
+  "document": {
+    "file_name": "thumb.jpg",
+    "file_size": 1840479,
+    "mime_type": "image/jpeg"
+  },
+  "checks": {
+    "api_success": true,
+    "message_id_present": true,
+    "private_chat": true,
+    "configured_recipient_matches": true,
+    "document_file_name_matches": true,
+    "document_file_size_matches": true,
+    "caption_matches": true
+  }
+}

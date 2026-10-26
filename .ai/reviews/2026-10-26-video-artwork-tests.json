@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "tests.test_video_artwork",
+    "tests.test_premixed_audio",
+    "tests.test_harness",
+    "tests.test_youtube_titles"
+  ],
+  "exit_code": 0,
+  "stdout": "[INFO] Rendering video from image with audio duration: 1.0s\n[INFO]   Mode: static image (-tune stillimage, 1 fps)\n[INFO] Running FFmpeg render (image mode)...\n[OK] Video rendered to: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmpyhya50z3/SERIES/20-00/output.mp4\n[OK] Report saved to: /var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmp8xj4wcsa/report.json\n[INFO] Found 2 source-map audio reference(s)\n[OK]   01. One (120.0s, 48000Hz)\n[OK]   02. Two (120.0s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n",
+  "stderr": "..[ERROR] Video artwork: [Errno 2] No such file or directory: '/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmp_cyk37_0/SERIES/20-00/input/video-artwork.json'\n..............................................................................................................\n----------------------------------------------------------------------\nRan 112 tests in 8.948s\n\nOK\n"
+}

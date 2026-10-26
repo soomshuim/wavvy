@@ -1,0 +1,22 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Half Past Home" [ref=e420] [focused]
+  - button "Close" [ref=e421]
+  - image "Half Past Home"
+  - button "Upload" [ref=e422]
+  - button "Create" [ref=e423]
+  - button "Animate" [ref=e424]
+  - text: "Allow comments"
+  - switch [ref=e425] [checked]
+  - text: "Allow remix"
+  - switch [ref=e426] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e427]
+  - button "Edit caption, lyrics and styles" [ref=e428]
+  - button "Save" [ref=e429] [disabled]
+  - button "Publish" [ref=e430]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

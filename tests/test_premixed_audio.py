@@ -12,6 +12,8 @@ from unittest.mock import patch
 
 from click.testing import CliRunner
 from PIL import Image
+from tests.artwork_fixture import make_artwork
+from wavvy_harness.video_artwork import MANIFEST as ARTWORK_MANIFEST, check_video_artwork
 
 from wavvy import ProjectPaths, cli, validate_project, verify_release_package
 from wavvy_harness.gate import run_gate
@@ -32,8 +34,9 @@ class PremixedAudioTests(unittest.TestCase):
         self.audio.write_bytes(b"retained-complete-two-cycle-aac")
         self.video = self.series / "output/final-premix.mp4"
         self.video.write_bytes(b"rendered-premix-video")
-        image = self.series / "input/thumb.jpg"
-        Image.new("RGB", (32, 18), "orange").save(image)
+        make_artwork(self.series)
+        image = self.series / "input/video-background.png"
+        artwork = check_video_artwork(self.series)[0]
         self.sources = [{"order": i, "title": f"Song {i}", "candidate_id": f"id-{i}", "sha256": f"{i:064x}",
                          "path": f"SERIES/20-00/input/tracks/{i:02d}.wav"} for i in range(1, 21)]
         self.entries = [{"cycle": n // 20 + 1, "order": n % 20 + 1, "mix_entry_sample": n * 480000,
@@ -63,7 +66,7 @@ class PremixedAudioTests(unittest.TestCase):
             "lossless_pcm_stream_validation": {"total_samples": 19200000},
             "listening_copy": {"path": self.repo_path(self.audio), "sha256": self.sha(self.audio)}})
         validation = self.write("production/render-validation.json", {"technical_assertions_passed": True})
-        self.record = self.write("production/render.json", {"schema": "wavvy.series_local_premix_video.v1",
+        self.record = self.write("production/render.json", {"schema": "wavvy.series_local_premix_video.v1", "video_artwork": artwork["binding"],
             "image": self.ref(image, self.root), "audio": dict(self.ref(self.audio, self.root), cycles_already_in_source=2, extra_repetitions=0),
             "source_manifest": self.ref(mix, self.root), "chapter_entries": self.entries,
             "runs": {"full": {"status": "validated", "exit_code": 0, "sources_unchanged": True,
@@ -273,6 +276,42 @@ class PremixedAudioTests(unittest.TestCase):
         result = CliRunner().invoke(cli, ["pack", str(self.series), "-y"])
         self.assertNotEqual(result.exit_code, 0)
         self.assertIn("already mixed/repeated", result.output)
+
+    def test_pending_old_image_contract_cannot_bypass_artwork_rule(self):
+        (self.series / ARTWORK_MANIFEST).unlink()
+        self.archive["image"] = self.ref(self.series / "input/thumb.jpg")
+        self.save_archive()
+        self.assertTrue(any("Video artwork" in error for error in check_premixed_audio(self.series)[2]))
+
+    def test_legacy_uploaded_artwork_requires_retained_render_identity(self):
+        (self.series / ARTWORK_MANIFEST).unlink()
+        self.archive["image"] = self.ref(self.series / "input/thumb.jpg")
+        record = json.loads(self.record.read_text())
+        record["image"] = self.ref(self.series / "input/thumb.jpg", self.root)
+        record["runs"]["full"]["command"][2] = str(self.series / "input/thumb.jpg")
+        self.record.write_text(json.dumps(record), encoding="utf-8")
+        self.archive["render"]["record"] = self.ref(self.record)
+        self.save_archive()
+        (self.series / "concept.md").write_text(self.concept + "\n## Upload Status\n- YouTube upload: completed\n", encoding="utf-8")
+        self.source()
+        self.assertEqual(check_premixed_render(self.series, self.source(), require_csv=True), [])
+        record["runs"]["full"]["output_sha256"] = "0" * 64
+        self.record.write_text(json.dumps(record), encoding="utf-8")
+        self.archive["render"]["record"] = self.ref(self.record)
+        self.save_archive()
+        self.assertTrue(any("legacy uploaded" in error for error in check_premixed_audio(self.series)[2]))
+
+    def test_premix_render_and_csv_bind_separate_image_roles(self):
+        data = self.source()
+        self.csv(thumbnail_path=str(data["image"]))
+        self.assertTrue(any("separate YouTube" in error for error in check_premixed_render(self.series, data, require_csv=True)))
+        self.csv()
+        record = json.loads(self.record.read_text())
+        record.pop("video_artwork")
+        self.record.write_text(json.dumps(record), encoding="utf-8")
+        self.archive["render"]["record"] = self.ref(self.record)
+        self.save_archive()
+        self.assertTrue(any("video artwork manifest" in error for error in check_premixed_render(self.series, self.source())))
 
 
 class CorrectedRepeatPremixTests(unittest.TestCase):

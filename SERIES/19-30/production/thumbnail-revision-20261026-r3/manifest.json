@@ -1,0 +1,324 @@
+{
+  "schema": "wavvy.thumbnail_revision.v3",
+  "revision": "r3",
+  "created_at_utc": "2026-10-26T05:53:20.824421+00:00",
+  "user_requests_exact": [
+    "아니 running mix와 170bpm은 일반 산셰리프로 하고 글로우만 줘.",
+    "Pretendard 최대 최소 굵기로",
+    "글로우는 더 강하고 다양한 컬러로. 로고 글로우도 마찬가지",
+    "로고 외곽에 스트로크 안보이게. 폰트든 로고든 흰 컬러만 있어야해. 글로우 제외",
+    "글로우 제외는 글로우 빼란 말 아님"
+  ],
+  "approved_scene": {
+    "path": "SERIES/19-30/production/thumbnail-drafts/pixel-runner-v5.png",
+    "sha256": "b963bc8b0a3512e43f3b9558b524c0f051acdb228e687e74c50d981a292ed8f1",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "previous_revision": {
+    "manifest": "SERIES/19-30/production/thumbnail-revision-20261026-r2/manifest.json",
+    "review": "SERIES/19-30/production/thumbnail-revision-20261026-r2/isolated-review.md",
+    "telegram_record": "SERIES/19-30/production/thumbnail-revision-20261026-r2/telegram-delivery.json",
+    "preserved_thumb": "SERIES/19-30/production/thumbnail-revision-20261026-r3/previous-thumb-r2.jpg",
+    "sha256": "47c09e51bc26d6f64245ceabca281384da4f92ee4b8d3be6cd238d2b5abb5c04"
+  },
+  "background": {
+    "path": "SERIES/19-30/input/loop.png",
+    "sha256": "349391ef58a643a3e10bf09c8cadd65dbfd5d565676bc9130325b43304422564",
+    "untouched": true,
+    "native_4k": false
+  },
+  "logo": {
+    "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-pixel-generated.png",
+    "sha256": "650544cabd4ca859bd0d08ab89897b907d40775f43e411412e950807fd0cad81",
+    "generation_tool": "built-in image_gen.imagegen",
+    "reference_path": "brand/logo_wavvy.png",
+    "prompt_path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-prompt.txt",
+    "transparent_background": true,
+    "spelling_visual_check": "Wavvy: uppercase W and lowercase a v v y; flowing underline retained",
+    "process": "new generated pixel lettering; preserve generated RGBA, nearest-neighbor scale only; no low-resolution threshold extraction",
+    "placement": "upper left",
+    "xy": [
+      140,
+      100
+    ],
+    "size": [
+      640,
+      349
+    ],
+    "white_composite_asset": "SERIES/19-30/production/thumbnail-revision-20261026-r3/logo-white-r3.png",
+    "core_color": "#FFFFFF",
+    "original_alpha_preserved": true,
+    "preserved_r2_shape_and_placement": true,
+    "glow_updated_per_latest_request": true
+  },
+  "typography": {
+    "family": "Pretendard",
+    "core_color": "#FFFFFF",
+    "rendering": "full-resolution vector font rasterization with 3x supersampling and Lanczos alpha antialiasing; no pixel grid, alpha threshold, or hard outline",
+    "text_exact": [
+      "Running Mix",
+      "170BPM"
+    ],
+    "Running Mix": {
+      "path": "/Users/zenkim_office/Library/Fonts/Pretendard-Thin.otf",
+      "sha256": "635354dcdcc133318be74f9a83cb59d29652c56d463bcd34e20a8cd6e01f3af9",
+      "style": "Thin",
+      "weight": 100,
+      "font_size": 190,
+      "xy": [
+        140,
+        1430
+      ],
+      "size": [
+        984,
+        175
+      ]
+    },
+    "170BPM": {
+      "path": "/Users/zenkim_office/Library/Fonts/Pretendard-Black.otf",
+      "sha256": "94628b0bcea8936b6e5c30d98d685eb9bbaffb0fe2ed255542ecc656c248e021",
+      "style": "Black",
+      "weight": 900,
+      "font_size": 468,
+      "xy": [
+        140,
+        1640
+      ],
+      "size": [
+        1858,
+        341
+      ]
+    },
+    "synthetic_weight": false,
+    "ordinary_sans_copy_only_logo_pixel": true
+  },
+  "glow": {
+    "colors": [
+      "cyan",
+      "hot pink",
+      "violet",
+      "electric blue"
+    ],
+    "radii": [
+      140,
+      70,
+      32,
+      14
+    ],
+    "peak_alpha_per_halo": [
+      100,
+      150,
+      190,
+      210
+    ],
+    "spatial_hue_crossovers": true,
+    "method": "smooth multi-radius Gaussian colored bloom with screen blend, pure-white font/logo cores above all light",
+    "applied_to": [
+      "Wavvy logo",
+      "Running Mix",
+      "170BPM"
+    ],
+    "pixel_outline": false,
+    "stroke_width": 0,
+    "dark_keyline": false
+  },
+  "references": [
+    {
+      "path": "SERIES/07-00/input/thumb.psd",
+      "jpg_path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "PSD layer pixel bounds; current JPG/composite compared",
+      "jpg_composite_mean_absolute_difference_rgb": [
+        0.5746176469283064,
+        0.400076215453432,
+        0.7426638465839501
+      ],
+      "elements": [
+        {
+          "layer": "180BPM",
+          "bbox": [
+            90,
+            1081,
+            1381,
+            1324
+          ],
+          "normalized_bbox": [
+            0.035545023696682464,
+            0.7591292134831461,
+            0.5454186413902053,
+            0.9297752808988764
+          ],
+          "height_ratio": 0.17064606741573032,
+          "width_ratio": 0.5098736176935229
+        },
+        {
+          "layer": "Running Mix",
+          "bbox": [
+            102,
+            940,
+            728,
+            1055
+          ],
+          "normalized_bbox": [
+            0.04028436018957346,
+            0.6601123595505618,
+            0.28751974723538704,
+            0.7408707865168539
+          ],
+          "height_ratio": 0.08075842696629214,
+          "width_ratio": 0.24723538704581358
+        }
+      ]
+    },
+    {
+      "path": "SERIES/17-00/input/thumb.jpg",
+      "sha256": "a548be6c68bd7f6f8d6bcc8cbcb432b3ac4f8fc64b2a96a20ccb0b430fceadda",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "near-white pixel bounds in isolated dark-background regions",
+      "elements": [
+        {
+          "element": "AUTUMN",
+          "bbox": [
+            74,
+            538,
+            850,
+            666
+          ],
+          "normalized_bbox": [
+            0.029225908372827805,
+            0.37780898876404495,
+            0.33570300157977884,
+            0.46769662921348315
+          ]
+        },
+        {
+          "element": "WALK",
+          "bbox": [
+            72,
+            725,
+            610,
+            853
+          ],
+          "normalized_bbox": [
+            0.02843601895734597,
+            0.5091292134831461,
+            0.24091627172195892,
+            0.5990168539325843
+          ]
+        },
+        {
+          "element": "Wavvy logo, excluding time digits",
+          "bbox": [
+            58,
+            39,
+            436,
+            260
+          ],
+          "normalized_bbox": [
+            0.022906793048973143,
+            0.027387640449438203,
+            0.1721958925750395,
+            0.18258426966292135
+          ]
+        }
+      ]
+    }
+  ],
+  "font_precedent": {
+    "source": "SERIES/07-00/input/thumb.psd",
+    "Running Mix": "Pretendard-Thin",
+    "previous_bpm": "Pretendard-ExtraBold",
+    "latest_override": "170BPM uses actual Pretendard-Black weight900 per user request; Running Mix uses actual Thin100"
+  },
+  "bpm_copy_is_user_requested_not_audio_conversion_completion": true,
+  "outputs": [
+    {
+      "path": "SERIES/19-30/input/thumb.jpg",
+      "sha256": "357cf1812ae79d03f46310f4989dc877998ec668a04df42bd4dd06e652aa0234",
+      "bytes": 1820400,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r3/thumb-r3.jpg",
+      "sha256": "357cf1812ae79d03f46310f4989dc877998ec668a04df42bd4dd06e652aa0234",
+      "bytes": 1820400,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r3/thumb-master.png",
+      "sha256": "4697c15280cf10d19025f9423b64022de9d83a21f29db357a5140dc7d1dcbea7",
+      "bytes": 3541627,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r3/thumb-preview-960.png",
+      "sha256": "f139ef2fbfc72e7c7df53fe8708d0e2ea1a7b01287a6063a7d57cf84e5b68f77",
+      "bytes": 862361,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r3/thumb-phone-320.png",
+      "sha256": "cc8192c4de3d0398103620a71581c2122543d787ea5148db4856c71db7bc6c20",
+      "bytes": 129810,
+      "size": [
+        320,
+        180
+      ]
+    }
+  ],
+  "jpeg": {
+    "quality": 86,
+    "bytes": 1820400,
+    "subsampling": 0
+  },
+  "validation": {
+    "loop_unchanged": true,
+    "r2_backup_matches": true,
+    "logo_source_unchanged": true,
+    "actual_font_weights": [
+      100,
+      900
+    ],
+    "title_antialias_levels": 256,
+    "bpm_antialias_levels": 256,
+    "full_visual": "passed: white body without outline, ordinary Thin/Black sans copy and pixel logo; stronger multicolor soft glow; subject and text clear",
+    "phone_visual": "checked from actual final JPEG at320x180: 170BPM and Wavvy clear; Thin100 Running Mix readable with intentionally fine strokes"
+  },
+  "review_status": {
+    "status": "CLEAN",
+    "confirmed_critical_high": 0,
+    "record": "SERIES/19-30/production/thumbnail-revision-20261026-r3/isolated-review.md",
+    "controller_full_and_phone_confirmed": true
+  },
+  "telegram_delivery": {
+    "status": "sent_verified",
+    "record": "SERIES/19-30/production/thumbnail-revision-20261026-r3/telegram-delivery.json",
+    "method": "sendDocument",
+    "message_id": 53713,
+    "chat_type": "private",
+    "document_file_name": "thumb.jpg",
+    "document_file_size": 1820400
+  }
+}

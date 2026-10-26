@@ -1,0 +1,22 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Blue Current" [ref=e600]
+  - button "Close" [ref=e601]
+  - image "Blue Current"
+  - button "Upload" [ref=e602]
+  - button "Create" [ref=e603]
+  - button "Animate" [ref=e604]
+  - text: "Allow comments"
+  - switch [ref=e605] [checked]
+  - text: "Allow remix"
+  - switch [ref=e606] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e607]
+  - button "Edit caption, lyrics and styles" [ref=e608]
+  - button "Save" [ref=e609] [disabled]
+  - button "Publish" [ref=e610] [disabled]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

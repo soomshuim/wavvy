@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "scope": "source-evidence only; no image/render/upload verdict",
+  "archive_source_refs": {
+    "schema": "wavvy.final_integrated_premixed_audio.v1",
+    "raw_prompt_status": "unverified",
+    "repeat_count": 2,
+    "additional_repeats": 0,
+    "selection_basis": {
+      "path": "production/capture-analysis-20261026/sequence.json",
+      "sha256": "99725b2fc3c2bdc76daf22378e2464de43c33bf131cae601aa9fb30425340709"
+    },
+    "capture_manifest": {
+      "path": "production/capture-analysis-20261026/capture-manifest.json",
+      "sha256": "b0289529f00950dca325703a5278c4fcf5e347e461abe61e1c053b18e3447ee9"
+    }
+  },
+  "mix_manifest": {
+    "path": "production/mix-160-20261026/manifest.json",
+    "sha256": "1f291a9d734ad31857f8b70810de5bd4cdec0e07e4f4de7ac1de580edbd560ee"
+  },
+  "sources": 20,
+  "rate": 48000,
+  "samples": 318568444,
+  "entries": 40,
+  "transitions": 39,
+  "audio_ref": {
+    "path": "SERIES/19-30/output/mix-160-20261026/continuous-mix-1930-160-repeat2.m4a",
+    "sha256": "35aa3d44f9c7d50e0a994664e819c3ae34ce9dbe7aa6fbcb098e69c7c7b9f0f7"
+  },
+  "elapsed_seconds": 5.766581666015554,
+  "changed_code_refs": [
+    {
+      "path": "wavvy_harness/integrated_premix.py",
+      "sha256": "1a1939acc81f9667c1fc77f8d25f5264b52057e6a69f3073063d326ec33ef2ce"
+    },
+    {
+      "path": "wavvy_harness/premixed_audio.py",
+      "sha256": "0ba337bf0277ba40b7d68907af58e4925f3f9be1cabc31af4e0adf6d2845afa5"
+    },
+    {
+      "path": "tests/test_integrated_premix.py",
+      "sha256": "f4c4c85de4c5792027ce782c4633e9c6662f1964e4db2ea84b42b76bdc98dafb"
+    }
+  ]
+}

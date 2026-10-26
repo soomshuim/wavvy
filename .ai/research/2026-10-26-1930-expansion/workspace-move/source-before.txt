@@ -1,0 +1,180 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=default]
+- link "Suno logo" [ref=e1]
+- button "Collapse sidebar" [ref=e2]
+- link "Home" [ref=e3]
+- link "Explore" [ref=e4]
+- link "Create" [ref=e5]
+- link "Studio" [ref=e6]
+- link "Library" [ref=e7]
+- link "wavvy24 wavvy24" [ref=e8]
+- button "Profile menu button" [ref=e9]
+- link "Earn Credits" [ref=e10]
+- link "Labs" [ref=e11]
+- button "Notifications" [ref=e12]
+- button "More" [ref=e13]
+- link "Upgrade to Premier" [ref=e14]
+- tablist "What to create":
+  - tab "Songs" [ref=e128] [selected]
+  - tab "Speech" [ref=e129]
+  - tab "Sounds" [ref=e130]
+- tablist "Create form mode":
+  - tab "Simple" [ref=e131]
+  - tab "Advanced" [ref=e132] [selected]
+- button "Credits remaining: 1,216" [ref=e622]: "1.2k"
+- button "v6" [ref=e134]
+- generic [ref=e156] [scrollable]:
+  - button "Add audio - Browse, upload, or record audio" [ref=e135]: "Audio"
+  - button "Add Voice" [ref=e136]: "Voice"
+  - button "Add inspiration from a playlist" [ref=e137]: "Inspo"
+  - button "Lyrics" [ref=e157]
+  - button "Undo" [ref=e158] [disabled]
+  - button "Redo" [ref=e159] [disabled]
+  - button "New draft" [ref=e160]
+  - button "Saved lyrics" [ref=e161]
+  - button "Open full screen lyrics editor" [ref=e162]
+  - status
+  - textbox "Lyrics editor" [ref=e163]
+  - text: "Start writing lyrics, or leave this empty for instrumental When text is selected, press Shift+Enter to move to the selection actions.0 of 5000 characters used."
+  - status
+  - button "Help me write lyrics" [ref=e164]
+  - button "Styles" [ref=e138]
+  - button "View saved style prompts" [ref=e139]
+  - textbox "gagaku, memphis phonk, subtle electronic elements, claves, dreamy" [ref=e165] [placeholder="gagaku, memphis phonk, subtle electronic elements, claves, dreamy"]
+  - generic [ref=e166] [scrollable]:
+    - button "View saved style prompts" [ref=e167]
+    - button "Personalize style prompt to match your taste" [ref=e141]
+    - button "Refresh recommended styles" [ref=e168]
+    - button "Add style: gagaku" [ref=e169]: "gagaku"
+    - button "Add style: memphis phonk" [ref=e170]: "memphis phonk"
+    - button "Add style: subtle electronic elements" [ref=e171]: "subtle electronic elements"
+    - button "Add style: claves" [ref=e172]: "claves"
+    - button "Add style: dreamy" [ref=e173]: "dreamy"
+    - button "Add style: rock'n roll" [ref=e174]: "rock'n roll"
+    - button "Add style: catchy bassline" [ref=e175]: "catchy bassline"
+    - button "Add style: bluesy" [ref=e176]: "bluesy"
+    - button "Add style: clásico" [ref=e177]: "clásico"
+    - button "Add style: ambient electronica" [ref=e178]: "ambient electronica"
+    - button "Add style: cowbells" [ref=e179]: "cowbells"
+    - button "Add style: drill beat" [ref=e180]: "drill beat"
+    - button "Add style: c major" [ref=e181]: "c major"
+    - button "Add style: groove rock" [ref=e182]: "groove rock"
+    - button "Add style: glissando" [ref=e183]: "glissando"
+    - button "Add style: harmonized voices" [ref=e184]: "harmonized voices"
+    - button "Add style: powerful piano" [ref=e185]: "powerful piano"
+    - button "Add style: trap beat" [ref=e186]: "trap beat"
+    - button "Add style: cinematic pads" [ref=e187]: "cinematic pads"
+    - button "Add style: grunge metal" [ref=e188]: "grunge metal"
+  - button "More Options" [ref=e143]
+  - textbox "Song Title (Optional)" [ref=e144] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "My Workspace" [ref=e145]
+- button "Clear all form inputs" [ref=e146]
+- button "Create song" [ref=e147] [disabled]: "Create"
+- separator
+- button "Workspaces" [ref=e647]
+- text: "My Workspace"
+- button "Share" [ref=e648]
+- textbox "Search clips" [ref=e649] [placeholder="Search"]
+- combobox "Filters (3)" [ref=e650]
+- combobox "New" [ref=e651]
+- combobox "View: List" [ref=e652]: "List"
+- button "Previous page" [ref=e653] [disabled]
+- textbox "Current page number" [ref=e654]: "1"
+- button "Next page" [ref=e655]
+- table:
+  - generic [ref=e656] [scrollable]:
+    - rowgroup:
+      - region:
+        - heading "Today" [level=3]
+        - group "Faded Polaroid":
+          - button "Select clip" [ref=e657]
+          - button "Play Faded Polaroid" [ref=e658]: "Faded Polaroid artwork 3:33"
+          - link "Faded Polaroid" [ref=e659]
+          - text: "V6 COVER Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet b…[+522 chars]"
+          - button "Like clip" [ref=e660]
+          - button "Dislike clip" [ref=e661]
+          - button "Share clip" [ref=e662]: "Share"
+          - button "More options" [ref=e663]
+        - group "Warm Pixels":
+          - button "Play Warm Pixels" [ref=e664]: "Warm Pixels artwork 3:20"
+          - link "Warm Pixels" [ref=e665]
+          - text: "V6 COVER Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet b…[+522 chars]"
+          - button "Like clip" [ref=e666]
+          - button "Dislike clip" [ref=e667]
+          - button "Share clip" [ref=e668]: "Share"
+          - button "More options" [ref=e669]
+        - group "Small Satellites":
+          - button "Play Small Satellites" [ref=e670]: "Small Satellites artwork 3:30"
+          - link "Small Satellites" [ref=e671]
+          - text: "V6 COVER Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet b…[+522 chars]"
+          - button "Like clip" [ref=e672]
+          - button "Dislike clip" [ref=e673]
+          - button "Share clip" [ref=e674]: "Share"
+          - button "More options" [ref=e675]
+        - group "Still a Spark":
+          - button "Play Still a Spark" [ref=e676]: "Still a Spark artwork 3:36"
+          - link "Still a Spark" [ref=e677]
+          - text: "V6 Bittersweet electronica at a steady 125 BPM, instrumental, Begin with a soft digital keyboard striking one identical pitch at even intervals for eight bars, …[+503 chars]"
+          - button "Like clip" [ref=e678]
+          - button "Dislike clip" [ref=e679]
+          - button "Share clip" [ref=e680]: "Share"
+          - button "More options" [ref=e681]
+        - group "After The Rain":
+          - button "Play After The Rain" [ref=e682]: "After The Rain artwork 2:48"
+          - link "After The Rain" [ref=e683]
+          - text: "V6 Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet bass an…[+547 chars]"
+          - button "Like clip" [ref=e684]
+          - button "Dislike clip" [ref=e685]
+          - button "Share clip" [ref=e686]: "Share"
+          - button "More options" [ref=e687]
+      - region:
+        - heading "Yesterday" [level=3]
+        - group "Pass It On":
+          - button "Play Pass It On" [ref=e688]: "Pass It On artwork 4:19"
+          - link "Pass It On" [ref=e689]
+          - text: "V6 Cinematic K-pop electropop anthem, powerful female lead with trio harmonies, 123 BPM, rolling 12/8 triplet groove, Intimate low-register verses, rising pre-c…[+1174 chars]"
+          - button "Like clip" [ref=e690]
+          - button "Dislike clip" [ref=e691]
+          - button "Share clip" [ref=e692]: "Share"
+          - button "Unpublish clip" [ref=e693]: "Published"
+          - button "More options" [ref=e694]
+    - text: "6 songs"
+- button [ref=e355]
+- button "1" [ref=e356]
+- button "0" [ref=e357]
+- link "0" [ref=e358]
+- button [ref=e359]
+- heading "Night Steps" [level=3]:
+  - link "Night Steps" [ref=e555]
+- button "Add a Caption" [ref=e361]
+- button "Remix/Edit" [ref=e362]
+- text: "Styles electronica, breakbeat, 16-bit"
+- button "Copy styles to clipboard" [ref=e363]
+- text: "Variety  Normal"
+- button "Show more" [ref=e364]
+- text: "[Instrumental]"
+- button "Copy lyrics to clipboard" [ref=e365]
+- text: "47m ago"
+- link "Playbar: Title for In Da Dream" [ref=e108]
+- link "Playbar: Title for In Da Dream" [ref=e109]: "In Da Dream"
+- link "Playbar: Artist for In Da Dream" [ref=e110]: "Wavvy"
+- button "Playbar: Toggle shuffle button" [ref=e111]
+- button "Playbar: Previous Song button" [ref=e112]
+- button "Playbar: Play button" [ref=e113]
+- button "Playbar: Next Song button" [ref=e114]
+- button "Playbar: Toggle repeat button" [ref=e115]
+- text: "0:00"
+- textbox "Playback progress" [ref=e116] [disabled]: "0"
+- text: "3:57"
+- button "Queue" [ref=e117]
+- button "Playbar: Like" [ref=e118]
+- button "Playbar: Dislike" [ref=e119]
+- link "Playbar: Comment" [ref=e120]
+- button "Playbar: Share" [ref=e121]
+- button "More options" [ref=e122]
+- button "Playbar: Mute" [ref=e123]
+- button "Playbar: Toggle song details panel" [ref=e124]
+- region "Bottom notifications" [ref=e125]
+- region "Top notifications" [ref=e126]
+- region "Bottom edge notifications" [ref=e127]

@@ -1,0 +1,17 @@
+{
+  "schema": "wavvy.video_artwork_review.v1",
+  "image": {
+    "path": "input/video-background.png",
+    "sha256": "8c8a7583db186719cd9f07f13b1756299096a69be12049821609bb1f516bf78e"
+  },
+  "method": "view_image",
+  "reviewer": "/root (controller), /root/wish_synthesis (copy verification)",
+  "reviewed_at": "2026-10-26T08:11:12.531184+00:00",
+  "evidence": "Controller directly viewed the preserved r4 source and confirmed the Wavvy logo only. Worker also viewed that source with view_image and verified input/video-background.png is a byte-identical3840x2160 copy. The image contains the upper-left Wavvy logo, pixel runner and generated scene; no Running Mix, title or BPM typography. User thumb.jpg remains the separate YouTube cover.",
+  "observations": {
+    "wavvy_logo_present": true,
+    "title_text_present": false,
+    "bpm_text_present": false,
+    "other_overlay_text_present": false
+  }
+}

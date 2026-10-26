@@ -1,0 +1,872 @@
+{
+  "schema": "wavvy.output_model_alias_diagnosis.v1",
+  "order": 5,
+  "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+  "title": "Glass Horizon",
+  "raw_model_bpm": 170.2127659574468,
+  "raw_model_family": "full~170",
+  "model_interval_counts": {
+    "full_quarter~170": 261,
+    "half_rate~85": 0,
+    "subdivision~340": 0
+  },
+  "other_interval_count": 41,
+  "model_interval_seconds_p05_p50_p95": [
+    0.30000000000001137,
+    0.35999999999999943,
+    0.3999999999999986
+  ],
+  "raw_model_phase_residual_ms_p10_p50_p90": [
+    -37.808823529416706,
+    -2.5147058823535016,
+    12.779411764704923
+  ],
+  "model_peak_fraction_within40ms_of170_grid": 0.9174917491749175,
+  "source_output_attack_lag_p90_ms": 2.0,
+  "independent_mid_high_ac_bpm_median": 170.00208496556692,
+  "windows_20s": [
+    {
+      "seconds": [
+        6.09075,
+        26.09075
+      ],
+      "model_beat_count": 57,
+      "model_interval_seconds_p10_p50_p90": [
+        0.33999999999999986,
+        0.35999999999999943,
+        0.370000000000001
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -20.161764705883016,
+        -1.3382352941173903,
+        9.249999999999902
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.9824561403508771,
+      "independent_mid_high_ac_bpm": {
+        "mid": 169.83722120328812,
+        "high": 169.97432649361775
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 212.1734619140625,
+            "relative_power": 0.11839602935775942
+          },
+          {
+            "bpm": 84.4573974609375,
+            "relative_power": 0.054294058991220216
+          },
+          {
+            "bpm": 127.25830078125,
+            "relative_power": 0.03672165903511631
+          },
+          {
+            "bpm": 206.9091796875,
+            "relative_power": 0.01696438539894434
+          },
+          {
+            "bpm": 119.0185546875,
+            "relative_power": 0.01628158631076965
+          },
+          {
+            "bpm": 173.9501953125,
+            "relative_power": 0.01528584864833988
+          },
+          {
+            "bpm": 105.0567626953125,
+            "relative_power": 0.014289998530741144
+          },
+          {
+            "bpm": 199.127197265625,
+            "relative_power": 0.01420401469686668
+          }
+        ],
+        "high": [
+          {
+            "bpm": 84.9151611328125,
+            "relative_power": 0.0649063535056574
+          },
+          {
+            "bpm": 128.173828125,
+            "relative_power": 0.06386798812225963
+          },
+          {
+            "bpm": 212.860107421875,
+            "relative_power": 0.04435709184931213
+          },
+          {
+            "bpm": 170.5169677734375,
+            "relative_power": 0.027520098793545812
+          },
+          {
+            "bpm": 192.0318603515625,
+            "relative_power": 0.024665243639447755
+          },
+          {
+            "bpm": 63.629150390625,
+            "relative_power": 0.020165520142595428
+          },
+          {
+            "bpm": 199.5849609375,
+            "relative_power": 0.019986409895915658
+          },
+          {
+            "bpm": 118.3319091796875,
+            "relative_power": 0.017146539133642485
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        16.09075,
+        36.09075
+      ],
+      "model_beat_count": 57,
+      "model_interval_seconds_p10_p50_p90": [
+        0.3299999999999983,
+        0.35999999999999943,
+        0.370000000000001
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -31.691176470590193,
+        -1.3382352941207765,
+        9.72058823529354
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.9649122807017544,
+      "independent_mid_high_ac_bpm": {
+        "mid": 169.98506835495652,
+        "high": 169.9908225427197
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 170.2880859375,
+            "relative_power": 0.06759355243994271
+          },
+          {
+            "bpm": 214.0045166015625,
+            "relative_power": 0.03726883109111791
+          },
+          {
+            "bpm": 84.9151611328125,
+            "relative_power": 0.034632771747705175
+          },
+          {
+            "bpm": 127.0294189453125,
+            "relative_power": 0.03042122654903222
+          },
+          {
+            "bpm": 199.3560791015625,
+            "relative_power": 0.011710836739836982
+          },
+          {
+            "bpm": 106.201171875,
+            "relative_power": 0.008317104079502376
+          },
+          {
+            "bpm": 207.1380615234375,
+            "relative_power": 0.007812877865270068
+          },
+          {
+            "bpm": 184.478759765625,
+            "relative_power": 0.0070444050349164865
+          }
+        ],
+        "high": [
+          {
+            "bpm": 169.6014404296875,
+            "relative_power": 0.0546650356039634
+          },
+          {
+            "bpm": 84.9151611328125,
+            "relative_power": 0.019471030491465355
+          },
+          {
+            "bpm": 211.944580078125,
+            "relative_power": 0.016221716735520225
+          },
+          {
+            "bpm": 127.4871826171875,
+            "relative_power": 0.004104628314843115
+          },
+          {
+            "bpm": 105.28564453125,
+            "relative_power": 0.0028544019293805897
+          },
+          {
+            "bpm": 193.17626953125,
+            "relative_power": 0.002532305716636788
+          },
+          {
+            "bpm": 62.0269775390625,
+            "relative_power": 0.0016250247478008188
+          },
+          {
+            "bpm": 218.1243896484375,
+            "relative_power": 0.0014478259506843305
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        26.09075,
+        46.09075
+      ],
+      "model_beat_count": 57,
+      "model_interval_seconds_p10_p50_p90": [
+        0.3399999999999963,
+        0.35999999999999943,
+        0.37999999999999723
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -34.514705882355926,
+        -6.044117647060504,
+        8.07352941176161
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.9473684210526315,
+      "independent_mid_high_ac_bpm": {
+        "mid": 170.0364447651708,
+        "high": 170.00425943243735
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 171.20361328125,
+            "relative_power": 0.03632647085800719
+          },
+          {
+            "bpm": 213.775634765625,
+            "relative_power": 0.01717645145837548
+          },
+          {
+            "bpm": 84.4573974609375,
+            "relative_power": 0.010292733074541057
+          },
+          {
+            "bpm": 188.8275146484375,
+            "relative_power": 0.00985709981112873
+          },
+          {
+            "bpm": 54.7027587890625,
+            "relative_power": 0.009425616243545838
+          },
+          {
+            "bpm": 162.9638671875,
+            "relative_power": 0.008529165679203001
+          },
+          {
+            "bpm": 206.451416015625,
+            "relative_power": 0.0076801552077491895
+          },
+          {
+            "bpm": 66.6046142578125,
+            "relative_power": 0.007264067001549536
+          }
+        ],
+        "high": [
+          {
+            "bpm": 170.2880859375,
+            "relative_power": 0.03780974822987407
+          },
+          {
+            "bpm": 84.9151611328125,
+            "relative_power": 0.017095711381426435
+          },
+          {
+            "bpm": 213.5467529296875,
+            "relative_power": 0.004744185842456023
+          },
+          {
+            "bpm": 64.544677734375,
+            "relative_power": 0.002732992166862304
+          },
+          {
+            "bpm": 107.8033447265625,
+            "relative_power": 0.0022494626610885774
+          },
+          {
+            "bpm": 99.334716796875,
+            "relative_power": 0.0019059504765026752
+          },
+          {
+            "bpm": 128.4027099609375,
+            "relative_power": 0.0018101464418341124
+          },
+          {
+            "bpm": 187.9119873046875,
+            "relative_power": 0.0015507709669769847
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        36.09075,
+        56.09075
+      ],
+      "model_beat_count": 56,
+      "model_interval_seconds_p10_p50_p90": [
+        0.3399999999999963,
+        0.35999999999999943,
+        0.37999999999999545
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -34.86764705882214,
+        -5.455882352939173,
+        8.661764705882785
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.9464285714285714,
+      "independent_mid_high_ac_bpm": {
+        "mid": 170.08842080671937,
+        "high": 170.00615457308282
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 168.914794921875,
+            "relative_power": 0.06500809330324722
+          },
+          {
+            "bpm": 211.029052734375,
+            "relative_power": 0.027660901761506703
+          },
+          {
+            "bpm": 127.25830078125,
+            "relative_power": 0.020312115009866686
+          },
+          {
+            "bpm": 113.2965087890625,
+            "relative_power": 0.017253444300576223
+          },
+          {
+            "bpm": 93.6126708984375,
+            "relative_power": 0.01337034514967341
+          },
+          {
+            "bpm": 64.544677734375,
+            "relative_power": 0.012173227837696369
+          },
+          {
+            "bpm": 85.3729248046875,
+            "relative_power": 0.01141612108742791
+          },
+          {
+            "bpm": 139.8468017578125,
+            "relative_power": 0.009632723732599468
+          }
+        ],
+        "high": [
+          {
+            "bpm": 169.6014404296875,
+            "relative_power": 0.041153497272837854
+          },
+          {
+            "bpm": 92.926025390625,
+            "relative_power": 0.011801331900428702
+          },
+          {
+            "bpm": 57.9071044921875,
+            "relative_power": 0.0062572240144301555
+          },
+          {
+            "bpm": 86.7462158203125,
+            "relative_power": 0.005794427057413421
+          },
+          {
+            "bpm": 104.5989990234375,
+            "relative_power": 0.005505635736322285
+          },
+          {
+            "bpm": 184.2498779296875,
+            "relative_power": 0.0053143008178184155
+          },
+          {
+            "bpm": 202.789306640625,
+            "relative_power": 0.005082891126100658
+          },
+          {
+            "bpm": 215.8355712890625,
+            "relative_power": 0.004510726870070887
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        46.09075,
+        66.09075
+      ],
+      "model_beat_count": 56,
+      "model_interval_seconds_p10_p50_p90": [
+        0.3200000000000003,
+        0.35999999999999943,
+        0.38000000000000256
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -38.985294117646866,
+        -11.338235294117176,
+        6.897058823529701
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.8928571428571429,
+      "independent_mid_high_ac_bpm": {
+        "mid": 170.15349239213072,
+        "high": 170.00037601849075
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 84.4573974609375,
+            "relative_power": 0.025029711142151682
+          },
+          {
+            "bpm": 51.4984130859375,
+            "relative_power": 0.021991531594459733
+          },
+          {
+            "bpm": 171.20361328125,
+            "relative_power": 0.01871386759805291
+          },
+          {
+            "bpm": 62.9425048828125,
+            "relative_power": 0.018511021962725586
+          },
+          {
+            "bpm": 143.280029296875,
+            "relative_power": 0.017003894731487383
+          },
+          {
+            "bpm": 75.3021240234375,
+            "relative_power": 0.01430197533954887
+          },
+          {
+            "bpm": 212.6312255859375,
+            "relative_power": 0.011080731475945618
+          },
+          {
+            "bpm": 100.9368896484375,
+            "relative_power": 0.010080125244356477
+          }
+        ],
+        "high": [
+          {
+            "bpm": 170.0592041015625,
+            "relative_power": 0.046703043737294364
+          },
+          {
+            "bpm": 214.9200439453125,
+            "relative_power": 0.01206528354007052
+          },
+          {
+            "bpm": 160.21728515625,
+            "relative_power": 0.006630474522507118
+          },
+          {
+            "bpm": 82.1685791015625,
+            "relative_power": 0.006531129772519122
+          },
+          {
+            "bpm": 62.713623046875,
+            "relative_power": 0.005375038606098509
+          },
+          {
+            "bpm": 154.0374755859375,
+            "relative_power": 0.004065453161015491
+          },
+          {
+            "bpm": 127.4871826171875,
+            "relative_power": 0.0032050070780909926
+          },
+          {
+            "bpm": 141.6778564453125,
+            "relative_power": 0.0031201500544359192
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        56.09075,
+        76.09075
+      ],
+      "model_beat_count": 57,
+      "model_interval_seconds_p10_p50_p90": [
+        0.3100000000000023,
+        0.35999999999999943,
+        0.3999999999999915
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -40.63235294117668,
+        -24.86764705882452,
+        14.897058823523658
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.8771929824561403,
+      "independent_mid_high_ac_bpm": {
+        "mid": 170.12027635673792,
+        "high": 170.02595400128
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 85.3729248046875,
+            "relative_power": 0.08047529280592407
+          },
+          {
+            "bpm": 168.45703125,
+            "relative_power": 0.025257649236977136
+          },
+          {
+            "bpm": 212.860107421875,
+            "relative_power": 0.023782480329701153
+          },
+          {
+            "bpm": 74.3865966796875,
+            "relative_power": 0.018657654316021108
+          },
+          {
+            "bpm": 127.4871826171875,
+            "relative_power": 0.015866288026149238
+          },
+          {
+            "bpm": 52.642822265625,
+            "relative_power": 0.013678834287971883
+          },
+          {
+            "bpm": 139.16015625,
+            "relative_power": 0.012819980514779547
+          },
+          {
+            "bpm": 143.5089111328125,
+            "relative_power": 0.01233632597139532
+          }
+        ],
+        "high": [
+          {
+            "bpm": 169.830322265625,
+            "relative_power": 0.0644156438393469
+          },
+          {
+            "bpm": 150.146484375,
+            "relative_power": 0.010408025883426953
+          },
+          {
+            "bpm": 161.590576171875,
+            "relative_power": 0.0043855989526593395
+          },
+          {
+            "bpm": 127.0294189453125,
+            "relative_power": 0.004326172866278759
+          },
+          {
+            "bpm": 89.263916015625,
+            "relative_power": 0.0037633706207662798
+          },
+          {
+            "bpm": 206.6802978515625,
+            "relative_power": 0.003613590817906737
+          },
+          {
+            "bpm": 120.849609375,
+            "relative_power": 0.003297933382841062
+          },
+          {
+            "bpm": 212.860107421875,
+            "relative_power": 0.003168019723633338
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        66.09075,
+        86.09075
+      ],
+      "model_beat_count": 58,
+      "model_interval_seconds_p10_p50_p90": [
+        0.30000000000001137,
+        0.35999999999999943,
+        0.38800000000000234
+      ],
+      "model_16_interval_bpm_median": 170.51563564776268,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -37.80882352941737,
+        -0.1617647058865801,
+        17.485294117633977
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.9482758620689655,
+      "independent_mid_high_ac_bpm": {
+        "mid": 169.90548873358864,
+        "high": 170.03835205036472
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 85.8306884765625,
+            "relative_power": 0.0449329340599898
+          },
+          {
+            "bpm": 134.8114013671875,
+            "relative_power": 0.031213342922034995
+          },
+          {
+            "bpm": 219.9554443359375,
+            "relative_power": 0.022315009612150834
+          },
+          {
+            "bpm": 168.6859130859375,
+            "relative_power": 0.022080736914437075
+          },
+          {
+            "bpm": 74.8443603515625,
+            "relative_power": 0.021528960847212307
+          },
+          {
+            "bpm": 211.029052734375,
+            "relative_power": 0.016209839481353877
+          },
+          {
+            "bpm": 56.9915771484375,
+            "relative_power": 0.014073106331022482
+          },
+          {
+            "bpm": 198.211669921875,
+            "relative_power": 0.011769088957392409
+          }
+        ],
+        "high": [
+          {
+            "bpm": 170.9747314453125,
+            "relative_power": 0.07211823352790771
+          },
+          {
+            "bpm": 81.7108154296875,
+            "relative_power": 0.009313622383948587
+          },
+          {
+            "bpm": 197.5250244140625,
+            "relative_power": 0.008629751783920513
+          },
+          {
+            "bpm": 214.4622802734375,
+            "relative_power": 0.007890413247314149
+          },
+          {
+            "bpm": 132.293701171875,
+            "relative_power": 0.006465636245370165
+          },
+          {
+            "bpm": 67.9779052734375,
+            "relative_power": 0.006233257977000392
+          },
+          {
+            "bpm": 219.4976806640625,
+            "relative_power": 0.006213794271440455
+          },
+          {
+            "bpm": 94.29931640625,
+            "relative_power": 0.00581119055728729
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        76.09075,
+        96.09075
+      ],
+      "model_beat_count": 58,
+      "model_interval_seconds_p10_p50_p90": [
+        0.29999999999999716,
+        0.35999999999999943,
+        0.4000000000000057
+      ],
+      "model_16_interval_bpm_median": 170.2127659574468,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -45.22058823530088,
+        -0.750000000005524,
+        15.838235294111046
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.8103448275862069,
+      "independent_mid_high_ac_bpm": {
+        "mid": 169.95486865429575,
+        "high": 170.10103534836816
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 213.775634765625,
+            "relative_power": 0.07695226650699805
+          },
+          {
+            "bpm": 102.081298828125,
+            "relative_power": 0.05697937917384117
+          },
+          {
+            "bpm": 129.08935546875,
+            "relative_power": 0.04574715638721501
+          },
+          {
+            "bpm": 89.9505615234375,
+            "relative_power": 0.042594007403480946
+          },
+          {
+            "bpm": 121.76513671875,
+            "relative_power": 0.04205801709601981
+          },
+          {
+            "bpm": 141.448974609375,
+            "relative_power": 0.03810245465955733
+          },
+          {
+            "bpm": 161.590576171875,
+            "relative_power": 0.02938653821414662
+          },
+          {
+            "bpm": 153.5797119140625,
+            "relative_power": 0.021183103285946973
+          }
+        ],
+        "high": [
+          {
+            "bpm": 169.1436767578125,
+            "relative_power": 0.04409294374216066
+          },
+          {
+            "bpm": 190.6585693359375,
+            "relative_power": 0.03421767381715682
+          },
+          {
+            "bpm": 130.0048828125,
+            "relative_power": 0.02975167506040633
+          },
+          {
+            "bpm": 107.574462890625,
+            "relative_power": 0.027756606704455858
+          },
+          {
+            "bpm": 186.767578125,
+            "relative_power": 0.0243731735582736
+          },
+          {
+            "bpm": 90.63720703125,
+            "relative_power": 0.020880311164347836
+          },
+          {
+            "bpm": 218.5821533203125,
+            "relative_power": 0.018790386511636205
+          },
+          {
+            "bpm": 65.460205078125,
+            "relative_power": 0.01831195857219237
+          }
+        ]
+      }
+    },
+    {
+      "seconds": [
+        86.09075,
+        106.09075
+      ],
+      "model_beat_count": 57,
+      "model_interval_seconds_p10_p50_p90": [
+        0.30999999999999517,
+        0.35999999999999943,
+        0.3999999999999986
+      ],
+      "model_16_interval_bpm_median": 169.6113074204948,
+      "model_phase_residual_ms_p10_p50_p90": [
+        -44.161764705887244,
+        -0.16176470588794012,
+        15.602941176461686
+      ],
+      "model_peak_fraction_within40ms_of170_grid": 0.8245614035087719,
+      "independent_mid_high_ac_bpm": {
+        "mid": 169.94505277754598,
+        "high": 170.05495067653524
+      },
+      "independent_attack_fft_peaks_50_to220_bpm": {
+        "mid": [
+          {
+            "bpm": 139.3890380859375,
+            "relative_power": 0.036679669315388096
+          },
+          {
+            "bpm": 84.9151611328125,
+            "relative_power": 0.018698177510570853
+          },
+          {
+            "bpm": 71.1822509765625,
+            "relative_power": 0.011732391247262717
+          },
+          {
+            "bpm": 108.94775390625,
+            "relative_power": 0.010707444804515864
+          },
+          {
+            "bpm": 130.2337646484375,
+            "relative_power": 0.010335832845086022
+          },
+          {
+            "bpm": 61.34033203125,
+            "relative_power": 0.010199521551269323
+          },
+          {
+            "bpm": 173.03466796875,
+            "relative_power": 0.00987008908447308
+          },
+          {
+            "bpm": 177.6123046875,
+            "relative_power": 0.009725379650460267
+          }
+        ],
+        "high": [
+          {
+            "bpm": 194.549560546875,
+            "relative_power": 0.0035767503593932613
+          },
+          {
+            "bpm": 88.80615234375,
+            "relative_power": 0.003248682925163749
+          },
+          {
+            "bpm": 121.9940185546875,
+            "relative_power": 0.00294408823457397
+          },
+          {
+            "bpm": 94.9859619140625,
+            "relative_power": 0.0028781357667762276
+          },
+          {
+            "bpm": 135.498046875,
+            "relative_power": 0.002617102817198073
+          },
+          {
+            "bpm": 184.7076416015625,
+            "relative_power": 0.0022932777163796225
+          },
+          {
+            "bpm": 80.7952880859375,
+            "relative_power": 0.0021369993599687567
+          },
+          {
+            "bpm": 203.2470703125,
+            "relative_power": 0.0019822298462928273
+          }
+        ]
+      }
+    }
+  ],
+  "direct_listening": false,
+  "interpretation_rule": "Raw model BPM remains raw. Extra/subdivision peaks and missed/half intervals can change16-interval BPM while independent AC/FFT and corresponding attack locations still support170. Mixed evidence stays uncertain; no automatic re-render or forced doubling.",
+  "limitations": [
+    "FFT peaks can be harmonics or subdivisions, not certified beats.",
+    "Phase residual refers to the inferred source quarter grid, not confirmed first downbeats."
+  ]
+}

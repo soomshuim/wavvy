@@ -1,0 +1,30 @@
+{
+  "integrated_lufs": -14.63,
+  "true_peak_dbtp": 0.03,
+  "loudness_range_lu": 4.4,
+  "raw": {
+    "input_i": "-14.63",
+    "input_tp": "0.03",
+    "input_lra": "4.40",
+    "input_thresh": "-24.66",
+    "output_i": "-14.10",
+    "output_tp": "-1.50",
+    "output_lra": "4.40",
+    "output_thresh": "-24.12",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-i",
+    "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+    "-af",
+    "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+    "-f",
+    "null",
+    "-"
+  ],
+  "source_sha256": "741c0b4d4693447fd60a823c40af132adf1ddd09af1a84eca063dd4a2dc2ccb7"
+}

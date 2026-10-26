@@ -1,0 +1,22 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Pocket Sunrise" [ref=e574] [focused]
+  - button "Close" [ref=e575]
+  - image "Pocket Sunrise"
+  - button "Upload" [ref=e576]
+  - button "Create" [ref=e577]
+  - button "Animate" [ref=e578]
+  - text: "Allow comments"
+  - switch [ref=e579] [checked]
+  - text: "Allow remix"
+  - switch [ref=e580] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e581]
+  - button "Edit caption, lyrics and styles" [ref=e582]
+  - button "Save" [ref=e583] [disabled]
+  - button "Publish" [ref=e584]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

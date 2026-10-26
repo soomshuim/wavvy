@@ -1,0 +1,89 @@
+{
+  "schema": "wavvy.capture_170_pilot.v1",
+  "order": 20,
+  "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+  "title": "Dancing Tears",
+  "passed": true,
+  "block": {
+    "block": 20,
+    "source_beat_indices": [
+      320,
+      336
+    ],
+    "source_anchors_seconds": [
+      148.688,
+      155.99
+    ],
+    "tempo_factor": 1.2930616581629868,
+    "guard_seconds": 0.45,
+    "source_guard_frames": [
+      7115424,
+      7506720
+    ],
+    "located_block_anchors_seconds": [
+      0.3455,
+      6.004625
+    ],
+    "waveform_correlations": [
+      0.999993137105782,
+      0.9999999909617681
+    ],
+    "waveform_anchor_evidence": [
+      {
+        "method": "full-band",
+        "positions_and_correlations": [
+          [
+            0.3455,
+            0.9999999819329412
+          ],
+          [
+            0.3455,
+            0.9999997762428934
+          ],
+          [
+            0.3455,
+            0.999993137105782
+          ]
+        ]
+      },
+      {
+        "method": "full-band",
+        "positions_and_correlations": [
+          [
+            6.004625,
+            0.9999999994227724
+          ],
+          [
+            6.004625,
+            0.9999999984377423
+          ],
+          [
+            6.004625,
+            0.9999999909617681
+          ]
+        ]
+      }
+    ],
+    "observed_end_error_ms": 12.062499999999865,
+    "render_sha256": "1bde290479bc9ff92b95831de3c26ab9fb21f0015a573f8dc76460576deab318",
+    "ffmpeg_command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-v",
+      "error",
+      "-nostdin",
+      "-n",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/20.wav",
+      "-af",
+      "atrim=start_sample=7115424:end_sample=7506720,asetpts=PTS-STARTPTS,atempo=1.2930616581629868,asetpts=N/SR/TB",
+      "-c:a",
+      "pcm_f32le",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/20/guard-045/block-020.wav"
+    ]
+  },
+  "audio_path": "work/mix-170-20261026/pilots/20/guard-045/block-020.wav",
+  "audio_sha256": "1bde290479bc9ff92b95831de3c26ab9fb21f0015a573f8dc76460576deab318",
+  "elapsed_seconds": 0.280575749988202,
+  "direct_listening": false
+}

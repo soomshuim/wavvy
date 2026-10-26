@@ -1,0 +1,76 @@
+{
+  "transition": {
+    "number": 16,
+    "outgoing_entry": 16,
+    "incoming_entry": 17,
+    "outgoing_order": 16,
+    "incoming_order": 17,
+    "outgoing_cycle": 1,
+    "incoming_cycle": 1,
+    "repeat_boundary_20_to_1": false,
+    "start_sample": 122014878,
+    "end_sample": 122083244,
+    "overlap_samples": 68366,
+    "overlap_seconds": 1.4242916666666667,
+    "grid_phase_residual_samples": 0,
+    "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+    "outgoing_corrected_frames": [
+      6664128,
+      6732494
+    ],
+    "incoming_corrected_frames": [
+      0,
+      68366
+    ],
+    "source0_and_natural_end_retained": true,
+    "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+  },
+  "start_sample": 122025061,
+  "wav_rms_dbfs": -21.85593296418206,
+  "aac_rms_dbfs": -22.29959344462459,
+  "difference_rms_dbfs": -31.958171727173944,
+  "wav_peak_dbfs": -4.509905644103361,
+  "aac_peak_dbfs": -4.552426321035039,
+  "stereo_full_correlation": 0.9501080179770824,
+  "mono_correlation": 0.9399835473905283,
+  "commands": [
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-ss",
+      "2542.188770833333",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+      "-t",
+      "1.000000000000",
+      "-ar",
+      "48000",
+      "-ac",
+      "2",
+      "-f",
+      "f32le",
+      "-"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-ss",
+      "2542.188770833333",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+      "-t",
+      "1.000000000000",
+      "-ar",
+      "48000",
+      "-ac",
+      "2",
+      "-f",
+      "f32le",
+      "-"
+    ]
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "schema": "wavvy.thumbnail_revision.v2",
+  "revision": "r2",
+  "created_at_utc": "2026-10-26T05:40:31.670694+00:00",
+  "latest_request_exact": "로고는 좌측 상단이고 픽셀 퀄리티를 높여야해. 아예 픽셀버전 로고타입을 생성해서 합치는게 낫지 않을까? 글로우 효과는 픽셀이 아니어도 돼. 전혀 글로우 같지 않아. 폰트도 픽셀폰트지만 더 두껍고 가독성 좋은걸로",
+  "previous_revision": {
+    "manifest": "SERIES/19-30/production/thumbnail-final-20261026/manifest.json",
+    "review": "SERIES/19-30/production/thumbnail-final-20261026/isolated-review.md",
+    "telegram_record": "SERIES/19-30/production/thumbnail-final-20261026/telegram-delivery.json",
+    "preserved_thumb": "SERIES/19-30/production/thumbnail-revision-20261026-r2/previous-thumb-r1.jpg",
+    "sha256": "2eee7e97a26fdaff03df1e6681c645bbd1cdcaf023be8cc7408103ab92842c56"
+  },
+  "approved_scene": {
+    "path": "SERIES/19-30/production/thumbnail-drafts/pixel-runner-v5.png",
+    "sha256": "b963bc8b0a3512e43f3b9558b524c0f051acdb228e687e74c50d981a292ed8f1",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "background": {
+    "path": "SERIES/19-30/input/loop.png",
+    "sha256": "349391ef58a643a3e10bf09c8cadd65dbfd5d565676bc9130325b43304422564",
+    "untouched": true,
+    "size": [
+      3840,
+      2160
+    ],
+    "native_4k": false
+  },
+  "logo": {
+    "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-pixel-generated.png",
+    "sha256": "650544cabd4ca859bd0d08ab89897b907d40775f43e411412e950807fd0cad81",
+    "generation_tool": "built-in image_gen.imagegen",
+    "reference_path": "brand/logo_wavvy.png",
+    "prompt_path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-prompt.txt",
+    "transparent_background": true,
+    "spelling_visual_check": "Wavvy: uppercase W and lowercase a v v y; flowing underline retained",
+    "process": "new generated pixel lettering; preserve generated RGBA, nearest-neighbor scale only; no low-resolution threshold extraction",
+    "placement": "upper left",
+    "xy": [
+      140,
+      100
+    ],
+    "size": [
+      640,
+      349
+    ]
+  },
+  "typography": {
+    "font": "Pixelify Sans Bold",
+    "font_path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/fonts/PixelifySans-variable.ttf",
+    "font_sha256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5",
+    "weight_axis": 700,
+    "previous_weight": 500,
+    "bold_nonzero_fill_vs_medium": 1.1672447013487477,
+    "font_source": "https://github.com/google/fonts/tree/main/ofl/pixelifysans",
+    "font_license": "SERIES/19-30/production/thumbnail-revision-20261026-r2/fonts/OFL.txt",
+    "text_exact": [
+      "Running Mix",
+      "170BPM"
+    ],
+    "pixel_grid": [
+      384,
+      216
+    ],
+    "output_scale": 10,
+    "Running Mix": {
+      "xy": [
+        140,
+        1430
+      ],
+      "size": [
+        1130,
+        160
+      ],
+      "font_size_grid": 20
+    },
+    "170BPM": {
+      "xy": [
+        140,
+        1640
+      ],
+      "size": [
+        1860,
+        340
+      ],
+      "font_size_grid": 52
+    }
+  },
+  "glow": {
+    "method": "smooth Gaussian cyan/magenta light bloom composed with screen blend",
+    "blur_radii_full_resolution": [
+      96,
+      60,
+      30,
+      12
+    ],
+    "narrow_contrast_edge_radius": 6,
+    "no_pixel_band_glow": true,
+    "no_rectangular_backing": true
+  },
+  "references": [
+    {
+      "path": "SERIES/07-00/input/thumb.psd",
+      "jpg_path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "PSD layer pixel bounds; current JPG/composite compared",
+      "jpg_composite_mean_absolute_difference_rgb": [
+        0.5746176469283064,
+        0.400076215453432,
+        0.7426638465839501
+      ],
+      "elements": [
+        {
+          "layer": "180BPM",
+          "bbox": [
+            90,
+            1081,
+            1381,
+            1324
+          ],
+          "normalized_bbox": [
+            0.035545023696682464,
+            0.7591292134831461,
+            0.5454186413902053,
+            0.9297752808988764
+          ],
+          "height_ratio": 0.17064606741573032,
+          "width_ratio": 0.5098736176935229
+        },
+        {
+          "layer": "Running Mix",
+          "bbox": [
+            102,
+            940,
+            728,
+            1055
+          ],
+          "normalized_bbox": [
+            0.04028436018957346,
+            0.6601123595505618,
+            0.28751974723538704,
+            0.7408707865168539
+          ],
+          "height_ratio": 0.08075842696629214,
+          "width_ratio": 0.24723538704581358
+        }
+      ]
+    },
+    {
+      "path": "SERIES/17-00/input/thumb.jpg",
+      "sha256": "a548be6c68bd7f6f8d6bcc8cbcb432b3ac4f8fc64b2a96a20ccb0b430fceadda",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "near-white pixel bounds in isolated dark-background regions",
+      "elements": [
+        {
+          "element": "AUTUMN",
+          "bbox": [
+            74,
+            538,
+            850,
+            666
+          ],
+          "normalized_bbox": [
+            0.029225908372827805,
+            0.37780898876404495,
+            0.33570300157977884,
+            0.46769662921348315
+          ]
+        },
+        {
+          "element": "WALK",
+          "bbox": [
+            72,
+            725,
+            610,
+            853
+          ],
+          "normalized_bbox": [
+            0.02843601895734597,
+            0.5091292134831461,
+            0.24091627172195892,
+            0.5990168539325843
+          ]
+        },
+        {
+          "element": "Wavvy logo, excluding time digits",
+          "bbox": [
+            58,
+            39,
+            436,
+            260
+          ],
+          "normalized_bbox": [
+            0.022906793048973143,
+            0.027387640449438203,
+            0.1721958925750395,
+            0.18258426966292135
+          ]
+        }
+      ]
+    }
+  ],
+  "bpm_copy_is_user_requested_not_audio_conversion_completion": true,
+  "time_digits_added": false,
+  "outputs": [
+    {
+      "path": "SERIES/19-30/input/thumb.jpg",
+      "sha256": "47c09e51bc26d6f64245ceabca281384da4f92ee4b8d3be6cd238d2b5abb5c04",
+      "bytes": 1830708,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/thumb-r2.jpg",
+      "sha256": "47c09e51bc26d6f64245ceabca281384da4f92ee4b8d3be6cd238d2b5abb5c04",
+      "bytes": 1830708,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/thumb-master.png",
+      "sha256": "5b68b455b284cbf73306af03b7843fb002ccc14e723dfe6f6175289a902a2726",
+      "bytes": 3529283,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/thumb-preview-960.png",
+      "sha256": "2928f1a8cd4c0f91a1be80a2e95407a1312aa44c85f2a4ae04b4b49758ee968a",
+      "bytes": 866586,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/thumb-phone-320.png",
+      "sha256": "fc0b8c896b011d2dd40600f1d14285cdc83818f15fee851daf89134afd00511e",
+      "bytes": 131086,
+      "size": [
+        320,
+        180
+      ]
+    }
+  ],
+  "jpeg": {
+    "quality": 86,
+    "bytes": 1830708,
+    "subsampling": 0
+  },
+  "validation": {
+    "approved_background_hash_unchanged": true,
+    "r1_backup_hash_matches": true,
+    "full_size_visual": "passed: Wavvy spelling and flowing swash visible at upper left; exact Bold pixel copy at lower left; smooth light bloom; no figure crop or text overlap",
+    "phone_size_visual": "passed at 320x180 from actual final JPEG: logo and both lines readable, subject clear"
+  },
+  "review_status": {
+    "status": "CLEAN",
+    "confirmed_critical_high": 0,
+    "record": "SERIES/19-30/production/thumbnail-revision-20261026-r2/isolated-review.md"
+  },
+  "telegram_delivery": {
+    "record": "SERIES/19-30/production/thumbnail-revision-20261026-r2/telegram-delivery.json",
+    "status": "sent",
+    "method": "sendDocument",
+    "message_id": 53680,
+    "chat_type": "private"
+  }
+}

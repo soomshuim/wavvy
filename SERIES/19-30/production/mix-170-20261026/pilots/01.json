@@ -1,0 +1,88 @@
+{
+  "schema": "wavvy.capture_170_pilot.v1",
+  "order": 1,
+  "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+  "title": "Goodbye",
+  "passed": true,
+  "block": {
+    "block": 10,
+    "source_beat_indices": [
+      160,
+      176
+    ],
+    "source_anchors_seconds": [
+      76.752,
+      84.364
+    ],
+    "tempo_factor": 1.3479574557568663,
+    "source_guard_frames": [
+      3664896,
+      4068672
+    ],
+    "located_block_anchors_seconds": [
+      0.30495833333333333,
+      5.942770833333333
+    ],
+    "waveform_correlations": [
+      0.9999999890343175,
+      0.9999999866571426
+    ],
+    "waveform_anchor_evidence": [
+      {
+        "method": "full-band",
+        "positions_and_correlations": [
+          [
+            0.30495833333333333,
+            0.9999999941936802
+          ],
+          [
+            0.30495833333333333,
+            0.9999999894170751
+          ],
+          [
+            0.30495833333333333,
+            0.9999999890343175
+          ]
+        ]
+      },
+      {
+        "method": "full-band",
+        "positions_and_correlations": [
+          [
+            5.942770833333333,
+            0.9999999977328745
+          ],
+          [
+            5.942770833333333,
+            0.999999996297396
+          ],
+          [
+            5.942770833333333,
+            0.9999999866571426
+          ]
+        ]
+      }
+    ],
+    "observed_end_error_ms": -9.249999999999758,
+    "render_sha256": "e0c0cb4d5f965f8ced304c92e50aee08ab01e20e51f5046b519ce6ba0de9a7a7",
+    "ffmpeg_command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-v",
+      "error",
+      "-nostdin",
+      "-n",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/01.wav",
+      "-af",
+      "atrim=start_sample=3664896:end_sample=4068672,asetpts=PTS-STARTPTS,atempo=1.3479574557568663,asetpts=N/SR/TB",
+      "-c:a",
+      "pcm_f32le",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/pilots/01/block-010.wav"
+    ]
+  },
+  "audio_path": "work/mix-170-20261026/pilots/01/block-010.wav",
+  "audio_sha256": "e0c0cb4d5f965f8ced304c92e50aee08ab01e20e51f5046b519ce6ba0de9a7a7",
+  "elapsed_seconds": 1.3281754999770783,
+  "direct_listening": false
+}

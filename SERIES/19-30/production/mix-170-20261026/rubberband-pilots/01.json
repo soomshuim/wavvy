@@ -1,0 +1,269 @@
+{
+  "order": 1,
+  "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+  "title": "Goodbye",
+  "source_range_seconds": [
+    60,
+    100
+  ],
+  "source_path": "work/mix-170-20261026/rubberband-pilots/01/source.wav",
+  "source_sha256": "1154f12345de84a4ce5e70db1a01f71c5a10c6611d6f853fb8ad80a989674fbf",
+  "output_path": "work/mix-170-20261026/rubberband-pilots/01/output.wav",
+  "output_sha256": "26fe7ce7bb00f59e1d80e9b86689bcdaf15f81708f235d9e6a51b162616431a5",
+  "producer": {
+    "command": [
+      "/opt/homebrew/bin/rubberband",
+      "-3",
+      "-p",
+      "0",
+      "--timemap",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/01/timemap.txt",
+      "-D",
+      "29.67520833333333",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/01/source.wav",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband-pilots/01/output.wav"
+    ],
+    "rubberband_version": "4.0.0",
+    "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+    "timemap_sha256": "e1527746fc037699829b4920749f9be007b885cac5c6dc9583b65be82d20a348",
+    "elapsed_seconds": 3.8554644170217216,
+    "log_path": "work/mix-170-20261026/rubberband-pilots/01/rubberband.log",
+    "log_sha256": "ed03c8602ef8563e6ea6d0b386b6d7e740e5c32038b0be7ff742b5fd60ed8797"
+  },
+  "qa": {
+    "schema": "wavvy.rubberband_output_numerical_check.v1",
+    "passed": true,
+    "expected_output_frames": 1424410,
+    "actual_output_frames": 1424410,
+    "length_error_samples": 0,
+    "finite": true,
+    "peak_linear": 0.9990000128746033,
+    "source_output_attack_alignment": [
+      {
+        "source_center_seconds": 4.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.4656181355972795
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8359686844463289
+          }
+        }
+      },
+      {
+        "source_center_seconds": 8.0,
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.4435665315016453
+          },
+          "high": {
+            "lag_ms": 2,
+            "correlation": 0.801697142874021
+          }
+        }
+      },
+      {
+        "source_center_seconds": 12.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.37017527022175983
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8511803230246752
+          }
+        }
+      },
+      {
+        "source_center_seconds": 16.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.5227369326114687
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8619465601156427
+          }
+        }
+      },
+      {
+        "source_center_seconds": 20.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.550515917545657
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8570515181428613
+          }
+        }
+      },
+      {
+        "source_center_seconds": 24.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5295965863201018
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.824061062502098
+          }
+        }
+      },
+      {
+        "source_center_seconds": 28.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.49295113262430224
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7860479553175377
+          }
+        }
+      },
+      {
+        "source_center_seconds": 32.0,
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5673276096437962
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8268595452663307
+          }
+        }
+      },
+      {
+        "source_center_seconds": 36.0,
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.4780477784338075
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8152442158947387
+          }
+        }
+      }
+    ],
+    "reliable_alignment_windows": 17,
+    "attack_abs_lag_p90_ms": 2.0,
+    "independent_output_tempo_windows": [
+      {
+        "center_seconds": 10.0,
+        "band_bpm": {
+          "low": 205.57608494246693,
+          "mid": 169.9415191170202,
+          "high": 170.05201660777152
+        },
+        "band_strength": {
+          "low": 0.6492004421009445,
+          "mid": 0.7027605324151021,
+          "high": 0.9680599739922624
+        },
+        "median_bpm": 170.05201660777152,
+        "band_spread_bpm": 35.63456582544674
+      },
+      {
+        "center_seconds": 15.0,
+        "band_bpm": {
+          "low": 205.65949817071592,
+          "mid": 170.07769567722505,
+          "high": 170.0852609173097
+        },
+        "band_strength": {
+          "low": 0.639240844245609,
+          "mid": 0.7060357480165572,
+          "high": 1.0134061569358197
+        },
+        "median_bpm": 170.0852609173097,
+        "band_spread_bpm": 35.58180249349087
+      },
+      {
+        "center_seconds": 20.0,
+        "band_bpm": {
+          "low": 220.58823529411765,
+          "mid": 170.1069477469135,
+          "high": 170.1174652684938
+        },
+        "band_strength": {
+          "low": 0.6325877578360769,
+          "mid": 0.6991677745571715,
+          "high": 1.0245975046058353
+        },
+        "median_bpm": 170.1174652684938,
+        "band_spread_bpm": 50.48128754720415
+      }
+    ],
+    "mid_high_output_bpm_median": 170.08147829726738,
+    "pitch": {
+      "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+      "windows": [
+        {
+          "source_center_seconds": 2.0,
+          "output_center_seconds": 1.48296328125,
+          "best_frequency_shift_cents": 0,
+          "spectral_correlation": 0.8224806194345725
+        },
+        {
+          "source_center_seconds": 11.0,
+          "output_center_seconds": 8.16064443277311,
+          "best_frequency_shift_cents": 0,
+          "spectral_correlation": 0.8301870968852162
+        },
+        {
+          "source_center_seconds": 20.0,
+          "output_center_seconds": 14.838345675770308,
+          "best_frequency_shift_cents": 0,
+          "spectral_correlation": 0.7576401617818939
+        },
+        {
+          "source_center_seconds": 29.0,
+          "output_center_seconds": 21.51566956751055,
+          "best_frequency_shift_cents": 0,
+          "spectral_correlation": 0.7344940163332876
+        },
+        {
+          "source_center_seconds": 38.0,
+          "output_center_seconds": 28.189316351540615,
+          "best_frequency_shift_cents": 0,
+          "spectral_correlation": 0.6851777624690548
+        }
+      ],
+      "median_shift_cents": 0.0,
+      "passed": true,
+      "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+    },
+    "direct_listening": false,
+    "boundary_samples": {
+      "input_first": [
+        -0.034524738788604736,
+        -0.17516300082206726
+      ],
+      "input_last": [
+        -0.1205350011587143,
+        -0.20349441468715668
+      ],
+      "output_first": [
+        -0.02309947833418846,
+        -0.019879033789038658
+      ],
+      "output_last": [
+        0.020130742341279984,
+        -0.03860415518283844
+      ],
+      "meaning": "Boundary amplitudes need not equal after phase-vocoder transformation; map origin0/end plus complete input and exact output length preserve temporal extent."
+    }
+  }
+}

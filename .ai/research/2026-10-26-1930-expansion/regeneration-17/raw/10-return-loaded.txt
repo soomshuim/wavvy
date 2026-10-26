@@ -1,0 +1,132 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create]
+- link "Suno logo" [ref=e1]
+- button "Collapse sidebar" [ref=e2]
+- link "Home" [ref=e3] [focused]
+- link "Explore" [ref=e4]
+- link "Create" [ref=e5]
+- link "Studio" [ref=e6]
+- link "Library" [ref=e7]
+- link "wavvy24 wavvy24" [ref=e8]
+- button "Profile menu button" [ref=e9]
+- link "Earn Credits" [ref=e10]
+- link "Labs" [ref=e11]
+- button "Notifications" [ref=e12]
+- button "More" [ref=e13]
+- link "Upgrade to Premier" [ref=e14]
+- tablist "What to create":
+  - tab "Songs" [ref=e130] [selected]
+  - tab "Speech" [ref=e131]
+  - tab "Sounds" [ref=e132]
+- tablist "Create form mode":
+  - tab "Simple" [ref=e133]
+  - tab "Advanced" [ref=e134] [selected]
+- button "Credits remaining: 1,366" [ref=e135]: "1.4k"
+- button "v6" [ref=e136]
+- generic [ref=e137] [scrollable]:
+  - button "Add audio - Browse, upload, or record audio" [ref=e138]: "Audio"
+  - button "Add Voice" [ref=e139]: "Voice"
+  - button "Add inspiration from a playlist" [ref=e140]: "Inspo"
+  - button "Lyrics" [ref=e141]
+  - button "Undo" [ref=e142] [disabled]
+  - button "Redo" [ref=e143] [disabled]
+  - button "New draft" [ref=e144]
+  - button "Saved lyrics" [ref=e145]
+  - button "Open full screen lyrics editor" [ref=e146]
+  - status
+  - textbox "Lyrics editor" [ref=e147]
+  - text: "Start writing lyrics, or leave this empty for instrumental When text is selected, press Shift+Enter to move to the selection actions.0 of 5000 characters used."
+  - status
+  - button "Help me write lyrics" [ref=e148]
+  - button "Styles" [ref=e149]
+  - button "View saved style prompts" [ref=e150]
+  - textbox "club music, intense energy, nachdenklich, scratches, pipe organ" [ref=e151] [placeholder="club music, intense energy, nachdenklich, scratches, pipe organ"]
+  - generic [ref=e152] [scrollable]:
+    - button "View saved style prompts" [ref=e153]
+    - button "Personalize style prompt to match your taste" [ref=e154]
+    - button "Refresh recommended styles" [ref=e155]
+    - button "Add style: club music" [ref=e156]: "club music"
+    - button "Add style: intense energy" [ref=e157]: "intense energy"
+    - button "Add style: nachdenklich" [ref=e158]: "nachdenklich"
+    - button "Add style: scratches" [ref=e159]: "scratches"
+    - button "Add style: pipe organ" [ref=e160]: "pipe organ"
+    - button "Add style: bamboo flute" [ref=e161]: "bamboo flute"
+    - button "Add style: 6/8" [ref=e162]: "6/8"
+    - button "Add style: trap soul" [ref=e163]: "trap soul"
+    - button "Add style: electric blues" [ref=e164]: "electric blues"
+    - button "Add style: akustyczna" [ref=e165]: "akustyczna"
+    - button "Add style: dance groove" [ref=e166]: "dance groove"
+    - button "Add style: sultry voice" [ref=e167]: "sultry voice"
+    - button "Add style: distorted voice" [ref=e168]: "distorted voice"
+    - button "Add style: clear vocals" [ref=e169]: "clear vocals"
+    - button "Add style: sarangi" [ref=e170]: "sarangi"
+    - button "Add style: disco music" [ref=e171]: "disco music"
+    - button "Add style: euro pop" [ref=e172]: "euro pop"
+    - button "Add style: afro-funk" [ref=e173]: "afro-funk"
+    - button "Add style: hollow" [ref=e174]: "hollow"
+    - button "Add style: subtle piano" [ref=e175]: "subtle piano"
+  - button "More Options" [ref=e176]
+  - textbox "Song Title (Optional)" [ref=e177] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "[19:30]" [ref=e178]
+- button "Clear all form inputs" [ref=e179]
+- button "Create song" [ref=e180] [disabled]: "Create"
+- separator
+- button "Workspaces" [ref=e181]
+- button "[19:30]" [ref=e182]
+- button [ref=e183]
+- button "Share" [ref=e184]
+- textbox "Search clips" [ref=e185] [placeholder="Search"]
+- combobox "Filters (3)" [ref=e186]
+- combobox "New" [ref=e187]
+- combobox "View: List" [ref=e188]: "List"
+- button "Previous page" [ref=e189] [disabled]
+- textbox "Current page number" [ref=e190]: "1"
+- button "Next page" [ref=e191]
+- table:
+  - generic [ref=e192] [scrollable]:
+    - rowgroup:
+      - region:
+        - heading "Today" [level=3]
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+        - group "Untitled"
+- link "Playbar: Title for In Da Dream" [ref=e110]
+- link "Playbar: Title for In Da Dream" [ref=e111]: "In Da Dream"
+- link "Playbar: Artist for In Da Dream" [ref=e112]: "Wavvy"
+- button "Playbar: Toggle shuffle button" [ref=e113]
+- button "Playbar: Previous Song button" [ref=e114]
+- button "Playbar: Play button" [ref=e115]
+- button "Playbar: Next Song button" [ref=e116]
+- button "Playbar: Toggle repeat button" [ref=e117]
+- text: "0:00"
+- textbox "Playback progress" [ref=e118] [disabled]: "0"
+- text: "3:57"
+- button "Queue" [ref=e119]
+- button "Playbar: Like" [ref=e120]
+- button "Playbar: Dislike" [ref=e121]
+- link "Playbar: Comment" [ref=e122]
+- button "Playbar: Share" [ref=e123]
+- button "More options" [ref=e124]
+- button "Playbar: Mute" [ref=e125]
+- button "Playbar: Toggle song details panel" [ref=e126]
+- region "Bottom notifications" [ref=e127]
+- region "Top notifications" [ref=e128]
+- region "Bottom edge notifications" [ref=e129]

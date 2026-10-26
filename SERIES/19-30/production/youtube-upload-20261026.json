@@ -1,0 +1,142 @@
+{
+  "schema": "wavvy.youtube_ui_upload.v1",
+  "status": "completed_public_comment_pinned",
+  "browser": "Aside",
+  "connection": "MCP",
+  "tool": "mcp__aside__repl",
+  "profile_id": "be41d9e1-db47-4e5c-b567-be8ce72163cc",
+  "studio_target_id": "2B67D5E30B8A564AE2CCB88C9B342421",
+  "channel_id": "UC4R4NGwp19Y4lbdNs2HQVcg",
+  "channel_name_observed": "Wavvy24",
+  "file_submission_count": 1,
+  "video_id": "s5pY5cqvbS8",
+  "attempt_history": [
+    {
+      "time_utc": "2026-10-26T08:36:10.054318+00:00",
+      "event": "direct_repo_path_rejected_before_submission",
+      "error": "Path escapes the session directory",
+      "upload_created": false
+    },
+    {
+      "time_utc": "2026-10-26T08:36:51.515355+00:00",
+      "event": "first_successful_ui_file_submission",
+      "file_name_observed": "final-1930-4k.mp4",
+      "upload_progress_observed": "3%",
+      "visibility_observed": "private_draft"
+    },
+    {
+      "time_utc": "2026-10-26T08:41:16.905331+00:00",
+      "event": "public_save_clicked_once_and_reopened_radio_confirmed",
+      "studio_status": "pending_SD_processing",
+      "publication_completed": false
+    },
+    {
+      "time_utc": "2026-10-26T08:48:36.227426+00:00",
+      "event": "public_watch_and_pinned_comment_verified",
+      "publication_completed": true,
+      "SD": "complete",
+      "HD": "complete",
+      "4K": "complete",
+      "file_resubmitted": false,
+      "comment_reposted": false
+    }
+  ],
+  "session_upload_copies": [
+    {
+      "source": "SERIES/19-30/output/video-logo-only-20261026/final-1930-4k.mp4",
+      "session_copy": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/final-1930-4k.mp4",
+      "sha256": "a73ac9dba08586e4ab132c17ed7f5ec0676db3c9708f1c9655ad65c0ca563588",
+      "bytes": 487692589
+    },
+    {
+      "source": "SERIES/19-30/input/thumb.jpg",
+      "session_copy": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-26_tYLTJIA1RjuM3NRG/artifacts/yt1930/thumb.jpg",
+      "sha256": "611fa89d1625eab60c1ab488e8b0d415ba9ca797cf4ab35a05323fd8780a16eb",
+      "bytes": 3232365
+    }
+  ],
+  "local_media_deleted": false,
+  "watch_url": "https://www.youtube.com/watch?v=s5pY5cqvbS8",
+  "short_url": "https://youtu.be/s5pY5cqvbS8",
+  "studio_url": "https://studio.youtube.com/video/s5pY5cqvbS8/edit",
+  "metadata": {
+    "title_exact": true,
+    "description_matches_after_removing_single_ui_trailing_newline": true,
+    "tags_applied": true,
+    "not_for_kids": true,
+    "ai_generated": true,
+    "paid_promotion": false,
+    "category": "Music",
+    "comments": "On",
+    "thumbnail_uploaded": true,
+    "thumbnail_visual_confirmed": "Running Mix /160BPM user image"
+  },
+  "visibility": {
+    "saved_radio": "public",
+    "studio_status": "public",
+    "public_watch_verified": true,
+    "watch_duration_ui": "1:50:37",
+    "approved_title_exact": true
+  },
+  "processing": {
+    "SD": "complete",
+    "HD": "complete",
+    "4K": "complete",
+    "studio_notification_latest": "—",
+    "copyright": "No explicit final copyright verdict captured; prior in-progress observation preserved in UI evidence."
+  },
+  "comment": {
+    "posted": true,
+    "pinned": true,
+    "post_submission_count": 1,
+    "duplicate_checked_before_post": true,
+    "existing_comments_before_post": 0,
+    "comment_id": "UgxjZ6ONiEtA11sFUSx4AaABAg",
+    "text": "🏃 강렬한 빅비트로, 발걸음은 가볍게!\n20곡을 두 번 이어 담은 160 BPM 일렉트로니카 러닝 믹스예요.\n오늘 달릴 때 가장 힘이 된 곡은 몇 번인가요?",
+    "pin_ui_text": "@wavvy24님이 고정함",
+    "pin_confirmation_ui_text": "댓글이 고정되었습니다.",
+    "evidence": "production/youtube-upload-ui-20261026/comment-pinned-ui.txt"
+  },
+  "updated_at_utc": "2026-10-26T08:48:36.227426+00:00",
+  "watch_target_id": "465E34DF7F795F7943DA1A45A9FB11AB",
+  "public_watch_verification": {
+    "playback_started_ui": true,
+    "initial_ui_time": "0:00 / 1:50:37",
+    "first_chapter": "1. Goodbye",
+    "description_chapter_links_observed": 40,
+    "actual_player_scene": "Approved running scene with Wavvy logo only; no Running Mix or BPM typography in video",
+    "frame_evidence": "production/youtube-upload-ui-20261026/public-chapter-playback.webp",
+    "description_evidence": "production/youtube-upload-ui-20261026/public-expanded-description-ui.txt",
+    "full_listening_performed": false,
+    "actual_4K_stream_playback_claimed": false
+  },
+  "controller_independent_verification": {
+    "source": "Controller /root messages; raw tool output retained in root transcript",
+    "tool": "mcp__aside__repl / youtube.getMetadata + youtube.getComments + watch snapshot",
+    "title_approved_exact": true,
+    "channel": "Wavvy24",
+    "duration_seconds": 6637,
+    "publish_date": "2026-10-26T01:41:04-07:00",
+    "comments_count": 1,
+    "comments_has_more": false,
+    "comment_id": "UgxjZ6ONiEtA11sFUSx4AaABAg",
+    "comment_author": "@wavvy24",
+    "comment_exact": true,
+    "pinned_ui_independently_confirmed": true
+  },
+  "evidence_directory": "production/youtube-upload-ui-20261026",
+  "normal_state_writer": {
+    "command": "python3 wavvy.py state SERIES/19-30 --write --phase uploaded --if-match 97 --json",
+    "result": "PASS",
+    "revision_after": 98,
+    "phase": "uploaded",
+    "raw": "production/youtube-upload-ui-20261026/state-write.stdout.json"
+  },
+  "uploaded_gate": {
+    "command": "python3 wavvy.py gate SERIES/19-30 --stage uploaded --json",
+    "result": "PASS",
+    "blockers": [],
+    "warnings": [],
+    "raw": "production/youtube-upload-ui-20261026/uploaded-gate.stdout.json"
+  }
+}

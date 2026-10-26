@@ -1,0 +1,290 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- link "Suno logo" [ref=e1]
+- button "Collapse sidebar" [ref=e2]
+- link "Home" [ref=e3]
+- link "Explore" [ref=e4]
+- link "Create" [ref=e5]
+- link "Studio" [ref=e6]
+- link "Library" [ref=e7]
+- link "wavvy24 wavvy24" [ref=e8]
+- button "Profile menu button" [ref=e9]
+- link "Earn Credits" [ref=e10]
+- link "Labs" [ref=e11]
+- button "Notifications, 5 unread" [ref=e12]: "Notifications 5"
+- button "More" [ref=e13]
+- link "Upgrade to Premier" [ref=e14]
+- tablist "What to create":
+  - tab "Songs" [ref=e15] [selected]
+  - tab "Speech" [ref=e16]
+  - tab "Sounds" [ref=e17]
+- tablist "Create form mode":
+  - tab "Simple" [ref=e18]
+  - tab "Advanced" [ref=e19] [selected]
+- button "Credits remaining: 1,216" [ref=e20]: "1.2k"
+- button "v6" [ref=e21]
+- generic [ref=e22] [scrollable]:
+  - button "Add audio - Browse, upload, or record audio" [ref=e23]: "Audio"
+  - button "Add Voice" [ref=e24]: "Voice"
+  - button "Add inspiration from a playlist" [ref=e25]: "Inspo"
+  - button "Lyrics" [ref=e26]
+  - button "Undo" [ref=e27] [disabled]
+  - button "Redo" [ref=e28] [disabled]
+  - button "New draft" [ref=e29]
+  - button "Saved lyrics" [ref=e30]
+  - button "Open full screen lyrics editor" [ref=e31]
+  - status
+  - textbox "Lyrics editor" [ref=e32]
+  - text: "Start writing lyrics, or leave this empty for instrumental When text is selected, press Shift+Enter to move to the selection actions.0 of 5000 characters used."
+  - status
+  - button "Help me write lyrics" [ref=e33]
+  - button "Styles" [ref=e34]
+  - button "View saved style prompts" [ref=e35]
+  - textbox "90s eurodance, electric bass guitar, glitchy effects, electronic effects, drum and bass" [ref=e36] [placeholder="90s eurodance, electric bass guitar, glitchy effects, electronic effects, drum and bass"]
+  - generic [ref=e37] [scrollable]:
+    - button "View saved style prompts" [ref=e38]
+    - button "Personalize style prompt to match your taste" [ref=e39]
+    - button "Refresh recommended styles" [ref=e40]
+    - button "Add style: 90s eurodance" [ref=e41]: "90s eurodance"
+    - button "Add style: electric bass guitar" [ref=e42]: "electric bass guitar"
+    - button "Add style: glitchy effects" [ref=e43]: "glitchy effects"
+    - button "Add style: electronic effects" [ref=e44]: "electronic effects"
+    - button "Add style: drum and bass" [ref=e45]: "drum and bass"
+    - button "Add style: dirty south" [ref=e46]: "dirty south"
+    - button "Add style: bass and drums" [ref=e47]: "bass and drums"
+    - button "Add style: glitch core" [ref=e48]: "glitch core"
+    - button "Add style: ambient horror" [ref=e49]: "ambient horror"
+    - button "Add style: dark soul" [ref=e50]: "dark soul"
+    - button "Add style: rock progresivo" [ref=e51]: "rock progresivo"
+    - button "Add style: sheng" [ref=e52]: "sheng"
+    - button "Add style: lead synth" [ref=e53]: "lead synth"
+    - button "Add style: raw emotion" [ref=e54]: "raw emotion"
+    - button "Add style: moderato" [ref=e55]: "moderato"
+    - button "Add style: xylophone" [ref=e56]: "xylophone"
+    - button "Add style: dramatic build-ups" [ref=e57]: "dramatic build-ups"
+    - button "Add style: impactful drops" [ref=e58]: "impactful drops"
+    - button "Add style: experimental pop" [ref=e59]: "experimental pop"
+    - button "Add style: complex time signatures" [ref=e60]: "complex time signatures"
+  - button "More Options" [ref=e61]
+  - textbox "Song Title (Optional)" [ref=e62] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "[19:30]" [ref=e63]
+- button "Clear all form inputs" [ref=e64]
+- button "Create song" [ref=e65] [disabled]: "Create"
+- separator
+- button "Workspaces" [ref=e66]
+- button "[19:30]" [ref=e67]
+- button [ref=e68]
+- button "Share" [ref=e69]
+- textbox "Search clips" [ref=e70] [placeholder="Search"]
+- combobox "Filters (3)" [ref=e71]
+- combobox "New" [ref=e72]
+- combobox "View: List" [ref=e73]: "List"
+- button "Previous page" [ref=e74] [disabled]
+- textbox "Current page number" [ref=e75]: "1"
+- button "Next page" [ref=e76]
+- table:
+  - generic [ref=e77] [scrollable]:
+    - rowgroup:
+      - region:
+        - heading "Today" [level=3]
+        - group "Faded Polaroid":
+          - text: "V6 COVER"
+          - button "Like clip" [ref=e248]
+          - button "Dislike clip" [ref=e249]
+          - button "Pin clip to workspace" [ref=e250]
+          - button "Share clip" [ref=e251]: "Share"
+          - button "Unpublish clip" [ref=e252]: "Published"
+          - button "More options" [ref=e253]
+        - group "Warm Pixels":
+          - text: "V6 COVER"
+          - button "Like clip" [ref=e240]
+          - button "Dislike clip" [ref=e241]
+          - button "Pin clip to workspace" [ref=e242]
+          - button "Share clip" [ref=e243]: "Share"
+          - button "Unpublish clip" [ref=e302]: "Published"
+          - button "More options" [ref=e244]
+        - group "Small Satellites":
+          - text: "V6 COVER"
+          - button "Like clip" [ref=e257]
+          - button "Dislike clip" [ref=e258]
+          - button "Pin clip to workspace" [ref=e259]
+          - button "Share clip" [ref=e260]: "Share"
+          - button "Unpublish clip" [ref=e329]: "Published"
+          - button "More options" [ref=e261]
+        - group "Still a Spark":
+          - text: "V6"
+          - button "Like clip" [ref=e102]
+          - button "Dislike clip" [ref=e103]
+          - button "Pin clip to workspace" [ref=e104]
+          - button "Share clip" [ref=e105]: "Share"
+          - button "Unpublish clip" [ref=e356]: "Published"
+          - button "More options" [ref=e106]
+        - group "After The Rain":
+          - text: "V6"
+          - button "Like clip" [ref=e109]
+          - button "Dislike clip" [ref=e110]
+          - button "Pin clip to workspace" [ref=e111]
+          - button "Share clip" [ref=e112]: "Share"
+          - button "Unpublish clip" [ref=e382]: "Published"
+          - button "More options" [ref=e113]
+        - group "Night Steps":
+          - text: "V6"
+          - button "Like clip" [ref=e116]
+          - button "Dislike clip" [ref=e117]
+          - button "Pin clip to workspace" [ref=e118]
+          - button "Share clip" [ref=e119]: "Share"
+          - button "Unpublish clip" [ref=e408]: "Published"
+          - button "More options" [ref=e120]
+        - group "Half Past Home":
+          - text: "V6"
+          - button "Like clip" [ref=e123]
+          - button "Dislike clip" [ref=e124]
+          - button "Pin clip to workspace" [ref=e125]
+          - button "Share clip" [ref=e126]: "Share"
+          - button "Unpublish clip" [ref=e433]: "Published"
+          - button "More options" [ref=e127]
+        - group "Paper Lanterns":
+          - button "Play Paper Lanterns" [ref=e128]: "Paper Lanterns artwork 3:30"
+          - link "Paper Lanterns" [ref=e129]
+          - text: "V6 Instrumental urgent, fast full-time bittersweet electronica, 154 BPM, 4/4 in F major, around 3:30, One bar of thin 8-bit pulse keyboard repeats one pitch wit…[+858 chars]"
+          - button "Like clip" [ref=e130]
+          - button "Dislike clip" [ref=e131]
+          - button "Pin clip to workspace" [ref=e132]
+          - button "Share clip" [ref=e133]: "Share"
+          - button "Unpublish clip" [ref=e459]: "Published"
+          - button "More options" [ref=e134]
+        - group "Keep the Window Open":
+          - button "Play Keep the Window Open" [ref=e135]: "Keep the Window Open artwork 3:45"
+          - link "Keep the Window Open" [ref=e136]
+          - text: "V6 Electronica, bright yet aching, digital studio production; instrumental, Start immediately with two soft 8-bit/16-bit keyboard notes and a long rest alone fo…[+609 chars]"
+          - button "Like clip" [ref=e137]
+          - button "Dislike clip" [ref=e138]
+          - button "Pin clip to workspace" [ref=e139]
+          - button "Share clip" [ref=e140]: "Share"
+          - button "Unpublish clip" [ref=e484]: "Published"
+          - button "More options" [ref=e141]
+        - group "Sunday Voltage":
+          - button "Play Sunday Voltage" [ref=e142]: "Sunday Voltage artwork 2:45"
+          - link "Sunday Voltage" [ref=e143]
+          - text: "V6 Electronic breakbeat rock; compressed live break drums, instrumental, exuberant 128 BPM straight 4/4 in G major; soft 8-bit-like tine keyboard and round elec…[+545 chars]"
+          - button "Like clip" [ref=e144]
+          - button "Dislike clip" [ref=e145]
+          - button "Pin clip to workspace" [ref=e146]
+          - button "Share clip" [ref=e147]: "Share"
+          - button "Unpublish clip" [ref=e510]: "Published"
+          - button "More options" [ref=e148]
+        - group "Glass Horizon":
+          - button "Play Glass Horizon" [ref=e149]: "Glass Horizon artwork 3:12"
+          - link "Glass Horizon" [ref=e150]
+          - text: "V6 Chip electronica, instrumental; game-like soft square-keyboard hook with two spaced notes in a plain repeated rhythm, tightly controlled and quietly aching, …[+464 chars]"
+          - button "Like clip" [ref=e151]
+          - button "Dislike clip" [ref=e152]
+          - button "Pin clip to workspace" [ref=e153]
+          - button "Share clip" [ref=e154]: "Share"
+          - button "Unpublish clip" [ref=e536]: "Published"
+          - button "More options" [ref=e155]
+        - group "Open Roads":
+          - button "Play Open Roads" [ref=e156]: "Open Roads artwork 3:02"
+          - link "Open Roads" [ref=e157]
+          - text: "V6 Instrumental electronic breakbeat rock, 128 BPM, 4/4 in C major, around 3:25, Picked electric bass opens alone for two bars with one short repeated rhythm; c…[+752 chars]"
+          - button "Like clip" [ref=e158]
+          - button "Dislike clip" [ref=e159]
+          - button "Pin clip to workspace" [ref=e160]
+          - button "Share clip" [ref=e161]: "Share"
+          - button "Unpublish clip" [ref=e562]: "Published"
+          - button "More options" [ref=e162]
+        - group "Pocket Sunrise":
+          - button "Play Pocket Sunrise" [ref=e163]: "Pocket Sunrise artwork 2:36"
+          - link "Pocket Sunrise" [ref=e164]
+          - text: "V6 Chip breakbeat instrumental, 4/4 in B major at 124 BPM, around 3:20, Open with two bars of light hats and dry rim clicks, then a crisp square-wave hook: two …[+488 chars]"
+          - button "Like clip" [ref=e165]
+          - button "Dislike clip" [ref=e166]
+          - button "Pin clip to workspace" [ref=e167]
+          - button "Share clip" [ref=e168]: "Share"
+          - button "Unpublish clip" [ref=e588]: "Published"
+          - button "More options" [ref=e169]
+        - group "Blue Current":
+          - button "Select clip" [ref=e613]
+          - button "Play Blue Current" [ref=e170]: "Blue Current artwork 3:18"
+          - link "Blue Current" [ref=e171]
+          - text: "V6 Breakbeat electronica, instrumental; rubbery mono bass opens alone for four bars with a two-note pulse, then chopped live break drums and light ride; soft pu…[+498 chars]"
+          - button "Like clip" [ref=e172]
+          - button "Dislike clip" [ref=e173]
+          - button "Pin clip to workspace" [ref=e174]
+          - button "Share clip" [ref=e175]: "Share"
+          - button "Unpublish clip" [ref=e614]: "Published"
+          - button "More options" [ref=e176] [focused]
+        - group "In Da Dream":
+          - button "Play In Da Dream" [ref=e177]: "In Da Dream artwork 3:57"
+          - link "In Da Dream" [ref=e178]
+          - text: "V6 COVER Electronica with an 8-bit sound, soft digital keyboard strikes one evenly spaced, identical note for eight bars with silence between; quiet bass and a …[+313 chars]"
+          - button "Like clip" [ref=e179]
+          - button "Dislike clip" [ref=e180]
+          - button "Pin clip to workspace" [ref=e181]
+          - button "Share clip" [ref=e182]: "Share"
+          - button "Unpublish clip" [ref=e183]: "Published"
+          - button "More options" [ref=e184]
+        - group "Pulse":
+          - button "Play Pulse" [ref=e185]: "Pulse artwork 3:30"
+          - link "Pulse" [ref=e186]
+          - text: "V6 8-bit chiptune breakbeat remix, keep the source’s buoyant fast pulse and warm chord movement while adding a catchy square-wave lead melody; pixelated arpeggi…[+259 chars]"
+          - button "Like clip" [ref=e187]
+          - button "Dislike clip" [ref=e188]
+          - button "Pin clip to workspace" [ref=e189]
+          - button "Share clip" [ref=e190]: "Share"
+          - button "Unpublish clip" [ref=e191]: "Published"
+          - button "More options" [ref=e192]
+        - group "Sunlit":
+          - button "Play Sunlit" [ref=e615]: "Sunlit artwork 3:10"
+          - link "Sunlit" [ref=e616]
+          - text: "V6 Electronic breakbeat rock, precise and bright production, full-speed 120 BPM drive in E major; instrumental; springy synth bass leads from the opening bar, s…[+295 chars]"
+          - button "Like clip" [ref=e617]
+          - button "Dislike clip" [ref=e618]
+          - button "Pin clip to workspace" [ref=e619]
+          - button "Share clip" [ref=e620]: "Share"
+          - button "Unpublish clip" [ref=e621]: "Published"
+          - button "More options" [ref=e622]
+        - group "A Sorrow Beyond Dreams":
+          - button "Play A Sorrow Beyond Dreams" [ref=e623]: "A Sorrow Beyond Dreams artwork 2:47"
+          - link "A Sorrow Beyond Dreams" [ref=e624]
+          - text: "V6 Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet bass an…[+547 chars]"
+          - button "Like clip" [ref=e625]
+          - button "Dislike clip" [ref=e626]
+          - button "Pin clip to workspace" [ref=e627]
+          - button "Share clip" [ref=e628]: "Share"
+          - button "Unpublish clip" [ref=e629]: "Published"
+          - button "More options" [ref=e630]
+        - group "Goodbye":
+          - button "Play Goodbye" [ref=e631]: "Goodbye artwork 3:22"
+          - link "Goodbye" [ref=e632]
+          - text: "V6 Bittersweet electronica, a soft digital keyboard strikes one identical single pitch at even intervals for eight bars with silence between; then quiet bass an…[+547 chars]"
+          - button "Like clip" [ref=e633]
+          - button "Dislike clip" [ref=e634]
+          - button "Pin clip to workspace" [ref=e635]
+          - button "Share clip" [ref=e636]: "Share"
+          - button "Unpublish clip" [ref=e637]: "Published"
+          - button "More options" [ref=e638]
+      - region:
+        - heading "Yesterday" [level=3]
+        - group "Dancing Tears":
+          - button "Play Dancing Tears" [ref=e639]: "Dancing Tears artwork 3:23"
+          - link "Dancing Tears" [ref=e640]
+          - text: "V6 Instrumental bittersweet electronica, 125 BPM, Begin with an extremely sparse solo keyboard: just TWO individual notes alternating slowly, one at a time, wit…[+994 chars]"
+          - button "Like clip" [ref=e641]
+          - button "Dislike clip" [ref=e642]
+          - button "Pin clip to workspace" [ref=e643]
+          - button "Share clip" [ref=e644]: "Share"
+          - button "Unpublish clip" [ref=e645]: "Published"
+          - button "More options" [ref=e646]
+    - text: "20 songs"
+- button "Playbar: Toggle shuffle button" [ref=e193]
+- button "Playbar: Previous Song button" [ref=e194] [disabled]
+- button "Playbar: Play button" [ref=e195] [disabled]
+- button "Playbar: Next Song button" [ref=e196] [disabled]
+- button "Playbar: Toggle repeat button" [ref=e197]
+- textbox "Playback progress" [ref=e198] [disabled]: "0"
+- button "Playbar: Mute" [ref=e199]
+- region "Bottom notifications" [ref=e200]
+- region "Top notifications" [ref=e201]
+- region "Bottom edge notifications" [ref=e202]

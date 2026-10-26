@@ -1,0 +1,17 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Faded Polaroid (Drive)" [ref=e430] [focused]
+  - button "Close" [ref=e431]
+  - text: "Faded Polaroid (Drive)"
+  - button "Upload" [ref=e432]
+  - button "Create" [ref=e433]
+  - button "Animate" [ref=e434]
+  - text: "Allow comments"
+  - switch [ref=e435] [checked]
+  - text: "Allow remix"
+  - switch [ref=e436] [checked]
+  - button "Edit caption, lyrics and styles" [ref=e437]
+  - button "Cancel" [ref=e438]
+  - button "Save" [ref=e439] [disabled]

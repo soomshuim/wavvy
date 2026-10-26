@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "python3",
+      "wavvy.py",
+      "gate",
+      "SERIES/06-30",
+      "--stage",
+      "uploaded",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"PASS\",\n  \"series\": \"SERIES/06-30\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_premixed_audio\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"premixed_render_identity\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "wavvy.py",
+      "gate",
+      "SERIES/07-00",
+      "--stage",
+      "uploaded",
+      "--json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"FAIL\",\n  \"series\": \"SERIES/07-00\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"FAIL\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_premixed_audio\",\n      \"status\": \"FAIL\",\n      \"detail\": \"Final Premixed Audio: premix evidence file/hash differs: input/thumb.jpg\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [],\n  \"blockers\": [\n    \"Final Premixed Audio: premix evidence file/hash differs: input/thumb.jpg\",\n    \"source_final requires audio files in input/tracks or concept.md Track Selection source map\"\n  ]\n}\n",
+    "stderr": ""
+  }
+]

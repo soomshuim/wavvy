@@ -1,0 +1,37 @@
+{
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-f",
+    "f32le",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-i",
+    "pipe:0",
+    "-af",
+    "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+    "-f",
+    "null",
+    "-"
+  ],
+  "raw": {
+    "input_i": "-15.97",
+    "input_tp": "-1.09",
+    "input_lra": "4.60",
+    "input_thresh": "-26.01",
+    "output_i": "-13.97",
+    "output_tp": "-1.50",
+    "output_lra": "4.50",
+    "output_thresh": "-24.00",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.03"
+  },
+  "input_pcm": {
+    "sha256": "63e40b6df657de5c8bbd34e136c2a773fa3eccabea7400ac1ce7067a0d619a54",
+    "samples": 299829124,
+    "peak_linear": 0.882196843624115
+  }
+}

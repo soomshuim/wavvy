@@ -1,0 +1,170 @@
+{
+  "schema": "wavvy.thumbnail_revision.v4",
+  "revision": "r4",
+  "created_at_utc": "2026-10-26T06:04:11.999832+00:00",
+  "user_request_exact": "그냥 좌하단 텍스트 없애라 내가 할게",
+  "change": "Omit both lower-left Running Mix / 170BPM text cores and their glow passes; keep the approved scene and upper-left R3 logo/glow unchanged.",
+  "approved_scene": {
+    "path": "SERIES/19-30/production/thumbnail-drafts/pixel-runner-v5.png",
+    "sha256": "b963bc8b0a3512e43f3b9558b524c0f051acdb228e687e74c50d981a292ed8f1",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "background": {
+    "path": "SERIES/19-30/input/loop.png",
+    "sha256": "349391ef58a643a3e10bf09c8cadd65dbfd5d565676bc9130325b43304422564",
+    "untouched": true,
+    "native_4k": false
+  },
+  "previous_revision": {
+    "manifest": "SERIES/19-30/production/thumbnail-revision-20261026-r3/manifest.json",
+    "review": "SERIES/19-30/production/thumbnail-revision-20261026-r3/isolated-review.md",
+    "telegram_record": "SERIES/19-30/production/thumbnail-revision-20261026-r3/telegram-delivery.json",
+    "preserved_thumb": "SERIES/19-30/production/thumbnail-revision-20261026-r4/previous-thumb-r3.jpg",
+    "sha256": "357cf1812ae79d03f46310f4989dc877998ec668a04df42bd4dd06e652aa0234"
+  },
+  "logo": {
+    "path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-pixel-generated.png",
+    "sha256": "650544cabd4ca859bd0d08ab89897b907d40775f43e411412e950807fd0cad81",
+    "generation_tool": "built-in image_gen.imagegen",
+    "reference_path": "brand/logo_wavvy.png",
+    "prompt_path": "SERIES/19-30/production/thumbnail-revision-20261026-r2/logo-prompt.txt",
+    "transparent_background": true,
+    "spelling_visual_check": "Wavvy: uppercase W and lowercase a v v y; flowing underline retained",
+    "process": "new generated pixel lettering; preserve generated RGBA, nearest-neighbor scale only; no low-resolution threshold extraction",
+    "placement": "upper left",
+    "xy": [
+      140,
+      100
+    ],
+    "size": [
+      640,
+      349
+    ],
+    "white_composite_asset": "SERIES/19-30/production/thumbnail-revision-20261026-r3/logo-white-r3.png",
+    "core_color": "#FFFFFF",
+    "original_alpha_preserved": true,
+    "preserved_r2_shape_and_placement": true,
+    "glow_updated_per_latest_request": true,
+    "composition_asset": "SERIES/19-30/production/thumbnail-revision-20261026-r3/logo-white-r3.png",
+    "unchanged_from_r3": true
+  },
+  "glow": {
+    "colors": [
+      "cyan",
+      "hot pink",
+      "violet",
+      "electric blue"
+    ],
+    "radii": [
+      140,
+      70,
+      32,
+      14
+    ],
+    "peak_alpha_per_halo": [
+      100,
+      150,
+      190,
+      210
+    ],
+    "spatial_hue_crossovers": true,
+    "method": "smooth multi-radius Gaussian colored bloom with screen blend, pure-white font/logo cores above all light",
+    "applied_to": [
+      "Wavvy logo"
+    ],
+    "pixel_outline": false,
+    "stroke_width": 0,
+    "dark_keyline": false,
+    "unchanged_logo_glow_from_r3": true
+  },
+  "typography": {
+    "text_exact": [],
+    "removed": [
+      "Running Mix",
+      "170BPM"
+    ],
+    "text_glow_removed": true,
+    "user_will_add_text": true
+  },
+  "outputs": [
+    {
+      "path": "SERIES/19-30/input/thumb.jpg",
+      "sha256": "6ec069d4b7502f5b0bdca4c5bacd0939f85354cde2b846773fd730027ae8c33a",
+      "bytes": 1891540,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r4/thumb-r4.jpg",
+      "sha256": "6ec069d4b7502f5b0bdca4c5bacd0939f85354cde2b846773fd730027ae8c33a",
+      "bytes": 1891540,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r4/thumb-editable.png",
+      "sha256": "8c8a7583db186719cd9f07f13b1756299096a69be12049821609bb1f516bf78e",
+      "bytes": 3314371,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r4/thumb-preview-960.png",
+      "sha256": "625c7fb904f03c4d1baabb17688ad8ef7ae835bc2e68e62338283e9b3b9c932b",
+      "bytes": 894741,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-revision-20261026-r4/thumb-phone-320.png",
+      "sha256": "04160fbb3da636f279ede597dc5c1753c773188592b68e4cdda48e8cbc537f5b",
+      "bytes": 133181,
+      "size": [
+        320,
+        180
+      ]
+    }
+  ],
+  "jpeg": {
+    "quality": 86,
+    "bytes": 1891540,
+    "subsampling": 0
+  },
+  "validation": {
+    "loop_unchanged": true,
+    "r3_preserved": true,
+    "upper_800px_identical_to_r3_lossless": true,
+    "lower_text_region_changed": true,
+    "entire_lower_1160px_matches_plain_background_exactly": true,
+    "text_masks_used": false,
+    "text_glow_used": false,
+    "full_visual": "checked: lower-left text and text glow absent; approved runner/background and upper-left white pixel Wavvy with multicolor glow retained",
+    "phone_visual": "checked at320x180 from actual final JPEG: no lower-left typography, upper-left logo retained"
+  },
+  "review_status": {
+    "status": "controller_direct_visual_confirmed",
+    "separate_review_required": false,
+    "reason": "text and associated glow layers omitted; unchanged scene and logo-only composition compared exactly",
+    "controller_full_and_phone_confirmed": true
+  },
+  "telegram_delivery": {
+    "status": "sent_verified",
+    "record": "SERIES/19-30/production/thumbnail-revision-20261026-r4/telegram-delivery.json",
+    "method": "sendDocument",
+    "message_id": 53724,
+    "chat_type": "private",
+    "document_file_name": "thumb-editable.png",
+    "document_file_size": 3314371
+  }
+}

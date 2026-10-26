@@ -1,0 +1,92 @@
+{
+  "schema": "wavvy.actual_video_release_preparation.v1",
+  "prepared_utc": "2026-10-26T08:32:55.297469+00:00",
+  "archive": {
+    "path": "SERIES/19-30/production/final-premixed-audio.json",
+    "sha256": "2ea1bf02f1dd7d22a0b9826efd21eb077ca69666241f58ad8bb8683acd744bae"
+  },
+  "render_record": {
+    "path": "SERIES/19-30/production/video-logo-only-20261026/video-record.json",
+    "sha256": "54079346c55485a703ccf2ff7d6f2590b4dccc1aaa1c1cc63290ce16abccad68"
+  },
+  "video": {
+    "path": "SERIES/19-30/output/video-logo-only-20261026/final-1930-4k.mp4",
+    "sha256": "a73ac9dba08586e4ab132c17ed7f5ec0676db3c9708f1c9655ad65c0ca563588"
+  },
+  "video_validation": {
+    "path": "SERIES/19-30/production/video-logo-only-20261026/final-video-validation.json",
+    "sha256": "0b376355df6da03a0111f7706871de6aeb95a1bc287d5cdc5555d4a8b2aecfbb"
+  },
+  "concept": {
+    "path": "SERIES/19-30/concept.md",
+    "sha256": "c4844fabdb39afd7c00e3416a51d07f2f10cbb8f5c584af214aec58ce6a44c7f"
+  },
+  "upload_csv": {
+    "path": "SERIES/19-30/output/upload.csv",
+    "sha256": "12783a9ed2c4b7979173eaa968f158a5b0693f157ab603b0612c564488554169"
+  },
+  "metadata": {
+    "path": "SERIES/19-30/production/youtube-metadata-20261026.json",
+    "sha256": "194dc6e6fd7db5a8286ce989c197d0dadb5b9d3a381013452635da7bae420568"
+  },
+  "metadata_validation": {
+    "path": "SERIES/19-30/production/youtube-metadata-validation-20261026.json",
+    "sha256": "55ab291fbfb00feb1cf5f1214d74f363b1d743e73c16768a879a509d0ad0939a"
+  },
+  "title_approval": {
+    "path": "SERIES/19-30/production/youtube-title-approval-20261026.json",
+    "sha256": "a1ae2ceded6511fc001f465062988dbec7afd6da3c6a294cce84655ece85df0f"
+  },
+  "pinned_comment": {
+    "path": "SERIES/19-30/production/youtube-pinned-comment-20261026.txt",
+    "sha256": "594490ce6e89fbff082d653fcb6f813320b8dcac5c90af69aac63ff681995c72"
+  },
+  "gates": [
+    {
+      "command": [
+        "python3",
+        "wavvy.py",
+        "verify-release",
+        "SERIES/19-30",
+        "--json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.427036167006008,
+      "stdout_path": "SERIES/19-30/production/video-logo-only-20261026/gates/verify-release.stdout.json",
+      "stderr_path": "SERIES/19-30/production/video-logo-only-20261026/gates/verify-release.stderr.txt",
+      "completed_utc": "2026-10-26T08:32:00.352198+00:00",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "python3",
+        "wavvy.py",
+        "gate",
+        "SERIES/19-30",
+        "--stage",
+        "upload-ready",
+        "--json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.983041708997916,
+      "stdout_path": "SERIES/19-30/production/video-logo-only-20261026/gates/upload-ready.stdout.json",
+      "stderr_path": "SERIES/19-30/production/video-logo-only-20261026/gates/upload-ready.stderr.txt",
+      "completed_utc": "2026-10-26T08:32:30.335952+00:00",
+      "result": "PASS"
+    }
+  ],
+  "diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout_path": "SERIES/19-30/production/video-logo-only-20261026/gates/diff-check.stdout.txt",
+    "stderr_path": "SERIES/19-30/production/video-logo-only-20261026/gates/diff-check.stderr.txt"
+  },
+  "status": "actual_verify_release_and_upload_ready_passed_pending_independent_review_and_upload",
+  "uploaded": false,
+  "comment_posted": false,
+  "commit_push_executed": false
+}

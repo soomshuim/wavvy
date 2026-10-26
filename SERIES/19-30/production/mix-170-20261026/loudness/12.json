@@ -1,0 +1,29 @@
+{
+  "integrated_lufs": -13.55,
+  "true_peak_dbtp": -1.58,
+  "loudness_range_lu": 3.3,
+  "raw": {
+    "input_i": "-13.55",
+    "input_tp": "-1.58",
+    "input_lra": "3.30",
+    "input_thresh": "-23.62",
+    "output_i": "-13.26",
+    "output_tp": "-1.50",
+    "output_lra": "1.70",
+    "output_thresh": "-23.30",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.74"
+  },
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-i",
+    "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/12.wav",
+    "-af",
+    "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+    "-f",
+    "null",
+    "-"
+  ]
+}

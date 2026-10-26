@@ -1,0 +1,22 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Paper Lanterns" [ref=e445] [focused]
+  - button "Close" [ref=e446]
+  - image "Paper Lanterns"
+  - button "Upload" [ref=e447]
+  - button "Create" [ref=e448]
+  - button "Animate" [ref=e449]
+  - text: "Allow comments"
+  - switch [ref=e450] [checked]
+  - text: "Allow remix"
+  - switch [ref=e451] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e452]
+  - button "Edit caption, lyrics and styles" [ref=e453]
+  - button "Save" [ref=e454] [disabled]
+  - button "Publish" [ref=e455]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

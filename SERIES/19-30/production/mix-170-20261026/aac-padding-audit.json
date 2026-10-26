@@ -1,0 +1,44 @@
+{
+  "aac_decoded_frames": 299829248,
+  "planned_frames": 299829124,
+  "difference": 124,
+  "last_frames": [
+    {
+      "pts": 299825980,
+      "nb_samples": 1024
+    },
+    {
+      "pts": 299827004,
+      "nb_samples": 1024
+    },
+    {
+      "pts": 299828028,
+      "nb_samples": 1024
+    },
+    {
+      "pts": 299829052,
+      "nb_samples": 1024
+    },
+    {
+      "pts": 299830076,
+      "nb_samples": 1024
+    },
+    {
+      "pts": 299831100,
+      "nb_samples": 1024
+    }
+  ],
+  "command": [
+    "ffprobe",
+    "-v",
+    "error",
+    "-select_streams",
+    "a:0",
+    "-show_frames",
+    "-show_entries",
+    "frame=pts,nb_samples",
+    "-of",
+    "json",
+    "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a"
+  ]
+}

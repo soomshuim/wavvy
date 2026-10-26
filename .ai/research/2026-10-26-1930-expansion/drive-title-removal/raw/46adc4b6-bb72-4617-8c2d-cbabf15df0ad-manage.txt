@@ -1,0 +1,29 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create]
+- menu "More options":
+  - group:
+    - menuitem "Remix" [ref=e442]
+    - menuitem "Edit" [ref=e443]
+  - group:
+    - menuitem "Publish" [ref=e444]
+    - menuitem "Share" [ref=e445]
+    - menuitem "Download" [ref=e446]
+    - menuitem "Manage" [ref=e447] [focused]
+    - group:
+      - menu "Manage":
+        - group:
+          - menuitem "Song Details" [ref=e453]
+          - menuitem "Create Cover Art" [ref=e454]
+        - group:
+          - menuitemcheckbox "Allow Remixes" [ref=e455] [checked]
+          - menuitemcheckbox "Allow Comments" [ref=e456] [checked]
+          - menuitemcheckbox "Pin to Profile" [ref=e457]
+        - group:
+          - menuitem "Move to Workspace" [ref=e458]
+  - group:
+    - menuitem "Add to Queue" [ref=e448]
+    - menuitem "Add to Playlist" [ref=e449]
+    - menuitem "Song Radio" [ref=e450]
+  - group:
+    - menuitem "Report" [ref=e451]
+    - menuitem "Move to Trash" [ref=e452]

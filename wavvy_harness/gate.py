@@ -15,6 +15,7 @@ from .packaging import check_thumbnail_layout, packaging_contract
 from .upload_copy import check_upload_copy
 from .selected_audio import check_selected_audio
 from .premixed_audio import check_premixed_audio, check_premixed_render, premixed_opt_in
+from .video_artwork import MANIFEST as ARTWORK_MANIFEST, check_video_artwork
 
 LYRIC_SKILL_REQUIRED_FILES = {
     "skill": Path("skills/wavvy-lyricist/SKILL.md"),
@@ -827,6 +828,19 @@ def run_gate(
     state_result = check_state(series_path, repo_root, {"phase": stage.replace("-", "_")})
     state = state_result["state"]
     artifacts = state["artifact_status"]
+    static_input = any((series_path / "input" / f"{stem}.{ext}").is_file()
+                       for stem in ("video-background", "loop") for ext in ("png", "jpg", "jpeg"))
+    if not (series_path / "input/loop.mp4").is_file() and (
+            (series_path / ARTWORK_MANIFEST).exists() or static_input) and artifacts["youtube_upload"] != "completed":
+        render_report = None
+        if stage in {"render-final", "upload-ready", "uploaded"}:
+            try:
+                render_report = json.loads((series_path / "output/report.json").read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                render_report = {}
+        _, artwork_errors = check_video_artwork(series_path, report=render_report)
+        checks.append(_check("video_artwork", not artwork_errors, "; ".join(artwork_errors)))
+        blockers.extend(artwork_errors)
     selected_opt_in, selected_errors = check_selected_audio(series_path)
     if selected_opt_in:
         checks.append(_check("final_selected_audio_sources", not selected_errors, "; ".join(selected_errors)))

@@ -1,0 +1,93 @@
+{
+  "technical_assertions_passed": true,
+  "visual_inspection_passed": true,
+  "preview_sha256": "b224d553d2f3ab112e1590048688146c8a34b3acd2cc3e2f8b3f3a83bae488c0",
+  "image_sha256": "8c8a7583db186719cd9f07f13b1756299096a69be12049821609bb1f516bf78e",
+  "video_duration": "30.000000",
+  "audio_duration": "30.016000",
+  "expected_frame_psnr_db": 53.40753609050389,
+  "frame_path": "SERIES/19-30/output/video-logo-only-20261026/preview-frame-15s.png",
+  "commands": [
+    {
+      "command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-30s-4k.mp4"
+      ],
+      "exit_code": 0,
+      "stdout": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-probe.stdout.txt",
+      "stderr": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-probe.stderr.txt"
+    },
+    {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-xerror",
+        "-err_detect",
+        "explode",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-30s-4k.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "-"
+      ],
+      "exit_code": 0,
+      "stdout": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-decode.stdout.txt",
+      "stderr": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-decode.stderr.txt"
+    },
+    {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-ss",
+        "15",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-30s-4k.mp4",
+        "-frames:v",
+        "1",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-frame-15s.png"
+      ],
+      "exit_code": 0,
+      "stdout": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-frame.stdout.txt",
+      "stderr": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-frame.stderr.txt"
+    },
+    {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/input/video-background.png",
+        "-vf",
+        "scale=3840:2160:flags=lanczos,setsar=1,format=yuv420p",
+        "-frames:v",
+        "1",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/video-logo-only-20261026/preview-expected-scaled.png"
+      ],
+      "exit_code": 0,
+      "stdout": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-expected.stdout.txt",
+      "stderr": "SERIES/19-30/output/video-logo-only-20261026/preview-validation-expected.stderr.txt"
+    }
+  ],
+  "note": "Visual inspection of extracted frame must pass before full render; preview audio stops at its AAC packet boundary.",
+  "visual_observation": "Worker opened the15-second decoded preview frame with view_image. Approved Wavvy logo, runner and full generated scene are visible; no title, Running Mix or BPM text. No crop or added overlay seen."
+}

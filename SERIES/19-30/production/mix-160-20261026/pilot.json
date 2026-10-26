@@ -1,0 +1,169 @@
+{
+  "source_range_seconds": [
+    60,
+    90
+  ],
+  "source_sha256": "aff7601654e6a1212050dd082df85ac8aa3d2a9d15fa6e375bac0f5cd0671aec",
+  "extract_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-nostdin",
+    "-ss",
+    "58.000000000000",
+    "-i",
+    "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+    "-af",
+    "atrim=start_sample=96000:end_sample=1536000,asetpts=N/SR/TB",
+    "-t",
+    "30.000000000000",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-f",
+    "f32le",
+    "-"
+  ],
+  "producer": {
+    "command": [
+      "/opt/homebrew/bin/rubberband",
+      "-3",
+      "-p",
+      "0",
+      "-t",
+      "1.0625",
+      "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/pilot-input.wav",
+      "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/pilot-output.wav"
+    ],
+    "output_path": "work/mix-160-20261026/pilot-output.wav",
+    "output_sha256": "2e5d32d81a7f959d825e7444ef624fbe6565c8c3d182bd845a16ec0941bfa7b8",
+    "output_frames": 1530000,
+    "log_path": "work/mix-160-20261026/pilot-rubberband.log",
+    "log_sha256": "d47ea31218d293a0221bbd7a4030b0956c2098cfa75c24b8874adc8b7b8197a0",
+    "reused_completed_pilot_after_checker_call_exception": true,
+    "elapsed_seconds": null
+  },
+  "attack": {
+    "bands": {
+      "mid": {
+        "lag_ms": -2,
+        "correlation": 0.36374649391071934
+      },
+      "high": {
+        "lag_ms": 0,
+        "correlation": 0.8094477699654171
+      }
+    },
+    "reliable_band_count": 1,
+    "status": "measured",
+    "passed": true,
+    "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+  },
+  "pulse": {
+    "windows": [
+      {
+        "center_seconds": 10.0,
+        "band_bpm": {
+          "low": 164.52796124086305,
+          "mid": 159.9793199093267,
+          "high": 160.09372272928883
+        },
+        "band_strength": {
+          "low": 0.6475953032413434,
+          "mid": 0.6465727714584726,
+          "high": 0.9675278286685924
+        },
+        "median_bpm": 160.09372272928883,
+        "band_spread_bpm": 4.548641331536345
+      },
+      {
+        "center_seconds": 15.0,
+        "band_bpm": {
+          "low": 207.98399843128797,
+          "mid": 160.08627008493258,
+          "high": 160.12128643890483
+        },
+        "band_strength": {
+          "low": 0.6324368510135433,
+          "mid": 0.6316624267442473,
+          "high": 0.9830761469063176
+        },
+        "median_bpm": 160.12128643890483,
+        "band_spread_bpm": 47.89772834635539
+      },
+      {
+        "center_seconds": 20.0,
+        "band_bpm": {
+          "low": 199.8959727039073,
+          "mid": 160.16319111233744,
+          "high": 160.1356906266288
+        },
+        "band_strength": {
+          "low": 0.5970576653315565,
+          "mid": 0.637645968179734,
+          "high": 0.986634785089219
+        },
+        "median_bpm": 160.16319111233744,
+        "band_spread_bpm": 39.760282077278504
+      },
+      {
+        "center_seconds": 25.0,
+        "band_bpm": {
+          "low": 159.86308690359374,
+          "mid": 160.16280009169034,
+          "high": 160.0662849373005
+        },
+        "band_strength": {
+          "low": 0.33567491593565724,
+          "mid": 0.630930472924538,
+          "high": 0.8874221388085786
+        },
+        "median_bpm": 160.0662849373005,
+        "band_spread_bpm": 0.29971318809660374
+      }
+    ],
+    "mid_high_bpm_median": 160.10916038820707,
+    "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+  },
+  "pitch": {
+    "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+    "windows": [
+      {
+        "source_center_seconds": 2.0,
+        "output_center_seconds": 2.125,
+        "best_frequency_shift_cents": 0,
+        "spectral_correlation": 0.8112537816290339
+      },
+      {
+        "source_center_seconds": 8.5,
+        "output_center_seconds": 9.03125,
+        "best_frequency_shift_cents": 0,
+        "spectral_correlation": 0.8668950154602539
+      },
+      {
+        "source_center_seconds": 15.0,
+        "output_center_seconds": 15.9375,
+        "best_frequency_shift_cents": 0,
+        "spectral_correlation": 0.9456660646519909
+      },
+      {
+        "source_center_seconds": 21.5,
+        "output_center_seconds": 22.84375,
+        "best_frequency_shift_cents": 0,
+        "spectral_correlation": 0.9359015267093922
+      },
+      {
+        "source_center_seconds": 28.0,
+        "output_center_seconds": 29.75,
+        "best_frequency_shift_cents": 0,
+        "spectral_correlation": 0.9099839538368466
+      }
+    ],
+    "median_shift_cents": 0.0,
+    "passed": true,
+    "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+  },
+  "passed": true,
+  "direct_listening": false
+}

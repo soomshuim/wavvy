@@ -1,0 +1,2086 @@
+{
+  "schema": "wavvy.capture_170_whole_source_repeat2.v1",
+  "series": "19-30",
+  "status": "rendered_technical_checks_pass_listening_pending",
+  "target_bpm": 170,
+  "repeat_count": 2,
+  "additional_repeats": 0,
+  "entry_count": 40,
+  "transition_count": 39,
+  "source_count": 20,
+  "sample_rate": 48000,
+  "musical_source_trimmed": false,
+  "duration_seconds": 6246.440083333333,
+  "samples": 299829124,
+  "mix_plan_path": "SERIES/19-30/production/mix-170-20261026/mix-plan.json",
+  "mix_plan_sha256": "c20192ef1a911444619cc8d18a773a4457feb998fbf3c33ccc6e8663d952a80d",
+  "encode_record_path": "SERIES/19-30/production/mix-170-20261026/encode-record.json",
+  "encode_record_sha256": "70798db3820f64e1d5f6d9fb2b2746c8086cea5c470087e3358b0ade8842510e",
+  "validation_path": "SERIES/19-30/production/mix-170-20261026/final-technical-validation.json",
+  "validation_sha256": "e30dc921e83a1976566437bc2fc89c27e6d2a2b1a2fb74cddcbe623642570277",
+  "wav_path": "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+  "wav_sha256": "aff7601654e6a1212050dd082df85ac8aa3d2a9d15fa6e375bac0f5cd0671aec",
+  "aac_path": "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+  "aac_sha256": "94762094a5156052e9a4207187eca75d15f056ff91d0e8cad955f659b4e77f18",
+  "final_loudness": {
+    "wav": {
+      "integrated_lufs": -14.0,
+      "true_peak_dbtp": -1.46,
+      "loudness_range_lu": 4.6,
+      "raw": {
+        "input_i": "-14.00",
+        "input_tp": "-1.46",
+        "input_lra": "4.60",
+        "input_thresh": "-24.03",
+        "output_i": "-14.09",
+        "output_tp": "-1.50",
+        "output_lra": "4.50",
+        "output_thresh": "-24.12",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+        "-af",
+        "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+        "-f",
+        "null",
+        "-"
+      ]
+    },
+    "m4a": {
+      "integrated_lufs": -14.04,
+      "true_peak_dbtp": -1.33,
+      "loudness_range_lu": 4.5,
+      "raw": {
+        "input_i": "-14.04",
+        "input_tp": "-1.33",
+        "input_lra": "4.50",
+        "input_thresh": "-24.07",
+        "output_i": "-14.09",
+        "output_tp": "-1.50",
+        "output_lra": "4.40",
+        "output_thresh": "-24.12",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostdin",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+        "-af",
+        "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+        "-f",
+        "null",
+        "-"
+      ]
+    }
+  },
+  "entries": [
+    {
+      "entry": 1,
+      "cycle": 1,
+      "order": 1,
+      "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+      "title": "Goodbye",
+      "mix_start_sample": 0,
+      "mix_end_sample": 7194882,
+      "samples": 7194882,
+      "mix_start_seconds": 0.0,
+      "mix_end_seconds": 149.893375,
+      "corrected_source_frames": [
+        0,
+        7194882
+      ],
+      "source_gain_db": -1.08,
+      "corrected_sha256": "a276acb05c94745f0a47763fe20e6d7f1d7df219b7fc7263912b3f3965a966b0",
+      "corrected_path": "work/mix-170-20261026/corrected/01.wav",
+      "first_grid_beat_sample_global": 545744
+    },
+    {
+      "entry": 2,
+      "cycle": 1,
+      "order": 2,
+      "song_id": "8bf62958-9de5-4249-8ff8-a6e18f9e6a95",
+      "title": "Night Steps",
+      "mix_start_sample": 7131795,
+      "mix_end_sample": 16668251,
+      "samples": 9536456,
+      "mix_start_seconds": 148.5790625,
+      "mix_end_seconds": 347.25522916666665,
+      "corrected_source_frames": [
+        0,
+        9536456
+      ],
+      "source_gain_db": -2.16,
+      "corrected_sha256": "40eb15db8f3f7f42cc5ae7023c52565f14dc028927e655a7465dc6dc086f9ae2",
+      "corrected_path": "work/mix-170-20261026/corrected/02.wav",
+      "first_grid_beat_sample_global": 7661038
+    },
+    {
+      "entry": 3,
+      "cycle": 1,
+      "order": 3,
+      "song_id": "431cbfee-b158-4ced-8cd2-eaae6816ec4f",
+      "title": "Warm Pixels",
+      "mix_start_sample": 16601223,
+      "mix_end_sample": 23940230,
+      "samples": 7339007,
+      "mix_start_seconds": 345.8588125,
+      "mix_end_seconds": 498.7547916666667,
+      "corrected_source_frames": [
+        0,
+        7339007
+      ],
+      "source_gain_db": -1.6799999999999997,
+      "corrected_sha256": "043a419cc85a250ab0be5265b3eee6e32b0159cd474f48e4d43051a102ff6d2a",
+      "corrected_path": "work/mix-170-20261026/corrected/03.wav",
+      "first_grid_beat_sample_global": 16927862
+    },
+    {
+      "entry": 4,
+      "cycle": 1,
+      "order": 4,
+      "song_id": "e4187322-c621-4c74-b3e3-dcec594e6397",
+      "title": "Sunday Voltage",
+      "mix_start_sample": 23873078,
+      "mix_end_sample": 30069464,
+      "samples": 6196386,
+      "mix_start_seconds": 497.3557916666667,
+      "mix_end_seconds": 626.4471666666667,
+      "corrected_source_frames": [
+        0,
+        6196386
+      ],
+      "source_gain_db": -1.9900000000000002,
+      "corrected_sha256": "d06ea5743332c137e63fdf4307342ff93847ec52a61dce9da0bc36a689390a0a",
+      "corrected_path": "work/mix-170-20261026/corrected/04.wav",
+      "first_grid_beat_sample_global": 23992332
+    },
+    {
+      "entry": 5,
+      "cycle": 1,
+      "order": 5,
+      "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+      "title": "Glass Horizon",
+      "mix_start_sample": 30002094,
+      "mix_end_sample": 36895664,
+      "samples": 6893570,
+      "mix_start_seconds": 625.043625,
+      "mix_end_seconds": 768.6596666666667,
+      "corrected_source_frames": [
+        0,
+        6893570
+      ],
+      "source_gain_db": -1.1500000000000004,
+      "corrected_sha256": "07c5597f4ec72effddb77daa9a6213ffadeb9e728fecd6ed6dece175a3b9f0d3",
+      "corrected_path": "work/mix-170-20261026/corrected/05.wav",
+      "first_grid_beat_sample_global": 30294450
+    },
+    {
+      "entry": 6,
+      "cycle": 1,
+      "order": 6,
+      "song_id": "107a4111-0984-4ac0-81f0-2fd4b799e5ae",
+      "title": "Small Satellites",
+      "mix_start_sample": 36836106,
+      "mix_end_sample": 44650542,
+      "samples": 7814436,
+      "mix_start_seconds": 767.418875,
+      "mix_end_seconds": 930.219625,
+      "corrected_source_frames": [
+        0,
+        7814436
+      ],
+      "source_gain_db": -1.6400000000000006,
+      "corrected_sha256": "bc67803964d7f0fcb40bff8163a7d96becc3e281958d9638a49bb068aba38208",
+      "corrected_path": "work/mix-170-20261026/corrected/06.wav",
+      "first_grid_beat_sample_global": 37240332
+    },
+    {
+      "entry": 7,
+      "cycle": 1,
+      "order": 7,
+      "song_id": "b2fb1141-ccb0-42c1-aec3-08698a41632c",
+      "title": "Blue Current",
+      "mix_start_sample": 44588561,
+      "mix_end_sample": 51753116,
+      "samples": 7164555,
+      "mix_start_seconds": 928.9283541666666,
+      "mix_end_seconds": 1078.1899166666667,
+      "corrected_source_frames": [
+        0,
+        7164555
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "31ab792482e547f1d32524499b2b790b6fa9923db8125e2e30819c585f9d0f23",
+      "corrected_path": "work/mix-170-20261026/corrected/07.wav",
+      "first_grid_beat_sample_global": 44880803
+    },
+    {
+      "entry": 8,
+      "cycle": 1,
+      "order": 8,
+      "song_id": "12f8ab9f-b06e-4830-a365-d71407b04211",
+      "title": "Still a Spark",
+      "mix_start_sample": 51690200,
+      "mix_end_sample": 60897821,
+      "samples": 9207621,
+      "mix_start_seconds": 1076.8791666666666,
+      "mix_end_seconds": 1268.7046041666667,
+      "corrected_source_frames": [
+        0,
+        9207621
+      ],
+      "source_gain_db": -1.5399999999999991,
+      "corrected_sha256": "36674112f279b45da9f3aceda130d04a170429f6276b42757257d8c463160725",
+      "corrected_path": "work/mix-170-20261026/corrected/08.wav",
+      "first_grid_beat_sample_global": 52029979
+    },
+    {
+      "entry": 9,
+      "cycle": 1,
+      "order": 9,
+      "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+      "title": "Paper Lanterns",
+      "mix_start_sample": 60828279,
+      "mix_end_sample": 69986080,
+      "samples": 9157801,
+      "mix_start_seconds": 1267.2558125,
+      "mix_end_seconds": 1458.0433333333333,
+      "corrected_source_frames": [
+        0,
+        9157801
+      ],
+      "source_gain_db": -2.41,
+      "corrected_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+      "corrected_path": "work/mix-170-20261026/corrected/09.wav",
+      "first_grid_beat_sample_global": 61178215
+    },
+    {
+      "entry": 10,
+      "cycle": 1,
+      "order": 10,
+      "song_id": "49ef4560-d891-4b29-8223-d82890fa0b2b",
+      "title": "Faded Polaroid",
+      "mix_start_sample": 69915580,
+      "mix_end_sample": 77670953,
+      "samples": 7755373,
+      "mix_start_seconds": 1456.5745833333333,
+      "mix_end_seconds": 1618.1448541666666,
+      "corrected_source_frames": [
+        0,
+        7755373
+      ],
+      "source_gain_db": -1.7100000000000009,
+      "corrected_sha256": "88f279467e200a938ce034cc1ba9c8ad01ae5dc5335e69955e8be9996d3bb937",
+      "corrected_path": "work/mix-170-20261026/corrected/10.wav",
+      "first_grid_beat_sample_global": 70207862
+    },
+    {
+      "entry": 11,
+      "cycle": 1,
+      "order": 11,
+      "song_id": "88442318-e044-44b4-981f-caebf020253d",
+      "title": "Half Past Home",
+      "mix_start_sample": 77602676,
+      "mix_end_sample": 87088986,
+      "samples": 9486310,
+      "mix_start_seconds": 1616.7224166666667,
+      "mix_end_seconds": 1814.353875,
+      "corrected_source_frames": [
+        0,
+        9486310
+      ],
+      "source_gain_db": -1.67,
+      "corrected_sha256": "7ce7cd5f6dc6c36bc63f1fb496cb609c2f2250d36df690b91294bad807ea0b38",
+      "corrected_path": "work/mix-170-20261026/corrected/11.wav",
+      "first_grid_beat_sample_global": 78153273
+    },
+    {
+      "entry": 12,
+      "cycle": 1,
+      "order": 12,
+      "song_id": "123cccac-d4df-45f9-9c76-17ccd2f5ed6b",
+      "title": "In Da Dream",
+      "mix_start_sample": 87014993,
+      "mix_end_sample": 95660710,
+      "samples": 8645717,
+      "mix_start_seconds": 1812.8123541666666,
+      "mix_end_seconds": 1992.9314583333332,
+      "corrected_source_frames": [
+        0,
+        8645717
+      ],
+      "source_gain_db": -2.4499999999999993,
+      "corrected_sha256": "47a49012518acd38ddd1439d05308f734baebcd1c92c5e9518b557b6d947daea",
+      "corrected_path": "work/mix-170-20261026/corrected/12.wav",
+      "first_grid_beat_sample_global": 87674215
+    },
+    {
+      "entry": 13,
+      "cycle": 1,
+      "order": 13,
+      "song_id": "e043cd5d-7046-4ec9-aefe-14e8df4927c0",
+      "title": "Pocket Sunrise",
+      "mix_start_sample": 95598154,
+      "mix_end_sample": 101196477,
+      "samples": 5598323,
+      "mix_start_seconds": 1991.6282083333333,
+      "mix_end_seconds": 2108.2599375,
+      "corrected_source_frames": [
+        0,
+        5598323
+      ],
+      "source_gain_db": -2.119999999999999,
+      "corrected_sha256": "a9cb08592f27d902e1bcba79785914731180de57b90fd0a509069e1968bbcd3d",
+      "corrected_path": "work/mix-170-20261026/corrected/13.wav",
+      "first_grid_beat_sample_global": 96110920
+    },
+    {
+      "entry": 14,
+      "cycle": 1,
+      "order": 14,
+      "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+      "title": "Keep the Window Open",
+      "mix_start_sample": 101127138,
+      "mix_end_sample": 109355502,
+      "samples": 8228364,
+      "mix_start_seconds": 2106.815375,
+      "mix_end_seconds": 2278.239625,
+      "corrected_source_frames": [
+        0,
+        8228364
+      ],
+      "source_gain_db": -3.0,
+      "corrected_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+      "corrected_path": "work/mix-170-20261026/corrected/14.wav",
+      "first_grid_beat_sample_global": 101752332
+    },
+    {
+      "entry": 15,
+      "cycle": 1,
+      "order": 15,
+      "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+      "title": "A Sorrow Beyond Dreams",
+      "mix_start_sample": 109285495,
+      "mix_end_sample": 115413736,
+      "samples": 6128241,
+      "mix_start_seconds": 2276.7811458333335,
+      "mix_end_seconds": 2404.4528333333333,
+      "corrected_source_frames": [
+        0,
+        6128241
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+      "corrected_path": "work/mix-170-20261026/corrected/15.wav",
+      "first_grid_beat_sample_global": 109765509
+    },
+    {
+      "entry": 16,
+      "cycle": 1,
+      "order": 16,
+      "song_id": "7f89058e-1d77-452a-b081-d5fd78511be5",
+      "title": "Sunlit",
+      "mix_start_sample": 115350750,
+      "mix_end_sample": 122083244,
+      "samples": 6732494,
+      "mix_start_seconds": 2403.140625,
+      "mix_end_seconds": 2543.4009166666665,
+      "corrected_source_frames": [
+        0,
+        6732494
+      ],
+      "source_gain_db": -1.7899999999999991,
+      "corrected_sha256": "caf5b42da896f3ef49366d019cff02c6d6f4e66cb03afff100468a49d4c1989e",
+      "corrected_path": "work/mix-170-20261026/corrected/16.wav",
+      "first_grid_beat_sample_global": 115644097
+    },
+    {
+      "entry": 17,
+      "cycle": 1,
+      "order": 17,
+      "song_id": "0f47dc9a-f2e0-44d9-947c-765b27928301",
+      "title": "After The Rain",
+      "mix_start_sample": 122014878,
+      "mix_end_sample": 128172347,
+      "samples": 6157469,
+      "mix_start_seconds": 2541.976625,
+      "mix_end_seconds": 2670.2572291666665,
+      "corrected_source_frames": [
+        0,
+        6157469
+      ],
+      "source_gain_db": -1.2699999999999996,
+      "corrected_sha256": "38bd054c74dde45d33109322eed75f8cf06b78fbad9fda1ec318cdfb294c3428",
+      "corrected_path": "work/mix-170-20261026/corrected/17.wav",
+      "first_grid_beat_sample_global": 122606920
+    },
+    {
+      "entry": 18,
+      "cycle": 1,
+      "order": 18,
+      "song_id": "eedc3220-8893-42bb-ad09-971aeaea5544",
+      "title": "Pulse",
+      "mix_start_sample": 128102987,
+      "mix_end_sample": 135850534,
+      "samples": 7747547,
+      "mix_start_seconds": 2668.812229166667,
+      "mix_end_seconds": 2830.2194583333335,
+      "corrected_source_frames": [
+        0,
+        7747547
+      ],
+      "source_gain_db": -1.5600000000000005,
+      "corrected_sha256": "01843e35abf3572cd9b6c46ef350090ae9f1e25b3c183e5d671865e45f3e7dbd",
+      "corrected_path": "work/mix-170-20261026/corrected/18.wav",
+      "first_grid_beat_sample_global": 128400803
+    },
+    {
+      "entry": 19,
+      "cycle": 1,
+      "order": 19,
+      "song_id": "29316e83-c0b8-412c-8d0d-ce7774018b45",
+      "title": "Open Roads",
+      "mix_start_sample": 135788256,
+      "mix_end_sample": 142547507,
+      "samples": 6759251,
+      "mix_start_seconds": 2828.922,
+      "mix_end_seconds": 2969.7397291666666,
+      "corrected_source_frames": [
+        0,
+        6759251
+      ],
+      "source_gain_db": -2.0600000000000005,
+      "corrected_sha256": "ec209125098d94c6f0638250663c3e95e2a0427d54a610bb60c0e3a7be13f06e",
+      "corrected_path": "work/mix-170-20261026/corrected/19.wav",
+      "first_grid_beat_sample_global": 136346215
+    },
+    {
+      "entry": 20,
+      "cycle": 1,
+      "order": 20,
+      "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+      "title": "Dancing Tears",
+      "mix_start_sample": 142487605,
+      "mix_end_sample": 149950536,
+      "samples": 7462931,
+      "mix_start_seconds": 2968.4917708333332,
+      "mix_end_seconds": 3123.9695,
+      "corrected_source_frames": [
+        0,
+        7462931
+      ],
+      "source_gain_db": -1.33,
+      "corrected_sha256": "c2d4411f2f52a02fc10d050b52f1e7c61ca4135064616716f4a5c9e1200e58ba",
+      "corrected_path": "work/mix-170-20261026/corrected/20.wav",
+      "first_grid_beat_sample_global": 143173509
+    },
+    {
+      "entry": 21,
+      "cycle": 2,
+      "order": 1,
+      "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+      "title": "Goodbye",
+      "mix_start_sample": 149878588,
+      "mix_end_sample": 157073470,
+      "samples": 7194882,
+      "mix_start_seconds": 3122.4705833333333,
+      "mix_end_seconds": 3272.3639583333334,
+      "corrected_source_frames": [
+        0,
+        7194882
+      ],
+      "source_gain_db": -1.08,
+      "corrected_sha256": "a276acb05c94745f0a47763fe20e6d7f1d7df219b7fc7263912b3f3965a966b0",
+      "corrected_path": "work/mix-170-20261026/corrected/01.wav",
+      "first_grid_beat_sample_global": 150424332
+    },
+    {
+      "entry": 22,
+      "cycle": 2,
+      "order": 2,
+      "song_id": "8bf62958-9de5-4249-8ff8-a6e18f9e6a95",
+      "title": "Night Steps",
+      "mix_start_sample": 157010383,
+      "mix_end_sample": 166546839,
+      "samples": 9536456,
+      "mix_start_seconds": 3271.049645833333,
+      "mix_end_seconds": 3469.7258125,
+      "corrected_source_frames": [
+        0,
+        9536456
+      ],
+      "source_gain_db": -2.16,
+      "corrected_sha256": "40eb15db8f3f7f42cc5ae7023c52565f14dc028927e655a7465dc6dc086f9ae2",
+      "corrected_path": "work/mix-170-20261026/corrected/02.wav",
+      "first_grid_beat_sample_global": 157539626
+    },
+    {
+      "entry": 23,
+      "cycle": 2,
+      "order": 3,
+      "song_id": "431cbfee-b158-4ced-8cd2-eaae6816ec4f",
+      "title": "Warm Pixels",
+      "mix_start_sample": 166479811,
+      "mix_end_sample": 173818818,
+      "samples": 7339007,
+      "mix_start_seconds": 3468.3293958333334,
+      "mix_end_seconds": 3621.225375,
+      "corrected_source_frames": [
+        0,
+        7339007
+      ],
+      "source_gain_db": -1.6799999999999997,
+      "corrected_sha256": "043a419cc85a250ab0be5265b3eee6e32b0159cd474f48e4d43051a102ff6d2a",
+      "corrected_path": "work/mix-170-20261026/corrected/03.wav",
+      "first_grid_beat_sample_global": 166806450
+    },
+    {
+      "entry": 24,
+      "cycle": 2,
+      "order": 4,
+      "song_id": "e4187322-c621-4c74-b3e3-dcec594e6397",
+      "title": "Sunday Voltage",
+      "mix_start_sample": 173751666,
+      "mix_end_sample": 179948052,
+      "samples": 6196386,
+      "mix_start_seconds": 3619.826375,
+      "mix_end_seconds": 3748.91775,
+      "corrected_source_frames": [
+        0,
+        6196386
+      ],
+      "source_gain_db": -1.9900000000000002,
+      "corrected_sha256": "d06ea5743332c137e63fdf4307342ff93847ec52a61dce9da0bc36a689390a0a",
+      "corrected_path": "work/mix-170-20261026/corrected/04.wav",
+      "first_grid_beat_sample_global": 173870920
+    },
+    {
+      "entry": 25,
+      "cycle": 2,
+      "order": 5,
+      "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+      "title": "Glass Horizon",
+      "mix_start_sample": 179880682,
+      "mix_end_sample": 186774252,
+      "samples": 6893570,
+      "mix_start_seconds": 3747.5142083333335,
+      "mix_end_seconds": 3891.13025,
+      "corrected_source_frames": [
+        0,
+        6893570
+      ],
+      "source_gain_db": -1.1500000000000004,
+      "corrected_sha256": "07c5597f4ec72effddb77daa9a6213ffadeb9e728fecd6ed6dece175a3b9f0d3",
+      "corrected_path": "work/mix-170-20261026/corrected/05.wav",
+      "first_grid_beat_sample_global": 180173038
+    },
+    {
+      "entry": 26,
+      "cycle": 2,
+      "order": 6,
+      "song_id": "107a4111-0984-4ac0-81f0-2fd4b799e5ae",
+      "title": "Small Satellites",
+      "mix_start_sample": 186714694,
+      "mix_end_sample": 194529130,
+      "samples": 7814436,
+      "mix_start_seconds": 3889.8894583333336,
+      "mix_end_seconds": 4052.6902083333334,
+      "corrected_source_frames": [
+        0,
+        7814436
+      ],
+      "source_gain_db": -1.6400000000000006,
+      "corrected_sha256": "bc67803964d7f0fcb40bff8163a7d96becc3e281958d9638a49bb068aba38208",
+      "corrected_path": "work/mix-170-20261026/corrected/06.wav",
+      "first_grid_beat_sample_global": 187118920
+    },
+    {
+      "entry": 27,
+      "cycle": 2,
+      "order": 7,
+      "song_id": "b2fb1141-ccb0-42c1-aec3-08698a41632c",
+      "title": "Blue Current",
+      "mix_start_sample": 194467149,
+      "mix_end_sample": 201631704,
+      "samples": 7164555,
+      "mix_start_seconds": 4051.3989375,
+      "mix_end_seconds": 4200.6605,
+      "corrected_source_frames": [
+        0,
+        7164555
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "31ab792482e547f1d32524499b2b790b6fa9923db8125e2e30819c585f9d0f23",
+      "corrected_path": "work/mix-170-20261026/corrected/07.wav",
+      "first_grid_beat_sample_global": 194759391
+    },
+    {
+      "entry": 28,
+      "cycle": 2,
+      "order": 8,
+      "song_id": "12f8ab9f-b06e-4830-a365-d71407b04211",
+      "title": "Still a Spark",
+      "mix_start_sample": 201568789,
+      "mix_end_sample": 210776410,
+      "samples": 9207621,
+      "mix_start_seconds": 4199.349770833333,
+      "mix_end_seconds": 4391.175208333333,
+      "corrected_source_frames": [
+        0,
+        9207621
+      ],
+      "source_gain_db": -1.5399999999999991,
+      "corrected_sha256": "36674112f279b45da9f3aceda130d04a170429f6276b42757257d8c463160725",
+      "corrected_path": "work/mix-170-20261026/corrected/08.wav",
+      "first_grid_beat_sample_global": 201908568
+    },
+    {
+      "entry": 29,
+      "cycle": 2,
+      "order": 9,
+      "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+      "title": "Paper Lanterns",
+      "mix_start_sample": 210706867,
+      "mix_end_sample": 219864668,
+      "samples": 9157801,
+      "mix_start_seconds": 4389.726395833333,
+      "mix_end_seconds": 4580.513916666667,
+      "corrected_source_frames": [
+        0,
+        9157801
+      ],
+      "source_gain_db": -2.41,
+      "corrected_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+      "corrected_path": "work/mix-170-20261026/corrected/09.wav",
+      "first_grid_beat_sample_global": 211056803
+    },
+    {
+      "entry": 30,
+      "cycle": 2,
+      "order": 10,
+      "song_id": "49ef4560-d891-4b29-8223-d82890fa0b2b",
+      "title": "Faded Polaroid",
+      "mix_start_sample": 219794168,
+      "mix_end_sample": 227549541,
+      "samples": 7755373,
+      "mix_start_seconds": 4579.045166666667,
+      "mix_end_seconds": 4740.6154375,
+      "corrected_source_frames": [
+        0,
+        7755373
+      ],
+      "source_gain_db": -1.7100000000000009,
+      "corrected_sha256": "88f279467e200a938ce034cc1ba9c8ad01ae5dc5335e69955e8be9996d3bb937",
+      "corrected_path": "work/mix-170-20261026/corrected/10.wav",
+      "first_grid_beat_sample_global": 220086450
+    },
+    {
+      "entry": 31,
+      "cycle": 2,
+      "order": 11,
+      "song_id": "88442318-e044-44b4-981f-caebf020253d",
+      "title": "Half Past Home",
+      "mix_start_sample": 227481265,
+      "mix_end_sample": 236967575,
+      "samples": 9486310,
+      "mix_start_seconds": 4739.193020833333,
+      "mix_end_seconds": 4936.824479166667,
+      "corrected_source_frames": [
+        0,
+        9486310
+      ],
+      "source_gain_db": -1.67,
+      "corrected_sha256": "7ce7cd5f6dc6c36bc63f1fb496cb609c2f2250d36df690b91294bad807ea0b38",
+      "corrected_path": "work/mix-170-20261026/corrected/11.wav",
+      "first_grid_beat_sample_global": 228031862
+    },
+    {
+      "entry": 32,
+      "cycle": 2,
+      "order": 12,
+      "song_id": "123cccac-d4df-45f9-9c76-17ccd2f5ed6b",
+      "title": "In Da Dream",
+      "mix_start_sample": 236893581,
+      "mix_end_sample": 245539298,
+      "samples": 8645717,
+      "mix_start_seconds": 4935.2829375,
+      "mix_end_seconds": 5115.402041666666,
+      "corrected_source_frames": [
+        0,
+        8645717
+      ],
+      "source_gain_db": -2.4499999999999993,
+      "corrected_sha256": "47a49012518acd38ddd1439d05308f734baebcd1c92c5e9518b557b6d947daea",
+      "corrected_path": "work/mix-170-20261026/corrected/12.wav",
+      "first_grid_beat_sample_global": 237552803
+    },
+    {
+      "entry": 33,
+      "cycle": 2,
+      "order": 13,
+      "song_id": "e043cd5d-7046-4ec9-aefe-14e8df4927c0",
+      "title": "Pocket Sunrise",
+      "mix_start_sample": 245476743,
+      "mix_end_sample": 251075066,
+      "samples": 5598323,
+      "mix_start_seconds": 5114.0988125,
+      "mix_end_seconds": 5230.730541666667,
+      "corrected_source_frames": [
+        0,
+        5598323
+      ],
+      "source_gain_db": -2.119999999999999,
+      "corrected_sha256": "a9cb08592f27d902e1bcba79785914731180de57b90fd0a509069e1968bbcd3d",
+      "corrected_path": "work/mix-170-20261026/corrected/13.wav",
+      "first_grid_beat_sample_global": 245989509
+    },
+    {
+      "entry": 34,
+      "cycle": 2,
+      "order": 14,
+      "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+      "title": "Keep the Window Open",
+      "mix_start_sample": 251005726,
+      "mix_end_sample": 259234090,
+      "samples": 8228364,
+      "mix_start_seconds": 5229.285958333333,
+      "mix_end_seconds": 5400.710208333333,
+      "corrected_source_frames": [
+        0,
+        8228364
+      ],
+      "source_gain_db": -3.0,
+      "corrected_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+      "corrected_path": "work/mix-170-20261026/corrected/14.wav",
+      "first_grid_beat_sample_global": 251630920
+    },
+    {
+      "entry": 35,
+      "cycle": 2,
+      "order": 15,
+      "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+      "title": "A Sorrow Beyond Dreams",
+      "mix_start_sample": 259164083,
+      "mix_end_sample": 265292324,
+      "samples": 6128241,
+      "mix_start_seconds": 5399.251729166666,
+      "mix_end_seconds": 5526.9234166666665,
+      "corrected_source_frames": [
+        0,
+        6128241
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+      "corrected_path": "work/mix-170-20261026/corrected/15.wav",
+      "first_grid_beat_sample_global": 259644097
+    },
+    {
+      "entry": 36,
+      "cycle": 2,
+      "order": 16,
+      "song_id": "7f89058e-1d77-452a-b081-d5fd78511be5",
+      "title": "Sunlit",
+      "mix_start_sample": 265229338,
+      "mix_end_sample": 271961832,
+      "samples": 6732494,
+      "mix_start_seconds": 5525.611208333334,
+      "mix_end_seconds": 5665.8715,
+      "corrected_source_frames": [
+        0,
+        6732494
+      ],
+      "source_gain_db": -1.7899999999999991,
+      "corrected_sha256": "caf5b42da896f3ef49366d019cff02c6d6f4e66cb03afff100468a49d4c1989e",
+      "corrected_path": "work/mix-170-20261026/corrected/16.wav",
+      "first_grid_beat_sample_global": 265522685
+    },
+    {
+      "entry": 37,
+      "cycle": 2,
+      "order": 17,
+      "song_id": "0f47dc9a-f2e0-44d9-947c-765b27928301",
+      "title": "After The Rain",
+      "mix_start_sample": 271893467,
+      "mix_end_sample": 278050936,
+      "samples": 6157469,
+      "mix_start_seconds": 5664.447229166667,
+      "mix_end_seconds": 5792.727833333333,
+      "corrected_source_frames": [
+        0,
+        6157469
+      ],
+      "source_gain_db": -1.2699999999999996,
+      "corrected_sha256": "38bd054c74dde45d33109322eed75f8cf06b78fbad9fda1ec318cdfb294c3428",
+      "corrected_path": "work/mix-170-20261026/corrected/17.wav",
+      "first_grid_beat_sample_global": 272485509
+    },
+    {
+      "entry": 38,
+      "cycle": 2,
+      "order": 18,
+      "song_id": "eedc3220-8893-42bb-ad09-971aeaea5544",
+      "title": "Pulse",
+      "mix_start_sample": 277981575,
+      "mix_end_sample": 285729122,
+      "samples": 7747547,
+      "mix_start_seconds": 5791.2828125,
+      "mix_end_seconds": 5952.690041666667,
+      "corrected_source_frames": [
+        0,
+        7747547
+      ],
+      "source_gain_db": -1.5600000000000005,
+      "corrected_sha256": "01843e35abf3572cd9b6c46ef350090ae9f1e25b3c183e5d671865e45f3e7dbd",
+      "corrected_path": "work/mix-170-20261026/corrected/18.wav",
+      "first_grid_beat_sample_global": 278279391
+    },
+    {
+      "entry": 39,
+      "cycle": 2,
+      "order": 19,
+      "song_id": "29316e83-c0b8-412c-8d0d-ce7774018b45",
+      "title": "Open Roads",
+      "mix_start_sample": 285666844,
+      "mix_end_sample": 292426095,
+      "samples": 6759251,
+      "mix_start_seconds": 5951.392583333333,
+      "mix_end_seconds": 6092.2103125,
+      "corrected_source_frames": [
+        0,
+        6759251
+      ],
+      "source_gain_db": -2.0600000000000005,
+      "corrected_sha256": "ec209125098d94c6f0638250663c3e95e2a0427d54a610bb60c0e3a7be13f06e",
+      "corrected_path": "work/mix-170-20261026/corrected/19.wav",
+      "first_grid_beat_sample_global": 286224803
+    },
+    {
+      "entry": 40,
+      "cycle": 2,
+      "order": 20,
+      "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+      "title": "Dancing Tears",
+      "mix_start_sample": 292366193,
+      "mix_end_sample": 299829124,
+      "samples": 7462931,
+      "mix_start_seconds": 6090.962354166667,
+      "mix_end_seconds": 6246.440083333333,
+      "corrected_source_frames": [
+        0,
+        7462931
+      ],
+      "source_gain_db": -1.33,
+      "corrected_sha256": "c2d4411f2f52a02fc10d050b52f1e7c61ca4135064616716f4a5c9e1200e58ba",
+      "corrected_path": "work/mix-170-20261026/corrected/20.wav",
+      "first_grid_beat_sample_global": 293052097
+    }
+  ],
+  "transitions": [
+    {
+      "number": 1,
+      "outgoing_entry": 1,
+      "incoming_entry": 2,
+      "outgoing_order": 1,
+      "incoming_order": 2,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 7131795,
+      "end_sample": 7194882,
+      "overlap_samples": 63087,
+      "overlap_seconds": 1.3143125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7131795,
+        7194882
+      ],
+      "incoming_corrected_frames": [
+        0,
+        63087
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 2,
+      "outgoing_entry": 2,
+      "incoming_entry": 3,
+      "outgoing_order": 2,
+      "incoming_order": 3,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 16601223,
+      "end_sample": 16668251,
+      "overlap_samples": 67028,
+      "overlap_seconds": 1.3964166666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9469428,
+        9536456
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67028
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 3,
+      "outgoing_entry": 3,
+      "incoming_entry": 4,
+      "outgoing_order": 3,
+      "incoming_order": 4,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 23873078,
+      "end_sample": 23940230,
+      "overlap_samples": 67152,
+      "overlap_seconds": 1.399,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7271855,
+        7339007
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67152
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 4,
+      "outgoing_entry": 4,
+      "incoming_entry": 5,
+      "outgoing_order": 4,
+      "incoming_order": 5,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 30002094,
+      "end_sample": 30069464,
+      "overlap_samples": 67370,
+      "overlap_seconds": 1.4035416666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6129016,
+        6196386
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67370
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 5,
+      "outgoing_entry": 5,
+      "incoming_entry": 6,
+      "outgoing_order": 5,
+      "incoming_order": 6,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 36836106,
+      "end_sample": 36895664,
+      "overlap_samples": 59558,
+      "overlap_seconds": 1.2407916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6834012,
+        6893570
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59558
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 6,
+      "outgoing_entry": 6,
+      "incoming_entry": 7,
+      "outgoing_order": 6,
+      "incoming_order": 7,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 44588561,
+      "end_sample": 44650542,
+      "overlap_samples": 61981,
+      "overlap_seconds": 1.2912708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7752455,
+        7814436
+      ],
+      "incoming_corrected_frames": [
+        0,
+        61981
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 7,
+      "outgoing_entry": 7,
+      "incoming_entry": 8,
+      "outgoing_order": 7,
+      "incoming_order": 8,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 51690200,
+      "end_sample": 51753116,
+      "overlap_samples": 62916,
+      "overlap_seconds": 1.31075,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7101639,
+        7164555
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62916
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 8,
+      "outgoing_entry": 8,
+      "incoming_entry": 9,
+      "outgoing_order": 8,
+      "incoming_order": 9,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 60828279,
+      "end_sample": 60897821,
+      "overlap_samples": 69542,
+      "overlap_seconds": 1.4487916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9138079,
+        9207621
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69542
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 9,
+      "outgoing_entry": 9,
+      "incoming_entry": 10,
+      "outgoing_order": 9,
+      "incoming_order": 10,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 69915580,
+      "end_sample": 69986080,
+      "overlap_samples": 70500,
+      "overlap_seconds": 1.46875,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9087301,
+        9157801
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70500
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 10,
+      "outgoing_entry": 10,
+      "incoming_entry": 11,
+      "outgoing_order": 10,
+      "incoming_order": 11,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 77602676,
+      "end_sample": 77670953,
+      "overlap_samples": 68277,
+      "overlap_seconds": 1.4224375,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7687096,
+        7755373
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68277
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 11,
+      "outgoing_entry": 11,
+      "incoming_entry": 12,
+      "outgoing_order": 11,
+      "incoming_order": 12,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 87014993,
+      "end_sample": 87088986,
+      "overlap_samples": 73993,
+      "overlap_seconds": 1.5415208333333332,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9412317,
+        9486310
+      ],
+      "incoming_corrected_frames": [
+        0,
+        73993
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 12,
+      "outgoing_entry": 12,
+      "incoming_entry": 13,
+      "outgoing_order": 12,
+      "incoming_order": 13,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 95598154,
+      "end_sample": 95660710,
+      "overlap_samples": 62556,
+      "overlap_seconds": 1.30325,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8583161,
+        8645717
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62556
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 13,
+      "outgoing_entry": 13,
+      "incoming_entry": 14,
+      "outgoing_order": 13,
+      "incoming_order": 14,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 101127138,
+      "end_sample": 101196477,
+      "overlap_samples": 69339,
+      "overlap_seconds": 1.4445625,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        5528984,
+        5598323
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69339
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 14,
+      "outgoing_entry": 14,
+      "incoming_entry": 15,
+      "outgoing_order": 14,
+      "incoming_order": 15,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 109285495,
+      "end_sample": 109355502,
+      "overlap_samples": 70007,
+      "overlap_seconds": 1.4584791666666668,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8158357,
+        8228364
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70007
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 15,
+      "outgoing_entry": 15,
+      "incoming_entry": 16,
+      "outgoing_order": 15,
+      "incoming_order": 16,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 115350750,
+      "end_sample": 115413736,
+      "overlap_samples": 62986,
+      "overlap_seconds": 1.3122083333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6065255,
+        6128241
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62986
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 16,
+      "outgoing_entry": 16,
+      "incoming_entry": 17,
+      "outgoing_order": 16,
+      "incoming_order": 17,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 122014878,
+      "end_sample": 122083244,
+      "overlap_samples": 68366,
+      "overlap_seconds": 1.4242916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6664128,
+        6732494
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68366
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 17,
+      "outgoing_entry": 17,
+      "incoming_entry": 18,
+      "outgoing_order": 17,
+      "incoming_order": 18,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 128102987,
+      "end_sample": 128172347,
+      "overlap_samples": 69360,
+      "overlap_seconds": 1.445,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6088109,
+        6157469
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69360
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 18,
+      "outgoing_entry": 18,
+      "incoming_entry": 19,
+      "outgoing_order": 18,
+      "incoming_order": 19,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 135788256,
+      "end_sample": 135850534,
+      "overlap_samples": 62278,
+      "overlap_seconds": 1.2974583333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7685269,
+        7747547
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62278
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 19,
+      "outgoing_entry": 19,
+      "incoming_entry": 20,
+      "outgoing_order": 19,
+      "incoming_order": 20,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 142487605,
+      "end_sample": 142547507,
+      "overlap_samples": 59902,
+      "overlap_seconds": 1.2479583333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6699349,
+        6759251
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59902
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 20,
+      "outgoing_entry": 20,
+      "incoming_entry": 21,
+      "outgoing_order": 20,
+      "incoming_order": 1,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": true,
+      "start_sample": 149878588,
+      "end_sample": 149950536,
+      "overlap_samples": 71948,
+      "overlap_seconds": 1.4989166666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7390983,
+        7462931
+      ],
+      "incoming_corrected_frames": [
+        0,
+        71948
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 21,
+      "outgoing_entry": 21,
+      "incoming_entry": 22,
+      "outgoing_order": 1,
+      "incoming_order": 2,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 157010383,
+      "end_sample": 157073470,
+      "overlap_samples": 63087,
+      "overlap_seconds": 1.3143125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7131795,
+        7194882
+      ],
+      "incoming_corrected_frames": [
+        0,
+        63087
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 22,
+      "outgoing_entry": 22,
+      "incoming_entry": 23,
+      "outgoing_order": 2,
+      "incoming_order": 3,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 166479811,
+      "end_sample": 166546839,
+      "overlap_samples": 67028,
+      "overlap_seconds": 1.3964166666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9469428,
+        9536456
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67028
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 23,
+      "outgoing_entry": 23,
+      "incoming_entry": 24,
+      "outgoing_order": 3,
+      "incoming_order": 4,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 173751666,
+      "end_sample": 173818818,
+      "overlap_samples": 67152,
+      "overlap_seconds": 1.399,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7271855,
+        7339007
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67152
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 24,
+      "outgoing_entry": 24,
+      "incoming_entry": 25,
+      "outgoing_order": 4,
+      "incoming_order": 5,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 179880682,
+      "end_sample": 179948052,
+      "overlap_samples": 67370,
+      "overlap_seconds": 1.4035416666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6129016,
+        6196386
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67370
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 25,
+      "outgoing_entry": 25,
+      "incoming_entry": 26,
+      "outgoing_order": 5,
+      "incoming_order": 6,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 186714694,
+      "end_sample": 186774252,
+      "overlap_samples": 59558,
+      "overlap_seconds": 1.2407916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6834012,
+        6893570
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59558
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 26,
+      "outgoing_entry": 26,
+      "incoming_entry": 27,
+      "outgoing_order": 6,
+      "incoming_order": 7,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 194467149,
+      "end_sample": 194529130,
+      "overlap_samples": 61981,
+      "overlap_seconds": 1.2912708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7752455,
+        7814436
+      ],
+      "incoming_corrected_frames": [
+        0,
+        61981
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 27,
+      "outgoing_entry": 27,
+      "incoming_entry": 28,
+      "outgoing_order": 7,
+      "incoming_order": 8,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 201568789,
+      "end_sample": 201631704,
+      "overlap_samples": 62915,
+      "overlap_seconds": 1.3107291666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7101640,
+        7164555
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62915
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 28,
+      "outgoing_entry": 28,
+      "incoming_entry": 29,
+      "outgoing_order": 8,
+      "incoming_order": 9,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 210706867,
+      "end_sample": 210776410,
+      "overlap_samples": 69543,
+      "overlap_seconds": 1.4488125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9138078,
+        9207621
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69543
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 29,
+      "outgoing_entry": 29,
+      "incoming_entry": 30,
+      "outgoing_order": 9,
+      "incoming_order": 10,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 219794168,
+      "end_sample": 219864668,
+      "overlap_samples": 70500,
+      "overlap_seconds": 1.46875,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9087301,
+        9157801
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70500
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 30,
+      "outgoing_entry": 30,
+      "incoming_entry": 31,
+      "outgoing_order": 10,
+      "incoming_order": 11,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 227481265,
+      "end_sample": 227549541,
+      "overlap_samples": 68276,
+      "overlap_seconds": 1.4224166666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7687097,
+        7755373
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68276
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 31,
+      "outgoing_entry": 31,
+      "incoming_entry": 32,
+      "outgoing_order": 11,
+      "incoming_order": 12,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 236893581,
+      "end_sample": 236967575,
+      "overlap_samples": 73994,
+      "overlap_seconds": 1.5415416666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9412316,
+        9486310
+      ],
+      "incoming_corrected_frames": [
+        0,
+        73994
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 32,
+      "outgoing_entry": 32,
+      "incoming_entry": 33,
+      "outgoing_order": 12,
+      "incoming_order": 13,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 245476743,
+      "end_sample": 245539298,
+      "overlap_samples": 62555,
+      "overlap_seconds": 1.3032291666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8583162,
+        8645717
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62555
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 33,
+      "outgoing_entry": 33,
+      "incoming_entry": 34,
+      "outgoing_order": 13,
+      "incoming_order": 14,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 251005726,
+      "end_sample": 251075066,
+      "overlap_samples": 69340,
+      "overlap_seconds": 1.4445833333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        5528983,
+        5598323
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69340
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 34,
+      "outgoing_entry": 34,
+      "incoming_entry": 35,
+      "outgoing_order": 14,
+      "incoming_order": 15,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 259164083,
+      "end_sample": 259234090,
+      "overlap_samples": 70007,
+      "overlap_seconds": 1.4584791666666668,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8158357,
+        8228364
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70007
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 35,
+      "outgoing_entry": 35,
+      "incoming_entry": 36,
+      "outgoing_order": 15,
+      "incoming_order": 16,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 265229338,
+      "end_sample": 265292324,
+      "overlap_samples": 62986,
+      "overlap_seconds": 1.3122083333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6065255,
+        6128241
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62986
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 36,
+      "outgoing_entry": 36,
+      "incoming_entry": 37,
+      "outgoing_order": 16,
+      "incoming_order": 17,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 271893467,
+      "end_sample": 271961832,
+      "overlap_samples": 68365,
+      "overlap_seconds": 1.4242708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6664129,
+        6732494
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68365
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 37,
+      "outgoing_entry": 37,
+      "incoming_entry": 38,
+      "outgoing_order": 17,
+      "incoming_order": 18,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 277981575,
+      "end_sample": 278050936,
+      "overlap_samples": 69361,
+      "overlap_seconds": 1.4450208333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6088108,
+        6157469
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69361
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 38,
+      "outgoing_entry": 38,
+      "incoming_entry": 39,
+      "outgoing_order": 18,
+      "incoming_order": 19,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 285666844,
+      "end_sample": 285729122,
+      "overlap_samples": 62278,
+      "overlap_seconds": 1.2974583333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7685269,
+        7747547
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62278
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 39,
+      "outgoing_entry": 39,
+      "incoming_entry": 40,
+      "outgoing_order": 19,
+      "incoming_order": 20,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 292366193,
+      "end_sample": 292426095,
+      "overlap_samples": 59902,
+      "overlap_seconds": 1.2479583333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6699349,
+        6759251
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59902
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    }
+  ],
+  "listener_approved": false,
+  "originals_preserved": true,
+  "independent_output_measurements": [
+    {
+      "order": 1,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/01.json",
+      "sha256": "cf4c5d450dcca8c59dbe8a6f74650755fff59e1c5a84a3eae5a250568954f507",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/01.json",
+      "alias_diagnosis_sha256": "b6d55e5b1216661719df403cf67e226b2729ed9fca7b3fbadafe062106bf390a"
+    },
+    {
+      "order": 2,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/02.json",
+      "sha256": "899803656fefa9f2546af2561c4661f75a81cf43cdd9ebe090142923f8c64a14",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/02.json",
+      "alias_diagnosis_sha256": "32133f019c9d49d5abdc0502939b794fa7fba41ca90e1fb8f546c2aa7af7f6be"
+    },
+    {
+      "order": 3,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/03.json",
+      "sha256": "eaa54f69c5aa88fe29bd0441474fee26f47eb9432e0a80a26a38b9e35b539ed2",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/03.json",
+      "alias_diagnosis_sha256": "8b24f2e12b1f221fada940837aeff35a10f573aa02db1e9c48a6263e22a493de"
+    },
+    {
+      "order": 4,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/04.json",
+      "sha256": "9e53f3ab2b8b8fa2b6c5cb9f4311dc3efa3c411a263b6949f0de42b1f4090c13",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/04.json",
+      "alias_diagnosis_sha256": "84261cec8e88cd44ead6328f42c02bde20f93cb00bb14c722b92ba0e6ab27e52"
+    },
+    {
+      "order": 5,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/05.json",
+      "sha256": "e1772d56baf0a0b37b72a762aa2f8aca963dedf5e284bc8c677237b1a8062e65",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/05.json",
+      "alias_diagnosis_sha256": "cc993d70c6cc7b597d0a812e668a0222bc20f7a474a93aee711d91da56843d08"
+    },
+    {
+      "order": 6,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/06.json",
+      "sha256": "b8ce629b1b6f6798f0302e02f9a8482eb9c0f575888f016a957fab576676c959",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/06.json",
+      "alias_diagnosis_sha256": "fb22c82cf3a0820fd9cf610186ad14bca5ae975898b0edb9906013bd30f030ad"
+    },
+    {
+      "order": 7,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/07.json",
+      "sha256": "7b3e7ce929407f1a5d02b562fa3c3bf2e4bc641bb1cb42fb7147b912c2dffceb",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/07.json",
+      "alias_diagnosis_sha256": "6e11eeac946b502875bbb3d542fbe8a79afd7afbdb98692f9c64edf68449bcd0"
+    },
+    {
+      "order": 8,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/08.json",
+      "sha256": "ded598a185d026fc2015a049caf23cafbc9e034683fd7c326fb619152a92ed2f",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/08.json",
+      "alias_diagnosis_sha256": "feffc68b8e65cc2f416c0748c1de16d57c12363d9440e1c60a997ceb6c9fba57"
+    },
+    {
+      "order": 9,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/09.json",
+      "sha256": "1d179de42c221b849605599e06c5437b033b35763505b0df32a5065bc77e34a4",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/09.json",
+      "alias_diagnosis_sha256": "c3ef58fab435ae7e00c13c03920ad4b29b179956daa608094f7bf93c3034797b"
+    },
+    {
+      "order": 10,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/10.json",
+      "sha256": "bd27bb0808d9f0c57ff0af25b6e3b7af4f5d621971cc0379928a3bed9bf41afb",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/10.json",
+      "alias_diagnosis_sha256": "239ff2a253213a3e9e299fbd78e415e014e4758bb5f38a423736ed2ab4b5e5d1"
+    },
+    {
+      "order": 11,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/11.json",
+      "sha256": "2a17be2b4bb6d7563714b7c13820c6474199d617e213e6bde7444fa194532c0f",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/11.json",
+      "alias_diagnosis_sha256": "e844a93e85597e2ab1e50c096b1675eb120ec0be96298d4062e438c4f6fb25d6"
+    },
+    {
+      "order": 12,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/12.json",
+      "sha256": "ba6ee1c7449da30b34665713252123da7979e30dec09bee11af360aeff435bf5",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/12.json",
+      "alias_diagnosis_sha256": "0d000bd5f9db1ad57ea920d6d09980e439c51064261be6cb3626fd743cbb92f5"
+    },
+    {
+      "order": 13,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/13.json",
+      "sha256": "62d3dde67cdff8a4ed9f979a8a917f66664ec59e4df093ede6cbe3438c1ce897",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/13.json",
+      "alias_diagnosis_sha256": "898bba1fa580c8f085932bb0297059ad5906ab780fdaedc94419f9bdcb951b48"
+    },
+    {
+      "order": 14,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/14.json",
+      "sha256": "95fc1dedbaf164d1e073300270b402845736d36d97a9c933b5fafc6e1cc7ecde",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/14.json",
+      "alias_diagnosis_sha256": "88208602cbb050d771ff0131ddafb48fa257b8dad291e90eaf5a786366cfc016"
+    },
+    {
+      "order": 15,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/15.json",
+      "sha256": "09410e00f1e71fe356eae2defe96960a87b05b3a4b0500dc6583b7f8525e88e3",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/15.json",
+      "alias_diagnosis_sha256": "a53cb10dec4c376d9b268e676d27f901f9008607a933f585d4ccac16db92c2e8"
+    },
+    {
+      "order": 16,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/16.json",
+      "sha256": "e796af344c1c57a361e53db39085c9f5f3ec4ec831148ba887dc6dea9bf9ff7f",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/16.json",
+      "alias_diagnosis_sha256": "2424581295f64a3cd09093ed1cc00a83d10b05777c70a405883727164950d276"
+    },
+    {
+      "order": 17,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/17.json",
+      "sha256": "4109e254bfa641681885022a99ee76cd37c5d0bc3a5fcec4fea2f75c431bce03",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/17.json",
+      "alias_diagnosis_sha256": "f0ad4057255b6b61ef6a3df45d7b4eb0b920dc2f74452337f885e036b71098ec"
+    },
+    {
+      "order": 18,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/18.json",
+      "sha256": "b03ba207f0ceb13916132648e8482f004083e78c91d134365e60248b1e327f99",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/18.json",
+      "alias_diagnosis_sha256": "6cef0d330ba820f592321eaeb6dacf9ab4e48911d207a15994a7974cc6c3192c"
+    },
+    {
+      "order": 19,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/19.json",
+      "sha256": "b6bfbb0a744b73e4a76c1a91bef6dfa2eb1d178c8ca685bc6af1f0dc6afaa9a1",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/19.json",
+      "alias_diagnosis_sha256": "3b4af293f35c291fcbec0c970bdad4fae6ac25716261311319f4860b05279824"
+    },
+    {
+      "order": 20,
+      "path": "SERIES/19-30/production/mix-170-20261026/independent-beats/20.json",
+      "sha256": "b0b2c61a685efa434bab7656f39193424ee2c94b26b321e031faf7126af6b72e",
+      "alias_diagnosis_path": "SERIES/19-30/production/mix-170-20261026/model-alias-diagnosis/20.json",
+      "alias_diagnosis_sha256": "55f6a515e8de550520b542b1952d4dd7f5340509595a5993ba60cef2cb69e4bf"
+    }
+  ],
+  "tracklist_path": "SERIES/19-30/production/mix-170-20261026/tracklist.md",
+  "tracklist_sha256": "cae06773186bc3a47284140363763ff5b7da4794873451d043c8cdfaab2b07f8",
+  "producer_code": [
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/render-170.py",
+      "sha256": "481d6978817e313471590d7d64d3e6bdee9da5dd0b2dce7db40e1176f4d6d418"
+    },
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/render-rubberband-170.py",
+      "sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/assemble-170.py",
+      "sha256": "aa108f14d234430554b490336ef913cb70388386e65e02fe6de4c2b9bd159c97"
+    },
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/fix-aac-packet-timestamps.py",
+      "sha256": "5ee475341917d04e95b2df558d06e7e5eb7f8d66c30649ac700b74ad081ca34a"
+    },
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/measure-rubberband-beats.py",
+      "sha256": "a3b30cc7e0152f39bcc744b9a1b439b427b268920acd35c515eafb93f1485648"
+    },
+    {
+      "path": "SERIES/19-30/production/mix-170-20261026/diagnose-model-beats.py",
+      "sha256": "1efc26d6c08d9f764cc315b9616f85112890e4ae5c247d1b1efb014bd8918b4c"
+    }
+  ],
+  "aac_metadata_only_remux": {
+    "path": "SERIES/19-30/production/mix-170-20261026/aac-pts-repair.json",
+    "sha256": "443087fef547cc52ccb4079c4bad549424532abad22246fdcfb4dd420c2fc87b"
+  },
+  "limitations": [
+    "Inferred quarter-path phase and sparse-section speed interpolation are not verified audible beats at every instant.",
+    "Exact bar downbeats are unconfirmed. Late drum entrances and original quiet tails remain.",
+    "Dancing Tears half/full metrical ambiguity remains explicitly documented in the source time map.",
+    "Technical measurements do not constitute direct listening approval. No video or source-final state promotion.",
+    "Raw valid song boundaries inherit UI/PTS estimates with uncalibrated audio output latency."
+  ]
+}

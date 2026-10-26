@@ -1,0 +1,38 @@
+{
+  "schema": "wavvy.final_integrated_premixed_audio.v1",
+  "series": "19-30",
+  "vocal_mode": "instrumental",
+  "raw_prompt_status": "unverified",
+  "repeat_count": 2,
+  "additional_repeats": 0,
+  "audio": {
+    "path": "output/mix-160-20261026/continuous-mix-1930-160-repeat2.m4a",
+    "sha256": "35aa3d44f9c7d50e0a994664e819c3ae34ce9dbe7aa6fbcb098e69c7c7b9f0f7"
+  },
+  "image": {
+    "path": "input/video-background.png",
+    "sha256": "8c8a7583db186719cd9f07f13b1756299096a69be12049821609bb1f516bf78e"
+  },
+  "mix_manifest": {
+    "path": "production/mix-160-20261026/manifest.json",
+    "sha256": "1f291a9d734ad31857f8b70810de5bd4cdec0e07e4f4de7ac1de580edbd560ee"
+  },
+  "selection_basis": {
+    "path": "production/capture-analysis-20261026/sequence.json",
+    "sha256": "99725b2fc3c2bdc76daf22378e2464de43c33bf131cae601aa9fb30425340709"
+  },
+  "capture_manifest": {
+    "path": "production/capture-analysis-20261026/capture-manifest.json",
+    "sha256": "b0289529f00950dca325703a5278c4fcf5e347e461abe61e1c053b18e3447ee9"
+  },
+  "render": {
+    "path": "output/video-logo-only-20261026/final-1930-4k.mp4",
+    "sha256": "a73ac9dba08586e4ab132c17ed7f5ec0676db3c9708f1c9655ad65c0ca563588",
+    "record": {
+      "path": "production/video-logo-only-20261026/video-record.json",
+      "sha256": "54079346c55485a703ccf2ff7d6f2590b4dccc1aaa1c1cc63290ce16abccad68"
+    }
+  },
+  "scope": "Current captured 20-song selection, two cycles already integrated; whole 170 master converted once to 160 with pitch retained. Separate logo-only video background and user thumbnail. Historical raw generation prompts remain unverified. No additional repeats or completed upload claimed.",
+  "recorded_utc": "2026-10-26T08:31:38.318855+00:00"
+}

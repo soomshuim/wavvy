@@ -1,0 +1,73 @@
+{
+  "read_intervals": "6240%",
+  "last_pts_discontinuities": [
+    {
+      "previous_frame": {
+        "pts": 299688960,
+        "nb_samples": 1024
+      },
+      "next_frame": {
+        "pts": 299692860,
+        "nb_samples": 1024
+      },
+      "gap_samples": 2876
+    }
+  ],
+  "last_packets": [
+    {
+      "pts": 299823932,
+      "dts": 299823932,
+      "duration": 1024
+    },
+    {
+      "pts": 299824956,
+      "dts": 299824956,
+      "duration": 1024
+    },
+    {
+      "pts": 299825980,
+      "dts": 299825980,
+      "duration": 1024
+    },
+    {
+      "pts": 299827004,
+      "dts": 299827004,
+      "duration": 1024
+    },
+    {
+      "pts": 299828028,
+      "dts": 299828028,
+      "duration": 1024
+    },
+    {
+      "pts": 299829052,
+      "dts": 299829052,
+      "duration": 1024
+    },
+    {
+      "pts": 299830076,
+      "dts": 299830076,
+      "duration": 1024
+    },
+    {
+      "pts": 299831100,
+      "dts": 299831100,
+      "duration": 900
+    }
+  ],
+  "command": [
+    "ffprobe",
+    "-v",
+    "error",
+    "-read_intervals",
+    "6240%",
+    "-select_streams",
+    "a:0",
+    "-show_frames",
+    "-show_entries",
+    "frame=pts,nb_samples",
+    "-of",
+    "json",
+    "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a"
+  ]
+}

@@ -1,0 +1,17 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Warm Pixels (Drive)" [ref=e500] [focused]
+  - button "Close" [ref=e501]
+  - text: "Warm Pixels (Drive)"
+  - button "Upload" [ref=e502]
+  - button "Create" [ref=e503]
+  - button "Animate" [ref=e504]
+  - text: "Allow comments"
+  - switch [ref=e505] [checked]
+  - text: "Allow remix"
+  - switch [ref=e506] [checked]
+  - button "Edit caption, lyrics and styles" [ref=e507]
+  - button "Cancel" [ref=e508]
+  - button "Save" [ref=e509] [disabled]

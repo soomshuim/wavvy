@@ -1,0 +1,5020 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=FQ-8bQbPSaY",
+  "duration_seconds": 389.701,
+  "analysis_method": "NumPy/SciPy deterministic signal measurements. No audio-input listening was available.",
+  "audience_and_venue_limit": "Raw concert mix includes cheers, applause and audience singing. These cannot establish original vocals, instruments, composition climax or studio reverb. Automatic novelty/energy/key changes are unconfirmed musical-structure candidates.",
+  "edited_input": {
+    "path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish.wav",
+    "sha256": "3c5f7c560115682be1e42893d6ea807c5afdd22dc5bc5c75a0b01593a49380f8",
+    "duration_seconds": 390.21683333333334,
+    "manifest": ".ai/research/2026-10-25-1930-wish/edit-manifest.json",
+    "excluded_pause_neighborhood_original_video_seconds": [
+      250.024838,
+      254.247689
+    ],
+    "alignment": "Piecewise media-event mapping, with initial playback mapping uncertainty <0.67 s. Upload PCM16 file was analyzed."
+  },
+  "tempo": {
+    "spectral_flux_autocorrelation": [
+      {
+        "bpm": 62.275,
+        "lag_seconds": 0.9634684865515857,
+        "normalized_autocorrelation": 0.7826198629230349
+      },
+      {
+        "bpm": 126.05,
+        "lag_seconds": 0.4760015866719556,
+        "normalized_autocorrelation": 0.7391753028169462
+      },
+      {
+        "bpm": 83.35,
+        "lag_seconds": 0.7198560287942412,
+        "normalized_autocorrelation": 0.6343875830299166
+      },
+      {
+        "bpm": 50.175,
+        "lag_seconds": 1.195814648729447,
+        "normalized_autocorrelation": 0.6040379641903377
+      },
+      {
+        "bpm": 161.5,
+        "lag_seconds": 0.3715170278637771,
+        "normalized_autocorrelation": 0.10029160701770669
+      },
+      {
+        "bpm": 70.8,
+        "lag_seconds": 0.8474576271186441,
+        "normalized_autocorrelation": 0.0901175692561085
+      },
+      {
+        "bpm": 56.175,
+        "lag_seconds": 1.068090787716956,
+        "normalized_autocorrelation": 0.08158870265932287
+      },
+      {
+        "bpm": 101.325,
+        "lag_seconds": 0.5921539600296076,
+        "normalized_autocorrelation": 0.07432556916703836
+      }
+    ],
+    "spectral_flux_fourier": [
+      {
+        "bpm": 124.121,
+        "relative_power": 1.0
+      },
+      {
+        "bpm": 125.146,
+        "relative_power": 0.9120776653289795
+      },
+      {
+        "bpm": 187.68,
+        "relative_power": 0.7520769238471985
+      },
+      {
+        "bpm": 61.824,
+        "relative_power": 0.36284691095352173
+      },
+      {
+        "bpm": 62.534,
+        "relative_power": 0.28581488132476807
+      },
+      {
+        "bpm": 63.716,
+        "relative_power": 0.2747145891189575
+      },
+      {
+        "bpm": 126.881,
+        "relative_power": 0.225981667637825
+      },
+      {
+        "bpm": 121.203,
+        "relative_power": 0.2046164721250534
+      },
+      {
+        "bpm": 117.26,
+        "relative_power": 0.1810692697763443
+      },
+      {
+        "bpm": 58.67,
+        "relative_power": 0.16515031456947327
+      },
+      {
+        "bpm": 122.78,
+        "relative_power": 0.16235755383968353
+      },
+      {
+        "bpm": 50.784,
+        "relative_power": 0.15925535559654236
+      }
+    ],
+    "low_band_onset_autocorrelation": [
+      {
+        "bpm": 126.05,
+        "lag_seconds": 0.4760015866719556,
+        "normalized_autocorrelation": 0.8373636612280739
+      },
+      {
+        "bpm": 62.275,
+        "lag_seconds": 0.9634684865515857,
+        "normalized_autocorrelation": 0.7798133121825089
+      },
+      {
+        "bpm": 206.725,
+        "lag_seconds": 0.29024065787882447,
+        "normalized_autocorrelation": 0.08564253594608731
+      },
+      {
+        "bpm": 52.2,
+        "lag_seconds": 1.1494252873563218,
+        "normalized_autocorrelation": 0.07962905375110334
+      },
+      {
+        "bpm": 90.65,
+        "lag_seconds": 0.6618863761720905,
+        "normalized_autocorrelation": 0.07577368574267304
+      },
+      {
+        "bpm": 78.3,
+        "lag_seconds": 0.7662835249042146,
+        "normalized_autocorrelation": 0.07466198675784057
+      },
+      {
+        "bpm": 166.725,
+        "lag_seconds": 0.35987404408457035,
+        "normalized_autocorrelation": -0.04320963030598066
+      },
+      {
+        "bpm": 71.775,
+        "lag_seconds": 0.8359456635318704,
+        "normalized_autocorrelation": -0.0451640565514704
+      },
+      {
+        "bpm": 99.375,
+        "lag_seconds": 0.6037735849056604,
+        "normalized_autocorrelation": -0.0490201715169088
+      },
+      {
+        "bpm": 55.575,
+        "lag_seconds": 1.0796221322537112,
+        "normalized_autocorrelation": -0.05057684416215318
+      }
+    ],
+    "low_band_onset_fourier": [
+      {
+        "bpm": 125.146,
+        "relative_power": 1.0
+      },
+      {
+        "bpm": 126.171,
+        "relative_power": 0.06243237107992172
+      },
+      {
+        "bpm": 124.042,
+        "relative_power": 0.04988545924425125
+      },
+      {
+        "bpm": 123.096,
+        "relative_power": 0.03857820853590965
+      },
+      {
+        "bpm": 127.196,
+        "relative_power": 0.03255431354045868
+      },
+      {
+        "bpm": 128.143,
+        "relative_power": 0.030170757323503494
+      },
+      {
+        "bpm": 122.071,
+        "relative_power": 0.026273850351572037
+      },
+      {
+        "bpm": 120.336,
+        "relative_power": 0.011559026315808296
+      },
+      {
+        "bpm": 129.956,
+        "relative_power": 0.0105736143887043
+      },
+      {
+        "bpm": 128.852,
+        "relative_power": 0.007650253362953663
+      },
+      {
+        "bpm": 121.361,
+        "relative_power": 0.00746947294101119
+      },
+      {
+        "bpm": 156.768,
+        "relative_power": 0.007356035988777876
+      }
+    ],
+    "local_30_second_windows": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 30.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.1559669748935678
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.05922444047571081
+          },
+          {
+            "bpm": 78.325,
+            "lag_seconds": 0.7660389403127992,
+            "normalized_autocorrelation": 0.032894169768164554
+          },
+          {
+            "bpm": 73.825,
+            "lag_seconds": 0.8127328140873687,
+            "normalized_autocorrelation": 0.03272068096798508
+          },
+          {
+            "bpm": 152.0,
+            "lag_seconds": 0.39473684210526316,
+            "normalized_autocorrelation": 0.02250176208020237
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.121,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 60.72,
+            "relative_power": 0.8070382475852966
+          },
+          {
+            "bpm": 145.649,
+            "relative_power": 0.7576603889465332
+          },
+          {
+            "bpm": 63.007,
+            "relative_power": 0.7107251286506653
+          },
+          {
+            "bpm": 157.32,
+            "relative_power": 0.643959105014801
+          }
+        ]
+      },
+      {
+        "start_seconds": 15.0,
+        "end_seconds": 45.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7880693649022948
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.769559707683214
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.67738005872894
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.657016042402776
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 126.565,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 62.77,
+            "relative_power": 0.8787477016448975
+          },
+          {
+            "bpm": 123.569,
+            "relative_power": 0.7486900091171265
+          },
+          {
+            "bpm": 188.074,
+            "relative_power": 0.24603888392448425
+          },
+          {
+            "bpm": 55.436,
+            "relative_power": 0.18864399194717407
+          }
+        ]
+      },
+      {
+        "start_seconds": 30.0,
+        "end_seconds": 60.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7492781165441984
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7329595877027381
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.498575244483126
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.49532683642863745
+          },
+          {
+            "bpm": 55.575,
+            "lag_seconds": 1.0796221322537112,
+            "normalized_autocorrelation": -0.06579218872705941
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.909,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 119.863,
+            "relative_power": 0.36176371574401855
+          },
+          {
+            "bpm": 127.906,
+            "relative_power": 0.34331628680229187
+          },
+          {
+            "bpm": 121.597,
+            "relative_power": 0.2651278078556061
+          },
+          {
+            "bpm": 61.508,
+            "relative_power": 0.25882402062416077
+          }
+        ]
+      },
+      {
+        "start_seconds": 45.0,
+        "end_seconds": 75.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7279040257060259
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7130610789957386
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.44994689861621706
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.43132692531207056
+          },
+          {
+            "bpm": 101.325,
+            "lag_seconds": 0.5921539600296076,
+            "normalized_autocorrelation": 0.09902915486901849
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 125.304,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 121.282,
+            "relative_power": 0.7175415754318237
+          },
+          {
+            "bpm": 116.708,
+            "relative_power": 0.3927047550678253
+          },
+          {
+            "bpm": 61.43,
+            "relative_power": 0.3911333680152893
+          },
+          {
+            "bpm": 109.69,
+            "relative_power": 0.34308961033821106
+          }
+        ]
+      },
+      {
+        "start_seconds": 60.0,
+        "end_seconds": 90.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8111536263797432
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7458625682428313
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6291629248904866
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6287614821118112
+          },
+          {
+            "bpm": 101.325,
+            "lag_seconds": 0.5921539600296076,
+            "normalized_autocorrelation": 0.17119737129677773
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 62.691,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 187.601,
+            "relative_power": 0.8735935091972351
+          },
+          {
+            "bpm": 125.461,
+            "relative_power": 0.8102501034736633
+          },
+          {
+            "bpm": 120.967,
+            "relative_power": 0.42357751727104187
+          },
+          {
+            "bpm": 117.181,
+            "relative_power": 0.3992134630680084
+          }
+        ]
+      },
+      {
+        "start_seconds": 75.0,
+        "end_seconds": 105.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8148475731594028
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6932045553605128
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6478555592720842
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6439373015968572
+          },
+          {
+            "bpm": 101.325,
+            "lag_seconds": 0.5921539600296076,
+            "normalized_autocorrelation": 0.1275108739772301
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 62.139,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 187.837,
+            "relative_power": 0.8644670844078064
+          },
+          {
+            "bpm": 125.698,
+            "relative_power": 0.3927111327648163
+          },
+          {
+            "bpm": 203.451,
+            "relative_power": 0.23682048916816711
+          },
+          {
+            "bpm": 59.064,
+            "relative_power": 0.18175238370895386
+          }
+        ]
+      },
+      {
+        "start_seconds": 90.0,
+        "end_seconds": 120.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8232003010776525
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.694881172340182
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6504879193095541
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6344954131563704
+          },
+          {
+            "bpm": 166.7,
+            "lag_seconds": 0.3599280143971206,
+            "normalized_autocorrelation": 0.12057474938885546
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 187.995,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 63.559,
+            "relative_power": 0.7105106711387634
+          },
+          {
+            "bpm": 61.272,
+            "relative_power": 0.3498601019382477
+          },
+          {
+            "bpm": 123.805,
+            "relative_power": 0.31928637623786926
+          },
+          {
+            "bpm": 126.723,
+            "relative_power": 0.30351385474205017
+          }
+        ]
+      },
+      {
+        "start_seconds": 105.0,
+        "end_seconds": 135.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6543222031512111
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.6261938991124545
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.4872123922350413
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.452791185924292
+          },
+          {
+            "bpm": 166.7,
+            "lag_seconds": 0.3599280143971206,
+            "normalized_autocorrelation": 0.14876994712811223
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 118.522,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 125.619,
+            "relative_power": 0.9468339681625366
+          },
+          {
+            "bpm": 121.203,
+            "relative_power": 0.7630735039710999
+          },
+          {
+            "bpm": 156.768,
+            "relative_power": 0.7004550099372864
+          },
+          {
+            "bpm": 131.297,
+            "relative_power": 0.5959461331367493
+          }
+        ]
+      },
+      {
+        "start_seconds": 120.0,
+        "end_seconds": 150.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7456998883826734
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7339474876354808
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6630257184527266
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6412316018490001
+          },
+          {
+            "bpm": 70.8,
+            "lag_seconds": 0.8474576271186441,
+            "normalized_autocorrelation": 0.034262274245443675
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 156.689,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 60.799,
+            "relative_power": 0.7738608717918396
+          },
+          {
+            "bpm": 124.436,
+            "relative_power": 0.7066744565963745
+          },
+          {
+            "bpm": 93.761,
+            "relative_power": 0.5807652473449707
+          },
+          {
+            "bpm": 127.275,
+            "relative_power": 0.5788750052452087
+          }
+        ]
+      },
+      {
+        "start_seconds": 135.0,
+        "end_seconds": 165.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8308799301211688
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7749299034520617
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.7532742955461
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.7361699337047874
+          },
+          {
+            "bpm": 69.85,
+            "lag_seconds": 0.8589835361488906,
+            "normalized_autocorrelation": 0.03583126792163542
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 62.139,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 124.673,
+            "relative_power": 0.7976588606834412
+          },
+          {
+            "bpm": 187.758,
+            "relative_power": 0.7703635096549988
+          },
+          {
+            "bpm": 156.216,
+            "relative_power": 0.6042987108230591
+          },
+          {
+            "bpm": 93.919,
+            "relative_power": 0.26441556215286255
+          }
+        ]
+      },
+      {
+        "start_seconds": 150.0,
+        "end_seconds": 180.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7983262054906323
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7477629332892226
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6799249972703387
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6601153639199515
+          },
+          {
+            "bpm": 69.85,
+            "lag_seconds": 0.8589835361488906,
+            "normalized_autocorrelation": 0.05701510165501387
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.357,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 187.522,
+            "relative_power": 0.4774588644504547
+          },
+          {
+            "bpm": 62.691,
+            "relative_power": 0.4063650071620941
+          },
+          {
+            "bpm": 121.676,
+            "relative_power": 0.3463723361492157
+          },
+          {
+            "bpm": 129.483,
+            "relative_power": 0.3057442903518677
+          }
+        ]
+      },
+      {
+        "start_seconds": 165.0,
+        "end_seconds": 195.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7444430589556268
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.724161165691425
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.5838119920251529
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.5592127061144143
+          },
+          {
+            "bpm": 161.5,
+            "lag_seconds": 0.3715170278637771,
+            "normalized_autocorrelation": 0.12962570382374403
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 123.727,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 55.358,
+            "relative_power": 0.3878656327724457
+          },
+          {
+            "bpm": 127.827,
+            "relative_power": 0.35304155945777893
+          },
+          {
+            "bpm": 64.268,
+            "relative_power": 0.21197214722633362
+          },
+          {
+            "bpm": 132.401,
+            "relative_power": 0.1895149052143097
+          }
+        ]
+      },
+      {
+        "start_seconds": 180.0,
+        "end_seconds": 210.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.6981368359673319
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6813079624117986
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.5367531452996143
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.5216402496324014
+          },
+          {
+            "bpm": 166.7,
+            "lag_seconds": 0.3599280143971206,
+            "normalized_autocorrelation": 0.13315290056731063
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 127.748,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 123.017,
+            "relative_power": 0.8429437279701233
+          },
+          {
+            "bpm": 53.386,
+            "relative_power": 0.34986647963523865
+          },
+          {
+            "bpm": 70.971,
+            "relative_power": 0.32561859488487244
+          },
+          {
+            "bpm": 120.257,
+            "relative_power": 0.26255401968955994
+          }
+        ]
+      },
+      {
+        "start_seconds": 195.0,
+        "end_seconds": 225.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.800714787339552
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7434337028109786
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6179935037061769
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6146987473149496
+          },
+          {
+            "bpm": 101.325,
+            "lag_seconds": 0.5921539600296076,
+            "normalized_autocorrelation": 0.036727203829503584
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 126.329,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 187.837,
+            "relative_power": 0.5694222450256348
+          },
+          {
+            "bpm": 123.727,
+            "relative_power": 0.5325976610183716
+          },
+          {
+            "bpm": 128.852,
+            "relative_power": 0.38432618975639343
+          },
+          {
+            "bpm": 61.114,
+            "relative_power": 0.24719522893428802
+          }
+        ]
+      },
+      {
+        "start_seconds": 210.0,
+        "end_seconds": 240.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8540068612501646
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7689115292806802
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.673811160378832
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6518303140530162
+          },
+          {
+            "bpm": 161.5,
+            "lag_seconds": 0.3715170278637771,
+            "normalized_autocorrelation": 0.06336898988562607
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.831,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 187.128,
+            "relative_power": 0.7039259076118469
+          },
+          {
+            "bpm": 63.401,
+            "relative_power": 0.3027920722961426
+          },
+          {
+            "bpm": 61.272,
+            "relative_power": 0.27919402718544006
+          },
+          {
+            "bpm": 183.894,
+            "relative_power": 0.20272457599639893
+          }
+        ]
+      },
+      {
+        "start_seconds": 225.0,
+        "end_seconds": 255.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.576651453947935
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.5415726423511807
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.47214595847676477
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.3835869038419083
+          },
+          {
+            "bpm": 161.5,
+            "lag_seconds": 0.3715170278637771,
+            "normalized_autocorrelation": 0.04313455791689812
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 190.045,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 123.175,
+            "relative_power": 0.9349656105041504
+          },
+          {
+            "bpm": 120.336,
+            "relative_power": 0.7731203436851501
+          },
+          {
+            "bpm": 64.347,
+            "relative_power": 0.6802341341972351
+          },
+          {
+            "bpm": 184.92,
+            "relative_power": 0.6772854328155518
+          }
+        ]
+      },
+      {
+        "start_seconds": 240.0,
+        "end_seconds": 270.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.808153681854846
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6886459605274036
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.63122696191716
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.5720126335195914
+          },
+          {
+            "bpm": 69.85,
+            "lag_seconds": 0.8589835361488906,
+            "normalized_autocorrelation": 0.06661394019074535
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 63.716,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 124.121,
+            "relative_power": 0.8469230532646179
+          },
+          {
+            "bpm": 60.483,
+            "relative_power": 0.6175057291984558
+          },
+          {
+            "bpm": 189.178,
+            "relative_power": 0.31155166029930115
+          },
+          {
+            "bpm": 185.945,
+            "relative_power": 0.24574485421180725
+          }
+        ]
+      },
+      {
+        "start_seconds": 255.0,
+        "end_seconds": 285.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.9162265626015987
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.8448365488278403
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.7080371828227957
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6827905991954146
+          },
+          {
+            "bpm": 69.85,
+            "lag_seconds": 0.8589835361488906,
+            "normalized_autocorrelation": 0.06686112046696455
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.357,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 63.638,
+            "relative_power": 0.21217824518680573
+          },
+          {
+            "bpm": 60.247,
+            "relative_power": 0.170207679271698
+          },
+          {
+            "bpm": 121.597,
+            "relative_power": 0.13896764814853668
+          },
+          {
+            "bpm": 126.802,
+            "relative_power": 0.13781341910362244
+          }
+        ]
+      },
+      {
+        "start_seconds": 270.0,
+        "end_seconds": 300.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.9240789645318597
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.9048288329113736
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.7110206162167035
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6891334729411172
+          },
+          {
+            "bpm": 69.85,
+            "lag_seconds": 0.8589835361488906,
+            "normalized_autocorrelation": 0.12936186648201328
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 125.067,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 131.77,
+            "relative_power": 0.06634826213121414
+          },
+          {
+            "bpm": 129.01,
+            "relative_power": 0.06575214117765427
+          },
+          {
+            "bpm": 118.128,
+            "relative_power": 0.03207889944314957
+          },
+          {
+            "bpm": 120.493,
+            "relative_power": 0.03141143172979355
+          }
+        ]
+      },
+      {
+        "start_seconds": 285.0,
+        "end_seconds": 315.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8593827803981495
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.8444113782926578
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6675160815218598
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6498852390211285
+          },
+          {
+            "bpm": 103.35,
+            "lag_seconds": 0.5805515239477504,
+            "normalized_autocorrelation": 0.09789803556568036
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 125.067,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 129.956,
+            "relative_power": 0.375727117061615
+          },
+          {
+            "bpm": 127.748,
+            "relative_power": 0.37276458740234375
+          },
+          {
+            "bpm": 188.232,
+            "relative_power": 0.254303902387619
+          },
+          {
+            "bpm": 120.651,
+            "relative_power": 0.22275753319263458
+          }
+        ]
+      },
+      {
+        "start_seconds": 300.0,
+        "end_seconds": 330.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8250495393034067
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7596999092137638
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6637021124689207
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6568811796438557
+          },
+          {
+            "bpm": 103.35,
+            "lag_seconds": 0.5805515239477504,
+            "normalized_autocorrelation": 0.016175132514996762
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 187.68,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 125.225,
+            "relative_power": 0.6417715549468994
+          },
+          {
+            "bpm": 62.928,
+            "relative_power": 0.4858075678348541
+          },
+          {
+            "bpm": 120.493,
+            "relative_power": 0.17811772227287292
+          },
+          {
+            "bpm": 194.461,
+            "relative_power": 0.12653391063213348
+          }
+        ]
+      },
+      {
+        "start_seconds": 315.0,
+        "end_seconds": 345.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8278657212967093
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7381918573000639
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6378969355348538
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6375156767156814
+          },
+          {
+            "bpm": 101.35,
+            "lag_seconds": 0.5920078934385792,
+            "normalized_autocorrelation": 0.039257423776249245
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 187.758,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 124.988,
+            "relative_power": 0.8606798648834229
+          },
+          {
+            "bpm": 62.534,
+            "relative_power": 0.4298097789287567
+          },
+          {
+            "bpm": 129.877,
+            "relative_power": 0.20418567955493927
+          },
+          {
+            "bpm": 127.591,
+            "relative_power": 0.1700538694858551
+          }
+        ]
+      },
+      {
+        "start_seconds": 330.0,
+        "end_seconds": 360.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7332071898417609
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6441548427508521
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.5343209012273736
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.5327534306845797
+          },
+          {
+            "bpm": 161.5,
+            "lag_seconds": 0.3715170278637771,
+            "normalized_autocorrelation": 0.0476099184556394
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 187.364,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 124.673,
+            "relative_power": 0.8147278428077698
+          },
+          {
+            "bpm": 189.966,
+            "relative_power": 0.443376362323761
+          },
+          {
+            "bpm": 60.168,
+            "relative_power": 0.4377412497997284
+          },
+          {
+            "bpm": 192.411,
+            "relative_power": 0.437105655670166
+          }
+        ]
+      },
+      {
+        "start_seconds": 345.0,
+        "end_seconds": 375.0,
+        "autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.6100149445986474
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.6007474297905128
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.4675878440580215
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.4554752675741259
+          },
+          {
+            "bpm": 166.7,
+            "lag_seconds": 0.3599280143971206,
+            "normalized_autocorrelation": 0.1527033513959387
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 121.282,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 130.508,
+            "relative_power": 0.7300065755844116
+          },
+          {
+            "bpm": 68.606,
+            "relative_power": 0.6187070608139038
+          },
+          {
+            "bpm": 92.815,
+            "relative_power": 0.5422361493110657
+          },
+          {
+            "bpm": 192.017,
+            "relative_power": 0.5231480598449707
+          }
+        ]
+      },
+      {
+        "start_seconds": 360.0,
+        "end_seconds": 389.701,
+        "autocorrelation_top5": [
+          {
+            "bpm": 82.05,
+            "lag_seconds": 0.7312614259597805,
+            "normalized_autocorrelation": 0.5837621036814806
+          },
+          {
+            "bpm": 166.7,
+            "lag_seconds": 0.3599280143971206,
+            "normalized_autocorrelation": 0.5492708642554178
+          },
+          {
+            "bpm": 54.975,
+            "lag_seconds": 1.0914051841746248,
+            "normalized_autocorrelation": 0.4765328119469536
+          },
+          {
+            "bpm": 109.95,
+            "lag_seconds": 0.5457025920873124,
+            "normalized_autocorrelation": 0.39755453873745916
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.3674506467930718
+          }
+        ],
+        "fourier_top5": [
+          {
+            "bpm": 124.988,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 67.975,
+            "relative_power": 0.6440684795379639
+          },
+          {
+            "bpm": 135.555,
+            "relative_power": 0.5792489051818848
+          },
+          {
+            "bpm": 129.641,
+            "relative_power": 0.5447375774383545
+          },
+          {
+            "bpm": 76.412,
+            "relative_power": 0.503400981426239
+          }
+        ]
+      }
+    ],
+    "thirds_independent": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 129.90033333333335,
+        "flux_autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7562755834907955
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7032249640630549
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.5681343442560952
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.5658487868015024
+          },
+          {
+            "bpm": 101.325,
+            "lag_seconds": 0.5921539600296076,
+            "normalized_autocorrelation": 0.1007370799490362
+          }
+        ],
+        "flux_fourier_top5": [
+          {
+            "bpm": 124.909,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 62.06,
+            "relative_power": 0.9572554230690002
+          },
+          {
+            "bpm": 125.619,
+            "relative_power": 0.9468329548835754
+          },
+          {
+            "bpm": 123.963,
+            "relative_power": 0.8314208984375
+          },
+          {
+            "bpm": 187.995,
+            "relative_power": 0.7238714694976807
+          }
+        ],
+        "low_band_autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.855153009514164
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8008029316082772
+          },
+          {
+            "bpm": 206.725,
+            "lag_seconds": 0.29024065787882447,
+            "normalized_autocorrelation": 0.0837091652240366
+          },
+          {
+            "bpm": 52.2,
+            "lag_seconds": 1.1494252873563218,
+            "normalized_autocorrelation": 0.08003002894913869
+          },
+          {
+            "bpm": 78.3,
+            "lag_seconds": 0.7662835249042146,
+            "normalized_autocorrelation": 0.0764776011928916
+          }
+        ],
+        "low_band_fourier_top5": [
+          {
+            "bpm": 125.146,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 123.017,
+            "relative_power": 0.08286575227975845
+          },
+          {
+            "bpm": 127.196,
+            "relative_power": 0.0788160189986229
+          },
+          {
+            "bpm": 123.727,
+            "relative_power": 0.04225096106529236
+          },
+          {
+            "bpm": 126.487,
+            "relative_power": 0.04143828526139259
+          }
+        ]
+      },
+      {
+        "start_seconds": 129.90033333333335,
+        "end_seconds": 259.8006666666667,
+        "flux_autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7721956780711989
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7107222955474448
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6333002955141571
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.605747614339865
+          },
+          {
+            "bpm": 70.775,
+            "lag_seconds": 0.847756976333451,
+            "normalized_autocorrelation": 0.05945024088568559
+          }
+        ],
+        "flux_fourier_top5": [
+          {
+            "bpm": 123.963,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 63.638,
+            "relative_power": 0.7167894840240479
+          },
+          {
+            "bpm": 187.68,
+            "relative_power": 0.6772947311401367
+          },
+          {
+            "bpm": 61.824,
+            "relative_power": 0.45176824927330017
+          },
+          {
+            "bpm": 124.673,
+            "relative_power": 0.4481443762779236
+          }
+        ],
+        "low_band_autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.8027816068961812
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7240234878301527
+          },
+          {
+            "bpm": 206.725,
+            "lag_seconds": 0.29024065787882447,
+            "normalized_autocorrelation": 0.07165744475047671
+          },
+          {
+            "bpm": 52.2,
+            "lag_seconds": 1.1494252873563218,
+            "normalized_autocorrelation": 0.0625080113692597
+          },
+          {
+            "bpm": 89.125,
+            "lag_seconds": 0.6732117812061711,
+            "normalized_autocorrelation": 0.061372066411708295
+          }
+        ],
+        "low_band_fourier_top5": [
+          {
+            "bpm": 125.146,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 126.171,
+            "relative_power": 0.11083739995956421
+          },
+          {
+            "bpm": 124.042,
+            "relative_power": 0.08283283561468124
+          },
+          {
+            "bpm": 128.064,
+            "relative_power": 0.046986304223537445
+          },
+          {
+            "bpm": 122.149,
+            "relative_power": 0.042225949466228485
+          }
+        ]
+      },
+      {
+        "start_seconds": 259.8006666666667,
+        "end_seconds": 389.701,
+        "flux_autocorrelation_top5": [
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.7946011820132839
+          },
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.7788025746295637
+          },
+          {
+            "bpm": 83.35,
+            "lag_seconds": 0.7198560287942412,
+            "normalized_autocorrelation": 0.6680294505371321
+          },
+          {
+            "bpm": 50.175,
+            "lag_seconds": 1.195814648729447,
+            "normalized_autocorrelation": 0.6160988631603987
+          },
+          {
+            "bpm": 161.5,
+            "lag_seconds": 0.3715170278637771,
+            "normalized_autocorrelation": 0.13948084303861244
+          }
+        ],
+        "flux_fourier_top5": [
+          {
+            "bpm": 124.909,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 124.121,
+            "relative_power": 0.3922748267650604
+          },
+          {
+            "bpm": 187.68,
+            "relative_power": 0.23856931924819946
+          },
+          {
+            "bpm": 62.691,
+            "relative_power": 0.16578684747219086
+          },
+          {
+            "bpm": 126.171,
+            "relative_power": 0.1279732882976532
+          }
+        ],
+        "low_band_autocorrelation_top5": [
+          {
+            "bpm": 126.05,
+            "lag_seconds": 0.4760015866719556,
+            "normalized_autocorrelation": 0.8520285698545687
+          },
+          {
+            "bpm": 62.275,
+            "lag_seconds": 0.9634684865515857,
+            "normalized_autocorrelation": 0.8094044089592496
+          },
+          {
+            "bpm": 206.725,
+            "lag_seconds": 0.29024065787882447,
+            "normalized_autocorrelation": 0.1013359693529448
+          },
+          {
+            "bpm": 52.2,
+            "lag_seconds": 1.1494252873563218,
+            "normalized_autocorrelation": 0.0976219351186645
+          },
+          {
+            "bpm": 90.65,
+            "lag_seconds": 0.6618863761720905,
+            "normalized_autocorrelation": 0.09354197460453255
+          }
+        ],
+        "low_band_fourier_top5": [
+          {
+            "bpm": 125.146,
+            "relative_power": 1.0
+          },
+          {
+            "bpm": 123.096,
+            "relative_power": 0.3020119369029999
+          },
+          {
+            "bpm": 126.408,
+            "relative_power": 0.29110363125801086
+          },
+          {
+            "bpm": 123.805,
+            "relative_power": 0.28663772344589233
+          },
+          {
+            "bpm": 127.117,
+            "relative_power": 0.2844841182231903
+          }
+        ]
+      }
+    ],
+    "half_double_check": {
+      "strongest_flux_peak_bpm": 62.275,
+      "half": 31.1375,
+      "double": 124.55
+    },
+    "autocorrelation_resolution_note": "Onset envelope hop is 256/22050 seconds; reported interpolated-grid BPM precision exceeds physical lag resolution. Interpret with Fourier and local windows.",
+    "caveat": "Periodicity peaks may represent half/double beats or subdivisions; perceived meter requires listening."
+  },
+  "tonality": {
+    "tuning_offset_cents_candidate": -2.221171977717809,
+    "mean_peak_harmonic_chroma": {
+      "C": 0.2411268430538408,
+      "C#": 0.21070668401157025,
+      "D": 0.2359441107260275,
+      "Eb": 0.2525701286527776,
+      "E": 0.23482784568209372,
+      "F": 0.26625390117460124,
+      "F#": 0.2683330800007954,
+      "G": 0.3447262109772689,
+      "Ab": 0.32403807148063324,
+      "A": 0.30024435389225945,
+      "Bb": 0.35690333958143594,
+      "B": 0.3406954289974218
+    },
+    "global_key_profile_candidates": [
+      {
+        "key": "G minor",
+        "profile_correlation": 0.41271526799696884
+      },
+      {
+        "key": "Ab minor",
+        "profile_correlation": 0.3484394149303713
+      },
+      {
+        "key": "Eb major",
+        "profile_correlation": 0.30883875764064683
+      },
+      {
+        "key": "Bb major",
+        "profile_correlation": 0.20371604669675414
+      },
+      {
+        "key": "B minor",
+        "profile_correlation": 0.15789756215180947
+      },
+      {
+        "key": "G major",
+        "profile_correlation": 0.1508915667586855
+      },
+      {
+        "key": "B major",
+        "profile_correlation": 0.11242539826252074
+      },
+      {
+        "key": "Eb minor",
+        "profile_correlation": 0.05998830925717199
+      },
+      {
+        "key": "Bb minor",
+        "profile_correlation": 0.04017502168637306
+      },
+      {
+        "key": "E minor",
+        "profile_correlation": 0.027207628672773366
+      },
+      {
+        "key": "C minor",
+        "profile_correlation": -0.006493208031776546
+      },
+      {
+        "key": "E major",
+        "profile_correlation": -0.008558824534977345
+      },
+      {
+        "key": "F# major",
+        "profile_correlation": -0.01042661806261934
+      },
+      {
+        "key": "F major",
+        "profile_correlation": -0.010776489773326198
+      },
+      {
+        "key": "Ab major",
+        "profile_correlation": -0.03971666074638462
+      },
+      {
+        "key": "D major",
+        "profile_correlation": -0.05531362991490847
+      },
+      {
+        "key": "F minor",
+        "profile_correlation": -0.07496476333621108
+      },
+      {
+        "key": "A minor",
+        "profile_correlation": -0.10883079116025218
+      },
+      {
+        "key": "C major",
+        "profile_correlation": -0.12805266162237958
+      },
+      {
+        "key": "D minor",
+        "profile_correlation": -0.18098535213367858
+      },
+      {
+        "key": "C# major",
+        "profile_correlation": -0.21413787282486538
+      },
+      {
+        "key": "F# minor",
+        "profile_correlation": -0.2328230385651838
+      },
+      {
+        "key": "A major",
+        "profile_correlation": -0.3088890118791462
+      },
+      {
+        "key": "C# minor",
+        "profile_correlation": -0.442326051468366
+      }
+    ],
+    "local_30_second_key_candidates": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 30.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.36729471095885124
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.362623437071526
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.32328646734791366
+          }
+        ]
+      },
+      {
+        "start_seconds": 30.0,
+        "end_seconds": 60.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.44617501381573593
+          },
+          {
+            "key": "G major",
+            "profile_correlation": 0.30597648656789356
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.2682236089995719
+          }
+        ]
+      },
+      {
+        "start_seconds": 60.0,
+        "end_seconds": 90.0,
+        "top3": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.2900819662092882
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.19337777336441256
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.19063210553810414
+          }
+        ]
+      },
+      {
+        "start_seconds": 90.0,
+        "end_seconds": 120.0,
+        "top3": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.4796413480715487
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.2291532417418461
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.22807360854588396
+          }
+        ]
+      },
+      {
+        "start_seconds": 120.0,
+        "end_seconds": 150.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.47700007546422557
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.3455808005911302
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.29607077792999426
+          }
+        ]
+      },
+      {
+        "start_seconds": 150.0,
+        "end_seconds": 180.0,
+        "top3": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.4260249357340578
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.3399486156214989
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.23858679906864214
+          }
+        ]
+      },
+      {
+        "start_seconds": 180.0,
+        "end_seconds": 210.0,
+        "top3": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.34361188699871137
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.29422288228567317
+          },
+          {
+            "key": "B minor",
+            "profile_correlation": 0.2014126006389748
+          }
+        ]
+      },
+      {
+        "start_seconds": 210.0,
+        "end_seconds": 240.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.4428398333609604
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.4111914723003462
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.3872590386249751
+          }
+        ]
+      },
+      {
+        "start_seconds": 240.0,
+        "end_seconds": 270.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.590301423163618
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.5778056040099626
+          },
+          {
+            "key": "Bb major",
+            "profile_correlation": 0.504162255005263
+          }
+        ]
+      },
+      {
+        "start_seconds": 270.0,
+        "end_seconds": 300.0,
+        "top3": [
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.5131167372392582
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.49914484361516254
+          },
+          {
+            "key": "Bb major",
+            "profile_correlation": 0.4615428475018297
+          }
+        ]
+      },
+      {
+        "start_seconds": 300.0,
+        "end_seconds": 330.0,
+        "top3": [
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.46981726590364137
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.4114822136746976
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.3702024223272823
+          }
+        ]
+      },
+      {
+        "start_seconds": 330.0,
+        "end_seconds": 360.0,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.46060871299681816
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.4219966768731712
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.4188815838589255
+          }
+        ]
+      },
+      {
+        "start_seconds": 360.0,
+        "end_seconds": 389.701,
+        "top3": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.28245142692806124
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.251208747077831
+          },
+          {
+            "key": "Bb major",
+            "profile_correlation": 0.18733206935048632
+          }
+        ]
+      }
+    ],
+    "chord_window_seconds": 3.8538739462063427,
+    "chord_candidates": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 3.854,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.6407253549812577
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5366179286139837
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.42978785190881397
+          }
+        ]
+      },
+      {
+        "start_seconds": 3.854,
+        "end_seconds": 7.708,
+        "top3": [
+          {
+            "chord": "G7",
+            "template_correlation": 0.5983703783688755
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.4076324226353536
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.39790953321366784
+          }
+        ]
+      },
+      {
+        "start_seconds": 7.708,
+        "end_seconds": 11.562,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5985636743732782
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5291628518721279
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.5040172112197633
+          }
+        ]
+      },
+      {
+        "start_seconds": 11.562,
+        "end_seconds": 15.415,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5666704321099386
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.5464958475774016
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.39561363503592656
+          }
+        ]
+      },
+      {
+        "start_seconds": 15.415,
+        "end_seconds": 19.269,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4565948903872438
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.42733562870177566
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3137132354012334
+          }
+        ]
+      },
+      {
+        "start_seconds": 19.269,
+        "end_seconds": 23.123,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.39723598224384105
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.39549166674003416
+          },
+          {
+            "chord": "B7",
+            "template_correlation": 0.3040984940072138
+          }
+        ]
+      },
+      {
+        "start_seconds": 23.123,
+        "end_seconds": 26.977,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4585034974176608
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.44635648918010445
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.44108629155812734
+          }
+        ]
+      },
+      {
+        "start_seconds": 26.977,
+        "end_seconds": 30.831,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.6003264953347104
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.42663496578991156
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.42462421579313775
+          }
+        ]
+      },
+      {
+        "start_seconds": 30.831,
+        "end_seconds": 34.685,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5997195501855452
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5508819487470102
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.520647374810902
+          }
+        ]
+      },
+      {
+        "start_seconds": 34.685,
+        "end_seconds": 38.539,
+        "top3": [
+          {
+            "chord": "G7",
+            "template_correlation": 0.3770694385531738
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3413461059108542
+          },
+          {
+            "chord": "B7",
+            "template_correlation": 0.3373898140344647
+          }
+        ]
+      },
+      {
+        "start_seconds": 38.539,
+        "end_seconds": 42.393,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4522183451660728
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.4157844131625989
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3975292505362779
+          }
+        ]
+      },
+      {
+        "start_seconds": 42.393,
+        "end_seconds": 46.246,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5703378894540619
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4444979241148767
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.41119484112825605
+          }
+        ]
+      },
+      {
+        "start_seconds": 46.246,
+        "end_seconds": 50.1,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.4368049201044507
+          },
+          {
+            "chord": "Bbmaj",
+            "template_correlation": 0.4034093290509982
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.28281438847339074
+          }
+        ]
+      },
+      {
+        "start_seconds": 50.1,
+        "end_seconds": 53.954,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.3078208314852602
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.28702166102029764
+          },
+          {
+            "chord": "Bbmaj",
+            "template_correlation": 0.24645599569218785
+          }
+        ]
+      },
+      {
+        "start_seconds": 53.954,
+        "end_seconds": 57.808,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.35050952772777544
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.33207294340862503
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.3276973521797176
+          }
+        ]
+      },
+      {
+        "start_seconds": 57.808,
+        "end_seconds": 61.662,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4149034113214516
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3803289302549622
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.30476285718964996
+          }
+        ]
+      },
+      {
+        "start_seconds": 61.662,
+        "end_seconds": 65.516,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.31839709987325443
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.2375767772647226
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2323478051164106
+          }
+        ]
+      },
+      {
+        "start_seconds": 65.516,
+        "end_seconds": 69.37,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.33323426233919473
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.31744509407340954
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.22099008306160703
+          }
+        ]
+      },
+      {
+        "start_seconds": 69.37,
+        "end_seconds": 73.224,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3806800132414999
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3129721129640025
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.24659186727403576
+          }
+        ]
+      },
+      {
+        "start_seconds": 73.224,
+        "end_seconds": 77.077,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.4053438364492822
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3262264972792344
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.30396929830464053
+          }
+        ]
+      },
+      {
+        "start_seconds": 77.077,
+        "end_seconds": 80.931,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.34198577315812917
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.31994595950475363
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.22350957363847976
+          }
+        ]
+      },
+      {
+        "start_seconds": 80.931,
+        "end_seconds": 84.785,
+        "top3": [
+          {
+            "chord": "C7",
+            "template_correlation": 0.29420014588491666
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.29021514934506193
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.28827394993846134
+          }
+        ]
+      },
+      {
+        "start_seconds": 84.785,
+        "end_seconds": 88.639,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3393259171922719
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3189728504372228
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.2453220698266276
+          }
+        ]
+      },
+      {
+        "start_seconds": 88.639,
+        "end_seconds": 92.493,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3169973846935123
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.30117288567290296
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.26904821363728476
+          }
+        ]
+      },
+      {
+        "start_seconds": 92.493,
+        "end_seconds": 96.347,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.5115330515653268
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.4378240869576658
+          },
+          {
+            "chord": "E7",
+            "template_correlation": 0.28361763789587874
+          }
+        ]
+      },
+      {
+        "start_seconds": 96.347,
+        "end_seconds": 100.201,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.5144245284295947
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.438169532604508
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.32925479021657383
+          }
+        ]
+      },
+      {
+        "start_seconds": 100.201,
+        "end_seconds": 104.055,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.524048361326029
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.49460909004630477
+          },
+          {
+            "chord": "E7",
+            "template_correlation": 0.3546937195578947
+          }
+        ]
+      },
+      {
+        "start_seconds": 104.055,
+        "end_seconds": 107.908,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.528581768260194
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.5204967306341601
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.37439122969982447
+          }
+        ]
+      },
+      {
+        "start_seconds": 107.908,
+        "end_seconds": 111.762,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.40108310744817766
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.39989231802326836
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.37732483677680234
+          }
+        ]
+      },
+      {
+        "start_seconds": 111.762,
+        "end_seconds": 115.616,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3740762535088367
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.3655383039852694
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3475744129015761
+          }
+        ]
+      },
+      {
+        "start_seconds": 115.616,
+        "end_seconds": 119.47,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.44083876084478035
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.35916433330017666
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3357089867963606
+          }
+        ]
+      },
+      {
+        "start_seconds": 119.47,
+        "end_seconds": 123.324,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5515579439690009
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4457577839889791
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4238905134077964
+          }
+        ]
+      },
+      {
+        "start_seconds": 123.324,
+        "end_seconds": 127.178,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5532097703181257
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5488210705723693
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.508444653539161
+          }
+        ]
+      },
+      {
+        "start_seconds": 127.178,
+        "end_seconds": 131.032,
+        "top3": [
+          {
+            "chord": "G7",
+            "template_correlation": 0.4245552895249247
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3878646668161638
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3329934479235011
+          }
+        ]
+      },
+      {
+        "start_seconds": 131.032,
+        "end_seconds": 134.886,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4844724200630701
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4052007933102991
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3958190658306163
+          }
+        ]
+      },
+      {
+        "start_seconds": 134.886,
+        "end_seconds": 138.739,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5576518845034653
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4130977198272777
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3991344235101528
+          }
+        ]
+      },
+      {
+        "start_seconds": 138.739,
+        "end_seconds": 142.593,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.426623263593392
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.40276638924007296
+          },
+          {
+            "chord": "B7",
+            "template_correlation": 0.2461651018537143
+          }
+        ]
+      },
+      {
+        "start_seconds": 142.593,
+        "end_seconds": 146.447,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3789322105436576
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.36412356162326837
+          },
+          {
+            "chord": "B7",
+            "template_correlation": 0.3418780256946777
+          }
+        ]
+      },
+      {
+        "start_seconds": 146.447,
+        "end_seconds": 150.301,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.432215076357407
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3676662006228053
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3038916437752636
+          }
+        ]
+      },
+      {
+        "start_seconds": 150.301,
+        "end_seconds": 154.155,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.500270919414082
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3982504656436924
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3863919091281232
+          }
+        ]
+      },
+      {
+        "start_seconds": 154.155,
+        "end_seconds": 158.009,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.578597737978894
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.36834463573087467
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.34722376405728256
+          }
+        ]
+      },
+      {
+        "start_seconds": 158.009,
+        "end_seconds": 161.863,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.34653973806407073
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.33775463677101614
+          },
+          {
+            "chord": "B7",
+            "template_correlation": 0.31145796865636366
+          }
+        ]
+      },
+      {
+        "start_seconds": 161.863,
+        "end_seconds": 165.717,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.45393088049476
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.4040367480546328
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3108253293804
+          }
+        ]
+      },
+      {
+        "start_seconds": 165.717,
+        "end_seconds": 169.57,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5228759523830285
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.48820143096842883
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.485402033552889
+          }
+        ]
+      },
+      {
+        "start_seconds": 169.57,
+        "end_seconds": 173.424,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.45968434135853803
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.41244264124404856
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.31172111947834036
+          }
+        ]
+      },
+      {
+        "start_seconds": 173.424,
+        "end_seconds": 177.278,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.4385484997306917
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.40741505489105645
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.31814610408535593
+          }
+        ]
+      },
+      {
+        "start_seconds": 177.278,
+        "end_seconds": 181.132,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.5885497511303415
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.5587163579514013
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3725235910343437
+          }
+        ]
+      },
+      {
+        "start_seconds": 181.132,
+        "end_seconds": 184.986,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.5894898287169863
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.5828798963412329
+          },
+          {
+            "chord": "E7",
+            "template_correlation": 0.37446773844792836
+          }
+        ]
+      },
+      {
+        "start_seconds": 184.986,
+        "end_seconds": 188.84,
+        "top3": [
+          {
+            "chord": "C7",
+            "template_correlation": 0.430522894977932
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3312610056130433
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.32290270243174185
+          }
+        ]
+      },
+      {
+        "start_seconds": 188.84,
+        "end_seconds": 192.694,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3727648763882864
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.2942987077608908
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.2770696127570417
+          }
+        ]
+      },
+      {
+        "start_seconds": 192.694,
+        "end_seconds": 196.548,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4058632165671574
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.38573407656950054
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.3156734282877224
+          }
+        ]
+      },
+      {
+        "start_seconds": 196.548,
+        "end_seconds": 200.401,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3403543498377367
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3021548487229138
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2946048670159203
+          }
+        ]
+      },
+      {
+        "start_seconds": 200.401,
+        "end_seconds": 204.255,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5481294575118235
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.4209675049347158
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.31857283677785164
+          }
+        ]
+      },
+      {
+        "start_seconds": 204.255,
+        "end_seconds": 208.109,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.40688205743027894
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.35483076084206233
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.3386026701724904
+          }
+        ]
+      },
+      {
+        "start_seconds": 208.109,
+        "end_seconds": 211.963,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.45589562638991715
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.39870055411489125
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.35251601358704565
+          }
+        ]
+      },
+      {
+        "start_seconds": 211.963,
+        "end_seconds": 215.817,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.4885378200227447
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3998407683169341
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.39338264383348837
+          }
+        ]
+      },
+      {
+        "start_seconds": 215.817,
+        "end_seconds": 219.671,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.4464557382737309
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.37465066148294357
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.32465149280106587
+          }
+        ]
+      },
+      {
+        "start_seconds": 219.671,
+        "end_seconds": 223.525,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.41137727255112255
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3703910931472097
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3209741387262266
+          }
+        ]
+      },
+      {
+        "start_seconds": 223.525,
+        "end_seconds": 227.379,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.5173989528163379
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4052768302045553
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3628335370800562
+          }
+        ]
+      },
+      {
+        "start_seconds": 227.379,
+        "end_seconds": 231.232,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.524314803106555
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.45480635772100986
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4407065447241181
+          }
+        ]
+      },
+      {
+        "start_seconds": 231.232,
+        "end_seconds": 235.086,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5906968405409687
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.47106579600178433
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.39949676881899404
+          }
+        ]
+      },
+      {
+        "start_seconds": 235.086,
+        "end_seconds": 238.94,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6468178809629869
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5177592996873399
+          },
+          {
+            "chord": "Eb7",
+            "template_correlation": 0.3837178462496476
+          }
+        ]
+      },
+      {
+        "start_seconds": 238.94,
+        "end_seconds": 242.794,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.7902957187563673
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5848746306353882
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.46972159847994877
+          }
+        ]
+      },
+      {
+        "start_seconds": 242.794,
+        "end_seconds": 246.648,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5550879265431868
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5077911071538577
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.33770167657174643
+          }
+        ]
+      },
+      {
+        "start_seconds": 246.648,
+        "end_seconds": 250.502,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.7820963713618964
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.522942401314795
+          },
+          {
+            "chord": "Eb7",
+            "template_correlation": 0.4951741724692132
+          }
+        ]
+      },
+      {
+        "start_seconds": 250.502,
+        "end_seconds": 254.356,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5440991974165562
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.350964582965518
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.3251111703285377
+          }
+        ]
+      },
+      {
+        "start_seconds": 254.356,
+        "end_seconds": 258.21,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.7282690444142262
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.45533620806179137
+          },
+          {
+            "chord": "Eb7",
+            "template_correlation": 0.4364892249431186
+          }
+        ]
+      },
+      {
+        "start_seconds": 258.21,
+        "end_seconds": 262.063,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5668639720471077
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3266796434177386
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.2969622538581496
+          }
+        ]
+      },
+      {
+        "start_seconds": 262.063,
+        "end_seconds": 265.917,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6073824521464721
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4160405182533016
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.36724908506301795
+          }
+        ]
+      },
+      {
+        "start_seconds": 265.917,
+        "end_seconds": 269.771,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6764187939445072
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5908151130742787
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.39633198691564436
+          }
+        ]
+      },
+      {
+        "start_seconds": 269.771,
+        "end_seconds": 273.625,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6701898676090858
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4813270343151228
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.4294324842805854
+          }
+        ]
+      },
+      {
+        "start_seconds": 273.625,
+        "end_seconds": 277.479,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5437087154677767
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3556962487682387
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.30001000485899815
+          }
+        ]
+      },
+      {
+        "start_seconds": 277.479,
+        "end_seconds": 281.333,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6199080301380734
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.441587259785687
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4341631484437532
+          }
+        ]
+      },
+      {
+        "start_seconds": 281.333,
+        "end_seconds": 285.187,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5547026404106588
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5454536026478783
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.37799278525391156
+          }
+        ]
+      },
+      {
+        "start_seconds": 285.187,
+        "end_seconds": 289.041,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6788585996567963
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5018720030388428
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.45139489652554876
+          }
+        ]
+      },
+      {
+        "start_seconds": 289.041,
+        "end_seconds": 292.894,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5230605424082468
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3923980818460535
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.321407854146082
+          }
+        ]
+      },
+      {
+        "start_seconds": 292.894,
+        "end_seconds": 296.748,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.3779526030804616
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.33228230726558283
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.2874941353021789
+          }
+        ]
+      },
+      {
+        "start_seconds": 296.748,
+        "end_seconds": 300.602,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.40682514041156914
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.4046329769168
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.31395907906763054
+          }
+        ]
+      },
+      {
+        "start_seconds": 300.602,
+        "end_seconds": 304.456,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.4341201327060556
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4139025946677658
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.371992483735299
+          }
+        ]
+      },
+      {
+        "start_seconds": 304.456,
+        "end_seconds": 308.31,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.4217262646900703
+          },
+          {
+            "chord": "G7",
+            "template_correlation": 0.3387603779402961
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.33578028376647345
+          }
+        ]
+      },
+      {
+        "start_seconds": 308.31,
+        "end_seconds": 312.164,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5129686634332723
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.4149989694318545
+          },
+          {
+            "chord": "Bbmaj",
+            "template_correlation": 0.3084803373109511
+          }
+        ]
+      },
+      {
+        "start_seconds": 312.164,
+        "end_seconds": 316.018,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.581734190588045
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.49658234680759855
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.4414975462931763
+          }
+        ]
+      },
+      {
+        "start_seconds": 316.018,
+        "end_seconds": 319.872,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.599681878001114
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.3776441278502844
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.365102096117993
+          }
+        ]
+      },
+      {
+        "start_seconds": 319.872,
+        "end_seconds": 323.725,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5532561500540923
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.42010317347325277
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.2989964215305489
+          }
+        ]
+      },
+      {
+        "start_seconds": 323.725,
+        "end_seconds": 327.579,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6039245934582805
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.49954032967989725
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3340989635964983
+          }
+        ]
+      },
+      {
+        "start_seconds": 327.579,
+        "end_seconds": 331.433,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.3651055188215471
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.2796974723483301
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.26340132139379324
+          }
+        ]
+      },
+      {
+        "start_seconds": 331.433,
+        "end_seconds": 335.287,
+        "top3": [
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.5522528851083517
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4781733560746904
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.3883050673157156
+          }
+        ]
+      },
+      {
+        "start_seconds": 335.287,
+        "end_seconds": 339.141,
+        "top3": [
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.5959156804589921
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5566137781986384
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5306272561486897
+          }
+        ]
+      },
+      {
+        "start_seconds": 339.141,
+        "end_seconds": 342.995,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.5630343236619142
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4235386500247526
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.39579921609242735
+          }
+        ]
+      },
+      {
+        "start_seconds": 342.995,
+        "end_seconds": 346.849,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.4123367623458702
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.3765136724630193
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.32800549509288984
+          }
+        ]
+      },
+      {
+        "start_seconds": 346.849,
+        "end_seconds": 350.703,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6271710389152412
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.5407853662284887
+          },
+          {
+            "chord": "Ebmin",
+            "template_correlation": 0.4094394672377353
+          }
+        ]
+      },
+      {
+        "start_seconds": 350.703,
+        "end_seconds": 354.556,
+        "top3": [
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.6735150530818012
+          },
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5288910321877499
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.36909451429639545
+          }
+        ]
+      },
+      {
+        "start_seconds": 354.556,
+        "end_seconds": 358.41,
+        "top3": [
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3610434531377257
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2929236670642898
+          },
+          {
+            "chord": "Abmin",
+            "template_correlation": 0.2254193938707083
+          }
+        ]
+      },
+      {
+        "start_seconds": 358.41,
+        "end_seconds": 362.264,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.2862942694309083
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.27800358116489643
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2432650465251614
+          }
+        ]
+      },
+      {
+        "start_seconds": 362.264,
+        "end_seconds": 366.118,
+        "top3": [
+          {
+            "chord": "C7",
+            "template_correlation": 0.4235897826325931
+          },
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.3964717069561523
+          },
+          {
+            "chord": "Bbmaj",
+            "template_correlation": 0.38684402042509247
+          }
+        ]
+      },
+      {
+        "start_seconds": 366.118,
+        "end_seconds": 369.972,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.4517926509367524
+          },
+          {
+            "chord": "Bbmaj",
+            "template_correlation": 0.4046803962526103
+          },
+          {
+            "chord": "C7",
+            "template_correlation": 0.40118553397200624
+          }
+        ]
+      },
+      {
+        "start_seconds": 369.972,
+        "end_seconds": 373.826,
+        "top3": [
+          {
+            "chord": "Gmin",
+            "template_correlation": 0.5004083127294005
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.4863968887180868
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4075095412849567
+          }
+        ]
+      },
+      {
+        "start_seconds": 373.826,
+        "end_seconds": 377.68,
+        "top3": [
+          {
+            "chord": "Emin",
+            "template_correlation": 0.4728881503157665
+          },
+          {
+            "chord": "Gmaj",
+            "template_correlation": 0.43919422638492606
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.38564610830606166
+          }
+        ]
+      },
+      {
+        "start_seconds": 377.68,
+        "end_seconds": 381.534,
+        "top3": [
+          {
+            "chord": "Bb7",
+            "template_correlation": 0.334462611819718
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3017507854938096
+          },
+          {
+            "chord": "C#7",
+            "template_correlation": 0.21597684555621902
+          }
+        ]
+      },
+      {
+        "start_seconds": 381.534,
+        "end_seconds": 385.387,
+        "top3": [
+          {
+            "chord": "B7",
+            "template_correlation": 0.3194858476125807
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.2789024102560921
+          },
+          {
+            "chord": "Ebmaj",
+            "template_correlation": 0.21966426843850131
+          }
+        ]
+      },
+      {
+        "start_seconds": 385.387,
+        "end_seconds": 389.241,
+        "top3": [
+          {
+            "chord": "B7",
+            "template_correlation": 0.32286339522659097
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.28151941100273725
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2169005971250445
+          }
+        ]
+      },
+      {
+        "start_seconds": 389.241,
+        "end_seconds": 389.701,
+        "top3": [
+          {
+            "chord": "B7",
+            "template_correlation": 0.36235961232442654
+          },
+          {
+            "chord": "Emaj",
+            "template_correlation": 0.3189036167897863
+          },
+          {
+            "chord": "Emin",
+            "template_correlation": 0.2591794217789855
+          }
+        ]
+      }
+    ],
+    "caveat": "Spectral-peak chroma and key/chord template correlations are hypotheses, not transcription. Live reverb, melody, bass and overtones can change rankings. Chord inversion is not estimated."
+  },
+  "dynamics": {
+    "rms_dbfs": -18.568334579467773,
+    "sample_peak_dbfs": -6.096384525299072,
+    "crest_factor_db": 12.47195053100586,
+    "one_second_rms_dbfs_percentiles": {
+      "p5": -25.526769638061523,
+      "p10": -24.219984436035155,
+      "p50": -18.854900360107422,
+      "p90": -16.16551971435547,
+      "p95": -15.928825187683106
+    },
+    "note": "dBFS is relative to the recorded digital scale; browser volume affects absolute values. Not LUFS or original master loudness."
+  },
+  "frequency": {
+    "bands_hz": [
+      [
+        20,
+        80
+      ],
+      [
+        80,
+        250
+      ],
+      [
+        250,
+        2000
+      ],
+      [
+        2000,
+        6000
+      ],
+      [
+        6000,
+        11025
+      ]
+    ],
+    "global_energy_share": [
+      0.2705923914909363,
+      0.16125275194644928,
+      0.3968738615512848,
+      0.1407567262649536,
+      0.03052423894405365
+    ],
+    "centroid_hz_percentiles": [
+      2098.234810072892,
+      3030.7506851574453,
+      3808.992240619855
+    ],
+    "spectral_flatness_percentiles": [
+      0.005280049983412027,
+      0.052076779305934906,
+      0.15598844885826116
+    ]
+  },
+  "acoustic_change_candidates": {
+    "method": "Adjacent 8-second standardized feature means; peak distance >=16 seconds. Not manually confirmed verse/chorus labels.",
+    "boundaries_seconds": [
+      13.5,
+      34.5,
+      54.5,
+      94.5,
+      110.5,
+      128.5,
+      171.5,
+      187.5,
+      233.5,
+      291.5,
+      307.5,
+      333.5,
+      355.5,
+      371.5
+    ],
+    "segments": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 13.5,
+        "rms_dbfs": -26.349872589111328,
+        "mean_centroid_hz": 3067.433825161106,
+        "mean_onset_strength_normalized": 0.0584852360188961,
+        "mean_band_energy_share": [
+          0.0006494884146377444,
+          0.08247531205415726,
+          0.5228610038757324,
+          0.33580946922302246,
+          0.027877066284418106
+        ],
+        "key_candidates": [
+          {
+            "key": "B minor",
+            "profile_correlation": 0.4786791721213263
+          },
+          {
+            "key": "G major",
+            "profile_correlation": 0.34605504131401554
+          }
+        ]
+      },
+      {
+        "start_seconds": 13.5,
+        "end_seconds": 34.5,
+        "rms_dbfs": -24.005014419555664,
+        "mean_centroid_hz": 2390.407859518103,
+        "mean_onset_strength_normalized": 0.060695499181747437,
+        "mean_band_energy_share": [
+          0.02813219651579857,
+          0.07377263158559799,
+          0.6426471471786499,
+          0.24090804159641266,
+          0.014539948664605618
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.496706123548668
+          },
+          {
+            "key": "G major",
+            "profile_correlation": 0.378971650334799
+          }
+        ]
+      },
+      {
+        "start_seconds": 34.5,
+        "end_seconds": 54.5,
+        "rms_dbfs": -20.58279800415039,
+        "mean_centroid_hz": 2497.0647170147995,
+        "mean_onset_strength_normalized": 0.1656944304704666,
+        "mean_band_energy_share": [
+          0.16972029209136963,
+          0.05431174859404564,
+          0.5996417999267578,
+          0.1535853147506714,
+          0.02273975871503353
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.3664589933794949
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.2623730567414325
+          }
+        ]
+      },
+      {
+        "start_seconds": 54.5,
+        "end_seconds": 94.5,
+        "rms_dbfs": -19.694171905517578,
+        "mean_centroid_hz": 3380.0290317366644,
+        "mean_onset_strength_normalized": 0.2018395960330963,
+        "mean_band_energy_share": [
+          0.2507895231246948,
+          0.12052728235721588,
+          0.37205106019973755,
+          0.20291577279567719,
+          0.05371580645442009
+        ],
+        "key_candidates": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.2861795369077604
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.21428844909134304
+          }
+        ]
+      },
+      {
+        "start_seconds": 94.5,
+        "end_seconds": 110.5,
+        "rms_dbfs": -20.51865005493164,
+        "mean_centroid_hz": 3759.756694748015,
+        "mean_onset_strength_normalized": 0.21157576143741608,
+        "mean_band_energy_share": [
+          0.15916185081005096,
+          0.08945652097463608,
+          0.40337181091308594,
+          0.2706639766693115,
+          0.07734538614749908
+        ],
+        "key_candidates": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.5476402999736404
+          },
+          {
+            "key": "B major",
+            "profile_correlation": 0.27858958517601784
+          }
+        ]
+      },
+      {
+        "start_seconds": 110.5,
+        "end_seconds": 128.5,
+        "rms_dbfs": -18.359540939331055,
+        "mean_centroid_hz": 2174.0316513285966,
+        "mean_onset_strength_normalized": 0.08060180395841599,
+        "mean_band_energy_share": [
+          0.26284390687942505,
+          0.228370800614357,
+          0.3826201260089874,
+          0.11927855759859085,
+          0.0068870726972818375
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.4881505140825709
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.332485959118507
+          }
+        ]
+      },
+      {
+        "start_seconds": 128.5,
+        "end_seconds": 171.5,
+        "rms_dbfs": -18.517824172973633,
+        "mean_centroid_hz": 2867.366217748486,
+        "mean_onset_strength_normalized": 0.21785618364810944,
+        "mean_band_energy_share": [
+          0.20994833111763,
+          0.18202203512191772,
+          0.41743868589401245,
+          0.16242903470993042,
+          0.028161337599158287
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.41166767725368664
+          },
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.40558795178515245
+          }
+        ]
+      },
+      {
+        "start_seconds": 171.5,
+        "end_seconds": 187.5,
+        "rms_dbfs": -17.60592269897461,
+        "mean_centroid_hz": 3357.458135697031,
+        "mean_onset_strength_normalized": 0.24200238287448883,
+        "mean_band_energy_share": [
+          0.30283552408218384,
+          0.1947290599346161,
+          0.2811756432056427,
+          0.16925296187400818,
+          0.052006449550390244
+        ],
+        "key_candidates": [
+          {
+            "key": "E major",
+            "profile_correlation": 0.36295322789779966
+          },
+          {
+            "key": "E minor",
+            "profile_correlation": 0.3415148033095075
+          }
+        ]
+      },
+      {
+        "start_seconds": 187.5,
+        "end_seconds": 233.5,
+        "rms_dbfs": -17.303781509399414,
+        "mean_centroid_hz": 2993.7324981605157,
+        "mean_onset_strength_normalized": 0.167403444647789,
+        "mean_band_energy_share": [
+          0.20319832861423492,
+          0.1606481969356537,
+          0.4429805278778076,
+          0.16105642914772034,
+          0.0321158692240715
+        ],
+        "key_candidates": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.42449942604036894
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.35371390688683807
+          }
+        ]
+      },
+      {
+        "start_seconds": 233.5,
+        "end_seconds": 291.5,
+        "rms_dbfs": -18.670604705810547,
+        "mean_centroid_hz": 2855.641180364303,
+        "mean_onset_strength_normalized": 0.25957921147346497,
+        "mean_band_energy_share": [
+          0.1422492116689682,
+          0.09958925098180771,
+          0.5474807024002075,
+          0.17469274997711182,
+          0.035988949239254
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.5852399054867609
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.5753240266255993
+          }
+        ]
+      },
+      {
+        "start_seconds": 291.5,
+        "end_seconds": 307.5,
+        "rms_dbfs": -16.404478073120117,
+        "mean_centroid_hz": 3220.56492019917,
+        "mean_onset_strength_normalized": 0.1838640719652176,
+        "mean_band_energy_share": [
+          0.2212420254945755,
+          0.2080770581960678,
+          0.3757375180721283,
+          0.15371999144554138,
+          0.04122369363903999
+        ],
+        "key_candidates": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.37308634633774324
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.30902323471646975
+          }
+        ]
+      },
+      {
+        "start_seconds": 307.5,
+        "end_seconds": 333.5,
+        "rms_dbfs": -15.928995132446289,
+        "mean_centroid_hz": 3246.4804923810416,
+        "mean_onset_strength_normalized": 0.1775052845478058,
+        "mean_band_energy_share": [
+          0.2217222899198532,
+          0.17935654520988464,
+          0.41148099303245544,
+          0.14599066972732544,
+          0.04144918546080589
+        ],
+        "key_candidates": [
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.5052077520081951
+          },
+          {
+            "key": "G minor",
+            "profile_correlation": 0.4389106333466706
+          }
+        ]
+      },
+      {
+        "start_seconds": 333.5,
+        "end_seconds": 355.5,
+        "rms_dbfs": -17.614761352539062,
+        "mean_centroid_hz": 2919.7939395028684,
+        "mean_onset_strength_normalized": 0.14606089890003204,
+        "mean_band_energy_share": [
+          0.07385795563459396,
+          0.13154175877571106,
+          0.601392388343811,
+          0.15877249836921692,
+          0.034435443580150604
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.4863099219891765
+          },
+          {
+            "key": "Eb major",
+            "profile_correlation": 0.4607833731657995
+          }
+        ]
+      },
+      {
+        "start_seconds": 355.5,
+        "end_seconds": 371.5,
+        "rms_dbfs": -19.276592254638672,
+        "mean_centroid_hz": 2840.817074729843,
+        "mean_onset_strength_normalized": 0.1670989841222763,
+        "mean_band_energy_share": [
+          0.12999291718006134,
+          0.0940779447555542,
+          0.5682951211929321,
+          0.17881661653518677,
+          0.02881658263504505
+        ],
+        "key_candidates": [
+          {
+            "key": "G minor",
+            "profile_correlation": 0.35373664923460724
+          },
+          {
+            "key": "Bb major",
+            "profile_correlation": 0.3504781835040087
+          }
+        ]
+      },
+      {
+        "start_seconds": 371.5,
+        "end_seconds": 389.701,
+        "rms_dbfs": -20.142919540405273,
+        "mean_centroid_hz": 2938.319187883573,
+        "mean_onset_strength_normalized": 0.16381201148033142,
+        "mean_band_energy_share": [
+          1.0001122973335441e-05,
+          0.006730611436069012,
+          0.7414169907569885,
+          0.19696316123008728,
+          0.05487930774688721
+        ],
+        "key_candidates": [
+          {
+            "key": "Ab minor",
+            "profile_correlation": 0.3662649236577502
+          },
+          {
+            "key": "E major",
+            "profile_correlation": 0.22477959880851758
+          }
+        ]
+      }
+    ],
+    "adjacent_8_second_measurements": [
+      {
+        "at_video_seconds": 13.5,
+        "before_8_seconds": {
+          "start_seconds": 5.5,
+          "end_seconds": 13.5,
+          "low_20_250_hz_share": 0.027133891358971596,
+          "high_2000_11025_hz_share": 0.3253768980503082,
+          "low_band_mean_power_db": -45.693721771240234,
+          "high_band_mean_power_db": -31.65282440185547,
+          "onset_density_peaks_per_second": 1.5,
+          "mean_onset_strength": 0.06816630065441132,
+          "harmonic_continuity_energy_share": 0.637843906879425,
+          "mean_centroid_hz": 3275.1976160999207
+        },
+        "after_8_seconds": {
+          "start_seconds": 13.5,
+          "end_seconds": 21.5,
+          "low_20_250_hz_share": 0.14118394255638123,
+          "high_2000_11025_hz_share": 0.2703104019165039,
+          "low_band_mean_power_db": -38.107017517089844,
+          "high_band_mean_power_db": -34.246337890625,
+          "onset_density_peaks_per_second": 0.375,
+          "mean_onset_strength": 0.03759317845106125,
+          "harmonic_continuity_energy_share": 0.49931299686431885,
+          "mean_centroid_hz": 2212.2846221811196
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.11405005119740963,
+          "high_2000_11025_hz_share": -0.05506649613380432,
+          "low_band_mean_power_db": 7.586704254150391,
+          "high_band_mean_power_db": -2.5935134887695312,
+          "onset_density_peaks_per_second": -1.125,
+          "mean_onset_strength": -0.030573122203350067,
+          "harmonic_continuity_energy_share": -0.1385309100151062,
+          "mean_centroid_hz": -1062.912993918801
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 34.5,
+        "before_8_seconds": {
+          "start_seconds": 26.5,
+          "end_seconds": 34.5,
+          "low_20_250_hz_share": 0.10802005976438522,
+          "high_2000_11025_hz_share": 0.23363624513149261,
+          "low_band_mean_power_db": -29.320594787597656,
+          "high_band_mean_power_db": -30.784578323364258,
+          "onset_density_peaks_per_second": 1.625,
+          "mean_onset_strength": 0.08888308703899384,
+          "harmonic_continuity_energy_share": 0.5028742551803589,
+          "mean_centroid_hz": 2571.6827221911026
+        },
+        "after_8_seconds": {
+          "start_seconds": 34.5,
+          "end_seconds": 42.5,
+          "low_20_250_hz_share": 0.3945491313934326,
+          "high_2000_11025_hz_share": 0.17830249667167664,
+          "low_band_mean_power_db": -23.528484344482422,
+          "high_band_mean_power_db": -30.008625030517578,
+          "onset_density_peaks_per_second": 4.125,
+          "mean_onset_strength": 0.18713828921318054,
+          "harmonic_continuity_energy_share": 0.48102185130119324,
+          "mean_centroid_hz": 2592.334911922624
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.2865290716290474,
+          "high_2000_11025_hz_share": -0.05533374845981598,
+          "low_band_mean_power_db": 5.792110443115234,
+          "high_band_mean_power_db": 0.7759532928466797,
+          "onset_density_peaks_per_second": 2.5,
+          "mean_onset_strength": 0.0982552021741867,
+          "harmonic_continuity_energy_share": -0.02185240387916565,
+          "mean_centroid_hz": 20.652189731521503
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 54.5,
+        "before_8_seconds": {
+          "start_seconds": 46.5,
+          "end_seconds": 54.5,
+          "low_20_250_hz_share": 0.04880402237176895,
+          "high_2000_11025_hz_share": 0.14675737917423248,
+          "low_band_mean_power_db": -34.309322357177734,
+          "high_band_mean_power_db": -31.998064041137695,
+          "onset_density_peaks_per_second": 2.25,
+          "mean_onset_strength": 0.13308079540729523,
+          "harmonic_continuity_energy_share": 0.5007333755493164,
+          "mean_centroid_hz": 2306.815065854849
+        },
+        "after_8_seconds": {
+          "start_seconds": 54.5,
+          "end_seconds": 62.5,
+          "low_20_250_hz_share": 0.3661116063594818,
+          "high_2000_11025_hz_share": 0.21945367753505707,
+          "low_band_mean_power_db": -24.40864372253418,
+          "high_band_mean_power_db": -29.735408782958984,
+          "onset_density_peaks_per_second": 4.375,
+          "mean_onset_strength": 0.1871953159570694,
+          "harmonic_continuity_energy_share": 0.4959352910518646,
+          "mean_centroid_hz": 3027.8292553602637
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.31730758398771286,
+          "high_2000_11025_hz_share": 0.07269629836082458,
+          "low_band_mean_power_db": 9.900678634643555,
+          "high_band_mean_power_db": 2.262655258178711,
+          "onset_density_peaks_per_second": 2.125,
+          "mean_onset_strength": 0.05411452054977417,
+          "harmonic_continuity_energy_share": -0.004798084497451782,
+          "mean_centroid_hz": 721.0141895054148
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 94.5,
+        "before_8_seconds": {
+          "start_seconds": 86.5,
+          "end_seconds": 94.5,
+          "low_20_250_hz_share": 0.32403016090393066,
+          "high_2000_11025_hz_share": 0.3164821267127991,
+          "low_band_mean_power_db": -24.133617401123047,
+          "high_band_mean_power_db": -27.245027542114258,
+          "onset_density_peaks_per_second": 5.0,
+          "mean_onset_strength": 0.20010393857955933,
+          "harmonic_continuity_energy_share": 0.439346581697464,
+          "mean_centroid_hz": 3569.7383789154046
+        },
+        "after_8_seconds": {
+          "start_seconds": 94.5,
+          "end_seconds": 102.5,
+          "low_20_250_hz_share": 0.3562547564506531,
+          "high_2000_11025_hz_share": 0.30000364780426025,
+          "low_band_mean_power_db": -23.653879165649414,
+          "high_band_mean_power_db": -27.386154174804688,
+          "onset_density_peaks_per_second": 4.25,
+          "mean_onset_strength": 0.21082386374473572,
+          "harmonic_continuity_energy_share": 0.4751603901386261,
+          "mean_centroid_hz": 3662.920923686881
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.03222459554672241,
+          "high_2000_11025_hz_share": -0.01647847890853882,
+          "low_band_mean_power_db": 0.4797382354736328,
+          "high_band_mean_power_db": -0.1411266326904297,
+          "onset_density_peaks_per_second": -0.75,
+          "mean_onset_strength": 0.010719925165176392,
+          "harmonic_continuity_energy_share": 0.03581380844116211,
+          "mean_centroid_hz": 93.18254477147639
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 110.5,
+        "before_8_seconds": {
+          "start_seconds": 102.5,
+          "end_seconds": 110.5,
+          "low_20_250_hz_share": 0.140982523560524,
+          "high_2000_11025_hz_share": 0.39601486921310425,
+          "low_band_mean_power_db": -28.794384002685547,
+          "high_band_mean_power_db": -27.689664840698242,
+          "onset_density_peaks_per_second": 5.0,
+          "mean_onset_strength": 0.21232762932777405,
+          "harmonic_continuity_energy_share": 0.5283624529838562,
+          "mean_centroid_hz": 3856.592465809149
+        },
+        "after_8_seconds": {
+          "start_seconds": 110.5,
+          "end_seconds": 118.5,
+          "low_20_250_hz_share": 0.5320824384689331,
+          "high_2000_11025_hz_share": 0.11213868856430054,
+          "low_band_mean_power_db": -22.057083129882812,
+          "high_band_mean_power_db": -29.85700798034668,
+          "onset_density_peaks_per_second": 2.125,
+          "mean_onset_strength": 0.07320583611726761,
+          "harmonic_continuity_energy_share": 0.5100426077842712,
+          "mean_centroid_hz": 2132.7258475180424
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.3910999149084091,
+          "high_2000_11025_hz_share": -0.2838761806488037,
+          "low_band_mean_power_db": 6.737300872802734,
+          "high_band_mean_power_db": -2.1673431396484375,
+          "onset_density_peaks_per_second": -2.875,
+          "mean_onset_strength": -0.13912179321050644,
+          "harmonic_continuity_energy_share": -0.01831984519958496,
+          "mean_centroid_hz": -1723.8666182911065
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 128.5,
+        "before_8_seconds": {
+          "start_seconds": 120.5,
+          "end_seconds": 128.5,
+          "low_20_250_hz_share": 0.44802045822143555,
+          "high_2000_11025_hz_share": 0.14362643659114838,
+          "low_band_mean_power_db": -22.319528579711914,
+          "high_band_mean_power_db": -28.53498649597168,
+          "onset_density_peaks_per_second": 2.25,
+          "mean_onset_strength": 0.08962606638669968,
+          "harmonic_continuity_energy_share": 0.4833012521266937,
+          "mean_centroid_hz": 2227.569873421386
+        },
+        "after_8_seconds": {
+          "start_seconds": 128.5,
+          "end_seconds": 136.5,
+          "low_20_250_hz_share": 0.4598598778247833,
+          "high_2000_11025_hz_share": 0.14990532398223877,
+          "low_band_mean_power_db": -22.7491397857666,
+          "high_band_mean_power_db": -29.51380157470703,
+          "onset_density_peaks_per_second": 3.0,
+          "mean_onset_strength": 0.12769296765327454,
+          "harmonic_continuity_energy_share": 0.474822074174881,
+          "mean_centroid_hz": 2383.9745300464187
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.011839419603347778,
+          "high_2000_11025_hz_share": 0.006278887391090393,
+          "low_band_mean_power_db": -0.4296112060546875,
+          "high_band_mean_power_db": -0.9788150787353516,
+          "onset_density_peaks_per_second": 0.75,
+          "mean_onset_strength": 0.03806690126657486,
+          "harmonic_continuity_energy_share": -0.008479177951812744,
+          "mean_centroid_hz": 156.40465662503266
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 171.5,
+        "before_8_seconds": {
+          "start_seconds": 163.5,
+          "end_seconds": 171.5,
+          "low_20_250_hz_share": 0.20495086908340454,
+          "high_2000_11025_hz_share": 0.2414630800485611,
+          "low_band_mean_power_db": -26.822368621826172,
+          "high_band_mean_power_db": -27.731828689575195,
+          "onset_density_peaks_per_second": 5.25,
+          "mean_onset_strength": 0.24178160727024078,
+          "harmonic_continuity_energy_share": 0.6007117629051208,
+          "mean_centroid_hz": 3006.8210207468123
+        },
+        "after_8_seconds": {
+          "start_seconds": 171.5,
+          "end_seconds": 179.5,
+          "low_20_250_hz_share": 0.5080775618553162,
+          "high_2000_11025_hz_share": 0.19632352888584137,
+          "low_band_mean_power_db": -20.703866958618164,
+          "high_band_mean_power_db": -26.482982635498047,
+          "onset_density_peaks_per_second": 6.625,
+          "mean_onset_strength": 0.23302863538265228,
+          "harmonic_continuity_energy_share": 0.43365976214408875,
+          "mean_centroid_hz": 3261.538065700483
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.3031266927719116,
+          "high_2000_11025_hz_share": -0.04513955116271973,
+          "low_band_mean_power_db": 6.118501663208008,
+          "high_band_mean_power_db": 1.2488460540771484,
+          "onset_density_peaks_per_second": 1.375,
+          "mean_onset_strength": -0.008752971887588501,
+          "harmonic_continuity_energy_share": -0.1670520007610321,
+          "mean_centroid_hz": 254.71704495367067
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 187.5,
+        "before_8_seconds": {
+          "start_seconds": 179.5,
+          "end_seconds": 187.5,
+          "low_20_250_hz_share": 0.48705217242240906,
+          "high_2000_11025_hz_share": 0.2461952269077301,
+          "low_band_mean_power_db": -21.766265869140625,
+          "high_band_mean_power_db": -26.282848358154297,
+          "onset_density_peaks_per_second": 6.375,
+          "mean_onset_strength": 0.2509760856628418,
+          "harmonic_continuity_energy_share": 0.5233703851699829,
+          "mean_centroid_hz": 3453.3782056935797
+        },
+        "after_8_seconds": {
+          "start_seconds": 187.5,
+          "end_seconds": 195.5,
+          "low_20_250_hz_share": 0.13625383377075195,
+          "high_2000_11025_hz_share": 0.1831396073102951,
+          "low_band_mean_power_db": -27.074995040893555,
+          "high_band_mean_power_db": -29.94208335876465,
+          "onset_density_peaks_per_second": 2.125,
+          "mean_onset_strength": 0.1111101359128952,
+          "harmonic_continuity_energy_share": 0.45385169982910156,
+          "mean_centroid_hz": 2618.3242573331613
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": -0.3507983386516571,
+          "high_2000_11025_hz_share": -0.063055619597435,
+          "low_band_mean_power_db": -5.30872917175293,
+          "high_band_mean_power_db": -3.6592350006103516,
+          "onset_density_peaks_per_second": -4.25,
+          "mean_onset_strength": -0.1398659497499466,
+          "harmonic_continuity_energy_share": -0.06951868534088135,
+          "mean_centroid_hz": -835.0539483604184
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 233.5,
+        "before_8_seconds": {
+          "start_seconds": 225.5,
+          "end_seconds": 233.5,
+          "low_20_250_hz_share": 0.34736087918281555,
+          "high_2000_11025_hz_share": 0.20500361919403076,
+          "low_band_mean_power_db": -22.030868530273438,
+          "high_band_mean_power_db": -25.875099182128906,
+          "onset_density_peaks_per_second": 4.25,
+          "mean_onset_strength": 0.17220793664455414,
+          "harmonic_continuity_energy_share": 0.5462362766265869,
+          "mean_centroid_hz": 3079.8468010531656
+        },
+        "after_8_seconds": {
+          "start_seconds": 233.5,
+          "end_seconds": 241.5,
+          "low_20_250_hz_share": 0.006018664687871933,
+          "high_2000_11025_hz_share": 0.17963148653507233,
+          "low_band_mean_power_db": -43.442291259765625,
+          "high_band_mean_power_db": -28.879718780517578,
+          "onset_density_peaks_per_second": 1.125,
+          "mean_onset_strength": 0.06185511499643326,
+          "harmonic_continuity_energy_share": 0.5399399995803833,
+          "mean_centroid_hz": 2312.2792046536983
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": -0.3413422144949436,
+          "high_2000_11025_hz_share": -0.025372132658958435,
+          "low_band_mean_power_db": -21.411422729492188,
+          "high_band_mean_power_db": -3.004619598388672,
+          "onset_density_peaks_per_second": -3.125,
+          "mean_onset_strength": -0.11035282164812088,
+          "harmonic_continuity_energy_share": -0.006296277046203613,
+          "mean_centroid_hz": -767.5675963994672
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 291.5,
+        "before_8_seconds": {
+          "start_seconds": 283.5,
+          "end_seconds": 291.5,
+          "low_20_250_hz_share": 0.24998046457767487,
+          "high_2000_11025_hz_share": 0.24000822007656097,
+          "low_band_mean_power_db": -26.562477111816406,
+          "high_band_mean_power_db": -27.617630004882812,
+          "onset_density_peaks_per_second": 7.375,
+          "mean_onset_strength": 0.3262697160243988,
+          "harmonic_continuity_energy_share": 0.7015173435211182,
+          "mean_centroid_hz": 3070.5715104822443
+        },
+        "after_8_seconds": {
+          "start_seconds": 291.5,
+          "end_seconds": 299.5,
+          "low_20_250_hz_share": 0.3823947012424469,
+          "high_2000_11025_hz_share": 0.21168950200080872,
+          "low_band_mean_power_db": -21.263267517089844,
+          "high_band_mean_power_db": -25.216352462768555,
+          "onset_density_peaks_per_second": 4.625,
+          "mean_onset_strength": 0.1899230033159256,
+          "harmonic_continuity_energy_share": 0.5480483770370483,
+          "mean_centroid_hz": 3226.923126699399
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.13241423666477203,
+          "high_2000_11025_hz_share": -0.02831871807575226,
+          "low_band_mean_power_db": 5.2992095947265625,
+          "high_band_mean_power_db": 2.401277542114258,
+          "onset_density_peaks_per_second": -2.75,
+          "mean_onset_strength": -0.1363467127084732,
+          "harmonic_continuity_energy_share": -0.15346896648406982,
+          "mean_centroid_hz": 156.35161621715451
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 307.5,
+        "before_8_seconds": {
+          "start_seconds": 299.5,
+          "end_seconds": 307.5,
+          "low_20_250_hz_share": 0.4762434959411621,
+          "high_2000_11025_hz_share": 0.1781977415084839,
+          "low_band_mean_power_db": -20.465557098388672,
+          "high_band_mean_power_db": -25.54410171508789,
+          "onset_density_peaks_per_second": 4.625,
+          "mean_onset_strength": 0.17780515551567078,
+          "harmonic_continuity_energy_share": 0.5695169568061829,
+          "mean_centroid_hz": 3214.206713698941
+        },
+        "after_8_seconds": {
+          "start_seconds": 307.5,
+          "end_seconds": 315.5,
+          "low_20_250_hz_share": 0.4147765040397644,
+          "high_2000_11025_hz_share": 0.1718573272228241,
+          "low_band_mean_power_db": -20.60991096496582,
+          "high_band_mean_power_db": -25.079248428344727,
+          "onset_density_peaks_per_second": 4.5,
+          "mean_onset_strength": 0.16936948895454407,
+          "harmonic_continuity_energy_share": 0.5769421458244324,
+          "mean_centroid_hz": 3198.6616074115286
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": -0.061466991901397705,
+          "high_2000_11025_hz_share": -0.00634041428565979,
+          "low_band_mean_power_db": -0.14435386657714844,
+          "high_band_mean_power_db": 0.46485328674316406,
+          "onset_density_peaks_per_second": -0.125,
+          "mean_onset_strength": -0.008435666561126709,
+          "harmonic_continuity_energy_share": 0.007425189018249512,
+          "mean_centroid_hz": -15.545106287412182
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 333.5,
+        "before_8_seconds": {
+          "start_seconds": 325.5,
+          "end_seconds": 333.5,
+          "low_20_250_hz_share": 0.4216289222240448,
+          "high_2000_11025_hz_share": 0.1816382110118866,
+          "low_band_mean_power_db": -20.60620880126953,
+          "high_band_mean_power_db": -24.976558685302734,
+          "onset_density_peaks_per_second": 4.625,
+          "mean_onset_strength": 0.16631633043289185,
+          "harmonic_continuity_energy_share": 0.5691612362861633,
+          "mean_centroid_hz": 3178.035213105732
+        },
+        "after_8_seconds": {
+          "start_seconds": 333.5,
+          "end_seconds": 341.5,
+          "low_20_250_hz_share": 0.3712976276874542,
+          "high_2000_11025_hz_share": 0.221108540892601,
+          "low_band_mean_power_db": -21.35688591003418,
+          "high_band_mean_power_db": -24.62344741821289,
+          "onset_density_peaks_per_second": 4.375,
+          "mean_onset_strength": 0.16902123391628265,
+          "harmonic_continuity_energy_share": 0.55478835105896,
+          "mean_centroid_hz": 3236.7983191185676
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": -0.050331294536590576,
+          "high_2000_11025_hz_share": 0.039470329880714417,
+          "low_band_mean_power_db": -0.7506771087646484,
+          "high_band_mean_power_db": 0.35311126708984375,
+          "onset_density_peaks_per_second": -0.25,
+          "mean_onset_strength": 0.002704903483390808,
+          "harmonic_continuity_energy_share": -0.01437288522720337,
+          "mean_centroid_hz": 58.76310601283558
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 355.5,
+        "before_8_seconds": {
+          "start_seconds": 347.5,
+          "end_seconds": 355.5,
+          "low_20_250_hz_share": 0.035656560212373734,
+          "high_2000_11025_hz_share": 0.12191510945558548,
+          "low_band_mean_power_db": -31.739112854003906,
+          "high_band_mean_power_db": -29.330265045166016,
+          "onset_density_peaks_per_second": 2.0,
+          "mean_onset_strength": 0.10656049847602844,
+          "harmonic_continuity_energy_share": 0.6270691752433777,
+          "mean_centroid_hz": 2251.5829300248
+        },
+        "after_8_seconds": {
+          "start_seconds": 355.5,
+          "end_seconds": 363.5,
+          "low_20_250_hz_share": 0.3821665346622467,
+          "high_2000_11025_hz_share": 0.2396077662706375,
+          "low_band_mean_power_db": -21.624374389648438,
+          "high_band_mean_power_db": -25.878202438354492,
+          "onset_density_peaks_per_second": 4.875,
+          "mean_onset_strength": 0.1996573507785797,
+          "harmonic_continuity_energy_share": 0.4455769956111908,
+          "mean_centroid_hz": 3355.9746597475523
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": 0.34650997444987297,
+          "high_2000_11025_hz_share": 0.11769265681505203,
+          "low_band_mean_power_db": 10.114738464355469,
+          "high_band_mean_power_db": 3.4520626068115234,
+          "onset_density_peaks_per_second": 2.875,
+          "mean_onset_strength": 0.09309685230255127,
+          "harmonic_continuity_energy_share": -0.1814921796321869,
+          "mean_centroid_hz": 1104.3917297227522
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      },
+      {
+        "at_video_seconds": 371.5,
+        "before_8_seconds": {
+          "start_seconds": 363.5,
+          "end_seconds": 371.5,
+          "low_20_250_hz_share": 0.06597638875246048,
+          "high_2000_11025_hz_share": 0.17565864324569702,
+          "low_band_mean_power_db": -34.428077697753906,
+          "high_band_mean_power_db": -31.538421630859375,
+          "onset_density_peaks_per_second": 3.625,
+          "mean_onset_strength": 0.1345406025648117,
+          "harmonic_continuity_energy_share": 0.6541836857795715,
+          "mean_centroid_hz": 2325.659489712134
+        },
+        "after_8_seconds": {
+          "start_seconds": 371.5,
+          "end_seconds": 379.5,
+          "low_20_250_hz_share": 2.1627922251354903e-05,
+          "high_2000_11025_hz_share": 0.12612281739711761,
+          "low_band_mean_power_db": -66.35508728027344,
+          "high_band_mean_power_db": -28.743114471435547,
+          "onset_density_peaks_per_second": 1.0,
+          "mean_onset_strength": 0.08329861611127853,
+          "harmonic_continuity_energy_share": 0.43686479330062866,
+          "mean_centroid_hz": 2402.4939201398965
+        },
+        "after_minus_before": {
+          "low_20_250_hz_share": -0.06595476083020912,
+          "high_2000_11025_hz_share": -0.04953582584857941,
+          "low_band_mean_power_db": -31.92700958251953,
+          "high_band_mean_power_db": 2.795307159423828,
+          "onset_density_peaks_per_second": -2.625,
+          "mean_onset_strength": -0.05124198645353317,
+          "harmonic_continuity_energy_share": -0.21731889247894287,
+          "mean_centroid_hz": 76.83443042776253
+        },
+        "classification": "Unconfirmed acoustic change; crowd and venue can produce these changes."
+      }
+    ],
+    "harmonic_continuity_note": "Time-median/frequency-median spectral mask energy share is a sustained horizontal-pattern proxy, not proof of an instrument, chord, or crowd-free sustain.",
+    "onset_density_definition": "Positive spectral-flux peaks >0.5 of global 95th-percentile normalization, at least 70 ms apart."
+  },
+  "claims_excluded": [
+    "instrument names",
+    "exact melody transcription",
+    "vocal identity",
+    "emotion inferred from listening",
+    "exact chord progression",
+    "comparison to studio master"
+  ]
+}

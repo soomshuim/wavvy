@@ -1,0 +1,24 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Warm Pixels" [ref=e288] [focused]
+  - button "Close" [ref=e289]
+  - image "Warm Pixels"
+  - button "Upload" [ref=e290]
+  - button "Create" [ref=e291]
+  - button "Animate" [ref=e292]
+  - text: "Allow comments"
+  - switch [ref=e293] [checked]
+  - text: "Allow remix"
+  - switch [ref=e294] [checked]
+  - text: "Show Remix Origin"
+  - switch [ref=e295]
+  - text: "Pin song to profile"
+  - switch [ref=e296]
+  - button "Edit caption, lyrics and styles" [ref=e297]
+  - button "Save" [ref=e298] [disabled]
+  - button "Publish" [ref=e299]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

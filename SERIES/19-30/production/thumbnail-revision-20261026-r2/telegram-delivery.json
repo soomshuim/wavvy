@@ -1,0 +1,30 @@
+{
+  "schema": "wavvy.telegram_document_delivery.v1",
+  "revision": "r2",
+  "status": "sent",
+  "started_at": "2026-10-26T05:44:33.447079+00:00",
+  "method": "sendDocument",
+  "file_path": "SERIES/19-30/input/thumb.jpg",
+  "file_sha256": "47c09e51bc26d6f64245ceabca281384da4f92ee4b8d3be6cd238d2b5abb5c04",
+  "file_bytes": 1830708,
+  "caption": "19:30 수정 썸네일 — 좌상단 픽셀 로고 · 굵은 픽셀 글꼴 · 부드러운 글로우",
+  "chat_type": "private",
+  "configured_recipient_matches": true,
+  "send_attempts": 1,
+  "finished_at": "2026-10-26T05:44:37.762685+00:00",
+  "message_id": 53680,
+  "document": {
+    "file_name": "thumb.jpg",
+    "file_size": 1830708,
+    "mime_type": "image/jpeg"
+  },
+  "checks": {
+    "api_success": true,
+    "message_id_present": true,
+    "private_chat": true,
+    "configured_recipient_matches": true,
+    "document_file_name_matches": true,
+    "document_file_size_matches": true,
+    "caption_matches": true
+  }
+}

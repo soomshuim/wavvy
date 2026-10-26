@@ -1,0 +1,61 @@
+{
+  "scope": "text and evidence checks only; not musical-quality acceptance",
+  "artifacts": [
+    {
+      "path": "SERIES/19-30/input/tracks/00_wish-reference-study.txt",
+      "sha256": "54bc40a8006e5bcdb7b7c8bcd09ebe28ef6dffe4fa38a18de7155e4639fdc687",
+      "style_characters": 878,
+      "style_limit": 900,
+      "style_budget_pass": true,
+      "exclude_items": 8,
+      "exclude_limit": 8,
+      "exclude_budget_pass": true,
+      "instrumental_tag_only": true,
+      "original_hook_explicit": true,
+      "crowd_exclusion_present": true,
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    },
+    {
+      "path": "SERIES/19-30/input/tracks/01_아직여기.txt",
+      "sha256": "a8bd29be7d99c18de2bd1b90f06126577958dfb6cf694f4914a23dc642dcfb67",
+      "style_characters": 888,
+      "style_limit": 900,
+      "style_budget_pass": true,
+      "exclude_items": 8,
+      "exclude_limit": 8,
+      "exclude_budget_pass": true,
+      "instrumental_tag_only": true,
+      "original_hook_explicit": true,
+      "crowd_exclusion_present": true,
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    }
+  ],
+  "docs": [
+    {
+      "path": "SERIES/19-30/reference/wish-analysis.md",
+      "missing_relative_links": [],
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    },
+    {
+      "path": "SERIES/19-30/concept.md",
+      "missing_relative_links": [],
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    }
+  ],
+  "full_track_gate": {
+    "result": "PASS",
+    "source_sha256_matches_current_01": true,
+    "raw_output": ".ai/research/2026-10-25-1930-wish/track-prompt-gate.json"
+  },
+  "signal_evidence": {
+    "reported_timeline_segments": 15,
+    "original_video_seconds": 389.701,
+    "analyzed_derivative_seconds": 390.21683333333334,
+    "low_band_fourier_top_bpm": 125.146,
+    "audio_analysis_report_exists": true
+  }
+}

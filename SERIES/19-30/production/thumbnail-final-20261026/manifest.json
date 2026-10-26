@@ -1,0 +1,283 @@
+{
+  "schema": "wavvy.final_artwork.v1",
+  "created_at_utc": "2026-10-26T05:26:06.726741+00:00",
+  "approved_source": {
+    "path": "SERIES/19-30/production/thumbnail-drafts/pixel-runner-v5.png",
+    "sha256": "b963bc8b0a3512e43f3b9558b524c0f051acdb228e687e74c50d981a292ed8f1",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "approval": {
+    "user_reply_exact": "1",
+    "selected_option_exact": "이 배치로 진행 — 현재 인물 위치와 배경을 유지해요.",
+    "evidence_source": "controller relay of the latest v5 approval"
+  },
+  "latest_typography_request_exact": "로고도 픽셀 버전에 픽셀 글로우 효과 / 좌측하단 / Running Mix / 170BPM / 텍스트도 픽셀 폰트 글로우 효과 넣어서",
+  "precedent_request_exact": "폰트 크기나 배치는 이전 시리즈 참고해",
+  "method": {
+    "image_generation_used_for_final": false,
+    "native_4k": false,
+    "background": "Pillow RGB nearest-neighbor resize, 1672x941 to 3840x2160, no crop or new scene generation",
+    "scale_x": 2.2966507177033493,
+    "scale_y": 2.2954303931987248,
+    "composition": "local Pillow graphics, exact supplied copy; typography at 384x216 and nearest-neighbor x10",
+    "font_path": "/Users/zenkim_office/Project/agent-center/skills/synced/635a1b15-68c4-4499-b29a-02a6deccccfb_b60ad9a3-6cf9-4a1f-beb2-457a1a47c205/canvas-design/canvas-fonts/PixelifySans-Medium.ttf",
+    "font_sha256": "38397504f71c122b03d234ea6f55118e3d5bdbddffd82bedddbd7755d3b3be82",
+    "font_name": "Pixelify Sans Medium",
+    "logo_path": "brand/logo_wavvy.png",
+    "logo_sha256": "140be637760ab412ec45b869a4c776a315b5f447232149947bff576e28e51607",
+    "logo_process": "real alpha silhouette, crop alpha bounds, downsample 60x35, binary threshold 96, nearest-neighbor x10",
+    "pixel_glow": "discrete magenta/cyan alpha bands, dark 1-grid-pixel keyline, near-white core; no rectangular plate"
+  },
+  "text": [
+    "Running Mix",
+    "170BPM"
+  ],
+  "time_digits_added": false,
+  "bpm_copy_is_user_requested_not_a_new_audio_measurement": true,
+  "layout_grid": {
+    "size": [
+      384,
+      216
+    ],
+    "output_scale": 10,
+    "logo": {
+      "xy": [
+        14,
+        103
+      ],
+      "size": [
+        60,
+        35
+      ]
+    },
+    "Running Mix": {
+      "xy": [
+        14,
+        143
+      ],
+      "size": [
+        104,
+        17
+      ],
+      "font_size": 20
+    },
+    "170BPM": {
+      "xy": [
+        14,
+        164
+      ],
+      "size": [
+        185,
+        34
+      ],
+      "font_size": 52
+    },
+    "core_left_margin_ratio": 0.036458333333333336,
+    "core_bottom_margin_ratio": 0.08333333333333333,
+    "reason_for_main_line_size": "nearest pixel-font fit to 07:00's 17.06% height while keeping the glow left of the woman's shoe; resulting height 15.74%"
+  },
+  "references": [
+    {
+      "path": "SERIES/07-00/input/thumb.psd",
+      "jpg_path": "SERIES/07-00/input/thumb.jpg",
+      "sha256": "533a338c6dc1f68f76bbad31b377f37a5287435540e92ecab0f4562a03ae5439",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "PSD layer pixel bounds; current JPG/composite compared",
+      "jpg_composite_mean_absolute_difference_rgb": [
+        0.5746176469283064,
+        0.400076215453432,
+        0.7426638465839501
+      ],
+      "elements": [
+        {
+          "layer": "180BPM",
+          "bbox": [
+            90,
+            1081,
+            1381,
+            1324
+          ],
+          "normalized_bbox": [
+            0.035545023696682464,
+            0.7591292134831461,
+            0.5454186413902053,
+            0.9297752808988764
+          ],
+          "height_ratio": 0.17064606741573032,
+          "width_ratio": 0.5098736176935229
+        },
+        {
+          "layer": "Running Mix",
+          "bbox": [
+            102,
+            940,
+            728,
+            1055
+          ],
+          "normalized_bbox": [
+            0.04028436018957346,
+            0.6601123595505618,
+            0.28751974723538704,
+            0.7408707865168539
+          ],
+          "height_ratio": 0.08075842696629214,
+          "width_ratio": 0.24723538704581358
+        }
+      ]
+    },
+    {
+      "path": "SERIES/17-00/input/thumb.jpg",
+      "sha256": "a548be6c68bd7f6f8d6bcc8cbcb432b3ac4f8fc64b2a96a20ccb0b430fceadda",
+      "size": [
+        2532,
+        1424
+      ],
+      "measurement": "near-white pixel bounds in isolated dark-background regions",
+      "elements": [
+        {
+          "element": "AUTUMN",
+          "bbox": [
+            74,
+            538,
+            850,
+            666
+          ],
+          "normalized_bbox": [
+            0.029225908372827805,
+            0.37780898876404495,
+            0.33570300157977884,
+            0.46769662921348315
+          ]
+        },
+        {
+          "element": "WALK",
+          "bbox": [
+            72,
+            725,
+            610,
+            853
+          ],
+          "normalized_bbox": [
+            0.02843601895734597,
+            0.5091292134831461,
+            0.24091627172195892,
+            0.5990168539325843
+          ]
+        },
+        {
+          "element": "Wavvy logo, excluding time digits",
+          "bbox": [
+            58,
+            39,
+            436,
+            260
+          ],
+          "normalized_bbox": [
+            0.022906793048973143,
+            0.027387640449438203,
+            0.1721958925750395,
+            0.18258426966292135
+          ]
+        }
+      ]
+    }
+  ],
+  "prompt_chain": [
+    {
+      "path": "SERIES/19-30/production/thumbnail-drafts/prompt.txt",
+      "sha256": "81eb993133a8a615547ac52ea3fd103de7b1da6bf59d6b0d6d7216f5859ac377"
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-drafts/prompt-v2.txt",
+      "sha256": "1fcea76ea4ebc93ebd3c39e5670841e8afadce04074029b9eb5c4d3ceae24fa5"
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-drafts/prompt-v3.txt",
+      "sha256": "8f34d97d3427313aa2595a7241ee194995c44017c179c98c20085a6379970c2c"
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-drafts/prompt-v4.txt",
+      "sha256": "1b5a24c21fa0a7030593f44e4719e33df1286556f672bd6a4f85a1c17e8d11a3"
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-drafts/prompt-v5.txt",
+      "sha256": "69d3b14aae3a18290fca5a96a4aa00cbd7fb9ee5fe5176f7fb3675879719916a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "SERIES/19-30/input/loop.png",
+      "sha256": "349391ef58a643a3e10bf09c8cadd65dbfd5d565676bc9130325b43304422564",
+      "bytes": 3154600,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/input/thumb.jpg",
+      "sha256": "2eee7e97a26fdaff03df1e6681c645bbd1cdcaf023be8cc7408103ab92842c56",
+      "bytes": 1840479,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-final-20261026/thumb-master.png",
+      "sha256": "37e6ca5dbceea04b7ed9851f0a5ea45541a1d472b650c4416b6eab33979da33d",
+      "bytes": 2949934,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-final-20261026/thumb-preview-960.png",
+      "sha256": "20518aba2c565cb2f21321b2cc81f22760e1cc046bbd06f462f8bc4c965bdad4",
+      "bytes": 863162,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "path": "SERIES/19-30/production/thumbnail-final-20261026/thumb-phone-320.png",
+      "sha256": "520b5b7dee23ddd5f9d54fee6c166d569e1e9630f6e43454847ebf83df5c4d3c",
+      "bytes": 132585,
+      "size": [
+        320,
+        180
+      ]
+    }
+  ],
+  "jpeg": {
+    "quality": 86,
+    "subsampling": 0,
+    "bytes": 1840479
+  },
+  "backups": {
+    "SERIES/19-30/input/loop.png": null,
+    "SERIES/19-30/input/thumb.jpg": null
+  },
+  "validation": {
+    "loop_exactly_matches_nearest_scaled_v5": true,
+    "source_hash_unchanged": true,
+    "full_size_visual_inspection": "passed: approved figure and background preserved; exact pixel logo and two text lines visible; no crop or figure overlap",
+    "phone_size_visual_inspection": "passed at 320x180: Wavvy, Running Mix and 170BPM readable; runner remains clear",
+    "preview_source": "actual final thumb.jpg, not the lossless master"
+  },
+  "telegram_delivery": {
+    "record": "SERIES/19-30/production/thumbnail-final-20261026/telegram-delivery.json",
+    "status": "sent",
+    "method": "sendDocument",
+    "message_id": 53664,
+    "chat_type": "private"
+  }
+}

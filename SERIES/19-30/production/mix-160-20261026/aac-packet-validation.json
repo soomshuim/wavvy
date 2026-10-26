@@ -1,0 +1,37 @@
+{
+  "command": [
+    "ffprobe",
+    "-v",
+    "error",
+    "-select_streams",
+    "a:0",
+    "-show_packets",
+    "-show_entries",
+    "packet=pts,dts,duration,side_data_list",
+    "-of",
+    "json",
+    "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-160-20261026/continuous-mix-1930-160-repeat2.m4a"
+  ],
+  "packet_count": 311103,
+  "first_packet": {
+    "pts": -1024,
+    "dts": -1024,
+    "duration": 1024,
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "last_packet": {
+    "pts": 318567424,
+    "dts": 318567424,
+    "duration": 1020
+  },
+  "gaps": [],
+  "stream_end_sample": 318568444
+}

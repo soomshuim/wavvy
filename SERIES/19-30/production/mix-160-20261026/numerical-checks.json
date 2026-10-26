@@ -1,0 +1,3555 @@
+{
+  "schema": "wavvy.integrated_160_numerical_checks.v1",
+  "passed": true,
+  "checks": [
+    {
+      "kind": "transition",
+      "number": 1,
+      "source_170_frames": [
+        7019338,
+        7307338
+      ],
+      "output_160_frames": [
+        7458047,
+        7764047
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.3426696943630312
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8980129933662732
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "144.236208333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "153.375979166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 2,
+      "source_170_frames": [
+        16490737,
+        16778737
+      ],
+      "output_160_frames": [
+        17521408,
+        17827408
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.3050444696878389
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9301444366406451
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "341.557020833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "363.029333333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 3,
+      "source_170_frames": [
+        23762654,
+        24050654
+      ],
+      "output_160_frames": [
+        25247820,
+        25553820
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.5172301798400101
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7544533566540187
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "493.055291666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "523.996250000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 4,
+      "source_170_frames": [
+        29891779,
+        30179779
+      ],
+      "output_160_frames": [
+        31760015,
+        32066015
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.2028417101026237
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.857935946144756
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "620.745395833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "659.666979166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 5,
+      "source_170_frames": [
+        36721885,
+        37009885
+      ],
+      "output_160_frames": [
+        39017003,
+        39323003
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.32315120092928307
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8554657369844633
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "763.039270833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "810.854229166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 6,
+      "source_170_frames": [
+        44475551,
+        44763551
+      ],
+      "output_160_frames": [
+        47255273,
+        47561273
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.40486851169499444
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.6011905060650483
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "924.573979166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "982.484854166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 7,
+      "source_170_frames": [
+        51577658,
+        51865658
+      ],
+      "output_160_frames": [
+        54801262,
+        55107262
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5877942873050322
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8742553458151654
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1072.534541666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1139.692958333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 8,
+      "source_170_frames": [
+        60719050,
+        61007050
+      ],
+      "output_160_frames": [
+        64513991,
+        64819991
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.25507928922468326
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.5727197653918621
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1262.980208333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1342.041479166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 9,
+      "source_170_frames": [
+        69806830,
+        70094830
+      ],
+      "output_160_frames": [
+        74169757,
+        74475757
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.4820400610019716
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8282994276195992
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1452.308958333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1543.203270833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 10,
+      "source_170_frames": [
+        77492814,
+        77780814
+      ],
+      "output_160_frames": [
+        82336115,
+        82642115
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 6,
+            "correlation": 0.34591596908793926
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.807032342260696
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1612.433625000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1713.335729166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 11,
+      "source_170_frames": [
+        86907989,
+        87195989
+      ],
+      "output_160_frames": [
+        92339738,
+        92645738
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.5387796712546479
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9370898426924509
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1808.583104166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1921.744541666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 12,
+      "source_170_frames": [
+        95485432,
+        95773432
+      ],
+      "output_160_frames": [
+        101453272,
+        101759272
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.6153130998904052
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9136132788108413
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1987.279833333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2111.609833333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 13,
+      "source_170_frames": [
+        101017807,
+        101305807
+      ],
+      "output_160_frames": [
+        107331420,
+        107637420
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 6,
+            "correlation": 0.3304135917536744
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9129962331819956
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2102.537645833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2234.071250000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 14,
+      "source_170_frames": [
+        109176498,
+        109464498
+      ],
+      "output_160_frames": [
+        116000029,
+        116306029
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.4699447414133238
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7109897828551756
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2272.510375000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2414.667270833334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 15,
+      "source_170_frames": [
+        115238243,
+        115526243
+      ],
+      "output_160_frames": [
+        122440633,
+        122746633
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5353513890206307
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8068465990317972
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2398.796729166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2548.846520833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 16,
+      "source_170_frames": [
+        121905061,
+        122193061
+      ],
+      "output_160_frames": [
+        129524127,
+        129830127
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.6405361597196689
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9346155780391918
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2537.688770833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2696.419312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 17,
+      "source_170_frames": [
+        127993667,
+        128281667
+      ],
+      "output_160_frames": [
+        135993271,
+        136299271
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5286085735473502
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8662588045399123
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2664.534729166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2831.193145833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 18,
+      "source_170_frames": [
+        135675395,
+        135963395
+      ],
+      "output_160_frames": [
+        144155107,
+        144461107
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.19762082775723497
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8502862793041962
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2824.570729166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3001.231395833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 19,
+      "source_170_frames": [
+        142373556,
+        142661556
+      ],
+      "output_160_frames": [
+        151271903,
+        151577903
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5698405504793592
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.6720517208674986
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2964.115750000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3149.497979166666",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 20,
+      "source_170_frames": [
+        149770562,
+        150058562
+      ],
+      "output_160_frames": [
+        159131222,
+        159437222
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.3613187953563228
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.6394093753706673
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3118.220041666666",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3313.233791666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 21,
+      "source_170_frames": [
+        156897926,
+        157185926
+      ],
+      "output_160_frames": [
+        166704046,
+        167010046
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.3352233124486399
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.903464206872767
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3266.706791666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3471.000958333334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 22,
+      "source_170_frames": [
+        166369325,
+        166657325
+      ],
+      "output_160_frames": [
+        176767408,
+        177073408
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.3811468032176146
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.46598930418895795
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3464.027604166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3680.654333333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 23,
+      "source_170_frames": [
+        173641242,
+        173929242
+      ],
+      "output_160_frames": [
+        184493820,
+        184799820
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.44099160377006036
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7483938648477906
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3615.525875000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3841.621250000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 24,
+      "source_170_frames": [
+        179770367,
+        180058367
+      ],
+      "output_160_frames": [
+        191006015,
+        191312015
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.20937929512487216
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8583121733120752
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3743.215979166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3977.291979166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 25,
+      "source_170_frames": [
+        186600473,
+        186888473
+      ],
+      "output_160_frames": [
+        198263003,
+        198569003
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.31491055557437087
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9001214459981157
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3885.509854166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4128.479229166666",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 26,
+      "source_170_frames": [
+        194354139,
+        194642139
+      ],
+      "output_160_frames": [
+        206501273,
+        206807273
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.314802861332753
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7172216658230212
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4047.044562500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4300.109854166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 27,
+      "source_170_frames": [
+        201456246,
+        201744246
+      ],
+      "output_160_frames": [
+        214047261,
+        214353261
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.5385312236212758
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7262063265959161
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4195.005125000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4457.317937500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 28,
+      "source_170_frames": [
+        210597638,
+        210885638
+      ],
+      "output_160_frames": [
+        223759990,
+        224065990
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 28,
+            "correlation": 0.21756149228869648
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.5770205185514387
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4385.450791666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4659.666458333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 29,
+      "source_170_frames": [
+        219685418,
+        219973418
+      ],
+      "output_160_frames": [
+        233415757,
+        233721757
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -12,
+            "correlation": 0.1895532383888211
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8395201225340472
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4574.779541666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4860.828270833334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 30,
+      "source_170_frames": [
+        227371403,
+        227659403
+      ],
+      "output_160_frames": [
+        241582116,
+        241888116
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 6,
+            "correlation": 0.31670604557186705
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.775165967689372
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4734.904229166666",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5030.960750000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 31,
+      "source_170_frames": [
+        236786578,
+        237074578
+      ],
+      "output_160_frames": [
+        251585739,
+        251891739
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.6418301473051008
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9324994056611361
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "4931.053708333333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5239.369562500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 32,
+      "source_170_frames": [
+        245364020,
+        245652020
+      ],
+      "output_160_frames": [
+        260699271,
+        261005271
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5974548390533684
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9258573830873056
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5109.750416666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5429.234812500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 33,
+      "source_170_frames": [
+        250896396,
+        251184396
+      ],
+      "output_160_frames": [
+        266577421,
+        266883421
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 6,
+            "correlation": 0.35077314253201863
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9306182694387753
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5225.008250000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5551.696270833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 34,
+      "source_170_frames": [
+        259055086,
+        259343086
+      ],
+      "output_160_frames": [
+        275246029,
+        275552029
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.43166513281609675
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.606305175196422
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5394.980958333334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5732.292270833334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 35,
+      "source_170_frames": [
+        265116831,
+        265404831
+      ],
+      "output_160_frames": [
+        281686633,
+        281992633
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.619762352803187
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8684112592695654
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5521.267312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5866.471520833334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 36,
+      "source_170_frames": [
+        271783649,
+        272071649
+      ],
+      "output_160_frames": [
+        288770127,
+        289076127
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.6948528472200427
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.9240911273592012
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5660.159354166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "6014.044312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 37,
+      "source_170_frames": [
+        277872255,
+        278160255
+      ],
+      "output_160_frames": [
+        295239271,
+        295545271
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.6288831425584857
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.887116337956957
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5787.005312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "6148.818145833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 38,
+      "source_170_frames": [
+        285553983,
+        285841983
+      ],
+      "output_160_frames": [
+        303401107,
+        303707107
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 2,
+            "correlation": 0.18192819561055157
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8693539611075236
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "5947.041312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "6318.856395833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "transition",
+      "number": 39,
+      "source_170_frames": [
+        292252144,
+        292540144
+      ],
+      "output_160_frames": [
+        310517903,
+        310823903
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.5779421594291594
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7366826792507823
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "6086.586333333334",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=384000,asetpts=N/SR/TB",
+          "-t",
+          "6.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "6467.122979166666",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=402000,asetpts=N/SR/TB",
+          "-t",
+          "6.375000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "body",
+      "number": 1,
+      "source_170_frames": [
+        3117441,
+        4077441
+      ],
+      "output_160_frames": [
+        3312281,
+        4332281
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.365225002976142
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.8018725742217401
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "62.946687500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1056000,asetpts=N/SR/TB",
+          "-t",
+          "20.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "67.005854166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1116000,asetpts=N/SR/TB",
+          "-t",
+          "21.250000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ],
+      "pulse": {
+        "windows": [
+          {
+            "center_seconds": 10.0,
+            "band_bpm": {
+              "low": 209.0820035975882,
+              "mid": 160.11186804891548,
+              "high": 160.09090410365212
+            },
+            "band_strength": {
+              "low": 0.6386573679745009,
+              "mid": 0.6333928962574782,
+              "high": 1.003262233472241
+            },
+            "median_bpm": 160.11186804891548,
+            "band_spread_bpm": 48.991099493936076
+          },
+          {
+            "center_seconds": 15.0,
+            "band_bpm": {
+              "low": 193.66784010632142,
+              "mid": 160.22336586956774,
+              "high": 160.13839450687587
+            },
+            "band_strength": {
+              "low": 0.5760440390430832,
+              "mid": 0.6480731293963091,
+              "high": 0.9931155390678166
+            },
+            "median_bpm": 160.22336586956774,
+            "band_spread_bpm": 33.52944559944555
+          }
+        ],
+        "mid_high_bpm_median": 160.1411331322528,
+        "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+      },
+      "pitch": {
+        "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+        "windows": [
+          {
+            "source_center_seconds": 2.0,
+            "output_center_seconds": 2.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.7757821509958871
+          },
+          {
+            "source_center_seconds": 6.0,
+            "output_center_seconds": 6.375,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8903652029797775
+          },
+          {
+            "source_center_seconds": 10.0,
+            "output_center_seconds": 10.625,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9490150926902216
+          },
+          {
+            "source_center_seconds": 14.0,
+            "output_center_seconds": 14.875,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.947369594147436
+          },
+          {
+            "source_center_seconds": 18.0,
+            "output_center_seconds": 19.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9518549562659572
+          }
+        ],
+        "median_shift_cents": 0.0,
+        "passed": true,
+        "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+      }
+    },
+    {
+      "kind": "body",
+      "number": 4,
+      "source_170_frames": [
+        26491271,
+        27451271
+      ],
+      "output_160_frames": [
+        28146975,
+        29166975
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.4088407847197076
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.5984106341780252
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "549.901479166667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1056000,asetpts=N/SR/TB",
+          "-t",
+          "20.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "584.395312500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1116000,asetpts=N/SR/TB",
+          "-t",
+          "21.250000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ],
+      "pulse": {
+        "windows": [
+          {
+            "center_seconds": 10.0,
+            "band_bpm": {
+              "low": 214.06352976236113,
+              "mid": 213.20556399927506,
+              "high": 213.60827824456896
+            },
+            "band_strength": {
+              "low": 0.6109240429919713,
+              "mid": 0.6471766076436102,
+              "high": 0.716929765750776
+            },
+            "median_bpm": 213.60827824456896,
+            "band_spread_bpm": 0.8579657630860709
+          },
+          {
+            "center_seconds": 15.0,
+            "band_bpm": {
+              "low": 206.73855666779872,
+              "mid": 159.9062948278005,
+              "high": 213.82390479307747
+            },
+            "band_strength": {
+              "low": 0.6419160372297689,
+              "mid": 0.6607508780734617,
+              "high": 0.7309616473821943
+            },
+            "median_bpm": 206.73855666779872,
+            "band_spread_bpm": 53.91760996527697
+          }
+        ],
+        "mid_high_bpm_median": 200.1360104661805,
+        "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+      },
+      "pitch": {
+        "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+        "windows": [
+          {
+            "source_center_seconds": 2.0,
+            "output_center_seconds": 2.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8735532670208274
+          },
+          {
+            "source_center_seconds": 6.0,
+            "output_center_seconds": 6.375,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8872920828983377
+          },
+          {
+            "source_center_seconds": 10.0,
+            "output_center_seconds": 10.625,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.739687965970397
+          },
+          {
+            "source_center_seconds": 14.0,
+            "output_center_seconds": 14.875,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.902196827582444
+          },
+          {
+            "source_center_seconds": 18.0,
+            "output_center_seconds": 19.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9151785073010014
+          }
+        ],
+        "median_shift_cents": 0.0,
+        "passed": true,
+        "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+      }
+    },
+    {
+      "kind": "body",
+      "number": 11,
+      "source_170_frames": [
+        81865831,
+        82825831
+      ],
+      "output_160_frames": [
+        86982445,
+        88002445
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": -2,
+            "correlation": 0.3010826227869127
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7946241440874838
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1703.538145833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1056000,asetpts=N/SR/TB",
+          "-t",
+          "20.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "1810.134270833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1116000,asetpts=N/SR/TB",
+          "-t",
+          "21.250000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ],
+      "pulse": {
+        "windows": [
+          {
+            "center_seconds": 10.0,
+            "band_bpm": {
+              "low": 159.45163784739344,
+              "mid": 159.6201047582462,
+              "high": 159.98038909221336
+            },
+            "band_strength": {
+              "low": 0.6513711845758152,
+              "mid": 0.6349696061743082,
+              "high": 0.8430349338300251
+            },
+            "median_bpm": 159.6201047582462,
+            "band_spread_bpm": 0.5287512448199152
+          },
+          {
+            "center_seconds": 15.0,
+            "band_bpm": {
+              "low": 157.91735238987883,
+              "mid": 159.21533662429388,
+              "high": 159.98715575304064
+            },
+            "band_strength": {
+              "low": 0.6140493826780945,
+              "mid": 0.6389303266801276,
+              "high": 0.8791160549871688
+            },
+            "median_bpm": 159.21533662429388,
+            "band_spread_bpm": 2.0698033631618102
+          }
+        ],
+        "mid_high_bpm_median": 159.7007465569485,
+        "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+      },
+      "pitch": {
+        "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+        "windows": [
+          {
+            "source_center_seconds": 2.0,
+            "output_center_seconds": 2.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9252583146113251
+          },
+          {
+            "source_center_seconds": 6.0,
+            "output_center_seconds": 6.375,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9215421489941373
+          },
+          {
+            "source_center_seconds": 10.0,
+            "output_center_seconds": 10.625,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.931100287933306
+          },
+          {
+            "source_center_seconds": 14.0,
+            "output_center_seconds": 14.875,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9129040246934955
+          },
+          {
+            "source_center_seconds": 18.0,
+            "output_center_seconds": 19.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.944116222437683
+          }
+        ],
+        "median_shift_cents": 0.0,
+        "passed": true,
+        "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+      }
+    },
+    {
+      "kind": "body",
+      "number": 16,
+      "source_170_frames": [
+        118236997,
+        119196997
+      ],
+      "output_160_frames": [
+        125626809,
+        126646809
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 0,
+            "correlation": 0.7179450685115957
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.7498916750209829
+          }
+        },
+        "reliable_band_count": 2,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2461.270770833333",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1056000,asetpts=N/SR/TB",
+          "-t",
+          "20.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "2615.225187500000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1116000,asetpts=N/SR/TB",
+          "-t",
+          "21.250000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ],
+      "pulse": {
+        "windows": [
+          {
+            "center_seconds": 10.0,
+            "band_bpm": {
+              "low": 213.78624047448707,
+              "mid": 159.9287678505844,
+              "high": 213.1134528649376
+            },
+            "band_strength": {
+              "low": 0.7336779491328688,
+              "mid": 0.9233304473458751,
+              "high": 1.0234529266745176
+            },
+            "median_bpm": 213.1134528649376,
+            "band_spread_bpm": 53.85747262390268
+          },
+          {
+            "center_seconds": 15.0,
+            "band_bpm": {
+              "low": 213.49721644650072,
+              "mid": 160.0002769974241,
+              "high": 213.20376335971378
+            },
+            "band_strength": {
+              "low": 0.7490802194675384,
+              "mid": 0.9173631487913936,
+              "high": 1.0404137093434846
+            },
+            "median_bpm": 213.20376335971378,
+            "band_spread_bpm": 53.49693944907662
+          }
+        ],
+        "mid_high_bpm_median": 186.56156526816497,
+        "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+      },
+      "pitch": {
+        "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+        "windows": [
+          {
+            "source_center_seconds": 2.0,
+            "output_center_seconds": 2.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9006020753009394
+          },
+          {
+            "source_center_seconds": 6.0,
+            "output_center_seconds": 6.375,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.850726925154838
+          },
+          {
+            "source_center_seconds": 10.0,
+            "output_center_seconds": 10.625,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8056220652561911
+          },
+          {
+            "source_center_seconds": 14.0,
+            "output_center_seconds": 14.875,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8521403344574255
+          },
+          {
+            "source_center_seconds": 18.0,
+            "output_center_seconds": 19.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.845133817965444
+          }
+        ],
+        "median_shift_cents": 0.0,
+        "passed": true,
+        "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+      }
+    },
+    {
+      "kind": "body",
+      "number": 20,
+      "source_170_frames": [
+        145739070,
+        146699070
+      ],
+      "output_160_frames": [
+        154847762,
+        155867762
+      ],
+      "attack_alignment": {
+        "bands": {
+          "mid": {
+            "lag_ms": 4,
+            "correlation": 0.3936281880471355
+          },
+          "high": {
+            "lag_ms": 0,
+            "correlation": 0.6597712878864399
+          }
+        },
+        "reliable_band_count": 1,
+        "status": "measured",
+        "passed": true,
+        "caveat": "An empty reliable set is explicitly unmeasurable, not evidence of an audible beat."
+      },
+      "commands": [
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3034.230625000000",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1056000,asetpts=N/SR/TB",
+          "-t",
+          "20.000000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-nostdin",
+          "-ss",
+          "3223.995041666667",
+          "-i",
+          "/Users/zenkim_office/Project/wavvy/work/mix-160-20261026/uniform-160.wav",
+          "-af",
+          "atrim=start_sample=96000:end_sample=1116000,asetpts=N/SR/TB",
+          "-t",
+          "21.250000000000",
+          "-ar",
+          "48000",
+          "-ac",
+          "2",
+          "-f",
+          "f32le",
+          "-"
+        ]
+      ],
+      "pulse": {
+        "windows": [
+          {
+            "center_seconds": 10.0,
+            "band_bpm": {
+              "low": 180.581342702484,
+              "mid": 159.56798004442902,
+              "high": 159.97372498315767
+            },
+            "band_strength": {
+              "low": 0.7545507429194496,
+              "mid": 0.609926973482813,
+              "high": 0.8006242224869141
+            },
+            "median_bpm": 159.97372498315767,
+            "band_spread_bpm": 21.013362658054973
+          },
+          {
+            "center_seconds": 15.0,
+            "band_bpm": {
+              "low": 213.73645647213445,
+              "mid": 159.5765705677748,
+              "high": 160.05969048215195
+            },
+            "band_strength": {
+              "low": 0.7033898350161787,
+              "mid": 0.6327574601900143,
+              "high": 0.8297606810803072
+            },
+            "median_bpm": 160.05969048215195,
+            "band_spread_bpm": 54.15988590435964
+          }
+        ],
+        "mid_high_bpm_median": 159.79449151937837,
+        "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+      },
+      "pitch": {
+        "method": "five matched two-second Welch spectra, whitened log-frequency correlation, ±100cent search",
+        "windows": [
+          {
+            "source_center_seconds": 2.0,
+            "output_center_seconds": 2.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8945344192655971
+          },
+          {
+            "source_center_seconds": 6.0,
+            "output_center_seconds": 6.375,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9127703113656415
+          },
+          {
+            "source_center_seconds": 10.0,
+            "output_center_seconds": 10.625,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9269868170282958
+          },
+          {
+            "source_center_seconds": 14.0,
+            "output_center_seconds": 14.875,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.8744409038569173
+          },
+          {
+            "source_center_seconds": 18.0,
+            "output_center_seconds": 19.125,
+            "best_frequency_shift_cents": 0,
+            "spectral_correlation": 0.9010892867790128
+          }
+        ],
+        "median_shift_cents": 0.0,
+        "passed": true,
+        "caveat": "Polyphonic spectral proxy, not exact note transcription or auditory quality approval."
+      }
+    }
+  ],
+  "body_pulse_bpm_values": [
+    160.1411331322528,
+    200.1360104661805,
+    159.7007465569485,
+    186.56156526816497,
+    159.79449151937837
+  ],
+  "attack_abs_lag_p90_ms": 0.0,
+  "unmeasurable_attack_windows": [],
+  "direct_listening": false,
+  "limitation": "Inherited full/half and downbeat uncertainty. Sparse attacks can be unmeasurable; no every-instant beat guarantee."
+}

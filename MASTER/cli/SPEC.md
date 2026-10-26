@@ -23,17 +23,70 @@ SERIES/[Series_Name]/
 ├── input/
 │   ├── tracks/       # MP3/WAV (파일명 규칙 필수)
 │   ├── loop.mp4      # 배경 비디오 루프 (선택: video mode)
-│   ├── loop.png/jpg  # 정적 배경 이미지 (선택: image mode)
+│   ├── video-background.png # 실제 3840×2160 생성 장면 + Wavvy 로고만 (image mode; jpg/jpeg 허용)
+│   ├── video-artwork.json   # 본편·썸네일 역할/해시 및 시각 검수 연결
 │   ├── shorts.mp4    # shorts용 (선택)
-│   └── thumb.jpg
+│   └── thumb.jpg     # 제목·BPM 등 문구가 있는 YouTube 썸네일 전용
 ├── work/             # (자동생성)
 └── output/           # (자동생성)
 
 brand/
-└── logo_wavvy.png    # 전역 로고 (50% 크기로 오버레이)
+└── logo_wavvy.png    # 전역 로고 (정적 배경에는 미리 합성, loop 비디오는 기존 오버레이)
 ```
 
 ---
+
+### Video artwork contract
+
+Every new static full-length video uses a generated scene with the Wavvy logo only, at actual 3840×2160 pixels. The separate YouTube thumbnail carries title/BPM/time/promotional text. This applies across music themes. Never render `thumb.jpg` or a renamed/re-encoded copy as the background. `preview`, `pack`, the static renderer, and release gates require this contract; there is no compilation thumbnail fallback. Existing `loop.mp4` processing is unchanged.
+
+`input/video-artwork.json`:
+
+```json
+{
+  "schema": "wavvy.video_artwork.v1",
+  "video_background": {
+    "role": "video_background",
+    "path": "input/video-background.png",
+    "sha256": "<64 lowercase hex characters>",
+    "origin": "generated_scene"
+  },
+  "thumbnail": {
+    "role": "youtube_thumbnail",
+    "path": "input/thumb.jpg",
+    "sha256": "<64 lowercase hex characters>"
+  },
+  "visual_review": {
+    "path": "production/video-artwork-review.json",
+    "sha256": "<64 lowercase hex characters>"
+  }
+}
+```
+
+The background may use `.png`, `.jpg`, or `.jpeg` with the fixed `input/video-background` stem. Paths stay inside the series. The gate checks actual dimensions, distinct files/hashes, and distinct decoded RGBA pixels, including lossless format changes. `origin` records the source description; it does not automatically authenticate image generation.
+
+The referenced visual-review JSON must be written after actually inspecting the final image with `view_image`; a filename does not prove its contents:
+
+```json
+{
+  "schema": "wavvy.video_artwork_review.v1",
+  "image": {"path": "input/video-background.png", "sha256": "<same background hash>"},
+  "method": "view_image",
+  "reviewer": "<actual observer>",
+  "reviewed_at": "2026-10-26T17:00:00+09:00",
+  "observations": {
+    "wavvy_logo_present": true,
+    "title_text_present": false,
+    "bpm_text_present": false,
+    "other_overlay_text_present": false
+  },
+  "evidence": "<what the observer actually saw, and the inspected source if copied byte-for-byte>"
+}
+```
+
+`pack` binds the artwork manifest's path/SHA-256 into `report.json > processing_params.video_artwork`. A new retained-premix archive keeps schema `wavvy.final_premixed_audio.v1`, but its `image` now identifies the logo-only background and its render record includes `video_artwork: {path: "input/video-artwork.json", sha256: "..."}`. The record's image/command must use the background; `upload.csv.thumbnail_path` must identify the separate `input/thumb.jpg`. Missing or stale visual review, artwork hashes, or render bindings fail closed. These checks bind observed evidence; they do not perform OCR or independently certify the observer's visual judgment.
+
+Already-uploaded videos and their historical artwork remain valid without recreation. Legacy retained-premix inspection requires recorded upload completion plus its hash-bound validated render identity. A pending release cannot opt into the old image rule; every new preview/pack/static render requires the current contract even for a previously uploaded series.
 
 ## 3. 파일명 규칙
 
@@ -47,14 +100,14 @@ STYLE에 숫자 BPM이 없는 곡은 마지막 필드에 `NA`를 쓴다. 이 값
 ## 4. CLI 커맨드
 
 ### A. `validate`
-- File Check: tracks 1개+, `loop.mp4` 또는 `loop.png/jpg/jpeg`, `thumb.jpg`
+- File Check: tracks 1개+, `loop.mp4` 또는 `video-background.png/jpg/jpeg` + `video-artwork.json`, 별도 `thumb.jpg`
 - Naming Check: `__` 규칙
 - Audio Integrity: ffprobe (Duration, Decodable, Sample Rate)
-- Explicit retained-premix opt-in validates `production/final-premixed-audio.json` and its retained producer evidence/JPG instead of requiring individual tracks or a loop file. A partial or invalid opt-in fails; it never falls back to surviving WAVs.
+- Explicit retained-premix opt-in validates `production/final-premixed-audio.json` and its retained producer evidence/video background instead of requiring individual tracks or a loop file. A partial or invalid opt-in fails; it never falls back to surviving WAVs.
 
 ### B. `preview`
 - **옵션:** `--sec 30`
-- Sequential Acrossfade (0.8s) → 앞 30초 자름 → loop+thumb 렌더링
+- Sequential Acrossfade (0.8s) → 앞 30초 자름 → loop 비디오 또는 검수한 로고 전용 4K 배경으로 렌더링
 - `-shortest` 필수, normalize 생략
 
 ### C. `vfade` (v3.0 — 자동 크롭/로고)
@@ -155,7 +208,7 @@ Retained premix releases explicitly declare `## Final Premixed Audio`, `- Manife
 
 The `wavvy.continuous_mix.repeat2.v1` producer schema binds its `plan_path`/hash and `producer_script_path`/hash directly. Its selection basis is the approved selected-ID manifest; its source ledger is `wavvy.reacquisition.v1`. Source validation compares reacquired WAV hashes with download/correction inputs, and separately compares corrected WAV hashes with correction outputs, independent beat records, plan and mix. It requires the 40 chapter starts to equal the starts of the 39 incoming transition chunks plus zero. Historical prompt ledgers are not relabeled as current evidence. The earlier base/repeat producer contract remains active for 06:30.
 
-`source-final` checks the actual AAC/JPG and preserved source/timeline evidence. `render-final` / `upload-ready` additionally compare the complete AAC packet payload/timing, source audio duration, 3840×2160 H.264/AAC streams, at most one final video frame of duration rounding, recorded JPG render inputs, 40 embedded starts/titles, CSV video path, and concept/CSV metadata with 40 rounded chapter starts. `verify-release` performs the same full release comparison and title validation. This instrumental path requires no lyric subtitles. State exposes `premixed_audio`, `premix_production_report`, `premixed_video`, and `premixed_video_path` separately; missing `final.mkv`/`report.json` remain truthfully missing. Uploaded cleanup requires recorded YouTube upload completion and retained render identity evidence.
+`source-final` checks the actual AAC/video background and preserved source/timeline evidence. `render-final` / `upload-ready` additionally compare the complete AAC packet payload/timing, source audio duration, 3840×2160 H.264/AAC streams, at most one final video frame of duration rounding, recorded background render inputs, 40 embedded starts/titles, CSV video path, and concept/CSV metadata with 40 rounded chapter starts. `verify-release` performs the same full release comparison and title validation. This instrumental path requires no lyric subtitles. State exposes `premixed_audio`, `premix_production_report`, `premixed_video`, and `premixed_video_path` separately; missing `final.mkv`/`report.json` remain truthfully missing. Uploaded cleanup requires recorded YouTube upload completion and retained render identity evidence.
 
 ---
 
@@ -169,7 +222,7 @@ The `wavvy.continuous_mix.repeat2.v1` producer schema binds its `plan_path`/hash
 `pack`은 항상 오디오 acrossfade를 처리한다. 비디오 xfade는 `input/loop.mp4` 기반 video mode에서 루프 경계가 눈에 띄는 경우에만 별도로 만든다.
 
 - Video mode + seamless loop 필요: `vfade --test` → 확인 → `vfade` → `pack`
-- Image mode (`loop.png/jpg/jpeg`): `pack`만 실행. `vfade` 불필요
+- Image mode (`video-background.png/jpg/jpeg` + `video-artwork.json`): `pack`만 실행. `vfade` 불필요
 - 이미 `uploaded` 상태인 시리즈 점검: `state/gate`로 확인. 로컬 `final.mkv`/`upload.csv`가 `deleted_after_upload`이면 재생성 불필요
 
 ### 6.2 Seamless Loop (81분+ 영상용 — 수동)

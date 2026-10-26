@@ -13,6 +13,9 @@ This file holds rules that agents must know at execution time but that do not be
 3. **Fail fast** — stop on input validation, media probe, artifact writer, or gate failures.
 4. **Pure input policy** — Suno source work follows `MASTER/WORKFLOWS.md` and the relevant lyrics/style docs.
 5. **SSOT before inference** — when docs and files disagree, use `MASTER/SSOT.md` and `.ai/state.json`.
+6. **Video artwork is not the thumbnail** — every new static full-length video uses an actual 3840×2160 generated scene with the Wavvy logo only. Title, BPM, time, and other promotional lettering belong to the separate YouTube thumbnail. This applies to every music theme. Require `input/video-artwork.json`, distinct file hashes and decoded pixels, and a visual review bound to the exact background hash before preview/render/pack. Filename alone is not visual evidence. The `generated_scene` field records provenance; the gate does not authenticate image generation. See `MASTER/cli/SPEC.md` §Video artwork contract.
+
+Already-uploaded videos retain their historical artwork and release evidence; do not recreate them to apply this rule. Legacy inspection requires recorded upload completion and retained render identity. It never permits a new render to reuse a thumbnail. Existing video-loop processing remains unchanged; new loop artwork follows the same logo-only visual policy, while the static-image contract checks apply to static inputs.
 
 ## Approval And Safety
 

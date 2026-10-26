@@ -1,0 +1,1059 @@
+{
+  "schema": "wavvy.integrated_160_pulse_family_audit.v1",
+  "pairs": [
+    {
+      "order": 1,
+      "paired_evidence": {
+        "source_170": {
+          "path": "work/mix-160-20261026/checks/body-01/170.wav",
+          "sha256": "e0283287aed61777089a835e74a95b96f0ffda124b7adee822c7814c54915f3e",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 209.40645188649148,
+                  "mid": 169.90361979525883,
+                  "high": 170.14058972161487
+                },
+                "band_strength": {
+                  "low": 0.6339902229451585,
+                  "mid": 0.6834906701725755,
+                  "high": 1.0510643361898693
+                },
+                "median_bpm": 170.14058972161487,
+                "band_spread_bpm": 39.50283209123265
+              }
+            ],
+            "mid_high_bpm_median": 170.02210475843685,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 168.914794921875,
+                "relative_power": 0.2181985955502525
+              },
+              {
+                "bpm": 52.8717041015625,
+                "relative_power": 0.10940620415512906
+              },
+              {
+                "bpm": 59.051513671875,
+                "relative_power": 0.08097887686016234
+              },
+              {
+                "bpm": 127.25830078125,
+                "relative_power": 0.06891563622138117
+              },
+              {
+                "bpm": 91.094970703125,
+                "relative_power": 0.0661014663927124
+              },
+              {
+                "bpm": 218.5821533203125,
+                "relative_power": 0.06305696092508593
+              },
+              {
+                "bpm": 204.16259765625,
+                "relative_power": 0.06278854567714422
+              },
+              {
+                "bpm": 84.686279296875,
+                "relative_power": 0.05391152603021692
+              }
+            ],
+            "high": [
+              {
+                "bpm": 170.2880859375,
+                "relative_power": 0.03237578485575936
+              },
+              {
+                "bpm": 69.122314453125,
+                "relative_power": 0.006177305641433132
+              },
+              {
+                "bpm": 158.38623046875,
+                "relative_power": 0.005226285620686921
+              },
+              {
+                "bpm": 59.2803955078125,
+                "relative_power": 0.004477212389198853
+              },
+              {
+                "bpm": 184.9365234375,
+                "relative_power": 0.003579376772955284
+              },
+              {
+                "bpm": 103.2257080078125,
+                "relative_power": 0.002642836167925714
+              },
+              {
+                "bpm": 203.704833984375,
+                "relative_power": 0.0024571575911203195
+              },
+              {
+                "bpm": 125.1983642578125,
+                "relative_power": 0.0023147892587572724
+              }
+            ]
+          }
+        },
+        "output_160": {
+          "path": "work/mix-160-20261026/checks/body-01/160.wav",
+          "sha256": "a4a99424e38b49348824ce884f2a2b7916f0c37e2a38cbf8e8a29f9667f6d9a2",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 209.0820035975882,
+                  "mid": 160.11186804891548,
+                  "high": 160.09090410365212
+                },
+                "band_strength": {
+                  "low": 0.6386573679745009,
+                  "mid": 0.6333928962574782,
+                  "high": 1.003262233472241
+                },
+                "median_bpm": 160.11186804891548,
+                "band_spread_bpm": 48.991099493936076
+              },
+              {
+                "center_seconds": 15.0,
+                "band_bpm": {
+                  "low": 193.66784010632142,
+                  "mid": 160.22336586956774,
+                  "high": 160.13839450687587
+                },
+                "band_strength": {
+                  "low": 0.5760440390430832,
+                  "mid": 0.6480731293963091,
+                  "high": 0.9931155390678166
+                },
+                "median_bpm": 160.22336586956774,
+                "band_spread_bpm": 33.52944559944555
+              }
+            ],
+            "mid_high_bpm_median": 160.1411331322528,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 158.38623046875,
+                "relative_power": 0.17561784878842607
+              },
+              {
+                "bpm": 50.35400390625,
+                "relative_power": 0.17395417248979572
+              },
+              {
+                "bpm": 83.9996337890625,
+                "relative_power": 0.15457735192605476
+              },
+              {
+                "bpm": 58.135986328125,
+                "relative_power": 0.13160542524345584
+              },
+              {
+                "bpm": 152.435302734375,
+                "relative_power": 0.1260839493704526
+              },
+              {
+                "bpm": 135.7269287109375,
+                "relative_power": 0.0970060340048958
+              },
+              {
+                "bpm": 106.658935546875,
+                "relative_power": 0.09492670825486724
+              },
+              {
+                "bpm": 204.16259765625,
+                "relative_power": 0.07898341156306891
+              }
+            ],
+            "high": [
+              {
+                "bpm": 160.9039306640625,
+                "relative_power": 0.03227191074198698
+              },
+              {
+                "bpm": 173.492431640625,
+                "relative_power": 0.004415519825989939
+              },
+              {
+                "bpm": 55.389404296875,
+                "relative_power": 0.0040239569037075935
+              },
+              {
+                "bpm": 64.3157958984375,
+                "relative_power": 0.0026146860890156514
+              },
+              {
+                "bpm": 203.9337158203125,
+                "relative_power": 0.002396501188224032
+              },
+              {
+                "bpm": 84.4573974609375,
+                "relative_power": 0.0022133448609216186
+              },
+              {
+                "bpm": 71.868896484375,
+                "relative_power": 0.0020737754769438402
+              },
+              {
+                "bpm": 116.0430908203125,
+                "relative_power": 0.0016279897715454138
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": 4,
+      "paired_evidence": {
+        "source_170": {
+          "path": "work/mix-160-20261026/checks/body-04/170.wav",
+          "sha256": "cd29c2ea2203f9436ac5c6dbcc41ade905ef8c20de5c11250ae414daab2b1ac6",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 214.1269166465166,
+                  "mid": 170.35582219695848,
+                  "high": 170.02170518242266
+                },
+                "band_strength": {
+                  "low": 0.5912271076416675,
+                  "mid": 0.7586945925801257,
+                  "high": 0.7339085433786833
+                },
+                "median_bpm": 170.35582219695848,
+                "band_spread_bpm": 44.10521146409394
+              }
+            ],
+            "mid_high_bpm_median": 170.18876368969057,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 170.5169677734375,
+                "relative_power": 0.045019497782406354
+              },
+              {
+                "bpm": 85.3729248046875,
+                "relative_power": 0.03654802211263891
+              },
+              {
+                "bpm": 208.9691162109375,
+                "relative_power": 0.02639501398651037
+              },
+              {
+                "bpm": 95.9014892578125,
+                "relative_power": 0.01731816192769523
+              },
+              {
+                "bpm": 154.266357421875,
+                "relative_power": 0.01720812169220239
+              },
+              {
+                "bpm": 177.3834228515625,
+                "relative_power": 0.01492404551708228
+              },
+              {
+                "bpm": 106.8878173828125,
+                "relative_power": 0.013307010698953414
+              },
+              {
+                "bpm": 135.955810546875,
+                "relative_power": 0.008824673670157214
+              }
+            ],
+            "high": [
+              {
+                "bpm": 92.46826171875,
+                "relative_power": 0.0322740288656306
+              },
+              {
+                "bpm": 215.606689453125,
+                "relative_power": 0.025545396039483192
+              },
+              {
+                "bpm": 201.6448974609375,
+                "relative_power": 0.02243904881863868
+              },
+              {
+                "bpm": 52.642822265625,
+                "relative_power": 0.012954817277673003
+              },
+              {
+                "bpm": 62.4847412109375,
+                "relative_power": 0.012843794994582908
+              },
+              {
+                "bpm": 171.8902587890625,
+                "relative_power": 0.012710049145589507
+              },
+              {
+                "bpm": 210.5712890625,
+                "relative_power": 0.010895048093909204
+              },
+              {
+                "bpm": 181.0455322265625,
+                "relative_power": 0.00989844093772669
+              }
+            ]
+          }
+        },
+        "output_160": {
+          "path": "work/mix-160-20261026/checks/body-04/160.wav",
+          "sha256": "0646322e277aec2f242e7c19901a47011c2e1e3c182c269d619f8048c2e411ed",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 214.06352976236113,
+                  "mid": 213.20556399927506,
+                  "high": 213.60827824456896
+                },
+                "band_strength": {
+                  "low": 0.6109240429919713,
+                  "mid": 0.6471766076436102,
+                  "high": 0.716929765750776
+                },
+                "median_bpm": 213.60827824456896,
+                "band_spread_bpm": 0.8579657630860709
+              },
+              {
+                "center_seconds": 15.0,
+                "band_bpm": {
+                  "low": 206.73855666779872,
+                  "mid": 159.9062948278005,
+                  "high": 213.82390479307747
+                },
+                "band_strength": {
+                  "low": 0.6419160372297689,
+                  "mid": 0.6607508780734617,
+                  "high": 0.7309616473821943
+                },
+                "median_bpm": 206.73855666779872,
+                "band_spread_bpm": 53.91760996527697
+              }
+            ],
+            "mid_high_bpm_median": 200.1360104661805,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 211.7156982421875,
+                "relative_power": 0.05575003296764847
+              },
+              {
+                "bpm": 167.54150390625,
+                "relative_power": 0.04362641826551296
+              },
+              {
+                "bpm": 159.9884033203125,
+                "relative_power": 0.03683657433405684
+              },
+              {
+                "bpm": 79.4219970703125,
+                "relative_power": 0.031044740297260277
+              },
+              {
+                "bpm": 147.6287841796875,
+                "relative_power": 0.02466544181200484
+              },
+              {
+                "bpm": 194.7784423828125,
+                "relative_power": 0.024386840262347276
+              },
+              {
+                "bpm": 123.138427734375,
+                "relative_power": 0.020225693794112556
+              },
+              {
+                "bpm": 143.0511474609375,
+                "relative_power": 0.019055251960736923
+              }
+            ],
+            "high": [
+              {
+                "bpm": 75.98876953125,
+                "relative_power": 0.03570677125437857
+              },
+              {
+                "bpm": 86.517333984375,
+                "relative_power": 0.034496491090688836
+              },
+              {
+                "bpm": 192.9473876953125,
+                "relative_power": 0.026324975720174705
+              },
+              {
+                "bpm": 111.0076904296875,
+                "relative_power": 0.02428250602700992
+              },
+              {
+                "bpm": 208.5113525390625,
+                "relative_power": 0.02205711959008804
+              },
+              {
+                "bpm": 219.9554443359375,
+                "relative_power": 0.019745028176552857
+              },
+              {
+                "bpm": 167.54150390625,
+                "relative_power": 0.019738983827880117
+              },
+              {
+                "bpm": 203.0181884765625,
+                "relative_power": 0.01953372889051151
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": 11,
+      "paired_evidence": {
+        "source_170": {
+          "path": "work/mix-160-20261026/checks/body-11/170.wav",
+          "sha256": "76e9162f32d09b272a54ee2641649f1ead7fed641863427f896b8848f1d556de",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 170.27003918780338,
+                  "mid": 169.70773017818112,
+                  "high": 169.99149789337147
+                },
+                "band_strength": {
+                  "low": 0.7607594410944624,
+                  "mid": 0.7034642321382302,
+                  "high": 0.9189307615582349
+                },
+                "median_bpm": 169.99149789337147,
+                "band_spread_bpm": 0.562309009622254
+              }
+            ],
+            "mid_high_bpm_median": 169.8496140357763,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 87.432861328125,
+                "relative_power": 0.16818263204499995
+              },
+              {
+                "bpm": 65.91796875,
+                "relative_power": 0.08507269417373349
+              },
+              {
+                "bpm": 107.11669921875,
+                "relative_power": 0.08126130224527824
+              },
+              {
+                "bpm": 51.727294921875,
+                "relative_power": 0.07210803685150988
+              },
+              {
+                "bpm": 149.688720703125,
+                "relative_power": 0.054178811665977746
+              },
+              {
+                "bpm": 80.3375244140625,
+                "relative_power": 0.042050807985266954
+              },
+              {
+                "bpm": 192.0318603515625,
+                "relative_power": 0.041081110036942196
+              },
+              {
+                "bpm": 97.503662109375,
+                "relative_power": 0.0394810989144281
+              }
+            ],
+            "high": [
+              {
+                "bpm": 169.37255859375,
+                "relative_power": 0.042361087193953845
+              },
+              {
+                "bpm": 107.8033447265625,
+                "relative_power": 0.03905248797181161
+              },
+              {
+                "bpm": 205.078125,
+                "relative_power": 0.03133904115787584
+              },
+              {
+                "bpm": 86.7462158203125,
+                "relative_power": 0.030760580983813793
+              },
+              {
+                "bpm": 135.040283203125,
+                "relative_power": 0.02597437439749125
+              },
+              {
+                "bpm": 119.476318359375,
+                "relative_power": 0.01580561054897365
+              },
+              {
+                "bpm": 148.3154296875,
+                "relative_power": 0.014530194944485736
+              },
+              {
+                "bpm": 143.280029296875,
+                "relative_power": 0.010746637453519042
+              }
+            ]
+          }
+        },
+        "output_160": {
+          "path": "work/mix-160-20261026/checks/body-11/160.wav",
+          "sha256": "e5a387810509612c62815fc1f9afacbb879edcc28ddfcb042892db46c3e92c63",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 159.45163784739344,
+                  "mid": 159.6201047582462,
+                  "high": 159.98038909221336
+                },
+                "band_strength": {
+                  "low": 0.6513711845758152,
+                  "mid": 0.6349696061743082,
+                  "high": 0.8430349338300251
+                },
+                "median_bpm": 159.6201047582462,
+                "band_spread_bpm": 0.5287512448199152
+              },
+              {
+                "center_seconds": 15.0,
+                "band_bpm": {
+                  "low": 157.91735238987883,
+                  "mid": 159.21533662429388,
+                  "high": 159.98715575304064
+                },
+                "band_strength": {
+                  "low": 0.6140493826780945,
+                  "mid": 0.6389303266801276,
+                  "high": 0.8791160549871688
+                },
+                "median_bpm": 159.21533662429388,
+                "band_spread_bpm": 2.0698033631618102
+              }
+            ],
+            "mid_high_bpm_median": 159.7007465569485,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 81.024169921875,
+                "relative_power": 0.18647554689513338
+              },
+              {
+                "bpm": 135.955810546875,
+                "relative_power": 0.11754722337912402
+              },
+              {
+                "bpm": 179.6722412109375,
+                "relative_power": 0.06983232381462615
+              },
+              {
+                "bpm": 101.3946533203125,
+                "relative_power": 0.0584816328265667
+              },
+              {
+                "bpm": 160.21728515625,
+                "relative_power": 0.03793202401057009
+              },
+              {
+                "bpm": 118.3319091796875,
+                "relative_power": 0.036913861329962695
+              },
+              {
+                "bpm": 154.266357421875,
+                "relative_power": 0.03627807768158769
+              },
+              {
+                "bpm": 128.4027099609375,
+                "relative_power": 0.030434008405669687
+              }
+            ],
+            "high": [
+              {
+                "bpm": 159.9884033203125,
+                "relative_power": 0.07774747391871338
+              },
+              {
+                "bpm": 192.9473876953125,
+                "relative_power": 0.03842620586305845
+              },
+              {
+                "bpm": 219.9554443359375,
+                "relative_power": 0.03312612177971439
+              },
+              {
+                "bpm": 149.23095703125,
+                "relative_power": 0.025981147121967554
+              },
+              {
+                "bpm": 127.716064453125,
+                "relative_power": 0.025077172496900543
+              },
+              {
+                "bpm": 101.62353515625,
+                "relative_power": 0.024459600635591633
+              },
+              {
+                "bpm": 198.66943359375,
+                "relative_power": 0.023169511398899157
+              },
+              {
+                "bpm": 140.533447265625,
+                "relative_power": 0.0187113580468316
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": 16,
+      "paired_evidence": {
+        "source_170": {
+          "path": "work/mix-160-20261026/checks/body-16/170.wav",
+          "sha256": "c4c8da05c1d497962c8ee8615e25303f92e1947c4421c32d562e9ed6b78a2e2e",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 170.23392238064935,
+                  "mid": 169.97188879561074,
+                  "high": 170.0491646304618
+                },
+                "band_strength": {
+                  "low": 0.7136733022826186,
+                  "mid": 0.9522440312339167,
+                  "high": 1.0327045876807188
+                },
+                "median_bpm": 170.0491646304618,
+                "band_spread_bpm": 0.2620335850386084
+              }
+            ],
+            "mid_high_bpm_median": 170.01052671303626,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 170.0592041015625,
+                "relative_power": 0.039686979646586885
+              },
+              {
+                "bpm": 212.40234375,
+                "relative_power": 0.028366894829426354
+              },
+              {
+                "bpm": 84.9151611328125,
+                "relative_power": 0.024462052333192215
+              },
+              {
+                "bpm": 96.13037109375,
+                "relative_power": 0.006671525825173076
+              },
+              {
+                "bpm": 127.9449462890625,
+                "relative_power": 0.005507120215794901
+              },
+              {
+                "bpm": 109.6343994140625,
+                "relative_power": 0.004987692530743081
+              },
+              {
+                "bpm": 52.18505859375,
+                "relative_power": 0.00489215823698001
+              },
+              {
+                "bpm": 155.6396484375,
+                "relative_power": 0.003667580134031614
+              }
+            ],
+            "high": [
+              {
+                "bpm": 212.1734619140625,
+                "relative_power": 0.009174393344921197
+              },
+              {
+                "bpm": 96.13037109375,
+                "relative_power": 0.0030917060794696622
+              },
+              {
+                "bpm": 105.743408203125,
+                "relative_power": 0.002999856388946439
+              },
+              {
+                "bpm": 84.228515625,
+                "relative_power": 0.002960526872443782
+              },
+              {
+                "bpm": 186.5386962890625,
+                "relative_power": 0.0018244920635033552
+              },
+              {
+                "bpm": 129.547119140625,
+                "relative_power": 0.00165460185292843
+              },
+              {
+                "bpm": 149.688720703125,
+                "relative_power": 0.001468496601992961
+              },
+              {
+                "bpm": 76.904296875,
+                "relative_power": 0.001378115192778941
+              }
+            ]
+          }
+        },
+        "output_160": {
+          "path": "work/mix-160-20261026/checks/body-16/160.wav",
+          "sha256": "aa693af779718f7c2cd4d76f62b305535c643dd2e7073ed91f02742ff96abfcb",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 213.78624047448707,
+                  "mid": 159.9287678505844,
+                  "high": 213.1134528649376
+                },
+                "band_strength": {
+                  "low": 0.7336779491328688,
+                  "mid": 0.9233304473458751,
+                  "high": 1.0234529266745176
+                },
+                "median_bpm": 213.1134528649376,
+                "band_spread_bpm": 53.85747262390268
+              },
+              {
+                "center_seconds": 15.0,
+                "band_bpm": {
+                  "low": 213.49721644650072,
+                  "mid": 160.0002769974241,
+                  "high": 213.20376335971378
+                },
+                "band_strength": {
+                  "low": 0.7490802194675384,
+                  "mid": 0.9173631487913936,
+                  "high": 1.0404137093434846
+                },
+                "median_bpm": 213.20376335971378,
+                "band_spread_bpm": 53.49693944907662
+              }
+            ],
+            "mid_high_bpm_median": 186.56156526816497,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 79.8797607421875,
+                "relative_power": 0.030510102976303136
+              },
+              {
+                "bpm": 160.21728515625,
+                "relative_power": 0.029236944562951533
+              },
+              {
+                "bpm": 200.2716064453125,
+                "relative_power": 0.020752525170119586
+              },
+              {
+                "bpm": 145.111083984375,
+                "relative_power": 0.010137745869959396
+              },
+              {
+                "bpm": 89.9505615234375,
+                "relative_power": 0.00539331195745056
+              },
+              {
+                "bpm": 185.394287109375,
+                "relative_power": 0.004329523474644633
+              },
+              {
+                "bpm": 120.849609375,
+                "relative_power": 0.0033371025529946993
+              },
+              {
+                "bpm": 69.580078125,
+                "relative_power": 0.0031193496234502007
+              }
+            ],
+            "high": [
+              {
+                "bpm": 200.042724609375,
+                "relative_power": 0.013757832522207344
+              },
+              {
+                "bpm": 80.56640625,
+                "relative_power": 0.0036949678507246235
+              },
+              {
+                "bpm": 91.552734375,
+                "relative_power": 0.003037205441350189
+              },
+              {
+                "bpm": 99.79248046875,
+                "relative_power": 0.0024560203844687847
+              },
+              {
+                "bpm": 193.17626953125,
+                "relative_power": 0.0021966927277333906
+              },
+              {
+                "bpm": 121.76513671875,
+                "relative_power": 0.0021866167815508255
+              },
+              {
+                "bpm": 155.181884765625,
+                "relative_power": 0.002066569532417746
+              },
+              {
+                "bpm": 55.6182861328125,
+                "relative_power": 0.0019061144674059223
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": 20,
+      "paired_evidence": {
+        "source_170": {
+          "path": "work/mix-160-20261026/checks/body-20/170.wav",
+          "sha256": "2d9317eacc3b4419b0408a317f972e7f3018d23906b8f6e67449983f31111a9b",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 194.8082086344472,
+                  "mid": 170.1958480860399,
+                  "high": 170.06461279022434
+                },
+                "band_strength": {
+                  "low": 0.5715556029654504,
+                  "mid": 0.6517296323940569,
+                  "high": 0.8316721556200847
+                },
+                "median_bpm": 170.1958480860399,
+                "band_spread_bpm": 24.743595844222853
+              }
+            ],
+            "mid_high_bpm_median": 170.13023043813212,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 129.3182373046875,
+                "relative_power": 0.15093359132671552
+              },
+              {
+                "bpm": 58.3648681640625,
+                "relative_power": 0.11831983284008248
+              },
+              {
+                "bpm": 83.5418701171875,
+                "relative_power": 0.06990526595560502
+              },
+              {
+                "bpm": 70.2667236328125,
+                "relative_power": 0.03754942500988172
+              },
+              {
+                "bpm": 143.5089111328125,
+                "relative_power": 0.03305897537811428
+              },
+              {
+                "bpm": 181.5032958984375,
+                "relative_power": 0.028976557163893316
+              },
+              {
+                "bpm": 164.5660400390625,
+                "relative_power": 0.027737967367783053
+              },
+              {
+                "bpm": 99.1058349609375,
+                "relative_power": 0.026353075479218262
+              }
+            ],
+            "high": [
+              {
+                "bpm": 85.8306884765625,
+                "relative_power": 0.06759156889117095
+              },
+              {
+                "bpm": 170.2880859375,
+                "relative_power": 0.06297254199394398
+              },
+              {
+                "bpm": 213.775634765625,
+                "relative_power": 0.03677220289076634
+              },
+              {
+                "bpm": 127.0294189453125,
+                "relative_power": 0.02421539117908226
+              },
+              {
+                "bpm": 103.2257080078125,
+                "relative_power": 0.023799831120857953
+              },
+              {
+                "bpm": 54.2449951171875,
+                "relative_power": 0.016631954585710342
+              },
+              {
+                "bpm": 70.953369140625,
+                "relative_power": 0.013452291751844394
+              },
+              {
+                "bpm": 133.4381103515625,
+                "relative_power": 0.01299412119332688
+              }
+            ]
+          }
+        },
+        "output_160": {
+          "path": "work/mix-160-20261026/checks/body-20/160.wav",
+          "sha256": "84b49c201b6fcdce4c0baa728a8fe19e4bb2d6e502c5190a21e570571ffa38f7",
+          "attack_autocorrelation": {
+            "windows": [
+              {
+                "center_seconds": 10.0,
+                "band_bpm": {
+                  "low": 180.581342702484,
+                  "mid": 159.56798004442902,
+                  "high": 159.97372498315767
+                },
+                "band_strength": {
+                  "low": 0.7545507429194496,
+                  "mid": 0.609926973482813,
+                  "high": 0.8006242224869141
+                },
+                "median_bpm": 159.97372498315767,
+                "band_spread_bpm": 21.013362658054973
+              },
+              {
+                "center_seconds": 15.0,
+                "band_bpm": {
+                  "low": 213.73645647213445,
+                  "mid": 159.5765705677748,
+                  "high": 160.05969048215195
+                },
+                "band_strength": {
+                  "low": 0.7033898350161787,
+                  "mid": 0.6327574601900143,
+                  "high": 0.8297606810803072
+                },
+                "median_bpm": 160.05969048215195,
+                "band_spread_bpm": 54.15988590435964
+              }
+            ],
+            "mid_high_bpm_median": 159.79449151937837,
+            "method": "Independent output multiband attack autocorrelation, 145–220 BPM neighborhood; not a universal meter detector."
+          },
+          "broad_attack_fft_peaks_50_to220_bpm": {
+            "mid": [
+              {
+                "bpm": 121.5362548828125,
+                "relative_power": 0.17476239256286752
+              },
+              {
+                "bpm": 54.7027587890625,
+                "relative_power": 0.10741344667396924
+              },
+              {
+                "bpm": 78.9642333984375,
+                "relative_power": 0.06734911171167285
+              },
+              {
+                "bpm": 169.1436767578125,
+                "relative_power": 0.061108383883195956
+              },
+              {
+                "bpm": 178.070068359375,
+                "relative_power": 0.05992232233161441
+              },
+              {
+                "bpm": 65.91796875,
+                "relative_power": 0.04785131664480708
+              },
+              {
+                "bpm": 204.16259765625,
+                "relative_power": 0.04389901240700704
+              },
+              {
+                "bpm": 100.250244140625,
+                "relative_power": 0.030277822494937764
+              }
+            ],
+            "high": [
+              {
+                "bpm": 79.65087890625,
+                "relative_power": 0.0540343617719552
+              },
+              {
+                "bpm": 161.590576171875,
+                "relative_power": 0.03414872383250887
+              },
+              {
+                "bpm": 176.69677734375,
+                "relative_power": 0.030588896819507477
+              },
+              {
+                "bpm": 139.617919921875,
+                "relative_power": 0.028853845279066256
+              },
+              {
+                "bpm": 97.96142578125,
+                "relative_power": 0.027529306027042063
+              },
+              {
+                "bpm": 71.1822509765625,
+                "relative_power": 0.019647802232043397
+              },
+              {
+                "bpm": 199.5849609375,
+                "relative_power": 0.01878214533769945
+              },
+              {
+                "bpm": 125.6561279296875,
+                "relative_power": 0.01841643814347792
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "source_frequency_to_output_multiplier": 0.9411764705882353,
+  "direct_listening": false,
+  "interpretation": "Raw AC/FFT estimates retain subdivisions, harmonics and mixed patterns. No estimate is forced to160. Paired attack timing and exact duration separately test the uniform map.",
+  "limitation": "Short-window pulse dominance can differ by band and window edge; full/half meter remains inherited."
+}

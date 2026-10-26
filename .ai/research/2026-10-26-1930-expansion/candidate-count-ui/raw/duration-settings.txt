@@ -1,0 +1,61 @@
+- title: "Suno | AI Music" [url=https://suno.com/create]
+- generic [ref=e680] [scrollable]:
+  - button [ref=e692]
+  - button "View saved style prompts" [ref=e693]
+  - textbox "powerful female voice, dark club, piano and saxophone, 68 bpm, deep house" [ref=e694] [placeholder="powerful female voice, dark club, piano and saxophone, 68 bpm, deep house"]
+  - generic [ref=e695] [scrollable]:
+    - button "View saved style prompts" [ref=e696]
+    - button "Personalize style prompt to match your taste" [ref=e697]
+    - button "Refresh recommended styles" [ref=e698]
+    - button "Add style: powerful female voice" [ref=e699]: "powerful female voice"
+    - button "Add style: dark club" [ref=e700]: "dark club"
+    - button "Add style: piano and saxophone" [ref=e701]: "piano and saxophone"
+    - button "Add style: 68 bpm" [ref=e702]: "68 bpm"
+    - button "Add style: deep house" [ref=e703]: "deep house"
+    - button "Add style: bronx drill" [ref=e704]: "bronx drill"
+    - button "Add style: rousing" [ref=e705]: "rousing"
+    - button "Add style: sidechain" [ref=e706]: "sidechain"
+    - button "Add style: breathy" [ref=e707]: "breathy"
+    - button "Add style: corrido belico" [ref=e708]: "corrido belico"
+    - button "Add style: atmospheric reverb" [ref=e709]: "atmospheric reverb"
+    - button "Add style: electric drum" [ref=e710]: "electric drum"
+    - button "Add style: bassline" [ref=e711]: "bassline"
+    - button "Add style: determined" [ref=e712]: "determined"
+    - button "Add style: soft rap" [ref=e713]: "soft rap"
+    - button "Add style: 170 bpm" [ref=e714]: "170 bpm"
+    - button "Add style: rebana" [ref=e715]: "rebana"
+    - button "Add style: ambient dub" [ref=e716]: "ambient dub"
+    - button "Add style: philharmonic" [ref=e717]: "philharmonic"
+    - button "Add style: euro dance" [ref=e718]: "euro dance"
+  - button "More Options" [ref=e719]
+  - button "Reset All" [ref=e786] [disabled]
+  - textbox "Exclude styles" [ref=e787] [placeholder="Exclude styles"]
+  - text: "Vocal Gender"
+  - button "Male" [ref=e788]
+  - button "Female" [ref=e789]
+  - text: "Duration"
+  - button "Custom" [ref=e790]
+  - button "Auto" [ref=e791]
+  - text: "Max Mode"
+  - button "Off" [ref=e792]
+  - button "On" [ref=e793]
+  - text: "Weirdness"
+  - slider "Weirdness" [ref=e794]
+  - generic "50%" [ref=e795]
+  - text: "Style Influence"
+  - slider "Style Influence" [ref=e796]
+  - generic "50%" [ref=e797]
+  - text: "Variety"
+  - slider "Variety" [ref=e798]
+  - generic "Normal" [ref=e799]
+  - text: "Personalize"
+  - button "My Taste" [ref=e800]
+  - button "Off" [ref=e801]
+  - button "On" [ref=e802]
+  - textbox "Song Title (Optional)" [ref=e720] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "[19:30]" [ref=e721]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

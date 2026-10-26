@@ -1,0 +1,49 @@
+{
+  "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+  "order": 9,
+  "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+  "title": "Paper Lanterns",
+  "raw_path": "work/2026-10-26-1930-current20-capture/captures/e882e06a-f1f5-4985-b8f9-6514fde6d924/attempt-01/raw.wav",
+  "raw_sha256": "aa0420c62c514c2971cb1da4522afd5d02a10a1f3c58affba561eb986f3b4d98",
+  "source_valid_frames": [
+    112923,
+    10191003
+  ],
+  "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/09.json",
+  "source_time_map_sha256": "c30f5fbb839dd92a6296f9fc5519bbe33e9b364e250b91f07a2a8e17fe647e02",
+  "source_duration_seconds": 209.96,
+  "output_path": "work/mix-170-20261026/corrected/09.wav",
+  "output_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+  "output_samples": 9157801,
+  "output_duration_seconds": 190.78752083333333,
+  "first_grid_beat_sample": 349936,
+  "grid_beat_count": 485,
+  "source_start_preserved": true,
+  "source_end_preserved": true,
+  "target_bpm": 170,
+  "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+  "direct_listening": false,
+  "producer": {
+    "command": [
+      "/opt/homebrew/bin/rubberband",
+      "-3",
+      "-p",
+      "0",
+      "--timemap",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/09/timemap.txt",
+      "-D",
+      "190.78752083333333",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/09.wav",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/09.wav"
+    ],
+    "rubberband_version": "4.0.0",
+    "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+    "timemap_sha256": "d2b8d9427400e65f012c3f6c51c8ff229fef6bc8167e2797da039f32715c6181",
+    "elapsed_seconds": 9.402810958970804,
+    "log_path": "work/mix-170-20261026/rubberband/09/rubberband.log",
+    "log_sha256": "07aaa3f3d965b4aec5a9b149b72a3ece68eba167cbc1ada56a2ab2a00f0dd4cf"
+  },
+  "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/09.json",
+  "output_qa_sha256": "789d9832128dee512fc0401b291b70dc55a6916eeb2369af3a9effcf7fb3aa6b",
+  "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+}

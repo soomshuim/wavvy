@@ -1,0 +1,132 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=FQ-8bQbPSaY",
+  "original_video_duration_seconds": 389.701,
+  "raw_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish-live-r2-raw.wav",
+  "raw_sha256": "9e6c5885e2bcfe6a481e5a53d088220b51b5262c5e5464c5b8ea45de7dcb219d",
+  "raw_frames": 20911680,
+  "raw_duration_seconds": 435.66,
+  "output_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish.wav",
+  "output_sha256": "3c5f7c560115682be1e42893d6ea807c5afdd22dc5bc5c75a0b01593a49380f8",
+  "output_bytes": 74921710,
+  "output_frames": 18730408,
+  "output_duration_seconds": 390.21683333333334,
+  "output_format": "PCM16 WAV",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "float_edit_path": "/Users/zenkim_office/Project/wavvy/work/2026-10-25-1930-wish/wish-clean-float.wav",
+  "float_edit_sha256": "d207323be80735d9f05a2970c6d27d5c1f1656e56551202f5ec4ff18850a478f",
+  "kept_raw_intervals_frames": [
+    [
+      549059,
+      12682083
+    ],
+    [
+      12719878,
+      19317262
+    ]
+  ],
+  "kept_raw_intervals_seconds": [
+    [
+      11.438729166666667,
+      264.2100625
+    ],
+    [
+      264.9974583333333,
+      402.4429583333333
+    ]
+  ],
+  "removed_intervals": [
+    {
+      "kind": "recording lead",
+      "frames": [
+        0,
+        549059
+      ],
+      "seconds": [
+        0,
+        11.438729166666667
+      ],
+      "evidence": "Both channels exact zero before first nonzero sample."
+    },
+    {
+      "kind": "user-confirmed pause",
+      "frames": [
+        12682083,
+        12719878
+      ],
+      "seconds": [
+        264.2100625,
+        264.9974583333333
+      ],
+      "duration_seconds": 0.7873958333333333,
+      "evidence": "Both channels are exact zero at every removed sample. Browser pause252.024838s/play252.247689s and clock step support this removal; used measured zero-run, not0.792s UI delta."
+    },
+    {
+      "kind": "recording tail and following video",
+      "frames": [
+        19317262,
+        20911680
+      ],
+      "seconds": [
+        402.4429583333333,
+        435.66
+      ],
+      "evidence": "Last original-video nonzero ends402.442958s, exact-zero separator until405.943729s; original ended389.701s at1792939801.158 Unix, following video play1792939804.072 Unix."
+    }
+  ],
+  "preserved_ambiguous_initial_silence": {
+    "raw_seconds": [
+      11.5786875,
+      12.102770833333333
+    ],
+    "duration_seconds": 0.5240833333333333,
+    "reason": "No pause event here, first nonzero burst precedes it. Retained rather than deleting unconfirmed source content/silence."
+  },
+  "video_clock_alignment": {
+    "method": "Piecewise raw interval map plus browser media-time event table; no single global offset across pause.",
+    "source_video_seconds": 389.701,
+    "output_minus_video_duration_seconds": 0.5158333333333189,
+    "initial_mapping_uncertainty_seconds": 0.67,
+    "exclude_pause_neighborhood_original_video_seconds": [
+      250.024838,
+      254.247689
+    ]
+  },
+  "join": {
+    "output_frame": 12133024,
+    "output_seconds": 252.77133333333333,
+    "float_sample_jump_peak": 4.2333255123594427e-08,
+    "float_sample_jump_dbfs": -147.46636672224548,
+    "pcm16_sample_jump_peak": 0,
+    "crossfade_used": false,
+    "reason": "Float seam discontinuity4.23e-8; both endpoints quantize to exact zero. No gain change or fade required.",
+    "click_audition_performed": false,
+    "claim": "PCM16 seam jump zero. Subjective click audition unavailable."
+  },
+  "validation": {
+    "keep_interval_1_exact": true,
+    "keep_interval_2_exact": true,
+    "removed_pause_all_exact_zero": true,
+    "output_frames_match": true,
+    "pcm16_quantization_max_abs_error": 1.525913830846548e-05,
+    "quantization_error_LSB": 0.5000114440917969,
+    "quantization_upper_bound_LSB": 0.5001,
+    "quantization_note": "FFmpeg float-to-PCM16 roundoff is0.5000114LSB at worst, within0.5001LSB tolerance.",
+    "output_clipped_samples": 0,
+    "output_peak_dbfs": -4.84387903015935,
+    "capture_write_error": "none",
+    "pts_buffer_count": 21783,
+    "pts_frames_sum": 20911680,
+    "pts_max_absolute_gap_seconds": 3.958120983749147e-11,
+    "pts_gap_over_one_sample_count": 0,
+    "original_natural_end_observed": true
+  },
+  "processing_exclusions": [
+    "no gain normalization",
+    "no remix",
+    "no audience removal",
+    "no de-reverb",
+    "no deletion of other internal silences"
+  ],
+  "audience_notice": "Concert audience cheers/singing remain. Do not interpret them as original vocals/instrumentation."
+}

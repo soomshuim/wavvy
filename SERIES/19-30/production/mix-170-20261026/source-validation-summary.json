@@ -1,0 +1,60 @@
+{
+  "schema": "wavvy.rubberband_20_source_validation_summary.v1",
+  "source_count": 20,
+  "all_numerical_checks_pass": true,
+  "all_length_errors_samples": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "maximum_attack_alignment_p90_ms": 4.0,
+  "independent_mid_high_tempo_median_range": [
+    169.88719685872422,
+    170.07478660542583
+  ],
+  "spectral_pitch_median_shift_cents": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "independent_model_families": {
+    "full~170": 8,
+    "mixed/uncertain": 12
+  },
+  "direct_listening": false,
+  "tempo_caveat": "AC verifies periodicity within the target neighborhood; broad50–220 BPM FFT and raw model interval/phase evidence are retained separately. No every-instant audible170 guarantee."
+}

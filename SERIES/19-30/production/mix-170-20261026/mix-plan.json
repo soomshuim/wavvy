@@ -1,0 +1,2812 @@
+{
+  "schema": "wavvy.capture_170_whole_source_repeat2_plan.v1",
+  "target_bpm": 170,
+  "repeat_count": 2,
+  "additional_repeats": 0,
+  "sample_rate": 48000,
+  "sources": [
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 1,
+      "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+      "title": "Goodbye",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/1d615bbf-a039-4f3b-9e91-c84bc687afd4/attempt-03/raw.wav",
+      "raw_sha256": "11a84177caa35e855ec59bb12d74dc1b1e214801bb66be38e2c42b3d616026d4",
+      "source_valid_frames": [
+        113234,
+        9809234
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/01.json",
+      "source_time_map_sha256": "ac6591185b83e79e954bce5ae2a67950e9460ee338948fe0966e35403238066e",
+      "source_duration_seconds": 202.0,
+      "output_path": "work/mix-170-20261026/corrected/01.wav",
+      "output_sha256": "a276acb05c94745f0a47763fe20e6d7f1d7df219b7fc7263912b3f3965a966b0",
+      "output_samples": 7194882,
+      "output_duration_seconds": 149.893375,
+      "first_grid_beat_sample": 545744,
+      "grid_beat_count": 336,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/01/timemap.txt",
+          "-D",
+          "149.89337499999999",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/01.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/01.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "ea4a3506782e9abdaa439e1a519393a932e2233a4c763cc51ed0e867be1ad7d4",
+        "elapsed_seconds": 13.892893959011417,
+        "log_path": "work/mix-170-20261026/rubberband/01/rubberband.log",
+        "log_sha256": "519f4b036e7f50eed1de9b302de7b40ecc1c6fd0f457124caf3a092fb5968a1f"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/01.json",
+      "output_qa_sha256": "3fcd582e7dc7bea6e1d91f437c767a9a01903a88108783e97aaeaaef6715d108",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 2,
+      "song_id": "8bf62958-9de5-4249-8ff8-a6e18f9e6a95",
+      "title": "Night Steps",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/8bf62958-9de5-4249-8ff8-a6e18f9e6a95/attempt-01/raw.wav",
+      "raw_sha256": "fe1cd8e9483e153dd4ce2f273065820e39324c09f2027b439292df9955eb31a6",
+      "source_valid_frames": [
+        113322,
+        10631082
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/02.json",
+      "source_time_map_sha256": "674d32327dda6e3f046d7b0ca11621075941e45b3ef0efa7343644e09dc8b4b4",
+      "source_duration_seconds": 219.12,
+      "output_path": "work/mix-170-20261026/corrected/02.wav",
+      "output_sha256": "40eb15db8f3f7f42cc5ae7023c52565f14dc028927e655a7465dc6dc086f9ae2",
+      "output_samples": 9536456,
+      "output_duration_seconds": 198.67616666666666,
+      "first_grid_beat_sample": 529243,
+      "grid_beat_count": 511,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/02/timemap.txt",
+          "-D",
+          "198.67616666666666",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/02.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/02.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "633f3eaf03ab71ccf595be3cc61d1d73bd314d69575b3cf810c905771f631842",
+        "elapsed_seconds": 18.73213245801162,
+        "log_path": "work/mix-170-20261026/rubberband/02/rubberband.log",
+        "log_sha256": "baffcd6807ded117f39262c8a9ec760b06f57e7366fd93c0136cf62b225756d4"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/02.json",
+      "output_qa_sha256": "89f28b9d2ce2b74ac9318b058234391646c61ffe53f38b96ce1cb448884f9515",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 3,
+      "song_id": "431cbfee-b158-4ced-8cd2-eaae6816ec4f",
+      "title": "Warm Pixels",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/431cbfee-b158-4ced-8cd2-eaae6816ec4f/attempt-01/raw.wav",
+      "raw_sha256": "f6b814fc483649e27b1600bb8b185daac4e11bcab5435a00353593d482fa13e7",
+      "source_valid_frames": [
+        113521,
+        9709681
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/03.json",
+      "source_time_map_sha256": "19861235d508d13683edf750811678e9bf377184d2e8171c41b98cf4e0fb29ab",
+      "source_duration_seconds": 199.92,
+      "output_path": "work/mix-170-20261026/corrected/03.wav",
+      "output_sha256": "043a419cc85a250ab0be5265b3eee6e32b0159cd474f48e4d43051a102ff6d2a",
+      "output_samples": 7339007,
+      "output_duration_seconds": 152.89597916666668,
+      "first_grid_beat_sample": 326639,
+      "grid_beat_count": 384,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/03/timemap.txt",
+          "-D",
+          "152.89597916666668",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/03.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/03.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "bef4f1ecc317aff24e6a60e26cdca9b7ead3a1d1fb95aedf5328c5618371c5c4",
+        "elapsed_seconds": 8.474059749976732,
+        "log_path": "work/mix-170-20261026/rubberband/03/rubberband.log",
+        "log_sha256": "a27050c0aa80822a2dfc42a8900d22c72cb734408ce9957c02523642a1f1a829"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/03.json",
+      "output_qa_sha256": "02c64ebe2f3bf19394c102273660f08b956375c39bd585db6e457d1e85ccaa1c",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 4,
+      "song_id": "e4187322-c621-4c74-b3e3-dcec594e6397",
+      "title": "Sunday Voltage",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/e4187322-c621-4c74-b3e3-dcec594e6397/attempt-01/raw.wav",
+      "raw_sha256": "03303ade4903d25f1be9801bf7104e64561fcc91498743d9b92f91ee6b631c90",
+      "source_valid_frames": [
+        117384,
+        8046984
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/04.json",
+      "source_time_map_sha256": "680d1d58eb7aef9bdbdff3a65212c69b5a86e995c96d55b5fe417b93512eaf92",
+      "source_duration_seconds": 165.2,
+      "output_path": "work/mix-170-20261026/corrected/04.wav",
+      "output_sha256": "d06ea5743332c137e63fdf4307342ff93847ec52a61dce9da0bc36a689390a0a",
+      "output_samples": 6196386,
+      "output_duration_seconds": 129.091375,
+      "first_grid_beat_sample": 119254,
+      "grid_beat_count": 325,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/04/timemap.txt",
+          "-D",
+          "129.09137500000000",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/04.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/04.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "58efbbf3840163cf1ba903083a6cf32d8c783f584c044d5ba2a2299380a497ad",
+        "elapsed_seconds": 7.674407999962568,
+        "log_path": "work/mix-170-20261026/rubberband/04/rubberband.log",
+        "log_sha256": "b895dca6f48faaa4a9e6490b77f47b24df9fc521a93e29c9180b230084db61fc"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/04.json",
+      "output_qa_sha256": "495febc3657b515a88a2b2f0e7d5c8766dd482939544afed419db366f6512c6d",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 5,
+      "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+      "title": "Glass Horizon",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/9b94b1d1-02c6-466f-8ac4-dc358b6cc33f/attempt-01/raw.wav",
+      "raw_sha256": "30efb80a152023acb31bc79ed9f7c42b8ceafc82bcadb584b125ac9e2d36f052",
+      "source_valid_frames": [
+        115115,
+        9342635
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/05.json",
+      "source_time_map_sha256": "346e8be8fcc8954afc9e1264bfe5ede1911d14512854038f638ea2843e52754b",
+      "source_duration_seconds": 192.24,
+      "output_path": "work/mix-170-20261026/corrected/05.wav",
+      "output_sha256": "07c5597f4ec72effddb77daa9a6213ffadeb9e728fecd6ed6dece175a3b9f0d3",
+      "output_samples": 6893570,
+      "output_duration_seconds": 143.61604166666666,
+      "first_grid_beat_sample": 292356,
+      "grid_beat_count": 303,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/05/timemap.txt",
+          "-D",
+          "143.61604166666666",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/05.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/05.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "2f0d6536c29515eb9288022b9a02637bf62caa23f013c4fffd06d6000ecff878",
+        "elapsed_seconds": 14.95215145900147,
+        "log_path": "work/mix-170-20261026/rubberband/05/rubberband.log",
+        "log_sha256": "e113abbf541a22c0be963087cc09f19ad79bf19c5a4d0c4a00fcead14ef65fa0"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/05.json",
+      "output_qa_sha256": "2e36f6babbba581901bbbaf21fbd22c25d82e89eea8af57bfaa0afa27c85f72a",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 6,
+      "song_id": "107a4111-0984-4ac0-81f0-2fd4b799e5ae",
+      "title": "Small Satellites",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/107a4111-0984-4ac0-81f0-2fd4b799e5ae/attempt-01/raw.wav",
+      "raw_sha256": "7504a3bf2d85c050cbecbb5e54464bcb9b0c0e6b741e6d3ba1a796abff2ebe70",
+      "source_valid_frames": [
+        111538,
+        10187698
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/06.json",
+      "source_time_map_sha256": "e2fcfb0b1ec73b7bdb15b5edd61ac6f5c45d1f628d81223846b0d2e425f39fdb",
+      "source_duration_seconds": 209.92,
+      "output_path": "work/mix-170-20261026/corrected/06.wav",
+      "output_sha256": "bc67803964d7f0fcb40bff8163a7d96becc3e281958d9638a49bb068aba38208",
+      "output_samples": 7814436,
+      "output_duration_seconds": 162.80075,
+      "first_grid_beat_sample": 404226,
+      "grid_beat_count": 405,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/06/timemap.txt",
+          "-D",
+          "162.80074999999999",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/06.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/06.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "3ddb177c5c799e11c320d13580396dc842de39975893aa35870fc5199062a0b1",
+        "elapsed_seconds": 8.96344320802018,
+        "log_path": "work/mix-170-20261026/rubberband/06/rubberband.log",
+        "log_sha256": "74f4baadf07556bb4e8aea9c2dd85aa1d91667ba09ca5301e1e3fdc385238ccd"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/06.json",
+      "output_qa_sha256": "f4554117cc73d3027b9ba5179f78f31ea438ce4858a2cc49ca18a3e5e8299870",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 7,
+      "song_id": "b2fb1141-ccb0-42c1-aec3-08698a41632c",
+      "title": "Blue Current",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/b2fb1141-ccb0-42c1-aec3-08698a41632c/attempt-01/raw.wav",
+      "raw_sha256": "79b22442e926b38ac904bcee345beec075066c0f5b9e7496e6c54554c58776fc",
+      "source_valid_frames": [
+        113521,
+        9598321
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/07.json",
+      "source_time_map_sha256": "a6efd0d697e341d936500d43148aed4fd48bc9cc09006721afc71186e7bac758",
+      "source_duration_seconds": 197.6,
+      "output_path": "work/mix-170-20261026/corrected/07.wav",
+      "output_sha256": "31ab792482e547f1d32524499b2b790b6fa9923db8125e2e30819c585f9d0f23",
+      "output_samples": 7164555,
+      "output_duration_seconds": 149.2615625,
+      "first_grid_beat_sample": 292242,
+      "grid_beat_count": 368,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/07/timemap.txt",
+          "-D",
+          "149.26156250000000",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/07.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/07.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "25148a2e7c337d17ba393c06c22de1868e100ed218943f6797995349040709dd",
+        "elapsed_seconds": 8.26924399996642,
+        "log_path": "work/mix-170-20261026/rubberband/07/rubberband.log",
+        "log_sha256": "9411ef3eae4e6b3426ccf2a460bf105848c5e887827833d881508dc783ea2d90"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/07.json",
+      "output_qa_sha256": "af414fe03ccad4634fc5e467447a94a9578ad124c1f151a6b4dfa3ebbfa35fa2",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 8,
+      "song_id": "12f8ab9f-b06e-4830-a365-d71407b04211",
+      "title": "Still a Spark",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/12f8ab9f-b06e-4830-a365-d71407b04211/attempt-01/raw.wav",
+      "raw_sha256": "2bc6bc33dfb90507f42943693173e7b6271c6a0b142b39422fbe261dce17233c",
+      "source_valid_frames": [
+        110165,
+        10478165
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/08.json",
+      "source_time_map_sha256": "2056d64b6d6d388128a9890aa21ae461fcaf250d9dc680e1ef0fa2021c8327c2",
+      "source_duration_seconds": 216.0,
+      "output_path": "work/mix-170-20261026/corrected/08.wav",
+      "output_sha256": "36674112f279b45da9f3aceda130d04a170429f6276b42757257d8c463160725",
+      "output_samples": 9207621,
+      "output_duration_seconds": 191.8254375,
+      "first_grid_beat_sample": 339779,
+      "grid_beat_count": 491,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/08/timemap.txt",
+          "-D",
+          "191.82543749999999",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/08.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/08.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "fd0a7ffdc1f94bc3b9d36ab7e368a4b1951e77fcc7ed48f4978241c55186fe6e",
+        "elapsed_seconds": 9.533495249983389,
+        "log_path": "work/mix-170-20261026/rubberband/08/rubberband.log",
+        "log_sha256": "52d103a921da56d6e18ba48f0fed35e5a51267f6bd96c25dfb8aa9dab6fc6a86"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/08.json",
+      "output_qa_sha256": "65d20742a3cd3d8c7dc44c85a1ebce2cd9b1b12aed99016307e6cafd4d9b3bbe",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 9,
+      "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+      "title": "Paper Lanterns",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/e882e06a-f1f5-4985-b8f9-6514fde6d924/attempt-01/raw.wav",
+      "raw_sha256": "aa0420c62c514c2971cb1da4522afd5d02a10a1f3c58affba561eb986f3b4d98",
+      "source_valid_frames": [
+        112923,
+        10191003
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/09.json",
+      "source_time_map_sha256": "c30f5fbb839dd92a6296f9fc5519bbe33e9b364e250b91f07a2a8e17fe647e02",
+      "source_duration_seconds": 209.96,
+      "output_path": "work/mix-170-20261026/corrected/09.wav",
+      "output_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+      "output_samples": 9157801,
+      "output_duration_seconds": 190.78752083333333,
+      "first_grid_beat_sample": 349936,
+      "grid_beat_count": 485,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/09/timemap.txt",
+          "-D",
+          "190.78752083333333",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/09.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/09.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "d2b8d9427400e65f012c3f6c51c8ff229fef6bc8167e2797da039f32715c6181",
+        "elapsed_seconds": 9.402810958970804,
+        "log_path": "work/mix-170-20261026/rubberband/09/rubberband.log",
+        "log_sha256": "07aaa3f3d965b4aec5a9b149b72a3ece68eba167cbc1ada56a2ab2a00f0dd4cf"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/09.json",
+      "output_qa_sha256": "789d9832128dee512fc0401b291b70dc55a6916eeb2369af3a9effcf7fb3aa6b",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 10,
+      "song_id": "49ef4560-d891-4b29-8223-d82890fa0b2b",
+      "title": "Faded Polaroid",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/49ef4560-d891-4b29-8223-d82890fa0b2b/attempt-01/raw.wav",
+      "raw_sha256": "08ef41956b9e5075a4cdd6ccd1e036d3c4a1102d6f18b62d4560e8125ddd2d98",
+      "source_valid_frames": [
+        448350,
+        10681950
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/10.json",
+      "source_time_map_sha256": "cae2299ce99efb1fb9f5fe5110a0de495d8ac49387f6f5ce055a7754255ee342",
+      "source_duration_seconds": 213.2,
+      "output_path": "work/mix-170-20261026/corrected/10.wav",
+      "output_sha256": "88f279467e200a938ce034cc1ba9c8ad01ae5dc5335e69955e8be9996d3bb937",
+      "output_samples": 7755373,
+      "output_duration_seconds": 161.57027083333332,
+      "first_grid_beat_sample": 292282,
+      "grid_beat_count": 399,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/10/timemap.txt",
+          "-D",
+          "161.57027083333332",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/10.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/10.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "c2d7359aad015a70824eb0a4be8161989b70dade46a373a3856c0f53caf85019",
+        "elapsed_seconds": 8.759784541034605,
+        "log_path": "work/mix-170-20261026/rubberband/10/rubberband.log",
+        "log_sha256": "55505ac089dd523dca93a88cae2220400a868d1661924693950d3f08a73bfdb3"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/10.json",
+      "output_qa_sha256": "0c6ddf9ffb70649a0567af9746c824fd708e7a78caf4467ed940248b782cfa0c",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 11,
+      "song_id": "88442318-e044-44b4-981f-caebf020253d",
+      "title": "Half Past Home",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/88442318-e044-44b4-981f-caebf020253d/attempt-01/raw.wav",
+      "raw_sha256": "cf78fff069e0c944acd213e3610452ea463aa4e73e7940c76821dd1a2d8cfa8e",
+      "source_valid_frames": [
+        113902,
+        10143982
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/11.json",
+      "source_time_map_sha256": "c867b4da20515fb500dee33fb599bf17fa3a2e2f18cfc3c8c841af368d1ab92c",
+      "source_duration_seconds": 208.96,
+      "output_path": "work/mix-170-20261026/corrected/11.wav",
+      "output_sha256": "7ce7cd5f6dc6c36bc63f1fb496cb609c2f2250d36df690b91294bad807ea0b38",
+      "output_samples": 9486310,
+      "output_duration_seconds": 197.63145833333334,
+      "first_grid_beat_sample": 550597,
+      "grid_beat_count": 496,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/11/timemap.txt",
+          "-D",
+          "197.63145833333334",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/11.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/11.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "9086f852dcbbdc3f5fa565bb61095d3d6e900e5f94b706c5ed5cc36870c2a78a",
+        "elapsed_seconds": 9.316215625032783,
+        "log_path": "work/mix-170-20261026/rubberband/11/rubberband.log",
+        "log_sha256": "6e1592f44a4b84d04010abdb7a3c69feb5bf13c435d4bfa0876783ab3e96b02c"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/11.json",
+      "output_qa_sha256": "f927927c032666cc0e4e36ece47c03a87d1027ba47f11ce5bee4462562f9b800",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 12,
+      "song_id": "123cccac-d4df-45f9-9c76-17ccd2f5ed6b",
+      "title": "In Da Dream",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/123cccac-d4df-45f9-9c76-17ccd2f5ed6b/attempt-01/raw.wav",
+      "raw_sha256": "2df24a0d9e208a35597a6c3c20110043f1dbb1f2b23a1a4270b94a0d5e5dcee2",
+      "source_valid_frames": [
+        272557,
+        11658157
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/12.json",
+      "source_time_map_sha256": "02df363d3659c547e687ad29ce295e10eefcc87deb605bd13eb2d73e804440f0",
+      "source_duration_seconds": 237.2,
+      "output_path": "work/mix-170-20261026/corrected/12.wav",
+      "output_sha256": "47a49012518acd38ddd1439d05308f734baebcd1c92c5e9518b557b6d947daea",
+      "output_samples": 8645717,
+      "output_duration_seconds": 180.11910416666666,
+      "first_grid_beat_sample": 659222,
+      "grid_beat_count": 454,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/12/timemap.txt",
+          "-D",
+          "180.11910416666666",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/12.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/12.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "822978b9603fd6edbac3259921b08dd668c49733bac0652c9ed7ff27c3389430",
+        "elapsed_seconds": 9.738127999997232,
+        "log_path": "work/mix-170-20261026/rubberband/12/rubberband.log",
+        "log_sha256": "1a3174c190b290c686f0c2b86a65ea382e967858d41d66486431fc7fc74fe0db"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/12.json",
+      "output_qa_sha256": "0f5741fd3070cdb23187fd148967f8b4c051ffa2fb4201a120c2bf785aeb5cb4",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 13,
+      "song_id": "e043cd5d-7046-4ec9-aefe-14e8df4927c0",
+      "title": "Pocket Sunrise",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/e043cd5d-7046-4ec9-aefe-14e8df4927c0/attempt-01/raw.wav",
+      "raw_sha256": "0b7ab74890501591f4b36e6458feb31998b8531fe927b1d427496d35316e58a3",
+      "source_valid_frames": [
+        284095,
+        7772095
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/13.json",
+      "source_time_map_sha256": "9f35ad4ca8bc0ed0a96902c55db3e6ddc7a32e205e618061df71eaa30c8cd923",
+      "source_duration_seconds": 156.0,
+      "output_path": "work/mix-170-20261026/corrected/13.wav",
+      "output_sha256": "a9cb08592f27d902e1bcba79785914731180de57b90fd0a509069e1968bbcd3d",
+      "output_samples": 5598323,
+      "output_duration_seconds": 116.63172916666667,
+      "first_grid_beat_sample": 512766,
+      "grid_beat_count": 281,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/13/timemap.txt",
+          "-D",
+          "116.63172916666667",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/13.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/13.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "fc7483177bfb9696d6ac379dbfcf2ea1b76ebb32e2d6811e5397dcba8e5593bf",
+        "elapsed_seconds": 6.410847791994456,
+        "log_path": "work/mix-170-20261026/rubberband/13/rubberband.log",
+        "log_sha256": "2bfd9b79eceb28d63bce6f50d7590c36fefb376208203d4a09a64f8cc0475f2a"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/13.json",
+      "output_qa_sha256": "aaefbbe0266b2cd660ca2c827495b2a9a8f121b2076bcee06bc813ad18aefcd2",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 14,
+      "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+      "title": "Keep the Window Open",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/2b17f025-3754-477a-8e0a-c121ccd8c2d1/attempt-01/raw.wav",
+      "raw_sha256": "5b870c0443987a61d0b519ac0792160f9bf2157965bb48b5a5260cf40c7a7b50",
+      "source_valid_frames": [
+        114034,
+        10900594
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/14.json",
+      "source_time_map_sha256": "63fd67d55dc5feb71832147372b0e26c4792f17f65060315055dcc11a3bf048a",
+      "source_duration_seconds": 224.72,
+      "output_path": "work/mix-170-20261026/corrected/14.wav",
+      "output_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+      "output_samples": 8228364,
+      "output_duration_seconds": 171.42425,
+      "first_grid_beat_sample": 625194,
+      "grid_beat_count": 417,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/14/timemap.txt",
+          "-D",
+          "171.42425000000000",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/14.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/14.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "5920ff045738b906dee14144ac7c68bae64654115d96660aa7e966326a048269",
+        "elapsed_seconds": 9.229040917009115,
+        "log_path": "work/mix-170-20261026/rubberband/14/rubberband.log",
+        "log_sha256": "4a4d656bbe34f594694a0050dcaeb68cb9c1a58e7223bd4bc50295a05f71d3c4"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/14.json",
+      "output_qa_sha256": "f53acbb29b6191cd8e134541bf4e56e6f5d4bd9cefeb83c70c0dd9961d95b216",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 15,
+      "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+      "title": "A Sorrow Beyond Dreams",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/9f36776c-3bb5-4ee5-948e-21394084290a/attempt-01/raw.wav",
+      "raw_sha256": "ce1f89bfad7f39548ca7bb64b710fa4f4ff084588258bbe205eb75a5613e71b3",
+      "source_valid_frames": [
+        119234,
+        8158274
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/15.json",
+      "source_time_map_sha256": "dd44c4b2def588840c3ff73de938385c67c5c18df52cae19e6c7129ce9a1c930",
+      "source_duration_seconds": 167.48,
+      "output_path": "work/mix-170-20261026/corrected/15.wav",
+      "output_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+      "output_samples": 6128241,
+      "output_duration_seconds": 127.6716875,
+      "first_grid_beat_sample": 480014,
+      "grid_beat_count": 295,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/15/timemap.txt",
+          "-D",
+          "127.67168750000000",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/15.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/15.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "3e58fc60c5a8052df5abfcb09a0925d431a5025ac24a78d4d7dae1185bd4944e",
+        "elapsed_seconds": 6.90529249998508,
+        "log_path": "work/mix-170-20261026/rubberband/15/rubberband.log",
+        "log_sha256": "338c4fcea7bebf6b3c67624cc9539d1d530142f65b0e917e066c54c17bffa18d"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/15.json",
+      "output_qa_sha256": "51a0ac010fdb2237a9885fc8b9f8aaf111447c903bad9b0d0d4c1494efff5e4d",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 16,
+      "song_id": "7f89058e-1d77-452a-b081-d5fd78511be5",
+      "title": "Sunlit",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/7f89058e-1d77-452a-b081-d5fd78511be5/attempt-01/raw.wav",
+      "raw_sha256": "fd92c535e5fc9c8c9f205edb2b43000a5dc8d9e5726249eb96426b4023a87d91",
+      "source_valid_frames": [
+        283661,
+        9382541
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/16.json",
+      "source_time_map_sha256": "4f7f8bc91ac38a9cfa7a8155c321628a4bbaf77ffb9a39df558910b465a1648d",
+      "source_duration_seconds": 189.56,
+      "output_path": "work/mix-170-20261026/corrected/16.wav",
+      "output_sha256": "caf5b42da896f3ef49366d019cff02c6d6f4e66cb03afff100468a49d4c1989e",
+      "output_samples": 6732494,
+      "output_duration_seconds": 140.26029166666666,
+      "first_grid_beat_sample": 293347,
+      "grid_beat_count": 343,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/16/timemap.txt",
+          "-D",
+          "140.26029166666666",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/16.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/16.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "ac597d86392972548c05100fd2337d4b2bbb3acff2be5684a9d32567206d19aa",
+        "elapsed_seconds": 7.591597541992087,
+        "log_path": "work/mix-170-20261026/rubberband/16/rubberband.log",
+        "log_sha256": "a5b641337ed68eea8e30ba305a60cf6b37fcfbd163f3a0a253867285d00b30c9"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/16.json",
+      "output_qa_sha256": "22244d8272a77aa376d78738c4a27fbffba249cc963638988eaecffdead7ae9f",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 17,
+      "song_id": "0f47dc9a-f2e0-44d9-947c-765b27928301",
+      "title": "After The Rain",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/0f47dc9a-f2e0-44d9-947c-765b27928301/attempt-01/raw.wav",
+      "raw_sha256": "6a057af758363dec5dc2f65b97f2eda673d264034d274bb8e31f4899716523c5",
+      "source_valid_frames": [
+        108441,
+        8172441
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/17.json",
+      "source_time_map_sha256": "06375a5460de88af2c69bbfcae792f64ce3661e5521e75a4d565720dbb4a2714",
+      "source_duration_seconds": 168.0,
+      "output_path": "work/mix-170-20261026/corrected/17.wav",
+      "output_sha256": "38bd054c74dde45d33109322eed75f8cf06b78fbad9fda1ec318cdfb294c3428",
+      "output_samples": 6157469,
+      "output_duration_seconds": 128.28060416666668,
+      "first_grid_beat_sample": 592042,
+      "grid_beat_count": 287,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/17/timemap.txt",
+          "-D",
+          "128.28060416666668",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/17.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/17.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "984cd4b292a3d62a03534ab0e2f9040f6e89bb80dd846cf06c7da95d383e51e3",
+        "elapsed_seconds": 6.897674165957142,
+        "log_path": "work/mix-170-20261026/rubberband/17/rubberband.log",
+        "log_sha256": "686d10ab44b8dce868216facd580cb9172b8c58c67dae466c9b4282ae0dd30a0"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/17.json",
+      "output_qa_sha256": "633fc76347e2e3c5ba34e331090b50359bad7f83e624675cdadf4c482316e38c",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 18,
+      "song_id": "eedc3220-8893-42bb-ad09-971aeaea5544",
+      "title": "Pulse",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/eedc3220-8893-42bb-ad09-971aeaea5544/attempt-01/raw.wav",
+      "raw_sha256": "11d5a03ab48080cab1a61204ab799a33c258102d601236ce3276fa955124bb59",
+      "source_valid_frames": [
+        120358,
+        10194598
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/18.json",
+      "source_time_map_sha256": "e61422395c40bf28f7877ea21dad411af808c2de005ed9a8626c3c4a76d9b2d6",
+      "source_duration_seconds": 209.88,
+      "output_path": "work/mix-170-20261026/corrected/18.wav",
+      "output_sha256": "01843e35abf3572cd9b6c46ef350090ae9f1e25b3c183e5d671865e45f3e7dbd",
+      "output_samples": 7747547,
+      "output_duration_seconds": 161.40722916666667,
+      "first_grid_beat_sample": 297816,
+      "grid_beat_count": 388,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/18/timemap.txt",
+          "-D",
+          "161.40722916666667",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/18.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/18.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "375836298556e034c9b3c6dc943927de999a35a980cf0392f5e3113067ec1df1",
+        "elapsed_seconds": 8.66853479098063,
+        "log_path": "work/mix-170-20261026/rubberband/18/rubberband.log",
+        "log_sha256": "fbaa1571bb6fbef31652395aca47952b259c4e4fb887731fb457bc95c9cd876e"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/18.json",
+      "output_qa_sha256": "2fb393990406fc9a065e1cbab5393a94883c57053b1b71c0ed24f48191377ccc",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 19,
+      "song_id": "29316e83-c0b8-412c-8d0d-ce7774018b45",
+      "title": "Open Roads",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/29316e83-c0b8-412c-8d0d-ce7774018b45/attempt-01/raw.wav",
+      "raw_sha256": "026ac52eb97cf4f1fd76275254880d7424e0278964f18a4fead99a095413a2fe",
+      "source_valid_frames": [
+        117723,
+        8865243
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/19.json",
+      "source_time_map_sha256": "473b59925f1afd653f9b7ced750370efe3649ca7937aa478ca14fa9d7510b578",
+      "source_duration_seconds": 182.24,
+      "output_path": "work/mix-170-20261026/corrected/19.wav",
+      "output_sha256": "ec209125098d94c6f0638250663c3e95e2a0427d54a610bb60c0e3a7be13f06e",
+      "output_samples": 6759251,
+      "output_duration_seconds": 140.81772916666668,
+      "first_grid_beat_sample": 557959,
+      "grid_beat_count": 324,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/19/timemap.txt",
+          "-D",
+          "140.81772916666668",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/19.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/19.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "bedbf6c9dd1eb18a5d7cfb693097964e59512d32510a2d37bdadccd0350f624d",
+        "elapsed_seconds": 7.500306625035591,
+        "log_path": "work/mix-170-20261026/rubberband/19/rubberband.log",
+        "log_sha256": "46b445dc411c7c13f559f8e8f034b964bd1b848bf7501a7dc0f8f21cfcd04a51"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/19.json",
+      "output_qa_sha256": "a4b862af36f5dafae0943fb831b15f79f4f7ed5dd1d6a5b1fa9974a5df3420bc",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    },
+    {
+      "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+      "order": 20,
+      "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+      "title": "Dancing Tears",
+      "raw_path": "work/2026-10-26-1930-current20-capture/captures/3ceea1ed-f934-495d-8f6d-6724630e8973/attempt-01/raw.wav",
+      "raw_sha256": "b65431592ce5024ce295023713dc63626bb767bca3db054ff007ed6781db173b",
+      "source_valid_frames": [
+        297336,
+        10050936
+      ],
+      "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/20.json",
+      "source_time_map_sha256": "81a5089facbfbd6e9d975a1b0f1ff22450f68e3fc650950694c78d1b00684671",
+      "source_duration_seconds": 203.2,
+      "output_path": "work/mix-170-20261026/corrected/20.wav",
+      "output_sha256": "c2d4411f2f52a02fc10d050b52f1e7c61ca4135064616716f4a5c9e1200e58ba",
+      "output_samples": 7462931,
+      "output_duration_seconds": 155.47772916666668,
+      "first_grid_beat_sample": 685904,
+      "grid_beat_count": 358,
+      "source_start_preserved": true,
+      "source_end_preserved": true,
+      "target_bpm": 170,
+      "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+      "direct_listening": false,
+      "producer": {
+        "command": [
+          "/opt/homebrew/bin/rubberband",
+          "-3",
+          "-p",
+          "0",
+          "--timemap",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/20/timemap.txt",
+          "-D",
+          "155.47772916666668",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/20.wav",
+          "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/20.wav"
+        ],
+        "rubberband_version": "4.0.0",
+        "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+        "timemap_sha256": "cbc0517861e0f6cf0f4525d9cf1b2b3ea316536a29e46fb26d0771994ca7d0b4",
+        "elapsed_seconds": 8.391444915963802,
+        "log_path": "work/mix-170-20261026/rubberband/20/rubberband.log",
+        "log_sha256": "dcd288832983f9e7f6c58e76c72e45bea5b0dca84a384a64ef419126f4b0d578"
+      },
+      "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/20.json",
+      "output_qa_sha256": "19c9995cd6dbc3cffb68a8c2d471a17489ee5fe0278ce2b8a9fc18e7add3a2f7",
+      "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+    }
+  ],
+  "entries": [
+    {
+      "entry": 1,
+      "cycle": 1,
+      "order": 1,
+      "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+      "title": "Goodbye",
+      "mix_start_sample": 0,
+      "mix_end_sample": 7194882,
+      "samples": 7194882,
+      "mix_start_seconds": 0.0,
+      "mix_end_seconds": 149.893375,
+      "corrected_source_frames": [
+        0,
+        7194882
+      ],
+      "source_gain_db": -1.08,
+      "corrected_sha256": "a276acb05c94745f0a47763fe20e6d7f1d7df219b7fc7263912b3f3965a966b0",
+      "corrected_path": "work/mix-170-20261026/corrected/01.wav",
+      "first_grid_beat_sample_global": 545744
+    },
+    {
+      "entry": 2,
+      "cycle": 1,
+      "order": 2,
+      "song_id": "8bf62958-9de5-4249-8ff8-a6e18f9e6a95",
+      "title": "Night Steps",
+      "mix_start_sample": 7131795,
+      "mix_end_sample": 16668251,
+      "samples": 9536456,
+      "mix_start_seconds": 148.5790625,
+      "mix_end_seconds": 347.25522916666665,
+      "corrected_source_frames": [
+        0,
+        9536456
+      ],
+      "source_gain_db": -2.16,
+      "corrected_sha256": "40eb15db8f3f7f42cc5ae7023c52565f14dc028927e655a7465dc6dc086f9ae2",
+      "corrected_path": "work/mix-170-20261026/corrected/02.wav",
+      "first_grid_beat_sample_global": 7661038
+    },
+    {
+      "entry": 3,
+      "cycle": 1,
+      "order": 3,
+      "song_id": "431cbfee-b158-4ced-8cd2-eaae6816ec4f",
+      "title": "Warm Pixels",
+      "mix_start_sample": 16601223,
+      "mix_end_sample": 23940230,
+      "samples": 7339007,
+      "mix_start_seconds": 345.8588125,
+      "mix_end_seconds": 498.7547916666667,
+      "corrected_source_frames": [
+        0,
+        7339007
+      ],
+      "source_gain_db": -1.6799999999999997,
+      "corrected_sha256": "043a419cc85a250ab0be5265b3eee6e32b0159cd474f48e4d43051a102ff6d2a",
+      "corrected_path": "work/mix-170-20261026/corrected/03.wav",
+      "first_grid_beat_sample_global": 16927862
+    },
+    {
+      "entry": 4,
+      "cycle": 1,
+      "order": 4,
+      "song_id": "e4187322-c621-4c74-b3e3-dcec594e6397",
+      "title": "Sunday Voltage",
+      "mix_start_sample": 23873078,
+      "mix_end_sample": 30069464,
+      "samples": 6196386,
+      "mix_start_seconds": 497.3557916666667,
+      "mix_end_seconds": 626.4471666666667,
+      "corrected_source_frames": [
+        0,
+        6196386
+      ],
+      "source_gain_db": -1.9900000000000002,
+      "corrected_sha256": "d06ea5743332c137e63fdf4307342ff93847ec52a61dce9da0bc36a689390a0a",
+      "corrected_path": "work/mix-170-20261026/corrected/04.wav",
+      "first_grid_beat_sample_global": 23992332
+    },
+    {
+      "entry": 5,
+      "cycle": 1,
+      "order": 5,
+      "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+      "title": "Glass Horizon",
+      "mix_start_sample": 30002094,
+      "mix_end_sample": 36895664,
+      "samples": 6893570,
+      "mix_start_seconds": 625.043625,
+      "mix_end_seconds": 768.6596666666667,
+      "corrected_source_frames": [
+        0,
+        6893570
+      ],
+      "source_gain_db": -1.1500000000000004,
+      "corrected_sha256": "07c5597f4ec72effddb77daa9a6213ffadeb9e728fecd6ed6dece175a3b9f0d3",
+      "corrected_path": "work/mix-170-20261026/corrected/05.wav",
+      "first_grid_beat_sample_global": 30294450
+    },
+    {
+      "entry": 6,
+      "cycle": 1,
+      "order": 6,
+      "song_id": "107a4111-0984-4ac0-81f0-2fd4b799e5ae",
+      "title": "Small Satellites",
+      "mix_start_sample": 36836106,
+      "mix_end_sample": 44650542,
+      "samples": 7814436,
+      "mix_start_seconds": 767.418875,
+      "mix_end_seconds": 930.219625,
+      "corrected_source_frames": [
+        0,
+        7814436
+      ],
+      "source_gain_db": -1.6400000000000006,
+      "corrected_sha256": "bc67803964d7f0fcb40bff8163a7d96becc3e281958d9638a49bb068aba38208",
+      "corrected_path": "work/mix-170-20261026/corrected/06.wav",
+      "first_grid_beat_sample_global": 37240332
+    },
+    {
+      "entry": 7,
+      "cycle": 1,
+      "order": 7,
+      "song_id": "b2fb1141-ccb0-42c1-aec3-08698a41632c",
+      "title": "Blue Current",
+      "mix_start_sample": 44588561,
+      "mix_end_sample": 51753116,
+      "samples": 7164555,
+      "mix_start_seconds": 928.9283541666666,
+      "mix_end_seconds": 1078.1899166666667,
+      "corrected_source_frames": [
+        0,
+        7164555
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "31ab792482e547f1d32524499b2b790b6fa9923db8125e2e30819c585f9d0f23",
+      "corrected_path": "work/mix-170-20261026/corrected/07.wav",
+      "first_grid_beat_sample_global": 44880803
+    },
+    {
+      "entry": 8,
+      "cycle": 1,
+      "order": 8,
+      "song_id": "12f8ab9f-b06e-4830-a365-d71407b04211",
+      "title": "Still a Spark",
+      "mix_start_sample": 51690200,
+      "mix_end_sample": 60897821,
+      "samples": 9207621,
+      "mix_start_seconds": 1076.8791666666666,
+      "mix_end_seconds": 1268.7046041666667,
+      "corrected_source_frames": [
+        0,
+        9207621
+      ],
+      "source_gain_db": -1.5399999999999991,
+      "corrected_sha256": "36674112f279b45da9f3aceda130d04a170429f6276b42757257d8c463160725",
+      "corrected_path": "work/mix-170-20261026/corrected/08.wav",
+      "first_grid_beat_sample_global": 52029979
+    },
+    {
+      "entry": 9,
+      "cycle": 1,
+      "order": 9,
+      "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+      "title": "Paper Lanterns",
+      "mix_start_sample": 60828279,
+      "mix_end_sample": 69986080,
+      "samples": 9157801,
+      "mix_start_seconds": 1267.2558125,
+      "mix_end_seconds": 1458.0433333333333,
+      "corrected_source_frames": [
+        0,
+        9157801
+      ],
+      "source_gain_db": -2.41,
+      "corrected_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+      "corrected_path": "work/mix-170-20261026/corrected/09.wav",
+      "first_grid_beat_sample_global": 61178215
+    },
+    {
+      "entry": 10,
+      "cycle": 1,
+      "order": 10,
+      "song_id": "49ef4560-d891-4b29-8223-d82890fa0b2b",
+      "title": "Faded Polaroid",
+      "mix_start_sample": 69915580,
+      "mix_end_sample": 77670953,
+      "samples": 7755373,
+      "mix_start_seconds": 1456.5745833333333,
+      "mix_end_seconds": 1618.1448541666666,
+      "corrected_source_frames": [
+        0,
+        7755373
+      ],
+      "source_gain_db": -1.7100000000000009,
+      "corrected_sha256": "88f279467e200a938ce034cc1ba9c8ad01ae5dc5335e69955e8be9996d3bb937",
+      "corrected_path": "work/mix-170-20261026/corrected/10.wav",
+      "first_grid_beat_sample_global": 70207862
+    },
+    {
+      "entry": 11,
+      "cycle": 1,
+      "order": 11,
+      "song_id": "88442318-e044-44b4-981f-caebf020253d",
+      "title": "Half Past Home",
+      "mix_start_sample": 77602676,
+      "mix_end_sample": 87088986,
+      "samples": 9486310,
+      "mix_start_seconds": 1616.7224166666667,
+      "mix_end_seconds": 1814.353875,
+      "corrected_source_frames": [
+        0,
+        9486310
+      ],
+      "source_gain_db": -1.67,
+      "corrected_sha256": "7ce7cd5f6dc6c36bc63f1fb496cb609c2f2250d36df690b91294bad807ea0b38",
+      "corrected_path": "work/mix-170-20261026/corrected/11.wav",
+      "first_grid_beat_sample_global": 78153273
+    },
+    {
+      "entry": 12,
+      "cycle": 1,
+      "order": 12,
+      "song_id": "123cccac-d4df-45f9-9c76-17ccd2f5ed6b",
+      "title": "In Da Dream",
+      "mix_start_sample": 87014993,
+      "mix_end_sample": 95660710,
+      "samples": 8645717,
+      "mix_start_seconds": 1812.8123541666666,
+      "mix_end_seconds": 1992.9314583333332,
+      "corrected_source_frames": [
+        0,
+        8645717
+      ],
+      "source_gain_db": -2.4499999999999993,
+      "corrected_sha256": "47a49012518acd38ddd1439d05308f734baebcd1c92c5e9518b557b6d947daea",
+      "corrected_path": "work/mix-170-20261026/corrected/12.wav",
+      "first_grid_beat_sample_global": 87674215
+    },
+    {
+      "entry": 13,
+      "cycle": 1,
+      "order": 13,
+      "song_id": "e043cd5d-7046-4ec9-aefe-14e8df4927c0",
+      "title": "Pocket Sunrise",
+      "mix_start_sample": 95598154,
+      "mix_end_sample": 101196477,
+      "samples": 5598323,
+      "mix_start_seconds": 1991.6282083333333,
+      "mix_end_seconds": 2108.2599375,
+      "corrected_source_frames": [
+        0,
+        5598323
+      ],
+      "source_gain_db": -2.119999999999999,
+      "corrected_sha256": "a9cb08592f27d902e1bcba79785914731180de57b90fd0a509069e1968bbcd3d",
+      "corrected_path": "work/mix-170-20261026/corrected/13.wav",
+      "first_grid_beat_sample_global": 96110920
+    },
+    {
+      "entry": 14,
+      "cycle": 1,
+      "order": 14,
+      "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+      "title": "Keep the Window Open",
+      "mix_start_sample": 101127138,
+      "mix_end_sample": 109355502,
+      "samples": 8228364,
+      "mix_start_seconds": 2106.815375,
+      "mix_end_seconds": 2278.239625,
+      "corrected_source_frames": [
+        0,
+        8228364
+      ],
+      "source_gain_db": -3.0,
+      "corrected_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+      "corrected_path": "work/mix-170-20261026/corrected/14.wav",
+      "first_grid_beat_sample_global": 101752332
+    },
+    {
+      "entry": 15,
+      "cycle": 1,
+      "order": 15,
+      "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+      "title": "A Sorrow Beyond Dreams",
+      "mix_start_sample": 109285495,
+      "mix_end_sample": 115413736,
+      "samples": 6128241,
+      "mix_start_seconds": 2276.7811458333335,
+      "mix_end_seconds": 2404.4528333333333,
+      "corrected_source_frames": [
+        0,
+        6128241
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+      "corrected_path": "work/mix-170-20261026/corrected/15.wav",
+      "first_grid_beat_sample_global": 109765509
+    },
+    {
+      "entry": 16,
+      "cycle": 1,
+      "order": 16,
+      "song_id": "7f89058e-1d77-452a-b081-d5fd78511be5",
+      "title": "Sunlit",
+      "mix_start_sample": 115350750,
+      "mix_end_sample": 122083244,
+      "samples": 6732494,
+      "mix_start_seconds": 2403.140625,
+      "mix_end_seconds": 2543.4009166666665,
+      "corrected_source_frames": [
+        0,
+        6732494
+      ],
+      "source_gain_db": -1.7899999999999991,
+      "corrected_sha256": "caf5b42da896f3ef49366d019cff02c6d6f4e66cb03afff100468a49d4c1989e",
+      "corrected_path": "work/mix-170-20261026/corrected/16.wav",
+      "first_grid_beat_sample_global": 115644097
+    },
+    {
+      "entry": 17,
+      "cycle": 1,
+      "order": 17,
+      "song_id": "0f47dc9a-f2e0-44d9-947c-765b27928301",
+      "title": "After The Rain",
+      "mix_start_sample": 122014878,
+      "mix_end_sample": 128172347,
+      "samples": 6157469,
+      "mix_start_seconds": 2541.976625,
+      "mix_end_seconds": 2670.2572291666665,
+      "corrected_source_frames": [
+        0,
+        6157469
+      ],
+      "source_gain_db": -1.2699999999999996,
+      "corrected_sha256": "38bd054c74dde45d33109322eed75f8cf06b78fbad9fda1ec318cdfb294c3428",
+      "corrected_path": "work/mix-170-20261026/corrected/17.wav",
+      "first_grid_beat_sample_global": 122606920
+    },
+    {
+      "entry": 18,
+      "cycle": 1,
+      "order": 18,
+      "song_id": "eedc3220-8893-42bb-ad09-971aeaea5544",
+      "title": "Pulse",
+      "mix_start_sample": 128102987,
+      "mix_end_sample": 135850534,
+      "samples": 7747547,
+      "mix_start_seconds": 2668.812229166667,
+      "mix_end_seconds": 2830.2194583333335,
+      "corrected_source_frames": [
+        0,
+        7747547
+      ],
+      "source_gain_db": -1.5600000000000005,
+      "corrected_sha256": "01843e35abf3572cd9b6c46ef350090ae9f1e25b3c183e5d671865e45f3e7dbd",
+      "corrected_path": "work/mix-170-20261026/corrected/18.wav",
+      "first_grid_beat_sample_global": 128400803
+    },
+    {
+      "entry": 19,
+      "cycle": 1,
+      "order": 19,
+      "song_id": "29316e83-c0b8-412c-8d0d-ce7774018b45",
+      "title": "Open Roads",
+      "mix_start_sample": 135788256,
+      "mix_end_sample": 142547507,
+      "samples": 6759251,
+      "mix_start_seconds": 2828.922,
+      "mix_end_seconds": 2969.7397291666666,
+      "corrected_source_frames": [
+        0,
+        6759251
+      ],
+      "source_gain_db": -2.0600000000000005,
+      "corrected_sha256": "ec209125098d94c6f0638250663c3e95e2a0427d54a610bb60c0e3a7be13f06e",
+      "corrected_path": "work/mix-170-20261026/corrected/19.wav",
+      "first_grid_beat_sample_global": 136346215
+    },
+    {
+      "entry": 20,
+      "cycle": 1,
+      "order": 20,
+      "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+      "title": "Dancing Tears",
+      "mix_start_sample": 142487605,
+      "mix_end_sample": 149950536,
+      "samples": 7462931,
+      "mix_start_seconds": 2968.4917708333332,
+      "mix_end_seconds": 3123.9695,
+      "corrected_source_frames": [
+        0,
+        7462931
+      ],
+      "source_gain_db": -1.33,
+      "corrected_sha256": "c2d4411f2f52a02fc10d050b52f1e7c61ca4135064616716f4a5c9e1200e58ba",
+      "corrected_path": "work/mix-170-20261026/corrected/20.wav",
+      "first_grid_beat_sample_global": 143173509
+    },
+    {
+      "entry": 21,
+      "cycle": 2,
+      "order": 1,
+      "song_id": "1d615bbf-a039-4f3b-9e91-c84bc687afd4",
+      "title": "Goodbye",
+      "mix_start_sample": 149878588,
+      "mix_end_sample": 157073470,
+      "samples": 7194882,
+      "mix_start_seconds": 3122.4705833333333,
+      "mix_end_seconds": 3272.3639583333334,
+      "corrected_source_frames": [
+        0,
+        7194882
+      ],
+      "source_gain_db": -1.08,
+      "corrected_sha256": "a276acb05c94745f0a47763fe20e6d7f1d7df219b7fc7263912b3f3965a966b0",
+      "corrected_path": "work/mix-170-20261026/corrected/01.wav",
+      "first_grid_beat_sample_global": 150424332
+    },
+    {
+      "entry": 22,
+      "cycle": 2,
+      "order": 2,
+      "song_id": "8bf62958-9de5-4249-8ff8-a6e18f9e6a95",
+      "title": "Night Steps",
+      "mix_start_sample": 157010383,
+      "mix_end_sample": 166546839,
+      "samples": 9536456,
+      "mix_start_seconds": 3271.049645833333,
+      "mix_end_seconds": 3469.7258125,
+      "corrected_source_frames": [
+        0,
+        9536456
+      ],
+      "source_gain_db": -2.16,
+      "corrected_sha256": "40eb15db8f3f7f42cc5ae7023c52565f14dc028927e655a7465dc6dc086f9ae2",
+      "corrected_path": "work/mix-170-20261026/corrected/02.wav",
+      "first_grid_beat_sample_global": 157539626
+    },
+    {
+      "entry": 23,
+      "cycle": 2,
+      "order": 3,
+      "song_id": "431cbfee-b158-4ced-8cd2-eaae6816ec4f",
+      "title": "Warm Pixels",
+      "mix_start_sample": 166479811,
+      "mix_end_sample": 173818818,
+      "samples": 7339007,
+      "mix_start_seconds": 3468.3293958333334,
+      "mix_end_seconds": 3621.225375,
+      "corrected_source_frames": [
+        0,
+        7339007
+      ],
+      "source_gain_db": -1.6799999999999997,
+      "corrected_sha256": "043a419cc85a250ab0be5265b3eee6e32b0159cd474f48e4d43051a102ff6d2a",
+      "corrected_path": "work/mix-170-20261026/corrected/03.wav",
+      "first_grid_beat_sample_global": 166806450
+    },
+    {
+      "entry": 24,
+      "cycle": 2,
+      "order": 4,
+      "song_id": "e4187322-c621-4c74-b3e3-dcec594e6397",
+      "title": "Sunday Voltage",
+      "mix_start_sample": 173751666,
+      "mix_end_sample": 179948052,
+      "samples": 6196386,
+      "mix_start_seconds": 3619.826375,
+      "mix_end_seconds": 3748.91775,
+      "corrected_source_frames": [
+        0,
+        6196386
+      ],
+      "source_gain_db": -1.9900000000000002,
+      "corrected_sha256": "d06ea5743332c137e63fdf4307342ff93847ec52a61dce9da0bc36a689390a0a",
+      "corrected_path": "work/mix-170-20261026/corrected/04.wav",
+      "first_grid_beat_sample_global": 173870920
+    },
+    {
+      "entry": 25,
+      "cycle": 2,
+      "order": 5,
+      "song_id": "9b94b1d1-02c6-466f-8ac4-dc358b6cc33f",
+      "title": "Glass Horizon",
+      "mix_start_sample": 179880682,
+      "mix_end_sample": 186774252,
+      "samples": 6893570,
+      "mix_start_seconds": 3747.5142083333335,
+      "mix_end_seconds": 3891.13025,
+      "corrected_source_frames": [
+        0,
+        6893570
+      ],
+      "source_gain_db": -1.1500000000000004,
+      "corrected_sha256": "07c5597f4ec72effddb77daa9a6213ffadeb9e728fecd6ed6dece175a3b9f0d3",
+      "corrected_path": "work/mix-170-20261026/corrected/05.wav",
+      "first_grid_beat_sample_global": 180173038
+    },
+    {
+      "entry": 26,
+      "cycle": 2,
+      "order": 6,
+      "song_id": "107a4111-0984-4ac0-81f0-2fd4b799e5ae",
+      "title": "Small Satellites",
+      "mix_start_sample": 186714694,
+      "mix_end_sample": 194529130,
+      "samples": 7814436,
+      "mix_start_seconds": 3889.8894583333336,
+      "mix_end_seconds": 4052.6902083333334,
+      "corrected_source_frames": [
+        0,
+        7814436
+      ],
+      "source_gain_db": -1.6400000000000006,
+      "corrected_sha256": "bc67803964d7f0fcb40bff8163a7d96becc3e281958d9638a49bb068aba38208",
+      "corrected_path": "work/mix-170-20261026/corrected/06.wav",
+      "first_grid_beat_sample_global": 187118920
+    },
+    {
+      "entry": 27,
+      "cycle": 2,
+      "order": 7,
+      "song_id": "b2fb1141-ccb0-42c1-aec3-08698a41632c",
+      "title": "Blue Current",
+      "mix_start_sample": 194467149,
+      "mix_end_sample": 201631704,
+      "samples": 7164555,
+      "mix_start_seconds": 4051.3989375,
+      "mix_end_seconds": 4200.6605,
+      "corrected_source_frames": [
+        0,
+        7164555
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "31ab792482e547f1d32524499b2b790b6fa9923db8125e2e30819c585f9d0f23",
+      "corrected_path": "work/mix-170-20261026/corrected/07.wav",
+      "first_grid_beat_sample_global": 194759391
+    },
+    {
+      "entry": 28,
+      "cycle": 2,
+      "order": 8,
+      "song_id": "12f8ab9f-b06e-4830-a365-d71407b04211",
+      "title": "Still a Spark",
+      "mix_start_sample": 201568789,
+      "mix_end_sample": 210776410,
+      "samples": 9207621,
+      "mix_start_seconds": 4199.349770833333,
+      "mix_end_seconds": 4391.175208333333,
+      "corrected_source_frames": [
+        0,
+        9207621
+      ],
+      "source_gain_db": -1.5399999999999991,
+      "corrected_sha256": "36674112f279b45da9f3aceda130d04a170429f6276b42757257d8c463160725",
+      "corrected_path": "work/mix-170-20261026/corrected/08.wav",
+      "first_grid_beat_sample_global": 201908568
+    },
+    {
+      "entry": 29,
+      "cycle": 2,
+      "order": 9,
+      "song_id": "e882e06a-f1f5-4985-b8f9-6514fde6d924",
+      "title": "Paper Lanterns",
+      "mix_start_sample": 210706867,
+      "mix_end_sample": 219864668,
+      "samples": 9157801,
+      "mix_start_seconds": 4389.726395833333,
+      "mix_end_seconds": 4580.513916666667,
+      "corrected_source_frames": [
+        0,
+        9157801
+      ],
+      "source_gain_db": -2.41,
+      "corrected_sha256": "69724eaa0fd6236f01ffd85d2a303776179e18f62be821ee97d443bf529fd0a5",
+      "corrected_path": "work/mix-170-20261026/corrected/09.wav",
+      "first_grid_beat_sample_global": 211056803
+    },
+    {
+      "entry": 30,
+      "cycle": 2,
+      "order": 10,
+      "song_id": "49ef4560-d891-4b29-8223-d82890fa0b2b",
+      "title": "Faded Polaroid",
+      "mix_start_sample": 219794168,
+      "mix_end_sample": 227549541,
+      "samples": 7755373,
+      "mix_start_seconds": 4579.045166666667,
+      "mix_end_seconds": 4740.6154375,
+      "corrected_source_frames": [
+        0,
+        7755373
+      ],
+      "source_gain_db": -1.7100000000000009,
+      "corrected_sha256": "88f279467e200a938ce034cc1ba9c8ad01ae5dc5335e69955e8be9996d3bb937",
+      "corrected_path": "work/mix-170-20261026/corrected/10.wav",
+      "first_grid_beat_sample_global": 220086450
+    },
+    {
+      "entry": 31,
+      "cycle": 2,
+      "order": 11,
+      "song_id": "88442318-e044-44b4-981f-caebf020253d",
+      "title": "Half Past Home",
+      "mix_start_sample": 227481265,
+      "mix_end_sample": 236967575,
+      "samples": 9486310,
+      "mix_start_seconds": 4739.193020833333,
+      "mix_end_seconds": 4936.824479166667,
+      "corrected_source_frames": [
+        0,
+        9486310
+      ],
+      "source_gain_db": -1.67,
+      "corrected_sha256": "7ce7cd5f6dc6c36bc63f1fb496cb609c2f2250d36df690b91294bad807ea0b38",
+      "corrected_path": "work/mix-170-20261026/corrected/11.wav",
+      "first_grid_beat_sample_global": 228031862
+    },
+    {
+      "entry": 32,
+      "cycle": 2,
+      "order": 12,
+      "song_id": "123cccac-d4df-45f9-9c76-17ccd2f5ed6b",
+      "title": "In Da Dream",
+      "mix_start_sample": 236893581,
+      "mix_end_sample": 245539298,
+      "samples": 8645717,
+      "mix_start_seconds": 4935.2829375,
+      "mix_end_seconds": 5115.402041666666,
+      "corrected_source_frames": [
+        0,
+        8645717
+      ],
+      "source_gain_db": -2.4499999999999993,
+      "corrected_sha256": "47a49012518acd38ddd1439d05308f734baebcd1c92c5e9518b557b6d947daea",
+      "corrected_path": "work/mix-170-20261026/corrected/12.wav",
+      "first_grid_beat_sample_global": 237552803
+    },
+    {
+      "entry": 33,
+      "cycle": 2,
+      "order": 13,
+      "song_id": "e043cd5d-7046-4ec9-aefe-14e8df4927c0",
+      "title": "Pocket Sunrise",
+      "mix_start_sample": 245476743,
+      "mix_end_sample": 251075066,
+      "samples": 5598323,
+      "mix_start_seconds": 5114.0988125,
+      "mix_end_seconds": 5230.730541666667,
+      "corrected_source_frames": [
+        0,
+        5598323
+      ],
+      "source_gain_db": -2.119999999999999,
+      "corrected_sha256": "a9cb08592f27d902e1bcba79785914731180de57b90fd0a509069e1968bbcd3d",
+      "corrected_path": "work/mix-170-20261026/corrected/13.wav",
+      "first_grid_beat_sample_global": 245989509
+    },
+    {
+      "entry": 34,
+      "cycle": 2,
+      "order": 14,
+      "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+      "title": "Keep the Window Open",
+      "mix_start_sample": 251005726,
+      "mix_end_sample": 259234090,
+      "samples": 8228364,
+      "mix_start_seconds": 5229.285958333333,
+      "mix_end_seconds": 5400.710208333333,
+      "corrected_source_frames": [
+        0,
+        8228364
+      ],
+      "source_gain_db": -3.0,
+      "corrected_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+      "corrected_path": "work/mix-170-20261026/corrected/14.wav",
+      "first_grid_beat_sample_global": 251630920
+    },
+    {
+      "entry": 35,
+      "cycle": 2,
+      "order": 15,
+      "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+      "title": "A Sorrow Beyond Dreams",
+      "mix_start_sample": 259164083,
+      "mix_end_sample": 265292324,
+      "samples": 6128241,
+      "mix_start_seconds": 5399.251729166666,
+      "mix_end_seconds": 5526.9234166666665,
+      "corrected_source_frames": [
+        0,
+        6128241
+      ],
+      "source_gain_db": -1.17,
+      "corrected_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+      "corrected_path": "work/mix-170-20261026/corrected/15.wav",
+      "first_grid_beat_sample_global": 259644097
+    },
+    {
+      "entry": 36,
+      "cycle": 2,
+      "order": 16,
+      "song_id": "7f89058e-1d77-452a-b081-d5fd78511be5",
+      "title": "Sunlit",
+      "mix_start_sample": 265229338,
+      "mix_end_sample": 271961832,
+      "samples": 6732494,
+      "mix_start_seconds": 5525.611208333334,
+      "mix_end_seconds": 5665.8715,
+      "corrected_source_frames": [
+        0,
+        6732494
+      ],
+      "source_gain_db": -1.7899999999999991,
+      "corrected_sha256": "caf5b42da896f3ef49366d019cff02c6d6f4e66cb03afff100468a49d4c1989e",
+      "corrected_path": "work/mix-170-20261026/corrected/16.wav",
+      "first_grid_beat_sample_global": 265522685
+    },
+    {
+      "entry": 37,
+      "cycle": 2,
+      "order": 17,
+      "song_id": "0f47dc9a-f2e0-44d9-947c-765b27928301",
+      "title": "After The Rain",
+      "mix_start_sample": 271893467,
+      "mix_end_sample": 278050936,
+      "samples": 6157469,
+      "mix_start_seconds": 5664.447229166667,
+      "mix_end_seconds": 5792.727833333333,
+      "corrected_source_frames": [
+        0,
+        6157469
+      ],
+      "source_gain_db": -1.2699999999999996,
+      "corrected_sha256": "38bd054c74dde45d33109322eed75f8cf06b78fbad9fda1ec318cdfb294c3428",
+      "corrected_path": "work/mix-170-20261026/corrected/17.wav",
+      "first_grid_beat_sample_global": 272485509
+    },
+    {
+      "entry": 38,
+      "cycle": 2,
+      "order": 18,
+      "song_id": "eedc3220-8893-42bb-ad09-971aeaea5544",
+      "title": "Pulse",
+      "mix_start_sample": 277981575,
+      "mix_end_sample": 285729122,
+      "samples": 7747547,
+      "mix_start_seconds": 5791.2828125,
+      "mix_end_seconds": 5952.690041666667,
+      "corrected_source_frames": [
+        0,
+        7747547
+      ],
+      "source_gain_db": -1.5600000000000005,
+      "corrected_sha256": "01843e35abf3572cd9b6c46ef350090ae9f1e25b3c183e5d671865e45f3e7dbd",
+      "corrected_path": "work/mix-170-20261026/corrected/18.wav",
+      "first_grid_beat_sample_global": 278279391
+    },
+    {
+      "entry": 39,
+      "cycle": 2,
+      "order": 19,
+      "song_id": "29316e83-c0b8-412c-8d0d-ce7774018b45",
+      "title": "Open Roads",
+      "mix_start_sample": 285666844,
+      "mix_end_sample": 292426095,
+      "samples": 6759251,
+      "mix_start_seconds": 5951.392583333333,
+      "mix_end_seconds": 6092.2103125,
+      "corrected_source_frames": [
+        0,
+        6759251
+      ],
+      "source_gain_db": -2.0600000000000005,
+      "corrected_sha256": "ec209125098d94c6f0638250663c3e95e2a0427d54a610bb60c0e3a7be13f06e",
+      "corrected_path": "work/mix-170-20261026/corrected/19.wav",
+      "first_grid_beat_sample_global": 286224803
+    },
+    {
+      "entry": 40,
+      "cycle": 2,
+      "order": 20,
+      "song_id": "3ceea1ed-f934-495d-8f6d-6724630e8973",
+      "title": "Dancing Tears",
+      "mix_start_sample": 292366193,
+      "mix_end_sample": 299829124,
+      "samples": 7462931,
+      "mix_start_seconds": 6090.962354166667,
+      "mix_end_seconds": 6246.440083333333,
+      "corrected_source_frames": [
+        0,
+        7462931
+      ],
+      "source_gain_db": -1.33,
+      "corrected_sha256": "c2d4411f2f52a02fc10d050b52f1e7c61ca4135064616716f4a5c9e1200e58ba",
+      "corrected_path": "work/mix-170-20261026/corrected/20.wav",
+      "first_grid_beat_sample_global": 293052097
+    }
+  ],
+  "transitions": [
+    {
+      "number": 1,
+      "outgoing_entry": 1,
+      "incoming_entry": 2,
+      "outgoing_order": 1,
+      "incoming_order": 2,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 7131795,
+      "end_sample": 7194882,
+      "overlap_samples": 63087,
+      "overlap_seconds": 1.3143125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7131795,
+        7194882
+      ],
+      "incoming_corrected_frames": [
+        0,
+        63087
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 2,
+      "outgoing_entry": 2,
+      "incoming_entry": 3,
+      "outgoing_order": 2,
+      "incoming_order": 3,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 16601223,
+      "end_sample": 16668251,
+      "overlap_samples": 67028,
+      "overlap_seconds": 1.3964166666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9469428,
+        9536456
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67028
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 3,
+      "outgoing_entry": 3,
+      "incoming_entry": 4,
+      "outgoing_order": 3,
+      "incoming_order": 4,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 23873078,
+      "end_sample": 23940230,
+      "overlap_samples": 67152,
+      "overlap_seconds": 1.399,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7271855,
+        7339007
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67152
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 4,
+      "outgoing_entry": 4,
+      "incoming_entry": 5,
+      "outgoing_order": 4,
+      "incoming_order": 5,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 30002094,
+      "end_sample": 30069464,
+      "overlap_samples": 67370,
+      "overlap_seconds": 1.4035416666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6129016,
+        6196386
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67370
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 5,
+      "outgoing_entry": 5,
+      "incoming_entry": 6,
+      "outgoing_order": 5,
+      "incoming_order": 6,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 36836106,
+      "end_sample": 36895664,
+      "overlap_samples": 59558,
+      "overlap_seconds": 1.2407916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6834012,
+        6893570
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59558
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 6,
+      "outgoing_entry": 6,
+      "incoming_entry": 7,
+      "outgoing_order": 6,
+      "incoming_order": 7,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 44588561,
+      "end_sample": 44650542,
+      "overlap_samples": 61981,
+      "overlap_seconds": 1.2912708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7752455,
+        7814436
+      ],
+      "incoming_corrected_frames": [
+        0,
+        61981
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 7,
+      "outgoing_entry": 7,
+      "incoming_entry": 8,
+      "outgoing_order": 7,
+      "incoming_order": 8,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 51690200,
+      "end_sample": 51753116,
+      "overlap_samples": 62916,
+      "overlap_seconds": 1.31075,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7101639,
+        7164555
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62916
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 8,
+      "outgoing_entry": 8,
+      "incoming_entry": 9,
+      "outgoing_order": 8,
+      "incoming_order": 9,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 60828279,
+      "end_sample": 60897821,
+      "overlap_samples": 69542,
+      "overlap_seconds": 1.4487916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9138079,
+        9207621
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69542
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 9,
+      "outgoing_entry": 9,
+      "incoming_entry": 10,
+      "outgoing_order": 9,
+      "incoming_order": 10,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 69915580,
+      "end_sample": 69986080,
+      "overlap_samples": 70500,
+      "overlap_seconds": 1.46875,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9087301,
+        9157801
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70500
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 10,
+      "outgoing_entry": 10,
+      "incoming_entry": 11,
+      "outgoing_order": 10,
+      "incoming_order": 11,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 77602676,
+      "end_sample": 77670953,
+      "overlap_samples": 68277,
+      "overlap_seconds": 1.4224375,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7687096,
+        7755373
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68277
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 11,
+      "outgoing_entry": 11,
+      "incoming_entry": 12,
+      "outgoing_order": 11,
+      "incoming_order": 12,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 87014993,
+      "end_sample": 87088986,
+      "overlap_samples": 73993,
+      "overlap_seconds": 1.5415208333333332,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9412317,
+        9486310
+      ],
+      "incoming_corrected_frames": [
+        0,
+        73993
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 12,
+      "outgoing_entry": 12,
+      "incoming_entry": 13,
+      "outgoing_order": 12,
+      "incoming_order": 13,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 95598154,
+      "end_sample": 95660710,
+      "overlap_samples": 62556,
+      "overlap_seconds": 1.30325,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8583161,
+        8645717
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62556
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 13,
+      "outgoing_entry": 13,
+      "incoming_entry": 14,
+      "outgoing_order": 13,
+      "incoming_order": 14,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 101127138,
+      "end_sample": 101196477,
+      "overlap_samples": 69339,
+      "overlap_seconds": 1.4445625,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        5528984,
+        5598323
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69339
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 14,
+      "outgoing_entry": 14,
+      "incoming_entry": 15,
+      "outgoing_order": 14,
+      "incoming_order": 15,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 109285495,
+      "end_sample": 109355502,
+      "overlap_samples": 70007,
+      "overlap_seconds": 1.4584791666666668,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8158357,
+        8228364
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70007
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 15,
+      "outgoing_entry": 15,
+      "incoming_entry": 16,
+      "outgoing_order": 15,
+      "incoming_order": 16,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 115350750,
+      "end_sample": 115413736,
+      "overlap_samples": 62986,
+      "overlap_seconds": 1.3122083333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6065255,
+        6128241
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62986
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 16,
+      "outgoing_entry": 16,
+      "incoming_entry": 17,
+      "outgoing_order": 16,
+      "incoming_order": 17,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 122014878,
+      "end_sample": 122083244,
+      "overlap_samples": 68366,
+      "overlap_seconds": 1.4242916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6664128,
+        6732494
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68366
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 17,
+      "outgoing_entry": 17,
+      "incoming_entry": 18,
+      "outgoing_order": 17,
+      "incoming_order": 18,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 128102987,
+      "end_sample": 128172347,
+      "overlap_samples": 69360,
+      "overlap_seconds": 1.445,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6088109,
+        6157469
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69360
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 18,
+      "outgoing_entry": 18,
+      "incoming_entry": 19,
+      "outgoing_order": 18,
+      "incoming_order": 19,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 135788256,
+      "end_sample": 135850534,
+      "overlap_samples": 62278,
+      "overlap_seconds": 1.2974583333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7685269,
+        7747547
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62278
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 19,
+      "outgoing_entry": 19,
+      "incoming_entry": 20,
+      "outgoing_order": 19,
+      "incoming_order": 20,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 1,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 142487605,
+      "end_sample": 142547507,
+      "overlap_samples": 59902,
+      "overlap_seconds": 1.2479583333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6699349,
+        6759251
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59902
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 20,
+      "outgoing_entry": 20,
+      "incoming_entry": 21,
+      "outgoing_order": 20,
+      "incoming_order": 1,
+      "outgoing_cycle": 1,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": true,
+      "start_sample": 149878588,
+      "end_sample": 149950536,
+      "overlap_samples": 71948,
+      "overlap_seconds": 1.4989166666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7390983,
+        7462931
+      ],
+      "incoming_corrected_frames": [
+        0,
+        71948
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 21,
+      "outgoing_entry": 21,
+      "incoming_entry": 22,
+      "outgoing_order": 1,
+      "incoming_order": 2,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 157010383,
+      "end_sample": 157073470,
+      "overlap_samples": 63087,
+      "overlap_seconds": 1.3143125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7131795,
+        7194882
+      ],
+      "incoming_corrected_frames": [
+        0,
+        63087
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 22,
+      "outgoing_entry": 22,
+      "incoming_entry": 23,
+      "outgoing_order": 2,
+      "incoming_order": 3,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 166479811,
+      "end_sample": 166546839,
+      "overlap_samples": 67028,
+      "overlap_seconds": 1.3964166666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9469428,
+        9536456
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67028
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 23,
+      "outgoing_entry": 23,
+      "incoming_entry": 24,
+      "outgoing_order": 3,
+      "incoming_order": 4,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 173751666,
+      "end_sample": 173818818,
+      "overlap_samples": 67152,
+      "overlap_seconds": 1.399,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7271855,
+        7339007
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67152
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 24,
+      "outgoing_entry": 24,
+      "incoming_entry": 25,
+      "outgoing_order": 4,
+      "incoming_order": 5,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 179880682,
+      "end_sample": 179948052,
+      "overlap_samples": 67370,
+      "overlap_seconds": 1.4035416666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6129016,
+        6196386
+      ],
+      "incoming_corrected_frames": [
+        0,
+        67370
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 25,
+      "outgoing_entry": 25,
+      "incoming_entry": 26,
+      "outgoing_order": 5,
+      "incoming_order": 6,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 186714694,
+      "end_sample": 186774252,
+      "overlap_samples": 59558,
+      "overlap_seconds": 1.2407916666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6834012,
+        6893570
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59558
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 26,
+      "outgoing_entry": 26,
+      "incoming_entry": 27,
+      "outgoing_order": 6,
+      "incoming_order": 7,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 194467149,
+      "end_sample": 194529130,
+      "overlap_samples": 61981,
+      "overlap_seconds": 1.2912708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7752455,
+        7814436
+      ],
+      "incoming_corrected_frames": [
+        0,
+        61981
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 27,
+      "outgoing_entry": 27,
+      "incoming_entry": 28,
+      "outgoing_order": 7,
+      "incoming_order": 8,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 201568789,
+      "end_sample": 201631704,
+      "overlap_samples": 62915,
+      "overlap_seconds": 1.3107291666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7101640,
+        7164555
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62915
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 28,
+      "outgoing_entry": 28,
+      "incoming_entry": 29,
+      "outgoing_order": 8,
+      "incoming_order": 9,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 210706867,
+      "end_sample": 210776410,
+      "overlap_samples": 69543,
+      "overlap_seconds": 1.4488125,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9138078,
+        9207621
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69543
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 29,
+      "outgoing_entry": 29,
+      "incoming_entry": 30,
+      "outgoing_order": 9,
+      "incoming_order": 10,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 219794168,
+      "end_sample": 219864668,
+      "overlap_samples": 70500,
+      "overlap_seconds": 1.46875,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9087301,
+        9157801
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70500
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 30,
+      "outgoing_entry": 30,
+      "incoming_entry": 31,
+      "outgoing_order": 10,
+      "incoming_order": 11,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 227481265,
+      "end_sample": 227549541,
+      "overlap_samples": 68276,
+      "overlap_seconds": 1.4224166666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7687097,
+        7755373
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68276
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 31,
+      "outgoing_entry": 31,
+      "incoming_entry": 32,
+      "outgoing_order": 11,
+      "incoming_order": 12,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 236893581,
+      "end_sample": 236967575,
+      "overlap_samples": 73994,
+      "overlap_seconds": 1.5415416666666666,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        9412316,
+        9486310
+      ],
+      "incoming_corrected_frames": [
+        0,
+        73994
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 32,
+      "outgoing_entry": 32,
+      "incoming_entry": 33,
+      "outgoing_order": 12,
+      "incoming_order": 13,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 245476743,
+      "end_sample": 245539298,
+      "overlap_samples": 62555,
+      "overlap_seconds": 1.3032291666666667,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8583162,
+        8645717
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62555
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 33,
+      "outgoing_entry": 33,
+      "incoming_entry": 34,
+      "outgoing_order": 13,
+      "incoming_order": 14,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 251005726,
+      "end_sample": 251075066,
+      "overlap_samples": 69340,
+      "overlap_seconds": 1.4445833333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        5528983,
+        5598323
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69340
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 34,
+      "outgoing_entry": 34,
+      "incoming_entry": 35,
+      "outgoing_order": 14,
+      "incoming_order": 15,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 259164083,
+      "end_sample": 259234090,
+      "overlap_samples": 70007,
+      "overlap_seconds": 1.4584791666666668,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        8158357,
+        8228364
+      ],
+      "incoming_corrected_frames": [
+        0,
+        70007
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 35,
+      "outgoing_entry": 35,
+      "incoming_entry": 36,
+      "outgoing_order": 15,
+      "incoming_order": 16,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 265229338,
+      "end_sample": 265292324,
+      "overlap_samples": 62986,
+      "overlap_seconds": 1.3122083333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6065255,
+        6128241
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62986
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 36,
+      "outgoing_entry": 36,
+      "incoming_entry": 37,
+      "outgoing_order": 16,
+      "incoming_order": 17,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 271893467,
+      "end_sample": 271961832,
+      "overlap_samples": 68365,
+      "overlap_seconds": 1.4242708333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6664129,
+        6732494
+      ],
+      "incoming_corrected_frames": [
+        0,
+        68365
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 37,
+      "outgoing_entry": 37,
+      "incoming_entry": 38,
+      "outgoing_order": 17,
+      "incoming_order": 18,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 277981575,
+      "end_sample": 278050936,
+      "overlap_samples": 69361,
+      "overlap_seconds": 1.4450208333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6088108,
+        6157469
+      ],
+      "incoming_corrected_frames": [
+        0,
+        69361
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 38,
+      "outgoing_entry": 38,
+      "incoming_entry": 39,
+      "outgoing_order": 18,
+      "incoming_order": 19,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 285666844,
+      "end_sample": 285729122,
+      "overlap_samples": 62278,
+      "overlap_seconds": 1.2974583333333334,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        7685269,
+        7747547
+      ],
+      "incoming_corrected_frames": [
+        0,
+        62278
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    },
+    {
+      "number": 39,
+      "outgoing_entry": 39,
+      "incoming_entry": 40,
+      "outgoing_order": 19,
+      "incoming_order": 20,
+      "outgoing_cycle": 2,
+      "incoming_cycle": 2,
+      "repeat_boundary_20_to_1": false,
+      "start_sample": 292366193,
+      "end_sample": 292426095,
+      "overlap_samples": 59902,
+      "overlap_seconds": 1.2479583333333333,
+      "grid_phase_residual_samples": 0,
+      "bar_phase_confidence": "unconfirmed; quarter-path phase estimate only",
+      "outgoing_corrected_frames": [
+        6699349,
+        6759251
+      ],
+      "incoming_corrected_frames": [
+        0,
+        59902
+      ],
+      "source0_and_natural_end_retained": true,
+      "caveat": "Whole intros/tails retained. A quiet intro may contain no audible beat during overlap."
+    }
+  ],
+  "samples": 299829124,
+  "duration_seconds": 6246.440083333333,
+  "source_gain_target_lufs": -16,
+  "musical_source_trimmed": false,
+  "listener_approved": false
+}

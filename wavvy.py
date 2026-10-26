@@ -38,6 +38,7 @@ from wavvy_harness.subtitles import SubtitleError, prepare_timed, verify_prepare
 from wavvy_harness.youtube_titles import validate_youtube_title
 from wavvy_harness.premixed_audio import check_premixed_audio, check_premixed_render, premixed_opt_in
 from wavvy_harness.state import _upload_completed
+from wavvy_harness.video_artwork import check_video_artwork
 
 
 # =============================================================================
@@ -566,15 +567,12 @@ class ProjectPaths:
         self.report_json = self.output_dir / 'report.json'
 
     def _find_loop_image(self) -> Optional[Path]:
-        """Find loop image (loop.png or loop.jpg) if exists."""
-        for ext in ('png', 'jpg', 'jpeg'):
-            p = self.input_dir / f'loop.{ext}'
-            if p.exists():
-                return p
-        thumb = self.input_dir / 'thumb.jpg'
-        concept_text = read_text_if_exists(self.base / "concept.md")
-        if thumb.exists() and concept_declares_compilation(concept_text):
-            return thumb
+        """Prefer the explicit video scene; never use a thumbnail as a fallback."""
+        for stem in ('video-background', 'loop'):
+            for ext in ('png', 'jpg', 'jpeg'):
+                p = self.input_dir / f'{stem}.{ext}'
+                if p.exists():
+                    return p
         return None
 
     @property
@@ -727,6 +725,11 @@ def validate_project(paths: ProjectPaths) -> ValidationResult:
         result.add_error(f"Missing thumbnail: {paths.thumbnail}")
     else:
         log_success(f"Thumbnail found: {paths.thumbnail.name}")
+
+    if not paths.loop_video.exists() and not _upload_completed(read_text_if_exists(paths.base / "concept.md")):
+        _, artwork_errors = check_video_artwork(paths.base, image_path=paths.loop_image)
+        for error in artwork_errors:
+            result.add_error(error)
 
     missing_metadata = validate_upload_metadata(paths)
     if missing_metadata:
@@ -997,6 +1000,13 @@ def render_video_from_image(
     the audio ends, leaving a long silent video tail despite -shortest.
     Logo overlay is applied directly in the filter graph (no preprocessing).
     """
+    artwork, artwork_errors = check_video_artwork(image_path.parent.parent, image_path=image_path)
+    if artwork_errors or thumbnail_path.resolve() != artwork.get('thumbnail'):
+        for error in artwork_errors or ["Video artwork: renderer thumbnail differs from declared YouTube thumbnail"]:
+            log_error(error)
+        return False
+    # The inspected 4K scene already contains the Wavvy logo.
+    logo_path = None
     audio_info = get_audio_info(audio_path)
     audio_duration = audio_info.get('duration', 0)
     log_info(f"Rendering video from image with audio duration: {audio_duration:.1f}s")
@@ -2192,6 +2202,9 @@ def verify_release_package(paths: ProjectPaths) -> list[str]:
         return errors
     errors = []
     report, tracks = load_finalize_report(paths)
+    if not paths.loop_video.exists() and not _upload_completed(read_text_if_exists(paths.base / "concept.md")):
+        _, artwork_errors = check_video_artwork(paths.base, image_path=paths.loop_image, report=report)
+        errors.extend(artwork_errors)
     manifest_path = paths.base / "input" / "download-manifest.json"
     if not manifest_path.exists():
         errors.append("Missing input/download-manifest.json")
@@ -2820,6 +2833,10 @@ def preview(path: Path, sec: int, fade: float):
     paths = ProjectPaths(path)
 
     # Validate first
+    if not paths.loop_video.exists():
+        _, artwork_errors = check_video_artwork(paths.base, image_path=paths.loop_image)
+        if artwork_errors:
+            raise click.ClickException("; ".join(artwork_errors))
     log_info("Running validation...")
     result = validate_project(paths)
 
@@ -3029,6 +3046,11 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
     paths = ProjectPaths(path)
 
     # Detect image mode
+    artwork = None
+    if not paths.loop_video.exists():
+        artwork, artwork_errors = check_video_artwork(paths.base, image_path=paths.loop_image)
+        if artwork_errors:
+            raise click.ClickException("; ".join(artwork_errors))
     image_mode = paths.is_image_mode
     if image_mode:
         log_info(f"Image mode detected: {paths.loop_image.name}")
@@ -3071,6 +3093,8 @@ def pack(path: Path, lufs: float, tp: float, fade: float, skip_normalize: bool, 
             raise click.ClickException("; ".join(layout_errors))
     use_xfade = config['video_xfade']
     params = {'lufs': lufs, 'tp': tp, 'fade': fade, 'repeat': repeat, 'use_xfade': use_xfade}
+    if artwork is not None:
+        params['video_artwork'] = artwork['binding']
 
     # Step 0: Pre-flight - prepare video (crop + logo)
     log_info("Step 0/6: Video preparation...")

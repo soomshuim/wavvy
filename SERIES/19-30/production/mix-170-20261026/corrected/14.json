@@ -1,0 +1,49 @@
+{
+  "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+  "order": 14,
+  "song_id": "2b17f025-3754-477a-8e0a-c121ccd8c2d1",
+  "title": "Keep the Window Open",
+  "raw_path": "work/2026-10-26-1930-current20-capture/captures/2b17f025-3754-477a-8e0a-c121ccd8c2d1/attempt-01/raw.wav",
+  "raw_sha256": "5b870c0443987a61d0b519ac0792160f9bf2157965bb48b5a5260cf40c7a7b50",
+  "source_valid_frames": [
+    114034,
+    10900594
+  ],
+  "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/14.json",
+  "source_time_map_sha256": "63fd67d55dc5feb71832147372b0e26c4792f17f65060315055dcc11a3bf048a",
+  "source_duration_seconds": 224.72,
+  "output_path": "work/mix-170-20261026/corrected/14.wav",
+  "output_sha256": "30a2f55150d842915e3d60ac6947623ec3717ca64b82debf1945232294e15ae5",
+  "output_samples": 8228364,
+  "output_duration_seconds": 171.42425,
+  "first_grid_beat_sample": 625194,
+  "grid_beat_count": 417,
+  "source_start_preserved": true,
+  "source_end_preserved": true,
+  "target_bpm": 170,
+  "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+  "direct_listening": false,
+  "producer": {
+    "command": [
+      "/opt/homebrew/bin/rubberband",
+      "-3",
+      "-p",
+      "0",
+      "--timemap",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/14/timemap.txt",
+      "-D",
+      "171.42425000000000",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/14.wav",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/14.wav"
+    ],
+    "rubberband_version": "4.0.0",
+    "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+    "timemap_sha256": "5920ff045738b906dee14144ac7c68bae64654115d96660aa7e966326a048269",
+    "elapsed_seconds": 9.229040917009115,
+    "log_path": "work/mix-170-20261026/rubberband/14/rubberband.log",
+    "log_sha256": "4a4d656bbe34f594694a0050dcaeb68cb9c1a58e7223bd4bc50295a05f71d3c4"
+  },
+  "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/14.json",
+  "output_qa_sha256": "f53acbb29b6191cd8e134541bf4e56e6f5d4bd9cefeb83c70c0dd9961d95b216",
+  "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+}

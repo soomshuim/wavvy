@@ -1,0 +1,49 @@
+{
+  "schema": "wavvy.capture_170_rubberband_corrected_source.v1",
+  "order": 15,
+  "song_id": "9f36776c-3bb5-4ee5-948e-21394084290a",
+  "title": "A Sorrow Beyond Dreams",
+  "raw_path": "work/2026-10-26-1930-current20-capture/captures/9f36776c-3bb5-4ee5-948e-21394084290a/attempt-01/raw.wav",
+  "raw_sha256": "ce1f89bfad7f39548ca7bb64b710fa4f4ff084588258bbe205eb75a5613e71b3",
+  "source_valid_frames": [
+    119234,
+    8158274
+  ],
+  "source_time_map_path": "SERIES/19-30/production/mix-170-20261026/rubberband-time-maps/15.json",
+  "source_time_map_sha256": "dd44c4b2def588840c3ff73de938385c67c5c18df52cae19e6c7129ce9a1c930",
+  "source_duration_seconds": 167.48,
+  "output_path": "work/mix-170-20261026/corrected/15.wav",
+  "output_sha256": "1c2b11509aac34ad45ecd5045da392fe5a941daeb6fa0f84c1564cb0100f680a",
+  "output_samples": 6128241,
+  "output_duration_seconds": 127.6716875,
+  "first_grid_beat_sample": 480014,
+  "grid_beat_count": 295,
+  "source_start_preserved": true,
+  "source_end_preserved": true,
+  "target_bpm": 170,
+  "pitch_processing": "Rubber Band R3 offline, pitch0, variable sample-frame time map",
+  "direct_listening": false,
+  "producer": {
+    "command": [
+      "/opt/homebrew/bin/rubberband",
+      "-3",
+      "-p",
+      "0",
+      "--timemap",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/rubberband/15/timemap.txt",
+      "-D",
+      "127.67168750000000",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/source/15.wav",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/corrected/15.wav"
+    ],
+    "rubberband_version": "4.0.0",
+    "binary_sha256": "7243538b05dec8f2a5392743fe82d11e4e210ff46535ac46d1af28e1bcbd3713",
+    "timemap_sha256": "3e58fc60c5a8052df5abfcb09a0925d431a5025ac24a78d4d7dae1185bd4944e",
+    "elapsed_seconds": 6.90529249998508,
+    "log_path": "work/mix-170-20261026/rubberband/15/rubberband.log",
+    "log_sha256": "338c4fcea7bebf6b3c67624cc9539d1d530142f65b0e917e066c54c17bffa18d"
+  },
+  "output_qa_path": "SERIES/19-30/production/mix-170-20261026/rubberband-qa/15.json",
+  "output_qa_sha256": "51a0ac010fdb2237a9885fc8b9f8aaf111447c903bad9b0d0d4c1494efff5e4d",
+  "producer_script_sha256": "34106b3969647d3705ebf96b44d69e45181b5b14ce586edcaff447778a12a812"
+}

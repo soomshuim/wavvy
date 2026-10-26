@@ -8,6 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from click.testing import CliRunner
+from tests.artwork_fixture import make_artwork
 
 from wavvy import FinalizeUploadError, ProjectPaths, TrackInfo, TrackSource, build_final_track_sources_section, build_untimed_subtitles, cli, compute_track_timestamps, generate_report, parse_track_source, read_filesystem_track_sources, replace_final_track_sources_section, resolve_playback_source_bindings, validate_project, verify_final_selection_source_provenance, verify_release_package
 from wavvy_harness.doctor import run_ssot_hygiene
@@ -187,6 +188,7 @@ class PackagingContractTests(unittest.TestCase):
             "tempo": {"text": "180 BPM", "font": "HelveticaNeue-CondensedBlack", "font_size": 148, "x": 59 + text_offset_x, "y": tempo_y},
         }
         (input_dir / "thumbnail-layout.json").write_text(json.dumps(layout), encoding="utf-8")
+        make_artwork(series)
         return series
 
     def test_pack_rejects_repeat_one_before_render(self):
@@ -1226,7 +1228,7 @@ Self-Gate
             root = Path(tmp)
             series = root / "SERIES" / "RNB-BEST"
             (series / "input").mkdir(parents=True)
-            (series / "input" / "thumb.jpg").write_bytes(b"thumb")
+            make_artwork(series)
             (series / "concept.md").write_text(CONCEPT_COMPILATION, encoding="utf-8")
             source_one = root / "SERIES/01/input/tracks/09__One__Warm__RnB__90.wav"
             source_two = root / "SERIES/02/work/norm_tracks/norm_03__Two__Cool__Soul__100.wav"
@@ -1437,6 +1439,7 @@ Self-Gate
 class ReleaseVerificationTests(unittest.TestCase):
     def make_reordered_release(self, root: Path) -> Path:
         series = make_series(root)
+        make_artwork(series)
         tracks_dir = series / "input" / "tracks"
         source_texts = {
             1: "Track: Old One\nOrder: 1\n\n=== STYLE ===\nold-style-one\n\n=== EXCLUDE ===\nold-exclude-one\n\n=== LYRICS ===\n[Intro] [Instrumental]\n\n[Verse]\n나\n",
@@ -1450,6 +1453,9 @@ class ReleaseVerificationTests(unittest.TestCase):
         report_path = series / "output" / "report.json"
         report = json.loads(report_path.read_text(encoding="utf-8"))
         manifest = {"workspace": "[test]", "tracks": []}
+        report.setdefault("processing_params", {})["video_artwork"] = {
+            "path": "input/video-artwork.json",
+            "sha256": hashlib.sha256((series / "input/video-artwork.json").read_bytes()).hexdigest()}
         slots = []
         candidates = []
         for playback, original, title in ((1, 2, "Renamed Two"), (2, 1, "Renamed One")):
@@ -1602,9 +1608,12 @@ class ReleaseVerificationTests(unittest.TestCase):
 
     def make_release(self, root: Path) -> Path:
         series = make_series(root)
+        make_artwork(series)
         report_path = series / "output" / "report.json"
         report = json.loads(report_path.read_text(encoding="utf-8"))
-        report["processing_params"] = {"fade": 0.8, "repeat": 2}
+        report["processing_params"] = {"fade": 0.8, "repeat": 2, "video_artwork": {
+            "path": "input/video-artwork.json",
+            "sha256": hashlib.sha256((series / "input/video-artwork.json").read_bytes()).hexdigest()}}
         manifest = {"workspace": "[20:00]", "tracks": []}
         candidate_tracks = []
         for track in report["tracks"]:

@@ -1,0 +1,46 @@
+[
+  {
+    "command": [
+      "python3",
+      "-m",
+      "py_compile",
+      "wavvy.py",
+      "wavvy_harness/subtitles.py",
+      "wavvy_harness/upload_copy.py",
+      "wavvy_harness/youtube_titles.py",
+      "wavvy_harness/video_artwork.py",
+      "wavvy_harness/__init__.py",
+      "wavvy_harness/premixed_audio.py",
+      "wavvy_harness/selected_audio.py",
+      "wavvy_harness/packaging.py",
+      "wavvy_harness/gate.py",
+      "wavvy_harness/source.py",
+      "wavvy_harness/doctor.py",
+      "wavvy_harness/state.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "wavvy.py",
+      "doctor",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema\": \"wavvy.doctor.v1\",\n  \"repo\": \"/Users/zenkim_office/Project/wavvy\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    {\n      \"name\": \"click\",\n      \"module\": \"click\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ffmpeg-python\",\n      \"module\": \"ffmpeg\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"pandas\",\n      \"module\": \"pandas\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ffmpeg-normalize\",\n      \"module\": \"ffmpeg_normalize\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"Pillow\",\n      \"module\": \"PIL\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ffmpeg\",\n      \"path\": \"/opt/homebrew/bin/ffmpeg\",\n      \"version\": \"ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ffprobe\",\n      \"path\": \"/opt/homebrew/bin/ffprobe\",\n      \"version\": \"ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"git\",\n      \"path\": \"/usr/bin/git\",\n      \"version\": \"/usr/bin/git\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"peer_review_script\",\n      \"path\": \"/Users/zenkim_office/Project/agent-center/scripts/peer-review/orchestrate.sh\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ffmpeg_full_drawtext\",\n      \"path\": \"/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg\",\n      \"required\": false,\n      \"status\": \"warn\"\n    },\n    {\n      \"name\": \"disk_free\",\n      \"path\": \"/Users/zenkim_office/Project/wavvy\",\n      \"required\": false,\n      \"status\": \"pass\",\n      \"free_gib\": 536.34\n    },\n    {\n      \"name\": \"workspace_writable\",\n      \"path\": \"/Users/zenkim_office/Project/wavvy/.ai/tmp\",\n      \"required\": true,\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"ssot_docs_present\",\n      \"required\": true,\n      \"status\": \"pass\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"router_targets_consistent\",\n      \"required\": true,\n      \"status\": \"pass\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"entrypoint_stale_patterns_absent\",\n      \"required\": true,\n      \"status\": \"pass\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"state_authoritative_docs_current\",\n      \"path\": \"/Users/zenkim_office/Project/wavvy/.ai/state.json\",\n      \"required\": true,\n      \"status\": \"pass\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"tracked_ds_store_absent\",\n      \"required\": true,\n      \"status\": \"pass\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [\n    {\n      \"name\": \"ffmpeg_full_drawtext\",\n      \"path\": \"/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg\",\n      \"required\": false,\n      \"status\": \"warn\"\n    }\n  ],\n  \"blockers\": []\n}\n",
+    "stderr": ""
+  }
+]

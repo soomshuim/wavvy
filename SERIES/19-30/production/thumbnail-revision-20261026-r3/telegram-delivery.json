@@ -1,0 +1,28 @@
+{
+  "schema": "wavvy.telegram_artwork_delivery.v1",
+  "revision": "r3",
+  "status": "sent_verified",
+  "started_at_utc": "2026-10-26T06:00:26.264776+00:00",
+  "method": "sendDocument",
+  "send_attempts": 1,
+  "automatic_retry": false,
+  "caption": "19:30 최신 썸네일 — Pretendard Thin·Black / 흰색 본체 / 다색 글로우",
+  "source_path": "SERIES/19-30/input/thumb.jpg",
+  "source_sha256": "357cf1812ae79d03f46310f4989dc877998ec668a04df42bd4dd06e652aa0234",
+  "source_bytes": 1820400,
+  "chat_type": "private",
+  "configured_recipient_match": true,
+  "review_record": "SERIES/19-30/production/thumbnail-revision-20261026-r3/isolated-review.md",
+  "completed_at_utc": "2026-10-26T06:00:30.482104+00:00",
+  "message_id": 53713,
+  "document_file_name": "thumb.jpg",
+  "document_file_size": 1820400,
+  "checks": {
+    "message_id_integer": true,
+    "chat_private": true,
+    "configured_recipient_match": true,
+    "file_name_matches": true,
+    "file_size_matches": true,
+    "caption_matches": true
+  }
+}

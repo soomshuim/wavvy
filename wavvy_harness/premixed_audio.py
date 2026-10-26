@@ -13,6 +13,9 @@ from pathlib import Path
 
 import ffmpeg
 
+from .video_artwork import MANIFEST as ARTWORK_MANIFEST, check_video_artwork
+from .integrated_premix import ARCHIVE_SCHEMA as INTEGRATED_SCHEMA, validate_integrated_premix
+
 MANIFEST = "production/final-premixed-audio.json"
 HEADING = "Final Premixed Audio"
 
@@ -180,7 +183,8 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
         _require("## Final Selected Audio Sources" not in concept and "## Final Track Sources" not in concept,
                  "premix cannot also declare an individual-WAV final-source archive")
         archive = _json(series / MANIFEST)
-        _require(archive.get("schema") == "wavvy.final_premixed_audio.v1" and archive.get("vocal_mode") == "instrumental",
+        _require(archive.get("schema") in ("wavvy.final_premixed_audio.v1", INTEGRATED_SCHEMA)
+                 and archive.get("vocal_mode") == "instrumental",
                  "unsupported premix schema/vocal_mode")
         _require(archive.get("raw_prompt_status") == "unverified", "premix retained historical prompts must remain unverified")
         _require(type(archive.get("repeat_count")) is int and archive["repeat_count"] == 2
@@ -188,8 +192,12 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
                  "premix must contain exactly two cycles and zero additional repeats")
         repo = series.parent.parent
         mix = _json(_bound(series, archive["mix_manifest"]))
+        integrated = archive.get("schema") == INTEGRATED_SCHEMA
         corrected = mix.get("schema") == "wavvy.continuous_mix.repeat2.v1"
-        if corrected:
+        if integrated:
+            sources, rate, samples, entries, audio_ref = validate_integrated_premix(
+                series, archive, mix, allow_uploaded_cleanup=allow_uploaded_cleanup)
+        elif corrected:
             sources, rate, samples = _corrected_repeat_evidence(series, archive, mix, allow_uploaded_cleanup=allow_uploaded_cleanup)
             entries = mix["timeline"]["track_entries"]
             audio_ref = {"path": mix["audio_path"], "sha256": mix["audio_sha256"]}
@@ -246,7 +254,8 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
                      "premix production sample count/rate differs")
             audio_ref = mix["listening_copy"]
         duration = samples / rate
-        _require(math.isfinite(duration) and abs(float(mix["timeline"]["expected_seconds"]) - duration) <= 1 / rate,
+        _require(math.isfinite(duration)
+                 and abs(float(mix["duration_seconds"] if integrated else mix["timeline"]["expected_seconds"]) - duration) <= 1 / rate,
                  "premix production duration differs")
         _require(isinstance(entries, list) and len(entries) == 40, "premix timeline must contain 40 entries")
         previous = -1
@@ -258,7 +267,7 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
                      and abs(float(entry["mix_entry_seconds"]) - sample / rate) < 1 / rate,
                      "premix timeline start sample/time differs")
             _require(entry["title"] == sources[order - 1]["title"]
-                     and (corrected or entry.get("source_path") == sources[order - 1]["path"]),
+                     and (integrated or corrected or entry.get("source_path") == sources[order - 1]["path"]),
                      "premix timeline source/title differs")
             previous = sample
         audio = _path(series, archive["audio"]["path"])
@@ -277,14 +286,31 @@ def check_premixed_audio(series: Path, *, allow_uploaded_cleanup: bool = False) 
             _require(allow_uploaded_cleanup and _digest(archive.get("render", {}).get("sha256")),
                      "premix audio missing before recorded upload completion")
         image = _bound(series, archive["image"])
-        _require(image == (series / "input/thumb.jpg").resolve(), "premix image must identify current input/thumb.jpg")
-        from PIL import Image
-        with Image.open(image) as opened:
-            _require(opened.width > 0 and opened.height > 0, "premix JPG is invalid")
+        from .state import _upload_completed
+        legacy_uploaded = _upload_completed(concept) and not (series / ARTWORK_MANIFEST).exists()
+        if legacy_uploaded:
+            # Only inspect an already-uploaded legacy render; a pending release
+            # cannot choose the old schema to escape the current artwork rule.
+            record = _json(_bound(series, archive["render"]["record"]))
+            run = record["runs"]["full"]
+            _require(record.get("schema") == "wavvy.series_local_premix_video.v1"
+                     and _path(repo, record["image"]["path"]) == image
+                     and record["image"]["sha256"] == archive["image"]["sha256"]
+                     and run.get("status") == "validated" and run.get("exit_code") == 0
+                     and _digest(archive["render"].get("sha256"))
+                     and run.get("output_sha256") == archive["render"]["sha256"],
+                     "legacy uploaded image requires retained completed render identity")
+            thumbnail = image
+            artwork = None
+        else:
+            artwork, artwork_errors = check_video_artwork(series, image_path=image)
+            _require(not artwork_errors, "; ".join(artwork_errors))
+            thumbnail = artwork["thumbnail"]
         data = {"archive": archive, "mix": mix, "entries": entries, "duration": duration,
-                "audio": audio, "image": image, "render_path": _path(series, archive["render"]["path"])}
+                "audio": audio, "image": image, "thumbnail": thumbnail, "artwork": artwork,
+                "render_path": _path(series, archive["render"]["path"])}
         return True, data, []
-    except (OSError, ValueError, KeyError, TypeError, AttributeError, IndexError, ffmpeg.Error) as error:
+    except (OSError, ValueError, KeyError, TypeError, AttributeError, IndexError, OverflowError, ZeroDivisionError, ffmpeg.Error) as error:
         return True, data, [f"Final Premixed Audio: {error}"]
 
 
@@ -320,6 +346,9 @@ def check_premixed_render(series: Path, data: dict, *, metadata: dict | None = N
         record = _json(_bound(series, render["record"]))
         repo = series.parent.parent
         _require(record.get("schema") == "wavvy.series_local_premix_video.v1", "premix render record schema differs")
+        if data.get("artwork") is not None:
+            _require(record.get("video_artwork") == data["artwork"]["binding"],
+                     "premix render record must bind current video artwork manifest path/hash")
         for key in ("image", "audio"):
             _require(_path(repo, record[key]["path"]) == _path(series, archive[key]["path"])
                      and record[key]["sha256"] == archive[key]["sha256"], f"premix render {key} differs")
@@ -340,10 +369,10 @@ def check_premixed_render(series: Path, data: dict, *, metadata: dict | None = N
         _require(command.count("-i") == 3 and command[command.index("-c:a") + 1] == "copy"
                  and command[command.index("-vf") + 1] == "scale=3840:2160:flags=lanczos,setsar=1"
                  and "-filter_complex" not in command and "-af" not in command and "-stream_loop" not in command,
-                 "premix render command must upscale the JPG and copy its audio once")
+                 "premix render command must use the 4K background and copy its audio once")
         inputs = [command[index + 1] for index, token in enumerate(command) if token == "-i"]
         _require(Path(inputs[0]).resolve() == data["image"] and Path(inputs[1]).resolve() == data["audio"],
-                 "premix render command inputs differ from declared JPG/audio")
+                 "premix render command inputs differ from declared background/audio")
         if video.is_file():
             _bound(series, render)
             probe = ffmpeg.probe(str(video), show_chapters=None)
@@ -386,7 +415,8 @@ def check_premixed_render(series: Path, data: dict, *, metadata: dict | None = N
             _require(bool(rows[0].get("video_path")) and video in resolved, "premix CSV video_path differs from declared render")
             thumbnail = Path(rows[0].get("thumbnail_path", ""))
             thumb_paths = [thumbnail.resolve()] if thumbnail.is_absolute() else [(_parent / thumbnail).resolve() for _parent in (series, series / "output", repo)]
-            _require(bool(rows[0].get("thumbnail_path")) and data["image"] in thumb_paths, "premix CSV thumbnail_path differs from approved JPG")
+            _require(bool(rows[0].get("thumbnail_path")) and data["thumbnail"] in thumb_paths,
+                     "premix CSV thumbnail_path differs from the separate YouTube thumbnail")
             if metadata is not None:
                 _require(all(metadata.get(key) and rows[0].get(key) == metadata[key] for key in ("title", "description", "tags")),
                          "premix YouTube title/description/tags differ between concept.md and upload.csv")

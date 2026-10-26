@@ -1,0 +1,22 @@
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=ee623e57-912e-4645-aa02-b1775f6930b2]
+- dialog "Publish Song":
+  - heading "Publish Song" [level=2]
+  - textbox "Glass Horizon" [ref=e522] [focused]
+  - button "Close" [ref=e523]
+  - image "Glass Horizon"
+  - button "Upload" [ref=e524]
+  - button "Create" [ref=e525]
+  - button "Animate" [ref=e526]
+  - text: "Allow comments"
+  - switch [ref=e527] [checked]
+  - text: "Allow remix"
+  - switch [ref=e528] [checked]
+  - text: "Pin song to profile"
+  - switch [ref=e529]
+  - button "Edit caption, lyrics and styles" [ref=e530]
+  - button "Save" [ref=e531] [disabled]
+  - button "Publish" [ref=e532]
+- iframe:
+  - iframe [ref=f1e1]
+- iframe:
+  - iframe [ref=f2e1]

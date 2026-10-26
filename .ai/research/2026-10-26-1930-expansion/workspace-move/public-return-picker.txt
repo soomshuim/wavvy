@@ -1,0 +1,108 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "Suno | AI Music" [url=https://suno.com/create?wid=default]
+- link "Suno logo" [ref=e1]
+- button "Collapse sidebar" [ref=e2]
+- link "Home" [ref=e20]
+- link "Explore" [ref=e21]
+- link "Create" [ref=e22]
+- link "Studio" [ref=e23]
+- link "Library" [ref=e24]
+- link "wavvy24 wavvy24" [ref=e25]
+- button "Profile menu button" [ref=e26]
+- link "Earn Credits" [ref=e27]
+- link "Labs" [ref=e28]
+- button "Notifications" [ref=e29]
+- button "More" [ref=e30]
+- link "Upgrade to Premier" [ref=e31]
+- tablist "What to create":
+  - tab "Songs" [ref=e32] [selected]
+  - tab "Speech" [ref=e33]
+  - tab "Sounds" [ref=e34]
+- tablist "Create form mode":
+  - tab "Simple" [ref=e35]
+  - tab "Advanced" [ref=e36] [selected]
+- button "Credits remaining: 1,216" [ref=e37]: "1.2k"
+- button "v6" [ref=e38]
+- generic [ref=e39] [scrollable]:
+  - button "Add audio - Browse, upload, or record audio" [ref=e40]: "Audio"
+  - button "Add Voice" [ref=e41]: "Voice"
+  - button "Add inspiration from a playlist" [ref=e42]: "Inspo"
+  - button "Lyrics" [ref=e43]
+  - button "Undo" [ref=e44] [disabled]
+  - button "Redo" [ref=e45] [disabled]
+  - button "New draft" [ref=e46]
+  - button "Saved lyrics" [ref=e47]
+  - button "Open full screen lyrics editor" [ref=e48]
+  - status
+  - textbox "Lyrics editor" [ref=e49]
+  - text: "Start writing lyrics, or leave this empty for instrumental When text is selected, press Shift+Enter to move to the selection actions.0 of 5000 characters used."
+  - status
+  - button "Help me write lyrics" [ref=e50]
+  - button "Styles" [ref=e51]
+  - button "View saved style prompts" [ref=e52]
+  - textbox "garage rock, driving beat, choral elements, crunk, ethereal pan flute" [ref=e53] [placeholder="garage rock, driving beat, choral elements, crunk, ethereal pan flute"]
+  - generic [ref=e54] [scrollable]:
+    - button "View saved style prompts" [ref=e55]
+    - button "Personalize style prompt to match your taste" [ref=e56]
+    - button "Refresh recommended styles" [ref=e57]
+    - button "Add style: garage rock" [ref=e58]: "garage rock"
+    - button "Add style: driving beat" [ref=e59]: "driving beat"
+    - button "Add style: choral elements" [ref=e60]: "choral elements"
+    - button "Add style: crunk" [ref=e61]: "crunk"
+    - button "Add style: ethereal pan flute" [ref=e62]: "ethereal pan flute"
+    - button "Add style: rock band" [ref=e63]: "rock band"
+    - button "Add style: bass music" [ref=e64]: "bass music"
+    - button "Add style: smooth r&b" [ref=e65]: "smooth r&b"
+    - button "Add style: crowd cheering" [ref=e66]: "crowd cheering"
+    - button "Add style: vinyl crackles" [ref=e67]: "vinyl crackles"
+    - button "Add style: ney flute" [ref=e68]: "ney flute"
+    - button "Add style: p-funk" [ref=e69]: "p-funk"
+    - button "Add style: bittersweet" [ref=e70]: "bittersweet"
+    - button "Add style: drumbeat" [ref=e71]: "drumbeat"
+    - button "Add style: grunge" [ref=e72]: "grunge"
+    - button "Add style: goa trance" [ref=e73]: "goa trance"
+    - button "Add style: hymns" [ref=e74]: "hymns"
+    - button "Add style: soulful ballad" [ref=e75]: "soulful ballad"
+    - button "Add style: progressive electronic" [ref=e76]: "progressive electronic"
+    - button "Add style: waltz" [ref=e77]: "waltz"
+  - button "More Options" [ref=e78]
+  - textbox "Song Title (Optional)" [ref=e79] [placeholder="Song Title (Optional)"]
+  - text: "Save to..."
+  - button "My Workspace" [ref=e80]
+- button "Clear all form inputs" [ref=e81]
+- button "Create song" [ref=e82] [disabled]: "Create"
+- separator
+- textbox "Search workspaces" [ref=e96] [placeholder="Search"]
+- button "View Archived" [ref=e97]: "Archived"
+- generic [ref=e98] [scrollable]:
+  - button "Create new workspace" [ref=e99]
+  - button "My Workspace 1 song · 15h, 32m ago" [ref=e100]
+  - button "[19:30]20 songs · 16m ago" [ref=e101]
+  - button "[06:30]19 songs · 1d, 19h ago" [ref=e102]
+  - button "[18:30]20 songs · 3d, 20h ago" [ref=e103]
+  - button "[07:00]20 songs · 2w, 5d ago" [ref=e104]
+  - button "[17:00]20 songs · 3w, 2d ago" [ref=e105]
+  - button "Cover 1 song · 3w, 4d ago" [ref=e106]
+  - button "Draft 6 songs · 4w, 1d ago" [ref=e107]
+  - button "[20:00]20 songs · 5mo, 3w ago" [ref=e108]
+  - button "[15:00]135 songs · 6mo ago" [ref=e109]
+  - button "[13:00]20 songs · 6mo, 1w ago" [ref=e110]
+  - button "[22:00]20 songs · 6mo, 3w ago" [ref=e111]
+  - button "[12:00]20 songs · 7mo ago" [ref=e112]
+  - button "[11:00]15 songs · 7mo, 2w ago" [ref=e113]
+  - button "[10:00]15 songs · 7mo, 3w ago" [ref=e114]
+  - button "Sample 0 songs · 7mo, 3w ago" [ref=e115]
+  - button "[06:00]10 songs · 8mo, 1w ago" [ref=e116]
+  - button "[21:00]10 songs · 8mo, 1w ago" [ref=e117]
+  - button "Persona 2 songs · 8mo, 1w ago" [ref=e118]
+  - button "[16:00]15 songs · 8mo, 3w ago" [ref=e119]
+- button "Playbar: Toggle shuffle button" [ref=e14]
+- button "Playbar: Previous Song button" [ref=e15] [disabled]
+- button "Playbar: Play button" [ref=e16] [disabled]
+- button "Playbar: Next Song button" [ref=e17] [disabled]
+- button "Playbar: Toggle repeat button" [ref=e18]
+- textbox "Playback progress" [ref=e19] [disabled]: "0"
+- button "Playbar: Mute" [ref=e92]
+- region "Bottom notifications" [ref=e93]
+- region "Top notifications" [ref=e94]
+- region "Bottom edge notifications" [ref=e95]

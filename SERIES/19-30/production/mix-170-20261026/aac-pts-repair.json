@@ -1,0 +1,157 @@
+{
+  "schema": "wavvy.metadata_only_aac_pts_repair.v1",
+  "passed": true,
+  "original_path": "work/mix-170-20261026/continuous-mix-1930-repeat2-pre-pts-fix.m4a",
+  "original_sha256": "f8a435b53251eebab3b218dcf91879b4d573b7d952e1ef1a9c0b74c76a30f01d",
+  "final_path": "SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+  "final_sha256": "94762094a5156052e9a4207187eca75d15f056ff91d0e8cad955f659b4e77f18",
+  "remux_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-nostdin",
+    "-n",
+    "-i",
+    "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/continuous-mix-1930-repeat2-pre-pts-fix.m4a",
+    "-map",
+    "0:a:0",
+    "-c:a",
+    "copy",
+    "-bsf:a",
+    "setts=pts=(N-1)*1024:dts=(N-1)*1024:duration=min(DURATION\\,1024):time_base=1/48000",
+    "-movflags",
+    "+faststart",
+    "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a"
+  ],
+  "codec": "copy; zero new AAC encodes",
+  "packet_count": 292803,
+  "packet_payload_hash_lists_identical": true,
+  "ordered_packet_payload_digest": "bb7a2414c57b07364d522ff0c82ad75599fc63f3011de789161f51898e90c788",
+  "original_first_packet": {
+    "pts": -1024,
+    "dts": -1024,
+    "duration": 1024,
+    "data_hash": "SHA256:95ab8054de8686d5b72abee55a63fce7246e7767fcae02d358c5c9ac48068409",
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "final_first_packet": {
+    "pts": -1024,
+    "dts": -1024,
+    "duration": 1024,
+    "data_hash": "SHA256:95ab8054de8686d5b72abee55a63fce7246e7767fcae02d358c5c9ac48068409",
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "original_last_packet": {
+    "pts": 299831100,
+    "dts": 299831100,
+    "duration": 900,
+    "data_hash": "SHA256:ab8e11e260cbc55f5da9adadbd0ea3ef5faf3a54aa0ec9ad6ebe25f5b38a83d1"
+  },
+  "final_last_packet": {
+    "pts": 299828224,
+    "dts": 299828224,
+    "duration": 900,
+    "data_hash": "SHA256:ab8e11e260cbc55f5da9adadbd0ea3ef5faf3a54aa0ec9ad6ebe25f5b38a83d1"
+  },
+  "final_pts_gaps_samples": [],
+  "final_stream_end_sample": 299829124,
+  "full_decoded_pcm_original": {
+    "sha256": "c3321e8f20b4dcdd658b5b46f187269393b3d15ed7fb64672b68abd41cd93afc",
+    "bytes": 2398633984,
+    "frames": 299829248,
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/continuous-mix-1930-repeat2-pre-pts-fix.m4a",
+      "-map",
+      "0:a:0",
+      "-ar",
+      "48000",
+      "-ac",
+      "2",
+      "-c:a",
+      "pcm_f32le",
+      "-f",
+      "f32le",
+      "-"
+    ]
+  },
+  "full_decoded_pcm_final": {
+    "sha256": "c3321e8f20b4dcdd658b5b46f187269393b3d15ed7fb64672b68abd41cd93afc",
+    "bytes": 2398633984,
+    "frames": 299829248,
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+      "-map",
+      "0:a:0",
+      "-ar",
+      "48000",
+      "-ac",
+      "2",
+      "-c:a",
+      "pcm_f32le",
+      "-f",
+      "f32le",
+      "-"
+    ]
+  },
+  "decoded_pcm_identical": true,
+  "packet_probe_commands": [
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "a:0",
+      "-show_packets",
+      "-show_data_hash",
+      "sha256",
+      "-show_entries",
+      "packet=pts,dts,duration,data_hash,side_data_list",
+      "-of",
+      "json",
+      "/Users/zenkim_office/Project/wavvy/work/mix-170-20261026/continuous-mix-1930-repeat2-pre-pts-fix.m4a"
+    ],
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "a:0",
+      "-show_packets",
+      "-show_data_hash",
+      "sha256",
+      "-show_entries",
+      "packet=pts,dts,duration,data_hash,side_data_list",
+      "-of",
+      "json",
+      "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a"
+    ]
+  ],
+  "elapsed_seconds": 15.44781216600677
+}

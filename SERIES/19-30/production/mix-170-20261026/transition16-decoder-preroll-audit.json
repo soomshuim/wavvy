@@ -1,0 +1,116 @@
+{
+  "transition_number": 16,
+  "direct_mono_correlation": 0.9397371793238459,
+  "preroll_comparisons": [
+    {
+      "preroll_seconds": 1,
+      "frames": 48000,
+      "mono_correlation": 0.9998963251106185,
+      "stereo_correlation": 0.9998391547678904,
+      "maximum_change_from_direct_seek": 0.5575547218322754,
+      "command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-ss",
+        "2541.188770833333",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+        "-af",
+        "atrim=start_sample=48000:end_sample=96000",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-f",
+        "f32le",
+        "-"
+      ]
+    },
+    {
+      "preroll_seconds": 2,
+      "frames": 48000,
+      "mono_correlation": 0.9998963251106185,
+      "stereo_correlation": 0.9998391547678904,
+      "maximum_change_from_direct_seek": 0.5575547218322754,
+      "command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-ss",
+        "2540.188770833333",
+        "-i",
+        "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+        "-af",
+        "atrim=start_sample=96000:end_sample=144000",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-f",
+        "f32le",
+        "-"
+      ]
+    }
+  ],
+  "direct_seek_fft_bands": {
+    "0_20": {
+      "waveform_spectral_cosine": -0.581882948255214,
+      "wav_fraction_of_fft_power": 0.00465457018586157,
+      "difference_fraction_of_fft_power": 0.1649857077462462
+    },
+    "20_40": {
+      "waveform_spectral_cosine": 0.927497213828085,
+      "wav_fraction_of_fft_power": 0.12039264654547761,
+      "difference_fraction_of_fft_power": 0.1761773750340745
+    },
+    "40_250": {
+      "waveform_spectral_cosine": 0.9422650439077527,
+      "wav_fraction_of_fft_power": 0.5183718669390074,
+      "difference_fraction_of_fft_power": 0.5980589839812541
+    },
+    "250_3000": {
+      "waveform_spectral_cosine": 0.9934792610977745,
+      "wav_fraction_of_fft_power": 0.3450301515485384,
+      "difference_fraction_of_fft_power": 0.04574667816112204
+    },
+    "3000_16000": {
+      "waveform_spectral_cosine": 0.9361559512104228,
+      "wav_fraction_of_fft_power": 0.00821966519374468,
+      "difference_fraction_of_fft_power": 0.010367375248335961
+    },
+    "16000_24001": {
+      "waveform_spectral_cosine": 0.9288959145296919,
+      "wav_fraction_of_fft_power": 0.0033310995873704506,
+      "difference_fraction_of_fft_power": 0.004663879828967256
+    }
+  },
+  "interpretation": "Raw audit; no gate or audio change.",
+  "full_sequential_decode_check": {
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Users/zenkim_office/Project/wavvy/SERIES/19-30/output/mix-170-20261026/continuous-mix-1930-repeat2.m4a",
+      "-ss",
+      "2542.188770833333",
+      "-t",
+      "1",
+      "-ar",
+      "48000",
+      "-ac",
+      "2",
+      "-f",
+      "f32le",
+      "-"
+    ],
+    "frames": 48000,
+    "sequential_float_pcm_sha256": "64792590fd8ab63c79bcd07ee3cd56db04df04904ebb41d76a2cb6ebbeebddf4",
+    "two_second_preroll_float_pcm_sha256": "64792590fd8ab63c79bcd07ee3cd56db04df04904ebb41d76a2cb6ebbeebddf4",
+    "sample_values_identical": true
+  }
+}
