@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-27 14:09:00 KST
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: Google 인증부터 가입·자료 준비·업로드·발매/아티스트 권한 신청까지 에이전트가 Aside MCP·REPL로 직접 수행하도록 기존 .ai/plans/PLAN_music-distribution.md §4를 수정했다. 연결 프로필·탭 목록과 Google 로그인 계정 조회는 실측했다. 현재는 계획 수정만 했으며 신규 서비스 인증·가입·문의·결제·계약·다운로드·발매 실행은 하지 않았다.
+Next-TODO: 실행 시작 지시 후 기존 계정과 Wavvy 채널 소유 관계·곡별 공식 다운로드/권리부터 확인한다. Google 계정 선택·필요 동의·자동 완성은 에이전트가 처리한다. 젠에게는 불명확한 계정 선택, 곡·비용·계약 결정과 직접 필요한 인증만 요청하고 완료 후 같은 단계에서 이어 간다. 기존 Wavvy 이름 결정·유통사 비교·YouTube 게시 상태를 바꾸지 않는다. 검토 결과는 .ai/reviews/2026-10-27-music-distribution-automation-plan-review.md를 따른다.
+Commits: 이번 계획 수정 커밋
+---
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-27 12:18:36
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
