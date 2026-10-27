@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- **음원 유통 리서치·첫 발매 계획** (2026-10-27) — [계획](.ai/plans/PLAN_music-distribution.md)에 Apple Music·멜론·YouTube Music 전달과 아티스트 관리 권한 신청 순서, 유통사 비교·계약·예산·권리·공식 다운로드 조건을 정리했다. Wavvy 이름 유지 결정만 확정했고 계정·문의·결제·계약·발매 실행은 전이다. 기존 YouTube 게시·미디어 상태는 변경하지 않았다.
+
 - **07:00·17:30 업로드 후 파일 정리 완료** (2026-10-24) — 젠의 즉시 정리 지시로 07:00 199개·17:30 9,319개, 합계 9,518개·7,324,747,169바이트(파일 크기 합계)를 삭제했다. 완성 영상·음원·미리듣기·임시 자막 환경과 과정 문서는 정리하고, 최종 썸네일 원본/PSD/JPG·가사/스타일·17:30 리믹스 이전 스타일·최종 출처/제작/게시 기록·게시 자막을 남겼다. 삭제 대상 부재·보존 자료 지문 불변, 독립 Astra/high CLEAN을 확인했다. 07:00은 writer revision97 uploaded·gate PASS, 좁은 미디어 삭제 후 판정 경로를 보완한 112개 검사 PASS다. 17:30 자막 준비/게시 근거는 삭제 뒤 PASS이며 기존 원본 음원 부재의 일반 gate 실패는 전후 동일하다. [최종 정리 기록](.ai/cleanup/2026-10-24-post-upload-cleanup-closeout.json)을 남겼다.
 
 - **07:00 180 BPM 연속 믹스 영상 재제작·즉시 공개** (2026-10-24) — 사용자 최종 JPG와 완성된 20곡×2회 AAC로 1:52:03·4K MP4를 제작하고 Wavvy24 영상 `7iVqqukk5WA`를 공개했다. 기존 승인 제목·본문·태그·댓글을 유지하고 본문의 40개 챕터 시각만 새 믹스에 맞췄다. 댓글 한 개 게시·고정·재조회와 추가 요청한 좋아요 1개, SD·HD·4K 완료 및 짧은 실제 재생을 확인했다. 저작권 자동 검토는 마지막 관측에 진행 중이다. 실제 07:00 producer 기록과 역사 개별 WAV 원장의 충돌을 좁게 지원·수정했고 109개 검사 및 독립 Astra/high 검토 CLEAN이다. [실제 게시 원시·결과](SERIES/07-00/production/youtube-upload-20261024.json)와 [검토](.ai/reviews/2026-10-24-0700-video-release-review.md)를 보존했다. 게시 직후 공식 state revision96 `uploaded`였으며, 이후 위의 정리에서 최종 미디어를 삭제하고 최종 원본·결과 기록을 남겼다.

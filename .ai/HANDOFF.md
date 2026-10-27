@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-27 12:12:27
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: Apple Music·멜론·YouTube Music 유통 리서치와 Draft 계획을 .ai/plans/PLAN_music-distribution.md에 작성했다. 젠은 Wavvy 이름 유지를 확정했다. 계정 개설·문의 발송·결제·계약·공식 다운로드·발매 제출은 아직 하지 않았다.
+Next-TODO: 리서치·플랜과 독립 Sol 6.1 high CLEAN 검토를 완료했으며 젠의 실행 시작 지시를 기다린다. 실제 실행은 곡별 유료 생성·공식 다운로드·사용 권한 확인부터 시작한다. KGMUSIC·Too Lost의 AI 곡 멜론 접수와 개별 계약·정산·Content ID 제외를 확인한 뒤 유통사·첫 곡·비용을 확정한다. 기존 YouTube 게시 상태는 바꾸지 않는다.
+Commits: (이번 커밋)
+---
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-26 19:35:39
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
