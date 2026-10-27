@@ -1,5 +1,15 @@
 ---
 HANDOFF: Codex -> 젠 또는 다음 Codex
+Date: 2026-10-27 14:11:06
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Codex
+Summary: Google 인증·가입·자료 입력·업로드·발매/아티스트 권한 신청을 Aside MCP·REPL로 에이전트가 직접 수행하도록 유통 계획 §4를 수정했다. 연결·Google 계정 조회를 실측했고 독립 Sol 6.1 high 검토 CLEAN, 작업 e020815 원격 반영을 완료했다. 이번 -record는 로컬/전역 세션·인계 이중 기록이다.
+Next-TODO: 계획 수정은 완료했으며 실행 시작 지시를 기다린다. 실행 시 Wavvy 계정 소유 관계·Suno 곡별 공식 다운로드/권리부터 확인한다. 젠에게는 곡·비용·계약 결정과 직접 필요한 인증만 요청한다. 신규 서비스 인증·가입·문의·다운로드·결제·계약·발매 제출은 아직 하지 않았다.
+Commits: 작업 e020815; 정식 세션 기록은 이번 커밋
+---
+
+---
+HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-27 14:09:00 KST
 Project: /Users/zenkim_office/Project/wavvy
 Agent: Codex
