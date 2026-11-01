@@ -1,0 +1,63 @@
+{
+ "track": 15,
+ "title": "노을",
+ "type": "물결",
+ "result": "PASS",
+ "checks": [
+  {
+   "name": "C1_txt_style_sha256_equals_json",
+   "status": "PASS",
+   "detail": "txt=3926d154576a0f1e7fda2f68bf30f2f6ef3157ef03184bb4dc14cf2afad0262f json=3926d154576a0f1e7fda2f68bf30f2f6ef3157ef03184bb4dc14cf2afad0262f chars=636"
+  },
+  {
+   "name": "C1b_txt_style_equals_concept_original_styles_block",
+   "status": "PASS",
+   "detail": "concept block sha256=3926d154576a0f1e7fda2f68bf30f2f6ef3157ef03184bb4dc14cf2afad0262f"
+  },
+  {
+   "name": "C2_txt_exclude_items_equal_json",
+   "status": "PASS",
+   "detail": "txt=['Falsetto', 'Airy', 'Whisper', 'Breathiness', 'Growl', 'Vibrato', 'Opera', 'Dramatic', 'Harmonized', 'Backing vocals', 'Choir', 'Intense', 'Mumbled'] json=['Falsetto', 'Airy', 'Whisper', 'Breathiness', 'Growl', 'Vibrato', 'Opera', 'Dramatic', 'Harmonized', 'Backing vocals', 'Choir', 'Intense', 'Mumbled']"
+  },
+  {
+   "name": "C2b_txt_exclude_equals_concept_exclude_line",
+   "status": "PASS",
+   "detail": "concept=['Falsetto, Airy, Whisper, Breathiness, Growl, Vibrato, Opera, Dramatic, Harmonized, Backing vocals, Choir, Intense, Mumbled']"
+  },
+  {
+   "name": "C3_txt_lyrics_equal_record_draft",
+   "status": "PASS",
+   "detail": "draft_sha256=2c5dcc36cbf2822bd0234b4ea69bb0d39597bbb1f0a22aa038cf0d60bb097877"
+  },
+  {
+   "name": "C4_txt_headers",
+   "status": "PASS",
+   "detail": "mismatch={}; Exclude Source present=False; Suno Params={\"weirdness\": 20, \"style_influence\": 80, \"source\": \"SERIES/14-00/concept.md:673-677\"}"
+  },
+  {
+   "name": "C5_header_bars_and_target_match_record",
+   "status": "PASS",
+   "detail": "bars=42; record_bpm=74; txt_bpm=74; estimate=136.2; target=133; header_target='around 2:13 (planning target = the type original's displayed length, not measured audio)'"
+  },
+  {
+   "name": "C6_draft_differs_from_previous_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "changed_rows=1; rows=[('해 지는 쪽부터 주황빛', '서쪽 하늘이 물들어 가')]"
+  },
+  {
+   "name": "C6b_txt_lyrics_differ_from_previous_txt_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "previous txt rows=42"
+  },
+  {
+   "name": "C7_preserved_copies_intact",
+   "status": "PASS",
+   "detail": "SERIES/23-00/input/source-history/2026-11-02-before-original-style/15_노을.txt; SERIES/23-00/input/source-history/2026-11-02-before-original-style/lyrics-records/2026-11-01_23-00_15_노을-full-draft.md"
+  },
+  {
+   "name": "C8_record_source_sha256_equals_current_draft",
+   "status": "PASS",
+   "detail": "claimed=['2c5dcc36cbf2822bd0234b4ea69bb0d39597bbb1f0a22aa038cf0d60bb097877'] actual=2c5dcc36cbf2822bd0234b4ea69bb0d39597bbb1f0a22aa038cf0d60bb097877"
+  }
+ ]
+}

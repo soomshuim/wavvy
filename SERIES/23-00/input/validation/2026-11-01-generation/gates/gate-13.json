@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/23-00",
+  "artifact": "SERIES/23-00/input/tracks/13_편지.txt",
+  "source_sha256": "749b541926abede1f6ad600277eb593fcc97e4ab2195d90744365456bfce759b",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/23-00/input/tracks/13_편지.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/23-00/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "716/900 Unicode characters including internal whitespace"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "0/8 terms"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=72 (type STYLE with appended value; proposed, audio not measured); STYLE=[72]"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=Db Major (type STYLE with appended value; proposed, audio not measured); STYLE=['DB major']"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=male solo lead, warm baritone in a dry conversational chest voice (type STYLE wording; audio not measured); STYLE=['male']"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/23-00/input/tracks/13_편지.txt"
+  ]
+}

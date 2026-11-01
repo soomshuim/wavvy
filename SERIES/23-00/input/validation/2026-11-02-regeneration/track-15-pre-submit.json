@@ -1,0 +1,202 @@
+{
+ "order": 15,
+ "dry": false,
+ "title": "노을",
+ "source_txt": "input/tracks/15_노을.txt",
+ "source_sha256": "fc59ed4bb5d323fc998930e6ae4d4cfb3fc1f74dc11c989f3a907f5e0293d921",
+ "suno_params_header": {
+  "weirdness": 20,
+  "style_influence": 80,
+  "source": "SERIES/14-00/concept.md:673-677"
+ },
+ "startedAt": "2026-11-01T16:09:15.695Z",
+ "checkedAt": "2026-11-01T16:09:21.303Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 1226,
+  "lyricsLenSrc": 1226
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 0,
+  "form": 0
+ },
+ "styleLen": {
+  "source": 636,
+  "form": 636
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 20,
+   "passes": 1
+  },
+  {
+   "label": "Style Influence",
+   "value": 80,
+   "passes": 1
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 596",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Korean Indie R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal",
+  "exclude": "Falsetto, Airy, Whisper, Breathiness, Growl, Vibrato, Opera, Dramatic, Harmonized, Backing vocals, Choir, Intense, Mumbled",
+  "title": "노을",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "20",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "80",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony, Speech-like]\n옥상에 올라서\n캔커피 하나씩 뽑아서\n말없이 기대어\n서쪽 하늘이 물들어 가\n\n[bridge1]\n[Chest voice, Intimate]\n캔 따는 소리 뒤에\n하얀 김 한 줄기\n우리 둘뿐이야\n\n[chorus]\n[High register chest voice, Straight tone]\n하늘이 익어가\n손바닥 데워져\n한 모금만 더\n노을이 질 때까지\n\n[verse2]\n[Groove locks in, Vocal forward]\n빛깔이 바뀌네\n주황에서 분홍으로\n보라로 넘어가\n네 뺨에도 노을이 앉아\n\n[bridge2]\n[Chest voice, Intimate]\n빈 캔을 쥐어도\n아직도 따뜻해\n우리 둘뿐이야\n\n[chorus] [Chest voice]\n하늘이 익어가\n손바닥 데워져\n한 모금만 더\n노을이 질 때까지\n\n[chorus] [Chest voice]\n하늘이 익어가\n손바닥 데워져\n한 모금만 더\n노을이 질 때까지\n\n[outro]\n[instrumental]\n\n=== META ===\nTrack 15 of the 23:00 series (temporary number). The STYLE is the user-supplied original 물결 style with the `Lo-fi Remix, ` prefix and the one other edit recorded in SERIES/23-00/concept.md ## Original Styles (the genre word `Alt` removed from `Indie Alt R&B`), declared by `Style Type: 물결` and `Style Source: user-supplied original style`. EXCLUDE holds the 13 original 물결 items in concept.md order. The lyric is original wording on the 물결 original's lyric frame (row count, tag lines, per-row syllable counts and repeat positions kept; every word new). No generated audio exists in this repository for duration, tempo, key, vocal, or arrangement verification."
+ },
+ "knownIdsCount": 19
+}

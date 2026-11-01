@@ -1,0 +1,179 @@
+== A. concept (a)/(b) blocks: claimed chars/sha256 == measured ==
+PASS 먼지 (a) claimed 694자 51b2076990d8 == measured 694자 51b2076990d8
+PASS 먼지 (b) claimed 694자 51b2076990d8 == measured 694자 51b2076990d8
+PASS 산책 (a) claimed 659자 9d4ea3c73134 == measured 659자 9d4ea3c73134
+PASS 산책 (b) claimed 659자 9d4ea3c73134 == measured 659자 9d4ea3c73134
+PASS 숨 (a) claimed 609자 5edc24b26787 == measured 609자 5edc24b26787
+PASS 숨 (b) claimed 609자 5edc24b26787 == measured 609자 5edc24b26787
+PASS 이름 (a) claimed 505자 e997aca91688 == measured 505자 e997aca91688
+PASS 이름 (b) claimed 505자 e997aca91688 == measured 505자 e997aca91688
+PASS 마음 밖 (a) claimed 539자 5273a4afb7c3 == measured 539자 5273a4afb7c3
+PASS 마음 밖 (b) claimed 539자 5273a4afb7c3 == measured 539자 5273a4afb7c3
+PASS 물안개 (a) claimed 374자 76ce8dc13459 == measured 374자 76ce8dc13459
+PASS 물안개 (b) claimed 374자 76ce8dc13459 == measured 374자 76ce8dc13459
+PASS 골목 (a) claimed 562자 694b092d5f2c == measured 562자 694b092d5f2c
+PASS 골목 (b) claimed 498자 92201adc347d == measured 498자 92201adc347d
+PASS 물결 (a) claimed 677자 dbdb3ee1f7ce == measured 677자 dbdb3ee1f7ce
+PASS 물결 (b) claimed 677자 dbdb3ee1f7ce == measured 677자 dbdb3ee1f7ce
+PASS 작은 빛 (a) claimed 681자 ae59fe9fbec0 == measured 681자 ae59fe9fbec0
+PASS 작은 빛 (b) claimed 681자 ae59fe9fbec0 == measured 681자 ae59fe9fbec0
+
+== B. which types still have an edit (b) != (a) ==
+INFO 먼지: (b) == (a)
+INFO 산책: (b) == (a)
+INFO 숨: (b) == (a)
+INFO 이름: (b) == (a)
+INFO 마음 밖: (b) == (a)
+INFO 물안개: (b) == (a)
+INFO 골목: (b) != (a) (edit recorded)
+INFO 물결: (b) == (a)
+INFO 작은 빛: (b) == (a)
+PASS 산책 (b) == (a) (earlier removal cancelled)
+PASS 마음 밖 (b) == (a) (earlier removal cancelled)
+PASS 산책 (b) keeps leading `Lo-Fi Remix, `
+PASS 마음 밖 (b) keeps `lo-fi remix,`
+
+== C. re-assemble 11 songs from the (b) blocks and compare with the plan json ==
+PASS [10 귤 / 숨] assembled STYLE == json style
+PASS [10] chars assembled 639 == json 639
+PASS [10] sha256 assembled 93827f09289b7741 == json 93827f09289b7741
+PASS [10] prefix flag json=True derived=True
+PASS [10] appended items json=['68 BPM', 'D Major'] derived=['68 BPM', 'D Major']
+PASS [10] BPM inside (b) agrees with json bpm 68
+PASS [10] key inside (b) agrees with json key D Major
+PASS [10] gender word inside (b) agrees with json gender female
+PASS [10] concept `### 숨` 덧붙일 항목 kinds ['bpm', 'key'] == derived ['bpm', 'key']
+PASS [11 라디오 / 먼지] assembled STYLE == json style
+PASS [11] chars assembled 724 == json 724
+PASS [11] sha256 assembled 7aba864bcebbe073 == json 7aba864bcebbe073
+PASS [11] prefix flag json=True derived=True
+PASS [11] appended items json=['70 BPM', 'F Major'] derived=['70 BPM', 'F Major']
+PASS [11] BPM inside (b) agrees with json bpm 70
+PASS [11] key inside (b) agrees with json key F Major
+PASS [11] gender word inside (b) agrees with json gender male
+PASS [11] concept `### 먼지` 덧붙일 항목 kinds ['bpm', 'key'] == derived ['bpm', 'key']
+PASS [12 스웨터 / 마음 밖] assembled STYLE == json style
+PASS [12] chars assembled 557 == json 557
+PASS [12] sha256 assembled 16644e527b4fb75d == json 16644e527b4fb75d
+PASS [12] prefix flag json=False derived=False
+PASS [12] appended items json=['72 BPM', 'Ab Major'] derived=['72 BPM', 'Ab Major']
+PASS [12] BPM inside (b) agrees with json bpm 72
+PASS [12] key inside (b) agrees with json key Ab Major
+PASS [12] gender word inside (b) agrees with json gender female
+PASS [12] concept `### 마음 밖` 덧붙일 항목 kinds ['bpm', 'key'] == derived ['bpm', 'key']
+PASS [13 편지 / 작은 빛] assembled STYLE == json style
+PASS [13] chars assembled 716 == json 716
+PASS [13] sha256 assembled 0336054893862b32 == json 0336054893862b32
+PASS [13] prefix flag json=True derived=True
+PASS [13] appended items json=['Db Major', 'male vocal'] derived=['Db Major', 'male vocal']
+PASS [13] BPM inside (b) agrees with json bpm 72
+PASS [13] key inside (b) agrees with json key Db Major
+PASS [13] gender word inside (b) agrees with json gender male
+PASS [13] concept `### 작은 빛` 덧붙일 항목 kinds ['key', 'gender'] == derived ['key', 'gender']
+PASS [14 기타 / 산책] assembled STYLE == json style
+PASS [14] chars assembled 659 == json 659
+PASS [14] sha256 assembled 9d4ea3c73134fe61 == json 9d4ea3c73134fe61
+PASS [14] prefix flag json=False derived=False
+PASS [14] appended items json=[] derived=[]
+PASS [14] BPM inside (b) agrees with json bpm 74
+PASS [14] key inside (b) agrees with json key Eb Major
+PASS [14] gender word inside (b) agrees with json gender male
+PASS [14] concept `### 산책` 덧붙일 항목 kinds [] == derived []
+PASS [15 노을 / 물결] assembled STYLE == json style
+PASS [15] chars assembled 690 == json 690
+PASS [15] sha256 assembled 00b0cd745ccf775f == json 00b0cd745ccf775f
+PASS [15] prefix flag json=True derived=True
+PASS [15] appended items json=[] derived=[]
+PASS [15] BPM inside (b) agrees with json bpm 74
+PASS [15] key inside (b) agrees with json key A Major
+PASS [15] gender word inside (b) agrees with json gender male
+PASS [15] concept `### 물결` 덧붙일 항목 kinds [] == derived []
+PASS [16 여름밤 / 물안개] assembled STYLE == json style
+PASS [16] chars assembled 418 == json 418
+PASS [16] sha256 assembled 51bec87b8e1403cb == json 51bec87b8e1403cb
+PASS [16] prefix flag json=True derived=True
+PASS [16] appended items json=['76 BPM', 'G Major', 'female vocal'] derived=['76 BPM', 'G Major', 'female vocal']
+PASS [16] BPM inside (b) agrees with json bpm 76
+PASS [16] key inside (b) agrees with json key G Major
+PASS [16] gender word inside (b) agrees with json gender female
+PASS [16] concept `### 물안개` 덧붙일 항목 kinds ['bpm', 'key', 'gender'] == derived ['bpm', 'key', 'gender']
+PASS [17 막차 / 골목] assembled STYLE == json style
+PASS [17] chars assembled 540 == json 540
+PASS [17] sha256 assembled 6e4bdf3d7ec69129 == json 6e4bdf3d7ec69129
+PASS [17] prefix flag json=True derived=True
+PASS [17] appended items json=['80 BPM', 'E Major', 'male vocal'] derived=['80 BPM', 'E Major', 'male vocal']
+PASS [17] BPM inside (b) agrees with json bpm 80
+PASS [17] key inside (b) agrees with json key E Major
+PASS [17] gender word inside (b) agrees with json gender male
+PASS [17] concept `### 골목` 덧붙일 항목 kinds ['bpm', 'key', 'gender'] == derived ['bpm', 'key', 'gender']
+PASS [18 벚꽃 / 이름] assembled STYLE == json style
+PASS [18] chars assembled 549 == json 549
+PASS [18] sha256 assembled 88b6412102b5ebf7 == json 88b6412102b5ebf7
+PASS [18] prefix flag json=True derived=True
+PASS [18] appended items json=['78 BPM', 'C Major', 'female vocal'] derived=['78 BPM', 'C Major', 'female vocal']
+PASS [18] BPM inside (b) agrees with json bpm 78
+PASS [18] key inside (b) agrees with json key C Major
+PASS [18] gender word inside (b) agrees with json gender female
+PASS [18] concept `### 이름` 덧붙일 항목 kinds ['bpm', 'key', 'gender'] == derived ['bpm', 'key', 'gender']
+PASS [19 그네 / 이름] assembled STYLE == json style
+PASS [19] chars assembled 549 == json 549
+PASS [19] sha256 assembled d4258ede1b52343d == json d4258ede1b52343d
+PASS [19] prefix flag json=True derived=True
+PASS [19] appended items json=['70 BPM', 'E Minor', 'female vocal'] derived=['70 BPM', 'E Minor', 'female vocal']
+PASS [19] BPM inside (b) agrees with json bpm 70
+PASS [19] key inside (b) agrees with json key E Minor
+PASS [19] gender word inside (b) agrees with json gender female
+PASS [19] concept `### 이름` 덧붙일 항목 kinds ['bpm', 'key', 'gender'] == derived ['bpm', 'key', 'gender']
+PASS [20 포근히 / 숨] assembled STYLE == json style
+PASS [20] chars assembled 640 == json 640
+PASS [20] sha256 assembled 28ff0607d225f9a9 == json 28ff0607d225f9a9
+PASS [20] prefix flag json=True derived=True
+PASS [20] appended items json=['66 BPM', 'Bb Major'] derived=['66 BPM', 'Bb Major']
+PASS [20] BPM inside (b) agrees with json bpm 66
+PASS [20] key inside (b) agrees with json key Bb Major
+PASS [20] gender word inside (b) agrees with json gender female
+PASS [20] concept `### 숨` 덧붙일 항목 kinds ['bpm', 'key'] == derived ['bpm', 'key']
+
+RESULT assembled==json (style and sha256): 11/11
+PASS 11/11 songs reproduce json style + sha256
+
+== D. concept `## New Song Style Assembly` table == json ==
+PASS table has rows 10..20 (found [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+PASS [10] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [11] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [12] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [13] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [14] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [15] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [16] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [17] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [18] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [19] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+PASS [20] table row == json (title,type,vocal,bpm,key,prefix,appended,chars,sha256)
+
+== E. concept Track Map rows 10-20 == json ==
+PASS [10] Track Map row present
+PASS [10] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [11] Track Map row present
+PASS [11] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [12] Track Map row present
+PASS [12] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [13] Track Map row present
+PASS [13] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [14] Track Map row present
+PASS [14] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [15] Track Map row present
+PASS [15] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [16] Track Map row present
+PASS [16] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [17] Track Map row present
+PASS [17] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [18] Track Map row present
+PASS [18] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [19] Track Map row present
+PASS [19] Track Map row == json (title, vocal/key/BPM/status, type, path)
+PASS [20] Track Map row present
+PASS [20] Track Map row == json (title, vocal/key/BPM/status, type, path)
+
+TOTAL FAILS: 0
+exit=0

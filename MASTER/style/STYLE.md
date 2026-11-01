@@ -1,7 +1,7 @@
 # Wavvy Style Prompt Guide
 
-Version: 4.1
-Last Updated: 2026-10-02
+Version: 4.3
+Last Updated: 2026-11-02
 Purpose: 곡의 음악적 의도를 Suno Style에 명확하게 전달하는 Wavvy 내부 기준
 
 근거와 한계: MASTER/style/references/prompt-evidence-2026-09-30.md. 단어의 위치나 고정 문구가 생성 결과를 보장한다는 주장은 하지 않는다.
@@ -31,7 +31,8 @@ Style에는 곡 전체의 장르·그루브·보컬·악기 역할을 적고, �
 ## 3. Style과 Exclude 예산
 
 - **Style 900자 이하(공백 포함)**는 Wavvy의 내부 편집 예산이다. 확인한 Suno 공식 자료에서 이 수치를 제품 한도로 제시하지 않는다. 핵심 정보를 남기며 군더더기부터 줄인다.
-- **Exclude 최대 8개 항목**도 Wavvy 내부 예산이다. 필요하지 않으면 비워 두고, 여덟 개를 채우려고 금지어를 만들지 않는다. 세 그룹·세 줄 형식은 요구하지 않는다.
+- **Exclude 최대 8개 항목**도 Wavvy 내부 예산이다. 필요하지 않으면 비워 두고, 여덟 개를 채우려고 금지어를 만들지 않는다. 세 그룹·세 줄 형식은 요구하지 않는다. 예외: 젠이 준 타입 스타일 원문에서 온 Exclude가 8개를 넘으면, txt 머리말 `Style Type: <타입>`·`Exclude Source: user-supplied type style`과 같은 시리즈 `concept.md` `## Type Styles`의 그 타입 `- EXCLUDE:` 항목이 순서까지 정확히 같을 때만 `track-prompt` 게이트가 출처를 기록하고 통과시킨다(근거: 2026-11-01 젠 「13개 모두 유지 (추천)」).
+- **젠 원곡 스타일 그대로**: 젠이 준 원곡 STYLE을 그대로 쓰는 곡은 Style 900자·Exclude 8개 예산을 막지 않고 실제 값만 기록한다. txt 머리말 `Style Type: <타입>`·`Style Source: user-supplied original style`이 있고, 같은 시리즈 `concept.md` `## Original Styles`의 그 타입 항목에서 첫 `` ```text `` 블록이 txt `=== STYLE ===`과 줄바꿈까지 글자 그대로 같고(앞뒤 공백만 정리) 그 `- EXCLUDE:` 항목이 txt EXCLUDE와 순서까지 같을 때만 `track-prompt` 게이트가 이 모드로 통과시킨다. 이 모드에서 BPM·Key·Vocal은 STYLE이 읽을 수 있게 밝힌 값(숫자 BPM 하나, `X Major|Minor`, 성별 낱말)만 머리말과 대조하고, 범위 표기(`96–106 BPM`)나 읽을 수 없는 표기(`key color like A♭`)는 대조하지 않되 머리말 값이 비어 있으면 막는다. 하나라도 안 맞으면 예외 없이 위 예산과 대조를 그대로 적용한다(근거: 2026-11-02 젠 「공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외」·템포 「원곡 BPM 그대로」, 같은 성격의 앞선 결정 「13개 모두 유지 (추천)」).
 - 원하는 사운드는 Style에, 피하고 싶은 악기·보컬 처리·장르 요소는 가능하면 별도 Exclude에 적는다. 같은 요소를 동시에 요구하고 배제하는 모순은 피한다. Custom Mode Advanced Options의 Exclude 사용법은 위 근거 문서를 참조한다.
 - MASTER/style/TAG_BANK.md는 표현을 찾는 선택지일 뿐 필수 키워드 목록이 아니다.
 

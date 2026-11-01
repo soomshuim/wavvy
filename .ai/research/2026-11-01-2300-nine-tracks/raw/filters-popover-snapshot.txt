@@ -1,0 +1,443 @@
+[p1 "Create | Suno" | space "wavvy-2300-suno-read"(118): 1 managed, 0 untracked — p1* "Create | Suno"]
+root
+  container
+    container
+      container
+        anchor [ref=1, url=https://suno.com/]
+          svg_root "Suno logo"
+        button "Collapse sidebar" [ref=2, loc=css:button[aria-label="Collapse sidebar"]]
+          svg_root
+        container
+          anchor [ref=3, loc=href:/discover, url=https://suno.com/discover]
+            container
+              svg_root
+              text "Home"
+          anchor [ref=4, loc=href:/explore, url=https://suno.com/explore]
+            container
+              svg_root
+              text "Explore"
+          anchor [ref=5, url=https://suno.com/create]
+            container
+              svg_root
+              text "Create"
+          anchor [ref=6, loc=href:/studio, url=https://suno.com/studio]
+            container
+              svg_root
+              text "Studio"
+          anchor [ref=7, url=https://suno.com/me]
+            container
+              svg_root
+              text "Library"
+          container
+            anchor [ref=8, url=https://suno.com/@wavvy24]
+              container
+                image
+                text "wavvy24"
+            button "Profile menu button" [ref=9, loc=css:button[aria-label="Profile menu button"]]
+              svg_root
+        container
+          anchor [ref=10, loc=href:/earn-credits, url=https://suno.com/earn-credits]
+            container
+              svg_root
+              text "Earn Credits"
+          anchor [ref=11, loc=href:/labs, url=https://suno.com/labs]
+            container
+              svg_root
+              text "Labs"
+          button "Notifications, 1 unread" [ref=12, loc=css:button[aria-label="Notifications, 1 unread"]]
+            container
+              svg_root
+              text "Notifications"
+              text "1"
+          button [ref=13]
+            container
+              svg_root
+              text "More"
+          anchor [ref=14, loc=href:/account?source=sideNav&plan_key=premier, url=https://suno.com/account?source=sideNav&plan_key=premier]
+            text "Upgrade to Premier"
+      container
+        container
+          container
+            tablist "What to create"
+              tab [ref=15]
+                text "Songs"
+              tab [ref=16]
+                text "Speech"
+              tab [ref=17]
+                text "Sounds"
+            container
+              container
+                tablist "Create form mode"
+                  tab [ref=18]
+                    text "Simple"
+                  tab [ref=19]
+                    text "Advanced"
+                button "Credits remaining: 756" [ref=20, loc=css:button[aria-label="Credits remaining: 756"]]
+                  container
+                    svg_root
+                    text "756"
+              button [ref=21]
+                container
+                  text "v6"
+                  svg_root
+            container [ref=22]
+              container
+                button "Add audio - Browse, upload, or record audio" [ref=23, loc=css:button[aria-label="Add audio - Browse, upload, or record audio"]]
+                  container
+                    svg_root
+                    text "Audio"
+                button "Add Voice" [ref=24, loc=css:button[aria-label="Add Voice"]]
+                  container
+                    svg_root
+                    text "Voice"
+                button "Add inspiration from a playlist" [ref=25, loc=css:button[aria-label="Add inspiration from a playlist"]]
+                  container
+                    svg_root
+                    text "Inspo"
+              container
+                container
+                  button [ref=26]
+                    svg_root
+                    text "Lyrics"
+                  container
+                    button "Undo" [ref=27, loc=css:button[aria-label="Undo"]]
+                      svg_root
+                    button "Redo" [ref=28, loc=css:button[aria-label="Redo"]]
+                      svg_root
+                    button "New draft" [ref=29, loc=css:button[aria-label="New draft"]]
+                      svg_root
+                    button "Saved lyrics" [ref=30, loc=css:button[aria-label="Saved lyrics"]]
+                      svg_root
+                    button "Open full screen lyrics editor" [ref=31, loc=css:button[aria-label="Open full screen lyrics editor"]]
+                      svg_root
+                container
+                  container
+                    textfield "Lyrics editor" [ref=32]
+                      paragraph
+                    text "Start writing lyrics, or leave this empty for instrumental"
+                  container
+                    text "0/5000"
+                    container
+                      button "Help me write lyrics" [ref=33, loc=css:button[aria-label="Help me write lyrics"]]
+                        container
+                          svg_root
+                          text "Write an emo song"
+                      button "Close" [ref=34, loc=css:button[aria-label="Close"]]
+                        svg_root
+                      button [ref=35]
+                        svg_root
+                      container
+                        button [ref=36]
+                          svg_root
+                          text "Lyricist"
+                        button [ref=37]
+                          text "Write an emo song"
+                        button [ref=38]
+                          text "Write a folk song"
+                      textbox "Cowriter prompt" [ref=39, loc=css:textarea[aria-label="Cowriter prompt"]]
+                      text "Ask Suno to write lyrics"
+                      text "Write an emo song"
+                      text "Tab"
+                      button "Generate" [ref=40, loc=css:button[aria-label="Generate"]]
+                        svg_root
+            button "Create song" [ref=41, loc=css:button[aria-label="Create song"]]
+              container
+                svg_root
+                text "Create"
+          text "Drop here for inspiration"
+        splitter
+        container
+          container
+            container
+              button [ref=42]
+                text "Workspaces"
+              svg_root
+              container
+                button [ref=43]
+                  text "[23:00]"
+                button [ref=44]
+                  svg_root
+            button [ref=45]
+              container
+                svg_root
+                text "Share"
+          container
+            container
+              svg_root
+              textbox "Search clips" [ref=46, loc=css:input[placeholder="Search"]]
+                text "Search"
+            comboboxgrouping "Filters (3)" [ref=47, loc=css:button[aria-label="Filters (3)"]]
+              container
+                svg_root
+                text "Filters (3)"
+                svg_root
+            comboboxgrouping "New" [ref=48, loc=css:button[aria-label="New"]]
+              container
+                svg_root
+                text "New"
+                svg_root
+            comboboxgrouping "View: List" [ref=49, loc=css:button[aria-label="View: List"]]
+              container
+                svg_root
+                text "List"
+                svg_root
+            container
+              button "Previous page" [ref=50, loc=css:button[aria-label="Previous page"]]
+                svg_root
+              textbox "Current page number" [ref=51, loc=css:input[aria-label="Current page number"]]
+                text "1"
+              button "Next page" [ref=52, loc=css:button[aria-label="Next page"]]
+                svg_root
+          container [ref=53]
+            container
+              container
+                group "이름 (Lo-Fi Remix)"
+                  container
+                    button "Select clip" [ref=84]
+                      svg_root
+                    button "Play 이름 (Lo-Fi Remix)" [ref=85, loc=role:button[name="Play 이름 (Lo-Fi Remix)"]]
+                      image
+                      svg_root
+                      text "3:34"
+                    container
+                      text "Lo-fi indie R&B, relaxed half-time pocket with soft swung drums, muted electric piano chords, rounded bass, faint tape hiss and intimate close-miked Korean lead vocal, Keep consonants crisp and syllab..."
+                      container
+                        button "Like clip" [ref=87]
+                          svg_root
+                        button "Dislike clip" [ref=88]
+                          svg_root
+                        button "Pin clip to workspace" [ref=89]
+                          svg_root
+                        button "Share clip" [ref=90]
+                          container
+                            svg_root
+                            text "Share"
+                        button "Unpublish clip" [ref=91]
+                          container
+                            svg_root
+                            text "Published"
+                  container
+                    button "Remix" [ref=92]
+                      container
+                        svg_root
+                        text "Remix"
+                    button "More options" [ref=93]
+                      svg_root
+                group "마음 밖 (Lo-Fi Remix)"
+                  container
+                    button "Select clip" [ref=94]
+                      svg_root
+                    button "Play 마음 밖 (Lo-Fi Remix)" [ref=95, loc=role:button[name="Play 마음 밖 (Lo-Fi Remix)"]]
+                      image
+                      svg_root
+                      text "3:08"
+                    container
+                      container
+                        anchor [ref=96, loc=href:/song/17a24019-4412-4443-b4e7-6d305d539958, url=https://suno.com/song/17a24019-4412-4443-b4e7-6d305d539958]
+                          text "마음 밖 (Lo-Fi Remix)"
+                        text "V6"
+                      text "Korean indie R&B, lo-fi remix, relaxed half-time pocket with softened kick and dry rim clicks, rounded subdued bass, muted Rhodes and dusty piano fragments, gentle tape saturation and restrained room ..."
+                      container
+                        button "Like clip" [ref=97]
+                          svg_root
+                        button "Dislike clip" [ref=98]
+                          svg_root
+                        button "Pin clip to workspace" [ref=99]
+                          svg_root
+                        button "Share clip" [ref=100]
+                          container
+                            svg_root
+                            text "Share"
+                        button "Unpublish clip" [ref=101]
+                          container
+                            svg_root
+                            text "Published"
+                  container
+                    button "Remix" [ref=102]
+                      container
+                        svg_root
+                        text "Remix"
+                    button "More options" [ref=103]
+                      svg_root
+              container
+                heading
+                  text "Thursday"
+                group "물안개 (Lo-Fi Remix)"
+                  container
+                    button "Select clip" [ref=111]
+                      svg_root
+                    button "Play 물안개 (Lo-Fi Remix)" [ref=112, loc=role:button[name="Play 물안개 (Lo-Fi Remix)"]]
+                      image
+                      svg_root
+                      text "2:18"
+                    container
+                      container
+                        anchor [ref=113, loc=href:/song/0908a587-be93-46c5-a8e6-46428f3efba5, url=https://suno.com/song/0908a587-be93-46c5-a8e6-46428f3efba5]
+                          text "물안개 (Lo-Fi Remix)"
+                        text "V6"
+                      text "Lo-fi Korean R&B, muted Rhodes chords and softened electric piano, dusty swung drums with brushed snare and subdued kick, warm restrained bass, faint tape hiss and gentle wow, conversational chest-voi..."
+                      container
+                        button "Like clip" [ref=114]
+                          svg_root
+                        button "Dislike clip" [ref=115]
+                          svg_root
+                        button "Pin clip to workspace" [ref=116]
+                          svg_root
+                        button "Share clip" [ref=117]
+                          container
+                            svg_root
+                            text "Share"
+                        button "Unpublish clip" [ref=118]
+                          container
+                            svg_root
+                            text "Published"
+                  container
+                    button "Remix" [ref=119]
+                      container
+                        svg_root
+                        text "Remix"
+                    button "More options" [ref=120]
+                      svg_root
+                group "골목 (Lo-Fi Remix)"
+                  container
+                    button "Select clip" [ref=121]
+                      svg_root
+                    button "Play 골목 (Lo-Fi Remix)" [ref=122, loc=role:button[name="Play 골목 (Lo-Fi Remix)"]]
+                      image
+                      svg_root
+                      text "3:27"
+                    container
+                      container
+                        anchor [ref=123, loc=href:/song/aca55231-9e58-469d-b0ce-c29cb767eaa5, url=https://suno.com/song/aca55231-9e58-469d-b0ce-c29cb767eaa5]
+                          text "골목 (Lo-Fi Remix)"
+                        text "V6"
+                      text "Lo-fi Korean indie R&B, unhurried pocket groove with softened boom-bap drums and restrained low end; mellow Rhodes chords, muted guitar accents, subtle tape hiss and gentle saturation, Keep the origin..."
+                      container
+                        button "Like clip" [ref=124]
+                          svg_root
+                        button "Dislike clip" [ref=125]
+                          svg_root
+                        button "Pin clip to workspace" [ref=126]
+                          svg_root
+                        button "Share clip" [ref=127]
+                          container
+                            svg_root
+                            text "Share"
+                        button "Unpublish clip" [ref=128]
+                          container
+                            svg_root
+                            text "Published"
+                  container
+                    button "Remix" [ref=129]
+                      container
+                        svg_root
+                        text "Remix"
+                    button "More options" [ref=130]
+                      svg_root
+                group "물결 (Lo-Fi Remix)"
+                  container
+                    button "Select clip" [ref=131]
+                      svg_root
+                    button "Play 물결 (Lo-Fi Remix)" [ref=132, loc=role:button[name="Play 물결 (Lo-Fi Remix)"]]
+                      image
+                      svg_root
+                      text "2:13"
+                    container
+                      container
+                        anchor [ref=133, loc=href:/song/5654d747-4921-416f-9b72-755bf27d734a, url=https://suno.com/song/5654d747-4921-416f-9b72-755bf27d734a]
+                          text "물결 (Lo-Fi Remix)"
+                        text "V6"
+                        text "COVER"
+                      text "Modern Indie R&B, Lo-fi Remastered, Articulation, ‑Falsetto, ‑Airy, ‑Whisper, ‑Breathiness, ‑Growl, ‑Vibrato, ‑Opera, ‑Dramatic, ‑Harmonized, ‑Backing vocals, ‑Choir, ‑Intense,..."
+                      container
+                        button "Like clip" [ref=134]
+                          svg_root
+                        button "Dislike clip" [ref=135]
+                          svg_root
+                        button "Pin clip to workspace" [ref=136]
+                          svg_root
+                        button "Share clip" [ref=137]
+                          container
+                            svg_root
+                            text "Share"
+                        button "Unpublish clip" [ref=138]
+                          container
+                            svg_root
+                            text "Published"
+                  container
+                    button "Remix" [ref=139]
+                      container
+                        svg_root
+                        text "Remix"
+                    button "More options" [ref=140]
+                      svg_root
+            text "8 songs"
+    container
+      container
+        container
+          button "Playbar: Toggle shuffle button" [ref=104, loc=css:button[aria-label="Playbar: Toggle shuffle button"]]
+            svg_root
+          button "Playbar: Previous Song button" [ref=105, loc=css:button[aria-label="Playbar: Previous Song button"]]
+            svg_root
+          button "Playbar: Play button" [ref=106, loc=css:button[aria-label="Playbar: Play button"]]
+            svg_root
+          button "Playbar: Next Song button" [ref=107, loc=css:button[aria-label="Playbar: Next Song button"]]
+            svg_root
+          button "Playbar: Toggle repeat button" [ref=108, loc=css:button[aria-label="Playbar: Toggle repeat button"]]
+            svg_root
+        container
+          text "0:00"
+          spinbutton "Playback progress" [ref=109, loc=css:input[aria-label="Playback progress"]]
+          text "--:--"
+      button "Playbar: Mute" [ref=110, loc=css:button[aria-label="Playbar: Mute"]]
+        svg_root
+  region "Bottom notifications"
+  region "Top notifications"
+  region "Bottom edge notifications"
+  container [ref=141]
+    listbox
+      listboxoption "Filter to show only liked clips" [ref=142, loc=role:listboxoption[name="Filter to show only liked clips"]]
+        svg_root
+        text "Liked"
+      listboxoption "Filter to show disliked and not liked clips" [ref=143, loc=role:listboxoption[name="Filter to show disliked and not liked clips"]]
+        svg_root
+        text "Disliked"
+      listboxoption "Filter to show only public clips" [ref=144, loc=role:listboxoption[name="Filter to show only public clips"]]
+        svg_root
+        text "Public"
+      listboxoption "Filter to show only private clips" [ref=145, loc=role:listboxoption[name="Filter to show only private clips"]]
+        svg_root
+        text "Private"
+      listboxoption "Filter to show only uploaded clips" [ref=146, loc=role:listboxoption[name="Filter to show only uploaded clips"]]
+        svg_root
+        text "Uploads"
+      listboxoption "Filter to show only full songs" [ref=147, loc=role:listboxoption[name="Filter to show only full songs"]]
+        svg_root
+        text "Full Songs"
+      listboxoption "Filter to show only covers" [ref=148, loc=role:listboxoption[name="Filter to show only covers"]]
+        svg_root
+        text "Covers"
+      listboxoption "Filter to show only extensions" [ref=149, loc=role:listboxoption[name="Filter to show only extensions"]]
+        svg_root
+        text "Extensions"
+      listboxoption [ref=150]
+        svg_root
+        text "Voices"
+      listboxoption "Filter to show only remasters" [ref=151, loc=role:listboxoption[name="Filter to show only remasters"]]
+        svg_root
+        text "Remasters"
+      listboxoption "Filter to show only downloaded clips" [ref=152, loc=role:listboxoption[name="Filter to show only downloaded clips"]]
+        svg_root
+        text "Downloads"
+      listboxoption "Hide disliked clips" [ref=153, loc=role:listboxoption[name="Hide disliked clips"]]
+        svg_root
+        text "Hide Disliked"
+        svg_root
+      listboxoption "Hide Stems" [ref=154, loc=role:listboxoption[name="Hide Stems"]]
+        svg_root
+        text "Hide Stems"
+        svg_root
+      listboxoption "Hide Clips from Edit Mode" [ref=155, loc=role:listboxoption[name="Hide Clips from Edit Mode"]]
+        svg_root
+        text "Hide Clips from Edit Mode"
+        svg_root

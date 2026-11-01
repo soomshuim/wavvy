@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/23-00",
+  "artifact": "SERIES/23-00/input/tracks/11_라디오.txt",
+  "source_sha256": "5ecdab41a27b6a2ae68dd622ca5c09ebcadac315298b32b00798fa293228cf5e",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/23-00/input/tracks/11_라디오.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/23-00/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "724/900 Unicode characters including internal whitespace"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "0/8 terms"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=70 (type STYLE with appended value; proposed, audio not measured); STYLE=[70]"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=F Major (type STYLE with appended value; proposed, audio not measured); STYLE=['F major']"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=male solo lead, intimate natural chest voice (type STYLE wording; audio not measured); STYLE=['male']"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/23-00/input/tracks/11_라디오.txt"
+  ]
+}

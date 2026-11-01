@@ -1,0 +1,202 @@
+{
+ "order": 13,
+ "dry": false,
+ "title": "편지",
+ "source_txt": "input/tracks/13_편지.txt",
+ "source_sha256": "72af07f998cf1e8973e72401c8ea4a000d8d9473f01fcc71f157d37211d71a74",
+ "suno_params_header": {
+  "weirdness": "default",
+  "style_influence": "default",
+  "source": "원곡에 숫자 기록 없음: SERIES/22-00/concept.md에 Weirdness·Style Influence 기록 없음"
+ },
+ "startedAt": "2026-11-01T16:08:52.498Z",
+ "checkedAt": "2026-11-01T16:08:56.132Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 632,
+  "lyricsLenSrc": 632
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 11,
+  "form": 11
+ },
+ "styleLen": {
+  "source": 822,
+  "form": 822
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 50,
+   "passes": 0
+  },
+  {
+   "label": "Style Influence",
+   "value": 50,
+   "passes": 0
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 616",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Articulation. Korean Chill R&B, 72 BPM, Db Major,\nfelt piano-led, warm Rhodes chords, soft brush kit,\nrim-click, warm bass groove, subtle strings in chorus,\nMale vocal: Warm, Intimate, Chest voice, Dry, articulation,\nwarm baritone, conversational phrasing, gentle sustained chorus hook,\nchorus builds with emotional swell, tender vocal intensity, aching warmth,\ncozy intimate mix, wide stereo, warm low-end,\nmoderate reverb, intimate ambience, EQ balanced sound, clean mix.\nLead vocal remains single and dominant throughout. No stacked or choir-like harmonies.\nVocal line may intensify dynamically (gentle lift, higher register), but no additional vocal layers.\nChorus vocal may be delivered with tender intensity or gentle sustained note.\nHigher register emphasis is allowed. Natural vocal warmth encouraged.",
+  "exclude": "",
+  "title": "편지",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Verse 1]\n서랍 깊숙이\n접어 둔 종이 한 장이\n나를 기다렸어\n편지 펴는 마른 소리\n\n힘을 주어 쓴\n손끝에 만져지는 글씨\n코끝에 닿는\n오래된 종이 냄새\n\n[Pre-Chorus]\n첫 줄은 날씨 얘기\n두껍게 입으라고\n밥 거르지 말라는 말\n별말 아닌데 웃어\n\n[Chorus]\n서랍에서 꺼낸 편지\n네 글씨\n한 줄씩 짚으면 네 목소리 들려\n볼수록 정이 가는\n네 글씨\n오래도록 남아 줘\n누렇게 변해도\n서랍에서 꺼낸 편지\n네 글씨\n\n[Verse 2]\n셋째 줄 끝에\n번져 있는 파란 잉크\n쓰다 멈춘 듯\n펜이 오래 머문 자리\n\n다시 이어 쓴\n조금 작아진 글씨로\n곧 보자고 썼어\n그 줄만 몇 번을 읽어\n\n[Chorus]\n서랍에서 꺼낸 편지\n네 글씨\n한 줄씩 짚으면 네 목소리 들려\n볼수록 정이 가는\n네 글씨\n오래도록 남아 줘\n누렇게 변해도\n서랍에서 꺼낸 편지\n네 글씨\n\n[Bridge]\n접힌 선을 따라서\n반으로 곱게 접고\n“따뜻해\n따뜻해”\n봉투에 다시 넣으며\n구겨질까 봐\n모서리를 맞춰 보며\n또 볼게\n또 볼게\n서랍 안쪽에 가만히 둔다\n\n[Chorus]\n서랍에서 꺼낸 편지\n네 글씨\n한 줄씩 짚으면 네 목소리 들려\n볼수록 정이 가는\n네 글씨\n오래도록 남아 줘\n누렇게 변해도\n서랍에서 꺼낸 편지\n네 글씨\n\n[Outro]\n[Instrumental]"
+ },
+ "knownIdsCount": 15
+}

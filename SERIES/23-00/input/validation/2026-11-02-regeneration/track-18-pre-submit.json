@@ -1,0 +1,202 @@
+{
+ "order": 18,
+ "dry": false,
+ "title": "벚꽃",
+ "source_txt": "input/tracks/18_벚꽃.txt",
+ "source_sha256": "a534e2b406d79b5de9393c8a2d2886463f9895169cc7b04b7e047952f8c31214",
+ "suno_params_header": {
+  "weirdness": "default",
+  "style_influence": "default",
+  "source": "원곡에 숫자 기록 없음: SERIES/18-00/concept.md:1416-1421에 숫자 대신 `기존 싱글`"
+ },
+ "startedAt": "2026-11-01T16:09:46.593Z",
+ "checkedAt": "2026-11-01T16:09:50.412Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 682,
+  "lyricsLenSrc": 682
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 16,
+  "form": 16
+ },
+ "styleLen": {
+  "source": 594,
+  "form": 594
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 50,
+   "passes": 0
+  },
+  {
+   "label": "Style Influence",
+   "value": 50,
+   "passes": 0
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 566",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Korean Soft R&B, 72 BPM, Ab Major\n\nSoft Synth Pad-led, supportive groove, gentle pulse, warm shade texture\n\nMale vocal: Natural, laid-back, Raw, Solid, Direct, Dry\nChest voice dominant, No falsetto, Straight tone, No vibrato, no ad-libs\nPrecise articulation, clear consonants\n\nVerse1: synth pad, sparse drums, drifting\nVerse2: kick steady, groove deepens\nVerse2 last 2 lines: higher register, tighter rhythm, vocal push\nBridge1/2: pad and voice, intimate\nFinal Chorus: chest belt pushed, high register climax\nOutro: short fade, pad sustain\n\nSingle lead vocal\nDensity expansion only",
+  "exclude": "Falsetto, Airy, Whisper, Breathiness, Vibrato, Harmonized, Backing vocals, Choir, Intense, Dramatic, Mumbled",
+  "title": "벚꽃",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Intro]\n꽃잎이 참 가볍게 내려와\n그날도 어김없이 앉았어\n\n[Verse 1]\n온통 연분홍빛 벚꽃 그늘 아래\n바람이 다시 가져다준 봄\n그때 손길이 머물던 머리칼에\n꽃잎 한 장이 사뿐히 앉았네\n네가 벌써 알고 미소 지었지\n난 그것도 모르고 있었지\n\n[Chorus]\n꽃잎 하나 머리 위에 앉으면\n먼저 떠오르는 모습\n꽃잎을 살며시 떼어 주었던 손\n그날 온기 봄바람에 실려와\n이렇게 환한 봄날 아래에서\n난 그저 웃고 있어\n다시 봄이면\n다시 봄이면\n\n[Verse 2]\n머리칼이 엉킬까 조심하며\n두 손가락으로 집어 올리고\n너의 눈은 반달처럼 웃고\n네 머리에 봄이 앉았다며\n장난스레 놀리던 목소리\n어제처럼 맑은 너의 웃음\n이번엔 한 장 받아 보니\n가볍고 따뜻해 네 손처럼\n\n[Bridge]\n꽃잎은 바람에 흩날려도\n달큰한 향기는 배어 종일 머물러\n해마다 늘 환하게 피어나\n꽃잎이 나를 다독이네\n머리에 한 장\n난 이대로도 돼\n꽃이 다 지고 나서도\n바람이 멎고 나서도\n봄이 온다\n그때처럼\n\n[Chorus]\n꽃잎 하나 머리 위에 앉으면\n먼저 떠오르는 모습\n꽃잎을 살며시 떼어 주었던 손\n그날 온기 봄바람에 실려와\n이렇게 환한 봄날 아래에서\n난 그저 웃고 있어\n다시 봄이면\n다시 봄이면\n\n[Outro]\n따뜻해\n올해도 봄이 찾아왔네\n꽃잎도 잠깐 앉았네\n머리 위에\n따뜻해\n올해도 봄이 찾아왔네\n꽃잎도 잠깐 앉았네\n머리 위에\n\n[Ending]"
+ },
+ "knownIdsCount": 25
+}

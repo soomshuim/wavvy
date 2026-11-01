@@ -1,0 +1,63 @@
+{
+ "track": 12,
+ "title": "스웨터",
+ "type": "마음 밖",
+ "result": "PASS",
+ "checks": [
+  {
+   "name": "C1_txt_style_sha256_equals_json",
+   "status": "PASS",
+   "detail": "txt=56729ee045a4b12a1ed26f2825c735ad263886d148b8872895756b3dd418447b json=56729ee045a4b12a1ed26f2825c735ad263886d148b8872895756b3dd418447b chars=720"
+  },
+  {
+   "name": "C1b_txt_style_equals_concept_original_styles_block",
+   "status": "PASS",
+   "detail": "concept block sha256=56729ee045a4b12a1ed26f2825c735ad263886d148b8872895756b3dd418447b"
+  },
+  {
+   "name": "C2_txt_exclude_items_equal_json",
+   "status": "PASS",
+   "detail": "txt=[] json=[]"
+  },
+  {
+   "name": "C2b_txt_exclude_equals_concept_exclude_line",
+   "status": "PASS",
+   "detail": "concept=['']"
+  },
+  {
+   "name": "C3_txt_lyrics_equal_record_draft",
+   "status": "PASS",
+   "detail": "draft_sha256=b3914074adfbcfa2e1ba538112b9ac5f3fae1af5d8e92e7c551c9d81b5007129"
+  },
+  {
+   "name": "C4_txt_headers",
+   "status": "PASS",
+   "detail": "mismatch={}; Exclude Source present=False; Suno Params={\"weirdness\": \"default\", \"style_influence\": \"default\", \"source\": \"원곡에 숫자 기록 없음: SERIES/04-00/concept.md에 Weirdness·Style Influence 기록 없음\"}"
+  },
+  {
+   "name": "C5_header_bars_and_target_match_record",
+   "status": "PASS",
+   "detail": "bars=76; record_bpm=96; txt_bpm=96; estimate=190.0; target=188; header_target='around 3:08 (planning target from the type original's 3:08; not measured audio)'"
+  },
+  {
+   "name": "C6_draft_differs_from_previous_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "changed_rows=0; rows=[]"
+  },
+  {
+   "name": "C6b_txt_lyrics_differ_from_previous_txt_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "previous txt rows=45"
+  },
+  {
+   "name": "C7_preserved_copies_intact",
+   "status": "PASS",
+   "detail": "SERIES/23-00/input/source-history/2026-11-02-before-original-style/12_스웨터.txt; SERIES/23-00/input/source-history/2026-11-02-before-original-style/lyrics-records/2026-11-01_23-00_12_스웨터-full-draft.md"
+  },
+  {
+   "name": "C8_record_source_sha256_equals_current_draft",
+   "status": "PASS",
+   "detail": "claimed=['b3914074adfbcfa2e1ba538112b9ac5f3fae1af5d8e92e7c551c9d81b5007129'] actual=b3914074adfbcfa2e1ba538112b9ac5f3fae1af5d8e92e7c551c9d81b5007129"
+  }
+ ]
+}

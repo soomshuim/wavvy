@@ -1,0 +1,202 @@
+{
+ "order": 12,
+ "dry": false,
+ "title": "스웨터",
+ "source_txt": "input/tracks/12_스웨터.txt",
+ "source_sha256": "83e5b2feaeddb9df9a845fb937ab8880aa74a6398ebb98c3e937e0cc3295fae0",
+ "suno_params_header": {
+  "weirdness": "default",
+  "style_influence": "default",
+  "source": "원곡에 숫자 기록 없음: SERIES/04-00/concept.md에 Weirdness·Style Influence 기록 없음"
+ },
+ "startedAt": "2026-11-01T16:08:41.204Z",
+ "checkedAt": "2026-11-01T16:08:49.003Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 402,
+  "lyricsLenSrc": 402
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 0,
+  "form": 0
+ },
+ "styleLen": {
+  "source": 720,
+  "form": 720
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 50,
+   "passes": 1
+  },
+  {
+   "label": "Style Influence",
+   "value": 50,
+   "passes": 1
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 626",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, articulation, Korean R&B/pop ballad, 96–106 BPM, key color like A♭, Piano/Rhodes-led, cinematic but restrained, Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls, Subtle strings/pads in choruses only, never dramatic, Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm, Final chorus adds a gentle \"major-color\" lift via chords/strings, not belting, Female vocal very forward and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction, Melody understated (no big leaps, no catchy hook), Outro instrumental fade",
+  "exclude": "",
+  "title": "스웨터",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Intro: Instrumental]\n첫 추위가 온 아침\n옷장 속을 뒤적여\n\n[Verse 1]\n맨 아래 칸에\n개어 둔 옷\n꺼내어 보니\n빌려 온 니트\n아직 그대로\n\n[Bridge]\n입어 보니\n너무 길어\n접어 올려도\n또 내려와\n\n[Chorus]\n차가운 바람에도\n손끝은 괜찮아\n스웨터 소매 속은\n아직 따뜻해\n스웨터 소매 속은\n아직 따뜻해\n\n[Verse 2]\n팔꿈치 쪽에\n보풀 났네\n섬유유연제\n향이 남아\n코를 묻어\n\n[Bridge]\n미루다가\n겨울이 왔어\n벗기 싫은 걸\n이제 알겠어\n\n[Chorus]\n차가운 바람에도\n손끝은 괜찮아\n스웨터 소매 속은\n아직 따뜻해\n\n[Chorus]\n차가운 바람에도\n손끝은 괜찮아\n스웨터 소매 속은\n아직 따뜻해\n스웨터 소매 속은\n아직 따뜻해\n\n[Outro: Instrumental fade out]"
+ },
+ "knownIdsCount": 13
+}

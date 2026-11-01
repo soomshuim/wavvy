@@ -1,0 +1,22 @@
+const task = await taskSpace("wavvy-2300-suno-regenerate");
+const page = task.page("p1");
+const val = async (label) => page.evaluate((label) => { const s = [...document.querySelectorAll('[role=slider]')].filter(e => e.getBoundingClientRect().width > 0 && e.getAttribute('aria-label') === label); return s.map(e => e.getAttribute('aria-valuenow')); }, label);
+const focusSlider = async (label) => page.evaluate((label) => { const s = [...document.querySelectorAll('[role=slider]')].filter(e => e.getBoundingClientRect().width > 0 && e.getAttribute('aria-label') === label); if (s.length !== 1) return "count=" + s.length; s[0].scrollIntoView({ block: "center" }); s[0].focus(); return document.activeElement === s[0] ? "focused" : "notfocused"; }, label);
+console.log("start", await val("Weirdness"), await val("Style Influence"), await val("Variety"));
+console.log(await focusSlider("Weirdness"));
+await page.keyboard.press("Home"); await page.waitForTimeout(300);
+console.log("after Home", await val("Weirdness"));
+await page.keyboard.press("ArrowRight"); await page.waitForTimeout(300);
+console.log("after Right", await val("Weirdness"));
+await page.keyboard.press("PageUp"); await page.waitForTimeout(300);
+console.log("after PageUp", await val("Weirdness"));
+await page.keyboard.press("Shift+ArrowRight"); await page.waitForTimeout(300);
+console.log("after Shift+Right", await val("Weirdness"));
+await page.keyboard.press("End"); await page.waitForTimeout(300);
+console.log("after End", await val("Weirdness"));
+// restore to default 50
+await page.keyboard.press("Home"); await page.waitForTimeout(200);
+for (let i = 0; i < 50; i++) await page.keyboard.press("ArrowRight");
+await page.waitForTimeout(400);
+console.log("restored", await val("Weirdness"), await val("Style Influence"), await val("Variety"));
+await page.screenshot({ path: EVDIR + "/ego/r05-slider-probe.png" });

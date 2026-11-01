@@ -1,0 +1,63 @@
+{
+ "track": 11,
+ "title": "라디오",
+ "type": "먼지",
+ "result": "PASS",
+ "checks": [
+  {
+   "name": "C1_txt_style_sha256_equals_json",
+   "status": "PASS",
+   "detail": "txt=0121afa45e50cea44d284b49c75ae002cc6f768c20905cabdad9efaefea975c8 json=0121afa45e50cea44d284b49c75ae002cc6f768c20905cabdad9efaefea975c8 chars=624"
+  },
+  {
+   "name": "C1b_txt_style_equals_concept_original_styles_block",
+   "status": "PASS",
+   "detail": "concept block sha256=0121afa45e50cea44d284b49c75ae002cc6f768c20905cabdad9efaefea975c8"
+  },
+  {
+   "name": "C2_txt_exclude_items_equal_json",
+   "status": "PASS",
+   "detail": "txt=['Airy', 'Falsetto', 'Whisper', 'Harmonized', 'Backing vocals', 'Choir', 'Cold', 'Dark', 'Intense', 'Dramatic'] json=['Airy', 'Falsetto', 'Whisper', 'Harmonized', 'Backing vocals', 'Choir', 'Cold', 'Dark', 'Intense', 'Dramatic']"
+  },
+  {
+   "name": "C2b_txt_exclude_equals_concept_exclude_line",
+   "status": "PASS",
+   "detail": "concept=['Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Cold, Dark, Intense, Dramatic']"
+  },
+  {
+   "name": "C3_txt_lyrics_equal_record_draft",
+   "status": "PASS",
+   "detail": "draft_sha256=9b9fcc1daafff3ca7380dcdb0655353a1a97f728a1507f53446d06db2f2c26d0"
+  },
+  {
+   "name": "C4_txt_headers",
+   "status": "PASS",
+   "detail": "mismatch={}; Exclude Source present=False; Suno Params={\"weirdness\": 20, \"style_influence\": 80, \"source\": \"SERIES/14-00/concept.md:976-980\"}"
+  },
+  {
+   "name": "C5_header_bars_and_target_match_record",
+   "status": "PASS",
+   "detail": "bars=60; record_bpm=72; txt_bpm=72; estimate=200.0; target=200; header_target='around 3:20 (planning target from the type original's 3:20; not measured audio)'"
+  },
+  {
+   "name": "C6_draft_differs_from_previous_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "changed_rows=3; rows=[('낮은 목소리가 사연을', '낮은 목소리 사연 하나'), ('읽고 나면 잡음 속에서', '끝나고 나면 잡음 속에'), ('틀린 가사 신나게 부르던', '틀린 가사 신나게 부른 너')]"
+  },
+  {
+   "name": "C6b_txt_lyrics_differ_from_previous_txt_only_by_expected_fixes",
+   "status": "PASS",
+   "detail": "previous txt rows=44"
+  },
+  {
+   "name": "C7_preserved_copies_intact",
+   "status": "PASS",
+   "detail": "SERIES/23-00/input/source-history/2026-11-02-before-original-style/11_라디오.txt; SERIES/23-00/input/source-history/2026-11-02-before-original-style/lyrics-records/2026-11-01_23-00_11_라디오-full-draft.md"
+  },
+  {
+   "name": "C8_record_source_sha256_equals_current_draft",
+   "status": "PASS",
+   "detail": "claimed=['9b9fcc1daafff3ca7380dcdb0655353a1a97f728a1507f53446d06db2f2c26d0'] actual=9b9fcc1daafff3ca7380dcdb0655353a1a97f728a1507f53446d06db2f2c26d0"
+  }
+ ]
+}

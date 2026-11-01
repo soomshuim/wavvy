@@ -404,13 +404,81 @@ Self-Gate
     )
 
 
-def write_track_prompt_source(path: Path, style: str, exclude: str = "choir, doubled vocals", bpm: str = "106", key: str = "G Major", vocal: str = "warm male lead", lyrics: str = "[Verse]\n오늘은 웃었어") -> None:
+def write_track_prompt_source(path: Path, style: str, exclude: str = "choir, doubled vocals", bpm: str = "106", key: str = "G Major", vocal: str = "warm male lead", lyrics: str = "[Verse]\n오늘은 웃었어", extra_header: str = "") -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
-        f"Track: 너와\nBPM: {bpm}\nKey: {key}\nVocal: {vocal}\n\n"
+        f"Track: 너와\nBPM: {bpm}\nKey: {key}\nVocal: {vocal}\n{extra_header}\n"
         f"=== STYLE ===\n{style}\n\n=== EXCLUDE ===\n{exclude}\n\n=== LYRICS ===\n{lyrics}\n",
         encoding="utf-8",
     )
+
+
+MULGYEOL_STYLE = (
+    "Korean Indie Alt R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, "
+    "rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, "
+    "Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over "
+    "falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, "
+    "Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses "
+    "grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal, Modern Indie R&B, Lo-fi Remastered, Articulation"
+)
+MULGYEOL_EXCLUDE = "Falsetto, Airy, Whisper, Breathiness, Growl, Vibrato, Opera, Dramatic, Harmonized, Backing vocals, Choir, Intense, Mumbled"
+USER_TYPE_HEADER = "Style Type: 물결\nExclude Source: user-supplied type style\n"
+
+
+def type_styles_concept(*entries: tuple[str, str]) -> str:
+    body = "".join(f"### {name}\n\n- Source: test entry\n- EXCLUDE: {exclude}\n\n" for name, exclude in entries)
+    return f"# Test series\n\n## Type Styles\n\nIntro text.\n\n{body}## Track Map\n\n| # |\n"
+
+
+ORIGINAL_STYLE_EXCLUDE = MULGYEOL_EXCLUDE + ", Rap"
+ORIGINAL_STYLE_HEADER = "Style Type: 산책\nStyle Source: user-supplied original style\n"
+
+
+def original_style_text(tempo: str = "96–106 BPM", key: str = "key color like A♭", vocal: str = "Female vocal very forward") -> str:
+    """A synthetic multi-line user original style: over 900 characters, with a BPM range and no `X Major|Minor` Key by default."""
+    return "\n".join([
+        f"Korean R&B/pop ballad, {tempo}, {key}, Piano/Rhodes-led, cinematic but restrained,",
+        "Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls,",
+        "Subtle strings/pads in choruses only, never dramatic,",
+        "",
+        "Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm,",
+        "Final chorus adds a gentle lift via chords/strings, not belting,",
+        f"{vocal} and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction,",
+        "Melody understated, no big leaps, Outro instrumental fade,",
+        "Mix: dry intimate vocal, narrow stereo image, soft room tone, gentle tape saturation, no heavy compression, leave space around the vocal,",
+        "Dynamics: verse whisper-quiet, pre-chorus lifts one step, chorus warm and open, bridge drops back to piano and voice only, last chorus held back,",
+        "Texture: felt piano, muted guitar harmonics, faint vinyl crackle, distant street ambience that never covers the words",
+    ])
+
+
+def original_styles_concept(*entries: tuple[str, str, str | None], section: str = "Original Styles", padding: str = "") -> str:
+    """A concept.md whose `## <section>` lists `### <type>` entries; an EXCLUDE of None omits the `- EXCLUDE:` line."""
+    body = "".join(
+        f"### {name}\n\n- 출처: test entry\n" + ("" if exclude is None else f"- EXCLUDE: {exclude}\n") + f"\n```text\n{padding}{style}{padding}\n```\n\n"
+        for name, style, exclude in entries
+    )
+    return f"# Test series\n\n## {section}\n\nIntro text.\n\n{body}## Track Map\n\n| # |\n"
+
+
+def run_track_prompt_gate(concept: str, style: str, exclude: str, **fields: str) -> tuple[int, dict[str, dict[str, str]], dict]:
+    """Write one txt next to the given concept.md and return (exit code, checks by name, payload) of the track-prompt gate."""
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        series = root / "SERIES" / "23-00"
+        series.mkdir(parents=True)
+        (series / "concept.md").write_text(concept, encoding="utf-8")
+        source = series / "input" / "tracks" / "14_기타.txt"
+        write_track_prompt_source(source, style, exclude=exclude, **fields)
+        with patch("wavvy.git_repo_root", return_value=root):
+            result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+        payload = json.loads(result.output)
+        return result.exit_code, {check["name"]: check for check in payload["checks"]}, payload
+
+
+def run_original_style_gate(style: str, exclude: str = ORIGINAL_STYLE_EXCLUDE, concept: str | None = None, header: str = ORIGINAL_STYLE_HEADER, bpm: str = "96", key: str = "A♭", vocal: str = "female lead") -> tuple[int, dict[str, dict[str, str]], dict]:
+    if concept is None:
+        concept = original_styles_concept(("산책", style, exclude))
+    return run_track_prompt_gate(concept, style, exclude, bpm=bpm, key=key, vocal=vocal, lyrics="[Verse 1]\n오늘은 웃었어", extra_header=header)
 
 
 def write_review_artifact(path: Path, source: Path, body: str, verdict: str = "PASS | reviewed lines are ready", findings_extra: str = "") -> None:
@@ -1093,6 +1161,279 @@ Self-Gate
             self.assertIn("901/900", str(json.loads(over.output)["checks"]))
             self.assertEqual(many.exit_code, 1, many.output)
             self.assertIn("12/8", str(json.loads(many.output)["checks"]))
+
+    def test_track_prompt_gate_passes_over_budget_exclude_recorded_as_user_type_style(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            series = root / "SERIES" / "23-00"
+            series.mkdir(parents=True)
+            (series / "concept.md").write_text(type_styles_concept(("먼지", ""), ("물결", MULGYEOL_EXCLUDE)), encoding="utf-8")
+            source = series / "input" / "tracks" / "21_물결.txt"
+            headers = (USER_TYPE_HEADER, "style type: 물결\nEXCLUDE SOURCE: User-Supplied Type Style\n")
+            with patch("wavvy.git_repo_root", return_value=root):
+                for header in headers:
+                    with self.subTest(header=header):
+                        write_track_prompt_source(source, MULGYEOL_STYLE, exclude=MULGYEOL_EXCLUDE, bpm="74", key="A Major", vocal="male lead", lyrics="[Verse 1]\n물결이 잠잠해져", extra_header=header)
+                        result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                        self.assertEqual(result.exit_code, 0, result.output)
+                        payload = json.loads(result.output)
+                        checks = {check["name"]: check for check in payload["checks"]}
+                        self.assertEqual(payload["result"], "PASS")
+                        self.assertEqual(checks["exclude_budget"]["status"], "PASS")
+                        self.assertEqual(checks["exclude_budget"]["detail"], "13/8 terms; user-supplied type exception (물결)")
+                        self.assertEqual(checks["style_character_limit"]["detail"].split("/")[0], "677")
+
+    def test_track_prompt_gate_rejects_over_budget_exclude_without_matching_type_record(self):
+        full = type_styles_concept(("먼지", ""), ("물결", MULGYEOL_EXCLUDE))
+        swapped = MULGYEOL_EXCLUDE.replace("Falsetto, Airy", "Airy, Falsetto")
+        cases = [
+            ("no header lines", "", full, "Style Type"),
+            ("Style Type only", "Style Type: 물결\n", full, "Exclude Source"),
+            ("other Exclude Source", "Style Type: 물결\nExclude Source: my own list\n", full, "Exclude Source"),
+            ("concept item changed", USER_TYPE_HEADER, type_styles_concept(("물결", MULGYEOL_EXCLUDE.replace("Choir", "Chorus"))), "differs"),
+            ("concept order changed", USER_TYPE_HEADER, type_styles_concept(("물결", swapped)), "differs"),
+            ("concept item dropped", USER_TYPE_HEADER, type_styles_concept(("물결", MULGYEOL_EXCLUDE.replace(", Mumbled", ""))), "differs"),
+            ("type not in concept", "Style Type: 골목\nExclude Source: user-supplied type style\n", full, "0 `### 골목` entries"),
+            ("no Type Styles section", USER_TYPE_HEADER, "# Test series\n", "0 `### 물결` entries"),
+            ("type listed twice", USER_TYPE_HEADER, type_styles_concept(("물결", MULGYEOL_EXCLUDE), ("물결", MULGYEOL_EXCLUDE)), "2 `### 물결` entries"),
+        ]
+        for label, header, concept, fragment in cases:
+            with self.subTest(label), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = root / "SERIES" / "23-00"
+                series.mkdir(parents=True)
+                (series / "concept.md").write_text(concept, encoding="utf-8")
+                source = series / "input" / "tracks" / "21_물결.txt"
+                write_track_prompt_source(source, MULGYEOL_STYLE, exclude=MULGYEOL_EXCLUDE, bpm="74", key="A Major", vocal="male lead", lyrics="[Verse 1]\n물결이 잠잠해져", extra_header=header)
+                with patch("wavvy.git_repo_root", return_value=root):
+                    result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                self.assertEqual(result.exit_code, 1, result.output)
+                payload = json.loads(result.output)
+                checks = {check["name"]: check for check in payload["checks"]}
+                self.assertEqual(checks["exclude_budget"]["status"], "FAIL")
+                self.assertTrue(checks["exclude_budget"]["detail"].startswith("13/8 terms; no user-supplied type exception: "), checks["exclude_budget"]["detail"])
+                self.assertIn(fragment, checks["exclude_budget"]["detail"])
+                self.assertTrue(any("EXCLUDE has 13 terms; maximum is 8" in blocker for blocker in payload["blockers"]))
+
+    def test_track_prompt_gate_keeps_budget_behavior_at_eight_or_fewer_exclude_terms(self):
+        eight = ", ".join(f"item {i}" for i in range(8))
+        style = "Acoustic neo-soul, 106 BPM, G Major. Male vocal: warm, direct."
+        mismatched = type_styles_concept(("물결", "Falsetto"))
+        for label, header, concept in (("no header", "", "Acoustic neo-soul\n"), ("header with a mismatched concept", USER_TYPE_HEADER, mismatched)):
+            with self.subTest(label), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                series = root / "SERIES" / "17-00"
+                series.mkdir(parents=True)
+                (series / "concept.md").write_text(concept, encoding="utf-8")
+                source = series / "input" / "tracks" / "03_너와.txt"
+                write_track_prompt_source(source, style, exclude=eight, extra_header=header)
+                with patch("wavvy.git_repo_root", return_value=root):
+                    result = CliRunner().invoke(cli, ["gate", str(series), "--stage", "track-prompt", "--artifact", str(source), "--json"])
+                self.assertEqual(result.exit_code, 0, result.output)
+                checks = {check["name"]: check for check in json.loads(result.output)["checks"]}
+                self.assertEqual(checks["exclude_budget"], {"name": "exclude_budget", "status": "PASS", "detail": "8/8 terms"})
+
+    def test_track_prompt_gate_passes_user_supplied_original_style_over_budget(self):
+        note = "user-supplied original style (산책)"
+        unreadable = original_style_text()
+        self.assertGreater(len(unreadable), 900)
+        self.assertGreater(len(unreadable.splitlines()), 1)
+        readable = original_style_text("74 BPM", "Eb Major", "Male vocal")
+        cases = [
+            # (label, style, header, gate fields, concept padding)
+            ("multi-line, BPM range, no Key mode, 14 EXCLUDE", unreadable, ORIGINAL_STYLE_HEADER, {}, ""),
+            ("header names are case-insensitive", unreadable, "style type: 산책\nSTYLE SOURCE: User-Supplied Original Style\n", {}, ""),
+            ("concept block padded with blank lines and spaces", unreadable, ORIGINAL_STYLE_HEADER, {}, "\n\n  "),
+            ("BPM, Key and gender readable and matching", readable, ORIGINAL_STYLE_HEADER, {"bpm": "74", "key": "Eb Major", "vocal": "male lead"}, ""),
+            ("no gender word in STYLE", original_style_text(vocal="Soft husky lead vocal"), ORIGINAL_STYLE_HEADER, {}, ""),
+        ]
+        for label, style, header, fields, padding in cases:
+            with self.subTest(label):
+                concept = original_styles_concept(("산책", style, ORIGINAL_STYLE_EXCLUDE), ("물결", "other type", "Choir"), padding=padding)
+                exit_code, checks, payload = run_original_style_gate(style, concept=concept, header=header, **fields)
+                self.assertEqual(exit_code, 0, payload["blockers"])
+                self.assertEqual(payload["result"], "PASS")
+                self.assertEqual(payload["blockers"], [])
+                self.assertEqual(checks["style_character_limit"]["detail"], f"{len(style)}/900 Unicode characters including internal whitespace; {note}")
+                self.assertEqual(checks["exclude_budget"]["detail"], f"14/8 terms; {note}")
+                for name in ("bpm_metadata_matches_style", "key_metadata_matches_style", "vocal_gender_metadata_matches_style"):
+                    self.assertEqual(checks[name]["status"], "PASS", checks[name])
+                    self.assertTrue(checks[name]["detail"].endswith(f"; {note}"), checks[name])
+        # The recorded detail carries both the header value and what STYLE actually states.
+        _, checks, _ = run_original_style_gate(unreadable)
+        self.assertEqual(checks["bpm_metadata_matches_style"]["detail"], f"metadata=96; STYLE=range 96–106 BPM (not compared); {note}")
+        self.assertEqual(checks["key_metadata_matches_style"]["detail"], f"metadata=A♭; STYLE=[] (no note with Major/Minor in STYLE, not compared); {note}")
+        self.assertEqual(checks["vocal_gender_metadata_matches_style"]["detail"], f"metadata=female lead; STYLE=['female']; {note}")
+        _, checks, _ = run_original_style_gate(readable, bpm="74", key="Eb Major", vocal="male lead")
+        self.assertEqual(checks["bpm_metadata_matches_style"]["detail"], f"metadata=74; STYLE=[74]; {note}")
+        self.assertEqual(checks["key_metadata_matches_style"]["detail"], f"metadata=Eb Major; STYLE=['EB major']; {note}")
+        _, checks, _ = run_original_style_gate(original_style_text(vocal="Soft husky lead vocal"), vocal="warm lead")
+        self.assertEqual(checks["vocal_gender_metadata_matches_style"]["detail"], f"metadata=warm lead; STYLE=[] (no vocal gender in STYLE, not compared); {note}")
+
+    def test_track_prompt_gate_rejects_original_style_when_style_differs_from_concept_record(self):
+        style = original_style_text()
+        concept = original_styles_concept(("산책", style, ORIGINAL_STYLE_EXCLUDE))
+        edits = [
+            ("one letter changed", style.replace("husky", "hasky")),
+            ("case changed", style.replace("Warm keys", "warm keys")),
+            ("line break replaced by a space", style.replace("never dramatic,\n\nVerse", "never dramatic, Verse")),
+            ("blank line dropped", style.replace("never dramatic,\n\nVerse", "never dramatic,\nVerse")),
+            ("internal space doubled", style.replace("soft supportive", "soft  supportive")),
+            ("one character appended", style + "."),
+        ]
+        for label, edited in edits:
+            with self.subTest(label):
+                self.assertNotEqual(edited, style)
+                exit_code, checks, payload = run_original_style_gate(edited, concept=concept)
+                self.assertEqual(exit_code, 1, payload["result"])
+                for name in ("style_character_limit", "exclude_budget"):
+                    self.assertEqual(checks[name]["status"], "FAIL", checks[name])
+                    self.assertIn("no user-supplied original style: txt STYLE differs from the ```text block", checks[name]["detail"])
+                self.assertTrue(any("txt STYLE differs" in blocker for blocker in payload["blockers"]), payload["blockers"])
+
+    def test_track_prompt_gate_rejects_original_style_without_one_matching_concept_entry(self):
+        style = original_style_text()
+        entry = ("산책", style, ORIGINAL_STYLE_EXCLUDE)
+        no_block = original_styles_concept(entry).replace(f"```text\n{style}\n```", "no block here")
+        cases = [
+            ("no Original Styles section", "# Test series\n", "0 `### 산책` entries"),
+            ("only another type listed", original_styles_concept(("물결", style, ORIGINAL_STYLE_EXCLUDE)), "0 `### 산책` entries"),
+            ("type listed twice", original_styles_concept(entry, entry), "2 `### 산책` entries"),
+            ("record lives under Type Styles instead", original_styles_concept(entry, section="Type Styles"), "0 `### 산책` entries"),
+            ("entry has no text block", no_block, "has no ```text block"),
+        ]
+        for label, concept, fragment in cases:
+            with self.subTest(label):
+                exit_code, checks, payload = run_original_style_gate(style, concept=concept)
+                self.assertEqual(exit_code, 1, payload["result"])
+                for name in ("style_character_limit", "exclude_budget"):
+                    self.assertEqual(checks[name]["status"], "FAIL", checks[name])
+                    self.assertIn("no user-supplied original style: ", checks[name]["detail"])
+                self.assertTrue(any(fragment in blocker for blocker in payload["blockers"]), payload["blockers"])
+
+    def test_track_prompt_gate_rejects_original_style_when_exclude_differs_from_concept_record(self):
+        style = original_style_text()
+        recorded = ORIGINAL_STYLE_EXCLUDE
+        swapped = recorded.replace("Falsetto, Airy", "Airy, Falsetto")
+        cases = [
+            ("txt order changed", original_styles_concept(("산책", style, recorded)), swapped),
+            ("txt item dropped", original_styles_concept(("산책", style, recorded)), recorded.replace(", Rap", "")),
+            ("txt item added", original_styles_concept(("산책", style, recorded)), recorded + ", Screaming"),
+            ("txt item replaced", original_styles_concept(("산책", style, recorded)), recorded.replace("Choir", "Chorus")),
+            ("concept order changed", original_styles_concept(("산책", style, swapped)), recorded),
+            ("concept lists no EXCLUDE", original_styles_concept(("산책", style, None)), recorded),
+            ("concept lists EXCLUDE twice", original_styles_concept(("산책", style, recorded)).replace("- EXCLUDE: ", "- EXCLUDE: Falsetto\n- EXCLUDE: ", 1), recorded),
+        ]
+        for label, concept, txt_exclude in cases:
+            with self.subTest(label):
+                exit_code, checks, payload = run_original_style_gate(style, exclude=txt_exclude, concept=concept)
+                self.assertEqual(exit_code, 1, payload["result"])
+                self.assertEqual(checks["exclude_budget"]["status"], "FAIL", checks["exclude_budget"])
+                self.assertIn("no user-supplied original style: ", checks["exclude_budget"]["detail"])
+                self.assertTrue(any("EXCLUDE has" in blocker and "## Original Styles" in blocker for blocker in payload["blockers"]), payload["blockers"])
+        # The literal word None is one EXCLUDE item, not an empty list: it does not match an entry that records none.
+        exit_code, checks, payload = run_original_style_gate(style, exclude="None", concept=original_styles_concept(("산책", style, None)))
+        self.assertEqual(exit_code, 1, payload["result"])
+        self.assertIn("txt EXCLUDE differs from concept.md ## Original Styles", checks["style_character_limit"]["detail"])
+        # An empty EXCLUDE matches a concept entry that records none.
+        exit_code, checks, payload = run_original_style_gate(style, exclude="", concept=original_styles_concept(("산책", style, None)))
+        self.assertEqual(exit_code, 0, payload["blockers"])
+        self.assertEqual(checks["exclude_budget"]["detail"], "0/8 terms; user-supplied original style (산책)")
+
+    def test_track_prompt_gate_rejects_original_style_without_style_source_header(self):
+        style = original_style_text()
+        cases = [
+            ("no header lines", ""),
+            ("Style Type only", "Style Type: 산책\n"),
+            ("Style Source only", "Style Source: user-supplied original style\n"),
+            ("other Style Source", "Style Type: 산책\nStyle Source: my own list\n"),
+            ("type-style Exclude Source instead", "Style Type: 산책\nExclude Source: user-supplied type style\n"),
+            ("Style Source with a different type name", "Style Type: 골목\nStyle Source: user-supplied original style\n"),
+        ]
+        for label, header in cases:
+            with self.subTest(label):
+                exit_code, checks, payload = run_original_style_gate(style, header=header)
+                self.assertEqual(exit_code, 1, payload["result"])
+                for name in ("style_character_limit", "exclude_budget"):
+                    self.assertEqual(checks[name]["status"], "FAIL", checks[name])
+                    self.assertIn("no user-supplied original style: ", checks[name]["detail"])
+                # Outside the mode STYLE must state a numeric BPM, a Key with Major/Minor and a gender exactly as before.
+                self.assertEqual(checks["bpm_metadata_matches_style"]["status"], "FAIL", checks["bpm_metadata_matches_style"])
+                self.assertEqual(checks["key_metadata_matches_style"]["status"], "FAIL", checks["key_metadata_matches_style"])
+        _, checks, _ = run_original_style_gate(style, header="")
+        self.assertIn("txt header needs `Style Type: <type>` and `Style Source: user-supplied original style`", checks["style_character_limit"]["detail"])
+
+    def test_track_prompt_gate_rejects_readable_style_values_that_differ_from_header_in_original_style_mode(self):
+        readable = original_style_text("74 BPM", "Eb Major", "Male vocal")
+        matching = {"bpm": "74", "key": "Eb Major", "vocal": "male lead"}
+        cases = [
+            ("BPM differs", {"bpm": "80"}, "bpm_metadata_matches_style", "metadata=80; STYLE=[74]"),
+            ("Key differs", {"key": "F Major"}, "key_metadata_matches_style", "metadata=F Major; STYLE=['EB major']"),
+            ("Key mode differs", {"key": "Eb Minor"}, "key_metadata_matches_style", "metadata=Eb Minor; STYLE=['EB major']"),
+            ("Key header unparseable while STYLE states a Key", {"key": "Eb"}, "key_metadata_matches_style", "metadata=Eb; STYLE=['EB major']"),
+            ("gender differs", {"vocal": "female lead"}, "vocal_gender_metadata_matches_style", "metadata=female lead; STYLE=['male']"),
+        ]
+        for label, override, failed_check, detail in cases:
+            with self.subTest(label):
+                exit_code, checks, payload = run_original_style_gate(readable, **{**matching, **override})
+                self.assertEqual(exit_code, 1, payload["result"])
+                self.assertEqual(checks[failed_check]["status"], "FAIL", checks[failed_check])
+                self.assertIn(detail, checks[failed_check]["detail"])
+                self.assertEqual({name for name, check in checks.items() if check["status"] == "FAIL"}, {failed_check})
+        # A numeric STYLE BPM beside a range is not compared, but the header must still be a number.
+        exit_code, checks, payload = run_original_style_gate(original_style_text("74 BPM (range 70-80 BPM)"), bpm="unknown")
+        self.assertEqual(exit_code, 1, payload["result"])
+        self.assertEqual(checks["bpm_metadata_matches_style"]["status"], "FAIL")
+
+    def test_track_prompt_gate_rejects_empty_header_values_in_original_style_mode(self):
+        style = original_style_text()
+        cases = [
+            ("Key empty", {"key": ""}, "key_metadata_matches_style", "Key must be present in the txt header"),
+            ("BPM empty", {"bpm": ""}, "bpm_metadata_matches_style", "BPM must start with a number in the txt header"),
+            ("BPM without a number", {"bpm": "original"}, "bpm_metadata_matches_style", "BPM must start with a number in the txt header"),
+            ("Vocal empty", {"vocal": ""}, "vocal_gender_metadata_matches_style", "Vocal must"),
+        ]
+        stateless = original_style_text(vocal="Soft husky lead vocal")
+        for label, override, failed_check, blocker in cases:
+            for state, text in (("unreadable-in-STYLE", style), ("no-gender-in-STYLE", stateless)):
+                with self.subTest(label=label, style=state):
+                    exit_code, checks, payload = run_original_style_gate(text, **override)
+                    self.assertEqual(exit_code, 1, payload["result"])
+                    self.assertEqual(checks[failed_check]["status"], "FAIL", checks[failed_check])
+                    self.assertIn(blocker, "\n".join(payload["blockers"]))
+                    self.assertEqual(checks["style_character_limit"]["status"], "PASS")
+                    self.assertEqual(checks["exclude_budget"]["status"], "PASS")
+        exit_code, checks, payload = run_original_style_gate(stateless, vocal="gender unknown")
+        self.assertEqual(checks["vocal_gender_metadata_matches_style"]["status"], "FAIL")
+
+    def test_track_prompt_gate_keeps_existing_checks_when_original_style_mode_is_off(self):
+        # 950 characters, no header lines: the 900-character budget still applies and says why no exception applied.
+        style = ("Korean R&B ballad, 74 BPM, Eb Major, Male vocal, " + "soft piano, " * 100)[:950]
+        exit_code, checks, payload = run_track_prompt_gate("# Test series\n", style, "choir", bpm="74", key="Eb Major", vocal="male lead")
+        self.assertEqual(exit_code, 1, payload["result"])
+        self.assertEqual(len(style), 950)
+        self.assertEqual(checks["style_character_limit"]["status"], "FAIL")
+        self.assertTrue(checks["style_character_limit"]["detail"].startswith("950/900 Unicode characters including internal whitespace; no user-supplied original style: txt header needs"), checks["style_character_limit"])
+        self.assertTrue(any("STYLE has 950 characters including whitespace; limit is 900" in blocker for blocker in payload["blockers"]), payload["blockers"])
+        # Exactly 900 characters passes and carries no original-style note.
+        exit_code, checks, payload = run_track_prompt_gate("# Test series\n", style[:900], "choir", bpm="74", key="Eb Major", vocal="male lead")
+        self.assertEqual(exit_code, 0, payload["blockers"])
+        self.assertEqual(checks["style_character_limit"], {"name": "style_character_limit", "status": "PASS", "detail": "900/900 Unicode characters including internal whitespace"})
+        self.assertEqual(checks["bpm_metadata_matches_style"]["detail"], "metadata=74; STYLE=[74]")
+        self.assertEqual(checks["key_metadata_matches_style"]["detail"], "metadata=Eb Major; STYLE=['EB major']")
+        # A BPM range is compared by its last number and an unstated Key still fails without the mode.
+        unreadable = original_style_text()
+        exit_code, checks, payload = run_track_prompt_gate("# Test series\n", unreadable, "choir", bpm="96", key="A♭", vocal="female lead")
+        self.assertEqual(checks["bpm_metadata_matches_style"]["status"], "FAIL")
+        self.assertEqual(checks["key_metadata_matches_style"]["status"], "FAIL")
+        # A header that claims the mode but has no matching Original Styles record falls back to the type-style EXCLUDE exception.
+        exit_code, checks, payload = run_track_prompt_gate(
+            type_styles_concept(("물결", MULGYEOL_EXCLUDE)), MULGYEOL_STYLE, MULGYEOL_EXCLUDE, bpm="74", key="A Major", vocal="male lead",
+            extra_header=USER_TYPE_HEADER + "Style Source: user-supplied original style\n",
+        )
+        self.assertEqual(exit_code, 0, payload["blockers"])
+        self.assertEqual(checks["exclude_budget"]["detail"], "13/8 terms; user-supplied type exception (물결)")
+        self.assertEqual(checks["style_character_limit"]["detail"], "677/900 Unicode characters including internal whitespace")
 
     def test_track_prompt_gate_rejects_unknown_and_mismatched_proposals(self):
         with tempfile.TemporaryDirectory() as tmp:

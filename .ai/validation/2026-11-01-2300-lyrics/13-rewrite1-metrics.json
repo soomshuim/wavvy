@@ -1,0 +1,527 @@
+{
+  "schema": "wavvy.rewrite_metrics.v1",
+  "order": 13,
+  "title": "편지",
+  "pass": "rewrite1",
+  "compare": {
+    "txt_style_chars": 716,
+    "json_chars": 716,
+    "txt_style_sha256": "0336054893862b323738f954a6c9ac79456f0b272bb55667a8430273649c8e12",
+    "json_sha256": "0336054893862b323738f954a6c9ac79456f0b272bb55667a8430273649c8e12",
+    "json_sha256_recomputed": "0336054893862b323738f954a6c9ac79456f0b272bb55667a8430273649c8e12",
+    "style_bytes_equal": true,
+    "style_sha_equal": true,
+    "style_raw_bytes_in_file": true,
+    "txt_lyrics_equals_record_draft": true,
+    "txt_lyrics_sha256": "8982fdee2a24776164efbdb85b664ce2b7e905868b0e832b072de0aca9bd83a2",
+    "record_draft_sha256": "8982fdee2a24776164efbdb85b664ce2b7e905868b0e832b072de0aca9bd83a2",
+    "record_claimed_sha256": "8982fdee2a24776164efbdb85b664ce2b7e905868b0e832b072de0aca9bd83a2",
+    "exclude_blank": true,
+    "header_status": "full-lyric-draft (short-line rewrite after 젠 rejection); generation pending",
+    "header_section_bars": "Intro=4; Verse 1=8; Pre-Chorus=4; Chorus=8; Verse 2=8; Chorus=8; Bridge=6; Final Chorus=8; Outro=8 (62 bars, about 206.7 seconds at 72 BPM; arrangement estimate only)",
+    "header_target_duration": "around 3:20 (planning target, not measured audio)",
+    "header_bpm": "72 (type STYLE with appended value; proposed, audio not measured)",
+    "header_key": "Db Major (type STYLE with appended value; proposed, audio not measured)",
+    "header_vocal": "male solo lead, warm baritone in a dry conversational chest voice (type STYLE wording; audio not measured)"
+  },
+  "line_length": {
+    "new_all_rows": {
+      "lines": 37,
+      "hangul_avg": 6.46,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 8.22,
+      "with_spaces_max": 11,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0
+    },
+    "new_unique_rows": 21,
+    "sung_rows_free_of_latin_letters": true,
+    "previous_version_all_rows": {
+      "lines": 36,
+      "hangul_avg": 9.83,
+      "hangul_min": 6,
+      "hangul_max": 12,
+      "with_spaces_avg": 13.36,
+      "with_spaces_max": 16,
+      "lines_over_8_hangul": 31,
+      "lines_over_10_hangul": 11
+    },
+    "작은 빛_reference_all_rows": {
+      "lines": 48,
+      "hangul_avg": 7.0,
+      "hangul_min": 3,
+      "hangul_max": 12,
+      "with_spaces_avg": 9.27,
+      "with_spaces_max": 16,
+      "lines_over_8_hangul": 5,
+      "lines_over_10_hangul": 3
+    },
+    "definition": "hangul = count of Hangul syllables per row excluding spaces and tags; chars_with_spaces = len(row); reference rows exclude lines with no Hangul (English-only hook lines)"
+  },
+  "per_section": [
+    {
+      "tag": "Intro",
+      "rows": 0
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.25,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 8.25,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Verse 1",
+      "rows_text": [
+        {
+          "row": "서랍 맨 안쪽에",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "접힌 종이 한 장",
+          "hangul": 6,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "펼치면 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "비스듬한 네 글씨",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.75,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 8.5,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Pre-Chorus",
+      "rows_text": [
+        {
+          "row": "뒷면을 쓸어 보면",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "글씨 모양 그대로",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "꾹꾹 눌린 자리가",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "손끝에 만져져",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        }
+      ]
+    },
+    {
+      "lines": 7,
+      "hangul_avg": 6.29,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 7.86,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Chorus",
+      "rows_text": [
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "접힌 자리마다",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "눌러 쓴 글씨마다",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "네 목소리가 남아",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 7.25,
+      "hangul_min": 7,
+      "hangul_max": 8,
+      "with_spaces_avg": 9.5,
+      "with_spaces_max": 11,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Verse 2",
+      "rows_text": [
+        {
+          "row": "첫 줄은 날씨 얘기",
+          "hangul": 7,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "두껍게 입으라고",
+          "hangul": 7,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "밥 거르지 말라고",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "별것 없는데 웃음 나",
+          "hangul": 8,
+          "chars_with_spaces": 11
+        }
+      ]
+    },
+    {
+      "lines": 7,
+      "hangul_avg": 6.29,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 7.86,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Chorus",
+      "rows_text": [
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "접힌 자리마다",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "눌러 쓴 글씨마다",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "네 목소리가 남아",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.5,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 8.5,
+      "with_spaces_max": 10,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Bridge",
+      "rows_text": [
+        {
+          "row": "셋째 줄 끝에",
+          "hangul": 5,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "번져 있는 잉크",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "망설이던 네 손도",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "따뜻하게 닿아 있어",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        }
+      ]
+    },
+    {
+      "lines": 7,
+      "hangul_avg": 6.29,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 7.86,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Final Chorus",
+      "rows_text": [
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "접힌 자리마다",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "눌러 쓴 글씨마다",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "네 목소리가 남아",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "바스락 바스락",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "네 편지를 읽어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        }
+      ]
+    },
+    {
+      "tag": "Outro",
+      "rows": 0
+    }
+  ],
+  "chorus_structure": {
+    "chorus_sections": [
+      "Chorus",
+      "Chorus",
+      "Final Chorus"
+    ],
+    "chorus_rows": [
+      "바스락 바스락",
+      "네 편지를 읽어",
+      "접힌 자리마다",
+      "눌러 쓴 글씨마다",
+      "네 목소리가 남아",
+      "바스락 바스락",
+      "네 편지를 읽어"
+    ],
+    "hook_rows": [
+      "바스락 바스락",
+      "네 편지를 읽어"
+    ],
+    "all_plain_chorus_bodies_identical": true,
+    "final_chorus_starts_with_chorus_body": true,
+    "final_chorus_extra_rows": [
+      []
+    ],
+    "final_chorus_extra_rows_equal_hook_pair": true,
+    "opens_and_closes_on_hook": true,
+    "hook_occurrences_per_chorus": 2,
+    "title_word_in_rows": [
+      2,
+      7
+    ],
+    "ending_sounds": [
+      "락",
+      "어",
+      "다",
+      "다",
+      "아",
+      "락",
+      "어"
+    ],
+    "rhyme_pairs": [
+      [
+        "락",
+        [
+          "바스락 바스락",
+          "바스락 바스락"
+        ]
+      ],
+      [
+        "어",
+        [
+          "네 편지를 읽어",
+          "네 편지를 읽어"
+        ]
+      ],
+      [
+        "다",
+        [
+          "접힌 자리마다",
+          "눌러 쓴 글씨마다"
+        ]
+      ]
+    ],
+    "repeated_words": {
+      "바스락": 4,
+      "네": 3,
+      "편지를": 2,
+      "읽어": 2
+    },
+    "beat_split": [
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "features_used": [
+      "① same-grammar pair: \"접힌 자리마다 / 눌러 쓴 글씨마다\" (the same `-마다` frame twice) leading into one closing row",
+      "② line-end sound: 읽어 / 남아 (-어 / -아) and 자리마다 / 글씨마다 (-마다 twice)",
+      "③ repeated word: `바스락 바스락` (a natural paper sound) opens and closes every Chorus; the whole hook pair returns at the end of the Chorus",
+      "④ the title 편지 sits in the hook line and returns inside the same Chorus",
+      "⑤ even 3-4 syllable chunks: 바스락 / 바스락 (3-3), 네 편지를 / 읽어, 접힌 자리 / 마다",
+      "onomatopoeia used: 바스락 (paper), 꾹꾹 (pressed lettering, in the Pre-Chorus)"
+    ]
+  },
+  "structure": {
+    "section_order": [
+      "Intro",
+      "Verse 1",
+      "Pre-Chorus",
+      "Chorus",
+      "Verse 2",
+      "Chorus",
+      "Bridge",
+      "Final Chorus",
+      "Outro"
+    ],
+    "section_bars": [
+      {
+        "section": "Intro",
+        "bars": 4
+      },
+      {
+        "section": "Verse 1",
+        "bars": 8
+      },
+      {
+        "section": "Pre-Chorus",
+        "bars": 4
+      },
+      {
+        "section": "Chorus",
+        "bars": 8
+      },
+      {
+        "section": "Verse 2",
+        "bars": 8
+      },
+      {
+        "section": "Chorus",
+        "bars": 8
+      },
+      {
+        "section": "Bridge",
+        "bars": 6
+      },
+      {
+        "section": "Final Chorus",
+        "bars": 8
+      },
+      {
+        "section": "Outro",
+        "bars": 8
+      }
+    ],
+    "total_bars": 62,
+    "bpm": 72,
+    "estimated_seconds": 206.7,
+    "estimated_mmss": "3:27",
+    "target_duration_seconds": 200,
+    "previous_candidates_displayed_duration": [
+      "3:04",
+      "3:13"
+    ],
+    "estimate_note": "bars x 4 x 60 / BPM; planning estimate only, audio not measured. The previous version used 62-64 planned bars (about 207 seconds) and its two clips displayed the durations listed above.",
+    "verse_rows": [
+      4,
+      4
+    ],
+    "verse_structure_exception": "같은 타입 원곡(작은 빛) 구조를 따름 — Verse 2개 + Pre-Chorus 1개 + 같은 Chorus 세 번, 젠 「원곡들 가사를 보면, 후렴은 반복적이고 전체적으호 문장이 길지 않아」",
+    "type_reference_flow": "Verse 1, Pre-Chorus, Chorus, Verse 2, Chorus, Bridge, Chorus, Outro (plus the Intro every Wavvy full song plans); two Verses, one Pre-Chorus after Verse 1, a Chorus that returns the same each time, a sparse Bridge. The English hook `little light` of the reference is not followed: the lyric is Korean only"
+  }
+}

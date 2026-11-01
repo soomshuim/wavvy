@@ -1,0 +1,10 @@
+const task = await taskSpace("wavvy-2300-suno-generate");
+const page = task.page("p1");
+await page.waitForTimeout(60000);
+const f = await readForm(page);
+const { hasScroller, rows } = await readAllList(page);
+await fs.writeFile(EVDIR + "/list-final.json", JSON.stringify({ at: new Date().toISOString(), credits_ui: f.credits, header: f.header, url: f.url, model_button: f.model, total_rows: rows.length, rows }, null, 1));
+await page.screenshot({ path: EVDIR + "/final-workspace-top.png" });
+console.log(JSON.stringify({ credits: f.credits, header: f.header, url: f.url, total: rows.length, saveTo: f.saveTo }));
+const tabs = await task.tabs();
+console.log(JSON.stringify(tabs.map(t => ({ label: t.label, url: t.url, openedBy: t.openedBy, active: t.active }))));

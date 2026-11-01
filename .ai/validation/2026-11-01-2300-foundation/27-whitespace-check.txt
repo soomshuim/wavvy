@@ -1,0 +1,6 @@
+$ grep -nE "[[:space:]]+$" SERIES/23-00/concept.md  (trailing whitespace)
+grep-exit=1 (1 = none found)
+$ grep -nE "	" ...
+grep-exit=1
+$ git diff --check -- MASTER/cli/SPEC.md
+exit=0

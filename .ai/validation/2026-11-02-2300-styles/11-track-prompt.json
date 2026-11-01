@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/23-00",
+  "artifact": "SERIES/23-00/input/tracks/11_라디오.txt",
+  "source_sha256": "b779b8da9e64bb8116cd44368fb8db516afe32ecc21585c36dc47edea7266160",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/23-00/input/tracks/11_라디오.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/23-00/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "624/900 Unicode characters including internal whitespace; user-supplied original style (먼지)"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "10/8 terms; user-supplied original style (먼지)"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=72; STYLE=[72]; user-supplied original style (먼지)"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=Eb Major; STYLE=['EB major']; user-supplied original style (먼지)"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=male; STYLE=['male']; user-supplied original style (먼지)"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/23-00/input/tracks/11_라디오.txt"
+  ]
+}

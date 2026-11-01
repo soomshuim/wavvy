@@ -1,0 +1,202 @@
+{
+ "order": 11,
+ "dry": false,
+ "title": "라디오",
+ "source_txt": "input/tracks/11_라디오.txt",
+ "source_sha256": "b779b8da9e64bb8116cd44368fb8db516afe32ecc21585c36dc47edea7266160",
+ "suno_params_header": {
+  "weirdness": 20,
+  "style_influence": 80,
+  "source": "SERIES/14-00/concept.md:976-980"
+ },
+ "startedAt": "2026-11-01T16:08:25.735Z",
+ "checkedAt": "2026-11-01T16:08:29.631Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 684,
+  "lyricsLenSrc": 684
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 20,
+  "form": 20
+ },
+ "styleLen": {
+  "source": 624,
+  "form": 624
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 20,
+   "passes": 0
+  },
+  {
+   "label": "Style Influence",
+   "value": 80,
+   "passes": 0
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 636",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Korean Soft R&B, 72 BPM, Eb Major\n\nVibraphone-led, supportive R&B groove,\nlaid-back brush rhythm, warm afternoon texture.\n\nMale vocal. Natural, intimate.\nRaw, Solid, Direct, Dry.\nChest voice dominant. No falsetto. Minimal vibrato.\n\nVerse1: vibraphone melody, sparse drums, drifting feel.\nVerse2: soft kick enters, groove locks in.\nLift through rhythm, not volume.\n\nChorus: kick and snare present, melodic bass,\npad widens gently.\n\nBridge: vibraphone and voice only, gentle build.\nOutro: gradual fade, vibraphone restates motif softly.\n\nSingle lead vocal throughout.\nChorus expansion by arrangement density only.",
+  "exclude": "Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Cold, Dark, Intense, Dramatic",
+  "title": "라디오",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "20",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "80",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 20% | Style Influence | Strong | 80% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Intro]\n[Instrumental]\n\n[Verse 1]\n[Relaxed male vocal, no harmony]\n열한 시에 켠 라디오\n낮은 목소리 사연 하나\n끝나고 나면 잡음 속에\n익숙한 전주가 나와\n\n[Bridge 1]\n[Chest voice, intimate]\n안테나 잡고 서 있던 너\n소리가 맑아지면 웃었지\n그 노래는 그대로야\n\n[Chorus]\n[Soft belt, no backing vocals]\n라디오 속에서\n노래가 들려와\n나도 몰래 입을 열어\n네 목소리 따라서\n\n[Verse 2]\n[Groove settles, subtle lift]\n눈금에 주황 불이 켜지고\n다음 곡 알리는 목소리 뒤\n방 안 가득 퍼지는 노랫말\n한 줄만 불러도 네가 옆에 있어\n\n[Bridge 2]\n[Chest voice, intimate]\n틀린 가사 신나게 부른 너\n내가 먼저 웃음이 터졌지\n그 노래는 그대로야\n\n[Chorus]\n[Soft belt, no backing vocals]\n라디오 속에서\n노래가 들려와\n나도 몰래 입을 열어\n네 목소리 따라서\n\n[Final Chorus]\n[Confident lift, restrained ad-libs, no backing vocals]\n라디오 속에서\n노래가 들려와\n나도 몰래 입을 열어\n네 목소리 따라서\n\n[Outro]\n[Instrumental, vibraphone motif fades]"
+ },
+ "knownIdsCount": 11
+}

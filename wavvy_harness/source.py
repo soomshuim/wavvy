@@ -12,6 +12,7 @@ CANONICAL_HEADER_NAMES = {
     for name in (
         "Track", "Order", "Status", "Draft Scope", "Genre", "Type", "BPM",
         "Key", "Vocal", "Length", "Target Duration", "Meter", "Section Bars",
+        "Style Type", "Exclude Source", "Style Source",
     )
 }
 

@@ -1,0 +1,153 @@
+{
+ "track": 16,
+ "title": "여름밤",
+ "type": "물안개",
+ "result": "PASS",
+ "counts": {
+  "PASS": 28,
+  "FAIL": 0
+ },
+ "leftover_pronoun_hits": [],
+ "checks": [
+  {
+   "check": "txt STYLE == json style (exact)",
+   "result": "PASS",
+   "detail": "chars=766"
+  },
+  {
+   "check": "txt STYLE sha256 == json style_sha256",
+   "result": "PASS",
+   "detail": "15de4017908364fd4b5a15b1e0a4ac1feebbcc20987630ebfb047fefd9a26d9d vs 15de4017908364fd4b5a15b1e0a4ac1feebbcc20987630ebfb047fefd9a26d9d"
+  },
+  {
+   "check": "txt STYLE chars == json style_chars",
+   "result": "PASS",
+   "detail": "766 vs 766"
+  },
+  {
+   "check": "txt EXCLUDE items == json exclude (order kept)",
+   "result": "PASS",
+   "detail": "18 items"
+  },
+  {
+   "check": "txt EXCLUDE is one line joined by ', '",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "txt STYLE == concept.md ## Original Styles text block",
+   "result": "PASS",
+   "detail": "물안개"
+  },
+  {
+   "check": "txt EXCLUDE items == concept.md '- EXCLUDE:' items",
+   "result": "PASS",
+   "detail": "18 items"
+  },
+  {
+   "check": "txt LYRICS == record Draft (stripped)",
+   "result": "PASS",
+   "detail": "sha256=6c2251a66a7f1a25b977a03d368252dc42517c1b41f107369b026c5c478c43b3"
+  },
+  {
+   "check": "record Source SHA256 == sha256(Draft)",
+   "result": "PASS",
+   "detail": "6c2251a66a7f1a25b977a03d368252dc42517c1b41f107369b026c5c478c43b3"
+  },
+  {
+   "check": "header BPM == json bpm_header",
+   "result": "PASS",
+   "detail": "80"
+  },
+  {
+   "check": "header Key == json key_header",
+   "result": "PASS",
+   "detail": "Eb Major"
+  },
+  {
+   "check": "header Vocal == json vocal_header",
+   "result": "PASS",
+   "detail": "male"
+  },
+  {
+   "check": "header Style Type == json type",
+   "result": "PASS",
+   "detail": "물안개"
+  },
+  {
+   "check": "header Style Source == user-supplied original style",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "header Suno Params JSON == json suno_params",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "header Status",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "header has no Exclude Source line",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "txt LYRICS differs from preserved only at corrected rows",
+   "result": "PASS",
+   "detail": "0 changed rows (expected 0)"
+  },
+  {
+   "check": "record bpm == txt BPM",
+   "result": "PASS",
+   "detail": "80, from the original 물안개 STYLE (`80 BPM`); no audio measure"
+  },
+  {
+   "check": "record key == json key_header",
+   "result": "PASS",
+   "detail": "Eb Major, from the original 물안개 STYLE (`key Eb Major`); no a"
+  },
+  {
+   "check": "record target_duration_seconds",
+   "result": "PASS",
+   "detail": "138"
+  },
+  {
+   "check": "record section_bars total/4-4 estimate >= target",
+   "result": "PASS",
+   "detail": "46 bars, 138.00s vs 138s"
+  },
+  {
+   "check": "txt Section Bars list == record section_bars",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "record duration_plan states the same bars/BPM/estimate",
+   "result": "PASS",
+   "detail": "46/80/138.0"
+  },
+  {
+   "check": "record vocal_identity says male",
+   "result": "PASS",
+   "detail": "one male lead, warm soulful tone, dry close-mic, s"
+  },
+  {
+   "check": "preserved txt sha256 recorded in record Source Map",
+   "result": "PASS",
+   "detail": "1d7cdc4164d8bd08f54895de5c8dadcb89bd4dba59b9c0cb524a3cb0bd8026ba"
+  },
+  {
+   "check": "preserved record sha256 recorded in record Source Map",
+   "result": "PASS",
+   "detail": "67bc91d15c0e940c5094480e4f419b375b611ca6b6dbdfd990c0995e6ea5f642"
+  },
+  {
+   "check": "no leftover female/woman/she/her wording about the narrator (review hits)",
+   "result": "PASS",
+   "detail": "0 hit(s)"
+  }
+ ]
+}

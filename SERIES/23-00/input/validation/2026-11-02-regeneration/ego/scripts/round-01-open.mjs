@@ -1,0 +1,11 @@
+const task = await taskSpace("wavvy-2300-suno-regenerate");
+console.log({ spaceId: task.spaceId, name: task.name, ownership: task.ownership });
+console.log(JSON.stringify((await task.tabs()).map(t => ({ label: t.label, url: t.url, title: t.title, active: t.active, openedBy: t.openedBy }))));
+const page = task.page("p1");
+await page.goto(WS_URL);
+await page.waitForSelector('div[role=textbox][aria-label="Lyrics editor"]', { state: "visible", timeout: 30000 }).catch(e => console.log("wait err", String(e).slice(0, 200)));
+await page.waitForTimeout(2500);
+console.log(await page.url(), await page.title());
+const f = await readForm(page);
+console.log(JSON.stringify({ ...f, lyricsLines: f.lyricsLines && f.lyricsLines.length }, null, 1));
+await page.screenshot({ path: EVDIR + "/ego/r01-screen.png" });

@@ -1,0 +1,527 @@
+{
+  "schema": "wavvy.rewrite_metrics.v1",
+  "order": 12,
+  "title": "스웨터",
+  "pass": "rewrite1",
+  "compare": {
+    "txt_style_chars": 557,
+    "json_chars": 557,
+    "txt_style_sha256": "16644e527b4fb75dd797efff05f4935d53da839e6624aa2e65f321e2cf428e0e",
+    "json_sha256": "16644e527b4fb75dd797efff05f4935d53da839e6624aa2e65f321e2cf428e0e",
+    "json_sha256_recomputed": "16644e527b4fb75dd797efff05f4935d53da839e6624aa2e65f321e2cf428e0e",
+    "style_bytes_equal": true,
+    "style_sha_equal": true,
+    "style_raw_bytes_in_file": true,
+    "txt_lyrics_equals_record_draft": true,
+    "txt_lyrics_sha256": "6bc093d53698c2feade6563547d3e70b84bd11bee086aa7b6a5f7e76eac0464d",
+    "record_draft_sha256": "6bc093d53698c2feade6563547d3e70b84bd11bee086aa7b6a5f7e76eac0464d",
+    "record_claimed_sha256": "6bc093d53698c2feade6563547d3e70b84bd11bee086aa7b6a5f7e76eac0464d",
+    "exclude_blank": true,
+    "header_status": "full-lyric-draft (short-line rewrite after 젠 rejection); generation pending",
+    "header_section_bars": "Intro=4; Verse 1=8; Bridge=4; Chorus=8; Verse 2=8; Bridge=4; Chorus=8; Final Chorus=10; Outro=6 (60 bars, about 200.0 seconds at 72 BPM; arrangement estimate only)",
+    "header_target_duration": "around 3:10 (planning target, not measured audio)",
+    "header_bpm": "72 (type STYLE with appended value; proposed, audio not measured)",
+    "header_key": "Ab Major (type STYLE with appended value; proposed, audio not measured)",
+    "header_vocal": "female solo lead, warm husky chest voice (type STYLE wording; audio not measured)"
+  },
+  "line_length": {
+    "new_all_rows": {
+      "lines": 36,
+      "hangul_avg": 6.69,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 8.72,
+      "with_spaces_max": 12,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0
+    },
+    "new_unique_rows": 20,
+    "sung_rows_free_of_latin_letters": true,
+    "previous_version_all_rows": {
+      "lines": 36,
+      "hangul_avg": 9.42,
+      "hangul_min": 7,
+      "hangul_max": 11,
+      "with_spaces_avg": 12.06,
+      "with_spaces_max": 15,
+      "lines_over_8_hangul": 23,
+      "lines_over_10_hangul": 10
+    },
+    "마음 밖_reference_all_rows": {
+      "lines": 36,
+      "hangul_avg": 5.42,
+      "hangul_min": 4,
+      "hangul_max": 7,
+      "with_spaces_avg": 6.86,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0
+    },
+    "definition": "hangul = count of Hangul syllables per row excluding spaces and tags; chars_with_spaces = len(row); reference rows exclude lines with no Hangul (English-only hook lines)"
+  },
+  "per_section": [
+    {
+      "tag": "Intro",
+      "rows": 0
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.75,
+      "hangul_min": 6,
+      "hangul_max": 8,
+      "with_spaces_avg": 9.25,
+      "with_spaces_max": 11,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Verse 1",
+      "rows_text": [
+        {
+          "row": "처음 추운 아침",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "옷장 맨 아래 칸",
+          "hangul": 6,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "접어 둔 남색 스웨터",
+          "hangul": 8,
+          "chars_with_spaces": 11
+        },
+        {
+          "row": "그대로 거기 있어",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 5.75,
+      "hangul_min": 5,
+      "hangul_max": 6,
+      "with_spaces_avg": 6.75,
+      "with_spaces_max": 7,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Bridge",
+      "rows_text": [
+        {
+          "row": "머리를 넣으면",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "소매가 길어서",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "손등을 덮어",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        },
+        {
+          "row": "접어도 내려와",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        }
+      ]
+    },
+    {
+      "lines": 6,
+      "hangul_avg": 7.0,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 9.33,
+      "with_spaces_max": 12,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Chorus",
+      "rows_text": [
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        },
+        {
+          "row": "보풀이 일어도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "냄새가 남아도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.75,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 8.25,
+      "with_spaces_max": 9,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Verse 2",
+      "rows_text": [
+        {
+          "row": "팔꿈치에 보풀",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "손끝으로 쓸어 봐",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        },
+        {
+          "row": "섬유유연제 냄새",
+          "hangul": 7,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "옷깃에 스며 있어",
+          "hangul": 7,
+          "chars_with_spaces": 9
+        }
+      ]
+    },
+    {
+      "lines": 4,
+      "hangul_avg": 6.25,
+      "hangul_min": 6,
+      "hangul_max": 7,
+      "with_spaces_avg": 7.75,
+      "with_spaces_max": 8,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Bridge",
+      "rows_text": [
+        {
+          "row": "벗기가 싫어서",
+          "hangul": 6,
+          "chars_with_spaces": 7
+        },
+        {
+          "row": "종일 입고 있어",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "돌려주지 못해서",
+          "hangul": 7,
+          "chars_with_spaces": 8
+        },
+        {
+          "row": "다행인 것 같아",
+          "hangul": 6,
+          "chars_with_spaces": 8
+        }
+      ]
+    },
+    {
+      "lines": 6,
+      "hangul_avg": 7.0,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 9.33,
+      "with_spaces_max": 12,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Chorus",
+      "rows_text": [
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        },
+        {
+          "row": "보풀이 일어도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "냄새가 남아도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        }
+      ]
+    },
+    {
+      "lines": 8,
+      "hangul_avg": 6.88,
+      "hangul_min": 5,
+      "hangul_max": 8,
+      "with_spaces_avg": 9.25,
+      "with_spaces_max": 12,
+      "lines_over_8_hangul": 0,
+      "lines_over_10_hangul": 0,
+      "tag": "Final Chorus",
+      "rows_text": [
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        },
+        {
+          "row": "보풀이 일어도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "냄새가 남아도 좋아",
+          "hangul": 8,
+          "chars_with_spaces": 10
+        },
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        },
+        {
+          "row": "네 스웨터 긴 소매 속",
+          "hangul": 8,
+          "chars_with_spaces": 12
+        },
+        {
+          "row": "아직 따뜻해",
+          "hangul": 5,
+          "chars_with_spaces": 6
+        }
+      ]
+    },
+    {
+      "tag": "Outro",
+      "rows": 0
+    }
+  ],
+  "chorus_structure": {
+    "chorus_sections": [
+      "Chorus",
+      "Chorus",
+      "Final Chorus"
+    ],
+    "chorus_rows": [
+      "네 스웨터 긴 소매 속",
+      "아직 따뜻해",
+      "보풀이 일어도 좋아",
+      "냄새가 남아도 좋아",
+      "네 스웨터 긴 소매 속",
+      "아직 따뜻해"
+    ],
+    "hook_rows": [
+      "네 스웨터 긴 소매 속",
+      "아직 따뜻해"
+    ],
+    "all_plain_chorus_bodies_identical": true,
+    "final_chorus_starts_with_chorus_body": true,
+    "final_chorus_extra_rows": [
+      [
+        "네 스웨터 긴 소매 속",
+        "아직 따뜻해"
+      ]
+    ],
+    "final_chorus_extra_rows_equal_hook_pair": true,
+    "opens_and_closes_on_hook": true,
+    "hook_occurrences_per_chorus": 2,
+    "title_word_in_rows": [
+      1,
+      5
+    ],
+    "ending_sounds": [
+      "속",
+      "해",
+      "아",
+      "아",
+      "속",
+      "해"
+    ],
+    "rhyme_pairs": [
+      [
+        "속",
+        [
+          "네 스웨터 긴 소매 속",
+          "네 스웨터 긴 소매 속"
+        ]
+      ],
+      [
+        "해",
+        [
+          "아직 따뜻해",
+          "아직 따뜻해"
+        ]
+      ],
+      [
+        "아",
+        [
+          "보풀이 일어도 좋아",
+          "냄새가 남아도 좋아"
+        ]
+      ]
+    ],
+    "repeated_words": {
+      "네": 2,
+      "스웨터": 2,
+      "긴": 2,
+      "소매": 2,
+      "속": 2,
+      "아직": 2,
+      "따뜻해": 2,
+      "좋아": 2
+    },
+    "beat_split": [
+      [
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "features_used": [
+      "① same-grammar pair: \"보풀이 일어도 좋아 / 냄새가 남아도 좋아\" (the same `-도 좋아` frame twice)",
+      "② line-end sound: 좋아 / 좋아 in the middle pair, and the hook pair ends on 따뜻해 every time",
+      "③ repeated words: the hook pair opens and closes each Chorus (the 마음 밖 type repeats its hook pair the same way), and `-도 좋아` returns once more in the next row",
+      "④ the title 스웨터 sits in the hook line and returns inside the same Chorus (3 times in the Final Chorus)",
+      "⑤ even 3-4 syllable chunks: 네 스웨터 / 긴 소매 속 / 아직 따뜻해 (4-4-5) and 보풀이 / 일어도 / 좋아 (3-3-2)",
+      "no onomatopoeia: none fits a sweater naturally, so none is forced"
+    ]
+  },
+  "structure": {
+    "section_order": [
+      "Intro",
+      "Verse 1",
+      "Bridge",
+      "Chorus",
+      "Verse 2",
+      "Bridge",
+      "Chorus",
+      "Final Chorus",
+      "Outro"
+    ],
+    "section_bars": [
+      {
+        "section": "Intro",
+        "bars": 4
+      },
+      {
+        "section": "Verse 1",
+        "bars": 8
+      },
+      {
+        "section": "Bridge",
+        "bars": 4
+      },
+      {
+        "section": "Chorus",
+        "bars": 8
+      },
+      {
+        "section": "Verse 2",
+        "bars": 8
+      },
+      {
+        "section": "Bridge",
+        "bars": 4
+      },
+      {
+        "section": "Chorus",
+        "bars": 8
+      },
+      {
+        "section": "Final Chorus",
+        "bars": 10
+      },
+      {
+        "section": "Outro",
+        "bars": 6
+      }
+    ],
+    "total_bars": 60,
+    "bpm": 72,
+    "estimated_seconds": 200.0,
+    "estimated_mmss": "3:20",
+    "target_duration_seconds": 190,
+    "previous_candidates_displayed_duration": [
+      "3:12",
+      "2:56"
+    ],
+    "estimate_note": "bars x 4 x 60 / BPM; planning estimate only, audio not measured. The previous version used 62-64 planned bars (about 207 seconds) and its two clips displayed the durations listed above.",
+    "verse_rows": [
+      4,
+      4
+    ],
+    "verse_structure_exception": "같은 타입 원곡(마음 밖) 구조를 따름 — Verse 2개 + Bridge·Chorus가 번갈아 도는 흐름, 젠 「원곡들 가사를 보면, 후렴은 반복적이고 전체적으호 문장이 길지 않아」",
+    "type_reference_flow": "Intro, Verse 1, Bridge, Chorus, Verse 2, Bridge, Chorus, Final Chorus, Outro; two Verses, a short Bridge before each Chorus, a Final Chorus that returns the same Chorus and then its hook pair once more"
+  }
+}

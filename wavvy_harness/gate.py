@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from .state import check_state
+from .state import _markdown_section, check_state
 from .source import parse_track_source_fields
 from .packaging import check_thumbnail_layout, packaging_contract
 from .upload_copy import check_upload_copy
@@ -35,8 +35,14 @@ LYRIC_REVIEW_AXES = ("Expression", "Connection", "Emotional Flow")
 LEGACY_FULL_SONG_APPROVALS = Path("MASTER/lyrics/legacy-full-song-approvals.json")
 TRACK_PROMPT_STYLE_LIMIT = 900
 TRACK_PROMPT_EXCLUDE_LIMIT = 8
+USER_TYPE_EXCLUDE_SOURCE = "user-supplied type style"
+USER_ORIGINAL_STYLE_SOURCE = "user-supplied original style"
+ORIGINAL_STYLE_BLOCK_RE = re.compile(r"^```text[ \t]*\n(.*?)\n```[ \t]*$", re.MULTILINE | re.DOTALL)
+TYPE_STYLE_HEADING_RE = re.compile(r"^###[ \t]+(.+?)[ \t]*$", re.MULTILINE)
+TYPE_STYLE_EXCLUDE_RE = re.compile(r"^[ \t]*[-*+][ \t]+EXCLUDE[ \t]*:[ \t]*(.*?)[ \t]*$", re.MULTILINE)
 KEY_MODE_RE = re.compile(r"(?<![A-Za-z])([A-G](?:#|b|♯|♭)?)\s+(Major|Minor)\b", re.IGNORECASE)
 STYLE_BPM_RE = re.compile(r"(?<!\d)(\d{1,3})\s*BPM\b", re.IGNORECASE)
+STYLE_BPM_RANGE_RE = re.compile(r"(?<!\d)\d{1,3}\s*(?:[-–—~]|to)\s*\d{1,3}\s*BPM\b", re.IGNORECASE)
 VOCAL_GENDER_RE = re.compile(r"(?<![A-Za-z])(female|male)(?![A-Za-z])|여성|남성", re.IGNORECASE)
 
 
@@ -81,6 +87,62 @@ def _key_mode(text: str) -> str:
     return f"{note} {match.group(2).lower()}"
 
 
+def _exclude_terms(text: str) -> list[str]:
+    return [term.strip() for line in text.splitlines() for term in re.split(r"[,;]", line) if term.strip()]
+
+
+def _concept_style_entry(concept_text: str, section_name: str, style_type: str) -> tuple[str, str]:
+    """Return (body, "") of the single `### <style_type>` entry under `## <section_name>`, else ("", reason)."""
+    section = _markdown_section(concept_text, section_name)
+    headings = list(TYPE_STYLE_HEADING_RE.finditer(section))
+    entries = [heading for heading in headings if heading.group(1) == style_type]
+    if len(entries) != 1:
+        return "", f"concept.md ## {section_name} has {len(entries)} `### {style_type}` entries; exactly 1 is required"
+    following = next((heading for heading in headings if heading.start() > entries[0].start()), None)
+    return section[entries[0].end():following.start() if following else len(section)], ""
+
+
+def _user_type_exclude_exception(concept_text: str, metadata: dict[str, str], exclude_terms: list[str]) -> tuple[str, str]:
+    """Return (type, "") when an over-budget EXCLUDE is the user-supplied one recorded in concept.md, else ("", reason)."""
+    style_type = metadata.get("Style Type", "").strip()
+    if not style_type or metadata.get("Exclude Source", "").strip().casefold() != USER_TYPE_EXCLUDE_SOURCE:
+        return "", f"txt header needs `Style Type: <type>` and `Exclude Source: {USER_TYPE_EXCLUDE_SOURCE}`"
+    body, reason = _concept_style_entry(concept_text, "Type Styles", style_type)
+    if reason:
+        return "", reason
+    recorded = TYPE_STYLE_EXCLUDE_RE.findall(body)
+    if len(recorded) != 1:
+        return "", f"concept.md `### {style_type}` has {len(recorded)} `- EXCLUDE:` lines; exactly 1 is required"
+    if _exclude_terms(recorded[0]) != exclude_terms:
+        return "", f"txt EXCLUDE differs from concept.md `### {style_type}` in items or order"
+    return style_type, ""
+
+
+def _user_original_style(concept_text: str, metadata: dict[str, str], style: str, exclude_terms: list[str]) -> tuple[str, str]:
+    """Return (type, "") when the txt STYLE and EXCLUDE are the user's original style recorded in concept.md, else ("", reason).
+
+    STYLE must equal the entry's first ```text block (outer whitespace trimmed, line breaks kept) code point for code point,
+    and EXCLUDE must equal the entry's `- EXCLUDE:` items in the same order.
+    """
+    style_type = metadata.get("Style Type", "").strip()
+    if not style_type or metadata.get("Style Source", "").strip().casefold() != USER_ORIGINAL_STYLE_SOURCE:
+        return "", f"txt header needs `Style Type: <type>` and `Style Source: {USER_ORIGINAL_STYLE_SOURCE}`"
+    body, reason = _concept_style_entry(concept_text, "Original Styles", style_type)
+    if reason:
+        return "", reason
+    block = ORIGINAL_STYLE_BLOCK_RE.search(body)
+    if not block:
+        return "", f"concept.md ## Original Styles `### {style_type}` has no ```text block"
+    if block.group(1).strip() != style:
+        return "", f"txt STYLE differs from the ```text block of concept.md ## Original Styles `### {style_type}`"
+    recorded = TYPE_STYLE_EXCLUDE_RE.findall(body[:block.start()] + body[block.end():])
+    if len(recorded) > 1:
+        return "", f"concept.md ## Original Styles `### {style_type}` has {len(recorded)} `- EXCLUDE:` lines; at most 1 is allowed"
+    if (_exclude_terms(recorded[0]) if recorded else []) != exclude_terms:
+        return "", f"txt EXCLUDE differs from concept.md ## Original Styles `### {style_type}` in items or order"
+    return style_type, ""
+
+
 def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: Any, source_error: str) -> dict[str, Any]:
     """Check one newly authored full-track txt source, without judging musical quality."""
     checks: list[dict[str, Any]] = []
@@ -95,7 +157,8 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
         blockers.append("track-prompt requires --artifact pointing to one SERIES/[series]/input/tracks/*.txt or input/remakes/*.txt source")
 
     concept_path = series_path / "concept.md"
-    concept_ok = bool(_read_text(concept_path))
+    concept_text = _read_text(concept_path)
+    concept_ok = bool(concept_text)
     checks.append(_check("series_concept_present", concept_ok, str(concept_path)))
     if not concept_ok:
         blockers.append("series concept.md is required for a new full-track prompt")
@@ -116,40 +179,74 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
         if not section_ok:
             blockers.append("full-track source requires STYLE, EXCLUDE, and LYRICS sections")
 
+        exclude_terms = _exclude_terms(exclude)
+        original_type, original_reason = _user_original_style(concept_text, metadata, style, exclude_terms)
+        original_note = f"user-supplied original style ({original_type})"
+        original_miss = f"no user-supplied original style: {original_reason}"
+
         style_length = len(style)
-        length_ok = style_length <= TRACK_PROMPT_STYLE_LIMIT
-        checks.append(_check("style_character_limit", length_ok, f"{style_length}/{TRACK_PROMPT_STYLE_LIMIT} Unicode characters including internal whitespace"))
+        length_ok = style_length <= TRACK_PROMPT_STYLE_LIMIT or bool(original_type)
+        length_detail = f"{style_length}/{TRACK_PROMPT_STYLE_LIMIT} Unicode characters including internal whitespace"
+        if original_type:
+            length_detail += f"; {original_note}"
+        elif not length_ok:
+            length_detail += f"; {original_miss}"
+        checks.append(_check("style_character_limit", length_ok, length_detail))
         if not length_ok:
-            blockers.append(f"STYLE has {style_length} characters including whitespace; limit is {TRACK_PROMPT_STYLE_LIMIT}")
+            blockers.append(f"STYLE has {style_length} characters including whitespace; limit is {TRACK_PROMPT_STYLE_LIMIT} ({original_reason})")
 
-        exclude_lines = [line.strip() for line in exclude.splitlines() if line.strip()]
-        exclude_terms = [term.strip() for line in exclude_lines for term in re.split(r"[,;]", line) if term.strip()]
         exclude_ok = len(exclude_terms) <= TRACK_PROMPT_EXCLUDE_LIMIT
-        checks.append(_check("exclude_budget", exclude_ok, f"{len(exclude_terms)}/{TRACK_PROMPT_EXCLUDE_LIMIT} terms"))
-        if not exclude_ok:
-            blockers.append(f"EXCLUDE has {len(exclude_terms)} terms; maximum is {TRACK_PROMPT_EXCLUDE_LIMIT}")
+        exclude_detail = f"{len(exclude_terms)}/{TRACK_PROMPT_EXCLUDE_LIMIT} terms"
+        if original_type:
+            exclude_ok = True
+            exclude_detail += f"; {original_note}"
+        elif not exclude_ok:
+            exception_type, exception_reason = _user_type_exclude_exception(concept_text, metadata, exclude_terms)
+            if exception_type:
+                exclude_ok = True
+                exclude_detail += f"; user-supplied type exception ({exception_type})"
+            else:
+                exclude_detail += f"; no user-supplied type exception: {exception_reason}; {original_miss}"
+                blockers.append(f"EXCLUDE has {len(exclude_terms)} terms; maximum is {TRACK_PROMPT_EXCLUDE_LIMIT} ({exception_reason}; {original_reason})")
+        checks.append(_check("exclude_budget", exclude_ok, exclude_detail))
 
+        # In the original-style mode a metadata value is compared with STYLE only when STYLE states it
+        # in a readable form; otherwise the header value merely has to be present.
         bpm_text = metadata.get("BPM", "")
         bpm_match = re.match(r"^\s*(\d{1,3})\b", bpm_text)
         bpm = int(bpm_match.group(1)) if bpm_match else None
         style_bpms = {int(match.group(1)) for match in STYLE_BPM_RE.finditer(style)}
-        bpm_ok = bpm is not None and bpm > 0 and style_bpms == {bpm}
-        checks.append(_check("bpm_metadata_matches_style", bpm_ok, f"metadata={bpm_text or '<missing>'}; STYLE={sorted(style_bpms)}"))
+        style_bpm_ranges = [match.group().strip() for match in STYLE_BPM_RANGE_RE.finditer(style)]
+        bpm_comparable = not original_type or (bool(style_bpms) and not style_bpm_ranges)
+        bpm_ok = bpm is not None and bpm > 0 and (style_bpms == {bpm} if bpm_comparable else True)
+        bpm_detail = f"metadata={bpm_text or '<missing>'}; STYLE={sorted(style_bpms)}"
+        if not bpm_comparable:
+            bpm_detail = f"metadata={bpm_text or '<missing>'}; STYLE={'range ' + ', '.join(style_bpm_ranges) if style_bpm_ranges else 'no numeric BPM'} (not compared)"
+        if original_type:
+            bpm_detail += f"; {original_note}"
+        checks.append(_check("bpm_metadata_matches_style", bpm_ok, bpm_detail))
         if not bpm_ok:
-            blockers.append("BPM must start with a number in the txt header and match the numeric BPM in STYLE")
+            blockers.append("BPM must start with a number in the txt header and match the numeric BPM in STYLE" if bpm_comparable else "BPM must start with a number in the txt header")
 
         key_text = metadata.get("Key", "")
         key = _key_mode(key_text) if KEY_MODE_RE.match(key_text.strip()) else ""
         style_keys = {_key_mode(match.group()) for match in KEY_MODE_RE.finditer(style)}
-        key_ok = bool(key) and style_keys == {key}
-        checks.append(_check("key_metadata_matches_style", key_ok, f"metadata={key_text or '<missing>'}; STYLE={sorted(style_keys)}"))
+        key_comparable = not original_type or bool(style_keys)
+        key_ok = (bool(key) and style_keys == {key}) if key_comparable else bool(key_text.strip())
+        key_detail = f"metadata={key_text or '<missing>'}; STYLE={sorted(style_keys)}"
+        if not key_comparable:
+            key_detail += " (no note with Major/Minor in STYLE, not compared)"
+        if original_type:
+            key_detail += f"; {original_note}"
+        checks.append(_check("key_metadata_matches_style", key_ok, key_detail))
         if not key_ok:
-            blockers.append("Key must name a note and Major/Minor in the txt header and match STYLE")
+            blockers.append("Key must name a note and Major/Minor in the txt header and match STYLE" if key_comparable else "Key must be present in the txt header")
 
         vocal_text = metadata.get("Vocal", "")
         vocal_genders = _vocal_genders(vocal_text)
         style_genders = _vocal_genders(style)
         instrumental = vocal_text.strip().casefold() == "instrumental"
+        gender_comparable = instrumental or not original_type or bool(style_genders)
         if instrumental:
             gender_ok = not style_genders and bool(re.search(r"\binstrumental\b", style, re.IGNORECASE))
             instrumental_lyrics_ok = sections.get("LYRICS", "").strip() == "[Instrumental]"
@@ -158,10 +255,15 @@ def _track_prompt_gate(series_path: Path, artifact_path: Path | None, source: An
                 blockers.append("Instrumental source LYRICS must contain exactly [Instrumental]")
         else:
             gender_known = not re.search(r"unknown|tbd|미정|불명", vocal_text, re.IGNORECASE)
-            gender_ok = bool(vocal_genders) and gender_known and style_genders == vocal_genders
-        checks.append(_check("vocal_gender_metadata_matches_style", gender_ok, f"metadata={vocal_text or '<missing>'}; STYLE={sorted(style_genders)}"))
+            gender_ok = (bool(vocal_genders) and gender_known and style_genders == vocal_genders) if gender_comparable else (bool(vocal_text.strip()) and gender_known)
+        gender_detail = f"metadata={vocal_text or '<missing>'}; STYLE={sorted(style_genders)}"
+        if not gender_comparable:
+            gender_detail += " (no vocal gender in STYLE, not compared)"
+        if original_type:
+            gender_detail += f"; {original_note}"
+        checks.append(_check("vocal_gender_metadata_matches_style", gender_ok, gender_detail))
         if not gender_ok:
-            blockers.append("Vocal must match STYLE as male/female, 남성/여성, or instrumental without a gender")
+            blockers.append("Vocal must match STYLE as male/female, 남성/여성, or instrumental without a gender" if gender_comparable else "Vocal must be present in the txt header")
 
     return {
         "schema": "wavvy.track_prompt_gate.v1",

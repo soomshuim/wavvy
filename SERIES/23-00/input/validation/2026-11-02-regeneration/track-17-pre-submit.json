@@ -1,0 +1,202 @@
+{
+ "order": 17,
+ "dry": false,
+ "title": "막차",
+ "source_txt": "input/tracks/17_막차.txt",
+ "source_sha256": "7f6c7570a6c8c2fe2eb09c81931492a13b69f24d3e1a1098cdb189e292be0ac9",
+ "suno_params_header": {
+  "weirdness": "default",
+  "style_influence": "default",
+  "source": "원곡에 숫자 기록 없음: SERIES/18-00/concept.md:1113-1118에 숫자 대신 `기존 싱글`"
+ },
+ "startedAt": "2026-11-01T16:09:39.417Z",
+ "checkedAt": "2026-11-01T16:09:43.157Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 724,
+  "lyricsLenSrc": 724
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 17,
+  "form": 17
+ },
+ "styleLen": {
+  "source": 598,
+  "form": 598
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 50,
+   "passes": 0
+  },
+  {
+   "label": "Style Influence",
+   "value": 50,
+   "passes": 0
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 576",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Korean Slow R&B Ballad, 67 BPM, Db Major\n\nMale vocal, Raw, Dry, Unprocessed, Chest voice dominant\nNo falsetto, No runs, No melisma\nSpeech-like phrasing, Narrow melodic range\nPrecise articulation, clear consonants\n\nsupportive, warm pad texture\nMinimal drums or drumless verses\nSoft bass, low presence\nModerate reverb, EQ balanced sound, clean mix\n\nVerse2 subtle intensity increase by vocal weight only\nChorus: longer sustain on hook phrase, no belt\nBridge: single guitar line, no solo flourish\n\nNo harmony, no backing vocals, no doubles\nLead vocal remains single and dominant throughout",
+  "exclude": "Rap, Hip-hop, Spoken word, Harmonies, Backing vocals, Doubles, Choir, Ad-libs, Runs, Melisma, Falsetto, Bright, Upbeat, Energetic, Fast",
+  "title": "막차",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Intro]\n[Instrumental]\n\n[Verse]\n[Chest voice, No harmony]\n밤이 깊어 가면 막차에 올라요\n빈자리 많아도 창가에 앉아요\n\n[Verse]\n[Direct vocal, Dry voice]\n버스가 흔들리면 어깨가 먼저\n네가 졸던 쪽으로 자꾸 기울죠\n\n[Verse]\n[Chest voice]\n너는 앉자마자 내 어깨에 기댔죠\n팔이 저려 와도 마냥 포근했죠\n\n[Verse]\n[Direct vocal]\n묵직한 그 무게가 참 좋았어요\n그 샴푸 향기가 아직 코끝에 남았어요\n\n[Pre-Chorus]\n[Chest voice, No falsetto]\n어두운 창문에 둘이 함께 비치면\n꼭 한 사람처럼 포개져서 흔들렸죠\n\n[Chorus]\n[Chest voice, No harmony]\n조금만 조금만 더 달려요\n흔들리는 이 길이 좋아요\n네 머리가 내 어깨에 닿던 때\n아무 말 하지 않아도 따뜻했죠\n\n[Verse]\n[Direct vocal, Dry voice]\n빈 옆자리에 가방을 놓았는데\n네가 앉았던 것처럼 괜히 따뜻해요\n\n[Verse]\n[Chest voice]\n내릴 때가 다 되어서 벨을 눌러요\n창에 비친 내가 생각보다 웃고 있죠\n\n[Instrumental]\n\n[Chorus]\n[Chest voice, No harmony]\n조금만 조금만 더 달려요\n흔들리는 이 길이 좋아요\n네 머리가 내 어깨에 닿던 때\n아무 말 하지 않아도 따뜻했죠\n\n[Outro]\n[Instrumental]"
+ },
+ "knownIdsCount": 23
+}

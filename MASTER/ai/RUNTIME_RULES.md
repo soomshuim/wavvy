@@ -1,8 +1,8 @@
 # Wavvy Runtime Rules
 
 Version: 1.0
-Last Updated: 2026-05-02
-Owns: runtime hard constraints, media execution cautions, approval/safety rules
+Last Updated: 2026-11-01
+Owns: runtime hard constraints, media execution cautions, approval/safety rules, browser connection default
 
 This file holds rules that agents must know at execution time but that do not belong in thin entrypoint routers.
 
@@ -23,6 +23,18 @@ Already-uploaded videos retain their historical artwork and release evidence; do
 - Never delete source docs or track source files unless the relevant workflow says deletion is safe.
 - Do not treat ignored/generated media as durable truth. Use state and concept records first.
 - Do not commit or push unless the user explicitly requests it.
+
+## Browser Connection
+
+Wavvy's default browser is **ego lite**, driven through the `ego-browser` CLI (`ego-browser nodejs` from Bash). Basis, 젠 2026-11-01: 「Aside 아니고 ego lite로」 and 「병렬로 wavvy 하네스의 연결을 모두 ego lite로 바꿔줘」.
+
+- Every browser step in a skill or plan (Suno, YouTube Studio, distributor and store sign-ups, downloads, uploads) uses this path unless 젠 names another browser product or connection for that specific task.
+- At the start of each browser task run `ego-browser skill` and use only the API in the installed version's guide. Do not rely on remembered method names.
+- Use one TaskSpace per user goal and resume it in later rounds. Never close a tab that reports `openedBy: "unknown"`; treat it as 젠's.
+- If the default or specified path fails (CLI missing, blocked page, error), stop and report the exact error. Do not switch silently to another browser product or connection; a different path counts as approved only when 젠 names it for that task.
+- Run `ego-browser upgrade` only after 젠 approves, then run `ego-browser skill` again.
+- Do not assume ego lite is signed in to Google, Suno, YouTube, Apple, or a distributor. Confirm on the actual screen each time.
+- Aside records in earlier artifacts (`SERIES/**`, `.ai/research/**`, reviews, validation, cleanup, SESSION, HANDOFF, CHANGELOG) are historical facts about those runs. Do not rewrite them to match this rule.
 
 ## Complex Media Protocol
 

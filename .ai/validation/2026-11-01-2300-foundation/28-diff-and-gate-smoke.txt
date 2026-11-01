@@ -1,0 +1,29 @@
+$ diff concept.before.md concept.md (changed hunks only, first 140 chars/line)
+79c79
+81c81
+84c84
+148c148
+150c150
+153c153
+249a250,271
+250a273,274
+264,274c288,298
+276c300
+
+$ git diff --stat -- MASTER/cli/SPEC.md
+ MASTER/cli/SPEC.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git diff -U0 -- MASTER/cli/SPEC.md
+diff --git a/MASTER/cli/SPEC.md b/MASTER/cli/SPEC.md
+index 239cb10..9279f7d 100644
+--- a/MASTER/cli/SPEC.md
++++ b/MASTER/cli/SPEC.md
+@@ -148 +148 @@ STYLE에 숫자 BPM이 없는 곡은 마지막 필드에 `NA`를 쓴다. 이 값
+-- `gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/[track].txt` checks one newly authored full-track source; a remake source may instead live directly under `input/remakes/`. It reports the txt SHA-256, `scope: NEW_FULL_TRACK_PROMPT_CONTRACT`, STYLE length (Wavvy's internal 900-character budget including whitespace), EXCLUDE count (internal maximum eight items), numeric BPM, and Key/Mode. Vocal sources require explicit header/STYLE gender matching. Instrumental sources use `Vocal: Instrumental`, an instrumental STYLE without a vocal gender, and exactly `[Instrumental]` in LYRICS. This check does not inspect musical quality or certify Suno audio. User-provided rem
++- `gate SERIES/[시리즈] --stage track-prompt --artifact SERIES/[시리즈]/input/tracks/[track].txt` checks one newly authored full-track source; a remake source may instead live directly under `input/remakes/`. It reports the txt SHA-256, `scope: NEW_FULL_TRACK_PROMPT_CONTRACT`, STYLE length (Wavvy's internal 900-character budget including whitespace), EXCLUDE count (internal maximum eight items; more is allowed only when it exactly matches a user-supplied type EXCLUDE recorded in the series `concept.md` `## Type Styles` — see `MASTER/style/STYLE.md` §3), numeric BPM, and Key/Mode. Vocal sources require explicit header/STYLE gender matching. Instrumental sources use `Vocal: Instrumental`, an instru
+
+$ gate parser smoke: 물결 EXCLUDE exception resolves against edited concept.md
+13 terms: 13
+match -> ('물결', '')
+negative (reordered) -> ('', 'txt EXCLUDE differs from concept.md `### 물결` in items or order')

@@ -1,0 +1,202 @@
+{
+ "order": 14,
+ "dry": false,
+ "title": "기타",
+ "source_txt": "input/tracks/14_기타.txt",
+ "source_sha256": "678805060204f420834d8e6a719bfffb6c1aad97f422d23681c3d9c5950dcc3c",
+ "suno_params_header": {
+  "weirdness": 25,
+  "style_influence": 75,
+  "source": "SERIES/14-00/concept.md:361-365"
+ },
+ "startedAt": "2026-11-01T16:09:03.214Z",
+ "checkedAt": "2026-11-01T16:09:11.305Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 1214,
+  "lyricsLenSrc": 1214
+ },
+ "styleExactRaw": true,
+ "styleNewlines": {
+  "source": 26,
+  "form": 26
+ },
+ "styleLen": {
+  "source": 955,
+  "form": 955
+ },
+ "sliderSet": [
+  {
+   "label": "Weirdness",
+   "value": 25,
+   "passes": 1
+  },
+  {
+   "label": "Style Influence",
+   "value": 75,
+   "passes": 1
+  }
+ ],
+ "moreOpts": {
+  "before": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  },
+  "after": {
+   "found": true,
+   "expanded": "true",
+   "clipped": false
+  }
+ },
+ "sliderRowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 25% | Style Influence | Strong | 75% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On",
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true,
+  "moreOptionsOpen": true,
+  "creditsExpected": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 606",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Articulation.\nKorean Indie R&B, 74 BPM, Eb Major.\nClean Electric Guitar-led, supportive R&B groove,\nrim-click, warm afternoon texture, subtle vinyl crackle.\n\nMale vocal: Solid, Direct, Raw, Dry.\nChest voice dominant. No falsetto.\nStraight tone only. No vibrato, no ad-libs.\nHigh register chest voice preferred over falsetto.\nTone is nonchalant and effortless, never dramatic.\n\nVocal articulation is critical:\nclear consonant attack, precise syllable separation,\nno slurring, no breathy phrasing.\n\nVerse2 builds clear tension.\nChorus contains a single, unavoidable high-note focal point:\nshort, decisive high register chest note,\nstraight tone, not sustained belting.\nIf the chorus does not reach a high register chest note,\nthe emotional intent is considered failed.\n\nChorus hook-first, repeated identically.\nLater choruses grow only by arrangement density.\nBridge builds every bar.\nOutro guitar fades.\nLead vocal remains single and dominant.",
+  "exclude": "Falsetto, Airy, Whisper, Breathiness, Growl, Vibrato, Opera, Dramatic, High-pitched belting, Harmonized, Backing vocals, Choir, Intense, Mumbled",
+  "title": "기타",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "25",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 25% | Style Influence | Strong | 75% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "75",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 25% | Style Influence | Strong | 75% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Safe zone | 25% | Style Influence | Strong | 75% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony]\n기타를 안으면\n줄마다 손때가 묻었네\n그날의 코드가\n자꾸 귓가를 맴돌아\n\n[bridge1]\n[Chest voice, Intimate]\n처음부터 다시 하자면서\n손끝이 하얘지도록 눌렀지\n틀려도 괜찮다 했지\n\n[chorus]\n[High register chest voice, Straight tone]\n손가락 꼬였어\n너부터 웃었지\n서툰 코드까지 다 좋았지\n기타가 아직 울려\n\n[verse2]\n[Groove locks in, Vocal forward]\n오늘은 내가 쳐\n그 코드쯤은 이제 짚는데\n맞게 눌러도 웃음이 나\n네 웃음이 먼저 들려서\n\n[bridge2]\n[Chest voice, Intimate]\n굳은살이 박인 손끝으로\n그 줄을 하나씩 눌러 보며\n틀려도 괜찮다 했지\n\n[chorus]\n손가락 꼬였어\n너부터 웃었지\n서툰 코드까지 다 좋았지\n기타가 아직 울려\n\n[chorus]\n손가락 꼬였어\n너부터 웃었지\n서툰 코드까지 다 좋았지\n기타가 아직 울려\n\n[outro]\n[instrumental]\n\n=== META ===\nTrack 14 of the 23:00 series (temporary number). The STYLE is the user-supplied original 산책 style with the `Lo-fi Remix, ` prefix and the one other edit recorded in SERIES/23-00/concept.md ## Original Styles (the genre word `Alt` removed from `Indie Alt R&B`), declared by `Style Type: 산책` and `Style Source: user-supplied original style`. EXCLUDE holds the 14 original 산책 items. The lyric is original wording on the 산책 original's lyric frame (row count, tag lines, per-row syllable counts and repeat positions kept; every word new). No generated audio exists in this repository for duration, tempo, key, vocal, or arrangement verification."
+ },
+ "knownIdsCount": 17
+}

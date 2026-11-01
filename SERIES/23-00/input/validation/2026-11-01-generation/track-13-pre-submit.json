@@ -1,0 +1,160 @@
+{
+ "order": 13,
+ "title": "편지",
+ "source_txt": "input/tracks/13_편지.txt",
+ "source_sha256": "749b541926abede1f6ad600277eb593fcc97e4ab2195d90744365456bfce759b",
+ "startedAt": "2026-11-01T14:18:19.920Z",
+ "checkedAt": "2026-11-01T14:18:24.070Z",
+ "compare": {
+  "lyrics": true,
+  "style": true,
+  "exclude": true,
+  "title": true,
+  "lyricsLenForm": 790,
+  "lyricsLenSrc": 790
+ },
+ "guards": {
+  "inputMatch": true,
+  "workspaceHeader": true,
+  "saveTo": true,
+  "urlWid": true,
+  "advancedMode": true,
+  "model": true,
+  "createEnabled": true,
+  "genderUnset": true,
+  "durationAuto": true,
+  "maxModeOff": true,
+  "personalizeOff": true,
+  "sliders": true
+ },
+ "form": {
+  "url": "https://suno.com/create?wid=f578d3c2-f43f-462e-8e05-44d022edd480",
+  "tabs": [
+   "Songs=true",
+   "Speech=false",
+   "Sounds=false",
+   "Simple=false",
+   "Advanced=true"
+  ],
+  "credits": "Credits remaining: 726",
+  "model": "v6",
+  "header": "Workspaces | [23:00]",
+  "saveTo": [
+   "Save to...",
+   "Save to...[23:00]",
+   "Save to...[23:00]"
+  ],
+  "style": "Lo-fi Remix, Lo-fi modern R&B, Korean indie alt-R&B, 72 BPM half-time pocket, intimate felt-piano motif over warm Rhodes voicings, soft brushed drums and rim-click with a rounded understated bass groove; begin sparse, add muted electronic texture through the pre-chorus, widen gently with subtle strings in each chorus, then strip back for a close, vulnerable bridge and instrumental outro, Single warm baritone lead in a dry conversational chest voice, crisp Korean diction and deliberate articulation, natural breath and phrasing, sustained tender chorus notes with a restrained dynamic rise, Cozy close-miked vocal, balanced clean mix, warm low end, moderate room ambience, no layered vocals, Db Major, male vocal",
+  "exclude": "",
+  "title": "편지",
+  "createDisabled": false,
+  "sliders": [
+   {
+    "label": "Weirdness",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Style Influence",
+    "now": "50",
+    "text": null,
+    "min": "0",
+    "max": "100",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   },
+   {
+    "label": "Variety",
+    "now": "1",
+    "text": "Normal",
+    "min": "0",
+    "max": "4",
+    "rowText": "Vocal Gender | Male | Female | Duration | Custom | Auto | Max Mode | Off | On | Weirdness | Expected results | 50% | Style Influence | Moderate | 50% | Variety | Balanced variety | Normal | Personalize | My Taste | Off | On"
+   }
+  ],
+  "gender": [
+   {
+    "text": "Male",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Female",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "duration": [
+   {
+    "text": "Custom",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Auto",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "maxMode": [
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "personalize": [
+   {
+    "text": "My Taste",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "Off",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-standard-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   },
+   {
+    "text": "On",
+    "ariaPressed": null,
+    "ariaChecked": null,
+    "ariaSelected": null,
+    "dataState": null,
+    "cls": "hxc-btn-base hxc-btn-variant-tertiary-legacy hxc-btn-size-mini type-button-small hxc-btn-shape-rounded-rectangle hxc-btn"
+   }
+  ],
+  "lyrics_joined": "[Intro] [Felt piano motif]\n\n[Verse 1] [Male vocal, soft chest voice, no harmony]\n서랍 맨 안쪽에서\n접힌 편지 한 장이 나왔어\n펼치면 바스락 소리가 나고\n비스듬히 기운 네 글씨가 보여\n\n[Pre-Chorus] [Muted electronic texture]\n뒷면을 손끝으로 쓸어 보면\n글씨 모양 그대로 만져져\n\n[Chorus] [Subtle strings, sustained tender notes]\n접힌 자리가 다 닳았어\n솜처럼 부드러워진 종이 위에\n꾹꾹 눌러 쓴 네 글씨가\n한 자 한 자 눈에 밟혀\n몇 번을 읽어도 처음 같아\n오늘 밤은 이 한 장이면 돼\n\n[Verse 2]\n첫 줄은 날씨 얘기뿐이야\n추우니까 두껍게 입으라고\n밥은 거르지 말라는 말까지\n별것 아닌 안부에 웃음이 나\n\n[Chorus]\n접힌 자리가 다 닳았어\n솜처럼 부드러워진 종이 위에\n꾹꾹 눌러 쓴 네 글씨가\n한 자 한 자 눈에 밟혀\n몇 번을 읽어도 처음 같아\n오늘 밤은 이 한 장이면 돼\n\n[Verse 3]\n셋째 줄 끝에는\n잉크가 동그랗게 번져 있어\n무슨 말을 쓸지 망설이다\n펜을 오래 대고 있었나 봐\n\n[Bridge] [Close and sparse]\n오늘 밤 내가 답장을 쓴다면\n날씨 얘기부터 쓸 것 같아\n여긴 달이 밝다고 쓰고\n따뜻하다고도 쓸 거야\n\n[Final Chorus]\n접힌 자리가 다 닳았어\n솜처럼 부드러워진 종이 위에\n꾹꾹 눌러 쓴 네 글씨가\n한 자 한 자 눈에 밟혀\n다시 접어 서랍에 넣어도\n오늘 밤은 이 한 장이면 돼\n\n[Outro] [Instrumental]"
+ },
+ "listBeforeCount": 15
+}

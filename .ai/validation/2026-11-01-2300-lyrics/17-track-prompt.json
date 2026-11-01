@@ -1,0 +1,62 @@
+{
+  "schema": "wavvy.track_prompt_gate.v1",
+  "stage": "track-prompt",
+  "result": "PASS",
+  "scope": "NEW_FULL_TRACK_PROMPT_CONTRACT",
+  "quality_status": "PROMPT_CONTRACT_CHECKED",
+  "series": "SERIES/23-00",
+  "artifact": "SERIES/23-00/input/tracks/17_막차.txt",
+  "source_sha256": "c0e698515704a305651f83d5f6647d73994de964f77dbeeb614315ae013c1375",
+  "checks": [
+    {
+      "name": "track_source_artifact",
+      "status": "PASS",
+      "detail": "SERIES/23-00/input/tracks/17_막차.txt"
+    },
+    {
+      "name": "series_concept_present",
+      "status": "PASS",
+      "detail": "SERIES/23-00/concept.md"
+    },
+    {
+      "name": "track_source_parsed",
+      "status": "PASS",
+      "detail": "STYLE and LYRICS sections present"
+    },
+    {
+      "name": "track_source_sections",
+      "status": "PASS",
+      "detail": "STYLE, EXCLUDE, LYRICS"
+    },
+    {
+      "name": "style_character_limit",
+      "status": "PASS",
+      "detail": "540/900 Unicode characters including internal whitespace"
+    },
+    {
+      "name": "exclude_budget",
+      "status": "PASS",
+      "detail": "0/8 terms"
+    },
+    {
+      "name": "bpm_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=80 (confirmed STYLE wording; audio not measured); STYLE=[80]"
+    },
+    {
+      "name": "key_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=E Major (confirmed STYLE wording; audio not measured); STYLE=['E major']"
+    },
+    {
+      "name": "vocal_gender_metadata_matches_style",
+      "status": "PASS",
+      "detail": "metadata=male solo lead, intimate dry chest voice (STYLE wording; audio not measured); STYLE=['male']"
+    }
+  ],
+  "warnings": [],
+  "blockers": [],
+  "evidence_refs": [
+    "SERIES/23-00/input/tracks/17_막차.txt"
+  ]
+}

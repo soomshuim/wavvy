@@ -1,0 +1,732 @@
+{
+  "schema": "wavvy.final_styles.v1",
+  "generated": "2026-11-02",
+  "brief": ".ai/plans/2026-11-02-2300-style-apply-a-brief.md",
+  "input": ".ai/plans/2026-11-02-2300-original-styles.json",
+  "젠_원문": [
+    "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+    "원곡 BPM 그대로",
+    "원곡대로 남성",
+    "- 붙은 스타일은 exclude인거 알지?",
+    "그대로 활용 원칙이 유도리가 있어야지. 원곡이 없는데 넣는게 뭔 소용이야",
+    "Lo-fi remix는 붙여야해 안전빵이야"
+  ],
+  "rule": "STYLE = `Lo-fi Remix, ` + original STYLE. Edits only: (a) alternative/Alt/Modern R&B genre words, (b) inline Exclude lines moved to EXCLUDE, (c) lines that only make sense for the original lyrics. BPM numbers, Key, gender and all other wording stay as in the original. EXCLUDE = original EXCLUDE + moved items (order kept, duplicates dropped and recorded). Suno params: recorded values, otherwise `default`.",
+  "entries": [
+    {
+      "order": 11,
+      "title": "라디오",
+      "type": "먼지",
+      "style": "Lo-fi Remix, Korean Soft R&B, 72 BPM, Eb Major\n\nVibraphone-led, supportive R&B groove,\nlaid-back brush rhythm, warm afternoon texture.\n\nMale vocal. Natural, intimate.\nRaw, Solid, Direct, Dry.\nChest voice dominant. No falsetto. Minimal vibrato.\n\nVerse1: vibraphone melody, sparse drums, drifting feel.\nVerse2: soft kick enters, groove locks in.\nLift through rhythm, not volume.\n\nChorus: kick and snare present, melodic bass,\npad widens gently.\n\nBridge: vibraphone and voice only, gentle build.\nOutro: gradual fade, vibraphone restates motif softly.\n\nSingle lead vocal throughout.\nChorus expansion by arrangement density only.",
+      "style_chars": 624,
+      "style_sha256": "0121afa45e50cea44d284b49c75ae002cc6f768c20905cabdad9efaefea975c8",
+      "exclude": [
+        "Airy",
+        "Falsetto",
+        "Whisper",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Cold",
+        "Dark",
+        "Intense",
+        "Dramatic"
+      ],
+      "suno_params": {
+        "weirdness": 20,
+        "style_influence": 80,
+        "source": "SERIES/14-00/concept.md:976-980"
+      },
+      "bpm_header": "72",
+      "key_header": "Eb Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 72,
+        "key": "Eb Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-inline-exclude",
+          "kind": "move_inline_exclude_line_to_EXCLUDE",
+          "old": "\n\nExclude Style: Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Intense, Dramatic",
+          "new": "",
+          "removed_line": "Exclude Style: Airy, Falsetto, Whisper, Harmonized, Backing vocals, Choir, Intense, Dramatic",
+          "moved_items": [
+            "Airy",
+            "Falsetto",
+            "Whisper",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic"
+          ],
+          "reason": "an exclusion line inside STYLE belongs in the EXCLUDE field; the blank separator line before it goes with it",
+          "quote": [
+            "- 붙은 스타일은 exclude인거 알지?"
+          ],
+          "duplicates_dropped": [
+            "Airy",
+            "Falsetto",
+            "Whisper",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic"
+          ],
+          "items_added_to_EXCLUDE": []
+        }
+      ],
+      "original_style_chars": 705,
+      "original_style_sha256": "14b6988b1d89ccc8ad43c9387de237c24e9a8d16505afac74d66dd86290b9b5e",
+      "source": {
+        "path": "SERIES/14-00/concept.md",
+        "heading": "### Track 09: 먼지",
+        "style_lines": "1040-1062",
+        "exclude_lines": "1067-1067",
+        "exclude_origin": "separate Exclude Style block"
+      }
+    },
+    {
+      "order": 12,
+      "title": "스웨터",
+      "type": "마음 밖",
+      "style": "Lo-fi Remix, articulation, Korean R&B/pop ballad, 96–106 BPM, key color like A♭, Piano/Rhodes-led, cinematic but restrained, Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls, Subtle strings/pads in choruses only, never dramatic, Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm, Final chorus adds a gentle \"major-color\" lift via chords/strings, not belting, Female vocal very forward and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction, Melody understated (no big leaps, no catchy hook), Outro instrumental fade",
+      "style_chars": 720,
+      "style_sha256": "56729ee045a4b12a1ed26f2825c735ad263886d148b8872895756b3dd418447b",
+      "exclude": [],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/04-00/concept.md에 Weirdness·Style Influence 기록 없음"
+      },
+      "bpm_header": "96–106 (original STYLE wording; release file 90)",
+      "key_header": "A♭ (original wording \"key color like A♭\"; mode not stated)",
+      "vocal_header": "female",
+      "header_values_read_from_style": {
+        "bpm": "range 96–106 BPM (not a single number)",
+        "key": "not readable (no `X Major|Minor`)",
+        "vocal": "female"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        }
+      ],
+      "original_style_chars": 707,
+      "original_style_sha256": "5123ec3f7791171df659de8957d9bb535a158b96b6e132d3614a042f944f8001",
+      "source": {
+        "path": "SERIES/04-00/concept.md",
+        "heading": "## Track 01 (Seed)",
+        "style_lines": "135-135",
+        "exclude_lines": "140-140",
+        "exclude_origin": "separate Exclude Style block says (없음)"
+      }
+    },
+    {
+      "order": 13,
+      "title": "편지",
+      "type": "작은 빛",
+      "style": "Lo-fi Remix, Articulation. Korean Chill R&B, 72 BPM, Db Major,\nfelt piano-led, warm Rhodes chords, soft brush kit,\nrim-click, warm bass groove, subtle strings in chorus,\nMale vocal: Warm, Intimate, Chest voice, Dry, articulation,\nwarm baritone, conversational phrasing, gentle sustained chorus hook,\nchorus builds with emotional swell, tender vocal intensity, aching warmth,\ncozy intimate mix, wide stereo, warm low-end,\nmoderate reverb, intimate ambience, EQ balanced sound, clean mix.\nLead vocal remains single and dominant throughout. No stacked or choir-like harmonies.\nVocal line may intensify dynamically (gentle lift, higher register), but no additional vocal layers.\nChorus vocal may be delivered with tender intensity or gentle sustained note.\nHigher register emphasis is allowed. Natural vocal warmth encouraged.",
+      "style_chars": 822,
+      "style_sha256": "84370501a8cd3c2917ed618f0b87262e2d663836c3586d046b70702b63b0c666",
+      "exclude": [],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/22-00/concept.md에 Weirdness·Style Influence 기록 없음"
+      },
+      "bpm_header": "72",
+      "key_header": "Db Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 72,
+        "key": "Db Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        }
+      ],
+      "original_style_chars": 809,
+      "original_style_sha256": "e4a8ddac20c318504e0795ad91f54fa8070fd05cba3ea0bec505d04e0eec1dd7",
+      "source": {
+        "path": "SERIES/22-00/concept.md",
+        "heading": "### 10. 작은 손 (Tiny Hand)",
+        "style_lines": "1095-1106",
+        "exclude_lines": null,
+        "exclude_origin": "none in the original"
+      }
+    },
+    {
+      "order": 14,
+      "title": "기타",
+      "type": "산책",
+      "style": "Lo-fi Remix, Articulation.\nKorean Indie R&B, 74 BPM, Eb Major.\nClean Electric Guitar-led, supportive R&B groove,\nrim-click, warm afternoon texture, subtle vinyl crackle.\n\nMale vocal: Solid, Direct, Raw, Dry.\nChest voice dominant. No falsetto.\nStraight tone only. No vibrato, no ad-libs.\nHigh register chest voice preferred over falsetto.\nTone is nonchalant and effortless, never dramatic.\n\nVocal articulation is critical:\nclear consonant attack, precise syllable separation,\nno slurring, no breathy phrasing.\n\nVerse2 builds clear tension.\nChorus contains a single, unavoidable high-note focal point:\nshort, decisive high register chest note,\nstraight tone, not sustained belting.\nIf the chorus does not reach a high register chest note,\nthe emotional intent is considered failed.\n\nChorus hook-first, repeated identically.\nLater choruses grow only by arrangement density.\nBridge builds every bar.\nOutro guitar fades.\nLead vocal remains single and dominant.",
+      "style_chars": 955,
+      "style_sha256": "a1990eaaa31063dfc6149fa15a69a4f929e23b5c2c52cddaa1961f4761cfd17c",
+      "exclude": [
+        "Falsetto",
+        "Airy",
+        "Whisper",
+        "Breathiness",
+        "Growl",
+        "Vibrato",
+        "Opera",
+        "Dramatic",
+        "High-pitched belting",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Mumbled"
+      ],
+      "suno_params": {
+        "weirdness": 25,
+        "style_influence": 75,
+        "source": "SERIES/14-00/concept.md:361-365"
+      },
+      "bpm_header": "74",
+      "key_header": "Eb Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 74,
+        "key": "Eb Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-alt",
+          "kind": "remove_genre_word",
+          "old": "Indie Alt R&B",
+          "new": "Indie R&B",
+          "removed_word": "Alt",
+          "reason": "alternative / Alt / Modern R&B genre words are dropped; nothing else in the phrase changes",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외"
+          ]
+        }
+      ],
+      "original_style_chars": 946,
+      "original_style_sha256": "eac143553f763e30e0c8c301510ca2eb3a774d1a740284518433cf2a4c8807a3",
+      "source": {
+        "path": "SERIES/14-00/concept.md",
+        "heading": "### Track 03: 산책",
+        "style_lines": "423-449",
+        "exclude_lines": "454-454",
+        "exclude_origin": "separate Exclude Style block"
+      }
+    },
+    {
+      "order": 15,
+      "title": "노을",
+      "type": "물결",
+      "style": "Lo-fi Remix, Korean Indie R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal",
+      "style_chars": 636,
+      "style_sha256": "3926d154576a0f1e7fda2f68bf30f2f6ef3157ef03184bb4dc14cf2afad0262f",
+      "exclude": [
+        "Falsetto",
+        "Airy",
+        "Whisper",
+        "Breathiness",
+        "Growl",
+        "Vibrato",
+        "Opera",
+        "Dramatic",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Mumbled"
+      ],
+      "suno_params": {
+        "weirdness": 20,
+        "style_influence": 80,
+        "source": "SERIES/14-00/concept.md:673-677"
+      },
+      "bpm_header": "74",
+      "key_header": "A Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 74,
+        "key": "A Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-alt",
+          "kind": "remove_genre_word",
+          "old": "Indie Alt R&B",
+          "new": "Indie R&B",
+          "removed_word": "Alt",
+          "reason": "alternative / Alt / Modern R&B genre words are dropped; nothing else in the phrase changes",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외"
+          ]
+        }
+      ],
+      "original_style_chars": 627,
+      "original_style_sha256": "b54db2b5da5ed420bad860ed28fea2dcacb2d91f923ee13c80e60f12a2d522ff",
+      "source": {
+        "path": "SERIES/14-00/concept.md",
+        "heading": "### Track 06: 물결",
+        "style_lines": "735-735",
+        "exclude_lines": "740-740",
+        "exclude_origin": "separate Exclude Style block"
+      }
+    },
+    {
+      "order": 16,
+      "title": "여름밤",
+      "type": "물안개",
+      "style": "Lo-fi Remix, articulation, Korean Lo-fi R&B, 80 BPM, key Eb Major, Felt Piano-led, soft shaker, hazy ambient pad, cinematic but restrained.\nMale vocal: warm soulful tone, dry close-mic, slightly breathy, straight delivery, minimal vibrato, minimal autotune.\nNo backing vocals, no harmonies, no doubles, no choir.\nLead vocal only throughout; absolutely no vocal layers in chorus (no doubles, no unison, no octaves).\nChorus hook-first, repeat identical; Chorus2 bigger only by arrangement density and stereo width, vocals unchanged.\nVerse2 same melodic contour as verse1; last 2 lines stronger dynamics and slightly higher register, minimal runs.\nBridge builds every bar with instrumental layers; no energy drop into chorus.\nOutro felt piano notes fading into silence.",
+      "style_chars": 766,
+      "style_sha256": "15de4017908364fd4b5a15b1e0a4ac1feebbcc20987630ebfb047fefd9a26d9d",
+      "exclude": [
+        "choir",
+        "gospel choir",
+        "stacked harmonies",
+        "vocal harmonies",
+        "harmony stack",
+        "ensemble vocals",
+        "doubled vocals",
+        "vocoder",
+        "vocal chop",
+        "hard tune",
+        "pitchy EDM lead",
+        "hyperpop vocal",
+        "autotune heavy",
+        "EDM drops",
+        "big room",
+        "festival",
+        "supersaw lead",
+        "sidechain pumping"
+      ],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/04-00/concept.md에 Weirdness·Style Influence 기록 없음"
+      },
+      "bpm_header": "80",
+      "key_header": "Eb Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 80,
+        "key": "Eb Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        }
+      ],
+      "original_style_chars": 753,
+      "original_style_sha256": "ca0588aa5e211168eb31aba52b0e7f651b9be199f21606374f5f3de659cb72ee",
+      "source": {
+        "path": "SERIES/04-00/concept.md",
+        "heading": "## Track 04",
+        "style_lines": "349-356",
+        "exclude_lines": "361-361",
+        "exclude_origin": "separate Exclude Style block"
+      }
+    },
+    {
+      "order": 17,
+      "title": "막차",
+      "type": "골목",
+      "style": "Lo-fi Remix, Korean Slow R&B Ballad, 67 BPM, Db Major\n\nMale vocal, Raw, Dry, Unprocessed, Chest voice dominant\nNo falsetto, No runs, No melisma\nSpeech-like phrasing, Narrow melodic range\nPrecise articulation, clear consonants\n\nsupportive, warm pad texture\nMinimal drums or drumless verses\nSoft bass, low presence\nModerate reverb, EQ balanced sound, clean mix\n\nVerse2 subtle intensity increase by vocal weight only\nChorus: longer sustain on hook phrase, no belt\nBridge: single guitar line, no solo flourish\n\nNo harmony, no backing vocals, no doubles\nLead vocal remains single and dominant throughout",
+      "style_chars": 598,
+      "style_sha256": "ebc71cedfefd6b33a4e3f3a08620517feecfba7a11d2f1522dfa2f4f2ce6b95a",
+      "exclude": [
+        "Rap",
+        "Hip-hop",
+        "Spoken word",
+        "Harmonies",
+        "Backing vocals",
+        "Doubles",
+        "Choir",
+        "Ad-libs",
+        "Runs",
+        "Melisma",
+        "Falsetto",
+        "Bright",
+        "Upbeat",
+        "Energetic",
+        "Fast"
+      ],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/18-00/concept.md:1113-1118에 숫자 대신 `기존 싱글`"
+      },
+      "bpm_header": "67",
+      "key_header": "Db Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 67,
+        "key": "Db Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-inline-exclude",
+          "kind": "move_inline_exclude_line_to_EXCLUDE",
+          "old": "\n\nEXCLUDE: Rap, Hip-hop, Spoken word, Harmonies, Backing vocals, Doubles, Choir, Ad-libs, Runs, Melisma, Falsetto, Bright, Upbeat, Energetic, Fast",
+          "new": "",
+          "removed_line": "EXCLUDE: Rap, Hip-hop, Spoken word, Harmonies, Backing vocals, Doubles, Choir, Ad-libs, Runs, Melisma, Falsetto, Bright, Upbeat, Energetic, Fast",
+          "moved_items": [
+            "Rap",
+            "Hip-hop",
+            "Spoken word",
+            "Harmonies",
+            "Backing vocals",
+            "Doubles",
+            "Choir",
+            "Ad-libs",
+            "Runs",
+            "Melisma",
+            "Falsetto",
+            "Bright",
+            "Upbeat",
+            "Energetic",
+            "Fast"
+          ],
+          "reason": "an exclusion line inside STYLE belongs in the EXCLUDE field; the blank separator line before it goes with it",
+          "quote": [
+            "- 붙은 스타일은 exclude인거 알지?"
+          ],
+          "duplicates_dropped": [],
+          "items_added_to_EXCLUDE": [
+            "Rap",
+            "Hip-hop",
+            "Spoken word",
+            "Harmonies",
+            "Backing vocals",
+            "Doubles",
+            "Choir",
+            "Ad-libs",
+            "Runs",
+            "Melisma",
+            "Falsetto",
+            "Bright",
+            "Upbeat",
+            "Energetic",
+            "Fast"
+          ]
+        }
+      ],
+      "original_style_chars": 731,
+      "original_style_sha256": "039e4094445803a30240597324c4996da47896c4997a2d490949cef62c381d04",
+      "source": {
+        "path": "SERIES/18-00/concept.md",
+        "heading": "## 10. Track 07 \"골목\" — 혼자 걷는 골목길 (기존 싱글)",
+        "style_lines": "1091-1110",
+        "exclude_lines": null,
+        "exclude_origin": "inline line moved out of STYLE"
+      }
+    },
+    {
+      "order": 18,
+      "title": "벚꽃",
+      "type": "이름",
+      "style": "Lo-fi Remix, Korean Soft R&B, 72 BPM, Ab Major\n\nSoft Synth Pad-led, supportive groove, gentle pulse, warm shade texture\n\nMale vocal: Natural, laid-back, Raw, Solid, Direct, Dry\nChest voice dominant, No falsetto, Straight tone, No vibrato, no ad-libs\nPrecise articulation, clear consonants\n\nVerse1: synth pad, sparse drums, drifting\nVerse2: kick steady, groove deepens\nVerse2 last 2 lines: higher register, tighter rhythm, vocal push\nBridge1/2: pad and voice, intimate\nFinal Chorus: chest belt pushed, high register climax\nOutro: short fade, pad sustain\n\nSingle lead vocal\nDensity expansion only",
+      "style_chars": 594,
+      "style_sha256": "4a12b72669796fa36f505e3011efcf8778daf20a16c360902fac7d87edb6675b",
+      "exclude": [
+        "Falsetto",
+        "Airy",
+        "Whisper",
+        "Breathiness",
+        "Vibrato",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Dramatic",
+        "Mumbled"
+      ],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/18-00/concept.md:1416-1421에 숫자 대신 `기존 싱글`"
+      },
+      "bpm_header": "72",
+      "key_header": "Ab Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 72,
+        "key": "Ab Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-inline-exclude",
+          "kind": "move_inline_exclude_line_to_EXCLUDE",
+          "old": "\n\nEXCLUDE: Falsetto, Airy, Whisper, Breathiness, Vibrato, Harmonized, Backing vocals, Choir, Intense, Dramatic, Mumbled",
+          "new": "",
+          "removed_line": "EXCLUDE: Falsetto, Airy, Whisper, Breathiness, Vibrato, Harmonized, Backing vocals, Choir, Intense, Dramatic, Mumbled",
+          "moved_items": [
+            "Falsetto",
+            "Airy",
+            "Whisper",
+            "Breathiness",
+            "Vibrato",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic",
+            "Mumbled"
+          ],
+          "reason": "an exclusion line inside STYLE belongs in the EXCLUDE field; the blank separator line before it goes with it",
+          "quote": [
+            "- 붙은 스타일은 exclude인거 알지?"
+          ],
+          "duplicates_dropped": [],
+          "items_added_to_EXCLUDE": [
+            "Falsetto",
+            "Airy",
+            "Whisper",
+            "Breathiness",
+            "Vibrato",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic",
+            "Mumbled"
+          ]
+        },
+        {
+          "id": "E-bridge3",
+          "kind": "remove_lyric_bound_line",
+          "old": "Bridge3: sparse, tension rising, emotional commitment\n",
+          "new": "",
+          "removed_line": "Bridge3: sparse, tension rising, emotional commitment",
+          "reason": "the 이름 template lyrics (nine-tracks.json 이름 lyrics_full) have a single [Bridge] tag, so a third bridge does not exist in the new songs; the whole line is the smallest unit that removes the reference (it only describes that section)",
+          "quote": [
+            "그대로 활용 원칙이 유도리가 있어야지. 원곡이 없는데 넣는게 뭔 소용이야"
+          ]
+        },
+        {
+          "id": "E-last-gwaenchana",
+          "kind": "remove_lyric_bound_line",
+          "old": "Last \"괜찮아\": longest sustain in entire track, This single note defines the emotional peak\n",
+          "new": "",
+          "removed_line": "Last \"괜찮아\": longest sustain in entire track, This single note defines the emotional peak",
+          "reason": "the line points at the original lyrics' word 괜찮아 ('longest sustain in entire track ... This single note'); neither new song's lyrics have that word or such a note, and both clauses of the line depend on it, so the whole line goes. Narrower alternative considered and rejected: deleting only `Last \"괜찮아\": ` would leave 'longest sustain in entire track, This single note defines the emotional peak' pointing at no note.",
+          "quote": [
+            "그대로 활용 원칙이 유도리가 있어야지. 원곡이 없는데 넣는게 뭔 소용이야"
+          ]
+        }
+      ],
+      "original_style_chars": 843,
+      "original_style_sha256": "5a871a19dbb538e456469b014bbb702c75e8c0fc2be882c2d1237185b3149f64",
+      "source": {
+        "path": "SERIES/18-00/concept.md",
+        "heading": "## 12. Track 09 \"이름\" — 문 열림, 이름 불려짐 (기존 싱글)",
+        "style_lines": "1393-1413",
+        "exclude_lines": null,
+        "exclude_origin": "inline line moved out of STYLE"
+      }
+    },
+    {
+      "order": 19,
+      "title": "그네",
+      "type": "이름",
+      "style": "Lo-fi Remix, Korean Soft R&B, 72 BPM, Ab Major\n\nSoft Synth Pad-led, supportive groove, gentle pulse, warm shade texture\n\nMale vocal: Natural, laid-back, Raw, Solid, Direct, Dry\nChest voice dominant, No falsetto, Straight tone, No vibrato, no ad-libs\nPrecise articulation, clear consonants\n\nVerse1: synth pad, sparse drums, drifting\nVerse2: kick steady, groove deepens\nVerse2 last 2 lines: higher register, tighter rhythm, vocal push\nBridge1/2: pad and voice, intimate\nFinal Chorus: chest belt pushed, high register climax\nOutro: short fade, pad sustain\n\nSingle lead vocal\nDensity expansion only",
+      "style_chars": 594,
+      "style_sha256": "4a12b72669796fa36f505e3011efcf8778daf20a16c360902fac7d87edb6675b",
+      "exclude": [
+        "Falsetto",
+        "Airy",
+        "Whisper",
+        "Breathiness",
+        "Vibrato",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Dramatic",
+        "Mumbled"
+      ],
+      "suno_params": {
+        "weirdness": "default",
+        "style_influence": "default",
+        "source": "원곡에 숫자 기록 없음: SERIES/18-00/concept.md:1416-1421에 숫자 대신 `기존 싱글`"
+      },
+      "bpm_header": "72",
+      "key_header": "Ab Major",
+      "vocal_header": "male",
+      "header_values_read_from_style": {
+        "bpm": 72,
+        "key": "Ab Major",
+        "vocal": "male"
+      },
+      "edits": [
+        {
+          "id": "E-prefix",
+          "kind": "prepend_lofi_remix",
+          "old": "",
+          "new": "Lo-fi Remix, ",
+          "reason": "common style = Lo-fi Remix only (safe-bet prefix)",
+          "quote": [
+            "공통 스타일은 Lo-fi Remix만 쓰고 23:00버전이 아닌 원곡 스타일에 Lo-fi Remix만 남기자 얼터너티브나 모던 알앤비는 제외",
+            "Lo-fi remix는 붙여야해 안전빵이야"
+          ]
+        },
+        {
+          "id": "E-inline-exclude",
+          "kind": "move_inline_exclude_line_to_EXCLUDE",
+          "old": "\n\nEXCLUDE: Falsetto, Airy, Whisper, Breathiness, Vibrato, Harmonized, Backing vocals, Choir, Intense, Dramatic, Mumbled",
+          "new": "",
+          "removed_line": "EXCLUDE: Falsetto, Airy, Whisper, Breathiness, Vibrato, Harmonized, Backing vocals, Choir, Intense, Dramatic, Mumbled",
+          "moved_items": [
+            "Falsetto",
+            "Airy",
+            "Whisper",
+            "Breathiness",
+            "Vibrato",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic",
+            "Mumbled"
+          ],
+          "reason": "an exclusion line inside STYLE belongs in the EXCLUDE field; the blank separator line before it goes with it",
+          "quote": [
+            "- 붙은 스타일은 exclude인거 알지?"
+          ],
+          "duplicates_dropped": [],
+          "items_added_to_EXCLUDE": [
+            "Falsetto",
+            "Airy",
+            "Whisper",
+            "Breathiness",
+            "Vibrato",
+            "Harmonized",
+            "Backing vocals",
+            "Choir",
+            "Intense",
+            "Dramatic",
+            "Mumbled"
+          ]
+        },
+        {
+          "id": "E-bridge3",
+          "kind": "remove_lyric_bound_line",
+          "old": "Bridge3: sparse, tension rising, emotional commitment\n",
+          "new": "",
+          "removed_line": "Bridge3: sparse, tension rising, emotional commitment",
+          "reason": "the 이름 template lyrics (nine-tracks.json 이름 lyrics_full) have a single [Bridge] tag, so a third bridge does not exist in the new songs; the whole line is the smallest unit that removes the reference (it only describes that section)",
+          "quote": [
+            "그대로 활용 원칙이 유도리가 있어야지. 원곡이 없는데 넣는게 뭔 소용이야"
+          ]
+        },
+        {
+          "id": "E-last-gwaenchana",
+          "kind": "remove_lyric_bound_line",
+          "old": "Last \"괜찮아\": longest sustain in entire track, This single note defines the emotional peak\n",
+          "new": "",
+          "removed_line": "Last \"괜찮아\": longest sustain in entire track, This single note defines the emotional peak",
+          "reason": "the line points at the original lyrics' word 괜찮아 ('longest sustain in entire track ... This single note'); neither new song's lyrics have that word or such a note, and both clauses of the line depend on it, so the whole line goes. Narrower alternative considered and rejected: deleting only `Last \"괜찮아\": ` would leave 'longest sustain in entire track, This single note defines the emotional peak' pointing at no note.",
+          "quote": [
+            "그대로 활용 원칙이 유도리가 있어야지. 원곡이 없는데 넣는게 뭔 소용이야"
+          ]
+        }
+      ],
+      "original_style_chars": 843,
+      "original_style_sha256": "5a871a19dbb538e456469b014bbb702c75e8c0fc2be882c2d1237185b3149f64",
+      "source": {
+        "path": "SERIES/18-00/concept.md",
+        "heading": "## 12. Track 09 \"이름\" — 문 열림, 이름 불려짐 (기존 싱글)",
+        "style_lines": "1393-1413",
+        "exclude_lines": null,
+        "exclude_origin": "inline line moved out of STYLE"
+      }
+    }
+  ]
+}

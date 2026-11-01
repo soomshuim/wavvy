@@ -1,0 +1,17 @@
+# A2 check mutation controls (2026-11-02): each variant must FAIL
+== m1
+FAIL ['14 기타: concept_block_bytes_equal_json_style, real_gate_accepts']
+{"songs_pass": "8/9", "byte_equal_concept_vs_json": "8/9", "exclude_equal": "9/9", "original_plus_edits_equals_json": "9/9", "real_gate_function": "8/9 accepted"}
+== m2
+FAIL ['11 라디오: concept_exclude_line_equals_json_exclude, real_gate_accepts']
+{"songs_pass": "8/9", "byte_equal_concept_vs_json": "9/9", "exclude_equal": "8/9", "original_plus_edits_equals_json": "9/9", "real_gate_function": "8/9 accepted"}
+== m3
+FAIL ['16 여름밤: concept_block_bytes_equal_json_style, original_plus_edits_equals_json_style, concept_chars_sha_line, real_gate_accepts']
+{"songs_pass": "8/9", "byte_equal_concept_vs_json": "8/9", "exclude_equal": "9/9", "original_plus_edits_equals_json": "8/9", "real_gate_function": "8/9 accepted"}
+== m4
+FAIL ['18 벚꽃: concept_exclude_line_equals_json_exclude, real_gate_accepts', '19 그네: concept_exclude_line_equals_json_exclude, real_gate_accepts']
+{"songs_pass": "7/9", "byte_equal_concept_vs_json": "9/9", "exclude_equal": "7/9", "original_plus_edits_equals_json": "9/9", "real_gate_function": "7/9 accepted"}
+m1 = one char changed in the 산책 STYLE block of concept.md
+m2 = two EXCLUDE items swapped in the 먼지 concept line
+m3 = json style of 16 lost ' soft shaker,' (no edit explains it)
+m4 = a second '- EXCLUDE:' line added to the 이름 entry
