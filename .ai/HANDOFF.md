@@ -1,4 +1,14 @@
 ---
+HANDOFF: Claude -> 젠 또는 다음 Claude
+Date: 2026-11-02 01:20:12
+Project: /Users/zenkim_office/Project/wavvy
+Agent: Claude
+Summary: 23:00 새 시리즈: 기존 리믹스 9곡 + 새 11곡. 귤·포근히는 1차 후보 B 확정, 11~19는 타입 원곡 가사 틀 개사 + 원곡 스타일(+Lo-fi Remix)로 2차 재생성(후보 18개, 크레딧 636→546). 하네스 브라우저 기본값 ego lite, track-prompt 사용자 원본 Exclude 예외·원곡 스타일 모드 추가(테스트 82 PASS).
+Next-TODO: 젠의 11~19 청취 결과를 받아 SERIES/23-00/input/suno-candidates.json에 곡별 A/B 확정 기록, 탈락곡만 원곡 가사 틀로 다시 쓰고(.ai/plans/2026-11-01-2300-template-rewrite-brief.md 방식) ego lite로 재생성. 다운로드·패키징·발매는 미착수. 크레딧 646→636(10) 미귀속 사용은 젠 확인 필요.
+Commits: (이번 커밋)
+---
+
+---
 HANDOFF: Codex -> 젠 또는 다음 Codex
 Date: 2026-10-27 14:11:06
 Project: /Users/zenkim_office/Project/wavvy
