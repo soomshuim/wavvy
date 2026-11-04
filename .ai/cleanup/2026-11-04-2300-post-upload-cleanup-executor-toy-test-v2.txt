@@ -1,0 +1,20 @@
+PASS dry-run succeeds None
+PASS dry-run deletes nothing 
+PASS apply refused without virtual-deletion record AssertionError('virtual-deletion record is required before --apply')
+PASS ... and nothing deleted / no report written 
+PASS apply refused with a FAIL virtual-deletion record AssertionError('virtual-deletion record is not a PASS for these manifests')
+PASS ... nothing deleted 
+PASS apply refused when the PASS record belongs to other manifests AssertionError('virtual-deletion record is not a PASS for these manifests')
+PASS apply refused when a candidate changed AssertionError(('stat differs', '/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40
+PASS ... nothing deleted 
+PASS apply refused while a candidate is open AssertionError(('candidate file is open', [{'pid': '86206', 'command': 'Python', 'fd': '3', 'access'
+PASS ... nothing deleted 
+PASS apply succeeds on the toy tree None
+PASS all candidate files deleted 
+PASS protected file and mutable doc untouched 
+PASS report status applied, counts match applied
+PASS emptied directories removed ['/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/toy/repo/SERIES/23-00/sub', '/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/toy/scratch/dir']
+PASS non-empty directory in the list is kept, not emptied ["OSError(66, 'Directory not empty')"]
+PASS journal has intent+deleted for every file 14
+PASS repeat apply cannot overwrite evidence FileNotFoundError
+{"all_ok": true, "tests": 19}

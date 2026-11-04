@@ -1,0 +1,210 @@
+{
+ "result": "FAIL",
+ "pristine_ok": true,
+ "variants": {
+  "pristine": {
+   "checks": {
+    "gate_uploaded": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "failed_checks": []
+    },
+    "verify_subtitles_prepared": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "state_phase": "uploaded",
+     "state_revision": 105,
+     "artifact_audio": {
+      "audio_files": 17,
+      "available_audio_files": 17,
+      "audio_source": "input_tracks"
+     }
+    },
+    "validate": {
+     "exit": 0,
+     "stdout_tail": "48000Hz)\n[OK]   07. 손 잡아도 될까 (211.6s, 48000Hz)\n[OK]   08. 먼지 (199.9s, 48000Hz)\n[OK]   09. 지금 가는 길 (201.0s, 48000Hz)\n[OK]   10. 산책 (153.1s, 48000Hz)\n[OK]   11. 나도 네가 신경 쓰여 (192.5s, 48000Hz)\n[OK]   12. 숨 (214.8s, 48000Hz)\n[OK]   13. 자꾸 네가 신경쓰여 (209.9s, 48000Hz)\n[OK]   14. 물안개 (138.4s, 48000Hz)\n[OK]   15. 약속 (214.8s, 48000Hz)\n[OK]   16. 골목 (206.8s, 48000Hz)\n[OK]   17. 물결 (133.2s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nSummary:\n  Tracks: 17\n  Total Duration: 3340.3s (55.7 min)\n\nVALIDATION PASSED\n",
+     "stderr_tail": ""
+    },
+    "verify_release": {
+     "exit": 0,
+     "result": "PASS",
+     "errors": []
+    }
+   }
+  },
+  "removed": {
+   "checks": {
+    "gate_uploaded": {
+     "exit": 1,
+     "result": "FAIL",
+     "blockers": [
+      "No audio files (MP3/WAV) found in: SERIES/23-00/input/tracks",
+      "source_final requires audio files in input/tracks or concept.md Track Selection source map"
+     ],
+     "failed_checks": [
+      [
+       "validate_project",
+       "0 tracks"
+      ],
+      [
+       "audio_files_present",
+       "0 audio files via missing"
+      ]
+     ]
+    },
+    "verify_subtitles_prepared": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+     "exit": 1,
+     "result": "FAIL",
+     "blockers": [
+      "source_final requires audio files in input/tracks or concept.md Track Selection source map"
+     ],
+     "state_phase": "uploaded",
+     "state_revision": 105,
+     "artifact_audio": {
+      "audio_files": 0,
+      "available_audio_files": 0,
+      "audio_source": "missing"
+     }
+    },
+    "validate": {
+     "exit": 1,
+     "stdout_tail": "\n=== WAVVY VALIDATION ===\n\n\nErrors:\n\nVALIDATION FAILED\n",
+     "stderr_tail": "[ERROR] No audio files (MP3/WAV) found in: SERIES/23-00/input/tracks\n"
+    },
+    "verify_release": {
+     "exit": 1,
+     "result": "FAIL",
+     "errors": [
+      "missing audio for report tracks: 01__작은 빛__Relax__Lo-fi R&B__NA.wav, 02__돛__Relax__Lo-fi R&B__NA.wav, 03__한 잔만 더__Relax__Lo-fi R&B__NA.wav, 04__이름__Relax__Lo-fi R&B__NA.wav, 05__비가 그쳤네__Relax__Lo-fi R&B__NA.wav, 06__마음 밖__Relax__Lo-fi R&B__NA.wav, 07__손 잡아도 될까__Relax__Lo-fi R&B__NA.wav, 08__먼지__Relax__Lo-fi R&B__NA.wav, 09__지금 가는 길__Relax__Lo-fi R&B__NA.wav, 10__산책__Relax__Lo-fi R&B__NA.wav, 11__나도 네가 신경 쓰여__Relax__Lo-fi R&B__NA.wav, 12__숨__Relax__Lo-fi R&B__NA.wav, 13__자꾸 네가 신경쓰여__Relax__Lo-fi R&B__NA.wav, 14__물안개__Relax__Lo-fi R&B__NA.wav, 15__약속__Relax__Lo-fi R&B__NA.wav, 16__골목__Relax__Lo-fi R&B__NA.wav, 17__물결__Relax__Lo-fi R&B__NA.wav"
+     ]
+    }
+   },
+   "removal": {
+    "files_removed": 514,
+    "files_not_in_sandbox_work_dir": 164,
+    "wav_kept": 0,
+    "directories_removed": 21,
+    "concept_lines_before": 2743,
+    "concept_lines_after": 2198
+   }
+  },
+  "keepwav": {
+   "checks": {
+    "gate_uploaded": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "failed_checks": []
+    },
+    "verify_subtitles_prepared": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "state_phase": "uploaded",
+     "state_revision": 105,
+     "artifact_audio": {
+      "audio_files": 17,
+      "available_audio_files": 17,
+      "audio_source": "input_tracks"
+     }
+    },
+    "validate": {
+     "exit": 0,
+     "stdout_tail": "48000Hz)\n[OK]   07. 손 잡아도 될까 (211.6s, 48000Hz)\n[OK]   08. 먼지 (199.9s, 48000Hz)\n[OK]   09. 지금 가는 길 (201.0s, 48000Hz)\n[OK]   10. 산책 (153.1s, 48000Hz)\n[OK]   11. 나도 네가 신경 쓰여 (192.5s, 48000Hz)\n[OK]   12. 숨 (214.8s, 48000Hz)\n[OK]   13. 자꾸 네가 신경쓰여 (209.9s, 48000Hz)\n[OK]   14. 물안개 (138.4s, 48000Hz)\n[OK]   15. 약속 (214.8s, 48000Hz)\n[OK]   16. 골목 (206.8s, 48000Hz)\n[OK]   17. 물결 (133.2s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nSummary:\n  Tracks: 17\n  Total Duration: 3340.3s (55.7 min)\n\nVALIDATION PASSED\n",
+     "stderr_tail": ""
+    },
+    "verify_release": {
+     "exit": 0,
+     "result": "PASS",
+     "errors": []
+    }
+   },
+   "removal": {
+    "files_removed": 497,
+    "files_not_in_sandbox_work_dir": 164,
+    "wav_kept": 17,
+    "directories_removed": 21,
+    "concept_lines_before": 2743,
+    "concept_lines_after": 2198
+   }
+  }
+ },
+ "comparison": {
+  "removed": {
+   "gate_uploaded": false,
+   "verify_subtitles_prepared": true,
+   "verify_subtitles_published": true,
+   "state_check": false,
+   "validate_info": {
+    "pristine_exit": 0,
+    "removed_exit": 1
+   },
+   "verify_release_info": {
+    "pristine_exit": 0,
+    "removed_exit": 1
+   }
+  },
+  "keepwav": {
+   "gate_uploaded": true,
+   "verify_subtitles_prepared": true,
+   "verify_subtitles_published": true,
+   "state_check": true,
+   "validate_info": {
+    "pristine_exit": 0,
+    "keepwav_exit": 0
+   },
+   "verify_release_info": {
+    "pristine_exit": 0,
+    "keepwav_exit": 0
+   }
+  },
+  "tests_same_as_pristine": {
+   "test_harness.py": true,
+   "test_integrated_premix.py": true,
+   "test_premixed_audio.py": true,
+   "test_subtitle_timing_contract.py": true,
+   "test_subtitles.py": true,
+   "test_video_artwork.py": true,
+   "test_youtube_titles.py": true
+  }
+ },
+ "out": "/Users/zenkim_office/Project/wavvy/.ai/cleanup/2026-11-04-2300-post-upload-cleanup-dry-run-sandbox.json"
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "wavvy.post_upload_cleanup_execution.v1",
+  "mode": "dry_run",
+  "started_at_utc": "2026-11-04T14:06:11.854966+00:00",
+  "manifest_sha256": {
+    "candidates": "acbfcd1dd159d10968f675b25f01b0bfda8acd7eb095ce7324e90ac98a46e587",
+    "protected": "50540fbb60f0fec626d7507bd05001eae240923c7f47ef94900802887577f171"
+  },
+  "script_sha256": "e71aa5aa7c16c6004564b63b95335c228ff066730d83306fd26c1cf702157fa1",
+  "candidate_count": 867,
+  "candidate_bytes": 7639588582,
+  "candidates_by_class": {
+    "B": {
+      "count": 443,
+      "bytes": 18029257
+    },
+    "C": {
+      "count": 16,
+      "bytes": 171741
+    },
+    "A": {
+      "count": 219,
+      "bytes": 7557230274
+    },
+    "D": {
+      "count": 189,
+      "bytes": 64157310
+    }
+  },
+  "protected_count": 4296,
+  "mutable_document_count": 5,
+  "directory_rows": 114,
+  "preconditions": {
+    "video_id": "wbJQ2WgfJn4",
+    "upload_record_status": "completed_public_comment_pinned_subtitles_published"
+  },
+  "release_checks_before": {
+    "uploaded_gate": {
+      "exit": 0,
+      "result": "PASS",
+      "checks": [
+        [
+          "validate_project",
+          "PASS"
+        ],
+        [
+          "concept_md_present",
+          "PASS"
+        ],
+        [
+          "final_track_sources_or_source_map_present",
+          "PASS"
+        ],
+        [
+          "report_json_present_or_source_map_ready",
+          "PASS"
+        ],
+        [
+          "youtube_metadata_present",
+          "PASS"
+        ],
+        [
+          "audio_files_present",
+          "PASS"
+        ],
+        [
+          "final_track_sources_match_report",
+          "PASS"
+        ],
+        [
+          "youtube_upload_completed",
+          "PASS"
+        ]
+      ],
+      "warnings": [],
+      "blockers": []
+    },
+    "verify_subtitles_prepared": {
+      "exit": 0,
+      "result": "PASS",
+      "cues": 1490,
+      "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+      "exit": 0,
+      "result": "PASS",
+      "cues": 1490,
+      "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+      "exit": 0,
+      "result": "PASS",
+      "revision": 105,
+      "phase": "uploaded",
+      "blockers": []
+    }
+  },
+  "process_snapshot": {
+    "observed_at_utc": "2026-11-04T14:06:11.852551+00:00",
+    "command": [
+      "lsof",
+      "-nP",
+      "-Fpcfan"
+    ],
+    "exit_code": 0,
+    "open_candidate_descriptors": 0,
+    "total_lines": 46095
+  },
+  "free_bytes_before": 400307941376,
+  "space_note": "Logical bytes are separate from the actual free-space change (APFS, other activity).",
+  "deleted": [],
+  "status": "dry_run_pass",
+  "all_protected_unchanged": true,
+  "external_unchanged": true,
+  "deleted_count": 0,
+  "finished_at_utc": "2026-11-04T14:06:11.855571+00:00",
+  "free_bytes_after": 400307929088
+}

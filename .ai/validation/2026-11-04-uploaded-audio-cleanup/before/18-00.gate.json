@@ -1,0 +1,53 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "uploaded",
+  "result": "FAIL",
+  "series": "SERIES/18-00",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "FAIL",
+      "detail": "0 tracks"
+    },
+    {
+      "name": "concept_md_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_track_sources_or_source_map_present",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "report_json_present_or_source_map_ready",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "youtube_metadata_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_files_present",
+      "status": "FAIL",
+      "detail": "0 audio files via missing"
+    },
+    {
+      "name": "youtube_upload_completed",
+      "status": "FAIL",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    "render/upload artifacts are missing; this is a blocker only for render_final/upload_ready"
+  ],
+  "blockers": [
+    "No audio files (MP3/WAV) found in: SERIES/18-00/input/tracks",
+    "source_final requires audio files in input/tracks or concept.md Track Selection source map",
+    "source_final requires concept.md ## Final Track Sources",
+    "source_final requires output/report.json",
+    "uploaded phase requires concept.md upload completion evidence"
+  ]
+}

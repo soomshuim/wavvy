@@ -1,0 +1,722 @@
+{
+ "schema": "wavvy.post_upload_cleanup_reference_scan.v1",
+ "created_at_utc": "2026-11-04T14:00:57.955670+00:00",
+ "concept_edit_plan": {
+  "sections_to_remove": [
+   {
+    "heading": "## Historical 20-song draft — decisions and source records below (젠, 2026-11-01–02)",
+    "start_line": 32,
+    "end_line": 45,
+    "lines": 14,
+    "sha256": "57985f604c9e2cafd996758a772e0efc6ed7919f7ea40466da53529493b203ff"
+   },
+   {
+    "heading": "## Series Overrides",
+    "start_line": 46,
+    "end_line": 54,
+    "lines": 9,
+    "sha256": "67d36894e62de032aef4887dd4730736e3048cfca27a2333dece86b37f559a52"
+   },
+   {
+    "heading": "## Type Styles",
+    "start_line": 55,
+    "end_line": 270,
+    "lines": 216,
+    "sha256": "47b9c3ddf674552eea82425e716d4e44e94157cca95d6a0c9036416685889d6c"
+   },
+   {
+    "heading": "## Original Styles",
+    "start_line": 271,
+    "end_line": 525,
+    "lines": 255,
+    "sha256": "ca0f2cdcd62a01ead01cef3607bb2511c1f3d4b9ec8852c0eb8ef8760c822011"
+   },
+   {
+    "heading": "## New Song Style Assembly",
+    "start_line": 526,
+    "end_line": 551,
+    "lines": 26,
+    "sha256": "f3654bc06b46a844918abb6d3f8c8ebfde5bbcdec24384b5a719afb7ef2107c7"
+   },
+   {
+    "heading": "## Track Map (numbers are temporary)",
+    "start_line": 552,
+    "end_line": 580,
+    "lines": 29,
+    "sha256": "851848bf5dfc2876113c307c0fa19d4b57c861e1737a630c4a27781ab1bd69fd"
+   }
+  ],
+  "contiguous_span": true,
+  "span_start_line": 32,
+  "span_end_line": 580,
+  "replacement_text": "## Historical 20-song draft — deleted\n\n옛 20곡 초안 자료는 2026-11-04 젠 「지우기」로 삭제, 복원은 git 커밋 `791bea1` 이전 기록.\n",
+  "kept_sections_with_stale_mentions": [
+   {
+    "line": 9,
+    "under": "## Series Status",
+    "matched": [
+     "final.mkv"
+    ],
+    "excerpt": "- **Video production (2026-11-04, 젠 「이제 영상 제작하자.」)**: 4K 본편 영상 렌더까지 마쳤다. YouTube 업로드·공개·자막 게시·커밋·푸시는 하지 않았다. 17곡을 `input/tracks/NN__제목__Rela"
+   },
+   {
+    "line": 11,
+    "under": "## Series Status",
+    "matched": [
+     "final.mkv"
+    ],
+    "excerpt": "1. *승인 문안*: 설명·태그를 오케스트레이터가 보여 준 승인 문안으로, 고정 댓글을 승인 3줄로 바꿨다(`## YouTube Metadata`, 원문 「좋아. 업로드 하자. 바로 등록」·「확정」은 오케스트레이터 전달). `output/upload."
+   },
+   {
+    "line": 12,
+    "under": "## Series Status",
+    "matched": [
+     "source-history"
+    ],
+    "excerpt": "2. *가사 원문 기록*: 17곡 모두 `input/tracks/NN_<제목>.txt`로 만들었다. 가사는 Suno 곡 화면의 `lyrics_raw` 그대로(해시 대조), STYLE·EXCLUDE는 `style-provenance.json` 기록 그대"
+   },
+   {
+    "line": 13,
+    "under": "## Series Status",
+    "matched": [
+     "proposed-harness-patch"
+    ],
+    "excerpt": "3. *시간 자막*: 저장소 `.venv/`의 mlx-whisper 0.4.3 + `mlx-community/whisper-large-v3-turbo`로 17곡의 단어 시각을 얻어 `input/validation/2026-11-04-timed-subt"
+   },
+   {
+    "line": 14,
+    "under": "## Series Status",
+    "matched": [
+     "work/2026-11-04-2300-browser-capture"
+    ],
+    "excerpt": "- **Recording**: all 17 full-song recordings are technically verified, with source playback durations totaling 55:40.12. Ego probes were sil"
+   },
+   {
+    "line": 20,
+    "under": "## Series Status",
+    "matched": [
+     "source-history",
+     "suno-candidates"
+    ],
+    "excerpt": "- **Preserved earlier 20-song material**: the 20 agent source txt files, their source history, the candidate ledger `input/suno-candidates.j"
+   },
+   {
+    "line": 583,
+    "under": "## Source Records",
+    "matched": [
+     "source-history"
+    ],
+    "excerpt": "- Moved earlier 20-song source txt files (2026-11-04): `input/source-history/2026-11-02-historical-20-draft/` with `moved-manifest.json` (or"
+   },
+   {
+    "line": 585,
+    "under": "## Source Records",
+    "matched": [
+     "nine-tracks",
+     "2026-11-01-2300-"
+    ],
+    "excerpt": "- Observation: `.ai/research/2026-11-01-2300-nine-tracks/nine-tracks.json`, `styles-verbatim.txt`, and `raw/` (ego lite, read-only; no playb"
+   },
+   {
+    "line": 695,
+    "under": "## Upload Status",
+    "matched": [
+     "final.mkv"
+    ],
+    "excerpt": "- 공개 영상: Wavvy24(@wavvy24, 채널 ID `UC4R4NGwp19Y4lbdNs2HQVcg`), https://youtu.be/wbJQ2WgfJn4, 2026-11-04 21:54 KST 즉시 공개(YouTube 게시 시각 2026-11"
+   },
+   {
+    "line": 702,
+    "under": "## Upload Status",
+    "matched": [
+     "final.mkv"
+    ],
+    "excerpt": "- 결과 및 원시 UI 근거: [공개 기록](production/youtube-upload-20261104.json), [UI 근거 폴더](production/youtube-upload-ui-20261104/), [자막 게시 근거](input/vali"
+   }
+  ]
+ },
+ "corpus_files": 3522,
+ "class_c": {
+  ".ai/plans/2026-11-04-2300-browser-capture.md": {
+   "class": "C",
+   "reason": "completed short-term plan of this 23:00 run (links in SESSION/HANDOFF/CHANGELOG/concept must be rewritten first)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  ".ai/plans/2026-11-04-2300-subtitles-upload-prep.md": {
+   "class": "C",
+   "reason": "completed short-term plan of this 23:00 run (links in SESSION/HANDOFF/CHANGELOG/concept must be rewritten first)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  ".ai/plans/2026-11-04-2300-video-production.md": {
+   "class": "C",
+   "reason": "completed short-term plan of this 23:00 run (links in SESSION/HANDOFF/CHANGELOG/concept must be rewritten first)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  ".ai/plans/2026-11-04-2300-youtube-upload.md": {
+   "class": "C",
+   "reason": "completed short-term plan of this 23:00 run (links in SESSION/HANDOFF/CHANGELOG/concept must be rewritten first)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/browser-capture-20261104/__pycache__/capture.cpython-314.pyc": {
+   "class": "C",
+   "reason": "python bytecode cache of the browser-capture scripts (regenerable)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/browser-capture-20261104/__pycache__/verify-capture.cpython-314.pyc": {
+   "class": "C",
+   "reason": "python bytecode cache of the browser-capture scripts (regenerable)",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/gate-render-final.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-gate-render-final.json",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/17-30/input/validation/2026-10-22-release-production/17-production-audit.json",
+     "matched": [
+      "gate-render-final.json"
+     ]
+    }
+   ],
+   "referrer_count": 1
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/gate-source-final.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-gate-source-final.json",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/17-30/input/validation/2026-10-22-release-production/17-production-audit.json",
+     "matched": [
+      "gate-source-final.json"
+     ]
+    }
+   ],
+   "referrer_count": 1
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/gate-upload-ready.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-gate-upload-ready.json",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/17-30/input/validation/2026-10-22-release-production/17-production-audit.json",
+     "matched": [
+      "gate-upload-ready.json"
+     ]
+    }
+   ],
+   "referrer_count": 1
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/state-check-final.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-state-check.json",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/finalize-upload-check.log": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-finalize-upload-check.log",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-prepare-subtitles-timing-map-unpatched-harness.log": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-prepare-subtitles-timing-map.log",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-verify-subtitles-prepared-unpatched-harness.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record 2026-11-04-verify-subtitles-prepared.json",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-verify-subtitles-prepared-patched-copy-temp-series.json",
+     "matched": [
+      "2026-11-04-verify-subtitles-prepared-unpatched-harness.json"
+     ]
+    }
+   ],
+   "referrer_count": 1
+  },
+  "SERIES/23-00/production/video-production-20261104/gates/verify-release-baseline-before-selection-file.json": {
+   "class": "C",
+   "reason": "failed record (exit/result FAIL) replaced by the retained PASS record verify-release-final.json",
+   "record_referrers_by_name_or_sha": [],
+   "referrer_count": 0
+  },
+  "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/candidate-youtube_subtitles_ko_timed_estimated.srt": {
+   "class": "C",
+   "reason": "byte-identical duplicate of the retained output SRT; subtitles.json binds output/ path + hash, no record names this path",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/23-00/concept.md",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/input/subtitles.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/all-tracks-timed-checked.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/self-check-result.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/publication/publication-observation.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/production/youtube-upload-20261104.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-verify-subtitles-prepared-patched-copy-temp-series.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-verify-subtitles-prepared.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/production/youtube-upload-ui-20261104/verify-subtitles-published.stdout.json",
+     "matched": [
+      "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+     ]
+    }
+   ],
+   "referrer_count": 9
+  },
+  "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/proposed-harness-patch-subtitles.diff": {
+   "class": "C",
+   "reason": "applied patch: `patch -R --dry-run` applies cleanly to the committed wavvy_harness/subtitles.py, so the change is in the tree; the real diff stays in harness-patch-checks/git-diff-wavvy_harness-subtitles.diff",
+   "record_referrers_by_name_or_sha": [
+    {
+     "file": "SERIES/23-00/concept.md",
+     "matched": [
+      "proposed-harness-patch-subtitles.diff"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/tools/NOTE.txt",
+     "matched": [
+      "proposed-harness-patch-subtitles.diff"
+     ]
+    },
+    {
+     "file": "SERIES/23-00/production/video-production-20261104/gates/2026-11-04-verify-subtitles-prepared-patched-copy-temp-series.json",
+     "matched": [
+      "proposed-harness-patch-subtitles.diff"
+     ]
+    }
+   ],
+   "referrer_count": 3
+  }
+ },
+ "plan_links": {
+  "2026-11-04-2300-browser-capture.md": {},
+  "2026-11-04-2300-video-production.md": {
+   ".ai/HANDOFF.md": 1,
+   ".ai/SESSION.md": 1
+  },
+  "2026-11-04-2300-subtitles-upload-prep.md": {
+   ".ai/HANDOFF.md": 2,
+   ".ai/SESSION.md": 2
+  },
+  "2026-11-04-2300-youtube-upload.md": {
+   ".ai/HANDOFF.md": 1,
+   ".ai/SESSION.md": 1
+  }
+ },
+ "by_group_path_references": {
+  "A work/2026-11-04-2300-browser-capture": {
+   "referrer_count": 26,
+   "files": [
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    "SERIES/23-00/concept.md",
+    "SERIES/23-00/input/download-manifest.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-manifest.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture.py",
+    "SERIES/23-00/production/browser-capture-20261104/recordings.md",
+    "SERIES/23-00/production/browser-capture-20261104/verify-capture.py",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/0908a587-be93-46c5-a8e6-46428f3efba5-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/1406e9df-89fb-4daa-a46b-0c019d2dc7ab-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/15d1eaaf-2450-4314-8252-cc9aede23fc8-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/17a24019-4412-4443-b4e7-6d305d539958-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/2b2a7a3b-eb6f-4497-a470-2c9133a543eb-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/2bdaaa83-7145-4808-b57f-f0b98f7788f0-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/36d296ff-f0af-4b44-a5ad-0bc7cfef0982-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/3c9cb777-7397-4daa-bc46-a0516be1db8f-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/4708df3d-6f0a-4602-bea4-ccb734cf03db-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/5654d747-4921-416f-9b72-755bf27d734a-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/5bb566bd-ac12-4943-bf04-7ff9ac03c75b-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/7b0944f7-dddf-483b-b41c-beae8d5fe3ee-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/9fe398d7-ed43-4e77-8489-9c3d67a0d657-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/a1c4a6f1-9773-435c-875d-6a01de45d746-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/aca55231-9e58-469d-b0ce-c29cb767eaa5-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/c3903598-814e-476d-95a0-f721d2307233-attempt-01.json",
+    "SERIES/23-00/production/browser-capture-20261104/capture-verifications/f182958f-51dc-4d1e-9e1a-1b407d7abb33-attempt-01.json",
+    "SERIES/23-00/production/video-production-20261104/audio-cut-verification.json"
+   ]
+  },
+  "A input/tracks/*.wav (names)": {
+   "referrer_count": 47,
+   "files": [
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    "SERIES/23-00/concept.md",
+    "SERIES/23-00/input/download-manifest.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/01__작은 빛__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/02__돛__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/03__한 잔만 더__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/04__이름__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/05__비가 그쳤네__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/06__마음 밖__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/07__손 잡아도 될까__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/08__먼지__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/09__지금 가는 길__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/10__산책__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/11__나도 네가 신경 쓰여__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/12__숨__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/13__자꾸 네가 신경쓰여__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/14__물안개__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/15__약속__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/16__골목__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/17__물결__Relax__Lo-fi R&B__NA-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-02-bridge-weak-95-135-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-03-gap-instrumental-60-100-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-05-gap-instrumental-55-100-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-05-weak-line29-80-110-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-06-weak-line36-125-160-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-07-gap-instrumental-50-100-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-08-extra-repeat-a-100-135-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-08-extra-repeat-b-140-175-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-08-gap-instrumental-b-125-165-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-09-gap-instrumental-55-100-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-09-weak-line43-120-150-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-10-extra-chorus-85-153-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-12-breakdown-140-180-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-12-ending-190-214-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-12-gap-instrumental-70-105-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-13-weak-final-chorus-140-175-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-14-gap-instrumental-40-90-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-15-verse2-missing-75-115-whisper.json",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/audio-probe/check-15-verse2-missing-b-105-145-whisper.json"
+   ]
+  },
+  "A output/final.mkv": {
+   "referrer_count": 66,
+   "files": [
+    "CHANGELOG.md",
+    "wavvy.py",
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    ".ai/state.json",
+    ".ai/auto-handoff/20260602-213658_codex-context-low/HANDOFF.md",
+    ".ai/auto-handoff/20260602-213658_codex-context-low/SESSION.md",
+    ".ai/auto-handoff/20260602-213658_codex-context-low/session.jsonl",
+    ".ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/orchestrator/workers/worker-01/runtime.log",
+    ".ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/orchestrator/workers/worker-02/runtime.log",
+    ".ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/orchestrator/workers/worker-03/runtime.log",
+    ".ai/pipeline/runs/20260522-095007_wavvy-lyrics-skill-harness/orchestrator/workers/worker-04/runtime.log",
+    ".ai/pipeline/runs/20260522-132827_wavvy-write-command-shim-impl/.goal-analysis.log",
+    ".ai/pipeline/runs/20260522-132827_wavvy-write-command-shim-impl/orchestrator/workers/worker-01/runtime.log",
+    ".ai/pipeline/runs/20260523-183702_wavvy-17-00-20-track-design-retry/orchestrator/workers/worker-01/runtime.log",
+    ".ai/pipeline/runs/20260523-191335_wavvy-17-00-20-track-design-director-codex/orchestrator/repairs/repair-01/runtime.log",
+    ".ai/pipeline/runs/20260523-191335_wavvy-17-00-20-track-design-director-codex/orchestrator/workers/worker-01/runtime.log",
+    ".ai/pipeline/runs/20260523-191335_wavvy-17-00-20-track-design-director-codex/orchestrator/workers/worker-02/runtime.log",
+    ".ai/pipeline/runs/20260523-191335_wavvy-17-00-20-track-design-director-codex/orchestrator/workers/worker-03/runtime.log",
+    ".ai/pipeline/runs/20260523-191335_wavvy-17-00-20-track-design-director-codex/orchestrator/workers/worker-04/runtime.log",
+    ".ai/pipeline/runs/20260524-131549_wavvy-17-acoustic-rnb-redesign-codex/orchestrator/repairs/repair-01/runtime.log",
+    ".ai/pipeline/runs/20260524-131549_wavvy-17-acoustic-rnb-redesign-codex/orchestrator/workers/worker-01/runtime.log",
+    ".ai/pipeline/runs/20260524-131549_wavvy-17-acoustic-rnb-redesign-codex/orchestrator/workers/worker-02/runtime.log",
+    ".ai/pipeline/runs/20260524-131549_wavvy-17-acoustic-rnb-redesign-codex/orchestrator/workers/worker-03/runtime.log",
+    ".ai/pipeline/runs/20260524-131549_wavvy-17-acoustic-rnb-redesign-codex/orchestrator/workers/worker-04/runtime.log",
+    ".ai/plans/2026-10-03_17-00-youtube-package.md",
+    ".ai/reviews/2026-10-22-final-release-package-review.md",
+    ".ai/validation/2026-10-23-subtitle-title-harness/controller-state-check.txt",
+    ".ai/validation/2026-10-23-subtitle-title-harness/record-state-check.json",
+    ".ai/validation/2026-10-23-subtitle-title-harness/record-state-write.json",
+    ".ai/validation/2026-10-23-subtitle-title-harness/state-17-30.txt",
+    "MASTER/SSOT.md",
+    "MASTER/WORKFLOWS.md",
+    "MASTER/ai/RUNTIME_RULES.md",
+    "MASTER/cli/SPEC.md",
+    "SERIES/13-00/output/upload.csv",
+    "SERIES/17-00/concept.md",
+    "SERIES/17-30/input/validation/2026-10-22-release-production/03-master-audio-full-decode-loudnorm.log",
+    "SERIES/19-30/production/mix-170-20261026/integration-contract.md",
+    "SERIES/20-00/concept.md"
+   ]
+  },
+  "B source-history": {
+   "referrer_count": 41,
+   "files": [
+    "CHANGELOG.md",
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    ".ai/reviews/2026-10-21-nonrock-source-review.md",
+    ".ai/reviews/2026-10-22-eight-song-source-review.md",
+    ".ai/reviews/2026-10-22-track-07-concept-source-review.md",
+    ".ai/reviews/2026-10-22-track-10-lyric-source-review.md",
+    ".ai/reviews/2026-10-22-track-15-lyric-source-review.md",
+    ".ai/validation/2026-11-01-2300-lyrics/14-template-preserve.json",
+    ".ai/validation/2026-11-01-2300-lyrics/15-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/15-template-preserve.json",
+    ".ai/validation/2026-11-01-2300-lyrics/16-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/16-template-preserve.json",
+    ".ai/validation/2026-11-01-2300-lyrics/17-rewrite1-metrics.json",
+    ".ai/validation/2026-11-02-2300-styles/11-apply-compare.json",
+    ".ai/validation/2026-11-02-2300-styles/12-apply-compare.json",
+    ".ai/validation/2026-11-02-2300-styles/13-apply-compare.json",
+    ".ai/validation/2026-11-02-2300-styles/14-apply-compare.json",
+    ".ai/validation/2026-11-02-2300-styles/15-apply-compare.json",
+    ".ai/validation/2026-11-02-2300-styles/b2-apply-11-15.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-apply-16-19.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-compare-11-15.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-compare-16-19.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-preserve-11-15.json",
+    ".ai/validation/2026-11-02-2300-styles/b2-preserve-11-15.py",
+    "SERIES/17-30/concept.md",
+    "SERIES/17-30/input/generation-log.json",
+    "SERIES/17-30/input/playback-order.json",
+    "SERIES/17-30/input/suno-candidates.json",
+    "SERIES/17-30/input/source-history/2026-10-21-running-draft/archive-manifest.json",
+    "SERIES/17-30/input/source-history/2026-10-22-before-eight-song-generation/candidate-review.md",
+    "SERIES/17-30/input/source-history/2026-10-22-before-eight-song-generation/suno-candidates.json",
+    "SERIES/17-30/input/source-history/2026-10-22-before-user-remixes/archive-manifest.json",
+    "SERIES/17-30/input/source-history/2026-10-22-before-user-remixes/suno-candidates.json",
+    "SERIES/17-30/input/validation/2026-10-22-track-07-concept-source-resolution.json",
+    "SERIES/17-30/input/validation/2026-10-22-track-10-lyric-source-resolution.json",
+    "SERIES/17-30/input/validation/2026-10-22-track-15-source-resolution.json",
+    "SERIES/17-30/input/validation/2026-10-22-track-07-concept-rewrite/source/preservation-and-style.json",
+    "SERIES/17-30/input/validation/2026-10-22-track-15-lyric-rewrite/source/final/preservation-and-style.json",
+    "SERIES/23-00/concept.md"
+   ]
+  },
+  "B suno-candidates.json": {
+   "referrer_count": 38,
+   "files": [
+    "wavvy.py",
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    ".ai/inbox-reviews/2026-10-22/msg-suno-inventory.md",
+    ".ai/research/2026-10-26-1930-expansion/drive-eight-generation/persist.py",
+    ".ai/research/2026-10-26-1930-expansion/generation/persist-journal.py",
+    ".ai/research/2026-10-26-1930-expansion/regeneration-17/persist.py",
+    ".ai/reviews/2026-10-21-nonrock-generation-review.md",
+    ".ai/reviews/2026-10-22-eight-song-generation-docs-review.md",
+    ".ai/reviews/2026-10-22-final-artwork-sequence-review.md",
+    ".ai/reviews/2026-10-22-final-sequence-review.md",
+    ".ai/validation/2026-10-24-0630-final-audio-approval-check.json",
+    ".ai/validation/2026-11-02-2300-styles/a2-check.py",
+    "MASTER/WORKFLOWS.md",
+    "SERIES/06-30/input/audio-integration/2026-10-24/selected-basis.json",
+    "SERIES/06-30/production/final-closeout-20261024.json",
+    "SERIES/06-30/production/final-premixed-audio.json",
+    "SERIES/06-30/production/suno-track11-title-retry-20261024.json",
+    "SERIES/06-30/production/suno-two-track-retry-20261024-latest.json",
+    "SERIES/17-30/input/style-comparison-2026-10-22.md",
+    "SERIES/17-30/input/source-history/2026-10-22-before-eight-song-generation/archive-manifest.json",
+    "SERIES/17-30/input/source-history/2026-10-22-before-eight-song-generation/candidate-review.md",
+    "SERIES/17-30/input/source-history/2026-10-22-before-user-remixes/archive-manifest.json",
+    "SERIES/19-30/production/expansion-listening-list.md",
+    "SERIES/23-00/concept.md",
+    "SERIES/23-00/input/suno-final-selection-2026-11-04.json",
+    "skills/wavvy-audio-ingest/SKILL.md",
+    "skills/wavvy-suno-batch/SKILL.md",
+    "tests/test_harness.py",
+    "tests/test_premixed_audio.py",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-candidates-current-preparation.txt",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-candidates-final-preparation.txt",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-candidates-final.txt",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-candidates.txt",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-inventory-current-preparation.json",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-inventory-final-preparation.json",
+    "work/2026-10-26-1930-current20-capture/record-preparation/staging-inventory-final.json",
+    "work/2026-10-26-1930-current20-capture/record-preparation/wavvy-commit-raw.txt"
+   ]
+  },
+  "B 2026-11-01-generation": {
+   "referrer_count": 0,
+   "files": []
+  },
+  "B 2026-11-02-regeneration": {
+   "referrer_count": 0,
+   "files": []
+  },
+  "B .ai/lyrics 2026-11-01_23-00_": {
+   "referrer_count": 129,
+   "files": [
+    ".ai/validation/2026-11-01-2300-lyrics/10-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/10-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/10-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/10-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/11-template-compare.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/12-template-compare.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/13-template-compare.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/14-template-preserve.json",
+    ".ai/validation/2026-11-01-2300-lyrics/15-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/15-lyrics-review-rewrite1.json"
+   ]
+  },
+  "B nine-tracks": {
+   "referrer_count": 14,
+   "files": [
+    ".ai/plans/2026-11-01-ego-lite-browser-default-brief.md",
+    ".ai/validation/2026-11-01-2300-foundation/04-verify-sources.txt",
+    ".ai/validation/2026-11-01-2300-foundation/build-foundation.py",
+    ".ai/validation/2026-11-01-2300-foundation/verify-sources.py",
+    ".ai/validation/2026-11-01-2300-lyrics/15-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/16-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/17-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-rewrite1-metrics.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-rewrite1-metrics.json",
+    ".ai/validation/2026-11-02-2300-styles/a2-build.py",
+    "SERIES/23-00/concept.md",
+    "SERIES/23-00/production/browser-capture-20261104/sequence.json",
+    "SERIES/23-00/production/browser-capture-20261104/style-provenance.json"
+   ]
+  },
+  "B .ai/plans 2026-11-01/02-2300": {
+   "referrer_count": 45,
+   "files": [
+    ".ai/HANDOFF.md",
+    ".ai/SESSION.md",
+    ".ai/plans/2026-11-01-ego-lite-browser-default-brief.md",
+    ".ai/validation/2026-11-01-2300-foundation/15b-whitespace-new-files.txt",
+    ".ai/validation/2026-11-01-2300-foundation/25-assembly-reproduction.py",
+    ".ai/validation/2026-11-01-2300-foundation/build-foundation.py",
+    ".ai/validation/2026-11-01-2300-foundation/verify-sources.py",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/18-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-review-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-skill-template.json",
+    ".ai/validation/2026-11-01-2300-lyrics/19-lyrics-skill.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-review-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-review-restore.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-review-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-review.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-skill-fix1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-skill-restore.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-skill-rewrite1.json",
+    ".ai/validation/2026-11-01-2300-lyrics/20-lyrics-skill.json",
+    ".ai/validation/2026-11-02-2300-original-style-gate/04-smoke-real-shapes.py",
+    ".ai/validation/2026-11-02-2300-styles/a2-build.py",
+    ".ai/validation/2026-11-02-2300-styles/a2-check.py",
+    ".ai/validation/2026-11-02-2300-styles/a2-concept.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-apply-11-15.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-apply-16-19.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-compare-11-15.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-compare-16-19.py",
+    ".ai/validation/2026-11-02-2300-styles/b2-preserve-11-15.py"
+   ]
+  }
+ },
+ "plan_link_lines": {
+  ".ai/SESSION.md": [
+   {
+    "line": 6,
+    "excerpt": "- 젠의 「이제 영상 제작하자.」에 따라 4K 본편 영상 렌더까지 마쳤다(지시서 `.ai/plans/2026-11-04-2300-video-production.md`). YouTube 업로드·Studio·Suno 조작·새 이미지/음악 생성·커밋·푸시는 하지 않았다."
+   },
+   {
+    "line": 11,
+    "excerpt": "- 업로드 준비(2026-11-04, 젠 「좋아. 업로드 하자. 바로 등록」·「자막 먼저 만들고 공개」, 지시서 `.ai/plans/2026-11-04-2300-subtitles-upload-prep.md`): 업로드·Studio·공개·댓글·Suno 조작·커밋·푸시는 하지 않았다. (1"
+   },
+   {
+    "line": 14,
+    "excerpt": "- 기존 자막 테스트 수정(젠 「고쳐줄래?」): `tests/test_subtitles.py` 13건 오류는 17:30 업로드 후 정리 커밋 `0861ddb`가 지운 보고서 사본 `report-at-subtitle-preparation.json`을 읽다 실패한 것이었다. 17:30 근거"
+   },
+   {
+    "line": 15,
+    "excerpt": "- 업로드·공개(2026-11-04, 지시서 `.ai/plans/2026-11-04-2300-youtube-upload.md`, ego lite, 채널 Wavvy24 `UC4R4NGwp19Y4lbdNs2HQVcg`): 제출 1회로 영상 `wbJQ2WgfJn4`(https://www.yo"
+   }
+  ],
+  ".ai/HANDOFF.md": [
+   {
+    "line": 14,
+    "excerpt": "- 젠의 「이제 영상 제작하자.」에 따라 4K 본편 영상 렌더까지 마쳤다(지시서 `.ai/plans/2026-11-04-2300-video-production.md`). YouTube 업로드·Studio·Suno 조작·새 이미지/음악 생성·커밋·푸시는 하지 않았다."
+   },
+   {
+    "line": 19,
+    "excerpt": "- 업로드 준비(2026-11-04, 젠 「좋아. 업로드 하자. 바로 등록」·「자막 먼저 만들고 공개」, 지시서 `.ai/plans/2026-11-04-2300-subtitles-upload-prep.md`): 업로드·Studio·공개·댓글·Suno 조작·커밋·푸시는 하지 않았다. (1"
+   },
+   {
+    "line": 22,
+    "excerpt": "- 기존 자막 테스트 수정(젠 「고쳐줄래?」): `tests/test_subtitles.py` 13건 오류는 17:30 업로드 후 정리 커밋 `0861ddb`가 지운 보고서 사본 `report-at-subtitle-preparation.json`을 읽다 실패한 것이었다. 17:30 근거"
+   },
+   {
+    "line": 23,
+    "excerpt": "- 업로드·공개(2026-11-04, 지시서 `.ai/plans/2026-11-04-2300-youtube-upload.md`, ego lite, 채널 Wavvy24 `UC4R4NGwp19Y4lbdNs2HQVcg`): 제출 1회로 영상 `wbJQ2WgfJn4`(https://www.yo"
+   }
+  ],
+  "CHANGELOG.md": [],
+  "SERIES/23-00/concept.md": []
+ }
+}

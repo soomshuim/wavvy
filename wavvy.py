@@ -37,7 +37,7 @@ from wavvy_harness.state import PHASES
 from wavvy_harness.subtitles import SubtitleError, prepare_timed, verify_prepared, verify_published
 from wavvy_harness.youtube_titles import validate_youtube_title
 from wavvy_harness.premixed_audio import check_premixed_audio, check_premixed_render, premixed_opt_in
-from wavvy_harness.state import _upload_completed
+from wavvy_harness.state import _upload_completed, uploaded_audio_cleanup_errors
 from wavvy_harness.video_artwork import check_video_artwork
 
 
@@ -598,9 +598,14 @@ class ProjectPaths:
 # VALIDATION
 # =============================================================================
 
-def validate_project(paths: ProjectPaths) -> ValidationResult:
+def validate_project(paths: ProjectPaths, allow_uploaded_audio_cleanup: bool = False) -> ValidationResult:
     """
     Validate project structure and files.
+
+    With allow_uploaded_audio_cleanup, a series whose concept.md records the
+    completed upload and keeps the deleted tracks' filenames and SHA-256 in Final
+    Track Sources may have no local audio. Pre-upload paths (pack, preview) never
+    pass it.
 
     Checks:
     1. tracks/ contains at least one MP3/WAV
@@ -641,15 +646,24 @@ def validate_project(paths: ProjectPaths) -> ValidationResult:
     if not local_audio_files:
         source_map_entries = parse_compilation_source_map(paths.base)
 
+    audio_deleted_after_upload = False
     if not local_audio_files and not source_map_entries:
-        if not paths.tracks_dir.exists():
-            result.add_error(f"Tracks directory does not exist: {paths.tracks_dir}")
-        else:
-            result.add_error(f"No audio files (MP3/WAV) found in: {paths.tracks_dir}")
-        return result
+        audio_deleted_after_upload = allow_uploaded_audio_cleanup and not uploaded_audio_cleanup_errors(paths.base)
+        if not audio_deleted_after_upload:
+            if not paths.tracks_dir.exists():
+                result.add_error(f"Tracks directory does not exist: {paths.tracks_dir}")
+            else:
+                result.add_error(f"No audio files (MP3/WAV) found in: {paths.tracks_dir}")
+            return result
 
     if local_audio_files:
         log_info(f"Found {len(local_audio_files)} audio file(s)")
+    elif audio_deleted_after_upload:
+        result.add_warning(
+            "No local audio in input/tracks; deleted after upload "
+            "(filename and SHA-256 stay in concept.md Final Track Sources)"
+        )
+        log_info("Local audio deleted after upload; recorded in Final Track Sources")
     else:
         result.add_warning(
             "No local input/tracks audio found; using concept.md Track Selection source map"
@@ -2627,9 +2641,9 @@ def gate_cmd(path: Path, stage: str, json_output: bool, artifact: Optional[Path]
         validation_result = ValidationResult(is_valid=True)
     elif json_output:
         with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
-            validation_result = validate_project(paths)
+            validation_result = validate_project(paths, allow_uploaded_audio_cleanup=(stage == "uploaded"))
     else:
-        validation_result = validate_project(paths)
+        validation_result = validate_project(paths, allow_uploaded_audio_cleanup=(stage == "uploaded"))
 
     validation_payload = {
         "is_valid": validation_result.is_valid,
@@ -2682,7 +2696,7 @@ def validate(path: Path):
     click.echo(click.style("\n=== WAVVY VALIDATION ===\n", fg='cyan', bold=True))
 
     paths = ProjectPaths(path)
-    result = validate_project(paths)
+    result = validate_project(paths, allow_uploaded_audio_cleanup=True)
 
     # Print summary
     click.echo("")
@@ -2709,7 +2723,8 @@ def validate(path: Path):
         click.echo("  Retained premix: 20 selected sources, 2 cycles, 40 chapter entries")
     else:
         total_duration = sum(t.duration for t in result.tracks)
-        click.echo(f"  Tracks: {len(result.tracks)}")
+        local_note = "" if result.tracks else " local (audio deleted after upload; recorded in Final Track Sources)"
+        click.echo(f"  Tracks: {len(result.tracks)}{local_note}")
     click.echo(f"  Total Duration: {total_duration:.1f}s ({total_duration/60:.1f} min)")
     click.echo("")
     click.echo(click.style("VALIDATION PASSED", fg='green', bold=True))

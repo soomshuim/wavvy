@@ -1,0 +1,142 @@
+{
+ "schema": "wavvy.post_upload_cleanup_closeout.v2",
+ "recorded_at_utc": "2026-11-04T14:42:45.816779+00:00",
+ "status": "cleanup_and_documentation_complete_pending_controller_scoped_commit_push",
+ "authorization": [
+  "작업에 쓰인 원본 영상등, 과정 파일들도 다 삭제. 이전 작업 정리 방식 히스토리 확인 (젠, 2026-11-04, 오케스트레이터 전달)",
+  "옛 20곡 초안 「지우기」 (젠, 2026-11-04)",
+  "WAV: 「검사 도구 고치고 삭제 (추천)」 (젠, 오케스트레이터 전달)",
+  "적용: 「빨리 지워.」 (젠, 2026-11-04, 오케스트레이터 전달)"
+ ],
+ "series": "23-00",
+ "video_id": "wbJQ2WgfJn4",
+ "executor": {
+  "path": ".ai/cleanup/execute-2300-post-upload-cleanup-20261104-v2.py",
+  "sha256": "37aab0f11df7032d276e606b601d7c8b5733da5f98dd134ab15562485c98aa02"
+ },
+ "manifest_sha256": {
+  "candidates": "e52db6234af7d33d036d692de1ae5f8e5522b4f02742f3b45cbc0af8ac218a8c",
+  "protected": "645205dee8a429051bac4fd7b4d0bd8a904a741860d127add9471dcf0595102a"
+ },
+ "virtual_deletion_record": {
+  "path": "/Users/zenkim_office/Project/wavvy/.ai/cleanup/2026-11-04-2300-post-upload-cleanup-dry-run-sandbox-v2.json",
+  "sha256": "25327bd01b684d26e48e5193c000dd9415bc3fdead52d5e8d662c650db386d97"
+ },
+ "candidate_count": 1496,
+ "deleted_count": 1496,
+ "deleted_logical_bytes": 7641810884,
+ "by_class": {
+  "B": {
+   "count": 1063,
+   "bytes": 19642131
+  },
+  "C": {
+   "count": 17,
+   "bytes": 173340
+  },
+  "A": {
+   "count": 219,
+   "bytes": 7557230274
+  },
+  "D": {
+   "count": 197,
+   "bytes": 64765139
+  }
+ },
+ "exact_candidate_deleted_set_equal": true,
+ "all_candidate_paths_absent": true,
+ "directories_removed": 119,
+ "directories_skipped": [],
+ "directory_rows": 119,
+ "all_directory_rows_absent": true,
+ "protected_count": 4055,
+ "all_protected_unchanged_at_apply_finish": true,
+ "external_unchanged": true,
+ "independent_post_apply_check": {
+  "record": ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-post-apply-check-v2.json",
+  "protected_changed_or_missing": [],
+  "sha256": "0afe2fa9d8d318392b86ecc699147522f0c1b13ccff6e4a37a7ca855663f4eae"
+ },
+ "intentional_post_verification_metadata_changes": [
+  "SERIES/23-00/concept.md",
+  ".ai/SESSION.md",
+  ".ai/HANDOFF.md",
+  "CHANGELOG.md",
+  ".ai/state.json"
+ ],
+ "state_writer_revision_before": 105,
+ "state_writer_revision_after": 106,
+ "state_phase": "uploaded",
+ "state_audio_source": "deleted_after_upload",
+ "state_next_action_note": "state --write keeps the prior next_action text for an unchanged phase; it still says final.mkv/upload.csv can be regenerated with pack, while the audio must be restored first (Local Retention / gate warning).",
+ "release_checks_after_all_document_edits": {
+  "uploaded_gate": {
+   "exit": 0,
+   "result": "PASS",
+   "blockers": [],
+   "warnings": [
+    "local audio files deleted after upload; restore them before running pack again",
+    "local final.mkv deleted after upload; regenerate with pack if needed"
+   ],
+   "checks": 8
+  },
+  "state_check": {
+   "exit": 0,
+   "result": "PASS",
+   "blockers": []
+  },
+  "verify_subtitles_prepared": {
+   "exit": 0,
+   "result": "PASS",
+   "cues": 1490
+  },
+  "verify_subtitles_published": {
+   "exit": 0,
+   "result": "PASS",
+   "cues": 1490
+  }
+ },
+ "reference_only": {
+  "verify_release": "FAIL expected without local audio (pre-upload check); not a pass criterion"
+ },
+ "tests": {
+  "files": 8,
+  "cases": 181,
+  "where": "virtual-deletion sandbox (all OK, equal to the pristine sandbox); real tree not re-run after deletion because no code changed"
+ },
+ "free_space_observation": {
+  "free_bytes_before": 400985657344,
+  "free_bytes_after": 409077821440,
+  "actual_free_bytes_delta": 8092164096,
+  "limit": "Actual delta is not the logical deletion size; APFS clones/sharing and other machine activity affect it."
+ },
+ "documents_edited": {
+  "SERIES/23-00/concept.md": "c23eea6c84d339d169e26ae1a21ca0ea40a7cf424935087d3c5c97baec20efd4",
+  ".ai/SESSION.md": "7698118603d011b0a45b525f6f99b55738a9e3f420566fc59d00498a6ac896c6",
+  ".ai/HANDOFF.md": "0f4d637a8fdb29ba335f0e34c862f92bbd693d1553cae395080a08debccee3ce",
+  "CHANGELOG.md": "cf82e3416220f7f0a3d4f52b55f48a805fc80b9a2b32a68a2a16858dafe38345",
+  ".ai/state.json": "324f6c88d5ab59e8f3282fb066f76b16a9266b2a1df1d09c556247895827ee7c"
+ },
+ "document_edit_record_before_apply": {
+  "path": ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-doc-edits-v2.diff",
+  "sha256": "b137bfbc3676ee7292b5266a084ef1d7c3c23dd0b7576091774fd7d63f585b2c"
+ },
+ "retained": "Final thumbnail and video background, lyric/style source txt and Final Track Sources, selection/capture/render/publication records, output/upload.csv, report.json, provenance.md and both subtitle files, check and cleanup records, code, tests, MASTER, skills, other series, .venv, Whisper cache.",
+ "scope_exclusions": [
+  "SERIES/07-00/input/thumb.jpg and SERIES/19-30/input/thumb.psd (pre-existing user-side deletions)",
+  ".ai/plans/2026-11-04-2300-post-upload-cleanup.md (brief, kept)",
+  ".ai/plans/2026-11-01-ego-lite-browser-default-brief.md (harness browser policy, kept)",
+  "Git internals, .venv, Whisper cache, other series, CDS and other projects",
+  "session tasks/ directory and files created in scratchpad after the freeze (review-cleanup)"
+ ],
+ "not_done": [
+  "No commit or push (controller does both).",
+  "Isolated review was run by the controller, not recorded by this worker."
+ ],
+ "raw_records": [
+  ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-apply-v2.json",
+  ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-apply-v2.events.jsonl",
+  ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-apply-v2.stdout.json",
+  ".ai/cleanup/2026-11-04-2300-post-upload-cleanup-v2-state-write.stdout.json"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "uploaded",
+  "result": "FAIL",
+  "series": "SERIES/07-00",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "final_premixed_audio",
+      "status": "FAIL",
+      "detail": "Final Premixed Audio: premix evidence file/hash differs: input/thumb.jpg"
+    },
+    {
+      "name": "youtube_upload_completed",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "warnings": [],
+  "blockers": [
+    "Final Premixed Audio: premix evidence file/hash differs: input/thumb.jpg",
+    "source_final requires audio files in input/tracks or concept.md Track Selection source map"
+  ]
+}

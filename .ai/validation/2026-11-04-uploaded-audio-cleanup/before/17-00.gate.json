@@ -1,0 +1,55 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "uploaded",
+  "result": "FAIL",
+  "series": "SERIES/17-00",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "FAIL",
+      "detail": "0 tracks"
+    },
+    {
+      "name": "concept_md_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_track_sources_or_source_map_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "report_json_present_or_source_map_ready",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "youtube_metadata_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_files_present",
+      "status": "FAIL",
+      "detail": "0 audio files via missing"
+    },
+    {
+      "name": "final_track_sources_match_report",
+      "status": "PASS",
+      "detail": "fts=20 report=20"
+    },
+    {
+      "name": "youtube_upload_completed",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    "local final.mkv deleted after upload; regenerate with pack if needed"
+  ],
+  "blockers": [
+    "No audio files (MP3/WAV) found in: SERIES/17-00/input/tracks",
+    "source_final requires audio files in input/tracks or concept.md Track Selection source map"
+  ]
+}

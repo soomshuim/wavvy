@@ -966,6 +966,7 @@ def run_gate(
         blockers.extend(layout_errors)
     available_audio_files = artifacts.get("available_audio_files", artifacts.get("audio_files", 0))
     audio_source = artifacts.get("audio_source", "input_tracks")
+    audio_deleted_after_upload = stage == "uploaded" and audio_source == "deleted_after_upload"
 
     source_checks = [
         ("concept_md_present", artifacts["concept_md"] == "present"),
@@ -979,7 +980,7 @@ def run_gate(
             or (artifacts.get("source_map") == "present" and not artifacts.get("source_map_missing")),
         ),
         ("youtube_metadata_present", artifacts["youtube_metadata"] == "present"),
-        ("audio_files_present", available_audio_files > 0, f"{available_audio_files} audio files via {audio_source}"),
+        ("audio_files_present", available_audio_files > 0 or audio_deleted_after_upload, f"{available_audio_files} audio files via {audio_source}"),
     ]
     for item in source_checks:
         name, passed, *detail = item
@@ -1067,6 +1068,8 @@ def run_gate(
             warnings.append("local final.mkv deleted after upload; regenerate with pack if needed")
         if artifacts["upload_csv"] == "deleted_after_upload":
             warnings.append("local upload.csv deleted after upload; regenerate with pack if needed")
+        if audio_deleted_after_upload:
+            warnings.append("local audio files deleted after upload; restore them before running pack again")
 
     return {
         "schema": "wavvy.gate.v1",

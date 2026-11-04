@@ -1,0 +1,81 @@
+{
+ "schema": "wavvy.post_upload_cleanup_dependency_check.v2",
+ "created_at_utc": "2026-11-04T14:32:56.380121+00:00",
+ "subtitle_and_timing_bindings": {
+  "count": 59,
+  "all_protected": true,
+  "any_candidate": []
+ },
+ "uploaded_audio_cleanup_rule": {
+  "function": "wavvy_harness.state.uploaded_audio_cleanup_errors(SERIES/23-00)",
+  "stdout": "[]",
+  "stderr": "",
+  "final_track_sources_blocks": 17,
+  "report_tracks": 17,
+  "meaning": "[] = accepted: upload completion recorded, every track has Filename+SHA-256 in Final Track Sources, equal to output/report.json"
+ },
+ "brief_and_decision_protected_items": {
+  "checked": 26,
+  "violations": []
+ },
+ "glob_groups": {
+  "SERIES/23-00/production/artwork-final/*": {
+   "files": 3,
+   "protected": 3,
+   "candidate": []
+  },
+  "SERIES/23-00/input/tracks/*.txt": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/*.json": {
+   "files": 16,
+   "protected": 16,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/suno-ui/*": {
+   "files": 31,
+   "protected": 31,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/capture-verifications/*": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/browser-timelines/*": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/youtube-upload-ui-20261104/*": {
+   "files": 40,
+   "protected": 40,
+   "candidate": []
+  },
+  "SERIES/23-00/input/validation/2026-11-04-final-sources/*": {
+   "files": 1,
+   "protected": 1,
+   "candidate": []
+  },
+  "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/**/*": {
+   "files": 76,
+   "protected": 74,
+   "candidate": [
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/proposed-harness-patch-subtitles.diff",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/candidate-youtube_subtitles_ko_timed_estimated.srt"
+   ]
+  },
+  "SERIES/23-00/production/video-production-20261104/logs/*": {
+   "files": 16,
+   "protected": 16,
+   "candidate": []
+  },
+  ".ai/validation/2026-11-04-uploaded-audio-cleanup/**/*": {
+   "files": 364,
+   "protected": 364,
+   "candidate": []
+  }
+ }
+}

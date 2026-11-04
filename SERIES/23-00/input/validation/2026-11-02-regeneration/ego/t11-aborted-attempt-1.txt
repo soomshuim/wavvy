@@ -1,9 +1,0 @@
-(first run of ./scripts/run.sh 11 false 636, aborted BEFORE any Create click; this is the console output as seen; the original t11-submit.txt was later overwritten by the successful second run)
-ElementResolutionError: page.click timed out after 3000ms: page.click failed: element is not visible in the viewport
-    at #retryElementAction (file:////[eval1]:19158:27)
-    at async file:////[eval1]:19242:29
-    at async file:////[eval1]:16940:28
-[ego-browser:notice] Ego Lite update is available (current 0.6.1.13). Finish the current browser task, then ask the user before running `ego-browser upgrade`; re-read the ego-browser Skill afterward.
-
-ego's nodejs process exited with code 1.
-(no track-11-submit-marker.json and no track-11-pre-submit.json existed after this attempt; credits remained 636 at the next run's guard)

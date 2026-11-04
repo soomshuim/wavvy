@@ -1,0 +1,52 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "uploaded",
+  "result": "FAIL",
+  "series": "SERIES/20-00",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "PASS",
+      "detail": "0 tracks"
+    },
+    {
+      "name": "concept_md_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_track_sources_or_source_map_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "report_json_present_or_source_map_ready",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "youtube_metadata_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_files_present",
+      "status": "PASS",
+      "detail": "0 audio files via deleted_after_upload"
+    },
+    {
+      "name": "youtube_upload_completed",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    "local audio files deleted after upload; restore them before running pack again",
+    "local final.mkv deleted after upload; regenerate with pack if needed",
+    "local upload.csv deleted after upload; regenerate with pack if needed",
+    "rubric_unverified_after_finalize"
+  ],
+  "blockers": [
+    "source_final requires output/report.json"
+  ]
+}

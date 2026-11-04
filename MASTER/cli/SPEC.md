@@ -104,6 +104,7 @@ STYLE에 숫자 BPM이 없는 곡은 마지막 필드에 `NA`를 쓴다. 이 값
 - Naming Check: `__` 규칙
 - Audio Integrity: ffprobe (Duration, Decodable, Sample Rate)
 - Explicit retained-premix opt-in validates `production/final-premixed-audio.json` and its retained producer evidence/video background instead of requiring individual tracks or a loop file. A partial or invalid opt-in fails; it never falls back to surviving WAVs.
+- 업로드 후 음원 정리(일반 시리즈): `concept.md`에 업로드 완료와 `## Final Track Sources`(곡별 `Filename`·`SHA-256`, `output/report.json`이 있으면 일치)가 기록돼 있으면 `input/tracks`가 비어도 `validate`, `state --check`(phase `uploaded`), `gate --stage uploaded`가 통과하고 state는 `audio_source: deleted_after_upload`로 표시한다. 음원이 일부 남아 있으면 그 파일은 기존 검사를 받는다. `source-final`·`render-final`·`upload-ready`·`pack`·`preview`는 음원을 계속 요구한다. 근거: 젠 결정 2026-11-04.
 
 ### B. `preview`
 - **옵션:** `--sec 30`
@@ -225,7 +226,7 @@ The `wavvy.continuous_mix.repeat2.v1` producer schema binds its `plan_path`/hash
 
 - Video mode + seamless loop 필요: `vfade --test` → 확인 → `vfade` → `pack`
 - Image mode (`video-background.png/jpg/jpeg` + `video-artwork.json`): `pack`만 실행. `vfade` 불필요
-- 이미 `uploaded` 상태인 시리즈 점검: `state/gate`로 확인. 로컬 `final.mkv`/`upload.csv`가 `deleted_after_upload`이면 재생성 불필요
+- 이미 `uploaded` 상태인 시리즈 점검: `state/gate`로 확인. 로컬 `final.mkv`/`upload.csv`가 `deleted_after_upload`이면 재생성 불필요. 음원도 `deleted_after_upload`이면 `pack` 재실행 전에 음원 복원이 먼저다(위 §4.A)
 
 ### 6.2 Seamless Loop (81분+ 영상용 — 수동)
 

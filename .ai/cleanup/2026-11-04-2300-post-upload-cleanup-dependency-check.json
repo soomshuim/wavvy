@@ -1,0 +1,79 @@
+{
+ "schema": "wavvy.post_upload_cleanup_dependency_check.v1",
+ "created_at_utc": "2026-11-04T14:05:52.497461+00:00",
+ "method": "subtitles.json (path+sha256 records) + timing map audio_evidence_sha256 keys + concept.md/report.json read by wavvy_harness/subtitles.py; brief protected list; glob groups",
+ "code_read": {
+  "wavvy_harness/subtitles.py": "binds subtitles.json, timing map, report.json, srt, publication records, retained audio-probe JSONs by path+sha256; no WAV, no work/ file",
+  "wavvy_harness/state.py": "build_state counts input/tracks/*.mp3|wav; check_state adds blocker \"source_final requires audio files...\" for phase uploaded unless premixed_valid; no uploaded-cleanup allowance for input_tracks series",
+  "wavvy.py validate_project": "errors \"No audio files (MP3/WAV) found\" when input/tracks has no wav/mp3 and no Track Selection source map (premixed series excepted)",
+  "wavvy_harness/gate.py": "uploaded stage for non-premixed series adds check_state blockers; allow_uploaded_cleanup only in the premixed branch",
+  "wavvy.py suno-candidates": "read only if input/playback-order.json exists (absent for 23-00) or when no suno-final-selection*.json exists (one exists)"
+ },
+ "subtitle_and_timing_bindings": {
+  "count": 59,
+  "all_protected": true,
+  "any_candidate": [],
+  "not_protected": []
+ },
+ "brief_protected_items": {
+  "checked": 17,
+  "all_protected_not_candidate": true,
+  "violations": []
+ },
+ "glob_groups": {
+  "SERIES/23-00/production/artwork-final/*": {
+   "files": 3,
+   "protected": 3,
+   "candidate": []
+  },
+  "SERIES/23-00/input/tracks/*.txt": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/*.json": {
+   "files": 16,
+   "protected": 16,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/suno-ui/*": {
+   "files": 31,
+   "protected": 31,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/capture-verifications/*": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/browser-capture-20261104/browser-timelines/*": {
+   "files": 17,
+   "protected": 17,
+   "candidate": []
+  },
+  "SERIES/23-00/production/youtube-upload-ui-20261104/*": {
+   "files": 40,
+   "protected": 40,
+   "candidate": []
+  },
+  "SERIES/23-00/input/validation/2026-11-04-final-sources/*": {
+   "files": 1,
+   "protected": 1,
+   "candidate": []
+  },
+  "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/**/*": {
+   "files": 76,
+   "protected": 74,
+   "candidate": [
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/proposed-harness-patch-subtitles.diff",
+    "SERIES/23-00/input/validation/2026-11-04-timed-subtitles/candidate-youtube_subtitles_ko_timed_estimated.srt"
+   ]
+  },
+  "SERIES/23-00/production/video-production-20261104/logs/*": {
+   "files": 16,
+   "protected": 16,
+   "candidate": []
+  }
+ },
+ "candidate_classes_with_hash_bound_references_in_retained_records": "A WAVs/final.mkv sha256 values appear in retained report.json/download-manifest.json/upload records as historical hashes (kept as records); no code path re-verifies them after upload except validate_project/state/gate/verify-release needing the 17 WAVs to exist (see virtual-deletion record)"
+}

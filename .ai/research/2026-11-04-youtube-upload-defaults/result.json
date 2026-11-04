@@ -1,0 +1,94 @@
+{
+  "schema": "wavvy.youtube_upload_defaults_clear.v1",
+  "decision": "젠 2026-11-04 「기본값 비우기 (추천)」",
+  "browser": "ego lite (ego-browser CLI v2.2.0, ego-browser nodejs)",
+  "task_space": {
+    "id": 3713,
+    "name": "wavvy youtube upload defaults clear",
+    "finished_keep_none": true,
+    "unknown_origin_tabs_closed": 0
+  },
+  "channel": {
+    "name_observed": "Wavvy24",
+    "id_from_studio_url": "UC4R4NGwp19Y4lbdNs2HQVcg"
+  },
+  "path": "Studio > 설정 > 업로드 기본 설정 > 기본 정보 탭",
+  "save_click_utc": "2026-11-04T13:42:45Z",
+  "save_toast": "설정 저장됨",
+  "changed_fields": [
+    "제목",
+    "설명",
+    "태그"
+  ],
+  "before": {
+    "title": "[Playlist] [10:00] soomshuim | 조용히 몰입하는 시간, Chillhop",
+    "description_length": 1038,
+    "description_file": "before.txt",
+    "tags": [
+      "플레이리스트",
+      "플리",
+      "감성",
+      "우리말가사",
+      "음악추천",
+      "노동요",
+      "감성음악",
+      "Workout",
+      "K-pop",
+      "Playlist",
+      "r&b",
+      "neosoul",
+      "lofi",
+      "chillhop",
+      "rock",
+      "modern",
+      "jazz"
+    ],
+    "tag_count": 17,
+    "visibility_shown": "비공개"
+  },
+  "after": {
+    "title": "",
+    "description": "",
+    "tags": [],
+    "tag_count": 0,
+    "visibility_shown": "비공개"
+  },
+  "reopen_check": {
+    "method": "saved dialog auto-closed; page.reload() of the Studio dashboard; settings reopened; 업로드 기본 설정 > 기본 정보 read from DOM textarea .value and tag chips",
+    "title_empty": true,
+    "description_empty": true,
+    "tags_empty": true,
+    "visibility_unchanged": "비공개 (same as before)",
+    "advanced_tab_text_identical_to_before": true,
+    "advanced_tab_items": "자동 챕터 허용, 라이선스 표준 YouTube 라이선스, 카테고리 음악, 동영상 언어 한국어, 자막 면제 인증서 없음, 제목 및 설명 언어 한국어, 댓글 켜짐/검토 기본, 좋아요 표시"
+  },
+  "not_touched": [
+    "공개 상태",
+    "카테고리",
+    "라이선스",
+    "댓글",
+    "언어",
+    "고급 설정 탭",
+    "영상",
+    "재생목록",
+    "채널 정보",
+    "일반/채널/권한 등 다른 설정 탭"
+  ],
+  "captures_and_text_sha256": {
+    "01-before-upload-defaults-basic.png": "d76789389853d52ca127c808179d241d27aaf7c96390b3327791a4d37b9b5b63",
+    "02-before-upload-defaults-advanced.png": "abe1e78e1d9be537b84b95c40b29c2c3bbea31c3de0b69288653b1420352b3e1",
+    "03-before-upload-defaults-basic-tags.png": "417608a63aa960a5492ae21fb757d7bd66aa28d2d47d8c04af78408df6748b8b",
+    "04-mid-after-title-desc-cleared.png": "e97959e85c51b219b358dd046abd7f462e11f3670b31f563c7ae1b013e2c3c9f",
+    "05-before-save-all-three-cleared.png": "0331bb13a60bd9ebc61132d2e93bc28b78ec19d2d91bac61a1e8aee7f36ced94",
+    "06-after-save-click.png": "e1303e04855d8b9d86668d05b209688bd6f220be56a1d89209342b1f76b05f5d",
+    "07-after-save-closed-check.png": "e504ed1237377fe296454c2147ef31efa2b01d565cb947c4f60072446c35b916",
+    "08-after-reopen-basic-top.png": "e4cb8c448f5ffa906c61517fe901369b9d9e160f27cc81782dde84eff6352970",
+    "09-after-reopen-advanced.png": "b810a4ec03fb645f72c34493095a851948993a7fd04743f39c2a1fa2e9868c46",
+    "10-after-reopen-basic-tags.png": "773b61a838839ca3ac852529635bb0c9ba5ffb63056797024337f28f6bd190fa",
+    "after-advanced-tab-text.txt": "430723141fba368acc4670c10acad0836d75b899cb4119dd1b2b7d4887f143a7",
+    "after-dialog-text.txt": "b3ee4cadc9e39b71b780c8d7ebfb4fe586487890e0de8ffa1944637a43550843",
+    "before-advanced-tab-text.txt": "430723141fba368acc4670c10acad0836d75b899cb4119dd1b2b7d4887f143a7",
+    "before-dialog-text.txt": "22d49fc2e69135e851e827b75715929c49d1181a048905468a183f1beba895f5",
+    "before.txt": "83e989a2ea2aa93103651b751b6272cfde002d57c41e2af74f0925ae79fa381d"
+  }
+}

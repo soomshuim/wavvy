@@ -22,6 +22,10 @@ DEFAULT_NEXT_ACTION = (
     "No active blocker. Local final.mkv/upload.csv are disposable after upload "
     "and can be regenerated with pack if needed."
 )
+AUDIO_DELETED_NEXT_ACTION = (
+    "No active blocker. Local audio files were deleted after upload; Final Track Sources "
+    "keep each track's filename and SHA-256. Restore the audio before running pack again."
+)
 
 AUTHORITATIVE_DOCS = [
     "MASTER/SSOT.md",
@@ -168,6 +172,49 @@ def _upload_completed(concept_text: str) -> bool:
     return False
 
 
+_FINAL_TRACK_SOURCE_BLOCK_RE = re.compile(r"^### (\d{2})\. .*$([\s\S]*?)(?=^### \d{2}\. |\Z)", re.MULTILINE)
+
+
+def uploaded_audio_cleanup_errors(series_path: Path) -> list[str]:
+    """Why a series without local audio is not a recorded post-upload cleanup; empty means accepted.
+
+    Accepted only when concept.md records the completed upload and its Final Track
+    Sources archive keeps every deleted track's filename and audio SHA-256. When
+    output/report.json still lists tracks, it must agree with that archive.
+    """
+    concept_text = _read_text(series_path / "concept.md")
+    if not _upload_completed(concept_text):
+        return ["YouTube upload completion is not recorded in concept.md"]
+    section = _markdown_section(concept_text, "Final Track Sources")
+    records: dict[int, tuple[str, str]] = {}
+    errors: list[str] = []
+    for block in _FINAL_TRACK_SOURCE_BLOCK_RE.finditer(section):
+        order = int(block[1])
+        filename = re.search(r"^- Filename: `([^`\n]+\.(?:mp3|wav))`", block[2], flags=re.MULTILINE | re.IGNORECASE)
+        digest = re.search(r"^- SHA-256: `([0-9a-f]{64})`", block[2], flags=re.MULTILINE)
+        if order in records:
+            errors.append(f"Final Track Sources lists track {order:02d} more than once")
+        elif not filename or not digest:
+            errors.append(f"Final Track Sources track {order:02d} lacks the audio filename or SHA-256")
+        else:
+            records[order] = (filename[1], digest[1])
+    if not records and not errors:
+        return ["concept.md has no Final Track Sources archive of the deleted audio"]
+    if errors:
+        return errors
+    report_tracks = _load_report(series_path / "output" / "report.json").get("tracks")
+    if isinstance(report_tracks, list) and report_tracks:
+        try:
+            reported = {int(track["order"]): (track["filename"], track["sha256"]) for track in report_tracks}
+        except (KeyError, TypeError, ValueError):
+            errors.append("output/report.json tracks lack order, filename, or sha256")
+        else:
+            differing = sorted(order for order in reported.keys() | records.keys() if reported.get(order) != records.get(order))
+            if differing:
+                errors.append("Final Track Sources differ from output/report.json for track(s) " + ", ".join(f"{order:02d}" for order in differing))
+    return errors
+
+
 def _has_stale_final_todo(concept_text: str) -> bool:
     if "## Final Track Sources" not in concept_text:
         return False
@@ -230,6 +277,8 @@ def _infer_next_action(phase: str, artifact_status: dict[str, Any]) -> str:
         if phase in {"concept_draft", "track_source_draft"}:
             return "Prepare the approved YouTube title, description and tags for the retained premix."
     if phase == "uploaded":
+        if artifact_status.get("audio_source") == "deleted_after_upload":
+            return AUDIO_DELETED_NEXT_ACTION
         return DEFAULT_NEXT_ACTION
     if artifact_status["concept_md"] == "missing":
         return "Create concept.md for the active series."
@@ -288,6 +337,8 @@ def build_state(
         premixed_video_status = _status(premix["render_path"])
         if upload_completed and premixed_video_status == "missing":
             premixed_video_status = "deleted_after_upload"
+    if upload_completed and not premixed_opt_in and not audio_files and not source_map_entries and not uploaded_audio_cleanup_errors(series_path):
+        audio_source = "deleted_after_upload"
     final_mkv_status = _status(output_dir / "final.mkv")
     upload_csv_status = _status(output_dir / "upload.csv")
     if upload_completed and final_mkv_status == "missing":
@@ -447,7 +498,12 @@ def check_state(
                 "source_final requires existing source-map audio files: "
                 + ", ".join(artifacts["source_map_missing"])
             )
-        if artifacts.get("available_audio_files", artifacts["audio_files"]) <= 0 and not (premixed_valid and artifacts["youtube_upload"] == "completed"):
+        audio_deleted_after_upload = phase == "uploaded" and artifacts.get("audio_source") == "deleted_after_upload"
+        if (
+            artifacts.get("available_audio_files", artifacts["audio_files"]) <= 0
+            and not (premixed_valid and artifacts["youtube_upload"] == "completed")
+            and not audio_deleted_after_upload
+        ):
             blockers.append("source_final requires audio files in input/tracks or concept.md Track Selection source map")
         if not selected_opt_in and artifacts["final_track_sources_count"] and artifacts["report_tracks"]:
             if artifacts["final_track_sources_count"] != artifacts["report_tracks"]:

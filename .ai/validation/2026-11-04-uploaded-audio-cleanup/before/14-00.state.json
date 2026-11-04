@@ -1,0 +1,80 @@
+{
+  "schema": "wavvy.state.check.v1",
+  "result": "PASS",
+  "state": {
+    "schema": "wavvy.state.v1",
+    "revision": 105,
+    "updated_at": "2026-11-04T23:16:35",
+    "active_series": "SERIES/14-00",
+    "phase": "concept_draft",
+    "inferred_phase": "concept_draft",
+    "next_action": "Draft track sources from concept.md.",
+    "artifact_status": {
+      "concept_md": "present",
+      "final_track_sources": "missing",
+      "selected_audio_sources": "missing",
+      "premixed_audio": "missing",
+      "premix_production_report": "missing",
+      "premixed_video": "missing",
+      "premixed_video_path": null,
+      "final_track_sources_count": 0,
+      "report_json": "missing",
+      "report_tracks": 0,
+      "audio_files": 0,
+      "available_audio_files": 0,
+      "audio_source": "missing",
+      "source_map": "missing",
+      "source_map_tracks": 0,
+      "source_map_audio_files": 0,
+      "source_map_missing": [],
+      "txt_sources": 0,
+      "final_mkv": "missing",
+      "upload_csv": "missing",
+      "subtitle_txt": "missing",
+      "subtitle_srt": "missing",
+      "youtube_metadata": "present",
+      "youtube_upload": "missing",
+      "lyric_skill_package": "present",
+      "lyric_skill_files": {
+        "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md": "present",
+        "skills/wavvy-lyricist/SKILL.md": "present",
+        "skills/wavvy-lyricist/references/patterns.md": "present"
+      },
+      "subtitle_prepared": "unverified",
+      "subtitle_published": "unverified",
+      "timed_subtitles_required": false
+    },
+    "subtitle_status": {
+      "prepared": "unverified",
+      "published": "unverified"
+    },
+    "authoritative_docs": [
+      "MASTER/SSOT.md",
+      "MASTER/ai/RUNTIME_RULES.md",
+      "MASTER/MANAGER.md",
+      "MASTER/WORKFLOWS.md",
+      "MASTER/cli/SPEC.md",
+      "MASTER/youtube/YOUTUBE.md",
+      "wavvy.md",
+      "SERIES/14-00/concept.md"
+    ],
+    "evidence_refs": [
+      "MASTER/SSOT.md",
+      "MASTER/ai/RUNTIME_RULES.md",
+      "MASTER/MANAGER.md",
+      "MASTER/WORKFLOWS.md",
+      "MASTER/cli/SPEC.md",
+      "MASTER/youtube/YOUTUBE.md",
+      "wavvy.md",
+      "SERIES/14-00/concept.md",
+      "MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md",
+      "skills/wavvy-lyricist/SKILL.md",
+      "skills/wavvy-lyricist/references/patterns.md"
+    ],
+    "blocked_by": []
+  },
+  "warnings": [
+    "state active_series differs from requested series"
+  ],
+  "blockers": []
+}

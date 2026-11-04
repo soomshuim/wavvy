@@ -1,0 +1,507 @@
+{
+ "schema": "wavvy.post_upload_cleanup_virtual_deletion.v1",
+ "created_at_utc": "2026-11-04T14:31:49.891036+00:00",
+ "candidates_manifest_sha256": "e52db6234af7d33d036d692de1ae5f8e5522b4f02742f3b45cbc0af8ac218a8c",
+ "reference_scan_sha256": "3a9b007025fae8e533ec7fc8fe7a4f498f2e8efdbfc68f0208119c1095800c1d",
+ "script": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/sandbox_check.py",
+ "script_sha256": "1fc9dc48e5d0a3544144e2523a8706683b52411959a0f4a0588657d5cb1df049",
+ "python": "3.14.7",
+ "method": "APFS clone of the working tree (minus .git/.venv/work); exact candidate unlink in the sandbox (documents and harness already edited in the real tree); real repository untouched",
+ "variants": {
+  "pristine": {
+   "clone_seconds": 0.61,
+   "checks": {
+    "gate_uploaded": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "failed_checks": []
+    },
+    "verify_subtitles_prepared": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "state_phase": "uploaded",
+     "state_revision": 105,
+     "artifact_audio": {
+      "audio_files": 17,
+      "available_audio_files": 17,
+      "audio_source": "input_tracks"
+     }
+    },
+    "validate": {
+     "exit": 0,
+     "stdout_tail": "48000Hz)\n[OK]   07. 손 잡아도 될까 (211.6s, 48000Hz)\n[OK]   08. 먼지 (199.9s, 48000Hz)\n[OK]   09. 지금 가는 길 (201.0s, 48000Hz)\n[OK]   10. 산책 (153.1s, 48000Hz)\n[OK]   11. 나도 네가 신경 쓰여 (192.5s, 48000Hz)\n[OK]   12. 숨 (214.8s, 48000Hz)\n[OK]   13. 자꾸 네가 신경쓰여 (209.9s, 48000Hz)\n[OK]   14. 물안개 (138.4s, 48000Hz)\n[OK]   15. 약속 (214.8s, 48000Hz)\n[OK]   16. 골목 (206.8s, 48000Hz)\n[OK]   17. 물결 (133.2s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nSummary:\n  Tracks: 17\n  Total Duration: 3340.3s (55.7 min)\n\nVALIDATION PASSED\n",
+     "stderr_tail": ""
+    },
+    "verify_release": {
+     "exit": 0,
+     "result": "PASS",
+     "errors": []
+    }
+   },
+   "raw": {
+    "gate_uploaded": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "gate",
+      "SERIES/23-00",
+      "--stage",
+      "uploaded",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 1.78,
+     "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"PASS\",\n  \"series\": \"SERIES/23-00\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"PASS\",\n      \"detail\": \"17 tracks\"\n    },\n    {\n      \"name\": \"concept_md_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_track_sources_or_source_map_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"report_json_present_or_source_map_ready\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"youtube_metadata_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"audio_files_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"17 audio files via input_tracks\"\n    },\n    {\n      \"name\": \"final_track_sources_match_report\",\n      \"status\": \"PASS\",\n      \"detail\": \"fts=17 report=17\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+     "stderr": ""
+    },
+    "verify_subtitles_prepared": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/23-00",
+      "--stage",
+      "prepared",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 0.31,
+     "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"prepared\",\n  \"srt\": \"/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine/SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1490,\n  \"duration_ms\": 6654137,\n  \"sha256\": \"ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9\",\n  \"source_sha256\": \"d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\"\n}\n",
+     "stderr": ""
+    },
+    "verify_subtitles_published": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/23-00",
+      "--stage",
+      "published",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 0.28,
+     "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"published\",\n  \"srt\": \"/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine/SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1490,\n  \"duration_ms\": 6654137,\n  \"sha256\": \"ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9\",\n  \"source_sha256\": \"d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\",\n  \"video_id\": \"wbJQ2WgfJn4\",\n  \"samples\": 4,\n  \"studio_download_compared\": true,\n  \"publication_scope\": \"manual Korean Studio status, public selection and samples, official SRT when available\"\n}\n",
+     "stderr": ""
+    },
+    "state_check": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "state",
+      "SERIES/23-00",
+      "--check",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 0.32,
+     "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 105,\n    \"updated_at\": \"2026-11-04T23:31:53\",\n    \"active_series\": \"SERIES/23-00\",\n    \"phase\": \"uploaded\",\n    \"inferred_phase\": \"uploaded\",\n    \"next_action\": \"No active blocker. Local final.mkv/upload.csv are disposable after upload and can be regenerated with pack if needed.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"present\",\n      \"selected_audio_sources\": \"missing\",\n      \"premixed_audio\": \"missing\",\n      \"premix_production_report\": \"missing\",\n      \"premixed_video\": \"missing\",\n      \"premixed_video_path\": null,\n      \"final_track_sources_count\": 17,\n      \"report_json\": \"present\",\n      \"report_tracks\": 17,\n      \"audio_files\": 17,\n      \"available_audio_files\": 17,\n      \"audio_source\": \"input_tracks\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 17,\n      \"final_mkv\": \"present\",\n      \"upload_csv\": \"present\",\n      \"subtitle_txt\": \"present\",\n      \"subtitle_srt\": \"present\",\n      \"youtube_metadata\": \"present\",\n      \"youtube_upload\": \"completed\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"verified\",\n      \"subtitle_published\": \"verified\",\n      \"timed_subtitles_required\": true\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"verified\",\n      \"published\": \"verified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/23-00/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/23-00/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+     "stderr": ""
+    },
+    "validate": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "validate",
+      "SERIES/23-00"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 1.09,
+     "stdout": "\n=== WAVVY VALIDATION ===\n\n[INFO] Found 17 audio file(s)\n[OK]   01. 작은 빛 (218.3s, 48000Hz)\n[OK]   02. 돛 (198.8s, 48000Hz)\n[OK]   03. 한 잔만 더 (219.8s, 48000Hz)\n[OK]   04. 이름 (214.0s, 48000Hz)\n[OK]   05. 비가 그쳤네 (226.0s, 48000Hz)\n[OK]   06. 마음 밖 (187.6s, 48000Hz)\n[OK]   07. 손 잡아도 될까 (211.6s, 48000Hz)\n[OK]   08. 먼지 (199.9s, 48000Hz)\n[OK]   09. 지금 가는 길 (201.0s, 48000Hz)\n[OK]   10. 산책 (153.1s, 48000Hz)\n[OK]   11. 나도 네가 신경 쓰여 (192.5s, 48000Hz)\n[OK]   12. 숨 (214.8s, 48000Hz)\n[OK]   13. 자꾸 네가 신경쓰여 (209.9s, 48000Hz)\n[OK]   14. 물안개 (138.4s, 48000Hz)\n[OK]   15. 약속 (214.8s, 48000Hz)\n[OK]   16. 골목 (206.8s, 48000Hz)\n[OK]   17. 물결 (133.2s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nSummary:\n  Tracks: 17\n  Total Duration: 3340.3s (55.7 min)\n\nVALIDATION PASSED\n",
+     "stderr": ""
+    },
+    "verify_release": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-release",
+      "SERIES/23-00",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-pristine",
+     "exit": 0,
+     "seconds": 0.79,
+     "stdout": "{\n  \"schema\": \"wavvy.release.v1\",\n  \"result\": \"PASS\",\n  \"errors\": []\n}\n",
+     "stderr": ""
+    }
+   },
+   "tests": {
+    "test_harness.py": {
+     "exit": 0,
+     "seconds": 6.85,
+     "summary_lines": [
+      "Ran 82 tests in 6.493s",
+      "OK"
+     ],
+     "test_status_count": 82,
+     "non_ok": [],
+     "raw_output": "test_bare_uploaded_text_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_bare_uploaded_text_does_not_mark_upload_completed) ... ok\ntest_build_state_infers_source_final_for_minimal_fixture (tests.test_harness.HarnessTests.test_build_state_infers_source_final_for_minimal_fixture) ... ok\ntest_check_state_warns_on_final_sources_with_stale_draft_text (tests.test_harness.HarnessTests.test_check_state_warns_on_final_sources_with_stale_draft_text) ... ok\ntest_compilation_source_map_counts_as_available_audio (tests.test_harness.HarnessTests.test_compilation_source_map_counts_as_available_audio) ... ok\ntest_duplicate_track_source_bpm_header_fails_both_gates_and_archiving (tests.test_harness.HarnessTests.test_duplicate_track_source_bpm_header_fails_both_gates_and_archiving) ... ok\ntest_duplicate_track_source_sections_fail_both_prompt_and_lyric_gates (tests.test_harness.HarnessTests.test_duplicate_track_source_sections_fail_both_prompt_and_lyric_gates) ... ok\ntest_explicit_pending_empty_or_conflicting_status_overrides_legacy_url (tests.test_harness.HarnessTests.test_explicit_pending_empty_or_conflicting_status_overrides_legacy_url) ... ok\ntest_full_song_gate_rejects_missing_intro_short_plan_and_source_drift (tests.test_harness.HarnessTests.test_full_song_gate_rejects_missing_intro_short_plan_and_source_drift) ... ok\ntest_full_song_lyric_gate_checks_plan_and_bound_txt (tests.test_harness.HarnessTests.test_full_song_lyric_gate_checks_plan_and_bound_txt) ... ok\ntest_full_song_scope_does_not_silently_pass_without_plan (tests.test_harness.HarnessTests.test_full_song_scope_does_not_silently_pass_without_plan) ... ok\ntest_full_song_section_cues_are_not_sung_lines (tests.test_harness.HarnessTests.test_full_song_section_cues_are_not_sung_lines) ... ok\ntest_generate_report_crossfade_reduction_uses_repeat (tests.test_harness.HarnessTests.test_generate_report_crossfade_reduction_uses_repeat) ... ok\ntest_legacy_full_song_exemption_binds_artifact_path_and_draft_hash (tests.test_harness.HarnessTests.test_legacy_full_song_exemption_binds_artifact_path_and_draft_hash) ... ok\ntest_legacy_published_youtube_marker_marks_upload_completed (tests.test_harness.HarnessTests.test_legacy_published_youtube_marker_marks_upload_completed) ... ok\ntest_lyrics_skill_artifact_accepts_direct_feeling_time_topic_and_no_image_quota (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_accepts_direct_feeling_time_topic_and_no_image_quota) ... ok\ntest_lyrics_skill_artifact_gate_rejects_korean_rows_in_suno_prompt_only (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_gate_rejects_korean_rows_in_suno_prompt_only) ... ok\ntest_lyrics_skill_artifact_rejects_blank_quote_and_tag_only_draft (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_rejects_blank_quote_and_tag_only_draft) ... ok\ntest_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash) ... ok\ntest_lyrics_skill_cli_review_stage_skips_media_validation (tests.test_harness.HarnessTests.test_lyrics_skill_cli_review_stage_skips_media_validation) ... ok\ntest_lyrics_skill_package_gate_passes_static_contract (tests.test_harness.HarnessTests.test_lyrics_skill_package_gate_passes_static_contract) ... ok\ntest_lyrics_skill_prompt_only_preserves_intentional_empty (tests.test_harness.HarnessTests.test_lyrics_skill_prompt_only_preserves_intentional_empty) ... ok\ntest_lyrics_skill_review_only_binds_to_draft_body_not_metadata (tests.test_harness.HarnessTests.test_lyrics_skill_review_only_binds_to_draft_body_not_metadata) ... ok\ntest_lyrics_skill_review_only_rejects_missing_empty_duplicate_and_conflicting_evidence (tests.test_harness.HarnessTests.test_lyrics_skill_review_only_rejects_missing_empty_duplicate_and_conflicting_evidence) ... ok\ntest_new_full_song_breath_evidence_checks_current_draft (tests.test_harness.HarnessTests.test_new_full_song_breath_evidence_checks_current_draft) ... ok\ntest_new_full_song_verse_exception_including_no_verse (tests.test_harness.HarnessTests.test_new_full_song_verse_exception_including_no_verse) ... ok\ntest_not_uploaded_text_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_not_uploaded_text_does_not_mark_upload_completed) ... ok\ntest_reference_video_url_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_reference_video_url_does_not_mark_upload_completed) ... ok\ntest_repeat_timestamp_includes_crossfade_at_pass_boundary (tests.test_harness.HarnessTests.test_repeat_timestamp_includes_crossfade_at_pass_boundary) ... ok\ntest_ssot_hygiene_scopes_stale_terms_to_entrypoints (tests.test_harness.HarnessTests.test_ssot_hygiene_scopes_stale_terms_to_entrypoints) ... ok\ntest_state_cli_explicit_phase_and_if_match_on_series_switch (tests.test_harness.HarnessTests.test_state_cli_explicit_phase_and_if_match_on_series_switch) ... ok\ntest_state_phase_change_updates_stale_next_action (tests.test_harness.HarnessTests.test_state_phase_change_updates_stale_next_action) ... ok\ntest_state_resume_preserves_same_series_manual_phase_and_action (tests.test_harness.HarnessTests.test_state_resume_preserves_same_series_manual_phase_and_action) ... ok\ntest_state_switch_infers_target_phase_action_and_evidence (tests.test_harness.HarnessTests.test_state_switch_infers_target_phase_action_and_evidence) ... ok\ntest_track_filename_accepts_unknown_bpm_without_inventing_a_number (tests.test_harness.HarnessTests.test_track_filename_accepts_unknown_bpm_without_inventing_a_number) ... ok\ntest_track_prompt_gate_checks_actual_new_source_without_media (tests.test_harness.HarnessTests.test_track_prompt_gate_checks_actual_new_source_without_media) ... ok\ntest_track_prompt_gate_enforces_unicode_style_budget_and_exclude_items (tests.test_harness.HarnessTests.test_track_prompt_gate_enforces_unicode_style_budget_and_exclude_items) ... ok\ntest_track_prompt_gate_instrumental_remake_requires_instrumental_only_lyrics (tests.test_harness.HarnessTests.test_track_prompt_gate_instrumental_remake_requires_instrumental_only_lyrics) ... ok\ntest_track_prompt_gate_keeps_budget_behavior_at_eight_or_fewer_exclude_terms (tests.test_harness.HarnessTests.test_track_prompt_gate_keeps_budget_behavior_at_eight_or_fewer_exclude_terms) ... ok\ntest_track_prompt_gate_keeps_existing_checks_when_original_style_mode_is_off (tests.test_harness.HarnessTests.test_track_prompt_gate_keeps_existing_checks_when_original_style_mode_is_off) ... ok\ntest_track_prompt_gate_matches_all_explicit_vocal_genders (tests.test_harness.HarnessTests.test_track_prompt_gate_matches_all_explicit_vocal_genders) ... ok\ntest_track_prompt_gate_passes_over_budget_exclude_recorded_as_user_type_style (tests.test_harness.HarnessTests.test_track_prompt_gate_passes_over_budget_exclude_recorded_as_user_type_style) ... ok\ntest_track_prompt_gate_passes_user_supplied_original_style_over_budget (tests.test_harness.HarnessTests.test_track_prompt_gate_passes_user_supplied_original_style_over_budget) ... ok\ntest_track_prompt_gate_rejects_empty_header_values_in_original_style_mode (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_empty_header_values_in_original_style_mode) ... ok\ntest_track_prompt_gate_rejects_original_style_when_exclude_differs_from_concept_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_when_exclude_differs_from_concept_record) ... ok\ntest_track_prompt_gate_rejects_original_style_when_style_differs_from_concept_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_when_style_differs_from_concept_record) ... ok\ntest_track_prompt_gate_rejects_original_style_without_one_matching_concept_entry (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_without_one_matching_concept_entry) ... ok\ntest_track_prompt_gate_rejects_original_style_without_style_source_header (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_without_style_source_header) ... ok\ntest_track_prompt_gate_rejects_over_budget_exclude_without_matching_type_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_over_budget_exclude_without_matching_type_record) ... ok\ntest_track_prompt_gate_rejects_prior_track03_failure_shape (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_prior_track03_failure_shape) ... ok\ntest_track_prompt_gate_rejects_readable_style_values_that_differ_from_header_in_original_style_mode (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_readable_style_values_that_differ_from_header_in_original_style_mode) ... ok\ntest_track_prompt_gate_rejects_source_from_another_series (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_source_from_another_series) ... ok\ntest_track_prompt_gate_rejects_unknown_and_mismatched_proposals (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_unknown_and_mismatched_proposals) ... ok\ntest_upload_completion_requires_an_explicit_positive_status_field (tests.test_harness.HarnessTests.test_upload_completion_requires_an_explicit_positive_status_field) ... ok\ntest_upload_ready_gate_passes_before_upload_without_failed_upload_check (tests.test_harness.HarnessTests.test_upload_ready_gate_passes_before_upload_without_failed_upload_check) ... ok\ntest_upload_ready_gate_passes_when_upload_already_completed (tests.test_harness.HarnessTests.test_upload_ready_gate_passes_when_upload_already_completed) ... ok\ntest_upload_status_preserves_existing_published_series_fields (tests.test_harness.HarnessTests.test_upload_status_preserves_existing_published_series_fields) ... ok\ntest_uploaded_phase_allows_deleted_local_render_artifacts (tests.test_harness.HarnessTests.test_uploaded_phase_allows_deleted_local_render_artifacts) ... ok\ntest_validate_project_uses_compilation_source_map_when_tracks_dir_is_empty (tests.test_harness.HarnessTests.test_validate_project_uses_compilation_source_map_when_tracks_dir_is_empty) ... ok\ntest_bad_thumbnail_blocks_pack_and_gate (tests.test_harness.PackagingContractTests.test_bad_thumbnail_blocks_pack_and_gate) ... ok\ntest_headline_moved_right_or_cadence_below_tempo_fails_independent_layout (tests.test_harness.PackagingContractTests.test_headline_moved_right_or_cadence_below_tempo_fails_independent_layout) ... ok\ntest_missing_cadence_or_tempo_blocks_pack_and_gate (tests.test_harness.PackagingContractTests.test_missing_cadence_or_tempo_blocks_pack_and_gate) ... ok\ntest_pack_rejects_repeat_one_before_render (tests.test_harness.PackagingContractTests.test_pack_rejects_repeat_one_before_render) ... ok\ntest_report_repeat_one_fails_gate_and_two_matches (tests.test_harness.PackagingContractTests.test_report_repeat_one_fails_gate_and_two_matches) ... ok\ntest_thumbnail_real_logo_and_pacifico_pass (tests.test_harness.PackagingContractTests.test_thumbnail_real_logo_and_pacifico_pass) ... ok\ntest_thumbnail_small_logo_large_time_or_wrong_font_fails (tests.test_harness.PackagingContractTests.test_thumbnail_small_logo_large_time_or_wrong_font_fails) ... ok\ntest_current_selected_song_13_lyrics_do_not_leak_directions (tests.test_harness.ReleaseVerificationTests.test_current_selected_song_13_lyrics_do_not_leak_directions) ... ok\ntest_missing_or_low_quality_4k_upload_copy_fails_release_and_upload_gate (tests.test_harness.ReleaseVerificationTests.test_missing_or_low_quality_4k_upload_copy_fails_release_and_upload_gate) ... ok\ntest_reordered_release_verifies_archive_without_claiming_old_prompt (tests.test_harness.ReleaseVerificationTests.test_reordered_release_verifies_archive_without_claiming_old_prompt) ... ok\ntest_reordered_sources_bind_by_id_and_original_order (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_bind_by_id_and_original_order) ... ok\ntest_reordered_sources_reject_unproven_generation_prompt (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_reject_unproven_generation_prompt) ... ok\ntest_reordered_sources_reject_wrong_id_hash_and_missing_lyrics (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_reject_wrong_id_hash_and_missing_lyrics) ... ok\ntest_subtitles_strip_structure_but_keep_sung_lines (tests.test_harness.ReleaseVerificationTests.test_subtitles_strip_structure_but_keep_sung_lines) ... ok\ntest_verify_release_accepts_one_digit_chapter_numbers (tests.test_harness.ReleaseVerificationTests.test_verify_release_accepts_one_digit_chapter_numbers) ... ok\ntest_verify_release_checks_existing_upload_copy_path_streams_and_duration (tests.test_harness.ReleaseVerificationTests.test_verify_release_checks_existing_upload_copy_path_streams_and_duration) ... ok\ntest_verify_release_checks_identity_and_chapters (tests.test_harness.ReleaseVerificationTests.test_verify_release_checks_identity_and_chapters) ... ok\ntest_verify_release_invalid_final_selection_does_not_fall_back (tests.test_harness.ReleaseVerificationTests.test_verify_release_invalid_final_selection_does_not_fall_back) ... ok\ntest_verify_release_prefers_current_final_selection_over_historical_candidates (tests.test_harness.ReleaseVerificationTests.test_verify_release_prefers_current_final_selection_over_historical_candidates) ... ok\ntest_verify_release_rejects_chapter_drift_and_csv_drift (tests.test_harness.ReleaseVerificationTests.test_verify_release_rejects_chapter_drift_and_csv_drift) ... ok\ntest_archive_rejects_false_identity_timing_and_prompt_claims (tests.test_harness.SelectedAudioSourceTests.test_archive_rejects_false_identity_timing_and_prompt_claims) ... ok\ntest_archive_requires_explicit_instrumental_and_observation_evidence (tests.test_harness.SelectedAudioSourceTests.test_archive_requires_explicit_instrumental_and_observation_evidence) ... ok\ntest_finalize_upload_rejects_old_txt_for_new_selected_id (tests.test_harness.SelectedAudioSourceTests.test_finalize_upload_rejects_old_txt_for_new_selected_id) ... ok\ntest_instrumental_archive_passes_source_and_upload_without_subtitles (tests.test_harness.SelectedAudioSourceTests.test_instrumental_archive_passes_source_and_upload_without_subtitles) ... ok\n\n----------------------------------------------------------------------\nRan 82 tests in 6.493s\n\nOK\n\n[OK] Report saved to: /var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmppt8hzp23/report.json\n[INFO] Found 2 source-map audio reference(s)\n[OK]   01. One (120.0s, 48000Hz)\n[OK]   02. Two (120.0s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n"
+    },
+    "test_integrated_premix.py": {
+     "exit": 0,
+     "seconds": 0.8,
+     "summary_lines": [
+      "Ran 17 tests in 0.702s",
+      "OK"
+     ],
+     "test_status_count": 17,
+     "non_ok": [],
+     "raw_output": "test_aac_gap_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_aac_gap_rejected) ... ok\ntest_actual_corrected_frame_count_checked (tests.test_integrated_premix.IntegratedPremixTests.test_actual_corrected_frame_count_checked) ... ok\ntest_changed_raw_bytes_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_changed_raw_bytes_rejected) ... ok\ntest_cleanup_does_not_hide_changed_retained_media (tests.test_integrated_premix.IntegratedPremixTests.test_cleanup_does_not_hide_changed_retained_media) ... ok\ntest_globally_retimed_entry_required (tests.test_integrated_premix.IntegratedPremixTests.test_globally_retimed_entry_required) ... ok\ntest_legacy_archive_cannot_dispatch_integrated_mix (tests.test_integrated_premix.IntegratedPremixTests.test_legacy_archive_cannot_dispatch_integrated_mix) ... ok\ntest_missing_raw_blocks_pending_release (tests.test_integrated_premix.IntegratedPremixTests.test_missing_raw_blocks_pending_release) ... ok\ntest_nan_loudness_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_nan_loudness_rejected) ... ok\ntest_new_schema_uses_existing_audio_and_separate_artwork_check (tests.test_integrated_premix.IntegratedPremixTests.test_new_schema_uses_existing_audio_and_separate_artwork_check) ... ok\ntest_path_escape_rejected_even_with_matching_file_hash (tests.test_integrated_premix.IntegratedPremixTests.test_path_escape_rejected_even_with_matching_file_hash) ... ok\ntest_repeat_boundary_cannot_disappear (tests.test_integrated_premix.IntegratedPremixTests.test_repeat_boundary_cannot_disappear) ... ok\ntest_second_cycle_relabel_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_second_cycle_relabel_rejected) ... ok\ntest_selection_order_swap_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_selection_order_swap_rejected) ... ok\ntest_self_reported_pass_cannot_hide_replay_error (tests.test_integrated_premix.IntegratedPremixTests.test_self_reported_pass_cannot_hide_replay_error) ... ok\ntest_transform_ratio_and_pitch_are_required (tests.test_integrated_premix.IntegratedPremixTests.test_transform_ratio_and_pitch_are_required) ... ok\ntest_unknown_prompts_cannot_be_promoted (tests.test_integrated_premix.IntegratedPremixTests.test_unknown_prompts_cannot_be_promoted) ... ok\ntest_valid_chain_and_exact_chapter_normalization (tests.test_integrated_premix.IntegratedPremixTests.test_valid_chain_and_exact_chapter_normalization) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.702s\n\nOK\n\n"
+    },
+    "test_premixed_audio.py": {
+     "exit": 0,
+     "seconds": 3.46,
+     "summary_lines": [
+      "Ran 26 tests in 2.976s",
+      "OK"
+     ],
+     "test_status_count": 26,
+     "non_ok": [],
+     "raw_output": "test_changed_corrected_wav_and_producer_script_fail (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_changed_corrected_wav_and_producer_script_fail) ... ok\ntest_changed_final_aac_payload_is_rejected_by_shared_render_check (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_changed_final_aac_payload_is_rejected_by_shared_render_check) ... ok\ntest_corrected_source_media_cleanup_requires_recorded_upload (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_corrected_source_media_cleanup_requires_recorded_upload) ... ok\ntest_forty_start_must_match_actual_transition_not_just_be_increasing (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_forty_start_must_match_actual_transition_not_just_be_increasing) ... ok\ntest_historical_individual_archive_does_not_override_current_premix (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_historical_individual_archive_does_not_override_current_premix) ... ok\ntest_invalid_current_premix_cannot_fall_back_to_historical_archive (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_invalid_current_premix_cannot_fall_back_to_historical_archive) ... ok\ntest_original_and_corrected_hashes_are_distinct_valid_evidence (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_original_and_corrected_hashes_are_distinct_valid_evidence) ... ok\ntest_real_aac_payload_mutation_is_detected_without_changing_packet_timing (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_real_aac_payload_mutation_is_detected_without_changing_packet_timing) ... ok\ntest_two_current_final_source_declarations_fail_instead_of_picking_one (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_two_current_final_source_declarations_fail_instead_of_picking_one) ... ok\ntest_uploaded_cleanup_still_rejects_present_media_hash_changes (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_uploaded_cleanup_still_rejects_present_media_hash_changes) ... ok\ntest_uploaded_cleanup_still_requires_nonmedia_provenance (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_uploaded_cleanup_still_requires_nonmedia_provenance) ... ok\ntest_wrong_selected_id_order_and_reacquired_hash_fail (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_wrong_selected_id_order_and_reacquired_hash_fail) ... ok\ntest_candidate_id_and_historical_hash_drift_fail (tests.test_premixed_audio.PremixedAudioTests.test_candidate_id_and_historical_hash_drift_fail) ... ok\ntest_cleanup_is_only_valid_after_upload_completion_evidence (tests.test_premixed_audio.PremixedAudioTests.test_cleanup_is_only_valid_after_upload_completion_evidence) ... ok\ntest_csv_and_description_must_match_actual_forty_starts (tests.test_premixed_audio.PremixedAudioTests.test_csv_and_description_must_match_actual_forty_starts) ... ok\ntest_incomplete_opt_in_cannot_fall_back_to_wavs (tests.test_premixed_audio.PremixedAudioTests.test_incomplete_opt_in_cannot_fall_back_to_wavs) ... ok\ntest_legacy_uploaded_artwork_requires_retained_render_identity (tests.test_premixed_audio.PremixedAudioTests.test_legacy_uploaded_artwork_requires_retained_render_identity) ... ok\ntest_missing_video_is_not_uploaded_cleanup_before_upload (tests.test_premixed_audio.PremixedAudioTests.test_missing_video_is_not_uploaded_cleanup_before_upload) ... ok\ntest_negative_upload_prose_does_not_open_uploaded_or_cleanup_gates (tests.test_premixed_audio.PremixedAudioTests.test_negative_upload_prose_does_not_open_uploaded_or_cleanup_gates) ... ok\ntest_pack_refuses_to_merge_or_repeat_a_premix (tests.test_premixed_audio.PremixedAudioTests.test_pack_refuses_to_merge_or_repeat_a_premix) ... ok\ntest_pending_old_image_contract_cannot_bypass_artwork_rule (tests.test_premixed_audio.PremixedAudioTests.test_pending_old_image_contract_cannot_bypass_artwork_rule) ... ok\ntest_premix_render_and_csv_bind_separate_image_roles (tests.test_premixed_audio.PremixedAudioTests.test_premix_render_and_csv_bind_separate_image_roles) ... ok\ntest_source_identity_repeat_timeline_and_provenance_mutations_fail (tests.test_premixed_audio.PremixedAudioTests.test_source_identity_repeat_timeline_and_provenance_mutations_fail) ... ok\ntest_source_stage_does_not_require_render (tests.test_premixed_audio.PremixedAudioTests.test_source_stage_does_not_require_render) ... ok\ntest_valid_retained_premix_without_any_individual_wavs (tests.test_premixed_audio.PremixedAudioTests.test_valid_retained_premix_without_any_individual_wavs) ... ok\ntest_video_packet_chapter_codec_and_duration_mutations_fail (tests.test_premixed_audio.PremixedAudioTests.test_video_packet_chapter_codec_and_duration_mutations_fail) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 2.976s\n\nOK\n\n"
+    },
+    "test_subtitle_timing_contract.py": {
+     "exit": 0,
+     "seconds": 0.12,
+     "summary_lines": [
+      "Ran 17 tests in 0.034s",
+      "OK"
+     ],
+     "test_status_count": 17,
+     "non_ok": [],
+     "raw_output": "test_missing_or_malformed_report_still_fails_closed (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_missing_or_malformed_report_still_fails_closed) ... ok\ntest_one_millisecond_is_accepted_and_two_are_rejected (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_one_millisecond_is_accepted_and_two_are_rejected) ... ok\ntest_real_23_00_durations_pass_within_one_millisecond (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_real_23_00_durations_pass_within_one_millisecond) ... ok\ntest_sub_millisecond_durations_are_summed_exactly_then_rounded_once (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_sub_millisecond_durations_are_summed_exactly_then_rounded_once) ... ok\ntest_whole_millisecond_reports_still_need_the_exact_total (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_whole_millisecond_reports_still_need_the_exact_total) ... ok\ntest_a_line_cannot_be_both_unsung_and_an_approved_sung_repeat (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_a_line_cannot_be_both_unsung_and_an_approved_sung_repeat) ... ok\ntest_declared_line_must_not_also_be_timed (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declared_line_must_not_also_be_timed) ... ok\ntest_declared_text_must_equal_the_approved_text (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declared_text_must_equal_the_approved_text) ... ok\ntest_declaring_every_line_of_a_track_is_rejected (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declaring_every_line_of_a_track_is_rejected) ... ok\ntest_evidence_list_must_not_be_empty (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_evidence_list_must_not_be_empty) ... ok\ntest_evidence_must_be_a_hashed_audio_evidence_entry (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_evidence_must_be_a_hashed_audio_evidence_entry) ... ok\ntest_line_number_must_exist_and_be_declared_once (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_line_number_must_exist_and_be_declared_once) ... ok\ntest_malformed_declaration_container_fails_closed (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_malformed_declaration_container_fails_closed) ... ok\ntest_other_missing_line_is_rejected_even_when_one_line_is_declared (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_other_missing_line_is_rejected_even_when_one_line_is_declared) ... ok\ntest_reason_is_required (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_reason_is_required) ... ok\ntest_undeclared_missing_line_is_still_rejected (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_undeclared_missing_line_is_still_rejected) ... ok\ntest_valid_declaration_removes_only_that_line_from_the_expected_list (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_valid_declaration_removes_only_that_line_from_the_expected_list) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.034s\n\nOK\n\n"
+    },
+    "test_subtitles.py": {
+     "exit": 0,
+     "seconds": 0.93,
+     "summary_lines": [
+      "Ran 15 tests in 0.740s",
+      "OK"
+     ],
+     "test_status_count": 15,
+     "non_ok": [],
+     "raw_output": "test_first_and_last_actual_lyrics_allow_long_intro_and_outro (tests.test_subtitles.NewSeriesSubtitleTests.test_first_and_last_actual_lyrics_allow_long_intro_and_outro) ... ok\ntest_prepare_creates_srt_and_manifest_hash_without_prior_output_cues (tests.test_subtitles.NewSeriesSubtitleTests.test_prepare_creates_srt_and_manifest_hash_without_prior_output_cues) ... ok\ntest_approved_series_prepared_and_published (tests.test_subtitles.SubtitleTests.test_approved_series_prepared_and_published) ... ok\ntest_downloaded_manual_srt_text_mismatch_fails (tests.test_subtitles.SubtitleTests.test_downloaded_manual_srt_text_mismatch_fails) ... ok\ntest_existing_srt_is_never_overwritten (tests.test_subtitles.SubtitleTests.test_existing_srt_is_never_overwritten) ... ok\ntest_identical_official_download_is_accepted (tests.test_subtitles.SubtitleTests.test_identical_official_download_is_accepted) ... ok\ntest_late_cue_fails_against_independent_word_observation (tests.test_subtitles.SubtitleTests.test_late_cue_fails_against_independent_word_observation) ... ok\ntest_malformed_report_fails_closed (tests.test_subtitles.SubtitleTests.test_malformed_report_fails_closed) ... ok\ntest_missing_repeat_fails_even_with_updated_timing_map_hash (tests.test_subtitles.SubtitleTests.test_missing_repeat_fails_even_with_updated_timing_map_hash) ... ok\ntest_publication_is_independent_of_preparation (tests.test_subtitles.SubtitleTests.test_publication_is_independent_of_preparation) ... ok\ntest_report_and_lyrics_changes_fail (tests.test_subtitles.SubtitleTests.test_report_and_lyrics_changes_fail) ... ok\ntest_scalar_cue_and_sample_fail_closed (tests.test_subtitles.SubtitleTests.test_scalar_cue_and_sample_fail_closed) ... ok\ntest_silent_gap_extension_fails (tests.test_subtitles.SubtitleTests.test_silent_gap_extension_fails) ... ok\ntest_wrong_public_video_identity_fails (tests.test_subtitles.SubtitleTests.test_wrong_public_video_identity_fails) ... ok\ntest_wrong_second_pass_offset_fails (tests.test_subtitles.SubtitleTests.test_wrong_second_pass_offset_fails) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.740s\n\nOK\n\n"
+    },
+    "test_video_artwork.py": {
+     "exit": 0,
+     "seconds": 1.14,
+     "summary_lines": [
+      "Ran 12 tests in 0.783s",
+      "OK"
+     ],
+     "test_status_count": 11,
+     "non_ok": [],
+     "raw_output": "test_compilation_never_selects_thumbnail_as_background (tests.test_video_artwork.VideoArtworkTests.test_compilation_never_selects_thumbnail_as_background) ... ok\ntest_existing_video_loop_route_is_not_changed (tests.test_video_artwork.VideoArtworkTests.test_existing_video_loop_route_is_not_changed) ... ok\ntest_pack_preview_and_renderer_refuse_missing_contract_before_media_work (tests.test_video_artwork.VideoArtworkTests.test_pack_preview_and_renderer_refuse_missing_contract_before_media_work) ... [ERROR] Video artwork: [Errno 2] No such file or directory: '/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmpxcwgomr0/SERIES/20-00/input/video-artwork.json'\nok\ntest_rejects_file_hash_role_path_and_origin_drift (tests.test_video_artwork.VideoArtworkTests.test_rejects_file_hash_role_path_and_origin_drift) ... ok\ntest_rejects_identical_decoded_pixels_with_different_file_hashes (tests.test_video_artwork.VideoArtworkTests.test_rejects_identical_decoded_pixels_with_different_file_hashes) ... ok\ntest_rejects_missing_stale_or_failed_visual_review (tests.test_video_artwork.VideoArtworkTests.test_rejects_missing_stale_or_failed_visual_review) ... ok\ntest_rejects_non_4k_background (tests.test_video_artwork.VideoArtworkTests.test_rejects_non_4k_background) ... ok\ntest_rejects_thumbnail_renamed_as_video_background (tests.test_video_artwork.VideoArtworkTests.test_rejects_thumbnail_renamed_as_video_background) ... ok\ntest_renderer_uses_inspected_scene_without_second_logo_overlay (tests.test_video_artwork.VideoArtworkTests.test_renderer_uses_inspected_scene_without_second_logo_overlay) ... ok\ntest_upload_gate_rejects_changed_artwork_even_with_mocked_validation (tests.test_video_artwork.VideoArtworkTests.test_upload_gate_rejects_changed_artwork_even_with_mocked_validation) ... ok\ntest_uploaded_legacy_status_does_not_bypass_new_render (tests.test_video_artwork.VideoArtworkTests.test_uploaded_legacy_status_does_not_bypass_new_render) ... ok\ntest_valid_separate_4k_artwork_and_report_binding (tests.test_video_artwork.VideoArtworkTests.test_valid_separate_4k_artwork_and_report_binding) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.783s\n\nOK\n\n[INFO] Rendering video from image with audio duration: 1.0s\n[INFO]   Mode: static image (-tune stillimage, 1 fps)\n[INFO] Running FFmpeg render (image mode)...\n[OK] Video rendered to: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmpbi3sx3ig/SERIES/20-00/output.mp4\n"
+    },
+    "test_youtube_titles.py": {
+     "exit": 0,
+     "seconds": 0.06,
+     "summary_lines": [
+      "Ran 3 tests in 0.000s",
+      "OK"
+     ],
+     "test_status_count": 3,
+     "non_ok": [],
+     "raw_output": "test_empty_section_and_too_long_fail (tests.test_youtube_titles.YouTubeTitleTests.test_empty_section_and_too_long_fail) ... ok\ntest_existing_titles_and_documented_compilation_form_pass (tests.test_youtube_titles.YouTubeTitleTests.test_existing_titles_and_documented_compilation_form_pass) ... ok\ntest_wrong_slot_and_missing_brand_fail (tests.test_youtube_titles.YouTubeTitleTests.test_wrong_slot_and_missing_brand_fail) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n\n"
+    },
+    "test_uploaded_audio_cleanup.py": {
+     "exit": 0,
+     "seconds": 0.36,
+     "summary_lines": [
+      "Ran 9 tests in 0.092s",
+      "OK"
+     ],
+     "test_status_count": 9,
+     "non_ok": [],
+     "raw_output": "test_completed_upload_without_a_usable_source_record_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_completed_upload_without_a_usable_source_record_still_fails) ... ok\ntest_empty_pending_conflicting_or_duplicate_upload_status_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_empty_pending_conflicting_or_duplicate_upload_status_still_fails) ... ok\ntest_missing_tracks_directory_is_the_same_cleanup (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_missing_tracks_directory_is_the_same_cleanup) ... ok\ntest_no_recorded_upload_completion_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_no_recorded_upload_completion_still_fails) ... ok\ntest_pack_and_preview_validation_never_get_the_relief (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_pack_and_preview_validation_never_get_the_relief) ... ok\ntest_recorded_upload_and_sources_with_no_audio_pass_uploaded (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_recorded_upload_and_sources_with_no_audio_pass_uploaded) ... ok\ntest_remaining_audio_files_keep_their_existing_checks (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_remaining_audio_files_keep_their_existing_checks) ... ok\ntest_stages_before_uploaded_still_require_audio (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_stages_before_uploaded_still_require_audio) ... ok\ntest_state_phase_decides_whether_the_cleanup_relieves_the_audio_blocker (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_state_phase_decides_whether_the_cleanup_relieves_the_audio_blocker) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.092s\n\nOK\n\n[INFO] Local audio deleted after upload; recorded in Final Track Sources\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n"
+    }
+   }
+  },
+  "removed": {
+   "clone_seconds": 0.62,
+   "removal": {
+    "files_removed": 1135,
+    "files_not_in_sandbox_work_dir": 164,
+    "wav_kept": 0,
+    "directories_removed": 25
+   },
+   "checks": {
+    "gate_uploaded": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "failed_checks": []
+    },
+    "verify_subtitles_prepared": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "verify_subtitles_published": {
+     "exit": 0,
+     "result": "PASS",
+     "cues": 1490,
+     "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+    },
+    "state_check": {
+     "exit": 0,
+     "result": "PASS",
+     "blockers": [],
+     "state_phase": "uploaded",
+     "state_revision": 105,
+     "artifact_audio": {
+      "audio_files": 0,
+      "available_audio_files": 0,
+      "audio_source": "deleted_after_upload"
+     }
+    },
+    "validate": {
+     "exit": 0,
+     "stdout_tail": "\n=== WAVVY VALIDATION ===\n\n[INFO] Local audio deleted after upload; recorded in Final Track Sources\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nWarnings:\n[WARN] No local audio in input/tracks; deleted after upload (filename and SHA-256 stay in concept.md Final Track Sources)\n\nSummary:\n  Tracks: 0 local (audio deleted after upload; recorded in Final Track Sources)\n  Total Duration: 0.0s (0.0 min)\n\nVALIDATION PASSED\n",
+     "stderr_tail": ""
+    },
+    "verify_release": {
+     "exit": 1,
+     "result": "FAIL",
+     "errors": [
+      "missing audio for report tracks: 01__작은 빛__Relax__Lo-fi R&B__NA.wav, 02__돛__Relax__Lo-fi R&B__NA.wav, 03__한 잔만 더__Relax__Lo-fi R&B__NA.wav, 04__이름__Relax__Lo-fi R&B__NA.wav, 05__비가 그쳤네__Relax__Lo-fi R&B__NA.wav, 06__마음 밖__Relax__Lo-fi R&B__NA.wav, 07__손 잡아도 될까__Relax__Lo-fi R&B__NA.wav, 08__먼지__Relax__Lo-fi R&B__NA.wav, 09__지금 가는 길__Relax__Lo-fi R&B__NA.wav, 10__산책__Relax__Lo-fi R&B__NA.wav, 11__나도 네가 신경 쓰여__Relax__Lo-fi R&B__NA.wav, 12__숨__Relax__Lo-fi R&B__NA.wav, 13__자꾸 네가 신경쓰여__Relax__Lo-fi R&B__NA.wav, 14__물안개__Relax__Lo-fi R&B__NA.wav, 15__약속__Relax__Lo-fi R&B__NA.wav, 16__골목__Relax__Lo-fi R&B__NA.wav, 17__물결__Relax__Lo-fi R&B__NA.wav"
+     ]
+    }
+   },
+   "raw": {
+    "gate_uploaded": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "gate",
+      "SERIES/23-00",
+      "--stage",
+      "uploaded",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 0,
+     "seconds": 0.43,
+     "stdout": "{\n  \"schema\": \"wavvy.gate.v1\",\n  \"stage\": \"uploaded\",\n  \"result\": \"PASS\",\n  \"series\": \"SERIES/23-00\",\n  \"checks\": [\n    {\n      \"name\": \"validate_project\",\n      \"status\": \"PASS\",\n      \"detail\": \"0 tracks\"\n    },\n    {\n      \"name\": \"concept_md_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"final_track_sources_or_source_map_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"report_json_present_or_source_map_ready\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"youtube_metadata_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    },\n    {\n      \"name\": \"audio_files_present\",\n      \"status\": \"PASS\",\n      \"detail\": \"0 audio files via deleted_after_upload\"\n    },\n    {\n      \"name\": \"final_track_sources_match_report\",\n      \"status\": \"PASS\",\n      \"detail\": \"fts=17 report=17\"\n    },\n    {\n      \"name\": \"youtube_upload_completed\",\n      \"status\": \"PASS\",\n      \"detail\": \"\"\n    }\n  ],\n  \"warnings\": [\n    \"local audio files deleted after upload; restore them before running pack again\",\n    \"local final.mkv deleted after upload; regenerate with pack if needed\"\n  ],\n  \"blockers\": []\n}\n",
+     "stderr": ""
+    },
+    "verify_subtitles_prepared": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/23-00",
+      "--stage",
+      "prepared",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 0,
+     "seconds": 0.35,
+     "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"prepared\",\n  \"srt\": \"/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed/SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1490,\n  \"duration_ms\": 6654137,\n  \"sha256\": \"ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9\",\n  \"source_sha256\": \"d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\"\n}\n",
+     "stderr": ""
+    },
+    "verify_subtitles_published": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-subtitles",
+      "SERIES/23-00",
+      "--stage",
+      "published",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 0,
+     "seconds": 0.35,
+     "stdout": "{\n  \"schema\": \"wavvy.subtitles.verify.v1\",\n  \"result\": \"PASS\",\n  \"stage\": \"published\",\n  \"srt\": \"/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed/SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt\",\n  \"cues\": 1490,\n  \"duration_ms\": 6654137,\n  \"sha256\": \"ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9\",\n  \"source_sha256\": \"d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb\",\n  \"timing_scope\": \"structure, source text, retained hashes and selected observed anchors; not full acoustic verification\",\n  \"video_id\": \"wbJQ2WgfJn4\",\n  \"samples\": 4,\n  \"studio_download_compared\": true,\n  \"publication_scope\": \"manual Korean Studio status, public selection and samples, official SRT when available\"\n}\n",
+     "stderr": ""
+    },
+    "state_check": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "state",
+      "SERIES/23-00",
+      "--check",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 0,
+     "seconds": 0.37,
+     "stdout": "{\n  \"schema\": \"wavvy.state.check.v1\",\n  \"result\": \"PASS\",\n  \"state\": {\n    \"schema\": \"wavvy.state.v1\",\n    \"revision\": 105,\n    \"updated_at\": \"2026-11-04T23:31:57\",\n    \"active_series\": \"SERIES/23-00\",\n    \"phase\": \"uploaded\",\n    \"inferred_phase\": \"uploaded\",\n    \"next_action\": \"No active blocker. Local final.mkv/upload.csv are disposable after upload and can be regenerated with pack if needed.\",\n    \"artifact_status\": {\n      \"concept_md\": \"present\",\n      \"final_track_sources\": \"present\",\n      \"selected_audio_sources\": \"missing\",\n      \"premixed_audio\": \"missing\",\n      \"premix_production_report\": \"missing\",\n      \"premixed_video\": \"missing\",\n      \"premixed_video_path\": null,\n      \"final_track_sources_count\": 17,\n      \"report_json\": \"present\",\n      \"report_tracks\": 17,\n      \"audio_files\": 0,\n      \"available_audio_files\": 0,\n      \"audio_source\": \"deleted_after_upload\",\n      \"source_map\": \"missing\",\n      \"source_map_tracks\": 0,\n      \"source_map_audio_files\": 0,\n      \"source_map_missing\": [],\n      \"txt_sources\": 17,\n      \"final_mkv\": \"deleted_after_upload\",\n      \"upload_csv\": \"present\",\n      \"subtitle_txt\": \"present\",\n      \"subtitle_srt\": \"present\",\n      \"youtube_metadata\": \"present\",\n      \"youtube_upload\": \"completed\",\n      \"lyric_skill_package\": \"present\",\n      \"lyric_skill_files\": {\n        \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\": \"present\",\n        \"skills/wavvy-lyricist/SKILL.md\": \"present\",\n        \"skills/wavvy-lyricist/references/patterns.md\": \"present\"\n      },\n      \"subtitle_prepared\": \"verified\",\n      \"subtitle_published\": \"verified\",\n      \"timed_subtitles_required\": true\n    },\n    \"subtitle_status\": {\n      \"prepared\": \"verified\",\n      \"published\": \"verified\"\n    },\n    \"authoritative_docs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/23-00/concept.md\"\n    ],\n    \"evidence_refs\": [\n      \"MASTER/SSOT.md\",\n      \"MASTER/ai/RUNTIME_RULES.md\",\n      \"MASTER/MANAGER.md\",\n      \"MASTER/WORKFLOWS.md\",\n      \"MASTER/cli/SPEC.md\",\n      \"MASTER/youtube/YOUTUBE.md\",\n      \"wavvy.md\",\n      \"SERIES/23-00/concept.md\",\n      \"MASTER/lyrics/skills/WAVVY_LYRIC_SKILL_SPEC.md\",\n      \"skills/wavvy-lyricist/SKILL.md\",\n      \"skills/wavvy-lyricist/references/patterns.md\"\n    ],\n    \"blocked_by\": []\n  },\n  \"warnings\": [],\n  \"blockers\": []\n}\n",
+     "stderr": ""
+    },
+    "validate": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "validate",
+      "SERIES/23-00"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 0,
+     "seconds": 0.32,
+     "stdout": "\n=== WAVVY VALIDATION ===\n\n[INFO] Local audio deleted after upload; recorded in Final Track Sources\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n\nWarnings:\n[WARN] No local audio in input/tracks; deleted after upload (filename and SHA-256 stay in concept.md Final Track Sources)\n\nSummary:\n  Tracks: 0 local (audio deleted after upload; recorded in Final Track Sources)\n  Total Duration: 0.0s (0.0 min)\n\nVALIDATION PASSED\n",
+     "stderr": ""
+    },
+    "verify_release": {
+     "cmd": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "wavvy.py",
+      "verify-release",
+      "SERIES/23-00",
+      "--json"
+     ],
+     "cwd": "/private/tmp/claude-501/-Users-zenkim-office-Project-wavvy/9f0bef40-3db1-46d4-9c34-092b5b9edf95/scratchpad/cleanup-work/vsandbox-removed",
+     "exit": 1,
+     "seconds": 0.31,
+     "stdout": "{\n  \"schema\": \"wavvy.release.v1\",\n  \"result\": \"FAIL\",\n  \"errors\": [\n    \"missing audio for report tracks: 01__작은 빛__Relax__Lo-fi R&B__NA.wav, 02__돛__Relax__Lo-fi R&B__NA.wav, 03__한 잔만 더__Relax__Lo-fi R&B__NA.wav, 04__이름__Relax__Lo-fi R&B__NA.wav, 05__비가 그쳤네__Relax__Lo-fi R&B__NA.wav, 06__마음 밖__Relax__Lo-fi R&B__NA.wav, 07__손 잡아도 될까__Relax__Lo-fi R&B__NA.wav, 08__먼지__Relax__Lo-fi R&B__NA.wav, 09__지금 가는 길__Relax__Lo-fi R&B__NA.wav, 10__산책__Relax__Lo-fi R&B__NA.wav, 11__나도 네가 신경 쓰여__Relax__Lo-fi R&B__NA.wav, 12__숨__Relax__Lo-fi R&B__NA.wav, 13__자꾸 네가 신경쓰여__Relax__Lo-fi R&B__NA.wav, 14__물안개__Relax__Lo-fi R&B__NA.wav, 15__약속__Relax__Lo-fi R&B__NA.wav, 16__골목__Relax__Lo-fi R&B__NA.wav, 17__물결__Relax__Lo-fi R&B__NA.wav\"\n  ]\n}\n",
+     "stderr": ""
+    }
+   },
+   "tests": {
+    "test_harness.py": {
+     "exit": 0,
+     "seconds": 6.27,
+     "summary_lines": [
+      "Ran 82 tests in 5.944s",
+      "OK"
+     ],
+     "test_status_count": 82,
+     "non_ok": [],
+     "raw_output": "test_bare_uploaded_text_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_bare_uploaded_text_does_not_mark_upload_completed) ... ok\ntest_build_state_infers_source_final_for_minimal_fixture (tests.test_harness.HarnessTests.test_build_state_infers_source_final_for_minimal_fixture) ... ok\ntest_check_state_warns_on_final_sources_with_stale_draft_text (tests.test_harness.HarnessTests.test_check_state_warns_on_final_sources_with_stale_draft_text) ... ok\ntest_compilation_source_map_counts_as_available_audio (tests.test_harness.HarnessTests.test_compilation_source_map_counts_as_available_audio) ... ok\ntest_duplicate_track_source_bpm_header_fails_both_gates_and_archiving (tests.test_harness.HarnessTests.test_duplicate_track_source_bpm_header_fails_both_gates_and_archiving) ... ok\ntest_duplicate_track_source_sections_fail_both_prompt_and_lyric_gates (tests.test_harness.HarnessTests.test_duplicate_track_source_sections_fail_both_prompt_and_lyric_gates) ... ok\ntest_explicit_pending_empty_or_conflicting_status_overrides_legacy_url (tests.test_harness.HarnessTests.test_explicit_pending_empty_or_conflicting_status_overrides_legacy_url) ... ok\ntest_full_song_gate_rejects_missing_intro_short_plan_and_source_drift (tests.test_harness.HarnessTests.test_full_song_gate_rejects_missing_intro_short_plan_and_source_drift) ... ok\ntest_full_song_lyric_gate_checks_plan_and_bound_txt (tests.test_harness.HarnessTests.test_full_song_lyric_gate_checks_plan_and_bound_txt) ... ok\ntest_full_song_scope_does_not_silently_pass_without_plan (tests.test_harness.HarnessTests.test_full_song_scope_does_not_silently_pass_without_plan) ... ok\ntest_full_song_section_cues_are_not_sung_lines (tests.test_harness.HarnessTests.test_full_song_section_cues_are_not_sung_lines) ... ok\ntest_generate_report_crossfade_reduction_uses_repeat (tests.test_harness.HarnessTests.test_generate_report_crossfade_reduction_uses_repeat) ... ok\ntest_legacy_full_song_exemption_binds_artifact_path_and_draft_hash (tests.test_harness.HarnessTests.test_legacy_full_song_exemption_binds_artifact_path_and_draft_hash) ... ok\ntest_legacy_published_youtube_marker_marks_upload_completed (tests.test_harness.HarnessTests.test_legacy_published_youtube_marker_marks_upload_completed) ... ok\ntest_lyrics_skill_artifact_accepts_direct_feeling_time_topic_and_no_image_quota (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_accepts_direct_feeling_time_topic_and_no_image_quota) ... ok\ntest_lyrics_skill_artifact_gate_rejects_korean_rows_in_suno_prompt_only (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_gate_rejects_korean_rows_in_suno_prompt_only) ... ok\ntest_lyrics_skill_artifact_rejects_blank_quote_and_tag_only_draft (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_rejects_blank_quote_and_tag_only_draft) ... ok\ntest_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash (tests.test_harness.HarnessTests.test_lyrics_skill_artifact_rejects_mode_mismatch_and_stale_hash) ... ok\ntest_lyrics_skill_cli_review_stage_skips_media_validation (tests.test_harness.HarnessTests.test_lyrics_skill_cli_review_stage_skips_media_validation) ... ok\ntest_lyrics_skill_package_gate_passes_static_contract (tests.test_harness.HarnessTests.test_lyrics_skill_package_gate_passes_static_contract) ... ok\ntest_lyrics_skill_prompt_only_preserves_intentional_empty (tests.test_harness.HarnessTests.test_lyrics_skill_prompt_only_preserves_intentional_empty) ... ok\ntest_lyrics_skill_review_only_binds_to_draft_body_not_metadata (tests.test_harness.HarnessTests.test_lyrics_skill_review_only_binds_to_draft_body_not_metadata) ... ok\ntest_lyrics_skill_review_only_rejects_missing_empty_duplicate_and_conflicting_evidence (tests.test_harness.HarnessTests.test_lyrics_skill_review_only_rejects_missing_empty_duplicate_and_conflicting_evidence) ... ok\ntest_new_full_song_breath_evidence_checks_current_draft (tests.test_harness.HarnessTests.test_new_full_song_breath_evidence_checks_current_draft) ... ok\ntest_new_full_song_verse_exception_including_no_verse (tests.test_harness.HarnessTests.test_new_full_song_verse_exception_including_no_verse) ... ok\ntest_not_uploaded_text_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_not_uploaded_text_does_not_mark_upload_completed) ... ok\ntest_reference_video_url_does_not_mark_upload_completed (tests.test_harness.HarnessTests.test_reference_video_url_does_not_mark_upload_completed) ... ok\ntest_repeat_timestamp_includes_crossfade_at_pass_boundary (tests.test_harness.HarnessTests.test_repeat_timestamp_includes_crossfade_at_pass_boundary) ... ok\ntest_ssot_hygiene_scopes_stale_terms_to_entrypoints (tests.test_harness.HarnessTests.test_ssot_hygiene_scopes_stale_terms_to_entrypoints) ... ok\ntest_state_cli_explicit_phase_and_if_match_on_series_switch (tests.test_harness.HarnessTests.test_state_cli_explicit_phase_and_if_match_on_series_switch) ... ok\ntest_state_phase_change_updates_stale_next_action (tests.test_harness.HarnessTests.test_state_phase_change_updates_stale_next_action) ... ok\ntest_state_resume_preserves_same_series_manual_phase_and_action (tests.test_harness.HarnessTests.test_state_resume_preserves_same_series_manual_phase_and_action) ... ok\ntest_state_switch_infers_target_phase_action_and_evidence (tests.test_harness.HarnessTests.test_state_switch_infers_target_phase_action_and_evidence) ... ok\ntest_track_filename_accepts_unknown_bpm_without_inventing_a_number (tests.test_harness.HarnessTests.test_track_filename_accepts_unknown_bpm_without_inventing_a_number) ... ok\ntest_track_prompt_gate_checks_actual_new_source_without_media (tests.test_harness.HarnessTests.test_track_prompt_gate_checks_actual_new_source_without_media) ... ok\ntest_track_prompt_gate_enforces_unicode_style_budget_and_exclude_items (tests.test_harness.HarnessTests.test_track_prompt_gate_enforces_unicode_style_budget_and_exclude_items) ... ok\ntest_track_prompt_gate_instrumental_remake_requires_instrumental_only_lyrics (tests.test_harness.HarnessTests.test_track_prompt_gate_instrumental_remake_requires_instrumental_only_lyrics) ... ok\ntest_track_prompt_gate_keeps_budget_behavior_at_eight_or_fewer_exclude_terms (tests.test_harness.HarnessTests.test_track_prompt_gate_keeps_budget_behavior_at_eight_or_fewer_exclude_terms) ... ok\ntest_track_prompt_gate_keeps_existing_checks_when_original_style_mode_is_off (tests.test_harness.HarnessTests.test_track_prompt_gate_keeps_existing_checks_when_original_style_mode_is_off) ... ok\ntest_track_prompt_gate_matches_all_explicit_vocal_genders (tests.test_harness.HarnessTests.test_track_prompt_gate_matches_all_explicit_vocal_genders) ... ok\ntest_track_prompt_gate_passes_over_budget_exclude_recorded_as_user_type_style (tests.test_harness.HarnessTests.test_track_prompt_gate_passes_over_budget_exclude_recorded_as_user_type_style) ... ok\ntest_track_prompt_gate_passes_user_supplied_original_style_over_budget (tests.test_harness.HarnessTests.test_track_prompt_gate_passes_user_supplied_original_style_over_budget) ... ok\ntest_track_prompt_gate_rejects_empty_header_values_in_original_style_mode (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_empty_header_values_in_original_style_mode) ... ok\ntest_track_prompt_gate_rejects_original_style_when_exclude_differs_from_concept_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_when_exclude_differs_from_concept_record) ... ok\ntest_track_prompt_gate_rejects_original_style_when_style_differs_from_concept_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_when_style_differs_from_concept_record) ... ok\ntest_track_prompt_gate_rejects_original_style_without_one_matching_concept_entry (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_without_one_matching_concept_entry) ... ok\ntest_track_prompt_gate_rejects_original_style_without_style_source_header (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_original_style_without_style_source_header) ... ok\ntest_track_prompt_gate_rejects_over_budget_exclude_without_matching_type_record (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_over_budget_exclude_without_matching_type_record) ... ok\ntest_track_prompt_gate_rejects_prior_track03_failure_shape (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_prior_track03_failure_shape) ... ok\ntest_track_prompt_gate_rejects_readable_style_values_that_differ_from_header_in_original_style_mode (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_readable_style_values_that_differ_from_header_in_original_style_mode) ... ok\ntest_track_prompt_gate_rejects_source_from_another_series (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_source_from_another_series) ... ok\ntest_track_prompt_gate_rejects_unknown_and_mismatched_proposals (tests.test_harness.HarnessTests.test_track_prompt_gate_rejects_unknown_and_mismatched_proposals) ... ok\ntest_upload_completion_requires_an_explicit_positive_status_field (tests.test_harness.HarnessTests.test_upload_completion_requires_an_explicit_positive_status_field) ... ok\ntest_upload_ready_gate_passes_before_upload_without_failed_upload_check (tests.test_harness.HarnessTests.test_upload_ready_gate_passes_before_upload_without_failed_upload_check) ... ok\ntest_upload_ready_gate_passes_when_upload_already_completed (tests.test_harness.HarnessTests.test_upload_ready_gate_passes_when_upload_already_completed) ... ok\ntest_upload_status_preserves_existing_published_series_fields (tests.test_harness.HarnessTests.test_upload_status_preserves_existing_published_series_fields) ... ok\ntest_uploaded_phase_allows_deleted_local_render_artifacts (tests.test_harness.HarnessTests.test_uploaded_phase_allows_deleted_local_render_artifacts) ... ok\ntest_validate_project_uses_compilation_source_map_when_tracks_dir_is_empty (tests.test_harness.HarnessTests.test_validate_project_uses_compilation_source_map_when_tracks_dir_is_empty) ... ok\ntest_bad_thumbnail_blocks_pack_and_gate (tests.test_harness.PackagingContractTests.test_bad_thumbnail_blocks_pack_and_gate) ... ok\ntest_headline_moved_right_or_cadence_below_tempo_fails_independent_layout (tests.test_harness.PackagingContractTests.test_headline_moved_right_or_cadence_below_tempo_fails_independent_layout) ... ok\ntest_missing_cadence_or_tempo_blocks_pack_and_gate (tests.test_harness.PackagingContractTests.test_missing_cadence_or_tempo_blocks_pack_and_gate) ... ok\ntest_pack_rejects_repeat_one_before_render (tests.test_harness.PackagingContractTests.test_pack_rejects_repeat_one_before_render) ... ok\ntest_report_repeat_one_fails_gate_and_two_matches (tests.test_harness.PackagingContractTests.test_report_repeat_one_fails_gate_and_two_matches) ... ok\ntest_thumbnail_real_logo_and_pacifico_pass (tests.test_harness.PackagingContractTests.test_thumbnail_real_logo_and_pacifico_pass) ... ok\ntest_thumbnail_small_logo_large_time_or_wrong_font_fails (tests.test_harness.PackagingContractTests.test_thumbnail_small_logo_large_time_or_wrong_font_fails) ... ok\ntest_current_selected_song_13_lyrics_do_not_leak_directions (tests.test_harness.ReleaseVerificationTests.test_current_selected_song_13_lyrics_do_not_leak_directions) ... ok\ntest_missing_or_low_quality_4k_upload_copy_fails_release_and_upload_gate (tests.test_harness.ReleaseVerificationTests.test_missing_or_low_quality_4k_upload_copy_fails_release_and_upload_gate) ... ok\ntest_reordered_release_verifies_archive_without_claiming_old_prompt (tests.test_harness.ReleaseVerificationTests.test_reordered_release_verifies_archive_without_claiming_old_prompt) ... ok\ntest_reordered_sources_bind_by_id_and_original_order (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_bind_by_id_and_original_order) ... ok\ntest_reordered_sources_reject_unproven_generation_prompt (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_reject_unproven_generation_prompt) ... ok\ntest_reordered_sources_reject_wrong_id_hash_and_missing_lyrics (tests.test_harness.ReleaseVerificationTests.test_reordered_sources_reject_wrong_id_hash_and_missing_lyrics) ... ok\ntest_subtitles_strip_structure_but_keep_sung_lines (tests.test_harness.ReleaseVerificationTests.test_subtitles_strip_structure_but_keep_sung_lines) ... ok\ntest_verify_release_accepts_one_digit_chapter_numbers (tests.test_harness.ReleaseVerificationTests.test_verify_release_accepts_one_digit_chapter_numbers) ... ok\ntest_verify_release_checks_existing_upload_copy_path_streams_and_duration (tests.test_harness.ReleaseVerificationTests.test_verify_release_checks_existing_upload_copy_path_streams_and_duration) ... ok\ntest_verify_release_checks_identity_and_chapters (tests.test_harness.ReleaseVerificationTests.test_verify_release_checks_identity_and_chapters) ... ok\ntest_verify_release_invalid_final_selection_does_not_fall_back (tests.test_harness.ReleaseVerificationTests.test_verify_release_invalid_final_selection_does_not_fall_back) ... ok\ntest_verify_release_prefers_current_final_selection_over_historical_candidates (tests.test_harness.ReleaseVerificationTests.test_verify_release_prefers_current_final_selection_over_historical_candidates) ... ok\ntest_verify_release_rejects_chapter_drift_and_csv_drift (tests.test_harness.ReleaseVerificationTests.test_verify_release_rejects_chapter_drift_and_csv_drift) ... ok\ntest_archive_rejects_false_identity_timing_and_prompt_claims (tests.test_harness.SelectedAudioSourceTests.test_archive_rejects_false_identity_timing_and_prompt_claims) ... ok\ntest_archive_requires_explicit_instrumental_and_observation_evidence (tests.test_harness.SelectedAudioSourceTests.test_archive_requires_explicit_instrumental_and_observation_evidence) ... ok\ntest_finalize_upload_rejects_old_txt_for_new_selected_id (tests.test_harness.SelectedAudioSourceTests.test_finalize_upload_rejects_old_txt_for_new_selected_id) ... ok\ntest_instrumental_archive_passes_source_and_upload_without_subtitles (tests.test_harness.SelectedAudioSourceTests.test_instrumental_archive_passes_source_and_upload_without_subtitles) ... ok\n\n----------------------------------------------------------------------\nRan 82 tests in 5.944s\n\nOK\n\n[OK] Report saved to: /var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmpupphnn8g/report.json\n[INFO] Found 2 source-map audio reference(s)\n[OK]   01. One (120.0s, 48000Hz)\n[OK]   02. Two (120.0s, 48000Hz)\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n"
+    },
+    "test_integrated_premix.py": {
+     "exit": 0,
+     "seconds": 0.99,
+     "summary_lines": [
+      "Ran 17 tests in 0.889s",
+      "OK"
+     ],
+     "test_status_count": 17,
+     "non_ok": [],
+     "raw_output": "test_aac_gap_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_aac_gap_rejected) ... ok\ntest_actual_corrected_frame_count_checked (tests.test_integrated_premix.IntegratedPremixTests.test_actual_corrected_frame_count_checked) ... ok\ntest_changed_raw_bytes_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_changed_raw_bytes_rejected) ... ok\ntest_cleanup_does_not_hide_changed_retained_media (tests.test_integrated_premix.IntegratedPremixTests.test_cleanup_does_not_hide_changed_retained_media) ... ok\ntest_globally_retimed_entry_required (tests.test_integrated_premix.IntegratedPremixTests.test_globally_retimed_entry_required) ... ok\ntest_legacy_archive_cannot_dispatch_integrated_mix (tests.test_integrated_premix.IntegratedPremixTests.test_legacy_archive_cannot_dispatch_integrated_mix) ... ok\ntest_missing_raw_blocks_pending_release (tests.test_integrated_premix.IntegratedPremixTests.test_missing_raw_blocks_pending_release) ... ok\ntest_nan_loudness_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_nan_loudness_rejected) ... ok\ntest_new_schema_uses_existing_audio_and_separate_artwork_check (tests.test_integrated_premix.IntegratedPremixTests.test_new_schema_uses_existing_audio_and_separate_artwork_check) ... ok\ntest_path_escape_rejected_even_with_matching_file_hash (tests.test_integrated_premix.IntegratedPremixTests.test_path_escape_rejected_even_with_matching_file_hash) ... ok\ntest_repeat_boundary_cannot_disappear (tests.test_integrated_premix.IntegratedPremixTests.test_repeat_boundary_cannot_disappear) ... ok\ntest_second_cycle_relabel_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_second_cycle_relabel_rejected) ... ok\ntest_selection_order_swap_rejected (tests.test_integrated_premix.IntegratedPremixTests.test_selection_order_swap_rejected) ... ok\ntest_self_reported_pass_cannot_hide_replay_error (tests.test_integrated_premix.IntegratedPremixTests.test_self_reported_pass_cannot_hide_replay_error) ... ok\ntest_transform_ratio_and_pitch_are_required (tests.test_integrated_premix.IntegratedPremixTests.test_transform_ratio_and_pitch_are_required) ... ok\ntest_unknown_prompts_cannot_be_promoted (tests.test_integrated_premix.IntegratedPremixTests.test_unknown_prompts_cannot_be_promoted) ... ok\ntest_valid_chain_and_exact_chapter_normalization (tests.test_integrated_premix.IntegratedPremixTests.test_valid_chain_and_exact_chapter_normalization) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.889s\n\nOK\n\n"
+    },
+    "test_premixed_audio.py": {
+     "exit": 0,
+     "seconds": 3.25,
+     "summary_lines": [
+      "Ran 26 tests in 2.856s",
+      "OK"
+     ],
+     "test_status_count": 26,
+     "non_ok": [],
+     "raw_output": "test_changed_corrected_wav_and_producer_script_fail (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_changed_corrected_wav_and_producer_script_fail) ... ok\ntest_changed_final_aac_payload_is_rejected_by_shared_render_check (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_changed_final_aac_payload_is_rejected_by_shared_render_check) ... ok\ntest_corrected_source_media_cleanup_requires_recorded_upload (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_corrected_source_media_cleanup_requires_recorded_upload) ... ok\ntest_forty_start_must_match_actual_transition_not_just_be_increasing (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_forty_start_must_match_actual_transition_not_just_be_increasing) ... ok\ntest_historical_individual_archive_does_not_override_current_premix (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_historical_individual_archive_does_not_override_current_premix) ... ok\ntest_invalid_current_premix_cannot_fall_back_to_historical_archive (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_invalid_current_premix_cannot_fall_back_to_historical_archive) ... ok\ntest_original_and_corrected_hashes_are_distinct_valid_evidence (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_original_and_corrected_hashes_are_distinct_valid_evidence) ... ok\ntest_real_aac_payload_mutation_is_detected_without_changing_packet_timing (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_real_aac_payload_mutation_is_detected_without_changing_packet_timing) ... ok\ntest_two_current_final_source_declarations_fail_instead_of_picking_one (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_two_current_final_source_declarations_fail_instead_of_picking_one) ... ok\ntest_uploaded_cleanup_still_rejects_present_media_hash_changes (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_uploaded_cleanup_still_rejects_present_media_hash_changes) ... ok\ntest_uploaded_cleanup_still_requires_nonmedia_provenance (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_uploaded_cleanup_still_requires_nonmedia_provenance) ... ok\ntest_wrong_selected_id_order_and_reacquired_hash_fail (tests.test_premixed_audio.CorrectedRepeatPremixTests.test_wrong_selected_id_order_and_reacquired_hash_fail) ... ok\ntest_candidate_id_and_historical_hash_drift_fail (tests.test_premixed_audio.PremixedAudioTests.test_candidate_id_and_historical_hash_drift_fail) ... ok\ntest_cleanup_is_only_valid_after_upload_completion_evidence (tests.test_premixed_audio.PremixedAudioTests.test_cleanup_is_only_valid_after_upload_completion_evidence) ... ok\ntest_csv_and_description_must_match_actual_forty_starts (tests.test_premixed_audio.PremixedAudioTests.test_csv_and_description_must_match_actual_forty_starts) ... ok\ntest_incomplete_opt_in_cannot_fall_back_to_wavs (tests.test_premixed_audio.PremixedAudioTests.test_incomplete_opt_in_cannot_fall_back_to_wavs) ... ok\ntest_legacy_uploaded_artwork_requires_retained_render_identity (tests.test_premixed_audio.PremixedAudioTests.test_legacy_uploaded_artwork_requires_retained_render_identity) ... ok\ntest_missing_video_is_not_uploaded_cleanup_before_upload (tests.test_premixed_audio.PremixedAudioTests.test_missing_video_is_not_uploaded_cleanup_before_upload) ... ok\ntest_negative_upload_prose_does_not_open_uploaded_or_cleanup_gates (tests.test_premixed_audio.PremixedAudioTests.test_negative_upload_prose_does_not_open_uploaded_or_cleanup_gates) ... ok\ntest_pack_refuses_to_merge_or_repeat_a_premix (tests.test_premixed_audio.PremixedAudioTests.test_pack_refuses_to_merge_or_repeat_a_premix) ... ok\ntest_pending_old_image_contract_cannot_bypass_artwork_rule (tests.test_premixed_audio.PremixedAudioTests.test_pending_old_image_contract_cannot_bypass_artwork_rule) ... ok\ntest_premix_render_and_csv_bind_separate_image_roles (tests.test_premixed_audio.PremixedAudioTests.test_premix_render_and_csv_bind_separate_image_roles) ... ok\ntest_source_identity_repeat_timeline_and_provenance_mutations_fail (tests.test_premixed_audio.PremixedAudioTests.test_source_identity_repeat_timeline_and_provenance_mutations_fail) ... ok\ntest_source_stage_does_not_require_render (tests.test_premixed_audio.PremixedAudioTests.test_source_stage_does_not_require_render) ... ok\ntest_valid_retained_premix_without_any_individual_wavs (tests.test_premixed_audio.PremixedAudioTests.test_valid_retained_premix_without_any_individual_wavs) ... ok\ntest_video_packet_chapter_codec_and_duration_mutations_fail (tests.test_premixed_audio.PremixedAudioTests.test_video_packet_chapter_codec_and_duration_mutations_fail) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 2.856s\n\nOK\n\n"
+    },
+    "test_subtitle_timing_contract.py": {
+     "exit": 0,
+     "seconds": 0.09,
+     "summary_lines": [
+      "Ran 17 tests in 0.027s",
+      "OK"
+     ],
+     "test_status_count": 17,
+     "non_ok": [],
+     "raw_output": "test_missing_or_malformed_report_still_fails_closed (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_missing_or_malformed_report_still_fails_closed) ... ok\ntest_one_millisecond_is_accepted_and_two_are_rejected (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_one_millisecond_is_accepted_and_two_are_rejected) ... ok\ntest_real_23_00_durations_pass_within_one_millisecond (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_real_23_00_durations_pass_within_one_millisecond) ... ok\ntest_sub_millisecond_durations_are_summed_exactly_then_rounded_once (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_sub_millisecond_durations_are_summed_exactly_then_rounded_once) ... ok\ntest_whole_millisecond_reports_still_need_the_exact_total (tests.test_subtitle_timing_contract.LayoutRoundingTests.test_whole_millisecond_reports_still_need_the_exact_total) ... ok\ntest_a_line_cannot_be_both_unsung_and_an_approved_sung_repeat (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_a_line_cannot_be_both_unsung_and_an_approved_sung_repeat) ... ok\ntest_declared_line_must_not_also_be_timed (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declared_line_must_not_also_be_timed) ... ok\ntest_declared_text_must_equal_the_approved_text (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declared_text_must_equal_the_approved_text) ... ok\ntest_declaring_every_line_of_a_track_is_rejected (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_declaring_every_line_of_a_track_is_rejected) ... ok\ntest_evidence_list_must_not_be_empty (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_evidence_list_must_not_be_empty) ... ok\ntest_evidence_must_be_a_hashed_audio_evidence_entry (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_evidence_must_be_a_hashed_audio_evidence_entry) ... ok\ntest_line_number_must_exist_and_be_declared_once (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_line_number_must_exist_and_be_declared_once) ... ok\ntest_malformed_declaration_container_fails_closed (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_malformed_declaration_container_fails_closed) ... ok\ntest_other_missing_line_is_rejected_even_when_one_line_is_declared (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_other_missing_line_is_rejected_even_when_one_line_is_declared) ... ok\ntest_reason_is_required (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_reason_is_required) ... ok\ntest_undeclared_missing_line_is_still_rejected (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_undeclared_missing_line_is_still_rejected) ... ok\ntest_valid_declaration_removes_only_that_line_from_the_expected_list (tests.test_subtitle_timing_contract.UnsungSourceLineTests.test_valid_declaration_removes_only_that_line_from_the_expected_list) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.027s\n\nOK\n\n"
+    },
+    "test_subtitles.py": {
+     "exit": 0,
+     "seconds": 0.56,
+     "summary_lines": [
+      "Ran 15 tests in 0.496s",
+      "OK"
+     ],
+     "test_status_count": 15,
+     "non_ok": [],
+     "raw_output": "test_first_and_last_actual_lyrics_allow_long_intro_and_outro (tests.test_subtitles.NewSeriesSubtitleTests.test_first_and_last_actual_lyrics_allow_long_intro_and_outro) ... ok\ntest_prepare_creates_srt_and_manifest_hash_without_prior_output_cues (tests.test_subtitles.NewSeriesSubtitleTests.test_prepare_creates_srt_and_manifest_hash_without_prior_output_cues) ... ok\ntest_approved_series_prepared_and_published (tests.test_subtitles.SubtitleTests.test_approved_series_prepared_and_published) ... ok\ntest_downloaded_manual_srt_text_mismatch_fails (tests.test_subtitles.SubtitleTests.test_downloaded_manual_srt_text_mismatch_fails) ... ok\ntest_existing_srt_is_never_overwritten (tests.test_subtitles.SubtitleTests.test_existing_srt_is_never_overwritten) ... ok\ntest_identical_official_download_is_accepted (tests.test_subtitles.SubtitleTests.test_identical_official_download_is_accepted) ... ok\ntest_late_cue_fails_against_independent_word_observation (tests.test_subtitles.SubtitleTests.test_late_cue_fails_against_independent_word_observation) ... ok\ntest_malformed_report_fails_closed (tests.test_subtitles.SubtitleTests.test_malformed_report_fails_closed) ... ok\ntest_missing_repeat_fails_even_with_updated_timing_map_hash (tests.test_subtitles.SubtitleTests.test_missing_repeat_fails_even_with_updated_timing_map_hash) ... ok\ntest_publication_is_independent_of_preparation (tests.test_subtitles.SubtitleTests.test_publication_is_independent_of_preparation) ... ok\ntest_report_and_lyrics_changes_fail (tests.test_subtitles.SubtitleTests.test_report_and_lyrics_changes_fail) ... ok\ntest_scalar_cue_and_sample_fail_closed (tests.test_subtitles.SubtitleTests.test_scalar_cue_and_sample_fail_closed) ... ok\ntest_silent_gap_extension_fails (tests.test_subtitles.SubtitleTests.test_silent_gap_extension_fails) ... ok\ntest_wrong_public_video_identity_fails (tests.test_subtitles.SubtitleTests.test_wrong_public_video_identity_fails) ... ok\ntest_wrong_second_pass_offset_fails (tests.test_subtitles.SubtitleTests.test_wrong_second_pass_offset_fails) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.496s\n\nOK\n\n"
+    },
+    "test_video_artwork.py": {
+     "exit": 0,
+     "seconds": 0.96,
+     "summary_lines": [
+      "Ran 12 tests in 0.658s",
+      "OK"
+     ],
+     "test_status_count": 11,
+     "non_ok": [],
+     "raw_output": "test_compilation_never_selects_thumbnail_as_background (tests.test_video_artwork.VideoArtworkTests.test_compilation_never_selects_thumbnail_as_background) ... ok\ntest_existing_video_loop_route_is_not_changed (tests.test_video_artwork.VideoArtworkTests.test_existing_video_loop_route_is_not_changed) ... ok\ntest_pack_preview_and_renderer_refuse_missing_contract_before_media_work (tests.test_video_artwork.VideoArtworkTests.test_pack_preview_and_renderer_refuse_missing_contract_before_media_work) ... [ERROR] Video artwork: [Errno 2] No such file or directory: '/private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmp74xsh8eg/SERIES/20-00/input/video-artwork.json'\nok\ntest_rejects_file_hash_role_path_and_origin_drift (tests.test_video_artwork.VideoArtworkTests.test_rejects_file_hash_role_path_and_origin_drift) ... ok\ntest_rejects_identical_decoded_pixels_with_different_file_hashes (tests.test_video_artwork.VideoArtworkTests.test_rejects_identical_decoded_pixels_with_different_file_hashes) ... ok\ntest_rejects_missing_stale_or_failed_visual_review (tests.test_video_artwork.VideoArtworkTests.test_rejects_missing_stale_or_failed_visual_review) ... ok\ntest_rejects_non_4k_background (tests.test_video_artwork.VideoArtworkTests.test_rejects_non_4k_background) ... ok\ntest_rejects_thumbnail_renamed_as_video_background (tests.test_video_artwork.VideoArtworkTests.test_rejects_thumbnail_renamed_as_video_background) ... ok\ntest_renderer_uses_inspected_scene_without_second_logo_overlay (tests.test_video_artwork.VideoArtworkTests.test_renderer_uses_inspected_scene_without_second_logo_overlay) ... ok\ntest_upload_gate_rejects_changed_artwork_even_with_mocked_validation (tests.test_video_artwork.VideoArtworkTests.test_upload_gate_rejects_changed_artwork_even_with_mocked_validation) ... ok\ntest_uploaded_legacy_status_does_not_bypass_new_render (tests.test_video_artwork.VideoArtworkTests.test_uploaded_legacy_status_does_not_bypass_new_render) ... ok\ntest_valid_separate_4k_artwork_and_report_binding (tests.test_video_artwork.VideoArtworkTests.test_valid_separate_4k_artwork_and_report_binding) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.658s\n\nOK\n\n[INFO] Rendering video from image with audio duration: 1.0s\n[INFO]   Mode: static image (-tune stillimage, 1 fps)\n[INFO] Running FFmpeg render (image mode)...\n[OK] Video rendered to: /private/var/folders/j8/601m2kw5043683gyygwr2n580000gn/T/tmpsw4u_ald/SERIES/20-00/output.mp4\n"
+    },
+    "test_youtube_titles.py": {
+     "exit": 0,
+     "seconds": 0.06,
+     "summary_lines": [
+      "Ran 3 tests in 0.000s",
+      "OK"
+     ],
+     "test_status_count": 3,
+     "non_ok": [],
+     "raw_output": "test_empty_section_and_too_long_fail (tests.test_youtube_titles.YouTubeTitleTests.test_empty_section_and_too_long_fail) ... ok\ntest_existing_titles_and_documented_compilation_form_pass (tests.test_youtube_titles.YouTubeTitleTests.test_existing_titles_and_documented_compilation_form_pass) ... ok\ntest_wrong_slot_and_missing_brand_fail (tests.test_youtube_titles.YouTubeTitleTests.test_wrong_slot_and_missing_brand_fail) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n\n"
+    },
+    "test_uploaded_audio_cleanup.py": {
+     "exit": 0,
+     "seconds": 0.46,
+     "summary_lines": [
+      "Ran 9 tests in 0.103s",
+      "OK"
+     ],
+     "test_status_count": 9,
+     "non_ok": [],
+     "raw_output": "test_completed_upload_without_a_usable_source_record_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_completed_upload_without_a_usable_source_record_still_fails) ... ok\ntest_empty_pending_conflicting_or_duplicate_upload_status_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_empty_pending_conflicting_or_duplicate_upload_status_still_fails) ... ok\ntest_missing_tracks_directory_is_the_same_cleanup (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_missing_tracks_directory_is_the_same_cleanup) ... ok\ntest_no_recorded_upload_completion_still_fails (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_no_recorded_upload_completion_still_fails) ... ok\ntest_pack_and_preview_validation_never_get_the_relief (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_pack_and_preview_validation_never_get_the_relief) ... ok\ntest_recorded_upload_and_sources_with_no_audio_pass_uploaded (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_recorded_upload_and_sources_with_no_audio_pass_uploaded) ... ok\ntest_remaining_audio_files_keep_their_existing_checks (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_remaining_audio_files_keep_their_existing_checks) ... ok\ntest_stages_before_uploaded_still_require_audio (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_stages_before_uploaded_still_require_audio) ... ok\ntest_state_phase_decides_whether_the_cleanup_relieves_the_audio_blocker (tests.test_uploaded_audio_cleanup.UploadedAudioCleanupTests.test_state_phase_decides_whether_the_cleanup_relieves_the_audio_blocker) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.103s\n\nOK\n\n[INFO] Local audio deleted after upload; recorded in Final Track Sources\n[OK] Loop image: video-background.png (static image mode)\n[OK] Thumbnail found: thumb.jpg\n[OK] YouTube metadata found in concept.md\n"
+    }
+   }
+  }
+ },
+ "sandbox_files_destroyed": {
+  "pristine": 4011,
+  "removed": 2876
+ },
+ "comparison": {
+  "removed": {
+   "gate_uploaded": true,
+   "verify_subtitles_prepared": true,
+   "verify_subtitles_published": true,
+   "state_check": true,
+   "validate_info": {
+    "pristine_exit": 0,
+    "removed_exit": 0
+   },
+   "verify_release_info": {
+    "pristine_exit": 0,
+    "removed_exit": 1
+   }
+  },
+  "tests_same_as_pristine": {
+   "test_harness.py": true,
+   "test_integrated_premix.py": true,
+   "test_premixed_audio.py": true,
+   "test_subtitle_timing_contract.py": true,
+   "test_subtitles.py": true,
+   "test_video_artwork.py": true,
+   "test_youtube_titles.py": true,
+   "test_uploaded_audio_cleanup.py": true
+  }
+ },
+ "pristine_release_checks_pass": true,
+ "result": "PASS",
+ "finished_at_utc": "2026-11-04T14:32:24.954094+00:00"
+}

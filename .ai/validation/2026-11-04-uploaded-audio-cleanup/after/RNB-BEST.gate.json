@@ -1,0 +1,88 @@
+{
+  "schema": "wavvy.gate.v1",
+  "stage": "uploaded",
+  "result": "FAIL",
+  "series": "SERIES/RNB-BEST",
+  "checks": [
+    {
+      "name": "validate_project",
+      "status": "FAIL",
+      "detail": "0 tracks"
+    },
+    {
+      "name": "concept_md_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "final_track_sources_or_source_map_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "report_json_present_or_source_map_ready",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "youtube_metadata_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_files_present",
+      "status": "FAIL",
+      "detail": "0 audio files via concept_track_selection"
+    },
+    {
+      "name": "youtube_upload_completed",
+      "status": "FAIL",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    "render/upload artifacts are missing; this is a blocker only for render_final/upload_ready"
+  ],
+  "blockers": [
+    "Missing loop source: need loop.mp4 or loop.png/jpg in SERIES/RNB-BEST/input",
+    "Source-map audio file does not exist: SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3",
+    "Source-map audio file does not exist: SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3",
+    "Source-map audio file does not exist: SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3",
+    "Source-map audio file does not exist: SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3",
+    "Source-map audio file does not exist: SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav",
+    "Source-map audio file does not exist: SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav",
+    "Source-map audio file does not exist: SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav",
+    "Source-map audio file does not exist: SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav",
+    "Source-map audio file does not exist: SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_03__약속__Promise__Neo-Soul__100.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_04__꽃길__Flower Path__Silky R&B__100.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_05__꽃비__Petal Rain__Silky R&B__90.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_06__눈맞춤__Glance__Silky R&B__108.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_07__봄 꽃__Spring Blossom__Urban Soul__100.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_11__피크닉__Picnic__Neo-Soul Funk__102.wav",
+    "Source-map audio file does not exist: SERIES/13-00/work/norm_tracks/norm_16__봄비같은 너__You Like Spring Rain__Neo-Soul Funk__104.wav",
+    "Source-map audio file does not exist: SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3",
+    "Source-map audio file does not exist: SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3",
+    "Source-map audio file does not exist: SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3",
+    "Source-map audio file does not exist: SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3",
+    "Source-map audio file does not exist: SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3",
+    "Source-map audio file does not exist: SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3",
+    "Source-map audio file does not exist: SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3",
+    "Source-map audio file does not exist: SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3",
+    "Source-map audio file does not exist: SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3",
+    "Source-map audio file does not exist: SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3",
+    "Source-map audio file does not exist: SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav",
+    "Source-map audio file does not exist: SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav",
+    "Source-map audio file does not exist: SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav",
+    "Source-map audio file does not exist: SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav",
+    "Source-map audio file does not exist: SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav",
+    "Source-map audio file does not exist: SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav",
+    "Source-map audio file does not exist: SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav",
+    "Video artwork: [Errno 2] No such file or directory: '/Users/zenkim_office/Project/wavvy/SERIES/RNB-BEST/input/video-artwork.json'",
+    "source_final requires audio files in input/tracks or concept.md Track Selection source map",
+    "source_final requires concept.md ## Final Track Sources",
+    "source_final requires existing source-map audio files: SERIES/22-00/input/tracks/10__작은 빛__Little Light__Chill R&B__72.wav, SERIES/14-00/input/tracks/03__산책__Chill__Alt-RnB__74.mp3, SERIES/04-00/input/tracks/02__윤곽__Ethereal__RnB__76.mp3, SERIES/13-00/work/norm_tracks/norm_05__꽃비__Petal Rain__Silky R&B__90.wav, SERIES/22-00/input/tracks/04__소파__Sofa__Chill R&B__75.wav, SERIES/18-00/input/tracks/06__전화__Warmth__Soft-RnB__88.mp3, SERIES/14-00/input/tracks/09__먼지__Warm__Soft-RnB__72.mp3, SERIES/04-00/input/tracks/04__물안개__Hazy__Lo-fi-RnB__80.mp3, SERIES/14-00/input/tracks/05__돛__Groovy__RnB__90.mp3, SERIES/13-00/work/norm_tracks/norm_07__봄 꽃__Spring Blossom__Urban Soul__100.wav, SERIES/21-00/input/tracks/06__잠실대교__취기__NeoSoul__92.wav, SERIES/13-00/work/norm_tracks/norm_06__눈맞춤__Glance__Silky R&B__108.wav, SERIES/12-00/input/tracks/04__무음__Mute__Afropiano__110.wav, SERIES/13-00/work/norm_tracks/norm_04__꽃길__Flower Path__Silky R&B__100.wav, SERIES/18-00/input/tracks/02__약속__Loneliness__Neo-soul__100.mp3, SERIES/12-00/input/tracks/07__낮꿈__Daydream__Afro-Drill__102.wav, SERIES/14-00/input/tracks/06__물결__Chill__Alt-RnB__74.mp3, SERIES/13-00/work/norm_tracks/norm_16__봄비같은 너__You Like Spring Rain__Neo-Soul Funk__104.wav, SERIES/21-00/input/tracks/03__밤거리__관조__CityPop-Ballad__90.wav, SERIES/12-00/input/tracks/10__잔상__Afterimage__Afro-Drill__108.wav, SERIES/13-00/work/norm_tracks/norm_11__피크닉__Picnic__Neo-Soul Funk__102.wav, SERIES/14-00/input/tracks/01__멍__Chill__Alt-RnB__74.mp3, SERIES/12-00/input/tracks/17__진동__Vibration__Afro-Drill__109.wav, SERIES/13-00/work/norm_tracks/norm_03__약속__Promise__Neo-Soul__100.wav, SERIES/18-00/input/tracks/03__정류장__Loneliness__Neo-soul__100.mp3, SERIES/04-00/input/tracks/01__마음밖__Sentimental__RnB-Ballad__90.mp3, SERIES/12-00/input/tracks/18__얼룩__Stain__Afro-Drill__102.wav, SERIES/22-00/input/tracks/18__맞잡은 손__Holding Hands__Chill R&B__72.wav, SERIES/04-00/input/tracks/09__마음안__Sentimental__RnB-Ballad__95.mp3, SERIES/18-00/input/tracks/09__이름__Homecoming__Soft-RnB__72.mp3, SERIES/22-00/input/tracks/02__잠옷__Comfort__Ambient Slow Jam__76.wav, SERIES/18-00/input/tracks/07__골목__Contemplation__Slow-RnB__67.mp3, SERIES/22-00/input/tracks/19__자장가__Lullaby__Chill R&B__61.wav",
+    "source_final requires output/report.json",
+    "uploaded phase requires concept.md upload completion evidence"
+  ]
+}

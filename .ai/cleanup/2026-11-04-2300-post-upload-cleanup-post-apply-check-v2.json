@@ -1,0 +1,100 @@
+{
+ "schema": "wavvy.post_upload_cleanup_post_apply_check.v1",
+ "checked_at_utc": "2026-11-04T14:40:57.940258+00:00",
+ "candidates_total": 1496,
+ "candidate_paths_still_present": [],
+ "directory_rows": 119,
+ "directories_still_present": [],
+ "protected_total": 4055,
+ "protected_changed_or_missing": [],
+ "mutable_documents_sha256_now": {
+  ".ai/HANDOFF.md": "7c2009c0c76634ac954321a525a1633f8099fff60d9effb1f8f958607c58c8eb",
+  ".ai/SESSION.md": "781e2de674896dd25de660c4c89f8b30bc78fde7e022654c18b7cf4a962bd5a9",
+  ".ai/state.json": "cedcbdf4d0b6e1d61002e6c4567a039f49ee477ead5eab7677ced9f9d2b8f13d",
+  "CHANGELOG.md": "38d275f85c7c0f5531f27d942f055125a024542f961e301327b83d508199b8c2",
+  "SERIES/23-00/concept.md": "533f322ba4bfc1ce3a3320c5e69f38af84835496aaf1e7f1b34bfb227a7dfda7"
+ },
+ "mutable_documents_baseline_sha256": {
+  ".ai/HANDOFF.md": "7c2009c0c76634ac954321a525a1633f8099fff60d9effb1f8f958607c58c8eb",
+  ".ai/SESSION.md": "781e2de674896dd25de660c4c89f8b30bc78fde7e022654c18b7cf4a962bd5a9",
+  ".ai/state.json": "cedcbdf4d0b6e1d61002e6c4567a039f49ee477ead5eab7677ced9f9d2b8f13d",
+  "CHANGELOG.md": "38d275f85c7c0f5531f27d942f055125a024542f961e301327b83d508199b8c2",
+  "SERIES/23-00/concept.md": "533f322ba4bfc1ce3a3320c5e69f38af84835496aaf1e7f1b34bfb227a7dfda7"
+ },
+ "gate_uploaded": {
+  "exit": 0,
+  "result": "PASS",
+  "blockers": [],
+  "warnings": [
+   "local audio files deleted after upload; restore them before running pack again",
+   "local final.mkv deleted after upload; regenerate with pack if needed"
+  ],
+  "checks": [
+   [
+    "validate_project",
+    "PASS",
+    "0 tracks"
+   ],
+   [
+    "concept_md_present",
+    "PASS",
+    ""
+   ],
+   [
+    "final_track_sources_or_source_map_present",
+    "PASS",
+    ""
+   ],
+   [
+    "report_json_present_or_source_map_ready",
+    "PASS",
+    ""
+   ],
+   [
+    "youtube_metadata_present",
+    "PASS",
+    ""
+   ],
+   [
+    "audio_files_present",
+    "PASS",
+    "0 audio files via deleted_after_upload"
+   ],
+   [
+    "final_track_sources_match_report",
+    "PASS",
+    "fts=17 report=17"
+   ],
+   [
+    "youtube_upload_completed",
+    "PASS",
+    ""
+   ]
+  ]
+ },
+ "state_check": {
+  "exit": 0,
+  "result": "PASS",
+  "blockers": [],
+  "phase": "uploaded",
+  "revision": 105,
+  "audio": {
+   "audio_files": 0,
+   "available_audio_files": 0,
+   "audio_source": "deleted_after_upload",
+   "final_mkv": "deleted_after_upload",
+   "upload_csv": "present"
+  }
+ },
+ "verify_subtitles_prepared": {
+  "exit": 0,
+  "result": "PASS",
+  "cues": 1490
+ },
+ "verify_subtitles_published": {
+  "exit": 0,
+  "result": "PASS",
+  "cues": 1490
+ },
+ "free_bytes_now": 409056526336
+}
