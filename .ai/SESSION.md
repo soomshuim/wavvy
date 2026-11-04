@@ -1,5 +1,47 @@
 # Session State — Wavvy
 
+<!-- 2300-video-current:start -->
+## 2026-11-04 [CLD] 23:00 — 4K 본편 렌더·시간 자막·YouTube 즉시 공개·고정 댓글 완료
+
+- 젠의 「이제 영상 제작하자.」에 따라 4K 본편 영상 렌더까지 마쳤다(지시서 `.ai/plans/2026-11-04-2300-video-production.md`). YouTube 업로드·Studio·Suno 조작·새 이미지/음악 생성·커밋·푸시는 하지 않았다.
+- 음원: 현재 17곡을 `SERIES/23-00/input/tracks/NN__제목__Relax__Lo-fi R&B__NA.wav`(48 kHz stereo float32)로 넣었다. 가드 구간 안에서 두 채널이 정확히 0.0이 아닌 첫·마지막 샘플로 잘랐고, 결과는 `raw.wav` 조각과 바이트가 같다(독립 검사 17/17). 컷 길이는 원곡 재생 시간보다 +0.0086~+0.0089초이고 합계 3,340.268초다. `input/download-manifest.json`(system_audio_capture)과 `production/video-production-20261104/audio-cut-verification.json`에 구간·해시를 남겼다. 현재 선택 기록은 `input/suno-final-selection-2026-11-04.json`(sequence.json 파생)이다.
+- 본편 배경: `input/video-background.png`(3840×2160) = `input/thumb.png`의 하단 문장 띠 y2035–2100을 글자 없는 장면 원본으로 복원한 것이다. 장면 원본 대비 차이는 로고 영역 [128,96,728,449]뿐이다. 직접 열어 보고 로고만 있음을 확인했고(`production/video-artwork-review.json`, `input/video-artwork.json`), `thumb.*`와 장면 원본은 수정하지 않았다.
+- 렌더: `validate` PASS → 30초 미리보기(3840×2160 H.264+AAC, 소리 확인) → `pack -y`(2회 반복·0.8초 acrossfade·-14 LUFS·-1.0 dBTP). `output/final.mkv` 3840×2160 H.264 + FLAC, 컨테이너 6654.0초(오디오 디코드 6653.95초, 합친 오디오는 6654.14초라 끝 약 0.19초(-52 dBFS 꼬리)는 하네스의 1fps 영상 길이에 맞춰 잘림), 약 958 MB. 챕터 34개(1회차 17 + 2회차 17)를 concept와 `output/upload.csv`에 맞췄고, 2회차 시작은 오디오 일치로 3326.668초를 실측했다. 최종 영상의 앞·2회차·끝 프레임을 직접 봤고 로고만 있다.
+- 검사(렌더 직후, 2026-11-04): `verify-release` PASS. 당시 `gate --stage source-final`·`render-final`과 `state --check`는 가사 원문 보관 절이 없어 FAIL이었다(아래 업로드 준비에서 해소).
+- 업로드 준비(2026-11-04, 젠 「좋아. 업로드 하자. 바로 등록」·「자막 먼저 만들고 공개」, 지시서 `.ai/plans/2026-11-04-2300-subtitles-upload-prep.md`): 업로드·Studio·공개·댓글·Suno 조작·커밋·푸시는 하지 않았다. (1) 설명·태그를 승인 문안으로, 고정 댓글을 승인 3줄로 바꾸고(concept `## YouTube Metadata`, 승인은 오케스트레이터 전달) `upload.csv`를 `generate_upload_csv`로 다시 만들었다(렌더 그대로, `verify-release` PASS). 고정 댓글 게시는 다음 업로드 단계. (2) 17곡 가사 원문 txt(Suno 곡 화면 가사 그대로, STYLE·EXCLUDE는 `style-provenance.json` 그대로, 잠정/직접 제작 구분과 `actual_generation_input_verified: false` 보존)를 만들고 옛 txt 20개는 `SERIES/23-00/input/source-history/` 아래 보존 폴더로 옮겼다(`moved-manifest.json`, 삭제 없음). `finalize-upload --keep-txt`로 가사 원문 보관 절을 채웠다. (3) 시간 자막: 저장소 `.venv/`(mlx-whisper 0.4.3, `requirements-whisper.txt`, `MASTER/ai/RUNTIME_RULES.md` Lyric Timing ASR 절)로 단어 시각을 얻어 `SERIES/23-00/input/validation/2026-11-04-timed-subtitles/`에 시간표·음성 근거 39개·자체 점검을 남겼다(인식 기반 추정, 사람이 들어 본 검증 아님). 회차당 745큐·전체 1,490큐, 노래에서 추가 반복된 승인 가사 10줄, 노래에 없는 승인 가사 8줄은 `unsung_source_lines`로 선언.
+- 하네스 패치(오케스트레이터 승인, 2026-11-04): `wavvy_harness/subtitles.py` — 곡 길이를 정확히 합한 뒤 한 번만 반올림(보고서 총 길이와 1 ms 이내면 통과; 6자리 소수 길이 보고서가 9 ms 어긋나 거절되던 문제), 시간표의 `unsung_source_lines`(원문·이유·해시된 음성 근거가 있는 미가창 줄만 기대 목록에서 제외). 문서는 `skills/wavvy-youtube-publish/references/timed-subtitles.md`와 SPEC §5. 새 테스트 `tests/test_subtitle_timing_contract.py` 17건, 17:30 실제 데이터 `verify_prepared` 1270큐·sha 29543de1… 그대로 PASS(`harness-patch-checks/`).
+- 결과(2026-11-04): `prepare-subtitles --timing-map` → `verify-subtitles --stage prepared` PASS, 최종 SRT `SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt`(로컬 무시 경로) 1,490큐 sha256 `ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9`. `source-final`·`render-final`·`upload-ready`·`verify-release`·`state --check` 모두 PASS, state revision 104·phase `upload_ready`. 이후 업로드 단계에서 아래처럼 공개까지 마쳤다.
+- 기존 자막 테스트 수정(젠 「고쳐줄래?」): `tests/test_subtitles.py` 13건 오류는 17:30 업로드 후 정리 커밋 `0861ddb`가 지운 보고서 사본 `report-at-subtitle-preparation.json`을 읽다 실패한 것이었다. 17:30 근거를 Git 이력에서 `tests/fixtures/subtitles_17_30/`로 고정(README에 커밋·SHA-256; 공개 화면 PNG 6개는 제외하고 대역 파일 사용)해 `SERIES/` 없이 통과하게 했다. 전체 테스트 파일 172건 OK(원문 `…/2026-11-04-timed-subtitles/harness-patch-checks/`, 설명은 `.ai/plans/2026-11-04-2300-subtitles-upload-prep.md` 끝).
+- 업로드·공개(2026-11-04, 지시서 `.ai/plans/2026-11-04-2300-youtube-upload.md`, ego lite, 채널 Wavvy24 `UC4R4NGwp19Y4lbdNs2HQVcg`): 제출 1회로 영상 `wbJQ2WgfJn4`(https://www.youtube.com/watch?v=wbJQ2WgfJn4)를 올리고 승인 제목·설명·태그 26개·썸네일 `input/thumb.jpg`·아동용 아님·AI 사용 예·유료 프로모션 없음·음악·댓글 켬·한국어를 저장 후 다시 열어 확인했다. 시간 자막을 타이밍 포함 수동 한국어로 게시했고(Studio 다운로드 SRT는 끝 줄바꿈 1바이트 외 동일), 즉시 공개(12:54:30Z)로 저장했다. 젠 승인 고정 댓글 3줄을 1회 게시·고정했다(댓글 ID `UgyFpV0asefwfilJ-wt4AaABAg`). 오케스트레이터가 로그인 없이 공개 페이지를 받아 제목 일치·6654초·`isPrivate=false`·수동 `ko` 자막 트랙을 직접 확인했다. Studio 처리 SD/HD/4K 완료(22:29 KST), 소유권 주장 화면은 22:00 KST에 “발견되지 않음”이며 저작권 검사 최종 완료 문구는 확보하지 못했다(통과 주장 안 함). `verify-subtitles --stage published`·`gate --stage uploaded`·`state --check` PASS, state revision 105·phase `uploaded`. 기록: `SERIES/23-00/production/youtube-upload-20261104.json`, `production/youtube-upload-ui-20261104/`, `input/validation/2026-11-04-timed-subtitles/publication/`.
+- 업로드 뒤 정정: 격리 검토(자막 하네스 패치 CLEAN)가 지적한 대로 「숨」 41·42줄 미가창 이유를 “silent breakdown”에서 “145.6–166.5초 음악은 계속되나 음성 미인식”으로 고치고 시간표 해시(`d7fdcc1e…`)를 `input/subtitles.json`에 갱신했다. SRT·게시 자막은 바뀌지 않았고 prepared·published·uploaded 검사 PASS.
+- 업로드 워커 관찰(결정 대기 아님, 참고): Studio 업로드 기본값이 옛 `[Playlist] [10:00] soomshuim | …` 제목·10:00 설명·기본 태그 17개를 미리 채워 승인본으로 덮어썼다. ego 스냅샷 형식이 하네스 published 근거가 기대하는 Aside 형식과 달라 원시 `.txt`에 DOM 값을 기대 형식으로 옮긴 부분과 ego 원본을 함께 담았다. 설명 첫 줄 `23:00`은 YouTube가 23분 시각 링크로 표시한다(17:30 등 기존 형식과 같음).
+- 증거: `production/video-production-20261104/`(컷 검증·게이트 원문 JSON, 업로드 준비 게이트는 `gates/2026-11-04-*`). 로컬 무시 경로 `output/`·`work/`·`input/tracks/*.wav`는 커밋되지 않는다.
+
+<!-- 2300-video-current:end -->
+
+<!-- 2300-thumbnail-current:start -->
+## 2026-11-04 [CLD] 23:00 — 썸네일에서 Lo-fi Groove 제목 제거
+
+- 젠의 「하단의 Lo-fi Groove 텍스트 없애줘.」에 따라 제목을 지웠다. 정식 썸네일 `SERIES/23-00/input/thumb.jpg`와 손실 없는 `input/thumb.png`는 모두 3840×2160이며, 현재 구성은 왼쪽 위 Wavvy 로고와 왼쪽 아래 갈색 셰리프 하단 문장(From the stillness…)뿐이다.
+- 방법은 글자 없는 `production/artwork-final/scene-original-4k.png`에서 전체 폭 띠 y1880–2035를 복원한 것이다(이전 제목 영역 [128,1939,597,2000]). 픽셀 검사는 통과했다: 복원 띠는 원본과 차이가 없고, 이전 PNG 대비 변경은 [128,1939,597,2000] 안뿐이며, 크기는 3840×2160이다. 새 PNG SHA256 `c23e92bf5d7f8fada854ca2e002888e0784082ded89e93a293f804691593134c`(4,872,818바이트), JPEG `f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a`(1,487,182바이트)이다. JPEG 해시는 이전 하단 문장 전용본(텔레그램 55936)과 일치하고, PNG 바이트 해시는 이전 전용본 `a017772c…`와 다르다(픽셀 검사는 통과). 이전 Baskerville Bold700 제목 세부값은 `artwork.json`의 `removed_title`, 이번 기록은 `title_removal`에 있다.
+- 같은 최종 4K JPEG를 텔레그램 56035로 전달했고 설정 수신 대상과 파일 크기 일치를 확인했다.
+- 생성 원본은 1672×941이고 4K는 Lanczos 확대본이다. 과정 파일 정리 기록 `.ai/cleanup/2026-11-04-2300-artwork-cleanup.json`은 유지한다. 음원·가사·수록 순서·수노 번호·기계 상태는 바뀌지 않았고 커밋·푸시는 하지 않았다.
+
+<!-- 2300-thumbnail-current:end -->
+
+<!-- 2300-capture-current:start -->
+## 2026-11-04 [CDX] 23:00 사용자 17곡 — 녹음·수록 순서·수노 제목 번호 반영
+
+- 젠이 `[23:00]`에 모은 현재 17 ID의 브라우저 녹음을 마쳤다. 1배속·처음부터 자연 종료까지의 재생 증거와 오디오 신호·연속성·파일 해시를 확인했다. 원곡 재생 시간 합계는 55:40.12다. 원본과 앞 0.5초·뒤 0.75초 여유를 남긴 수집본은 로컬 무시 경로 `work/2026-11-04-2300-browser-capture/`에 보존한다. 출력 지연 미측정이며 최종 편집본·공식 다운로드·음악 품질 승인을 뜻하지 않는다.
+- Ego 무음 시험 4회는 진단 이력이다. 젠이 지정한 Aside MCP `mcp__aside__repl`의 기존 첫 Suno 탭으로 17곡을 녹음했다. 정확한 앱 PID·bundle을 지정하고 마이크를 제외했다. 전역 ego 기본값은 변경하지 않았다.
+- 최종 순서: 1 작은 빛, 2 돛, 3 한 잔만 더, 4 이름, 5 비가 그쳤네, 6 마음 밖, 7 손 잡아도 될까, 8 먼지, 9 지금 가는 길, 10 산책, 11 나도 네가 신경 쓰여, 12 숨, 13 자꾸 네가 신경쓰여, 14 물안개, 15 약속, 16 골목, 17 물결. 4–15 구곡/신곡 교대, 16–17 구곡 연속이다. 같은 17 Suno ID의 제목을 `N. 기존 제목`으로 저장하고 각 곡을 다시 열어 확인했다. 녹음 당시 순번·제목·원문 증거는 이력 그대로다.
+- 스타일·가사 원문은 17곡 모두 보존했다. 원곡 연결 확인 3곡과 가사 일치 후보 8곡은 원곡 스타일 + 리믹스 스타일을 기록한다. 후보 8곡은 정확한 부모 연결 미확인으로 잠정 표시한다. 별도 질문한 6곡은 젠의 「이건 직접 만든거야.」 답변에 따라 현재 표시 스타일을 기록하며 원곡 문구를 만들어 붙이지 않았다. 실제 생성 입력을 확정한 기록은 아니다.
+- 출처 폴더: `SERIES/23-00/production/browser-capture-20261104/`. 사람용 목록은 `recordings.md`, 순서는 `sequence.{json,md}`, 제목 저장 확인은 `suno-sequence-numbering-20261104.json`, 녹음은 `capture-manifest.json`, 스타일은 `style-provenance.{json,md}`, 질문/답변은 `user-style-clarification.json`, 방법·한계는 `measurement-method.md`다.
+- 새 17곡 한정 인계 전 확인은 `handoff-verification.json` PASS다. 새 17곡의 격리 검토는 CLEAN(확인된 중대 결함 0건)이며 `review-20261104.md`에 남겼다. 옛 20곡 txt·ledger는 보존된 과거 자료다. 기계 상태의 input 20 txt·audio 0은 이 과거 입력과 `work/` 보관의 차이이며 17 녹음 부재를 뜻하지 않는다. 음원 수집 단계에서 최종 입력 승격·음악 새 생성·아트워크·발매·업로드는 수행하지 않았다. 이후 요청된 아트워크 시안은 위 별도 기록을 따른다. 사용자 요청 없이 커밋·푸시는 하지 않는다.
+
+<!-- 2300-capture-current:end -->
+
+
 ## 2026-10-27 [CDX] Google 인증·가입·유통 신청의 직접 수행 계획
 
 - 젠의 “구글 auth를 비롯해 네가 직접 할 수 있는 것들은 직접 할 수 있게 플랜이해줘. aside mcp나 repl 활용해서”를 [기존 유통 계획 §4](plans/PLAN_music-distribution.md#4-에이전트가-직접-수행하는-실행-계획)에 반영했다. 실행 시작 후 에이전트가 기존 로그인·자동 완성·Google 계정 선택/필요 동의·가입·자료 준비·업로드·발매 및 아티스트 권한 신청을 직접 맡는다. 젠은 곡·비용·계약 결정과 에이전트가 완료할 수 없는 인증 단계만 맡는다.
@@ -133,6 +175,8 @@ Wavvy24 공개 영상 `3HorT4OoDhg`는 사용자 선택 20곡×2회·7,718.5초�
 - [해시 재대조](validation/2026-10-23-subtitle-title-harness/record-baseline-check.json)에서 원본 SRT `29543de1…`(1,270구간·1,498행), 무시각 원고 `29cd296a…`, 썸네일 `634cbb9f…`, 업로드 CSV `bd63238f…`가 기존 기준과 모두 일치했다. [공식 state writer 출력](validation/2026-10-23-subtitle-title-harness/record-state-write.json)은 revision 79 `uploaded`, 자막 `prepared=verified`·`published=verified`다. [이번 변경의 독립 검토](reviews/2026-10-23-subtitle-title-harness-review.md)는 CLEAN(확정 Critical/High 0·원칙 관찰 없음)이다. 이번 요청 범위의 구현·검증·기록에 남은 일은 없다.
 
 ---
+
+2026-11-04 [CLD] Wavvy 23:00 공개 완료 — 썸네일 제목 제거, 로고 전용 4K 배경, 17곡×2회 4K 렌더(34챕터), 승인 제목 「Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00」·설명·태그·고정 댓글, 저장소 .venv Whisper 기반 시간 자막 1,490큐, 자막 하네스 패치(정확 합산·근거 있는 미가창 줄)·17:30 테스트 고정 자료, YouTube wbJQ2WgfJn4 즉시 공개·수동 한국어 자막·고정 댓글. uploaded gate PASS(state 105). 작업 커밋 791bea1.
 
 ## 2026-11-02 [CLD] Wavvy 23:00 새 시리즈 제작 — 귤·포근히 확정, 11~19 재생성 후보 선택 대기
 
