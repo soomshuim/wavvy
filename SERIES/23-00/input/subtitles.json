@@ -1,0 +1,105 @@
+{
+  "schema": "wavvy.subtitles.v1",
+  "report": {
+    "path": "output/report.json",
+    "sha256": "22843d202dc6ff661ffe14751d94b731c6881ade27d7bb99d58a1e2c267279da"
+  },
+  "timing_map": {
+    "path": "input/validation/2026-11-04-timed-subtitles/all-tracks-timed-checked.json",
+    "sha256": "d7fdcc1e5dff1589e643d0e89797ac3be7638aabe70bc8d803f1159e0058f9aa"
+  },
+  "srt": {
+    "path": "output/youtube_subtitles_ko_timed_estimated.srt",
+    "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9"
+  },
+  "required_extra_occurrences": {
+    "8:22": 1,
+    "8:26": 1,
+    "10:23-26": 4,
+    "16:19-22": 4
+  },
+  "repeat_evidence": {
+    "8:22": [
+      "audio-probe/check-08-extra-repeat-a-100-135-whisper.json"
+    ],
+    "8:26": [
+      "audio-probe/check-08-extra-repeat-b-140-175-whisper.json"
+    ],
+    "10:23-26": [
+      "audio-probe/check-10-extra-chorus-85-153-whisper.json"
+    ],
+    "16:19-22": [
+      "audio-probe/check-16-extra-chorus-165-206-whisper.json"
+    ]
+  },
+  "source_sha256": "d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb",
+  "publication": {
+    "video_id": "wbJQ2WgfJn4",
+    "observation": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/publication-observation.json",
+      "sha256": "b520936451faaad124136b9faef56c778634a7875727f8d92c7a496ae35f7ef1"
+    },
+    "studio_capture": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-manual-caption-published-studio.png",
+      "sha256": "0423d4c4065526fe4b42c839bc7c8f8e7ff4cfde760678043005a5254a8c1971"
+    },
+    "public_menu_capture": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-public-manual-caption-menu.png",
+      "sha256": "76a1bef0ff65601b41afebee3cad65611cd158ba62fe4480cb2cf82ec7e42159"
+    },
+    "sample_files": {
+      "first": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-first.txt",
+          "sha256": "463ae553c78d88a91dc897eb2d81f4851c0e32c9d2b07ed9edfcbc539a3ff168"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-first.png",
+          "sha256": "38c10eeeb642a30d6cd3bbef95c0973ead77d503c16a79201ced18aa53f8cf5f"
+        }
+      },
+      "middle": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-mid.txt",
+          "sha256": "58450230d3fe0716023958bb95869ccd42cc7adfd4efdf8ad5de5febc8015948"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-mid.png",
+          "sha256": "348b063cd9f0f6d03e2c7abb5eedbc3f1e37490d6be2d793ace89c9c625d5e03"
+        }
+      },
+      "repeat": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-repeat.txt",
+          "sha256": "d90925b1632e1347a24435a2b9bd1da3c76fb4959dfffd7596b679c8e2ec5182"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-repeat.png",
+          "sha256": "c1e0d0d73ae68c9066ac71273426520d64a341269731d4ea5999de2822ecab0d"
+        }
+      },
+      "ending": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-ending.txt",
+          "sha256": "6aac58e3145da669755c28e98d6c5e834d4ff4a2adf32e68f4f91a7069a0ac2e"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-watch-manual-ending.png",
+          "sha256": "2195a5964705e8cd625845030c4a4c179996acb73666f18bb585cfd75d2bfc10"
+        }
+      }
+    },
+    "studio_raw": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-manual-caption-published-studio.txt",
+      "sha256": "5b6e61303eaa1897c77d329d10dd1d468f5cce299f2f621f2282d660bea3402f"
+    },
+    "public_menu_raw": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/2026-11-04-public-manual-caption-menu.txt",
+      "sha256": "ed01bb2c7811b79a12715314adcf7503092716bb53ba4a5b65c271372c7744c5"
+    },
+    "studio_download": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/studio-published-manual-ko.srt",
+      "sha256": "aa317ea87a52af6336ceaec44d88fb05b8b02b492c053c21e87adc8374d1e343"
+    }
+  }
+}

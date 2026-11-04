@@ -1,0 +1,460 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/09__지금 가는 길__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "de257d454d61a3a0dffeb680dac16ba55c7142b68dc3a13a519a968fdcfb6fea",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "120.0,150.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/09__지금 가는 길__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "de257d454d61a3a0dffeb680dac16ba55c7142b68dc3a13a519a968fdcfb6fea",
+  "clip_start_s": 120.0,
+  "clip_end_s": 150.0,
+  "clip_audio_sha256": "0a66736d93051b84a1641c4c0404986730600063eaa1520b930ee4071a0b85c6",
+  "elapsed_seconds": 2.577,
+  "transcription": {
+    "text": " 넌 남겨 별일 없이 보낸 하루 너희한테 불어놓게 요즘 어떻게 지내 난 오늘 똑같이 별로 할 말 없다가도 하나씩 생각이 나 누가 먼저 꺼낸 얘긴지 한참 다른대로 세고 시간 한 번 확인하다 휴대폰을 뒤집어 놔 나 지금 가는 길 먼저",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.72,
+        "text": " 넌 남겨 별일 없이 보낸 하루",
+        "tokens": [
+          50365,
+          3214,
+          234,
+          11689,
+          19591,
+          47442,
+          6403,
+          33353,
+          39833,
+          116,
+          33918,
+          50580
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 넌",
+            "start": 0.0,
+            "end": 0.32,
+            "probability": 0.53125
+          },
+          {
+            "word": " 남겨",
+            "start": 0.32,
+            "end": 1.02,
+            "probability": 0.9462890625
+          },
+          {
+            "word": " 별일",
+            "start": 1.02,
+            "end": 2.04,
+            "probability": 0.95166015625
+          },
+          {
+            "word": " 없이",
+            "start": 2.04,
+            "end": 2.5,
+            "probability": 0.95751953125
+          },
+          {
+            "word": " 보낸",
+            "start": 2.5,
+            "end": 3.16,
+            "probability": 0.95849609375
+          },
+          {
+            "word": " 하루",
+            "start": 3.16,
+            "end": 3.72,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.3,
+        "end": 7.18,
+        "text": " 너희한테 불어놓게",
+        "tokens": [
+          50580,
+          12963,
+          11975,
+          15863,
+          16285,
+          6540,
+          28500,
+          1810,
+          50767
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 너희한테",
+            "start": 4.3,
+            "end": 5.16,
+            "probability": 0.96044921875
+          },
+          {
+            "word": " 불어놓게",
+            "start": 5.16,
+            "end": 7.18,
+            "probability": 0.890625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 8.040000000000001,
+        "end": 12.28,
+        "text": " 요즘 어떻게 지내 난 오늘 똑같이",
+        "tokens": [
+          50767,
+          24835,
+          12952,
+          12205,
+          22485,
+          19252,
+          8880,
+          33790,
+          1129,
+          50988
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 요즘",
+            "start": 7.72,
+            "end": 8.42,
+            "probability": 0.9580078125
+          },
+          {
+            "word": " 어떻게",
+            "start": 8.42,
+            "end": 9.04,
+            "probability": 0.49072265625
+          },
+          {
+            "word": " 지내",
+            "start": 9.04,
+            "end": 9.98,
+            "probability": 0.9072265625
+          },
+          {
+            "word": " 난",
+            "start": 9.98,
+            "end": 10.74,
+            "probability": 0.869140625
+          },
+          {
+            "word": " 오늘",
+            "start": 10.74,
+            "end": 11.04,
+            "probability": 0.7021484375
+          },
+          {
+            "word": " 똑같이",
+            "start": 11.04,
+            "end": 12.28,
+            "probability": 0.89111328125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 12.28,
+        "end": 17.4,
+        "text": " 별로 할 말 없다가도 하나씩 생각이 나",
+        "tokens": [
+          50988,
+          45513,
+          8981,
+          7058,
+          5711,
+          14325,
+          3744,
+          12261,
+          24317,
+          34581,
+          3948,
+          51253
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 별로",
+            "start": 12.28,
+            "end": 12.88,
+            "probability": 0.99462890625
+          },
+          {
+            "word": " 할",
+            "start": 12.88,
+            "end": 13.38,
+            "probability": 0.98193359375
+          },
+          {
+            "word": " 말",
+            "start": 13.38,
+            "end": 13.68,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 없다가도",
+            "start": 13.68,
+            "end": 14.74,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 하나씩",
+            "start": 14.74,
+            "end": 15.7,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 생각이",
+            "start": 15.7,
+            "end": 16.8,
+            "probability": 0.97314453125
+          },
+          {
+            "word": " 나",
+            "start": 16.8,
+            "end": 17.4,
+            "probability": 0.994140625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 17.4,
+        "end": 22.3,
+        "text": " 누가 먼저 꺼낸 얘긴지 한참 다른대로 세고",
+        "tokens": [
+          51253,
+          33851,
+          20749,
+          34505,
+          1870,
+          224,
+          116,
+          11098,
+          1600,
+          24289,
+          4815,
+          5786,
+          116,
+          9586,
+          98,
+          1397,
+          15527,
+          11605,
+          1313,
+          51499
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 누가",
+            "start": 17.4,
+            "end": 18.04,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 먼저",
+            "start": 18.04,
+            "end": 18.4,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 꺼낸",
+            "start": 18.4,
+            "end": 19.02,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 얘긴지",
+            "start": 19.02,
+            "end": 19.78,
+            "probability": 0.853515625
+          },
+          {
+            "word": " 한참",
+            "start": 19.78,
+            "end": 20.6,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 다른대로",
+            "start": 20.6,
+            "end": 21.54,
+            "probability": 0.7900390625
+          },
+          {
+            "word": " 세고",
+            "start": 21.54,
+            "end": 22.3,
+            "probability": 0.89013671875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 22.3,
+        "end": 27.34,
+        "text": " 시간 한 번 확인하다 휴대폰을 뒤집어 놔",
+        "tokens": [
+          51499,
+          16648,
+          4815,
+          10212,
+          31288,
+          25786,
+          30200,
+          1327,
+          3638,
+          34151,
+          1638,
+          19798,
+          19041,
+          3103,
+          10091,
+          242,
+          51738
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25258741146180685,
+        "compression_ratio": 1.3047619047619048,
+        "no_speech_prob": 1.858376647012605e-11,
+        "words": [
+          {
+            "word": " 시간",
+            "start": 22.3,
+            "end": 23.12,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 한",
+            "start": 23.12,
+            "end": 23.34,
+            "probability": 0.54541015625
+          },
+          {
+            "word": " 번",
+            "start": 23.34,
+            "end": 23.56,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 확인하다",
+            "start": 23.56,
+            "end": 24.46,
+            "probability": 0.984375
+          },
+          {
+            "word": " 휴대폰을",
+            "start": 24.46,
+            "end": 25.74,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 뒤집어",
+            "start": 25.74,
+            "end": 26.86,
+            "probability": 0.859375
+          },
+          {
+            "word": " 놔",
+            "start": 26.86,
+            "end": 27.34,
+            "probability": 0.9921875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2734,
+        "start": 27.34,
+        "end": 29.7,
+        "text": " 나 지금 가는 길 먼저",
+        "tokens": [
+          50365,
+          3948,
+          7356,
+          37407,
+          25222,
+          20749,
+          50499
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.452067494392395,
+        "compression_ratio": 0.717948717948718,
+        "no_speech_prob": 4.498613981329669e-11,
+        "words": [
+          {
+            "word": " 나",
+            "start": 27.34,
+            "end": 27.66,
+            "probability": 0.53125
+          },
+          {
+            "word": " 지금",
+            "start": 27.66,
+            "end": 28.04,
+            "probability": 0.99462890625
+          },
+          {
+            "word": " 가는",
+            "start": 28.04,
+            "end": 28.4,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 길",
+            "start": 28.4,
+            "end": 28.82,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 먼저",
+            "start": 28.82,
+            "end": 29.7,
+            "probability": 0.96142578125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

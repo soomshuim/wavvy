@@ -1,0 +1,284 @@
+{
+  "schema": "wavvy.youtube_ui_upload.v1",
+  "status": "completed_public_comment_pinned_subtitles_published",
+  "browser": "ego lite",
+  "connection": "ego-browser CLI (ego-browser nodejs), skill guide v2.2.0",
+  "task_space": {
+    "id": 3708,
+    "name": "wavvy 23:00 YouTube upload",
+    "pages_used": [
+      "p1",
+      "p2 (short-lived evidence page, closed)"
+    ],
+    "unknown_origin_tabs_closed": 0
+  },
+  "channel_id": "UC4R4NGwp19Y4lbdNs2HQVcg",
+  "channel_name_observed": "Wavvy24",
+  "channel_handle_observed": "@wavvy24",
+  "file_submission_count": 1,
+  "video_id": "wbJQ2WgfJn4",
+  "watch_url": "https://www.youtube.com/watch?v=wbJQ2WgfJn4",
+  "short_url": "https://youtu.be/wbJQ2WgfJn4",
+  "studio_url": "https://studio.youtube.com/video/wbJQ2WgfJn4/edit",
+  "attempt_history": [
+    {
+      "event": "ego-browser TaskSpace created; Studio dashboard showed Wavvy24 with channel id UC4R4NGwp19Y4lbdNs2HQVcg (matches brief)"
+    },
+    {
+      "event": "content list checked before submission: no draft or video with the 23:00 / 커피, 바람, 밤 title (top 18 rows listed, newest first)",
+      "upload_created": false,
+      "evidence": "production/youtube-upload-ui-20261104/01-content-list-before-upload.png"
+    },
+    {
+      "time_utc": "2026-11-04T12:40:55Z",
+      "event": "single file submission: page.setInputFiles on the upload dialog input with SERIES/23-00/output/final.mkv (absolute repo path accepted by ego-browser)",
+      "file_name_observed": "final.mkv",
+      "visibility_observed": "private_draft"
+    },
+    {
+      "time_utc": "2026-11-04T12:41:04Z",
+      "event": "upload dialog opened already filled with the channel's upload defaults: title '[Playlist] [10:00] soomshuim | 조용히 몰입하는 시간, Chillhop', the 10:00 description and 17 default tags; replaced with the approved values",
+      "evidence": "production/youtube-upload-ui-20261104/02-upload-dialog-after-single-submission-prefilled-defaults.png"
+    },
+    {
+      "time_utc": "2026-11-04T12:46:06Z",
+      "event": "upload progress reached 100%; dialog text '업로드 완료 ... 곧 처리 시작됨'; Studio showed '비공개로 저장됨'"
+    },
+    {
+      "event": "saved as private draft from the 공개 상태 step (비공개 selected); Studio then showed 동영상 처리 중 dialog '4K까지 처리 ... 15분 남음'",
+      "evidence": "production/youtube-upload-ui-20261104/06-after-private-save-processing-dialog.png"
+    },
+    {
+      "event": "draft reopened at /video/wbJQ2WgfJn4/edit; all fields re-read (see metadata)",
+      "file_resubmitted": false
+    },
+    {
+      "event": "timed SRT uploaded via 수동 업로드 > 타이밍 포함 (toast '한국어 자막이 업로드됨'); first click on 수동 업로드 by text selector failed ('div intercepts pointer events', element is the button's own touch-feedback layer), repeated with a coordinate click on the same button",
+      "upload_created": false
+    },
+    {
+      "event": "subtitle editor opened and showed the uploaded timed lines (0:00:13:04 / 0:00:17:00 ...); 게시 was clicked once; toast '한국어 자막이 게시되었습니다.' (publish click between 12:49:03Z and 12:49:45Z)"
+    },
+    {
+      "time_utc": "2026-11-04T12:54:30Z",
+      "event": "visibility set to 공개 and 저장 clicked once on the edit page; toast '변경사항이 저장됨'; selector reopened after reload shows PUBLIC checked",
+      "publication_completed": true
+    },
+    {
+      "time_utc": "2026-11-04T12:56:11Z",
+      "event": "pinned comment text submitted once (comments were 0)",
+      "comment_reposted": false
+    },
+    {
+      "event": "comment pinned through the comment menu > 고정 > confirm dialog; verified again after a full reload"
+    },
+    {
+      "time_utc": "2026-11-04T13:22:20Z",
+      "event": "Studio '자동 자막 생성 중' finished; language dialog then showed 오디오 원본 게시됨, 자동 자막 자동 게시됨, 수동 자막 수동 게시됨"
+    }
+  ],
+  "upload_file": {
+    "path": "SERIES/23-00/output/final.mkv",
+    "sha256": "e2da2e859488aa90cea4570daa54c1483fd57163358e661ae85b286c38a38ebc",
+    "bytes": 958208576,
+    "ffprobe": "3840x2160 h264 + flac 48000 Hz 2ch, 6654.000 s, matroska",
+    "upload_dialog_file_name": "final.mkv"
+  },
+  "thumbnail": {
+    "path": "SERIES/23-00/input/thumb.jpg",
+    "sha256": "f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a",
+    "bytes": 1487182,
+    "dimensions": "3840x2160",
+    "set_through": "upload dialog thumbnail file input (#file-loader)",
+    "studio_edit_page_shows": "custom thumbnail (ytimg URL with ?v= parameter) matching the local image visually"
+  },
+  "upload_csv": {
+    "path": "SERIES/23-00/output/upload.csv",
+    "sha256": "b8958b61d4fb6aebe4b3f110d3578f870da83a9ffd641155039775c05f3443fc"
+  },
+  "local_media_deleted": false,
+  "metadata": {
+    "title_exact": true,
+    "title_chars": 85,
+    "description_exact_after_removing_single_ui_trailing_newline": true,
+    "description_exact_without_adjustment": false,
+    "description_note": "Studio's editor returns the description with one extra trailing LF; otherwise identical to upload.csv and concept (1226 characters).",
+    "tags_exact": true,
+    "tag_count": 26,
+    "default_tags_cleared": true,
+    "default_title_and_description_replaced": true,
+    "not_for_kids": true,
+    "age_restriction": "none",
+    "ai_generated": true,
+    "ai_generated_ui": "AI 사용 > 예 (VIDEO_HAS_ALTERED_CONTENT_YES); public page shows an 'AI' label under the title",
+    "paid_promotion": false,
+    "category": "Music (음악)",
+    "comments": "On (켜짐, 모든 사용자, 검토 기본)",
+    "video_language": "한국어",
+    "license": "standard YouTube license",
+    "shorts_remix": "default (video and audio remix allowed)",
+    "thumbnail_uploaded": true,
+    "verified_from": "production/youtube-upload-ui-20261104/studio-saved-details-ui.json after a fresh load of the edit page (and earlier right after the private save)"
+  },
+  "visibility": {
+    "saved_radio": "public",
+    "studio_status": "공개",
+    "public_watch_verified": true,
+    "watch_duration_ui": "1:50:54",
+    "approved_title_exact": true,
+    "published_at": "2026-11-04T04:54:31-08:00 (YouTube uploadDate) = 2026-11-04 21:54:31 KST",
+    "anonymous_fetch": {
+      "evidence": "production/youtube-upload-ui-20261104/anonymous-watch-observation.json",
+      "isPrivate": false,
+      "isUnlisted": false,
+      "playabilityStatus": "OK",
+      "lengthSeconds": 6654,
+      "channelId": "UC4R4NGwp19Y4lbdNs2HQVcg",
+      "category": "Music"
+    }
+  },
+  "processing": {
+    "SD": "complete (aria-label 표준 화질 완료)",
+    "HD": "complete (aria-label 고화질 완료)",
+    "4K": "complete (aria-label 4K 완료)",
+    "observed_at_kst": "2026-11-04 22:29",
+    "earlier_observation": "after the private save Studio showed 4K까지 처리 ... 15분 남음; the upload dialog's 검토 step said 검토 does not run until SD processing finishes",
+    "player_quality_levels_listed": [
+      "hd2160",
+      "hd1440",
+      "hd1080",
+      "hd720",
+      "large",
+      "medium",
+      "small",
+      "tiny",
+      "auto"
+    ],
+    "actual_4K_stream_playback_claimed": false,
+    "studio_notification_latest": "—",
+    "copyright": "2026-11-04 ~22:00 KST Studio 소유권 주장 screen: '동영상에서 소유권 주장이 발견되지 않았습니다' / '동영상에서 저작권 보호 콘텐츠가 발견되지 않았습니다'. No explicit 'check finished' verdict was captured; the earlier upload-dialog check step was still waiting for SD processing.",
+    "studio_banner_unrelated": "Studio content page showed a Google Ads billing banner ('지정된 결제 수단으로 청구할 수 없음 ...'); not related to this video and left untouched",
+    "evidence": [
+      "production/youtube-upload-ui-20261104/studio-quality-panel-dom.txt",
+      "production/youtube-upload-ui-20261104/studio-copyright-page-ui.txt",
+      "production/youtube-upload-ui-20261104/studio-content-list-row-ui.txt"
+    ]
+  },
+  "comment": {
+    "posted": true,
+    "pinned": true,
+    "post_submission_count": 1,
+    "duplicate_checked_before_post": true,
+    "existing_comments_before_post": 0,
+    "comment_id": "UgyFpV0asefwfilJ-wt4AaABAg",
+    "text": "☕ 커피, 바람, 밤, 그리고 Groove\n오늘 밤, 이 플리는 어디에서 듣고 계신가요?\n마음에 남은 곡 번호나 제목도 댓글로 남겨주세요.",
+    "text_exact_after_reload": true,
+    "pin_ui_text": "@wavvy24님이 고정함",
+    "comments_count_after": "댓글 1개",
+    "evidence": [
+      "production/youtube-upload-ui-20261104/comment-pinned-ui.txt",
+      "production/youtube-upload-ui-20261104/comment-pinned-ui.png",
+      "production/youtube-upload-ui-20261104/17-comment-pinned-after-reload.png"
+    ]
+  },
+  "subtitles": {
+    "srt": {
+      "path": "SERIES/23-00/output/youtube_subtitles_ko_timed_estimated.srt",
+      "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9",
+      "cues": 1490
+    },
+    "uploaded_with_timing": true,
+    "upload_ui": "Studio 언어 > 수동 업로드 > 타이밍 포함 > file chooser",
+    "editor_preview_showed_timed_lines": true,
+    "publish_clicks": 1,
+    "studio_toast": "한국어 자막이 게시되었습니다.",
+    "studio_language_dialog": {
+      "manual": "수동 자막 / 수동 / 게시됨",
+      "auto": "자동 자막 / 자동 / 게시됨",
+      "audio": "오디오 / 원본 / 게시됨",
+      "captured_after_auto_caption_generation_finished": true
+    },
+    "studio_download_srt": {
+      "path": "input/validation/2026-11-04-timed-subtitles/publication/studio-published-manual-ko.srt",
+      "sha256": "aa317ea87a52af6336ceaec44d88fb05b8b02b492c053c21e87adc8374d1e343",
+      "relation": "validated SRT plus one trailing LF; 1490 cues, text and times identical",
+      "note": "browser saved it as ~/Downloads/captions.srt (ego-browser's download event did not fire in any of several attempts, including one with an in-page blob hook); that Downloads copy was left in place"
+    },
+    "public_menu": "수동 한국어 checked; 한국어 (자동 생성됨) and 자동 번역 listed separately",
+    "public_samples": [
+      {
+        "label": "first",
+        "cue_index": 1,
+        "observed_watch_time_s": 15.998,
+        "caption": "잠든 네 볼에"
+      },
+      {
+        "label": "middle",
+        "cue_index": 427,
+        "observed_watch_time_s": 1800.13,
+        "caption": "난 뭐, 늘 똑같지"
+      },
+      {
+        "label": "repeat",
+        "cue_index": 881,
+        "observed_watch_time_s": 3899.657,
+        "caption": "혼자 뭘 좀 보겠지"
+      },
+      {
+        "label": "ending",
+        "cue_index": 1490,
+        "observed_watch_time_s": 6621.655,
+        "caption": "시간은 천천히 가"
+      }
+    ],
+    "manifest": "SERIES/23-00/input/subtitles.json (publication block)",
+    "verify_published": {
+      "command": "python3 wavvy.py verify-subtitles SERIES/23-00 --stage published --json",
+      "result": "PASS",
+      "raw": "production/youtube-upload-ui-20261104/verify-subtitles-published.stdout.json"
+    },
+    "raw_evidence_format_note": "wavvy_harness/subtitles.py checks Aside-style snapshot lines (menuitemradio \"한국어\" [checked], generic \"<lyric>\", /video/<id>/translations plus 게시됨). ego-browser's native snapshot has a different shape, so each retained .txt has two sections: a DOM extract written by the capture script in the expected line format from the live DOM, and the unmodified native ego-browser snapshot."
+  },
+  "public_watch_verification": {
+    "title_exact": true,
+    "channel": "Wavvy24",
+    "duration_ui": "1:50:54",
+    "playback_started_ui": true,
+    "player_left_paused": true,
+    "chapter_markers_in_player": 34,
+    "chapter_title_at_6621s": "17. 물결 (반복)",
+    "description_chapter_text": "Track List 17 lines and Repeat 17 lines shown in the expanded description",
+    "description_timestamp_links_observed": 49,
+    "description_first_line_quirk": "the '23:00' in the first description line is turned into a timestamp link to 23:00 (t=1380s) by YouTube",
+    "full_listening_performed": false,
+    "evidence": [
+      "production/youtube-upload-ui-20261104/public-expanded-description-ui.txt",
+      "production/youtube-upload-ui-20261104/public-description-expanded.png",
+      "production/youtube-upload-ui-20261104/18-public-watch-page.png"
+    ]
+  },
+  "evidence_directory": "production/youtube-upload-ui-20261104",
+  "subtitle_evidence_directory": "input/validation/2026-11-04-timed-subtitles/publication",
+  "gate_results": {
+    "pre_upload": {
+      "upload_ready_gate": "PASS (blockers 0)",
+      "verify_release": "PASS",
+      "verify_subtitles_prepared": "PASS (1490 cues)"
+    },
+    "normal_state_writer": {
+      "command": "python3 wavvy.py state SERIES/23-00 --write --phase uploaded --if-match 104 --json",
+      "result": "PASS",
+      "revision_after": 105,
+      "phase": "uploaded",
+      "raw": "production/youtube-upload-ui-20261104/state-write.stdout.json"
+    },
+    "uploaded_gate": {
+      "command": "python3 wavvy.py gate SERIES/23-00 --stage uploaded --json",
+      "result": "PASS",
+      "blockers": [],
+      "warnings": [],
+      "raw": "production/youtube-upload-ui-20261104/uploaded-gate.stdout.json"
+    }
+  },
+  "updated_at_utc": "2026-11-04T13:35:00Z"
+}

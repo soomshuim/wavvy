@@ -1,0 +1,235 @@
+# Evidence for https://studio.youtube.com/video/wbJQ2WgfJn4/translations captured 2026-11-04T13:25:45.521Z with ego-browser (ego lite) v2.2.0
+# Section 1: DOM extract written by the capture script from the open "한국어" language dialog (media table rows read from the live DOM), in the line format wavvy_harness/subtitles.py expects.
+- title: "언어 - YouTube Studio" [url=https://studio.youtube.com/video/wbJQ2WgfJn4/translations]
+- main:
+  - heading "언어" [level=1]
+  - dialog "한국어 세부정보":
+    - region "미디어":
+      - row "유형 이름 출처 상태 작업"
+      - row "오디오 원본 게시됨"
+      - row "자동 자막 자동 게시됨"
+      - row "수동 자막 수동 게시됨"
+# Section 2: native ego-browser page.snapshot() (viewport), unmodified
+[p1 "언어 - YouTube Studio" | space "wavvy 23:00 YouTube upload"(3708): 1 managed, 0 untracked — p1* "언어 - YouTube Studio"]
+root
+  container
+    container
+      button "메뉴 접기" [ref=222, loc=role:button[name="메뉴 접기"]]
+        svg_root
+      anchor [ref=223, loc=href:/channel/UC4R4NGwp19Y4lbdNs2HQVcg, url=https://studio.youtube.com/channel/UC4R4NGwp19Y4lbdNs2HQVcg]
+        image
+      container [ref=224]
+        svg_root
+        form
+          textbox [ref=225, loc=css:input[placeholder="내 채널 검색하기"]]
+            text "내 채널 검색하기"
+      container
+        container
+          button "도움말" [ref=226, loc=role:button[name="도움말"]]
+            svg_root
+          button "알림" [ref=227, loc=role:button[name="알림"]]
+            svg_root
+        button "YouTube 스튜디오에 물어보기" [ref=228, loc=css:button[aria-label="YouTube 스튜디오에 물어보기"]]
+          svg_root
+          text "YouTube 스튜디오에 물어보기"
+          svg_root
+        container [ref=229]
+          button "만들기" [ref=230, loc=css:button[aria-label="만들기"]]
+            svg_root
+            text "만들기"
+        container "계정"
+          button "Account" [ref=231, loc=css:button[aria-label="Account"]]
+            image
+    container
+      navigation [ref=232]
+        anchor "채널 콘텐츠" [ref=233, loc=css:a[aria-label="채널 콘텐츠"], url=https://studio.youtube.com/channel/UC4R4NGwp19Y4lbdNs2HQVcg/videos]
+          container [ref=234]
+            svg_root
+            text "채널 콘텐츠"
+        container
+          container [ref=235]
+          container
+            image
+            text "1:50:54"
+          container
+            text "내 동영상"
+            text "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00"
+        menu
+          list_item
+            menuitem [ref=236, loc=href:/video/wbJQ2WgfJn4/edit, url=https://studio.youtube.com/video/wbJQ2WgfJn4/edit]
+              container [ref=237]
+                svg_root
+                text "세부정보"
+          list_item
+            menuitem [ref=238, loc=href:/video/wbJQ2WgfJn4/analytics/tab-overview/period-default, url=https://studio.youtube.com/video/wbJQ2WgfJn4/analytics/tab-overview/period-default]
+              container [ref=239]
+                svg_root
+                text "분석"
+          list_item
+            menuitem [ref=240, loc=href:/video/wbJQ2WgfJn4/editor, url=https://studio.youtube.com/video/wbJQ2WgfJn4/editor]
+              container [ref=241]
+                svg_root
+                text "편집기"
+          list_item
+            menuitem [ref=242, loc=href:/video/wbJQ2WgfJn4/comments/inbox, url=https://studio.youtube.com/video/wbJQ2WgfJn4/comments/inbox]
+              container [ref=243]
+                svg_root
+                text "댓글"
+          list_item
+            menuitem [ref=244, loc=href:/video/wbJQ2WgfJn4/translations, url=https://studio.youtube.com/video/wbJQ2WgfJn4/translations]
+              container [ref=245]
+                svg_root
+                text "언어"
+          list_item
+            menuitem [ref=246, loc=href:/video/wbJQ2WgfJn4/claims, url=https://studio.youtube.com/video/wbJQ2WgfJn4/claims]
+              container [ref=247]
+                svg_root
+                text "소유권 주장"
+          list_item
+            menuitem [ref=248, loc=href:/video/wbJQ2WgfJn4/clips, url=https://studio.youtube.com/video/wbJQ2WgfJn4/clips]
+              container [ref=249]
+                svg_root
+                text "클립 및 Shorts 동영상"
+        unordered_list
+          list_item
+            button [ref=250]
+              svg_root
+              text "설정"
+          list_item
+            container [ref=251]
+              button [ref=252]
+                svg_root
+                text "의견 보내기"
+      container
+        heading
+          text "언어"
+        container
+          container "동영상 언어: 한국어"
+            container
+              heading
+                text "동영상 언어: 한국어"
+              button "세부정보" [ref=253, loc=role:button[name="세부정보"]]
+                svg_root
+            text "한국어 자막은 자막 및 오디오의 자동 번역을 위한 기본 소스입니다."
+            container
+              container [ref=254]
+                button "자막 수정" [ref=255, loc=css:button[aria-label="자막 수정"]]
+                  text "자막 수정"
+              container [ref=256]
+                button "수동 업로드" [ref=257, loc=css:button[aria-label="수동 업로드"]]
+                  text "수동 업로드"
+          container "번역"
+            container
+              heading
+                text "번역"
+              container [ref=258]
+                button "언어 추가" [ref=259, loc=css:button[aria-label="언어 추가"]]
+                  text "언어 추가"
+            container "번역"
+              row
+                columnheader
+                  heading "언어"
+                    text "언어"
+                columnheader
+                  heading "오디오"
+                    text "오디오"
+                columnheader
+                  heading "자막"
+                    text "자막"
+                columnheader
+                  heading "제목 및 설명"
+                    text "제목 및 설명"
+                columnheader
+                  heading "썸네일"
+                    text "썸네일"
+  dialog "한국어 세부정보" [ref=260, loc=role:dialog[name="한국어 세부정보"]]
+    container
+      heading
+        svg_root
+        text "한국어"
+      container "대화상자 컨트롤"
+        container [ref=261]
+          button "업데이트" [ref=262, loc=css:button[aria-label="업데이트"]]
+            text "업데이트"
+        button "취소" [ref=263, loc=role:button[name="취소"]]
+          svg_root
+    container
+      container
+        container "제목 및 설명"
+          heading
+            text "제목 및 설명"
+          container
+            container
+              text "제목"
+              container "눈길을 끄는 제목으로 시청자의 관심을 유도할 수 있습니다. 동영상 제목을 작성할 때는 시청자가 내 동영상과 비슷한 동영상을 찾을 때 사용할 만한 �..." [ref=264]
+                svg_root
+            textfield "제목" [ref=265]
+              text "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00"
+          container
+            container
+              text "설명"
+              container "키워드를 잘 활용해 설명을 작성하면 시청자가 검색을 통해 내 동영상을 더 쉽게 찾을 수 있습니다. 동영상 내용을 간략히 설명하고 설명 앞부분에 키�..." [ref=266]
+                svg_root
+            textfield "설명" [ref=267]
+              text "☕ 23:00, 커피 한 잔과 바람, 그리고 밤의 그루브 우리말 가사의 Lo-fi Pop과 R&B - Wavvy 늦은 밤 커피를 한 잔 내리고, 창문을 조금 열어 선선한 바람을 들이�..."
+        container "미디어"
+          table "미디어"
+            table_row
+              table_cell
+                container
+                  image "오디오"
+                    svg_root
+                  text "오디오"
+                  text "원본"
+                  status [ref=268]
+                    text "게시됨"
+                  container "더빙 오디오 옵션 표시" [ref=269]
+                    button "더빙 오디오 옵션 표시" [ref=270, loc=css:button[aria-label="더빙 오디오 옵션 표시"]]
+                      svg_root
+                container
+                  image "자막"
+                    svg_root
+                  text "자동 자막"
+                  text "자동"
+                  status [ref=271]
+                    text "게시됨"
+                  container "자막 옵션 표시" [ref=272]
+                    button "자막 옵션 표시" [ref=273]
+                      svg_root
+                container
+                  image "자막"
+                    svg_root
+                  text "수동 자막"
+                  text "수동"
+                  status [ref=274]
+                    text "게시됨"
+                  container "자막 옵션 표시" [ref=275]
+                    button "자막 옵션 표시" [ref=276]
+                      svg_root
+      container "미리보기"
+        container
+          container
+            status "로드 중"
+            region "동영상 플레이어" [ref=277, loc=role:region[name="동영상 플레이어"]]
+              video "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00"
+              container
+                button "재생" [ref=278, loc=role:button[name="재생"]]
+                  svg_root
+                button "음소거" [ref=279, loc=role:button[name="음소거"]]
+                  svg_root
+                text "0:00:00 / 1:50:55"
+                button "설정" [ref=280]
+                  svg_root
+                button "전체 화면" [ref=281, loc=role:button[name="전체 화면"]]
+                  svg_root
+              svg_root
+              svg_root
+              svg_root
+              svg_root
+          button [ref=282]
+            button
+              container
+                text "미리보기"
+                text "원본 오디오"
+              svg_root
+

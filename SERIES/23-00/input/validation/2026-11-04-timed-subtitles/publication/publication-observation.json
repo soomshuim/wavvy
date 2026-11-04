@@ -1,0 +1,77 @@
+{
+  "observed_at_kst": "2026-11-04T22:28:43+09:00",
+  "video_id": "wbJQ2WgfJn4",
+  "watch_url": "https://www.youtube.com/watch?v=wbJQ2WgfJn4",
+  "channel": "Wavvy24",
+  "browser_tool": "ego-browser (ego lite) v2.2.0, ego-browser nodejs",
+  "browser_session": "TaskSpace 3708 (wavvy 23:00 YouTube upload)",
+  "studio_manual_korean": "게시됨",
+  "studio_auto_korean": "게시됨 (자동 자막 행: 자동 / 게시됨, 수동 자막과 별도 트랙)",
+  "public_caption_menu": "수동 한국어 checked; 한국어 (자동 생성됨) 별도 항목 (자동 번역·사용 안함 포함). 자동 생성 트랙이 없던 이전 시점의 메뉴 캡처는 -before-auto-caption 파일로 보존",
+  "published_manual_srt": {
+    "source_sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9",
+    "source_bytes": 91312
+  },
+  "public_watch_samples": [
+    {
+      "label": "first",
+      "observed_watch_time_s": 15.998,
+      "observed_caption": "잠든 네 볼에",
+      "source_cue": {
+        "index": 1,
+        "start": "00:00:13,960",
+        "end": "00:00:17,280",
+        "text": "잠든 네 볼에"
+      },
+      "raw_snapshot": "2026-11-04-watch-manual-first.txt",
+      "screenshot": "2026-11-04-watch-manual-first.png"
+    },
+    {
+      "label": "middle",
+      "observed_watch_time_s": 1800.13,
+      "observed_caption": "난 뭐, 늘 똑같지",
+      "source_cue": {
+        "index": 427,
+        "start": "00:29:59,450",
+        "end": "00:30:01,670",
+        "text": "난 뭐, 늘 똑같지"
+      },
+      "raw_snapshot": "2026-11-04-watch-manual-mid.txt",
+      "screenshot": "2026-11-04-watch-manual-mid.png"
+    },
+    {
+      "label": "repeat",
+      "observed_watch_time_s": 3899.657,
+      "observed_caption": "혼자 뭘 좀 보겠지",
+      "source_cue": {
+        "index": 881,
+        "start": "01:04:59,045",
+        "end": "01:05:01,205",
+        "text": "혼자 뭘 좀 보겠지"
+      },
+      "raw_snapshot": "2026-11-04-watch-manual-repeat.txt",
+      "screenshot": "2026-11-04-watch-manual-repeat.png"
+    },
+    {
+      "label": "ending",
+      "observed_watch_time_s": 6621.655,
+      "observed_caption": "시간은 천천히 가",
+      "source_cue": {
+        "index": 1490,
+        "start": "01:50:20,887",
+        "end": "01:50:23,727",
+        "text": "시간은 천천히 가"
+      },
+      "raw_snapshot": "2026-11-04-watch-manual-ending.txt",
+      "screenshot": "2026-11-04-watch-manual-ending.png"
+    }
+  ],
+  "mutation_scope": "timed SRT uploaded and published once through Studio's 수동 업로드 flow (타이밍 포함) during the new video's upload; no other video touched",
+  "notes": [
+    "The manual Korean caption was uploaded with timing and published (toast 한국어 자막이 게시되었습니다) while Studio still showed 자동 자막 생성 중; the language dialog row 수동 자막 수동 게시됨 was captured after that job finished (see studio_raw). The public menu and the four sample captures were taken before the automatic track existed; the menu was captured again afterwards (manual 한국어 still checked).",
+    "Studio's own download of the manual track (자막 옵션 > 다운로드 > .srt) was saved by the browser as ~/Downloads/captions.srt; ego-browser's download event did not fire, so the file was copied from Downloads. It equals the validated SRT plus one trailing newline byte.",
+    "Public player caption button label is 자막 사용 불가 while the settings menu has manual 한국어 checked and lyric text renders; menu and sample captures are the basis, as for 17:30.",
+    "Raw .txt files hold two sections: a DOM extract written by the capture script in the Aside-style line format the verifier expects, then the unmodified ego-browser snapshot."
+  ],
+  "studio_status_raw_line": "수동 자막 수동 게시됨"
+}

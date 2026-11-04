@@ -6,6 +6,44 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- **23:00 YouTube 즉시 공개·시간 자막·고정 댓글 완료** (2026-11-04) — Wavvy24에 [`wbJQ2WgfJn4`](https://www.youtube.com/watch?v=wbJQ2WgfJn4)를 제출 1회로 올려 승인 제목 `Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00`·승인 설명/태그·썸네일·시간 자막(수동 한국어 1,490큐)·즉시 공개·승인 고정 댓글 3줄을 적용하고 다시 열어 확인했다. 공개 페이지(제목·6654초·공개·수동 `ko` 자막)를 오케스트레이터가 직접 확인했고 `verify-subtitles --stage published`·`gate --stage uploaded` PASS(state 105 `uploaded`). 저작권 검사 최종 완료 문구는 확보하지 못했다. 「숨」 미가창 줄 이유 문구를 측정값에 맞게 정정했다(SRT 불변). 기록: `SERIES/23-00/production/youtube-upload-20261104.json`.
+
+- **23:00 업로드 준비 완료: 승인 문안·가사 원문 기록·시간 자막 검증 PASS, 자막 하네스 패치** (2026-11-04) — 젠 「좋아. 업로드 하자. 바로 등록」·「자막 먼저 만들고 공개」(오케스트레이터 전달)에 따라 업로드·Studio·Suno 조작 없이 준비만 했다. 설명·태그를 승인 문안으로, 고정 댓글을 승인 3줄(「확정」, 오케스트레이터 전달)로 `SERIES/23-00/concept.md`에 반영하고 `output/upload.csv`를 하네스로 다시 만들었다(렌더 그대로, `verify-release` PASS). 17곡 가사 원문 txt(Suno 곡 화면 가사 그대로·STYLE/EXCLUDE는 스타일 기록 그대로·잠정/직접 제작 구분 보존)와 선택 ID↔txt 해시 장부 `input/suno-current-sources-2026-11-04.json`을 만들고, 옛 txt 20개는 `input/source-history/2026-11-02-historical-20-draft/`로 옮겼다(삭제 없음). `finalize-upload --keep-txt`로 가사 원문 보관 절을 채웠다. Whisper를 저장소 `.venv/`에 영구 설치(젠 「whisper는 그냥 wavvy 레포에 설치해두지.」: mlx-whisper 0.4.3, `requirements-whisper.txt`, `MASTER/ai/RUNTIME_RULES.md` Lyric Timing ASR 절)하고 17곡 단어 시각으로 시간표(회차당 745큐, 노래에서 추가 반복된 승인 가사 10줄, 노래에 없는 승인 가사 8줄은 `unsung_source_lines`)를 `input/validation/2026-11-04-timed-subtitles/`에 남겼다(인식 기반 추정). **하네스**: `wavvy_harness/subtitles.py`가 곡 길이를 정확히 합한 뒤 한 번만 반올림하고(총 길이 1 ms 이내 통과; 6자리 소수 보고서가 곡별 반올림 합과 9 ms 어긋나 거절되던 문제), 근거가 있는 미가창 줄 선언 `unsung_source_lines`를 받는다. 오케스트레이터 승인. 새 테스트 `tests/test_subtitle_timing_contract.py` 17건, 17:30 실제 데이터 `verify_prepared` 1270큐·같은 SRT 해시. 문서: `skills/wavvy-youtube-publish/references/timed-subtitles.md`, `MASTER/cli/SPEC.md` §5. 결과: `verify-subtitles --stage prepared` PASS(1,490큐, SRT sha256 `ad40da72…47fe9`), `source-final`·`render-final`·`upload-ready` 게이트·`verify-release`·`state --check` PASS, state `upload_ready`. 커밋·푸시·업로드는 하지 않았다.
+
+- **자막 테스트 `tests/test_subtitles.py` 13건 오류 수정** (2026-11-04) — 17:30 업로드 후 정리(`0861ddb`)가 지운 `report-at-subtitle-preparation.json`에 기대던 `SubtitleTests` 13건이 `FileNotFoundError`였다. 필요한 17:30 근거를 Git 이력에서 바이트 그대로 `tests/fixtures/subtitles_17_30/`(README에 커밋·SHA-256, 1.9 MB)로 고정하고 공개 화면 PNG 6개(15 MB)는 넣지 않은 채 `_clone`이 대역 파일과 해당 해시만 쓰게 했다. 단언은 그대로이며 `SERIES/` 없이도 통과한다. 전체 테스트 파일 172건 OK.
+
+- **23:00 4K 본편 영상 렌더 완료 (업로드 전)** (2026-11-04) — 현재 17곡을 가드 녹음에서 정확한 소리 구간으로 잘라 `input/tracks`에 넣고(원본 조각과 바이트 동일), 로고만 있는 본편 배경 `input/video-background.png`을 `thumb.png` 하단 띠 복원으로 만들어 시각 검수 기록과 함께 묶었다. 표준 `pack`(2회 반복·0.8초 acrossfade·-14 LUFS·-1.0 dBTP)으로 3840×2160 H.264+FLAC `output/final.mkv`(6654.0초)·`report.json`·`upload.csv`를 만들고 챕터 34개와 YouTube 문안을 concept에 기록했다(제목은 젠이 「확정. R&B 포함.」으로 승인한 `Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00`, 설명·태그·댓글은 초안). `verify-release` PASS, `state`는 render_final로 기록. `source-final`·`render-final` 게이트와 `state --check`는 새 8곡 가사 원문이 없어 Final Track Sources 보관 절 한 항목만 FAIL이다. 업로드·공개·자막 게시·커밋·푸시는 하지 않았다.
+
+- **23:00 썸네일 Lo-fi Groove 제목 제거** (2026-11-04) — 젠의 「하단의 Lo-fi Groove 텍스트 없애줘.」에 따라 글자 없는 4K 원본에서 전체 폭 띠 y1880–2035를 복원해 제목만 지웠다. 현재 구성은 Wavvy 로고와 갈색 하단 문장이다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG·명세·인계를 갱신했고, 픽셀 검사(복원 띠=원본, 변경 영역 [128,1939,597,2000] 안뿐, 3840×2160) 통과, JPEG 해시는 이전 하단 문장 전용본과 일치, 같은 JPEG를 텔레그램 56035로 전달했다.
+
+- **23:00 제목을 Baskerville 최고 굵기로 변경** (2026-11-04) — Lo-fi Groove를 설치된 Baskerville의 가장 두꺼운 직립 서체 Bold700으로 바꿨다. 크기·자간·색상·위치와 하단 문장·원본 일러스트는 그대로다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG·명세·인계를 갱신했다. 제목 굵기 범위 독립 검토 CLEAN, 같은 최종 JPEG 텔레그램 전달, 임시 파일·단기 계획 정리를 확인했다.
+
+- **23:00 제목을 하단 문장과 같은 셰리프로 변경** (2026-11-04) — Lo-fi Groove를 Baskerville Regular로 바꿨다. 문구·88.25pt·자간-5%·로고색·위치와 기존 문장·일러스트는 그대로다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG·명세·인계를 갱신했다. 제목 글꼴 범위 독립 검토 CLEAN, 같은 최종 JPEG 텔레그램 전달, 이번 임시 파일·단기 계획 정리를 확인했다.
+
+- **23:00 제목을 Lo-fi Groove로 변경** (2026-11-04) — 젠의 최신 문구를 정확히 반영했다. Pretendard800·88.25pt·자간-5%·로고색·위치와 하단 문장·원본 일러스트는 그대로다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG, 명세·현재 인계를 갱신했다. 문구 변경 범위 독립 검토 CLEAN, 같은 최종 JPEG 텔레그램 전달, 이번 임시 파일·단기 계획 정리를 확인했다.
+
+- **23:00 제목 자간 -5% 적용** (2026-11-04) — Groovy Lo-fi 자간만 -20%에서 -5%로 변경했다. Pretendard800·크기·위치·색상·하단 문장·원본 일러스트는 그대로다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG, 명세·인계를 갱신했다. 수정 범위 독립 검토 CLEAN, 동일 최종 JPEG 텔레그램 전달을 확인했다.
+
+- **23:00 Groovy Lo-fi 제목 세부 수정** (2026-11-04) — 제목을 직전의 절반88.25pt·Pretendard800·로고색#2F1522·자간-20%로 바꾸고 하단 문장 가까이 내렸다. [현재4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG를 갱신했다. 옛 제목 복원 및 기존 하단 문장·로고·일러스트 원본 보존, 수정 범위의 독립 Sol6.1/high 검토 CLEAN, 동일 최종 JPEG의 텔레그램 전달을 확인했다.
+
+- **23:00 썸네일 Groovy Lo-fi 제목 추가** (2026-11-04) — 하단 문장 위에 같은 왼쪽 기준선으로 Pretendard600·176.5pt(로고 높이의 절반 기준) 제목을 합성했다. [정식 4K 썸네일](SERIES/23-00/input/thumb.jpg)과 PNG를 갱신했다. 기존 문장·로고·장면 및 무문구 원본은 불변이며 제목 추가 범위의 독립 Sol6.1/high 검토 CLEAN, 최종 파일 텔레그램 전달을 확인했다.
+
+- **23:00 썸네일 갈색 하단 문장 합성** (2026-11-04) — 젠이 요청한 From~ 브랜드 문장을 갈색 Baskerville Regular로 왼쪽 아래에 추가했다. [정식 썸네일](SERIES/23-00/input/thumb.jpg)과 손실 없는 PNG 모두 3840×2160이다. 글자 영역 밖 PNG 픽셀과 무문구 일러스트 원본 해시 불변, 하단 합성 범위의 독립 Sol 6.1 high 검토 CLEAN을 확인했다. 음악·본편 배경·영상은 변경하지 않았다.
+
+- **23:00 최종 썸네일 input 경로 복구** (2026-11-04) — 젠의 정정대로 정식 썸네일을 [input/thumb.jpg](SERIES/23-00/input/thumb.jpg)에 저장했다. 실제 JPEG·3840×2160이며, 손실 없는 동일 최종 PNG도 `input/thumb.png`로 이동했다. production에는 글자 없는 최종 일러스트 원본 두 개와 명세만 남긴다. 경로/명세/현재 인계 기록을 갱신했고 과정 파일은 복원하지 않았다.
+
+- **23:00 아트워크 과정 정리 — 최종본만 분리 보존** (2026-11-04) — 젠의 지시로 과정 파일 147개·109,614,589바이트와 빈 폴더 8개를 삭제했다. [최종 폴더](SERIES/23-00/production/artwork-final/)에는 선택한 로고 전용 4K와 글자 없는 최종 native/4K 원본, 작은 최종 명세만 남겼다. 과정 프롬프트·시안·손글씨·미리보기·생성 사본·계획과 폐기된 input 아트워크를 삭제했다. 최종본 해시·PSD·브랜드·음원 관련 자료 불변 및 대상 부재 확인. [삭제 목록과 독립 CLEAN 검토·실측](.ai/cleanup/2026-11-04-2300-artwork-cleanup.json). 아래 과거 아트워크 항목의 과정 파일은 이번 지시에 따라 삭제됐다.
+
+- **23:00 v13 — 추가 문구 제외, 로고 전용본 선택** (2026-11-04) — 젠의 「아냐 그냥 로고만 남기자...」에 따라 현재 이미지를 [기존 로고 전용 4K](SERIES/23-00/input/thumb.png)로 정했다. 파일 해시/크기는 이전 전달본과 동일하다. Lo-fi / Groove 두 줄 시안과 투명 리소스는 선택하지 않은 이력으로 보존했다. 새 이미지 생성·원본 덮어쓰기·입력 승격 없이 현재 기록만 갱신했다.
+
+- **23:00 v13 — 로고 아래 Lo-fi / Groove 손글씨 별도 합성** (2026-11-04) — 젠의 요청대로 두 줄의 왼쪽을 기존 wavvy 로고와 x128에 맞추고 헤어색 #2F1522를 적용했다. 별도 4K 썸네일 (과정 파일 삭제됨)과 투명 글자 리소스·합성 기록을 보존했다. 일러스트 원본/확대본·로고 전용본 불변, 글자 밖 변경 픽셀 0, 새 문구 범위 독립 Sol 6.1 high CLEAN, 같은 PNG 텔레그램 55916 전달 확인. 입력 승격은 하지 않았다.
+
+- **23:00 v13 — 헤어색 wavvy 로고 좌상단 별도 합성** (2026-11-04) — 일러스트 원본을 보존하고 실제 Wavvy 로고를 헤어 표본색 #2F1522로 바꿔 왼쪽 상단에 합성했다. [별도 3840×2160 PNG](SERIES/23-00/input/thumb.png), 투명 로고/4K 레이어·명령·위치·표본·해시를 보존했다. 원본 해시 불변·로고 밖 변경 픽셀 0, 새 범위만 독립 Sol 6.1 high CLEAN, 같은 4K 텔레그램 전달 확인. LO-FI GROOVE 합성·입력 승격은 하지 않았다.
+
+- **23:00 이미지 v13 — 창문 위·오른쪽 화면 끝까지 확장한 4K 확대본** (2026-11-04) — 젠의 정정에 따라 창문을 프레임으로 감싼 잘못된 해석을 고쳤다. 유리·밤하늘이 위/오른쪽 화면 끝까지 이어지며 두 가장자리의 바깥 테두리·노란 벽 띠가 없다. 작은 캐릭터·오른쪽 배치·왼쪽 여백·크림색 신발·꽃병을 보존했다. [무문구·무로고 3840×2160 PNG](SERIES/23-00/production/artwork-final/scene-original-4k.png)는 별도 보존한 1672×941 원본의 Lanczos 확대본이다. 수정 범위만 독립 Sol 6.1 high CLEAN, 실측·해시·프롬프트·동일 4K 텔레그램 성공 영수증을 기록했다. 사용자 승인·입력 승격을 주장하지 않는다.
+
+- **23:00 사용자 17곡 브라우저 녹음·수록 순서·수노 번호 저장** (2026-11-04) — 젠이 직접 모은 현재 17 ID를 Aside 첫 Suno 탭에서 1배속으로 처음부터 자연 종료까지 녹음했다. 원곡 재생 시간 합계 55:40.12이며 원본과 앞뒤 여유를 남긴 곡별 WAV를 로컬에 보존했다. 1 작은 빛 · 2 돛 · 3 한 잔만 더 · 4 이름 · 6 마음 밖 고정, 4–15 구곡/신곡 교대, 16–17 구곡 연속 순서로 같은 17곡의 제목 번호를 저장하고 다시 열어 확인했다. 원곡 연결 확인 3곡과 원곡 후보 8곡은 원곡+리믹스 스타일을 기록하되 후보는 잠정으로 표시했다. 젠이 직접 제작했다고 답한 6곡은 현재 스타일을 기록했다. [녹음 파일과 순서](SERIES/23-00/production/browser-capture-20261104/recordings.md)와 출처·검사 기록을 남겼다. 새 17곡 한정 인계 확인 PASS·격리 검토 CLEAN이다. 공식 다운로드·음악 품질 승인·최종 편집·새 생성·발매·업로드는 포함하지 않는다. 옛 20곡 초안은 보존했다.
+
 - **음원 유통의 Google 인증·가입 직접 수행 계획** (2026-10-27) — [기존 계획 §4](.ai/plans/PLAN_music-distribution.md#4-에이전트가-직접-수행하는-실행-계획)에 Aside MCP·REPL로 로그인·계정 선택·동의·가입·자료 입력·업로드·권한 신청을 에이전트가 맡도록 반영했다. Aside 연결·탭 목록과 Google 로그인 계정 조회는 실측했고 신규 서비스 인증·가입·문의 발송·결제·발매 실행은 하지 않았다. 젠에게는 곡·비용·계약 결정과 직접 필요한 인증 단계만 요청한다.
 
 - **음원 유통 리서치·첫 발매 계획** (2026-10-27) — [계획](.ai/plans/PLAN_music-distribution.md)에 Apple Music·멜론·YouTube Music 전달과 아티스트 관리 권한 신청 순서, 유통사 비교·계약·예산·권리·공식 다운로드 조건을 정리했다. Wavvy 이름 유지 결정만 확정했고 계정·문의·결제·계약·발매 실행은 전이다. 기존 YouTube 게시·미디어 상태는 변경하지 않았다.

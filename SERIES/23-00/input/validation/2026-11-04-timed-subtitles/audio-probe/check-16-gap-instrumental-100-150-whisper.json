@@ -1,0 +1,247 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/16__골목__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "f47287ddb07010b83a7022204b0d831bf0fdd1d366289d6efb50c4a1b9f859fb",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "100.0,150.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/16__골목__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "f47287ddb07010b83a7022204b0d831bf0fdd1d366289d6efb50c4a1b9f859fb",
+  "clip_start_s": 100.0,
+  "clip_end_s": 150.0,
+  "clip_audio_sha256": "7101b19fb036f9f76a89fa866631ed9dc6eb413eb2eb36bf65c046649a1eb861",
+  "elapsed_seconds": 2.284,
+  "transcription": {
+    "text": " 남았을까요 골목 끝 편의점 불빛이 새어나와 잠깐 들을까 하다가 그냥 지나쳐요 다음 영상에서 만나요.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.24,
+        "text": " 남았을까요",
+        "tokens": [
+          50365,
+          11689,
+          9106,
+          1638,
+          16474,
+          50433
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31747135363127055,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.3548805306851097e-11,
+        "words": [
+          {
+            "word": " 남았을까요",
+            "start": 0.0,
+            "end": 1.24,
+            "probability": 0.77587890625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 1.24,
+        "end": 4.0,
+        "text": " 골목 끝 편의점",
+        "tokens": [
+          50433,
+          42142,
+          27523,
+          13932,
+          16990,
+          2785,
+          15046,
+          50565
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31747135363127055,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.3548805306851097e-11,
+        "words": [
+          {
+            "word": " 골목",
+            "start": 1.24,
+            "end": 2.86,
+            "probability": 0.833984375
+          },
+          {
+            "word": " 끝",
+            "start": 2.86,
+            "end": 3.32,
+            "probability": 0.96826171875
+          },
+          {
+            "word": " 편의점",
+            "start": 3.32,
+            "end": 4.02,
+            "probability": 0.98681640625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 4.6,
+        "end": 7.42,
+        "text": " 불빛이 새어나와",
+        "tokens": [
+          50601,
+          25746,
+          117,
+          249,
+          1129,
+          31184,
+          31134,
+          7590,
+          50740
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31747135363127055,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.3548805306851097e-11,
+        "words": [
+          {
+            "word": " 불빛이",
+            "start": 4.6,
+            "end": 6.18,
+            "probability": 0.9775390625
+          },
+          {
+            "word": " 새어나와",
+            "start": 6.18,
+            "end": 7.42,
+            "probability": 0.91064453125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 7.42,
+        "end": 10.1,
+        "text": " 잠깐 들을까 하다가",
+        "tokens": [
+          50740,
+          43479,
+          6275,
+          1638,
+          3294,
+          3369,
+          14325,
+          50869
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31747135363127055,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.3548805306851097e-11,
+        "words": [
+          {
+            "word": " 잠깐",
+            "start": 7.42,
+            "end": 8.18,
+            "probability": 0.984375
+          },
+          {
+            "word": " 들을까",
+            "start": 8.18,
+            "end": 9.34,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 하다가",
+            "start": 9.34,
+            "end": 10.1,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 10.1,
+        "end": 12.56,
+        "text": " 그냥 지나쳐요",
+        "tokens": [
+          50869,
+          11208,
+          41672,
+          31318,
+          1495,
+          51015
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31747135363127055,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.3548805306851097e-11,
+        "words": [
+          {
+            "word": " 그냥",
+            "start": 10.1,
+            "end": 11.12,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 지나쳐요",
+            "start": 11.12,
+            "end": 12.56,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 41.480000000000004,
+        "end": 45.7,
+        "text": " 다음 영상에서 만나요.",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          13,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6347122722201877,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 3.907933351920967e-11,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 41.480000000000004,
+            "end": 42.88,
+            "probability": 0.014190673828125
+          },
+          {
+            "word": " 영상에서",
+            "start": 42.88,
+            "end": 44.28,
+            "probability": 0.734375
+          },
+          {
+            "word": " 만나요.",
+            "start": 44.28,
+            "end": 45.7,
+            "probability": 0.9873046875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

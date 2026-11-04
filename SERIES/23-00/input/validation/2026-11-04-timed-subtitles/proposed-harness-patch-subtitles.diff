@@ -1,0 +1,87 @@
+--- a/wavvy_harness/subtitles.py
++++ b/wavvy_harness/subtitles.py
+@@ -135,20 +135,24 @@
+             raise ValueError
+     except (KeyError, ValueError, TypeError, IndexError) as exc:
+         raise SubtitleError("Invalid report tracks, repeat, or fade") from exc
+-    starts, cursor = [], 0
+-    for duration in lengths:
+-        starts.append(cursor)
+-        cursor += duration - fade_ms
+-    pass_offset = cursor
+-    final_duration = sum(lengths) * repeat - fade_ms * (len(tracks) * repeat - 1)
++    # Report durations may carry more than millisecond precision (unrounded ffprobe floats).
++    # Accumulate exactly and round once, so per-track rounding cannot drift the layout.
++    exact = [Decimal(str(t["duration"])) * 1000 for t in tracks]
++    fade_exact = Decimal(str(params["fade"])) * 1000
++    starts, cursor = [], Decimal(0)
++    for duration in exact:
++        starts.append(int(cursor.quantize(Decimal("1"), rounding=ROUND_HALF_UP)))
++        cursor += duration - fade_exact
++    pass_offset = int(cursor.quantize(Decimal("1"), rounding=ROUND_HALF_UP))
++    final_duration = int((sum(exact) * repeat - fade_exact * (len(tracks) * repeat - 1)).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
+     summary = report.get("summary")
+-    if not isinstance(summary, dict) or _ms(summary.get("final_duration")) != final_duration:
++    if not isinstance(summary, dict) or abs(_ms(summary.get("final_duration")) - final_duration) > 1:
+         raise SubtitleError("Report final duration differs from track/fade calculation")
+     return tracks, starts, repeat, pass_offset, final_duration
+ 
+ 
+-def _occurrences(cues: list[dict], lines: list[str], allowed: dict[int, int], track: int) -> None:
+-    expected = [(n, 1, text) for n, text in enumerate(lines, 1)]
++def _occurrences(cues: list[dict], lines: list[str], allowed: dict[int, int], track: int, unsung: frozenset = frozenset()) -> None:
++    expected = [(n, 1, text) for n, text in enumerate(lines, 1) if n not in unsung]
+     observed = []
+     for cue in cues:
+         if not isinstance(cue, dict):
+@@ -174,12 +178,39 @@
+     if sorted(observed) != sorted(expected):
+         raise SubtitleError(f"Track {track}: missing or unauthorized sung occurrence")
+     first = [line for line, occurrence, _ in observed if occurrence == 1]
+-    if first != list(range(1, len(lines) + 1)):
++    if first != [n for n in range(1, len(lines) + 1) if n not in unsung]:
+         raise SubtitleError(f"Track {track}: source lyric order changed")
+     for line in allowed:
+         occurrences = [occurrence for source_line, occurrence, _ in observed if source_line == line]
+         if occurrences != sorted(occurrences):
+             raise SubtitleError(f"Track {track}: repeated lyric order changed")
++
++
++def _unsung_lines(item: dict, lines: list[str], evidence: dict, extras: dict, track: int) -> frozenset:
++    """Approved source lines that the audio does not sing (direction lines, skipped repeats).
++
++    Each needs its exact approved text, a reason, and hashed audio evidence; it never appears
++    in the SRT and cannot also be an approved sung repeat.
++    """
++    declared = item.get("unsung_source_lines", [])
++    if not isinstance(declared, list):
++        raise SubtitleError(f"Track {track}: malformed unsung_source_lines")
++    found = set()
++    for record in declared:
++        try:
++            line, text, reason, refs = record["source_line"], record["text"], record["reason"], record["evidence"]
++            if type(line) is not int or not 1 <= line <= len(lines) or text != lines[line - 1] or line in found:
++                raise ValueError
++            if not isinstance(reason, str) or not reason.strip() or line in extras:
++                raise ValueError
++            if not isinstance(refs, list) or not refs or any(ref not in evidence for ref in refs):
++                raise ValueError
++        except (KeyError, TypeError, ValueError) as exc:
++            raise SubtitleError(f"Track {track}: invalid unsung source line declaration") from exc
++        found.add(line)
++    if len(found) >= len(lines):
++        raise SubtitleError(f"Track {track}: every source line declared unsung")
++    return frozenset(found)
+ 
+ 
+ def _observed_anchor(series: Path, evidence_dir: Path, record: dict, cues: list[dict], evidence: dict[str, str]) -> None:
+@@ -277,7 +308,8 @@
+         local = item.get("cues")
+         if not isinstance(local, list) or not local:
+             raise SubtitleError(f"Track {number}: no timed cues")
+-        _occurrences(local, source[number], extras[number], number)
++        unsung = _unsung_lines(item, source[number], evidence, extras[number], number)
++        _occurrences(local, source[number], extras[number], number, unsung)
+         previous_end = -1
+         for cue in local:
+             begin, end = cue.get("relative_start_ms"), cue.get("relative_end_ms")

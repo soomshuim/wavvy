@@ -1,0 +1,348 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/12__숨__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "b8ac408883570b2a52104e1bed48e74b9e9454eb40c109c3872d1b483ea46f9e",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "70.0,105.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/12__숨__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "b8ac408883570b2a52104e1bed48e74b9e9454eb40c109c3872d1b483ea46f9e",
+  "clip_start_s": 70.0,
+  "clip_end_s": 105.0,
+  "clip_audio_sha256": "96c95710430023b4e2447d315d38aa891d995d3d2877f4b21bab5e9cfccf35b6",
+  "elapsed_seconds": 2.371,
+  "transcription": {
+    "text": " 음 청큰 쉬어갈게 안에서 소리가 나 누가 기다려 발소리를 들었나 봐 문이 열리려 해 무슨 소리가 들려 따뜻한 냄새가 나 여기가 내 자리야 드디어 왔어",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.7,
+        "text": " 음 청큰 쉬어갈게",
+        "tokens": [
+          50365,
+          15179,
+          24902,
+          8005,
+          108,
+          37687,
+          3103,
+          27657,
+          1810,
+          50578
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 음",
+            "start": 0.0,
+            "end": 0.48,
+            "probability": 0.178955078125
+          },
+          {
+            "word": " 청큰",
+            "start": 0.48,
+            "end": 2.26,
+            "probability": 0.50927734375
+          },
+          {
+            "word": " 쉬어갈게",
+            "start": 2.26,
+            "end": 3.7,
+            "probability": 0.91015625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 13.54,
+        "end": 17.84,
+        "text": " 안에서 소리가 나 누가 기다려",
+        "tokens": [
+          50578,
+          4811,
+          4885,
+          21652,
+          1453,
+          3948,
+          33851,
+          31431,
+          5743,
+          51265
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 안에서",
+            "start": 13.54,
+            "end": 14.94,
+            "probability": 0.962890625
+          },
+          {
+            "word": " 소리가",
+            "start": 14.94,
+            "end": 15.88,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 나",
+            "start": 15.88,
+            "end": 16.22,
+            "probability": 0.97705078125
+          },
+          {
+            "word": " 누가",
+            "start": 16.22,
+            "end": 16.84,
+            "probability": 0.9853515625
+          },
+          {
+            "word": " 기다려",
+            "start": 16.84,
+            "end": 17.84,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 17.84,
+        "end": 21.16,
+        "text": " 발소리를 들었나 봐",
+        "tokens": [
+          51265,
+          13825,
+          17921,
+          18167,
+          6275,
+          1170,
+          19505,
+          15507,
+          51431
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 발소리를",
+            "start": 17.84,
+            "end": 19.32,
+            "probability": 0.93896484375
+          },
+          {
+            "word": " 들었나",
+            "start": 19.32,
+            "end": 20.76,
+            "probability": 0.9072265625
+          },
+          {
+            "word": " 봐",
+            "start": 20.76,
+            "end": 21.16,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 21.16,
+        "end": 23.4,
+        "text": " 문이 열리려 해",
+        "tokens": [
+          51431,
+          13086,
+          1129,
+          38787,
+          7134,
+          5743,
+          11683,
+          51540
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 문이",
+            "start": 21.16,
+            "end": 22.16,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 열리려",
+            "start": 22.16,
+            "end": 22.82,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 해",
+            "start": 22.82,
+            "end": 23.4,
+            "probability": 0.98388671875
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 23.4,
+        "end": 25.52,
+        "text": " 무슨 소리가 들려",
+        "tokens": [
+          51540,
+          22712,
+          21652,
+          1453,
+          42186,
+          5743,
+          51644
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 무슨",
+            "start": 23.4,
+            "end": 24.06,
+            "probability": 0.75146484375
+          },
+          {
+            "word": " 소리가",
+            "start": 24.06,
+            "end": 24.88,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 들려",
+            "start": 24.88,
+            "end": 25.52,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 25.52,
+        "end": 28.04,
+        "text": " 따뜻한 냄새가 나",
+        "tokens": [
+          51644,
+          15933,
+          250,
+          119,
+          3049,
+          49985,
+          1453,
+          3948,
+          51777
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29730526317249645,
+        "compression_ratio": 1.2213740458015268,
+        "no_speech_prob": 1.0980332094956413e-11,
+        "words": [
+          {
+            "word": " 따뜻한",
+            "start": 25.52,
+            "end": 26.64,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 냄새가",
+            "start": 26.64,
+            "end": 27.6,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 나",
+            "start": 27.6,
+            "end": 28.04,
+            "probability": 0.97314453125
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2804,
+        "start": 28.04,
+        "end": 32.58,
+        "text": " 여기가 내 자리야 드디어 왔어",
+        "tokens": [
+          50365,
+          7543,
+          1453,
+          6918,
+          15905,
+          2250,
+          4248,
+          13356,
+          40803,
+          17766,
+          3103,
+          50615
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2962106191194974,
+        "compression_ratio": 0.8333333333333334,
+        "no_speech_prob": 1.6277134154418782e-11,
+        "words": [
+          {
+            "word": " 여기가",
+            "start": 28.04,
+            "end": 29.22,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 내",
+            "start": 29.22,
+            "end": 29.56,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 자리야",
+            "start": 29.56,
+            "end": 30.48,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 드디어",
+            "start": 30.48,
+            "end": 31.24,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 왔어",
+            "start": 31.24,
+            "end": 32.58,
+            "probability": 0.9990234375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

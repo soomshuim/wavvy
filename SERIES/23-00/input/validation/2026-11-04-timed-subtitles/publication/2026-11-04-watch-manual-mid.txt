@@ -1,0 +1,236 @@
+# Evidence for https://www.youtube.com/watch?v=wbJQ2WgfJn4 sample "middle" captured 2026-11-04T12:59:06.966Z with ego-browser (ego lite) v2.2.0
+# Section 1: DOM extract written by the capture script from the live caption window (.ytp-caption-segment text), in the line format wavvy_harness/subtitles.py expects.
+- title: "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy | 23:00 - YouTube" [url=https://www.youtube.com/watch?v=wbJQ2WgfJn4]
+- main:
+  - complementary:
+    - generic "난 뭐, 늘 똑같지" [ref=c1]
+# player time shown: 30:00 / 1:50:54; getCurrentTime=1800.130399; playerState=2 (2 = paused)
+# Section 2: native ego-browser page.snapshot() (viewport), unmodified
+[p1 "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy..." | space "wavvy 23:00 YouTube upload"(3708): 1 managed, 0 untracked — p1* "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy..."]
+root
+  container
+    banner
+      container
+        container
+          button "가이드" [ref=157, loc=css:button[aria-label="가이드"]]
+            svg_root
+          container
+            anchor [ref=158, url=https://www.youtube.com/]
+              svg_root
+            text "KR"
+        container
+          search
+            container
+              form
+                comboboxgrouping [ref=159, loc=css:input[name="search_query"]]
+                  text "검색"
+              button [ref=160]
+                image
+            button "Search" [ref=161, loc=css:button[aria-label="Search"]]
+              svg_root
+          button "음성으로 검색" [ref=162, loc=css:button[aria-label="음성으로 검색"]]
+            svg_root
+        container
+          button "만들기" [ref=163, loc=css:button[aria-label="만들기"]]
+            svg_root
+            text "만들기"
+          button "알림" [ref=164, loc=css:button[aria-label="알림"]]
+            svg_root
+          button "계정 메뉴" [ref=165, loc=css:button[aria-label="계정 메뉴"]]
+            image
+    navigation
+    main
+      container
+        container
+          container
+            anchor [ref=166]
+            complementary
+              container "YouTube 동영상 플레이어" [ref=167]
+                video [ref=168]
+                container [ref=219]
+                  text "난 뭐, 늘 똑같지"
+                container
+                  slider "탐색 슬라이더" [ref=174, loc=role:slider[name="탐색 슬라이더"]]
+                  container
+                    container
+                      button "재생(k)" [ref=175, loc=css:button[aria-label="재생(k)"]]
+                        svg_root
+                      button "음소거(m)" [ref=176, loc=css:button[aria-label="음소거(m)"]]
+                        svg_root
+                      button "30 분 0 초/1 시간 50 분 54 초" [ref=177, loc=role:button[name="30 분 0 초/1 시간 50 분 54 초"]]
+                        text "30:00"
+                        text "/"
+                        text "1:50:54"
+                      button [ref=178]
+                        container "9. 지금 가는 길"
+                          text "9. 지금 가는 길"
+                        svg_root
+                    container
+                      container
+                        button "자동재생 사용 설정" [ref=179, loc=css:button[aria-label="자동재생 사용 설정"]]
+                        button "자막 사용 불가" [ref=180, loc=css:button[aria-label="자막 사용 불가"]]
+                          svg_root
+                        button "설정" [ref=181, loc=css:button[aria-label="설정"]]
+                          svg_root
+                      container
+                        button "영화관 모드(t)" [ref=182, loc=css:button[aria-label="영화관 모드(t)"]]
+                          svg_root
+                        button "전체 화면(f)" [ref=183, loc=css:button[aria-label="전체 화면(f)"]]
+                          svg_root
+          container
+            container
+              heading
+                text "Playlist | 커피, 바람, 밤, Groove ☕ | LO-FI POP · R&B | 노동요 · 카페 · 매장 · 작업 | Wavvy |"
+                text "23:00"
+              image "AI: AI로 생성된 콘텐츠"
+                svg_root
+                text "AI"
+            container
+              container
+                container
+                  anchor [ref=184, url=https://www.youtube.com/@wavvy24]
+                    image
+                  container
+                    anchor [ref=185, url=https://www.youtube.com/@wavvy24]
+                      text "Wavvy24"
+                    container "구독자 681명"
+                      text "구독자 681명"
+                  anchor "분석" [ref=186, loc=css:a[aria-label="분석"], url=https://www.youtube.com/analytics#;fi=v-wbJQ2WgfJn4]
+                    text "분석"
+                anchor "동영상 수정" [ref=187, loc=css:a[aria-label="동영상 수정"], url=https://studio.youtube.com/video/wbJQ2WgfJn4/edit]
+                  text "동영상 수정"
+              container
+                container
+                  button "이 동영상에 좋아요 표시" [ref=188]
+                    svg_root
+                    text "0"
+                  button "공유" [ref=189]
+                    svg_root
+                container
+                  anchor "프로모션 만들기" [ref=190, url=https://studio.youtube.com/channel/UC4R4NGwp19Y4lbdNs2HQVcg/content/promotions?d=pcd&videoId=wbJQ2WgfJn4&promotionEntryPoint=PROMOTION_ENTRY_POINT_VIDEO_WATCH_PAGE]
+                    svg_root
+                  button "질문하기" [ref=191]
+                    svg_root
+                  button "재생목록에 저장" [ref=192]
+                    svg_root
+                button "추가 작업" [ref=193]
+                  svg_root
+        container
+          container
+            tablist
+              tab [ref=194]
+                text "모두"
+              tab [ref=195]
+                text "Wavvy24 제공"
+              tab [ref=196]
+                text "관련 콘텐츠"
+              tab [ref=197]
+                text "추천"
+              tab [ref=198]
+                text "라이브"
+              tab [ref=199]
+                text "최근에 업로드된 동영상"
+            button "다음" [ref=200]
+              svg_root
+          container
+            container
+              anchor [ref=201, url=https://www.youtube.com/watch?v=paoi9v1OniA&list=RDpaoi9v1OniA&start_radio=1&pp=oAcB0gcJCSkMAYcqIYzv]
+                image
+                image "3분 44초"
+                  svg_root
+                  text "3:44"
+              container
+                container
+                  heading "DANCE DANCE"
+                    anchor "DANCE DANCE 3분 44초" [ref=202, url=https://www.youtube.com/watch?v=paoi9v1OniA&list=RDpaoi9v1OniA&start_radio=1&pp=oAcB0gcJCSkMAYcqIYzv]
+                      text "DANCE DANCE"
+                  container
+                    group
+                      text "DAY6"
+                      container "공식 아티스트 채널"
+                        svg_root
+                    group
+                      svg_root
+                      container "조회수 1059만회"
+                        text "1059만"
+                      container "9년 전"
+                        text "9년 전"
+                button "추가 작업" [ref=203]
+                  svg_root
+            container
+              anchor [ref=204, url=https://www.youtube.com/watch?v=1OZDaRhHHyM&list=PLc6FplT5eSWFEx6ItHJ4htf2_yqrxuOxZ&pp=8AUB]
+                container
+                  image
+                  container
+                    svg_root
+                    text "동영상 51개"
+              container
+                container
+                  heading "독서"
+                    anchor [ref=205, url=https://www.youtube.com/watch?v=1OZDaRhHHyM&list=PLc6FplT5eSWFEx6ItHJ4htf2_yqrxuOxZ&pp=8AUB]
+                      text "독서"
+                  container
+                    group
+                      anchor [ref=206, url=https://www.youtube.com/@yonghuhong8218]
+                        text "yonghu hong"
+                      anchor [ref=207, url=https://www.youtube.com/@yonghuhong8218]
+                        text "재생목록"
+                    group
+                      anchor [ref=208, loc=href:/playlist?list=PLc6FplT5eSWFEx6ItHJ4htf2_yqrxuOxZ, url=https://www.youtube.com/playlist?list=PLc6FplT5eSWFEx6ItHJ4htf2_yqrxuOxZ]
+                        text "전체 재생목록 보기"
+                button "추가 작업" [ref=209]
+                  svg_root
+            container
+              anchor [ref=210, url=https://www.youtube.com/watch?v=WIXGUuISSbs&list=RDWIXGUuISSbs&start_radio=1&pp=oAcB]
+                image
+                image "2시간 10분 3초"
+                  svg_root
+                  text "2:10:03"
+              container
+                container
+                  heading "[playlist] 독서를 돕는 재즈 모음집, 집중력을 높이는 재즈 음악, 도서관에서 자주 들리는 재즈 음악 | Book & Reading Jazz"
+                    anchor "[playlist] 독서를 돕는 재즈 모음집, 집중력을 높이는 재즈 음악, 도서관에서 자주 들리는 재즈 음악 | Book & Reading Jazz 2시간 10분" [ref=211, url=https://www.youtube.com/watch?v=WIXGUuISSbs&list=RDWIXGUuISSbs&start_radio=1&pp=oAcB]
+                      text "[playlist] 독서를 돕는 재즈 모음집, 집중력을 높이는 재즈 음악, 도서관에서 자주 들리는 재즈 음악 | Book & Reading Jazz"
+                  container
+                    group
+                      text "Jazz Hub"
+                      text "외 3명"
+                    group
+                      svg_root
+                      container "조회수 180만회"
+                        text "180만"
+                      container "스트리밍 시간: 2년 전"
+                        text "스트리밍 시간: 2년 전"
+                button "추가 작업" [ref=212]
+                  svg_root
+            container
+              anchor [ref=213, url=https://www.youtube.com/watch?v=DEWzT1geuPU&list=RDDEWzT1geuPU&start_radio=1&pp=oAcB]
+                image
+                image "3시간 33분 22초"
+                  svg_root
+                  text "3:33:22"
+              container
+                container
+                  heading "Rainy Day ☔ Chilling Your Mood 🎧 Chill Lo-fi Hip Hop to Study / Relax / Work 🌲 Lofi Coffee ☕"
+                    anchor "Rainy Day ☔ Chilling Your Mood 🎧 Chill Lo-fi Hip Hop to Study / Relax / Work 🌲 Lofi Coffee ☕ 3시간 33분" [ref=214, url=https://www.youtube.com/watch?v=DEWzT1geuPU&list=RDDEWzT1geuPU&start_radio=1&pp=oAcB]
+                      text "Rainy Day ☔ Chilling Your Mood 🎧 Chill Lo-fi Hip Hop to Study / Relax / Work 🌲 Lofi Coffee ☕"
+                  container
+                    group
+                      text "Lofi Coffee"
+                    group
+                      svg_root
+                      container "조회수 459만회"
+                        text "459만"
+                      container "스트리밍 시간: 2년 전"
+                        text "스트리밍 시간: 2년 전"
+                button "추가 작업" [ref=215]
+                  svg_root
+            container
+              anchor [ref=216, url=https://www.youtube.com/watch?v=p6vUfoeSEn8&list=RDp6vUfoeSEn8&start_radio=1&pp=oAcB]
+                image
+                image "신규"
+                  text "신규"
+              heading "Cyberpunk Chill Radio 🌙 Lo-Fi Synthwave & Ambient Beats for Coding / Deep Focus [24/7 Live] 作業・勉強用"
+                anchor "Cyberpunk Chill Radio 🌙 Lo-Fi Synthwave & Ambient Beats for Coding / Deep Focus [24/7 Live] 作業・勉強用 11시간 1분" [ref=217, url=https://www.youtube.com/watch?v=p6vUfoeSEn8&list=RDp6vUfoeSEn8&start_radio=1&pp=oAcB]
+                  text "Cyberpunk Chill Radio 🌙 Lo-Fi Synthwave & Ambient Beats for Coding / Deep Focus [24/7 Live] 作業・勉強用"
+[more content below the viewport: scrollY=0, viewport 939 / page 4063 px; scroll or use snapshot({ scope: "full_page" })]

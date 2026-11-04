@@ -1,0 +1,1216 @@
+{
+  "schema_version": 1,
+  "status": "technical_collection_complete_title_numbering_complete",
+  "requested_count": 17,
+  "valid_full_song_recordings": 17,
+  "capture_order_is_provisional": true,
+  "final_album_order_selected": true,
+  "browser_control": "Aside / mcp__aside__repl",
+  "audio_scope": "ScreenCaptureKit exact Aside application PID 25877 / bundle at.studio.AsideBrowser; all app audio, not tab isolation; microphone excluded",
+  "capture_transport": "real-time browser playback at rate 1; not an official download",
+  "system_volume_or_output_device_changed": false,
+  "probe": {
+    "song_id": "3c9cb777-7397-4daa-bc46-a0516be1db8f",
+    "title": "비가 그쳤네 (Lo-Fi Remix)",
+    "status": "invalid_all_zero_signal",
+    "path": "work/2026-11-04-2300-browser-capture/probe-01.wav",
+    "sha256": "4b928642bc342ec1b9784628f71160df5837b17546894f918488d470d3b5948a",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_f32le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "15.100000"
+      }
+    },
+    "recorder_log": "work/2026-11-04-2300-browser-capture/probe-01.log",
+    "timing_path": "work/2026-11-04-2300-browser-capture/probe-01.wav.timing.json",
+    "raw_peak": 0,
+    "raw_rms": 0,
+    "write_error": "none"
+  },
+  "observations": {
+    "suno_media_clock_advanced": true,
+    "suno_audio_muted": false,
+    "suno_audio_volume": 1,
+    "suno_playback_rate": 1,
+    "ego_audio_service_pid": 67558,
+    "coreaudio_running_output_during_p1_and_p2": false,
+    "default_output_device": "MacBook Pro speakers, 48000 Hz, 2 channels",
+    "root_cause_confirmed": false,
+    "browser_default_sound_setting": "allow",
+    "browser_blocked_sound_sites_display": "추가된 사이트 없음",
+    "playback_currently_paused": true
+  },
+  "evidence": [
+    "work/2026-11-04-2300-browser-capture/coreaudio-ego-playing.json",
+    "work/2026-11-04-2300-browser-capture/coreaudio-p2-playing.json",
+    "work/2026-11-04-2300-browser-capture/audio-devices.json",
+    "SERIES/23-00/production/browser-capture-20261104/browser-sound-settings.json"
+  ],
+  "user_question_pending": null,
+  "direct_listening_performed": false,
+  "musical_quality_approval": false,
+  "user_reply": {
+    "answer": "지금 직접 확인하기 어려워요",
+    "question": "젠, 지금 ego에서 「비가 그쳤네」 재생 소리가 실제로 들리나요? 재생 막대는 움직이지만, macOS에서는 ego의 소리 출력이 잡히지 않고 있어요.",
+    "received_date_kst": "2026-11-04",
+    "audibility_confirmed": false
+  },
+  "resume_condition": null,
+  "style_records": {
+    "json": "SERIES/23-00/production/browser-capture-20261104/style-provenance.json",
+    "markdown": "SERIES/23-00/production/browser-capture-20261104/style-provenance.md",
+    "tracks": 17,
+    "remix_style_and_lyrics_preserved": 17,
+    "confirmed_original_pairings": 3,
+    "provisional_original_pairings": 8,
+    "missing_original_pairings": 0,
+    "user_declared_direct_creation": 6
+  },
+  "browser_override": {
+    "user_instruction": "전에는 창 자체를 앞에다 두는건 상관이 없었어. 그러면 aside로 시도해봐.",
+    "followup": "suno를 aside  브라우저 첫 탭에 띄워놨어.",
+    "date_kst": "2026-11-04",
+    "product": "Aside",
+    "connection": "MCP mcp__aside__repl",
+    "profile_id": "be41d9e1-db47-4e5c-b567-be8ce72163cc",
+    "target_id": "49405ACFA00DF89F4F32FD5A8096A482",
+    "first_tab_verified": true,
+    "pid": 25877,
+    "bundle_identifier": "at.studio.AsideBrowser"
+  },
+  "outdated_question": "The request to keep ego in foreground was superseded by the user-authorized Aside trial.",
+  "probe_history": [
+    {
+      "name": "probe-01",
+      "browser": "ego lite",
+      "path": "work/2026-11-04-2300-browser-capture/probe-01.wav",
+      "sha256": "4b928642bc342ec1b9784628f71160df5837b17546894f918488d470d3b5948a",
+      "format": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.100000"
+        }
+      },
+      "log": "work/2026-11-04-2300-browser-capture/probe-01.log",
+      "timing": "work/2026-11-04-2300-browser-capture/probe-01.wav.timing.json",
+      "raw_peak": 0.0,
+      "raw_rms": 0.0,
+      "status": "invalid_all_zero_signal",
+      "write_error": "none"
+    },
+    {
+      "name": "probe-02",
+      "browser": "ego lite",
+      "path": "work/2026-11-04-2300-browser-capture/probe-02.wav",
+      "sha256": "61b0ad778f5a7656a1a62f794e69c1b090f1976ba7fef26c03097e930966d4c2",
+      "format": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.060000"
+        }
+      },
+      "log": "work/2026-11-04-2300-browser-capture/probe-02.log",
+      "timing": "work/2026-11-04-2300-browser-capture/probe-02.wav.timing.json",
+      "raw_peak": 0.0,
+      "raw_rms": 0.0,
+      "status": "invalid_all_zero_signal",
+      "write_error": "none"
+    },
+    {
+      "name": "probe-03",
+      "browser": "ego lite",
+      "path": "work/2026-11-04-2300-browser-capture/probe-03.wav",
+      "sha256": "6244476a9d364a5868ac93b0363901517546b156f8b019a5324debeb4d075deb",
+      "format": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.040000"
+        }
+      },
+      "log": "work/2026-11-04-2300-browser-capture/probe-03.log",
+      "timing": "work/2026-11-04-2300-browser-capture/probe-03.wav.timing.json",
+      "raw_peak": 0.0,
+      "raw_rms": 0.0,
+      "status": "invalid_all_zero_signal",
+      "write_error": "none"
+    },
+    {
+      "name": "probe-04",
+      "browser": "ego lite",
+      "path": "work/2026-11-04-2300-browser-capture/probe-04.wav",
+      "sha256": "1b33bc2a1fdde621fd4e3d6f1ebd709a21a1f7102a9b2dde79dc11fcb8b3fdf3",
+      "format": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.180000"
+        }
+      },
+      "log": "work/2026-11-04-2300-browser-capture/probe-04.log",
+      "timing": "work/2026-11-04-2300-browser-capture/probe-04.wav.timing.json",
+      "raw_peak": 0.0,
+      "raw_rms": 0.0,
+      "status": "invalid_all_zero_signal",
+      "write_error": "none"
+    },
+    {
+      "name": "aside-probe-01",
+      "browser": "Aside",
+      "path": "work/2026-11-04-2300-browser-capture/aside-probe-01.wav",
+      "sha256": "5dc898a59794b7c2d23d6c32f4c858daccd3d91d7347864ac165814008db1e91",
+      "format": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_f32le",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.100000"
+        }
+      },
+      "log": "work/2026-11-04-2300-browser-capture/aside-probe-01.log",
+      "timing": "work/2026-11-04-2300-browser-capture/aside-probe-01.wav.timing.json",
+      "raw_peak": 0.7339432239532471,
+      "raw_rms": 0.1217483248931482,
+      "status": "signal_probe_passed",
+      "write_error": "none"
+    }
+  ],
+  "signal_probe_passed": "aside-probe-01",
+  "active_capture_song_id": null,
+  "ego_diagnosis": {
+    "root_cause_confirmed": false,
+    "minimized_capture_window_observed": true,
+    "normal_window_restored": true,
+    "foreground_app_ego_seen_after_activation": true,
+    "foreground_app_at_probe04_end": "ghostty",
+    "user_correction": "전에는 창 자체를 앞에다 두는건 상관이 없었어. 그러면 aside로 시도해봐.",
+    "ego_player_paused_before_aside": true
+  },
+  "recordings": [
+    {
+      "song_id": "3c9cb777-7397-4daa-bc46-a0516be1db8f",
+      "title": "비가 그쳤네 (Lo-Fi Remix)",
+      "capture_index_provisional": 1,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/3c9cb777-7397-4daa-bc46-a0516be1db8f/attempt-01/raw.wav",
+      "raw_sha256": "c054f720d6260f1babe6a46e2a33a872cd7027873b31890656a51853b276d73f",
+      "raw_duration_seconds": 255.24,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/3c9cb777-7397-4daa-bc46-a0516be1db8f/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "62530a9560cc86c25a5572b1717ffc7d160df90b292d638e57aa20f353a91a51",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 227.21,
+      "source_media_duration_seconds": 225.96,
+      "source_range_raw_seconds_estimate": [
+        25.131758213043213,
+        251.09175821304322
+      ],
+      "export_raw_sample_range": [
+        1182324,
+        12088404
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.002613067626953125,
+      "browser_playing_to_ended_wall_seconds": 226.06339999997616,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "source_peak": 0.9811563491821289,
+      "source_rms": 0.16410072846858573,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/3c9cb777-7397-4daa-bc46-a0516be1db8f-attempt-01.json",
+      "timeline_sha256": "69af8746559ac87a8c2414ef112145503720d7d037ccf0b1eaea61999768bec6",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/3c9cb777-7397-4daa-bc46-a0516be1db8f/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/3c9cb777-7397-4daa-bc46-a0516be1db8f/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "8bb04a4511712ee477d05a10fce4663a87186032ac218ddf9da383c2f541f57e",
+      "album_position": 5,
+      "suno_title_after_numbering": "5. 비가 그쳤네 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "f182958f-51dc-4d1e-9e1a-1b407d7abb33",
+      "title": "손 잡아도 될까 (Lo-Fi Remix)",
+      "capture_index_provisional": 2,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/f182958f-51dc-4d1e-9e1a-1b407d7abb33/attempt-01/raw.wav",
+      "raw_sha256": "0db27537427180a895708481eaa7507c955ea0a2cc69c27edf5ace5bdfdce2ba",
+      "raw_duration_seconds": 218.16,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/f182958f-51dc-4d1e-9e1a-1b407d7abb33/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "9308b0bcda42d4497897721c9e787e2dad15c95254ed78a661aa3d1a8a63023a",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 212.85,
+      "source_media_duration_seconds": 211.6,
+      "source_range_raw_seconds_estimate": [
+        1.3667291666666668,
+        212.96672916666665
+      ],
+      "export_raw_sample_range": [
+        41603,
+        10258403
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0026390552520751953,
+      "browser_playing_to_ended_wall_seconds": 211.66979999995232,
+      "max_audio_pts_gap_seconds": 0.015333291976712644,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.015333291976712644,
+          "relative_to_source_seconds": [
+            -0.4020602259552106,
+            -0.38672693399712443
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9470980167388916,
+      "source_rms": 0.18348971551906207,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/f182958f-51dc-4d1e-9e1a-1b407d7abb33-attempt-01.json",
+      "timeline_sha256": "c91ca0d5a6a88a4c3fc13e6e2316bd6f611c46b3de6f0c116eee35910d10af66",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/f182958f-51dc-4d1e-9e1a-1b407d7abb33/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/f182958f-51dc-4d1e-9e1a-1b407d7abb33/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "e174785d9163a1080fb862c427d85d52589aa147d2c6530ce4e62b5fd6e81a41",
+      "album_position": 7,
+      "suno_title_after_numbering": "7. 손 잡아도 될까 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "15d1eaaf-2450-4314-8252-cc9aede23fc8",
+      "title": "한 잔만 더 (Lo-Fi Remix)",
+      "capture_index_provisional": 3,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/15d1eaaf-2450-4314-8252-cc9aede23fc8/attempt-01/raw.wav",
+      "raw_sha256": "902da9a4962e3c96b4a046d342039b765a5f06789ccd452376d0c78da10de877",
+      "raw_duration_seconds": 237.08,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/15d1eaaf-2450-4314-8252-cc9aede23fc8/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "d6cae5d05f47ad705e15fef7386d7bc6d13b3e4c949d7d36f345ee0fcb5af993",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 221.05,
+      "source_media_duration_seconds": 219.8,
+      "source_range_raw_seconds_estimate": [
+        8.272291666666666,
+        228.07229166666667
+      ],
+      "export_raw_sample_range": [
+        373070,
+        10983470
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.011820077896118164,
+      "browser_playing_to_ended_wall_seconds": 219.858,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.993882417678833,
+      "source_rms": 0.13731171938811124,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/15d1eaaf-2450-4314-8252-cc9aede23fc8-attempt-01.json",
+      "timeline_sha256": "6ea08da5c57d17c722e8ab8bd4df6f8834c7be50d23c30cc9997f9661ad13a8a",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/15d1eaaf-2450-4314-8252-cc9aede23fc8/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/15d1eaaf-2450-4314-8252-cc9aede23fc8/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "341c09b266ad63042ea6ecbad4a71a3d5a7d1412b85d668f05bafc6b7987e71c",
+      "album_position": 3,
+      "suno_title_after_numbering": "3. 한 잔만 더 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "7b0944f7-dddf-483b-b41c-beae8d5fe3ee",
+      "title": "지금 가는 길 (Lo-Fi Remix)",
+      "capture_index_provisional": 4,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/7b0944f7-dddf-483b-b41c-beae8d5fe3ee/attempt-01/raw.wav",
+      "raw_sha256": "32d2678577d1c9e8b16414b8e9d98a8f9821edb9a8be82f66c50ea751711433a",
+      "raw_duration_seconds": 212.46,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/7b0944f7-dddf-483b-b41c-beae8d5fe3ee/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "77d6fbb18351fa924b4bb1192772e5c490345b70ff8428359012cc1110a56710",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 202.21,
+      "source_media_duration_seconds": 200.96,
+      "source_range_raw_seconds_estimate": [
+        1.2237083333333334,
+        202.18370833333333
+      ],
+      "export_raw_sample_range": [
+        34738,
+        9740818
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.002995729446411133,
+      "browser_playing_to_ended_wall_seconds": 201.03189999997616,
+      "max_audio_pts_gap_seconds": 0.01604162496048957,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.01604162496048957,
+          "relative_to_source_seconds": [
+            -0.259742789901793,
+            -0.24370116495992988
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 1.0190085172653198,
+      "source_rms": 0.15068036600783616,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/7b0944f7-dddf-483b-b41c-beae8d5fe3ee-attempt-01.json",
+      "timeline_sha256": "c825dec66a066c2d03eae7f58bdef93b8f118c15536d20eb38320eaa9a13f243",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/7b0944f7-dddf-483b-b41c-beae8d5fe3ee/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/7b0944f7-dddf-483b-b41c-beae8d5fe3ee/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "6dbb7d46836bc1102491d5c6a514e3547acde233df841d3ce4654eade2f2d21b",
+      "album_position": 9,
+      "suno_title_after_numbering": "9. 지금 가는 길 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "c3903598-814e-476d-95a0-f721d2307233",
+      "title": "나도 네가 신경 쓰여 (Lo-Fi Remix)",
+      "capture_index_provisional": 5,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/c3903598-814e-476d-95a0-f721d2307233/attempt-01/raw.wav",
+      "raw_sha256": "2d10703e450661a32eb90f8970e5256703b4cc821a707892acd90687307a37bf",
+      "raw_duration_seconds": 205.06,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/c3903598-814e-476d-95a0-f721d2307233/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "2ed69cd6738443b05e2d55a596352ecb27f5a94c3ca0bbb9d5d3ffc7fcf4ffbb",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 193.73,
+      "source_media_duration_seconds": 192.48,
+      "source_range_raw_seconds_estimate": [
+        1.219,
+        193.699
+      ],
+      "export_raw_sample_range": [
+        34512,
+        9333552
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.002814054489135742,
+      "browser_playing_to_ended_wall_seconds": 192.54730000001192,
+      "max_audio_pts_gap_seconds": 0.015208292014431208,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.015208292014431208,
+          "relative_to_source_seconds": [
+            -0.2542013513157144,
+            -0.23899305931990966
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 1.0034983158111572,
+      "source_rms": 0.1551502911585553,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/c3903598-814e-476d-95a0-f721d2307233-attempt-01.json",
+      "timeline_sha256": "1b6c496468f73c1a01eb1f54ed1c08305607f8fc0dd20dfc46195f51ab8aa5b2",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/c3903598-814e-476d-95a0-f721d2307233/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/c3903598-814e-476d-95a0-f721d2307233/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "1424b7a30bdcbb843b1c6be10f163dca40708e01e8766a17edf6cf6ef82ca0be",
+      "album_position": 11,
+      "suno_title_after_numbering": "11. 나도 네가 신경 쓰여 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "a1c4a6f1-9773-435c-875d-6a01de45d746",
+      "title": "자꾸 네가 신경쓰여 (Lo-Fi Remix)",
+      "capture_index_provisional": 6,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/a1c4a6f1-9773-435c-875d-6a01de45d746/attempt-01/raw.wav",
+      "raw_sha256": "a25d72273d371e33dc6b2670285beef986de1bdef6793a852dded5ec153bfa79",
+      "raw_duration_seconds": 220.82,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/a1c4a6f1-9773-435c-875d-6a01de45d746/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "9687cdd5b58292fc7da372c064a98bfe41da74da8424a90d9696e114ea1e9c02",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 211.13,
+      "source_media_duration_seconds": 209.88,
+      "source_range_raw_seconds_estimate": [
+        1.3255833333333333,
+        211.20558333333332
+      ],
+      "export_raw_sample_range": [
+        39628,
+        10173868
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0029599666595458984,
+      "browser_playing_to_ended_wall_seconds": 209.96909999996424,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.8548051714897156,
+      "source_rms": 0.1677535375800532,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/a1c4a6f1-9773-435c-875d-6a01de45d746-attempt-01.json",
+      "timeline_sha256": "a17ec88800f24a2f1c4a0024a3591357c51083d691c18252fa85e98f4c34111c",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/a1c4a6f1-9773-435c-875d-6a01de45d746/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/a1c4a6f1-9773-435c-875d-6a01de45d746/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "c5b588b878d137702a8c61ac0461dd23632ab66d6cb16172ee701d6fb34f06f6",
+      "album_position": 13,
+      "suno_title_after_numbering": "13. 자꾸 네가 신경쓰여 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "5bb566bd-ac12-4943-bf04-7ff9ac03c75b",
+      "title": "돛 (Lo-Fi Remix)",
+      "capture_index_provisional": 7,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/5bb566bd-ac12-4943-bf04-7ff9ac03c75b/attempt-01/raw.wav",
+      "raw_sha256": "618b5826a2fba51e464def24bd6d6dd73e8e4bb4e106aec75055c4075f12fba1",
+      "raw_duration_seconds": 208.56,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/5bb566bd-ac12-4943-bf04-7ff9ac03c75b/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "dea20bb143fcbfa745bb1a44a09bd63dbb5c546f7884009e183b4dfe32a05fc5",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 200.01,
+      "source_media_duration_seconds": 198.76,
+      "source_range_raw_seconds_estimate": [
+        1.3213125,
+        200.0813125
+      ],
+      "export_raw_sample_range": [
+        39423,
+        9639903
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.002921581268310547,
+      "browser_playing_to_ended_wall_seconds": 198.82739999997617,
+      "max_audio_pts_gap_seconds": 0.01583329200046137,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.01583329200046137,
+          "relative_to_source_seconds": [
+            -0.35714927094522864,
+            -0.3413159789633937
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.8760668039321899,
+      "source_rms": 0.16804623951760592,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/5bb566bd-ac12-4943-bf04-7ff9ac03c75b-attempt-01.json",
+      "timeline_sha256": "320bf64fe31938245f20c63f20dd8d68b069305cbe82387db18d09534523d60e",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/5bb566bd-ac12-4943-bf04-7ff9ac03c75b/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/5bb566bd-ac12-4943-bf04-7ff9ac03c75b/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "f17d8540b345d5385dbc7ed74b90d881a435fd619ac9d93aa13b9b3017136286",
+      "album_position": 2,
+      "suno_title_after_numbering": "2. 돛 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "2b2a7a3b-eb6f-4497-a470-2c9133a543eb",
+      "title": "약속 (Lo-Fi Remix)",
+      "capture_index_provisional": 8,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/2b2a7a3b-eb6f-4497-a470-2c9133a543eb/attempt-01/raw.wav",
+      "raw_sha256": "b36ac36cdb4456cbe797c7f953622b52c12f181658480b8536c73469b8252226",
+      "raw_duration_seconds": 225.02,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/2b2a7a3b-eb6f-4497-a470-2c9133a543eb/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "6e96c8adb5f9d89fda06a61f7501e50bb0f942a70620e087202d5b2bfb7a19fa",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 216.05,
+      "source_media_duration_seconds": 214.8,
+      "source_range_raw_seconds_estimate": [
+        1.2279791666666666,
+        216.02797916666665
+      ],
+      "export_raw_sample_range": [
+        34943,
+        10405343
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0032072067260742188,
+      "browser_playing_to_ended_wall_seconds": 214.846,
+      "max_audio_pts_gap_seconds": 0.01566662495722994,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.01566662495722994,
+          "relative_to_source_seconds": [
+            -0.2636439161724411,
+            -0.2479772912338376
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 1.0016521215438843,
+      "source_rms": 0.16134048317290012,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/2b2a7a3b-eb6f-4497-a470-2c9133a543eb-attempt-01.json",
+      "timeline_sha256": "bd8a64584122532f75a7e270ee17629bafdc1d6631df0cff47161547f90c5516",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/2b2a7a3b-eb6f-4497-a470-2c9133a543eb/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/2b2a7a3b-eb6f-4497-a470-2c9133a543eb/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "a2f5e2919d0f01cadbd736e1c24ac8f085abef0c9b4db1762704961beb778651",
+      "album_position": 15,
+      "suno_title_after_numbering": "15. 약속 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "1406e9df-89fb-4daa-a46b-0c019d2dc7ab",
+      "title": "작은 빛 (Lo-Fi Remix)",
+      "capture_index_provisional": 9,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/1406e9df-89fb-4daa-a46b-0c019d2dc7ab/attempt-01/raw.wav",
+      "raw_sha256": "8823a6bed6c3b6586d81c70683320a05e0ad77da649ca2edc74a0ddc9014050a",
+      "raw_duration_seconds": 267.56,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/1406e9df-89fb-4daa-a46b-0c019d2dc7ab/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "c4971aed7955f7977238ecae9a19d42bb360d8b8278a5d45fa8d9821665c97e8",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 219.53,
+      "source_media_duration_seconds": 218.28,
+      "source_range_raw_seconds_estimate": [
+        1.3667083333333334,
+        219.64670833333332
+      ],
+      "export_raw_sample_range": [
+        41602,
+        10579042
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0030167102813720703,
+      "browser_playing_to_ended_wall_seconds": 218.3685,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9566132426261902,
+      "source_rms": 0.1634397011506356,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/1406e9df-89fb-4daa-a46b-0c019d2dc7ab-attempt-01.json",
+      "timeline_sha256": "09a5cbe5fd74ab2621044284994b63e25f589a6dbc86188d4bd2ffdfc5020cb5",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/1406e9df-89fb-4daa-a46b-0c019d2dc7ab/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/1406e9df-89fb-4daa-a46b-0c019d2dc7ab/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "5acd2513cee164987425e08c1b008d2e9aa4785949467870ad0e1990b944e09a",
+      "album_position": 1,
+      "suno_title_after_numbering": "1. 작은 빛 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "2bdaaa83-7145-4808-b57f-f0b98f7788f0",
+      "title": "먼지 (Lo-Fi Remix)",
+      "capture_index_provisional": 10,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/2bdaaa83-7145-4808-b57f-f0b98f7788f0/attempt-01/raw.wav",
+      "raw_sha256": "482e60fd3abdcd9c862911ec95a3e109daac0e421aaeb0fa36b4a4ec1884afb2",
+      "raw_duration_seconds": 207.54,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/2bdaaa83-7145-4808-b57f-f0b98f7788f0/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "79787fafc899f78ab52a9f99553bd14024c95c76ff0f12c5a36a3497d6b9b508",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 201.13,
+      "source_media_duration_seconds": 199.88,
+      "source_range_raw_seconds_estimate": [
+        1.3719375,
+        201.2519375
+      ],
+      "export_raw_sample_range": [
+        41853,
+        9696093
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0028433799743652344,
+      "browser_playing_to_ended_wall_seconds": 199.96280000001192,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 1.0014523267745972,
+      "source_rms": 0.17067206718647543,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/2bdaaa83-7145-4808-b57f-f0b98f7788f0-attempt-01.json",
+      "timeline_sha256": "71e61449223ea2ca0b9b0ae6bb2d54f1b58f30a26eec89dde46a9a9772f0859a",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/2bdaaa83-7145-4808-b57f-f0b98f7788f0/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/2bdaaa83-7145-4808-b57f-f0b98f7788f0/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "9abfb14b5135b010f6a1cf44f32ad42ba727d3de7485f0e199dca316e5851410",
+      "album_position": 8,
+      "suno_title_after_numbering": "8. 먼지 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "9fe398d7-ed43-4e77-8489-9c3d67a0d657",
+      "title": "산책 (Lo-Fi Remix)",
+      "capture_index_provisional": 11,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/9fe398d7-ed43-4e77-8489-9c3d67a0d657/attempt-01/raw.wav",
+      "raw_sha256": "17873857f14af10fded5b3a03cd44b31b82d92c065d9c9c607f7d1bf61e25685",
+      "raw_duration_seconds": 163.0,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/9fe398d7-ed43-4e77-8489-9c3d67a0d657/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "a8e0379cbc2ed3ac8d9278d574e7a7bb3e2a6250ac2bf72b0fccd9c82a4f572c",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 154.33,
+      "source_media_duration_seconds": 153.08,
+      "source_range_raw_seconds_estimate": [
+        1.2840625,
+        154.3640625
+      ],
+      "export_raw_sample_range": [
+        37635,
+        7445475
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0024797916412353516,
+      "browser_playing_to_ended_wall_seconds": 153.1183000000119,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9777738451957703,
+      "source_rms": 0.1703499777240008,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/9fe398d7-ed43-4e77-8489-9c3d67a0d657-attempt-01.json",
+      "timeline_sha256": "cd3814f3962cee75f2431df09d74c62ed3ec0dc4d82961415b2dc8844294d346",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/9fe398d7-ed43-4e77-8489-9c3d67a0d657/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/9fe398d7-ed43-4e77-8489-9c3d67a0d657/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "20450c7efd6ce28610a45b54ba6bcdd83d91d08999ce93f9450a713958b21e25",
+      "album_position": 10,
+      "suno_title_after_numbering": "10. 산책 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "36d296ff-f0af-4b44-a5ad-0bc7cfef0982",
+      "title": "숨 (Lo-Fi Remix)",
+      "capture_index_provisional": 12,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/36d296ff-f0af-4b44-a5ad-0bc7cfef0982/attempt-01/raw.wav",
+      "raw_sha256": "ae3edb26d7544f1069bbe5fbec9a286e74ca3f1c251bdf4bf7710836136f2f1a",
+      "raw_duration_seconds": 225.7,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/36d296ff-f0af-4b44-a5ad-0bc7cfef0982/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "4ff9f93ad4c55cb515f0cfa3154f61dcbab74bd6b3f645e6befa50c35ab3fdc4",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 216.05,
+      "source_media_duration_seconds": 214.8,
+      "source_range_raw_seconds_estimate": [
+        1.3444791666666667,
+        216.14447916666666
+      ],
+      "export_raw_sample_range": [
+        40535,
+        10410935
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0029535293579101562,
+      "browser_playing_to_ended_wall_seconds": 214.83969999998808,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.8612364530563354,
+      "source_rms": 0.1577990245309822,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/36d296ff-f0af-4b44-a5ad-0bc7cfef0982-attempt-01.json",
+      "timeline_sha256": "13d6efdd06cbf8e62b6b79bc6c4fcb9beb1d8fc4733cf03f78dd0e109d438af0",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/36d296ff-f0af-4b44-a5ad-0bc7cfef0982/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/36d296ff-f0af-4b44-a5ad-0bc7cfef0982/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "84e8149e1bb3be8895537d603a4bafbb451918b80938eea2201b065fbbab28b4",
+      "album_position": 12,
+      "suno_title_after_numbering": "12. 숨 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "4708df3d-6f0a-4602-bea4-ccb734cf03db",
+      "title": "이름 (Lo-Fi Remix)",
+      "capture_index_provisional": 13,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/4708df3d-6f0a-4602-bea4-ccb734cf03db/attempt-01/raw.wav",
+      "raw_sha256": "3233deed4fe49a2e63e986f4b6ba9f3fe3c617e63f500a0315f579045688eacd",
+      "raw_duration_seconds": 224.08,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/4708df3d-6f0a-4602-bea4-ccb734cf03db/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "2103c7a43589e5e42dc038d302db60fbdf3b70345f5a659bc889efd7d84256ee",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 215.21,
+      "source_media_duration_seconds": 213.96,
+      "source_range_raw_seconds_estimate": [
+        1.2988125,
+        215.2588125
+      ],
+      "export_raw_sample_range": [
+        38343,
+        10368423
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0031228065490722656,
+      "browser_playing_to_ended_wall_seconds": 214.01530000001193,
+      "max_audio_pts_gap_seconds": 0.015229125001933425,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.015229125001933425,
+          "relative_to_source_seconds": [
+            -0.33405008661793545,
+            -0.3188209616346285
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.8832604885101318,
+      "source_rms": 0.18353375594974317,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/4708df3d-6f0a-4602-bea4-ccb734cf03db-attempt-01.json",
+      "timeline_sha256": "f3c040a3178b6fda78d9ee16e1777a2cb8babad16573bdd9e7f82f8a045b43d3",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/4708df3d-6f0a-4602-bea4-ccb734cf03db/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/4708df3d-6f0a-4602-bea4-ccb734cf03db/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "c45e1a857f56646367db38a4b227e8c6ee9afc0596e00e3476dd76eaf9799764",
+      "album_position": 4,
+      "suno_title_after_numbering": "4. 이름 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "17a24019-4412-4443-b4e7-6d305d539958",
+      "title": "마음 밖 (Lo-Fi Remix)",
+      "capture_index_provisional": 14,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/17a24019-4412-4443-b4e7-6d305d539958/attempt-01/raw.wav",
+      "raw_sha256": "d196dfb0c99c82feb1d056bb0418e00174c0c9702ef00d1046a1e9122be267fb",
+      "raw_duration_seconds": 190.76,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/17a24019-4412-4443-b4e7-6d305d539958/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "8f2e733255a3b2737128bfadcbcf208d52f0c9ee72964e649081e0c6213b922b",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 188.81,
+      "source_media_duration_seconds": 187.56,
+      "source_range_raw_seconds_estimate": [
+        1.3201041666666666,
+        188.88010416666665
+      ],
+      "export_raw_sample_range": [
+        39365,
+        9102245
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0026679039001464844,
+      "browser_playing_to_ended_wall_seconds": 187.63760000002384,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9748445749282837,
+      "source_rms": 0.16985944764362115,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/17a24019-4412-4443-b4e7-6d305d539958-attempt-01.json",
+      "timeline_sha256": "1738ec1ed28ece86a2f812db89c79849c856d61c76a1152c2adab302166348f4",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/17a24019-4412-4443-b4e7-6d305d539958/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/17a24019-4412-4443-b4e7-6d305d539958/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "4a8d6be79bb34c8432f36b230cfec2d5cadf080b301d370cab525f3df04aded8",
+      "album_position": 6,
+      "suno_title_after_numbering": "6. 마음 밖 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "0908a587-be93-46c5-a8e6-46428f3efba5",
+      "title": "물안개 (Lo-Fi Remix)",
+      "capture_index_provisional": 15,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/0908a587-be93-46c5-a8e6-46428f3efba5/attempt-01/raw.wav",
+      "raw_sha256": "ade9f1342d78cce19297ae04759659e453cde0dacaa8060ab08215726b2f7c7b",
+      "raw_duration_seconds": 148.86,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/0908a587-be93-46c5-a8e6-46428f3efba5/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "b2db2d46c14ab7e8ac6cda2947190265086d2e4559af42397279c216f898542c",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 139.65,
+      "source_media_duration_seconds": 138.4,
+      "source_range_raw_seconds_estimate": [
+        1.3140208333333334,
+        139.71402083333334
+      ],
+      "export_raw_sample_range": [
+        39073,
+        6742273
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.002335071563720703,
+      "browser_playing_to_ended_wall_seconds": 138.45989999997616,
+      "max_audio_pts_gap_seconds": 0.015354125022422522,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.015354125022422522,
+          "relative_to_source_seconds": [
+            -0.3493839631555602,
+            -0.3340298381517641
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9675489664077759,
+      "source_rms": 0.14022528773328313,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/0908a587-be93-46c5-a8e6-46428f3efba5-attempt-01.json",
+      "timeline_sha256": "019f2cfe78d6b506dad31f380487542447d78ce2269404b0534cb28ad81be523",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/0908a587-be93-46c5-a8e6-46428f3efba5/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/0908a587-be93-46c5-a8e6-46428f3efba5/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "4aef139df0fa9117291f58c5dad4aecd7679d92cdb3c4d81f8308ef5c39accea",
+      "album_position": 14,
+      "suno_title_after_numbering": "14. 물안개 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "aca55231-9e58-469d-b0ce-c29cb767eaa5",
+      "title": "골목 (Lo-Fi Remix)",
+      "capture_index_provisional": 16,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/aca55231-9e58-469d-b0ce-c29cb767eaa5/attempt-01/raw.wav",
+      "raw_sha256": "5dfb6629136e9095228614b2e54485986b8368981bc4520630ef435989108be3",
+      "raw_duration_seconds": 216.92,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/aca55231-9e58-469d-b0ce-c29cb767eaa5/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "4f43c7ddafccc56e2deb28357f187ca21f646dc714ebbd7f25a66eb7608e5665",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 208.01,
+      "source_media_duration_seconds": 206.76,
+      "source_range_raw_seconds_estimate": [
+        1.3604791666666667,
+        208.12047916666666
+      ],
+      "export_raw_sample_range": [
+        41303,
+        10025783
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0030460357666015625,
+      "browser_playing_to_ended_wall_seconds": 206.82769999998808,
+      "max_audio_pts_gap_seconds": 3.958120983749147e-11,
+      "pts_discontinuities_outside_source": [],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.9243156909942627,
+      "source_rms": 0.16279176933079728,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/aca55231-9e58-469d-b0ce-c29cb767eaa5-attempt-01.json",
+      "timeline_sha256": "60791ac2363d00a98775d3004adfd309690a3e51a9c60bb56d38fea785807d30",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/aca55231-9e58-469d-b0ce-c29cb767eaa5/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/aca55231-9e58-469d-b0ce-c29cb767eaa5/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "958749e453516e9c47b85a30353e0b3668058970433887a71bc35ce64faf70f7",
+      "album_position": 16,
+      "suno_title_after_numbering": "16. 골목 (Lo-Fi Remix)"
+    },
+    {
+      "song_id": "5654d747-4921-416f-9b72-755bf27d734a",
+      "title": "물결 (Lo-Fi Remix)",
+      "capture_index_provisional": 17,
+      "attempt": 1,
+      "status": "technical_capture_verified",
+      "browser": "Aside MCP / first user Suno tab",
+      "raw_path": "work/2026-11-04-2300-browser-capture/captures/5654d747-4921-416f-9b72-755bf27d734a/attempt-01/raw.wav",
+      "raw_sha256": "d57f90b6854d21727f12c12a4049f397357082cae664fa0c1f2a76f08fbd5a4d",
+      "raw_duration_seconds": 144.94,
+      "song_wav_path": "work/2026-11-04-2300-browser-capture/captures/5654d747-4921-416f-9b72-755bf27d734a/attempt-01/song-with-guards.wav",
+      "song_wav_sha256": "1fedef99cdd766962bf13b00451f6deb6561a99bef55b29c5e1cb24cbf708457",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_f32le",
+      "song_wav_duration_seconds": 134.41,
+      "source_media_duration_seconds": 133.16,
+      "source_range_raw_seconds_estimate": [
+        1.317375,
+        134.477375
+      ],
+      "export_raw_sample_range": [
+        39234,
+        6490914
+      ],
+      "boundary_guards_seconds": [
+        0.5,
+        0.75
+      ],
+      "boundary_caveat": "Media clock / native PTS estimate; output latency uncalibrated. Guards retained; raw capture preserved. Not a final edit.",
+      "source_started_at_zero": true,
+      "natural_end_observed": true,
+      "playback_rate": 1,
+      "browser_clock_origin_p01_p99_spread_seconds": 0.0022401809692382812,
+      "browser_playing_to_ended_wall_seconds": 133.23740000003576,
+      "max_audio_pts_gap_seconds": 0.01510412503965199,
+      "pts_discontinuities_outside_source": [
+        {
+          "buffer_after": 48,
+          "gap_seconds": 0.01510412503965199,
+          "relative_to_source_seconds": [
+            -0.3524883284699172,
+            -0.33738420344889164
+          ],
+          "scope": "outside_source_playback"
+        }
+      ],
+      "source_audio_pts_continuous": true,
+      "source_peak": 0.8708762526512146,
+      "source_rms": 0.17056986286665973,
+      "interior_exact_zero_runs_at_least_1s": [],
+      "listener_review_required_for_flagged_silence": false,
+      "musical_quality_approved": false,
+      "official_download": false,
+      "timeline_path": "SERIES/23-00/production/browser-capture-20261104/browser-timelines/5654d747-4921-416f-9b72-755bf27d734a-attempt-01.json",
+      "timeline_sha256": "67f5b84163d0ea932c8a41a429e94d941c3fc99c4922c54fe88281733b7a20b5",
+      "recorder_log": "work/2026-11-04-2300-browser-capture/captures/5654d747-4921-416f-9b72-755bf27d734a/attempt-01/capture.log",
+      "timing_path": "work/2026-11-04-2300-browser-capture/captures/5654d747-4921-416f-9b72-755bf27d734a/attempt-01/raw.wav.timing.json",
+      "timing_sha256": "f0c861e649663ee57166984d180ca87c5886cead54998e0aed236916e8a8915f",
+      "album_position": 17,
+      "suno_title_after_numbering": "17. 물결 (Lo-Fi Remix)"
+    }
+  ],
+  "ego_task_space_id": 6,
+  "probe_role": "First failed ego probe retained as historical diagnosis; successful Aside probe is in probe_history.",
+  "continuity_note": "Track 02 had a 15.333 ms native timestamp gap 0.402–0.387 seconds before the browser source origin, in exact-zero pre-playback audio. Map source boundaries through native buffer timestamps to frame offsets; reject any gap intersecting actual source playback. Raw and pre-playback gap evidence are retained.",
+  "sequence_ref": "SERIES/23-00/production/browser-capture-20261104/sequence.json",
+  "collection_completed_at": "2026-11-04T02:12:35.977439+00:00",
+  "source_media_duration_total_seconds": 3340.12,
+  "guarded_wav_duration_total_seconds": 3361.37,
+  "numbering_completed_at": "2026-11-04T02:25:55.849Z",
+  "numbering_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-sequence-numbering-20261104.json",
+  "final_handoff_review": {
+    "status": "CLEAN",
+    "confirmed_critical_high": 0,
+    "reviewer": "/root/review_2300_capture",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "reviewed_at": "2026-11-04T02:33:24.093099+00:00",
+    "record": "SERIES/23-00/production/browser-capture-20261104/review-20261104.md"
+  },
+  "handoff_verification_ref": "SERIES/23-00/production/browser-capture-20261104/handoff-verification.json"
+}

@@ -1,0 +1,1231 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-04T00:55:48.789396+00:00",
+  "source_catalog": "SERIES/23-00/production/browser-capture-20261104/source-catalog.json",
+  "capture_order_is_provisional": true,
+  "final_album_order_selected": true,
+  "scope": "17 exact user-workspace songs; not the earlier 20-song agent draft",
+  "status": "recorded_with_8_provisional_original_pairings",
+  "counts": {
+    "tracks": 17,
+    "remix_style_and_lyrics_preserved": 17,
+    "confirmed_original_pairings": 3,
+    "provisional_original_pairings": 8,
+    "missing_original_pairings": 0,
+    "user_declared_direct_creation": 6
+  },
+  "recording_status": "17 full-song browser recordings technically verified. See capture-manifest.json; musical quality is not approved.",
+  "assembly_rules": {
+    "combined_style": "For 11 original/candidate pairings: original.style_positive + two LF newlines + remix.style_positive. For six user-declared directly created songs: current displayed style only, based on user-style-clarification.json.",
+    "exclude": "Comma-delimited items prefixed with U+2011, U+2212 or ASCII minus are EXCLUDE; combine original then remix, retaining first occurrence case-insensitively. Raw texts retain all duplicates and punctuation.",
+    "prose_negatives": "Unprefixed prose such as no falsetto remains in STYLE.",
+    "source_limitation": "Suno displayed Styles are preserved, not authenticated generation inputs. Reconstructed STYLE is requested documentation, not a new generation submission.",
+    "pairing_limitation": "Only exact observed Suno parent links confirm ancestry. Matching title and lyric content is evidence for a provisional pairing, not proof of exact parent version.",
+    "prompt_conflicts": "Original and remix text may specify different tempos or directions. Preserve both without inventing precedence or claiming measured audio properties."
+  },
+  "search_limitations": [
+    "Library search found originals/candidates for 11 of 17 remixes, not an exhaustive proof of absence for the others.",
+    "Trash exact-title search for 비가 그쳤네 showed 14 alternatives. Four later exact-title searches in trash-search.json were sampled before a verified debounce result; do not use them as negative evidence. Keyword searches in trash-keyword-search.json were bounded and timed out without matching rows.",
+    "library-search-incomplete-attempt01.json is an invalid initial extraction and not evidence of missing originals."
+  ],
+  "tracks": [
+    {
+      "capture_index_provisional": 1,
+      "song_id": "3c9cb777-7397-4daa-bc46-a0516be1db8f",
+      "title": "비가 그쳤네 (Lo-Fi Remix)",
+      "duration_ui": "3:46",
+      "original": null,
+      "remix": {
+        "song_id": "3c9cb777-7397-4daa-bc46-a0516be1db8f",
+        "title": "비가 그쳤네 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/3c9cb777-7397-4daa-bc46-a0516be1db8f",
+        "observed_at": "2026-11-04T00:43:24.527Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/3c9cb777-7397-4daa-bc46-a0516be1db8f.json",
+        "ui_evidence_sha256": "7360aa7d45772b1502d101ac479d4a6f5ab9b08055e2650e2f994a59a5ab640a",
+        "style_raw": "Lo-fi modern indie R&B ballad, intimate Korean female lead with clear conversational diction and grounded chest voice, mellow Rhodes chords over a relaxed half-time groove, soft dusty kick and brushed snare, restrained swung hats, rounded bass, sparse clean-guitar details, subtle tape warmth and gently blurred keyboard texture, Begin with a short, softened instrumental opening; keep verses close and understated, let the pre-chorus widen subtly, and lift the chorus with longer sustained notes and fuller low end, Strip back the bridge, then return to a warm, spacious final chorus and a quiet reflective outro; close dry vocal, uncluttered mix, gentle dynamics",
+        "style_raw_sha256": "86021eb5f423e228d5e469d05ad4c856bb9110df01b17cb99f608034198ca4f1",
+        "style_positive": "Lo-fi modern indie R&B ballad, intimate Korean female lead with clear conversational diction and grounded chest voice, mellow Rhodes chords over a relaxed half-time groove, soft dusty kick and brushed snare, restrained swung hats, rounded bass, sparse clean-guitar details, subtle tape warmth and gently blurred keyboard texture, Begin with a short, softened instrumental opening; keep verses close and understated, let the pre-chorus widen subtly, and lift the chorus with longer sustained notes and fuller low end, Strip back the bridge, then return to a warm, spacious final chorus and a quiet reflective outro; close dry vocal, uncluttered mix, gentle dynamics",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\ninstrumental\n\n[Verse 1]\n우산을 두고\n창가에 앉아\n늘 마시던 걸\n한 잔 시켰어\n\n흐린 창밖에\n버스가 멈춰\n몇 사람 내리고\n다시 출발해\n\n[Pre-Chorus]\n커피가 나오기 전에\n물을 한 모금 마셔\n여긴 컵도 테이블도\n그때 쓰던 그대로네\n\n[Chorus]\n비가 그쳤네\n언제 그친 걸까\n밖을 보고 있었는데\n다른 생각을 했나 봐\n\n커피는 다 마셨고\n일어나면 되는데\n늘 마주 앉던 쪽으로\n한 번 더 눈이 가\n\n[Instrumental Break]\n\n[Verse 2]\n넌 앉자마자\n젖은 소매를 접어\n난 냅킨 몇 장\n네 앞에 놓았지\n\n왜 말 안 했어\n어깨도 젖었네\n넌 한번 보더니\n금방 마른댔어\n\n[Pre-Chorus]\n내 옷은 젖지도 않고\n신발도 멀쩡했지\n우산이 작다던 말에\n그냥 그런 줄 알았어\n\n[Chorus]\n비가 그쳤네\n언제 그친 걸까\n밖을 보고 있었는데\n다른 생각을 했나 봐\n\n커피는 다 마셨고\n일어나면 되는데\n늘 마주 앉던 쪽으로\n한 번 더 눈이 가\n\n[Bridge]\n비 오는 날 나가면서\n내 신발부터 보던 너\n그거 물이 잘 샌다며\n다른 걸 신고 오랬지\n\n오늘도 현관 앞에서\n신발을 한번 바꿨어\n누가 뭐라 한 것도 아닌데\n비가 온다길래\n\n[Final Chorus]\n비가 그쳤네\n길은 아직 젖었네\n유리창에 비친 내가\n소매 끝을 내려\n\n커피는 다 마셨고\n가방도 챙겼는데\n늘 마주 앉던 쪽으로\n마지막으로 눈이 가\n\n[Outro]\n문 옆에 둔 우산을\n챙겨 밖으로 나와\n물 고인 데를 피해\n천천히 걸었어",
+        "lyrics_raw_sha256": "778288ff40876859d0e030985f7e2765f45085de116ec98edb6021c61437654a"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/3c9cb777-7397-4daa-bc46-a0516be1db8f.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-search.json"
+        ],
+        "note": "Trash contains 14 same-title songs with different Styles. No exact Suno parent link identifies one; none was chosen.",
+        "unselected_same_title_candidates": [
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/32963be6-ef62-4704-b92b-da6bfa7a057a"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/d6cf96a4-199e-4774-9e36-d71050e5425e"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/6f3e81ff-6973-4f5c-a46c-d992202703cc"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/ba2a0052-49ff-4ad0-8b9b-cfbf09305c18"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/ca9c175e-256b-43e9-9694-625ab8718fd5"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/fd67316d-7b00-47aa-bf77-06c38051cecf"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/5718e074-0b9e-484a-a212-e5bebb5a98c2"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/c4978458-4251-4070-b316-ebc31e26f3ca"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/98cf67a7-58e0-4b07-95df-95716d32692e"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/1b103a91-d2e3-4e78-8fbd-d62c0d4187f4"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/125b825b-ad9f-4f5d-810c-9c22ae4b33a6"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/497057be-f23b-4229-980a-3ab75b7bae53"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/395ea7a3-c43f-4385-9c53-387c76a0b3eb"
+          },
+          {
+            "title": "비가 그쳤네",
+            "url": "https://suno.com/song/ce44622c-cdac-4b97-9885-954996825acf"
+          }
+        ],
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Lo-fi modern indie R&B ballad, intimate Korean female lead with clear conversational diction and grounded chest voice, mellow Rhodes chords over a relaxed half-time groove, soft dusty kick and brushed snare, restrained swung hats, rounded bass, sparse clean-guitar details, subtle tape warmth and gently blurred keyboard texture, Begin with a short, softened instrumental opening; keep verses close and understated, let the pre-chorus widen subtly, and lift the chorus with longer sustained notes and fuller low end, Strip back the bridge, then return to a warm, spacious final chorus and a quiet reflective outro; close dry vocal, uncluttered mix, gentle dynamics",
+      "combined_style_sha256": "86021eb5f423e228d5e469d05ad4c856bb9110df01b17cb99f608034198ca4f1",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 5,
+      "suno_title_after_numbering": "5. 비가 그쳤네 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 2,
+      "song_id": "f182958f-51dc-4d1e-9e1a-1b407d7abb33",
+      "title": "손 잡아도 될까 (Lo-Fi Remix)",
+      "duration_ui": "3:32",
+      "original": null,
+      "remix": {
+        "song_id": "f182958f-51dc-4d1e-9e1a-1b407d7abb33",
+        "title": "손 잡아도 될까 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/f182958f-51dc-4d1e-9e1a-1b407d7abb33",
+        "observed_at": "2026-11-04T00:43:25.810Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/f182958f-51dc-4d1e-9e1a-1b407d7abb33.json",
+        "ui_evidence_sha256": "d620d6bd8b108e7e46d4ce43ee435f1af8c9e6d44057a4c6da8d04fd4f0b9544",
+        "style_raw": "Modern indie R&B with lo-fi neo-soul color: relaxed syncopated pocket, softened dusty Rhodes chords, rounded sub-bass, restrained kick and dry rim clicks, delicate shuffled hats, occasional muted guitar and finely chopped digital-key textures, Keep verses intimate and spacious with conversational low-mid male chest-voice delivery; let the pre-chorus open slightly, then give the chorus a warm, memorable lift without crowding it, A stripped bridge builds gently into the final chorus, followed by a soft close, Close-miked centered lead vocal, clean diction, restrained processing, subtle tape softness on instruments, clear contemporary mix and controlled low end",
+        "style_raw_sha256": "483748436030ae5ae5e80678b294992566608b4492ef0d7256f727ebfbcfabe0",
+        "style_positive": "Modern indie R&B with lo-fi neo-soul color: relaxed syncopated pocket, softened dusty Rhodes chords, rounded sub-bass, restrained kick and dry rim clicks, delicate shuffled hats, occasional muted guitar and finely chopped digital-key textures, Keep verses intimate and spacious with conversational low-mid male chest-voice delivery; let the pre-chorus open slightly, then give the chorus a warm, memorable lift without crowding it, A stripped bridge builds gently into the final chorus, followed by a soft close, Close-miked centered lead vocal, clean diction, restrained processing, subtle tape softness on instruments, clear contemporary mix and controlled low end",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\ninstrumental\n\n[Verse 1]\n저녁 먹고 나와\n나란히 걷다\n이야길 나누다가\n살짝 스친 우리 손\n\n괜리 민망해져서\n주머니에 손을 넣어\n넌 하던 말을 이어가\n대답은 조금 늦어져\n\n[Pre-Chorus]\n무슨 생각 하느냐며\n고개를 돌려 보는 너\n아냐, 듣고 있었다고\n괜히 말끝을 흐려\n\n[Chorus]\n손 잡아도 될까\n몇 번을 생각하다\n너는 앞을 보는데\n나는 네 손을 봐\n\n손 잡아도 될까\n그냥 먼저 물어볼까\n말은 못 하고 나란히\n말은 못 하고 나란히\n\n[Instrumental Break]\n\n[Verse 2]\n집에 가긴 좀 이르대\n한 바퀴만 더 걷자고\n아까부터 생각했던\n그 말을 꺼낼까\n\n좁은 길을 지날 때면\n네가 조금 더 가까워\n스치듯 가까운 손에\n대답은 조금 늦어져\n\n[Pre-Chorus]\n이쯤이면 괜찮을까\n나만 이렇게 떨리나\n주머니 속 손을 꺼내\n너와 거리를 좁혀\n\n[Chorus]\n손 잡아도 될까\n몇 번을 생각하다\n너는 앞을 보는데\n나는 네 손을 봐\n\n손 잡아도 될까\n그냥 먼저 물어볼까\n말은 못 하고 나란히\n말은 못 하고 나란히\n\n[Bridge]\n이쪽으로 가자면서\n네가 내 소매를 당겨\n그러자고 대답하고\n잠깐 걸음을 멈춰\n\n손을 잡아도 되냐고\n겨우 작게 물었더니\n너는 대답하는 대신\n내 손을 먼저 잡아\n\n[Final Chorus]\n손 잡아도 될까\n한참 고민했는데\n너는 내 얼굴을 봐\n나는 괜히 웃음이 나\n\n손 잡아도 될까\n먼저 물어보길 잘했어\n잡은 손은 그대로\n네 걸음에 맞춰\n\n[Outro]\n조금 더 걸을까\n아까 그 길로 돌아\n집에 데려다줄게\n천천히 가자\n천천히 가자",
+        "lyrics_raw_sha256": "c994b14258f9a68375fc6843242eb6c32fff91c2f6ffc9a31472620b00467185"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/f182958f-51dc-4d1e-9e1a-1b407d7abb33.json"
+        ],
+        "note": "No original song selected. A matching title alone does not identify the exact remix parent.",
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Modern indie R&B with lo-fi neo-soul color: relaxed syncopated pocket, softened dusty Rhodes chords, rounded sub-bass, restrained kick and dry rim clicks, delicate shuffled hats, occasional muted guitar and finely chopped digital-key textures, Keep verses intimate and spacious with conversational low-mid male chest-voice delivery; let the pre-chorus open slightly, then give the chorus a warm, memorable lift without crowding it, A stripped bridge builds gently into the final chorus, followed by a soft close, Close-miked centered lead vocal, clean diction, restrained processing, subtle tape softness on instruments, clear contemporary mix and controlled low end",
+      "combined_style_sha256": "483748436030ae5ae5e80678b294992566608b4492ef0d7256f727ebfbcfabe0",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 7,
+      "suno_title_after_numbering": "7. 손 잡아도 될까 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 3,
+      "song_id": "15d1eaaf-2450-4314-8252-cc9aede23fc8",
+      "title": "한 잔만 더 (Lo-Fi Remix)",
+      "duration_ui": "3:40",
+      "original": null,
+      "remix": {
+        "song_id": "15d1eaaf-2450-4314-8252-cc9aede23fc8",
+        "title": "한 잔만 더 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/15d1eaaf-2450-4314-8252-cc9aede23fc8",
+        "observed_at": "2026-11-04T00:43:27.370Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/15d1eaaf-2450-4314-8252-cc9aede23fc8.json",
+        "ui_evidence_sha256": "e1bc2ece6eb2de2ea6e3893957f21f9c08e213e01a171951b3915b884e48fc4e",
+        "style_raw": "Lo-fi R&B, neo-soul with subtle city-pop touches; subtle tape wobble and vinyl texture on instruments, wide stereo Rhodes, tight low end, warm modern mix, Short D Major Rhodes 7th and 9th chord intro, then deep rounded kick, dry rimshot, shuffled hi-hats, warm bouncy bass, sparse muted guitar accents, 96 BPM, easy head-nodding pocket, warm, upbeat, relaxed but lively; sparse verses, gentle pre-chorus lift, fuller chorus, stripped-back bridge, Korean male midrange, intimate, clear warm close-miked dry centered lead, conversational behind-beat verses, crisp diction; catchy melodic chorus, fuller natural full-voice lift, playful syncopation, easy repeated hook",
+        "style_raw_sha256": "9d52b3f6049cbd3bd2d1bd38fa3e550e19149d97ae2ee838cf1ec6f55d0cc8a9",
+        "style_positive": "Lo-fi R&B, neo-soul with subtle city-pop touches; subtle tape wobble and vinyl texture on instruments, wide stereo Rhodes, tight low end, warm modern mix, Short D Major Rhodes 7th and 9th chord intro, then deep rounded kick, dry rimshot, shuffled hi-hats, warm bouncy bass, sparse muted guitar accents, 96 BPM, easy head-nodding pocket, warm, upbeat, relaxed but lively; sparse verses, gentle pre-chorus lift, fuller chorus, stripped-back bridge, Korean male midrange, intimate, clear warm close-miked dry centered lead, conversational behind-beat verses, crisp diction; catchy melodic chorus, fuller natural full-voice lift, playful syncopation, easy repeated hook",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\ninstrumental\n\n[Verse 1]\n겨우 날짜 맞춰 놓고\n오랜만에 모인 자리\n처음엔 일 얘기하다\n이제 좀 재밌어지는데\n\n몇 시냐고 묻는 말에\n다들 휴대폰을 꺼내\n난 못 들은 척하면서\n남은 안주를 뒤적여\n\n[Pre-Chorus]\n아내가 기다린다며\n슬슬 가봐야겠다는 너\n벌써 시간이 그랬나\n괜히 벽시계를 봐\n\n[Chorus]\n한 잔만 더 할까\n아직 할 얘기가 남아\n너희는 시간을 보고\n나는 남은 잔을 봐\n\n한 잔만 더 할까\n그냥 한번 물어봤어\n먼저 가, 난 천천히\n마저 마시고 갈게\n\n[Instrumental Break]\n\n[Verse 2]\n애인이랑 보기로 했대\n늦게라도 얼굴 봐야지\n아까부터 옷을 챙기던\n네 옆자리가 먼저 비어\n\n아이 재울 시간이라며\n다른 친구도 일어나\n요즘 자기 없인 안 잔대\n웃으며 사진을 보여줘\n\n[Pre-Chorus]\n다들 그럴 만한 이유\n나도 알아, 이해가 돼\n붙잡을 말은 없는데\n금방 일어나긴 싫어\n\n[Chorus]\n한 잔만 더 할까\n아직 할 얘기가 남아\n너희는 시간을 보고\n나는 남은 잔을 봐\n\n한 잔만 더 할까\n그냥 한번 물어봤어\n먼저 가, 난 천천히\n마저 마시고 갈게\n\n[Bridge]\n다음엔 길게 보자고\n누가 먼저 말을 꺼내\n그러자고 대답하고\n겉옷을 건네줬어\n\n돌아가면 불을 켜고\n혼자 뭘 좀 보겠지\n오늘 들은 얘기들을\n전해줄 사람도 없이\n\n[Final Chorus]\n한 잔만 더 할까\n끝내 다시 묻진 않아\n너희는 내일을 얘기해\n나는 오늘이 좀 아쉬워\n\n한 잔만 더 할까\n그냥 한번 물어봤어\n먼저 가, 난 천천히\n마저 마시고 갈게\n\n[Outro]\n먼저들 들어가\n난 조금 있다 갈게\n집이 가까워서\n걸어가면 돼",
+        "lyrics_raw_sha256": "2e5b7f1b68f0cfd80a7f56857a5aff4194b706d643b457be63426f0334892266"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/15d1eaaf-2450-4314-8252-cc9aede23fc8.json"
+        ],
+        "note": "No original song selected. A matching title alone does not identify the exact remix parent. Current Made from section labels the source Deleted song and exposes no source song URL.",
+        "deleted_song_label_observed": true,
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Lo-fi R&B, neo-soul with subtle city-pop touches; subtle tape wobble and vinyl texture on instruments, wide stereo Rhodes, tight low end, warm modern mix, Short D Major Rhodes 7th and 9th chord intro, then deep rounded kick, dry rimshot, shuffled hi-hats, warm bouncy bass, sparse muted guitar accents, 96 BPM, easy head-nodding pocket, warm, upbeat, relaxed but lively; sparse verses, gentle pre-chorus lift, fuller chorus, stripped-back bridge, Korean male midrange, intimate, clear warm close-miked dry centered lead, conversational behind-beat verses, crisp diction; catchy melodic chorus, fuller natural full-voice lift, playful syncopation, easy repeated hook",
+      "combined_style_sha256": "9d52b3f6049cbd3bd2d1bd38fa3e550e19149d97ae2ee838cf1ec6f55d0cc8a9",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 3,
+      "suno_title_after_numbering": "3. 한 잔만 더 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 4,
+      "song_id": "7b0944f7-dddf-483b-b41c-beae8d5fe3ee",
+      "title": "지금 가는 길 (Lo-Fi Remix)",
+      "duration_ui": "3:21",
+      "original": null,
+      "remix": {
+        "song_id": "7b0944f7-dddf-483b-b41c-beae8d5fe3ee",
+        "title": "지금 가는 길 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/7b0944f7-dddf-483b-b41c-beae8d5fe3ee",
+        "observed_at": "2026-11-04T00:43:28.562Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/7b0944f7-dddf-483b-b41c-beae8d5fe3ee.json",
+        "ui_evidence_sha256": "ea97d02b75906b79ecf89d5ec2c35aa82cf7b778dcad55e48194d2102b3535b3",
+        "style_raw": "Lo-fi Korean indie R&B, 80BPM, slightly slower head-nodding groove, intimate dusty Rhodes seventh and ninth chords, gentle tape wobble, subtle vinyl texture, deep rounded kick, dry rim-click snare, lightly shuffled hats, warm melodic bass, Begin with a clearly instrumental intro before the original Korean female lead enters; keep verses sparse, let the hooks open wider, and finish with a soft reflective fade, Conversational chest-voice delivery, clear diction, dry upfront vocal, restrained reverb, warm wide mix",
+        "style_raw_sha256": "bf13cecc0c46e3d8e7fdc7f146a4f28224e2b76621d0fde06dd29628ad958e1e",
+        "style_positive": "Lo-fi Korean indie R&B, 80BPM, slightly slower head-nodding groove, intimate dusty Rhodes seventh and ninth chords, gentle tape wobble, subtle vinyl texture, deep rounded kick, dry rim-click snare, lightly shuffled hats, warm melodic bass, Begin with a clearly instrumental intro before the original Korean female lead enters; keep verses sparse, let the hooks open wider, and finish with a soft reflective fade, Conversational chest-voice delivery, clear diction, dry upfront vocal, restrained reverb, warm wide mix",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\ninstrumental\n\n[Verse 1]\n씻고 누우려던 참에\n친구한테 전화가 와\n벌써 다들 모였다고\n잠깐 얼굴이나 보자고\n\n의자에 걸친 재킷\n주머니 속 이어폰\n문밖으로 나오니\n생각보다 괜찮은 밤\n\n[Pre-Chorus]\n이어폰 한쪽을 끼고\n듣던 노래를 틀어\n서두를 건 없지만\n걸음이 조금 빨라져\n\n[Chorus]\n나 지금 가는 길\n먼저 들어가 있어\n맨날 보는 얼굴인데\n오늘도 할 말이 많아\n\n나 지금 가는 길\n내 자리 하나 남겨\n별일 없이 보낸 하루\n너희한테 풀어놓게\n\n[Instrumental Break]\n\n[Verse 2]\n편의점 앞을 지나다\n뭐 좀 사 갈까 물어\n아무것도 필요 없대\n너나 빨리 오라네\n\n신호를 기다리다가\n건너편 창을 보니\n누가 먼저 날 봤는지\n크게 손을 흔들어\n\n[Pre-Chorus]\n이어폰을 빼서 넣고\n짧게 답장을 보내\n이제 문 앞이라고\n전화는 안 해도 돼\n\n[Chorus]\n나 지금 가는 길\n먼저 들어가 있어\n맨날 보는 얼굴인데\n오늘도 할 말이 많아\n\n나 지금 가는 길\n내 자리 하나 남겨\n별일 없이 보낸 하루\n너희한테 풀어놓게\n\n[Bridge]\n요즘 어떻게 지내\n난 뭐, 늘 똑같지\n별로 할 말 없다가도\n하나씩 생각이 나\n\n누가 먼저 꺼낸 얘긴지\n한참 다른 데로 새고\n시간 한번 확인하다\n휴대폰을 뒤집어 놔\n\n[Final Chorus]\n나 지금 가는 길\n먼저 들어가 있어\n맨날 보는 얼굴인데\n오늘도 할 말이 많아\n\n나 지금 가는 길\n내 자리 하나 남겨\n별일 없이 보낸 하루\n너희한테 풀어놓게\n\n[Outro]\n아직 괜찮아\n조금 더 있다 갈게\n그래서 아까 그 얘기\n어떻게 됐는데",
+        "lyrics_raw_sha256": "38d6f86ca3d54647f5dad120527062dec4b127821e8846ecfdca99a2c0fa8de6"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/7b0944f7-dddf-483b-b41c-beae8d5fe3ee.json"
+        ],
+        "note": "No original song selected. A matching title alone does not identify the exact remix parent. Current Made from section labels the source Deleted song and exposes no source song URL.",
+        "deleted_song_label_observed": true,
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Lo-fi Korean indie R&B, 80BPM, slightly slower head-nodding groove, intimate dusty Rhodes seventh and ninth chords, gentle tape wobble, subtle vinyl texture, deep rounded kick, dry rim-click snare, lightly shuffled hats, warm melodic bass, Begin with a clearly instrumental intro before the original Korean female lead enters; keep verses sparse, let the hooks open wider, and finish with a soft reflective fade, Conversational chest-voice delivery, clear diction, dry upfront vocal, restrained reverb, warm wide mix",
+      "combined_style_sha256": "bf13cecc0c46e3d8e7fdc7f146a4f28224e2b76621d0fde06dd29628ad958e1e",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 9,
+      "suno_title_after_numbering": "9. 지금 가는 길 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 5,
+      "song_id": "c3903598-814e-476d-95a0-f721d2307233",
+      "title": "나도 네가 신경 쓰여 (Lo-Fi Remix)",
+      "duration_ui": "3:12",
+      "original": null,
+      "remix": {
+        "song_id": "c3903598-814e-476d-95a0-f721d2307233",
+        "title": "나도 네가 신경 쓰여 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/c3903598-814e-476d-95a0-f721d2307233",
+        "observed_at": "2026-11-04T00:43:30.484Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/c3903598-814e-476d-95a0-f721d2307233.json",
+        "ui_evidence_sha256": "95155837419c6bf79099a114e1b78df51d79d066da784cb8b3c5297e2c76a0aa",
+        "style_raw": "Contemporary lo-fi R&B in B Major; clean, centered, upfront female low-chest lead with natural breath detail, close-miked and gently compressed; laid-back, slightly behind-the-beat pocket with subtle swing and imperfect drums; dusty Rhodes 7th and 9th chords with gentle pitch drift, deep rounded kick, dry snare, delicate rim clicks, warm restrained bass; mellow tape wobble, softened highs, subtle vinyl crackle and sampler grit on instruments only, wide stereo keys and tight mono low end; sparse verses, richer harmony and heavier kick in a smooth wider chorus, stripped-back bridge, fuller final chorus",
+        "style_raw_sha256": "cf41d705a42e46641142ee540a620cee104f52c719f496759449cd02e3894993",
+        "style_positive": "Contemporary lo-fi R&B in B Major; clean, centered, upfront female low-chest lead with natural breath detail, close-miked and gently compressed; laid-back, slightly behind-the-beat pocket with subtle swing and imperfect drums; dusty Rhodes 7th and 9th chords with gentle pitch drift, deep rounded kick, dry snare, delicate rim clicks, warm restrained bass; mellow tape wobble, softened highs, subtle vinyl crackle and sampler grit on instruments only, wide stereo keys and tight mono low end; sparse verses, richer harmony and heavier kick in a smooth wider chorus, stripped-back bridge, fuller final chorus",
+        "exclude": [],
+        "lyrics_raw": "[Verse 1]\n무슨 말을 하려던 건지\n몇 번이나 나를 보길래\n먼저 물어볼까 하다가\n네 얘기를 기다렸어\n\n[Pre-Chorus]\n여럿이서 얘기할 때도\n네 쪽을 보게 되더라\n별로 웃긴 말도 아닌데\n네가 웃는지 궁금해서\n\n[Chorus]\n나도 네가 신경 쓰여\n너는 아직 모르는 것 같아\n별말 없이 헤어진 날\n나도 조금 아쉬웠어\n\n나도 네가 신경 쓰여\n집에 와서야 인정했어\n오늘 어땠냐고 물으면\n난 좀 더 있고 싶었어\n\n[Verse 2]\n내가 말한 영화 봤다며\n어느 장면이 좋았는지\n그 얘기도 듣고 싶지만\n기억해 준 게 더 좋았어\n\n[Pre-Chorus]\n먼저 연락할까 하다\n휴대폰을 내려놨어\n네 이름이 화면에 뜨면\n반가운 티가 날 것 같아\n\n[Chorus]\n나도 네가 신경 쓰여\n너는 아직 모르는 것 같아\n별말 없이 헤어진 날\n나도 조금 아쉬웠어\n\n나도 네가 신경 쓰여\n집에 와서야 인정했어\n오늘 어땠냐고 물으면\n난 좀 더 있고 싶었어\n\n[Bridge]\n그냥 편한 사이라기엔\n네 앞에선 말을 고르게 돼\n괜히 의미 두지 말자 해도\n다음에 볼 날을 생각해\n\n[Chorus]\n나도 네가 신경 쓰여\n너는 아직 모르는 것 같아\n별말 없이 헤어진 날\n나도 조금 아쉬웠어\n\n나도 네가 신경 쓰여\n집에 와서야 인정했어\n오늘 어땠냐고 물으면\n난 좀 더 있고 싶었어\n\n[Final Chorus]\n나도 네가 신경 쓰여\n이젠 조금 티를 내도 될까\n별일 없는 하루 얘기도\n네 얘기라 듣고 싶어\n\n나도 네가 신경 쓰여\n네 연락에 한참 웃었어\n이번 주는 토요일이 좋아\n밥 먹고 커피도 마시자",
+        "lyrics_raw_sha256": "73740307c4a99587593557252a2c45da691ae64945a892c04b4d24b38ef91fa9"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/c3903598-814e-476d-95a0-f721d2307233.json"
+        ],
+        "note": "No original song selected. A matching title alone does not identify the exact remix parent.",
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Contemporary lo-fi R&B in B Major; clean, centered, upfront female low-chest lead with natural breath detail, close-miked and gently compressed; laid-back, slightly behind-the-beat pocket with subtle swing and imperfect drums; dusty Rhodes 7th and 9th chords with gentle pitch drift, deep rounded kick, dry snare, delicate rim clicks, warm restrained bass; mellow tape wobble, softened highs, subtle vinyl crackle and sampler grit on instruments only, wide stereo keys and tight mono low end; sparse verses, richer harmony and heavier kick in a smooth wider chorus, stripped-back bridge, fuller final chorus",
+      "combined_style_sha256": "cf41d705a42e46641142ee540a620cee104f52c719f496759449cd02e3894993",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 11,
+      "suno_title_after_numbering": "11. 나도 네가 신경 쓰여 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 6,
+      "song_id": "a1c4a6f1-9773-435c-875d-6a01de45d746",
+      "title": "자꾸 네가 신경쓰여 (Lo-Fi Remix)",
+      "duration_ui": "3:30",
+      "original": null,
+      "remix": {
+        "song_id": "a1c4a6f1-9773-435c-875d-6a01de45d746",
+        "title": "자꾸 네가 신경쓰여 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/a1c4a6f1-9773-435c-875d-6a01de45d746",
+        "observed_at": "2026-11-04T00:43:32.554Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/a1c4a6f1-9773-435c-875d-6a01de45d746.json",
+        "ui_evidence_sha256": "78f7c4e29c6d19bab6ee1be22726321db9b169e91b5d9bfd32122a7d72614f89",
+        "style_raw": "Modern indie R&B with a hushed, late-night pocket: muted electric piano voicings over a soft swung beat, rounded sub-bass, crisp close rim clicks, and faint granular room texture, Keep the verses sparse and intimate, let the pre-chorus gain a little harmonic lift, then open the chorus with a wider synth bed and steady bass movement, Strip back to keys and voice for the bridge, then return with a subtly fuller final chorus, Low-chest male Korean croon, relaxed legato phrasing, close-miked and dry with natural breath, gentle tape warmth, restrained reverb, wide instrumental stereo and centered lead vocal",
+        "style_raw_sha256": "0e6d9ce70518321af3e4b474f778de1e6fc8493b6f821aefc17d8ad0ca662f27",
+        "style_positive": "Modern indie R&B with a hushed, late-night pocket: muted electric piano voicings over a soft swung beat, rounded sub-bass, crisp close rim clicks, and faint granular room texture, Keep the verses sparse and intimate, let the pre-chorus gain a little harmonic lift, then open the chorus with a wider synth bed and steady bass movement, Strip back to keys and voice for the bridge, then return with a subtly fuller final chorus, Low-chest male Korean croon, relaxed legato phrasing, close-miked and dry with natural breath, gentle tape warmth, restrained reverb, wide instrumental stereo and centered lead vocal",
+        "exclude": [],
+        "lyrics_raw": "[Verse 1]\n너한테 할 말이 있었는데\n막상 보면 생각이 안 나\n오늘 뭐 했냐는 말 하나\n고르다 때를 놓쳐\n\n[Pre-Chorus]\n다른 얘기를 하다가도\n네 목소리는 잘 들려\n나한테 한 말도 아닌데\n괜히 고개를 돌려\n\n[Chorus]\n자꾸 네가 신경 쓰여\n말 걸까 말까 고민하다\n별말 없이 헤어지면\n그때 할 말이 생겨\n\n자꾸 네가 신경 쓰여\n별말 아닌데 또 생각나\n너는 어땠는지 궁금해\n오늘 나랑 있을 때\n\n[Verse 2]\n네가 말한 영화 하나\n어젯밤에 찾아봤어\n어땠냐고 물어보면\n이번엔 할 말이 있어\n\n[Pre-Chorus]\n먼저 연락해 볼까\n그 정도는 괜찮겠지\n짧게 몇 자 적어놓고\n한참 그대로 뒀어\n\n[Chorus]\n자꾸 네가 신경 쓰여\n말 걸까 말까 고민하다\n별말 없이 헤어지면\n그때 할 말이 생겨\n\n자꾸 네가 신경 쓰여\n별말 아닌데 또 생각나\n너는 어땠는지 궁금해\n오늘 나랑 있을 때\n\n[Bridge]\n너는 별생각 없을 수도\n그냥 편한 사이일 수도\n혼자 앞서가긴 싫은데\n다음에 또 보고 싶어\n\n[Chorus]\n자꾸 네가 신경 쓰여\n말 걸까 말까 고민하다\n별말 없이 헤어지면\n그때 할 말이 생겨\n\n자꾸 네가 신경 쓰여\n별말 아닌데 또 생각나\n너는 어땠는지 궁금해\n오늘 나랑 있을 때\n\n[Final Chorus]\n자꾸 네가 신경 쓰여\n이젠 먼저 말을 걸까\n별일 없는 하루 얘기도\n너랑 조금 더 하고 싶어\n\n자꾸 네가 신경 쓰여\n집에 가는 길에 연락해\n이번 주에 시간 괜찮으면\n우리 둘이 밥이나 먹자",
+        "lyrics_raw_sha256": "d147155300478dace456e93fb328c1ad045700d773008db15d7fdf0a99c14d9a"
+      },
+      "lineage": {
+        "status": "user_declared_direct_creation",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/trash-keyword-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/a1c4a6f1-9773-435c-875d-6a01de45d746.json"
+        ],
+        "note": "No original song selected. A matching title alone does not identify the exact remix parent.",
+        "prior_ui_search_status": "unresolved",
+        "user_statement_evidence": "SERIES/23-00/production/browser-capture-20261104/user-style-clarification.json"
+      },
+      "style_record_status": "user_created_current_style_recorded",
+      "combined_style": "Modern indie R&B with a hushed, late-night pocket: muted electric piano voicings over a soft swung beat, rounded sub-bass, crisp close rim clicks, and faint granular room texture, Keep the verses sparse and intimate, let the pre-chorus gain a little harmonic lift, then open the chorus with a wider synth bed and steady bass movement, Strip back to keys and voice for the bridge, then return with a subtly fuller final chorus, Low-chest male Korean croon, relaxed legato phrasing, close-miked and dry with natural breath, gentle tape warmth, restrained reverb, wide instrumental stereo and centered lead vocal",
+      "combined_style_sha256": "0e6d9ce70518321af3e4b474f778de1e6fc8493b6f821aefc17d8ad0ca662f27",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "current_display_style_for_user_created_song",
+      "separate_original_style_identified": false,
+      "album_position": 13,
+      "suno_title_after_numbering": "13. 자꾸 네가 신경쓰여 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 7,
+      "song_id": "5bb566bd-ac12-4943-bf04-7ff9ac03c75b",
+      "title": "돛 (Lo-Fi Remix)",
+      "duration_ui": "3:19",
+      "original": {
+        "song_id": "6ec3459c-cf47-40d2-9c44-2f290c1cf814",
+        "title": "5. 돛",
+        "url": "https://suno.com/song/6ec3459c-cf47-40d2-9c44-2f290c1cf814",
+        "observed_at": "2026-11-04T00:45:41.536Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/6ec3459c-cf47-40d2-9c44-2f290c1cf814.json",
+        "ui_evidence_sha256": "52122b2adcefb171e0d57c369ac1857db0c434bff648f016fd3bb531c6fcfea5",
+        "style_raw": "*Articulation, Major-key groovy R&B, 90 BPM, “ocean view” warm horizon vibe, Bass-forward pocket: round melodic bassline upfront, kick locked to bass, crisp rim/snare, soft hats, subtle perc, Rhodes/e-piano chords, light guitar arps, airy pads; very low wave ambience, Organic live-band feel, no EDM, Male vocal: soulful, intimate, natural; minimal runs in verses, no belting, minimal pitch correction, Verse1 & Verse2 share the same topline melody, Chorus lyrics repeat exactly each time, but the 2nd/final chorus is more emotional with natural higher mix/head notes and only a few short controlled riffs on the last two lines, Light backing harmonies in chorus; drums+bass push harder for catharsis, Form: intro–v1–chorus–v2–bridge (build + brief drop)–final chorus–outro quiet fade-out (strip to Rhodes + bass tail + pads, soft vocal, wave ambience fading), Avoid heavy autotune, excessive melisma, synth drops, sidechain pumping, k-pop",
+        "style_raw_sha256": "675f9e7dad89d6d7508612ff33615509f670fbfe2414d287bff17971cdb314bc",
+        "style_positive": "*Articulation, Major-key groovy R&B, 90 BPM, “ocean view” warm horizon vibe, Bass-forward pocket: round melodic bassline upfront, kick locked to bass, crisp rim/snare, soft hats, subtle perc, Rhodes/e-piano chords, light guitar arps, airy pads; very low wave ambience, Organic live-band feel, no EDM, Male vocal: soulful, intimate, natural; minimal runs in verses, no belting, minimal pitch correction, Verse1 & Verse2 share the same topline melody, Chorus lyrics repeat exactly each time, but the 2nd/final chorus is more emotional with natural higher mix/head notes and only a few short controlled riffs on the last two lines, Light backing harmonies in chorus; drums+bass push harder for catharsis, Form: intro–v1–chorus–v2–bridge (build + brief drop)–final chorus–outro quiet fade-out (strip to Rhodes + bass tail + pads, soft vocal, wave ambience fading), Avoid heavy autotune, excessive melisma, synth drops, sidechain pumping, k-pop",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n\n[verse1]\n한낮의 빛이 숨을 삼키고\n미지근한 향이 남아\n눈꺼풀은 자꾸 내려오는데\n저쪽이 이상하게 선명해\n모니터 밖 하얀 빈칸, 어딘가\n이름 없는 꿈을 향해\n\n[chorus] [Hook]\n멀어도 (멀어도)\n또렷해지지 않아도 (않아도)\n잠결이 길을 바꿔 놓아도 (놓아도)\n눈이 먼저 잠깐 내려와도\n빛은 사라지지 않아\n눈을 감아도 남아\n\n[verse2]\n낮바람이 창끝을 머금고\n하얀빛이 입술에 번져\n눈꺼풀은 다시 내려오는데\n저기는 이유 없이 선명해\n모니터 밖 하얀 칸, 어딘가\n이름 없는 쪽을 향해\n\n[bridge]\n누가 부르면 고개를 다시 들고\n빛이 번지면 눈을 더 감고\n누가 부르면 고개를 다시 들고\n빛이 번지면 눈을 더 감고\n잠깐 흐려져도 감각은 남아\n손끝이 닿는 감촉으로 지금 붙들고\n조금 더 천천히\n\n[chorus]\n멀어도 (멀어도)\n또렷해지지 않아도 (않아도)\n잠결이 길을 바꿔 놓아도 (놓아도)\n눈이 먼저 잠깐 내려와도\n빛은 사라지지 않아\n눈을 감아도 남아\n\n[outro]\n깨어남은 아직 멀고\n숨결은 계속 이어져\n\n[outro]\n깨어남은 아직 멀고\n숨결은 계속 이어져\n\n[ending]",
+        "lyrics_raw_sha256": "1b69bebb5429c739390f37884710d04654d28fbe5afd3bc8c2436952158b040a"
+      },
+      "remix": {
+        "song_id": "5bb566bd-ac12-4943-bf04-7ff9ac03c75b",
+        "title": "돛 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/5bb566bd-ac12-4943-bf04-7ff9ac03c75b",
+        "observed_at": "2026-11-04T00:43:34.337Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/5bb566bd-ac12-4943-bf04-7ff9ac03c75b.json",
+        "ui_evidence_sha256": "df08d497ad234707f83c5fcee40a329018cc3b4682a832490c6c6e03c3c99709",
+        "style_raw": "Korean indie R&B with lo-fi intimacy, slow laid-back half-time pocket, softened dusty drum texture, deep rounded bass, sparse Rhodes chords and restrained guitar details, Keep the arrangement spacious and understated; let verses sit close and dry, then widen the chorus gently without a dramatic lift, Direct, intimate male Korean vocal with natural chest-voice articulation, restrained emotion, minimal runs, subtle room ambience, warm muted mix and bittersweet late-afternoon feel",
+        "style_raw_sha256": "ca3c5c1ec2b77718d6db8429952823dfa251d768108c7c9b459a5a8437e4fed7",
+        "style_positive": "Korean indie R&B with lo-fi intimacy, slow laid-back half-time pocket, softened dusty drum texture, deep rounded bass, sparse Rhodes chords and restrained guitar details, Keep the arrangement spacious and understated; let verses sit close and dry, then widen the chorus gently without a dramatic lift, Direct, intimate male Korean vocal with natural chest-voice articulation, restrained emotion, minimal runs, subtle room ambience, warm muted mix and bittersweet late-afternoon feel",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n\n[verse1]\n한낮의 빛이 숨을 삼키고\n미지근한 향이 남아\n눈꺼풀은 자꾸 내려오는데\n저쪽이 이상하게 선명해\n모니터 밖 하얀 빈칸, 어딘가\n이름 없는 꿈을 향해\n\n[chorus] [Hook]\n멀어도 (멀어도)\n또렷해지지 않아도 (않아도)\n잠결이 길을 바꿔 놓아도 (놓아도)\n눈이 먼저 잠깐 내려와도\n빛은 사라지지 않아\n눈을 감아도 남아\n\n[verse2]\n낮바람이 창끝을 머금고\n하얀빛이 입술에 번져\n눈꺼풀은 다시 내려오는데\n저기는 이유 없이 선명해\n모니터 밖 하얀 칸, 어딘가\n이름 없는 쪽을 향해\n\n[bridge]\n누가 부르면 고개를 다시 들고\n빛이 번지면 눈을 더 감고\n누가 부르면 고개를 다시 들고\n빛이 번지면 눈을 더 감고\n잠깐 흐려져도 감각은 남아\n손끝이 닿는 감촉으로 지금 붙들고\n조금 더 천천히\n\n[chorus]\n멀어도 (멀어도)\n또렷해지지 않아도 (않아도)\n잠결이 길을 바꿔 놓아도 (놓아도)\n눈이 먼저 잠깐 내려와도\n빛은 사라지지 않아\n눈을 감아도 남아\n\n[outro]\n깨어남은 아직 멀고\n숨결은 계속 이어져\n\n[outro]\n깨어남은 아직 멀고\n숨결은 계속 이어져\n\n[ending]",
+        "lyrics_raw_sha256": "1b69bebb5429c739390f37884710d04654d28fbe5afd3bc8c2436952158b040a"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/6ec3459c-cf47-40d2-9c44-2f290c1cf814.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/5bb566bd-ac12-4943-bf04-7ff9ac03c75b.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 35,
+          "remix_line_count": 35,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "*Articulation, Major-key groovy R&B, 90 BPM, “ocean view” warm horizon vibe, Bass-forward pocket: round melodic bassline upfront, kick locked to bass, crisp rim/snare, soft hats, subtle perc, Rhodes/e-piano chords, light guitar arps, airy pads; very low wave ambience, Organic live-band feel, no EDM, Male vocal: soulful, intimate, natural; minimal runs in verses, no belting, minimal pitch correction, Verse1 & Verse2 share the same topline melody, Chorus lyrics repeat exactly each time, but the 2nd/final chorus is more emotional with natural higher mix/head notes and only a few short controlled riffs on the last two lines, Light backing harmonies in chorus; drums+bass push harder for catharsis, Form: intro–v1–chorus–v2–bridge (build + brief drop)–final chorus–outro quiet fade-out (strip to Rhodes + bass tail + pads, soft vocal, wave ambience fading), Avoid heavy autotune, excessive melisma, synth drops, sidechain pumping, k-pop\n\nKorean indie R&B with lo-fi intimacy, slow laid-back half-time pocket, softened dusty drum texture, deep rounded bass, sparse Rhodes chords and restrained guitar details, Keep the arrangement spacious and understated; let verses sit close and dry, then widen the chorus gently without a dramatic lift, Direct, intimate male Korean vocal with natural chest-voice articulation, restrained emotion, minimal runs, subtle room ambience, warm muted mix and bittersweet late-afternoon feel",
+      "combined_style_sha256": "25e93c8ee5ac6ca2264032114553e5357290da99de9fb0fab2cba9c4d3ab09b7",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 2,
+      "suno_title_after_numbering": "2. 돛 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 8,
+      "song_id": "2b2a7a3b-eb6f-4497-a470-2c9133a543eb",
+      "title": "약속 (Lo-Fi Remix)",
+      "duration_ui": "3:35",
+      "original": {
+        "song_id": "47589b50-571d-4817-abe1-fe907fde4d75",
+        "title": "2. 약속",
+        "url": "https://suno.com/song/47589b50-571d-4817-abe1-fe907fde4d75",
+        "observed_at": "2026-11-04T00:45:45.854Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/47589b50-571d-4817-abe1-fe907fde4d75.json",
+        "ui_evidence_sha256": "683597b4db202929d3b466e6494594e537c841cd18f79166d8bd2ee73ee287bf",
+        "style_raw": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles, ‑Autotune, ‑Vocoder, ‑Choir, ‑Backing vocals, ‑Runs, ‑Melisma, ‑Ad-libs, ‑Rap, ‑Hip-hop, ‑Bright",
+        "style_raw_sha256": "d01adb676b1a8563a7b570b5d900262128fd0fcf56fb55123755680e5d32cf47",
+        "style_positive": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles",
+        "exclude": [
+          "Autotune",
+          "Vocoder",
+          "Choir",
+          "Backing vocals",
+          "Runs",
+          "Melisma",
+          "Ad-libs",
+          "Rap",
+          "Hip-hop",
+          "Bright"
+        ],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Chest voice, No harmony]\n퇴근 알람이 울려\n주머니 속 폰을 꺼내\n연락처를 내려봐\n누구한테 먼저 할까\n\n[pre-chorus]\n[Direct vocal, Dry voice]\n엄지가 멈칫해\n화면만 밝아져\n읽씹만 쌓여가는\n오늘도 그런 저녁\n\n[chorus]\n[Soft belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[interlude]\n[instrumental]\n\n[verse2]\n[Chest voice, No harmony]\n답장 알림이 울려\n괜히 먼저 폰을 열어\n미안 오늘은 안 돼\n왜 다들 연락이 안 돼\n\n[pre-chorus]\n[Direct vocal, Dry voice]\n한숨이 새어나\n거리만 어두워\n읽씹만 쌓여가는\n오늘도 그런 저녁\n\n[chorus]\n[Soft belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[bridge]\n[Building, sparse]\n그래도 내일은 또\n누군가 시간 나겠지\n\n[chorus]\n[Powerful belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "c8b46c03835c766bf922ee6de10bd6ad41ba7a93e7755cb47146d5d54faadeee"
+      },
+      "remix": {
+        "song_id": "2b2a7a3b-eb6f-4497-a470-2c9133a543eb",
+        "title": "약속 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/2b2a7a3b-eb6f-4497-a470-2c9133a543eb",
+        "observed_at": "2026-11-04T00:43:35.755Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/2b2a7a3b-eb6f-4497-a470-2c9133a543eb.json",
+        "ui_evidence_sha256": "139d6299413c337c299c6613121ef9cbb3e009d61ef9ad681f0bcdbbe6647b04",
+        "style_raw": "Lo-fi Korean indie R&B, gently slowed and deeply laid-back pocket, warm Rhodes chords with softened tape-worn edges, rounded dry electric bass, restrained rim-click and dusty minimal percussion, Preserve the source’s Korean neo-soul character and recognizable melody; intimate, direct, chest-led and unhurried lead vocal, Sparse verses, subtle low-end and texture lift into the repeated hook, bridge strips back to Rhodes and voice before a restrained final chorus, then a soft sustained-pad fade, Close, warm, slightly grainy production with clean vocal focus",
+        "style_raw_sha256": "70a6db044eaf84df665268aa3de7102e8b502cf592e1d35411a773349aa0fc16",
+        "style_positive": "Lo-fi Korean indie R&B, gently slowed and deeply laid-back pocket, warm Rhodes chords with softened tape-worn edges, rounded dry electric bass, restrained rim-click and dusty minimal percussion, Preserve the source’s Korean neo-soul character and recognizable melody; intimate, direct, chest-led and unhurried lead vocal, Sparse verses, subtle low-end and texture lift into the repeated hook, bridge strips back to Rhodes and voice before a restrained final chorus, then a soft sustained-pad fade, Close, warm, slightly grainy production with clean vocal focus",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Chest voice, No harmony]\n퇴근 알람이 울려\n주머니 속 폰을 꺼내\n연락처를 내려봐\n누구한테 먼저 할까\n\n[pre-chorus]\n[Direct vocal, Dry voice]\n엄지가 멈칫해\n화면만 밝아져\n읽씹만 쌓여가는\n오늘도 그런 저녁\n\n[chorus]\n[Soft belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[interlude]\n[instrumental]\n\n[verse2]\n[Chest voice, No harmony]\n답장 알림이 울려\n괜히 먼저 폰을 열어\n미안 오늘은 안 돼\n왜 다들 연락이 안 돼\n\n[pre-chorus]\n[Direct vocal, Dry voice]\n한숨이 새어나\n거리만 어두워\n읽씹만 쌓여가는\n오늘도 그런 저녁\n\n[chorus]\n[Soft belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[bridge]\n[Building, sparse]\n그래도 내일은 또\n누군가 시간 나겠지\n\n[chorus]\n[Powerful belt, Chest voice, No harmony]\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n야 오늘 뭐해, 시간 돼?\n한잔 하자 연락 좀 해\n다들 바빠 나만 한가해\n혼자 걷는 퇴근길이야\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "c8b46c03835c766bf922ee6de10bd6ad41ba7a93e7755cb47146d5d54faadeee"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/47589b50-571d-4817-abe1-fe907fde4d75.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/2b2a7a3b-eb6f-4497-a470-2c9133a543eb.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 42,
+          "remix_line_count": 42,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles\n\nLo-fi Korean indie R&B, gently slowed and deeply laid-back pocket, warm Rhodes chords with softened tape-worn edges, rounded dry electric bass, restrained rim-click and dusty minimal percussion, Preserve the source’s Korean neo-soul character and recognizable melody; intimate, direct, chest-led and unhurried lead vocal, Sparse verses, subtle low-end and texture lift into the repeated hook, bridge strips back to Rhodes and voice before a restrained final chorus, then a soft sustained-pad fade, Close, warm, slightly grainy production with clean vocal focus",
+      "combined_style_sha256": "83f3254f16a7dcfcf2a36ff1197fe3d6e3412a989ab79a14be1b8472629b33c5",
+      "combined_exclude": [
+        "Autotune",
+        "Vocoder",
+        "Choir",
+        "Backing vocals",
+        "Runs",
+        "Melisma",
+        "Ad-libs",
+        "Rap",
+        "Hip-hop",
+        "Bright"
+      ],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 15,
+      "suno_title_after_numbering": "15. 약속 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 9,
+      "song_id": "1406e9df-89fb-4daa-a46b-0c019d2dc7ab",
+      "title": "작은 빛 (Lo-Fi Remix)",
+      "duration_ui": "3:38",
+      "original": {
+        "song_id": "8eda4384-1e3c-4386-941e-f914a77d7f4c",
+        "title": "10. 작은 빛 (Little light)",
+        "url": "https://suno.com/song/8eda4384-1e3c-4386-941e-f914a77d7f4c",
+        "observed_at": "2026-11-04T00:45:47.567Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/8eda4384-1e3c-4386-941e-f914a77d7f4c.json",
+        "ui_evidence_sha256": "b48d5d587b72fb12a2665e05f45c3dadb462a26ef9f8ceb3de2fb05eae3f70eb",
+        "style_raw": "Articulation, Korean Bedroom R&B, 72 BPM, Db Major, felt piano-led, warm Rhodes chords, soft brush kit, rim-click, warm bass groove, subtle strings in chorus, Male vocal: Warm, Intimate, Chest voice, Dry, articulation, warm baritone, conversational phrasing, gentle sustained chorus hook, chorus builds with emotional swell, tender vocal intensity, aching warmth, cozy intimate mix, wide stereo, warm low-end, moderate reverb, bedroom ambience, EQ balanced sound, clean mix, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, Vocal line may intensify dynamically (gentle lift, higher register), but no additional vocal layers, Chorus vocal may be delivered with tender intensity or gentle sustained note, Higher register emphasis is allowed, Natural vocal warmth encouraged, ‑autotune heavy, ‑vocoder, ‑EDM drops, ‑big room, ‑choir, ‑stacked harmonies, ‑backing vocal layers, ‑doubled vocals, ‑powerful belt, ‑aggressive dynamics, ‑heavy bass drops, ‑trap hi-hats, ‑808 slides, ‑drill bass, ‑upbeat, ‑energetic, ‑hype, ‑party",
+        "style_raw_sha256": "8ededed36beab43cbe2b9db5b2673517631498c2a700f6fc9447043248c2ebcc",
+        "style_positive": "Articulation, Korean Bedroom R&B, 72 BPM, Db Major, felt piano-led, warm Rhodes chords, soft brush kit, rim-click, warm bass groove, subtle strings in chorus, Male vocal: Warm, Intimate, Chest voice, Dry, articulation, warm baritone, conversational phrasing, gentle sustained chorus hook, chorus builds with emotional swell, tender vocal intensity, aching warmth, cozy intimate mix, wide stereo, warm low-end, moderate reverb, bedroom ambience, EQ balanced sound, clean mix, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, Vocal line may intensify dynamically (gentle lift, higher register), but no additional vocal layers, Chorus vocal may be delivered with tender intensity or gentle sustained note, Higher register emphasis is allowed, Natural vocal warmth encouraged",
+        "exclude": [
+          "autotune heavy",
+          "vocoder",
+          "EDM drops",
+          "big room",
+          "choir",
+          "stacked harmonies",
+          "backing vocal layers",
+          "doubled vocals",
+          "powerful belt",
+          "aggressive dynamics",
+          "heavy bass drops",
+          "trap hi-hats",
+          "808 slides",
+          "drill bass",
+          "upbeat",
+          "energetic",
+          "hype",
+          "party"
+        ],
+        "lyrics_raw": "[Verse 1]\n잠든 네 볼에\n숨결만 살짝 닿아도\n세상이 조용해\n시계 소리도 멈춘 밤\n\n아주 작은 코\n올라갔다 내려오는 숨\n이 방 가득한\n기적 같은 너의 꿈\n\n[Pre-Chorus]\n밤새 지친 마음도\n너를 보면 풀려가\n말로 못 한 모든 걱정\n이 순간에 사라져\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Verse 2]\n내 손가락을\n꼭 쥔 채 잠이 들었지\n빠질까 봐서\n놓치지 않으려는 듯\n\n내 어지러운\n하루의 끝에 선 너는\n한 번의 숨결로\n모든 걸 다 비추는 불\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Bridge]\n울컥해지는 가슴\n조용히 혼잣말해\n“고마워\n고마워”\n내 전부가 되어 준 너\n\n혹시 깰까 봐\n숨소리도 낮춰 보며\n다짐해\n다짐해\n이 손 절대 놓지 않겠다고\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Outro]\n[instrumental)",
+        "lyrics_raw_sha256": "30264b8a430893d2d841bcc0c78db3b94c1b9d379df2e5bef59fb9cb709de1bd"
+      },
+      "remix": {
+        "song_id": "1406e9df-89fb-4daa-a46b-0c019d2dc7ab",
+        "title": "작은 빛 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/1406e9df-89fb-4daa-a46b-0c019d2dc7ab",
+        "observed_at": "2026-11-04T00:43:37.577Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/1406e9df-89fb-4daa-a46b-0c019d2dc7ab.json",
+        "ui_evidence_sha256": "4323d7f78070e843bfa8edb8e624cd7deeb9b3b2f53da433bfd021507ce9e76e",
+        "style_raw": "Lo-fi modern R&B, Korean indie alt-R&B, 72 BPM half-time pocket, intimate felt-piano motif over warm Rhodes voicings, soft brushed drums and rim-click with a rounded understated bass groove; begin sparse, add muted electronic texture through the pre-chorus, widen gently with subtle strings in each chorus, then strip back for a close, vulnerable bridge and instrumental outro, Single warm baritone lead in a dry conversational chest voice, crisp Korean diction and deliberate articulation, natural breath and phrasing, sustained tender chorus notes with a restrained dynamic rise, Cozy close-miked vocal, balanced clean mix, warm low end, moderate room ambience, no layered vocals",
+        "style_raw_sha256": "ae59fe9fbec0121fde265000b1163fd7e3f1fa719415a198dbba72c984c1a857",
+        "style_positive": "Lo-fi modern R&B, Korean indie alt-R&B, 72 BPM half-time pocket, intimate felt-piano motif over warm Rhodes voicings, soft brushed drums and rim-click with a rounded understated bass groove; begin sparse, add muted electronic texture through the pre-chorus, widen gently with subtle strings in each chorus, then strip back for a close, vulnerable bridge and instrumental outro, Single warm baritone lead in a dry conversational chest voice, crisp Korean diction and deliberate articulation, natural breath and phrasing, sustained tender chorus notes with a restrained dynamic rise, Cozy close-miked vocal, balanced clean mix, warm low end, moderate room ambience, no layered vocals",
+        "exclude": [],
+        "lyrics_raw": "[Verse 1]\n잠든 네 볼에\n숨결만 살짝 닿아도\n세상이 조용해\n시계 소리도 멈춘 밤\n\n아주 작은 코\n올라갔다 내려오는 숨\n이 방 가득한\n기적 같은 너의 꿈\n\n[Pre-Chorus]\n밤새 지친 마음도\n너를 보면 풀려가\n말로 못 한 모든 걱정\n이 순간에 사라져\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Verse 2]\n내 손가락을\n꼭 쥔 채 잠이 들었지\n빠질까 봐서\n놓치지 않으려는 듯\n\n내 어지러운\n하루의 끝에 선 너는\n한 번의 숨결로\n모든 걸 다 비추는 불\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Bridge]\n울컥해지는 가슴\n조용히 혼잣말해\n“고마워\n고마워”\n내 전부가 되어 준 너\n\n혹시 깰까 봐\n숨소리도 낮춰 보며\n다짐해\n다짐해\n이 손 절대 놓지 않겠다고\n\n[Chorus]\n작은 손에 걸린 세상\nlittle light\n네 손가락 사이에 나의 하루가\n살며시 또 웃는다\nlittle light\n이렇게만 있어 줘\n아무 말도 말고\n작은 손에 걸린 세상\nlittle light\n\n[Outro]\n[Instrumental]",
+        "lyrics_raw_sha256": "d923e0f75280a0b42e48ea53ae9d019f579db5354fd6043fd1f896c1c6b85af2"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/8eda4384-1e3c-4386-941e-f914a77d7f4c.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/1406e9df-89fb-4daa-a46b-0c019d2dc7ab.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 48,
+          "remix_line_count": 48,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "Articulation, Korean Bedroom R&B, 72 BPM, Db Major, felt piano-led, warm Rhodes chords, soft brush kit, rim-click, warm bass groove, subtle strings in chorus, Male vocal: Warm, Intimate, Chest voice, Dry, articulation, warm baritone, conversational phrasing, gentle sustained chorus hook, chorus builds with emotional swell, tender vocal intensity, aching warmth, cozy intimate mix, wide stereo, warm low-end, moderate reverb, bedroom ambience, EQ balanced sound, clean mix, Lead vocal remains single and dominant throughout, No stacked or choir-like harmonies, Vocal line may intensify dynamically (gentle lift, higher register), but no additional vocal layers, Chorus vocal may be delivered with tender intensity or gentle sustained note, Higher register emphasis is allowed, Natural vocal warmth encouraged\n\nLo-fi modern R&B, Korean indie alt-R&B, 72 BPM half-time pocket, intimate felt-piano motif over warm Rhodes voicings, soft brushed drums and rim-click with a rounded understated bass groove; begin sparse, add muted electronic texture through the pre-chorus, widen gently with subtle strings in each chorus, then strip back for a close, vulnerable bridge and instrumental outro, Single warm baritone lead in a dry conversational chest voice, crisp Korean diction and deliberate articulation, natural breath and phrasing, sustained tender chorus notes with a restrained dynamic rise, Cozy close-miked vocal, balanced clean mix, warm low end, moderate room ambience, no layered vocals",
+      "combined_style_sha256": "ffe32be8b07792072f7998a41c72b0142f40b6fec6575b658d4a08d5f5ccd506",
+      "combined_exclude": [
+        "autotune heavy",
+        "vocoder",
+        "EDM drops",
+        "big room",
+        "choir",
+        "stacked harmonies",
+        "backing vocal layers",
+        "doubled vocals",
+        "powerful belt",
+        "aggressive dynamics",
+        "heavy bass drops",
+        "trap hi-hats",
+        "808 slides",
+        "drill bass",
+        "upbeat",
+        "energetic",
+        "hype",
+        "party"
+      ],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 1,
+      "suno_title_after_numbering": "1. 작은 빛 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 10,
+      "song_id": "2bdaaa83-7145-4808-b57f-f0b98f7788f0",
+      "title": "먼지 (Lo-Fi Remix)",
+      "duration_ui": "3:20",
+      "original": {
+        "song_id": "5dd96371-52f1-404b-a7d3-883a59c047c0",
+        "title": "9. 먼지",
+        "url": "https://suno.com/song/5dd96371-52f1-404b-a7d3-883a59c047c0",
+        "observed_at": "2026-11-04T00:45:51.700Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/5dd96371-52f1-404b-a7d3-883a59c047c0.json",
+        "ui_evidence_sha256": "008836ac9c3340b99f41e280ac3f402bbf812ea03c91552c03f8a72eabba5579",
+        "style_raw": "Korean Soft R&B, 74 BPM, Eb Major Vibraphone-led, supportive R&B groove, laid-back brush rhythm, warm afternoon texture, Male vocal, Natural, intimate, Raw, Solid, Direct, Dry, Chest voice dominant, No falsetto, Minimal vibrato, Verse1: vibraphone melody, sparse drums, drifting feel, Verse2: kick enters steady, groove locks in, vocal forward, Last line: natural strain allowed, breath audible, Chorus: solid kick and snare, melodic bass, pad widens, Vocal confident, slight belt on held notes, Final chorus: soulful ad-libs permitted, Bridge: vibraphone and voice only, gentle build, Outro: gradual fade, vibraphone restates motif softly, Single lead vocal, No harmony, no backing vocals, ‑Airy, ‑Falsetto, ‑Whisper, ‑Harmonized, ‑Backing vocals, ‑Choir, ‑Intense, ‑Dramatic",
+        "style_raw_sha256": "604fe940450571753fd5166463d0a4fa7eac1c1988e047c281b58c8072171187",
+        "style_positive": "Korean Soft R&B, 74 BPM, Eb Major Vibraphone-led, supportive R&B groove, laid-back brush rhythm, warm afternoon texture, Male vocal, Natural, intimate, Raw, Solid, Direct, Dry, Chest voice dominant, No falsetto, Minimal vibrato, Verse1: vibraphone melody, sparse drums, drifting feel, Verse2: kick enters steady, groove locks in, vocal forward, Last line: natural strain allowed, breath audible, Chorus: solid kick and snare, melodic bass, pad widens, Vocal confident, slight belt on held notes, Final chorus: soulful ad-libs permitted, Bridge: vibraphone and voice only, gentle build, Outro: gradual fade, vibraphone restates motif softly, Single lead vocal, No harmony, no backing vocals",
+        "exclude": [
+          "Airy",
+          "Falsetto",
+          "Whisper",
+          "Harmonized",
+          "Backing vocals",
+          "Choir",
+          "Intense",
+          "Dramatic"
+        ],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Relaxed male vocal, No harmony]\n창가에 빛이 쏟아져\n먼지가 천천히 떠다녀\n커튼이 바람에 흔들려\n나는 그 속에 서 있어\n\n[bridge1]\n[Chest voice, Intimate]\n마루에 눕는 오후 햇살\n시계 소리마저 멈춘 듯해\n이대로 흘러가도 돼\n\n[chorus]\n[Soft belt, Kick in, No backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n\n[verse2]\n[Groove locks in, Subtle lift]\n바닥에 시간이 내려앉아\n그림자가 천천히 길어져\n숨결이 피부에 스며들어\n조금만 더 가면 무너질 것 같아\n\n[bridge2]\n[Chest voice, Intimate]\n손등 위에 남은 오후 햇살\n아무 말도 필요 없는 순간\n이대로 흘러가도 돼\n\n[chorus]\n[Soft belt, No backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n[chorus]\n[Soulful ad-libs, No backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "4de290d5fb8cd7efe9cdde5338bc453fd324bbd709d91fcfdc52cd8e59f75ed2"
+      },
+      "remix": {
+        "song_id": "2bdaaa83-7145-4808-b57f-f0b98f7788f0",
+        "title": "먼지 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/2bdaaa83-7145-4808-b57f-f0b98f7788f0",
+        "observed_at": "2026-11-04T00:43:39.363Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/2bdaaa83-7145-4808-b57f-f0b98f7788f0.json",
+        "ui_evidence_sha256": "11ab74860c329e420ff13cc447bd203531fbcebb36936f0f61bcfe4cb0064dd9",
+        "style_raw": "Lo-fi modern R&B, Korean indie alt-R&B, relaxed half-time pocket, dusty brushed drums with muted kick and rim-snare, warm rounded bass, softened vibraphone motif, hazy electric-piano chords and subtle tape texture, Keep the opening sparse and drifting, let the groove settle in during the second verse, widen the chorus with restrained pads and melodic bass, strip back to voice and vibraphone in the bridge, then return for a fuller final chorus and soft instrumental fade, Intimate natural male chest-voice lead, dry and close, minimal vibrato, no falsetto, understated melodic phrasing with a gentle held-note lift, Warm, slightly grainy, spacious mix with subdued highs and a steady low-end",
+        "style_raw_sha256": "51b2076990d879df87e27b5f7d79a9f3f8356cf1f9f9be5cfa7b681fb2e87246",
+        "style_positive": "Lo-fi modern R&B, Korean indie alt-R&B, relaxed half-time pocket, dusty brushed drums with muted kick and rim-snare, warm rounded bass, softened vibraphone motif, hazy electric-piano chords and subtle tape texture, Keep the opening sparse and drifting, let the groove settle in during the second verse, widen the chorus with restrained pads and melodic bass, strip back to voice and vibraphone in the bridge, then return for a fuller final chorus and soft instrumental fade, Intimate natural male chest-voice lead, dry and close, minimal vibrato, no falsetto, understated melodic phrasing with a gentle held-note lift, Warm, slightly grainy, spacious mix with subdued highs and a steady low-end",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\n[Instrumental]\n\n[Verse 1]\n[Relaxed male vocal, no harmony]\n창가에 빛이 쏟아져\n먼지가 천천히 떠다녀\n커튼이 바람에 흔들려\n나는 그 속에 서 있어\n\n[Bridge 1]\n[Chest voice, intimate]\n마루에 눕는 오후 햇살\n시계 소리마저 멈춘 듯해\n이대로 흘러가도 돼\n\n[Chorus]\n[Soft belt, no backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n[Verse 2]\n[Groove settles, subtle lift]\n바닥에 시간이 내려앉아\n그림자가 천천히 길어져\n숨결이 피부에 스며들어\n조금만 더 가면 무너질 것 같아\n\n[Bridge 2]\n[Chest voice, intimate]\n손등 위에 남은 오후 햇살\n아무 말도 필요 없는 순간\n이대로 흘러가도 돼\n\n[Chorus]\n[Soft belt, no backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n[Final Chorus]\n[Confident lift, restrained ad-libs, no backing vocals]\n햇살이 번져가\n먼지가 떠다녀\n이 순간 여기 머물러\n시간은 조용히 가\n\n[Outro]\n[Instrumental, vibraphone motif fades]",
+        "lyrics_raw_sha256": "fa54fa6a92f7e23bc36896a34167c42d305a7f3df777342469c4db9fea59cf07"
+      },
+      "lineage": {
+        "status": "confirmed_prior_suno_parent_link",
+        "evidence": [
+          ".ai/research/2026-11-01-2300-nine-tracks/nine-tracks.json",
+          ".ai/research/2026-11-01-2300-nine-tracks/raw/01-2bdaaa83-detail.txt"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 26,
+          "remix_line_count": 26,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Exact parent link was observed on 2026-11-01. Original Styles and lyrics were read again on 2026-11-04; current page did not display that parent link.",
+        "prior_relation": "Remix of"
+      },
+      "style_record_status": "confirmed_reconstruction",
+      "combined_style": "Korean Soft R&B, 74 BPM, Eb Major Vibraphone-led, supportive R&B groove, laid-back brush rhythm, warm afternoon texture, Male vocal, Natural, intimate, Raw, Solid, Direct, Dry, Chest voice dominant, No falsetto, Minimal vibrato, Verse1: vibraphone melody, sparse drums, drifting feel, Verse2: kick enters steady, groove locks in, vocal forward, Last line: natural strain allowed, breath audible, Chorus: solid kick and snare, melodic bass, pad widens, Vocal confident, slight belt on held notes, Final chorus: soulful ad-libs permitted, Bridge: vibraphone and voice only, gentle build, Outro: gradual fade, vibraphone restates motif softly, Single lead vocal, No harmony, no backing vocals\n\nLo-fi modern R&B, Korean indie alt-R&B, relaxed half-time pocket, dusty brushed drums with muted kick and rim-snare, warm rounded bass, softened vibraphone motif, hazy electric-piano chords and subtle tape texture, Keep the opening sparse and drifting, let the groove settle in during the second verse, widen the chorus with restrained pads and melodic bass, strip back to voice and vibraphone in the bridge, then return for a fuller final chorus and soft instrumental fade, Intimate natural male chest-voice lead, dry and close, minimal vibrato, no falsetto, understated melodic phrasing with a gentle held-note lift, Warm, slightly grainy, spacious mix with subdued highs and a steady low-end",
+      "combined_style_sha256": "bf4ff31bd728744fdde69afd66344a86bf7604467cb92f7a12a241e68edc779f",
+      "combined_exclude": [
+        "Airy",
+        "Falsetto",
+        "Whisper",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Dramatic"
+      ],
+      "ready_for_final_source": true,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 8,
+      "suno_title_after_numbering": "8. 먼지 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 11,
+      "song_id": "9fe398d7-ed43-4e77-8489-9c3d67a0d657",
+      "title": "산책 (Lo-Fi Remix)",
+      "duration_ui": "2:33",
+      "original": {
+        "song_id": "9bacafcc-f867-4996-80b8-f34eb797025f",
+        "title": "3. 산책",
+        "url": "https://suno.com/song/9bacafcc-f867-4996-80b8-f34eb797025f",
+        "observed_at": "2026-11-04T00:45:53.378Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/9bacafcc-f867-4996-80b8-f34eb797025f.json",
+        "ui_evidence_sha256": "65c0041ef13eb94580ab0f6098849f33d1999bb4a16d8ca58abd9fe5d34191ab",
+        "style_raw": "Articulation, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean Electric Guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest voice dominant, No falsetto, Straight tone only, No vibrato, no ad-libs, High register chest voice preferred over falsetto, Tone is nonchalant and effortless, never dramatic, Vocal articulation is critical: clear consonant attack, precise syllable separation, no slurring, no breathy phrasing, Verse2 builds clear tension, Chorus contains a single, unavoidable high-note focal point: short, decisive high register chest note, straight tone, not sustained belting, If the chorus does not reach a high register chest note, the emotional intent is considered failed, Chorus hook-first, repeated identically, Later choruses grow only by arrangement density, Bridge builds every bar, Outro guitar fades, Lead vocal remains single and dominant",
+        "style_raw_sha256": "9bca9724aed24b65892de2e90cb519b8bdc9aa98b7ddb1da869526c19ca70436",
+        "style_positive": "Articulation, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean Electric Guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest voice dominant, No falsetto, Straight tone only, No vibrato, no ad-libs, High register chest voice preferred over falsetto, Tone is nonchalant and effortless, never dramatic, Vocal articulation is critical: clear consonant attack, precise syllable separation, no slurring, no breathy phrasing, Verse2 builds clear tension, Chorus contains a single, unavoidable high-note focal point: short, decisive high register chest note, straight tone, not sustained belting, If the chorus does not reach a high register chest note, the emotional intent is considered failed, Chorus hook-first, repeated identically, Later choruses grow only by arrangement density, Bridge builds every bar, Outro guitar fades, Lead vocal remains single and dominant",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony]\n길가를 거닐어\n발끝이 천천히 옮겨가\n잎새가 흔들려\n나는 그 길에 머물러\n\n[bridge1]\n[Chest voice, Intimate]\n길가에 내려온 오후 햇살\n발끝 소리마저 잦아든 듯해\n이대로 걸어가도 돼\n\n[chorus]\n[High register chest voice, Straight tone]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[verse2]\n[Groove locks in, Vocal forward]\n신발끈 매어봐\n햇살이 조용히 따라 와요\n발끝이 길 위에 머물러\n나도 이대로 나아가자\n\n[bridge2]\n[Chest voice, Intimate]\n손등에 남은 작은 먼지알\n어떤 길도 끝이 없는 산책\n이대로 걸어가도 돼\n\n[chorus]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[chorus]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "379414c238684abd2f665223b5dd5fe34935887369ea4a36fdceb185bcd1eebe"
+      },
+      "remix": {
+        "song_id": "9fe398d7-ed43-4e77-8489-9c3d67a0d657",
+        "title": "산책 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/9fe398d7-ed43-4e77-8489-9c3d67a0d657",
+        "observed_at": "2026-11-04T00:43:42.026Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/9fe398d7-ed43-4e77-8489-9c3d67a0d657.json",
+        "ui_evidence_sha256": "1f7b86fc97fa1f2690660b0d27ac097a97319489242a65f811cbedc1affb4f5f",
+        "style_raw": "Lo-Fi Remix, Modern R&B, clear voice, precise articulation, laidback, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean electric guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: solid, direct, raw, dry; chest voice dominant, straight tone, no vibrato or ad-libs; nonchalant and effortless, never dramatic, Clear consonant attack and precise syllable separation, Verse 2 builds clear tension, Chorus is hook-first with a short, decisive high-register chest note, not sustained belting; repeated choruses grow only by arrangement density, Single dominant lead vocal, Bridge builds every bar; outro guitar fades",
+        "style_raw_sha256": "9d4ea3c73134fe61679382dc6ce62bda49413e7093de270d61692194c2c80a93",
+        "style_positive": "Lo-Fi Remix, Modern R&B, clear voice, precise articulation, laidback, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean electric guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: solid, direct, raw, dry; chest voice dominant, straight tone, no vibrato or ad-libs; nonchalant and effortless, never dramatic, Clear consonant attack and precise syllable separation, Verse 2 builds clear tension, Chorus is hook-first with a short, decisive high-register chest note, not sustained belting; repeated choruses grow only by arrangement density, Single dominant lead vocal, Bridge builds every bar; outro guitar fades",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony]\n길가를 거닐어\n발끝이 천천히 옮겨가\n잎새가 흔들려\n나는 그 길에 머물러\n\n[bridge1]\n[Chest voice, Intimate]\n길가에 내려온 오후 햇살\n발끝 소리마저 잦아든 듯해\n이대로 걸어가도 돼\n\n[chorus]\n[High register chest voice, Straight tone]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[verse2]\n[Groove locks in, Vocal forward]\n신발끈 매어봐\n햇살이 조용히 따라 와요\n발끝이 길 위에 머물러\n나도 이대로 나아가자\n\n[bridge2]\n[Chest voice, Intimate]\n손등에 남은 작은 먼지알\n어떤 길도 끝이 없는 산책\n이대로 걸어가도 돼\n\n[chorus]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[chorus]\n발끝이 느려져\n걸음은 고르게\n이 순간 조금 더 나아가자\n발끝은 천천히 가\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "379414c238684abd2f665223b5dd5fe34935887369ea4a36fdceb185bcd1eebe"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/9bacafcc-f867-4996-80b8-f34eb797025f.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/9fe398d7-ed43-4e77-8489-9c3d67a0d657.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 26,
+          "remix_line_count": 26,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "Articulation, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean Electric Guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest voice dominant, No falsetto, Straight tone only, No vibrato, no ad-libs, High register chest voice preferred over falsetto, Tone is nonchalant and effortless, never dramatic, Vocal articulation is critical: clear consonant attack, precise syllable separation, no slurring, no breathy phrasing, Verse2 builds clear tension, Chorus contains a single, unavoidable high-note focal point: short, decisive high register chest note, straight tone, not sustained belting, If the chorus does not reach a high register chest note, the emotional intent is considered failed, Chorus hook-first, repeated identically, Later choruses grow only by arrangement density, Bridge builds every bar, Outro guitar fades, Lead vocal remains single and dominant\n\nLo-Fi Remix, Modern R&B, clear voice, precise articulation, laidback, Korean Indie Alt R&B, 74 BPM, Eb Major, Clean electric guitar-led, supportive R&B groove, rim-click, warm afternoon texture, subtle vinyl crackle, Male vocal: solid, direct, raw, dry; chest voice dominant, straight tone, no vibrato or ad-libs; nonchalant and effortless, never dramatic, Clear consonant attack and precise syllable separation, Verse 2 builds clear tension, Chorus is hook-first with a short, decisive high-register chest note, not sustained belting; repeated choruses grow only by arrangement density, Single dominant lead vocal, Bridge builds every bar; outro guitar fades",
+      "combined_style_sha256": "b3c90a76d594412fa0e709226050f3aa5084d6536316d5a63ef1bfdd12160544",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 10,
+      "suno_title_after_numbering": "10. 산책 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 12,
+      "song_id": "36d296ff-f0af-4b44-a5ad-0bc7cfef0982",
+      "title": "숨 (Lo-Fi Remix)",
+      "duration_ui": "3:35",
+      "original": {
+        "song_id": "8ef9a05d-8e05-4e37-a4b6-b6da1e9b2cb0",
+        "title": "8. 숨",
+        "url": "https://suno.com/song/8ef9a05d-8e05-4e37-a4b6-b6da1e9b2cb0",
+        "observed_at": "2026-11-04T00:45:57.453Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/8ef9a05d-8e05-4e37-a4b6-b6da1e9b2cb0.json",
+        "ui_evidence_sha256": "6023f7ce5974b18dd8905221d3a1aa26e184ac0b1ecd7278ca68142ddf0522a1",
+        "style_raw": "Korean Soft R&B, 76 BPM, Ab Major Rhodes-led, warm synth pad underneath, supportive Soft brush kit, gentle pulse, warm bass Clean mix, intimate atmosphere Female vocal, Soft, Gentle, Chest voice dominant Catchy melodic hook, singable melody Simple but memorable topline Precise articulation, clear consonants Verse: Rhodes + pad, intimate, gentle Pre-Chorus: slight build, anticipation Chorus: catchy melodic hook, repeat identical, easy to hum Bridge: Rhodes and voice only, tender Breakdown: music stops completely, silence, audible breath Outro: short phrase, Rhodes + pad sustain fade Single lead vocal throughout No harmonies, no doubles, no backing vocals Moderate reverb, warm room ambience EQ balanced sound, clean mix, ‑Rap, ‑Hip-hop, ‑Spoken word, ‑Whisper, ‑Harmonies, ‑Backing vocals, ‑Doubles, ‑Choir, ‑Ad-libs, ‑Runs, ‑Melisma, ‑Falsetto, ‑Bright, ‑Upbeat, ‑Energetic, ‑Fast",
+        "style_raw_sha256": "c231c4cf3e98a5700d11f9837957f1a404fca2faaff1b21c7f2615c383b02e39",
+        "style_positive": "Korean Soft R&B, 76 BPM, Ab Major Rhodes-led, warm synth pad underneath, supportive Soft brush kit, gentle pulse, warm bass Clean mix, intimate atmosphere Female vocal, Soft, Gentle, Chest voice dominant Catchy melodic hook, singable melody Simple but memorable topline Precise articulation, clear consonants Verse: Rhodes + pad, intimate, gentle Pre-Chorus: slight build, anticipation Chorus: catchy melodic hook, repeat identical, easy to hum Bridge: Rhodes and voice only, tender Breakdown: music stops completely, silence, audible breath Outro: short phrase, Rhodes + pad sustain fade Single lead vocal throughout No harmonies, no doubles, no backing vocals Moderate reverb, warm room ambience EQ balanced sound, clean mix",
+        "exclude": [
+          "Rap",
+          "Hip-hop",
+          "Spoken word",
+          "Whisper",
+          "Harmonies",
+          "Backing vocals",
+          "Doubles",
+          "Choir",
+          "Ad-libs",
+          "Runs",
+          "Melisma",
+          "Falsetto",
+          "Bright",
+          "Upbeat",
+          "Energetic",
+          "Fast"
+        ],
+        "lyrics_raw": "[Intro]\n[instrumental — Rhodes + warm pad, 8 bars]\n\n[Verse 1]\n[Female, Soft, Chest voice, No harmony]\n문 앞에 서면\n발걸음이 멈춰져\n가방을 내려놓고\n숨을 한번 쉬어\n\n[Verse 2]\n[Female, Soft, Chest voice, No harmony]\n어깨가 무거웠어\n하루가 길었어\n여기까지 왔으니\n이제 괜찮아\n\n[Pre-Chorus]\n[Gentle, Building]\n번호 누르기 전에\n잠깐만 서 있을게\n\n[Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Interlude]\n[instrumental — Rhodes + pad, 8 bars]\n\n[Verse 3]\n[Female, Soft, Intimate, Chest voice, No harmony]\n안에서 소리가 나\n누가 기다려\n발소리를 들었나봐\n문이 열리려 해\n\n[Verse 4]\n[Female, Soft, Chest voice, No harmony]\n웃음소리가 들려\n따뜻한 냄새가 나\n여기가 내 자리야\n드디어 왔어\n\n[Pre-Chorus]\n[Gentle, Building]\n들어가기 전에\n한 번만 숨 쉴게\n\n[Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Bridge]\n[Sparse, Warm]\n오늘도 수고했어\n이제 다 왔어\n힘들었던 하루도\n여기서 끝이야\n\n[instrumental — Rhodes only, 4 bars]\n\n[Breakdown]\n[Music stops — silence]\n(deep breath)\n후...\n\n[Final Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Outro]\n[Female, Soft, Fading]\n문이 열려\n\n[instrumental — Rhodes + pad fades slowly, 8 bars]",
+        "lyrics_raw_sha256": "713158dec0280735f58090b06db1afa15787a50f42ed7e6cb0877cf30a98f7da"
+      },
+      "remix": {
+        "song_id": "36d296ff-f0af-4b44-a5ad-0bc7cfef0982",
+        "title": "숨 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/36d296ff-f0af-4b44-a5ad-0bc7cfef0982",
+        "observed_at": "2026-11-04T00:43:44.350Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/36d296ff-f0af-4b44-a5ad-0bc7cfef0982.json",
+        "ui_evidence_sha256": "8a981a1e390a79e8b23dc66d61dde5b20ba8f812eefe26dab4744a8c63a6d45d",
+        "style_raw": "Korean indie R&B, lo-fi bedroom production, slow relaxed pocket, Rhodes-led chords with soft tape-worn texture, warm understated synth pad and rounded bass, brushed minimal drums with a gentle pulse, Keep the verses sparse and close; let the pre-chorus add a subtle lift, then open the chorus into a memorable, hummable hook, Bridge strips back to Rhodes and lead voice, followed by a full-stop breath breakdown and a brief sustained Rhodes outro, Single intimate female chest-voice lead, gentle phrasing, precise Korean consonants, clear articulation, moderate room reverb, soft saturation, warm balanced mix",
+        "style_raw_sha256": "5edc24b267878bcf0287214315c8ce75f2046654dcd1c15ce1584999511ea4f2",
+        "style_positive": "Korean indie R&B, lo-fi bedroom production, slow relaxed pocket, Rhodes-led chords with soft tape-worn texture, warm understated synth pad and rounded bass, brushed minimal drums with a gentle pulse, Keep the verses sparse and close; let the pre-chorus add a subtle lift, then open the chorus into a memorable, hummable hook, Bridge strips back to Rhodes and lead voice, followed by a full-stop breath breakdown and a brief sustained Rhodes outro, Single intimate female chest-voice lead, gentle phrasing, precise Korean consonants, clear articulation, moderate room reverb, soft saturation, warm balanced mix",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\n[instrumental — Rhodes + warm pad, 8 bars]\n\n[Verse 1]\n[Female, Soft, Chest voice, No harmony]\n문 앞에 서면\n발걸음이 멈춰져\n가방을 내려놓고\n숨을 한번 쉬어\n\n[Verse 2]\n[Female, Soft, Chest voice, No harmony]\n어깨가 무거웠어\n하루가 길었어\n여기까지 왔으니\n이제 괜찮아\n\n[Pre-Chorus]\n[Gentle, Building]\n번호 누르기 전에\n잠깐만 서 있을게\n\n[Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Interlude]\n[instrumental — Rhodes + pad, 8 bars]\n\n[Verse 3]\n[Female, Soft, Intimate, Chest voice, No harmony]\n안에서 소리가 나\n누가 기다려\n발소리를 들었나봐\n문이 열리려 해\n\n[Verse 4]\n[Female, Soft, Chest voice, No harmony]\n웃음소리가 들려\n따뜻한 냄새가 나\n여기가 내 자리야\n드디어 왔어\n\n[Pre-Chorus]\n[Gentle, Building]\n들어가기 전에\n한 번만 숨 쉴게\n\n[Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Bridge]\n[Sparse, Warm]\n오늘도 수고했어\n이제 다 왔어\n힘들었던 하루도\n여기서 끝이야\n\n[instrumental — Rhodes only, 4 bars]\n\n[Breakdown]\n[Music stops — silence]\n(deep breath)\n후...\n\n[Final Chorus]\n[Soft belt, Chest voice, No harmony]\n숨을 고르면\n하루가 내려가\n문 앞에 서면\n마음이 놓여\n\n숨을 고르면\n어깨가 가벼워져\n문 열기 전에\n잠깐 쉬어갈게\n\n[Outro]\n[Female, Soft, Fading]\n문이 열려\n\n[instrumental — Rhodes + pad fades slowly, 8 bars]",
+        "lyrics_raw_sha256": "713158dec0280735f58090b06db1afa15787a50f42ed7e6cb0877cf30a98f7da"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/8ef9a05d-8e05-4e37-a4b6-b6da1e9b2cb0.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/36d296ff-f0af-4b44-a5ad-0bc7cfef0982.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 50,
+          "remix_line_count": 50,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "Korean Soft R&B, 76 BPM, Ab Major Rhodes-led, warm synth pad underneath, supportive Soft brush kit, gentle pulse, warm bass Clean mix, intimate atmosphere Female vocal, Soft, Gentle, Chest voice dominant Catchy melodic hook, singable melody Simple but memorable topline Precise articulation, clear consonants Verse: Rhodes + pad, intimate, gentle Pre-Chorus: slight build, anticipation Chorus: catchy melodic hook, repeat identical, easy to hum Bridge: Rhodes and voice only, tender Breakdown: music stops completely, silence, audible breath Outro: short phrase, Rhodes + pad sustain fade Single lead vocal throughout No harmonies, no doubles, no backing vocals Moderate reverb, warm room ambience EQ balanced sound, clean mix\n\nKorean indie R&B, lo-fi bedroom production, slow relaxed pocket, Rhodes-led chords with soft tape-worn texture, warm understated synth pad and rounded bass, brushed minimal drums with a gentle pulse, Keep the verses sparse and close; let the pre-chorus add a subtle lift, then open the chorus into a memorable, hummable hook, Bridge strips back to Rhodes and lead voice, followed by a full-stop breath breakdown and a brief sustained Rhodes outro, Single intimate female chest-voice lead, gentle phrasing, precise Korean consonants, clear articulation, moderate room reverb, soft saturation, warm balanced mix",
+      "combined_style_sha256": "181341381790ccef984eb01a374bcdf4f479e3ede283b17eecd6452b0f99a42e",
+      "combined_exclude": [
+        "Rap",
+        "Hip-hop",
+        "Spoken word",
+        "Whisper",
+        "Harmonies",
+        "Backing vocals",
+        "Doubles",
+        "Choir",
+        "Ad-libs",
+        "Runs",
+        "Melisma",
+        "Falsetto",
+        "Bright",
+        "Upbeat",
+        "Energetic",
+        "Fast"
+      ],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 12,
+      "suno_title_after_numbering": "12. 숨 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 13,
+      "song_id": "4708df3d-6f0a-4602-bea4-ccb734cf03db",
+      "title": "이름 (Lo-Fi Remix)",
+      "duration_ui": "3:34",
+      "original": {
+        "song_id": "73330746-1b39-4cc4-8ff5-f2d3d06aa882",
+        "title": "9. 이름",
+        "url": "https://suno.com/song/73330746-1b39-4cc4-8ff5-f2d3d06aa882",
+        "observed_at": "2026-11-04T00:45:59.133Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/73330746-1b39-4cc4-8ff5-f2d3d06aa882.json",
+        "ui_evidence_sha256": "3e0c7ec81db27d0f91365f69afb23946536cb476c3ec2facc35b74842a0d2503",
+        "style_raw": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles, ‑Autotune, ‑Vocoder, ‑Choir, ‑Backing vocals, ‑Runs, ‑Melisma, ‑Ad-libs, ‑Rap, ‑Hip-hop, ‑Bright",
+        "style_raw_sha256": "d01adb676b1a8563a7b570b5d900262128fd0fcf56fb55123755680e5d32cf47",
+        "style_positive": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles",
+        "exclude": [
+          "Autotune",
+          "Vocoder",
+          "Choir",
+          "Backing vocals",
+          "Runs",
+          "Melisma",
+          "Ad-libs",
+          "Rap",
+          "Hip-hop",
+          "Bright"
+        ],
+        "lyrics_raw": "[intro]\n조용히 네 이름을 부르면\n하루가 제 자리로 돌아와.\n\n[verse1]\n웃고 들어와도 눈이 먼저 말해.\n오늘이 쉽지 않았다는 걸.\n나도 모르게 마음이 매말라서\n괜찮다는 말만 아껴두었지.\n그때 너는 묻지 않고 다가와.\n내 숨부터 고르게 해줬어.\n\n[chorus]\n힘든 날에 잠시 기대도 될까.\n내가 무너지지 않게.\n서로가 서로의 곁을 지키는 일\n그걸 우리 사랑이라 부르자.\n오르막 같은 하루 끝에서도\n발 맞춰 걷는 우리\n너만 있으면\n너만 있으면\n\n[verse2]\n외로움이 문득 크게 들릴 때\n세상에 나만 남은 것 같을 때\n너는 작은 등불처럼 앉아\n내 마음에 길을 밝혀줬지.\n말보다는 오래된 온도로\n괜찮다는 말을 해준 사람\n나도 이제는 네 하루를 \n내 두손으로 감싸고 싶어.\n\n[bridge]\n우리도 가끔은 서툴겠지.\n마음이 앞서서 다칠 때도 있겠지.\n그래도 한 걸음만 늦춰서\n서로를 다시 바라보자.\n손 놓치 말자\n그 한마디면 돼.\n길이 더 가팔라져도\n길이 보이지 않아도\n같이 걷자 .\n지금처럼\n\n[chorus]\n힘든 날에 잠시 기대도 될까.\n내가 무너지지 않게.\n서로가 서로의 곁을 지키는 일\n그걸 우리 사랑이라 부르자.\n오르막 같은 하루 끝에서도\n발 맞춰 걷는 우리\n너만 있으면\n너만 있으면\n\n[outro]\n고마워.\n오늘도 여기 있어줘서\n내일도 우리 천천히\n걸어가자.\n고마워.\n오늘도 여기 있어줘서\n내일도 우리 천천히\n걸어가자.\n\n[Ending]",
+        "lyrics_raw_sha256": "7ede9622970ca1ee51343740eb24d83825ee426fe6caf9317ce3ad82399e4336"
+      },
+      "remix": {
+        "song_id": "4708df3d-6f0a-4602-bea4-ccb734cf03db",
+        "title": "이름 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/4708df3d-6f0a-4602-bea4-ccb734cf03db",
+        "observed_at": "2026-11-04T00:43:46.297Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/4708df3d-6f0a-4602-bea4-ccb734cf03db.json",
+        "ui_evidence_sha256": "36f5ca7b831bf702e4012bb14f77c2d268f95838ab3c887946cf21fd733644cb",
+        "style_raw": "Lo-fi indie R&B, relaxed half-time pocket with soft swung drums, muted electric piano chords, rounded bass, faint tape hiss and intimate close-miked Korean lead vocal, Keep consonants crisp and syllables clearly separated, use measured chest-voice phrasing with natural breaths, Begin sparse, add warm guitar and subtle harmonic color through the chorus, pull back for the bridge, then return with a gently fuller final chorus and an understated outro, Soft saturation, dry vocal up front, narrow warm mix",
+        "style_raw_sha256": "e997aca91688c8de6e812f44855266b4356c65e2ab002ff42036421fec63b494",
+        "style_positive": "Lo-fi indie R&B, relaxed half-time pocket with soft swung drums, muted electric piano chords, rounded bass, faint tape hiss and intimate close-miked Korean lead vocal, Keep consonants crisp and syllables clearly separated, use measured chest-voice phrasing with natural breaths, Begin sparse, add warm guitar and subtle harmonic color through the chorus, pull back for the bridge, then return with a gently fuller final chorus and an understated outro, Soft saturation, dry vocal up front, narrow warm mix",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\n조용히 네 이름을 부르면\n하루가 제자리로 돌아와\n\n[Verse 1]\n웃고 들어와도 눈이 먼저 말해\n오늘이 쉽지 않았다는 걸\n나도 모르게 마음이 메말라서\n괜찮다는 말만 아껴 두었지\n그때 너는 묻지 않고 다가와\n내 숨부터 고르게 해줬어\n\n[Chorus]\n힘든 날에 잠시 기대도 될까\n내가 무너지지 않게\n서로가 서로의 곁을 지키는 일\n그걸 우리 사랑이라 부르자\n오르막 같은 하루 끝에서도\n발 맞춰 걷는 우리\n너만 있으면\n너만 있으면\n\n[Verse 2]\n외로움이 문득 크게 들릴 때\n세상에 나만 남은 것 같을 때\n너는 작은 등불처럼 앉아\n내 마음에 길을 밝혀줬지\n말보다는 오래된 온도로\n괜찮다는 말을 해준 사람\n나도 이제는 네 하루를\n내 두 손으로 감싸고 싶어\n\n[Bridge]\n우리도 가끔은 서툴겠지\n마음이 앞서서 다칠 때도 있겠지\n그래도 한 걸음만 늦춰서\n서로를 다시 바라보자\n손 놓치 말자\n그 한마디면 돼\n길이 더 가팔라져도\n길이 보이지 않아도\n같이 걷자\n지금처럼\n\n[Chorus]\n힘든 날에 잠시 기대도 될까\n내가 무너지지 않게\n서로가 서로의 곁을 지키는 일\n그걸 우리 사랑이라 부르자\n오르막 같은 하루 끝에서도\n발 맞춰 걷는 우리\n너만 있으면\n너만 있으면\n\n[Outro]\n고마워\n오늘도 여기 있어줘서\n내일도 우리 천천히\n걸어가자\n고마워\n오늘도 여기 있어줘서\n내일도 우리 천천히\n걸어가자\n\n[Ending]",
+        "lyrics_raw_sha256": "dfddc87b1b08ad4019757aa31afcb5b41414f8f9c1feb3162979921b9dafebf9"
+      },
+      "lineage": {
+        "status": "confirmed_prior_suno_parent_link",
+        "evidence": [
+          ".ai/research/2026-11-01-2300-nine-tracks/nine-tracks.json",
+          ".ai/research/2026-11-01-2300-nine-tracks/raw/04-4708df3d-detail.txt"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 50,
+          "remix_line_count": 50,
+          "equal": false,
+          "sequence_similarity": 0.98,
+          "diff": [
+            "--- original",
+            "+++ remix",
+            "@@ -2,7 +2,7 @@",
+            " 하루가제자리로돌아와",
+            " 웃고들어와도눈이먼저말해",
+            " 오늘이쉽지않았다는걸",
+            "-나도모르게마음이매말라서",
+            "+나도모르게마음이메말라서",
+            " 괜찮다는말만아껴두었지",
+            " 그때너는묻지않고다가와",
+            " 내숨부터고르게해줬어"
+          ]
+        },
+        "note": "Exact parent link was observed on 2026-11-01. Original Styles and lyrics were read again on 2026-11-04; current page did not display that parent link.",
+        "prior_relation": "Remix of"
+      },
+      "style_record_status": "confirmed_reconstruction",
+      "combined_style": "Korean Neo-soul R&B, 100 BPM, G minor Rhodes-led, electric bass very dry, layback groove, rim-click, NO 808, Male vocal, Raw, Direct, Dry, Simple melody, Chest voice dominant, No falsetto, no runs, no melisma, Precise articulation, Light room reverb, Clean mix, Verse1: Rhodes chords, sparse bass, confessional, gentle phrasing, Verse2: same contour; last 2 lines rise in intensity, Chorus: catchy singable hook, repeat identical; simple memorable melody, chest voice, Chorus2: bigger by arrangement only; no new vocal layers, Bridge: Rhodes + voice only, builds every bar, Outro: Rhodes fades, synth pad sustain, Single lead vocal throughout, No harmonies, no doubles\n\nLo-fi indie R&B, relaxed half-time pocket with soft swung drums, muted electric piano chords, rounded bass, faint tape hiss and intimate close-miked Korean lead vocal, Keep consonants crisp and syllables clearly separated, use measured chest-voice phrasing with natural breaths, Begin sparse, add warm guitar and subtle harmonic color through the chorus, pull back for the bridge, then return with a gently fuller final chorus and an understated outro, Soft saturation, dry vocal up front, narrow warm mix",
+      "combined_style_sha256": "51e226b0e04615d134c60f1ce25c04945632c9ee17c5bc7d6ead30056cfeeaf3",
+      "combined_exclude": [
+        "Autotune",
+        "Vocoder",
+        "Choir",
+        "Backing vocals",
+        "Runs",
+        "Melisma",
+        "Ad-libs",
+        "Rap",
+        "Hip-hop",
+        "Bright"
+      ],
+      "ready_for_final_source": true,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 4,
+      "suno_title_after_numbering": "4. 이름 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 14,
+      "song_id": "17a24019-4412-4443-b4e7-6d305d539958",
+      "title": "마음 밖 (Lo-Fi Remix)",
+      "duration_ui": "3:08",
+      "original": {
+        "song_id": "d9a92230-a384-4077-9e9b-8ce9f7bb2159",
+        "title": "1. 마음 밖",
+        "url": "https://suno.com/song/d9a92230-a384-4077-9e9b-8ce9f7bb2159",
+        "observed_at": "2026-11-04T00:46:00.443Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/d9a92230-a384-4077-9e9b-8ce9f7bb2159.json",
+        "ui_evidence_sha256": "b921e4c6b60cc1b7df1c78a8f371243ddf91de5db6175b3511346c531c646fac",
+        "style_raw": "articulation, Korean R&B/pop ballad, 96–106 BPM, key color like A♭, Piano/Rhodes-led, cinematic but restrained, Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls, Subtle strings/pads in choruses only, never dramatic, Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm, Final chorus adds a gentle “major-color” lift via chords/strings, not belting, Female vocal very forward and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction, Melody understated (no big leaps, no catchy hook), Outro instrumental fade",
+        "style_raw_sha256": "5845bbdef2674d97c1a90804e96a09bd25fa597fc509a71c432b42f47929b4dd",
+        "style_positive": "articulation, Korean R&B/pop ballad, 96–106 BPM, key color like A♭, Piano/Rhodes-led, cinematic but restrained, Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls, Subtle strings/pads in choruses only, never dramatic, Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm, Final chorus adds a gentle “major-color” lift via chords/strings, not belting, Female vocal very forward and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction, Melody understated (no big leaps, no catchy hook), Outro instrumental fade",
+        "exclude": [],
+        "lyrics_raw": "[intro][Instrumental in]\n오늘은 묻지 않아\n표정이 먼저 말해\n\n[verse1]\n네 말이 짧아\n눈이 멀어\n거리만 늘어\n줄어드는 건\n소리도 없어\n\n[bridge]\n나도 이제\n말을 접어\n붙잡을수록\n늦을까 봐\n\n[chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n나는 여기서 멈춰\n너의 마음 밖\n\n[verse2]\n우리 안에서\n나는 혼자\n웃는 연습도\n멈춰버려\n더 조용해\n\n[bridge]\n흔들리면\n돌아갈까 봐\n기억을 접어\n미워지기 전\n\n[chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n\n[chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n나는 여기서 멈춰\n너의 마음 밖\n\n[outro]\n[Instrumental fade out]",
+        "lyrics_raw_sha256": "f81446ec25738a31af6909dc066b6eec110574b87b59c05b08cb74bd083a4da5"
+      },
+      "remix": {
+        "song_id": "17a24019-4412-4443-b4e7-6d305d539958",
+        "title": "마음 밖 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/17a24019-4412-4443-b4e7-6d305d539958",
+        "observed_at": "2026-11-04T00:43:48.423Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/17a24019-4412-4443-b4e7-6d305d539958.json",
+        "ui_evidence_sha256": "35433d9039342ef2dcf1adfba9c9d1d3b2fe6b130adc1f535af3ee3aa341c870",
+        "style_raw": "Korean indie R&B, lo-fi remix, relaxed half-time pocket with softened kick and dry rim clicks, rounded subdued bass, muted Rhodes and dusty piano fragments, gentle tape saturation and restrained room texture, Keep verses close and sparse, let the choruses widen subtly with filtered keys and soft pad support, then ease into a worn instrumental fade, Forward intimate female lead, warm husky chest voice, clear Korean articulation, conversational phrasing, natural breaths, restrained vibrato; dry close vocal with minimal pitch correction",
+        "style_raw_sha256": "5273a4afb7c36b8dd3a78683ca4948f88812e25369cb2d3fc07a7f75b9de2536",
+        "style_positive": "Korean indie R&B, lo-fi remix, relaxed half-time pocket with softened kick and dry rim clicks, rounded subdued bass, muted Rhodes and dusty piano fragments, gentle tape saturation and restrained room texture, Keep verses close and sparse, let the choruses widen subtly with filtered keys and soft pad support, then ease into a worn instrumental fade, Forward intimate female lead, warm husky chest voice, clear Korean articulation, conversational phrasing, natural breaths, restrained vibrato; dry close vocal with minimal pitch correction",
+        "exclude": [],
+        "lyrics_raw": "[Intro: Instrumental]\n오늘은 묻지 않아\n표정이 먼저 말해\n\n[Verse 1]\n네 말이 짧아\n눈이 멀어\n거리만 늘어\n줄어드는 건\n소리도 없어\n\n[Bridge]\n나도 이제\n말을 접어\n붙잡을수록\n늦을까 봐\n\n[Chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n나는 여기서 멈춰\n너의 마음 밖\n\n[Verse 2]\n우리 안에서\n나는 혼자\n웃는 연습도\n멈춰버려\n더 조용해\n\n[Bridge]\n흔들리면\n돌아갈까 봐\n기억을 접어\n미워지기 전\n\n[Chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n\n[Chorus]\n끝을 아는 사람은\n숨을 먼저 세어\n나는 여기서 멈춰\n너의 마음 밖\n나는 여기서 멈춰\n너의 마음 밖\n\n[Outro: Instrumental fade out]",
+        "lyrics_raw_sha256": "2951bd3929f09351a80dcb75a8e0759817b754ad0c6742c0148f472696674148"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/d9a92230-a384-4077-9e9b-8ce9f7bb2159.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/17a24019-4412-4443-b4e7-6d305d539958.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 36,
+          "remix_line_count": 36,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "articulation, Korean R&B/pop ballad, 96–106 BPM, key color like A♭, Piano/Rhodes-led, cinematic but restrained, Warm keys upfront, soft supportive bass, tight understated kick (present, not huge), rim/snare light, simple hats, no rolls, Subtle strings/pads in choruses only, never dramatic, Verse intimate and sparse; chorus opens slightly wider with more harmony, not more rhythm, Final chorus adds a gentle “major-color” lift via chords/strings, not belting, Female vocal very forward and dry/close-mic: warm husky tone, clear Korean diction, conversational phrasing, controlled vibrato, natural breaths, minimal pitch correction, Melody understated (no big leaps, no catchy hook), Outro instrumental fade\n\nKorean indie R&B, lo-fi remix, relaxed half-time pocket with softened kick and dry rim clicks, rounded subdued bass, muted Rhodes and dusty piano fragments, gentle tape saturation and restrained room texture, Keep verses close and sparse, let the choruses widen subtly with filtered keys and soft pad support, then ease into a worn instrumental fade, Forward intimate female lead, warm husky chest voice, clear Korean articulation, conversational phrasing, natural breaths, restrained vibrato; dry close vocal with minimal pitch correction",
+      "combined_style_sha256": "79189e6133e957206b308a0f6c12e257ec123f0b5121f9a6adb73e3d7365a5d1",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 6,
+      "suno_title_after_numbering": "6. 마음 밖 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 15,
+      "song_id": "0908a587-be93-46c5-a8e6-46428f3efba5",
+      "title": "물안개 (Lo-Fi Remix)",
+      "duration_ui": "2:18",
+      "original": {
+        "song_id": "014ca2e3-c959-44a4-a372-aad1956acccb",
+        "title": "4. 물안개",
+        "url": "https://suno.com/song/014ca2e3-c959-44a4-a372-aad1956acccb",
+        "observed_at": "2026-11-04T00:46:02.474Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/014ca2e3-c959-44a4-a372-aad1956acccb.json",
+        "ui_evidence_sha256": "7466b5c4ce6dae417cc4e166e28b1b6c86a2cf7d82e4fee7d5ab567ff5979a8d",
+        "style_raw": "articulation, Korean Lo-fi R&B, 80 BPM, Eb Major, felt piano-led, soft shaker, hazy ambient pad, cinematic but restrained, wide stereo, Raw vocal, Powerful, Solid, Direct, Dry, Unprocessed, Deep male vocal, mature voice, Chest voice dominant throughout, No falsetto, Strong vocal attack, Verse2 adds tension with stronger dynamics; chorus hits peak with powerful belting and controlled vibrato, Lead vocal remains single and dominant, No harmony, no backing vocals, no doubles, Final chorus adds warmth via piano/pad only; outro felt piano fades into silence, ‑Airy, ‑Falsetto, ‑Harmonized, ‑Backing vocals, ‑Whisper, ‑Auto-tune, ‑doubled vocals, ‑choir, ‑vocal layers",
+        "style_raw_sha256": "5584b223f7120437631705527edda98e4efc901782091c4a02db21f35ae57803",
+        "style_positive": "articulation, Korean Lo-fi R&B, 80 BPM, Eb Major, felt piano-led, soft shaker, hazy ambient pad, cinematic but restrained, wide stereo, Raw vocal, Powerful, Solid, Direct, Dry, Unprocessed, Deep male vocal, mature voice, Chest voice dominant throughout, No falsetto, Strong vocal attack, Verse2 adds tension with stronger dynamics; chorus hits peak with powerful belting and controlled vibrato, Lead vocal remains single and dominant, No harmony, no backing vocals, no doubles, Final chorus adds warmth via piano/pad only; outro felt piano fades into silence",
+        "exclude": [
+          "Airy",
+          "Falsetto",
+          "Harmonized",
+          "Backing vocals",
+          "Whisper",
+          "Auto-tune",
+          "doubled vocals",
+          "choir",
+          "vocal layers"
+        ],
+        "lyrics_raw": "[intro]                                                                                                             \n  [instrumental]                                                                                                      \n                                                                                                                      \n  [verse1]                                                                                                            \n  [Direct vocal, No harmony]                                                                                          \n  가로등이 번져                                                                                                       \n  젖은 바닥 위로                                                                                                      \n  발자국만 남아                                                                                                       \n  흐린 길의 끝에                                                                                                      \n                                                                                                                      \n  [bridge1]                                                                                                           \n  [Chest voice]                                                                                                       \n  코트 깃을 세워도                                                                                                    \n  스며드는 안개 속                                                                                                    \n  걸음마다 젖어가                                                                                                     \n  번져버린 발자국                                                                                                     \n                                                                                                                      \n  [chorus]                                                                                                            \n  [Powerful belt, No backing vocals]                                                                                  \n  가로등이 번져                                                                                                       \n  물안개 속 혼자                                                                                                      \n  지워지지 않아                                                                                                       \n  젖은 밤의 흔적                                                                                                      \n                                                                                                                      \n  [verse2]                                                                                                            \n  [Direct vocal, No harmony]                                                                                          \n  차가움이 번져                                                                                                       \n  젖은 소매 위로                                                                                                      \n  입김만이 남아                                                                                                       \n  떨리는 숨 끝에                                                                                                      \n                                                                                                                      \n  [bridge2]                                                                                                           \n  [Chest voice]                                                                                                       \n  주머니에 손 넣어도                                                                                                  \n  스며드는 냉기 속                                                                                                    \n  가슴까지 젖어와                                                                                                     \n  번져버린 발자국                                                                                                     \n                                                                                                                      \n  [chorus]                                                                                                            \n  [Powerful belt, No backing vocals]                                                                                  \n  가로등이 번져                                                                                                       \n  물안개 속 혼자                                                                                                      \n  지워지지 않아",
+        "lyrics_raw_sha256": "ff75dd50d6b91d71f4943d7e6ff95420741c73c8ff714a9d7fbea7fd3d6be8b7"
+      },
+      "remix": {
+        "song_id": "0908a587-be93-46c5-a8e6-46428f3efba5",
+        "title": "물안개 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/0908a587-be93-46c5-a8e6-46428f3efba5",
+        "observed_at": "2026-11-04T00:43:49.657Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/0908a587-be93-46c5-a8e6-46428f3efba5.json",
+        "ui_evidence_sha256": "a8729132a55c3a19748f021a5bb572e3815d6caa03fe794c18d7ee46168ab00e",
+        "style_raw": "Lo-fi Korean R&B, muted Rhodes chords and softened electric piano, dusty swung drums with brushed snare and subdued kick, warm restrained bass, faint tape hiss and gentle wow, conversational chest-voice lead kept forward and intimate, sparse verses opening into a fuller but still understated chorus, reflective instrumental gaps, mellow filtered mix with rounded transients",
+        "style_raw_sha256": "76ce8dc13459fd15fa0e47c177ba0f1dd944da1b2daf4a284ad8c9c613af737f",
+        "style_positive": "Lo-fi Korean R&B, muted Rhodes chords and softened electric piano, dusty swung drums with brushed snare and subdued kick, warm restrained bass, faint tape hiss and gentle wow, conversational chest-voice lead kept forward and intimate, sparse verses opening into a fuller but still understated chorus, reflective instrumental gaps, mellow filtered mix with rounded transients",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\n[Instrumental]\n\n[Verse 1]\n[Direct vocal, no harmony]\n가로등이 번져\n젖은 바닥 위로\n발자국만 남아\n흐린 길의 끝에\n\n[Bridge 1]\n[Chest voice]\n코트 깃을 세워도\n스며드는 안개 속\n걸음마다 젖어가\n번져버린 발자국\n\n[Chorus]\n[Powerful belt, no backing vocals]\n가로등이 번져\n물안개 속 혼자\n지워지지 않아\n젖은 밤의 흔적\n\n[Verse 2]\n[Direct vocal, no harmony]\n차가움이 번져\n젖은 소매 위로\n입김만이 남아\n떨리는 숨 끝에\n\n[Bridge 2]\n[Chest voice]\n주머니에 손 넣어도\n스며드는 냉기 속\n가슴까지 젖어와\n번져버린 발자국\n\n[Chorus]\n[Powerful belt, no backing vocals]\n가로등이 번져\n물안개 속 혼자\n지워지지 않아",
+        "lyrics_raw_sha256": "00f9aa4babcffb57a7122bf7011054f671f6bee5046b6c84add48fbec81c14a9"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/014ca2e3-c959-44a4-a372-aad1956acccb.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/0908a587-be93-46c5-a8e6-46428f3efba5.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 23,
+          "remix_line_count": 23,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "articulation, Korean Lo-fi R&B, 80 BPM, Eb Major, felt piano-led, soft shaker, hazy ambient pad, cinematic but restrained, wide stereo, Raw vocal, Powerful, Solid, Direct, Dry, Unprocessed, Deep male vocal, mature voice, Chest voice dominant throughout, No falsetto, Strong vocal attack, Verse2 adds tension with stronger dynamics; chorus hits peak with powerful belting and controlled vibrato, Lead vocal remains single and dominant, No harmony, no backing vocals, no doubles, Final chorus adds warmth via piano/pad only; outro felt piano fades into silence\n\nLo-fi Korean R&B, muted Rhodes chords and softened electric piano, dusty swung drums with brushed snare and subdued kick, warm restrained bass, faint tape hiss and gentle wow, conversational chest-voice lead kept forward and intimate, sparse verses opening into a fuller but still understated chorus, reflective instrumental gaps, mellow filtered mix with rounded transients",
+      "combined_style_sha256": "7c98d70177c8a28911ad76d808d1f621d3d150563c0f59dd0cbdd5b14245a272",
+      "combined_exclude": [
+        "Airy",
+        "Falsetto",
+        "Harmonized",
+        "Backing vocals",
+        "Whisper",
+        "Auto-tune",
+        "doubled vocals",
+        "choir",
+        "vocal layers"
+      ],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 14,
+      "suno_title_after_numbering": "14. 물안개 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 16,
+      "song_id": "aca55231-9e58-469d-b0ce-c29cb767eaa5",
+      "title": "골목 (Lo-Fi Remix)",
+      "duration_ui": "3:27",
+      "original": {
+        "song_id": "d6fc300a-d0d3-4265-aa1c-bb1325283d60",
+        "title": "7. 골목",
+        "url": "https://suno.com/song/d6fc300a-d0d3-4265-aa1c-bb1325283d60",
+        "observed_at": "2026-11-04T00:46:04.613Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/d6fc300a-d0d3-4265-aa1c-bb1325283d60.json",
+        "ui_evidence_sha256": "f886e4bb4e85b070c2539491d619a4b8fb7ac8a6eadf4199d883a1c658db3864",
+        "style_raw": "Korean Slow R&B Ballad, 67 BPM, Db Major Male vocal, Raw, Dry, Unprocessed, Chest voice dominant No falsetto, No runs, No melisma Speech-like phrasing, Narrow melodic range Precise articulation, clear consonants supportive, warm pad texture Minimal drums or drumless verses Soft bass, low presence Moderate reverb, EQ balanced sound, clean mix Verse2 subtle intensity increase by vocal weight only Chorus: longer sustain on hook phrase, no belt Bridge: single guitar line, no solo flourish No harmony, no backing vocals, no doubles Lead vocal remains single and dominant throughout",
+        "style_raw_sha256": "f3da373be29ebba2dc1f88a2e9689fbeec8f879d4cdff6f1ba6d156f4ccbb96c",
+        "style_positive": "Korean Slow R&B Ballad, 67 BPM, Db Major Male vocal, Raw, Dry, Unprocessed, Chest voice dominant No falsetto, No runs, No melisma Speech-like phrasing, Narrow melodic range Precise articulation, clear consonants supportive, warm pad texture Minimal drums or drumless verses Soft bass, low presence Moderate reverb, EQ balanced sound, clean mix Verse2 subtle intensity increase by vocal weight only Chorus: longer sustain on hook phrase, no belt Bridge: single guitar line, no solo flourish No harmony, no backing vocals, no doubles Lead vocal remains single and dominant throughout",
+        "exclude": [],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse]\n[Chest voice, No harmony]\n해가 지고 나면 골목을 걸어요\n익숙한 길인데 오늘은 낯설죠\n\n[verse]\n[Direct vocal, Dry voice]\n담벼락 그림자가 길어질 때쯤\n발자국 소리만 골목에 울려요\n\n[verse]\n[Chest voice]\n아무 생각 없이 걷다 보면 좋아요\n가로등 불빛이 하나둘 켜지죠\n\n[verse]\n[Direct vocal]\n모퉁이를 돌면 바람이 불어와\n코끝이 시려와 주머니에 손을 넣어요\n\n[pre-chorus]\n[Chest voice, No falsetto]\n어디로 가는지 몰라도 괜찮아요\n그냥 이렇게 걷는 게 좋은 밤이에요\n\n[chorus]\n[Powerful belt, Chest voice, No harmony]\n천천히 천천히 걸어가요\n서두를 것 없이 흘러가요\n저 모퉁이 끝에 뭐가 있을까\n오늘 밤은 조금 멀리 가볼까요\n\n[verse]\n[Direct vocal, Dry voice]\n문 닫은 가게 앞 의자가 보여요\n누군가 앉았던 온기가 남았을까요\n\n[verse]\n[Chest voice]\n골목 끝 편의점 불빛이 새어나와\n잠깐 들를까 하다가 그냥 지나쳐요\n\n[instrumental]\n\n[chorus]\n[Powerful belt, Chest voice, No harmony]\n천천히 천천히 걸어가요\n서두를 것 없이 흘러가요\n저 모퉁이 끝에 뭐가 있을까\n오늘 밤은 조금 멀리 가볼까요\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "8b45f33445bb44bba454f8bdfa2a9942801469d86d2fbbf6dc4b7f06e91baa03"
+      },
+      "remix": {
+        "song_id": "aca55231-9e58-469d-b0ce-c29cb767eaa5",
+        "title": "골목 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/aca55231-9e58-469d-b0ce-c29cb767eaa5",
+        "observed_at": "2026-11-04T00:43:51.636Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/aca55231-9e58-469d-b0ce-c29cb767eaa5.json",
+        "ui_evidence_sha256": "1dfd0f46555d20bd036bc2076fedb735b87b96e1920604a40e949143ab64f8a3",
+        "style_raw": "Lo-fi Korean indie R&B, unhurried pocket groove with softened boom-bap drums and restrained low end; mellow Rhodes chords, muted guitar accents, subtle tape hiss and gentle saturation, Keep the original song’s melodic contour and section flow, with intimate dry chest-voice Korean lead, no harmony layers, Let the arrangement open sparsely, warm gradually through the chorus, dip into a short instrumental passage, then return to the chorus and settle into an understated instrumental outro, Close, soft-edged mix with rounded transients and a lived-in room feel",
+        "style_raw_sha256": "694b092d5f2cdcf92e366ed8fa21245276e19647c248d7668f5e2d852ad21b89",
+        "style_positive": "Lo-fi Korean indie R&B, unhurried pocket groove with softened boom-bap drums and restrained low end; mellow Rhodes chords, muted guitar accents, subtle tape hiss and gentle saturation, Keep the original song’s melodic contour and section flow, with intimate dry chest-voice Korean lead, no harmony layers, Let the arrangement open sparsely, warm gradually through the chorus, dip into a short instrumental passage, then return to the chorus and settle into an understated instrumental outro, Close, soft-edged mix with rounded transients and a lived-in room feel",
+        "exclude": [],
+        "lyrics_raw": "[Intro]\n[Instrumental]\n\n[Verse]\n[Chest voice, No harmony]\n해가 지고 나면 골목을 걸어요\n익숙한 길인데 오늘은 낯설죠\n\n[Verse]\n[Direct vocal, Dry voice]\n담벼락 그림자가 길어질 때쯤\n발자국 소리만 골목에 울려요\n\n[Verse]\n[Chest voice]\n아무 생각 없이 걷다 보면 좋아요\n가로등 불빛이 하나둘 켜지죠\n\n[Verse]\n[Direct vocal]\n모퉁이를 돌면 바람이 불어와\n코끝이 시려와 주머니에 손을 넣어요\n\n[Pre-Chorus]\n[Chest voice, No falsetto]\n어디로 가는지 몰라도 괜찮아요\n그냥 이렇게 걷는 게 좋은 밤이에요\n\n[Chorus]\n[Chest voice, No harmony]\n천천히 천천히 걸어가요\n서두를 것 없이 흘러가요\n저 모퉁이 끝에 뭐가 있을까\n오늘 밤은 조금 멀리 가볼까요\n\n[Verse]\n[Direct vocal, Dry voice]\n문 닫은 가게 앞 의자가 보여요\n누군가 앉았던 온기가 남았을까요\n\n[Verse]\n[Chest voice]\n골목 끝 편의점 불빛이 새어나와\n잠깐 들를까 하다가 그냥 지나쳐요\n\n[Instrumental]\n\n[Chorus]\n[Chest voice, No harmony]\n천천히 천천히 걸어가요\n서두를 것 없이 흘러가요\n저 모퉁이 끝에 뭐가 있을까\n오늘 밤은 조금 멀리 가볼까요\n\n[Outro]\n[Instrumental]",
+        "lyrics_raw_sha256": "72a6367246a0f0d4511be570543f0508667a69d44796bebf7120e55b2f805c2a"
+      },
+      "lineage": {
+        "status": "inferred_from_title_and_lyrics",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/library-search.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/d6fc300a-d0d3-4265-aa1c-bb1325283d60.json",
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/aca55231-9e58-469d-b0ce-c29cb767eaa5.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 22,
+          "remix_line_count": 22,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Original candidate selected by matching title and sung lyric content from the library. Suno parent link was not observed; this pairing and combined STYLE remain provisional."
+      },
+      "style_record_status": "provisional_reconstruction",
+      "combined_style": "Korean Slow R&B Ballad, 67 BPM, Db Major Male vocal, Raw, Dry, Unprocessed, Chest voice dominant No falsetto, No runs, No melisma Speech-like phrasing, Narrow melodic range Precise articulation, clear consonants supportive, warm pad texture Minimal drums or drumless verses Soft bass, low presence Moderate reverb, EQ balanced sound, clean mix Verse2 subtle intensity increase by vocal weight only Chorus: longer sustain on hook phrase, no belt Bridge: single guitar line, no solo flourish No harmony, no backing vocals, no doubles Lead vocal remains single and dominant throughout\n\nLo-fi Korean indie R&B, unhurried pocket groove with softened boom-bap drums and restrained low end; mellow Rhodes chords, muted guitar accents, subtle tape hiss and gentle saturation, Keep the original song’s melodic contour and section flow, with intimate dry chest-voice Korean lead, no harmony layers, Let the arrangement open sparsely, warm gradually through the chorus, dip into a short instrumental passage, then return to the chorus and settle into an understated instrumental outro, Close, soft-edged mix with rounded transients and a lived-in room feel",
+      "combined_style_sha256": "d5b2852f4408974ae340a6284866d99e19837546e006dac7fba00a5d010a465d",
+      "combined_exclude": [],
+      "ready_for_final_source": false,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 16,
+      "suno_title_after_numbering": "16. 골목 (Lo-Fi Remix)"
+    },
+    {
+      "capture_index_provisional": 17,
+      "song_id": "5654d747-4921-416f-9b72-755bf27d734a",
+      "title": "물결 (Lo-Fi Remix)",
+      "duration_ui": "2:13",
+      "original": {
+        "song_id": "480ba65e-5910-4116-b1fd-5d671461b185",
+        "title": "6. 물결",
+        "url": "https://suno.com/song/480ba65e-5910-4116-b1fd-5d671461b185",
+        "observed_at": "2026-11-04T00:46:06.703Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/480ba65e-5910-4116-b1fd-5d671461b185.json",
+        "ui_evidence_sha256": "3428bc165339c20d4581c0c554e7063d2d0155eb394b5820948619a93a2eb3b4",
+        "style_raw": "Korean Indie Alt R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal, ‑Falsetto, ‑Airy, ‑Whisper, ‑Breathiness, ‑Growl, ‑Vibrato, ‑Opera, ‑Dramatic, ‑Harmonized, ‑Backing vocals, ‑Choir, ‑Intense, ‑Mumbled",
+        "style_raw_sha256": "ae0527f5d5a91f30e158037fbe8d50b01880366f86372f01c204bce25f82ba0e",
+        "style_positive": "Korean Indie Alt R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal",
+        "exclude": [
+          "Falsetto",
+          "Airy",
+          "Whisper",
+          "Breathiness",
+          "Growl",
+          "Vibrato",
+          "Opera",
+          "Dramatic",
+          "Harmonized",
+          "Backing vocals",
+          "Choir",
+          "Intense",
+          "Mumbled"
+        ],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony, Speech-like]\n물 위에 떠 있어\n햇살이 눈부셔 눈 감아\n바람이 불어와\n그냥 이대로 있고 싶어\n\n[bridge1]\n[Chest voice, Intimate]\n물가에 앉아 있어\n아무 생각 없이\n이대로 괜찮아\n\n[chorus]\n[High register chest voice, Straight tone]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[verse2]\n[Groove locks in, Vocal forward]\n손끝을 담가봐\n차갑지 않아 괜찮아\n숨을 내쉬어봐\n나도 천천히 가라앉아\n\n[bridge2]\n[Chest voice, Intimate]\n손등에 물방울\n말 안 해도 알아\n이대로 괜찮아\n\n[chorus] [Chest voice]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[chorus] [Chest voice]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "c439458fea7c4f764bff42c2dae3fd905f531a7d604680ec49660249303c785b"
+      },
+      "remix": {
+        "song_id": "5654d747-4921-416f-9b72-755bf27d734a",
+        "title": "물결 (Lo-Fi Remix)",
+        "url": "https://suno.com/song/5654d747-4921-416f-9b72-755bf27d734a",
+        "observed_at": "2026-11-04T00:43:53.897Z",
+        "ui_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-ui/5654d747-4921-416f-9b72-755bf27d734a.json",
+        "ui_evidence_sha256": "08025a7635c77497e937e95ad6f5a3865133efa1319b916f0f0d867601dd8303",
+        "style_raw": "Modern Indie R&B, Lo-fi Remastered, Articulation, ‑Falsetto, ‑Airy, ‑Whisper, ‑Breathiness, ‑Growl, ‑Vibrato, ‑Opera, ‑Dramatic, ‑Harmonized, ‑Backing vocals, ‑Choir, ‑Intense, ‑Mumbled",
+        "style_raw_sha256": "81ef04b2465163852b81548f26aec6dcaa3c5164e0634a18a18651df34d4b3df",
+        "style_positive": "Modern Indie R&B, Lo-fi Remastered, Articulation",
+        "exclude": [
+          "Falsetto",
+          "Airy",
+          "Whisper",
+          "Breathiness",
+          "Growl",
+          "Vibrato",
+          "Opera",
+          "Dramatic",
+          "Harmonized",
+          "Backing vocals",
+          "Choir",
+          "Intense",
+          "Mumbled"
+        ],
+        "lyrics_raw": "[intro]\n[instrumental]\n\n[verse1]\n[Direct male vocal, No harmony, Speech-like]\n물 위에 떠 있어\n햇살이 눈부셔 눈 감아\n바람이 불어와\n그냥 이대로 있고 싶어\n\n[bridge1]\n[Chest voice, Intimate]\n물가에 앉아 있어\n아무 생각 없이\n이대로 괜찮아\n\n[chorus]\n[High register chest voice, Straight tone]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[verse2]\n[Groove locks in, Vocal forward]\n손끝을 담가봐\n차갑지 않아 괜찮아\n숨을 내쉬어봐\n나도 천천히 가라앉아\n\n[bridge2]\n[Chest voice, Intimate]\n손등에 물방울\n말 안 해도 알아\n이대로 괜찮아\n\n[chorus] [Chest voice]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[chorus] [Chest voice]\n물결이 퍼져가\n햇살이 번져가\n눈 감아도 돼\n시간은 천천히 가\n\n[outro]\n[instrumental]",
+        "lyrics_raw_sha256": "c439458fea7c4f764bff42c2dae3fd905f531a7d604680ec49660249303c785b"
+      },
+      "lineage": {
+        "status": "confirmed_suno_parent_link",
+        "evidence": [
+          "SERIES/23-00/production/browser-capture-20261104/suno-ui/5654d747-4921-416f-9b72-755bf27d734a.json"
+        ],
+        "lyric_comparison": {
+          "method": "remove bracketed directions; retain lines containing Korean; ignore spacing, punctuation and Latin case",
+          "original_line_count": 26,
+          "remix_line_count": 26,
+          "equal": true,
+          "sequence_similarity": 1.0,
+          "diff": []
+        },
+        "note": "Current Suno Made from section links this exact original."
+      },
+      "style_record_status": "confirmed_reconstruction",
+      "combined_style": "Korean Indie Alt R&B, 74 BPM, A Major, Neo-soul chords (M9, m7), Clean Electric Guitar-led supportive groove, rim-click, warm texture, subtle vinyl crackle, Male vocal: Solid, Direct, Raw, Dry, Chest dominant, No falsetto, Straight tone, No vibrato, no ad-libs, Narrow range, stepwise melody, speech-like rhythm, High chest voice over falsetto, Nonchalant tone, never dramatic, Articulation: clear consonants, precise syllables, no slurring, Verse2 tension builds, Chorus hook-first, high-note focal: short chest note, straight, not sustained, Choruses grow by density only, Bridge sparse, Outro guitar fades, Single lead vocal\n\nModern Indie R&B, Lo-fi Remastered, Articulation",
+      "combined_style_sha256": "a4448b44d8f9890d1bb4c049dc2df9299c8a525cdb87636e7fff38432fd4f1a4",
+      "combined_exclude": [
+        "Falsetto",
+        "Airy",
+        "Whisper",
+        "Breathiness",
+        "Growl",
+        "Vibrato",
+        "Opera",
+        "Dramatic",
+        "Harmonized",
+        "Backing vocals",
+        "Choir",
+        "Intense",
+        "Mumbled"
+      ],
+      "ready_for_final_source": true,
+      "actual_generation_input_verified": false,
+      "measured_audio_bpm": null,
+      "assembly_mode": "original_plus_remix",
+      "album_position": 17,
+      "suno_title_after_numbering": "17. 물결 (Lo-Fi Remix)"
+    }
+  ],
+  "sequence_ref": "SERIES/23-00/production/browser-capture-20261104/sequence.json",
+  "numbering_evidence": "SERIES/23-00/production/browser-capture-20261104/suno-sequence-numbering-20261104.json"
+}

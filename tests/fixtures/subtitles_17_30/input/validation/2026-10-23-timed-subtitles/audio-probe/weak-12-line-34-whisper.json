@@ -1,0 +1,156 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/weak-12-line-34.flac",
+  "audio_sha256": "c90eca4fcec476c6b0de551d5d8cb7af220a6a25db6ed03336e4233327460e32",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 0.85,
+  "transcription": {
+    "text": " 묻고 나온 오늘이 꽤 마음에 들어 기분 좋아져라 내 걸음 더",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 7.22,
+        "text": " 묻고 나온 오늘이 꽤 마음에 들어",
+        "tokens": [
+          50365,
+          39399,
+          1313,
+          34396,
+          8880,
+          1129,
+          24378,
+          97,
+          43093,
+          12900,
+          50915
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5257666015625,
+        "compression_ratio": 0.9080459770114943,
+        "no_speech_prob": 9.488331648155324e-11,
+        "words": [
+          {
+            "word": " 묻고",
+            "start": 0.0,
+            "end": 0.46,
+            "probability": 0.50537109375
+          },
+          {
+            "word": " 나온",
+            "start": 0.46,
+            "end": 0.92,
+            "probability": 0.9833984375
+          },
+          {
+            "word": " 오늘이",
+            "start": 0.92,
+            "end": 3.5,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 꽤",
+            "start": 3.5,
+            "end": 5.32,
+            "probability": 0.97607421875
+          },
+          {
+            "word": " 마음에",
+            "start": 5.32,
+            "end": 6.1,
+            "probability": 0.93603515625
+          },
+          {
+            "word": " 들어",
+            "start": 6.1,
+            "end": 7.22,
+            "probability": 0.99462890625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 11.0,
+        "end": 13.0,
+        "text": " 기분 좋아져라",
+        "tokens": [
+          50915,
+          37149,
+          10805,
+          2179,
+          1397,
+          2742,
+          51115
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5257666015625,
+        "compression_ratio": 0.9080459770114943,
+        "no_speech_prob": 9.488331648155324e-11,
+        "words": [
+          {
+            "word": " 기분",
+            "start": 10.9,
+            "end": 11.6,
+            "probability": 0.94482421875
+          },
+          {
+            "word": " 좋아져라",
+            "start": 11.6,
+            "end": 13.0,
+            "probability": 0.9814453125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 15.0,
+        "end": 15.98,
+        "text": " 내 걸음 더",
+        "tokens": [
+          51115,
+          6918,
+          14240,
+          5654,
+          6990,
+          51165
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5257666015625,
+        "compression_ratio": 0.9080459770114943,
+        "no_speech_prob": 9.488331648155324e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 14.38,
+            "end": 15.08,
+            "probability": 0.771484375
+          },
+          {
+            "word": " 걸음",
+            "start": 15.08,
+            "end": 15.84,
+            "probability": 0.6943359375
+          },
+          {
+            "word": " 더",
+            "start": 15.84,
+            "end": 15.98,
+            "probability": 0.1234130859375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

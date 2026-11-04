@@ -1,0 +1,77 @@
+{
+  "observed_at_kst": "2026-10-23T08:03:08+09:00",
+  "video_id": "3HorT4OoDhg",
+  "watch_url": "https://www.youtube.com/watch?v=3HorT4OoDhg",
+  "channel": "Wavvy24",
+  "browser_tool": "mcp__aside__repl",
+  "browser_session": "/Users/zenkim_office/.aside/u/0/sessions/2026-10-23_685w6j4O7uuxc3s5",
+  "studio_manual_korean": "게시됨",
+  "studio_auto_korean": "게시됨 (보존)",
+  "public_caption_menu": "수동 한국어 checked; 한국어 (자동 생성됨) 별도 항목",
+  "published_manual_srt": {
+    "source_sha256": "29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226",
+    "source_bytes": 86024,
+    "studio_download_sha256": "b9ef1541954c96ee07593278d34d0553ed1965e8a6e8758d352d20ea37de1731",
+    "studio_download_bytes": 86025,
+    "byte_relation": "Studio download = frozen source bytes + one trailing LF"
+  },
+  "public_watch_samples": [
+    {
+      "label": "first",
+      "observed_watch_time_s": 5,
+      "observed_caption": "하루가 다 지나갈 때",
+      "source_cue": {
+        "index": 1,
+        "start": "00:00:03,320",
+        "end": "00:00:07,674",
+        "text": "하루가 다 지나갈 때"
+      },
+      "raw_snapshot": "2026-10-23-watch-manual-000005.txt",
+      "screenshot": "2026-10-23-watch-manual-000005.png"
+    },
+    {
+      "label": "middle",
+      "observed_watch_time_s": 2300,
+      "observed_caption": "꽤 마음에 들어",
+      "source_cue": {
+        "index": 383,
+        "start": "00:38:19,435",
+        "end": "00:38:25,734",
+        "text": "꽤 마음에 들어"
+      },
+      "raw_snapshot": "2026-10-23-watch-manual-mid.txt",
+      "screenshot": "2026-10-23-watch-manual-mid.png"
+    },
+    {
+      "label": "repeat",
+      "observed_watch_time_s": 3899,
+      "observed_caption": "다 외우고 싶진 않아도",
+      "source_cue": {
+        "index": 643,
+        "start": "01:04:54,804",
+        "end": "01:04:59,524",
+        "text": "다 외우고 싶진 않아도"
+      },
+      "raw_snapshot": "2026-10-23-watch-manual-repeat.txt",
+      "screenshot": "2026-10-23-watch-manual-repeat.png"
+    },
+    {
+      "label": "ending",
+      "observed_watch_time_s": 7684,
+      "observed_caption": "이만하면 좋은 저녁",
+      "source_cue": {
+        "index": 1270,
+        "start": "02:08:02,239",
+        "end": "02:08:07,424",
+        "text": "이만하면 좋은 저녁"
+      },
+      "raw_snapshot": "2026-10-23-watch-manual-ending.txt",
+      "screenshot": "2026-10-23-watch-manual-ending.png"
+    }
+  ],
+  "player_final_state": "paused after verification (2:08:09 shown in UI)",
+  "mutation_scope": "existing manual Korean draft updated with timed SRT and published once; no video metadata, visibility, comment or auto-caption changes",
+  "notes": [
+    "YouTube player caption toggle is labeled 자막 사용 불가 even while settings menu has manual 한국어 checked and lyric renders; menu and sample captures are the basis for verification."
+  ]
+}

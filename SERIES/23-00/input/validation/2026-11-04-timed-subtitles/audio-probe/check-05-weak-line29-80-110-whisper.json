@@ -1,0 +1,542 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/05__비가 그쳤네__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "93e96b19697cc767208912150cd274ed4c058b602b02b547c5863b5b38ed51d4",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "80.0,110.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/05__비가 그쳤네__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "93e96b19697cc767208912150cd274ed4c058b602b02b547c5863b5b38ed51d4",
+  "clip_start_s": 80.0,
+  "clip_end_s": 110.0,
+  "clip_audio_sha256": "1ecc84834578a7c2dd268f15479de1d8ca4edbbcbb3e9e4d47638010d1dc7a07",
+  "elapsed_seconds": 2.799,
+  "transcription": {
+    "text": " 앉자마자 젖은 소매를 접어 난 내 낀 몇 장 네 앞에 놓았지 왜 말 안 했어 어깨도 젖었네 넌 한 번 보더니 금방 마른 됐어 내 옷은 젖지도 않고 신발도 멀쩡했지 우산이 작다 더 말해 그냥 그런 줄 알았어 비가 그쳤네 언제 그지",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.58,
+        "text": " 앉자마자 젖은 소매를 접어",
+        "tokens": [
+          50365,
+          37426,
+          11945,
+          8667,
+          4264,
+          1647,
+          244,
+          2124,
+          13062,
+          100,
+          38309,
+          21616,
+          3103,
+          50499
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 앉자마자",
+            "start": 0.0,
+            "end": 0.68,
+            "probability": 0.64697265625
+          },
+          {
+            "word": " 젖은",
+            "start": 0.68,
+            "end": 1.12,
+            "probability": 0.9794921875
+          },
+          {
+            "word": " 소매를",
+            "start": 1.12,
+            "end": 1.82,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 접어",
+            "start": 1.82,
+            "end": 2.58,
+            "probability": 0.958984375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.58,
+        "end": 5.92,
+        "text": " 난 내 낀 몇 장 네 앞에 놓았지",
+        "tokens": [
+          50499,
+          19252,
+          6918,
+          2079,
+          222,
+          23628,
+          12280,
+          8808,
+          42004,
+          28747,
+          9106,
+          1831,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 난",
+            "start": 2.58,
+            "end": 3.0,
+            "probability": 0.89306640625
+          },
+          {
+            "word": " 내",
+            "start": 3.0,
+            "end": 3.54,
+            "probability": 0.39990234375
+          },
+          {
+            "word": " 낀",
+            "start": 3.54,
+            "end": 3.7,
+            "probability": 0.6162109375
+          },
+          {
+            "word": " 몇",
+            "start": 3.7,
+            "end": 4.04,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 장",
+            "start": 4.04,
+            "end": 4.18,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 네",
+            "start": 4.18,
+            "end": 4.4,
+            "probability": 0.79296875
+          },
+          {
+            "word": " 앞에",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 놓았지",
+            "start": 4.8,
+            "end": 5.92,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.92,
+        "end": 9.24,
+        "text": " 왜 말 안 했어 어깨도 젖었네",
+        "tokens": [
+          50664,
+          9883,
+          7058,
+          4811,
+          49528,
+          9076,
+          2900,
+          101,
+          3744,
+          1647,
+          244,
+          1170,
+          39510,
+          50827
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 왜",
+            "start": 5.92,
+            "end": 6.34,
+            "probability": 0.98095703125
+          },
+          {
+            "word": " 말",
+            "start": 6.34,
+            "end": 6.8,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 안",
+            "start": 6.8,
+            "end": 7.02,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 했어",
+            "start": 7.02,
+            "end": 7.54,
+            "probability": 0.93798828125
+          },
+          {
+            "word": " 어깨도",
+            "start": 7.54,
+            "end": 8.42,
+            "probability": 0.93896484375
+          },
+          {
+            "word": " 젖었네",
+            "start": 8.42,
+            "end": 9.24,
+            "probability": 0.974609375
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 9.24,
+        "end": 12.86,
+        "text": " 넌 한 번 보더니 금방 마른 됐어",
+        "tokens": [
+          50827,
+          3214,
+          234,
+          4815,
+          10212,
+          10035,
+          39638,
+          4291,
+          2196,
+          17027,
+          25847,
+          10798,
+          16718,
+          3103,
+          51012
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 넌",
+            "start": 9.24,
+            "end": 9.82,
+            "probability": 0.97216796875
+          },
+          {
+            "word": " 한",
+            "start": 9.82,
+            "end": 10.02,
+            "probability": 0.720703125
+          },
+          {
+            "word": " 번",
+            "start": 10.02,
+            "end": 10.18,
+            "probability": 0.97412109375
+          },
+          {
+            "word": " 보더니",
+            "start": 10.18,
+            "end": 10.8,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 금방",
+            "start": 10.8,
+            "end": 11.44,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 마른",
+            "start": 11.44,
+            "end": 12.04,
+            "probability": 0.5556640625
+          },
+          {
+            "word": " 됐어",
+            "start": 12.04,
+            "end": 12.86,
+            "probability": 0.8798828125
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 12.86,
+        "end": 15.02,
+        "text": " 내 옷은 젖지도 않고",
+        "tokens": [
+          51012,
+          6918,
+          30880,
+          2124,
+          1647,
+          244,
+          39871,
+          31157,
+          51131
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 12.86,
+            "end": 13.2,
+            "probability": 0.98486328125
+          },
+          {
+            "word": " 옷은",
+            "start": 13.2,
+            "end": 13.62,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 젖지도",
+            "start": 13.62,
+            "end": 14.44,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 않고",
+            "start": 14.44,
+            "end": 15.02,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 15.02,
+        "end": 18.98,
+        "text": " 신발도 멀쩡했지",
+        "tokens": [
+          51131,
+          26397,
+          108,
+          17099,
+          8514,
+          222,
+          168,
+          102,
+          94,
+          7077,
+          1831,
+          51330
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 신발도",
+            "start": 15.02,
+            "end": 17.06,
+            "probability": 0.990234375
+          },
+          {
+            "word": " 멀쩡했지",
+            "start": 17.06,
+            "end": 18.98,
+            "probability": 0.962890625
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 18.98,
+        "end": 21.94,
+        "text": " 우산이 작다 더 말해",
+        "tokens": [
+          51330,
+          14995,
+          16551,
+          1129,
+          14585,
+          1235,
+          6990,
+          7058,
+          5302,
+          51465
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 우산이",
+            "start": 18.98,
+            "end": 20.16,
+            "probability": 0.9794921875
+          },
+          {
+            "word": " 작다",
+            "start": 20.16,
+            "end": 20.82,
+            "probability": 0.904296875
+          },
+          {
+            "word": " 더",
+            "start": 20.82,
+            "end": 21.1,
+            "probability": 0.72119140625
+          },
+          {
+            "word": " 말해",
+            "start": 21.1,
+            "end": 21.94,
+            "probability": 0.98876953125
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 21.94,
+        "end": 25.76,
+        "text": " 그냥 그런 줄 알았어",
+        "tokens": [
+          51465,
+          11208,
+          9306,
+          15320,
+          49453,
+          51655
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 그냥",
+            "start": 21.94,
+            "end": 23.34,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 그런",
+            "start": 23.34,
+            "end": 23.78,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 줄",
+            "start": 23.78,
+            "end": 24.02,
+            "probability": 0.97607421875
+          },
+          {
+            "word": " 알았어",
+            "start": 24.02,
+            "end": 25.76,
+            "probability": 0.9833984375
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 25.76,
+        "end": 27.94,
+        "text": " 비가 그쳤네",
+        "tokens": [
+          51655,
+          10079,
+          1453,
+          4296,
+          20688,
+          2990,
+          5626,
+          51765
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26645725213208243,
+        "compression_ratio": 1.3671497584541064,
+        "no_speech_prob": 2.326791710693943e-11,
+        "words": [
+          {
+            "word": " 비가",
+            "start": 25.76,
+            "end": 26.66,
+            "probability": 0.97021484375
+          },
+          {
+            "word": " 그쳤네",
+            "start": 26.66,
+            "end": 27.94,
+            "probability": 0.990234375
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 2794,
+        "start": 27.94,
+        "end": 29.98,
+        "text": " 언제 그지",
+        "tokens": [
+          50365,
+          43790,
+          4296,
+          1831,
+          50468
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6213978131612142,
+        "compression_ratio": 0.5909090909090909,
+        "no_speech_prob": 8.444677596086692e-11,
+        "words": [
+          {
+            "word": " 언제",
+            "start": 27.94,
+            "end": 29.62,
+            "probability": 0.78369140625
+          },
+          {
+            "word": " 그지",
+            "start": 29.62,
+            "end": 29.98,
+            "probability": 0.440673828125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

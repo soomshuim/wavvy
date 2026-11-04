@@ -1,0 +1,484 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "105.0,145.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "clip_start_s": 105.0,
+  "clip_end_s": 145.0,
+  "clip_audio_sha256": "4f5b80714abe942e2a5594a3cc7a5d299270176f9b378b0ea68aaafdbaa533bd",
+  "elapsed_seconds": 2.447,
+  "transcription": {
+    "text": " 두어 일신만 쌓여가는 오늘도 그런 저녁 야 오늘 뭐해 시간 돼 한잔 하자 연락 좀 해 다들 바빠 나만 안 가해 혼자 걷는 퇴근길이야 야 오늘 뭐해 시간 돼 항상 나자 연락 좀 해 다들 바빠 나만 안가해 혼자고",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 5.5,
+        "text": " 두어 일신만 쌓여가는 오늘도 그런 저녁",
+        "tokens": [
+          50365,
+          11915,
+          3103,
+          7682,
+          7575,
+          5978,
+          35792,
+          241,
+          10558,
+          28391,
+          47455,
+          9306,
+          13163,
+          227,
+          223,
+          50649
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 두어",
+            "start": 0.0,
+            "end": 0.8,
+            "probability": 0.489990234375
+          },
+          {
+            "word": " 일신만",
+            "start": 0.8,
+            "end": 1.92,
+            "probability": 0.5087890625
+          },
+          {
+            "word": " 쌓여가는",
+            "start": 1.92,
+            "end": 2.96,
+            "probability": 0.9658203125
+          },
+          {
+            "word": " 오늘도",
+            "start": 2.96,
+            "end": 3.62,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 그런",
+            "start": 3.62,
+            "end": 4.36,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 저녁",
+            "start": 4.36,
+            "end": 5.5,
+            "probability": 0.99462890625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 5.5,
+        "end": 9.34,
+        "text": " 야 오늘 뭐해 시간 돼",
+        "tokens": [
+          50649,
+          13450,
+          8880,
+          7034,
+          5302,
+          16648,
+          11080,
+          50849
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 야",
+            "start": 5.5,
+            "end": 6.02,
+            "probability": 0.81640625
+          },
+          {
+            "word": " 오늘",
+            "start": 6.02,
+            "end": 6.82,
+            "probability": 0.89501953125
+          },
+          {
+            "word": " 뭐해",
+            "start": 6.82,
+            "end": 8.2,
+            "probability": 0.8701171875
+          },
+          {
+            "word": " 시간",
+            "start": 8.2,
+            "end": 8.96,
+            "probability": 0.43701171875
+          },
+          {
+            "word": " 돼",
+            "start": 8.96,
+            "end": 9.34,
+            "probability": 0.9716796875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 9.34,
+        "end": 13.12,
+        "text": " 한잔 하자 연락 좀 해",
+        "tokens": [
+          50849,
+          4815,
+          48267,
+          3369,
+          4264,
+          34902,
+          20523,
+          6796,
+          11683,
+          51094
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 한잔",
+            "start": 9.34,
+            "end": 10.26,
+            "probability": 0.73046875
+          },
+          {
+            "word": " 하자",
+            "start": 10.26,
+            "end": 11.1,
+            "probability": 0.73974609375
+          },
+          {
+            "word": " 연락",
+            "start": 11.1,
+            "end": 12.08,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 좀",
+            "start": 12.08,
+            "end": 12.48,
+            "probability": 0.91552734375
+          },
+          {
+            "word": " 해",
+            "start": 12.48,
+            "end": 13.12,
+            "probability": 0.98779296875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 14.58,
+        "end": 18.02,
+        "text": " 다들 바빠 나만 안 가해",
+        "tokens": [
+          51094,
+          47660,
+          9040,
+          19211,
+          12623,
+          6478,
+          4811,
+          4147,
+          5302,
+          51354
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 다들",
+            "start": 14.34,
+            "end": 15.04,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 바빠",
+            "start": 15.04,
+            "end": 16.16,
+            "probability": 0.974609375
+          },
+          {
+            "word": " 나만",
+            "start": 16.16,
+            "end": 17.06,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 안",
+            "start": 17.06,
+            "end": 17.32,
+            "probability": 0.75830078125
+          },
+          {
+            "word": " 가해",
+            "start": 17.32,
+            "end": 18.02,
+            "probability": 0.8193359375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 19.78,
+        "end": 22.9,
+        "text": " 혼자 걷는 퇴근길이야",
+        "tokens": [
+          51354,
+          36028,
+          4925,
+          115,
+          1098,
+          1175,
+          229,
+          112,
+          17904,
+          24479,
+          15374,
+          51585
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 혼자",
+            "start": 19.560000000000002,
+            "end": 20.26,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 걷는",
+            "start": 20.26,
+            "end": 21.28,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 퇴근길이야",
+            "start": 21.28,
+            "end": 22.9,
+            "probability": 0.9794921875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 24.400000000000002,
+        "end": 27.7,
+        "text": " 야 오늘 뭐해 시간 돼",
+        "tokens": [
+          51585,
+          13450,
+          8880,
+          7034,
+          5302,
+          16648,
+          11080,
+          51828
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29339030294707324,
+        "compression_ratio": 1.3466666666666667,
+        "no_speech_prob": 3.293924855096719e-11,
+        "words": [
+          {
+            "word": " 야",
+            "start": 23.92,
+            "end": 24.62,
+            "probability": 0.97119140625
+          },
+          {
+            "word": " 오늘",
+            "start": 24.62,
+            "end": 25.22,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 뭐해",
+            "start": 25.22,
+            "end": 25.88,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 시간",
+            "start": 25.88,
+            "end": 27.0,
+            "probability": 0.96435546875
+          },
+          {
+            "word": " 돼",
+            "start": 27.0,
+            "end": 27.7,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2770,
+        "start": 27.7,
+        "end": 32.7,
+        "text": " 항상 나자 연락 좀 해",
+        "tokens": [
+          50365,
+          30747,
+          3948,
+          4264,
+          34902,
+          20523,
+          6796,
+          11683,
+          50629
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5859795411427816,
+        "compression_ratio": 0.8961038961038961,
+        "no_speech_prob": 3.851164179224931e-11,
+        "words": [
+          {
+            "word": " 항상",
+            "start": 27.7,
+            "end": 29.64,
+            "probability": 0.0205841064453125
+          },
+          {
+            "word": " 나자",
+            "start": 29.64,
+            "end": 30.68,
+            "probability": 0.37109375
+          },
+          {
+            "word": " 연락",
+            "start": 30.68,
+            "end": 31.66,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 좀",
+            "start": 31.66,
+            "end": 32.02,
+            "probability": 0.9541015625
+          },
+          {
+            "word": " 해",
+            "start": 32.02,
+            "end": 32.7,
+            "probability": 0.9794921875
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 2770,
+        "start": 32.7,
+        "end": 37.64,
+        "text": " 다들 바빠 나만 안가해",
+        "tokens": [
+          50629,
+          47660,
+          9040,
+          19211,
+          12623,
+          6478,
+          4811,
+          1453,
+          5302,
+          50874
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5859795411427816,
+        "compression_ratio": 0.8961038961038961,
+        "no_speech_prob": 3.851164179224931e-11,
+        "words": [
+          {
+            "word": " 다들",
+            "start": 32.7,
+            "end": 34.58,
+            "probability": 0.9462890625
+          },
+          {
+            "word": " 바빠",
+            "start": 34.58,
+            "end": 35.72,
+            "probability": 0.978515625
+          },
+          {
+            "word": " 나만",
+            "start": 35.72,
+            "end": 36.68,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 안가해",
+            "start": 36.68,
+            "end": 37.64,
+            "probability": 0.6435546875
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 2770,
+        "start": 37.64,
+        "end": 39.98,
+        "text": " 혼자고",
+        "tokens": [
+          50874,
+          36028,
+          1313,
+          50990
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5859795411427816,
+        "compression_ratio": 0.8961038961038961,
+        "no_speech_prob": 3.851164179224931e-11,
+        "words": [
+          {
+            "word": " 혼자고",
+            "start": 37.64,
+            "end": 39.98,
+            "probability": 0.5146484375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

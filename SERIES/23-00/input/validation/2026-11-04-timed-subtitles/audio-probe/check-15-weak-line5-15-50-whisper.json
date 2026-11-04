@@ -1,0 +1,432 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "15.0,50.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "clip_start_s": 15.0,
+  "clip_end_s": 50.0,
+  "clip_audio_sha256": "1acf93ada3560a5c58d726ce0fb5dd773816a30d1aa0a750801008acdb94ac9f",
+  "elapsed_seconds": 3.688,
+  "transcription": {
+    "text": " 주머니 속 폰을 꺼내 연락처를 내려와 누구한테 먼저 할까 엄지가 뭔 짓에 화면만 밝아져 일시만 쌓여가는 오늘도 그런 저녁 야 오늘 뭐해 시간 돼 한 잔 하자 연락 좋네",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.96,
+        "text": " 주머니 속 폰을 꺼내",
+        "tokens": [
+          50365,
+          16410,
+          46355,
+          18663,
+          9250,
+          108,
+          1638,
+          34505,
+          1870,
+          22485,
+          50617
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 주머니",
+            "start": 0.0,
+            "end": 2.04,
+            "probability": 0.88330078125
+          },
+          {
+            "word": " 속",
+            "start": 2.04,
+            "end": 2.48,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 폰을",
+            "start": 2.48,
+            "end": 3.58,
+            "probability": 0.8837890625
+          },
+          {
+            "word": " 꺼내",
+            "start": 3.58,
+            "end": 4.96,
+            "probability": 0.98046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.279999999999999,
+        "end": 10.08,
+        "text": " 연락처를 내려와",
+        "tokens": [
+          50617,
+          34902,
+          20523,
+          18180,
+          2429,
+          33428,
+          7590,
+          50892
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 연락처를",
+            "start": 7.279999999999999,
+            "end": 8.68,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 내려와",
+            "start": 8.68,
+            "end": 10.08,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 10.08,
+        "end": 14.7,
+        "text": " 누구한테 먼저 할까",
+        "tokens": [
+          50892,
+          36385,
+          15863,
+          20749,
+          8981,
+          3294,
+          51125
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 누구한테",
+            "start": 10.08,
+            "end": 12.84,
+            "probability": 0.97412109375
+          },
+          {
+            "word": " 먼저",
+            "start": 12.84,
+            "end": 13.46,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 할까",
+            "start": 13.46,
+            "end": 14.7,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 15.200000000000001,
+        "end": 18.54,
+        "text": " 엄지가 뭔 짓에",
+        "tokens": [
+          51125,
+          16685,
+          30232,
+          43972,
+          2334,
+          241,
+          1517,
+          51296
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 엄지가",
+            "start": 15.200000000000001,
+            "end": 17.16,
+            "probability": 0.5244140625
+          },
+          {
+            "word": " 뭔",
+            "start": 17.16,
+            "end": 17.7,
+            "probability": 0.3251953125
+          },
+          {
+            "word": " 짓에",
+            "start": 17.7,
+            "end": 18.54,
+            "probability": 0.6171875
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 18.54,
+        "end": 20.98,
+        "text": " 화면만 밝아져",
+        "tokens": [
+          51296,
+          26700,
+          102,
+          1327,
+          6478,
+          26499,
+          2230,
+          17383,
+          51416
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 화면만",
+            "start": 18.54,
+            "end": 19.76,
+            "probability": 0.94140625
+          },
+          {
+            "word": " 밝아져",
+            "start": 19.76,
+            "end": 20.98,
+            "probability": 0.955078125
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 20.98,
+        "end": 24.14,
+        "text": " 일시만 쌓여가는 오늘도",
+        "tokens": [
+          51416,
+          7682,
+          10426,
+          6478,
+          35792,
+          241,
+          10558,
+          28391,
+          47455,
+          51573
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 일시만",
+            "start": 20.98,
+            "end": 22.12,
+            "probability": 0.8271484375
+          },
+          {
+            "word": " 쌓여가는",
+            "start": 22.12,
+            "end": 23.34,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 오늘도",
+            "start": 23.34,
+            "end": 24.14,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 24.14,
+        "end": 26.06,
+        "text": " 그런 저녁",
+        "tokens": [
+          51573,
+          9306,
+          13163,
+          227,
+          223,
+          51668
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 그런",
+            "start": 24.14,
+            "end": 25.22,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 저녁",
+            "start": 25.22,
+            "end": 26.06,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 26.06,
+        "end": 27.78,
+        "text": " 야 오늘 뭐해",
+        "tokens": [
+          51668,
+          13450,
+          8880,
+          7034,
+          5302,
+          51756
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28982660663661675,
+        "compression_ratio": 1.1806451612903226,
+        "no_speech_prob": 1.3993697693670537e-11,
+        "words": [
+          {
+            "word": " 야",
+            "start": 26.06,
+            "end": 26.44,
+            "probability": 0.76220703125
+          },
+          {
+            "word": " 오늘",
+            "start": 26.44,
+            "end": 27.06,
+            "probability": 0.87548828125
+          },
+          {
+            "word": " 뭐해",
+            "start": 27.06,
+            "end": 27.78,
+            "probability": 0.96240234375
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 2778,
+        "start": 27.78,
+        "end": 29.66,
+        "text": " 시간 돼",
+        "tokens": [
+          50365,
+          16648,
+          11080,
+          50473
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6311915516853333,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 4.6371968764891136e-11,
+        "words": [
+          {
+            "word": " 시간",
+            "start": 27.78,
+            "end": 29.18,
+            "probability": 0.4150390625
+          },
+          {
+            "word": " 돼",
+            "start": 29.18,
+            "end": 29.66,
+            "probability": 0.9091796875
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 2778,
+        "start": 29.66,
+        "end": 34.5,
+        "text": " 한 잔 하자 연락 좋네",
+        "tokens": [
+          50473,
+          4815,
+          1332,
+          242,
+          3369,
+          4264,
+          34902,
+          20523,
+          5008,
+          17507,
+          50702
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6311915516853333,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 4.6371968764891136e-11,
+        "words": [
+          {
+            "word": " 한",
+            "start": 29.66,
+            "end": 31.5,
+            "probability": 0.2020263671875
+          },
+          {
+            "word": " 잔",
+            "start": 31.5,
+            "end": 31.84,
+            "probability": 0.62939453125
+          },
+          {
+            "word": " 하자",
+            "start": 31.84,
+            "end": 32.58,
+            "probability": 0.74853515625
+          },
+          {
+            "word": " 연락",
+            "start": 32.58,
+            "end": 33.52,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 좋네",
+            "start": 33.52,
+            "end": 34.5,
+            "probability": 0.91796875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

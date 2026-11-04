@@ -1,0 +1,124 @@
+{
+  "schema": "wavvy.subtitles.v1",
+  "timing_map": {
+    "path": "input/validation/2026-10-23-timed-subtitles/all-tracks-timed-checked.json",
+    "sha256": "dd5d21b1fa456ca81bdc3a22a94b8bd9af7bd6c5032a8677dcc78aaa54306fa0"
+  },
+  "srt": {
+    "path": "output/youtube_subtitles_ko_timed_estimated.srt",
+    "sha256": "29543de1cbf964fb4a6a8bbeeb0f5d9b5040f11610035aea7fb405cb69dd9226"
+  },
+  "required_extra_occurrences": {
+    "9:14": 1,
+    "9:42": 1,
+    "11:11-14": 4,
+    "11:25-28": 4
+  },
+  "repeat_evidence": {
+    "9:14": [
+      "audio-probe/09__잘 익은 하루__Bright__Modern R&B__NA-whisper.json"
+    ],
+    "9:42": [
+      "audio-probe/check-09-repeat-150-180-whisper.json"
+    ],
+    "11:11-14": [
+      "audio-probe/check-11-first-chorus-35-66-whisper.json"
+    ],
+    "11:25-28": [
+      "audio-probe/check-11-line24-repeat-88-118-whisper.json"
+    ]
+  },
+  "observed_anchor_checks": [
+    {
+      "track": 16,
+      "source_line": 21,
+      "occurrence": 1,
+      "evidence": "audio-probe/check-16-line22-88-104-whisper.json",
+      "clip_start_ms": 88000,
+      "first_word": "네",
+      "max_onset_delta_ms": 350
+    },
+    {
+      "track": 16,
+      "source_line": 22,
+      "occurrence": 1,
+      "evidence": "audio-probe/check-16-line22-88-104-whisper.json",
+      "clip_start_ms": 88000,
+      "first_word": "집",
+      "max_onset_delta_ms": 350
+    }
+  ],
+  "publication": {
+    "video_id": "3HorT4OoDhg",
+    "observation": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/publication-observation.json",
+      "sha256": "2935c13e98c04991561f4874f0280e5835f3041f10b52dd3034666ef427434e9"
+    },
+    "studio_capture": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-caption-published-studio.png",
+      "sha256": "a3a2720eccc3b08f66bff15f95c6b1782d54ea3eb30cf6129980243382eba437"
+    },
+    "public_menu_capture": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-public-manual-caption-menu.png",
+      "sha256": "59097745f421d2fa761edfb246040f1610e27b749b0476106bdad6afa5f4935d"
+    },
+    "studio_download": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/studio-published-manual-ko.srt",
+      "sha256": "b9ef1541954c96ee07593278d34d0553ed1965e8a6e8758d352d20ea37de1731"
+    },
+    "sample_files": {
+      "first": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-000005.txt",
+          "sha256": "8e41f3d0336cf1daeb821c8f048c7c66e93e660d5908823e30c1346b2fb16f39"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-000005.png",
+          "sha256": "54e044ff2f394745d33ede912b6f450b414fddb856f600d8ef5204e1cd298654"
+        }
+      },
+      "middle": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-mid.txt",
+          "sha256": "33d8e035452743ab71b5a1b72ce775827a77eacef936c4d2e5c66a48ca18a2ce"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-mid.png",
+          "sha256": "440e567cedf95c3de7c17b3c4e070006b56e66a4adedffaa09abcfc1102b06ef"
+        }
+      },
+      "repeat": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-repeat.txt",
+          "sha256": "7b500318ce0ca167b512f7a02b1b30193f74edd416e4ed59aa4b66d8abf4f672"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-repeat.png",
+          "sha256": "b4b44b8d152f671c56ea34aacd8993f9c9055a973779ec6e1da171a141d2cbcd"
+        }
+      },
+      "ending": {
+        "raw_snapshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-ending.txt",
+          "sha256": "a754f6eec4e8772ce261613ae860b6e205074300ac6364dbf58159519a4e2545"
+        },
+        "screenshot": {
+          "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-watch-manual-ending.png",
+          "sha256": "65d607ea98b540e6889f4b24c578ac460c6295f7692d6a0b9cc720d7f6d176fa"
+        }
+      }
+    },
+    "studio_raw": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-manual-caption-published-studio.txt",
+      "sha256": "ef5e1b3b8566eb68e9dd082d0bc04e7cf8f2d134b2dc2731fee95fe74e17e6b0"
+    },
+    "public_menu_raw": {
+      "path": "input/validation/2026-10-23-timed-subtitles/publication/2026-10-23-public-manual-caption-menu.txt",
+      "sha256": "0cc864d1252bf155b9f98d3560897bbc93f3a139144d176f0f12e130f9970fc4"
+    }
+  },
+  "report": {
+    "path": "output/report.json",
+    "sha256": "a1a6e1c59fc5bc4119c3e9799ba27a9a2ede3463e1a11cb04f87a39bfe751ca8"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "wavvy.video_artwork_review.v1",
+  "image": {
+    "path": "input/video-background.png",
+    "sha256": "e3be204639a1d2cd0e593366cb7e5e3ab81e948a526488bb644631198344d03f"
+  },
+  "method": "view_image",
+  "reviewer": "Claude Sonnet 5.5 worker (sonnet-xhigh-worker)",
+  "reviewed_at": "2026-11-04T20:33:39+09:00",
+  "observations": {
+    "wavvy_logo_present": true,
+    "title_text_present": false,
+    "bpm_text_present": false,
+    "other_overlay_text_present": false
+  },
+  "evidence": "Opened the exact file input/video-background.png (3840x2160 RGB PNG, sha256 above) with the Claude Read image viewer (view_image) and looked at it. Saw: the Wavvy script logo in dark plum at the top-left; a flat-illustration scene of a tattooed man in a floral shirt and purple headphones reclining on an orange chair beside a turntable, a plant and a record shelf, with a purple night-city window at the upper right on a yellow wall. No title heading, no BPM or time text, no brand sentence at the bottom-left and no other lettering was visible anywhere in the frame. Construction record (not a substitute for the viewing): the file is input/thumb.png with the full-width band y2035-2100 restored byte-for-byte from the text-free production/artwork-final/scene-original-4k.png (sha256 861513fa8f868bb51b79c7c83865181e530f0e7916f1e5011c865af16ba47559); measured pixel difference versus that scene original is confined to the logo rectangle [128,96,728,449] (82177 pixels), so the footer and title areas equal the text-free scene. The scene is a Lanczos enlargement of the 1672x941 illustration, not native 4K generation."
+}

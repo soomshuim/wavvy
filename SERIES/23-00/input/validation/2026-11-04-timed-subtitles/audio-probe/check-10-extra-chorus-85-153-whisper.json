@@ -1,0 +1,436 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/10__산책__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "cc7e4c598f25cd0d5b1a0eb93a6cd9c09ffbf0d8ce580cb1905730464a108b2b",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "85.0,153.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/10__산책__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "cc7e4c598f25cd0d5b1a0eb93a6cd9c09ffbf0d8ce580cb1905730464a108b2b",
+  "clip_start_s": 85.0,
+  "clip_end_s": 153.0,
+  "clip_audio_sha256": "7e3b6cd4c99af58bc1bb09794d51dc32257e36df68207011fadbf61c3188e1aa",
+  "elapsed_seconds": 3.229,
+  "transcription": {
+    "text": " 발끝은 천천히 가 발끝이 느려져 걸음은 고를게 이 순간 조금 떠나가자 발끝은 천천히 가 발끝이 느려져 걸음은 고르게 이 순간 조금 떠나가자 발끝은 천천히 가네 다음 영상에서 만나요!",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.66,
+        "text": " 발끝은 천천히 가",
+        "tokens": [
+          50365,
+          20414,
+          223,
+          251,
+          2124,
+          31076,
+          18906,
+          5905,
+          4147,
+          50511
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3375593144842919,
+        "compression_ratio": 1.2040816326530612,
+        "no_speech_prob": 2.7150365289330125e-11,
+        "words": [
+          {
+            "word": " 발끝은",
+            "start": 0.0,
+            "end": 0.42,
+            "probability": 0.88916015625
+          },
+          {
+            "word": " 천천히",
+            "start": 0.42,
+            "end": 1.4,
+            "probability": 0.9853515625
+          },
+          {
+            "word": " 가",
+            "start": 1.4,
+            "end": 1.66,
+            "probability": 0.87158203125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.92,
+        "end": 4.62,
+        "text": " 발끝이 느려져",
+        "tokens": [
+          50511,
+          20414,
+          223,
+          251,
+          1129,
+          10749,
+          5743,
+          17383,
+          50665
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3375593144842919,
+        "compression_ratio": 1.2040816326530612,
+        "no_speech_prob": 2.7150365289330125e-11,
+        "words": [
+          {
+            "word": " 발끝이",
+            "start": 2.8,
+            "end": 3.5,
+            "probability": 0.9736328125
+          },
+          {
+            "word": " 느려져",
+            "start": 3.5,
+            "end": 4.62,
+            "probability": 0.94091796875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 6.0,
+        "end": 7.54,
+        "text": " 걸음은 고를게",
+        "tokens": [
+          50665,
+          14240,
+          5654,
+          2124,
+          18556,
+          2429,
+          1810,
+          50819
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3375593144842919,
+        "compression_ratio": 1.2040816326530612,
+        "no_speech_prob": 2.7150365289330125e-11,
+        "words": [
+          {
+            "word": " 걸음은",
+            "start": 5.8999999999999995,
+            "end": 6.6,
+            "probability": 0.9140625
+          },
+          {
+            "word": " 고를게",
+            "start": 6.6,
+            "end": 7.54,
+            "probability": 0.80712890625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 9.08,
+        "end": 12.04,
+        "text": " 이 순간 조금 떠나가자",
+        "tokens": [
+          50819,
+          2620,
+          44588,
+          13091,
+          48158,
+          3404,
+          1453,
+          4264,
+          50973
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3375593144842919,
+        "compression_ratio": 1.2040816326530612,
+        "no_speech_prob": 2.7150365289330125e-11,
+        "words": [
+          {
+            "word": " 이",
+            "start": 8.48,
+            "end": 9.18,
+            "probability": 0.92431640625
+          },
+          {
+            "word": " 순간",
+            "start": 9.18,
+            "end": 9.74,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 조금",
+            "start": 9.74,
+            "end": 10.34,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 떠나가자",
+            "start": 10.34,
+            "end": 12.04,
+            "probability": 0.951171875
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 12.04,
+        "end": 14.16,
+        "text": " 발끝은 천천히 가",
+        "tokens": [
+          50973,
+          20414,
+          223,
+          251,
+          2124,
+          31076,
+          18906,
+          5905,
+          4147,
+          51123
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3375593144842919,
+        "compression_ratio": 1.2040816326530612,
+        "no_speech_prob": 2.7150365289330125e-11,
+        "words": [
+          {
+            "word": " 발끝은",
+            "start": 12.04,
+            "end": 12.76,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 천천히",
+            "start": 12.76,
+            "end": 13.8,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 가",
+            "start": 13.8,
+            "end": 14.16,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 39.02,
+        "end": 41.68,
+        "text": " 발끝이 느려져",
+        "tokens": [
+          50365,
+          20414,
+          223,
+          251,
+          1129,
+          10749,
+          5743,
+          17383,
+          50954
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29306159148345123,
+        "compression_ratio": 1.0543478260869565,
+        "no_speech_prob": 1.2135337006113911e-11,
+        "words": [
+          {
+            "word": " 발끝이",
+            "start": 39.02,
+            "end": 40.42,
+            "probability": 0.9375
+          },
+          {
+            "word": " 느려져",
+            "start": 40.42,
+            "end": 41.68,
+            "probability": 0.958984375
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 41.68,
+        "end": 44.24,
+        "text": " 걸음은 고르게",
+        "tokens": [
+          50954,
+          14240,
+          5654,
+          2124,
+          18556,
+          39930,
+          51078
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29306159148345123,
+        "compression_ratio": 1.0543478260869565,
+        "no_speech_prob": 1.2135337006113911e-11,
+        "words": [
+          {
+            "word": " 걸음은",
+            "start": 41.68,
+            "end": 43.52,
+            "probability": 0.90771484375
+          },
+          {
+            "word": " 고르게",
+            "start": 43.52,
+            "end": 44.24,
+            "probability": 0.984375
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 3000,
+        "start": 44.24,
+        "end": 48.94,
+        "text": " 이 순간 조금 떠나가자",
+        "tokens": [
+          51078,
+          2620,
+          44588,
+          13091,
+          48158,
+          3404,
+          1453,
+          4264,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29306159148345123,
+        "compression_ratio": 1.0543478260869565,
+        "no_speech_prob": 1.2135337006113911e-11,
+        "words": [
+          {
+            "word": " 이",
+            "start": 44.24,
+            "end": 46.1,
+            "probability": 0.958984375
+          },
+          {
+            "word": " 순간",
+            "start": 46.1,
+            "end": 46.66,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 조금",
+            "start": 46.66,
+            "end": 47.24,
+            "probability": 0.9775390625
+          },
+          {
+            "word": " 떠나가자",
+            "start": 47.24,
+            "end": 48.94,
+            "probability": 0.98291015625
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 3000,
+        "start": 48.94,
+        "end": 51.86,
+        "text": " 발끝은 천천히 가네",
+        "tokens": [
+          51314,
+          20414,
+          223,
+          251,
+          2124,
+          31076,
+          18906,
+          5905,
+          10583,
+          5626,
+          51461
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.29306159148345123,
+        "compression_ratio": 1.0543478260869565,
+        "no_speech_prob": 1.2135337006113911e-11,
+        "words": [
+          {
+            "word": " 발끝은",
+            "start": 48.94,
+            "end": 49.64,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 천천히",
+            "start": 49.64,
+            "end": 50.56,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 가네",
+            "start": 50.56,
+            "end": 51.86,
+            "probability": 0.9287109375
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 6000,
+        "start": 65.38,
+        "end": 66.98,
+        "text": " 다음 영상에서 만나요!",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          0,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.44897598690456814,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 1.2261973381111346e-10,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 65.38,
+            "end": 66.22,
+            "probability": 0.269287109375
+          },
+          {
+            "word": " 영상에서",
+            "start": 66.22,
+            "end": 66.94,
+            "probability": 0.82421875
+          },
+          {
+            "word": " 만나요!",
+            "start": 66.94,
+            "end": 66.98,
+            "probability": 0.9951171875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/12__숨__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "b8ac408883570b2a52104e1bed48e74b9e9454eb40c109c3872d1b483ea46f9e",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "140.0,180.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/12__숨__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "b8ac408883570b2a52104e1bed48e74b9e9454eb40c109c3872d1b483ea46f9e",
+  "clip_start_s": 140.0,
+  "clip_end_s": 180.0,
+  "clip_audio_sha256": "58d0ba92800b37b6f714d9d90423feceb30c0971d5efe35adb27f19aaf46195b",
+  "elapsed_seconds": 3.078,
+  "transcription": {
+    "text": " 힘들었던 하루도 여기서 끝이야 숨을 고르면 하루가 내려가 눈앞에 서면 마음이 놓여 숨을 고르면 어깨에",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 5.76,
+        "text": " 힘들었던 하루도 여기서 끝이야",
+        "tokens": [
+          50365,
+          28576,
+          27093,
+          33918,
+          3744,
+          25404,
+          13932,
+          15374,
+          50715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6846088496121493,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 1.0508042352919134e-11,
+        "words": [
+          {
+            "word": " 힘들었던",
+            "start": 0.0,
+            "end": 0.88,
+            "probability": 0.96142578125
+          },
+          {
+            "word": " 하루도",
+            "start": 0.88,
+            "end": 2.22,
+            "probability": 0.9833984375
+          },
+          {
+            "word": " 여기서",
+            "start": 2.22,
+            "end": 3.06,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 끝이야",
+            "start": 3.06,
+            "end": 5.76,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 576,
+        "start": 26.5,
+        "end": 31.72,
+        "text": " 숨을 고르면 하루가 내려가",
+        "tokens": [
+          50365,
+          33354,
+          1638,
+          18556,
+          43486,
+          33918,
+          1453,
+          33428,
+          1453,
+          51679
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.23737565676371256,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 8.644121009260264e-12,
+        "words": [
+          {
+            "word": " 숨을",
+            "start": 26.5,
+            "end": 27.9,
+            "probability": 0.7919921875
+          },
+          {
+            "word": " 고르면",
+            "start": 27.9,
+            "end": 28.76,
+            "probability": 0.9736328125
+          },
+          {
+            "word": " 하루가",
+            "start": 28.76,
+            "end": 30.58,
+            "probability": 0.98974609375
+          },
+          {
+            "word": " 내려가",
+            "start": 30.58,
+            "end": 31.72,
+            "probability": 0.95947265625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3172,
+        "start": 31.72,
+        "end": 36.6,
+        "text": " 눈앞에 서면 마음이 놓여",
+        "tokens": [
+          50365,
+          15333,
+          1457,
+          252,
+          1517,
+          32558,
+          2708,
+          20477,
+          1129,
+          28747,
+          10558,
+          50617
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2543961068858271,
+        "compression_ratio": 0.8823529411764706,
+        "no_speech_prob": 1.1581358268231146e-11,
+        "words": [
+          {
+            "word": " 눈앞에",
+            "start": 31.72,
+            "end": 33.36,
+            "probability": 0.9462890625
+          },
+          {
+            "word": " 서면",
+            "start": 33.36,
+            "end": 34.36,
+            "probability": 0.9453125
+          },
+          {
+            "word": " 마음이",
+            "start": 34.36,
+            "end": 35.82,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 놓여",
+            "start": 35.82,
+            "end": 36.6,
+            "probability": 0.978515625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3172,
+        "start": 36.6,
+        "end": 39.98,
+        "text": " 숨을 고르면 어깨에",
+        "tokens": [
+          50617,
+          33354,
+          1638,
+          18556,
+          43486,
+          9076,
+          2900,
+          101,
+          1517,
+          50779
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2543961068858271,
+        "compression_ratio": 0.8823529411764706,
+        "no_speech_prob": 1.1581358268231146e-11,
+        "words": [
+          {
+            "word": " 숨을",
+            "start": 36.6,
+            "end": 38.16,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 고르면",
+            "start": 38.16,
+            "end": 38.96,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 어깨에",
+            "start": 38.96,
+            "end": 39.98,
+            "probability": 0.77685546875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

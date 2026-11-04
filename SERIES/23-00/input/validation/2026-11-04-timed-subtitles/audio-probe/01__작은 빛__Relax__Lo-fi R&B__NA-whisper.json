@@ -1,0 +1,1978 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/01__작은 빛__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "085f11e1d986a7d08ebc5a1b2cf540c66616af90a74334d5a7b2c3e4f0b7650b",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 9.733,
+  "transcription": {
+    "text": " 잠든 이 볼에 손결만 살짝 닿아도 세상이 조용해 시계소리도 멈춘 밤 아주 작은 코 올라갔다 내려오는 숨 이 밤 가득한 기적 같은 너의 꿈 밤새 지친 난도 너를 보면 풀려가 말로 못한 모든 걱정 이 순간에 사라져 작은 손에 걸린 세상 Little light 네 손가락 사이에 나의 하루가 살며시 또 웃는다 Little light 이렇게만 있어줘 아무 말도 말고 작은 손에 걸린 세상 Little light 내 손가락을 꼭 쥔 채 잠이 들었지 빠질까 봐서 놓치지 않으려는데 내 어지러운 하루의 끝에서 너는 한 번의 숨결로 모든 걸 다 비추는 불 작은 손에 걸린 세상 Little light 네 손가락 사이에 나의 하루가 살며시 또 웃는다 Little light 이렇게만 있어줘 아무 말도 말고 작은 손에 걸린 세상 Little light 울컥해지는 가슴 조용히 혼자 말해 고마워 고마워 내 전부가 되어준 너 혹시 깰까봐 숨소리도 낮춰보며 다짐해 다짐해 이 손 절대 놓지 않겠다고 작은 손에 걸린 세상 little light 네 손가락 사이에 나의 하루가 살며시 또 웃는다 Little Light 이렇게만 있어줘 아무 말도 말고 작은 손에 걸린 세상 Little Light 한글자막 by 한효정",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 13.959999999999999,
+        "end": 20.66,
+        "text": " 잠든 이 볼에 손결만 살짝 닿아도",
+        "tokens": [
+          50365,
+          1332,
+          4673,
+          6646,
+          2620,
+          18001,
+          1517,
+          15268,
+          1368,
+          2004,
+          6478,
+          22384,
+          2515,
+          123,
+          2230,
+          3744,
+          51403
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25503505600823295,
+        "compression_ratio": 0.9680851063829787,
+        "no_speech_prob": 1.0324368096559233e-11,
+        "words": [
+          {
+            "word": " 잠든",
+            "start": 13.959999999999999,
+            "end": 15.36,
+            "probability": 0.8251953125
+          },
+          {
+            "word": " 이",
+            "start": 15.36,
+            "end": 15.88,
+            "probability": 0.6064453125
+          },
+          {
+            "word": " 볼에",
+            "start": 15.88,
+            "end": 17.38,
+            "probability": 0.9306640625
+          },
+          {
+            "word": " 손결만",
+            "start": 17.38,
+            "end": 18.56,
+            "probability": 0.7978515625
+          },
+          {
+            "word": " 살짝",
+            "start": 18.56,
+            "end": 19.34,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 닿아도",
+            "start": 19.34,
+            "end": 20.66,
+            "probability": 0.82568359375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 20.66,
+        "end": 27.56,
+        "text": " 세상이 조용해 시계소리도 멈춘 밤",
+        "tokens": [
+          51403,
+          37990,
+          1129,
+          7430,
+          8761,
+          5302,
+          5710,
+          14597,
+          17921,
+          7134,
+          1838,
+          8514,
+          230,
+          9597,
+          246,
+          38093,
+          51744
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25503505600823295,
+        "compression_ratio": 0.9680851063829787,
+        "no_speech_prob": 1.0324368096559233e-11,
+        "words": [
+          {
+            "word": " 세상이",
+            "start": 20.66,
+            "end": 22.0,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 조용해",
+            "start": 22.0,
+            "end": 24.06,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 시계소리도",
+            "start": 24.06,
+            "end": 26.06,
+            "probability": 0.8896484375
+          },
+          {
+            "word": " 멈춘",
+            "start": 26.06,
+            "end": 27.02,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 밤",
+            "start": 27.02,
+            "end": 27.56,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2756,
+        "start": 27.56,
+        "end": 34.24,
+        "text": " 아주 작은 코 올라갔다 내려오는 숨",
+        "tokens": [
+          50365,
+          22360,
+          45870,
+          26306,
+          22327,
+          31170,
+          1235,
+          33428,
+          8920,
+          1098,
+          33354,
+          50703
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15076732635498047,
+        "compression_ratio": 1.1910828025477707,
+        "no_speech_prob": 9.70790201698657e-12,
+        "words": [
+          {
+            "word": " 아주",
+            "start": 27.56,
+            "end": 28.96,
+            "probability": 0.9521484375
+          },
+          {
+            "word": " 작은",
+            "start": 28.96,
+            "end": 30.08,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 코",
+            "start": 30.08,
+            "end": 30.74,
+            "probability": 0.92529296875
+          },
+          {
+            "word": " 올라갔다",
+            "start": 30.74,
+            "end": 32.18,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 내려오는",
+            "start": 32.18,
+            "end": 33.76,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 숨",
+            "start": 33.76,
+            "end": 34.24,
+            "probability": 0.9892578125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2756,
+        "start": 34.24,
+        "end": 40.94,
+        "text": " 이 밤 가득한 기적 같은 너의 꿈",
+        "tokens": [
+          50703,
+          2620,
+          38093,
+          10583,
+          26152,
+          3049,
+          7047,
+          7554,
+          10005,
+          12963,
+          2785,
+          43487,
+          51039
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15076732635498047,
+        "compression_ratio": 1.1910828025477707,
+        "no_speech_prob": 9.70790201698657e-12,
+        "words": [
+          {
+            "word": " 이",
+            "start": 34.24,
+            "end": 35.2,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 밤",
+            "start": 35.2,
+            "end": 35.56,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 가득한",
+            "start": 35.56,
+            "end": 37.44,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 기적",
+            "start": 37.44,
+            "end": 38.86,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 같은",
+            "start": 38.86,
+            "end": 39.62,
+            "probability": 0.705078125
+          },
+          {
+            "word": " 너의",
+            "start": 39.62,
+            "end": 40.48,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 꿈",
+            "start": 40.48,
+            "end": 40.94,
+            "probability": 0.99267578125
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2756,
+        "start": 40.94,
+        "end": 47.98,
+        "text": " 밤새 지친 난도 너를 보면 풀려가",
+        "tokens": [
+          51039,
+          38093,
+          28319,
+          4704,
+          25286,
+          2079,
+          17099,
+          3214,
+          31567,
+          19443,
+          21442,
+          2366,
+          5743,
+          1453,
+          51389
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15076732635498047,
+        "compression_ratio": 1.1910828025477707,
+        "no_speech_prob": 9.70790201698657e-12,
+        "words": [
+          {
+            "word": " 밤새",
+            "start": 40.94,
+            "end": 42.5,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 지친",
+            "start": 42.5,
+            "end": 43.32,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 난도",
+            "start": 43.32,
+            "end": 44.18,
+            "probability": 0.669921875
+          },
+          {
+            "word": " 너를",
+            "start": 44.18,
+            "end": 45.6,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 보면",
+            "start": 45.6,
+            "end": 46.4,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 풀려가",
+            "start": 46.4,
+            "end": 47.98,
+            "probability": 0.9931640625
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2756,
+        "start": 47.98,
+        "end": 52.96,
+        "text": " 말로 못한 모든 걱정 이 순간에 사라져",
+        "tokens": [
+          51389,
+          31336,
+          1955,
+          10239,
+          3049,
+          27714,
+          45315,
+          2620,
+          44588,
+          1517,
+          6606,
+          2742,
+          17383,
+          51645
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15076732635498047,
+        "compression_ratio": 1.1910828025477707,
+        "no_speech_prob": 9.70790201698657e-12,
+        "words": [
+          {
+            "word": " 말로",
+            "start": 47.98,
+            "end": 48.86,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 못한",
+            "start": 48.86,
+            "end": 49.3,
+            "probability": 0.9794921875
+          },
+          {
+            "word": " 모든",
+            "start": 49.3,
+            "end": 49.7,
+            "probability": 1.0
+          },
+          {
+            "word": " 걱정",
+            "start": 49.7,
+            "end": 50.6,
+            "probability": 0.916015625
+          },
+          {
+            "word": " 이",
+            "start": 50.6,
+            "end": 50.96,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 순간에",
+            "start": 50.96,
+            "end": 51.82,
+            "probability": 0.95166015625
+          },
+          {
+            "word": " 사라져",
+            "start": 51.82,
+            "end": 52.96,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 5296,
+        "start": 52.96,
+        "end": 57.54,
+        "text": " 작은 손에 걸린 세상",
+        "tokens": [
+          50365,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          50592
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 52.96,
+            "end": 54.92,
+            "probability": 0.869140625
+          },
+          {
+            "word": " 손에",
+            "start": 54.92,
+            "end": 55.96,
+            "probability": 0.99560546875
+          },
+          {
+            "word": " 걸린",
+            "start": 55.96,
+            "end": 56.78,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 세상",
+            "start": 56.78,
+            "end": 57.54,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 5296,
+        "start": 57.54,
+        "end": 59.6,
+        "text": " Little light",
+        "tokens": [
+          50592,
+          8022,
+          1442,
+          50710
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 57.54,
+            "end": 58.52,
+            "probability": 0.66748046875
+          },
+          {
+            "word": " light",
+            "start": 58.52,
+            "end": 59.6,
+            "probability": 0.58349609375
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 5296,
+        "start": 59.6,
+        "end": 65.34,
+        "text": " 네 손가락 사이에 나의 하루가",
+        "tokens": [
+          50710,
+          8808,
+          15268,
+          46918,
+          4744,
+          13030,
+          3948,
+          2785,
+          33918,
+          1453,
+          50965
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 네",
+            "start": 59.6,
+            "end": 61.06,
+            "probability": 0.86181640625
+          },
+          {
+            "word": " 손가락",
+            "start": 61.06,
+            "end": 62.02,
+            "probability": 1.0
+          },
+          {
+            "word": " 사이에",
+            "start": 62.02,
+            "end": 63.42,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 나의",
+            "start": 63.42,
+            "end": 64.2,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 하루가",
+            "start": 64.2,
+            "end": 65.34,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 5296,
+        "start": 65.34,
+        "end": 68.08,
+        "text": " 살며시 또 웃는다",
+        "tokens": [
+          50993,
+          37316,
+          18095,
+          3833,
+          7992,
+          25014,
+          1098,
+          1235,
+          51126
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 살며시",
+            "start": 65.34,
+            "end": 66.56,
+            "probability": 0.951171875
+          },
+          {
+            "word": " 또",
+            "start": 66.56,
+            "end": 66.9,
+            "probability": 0.40087890625
+          },
+          {
+            "word": " 웃는다",
+            "start": 66.9,
+            "end": 68.08,
+            "probability": 0.98779296875
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 5296,
+        "start": 68.08,
+        "end": 69.84,
+        "text": " Little light",
+        "tokens": [
+          51126,
+          8022,
+          1442,
+          51219
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 68.08,
+            "end": 68.86,
+            "probability": 0.990234375
+          },
+          {
+            "word": " light",
+            "start": 68.86,
+            "end": 69.84,
+            "probability": 0.9921875
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 5296,
+        "start": 69.84,
+        "end": 73.14,
+        "text": " 이렇게만 있어줘",
+        "tokens": [
+          51219,
+          5483,
+          5978,
+          2297,
+          33992,
+          246,
+          51365
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 이렇게만",
+            "start": 69.84,
+            "end": 71.32,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 있어줘",
+            "start": 71.32,
+            "end": 73.14,
+            "probability": 0.966796875
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 5296,
+        "start": 73.14,
+        "end": 76.08,
+        "text": " 아무 말도 말고",
+        "tokens": [
+          51365,
+          30702,
+          1747,
+          22983,
+          35145,
+          51523
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 아무",
+            "start": 73.14,
+            "end": 74.26,
+            "probability": 0.88330078125
+          },
+          {
+            "word": " 말도",
+            "start": 74.26,
+            "end": 75.24,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 말고",
+            "start": 75.24,
+            "end": 76.08,
+            "probability": 0.9931640625
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 5296,
+        "start": 76.08,
+        "end": 79.56,
+        "text": " 작은 손에 걸린 세상",
+        "tokens": [
+          51523,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          51702
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3268869044417042,
+        "compression_ratio": 1.2582781456953642,
+        "no_speech_prob": 1.6082506854031564e-11,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 76.08,
+            "end": 77.48,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 손에",
+            "start": 77.48,
+            "end": 78.06,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 걸린",
+            "start": 78.06,
+            "end": 78.78,
+            "probability": 1.0
+          },
+          {
+            "word": " 세상",
+            "start": 78.78,
+            "end": 79.56,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 7956,
+        "start": 79.56,
+        "end": 83.3,
+        "text": " Little light",
+        "tokens": [
+          50365,
+          8022,
+          1442,
+          50563
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33423983532449475,
+        "compression_ratio": 1.0298507462686568,
+        "no_speech_prob": 1.5587565960206717e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 79.56,
+            "end": 82.16,
+            "probability": 0.06597900390625
+          },
+          {
+            "word": " light",
+            "start": 82.16,
+            "end": 83.3,
+            "probability": 0.292236328125
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 7956,
+        "start": 87.53999999999999,
+        "end": 93.54,
+        "text": " 내 손가락을 꼭 쥔 채 잠이 들었지",
+        "tokens": [
+          50563,
+          6918,
+          15268,
+          46918,
+          1638,
+          25881,
+          451,
+          98,
+          242,
+          27411,
+          15825,
+          1129,
+          6275,
+          5642,
+          1831,
+          51074
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33423983532449475,
+        "compression_ratio": 1.0298507462686568,
+        "no_speech_prob": 1.5587565960206717e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 87.53999999999999,
+            "end": 88.94,
+            "probability": 0.9189453125
+          },
+          {
+            "word": " 손가락을",
+            "start": 88.94,
+            "end": 90.32,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 꼭",
+            "start": 90.32,
+            "end": 91.08,
+            "probability": 0.96923828125
+          },
+          {
+            "word": " 쥔",
+            "start": 91.08,
+            "end": 91.34,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 채",
+            "start": 91.34,
+            "end": 91.52,
+            "probability": 0.96533203125
+          },
+          {
+            "word": " 잠이",
+            "start": 91.52,
+            "end": 92.18,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 들었지",
+            "start": 92.18,
+            "end": 93.54,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 7956,
+        "start": 93.54,
+        "end": 99.94,
+        "text": " 빠질까 봐서 놓치지 않으려는데",
+        "tokens": [
+          51074,
+          28117,
+          18529,
+          3294,
+          15507,
+          2393,
+          28747,
+          8464,
+          1831,
+          6718,
+          3336,
+          5743,
+          4189,
+          51390
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33423983532449475,
+        "compression_ratio": 1.0298507462686568,
+        "no_speech_prob": 1.5587565960206717e-11,
+        "words": [
+          {
+            "word": " 빠질까",
+            "start": 93.54,
+            "end": 96.0,
+            "probability": 0.90869140625
+          },
+          {
+            "word": " 봐서",
+            "start": 96.0,
+            "end": 97.1,
+            "probability": 0.849609375
+          },
+          {
+            "word": " 놓치지",
+            "start": 97.1,
+            "end": 98.26,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 않으려는데",
+            "start": 98.26,
+            "end": 99.94,
+            "probability": 0.88330078125
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 7956,
+        "start": 99.94,
+        "end": 105.92,
+        "text": " 내 어지러운 하루의 끝에서",
+        "tokens": [
+          51390,
+          6918,
+          11474,
+          28719,
+          40537,
+          33918,
+          2785,
+          13932,
+          4885,
+          51683
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33423983532449475,
+        "compression_ratio": 1.0298507462686568,
+        "no_speech_prob": 1.5587565960206717e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 99.94,
+            "end": 102.54,
+            "probability": 0.98486328125
+          },
+          {
+            "word": " 어지러운",
+            "start": 102.54,
+            "end": 103.68,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 하루의",
+            "start": 103.68,
+            "end": 104.82,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 끝에서",
+            "start": 104.82,
+            "end": 105.92,
+            "probability": 0.94775390625
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 10592,
+        "start": 105.92,
+        "end": 114.0,
+        "text": " 너는 한 번의 숨결로 모든 걸 다 비추는 불",
+        "tokens": [
+          50365,
+          12963,
+          1098,
+          4815,
+          10212,
+          2785,
+          33354,
+          1368,
+          2004,
+          1955,
+          27714,
+          14240,
+          4279,
+          10079,
+          25023,
+          1098,
+          16285,
+          50820
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " 너는",
+            "start": 105.92,
+            "end": 107.12,
+            "probability": 0.712890625
+          },
+          {
+            "word": " 한",
+            "start": 107.12,
+            "end": 108.0,
+            "probability": 0.8544921875
+          },
+          {
+            "word": " 번의",
+            "start": 108.0,
+            "end": 108.48,
+            "probability": 0.98828125
+          },
+          {
+            "word": " 숨결로",
+            "start": 108.48,
+            "end": 110.12,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 모든",
+            "start": 110.12,
+            "end": 111.0,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 걸",
+            "start": 111.0,
+            "end": 111.52,
+            "probability": 0.9853515625
+          },
+          {
+            "word": " 다",
+            "start": 111.52,
+            "end": 111.96,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 비추는",
+            "start": 111.96,
+            "end": 113.28,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 불",
+            "start": 113.28,
+            "end": 114.0,
+            "probability": 0.8056640625
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 10592,
+        "start": 115.02,
+        "end": 118.34,
+        "text": " 작은 손에 걸린 세상",
+        "tokens": [
+          50820,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          50985
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 115.02,
+            "end": 115.72,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 손에",
+            "start": 115.72,
+            "end": 116.8,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 걸린",
+            "start": 116.8,
+            "end": 117.66,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 세상",
+            "start": 117.66,
+            "end": 118.34,
+            "probability": 0.98095703125
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 10592,
+        "start": 118.34,
+        "end": 120.58,
+        "text": " Little light",
+        "tokens": [
+          50985,
+          8022,
+          1442,
+          51108
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 118.34,
+            "end": 119.34,
+            "probability": 0.74853515625
+          },
+          {
+            "word": " light",
+            "start": 119.34,
+            "end": 120.58,
+            "probability": 0.7568359375
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 10592,
+        "start": 120.58,
+        "end": 126.18,
+        "text": " 네 손가락 사이에 나의 하루가",
+        "tokens": [
+          51108,
+          8808,
+          15268,
+          46918,
+          4744,
+          13030,
+          3948,
+          2785,
+          33918,
+          1453,
+          51385
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " 네",
+            "start": 120.58,
+            "end": 121.9,
+            "probability": 0.845703125
+          },
+          {
+            "word": " 손가락",
+            "start": 121.9,
+            "end": 122.98,
+            "probability": 1.0
+          },
+          {
+            "word": " 사이에",
+            "start": 122.98,
+            "end": 124.24,
+            "probability": 0.98828125
+          },
+          {
+            "word": " 나의",
+            "start": 124.24,
+            "end": 125.1,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 하루가",
+            "start": 125.1,
+            "end": 126.18,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 10592,
+        "start": 126.18,
+        "end": 128.94,
+        "text": " 살며시 또 웃는다",
+        "tokens": [
+          51385,
+          37316,
+          18095,
+          3833,
+          7992,
+          25014,
+          1098,
+          1235,
+          51520
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " 살며시",
+            "start": 126.18,
+            "end": 127.42,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 또",
+            "start": 127.42,
+            "end": 127.76,
+            "probability": 0.634765625
+          },
+          {
+            "word": " 웃는다",
+            "start": 127.76,
+            "end": 128.94,
+            "probability": 0.98828125
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 10592,
+        "start": 128.94,
+        "end": 130.68,
+        "text": " Little light",
+        "tokens": [
+          51520,
+          8022,
+          1442,
+          51613
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 128.94,
+            "end": 129.7,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " light",
+            "start": 129.7,
+            "end": 130.68,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 10592,
+        "start": 130.68,
+        "end": 133.94,
+        "text": " 이렇게만 있어줘",
+        "tokens": [
+          51613,
+          5483,
+          5978,
+          2297,
+          33992,
+          246,
+          51780
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21783080933586,
+        "compression_ratio": 1.1785714285714286,
+        "no_speech_prob": 1.5769680700161715e-11,
+        "words": [
+          {
+            "word": " 이렇게만",
+            "start": 130.68,
+            "end": 132.14,
+            "probability": 0.9765625
+          },
+          {
+            "word": " 있어줘",
+            "start": 132.14,
+            "end": 133.94,
+            "probability": 0.96044921875
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 13394,
+        "start": 133.94,
+        "end": 140.48,
+        "text": " 아무 말도 말고 작은 손에 걸린 세상",
+        "tokens": [
+          50365,
+          30702,
+          1747,
+          22983,
+          35145,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          50700
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21208099757923798,
+        "compression_ratio": 1.1569767441860466,
+        "no_speech_prob": 1.1039343050800454e-11,
+        "words": [
+          {
+            "word": " 아무",
+            "start": 133.94,
+            "end": 135.18,
+            "probability": 0.86279296875
+          },
+          {
+            "word": " 말도",
+            "start": 135.18,
+            "end": 136.12,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 말고",
+            "start": 136.12,
+            "end": 136.9,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 작은",
+            "start": 136.9,
+            "end": 138.34,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 손에",
+            "start": 138.34,
+            "end": 138.92,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 걸린",
+            "start": 138.92,
+            "end": 139.66,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 세상",
+            "start": 139.66,
+            "end": 140.48,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 13394,
+        "start": 140.48,
+        "end": 144.02,
+        "text": " Little light",
+        "tokens": [
+          50700,
+          8022,
+          1442,
+          50881
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21208099757923798,
+        "compression_ratio": 1.1569767441860466,
+        "no_speech_prob": 1.1039343050800454e-11,
+        "words": [
+          {
+            "word": " Little",
+            "start": 140.48,
+            "end": 143.0,
+            "probability": 0.21142578125
+          },
+          {
+            "word": " light",
+            "start": 143.0,
+            "end": 144.02,
+            "probability": 0.38330078125
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 13394,
+        "start": 144.02,
+        "end": 149.8,
+        "text": " 울컥해지는 가슴 조용히 혼자 말해",
+        "tokens": [
+          50881,
+          40814,
+          13302,
+          98,
+          7002,
+          11061,
+          1098,
+          4147,
+          2038,
+          112,
+          7430,
+          8761,
+          5905,
+          36028,
+          7058,
+          5302,
+          51161
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21208099757923798,
+        "compression_ratio": 1.1569767441860466,
+        "no_speech_prob": 1.1039343050800454e-11,
+        "words": [
+          {
+            "word": " 울컥해지는",
+            "start": 144.02,
+            "end": 146.2,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 가슴",
+            "start": 146.2,
+            "end": 147.1,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 조용히",
+            "start": 147.1,
+            "end": 147.92,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 혼자",
+            "start": 147.92,
+            "end": 148.54,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 말해",
+            "start": 148.54,
+            "end": 149.8,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 13394,
+        "start": 149.8,
+        "end": 154.9,
+        "text": " 고마워 고마워 내 전부가 되어준 너",
+        "tokens": [
+          51161,
+          9161,
+          15017,
+          10086,
+          9161,
+          15017,
+          10086,
+          6918,
+          19617,
+          6301,
+          1453,
+          5514,
+          33992,
+          222,
+          12963,
+          51445
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21208099757923798,
+        "compression_ratio": 1.1569767441860466,
+        "no_speech_prob": 1.1039343050800454e-11,
+        "words": [
+          {
+            "word": " 고마워",
+            "start": 149.8,
+            "end": 150.82,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 고마워",
+            "start": 150.82,
+            "end": 151.64,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 내",
+            "start": 151.64,
+            "end": 152.18,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 전부가",
+            "start": 152.18,
+            "end": 153.1,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 되어준",
+            "start": 153.1,
+            "end": 154.14,
+            "probability": 0.96630859375
+          },
+          {
+            "word": " 너",
+            "start": 154.14,
+            "end": 154.9,
+            "probability": 0.96728515625
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 13394,
+        "start": 155.54,
+        "end": 161.64,
+        "text": " 혹시 깰까봐 숨소리도 낮춰보며",
+        "tokens": [
+          51445,
+          34767,
+          8394,
+          108,
+          2900,
+          2457,
+          16808,
+          33354,
+          17921,
+          7134,
+          1838,
+          38601,
+          9597,
+          2004,
+          17420,
+          18095,
+          51753
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21208099757923798,
+        "compression_ratio": 1.1569767441860466,
+        "no_speech_prob": 1.1039343050800454e-11,
+        "words": [
+          {
+            "word": " 혹시",
+            "start": 155.54,
+            "end": 157.24,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 깰까봐",
+            "start": 157.24,
+            "end": 158.48,
+            "probability": 0.87353515625
+          },
+          {
+            "word": " 숨소리도",
+            "start": 158.48,
+            "end": 159.8,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 낮춰보며",
+            "start": 159.8,
+            "end": 161.64,
+            "probability": 0.9873046875
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 16164,
+        "start": 161.64,
+        "end": 170.36,
+        "text": " 다짐해 다짐해 이 손 절대 놓지 않겠다고",
+        "tokens": [
+          50365,
+          4279,
+          1372,
+          238,
+          5302,
+          4279,
+          1372,
+          238,
+          5302,
+          2620,
+          15268,
+          48811,
+          28747,
+          1831,
+          6718,
+          5137,
+          7726,
+          50806
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14594619472821554,
+        "compression_ratio": 1.103448275862069,
+        "no_speech_prob": 9.22207709502798e-12,
+        "words": [
+          {
+            "word": " 다짐해",
+            "start": 161.64,
+            "end": 163.0,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 다짐해",
+            "start": 163.0,
+            "end": 164.64,
+            "probability": 0.97314453125
+          },
+          {
+            "word": " 이",
+            "start": 164.64,
+            "end": 165.08,
+            "probability": 0.97998046875
+          },
+          {
+            "word": " 손",
+            "start": 165.08,
+            "end": 165.4,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 절대",
+            "start": 165.4,
+            "end": 166.14,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 놓지",
+            "start": 166.14,
+            "end": 167.52,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 않겠다고",
+            "start": 167.52,
+            "end": 170.36,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "seek": 16164,
+        "start": 170.36,
+        "end": 176.46,
+        "text": " 작은 손에 걸린 세상 little light",
+        "tokens": [
+          50806,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          707,
+          1442,
+          51117
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14594619472821554,
+        "compression_ratio": 1.103448275862069,
+        "no_speech_prob": 9.22207709502798e-12,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 170.36,
+            "end": 171.62,
+            "probability": 0.99462890625
+          },
+          {
+            "word": " 손에",
+            "start": 171.62,
+            "end": 172.7,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 걸린",
+            "start": 172.7,
+            "end": 173.52,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 세상",
+            "start": 173.52,
+            "end": 174.3,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " little",
+            "start": 174.3,
+            "end": 175.26,
+            "probability": 0.3515625
+          },
+          {
+            "word": " light",
+            "start": 175.26,
+            "end": 176.46,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "seek": 16164,
+        "start": 176.46,
+        "end": 184.94,
+        "text": " 네 손가락 사이에 나의 하루가 살며시 또 웃는다",
+        "tokens": [
+          51117,
+          8808,
+          15268,
+          46918,
+          4744,
+          13030,
+          3948,
+          2785,
+          33918,
+          1453,
+          37316,
+          18095,
+          3833,
+          7992,
+          25014,
+          1098,
+          1235,
+          51535
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14594619472821554,
+        "compression_ratio": 1.103448275862069,
+        "no_speech_prob": 9.22207709502798e-12,
+        "words": [
+          {
+            "word": " 네",
+            "start": 176.46,
+            "end": 177.82,
+            "probability": 0.92431640625
+          },
+          {
+            "word": " 손가락",
+            "start": 177.82,
+            "end": 178.96,
+            "probability": 1.0
+          },
+          {
+            "word": " 사이에",
+            "start": 178.96,
+            "end": 180.22,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 나의",
+            "start": 180.22,
+            "end": 181.02,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 하루가",
+            "start": 181.02,
+            "end": 182.1,
+            "probability": 1.0
+          },
+          {
+            "word": " 살며시",
+            "start": 182.1,
+            "end": 183.36,
+            "probability": 0.96337890625
+          },
+          {
+            "word": " 또",
+            "start": 183.36,
+            "end": 183.7,
+            "probability": 0.94873046875
+          },
+          {
+            "word": " 웃는다",
+            "start": 183.7,
+            "end": 184.94,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "seek": 18494,
+        "start": 184.94,
+        "end": 190.0,
+        "text": " Little Light 이렇게만 있어줘",
+        "tokens": [
+          50365,
+          8022,
+          8279,
+          5483,
+          5978,
+          2297,
+          33992,
+          246,
+          50630
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33603697556715745,
+        "compression_ratio": 0.9897959183673469,
+        "no_speech_prob": 7.2476408555233185e-12,
+        "words": [
+          {
+            "word": " Little",
+            "start": 184.94,
+            "end": 185.74,
+            "probability": 0.85888671875
+          },
+          {
+            "word": " Light",
+            "start": 185.74,
+            "end": 186.6,
+            "probability": 0.56787109375
+          },
+          {
+            "word": " 이렇게만",
+            "start": 186.6,
+            "end": 188.14,
+            "probability": 0.97265625
+          },
+          {
+            "word": " 있어줘",
+            "start": 188.14,
+            "end": 190.0,
+            "probability": 0.97998046875
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "seek": 18494,
+        "start": 190.0,
+        "end": 196.42,
+        "text": " 아무 말도 말고 작은 손에 걸린 세상",
+        "tokens": [
+          50630,
+          30702,
+          1747,
+          22983,
+          35145,
+          45870,
+          15268,
+          1517,
+          37248,
+          12811,
+          37990,
+          50947
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33603697556715745,
+        "compression_ratio": 0.9897959183673469,
+        "no_speech_prob": 7.2476408555233185e-12,
+        "words": [
+          {
+            "word": " 아무",
+            "start": 190.0,
+            "end": 191.12,
+            "probability": 0.9013671875
+          },
+          {
+            "word": " 말도",
+            "start": 191.12,
+            "end": 192.14,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 말고",
+            "start": 192.14,
+            "end": 192.96,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 작은",
+            "start": 192.96,
+            "end": 194.36,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 손에",
+            "start": 194.36,
+            "end": 194.92,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 걸린",
+            "start": 194.92,
+            "end": 195.66,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 세상",
+            "start": 195.66,
+            "end": 196.42,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "seek": 18494,
+        "start": 196.42,
+        "end": 200.1,
+        "text": " Little Light",
+        "tokens": [
+          50947,
+          8022,
+          8279,
+          51127
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.33603697556715745,
+        "compression_ratio": 0.9897959183673469,
+        "no_speech_prob": 7.2476408555233185e-12,
+        "words": [
+          {
+            "word": " Little",
+            "start": 196.42,
+            "end": 199.02,
+            "probability": 0.9814453125
+          },
+          {
+            "word": " Light",
+            "start": 199.02,
+            "end": 200.1,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "seek": 21494,
+        "start": 215.06,
+        "end": 218.2,
+        "text": " 한글자막 by 한효정",
+        "tokens": [
+          50365,
+          4815,
+          28311,
+          11945,
+          47422,
+          538,
+          4815,
+          11193,
+          101,
+          6170,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2391889492670695,
+        "compression_ratio": 0.6944444444444444,
+        "no_speech_prob": 1.879023187045803e-10,
+        "words": [
+          {
+            "word": " 한글자막",
+            "start": 215.06,
+            "end": 216.46,
+            "probability": 0.77099609375
+          },
+          {
+            "word": " by",
+            "start": 216.46,
+            "end": 217.86,
+            "probability": 0.76123046875
+          },
+          {
+            "word": " 한효정",
+            "start": 217.86,
+            "end": 218.2,
+            "probability": 0.88916015625
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/16__골목__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "f47287ddb07010b83a7022204b0d831bf0fdd1d366289d6efb50c4a1b9f859fb",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "165.0,206.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/16__골목__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "f47287ddb07010b83a7022204b0d831bf0fdd1d366289d6efb50c4a1b9f859fb",
+  "clip_start_s": 165.0,
+  "clip_end_s": 206.0,
+  "clip_audio_sha256": "7f6f1b7120e39df8bc8b2c3710ce593e935f7498afcf5f24e75981d9bf7ddbc4",
+  "elapsed_seconds": 2.508,
+  "transcription": {
+    "text": " 천천히 천천히 걸어가요 서두를 것 없이 흘러가요 저 모퉁이 끝에 뭐가 있을까 오늘 밤은 조금 멀리 가볼까요",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 15.1,
+        "end": 19.6,
+        "text": " 천천히 천천히 걸어가요",
+        "tokens": [
+          50365,
+          31076,
+          18906,
+          5905,
+          31076,
+          18906,
+          5905,
+          14240,
+          3103,
+          28517,
+          51346
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21956618626912436,
+        "compression_ratio": 0.9705882352941176,
+        "no_speech_prob": 1.1714515642247125e-11,
+        "words": [
+          {
+            "word": " 천천히",
+            "start": 15.1,
+            "end": 16.5,
+            "probability": 0.94189453125
+          },
+          {
+            "word": " 천천히",
+            "start": 16.5,
+            "end": 17.88,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 걸어가요",
+            "start": 17.88,
+            "end": 19.6,
+            "probability": 0.9873046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 19.6,
+        "end": 25.22,
+        "text": " 서두를 것 없이 흘러가요",
+        "tokens": [
+          51346,
+          32558,
+          45193,
+          2429,
+          4431,
+          33353,
+          14473,
+          1894,
+          6235,
+          28517,
+          51628
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.21956618626912436,
+        "compression_ratio": 0.9705882352941176,
+        "no_speech_prob": 1.1714515642247125e-11,
+        "words": [
+          {
+            "word": " 서두를",
+            "start": 19.6,
+            "end": 21.68,
+            "probability": 0.861328125
+          },
+          {
+            "word": " 것",
+            "start": 21.68,
+            "end": 21.98,
+            "probability": 0.98046875
+          },
+          {
+            "word": " 없이",
+            "start": 21.98,
+            "end": 22.94,
+            "probability": 0.93994140625
+          },
+          {
+            "word": " 흘러가요",
+            "start": 22.94,
+            "end": 25.22,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2522,
+        "start": 25.22,
+        "end": 30.92,
+        "text": " 저 모퉁이 끝에 뭐가 있을까",
+        "tokens": [
+          50365,
+          4841,
+          11722,
+          169,
+          231,
+          223,
+          1129,
+          13932,
+          1517,
+          39713,
+          18082,
+          3294,
+          50662
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14697729110717772,
+        "compression_ratio": 0.896551724137931,
+        "no_speech_prob": 1.0306569833695711e-11,
+        "words": [
+          {
+            "word": " 저",
+            "start": 25.22,
+            "end": 26.22,
+            "probability": 0.98291015625
+          },
+          {
+            "word": " 모퉁이",
+            "start": 26.22,
+            "end": 27.72,
+            "probability": 0.9853515625
+          },
+          {
+            "word": " 끝에",
+            "start": 27.72,
+            "end": 28.54,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 뭐가",
+            "start": 28.54,
+            "end": 29.32,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 있을까",
+            "start": 29.32,
+            "end": 30.92,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2522,
+        "start": 30.92,
+        "end": 37.78,
+        "text": " 오늘 밤은 조금 멀리 가볼까요",
+        "tokens": [
+          50662,
+          8880,
+          38093,
+          2124,
+          13091,
+          8514,
+          34374,
+          10583,
+          17194,
+          16474,
+          50997
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14697729110717772,
+        "compression_ratio": 0.896551724137931,
+        "no_speech_prob": 1.0306569833695711e-11,
+        "words": [
+          {
+            "word": " 오늘",
+            "start": 30.92,
+            "end": 31.96,
+            "probability": 0.890625
+          },
+          {
+            "word": " 밤은",
+            "start": 31.96,
+            "end": 33.02,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 조금",
+            "start": 33.02,
+            "end": 34.12,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 멀리",
+            "start": 34.12,
+            "end": 35.12,
+            "probability": 0.99560546875
+          },
+          {
+            "word": " 가볼까요",
+            "start": 35.12,
+            "end": 37.78,
+            "probability": 0.98095703125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

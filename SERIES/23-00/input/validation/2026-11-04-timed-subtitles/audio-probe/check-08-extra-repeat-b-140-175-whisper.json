@@ -1,0 +1,236 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/08__먼지__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "699890877a7b3a25659f64c70ee5b5b5f344ce1151fa24d483e208ad11d5880a",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "140.0,175.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/08__먼지__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "699890877a7b3a25659f64c70ee5b5b5f344ce1151fa24d483e208ad11d5880a",
+  "clip_start_s": 140.0,
+  "clip_end_s": 175.0,
+  "clip_audio_sha256": "080b31ff91f549f3af5d4011a574bf308e1fe18fe3ca4cecfeafd68c24a09039",
+  "elapsed_seconds": 2.479,
+  "transcription": {
+    "text": " 음 햇살이 번져가 먼지가 떠다녀 이 순간 여기 머물러 시간은 조용히 가 시간은 조용히 가",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 11.959999999999999,
+        "end": 16.12,
+        "text": " 음 햇살이 번져가",
+        "tokens": [
+          50365,
+          15179,
+          11988,
+          229,
+          26082,
+          1129,
+          10212,
+          17383,
+          1453,
+          51222
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4408677199791218,
+        "compression_ratio": 0.9102564102564102,
+        "no_speech_prob": 1.3331692520768268e-11,
+        "words": [
+          {
+            "word": " 음",
+            "start": 11.959999999999999,
+            "end": 13.36,
+            "probability": 0.300048828125
+          },
+          {
+            "word": " 햇살이",
+            "start": 13.36,
+            "end": 14.76,
+            "probability": 0.8935546875
+          },
+          {
+            "word": " 번져가",
+            "start": 14.76,
+            "end": 16.12,
+            "probability": 0.96337890625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 18.42,
+        "end": 21.14,
+        "text": " 먼지가 떠다녀",
+        "tokens": [
+          51222,
+          19326,
+          30232,
+          43687,
+          1235,
+          9664,
+          222,
+          51433
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4408677199791218,
+        "compression_ratio": 0.9102564102564102,
+        "no_speech_prob": 1.3331692520768268e-11,
+        "words": [
+          {
+            "word": " 먼지가",
+            "start": 18.42,
+            "end": 19.82,
+            "probability": 0.921875
+          },
+          {
+            "word": " 떠다녀",
+            "start": 19.82,
+            "end": 21.14,
+            "probability": 0.92138671875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 23.700000000000003,
+        "end": 27.46,
+        "text": " 이 순간 여기 머물러",
+        "tokens": [
+          51433,
+          2620,
+          44588,
+          7543,
+          37856,
+          105,
+          1870,
+          6235,
+          51778
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4408677199791218,
+        "compression_ratio": 0.9102564102564102,
+        "no_speech_prob": 1.3331692520768268e-11,
+        "words": [
+          {
+            "word": " 이",
+            "start": 23.700000000000003,
+            "end": 25.1,
+            "probability": 0.7841796875
+          },
+          {
+            "word": " 순간",
+            "start": 25.1,
+            "end": 25.74,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 여기",
+            "start": 25.74,
+            "end": 26.4,
+            "probability": 0.96923828125
+          },
+          {
+            "word": " 머물러",
+            "start": 26.4,
+            "end": 27.46,
+            "probability": 0.9931640625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2746,
+        "start": 30.44,
+        "end": 32.82,
+        "text": " 시간은 조용히 가",
+        "tokens": [
+          50365,
+          16648,
+          2124,
+          7430,
+          8761,
+          5905,
+          4147,
+          50638
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2561804827521829,
+        "compression_ratio": 1.3055555555555556,
+        "no_speech_prob": 1.6484838494257303e-10,
+        "words": [
+          {
+            "word": " 시간은",
+            "start": 30.44,
+            "end": 31.84,
+            "probability": 0.912109375
+          },
+          {
+            "word": " 조용히",
+            "start": 31.84,
+            "end": 32.62,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 가",
+            "start": 32.62,
+            "end": 32.82,
+            "probability": 0.712890625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2746,
+        "start": 32.82,
+        "end": 34.98,
+        "text": " 시간은 조용히 가",
+        "tokens": [
+          50638,
+          16648,
+          2124,
+          7430,
+          8761,
+          5905,
+          4147,
+          50741
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2561804827521829,
+        "compression_ratio": 1.3055555555555556,
+        "no_speech_prob": 1.6484838494257303e-10,
+        "words": [
+          {
+            "word": " 시간은",
+            "start": 32.82,
+            "end": 34.74,
+            "probability": 0.9501953125
+          },
+          {
+            "word": " 조용히",
+            "start": 34.74,
+            "end": 34.98,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 가",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.99267578125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

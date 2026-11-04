@@ -1,0 +1,133 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-20-line39-155-170.flac",
+  "audio_sha256": "53c53ef22160086340194ecb9248ebea60e548ca0b3b0d625d669fbad1d343c5",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 0.85,
+  "transcription": {
+    "text": " 다 치운 식탁 앞에서 또 웃고 있으니까 이만하면 좋은 저녁",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 5.24,
+        "text": " 다 치운 식탁 앞에서 또 웃고 있으니까",
+        "tokens": [
+          50365,
+          4279,
+          18447,
+          9996,
+          19675,
+          30182,
+          13727,
+          4885,
+          7992,
+          25014,
+          1313,
+          44489,
+          50628
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28790614915930707,
+        "compression_ratio": 0.9176470588235294,
+        "no_speech_prob": 3.1678017847758255e-11,
+        "words": [
+          {
+            "word": " 다",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.869140625
+          },
+          {
+            "word": " 치운",
+            "start": 0.22,
+            "end": 0.94,
+            "probability": 0.60205078125
+          },
+          {
+            "word": " 식탁",
+            "start": 0.94,
+            "end": 1.66,
+            "probability": 0.82958984375
+          },
+          {
+            "word": " 앞에서",
+            "start": 1.66,
+            "end": 2.5,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 또",
+            "start": 2.5,
+            "end": 2.92,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 웃고",
+            "start": 2.92,
+            "end": 3.54,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 있으니까",
+            "start": 3.54,
+            "end": 5.24,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.74,
+        "end": 11.5,
+        "text": " 이만하면 좋은 저녁",
+        "tokens": [
+          50628,
+          2892,
+          6478,
+          16283,
+          16460,
+          13163,
+          227,
+          223,
+          50940
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28790614915930707,
+        "compression_ratio": 0.9176470588235294,
+        "no_speech_prob": 3.1678017847758255e-11,
+        "words": [
+          {
+            "word": " 이만하면",
+            "start": 7.74,
+            "end": 9.14,
+            "probability": 0.8876953125
+          },
+          {
+            "word": " 좋은",
+            "start": 9.14,
+            "end": 10.04,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 저녁",
+            "start": 10.04,
+            "end": 11.5,
+            "probability": 0.9990234375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

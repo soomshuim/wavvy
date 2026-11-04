@@ -1,0 +1,424 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "75.0,115.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/15__약속__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "d0d301b9c235f9a4604736a95f13b38892e158b52b15f99d9326e06cd7898a05",
+  "clip_start_s": 75.0,
+  "clip_end_s": 115.0,
+  "clip_audio_sha256": "d9d1d5e50b4925b33efda41e897c0eef604e8aa98b76041170e1bd3d0244869d",
+  "elapsed_seconds": 2.413,
+  "transcription": {
+    "text": " 혼자 걷는 퇴근길이야 답장 알림이 울려 괜히 먼저 폰을 열어 미안 오늘은 안돼 왜 다들 연락이 안돼 한숨이 새어나 아 거 이만 더 더워 입신만 쌓여가는 오늘도 그런 저녁 야 오늘 뭐 해 시가 돼",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.98,
+        "text": " 혼자 걷는 퇴근길이야",
+        "tokens": [
+          50365,
+          36028,
+          4925,
+          115,
+          1098,
+          1175,
+          229,
+          112,
+          17904,
+          24479,
+          15374,
+          50582
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 혼자",
+            "start": 0.0,
+            "end": 1.18,
+            "probability": 0.8857421875
+          },
+          {
+            "word": " 걷는",
+            "start": 1.18,
+            "end": 2.2,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 퇴근길이야",
+            "start": 2.2,
+            "end": 3.98,
+            "probability": 0.99267578125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 15.540000000000001,
+        "end": 18.42,
+        "text": " 답장 알림이 울려",
+        "tokens": [
+          50582,
+          41918,
+          4573,
+          21246,
+          15773,
+          1129,
+          4709,
+          1397,
+          5743,
+          51288
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 답장",
+            "start": 15.540000000000001,
+            "end": 16.94,
+            "probability": 0.6708984375
+          },
+          {
+            "word": " 알림이",
+            "start": 16.94,
+            "end": 17.64,
+            "probability": 0.96533203125
+          },
+          {
+            "word": " 울려",
+            "start": 17.64,
+            "end": 18.42,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 18.42,
+        "end": 20.92,
+        "text": " 괜히 먼저 폰을 열어",
+        "tokens": [
+          51288,
+          17327,
+          5905,
+          20749,
+          9250,
+          108,
+          1638,
+          40039,
+          25982,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 괜히",
+            "start": 18.42,
+            "end": 19.12,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 먼저",
+            "start": 19.12,
+            "end": 19.5,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 폰을",
+            "start": 19.5,
+            "end": 20.16,
+            "probability": 0.97509765625
+          },
+          {
+            "word": " 열어",
+            "start": 20.16,
+            "end": 20.92,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 20.92,
+        "end": 22.92,
+        "text": " 미안 오늘은 안돼",
+        "tokens": [
+          51414,
+          40241,
+          23720,
+          42685,
+          51513
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 미안",
+            "start": 20.92,
+            "end": 21.76,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 오늘은",
+            "start": 21.76,
+            "end": 22.4,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 안돼",
+            "start": 22.4,
+            "end": 22.92,
+            "probability": 0.64599609375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 22.92,
+        "end": 25.68,
+        "text": " 왜 다들 연락이 안돼",
+        "tokens": [
+          51513,
+          9883,
+          47660,
+          34902,
+          20523,
+          1129,
+          42685,
+          51652
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 왜",
+            "start": 22.92,
+            "end": 23.32,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 다들",
+            "start": 23.32,
+            "end": 23.92,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 연락이",
+            "start": 23.92,
+            "end": 24.86,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 안돼",
+            "start": 24.86,
+            "end": 25.68,
+            "probability": 0.931640625
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 25.68,
+        "end": 28.12,
+        "text": " 한숨이 새어나",
+        "tokens": [
+          51652,
+          4815,
+          5500,
+          101,
+          1129,
+          31184,
+          31134,
+          51772
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2326681137084961,
+        "compression_ratio": 1.150375939849624,
+        "no_speech_prob": 8.760860960299599e-12,
+        "words": [
+          {
+            "word": " 한숨이",
+            "start": 25.68,
+            "end": 27.12,
+            "probability": 0.9638671875
+          },
+          {
+            "word": " 새어나",
+            "start": 27.12,
+            "end": 28.12,
+            "probability": 0.638671875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2812,
+        "start": 28.12,
+        "end": 39.34,
+        "text": " 아 거 이만 더 더워 입신만 쌓여가는 오늘도 그런 저녁 야 오늘 뭐 해 시가 돼",
+        "tokens": [
+          50365,
+          2216,
+          3675,
+          2892,
+          6478,
+          6990,
+          6990,
+          10086,
+          10051,
+          7575,
+          5978,
+          35792,
+          241,
+          10558,
+          28391,
+          47455,
+          9306,
+          13163,
+          227,
+          223,
+          13450,
+          8880,
+          7034,
+          11683,
+          5710,
+          1453,
+          11080,
+          50929
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9826723953773235,
+        "compression_ratio": 1.0515463917525774,
+        "no_speech_prob": 3.783954052871685e-11,
+        "words": [
+          {
+            "word": " 아",
+            "start": 28.12,
+            "end": 28.56,
+            "probability": 0.023681640625
+          },
+          {
+            "word": " 거",
+            "start": 28.56,
+            "end": 28.82,
+            "probability": 0.0894775390625
+          },
+          {
+            "word": " 이만",
+            "start": 28.82,
+            "end": 29.54,
+            "probability": 0.48291015625
+          },
+          {
+            "word": " 더",
+            "start": 29.54,
+            "end": 29.88,
+            "probability": 0.4755859375
+          },
+          {
+            "word": " 더워",
+            "start": 29.88,
+            "end": 30.74,
+            "probability": 0.08233642578125
+          },
+          {
+            "word": " 입신만",
+            "start": 30.74,
+            "end": 31.92,
+            "probability": 0.45703125
+          },
+          {
+            "word": " 쌓여가는",
+            "start": 31.92,
+            "end": 32.96,
+            "probability": 0.8681640625
+          },
+          {
+            "word": " 오늘도",
+            "start": 32.96,
+            "end": 33.66,
+            "probability": 0.95458984375
+          },
+          {
+            "word": " 그런",
+            "start": 33.66,
+            "end": 34.34,
+            "probability": 0.7041015625
+          },
+          {
+            "word": " 저녁",
+            "start": 34.34,
+            "end": 35.7,
+            "probability": 0.86767578125
+          },
+          {
+            "word": " 야",
+            "start": 35.7,
+            "end": 35.98,
+            "probability": 0.646484375
+          },
+          {
+            "word": " 오늘",
+            "start": 35.98,
+            "end": 36.84,
+            "probability": 0.6708984375
+          },
+          {
+            "word": " 뭐",
+            "start": 36.84,
+            "end": 37.56,
+            "probability": 0.8681640625
+          },
+          {
+            "word": " 해",
+            "start": 37.56,
+            "end": 38.22,
+            "probability": 0.458984375
+          },
+          {
+            "word": " 시가",
+            "start": 38.22,
+            "end": 39.08,
+            "probability": 0.3134765625
+          },
+          {
+            "word": " 돼",
+            "start": 39.08,
+            "end": 39.34,
+            "probability": 0.95166015625
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

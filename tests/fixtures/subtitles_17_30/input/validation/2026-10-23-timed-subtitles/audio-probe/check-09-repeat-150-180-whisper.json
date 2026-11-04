@@ -1,0 +1,281 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-09-repeat-150-180.flac",
+  "audio_sha256": "835fb149e1d39f74e628f79e3ff7a431131188512106781f231f67d985da498c",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 2.074,
+  "transcription": {
+    "text": " 이 장면에 좀 더 있어져 이 그 하루야 천천히 맛을 볼래 작은 일들이 모여 내 입가를 올려 내 입가를 올려",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.0,
+        "text": " 이 장면에 좀 더 있어져",
+        "tokens": [
+          50365,
+          2620,
+          12280,
+          33306,
+          19086,
+          6796,
+          6990,
+          2297,
+          2782,
+          14264,
+          50530
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14390682644314237,
+        "compression_ratio": 5.382113821138211,
+        "no_speech_prob": 1.5662122640480725e-11,
+        "words": [
+          {
+            "word": " 이",
+            "start": 0.0,
+            "end": 0.5,
+            "probability": 0.93017578125
+          },
+          {
+            "word": " 장면에",
+            "start": 0.5,
+            "end": 1.12,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 좀",
+            "start": 1.12,
+            "end": 1.52,
+            "probability": 0.97021484375
+          },
+          {
+            "word": " 더",
+            "start": 1.52,
+            "end": 1.88,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 있어져",
+            "start": 1.88,
+            "end": 3.0,
+            "probability": 0.77294921875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.0,
+        "end": 5.48,
+        "text": " 이 그 하루야",
+        "tokens": [
+          50530,
+          2620,
+          4296,
+          33918,
+          4248,
+          50647
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14390682644314237,
+        "compression_ratio": 5.382113821138211,
+        "no_speech_prob": 1.5662122640480725e-11,
+        "words": [
+          {
+            "word": " 이",
+            "start": 3.0,
+            "end": 3.82,
+            "probability": 0.4208984375
+          },
+          {
+            "word": " 그",
+            "start": 3.82,
+            "end": 4.38,
+            "probability": 0.24560546875
+          },
+          {
+            "word": " 하루야",
+            "start": 4.38,
+            "end": 5.48,
+            "probability": 0.9794921875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.48,
+        "end": 8.02,
+        "text": " 천천히 맛을 볼래",
+        "tokens": [
+          50647,
+          31076,
+          18906,
+          5905,
+          9508,
+          1638,
+          2818,
+          1870,
+          4241,
+          50768
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14390682644314237,
+        "compression_ratio": 5.382113821138211,
+        "no_speech_prob": 1.5662122640480725e-11,
+        "words": [
+          {
+            "word": " 천천히",
+            "start": 5.48,
+            "end": 6.6,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 맛을",
+            "start": 6.6,
+            "end": 7.44,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 볼래",
+            "start": 7.44,
+            "end": 8.02,
+            "probability": 0.99462890625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 8.02,
+        "end": 11.36,
+        "text": " 작은 일들이 모여",
+        "tokens": [
+          50768,
+          45870,
+          16623,
+          8109,
+          11722,
+          10558,
+          50940
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14390682644314237,
+        "compression_ratio": 5.382113821138211,
+        "no_speech_prob": 1.5662122640480725e-11,
+        "words": [
+          {
+            "word": " 작은",
+            "start": 8.02,
+            "end": 8.92,
+            "probability": 0.98876953125
+          },
+          {
+            "word": " 일들이",
+            "start": 8.92,
+            "end": 10.26,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 모여",
+            "start": 10.26,
+            "end": 11.36,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 11.36,
+        "end": 14.0,
+        "text": " 내 입가를 올려",
+        "tokens": [
+          50940,
+          6918,
+          10051,
+          1453,
+          11297,
+          12917,
+          5743,
+          51072
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.14390682644314237,
+        "compression_ratio": 5.382113821138211,
+        "no_speech_prob": 1.5662122640480725e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 11.36,
+            "end": 11.96,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 입가를",
+            "start": 11.96,
+            "end": 13.06,
+            "probability": 0.951171875
+          },
+          {
+            "word": " 올려",
+            "start": 13.06,
+            "end": 14.0,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 1400,
+        "start": 20.020000000000003,
+        "end": 24.0,
+        "text": " 내 입가를 올려",
+        "tokens": [
+          50365,
+          6918,
+          10051,
+          1453,
+          11297,
+          12917,
+          5743,
+          50865
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4926944308810764,
+        "compression_ratio": 0.6451612903225806,
+        "no_speech_prob": 7.89050075278297e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 20.020000000000003,
+            "end": 21.42,
+            "probability": 0.491943359375
+          },
+          {
+            "word": " 입가를",
+            "start": 21.42,
+            "end": 22.82,
+            "probability": 0.943359375
+          },
+          {
+            "word": " 올려",
+            "start": 22.82,
+            "end": 24.0,
+            "probability": 0.9736328125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

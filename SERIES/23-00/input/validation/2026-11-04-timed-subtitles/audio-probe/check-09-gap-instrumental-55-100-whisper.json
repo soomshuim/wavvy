@@ -1,0 +1,408 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/09__지금 가는 길__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "de257d454d61a3a0dffeb680dac16ba55c7142b68dc3a13a519a968fdcfb6fea",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "55.0,100.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/09__지금 가는 길__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "de257d454d61a3a0dffeb680dac16ba55c7142b68dc3a13a519a968fdcfb6fea",
+  "clip_start_s": 55.0,
+  "clip_end_s": 100.0,
+  "clip_audio_sha256": "ce7ee36ecd56908614abc75697d78a6d34c005b13675cf769b0d0d293d1d68a5",
+  "elapsed_seconds": 2.517,
+  "transcription": {
+    "text": " 남겨 별일 없이 보낸 하루 너희한테 불어놓게 편의점 앞을 지나다 뭐 좀 사갈까 물어 아무것도 필요 없대 너나 빨리 오라네 신호를 기다리다가 건너편 창을 보니 누가 먼저 날 봤는지 크게 손을 흔들어 이어폰을 뺏어놓고",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 7.24,
+        "text": " 남겨 별일 없이 보낸 하루 너희한테 불어놓게",
+        "tokens": [
+          50365,
+          11689,
+          19591,
+          47442,
+          6403,
+          33353,
+          39833,
+          116,
+          33918,
+          12963,
+          11975,
+          15863,
+          16285,
+          6540,
+          28500,
+          1810,
+          50715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.30586343492780416,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.8827335523941002e-11,
+        "words": [
+          {
+            "word": " 남겨",
+            "start": 0.0,
+            "end": 0.98,
+            "probability": 0.493896484375
+          },
+          {
+            "word": " 별일",
+            "start": 0.98,
+            "end": 2.04,
+            "probability": 0.89453125
+          },
+          {
+            "word": " 없이",
+            "start": 2.04,
+            "end": 2.5,
+            "probability": 0.97119140625
+          },
+          {
+            "word": " 보낸",
+            "start": 2.5,
+            "end": 3.16,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 하루",
+            "start": 3.16,
+            "end": 3.74,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 너희한테",
+            "start": 3.74,
+            "end": 5.16,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 불어놓게",
+            "start": 5.16,
+            "end": 7.24,
+            "probability": 0.873046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.0,
+        "end": 27.4,
+        "text": " 편의점 앞을 지나다 뭐 좀 사갈까 물어",
+        "tokens": [
+          51515,
+          16990,
+          2785,
+          15046,
+          13727,
+          1638,
+          41672,
+          1235,
+          7034,
+          6796,
+          4744,
+          27657,
+          3294,
+          14403,
+          3103,
+          51715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.30586343492780416,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 1.8827335523941002e-11,
+        "words": [
+          {
+            "word": " 편의점",
+            "start": 22.66,
+            "end": 23.36,
+            "probability": 0.966796875
+          },
+          {
+            "word": " 앞을",
+            "start": 23.36,
+            "end": 24.02,
+            "probability": 0.984375
+          },
+          {
+            "word": " 지나다",
+            "start": 24.02,
+            "end": 24.82,
+            "probability": 0.97314453125
+          },
+          {
+            "word": " 뭐",
+            "start": 24.82,
+            "end": 25.46,
+            "probability": 0.80419921875
+          },
+          {
+            "word": " 좀",
+            "start": 25.46,
+            "end": 25.7,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 사갈까",
+            "start": 25.7,
+            "end": 26.7,
+            "probability": 0.9853515625
+          },
+          {
+            "word": " 물어",
+            "start": 26.7,
+            "end": 27.4,
+            "probability": 0.916015625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2740,
+        "start": 27.4,
+        "end": 32.18,
+        "text": " 아무것도 필요 없대 너나 빨리 오라네",
+        "tokens": [
+          50365,
+          30702,
+          47450,
+          22731,
+          5711,
+          14173,
+          3214,
+          19505,
+          23077,
+          10258,
+          9316,
+          5626,
+          50607
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1677626857051143,
+        "compression_ratio": 1.1788079470198676,
+        "no_speech_prob": 1.2312040276185598e-11,
+        "words": [
+          {
+            "word": " 아무것도",
+            "start": 27.4,
+            "end": 28.48,
+            "probability": 0.98828125
+          },
+          {
+            "word": " 필요",
+            "start": 28.48,
+            "end": 29.2,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 없대",
+            "start": 29.2,
+            "end": 29.8,
+            "probability": 0.86083984375
+          },
+          {
+            "word": " 너나",
+            "start": 29.8,
+            "end": 30.26,
+            "probability": 0.89990234375
+          },
+          {
+            "word": " 빨리",
+            "start": 30.26,
+            "end": 30.8,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 오라네",
+            "start": 30.8,
+            "end": 32.18,
+            "probability": 0.904296875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2740,
+        "start": 32.18,
+        "end": 37.14,
+        "text": " 신호를 기다리다가 건너편 창을 보니",
+        "tokens": [
+          50607,
+          13042,
+          45706,
+          2429,
+          31431,
+          2250,
+          14325,
+          39626,
+          23318,
+          25716,
+          39501,
+          1638,
+          6330,
+          1425,
+          50855
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1677626857051143,
+        "compression_ratio": 1.1788079470198676,
+        "no_speech_prob": 1.2312040276185598e-11,
+        "words": [
+          {
+            "word": " 신호를",
+            "start": 32.18,
+            "end": 33.36,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 기다리다가",
+            "start": 33.36,
+            "end": 34.62,
+            "probability": 1.0
+          },
+          {
+            "word": " 건너편",
+            "start": 34.62,
+            "end": 35.84,
+            "probability": 0.92236328125
+          },
+          {
+            "word": " 창을",
+            "start": 35.84,
+            "end": 36.5,
+            "probability": 0.84423828125
+          },
+          {
+            "word": " 보니",
+            "start": 36.5,
+            "end": 37.14,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2740,
+        "start": 37.14,
+        "end": 42.18,
+        "text": " 누가 먼저 날 봤는지 크게 손을 흔들어",
+        "tokens": [
+          50855,
+          33851,
+          20749,
+          16316,
+          20727,
+          32087,
+          38926,
+          15268,
+          1638,
+          14473,
+          3261,
+          2403,
+          3103,
+          51103
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1677626857051143,
+        "compression_ratio": 1.1788079470198676,
+        "no_speech_prob": 1.2312040276185598e-11,
+        "words": [
+          {
+            "word": " 누가",
+            "start": 37.14,
+            "end": 37.76,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 먼저",
+            "start": 37.76,
+            "end": 38.24,
+            "probability": 1.0
+          },
+          {
+            "word": " 날",
+            "start": 38.24,
+            "end": 38.56,
+            "probability": 0.9638671875
+          },
+          {
+            "word": " 봤는지",
+            "start": 38.56,
+            "end": 39.3,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 크게",
+            "start": 39.3,
+            "end": 39.94,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 손을",
+            "start": 39.94,
+            "end": 40.78,
+            "probability": 1.0
+          },
+          {
+            "word": " 흔들어",
+            "start": 40.78,
+            "end": 42.18,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2740,
+        "start": 42.18,
+        "end": 44.78,
+        "text": " 이어폰을 뺏어놓고",
+        "tokens": [
+          51103,
+          4329,
+          25982,
+          34151,
+          1638,
+          531,
+          118,
+          237,
+          6540,
+          47441,
+          51233
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1677626857051143,
+        "compression_ratio": 1.1788079470198676,
+        "no_speech_prob": 1.2312040276185598e-11,
+        "words": [
+          {
+            "word": " 이어폰을",
+            "start": 42.18,
+            "end": 43.68,
+            "probability": 0.8896484375
+          },
+          {
+            "word": " 뺏어놓고",
+            "start": 43.68,
+            "end": 44.78,
+            "probability": 0.9140625
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

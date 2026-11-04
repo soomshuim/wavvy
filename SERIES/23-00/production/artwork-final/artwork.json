@@ -1,0 +1,293 @@
+{
+  "schema": "wavvy.final_artwork.v1",
+  "selection": "Wavvy logo and brown serif brand footer (Lo-fi Groove title removed)",
+  "user_selection": {
+    "footer_request": "이 하단 문장을 합성해줄래? From~ 부분",
+    "font_color_request": "갈색 셰리프 폰트로",
+    "alignment_request": "좌측 하단 정렬로",
+    "title_request": "좌측 하단 문장 위에 Groovy Lo-fi라고 로고 1/2 폰트크기의 pretendard 600 굵기로 써줘.",
+    "title_refinement_request": [
+      "더 밑으로 내리고 크기는 지금의 1/2. 폰트는 로고와 같은 컬러로.자간 -20%,",
+      "두께는 800"
+    ],
+    "latest_title_tracking_request": "자간은 다시 원복하고 -5%로..",
+    "latest_title_wording_request": "Lo-fi Groove",
+    "latest_title_font_request": "폰트를 디스크립션과 같은 셰리프로 바꿔ㅕ볼래?",
+    "latest_title_weight_request": "제일 두꺼운걸로.",
+    "title_removal_request": "하단의 Lo-fi Groove 텍스트 없애줘."
+  },
+  "assets": [
+    {
+      "path": "SERIES/23-00/input/thumb.png",
+      "sha256": "c23e92bf5d7f8fada854ca2e002888e0784082ded89e93a293f804691593134c",
+      "bytes": 4872818,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "role": "lossless_thumbnail_master"
+    },
+    {
+      "path": "SERIES/23-00/production/artwork-final/scene-original-4k.png",
+      "sha256": "861513fa8f868bb51b79c7c83865181e530f0e7916f1e5011c865af16ba47559",
+      "bytes": 4772446,
+      "dimensions": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "SERIES/23-00/production/artwork-final/scene-original-native.png",
+      "sha256": "f0a9aa28cb85769f3e6216c4f636fcfa8b1fd754538c3b89c6b01cea6622b9db",
+      "bytes": 1593577,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "SERIES/23-00/input/thumb.jpg",
+      "sha256": "f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a",
+      "bytes": 1487182,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "role": "youtube_thumbnail"
+    }
+  ],
+  "native_4k": false,
+  "enlargement": "Native 1672x941 illustration enlarged with ImageMagick Lanczos to 3840x2160 before deterministic logo composition.",
+  "logo": {
+    "source": "brand/logo_wavvy.png",
+    "position_xy": [
+      128,
+      96
+    ],
+    "size_wh": [
+      600,
+      353
+    ],
+    "color": "#2F1522"
+  },
+  "prior_exact_logo_file_review": "Historical logo-only base: Sol 6.1 high CLEAN before footer composition; current footer scope reviewed separately.",
+  "prior_exact_file_telegram_delivery": 55913,
+  "input_promotion": "thumbnail only",
+  "cleanup_request": "최종버전 말고 작업중 과정 프롬프트나 결과 이미지, 폴더 싹 지워.",
+  "thumbnail_path": "input/thumb.jpg",
+  "lossless_thumbnail_master_path": "input/thumb.png",
+  "thumbnail_input_promotion": true,
+  "video_background_input_promotion": false,
+  "path_correction": {
+    "user_instruction": "썸네일은 원래 input 폴더에 있어야해.",
+    "corrected_at": "2026-11-04T06:53:07.147893+00:00",
+    "moved_lossless_png_to": "input/thumb.png",
+    "canonical_jpeg_export": "input/thumb.jpg",
+    "jpeg_export": {
+      "tool": "ImageMagick",
+      "quality": 95,
+      "chroma_sampling": "4:4:4"
+    },
+    "unchanged_master_sha256": "e4cc8c0be640d5e95a80200e3b0ea08ebbfa9d5c67d5cc33ba5751293844f619"
+  },
+  "footer": {
+    "text": "From the stillness of dawn to the ease of evening — may you find a song here that belongs to this moment you're living in.",
+    "font_family": "Baskerville Regular",
+    "font": "/System/Library/Fonts/Supplemental/Baskerville.ttc",
+    "pointsize": 54,
+    "fill": "#68422B",
+    "alignment": "bottom-left",
+    "position_xy": [
+      128,
+      2040
+    ],
+    "label_size_wh": [
+      2659,
+      52
+    ],
+    "source": "wavvy.md brand sentence; visual reference SERIES/13-00/input/thumb.jpg",
+    "tool": "ImageMagick local font layer composition, no scene generation",
+    "base_sha256": "e4cc8c0be640d5e95a80200e3b0ea08ebbfa9d5c67d5cc33ba5751293844f619",
+    "pixel_difference_bbox": [
+      128,
+      2040,
+      2787,
+      2092
+    ],
+    "outside_text_area_pixels_unchanged": true,
+    "original_illustrations_unchanged": {
+      "SERIES/23-00/production/artwork-final/scene-original-native.png": "f0a9aa28cb85769f3e6216c4f636fcfa8b1fd754538c3b89c6b01cea6622b9db",
+      "SERIES/23-00/production/artwork-final/scene-original-4k.png": "861513fa8f868bb51b79c7c83865181e530f0e7916f1e5011c865af16ba47559"
+    },
+    "independent_review": {
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "scope": "footer copy, serif brown styling, bottom-left placement, source/pixel preservation, 4K candidate formats",
+      "verdict": "CLEAN",
+      "principle_observations": []
+    },
+    "updated_at": "2026-11-04T07:07:35.696421+00:00",
+    "telegram_delivery": {
+      "ok": true,
+      "message_id": 55936,
+      "recipient_matches_config": true,
+      "sha256": "f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a",
+      "bytes": 1487182,
+      "method": "sendDocument",
+      "delivered_at": "2026-11-04T07:08:10.208071+00:00",
+      "scope": "Footer-only version before the Groovy Lo-fi title addition."
+    },
+    "transient_work_files_removed": true,
+    "composition_scope": "Historical footer addition before the Groovy Lo-fi title; the existing footer pixels remain unchanged in the current title composite."
+  },
+  "prior_exact_file_telegram_delivery_scope": "Historical logo-only base, not the current footer composite.",
+  "removed_title": {
+    "text": "Lo-fi Groove",
+    "pointsize": 88.25,
+    "size_reference": {
+      "previous_pointsize": 176.5,
+      "relative_to_previous": 0.5
+    },
+    "fill": "#2F1522",
+    "position_xy": [
+      128,
+      1939
+    ],
+    "tracking_percent": -5,
+    "tracking_em": -0.05,
+    "kerning_px": -4.4125,
+    "font": "/System/Library/Fonts/Supplemental/Baskerville.ttc",
+    "font_family": "Baskerville Bold",
+    "font_face_index": 1,
+    "font_postscript_name": "Baskerville-Bold",
+    "font_source_sha256": "11f63e492099fbcfb50ad4f2ac373485af16c049fd6c975ef4ea79ae53222ef9",
+    "weight": 700,
+    "available_font_faces": [
+      {
+        "index": 0,
+        "name": "Baskerville",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "index": 1,
+        "name": "Baskerville Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "index": 2,
+        "name": "Baskerville Italic",
+        "weight": 400,
+        "italic": true
+      },
+      {
+        "index": 3,
+        "name": "Baskerville Bold Italic",
+        "weight": 700,
+        "italic": true
+      },
+      {
+        "index": 4,
+        "name": "Baskerville SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "index": 5,
+        "name": "Baskerville SemiBold Italic",
+        "weight": 600,
+        "italic": true
+      }
+    ],
+    "previous_font_family": "Baskerville Regular",
+    "previous_weight": 400,
+    "label_size_wh": [
+      469,
+      61
+    ],
+    "footer_gap_px": 40,
+    "previous_title_bounds": [
+      128,
+      1939,
+      528,
+      2000
+    ],
+    "pixel_difference_bbox": [
+      128,
+      1939,
+      597,
+      2000
+    ],
+    "base_sha256": "3a993de0ae7bbafd1c85b75f255f1a627723ff695234db032a0e5b3a24df4b12",
+    "restored_base_sha256": "a017772cb525da5a6b41f5d19167a0a17598112700a11eec9741ac370886070f",
+    "restoration": "Previous title area restored from unchanged text-free illustration before changing only the font weight.",
+    "independent_review": {
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "scope": "title weight only, heaviest available upright Baskerville Bold700; text,size,color,tracking,position,logo,footer and scene preserved; 4K PNG/JPEG exports",
+      "verdict": "CLEAN",
+      "principle_observations": []
+    },
+    "updated_at": "2026-11-04T08:32:00.128495+00:00",
+    "transient_work_files_removed": true,
+    "telegram_delivery": {
+      "ok": true,
+      "message_id": 55994,
+      "recipient_matches_config": true,
+      "sha256": "46e9c4af99717595162305ee284d15e03f0bce3145d4d58319cb6bf8cb5a418a",
+      "bytes": 1505639,
+      "method": "sendDocument",
+      "delivered_at": "2026-11-04T08:32:05.303499+00:00"
+    },
+    "removed_at": "2026-11-04T11:12:51.377952+00:00"
+  },
+  "title_removal": {
+    "request": "하단의 Lo-fi Groove 텍스트 없애줘.",
+    "method": "Restored full-width band y1880-2035 from scene-original-4k.png; prior title bbox [128,1939,597,2000]",
+    "restored_band": [
+      0,
+      1880,
+      3840,
+      2035
+    ],
+    "before_png_sha256": "ee7cb9f54091007ca627724e795c67e686ab6f9b0c48aacb3c3196b0d9e00f66",
+    "after_png_sha256": "c23e92bf5d7f8fada854ca2e002888e0784082ded89e93a293f804691593134c",
+    "after_jpg_sha256": "f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a",
+    "matches_prior_footer_only_png": false,
+    "matches_prior_footer_only_jpg": true,
+    "pixel_checks": {
+      "band_y1880_2035_diff_vs_scene_original_4k_bbox": null,
+      "diff_vs_before_png_bbox": [
+        128,
+        1939,
+        597,
+        2000
+      ],
+      "diff_confined_to_prior_title_bbox": true,
+      "png_dimensions": [
+        3840,
+        2160
+      ],
+      "jpg_dimensions": [
+        3840,
+        2160
+      ]
+    },
+    "jpeg_export": {
+      "tool": "ImageMagick",
+      "quality": 95,
+      "chroma_sampling": "4:4:4"
+    },
+    "telegram_delivery": {
+      "ok": true,
+      "message_id": 56035,
+      "recipient_matches_config": true,
+      "sha256": "f61cc78ff2b7fe2245f8835914e2abd1ea7042d6ef1bae193d9823f0250bff8a",
+      "bytes": 1487182,
+      "method": "sendDocument",
+      "delivered_at": "2026-11-04T11:11:54.267267+00:00"
+    },
+    "updated_at": "2026-11-04T11:12:51.377952+00:00"
+  }
+}

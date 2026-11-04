@@ -1,0 +1,455 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/03__한 잔만 더__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "1c18abb874465bb9fbbe393a7592b81259cd3cb68289da72bd4d629726d7da5a",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "60.0,100.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/03__한 잔만 더__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "1c18abb874465bb9fbbe393a7592b81259cd3cb68289da72bd4d629726d7da5a",
+  "clip_start_s": 60.0,
+  "clip_end_s": 100.0,
+  "clip_audio_sha256": "5b48ea564609ea32378172fee1c68dc209ed0a69c92419560cccff38d65c80fc",
+  "elapsed_seconds": 2.6,
+  "transcription": {
+    "text": " 한 잔만 더 할까 그냥 한번 물어봐서 먼저 가 난 천천히 마저 마시고 갈게 애인이랑 고기로 했대 늦게라도 얼굴 봐야지 아까부터 옷을 챙기던 네 옆자리가 먼저 비어 아 이제 올 시간이라며 다른 친구도 일어나 요즘 자기 없이 난 잔",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 6.96,
+        "text": " 한 잔만 더 할까 그냥 한번 물어봐서",
+        "tokens": [
+          50365,
+          4815,
+          1332,
+          3261,
+          6478,
+          6990,
+          8981,
+          3294,
+          11208,
+          14463,
+          44558,
+          16808,
+          2393,
+          50715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2935295867919922,
+        "compression_ratio": 1.145985401459854,
+        "no_speech_prob": 4.496578803747653e-11,
+        "words": [
+          {
+            "word": " 한",
+            "start": 0.0,
+            "end": 2.36,
+            "probability": 0.0216827392578125
+          },
+          {
+            "word": " 잔만",
+            "start": 2.36,
+            "end": 3.08,
+            "probability": 0.75830078125
+          },
+          {
+            "word": " 더",
+            "start": 3.08,
+            "end": 3.34,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 할까",
+            "start": 3.34,
+            "end": 4.12,
+            "probability": 0.96337890625
+          },
+          {
+            "word": " 그냥",
+            "start": 4.12,
+            "end": 4.68,
+            "probability": 0.34619140625
+          },
+          {
+            "word": " 한번",
+            "start": 4.68,
+            "end": 5.16,
+            "probability": 0.53515625
+          },
+          {
+            "word": " 물어봐서",
+            "start": 5.16,
+            "end": 6.96,
+            "probability": 0.92822265625
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 6.96,
+        "end": 13.54,
+        "text": " 먼저 가 난 천천히 마저 마시고 갈게",
+        "tokens": [
+          50715,
+          20749,
+          4147,
+          19252,
+          31076,
+          18906,
+          5905,
+          6437,
+          11738,
+          6437,
+          24303,
+          23616,
+          1810,
+          51047
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2935295867919922,
+        "compression_ratio": 1.145985401459854,
+        "no_speech_prob": 4.496578803747653e-11,
+        "words": [
+          {
+            "word": " 먼저",
+            "start": 6.96,
+            "end": 7.94,
+            "probability": 0.96923828125
+          },
+          {
+            "word": " 가",
+            "start": 7.94,
+            "end": 8.48,
+            "probability": 0.68896484375
+          },
+          {
+            "word": " 난",
+            "start": 8.48,
+            "end": 9.0,
+            "probability": 0.9560546875
+          },
+          {
+            "word": " 천천히",
+            "start": 9.0,
+            "end": 10.1,
+            "probability": 1.0
+          },
+          {
+            "word": " 마저",
+            "start": 10.1,
+            "end": 10.74,
+            "probability": 0.982421875
+          },
+          {
+            "word": " 마시고",
+            "start": 10.74,
+            "end": 12.08,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 갈게",
+            "start": 12.08,
+            "end": 13.54,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 22.900000000000002,
+        "end": 25.44,
+        "text": " 애인이랑 고기로 했대",
+        "tokens": [
+          51047,
+          21459,
+          4215,
+          21949,
+          9161,
+          27860,
+          11988,
+          2196,
+          3638,
+          51642
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2935295867919922,
+        "compression_ratio": 1.145985401459854,
+        "no_speech_prob": 4.496578803747653e-11,
+        "words": [
+          {
+            "word": " 애인이랑",
+            "start": 22.900000000000002,
+            "end": 24.3,
+            "probability": 0.8896484375
+          },
+          {
+            "word": " 고기로",
+            "start": 24.3,
+            "end": 24.76,
+            "probability": 0.8662109375
+          },
+          {
+            "word": " 했대",
+            "start": 24.76,
+            "end": 25.44,
+            "probability": 0.982421875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 25.44,
+        "end": 27.8,
+        "text": " 늦게라도 얼굴 봐야지",
+        "tokens": [
+          51642,
+          7707,
+          99,
+          1810,
+          167,
+          25574,
+          30818,
+          15507,
+          38623,
+          51756
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2935295867919922,
+        "compression_ratio": 1.145985401459854,
+        "no_speech_prob": 4.496578803747653e-11,
+        "words": [
+          {
+            "word": " 늦게라도",
+            "start": 25.44,
+            "end": 26.82,
+            "probability": 0.9921875
+          },
+          {
+            "word": " 얼굴",
+            "start": 26.82,
+            "end": 27.1,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 봐야지",
+            "start": 27.1,
+            "end": 27.8,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2780,
+        "start": 27.8,
+        "end": 33.1,
+        "text": " 아까부터 옷을 챙기던 네 옆자리가 먼저 비어",
+        "tokens": [
+          50365,
+          2216,
+          2900,
+          2457,
+          12130,
+          30880,
+          1638,
+          49414,
+          7091,
+          8092,
+          8808,
+          29095,
+          11945,
+          27116,
+          20749,
+          10079,
+          3103,
+          50631
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25025067678311974,
+        "compression_ratio": 1.1221374045801527,
+        "no_speech_prob": 5.170655223429854e-11,
+        "words": [
+          {
+            "word": " 아까부터",
+            "start": 27.8,
+            "end": 29.1,
+            "probability": 0.833984375
+          },
+          {
+            "word": " 옷을",
+            "start": 29.1,
+            "end": 29.82,
+            "probability": 0.966796875
+          },
+          {
+            "word": " 챙기던",
+            "start": 29.82,
+            "end": 30.74,
+            "probability": 0.978515625
+          },
+          {
+            "word": " 네",
+            "start": 30.74,
+            "end": 31.12,
+            "probability": 0.6640625
+          },
+          {
+            "word": " 옆자리가",
+            "start": 31.12,
+            "end": 31.86,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 먼저",
+            "start": 31.86,
+            "end": 32.28,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 비어",
+            "start": 32.28,
+            "end": 33.1,
+            "probability": 0.955078125
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2780,
+        "start": 33.1,
+        "end": 37.86,
+        "text": " 아 이제 올 시간이라며 다른 친구도 일어나",
+        "tokens": [
+          50631,
+          2216,
+          8424,
+          28603,
+          16648,
+          4250,
+          9316,
+          18095,
+          16435,
+          30922,
+          1838,
+          7682,
+          31134,
+          50873
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25025067678311974,
+        "compression_ratio": 1.1221374045801527,
+        "no_speech_prob": 5.170655223429854e-11,
+        "words": [
+          {
+            "word": " 아",
+            "start": 33.1,
+            "end": 33.9,
+            "probability": 0.82470703125
+          },
+          {
+            "word": " 이제",
+            "start": 33.9,
+            "end": 34.22,
+            "probability": 0.9365234375
+          },
+          {
+            "word": " 올",
+            "start": 34.22,
+            "end": 34.42,
+            "probability": 0.88623046875
+          },
+          {
+            "word": " 시간이라며",
+            "start": 34.42,
+            "end": 35.5,
+            "probability": 0.95166015625
+          },
+          {
+            "word": " 다른",
+            "start": 35.5,
+            "end": 36.02,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 친구도",
+            "start": 36.02,
+            "end": 37.18,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 일어나",
+            "start": 37.18,
+            "end": 37.86,
+            "probability": 0.9658203125
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2780,
+        "start": 37.86,
+        "end": 39.98,
+        "text": " 요즘 자기 없이 난 잔",
+        "tokens": [
+          50873,
+          24835,
+          37257,
+          33353,
+          19252,
+          1332,
+          242,
+          50975
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.25025067678311974,
+        "compression_ratio": 1.1221374045801527,
+        "no_speech_prob": 5.170655223429854e-11,
+        "words": [
+          {
+            "word": " 요즘",
+            "start": 37.86,
+            "end": 38.6,
+            "probability": 0.9755859375
+          },
+          {
+            "word": " 자기",
+            "start": 38.6,
+            "end": 39.08,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 없이",
+            "start": 39.08,
+            "end": 39.46,
+            "probability": 0.79541015625
+          },
+          {
+            "word": " 난",
+            "start": 39.46,
+            "end": 39.68,
+            "probability": 0.923828125
+          },
+          {
+            "word": " 잔",
+            "start": 39.68,
+            "end": 39.98,
+            "probability": 0.6005859375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

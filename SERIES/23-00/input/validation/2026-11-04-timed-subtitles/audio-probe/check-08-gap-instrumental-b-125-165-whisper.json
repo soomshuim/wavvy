@@ -1,0 +1,180 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/08__먼지__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "699890877a7b3a25659f64c70ee5b5b5f344ce1151fa24d483e208ad11d5880a",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "125.0,165.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/08__먼지__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "699890877a7b3a25659f64c70ee5b5b5f344ce1151fa24d483e208ad11d5880a",
+  "clip_start_s": 125.0,
+  "clip_end_s": 165.0,
+  "clip_audio_sha256": "278ead35d146cda1b95c2f7f36df30d4added9cc327a1be97115ef7aacbca356",
+  "elapsed_seconds": 2.275,
+  "transcription": {
+    "text": " 조용히 가 시간은 조용히 가 음 햇살이 번져가 먼지가 떠다녀",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.76,
+        "text": " 조용히 가",
+        "tokens": [
+          50365,
+          7430,
+          8761,
+          5905,
+          4147,
+          50465
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013006561680844,
+        "compression_ratio": 1.0789473684210527,
+        "no_speech_prob": 4.677269682673568e-11,
+        "words": [
+          {
+            "word": " 조용히",
+            "start": 0.0,
+            "end": 0.5,
+            "probability": 0.6767578125
+          },
+          {
+            "word": " 가",
+            "start": 0.5,
+            "end": 0.76,
+            "probability": 0.8720703125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.0,
+        "end": 4.32,
+        "text": " 시간은 조용히 가",
+        "tokens": [
+          50465,
+          16648,
+          2124,
+          7430,
+          8761,
+          5905,
+          4147,
+          50665
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013006561680844,
+        "compression_ratio": 1.0789473684210527,
+        "no_speech_prob": 4.677269682673568e-11,
+        "words": [
+          {
+            "word": " 시간은",
+            "start": 1.9000000000000001,
+            "end": 2.6,
+            "probability": 0.78955078125
+          },
+          {
+            "word": " 조용히",
+            "start": 2.6,
+            "end": 3.44,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 가",
+            "start": 3.44,
+            "end": 4.32,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 28.0,
+        "end": 28.14,
+        "text": " 음",
+        "tokens": [
+          51765,
+          15179,
+          51815
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013006561680844,
+        "compression_ratio": 1.0789473684210527,
+        "no_speech_prob": 4.677269682673568e-11,
+        "words": [
+          {
+            "word": " 음",
+            "start": 27.44,
+            "end": 28.14,
+            "probability": 0.4912109375
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2814,
+        "start": 28.14,
+        "end": 36.36,
+        "text": " 햇살이 번져가 먼지가 떠다녀",
+        "tokens": [
+          50365,
+          11988,
+          229,
+          26082,
+          1129,
+          10212,
+          17383,
+          1453,
+          19326,
+          30232,
+          43687,
+          1235,
+          9664,
+          222,
+          50765
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.35571038722991943,
+        "compression_ratio": 0.8478260869565217,
+        "no_speech_prob": 7.246552663486838e-11,
+        "words": [
+          {
+            "word": " 햇살이",
+            "start": 28.14,
+            "end": 29.76,
+            "probability": 0.87646484375
+          },
+          {
+            "word": " 번져가",
+            "start": 29.76,
+            "end": 31.3,
+            "probability": 0.9482421875
+          },
+          {
+            "word": " 먼지가",
+            "start": 31.3,
+            "end": 34.82,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 떠다녀",
+            "start": 34.82,
+            "end": 36.36,
+            "probability": 0.7568359375
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

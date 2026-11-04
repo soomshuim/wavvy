@@ -1,0 +1,296 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/14__물안개__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "9823381af4baf21a0c950b782a9f41a26561bf612879af5875b96531abd989e0",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "40.0,90.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/14__물안개__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "9823381af4baf21a0c950b782a9f41a26561bf612879af5875b96531abd989e0",
+  "clip_start_s": 40.0,
+  "clip_end_s": 90.0,
+  "clip_audio_sha256": "f156e02b67efc0ce30bd797a134b08caf68720628b9e7d277067b695bdc13fbf",
+  "elapsed_seconds": 2.439,
+  "transcription": {
+    "text": " 물 안개서 혼자 지워지지 않는 젖은 밤의 흔적 차가움이 번져 젖은 소매 위로 입깃 많이 남아 떨리는 숨 끝에 주머니에서 넣어도 스며드는 냉기 속",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 6.28,
+        "text": " 물 안개서 혼자 지워지지 않는",
+        "tokens": [
+          50365,
+          14403,
+          4811,
+          11597,
+          2393,
+          36028,
+          4704,
+          10086,
+          1831,
+          1831,
+          34790,
+          50715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3926362576692001,
+        "compression_ratio": 0.8714285714285714,
+        "no_speech_prob": 1.267009674260633e-11,
+        "words": [
+          {
+            "word": " 물",
+            "start": 0.0,
+            "end": 1.0,
+            "probability": 0.339599609375
+          },
+          {
+            "word": " 안개서",
+            "start": 1.0,
+            "end": 1.5,
+            "probability": 0.66845703125
+          },
+          {
+            "word": " 혼자",
+            "start": 1.5,
+            "end": 2.46,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 지워지지",
+            "start": 2.46,
+            "end": 4.8,
+            "probability": 0.96875
+          },
+          {
+            "word": " 않는",
+            "start": 4.8,
+            "end": 6.28,
+            "probability": 0.8017578125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.0,
+        "end": 10.1,
+        "text": " 젖은 밤의 흔적",
+        "tokens": [
+          50715,
+          1647,
+          244,
+          2124,
+          38093,
+          2785,
+          14473,
+          242,
+          7554,
+          50915
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3926362576692001,
+        "compression_ratio": 0.8714285714285714,
+        "no_speech_prob": 1.267009674260633e-11,
+        "words": [
+          {
+            "word": " 젖은",
+            "start": 7.0,
+            "end": 8.22,
+            "probability": 0.8818359375
+          },
+          {
+            "word": " 밤의",
+            "start": 8.22,
+            "end": 8.98,
+            "probability": 0.96142578125
+          },
+          {
+            "word": " 흔적",
+            "start": 8.98,
+            "end": 10.1,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 33.26,
+        "end": 41.8,
+        "text": " 차가움이 번져 젖은 소매 위로 입깃 많이 남아",
+        "tokens": [
+          50365,
+          15391,
+          1453,
+          3860,
+          12192,
+          10212,
+          17383,
+          1647,
+          244,
+          2124,
+          13062,
+          28728,
+          4916,
+          14046,
+          10051,
+          2900,
+          225,
+          8358,
+          11689,
+          2230,
+          50965
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2980874083762945,
+        "compression_ratio": 1.0731707317073171,
+        "no_speech_prob": 3.23857052286769e-11,
+        "words": [
+          {
+            "word": " 차가움이",
+            "start": 33.26,
+            "end": 34.66,
+            "probability": 0.86328125
+          },
+          {
+            "word": " 번져",
+            "start": 34.66,
+            "end": 35.62,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 젖은",
+            "start": 35.62,
+            "end": 37.22,
+            "probability": 0.970703125
+          },
+          {
+            "word": " 소매",
+            "start": 37.22,
+            "end": 37.7,
+            "probability": 0.95556640625
+          },
+          {
+            "word": " 위로",
+            "start": 37.7,
+            "end": 38.52,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 입깃",
+            "start": 38.52,
+            "end": 40.3,
+            "probability": 0.438232421875
+          },
+          {
+            "word": " 많이",
+            "start": 40.3,
+            "end": 40.64,
+            "probability": 0.8994140625
+          },
+          {
+            "word": " 남아",
+            "start": 40.64,
+            "end": 41.8,
+            "probability": 0.97314453125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 41.8,
+        "end": 49.98,
+        "text": " 떨리는 숨 끝에 주머니에서 넣어도 스며드는 냉기 속",
+        "tokens": [
+          50965,
+          13320,
+          19407,
+          1098,
+          33354,
+          13932,
+          1517,
+          16410,
+          46355,
+          4885,
+          14948,
+          34296,
+          40420,
+          102,
+          2004,
+          29609,
+          26218,
+          231,
+          2401,
+          18663,
+          51365
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2980874083762945,
+        "compression_ratio": 1.0731707317073171,
+        "no_speech_prob": 3.23857052286769e-11,
+        "words": [
+          {
+            "word": " 떨리는",
+            "start": 41.8,
+            "end": 43.0,
+            "probability": 0.791015625
+          },
+          {
+            "word": " 숨",
+            "start": 43.0,
+            "end": 43.4,
+            "probability": 0.93798828125
+          },
+          {
+            "word": " 끝에",
+            "start": 43.4,
+            "end": 44.8,
+            "probability": 0.9755859375
+          },
+          {
+            "word": " 주머니에서",
+            "start": 44.8,
+            "end": 46.34,
+            "probability": 0.93359375
+          },
+          {
+            "word": " 넣어도",
+            "start": 46.34,
+            "end": 47.44,
+            "probability": 0.88134765625
+          },
+          {
+            "word": " 스며드는",
+            "start": 47.44,
+            "end": 49.22,
+            "probability": 0.99560546875
+          },
+          {
+            "word": " 냉기",
+            "start": 49.22,
+            "end": 49.78,
+            "probability": 0.7900390625
+          },
+          {
+            "word": " 속",
+            "start": 49.78,
+            "end": 49.98,
+            "probability": 0.58251953125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

@@ -12,7 +12,9 @@ from wavvy_harness.subtitles import (
 )
 
 
-SOURCE = Path(__file__).resolve().parents[1] / "SERIES" / "17-30"
+# Frozen copy of the 17:30 evidence (see fixtures/subtitles_17_30/README.md for commits and hashes).
+# The tests must not read SERIES/, whose files can be cleaned after an upload.
+SOURCE = Path(__file__).resolve().parent / "fixtures" / "subtitles_17_30"
 EVIDENCE = SOURCE / "input/validation/2026-10-23-timed-subtitles"
 TRACKED_REPORT = EVIDENCE / "report-at-subtitle-preparation.json"
 TRACKED_SRT = EVIDENCE / "all-tracks-timed-checked.srt"
@@ -20,6 +22,13 @@ TRACKED_SRT = EVIDENCE / "all-tracks-timed-checked.srt"
 
 def _sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _publication_screenshots(publication):
+    """Manifest records of the six screenshots that the fixture does not vendor (large PNG files)."""
+    records = [publication["studio_capture"], publication["public_menu_capture"]]
+    records += [sample["screenshot"] for sample in publication["sample_files"].values()]
+    return records
 
 
 def _clone(destination):
@@ -33,10 +42,10 @@ def _clone(destination):
     paths.update(map_path.parent / name for name in mapping["audio_evidence_sha256"])
     publication = manifest["publication"]
     paths.update(Path(publication[key]["path"]) for key in (
-        "observation", "studio_capture", "public_menu_capture", "studio_download", "studio_raw", "public_menu_raw",
+        "observation", "studio_download", "studio_raw", "public_menu_raw",
     ))
     for sample in publication["sample_files"].values():
-        paths.update(Path(sample[key]["path"]) for key in ("raw_snapshot", "screenshot"))
+        paths.add(Path(sample["raw_snapshot"]["path"]))
     for relative in paths:
         target = destination / relative
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -44,6 +53,14 @@ def _clone(destination):
             TRACKED_SRT if relative == Path(manifest["srt"]["path"]) else SOURCE / relative
         )
         shutil.copyfile(source, target)
+    # The harness only checks that each screenshot exists and matches its recorded SHA-256, so a small
+    # stand-in file replaces the vendored-out PNG and only that hash entry of the cloned manifest changes.
+    for record in _publication_screenshots(publication):
+        target = destination / record["path"]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(b"stand-in for " + record["path"].encode("utf-8"))
+        record["sha256"] = _sha(target)
+    (destination / MANIFEST).write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return manifest, mapping
 
 

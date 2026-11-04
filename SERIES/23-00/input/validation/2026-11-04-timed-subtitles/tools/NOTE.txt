@@ -1,0 +1,10 @@
+Method record of the 2026-11-04 timed-subtitle run (not a maintained tool).
+Order: run-all.sh (one full-track Whisper pass per WAV) -> run-clips.sh (short windows for weak lines, sung repeats,
+instrumental gaps) -> analyze.py / build_timing.py (place approved lyric lines on the ASR time axis) ->
+finalize_timing.py (timing map + subtitles.json; first checked with a patched COPY of the harness in a temporary series) ->
+self_check.py (independent SRT checks). Retained evidence: ../audio-probe/. Scratch folders (probe-raw, probe-clips, patched)
+were outside the repository; the retained probe JSONs have repository-relative audio paths.
+Whisper: .venv + requirements-whisper.txt, see MASTER/ai/RUNTIME_RULES.md "Lyric Timing ASR (Whisper)".
+
+Update: the proposed harness patch (../proposed-harness-patch-subtitles.diff) was approved and applied unchanged to wavvy_harness/subtitles.py;
+raw check outputs are in ../harness-patch-checks/ and the repository harness now passes prepare/verify for this series.

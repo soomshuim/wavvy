@@ -1,0 +1,26 @@
+{
+  "note": "Verification of the repository files (concept.md, report.json, input/subtitles.json, timing map, audio-probe) inside a TEMPORARY COPY of the series using a PATCHED COPY of wavvy_harness/subtitles.py (the proposed patch, not applied to the repository). The repository harness itself FAILS: see 2026-11-04-verify-subtitles-prepared-unpatched-harness.json.",
+  "patched_module_sha256": "0b3bb292134bf262733551635e73f133efd75574b0c8a8f6b99145b91e853668",
+  "proposed_patch": "input/validation/2026-11-04-timed-subtitles/proposed-harness-patch-subtitles.diff",
+  "prepare_timed": {
+    "result": "PASS",
+    "stage": "prepared",
+    "srt": "<temporary-series>/output/youtube_subtitles_ko_timed_estimated.srt",
+    "cues": 1490,
+    "duration_ms": 6654137,
+    "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9",
+    "source_sha256": "d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb",
+    "timing_scope": "structure, source text, retained hashes and selected observed anchors; not full acoustic verification"
+  },
+  "verify_prepared": {
+    "result": "PASS",
+    "stage": "prepared",
+    "srt": "<temporary-series>/output/youtube_subtitles_ko_timed_estimated.srt",
+    "cues": 1490,
+    "duration_ms": 6654137,
+    "sha256": "ad40da726de76d79baca9d340164372a3c6b13866647dd1146ad045552047fe9",
+    "source_sha256": "d2d4716c86e7659f40dc27a64c167dd0787d5e089b74635008f9d87e21eb9bcb",
+    "timing_scope": "structure, source text, retained hashes and selected observed anchors; not full acoustic verification"
+  },
+  "srt_equals_repo_candidate": true
+}

@@ -1,0 +1,181 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/06__마음 밖__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "ab168b13399ed948d70d29a1eb3b620ffe9c4029de7ebde086224b05c3abdb87",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "125.0,160.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/06__마음 밖__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "ab168b13399ed948d70d29a1eb3b620ffe9c4029de7ebde086224b05c3abdb87",
+  "clip_start_s": 125.0,
+  "clip_end_s": 160.0,
+  "clip_audio_sha256": "b853fb31b2e728054fc0d46fd40dc59644a729f8ec9934a339ac3f6a54266c8d",
+  "elapsed_seconds": 2.43,
+  "transcription": {
+    "text": " 멈춰 너의 마음 밖 난 여기서 멈춰 너의 마음 밖 다음 영상에서 만나요.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 5.62,
+        "text": " 멈춰 너의 마음 밖",
+        "tokens": [
+          50365,
+          8514,
+          230,
+          39929,
+          12963,
+          2785,
+          20477,
+          2391,
+          244,
+          50644
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4487394249957541,
+        "compression_ratio": 1.2115384615384615,
+        "no_speech_prob": 2.876969669440843e-11,
+        "words": [
+          {
+            "word": " 멈춰",
+            "start": 0.0,
+            "end": 1.28,
+            "probability": 0.7939453125
+          },
+          {
+            "word": " 너의",
+            "start": 1.28,
+            "end": 3.28,
+            "probability": 0.9736328125
+          },
+          {
+            "word": " 마음",
+            "start": 3.28,
+            "end": 4.14,
+            "probability": 0.56884765625
+          },
+          {
+            "word": " 밖",
+            "start": 4.14,
+            "end": 5.62,
+            "probability": 0.82373046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 5.62,
+        "end": 14.14,
+        "text": " 난 여기서 멈춰 너의 마음 밖",
+        "tokens": [
+          50644,
+          19252,
+          25404,
+          8514,
+          230,
+          39929,
+          12963,
+          2785,
+          20477,
+          2391,
+          244,
+          51072
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4487394249957541,
+        "compression_ratio": 1.2115384615384615,
+        "no_speech_prob": 2.876969669440843e-11,
+        "words": [
+          {
+            "word": " 난",
+            "start": 5.62,
+            "end": 5.94,
+            "probability": 0.57373046875
+          },
+          {
+            "word": " 여기서",
+            "start": 5.94,
+            "end": 7.04,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 멈춰",
+            "start": 7.04,
+            "end": 8.82,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 너의",
+            "start": 8.82,
+            "end": 12.14,
+            "probability": 0.99658203125
+          },
+          {
+            "word": " 마음",
+            "start": 12.14,
+            "end": 12.9,
+            "probability": 0.974609375
+          },
+          {
+            "word": " 밖",
+            "start": 12.9,
+            "end": 14.14,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 33.58,
+        "end": 34.98,
+        "text": " 다음 영상에서 만나요.",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          13,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.541098435719808,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 1.7183306166845824e-10,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 33.58,
+            "end": 34.98,
+            "probability": 0.1246337890625
+          },
+          {
+            "word": " 영상에서",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.83984375
+          },
+          {
+            "word": " 만나요.",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.9951171875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

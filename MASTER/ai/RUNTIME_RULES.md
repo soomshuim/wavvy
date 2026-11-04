@@ -1,7 +1,7 @@
 # Wavvy Runtime Rules
 
 Version: 1.0
-Last Updated: 2026-11-01
+Last Updated: 2026-11-04
 Owns: runtime hard constraints, media execution cautions, approval/safety rules, browser connection default
 
 This file holds rules that agents must know at execution time but that do not belong in thin entrypoint routers.
@@ -35,6 +35,15 @@ Wavvy's default browser is **ego lite**, driven through the `ego-browser` CLI (`
 - Run `ego-browser upgrade` only after 젠 approves, then run `ego-browser skill` again.
 - Do not assume ego lite is signed in to Google, Suno, YouTube, Apple, or a distributor. Confirm on the actual screen each time.
 - Aside records in earlier artifacts (`SERIES/**`, `.ai/research/**`, reviews, validation, cleanup, SESSION, HANDOFF, CHANGELOG) are historical facts about those runs. Do not rewrite them to match this rule.
+
+## Lyric Timing ASR (Whisper)
+
+Whisper is installed permanently in the repository so later series reuse it. Basis, 젠 2026-11-04: 「whisper는 그냥 wavvy 레포에 설치해두지.」
+
+- **Location**: `.venv/` at the repository root (Git-ignored by `.gitignore`). Pinned packages and the model name are in `requirements-whisper.txt` (tracked). Model: `mlx-community/whisper-large-v3-turbo` (MLX build for Apple Silicon); its weights live in the default Hugging Face cache (`~/.cache/huggingface`), never in the repository.
+- **Create**: `python3 -m venv .venv && .venv/bin/pip install -r requirements-whisper.txt`. Do not move or copy `.venv/`; recreate it.
+- **Run** (word timestamps on, deterministic): `.venv/bin/mlx_whisper <audio.wav> --model mlx-community/whisper-large-v3-turbo --language ko --word-timestamps True --condition-on-previous-text False --temperature 0 --output-format json --output-dir <dir>`
+- **Use only as timing evidence for timed subtitles.** Recognized text never replaces or edits the approved lyrics, and ASR timing stays an estimate. Procedure and checks: `skills/wavvy-youtube-publish/references/timed-subtitles.md`. Keep the raw JSON (with its SHA-256) as retained evidence.
 
 ## Complex Media Protocol
 

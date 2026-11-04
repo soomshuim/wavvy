@@ -1,0 +1,132 @@
+{
+  "schema": "wavvy.moved_manifest.v1",
+  "moved_at": "2026-11-04T21:07:38+09:00",
+  "reason": "The 20 earlier agent-draft source txt files (11/1-11/2 draft; not the current 17-song selection) share numbers (01-20) and, for nine remix titles, normalized titles with the 17 current sources. They are moved (not deleted) so input/tracks/ holds only the current 17 recordings and their 17 current source txt files; finalize-upload matches sources to report tracks by title and would otherwise fail on duplicate title keys.",
+  "scope": "20 txt files only; no content edited, hashes verified after the move.",
+  "known_stale_references": [
+    "SERIES/23-00/input/suno-candidates.json (20-song draft candidate ledger) still names these files under input/tracks/ in its source_txt fields. It was left unchanged as historical material and is not read as the current selection (verify-release reads input/suno-final-selection-2026-11-04.json).",
+    "SERIES/23-00/concept.md Track Map table (historical 20-song draft) names input/tracks/NN_*.txt; those files now live in this folder."
+  ],
+  "files": [
+    {
+      "original_path": "SERIES/23-00/input/tracks/01_먼지 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/01_먼지 (Lo-Fi Remix).txt",
+      "sha256": "392336cfdefd5e13516ab12377392a859656ca61ba3680ade67ea61addf71319",
+      "bytes": 2688
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/02_산책 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/02_산책 (Lo-Fi Remix).txt",
+      "sha256": "8a149deac149438cf20081c7f9ce2eba9732ba070e57371697d179573d8ed1dd",
+      "bytes": 2588
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/03_숨 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/03_숨 (Lo-Fi Remix).txt",
+      "sha256": "2ee70401e9f09d70de194e9d32c23a4338c891fb366a5efcd81fe86590979e96",
+      "bytes": 3226
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/04_이름 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/04_이름 (Lo-Fi Remix).txt",
+      "sha256": "c0b565cf1617d8fe3c9f6e644f8cb5f9e09164ee5035213463792b193ad40869",
+      "bytes": 2914
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/05_마음 밖 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/05_마음 밖 (Lo-Fi Remix).txt",
+      "sha256": "29051f0a86eeaa15f5dcba9b3d60e585e0add7ca704ccd05c0bb40585d428aed",
+      "bytes": 2240
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/06_물안개 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/06_물안개 (Lo-Fi Remix).txt",
+      "sha256": "cb9726528e5a4a1cdac5228d171b6230662a2640fa9760d90e38383445cee6b3",
+      "bytes": 1983
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/07_골목 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/07_골목 (Lo-Fi Remix).txt",
+      "sha256": "18f1a23eab980c76483e4b6568586343140cd5d2583d06752dce3f661f86c76c",
+      "bytes": 2677
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/08_물결 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/08_물결 (Lo-Fi Remix).txt",
+      "sha256": "50c6b9abe22a46dda1059f4a97e05ff142e951678845904dedcb7e17fabb90e0",
+      "bytes": 2258
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/09_작은 빛 (Lo-Fi Remix).txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/09_작은 빛 (Lo-Fi Remix).txt",
+      "sha256": "f8402c36c245aa15a74da806019b39c9251b58c55d4a24628e779f97c5a989fc",
+      "bytes": 2967
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/10_귤.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/10_귤.txt",
+      "sha256": "6f88b057c2302017473c035250cfd7f0cb02fe1dc7a25cf01aa9707ef7503aec",
+      "bytes": 3165
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/11_라디오.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/11_라디오.txt",
+      "sha256": "b779b8da9e64bb8116cd44368fb8db516afe32ecc21585c36dc47edea7266160",
+      "bytes": 3618
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/12_스웨터.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/12_스웨터.txt",
+      "sha256": "83e5b2feaeddb9df9a845fb937ab8880aa74a6398ebb98c3e937e0cc3295fae0",
+      "bytes": 3036
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/13_편지.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/13_편지.txt",
+      "sha256": "72af07f998cf1e8973e72401c8ea4a000d8d9473f01fcc71f157d37211d71a74",
+      "bytes": 3680
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/14_기타.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/14_기타.txt",
+      "sha256": "678805060204f420834d8e6a719bfffb6c1aad97f422d23681c3d9c5950dcc3c",
+      "bytes": 4264
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/15_노을.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/15_노을.txt",
+      "sha256": "fc59ed4bb5d323fc998930e6ae4d4cfb3fc1f74dc11c989f3a907f5e0293d921",
+      "bytes": 3881
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/16_여름밤.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/16_여름밤.txt",
+      "sha256": "5fdf08a38f95ab426515a264dca70199b90401dad671ca10aef0eefb01cdfea7",
+      "bytes": 4032
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/17_막차.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/17_막차.txt",
+      "sha256": "7f6c7570a6c8c2fe2eb09c81931492a13b69f24d3e1a1098cdb189e292be0ac9",
+      "bytes": 3505
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/18_벚꽃.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/18_벚꽃.txt",
+      "sha256": "a534e2b406d79b5de9393c8a2d2886463f9895169cc7b04b7e047952f8c31214",
+      "bytes": 3493
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/19_그네.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/19_그네.txt",
+      "sha256": "b45575a8958a4a8d0bea82772e3f12519592139ca1c42e18eb8af1d3ddafdf89",
+      "bytes": 3492
+    },
+    {
+      "original_path": "SERIES/23-00/input/tracks/20_포근히.txt",
+      "new_path": "SERIES/23-00/input/source-history/2026-11-02-historical-20-draft/20_포근히.txt",
+      "sha256": "9d616f8e3e87740e118e7882502b86a58a39ec3001131614ef0167080c8fe12e",
+      "bytes": 2798
+    }
+  ]
+}

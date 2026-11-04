@@ -1,0 +1,495 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/07__손 잡아도 될까__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "f28225adeb1e1aa9c8d6f86e304ef6d271cd8d6344b17cdc6e578bc8d85ed376",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "50.0,100.0"
+  },
+  "clip_source_audio": "SERIES/23-00/input/tracks/07__손 잡아도 될까__Relax__Lo-fi R&B__NA.wav",
+  "clip_source_audio_sha256": "f28225adeb1e1aa9c8d6f86e304ef6d271cd8d6344b17cdc6e578bc8d85ed376",
+  "clip_start_s": 50.0,
+  "clip_end_s": 100.0,
+  "clip_audio_sha256": "a248e5f409aa7c5b7bfdf962e936eb10323765c9bc8bb9cbacbc54c7a21a9021",
+  "elapsed_seconds": 2.547,
+  "transcription": {
+    "text": " 손을 봐 손 잡아도 될까? 그냥 먼저 물어볼까? 말은 못하고 나란히 말은 못하고 나란히 집에 가긴 좀 이르대 한 바퀴만 더 걷자고 아까부터 생각했던 그 말을 꺼낼까 조금 길을 지날 때면 네가 조금 더 가까워 습치듯 가까운 손에 대답은 조금 늘",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.86,
+        "text": " 손을 봐 손 잡아도 될까?",
+        "tokens": [
+          50365,
+          15268,
+          1638,
+          15507,
+          15268,
+          40845,
+          3744,
+          16625,
+          3294,
+          30,
+          50560
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3962474120290656,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 2.72919933180793e-11,
+        "words": [
+          {
+            "word": " 손을",
+            "start": 0.0,
+            "end": 0.82,
+            "probability": 0.3115234375
+          },
+          {
+            "word": " 봐",
+            "start": 0.82,
+            "end": 1.22,
+            "probability": 0.546875
+          },
+          {
+            "word": " 손",
+            "start": 1.22,
+            "end": 1.98,
+            "probability": 0.7607421875
+          },
+          {
+            "word": " 잡아도",
+            "start": 1.98,
+            "end": 3.14,
+            "probability": 0.9755859375
+          },
+          {
+            "word": " 될까?",
+            "start": 3.14,
+            "end": 3.86,
+            "probability": 0.99365234375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.02,
+        "end": 6.22,
+        "text": " 그냥 먼저 물어볼까?",
+        "tokens": [
+          50575,
+          11208,
+          20749,
+          44558,
+          17194,
+          3294,
+          30,
+          50682
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3962474120290656,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 2.72919933180793e-11,
+        "words": [
+          {
+            "word": " 그냥",
+            "start": 4.02,
+            "end": 4.42,
+            "probability": 0.98193359375
+          },
+          {
+            "word": " 먼저",
+            "start": 4.42,
+            "end": 4.72,
+            "probability": 0.98876953125
+          },
+          {
+            "word": " 물어볼까?",
+            "start": 4.72,
+            "end": 6.22,
+            "probability": 0.98681640625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 6.72,
+        "end": 8.74,
+        "text": " 말은 못하고 나란히",
+        "tokens": [
+          50701,
+          7058,
+          2124,
+          10239,
+          7040,
+          12623,
+          18781,
+          5905,
+          50805
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3962474120290656,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 2.72919933180793e-11,
+        "words": [
+          {
+            "word": " 말은",
+            "start": 6.72,
+            "end": 7.12,
+            "probability": 0.9287109375
+          },
+          {
+            "word": " 못하고",
+            "start": 7.12,
+            "end": 7.84,
+            "probability": 0.859375
+          },
+          {
+            "word": " 나란히",
+            "start": 7.84,
+            "end": 8.74,
+            "probability": 0.97509765625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 8.74,
+        "end": 12.3,
+        "text": " 말은 못하고 나란히",
+        "tokens": [
+          50805,
+          7058,
+          2124,
+          10239,
+          7040,
+          12623,
+          18781,
+          5905,
+          50980
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3962474120290656,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 2.72919933180793e-11,
+        "words": [
+          {
+            "word": " 말은",
+            "start": 8.74,
+            "end": 9.66,
+            "probability": 0.873046875
+          },
+          {
+            "word": " 못하고",
+            "start": 9.66,
+            "end": 10.54,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 나란히",
+            "start": 10.54,
+            "end": 12.3,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 30.38,
+        "end": 35.68,
+        "text": " 집에 가긴 좀 이르대 한 바퀴만 더 걷자고",
+        "tokens": [
+          50365,
+          38380,
+          4147,
+          17381,
+          6796,
+          2892,
+          22702,
+          3638,
+          4815,
+          12704,
+          169,
+          222,
+          1327,
+          6478,
+          6990,
+          4925,
+          115,
+          4264,
+          1313,
+          50665
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20761971106896035,
+        "compression_ratio": 1.271604938271605,
+        "no_speech_prob": 2.699832891972509e-11,
+        "words": [
+          {
+            "word": " 집에",
+            "start": 30.38,
+            "end": 31.58,
+            "probability": 0.485107421875
+          },
+          {
+            "word": " 가긴",
+            "start": 31.58,
+            "end": 31.96,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 좀",
+            "start": 31.96,
+            "end": 32.22,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 이르대",
+            "start": 32.22,
+            "end": 32.98,
+            "probability": 0.5498046875
+          },
+          {
+            "word": " 한",
+            "start": 32.98,
+            "end": 33.82,
+            "probability": 0.892578125
+          },
+          {
+            "word": " 바퀴만",
+            "start": 33.82,
+            "end": 34.4,
+            "probability": 0.93359375
+          },
+          {
+            "word": " 더",
+            "start": 34.4,
+            "end": 34.7,
+            "probability": 1.0
+          },
+          {
+            "word": " 걷자고",
+            "start": 34.7,
+            "end": 35.68,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 35.68,
+        "end": 41.26,
+        "text": " 아까부터 생각했던 그 말을 꺼낼까",
+        "tokens": [
+          50665,
+          2216,
+          2900,
+          2457,
+          12130,
+          8594,
+          30504,
+          4296,
+          39692,
+          34505,
+          1870,
+          224,
+          120,
+          3294,
+          50936
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20761971106896035,
+        "compression_ratio": 1.271604938271605,
+        "no_speech_prob": 2.699832891972509e-11,
+        "words": [
+          {
+            "word": " 아까부터",
+            "start": 35.68,
+            "end": 37.04,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 생각했던",
+            "start": 37.04,
+            "end": 38.46,
+            "probability": 1.0
+          },
+          {
+            "word": " 그",
+            "start": 38.46,
+            "end": 39.02,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 말을",
+            "start": 39.02,
+            "end": 39.46,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 꺼낼까",
+            "start": 39.46,
+            "end": 41.26,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 41.26,
+        "end": 46.0,
+        "text": " 조금 길을 지날 때면 네가 조금 더 가까워",
+        "tokens": [
+          50936,
+          13091,
+          25222,
+          1638,
+          12205,
+          24095,
+          9057,
+          2708,
+          41714,
+          13091,
+          6990,
+          44913,
+          10086,
+          51174
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20761971106896035,
+        "compression_ratio": 1.271604938271605,
+        "no_speech_prob": 2.699832891972509e-11,
+        "words": [
+          {
+            "word": " 조금",
+            "start": 41.26,
+            "end": 41.96,
+            "probability": 0.96484375
+          },
+          {
+            "word": " 길을",
+            "start": 41.96,
+            "end": 42.36,
+            "probability": 0.990234375
+          },
+          {
+            "word": " 지날",
+            "start": 42.36,
+            "end": 42.86,
+            "probability": 0.92529296875
+          },
+          {
+            "word": " 때면",
+            "start": 42.86,
+            "end": 43.5,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 네가",
+            "start": 43.5,
+            "end": 44.1,
+            "probability": 0.8515625
+          },
+          {
+            "word": " 조금",
+            "start": 44.1,
+            "end": 44.58,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 더",
+            "start": 44.58,
+            "end": 44.78,
+            "probability": 1.0
+          },
+          {
+            "word": " 가까워",
+            "start": 44.78,
+            "end": 46.0,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 3000,
+        "start": 46.0,
+        "end": 49.92,
+        "text": " 습치듯 가까운 손에 대답은 조금 늘",
+        "tokens": [
+          51174,
+          6955,
+          113,
+          31678,
+          39358,
+          44913,
+          9996,
+          15268,
+          1517,
+          5971,
+          23884,
+          2124,
+          13091,
+          33684,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20761971106896035,
+        "compression_ratio": 1.271604938271605,
+        "no_speech_prob": 2.699832891972509e-11,
+        "words": [
+          {
+            "word": " 습치듯",
+            "start": 46.0,
+            "end": 47.08,
+            "probability": 0.8505859375
+          },
+          {
+            "word": " 가까운",
+            "start": 47.08,
+            "end": 47.84,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 손에",
+            "start": 47.84,
+            "end": 48.36,
+            "probability": 0.9609375
+          },
+          {
+            "word": " 대답은",
+            "start": 48.36,
+            "end": 49.02,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 조금",
+            "start": 49.02,
+            "end": 49.56,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 늘",
+            "start": 49.56,
+            "end": 49.92,
+            "probability": 0.25732421875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

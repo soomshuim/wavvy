@@ -1,0 +1,374 @@
+{
+  "engine": "mlx-whisper",
+  "model_dir": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/mlx-hf-cache/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/17-30/work/2026-10-23-timed-subtitles-audio/clips/check-11-first-chorus-35-66.flac",
+  "audio_sha256": "7d37ea10fb08ec837aff20bcf88987b3acf24816619a7c5114a5aa767f4b2417",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 2.729,
+  "transcription": {
+    "text": " 말이 다 씻겨 메모 한 장을 펴서 그 주소를 다시 봐 미뤄둔 내 맘이 아직 여기 남았어 메모 한 장을 펴서 그 주소를 다시 봐 미뤄둔 내 맘이 아직 여기 남았어 감사합니다.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.02,
+        "text": " 말이 다 씻겨",
+        "tokens": [
+          50365,
+          44276,
+          4279,
+          13479,
+          119,
+          19591,
+          50532
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17948519482332118,
+        "compression_ratio": 1.831858407079646,
+        "no_speech_prob": 2.1194270297120177e-11,
+        "words": [
+          {
+            "word": " 말이",
+            "start": 0.0,
+            "end": 1.3,
+            "probability": 0.0750732421875
+          },
+          {
+            "word": " 다",
+            "start": 1.3,
+            "end": 1.78,
+            "probability": 0.94140625
+          },
+          {
+            "word": " 씻겨",
+            "start": 1.78,
+            "end": 3.02,
+            "probability": 0.580078125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.02,
+        "end": 8.38,
+        "text": " 메모 한 장을 펴서 그 주소를 다시 봐",
+        "tokens": [
+          50532,
+          42873,
+          16838,
+          4815,
+          12280,
+          1638,
+          10981,
+          4555,
+          4296,
+          7757,
+          17921,
+          2429,
+          15463,
+          15507,
+          50789
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17948519482332118,
+        "compression_ratio": 1.831858407079646,
+        "no_speech_prob": 2.1194270297120177e-11,
+        "words": [
+          {
+            "word": " 메모",
+            "start": 3.02,
+            "end": 4.18,
+            "probability": 0.982421875
+          },
+          {
+            "word": " 한",
+            "start": 4.18,
+            "end": 4.76,
+            "probability": 0.978515625
+          },
+          {
+            "word": " 장을",
+            "start": 4.76,
+            "end": 5.38,
+            "probability": 0.96728515625
+          },
+          {
+            "word": " 펴서",
+            "start": 5.38,
+            "end": 6.08,
+            "probability": 0.98046875
+          },
+          {
+            "word": " 그",
+            "start": 6.08,
+            "end": 6.64,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 주소를",
+            "start": 6.64,
+            "end": 7.52,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 다시",
+            "start": 7.52,
+            "end": 7.92,
+            "probability": 0.98388671875
+          },
+          {
+            "word": " 봐",
+            "start": 7.92,
+            "end": 8.38,
+            "probability": 0.99658203125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 8.38,
+        "end": 13.82,
+        "text": " 미뤄둔 내 맘이 아직 여기 남았어",
+        "tokens": [
+          50789,
+          29004,
+          97,
+          2703,
+          239,
+          242,
+          6918,
+          1747,
+          246,
+          1129,
+          22729,
+          7543,
+          11689,
+          27844,
+          51065
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17948519482332118,
+        "compression_ratio": 1.831858407079646,
+        "no_speech_prob": 2.1194270297120177e-11,
+        "words": [
+          {
+            "word": " 미뤄둔",
+            "start": 8.38,
+            "end": 10.1,
+            "probability": 0.91357421875
+          },
+          {
+            "word": " 내",
+            "start": 10.1,
+            "end": 10.62,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 맘이",
+            "start": 10.62,
+            "end": 11.46,
+            "probability": 0.99169921875
+          },
+          {
+            "word": " 아직",
+            "start": 11.46,
+            "end": 12.18,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 여기",
+            "start": 12.18,
+            "end": 12.74,
+            "probability": 0.98486328125
+          },
+          {
+            "word": " 남았어",
+            "start": 12.74,
+            "end": 13.82,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 13.82,
+        "end": 19.28,
+        "text": " 메모 한 장을 펴서 그 주소를 다시 봐",
+        "tokens": [
+          51065,
+          42873,
+          16838,
+          4815,
+          12280,
+          1638,
+          10981,
+          4555,
+          4296,
+          7757,
+          17921,
+          2429,
+          15463,
+          15507,
+          51340
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17948519482332118,
+        "compression_ratio": 1.831858407079646,
+        "no_speech_prob": 2.1194270297120177e-11,
+        "words": [
+          {
+            "word": " 메모",
+            "start": 13.82,
+            "end": 14.98,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 한",
+            "start": 14.98,
+            "end": 15.7,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 장을",
+            "start": 15.7,
+            "end": 16.18,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 펴서",
+            "start": 16.18,
+            "end": 16.88,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 그",
+            "start": 16.88,
+            "end": 17.4,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 주소를",
+            "start": 17.4,
+            "end": 18.3,
+            "probability": 1.0
+          },
+          {
+            "word": " 다시",
+            "start": 18.3,
+            "end": 18.72,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 봐",
+            "start": 18.72,
+            "end": 19.28,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 19.28,
+        "end": 25.9,
+        "text": " 미뤄둔 내 맘이 아직 여기 남았어",
+        "tokens": [
+          51340,
+          29004,
+          97,
+          2703,
+          239,
+          242,
+          6918,
+          1747,
+          246,
+          1129,
+          22729,
+          7543,
+          11689,
+          27844,
+          51663
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17948519482332118,
+        "compression_ratio": 1.831858407079646,
+        "no_speech_prob": 2.1194270297120177e-11,
+        "words": [
+          {
+            "word": " 미뤄둔",
+            "start": 19.28,
+            "end": 20.88,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 내",
+            "start": 20.88,
+            "end": 21.4,
+            "probability": 1.0
+          },
+          {
+            "word": " 맘이",
+            "start": 21.4,
+            "end": 22.26,
+            "probability": 1.0
+          },
+          {
+            "word": " 아직",
+            "start": 22.26,
+            "end": 22.98,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 여기",
+            "start": 22.98,
+            "end": 23.84,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 남았어",
+            "start": 23.84,
+            "end": 25.9,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 30.82,
+        "text": " 감사합니다.",
+        "tokens": [
+          50365,
+          24399,
+          13,
+          50415
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.492647647857666,
+        "compression_ratio": 0.64,
+        "no_speech_prob": 1.665523274851921e-10,
+        "words": [
+          {
+            "word": " 감사합니다.",
+            "start": 30.0,
+            "end": 30.82,
+            "probability": 0.17822265625
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

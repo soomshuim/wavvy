@@ -1,0 +1,941 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/17__물결__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "0e8092270ffdfcf33894a5ff76c20d5b9df4c85e87c7e3277f3ba9baaf00982d",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 8.094,
+  "transcription": {
+    "text": " 물 위에 떠 있어 햇살이 눈부셔 눈 감아 바람이 불어와 그냥 이대로 있고 싶어 물가에 앉아있어 아무 생각 없이 이대로 괜찮아 물결이 퍼져가 햇살이 번져가 눈 감아도 돼 시간은 천천히 가 손끝을 담가 봐 차갑지 않아 괜찮아 숨을 내쉬어 봐 나도 천천히 가라앉아 손등에 물방울 말 안 해도 알아 이대로 괜찮아 물결이 퍼져가 햇살이 번져가 눈 감아도 돼 시간은 천천히 가 물결이 퍼져가 햇살이 번져가 눈 감아도 돼 시간은 천천히 가 다음 영상에서 만나요 감사합니다.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 14.459999999999999,
+        "end": 17.34,
+        "text": " 물 위에 떠 있어",
+        "tokens": [
+          50365,
+          14403,
+          38388,
+          43687,
+          17300,
+          51234
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32975583757672994,
+        "compression_ratio": 1.0198019801980198,
+        "no_speech_prob": 1.0968952308954005e-11,
+        "words": [
+          {
+            "word": " 물",
+            "start": 14.459999999999999,
+            "end": 15.86,
+            "probability": 0.316162109375
+          },
+          {
+            "word": " 위에",
+            "start": 15.86,
+            "end": 16.22,
+            "probability": 0.9423828125
+          },
+          {
+            "word": " 떠",
+            "start": 16.22,
+            "end": 16.58,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 있어",
+            "start": 16.58,
+            "end": 17.34,
+            "probability": 0.452392578125
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 17.34,
+        "end": 21.34,
+        "text": " 햇살이 눈부셔 눈 감아",
+        "tokens": [
+          51234,
+          11988,
+          229,
+          26082,
+          1129,
+          7508,
+          2196,
+          6301,
+          19072,
+          15333,
+          10892,
+          2230,
+          51435
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32975583757672994,
+        "compression_ratio": 1.0198019801980198,
+        "no_speech_prob": 1.0968952308954005e-11,
+        "words": [
+          {
+            "word": " 햇살이",
+            "start": 17.34,
+            "end": 18.58,
+            "probability": 0.97119140625
+          },
+          {
+            "word": " 눈부셔",
+            "start": 18.58,
+            "end": 19.72,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 눈",
+            "start": 19.72,
+            "end": 20.34,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 감아",
+            "start": 20.34,
+            "end": 21.34,
+            "probability": 0.97265625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 21.34,
+        "end": 27.54,
+        "text": " 바람이 불어와 그냥 이대로 있고 싶어",
+        "tokens": [
+          51435,
+          9040,
+          22855,
+          1129,
+          16285,
+          2782,
+          37404,
+          11208,
+          2892,
+          15527,
+          18683,
+          10785,
+          3103,
+          51748
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32975583757672994,
+        "compression_ratio": 1.0198019801980198,
+        "no_speech_prob": 1.0968952308954005e-11,
+        "words": [
+          {
+            "word": " 바람이",
+            "start": 21.34,
+            "end": 22.84,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 불어와",
+            "start": 22.84,
+            "end": 23.88,
+            "probability": 0.9638671875
+          },
+          {
+            "word": " 그냥",
+            "start": 23.88,
+            "end": 24.36,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 이대로",
+            "start": 24.36,
+            "end": 25.32,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 있고",
+            "start": 25.32,
+            "end": 26.0,
+            "probability": 0.697265625
+          },
+          {
+            "word": " 싶어",
+            "start": 26.0,
+            "end": 27.54,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2754,
+        "start": 27.54,
+        "end": 37.1,
+        "text": " 물가에 앉아있어 아무 생각 없이 이대로 괜찮아",
+        "tokens": [
+          50365,
+          14403,
+          1453,
+          1517,
+          37426,
+          2230,
+          8425,
+          3103,
+          30702,
+          8594,
+          33353,
+          2892,
+          15527,
+          45058,
+          50857
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2371658059053643,
+        "compression_ratio": 1.1983471074380165,
+        "no_speech_prob": 9.438402316652716e-12,
+        "words": [
+          {
+            "word": " 물가에",
+            "start": 27.54,
+            "end": 29.34,
+            "probability": 0.98193359375
+          },
+          {
+            "word": " 앉아있어",
+            "start": 29.34,
+            "end": 30.7,
+            "probability": 0.939453125
+          },
+          {
+            "word": " 아무",
+            "start": 30.7,
+            "end": 31.46,
+            "probability": 0.970703125
+          },
+          {
+            "word": " 생각",
+            "start": 31.46,
+            "end": 32.12,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 없이",
+            "start": 32.12,
+            "end": 33.12,
+            "probability": 0.89990234375
+          },
+          {
+            "word": " 이대로",
+            "start": 33.12,
+            "end": 34.3,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 괜찮아",
+            "start": 34.3,
+            "end": 37.1,
+            "probability": 0.98291015625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2754,
+        "start": 39.32,
+        "end": 50.76,
+        "text": " 물결이 퍼져가 햇살이 번져가 눈 감아도 돼 시간은 천천히 가",
+        "tokens": [
+          50857,
+          14403,
+          23466,
+          1129,
+          40849,
+          17383,
+          1453,
+          11988,
+          229,
+          26082,
+          1129,
+          10212,
+          17383,
+          1453,
+          15333,
+          10892,
+          2230,
+          3744,
+          11080,
+          16648,
+          2124,
+          31076,
+          18906,
+          5905,
+          4147,
+          51548
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2371658059053643,
+        "compression_ratio": 1.1983471074380165,
+        "no_speech_prob": 9.438402316652716e-12,
+        "words": [
+          {
+            "word": " 물결이",
+            "start": 39.32,
+            "end": 40.72,
+            "probability": 0.99560546875
+          },
+          {
+            "word": " 퍼져가",
+            "start": 40.72,
+            "end": 41.82,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 햇살이",
+            "start": 41.82,
+            "end": 44.02,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 번져가",
+            "start": 44.02,
+            "end": 45.1,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 눈",
+            "start": 45.1,
+            "end": 46.22,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 감아도",
+            "start": 46.22,
+            "end": 47.34,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 돼",
+            "start": 47.34,
+            "end": 47.82,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 시간은",
+            "start": 47.82,
+            "end": 48.82,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 천천히",
+            "start": 48.82,
+            "end": 50.28,
+            "probability": 1.0
+          },
+          {
+            "word": " 가",
+            "start": 50.28,
+            "end": 50.76,
+            "probability": 0.9833984375
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 5076,
+        "start": 54.08,
+        "end": 59.5,
+        "text": " 손끝을 담가 봐 차갑지 않아 괜찮아",
+        "tokens": [
+          50365,
+          4794,
+          2998,
+          223,
+          251,
+          1638,
+          39700,
+          1453,
+          15507,
+          15391,
+          27358,
+          1831,
+          39860,
+          45058,
+          50809
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17387610790776273,
+        "compression_ratio": 1.2121212121212122,
+        "no_speech_prob": 1.1125140739198791e-11,
+        "words": [
+          {
+            "word": " 손끝을",
+            "start": 54.08,
+            "end": 55.48,
+            "probability": 0.92333984375
+          },
+          {
+            "word": " 담가",
+            "start": 55.48,
+            "end": 56.08,
+            "probability": 0.767578125
+          },
+          {
+            "word": " 봐",
+            "start": 56.08,
+            "end": 56.42,
+            "probability": 0.97802734375
+          },
+          {
+            "word": " 차갑지",
+            "start": 56.42,
+            "end": 57.6,
+            "probability": 0.93505859375
+          },
+          {
+            "word": " 않아",
+            "start": 57.6,
+            "end": 58.22,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 괜찮아",
+            "start": 58.22,
+            "end": 59.5,
+            "probability": 0.97802734375
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 5076,
+        "start": 59.5,
+        "end": 66.7,
+        "text": " 숨을 내쉬어 봐 나도 천천히 가라앉아",
+        "tokens": [
+          50809,
+          33354,
+          1638,
+          25097,
+          231,
+          105,
+          3103,
+          15507,
+          31057,
+          31076,
+          18906,
+          5905,
+          10583,
+          2742,
+          1457,
+          231,
+          2230,
+          51180
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17387610790776273,
+        "compression_ratio": 1.2121212121212122,
+        "no_speech_prob": 1.1125140739198791e-11,
+        "words": [
+          {
+            "word": " 숨을",
+            "start": 59.5,
+            "end": 61.7,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 내쉬어",
+            "start": 61.7,
+            "end": 62.6,
+            "probability": 0.96826171875
+          },
+          {
+            "word": " 봐",
+            "start": 62.6,
+            "end": 62.92,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 나도",
+            "start": 62.92,
+            "end": 63.38,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 천천히",
+            "start": 63.38,
+            "end": 64.64,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 가라앉아",
+            "start": 64.64,
+            "end": 66.7,
+            "probability": 0.994140625
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 5076,
+        "start": 66.7,
+        "end": 76.4,
+        "text": " 손등에 물방울 말 안 해도 알아 이대로 괜찮아",
+        "tokens": [
+          51180,
+          4794,
+          2998,
+          22205,
+          1517,
+          26561,
+          17027,
+          15580,
+          7058,
+          4811,
+          35776,
+          32352,
+          2892,
+          15527,
+          45058,
+          51648
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.17387610790776273,
+        "compression_ratio": 1.2121212121212122,
+        "no_speech_prob": 1.1125140739198791e-11,
+        "words": [
+          {
+            "word": " 손등에",
+            "start": 66.7,
+            "end": 68.34,
+            "probability": 0.98095703125
+          },
+          {
+            "word": " 물방울",
+            "start": 68.34,
+            "end": 69.32,
+            "probability": 0.99072265625
+          },
+          {
+            "word": " 말",
+            "start": 69.32,
+            "end": 69.8,
+            "probability": 0.98974609375
+          },
+          {
+            "word": " 안",
+            "start": 69.8,
+            "end": 70.46,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 해도",
+            "start": 70.46,
+            "end": 70.76,
+            "probability": 0.93359375
+          },
+          {
+            "word": " 알아",
+            "start": 70.76,
+            "end": 71.66,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 이대로",
+            "start": 71.66,
+            "end": 73.34,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 괜찮아",
+            "start": 73.34,
+            "end": 76.4,
+            "probability": 0.9912109375
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 7640,
+        "start": 78.36,
+        "end": 80.86,
+        "text": " 물결이 퍼져가",
+        "tokens": [
+          50365,
+          14403,
+          23466,
+          1129,
+          40849,
+          17383,
+          1453,
+          50595
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 물결이",
+            "start": 78.36,
+            "end": 79.76,
+            "probability": 0.9794921875
+          },
+          {
+            "word": " 퍼져가",
+            "start": 79.76,
+            "end": 80.86,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 7640,
+        "start": 80.86,
+        "end": 84.2,
+        "text": " 햇살이 번져가",
+        "tokens": [
+          50595,
+          11988,
+          229,
+          26082,
+          1129,
+          10212,
+          17383,
+          1453,
+          50745
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 햇살이",
+            "start": 80.86,
+            "end": 83.06,
+            "probability": 0.9541015625
+          },
+          {
+            "word": " 번져가",
+            "start": 83.06,
+            "end": 84.2,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 7640,
+        "start": 84.2,
+        "end": 86.88,
+        "text": " 눈 감아도 돼",
+        "tokens": [
+          50745,
+          15333,
+          10892,
+          2230,
+          3744,
+          11080,
+          50895
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 눈",
+            "start": 84.2,
+            "end": 85.24,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 감아도",
+            "start": 85.24,
+            "end": 86.38,
+            "probability": 0.9697265625
+          },
+          {
+            "word": " 돼",
+            "start": 86.38,
+            "end": 86.88,
+            "probability": 0.98583984375
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 7640,
+        "start": 86.88,
+        "end": 89.72,
+        "text": " 시간은 천천히 가",
+        "tokens": [
+          50895,
+          16648,
+          2124,
+          31076,
+          18906,
+          5905,
+          4147,
+          51057
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 시간은",
+            "start": 86.88,
+            "end": 87.86,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 천천히",
+            "start": 87.86,
+            "end": 89.3,
+            "probability": 1.0
+          },
+          {
+            "word": " 가",
+            "start": 89.3,
+            "end": 89.72,
+            "probability": 0.990234375
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 7640,
+        "start": 91.36,
+        "end": 93.96,
+        "text": " 물결이 퍼져가",
+        "tokens": [
+          51057,
+          14403,
+          23466,
+          1129,
+          40849,
+          17383,
+          1453,
+          51245
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 물결이",
+            "start": 91.36,
+            "end": 92.76,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 퍼져가",
+            "start": 92.76,
+            "end": 93.96,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 7640,
+        "start": 93.96,
+        "end": 97.2,
+        "text": " 햇살이 번져가",
+        "tokens": [
+          51245,
+          11988,
+          229,
+          26082,
+          1129,
+          10212,
+          17383,
+          1453,
+          51410
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 햇살이",
+            "start": 93.96,
+            "end": 96.06,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 번져가",
+            "start": 96.06,
+            "end": 97.2,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 7640,
+        "start": 97.2,
+        "end": 99.92,
+        "text": " 눈 감아도 돼",
+        "tokens": [
+          51410,
+          15333,
+          10892,
+          2230,
+          3744,
+          11080,
+          51545
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 눈",
+            "start": 97.2,
+            "end": 98.26,
+            "probability": 1.0
+          },
+          {
+            "word": " 감아도",
+            "start": 98.26,
+            "end": 99.38,
+            "probability": 1.0
+          },
+          {
+            "word": " 돼",
+            "start": 99.38,
+            "end": 99.92,
+            "probability": 1.0
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 7640,
+        "start": 99.92,
+        "end": 102.76,
+        "text": " 시간은 천천히 가",
+        "tokens": [
+          51545,
+          16648,
+          2124,
+          31076,
+          18906,
+          5905,
+          4147,
+          51711
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2827220685554273,
+        "compression_ratio": 1.8735632183908046,
+        "no_speech_prob": 2.638618143424587e-11,
+        "words": [
+          {
+            "word": " 시간은",
+            "start": 99.92,
+            "end": 100.88,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 천천히",
+            "start": 100.88,
+            "end": 102.3,
+            "probability": 1.0
+          },
+          {
+            "word": " 가",
+            "start": 102.3,
+            "end": 102.76,
+            "probability": 1.0
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 10276,
+        "start": 131.34,
+        "end": 132.74,
+        "text": " 다음 영상에서 만나요",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4963213801383972,
+        "compression_ratio": 0.725,
+        "no_speech_prob": 1.407827604493761e-10,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 131.34,
+            "end": 132.74,
+            "probability": 0.057373046875
+          },
+          {
+            "word": " 영상에서",
+            "start": 132.74,
+            "end": 132.74,
+            "probability": 0.7275390625
+          },
+          {
+            "word": " 만나요",
+            "start": 132.74,
+            "end": 132.74,
+            "probability": 0.994140625
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 13276,
+        "start": 132.76,
+        "end": 133.14,
+        "text": " 감사합니다.",
+        "tokens": [
+          50365,
+          24399,
+          13,
+          50465
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3381378650665283,
+        "compression_ratio": 0.64,
+        "no_speech_prob": 9.09531477910619e-11,
+        "words": [
+          {
+            "word": " 감사합니다.",
+            "start": 132.76,
+            "end": 133.14,
+            "probability": 0.339111328125
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

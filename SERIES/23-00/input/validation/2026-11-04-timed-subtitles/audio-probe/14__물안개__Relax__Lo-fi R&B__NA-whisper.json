@@ -1,0 +1,910 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/14__물안개__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "9823381af4baf21a0c950b782a9f41a26561bf612879af5875b96531abd989e0",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 6.351,
+  "transcription": {
+    "text": " 가로등이 번져 젖은 바닥 위로 발자국만 남아 흐린 길의 끝에 코트깃을 세워도 스며드는 안개 속 걸음마다 젖어간 번져버린 발자국 가로등이 번져 물 안개 속 혼자 지워지지 않는 젖은 밤의 흔적 차가움이 번져 젖은 소매 위로 입깃 많이 남아 뚫리는 숨 끝에 주머니에 손 넣어도 스며드는 냉기 속 가슴까지 젖어와 번져버린 발자국 가로등이 번져 물 안개 속 혼자 지워지지 않아 다음 영상에서 만나요.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 13.299999999999999,
+        "end": 15.7,
+        "text": " 가로등이 번져",
+        "tokens": [
+          50365,
+          10583,
+          1955,
+          36912,
+          1129,
+          10212,
+          17383,
+          51165
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2445428475089695,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 1.151724809272947e-11,
+        "words": [
+          {
+            "word": " 가로등이",
+            "start": 13.299999999999999,
+            "end": 14.7,
+            "probability": 0.841796875
+          },
+          {
+            "word": " 번져",
+            "start": 14.7,
+            "end": 15.7,
+            "probability": 0.9873046875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 15.7,
+        "end": 18.44,
+        "text": " 젖은 바닥 위로",
+        "tokens": [
+          51165,
+          1647,
+          244,
+          2124,
+          12704,
+          36674,
+          4916,
+          14046,
+          51315
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2445428475089695,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 1.151724809272947e-11,
+        "words": [
+          {
+            "word": " 젖은",
+            "start": 15.7,
+            "end": 17.24,
+            "probability": 0.9814453125
+          },
+          {
+            "word": " 바닥",
+            "start": 17.24,
+            "end": 17.66,
+            "probability": 0.9931640625
+          },
+          {
+            "word": " 위로",
+            "start": 17.66,
+            "end": 18.44,
+            "probability": 0.994140625
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 19.0,
+        "end": 21.76,
+        "text": " 발자국만 남아",
+        "tokens": [
+          51315,
+          13825,
+          4264,
+          7854,
+          5978,
+          11689,
+          2230,
+          51465
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2445428475089695,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 1.151724809272947e-11,
+        "words": [
+          {
+            "word": " 발자국만",
+            "start": 19.0,
+            "end": 20.72,
+            "probability": 0.98583984375
+          },
+          {
+            "word": " 남아",
+            "start": 20.72,
+            "end": 21.76,
+            "probability": 0.99755859375
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 21.76,
+        "end": 24.26,
+        "text": " 흐린 길의 끝에",
+        "tokens": [
+          51465,
+          14473,
+          2998,
+          12811,
+          25222,
+          2785,
+          13932,
+          1517,
+          51615
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2445428475089695,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 1.151724809272947e-11,
+        "words": [
+          {
+            "word": " 흐린",
+            "start": 21.76,
+            "end": 22.8,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 길의",
+            "start": 22.8,
+            "end": 23.22,
+            "probability": 0.990234375
+          },
+          {
+            "word": " 끝에",
+            "start": 23.22,
+            "end": 24.26,
+            "probability": 0.978515625
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 25.0,
+        "end": 27.24,
+        "text": " 코트깃을 세워도",
+        "tokens": [
+          51615,
+          26306,
+          8857,
+          2900,
+          225,
+          1638,
+          11605,
+          3860,
+          33723,
+          51765
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2445428475089695,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 1.151724809272947e-11,
+        "words": [
+          {
+            "word": " 코트깃을",
+            "start": 25.0,
+            "end": 26.24,
+            "probability": 0.88623046875
+          },
+          {
+            "word": " 세워도",
+            "start": 26.24,
+            "end": 27.24,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2724,
+        "start": 27.24,
+        "end": 30.24,
+        "text": " 스며드는 안개 속",
+        "tokens": [
+          50365,
+          40420,
+          102,
+          2004,
+          29609,
+          4811,
+          11597,
+          18663,
+          50520
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 스며드는",
+            "start": 27.24,
+            "end": 29.1,
+            "probability": 0.97265625
+          },
+          {
+            "word": " 안개",
+            "start": 29.1,
+            "end": 29.68,
+            "probability": 0.703125
+          },
+          {
+            "word": " 속",
+            "start": 29.68,
+            "end": 30.24,
+            "probability": 0.978515625
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2724,
+        "start": 30.24,
+        "end": 33.36,
+        "text": " 걸음마다 젖어간",
+        "tokens": [
+          50520,
+          14240,
+          36831,
+          45408,
+          1647,
+          244,
+          3103,
+          5989,
+          50673
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 걸음마다",
+            "start": 30.24,
+            "end": 32.1,
+            "probability": 0.95556640625
+          },
+          {
+            "word": " 젖어간",
+            "start": 32.1,
+            "end": 33.36,
+            "probability": 0.8388671875
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 2724,
+        "start": 33.36,
+        "end": 36.26,
+        "text": " 번져버린 발자국",
+        "tokens": [
+          50673,
+          10212,
+          2179,
+          1397,
+          24410,
+          12811,
+          13825,
+          4264,
+          7854,
+          50832
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 번져버린",
+            "start": 33.36,
+            "end": 35.12,
+            "probability": 0.96240234375
+          },
+          {
+            "word": " 발자국",
+            "start": 35.12,
+            "end": 36.26,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 2724,
+        "start": 36.26,
+        "end": 39.56,
+        "text": " 가로등이 번져",
+        "tokens": [
+          50832,
+          10583,
+          1955,
+          36912,
+          1129,
+          10212,
+          17383,
+          50990
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 가로등이",
+            "start": 36.26,
+            "end": 38.52,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 번져",
+            "start": 38.52,
+            "end": 39.56,
+            "probability": 0.99365234375
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 2724,
+        "start": 39.56,
+        "end": 42.46,
+        "text": " 물 안개 속 혼자",
+        "tokens": [
+          50990,
+          14403,
+          4811,
+          11597,
+          18663,
+          36028,
+          51131
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 물",
+            "start": 39.56,
+            "end": 41.0,
+            "probability": 0.720703125
+          },
+          {
+            "word": " 안개",
+            "start": 41.0,
+            "end": 41.3,
+            "probability": 0.7451171875
+          },
+          {
+            "word": " 속",
+            "start": 41.3,
+            "end": 41.46,
+            "probability": 0.86962890625
+          },
+          {
+            "word": " 혼자",
+            "start": 41.46,
+            "end": 42.46,
+            "probability": 0.98779296875
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 2724,
+        "start": 42.46,
+        "end": 46.28,
+        "text": " 지워지지 않는",
+        "tokens": [
+          51131,
+          4704,
+          10086,
+          1831,
+          1831,
+          34790,
+          51322
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 지워지지",
+            "start": 42.46,
+            "end": 44.82,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 않는",
+            "start": 44.82,
+            "end": 46.28,
+            "probability": 0.64892578125
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 2724,
+        "start": 46.28,
+        "end": 50.06,
+        "text": " 젖은 밤의 흔적",
+        "tokens": [
+          51322,
+          1647,
+          244,
+          2124,
+          38093,
+          2785,
+          14473,
+          242,
+          7554,
+          51520
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3424693248311027,
+        "compression_ratio": 1.1692307692307693,
+        "no_speech_prob": 1.461388128565222e-11,
+        "words": [
+          {
+            "word": " 젖은",
+            "start": 46.28,
+            "end": 48.22,
+            "probability": 0.92626953125
+          },
+          {
+            "word": " 밤의",
+            "start": 48.22,
+            "end": 48.96,
+            "probability": 0.90625
+          },
+          {
+            "word": " 흔적",
+            "start": 48.96,
+            "end": 50.06,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 5724,
+        "start": 73.25999999999999,
+        "end": 75.62,
+        "text": " 차가움이 번져",
+        "tokens": [
+          50365,
+          15391,
+          1453,
+          3860,
+          12192,
+          10212,
+          17383,
+          51290
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5303182601928711,
+        "compression_ratio": 0.9318181818181818,
+        "no_speech_prob": 1.271818154263693e-11,
+        "words": [
+          {
+            "word": " 차가움이",
+            "start": 73.25999999999999,
+            "end": 74.66,
+            "probability": 0.8916015625
+          },
+          {
+            "word": " 번져",
+            "start": 74.66,
+            "end": 75.62,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 5724,
+        "start": 75.62,
+        "end": 78.48,
+        "text": " 젖은 소매 위로",
+        "tokens": [
+          51290,
+          1647,
+          244,
+          2124,
+          13062,
+          28728,
+          4916,
+          14046,
+          51432
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5303182601928711,
+        "compression_ratio": 0.9318181818181818,
+        "no_speech_prob": 1.271818154263693e-11,
+        "words": [
+          {
+            "word": " 젖은",
+            "start": 75.62,
+            "end": 77.22,
+            "probability": 0.97412109375
+          },
+          {
+            "word": " 소매",
+            "start": 77.22,
+            "end": 77.7,
+            "probability": 0.9541015625
+          },
+          {
+            "word": " 위로",
+            "start": 77.7,
+            "end": 78.48,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 5724,
+        "start": 78.48,
+        "end": 81.24000000000001,
+        "text": " 입깃 많이 남아",
+        "tokens": [
+          51432,
+          10051,
+          2900,
+          225,
+          8358,
+          11689,
+          2230,
+          51565
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5303182601928711,
+        "compression_ratio": 0.9318181818181818,
+        "no_speech_prob": 1.271818154263693e-11,
+        "words": [
+          {
+            "word": " 입깃",
+            "start": 78.48,
+            "end": 80.3,
+            "probability": 0.435302734375
+          },
+          {
+            "word": " 많이",
+            "start": 80.3,
+            "end": 80.62,
+            "probability": 0.888671875
+          },
+          {
+            "word": " 남아",
+            "start": 80.62,
+            "end": 81.32000000000001,
+            "probability": 0.9736328125
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 5724,
+        "start": 81.78,
+        "end": 84.24000000000001,
+        "text": " 뚫리는 숨 끝에",
+        "tokens": [
+          51595,
+          39181,
+          104,
+          18735,
+          1098,
+          33354,
+          13932,
+          1517,
+          51715
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5303182601928711,
+        "compression_ratio": 0.9318181818181818,
+        "no_speech_prob": 1.271818154263693e-11,
+        "words": [
+          {
+            "word": " 뚫리는",
+            "start": 81.78,
+            "end": 83.0,
+            "probability": 0.8212890625
+          },
+          {
+            "word": " 숨",
+            "start": 83.0,
+            "end": 83.38,
+            "probability": 0.8837890625
+          },
+          {
+            "word": " 끝에",
+            "start": 83.38,
+            "end": 84.24000000000001,
+            "probability": 0.982421875
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 8424,
+        "start": 84.24,
+        "end": 90.44,
+        "text": " 주머니에 손 넣어도 스며드는 냉기 속",
+        "tokens": [
+          50365,
+          16410,
+          46355,
+          1517,
+          15268,
+          14948,
+          34296,
+          40420,
+          102,
+          2004,
+          29609,
+          26218,
+          231,
+          2401,
+          18663,
+          50678
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2395697160200639,
+        "compression_ratio": 1.1791044776119404,
+        "no_speech_prob": 1.7245073424820845e-11,
+        "words": [
+          {
+            "word": " 주머니에",
+            "start": 84.24,
+            "end": 86.22,
+            "probability": 0.8525390625
+          },
+          {
+            "word": " 손",
+            "start": 86.22,
+            "end": 86.52,
+            "probability": 0.98681640625
+          },
+          {
+            "word": " 넣어도",
+            "start": 86.52,
+            "end": 87.42,
+            "probability": 0.9072265625
+          },
+          {
+            "word": " 스며드는",
+            "start": 87.42,
+            "end": 89.22,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 냉기",
+            "start": 89.22,
+            "end": 89.76,
+            "probability": 0.85986328125
+          },
+          {
+            "word": " 속",
+            "start": 89.76,
+            "end": 90.44,
+            "probability": 0.9658203125
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 8424,
+        "start": 90.44,
+        "end": 96.64,
+        "text": " 가슴까지 젖어와 번져버린 발자국",
+        "tokens": [
+          50678,
+          4147,
+          2038,
+          112,
+          8786,
+          1647,
+          244,
+          2782,
+          37404,
+          10212,
+          2179,
+          1397,
+          24410,
+          12811,
+          13825,
+          4264,
+          7854,
+          51005
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2395697160200639,
+        "compression_ratio": 1.1791044776119404,
+        "no_speech_prob": 1.7245073424820845e-11,
+        "words": [
+          {
+            "word": " 가슴까지",
+            "start": 90.44,
+            "end": 92.42,
+            "probability": 0.99755859375
+          },
+          {
+            "word": " 젖어와",
+            "start": 92.42,
+            "end": 93.48,
+            "probability": 0.8603515625
+          },
+          {
+            "word": " 번져버린",
+            "start": 93.48,
+            "end": 95.2,
+            "probability": 0.97119140625
+          },
+          {
+            "word": " 발자국",
+            "start": 95.2,
+            "end": 96.64,
+            "probability": 0.998046875
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 8424,
+        "start": 96.64,
+        "end": 102.62,
+        "text": " 가로등이 번져 물 안개 속 혼자",
+        "tokens": [
+          51005,
+          10583,
+          1955,
+          36912,
+          1129,
+          10212,
+          17383,
+          14403,
+          4811,
+          11597,
+          18663,
+          36028,
+          51290
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2395697160200639,
+        "compression_ratio": 1.1791044776119404,
+        "no_speech_prob": 1.7245073424820845e-11,
+        "words": [
+          {
+            "word": " 가로등이",
+            "start": 96.64,
+            "end": 98.6,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 번져",
+            "start": 98.6,
+            "end": 99.6,
+            "probability": 0.96875
+          },
+          {
+            "word": " 물",
+            "start": 99.6,
+            "end": 101.02,
+            "probability": 0.87109375
+          },
+          {
+            "word": " 안개",
+            "start": 101.02,
+            "end": 101.32,
+            "probability": 0.68701171875
+          },
+          {
+            "word": " 속",
+            "start": 101.32,
+            "end": 101.56,
+            "probability": 0.69921875
+          },
+          {
+            "word": " 혼자",
+            "start": 101.56,
+            "end": 102.62,
+            "probability": 0.9892578125
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 8424,
+        "start": 102.62,
+        "end": 107.78,
+        "text": " 지워지지 않아",
+        "tokens": [
+          51290,
+          4704,
+          10086,
+          1831,
+          1831,
+          39860,
+          51540
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2395697160200639,
+        "compression_ratio": 1.1791044776119404,
+        "no_speech_prob": 1.7245073424820845e-11,
+        "words": [
+          {
+            "word": " 지워지지",
+            "start": 102.62,
+            "end": 104.82,
+            "probability": 0.97509765625
+          },
+          {
+            "word": " 않아",
+            "start": 104.82,
+            "end": 107.78,
+            "probability": 0.9951171875
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 11424,
+        "start": 136.98,
+        "end": 138.38,
+        "text": " 다음 영상에서 만나요.",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          13,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.27235749032762313,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 1.1607114575040711e-10,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 136.98,
+            "end": 138.38,
+            "probability": 0.19287109375
+          },
+          {
+            "word": " 영상에서",
+            "start": 138.38,
+            "end": 138.38,
+            "probability": 0.8623046875
+          },
+          {
+            "word": " 만나요.",
+            "start": 138.38,
+            "end": 138.38,
+            "probability": 0.9951171875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

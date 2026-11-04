@@ -1,0 +1,1113 @@
+{
+  "engine": "mlx-whisper",
+  "engine_version": "0.4.3",
+  "model_repo": "mlx-community/whisper-large-v3-turbo",
+  "model_dir": "~/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "audio": "SERIES/23-00/input/tracks/06__마음 밖__Relax__Lo-fi R&B__NA.wav",
+  "audio_sha256": "ab168b13399ed948d70d29a1eb3b620ffe9c4029de7ebde086224b05c3abdb87",
+  "parameters": {
+    "language": "ko",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "word_timestamps": true,
+    "clip_timestamps": "default_0"
+  },
+  "elapsed_seconds": 7.197,
+  "transcription": {
+    "text": " 오늘은 못지않아 표정이 먼저 말해 내 말이 짧아 눈이 멀어 거리만 늘어 줄어드는 건 소리도 없어 나도 이제 나를 접어 붙잡을수록 늦을까 봐 끝을 아는 사람은 숨을 먼저 세어 나는 여기서 멈춰 너의 마음 밖 나는 여기서 멈춰 너의 마음 밖 우리 안에서 나는 혼자 웃는 연습도 멈춰버려 더 조용해 흔들리면 돌아갈까 봐 기억을 접어 미워지기 전 끝을 아는 사람은 숨을 먼저 세어 나는 여기서 멈춰 너의 마음 봐 그들아는 사랑은 숨을 먼저 세어 나는 여기서 멈춰 너의 마음 봐 나는 여기서 멈춰 모여 마음 다음 영상에서 만나요.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 9.34,
+        "text": " 오늘은 못지않아 표정이 먼저 말해",
+        "tokens": [
+          50365,
+          23720,
+          10239,
+          1831,
+          1457,
+          232,
+          2230,
+          20966,
+          38676,
+          20749,
+          7058,
+          5302,
+          50915
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26301723871475613,
+        "compression_ratio": 1.131578947368421,
+        "no_speech_prob": 1.0818537905799008e-11,
+        "words": [
+          {
+            "word": " 오늘은",
+            "start": 0.0,
+            "end": 2.18,
+            "probability": 0.9677734375
+          },
+          {
+            "word": " 못지않아",
+            "start": 2.18,
+            "end": 3.84,
+            "probability": 0.90478515625
+          },
+          {
+            "word": " 표정이",
+            "start": 3.84,
+            "end": 7.14,
+            "probability": 0.97265625
+          },
+          {
+            "word": " 먼저",
+            "start": 7.14,
+            "end": 7.62,
+            "probability": 0.96826171875
+          },
+          {
+            "word": " 말해",
+            "start": 7.62,
+            "end": 9.34,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 14.42,
+        "end": 24.5,
+        "text": " 내 말이 짧아 눈이 멀어 거리만 늘어 줄어드는 건 소리도 없어",
+        "tokens": [
+          50915,
+          6918,
+          44276,
+          43437,
+          2230,
+          15333,
+          1129,
+          8514,
+          222,
+          3103,
+          15805,
+          7134,
+          6478,
+          33684,
+          3103,
+          15320,
+          6540,
+          29609,
+          13507,
+          13062,
+          7134,
+          1838,
+          28715,
+          51615
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.26301723871475613,
+        "compression_ratio": 1.131578947368421,
+        "no_speech_prob": 1.0818537905799008e-11,
+        "words": [
+          {
+            "word": " 내",
+            "start": 14.42,
+            "end": 15.82,
+            "probability": 0.8251953125
+          },
+          {
+            "word": " 말이",
+            "start": 15.82,
+            "end": 16.38,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 짧아",
+            "start": 16.38,
+            "end": 17.4,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 눈이",
+            "start": 17.4,
+            "end": 18.32,
+            "probability": 0.96875
+          },
+          {
+            "word": " 멀어",
+            "start": 18.32,
+            "end": 19.08,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 거리만",
+            "start": 19.08,
+            "end": 20.06,
+            "probability": 0.9892578125
+          },
+          {
+            "word": " 늘어",
+            "start": 20.06,
+            "end": 20.72,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 줄어드는",
+            "start": 20.72,
+            "end": 21.94,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 건",
+            "start": 21.94,
+            "end": 22.62,
+            "probability": 0.9453125
+          },
+          {
+            "word": " 소리도",
+            "start": 22.62,
+            "end": 23.62,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 없어",
+            "start": 23.62,
+            "end": 24.5,
+            "probability": 0.9970703125
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2450,
+        "start": 30.240000000000002,
+        "end": 36.74,
+        "text": " 나도 이제 나를 접어",
+        "tokens": [
+          50365,
+          31057,
+          8424,
+          12623,
+          2429,
+          21616,
+          3103,
+          50984
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32804344722202844,
+        "compression_ratio": 1.0408163265306123,
+        "no_speech_prob": 9.099335000761766e-12,
+        "words": [
+          {
+            "word": " 나도",
+            "start": 30.240000000000002,
+            "end": 31.64,
+            "probability": 0.52880859375
+          },
+          {
+            "word": " 이제",
+            "start": 31.64,
+            "end": 33.04,
+            "probability": 0.99462890625
+          },
+          {
+            "word": " 나를",
+            "start": 33.04,
+            "end": 34.78,
+            "probability": 0.90869140625
+          },
+          {
+            "word": " 접어",
+            "start": 34.78,
+            "end": 36.74,
+            "probability": 0.9716796875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2450,
+        "start": 38.96,
+        "end": 43.18,
+        "text": " 붙잡을수록 늦을까 봐",
+        "tokens": [
+          50984,
+          24618,
+          46179,
+          1638,
+          25361,
+          11737,
+          7707,
+          99,
+          1638,
+          3294,
+          15507,
+          51302
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32804344722202844,
+        "compression_ratio": 1.0408163265306123,
+        "no_speech_prob": 9.099335000761766e-12,
+        "words": [
+          {
+            "word": " 붙잡을수록",
+            "start": 38.96,
+            "end": 40.36,
+            "probability": 0.98779296875
+          },
+          {
+            "word": " 늦을까",
+            "start": 40.36,
+            "end": 41.76,
+            "probability": 0.87109375
+          },
+          {
+            "word": " 봐",
+            "start": 41.76,
+            "end": 43.18,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2450,
+        "start": 45.34,
+        "end": 51.66,
+        "text": " 끝을 아는 사람은 숨을 먼저 세어",
+        "tokens": [
+          51302,
+          13932,
+          1638,
+          2216,
+          1098,
+          12211,
+          2124,
+          33354,
+          1638,
+          20749,
+          11605,
+          3103,
+          51736
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32804344722202844,
+        "compression_ratio": 1.0408163265306123,
+        "no_speech_prob": 9.099335000761766e-12,
+        "words": [
+          {
+            "word": " 끝을",
+            "start": 45.34,
+            "end": 46.74,
+            "probability": 0.732421875
+          },
+          {
+            "word": " 아는",
+            "start": 46.74,
+            "end": 47.06,
+            "probability": 0.87109375
+          },
+          {
+            "word": " 사람은",
+            "start": 47.06,
+            "end": 49.04,
+            "probability": 0.8330078125
+          },
+          {
+            "word": " 숨을",
+            "start": 49.04,
+            "end": 50.38,
+            "probability": 0.99609375
+          },
+          {
+            "word": " 먼저",
+            "start": 50.38,
+            "end": 50.82,
+            "probability": 0.98583984375
+          },
+          {
+            "word": " 세어",
+            "start": 50.82,
+            "end": 51.66,
+            "probability": 0.763671875
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 5166,
+        "start": 51.66,
+        "end": 54.9,
+        "text": " 나는 여기서 멈춰",
+        "tokens": [
+          50365,
+          17955,
+          25404,
+          8514,
+          230,
+          39929,
+          50535
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 나는",
+            "start": 51.66,
+            "end": 52.64,
+            "probability": 0.587890625
+          },
+          {
+            "word": " 여기서",
+            "start": 52.64,
+            "end": 53.46,
+            "probability": 0.986328125
+          },
+          {
+            "word": " 멈춰",
+            "start": 53.46,
+            "end": 54.9,
+            "probability": 0.9765625
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 5166,
+        "start": 54.9,
+        "end": 58.68,
+        "text": " 너의 마음 밖",
+        "tokens": [
+          50535,
+          12963,
+          2785,
+          20477,
+          2391,
+          244,
+          50718
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 너의",
+            "start": 54.9,
+            "end": 56.92,
+            "probability": 0.9560546875
+          },
+          {
+            "word": " 마음",
+            "start": 56.92,
+            "end": 57.76,
+            "probability": 0.8935546875
+          },
+          {
+            "word": " 밖",
+            "start": 57.76,
+            "end": 58.68,
+            "probability": 0.861328125
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 5166,
+        "start": 58.68,
+        "end": 62.3,
+        "text": " 나는 여기서 멈춰",
+        "tokens": [
+          50718,
+          17955,
+          25404,
+          8514,
+          230,
+          39929,
+          50897
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 나는",
+            "start": 58.68,
+            "end": 59.54,
+            "probability": 0.94677734375
+          },
+          {
+            "word": " 여기서",
+            "start": 59.54,
+            "end": 60.66,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 멈춰",
+            "start": 60.66,
+            "end": 62.3,
+            "probability": 0.9990234375
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 5166,
+        "start": 64.44,
+        "end": 67.8,
+        "text": " 너의 마음 밖",
+        "tokens": [
+          50897,
+          12963,
+          2785,
+          20477,
+          2391,
+          244,
+          51215
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 너의",
+            "start": 64.44,
+            "end": 65.84,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 마음",
+            "start": 65.84,
+            "end": 66.64,
+            "probability": 0.99365234375
+          },
+          {
+            "word": " 밖",
+            "start": 66.64,
+            "end": 67.8,
+            "probability": 0.99609375
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 5166,
+        "start": 71.82,
+        "end": 74.24,
+        "text": " 우리 안에서",
+        "tokens": [
+          51215,
+          8126,
+          4811,
+          4885,
+          51504
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 우리",
+            "start": 71.82,
+            "end": 73.22,
+            "probability": 0.9638671875
+          },
+          {
+            "word": " 안에서",
+            "start": 73.22,
+            "end": 74.24,
+            "probability": 0.98974609375
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 5166,
+        "start": 76.82,
+        "end": 79.62,
+        "text": " 나는 혼자",
+        "tokens": [
+          51504,
+          17955,
+          36028,
+          51768
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.43308111337515026,
+        "compression_ratio": 1.425,
+        "no_speech_prob": 1.3698908327142156e-11,
+        "words": [
+          {
+            "word": " 나는",
+            "start": 76.82,
+            "end": 78.22,
+            "probability": 0.8935546875
+          },
+          {
+            "word": " 혼자",
+            "start": 78.22,
+            "end": 79.62,
+            "probability": 0.99072265625
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 7962,
+        "start": 79.62,
+        "end": 85.54,
+        "text": " 웃는 연습도 멈춰버려 더 조용해",
+        "tokens": [
+          50365,
+          25014,
+          1098,
+          35901,
+          3744,
+          8514,
+          230,
+          9597,
+          2004,
+          24410,
+          5743,
+          6990,
+          7430,
+          8761,
+          5302,
+          50807
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32501502831776935,
+        "compression_ratio": 1.0737704918032787,
+        "no_speech_prob": 1.1507269095933914e-11,
+        "words": [
+          {
+            "word": " 웃는",
+            "start": 79.62,
+            "end": 80.64,
+            "probability": 0.68359375
+          },
+          {
+            "word": " 연습도",
+            "start": 80.64,
+            "end": 81.68,
+            "probability": 0.98046875
+          },
+          {
+            "word": " 멈춰버려",
+            "start": 81.68,
+            "end": 83.52,
+            "probability": 0.9873046875
+          },
+          {
+            "word": " 더",
+            "start": 83.52,
+            "end": 84.2,
+            "probability": 0.97412109375
+          },
+          {
+            "word": " 조용해",
+            "start": 84.2,
+            "end": 85.54,
+            "probability": 0.962890625
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 7962,
+        "start": 88.17999999999999,
+        "end": 91.24,
+        "text": " 흔들리면 돌아갈까 봐",
+        "tokens": [
+          50807,
+          14473,
+          3261,
+          2403,
+          167,
+          40093,
+          26761,
+          27657,
+          3294,
+          15507,
+          50982
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32501502831776935,
+        "compression_ratio": 1.0737704918032787,
+        "no_speech_prob": 1.1507269095933914e-11,
+        "words": [
+          {
+            "word": " 흔들리면",
+            "start": 88.17999999999999,
+            "end": 89.58,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 돌아갈까",
+            "start": 89.58,
+            "end": 90.78,
+            "probability": 0.84765625
+          },
+          {
+            "word": " 봐",
+            "start": 90.78,
+            "end": 91.24,
+            "probability": 0.99853515625
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 7962,
+        "start": 91.96000000000001,
+        "end": 95.9,
+        "text": " 기억을 접어 미워지기 전",
+        "tokens": [
+          50982,
+          30935,
+          1638,
+          21616,
+          3103,
+          10795,
+          10086,
+          1831,
+          2401,
+          6831,
+          51536
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32501502831776935,
+        "compression_ratio": 1.0737704918032787,
+        "no_speech_prob": 1.1507269095933914e-11,
+        "words": [
+          {
+            "word": " 기억을",
+            "start": 91.96000000000001,
+            "end": 92.92,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 접어",
+            "start": 92.92,
+            "end": 93.58,
+            "probability": 0.9912109375
+          },
+          {
+            "word": " 미워지기",
+            "start": 93.58,
+            "end": 95.24,
+            "probability": 0.9970703125
+          },
+          {
+            "word": " 전",
+            "start": 95.24,
+            "end": 95.9,
+            "probability": 0.95849609375
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 7962,
+        "start": 103.04,
+        "end": 105.86,
+        "text": " 끝을 아는 사람은",
+        "tokens": [
+          51536,
+          13932,
+          1638,
+          2216,
+          1098,
+          12211,
+          2124,
+          51718
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32501502831776935,
+        "compression_ratio": 1.0737704918032787,
+        "no_speech_prob": 1.1507269095933914e-11,
+        "words": [
+          {
+            "word": " 끝을",
+            "start": 103.04,
+            "end": 103.82,
+            "probability": 0.95703125
+          },
+          {
+            "word": " 아는",
+            "start": 103.82,
+            "end": 104.14,
+            "probability": 0.8076171875
+          },
+          {
+            "word": " 사람은",
+            "start": 104.14,
+            "end": 105.86,
+            "probability": 0.8740234375
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 10586,
+        "start": 105.86,
+        "end": 112.02,
+        "text": " 숨을 먼저 세어 나는 여기서 멈춰",
+        "tokens": [
+          50365,
+          33354,
+          1638,
+          20749,
+          11605,
+          3103,
+          17955,
+          25404,
+          8514,
+          230,
+          39929,
+          50674
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 숨을",
+            "start": 105.86,
+            "end": 107.48,
+            "probability": 0.9619140625
+          },
+          {
+            "word": " 먼저",
+            "start": 107.48,
+            "end": 107.9,
+            "probability": 0.93701171875
+          },
+          {
+            "word": " 세어",
+            "start": 107.9,
+            "end": 108.76,
+            "probability": 0.73046875
+          },
+          {
+            "word": " 나는",
+            "start": 108.76,
+            "end": 109.44,
+            "probability": 0.93994140625
+          },
+          {
+            "word": " 여기서",
+            "start": 109.44,
+            "end": 110.58,
+            "probability": 0.9951171875
+          },
+          {
+            "word": " 멈춰",
+            "start": 110.58,
+            "end": 112.02,
+            "probability": 0.8564453125
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 10586,
+        "start": 112.02,
+        "end": 115.58,
+        "text": " 너의 마음 봐",
+        "tokens": [
+          50674,
+          12963,
+          2785,
+          20477,
+          15507,
+          50862
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 너의",
+            "start": 112.02,
+            "end": 113.98,
+            "probability": 0.994140625
+          },
+          {
+            "word": " 마음",
+            "start": 113.98,
+            "end": 114.96,
+            "probability": 0.826171875
+          },
+          {
+            "word": " 봐",
+            "start": 114.96,
+            "end": 115.58,
+            "probability": 0.84228515625
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 10586,
+        "start": 117.02,
+        "end": 119.78,
+        "text": " 그들아는 사랑은",
+        "tokens": [
+          50862,
+          2003,
+          2403,
+          2230,
+          1098,
+          22581,
+          2124,
+          51065
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 그들아는",
+            "start": 117.02,
+            "end": 118.42,
+            "probability": 0.6884765625
+          },
+          {
+            "word": " 사랑은",
+            "start": 118.42,
+            "end": 119.78,
+            "probability": 0.794921875
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 10586,
+        "start": 120.5,
+        "end": 126.24,
+        "text": " 숨을 먼저 세어 나는 여기서 멈춰",
+        "tokens": [
+          51097,
+          33354,
+          1638,
+          20749,
+          11605,
+          3103,
+          17955,
+          25404,
+          8514,
+          230,
+          39929,
+          51365
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 숨을",
+            "start": 120.5,
+            "end": 121.72,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 먼저",
+            "start": 121.72,
+            "end": 122.16,
+            "probability": 0.99853515625
+          },
+          {
+            "word": " 세어",
+            "start": 122.16,
+            "end": 123.04,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 나는",
+            "start": 123.04,
+            "end": 123.72,
+            "probability": 0.99267578125
+          },
+          {
+            "word": " 여기서",
+            "start": 123.72,
+            "end": 124.84,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 멈춰",
+            "start": 124.84,
+            "end": 126.24,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 10586,
+        "start": 126.24,
+        "end": 130.02,
+        "text": " 너의 마음 봐",
+        "tokens": [
+          51394,
+          12963,
+          2785,
+          20477,
+          15507,
+          51565
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 너의",
+            "start": 126.24,
+            "end": 128.26,
+            "probability": 0.99951171875
+          },
+          {
+            "word": " 마음",
+            "start": 128.26,
+            "end": 129.1,
+            "probability": 0.998046875
+          },
+          {
+            "word": " 봐",
+            "start": 129.1,
+            "end": 130.02,
+            "probability": 0.99560546875
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 10586,
+        "start": 130.02,
+        "end": 133.5,
+        "text": " 나는 여기서 멈춰",
+        "tokens": [
+          51565,
+          17955,
+          25404,
+          8514,
+          230,
+          39929,
+          51752
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.40248562739445615,
+        "compression_ratio": 1.702970297029703,
+        "no_speech_prob": 1.2728164876241177e-11,
+        "words": [
+          {
+            "word": " 나는",
+            "start": 130.02,
+            "end": 131.12,
+            "probability": 0.98486328125
+          },
+          {
+            "word": " 여기서",
+            "start": 131.12,
+            "end": 132.04,
+            "probability": 0.9990234375
+          },
+          {
+            "word": " 멈춰",
+            "start": 132.04,
+            "end": 133.5,
+            "probability": 0.99951171875
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 13586,
+        "start": 135.86,
+        "end": 137.9,
+        "text": " 모여 마음",
+        "tokens": [
+          50365,
+          11722,
+          10558,
+          20477,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.2431613604227703,
+        "compression_ratio": 0.5909090909090909,
+        "no_speech_prob": 4.153179467003554e-10,
+        "words": [
+          {
+            "word": " 모여",
+            "start": 135.86,
+            "end": 137.14,
+            "probability": 0.364013671875
+          },
+          {
+            "word": " 마음",
+            "start": 137.14,
+            "end": 137.9,
+            "probability": 0.331787109375
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 16586,
+        "start": 182.84,
+        "end": 185.26,
+        "text": " 다음 영상에서 만나요.",
+        "tokens": [
+          50365,
+          13526,
+          15603,
+          4885,
+          8165,
+          26057,
+          13,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.34160076247321236,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 1.991960485447919e-10,
+        "words": [
+          {
+            "word": " 다음",
+            "start": 182.84,
+            "end": 184.1,
+            "probability": 0.1546630859375
+          },
+          {
+            "word": " 영상에서",
+            "start": 184.1,
+            "end": 185.22,
+            "probability": 0.7626953125
+          },
+          {
+            "word": " 만나요.",
+            "start": 185.22,
+            "end": 185.26,
+            "probability": 0.9951171875
+          }
+        ]
+      }
+    ],
+    "language": "ko"
+  }
+}

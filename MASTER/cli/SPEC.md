@@ -1,7 +1,7 @@
 # Project Wavvy: CLI Spec
 
 Version: 4.2
-Last Updated: 2026-09-30
+Last Updated: 2026-11-04
 Purpose: wavvy CLI 시스템 명세
 
 ---
@@ -201,6 +201,8 @@ python3 wavvy.py shorts [track.mp3] --start 00:45 --duration 30
 `state`는 같은 시리즈를 재개할 때 저장된 `phase`/`next_action`을 유지한다. 다른 시리즈를 지정하면 대상 `concept.md`와 산출물에서 다시 추론하며, 명시한 `--phase`와 `--if-match` revision 조건은 그대로 적용한다.
 
 `prepare-subtitles`의 기본 실행은 `Final Track Sources`의 노랫말에서 구간 지시를 제외하고 `report.json`의 반복 횟수만큼 이어 붙여 시간 표시 없는 한국어 자막을 만든다. 원본은 보존한다. 시간 자막은 먼저 곡별 원문 행·상대 시각·음성 근거 해시를 명시한 타이밍 맵을 확인한다. `input/subtitles.json`에는 렌더 보고서와 맵의 경로·해시, SRT 출력 경로를 미리 기록한다. `--timing-map` 명령은 보고서의 반복·실제 시작 시각으로 전체 SRT를 만들고 SRT·원문 해시를 manifest에 기록한다. 맵에 전체 출력 구간이나 예상 해시가 이미 있으면 대조하지만, 새 시리즈에서 별도로 미리 만들 필요는 없다. 기존 SRT가 다르면 덮어쓰지 않으며, ASR에서 전체 타이밍을 자동 추정하지 않는다. 1시간 초과 보컬 영상은 `verify-subtitles --stage prepared` PASS가 `upload-ready`의 조건이다. `published` 단계는 Studio와 공개 영상에서 실제 수동 자막이 보이는 근거를 별도로 확인하며, 영상의 `uploaded` 상태와 구분한다. `verify-release`는 선택 WAV의 해시·제목·순서·길이를 `download-manifest.json`과 렌더 보고서에 대조한다. 후보 기록이 있으면 채택 ID와 원본 txt 해시도 확인한다. 유튜브 문안의 제목·설명·태그와 실제 시작 시각·반복 챕터를 `upload.csv`와 보고서에 대조하고, 제목의 길이·구획·브랜드·시리즈 시간을 검사한다. 감각적 훅·장르·용도 적합성은 `MASTER/youtube/YOUTUBE.md`에 따라 사람이 확인한다. 업로드 직전에 해당 자막 검증과 `verify-release`, `upload-ready` 게이트를 통과해야 한다.
+
+타이밍 맵의 곡 항목은 노래에서 부르지 않는 승인 가사 줄(지시어, 건너뛴 반복)을 `unsung_source_lines`(`source_line`·원문 그대로의 `text`·`reason`·해시된 음성 근거 `evidence`)로 선언할 수 있다. 선언한 줄은 시간표와 자막에 넣지 않고 나머지 모든 줄에는 큐가 있어야 하며, 규칙은 `skills/wavvy-youtube-publish/references/timed-subtitles.md`를 따른다. 곡 길이는 정확히 합한 뒤 한 번만 반올림하고 보고서 총 길이와 1 ms 이내로 맞아야 한다.
 
 `input/playback-order.json`이 있는 시리즈는 표시 제목으로 원문을 추정하지 않고 재생번호·원번호·선택 ID·WAV 해시·가사 관찰 및 생성 manifest를 함께 묶는다. 생성 입력 근거가 없으면 과거 txt의 STYLE/EXCLUDE를 현재 선택곡의 프롬프트로 표시하지 않는다. 챕터 번호는 `1.`/`01.`처럼 한 자리·두 자리 숫자를 모두 읽고 실제 보고서 순서와 대조한다. 이 경로의 `finalize-upload`는 원번호 txt를 보존한다.
 
